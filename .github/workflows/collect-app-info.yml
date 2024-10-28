@@ -68,6 +68,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add Apps/*.json supported_apps.json README.md
+          git add Apps/*.json Apps/dmg/*.dmg supported_apps.json README.md
           git commit -m "Update app information and supported apps list" || exit 0
           git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git
