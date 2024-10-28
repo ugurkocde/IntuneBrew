@@ -16,7 +16,7 @@ import shutil
 from pathlib import Path
 
 def create_dmg_from_app(app_path, dmg_name):
-    dmg_path = f"Apps/dmg/{dmg_name}.dmg"
+    dmg_path = f"{dmg_name}.dmg"
     staging_dir = Path("temp_dmg")
     staging_dir.mkdir(exist_ok=True)
     
@@ -67,13 +67,63 @@ python3 process_zip.py
 # Clean up the temporary files
 rm "$TEMP_ZIP" process_zip.py
 
-# Create the JSON file with the path to the created DMG
+# Check if release exists
+RELEASE_TAG="github-desktop-latest"
+RELEASE_ID=$(curl -s -H "Authorization: token ${GITHUB_TOKEN}" \
+  "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}" \
+  | jq -r '.id // empty')
+
+DMG_FILE="github_desktop.dmg"
+
+if [ -z "$RELEASE_ID" ]; then
+    # Create new release if it doesn't exist
+    echo "Creating new release..."
+    RELEASE_RESPONSE=$(curl -L \
+      -X POST \
+      -H "Accept: application/vnd.github+json" \
+      -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+      -H "X-GitHub-Api-Version: 2022-11-28" \
+      https://api.github.com/repos/${GITHUB_REPOSITORY}/releases \
+      -d "{\"tag_name\":\"${RELEASE_TAG}\",\"name\":\"GitHub Desktop Latest\",\"draft\":false,\"prerelease\":false}")
+    RELEASE_ID=$(echo $RELEASE_RESPONSE | jq -r .id)
+else
+    # Delete existing assets if release exists
+    echo "Updating existing release..."
+    ASSETS=$(curl -s -H "Authorization: token ${GITHUB_TOKEN}" \
+      "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}/assets")
+    echo $ASSETS | jq -r '.[] | .id' | while read ASSET_ID; do
+        curl -X DELETE -H "Authorization: token ${GITHUB_TOKEN}" \
+          "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/assets/${ASSET_ID}"
+    done
+fi
+
+# Upload DMG file
+echo "Uploading DMG file..."
+UPLOAD_URL=$(curl -L \
+  -X POST \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  -H "Content-Type: application/octet-stream" \
+  "https://uploads.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}/assets?name=${DMG_FILE}" \
+  --data-binary "@${DMG_FILE}" | jq -r .browser_download_url)
+
+# Update release name with version
+curl -L \
+  -X PATCH \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}" \
+  -d "{\"name\":\"GitHub Desktop ${VERSION}\"}"
+
+# Create the JSON file with the release URL
 cat > "Apps/github_desktop.json" << EOF
 {
   "name": "GitHub Desktop",
   "description": "GitHub Desktop is an application that enables you to interact with GitHub using a GUI",
   "version": "$VERSION",
-  "url": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/dmg/github_desktop.dmg",
+  "url": "$UPLOAD_URL",
   "bundleId": "com.github.GitHubClient",
   "homepage": "https://desktop.github.com/",
   "fileName": "github_desktop.dmg"
@@ -93,5 +143,8 @@ if [ -f "supported_apps.json" ]; then
         echo "}" >> supported_apps.json
     fi
 fi
+
+# Clean up DMG file
+rm "$DMG_FILE"
 
 echo "Successfully updated GitHub Desktop information"

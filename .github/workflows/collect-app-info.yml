@@ -23,7 +23,7 @@ jobs:
         if: runner.os == 'Linux'
         run: |
           sudo apt-get update
-          sudo apt-get install -y genisoimage
+          sudo apt-get install -y genisoimage jq
 
       - name: Install Python dependencies
         run: |
@@ -38,6 +38,8 @@ jobs:
         run: python .github/scripts/collect_app_info.py
 
       - name: Run vendor-specific scrapers
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           for script in .github/scripts/scrapers/*.sh; do
             echo "Running $script..."
@@ -68,6 +70,6 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add Apps/*.json Apps/dmg/*.dmg supported_apps.json README.md
+          git add Apps/*.json supported_apps.json README.md
           git commit -m "Update app information and supported apps list" || exit 0
           git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git
