@@ -90,31 +90,44 @@ echo "Storage Account: $AZURE_STORAGE_ACCOUNT"
 echo "Container: $AZURE_CONTAINER"
 echo "Blob Name: $BLOB_NAME"
 
+# Ensure SAS token starts with '?'
+if [[ ! "$AZURE_SAS_TOKEN" =~ ^\? ]]; then
+    AZURE_SAS_TOKEN="?${AZURE_SAS_TOKEN}"
+fi
+
+# Remove any leading slashes from container name and blob name
+AZURE_CONTAINER=$(echo "$AZURE_CONTAINER" | sed 's:^/::')
+BLOB_NAME=$(echo "$BLOB_NAME" | sed 's:^/::')
+
 UPLOAD_URL="https://${AZURE_STORAGE_ACCOUNT}.blob.core.windows.net/${AZURE_CONTAINER}/${BLOB_NAME}${AZURE_SAS_TOKEN}"
 
-# Verify the URL (without SAS token for security)
-echo "Upload URL (without SAS): https://${AZURE_STORAGE_ACCOUNT}.blob.core.windows.net/${AZURE_CONTAINER}/${BLOB_NAME}"
-
-curl -v -X PUT \
+echo "Attempting upload..."
+UPLOAD_RESULT=$(curl -s -w "%{http_code}" -X PUT \
      -H "x-ms-blob-type: BlockBlob" \
      -H "Content-Type: application/octet-stream" \
+     -H "x-ms-version: 2020-04-08" \
      --data-binary "@${DMG_FILE}" \
-     "${UPLOAD_URL}"
+     "${UPLOAD_URL}")
 
-if [ $? -ne 0 ]; then
-    echo "Error uploading to Azure Storage"
+HTTP_CODE=${UPLOAD_RESULT: -3}
+RESPONSE_BODY=${UPLOAD_RESULT:0:${#UPLOAD_RESULT}-3}
+
+echo "HTTP Response Code: $HTTP_CODE"
+if [ "$HTTP_CODE" != "201" ]; then
+    echo "Error uploading to Azure Storage. Response:"
+    echo "$RESPONSE_BODY"
     exit 1
 fi
 
-# Create the JSON file with Azure Storage URL
-DOWNLOAD_URL="https://${AZURE_STORAGE_ACCOUNT}.blob.core.windows.net/${AZURE_CONTAINER}/${BLOB_NAME}${AZURE_SAS_TOKEN}"
+echo "Upload successful!"
 
+# Create the JSON file with Azure Storage URL including SAS token
 cat > "Apps/github_desktop.json" << EOF
 {
   "name": "GitHub Desktop",
   "description": "GitHub Desktop is an application that enables you to interact with GitHub using a GUI",
   "version": "$VERSION",
-  "url": "$DOWNLOAD_URL",
+  "url": "${UPLOAD_URL}",
   "bundleId": "com.github.GitHubClient",
   "homepage": "https://desktop.github.com/",
   "fileName": "github_desktop.dmg"
