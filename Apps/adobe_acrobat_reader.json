@@ -1,9 +1,9 @@
 {
   "name": "Adobe Acrobat Reader",
   "description": "View, print, and comment on PDF documents",
-  "version": "24.003.20112",
-  "url": "https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2400320112/AcroRdrDC_2400320112_MUI.dmg",
+  "version": "24.004.20219",
+  "url": "https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2400420219/AcroRdrDC_2400420219_MUI.dmg",
   "bundleId": "com.adobe.Reader",
   "homepage": "https://www.adobe.com/acrobat/pdf-reader.html",
-  "fileName": "AcroRdrDC_2400320112_MUI.dmg"
+  "fileName": "AcroRdrDC_2400420219_MUI.dmg"
 }
