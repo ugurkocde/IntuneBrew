@@ -69,13 +69,15 @@ rm "$TEMP_ZIP" process_zip.py
 
 # Check if release exists
 RELEASE_TAG="github-desktop-latest"
-RELEASE_ID=$(curl -s -H "Authorization: token ${GITHUB_TOKEN}" \
-  "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}" \
-  | jq -r '.id // empty')
+RELEASE_INFO=$(curl -s \
+  -H "Accept: application/vnd.github+json" \
+  -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+  -H "X-GitHub-Api-Version: 2022-11-28" \
+  "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/tags/${RELEASE_TAG}")
 
 DMG_FILE="github_desktop.dmg"
 
-if [ -z "$RELEASE_ID" ]; then
+if [[ $(echo "$RELEASE_INFO" | jq -r '.message // empty') == "Not Found" ]]; then
     # Create new release if it doesn't exist
     echo "Creating new release..."
     RELEASE_RESPONSE=$(curl -L \
@@ -83,18 +85,46 @@ if [ -z "$RELEASE_ID" ]; then
       -H "Accept: application/vnd.github+json" \
       -H "Authorization: Bearer ${GITHUB_TOKEN}" \
       -H "X-GitHub-Api-Version: 2022-11-28" \
-      https://api.github.com/repos/${GITHUB_REPOSITORY}/releases \
-      -d "{\"tag_name\":\"${RELEASE_TAG}\",\"name\":\"GitHub Desktop Latest\",\"draft\":false,\"prerelease\":false}")
-    RELEASE_ID=$(echo $RELEASE_RESPONSE | jq -r .id)
+      "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases" \
+      -d "{
+        \"tag_name\":\"${RELEASE_TAG}\",
+        \"name\":\"GitHub Desktop ${VERSION}\",
+        \"draft\":false,
+        \"prerelease\":false,
+        \"make_latest\":\"true\"
+      }")
+    RELEASE_ID=$(echo "$RELEASE_RESPONSE" | jq -r '.id')
 else
-    # Delete existing assets if release exists
+    # Update existing release
     echo "Updating existing release..."
-    ASSETS=$(curl -s -H "Authorization: token ${GITHUB_TOKEN}" \
+    RELEASE_ID=$(echo "$RELEASE_INFO" | jq -r '.id')
+    
+    # Delete existing assets
+    ASSETS=$(curl -s \
+      -H "Accept: application/vnd.github+json" \
+      -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+      -H "X-GitHub-Api-Version: 2022-11-28" \
       "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}/assets")
-    echo $ASSETS | jq -r '.[] | .id' | while read ASSET_ID; do
-        curl -X DELETE -H "Authorization: token ${GITHUB_TOKEN}" \
+    
+    echo "$ASSETS" | jq -r '.[] | .id' | while read ASSET_ID; do
+        curl -X DELETE \
+          -H "Accept: application/vnd.github+json" \
+          -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+          -H "X-GitHub-Api-Version: 2022-11-28" \
           "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/assets/${ASSET_ID}"
     done
+    
+    # Update release name
+    curl -L \
+      -X PATCH \
+      -H "Accept: application/vnd.github+json" \
+      -H "Authorization: Bearer ${GITHUB_TOKEN}" \
+      -H "X-GitHub-Api-Version: 2022-11-28" \
+      "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}" \
+      -d "{
+        \"name\":\"GitHub Desktop ${VERSION}\",
+        \"make_latest\":\"true\"
+      }"
 fi
 
 # Upload DMG file
@@ -106,18 +136,9 @@ UPLOAD_URL=$(curl -L \
   -H "X-GitHub-Api-Version: 2022-11-28" \
   -H "Content-Type: application/octet-stream" \
   "https://uploads.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}/assets?name=${DMG_FILE}" \
-  --data-binary "@${DMG_FILE}" | jq -r .browser_download_url)
+  --data-binary "@${DMG_FILE}" | jq -r '.browser_download_url')
 
-# Update release name with version
-curl -L \
-  -X PATCH \
-  -H "Accept: application/vnd.github+json" \
-  -H "Authorization: Bearer ${GITHUB_TOKEN}" \
-  -H "X-GitHub-Api-Version: 2022-11-28" \
-  "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}" \
-  -d "{\"name\":\"GitHub Desktop ${VERSION}\"}"
-
-# Create the JSON file with the release URL
+# Create the JSON file
 cat > "Apps/github_desktop.json" << EOF
 {
   "name": "GitHub Desktop",
@@ -130,11 +151,9 @@ cat > "Apps/github_desktop.json" << EOF
 }
 EOF
 
-# Add the app to supported_apps.json if it doesn't exist
+# Add to supported_apps.json
 if [ -f "supported_apps.json" ]; then
-    # Check if github_desktop entry already exists
     if ! grep -q '"github_desktop":' supported_apps.json; then
-        # Remove the last closing brace, add the new entry, and close the JSON
         sed -i '$ d' supported_apps.json
         if [ "$(wc -l < supported_apps.json)" -gt 1 ]; then
             echo "    ," >> supported_apps.json
