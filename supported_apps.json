@@ -1,6 +1,7 @@
 {
     "xmind": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/xmind.json",
     "spotify": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/spotify.json",
+    "1password": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/1password.json",
     "mozilla_firefox": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/mozilla_firefox.json",
     "windows_app": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/windows_app.json",
     "docker_desktop": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/docker_desktop.json",
