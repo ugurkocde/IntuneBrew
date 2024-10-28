@@ -24,8 +24,19 @@ jobs:
           python -m pip install --upgrade pip
           pip install requests
 
-      - name: Collect app information
+      - name: Make scraper scripts executable
+        run: |
+          chmod +x .github/scripts/scrapers/*.sh
+
+      - name: Collect app information from Homebrew
         run: python .github/scripts/collect_app_info.py
+
+      - name: Run vendor-specific scrapers
+        run: |
+          for script in .github/scripts/scrapers/*.sh; do
+            echo "Running $script..."
+            bash "$script"
+          done
 
       - name: Create supported_apps.json
         run: |
