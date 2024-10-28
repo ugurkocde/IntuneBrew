@@ -2,7 +2,7 @@
   "name": "GitHub Desktop",
   "description": "GitHub Desktop is an application that enables you to interact with GitHub using a GUI",
   "version": "3.4.8",
-  "url": "null",
+  "url": "https://.blob.core.windows.net//github-desktop/3.4.8/github_desktop.dmg",
   "bundleId": "com.github.GitHubClient",
   "homepage": "https://desktop.github.com/",
   "fileName": "github_desktop.dmg"
