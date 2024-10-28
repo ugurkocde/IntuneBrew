@@ -1,9 +1,18 @@
 #!/bin/bash
 
 # Azure Storage settings
-AZURE_STORAGE_ACCOUNT="$AZURE_STORAGE_ACCOUNT"
-AZURE_CONTAINER="$AZURE_CONTAINER"
-AZURE_SAS_TOKEN="$AZURE_SAS_TOKEN"  # Will be set from GitHub Secrets
+AZURE_STORAGE_ACCOUNT="${AZURE_STORAGE_ACCOUNT}"
+AZURE_CONTAINER="${AZURE_CONTAINER}"
+AZURE_SAS_TOKEN="${AZURE_SAS_TOKEN}"
+
+# Verify Azure settings
+if [ -z "$AZURE_STORAGE_ACCOUNT" ] || [ -z "$AZURE_CONTAINER" ] || [ -z "$AZURE_SAS_TOKEN" ]; then
+    echo "Error: Azure Storage settings are not properly configured"
+    echo "AZURE_STORAGE_ACCOUNT: ${AZURE_STORAGE_ACCOUNT:-not set}"
+    echo "AZURE_CONTAINER: ${AZURE_CONTAINER:-not set}"
+    echo "AZURE_SAS_TOKEN: ${AZURE_SAS_TOKEN:+set but not shown}"
+    exit 1
+fi
 
 # Get the latest version from the changelog
 VERSION=$(curl -s https://central.github.com/deployments/desktop/desktop/changelog.json | grep -o '"version":"[^"]*' | head -1 | cut -d'"' -f4)
@@ -77,12 +86,25 @@ BLOB_NAME="github-desktop/${VERSION}/${DMG_FILE}"
 
 # Upload to Azure Blob Storage
 echo "Uploading DMG to Azure Storage..."
+echo "Storage Account: $AZURE_STORAGE_ACCOUNT"
+echo "Container: $AZURE_CONTAINER"
+echo "Blob Name: $BLOB_NAME"
+
 UPLOAD_URL="https://${AZURE_STORAGE_ACCOUNT}.blob.core.windows.net/${AZURE_CONTAINER}/${BLOB_NAME}${AZURE_SAS_TOKEN}"
 
-curl -X PUT -H "x-ms-blob-type: BlockBlob" \
+# Verify the URL (without SAS token for security)
+echo "Upload URL (without SAS): https://${AZURE_STORAGE_ACCOUNT}.blob.core.windows.net/${AZURE_CONTAINER}/${BLOB_NAME}"
+
+curl -v -X PUT \
+     -H "x-ms-blob-type: BlockBlob" \
      -H "Content-Type: application/octet-stream" \
      --data-binary "@${DMG_FILE}" \
      "${UPLOAD_URL}"
+
+if [ $? -ne 0 ]; then
+    echo "Error uploading to Azure Storage"
+    exit 1
+fi
 
 # Create the JSON file with Azure Storage URL
 DOWNLOAD_URL="https://${AZURE_STORAGE_ACCOUNT}.blob.core.windows.net/${AZURE_CONTAINER}/${BLOB_NAME}${AZURE_SAS_TOKEN}"
