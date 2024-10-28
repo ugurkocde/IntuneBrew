@@ -113,18 +113,6 @@ else
           -H "X-GitHub-Api-Version: 2022-11-28" \
           "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/assets/${ASSET_ID}"
     done
-    
-    # Update release name
-    curl -L \
-      -X PATCH \
-      -H "Accept: application/vnd.github+json" \
-      -H "Authorization: Bearer ${GITHUB_TOKEN}" \
-      -H "X-GitHub-Api-Version: 2022-11-28" \
-      "https://api.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}" \
-      -d "{
-        \"name\":\"GitHub Desktop ${VERSION}\",
-        \"make_latest\":\"true\"
-      }"
 fi
 
 # Upload DMG file
