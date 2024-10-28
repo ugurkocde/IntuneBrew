@@ -19,10 +19,16 @@ jobs:
         with:
           python-version: "3.x"
 
-      - name: Install dependencies
+      - name: Install Linux dependencies
+        if: runner.os == 'Linux'
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y genisoimage
+
+      - name: Install Python dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install requests zipfile36
 
       - name: Make scraper scripts executable
         run: |
