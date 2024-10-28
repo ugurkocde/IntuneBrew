@@ -121,13 +121,16 @@ fi
 
 echo "Upload successful!"
 
-# Create the JSON file with Azure Storage URL including SAS token
+# Create the public URL without the SAS token
+PUBLIC_URL="https://${AZURE_STORAGE_ACCOUNT}.blob.core.windows.net/${AZURE_CONTAINER}/github-desktop/${VERSION}/${DMG_FILE}"
+
+# Create the JSON file with the public URL
 cat > "Apps/github_desktop.json" << EOF
 {
   "name": "GitHub Desktop",
   "description": "GitHub Desktop is an application that enables you to interact with GitHub using a GUI",
   "version": "$VERSION",
-  "url": "${UPLOAD_URL}",
+  "url": "$PUBLIC_URL",
   "bundleId": "com.github.GitHubClient",
   "homepage": "https://desktop.github.com/",
   "fileName": "github_desktop.dmg"
