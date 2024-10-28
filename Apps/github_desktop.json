@@ -2,7 +2,7 @@
   "name": "GitHub Desktop",
   "description": "GitHub Desktop is an application that enables you to interact with GitHub using a GUI",
   "version": "3.4.8",
-  "url": "https://intunebrew.blob.core.windows.net/dmg/github-desktop/3.4.8/github_desktop.dmgsv=2022-11-02&ss=b&srt=co&sp=rwactfx&se=2025-09-28T18:34:41Z&st=2024-10-28T11:34:41Z&spr=https&sig=To26%2Bx%2FptwrMvcd3AqMCnu1LOT4d%2F0vXGDop%2BZmXkQg%3D",
+  "url": "https://intunebrew.blob.core.windows.net/dmg/github-desktop/3.4.8/github_desktop.dmg?sv=2022-11-02&ss=b&srt=co&sp=rwactfx&se=2025-09-28T18:34:41Z&st=2024-10-28T11:34:41Z&spr=https&sig=To26%2Bx%2FptwrMvcd3AqMCnu1LOT4d%2F0vXGDop%2BZmXkQg%3D",
   "bundleId": "com.github.GitHubClient",
   "homepage": "https://desktop.github.com/",
   "fileName": "github_desktop.dmg"
