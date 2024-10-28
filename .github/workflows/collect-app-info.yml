@@ -39,7 +39,10 @@ jobs:
 
       - name: Run vendor-specific scrapers
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GITHUB_TOKEN: ${{ secrets.PAT }}
+          AZURE_STORAGE_ACCOUNT: ${{ secrets.AZURE_STORAGE_ACCOUNT }}
+          AZURE_CONTAINER: ${{ secrets.AZURE_CONTAINER }}
+          AZURE_SAS_TOKEN: ${{ secrets.AZURE_SAS_TOKEN }}
         run: |
           for script in .github/scripts/scrapers/*.sh; do
             echo "Running $script..."
