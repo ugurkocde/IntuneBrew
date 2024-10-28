@@ -129,14 +129,32 @@ fi
 
 # Upload DMG file
 echo "Uploading DMG file..."
-UPLOAD_URL=$(curl -L \
+UPLOAD_RESPONSE=$(curl -L \
   -X POST \
   -H "Accept: application/vnd.github+json" \
   -H "Authorization: Bearer ${GITHUB_TOKEN}" \
   -H "X-GitHub-Api-Version: 2022-11-28" \
   -H "Content-Type: application/octet-stream" \
   "https://uploads.github.com/repos/${GITHUB_REPOSITORY}/releases/${RELEASE_ID}/assets?name=${DMG_FILE}" \
-  --data-binary "@${DMG_FILE}" | jq -r '.browser_download_url')
+  --data-binary "@${DMG_FILE}")
+
+echo "Upload response: $UPLOAD_RESPONSE"
+
+UPLOAD_URL=$(echo "$UPLOAD_RESPONSE" | jq -r '.browser_download_url')
+
+if [[ "$UPLOAD_URL" == "null" ]]; then
+    echo "Error uploading DMG file. Response:"
+    echo "$UPLOAD_RESPONSE" | jq '.'
+    exit 1
+fi
+
+# Verify the file exists
+echo "Verifying uploaded file..."
+VERIFY_RESPONSE=$(curl -s -o /dev/null -w "%{http_code}" "$UPLOAD_URL")
+if [[ "$VERIFY_RESPONSE" != "200" ]]; then
+    echo "Error: Unable to verify uploaded file at $UPLOAD_URL"
+    exit 1
+fi
 
 # Create the JSON file
 cat > "Apps/github_desktop.json" << EOF
