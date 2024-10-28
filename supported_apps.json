@@ -16,5 +16,6 @@
     "vlc_media_player": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/vlc_media_player.json",
     "slack": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/slack.json",
     "google_chrome": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/google_chrome.json",
-    "keepassxc": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/keepassxc.json"
+    "keepassxc": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/keepassxc.json",
+    "github_desktop": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/github_desktop.json"
 }
