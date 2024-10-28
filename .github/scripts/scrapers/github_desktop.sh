@@ -7,11 +7,65 @@ VERSION=$(curl -s https://central.github.com/deployments/desktop/desktop/changel
 TEMP_ZIP="temp_github_desktop.zip"
 curl -L "https://central.github.com/deployments/desktop/desktop/latest/darwin-arm64" -o "$TEMP_ZIP"
 
-# Process the ZIP and create DMG (assuming process_zip_apps.py is already set up)
-python3 .github/scripts/process_zip_apps.py "$TEMP_ZIP" "github_desktop"
+# Create a Python script to process the ZIP file
+cat > process_zip.py << EOF
+import os
+import zipfile
+import subprocess
+import shutil
+from pathlib import Path
 
-# Clean up the temporary ZIP file
-rm "$TEMP_ZIP"
+def create_dmg_from_app(app_path, dmg_name):
+    dmg_path = f"Apps/dmg/{dmg_name}.dmg"
+    staging_dir = Path("temp_dmg")
+    staging_dir.mkdir(exist_ok=True)
+    
+    shutil.copytree(app_path, staging_dir / app_path.name)
+    os.symlink("/Applications", staging_dir / "Applications")
+    
+    subprocess.run([
+        'genisoimage',
+        '-V', dmg_name,
+        '-D',
+        '-R',
+        '-apple',
+        '-no-pad',
+        '-o', dmg_path,
+        str(staging_dir)
+    ], check=True)
+    
+    shutil.rmtree(staging_dir)
+    return dmg_path
+
+# Extract ZIP and process
+temp_dir = Path("temp_extract")
+temp_dir.mkdir(exist_ok=True)
+
+with zipfile.ZipFile("$TEMP_ZIP", 'r') as zip_ref:
+    zip_ref.extractall(temp_dir)
+
+# Find .app directory
+app_path = None
+for root, dirs, files in os.walk(temp_dir):
+    for dir in dirs:
+        if dir.endswith('.app'):
+            app_path = Path(root) / dir
+            break
+    if app_path:
+        break
+
+if app_path:
+    create_dmg_from_app(app_path, "github_desktop")
+
+# Clean up
+shutil.rmtree(temp_dir)
+EOF
+
+# Run the Python script
+python3 process_zip.py
+
+# Clean up the temporary files
+rm "$TEMP_ZIP" process_zip.py
 
 # Create the JSON file with the path to the created DMG
 cat > "Apps/github_desktop.json" << EOF
@@ -39,8 +93,5 @@ if [ -f "supported_apps.json" ]; then
         echo "}" >> supported_apps.json
     fi
 fi
-
-# Make sure the DMG file is committed
-git add "Apps/dmg/github_desktop.dmg"
 
 echo "Successfully updated GitHub Desktop information"
