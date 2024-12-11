@@ -1,0 +1,10 @@
+{
+    "name": "Microsoft PowerShell 7",
+    "description": "PowerShell is a task automation and configuration management framework from Microsoft, consisting of a command-line shell and scripting language.",
+    "version": "7.4.6",
+    "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.4.6/powershell-7.4.6-osx-arm64.pkg",
+    "bundleId": null,
+    "homepage": "https://learn.microsoft.com/en-us/powershell/scripting/install/installing-powershell-on-macos?view=powershell-7.4#installation-via-direct-download",
+    "fileName": "powershell-7.4.6-osx-arm64.pkg",
+    "previous_version": "7.4.6"
+  }
