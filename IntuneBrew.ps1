@@ -93,12 +93,20 @@ $context = Get-MgContext
 $currentPermissions = $context.Scopes
 
 # Validate required permissions
-$missingPermissions = $requiredPermissions | Where-Object { $_ -notin $currentPermissions }
+$missingPermissions = @($requiredPermissions | Where-Object { $_ -notin $currentPermissions })
 if ($missingPermissions.Count -gt 0) {
     Write-Host "WARNING: The following permissions are missing:" -ForegroundColor Red
     $missingPermissions | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
     Write-Host "Please ensure these permissions are granted to the app registration for full functionality." -ForegroundColor Yellow
     exit
+}
+
+# Validate extra permissions
+$extraPermissions = @($currentPermissions | Where-Object { $_ -notin $requiredPermissions })
+if ($extraPermissions.Count -gt 0) {
+    Write-Host "WARNING: The following permissions are unnecessary:" -ForegroundColor Red
+    $extraPermissions | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
+    Write-Host "You can safely remove these permissions from the app registration and still have full functionality." -ForegroundColor Yellow
 }
 
 Write-Host "All required permissions are present." -ForegroundColor Green
@@ -381,7 +389,7 @@ function Get-IntuneApps {
         $appName = $appInfo.name
 
         # Fetch Intune app info
-        $intuneQueryUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp')) and displayName eq '$appName'"
+        $intuneQueryUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp')) and (tolower(displayName)) eq (tolower('$appName'))"
 
         try {
             $response = Invoke-MgGraphRequest -Uri $intuneQueryUri -Method Get
