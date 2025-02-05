@@ -178,9 +178,7 @@ homebrew_cask_urls = [
 
 # Add new array for apps with PKG inside DMG
 pkg_in_dmg_urls = [
-    "https://formulae.brew.sh/api/cask/microsoft-office.json",
-    "https://formulae.brew.sh/api/cask/microsoft-teams.json",
-    # Add other apps that have PKG inside DMG
+    "https://formulae.brew.sh/api/cask/jabra-direct.json",
 ]
 
 # Custom scraper scripts to run
