@@ -101,16 +101,17 @@ jobs:
           for app_info in $APPS_TO_BUILD; do
             IFS=':' read -r app_name url <<< "$app_info"
             
-            echo "Processing $app_name..."
+            echo "🔄 Processing $app_name..."
             
-            # Get version from JSON file
+            # Get version and type from JSON file
             version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-            echo "Version: $version"
+            app_type=$(jq -r '.type' "$WORKSPACE_DIR/Apps/${app_name}.json")
+            echo "📦 Version: $version"
+            echo "🏷️ Type: $app_type"
             
-            # Check if this is an app that needs packaging
-            is_app_type=$(jq -r '.type == "app"' "$WORKSPACE_DIR/Apps/${app_name}.json")
-            if [ "$is_app_type" != "true" ]; then
-              echo "Skipping URL update for $app_name as it's not of type 'app'"
+            # Skip if not an app or pkg_in_dmg type
+            if [ "$app_type" != "app" ] && [ "$app_type" != "pkg_in_dmg" ]; then
+              echo "⏭️ Skipping URL update for $app_name as it's not of type 'app' or 'pkg_in_dmg'"
               continue
             fi
             
@@ -126,80 +127,164 @@ jobs:
               continue
             fi
             
-            # Download app
-            echo "Downloading $app_name..."
-            download_path="$HOME/Desktop/${app_name}"
-            if [[ "$url" == *".zip" ]]; then
-              curl -L -o "${download_path}.zip" "$url"
-              cd "$HOME/Desktop"
-              # Extract zip while excluding __MACOSX directory
-              unzip -q -d "${app_name}_extracted" "${download_path}.zip"
-              rm "${download_path}.zip"
-            elif [[ "$url" == *".tar.xz" ]]; then
-              curl -L -o "${download_path}.tar.xz" "$url"
-              cd "$HOME/Desktop"
-              # Extract tar.xz
-              mkdir -p "${app_name}_extracted"
-              tar -xf "${download_path}.tar.xz" -C "${app_name}_extracted"
-              rm "${download_path}.tar.xz"
-            elif [[ "$url" == *".tar.gz" ]]; then
-              curl -L -o "${download_path}.tar.gz" "$url"
-              cd "$HOME/Desktop"
-              # Extract tar.gz
-              mkdir -p "${app_name}_extracted"
-              tar -xzf "${download_path}.tar.gz" -C "${app_name}_extracted"
-              rm "${download_path}.tar.gz"
-            else
-              curl -L -o "${download_path}.zip" "$url"
-              cd "$HOME/Desktop"
-              # Default to zip extraction
-              unzip -q -d "${app_name}_extracted" "${download_path}.zip"
-              rm "${download_path}.zip"
-            fi
-            
-            # Find .app file, excluding __MACOSX directory
-            app_file=$(find "${app_name}_extracted" -type d -name "*.app" ! -path "*/__MACOSX/*" -print -quit)
-            if [ -z "$app_file" ]; then
-              echo "No .app file found for $app_name"
-              cd "$WORKSPACE_DIR"
-              rm -rf "${app_name}_extracted"
-              continue
-            fi
-            
-            # Build PKG with version in filename
-            echo "Building PKG for $app_name version $version..."
-            pkgbuild --install-location /Applications --component "$app_file" "${app_name}_${version}.pkg"
-            
-            # Upload to Azure with version in filename
-            echo "Uploading $app_name version $version to Azure Blob Storage..."
-            az storage blob upload \
-              --container-name pkg \
-              --file "${app_name}_${version}.pkg" \
-              --name "${app_name}_${version}.pkg" \
-              --overwrite true
-
-            # Delete older versions of this app from Azure storage
-            if [ ! -z "$existing_versions" ]; then
-              echo "Cleaning up older versions of $app_name..."
-              echo "$existing_versions" | while read -r blob_name; do
-                if [ ! -z "$blob_name" ] && [ "$blob_name" != "${app_name}_${version}.pkg" ]; then
-                  echo "Deleting old version: $blob_name"
-                  az storage blob delete --container-name pkg --name "$blob_name"
+            if [ "$app_type" = "pkg_in_dmg" ]; then
+              echo "🔍 Processing PKG in DMG for $app_name..."
+              echo "📥 Downloading DMG from: $url"
+              
+              # Download DMG
+              curl -L -o "${download_path}.dmg" "$url"
+              if [ $? -eq 0 ]; then
+                echo "✅ DMG download successful"
+                ls -lh "${download_path}.dmg"
+              else
+                echo "❌ Failed to download DMG"
+                continue
+              fi
+              
+              # Create mount point
+              echo "📂 Creating mount point at ${download_path}_mount"
+              mkdir -p "${download_path}_mount"
+              
+              # Mount DMG
+              echo "💿 Mounting DMG..."
+              hdiutil attach "${download_path}.dmg" -mountpoint "${download_path}_mount" -nobrowse
+              if [ $? -eq 0 ]; then
+                echo "✅ DMG mounted successfully"
+                echo "📁 Mount point contents:"
+                ls -la "${download_path}_mount"
+              else
+                echo "❌ Failed to mount DMG"
+                rm -f "${download_path}.dmg"
+                rm -rf "${download_path}_mount"
+                continue
+              fi
+              
+              # Find PKG file
+              echo "🔍 Searching for PKG file..."
+              pkg_file=$(find "${download_path}_mount" -name "*.pkg" -print -quit)
+              
+              if [ -n "$pkg_file" ]; then
+                echo "✅ Found PKG file: $pkg_file"
+                echo "📦 Package size: $(ls -lh "$pkg_file" | awk '{print $5}')"
+                
+                # Copy PKG file with version in filename
+                echo "📋 Copying PKG file to ${app_name}_${version}.pkg"
+                cp "$pkg_file" "${app_name}_${version}.pkg"
+                
+                # Upload to Azure
+                echo "☁️ Uploading to Azure Blob Storage..."
+                az storage blob upload \
+                  --container-name pkg \
+                  --file "${app_name}_${version}.pkg" \
+                  --name "${app_name}_${version}.pkg" \
+                  --overwrite true
+                
+                if [ $? -eq 0 ]; then
+                  echo "✅ Upload successful"
+                  
+                  # Update JSON with Azure URL
+                  echo "📝 Updating JSON file with new Azure URL..."
+                  azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
+                  jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" '.url = $url | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                  
+                  if [ $? -eq 0 ]; then
+                    echo "✅ JSON file updated successfully"
+                    echo "🔗 New URL: $azure_url"
+                  else
+                    echo "❌ Failed to update JSON file"
+                  fi
+                else
+                  echo "❌ Failed to upload to Azure"
                 fi
-              done
+              else
+                echo "❌ No PKG file found in DMG for $app_name"
+                echo "📁 Contents of mount point:"
+                ls -R "${download_path}_mount"
+              fi
+              
+              # Cleanup
+              echo "🧹 Cleaning up..."
+              echo "💿 Unmounting DMG..."
+              hdiutil detach "${download_path}_mount"
+              echo "🗑️ Removing temporary files..."
+              rm -f "${download_path}.dmg"
+              rm -rf "${download_path}_mount"
+              echo "✨ Cleanup complete"
+              
+            else
+              # Download app
+              echo "Downloading $app_name..."
+              download_path="$HOME/Desktop/${app_name}"
+              if [[ "$url" == *".zip" ]]; then
+                curl -L -o "${download_path}.zip" "$url"
+                cd "$HOME/Desktop"
+                # Extract zip while excluding __MACOSX directory
+                unzip -q -d "${app_name}_extracted" "${download_path}.zip"
+                rm "${download_path}.zip"
+              elif [[ "$url" == *".tar.xz" ]]; then
+                curl -L -o "${download_path}.tar.xz" "$url"
+                cd "$HOME/Desktop"
+                # Extract tar.xz
+                mkdir -p "${app_name}_extracted"
+                tar -xf "${download_path}.tar.xz" -C "${app_name}_extracted"
+                rm "${download_path}.tar.xz"
+              elif [[ "$url" == *".tar.gz" ]]; then
+                curl -L -o "${download_path}.tar.gz" "$url"
+                cd "$HOME/Desktop"
+                # Extract tar.gz
+                mkdir -p "${app_name}_extracted"
+                tar -xzf "${download_path}.tar.gz" -C "${app_name}_extracted"
+                rm "${download_path}.tar.gz"
+              else
+                curl -L -o "${download_path}.zip" "$url"
+                cd "$HOME/Desktop"
+                # Default to zip extraction
+                unzip -q -d "${app_name}_extracted" "${download_path}.zip"
+                rm "${download_path}.zip"
+              fi
+              
+              # Find .app file, excluding __MACOSX directory
+              app_file=$(find "${app_name}_extracted" -type d -name "*.app" ! -path "*/__MACOSX/*" -print -quit)
+              if [ -z "$app_file" ]; then
+                echo "No .app file found for $app_name"
+                cd "$WORKSPACE_DIR"
+                rm -rf "${app_name}_extracted"
+                continue
+              fi
+              
+              # Build PKG with version in filename
+              echo "Building PKG for $app_name version $version..."
+              pkgbuild --install-location /Applications --component "$app_file" "${app_name}_${version}.pkg"
+              
+              # Upload to Azure with version in filename
+              echo "Uploading $app_name version $version to Azure Blob Storage..."
+              az storage blob upload \
+                --container-name pkg \
+                --file "${app_name}_${version}.pkg" \
+                --name "${app_name}_${version}.pkg" \
+                --overwrite true
+
+              # Delete older versions of this app from Azure storage
+              if [ ! -z "$existing_versions" ]; then
+                echo "Cleaning up older versions of $app_name..."
+                echo "$existing_versions" | while read -r blob_name; do
+                  if [ ! -z "$blob_name" ] && [ "$blob_name" != "${app_name}_${version}.pkg" ]; then
+                    echo "Deleting old version: $blob_name"
+                    az storage blob delete --container-name pkg --name "$blob_name"
+                  fi
+                done
+              fi
+
+              # Update the JSON file with Azure URL and correct filename
+              azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
+              jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" '.url = $url | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+              
+              # Cleanup
+              sudo rm -rf "${app_name}_extracted"
             fi
 
-            # Update the JSON file with Azure URL and correct filename
-            azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-            jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" '.url = $url | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
-            
-            # Cleanup
-            sudo rm -rf "${app_name}_extracted"
-            
-            # Return to workspace directory
-            cd "$WORKSPACE_DIR"
-            
-            echo "Completed processing $app_name version $version"
+            echo "✅ Completed processing $app_name"
+            echo "------------------------------------------------"
           done
 
       - name: Commit and push changes
