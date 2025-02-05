@@ -20,9 +20,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-      <p>
+        <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-160-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-161-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -70,17 +70,12 @@ IntuneBrew is a PowerShell-based tool that simplifies the process of uploading a
 
 ## 🔄 Latest Updates
 
-*Last checked: 2025-02-05 00:22 UTC*
+*Last checked: 2025-02-05 10:00 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| 1Password | 8.10.58 | 8.10.60 |
-| Google Chrome | 132.0.6834.160 | 133.0.6943.54 |
-| Mozilla Firefox | 134.0.2 | 135.0 |
-| Grammarly Desktop | 1.104.1.0 | 1.105.0.0 |
-| Dropbox | 216.4.4420 | 217.4.4417 |
-| ChatGPT | 1.2025.021,1737774839 | 1.2025.031,1738605767 |
-| Podman Desktop | 1.16.0 | 1.16.1 |
+| DuckDuckGo | 1.124.0,353 | 1.124.1,355 |
+| Rectangle | 0.85 | 0.86 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -174,7 +169,7 @@ Follow the interactive prompts to:
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.38.0,181591 |
 | <img src='Logos/drawio_desktop.png' width='32' height='32'> draw.io Desktop | 26.0.9 |
 | <img src='Logos/dropbox.png' width='32' height='32'> Dropbox | 217.4.4417 |
-| <img src='Logos/duckduckgo.png' width='32' height='32'> DuckDuckGo | 1.124.0,353 |
+| <img src='Logos/duckduckgo.png' width='32' height='32'> DuckDuckGo | 1.124.1,355 |
 | <img src='Logos/eclipse_temurin_java_development_kit.png' width='32' height='32'> Eclipse Temurin Java Development Kit | 23.0.2,7 |
 | <img src='Logos/elgato_camera_hub.png' width='32' height='32'> Elgato Camera Hub | 1.11.0.4022 |
 | <img src='Logos/elgato_stream_deck.png' width='32' height='32'> Elgato Stream Deck | 6.8.1.21263 |
@@ -207,6 +202,7 @@ Follow the interactive prompts to:
 | <img src='Logos/insomnia.png' width='32' height='32'> Insomnia | 10.3.0 |
 | <img src='Logos/intellij_idea_community_edition.png' width='32' height='32'> IntelliJ IDEA Community Edition | 2024.3.2.2,243.23654.189 |
 | <img src='Logos/iterm2.png' width='32' height='32'> iTerm2 | 3.5.11 |
+| ❌ Jabra Direct | 6.21.01701 |
 | <img src='Logos/jetbrains_pycharm_community_edition.png' width='32' height='32'> Jetbrains PyCharm Community Edition | 2024.3.2,243.23654.177 |
 | <img src='Logos/karabiner_elements.png' width='32' height='32'> Karabiner Elements | 15.3.0 |
 | <img src='Logos/keepassxc.png' width='32' height='32'> KeePassXC | 2.7.9 |
@@ -252,7 +248,7 @@ Follow the interactive prompts to:
 | <img src='Logos/rancher_desktop.png' width='32' height='32'> Rancher Desktop | 1.17.1 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 1.90.0 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.13.1 |
-| <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.85 |
+| <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.86 |
 | <img src='Logos/remote_help.png' width='32' height='32'> Remote Help | 1.0.2404171 |
 | <img src='Logos/rstudio.png' width='32' height='32'> RStudio | 2024.12.0,467 |
 | <img src='Logos/santa.png' width='32' height='32'> Santa | 2024.9 |
