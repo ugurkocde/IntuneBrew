@@ -1,6 +1,6 @@
-﻿<#PSScriptInfo
+<#PSScriptInfo
 
-.VERSION 0.3.5
+.VERSION 0.3.6
 
 .GUID 53ddb976-1bc1-4009-bfa0-1e2a51477e4d
 
@@ -61,8 +61,8 @@ ___       _                    ____
 
 Write-Host "IntuneBrew - Automated macOS Application Deployment via Microsoft Intune" -ForegroundColor Green
 Write-Host "Made by Ugur Koc with" -NoNewline; Write-Host " ❤️  and ☕" -NoNewline
-Write-Host " | Version" -NoNewline; Write-Host " 0.3.5" -ForegroundColor Yellow -NoNewline
-Write-Host " | Last updated: " -NoNewline; Write-Host "2025-02-10" -ForegroundColor Magenta
+Write-Host " | Version" -NoNewline; Write-Host " 0.3.6" -ForegroundColor Yellow -NoNewline
+Write-Host " | Last updated: " -NoNewline; Write-Host "2025-02-15" -ForegroundColor Magenta
 Write-Host ""
 Write-Host "This is a preview version. If you have any feedback, please open an issue at https://github.com/ugurkocde/IntuneBrew/issues. Thank you!" -ForegroundColor Cyan
 Write-Host "You can sponsor the development of this project at https://github.com/sponsors/ugurkocde" -ForegroundColor Red
@@ -424,7 +424,7 @@ function EncryptFile($sourceFile) {
 
 # Handles chunked upload of large files to Azure Storage
 function UploadFileToAzureStorage($sasUri, $filepath) {
-    $blockSize = 8 * 1024 * 1024 # 8 MiB
+    $blockSize = 8 * 1024 * 1024  # 8 MB block size
     $fileSize = (Get-Item $filepath).Length
     $totalBlocks = [Math]::Ceiling($fileSize / $blockSize)
     
@@ -436,26 +436,54 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
         try {
             $fileStream = [System.IO.File]::OpenRead($filepath)
             $blockId = 0
-            $blockList = [System.Xml.Linq.XDocument]::Parse('<?xml version="1.0" encoding="utf-8"?><BlockList />')
+            # Initialize block list with proper XML structure
+            $blockList = [System.Xml.Linq.XDocument]::Parse(@"
+<?xml version="1.0" encoding="utf-8"?>
+<BlockList></BlockList>
+"@)
+            
+            # Ensure proper XML namespace
+            $blockList.Declaration.Encoding = "utf-8"
             $blockBuffer = [byte[]]::new($blockSize)
 
-            Write-Host "`nUploading file to Azure Storage (Attempt $($retryCount + 1) of $maxRetries):"
-            Write-Host "Total size: $([Math]::Round($fileSize / 1MB, 2)) MB"
-            Write-Host "Block size: $($blockSize / 1MB) MB"
-            Write-Host ""
+            Write-Host "`n⬆️  Uploading to Azure Storage..." -ForegroundColor Cyan
+            Write-Host "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" -ForegroundColor Cyan
+            
+            # Show file size with proper formatting
+            $fileSizeMB = [Math]::Round($fileSize / 1MB, 2)
+            Write-Host "📦 File size: " -NoNewline
+            Write-Host "$fileSizeMB MB" -ForegroundColor Yellow
+            
+            if ($retryCount -gt 0) {
+                Write-Host "🔄 Attempt $($retryCount + 1) of $maxRetries" -ForegroundColor Yellow
+            }
+            Write-Host ""  # Add a blank line before progress bar
             
             while ($bytesRead = $fileStream.Read($blockBuffer, 0, $blockSize)) {
-                $id = [System.Convert]::ToBase64String([System.BitConverter]::GetBytes([int]$blockId))
+                # Ensure block ID is properly padded and valid base64
+                $blockIdBytes = [System.Text.Encoding]::UTF8.GetBytes($blockId.ToString("D6"))
+                $id = [System.Convert]::ToBase64String($blockIdBytes)
                 $blockList.Root.Add([System.Xml.Linq.XElement]::new("Latest", $id))
 
                 $uploadBlockSuccess = $false
                 $blockRetries = 3
                 while (-not $uploadBlockSuccess -and $blockRetries -gt 0) {
                     try {
-                        Invoke-WebRequest -Method Put "$sasUri&comp=block&blockid=$id" `
-                            -Headers @{"x-ms-blob-type" = "BlockBlob" } `
-                            -Body ([byte[]]($blockBuffer[0..$($bytesRead - 1)])) `
-                            -ErrorAction Stop | Out-Null
+                        $blockUri = "$sasUri&comp=block&blockid=$id"
+                        try {
+                            Invoke-WebRequest -Method Put $blockUri `
+                                -Headers @{"x-ms-blob-type" = "BlockBlob" } `
+                                -Body ([byte[]]($blockBuffer[0..$($bytesRead - 1)])) `
+                                -ErrorAction Stop | Out-Null
+
+                            # Block upload successful
+                            $uploadBlockSuccess = $true
+                        }
+                        catch {
+                            Write-Host "`nFailed to upload block $blockId" -ForegroundColor Red
+                            Write-Host "Error: $_" -ForegroundColor Red
+                            throw
+                        }
                         $uploadBlockSuccess = $true
                     }
                     catch {
@@ -465,7 +493,12 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                             Start-Sleep -Seconds 2
                         }
                         else {
-                            throw
+                            Write-Host "Block upload failed: $_" -ForegroundColor Red
+                            if ($_.Exception.Message -match "AuthenticationFailed.*Signed expiry time.*has to be after signed start time") {
+                                Write-Host "Token timing issue detected. Adding additional delay..." -ForegroundColor Yellow
+                                Start-Sleep -Seconds 5
+                            }
+                            throw $_
                         }
                     }
                 }
@@ -477,7 +510,27 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                 )
                 $totalMB = [Math]::Round($fileSize / 1MB, 1)
                 
-                Write-Host "`rProgress: [$($percentComplete)%] $uploadedMB MB / $totalMB MB" -NoNewline
+                # Calculate basic progress
+                $uploadedMB = [Math]::Min([Math]::Round(($blockId + 1) * $blockSize / 1MB, 1), [Math]::Round($fileSize / 1MB, 1))
+                $totalMB = [Math]::Round($fileSize / 1MB, 1)
+                $percentComplete = [Math]::Round(($blockId + 1) / $totalBlocks * 100, 1)
+
+                # Build progress bar
+                $progressWidth = 50
+                $filledBlocks = [math]::Floor($percentComplete / 2)
+                $emptyBlocks = $progressWidth - $filledBlocks
+                $progressBar = "[" + ("▓" * $filledBlocks) + ("░" * $emptyBlocks) + "]"
+
+                # Build progress line
+                $progressText = "$progressBar $percentComplete% ($uploadedMB MB / $totalMB MB)"
+                
+                # Clear line and write progress
+                [Console]::SetCursorPosition(0, [Console]::CursorTop)
+                [Console]::Write((" " * [Console]::WindowWidth))
+                [Console]::SetCursorPosition(0, [Console]::CursorTop)
+                Write-Host $progressBar -NoNewline
+                Write-Host " $percentComplete%" -NoNewline -ForegroundColor Cyan
+                Write-Host " ($uploadedMB MB / $totalMB MB)" -NoNewline
                 
                 $blockId++
             }
@@ -495,12 +548,14 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                 Write-Host "`nUpload failed. Retrying in 5 seconds..." -ForegroundColor Yellow
                 Start-Sleep -Seconds 5
                 
-                # Request a new SAS token
+                # Request a new SAS token and wait for it to be valid
                 Write-Host "Requesting new upload URL..." -ForegroundColor Yellow
+                Start-Sleep -Seconds 2  # Add delay before requesting new token
                 $newFileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
                 if ($newFileStatus.azureStorageUri) {
                     $sasUri = $newFileStatus.azureStorageUri
                     Write-Host "Received new upload URL" -ForegroundColor Green
+                    Start-Sleep -Seconds 2  # Add delay to ensure token is valid
                 }
             }
             else {
