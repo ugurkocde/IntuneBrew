@@ -346,6 +346,7 @@ function Get-GitHubAppInfo {
             bundleId    = $response.bundleId
             homepage    = $response.homepage
             fileName    = $response.fileName
+            sha         = $response.sha
         }
     }
     catch {
@@ -356,7 +357,7 @@ function Get-GitHubAppInfo {
 }
 
 # Downloads app installer file with progress indication
-function Download-AppFile($url, $fileName) {
+function Download-AppFile($url, $fileName, $expectedHash) {
     $outputPath = Join-Path $PWD $fileName
     
     # Get file size before downloading
@@ -371,7 +372,42 @@ function Download-AppFile($url, $fileName) {
     
     $ProgressPreference = 'SilentlyContinue'
     Invoke-WebRequest -Uri $url -OutFile $outputPath
-    return $outputPath
+
+    Write-Host "✅ Download complete" -ForegroundColor Green
+    
+    # Validate file integrity using SHA256 hash
+    Write-Host "`n🔐 Validating file integrity..." -ForegroundColor Yellow
+    
+    # Validate expected hash format
+    if ([string]::IsNullOrWhiteSpace($expectedHash)) {
+        Write-Host "❌ Error: No SHA256 hash provided in the app manifest" -ForegroundColor Red
+        Remove-Item $outputPath -Force
+        throw "SHA256 hash validation failed - No hash provided in app manifest"
+    }
+    
+    Write-Host "   • Verifying the downloaded file matches the expected SHA256 hash" -ForegroundColor Gray
+    Write-Host "   • This ensures the file hasn't been corrupted or tampered with" -ForegroundColor Gray
+    Write-Host ""
+    Write-Host "   • Expected hash: $expectedHash" -ForegroundColor Gray
+    Write-Host "   • Calculating file hash..." -ForegroundColor Gray
+    $fileHash = Get-FileHash -Path $outputPath -Algorithm SHA256
+    Write-Host "   • Actual hash: $($fileHash.Hash)" -ForegroundColor Gray
+    
+    # Case-insensitive comparison of the hashes
+    $expectedHashNormalized = $expectedHash.Trim().ToLower()
+    $actualHashNormalized = $fileHash.Hash.Trim().ToLower()
+    
+    if ($actualHashNormalized -eq $expectedHashNormalized) {
+        Write-Host "`n✅ Security check passed - File integrity verified" -ForegroundColor Green
+        Write-Host "   • The SHA256 hash of the downloaded file matches the expected value" -ForegroundColor Gray
+        Write-Host "   • This confirms the file is authentic and hasn't been modified" -ForegroundColor Gray
+        return $outputPath
+    } else {
+        Write-Host "`n❌ Security check failed - File integrity validation error!" -ForegroundColor Red
+        Remove-Item $outputPath -Force
+        Write-Host "`n"
+        throw "Security validation failed - SHA256 hash of the downloaded file does not match the expected value"
+    }
 }
 
 # Encrypts app file using AES encryption for Intune upload
@@ -891,8 +927,7 @@ foreach ($app in $appsToUpload) {
     Write-Host "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" -ForegroundColor Cyan
 
     Write-Host "⬇️  Downloading application..." -ForegroundColor Yellow
-    $appFilePath = Download-AppFile $appInfo.url $appInfo.fileName
-    Write-Host "✅ Download complete" -ForegroundColor Green
+    $appFilePath = Download-AppFile $appInfo.url $appInfo.fileName $appInfo.sha
 
     Write-Host "`n📋 Application Details:" -ForegroundColor Cyan
     Write-Host "   • Display Name: $($appInfo.name)"
