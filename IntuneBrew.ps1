@@ -451,6 +451,76 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
     }
 }
 
+function Add-IntuneAppLogo {
+    param (
+        [string]$appId,
+        [string]$appName,
+        [string]$appType,
+        [string]$localLogoPath = $null
+    )
+
+    Write-Host "`n🖼️  Adding app logo..." -ForegroundColor Yellow
+    
+    try {
+        $tempLogoPath = $null
+
+        if ($localLogoPath -and (Test-Path $localLogoPath)) {
+            # Use the provided local logo file
+            $tempLogoPath = $localLogoPath
+            Write-Host "Using local logo file: $localLogoPath" -ForegroundColor Gray
+        }
+        else {
+            # Try to download from repository
+            $logoFileName = $appName.ToLower().Replace(" ", "_") + ".png"
+            $logoUrl = "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/$logoFileName"
+            Write-Host "Downloading logo from: $logoUrl" -ForegroundColor Gray
+            
+            # Download the logo
+            $tempLogoPath = Join-Path $PWD "temp_logo.png"
+            try {
+                Invoke-WebRequest -Uri $logoUrl -OutFile $tempLogoPath
+            }
+            catch {
+                Write-Host "⚠️ Could not download logo from repository. Error: $_" -ForegroundColor Yellow
+                return
+            }
+        }
+
+        if (-not $tempLogoPath -or -not (Test-Path $tempLogoPath)) {
+            Write-Host "⚠️ No valid logo file available" -ForegroundColor Yellow
+            return
+        }
+
+        # Convert the logo to base64
+        $logoContent = [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes($tempLogoPath))
+
+        # Prepare the request body
+        $logoBody = @{
+            "@odata.type" = "#microsoft.graph.mimeContent"
+            "type"        = "image/png"
+            "value"       = $logoContent
+        }
+
+        # Update the app with the logo
+        $logoUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$appId"
+        $updateBody = @{
+            "@odata.type" = "#microsoft.graph.$appType"
+            "largeIcon"   = $logoBody
+        }
+
+        Invoke-MgGraphRequest -Method PATCH -Uri $logoUri -Body ($updateBody | ConvertTo-Json -Depth 10)
+        Write-Host "✅ Logo added successfully" -ForegroundColor Green
+
+        # Cleanup
+        if (Test-Path $tempLogoPath) {
+            Remove-Item $tempLogoPath -Force
+        }
+    }
+    catch {
+        Write-Host "⚠️ Warning: Could not add app logo. Error: $_" -ForegroundColor Yellow
+    }
+}
+
 
 # Handle local file upload if -LocalFile parameter is used
 if ($LocalFile) {
@@ -478,11 +548,27 @@ if ($LocalFile) {
     $appDisplayName = Read-Host "Display Name"
     $appVersion = Read-Host "Version"
     $appBundleId = Read-Host "Bundle ID"
+    $appDescription = Read-Host "Description"
     
     # Set additional details
-    $appDescription = "Uploaded via IntuneBrew Local File Upload"
     $appPublisher = $appDisplayName
     $fileName = [System.IO.Path]::GetFileName($localFilePath)
+
+    # Ask for logo file
+    Write-Host "`nWould you like to upload a logo for this application? (y/n)" -ForegroundColor Yellow
+    $uploadLogo = Read-Host
+    $logoPath = $null
+    if ($uploadLogo -eq "y") {
+        Write-Host "Please select a PNG file for the app logo..." -ForegroundColor Yellow
+        $logoPath = Show-FilePickerDialog -Title "Select PNG Logo File" -Filter "PNG files (*.png)|*.png"
+        if (-not $logoPath) {
+            Write-Host "No logo file selected. Continuing without logo..." -ForegroundColor Yellow
+        }
+        elseif (-not $logoPath.ToLower().EndsWith('.png')) {
+            Write-Host "Invalid file type. Only PNG files are supported. Continuing without logo..." -ForegroundColor Yellow
+            $logoPath = $null
+        }
+    }
     
     Write-Host "`n📋 Application Details:" -ForegroundColor Cyan
     Write-Host "   • Display Name: $appDisplayName"
@@ -598,6 +684,11 @@ if ($LocalFile) {
         committedContentVersion = $contentVersion.id
     }
     Invoke-MgGraphRequest -Method PATCH -Uri $updateAppUri -Body ($updateData | ConvertTo-Json)
+    
+    # Add logo if one was selected
+    if ($logoPath) {
+        Add-IntuneAppLogo -appId $newApp.id -appName $appDisplayName -appType $appType -localLogoPath $logoPath
+    }
     
     Write-Host "`n🧹 Cleaning up temporary files..." -ForegroundColor Yellow
     if (Test-Path "$localFilePath.bin") {
@@ -895,55 +986,6 @@ function Is-NewerVersion($githubVersion, $intuneVersion) {
 }
 
 # Downloads and adds app logo to Intune app entry
-function Add-IntuneAppLogo {
-    param (
-        [string]$appId,
-        [string]$appName
-    )
-
-    Write-Host "`n🖼️  Adding app logo..." -ForegroundColor Yellow
-    
-    try {
-        # Construct the logo URL - only replace spaces with underscores
-        $logoFileName = $appName.ToLower().Replace(" ", "_") + ".png"
-        $logoUrl = "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/$logoFileName"
-
-        # For debugging
-        Write-Host "Downloading logo from: $logoUrl" -ForegroundColor Gray
-
-        # Download the logo
-        $tempLogoPath = Join-Path $PWD "temp_logo.png"
-        Invoke-WebRequest -Uri $logoUrl -OutFile $tempLogoPath
-
-        # Convert the logo to base64
-        $logoContent = [System.Convert]::ToBase64String([System.IO.File]::ReadAllBytes($tempLogoPath))
-
-        # Prepare the request body
-        $logoBody = @{
-            "@odata.type" = "#microsoft.graph.mimeContent"
-            "type"        = "image/png"
-            "value"       = $logoContent
-        }
-
-        # Update the app with the logo
-        $logoUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$appId"
-        $updateBody = @{
-            "@odata.type" = "#microsoft.graph.$appType"
-            "largeIcon"   = $logoBody
-        }
-
-        Invoke-MgGraphRequest -Method PATCH -Uri $logoUri -Body ($updateBody | ConvertTo-Json -Depth 10)
-        Write-Host "✅ Logo added successfully" -ForegroundColor Green
-
-        # Cleanup
-        if (Test-Path $tempLogoPath) {
-            Remove-Item $tempLogoPath -Force
-        }
-    }
-    catch {
-        Write-Host "⚠️ Warning: Could not add app logo. Error: $_" -ForegroundColor Yellow
-    }
-}
 
 # Retrieve Intune app versions
 Write-Host "Fetching current Intune app versions..."
@@ -1219,7 +1261,7 @@ foreach ($app in $appsToUpload) {
     }
     Invoke-MgGraphRequest -Method PATCH -Uri $updateAppUri -Body ($updateData | ConvertTo-Json)
 
-    Add-IntuneAppLogo -appId $newApp.id -appName $appInfo.name
+    Add-IntuneAppLogo -appId $newApp.id -appName $appDisplayName -appType $appType -localLogoPath $logoPath
 
     Write-Host "`n🧹 Cleaning up temporary files..." -ForegroundColor Yellow
     if (Test-Path $appFilePath) {
