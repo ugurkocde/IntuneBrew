@@ -12,35 +12,78 @@
 .REQUIREDSCRIPTS
 .EXTERNALSCRIPTDEPENDENCIES
 .RELEASENOTES
-Version 0.3.8: Modified for Azure Automation Runbook with client secret auth
+Version 0.3.8: Add support for -localfile parameter to upload local PKG or DMG files to Intune
+Version 0.3.7: Fix Parse Errors
 .PRIVATEDATA
 #>
 
 <#
+
 .DESCRIPTION
  This script automates the process of deploying macOS applications to Microsoft Intune using information from Homebrew casks. It fetches app details, creates Intune policies, and manages the deployment process.
 
+.PARAMETER Upload
+ Specifies a list of app names to upload directly, bypassing the manual selection process.
+ Example: IntuneBrew -Upload google_chrome, visual_studio_code
+
 .PARAMETER UpdateAll
  Updates all applications that have a newer version available in Intune.
- Example: -UpdateAll $true
-#>
+ Example: IntuneBrew -UpdateAll
 
+.PARAMETER LocalFile
+ Allows uploading a local PKG or DMG file to Intune. Will prompt for file selection and app details.
+ Example: IntuneBrew -LocalFile
+
+#>
 [CmdletBinding()]
 param(
     [Parameter(Mandatory = $false)]
-    [switch]$UpdateAll = $true  # Default to true for automation
+    [string[]]$Upload,
+    
+    [Parameter(Mandatory = $false)]
+    [switch]$UpdateAll = $true, # Default to true for automation
+    
+    [Parameter(Mandatory = $false)]
+    [switch]$LocalFile
 )
 
-# Enable verbose output
-$VerbosePreference = "Continue"
+# Function to write logs that will be visible in Azure Automation
+function Write-Log {
+    param(
+        [Parameter(Mandatory = $true)]
+        [string]$Message,
+        [Parameter(Mandatory = $false)]
+        [string]$Type = "Info"  # Info, Warning, Error
+    )
+    
+    $timestamp = Get-Date -Format "yyyy-MM-dd HH:mm:ss"
+    $logMessage = "[$timestamp] [$Type] $Message"
+    Write-Output $logMessage
+}
 
-Write-Output "Starting IntuneBrew Runbook execution"
-Write-Output "----------------------------------------"
-Write-Output "IntuneBrew - Automated macOS Application Deployment via Microsoft Intune"
-Write-Output "Version: 0.3.8"
-Write-Output "----------------------------------------"
+Write-Log "Starting IntuneBrew Automation Script - Version 0.3.8"
+Write-Log "Automated macOS Application Deployment via Microsoft Intune"
 
-# Required Graph API permissions
+Write-Host "
+___       _                    ____                    
+|_ _|_ __ | |_ _   _ _ __   ___| __ ) _ __ _____      __
+ | || '_ \| __| | | | '_ \ / _ \  _ \| '__/ _ \ \ /\ / /
+ | || | | | |_| |_| | | | |  __/ |_) | | |  __/\ V  V / 
+|___|_| |_|\__|\__,_|_| |_|\___|____/|_|  \___| \_/\_/  
+" -ForegroundColor Cyan
+
+Write-Host "IntuneBrew - Automated macOS Application Deployment via Microsoft Intune" -ForegroundColor Green
+Write-Host "Made by Ugur Koc with" -NoNewline; Write-Host " ❤️  and ☕" -NoNewline
+Write-Host " | Version" -NoNewline; Write-Host " 0.3.8" -ForegroundColor Yellow -NoNewline
+Write-Host " | Last updated: " -NoNewline; Write-Host "2025-02-22" -ForegroundColor Magenta
+Write-Host ""
+Write-Host "This is a preview version. If you have any feedback, please open an issue at https://github.com/ugurkocde/IntuneBrew/issues. Thank you!" -ForegroundColor Cyan
+Write-Host "You can sponsor the development of this project at https://github.com/sponsors/ugurkocde" -ForegroundColor Red
+Write-Host ""
+
+# Authentication START
+
+# Required Graph API permissions for app functionality
 $requiredPermissions = @(
     "DeviceManagementApps.ReadWrite.All"
 )
@@ -51,42 +94,46 @@ try {
     $appId = Get-AutomationVariable -Name 'AppId'
     $clientSecret = Get-AutomationVariable -Name 'ClientSecret'
 
-    Write-Output "Retrieved authentication variables from Automation Account"
+    Write-Log "Successfully retrieved authentication variables from Automation Account"
 }
 catch {
-    Write-Output "Failed to retrieve authentication variables: $_"
+    Write-Log "Failed to retrieve authentication variables: $_" -Type "Error"
     throw
 }
 
-# Connect to Microsoft Graph using client secret
+# Authenticate using client secret from Automation Account
 try {
-    $secureClientSecret = ConvertTo-SecureString -String $clientSecret -AsPlainText -Force
-    $clientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $appId, $secureClientSecret
-    
-    Connect-MgGraph -TenantId $tenantId -ClientSecretCredential $clientSecretCredential -NoWelcome
-    Write-Output "Successfully connected to Microsoft Graph using client secret"
+    $SecureClientSecret = ConvertTo-SecureString -String $clientSecret -AsPlainText -Force
+    $ClientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $appId, $SecureClientSecret
+    Connect-MgGraph -TenantId $tenantId -ClientSecretCredential $ClientSecretCredential -NoWelcome -ErrorAction Stop
+    Write-Log "Successfully connected to Microsoft Graph using client secret authentication"
 }
 catch {
-    Write-Output "Failed to connect to Microsoft Graph: $_"
+    Write-Log "Failed to connect to Microsoft Graph using client secret. Error: $_" -Type "Error"
     throw
 }
 
-# Validate permissions
+# Check and display the current permissions
 $context = Get-MgContext
 $currentPermissions = $context.Scopes
-$missingPermissions = $requiredPermissions | Where-Object { $_ -notin $currentPermissions }
 
+# Validate required permissions
+$missingPermissions = $requiredPermissions | Where-Object { $_ -notin $currentPermissions }
 if ($missingPermissions.Count -gt 0) {
-    Write-Output "Missing required permissions: $($missingPermissions -join ', ')"
-    throw "Required permissions are missing"
+    Write-Log "WARNING: Missing required permissions:" -Type "Warning"
+    foreach ($permission in $missingPermissions) {
+        Write-Log "  - $permission" -Type "Warning"
+    }
+    Write-Log "Please ensure these permissions are granted to the app registration" -Type "Warning"
+    throw "Missing required permissions"
 }
 
-Write-Output "All required permissions are present"
+Write-Log "All required permissions are present"
+
+# Authentication END
 
 # Import required modules
 Import-Module Microsoft.Graph.Authentication
-
-# Core Functions
 
 # Encrypts app file using AES encryption for Intune upload
 function EncryptFile($sourceFile) {
@@ -138,127 +185,144 @@ function EncryptFile($sourceFile) {
 
 # Handles chunked upload of large files to Azure Storage
 function UploadFileToAzureStorage($sasUri, $filepath) {
-    $blockSize = 8 * 1024 * 1024  # 8 MB block size
-    $fileSize = (Get-Item $filepath).Length
-    $totalBlocks = [Math]::Ceiling($fileSize / $blockSize)
-    
-    $maxRetries = 3
-    $retryCount = 0
-    $uploadSuccess = $false
+    try {
+        Write-Log "Starting Azure Storage upload process"
+        Write-Log "File size: $([Math]::Round((Get-Item $filepath).Length / 1MB, 2)) MB"
+        
+        $blockSize = 8 * 1024 * 1024  # 8 MB block size
+        $fileSize = (Get-Item $filepath).Length
+        $totalBlocks = [Math]::Ceiling($fileSize / $blockSize)
+        
+        Write-Log "Total blocks to upload: $totalBlocks"
+        
+        $maxRetries = 3
+        $retryCount = 0
+        $uploadSuccess = $false
 
-    while (-not $uploadSuccess -and $retryCount -lt $maxRetries) {
-        try {
-            $fileStream = [System.IO.File]::OpenRead($filepath)
-            $blockId = 0
-            $blockList = [System.Xml.Linq.XDocument]::Parse(@"
+        while (-not $uploadSuccess -and $retryCount -lt $maxRetries) {
+            try {
+                Write-Log "Upload attempt $($retryCount + 1) of $maxRetries"
+                
+                $fileStream = [System.IO.File]::OpenRead($filepath)
+                $blockId = 0
+                $blockList = [System.Xml.Linq.XDocument]::Parse(@"
 <?xml version="1.0" encoding="utf-8"?>
 <BlockList></BlockList>
 "@)
-            
-            $blockList.Declaration.Encoding = "utf-8"
-            $blockBuffer = [byte[]]::new($blockSize)
-
-            Write-Output "Uploading to Azure Storage..."
-            Write-Output "File size: $([Math]::Round($fileSize / 1MB, 2)) MB"
-            
-            if ($retryCount -gt 0) {
-                Write-Output "Attempt $($retryCount + 1) of $maxRetries"
-            }
-            
-            while ($bytesRead = $fileStream.Read($blockBuffer, 0, $blockSize)) {
-                $blockIdBytes = [System.Text.Encoding]::UTF8.GetBytes($blockId.ToString("D6"))
-                $id = [System.Convert]::ToBase64String($blockIdBytes)
-                $blockList.Root.Add([System.Xml.Linq.XElement]::new("Latest", $id))
-
-                $uploadBlockSuccess = $false
-                $blockRetries = 3
-                while (-not $uploadBlockSuccess -and $blockRetries -gt 0) {
-                    try {
-                        $blockUri = "$sasUri&comp=block&blockid=$id"
-                        Invoke-WebRequest -Method Put $blockUri `
-                            -Headers @{"x-ms-blob-type" = "BlockBlob" } `
-                            -Body ([byte[]]($blockBuffer[0..$($bytesRead - 1)])) `
-                            -ErrorAction Stop | Out-Null
-                        $uploadBlockSuccess = $true
-                    }
-                    catch {
-                        $blockRetries--
-                        if ($blockRetries -gt 0) {
-                            Write-Output "Retrying block upload..."
-                            Start-Sleep -Seconds 2
-                        }
-                        else {
-                            Write-Output "Block upload failed: $_"
-                            throw $_
-                        }
-                    }
-                }
-
-                $percentComplete = [Math]::Round(($blockId + 1) / $totalBlocks * 100, 1)
-                Write-Output "Upload progress: $percentComplete%"
-                $blockId++
-            }
-            
-            $fileStream.Close()
-            Invoke-RestMethod -Method Put "$sasUri&comp=blocklist" -Body $blockList | Out-Null
-            $uploadSuccess = $true
-        }
-        catch {
-            $retryCount++
-            if ($retryCount -lt $maxRetries) {
-                Write-Output "Upload failed. Retrying in 5 seconds..."
-                Start-Sleep -Seconds 5
                 
-                Write-Output "Requesting new upload URL..."
-                Start-Sleep -Seconds 2
-                $newFileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
-                if ($newFileStatus.azureStorageUri) {
-                    $sasUri = $newFileStatus.azureStorageUri
-                    Write-Output "Received new upload URL"
-                    Start-Sleep -Seconds 2
+                $blockList.Declaration.Encoding = "utf-8"
+                $blockBuffer = [byte[]]::new($blockSize)
+                
+                while ($bytesRead = $fileStream.Read($blockBuffer, 0, $blockSize)) {
+                    $blockIdBytes = [System.Text.Encoding]::UTF8.GetBytes($blockId.ToString("D6"))
+                    $id = [System.Convert]::ToBase64String($blockIdBytes)
+                    $blockList.Root.Add([System.Xml.Linq.XElement]::new("Latest", $id))
+
+                    $uploadBlockSuccess = $false
+                    $blockRetries = 3
+                    while (-not $uploadBlockSuccess -and $blockRetries -gt 0) {
+                        try {
+                            Write-Log "Uploading block $($blockId + 1) of $totalBlocks"
+                            
+                            $blockUri = "$sasUri&comp=block&blockid=$id"
+                            Invoke-WebRequest -Method Put $blockUri `
+                                -Headers @{"x-ms-blob-type" = "BlockBlob" } `
+                                -Body ([byte[]]($blockBuffer[0..$($bytesRead - 1)])) `
+                                -ErrorAction Stop | Out-Null
+
+                            $uploadBlockSuccess = $true
+                            Write-Log "Block $($blockId + 1) uploaded successfully"
+                        }
+                        catch {
+                            $blockRetries--
+                            Write-Log "Failed to upload block $($blockId + 1). Error: $_" -Type "Error"
+                            if ($blockRetries -gt 0) {
+                                Write-Log "Retrying block upload in 2 seconds..." -Type "Warning"
+                                Start-Sleep -Seconds 2
+                            }
+                        }
+                    }
+
+                    if (-not $uploadBlockSuccess) {
+                        throw "Failed to upload block after multiple retries"
+                    }
+
+                    $percentComplete = [Math]::Round(($blockId + 1) / $totalBlocks * 100, 1)
+                    Write-Log "Upload progress: $percentComplete%"
+                    
+                    $blockId++
+                }
+                
+                $fileStream.Close()
+
+                Write-Log "Committing all blocks to Azure Storage..."
+                Invoke-RestMethod -Method Put "$sasUri&comp=blocklist" -Body $blockList | Out-Null
+                Write-Log "Successfully committed all blocks"
+                
+                $uploadSuccess = $true
+            }
+            catch {
+                $retryCount++
+                Write-Log "Upload attempt failed: $_" -Type "Error"
+                if ($retryCount -lt $maxRetries) {
+                    Write-Log "Retrying entire upload in 5 seconds..." -Type "Warning"
+                    Start-Sleep -Seconds 5
+                }
+                else {
+                    Write-Log "Failed all upload attempts" -Type "Error"
+                    throw
                 }
             }
-            else {
-                Write-Output "Failed to upload file after $maxRetries attempts."
-                Write-Output "Error: $_"
-                throw
-            }
-        }
-        finally {
-            if ($fileStream) {
-                $fileStream.Close()
+            finally {
+                if ($fileStream) {
+                    $fileStream.Close()
+                }
             }
         }
     }
+    catch {
+        Write-Log "Critical error during upload: $_" -Type "Error"
+        throw
+    }
 }
 
-# Downloads and adds app logo to Intune app entry
 function Add-IntuneAppLogo {
     param (
         [string]$appId,
         [string]$appName,
-        [string]$appType
+        [string]$appType,
+        [string]$localLogoPath = $null
     )
 
-    Write-Output "Adding app logo..."
+    Write-Host "`n🖼️  Adding app logo..." -ForegroundColor Yellow
     
     try {
-        # Try to download from repository
-        $logoFileName = $appName.ToLower().Replace(" ", "_") + ".png"
-        $logoUrl = "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/$logoFileName"
-        
-        # Download the logo
-        $tempLogoPath = Join-Path $env:TEMP "temp_logo.png"
-        try {
-            Invoke-WebRequest -Uri $logoUrl -OutFile $tempLogoPath
+        $tempLogoPath = $null
+
+        if ($localLogoPath -and (Test-Path $localLogoPath)) {
+            # Use the provided local logo file
+            $tempLogoPath = $localLogoPath
+            Write-Host "Using local logo file: $localLogoPath" -ForegroundColor Gray
         }
-        catch {
-            Write-Output "Could not download logo from repository. Error: $_"
-            return
+        else {
+            # Try to download from repository
+            $logoFileName = $appName.ToLower().Replace(" ", "_") + ".png"
+            $logoUrl = "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/$logoFileName"
+            Write-Host "Downloading logo from: $logoUrl" -ForegroundColor Gray
+            
+            # Download the logo
+            $tempLogoPath = Join-Path $PWD "temp_logo.png"
+            try {
+                Invoke-WebRequest -Uri $logoUrl -OutFile $tempLogoPath
+            }
+            catch {
+                Write-Host "⚠️ Could not download logo from repository. Error: $_" -ForegroundColor Yellow
+                return
+            }
         }
 
-        if (-not (Test-Path $tempLogoPath)) {
-            Write-Output "No valid logo file available"
+        if (-not $tempLogoPath -or -not (Test-Path $tempLogoPath)) {
+            Write-Host "⚠️ No valid logo file available" -ForegroundColor Yellow
             return
         }
 
@@ -280,7 +344,7 @@ function Add-IntuneAppLogo {
         }
 
         Invoke-MgGraphRequest -Method PATCH -Uri $logoUri -Body ($updateBody | ConvertTo-Json -Depth 10)
-        Write-Output "Logo added successfully"
+        Write-Host "✅ Logo added successfully" -ForegroundColor Green
 
         # Cleanup
         if (Test-Path $tempLogoPath) {
@@ -288,9 +352,260 @@ function Add-IntuneAppLogo {
         }
     }
     catch {
-        Write-Output "Warning: Could not add app logo. Error: $_"
+        Write-Host "⚠️ Warning: Could not add app logo. Error: $_" -ForegroundColor Yellow
     }
 }
+
+
+# Handle local file upload if -LocalFile parameter is used
+if ($LocalFile) {
+    Write-Host "`nLocal File Upload Mode" -ForegroundColor Cyan
+    Write-Host "━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━" -ForegroundColor Cyan
+    
+    # Show file picker for PKG/DMG
+    Write-Host "Please select a PKG or DMG file to upload..." -ForegroundColor Yellow
+    $localFilePath = Show-FilePickerDialog -Title "Select PKG or DMG File" -Filter "macOS Installers (*.pkg;*.dmg)|*.pkg;*.dmg"
+    
+    if (-not $localFilePath) {
+        Write-Host "No file selected. Exiting..." -ForegroundColor Yellow
+        exit
+    }
+
+    # Validate file extension
+    $fileExtension = [System.IO.Path]::GetExtension($localFilePath).ToLower()
+    if ($fileExtension -notin @('.pkg', '.dmg')) {
+        Write-Host "Invalid file type. Only .pkg and .dmg files are supported." -ForegroundColor Red
+        exit
+    }
+
+    # Get app details from user
+    Write-Host "`nPlease provide the following application details:" -ForegroundColor Cyan
+    $appDisplayName = Read-Host "Display Name"
+    $appVersion = Read-Host "Version"
+    $appBundleId = Read-Host "Bundle ID"
+    $appDescription = Read-Host "Description"
+    
+    # Set additional details
+    $appPublisher = $appDisplayName
+    $fileName = [System.IO.Path]::GetFileName($localFilePath)
+
+    # Ask for logo file
+    Write-Host "`nWould you like to upload a logo for this application? (y/n)" -ForegroundColor Yellow
+    $uploadLogo = Read-Host
+    $logoPath = $null
+    if ($uploadLogo -eq "y") {
+        Write-Host "Please select a PNG file for the app logo..." -ForegroundColor Yellow
+        $logoPath = Show-FilePickerDialog -Title "Select PNG Logo File" -Filter "PNG files (*.png)|*.png"
+        if (-not $logoPath) {
+            Write-Host "No logo file selected. Continuing without logo..." -ForegroundColor Yellow
+        }
+        elseif (-not $logoPath.ToLower().EndsWith('.png')) {
+            Write-Host "Invalid file type. Only PNG files are supported. Continuing without logo..." -ForegroundColor Yellow
+            $logoPath = $null
+        }
+    }
+    
+    Write-Host "`n📋 Application Details:" -ForegroundColor Cyan
+    Write-Host "   • Display Name: $appDisplayName"
+    Write-Host "   • Version: $appVersion"
+    Write-Host "   • Bundle ID: $appBundleId"
+    Write-Host "   • File: $fileName"
+    
+    # Determine app type
+    $appType = if ($fileExtension -eq '.dmg') {
+        "macOSDmgApp"
+    }
+    else {
+        "macOSPkgApp"
+    }
+    
+    Write-Host "`n🔄 Creating app in Intune..." -ForegroundColor Yellow
+    
+    $app = @{
+        "@odata.type"                   = "#microsoft.graph.$appType"
+        displayName                     = $appDisplayName
+        description                     = $appDescription
+        publisher                       = $appPublisher
+        fileName                        = $fileName
+        packageIdentifier               = $appBundleId
+        bundleId                        = $appBundleId
+        versionNumber                   = $appVersion
+        minimumSupportedOperatingSystem = @{
+            "@odata.type" = "#microsoft.graph.macOSMinimumOperatingSystem"
+            v11_0         = $true
+        }
+    }
+    
+    if ($appType -eq "macOSDmgApp" -or $appType -eq "macOSPkgApp") {
+        $app["primaryBundleId"] = $appBundleId
+        $app["primaryBundleVersion"] = $appVersion
+        $app["includedApps"] = @(
+            @{
+                "@odata.type" = "#microsoft.graph.macOSIncludedApp"
+                bundleId      = $appBundleId
+                bundleVersion = $appVersion
+            }
+        )
+    }
+    
+    $createAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps"
+    $newApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($app | ConvertTo-Json -Depth 10)
+    Write-Host "✅ App created successfully (ID: $($newApp.id))" -ForegroundColor Green
+    
+    Write-Host "`n🔒 Processing content version..." -ForegroundColor Yellow
+    $contentVersionUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions"
+    $contentVersion = Invoke-MgGraphRequest -Method POST -Uri $contentVersionUri -Body "{}"
+    Write-Host "✅ Content version created (ID: $($contentVersion.id))" -ForegroundColor Green
+    
+    Write-Host "`n🔐 Encrypting application file..." -ForegroundColor Yellow
+    $encryptedFilePath = "$localFilePath.bin"
+    if (Test-Path $encryptedFilePath) {
+        Remove-Item $encryptedFilePath -Force
+    }
+    $fileEncryptionInfo = EncryptFile $localFilePath
+    Write-Host "✅ Encryption complete" -ForegroundColor Green
+    
+    Write-Host "`n⬆️  Uploading to Azure Storage..." -ForegroundColor Yellow
+    $fileContent = @{
+        "@odata.type" = "#microsoft.graph.mobileAppContentFile"
+        name          = $fileName
+        size          = (Get-Item $localFilePath).Length
+        sizeEncrypted = (Get-Item "$localFilePath.bin").Length
+        isDependency  = $false
+    }
+    
+    $contentFileUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files"
+    $contentFile = Invoke-MgGraphRequest -Method POST -Uri $contentFileUri -Body ($fileContent | ConvertTo-Json)
+    
+    do {
+        Start-Sleep -Seconds 5
+        $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
+        $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
+    } while ($fileStatus.uploadState -ne "azureStorageUriRequestSuccess")
+    
+    UploadFileToAzureStorage $fileStatus.azureStorageUri "$localFilePath.bin"
+    Write-Host "✅ Upload completed successfully" -ForegroundColor Green
+    
+    Write-Host "`n🔄 Committing file..." -ForegroundColor Yellow
+    $commitData = @{
+        fileEncryptionInfo = $fileEncryptionInfo
+    }
+    $commitUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)/commit"
+    Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
+    
+    $retryCount = 0
+    $maxRetries = 10
+    do {
+        Start-Sleep -Seconds 10
+        $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
+        $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
+        if ($fileStatus.uploadState -eq "commitFileFailed") {
+            $commitResponse = Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
+            $retryCount++
+        }
+    } while ($fileStatus.uploadState -ne "commitFileSuccess" -and $retryCount -lt $maxRetries)
+    
+    if ($fileStatus.uploadState -eq "commitFileSuccess") {
+        Write-Host "✅ File committed successfully" -ForegroundColor Green
+    }
+    else {
+        Write-Host "Failed to commit file after $maxRetries attempts."
+        exit 1
+    }
+    
+    $updateAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)"
+    $updateData = @{
+        "@odata.type"           = "#microsoft.graph.$appType"
+        committedContentVersion = $contentVersion.id
+    }
+    Invoke-MgGraphRequest -Method PATCH -Uri $updateAppUri -Body ($updateData | ConvertTo-Json)
+    
+    # Add logo if one was selected
+    if ($logoPath) {
+        Add-IntuneAppLogo -appId $newApp.id -appName $appDisplayName -appType $appType -localLogoPath $logoPath
+    }
+    
+    Write-Host "`n🧹 Cleaning up temporary files..." -ForegroundColor Yellow
+    if (Test-Path "$localFilePath.bin") {
+        Remove-Item "$localFilePath.bin" -Force
+    }
+    Write-Host "✅ Cleanup complete" -ForegroundColor Green
+    
+    Write-Host "`n✨ Successfully uploaded $appDisplayName" -ForegroundColor Cyan
+    Write-Host "🔗 Intune Portal URL: https://intune.microsoft.com/#view/Microsoft_Intune_Apps/SettingsMenu/~/0/appId/$($newApp.id)" -ForegroundColor Cyan
+    
+    Write-Host "`n🎉 Operation completed successfully!" -ForegroundColor Green
+    Disconnect-MgGraph > $null 2>&1
+    Write-Host "Disconnected from Microsoft Graph." -ForegroundColor Green
+    exit 0
+}
+
+# Fetch supported apps from GitHub repository
+$supportedAppsUrl = "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/refs/heads/main/supported_apps.json"
+$githubJsonUrls = @()
+
+try {
+    # Fetch the supported apps JSON
+    $supportedApps = Invoke-RestMethod -Uri $supportedAppsUrl -Method Get
+
+    # Process apps based on command line parameters or allow manual selection
+    if ($Upload) {
+        Write-Host "`nProcessing specified applications:" -ForegroundColor Cyan
+        foreach ($app in $Upload) {
+            $appName = $app.Trim().ToLower()
+            Write-Host "  - $appName"
+            if ($supportedApps.PSObject.Properties.Name -contains $appName) {
+                $githubJsonUrls += $supportedApps.$appName
+            }
+            else {
+                Write-Host "Warning: '$appName' is not a supported application" -ForegroundColor Yellow
+            }
+        }
+    }
+    elseif ($UpdateAll) {
+        Write-Host "`nChecking existing Intune applications for available updates..." -ForegroundColor Cyan
+        $githubJsonUrls = $supportedApps.PSObject.Properties.Value
+        Write-Host "(Note: Only applications already in Intune will be checked for updates)" -ForegroundColor Yellow
+    }
+    else {
+        # Allow user to select which apps to process
+        Write-Host "`nAvailable applications:" -ForegroundColor Cyan
+        # Add Sort-Object to sort the app names alphabetically
+        $supportedApps.PSObject.Properties |
+        Sort-Object Name |
+        ForEach-Object {
+            Write-Host "  - $($_.Name)"
+        }
+        Write-Host "`nEnter app names separated by commas (or 'all' for all apps):"
+        $selectedApps = Read-Host
+
+        if ($selectedApps.Trim().ToLower() -eq 'all') {
+            $githubJsonUrls = $supportedApps.PSObject.Properties.Value
+        }
+        else {
+            $selectedAppsList = $selectedApps.Split(',') | ForEach-Object { $_.Trim().ToLower() }
+            foreach ($app in $selectedAppsList) {
+                if ($supportedApps.PSObject.Properties.Name -contains $app) {
+                    $githubJsonUrls += $supportedApps.$app
+                }
+                else {
+                    Write-Host "Warning: '$app' is not a supported application" -ForegroundColor Yellow
+                }
+            }
+        }
+    }
+
+    if ($githubJsonUrls.Count -eq 0) {
+        Write-Host "No valid applications selected. Exiting..." -ForegroundColor Red
+        exit
+    }
+}
+catch {
+    Write-Host "Error fetching supported apps list: $_" -ForegroundColor Red
+    exit
+}
+
+# Core Functions
 
 # Fetches app information from GitHub JSON file
 function Get-GitHubAppInfo {
@@ -299,7 +614,7 @@ function Get-GitHubAppInfo {
     )
 
     if ([string]::IsNullOrEmpty($jsonUrl)) {
-        Write-Output "Error: Empty or null JSON URL provided."
+        Write-Host "Error: Empty or null JSON URL provided." -ForegroundColor Red
         return $null
     }
 
@@ -317,47 +632,152 @@ function Get-GitHubAppInfo {
         }
     }
     catch {
-        Write-Output "Error fetching app info from GitHub URL: $jsonUrl"
-        Write-Output "Error details: $_"
+        Write-Host "Error fetching app info from GitHub URL: $jsonUrl" -ForegroundColor Red
+        Write-Host "Error details: $_" -ForegroundColor Red
         return $null
     }
 }
 
 # Downloads app installer file with progress indication
 function Download-AppFile($url, $fileName, $expectedHash) {
-    $outputPath = Join-Path $env:TEMP $fileName
+    $outputPath = Join-Path $PWD $fileName
     
-    Write-Output "Downloading the app file to $outputPath..."
+    # Get file size before downloading
+    try {
+        $response = Invoke-WebRequest -Uri $url -Method Head
+        $fileSize = [math]::Round(($response.Headers.'Content-Length' / 1MB), 2)
+        Write-Host "Downloading the app file ($fileSize MB) to $outputPath..."
+    }
+    catch {
+        Write-Host "Downloading the app file to $outputPath..."
+    }
     
     $ProgressPreference = 'SilentlyContinue'
     Invoke-WebRequest -Uri $url -OutFile $outputPath
 
-    Write-Output "Download complete"
+    Write-Host "✅ Download complete" -ForegroundColor Green
     
     # Validate file integrity using SHA256 hash
-    Write-Output "Validating file integrity..."
+    Write-Host "`n🔐 Validating file integrity..." -ForegroundColor Yellow
     
+    # Validate expected hash format
     if ([string]::IsNullOrWhiteSpace($expectedHash)) {
-        Write-Output "Error: No SHA256 hash provided in the app manifest"
+        Write-Host "❌ Error: No SHA256 hash provided in the app manifest" -ForegroundColor Red
         Remove-Item $outputPath -Force
         throw "SHA256 hash validation failed - No hash provided in app manifest"
     }
     
+    Write-Host "   • Verifying the downloaded file matches the expected SHA256 hash" -ForegroundColor Gray
+    Write-Host "   • This ensures the file hasn't been corrupted or tampered with" -ForegroundColor Gray
+    Write-Host ""
+    Write-Host "   • Expected hash: $expectedHash" -ForegroundColor Gray
+    Write-Host "   • Calculating file hash..." -ForegroundColor Gray
     $fileHash = Get-FileHash -Path $outputPath -Algorithm SHA256
+    Write-Host "   • Actual hash: $($fileHash.Hash)" -ForegroundColor Gray
     
     # Case-insensitive comparison of the hashes
     $expectedHashNormalized = $expectedHash.Trim().ToLower()
     $actualHashNormalized = $fileHash.Hash.Trim().ToLower()
     
     if ($actualHashNormalized -eq $expectedHashNormalized) {
-        Write-Output "Security check passed - File integrity verified"
+        Write-Host "`n✅ Security check passed - File integrity verified" -ForegroundColor Green
+        Write-Host "   • The SHA256 hash of the downloaded file matches the expected value" -ForegroundColor Gray
+        Write-Host "   • This confirms the file is authentic and hasn't been modified" -ForegroundColor Gray
         return $outputPath
     }
     else {
-        Write-Output "Security check failed - File integrity validation error!"
+        Write-Host "`n❌ Security check failed - File integrity validation error!" -ForegroundColor Red
         Remove-Item $outputPath -Force
+        Write-Host "`n"
         throw "Security validation failed - SHA256 hash of the downloaded file does not match the expected value"
     }
+}
+
+
+
+# Validates GitHub URL format for security
+function Is-ValidUrl {
+    param (
+        [string]$url
+    )
+
+    if ($url -match "^https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/.*\.json$") {
+        return $true
+    }
+    else {
+        Write-Host "Invalid URL format: $url" -ForegroundColor Red
+        return $false
+    }
+}
+
+# Retrieves and compares app versions between Intune and GitHub
+function Get-IntuneApps {
+    $intuneApps = @()
+    $totalApps = $githubJsonUrls.Count
+    $currentApp = 0
+
+    Write-Log "Checking app versions in Intune..."
+
+    foreach ($jsonUrl in $githubJsonUrls) {
+        $currentApp++
+        
+        # Check if the URL is valid
+        if (-not (Is-ValidUrl $jsonUrl)) {
+            Write-Log "Invalid URL format: $jsonUrl" -Type "Error"
+            continue
+        }
+
+        # Fetch GitHub app info
+        $appInfo = Get-GitHubAppInfo $jsonUrl
+        if ($appInfo -eq $null) {
+            Write-Log "[$currentApp/$totalApps] Failed to fetch app info for $jsonUrl. Skipping." -Type "Warning"
+            continue
+        }
+
+        $appName = $appInfo.name
+        Write-Log "[$currentApp/$totalApps] Checking: $appName"
+
+        # Fetch Intune app info
+        $intuneQueryUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp')) and displayName eq '$appName'"
+
+        try {
+            $response = Invoke-MgGraphRequest -Uri $intuneQueryUri -Method Get
+            if ($response.value.Count -gt 0) {
+                $intuneVersions = $response.value | ForEach-Object { $_.primaryBundleVersion }
+                $githubVersion = $appInfo.version
+                $latestIntuneVersion = $intuneVersions | Sort-Object -Descending | Select-Object -First 1
+                
+                # Check if GitHub version is newer than ALL installed versions
+                $needsUpdate = $intuneVersions | ForEach-Object { Is-NewerVersion $githubVersion $_ } | Where-Object { $_ -eq $true }
+                
+                if ($needsUpdate.Count -eq $intuneVersions.Count) {
+                    Write-Log "Update available for $appName ($latestIntuneVersion → $githubVersion)"
+                }
+                else {
+                    Write-Log "$appName is up to date (Version: $latestIntuneVersion)"
+                }
+                
+                $intuneApps += [PSCustomObject]@{
+                    Name          = $appName
+                    IntuneVersion = $latestIntuneVersion
+                    GitHubVersion = $githubVersion
+                }
+            }
+            else {
+                Write-Log "$appName not found in Intune"
+                $intuneApps += [PSCustomObject]@{
+                    Name          = $appName
+                    IntuneVersion = 'Not in Intune'
+                    GitHubVersion = $appInfo.version
+                }
+            }
+        }
+        catch {
+            Write-Log "Error fetching Intune app info for '$appName': $_" -Type "Error"
+        }
+    }
+
+    return $intuneApps
 }
 
 # Compares version strings accounting for build numbers
@@ -385,266 +805,364 @@ function Is-NewerVersion($githubVersion, $intuneVersion) {
 
         # If main versions are equal and there are build numbers
         if ($ghVersionParts.Length -gt 1 -and $itVersionParts.Length -gt 1) {
-            try {
-                $ghBuild = [int]$ghVersionParts[1]
-                $itBuild = [int]$itVersionParts[1]
-                return $ghBuild -gt $itBuild
-            }
-            catch {
-                Write-Output "Warning: Failed to compare build numbers. Comparing version strings directly."
-                return $githubVersion -ne $intuneVersion
-            }
+            $ghBuild = [int]$ghVersionParts[1]
+            $itBuild = [int]$itVersionParts[1]
+            return $ghBuild -gt $itBuild
         }
 
-        # If versions are exactly equal or can't be compared
+        # If versions are exactly equal
         return $githubVersion -ne $intuneVersion
     }
     catch {
-        Write-Output "Version comparison failed: GitHubVersion='$githubVersion', IntuneVersion='$intuneVersion'. Assuming versions are equal."
+        Write-Host "Version comparison failed: GitHubVersion='$githubVersion', IntuneVersion='$intuneVersion'. Assuming versions are equal." -ForegroundColor Yellow
         return $false
     }
 }
 
-# Get Intune apps
-function Get-IntuneApps {
-    $intuneApps = @()
-    $totalApps = $githubJsonUrls.Count
-    $currentApp = 0
+# Downloads and adds app logo to Intune app entry
 
-    Write-Output "Checking app versions in Intune..."
-    Write-Output "Total apps to check: $totalApps"
+# Retrieve Intune app versions
+Write-Host "Fetching current Intune app versions..."
+$intuneAppVersions = Get-IntuneApps
+Write-Host ""
 
-    foreach ($jsonUrl in $githubJsonUrls) {
-        $currentApp++
-        
-        # Check if the URL is valid
-        if (-not ($jsonUrl -match "^https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/.*\.json$")) {
-            Write-Output "Invalid URL format: $jsonUrl"
-            continue
+# Only show the table if not using UpdateAll
+if (-not $UpdateAll) {
+    # Prepare table data
+    $tableData = @()
+    foreach ($app in $intuneAppVersions) {
+        if ($app.IntuneVersion -eq 'Not in Intune') {
+            $status = "Not in Intune"
+            $statusColor = "Red"
+        }
+        elseif (Is-NewerVersion $app.GitHubVersion $app.IntuneVersion) {
+            $status = "Update Available"
+            $statusColor = "Yellow"
+        }
+        else {
+            $status = "Up-to-date"
+            $statusColor = "Green"
         }
 
-        # Fetch GitHub app info
-        $appInfo = Get-GitHubAppInfo $jsonUrl
-        if ($null -eq $appInfo) {
-            Write-Output "Failed to fetch app info for $jsonUrl. Skipping."
-            continue
-        }
-
-        $appName = $appInfo.name
-        Write-Output "[$currentApp/$totalApps] Checking: $appName"
-
-        # Fetch Intune app info
-        $intuneQueryUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp')) and displayName eq '$appName'"
-
-        try {
-            $response = Invoke-MgGraphRequest -Uri $intuneQueryUri -Method Get
-            if ($response.value.Count -gt 0) {
-                $intuneVersions = $response.value | ForEach-Object { $_.primaryBundleVersion }
-                $githubVersion = $appInfo.version
-                $latestIntuneVersion = $intuneVersions | Sort-Object -Descending | Select-Object -First 1
-                
-                if (Is-NewerVersion $githubVersion $latestIntuneVersion) {
-                    Write-Output "  • Update available: $appName ($latestIntuneVersion → $githubVersion)"
-                    $intuneApps += [PSCustomObject]@{
-                        Name          = $appName
-                        IntuneVersion = $latestIntuneVersion
-                        GitHubVersion = $githubVersion
-                        JsonUrl       = $jsonUrl
-                    }
-                }
-                else {
-                    Write-Output "  • Up to date: $appName ($latestIntuneVersion)"
-                }
-            }
-            else {
-                Write-Output "  • Not in Intune: $appName"
-            }
-        }
-        catch {
-            Write-Output "Error fetching Intune app info for '$appName': $_"
+        $tableData += [PSCustomObject]@{
+            "App Name"       = $app.Name
+            "Latest Version" = $app.GitHubVersion
+            "Intune Version" = $app.IntuneVersion
+            "Status"         = $status
+            "StatusColor"    = $statusColor
         }
     }
 
-    return $intuneApps
+    # Function to write colored table
+    function Write-ColoredTable {
+        param (
+            $TableData
+        )
+
+        $lineSeparator = "+----------------------------+----------------------+----------------------+-----------------+"
+        
+        Write-Host $lineSeparator
+        Write-Host ("| {0,-26} | {1,-20} | {2,-20} | {3,-15} |" -f "App Name", "Latest Version", "Intune Version", "Status") -ForegroundColor Cyan
+        Write-Host $lineSeparator
+
+        foreach ($row in $TableData) {
+            $color = $row.StatusColor
+            Write-Host ("| {0,-26} | {1,-20} | {2,-20} | {3,-15} |" -f $row.'App Name', $row.'Latest Version', $row.'Intune Version', $row.Status) -ForegroundColor $color
+            Write-Host $lineSeparator
+        }
+    }
+
+    # Display the colored table with lines
+    Write-ColoredTable $tableData
 }
 
-# Fetch supported apps from GitHub
-$supportedAppsUrl = "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/refs/heads/main/supported_apps.json"
-$githubJsonUrls = @()
-
-try {
-    $supportedApps = Invoke-RestMethod -Uri $supportedAppsUrl -Method Get
-    Write-Output "Successfully fetched supported apps list"
-    $githubJsonUrls = $supportedApps.PSObject.Properties.Value
-}
-catch {
-    Write-Output "Error fetching supported apps list: $_"
-    throw
-}
-
-# Process apps
-Write-Output "Retrieving current Intune app versions..."
-$intuneAppVersions = Get-IntuneApps
-
+# Filter apps that need to be uploaded
 $appsToUpload = $intuneAppVersions | Where-Object {
-    # Only include apps that are in Intune and have updates
-    $_.IntuneVersion -ne 'Not in Intune' -and (Is-NewerVersion $_.GitHubVersion $_.IntuneVersion)
+    if ($UpdateAll) {
+        # For UpdateAll, only include apps that are in Intune and have updates
+        $_.IntuneVersion -ne 'Not in Intune' -and (Is-NewerVersion $_.GitHubVersion $_.IntuneVersion)
+    }
+    else {
+        # For normal operation, include both new and updatable apps
+        $_.IntuneVersion -eq 'Not in Intune' -or (Is-NewerVersion $_.GitHubVersion $_.IntuneVersion)
+    }
 }
 
 if ($appsToUpload.Count -eq 0) {
-    Write-Output "All apps are up-to-date. No uploads necessary."
+    Write-Host "`nAll apps are up-to-date. No uploads necessary." -ForegroundColor Green
     Disconnect-MgGraph > $null 2>&1
-    Write-Output "Disconnected from Microsoft Graph"
+    Write-Host "Disconnected from Microsoft Graph." -ForegroundColor Green
     exit 0
 }
 
-Write-Output "Found $($appsToUpload.Count) apps that need updating"
+# Check if there are apps to process
+if (($appsToUpload.Count) -eq 0) {
+    Write-Host "`nNo new or updatable apps found. Exiting..." -ForegroundColor Yellow
+    Disconnect-MgGraph > $null 2>&1
+    Write-Host "Disconnected from Microsoft Graph." -ForegroundColor Green
+    exit 0
+}
 
-# Process each app
-foreach ($app in $appsToUpload) {
-    try {
-        Write-Output "Processing app: $($app.Name)"
-        Write-Output "Current version: $($app.IntuneVersion)"
-        Write-Output "Available version: $($app.GitHubVersion)"
-        Write-Output "----------------------------------------"
+# Skip confirmation if using -Upload or -UpdateAll parameter
+if (-not $Upload -and -not $UpdateAll) {
+    # Create custom message based on app statuses
+    $newApps = @($appsToUpload | Where-Object { $_.IntuneVersion -eq 'Not in Intune' })
+    $updatableApps = @($appsToUpload | Where-Object { $_.IntuneVersion -ne 'Not in Intune' -and (Is-NewerVersion $_.GitHubVersion $_.IntuneVersion) })
 
-        # Get app info directly from stored JsonUrl
-        $appInfo = Get-GitHubAppInfo -jsonUrl $app.JsonUrl
-        if ($appInfo -eq $null) {
-            Write-Output "Failed to fetch app info. Skipping."
-            continue
+    # Construct the message
+    if (($newApps.Length + $updatableApps.Length) -eq 1) {
+        # Check if it's a new app or an update
+        if ($newApps.Length -eq 1) {
+            $message = "`nDo you want to upload this new app ($($newApps[0].Name)) to Intune? (y/n)"
         }
-
-        # Download and process the app
-        Write-Output "Downloading application..."
-        $appFilePath = Download-AppFile $appInfo.url $appInfo.fileName $appInfo.sha
-
-        Write-Output "Creating app in Intune..."
-        $appType = if ($appInfo.fileName -match '\.dmg$') {
-            "macOSDmgApp"
+        elseif ($updatableApps.Length -eq 1) {
+            $message = "`nDo you want to update this app ($($updatableApps[0].Name)) in Intune? (y/n)"
         }
         else {
-            "macOSPkgApp"
+            $message = "`nDo you want to process this app? (y/n)"
         }
+    }
+    else {
+        $statusParts = @()
+        if ($newApps.Length -gt 0) {
+            $statusParts += "$($newApps.Length) new app$(if($newApps.Length -gt 1){'s'}) to upload"
+        }
+        if ($updatableApps.Length -gt 0) {
+            $statusParts += "$($updatableApps.Length) app$(if($updatableApps.Length -gt 1){'s'}) to update"
+        }
+        $message = "`nFound $($statusParts -join ' and '). Do you want to continue? (y/n)"
+    }
 
-        $newApp = @{
-            "@odata.type"                   = "#microsoft.graph.$appType"
-            displayName                     = $appInfo.name
-            description                     = $appInfo.description
-            publisher                       = $appInfo.name
-            fileName                        = $appInfo.fileName
-            informationUrl                  = $appInfo.homepage
-            packageIdentifier               = $appInfo.bundleId
-            bundleId                        = $appInfo.bundleId
-            versionNumber                   = $appInfo.version
-            minimumSupportedOperatingSystem = @{
-                "@odata.type" = "#microsoft.graph.macOSMinimumOperatingSystem"
-                v11_0         = $true
+    # Prompt user to continue
+    $continue = Read-Host -Prompt $message
+    if ($continue -ne "y") {
+        Write-Host "Operation cancelled by user." -ForegroundColor Yellow
+        Disconnect-MgGraph > $null 2>&1
+        Write-Host "Disconnected from Microsoft Graph." -ForegroundColor Green
+        exit 0
+    }
+}
+
+# Main script for uploading only newer apps
+foreach ($app in $appsToUpload) {
+    Write-Log "Processing application: $($app.Name)"
+    Write-Log "Current version in Intune: $($app.IntuneVersion)"
+    Write-Log "Available version: $($app.GitHubVersion)"
+    
+    # Find the corresponding JSON URL for this app
+    $jsonUrl = $githubJsonUrls | Where-Object {
+        $appInfo = Get-GitHubAppInfo -jsonUrl $_
+        $appInfo -and $appInfo.name -eq $app.Name
+    } | Select-Object -First 1
+
+    if (-not $jsonUrl) {
+        Write-Log "Could not find JSON URL for $($app.Name). Skipping." -Type "Error"
+        continue
+    }
+
+    $appInfo = Get-GitHubAppInfo -jsonUrl $jsonUrl
+    if ($appInfo -eq $null) {
+        Write-Log "Failed to fetch app info for $jsonUrl. Skipping." -Type "Error"
+        continue
+    }
+
+    Write-Log "Starting upload process for: $($appInfo.name)"
+    Write-Log "Downloading application from: $($appInfo.url)"
+    $appFilePath = Download-AppFile $appInfo.url $appInfo.fileName $appInfo.sha
+
+    Write-Log "Application Details:"
+    Write-Log "• Display Name: $($appInfo.name)"
+    Write-Log "• Version: $($appInfo.version)"
+    Write-Log "• Bundle ID: $($appInfo.bundleId)"
+    Write-Log "• File: $(Split-Path $appFilePath -Leaf)"
+
+    $appDisplayName = $appInfo.name
+    $appDescription = $appInfo.description
+    $appPublisher = $appInfo.name
+    $appHomepage = $appInfo.homepage
+    $appBundleId = $appInfo.bundleId
+    $appBundleVersion = $appInfo.version
+
+    Write-Log "🔄 Creating app in Intune..."
+
+    # Determine app type based on file extension
+    $appType = if ($appInfo.fileName -match '\.dmg$') {
+        "macOSDmgApp"
+    }
+    elseif ($appInfo.fileName -match '\.pkg$') {
+        "macOSPkgApp"
+    }
+    else {
+        Write-Log "Unsupported file type. Only .dmg and .pkg files are supported." -Type "Error"
+        continue
+    }
+
+    $app = @{
+        "@odata.type"                   = "#microsoft.graph.$appType"
+        displayName                     = $appDisplayName
+        description                     = $appDescription
+        publisher                       = $appPublisher
+        fileName                        = (Split-Path $appFilePath -Leaf)
+        informationUrl                  = $appHomepage
+        packageIdentifier               = $appBundleId
+        bundleId                        = $appBundleId
+        versionNumber                   = $appBundleVersion
+        minimumSupportedOperatingSystem = @{
+            "@odata.type" = "#microsoft.graph.macOSMinimumOperatingSystem"
+            v11_0         = $true
+        }
+    }
+
+    if ($appType -eq "macOSDmgApp" -or $appType -eq "macOSPkgApp") {
+        $app["primaryBundleId"] = $appBundleId
+        $app["primaryBundleVersion"] = $appBundleVersion
+        $app["includedApps"] = @(
+            @{
+                "@odata.type" = "#microsoft.graph.macOSIncludedApp"
+                bundleId      = $appBundleId
+                bundleVersion = $appBundleVersion
             }
-        }
+        )
+    }
 
-        if ($appType -eq "macOSDmgApp" -or $appType -eq "macOSPkgApp") {
-            $newApp["primaryBundleId"] = $appInfo.bundleId
-            $newApp["primaryBundleVersion"] = $appInfo.version
-            $newApp["includedApps"] = @(
-                @{
-                    "@odata.type" = "#microsoft.graph.macOSIncludedApp"
-                    bundleId      = $appInfo.bundleId
-                    bundleVersion = $appInfo.version
-                }
-            )
-        }
+    $createAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps"
+    $newApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($app | ConvertTo-Json -Depth 10)
+    Write-Log "App created successfully (ID: $($newApp.id))"
 
-        $createAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps"
-        $createdApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($newApp | ConvertTo-Json -Depth 10)
-        Write-Output "App created successfully (ID: $($createdApp.id))"
+    Write-Log "🔒 Processing content version..."
+    $contentVersionUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions"
+    $contentVersion = Invoke-MgGraphRequest -Method POST -Uri $contentVersionUri -Body "{}"
+    Write-Log "Content version created (ID: $($contentVersion.id))"
 
-        Write-Output "Processing content version..."
-        $contentVersionUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($createdApp.id)/microsoft.graph.$appType/contentVersions"
-        $contentVersion = Invoke-MgGraphRequest -Method POST -Uri $contentVersionUri -Body "{}"
-        Write-Output "Content version created (ID: $($contentVersion.id))"
+    Write-Log "🔐 Encrypting application file..."
+    $encryptedFilePath = "$appFilePath.bin"
+    if (Test-Path $encryptedFilePath) {
+        Remove-Item $encryptedFilePath -Force
+    }
+    $fileEncryptionInfo = EncryptFile $appFilePath
+    Write-Log "File encryption complete"
 
-        Write-Output "Encrypting application file..."
-        $encryptedFilePath = "$appFilePath.bin"
-        if (Test-Path $encryptedFilePath) {
-            Remove-Item $encryptedFilePath -Force
-        }
-        $fileEncryptionInfo = EncryptFile $appFilePath
-
-        Write-Output "Preparing for upload..."
+    try {
+        Write-Log "⬆️ Uploading to Azure Storage..."
         $fileContent = @{
             "@odata.type" = "#microsoft.graph.mobileAppContentFile"
-            name          = $appInfo.fileName
+            name          = [System.IO.Path]::GetFileName($appFilePath)
             size          = (Get-Item $appFilePath).Length
             sizeEncrypted = (Get-Item "$appFilePath.bin").Length
             isDependency  = $false
         }
 
-        $contentFileUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($createdApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files"
+        Write-Log "Creating content file entry in Intune..."
+        $contentFileUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files"  
         $contentFile = Invoke-MgGraphRequest -Method POST -Uri $contentFileUri -Body ($fileContent | ConvertTo-Json)
+        Write-Log "Content file entry created successfully"
 
+        Write-Log "Waiting for Azure Storage URI..."
+        $maxWaitAttempts = 12  # 1 minute total (5 seconds * 12)
+        $waitAttempt = 0
         do {
             Start-Sleep -Seconds 5
-            $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($createdApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
+            $waitAttempt++
+            Write-Log "Checking upload state (attempt $waitAttempt of $maxWaitAttempts)..."
+            
+            $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
             $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
+            
+            if ($waitAttempt -eq $maxWaitAttempts -and $fileStatus.uploadState -ne "azureStorageUriRequestSuccess") {
+                throw "Timed out waiting for Azure Storage URI"
+            }
         } while ($fileStatus.uploadState -ne "azureStorageUriRequestSuccess")
 
+        Write-Log "Received Azure Storage URI, starting upload..."
         UploadFileToAzureStorage $fileStatus.azureStorageUri "$appFilePath.bin"
-        Write-Output "Upload completed successfully"
-
-        Write-Output "Committing file..."
-        $commitData = @{
-            fileEncryptionInfo = $fileEncryptionInfo
-        }
-        $commitUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($createdApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)/commit"
-        Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
-
-        $retryCount = 0
-        $maxRetries = 10
-        do {
-            Start-Sleep -Seconds 10
-            $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($createdApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
-            $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
-            if ($fileStatus.uploadState -eq "commitFileFailed") {
-                $commitResponse = Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
-                $retryCount++
-            }
-        } while ($fileStatus.uploadState -ne "commitFileSuccess" -and $retryCount -lt $maxRetries)
-
-        if ($fileStatus.uploadState -eq "commitFileSuccess") {
-            Write-Output "File committed successfully"
-        }
-        else {
-            Write-Output "Failed to commit file after $maxRetries attempts."
-            exit 1
-        }
-
-        $updateAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($createdApp.id)"
-        $updateData = @{
-            "@odata.type"           = "#microsoft.graph.$appType"
-            committedContentVersion = $contentVersion.id
-        }
-        Invoke-MgGraphRequest -Method PATCH -Uri $updateAppUri -Body ($updateData | ConvertTo-Json)
-
-        Add-IntuneAppLogo -appId $createdApp.id -appName $appInfo.name -appType $appType
-
-        Write-Output "Successfully processed $($appInfo.name)"
-        Write-Output "Intune Portal URL: https://intune.microsoft.com/#view/Microsoft_Intune_Apps/SettingsMenu/~/0/appId/$($createdApp.id)"
+        Write-Log "Upload to Azure Storage complete"
     }
     catch {
-        Write-Output "Error processing app $($app.Name): $_"
-        Write-Output "----------------------------------------"
-        continue
+        Write-Log "Failed during upload process: $_" -Type "Error"
+        throw
     }
-    finally {
-        # Cleanup
-        Get-ChildItem -Path $env:TEMP -Filter "*.bin" | Remove-Item -Force -ErrorAction SilentlyContinue
-        Get-ChildItem -Path $env:TEMP -Filter "*.pkg" | Remove-Item -Force -ErrorAction SilentlyContinue
-        Get-ChildItem -Path $env:TEMP -Filter "*.dmg" | Remove-Item -Force -ErrorAction SilentlyContinue
+
+    Write-Log "🔄 Committing file to Intune..."
+    $commitData = @{
+        fileEncryptionInfo = $fileEncryptionInfo
     }
+    $commitUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)/commit"
+    Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
+
+    $retryCount = 0
+    $maxRetries = 10
+    do {
+        Start-Sleep -Seconds 10
+        $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
+        $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
+        if ($fileStatus.uploadState -eq "commitFileFailed") {
+            $commitResponse = Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
+            $retryCount++
+        }
+    } while ($fileStatus.uploadState -ne "commitFileSuccess" -and $retryCount -lt $maxRetries)
+
+    if ($fileStatus.uploadState -eq "commitFileSuccess") {
+        Write-Host "✅ File committed successfully" -ForegroundColor Green
+    }
+    else {
+        Write-Host "Failed to commit file after $maxRetries attempts."
+        exit 1
+    }
+
+    $updateAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)"
+    $updateData = @{
+        "@odata.type"           = "#microsoft.graph.$appType"
+        committedContentVersion = $contentVersion.id
+    }
+    Invoke-MgGraphRequest -Method PATCH -Uri $updateAppUri -Body ($updateData | ConvertTo-Json)
+
+    Add-IntuneAppLogo -appId $newApp.id -appName $appDisplayName -appType $appType -localLogoPath $logoPath
+
+    Write-Log "🧹 Cleaning up temporary files..."
+    if (Test-Path $appFilePath) {
+        try {
+            [System.GC]::Collect()
+            [System.GC]::WaitForPendingFinalizers()
+            Remove-Item $appFilePath -Force -ErrorAction Stop
+        }
+        catch {
+            Write-Host "Warning: Could not remove $appFilePath. Error: $_" -ForegroundColor Yellow
+        }
+    }
+    if (Test-Path "$appFilePath.bin") {
+        $maxAttempts = 3
+        $attempt = 0
+        $success = $false
+        
+        while (-not $success -and $attempt -lt $maxAttempts) {
+            try {
+                [System.GC]::Collect()
+                [System.GC]::WaitForPendingFinalizers()
+                Start-Sleep -Seconds 2  # Give processes time to release handles
+                Remove-Item "$appFilePath.bin" -Force -ErrorAction Stop
+                $success = $true
+            }
+            catch {
+                $attempt++
+                if ($attempt -lt $maxAttempts) {
+                    Write-Host "Retry $attempt of $maxAttempts to remove encrypted file..." -ForegroundColor Yellow
+                    Start-Sleep -Seconds 2
+                }
+                else {
+                    Write-Host "Warning: Could not remove $appFilePath.bin. Error: $_" -ForegroundColor Yellow
+                }
+            }
+        }
+    }
+    Write-Host "✅ Cleanup complete" -ForegroundColor Green
+
+    Write-Log "Successfully processed $($appInfo.name)"
+    Write-Log "App is now available in Intune Portal: https://intune.microsoft.com/#view/Microsoft_Intune_Apps/SettingsMenu/~/0/appId/$($newApp.id)"
+    Write-Host "" -ForegroundColor Cyan
 }
 
-Write-Output "All operations completed successfully!"
-Write-Output "Disconnecting from Microsoft Graph..."
+Write-Log "All operations completed successfully!"
+Write-Log "Disconnecting from Microsoft Graph"
 Disconnect-MgGraph > $null 2>&1
-Write-Output "Disconnected from Microsoft Graph"
+
+
