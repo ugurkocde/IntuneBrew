@@ -22,30 +22,7 @@ Version 0.3.7: Fix Parse Errors
 .DESCRIPTION
  This script automates the process of deploying macOS applications to Microsoft Intune using information from Homebrew casks. It fetches app details, creates Intune policies, and manages the deployment process.
 
-.PARAMETER Upload
- Specifies a list of app names to upload directly, bypassing the manual selection process.
- Example: IntuneBrew -Upload google_chrome, visual_studio_code
-
-.PARAMETER UpdateAll
- Updates all applications that have a newer version available in Intune.
- Example: IntuneBrew -UpdateAll
-
-.PARAMETER LocalFile
- Allows uploading a local PKG or DMG file to Intune. Will prompt for file selection and app details.
- Example: IntuneBrew -LocalFile
-
 #>
-[CmdletBinding()]
-param(
-    [Parameter(Mandatory = $false)]
-    [string[]]$Upload,
-    
-    [Parameter(Mandatory = $false)]
-    [switch]$UpdateAll = $true, # Default to true for automation
-    
-    [Parameter(Mandatory = $false)]
-    [switch]$LocalFile
-)
 
 # Function to write logs that will be visible in Azure Automation
 function Write-Log {
@@ -186,22 +163,24 @@ function EncryptFile($sourceFile) {
 # Handles chunked upload of large files to Azure Storage
 function UploadFileToAzureStorage($sasUri, $filepath) {
     try {
-        Write-Log "Starting Azure Storage upload process"
-        Write-Log "File size: $([Math]::Round((Get-Item $filepath).Length / 1MB, 2)) MB"
+        Write-Log "Starting file upload to Azure Storage"
+        $fileSize = [Math]::Round((Get-Item $filepath).Length / 1MB, 2)
+        Write-Log "File size: $fileSize MB"
         
         $blockSize = 8 * 1024 * 1024  # 8 MB block size
         $fileSize = (Get-Item $filepath).Length
         $totalBlocks = [Math]::Ceiling($fileSize / $blockSize)
         
-        Write-Log "Total blocks to upload: $totalBlocks"
-        
         $maxRetries = 3
         $retryCount = 0
         $uploadSuccess = $false
+        $lastProgressReport = 0
 
         while (-not $uploadSuccess -and $retryCount -lt $maxRetries) {
             try {
-                Write-Log "Upload attempt $($retryCount + 1) of $maxRetries"
+                if ($retryCount -gt 0) {
+                    Write-Log "Retry attempt $($retryCount + 1) of $maxRetries" -Type "Warning"
+                }
                 
                 $fileStream = [System.IO.File]::OpenRead($filepath)
                 $blockId = 0
@@ -222,8 +201,6 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                     $blockRetries = 3
                     while (-not $uploadBlockSuccess -and $blockRetries -gt 0) {
                         try {
-                            Write-Log "Uploading block $($blockId + 1) of $totalBlocks"
-                            
                             $blockUri = "$sasUri&comp=block&blockid=$id"
                             Invoke-WebRequest -Method Put $blockUri `
                                 -Headers @{"x-ms-blob-type" = "BlockBlob" } `
@@ -231,14 +208,14 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                                 -ErrorAction Stop | Out-Null
 
                             $uploadBlockSuccess = $true
-                            Write-Log "Block $($blockId + 1) uploaded successfully"
                         }
                         catch {
                             $blockRetries--
-                            Write-Log "Failed to upload block $($blockId + 1). Error: $_" -Type "Error"
                             if ($blockRetries -gt 0) {
-                                Write-Log "Retrying block upload in 2 seconds..." -Type "Warning"
                                 Start-Sleep -Seconds 2
+                            }
+                            else {
+                                Write-Log "Failed to upload block. Error: $_" -Type "Error"
                             }
                         }
                     }
@@ -248,16 +225,20 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                     }
 
                     $percentComplete = [Math]::Round(($blockId + 1) / $totalBlocks * 100, 1)
-                    Write-Log "Upload progress: $percentComplete%"
+                    # Only log progress at 10% intervals
+                    if ($percentComplete - $lastProgressReport -ge 10) {
+                        Write-Log "Upload progress: $percentComplete%"
+                        $lastProgressReport = [Math]::Floor($percentComplete / 10) * 10
+                    }
                     
                     $blockId++
                 }
                 
                 $fileStream.Close()
 
-                Write-Log "Committing all blocks to Azure Storage..."
+                Write-Log "Finalizing upload..."
                 Invoke-RestMethod -Method Put "$sasUri&comp=blocklist" -Body $blockList | Out-Null
-                Write-Log "Successfully committed all blocks"
+                Write-Log "Upload completed successfully"
                 
                 $uploadSuccess = $true
             }
@@ -265,7 +246,7 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                 $retryCount++
                 Write-Log "Upload attempt failed: $_" -Type "Error"
                 if ($retryCount -lt $maxRetries) {
-                    Write-Log "Retrying entire upload in 5 seconds..." -Type "Warning"
+                    Write-Log "Retrying upload..." -Type "Warning"
                     Start-Sleep -Seconds 5
                 }
                 else {
@@ -355,7 +336,6 @@ function Add-IntuneAppLogo {
         Write-Host "⚠️ Warning: Could not add app logo. Error: $_" -ForegroundColor Yellow
     }
 }
-
 
 # Handle local file upload if -LocalFile parameter is used
 if ($LocalFile) {
@@ -547,56 +527,13 @@ $githubJsonUrls = @()
 try {
     # Fetch the supported apps JSON
     $supportedApps = Invoke-RestMethod -Uri $supportedAppsUrl -Method Get
-
-    # Process apps based on command line parameters or allow manual selection
-    if ($Upload) {
-        Write-Host "`nProcessing specified applications:" -ForegroundColor Cyan
-        foreach ($app in $Upload) {
-            $appName = $app.Trim().ToLower()
-            Write-Host "  - $appName"
-            if ($supportedApps.PSObject.Properties.Name -contains $appName) {
-                $githubJsonUrls += $supportedApps.$appName
-            }
-            else {
-                Write-Host "Warning: '$appName' is not a supported application" -ForegroundColor Yellow
-            }
-        }
-    }
-    elseif ($UpdateAll) {
-        Write-Host "`nChecking existing Intune applications for available updates..." -ForegroundColor Cyan
-        $githubJsonUrls = $supportedApps.PSObject.Properties.Value
-        Write-Host "(Note: Only applications already in Intune will be checked for updates)" -ForegroundColor Yellow
-    }
-    else {
-        # Allow user to select which apps to process
-        Write-Host "`nAvailable applications:" -ForegroundColor Cyan
-        # Add Sort-Object to sort the app names alphabetically
-        $supportedApps.PSObject.Properties |
-        Sort-Object Name |
-        ForEach-Object {
-            Write-Host "  - $($_.Name)"
-        }
-        Write-Host "`nEnter app names separated by commas (or 'all' for all apps):"
-        $selectedApps = Read-Host
-
-        if ($selectedApps.Trim().ToLower() -eq 'all') {
-            $githubJsonUrls = $supportedApps.PSObject.Properties.Value
-        }
-        else {
-            $selectedAppsList = $selectedApps.Split(',') | ForEach-Object { $_.Trim().ToLower() }
-            foreach ($app in $selectedAppsList) {
-                if ($supportedApps.PSObject.Properties.Name -contains $app) {
-                    $githubJsonUrls += $supportedApps.$app
-                }
-                else {
-                    Write-Host "Warning: '$app' is not a supported application" -ForegroundColor Yellow
-                }
-            }
-        }
-    }
-
+    
+    # Get all apps for checking updates
+    Write-Host "`nChecking existing Intune applications for available updates..." -ForegroundColor Cyan
+    $githubJsonUrls = $supportedApps.PSObject.Properties.Value
+    
     if ($githubJsonUrls.Count -eq 0) {
-        Write-Host "No valid applications selected. Exiting..." -ForegroundColor Red
+        Write-Host "No applications found to check. Exiting..." -ForegroundColor Red
         exit
     }
 }
@@ -692,8 +629,6 @@ function Download-AppFile($url, $fileName, $expectedHash) {
         throw "Security validation failed - SHA256 hash of the downloaded file does not match the expected value"
     }
 }
-
-
 
 # Validates GitHub URL format for security
 function Is-ValidUrl {
@@ -819,73 +754,49 @@ function Is-NewerVersion($githubVersion, $intuneVersion) {
     }
 }
 
-# Downloads and adds app logo to Intune app entry
-
 # Retrieve Intune app versions
-Write-Host "Fetching current Intune app versions..."
+Write-Log "Fetching current Intune app versions..."
 $intuneAppVersions = Get-IntuneApps
-Write-Host ""
 
-# Only show the table if not using UpdateAll
-if (-not $UpdateAll) {
-    # Prepare table data
-    $tableData = @()
-    foreach ($app in $intuneAppVersions) {
-        if ($app.IntuneVersion -eq 'Not in Intune') {
-            $status = "Not in Intune"
-            $statusColor = "Red"
-        }
-        elseif (Is-NewerVersion $app.GitHubVersion $app.IntuneVersion) {
-            $status = "Update Available"
-            $statusColor = "Yellow"
-        }
-        else {
-            $status = "Up-to-date"
-            $statusColor = "Green"
-        }
+# Show the overview table using Write-Log
+Write-Log "----------------------------------------"
+Write-Log "Available Updates Overview:"
+Write-Log "----------------------------------------"
 
-        $tableData += [PSCustomObject]@{
-            "App Name"       = $app.Name
-            "Latest Version" = $app.GitHubVersion
-            "Intune Version" = $app.IntuneVersion
-            "Status"         = $status
-            "StatusColor"    = $statusColor
-        }
-    }
-
-    # Function to write colored table
-    function Write-ColoredTable {
-        param (
-            $TableData
-        )
-
-        $lineSeparator = "+----------------------------+----------------------+----------------------+-----------------+"
-        
-        Write-Host $lineSeparator
-        Write-Host ("| {0,-26} | {1,-20} | {2,-20} | {3,-15} |" -f "App Name", "Latest Version", "Intune Version", "Status") -ForegroundColor Cyan
-        Write-Host $lineSeparator
-
-        foreach ($row in $TableData) {
-            $color = $row.StatusColor
-            Write-Host ("| {0,-26} | {1,-20} | {2,-20} | {3,-15} |" -f $row.'App Name', $row.'Latest Version', $row.'Intune Version', $row.Status) -ForegroundColor $color
-            Write-Host $lineSeparator
-        }
-    }
-
-    # Display the colored table with lines
-    Write-ColoredTable $tableData
+$updatesAvailable = $intuneAppVersions | Where-Object {
+    $_.IntuneVersion -ne 'Not in Intune' -and (Is-NewerVersion $_.GitHubVersion $_.IntuneVersion)
 }
 
-# Filter apps that need to be uploaded
+if ($updatesAvailable.Count -eq 0) {
+    Write-Log "No updates available for any installed applications."
+    Write-Log "Exiting..."
+    Disconnect-MgGraph > $null 2>&1
+    exit 0
+}
+else {
+    # Create table header
+    Write-Log "+--------------------------+--------------------+--------------------+"
+    Write-Log "| App Name                | Current Version    | Available Version  |"
+    Write-Log "+--------------------------+--------------------+--------------------+"
+    
+    # Add table rows
+    foreach ($app in $updatesAvailable) {
+        $appName = $app.Name.PadRight(24)[0..23] -join ''
+        $currentVersion = $app.IntuneVersion.PadRight(18)[0..17] -join ''
+        $availableVersion = $app.GitHubVersion.PadRight(18)[0..17] -join ''
+        Write-Log "| $appName | $currentVersion | $availableVersion |"
+        Write-Log "+--------------------------+--------------------+--------------------+"
+    }
+    
+    Write-Log ""
+    Write-Log "Found $($updatesAvailable.Count) update$(if($updatesAvailable.Count -ne 1){'s'}) available."
+    Write-Log "Starting update process in 10 seconds..."
+    Start-Sleep -Seconds 10
+}
+
+# Filter apps that need to be uploaded (only updates, no new apps)
 $appsToUpload = $intuneAppVersions | Where-Object {
-    if ($UpdateAll) {
-        # For UpdateAll, only include apps that are in Intune and have updates
-        $_.IntuneVersion -ne 'Not in Intune' -and (Is-NewerVersion $_.GitHubVersion $_.IntuneVersion)
-    }
-    else {
-        # For normal operation, include both new and updatable apps
-        $_.IntuneVersion -eq 'Not in Intune' -or (Is-NewerVersion $_.GitHubVersion $_.IntuneVersion)
-    }
+    $_.IntuneVersion -ne 'Not in Intune' -and (Is-NewerVersion $_.GitHubVersion $_.IntuneVersion)
 }
 
 if ($appsToUpload.Count -eq 0) {
@@ -901,46 +812,6 @@ if (($appsToUpload.Count) -eq 0) {
     Disconnect-MgGraph > $null 2>&1
     Write-Host "Disconnected from Microsoft Graph." -ForegroundColor Green
     exit 0
-}
-
-# Skip confirmation if using -Upload or -UpdateAll parameter
-if (-not $Upload -and -not $UpdateAll) {
-    # Create custom message based on app statuses
-    $newApps = @($appsToUpload | Where-Object { $_.IntuneVersion -eq 'Not in Intune' })
-    $updatableApps = @($appsToUpload | Where-Object { $_.IntuneVersion -ne 'Not in Intune' -and (Is-NewerVersion $_.GitHubVersion $_.IntuneVersion) })
-
-    # Construct the message
-    if (($newApps.Length + $updatableApps.Length) -eq 1) {
-        # Check if it's a new app or an update
-        if ($newApps.Length -eq 1) {
-            $message = "`nDo you want to upload this new app ($($newApps[0].Name)) to Intune? (y/n)"
-        }
-        elseif ($updatableApps.Length -eq 1) {
-            $message = "`nDo you want to update this app ($($updatableApps[0].Name)) in Intune? (y/n)"
-        }
-        else {
-            $message = "`nDo you want to process this app? (y/n)"
-        }
-    }
-    else {
-        $statusParts = @()
-        if ($newApps.Length -gt 0) {
-            $statusParts += "$($newApps.Length) new app$(if($newApps.Length -gt 1){'s'}) to upload"
-        }
-        if ($updatableApps.Length -gt 0) {
-            $statusParts += "$($updatableApps.Length) app$(if($updatableApps.Length -gt 1){'s'}) to update"
-        }
-        $message = "`nFound $($statusParts -join ' and '). Do you want to continue? (y/n)"
-    }
-
-    # Prompt user to continue
-    $continue = Read-Host -Prompt $message
-    if ($continue -ne "y") {
-        Write-Host "Operation cancelled by user." -ForegroundColor Yellow
-        Disconnect-MgGraph > $null 2>&1
-        Write-Host "Disconnected from Microsoft Graph." -ForegroundColor Green
-        exit 0
-    }
 }
 
 # Main script for uploading only newer apps
