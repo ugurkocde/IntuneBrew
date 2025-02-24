@@ -584,42 +584,33 @@ def main():
             file_path = os.path.join(apps_folder, file_name)
             print(f"📝 Attempting to write to: {os.path.abspath(file_path)}")
 
-            # For existing files, update version, url, previous_version and calculate SHA
+            # For existing files, update version, url, fileName, and recalculate SHA if version changed
             if os.path.exists(file_path):
                 print(f"Found existing file for {display_name}")
                 with open(file_path, "r") as f:
                     existing_data = json.load(f)
-                    # Store the new version, url and previous_version
+                    # Store the new version and check if it changed
                     new_version = app_info["version"]
-                    new_url = app_info["url"]
-                    previous_version = existing_data.get("version")
+                    version_changed = existing_data.get("version") != new_version
                     
-                    # Check if we need to calculate hash
-                    needs_hash = True
-                    if ("sha" in existing_data and
-                        existing_data.get("version") == new_version):
-                        needs_hash = False
-                        app_info["sha"] = existing_data["sha"]
-                        print(f"ℹ️ Using existing hash for {display_name}")
+                    # Always update version, url, fileName
+                    existing_data["version"] = new_version
+                    existing_data["url"] = app_info["url"]
+                    existing_data["fileName"] = app_info["fileName"]
+                    existing_data["previous_version"] = existing_data.get("version", "")
                     
-                    if needs_hash:
-                        print(f"🔍 Calculating SHA256 hash for {display_name}...")
+                    # Calculate new hash if version changed
+                    if version_changed:
+                        print(f"🔍 Version changed, calculating new SHA256 hash for {display_name}...")
                         file_hash = calculate_file_hash(app_info["url"])
                         if file_hash:
-                            app_info["sha"] = file_hash
-                            print(f"✅ SHA256 hash calculated: {file_hash}")
+                            existing_data["sha"] = file_hash
+                            print(f"✅ New SHA256 hash calculated: {file_hash}")
                         else:
                             print(f"⚠️ Could not calculate SHA256 hash for {display_name}")
                     
-                    # Preserve all existing data except version, url, sha and previous_version
-                    for key in existing_data:
-                        if key not in ["version", "url", "sha", "previous_version"]:
-                            app_info[key] = existing_data[key]
-                    
-                    # Update version, url and previous_version
-                    app_info["version"] = new_version
-                    app_info["url"] = new_url
-                    app_info["previous_version"] = previous_version
+                    # Update app_info with all existing data
+                    app_info = existing_data
 
             with open(file_path, "w") as f:
                 json.dump(app_info, f, indent=2)
