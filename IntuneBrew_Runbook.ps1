@@ -673,19 +673,19 @@ function Get-IntuneApps {
         Write-Log "[$currentApp/$totalApps] Checking: $appName"
 
         # Fetch Intune app info
-        $intuneQueryUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp')) and displayName eq '$appName'"
+        $intuneQueryUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp')) and displayName eq '$appName'&`$orderby=createdDateTime desc"
 
         try {
             $response = Invoke-MgGraphRequest -Uri $intuneQueryUri -Method Get
             if ($response.value.Count -gt 0) {
-                $intuneVersions = $response.value | ForEach-Object { $_.primaryBundleVersion }
+                # Get only the latest version from Intune (first item due to orderby desc)
+                $latestIntuneVersion = $response.value[0].primaryBundleVersion
                 $githubVersion = $appInfo.version
-                $latestIntuneVersion = $intuneVersions | Sort-Object -Descending | Select-Object -First 1
                 
-                # Check if GitHub version is newer than ALL installed versions
-                $needsUpdate = $intuneVersions | ForEach-Object { Is-NewerVersion $githubVersion $_ } | Where-Object { $_ -eq $true }
+                # Compare only with the latest version
+                $needsUpdate = Is-NewerVersion $githubVersion $latestIntuneVersion
                 
-                if ($needsUpdate.Count -eq $intuneVersions.Count) {
+                if ($needsUpdate) {
                     Write-Log "Update available for $appName ($latestIntuneVersion → $githubVersion)"
                 }
                 else {
