@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/logitech_options_1.86.669369.pkg",
   "bundleId": "com.logitech.Logi-Options",
   "homepage": "https://www.logitech.com/en-us/software/logi-options-plus.html",
-  "fileName": "logioptionsplus_installer.zip",
+  "fileName": "logioptionsplus_installer.pkg",
   "type": "app",
   "sha": "c3d84b604d55baf730594b3a417390d94acccf0932c8e9794ece953c421b40f1",
   "changelog": "https://support.logi.com/hc/articles/1500005516462",
