@@ -414,10 +414,18 @@ First decide which authentication method you would like to use. There are curren
    - DeviceManagementApps.ReadWrite.All
 4. Open [Entra admin center](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview) -> Applications -> Enterprise Applications. Change Filter "Application type" to "Managed Identities" and search for your Automation Account name. Open the entity.
 5. Verify that the right permissions are set to the Managed Identity in the Security -> Permissions tab.
-6. Create a new Variable in your Automation Account with the name "AuthenticationMethod" and value "SystemManagedIdentity" to use the SystemManagedIdentity.
+6. Create a new Variable in your Automation Account with the name "AuthenticationMethod" and value "SystemManagedIdentity" to use the System Managed Identity.
 
-## Using User Assigned Managed Identity
-
+### Using User Assigned Managed Identity
+1. Open [Azure Portal](https://portal.azure.com) and search for "Managed Identities".
+2. Click "Create" and select your Azure Subscription & Resource group. Choose your region and set a name for the identity.
+3. Open your Automation Account and select Account Settings -> Identity.
+4. Switch to tab "User assigned" and click "Add". Choose the previously created Managed Identity.
+5. Add the following API permissions to your System Managed Identity using this PowerShell script: [MIcrosoft Tech Community](https://techcommunity.microsoft.com/blog/integrationsonazureblog/grant-graph-api-permission-to-azure-automation-system-assigned-managed-identity/4278846)
+   - DeviceManagementApps.ReadWrite.All
+6. Open [Entra admin center](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview) -> Applications -> Enterprise Applications. Change Filter "Application type" to "Managed Identities" and search for your Automation Account name. Open the entity.
+7. Verify that the right permissions are set to the Managed Identity in the Security -> Permissions tab.
+8. Create a new Variable in your Automation Account with the name "AuthenticationMethod" and value "UserAssignedManagedIdentity" to use the User Assigned Managed Identity.
 
 ### Using ClientSecret from Entra ID App Registration
 1. Create a new App Registration in Azure
@@ -429,7 +437,6 @@ First decide which authentication method you would like to use. There are curren
    - $certThumbprint = '<YourCertificateThumbprintHere>' # Thumbprint of the certificate associated with the App Registration
 
 ### Certificate-Based Authentication
-
 1. Generate a self-signed certificate:
 
 ```powershell
