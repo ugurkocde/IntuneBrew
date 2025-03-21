@@ -61,13 +61,12 @@ $requiredPermissions = @(
 )
 
 # Get the authentication method from Automation Account variable
-try {
-    $AuthenticationMethod = Get-AutomationVariable -Name 'AuthenticationMethod'
-}
-catch {
-    Write-Log "Failed to retrieve authentication method: $_" -Type "Error"
-    Write-Log "Set Automation Account variable for your desired authentication method." -Type "Error"
-    throw
+$AuthenticationMethod = Get-AutomationVariable -Name 'AuthenticationMethod'
+
+# Check if the AuthenticationMethod variable is empty
+if ([string]::IsNullOrWhiteSpace($AuthenticationMethod)) {
+    Write-Log "Authentication method is not specified. Please set the 'AuthenticationMethod' Automation Account variable." -Type "Error"
+    throw "Authentication method is required but not provided."
 }
 
 # Use Client Secret for authentication
@@ -99,10 +98,10 @@ if ($AuthenticationMethod -eq "ClientSecret") {
         throw
     }
 }
-
-if ($AuthenticationMethod -eq "SystemManagedIdentity") {
+# Use System Managed Identity for authentication
+elseif ($AuthenticationMethod -eq "SystemManagedIdentity") {
     Write-Log "Using System Managed Identity for authentication"
-
+    
     # Authenticate using System Managed Identity from Automation Account
     try {
         Connect-MgGraph -Identity
@@ -114,8 +113,8 @@ if ($AuthenticationMethod -eq "SystemManagedIdentity") {
         throw
     }
 }
-
-if ($AuthenticationMethod -eq "UserAssignedManagedIdentity") {
+# Use User Assigned Managed Identity for authentication
+elseif ($AuthenticationMethod -eq "UserAssignedManagedIdentity") {
     Write-Log "Using User Assigned Managed Identity for authentication"
 
     # Authenticate using System Managed Identity from Automation Account
