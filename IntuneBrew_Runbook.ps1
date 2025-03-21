@@ -60,29 +60,74 @@ $requiredPermissions = @(
     "DeviceManagementApps.ReadWrite.All"
 )
 
-# Get authentication details from Automation Account
-try {
-    $tenantId = Get-AutomationVariable -Name 'TenantId'
-    $appId = Get-AutomationVariable -Name 'AppId'
-    $clientSecret = Get-AutomationVariable -Name 'ClientSecret'
+# Get the authentication method from Automation Account variable
+$AuthenticationMethod = Get-AutomationVariable -Name 'AuthenticationMethod'
 
-    Write-Log "Successfully retrieved authentication variables from Automation Account"
-}
-catch {
-    Write-Log "Failed to retrieve authentication variables: $_" -Type "Error"
-    throw
+# Check if the AuthenticationMethod variable is empty
+if ([string]::IsNullOrWhiteSpace($AuthenticationMethod)) {
+    Write-Log "Authentication method is not specified. Please set the 'AuthenticationMethod' Automation Account variable." -Type "Error"
+    throw "Authentication method is required but not provided."
 }
 
-# Authenticate using client secret from Automation Account
-try {
-    $SecureClientSecret = ConvertTo-SecureString -String $clientSecret -AsPlainText -Force
-    $ClientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $appId, $SecureClientSecret
-    Connect-MgGraph -TenantId $tenantId -ClientSecretCredential $ClientSecretCredential -NoWelcome -ErrorAction Stop
-    Write-Log "Successfully connected to Microsoft Graph using client secret authentication"
+# Use Client Secret for authentication
+if ($AuthenticationMethod -eq "ClientSecret") {
+    Write-Log "Using Client Secret for authentication"
+
+    # Get authentication details from Automation Account variables
+    try {
+        $tenantId = Get-AutomationVariable -Name 'TenantId'
+        $appId = Get-AutomationVariable -Name 'AppId'
+        $clientSecret = Get-AutomationVariable -Name 'ClientSecret'
+
+        Write-Log "Successfully retrieved authentication variables from Automation Account"
+    }
+    catch {
+        Write-Log "Failed to retrieve authentication variables: $_" -Type "Error"
+        throw
+    }
+
+    # Authenticate using client secret from Automation Account
+    try {
+        $SecureClientSecret = ConvertTo-SecureString -String $clientSecret -AsPlainText -Force
+        $ClientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $appId, $SecureClientSecret
+        Connect-MgGraph -TenantId $tenantId -ClientSecretCredential $ClientSecretCredential -NoWelcome -ErrorAction Stop
+        Write-Log "Successfully connected to Microsoft Graph using client secret authentication"
+    }
+    catch {
+        Write-Log "Failed to connect to Microsoft Graph using client secret. Error: $_" -Type "Error"
+        throw
+    }
 }
-catch {
-    Write-Log "Failed to connect to Microsoft Graph using client secret. Error: $_" -Type "Error"
-    throw
+# Use System Managed Identity for authentication
+elseif ($AuthenticationMethod -eq "SystemManagedIdentity") {
+    Write-Log "Using System Managed Identity for authentication"
+    
+    # Authenticate using System Managed Identity from Automation Account
+    try {
+        Connect-MgGraph -Identity -NoWelcome -ErrorAction Stop
+        Write-Log "Successfully connected to Microsoft Graph using System Managed Identity"
+    }
+    catch {
+        Write-Log "Failed to connect to Microsoft Graph using System Managed Identity. Error: $_" -Type "Error"
+        Write-Log "Make sure to enable the System Managed Identity using the guide in the README.md." -Type "Error"
+        throw
+    }
+}
+# Use User Assigned Managed Identity for authentication
+elseif ($AuthenticationMethod -eq "UserAssignedManagedIdentity") {
+    Write-Log "Using User Assigned Managed Identity for authentication"
+
+    # Authenticate using System Managed Identity from Automation Account
+    try {
+        $appId = Get-AutomationVariable -Name 'AppId'
+        Connect-MgGraph -Identity -ClientId $appid -NoWelcome -ErrorAction Stop
+        Write-Log "Successfully connected to Microsoft Graph using User Assigned Managed Identity"
+    }
+    catch {
+        Write-Log "Failed to connect to Microsoft Graph using User Assigned Managed Identity. Error: $_" -Type "Error"
+        Write-Log "Make sure to assign the User Assigned Identity to this Automation Account." -Type "Error"
+        throw
+    }
 }
 
 # Check and display the current permissions
