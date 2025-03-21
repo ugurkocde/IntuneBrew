@@ -401,8 +401,25 @@ Follow the interactive prompts to:
 
 ## 🔧 Configuration
 
-### Azure App Registration
+First decide which authentication method you would like to use. There are currently the following methods implemented:
+- System Managed Identity
+- User Managed Identity
+- ClientSecret & ClientID using App Registration
+- Certificate based authentication
 
+### Using System Managed Identity
+1. Open your Automation Account and select Account Settings -> Identity.
+2. Turn Status on tab "System assigned" to "On".
+3. Add the following API permissions to your System Managed Identity using this PowerShell script: [MIcrosoft Tech Community](https://techcommunity.microsoft.com/blog/integrationsonazureblog/grant-graph-api-permission-to-azure-automation-system-assigned-managed-identity/4278846)
+   - DeviceManagementApps.ReadWrite.All
+4. Open [Entra admin center](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview) -> Applications -> Enterprise Applications. Change Filter "Application type" to "Managed Identities" and search for your Automation Account name. Open the entity.
+5. Verify that the right permissions are set to the Managed Identity in the Security -> Permissions tab.
+6. Create a new Variable in your Automation Account with the name "AuthenticationMethod" and value "SystemManagedIdentity" to use the SystemManagedIdentity.
+
+## Using User Assigned Managed Identity
+
+
+### Using ClientSecret from Entra ID App Registration
 1. Create a new App Registration in Azure
 2. Add the following API permissions:
    - DeviceManagementApps.ReadWrite.All

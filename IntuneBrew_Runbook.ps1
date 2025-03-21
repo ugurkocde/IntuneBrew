@@ -104,8 +104,8 @@ elseif ($AuthenticationMethod -eq "SystemManagedIdentity") {
     
     # Authenticate using System Managed Identity from Automation Account
     try {
-        Connect-MgGraph -Identity
-        Write-Log "Successfully connected to Microsoft Graph using Managed Identity"
+        Connect-MgGraph -Identity -NoWelcome -ErrorAction Stop
+        Write-Log "Successfully connected to Microsoft Graph using System Managed Identity"
     }
     catch {
         Write-Log "Failed to connect to Microsoft Graph using System Managed Identity. Error: $_" -Type "Error"
@@ -119,12 +119,13 @@ elseif ($AuthenticationMethod -eq "UserAssignedManagedIdentity") {
 
     # Authenticate using System Managed Identity from Automation Account
     try {
-        Connect-MgGraph -Identity
-        Write-Log "Successfully connected to Microsoft Graph using Managed Identity"
+        $appId = Get-AutomationVariable -Name 'AppId'
+        Connect-MgGraph -Identity -ClientId $appid -NoWelcome -ErrorAction Stop
+        Write-Log "Successfully connected to Microsoft Graph using User Assigned Managed Identity"
     }
     catch {
-        Write-Log "Failed to connect to Microsoft Graph using System Managed Identity. Error: $_" -Type "Error"
-        Write-Log "Make sure to enable the System Managed Identity using the guide in the README.md." -Type "Error"
+        Write-Log "Failed to connect to Microsoft Graph using User Assigned Managed Identity. Error: $_" -Type "Error"
+        Write-Log "Make sure to assign the User Assigned Identity to this Automation Account." -Type "Error"
         throw
     }
 }
