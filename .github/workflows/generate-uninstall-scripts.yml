@@ -1,0 +1,61 @@
+name: Generate Uninstall Scripts
+
+on:
+  # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      force_regenerate:
+        description: "Force regenerate all scripts"
+        required: false
+        default: false
+        type: boolean
+
+jobs:
+  generate-scripts:
+    runs-on: macos-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Generate uninstall scripts
+        run: |
+          echo "Generating uninstall scripts..."
+          python .github/scripts/generate_uninstall_scripts.py
+
+      - name: Count generated scripts
+        id: count-scripts
+        run: |
+          script_count=$(find "Uninstall Scripts" -name "uninstall_*.sh" | wc -l)
+          echo "Generated $script_count uninstall scripts"
+          echo "SCRIPT_COUNT=$script_count" >> $GITHUB_ENV
+
+      - name: Make scripts executable
+        run: |
+          chmod +x "Uninstall Scripts"/*.sh
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add "Uninstall Scripts"/*.sh
+
+          if [ "${{ github.event.inputs.force_regenerate }}" == "true" ]; then
+            git commit -m "Force regenerated $SCRIPT_COUNT uninstall scripts" || echo "No changes to commit"
+          else
+            git commit -m "Generated $SCRIPT_COUNT uninstall scripts" || echo "No changes to commit"
+          fi
+
+          git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git
