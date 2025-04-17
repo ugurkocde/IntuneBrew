@@ -3,8 +3,8 @@
 # Script to fetch latest Remote Help information and generate JSON
 
 # Get the latest version number from Microsoft's documentation and clean up HTML tags
-VERSION=$(curl -s "https://learn.microsoft.com/en-us/mem/intune/fundamentals/remote-help-macos" | 
-         grep -o "<strong>[0-9.]*</strong>" | 
+VERSION=$(curl -s -L "https://learn.microsoft.com/en-us/intune/intune-service/fundamentals/remote-help-macos" |
+         grep -o "<strong>[0-9.]*</strong>" |
          sed 's/<[^>]*>//g')
 
 # Check if we got a valid version
@@ -40,4 +40,4 @@ if [ -f "supported_apps.json" ]; then
     fi
 fi
 
-echo "Successfully updated Remote Help information" 
+echo "Successfully updated Remote Help information"
