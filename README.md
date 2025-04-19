@@ -410,7 +410,7 @@ First decide which authentication method you would like to use. There are curren
 ### Using System Managed Identity
 1. Open your Automation Account and select Account Settings -> Identity.
 2. Turn Status on tab "System assigned" to "On".
-3. Add the following API permissions to your System Managed Identity using this PowerShell script: [MIcrosoft Tech Community](https://techcommunity.microsoft.com/blog/integrationsonazureblog/grant-graph-api-permission-to-azure-automation-system-assigned-managed-identity/4278846)
+3. Add the following API permissions to your System Managed Identity using this PowerShell script: [Microsoft Tech Community](https://techcommunity.microsoft.com/blog/integrationsonazureblog/grant-graph-api-permission-to-azure-automation-system-assigned-managed-identity/4278846)
    - DeviceManagementApps.ReadWrite.All
 4. Open [Entra admin center](https://entra.microsoft.com/#view/Microsoft_AAD_IAM/StartboardApplicationsMenuBlade/~/AppAppsPreview) -> Applications -> Enterprise Applications. Change Filter "Application type" to "Managed Identities" and search for your Automation Account name. Open the entity.
 5. Verify that the right permissions are set to the Managed Identity in the Security -> Permissions tab.
