@@ -452,6 +452,10 @@ Export-PfxCertificate -Cert $cert -FilePath "IntuneBrew.pfx" -Password $pwd
    - Navigate to "Certificates & secrets"
    - Upload the public key portion of your certificate
 
+### Copy Assignments
+
+Using the `-CopyAssignments` switch with `IntuneBrew.ps1` or creating a `CopyAssignments` Variable with Boolean Value `true` in your Azure Automation indicates that assignments from the existing app version should be copied to the new version.
+
 ### App JSON Structure
 
 Apps are defined in JSON files with the following structure:
