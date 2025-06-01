@@ -196,17 +196,16 @@ jobs:
                 echo "✅ PKG download successful"
                 ls -lh "${download_path}.pkg"
                 
-                # Create temporary directory for extraction
-                echo "📂 Creating temporary directory for extraction"
+                # Prepare temporary directory for extraction
+                echo "📂 Preparing temporary directory for extraction"
                 temp_dir="${download_path}_extracted"
                 # Remove directory if it exists
                 if [ -d "$temp_dir" ]; then
                   echo "🧹 Removing existing directory: $temp_dir"
                   rm -rf "$temp_dir"
                 fi
-                mkdir -p "$temp_dir"
                 
-                # Extract PKG
+                # Extract PKG (pkgutil will create the directory)
                 echo "🔓 Extracting outer PKG..."
                 pkgutil --expand "${download_path}.pkg" "$temp_dir"
                 
