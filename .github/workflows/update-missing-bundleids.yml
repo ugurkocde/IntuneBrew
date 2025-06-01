@@ -236,8 +236,10 @@ jobs:
                 if [ $? -ne 0 ]; then
                   echo "❌ Installation failed"
                   INSTALLATION_ERRORS+=("$APP_NAME|PKG installation failed|$APP_URL")
-                  # Continue processing instead of exiting
-                  echo "⚠️ Continuing with bundleId extraction attempt despite installation failure..."
+                  echo "⚠️ Skipping this app due to installation failure..."
+                  cd "$GITHUB_WORKSPACE"
+                  rm -rf "$TEMP_DIR"
+                  continue
                 fi
               else
                 echo "❌ Package file not found at: $DOWNLOAD_PATH"
