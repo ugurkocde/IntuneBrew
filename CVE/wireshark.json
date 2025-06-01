@@ -1,6 +1,6 @@
 {
   "app_name": "Wireshark",
-  "last_updated": "2025-05-25",
+  "last_updated": "2025-06-01",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2025-1492",
