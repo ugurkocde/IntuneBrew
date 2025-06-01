@@ -39,7 +39,7 @@ jobs:
           for file in Apps/*.json; do
             if [ -f "$file" ]; then
               type=$(jq -r '.type // empty' "$file")
-              if [ "$type" = "app" ] || [ "$type" = "pkg_in_dmg" ]; then
+              if [ "$type" = "app" ] || [ "$type" = "pkg_in_dmg" ] || [ "$type" = "pkg_in_pkg" ] || [ "$type" = "pkg" ]; then
                 app_name=$(basename "$file" .json)
                 url=$(jq -r '.url' "$file")
                 apps_to_build+=("$app_name:$url")
