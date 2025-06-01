@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-506-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -88,15 +88,15 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-06-01 00:37 UTC*
+*Last checked: 2025-06-01 12:48 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Readest | 0.9.50 | 0.9.51 |
-| Apifox | 2.7.14 | 2.7.15 |
-| VeraCrypt | 1.26.20 | 1.26.24 |
+| Proxyman | 5.19.0 | 5.20.0 |
+| DisplayLink USB Graphics Software | 1.12.2 | 1.12.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -260,7 +260,7 @@ Follow the interactive prompts to:
 | <img src='Logos/devtoys.png' width='32' height='32'> DevToys | 2.0.8.0 |
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
 | <img src='Logos/discord.png' width='32' height='32'> Discord | 0.0.347 |
-| <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 1.12.2 |
+| <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 1.12.3 |
 | <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.12.1 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.41.2 |
 | <img src='Logos/dockside.png' width='32' height='32'> Dockside | 1.9.54 |
@@ -517,7 +517,7 @@ Follow the interactive prompts to:
 | <img src='Logos/proton_mail.png' width='32' height='32'> Proton Mail | 1.8.0 |
 | <img src='Logos/proton_pass.png' width='32' height='32'> Proton Pass | 1.31.4 |
 | <img src='Logos/protonvpn.png' width='32' height='32'> ProtonVPN | 4.8.0 |
-| <img src='Logos/proxyman.png' width='32' height='32'> Proxyman | 5.19.0 |
+| <img src='Logos/proxyman.png' width='32' height='32'> Proxyman | 5.20.0 |
 | <img src='Logos/ps_remote_play.png' width='32' height='32'> PS Remote Play | 8.0.0 |
 | <img src='Logos/pulsar.png' width='32' height='32'> Pulsar | 1.128.0 |
 | <img src='Logos/qBittorrent.png' width='32' height='32'> qBittorrent | 5.0.5 |
