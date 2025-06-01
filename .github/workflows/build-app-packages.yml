@@ -199,6 +199,11 @@ jobs:
                 # Create temporary directory for extraction
                 echo "📂 Creating temporary directory for extraction"
                 temp_dir="${download_path}_extracted"
+                # Remove directory if it exists
+                if [ -d "$temp_dir" ]; then
+                  echo "🧹 Removing existing directory: $temp_dir"
+                  rm -rf "$temp_dir"
+                fi
                 mkdir -p "$temp_dir"
                 
                 # Extract PKG
@@ -290,6 +295,13 @@ jobs:
               
               # Create mount point
               echo "📂 Creating mount point at ${download_path}_mount"
+              # Remove mount point if it exists
+              if [ -d "${download_path}_mount" ]; then
+                echo "🧹 Removing existing mount point: ${download_path}_mount"
+                # Try to unmount first if it's mounted
+                hdiutil detach "${download_path}_mount" 2>/dev/null || true
+                rm -rf "${download_path}_mount"
+              fi
               mkdir -p "${download_path}_mount"
               
               # Mount DMG
@@ -370,6 +382,11 @@ jobs:
               if [[ "$url" == *".zip" ]]; then
                 curl -L -o "${download_path}.zip" "$url"
                 cd "$HOME/Desktop"
+                # Remove extraction directory if it exists
+                if [ -d "${app_name}_extracted" ]; then
+                  echo "🧹 Removing existing directory: ${app_name}_extracted"
+                  rm -rf "${app_name}_extracted"
+                fi
                 # Extract zip while excluding __MACOSX directory
                 unzip -q -d "${app_name}_extracted" "${download_path}.zip"
                 rm "${download_path}.zip"
@@ -398,6 +415,11 @@ jobs:
                 cd "$HOME/Desktop"
                 # Extract tar.bz2/tbz
                 echo "📂 Creating extraction directory..."
+                # Remove directory if it exists
+                if [ -d "${app_name}_extracted" ]; then
+                  echo "🧹 Removing existing directory: ${app_name}_extracted"
+                  rm -rf "${app_name}_extracted"
+                fi
                 mkdir -p "${app_name}_extracted"
                 echo "🔓 Extracting bzip2 compressed archive..."
                 tar -xjf "$archive_path" -C "${app_name}_extracted"
@@ -409,6 +431,11 @@ jobs:
                 if [ -n "$tar_file" ]; then
                   echo "🔍 Found nested tar archive: $tar_file"
                   echo "📂 Creating nested extraction directory..."
+                  # Remove directory if it exists
+                  if [ -d "${app_name}_nested_extracted" ]; then
+                    echo "🧹 Removing existing directory: ${app_name}_nested_extracted"
+                    rm -rf "${app_name}_nested_extracted"
+                  fi
                   mkdir -p "${app_name}_nested_extracted"
                   echo "🔓 Extracting nested tar archive..."
                   tar -xf "$tar_file" -C "${app_name}_nested_extracted"
@@ -426,6 +453,11 @@ jobs:
                 cd "$HOME/Desktop"
                 # Extract tar.gz
                 echo "📂 Creating extraction directory..."
+                # Remove directory if it exists
+                if [ -d "${app_name}_extracted" ]; then
+                  echo "🧹 Removing existing directory: ${app_name}_extracted"
+                  rm -rf "${app_name}_extracted"
+                fi
                 mkdir -p "${app_name}_extracted"
                 echo "🔓 Extracting tar.gz archive..."
                 tar -xzf "${download_path}.tar.gz" -C "${app_name}_extracted"
@@ -436,6 +468,11 @@ jobs:
               else
                 curl -L -o "${download_path}.zip" "$url"
                 cd "$HOME/Desktop"
+                # Remove extraction directory if it exists
+                if [ -d "${app_name}_extracted" ]; then
+                  echo "🧹 Removing existing directory: ${app_name}_extracted"
+                  rm -rf "${app_name}_extracted"
+                fi
                 # Default to zip extraction
                 unzip -q -d "${app_name}_extracted" "${download_path}.zip"
                 rm "${download_path}.zip"
