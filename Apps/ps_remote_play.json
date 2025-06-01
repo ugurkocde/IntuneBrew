@@ -2,10 +2,11 @@
   "name": "PS Remote Play",
   "description": "Application to control your PlayStation 4 or PlayStation 5",
   "version": "8.0.0",
-  "url": "https://remoteplay.dl.playstation.net/remoteplay/module/mac/RemotePlayInstaller.pkg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/ps_remote_play_8.0.0.pkg",
   "bundleId": "com.playstation.RemotePlay.pkg",
   "homepage": "https://remoteplay.dl.playstation.net/remoteplay/lang/en/",
-  "fileName": "RemotePlayInstaller.pkg",
+  "fileName": "ps_remote_play_8.0.0.pkg",
   "type": "pkg_in_pkg",
-  "previous_version": "8.0.0"
+  "previous_version": "8.0.0",
+  "sha": "5f2b9e831530661ba3e9f19ee1095b75cc75a212d03087b1620170371da2e1cf"
 }

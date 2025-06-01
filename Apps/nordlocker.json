@@ -2,10 +2,11 @@
   "name": "NordLocker",
   "description": "Store and sync files securely",
   "version": "4.26.1",
-  "url": "https://downloads.nordcdn.com/apps/macos/generic/NordLocker/latest11plus/latest/NordLocker.pkg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/nordlocker_4.26.1.pkg",
   "bundleId": "com.nordlocker.macos",
   "homepage": "https://nordlocker.com/",
-  "fileName": "NordLocker.pkg",
+  "fileName": "nordlocker_4.26.1.pkg",
   "type": "pkg_in_pkg",
-  "previous_version": "4.26.1"
+  "previous_version": "4.26.1",
+  "sha": "80911da2548e1365c048f1bad6a951343468a04bf17e4b2f7a83e86498f5f957"
 }

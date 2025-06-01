@@ -2,12 +2,12 @@
   "name": "Tailscale",
   "description": "Mesh VPN based on WireGuard",
   "version": "1.84.1",
-  "url": "https://pkgs.tailscale.com/stable/Tailscale-1.84.1-macos.pkg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tailscale_1.84.1.pkg",
   "bundleId": "com.tailscale.ipn.macsys",
   "homepage": "https://tailscale.com/",
-  "fileName": "Tailscale-1.84.1-macos.pkg",
+  "fileName": "tailscale_1.84.1.pkg",
   "type": "pkg_in_pkg",
-  "sha": "c5e0994680ca65dd797148acfc55931ad3b683f9af92e4ab75860cb37af9cfc3",
+  "sha": "474dd99082389ec8bb22b16c735233aa9e9797801a2f33237728b9dd2f173dad",
   "changelog": "https://tailscale.com/changelog",
   "previous_version": "1.84.1"
 }

@@ -2,10 +2,11 @@
   "name": "Orka CLI",
   "description": "Orchestration with Kubernetes on Apple",
   "version": "2.4.0",
-  "url": "https://cli-builds-public.s3.amazonaws.com/official/2.4.0/macos/orka.pkg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/orka_cli_2.4.0.pkg",
   "bundleId": "com.macstadium.orka.pkg",
   "homepage": "https://orkadocs.macstadium.com/docs",
-  "fileName": "orka.pkg",
+  "fileName": "orka_cli_2.4.0.pkg",
   "type": "pkg_in_pkg",
-  "previous_version": "2.4.0"
+  "previous_version": "2.4.0",
+  "sha": "25a79d7d319692eadf24ed436e598fee001ad275ed1d6a490bed239eeb2fdf0c"
 }

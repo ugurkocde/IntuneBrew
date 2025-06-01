@@ -2,10 +2,11 @@
   "name": "NordVPN",
   "description": "VPN client for secure internet access and private browsing",
   "version": "8.39.0",
-  "url": "https://downloads.nordcdn.com/apps/macos/generic/NordVPN-OpenVPN/8.39.0/NordVPN.pkg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/nordvpn_8.39.0.pkg",
   "bundleId": "com.nordvpn.macos",
   "homepage": "https://nordvpn.com/",
-  "fileName": "NordVPN.pkg",
+  "fileName": "nordvpn_8.39.0.pkg",
   "type": "pkg_in_pkg",
-  "previous_version": "8.39.0"
+  "previous_version": "8.39.0",
+  "sha": "b93656289eb8c52e80dd0a6f87d1f6a439e9bbd64aa779681e805aa1a1e873da"
 }
