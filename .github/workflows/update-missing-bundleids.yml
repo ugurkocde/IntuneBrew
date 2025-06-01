@@ -101,6 +101,7 @@ jobs:
           UPDATED_APPS=()
           NO_CHANGE_APPS=()
           SKIPPED_APPS_PROCESSING=() # Apps skipped during this processing step
+          INSTALLATION_ERRORS=() # Apps that failed during installation
 
           # Process each app from the file
           while IFS= read -r APP_JSON_PATH || [ -n "$APP_JSON_PATH" ]; do
@@ -132,6 +133,7 @@ jobs:
             
             if [ $? -ne 0 ]; then
               echo "❌ Failed to download file"
+              INSTALLATION_ERRORS+=("$APP_NAME|Download failed|$APP_URL")
               cd "$GITHUB_WORKSPACE"
               rm -rf "$TEMP_DIR"
               continue
@@ -213,12 +215,13 @@ jobs:
                 sudo installer -pkg "$DOWNLOAD_PATH" -target /
                 if [ $? -ne 0 ]; then
                   echo "❌ Installation failed"
-                  cd "$GITHUB_WORKSPACE"
-                  rm -rf "$TEMP_DIR"
-                  continue
+                  INSTALLATION_ERRORS+=("$APP_NAME|PKG installation failed|$APP_URL")
+                  # Continue processing instead of exiting
+                  echo "⚠️ Continuing with bundleId extraction attempt despite installation failure..."
                 fi
               else
                 echo "❌ Package file not found at: $DOWNLOAD_PATH"
+                INSTALLATION_ERRORS+=("$APP_NAME|Package file not found|$APP_URL")
                 cd "$GITHUB_WORKSPACE"
                 rm -rf "$TEMP_DIR"
                 continue
@@ -238,6 +241,7 @@ jobs:
               
               if [ $? -ne 0 ]; then
                 echo "⚠️ Failed to mount DMG file, it may require manual license acceptance"
+                INSTALLATION_ERRORS+=("$APP_NAME|DMG mount failed|$APP_URL")
                 cd "$GITHUB_WORKSPACE"
                 rm -rf "$TEMP_DIR"
                 continue
@@ -249,6 +253,7 @@ jobs:
               
               if [ -z "$DMG_APP" ]; then
                 echo "❌ Could not find .app file in DMG"
+                INSTALLATION_ERRORS+=("$APP_NAME|No .app file in DMG|$APP_URL")
                 hdiutil detach "$MOUNT_POINT" -force
                 cd "$GITHUB_WORKSPACE"
                 rm -rf "$TEMP_DIR"
@@ -263,6 +268,7 @@ jobs:
               
               if [ $? -ne 0 ]; then
                 echo "❌ Failed to copy app to Applications folder"
+                INSTALLATION_ERRORS+=("$APP_NAME|Failed to copy DMG app|$APP_URL")
                 hdiutil detach "$MOUNT_POINT" -force
                 cd "$GITHUB_WORKSPACE"
                 rm -rf "$TEMP_DIR"
@@ -285,6 +291,7 @@ jobs:
               
               if [ $? -ne 0 ]; then
                 echo "❌ Failed to extract ZIP file"
+                INSTALLATION_ERRORS+=("$APP_NAME|ZIP extraction failed|$APP_URL")
                 cd "$GITHUB_WORKSPACE"
                 rm -rf "$TEMP_DIR"
                 continue
@@ -296,6 +303,7 @@ jobs:
               
               if [ -z "$ZIP_APP" ]; then
                 echo "❌ Could not find .app file in ZIP contents"
+                INSTALLATION_ERRORS+=("$APP_NAME|No .app file in ZIP|$APP_URL")
                 rm -rf "$EXTRACT_DIR"
                 cd "$GITHUB_WORKSPACE"
                 rm -rf "$TEMP_DIR"
@@ -310,6 +318,7 @@ jobs:
               
               if [ $? -ne 0 ]; then
                 echo "❌ Failed to copy app to Applications folder"
+                INSTALLATION_ERRORS+=("$APP_NAME|Failed to copy ZIP app|$APP_URL")
                 rm -rf "$EXTRACT_DIR"
                 cd "$GITHUB_WORKSPACE"
                 rm -rf "$TEMP_DIR"
@@ -559,6 +568,7 @@ jobs:
           echo "UPDATED_APPS_COUNT=${#UPDATED_APPS[@]}" >> $GITHUB_ENV
           echo "NO_CHANGE_APPS_COUNT=${#NO_CHANGE_APPS[@]}" >> $GITHUB_ENV
           echo "SKIPPED_APPS_PROCESSING_COUNT=${#SKIPPED_APPS_PROCESSING[@]}" >> $GITHUB_ENV
+          echo "INSTALLATION_ERRORS_COUNT=${#INSTALLATION_ERRORS[@]}" >> $GITHUB_ENV
 
           # Save missing files from find-apps step to a file for the summary step
           if [ ${#MISSING_FILES[@]} -gt 0 ]; then
@@ -578,6 +588,11 @@ jobs:
           # Save skipped apps from processing step to a file for the summary step
           if [ ${#SKIPPED_APPS_PROCESSING[@]} -gt 0 ]; then
             printf "%s\n" "${SKIPPED_APPS_PROCESSING[@]}" > /tmp/skipped_apps_processing.txt
+          fi
+
+          # Save installation errors to a file for the summary step
+          if [ ${#INSTALLATION_ERRORS[@]} -gt 0 ]; then
+            printf "%s\n" "${INSTALLATION_ERRORS[@]}" > /tmp/installation_errors.txt
           fi
 
       - name: Commit and push changes
@@ -621,6 +636,7 @@ jobs:
           echo "| No Change Apps | $NO_CHANGE_APPS_COUNT |" >> $GITHUB_STEP_SUMMARY
           echo "| Missing Files (Find Step) | $MISSING_FILES_COUNT |" >> $GITHUB_STEP_SUMMARY
           echo "| Skipped Apps (Processing Step) | $SKIPPED_APPS_PROCESSING_COUNT |" >> $GITHUB_STEP_SUMMARY
+          echo "| Installation Errors | $INSTALLATION_ERRORS_COUNT |" >> $GITHUB_STEP_SUMMARY
 
           # Add missing files section if any (from find-apps step)
           if [ -f "/tmp/missing_files.txt" ]; then
@@ -668,4 +684,17 @@ jobs:
             echo "```" >> $GITHUB_STEP_SUMMARY
             cat /tmp/skipped_apps_processing.txt >> $GITHUB_STEP_SUMMARY
             echo "```" >> $GITHUB_STEP_SUMMARY
+          fi
+
+          # Add installation errors section if any
+          if [ -f "/tmp/installation_errors.txt" ]; then
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "## Installation Errors" >> $GITHUB_STEP_SUMMARY
+            echo "The following apps encountered installation errors but processing continued:" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "| App Name | Error Type | URL |" >> $GITHUB_STEP_SUMMARY
+            echo "|---|---|---|" >> $GITHUB_STEP_SUMMARY
+            while IFS='|' read -r app_name error_type url; do
+              echo "| $app_name | $error_type | $url |" >> $GITHUB_STEP_SUMMARY
+            done < /tmp/installation_errors.txt
           fi
