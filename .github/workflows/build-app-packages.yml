@@ -214,52 +214,71 @@ jobs:
                   echo "📁 Extracted contents:"
                   ls -R "$temp_dir"
                   
-                  # Find inner PKG file
-                  echo "🔍 Searching for inner PKG file..."
-                  inner_pkg=$(find "$temp_dir" -name "*.pkg" -print -quit)
+                  # Find inner PKG (file or directory)
+                  echo "🔍 Searching for inner PKG..."
+                  inner_pkg=$(find "$temp_dir" -name "*.pkg" -type f -print -quit)
                   
                   if [ -n "$inner_pkg" ]; then
+                    # Found a .pkg file
                     echo "✅ Found inner PKG file: $inner_pkg"
                     echo "📦 Package size: $(ls -lh "$inner_pkg" | awk '{print $5}')"
                     
                     # Copy inner PKG file with version in filename
                     echo "📋 Copying inner PKG file to ${app_name}_${version}.pkg"
                     cp "$inner_pkg" "${app_name}_${version}.pkg"
-                    
-                    # Calculate SHA256 hash
-                    echo "🔐 Calculating SHA256 hash..."
-                    file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
-                    echo "📝 SHA256: $file_hash"
-
-                    # Upload to Azure
-                    echo "☁️ Uploading to Azure Blob Storage..."
-                    az storage blob upload \
-                      --container-name pkg \
-                      --file "${app_name}_${version}.pkg" \
-                      --name "${app_name}_${version}.pkg" \
-                      --overwrite true
-                    
-                    if [ $? -eq 0 ]; then
-                      echo "✅ Upload successful"
+                  else
+                    # Check if there's a .pkg directory (flat package)
+                    inner_pkg_dir=$(find "$temp_dir" -name "*.pkg" -type d -print -quit)
+                    if [ -n "$inner_pkg_dir" ]; then
+                      echo "✅ Found flat package directory: $inner_pkg_dir"
+                      echo "📦 Flattening package to ${app_name}_${version}.pkg"
                       
-                      # Update JSON with Azure URL and SHA256
-                      echo "📝 Updating JSON file with new Azure URL and SHA256..."
-                      azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-                      jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" '.url = $url | .fileName = $filename | .sha = $sha' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                      # Use pkgutil to flatten the package
+                      pkgutil --flatten "$inner_pkg_dir" "${app_name}_${version}.pkg"
                       
-                      if [ $? -eq 0 ]; then
-                        echo "✅ JSON file updated successfully"
-                        echo "🔗 New URL: $azure_url"
-                      else
-                        echo "❌ Failed to update JSON file"
+                      if [ $? -ne 0 ]; then
+                        echo "❌ Failed to flatten package"
+                        rm -rf "$temp_dir"
+                        rm -f "${download_path}.pkg"
+                        continue
                       fi
                     else
-                      echo "❌ Failed to upload to Azure"
+                      echo "❌ No inner PKG found"
+                      rm -rf "$temp_dir"
+                      rm -f "${download_path}.pkg"
+                      continue
+                    fi
+                  fi
+                  
+                  # Calculate SHA256 hash
+                  echo "🔐 Calculating SHA256 hash..."
+                  file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
+                  echo "📝 SHA256: $file_hash"
+
+                  # Upload to Azure
+                  echo "☁️ Uploading to Azure Blob Storage..."
+                  az storage blob upload \
+                    --container-name pkg \
+                    --file "${app_name}_${version}.pkg" \
+                    --name "${app_name}_${version}.pkg" \
+                    --overwrite true
+                  
+                  if [ $? -eq 0 ]; then
+                    echo "✅ Upload successful"
+                    
+                    # Update JSON with Azure URL and SHA256
+                    echo "📝 Updating JSON file with new Azure URL and SHA256..."
+                    azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
+                    jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" '.url = $url | .fileName = $filename | .sha = $sha' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                    
+                    if [ $? -eq 0 ]; then
+                      echo "✅ JSON file updated successfully"
+                      echo "🔗 New URL: $azure_url"
+                    else
+                      echo "❌ Failed to update JSON file"
                     fi
                   else
-                    echo "❌ No inner PKG file found in extracted contents"
-                    echo "📁 Extracted contents:"
-                    ls -R "$temp_dir"
+                    echo "❌ Failed to upload to Azure"
                   fi
                 else
                   echo "❌ Failed to extract PKG"
