@@ -141,12 +141,37 @@ jobs:
             
             # Check if the exact version already exists
             if echo "$existing_versions" | grep -q "^${app_name}_${version}.pkg$"; then
-              echo "Package ${app_name}_${version}.pkg already exists in Azure storage. Skipping..."
-              # Update the JSON file with Azure URL
+              echo "Package ${app_name}_${version}.pkg already exists in Azure storage."
+              
+              # Download the file to calculate SHA256
+              echo "📥 Downloading existing package to calculate SHA256..."
+              temp_pkg="${app_name}_${version}_temp.pkg"
+              az storage blob download --container-name pkg --name "${app_name}_${version}.pkg" --file "$temp_pkg" --no-progress
+              
+              if [ -f "$temp_pkg" ]; then
+                # Calculate SHA256 hash
+                echo "🔐 Calculating SHA256 hash..."
+                file_hash=$(shasum -a 256 "$temp_pkg" | awk '{print $1}')
+                echo "📝 SHA256: $file_hash"
+                rm -f "$temp_pkg"
+              else
+                echo "⚠️ Could not download file to calculate SHA256"
+                file_hash=""
+              fi
+              
+              # Update the JSON file with Azure URL and SHA256
               azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
               # Get current version to store as previous_version
               current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-              jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" '.url = $url | .version = $version | .previous_version = $prev_version' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+              
+              if [ -n "$file_hash" ]; then
+                jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg sha "$file_hash" '.url = $url | .version = $version | .previous_version = $prev_version | .sha = $sha' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                echo "✅ JSON file updated with SHA256"
+              else
+                jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" '.url = $url | .version = $version | .previous_version = $prev_version' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                echo "⚠️ JSON file updated without SHA256"
+              fi
+              
               continue
             fi
             
