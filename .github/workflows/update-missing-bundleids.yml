@@ -206,10 +206,19 @@ jobs:
             if [ "$FILE_TYPE" = "pkg" ]; then
               # Install PKG file
               echo "📦 Installing $APP_NAME from PKG..."
-              sudo installer -pkg "$DOWNLOAD_PATH" -target /
-              
-              if [ $? -ne 0 ]; then
-                echo "❌ Installation failed"
+              echo "Current directory: $(pwd)"
+              echo "Looking for file: $DOWNLOAD_PATH"
+              ls -la "$DOWNLOAD_PATH" || echo "File not found!"
+              if [ -f "$DOWNLOAD_PATH" ]; then
+                sudo installer -pkg "$DOWNLOAD_PATH" -target /
+                if [ $? -ne 0 ]; then
+                  echo "❌ Installation failed"
+                  cd "$GITHUB_WORKSPACE"
+                  rm -rf "$TEMP_DIR"
+                  continue
+                fi
+              else
+                echo "❌ Package file not found at: $DOWNLOAD_PATH"
                 cd "$GITHUB_WORKSPACE"
                 rm -rf "$TEMP_DIR"
                 continue
