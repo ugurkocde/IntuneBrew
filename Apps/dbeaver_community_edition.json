@@ -1,12 +1,12 @@
 {
   "name": "DBeaver Community Edition",
   "description": "Universal database tool and SQL client",
-  "version": "25.0.5",
-  "url": "https://dbeaver.io/files/25.0.5/dbeaver-ce-25.0.5-macos-aarch64.dmg",
+  "version": "25.1.0",
+  "url": "https://dbeaver.io/files/25.1.0/dbeaver-ce-25.1.0-macos-aarch64.dmg",
   "bundleId": "org.jkiss.dbeaver.core.product",
   "homepage": "https://dbeaver.io/",
-  "fileName": "dbeaver-ce-25.0.5-macos-aarch64.dmg",
-  "sha": "2fa6cecaf865b13e2c5cbd500e1949b5bf0315f0d5c36d62c7245e9ce55d0b15",
+  "fileName": "dbeaver-ce-25.1.0-macos-aarch64.dmg",
+  "sha": "d7555b1a7673d9f0ed1b92d14195a741d5c24fbaab2226b6d9a3bee6703f2d01",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:25:53Z",
     "qa_result": "Installation successful and verified",

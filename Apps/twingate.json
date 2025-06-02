@@ -5,8 +5,8 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/twingate_2025.138.13830.pkg",
   "bundleId": "com.twingate.macos",
   "homepage": "https://twingate.com/",
-  "fileName": "twingate_2025.138.13830.pkg",
+  "fileName": "Twingate.pkg",
   "type": "pkg_in_pkg",
-  "previous_version": "2025.138.13830",
-  "sha": "3b702c009a6d63474ee1e6631a5d67bdff5dc2c392338596d8eec140509fcac1"
+  "sha": "3b702c009a6d63474ee1e6631a5d67bdff5dc2c392338596d8eec140509fcac1",
+  "previous_version": "2025.138.13830"
 }

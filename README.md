@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-506-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -90,11 +90,14 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-06-01 13:22 UTC*
+*Last checked: 2025-06-02 00:31 UTC*
 
-> All applications are up to date! 🎉
+| Application | Previous Version | New Version |
+|-------------|-----------------|-------------|
+| DBeaver Community Edition | 25.0.5 | 25.1.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -251,7 +254,7 @@ Follow the interactive prompts to:
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.1.3 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.1.1 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.0.5 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.1.0 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.4.2 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.5.42089655 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
@@ -583,7 +586,7 @@ Follow the interactive prompts to:
 | <img src='Logos/sublime_merge.png' width='32' height='32'> Sublime Merge | 2102 |
 | <img src='Logos/sublime_text.png' width='32' height='32'> Sublime Text | 4200 |
 | <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.32.2 |
-| <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 1.46.1 |
+| <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 1.46.2 |
 | <img src='Logos/suspicious_package.png' width='32' height='32'> Suspicious Package | 4.5 |
 | <img src='Logos/swift_shift.png' width='32' height='32'> Swift Shift | 0.27.1 |
 | <img src='Logos/sync.png' width='32' height='32'> Sync | 2.2.48 |

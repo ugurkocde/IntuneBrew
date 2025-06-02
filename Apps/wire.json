@@ -5,8 +5,8 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/wire_3.40.5285.pkg",
   "bundleId": "com.wearezeta.zclient.mac",
   "homepage": "https://wire.com/",
-  "fileName": "wire_3.40.5285.pkg",
+  "fileName": "Wire.pkg",
   "type": "pkg_in_pkg",
-  "previous_version": "3.40.5285",
-  "sha": "06d472ab0ef97d4d139e51b346cedc217fb83f25b88fe49420fd8fba662b3cc4"
+  "sha": "06d472ab0ef97d4d139e51b346cedc217fb83f25b88fe49420fd8fba662b3cc4",
+  "previous_version": "3.40.5285"
 }

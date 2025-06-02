@@ -5,8 +5,8 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/okta_advanced_server_access_1.90.0.pkg",
   "bundleId": "com.scaleft.ScaleFT",
   "homepage": "https://help.okta.com/asa/en-us/Content/Topics/Adv_Server_Access/docs/sft-osx.htm",
-  "fileName": "okta_advanced_server_access_1.90.0.pkg",
+  "fileName": "ScaleFT-1.90.0.pkg",
   "type": "pkg_in_pkg",
-  "previous_version": "1.90.0",
-  "sha": "955f075eaa6f7e65ed6f29209a390d38309061e63baea4b97559a3361ba623d5"
+  "sha": "955f075eaa6f7e65ed6f29209a390d38309061e63baea4b97559a3361ba623d5",
+  "previous_version": "1.90.0"
 }

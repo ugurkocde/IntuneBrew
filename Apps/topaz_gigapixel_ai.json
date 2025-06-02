@@ -5,8 +5,8 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/topaz_gigapixel_ai_8.4.1.pkg",
   "bundleId": "com.topazlabs.TopazGigapixelAI",
   "homepage": "https://www.topazlabs.com/gigapixel-ai",
-  "fileName": "topaz_gigapixel_ai_8.4.1.pkg",
+  "fileName": "TopazGigapixelAI-8.4.1.pkg",
   "type": "pkg_in_pkg",
-  "previous_version": "8.4.1",
-  "sha": "2a8d769c5967130ec138431616b562315fd46d9e0e845f5dec0fafe4218d90ae"
+  "sha": "2a8d769c5967130ec138431616b562315fd46d9e0e845f5dec0fafe4218d90ae",
+  "previous_version": "8.4.1"
 }

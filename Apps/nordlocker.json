@@ -5,8 +5,8 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/nordlocker_4.26.1.pkg",
   "bundleId": "com.nordlocker.macos",
   "homepage": "https://nordlocker.com/",
-  "fileName": "nordlocker_4.26.1.pkg",
+  "fileName": "NordLocker.pkg",
   "type": "pkg_in_pkg",
-  "previous_version": "4.26.1",
-  "sha": "80911da2548e1365c048f1bad6a951343468a04bf17e4b2f7a83e86498f5f957"
+  "sha": "80911da2548e1365c048f1bad6a951343468a04bf17e4b2f7a83e86498f5f957",
+  "previous_version": "4.26.1"
 }
