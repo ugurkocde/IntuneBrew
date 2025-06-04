@@ -1,11 +1,11 @@
 {
   "name": "SketchUp",
   "description": "3D modeling software used to create and manipulate 3D models",
-  "version": "2025.0.633.273",
-  "url": "https://download.sketchup.com/SketchUp-2025-0-633-273.dmg",
+  "version": "2025.0.659.288",
+  "url": "https://download.sketchup.com/SketchUp-2025-0-659-288.dmg",
   "bundleId": "com.sketchup.SketchUp.2025",
   "homepage": "https://www.sketchup.com/",
-  "fileName": "SketchUp-2025-0-633-273.dmg",
-  "sha": "d72611f3d149675c3bbc6d4463ea2c297d9a54258a4ebfd9938134ca3a5d0bf9",
+  "fileName": "SketchUp-2025-0-659-288.dmg",
+  "sha": "2e724ee052daba894c222ba72da01facd6e26cf3a533c16463202c906fdde30e",
   "previous_version": "2025.0.633.273"
 }

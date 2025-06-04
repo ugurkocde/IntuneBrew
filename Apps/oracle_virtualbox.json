@@ -1,12 +1,12 @@
 {
   "name": "Oracle VirtualBox",
   "description": "Virtualiser for x86 hardware",
-  "version": "7.1.8",
-  "url": "https://download.virtualbox.org/virtualbox/7.1.8/VirtualBox-7.1.8-168469-macOSArm64.dmg",
+  "version": "7.1.10",
+  "url": "https://download.virtualbox.org/virtualbox/7.1.10/VirtualBox-7.1.10-169112-macOSArm64.dmg",
   "bundleId": "org.virtualbox.pkg.*",
   "homepage": "https://www.virtualbox.org/",
-  "fileName": "VirtualBox-7.1.8-168469-macOSArm64.dmg",
-  "sha": "2605062f1b60f45210b54ff22b7f8d2109bbf50c9dbff807919f15bbfca92021",
+  "fileName": "VirtualBox-7.1.10-169112-macOSArm64.dmg",
+  "sha": "15ff0ae76005a2a77e8f40ea2a87095a645899fadaf798aabbe8dafd130de5d6",
   "changelog": "https://www.virtualbox.org/wiki/Changelog",
   "previous_version": "7.1.8"
 }
