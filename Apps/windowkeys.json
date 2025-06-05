@@ -1,12 +1,12 @@
 {
   "name": "WindowKeys",
   "description": "Window-tiling keyboard shortcuts",
-  "version": "2.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/windowkeys_2.0.pkg",
+  "version": "3.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/windowkeys_3.0.pkg",
   "bundleId": "com.apptorium.WindowKeys",
   "homepage": "https://www.apptorium.com/windowkeys",
-  "fileName": "windowkeys_2.0.pkg",
+  "fileName": "windowkeys_3.0.pkg",
   "type": "app",
-  "sha": "db497d89e3146ef5156015da9dc772d12156cb29414d1d318b976c10090a4a6a",
-  "previous_version": "2.0"
+  "sha": "ec95525d2e8352623b837a457bd904ff593c897566c917b33cb7b221ef46e985",
+  "previous_version": "3.0"
 }
