@@ -1,12 +1,12 @@
 {
   "name": "MongoDB Compass",
   "description": "Interactive tool for analyzing MongoDB data",
-  "version": "1.46.2",
-  "url": "https://downloads.mongodb.com/compass/mongodb-compass-1.46.2-darwin-arm64.dmg",
+  "version": "1.46.3",
+  "url": "https://downloads.mongodb.com/compass/mongodb-compass-1.46.3-darwin-arm64.dmg",
   "bundleId": "com.mongodb.compass",
   "homepage": "https://www.mongodb.com/products/compass",
-  "fileName": "mongodb-compass-1.46.2-darwin-arm64.dmg",
-  "sha": "780f1e9f8307e4df1cdb5b1c2f550e58184307de36f83ad44c0830c75252e40c",
+  "fileName": "mongodb-compass-1.46.3-darwin-arm64.dmg",
+  "sha": "50ee96e2d91feab083737163d63b417d6ddf199143b7c5671dc1b7e5ff8f1672",
   "changelog": "https://www.mongodb.com/docs/compass/current/release-notes/",
   "previous_version": "1.46.2"
 }

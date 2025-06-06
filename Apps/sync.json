@@ -1,12 +1,12 @@
 {
   "name": "Sync",
   "description": "Store, share and access files from anywhere",
-  "version": "2.2.48",
-  "url": "https://www.sync.com/download/apple/Sync-2.2.48.dmg",
+  "version": "2.2.50",
+  "url": "https://www10.sync.com/download/apple/Sync-2.2.50.dmg",
   "bundleId": "com.sync.desktop",
   "homepage": "https://www.sync.com/",
-  "fileName": "Sync-2.2.48.dmg",
-  "sha": "9fec22de7091b64186cefac6f99c312df213fcc46034ae6e4c1631184cd97063",
+  "fileName": "Sync-2.2.50.dmg",
+  "sha": "a5ba6ef815c580899a1da934c78f7cff0b0893ef397b8247bee515787535f5cd",
   "changelog": "https://www.sync.com/blog/",
   "previous_version": "2.2.48"
 }

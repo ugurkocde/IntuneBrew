@@ -1,7 +1,7 @@
 {
   "name": "Facebook Messenger",
   "description": "Native desktop app for Messenger (formerly Facebook Messenger)",
-  "version": "507.0.0.50.107",
+  "version": "510.0.0.1.116",
   "url": "https://www.messenger.com/messenger/desktop/downloadV2/?platform=mac",
   "bundleId": "com.facebook.archon.developerID",
   "homepage": "https://www.messenger.com/desktop",
