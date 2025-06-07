@@ -208,15 +208,6 @@ If a migration fails:
 | `⌘,` | Open settings |
 | `⌘Q` | Quit IntuneBrewCompanion |
 
-## Getting Help
-
-If you encounter issues:
-
-1. **Check the Troubleshooting section** in the README
-2. **View logs** in Settings → Activity Log
-3. **Report issues** on [GitHub](https://github.com/ugurkoc/intunebrewcompanion/issues)
-4. **Ask questions** in [Discussions](https://github.com/ugurkoc/intunebrewcompanion/discussions)
-
 ---
 
 Remember: IntuneBrewCompanion is a tool to make your life easier. If something doesn't work as expected, your original apps are always safely backed up in Trash.
