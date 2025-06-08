@@ -1,11 +1,11 @@
 {
   "app_name": "Miro",
-  "last_updated": "2025-06-01",
+  "last_updated": "2025-06-08",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2024-23746",
       "published_date": "2024-02-02",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2025-06-04",
       "base_score": 9.8,
       "severity": "CRITICAL",
       "description": "Miro Desktop 0.8.18 on macOS allows local Electron code injection via a complex series of steps that might be usable in some environments (bypass a kTCCServiceSystemPolicyAppBundles requirement via a file copy, an app.app/Contents rename, an asar modification, and a rename back to app.app/Contents).",

@@ -1,11 +1,11 @@
 {
   "app_name": "Evernote",
-  "last_updated": "2025-06-01",
+  "last_updated": "2025-06-08",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2023-50643",
       "published_date": "2024-01-09",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2025-06-03",
       "base_score": 9.8,
       "severity": "CRITICAL",
       "description": "An issue in Evernote Evernote for MacOS v.10.68.2 allows a remote attacker to execute arbitrary code via the RunAsNode and enableNodeClilnspectArguments components.",
