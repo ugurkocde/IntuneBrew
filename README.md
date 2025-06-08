@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-506-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -96,24 +96,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-06-07 00:29 UTC*
+*Last checked: 2025-06-08 00:32 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 140.0b5 | 140.0b6 |
-| ProcessSpy | 1.7.4 | 1.7.5 |
-| Rive | 0.8.3084 | 0.8.3088 |
-| Mobirise | 6.0.5 | 6.0.6 |
-| Requestly | 25.5.30 | 25.6.5 |
-| JetBrains PhpStorm | 2025.1.1 | 2025.1.2 |
-| Lens | 2025.5.81206 | 2025.6.21515 |
-| Trae | 1.0.13384 | 1.0.13858 |
-| Grammarly Desktop | 1.121.0.1 | 1.121.1.0 |
-| Notion | 4.12.1 | 4.12.3 |
-| Microsoft Edge | 137.0.3296.62 | 137.0.3296.68 |
-| Malwarebytes for Mac | 5.14.2.3077 | 5.15.1.3151 |
+| Highlight | 1.2.55 | 1.2.60 |
+| Readest | 0.9.53 | 0.9.55 |
+| Proxyman | 5.20.0 | 5.21.0 |
+| Webex Teams | 45.6.0.32536 | 45.6.0.32551 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -234,7 +227,7 @@ Follow the interactive prompts to:
 | <img src='Logos/brave.png' width='32' height='32'> Brave | 1.79.119.0 |
 | <img src='Logos/breaktimer.png' width='32' height='32'> BreakTimer | 1.3.2 |
 | <img src='Logos/bruno.png' width='32' height='32'> Bruno | 2.4.0 |
-| <img src='Logos/busycal.png' width='32' height='32'> BusyCal | 2025.2.1 |
+| <img src='Logos/busycal.png' width='32' height='32'> BusyCal | 2025.2.2 |
 | <img src='Logos/busycontacts.png' width='32' height='32'> BusyContacts | 2025.2.1 |
 | <img src='Logos/caffeine.png' width='32' height='32'> Caffeine | 1.5.2 |
 | <img src='Logos/calibre.png' width='32' height='32'> calibre | 8.4.0 |
@@ -352,7 +345,7 @@ Follow the interactive prompts to:
 | <img src='Logos/headlamp.png' width='32' height='32'> Headlamp | 0.31.1 |
 | <img src='Logos/hey.png' width='32' height='32'> HEY | 1.2.17 |
 | <img src='Logos/hidden_bar.png' width='32' height='32'> Hidden Bar | 1.9 |
-| <img src='Logos/highlight.png' width='32' height='32'> Highlight | 1.2.55 |
+| <img src='Logos/highlight.png' width='32' height='32'> Highlight | 1.2.60 |
 | <img src='Logos/home_assistant.png' width='32' height='32'> Home Assistant | 2025.5 |
 | <img src='Logos/homerow.png' width='32' height='32'> Homerow | 1.4.0 |
 | <img src='Logos/hp_easy_admin.png' width='32' height='32'> HP Easy Admin | 2.15.0 |
@@ -396,7 +389,7 @@ Follow the interactive prompts to:
 | <img src='Logos/langgraph_studio.png' width='32' height='32'> LangGraph Studio | 0.0.37 |
 | <img src='Logos/last_window_quits.png' width='32' height='32'> Last Window Quits | 1.1.4 |
 | <img src='Logos/lens.png' width='32' height='32'> Lens | 2025.6.21515 |
-| <img src='Logos/libreoffice.png' width='32' height='32'> LibreOffice | 25.2.3 |
+| <img src='Logos/libreoffice.png' width='32' height='32'> LibreOffice | 25.2.4 |
 | <img src='Logos/librewolf.png' width='32' height='32'> LibreWolf | 139.0.1 |
 | <img src='Logos/little_snitch.png' width='32' height='32'> Little Snitch | 6.2.3 |
 | <img src='Logos/lm_studio.png' width='32' height='32'> LM Studio | 0.3.16 |
@@ -534,7 +527,7 @@ Follow the interactive prompts to:
 | <img src='Logos/proton_mail.png' width='32' height='32'> Proton Mail | 1.8.0 |
 | <img src='Logos/proton_pass.png' width='32' height='32'> Proton Pass | 1.31.5 |
 | <img src='Logos/protonvpn.png' width='32' height='32'> ProtonVPN | 4.8.0 |
-| <img src='Logos/proxyman.png' width='32' height='32'> Proxyman | 5.20.0 |
+| <img src='Logos/proxyman.png' width='32' height='32'> Proxyman | 5.21.0 |
 | <img src='Logos/ps_remote_play.png' width='32' height='32'> PS Remote Play | 8.0.0 |
 | <img src='Logos/pulsar.png' width='32' height='32'> Pulsar | 1.128.0 |
 | <img src='Logos/qBittorrent.png' width='32' height='32'> qBittorrent | 5.0.5 |
@@ -548,7 +541,7 @@ Follow the interactive prompts to:
 | <img src='Logos/rancher_desktop.png' width='32' height='32'> Rancher Desktop | 1.19.1 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 1.99.4 |
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.7.7 |
-| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.53 |
+| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.55 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.13.1 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.87 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.53 |
@@ -615,7 +608,7 @@ Follow the interactive prompts to:
 | <img src='Logos/teacode.png' width='32' height='32'> TeaCode | 1.1.3 |
 | <img src='Logos/teamviewer_host.png' width='32' height='32'> TeamViewer Host | 15 |
 | <img src='Logos/teamviewer_quicksupport.png' width='32' height='32'> TeamViewer QuickSupport | 15 |
-| <img src='Logos/telegram_for_macos.png' width='32' height='32'> Telegram for macOS | 11.12 |
+| <img src='Logos/telegram_for_macos.png' width='32' height='32'> Telegram for macOS | 11.12.1 |
 | <img src='Logos/tenable_nessus_agent.png' width='32' height='32'> Tenable Nessus Agent | 10.8.4 |
 | <img src='Logos/termius.png' width='32' height='32'> Termius | 9.21.2 |
 | <img src='Logos/tex_live_utility.png' width='32' height='32'> TeX Live Utility | 1.54 |
@@ -646,7 +639,7 @@ Follow the interactive prompts to:
 | <img src='Logos/vlc_media_player.png' width='32' height='32'> VLC media player | 3.0.21 |
 | <img src='Logos/vscodium.png' width='32' height='32'> VSCodium | 1.100.33714 |
 | <img src='Logos/wave_terminal.png' width='32' height='32'> Wave Terminal | 0.11.3 |
-| <img src='Logos/webex_teams.png' width='32' height='32'> Webex Teams | 45.6.0.32536 |
+| <img src='Logos/webex_teams.png' width='32' height='32'> Webex Teams | 45.6.0.32551 |
 | <img src='Logos/webstorm.png' width='32' height='32'> WebStorm | 2025.1.2 |
 | <img src='Logos/wechat_for_mac.png' width='32' height='32'> WeChat for Mac | 4.0.3.93 |
 | <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 2.25.16.81 |

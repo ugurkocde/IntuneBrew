@@ -1,11 +1,11 @@
 {
   "name": "Webex Teams",
   "description": "Video communication and virtual meeting platform",
-  "version": "45.6.0.32536",
+  "version": "45.6.0.32551",
   "url": "https://binaries.webex.com/webex-macos-apple-silicon/Webex.dmg",
   "bundleId": "Cisco-Systems.Spark",
   "homepage": "https://www.webex.com/",
   "fileName": "Webex.dmg",
-  "sha": "fe80a769b1f19e95cbff250af6484eafb364f45309a4fd932178a57cad33c19a",
+  "sha": "9f45cb4e8897ff2bea7f2b1bb3f42e03d94594a9bc191bbfdfe51ed28804e99b",
   "previous_version": "45.6.0.32536"
 }
