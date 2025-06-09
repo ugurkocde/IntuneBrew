@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-506-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -97,16 +97,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-06-08 00:32 UTC*
+*Last checked: 2025-06-09 00:31 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Highlight | 1.2.55 | 1.2.60 |
-| Readest | 0.9.53 | 0.9.55 |
-| Proxyman | 5.20.0 | 5.21.0 |
-| Webex Teams | 45.6.0.32536 | 45.6.0.32551 |
+| MeetingBar | 4.11.4 | 4.11.5 |
+| OrbStack | 1.11.2 | 1.11.3 |
+| Stats | 2.11.44 | 2.11.45 |
+| Dataflare | 2.0.0 | 2.0.1 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -228,7 +229,7 @@ Follow the interactive prompts to:
 | <img src='Logos/breaktimer.png' width='32' height='32'> BreakTimer | 1.3.2 |
 | <img src='Logos/bruno.png' width='32' height='32'> Bruno | 2.4.0 |
 | <img src='Logos/busycal.png' width='32' height='32'> BusyCal | 2025.2.2 |
-| <img src='Logos/busycontacts.png' width='32' height='32'> BusyContacts | 2025.2.1 |
+| <img src='Logos/busycontacts.png' width='32' height='32'> BusyContacts | 2025.2.2 |
 | <img src='Logos/caffeine.png' width='32' height='32'> Caffeine | 1.5.2 |
 | <img src='Logos/calibre.png' width='32' height='32'> calibre | 8.4.0 |
 | <img src='Logos/calmly_writer.png' width='32' height='32'> Calmly Writer | 2.0.59 |
@@ -255,11 +256,11 @@ Follow the interactive prompts to:
 | <img src='Logos/coteditor.png' width='32' height='32'> CotEditor | 5.1.7 |
 | <img src='Logos/cryptomator.png' width='32' height='32'> Cryptomator | 1.16.2 |
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
-| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 1.0.0 |
+| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 1.0.1 |
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.1.4 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.31 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.9.0 |
-| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.0.0 |
+| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.0.1 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.1.3 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.1.1 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
@@ -416,7 +417,7 @@ Follow the interactive prompts to:
 | <img src='Logos/marta_file_manager.png' width='32' height='32'> Marta File Manager | 0.8.2 |
 | <img src='Logos/mattermost.png' width='32' height='32'> Mattermost | 5.12.1 |
 | <img src='Logos/medis.png' width='32' height='32'> Medis | 2.15.1 |
-| <img src='Logos/meetingbar.png' width='32' height='32'> MeetingBar | 4.11.4 |
+| <img src='Logos/meetingbar.png' width='32' height='32'> MeetingBar | 4.11.5 |
 | <img src='Logos/meld_for_macos.png' width='32' height='32'> Meld for macOS | 3.22.3+105 |
 | <img src='Logos/menubar_stats.png' width='32' height='32'> MenuBar Stats | 3.9 |
 | <img src='Logos/micro_snitch.png' width='32' height='32'> Micro Snitch | 1.6.1 |
@@ -487,7 +488,7 @@ Follow the interactive prompts to:
 | <img src='Logos/openvpn_connect_client.png' width='32' height='32'> OpenVPN Connect client | 3.7.1 |
 | <img src='Logos/opera.png' width='32' height='32'> Opera | 119.0.5497.70 |
 | <img src='Logos/oracle_virtualbox.png' width='32' height='32'> Oracle VirtualBox | 7.1.10 |
-| <img src='Logos/orbstack.png' width='32' height='32'> OrbStack | 1.11.2 |
+| <img src='Logos/orbstack.png' width='32' height='32'> OrbStack | 1.11.3 |
 | <img src='Logos/orca_slicer.png' width='32' height='32'> Orca Slicer | 2.3.0 |
 | <img src='Logos/orka_cli.png' width='32' height='32'> Orka CLI | 2.4.0 |
 | <img src='Logos/orka_desktop.png' width='32' height='32'> Orka Desktop | 3.0.0 |
@@ -587,7 +588,7 @@ Follow the interactive prompts to:
 | <img src='Logos/sqlpro_for_sqlite.png' width='32' height='32'> SQLPro for SQLite | 2025.07 |
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2025.10 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.44 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.45 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 4.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.4 |
 | <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.17.2 |
