@@ -1,0 +1,9 @@
+{
+  "name": "Starface",
+  "description": "STARFACE UCC Client for macOS - Unified Communications and Collaboration",
+  "version": "9.1.0",
+  "url": "https://www.starface-cdn.de/starface/clients/mac/STARFACE_9.1.0_1297_d67785e.dmg",
+  "bundleId": "de.starface.STARFACE",
+  "homepage": "https://www.starface.com/",
+  "fileName": "STARFACE_9.1.0_1297_d67785e.dmg"
+}

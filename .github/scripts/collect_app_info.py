@@ -559,6 +559,7 @@ pkg_urls = [
 # Custom scraper scripts to run
 custom_scrapers = [
     ".github/scripts/scrapers/remotehelp.sh",
+    ".github/scripts/scrapers/starface.sh"
 ]
 
 def calculate_file_hash(url):
