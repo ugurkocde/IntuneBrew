@@ -1,5 +1,5 @@
 <#PSScriptInfo
-.VERSION 0.8.0
+.VERSION 0.9.0
 .GUID 53ddb976-1bc1-4009-bfa0-1e2a51477e4d
 .AUTHOR ugurk
 .COMPANYNAME
@@ -12,6 +12,7 @@
 .REQUIREDSCRIPTS
 .EXTERNALSCRIPTDEPENDENCIES
 .RELEASENOTES
+Version 0.9.0: Added -ConfigFile parameter for non-interactive authentication (enables macOS support). Added -UseExistingIntuneApp parameter to update existing apps instead of creating duplicates.
 Version 0.8.0: Added -AppNamePrefix and -AppNameSuffix parameters to customize Intune app names. Changed app status display from table to line-by-line for better readability.
 Version 0.7.1: Added a processing summary that displays after app uploads/updates, showing app name, version changes, and time taken.
 Version 0.7.0: Added option to continue with download even when hash verification fails. Users can now choose to proceed at their own risk when hash mismatches occur.
@@ -98,10 +99,10 @@ param(
     [switch]$UseExistingIntuneApp,
 
     [Parameter(Mandatory = $false)]
-    [string]$ConfigFile
+    [string]$ConfigFile,
     
     [Parameter(Mandatory = $false)]
-    [string]$AppNamePrefix
+    [string]$AppNamePrefix,
 
     [Parameter(Mandatory = $false)]
     [string]$AppNameSuffix
@@ -117,8 +118,8 @@ ___       _                    ____
 
 Write-Host "IntuneBrew - Automated macOS Application Deployment via Microsoft Intune" -ForegroundColor Green
 Write-Host "Made by Ugur Koc with" -NoNewline; Write-Host " ❤️  and ☕" -NoNewline
-Write-Host " | Version" -NoNewline; Write-Host " 0.8.0" -ForegroundColor Yellow -NoNewline
-Write-Host " | Last updated: " -NoNewline; Write-Host "2025-05-15" -ForegroundColor Magenta
+Write-Host " | Version" -NoNewline; Write-Host " 0.9.0" -ForegroundColor Yellow -NoNewline
+Write-Host " | Last updated: " -NoNewline; Write-Host "2025-06-10" -ForegroundColor Magenta
 Write-Host ""
 Write-Host "This is a preview version. If you have any feedback, please open an issue at https://github.com/ugurkocde/IntuneBrew/issues. Thank you!" -ForegroundColor Cyan
 Write-Host "You can sponsor the development of this project at https://github.com/sponsors/ugurkocde" -ForegroundColor Red
