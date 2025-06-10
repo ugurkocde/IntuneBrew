@@ -25,16 +25,16 @@ elif [ -f "/Applications/OrbStack.app" ]; then
     rm -f "/Applications/OrbStack.app" 2>/dev/null || true
 fi
 
-# Remove binary /Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orb
-echo "Removing binary /Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orb..."
-if [ -f "/Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orb" ]; then
-    rm -f "/Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orb" 2>/dev/null || true
-fi
-
 # Remove binary /Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orbctl
 echo "Removing binary /Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orbctl..."
 if [ -f "/Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orbctl" ]; then
     rm -f "/Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orbctl" 2>/dev/null || true
+fi
+
+# Remove binary /Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orb
+echo "Removing binary /Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orb..."
+if [ -f "/Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orb" ]; then
+    rm -f "/Applications/OrbStack.app/OrbStack.app/Contents/MacOS/bin/orb" 2>/dev/null || true
 fi
 
 # Remove $HOME/.orbstack
