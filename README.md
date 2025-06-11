@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-507-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -110,28 +110,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-06-11 00:32 UTC*
+*Last checked: 2025-06-11 13:12 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Advanced Renamer | 4.11 | 4.12 |
-| Highlight | 1.2.60 | 1.2.65 |
-| Rive | 0.8.3088 | 0.8.3105 |
-| Mozilla Thunderbird | 139.0.1 | 139.0.2 |
-| Yaak | 2025.3.1 | 2025.4.0 |
-| ChatWise | 0.8.62 | 0.8.63 |
-| WeChat for Mac | 4.0.3.93 | 4.0.5.25 |
-| Mozilla Firefox | 139.0.1 | 139.0.4 |
-| Windows App | 11.1.7 | 11.1.8 |
-| Canva | 1.109.0 | 1.110.0 |
-| Dropbox | 225.4.4896 | 226.4.5094 |
-| Audacity | 3.7.3 | 3.7.4 |
-| ChatGPT | 1.2025.147 | 1.2025.154 |
-| Microsoft Office | 16.97.25051114 | 16.98.25060824 |
-| Windsurf | 1.9.4 | 1.10.1 |
-| Adobe Acrobat Reader | 25.001.20467 | 25.001.20529 |
+| Rhinoceros | 8.19.25132.01002 | 8.20.25157.13002 |
+| Apifox | 2.7.15 | 2.7.16 |
+| Trae | 1.0.13858 | 1.0.14141 |
+| Google Chrome | 137.0.7151.69 | 137.0.7151.104 |
+| Opera | 119.0.5497.70 | 119.0.5497.88 |
+| OnyX | 4.7.9 | 4.8.0 |
+| NordLayer | 3.6.0 | 3.6.1 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -266,7 +258,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.0.2 |
 | <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.15 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.15 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.16 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 2.2 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.97.1 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.2 |
@@ -291,7 +283,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.0.747 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 3.5.6 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.6 |
-| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 5.450 |
+| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 5.455 |
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 5.3.4 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.1.0.31016 |
 | <img src='Logos/binary_ninja.png' width='32' height='32'> Binary Ninja | 5.0.7486 |
@@ -415,7 +407,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/godspeed.png' width='32' height='32'> Godspeed | 1.9.1 |
 | <img src='Logos/goland.png' width='32' height='32'> Goland | 2025.1.2 |
 | <img src='Logos/google_ads_editor.png' width='32' height='32'> Google Ads Editor | 2.9 |
-| <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 137.0.7151.69 |
+| <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 137.0.7151.104 |
 | <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 109.0.3 |
 | <img src='Logos/goose.png' width='32' height='32'> Goose | 1.0.27 |
 | <img src='Logos/gpt_fdisk.png' width='32' height='32'> GPT fdisk | 1.0.10 |
@@ -541,7 +533,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/nextcloud.png' width='32' height='32'> Nextcloud | 3.16.5 |
 | <img src='Logos/nitro_pdf_pro.png' width='32' height='32'> Nitro PDF Pro | 14.7 |
 | <img src='Logos/nomachine.png' width='32' height='32'> NoMachine | 8.16.1 |
-| <img src='Logos/nordlayer.png' width='32' height='32'> NordLayer | 3.6.0 |
+| <img src='Logos/nordlayer.png' width='32' height='32'> NordLayer | 3.6.1 |
 | <img src='Logos/nordlocker.png' width='32' height='32'> NordLocker | 4.26.1 |
 | <img src='Logos/nordpass.png' width='32' height='32'> NordPass | 6.2.13 |
 | <img src='Logos/nordvpn.png' width='32' height='32'> NordVPN | 8.39.0 |
@@ -564,10 +556,10 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/omnioutliner.png' width='32' height='32'> OmniOutliner | 5.14.3 |
 | <img src='Logos/omnissa_horizon_client.png' width='32' height='32'> Omnissa Horizon Client | 2503-8.15.0-14236092062 |
 | <img src='Logos/onedrive.png' width='32' height='32'> OneDrive | 25.075.0420.0002 |
-| <img src='Logos/onyx.png' width='32' height='32'> OnyX | 4.7.9 |
+| <img src='Logos/onyx.png' width='32' height='32'> OnyX | 4.8.0 |
 | <img src='Logos/openmtp.png' width='32' height='32'> OpenMTP | 3.2.25 |
 | <img src='Logos/openvpn_connect_client.png' width='32' height='32'> OpenVPN Connect client | 3.7.1 |
-| <img src='Logos/opera.png' width='32' height='32'> Opera | 119.0.5497.70 |
+| <img src='Logos/opera.png' width='32' height='32'> Opera | 119.0.5497.88 |
 | <img src='Logos/oracle_virtualbox.png' width='32' height='32'> Oracle VirtualBox | 7.1.10 |
 | <img src='Logos/orbstack.png' width='32' height='32'> OrbStack | 1.11.3 |
 | <img src='Logos/orca_slicer.png' width='32' height='32'> Orca Slicer | 2.3.0 |
@@ -635,7 +627,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/reqable.png' width='32' height='32'> Reqable | 2.33.12 |
 | <img src='Logos/requestly.png' width='32' height='32'> Requestly | 25.6.5 |
 | <img src='Logos/retcon.png' width='32' height='32'> Retcon | 1.3.0 |
-| <img src='Logos/rhinoceros.png' width='32' height='32'> Rhinoceros | 8.19.25132.01002 |
+| <img src='Logos/rhinoceros.png' width='32' height='32'> Rhinoceros | 8.20.25157.13002 |
 | <img src='Logos/rive.png' width='32' height='32'> Rive | 0.8.3105 |
 | <img src='Logos/rocket.png' width='32' height='32'> Rocket | 1.9.4 |
 | <img src='Logos/rocket_typist.png' width='32' height='32'> Rocket Typist | 3.2.2 |
@@ -691,7 +683,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/teacode.png' width='32' height='32'> TeaCode | 1.1.3 |
 | <img src='Logos/teamviewer_host.png' width='32' height='32'> TeamViewer Host | 15 |
 | <img src='Logos/teamviewer_quicksupport.png' width='32' height='32'> TeamViewer QuickSupport | 15 |
-| <img src='Logos/telegram_for_macos.png' width='32' height='32'> Telegram for macOS | 11.12.1 |
+| <img src='Logos/telegram_for_macos.png' width='32' height='32'> Telegram for macOS | 11.12.3 |
 | <img src='Logos/tenable_nessus_agent.png' width='32' height='32'> Tenable Nessus Agent | 10.8.4 |
 | <img src='Logos/termius.png' width='32' height='32'> Termius | 9.21.2 |
 | <img src='Logos/tex_live_utility.png' width='32' height='32'> TeX Live Utility | 1.54 |
@@ -702,7 +694,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/todoist.png' width='32' height='32'> Todoist | 9.16.1 |
 | <img src='Logos/tofu.png' width='32' height='32'> Tofu | 3.0.1 |
 | <img src='Logos/topaz_gigapixel_ai.png' width='32' height='32'> Topaz Gigapixel AI | 8.4.1 |
-| <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.13858 |
+| <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.14141 |
 | <img src='Logos/transmission.png' width='32' height='32'> Transmission | 4.0.6 |
 | <img src='Logos/transmit.png' width='32' height='32'> Transmit | 5.10.9 |
 | <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.3 |
