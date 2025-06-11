@@ -3,3 +3,5 @@
 .prettierignore
 
 .claude/
+
+.mcp.json
