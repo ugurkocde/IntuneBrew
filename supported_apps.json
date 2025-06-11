@@ -432,6 +432,7 @@
     "sqlpro_for_sqlite": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/sqlpro_for_sqlite.json",
     "sqlpro_studio": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/sqlpro_studio.json",
     "squirrel": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/squirrel.json",
+    "starface": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/starface.json",
     "stats": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/stats.json",
     "steam": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/steam.json",
     "steermouse": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/steermouse.json",
@@ -504,6 +505,5 @@
     "zed": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/zed.json",
     "zed_attack_proxy": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/zed_attack_proxy.json",
     "zen_browser": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/zen_browser.json",
-    "zoom": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/zoom.json",
-    "starface": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/starface.json"
+    "zoom": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/zoom.json"
 }

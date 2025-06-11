@@ -1,11 +1,11 @@
 {
   "name": "Highlight",
   "description": "Context-aware AI assistant",
-  "version": "1.2.60",
-  "url": "https://cdn.highlightai.com/releases/darwin/arm64/Highlight-1.2.60-arm64.dmg",
+  "version": "1.2.65",
+  "url": "https://cdn.highlightai.com/releases/darwin/arm64/Highlight-1.2.65-arm64.dmg",
   "bundleId": "tv.medal.highlight",
   "homepage": "https://highlightai.com/",
-  "fileName": "Highlight-1.2.60-arm64.dmg",
-  "sha": "50285ba1c8aa30ae0e5699f211a8636f57a3ed108bf6d4d08bbea739c6b2e48e",
+  "fileName": "Highlight-1.2.65-arm64.dmg",
+  "sha": "57a8baed79dcb9de36b9bbf7027a77e0d45865d9307fb8732d198bc619205d1f",
   "previous_version": "1.2.60"
 }
