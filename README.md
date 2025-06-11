@@ -44,19 +44,29 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 - [Watch the full walkthrough of the tool:](#watch-the-full-walkthrough-of-the-tool)
 - [Table of Contents](#table-of-contents)
-- [� Latest Updates](#-latest-updates)
+- [🔄 Latest Updates](#-latest-updates)
 - [✨ Features](#-features)
 - [🚀 Getting Started](#-getting-started)
   - [Prerequisites](#prerequisites)
 - [📝 Usage](#-usage)
   - [Basic Usage](#basic-usage)
+  - [Advanced Parameters](#advanced-parameters)
+    - [Upload Specific Apps](#upload-specific-apps)
+    - [Update All Apps](#update-all-apps)
+    - [Upload Local Files](#upload-local-files)
+    - [Copy Assignments](#copy-assignments)
+    - [Use Existing Intune Apps](#use-existing-intune-apps)
+    - [Non-Interactive Authentication](#non-interactive-authentication)
+    - [Customize App Names](#customize-app-names)
+    - [Pre/Post Install Scripts (PKG only)](#prepost-install-scripts-pkg-only)
   - [📱 Supported Applications](#-supported-applications)
 - [🔧 Configuration](#-configuration)
   - [Using System Managed Identity](#using-system-managed-identity)
   - [Using User Assigned Managed Identity](#using-user-assigned-managed-identity)
   - [Using ClientSecret from Entra ID App Registration](#using-clientsecret-from-entra-id-app-registration)
   - [Certificate-Based Authentication](#certificate-based-authentication)
-  - [Copy Assignments](#copy-assignments)
+  - [Using Configuration File](#using-configuration-file)
+  - [Copy Assignments](#copy-assignments-1)
   - [App JSON Structure](#app-json-structure)
 - [🔄 Version Management](#-version-management)
 - [🛠️ Error Handling](#️-error-handling)
@@ -164,6 +174,63 @@ Follow the interactive prompts to:
 2. Authenticate with Microsoft Graph
 3. Monitor the upload progress
 4. View the results in Intune
+
+### Advanced Parameters
+
+#### Upload Specific Apps
+```powershell
+.\IntuneBrew.ps1 -Upload "google_chrome", "slack", "zoom"
+```
+Uploads the specified apps directly without interactive selection.
+
+#### Update All Apps
+```powershell
+.\IntuneBrew.ps1 -UpdateAll
+```
+Updates all applications that have newer versions available.
+
+#### Upload Local Files
+```powershell
+.\IntuneBrew.ps1 -LocalFile
+```
+Upload local PKG or DMG files to Intune with interactive prompts.
+
+#### Copy Assignments
+```powershell
+.\IntuneBrew.ps1 -UpdateAll -CopyAssignments
+```
+When updating apps, copy assignments from existing versions to new versions.
+
+#### Use Existing Intune Apps
+```powershell
+.\IntuneBrew.ps1 -UpdateAll -UseExistingIntuneApp
+```
+Updates existing Intune app entries instead of creating new ones. This prevents duplicate app entries in Intune.
+
+#### Non-Interactive Authentication
+```powershell
+.\IntuneBrew.ps1 -UpdateAll -ConfigFile "clientSecret.json"
+```
+Use a configuration file for non-interactive authentication. This enables automation. See the Configuration section for setup details.
+
+#### Customize App Names
+```powershell
+# Add prefix to app names
+.\IntuneBrew.ps1 -Upload "slack" -AppNamePrefix "Corporate "
+
+# Add suffix to app names  
+.\IntuneBrew.ps1 -Upload "zoom" -AppNameSuffix " - Mac"
+
+# Use both prefix and suffix
+.\IntuneBrew.ps1 -Upload "chrome" -AppNamePrefix "Company " -AppNameSuffix " (Managed)"
+```
+Customize how app names appear in Intune by adding prefixes and/or suffixes.
+
+#### Pre/Post Install Scripts (PKG only)
+```powershell
+.\IntuneBrew.ps1 -Upload "example_app" -PreInstallScriptPath "./scripts/pre-install.sh" -PostInstallScriptPath "./scripts/post-install.sh"
+```
+Execute custom scripts before or after PKG installations.
 
 ### 📱 Supported Applications
 
@@ -685,9 +752,10 @@ Follow the interactive prompts to:
 First decide which authentication method you would like to use. There are currently the following methods implemented:
 
 - System Managed Identity
-- User Managed Identity
+- User Managed Identity  
 - ClientSecret & ClientID using App Registration
 - Certificate based authentication
+- Configuration File (for non-interactive/automated scenarios)
 
 ### Using System Managed Identity
 
@@ -740,6 +808,89 @@ Export-PfxCertificate -Cert $cert -FilePath "IntuneBrew.pfx" -Password $pwd
    - Go to your App Registration in Azure Portal
    - Navigate to "Certificates & secrets"
    - Upload the public key portion of your certificate
+
+### Using Configuration File
+
+The `-ConfigFile` parameter enables non-interactive authentication, which is perfect for automation scenarios and macOS support. This method uses a JSON configuration file containing your authentication credentials.
+
+1. Create a configuration file based on one of these templates:
+
+**For Client Secret Authentication** (clientSecret.json):
+```json
+{
+  "authMethod": "ClientSecret",
+  "tenantId": "your-tenant-id",
+  "clientId": "your-app-registration-client-id",
+  "clientSecret": "your-client-secret"
+}
+```
+
+**Example clientSecret.json with actual values:**
+```json
+{
+  "authMethod": "ClientSecret",
+  "tenantId": "12345678-1234-1234-1234-123456789012",
+  "clientId": "87654321-4321-4321-4321-210987654321",
+  "clientSecret": "xyx8Q~1234567890abcdefghijklmnopqrstuvwx"
+}
+```
+
+**Important notes for clientSecret.json:**
+- `authMethod`: Must be exactly "ClientSecret" (case-sensitive)
+- `tenantId`: Your Azure AD tenant ID (GUID format)
+- `clientId`: The Application (client) ID from your App Registration
+- `clientSecret`: The secret value (not the secret ID) from your App Registration
+
+> [!WARNING]
+> - Store the clientSecret.json file securely and never commit it to version control
+> - Add `clientSecret.json` to your `.gitignore` file
+> - Consider using environment variables or Azure Key Vault for production scenarios
+> - Client secrets expire - remember to rotate them before expiration
+
+**For Certificate Authentication** (certificateThumbprint.json):
+```json
+{
+  "authMethod": "Certificate",
+  "tenantId": "your-tenant-id",
+  "clientId": "your-app-registration-client-id",
+  "certificateThumbprint": "your-certificate-thumbprint"
+}
+```
+
+**Example certificateThumbprint.json with actual values:**
+```json
+{
+  "authMethod": "Certificate",
+  "tenantId": "12345678-1234-1234-1234-123456789012",
+  "clientId": "87654321-4321-4321-4321-210987654321",
+  "certificateThumbprint": "1234567890ABCDEF1234567890ABCDEF12345678"
+}
+```
+
+**Important notes for certificateThumbprint.json:**
+- `authMethod`: Must be exactly "Certificate" (case-sensitive)
+- `tenantId`: Your Azure AD tenant ID (GUID format)
+- `clientId`: The Application (client) ID from your App Registration
+- `certificateThumbprint`: The thumbprint of the certificate uploaded to your App Registration (40 character hex string, no spaces or colons)
+- The certificate must be installed in the current user or local machine certificate store
+
+2. Ensure your App Registration has the required permissions:
+   - DeviceManagementApps.ReadWrite.All
+
+3. Use the configuration file with any IntuneBrew command:
+```powershell
+# Update all apps non-interactively
+.\IntuneBrew.ps1 -UpdateAll -ConfigFile "clientSecret.json"
+
+# Upload specific apps with automation
+.\IntuneBrew.ps1 -Upload "slack", "zoom" -ConfigFile "certificateThumbprint.json"
+```
+
+> [!TIP]
+> The ConfigFile parameter is especially useful for:
+> - Automated deployments in CI/CD pipelines
+> - Scheduled tasks without user interaction
+> - Avoiding interactive authentication prompts
 
 ### Copy Assignments
 
