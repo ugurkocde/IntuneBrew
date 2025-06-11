@@ -1119,6 +1119,30 @@ def main():
         except Exception as e:
             print(f"Error running scraper {scraper}: {str(e)}")
 
+    # After custom scrapers run, calculate hashes for direct downloads
+    print("\n📊 Checking custom scraper outputs for missing hashes...")
+    for scraper in custom_scrapers:
+        json_file = os.path.join(apps_folder, os.path.basename(scraper).replace('.sh', '.json'))
+        if os.path.exists(json_file):
+            with open(json_file, 'r') as f:
+                app_data = json.load(f)
+            
+            # Check if it's a direct download (DMG/PKG) without a hash
+            if ('url' in app_data and 
+                'sha' not in app_data and 
+                (app_data['url'].endswith('.dmg') or app_data['url'].endswith('.pkg'))):
+                
+                print(f"🔍 Calculating SHA256 hash for {app_data['name']}...")
+                file_hash = calculate_file_hash(app_data['url'])
+                if file_hash:
+                    app_data['sha'] = file_hash
+                    # Write back the updated JSON
+                    with open(json_file, 'w') as f:
+                        json.dump(app_data, f, indent=2)
+                    print(f"✅ SHA256 hash added for {app_data['name']}: {file_hash}")
+                else:
+                    print(f"⚠️ Could not calculate SHA256 hash for {app_data['name']}")
+
     # Update the README with both the apps table and latest changes
     update_readme_apps(supported_apps)
     update_readme_with_latest_changes(apps_info)
