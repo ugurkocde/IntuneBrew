@@ -1,13 +1,13 @@
 {
   "name": "Jabra Direct",
   "description": "Optimise and personalise your Jabra headset",
-  "version": "6.22.11401",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/jabra_direct_6.22.11401.pkg",
+  "version": "6.23.16101",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/jabra_direct_6.23.16101.pkg",
   "bundleId": "com.jabra.directonline",
   "homepage": "https://www.jabra.com/software-and-services/jabra-direct",
-  "fileName": "JabraDirectSetup.dmg",
+  "fileName": "jabra_direct_6.23.16101.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://www.jabra.com/support/release-notes/release-note-jabra-direct",
-  "sha": "833379141d5dffea38d9bc7e59d5e62c7ff6c92368558e16656c7a92d0ef31c3",
+  "sha": "13d13503751917674587241331ef87aadb5658920543bc40eb97a0d0ebc12e05",
   "previous_version": "6.22.11401"
 }

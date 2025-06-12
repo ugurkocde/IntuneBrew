@@ -5,8 +5,8 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/nordlayer_3.6.1.pkg",
   "bundleId": "com.nordvpn.macos.teams",
   "homepage": "https://nordlayer.com/",
-  "fileName": "nordlayer_3.6.1.pkg",
+  "fileName": "NordLayer_v3.6.1.pkg",
   "type": "pkg_in_pkg",
   "sha": "473ebe87898a2a6fd691cf3e2b3a0982a76c7d2907e066dcd356cf0e6b879e91",
-  "previous_version": "3.6.0"
+  "previous_version": "3.6.1"
 }

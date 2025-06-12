@@ -1,12 +1,12 @@
 {
   "name": "Todoist",
   "description": "To-do list",
-  "version": "9.16.1",
-  "url": "https://electron-dl.todoist.com/mac/Todoist-darwin-9.16.1-arm64-latest.dmg",
+  "version": "9.17.0",
+  "url": "https://electron-dl.todoist.com/mac/Todoist-darwin-9.17.0-arm64-latest.dmg",
   "bundleId": "com.todoist.mac.Todoist",
   "homepage": "https://todoist.com/home",
-  "fileName": "Todoist-darwin-9.16.1-arm64-latest.dmg",
-  "sha": "70ad8339fcf9aa0d6ccc675cf83e04aded92a2e18a1d8fd6ba341e8e801c1808",
+  "fileName": "Todoist-darwin-9.17.0-arm64-latest.dmg",
+  "sha": "27a5e3adef5e1c7b7a144e6ad76fec9170730344a5a5c82942c46a4b9ba6ea8b",
   "changelog": "https://todoist.com/changelog",
   "previous_version": "9.16.1"
 }
