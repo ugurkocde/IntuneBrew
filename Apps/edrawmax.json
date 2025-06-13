@@ -1,12 +1,12 @@
 {
   "name": "EdrawMax",
   "description": "Diagram software",
-  "version": "12.6.1",
-  "url": "https://download.edrawsoft.com/edraw-max_full5380.dmg",
+  "version": "14.5.1",
+  "url": "https://download.edrawsoft.com/cbs_down/edraw-max_full5380.zip",
   "bundleId": "com.edrawsoft.edrawmax",
   "homepage": "https://www.edrawsoft.com/",
-  "fileName": "edraw-max_full5380.dmg",
-  "sha": "9313284064ee89f8cb5e80e72ff630cc8047bfc227a627d5997d8a402b4b2000",
+  "fileName": "edraw-max_full5380.zip",
+  "sha": "2234d73bf297315d70945d830fa6d40c6f6a7643831901499b771c71376605ba",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:10:20Z",
     "qa_result": "Installation successful and verified",

@@ -5,9 +5,9 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/jabra_direct_6.23.16101.pkg",
   "bundleId": "com.jabra.directonline",
   "homepage": "https://www.jabra.com/software-and-services/jabra-direct",
-  "fileName": "jabra_direct_6.23.16101.pkg",
+  "fileName": "JabraDirectSetup.dmg",
   "type": "pkg_in_dmg",
   "changelog": "https://www.jabra.com/support/release-notes/release-note-jabra-direct",
   "sha": "13d13503751917674587241331ef87aadb5658920543bc40eb97a0d0ebc12e05",
-  "previous_version": "6.22.11401"
+  "previous_version": "6.23.16101"
 }
