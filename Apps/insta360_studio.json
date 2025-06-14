@@ -5,8 +5,8 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/insta360_studio_5.6.2.pkg",
   "bundleId": "com.insta360.studio",
   "homepage": "https://www.insta360.com/",
-  "fileName": "insta360_studio_5.6.2.pkg",
+  "fileName": "Insta360Studio_5.6.2_release_insta360(RC_build79)_20250612_124903_signed_1749703849040.pkg",
   "type": "pkg_in_pkg",
   "sha": "2f214044248690e891063d682441aaa4cfd91809e68f8c24194534d5821662a7",
-  "previous_version": "5.6.1"
+  "previous_version": "5.6.2"
 }

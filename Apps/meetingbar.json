@@ -1,11 +1,11 @@
 {
   "name": "MeetingBar",
   "description": "Shows the next meeting in the menu bar",
-  "version": "4.11.5",
-  "url": "https://github.com/leits/MeetingBar/releases/download/v4.11.5/MeetingBar.dmg",
+  "version": "4.11.6",
+  "url": "https://github.com/leits/MeetingBar/releases/download/v4.11.6/MeetingBar.dmg",
   "bundleId": "leits.MeetingBar",
   "homepage": "https://github.com/leits/MeetingBar",
   "fileName": "MeetingBar.dmg",
-  "sha": "b7c3d3aca2c66993a6098b9327408b2559801b984285ad8d451ef384c8482f50",
+  "sha": "4f19af496d4ff44b9b0ee02be02bc76207f3e365a7f9e77c7219a08c607838d7",
   "previous_version": "4.11.5"
 }
