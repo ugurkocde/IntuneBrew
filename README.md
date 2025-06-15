@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-507-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -114,29 +114,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-06-14 00:29 UTC*
+*Last checked: 2025-06-15 00:33 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 140.0b8 | 140.0b9 |
-| UPDF | 2.0.0 | 2.0.2 |
-| Readest | 0.9.55 | 0.9.56 |
-| Mixxx | 2.5.1 | 2.5.2 |
-| DockDoor | 1.14 | 1.14.4 |
-| MeetingBar | 4.11.5 | 4.11.6 |
-| CotEditor | 5.1.7 | 5.1.8 |
-| Trae | 1.0.14141 | 1.0.14323 |
-| Grammarly Desktop | 1.121.3.0 | 1.122.2.0 |
-| Krisp | 3.2.6 | 3.3.4 |
-| Podman Desktop | 1.19.1 | 1.19.2 |
-| Raycast | 1.100.1 | 1.100.2 |
-| Zed | 0.190.5 | 0.190.6 |
-| Microsoft Edge | 137.0.3296.68 | 137.0.3296.83 |
-| VSCodium | 1.100.33714 | 1.101.03933 |
-| NordLayer | 3.6.1 | 3.6.2 |
-| DisplayLink USB Graphics Software | 1.12.3 | 1.12.4 |
+| Highlight | 1.2.65 | 1.2.83 |
+| Readest | 0.9.56 | 0.9.57 |
+| DockDoor | 1.14.4 | 1.15 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -260,7 +247,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/alacritty.png' width='32' height='32'> Alacritty | 0.15.1 |
 | <img src='Logos/alcove.png' width='32' height='32'> Alcove | 1.2.5 |
 | <img src='Logos/alfred.png' width='32' height='32'> Alfred | 5.6.2 |
-| <img src='Logos/alttab.png' width='32' height='32'> AltTab | 7.24.0 |
+| <img src='Logos/alttab.png' width='32' height='32'> AltTab | 7.25.0 |
 | <img src='Logos/amadine.png' width='32' height='32'> Amadine | 1.6.7 |
 | <img src='Logos/amazon_chime.png' width='32' height='32'> Amazon Chime | 5.23.22356 |
 | <img src='Logos/amazon_q.png' width='32' height='32'> Amazon Q | 1.12.0 |
@@ -358,7 +345,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
 | <img src='Logos/discord.png' width='32' height='32'> Discord | 0.0.349 |
 | <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 1.12.4 |
-| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.14.4 |
+| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.15 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.42.0 |
 | <img src='Logos/dockside.png' width='32' height='32'> Dockside | 1.9.54 |
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
@@ -422,7 +409,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/google_ads_editor.png' width='32' height='32'> Google Ads Editor | 2.9 |
 | <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 137.0.7151.104 |
 | <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 109.0.3 |
-| <img src='Logos/goose.png' width='32' height='32'> Goose | 1.0.27 |
+| <img src='Logos/goose.png' width='32' height='32'> Goose | 1.0.28 |
 | <img src='Logos/gpt_fdisk.png' width='32' height='32'> GPT fdisk | 1.0.10 |
 | <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.122.2.0 |
 | <img src='Logos/grandperspective.png' width='32' height='32'> GrandPerspective | 3.5.3 |
@@ -432,7 +419,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/headlamp.png' width='32' height='32'> Headlamp | 0.31.1 |
 | <img src='Logos/hey.png' width='32' height='32'> HEY | 1.2.17 |
 | <img src='Logos/hidden_bar.png' width='32' height='32'> Hidden Bar | 1.9 |
-| <img src='Logos/highlight.png' width='32' height='32'> Highlight | 1.2.65 |
+| <img src='Logos/highlight.png' width='32' height='32'> Highlight | 1.2.83 |
 | <img src='Logos/home_assistant.png' width='32' height='32'> Home Assistant | 2025.5 |
 | <img src='Logos/homerow.png' width='32' height='32'> Homerow | 1.4.0 |
 | <img src='Logos/hp_easy_admin.png' width='32' height='32'> HP Easy Admin | 2.15.0 |
@@ -628,7 +615,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rancher_desktop.png' width='32' height='32'> Rancher Desktop | 1.19.1 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 1.100.2 |
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.7.7 |
-| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.56 |
+| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.57 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.13.1 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.87 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.53 |
