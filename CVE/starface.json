@@ -1,0 +1,15 @@
+{
+  "app_name": "Starface",
+  "last_updated": "2025-06-15",
+  "vulnerabilities": [
+    {
+      "cve_id": "CVE-2023-33243",
+      "published_date": "2023-06-15",
+      "last_modified_date": "2024-12-12",
+      "base_score": 8.1,
+      "severity": "HIGH",
+      "description": "RedTeam Pentesting discovered that the web interface of STARFACE as well as its REST API allows authentication using the SHA512 hash of the password instead of the cleartext password. While storing password hashes instead of cleartext passwords in an application's database generally has become best practice to protect users' passwords in case of a database compromise, this is rendered ineffective when allowing to authenticate using the password hash.",
+      "cpe_name": "cpe:2.3:a:starface:starface:7.3.0.10:*:*:*:*:*:*:*"
+    }
+  ]
+}

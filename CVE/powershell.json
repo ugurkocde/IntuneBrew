@@ -1,6 +1,6 @@
 {
   "app_name": "PowerShell",
-  "last_updated": "2025-06-08",
+  "last_updated": "2025-06-15",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2024-30045",

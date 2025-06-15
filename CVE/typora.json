@@ -1,6 +1,6 @@
 {
   "app_name": "Typora",
-  "last_updated": "2025-06-08",
+  "last_updated": "2025-06-15",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2024-41482",
@@ -21,30 +21,30 @@
       "cpe_name": "cpe:2.3:a:typora:typora:0.9.79:-:*:*:*:*:*:*"
     },
     {
-      "cve_id": "CVE-2023-39703",
-      "published_date": "2023-09-01",
-      "last_modified_date": "2024-11-21",
+      "cve_id": "CVE-2024-33300",
+      "published_date": "2024-05-01",
+      "last_modified_date": "2025-06-10",
+      "base_score": 7.3,
+      "severity": "HIGH",
+      "description": "Typora v1.0.0 through v1.7 version (below) Markdown editor has a cross-site scripting (XSS) vulnerability, which allows attackers to execute arbitrary code by uploading Markdown files.",
+      "cpe_name": "cpe:2.3:a:typora:typora:1.6.7:*:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2024-31783",
+      "published_date": "2024-04-16",
+      "last_modified_date": "2025-06-10",
       "base_score": 6.1,
       "severity": "MEDIUM",
-      "description": "A cross site scripting (XSS) vulnerability in the Markdown Editor component of Typora v1.6.7 allows attackers to execute arbitrary code via uploading a crafted Markdown file.",
+      "description": "Cross Site Scripting (XSS) vulnerability in Typora v.1.6.7 and before, allows a local attacker to obtain sensitive information via a crafted script during markdown file creation.",
       "cpe_name": "cpe:2.3:a:typora:typora:0.9.79:-:*:*:*:*:*:*"
     },
     {
-      "cve_id": "CVE-2023-2971",
-      "published_date": "2023-08-19",
-      "last_modified_date": "2024-11-21",
-      "base_score": 6.3,
+      "cve_id": "CVE-2024-31784",
+      "published_date": "2024-04-16",
+      "last_modified_date": "2025-06-10",
+      "base_score": 6.1,
       "severity": "MEDIUM",
-      "description": "Improper path handling in Typora before 1.7.0-dev on Windows and Linux allows a crafted webpage to access local files and exfiltrate them to remote web servers via \"typora://app/typemark/\". This vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.",
-      "cpe_name": "cpe:2.3:a:typora:typora:0.9.79:-:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2023-2316",
-      "published_date": "2023-08-19",
-      "last_modified_date": "2024-11-21",
-      "base_score": 7.4,
-      "severity": "HIGH",
-      "description": "Improper path handling in Typora before 1.6.7 on Windows and Linux allows a crafted webpage to access local files and exfiltrate them to remote web servers via \"typora://app/<absolute-path>\". \n\nThis vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.\n\n\n\n\n\n",
+      "description": "An issue in Typora v.1.8.10 and before, allows a local attacker to obtain sensitive information and execute arbitrary code via a crafted payload to the src component.",
       "cpe_name": "cpe:2.3:a:typora:typora:0.9.79:-:*:*:*:*:*:*"
     }
   ]
