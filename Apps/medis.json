@@ -1,12 +1,12 @@
 {
   "name": "Medis",
   "description": "Modern GUI for Redis",
-  "version": "2.15.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/medis_2.15.1.pkg",
+  "version": "2.16.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/medis_2.16.1.pkg",
   "bundleId": "li.zihua.medis",
   "homepage": "https://getmedis.com/",
-  "fileName": "medis_2.15.1.pkg",
+  "fileName": "medis_2.16.1.pkg",
   "type": "app",
-  "sha": "51297a230596f2a57c9f97f55ad02d09e5c1f1470f7dda428cf192cc79bfe712",
-  "previous_version": "2.15.1"
+  "sha": "4e132a42542e79ab7a118c93e4d3783ba3f0ce9835a5ba3d7c7e4cf2e8135bb4",
+  "previous_version": "2.16.1"
 }
