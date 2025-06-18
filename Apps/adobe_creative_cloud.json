@@ -1,12 +1,12 @@
 {
   "name": "Adobe Creative Cloud",
   "description": "Collection of apps and services for photography, design, video, web, and UX",
-  "version": "6.6.0.611",
-  "url": "https://ccmdls.adobe.com/AdobeProducts/StandaloneBuilds/ACCC/ESD/6.6.0/611/macarm64/ACCCx6_6_0_611.dmg",
+  "version": "6.7.0.278",
+  "url": "https://ccmdls.adobe.com/AdobeProducts/StandaloneBuilds/ACCC/ESD/6.7.0/278/macarm64/ACCCx6_7_0_278.dmg",
   "bundleId": "com.adobe.acc.AdobeCreativeCloud",
   "homepage": "https://www.adobe.com/creativecloud.html",
-  "fileName": "ACCCx6_6_0_611.dmg",
-  "sha": "2a456be9835bf4178b1ba27543c8cfd677bf5bd48a3c90ae473afae25e4d33b0",
+  "fileName": "ACCCx6_7_0_278.dmg",
+  "sha": "d533b2e0ae3ea1d0e017c07ed75a7352d2108fe8a8c54479effab8c1909a35c1",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:01:46Z",
     "qa_result": "App not found after installation",
