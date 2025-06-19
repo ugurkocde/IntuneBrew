@@ -17,12 +17,12 @@ fi
 echo "Stopping SilentKnight if running..."
 pkill -f "SilentKnight" 2>/dev/null || true
 
-# Remove /Applications/silentknight211/SilentKnight.app
-echo "Removing /Applications/silentknight211/SilentKnight.app..."
-if [ -d "/Applications/silentknight211/SilentKnight.app" ]; then
-    rm -rf "/Applications/silentknight211/SilentKnight.app" 2>/dev/null || true
-elif [ -f "/Applications/silentknight211/SilentKnight.app" ]; then
-    rm -f "/Applications/silentknight211/SilentKnight.app" 2>/dev/null || true
+# Remove /Applications/silentknight212/SilentKnight.app
+echo "Removing /Applications/silentknight212/SilentKnight.app..."
+if [ -d "/Applications/silentknight212/SilentKnight.app" ]; then
+    rm -rf "/Applications/silentknight212/SilentKnight.app" 2>/dev/null || true
+elif [ -f "/Applications/silentknight212/SilentKnight.app" ]; then
+    rm -f "/Applications/silentknight212/SilentKnight.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.eclecticlight.silentknight.sfl*
