@@ -1,12 +1,12 @@
 {
   "name": "Splashtop Business",
   "description": "Remote access software",
-  "version": "3.7.4.2",
-  "url": "https://d17kmd0va0f0mp.cloudfront.net/macclient/STB/Splashtop_Business_Mac_INSTALLER_v3.7.4.2.dmg",
+  "version": "3.7.4.3",
+  "url": "https://d17kmd0va0f0mp.cloudfront.net/macclient/STB/Splashtop_Business_Mac_INSTALLER_v3.7.4.3.dmg",
   "bundleId": "com.splashtop.splashtopBusiness.*",
   "homepage": "https://www.splashtop.com/business",
-  "fileName": "Splashtop_Business_Mac_INSTALLER_v3.7.4.2.dmg",
-  "sha": "a5fa15626ca78d4cf3749f6dbfca58654cadb731e3c212460cca555d4d2974b4",
+  "fileName": "Splashtop_Business_Mac_INSTALLER_v3.7.4.3.dmg",
+  "sha": "2d59e599b33b377168d9cb07418ca4195b507648dd090fcac0d018e231623260",
   "changelog": "https://support-splashtopbusiness.splashtop.com/hc/en-us/sections/11960106075419-Release-announcements-Business-app",
   "previous_version": "3.7.4.2"
 }
