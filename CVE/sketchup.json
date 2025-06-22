@@ -1,6 +1,6 @@
 {
   "app_name": "SketchUp",
-  "last_updated": "2025-06-15",
+  "last_updated": "2025-06-22",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2016-2536",

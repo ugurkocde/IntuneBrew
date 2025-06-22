@@ -1,24 +1,24 @@
 {
   "app_name": "iTerm2",
-  "last_updated": "2025-06-15",
+  "last_updated": "2025-06-22",
   "vulnerabilities": [
     {
-      "cve_id": "CVE-2023-46321",
-      "published_date": "2023-10-23",
-      "last_modified_date": "2024-11-21",
+      "cve_id": "CVE-2024-38396",
+      "published_date": "2024-06-16",
+      "last_modified_date": "2025-06-20",
       "base_score": 9.8,
       "severity": "CRITICAL",
-      "description": "iTermSessionLauncher.m in iTerm2 before 3.5.0beta12 does not sanitize paths in x-man-page URLs. They may have shell metacharacters for a /usr/bin/man command line.",
-      "cpe_name": "cpe:2.3:a:iterm2:iterm2:3.4.20:*:*:*:*:*:*:*"
+      "description": "An issue was discovered in iTerm2 3.5.x before 3.5.2. Unfiltered use of an escape sequence to report a window title, in combination with the built-in tmux integration feature (enabled by default), allows an attacker to inject arbitrary code into the terminal, a different vulnerability than CVE-2024-38395.",
+      "cpe_name": "cpe:2.3:a:iterm2:iterm2:3.5.0:-:*:*:*:*:*:*"
     },
     {
-      "cve_id": "CVE-2023-46322",
-      "published_date": "2023-10-23",
-      "last_modified_date": "2024-11-21",
+      "cve_id": "CVE-2024-38395",
+      "published_date": "2024-06-16",
+      "last_modified_date": "2025-06-18",
       "base_score": 9.8,
       "severity": "CRITICAL",
-      "description": "iTermSessionLauncher.m in iTerm2 before 3.5.0beta12 does not sanitize ssh hostnames in URLs. The hostname's initial character may be non-alphanumeric. The hostname's other characters may be outside the set of alphanumeric characters, dash, and period.",
-      "cpe_name": "cpe:2.3:a:iterm2:iterm2:3.4.20:*:*:*:*:*:*:*"
+      "description": "In iTerm2 before 3.5.2, the \"Terminal may report window title\" setting is not honored, and thus remote code execution might occur but \"is not trivially exploitable.\"",
+      "cpe_name": "cpe:2.3:a:iterm2:iterm2:3.5.0:-:*:*:*:*:*:*"
     }
   ]
 }

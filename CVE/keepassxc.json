@@ -1,15 +1,24 @@
 {
   "app_name": "KeePassXC",
-  "last_updated": "2025-06-15",
+  "last_updated": "2025-06-22",
   "vulnerabilities": [
     {
-      "cve_id": "CVE-2023-35866",
-      "published_date": "2023-06-19",
-      "last_modified_date": "2024-12-11",
-      "base_score": 5.5,
+      "cve_id": "CVE-2024-33900",
+      "published_date": "2024-05-20",
+      "last_modified_date": "2025-06-13",
+      "base_score": 6.5,
       "severity": "MEDIUM",
-      "description": "In KeePassXC through 2.7.5, a local attacker can make changes to the Database security settings, including master password and second-factor authentication, within an authenticated KeePassXC Database session, without the need to authenticate these changes by entering the password and/or second-factor authentication to confirm changes. NOTE: the vendor's position is \"asking the user for their password prior to making any changes to the database settings adds no additional protection against a local attacker.\"",
-      "cpe_name": "cpe:2.3:a:keepassxc:keepassxc:2.6.0:beta1:*:*:*:*:*:*"
+      "description": "KeePassXC 2.7.7 allows an attacker (who has the privileges of the victim) to recover cleartext credentials via a memory dump. NOTE: the vendor disputes this because memory-management constraints make this unavoidable in the current design and other realistic designs.",
+      "cpe_name": "cpe:2.3:a:keepassxc:keepassxc:2.7.7:*:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2024-33901",
+      "published_date": "2024-05-20",
+      "last_modified_date": "2025-06-13",
+      "base_score": 6.5,
+      "severity": "MEDIUM",
+      "description": "Issue in KeePassXC 2.7.7 allows an attacker (who has the privileges of the victim) to recover some passwords stored in the .kdbx database via a memory dump. NOTE: the vendor disputes this because memory-management constraints make this unavoidable in the current design and other realistic designs.",
+      "cpe_name": "cpe:2.3:a:keepassxc:keepassxc:2.7.7:*:*:*:*:*:*:*"
     }
   ]
 }
