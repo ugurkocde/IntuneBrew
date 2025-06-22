@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/chrome_remote_desktop_138.0.7204.6.pkg",
   "bundleId": "com.google.GoogleUpdater.wake.system",
   "homepage": "https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai",
-  "fileName": "chrome_remote_desktop_138.0.7204.6.pkg",
+  "fileName": "chromeremotedesktop.dmg",
   "type": "pkg_in_dmg",
   "changelog": "https://support.google.com/chrome/a/answer/7679408",
   "sha": "e49a81884a8d2f0a532ff1f7c0682ed82d96a6b20c5cfcfa1c4d6b8e34245c04",
@@ -19,5 +19,5 @@
     "bundle_id_status": "mismatch",
     "installed_version": "136.0.7103"
   },
-  "previous_version": "137.0.7151.18"
+  "previous_version": "138.0.7204.6"
 }

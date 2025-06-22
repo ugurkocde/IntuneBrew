@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-507-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -120,26 +120,14 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-06-21 00:30 UTC*
+*Last checked: 2025-06-22 00:32 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Highlight | 1.2.117 | 1.2.131 |
-| Binary Ninja | 5.0.7486 | 5.0.7648 |
-| Archaeology | 1.2 | 1.3 |
-| Apifox | 2.7.17 | 2.7.18 |
-| Facebook Messenger | 511.0.0.46.107 | 512.0.0.52.109 |
-| Microsoft Teams | 25122.1207.3700.1444 | 25151.505.3727.5755 |
-| Zed | 0.191.6 | 0.191.7 |
-| Microsoft Edge | 137.0.3296.83 | 137.0.3296.93 |
-| calibre | 8.4.0 | 8.5.0 |
-| Rancher Desktop | 1.19.2 | 1.19.3 |
-| VSCodium | 1.101.03933 | 1.101.14098 |
-| Apidog | 2.7.17 | 2.7.18 |
-| DbGate | 6.5.2 | 6.5.4 |
-| Chrome Remote Desktop | 137.0.7151.18 | 138.0.7204.6 |
+| Proxyman | 5.21.0 | 5.22.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -617,7 +605,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/proton_mail.png' width='32' height='32'> Proton Mail | 1.8.0 |
 | <img src='Logos/proton_pass.png' width='32' height='32'> Proton Pass | 1.31.5 |
 | <img src='Logos/protonvpn.png' width='32' height='32'> ProtonVPN | 5.0.0 |
-| <img src='Logos/proxyman.png' width='32' height='32'> Proxyman | 5.21.0 |
+| <img src='Logos/proxyman.png' width='32' height='32'> Proxyman | 5.22.0 |
 | <img src='Logos/ps_remote_play.png' width='32' height='32'> PS Remote Play | 8.0.0 |
 | <img src='Logos/pulsar.png' width='32' height='32'> Pulsar | 1.128.0 |
 | <img src='Logos/qBittorrent.png' width='32' height='32'> qBittorrent | 5.0.5 |
