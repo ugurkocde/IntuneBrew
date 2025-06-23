@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-507-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -121,13 +121,18 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-06-22 00:32 UTC*
+*Last checked: 2025-06-23 00:31 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Proxyman | 5.21.0 | 5.22.0 |
+| Readest | 0.9.59 | 0.9.60 |
+| DockDoor | 1.17 | 1.17.1 |
+| ChatWise | 0.8.67 | 0.8.68 |
+| DBeaver Community Edition | 25.1.0 | 25.1.1 |
+| Dataflare | 2.0.2 | 2.1.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -314,7 +319,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/canva.png' width='32' height='32'> Canva | 1.110.0 |
 | <img src='Logos/capcut.png' width='32' height='32'> CapCut | 3.3.0.1159 |
 | <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2025.161 |
-| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.8.67 |
+| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.8.68 |
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 138.0.7204.6 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20250430033337 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.03.10.24 |
@@ -337,11 +342,11 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.1.6 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.31 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.9.0 |
-| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.0.2 |
+| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.1.0 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.1.3 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.1.1 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.1.0 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.1.1 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.5.4 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.6.12145056 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
@@ -349,7 +354,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
 | <img src='Logos/discord.png' width='32' height='32'> Discord | 0.0.350 |
 | <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 1.12.4 |
-| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.17 |
+| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.17.1 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.42.1 |
 | <img src='Logos/dockside.png' width='32' height='32'> Dockside | 1.9.54 |
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
@@ -619,7 +624,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rancher_desktop.png' width='32' height='32'> Rancher Desktop | 1.19.3 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 1.100.2 |
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.7.7 |
-| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.59 |
+| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.60 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.13.1 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.87 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.53 |
