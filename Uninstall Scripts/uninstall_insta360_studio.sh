@@ -21,12 +21,12 @@ pkill -f "Insta360 Studio" 2>/dev/null || true
 echo "Stopping application with bundle ID com.insta360.studio if running..."
 killall -9 "com.insta360.studio" 2>/dev/null || true
 
-# Remove $HOME/Library/Application Support/Insta360
-echo "Removing $HOME/Library/Application Support/Insta360..."
-if [ -d "$HOME/Library/Application Support/Insta360" ]; then
-    rm -rf "$HOME/Library/Application Support/Insta360" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/Insta360" ]; then
-    rm -f "$HOME/Library/Application Support/Insta360" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/Insta360/Insta360 Studio
+echo "Removing $HOME/Library/Application Support/Insta360/Insta360 Studio..."
+if [ -d "$HOME/Library/Application Support/Insta360/Insta360 Studio" ]; then
+    rm -rf "$HOME/Library/Application Support/Insta360/Insta360 Studio" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Insta360/Insta360 Studio" ]; then
+    rm -f "$HOME/Library/Application Support/Insta360/Insta360 Studio" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.insta360.studio
@@ -37,12 +37,12 @@ elif [ -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.insta36
     rm -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.insta360.studio" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/Insta360
-echo "Removing $HOME/Library/Caches/Insta360..."
-if [ -d "$HOME/Library/Caches/Insta360" ]; then
-    rm -rf "$HOME/Library/Caches/Insta360" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/Insta360" ]; then
-    rm -f "$HOME/Library/Caches/Insta360" 2>/dev/null || true
+# Remove $HOME/Library/Caches/Insta360/Insta360 Studio
+echo "Removing $HOME/Library/Caches/Insta360/Insta360 Studio..."
+if [ -d "$HOME/Library/Caches/Insta360/Insta360 Studio" ]; then
+    rm -rf "$HOME/Library/Caches/Insta360/Insta360 Studio" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/Insta360/Insta360 Studio" ]; then
+    rm -f "$HOME/Library/Caches/Insta360/Insta360 Studio" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.insta360.studio.savedState

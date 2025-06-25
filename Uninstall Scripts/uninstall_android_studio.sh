@@ -47,28 +47,28 @@ elif [ -f "$HOME/Library/Android/sdk" ]; then
     rm -f "$HOME/Library/Android/sdk" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/Google/AndroidStudio2024.3
-echo "Removing $HOME/Library/Application Support/Google/AndroidStudio2024.3..."
-if [ -d "$HOME/Library/Application Support/Google/AndroidStudio2024.3" ]; then
-    rm -rf "$HOME/Library/Application Support/Google/AndroidStudio2024.3" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/Google/AndroidStudio2024.3" ]; then
-    rm -f "$HOME/Library/Application Support/Google/AndroidStudio2024.3" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/Google/AndroidStudio2025.1
+echo "Removing $HOME/Library/Application Support/Google/AndroidStudio2025.1..."
+if [ -d "$HOME/Library/Application Support/Google/AndroidStudio2025.1" ]; then
+    rm -rf "$HOME/Library/Application Support/Google/AndroidStudio2025.1" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Google/AndroidStudio2025.1" ]; then
+    rm -f "$HOME/Library/Application Support/Google/AndroidStudio2025.1" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/Google/AndroidStudio2024.3
-echo "Removing $HOME/Library/Caches/Google/AndroidStudio2024.3..."
-if [ -d "$HOME/Library/Caches/Google/AndroidStudio2024.3" ]; then
-    rm -rf "$HOME/Library/Caches/Google/AndroidStudio2024.3" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/Google/AndroidStudio2024.3" ]; then
-    rm -f "$HOME/Library/Caches/Google/AndroidStudio2024.3" 2>/dev/null || true
+# Remove $HOME/Library/Caches/Google/AndroidStudio2025.1
+echo "Removing $HOME/Library/Caches/Google/AndroidStudio2025.1..."
+if [ -d "$HOME/Library/Caches/Google/AndroidStudio2025.1" ]; then
+    rm -rf "$HOME/Library/Caches/Google/AndroidStudio2025.1" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/Google/AndroidStudio2025.1" ]; then
+    rm -f "$HOME/Library/Caches/Google/AndroidStudio2025.1" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Logs/Google/AndroidStudio2024.3
-echo "Removing $HOME/Library/Logs/Google/AndroidStudio2024.3..."
-if [ -d "$HOME/Library/Logs/Google/AndroidStudio2024.3" ]; then
-    rm -rf "$HOME/Library/Logs/Google/AndroidStudio2024.3" 2>/dev/null || true
-elif [ -f "$HOME/Library/Logs/Google/AndroidStudio2024.3" ]; then
-    rm -f "$HOME/Library/Logs/Google/AndroidStudio2024.3" 2>/dev/null || true
+# Remove $HOME/Library/Logs/Google/AndroidStudio2025.1
+echo "Removing $HOME/Library/Logs/Google/AndroidStudio2025.1..."
+if [ -d "$HOME/Library/Logs/Google/AndroidStudio2025.1" ]; then
+    rm -rf "$HOME/Library/Logs/Google/AndroidStudio2025.1" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Google/AndroidStudio2025.1" ]; then
+    rm -f "$HOME/Library/Logs/Google/AndroidStudio2025.1" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.android.Emulator.plist
