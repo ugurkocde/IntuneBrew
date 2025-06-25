@@ -1,12 +1,12 @@
 {
   "name": "Dropbox",
   "description": "Client for the Dropbox cloud storage service",
-  "version": "226.4.5094",
-  "url": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20226.4.5094.arm64.dmg",
+  "version": "227.4.4774",
+  "url": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20227.4.4774.arm64.dmg",
   "bundleId": "com.getdropbox.dropbox",
   "homepage": "https://www.dropbox.com/",
-  "fileName": "Dropbox%20226.4.5094.arm64.dmg",
-  "sha": "57a35f103f472b10b55f0a2bfdfa37db725d307739cdca995ecff7d8e2217f26",
+  "fileName": "Dropbox%20227.4.4774.arm64.dmg",
+  "sha": "8a19071673f11a00063b89220eb4f11a61568fbf0b5354a4f0a2988c213d2bb8",
   "changelog": "https://www.dropbox.com/release_notes",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:23:28Z",

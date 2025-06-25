@@ -1,12 +1,12 @@
 {
   "name": "AdGuard",
   "description": "Stand alone ad blocker",
-  "version": "2.17.0.1981",
-  "url": "https://static.adguard.com/mac/release/AdGuard-2.17.0.1981.dmg",
+  "version": "2.17.1.1982",
+  "url": "https://static.adguard.com/mac/release/AdGuard-2.17.1.1982.dmg",
   "bundleId": "com.adguard.mac.adguard-pkg",
   "homepage": "https://adguard.com/",
-  "fileName": "AdGuard-2.17.0.1981.dmg",
-  "sha": "aef49aa5ca815d93d2d75d917115d8b5ae1fdac1f5e3ef2799201a8e8c21772d",
+  "fileName": "AdGuard-2.17.1.1982.dmg",
+  "sha": "289ddc05de7bbcd75b2f8a96b349048a65c27483632819c490f99512d66bdb8a",
   "qa_info": {
     "qa_timestamp": "2025-05-19T07:58:58Z",
     "qa_result": "No .app found in DMG",

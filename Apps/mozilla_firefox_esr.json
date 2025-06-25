@@ -1,11 +1,11 @@
 {
   "name": "Mozilla Firefox ESR",
   "description": "Web browser",
-  "version": "128.11.0",
-  "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.11.0esr/mac/en-US/Firefox%20128.11.0esr.dmg",
+  "version": "128.12.0",
+  "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/128.12.0esr/mac/en-US/Firefox%20128.12.0esr.dmg",
   "bundleId": "org.mozilla.firefox",
   "homepage": "https://www.mozilla.org/en-US/firefox/all/#product-desktop-esr",
-  "fileName": "Firefox%20128.11.0esr.dmg",
-  "sha": "597b6aa298e1d89b0b496053aa483baa5ca9f87c8eace021b9173b9cad4abc4d",
+  "fileName": "Firefox%20128.12.0esr.dmg",
+  "sha": "5cfeda8e02efcaa02b8dd67468378f4b971b6783e0f151b1c683526e0336dd0b",
   "previous_version": "128.11.0"
 }

@@ -1,12 +1,12 @@
 {
   "name": "Notion",
   "description": "App to write, plan, collaborate, and get organised",
-  "version": "4.13.0",
-  "url": "https://desktop-release.notion-static.com/Notion-4.13.0-arm64.dmg",
+  "version": "4.13.1",
+  "url": "https://desktop-release.notion-static.com/Notion-4.13.1-arm64.dmg",
   "bundleId": "notion.id",
   "homepage": "https://www.notion.so/",
-  "fileName": "Notion-4.13.0-arm64.dmg",
-  "sha": "ce783f8dbddf50f0c746d7d28cfa689f0d95506d6bb82b8808b465aae47b4c17",
+  "fileName": "Notion-4.13.1-arm64.dmg",
+  "sha": "8ea1628aef357b9c37fa23236e046e1aa13e4cb823bf21fcec5ba54035f0e07a",
   "changelog": "https://www.notion.so/desktop-release-notes",
   "previous_version": "4.13.0"
 }
