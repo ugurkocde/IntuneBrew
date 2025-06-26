@@ -8,5 +8,5 @@
   "fileName": "powershell-7.5.2-osx-arm64.pkg",
   "sha": "84f095de7ddd62c0b2f1d6dc68efe0b35a0fb90c2fe5127de2b0dd15eab4d95c",
   "changelog": "https://github.com/PowerShell/PowerShell/releases",
-  "previous_version": "7.5.1"
+  "previous_version": "7.5.2"
 }
