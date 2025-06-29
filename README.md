@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-507-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -127,22 +127,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-06-28 00:29 UTC*
+*Last checked: 2025-06-29 00:33 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 141.0b2 | 141.0b3 |
-| ProcessSpy | 1.7.8 | 1.7.9 |
-| Requestly | 25.6.25 | 25.6.27 |
-| Apifox | 2.7.18 | 2.7.19 |
-| ChatWise | 0.8.68 | 0.8.70 |
-| Mozilla Firefox | 140.0.1 | 140.0.2 |
-| Santa | 2025.5 | 2025.6 |
-| Zed | 0.192.6 | 0.192.7 |
-| Apidog | 2.7.18 | 2.7.19 |
-| Philips Hue Sync | 1.12.2.70 | 1.12.3.73 |
+| Lunatask | 2.1.0 | 2.1.1 |
+| LibreWolf | 139.0.4 | 140.0.2 |
+| Notion | 4.14.0 | 4.14.1 |
+| OBS | 31.0.3 | 31.0.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -333,7 +328,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 138.0.7204.6 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20250430033337 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.03.10.24 |
-| <img src='Logos/claude.png' width='32' height='32'> Claude | 0.11.3 |
+| <img src='Logos/claude.png' width='32' height='32'> Claude | 0.11.4 |
 | <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.1.1 |
 | <img src='Logos/cleanshot.png' width='32' height='32'> CleanShot | 4.8 |
 | <img src='Logos/clion.png' width='32' height='32'> CLion | 2025.1.3 |
@@ -428,7 +423,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/google_ads_editor.png' width='32' height='32'> Google Ads Editor | 2.9 |
 | <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 138.0.7204.50 |
 | <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 110.0.2 |
-| <img src='Logos/goose.png' width='32' height='32'> Goose | 1.0.29 |
+| <img src='Logos/goose.png' width='32' height='32'> Goose | 1.0.30 |
 | <img src='Logos/gpt_fdisk.png' width='32' height='32'> GPT fdisk | 1.0.10 |
 | <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.124.1.0 |
 | <img src='Logos/grandperspective.png' width='32' height='32'> GrandPerspective | 3.5.3 |
@@ -483,7 +478,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/last_window_quits.png' width='32' height='32'> Last Window Quits | 1.1.4 |
 | <img src='Logos/lens.png' width='32' height='32'> Lens | 2025.6.21515 |
 | <img src='Logos/libreoffice.png' width='32' height='32'> LibreOffice | 25.2.4 |
-| <img src='Logos/librewolf.png' width='32' height='32'> LibreWolf | 139.0.4 |
+| <img src='Logos/librewolf.png' width='32' height='32'> LibreWolf | 140.0.2 |
 | <img src='Logos/little_snitch.png' width='32' height='32'> Little Snitch | 6.2.3 |
 | <img src='Logos/lm_studio.png' width='32' height='32'> LM Studio | 0.3.17 |
 | <img src='Logos/LocalSend.png' width='32' height='32'> LocalSend | 1.17.0 |
@@ -492,7 +487,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 1.13.4 |
 | <img src='Logos/loop.png' width='32' height='32'> Loop | 1.2.0 |
 | <img src='Logos/lulu.png' width='32' height='32'> LuLu | 3.1.5 |
-| <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.0 |
+| <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.1 |
 | <img src='Logos/löve.png' width='32' height='32'> LÖVE | 11.5 |
 | <img src='Logos/maccy.png' width='32' height='32'> Maccy | 2.3.0 |
 | <img src='Logos/macdown.png' width='32' height='32'> MacDown | 0.7.2 |
@@ -500,7 +495,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/macpass.png' width='32' height='32'> MacPass | 0.8.1 |
 | <img src='Logos/macs_fan_control.png' width='32' height='32'> Macs Fan Control | 1.5.18 |
 | <img src='Logos/mactex.png' width='32' height='32'> MacTeX | 2025.0308 |
-| <img src='Logos/macwhisper.png' width='32' height='32'> MacWhisper | 12.12 |
+| <img src='Logos/macwhisper.png' width='32' height='32'> MacWhisper | 12.12.2 |
 | <img src='Logos/maestral.png' width='32' height='32'> Maestral | 1.9.4 |
 | <img src='Logos/magicquit.png' width='32' height='32'> MagicQuit | 1.4 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.15.2.3152 |
@@ -559,7 +554,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/nosql_workbench.png' width='32' height='32'> NoSQL Workbench | 3.13.6 |
 | <img src='Logos/nota_gyazo_gif.png' width='32' height='32'> Nota Gyazo GIF | 9.11.1 |
 | <img src='Logos/notesollama.png' width='32' height='32'> NotesOllama | 0.2.6 |
-| <img src='Logos/notion.png' width='32' height='32'> Notion | 4.14.0 |
+| <img src='Logos/notion.png' width='32' height='32'> Notion | 4.14.1 |
 | <img src='Logos/notion_calendar.png' width='32' height='32'> Notion Calendar | 1.130.0 |
 | <img src='Logos/notunes.png' width='32' height='32'> noTunes | 3.5 |
 | <img src='Logos/noun_project.png' width='32' height='32'> Noun Project | 2.3 |
@@ -567,7 +562,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/nucleo.png' width='32' height='32'> Nucleo | 4.1.6 |
 | <img src='Logos/nudge.png' width='32' height='32'> Nudge | 2.0.12.81807 |
 | <img src='Logos/nvidia_geforce_now.png' width='32' height='32'> NVIDIA GeForce NOW | 2.0.75.146 |
-| <img src='Logos/obs.png' width='32' height='32'> OBS | 31.0.3 |
+| <img src='Logos/obs.png' width='32' height='32'> OBS | 31.0.4 |
 | <img src='Logos/obsidian.png' width='32' height='32'> Obsidian | 1.8.10 |
 | <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.91.0 |
 | <img src='Logos/ollama.png' width='32' height='32'> Ollama | 0.9.2 |
@@ -733,6 +728,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/vlc_media_player.png' width='32' height='32'> VLC media player | 3.0.21 |
 | <img src='Logos/vscodium.png' width='32' height='32'> VSCodium | 1.101.24242 |
 | <img src='Logos/wave_terminal.png' width='32' height='32'> Wave Terminal | 0.11.3 |
+| ❌ Webex | 45.6.1.32593 |
 | <img src='Logos/webex_teams.png' width='32' height='32'> Webex Teams | 45.6.1.32593 |
 | <img src='Logos/webstorm.png' width='32' height='32'> WebStorm | 2025.1.3 |
 | <img src='Logos/wechat_for_mac.png' width='32' height='32'> WeChat for Mac | 4.0.5.27 |
