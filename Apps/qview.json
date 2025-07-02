@@ -1,11 +1,11 @@
 {
   "name": "qView",
   "description": "Image viewer",
-  "version": "6.1",
-  "url": "https://github.com/jurplel/qView/releases/download/6.1/qView-6.1.dmg",
+  "version": "7.0",
+  "url": "https://github.com/jurplel/qView/releases/download/7.0/qView-7.0.dmg",
   "bundleId": "com.interversehq.qView",
   "homepage": "https://github.com/jurplel/qView/",
-  "fileName": "qView-6.1.dmg",
-  "sha": "e407b0f2fdd208ec72778feda0c34dcd12bc28420f9d5abd07e9287c1c91656a",
+  "fileName": "qView-7.0.dmg",
+  "sha": "87a27f000dff7aed3e63a3da55a0a0f33637aec3b29556e5283de7a3e393a58b",
   "previous_version": "6.1"
 }

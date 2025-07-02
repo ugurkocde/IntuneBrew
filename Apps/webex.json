@@ -1,11 +1,11 @@
 {
   "name": "Webex",
   "description": "Video communication and virtual meeting platform",
-  "version": "45.6.1.32593",
+  "version": "45.7.0.32689",
   "url": "https://binaries.webex.com/webex-macos-apple-silicon/Webex.dmg",
   "bundleId": null,
   "homepage": "https://www.webex.com/",
   "fileName": "Webex.dmg",
-  "sha": "c8776beba7150d31ade8f50f86305d6eaaa5c600dfe165780cd6ff2c29b3b63d",
+  "sha": "9f2d1384676c48d8fa98cd7a83839cb46898517710956c2190b8461f06db327d",
   "previous_version": "45.6.1.32593"
 }

@@ -1,11 +1,11 @@
 {
   "name": "Proton Pass",
   "description": "Desktop client for Proton Pass",
-  "version": "1.32.0",
-  "url": "https://proton.me/download/PassDesktop/darwin/universal/ProtonPass_1.32.0.dmg",
+  "version": "1.32.2",
+  "url": "https://proton.me/download/PassDesktop/darwin/universal/ProtonPass_1.32.2.dmg",
   "bundleId": "me.proton.pass.electron",
   "homepage": "https://proton.me/pass",
-  "fileName": "ProtonPass_1.32.0.dmg",
-  "sha": "b3ca8d82007681fe66a6679132d5f9d7a9e91a10184857cd1257b2b9ba380254",
+  "fileName": "ProtonPass_1.32.2.dmg",
+  "sha": "3f7ffd950d08a0317950c991fe267727d7c90889884c2bf78ca94b2d33f42b0a",
   "previous_version": "1.32.0"
 }
