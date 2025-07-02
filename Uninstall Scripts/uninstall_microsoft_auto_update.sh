@@ -47,6 +47,14 @@ killall -9 "com.microsoft.autoupdate2" 2>/dev/null || true
 echo "Stopping application with bundle ID com.microsoft.errorreporting if running..."
 killall -9 "com.microsoft.errorreporting" 2>/dev/null || true
 
+# Remove $HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.oneauth
+echo "Removing $HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.oneauth..."
+if [ -d "$HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.oneauth" ]; then
+    rm -rf "$HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.oneauth" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.oneauth" ]; then
+    rm -f "$HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.oneauth" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Microsoft AutoUpdate
 echo "Removing $HOME/Library/Application Support/Microsoft AutoUpdate..."
 if [ -d "$HOME/Library/Application Support/Microsoft AutoUpdate" ]; then
@@ -103,6 +111,22 @@ elif [ -f "$HOME/Library/Cookies/com.microsoft.autoupdate2.binarycookies" ]; the
     rm -f "$HOME/Library/Cookies/com.microsoft.autoupdate2.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Group Containers/UBF8T346G9.com.microsoft.oneauth
+echo "Removing $HOME/Library/Group Containers/UBF8T346G9.com.microsoft.oneauth..."
+if [ -d "$HOME/Library/Group Containers/UBF8T346G9.com.microsoft.oneauth" ]; then
+    rm -rf "$HOME/Library/Group Containers/UBF8T346G9.com.microsoft.oneauth" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/UBF8T346G9.com.microsoft.oneauth" ]; then
+    rm -f "$HOME/Library/Group Containers/UBF8T346G9.com.microsoft.oneauth" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/UBF8T346G9.ms
+echo "Removing $HOME/Library/Group Containers/UBF8T346G9.ms..."
+if [ -d "$HOME/Library/Group Containers/UBF8T346G9.ms" ]; then
+    rm -rf "$HOME/Library/Group Containers/UBF8T346G9.ms" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/UBF8T346G9.ms" ]; then
+    rm -f "$HOME/Library/Group Containers/UBF8T346G9.ms" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.microsoft.autoupdate.fba
 echo "Removing $HOME/Library/HTTPStorages/com.microsoft.autoupdate.fba..."
 if [ -d "$HOME/Library/HTTPStorages/com.microsoft.autoupdate.fba" ]; then
@@ -133,6 +157,14 @@ if [ -d "$HOME/Library/Preferences/com.microsoft.autoupdate2.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.microsoft.autoupdate2.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.microsoft.autoupdate2.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.microsoft.autoupdate2.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.microsoft.shared.plist
+echo "Removing $HOME/Library/Preferences/com.microsoft.shared.plist..."
+if [ -d "$HOME/Library/Preferences/com.microsoft.shared.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.microsoft.shared.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.microsoft.shared.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.microsoft.shared.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.microsoft.autoupdate2.savedState
