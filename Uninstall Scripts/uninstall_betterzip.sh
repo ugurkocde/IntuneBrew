@@ -25,12 +25,44 @@ elif [ -f "/Applications/BetterZip.app" ]; then
     rm -f "/Applications/BetterZip.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip
+echo "Removing $HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip..."
+if [ -d "$HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip" ]; then
+    rm -rf "$HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip" ]; then
+    rm -f "$HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip-setapp
+echo "Removing $HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip-setapp..."
+if [ -d "$HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip-setapp" ]; then
+    rm -rf "$HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip-setapp" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip-setapp" ]; then
+    rm -f "$HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip-setapp" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.macitbetter.betterzip.Compress-with-BetterZip
+echo "Removing $HOME/Library/Application Scripts/com.macitbetter.betterzip.Compress-with-BetterZip..."
+if [ -d "$HOME/Library/Application Scripts/com.macitbetter.betterzip.Compress-with-BetterZip" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.macitbetter.betterzip.Compress-with-BetterZip" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.macitbetter.betterzip.Compress-with-BetterZip" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.macitbetter.betterzip.Compress-with-BetterZip" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/com.macitbetter.betterzip.findersyncextension
 echo "Removing $HOME/Library/Application Scripts/com.macitbetter.betterzip.findersyncextension..."
 if [ -d "$HOME/Library/Application Scripts/com.macitbetter.betterzip.findersyncextension" ]; then
     rm -rf "$HOME/Library/Application Scripts/com.macitbetter.betterzip.findersyncextension" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/com.macitbetter.betterzip.findersyncextension" ]; then
     rm -f "$HOME/Library/Application Scripts/com.macitbetter.betterzip.findersyncextension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.macitbetter.betterzip.Quick-Look-Extension
+echo "Removing $HOME/Library/Application Scripts/com.macitbetter.betterzip.Quick-Look-Extension..."
+if [ -d "$HOME/Library/Application Scripts/com.macitbetter.betterzip.Quick-Look-Extension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.macitbetter.betterzip.Quick-Look-Extension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.macitbetter.betterzip.Quick-Look-Extension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.macitbetter.betterzip.Quick-Look-Extension" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macitbetter.betterzip.sfl*
@@ -103,6 +135,14 @@ if [ -d "$HOME/Library/Group Containers/79RR9LPM2N.group.com.macitbetter.betterz
     rm -rf "$HOME/Library/Group Containers/79RR9LPM2N.group.com.macitbetter.betterzip-setapp" 2>/dev/null || true
 elif [ -f "$HOME/Library/Group Containers/79RR9LPM2N.group.com.macitbetter.betterzip-setapp" ]; then
     rm -f "$HOME/Library/Group Containers/79RR9LPM2N.group.com.macitbetter.betterzip-setapp" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.macitbetter.betterzip
+echo "Removing $HOME/Library/HTTPStorages/com.macitbetter.betterzip..."
+if [ -d "$HOME/Library/HTTPStorages/com.macitbetter.betterzip" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.macitbetter.betterzip" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.macitbetter.betterzip" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.macitbetter.betterzip" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.macitbetter.betterzip.plist
