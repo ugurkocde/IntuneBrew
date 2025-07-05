@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -133,23 +133,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-07-04 00:31 UTC*
+*Last checked: 2025-07-05 00:28 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Rocket.Chat | 4.7.0 | 4.7.1 |
-| AdGuard | 2.17.1.1982 | 2.17.2.1984 |
-| Trae | 1.0.15076 | 1.0.15133 |
-| WeChat for Mac | 4.0.6.16 | 4.0.6.17 |
-| Citrix Workspace | 25.03.10.24 | 25.05.0.58 |
-| Jetbrains PyCharm Community Edition | 2025.1.2 | 2025.1.3 |
-| iMazing | 3.3.0 | 3.3.1 |
-| Bruno | 2.6.1 | 2.7.0 |
-| Windsurf | 1.10.6 | 1.10.7 |
-| Privileges | 2.3.0 | 2.4.0 |
-| Amazon Q | 1.12.2 | 1.12.3 |
+| Mozilla Firefox Developer Edition | 141.0b5 | 141.0b6 |
+| Microsoft Teams | 25151.505.3727.5755 | 25163.3001.3726.6503 |
+| DbGate | 6.5.4 | 6.5.5 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -306,10 +299,10 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/basecamp.png' width='32' height='32'> Basecamp | 3 |
 | <img src='Logos/batfi.png' width='32' height='32'> BatFi | 2.4.2 |
 | <img src='Logos/bbedit.png' width='32' height='32'> BBEdit | 15.5.1 |
-| <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.0.779 |
+| <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.0.821 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 3.5.6 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.6 |
-| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 5.513 |
+| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 5.515 |
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 5.3.4 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.1.0.31016 |
 | <img src='Logos/binary_ninja.png' width='32' height='32'> Binary Ninja | 5.0.7648 |
@@ -364,7 +357,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.1.2 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
 | <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.1.1 |
-| <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.5.4 |
+| <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.5.5 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.6.12145056 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
 | <img src='Logos/devtoys.png' width='32' height='32'> DevToys | 2.0.8.0 |
@@ -435,7 +428,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/google_ads_editor.png' width='32' height='32'> Google Ads Editor | 2.9 |
 | <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 138.0.7204.93 |
 | <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 110.0.2 |
-| <img src='Logos/goose.png' width='32' height='32'> Goose | 1.0.31 |
+| <img src='Logos/goose.png' width='32' height='32'> Goose | 1.0.32 |
 | <img src='Logos/gpt_fdisk.png' width='32' height='32'> GPT fdisk | 1.0.10 |
 | <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.125.0.0 |
 | <img src='Logos/grandperspective.png' width='32' height='32'> GrandPerspective | 3.5.3 |
@@ -507,7 +500,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/macpass.png' width='32' height='32'> MacPass | 0.8.1 |
 | <img src='Logos/macs_fan_control.png' width='32' height='32'> Macs Fan Control | 1.5.18 |
 | <img src='Logos/mactex.png' width='32' height='32'> MacTeX | 2025.0308 |
-| <img src='Logos/macwhisper.png' width='32' height='32'> MacWhisper | 12.12.2 |
+| <img src='Logos/macwhisper.png' width='32' height='32'> MacWhisper | 12.13 |
 | <img src='Logos/maestral.png' width='32' height='32'> Maestral | 1.9.4 |
 | <img src='Logos/magicquit.png' width='32' height='32'> MagicQuit | 1.4 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.15.2.3152 |
@@ -524,7 +517,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/microsoft_azure_storage_explorer.png' width='32' height='32'> Microsoft Azure Storage Explorer | 1.39.0 |
 | <img src='Logos/microsoft_edge.png' width='32' height='32'> Microsoft Edge | 138.0.3351.65 |
 | <img src='Logos/microsoft_office.png' width='32' height='32'> Microsoft Office | 16.98.25060824 |
-| <img src='Logos/microsoft_teams.png' width='32' height='32'> Microsoft Teams | 25151.505.3727.5755 |
+| <img src='Logos/microsoft_teams.png' width='32' height='32'> Microsoft Teams | 25163.3001.3726.6503 |
 | <img src='Logos/microsoft_visual_studio_code.png' width='32' height='32'> Microsoft Visual Studio Code | 1.101.2 |
 | <img src='Logos/middle.png' width='32' height='32'> Middle | 1.10 |
 | <img src='Logos/middleclick.png' width='32' height='32'> MiddleClick | 3.1.0 |
@@ -544,7 +537,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/mounty_for_ntfs.png' width='32' height='32'> Mounty for NTFS | 2.4 |
 | <img src='Logos/mouseless.png' width='32' height='32'> mouseless | 0.3.1 |
 | <img src='Logos/mozilla_firefox.png' width='32' height='32'> Mozilla Firefox | 140.0.2 |
-| <img src='Logos/mozilla_firefox_developer_edition.png' width='32' height='32'> Mozilla Firefox Developer Edition | 141.0b5 |
+| <img src='Logos/mozilla_firefox_developer_edition.png' width='32' height='32'> Mozilla Firefox Developer Edition | 141.0b6 |
 | <img src='Logos/mozilla_firefox_esr.png' width='32' height='32'> Mozilla Firefox ESR | 128.12.0 |
 | <img src='Logos/mozilla_thunderbird.png' width='32' height='32'> Mozilla Thunderbird | 140.0 |
 | <img src='Logos/multi.png' width='32' height='32'> Multi | 0.538.2 |
@@ -617,7 +610,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/popchar_x.png' width='32' height='32'> PopChar X | 10.4 |
 | <img src='Logos/portx.png' width='32' height='32'> portx | 2.2.12 |
 | <img src='Logos/postico.png' width='32' height='32'> Postico | 2.1.2 |
-| <img src='Logos/postman.png' width='32' height='32'> Postman | 11.51.5 |
+| <img src='Logos/postman.png' width='32' height='32'> Postman | 11.52.5 |
 | <img src='Logos/powershell.png' width='32' height='32'> PowerShell | 7.5.2 |
 | <img src='Logos/principle.png' width='32' height='32'> Principle | 6.39 |
 | <img src='Logos/privileges.png' width='32' height='32'> Privileges | 2.4.0 |
@@ -687,7 +680,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sqlpro_for_sqlite.png' width='32' height='32'> SQLPro for SQLite | 2025.07 |
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2025.10 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
-| <img src='Logos/starface.png' width='32' height='32'> Starface | 9.1.0 |
+| <img src='Logos/starface.png' width='32' height='32'> Starface | 9.2.0 |
 | <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.45 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 4.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.4 |
