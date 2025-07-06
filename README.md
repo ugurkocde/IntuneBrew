@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -134,15 +134,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-07-05 00:28 UTC*
+*Last checked: 2025-07-06 00:33 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 141.0b5 | 141.0b6 |
-| Microsoft Teams | 25151.505.3727.5755 | 25163.3001.3726.6503 |
-| DbGate | 6.5.4 | 6.5.5 |
+| Apifox | 2.7.19 | 2.7.20 |
+| Anki | 25.02.7 | 25.07.1 |
+| Apidog | 2.7.19 | 2.7.20 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -272,12 +273,12 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/amazon_q.png' width='32' height='32'> Amazon Q | 1.12.3 |
 | <img src='Logos/android_studio.png' width='32' height='32'> Android Studio | 2025.1.1.13 |
 | <img src='Logos/angry_ip_scanner.png' width='32' height='32'> Angry IP Scanner | 3.9.1 |
-| <img src='Logos/anki.png' width='32' height='32'> Anki | 25.02.7 |
+| <img src='Logos/anki.png' width='32' height='32'> Anki | 25.07.1 |
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.0.2 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.19 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.19 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.20 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.20 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 2.2 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.101.1 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.3 |
