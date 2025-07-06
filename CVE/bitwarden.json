@@ -1,6 +1,6 @@
 {
   "app_name": "Bitwarden",
-  "last_updated": "2025-06-29",
+  "last_updated": "2025-07-06",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2023-38840",

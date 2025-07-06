@@ -1,6 +1,6 @@
 {
   "app_name": "NordVPN",
-  "last_updated": "2025-06-29",
+  "last_updated": "2025-07-06",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2018-3952",
