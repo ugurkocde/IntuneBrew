@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -135,15 +135,15 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-07-06 00:33 UTC*
+*Last checked: 2025-07-07 00:32 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Apifox | 2.7.19 | 2.7.20 |
-| Anki | 25.02.7 | 25.07.1 |
-| Apidog | 2.7.19 | 2.7.20 |
+| DBeaver Community Edition | 25.1.1 | 25.1.2 |
+| Stats | 2.11.45 | 2.11.46 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -357,7 +357,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.1.3 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.1.2 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.1.1 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.1.2 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.5.5 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.6.12145056 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
@@ -376,7 +376,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/drivedx.png' width='32' height='32'> DriveDX | 1.12.1 |
 | <img src='Logos/dropbox.png' width='32' height='32'> Dropbox | 227.4.4774 |
 | <img src='Logos/dropdmg.png' width='32' height='32'> DropDMG | 3.6.9 |
-| <img src='Logos/dropshare.png' width='32' height='32'> Dropshare | 6.3 |
+| <img src='Logos/dropshare.png' width='32' height='32'> Dropshare | 6.4 |
 | <img src='Logos/duckduckgo.png' width='32' height='32'> DuckDuckGo | 1.145.1 |
 | <img src='Logos/easydict.png' width='32' height='32'> Easydict | 2.14.1 |
 | <img src='Logos/easyfind.png' width='32' height='32'> EasyFind | 5.0.2 |
@@ -475,7 +475,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/keka.png' width='32' height='32'> Keka | 1.5.2 |
 | <img src='Logos/keybase.png' width='32' height='32'> Keybase | 6.5.1 |
 | <img src='Logos/keycastr.png' width='32' height='32'> KeyCastr | 0.10.3 |
-| <img src='Logos/keyclu.png' width='32' height='32'> KeyClu | 0.30.1 |
+| <img src='Logos/keyclu.png' width='32' height='32'> KeyClu | 0.30.2 |
 | <img src='Logos/kitty.png' width='32' height='32'> kitty | 0.42.1 |
 | <img src='Logos/klokki.png' width='32' height='32'> Klokki | 1.3.7 |
 | <img src='Logos/krisp.png' width='32' height='32'> Krisp | 3.3.8 |
@@ -682,7 +682,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2025.10 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 9.2.0 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.45 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.46 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 4.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.4 |
 | <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.17.2 |
