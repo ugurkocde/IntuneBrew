@@ -1,12 +1,12 @@
 {
   "name": "Geany",
   "description": "Small and lightweight IDE",
-  "version": "2.0",
-  "url": "https://download.geany.org/geany-2.0_osx_arm64.dmg",
+  "version": "2.1",
+  "url": "https://download.geany.org/geany-2.1_osx_arm64.dmg",
   "bundleId": "org.geany.geany",
   "homepage": "https://www.geany.org/",
-  "fileName": "geany-2.0_osx_arm64.dmg",
-  "sha": "1d383519d5ef7d3a2d17483a816250776158bfc26590aa4914f8634d81f112d7",
+  "fileName": "geany-2.1_osx_arm64.dmg",
+  "sha": "13d6f0977c784193ffc1bad05e1a8b77f14f2a71f37ab158c788d33cb6203f80",
   "changelog": "https://www.geany.org/documentation/releasenotes/",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:15:53Z",
