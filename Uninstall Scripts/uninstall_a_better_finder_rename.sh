@@ -41,36 +41,52 @@ elif [ -f "$HOME/Library/Caches/com.apple.helpd/Generated/net.publicspace.abfr12
     rm -f "$HOME/Library/Caches/com.apple.helpd/Generated/net.publicspace.abfr12.help*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/net.publicspace.abfr12
-echo "Removing $HOME/Library/Caches/net.publicspace.abfr12..."
-if [ -d "$HOME/Library/Caches/net.publicspace.abfr12" ]; then
-    rm -rf "$HOME/Library/Caches/net.publicspace.abfr12" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/net.publicspace.abfr12" ]; then
-    rm -f "$HOME/Library/Caches/net.publicspace.abfr12" 2>/dev/null || true
+# Remove $HOME/Library/Caches/net.publicspace.abfr*
+echo "Removing $HOME/Library/Caches/net.publicspace.abfr*..."
+if [ -d "$HOME/Library/Caches/net.publicspace.abfr*" ]; then
+    rm -rf "$HOME/Library/Caches/net.publicspace.abfr*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/net.publicspace.abfr*" ]; then
+    rm -f "$HOME/Library/Caches/net.publicspace.abfr*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Cookies/net.publicspace.abfr12.binarycookies
-echo "Removing $HOME/Library/Cookies/net.publicspace.abfr12.binarycookies..."
-if [ -d "$HOME/Library/Cookies/net.publicspace.abfr12.binarycookies" ]; then
-    rm -rf "$HOME/Library/Cookies/net.publicspace.abfr12.binarycookies" 2>/dev/null || true
-elif [ -f "$HOME/Library/Cookies/net.publicspace.abfr12.binarycookies" ]; then
-    rm -f "$HOME/Library/Cookies/net.publicspace.abfr12.binarycookies" 2>/dev/null || true
+# Remove $HOME/Library/Cookies/net.publicspace.abfr*.binarycookies
+echo "Removing $HOME/Library/Cookies/net.publicspace.abfr*.binarycookies..."
+if [ -d "$HOME/Library/Cookies/net.publicspace.abfr*.binarycookies" ]; then
+    rm -rf "$HOME/Library/Cookies/net.publicspace.abfr*.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/Cookies/net.publicspace.abfr*.binarycookies" ]; then
+    rm -f "$HOME/Library/Cookies/net.publicspace.abfr*.binarycookies" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/net.publicspace.abfr12.plist
-echo "Removing $HOME/Library/Preferences/net.publicspace.abfr12.plist..."
-if [ -d "$HOME/Library/Preferences/net.publicspace.abfr12.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/net.publicspace.abfr12.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/net.publicspace.abfr12.plist" ]; then
-    rm -f "$HOME/Library/Preferences/net.publicspace.abfr12.plist" 2>/dev/null || true
+# Remove $HOME/Library/HTTPStorages/net.publicspace.abfr*
+echo "Removing $HOME/Library/HTTPStorages/net.publicspace.abfr*..."
+if [ -d "$HOME/Library/HTTPStorages/net.publicspace.abfr*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/net.publicspace.abfr*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/net.publicspace.abfr*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/net.publicspace.abfr*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Saved Application State/net.publicspace.abfr12.savedState
-echo "Removing $HOME/Library/Saved Application State/net.publicspace.abfr12.savedState..."
-if [ -d "$HOME/Library/Saved Application State/net.publicspace.abfr12.savedState" ]; then
-    rm -rf "$HOME/Library/Saved Application State/net.publicspace.abfr12.savedState" 2>/dev/null || true
-elif [ -f "$HOME/Library/Saved Application State/net.publicspace.abfr12.savedState" ]; then
-    rm -f "$HOME/Library/Saved Application State/net.publicspace.abfr12.savedState" 2>/dev/null || true
+# Remove $HOME/Library/HTTPStorages/net.publicspace.abfr*.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/net.publicspace.abfr*.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/net.publicspace.abfr*.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/net.publicspace.abfr*.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/net.publicspace.abfr*.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/net.publicspace.abfr*.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/net.publicspace.abfr*.plist
+echo "Removing $HOME/Library/Preferences/net.publicspace.abfr*.plist..."
+if [ -d "$HOME/Library/Preferences/net.publicspace.abfr*.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/net.publicspace.abfr*.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/net.publicspace.abfr*.plist" ]; then
+    rm -f "$HOME/Library/Preferences/net.publicspace.abfr*.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Saved Application State/net.publicspace.abfr*.savedState
+echo "Removing $HOME/Library/Saved Application State/net.publicspace.abfr*.savedState..."
+if [ -d "$HOME/Library/Saved Application State/net.publicspace.abfr*.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/net.publicspace.abfr*.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/net.publicspace.abfr*.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/net.publicspace.abfr*.savedState" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
