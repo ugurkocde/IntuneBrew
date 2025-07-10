@@ -1,12 +1,12 @@
 {
   "name": "Cryptomator",
   "description": "Multi-platform client-side cloud file encryption tool",
-  "version": "1.17.0",
-  "url": "https://github.com/cryptomator/cryptomator/releases/download/1.17.0/Cryptomator-1.17.0-arm64.dmg",
+  "version": "1.17.1",
+  "url": "https://github.com/cryptomator/cryptomator/releases/download/1.17.1/Cryptomator-1.17.1-arm64.dmg",
   "bundleId": "org.cryptomator",
   "homepage": "https://cryptomator.org/",
-  "fileName": "Cryptomator-1.17.0-arm64.dmg",
-  "sha": "03f45e203204e93b39925cbb04e19c9316da4f77debaba4fb5071f0ec8e727e8",
+  "fileName": "Cryptomator-1.17.1-arm64.dmg",
+  "sha": "34c75e5f744bcedb96cf900a7e73ae96a5b39568a2e0994a1239fc59b31bc0d5",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:27:25Z",
     "qa_result": "Installation successful and verified",
