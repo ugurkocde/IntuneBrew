@@ -1,12 +1,12 @@
 {
   "name": "Facebook Messenger",
   "description": "Native desktop app for Messenger (formerly Facebook Messenger)",
-  "version": "512.0.0.52.109",
+  "version": "515.0.0.40.107",
   "url": "https://www.messenger.com/messenger/desktop/downloadV2/?platform=mac&variant=catalyst",
   "bundleId": "com.facebook.archon.developerID",
   "homepage": "https://www.messenger.com/desktop",
   "fileName": "?platform=mac&variant=catalyst",
-  "sha": "277736d75cebcc5b123015435ad76c60dbea512f4761277ea402b1f305695731",
+  "sha": "a8ec73f8fba8aa5278c0efe7edb521a8993d8766ad6e2f73211e77cb189f6b96",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:11:04Z",
     "qa_result": "Installation failed",

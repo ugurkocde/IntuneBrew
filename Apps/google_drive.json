@@ -1,12 +1,12 @@
 {
   "name": "Google Drive",
   "description": "Client for the Google Drive storage service",
-  "version": "110.0.2",
+  "version": "111.0.2",
   "url": "https://dl.google.com/drive-file-stream/5-percent/GoogleDrive.dmg",
   "bundleId": "com.google.pkg.Keystone",
   "homepage": "https://www.google.com/drive/",
   "fileName": "GoogleDrive.dmg",
-  "sha": "d38c4a1342a907cd6d7b3b51bd039734c5dc355f81dfb64fa3dbb54464dd36ea",
+  "sha": "4149ccbed3a57d62dd43301887ea32d95d505a724cc402aebd3628d72f6879f4",
   "changelog": "https://support.google.com/drive/answer/2375082",
-  "previous_version": "110.0.2"
+  "previous_version": "111.0.2"
 }
