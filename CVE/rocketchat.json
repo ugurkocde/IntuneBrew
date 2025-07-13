@@ -1,7 +1,16 @@
 {
   "app_name": "Rocket.Chat",
-  "last_updated": "2025-07-06",
+  "last_updated": "2025-07-13",
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2025-5892",
+      "published_date": "2025-06-09",
+      "last_modified_date": "2025-07-10",
+      "base_score": 4.3,
+      "severity": "MEDIUM",
+      "description": "A vulnerability, which was classified as problematic, has been found in RocketChat up to 7.6.1. This issue affects the function parseMessage of the file /apps/meteor/app/irc/server/servers/RFC2813/parseMessage.js. The manipulation of the argument line leads to inefficient regular expression complexity. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
+      "cpe_name": "cpe:2.3:a:rocket.chat:rocket.chat:6.10.1:*:*:*:*:*:*:*"
+    },
     {
       "cve_id": "CVE-2024-46934",
       "published_date": "2024-09-25",
@@ -36,15 +45,6 @@
       "base_score": 5.4,
       "severity": "MEDIUM",
       "description": "The Electron desktop application of Rocket.Chat through 6.3.4 allows stored XSS via links in an uploaded file, related to failure to use a separate browser upon encountering third-party external actions from PDF documents.",
-      "cpe_name": "cpe:2.3:a:rocket.chat:rocket.chat:6.3.4:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2024-39713",
-      "published_date": "2024-08-05",
-      "last_modified_date": "2024-09-06",
-      "base_score": 8.6,
-      "severity": "HIGH",
-      "description": "A Server-Side Request Forgery (SSRF) affects Rocket.Chat's Twilio webhook endpoint before version 6.10.1.",
       "cpe_name": "cpe:2.3:a:rocket.chat:rocket.chat:6.3.4:*:*:*:*:*:*:*"
     }
   ]

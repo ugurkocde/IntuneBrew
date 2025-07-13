@@ -1,51 +1,42 @@
 {
   "app_name": "PowerShell",
-  "last_updated": "2025-07-06",
+  "last_updated": "2025-07-13",
   "vulnerabilities": [
     {
-      "cve_id": "CVE-2024-30045",
-      "published_date": "2024-05-14",
-      "last_modified_date": "2025-01-08",
-      "base_score": 6.3,
-      "severity": "MEDIUM",
-      "description": ".NET and Visual Studio Remote Code Execution Vulnerability",
-      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.4.2:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2024-21409",
-      "published_date": "2024-04-09",
-      "last_modified_date": "2025-01-17",
-      "base_score": 7.3,
-      "severity": "HIGH",
-      "description": ".NET, .NET Framework, and Visual Studio Remote Code Execution Vulnerability",
-      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.4.1:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2024-26190",
-      "published_date": "2024-03-12",
-      "last_modified_date": "2024-12-27",
+      "cve_id": "CVE-2025-30399",
+      "published_date": "2025-06-13",
+      "last_modified_date": "2025-07-10",
       "base_score": 7.5,
       "severity": "HIGH",
-      "description": "Microsoft QUIC Denial of Service Vulnerability",
-      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.4.1:*:*:*:*:*:*:*"
+      "description": "Untrusted search path in .NET and Visual Studio allows an unauthorized attacker to execute code over a network.",
+      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.5:-:*:*:*:*:*:*"
     },
     {
-      "cve_id": "CVE-2024-21392",
-      "published_date": "2024-03-12",
-      "last_modified_date": "2024-11-29",
+      "cve_id": "CVE-2025-21171",
+      "published_date": "2025-01-14",
+      "last_modified_date": "2025-07-10",
+      "base_score": 7.5,
+      "severity": "HIGH",
+      "description": ".NET Remote Code Execution Vulnerability",
+      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.5:-:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2022-34716",
+      "published_date": "2022-08-09",
+      "last_modified_date": "2025-05-29",
+      "base_score": 5.9,
+      "severity": "MEDIUM",
+      "description": ".NET Spoofing Vulnerability",
+      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.0.10:*:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2022-23267",
+      "published_date": "2022-05-10",
+      "last_modified_date": "2025-01-02",
       "base_score": 7.5,
       "severity": "HIGH",
       "description": ".NET and Visual Studio Denial of Service Vulnerability",
-      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.3.9:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2024-0057",
-      "published_date": "2024-01-09",
-      "last_modified_date": "2024-11-21",
-      "base_score": 9.1,
-      "severity": "CRITICAL",
-      "description": "NET, .NET Framework, and Visual Studio Security Feature Bypass Vulnerability",
-      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.3.9:*:*:*:*:*:*:*"
+      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.0.10:*:*:*:*:*:*:*"
     }
   ]
 }

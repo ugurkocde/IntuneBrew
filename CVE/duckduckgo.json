@@ -1,6 +1,6 @@
 {
   "app_name": "DuckDuckGo",
-  "last_updated": "2025-07-06",
+  "last_updated": "2025-07-13",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2020-15502",
