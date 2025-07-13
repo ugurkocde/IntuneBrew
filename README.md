@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -141,23 +141,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-07-12 00:31 UTC*
+*Last checked: 2025-07-13 00:33 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 141.0b8 | 141.0b9 |
-| DockDoor | 1.18.1 | 1.18.2 |
-| Trae | 1.0.15363 | 1.0.15580 |
-| Windows App | 11.1.8 | 11.1.9 |
-| Android Studio | 2025.1.1.13 | 2025.1.1.14 |
-| Anki | 25.07.1 | 25.07.2 |
-| Jetbrains PyCharm Community Edition | 2025.1.3 | 2025.1.3.1 |
-| calibre | 8.5.0 | 8.6.0 |
-| VSCodium | 1.101.24242 | 1.102.04606 |
-| Insomnia | 11.2.0 | 11.3.0 |
-| OnyX | 4.8.0 | 4.8.1 |
+| ChatWise | 0.8.75 | 0.8.76 |
+| draw.io Desktop | 27.0.9 | 28.0.4 |
+| OBS | 31.1.0 | 31.1.1 |
+| Apidog | 2.7.20 | 2.7.22 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -291,7 +285,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.1.0 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.20 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.22 |
 | <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.21 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 2.2 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.103.0 |
@@ -344,7 +338,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/canva.png' width='32' height='32'> Canva | 1.111.0 |
 | <img src='Logos/capcut.png' width='32' height='32'> CapCut | 3.3.0.1159 |
 | <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2025.175 |
-| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.8.75 |
+| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.8.76 |
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 138.0.7204.6 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20250430033337 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.05.0.58 |
@@ -385,7 +379,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
 | <img src='Logos/doughnut.png' width='32' height='32'> Doughnut | 2.0.1 |
 | <img src='Logos/downie.png' width='32' height='32'> Downie | 4.10.0 |
-| <img src='Logos/drawio_desktop.png' width='32' height='32'> draw.io Desktop | 27.0.9 |
+| <img src='Logos/drawio_desktop.png' width='32' height='32'> draw.io Desktop | 28.0.4 |
 | <img src='Logos/drawbot.png' width='32' height='32'> DrawBot | 3.132 |
 | <img src='Logos/drivedx.png' width='32' height='32'> DriveDX | 1.12.1 |
 | <img src='Logos/dropbox.png' width='32' height='32'> Dropbox | 228.4.5567 |
@@ -582,7 +576,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/nucleo.png' width='32' height='32'> Nucleo | 4.1.6 |
 | <img src='Logos/nudge.png' width='32' height='32'> Nudge | 2.0.12.81807 |
 | <img src='Logos/nvidia_geforce_now.png' width='32' height='32'> NVIDIA GeForce NOW | 2.0.75.146 |
-| <img src='Logos/obs.png' width='32' height='32'> OBS | 31.1.0 |
+| <img src='Logos/obs.png' width='32' height='32'> OBS | 31.1.1 |
 | <img src='Logos/obsidian.png' width='32' height='32'> Obsidian | 1.8.10 |
 | <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.92.0 |
 | <img src='Logos/ollama.png' width='32' height='32'> Ollama | 0.9.2 |
