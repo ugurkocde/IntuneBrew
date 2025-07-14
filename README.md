@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -142,16 +142,15 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-07-13 00:33 UTC*
+*Last checked: 2025-07-14 00:32 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| ChatWise | 0.8.75 | 0.8.76 |
-| draw.io Desktop | 27.0.9 | 28.0.4 |
-| OBS | 31.1.0 | 31.1.1 |
-| Apidog | 2.7.20 | 2.7.22 |
+| Hyperkey | 0.47 | 0.50 |
+| Stats | 2.11.46 | 2.11.47 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -454,7 +453,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/huggingchat.png' width='32' height='32'> HuggingChat | 0.7.0 |
 | <img src='Logos/huly.png' width='32' height='32'> Huly | 0.6.502 |
 | <img src='Logos/hyper.png' width='32' height='32'> Hyper | 3.4.1 |
-| <img src='Logos/hyperkey.png' width='32' height='32'> Hyperkey | 0.47 |
+| <img src='Logos/hyperkey.png' width='32' height='32'> Hyperkey | 0.50 |
 | <img src='Logos/ice.png' width='32' height='32'> Ice | 0.11.12 |
 | <img src='Logos/iina.png' width='32' height='32'> IINA | 1.3.5 |
 | <img src='Logos/imazing.png' width='32' height='32'> iMazing | 3.3.1 |
@@ -690,7 +689,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2025.10 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 9.2.0 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.46 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.47 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 4.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.4 |
 | <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.17.2 |
@@ -735,7 +734,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/utm.png' width='32' height='32'> UTM | 4.6.5 |
 | <img src='Logos/veracrypt.png' width='32' height='32'> VeraCrypt | 1.26.24 |
 | <img src='Logos/vimcal.png' width='32' height='32'> Vimcal | 1.0.37 |
-| <img src='Logos/vimr.png' width='32' height='32'> VimR | 0.54.0 |
+| <img src='Logos/vimr.png' width='32' height='32'> VimR | 0.55.0 |
 | <img src='Logos/visualvm.png' width='32' height='32'> VisualVM | 2.2 |
 | <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 7.5.3735.47 |
 | <img src='Logos/viz.png' width='32' height='32'> Viz | 2.2.1 |
