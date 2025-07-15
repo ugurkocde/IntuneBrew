@@ -1,7 +1,7 @@
 {
   "name": "Google Ads Editor",
   "description": "Managing your campaigns",
-  "version": "2.10",
+  "version": "2.9",
   "url": "https://dl.google.com/adwords_editor/Google_AdWords_Editor.dmg",
   "bundleId": "com.google.googleadseditorlauncher",
   "homepage": "https://ads.google.com/home/tools/ads-editor/",
