@@ -1,13 +1,13 @@
 {
   "name": "Jumpshare",
   "description": "File sharing, screen recording, and screenshot capture app",
-  "version": "3.3.18",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/jumpshare_3.3.18.pkg",
+  "version": "3.3.19",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/jumpshare_3.3.19.pkg",
   "bundleId": "com.jumpshare.Jumpshare",
   "homepage": "https://jumpshare.com/",
-  "fileName": "jumpshare_3.3.18.pkg",
+  "fileName": "jumpshare_3.3.19.pkg",
   "type": "app",
-  "sha": "ec9b0930036c2ffe8d9773fa8083074f685de41ff2c6d4dc4fddccd20bea0cf3",
+  "sha": "a88436ecb6ff7c3ca2b757c661ca59302442751cf1d9b378d0b1656d3b62e00f",
   "changelog": "https://jumpshare.com/release-notes",
-  "previous_version": "3.3.18"
+  "previous_version": "3.3.19"
 }

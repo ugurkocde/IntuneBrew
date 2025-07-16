@@ -1,12 +1,12 @@
 {
   "name": "DataSpell",
   "description": "IDE for Professional Data Scientists",
-  "version": "2025.1.2",
-  "url": "https://download.jetbrains.com/python/dataspell-2025.1.2-aarch64.dmg",
+  "version": "2025.1.2.1",
+  "url": "https://download.jetbrains.com/python/dataspell-2025.1.2.1-aarch64.dmg",
   "bundleId": "com.jetbrains.dataspell",
   "homepage": "https://www.jetbrains.com/dataspell/",
-  "fileName": "dataspell-2025.1.2-aarch64.dmg",
-  "sha": "972e6281794201bb693450ca0941e13840848851799cfba965e02757764d105d",
+  "fileName": "dataspell-2025.1.2.1-aarch64.dmg",
+  "sha": "97588c238523b2c492a322a0751173f908f31eb27e0d38f81dd51f670690a9a5",
   "changelog": "https://www.jetbrains.com/dataspell/whatsnew/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:25:22Z",
