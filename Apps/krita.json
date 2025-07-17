@@ -1,12 +1,12 @@
 {
   "name": "Krita",
   "description": "Free and open-source painting and sketching program",
-  "version": "5.2.10",
-  "url": "https://download.kde.org/stable/krita/5.2.10/krita-5.2.10.dmg",
+  "version": "5.2.11",
+  "url": "https://download.kde.org/stable/krita/5.2.11/krita-5.2.11.dmg",
   "bundleId": "org.krita",
   "homepage": "https://krita.org/",
-  "fileName": "krita-5.2.10.dmg",
-  "sha": "fac6ccdea070a35be67e31c0b95b582186a3d4703ba43e9f8e8fff10d7440a5a",
+  "fileName": "krita-5.2.11.dmg",
+  "sha": "c38443656c017e299264473c9d11f4f92aca63b1475bda325a0a0f969973a147",
   "changelog": "https://krita.org/en/krita-5-2-release-notes/",
   "previous_version": "5.2.10"
 }
