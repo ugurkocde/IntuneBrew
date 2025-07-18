@@ -1,12 +1,11 @@
 {
   "name": "HazeOver",
   "description": "Windows manager and desktop organiser",
-  "version": "1.9.4",
+  "version": "1.9.6",
   "url": "https://hazeover.com/HazeOver.dmg",
   "bundleId": "com.pointum.hazeover",
   "homepage": "https://hazeover.com/",
   "fileName": "HazeOver.dmg",
-  "sha": "2ee849955489ae57e9815e98c001a14bd85ba14667a6283ebef01d16741a4203",
   "changelog": "https://hazeover.com/notes.html",
   "previous_version": "1.9.4"
 }

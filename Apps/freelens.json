@@ -1,12 +1,12 @@
 {
   "name": "Freelens",
   "description": "Kubernetes IDE",
-  "version": "1.5.0",
-  "url": "https://github.com/freelensapp/freelens/releases/download/v1.5.0/Freelens-1.5.0-macos-arm64.dmg",
+  "version": "1.5.1",
+  "url": "https://github.com/freelensapp/freelens/releases/download/v1.5.1/Freelens-1.5.1-macos-arm64.dmg",
   "bundleId": "app.freelens.Freelens",
   "homepage": "https://freelens.app/",
-  "fileName": "Freelens-1.5.0-macos-arm64.dmg",
-  "sha": "d5554bd785fdbba988848d48fd8105ec84744a3f17a6d2cd774e0c0e288cef6c",
+  "fileName": "Freelens-1.5.1-macos-arm64.dmg",
+  "sha": "4676a55cf770bb0acc0c14bc10193b411913644c004f0a491e0686798810d023",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:15:09Z",
     "qa_result": "Installation successful and verified",

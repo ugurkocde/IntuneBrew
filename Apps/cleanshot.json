@@ -1,12 +1,12 @@
 {
   "name": "CleanShot",
   "description": "Screen capturing tool",
-  "version": "4.8",
-  "url": "https://updates.getcleanshot.com/v3/CleanShot-X-4.8.dmg",
+  "version": "4.8.2",
+  "url": "https://updates.getcleanshot.com/v3/CleanShot-X-4.8.2.dmg",
   "bundleId": "pl.maketheweb.cleanshotx",
   "homepage": "https://getcleanshot.com/",
-  "fileName": "CleanShot-X-4.8.dmg",
-  "sha": "046c642686eecfdfa7419ef2dc1d31a86f99f283097acd64280eba481a2d1c9a",
+  "fileName": "CleanShot-X-4.8.2.dmg",
+  "sha": "c88819f112071ad7909ff5b7eb26d2c010eab33673ca0d47d117446bc3104526",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:48:17Z",
     "qa_result": "Installation successful and verified",
