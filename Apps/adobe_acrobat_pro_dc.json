@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/adobe_acrobat_pro_dc_25.001.20577.pkg",
   "bundleId": "com.adobe.Acrobat.Pro",
   "homepage": "https://www.adobe.com/acrobat/pdf-reader.html",
-  "fileName": "adobe_acrobat_pro_dc_25.001.20577.pkg",
+  "fileName": "Acrobat_DC_Web_WWMUI.dmg",
   "type": "pkg_in_dmg",
   "changelog": "https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html",
   "sha": "8f1e92a6cf85f5d7c915dd565dbbc2bb4e001f16398a864dcbb337bd571dd390",
@@ -18,5 +18,5 @@
     "verify_status": "app_not_found",
     "bundle_id_status": "pending"
   },
-  "previous_version": "25.001.20566"
+  "previous_version": "25.001.20577"
 }
