@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -148,20 +148,15 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-07-19 00:30 UTC*
+*Last checked: 2025-07-20 00:34 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Rive | 0.8.3210 | 0.8.3243 |
-| Readest | 0.9.64 | 0.9.65 |
-| DockDoor | 1.18.2 | 1.18.3 |
-| AnyDesk | 9.1.0 | 9.1.1 |
-| Krisp | 3.3.8 | 3.4.4 |
-| Podman Desktop | 1.20.1 | 1.20.2 |
-| Zed | 0.195.3 | 0.195.5 |
-| calibre | 8.6.0 | 8.7.0 |
+| Miro | 0.11.108 | 0.11.110 |
+| Amazon Q | 1.12.5 | 1.12.6 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -288,7 +283,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/alttab.png' width='32' height='32'> AltTab | 7.25.0 |
 | <img src='Logos/amadine.png' width='32' height='32'> Amadine | 1.6.9 |
 | <img src='Logos/amazon_chime.png' width='32' height='32'> Amazon Chime | 5.23.22356 |
-| <img src='Logos/amazon_q.png' width='32' height='32'> Amazon Q | 1.12.5 |
+| <img src='Logos/amazon_q.png' width='32' height='32'> Amazon Q | 1.12.6 |
 | <img src='Logos/android_studio.png' width='32' height='32'> Android Studio | 2025.1.1.14 |
 | <img src='Logos/angry_ip_scanner.png' width='32' height='32'> Angry IP Scanner | 3.9.1 |
 | <img src='Logos/anki.png' width='32' height='32'> Anki | 25.07.2 |
@@ -352,7 +347,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 139.0.7258.8 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20250430033337 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.05.0.58 |
-| <img src='Logos/claude.png' width='32' height='32'> Claude | 0.12.20 |
+| <img src='Logos/claude.png' width='32' height='32'> Claude | 0.12.28 |
 | <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.1.1 |
 | <img src='Logos/cleanshot.png' width='32' height='32'> CleanShot | 4.8.2 |
 | <img src='Logos/clion.png' width='32' height='32'> CLion | 2025.1.3 |
@@ -541,7 +536,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/middle.png' width='32' height='32'> Middle | 1.10 |
 | <img src='Logos/middleclick.png' width='32' height='32'> MiddleClick | 3.1.0 |
 | <img src='Logos/mindmanager.png' width='32' height='32'> Mindmanager | 24.1.155 |
-| <img src='Logos/miro.png' width='32' height='32'> Miro | 0.11.108 |
+| <img src='Logos/miro.png' width='32' height='32'> Miro | 0.11.110 |
 | <img src='Logos/mist.png' width='32' height='32'> Mist | 0.20.1 |
 | <img src='Logos/mitmproxy.png' width='32' height='32'> mitmproxy | 12.1.1 |
 | <img src='Logos/mixxx.png' width='32' height='32'> Mixxx | 2.5.2 |
