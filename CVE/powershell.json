@@ -1,42 +1,15 @@
 {
   "app_name": "PowerShell",
-  "last_updated": "2025-07-13",
+  "last_updated": "2025-07-20",
   "vulnerabilities": [
     {
-      "cve_id": "CVE-2025-30399",
-      "published_date": "2025-06-13",
-      "last_modified_date": "2025-07-10",
-      "base_score": 7.5,
-      "severity": "HIGH",
-      "description": "Untrusted search path in .NET and Visual Studio allows an unauthorized attacker to execute code over a network.",
-      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.5:-:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2025-21171",
-      "published_date": "2025-01-14",
-      "last_modified_date": "2025-07-10",
-      "base_score": 7.5,
-      "severity": "HIGH",
-      "description": ".NET Remote Code Execution Vulnerability",
-      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.5:-:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2022-34716",
-      "published_date": "2022-08-09",
-      "last_modified_date": "2025-05-29",
-      "base_score": 5.9,
-      "severity": "MEDIUM",
-      "description": ".NET Spoofing Vulnerability",
-      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.0.10:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2022-23267",
-      "published_date": "2022-05-10",
-      "last_modified_date": "2025-01-02",
-      "base_score": 7.5,
-      "severity": "HIGH",
-      "description": ".NET and Visual Studio Denial of Service Vulnerability",
-      "cpe_name": "cpe:2.3:a:microsoft:powershell:7.0.10:*:*:*:*:*:*:*"
+      "cve_id": "CVE-2018-8327",
+      "published_date": "2018-07-11",
+      "last_modified_date": "2025-07-16",
+      "base_score": 9.8,
+      "severity": "CRITICAL",
+      "description": "A remote code execution vulnerability exists in PowerShell Editor Services, aka \"PowerShell Editor Services Remote Code Execution Vulnerability.\" This affects PowerShell Editor, PowerShell Extension.",
+      "cpe_name": "cpe:2.3:a:microsoft:powershell:0.1.0:*:*:*:*:visual_studio_code:*:*"
     }
   ]
 }
