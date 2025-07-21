@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -149,14 +149,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-07-20 00:34 UTC*
+*Last checked: 2025-07-21 00:34 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Miro | 0.11.108 | 0.11.110 |
-| Amazon Q | 1.12.5 | 1.12.6 |
+| Readest | 0.9.65 | 0.9.66 |
+| Apifox | 2.7.22 | 2.7.23 |
+| ChatWise | 0.8.78 | 0.8.79 |
+| Freelens | 1.5.1 | 1.5.2 |
+| DBeaver Community Edition | 25.1.2 | 25.1.3 |
+| OnyX | 4.8.1 | 4.8.2 |
+| Apidog | 2.7.22 | 2.7.23 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -290,8 +296,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.1.1 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.22 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.22 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.23 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.23 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 2.2 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.104.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.3 |
@@ -343,7 +349,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/canva.png' width='32' height='32'> Canva | 1.111.0 |
 | <img src='Logos/capcut.png' width='32' height='32'> CapCut | 3.3.0.1159 |
 | <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2025.189 |
-| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.8.78 |
+| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.8.79 |
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 139.0.7258.8 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20250430033337 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.05.0.58 |
@@ -370,7 +376,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.1.3 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.1.2.1 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.1.2 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.1.3 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.5.6 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.7.12287188 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
@@ -419,7 +425,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/foxit_pdf_editor.png' width='32' height='32'> Foxit PDF Editor | 13.1.7.63027 |
 | <img src='Logos/free_ruler.png' width='32' height='32'> Free Ruler | 2.0.8 |
 | <img src='Logos/freecad.png' width='32' height='32'> FreeCAD | 1.0.1 |
-| <img src='Logos/freelens.png' width='32' height='32'> Freelens | 1.5.1 |
+| <img src='Logos/freelens.png' width='32' height='32'> Freelens | 1.5.2 |
 | <img src='Logos/freemacsoft_appcleaner.png' width='32' height='32'> FreeMacSoft AppCleaner | 3.6.8 |
 | <img src='Logos/freetube.png' width='32' height='32'> FreeTube | 0.23.5 |
 | <img src='Logos/fsmonitor.png' width='32' height='32'> FSMonitor | 1.2 |
@@ -508,7 +514,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/lulu.png' width='32' height='32'> LuLu | 3.1.5 |
 | <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.3 |
 | <img src='Logos/löve.png' width='32' height='32'> LÖVE | 11.5 |
-| <img src='Logos/maccy.png' width='32' height='32'> Maccy | 2.3.0 |
+| <img src='Logos/maccy.png' width='32' height='32'> Maccy | 2.4.0 |
 | <img src='Logos/macdown.png' width='32' height='32'> MacDown | 0.7.2 |
 | <img src='Logos/macfuse.png' width='32' height='32'> macFUSE | 4.10.2 |
 | <img src='Logos/macpass.png' width='32' height='32'> MacPass | 0.8.1 |
@@ -589,7 +595,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/omnioutliner.png' width='32' height='32'> OmniOutliner | 5.14.3 |
 | <img src='Logos/omnissa_horizon_client.png' width='32' height='32'> Omnissa Horizon Client | 2503-8.15.0-14236092062 |
 | <img src='Logos/onedrive.png' width='32' height='32'> OneDrive | 25.105.0601.0002 |
-| <img src='Logos/onyx.png' width='32' height='32'> OnyX | 4.8.1 |
+| <img src='Logos/onyx.png' width='32' height='32'> OnyX | 4.8.2 |
 | <img src='Logos/openmtp.png' width='32' height='32'> OpenMTP | 3.2.25 |
 | <img src='Logos/openvpn_connect_client.png' width='32' height='32'> OpenVPN Connect client | 3.7.1 |
 | <img src='Logos/opera.png' width='32' height='32'> Opera | 120.0.5543.93 |
@@ -648,7 +654,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rancher_desktop.png' width='32' height='32'> Rancher Desktop | 1.19.3 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 1.101.1 |
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.7.7 |
-| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.65 |
+| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.66 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.13.1 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.88 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.56 |
