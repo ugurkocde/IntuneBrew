@@ -1,12 +1,12 @@
 {
   "name": "Anki",
   "description": "Memory training application",
-  "version": "25.07.2",
-  "url": "https://github.com/ankitects/anki/releases/download/25.07.2/anki-mac.dmg",
+  "version": "25.07.3",
+  "url": "https://github.com/ankitects/anki/releases/download/25.07.3/anki-launcher-25.07.3-mac.dmg",
   "bundleId": "net.ankiweb.dtop",
   "homepage": "https://apps.ankiweb.net/",
-  "fileName": "anki-mac.dmg",
-  "sha": "f29a049dd8a31bb9bdc20e8579d6196acf318eb1a21a832b418f7111242bcad9",
+  "fileName": "anki-launcher-25.07.3-mac.dmg",
+  "sha": "dcaa9e66b6cdbfd0a3b25bcf70b2306547e5ba4125936eb927c15ceee88b0bbb",
   "changelog": "https://github.com/ankitects/anki/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-19T06:52:25Z",
