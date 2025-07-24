@@ -1,12 +1,12 @@
 {
   "name": "VSCodium",
   "description": "Binary releases of VS Code without MS branding/telemetry/licensing",
-  "version": "1.102.14746",
-  "url": "https://github.com/VSCodium/vscodium/releases/download/1.102.14746/VSCodium-darwin-arm64-1.102.14746.zip",
+  "version": "1.102.24914",
+  "url": "https://github.com/VSCodium/vscodium/releases/download/1.102.24914/VSCodium-darwin-arm64-1.102.24914.zip",
   "bundleId": "com.vscodium",
   "homepage": "https://github.com/VSCodium/vscodium",
-  "fileName": "VSCodium-darwin-arm64-1.102.14746.zip",
-  "sha": "9ded48f341715bd9f041c1a2a503cda49727a5288b0370b309c91bda5c4497bd",
+  "fileName": "VSCodium-darwin-arm64-1.102.24914.zip",
+  "sha": "3aea4049565e5c85a39cc4d4bfd95aed6306842b4ea1414862c4c53071b211f1",
   "changelog": "https://github.com/VSCodium/vscodium/releases",
   "previous_version": "1.102.14746"
 }
