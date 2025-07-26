@@ -1,12 +1,12 @@
 {
   "name": "Philips Hue Sync",
   "description": "Control your smart light system",
-  "version": "1.12.3.73",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/philips_hue_sync_1.12.3.73.pkg",
+  "version": "1.12.4.74",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/philips_hue_sync_1.12.4.74.pkg",
   "bundleId": "com.lighting.huesync",
   "homepage": "https://www.philips-hue.com/en-us/explore-hue/propositions/entertainment/sync-with-pc",
-  "fileName": "HueSyncInstaller_1.12.3.73.pkg",
+  "fileName": "philips_hue_sync_1.12.4.74.pkg",
   "type": "pkg_in_pkg",
-  "sha": "aa9a5ebba378c07f7fd862ab407b5dc331fec1a6c760b3d5d1edcaeb8692f46d",
+  "sha": "003cc3b8ea06e00ffde2522c64b1aadb57d374d446d8c9298f967256f318905e",
   "previous_version": "1.12.3.73"
 }

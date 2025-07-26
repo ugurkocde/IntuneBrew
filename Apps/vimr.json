@@ -1,12 +1,12 @@
 {
   "name": "VimR",
   "description": "GUI for the Neovim text editor",
-  "version": "0.56.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/vimr_0.56.0.pkg",
+  "version": "0.56.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/vimr_0.56.1.pkg",
   "bundleId": "com.qvacua.VimR",
   "homepage": "https://github.com/qvacua/vimr",
-  "fileName": "vimr_0.56.0.pkg",
+  "fileName": "vimr_0.56.1.pkg",
   "type": "app",
-  "sha": "72511fcd2ec01b108ce5262b86f1f3086d2b17da29dd46c190919a58a206d1a1",
-  "previous_version": "0.56.0"
+  "sha": "11885688efbccdbcff6ed2c95b21ef1152d735a065402ad57e26e8bd32c14dd8",
+  "previous_version": "0.56.1"
 }
