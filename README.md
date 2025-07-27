@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -155,26 +155,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-07-26 00:30 UTC*
+*Last checked: 2025-07-27 00:34 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 142.0b2 | 142.0b3 |
-| UPDF | 2.0.3 | 2.0.5 |
-| Yaak | 2025.5.3 | 2025.5.4 |
-| ChatWise | 0.8.84 | 0.8.85 |
-| JetBrains PhpStorm | 2025.1.4 | 2025.1.4.1 |
-| Anki | 25.07.4 | 25.07.5 |
-| Goland | 2025.1.3 | 2025.1.4 |
-| IntelliJ IDEA Community Edition | 2025.1.4 | 2025.1.4.1 |
-| WebStorm | 2025.1.4 | 2025.1.4.1 |
-| Bruno | 2.8.0 | 2.8.1 |
-| pgAdmin4 | 9.5 | 9.6 |
-| Microsoft Edge | 138.0.3351.95 | 138.0.3351.109 |
-| DbGate | 6.5.6 | 6.6.0 |
-| Philips Hue Sync | 1.12.3.73 | 1.12.4.74 |
+| Middle | 1.10 | 1.11 |
+| Transnomino | 9.3 | 9.4.0 |
+| Rectangle Pro | 3.56 | 3.57 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -551,7 +541,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/microsoft_office.png' width='32' height='32'> Microsoft Office | 16.99.25071321 |
 | <img src='Logos/microsoft_teams.png' width='32' height='32'> Microsoft Teams | 25163.3001.3726.6503 |
 | <img src='Logos/microsoft_visual_studio_code.png' width='32' height='32'> Microsoft Visual Studio Code | 1.102.2 |
-| <img src='Logos/middle.png' width='32' height='32'> Middle | 1.10 |
+| <img src='Logos/middle.png' width='32' height='32'> Middle | 1.11 |
 | <img src='Logos/middleclick.png' width='32' height='32'> MiddleClick | 3.1.0 |
 | <img src='Logos/mindmanager.png' width='32' height='32'> Mindmanager | 24.1.155 |
 | <img src='Logos/miro.png' width='32' height='32'> Miro | 0.11.110 |
@@ -669,7 +659,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.67 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.13.1 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.89 |
-| <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.56 |
+| <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.57 |
 | <img src='Logos/recut.png' width='32' height='32'> Recut | 2.1.7 |
 | <img src='Logos/redis_insight.png' width='32' height='32'> Redis Insight | 2.70.1 |
 | <img src='Logos/reflector.png' width='32' height='32'> Reflector | 4.1.2 |
@@ -748,7 +738,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.16067 |
 | <img src='Logos/transmission.png' width='32' height='32'> Transmission | 4.0.6 |
 | <img src='Logos/transmit.png' width='32' height='32'> Transmit | 5.10.9 |
-| <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.3 |
+| <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.4.0 |
 | <img src='Logos/tunnelblick.png' width='32' height='32'> Tunnelblick | 8.0 |
 | <img src='Logos/twingate.png' width='32' height='32'> Twingate | 2025.175.15032 |
 | <img src='Logos/typora.png' width='32' height='32'> Typora | 1.10.10 |
