@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -156,15 +156,19 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-07-27 00:34 UTC*
+*Last checked: 2025-07-28 00:33 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Middle | 1.10 | 1.11 |
-| Transnomino | 9.3 | 9.4.0 |
-| Rectangle Pro | 3.56 | 3.57 |
+| MarkEdit | 1.25.0 | 1.26.0 |
+| DockDoor | 1.18.3 | 1.18.5 |
+| Yaak | 2025.5.4 | 2025.5.5 |
+| ChatWise | 0.8.85 | 0.8.86 |
+| BoltAI | 1.35.3 | 1.36.0 |
+| Badgeify | 1.7.2 | 1.7.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -315,7 +319,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/azul_zulu_java_standard_edition_development_kit.png' width='32' height='32'> Azul Zulu Java Standard Edition Development Kit | 24.0.2 |
 | <img src='Logos/azure_data_studio.png' width='32' height='32'> Azure Data Studio | 1.52.0 |
 | <img src='Logos/background_music.png' width='32' height='32'> Background Music | 0.4.3 |
-| <img src='Logos/badgeify.png' width='32' height='32'> Badgeify | 1.7.2 |
+| <img src='Logos/badgeify.png' width='32' height='32'> Badgeify | 1.7.3 |
 | <img src='Logos/bambu_studio.png' width='32' height='32'> Bambu Studio | 02.01.01.52 |
 | <img src='Logos/bartender.png' width='32' height='32'> Bartender | 5.3.7 |
 | <img src='Logos/basecamp.png' width='32' height='32'> Basecamp | 3 |
@@ -335,7 +339,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/blip.png' width='32' height='32'> blip | 1.1.8 |
 | <img src='Logos/blizzard_battlenet.png' width='32' height='32'> Blizzard Battle.net | 1.18.12.3160 |
 | <img src='Logos/blurscreen.png' width='32' height='32'> BlurScreen | 1.0 |
-| <img src='Logos/boltai.png' width='32' height='32'> BoltAI | 1.35.3 |
+| <img src='Logos/boltai.png' width='32' height='32'> BoltAI | 1.36.0 |
 | <img src='Logos/bome_network.png' width='32' height='32'> Bome Network | 1.6.0 |
 | <img src='Logos/boop.png' width='32' height='32'> Boop | 1.4.0 |
 | <img src='Logos/boxcryptor.png' width='32' height='32'> Boxcryptor | 3.13.680 |
@@ -351,7 +355,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/canva.png' width='32' height='32'> Canva | 1.111.0 |
 | <img src='Logos/capcut.png' width='32' height='32'> CapCut | 3.3.0.1159 |
 | <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2025.196 |
-| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.8.85 |
+| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.8.86 |
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 139.0.7258.8 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20250430033337 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.05.0.58 |
@@ -386,7 +390,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
 | <img src='Logos/discord.png' width='32' height='32'> Discord | 0.0.354 |
 | <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 1.12.4 |
-| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.18.3 |
+| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.18.5 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.42.1 |
 | <img src='Logos/dockside.png' width='32' height='32'> Dockside | 1.9.54 |
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
@@ -526,7 +530,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/maestral.png' width='32' height='32'> Maestral | 1.9.4 |
 | <img src='Logos/magicquit.png' width='32' height='32'> MagicQuit | 1.4 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.15.2.3152 |
-| <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.25.0 |
+| <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.26.0 |
 | <img src='Logos/marsedit.png' width='32' height='32'> MarsEdit | 5.3.4 |
 | <img src='Logos/marta_file_manager.png' width='32' height='32'> Marta File Manager | 0.8.2 |
 | <img src='Logos/mattermost.png' width='32' height='32'> Mattermost | 5.12.1 |
@@ -771,7 +775,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/xca.png' width='32' height='32'> XCA | 2.9.0 |
 | <img src='Logos/xmind.png' width='32' height='32'> XMind | 25.07.03033-202507241752 |
 | <img src='Logos/xnapper.png' width='32' height='32'> Xnapper | 1.17.1 |
-| <img src='Logos/yaak.png' width='32' height='32'> Yaak | 2025.5.4 |
+| <img src='Logos/yaak.png' width='32' height='32'> Yaak | 2025.5.5 |
 | <img src='Logos/yubikey_manager.png' width='32' height='32'> Yubikey Manager | 1.2.5 |
 | <img src='Logos/zed.png' width='32' height='32'> Zed | 0.196.6 |
 | <img src='Logos/zed_attack_proxy.png' width='32' height='32'> Zed Attack Proxy | 2.16.1 |
