@@ -1,12 +1,12 @@
 {
   "name": "OBS",
   "description": "Open-source software for live streaming and screen recording",
-  "version": "31.1.1",
-  "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-31.1.1-macOS-Apple.dmg",
+  "version": "31.1.2",
+  "url": "https://cdn-fastly.obsproject.com/downloads/OBS-Studio-31.1.2-macOS-Apple.dmg",
   "bundleId": "com.obsproject.obs-studio",
   "homepage": "https://obsproject.com/",
-  "fileName": "OBS-Studio-31.1.1-macOS-Apple.dmg",
-  "sha": "f649fd6ef36ef87d3df0be76c92ea793129bb28a95630e77cb49a3fa5eeec6c3",
+  "fileName": "OBS-Studio-31.1.2-macOS-Apple.dmg",
+  "sha": "8f18142c8599d4e80baee5913b03f8357c3e5fd0b76835f54e76dedf9f857188",
   "changelog": "https://github.com/obsproject/obs-studio/releases",
   "previous_version": "31.1.1"
 }
