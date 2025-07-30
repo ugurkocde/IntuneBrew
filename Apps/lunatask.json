@@ -6,5 +6,6 @@
   "bundleId": "com.mikekreeki.tasks",
   "homepage": "https://lunatask.app/",
   "fileName": "Lunatask-2.1.5-universal.dmg",
-  "previous_version": "2.1.3"
+  "sha": "8dd11d52aaa29e477d84cf2e910c5018a26525877dc0d20b7071a0d3ea782783",
+  "previous_version": "2.1.5"
 }

@@ -1,13 +1,13 @@
 {
   "name": "Notion Calendar",
   "description": "Calendar for professionals and teams",
-  "version": "1.130.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/notion_calendar_1.130.0.pkg",
+  "version": "1.131.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/notion_calendar_1.131.0.pkg",
   "bundleId": "com.cron.electron",
   "homepage": "https://www.notion.so/product/calendar",
-  "fileName": "notion_calendar_1.130.0.pkg",
+  "fileName": "notion_calendar_1.131.0.pkg",
   "type": "app",
-  "sha": "e1c175577c1639fd05748ff71c910bd80adfb91f5d305ad9e3e6a21eeec8fe50",
+  "sha": "a5195e6ebcf7c87e0e60e94f28c1453cb65d7327ec5455a2b2a86510ef6399b0",
   "changelog": "https://www.notion.so/help/calendar-changelog",
-  "previous_version": "1.130.0"
+  "previous_version": "1.131.0"
 }
