@@ -8,5 +8,5 @@
   "fileName": "Windows_App_11.2.0_installer.pkg",
   "sha": "e2a3eafaffc9d6bc5ddc3a79ddde71f819ba21e9e9b8b6269ec05af4ffd80bb9",
   "changelog": "https://learn.microsoft.com/en-us/windows-app/whats-new?tabs=macos",
-  "previous_version": "11.1.9"
+  "previous_version": "11.2.0"
 }

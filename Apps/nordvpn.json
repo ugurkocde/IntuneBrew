@@ -5,8 +5,8 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/nordvpn_9.2.1.pkg",
   "bundleId": "com.nordvpn.macos",
   "homepage": "https://nordvpn.com/",
-  "fileName": "nordvpn_9.2.1.pkg",
+  "fileName": "NordVPN.pkg",
   "type": "pkg_in_pkg",
   "sha": "c3d2d9d6e772feba1ff48fa8c5cd2f407c0de482688e4ab87fd1b7c99d6a6153",
-  "previous_version": "9.1.0"
+  "previous_version": "9.2.1"
 }
