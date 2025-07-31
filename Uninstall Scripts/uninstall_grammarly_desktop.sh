@@ -49,12 +49,44 @@ elif [ -f "$HOME/Library/Caches/com.grammarly.ProjectLlama" ]; then
     rm -f "$HOME/Library/Caches/com.grammarly.ProjectLlama" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.grammarly.ProjectLlama
+echo "Removing $HOME/Library/HTTPStorages/com.grammarly.ProjectLlama..."
+if [ -d "$HOME/Library/HTTPStorages/com.grammarly.ProjectLlama" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.grammarly.ProjectLlama" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.grammarly.ProjectLlama" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.grammarly.ProjectLlama" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.grammarly.ProjectLlama.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/com.grammarly.ProjectLlama.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/com.grammarly.ProjectLlama.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.grammarly.ProjectLlama.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.grammarly.ProjectLlama.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.grammarly.ProjectLlama.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist
+echo "Removing $HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist..."
+if [ -d "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist" ]; then
+    rm -rf "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist" ]; then
+    rm -f "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.grammarly.ProjectLlama.plist
 echo "Removing $HOME/Library/Preferences/com.grammarly.ProjectLlama.plist..."
 if [ -d "$HOME/Library/Preferences/com.grammarly.ProjectLlama.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.grammarly.ProjectLlama.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.grammarly.ProjectLlama.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.grammarly.ProjectLlama.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.grammarly.ProjectLlama
+echo "Removing $HOME/Library/WebKit/com.grammarly.ProjectLlama..."
+if [ -d "$HOME/Library/WebKit/com.grammarly.ProjectLlama" ]; then
+    rm -rf "$HOME/Library/WebKit/com.grammarly.ProjectLlama" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.grammarly.ProjectLlama" ]; then
+    rm -f "$HOME/Library/WebKit/com.grammarly.ProjectLlama" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
