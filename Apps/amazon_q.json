@@ -1,12 +1,12 @@
 {
   "name": "Amazon Q",
   "description": "AI-powered productivity tool for the command-line",
-  "version": "1.12.7",
-  "url": "https://desktop-release.q.us-east-1.amazonaws.com/1.12.7/Amazon%20Q.dmg",
+  "version": "1.13.0",
+  "url": "https://desktop-release.q.us-east-1.amazonaws.com/1.13.0/Amazon%20Q.dmg",
   "bundleId": "com.amazon.codewhisperer",
   "homepage": "https://aws.amazon.com/q/developer/",
   "fileName": "Amazon%20Q.dmg",
-  "sha": "7fc2028e048bb6af4e3623a5ce2a10b46d27e336dd102f3443b9b22e6a5352b9",
+  "sha": "be6df411c3fce8a2a3ed5e032c784550361cc11f21aad4a0298ee54033b4d15f",
   "changelog": "https://docs.aws.amazon.com/amazonq/latest/desktop-app-release-notes/release-notes.html",
   "qa_info": {
     "qa_timestamp": "2025-05-19T06:51:17Z",
