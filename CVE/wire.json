@@ -1,6 +1,6 @@
 {
   "app_name": "Wire",
-  "last_updated": "2025-07-27",
+  "last_updated": "2025-08-03",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2023-22737",

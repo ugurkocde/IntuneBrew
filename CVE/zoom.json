@@ -1,7 +1,16 @@
 {
   "app_name": "Zoom",
-  "last_updated": "2025-07-27",
+  "last_updated": "2025-08-03",
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2024-27247",
+      "published_date": "2024-04-09",
+      "last_modified_date": "2025-07-31",
+      "base_score": 5.5,
+      "severity": "MEDIUM",
+      "description": "Improper privilege management in the installer for Zoom Desktop Client for macOS before version 5.17.10 may allow a privileged user to conduct an escalation of privilege via local access.",
+      "cpe_name": "cpe:2.3:a:zoom:zoom:5.16.5:*:*:*:*:macos:*:*"
+    },
     {
       "cve_id": "CVE-2024-24698",
       "published_date": "2024-02-14",
