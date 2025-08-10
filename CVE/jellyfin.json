@@ -1,6 +1,6 @@
 {
   "app_name": "Jellyfin",
-  "last_updated": "2025-08-03",
+  "last_updated": "2025-08-10",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2024-43801",
