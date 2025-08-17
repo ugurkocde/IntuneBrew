@@ -1,42 +1,42 @@
 {
   "app_name": "GIMP",
-  "last_updated": "2025-08-03",
+  "last_updated": "2025-08-17",
   "vulnerabilities": [
     {
-      "cve_id": "CVE-2022-32990",
-      "published_date": "2022-06-24",
-      "last_modified_date": "2024-11-21",
-      "base_score": 5.5,
-      "severity": "MEDIUM",
-      "description": "An issue in gimp_layer_invalidate_boundary of GNOME GIMP 2.10.30 allows attackers to trigger an unhandled exception via a crafted XCF file, causing a Denial of Service (DoS).",
-      "cpe_name": "cpe:2.3:a:gimp:gimp:2.10.30:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2022-30067",
-      "published_date": "2022-05-17",
-      "last_modified_date": "2024-11-21",
-      "base_score": 5.5,
-      "severity": "MEDIUM",
-      "description": "GIMP 2.10.30 and 2.99.10 are vulnerable to Buffer Overflow. Through a crafted XCF file, the program will allocate for a huge amount of memory, resulting in insufficient memory or program crash.",
-      "cpe_name": "cpe:2.3:a:gimp:gimp:2.10.30:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2021-45463",
-      "published_date": "2021-12-23",
-      "last_modified_date": "2024-11-21",
+      "cve_id": "CVE-2023-44443",
+      "published_date": "2024-05-03",
+      "last_modified_date": "2025-08-14",
       "base_score": 7.8,
       "severity": "HIGH",
-      "description": "load_cache in GEGL before 0.4.34 allows shell expansion when a pathname in a constructed command line is not escaped or filtered. This is caused by use of the system library function for execution of the ImageMagick convert fallback in magick-load. NOTE: GEGL releases before 0.4.34 are used in GIMP releases before 2.10.30; however, this does not imply that GIMP builds enable the vulnerable feature.",
-      "cpe_name": "cpe:2.3:a:gimp:gimp:2.10.18:*:*:*:*:*:*:*"
+      "description": "GIMP PSP File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before writing to memory. An attacker can leverage this vulnerability to execute code in the context of the current process.\n. Was ZDI-CAN-22096.",
+      "cpe_name": "cpe:2.3:a:gimp:gimp:2.10.34:*:*:*:*:*:*:*"
     },
     {
-      "cve_id": "CVE-2018-12713",
-      "published_date": "2018-06-24",
-      "last_modified_date": "2024-11-21",
-      "base_score": 9.1,
-      "severity": "CRITICAL",
-      "description": "GIMP through 2.10.2 makes g_get_tmp_dir calls to establish temporary filenames, which may result in a filename that already exists, as demonstrated by the gimp_write_and_read_file function in app/tests/test-xcf.c. This might be leveraged by attackers to overwrite files or read file content that was intended to be private.",
-      "cpe_name": "cpe:2.3:a:gimp:gimp:2.10.0:rc2:*:*:*:*:*:*"
+      "cve_id": "CVE-2023-44444",
+      "published_date": "2024-05-03",
+      "last_modified_date": "2025-08-14",
+      "base_score": 7.8,
+      "severity": "HIGH",
+      "description": "GIMP PSP File Parsing Off-By-One Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PSP files. Crafted data in a PSP file can trigger an off-by-one error when calculating a location to write within a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process.\n. Was ZDI-CAN-22097.",
+      "cpe_name": "cpe:2.3:a:gimp:gimp:2.10.34:*:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2023-44441",
+      "published_date": "2024-05-03",
+      "last_modified_date": "2025-08-14",
+      "base_score": 7.8,
+      "severity": "HIGH",
+      "description": "GIMP DDS File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of DDS files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process.\n. Was ZDI-CAN-22093.",
+      "cpe_name": "cpe:2.3:a:gimp:gimp:2.10.34:*:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2023-44442",
+      "published_date": "2024-05-03",
+      "last_modified_date": "2025-08-14",
+      "base_score": 7.8,
+      "severity": "HIGH",
+      "description": "GIMP PSD File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PSD files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute arbitrary code in the context of the current process. Was ZDI-CAN-22094.",
+      "cpe_name": "cpe:2.3:a:gimp:gimp:2.10.34:*:*:*:*:*:*:*"
     }
   ]
 }
