@@ -98,6 +98,10 @@ jobs:
           AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
         run: |
           WORKSPACE_DIR=$(pwd)
+          ERROR_LOG=()  # Track errors for summary
+          FAILED_APPS=()  # Track which apps failed
+          SUCCESSFUL_APPS=()  # Track successful apps
+          
           for app_info in $APPS_TO_BUILD; do
             IFS=':' read -r app_name url <<< "$app_info"
             
@@ -398,16 +402,72 @@ jobs:
               echo "Downloading $app_name..."
               download_path="$HOME/Desktop/${app_name}"
               if [[ "$url" == *".zip" ]]; then
-                curl -L -o "${download_path}.zip" "$url"
+                # Download file first
+                curl -L -o "${download_path}.download" "$url"
                 cd "$HOME/Desktop"
+                
+                # Detect actual file type
+                FILE_TYPE=$(file -b "${download_path}.download" | cut -d' ' -f1-2)
+                echo "🔍 Detected file type: $FILE_TYPE"
+                
                 # Remove extraction directory if it exists
                 if [ -d "${app_name}_extracted" ]; then
                   echo "🧹 Removing existing directory: ${app_name}_extracted"
                   rm -rf "${app_name}_extracted"
                 fi
-                # Extract zip while excluding __MACOSX directory
-                unzip -q -d "${app_name}_extracted" "${download_path}.zip"
-                rm "${download_path}.zip"
+                
+                # Handle based on actual file type
+                if [[ "$FILE_TYPE" == "gzip compressed" ]]; then
+                  echo "📦 File is actually gzip compressed, not a zip file"
+                  mv "${download_path}.download" "${download_path}.tar.gz"
+                  mkdir -p "${app_name}_extracted"
+                  echo "🔓 Extracting gzip archive..."
+                  if tar -xzf "${download_path}.tar.gz" -C "${app_name}_extracted" 2>/dev/null; then
+                    echo "✅ Gzip extraction successful"
+                  else
+                    echo "⚠️ Failed to extract as tar.gz, trying gunzip..."
+                    gunzip -c "${download_path}.tar.gz" > "${download_path}.tar" 2>/dev/null && \
+                    tar -xf "${download_path}.tar" -C "${app_name}_extracted" 2>/dev/null || {
+                      echo "❌ Failed to extract gzip file"
+                      rm -f "${download_path}.tar.gz" "${download_path}.tar"
+                      rm -rf "${app_name}_extracted"
+                      FAILED_APPS+=("$app_name")
+                      ERROR_LOG+=("$app_name: Failed to extract gzip file from $url")
+                      continue
+                    }
+                    rm -f "${download_path}.tar"
+                  fi
+                  rm -f "${download_path}.tar.gz"
+                elif [[ "$FILE_TYPE" == "Zip archive" ]] || [[ "$FILE_TYPE" == "ZIP archive" ]]; then
+                  echo "📦 File is a valid zip archive"
+                  mv "${download_path}.download" "${download_path}.zip"
+                  # Extract zip while excluding __MACOSX directory
+                  if unzip -q -d "${app_name}_extracted" "${download_path}.zip" 2>/dev/null; then
+                    echo "✅ Zip extraction successful"
+                  else
+                    echo "❌ Failed to extract zip file"
+                    rm -f "${download_path}.zip"
+                    rm -rf "${app_name}_extracted"
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Failed to extract zip file from $url")
+                    continue
+                  fi
+                  rm "${download_path}.zip"
+                else
+                  echo "⚠️ Unknown file type, attempting zip extraction anyway..."
+                  mv "${download_path}.download" "${download_path}.zip"
+                  if unzip -q -d "${app_name}_extracted" "${download_path}.zip" 2>/dev/null; then
+                    echo "✅ Zip extraction successful"
+                  else
+                    echo "❌ Failed to extract file"
+                    rm -f "${download_path}.zip"
+                    rm -rf "${app_name}_extracted"
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Failed to extract file (detected as: $FILE_TYPE) from $url")
+                    continue
+                  fi
+                  rm "${download_path}.zip"
+                fi
               elif [[ "$url" == *".tar.xz" ]]; then
                 echo "📦 Processing tar.xz archive for $app_name..."
                 curl -L -o "${download_path}.tar.xz" "$url"
@@ -484,16 +544,53 @@ jobs:
                 echo "📁 Extracted contents:"
                 ls -R "${app_name}_extracted"
               else
-                curl -L -o "${download_path}.zip" "$url"
+                # Download file first and detect type
+                curl -L -o "${download_path}.download" "$url"
                 cd "$HOME/Desktop"
+                
+                # Detect actual file type
+                FILE_TYPE=$(file -b "${download_path}.download" | cut -d' ' -f1-2)
+                echo "🔍 Detected file type: $FILE_TYPE"
+                
                 # Remove extraction directory if it exists
                 if [ -d "${app_name}_extracted" ]; then
                   echo "🧹 Removing existing directory: ${app_name}_extracted"
                   rm -rf "${app_name}_extracted"
                 fi
-                # Default to zip extraction
-                unzip -q -d "${app_name}_extracted" "${download_path}.zip"
-                rm "${download_path}.zip"
+                
+                # Handle based on actual file type
+                if [[ "$FILE_TYPE" == "gzip compressed" ]]; then
+                  echo "📦 File is gzip compressed"
+                  mv "${download_path}.download" "${download_path}.tar.gz"
+                  mkdir -p "${app_name}_extracted"
+                  echo "🔓 Extracting gzip archive..."
+                  if tar -xzf "${download_path}.tar.gz" -C "${app_name}_extracted" 2>/dev/null; then
+                    echo "✅ Gzip extraction successful"
+                  else
+                    echo "❌ Failed to extract gzip file"
+                    rm -f "${download_path}.tar.gz"
+                    rm -rf "${app_name}_extracted"
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Failed to extract gzip file from $url")
+                    continue
+                  fi
+                  rm -f "${download_path}.tar.gz"
+                else
+                  # Default to zip extraction
+                  echo "📦 Attempting zip extraction for file type: $FILE_TYPE"
+                  mv "${download_path}.download" "${download_path}.zip"
+                  if unzip -q -d "${app_name}_extracted" "${download_path}.zip" 2>/dev/null; then
+                    echo "✅ Zip extraction successful"
+                  else
+                    echo "❌ Failed to extract file"
+                    rm -f "${download_path}.zip"
+                    rm -rf "${app_name}_extracted"
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Failed to extract file (type: $FILE_TYPE) from $url")
+                    continue
+                  fi
+                  rm "${download_path}.zip"
+                fi
               fi
               
               # First try to find .app file recursively, excluding __MACOSX directory
@@ -594,9 +691,61 @@ jobs:
               sudo rm -rf "${app_name}_extracted"
             fi
 
+            SUCCESSFUL_APPS+=("$app_name")
             echo "✅ Completed processing $app_name"
             echo "------------------------------------------------"
           done
+          
+          # Display summary
+          echo ""
+          echo "========================================="
+          echo "📊 PROCESSING SUMMARY"
+          echo "========================================="
+          
+          # Count totals
+          total_apps_processed=$((${#SUCCESSFUL_APPS[@]} + ${#FAILED_APPS[@]}))
+          
+          if [ ${#FAILED_APPS[@]} -gt 0 ]; then
+            echo "⚠️ Some apps failed to process:"
+            echo ""
+            echo "Successfully processed: ${#SUCCESSFUL_APPS[@]} apps"
+            echo "Failed: ${#FAILED_APPS[@]} apps"
+            echo ""
+            echo "Failed apps:"
+            for failed_app in "${FAILED_APPS[@]}"; do
+              echo "  ❌ $failed_app"
+            done
+            echo ""
+            if [ ${#ERROR_LOG[@]} -gt 0 ]; then
+              echo "Error details:"
+              for error in "${ERROR_LOG[@]}"; do
+                echo "  • $error"
+              done
+            fi
+          else
+            echo "✅ All $total_apps_processed apps processed successfully!"
+          fi
+          
+          echo "========================================="
+          
+          # Write to GitHub Actions summary
+          if [ ${#FAILED_APPS[@]} -gt 0 ]; then
+            echo "## ⚠️ App Processing Summary" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "**Total apps processed:** $total_apps_processed" >> $GITHUB_STEP_SUMMARY
+            echo "**Successful:** ${#SUCCESSFUL_APPS[@]}" >> $GITHUB_STEP_SUMMARY
+            echo "**Failed:** ${#FAILED_APPS[@]}" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "### Failed Apps" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            for error in "${ERROR_LOG[@]}"; do
+              echo "- $error" >> $GITHUB_STEP_SUMMARY
+            done
+          else
+            echo "## ✅ App Processing Summary" >> $GITHUB_STEP_SUMMARY
+            echo "" >> $GITHUB_STEP_SUMMARY
+            echo "All $total_apps_processed apps processed successfully!" >> $GITHUB_STEP_SUMMARY
+          fi
 
       - name: Commit and push changes
         run: |
