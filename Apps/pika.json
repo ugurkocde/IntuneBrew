@@ -1,11 +1,11 @@
 {
   "name": "Pika",
   "description": "Colour picker for colours onscreen",
-  "version": "1.0.2",
-  "url": "https://github.com/superhighfives/pika/releases/download/1.0.2/Pika-1.0.2.dmg",
+  "version": "1.1.0",
+  "url": "https://github.com/superhighfives/pika/releases/download/1.1.0/Pika-1.1.0.dmg",
   "bundleId": "com.superhighfives.Pika",
   "homepage": "https://superhighfives.com/pika",
-  "fileName": "Pika-1.0.2.dmg",
-  "sha": "3535caa0a2ad73034ea4b3a67d734bc3183df989852b00d00cce557c2085f892",
+  "fileName": "Pika-1.1.0.dmg",
+  "sha": "be04a0af8a7b8a4ae0cfbae5b91120201953e69b7b6741ab2a732c9ad3bcd459",
   "previous_version": "1.0.2"
 }

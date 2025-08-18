@@ -1,12 +1,12 @@
 {
   "name": "Apparency",
   "description": "Inspect application bundles",
-  "version": "2.2",
+  "version": "2.3",
   "url": "https://mothersruin.com/software/downloads/Apparency.dmg",
   "bundleId": "com.mothersruin.Apparency",
   "homepage": "https://www.mothersruin.com/software/Apparency/",
   "fileName": "Apparency.dmg",
-  "sha": "9e4b4d6f224e5c3c9d40fc1be3752ade742feb95dcc2ba994cabb938270bc9f5",
+  "sha": "41a3fb2e5e592b44151cf1730cf995f2b7745e663721ed153c10d72440cc1025",
   "changelog": "https://www.mothersruin.com/software/Apparency/updates.html",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:33:01Z",

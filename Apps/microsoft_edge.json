@@ -1,12 +1,12 @@
 {
   "name": "Microsoft Edge",
   "description": "Multi-platform web browser",
-  "version": "138.0.3351.121",
-  "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/157da964-2596-4b50-a0fb-b959727db5ae/MicrosoftEdge-138.0.3351.121.dmg",
+  "version": "139.0.3405.102",
+  "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/8ca9915f-b139-421a-a251-73376a5b39fd/MicrosoftEdge-139.0.3405.102.dmg",
   "bundleId": "com.microsoft.edgemac",
   "homepage": "https://www.microsoft.com/en-us/edge?form=",
-  "fileName": "MicrosoftEdge-138.0.3351.121.dmg",
-  "sha": "0dd83f8a8e7840a82bda170da48114364060e4287abfdbf006b56d35e2e9685d",
+  "fileName": "MicrosoftEdge-139.0.3405.102.dmg",
+  "sha": "330505dbc2cb855a9dfc79d153205285866853098dde472a9a7dfd2933ee880f",
   "changelog": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
-  "previous_version": "138.0.3351.109"
+  "previous_version": "138.0.3351.121"
 }

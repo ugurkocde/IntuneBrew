@@ -1,11 +1,11 @@
 {
   "name": "Omnissa Horizon Client",
   "description": "Virtual machine client",
-  "version": "2503-8.15.0-14236092062",
-  "url": "https://download3.omnissa.com/software/CART26FQ1_MAC_2503/Omnissa-Horizon-Client-2503-8.15.0-14236092062.dmg",
+  "version": "2506-8.16.0-16536825094",
+  "url": "https://download3.omnissa.com/software/CART26FQ2_MAC_2506/Omnissa-Horizon-Client-2506-8.16.0-16536825094.dmg",
   "bundleId": "com.omnissa.horizonapp",
   "homepage": "https://www.omnissa.com/",
-  "fileName": "Omnissa-Horizon-Client-2503-8.15.0-14236092062.dmg",
-  "sha": "a3d5169fb8383aff63c0f19628ea889b3be965734556870b3cf9845fb0d3d5c5",
+  "fileName": "Omnissa-Horizon-Client-2506-8.16.0-16536825094.dmg",
+  "sha": "45bb7a2ec1b309e9bf93ccda155ab78890c12eabe52cff3e57cd900662a100c0",
   "previous_version": "2503-8.15.0-14236092062"
 }

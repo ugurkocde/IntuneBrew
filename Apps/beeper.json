@@ -1,14 +1,14 @@
 {
   "name": "Beeper",
   "description": "Universal chat app powered by Matrix",
-  "version": "4.1.41",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/beeper_4.1.41.pkg",
+  "version": "4.1.111",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/beeper_4.1.111.pkg",
   "bundleId": "im.beeper",
   "homepage": "https://www.beeper.com/",
   "fileName": "beeper_4.1.41.pkg",
   "type": "app",
-  "sha": "fa92a05726f3b14c571483b627f62b8010a996f45a1e7a1b8e750b21a13e0536",
-  "previous_version": "4.1.41",
+  "sha": "8ba1ab4557d9320647806da0e9a9f77f407c9e898de741120cac4296aa4b1341",
+  "previous_version": "4.1.111",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:21:44Z",
     "qa_result": "Installation successful and verified",

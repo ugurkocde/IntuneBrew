@@ -1,14 +1,14 @@
 {
   "name": "Beyond Compare",
   "description": "Compare files and folders",
-  "version": "5.1.2.31185",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/beyond_compare_5.1.2.31185.pkg",
+  "version": "5.1.3.31238",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/beyond_compare_5.1.3.31238.pkg",
   "bundleId": "com.ScooterSoftware.BeyondCompare",
   "homepage": "https://www.scootersoftware.com/",
   "fileName": "beyond_compare_5.1.2.31185.pkg",
   "type": "app",
-  "previous_version": "5.1.2.31185",
-  "sha": "c5542acdc824db0a0c31f8203e68d1cc6060ac5db22cf08517b47d7f695ff931",
+  "previous_version": "5.1.3.31238",
+  "sha": "0d79d92aa7df069e82102e6049faa44d28ed44636632685b5d87bdaf1a07d7c0",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:23:51Z",
     "qa_result": "Installation successful and verified",

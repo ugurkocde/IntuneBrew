@@ -1,12 +1,12 @@
 {
   "name": "WebStorm",
   "description": "JavaScript IDE",
-  "version": "2025.1.4.1",
-  "url": "https://download.jetbrains.com/webstorm/WebStorm-2025.1.4.1-aarch64.dmg",
+  "version": "2025.2",
+  "url": "https://download.jetbrains.com/webstorm/WebStorm-2025.2-aarch64.dmg",
   "bundleId": "com.jetbrains.WebStorm",
   "homepage": "https://www.jetbrains.com/webstorm/",
-  "fileName": "WebStorm-2025.1.4.1-aarch64.dmg",
-  "sha": "6840c346c133f3d1ed0eb41ba2f0195b32a70eb69884c66af408c51ebdb6825a",
+  "fileName": "WebStorm-2025.2-aarch64.dmg",
+  "sha": "5f29ca9472c068f8086cb05c4ef3b0fb2b88d4888ef1c5430a0e1f2c771ccbce",
   "changelog": "https://www.jetbrains.com/webstorm/whatsnew/",
   "previous_version": "2025.1.4.1"
 }

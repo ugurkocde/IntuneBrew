@@ -1,14 +1,14 @@
 {
   "name": "AltTab",
   "description": "Enable Windows-like alt-tab",
-  "version": "7.26.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/alttab_7.26.0.pkg",
+  "version": "7.27.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/alttab_7.27.0.pkg",
   "bundleId": "com.lwouis.alt-tab-macos",
   "homepage": "https://alt-tab-macos.netlify.app/",
   "fileName": "alttab_7.26.0.pkg",
   "type": "app",
-  "sha": "2962cdf05b95ebb52e20de471793733d7fee74f55ec742a3d9e363b137f9bbdd",
-  "previous_version": "7.26.0",
+  "sha": "8e3b60a5f2b32e3d9c014be98e50bd4939a9f04377cbeadd415289bd31f3a173",
+  "previous_version": "7.27.0",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:30:14Z",
     "qa_result": "Installation successful and verified",

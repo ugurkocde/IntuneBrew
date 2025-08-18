@@ -1,14 +1,14 @@
 {
   "name": "Copilot for Xcode",
   "description": "Xcode extension for GitHub Copilot",
-  "version": "0.35.8",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/copilot_for_xcode_0.35.8.pkg",
+  "version": "0.35.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/copilot_for_xcode_0.35.9.pkg",
   "bundleId": "com.github.CopilotForXcode",
   "homepage": "https://github.com/intitni/CopilotForXcode",
   "fileName": "copilot_for_xcode_0.35.8.pkg",
   "type": "app",
-  "sha": "6999e7568ee8bd09ec21e06c0f9c78aa96dd8df8a4f8d61a20f00c93ce1eaf9f",
-  "previous_version": "0.35.8",
+  "sha": "12037570a87026c4ddbc5e5367db6ca60c7db66eb9bd824d320f0decb63dc2aa",
+  "previous_version": "0.35.9",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:49:37Z",
     "qa_result": "Installation successful and verified",

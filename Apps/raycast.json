@@ -1,12 +1,12 @@
 {
   "name": "Raycast",
   "description": "Control your tools with a few keystrokes",
-  "version": "1.102.3",
-  "url": "https://releases.raycast.com/releases/1.102.3/download?build=arm",
+  "version": "1.102.4",
+  "url": "https://releases.raycast.com/releases/1.102.4/download?build=arm",
   "bundleId": "com.raycast.macos",
   "homepage": "https://raycast.com/",
   "fileName": "download?build=arm",
-  "sha": "adbebb4569afe3326ce28b06b7fe03e577d5dd94f561bc211c0844a8fac2c429",
+  "sha": "558c2f53d0d6a3013edf864102ca888c62469c755f7555869786da2f96e837c3",
   "changelog": "https://raycast.com/changelog",
-  "previous_version": "1.102.2"
+  "previous_version": "1.102.3"
 }

@@ -1,12 +1,12 @@
 {
   "name": "Suspicious Package",
   "description": "Application for inspecting installer packages",
-  "version": "4.5",
+  "version": "4.6",
   "url": "https://www.mothersruin.com/software/downloads/SuspiciousPackage.dmg",
   "bundleId": "com.mothersruin.SuspiciousPackageApp",
   "homepage": "https://www.mothersruin.com/software/SuspiciousPackage/",
   "fileName": "SuspiciousPackage.dmg",
-  "sha": "fff88bec145da31f8a0350899c6b6d5108947ec92e05e306adfd5850db7f9bdd",
+  "sha": "489717a9047f762dd3f0adee34abf4d1090bb260c624d53d350108a434aa6093",
   "changelog": "https://www.mothersruin.com/software/SuspiciousPackage/relnotes.html",
   "previous_version": "4.5"
 }

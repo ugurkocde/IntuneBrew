@@ -1,12 +1,12 @@
 {
   "name": "Google Chrome",
   "description": "Web browser",
-  "version": "138.0.7204.184",
+  "version": "139.0.7258.128",
   "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
   "bundleId": "com.google.Chrome",
   "homepage": "https://www.google.com/chrome/",
   "fileName": "googlechrome.dmg",
-  "sha": "044ab1012ec7e5ac118091daac1c36a8799a31568301d8c0668ac2cb8b45680b",
+  "sha": "beb2293f39604047be64dc026a85d008549a1afa64b28c1a04529a0c0196c9dd",
   "changelog": "https://chromereleases.googleblog.com/",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:20:37Z",
@@ -17,5 +17,5 @@
     "verify_status": "app_not_found",
     "bundle_id_status": "pending"
   },
-  "previous_version": "138.0.7204.169"
+  "previous_version": "138.0.7204.184"
 }

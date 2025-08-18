@@ -1,12 +1,12 @@
 {
   "name": "Rotato",
   "description": "Mockup generator & animator 3D",
-  "version": "151",
-  "url": "https://download.rota.to/Rotato-151.dmg",
+  "version": "152",
+  "url": "https://download.rota.to/Rotato-152.dmg",
   "bundleId": "com.mortenjust.Rendermock",
   "homepage": "https://rotato.app/",
-  "fileName": "Rotato-151.dmg",
-  "sha": "e6e15031ff155dd72005861e36267256cad77797dd78e3164e4f7f41add3501a",
+  "fileName": "Rotato-152.dmg",
+  "sha": "417dc73d5b048a37502c3822637aae12ff23a23c995221084f40ba8dba51fcad",
   "changelog": "https://rotato.app/releases",
   "previous_version": "151"
 }

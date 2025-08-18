@@ -1,14 +1,14 @@
 {
   "name": "Arc",
   "description": "Chromium based browser",
-  "version": "1.106.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/arc_1.106.0.pkg",
+  "version": "1.108.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/arc_1.108.0.pkg",
   "bundleId": "company.thebrowser.Browser",
   "homepage": "https://arc.net/",
   "fileName": "arc_1.106.0.pkg",
   "type": "app",
-  "sha": "bc29dae923552827c88e9698a0b2f5b9780e1dd2aa87ea01bd8e6a6ab4a0c299",
-  "previous_version": "1.106.0",
+  "sha": "86cf5d07a6f4dab2f17df828f0fedfa255791781461a4ba297e48a85b7606913",
+  "previous_version": "1.108.0",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:19:57Z",
     "qa_result": "Installation successful and verified",

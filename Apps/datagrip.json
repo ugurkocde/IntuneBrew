@@ -1,12 +1,12 @@
 {
   "name": "DataGrip",
   "description": "Databases and SQL IDE",
-  "version": "2025.2",
-  "url": "https://download.jetbrains.com/datagrip/datagrip-2025.2-aarch64.dmg",
+  "version": "2025.2.2",
+  "url": "https://download.jetbrains.com/datagrip/datagrip-2025.2.2-aarch64.dmg",
   "bundleId": "com.jetbrains.datagrip",
   "homepage": "https://www.jetbrains.com/datagrip/",
-  "fileName": "datagrip-2025.2-aarch64.dmg",
-  "sha": "86a4851e0ab9a74bb1c12c829752dc04b1e15b1ba668f7712ea6a0ecb5be058b",
+  "fileName": "datagrip-2025.2.2-aarch64.dmg",
+  "sha": "eec04b3602062cf5dd6be20b0c77ce4a384c0727bd43403d1eb9646b268439f6",
   "changelog": "https://www.jetbrains.com/datagrip/whatsnew/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:25:00Z",

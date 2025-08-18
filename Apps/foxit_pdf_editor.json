@@ -1,12 +1,12 @@
 {
   "name": "Foxit PDF Editor",
   "description": "PDF Editor",
-  "version": "13.1.7.63027",
-  "url": "https://cdn01.foxitsoftware.com/pub/foxit/phantomPDF/desktop/mac/13.x/13.1.7/FoxitPDFEditor1317.L10N.Setup.pkg",
+  "version": "14.0.0.68868",
+  "url": "https://cdn01.foxitsoftware.com/pub/foxit/phantomPDF/desktop/mac/14.x/14.0.0/FoxitPDFEditor1400.L10N.Setup.pkg",
   "bundleId": "com.foxit.pkg.pdfeditor",
   "homepage": "https://www.foxit.com/pdf-editor/",
-  "fileName": "FoxitPDFEditor1317.L10N.Setup.pkg",
-  "sha": "f381214ff865a20381ab77faec73bd1f2b5abb801c8426a7fcb3f76633e2d573",
+  "fileName": "FoxitPDFEditor1400.L10N.Setup.pkg",
+  "sha": "b9645d63b7df5b5a21757b363f9a80f40d180cb94671e9ed356b57b4c8590b02",
   "changelog": "https://www.foxit.com/pdf-editor/version-history.html",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:11:29Z",

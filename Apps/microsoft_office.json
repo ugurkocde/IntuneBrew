@@ -1,12 +1,12 @@
 {
   "name": "Microsoft Office",
   "description": "Office suite",
-  "version": "16.99.25071321",
-  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.99.25071321_Installer.pkg",
+  "version": "16.100.25081015",
+  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.100.25081015_Installer.pkg",
   "bundleId": "com.microsoft.Office365",
   "homepage": "https://www.microsoft.com/en-us/microsoft-365/mac/microsoft-365-for-mac/",
-  "fileName": "Microsoft_365_and_Office_16.99.25071321_Installer.pkg",
-  "sha": "0354ac1966f51bb460a2eac6addf01a16e82b974ea9ebf9ab949c8ab25f5cf4c",
+  "fileName": "Microsoft_365_and_Office_16.100.25081015_Installer.pkg",
+  "sha": "fa87435fe7e2a63040c17597fa227f67c58c1f914bf681c26e9bd54e543fd8d8",
   "changelog": "https://learn.microsoft.com/en-us/officeupdates/release-notes-office-for-mac",
   "previous_version": "16.99.25071321"
 }

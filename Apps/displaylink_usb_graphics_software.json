@@ -1,11 +1,11 @@
 {
   "name": "DisplayLink USB Graphics Software",
   "description": "Drivers for DisplayLink docks, adapters and monitors",
-  "version": "1.12.4",
-  "url": "https://www.synaptics.com/sites/default/files/exe_files/2025-06/DisplayLink%20Manager%20Graphics%20Connectivity1.12.4-EXE.zip",
+  "version": "13.0",
+  "url": "https://www.synaptics.com/sites/default/files/exe_files/2025-07/DisplayLink%20Manager%20Graphics%20Connectivity13.0-EXE.zip",
   "bundleId": "com.displaylink.*",
   "homepage": "https://www.synaptics.com/products/displaylink-graphics",
-  "fileName": "DisplayLink%20Manager%20Graphics%20Connectivity1.12.4-EXE.zip",
+  "fileName": "DisplayLink%20Manager%20Graphics%20Connectivity13.0-EXE.zip",
   "type": "pkg",
   "qa_info": {
     "qa_timestamp": "2025-05-14T08:59:10Z",
