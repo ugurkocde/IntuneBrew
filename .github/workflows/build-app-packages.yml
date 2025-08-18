@@ -211,9 +211,7 @@ jobs:
                 
                 # Extract PKG (pkgutil will create the directory)
                 echo "🔓 Extracting outer PKG..."
-                pkgutil --expand "${download_path}.pkg" "$temp_dir"
-                
-                if [ $? -eq 0 ]; then
+                if pkgutil --expand "${download_path}.pkg" "$temp_dir" 2>/dev/null; then
                   echo "✅ PKG extraction successful"
                   echo "📁 Extracted contents:"
                   ls -R "$temp_dir"
@@ -285,7 +283,12 @@ jobs:
                     echo "❌ Failed to upload to Azure"
                   fi
                 else
-                  echo "❌ Failed to extract PKG"
+                  echo "❌ Failed to extract PKG for $app_name"
+                  rm -f "${download_path}.pkg"
+                  rm -rf "$temp_dir"
+                  FAILED_APPS+=("$app_name")
+                  ERROR_LOG+=("$app_name: Failed to extract pkg_in_pkg from $url")
+                  continue
                 fi
                 
                 # Cleanup
@@ -328,8 +331,7 @@ jobs:
               
               # Mount DMG
               echo "💿 Mounting DMG..."
-              hdiutil attach "${download_path}.dmg" -mountpoint "${download_path}_mount" -nobrowse
-              if [ $? -eq 0 ]; then
+              if hdiutil attach "${download_path}.dmg" -mountpoint "${download_path}_mount" -nobrowse 2>/dev/null; then
                 echo "✅ DMG mounted successfully"
                 echo "📁 Mount point contents:"
                 ls -la "${download_path}_mount"
@@ -391,7 +393,7 @@ jobs:
               # Cleanup
               echo "🧹 Cleaning up..."
               echo "💿 Unmounting DMG..."
-              hdiutil detach "${download_path}_mount"
+              hdiutil detach "${download_path}_mount" 2>/dev/null || true
               echo "🗑️ Removing temporary files..."
               rm -f "${download_path}.dmg"
               rm -rf "${download_path}_mount"
@@ -403,7 +405,12 @@ jobs:
               download_path="$HOME/Desktop/${app_name}"
               if [[ "$url" == *".zip" ]]; then
                 # Download file first
-                curl -L -o "${download_path}.download" "$url"
+                if ! curl -L -o "${download_path}.download" "$url"; then
+                  echo "❌ Failed to download $app_name from $url"
+                  FAILED_APPS+=("$app_name")
+                  ERROR_LOG+=("$app_name: Failed to download from $url")
+                  continue
+                fi
                 cd "$HOME/Desktop"
                 
                 # Detect actual file type
@@ -470,7 +477,12 @@ jobs:
                 fi
               elif [[ "$url" == *".tar.xz" ]]; then
                 echo "📦 Processing tar.xz archive for $app_name..."
-                curl -L -o "${download_path}.tar.xz" "$url"
+                if ! curl -L -o "${download_path}.tar.xz" "$url"; then
+                  echo "❌ Failed to download $app_name from $url"
+                  FAILED_APPS+=("$app_name")
+                  ERROR_LOG+=("$app_name: Failed to download tar.xz from $url")
+                  continue
+                fi
                 cd "$HOME/Desktop"
                 # Extract tar.xz
                 echo "📂 Creating extraction directory..."
@@ -484,10 +496,20 @@ jobs:
               elif [[ "$url" == *".tar.bz2" ]] || [[ "$url" == *".tbz" ]]; then
                 echo "📦 Processing tar.bz2/tbz archive for $app_name..."
                 if [[ "$url" == *".tar.bz2" ]]; then
-                  curl -L -o "${download_path}.tar.bz2" "$url"
+                  if ! curl -L -o "${download_path}.tar.bz2" "$url"; then
+                    echo "❌ Failed to download $app_name from $url"
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Failed to download tar.bz2 from $url")
+                    continue
+                  fi
                   archive_path="${download_path}.tar.bz2"
                 else
-                  curl -L -o "${download_path}.tbz" "$url"
+                  if ! curl -L -o "${download_path}.tbz" "$url"; then
+                    echo "❌ Failed to download $app_name from $url"
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Failed to download tbz from $url")
+                    continue
+                  fi
                   archive_path="${download_path}.tbz"
                 fi
                 cd "$HOME/Desktop"
@@ -527,7 +549,12 @@ jobs:
                 ls -R "${app_name}_extracted"
               elif [[ "$url" == *".tar.gz" ]]; then
                 echo "📦 Processing tar.gz archive for $app_name..."
-                curl -L -o "${download_path}.tar.gz" "$url"
+                if ! curl -L -o "${download_path}.tar.gz" "$url"; then
+                  echo "❌ Failed to download $app_name from $url"
+                  FAILED_APPS+=("$app_name")
+                  ERROR_LOG+=("$app_name: Failed to download tar.gz from $url")
+                  continue
+                fi
                 cd "$HOME/Desktop"
                 # Extract tar.gz
                 echo "📂 Creating extraction directory..."
@@ -545,7 +572,12 @@ jobs:
                 ls -R "${app_name}_extracted"
               else
                 # Download file first and detect type
-                curl -L -o "${download_path}.download" "$url"
+                if ! curl -L -o "${download_path}.download" "$url"; then
+                  echo "❌ Failed to download $app_name from $url"
+                  FAILED_APPS+=("$app_name")
+                  ERROR_LOG+=("$app_name: Failed to download from $url")
+                  continue
+                fi
                 cd "$HOME/Desktop"
                 
                 # Detect actual file type
@@ -657,7 +689,13 @@ jobs:
               
               # Build PKG with version in filename
               echo "Building PKG for $app_name version $version..."
-              pkgbuild --install-location /Applications --component "$app_file" "${app_name}_${version}.pkg"
+              if ! pkgbuild --install-location /Applications --component "$app_file" "${app_name}_${version}.pkg" 2>/dev/null; then
+                echo "❌ Failed to build PKG for $app_name"
+                rm -rf "${app_name}_extracted"
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: Failed to build PKG from .app file")
+                continue
+              fi
               
               # Calculate SHA256 hash
               echo "🔐 Calculating SHA256 hash..."
