@@ -17,6 +17,10 @@ fi
 echo "Stopping Flameshot if running..."
 pkill -f "Flameshot" 2>/dev/null || true
 
+# Kill application with bundle ID org.flameshot.flameshot if running
+echo "Stopping application with bundle ID org.flameshot.flameshot if running..."
+killall -9 "org.flameshot.flameshot" 2>/dev/null || true
+
 # Remove /Applications/flameshot.app
 echo "Removing /Applications/flameshot.app..."
 if [ -d "/Applications/flameshot.app" ]; then

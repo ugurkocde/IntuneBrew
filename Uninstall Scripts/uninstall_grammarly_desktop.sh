@@ -49,6 +49,14 @@ elif [ -f "$HOME/Library/Caches/com.grammarly.ProjectLlama" ]; then
     rm -f "$HOME/Library/Caches/com.grammarly.ProjectLlama" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.grammarly.GRLlamaOnboarding.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/com.grammarly.GRLlamaOnboarding.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/com.grammarly.GRLlamaOnboarding.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.grammarly.GRLlamaOnboarding.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.grammarly.GRLlamaOnboarding.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.grammarly.GRLlamaOnboarding.binarycookies" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.grammarly.ProjectLlama
 echo "Removing $HOME/Library/HTTPStorages/com.grammarly.ProjectLlama..."
 if [ -d "$HOME/Library/HTTPStorages/com.grammarly.ProjectLlama" ]; then
@@ -79,6 +87,14 @@ if [ -d "$HOME/Library/Preferences/com.grammarly.ProjectLlama.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.grammarly.ProjectLlama.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.grammarly.ProjectLlama.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.grammarly.ProjectLlama.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.grammarly.GRLlamaOnboarding
+echo "Removing $HOME/Library/WebKit/com.grammarly.GRLlamaOnboarding..."
+if [ -d "$HOME/Library/WebKit/com.grammarly.GRLlamaOnboarding" ]; then
+    rm -rf "$HOME/Library/WebKit/com.grammarly.GRLlamaOnboarding" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.grammarly.GRLlamaOnboarding" ]; then
+    rm -f "$HOME/Library/WebKit/com.grammarly.GRLlamaOnboarding" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/WebKit/com.grammarly.ProjectLlama

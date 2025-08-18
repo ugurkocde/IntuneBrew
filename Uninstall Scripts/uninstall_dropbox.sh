@@ -135,6 +135,14 @@ elif [ -f "$HOME/Library/Caches/com.dropbox.DropboxMacUpdate" ]; then
     rm -f "$HOME/Library/Caches/com.dropbox.DropboxMacUpdate" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.dropbox.DropboxUpdater
+echo "Removing $HOME/Library/Caches/com.dropbox.DropboxUpdater..."
+if [ -d "$HOME/Library/Caches/com.dropbox.DropboxUpdater" ]; then
+    rm -rf "$HOME/Library/Caches/com.dropbox.DropboxUpdater" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.dropbox.DropboxUpdater" ]; then
+    rm -f "$HOME/Library/Caches/com.dropbox.DropboxUpdater" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.getdropbox.dropbox
 echo "Removing $HOME/Library/Caches/com.getdropbox.dropbox..."
 if [ -d "$HOME/Library/Caches/com.getdropbox.dropbox" ]; then
