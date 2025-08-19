@@ -8,5 +8,5 @@
   "fileName": "VirtualBox-7.2.0-170228-macOSArm64.dmg",
   "sha": "d36e5adf32def56d51b3bffda3c40f03d4443f15c73c9783ff3e3158bb0faed3",
   "changelog": "https://www.virtualbox.org/wiki/Changelog",
-  "previous_version": "7.1.12"
+  "previous_version": "7.2.0"
 }

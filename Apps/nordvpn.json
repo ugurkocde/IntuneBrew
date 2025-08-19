@@ -1,12 +1,12 @@
 {
   "name": "NordVPN",
   "description": "VPN client for secure internet access and private browsing",
-  "version": "9.2.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/nordvpn_9.2.1.pkg",
+  "version": "9.3.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/nordvpn_9.3.1.pkg",
   "bundleId": "com.nordvpn.macos",
   "homepage": "https://nordvpn.com/",
-  "fileName": "NordVPN.pkg",
+  "fileName": "nordvpn_9.3.1.pkg",
   "type": "pkg_in_pkg",
-  "sha": "c3d2d9d6e772feba1ff48fa8c5cd2f407c0de482688e4ab87fd1b7c99d6a6153",
+  "sha": "df9797db3cb7a977df112b88e230a568113a21fa31d7e6c110f5b4e83a9f1a0a",
   "previous_version": "9.2.1"
 }

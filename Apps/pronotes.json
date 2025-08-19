@@ -1,12 +1,12 @@
 {
   "name": "ProNotes",
   "description": "Apple Notes extension",
-  "version": "0.7.7",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/pronotes_0.7.7.pkg",
+  "version": "0.7.8.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/pronotes_0.7.8.2.pkg",
   "bundleId": "com.dexterleng.ProNotes",
   "homepage": "https://www.pronotes.app/",
-  "fileName": "pronotes_0.7.7.pkg",
+  "fileName": "pronotes_0.7.8.2.pkg",
   "type": "app",
-  "sha": "fa3e0f512c52d71e22d2ae9b2b00c835adcbce684db2c948ed243520bc622ad2",
-  "previous_version": "0.7.7"
+  "sha": "3f62f893a1858bd350778e64362c3fa31a6d20dc4843a9b47dd97440d76cb3a1",
+  "previous_version": "0.7.8.2"
 }
