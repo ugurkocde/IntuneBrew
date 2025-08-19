@@ -164,6 +164,52 @@ Write-Host ""
 # Define GitHub repository to check for supported apps
 $gitHubRespositoryRawUrl = "https://raw.githubusercontent.com/ugurkocde/IntuneBrew"
 
+# Handle search parameter early (doesn't require authentication)
+if ($Search) {
+    # Fetch supported apps from GitHub repository
+    $supportedAppsUrl = "$gitHubRespositoryRawUrl/refs/heads/main/supported_apps.json"
+    
+    try {
+        $supportedApps = Invoke-RestMethod -Uri $supportedAppsUrl -Method Get
+        
+        # Function for fuzzy search matching (simplified version for early use)
+        function Get-FuzzyMatchEarly {
+            param([string]$SearchTerm, [array]$AppList)
+            $searchLower = $SearchTerm.ToLower()
+            $matches = @()
+            foreach ($app in $AppList) {
+                $appLower = $app.ToLower()
+                if ($appLower -eq $searchLower -or $appLower -like "*$searchLower*" -or $appLower.StartsWith($searchLower)) {
+                    $matches += $app
+                }
+            }
+            return $matches
+        }
+        
+        Write-Host "`nSearching for apps matching: '$Search'" -ForegroundColor Cyan
+        $appNames = $supportedApps.PSObject.Properties.Name
+        $searchResults = Get-FuzzyMatchEarly -SearchTerm $Search -AppList $appNames
+        
+        if ($searchResults.Count -gt 0) {
+            Write-Host "`nFound $($searchResults.Count) matching app(s):" -ForegroundColor Green
+            $index = 1
+            foreach ($app in $searchResults | Sort-Object) {
+                Write-Host "  $index. $app"
+                $index++
+            }
+        }
+        else {
+            Write-Host "`nNo apps found matching '$Search'" -ForegroundColor Yellow
+        }
+    }
+    catch {
+        Write-Host "Error fetching supported apps list: $_" -ForegroundColor Red
+    }
+    
+    # Exit after showing search results
+    exit
+}
+
 # Authentication START
 
 # Required Graph API permissions for app functionality
@@ -1181,27 +1227,6 @@ try {
         }
     }
 
-    # Handle search parameter
-    if ($Search) {
-        Write-Host "`nSearching for apps matching: '$Search'" -ForegroundColor Cyan
-        $appNames = $supportedApps.PSObject.Properties.Name
-        $searchResults = Get-FuzzyMatch -SearchTerm $Search -AppList $appNames
-        
-        if ($searchResults.Count -gt 0) {
-            Write-Host "`nFound $($searchResults.Count) matching app(s):" -ForegroundColor Green
-            $index = 1
-            foreach ($app in $searchResults) {
-                Write-Host "  $index. $app"
-                $index++
-            }
-        }
-        else {
-            Write-Host "`nNo apps found matching '$Search'" -ForegroundColor Yellow
-        }
-        
-        # Exit after showing search results
-        exit
-    }
 
     # Process apps based on command line parameters or allow manual selection
     if ($BulkUpload) {
