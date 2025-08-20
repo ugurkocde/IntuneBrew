@@ -1,13 +1,13 @@
 {
   "name": "Mountain Duck",
   "description": "Mounts servers and cloud storages as a disk on the desktop",
-  "version": "4.17.5",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/mountain_duck_4.17.5.pkg",
+  "version": "5.0.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/mountain_duck_5.0.0.pkg",
   "bundleId": "io.mountainduck",
   "homepage": "https://mountainduck.io/",
-  "fileName": "mountain_duck_4.17.5.pkg",
+  "fileName": "mountain_duck_5.0.0.pkg",
   "type": "app",
-  "sha": "25f3824557a927fba212c2d76176a8c1e2c628a779741adf9adfcbad297f85eb",
+  "sha": "bfc518fbba87c6654c0b065db6ff6836f4b7fdd52486800f939e67d05f53cd9b",
   "changelog": "https://mountainduck.io/changelog/",
-  "previous_version": "4.17.5"
+  "previous_version": "5.0.0"
 }
