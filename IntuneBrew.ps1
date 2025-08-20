@@ -1,5 +1,5 @@
 <#PSScriptInfo
-.VERSION 0.9.0
+.VERSION 1.0.0
 .GUID 53ddb976-1bc1-4009-bfa0-1e2a51477e4d
 .AUTHOR ugurk
 .COMPANYNAME
@@ -12,6 +12,7 @@
 .REQUIREDSCRIPTS
 .EXTERNALSCRIPTDEPENDENCIES
 .RELEASENOTES
+Version 1.0.0: Major update with 5 new features: Search functionality with fuzzy matching (-Search), Preserve assignments when updating apps (-PreserveAssignments), Bulk upload by app numbers (-BulkUpload), Ignore app version checking (-IgnoreAppVersion), Support for local JSON directory (-LocalJsonDirectory). Fixes issue #100, #74, #16, #66, #5.
 Version 0.9.0: Added -ConfigFile parameter for non-interactive authentication (enables macOS support). Added -UseExistingIntuneApp parameter to update existing apps instead of creating duplicates.
 Version 0.8.0: Added -AppNamePrefix and -AppNameSuffix parameters to customize Intune app names. Changed app status display from table to line-by-line for better readability.
 Version 0.7.1: Added a processing summary that displays after app uploads/updates, showing app name, version changes, and time taken.
@@ -75,6 +76,26 @@ Version 0.3.7: Fix Parse Errors
  Specifies a suffix to be added to the application name in Intune.
  Example: IntuneBrew -Upload slack -AppNameSuffix " for Mac"
 
+.PARAMETER Search
+ Search for applications using fuzzy matching. Returns a list of matching apps.
+ Example: IntuneBrew -Search "chrome"
+
+.PARAMETER PreserveAssignments
+ Automatically preserves assignments from the old version when updating apps.
+ Example: IntuneBrew -UpdateAll -PreserveAssignments
+
+.PARAMETER BulkUpload
+ Upload multiple apps by their numbers. Accepts comma-separated numbers and ranges.
+ Example: IntuneBrew -BulkUpload "1,3,5-10"
+
+.PARAMETER IgnoreAppVersion
+ Ignores app version checking during upload/update. Useful for apps with auto-update.
+ Example: IntuneBrew -Upload office -IgnoreAppVersion
+
+.PARAMETER LocalJsonDirectory
+ Specifies a local directory containing custom JSON app definitions.
+ Example: IntuneBrew -LocalJsonDirectory "./custom-apps"
+
 #>
 param(
     [Parameter(Mandatory = $false)]
@@ -105,7 +126,22 @@ param(
     [string]$AppNamePrefix,
 
     [Parameter(Mandatory = $false)]
-    [string]$AppNameSuffix
+    [string]$AppNameSuffix,
+    
+    [Parameter(Mandatory = $false)]
+    [string]$Search,
+    
+    [Parameter(Mandatory = $false)]
+    [switch]$PreserveAssignments,
+    
+    [Parameter(Mandatory = $false)]
+    [string]$BulkUpload,
+    
+    [Parameter(Mandatory = $false)]
+    [switch]$IgnoreAppVersion,
+    
+    [Parameter(Mandatory = $false)]
+    [string]$LocalJsonDirectory
 )
 
 Write-Host "
@@ -118,8 +154,8 @@ ___       _                    ____
 
 Write-Host "IntuneBrew - Automated macOS Application Deployment via Microsoft Intune" -ForegroundColor Green
 Write-Host "Made by Ugur Koc with" -NoNewline; Write-Host " ❤️  and ☕" -NoNewline
-Write-Host " | Version" -NoNewline; Write-Host " 0.9.0" -ForegroundColor Yellow -NoNewline
-Write-Host " | Last updated: " -NoNewline; Write-Host "2025-06-10" -ForegroundColor Magenta
+Write-Host " | Version" -NoNewline; Write-Host " 1.0.0" -ForegroundColor Yellow -NoNewline
+Write-Host " | Last updated: " -NoNewline; Write-Host "2025-08-19" -ForegroundColor Magenta
 Write-Host ""
 Write-Host "This is a preview version. If you have any feedback, please open an issue at https://github.com/ugurkocde/IntuneBrew/issues. Thank you!" -ForegroundColor Cyan
 Write-Host "You can sponsor the development of this project at https://github.com/sponsors/ugurkocde" -ForegroundColor Red
@@ -127,6 +163,52 @@ Write-Host ""
 
 # Define GitHub repository to check for supported apps
 $gitHubRespositoryRawUrl = "https://raw.githubusercontent.com/ugurkocde/IntuneBrew"
+
+# Handle search parameter early (doesn't require authentication)
+if ($Search) {
+    # Fetch supported apps from GitHub repository
+    $supportedAppsUrl = "$gitHubRespositoryRawUrl/refs/heads/main/supported_apps.json"
+    
+    try {
+        $supportedApps = Invoke-RestMethod -Uri $supportedAppsUrl -Method Get
+        
+        # Function for fuzzy search matching (simplified version for early use)
+        function Get-FuzzyMatchEarly {
+            param([string]$SearchTerm, [array]$AppList)
+            $searchLower = $SearchTerm.ToLower()
+            $matchedApps = @()
+            foreach ($app in $AppList) {
+                $appLower = $app.ToLower()
+                if ($appLower -eq $searchLower -or $appLower -like "*$searchLower*" -or $appLower.StartsWith($searchLower)) {
+                    $matchedApps += $app
+                }
+            }
+            return $matchedApps
+        }
+        
+        Write-Host "`nSearching for apps matching: '$Search'" -ForegroundColor Cyan
+        $appNames = $supportedApps.PSObject.Properties.Name
+        $searchResults = Get-FuzzyMatchEarly -SearchTerm $Search -AppList $appNames
+        
+        if ($searchResults.Count -gt 0) {
+            Write-Host "`nFound $($searchResults.Count) matching app(s):" -ForegroundColor Green
+            $index = 1
+            foreach ($app in $searchResults | Sort-Object) {
+                Write-Host "  $index. $app"
+                $index++
+            }
+        }
+        else {
+            Write-Host "`nNo apps found matching '$Search'" -ForegroundColor Yellow
+        }
+    }
+    catch {
+        Write-Host "Error fetching supported apps list: $_" -ForegroundColor Red
+    }
+    
+    # Exit after showing search results
+    exit
+}
 
 # Authentication START
 
@@ -1033,16 +1115,145 @@ function Convert-ScriptToBase64 {
     }
 }
 
+# Function for fuzzy search matching
+function Get-FuzzyMatch {
+    param(
+        [string]$SearchTerm,
+        [array]$AppList
+    )
+    
+    $searchLower = $SearchTerm.ToLower()
+    $matchResults = @()
+    
+    foreach ($app in $AppList) {
+        $appLower = $app.ToLower()
+        # Check for exact match
+        if ($appLower -eq $searchLower) {
+            $matchResults += @{Name = $app; Score = 100}
+        }
+        # Check for contains match
+        elseif ($appLower -contains $searchLower -or $appLower -like "*$searchLower*") {
+            $matchResults += @{Name = $app; Score = 80}
+        }
+        # Check for starts with
+        elseif ($appLower.StartsWith($searchLower)) {
+            $matchResults += @{Name = $app; Score = 90}
+        }
+        # Check for partial matches (fuzzy)
+        else {
+            $score = 0
+            $searchChars = $searchLower.ToCharArray()
+            $lastIndex = -1
+            
+            foreach ($char in $searchChars) {
+                $index = $appLower.IndexOf($char, $lastIndex + 1)
+                if ($index -gt $lastIndex) {
+                    $score += 10
+                    $lastIndex = $index
+                }
+            }
+            
+            if ($score -gt ($searchChars.Length * 5)) {
+                $matchResults += @{Name = $app; Score = $score}
+            }
+        }
+    }
+    
+    return $matchResults | Sort-Object -Property Score -Descending | Select-Object -ExpandProperty Name
+}
+
+# Function to convert bulk upload numbers to array
+function ConvertTo-BulkNumber {
+    param(
+        [string]$NumberString,
+        [int]$MaxNumber
+    )
+    
+    $numbers = @()
+    $parts = $NumberString -split ','
+    
+    foreach ($part in $parts) {
+        $part = $part.Trim()
+        if ($part -match '^\d+$') {
+            # Single number
+            $num = [int]$part
+            if ($num -ge 1 -and $num -le $MaxNumber) {
+                $numbers += $num
+            }
+        }
+        elseif ($part -match '^(\d+)-(\d+)$') {
+            # Range
+            $start = [int]$matches[1]
+            $end = [int]$matches[2]
+            if ($start -le $end) {
+                for ($i = $start; $i -le $end; $i++) {
+                    if ($i -ge 1 -and $i -le $MaxNumber) {
+                        $numbers += $i
+                    }
+                }
+            }
+        }
+    }
+    
+    return $numbers | Select-Object -Unique | Sort-Object
+}
+
 # Fetch supported apps from GitHub repository
 $supportedAppsUrl = "$gitHubRespositoryRawUrl/refs/heads/main/supported_apps.json"
 $githubJsonUrls = @()
 
+# Check for local JSON directory first
+$localJsonOverrides = @{}
+if ($LocalJsonDirectory -and (Test-Path $LocalJsonDirectory)) {
+    Write-Host "`nLoading local JSON files from: $LocalJsonDirectory" -ForegroundColor Cyan
+    $localJsonFiles = Get-ChildItem -Path $LocalJsonDirectory -Filter "*.json" -File
+    
+    foreach ($file in $localJsonFiles) {
+        $appName = [System.IO.Path]::GetFileNameWithoutExtension($file.Name).ToLower()
+        $localJsonOverrides[$appName] = $file.FullName
+        Write-Host "  - Found local override for: $appName" -ForegroundColor Gray
+    }
+}
+
 try {
     # Fetch the supported apps JSON
     $supportedApps = Invoke-RestMethod -Uri $supportedAppsUrl -Method Get
+    
+    # Merge local apps with supported apps
+    foreach ($localApp in $localJsonOverrides.Keys) {
+        if (-not $supportedApps.PSObject.Properties.Name -contains $localApp) {
+            # Add local app to supported apps
+            $supportedApps | Add-Member -MemberType NoteProperty -Name $localApp -Value "file://$($localJsonOverrides[$localApp])" -Force
+        }
+    }
+
 
     # Process apps based on command line parameters or allow manual selection
-    if ($Upload) {
+    if ($BulkUpload) {
+        # Display numbered list of apps
+        Write-Host "`nAvailable applications:" -ForegroundColor Cyan
+        $sortedApps = $supportedApps.PSObject.Properties | Sort-Object Name
+        $index = 1
+        $appIndexMap = @{}
+        
+        foreach ($app in $sortedApps) {
+            Write-Host "  $index. $($app.Name)"
+            $appIndexMap[$index] = $app.Name
+            $index++
+        }
+        
+        Write-Host "`nProcessing bulk upload with numbers: $BulkUpload" -ForegroundColor Cyan
+        $selectedNumbers = ConvertTo-BulkNumber -NumberString $BulkUpload -MaxNumber ($sortedApps.Count)
+        
+        foreach ($num in $selectedNumbers) {
+            $appName = $appIndexMap[$num]
+            if ($appName) {
+                Write-Host "  - Selected: $appName" -ForegroundColor Green
+                $githubJsonUrls += $supportedApps.$appName
+            }
+        }
+    }
+    elseif ($Upload) {
         Write-Host "`nProcessing specified applications:" -ForegroundColor Cyan
         foreach ($app in $Upload) {
             $appName = $app.Trim().ToLower()
@@ -1064,16 +1275,32 @@ try {
         # Allow user to select which apps to process
         Write-Host "`nAvailable applications:" -ForegroundColor Cyan
         # Add Sort-Object to sort the app names alphabetically
-        $supportedApps.PSObject.Properties |
-        Sort-Object Name |
-        ForEach-Object {
-            Write-Host "  - $($_.Name)"
+        $sortedApps = $supportedApps.PSObject.Properties | Sort-Object Name
+        $index = 1
+        $appIndexMap = @{}
+        
+        foreach ($app in $sortedApps) {
+            Write-Host "  $index. $($app.Name)"
+            $appIndexMap[$index] = $app.Name
+            $index++
         }
-        Write-Host "`nEnter app names separated by commas (or 'all' for all apps):"
+        
+        Write-Host "`nEnter app names separated by commas, numbers (e.g., 1,3,5-10), or 'all' for all apps:"
         $selectedApps = Read-Host
 
         if ($selectedApps.Trim().ToLower() -eq 'all') {
             $githubJsonUrls = $supportedApps.PSObject.Properties.Value
+        }
+        # Check if input contains numbers
+        elseif ($selectedApps -match '^\s*[\d,\-\s]+$') {
+            $selectedNumbers = ConvertTo-BulkNumber -NumberString $selectedApps -MaxNumber ($sortedApps.Count)
+            foreach ($num in $selectedNumbers) {
+                $appName = $appIndexMap[$num]
+                if ($appName) {
+                    Write-Host "  - Selected: $appName" -ForegroundColor Green
+                    $githubJsonUrls += $supportedApps.$appName
+                }
+            }
         }
         else {
             $selectedAppsList = $selectedApps.Split(',') | ForEach-Object { $_.Trim().ToLower() }
@@ -1128,7 +1355,7 @@ function Get-AppCveInfo {
     }
 }
 
-# Fetches app information from GitHub JSON file
+# Fetches app information from GitHub JSON file or local file
 function Get-GitHubAppInfo {
     param(
         [string]$jsonUrl
@@ -1140,7 +1367,22 @@ function Get-GitHubAppInfo {
     }
 
     try {
-        $response = Invoke-RestMethod -Uri $jsonUrl -Method Get
+        # Check if it's a local file
+        if ($jsonUrl.StartsWith("file://")) {
+            $localPath = $jsonUrl.Replace("file://", "")
+            if (Test-Path $localPath) {
+                Write-Host "  Loading from local file: $localPath" -ForegroundColor Gray
+                $response = Get-Content $localPath -Raw | ConvertFrom-Json
+            }
+            else {
+                Write-Host "Error: Local file not found: $localPath" -ForegroundColor Red
+                return $null
+            }
+        }
+        else {
+            $response = Invoke-RestMethod -Uri $jsonUrl -Method Get
+        }
+        
         return @{
             name        = $response.name
             description = $response.description
@@ -1153,7 +1395,7 @@ function Get-GitHubAppInfo {
         }
     }
     catch {
-        Write-Host "Error fetching app info from GitHub URL: $jsonUrl" -ForegroundColor Red
+        Write-Host "Error fetching app info from URL: $jsonUrl" -ForegroundColor Red
         Write-Host "Error details: $_" -ForegroundColor Red
         return $null
     }
@@ -1512,6 +1754,11 @@ function Get-IntuneApp {
 
 # Compares version strings accounting for build numbers
 function Test-NewerVersion($githubVersion, $intuneVersion) {
+    # If IgnoreAppVersion is set, always return false for existing apps (don't update based on version)
+    if ($script:IgnoreAppVersion -and $intuneVersion -ne 'Not in Intune') {
+        return $false
+    }
+    
     if ($intuneVersion -eq 'Not in Intune') {
         return $true
     }
@@ -1573,6 +1820,10 @@ if (-not $UpdateAll) {
             $status = "Update Available"
             $statusColor = "Yellow"
         }
+        elseif ($IgnoreAppVersion -and $app.IntuneVersion -ne 'Not in Intune') {
+            $status = "Version ignored"
+            $statusColor = "Gray"
+        }
         else {
             $status = "Up-to-date"
             $statusColor = "Green"
@@ -1622,8 +1873,9 @@ if (($appsToUpload.Count) -eq 0) {
 # Determine whether we should create new Intune app records, or update the existing record
 $updateExistingIntuneApp = $UseExistingIntuneApp.isPresent
 
-# Determine if assignments should be copied based on the -CopyAssignments switch, and -UseExistingIntuneApp not being supplied
-$copyAssignments = $CopyAssignments.IsPresent -and -not $updateExistingIntuneApp
+# Determine if assignments should be copied based on the -CopyAssignments or -PreserveAssignments switches, and -UseExistingIntuneApp not being supplied
+# PreserveAssignments takes precedence and automatically preserves assignments without prompting
+$copyAssignments = ($CopyAssignments.IsPresent -or $PreserveAssignments.IsPresent) -and -not $updateExistingIntuneApp
 
 # Define variables needed for assignment checking/copying regardless of mode
 $updatableApps = @($appsToUpload | Where-Object { $_.IntuneVersion -ne 'Not in Intune' -and (Test-NewerVersion $_.GitHubVersion $_.IntuneVersion) })
@@ -1769,8 +2021,8 @@ if (-not $Upload -and -not $UpdateAll) {
     }
     else {
         # User confirmed 'y'
-        # Ask about copying assignments only if assignments were found AND the -CopyAssignments switch was NOT used (Prompt 2)
-        if ($assignmentsFound -and -not $CopyAssignments.IsPresent -and -not $UseExistingIntuneApp.isPresent) {
+        # Ask about copying assignments only if assignments were found AND the -CopyAssignments/-PreserveAssignments switches were NOT used (Prompt 2)
+        if ($assignmentsFound -and -not $CopyAssignments.IsPresent -and -not $PreserveAssignments.IsPresent -and -not $UseExistingIntuneApp.isPresent) {
             $copyConfirm = Read-Host -Prompt "`nDo you want to copy the listed existing assignments to the updated app$(if($updatableApps.Length -gt 1){'s'})? (y/n)"
             if ($copyConfirm -eq "y") {
                 # Set the flag only if user confirms interactively
