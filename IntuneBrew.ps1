@@ -176,14 +176,14 @@ if ($Search) {
         function Get-FuzzyMatchEarly {
             param([string]$SearchTerm, [array]$AppList)
             $searchLower = $SearchTerm.ToLower()
-            $matches = @()
+            $matchedApps = @()
             foreach ($app in $AppList) {
                 $appLower = $app.ToLower()
                 if ($appLower -eq $searchLower -or $appLower -like "*$searchLower*" -or $appLower.StartsWith($searchLower)) {
-                    $matches += $app
+                    $matchedApps += $app
                 }
             }
-            return $matches
+            return $matchedApps
         }
         
         Write-Host "`nSearching for apps matching: '$Search'" -ForegroundColor Cyan
@@ -1123,21 +1123,21 @@ function Get-FuzzyMatch {
     )
     
     $searchLower = $SearchTerm.ToLower()
-    $matches = @()
+    $matchResults = @()
     
     foreach ($app in $AppList) {
         $appLower = $app.ToLower()
         # Check for exact match
         if ($appLower -eq $searchLower) {
-            $matches += @{Name = $app; Score = 100}
+            $matchResults += @{Name = $app; Score = 100}
         }
         # Check for contains match
         elseif ($appLower -contains $searchLower -or $appLower -like "*$searchLower*") {
-            $matches += @{Name = $app; Score = 80}
+            $matchResults += @{Name = $app; Score = 80}
         }
         # Check for starts with
         elseif ($appLower.StartsWith($searchLower)) {
-            $matches += @{Name = $app; Score = 90}
+            $matchResults += @{Name = $app; Score = 90}
         }
         # Check for partial matches (fuzzy)
         else {
@@ -1154,16 +1154,16 @@ function Get-FuzzyMatch {
             }
             
             if ($score -gt ($searchChars.Length * 5)) {
-                $matches += @{Name = $app; Score = $score}
+                $matchResults += @{Name = $app; Score = $score}
             }
         }
     }
     
-    return $matches | Sort-Object -Property Score -Descending | Select-Object -ExpandProperty Name
+    return $matchResults | Sort-Object -Property Score -Descending | Select-Object -ExpandProperty Name
 }
 
-# Function to parse bulk upload numbers
-function Parse-BulkNumbers {
+# Function to convert bulk upload numbers to array
+function ConvertTo-BulkNumber {
     param(
         [string]$NumberString,
         [int]$MaxNumber
@@ -1243,7 +1243,7 @@ try {
         }
         
         Write-Host "`nProcessing bulk upload with numbers: $BulkUpload" -ForegroundColor Cyan
-        $selectedNumbers = Parse-BulkNumbers -NumberString $BulkUpload -MaxNumber ($sortedApps.Count)
+        $selectedNumbers = ConvertTo-BulkNumber -NumberString $BulkUpload -MaxNumber ($sortedApps.Count)
         
         foreach ($num in $selectedNumbers) {
             $appName = $appIndexMap[$num]
@@ -1293,7 +1293,7 @@ try {
         }
         # Check if input contains numbers
         elseif ($selectedApps -match '^\s*[\d,\-\s]+$') {
-            $selectedNumbers = Parse-BulkNumbers -NumberString $selectedApps -MaxNumber ($sortedApps.Count)
+            $selectedNumbers = ConvertTo-BulkNumber -NumberString $selectedApps -MaxNumber ($sortedApps.Count)
             foreach ($num in $selectedNumbers) {
                 $appName = $appIndexMap[$num]
                 if ($appName) {
