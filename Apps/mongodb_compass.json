@@ -8,5 +8,5 @@
   "fileName": "mongodb-compass-1.46.8-darwin-arm64.dmg",
   "sha": "3e9f37c4212ded75e9250c33aaf0e36f335d561a668b95a369817e7486d40168",
   "changelog": "https://www.mongodb.com/docs/compass/current/release-notes/",
-  "previous_version": "1.46.7"
+  "previous_version": "1.46.8"
 }
