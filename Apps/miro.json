@@ -1,12 +1,12 @@
 {
   "name": "Miro",
   "description": "Online collaborative whiteboard platform",
-  "version": "0.11.111",
+  "version": "0.11.112",
   "url": "https://desktop.miro.com/platforms/darwin-arm64/Install-Miro.dmg",
   "bundleId": "com.electron.realtimeboard",
   "homepage": "https://miro.com/",
   "fileName": "Install-Miro.dmg",
-  "sha": "ce723c028e6fee81e115f128cec082724d5bf3cfe1ef7419bce2a16af0544daf",
+  "sha": "e99f6b8e6eb5d4b892de967213b46d69b609ae37ca34c1969bfc4318ca75430a",
   "changelog": "https://help.miro.com/hc/en-us/articles/360017572854-Desktop-app-release-notes",
   "previous_version": "0.11.111"
 }

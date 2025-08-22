@@ -1,12 +1,12 @@
 {
   "name": "Okta Advanced Server Access",
   "description": "Identity and access management",
-  "version": "1.94.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/okta_advanced_server_access_1.94.0.pkg",
+  "version": "1.94.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/okta_advanced_server_access_1.94.1.pkg",
   "bundleId": "com.scaleft.ScaleFT",
   "homepage": "https://help.okta.com/asa/en-us/Content/Topics/Adv_Server_Access/docs/sft-osx.htm",
-  "fileName": "ScaleFT-1.94.0.pkg",
+  "fileName": "okta_advanced_server_access_1.94.1.pkg",
   "type": "pkg_in_pkg",
-  "sha": "23acd69250f963b95f9bf76669936a8b4c394405b8c1a73b7396f16d1297b9ac",
+  "sha": "33b624a67864de7179b3725a6d842745d440e2877fd15438396308832fedede4",
   "previous_version": "1.94.0"
 }
