@@ -1,14 +1,14 @@
 {
   "name": "Chrome Remote Desktop",
   "description": "Remotely access another computer through the Google Chrome browser",
-  "version": "139.0.7258.8",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/chrome_remote_desktop_139.0.7258.8.pkg",
+  "version": "140.0.7339.17",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/chrome_remote_desktop_140.0.7339.17.pkg",
   "bundleId": "com.google.GoogleUpdater.wake.system",
   "homepage": "https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai",
-  "fileName": "chromeremotedesktop.dmg",
+  "fileName": "chrome_remote_desktop_140.0.7339.17.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://support.google.com/chrome/a/answer/7679408",
-  "sha": "aa5d78862e58bdf9447c4adce9fa09c61dbdcb7d0df987b0b2689666bb6ea06f",
+  "sha": "f21ddc9f563470d26cdc3b5b1ea8b1876ccaaf554446c382b171bc937a2be725",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:26:19Z",
     "qa_result": "Installation successful and verified",

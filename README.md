@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -167,24 +167,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-08-23 00:29 UTC*
+*Last checked: 2025-08-24 00:32 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 143.0b2 | 143.0b3 |
-| Readest | 0.9.72 | 0.9.75 |
-| Trae | 1.0.17665 | 1.0.18225 |
-| WeChat for Mac | 4.1.0.19 | 4.1.0.21 |
-| Notion | 4.17.0 | 4.18.0 |
-| AnyDesk | 9.1.1 | 9.5.0 |
-| Real VNC Viewer | 7.13.1 | 7.15.0 |
-| OrbStack | 1.11.3 | 2.0.0 |
-| Zed | 0.200.4 | 0.200.5 |
-| calibre | 8.8.0 | 8.9.0 |
-| Badgeify | 1.8.6 | 1.8.7 |
-| Amazon Q | 1.14.0 | 1.14.1 |
+| Fathom | 1.41.0 | 1.42.0 |
+| TabTab | 1.3.4 | 2.0 |
+| Apifox | 2.7.30 | 2.7.31 |
+| FreeTube | 0.23.7 | 0.23.8 |
+| Blender | 4.5.1 | 4.5.2 |
+| Apidog | 2.7.30 | 2.7.31 |
+| Chrome Remote Desktop | 139.0.7258.8 | 140.0.7339.17 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -318,8 +314,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.5.0 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.30 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.30 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.31 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.31 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 2.3 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.109.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.4 |
@@ -350,7 +346,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/binary_ninja.png' width='32' height='32'> Binary Ninja | 5.1.8104 |
 | <img src='Logos/bitwarden.png' width='32' height='32'> Bitwarden | 2025.8.0 |
 | <img src='Logos/bitwig_studio.png' width='32' height='32'> Bitwig Studio | 5.3.13 |
-| <img src='Logos/blender.png' width='32' height='32'> Blender | 4.5.1 |
+| <img src='Logos/blender.png' width='32' height='32'> Blender | 4.5.2 |
 | <img src='Logos/bleunlock.png' width='32' height='32'> BLEUnlock | 1.12.2 |
 | <img src='Logos/blip.png' width='32' height='32'> blip | 1.1.9 |
 | <img src='Logos/blizzard_battlenet.png' width='32' height='32'> Blizzard Battle.net | 1.18.12.3160 |
@@ -372,7 +368,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/capcut.png' width='32' height='32'> CapCut | 3.3.0.1159 |
 | <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2025.224 |
 | <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.8.102 |
-| <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 139.0.7258.8 |
+| <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 140.0.7339.17 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20250430033337 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.05.10.16 |
 | <img src='Logos/claude.png' width='32' height='32'> Claude | 0.12.112 |
@@ -400,7 +396,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
 | <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.1.5 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.6.1 |
-| <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.7.22371106 |
+| <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.8.12525829 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
 | <img src='Logos/devtoys.png' width='32' height='32'> DevToys | 2.0.8.0 |
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
@@ -437,7 +433,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/flux.png' width='32' height='32'> f.lux | 42.2 |
 | <img src='Logos/facebook_messenger.png' width='32' height='32'> Facebook Messenger | 520.0.0.67.107 |
 | <img src='Logos/fantastical.png' width='32' height='32'> Fantastical | 4.0.18 |
-| <img src='Logos/fathom.png' width='32' height='32'> Fathom | 1.41.0 |
+| <img src='Logos/fathom.png' width='32' height='32'> Fathom | 1.42.0 |
 | <img src='Logos/figma.png' width='32' height='32'> Figma | 125.6.5 |
 | <img src='Logos/fission.png' width='32' height='32'> Fission | 2.8.8 |
 | <img src='Logos/flameshot.png' width='32' height='32'> Flameshot | 13.1.0 |
@@ -449,7 +445,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/freecad.png' width='32' height='32'> FreeCAD | 1.0.2 |
 | <img src='Logos/freelens.png' width='32' height='32'> Freelens | 1.5.3 |
 | <img src='Logos/freemacsoft_appcleaner.png' width='32' height='32'> FreeMacSoft AppCleaner | 3.6.8 |
-| <img src='Logos/freetube.png' width='32' height='32'> FreeTube | 0.23.7 |
+| <img src='Logos/freetube.png' width='32' height='32'> FreeTube | 0.23.8 |
 | <img src='Logos/fsmonitor.png' width='32' height='32'> FSMonitor | 1.2 |
 | <img src='Logos/gather_town.png' width='32' height='32'> Gather Town | 1.32.0 |
 | <img src='Logos/geany.png' width='32' height='32'> Geany | 2.1 |
@@ -738,7 +734,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/syncovery.png' width='32' height='32'> Syncovery | 11.7.2 |
 | <img src='Logos/synology_drive.png' width='32' height='32'> Synology Drive | 3.5.2 |
 | <img src='Logos/tableau_desktop.png' width='32' height='32'> Tableau Desktop | 2025.2.1 |
-| <img src='Logos/tabtab.png' width='32' height='32'> TabTab | 1.3.4 |
+| <img src='Logos/tabtab.png' width='32' height='32'> TabTab | 2.0 |
 | <img src='Logos/tailscale.png' width='32' height='32'> Tailscale | 1.84.1 |
 | <img src='Logos/taskbar.png' width='32' height='32'> Taskbar | 1.4.6 |
 | <img src='Logos/teacode.png' width='32' height='32'> TeaCode | 1.1.3 |
