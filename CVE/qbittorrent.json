@@ -1,6 +1,6 @@
 {
   "app_name": "qBittorrent",
-  "last_updated": "2025-08-17",
+  "last_updated": "2025-08-24",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2024-51774",
