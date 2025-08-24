@@ -3,6 +3,7 @@
   "description": "Data visualization software",
   "version": "2025.2.1",
   "url": "https://downloads.tableau.com/esdalt/2025.2.1/TableauDesktop-2025-2-1-arm64.dmg",
+  "type": "pkg_in_dmg",
   "bundleId": "com.tableausoftware.tableaudesktop",
   "homepage": "https://www.tableau.com/products/desktop",
   "fileName": "TableauDesktop-2025-2-1-arm64.dmg",

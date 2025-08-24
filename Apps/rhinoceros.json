@@ -3,6 +3,7 @@
   "description": "3D model creator",
   "version": "8.20.25157.13002",
   "url": "https://files.mcneel.com/rhino/8/mac/releases/rhino_8.20.25157.13002.dmg",
+  "type": "pkg_in_dmg",
   "bundleId": "com.mcneel.rhinoceros.8",
   "homepage": "https://www.rhino3d.com/",
   "fileName": "rhino_8.20.25157.13002.dmg",

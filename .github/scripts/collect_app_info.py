@@ -195,7 +195,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/sketchup.json",
     "https://formulae.brew.sh/api/cask/gephi.json",
     "https://formulae.brew.sh/api/cask/magicquit.json",
-    "https://formulae.brew.sh/api/cask/rhino.json",
     "https://formulae.brew.sh/api/cask/xca.json",
     "https://formulae.brew.sh/api/cask/fathom.json",
     "https://formulae.brew.sh/api/cask/vimcal.json",
@@ -372,7 +371,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/obsidian.json",
     "https://formulae.brew.sh/api/cask/rstudio.json",
     "https://formulae.brew.sh/api/cask/utm.json",
-    "https://formulae.brew.sh/api/cask/tableau.json",
     "https://formulae.brew.sh/api/cask/vnc-viewer.json",
     "https://formulae.brew.sh/api/cask/powershell.json",
     "https://formulae.brew.sh/api/cask/betterdisplay.json",
@@ -470,7 +468,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/anydo.json",
     "https://formulae.brew.sh/api/cask/apidog.json",
     "https://formulae.brew.sh/api/cask/apparency.json",
-    "https://formulae.brew.sh/api/cask/autodesk-fusion.json",
     "https://formulae.brew.sh/api/cask/badgeify.json",
     "https://formulae.brew.sh/api/cask/airtable.json",
     "https://formulae.brew.sh/api/cask/airy.json",
@@ -510,6 +507,9 @@ homebrew_cask_urls = [
 # PKG in DMG URLs
 pkg_in_dmg_urls = [
     "https://formulae.brew.sh/api/cask/jabra-direct.json",
+    "https://formulae.brew.sh/api/cask/rhino.json",
+    "https://formulae.brew.sh/api/cask/tableau.json",
+    "https://formulae.brew.sh/api/cask/autodesk-fusion.json",
     "https://formulae.brew.sh/api/cask/nomachine.json",
     "https://formulae.brew.sh/api/cask/adobe-acrobat-reader.json",
     "https://formulae.brew.sh/api/cask/adobe-acrobat-pro.json",
