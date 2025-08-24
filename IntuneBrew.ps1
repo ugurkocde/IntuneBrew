@@ -1,5 +1,5 @@
 <#PSScriptInfo
-.VERSION 1.0.0
+.VERSION 1.0.1
 .GUID 53ddb976-1bc1-4009-bfa0-1e2a51477e4d
 .AUTHOR ugurk
 .COMPANYNAME
@@ -12,6 +12,7 @@
 .REQUIREDSCRIPTS
 .EXTERNALSCRIPTDEPENDENCIES
 .RELEASENOTES
+Version 1.0.1: Fixed issue with missing SHA256 hashes for direct PKG downloads. Updated hash validation to allow user to proceed with warning when hash is missing (common with PKG type apps). Fixes issue #106.
 Version 1.0.0: Major update with 5 new features: Search functionality with fuzzy matching (-Search), Preserve assignments when updating apps (-PreserveAssignments), Bulk upload by app numbers (-BulkUpload), Ignore app version checking (-IgnoreAppVersion), Support for local JSON directory (-LocalJsonDirectory). Fixes issue #100, #74, #16, #66, #5.
 Version 0.9.0: Added -ConfigFile parameter for non-interactive authentication (enables macOS support). Added -UseExistingIntuneApp parameter to update existing apps instead of creating duplicates.
 Version 0.8.0: Added -AppNamePrefix and -AppNameSuffix parameters to customize Intune app names. Changed app status display from table to line-by-line for better readability.
@@ -154,8 +155,8 @@ ___       _                    ____
 
 Write-Host "IntuneBrew - Automated macOS Application Deployment via Microsoft Intune" -ForegroundColor Green
 Write-Host "Made by Ugur Koc with" -NoNewline; Write-Host " ❤️  and ☕" -NoNewline
-Write-Host " | Version" -NoNewline; Write-Host " 1.0.0" -ForegroundColor Yellow -NoNewline
-Write-Host " | Last updated: " -NoNewline; Write-Host "2025-08-19" -ForegroundColor Magenta
+Write-Host " | Version" -NoNewline; Write-Host " 1.0.1" -ForegroundColor Yellow -NoNewline
+Write-Host " | Last updated: " -NoNewline; Write-Host "2025-08-24" -ForegroundColor Magenta
 Write-Host ""
 Write-Host "This is a preview version. If you have any feedback, please open an issue at https://github.com/ugurkocde/IntuneBrew/issues. Thank you!" -ForegroundColor Cyan
 Write-Host "You can sponsor the development of this project at https://github.com/sponsors/ugurkocde" -ForegroundColor Red
@@ -1521,9 +1522,21 @@ function Get-AppFile($url, $fileName, $expectedHash) {
     
     # Validate expected hash format
     if ([string]::IsNullOrWhiteSpace($expectedHash)) {
-        Write-Host "❌ Error: No SHA256 hash provided in the app manifest" -ForegroundColor Red
-        Remove-Item $outputPath -Force
-        throw "SHA256 hash validation failed - No hash provided in app manifest"
+        Write-Host "⚠️ Warning: No SHA256 hash provided in the app manifest" -ForegroundColor Yellow
+        Write-Host "   • This app cannot be verified for integrity" -ForegroundColor Yellow
+        Write-Host "   • The file may have been modified or corrupted" -ForegroundColor Yellow
+        Write-Host "   • This typically happens with direct PKG downloads" -ForegroundColor Gray
+        
+        $continueWithoutHash = Read-Host "`nDo you want to continue without hash verification? (y/n)"
+        if ($continueWithoutHash.ToLower() -eq 'y') {
+            Write-Host "`n⚠️ Proceeding without hash verification - USE AT YOUR OWN RISK" -ForegroundColor Yellow
+            return $outputPath
+        }
+        else {
+            Write-Host "`nAborting due to missing hash." -ForegroundColor Red
+            Remove-Item $outputPath -Force
+            throw "Operation cancelled - No hash provided for verification"
+        }
     }
     
     Write-Host "   • Verifying the downloaded file matches the expected SHA256 hash" -ForegroundColor Gray

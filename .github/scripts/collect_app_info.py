@@ -1026,23 +1026,49 @@ def main():
             file_name = f"{sanitize_filename(display_name)}.json"
             file_path = os.path.join(apps_folder, file_name)
 
-            # For existing files, only update version, url and previous_version
+            # Check if we need to calculate hash for PKG apps
+            needs_hash = True
             if os.path.exists(file_path):
                 with open(file_path, "r") as f:
                     existing_data = json.load(f)
-                    # Store the new version, url and previous_version
+                    # Only calculate hash if:
+                    # 1. No sha exists, or
+                    # 2. Version has changed
+                    if ("sha" in existing_data and
+                        existing_data.get("version") == app_info["version"]):
+                        needs_hash = False
+                        app_info["sha"] = existing_data["sha"]
+                        print(f"ℹ️ Using existing hash for {display_name}")
+
+            if needs_hash:
+                print(f"🔍 Calculating SHA256 hash for {display_name}...")
+                file_hash = calculate_file_hash(app_info["url"])
+                if file_hash:
+                    app_info["sha"] = file_hash
+                    print(f"✅ SHA256 hash calculated: {file_hash}")
+                else:
+                    print(f"⚠️ Could not calculate SHA256 hash for {display_name}")
+
+            # For existing files, preserve existing data and update necessary fields
+            if os.path.exists(file_path):
+                with open(file_path, "r") as f:
+                    existing_data = json.load(f)
+                    # Store the new version, url, sha and previous_version
                     new_version = app_info["version"]
                     new_url = app_info["url"]
+                    new_sha = app_info.get("sha")
                     previous_version = existing_data.get("version")
                     
-                    # Preserve all existing data except version, url and previous_version
+                    # Preserve all existing data except version, url, sha and previous_version
                     for key in existing_data:
-                        if key not in ["version", "url", "previous_version"]:
+                        if key not in ["version", "url", "sha", "previous_version"]:
                             app_info[key] = existing_data[key]
                     
-                    # Update version, url and previous_version
+                    # Update version, url, sha and previous_version
                     app_info["version"] = new_version
                     app_info["url"] = new_url
+                    if new_sha:
+                        app_info["sha"] = new_sha
                     
                     # Handle fileName field
                     if display_name.lower().replace(" ", "_") in preserve_filename_apps:
