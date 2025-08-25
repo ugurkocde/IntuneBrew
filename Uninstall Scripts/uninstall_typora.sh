@@ -65,6 +65,14 @@ elif [ -f "$HOME/Library/Cookies/abnerworks.Typora.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/abnerworks.Typora.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/abnerworks.Typora
+echo "Removing $HOME/Library/HTTPStorages/abnerworks.Typora..."
+if [ -d "$HOME/Library/HTTPStorages/abnerworks.Typora" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/abnerworks.Typora" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/abnerworks.Typora" ]; then
+    rm -f "$HOME/Library/HTTPStorages/abnerworks.Typora" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/abnerworks.Typora.plist
 echo "Removing $HOME/Library/Preferences/abnerworks.Typora.plist..."
 if [ -d "$HOME/Library/Preferences/abnerworks.Typora.plist" ]; then
