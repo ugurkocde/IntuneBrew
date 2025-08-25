@@ -7,5 +7,6 @@
   "homepage": "https://nextcloud.com/",
   "fileName": "Nextcloud-3.17.1.pkg",
   "type": "pkg",
+  "sha": "bb0204740b0dd48b92e8653825d53630bfd630f0f4e5a42939546a447067a6ac",
   "previous_version": "3.17.1"
 }

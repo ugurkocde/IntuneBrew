@@ -3,10 +3,10 @@
   "description": "Integrated CAD, CAM, CAE, and PCB software",
   "version": "latest",
   "url": "https://dl.appstreaming.autodesk.com/production/installers/Fusion%20Client%20Downloader.dmg",
-  "type": "pkg_in_dmg",
   "bundleId": "com.autodesk.dls.streamer.scriptapp.Autodesk-Fusion",
   "homepage": "https://www.autodesk.com/products/fusion-360/overview",
   "fileName": "Fusion%20Client%20Downloader.dmg",
+  "type": "pkg_in_dmg",
   "sha": "b0f4927aa5b48c34e7ebe944bae1b7d064fd298984af7ec5cd094f0f47c4b3b3",
   "changelog": "https://help.autodesk.com/view/fusion360/ENU/",
   "qa_info": {

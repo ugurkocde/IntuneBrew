@@ -7,6 +7,7 @@
   "homepage": "https://github.com/kyleneideck/BackgroundMusic",
   "fileName": "BackgroundMusic-0.4.3.pkg",
   "type": "pkg",
+  "sha": "c1c48a37c83af44ce50bee68879856c96b2f6c97360ce461b1c7d653515be7fd",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:35:46Z",
     "qa_result": "Installation successful and verified",

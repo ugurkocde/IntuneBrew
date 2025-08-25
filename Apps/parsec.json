@@ -7,5 +7,6 @@
   "homepage": "https://parsec.app/",
   "fileName": "parsec-macos.pkg",
   "type": "pkg",
+  "sha": "9e07bc2bc25a2de58086fc9807c560b375fe09af505c94f73ec2b3f212cae528",
   "previous_version": "150-100e"
 }

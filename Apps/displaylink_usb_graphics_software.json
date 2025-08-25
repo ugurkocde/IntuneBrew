@@ -7,6 +7,7 @@
   "homepage": "https://www.synaptics.com/products/displaylink-graphics",
   "fileName": "DisplayLink%20Manager%20Graphics%20Connectivity13.0-EXE.zip",
   "type": "pkg",
+  "sha": "815edc7333de2f0476ac95def33421e90a2c06c5fd7266d9d6379d542d72a5f5",
   "qa_info": {
     "qa_timestamp": "2025-05-14T08:59:10Z",
     "qa_result": "App not found after installation",

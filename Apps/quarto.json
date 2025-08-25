@@ -7,5 +7,6 @@
   "homepage": "https://www.quarto.org/",
   "fileName": "quarto-1.7.33-macos.pkg",
   "type": "pkg",
+  "sha": "c2666673749f1a7e6ea7f5a2596c998e18ece22b9553a3c82a48fadf6630a434",
   "previous_version": "1.7.33"
 }

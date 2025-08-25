@@ -7,6 +7,7 @@
   "homepage": "https://www.webex.com/downloads/jabber.html",
   "fileName": "Install_Cisco-Jabber-Mac.pkg",
   "type": "pkg",
+  "sha": "d4c8903203097fc2043750903c7ed07564179a1a0a3357606c8a419fb15b8def",
   "changelog": "https://help.webex.com/en-us/article/nqx2qkb/Jabber-Release-Notes",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:26:47Z",

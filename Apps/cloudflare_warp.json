@@ -7,6 +7,7 @@
   "homepage": "https://cloudflarewarp.com/",
   "fileName": "2025.6.1335.0",
   "type": "pkg",
+  "sha": "0d8b99834dca9bc6ce858bb1c3c0977f8bdb24a051f22e2fdb3a7684ec3d814c",
   "changelog": "https://developers.cloudflare.com/warp-client/release-notes/",
   "qa_info": {
     "qa_timestamp": "2025-05-14T06:44:43Z",

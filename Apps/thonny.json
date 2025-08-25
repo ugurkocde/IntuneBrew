@@ -7,5 +7,6 @@
   "homepage": "https://thonny.org/",
   "fileName": "thonny-4.1.7.pkg",
   "type": "pkg",
+  "sha": "32c7540498b9df038abb286363f2eab13b5ba6a731c3cb3d9e348226762225d9",
   "previous_version": "4.1.7"
 }
