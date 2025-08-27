@@ -1,12 +1,12 @@
 {
   "name": "CodeEdit",
   "description": "Code editor",
-  "version": "0.3.5",
-  "url": "https://github.com/CodeEditApp/CodeEdit/releases/download/v0.3.5/CodeEdit.dmg",
+  "version": "0.3.6",
+  "url": "https://github.com/CodeEditApp/CodeEdit/releases/download/v0.3.6/CodeEdit.dmg",
   "bundleId": "app.codeedit.CodeEdit",
   "homepage": "https://www.codeedit.app/",
   "fileName": "CodeEdit.dmg",
-  "sha": "bd143db6a4d3e85b6e9cd0126dbfa8e3186f57904e893d144acc3cf2b3c065f2",
+  "sha": "fa5478f80d591c15f08f5e7a93662b5baf33012718768bf0ae800b44ac4eeac9",
   "changelog": "https://github.com/CodeEditApp/CodeEdit/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:49:14Z",
