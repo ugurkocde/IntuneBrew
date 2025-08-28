@@ -1,12 +1,12 @@
 {
   "name": "Google Chrome",
   "description": "Web browser",
-  "version": "139.0.7258.139",
+  "version": "139.0.7258.155",
   "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
   "bundleId": "com.google.Chrome",
   "homepage": "https://www.google.com/chrome/",
   "fileName": "googlechrome.dmg",
-  "sha": "b5056410f3286dad928c8e523a2b1c7fc6bdc52e2433449d0ee95e158d37414a",
+  "sha": "4f366c3274850dedbcd7742b02b7052e83da337d313915a9e35ddcf43e8a0515",
   "changelog": "https://chromereleases.googleblog.com/",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:20:37Z",
