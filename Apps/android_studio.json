@@ -1,12 +1,12 @@
 {
   "name": "Android Studio",
   "description": "Tools for building Android applications",
-  "version": "2025.1.2.12",
-  "url": "https://redirector.gvt1.com/edgedl/android/studio/install/2025.1.2.12/android-studio-2025.1.2.12-mac_arm.dmg",
+  "version": "2025.1.2.13",
+  "url": "https://redirector.gvt1.com/edgedl/android/studio/install/2025.1.2.13/android-studio-2025.1.2.13-mac_arm.dmg",
   "bundleId": "com.google.android.studio",
   "homepage": "https://developer.android.com/studio/",
-  "fileName": "android-studio-2025.1.2.12-mac_arm.dmg",
-  "sha": "cbad436d3e666bc4ff9b1a896d7b817ea5281f8fa27d23c5285d270810cc979e",
+  "fileName": "android-studio-2025.1.2.13-mac_arm.dmg",
+  "sha": "d28f2c0382f7347b910bbeea2e9b99c14e1658a16e2a667938f763df1c68ee6f",
   "changelog": "https://developer.android.com/studio/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:01:54Z",

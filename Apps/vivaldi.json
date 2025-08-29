@@ -1,12 +1,12 @@
 {
   "name": "Vivaldi",
   "description": "Web browser with built-in email client focusing on customization and control",
-  "version": "7.5.3735.64",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/vivaldi_7.5.3735.64.pkg",
+  "version": "7.5.3735.66",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/vivaldi_7.5.3735.66.pkg",
   "bundleId": "com.vivaldi.Vivaldi",
   "homepage": "https://vivaldi.com/",
-  "fileName": "vivaldi_7.5.3735.64.pkg",
+  "fileName": "vivaldi_7.5.3735.66.pkg",
   "type": "app",
-  "sha": "fe3e1ef6385c19952204aed9a7b4352142b9e307cca52445a1c29c7c3c2e026d",
-  "previous_version": "7.5.3735.64"
+  "sha": "986458c39deae4fb657458185cdb48074b3e70787fe6a0e82e1459b67d691d26",
+  "previous_version": "7.5.3735.66"
 }
