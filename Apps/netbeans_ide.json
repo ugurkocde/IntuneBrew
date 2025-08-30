@@ -1,12 +1,12 @@
 {
   "name": "NetBeans IDE",
   "description": "Development environment, tooling platform and application framework",
-  "version": "26",
-  "url": "https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v26-build1/Apache-NetBeans-26-aarch64.pkg",
+  "version": "27",
+  "url": "https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v27-build1/Apache-NetBeans-27-arm64.pkg",
   "bundleId": "org.apache.netbeans",
   "homepage": "https://netbeans.apache.org/",
-  "fileName": "Apache-NetBeans-26-aarch64.pkg",
-  "sha": "174943c8f822ad08621075b3c20f97ba2fb27e91f6ef5961ccd92228a088607d",
+  "fileName": "Apache-NetBeans-27-arm64.pkg",
+  "sha": "1b5471269111bd546854008d8b0e067aa7fc72b885563dff99c35274c956233d",
   "changelog": "https://netbeans.apache.org/download/index.html#release-notes",
   "previous_version": "26"
 }

@@ -1,13 +1,13 @@
 {
   "name": "Maccy",
   "description": "Clipboard manager",
-  "version": "2.4.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/maccy_2.4.1.pkg",
+  "version": "2.5.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/maccy_2.5.0.pkg",
   "bundleId": "org.p0deje.Maccy",
   "homepage": "https://maccy.app/",
-  "fileName": "maccy_2.4.1.pkg",
+  "fileName": "maccy_2.5.0.pkg",
   "type": "app",
-  "sha": "28fe253e39b6c1c46017ed5b73265161638aaa2dcd29162a0f5f60473592879a",
+  "sha": "1428e61c7ecc059a8f34b9c9d5423d3250bcd1eb0c3db0c5e82abcb8934c7c0c",
   "changelog": "https://github.com/p0deje/Maccy/releases",
-  "previous_version": "2.4.1"
+  "previous_version": "2.5.0"
 }
