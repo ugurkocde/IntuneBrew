@@ -1,11 +1,11 @@
 {
   "app_name": "TigerVNC",
-  "last_updated": "2025-08-24",
+  "last_updated": "2025-08-31",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2024-0408",
       "published_date": "2024-01-18",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2025-08-29",
       "base_score": 5.5,
       "severity": "MEDIUM",
       "description": "A flaw was found in the X.Org server. The GLX PBuffer code does not call the XACE hook when creating the buffer, leaving it unlabeled. When the client issues another request to access that resource (as with a GetGeometry) or when it creates another resource that needs to access that buffer, such as a GC, the XSELINUX code will try to use an object that was never labeled and crash because the SID is NULL.",
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2024-0409",
       "published_date": "2024-01-18",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2025-08-29",
       "base_score": 7.8,
       "severity": "HIGH",
       "description": "A flaw was found in the X.Org server. The cursor code in both Xephyr and Xwayland uses the wrong type of private at creation. It uses the cursor bits type with the cursor as private, and when initiating the cursor, that overwrites the XSELINUX context.",
