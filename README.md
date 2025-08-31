@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -174,32 +174,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-08-30 00:29 UTC*
+*Last checked: 2025-08-31 00:31 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 143.0b5 | 143.0b6 |
-| Wave Terminal | 0.11.4 | 0.11.5 |
-| Requestly | 25.8.21 | 25.8.29 |
-| Apifox | 2.7.31 | 2.7.32 |
-| JetBrains PhpStorm | 2025.2 | 2025.2.1 |
-| LibreWolf | 142.0 | 142.0.1 |
-| Spotify | 1.2.70.409 | 1.2.71.421 |
-| Grammarly Desktop | 1.133.2.0 | 1.133.3.0 |
-| Bitwarden | 2025.8.1 | 2025.8.2 |
-| Krisp | 3.4.7 | 3.5.5 |
-| NetBeans IDE | 26 | 27 |
-| IntelliJ IDEA Community Edition | 2025.2 | 2025.2.1 |
-| Jetbrains PyCharm Community Edition | 2025.2.0.1 | 2025.2.1 |
-| WebStorm | 2025.2 | 2025.2.1 |
-| Zed | 0.201.6 | 0.201.7 |
-| Windsurf | 1.12.2 | 1.12.3 |
-| Apidog | 2.7.31 | 2.7.32 |
-| DbGate | 6.6.1 | 6.6.2 |
-| Insta360 Studio | 5.7.1 | 5.7.2 |
-| quarto | 1.7.33 | 1.7.34 |
+| Readest | 0.9.75 | 0.9.76 |
+| draw.io Desktop | 28.0.6 | 28.1.2 |
+| Zed | 0.201.7 | 0.201.8 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -390,7 +374,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 140.0.7339.17 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20250430033337 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.05.10.16 |
-| <img src='Logos/claude.png' width='32' height='32'> Claude | 0.12.125 |
+| <img src='Logos/claude.png' width='32' height='32'> Claude | 0.12.129 |
 | <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.2.3 |
 | <img src='Logos/cleanshot.png' width='32' height='32'> CleanShot | 4.8.2 |
 | <img src='Logos/clion.png' width='32' height='32'> CLion | 2025.2.1 |
@@ -427,7 +411,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
 | <img src='Logos/doughnut.png' width='32' height='32'> Doughnut | 2.0.1 |
 | <img src='Logos/downie.png' width='32' height='32'> Downie | 4.10.7 |
-| <img src='Logos/drawio_desktop.png' width='32' height='32'> draw.io Desktop | 28.0.6 |
+| <img src='Logos/drawio_desktop.png' width='32' height='32'> draw.io Desktop | 28.1.2 |
 | <img src='Logos/drawbot.png' width='32' height='32'> DrawBot | 3.132 |
 | <img src='Logos/drivedx.png' width='32' height='32'> DriveDX | 1.12.1 |
 | <img src='Logos/dropbox.png' width='32' height='32'> Dropbox | 231.4.5770 |
@@ -539,7 +523,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/langgraph_studio.png' width='32' height='32'> LangGraph Studio | 0.0.37 |
 | <img src='Logos/last_window_quits.png' width='32' height='32'> Last Window Quits | 1.1.4 |
 | <img src='Logos/lens.png' width='32' height='32'> Lens | 2025.8.121212 |
-| <img src='Logos/libreoffice.png' width='32' height='32'> LibreOffice | 25.8.0 |
+| <img src='Logos/libreoffice.png' width='32' height='32'> LibreOffice | 25.8.1 |
 | <img src='Logos/librewolf.png' width='32' height='32'> LibreWolf | 142.0.1 |
 | <img src='Logos/little_snitch.png' width='32' height='32'> Little Snitch | 6.2.3 |
 | <img src='Logos/lm_studio.png' width='32' height='32'> LM Studio | 0.3.24 |
@@ -691,7 +675,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rancher_desktop.png' width='32' height='32'> Rancher Desktop | 1.20.0 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 1.102.6 |
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.7.7 |
-| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.75 |
+| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.76 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.15.0 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.90 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.59 |
@@ -808,7 +792,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/xnapper.png' width='32' height='32'> Xnapper | 1.17.1 |
 | <img src='Logos/yaak.png' width='32' height='32'> Yaak | 2025.5.6 |
 | <img src='Logos/yubikey_manager.png' width='32' height='32'> Yubikey Manager | 1.2.5 |
-| <img src='Logos/zed.png' width='32' height='32'> Zed | 0.201.7 |
+| <img src='Logos/zed.png' width='32' height='32'> Zed | 0.201.8 |
 | <img src='Logos/zed_attack_proxy.png' width='32' height='32'> Zed Attack Proxy | 2.16.1 |
 | <img src='Logos/zen_browser.png' width='32' height='32'> Zen Browser | 1.12.3b |
 | <img src='Logos/zoom.png' width='32' height='32'> Zoom | 6.5.11.62892 |
