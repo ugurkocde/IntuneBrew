@@ -1,11 +1,11 @@
 {
   "name": "Lunatask",
   "description": "Encrypted to-do list, habit tracker, journaling, life-tracking and notes app",
-  "version": "2.1.5",
-  "url": "https://github.com/lunatask/lunatask/releases/download/v2.1.5/Lunatask-2.1.5-universal.dmg",
+  "version": "2.1.6",
+  "url": "https://github.com/lunatask/lunatask/releases/download/v2.1.6/Lunatask-2.1.6-universal.dmg",
   "bundleId": "com.mikekreeki.tasks",
   "homepage": "https://lunatask.app/",
-  "fileName": "Lunatask-2.1.5-universal.dmg",
-  "sha": "8dd11d52aaa29e477d84cf2e910c5018a26525877dc0d20b7071a0d3ea782783",
+  "fileName": "Lunatask-2.1.6-universal.dmg",
+  "sha": "606297459d39b5f7f3b3462eeec7d0b2d4d85489463762c33d003f08b34e9949",
   "previous_version": "2.1.5"
 }

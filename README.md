@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -175,15 +175,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-08-31 00:31 UTC*
+*Last checked: 2025-09-01 00:34 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Readest | 0.9.75 | 0.9.76 |
-| draw.io Desktop | 28.0.6 | 28.1.2 |
-| Zed | 0.201.7 | 0.201.8 |
+| Lunatask | 2.1.5 | 2.1.6 |
+| DBeaver Community Edition | 25.1.5 | 25.2.0 |
+| Stats | 2.11.51 | 2.11.52 |
+| Badgeify | 1.8.8 | 1.8.9 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -305,7 +307,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/airtable.png' width='32' height='32'> Airtable | 1.6.6 |
 | <img src='Logos/airy.png' width='32' height='32'> Airy | 3.29.2 |
 | <img src='Logos/alacritty.png' width='32' height='32'> Alacritty | 0.15.1 |
-| <img src='Logos/alcove.png' width='32' height='32'> Alcove | 1.2.7 |
+| <img src='Logos/alcove.png' width='32' height='32'> Alcove | 1.2.8 |
 | <img src='Logos/alfred.png' width='32' height='32'> Alfred | 5.6.2 |
 | <img src='Logos/alttab.png' width='32' height='32'> AltTab | 7.27.0 |
 | <img src='Logos/amadine.png' width='32' height='32'> Amadine | 1.6.9 |
@@ -334,7 +336,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/azul_zulu_java_standard_edition_development_kit.png' width='32' height='32'> Azul Zulu Java Standard Edition Development Kit | 24.0.2 |
 | <img src='Logos/azure_data_studio.png' width='32' height='32'> Azure Data Studio | 1.52.0 |
 | <img src='Logos/background_music.png' width='32' height='32'> Background Music | 0.4.3 |
-| <img src='Logos/badgeify.png' width='32' height='32'> Badgeify | 1.8.8 |
+| <img src='Logos/badgeify.png' width='32' height='32'> Badgeify | 1.8.9 |
 | <img src='Logos/bambu_studio.png' width='32' height='32'> Bambu Studio | 02.02.01.60 |
 | <img src='Logos/bartender.png' width='32' height='32'> Bartender | 5.3.7 |
 | <img src='Logos/basecamp.png' width='32' height='32'> Basecamp | 3 |
@@ -389,7 +391,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/coteditor.png' width='32' height='32'> CotEditor | 5.2.3 |
 | <img src='Logos/cryptomator.png' width='32' height='32'> Cryptomator | 1.17.1 |
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
-| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 1.5.7 |
+| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 1.5.9 |
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.2.1 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.31 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.9.1 |
@@ -397,7 +399,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.2.2 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.2 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.1.5 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.2.0 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.6.2 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.8.12525829 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
@@ -533,7 +535,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 1.14.3 |
 | <img src='Logos/loop.png' width='32' height='32'> Loop | 1.3.0 |
 | <img src='Logos/lulu.png' width='32' height='32'> LuLu | 4.0.0 |
-| <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.5 |
+| <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.6 |
 | <img src='Logos/löve.png' width='32' height='32'> LÖVE | 11.5 |
 | <img src='Logos/maccy.png' width='32' height='32'> Maccy | 2.5.0 |
 | <img src='Logos/macdown.png' width='32' height='32'> MacDown | 0.7.2 |
@@ -722,7 +724,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2025.10 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 9.2.1 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.51 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.52 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 4.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.5 |
 | <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.17.2 |
@@ -743,7 +745,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/teacode.png' width='32' height='32'> TeaCode | 1.1.3 |
 | <img src='Logos/teamviewer_host.png' width='32' height='32'> TeamViewer Host | 15 |
 | <img src='Logos/teamviewer_quicksupport.png' width='32' height='32'> TeamViewer QuickSupport | 15 |
-| <img src='Logos/telegram_for_macos.png' width='32' height='32'> Telegram for macOS | 11.15 |
+| <img src='Logos/telegram_for_macos.png' width='32' height='32'> Telegram for macOS | 11.15.1 |
 | <img src='Logos/tenable_nessus_agent.png' width='32' height='32'> Tenable Nessus Agent | 10.9.0 |
 | <img src='Logos/termius.png' width='32' height='32'> Termius | 9.30.0 |
 | <img src='Logos/tex_live_utility.png' width='32' height='32'> TeX Live Utility | 1.54 |
