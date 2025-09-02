@@ -1,11 +1,11 @@
 {
   "name": "Retcon",
   "description": "Drag-and-drop Git history editor",
-  "version": "1.4",
-  "url": "https://downloads.lemon.garden/retcon/retcon-1.4.dmg",
+  "version": "1.4.1",
+  "url": "https://downloads.lemon.garden/retcon/retcon-1.4.1.dmg",
   "bundleId": "garden.lemon.Retcon",
   "homepage": "https://retcon.app/",
-  "fileName": "retcon-1.4.dmg",
-  "sha": "09eeaa65a9f8ea31ceee6607f80fcdd2894003170b96b4e6cada9da84ff59c0d",
+  "fileName": "retcon-1.4.1.dmg",
+  "sha": "3251189b19f71c76522c78a60060843b58167f890bc0bc0d8162129f47ed956d",
   "previous_version": "1.4"
 }

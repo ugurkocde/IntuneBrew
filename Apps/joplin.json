@@ -1,12 +1,12 @@
 {
   "name": "Joplin",
   "description": "Note taking and to-do application with synchronisation capabilities",
-  "version": "3.4.6",
-  "url": "https://github.com/laurent22/joplin/releases/download/v3.4.6/Joplin-3.4.6-arm64.DMG",
+  "version": "3.4.10",
+  "url": "https://github.com/laurent22/joplin/releases/download/v3.4.10/Joplin-3.4.10-arm64.DMG",
   "bundleId": "net.cozic.joplin-desktop",
   "homepage": "https://joplinapp.org/",
-  "fileName": "Joplin-3.4.6-arm64.DMG",
-  "sha": "ecd411b799bc3c887638cee5a9f7547a5549e65389afb14af4130fad97beb1cc",
+  "fileName": "Joplin-3.4.10-arm64.DMG",
+  "sha": "85f62ab5a17c58a3dd2f4a86f0524e3750c772bcdb686aa9c344fb8e1dcaaa48",
   "changelog": "https://github.com/laurent22/joplin/releases",
   "previous_version": "3.4.6"
 }
