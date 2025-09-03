@@ -1,11 +1,11 @@
 {
   "name": "LuLu",
   "description": "Open-source firewall to block unknown outgoing connections",
-  "version": "4.0.0",
-  "url": "https://github.com/objective-see/LuLu/releases/download/v4.0.0/LuLu_4.0.0.dmg",
+  "version": "4.0.1",
+  "url": "https://github.com/objective-see/LuLu/releases/download/v4.0.1/LuLu_4.0.1.dmg",
   "bundleId": "com.objective-see.lulu.app",
   "homepage": "https://objective-see.org/products/lulu.html",
-  "fileName": "LuLu_4.0.0.dmg",
-  "sha": "dd55ae20d509beafdb6e8d82acbf508608f56c05975dba35af303df6f5fcba18",
+  "fileName": "LuLu_4.0.1.dmg",
+  "sha": "bba85cf9aa333ce2659afad8cc58f71b92ca082ac22fab79deb6d9b19e6cb16b",
   "previous_version": "4.0.0"
 }
