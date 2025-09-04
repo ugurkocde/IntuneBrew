@@ -1,12 +1,12 @@
 {
   "name": "Jetbrains PyCharm Community Edition",
   "description": "IDE for Python programming - Community Edition",
-  "version": "2025.2.1",
-  "url": "https://download.jetbrains.com/python/pycharm-community-2025.2.1-aarch64.dmg",
+  "version": "2025.2.1.1",
+  "url": "https://download.jetbrains.com/python/pycharm-community-2025.2.1.1-aarch64.dmg",
   "bundleId": "com.jetbrains.pycharm.ce",
   "homepage": "https://www.jetbrains.com/pycharm/",
-  "fileName": "pycharm-community-2025.2.1-aarch64.dmg",
-  "sha": "01a969ec274754d93e4a85b5033cd1ebc368ce3a2d664753744ebfd6d8e1d8cf",
+  "fileName": "pycharm-community-2025.2.1.1-aarch64.dmg",
+  "sha": "1afba23b5cc19e42b56bcd35ddb173a9e47c643cb27d9f70aa7dccd3675a9082",
   "changelog": "https://www.jetbrains.com/pycharm/whatsnew/",
   "previous_version": "2025.2.1"
 }

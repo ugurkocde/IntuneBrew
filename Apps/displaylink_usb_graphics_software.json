@@ -17,5 +17,5 @@
     "verify_status": "app_not_found",
     "bundle_id_status": "pending"
   },
-  "previous_version": "13.0"
+  "previous_version": "13.1"
 }
