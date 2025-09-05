@@ -5,8 +5,8 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/philips_hue_sync_1.12.5.75.pkg",
   "bundleId": "com.lighting.huesync",
   "homepage": "https://www.philips-hue.com/en-us/explore-hue/propositions/entertainment/sync-with-pc",
-  "fileName": "philips_hue_sync_1.12.5.75.pkg",
+  "fileName": "HueSyncInstaller_1.12.5.75.pkg",
   "type": "pkg_in_pkg",
   "sha": "65f1cd6fe3d89287a96739e3a4f22a773ae44dd803094e0e88eddb5a36df390a",
-  "previous_version": "1.12.4.74"
+  "previous_version": "1.12.5.75"
 }
