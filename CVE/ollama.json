@@ -1,6 +1,6 @@
 {
   "app_name": "Ollama",
-  "last_updated": "2025-08-31",
+  "last_updated": "2025-09-07",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2025-0312",
@@ -9,7 +9,7 @@
       "base_score": 7.5,
       "severity": "HIGH",
       "description": "A vulnerability in ollama/ollama versions <=0.3.14 allows a malicious user to create a customized GGUF model file that, when uploaded and created on the Ollama server, can cause a crash due to an unchecked null pointer dereference. This can lead to a Denial of Service (DoS) attack via remote network.",
-      "cpe_name": "cpe:2.3:a:ollama:ollama:0.1.47:*:*:*:*:*:*:*"
+      "cpe_name": "cpe:2.3:a:ollama:ollama:0.3.9:*:*:*:*:*:*:*"
     },
     {
       "cve_id": "CVE-2025-0315",
@@ -18,7 +18,7 @@
       "base_score": 7.5,
       "severity": "HIGH",
       "description": "A vulnerability in ollama/ollama <=0.3.14 allows a malicious user to create a customized GGUF model file, upload it to the Ollama server, and create it. This can cause the server to allocate unlimited memory, leading to a Denial of Service (DoS) attack.",
-      "cpe_name": "cpe:2.3:a:ollama:ollama:0.1.47:*:*:*:*:*:*:*"
+      "cpe_name": "cpe:2.3:a:ollama:ollama:0.3.9:*:*:*:*:*:*:*"
     },
     {
       "cve_id": "CVE-2025-0317",
@@ -27,7 +27,7 @@
       "base_score": 7.5,
       "severity": "HIGH",
       "description": "A vulnerability in ollama/ollama versions <=0.3.14 allows a malicious user to upload and create a customized GGUF model file on the Ollama server. This can lead to a division by zero error in the ggufPadding function, causing the server to crash and resulting in a Denial of Service (DoS) attack.",
-      "cpe_name": "cpe:2.3:a:ollama:ollama:0.1.47:*:*:*:*:*:*:*"
+      "cpe_name": "cpe:2.3:a:ollama:ollama:0.3.9:*:*:*:*:*:*:*"
     },
     {
       "cve_id": "CVE-2024-12055",
@@ -36,16 +36,16 @@
       "base_score": 7.5,
       "severity": "HIGH",
       "description": "A vulnerability in Ollama versions <=0.3.14 allows a malicious user to create a customized gguf model file that can be uploaded to the public Ollama server. When the server processes this malicious model, it crashes, leading to a Denial of Service (DoS) attack. The root cause of the issue is an out-of-bounds read in the gguf.go file.",
-      "cpe_name": "cpe:2.3:a:ollama:ollama:0.1.47:*:*:*:*:*:*:*"
+      "cpe_name": "cpe:2.3:a:ollama:ollama:0.3.9:*:*:*:*:*:*:*"
     },
     {
-      "cve_id": "CVE-2024-39722",
+      "cve_id": "CVE-2024-39719",
       "published_date": "2024-10-31",
       "last_modified_date": "2025-05-13",
       "base_score": 7.5,
       "severity": "HIGH",
-      "description": "An issue was discovered in Ollama before 0.1.46. It exposes which files exist on the server on which it is deployed via path traversal in the api/push route.",
-      "cpe_name": "cpe:2.3:a:ollama:ollama:-:*:*:*:*:*:*:*"
+      "description": "An issue was discovered in Ollama through 0.3.14. File existence disclosure can occur via api/create. When calling the CreateModel route with a path parameter that does not exist, it reflects the \"File does not exist\" error message to the attacker, providing a primitive for file existence on the server.",
+      "cpe_name": "cpe:2.3:a:ollama:ollama:0.3.9:*:*:*:*:*:*:*"
     }
   ]
 }
