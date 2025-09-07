@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-508-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -181,22 +181,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-09-06 00:27 UTC*
+*Last checked: 2025-09-07 00:30 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 143.0b8 | 143.0b9 |
-| ChatWise | 0.9.11 | 0.9.12 |
-| WeChat for Mac | 4.1.0.32 | 4.1.0.34 |
-| MongoDB Compass | 1.46.8 | 1.46.9 |
-| BetterDisplay | 3.5.6 | 4.0.4 |
-| ChatGPT | 1.2025.231 | 1.2025.238 |
-| Bruno | 2.10.0 | 2.10.1 |
-| Microsoft Edge | 139.0.3405.125 | 140.0.3485.54 |
-| calibre | 8.9.0 | 8.10.0 |
-| Badgeify | 1.8.9 | 1.9.0 |
+| Readest | 0.9.76 | 0.9.78 |
+| Easydict | 2.14.1 | 2.15.0 |
+| Anki | 25.07.5 | 25.09 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -326,7 +320,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/amazon_q.png' width='32' height='32'> Amazon Q | 1.15.0 |
 | <img src='Logos/android_studio.png' width='32' height='32'> Android Studio | 2025.1.3.7 |
 | <img src='Logos/angry_ip_scanner.png' width='32' height='32'> Angry IP Scanner | 3.9.2 |
-| <img src='Logos/anki.png' width='32' height='32'> Anki | 25.07.5 |
+| <img src='Logos/anki.png' width='32' height='32'> Anki | 25.09 |
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.5.0 |
@@ -356,7 +350,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.1.169 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 4.0.4 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.6 |
-| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 5.584 |
+| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 5.593 |
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 5.3.4 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.1.4.31268 |
 | <img src='Logos/binary_ninja.png' width='32' height='32'> Binary Ninja | 5.1.8104 |
@@ -431,7 +425,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/dropdmg.png' width='32' height='32'> DropDMG | 3.6.9 |
 | <img src='Logos/dropshare.png' width='32' height='32'> Dropshare | 6.5 |
 | <img src='Logos/duckduckgo.png' width='32' height='32'> DuckDuckGo | 1.154.0 |
-| <img src='Logos/easydict.png' width='32' height='32'> Easydict | 2.14.1 |
+| <img src='Logos/easydict.png' width='32' height='32'> Easydict | 2.15.0 |
 | <img src='Logos/easyfind.png' width='32' height='32'> EasyFind | 5.0.2 |
 | <img src='Logos/eclipse_temurin_java_development_kit.png' width='32' height='32'> Eclipse Temurin Java Development Kit | 24.0.2 |
 | <img src='Logos/edrawmax.png' width='32' height='32'> EdrawMax | 14.5.2 |
@@ -465,8 +459,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/fsmonitor.png' width='32' height='32'> FSMonitor | 1.2 |
 | <img src='Logos/gather_town.png' width='32' height='32'> Gather Town | 1.33.0 |
 | <img src='Logos/geany.png' width='32' height='32'> Geany | 2.1 |
-| <img src='Logos/geekbench.png' width='32' height='32'> Geekbench | 6.4.0 |
-| <img src='Logos/geekbench_ai.png' width='32' height='32'> Geekbench AI | 1.4.0 |
+| <img src='Logos/geekbench.png' width='32' height='32'> Geekbench | 6.5.0 |
+| <img src='Logos/geekbench_ai.png' width='32' height='32'> Geekbench AI | 1.5.0 |
 | <img src='Logos/gemini.png' width='32' height='32'> Gemini | 2.9.11 |
 | <img src='Logos/gephi.png' width='32' height='32'> Gephi | 0.10.1 |
 | <img src='Logos/ghostty.png' width='32' height='32'> Ghostty | 1.1.3 |
@@ -688,7 +682,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rancher_desktop.png' width='32' height='32'> Rancher Desktop | 1.20.0 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 1.102.6 |
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.7.7 |
-| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.76 |
+| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.78 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.15.0 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.90 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.59 |
