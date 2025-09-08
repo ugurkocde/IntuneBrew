@@ -1,11 +1,11 @@
 {
   "name": "TabTab",
   "description": "Window and tab manager",
-  "version": "2.0.1",
+  "version": "2.0.2",
   "url": "https://github.com/riccqi/TabTabApp/releases/download/prod/tabtab.dmg",
   "bundleId": "riccqi.TabTab",
   "homepage": "https://tabtabapp.net/",
   "fileName": "tabtab.dmg",
-  "sha": "3acba097e94b8d90d432d796854e8257d5f470cffff45456e5851105a91e2534",
+  "sha": "7fe000fd90855dd15115dc7192a597040abb7936d87f22de40ed15b04c19991a",
   "previous_version": "2.0.1"
 }
