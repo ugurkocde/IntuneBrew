@@ -501,7 +501,8 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/joplin.json",
     "https://formulae.brew.sh/api/cask/remote-desktop-manager.json",
     "https://formulae.brew.sh/api/cask/rotato.json",
-    "https://formulae.brew.sh/api/cask/tenable-nessus-agent.json"
+    "https://formulae.brew.sh/api/cask/tenable-nessus-agent.json",
+    "https://formulae.brew.sh/api/cask/8x8-work.json"
 ]
 
 # PKG in DMG URLs
