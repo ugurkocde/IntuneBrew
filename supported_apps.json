@@ -1,5 +1,6 @@
 {
     "1password": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/1password.json",
+    "8x8_work": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/8x8_work.json",
     "a_better_finder_rename": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/a_better_finder_rename.json",
     "abstract": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/abstract.json",
     "acorn": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/acorn.json",
@@ -98,6 +99,7 @@
     "copilot_for_xcode": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/copilot_for_xcode.json",
     "copyclip": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/copyclip.json",
     "coteditor": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/coteditor.json",
+    "crashplan": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/crashplan.json",
     "cryptomator": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/cryptomator.json",
     "crystalfetch": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/crystalfetch.json",
     "cursor": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/cursor.json",
