@@ -5,7 +5,8 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/crashplan_11.7.0.pkg",
   "bundleId": "com.crashplan.app.pkg",
   "homepage": "https://www.crashplan.com/",
-  "fileName": "crashplan_11.7.0.pkg",
+  "fileName": "CrashPlan_11.7.0_911_Mac.dmg",
   "type": "pkg_in_dmg",
-  "sha": "1241b3b9891851bfaa7a1d30f90a9752acbdf30d82a61bc1cb4af5c9b91983b6"
+  "sha": "1241b3b9891851bfaa7a1d30f90a9752acbdf30d82a61bc1cb4af5c9b91983b6",
+  "previous_version": "11.7.0"
 }

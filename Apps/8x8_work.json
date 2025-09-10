@@ -6,5 +6,6 @@
   "bundleId": null,
   "homepage": "https://www.8x8.com/products/apps",
   "fileName": "work-arm64-dmg-v8.26.2-3.dmg",
-  "sha": "2cc9441016b4e2e6c358d8f8914dce0776323755191b29e3d2200a60a80bf55e"
+  "sha": "2cc9441016b4e2e6c358d8f8914dce0776323755191b29e3d2200a60a80bf55e",
+  "previous_version": "8.26.2-3"
 }
