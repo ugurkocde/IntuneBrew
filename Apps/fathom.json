@@ -2,7 +2,7 @@
   "name": "Fathom",
   "description": "Record and transcribe video conferences",
   "version": "1.42.0",
-  "url": "https://storage.googleapis.com/electron_releases/v1.42.0/Fathom-darwin-arm64-1.42.0.dmg",
+  "url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-1.42.0.dmg",
   "bundleId": "Fathom Helper",
   "homepage": "https://fathom.video/",
   "fileName": "Fathom-darwin-arm64-1.42.0.dmg",

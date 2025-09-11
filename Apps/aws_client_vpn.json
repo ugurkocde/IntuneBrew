@@ -1,11 +1,11 @@
 {
   "name": "AWS Client VPN",
   "description": "Managed client-based VPN service to securely access AWS resources",
-  "version": "5.3.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/aws_client_vpn_5.3.0.pkg",
+  "version": "5.3.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/aws_client_vpn_5.3.1.pkg",
   "bundleId": "com.amazon.awsvpnclient",
   "homepage": "https://aws.amazon.com/vpn/",
-  "fileName": "AWS_VPN_Client.pkg",
+  "fileName": "aws_client_vpn_5.3.1.pkg",
   "type": "pkg_in_pkg",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:02:37Z",
@@ -16,6 +16,6 @@
     "verify_status": "app_not_found",
     "bundle_id_status": "pending"
   },
-  "sha": "2d42562a441da2c28972fa7e94cc2acaae068a9edaa9626ce4a9b0313f704321",
+  "sha": "e6446bed0e4363344dcdb3e510b797eabd51270091e56f2e231079f50b02d446",
   "previous_version": "5.3.0"
 }
