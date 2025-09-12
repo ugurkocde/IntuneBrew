@@ -1,12 +1,12 @@
 {
   "name": "iMazing Profile Editor",
   "description": "Apple Device Configuration Profile Editor",
-  "version": "2.0.0",
-  "url": "https://downloads.imazing.com/mac/iMazing-Profile-Editor/2.0.0.364301/iMazing_Profile_Editor_2.0.0.364301.dmg",
+  "version": "2.1.0",
+  "url": "https://downloads.imazing.com/mac/iMazing-Profile-Editor/2.1.0.377601/iMazing_Profile_Editor_2.1.0.377601.dmg",
   "bundleId": "com.DigiDNA.iMazingProfileEditorMac",
   "homepage": "https://imazing.com/profile-editor",
-  "fileName": "iMazing_Profile_Editor_2.0.0.364301.dmg",
-  "sha": "b35686da3edda25273069d370996caa611012ed8f1f3f5bf18128ca9fa130310",
+  "fileName": "iMazing_Profile_Editor_2.1.0.377601.dmg",
+  "sha": "325213e0effda9b7f72791a18eaf8b6f92865f73b56a6b098fc29ec94ca72977",
   "changelog": "https://imazing.com/profile-editor/release-notes",
   "previous_version": "2.0.0"
 }

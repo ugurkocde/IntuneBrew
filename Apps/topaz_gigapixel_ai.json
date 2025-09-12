@@ -1,12 +1,12 @@
 {
   "name": "Topaz Gigapixel AI",
   "description": "AI image upscaler",
-  "version": "8.4.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/topaz_gigapixel_ai_8.4.2.pkg",
+  "version": "8.4.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/topaz_gigapixel_ai_8.4.3.pkg",
   "bundleId": "com.topazlabs.TopazGigapixelAI",
   "homepage": "https://www.topazlabs.com/gigapixel-ai",
-  "fileName": "TopazGigapixelAI-8.4.2.pkg",
+  "fileName": "topaz_gigapixel_ai_8.4.3.pkg",
   "type": "pkg_in_pkg",
-  "sha": "23cdd8350cdc20ee1f723829517afdd58d53fb4eb82d7015526f13a4ba741e8e",
+  "sha": "0d898fde447beffeab01af5abb98e0a608291f349d6224d208fc2904f57d8d2b",
   "previous_version": "8.4.2"
 }
