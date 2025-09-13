@@ -1,11 +1,11 @@
 {
   "name": "Threema",
   "description": "End-to-end encrypted instant messaging application",
-  "version": "1.2.48",
+  "version": "1.2.49",
   "url": "https://releases.threema.ch/web-electron/v1/release/Threema-Latest.dmg",
   "bundleId": "threema-consumer-web",
   "homepage": "https://threema.ch/",
   "fileName": "Threema-Latest.dmg",
-  "sha": "49196e3fda631f82958c786250199c7a32b388e2bf654258d95416043f4e5e33",
+  "sha": "cea50e9af4bf25661e4fca6ee70203d5c05049d8da5cccb89ad9195cef02c19d",
   "previous_version": "1.2.48"
 }
