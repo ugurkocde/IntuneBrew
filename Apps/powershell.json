@@ -1,12 +1,12 @@
 {
   "name": "PowerShell",
   "description": "Command-line shell and scripting language",
-  "version": "7.5.2",
-  "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.5.2/powershell-7.5.2-osx-arm64.pkg",
+  "version": "7.5.3",
+  "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.5.3/powershell-7.5.3-osx-arm64.pkg",
   "bundleId": "com.microsoft.powershell",
   "homepage": "https://github.com/PowerShell/PowerShell",
-  "fileName": "powershell-7.5.2-osx-arm64.pkg",
-  "sha": "84f095de7ddd62c0b2f1d6dc68efe0b35a0fb90c2fe5127de2b0dd15eab4d95c",
+  "fileName": "powershell-7.5.3-osx-arm64.pkg",
+  "sha": "c8aae872368a6543ca527a0e2b47226dd722a5a7dc2d793831a059c0dd6afa26",
   "changelog": "https://github.com/PowerShell/PowerShell/releases",
   "previous_version": "7.5.2"
 }

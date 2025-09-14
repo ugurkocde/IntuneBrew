@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -188,27 +188,14 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-09-13 00:25 UTC*
+*Last checked: 2025-09-14 00:29 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Threema | 1.2.48 | 1.2.49 |
-| Rive | 0.8.3438 | 0.8.3474 |
-| Proton Drive | 2.7.0 | 2.8.0 |
-| MongoDB Compass | 1.46.9 | 1.46.10 |
-| Notion | 4.19.0 | 4.20.0 |
-| RStudio | 2025.05.1 | 2025.09.0 |
-| Bruno | 2.10.1 | 2.11.0 |
-| Zed | 0.203.4 | 0.203.5 |
-| Keka | 1.5.2 | 1.6.0 |
-| VSCodium | 1.104.06114 | 1.104.06131 |
-| Insomnia | 11.5.0 | 11.6.0 |
-| Privileges | 2.4.0 | 2.4.1 |
-| DataSpell | 2025.2 | 2025.2.1 |
-| Remote Desktop Manager | 2025.2.12.2 | 2025.2.12.6 |
-| quarto | 1.7.34 | 1.8.24 |
+| PowerShell | 7.5.2 | 7.5.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -370,7 +357,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 4.0.4 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.6 |
 | <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 5.607 |
-| <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 5.3.4 |
+| <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 5.4 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.1.5.31310 |
 | <img src='Logos/binary_ninja.png' width='32' height='32'> Binary Ninja | 5.1.8104 |
 | <img src='Logos/bitwarden.png' width='32' height='32'> Bitwarden | 2025.8.2 |
@@ -387,8 +374,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/brave.png' width='32' height='32'> Brave | 1.82.166.0 |
 | <img src='Logos/breaktimer.png' width='32' height='32'> BreakTimer | 2.0.1 |
 | <img src='Logos/bruno.png' width='32' height='32'> Bruno | 2.11.0 |
-| <img src='Logos/busycal.png' width='32' height='32'> BusyCal | 2025.3.1 |
-| <img src='Logos/busycontacts.png' width='32' height='32'> BusyContacts | 2025.3.1 |
+| <img src='Logos/busycal.png' width='32' height='32'> BusyCal | 2025.3.2 |
+| <img src='Logos/busycontacts.png' width='32' height='32'> BusyContacts | 2025.3.2 |
 | <img src='Logos/caffeine.png' width='32' height='32'> Caffeine | 1.5.3 |
 | <img src='Logos/calibre.png' width='32' height='32'> calibre | 8.10.0 |
 | <img src='Logos/calmly_writer.png' width='32' height='32'> Calmly Writer | 2.0.60 |
@@ -465,7 +452,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/fantastical.png' width='32' height='32'> Fantastical | 4.0.18 |
 | <img src='Logos/fathom.png' width='32' height='32'> Fathom | 1.42.0 |
 | <img src='Logos/figma.png' width='32' height='32'> Figma | 125.7.5 |
-| <img src='Logos/fission.png' width='32' height='32'> Fission | 2.9.0 |
+| <img src='Logos/fission.png' width='32' height='32'> Fission | 2.9.1 |
 | <img src='Logos/flameshot.png' width='32' height='32'> Flameshot | 13.1.0 |
 | <img src='Logos/flowvision.png' width='32' height='32'> FlowVision | 1.6.6 |
 | <img src='Logos/flycut.png' width='32' height='32'> Flycut | 1.9.6 |
@@ -495,7 +482,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/goland.png' width='32' height='32'> Goland | 2025.2.1.2 |
 | <img src='Logos/google_ads_editor.png' width='32' height='32'> Google Ads Editor | 2.9 |
 | <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 140.0.7339.133 |
-| <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 113.0.1 |
+| <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 114.0.1 |
 | <img src='Logos/goose.png' width='32' height='32'> Goose | 1.8.0 |
 | <img src='Logos/gpt_fdisk.png' width='32' height='32'> GPT fdisk | 1.0.10 |
 | <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.135.2.0 |
@@ -573,7 +560,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/magicquit.png' width='32' height='32'> MagicQuit | 1.4 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.17.0.3365 |
 | <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.26.1 |
-| <img src='Logos/marsedit.png' width='32' height='32'> MarsEdit | 5.3.5 |
+| <img src='Logos/marsedit.png' width='32' height='32'> MarsEdit | 5.3.6 |
 | <img src='Logos/marta_file_manager.png' width='32' height='32'> Marta File Manager | 0.8.2 |
 | <img src='Logos/mattermost.png' width='32' height='32'> Mattermost | 5.13.1 |
 | <img src='Logos/medis.png' width='32' height='32'> Medis | 2.16.1 |
@@ -679,7 +666,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/portx.png' width='32' height='32'> portx | 2.2.12 |
 | <img src='Logos/postico.png' width='32' height='32'> Postico | 2.2.2 |
 | <img src='Logos/postman.png' width='32' height='32'> Postman | 11.62.7 |
-| <img src='Logos/powershell.png' width='32' height='32'> PowerShell | 7.5.2 |
+| <img src='Logos/powershell.png' width='32' height='32'> PowerShell | 7.5.3 |
 | <img src='Logos/principle.png' width='32' height='32'> Principle | 6.39 |
 | <img src='Logos/privileges.png' width='32' height='32'> Privileges | 2.4.1 |
 | <img src='Logos/processspy.png' width='32' height='32'> ProcessSpy | 1.8.7 |
