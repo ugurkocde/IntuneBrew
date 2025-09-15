@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -189,13 +189,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-09-14 00:29 UTC*
+*Last checked: 2025-09-15 00:30 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| PowerShell | 7.5.2 | 7.5.3 |
+| Lunatask | 2.1.7 | 2.1.8 |
+| MarkEdit | 1.26.1 | 1.26.2 |
+| Transnomino | 9.5.0 | 9.5.1 |
+| FreeTube | 0.23.8 | 0.23.9 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -351,7 +355,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/bambu_studio.png' width='32' height='32'> Bambu Studio | 02.02.01.60 |
 | <img src='Logos/bartender.png' width='32' height='32'> Bartender | 5.3.7 |
 | <img src='Logos/basecamp.png' width='32' height='32'> Basecamp | 3 |
-| <img src='Logos/batfi.png' width='32' height='32'> BatFi | 2.4.2 |
+| <img src='Logos/batfi.png' width='32' height='32'> BatFi | 3.0.0 |
 | <img src='Logos/bbedit.png' width='32' height='32'> BBEdit | 15.5.3 |
 | <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.1.186 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 4.0.4 |
@@ -462,7 +466,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/freecad.png' width='32' height='32'> FreeCAD | 1.0.2 |
 | <img src='Logos/freelens.png' width='32' height='32'> Freelens | 1.5.3 |
 | <img src='Logos/freemacsoft_appcleaner.png' width='32' height='32'> FreeMacSoft AppCleaner | 3.6.8 |
-| <img src='Logos/freetube.png' width='32' height='32'> FreeTube | 0.23.8 |
+| <img src='Logos/freetube.png' width='32' height='32'> FreeTube | 0.23.9 |
 | <img src='Logos/fsmonitor.png' width='32' height='32'> FSMonitor | 1.2 |
 | <img src='Logos/gather_town.png' width='32' height='32'> Gather Town | 1.33.0 |
 | <img src='Logos/geany.png' width='32' height='32'> Geany | 2.1 |
@@ -547,7 +551,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 1.14.4 |
 | <img src='Logos/loop.png' width='32' height='32'> Loop | 1.3.0 |
 | <img src='Logos/lulu.png' width='32' height='32'> LuLu | 4.0.1 |
-| <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.7 |
+| <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.8 |
 | <img src='Logos/löve.png' width='32' height='32'> LÖVE | 11.5 |
 | <img src='Logos/maccy.png' width='32' height='32'> Maccy | 2.5.0 |
 | <img src='Logos/macdown.png' width='32' height='32'> MacDown | 0.7.2 |
@@ -559,7 +563,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/maestral.png' width='32' height='32'> Maestral | 1.9.4 |
 | <img src='Logos/magicquit.png' width='32' height='32'> MagicQuit | 1.4 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.17.0.3365 |
-| <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.26.1 |
+| <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.26.2 |
 | <img src='Logos/marsedit.png' width='32' height='32'> MarsEdit | 5.3.6 |
 | <img src='Logos/marta_file_manager.png' width='32' height='32'> Marta File Manager | 0.8.2 |
 | <img src='Logos/mattermost.png' width='32' height='32'> Mattermost | 5.13.1 |
@@ -771,7 +775,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.19484 |
 | <img src='Logos/transmission.png' width='32' height='32'> Transmission | 4.0.6 |
 | <img src='Logos/transmit.png' width='32' height='32'> Transmit | 5.10.9 |
-| <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.5.0 |
+| <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.5.1 |
 | <img src='Logos/tunnelblick.png' width='32' height='32'> Tunnelblick | 8.0 |
 | <img src='Logos/twingate.png' width='32' height='32'> Twingate | 2025.227.17625 |
 | <img src='Logos/typora.png' width='32' height='32'> Typora | 1.11.7 |
