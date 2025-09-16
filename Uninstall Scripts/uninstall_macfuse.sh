@@ -17,6 +17,18 @@ fi
 echo "Stopping macFUSE if running..."
 pkill -f "macFUSE" 2>/dev/null || true
 
+# Unload service io.macfuse.app.launchservice.broker
+echo "Unloading service io.macfuse.app.launchservice.broker..."
+launchctl unload -w /Library/LaunchAgents/io.macfuse.app.launchservice.broker.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/io.macfuse.app.launchservice.broker.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/io.macfuse.app.launchservice.broker.plist 2>/dev/null || true
+
+# Unload service io.macfuse.app.launchservice.daemon
+echo "Unloading service io.macfuse.app.launchservice.daemon..."
+launchctl unload -w /Library/LaunchAgents/io.macfuse.app.launchservice.daemon.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/io.macfuse.app.launchservice.daemon.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/io.macfuse.app.launchservice.daemon.plist 2>/dev/null || true
+
 # Remove /Library/PreferencePanes/macFUSE.prefPane
 echo "Removing /Library/PreferencePanes/macFUSE.prefPane..."
 if [ -d "/Library/PreferencePanes/macFUSE.prefPane" ]; then
