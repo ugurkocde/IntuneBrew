@@ -1,12 +1,12 @@
 {
   "name": "macFUSE",
   "description": "File system integration",
-  "version": "4.10.2",
-  "url": "https://github.com/macfuse/macfuse/releases/download/macfuse-4.10.2/macfuse-4.10.2.dmg",
+  "version": "5.0.6",
+  "url": "https://github.com/macfuse/macfuse/releases/download/macfuse-5.0.6/macfuse-5.0.6.dmg",
   "bundleId": "io.macfuse.installer.components.core",
   "homepage": "https://macfuse.github.io/",
-  "fileName": "macfuse-4.10.2.dmg",
-  "sha": "fcca8ec48742288dccdd36db65bb92c4fe4bc23c2c7c5b76aa0ac68e06aebe88",
+  "fileName": "macfuse-5.0.6.dmg",
+  "sha": "388b92df38fa32bb98b9edbe5cdabb02361c4f7843fbe4067e589b91b714aa3f",
   "changelog": "https://github.com/macfuse/macfuse/releases",
   "previous_version": "4.10.2"
 }

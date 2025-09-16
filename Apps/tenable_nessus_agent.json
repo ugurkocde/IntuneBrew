@@ -1,11 +1,11 @@
 {
   "name": "Tenable Nessus Agent",
   "description": "Agent for Nessus vulnerability scanner",
-  "version": "10.9.0",
-  "url": "https://www.tenable.com/downloads/api/v1/public/pages/nessus-agents/downloads/25803/download?i_agree_to_tenable_license_agreement=true",
+  "version": "11.0.1",
+  "url": "https://www.tenable.com/downloads/api/v1/public/pages/nessus-agents/downloads/26418/download?i_agree_to_tenable_license_agreement=true",
   "bundleId": "com.tenablesecurity.NessusAgent",
   "homepage": "https://www.tenable.com/",
   "fileName": "NessusAgent.dmg",
-  "sha": "59c3761567508b7fb937d2578ff7541785cbd4b473d66b879f6d25026f54f6fa",
+  "sha": "6b16d55aa188c1fcabcd6aff145935663ec3a89bbd8e6caf6530c93ab9022551",
   "previous_version": "10.9.0"
 }
