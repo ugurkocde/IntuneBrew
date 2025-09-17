@@ -1,12 +1,12 @@
 {
   "name": "Mozilla Firefox",
   "description": "Web browser",
-  "version": "142.0.1",
-  "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/142.0.1/mac/en-US/Firefox%20142.0.1.dmg",
+  "version": "143.0",
+  "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/143.0/mac/en-US/Firefox%20143.0.dmg",
   "bundleId": "org.mozilla.firefox",
   "homepage": "https://www.mozilla.org/firefox/",
-  "fileName": "Firefox%20142.0.1.dmg",
-  "sha": "de41866c94d064a20cd787d89203c5f646fe0278da13c44605733ce205680965",
+  "fileName": "Firefox%20143.0.dmg",
+  "sha": "a5c570e277021b61df1295efe77446617ebd768d8ad36a20b309aa382685f6f2",
   "changelog": "https://www.mozilla.org/en-US/firefox/releases/",
   "previous_version": "142.0.1"
 }

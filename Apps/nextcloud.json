@@ -1,12 +1,12 @@
 {
   "name": "Nextcloud",
   "description": "Desktop sync client for Nextcloud software products",
-  "version": "3.17.1",
-  "url": "https://download.nextcloud.com/desktop/releases/Mac/Installer/Nextcloud-3.17.1.pkg",
+  "version": "3.17.2",
+  "url": "https://download.nextcloud.com/desktop/releases/Mac/Installer/Nextcloud-3.17.2.pkg",
   "bundleId": "com.nextcloud.desktopclient",
   "homepage": "https://nextcloud.com/",
-  "fileName": "Nextcloud-3.17.1.pkg",
+  "fileName": "Nextcloud-3.17.2.pkg",
   "type": "pkg",
-  "sha": "bb0204740b0dd48b92e8653825d53630bfd630f0f4e5a42939546a447067a6ac",
+  "sha": "266ee451429549edced6c871ec42d1fefc6a8d2ef42cecd4527bf76ef2859140",
   "previous_version": "3.17.1"
 }

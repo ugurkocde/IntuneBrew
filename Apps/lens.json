@@ -1,11 +1,11 @@
 {
   "name": "Lens",
   "description": "Kubernetes IDE",
-  "version": "2025.8.121212",
-  "url": "https://api.k8slens.dev/binaries/Lens-2025.8.121212-latest-arm64.dmg",
+  "version": "2025.9.151055",
+  "url": "https://api.k8slens.dev/binaries/Lens-2025.9.151055-latest-arm64.dmg",
   "bundleId": "com.electron.kontena-lens",
   "homepage": "https://k8slens.dev/",
-  "fileName": "Lens-2025.8.121212-latest-arm64.dmg",
-  "sha": "0bac6ced8f0d1b0ea124493db5c0ca7471059f4fd246227abe206ca0dc2e9fdb",
+  "fileName": "Lens-2025.9.151055-latest-arm64.dmg",
+  "sha": "72ef535139374c981da2d24351589e9480c8193a1c0883d5422c091c429e8880",
   "previous_version": "2025.8.121212"
 }

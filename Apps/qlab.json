@@ -1,12 +1,12 @@
 {
   "name": "QLab",
   "description": "Sound, video and lighting control",
-  "version": "5.5.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/qlab_5.5.3.pkg",
+  "version": "5.5.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/qlab_5.5.4.pkg",
   "bundleId": "com.figure53.QLab.5",
   "homepage": "https://qlab.app/",
-  "fileName": "qlab_5.5.3.pkg",
+  "fileName": "qlab_5.5.4.pkg",
   "type": "app",
-  "sha": "39f353b333197f6013849489c53eb61025a74a4fa9fddfb83bbc7e055bb64fab",
-  "previous_version": "5.5.3"
+  "sha": "a787dca6ba60a1e47be33a73dc23202cc4914d02225274651f68a98b70c099b6",
+  "previous_version": "5.5.4"
 }
