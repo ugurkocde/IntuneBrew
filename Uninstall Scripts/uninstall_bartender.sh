@@ -27,12 +27,12 @@ launchctl unload -w ~/Library/LaunchAgents/com.surteesstudios.Bartender.Bartende
 echo "Stopping application with bundle ID com.surteesstudios.Bartender if running..."
 killall -9 "com.surteesstudios.Bartender" 2>/dev/null || true
 
-# Remove /Applications/Bartender 5.app
-echo "Removing /Applications/Bartender 5.app..."
-if [ -d "/Applications/Bartender 5.app" ]; then
-    rm -rf "/Applications/Bartender 5.app" 2>/dev/null || true
-elif [ -f "/Applications/Bartender 5.app" ]; then
-    rm -f "/Applications/Bartender 5.app" 2>/dev/null || true
+# Remove /Applications/Bartender 6.app
+echo "Removing /Applications/Bartender 6.app..."
+if [ -d "/Applications/Bartender 6.app" ]; then
+    rm -rf "/Applications/Bartender 6.app" 2>/dev/null || true
+elif [ -f "/Applications/Bartender 6.app" ]; then
+    rm -f "/Applications/Bartender 6.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.surteesstudios.Bartender
