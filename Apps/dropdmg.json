@@ -1,12 +1,12 @@
 {
   "name": "DropDMG",
   "description": "Create DMGs and other archives",
-  "version": "3.6.9",
-  "url": "https://c-command.com/downloads/DropDMG-3.6.9.dmg",
+  "version": "3.7",
+  "url": "https://c-command.com/downloads/DropDMG-3.7.dmg",
   "bundleId": "com.c-command.DropDMG",
   "homepage": "https://c-command.com/dropdmg/",
-  "fileName": "DropDMG-3.6.9.dmg",
-  "sha": "065b89f0fae9c05d95a259ac7210e5632f2cf14745f8ca61351074b894e75075",
+  "fileName": "DropDMG-3.7.dmg",
+  "sha": "63568b7194334d05052ca1ac94c2d26e9f00d6b51a0d39213f484352a4c6d233",
   "changelog": "https://c-command.com/dropdmg/help/change-log",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:23:36Z",

@@ -1,13 +1,13 @@
 {
   "name": "Keybase",
   "description": "End-to-end encryption software",
-  "version": "6.5.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/keybase_6.5.1.pkg",
+  "version": "6.5.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/keybase_6.5.4.pkg",
   "bundleId": "keybase.Helper",
   "homepage": "https://keybase.io/",
-  "fileName": "keybase_6.5.1.pkg",
+  "fileName": "keybase_6.5.4.pkg",
   "type": "app",
-  "sha": "916b57079b7c6512dd387422c2e0652443ca4ecf28cf72352aaac3575cf3d98d",
+  "sha": "312521186a5ab3e5a03748ba57d263949e752b12f6dbad9312cfec7f8dd72253",
   "changelog": "https://github.com/keybase/client/releases",
-  "previous_version": "6.5.1"
+  "previous_version": "6.5.4"
 }

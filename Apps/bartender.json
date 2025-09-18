@@ -1,14 +1,14 @@
 {
   "name": "Bartender",
   "description": "Menu bar icon organiser",
-  "version": "6.0.0",
-  "url": "https://macbartender.com/B2/updates/6-0-0/Bartender%206.dmg",
+  "version": "6.0.1",
+  "url": "https://www.macbartender.com/B2/updates/6-0-1/Bartender%206.dmg",
   "bundleId": "com.surteesstudios.Bartender",
   "homepage": "https://www.macbartender.com/",
   "fileName": "bartender_5.3.7.pkg",
   "type": "app",
-  "sha": "a0938682461158d34e10c67c8affa768f4d567121fde831bfcae167ef570b277",
-  "previous_version": "6.0.0",
+  "sha": "f0293f39b65cff01673640126c7c0a31a79d10afc0f9482e9639b06919747659",
+  "previous_version": "6.0.1",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:21:19Z",
     "qa_result": "Installation successful and verified",
