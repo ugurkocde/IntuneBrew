@@ -25,12 +25,6 @@ elif [ -f "/Applications/Ghostty.app" ]; then
     rm -f "/Applications/Ghostty.app" 2>/dev/null || true
 fi
 
-# Remove binary /Applications/Ghostty.app/Ghostty.app/Contents/MacOS/ghostty
-echo "Removing binary /Applications/Ghostty.app/Ghostty.app/Contents/MacOS/ghostty..."
-if [ -f "/Applications/Ghostty.app/Ghostty.app/Contents/MacOS/ghostty" ]; then
-    rm -f "/Applications/Ghostty.app/Ghostty.app/Contents/MacOS/ghostty" 2>/dev/null || true
-fi
-
 # Remove $HOME/.config/ghostty/
 echo "Removing $HOME/.config/ghostty/..."
 if [ -d "$HOME/.config/ghostty/" ]; then
