@@ -1,11 +1,11 @@
 {
   "name": "portx",
   "description": "SSH Client",
-  "version": "2.2.12",
-  "url": "https://cdn.netsarang.net/0ac7ea20/PortX-2.2.12-arm64.dmg",
+  "version": "2.2.13",
+  "url": "https://cdn.netsarang.net/0ac7ea20/PortX-2.2.13-arm64.dmg",
   "bundleId": "com.netsarang.portx",
   "homepage": "https://portx.online/",
-  "fileName": "PortX-2.2.12-arm64.dmg",
-  "sha": "fef969f88caecfdcb5101bd12c4fca0983a99578cecdfcb79be54e87599e7341",
+  "fileName": "PortX-2.2.13-arm64.dmg",
+  "sha": "d8f5a9cb70233ed804e695d07024768d018b9c0b7525e1e4e600100663918672",
   "previous_version": "2.2.12"
 }
