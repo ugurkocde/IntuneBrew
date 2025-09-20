@@ -25,5 +25,13 @@ elif [ -f "/Applications/MagicQuit.app" ]; then
     rm -f "/Applications/MagicQuit.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.MagicQuit.plist
+echo "Removing $HOME/Library/Preferences/com.MagicQuit.plist..."
+if [ -d "$HOME/Library/Preferences/com.MagicQuit.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.MagicQuit.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.MagicQuit.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.MagicQuit.plist" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0
