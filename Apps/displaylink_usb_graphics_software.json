@@ -1,13 +1,13 @@
 {
   "name": "DisplayLink USB Graphics Software",
   "description": "Drivers for DisplayLink docks, adapters and monitors",
-  "version": "13.1",
-  "url": "https://www.synaptics.com/sites/default/files/exe_files/2025-09/DisplayLink%20Manager%20Graphics%20Connectivity13.1-EXE.zip",
+  "version": "14.0",
+  "url": "https://www.synaptics.com/sites/default/files/exe_files/2025-09/DisplayLink%20Manager%20Graphics%20Connectivity14.0-EXE.zip",
   "bundleId": "com.displaylink.*",
   "homepage": "https://www.synaptics.com/products/displaylink-graphics",
-  "fileName": "DisplayLink%20Manager%20Graphics%20Connectivity13.1-EXE.zip",
+  "fileName": "DisplayLink%20Manager%20Graphics%20Connectivity14.0-EXE.zip",
   "type": "pkg",
-  "sha": "4ce0fb1262d42fcbbe29e68ff1f1f7e00b17c4ae6593f1febd548f95e0e833d1",
+  "sha": "981303071f33adacf80b00eaf4524f029b597f8ba27ff980bc998e48c9bd189f",
   "qa_info": {
     "qa_timestamp": "2025-05-14T08:59:10Z",
     "qa_result": "App not found after installation",
