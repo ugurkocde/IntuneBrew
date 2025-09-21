@@ -1,11 +1,11 @@
 {
   "name": "Proxyman",
   "description": "HTTP debugging proxy",
-  "version": "5.24.0",
-  "url": "https://download.proxyman.com/52400/Proxyman_5.24.0.dmg",
+  "version": "5.25.0",
+  "url": "https://download.proxyman.com/52500/Proxyman_5.25.0.dmg",
   "bundleId": "com.proxyman.NSProxy",
   "homepage": "https://proxyman.com/",
-  "fileName": "Proxyman_5.24.0.dmg",
-  "sha": "b5700b1bc4fc4f0ca224f87587b1551bd5f20c39d53c34cb0be7263a1fe92622",
+  "fileName": "Proxyman_5.25.0.dmg",
+  "sha": "898bd11892f1c7422ccc7c17d675915684564c4e25e0b910ad28e436b6c286f1",
   "previous_version": "5.24.0"
 }

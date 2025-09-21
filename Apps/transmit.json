@@ -1,12 +1,12 @@
 {
   "name": "Transmit",
   "description": "File transfer application",
-  "version": "5.10.9",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/transmit_5.10.9.pkg",
+  "version": "5.11.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/transmit_5.11.0.pkg",
   "bundleId": "com.panic.Transmit",
   "homepage": "https://panic.com/transmit/",
-  "fileName": "transmit_5.10.9.pkg",
+  "fileName": "transmit_5.11.0.pkg",
   "type": "app",
-  "sha": "72ff56ff80fbb54ec31eb04ea09312a6d92da035a1fe7a02384c58e0c3ce3fd2",
-  "previous_version": "5.10.9"
+  "sha": "a12094b6d598c614ffb0bbe85085aabeed49a9cc2b94860ce015584bb7fe8cb0",
+  "previous_version": "5.11.0"
 }

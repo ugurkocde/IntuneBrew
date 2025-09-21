@@ -1,12 +1,12 @@
 {
   "name": "OnyX",
   "description": "Verify system files structure, run miscellaneous maintenance and more",
-  "version": "4.8.5",
-  "url": "https://www.titanium-software.fr/download/15/OnyX.dmg",
+  "version": "4.9.0",
+  "url": "https://www.titanium-software.fr/download/26/OnyX.dmg",
   "bundleId": "com.titanium.OnyX",
   "homepage": "https://www.titanium-software.fr/en/onyx.html",
   "fileName": "OnyX.dmg",
-  "sha": "ef316c2b47a10779f534cfbe5d2b4db2e89ef995b1a797e24f6cf2e9fe0f8e79",
+  "sha": "81839afeea6e272788d270ba8d41e4d1ee2941f4fee6d1f4c7ebb01454686076",
   "changelog": "https://www.titanium-software.fr/en/onyx/changelog.html",
   "previous_version": "4.8.5"
 }

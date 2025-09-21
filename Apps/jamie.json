@@ -1,11 +1,11 @@
 {
   "name": "Jamie",
   "description": "AI-powered meeting notes",
-  "version": "4.2.5",
-  "url": "https://github.com/louismorgner/jamie-release/releases/download/v4.2.5/jamie-4.2.5-arm64.dmg",
+  "version": "4.5.0",
+  "url": "https://github.com/louismorgner/jamie-release/releases/download/v4.5.0/jamie-4.5.0-mac.zip",
   "bundleId": "ai.meetjamie.app",
   "homepage": "https://meetjamie.ai/",
-  "fileName": "jamie-4.2.5-arm64.dmg",
-  "sha": "0dfc2e08cc7c4d870e5cbc67dd812e2229867b0621d9ba5907c7f8c94e369d03",
+  "fileName": "jamie-4.5.0-mac.zip",
+  "sha": "39014fabc16ff77b08c4e333ce3ff9f911dc7b2ea0f3da3cfbf480d978ecd946",
   "previous_version": "4.2.5"
 }
