@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -196,19 +196,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-09-21 00:34 UTC*
+*Last checked: 2025-09-22 00:31 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Jamie | 4.2.5 | 4.5.0 |
-| Apifox | 2.7.35 | 2.7.36 |
-| Proxyman | 5.24.0 | 5.25.0 |
-| Zed | 0.204.3 | 0.204.4 |
-| OnyX | 4.8.5 | 4.9.0 |
-| Apidog | 2.7.35 | 2.7.36 |
-| Amazon Q | 1.16.1 | 1.16.2 |
+| Syncovery | 11.7.2 | 11.8.2 |
+| Grammarly Desktop | 1.136.3.0 | 1.136.4.0 |
+| Stats | 2.11.52 | 2.11.53 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -416,7 +413,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/crashplan.png' width='32' height='32'> CrashPlan | 11.7.0 |
 | <img src='Logos/cryptomator.png' width='32' height='32'> Cryptomator | 1.17.1 |
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
-| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 1.6.35 |
+| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 1.6.42 |
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.2.4 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.31 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.9.1 |
@@ -498,7 +495,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 114.0.1 |
 | <img src='Logos/goose.png' width='32' height='32'> Goose | 1.8.0 |
 | <img src='Logos/gpt_fdisk.png' width='32' height='32'> GPT fdisk | 1.0.10 |
-| <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.136.3.0 |
+| <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.136.4.0 |
 | <img src='Logos/grandperspective.png' width='32' height='32'> GrandPerspective | 3.6 |
 | <img src='Logos/hammerspoon.png' width='32' height='32'> Hammerspoon | 1.0.0 |
 | <img src='Logos/hazel.png' width='32' height='32'> Hazel | 6.0.4 |
@@ -749,7 +746,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2025.10 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 9.2.2 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.52 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.53 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 4.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.6 |
 | <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.18.0 |
@@ -761,7 +758,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/suspicious_package.png' width='32' height='32'> Suspicious Package | 4.6 |
 | <img src='Logos/swift_shift.png' width='32' height='32'> Swift Shift | 0.27.1 |
 | <img src='Logos/sync.png' width='32' height='32'> Sync | 2.2.52 |
-| <img src='Logos/syncovery.png' width='32' height='32'> Syncovery | 11.7.2 |
+| <img src='Logos/syncovery.png' width='32' height='32'> Syncovery | 11.8.2 |
 | <img src='Logos/synology_drive.png' width='32' height='32'> Synology Drive | 3.5.2 |
 | <img src='Logos/tableau_desktop.png' width='32' height='32'> Tableau Desktop | 2025.2.1 |
 | <img src='Logos/tabtab.png' width='32' height='32'> TabTab | 2.0.2 |
