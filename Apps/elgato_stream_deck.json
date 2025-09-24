@@ -1,12 +1,12 @@
 {
   "name": "Elgato Stream Deck",
   "description": "Assign keys, and then decorate and label them",
-  "version": "7.0.0.22005",
-  "url": "https://edge.elgato.com/egc/macos/sd/Stream_Deck_7.0.0.22005.pkg",
+  "version": "7.0.1.22055",
+  "url": "https://edge.elgato.com/egc/macos/sd/Stream_Deck_7.0.1.22055.pkg",
   "bundleId": "com.elgato.StreamDeck",
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
-  "fileName": "Stream_Deck_7.0.0.22005.pkg",
-  "sha": "f42fdbdc6d6f9a1f3598a3d766f979596de5d48363c9f3371f9f0617da64f4ca",
+  "fileName": "Stream_Deck_7.0.1.22055.pkg",
+  "sha": "d2f404386619087a925e99417766d2523b40d2b898a54fa4a5433bd017ab819f",
   "changelog": "https://help.elgato.com/hc/en-us/sections/5162671529357-Elgato-Stream-Deck-Software-Release-Notes",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:10:34Z",

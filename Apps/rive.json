@@ -1,11 +1,11 @@
 {
   "name": "Rive",
   "description": "Design tool that creates functional graphics",
-  "version": "0.8.3474",
-  "url": "https://releases.rive.app/macos/0.8.3474/Rive.dmg",
+  "version": "0.8.3529",
+  "url": "https://releases.rive.app/macos/0.8.3529/Rive.dmg",
   "bundleId": "app.rive.editor",
   "homepage": "https://rive.app/",
   "fileName": "Rive.dmg",
-  "sha": "0e6747ec18df3addb20be1fec04112d363d138dc8b688f53c5579d890df64499",
+  "sha": "c32ff88ea2cea4520ffeeeb453bca280395ea67ca9e9a484b78c6bdcb70d06ee",
   "previous_version": "0.8.3474"
 }

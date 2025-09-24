@@ -1,13 +1,13 @@
 {
   "name": "Nota Gyazo GIF",
   "description": "Screenshot and screen recording tool",
-  "version": "9.12.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/nota_gyazo_gif_9.12.0.pkg",
+  "version": "10.1.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/nota_gyazo_gif_10.1.0.pkg",
   "bundleId": "com.gyazo.pkg",
   "homepage": "https://gyazo.com/",
-  "fileName": "Gyazo-9.12.0.pkg",
+  "fileName": "nota_gyazo_gif_10.1.0.pkg",
   "type": "pkg_in_pkg",
   "changelog": "https://support.gyazo.com/hc/en-us/articles/204411615-Release-Notes",
-  "sha": "85163046ee160487a430d74a3f2a218bfca31bc0fbc3fc566198decc4f6a5558",
+  "sha": "7ce782cde1ae77dd66d69319c4ffcb6463edc85aea672ce3cd006d61a5504117",
   "previous_version": "9.12.0"
 }
