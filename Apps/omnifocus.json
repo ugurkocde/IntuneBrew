@@ -1,11 +1,11 @@
 {
   "name": "OmniFocus",
   "description": "Scheduling application focusing on organisation",
-  "version": "4.8.2",
-  "url": "https://downloads.omnigroup.com/software/macOS/14/OmniFocus-4.8.2-v185.0.16.dmg",
+  "version": "4.8.3",
+  "url": "https://downloads.omnigroup.com/software/macOS/14/OmniFocus-4.8.3.dmg",
   "bundleId": "com.omnigroup.OmniFocus4",
   "homepage": "https://www.omnigroup.com/omnifocus/",
-  "fileName": "OmniFocus-4.8.2-v185.0.16.dmg",
-  "sha": "ba8236aa5b75ff56e881b6c34b073409b086e2565f18e24a3bfceddee5e813e9",
+  "fileName": "OmniFocus-4.8.3.dmg",
+  "sha": "c4a504a6f4ee111e82d2db5d828e0d35c1f9fe7ba2c531a03e87b2d8c6f38984",
   "previous_version": "4.8.2"
 }

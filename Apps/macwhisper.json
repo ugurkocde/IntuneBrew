@@ -1,12 +1,12 @@
 {
   "name": "MacWhisper",
   "description": "Speech recognition tool",
-  "version": "12.18.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/macwhisper_12.18.2.pkg",
+  "version": "12.18.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/macwhisper_12.18.3.pkg",
   "bundleId": "com.goodsnooze.MacWhisper",
   "homepage": "https://goodsnooze.gumroad.com/l/macwhisper",
-  "fileName": "macwhisper_12.18.2.pkg",
+  "fileName": "macwhisper_12.18.3.pkg",
   "type": "app",
-  "sha": "ec5da632b11d484f53f1b768580bf68c1abe7c98db9eb66bfd8aaefb3bc860fc",
-  "previous_version": "12.18.2"
+  "sha": "9c02c49a0cdcd1b55c819589bb36e19a609ba8a287857fb6badff827f4d259ce",
+  "previous_version": "12.18.3"
 }
