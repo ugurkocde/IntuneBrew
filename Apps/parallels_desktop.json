@@ -1,12 +1,12 @@
 {
   "name": "Parallels Desktop",
   "description": "Desktop virtualization software",
-  "version": "26.0.1-57243",
-  "url": "https://download.parallels.com/desktop/v26/26.0.1-57243/ParallelsDesktop-26.0.1-57243.dmg",
+  "version": "26.1.0-57287",
+  "url": "https://download.parallels.com/desktop/v26/26.1.0-57287/ParallelsDesktop-26.1.0-57287.dmg",
   "bundleId": "com.parallels.desktop.console",
   "homepage": "https://www.parallels.com/products/desktop/",
-  "fileName": "ParallelsDesktop-26.0.1-57243.dmg",
-  "sha": "8c038ff60dc908ac4e17288375826fbccf5e7060db32e08044212ee2c13b09fb",
+  "fileName": "ParallelsDesktop-26.1.0-57287.dmg",
+  "sha": "47c8d1aac65553206a22a79f6608d4643f6311787d7f1d4e7d3b035482571e9f",
   "changelog": "https://kb.parallels.com/en/129060",
   "previous_version": "26.0.1-57243"
 }

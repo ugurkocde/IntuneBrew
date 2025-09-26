@@ -1,13 +1,13 @@
 {
   "name": "Principle",
   "description": "Design animated and interactive user interfaces",
-  "version": "6.39",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/principle_6.39.pkg",
+  "version": "6.40",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/principle_6.40.pkg",
   "bundleId": "com.danielhooper.principle",
   "homepage": "https://principleformac.com/",
-  "fileName": "principle_6.39.pkg",
+  "fileName": "principle_6.40.pkg",
   "type": "app",
-  "sha": "d757f3dcc0199803ff5424f9b9d1a488aa1e889160c4aef9f37795acf28fa487",
+  "sha": "4de7576adf8d21a934c0a9f0a10d2dee30de9ce3f4affe234cddb7c068e19040",
   "changelog": "https://principleformac.com/changeLog.html",
-  "previous_version": "6.39"
+  "previous_version": "6.40"
 }
