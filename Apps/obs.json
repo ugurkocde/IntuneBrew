@@ -8,5 +8,5 @@
   "fileName": "obs-studio-32.0.0-macos-apple.dmg",
   "sha": "2107f7dae0649afa9190400ae193f57eaec96fab4f8c216ee08138ed2803c680",
   "changelog": "https://github.com/obsproject/obs-studio/releases",
-  "previous_version": "31.1.2"
+  "previous_version": "32.0.0"
 }

@@ -1,11 +1,11 @@
 {
   "name": "Raindrop.io",
   "description": "All-in-one bookmark manager",
-  "version": "5.6.76",
-  "url": "https://github.com/raindropio/desktop/releases/download/v5.6.76/Raindrop-arm64.dmg",
+  "version": "5.6.94",
+  "url": "https://github.com/raindropio/desktop/releases/download/v5.6.94/Raindrop-arm64.dmg",
   "bundleId": "io.raindrop.macapp",
   "homepage": "https://raindrop.io/",
   "fileName": "Raindrop-arm64.dmg",
-  "sha": "7d95f686cb79d239645b88d6a90d5040c93ca537919a1f3bd2a7f85aabbdba0c",
+  "sha": "b1cfed54df035f3757aefd63c153e2bbbdd6c87b433b0e843446287647db711c",
   "previous_version": "5.6.76"
 }

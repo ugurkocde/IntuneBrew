@@ -1,7 +1,7 @@
 {
   "name": "Remote Help",
   "description": "Microsoft Remote Help for secure help desk connections with role-based access controls",
-  "version": "1.0.2404171",
+  "version": "1.0.2509231",
   "url": "https://aka.ms/downloadremotehelpmacos",
   "bundleId": "com.microsoft.remotehelp",
   "homepage": "https://learn.microsoft.com/en-us/mem/intune/fundamentals/remote-help-macos",
