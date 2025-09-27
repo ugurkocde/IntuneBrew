@@ -25,6 +25,14 @@ elif [ -f "/Applications/Arduino IDE.app" ]; then
     rm -f "/Applications/Arduino IDE.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/.arduino15
+echo "Removing $HOME/.arduino15..."
+if [ -d "$HOME/.arduino15" ]; then
+    rm -rf "$HOME/.arduino15" 2>/dev/null || true
+elif [ -f "$HOME/.arduino15" ]; then
+    rm -f "$HOME/.arduino15" 2>/dev/null || true
+fi
+
 # Remove $HOME/.arduinoIDE
 echo "Removing $HOME/.arduinoIDE..."
 if [ -d "$HOME/.arduinoIDE" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LS
     rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/cc.arduino.ide*.sfl*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/cc.arduino.ide*.sfl*" ]; then
     rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/cc.arduino.ide*.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Arduino15
+echo "Removing $HOME/Library/Arduino15..."
+if [ -d "$HOME/Library/Arduino15" ]; then
+    rm -rf "$HOME/Library/Arduino15" 2>/dev/null || true
+elif [ -f "$HOME/Library/Arduino15" ]; then
+    rm -f "$HOME/Library/Arduino15" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/cc.arduino.IDE*.plist

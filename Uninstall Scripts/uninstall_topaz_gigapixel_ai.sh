@@ -17,6 +17,14 @@ fi
 echo "Stopping Topaz Gigapixel AI if running..."
 pkill -f "Topaz Gigapixel AI" 2>/dev/null || true
 
+# Remove $HOME/Library/Caches/Topaz Labs LLC/Topaz Gigapixel AI
+echo "Removing $HOME/Library/Caches/Topaz Labs LLC/Topaz Gigapixel AI..."
+if [ -d "$HOME/Library/Caches/Topaz Labs LLC/Topaz Gigapixel AI" ]; then
+    rm -rf "$HOME/Library/Caches/Topaz Labs LLC/Topaz Gigapixel AI" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/Topaz Labs LLC/Topaz Gigapixel AI" ]; then
+    rm -f "$HOME/Library/Caches/Topaz Labs LLC/Topaz Gigapixel AI" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.topaz-labs-llc.Topaz Gigapixel AI.plist
 echo "Removing $HOME/Library/Preferences/com.topaz-labs-llc.Topaz Gigapixel AI.plist..."
 if [ -d "$HOME/Library/Preferences/com.topaz-labs-llc.Topaz Gigapixel AI.plist" ]; then
