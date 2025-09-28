@@ -1,7 +1,16 @@
 {
   "app_name": "GIMP",
-  "last_updated": "2025-09-21",
+  "last_updated": "2025-09-28",
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2025-8672",
+      "published_date": "2025-08-11",
+      "last_modified_date": "2025-09-12",
+      "base_score": 7.8,
+      "severity": "HIGH",
+      "description": "MacOS version of GIMP bundles a Python interpreter that inherits the Transparency, Consent, and Control (TCC) permissions\ngranted by the user to the main application bundle. An attacker with local user access can\ninvoke this interpreter with arbitrary commands or scripts, leveraging the\napplication's previously granted TCC permissions to access user's files in privacy-protected folders without triggering user prompts. Accessing other resources beyond previously granted TCC permissions will prompt the user for approval in the name of GIMP, potentially disguising attacker's malicious intent.\n\nThis issue has been fixed in 3.1.4.2 version of GIMP.",
+      "cpe_name": "cpe:2.3:a:gimp:gimp:3.1.4:*:*:*:*:*:*:*"
+    },
     {
       "cve_id": "CVE-2025-5473",
       "published_date": "2025-06-06",
@@ -36,15 +45,6 @@
       "base_score": 7.8,
       "severity": "HIGH",
       "description": "GIMP DDS File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of DDS files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process.\n. Was ZDI-CAN-22093.",
-      "cpe_name": "cpe:2.3:a:gimp:gimp:2.10.34:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2023-44442",
-      "published_date": "2024-05-03",
-      "last_modified_date": "2025-08-14",
-      "base_score": 7.8,
-      "severity": "HIGH",
-      "description": "GIMP PSD File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PSD files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute arbitrary code in the context of the current process. Was ZDI-CAN-22094.",
       "cpe_name": "cpe:2.3:a:gimp:gimp:2.10.34:*:*:*:*:*:*:*"
     }
   ]
