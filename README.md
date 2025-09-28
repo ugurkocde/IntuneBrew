@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -202,29 +202,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-09-27 00:28 UTC*
+*Last checked: 2025-09-28 00:31 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 144.0b5 | 144.0b6 |
-| Advanced Renamer | 4.16.1 | 4.17 |
-| Raindrop.io | 5.6.76 | 5.6.94 |
-| RsyncUI | 2.7.1 | 2.7.3 |
-| JetBrains Rider | 2025.2.2 | 2025.2.2.1 |
-| DockDoor | 1.25.2 | 1.25.3 |
-| Freelens | 1.6.0 | 1.6.1 |
-| Trae | 1.0.20446 | 1.0.20673 |
-| Google Chrome | 140.0.7339.208 | 140.0.7339.214 |
-| Spotify | 1.2.72.438 | 1.2.73.474 |
-| Brave | 1.82.172.0 | 1.82.173.0 |
-| Zed | 0.205.5 | 0.205.6 |
-| IINA | 1.4.0 | 1.4.1 |
-| calibre | 8.10.0 | 8.11.1 |
-| Windsurf | 1.12.9 | 1.12.11 |
-| Apidog | 2.7.38 | 2.7.39 |
-| Topaz Gigapixel AI | 8.4.3 | 8.4.4 |
+| Syncovery | 11.8.2 | 11.8.3 |
+| Apifox | 2.7.36 | 2.7.39 |
+| OBS | 32.0.0 | 32.0.1 |
+| Dataflare | 2.3.4 | 2.5.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -360,9 +348,9 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.5.0 |
 | <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.39 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.36 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.39 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 2.3 |
-| <img src='Logos/arc.png' width='32' height='32'> Arc | 1.114.0 |
+| <img src='Logos/arc.png' width='32' height='32'> Arc | 1.114.1 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.4 |
 | <img src='Logos/arduino_ide.png' width='32' height='32'> Arduino IDE | 2.3.6 |
 | <img src='Logos/asana.png' width='32' height='32'> Asana | 2.4.1 |
@@ -378,14 +366,14 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/background_music.png' width='32' height='32'> Background Music | 0.4.3 |
 | <img src='Logos/badgeify.png' width='32' height='32'> Badgeify | 1.9.0 |
 | <img src='Logos/bambu_studio.png' width='32' height='32'> Bambu Studio | 02.02.02.56 |
-| <img src='Logos/bartender.png' width='32' height='32'> Bartender | 6.0.3 |
+| <img src='Logos/bartender.png' width='32' height='32'> Bartender | 6.0.4 |
 | <img src='Logos/basecamp.png' width='32' height='32'> Basecamp | 3 |
 | <img src='Logos/batfi.png' width='32' height='32'> BatFi | 3.0.0 |
 | <img src='Logos/bbedit.png' width='32' height='32'> BBEdit | 15.5.3 |
 | <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.1.186 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 4.0.4 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.6 |
-| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 5.668 |
+| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 5.670 |
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 5.4 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.1.5.31310 |
 | <img src='Logos/binary_ninja.png' width='32' height='32'> Binary Ninja | 5.1.8104 |
@@ -436,7 +424,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.2.4 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.32 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.9.1 |
-| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.3.4 |
+| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.5.0 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.2.3 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.2.1 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
@@ -651,7 +639,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/nucleo.png' width='32' height='32'> Nucleo | 4.1.7 |
 | <img src='Logos/nudge.png' width='32' height='32'> Nudge | 2.0.12.81807 |
 | <img src='Logos/nvidia_geforce_now.png' width='32' height='32'> NVIDIA GeForce NOW | 2.0.77.157 |
-| <img src='Logos/obs.png' width='32' height='32'> OBS | 32.0.0 |
+| <img src='Logos/obs.png' width='32' height='32'> OBS | 32.0.1 |
 | <img src='Logos/obsidian.png' width='32' height='32'> Obsidian | 1.9.12 |
 | <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.97.1 |
 | <img src='Logos/ollama.png' width='32' height='32'> Ollama | 0.9.2 |
@@ -680,7 +668,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/pastebot.png' width='32' height='32'> Pastebot | 2.4.6 |
 | <img src='Logos/pdf_expert.png' width='32' height='32'> PDF Expert | 3.10.21 |
 | <img src='Logos/pdf_pals.png' width='32' height='32'> PDF Pals | 1.9.0 |
-| <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.0.9 |
+| <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.1.0 |
 | <img src='Logos/pgadmin4.png' width='32' height='32'> pgAdmin4 | 9.8 |
 | <img src='Logos/philips_hue_sync.png' width='32' height='32'> Philips Hue Sync | 1.13.0.77 |
 | <img src='Logos/phoenix_slides.png' width='32' height='32'> Phoenix Slides | 1.5.9 |
@@ -777,7 +765,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/suspicious_package.png' width='32' height='32'> Suspicious Package | 4.6 |
 | <img src='Logos/swift_shift.png' width='32' height='32'> Swift Shift | 0.27.1 |
 | <img src='Logos/sync.png' width='32' height='32'> Sync | 2.2.52 |
-| <img src='Logos/syncovery.png' width='32' height='32'> Syncovery | 11.8.2 |
+| <img src='Logos/syncovery.png' width='32' height='32'> Syncovery | 11.8.3 |
 | <img src='Logos/synology_drive.png' width='32' height='32'> Synology Drive | 3.5.2 |
 | <img src='Logos/tableau_desktop.png' width='32' height='32'> Tableau Desktop | 2025.2.1 |
 | <img src='Logos/tabtab.png' width='32' height='32'> TabTab | 2.0.2 |
