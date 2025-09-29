@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -203,16 +203,19 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-09-28 00:31 UTC*
+*Last checked: 2025-09-29 00:29 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Syncovery | 11.8.2 | 11.8.3 |
-| Apifox | 2.7.36 | 2.7.39 |
-| OBS | 32.0.0 | 32.0.1 |
-| Dataflare | 2.3.4 | 2.5.0 |
+| Rectangle Pro | 3.59 | 3.62 |
+| Stretchly | 1.18.0 | 1.18.1 |
+| OrbStack | 2.0.1 | 2.0.2 |
+| Stats | 2.11.53 | 2.11.54 |
+| kitty | 0.42.2 | 0.43.0 |
+| Krita | 5.2.11 | 5.2.13 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -547,10 +550,10 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/keybase.png' width='32' height='32'> Keybase | 6.5.4 |
 | <img src='Logos/keycastr.png' width='32' height='32'> KeyCastr | 0.10.4 |
 | <img src='Logos/keyclu.png' width='32' height='32'> KeyClu | 0.30.2 |
-| <img src='Logos/kitty.png' width='32' height='32'> kitty | 0.42.2 |
+| <img src='Logos/kitty.png' width='32' height='32'> kitty | 0.43.0 |
 | <img src='Logos/klokki.png' width='32' height='32'> Klokki | 1.3.7 |
 | <img src='Logos/krisp.png' width='32' height='32'> Krisp | 3.5.7 |
-| <img src='Logos/krita.png' width='32' height='32'> Krita | 5.2.11 |
+| <img src='Logos/krita.png' width='32' height='32'> Krita | 5.2.13 |
 | <img src='Logos/langgraph_studio.png' width='32' height='32'> LangGraph Studio | 0.0.37 |
 | <img src='Logos/last_window_quits.png' width='32' height='32'> Last Window Quits | 1.1.4 |
 | <img src='Logos/lens.png' width='32' height='32'> Lens | 2025.9.151055 |
@@ -652,7 +655,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/openvpn_connect_client.png' width='32' height='32'> OpenVPN Connect client | 3.7.1 |
 | <img src='Logos/opera.png' width='32' height='32'> Opera | 122.0.5643.71 |
 | <img src='Logos/oracle_virtualbox.png' width='32' height='32'> Oracle VirtualBox | 7.2.2 |
-| <img src='Logos/orbstack.png' width='32' height='32'> OrbStack | 2.0.1 |
+| <img src='Logos/orbstack.png' width='32' height='32'> OrbStack | 2.0.2 |
 | <img src='Logos/orca_slicer.png' width='32' height='32'> Orca Slicer | 2.3.0 |
 | <img src='Logos/orka_cli.png' width='32' height='32'> Orka CLI | 2.4.0 |
 | <img src='Logos/orka_desktop.png' width='32' height='32'> Orka Desktop | 3.0.0 |
@@ -709,7 +712,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.81 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.15.0 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.90 |
-| <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.59 |
+| <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.62 |
 | <img src='Logos/recut.png' width='32' height='32'> Recut | 2.1.7 |
 | <img src='Logos/redis_insight.png' width='32' height='32'> Redis Insight | 2.70.1 |
 | <img src='Logos/reflector.png' width='32' height='32'> Reflector | 4.1.2 |
@@ -753,10 +756,10 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2025.10 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 9.2.2 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.53 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.54 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 4.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.6 |
-| <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.18.0 |
+| <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.18.1 |
 | <img src='Logos/studio_3t.png' width='32' height='32'> Studio 3T | 2025.17.1 |
 | <img src='Logos/sublime_merge.png' width='32' height='32'> Sublime Merge | 2112 |
 | <img src='Logos/sublime_text.png' width='32' height='32'> Sublime Text | 4200 |
