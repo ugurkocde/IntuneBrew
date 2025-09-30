@@ -49,6 +49,14 @@ elif [ -f "$HOME/Library/Caches/com.apple.nsurlsessiond/Downloads/com.nvidia.gfn
     rm -f "$HOME/Library/Caches/com.apple.nsurlsessiond/Downloads/com.nvidia.gfnpc.mall" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.nvidia.nvcontainer
+echo "Removing $HOME/Library/Caches/com.nvidia.nvcontainer..."
+if [ -d "$HOME/Library/Caches/com.nvidia.nvcontainer" ]; then
+    rm -rf "$HOME/Library/Caches/com.nvidia.nvcontainer" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.nvidia.nvcontainer" ]; then
+    rm -f "$HOME/Library/Caches/com.nvidia.nvcontainer" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/NVIDIA/GeForceNOW
 echo "Removing $HOME/Library/Caches/NVIDIA/GeForceNOW..."
 if [ -d "$HOME/Library/Caches/NVIDIA/GeForceNOW" ]; then
@@ -87,6 +95,14 @@ if [ -d "$HOME/Library/Saved Application State/com.nvidia.gfnpc.mall.savedState"
     rm -rf "$HOME/Library/Saved Application State/com.nvidia.gfnpc.mall.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.nvidia.gfnpc.mall.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.nvidia.gfnpc.mall.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Movies/NVIDIA
+echo "Removing $HOME/Movies/NVIDIA..."
+if [ -d "$HOME/Movies/NVIDIA" ]; then
+    rm -rf "$HOME/Movies/NVIDIA" 2>/dev/null || true
+elif [ -f "$HOME/Movies/NVIDIA" ]; then
+    rm -f "$HOME/Movies/NVIDIA" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
