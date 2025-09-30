@@ -1,11 +1,11 @@
 {
   "name": "NVIDIA GeForce NOW",
   "description": "Cloud gaming platform",
-  "version": "2.0.77.157",
+  "version": "2.0.78.148",
   "url": "https://download.nvidia.com/gfnpc/GeForceNOW-release.dmg",
   "bundleId": "com.nvidia.gfnpc.mall",
   "homepage": "https://www.nvidia.com/en-us/geforce-now/download/",
   "fileName": "GeForceNOW-release.dmg",
-  "sha": "ad5514d8351e22656da8dd23d4d5da1a5ca5aced1ccb0a62e22815208f5ef269",
+  "sha": "5e6b4d86cff902c80e7ce88266f3a890541ef592dc2967f521ef065a047725ee",
   "previous_version": "2.0.77.157"
 }
