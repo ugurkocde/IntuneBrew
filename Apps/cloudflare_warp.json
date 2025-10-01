@@ -1,13 +1,13 @@
 {
   "name": "Cloudflare WARP",
   "description": "Free app that makes your Internet safer",
-  "version": "2025.6.1335.0",
-  "url": "https://downloads.cloudflareclient.com/v1/download/macos/version/2025.6.1335.0",
+  "version": "2025.7.176.0",
+  "url": "https://downloads.cloudflareclient.com/v1/download/macos/version/2025.7.176.0",
   "bundleId": "com.cloudflare.1dot1dot1dot1.macos",
   "homepage": "https://cloudflarewarp.com/",
-  "fileName": "2025.6.1335.0",
+  "fileName": "2025.7.176.0",
   "type": "pkg",
-  "sha": "0d8b99834dca9bc6ce858bb1c3c0977f8bdb24a051f22e2fdb3a7684ec3d814c",
+  "sha": "9e503b3bdc0a5a0376d17aab724416eddd7bebd7927cf6bb14d0ca1e997b1723",
   "changelog": "https://developers.cloudflare.com/warp-client/release-notes/",
   "qa_info": {
     "qa_timestamp": "2025-05-14T06:44:43Z",
