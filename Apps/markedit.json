@@ -1,11 +1,11 @@
 {
   "name": "MarkEdit",
   "description": "Markdown editor",
-  "version": "1.26.2",
-  "url": "https://github.com/MarkEdit-app/MarkEdit/releases/download/v1.26.2/MarkEdit-1.26.2.dmg",
+  "version": "1.27.0",
+  "url": "https://github.com/MarkEdit-app/MarkEdit/releases/download/v1.27.0/MarkEdit-1.27.0.dmg",
   "bundleId": "app.cyan.markedit",
   "homepage": "https://github.com/MarkEdit-app/MarkEdit",
-  "fileName": "MarkEdit-1.26.2.dmg",
-  "sha": "4ec499ce2d423dd46c412b222f0515f65fc57b2fdc15096e46155c60a7e25faa",
+  "fileName": "MarkEdit-1.27.0.dmg",
+  "sha": "4c3027d5a2816552e32b4dccf16d100c4ee9ba0665cd3080c6c06ae707b157a7",
   "previous_version": "1.26.2"
 }

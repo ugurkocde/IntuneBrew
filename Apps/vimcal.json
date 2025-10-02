@@ -1,11 +1,11 @@
 {
   "name": "Vimcal",
   "description": "Calendar",
-  "version": "1.0.37",
-  "url": "https://vimcal-m1.s3.amazonaws.com/Vimcal-1.0.37-arm64.dmg",
+  "version": "1.0.38",
+  "url": "https://vimcal-m1.s3.amazonaws.com/Vimcal-1.0.38-arm64.dmg",
   "bundleId": "com.vimcal.app",
   "homepage": "https://vimcal.com/",
-  "fileName": "Vimcal-1.0.37-arm64.dmg",
-  "sha": "b1783104d498dda3423e4ce07e23048f1c764a55d9c49549f12e0153a6dfee03",
+  "fileName": "Vimcal-1.0.38-arm64.dmg",
+  "sha": "956a86174a59fac1bb4c5d1f1ae10434cc2c9929f180a58b52f8ced51983e8b0",
   "previous_version": "1.0.37"
 }

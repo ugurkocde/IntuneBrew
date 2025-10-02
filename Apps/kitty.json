@@ -1,12 +1,12 @@
 {
   "name": "kitty",
   "description": "GPU-based terminal emulator",
-  "version": "0.43.0",
-  "url": "https://github.com/kovidgoyal/kitty/releases/download/v0.43.0/kitty-0.43.0.dmg",
+  "version": "0.43.1",
+  "url": "https://github.com/kovidgoyal/kitty/releases/download/v0.43.1/kitty-0.43.1.dmg",
   "bundleId": "net.kovidgoyal.kitty",
   "homepage": "https://github.com/kovidgoyal/kitty",
-  "fileName": "kitty-0.43.0.dmg",
-  "sha": "a0bae3bb7d35b6bae6f4e10280efed74c9a177408f4179281a52b5ec4e1b9c5a",
+  "fileName": "kitty-0.43.1.dmg",
+  "sha": "e36d8f0f3cbaa7b49e4fb9eca5eb3f17d2d7de4666c08cf71b69a79b6ea987aa",
   "changelog": "https://github.com/kovidgoyal/kitty/releases",
   "previous_version": "0.43.0"
 }

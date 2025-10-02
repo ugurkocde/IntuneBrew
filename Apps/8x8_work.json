@@ -1,11 +1,11 @@
 {
   "name": "8x8_work",
   "description": "Communications application with voice, video, chat, and web conferencing",
-  "version": "8.26.2-3",
-  "url": "https://work-desktop-assets.8x8.com/prod-publish/ga/work-arm64-dmg-v8.26.2-3.dmg",
+  "version": "8.27.2-4",
+  "url": "https://work-desktop-assets.8x8.com/prod-publish/ga/work-arm64-dmg-v8.27.2-4.dmg",
   "bundleId": null,
   "homepage": "https://www.8x8.com/products/apps",
-  "fileName": "work-arm64-dmg-v8.26.2-3.dmg",
-  "sha": "2cc9441016b4e2e6c358d8f8914dce0776323755191b29e3d2200a60a80bf55e",
+  "fileName": "work-arm64-dmg-v8.27.2-4.dmg",
+  "sha": "64e9f385cd98e9df85405672421fd81e68be62f11fe80dcc29a5b08cc5ce0d12",
   "previous_version": "8.26.2-3"
 }

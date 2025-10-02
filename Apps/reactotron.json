@@ -1,12 +1,12 @@
 {
   "name": "Reactotron",
   "description": "Desktop app for inspecting React JS and React Native projects",
-  "version": "3.7.7",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/reactotron_3.7.7.pkg",
+  "version": "3.8.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/reactotron_3.8.2.pkg",
   "bundleId": "com.reactotron.app",
   "homepage": "https://github.com/infinitered/reactotron",
-  "fileName": "reactotron_3.7.7.pkg",
+  "fileName": "reactotron_3.8.2.pkg",
   "type": "app",
-  "sha": "ef107172683ab419316d43229db52ac46b694ddd8b6e24c701f18ce9e591b2b7",
-  "previous_version": "3.7.7"
+  "sha": "fcee49253dea53b711aa8802c0d604f9d1e8f45fcd54bf454fb2eb67680dde03",
+  "previous_version": "3.8.2"
 }
