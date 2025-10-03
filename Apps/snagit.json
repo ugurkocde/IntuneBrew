@@ -1,12 +1,12 @@
 {
   "name": "Snagit",
   "description": "Screen capture software",
-  "version": "2025.3.1",
-  "url": "https://download.techsmith.com/snagitmac/releases/2531/snagit.dmg",
+  "version": "2025.3.2",
+  "url": "https://download.techsmith.com/snagitmac/releases/2532/snagit.dmg",
   "bundleId": "com.TechSmith.Snagit",
   "homepage": "https://www.techsmith.com/screen-capture.html",
   "fileName": "snagit.dmg",
-  "sha": "f864cdb7fbfee8b910093f24c90b30b9a8226953baec417d0531f4a10027e34b",
+  "sha": "275c4ce5b3af7f6a68f7d9303f243f2ca1a222f43e7361b5f62827a010429694",
   "changelog": "https://support.techsmith.com/hc/en-us/articles/115006443147-Snagit-Mac-Version-History",
   "previous_version": "2025.3.1"
 }

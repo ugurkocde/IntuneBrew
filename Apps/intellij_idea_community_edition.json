@@ -1,12 +1,12 @@
 {
   "name": "IntelliJ IDEA Community Edition",
   "description": "IDE for Java development - community edition",
-  "version": "2025.2.2",
-  "url": "https://download.jetbrains.com/idea/ideaIC-2025.2.2-aarch64.dmg",
+  "version": "2025.2.3",
+  "url": "https://download.jetbrains.com/idea/ideaIC-2025.2.3-aarch64.dmg",
   "bundleId": "com.jetbrains.intellij.ce",
   "homepage": "https://www.jetbrains.com/idea/",
-  "fileName": "ideaIC-2025.2.2-aarch64.dmg",
-  "sha": "cc83bbb9531522085d2892499ddb5cb87909291d58ee3e34c06b131aeb2413fe",
+  "fileName": "ideaIC-2025.2.3-aarch64.dmg",
+  "sha": "bfee440c818c1ae59f35da858387a7d8fea7b677df157d2c2b29d061328979e2",
   "changelog": "https://www.jetbrains.com/idea/whatsnew/",
   "previous_version": "2025.2.2"
 }

@@ -1,12 +1,12 @@
 {
   "name": "Privileges",
   "description": "Admin rights switcher",
-  "version": "2.4.1",
-  "url": "https://github.com/SAP/macOS-enterprise-privileges/releases/download/2.4.1/Privileges_2.4.1.pkg",
+  "version": "2.4.2",
+  "url": "https://github.com/SAP/macOS-enterprise-privileges/releases/download/2.4.2/Privileges_2.4.2.pkg",
   "bundleId": "corp.sap.privileges.pkg",
   "homepage": "https://github.com/SAP/macOS-enterprise-privileges",
-  "fileName": "Privileges_2.4.1.pkg",
-  "sha": "212165b911be25c4b837a5e0394d9631289343450cc3c028609fdd7dac5f302b",
+  "fileName": "Privileges_2.4.2.pkg",
+  "sha": "83e0d84ead1fdf35a20fbb1395aebcac3dc1430605c93f55731ad7e6d145f408",
   "changelog": "https://github.com/SAP/macOS-enterprise-privileges/releases",
   "previous_version": "2.4.1"
 }
