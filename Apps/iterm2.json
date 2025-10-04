@@ -1,13 +1,13 @@
 {
   "name": "iTerm2",
   "description": "Terminal emulator as alternative to Apple's Terminal app",
-  "version": "3.6.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/iterm2_3.6.2.pkg",
+  "version": "3.6.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/iterm2_3.6.3.pkg",
   "bundleId": "com.googlecode.iterm2",
   "homepage": "https://iterm2.com/",
-  "fileName": "iterm2_3.6.2.pkg",
+  "fileName": "iterm2_3.6.3.pkg",
   "type": "app",
-  "sha": "f03fb89297da7cc619f86a6821e11ac3cdefdcb253d2fd737a37a92bdd236da3",
+  "sha": "980c79a561fc79d34371737ac1dab2470201ae33ccc445a6ed88c0b57162d721",
   "changelog": "https://iterm2.com/downloads/stable/changelog.txt",
-  "previous_version": "3.6.2"
+  "previous_version": "3.6.3"
 }

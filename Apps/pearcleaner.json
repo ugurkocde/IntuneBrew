@@ -1,12 +1,12 @@
 {
   "name": "Pearcleaner",
   "description": "Utility to uninstall apps and remove leftover files from old/uninstalled apps",
-  "version": "5.1.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/pearcleaner_5.1.1.pkg",
+  "version": "5.2.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/pearcleaner_5.2.0.pkg",
   "bundleId": "com.alienator88.Pearcleaner",
   "homepage": "https://itsalin.com/appInfo/?id=pearcleaner",
-  "fileName": "pearcleaner_5.1.1.pkg",
+  "fileName": "pearcleaner_5.2.0.pkg",
   "type": "app",
-  "sha": "4a9a6e028b080053d9354debc89c36423a672894e55fe6d6b20ee59e59165c90",
-  "previous_version": "5.1.1"
+  "sha": "f62f50c65d78c0d96c2748102930e28050a5bbe03e9b30add7c0e6ad8494a641",
+  "previous_version": "5.2.0"
 }
