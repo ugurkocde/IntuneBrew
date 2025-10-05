@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -209,31 +209,19 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-10-04 00:28 UTC*
+*Last checked: 2025-10-05 00:30 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 144.0b8 | 144.0b9 |
-| Vimcal | 1.0.39 | 1.0.40 |
-| Clop | 2.10.4 | 2.10.5 |
-| QSpace Pro | 5.3.4 | 6.0.2 |
-| Requestly | 25.8.29 | 25.10.3 |
-| Apifox | 2.7.39 | 2.7.40 |
-| Proton Mail | 1.9.0 | 1.9.1 |
-| ChatWise | 0.9.25 | 0.9.28 |
-| JetBrains PhpStorm | 2025.2.2 | 2025.2.3 |
-| Headlamp | 0.35.0 | 0.36.0 |
-| Mozilla Firefox | 143.0.3 | 143.0.4 |
-| Brave | 1.83.108.0 | 1.83.109.0 |
-| Krisp | 3.5.7 | 3.6.6 |
-| Goland | 2025.2.2 | 2025.2.3 |
-| Jetbrains PyCharm Community Edition | 2025.2.2 | 2025.2.3 |
-| Microsoft Edge | 140.0.3485.94 | 141.0.3537.57 |
-| JetBrains Toolbox | 2.9 | 2.9.1 |
-| CLion | 2025.2.1 | 2025.2.3 |
-| Apidog | 2.7.39 | 2.7.40 |
+| Maestral | 1.9.4 | 1.9.5 |
+| ChatGPT | 1.2025.260 | 1.2025.273 |
+| Podman Desktop | 1.21.0 | 1.22.0 |
+| macFUSE | 5.0.6 | 5.0.7 |
+| VSCodium | 1.104.26450 | 1.104.36664 |
+| Tableau Desktop | 2025.2.1 | 2025.2.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -420,7 +408,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/camtasia.png' width='32' height='32'> Camtasia | 25.2.3 |
 | <img src='Logos/canva.png' width='32' height='32'> Canva | 1.116.0 |
 | <img src='Logos/capcut.png' width='32' height='32'> CapCut | 3.3.0.1159 |
-| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2025.260 |
+| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2025.273 |
 | <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.9.28 |
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 141.0.7390.12 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20250908060654 |
@@ -520,7 +508,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/goland.png' width='32' height='32'> Goland | 2025.2.3 |
 | <img src='Logos/google_ads_editor.png' width='32' height='32'> Google Ads Editor | 2.10 |
 | <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 141.0.7390.55 |
-| <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 115.0.0 |
+| <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 115.0.1 |
 | <img src='Logos/goose.png' width='32' height='32'> Goose | 1.9.1 |
 | <img src='Logos/gpt_fdisk.png' width='32' height='32'> GPT fdisk | 1.0.10 |
 | <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.137.2.0 |
@@ -589,12 +577,12 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/löve.png' width='32' height='32'> LÖVE | 11.5 |
 | <img src='Logos/maccy.png' width='32' height='32'> Maccy | 2.5.1 |
 | <img src='Logos/macdown.png' width='32' height='32'> MacDown | 0.7.2 |
-| <img src='Logos/macfuse.png' width='32' height='32'> macFUSE | 5.0.6 |
+| <img src='Logos/macfuse.png' width='32' height='32'> macFUSE | 5.0.7 |
 | <img src='Logos/macpass.png' width='32' height='32'> MacPass | 0.8.1 |
 | <img src='Logos/macs_fan_control.png' width='32' height='32'> Macs Fan Control | 1.5.19 |
 | <img src='Logos/mactex.png' width='32' height='32'> MacTeX | 2025.0308 |
 | <img src='Logos/macwhisper.png' width='32' height='32'> MacWhisper | 12.18.3 |
-| <img src='Logos/maestral.png' width='32' height='32'> Maestral | 1.9.4 |
+| <img src='Logos/maestral.png' width='32' height='32'> Maestral | 1.9.5 |
 | <img src='Logos/magicquit.png' width='32' height='32'> MagicQuit | 1.4 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.17.0.3365 |
 | <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.27.0 |
@@ -689,7 +677,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/pastebot.png' width='32' height='32'> Pastebot | 2.4.6 |
 | <img src='Logos/pdf_expert.png' width='32' height='32'> PDF Expert | 3.10.21 |
 | <img src='Logos/pdf_pals.png' width='32' height='32'> PDF Pals | 1.9.0 |
-| <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.2.0 |
+| <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.2.1 |
 | <img src='Logos/pgadmin4.png' width='32' height='32'> pgAdmin4 | 9.8 |
 | <img src='Logos/philips_hue_sync.png' width='32' height='32'> Philips Hue Sync | 1.13.0.77 |
 | <img src='Logos/phoenix_slides.png' width='32' height='32'> Phoenix Slides | 1.5.9 |
@@ -699,7 +687,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/platypus.png' width='32' height='32'> Platypus | 5.4.1 |
 | <img src='Logos/plex.png' width='32' height='32'> Plex | 1.110.0.351 |
 | <img src='Logos/plistedit_pro.png' width='32' height='32'> PlistEdit Pro | 1.9.7 |
-| <img src='Logos/podman_desktop.png' width='32' height='32'> Podman Desktop | 1.21.0 |
+| <img src='Logos/podman_desktop.png' width='32' height='32'> Podman Desktop | 1.22.0 |
 | <img src='Logos/popchar_x.png' width='32' height='32'> PopChar X | 10.5 |
 | <img src='Logos/portx.png' width='32' height='32'> portx | 2.2.13 |
 | <img src='Logos/postico.png' width='32' height='32'> Postico | 2.2.2 |
@@ -788,7 +776,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sync.png' width='32' height='32'> Sync | 2.2.53 |
 | <img src='Logos/syncovery.png' width='32' height='32'> Syncovery | 11.8.3 |
 | <img src='Logos/synology_drive.png' width='32' height='32'> Synology Drive | 3.5.2 |
-| <img src='Logos/tableau_desktop.png' width='32' height='32'> Tableau Desktop | 2025.2.1 |
+| <img src='Logos/tableau_desktop.png' width='32' height='32'> Tableau Desktop | 2025.2.3 |
 | <img src='Logos/tabtab.png' width='32' height='32'> TabTab | 2.0.2 |
 | <img src='Logos/tailscale.png' width='32' height='32'> Tailscale | 1.84.1 |
 | <img src='Logos/taskbar.png' width='32' height='32'> Taskbar | 1.4.7 |
@@ -824,7 +812,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 7.6.3797.58 |
 | <img src='Logos/viz.png' width='32' height='32'> Viz | 2.3.1 |
 | <img src='Logos/vlc_media_player.png' width='32' height='32'> VLC media player | 3.0.21 |
-| <img src='Logos/vscodium.png' width='32' height='32'> VSCodium | 1.104.26450 |
+| <img src='Logos/vscodium.png' width='32' height='32'> VSCodium | 1.104.36664 |
 | <img src='Logos/wave_terminal.png' width='32' height='32'> Wave Terminal | 0.11.6 |
 | ❌ Webex | 45.9.0.33085 |
 | <img src='Logos/webex_teams.png' width='32' height='32'> Webex Teams | 45.6.1.32593 |

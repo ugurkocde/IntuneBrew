@@ -1,11 +1,11 @@
 {
   "name": "Maestral",
   "description": "Open-source Dropbox client",
-  "version": "1.9.4",
-  "url": "https://github.com/SamSchott/maestral/releases/download/v1.9.4/Maestral-1.9.4.dmg",
+  "version": "1.9.5",
+  "url": "https://github.com/SamSchott/maestral/releases/download/v1.9.5/Maestral-1.9.5.dmg",
   "bundleId": "com.samschott.maestral",
   "homepage": "https://maestral.app/",
-  "fileName": "Maestral-1.9.4.dmg",
-  "sha": "639ab2401d97fad7865ba17ce8cfa02fb418d3bb29cd411cf991cce91c51b1ea",
+  "fileName": "Maestral-1.9.5.dmg",
+  "sha": "cd8f393abba8a70794e527ee30c4d3f11b5da6e935fb315fbe6ff00bf8f79e4c",
   "previous_version": "1.9.4"
 }
