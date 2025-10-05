@@ -1,7 +1,16 @@
 {
   "app_name": "Hyper",
-  "last_updated": "2025-09-28",
+  "last_updated": "2025-10-05",
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2025-7074",
+      "published_date": "2025-07-05",
+      "last_modified_date": "2025-10-01",
+      "base_score": 4.3,
+      "severity": "MEDIUM",
+      "description": "A vulnerability classified as problematic has been found in vercel hyper up to 3.4.1. This affects the function expand/braceExpand/ignoreMap of the file hyper/bin/rimraf-standalone.js. The manipulation leads to inefficient regular expression complexity. It is possible to initiate the attack remotely. The exploit has been disclosed to the public and may be used.",
+      "cpe_name": "cpe:2.3:a:vercel:hyper:1.4.0:-:*:*:*:*:*:*"
+    },
     {
       "cve_id": "CVE-2024-23741",
       "published_date": "2024-01-28",
