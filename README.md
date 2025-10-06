@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -210,18 +210,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-10-05 00:30 UTC*
+*Last checked: 2025-10-06 00:29 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Maestral | 1.9.4 | 1.9.5 |
-| ChatGPT | 1.2025.260 | 1.2025.273 |
-| Podman Desktop | 1.21.0 | 1.22.0 |
-| macFUSE | 5.0.6 | 5.0.7 |
-| VSCodium | 1.104.26450 | 1.104.36664 |
-| Tableau Desktop | 2025.2.1 | 2025.2.3 |
+| Orca Slicer | 2.3.0 | 2.3.1 |
+| QQ | 6.9.75 | 6.9.81 |
+| Stats | 2.11.55 | 2.11.56 |
+| Apparency | 2.3 | 3.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -358,7 +357,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.5.0 |
 | <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.40 |
 | <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.40 |
-| <img src='Logos/apparency.png' width='32' height='32'> Apparency | 2.3 |
+| <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.0 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.115.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.4 |
 | <img src='Logos/arduino_ide.png' width='32' height='32'> Arduino IDE | 2.3.6 |
@@ -586,7 +585,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/magicquit.png' width='32' height='32'> MagicQuit | 1.4 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.17.0.3365 |
 | <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.27.0 |
-| <img src='Logos/marsedit.png' width='32' height='32'> MarsEdit | 5.3.7 |
+| <img src='Logos/marsedit.png' width='32' height='32'> MarsEdit | 5.3.8 |
 | <img src='Logos/marta_file_manager.png' width='32' height='32'> Marta File Manager | 0.8.2 |
 | <img src='Logos/mattermost.png' width='32' height='32'> Mattermost | 5.13.1 |
 | <img src='Logos/medis.png' width='32' height='32'> Medis | 2.16.1 |
@@ -662,7 +661,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/opera.png' width='32' height='32'> Opera | 122.0.5643.92 |
 | <img src='Logos/oracle_virtualbox.png' width='32' height='32'> Oracle VirtualBox | 7.2.2 |
 | <img src='Logos/orbstack.png' width='32' height='32'> OrbStack | 2.0.3 |
-| <img src='Logos/orca_slicer.png' width='32' height='32'> Orca Slicer | 2.3.0 |
+| <img src='Logos/orca_slicer.png' width='32' height='32'> Orca Slicer | 2.3.1 |
 | <img src='Logos/orka_cli.png' width='32' height='32'> Orka CLI | 2.4.0 |
 | <img src='Logos/orka_desktop.png' width='32' height='32'> Orka Desktop | 3.0.0 |
 | <img src='Logos/overflow.png' width='32' height='32'> Overflow | 3.2.1 |
@@ -706,7 +705,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/pulsar.png' width='32' height='32'> Pulsar | 1.129.0 |
 | <img src='Logos/qBittorrent.png' width='32' height='32'> qBittorrent | 5.0.5 |
 | <img src='Logos/qlab.png' width='32' height='32'> QLab | 5.5.5 |
-| <img src='Logos/qq.png' width='32' height='32'> QQ | 6.9.75 |
+| <img src='Logos/qq.png' width='32' height='32'> QQ | 6.9.81 |
 | <img src='Logos/qspace_pro.png' width='32' height='32'> QSpace Pro | 6.0.2 |
 | <img src='Logos/quarto.png' width='32' height='32'> quarto | 1.8.25 |
 | <img src='Logos/quicklook_video.png' width='32' height='32'> QuickLook Video | 2.21 |
@@ -762,7 +761,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2025.10 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 9.2.2 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.55 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.56 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 4.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.6 |
 | <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.18.1 |
@@ -807,7 +806,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/utm.png' width='32' height='32'> UTM | 4.7.4 |
 | <img src='Logos/veracrypt.png' width='32' height='32'> VeraCrypt | 1.26.24 |
 | <img src='Logos/vimcal.png' width='32' height='32'> Vimcal | 1.0.40 |
-| <img src='Logos/vimr.png' width='32' height='32'> VimR | 0.57.1 |
+| <img src='Logos/vimr.png' width='32' height='32'> VimR | 0.57.2 |
 | <img src='Logos/visualvm.png' width='32' height='32'> VisualVM | 2.2 |
 | <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 7.6.3797.58 |
 | <img src='Logos/viz.png' width='32' height='32'> Viz | 2.3.1 |
