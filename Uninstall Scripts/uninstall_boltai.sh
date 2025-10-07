@@ -25,6 +25,14 @@ elif [ -f "/Applications/BoltAI.app" ]; then
     rm -f "/Applications/BoltAI.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/.boltai
+echo "Removing $HOME/.boltai..."
+if [ -d "$HOME/.boltai" ]; then
+    rm -rf "$HOME/.boltai" 2>/dev/null || true
+elif [ -f "$HOME/.boltai" ]; then
+    rm -f "$HOME/.boltai" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/co.podzim.BoltGPT
 echo "Removing $HOME/Library/Application Support/co.podzim.BoltGPT..."
 if [ -d "$HOME/Library/Application Support/co.podzim.BoltGPT" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Caches/co.podzim.BoltGPT" ]; then
     rm -rf "$HOME/Library/Caches/co.podzim.BoltGPT" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/co.podzim.BoltGPT" ]; then
     rm -f "$HOME/Library/Caches/co.podzim.BoltGPT" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/SentryCrash/BoltAI
+echo "Removing $HOME/Library/Caches/SentryCrash/BoltAI..."
+if [ -d "$HOME/Library/Caches/SentryCrash/BoltAI" ]; then
+    rm -rf "$HOME/Library/Caches/SentryCrash/BoltAI" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/SentryCrash/BoltAI" ]; then
+    rm -f "$HOME/Library/Caches/SentryCrash/BoltAI" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/co.podzim.BoltGPT
