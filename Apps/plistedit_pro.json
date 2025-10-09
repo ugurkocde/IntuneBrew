@@ -1,12 +1,12 @@
 {
   "name": "PlistEdit Pro",
   "description": "Property list and JSON editor",
-  "version": "1.9.7",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/plistedit_pro_1.9.7.pkg",
+  "version": "1.10.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/plistedit_pro_1.10.0.pkg",
   "bundleId": "com.fatcatsoftware.pledpro",
   "homepage": "https://www.fatcatsoftware.com/plisteditpro/",
-  "fileName": "plistedit_pro_1.9.7.pkg",
+  "fileName": "plistedit_pro_1.10.0.pkg",
   "type": "app",
-  "sha": "5f86b26e95b5473a04a1df58ae7980bcf06de360a904afc7242e4ac9fed19827",
-  "previous_version": "1.9.7"
+  "sha": "87a69ed471a1ccad9e33b9803492f7febd3e48aaf7670b12600647b8248c846c",
+  "previous_version": "1.10.0"
 }

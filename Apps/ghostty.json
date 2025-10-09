@@ -1,12 +1,12 @@
 {
   "name": "Ghostty",
   "description": "Terminal emulator that uses platform-native UI and GPU acceleration",
-  "version": "1.2.1",
-  "url": "https://release.files.ghostty.org/1.2.1/Ghostty.dmg",
+  "version": "1.2.2",
+  "url": "https://release.files.ghostty.org/1.2.2/Ghostty.dmg",
   "bundleId": "com.mitchellh.ghostty",
   "homepage": "https://ghostty.org/",
   "fileName": "Ghostty.dmg",
-  "sha": "ac55d8271cfa50f13c28a86b3cbbe4b0b2efc54765673be8c4b1a1205de14c63",
+  "sha": "812b8e396654cca2a28421a6a849e278927c88fe3115ea124082f9dfa91ae39e",
   "changelog": "https://ghostty.org/docs/changelog",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:18:00Z",
