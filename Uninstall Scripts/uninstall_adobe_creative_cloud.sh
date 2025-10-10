@@ -41,6 +41,12 @@ launchctl unload -w /Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist 2>/
 launchctl unload -w /Library/LaunchDaemons/com.adobe.AdobeCreativeCloud.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.adobe.AdobeCreativeCloud.plist 2>/dev/null || true
 
+# Unload service com.adobe.AdobeDesktopService
+echo "Unloading service com.adobe.AdobeDesktopService..."
+launchctl unload -w /Library/LaunchAgents/com.adobe.AdobeDesktopService.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.adobe.AdobeDesktopService.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.adobe.AdobeDesktopService.plist 2>/dev/null || true
+
 # Unload service com.adobe.ccxprocess
 echo "Unloading service com.adobe.ccxprocess..."
 launchctl unload -w /Library/LaunchAgents/com.adobe.ccxprocess.plist 2>/dev/null || true

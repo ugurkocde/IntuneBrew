@@ -17,6 +17,12 @@ fi
 echo "Stopping Elgato Camera Hub if running..."
 pkill -f "Elgato Camera Hub" 2>/dev/null || true
 
+# Unload service com.displaylink.loginscreen
+echo "Unloading service com.displaylink.loginscreen..."
+launchctl unload -w /Library/LaunchAgents/com.displaylink.loginscreen.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.displaylink.loginscreen.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.displaylink.loginscreen.plist 2>/dev/null || true
+
 # Unload service com.displaylink.XpcService
 echo "Unloading service com.displaylink.XpcService..."
 launchctl unload -w /Library/LaunchAgents/com.displaylink.XpcService.plist 2>/dev/null || true
