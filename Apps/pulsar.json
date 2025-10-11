@@ -1,11 +1,11 @@
 {
   "name": "Pulsar",
   "description": "Text editor",
-  "version": "1.130.0",
-  "url": "https://github.com/pulsar-edit/pulsar/releases/download/v1.130.0/Silicon.Mac.Pulsar-1.130.0-arm64.dmg",
+  "version": "1.130.1",
+  "url": "https://github.com/pulsar-edit/pulsar/releases/download/v1.130.1/Silicon.Mac.Pulsar-1.130.1-arm64.dmg",
   "bundleId": "dev.pulsar-edit.pulsar",
   "homepage": "https://pulsar-edit.dev/",
-  "fileName": "Silicon.Mac.Pulsar-1.130.0-arm64.dmg",
-  "sha": "8e26cfc23673aff365a9b597acbddfb6ac4069d38590968d29756b4e20391b34",
+  "fileName": "Silicon.Mac.Pulsar-1.130.1-arm64.dmg",
+  "sha": "71d954deb32600b60a6722077bac4fb8f2180d4b56a9b10ca7177513cef0c4ae",
   "previous_version": "1.130.0"
 }
