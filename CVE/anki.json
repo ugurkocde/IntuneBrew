@@ -1,24 +1,42 @@
 {
   "app_name": "Anki",
-  "last_updated": "2025-10-05",
+  "last_updated": "2025-10-12",
   "vulnerabilities": [
     {
-      "cve_id": "CVE-2024-32152",
-      "published_date": "2024-07-22",
-      "last_modified_date": "2024-11-21",
-      "base_score": 3.1,
+      "cve_id": "CVE-2025-62187",
+      "published_date": "2025-10-07",
+      "last_modified_date": "2025-10-10",
+      "base_score": 2.9,
       "severity": "LOW",
-      "description": "A blocklist bypass vulnerability exists in the LaTeX functionality of Ankitects Anki 24.04. A specially crafted malicious flashcard can lead to an arbitrary file creation at a fixed path. An attacker can share a malicious flashcard to trigger this vulnerability.",
-      "cpe_name": "cpe:2.3:a:ankitects:anki:24.04:-:*:*:*:*:*:*"
+      "description": "In Ankitects Anki before 25.02.6, crafted sound file references could cause files to be written to arbitrary locations on Windows and Linux (media file pathnames are not necessarily relative to the media folder).",
+      "cpe_name": "cpe:2.3:a:ankitects:anki:25.01:beta1:*:*:*:*:*:*"
     },
     {
-      "cve_id": "CVE-2024-32484",
-      "published_date": "2024-07-22",
-      "last_modified_date": "2024-11-21",
-      "base_score": 7.4,
-      "severity": "HIGH",
-      "description": "An reflected XSS vulnerability exists in the handling of invalid paths in the Flask server in Ankitects Anki 24.04. A specially crafted flashcard can lead to JavaScript code execution and result in an arbitrary file read. An attacker can share a malicious flashcard to trigger this vulnerability.",
-      "cpe_name": "cpe:2.3:a:ankitects:anki:24.04:-:*:*:*:*:*:*"
+      "cve_id": "CVE-2025-62185",
+      "published_date": "2025-10-07",
+      "last_modified_date": "2025-10-10",
+      "base_score": 6.7,
+      "severity": "MEDIUM",
+      "description": "In Ankitects Anki before 25.02.5, a crafted shared deck can place a YouTube downloader executable in the media folder, and this is executed for a YouTube link in the deck. The executable name could be youtube-dl.exe or yt-dlp.exe or yt-dlp_x86.exe.",
+      "cpe_name": "cpe:2.3:a:ankitects:anki:25.01:beta1:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2025-62186",
+      "published_date": "2025-10-07",
+      "last_modified_date": "2025-10-10",
+      "base_score": 6.7,
+      "severity": "MEDIUM",
+      "description": "Ankitects Anki before 25.02.5 allows a crafted shared deck on Windows to execute arbitrary commands when playing audio because of URL scheme mishandling.",
+      "cpe_name": "cpe:2.3:a:ankitects:anki:25.01:beta1:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2025-43703",
+      "published_date": "2025-04-16",
+      "last_modified_date": "2025-10-09",
+      "base_score": 6.1,
+      "severity": "MEDIUM",
+      "description": "An issue was discovered in Ankitects Anki through 25.02. A crafted shared deck can result in attacker-controlled access to the internal API (even though the attacker has no knowledge of an API key) through approaches such as scripts or the SRC attribute of an IMG element. NOTE: this issue exists because of an incomplete fix for CVE-2024-32484.",
+      "cpe_name": "cpe:2.3:a:ankitects:anki:25.01:beta1:*:*:*:*:*:*"
     }
   ]
 }

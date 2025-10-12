@@ -1,15 +1,24 @@
 {
   "app_name": "Cursor",
-  "last_updated": "2025-05-18",
+  "last_updated": "2025-10-12",
   "vulnerabilities": [
     {
-      "cve_id": "CVE-2023-5911",
-      "published_date": "2024-01-08",
-      "last_modified_date": "2024-11-21",
-      "base_score": 4.8,
-      "severity": "MEDIUM",
-      "description": "The WP Custom Cursors | WordPress Cursor Plugin WordPress plugin through 3.2 does not sanitise and escape some of its settings, which could allow high privilege users such as admin to perform Stored Cross-Site Scripting attacks even when the unfiltered_html capability is disallowed (for example in multisite setup)",
-      "cpe_name": "cpe:2.3:a:hamidrezasepehr:wp_custom_cursors_\\|_wordpress_cursor_plugin:3.2:*:*:*:*:wordpress:*:*"
+      "cve_id": "CVE-2025-61592",
+      "published_date": "2025-10-03",
+      "last_modified_date": "2025-10-09",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "description": "Cursor is a code editor built for programming with AI. In versions 1.7 and below, automatic loading of project-specific CLI configuration from the current working directory (<project>/.cursor/cli.json) could override certain global configurations in Cursor CLI. This allowed users running the CLI inside a malicious repository to be vulnerable to Remote Code Execution through a combination of permissive configuration (allowing shell commands) and prompt injection delivered via project-specific Rules (<project>/.cursor/rules/rule.mdc) or other mechanisms. The fix for this issue is currently available as a patch 2025.09.17-25b418f. As of October 3, 2025 there is no release version.",
+      "cpe_name": "cpe:2.3:a:anysphere:cursor:1.5:*:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2025-61593",
+      "published_date": "2025-10-03",
+      "last_modified_date": "2025-10-09",
+      "base_score": 7.1,
+      "severity": "HIGH",
+      "description": "Cursor is a code editor built for programming with AI. In versions 1.7 and below, a vulnerability in the way Cursor CLI Agent protects its sensitive files (i.e. */.cursor/cli.json) allows attackers to modify the content of the files through prompt injection, thus achieving remote code execution. A prompt injection can lead to full RCE through modifying sensitive files on case-insensitive filesystems. This issue is fixed in a commit, 25b418f, but has yet to be released as of October 3, 2025.",
+      "cpe_name": "cpe:2.3:a:anysphere:cursor:1.5:*:*:*:*:*:*:*"
     }
   ]
 }

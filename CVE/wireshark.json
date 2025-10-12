@@ -1,7 +1,16 @@
 {
   "app_name": "Wireshark",
-  "last_updated": "2025-10-05",
+  "last_updated": "2025-10-12",
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2025-9817",
+      "published_date": "2025-09-03",
+      "last_modified_date": "2025-10-09",
+      "base_score": 7.8,
+      "severity": "HIGH",
+      "description": "SSH dissector crash in Wireshark 4.4.0 to 4.4.8 allows denial of service",
+      "cpe_name": "cpe:2.3:a:wireshark:wireshark:4.4.2:*:*:*:*:*:*:*"
+    },
     {
       "cve_id": "CVE-2025-5601",
       "published_date": "2025-06-04",
@@ -37,15 +46,6 @@
       "severity": "HIGH",
       "description": "NTLMSSP dissector crash in Wireshark 4.2.0 to 4.0.6 and 4.0.0 to 4.0.16 allows denial of service via packet injection or crafted capture file",
       "cpe_name": "cpe:2.3:a:wireshark:wireshark:4.0.15:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2024-24476",
-      "published_date": "2024-02-21",
-      "last_modified_date": "2025-04-14",
-      "base_score": 7.5,
-      "severity": "HIGH",
-      "description": "A buffer overflow in Wireshark before 4.2.0 allows a remote attacker to cause a denial of service via the pan/addr_resolv.c, and ws_manuf_lookup_str(), size components. NOTE: this is disputed by the vendor because neither release 4.2.0 nor any other release was affected.",
-      "cpe_name": "cpe:2.3:a:wireshark:wireshark:3.6.23:*:*:*:*:*:*:*"
     }
   ]
 }

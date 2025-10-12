@@ -1,6 +1,6 @@
 {
   "app_name": "KeePassXC",
-  "last_updated": "2025-10-05",
+  "last_updated": "2025-10-12",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2024-33900",
