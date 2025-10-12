@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -216,26 +216,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-10-11 00:30 UTC*
+*Last checked: 2025-10-12 00:29 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Rive | 0.8.3607 | 0.8.3615 |
-| A Better Finder Rename | 12.15 | 12.16 |
-| Pulsar | 1.130.0 | 1.130.1 |
-| ChatWise | 0.9.31 | 0.9.32 |
-| LuLu | 4.0.1 | 4.1.0 |
-| Google Chrome | 141.0.7390.66 | 141.0.7390.77 |
-| Krisp | 3.6.6 | 3.6.8 |
-| Elgato Camera Hub | 2.2.0.6839 | 2.2.0.6850 |
-| VSCodium | 1.104.36664 | 1.105.06808 |
-| Windsurf | 1.12.12 | 1.12.16 |
-| Opera | 122.0.5643.142 | 122.0.5643.150 |
-| Calmly Writer | 2.0.60 | 2.0.61 |
-| Rotato | 152 | 154 |
-| Nextcloud | 3.17.2 | 3.17.3 |
+| UPDF | 2.0.8 | 2.0.9 |
+| Yaak | 2025.6.0 | 2025.6.1 |
+| Trae | 1.0.21083 | 1.0.21130 |
+| Apidog | 2.7.40 | 2.7.42 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -370,7 +361,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.5.0 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.40 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.42 |
 | <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.40 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.0 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.116.0 |
@@ -808,7 +799,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/todoist.png' width='32' height='32'> Todoist | 9.17.0 |
 | <img src='Logos/tofu.png' width='32' height='32'> Tofu | 3.0.1 |
 | <img src='Logos/topaz_gigapixel_ai.png' width='32' height='32'> Topaz Gigapixel AI | 8.4.4 |
-| <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.21083 |
+| <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.21130 |
 | <img src='Logos/transmission.png' width='32' height='32'> Transmission | 4.0.6 |
 | <img src='Logos/transmit.png' width='32' height='32'> Transmit | 5.11.0 |
 | <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.5.1 |
@@ -816,12 +807,12 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/twingate.png' width='32' height='32'> Twingate | 2025.227.17625 |
 | <img src='Logos/typora.png' width='32' height='32'> Typora | 1.12.1 |
 | <img src='Logos/unnaturalscrollwheels.png' width='32' height='32'> UnnaturalScrollWheels | 1.3.0 |
-| <img src='Logos/updf.png' width='32' height='32'> UPDF | 2.0.8 |
+| <img src='Logos/updf.png' width='32' height='32'> UPDF | 2.0.9 |
 | <img src='Logos/upscayl.png' width='32' height='32'> Upscayl | 2.15.0 |
 | <img src='Logos/utm.png' width='32' height='32'> UTM | 4.7.4 |
 | <img src='Logos/veracrypt.png' width='32' height='32'> VeraCrypt | 1.26.24 |
 | <img src='Logos/vimcal.png' width='32' height='32'> Vimcal | 1.0.40 |
-| <img src='Logos/vimr.png' width='32' height='32'> VimR | 0.57.2 |
+| <img src='Logos/vimr.png' width='32' height='32'> VimR | 0.57.3 |
 | <img src='Logos/visualvm.png' width='32' height='32'> VisualVM | 2.2 |
 | <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 7.6.3797.63 |
 | <img src='Logos/viz.png' width='32' height='32'> Viz | 2.3.1 |
@@ -844,7 +835,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/xca.png' width='32' height='32'> XCA | 2.9.0 |
 | <img src='Logos/xmind.png' width='32' height='32'> XMind | 25.07.03033-202507241752 |
 | <img src='Logos/xnapper.png' width='32' height='32'> Xnapper | 1.17.1 |
-| <img src='Logos/yaak.png' width='32' height='32'> Yaak | 2025.6.0 |
+| <img src='Logos/yaak.png' width='32' height='32'> Yaak | 2025.6.1 |
 | <img src='Logos/yubikey_manager.png' width='32' height='32'> Yubikey Manager | 1.2.5 |
 | <img src='Logos/zed.png' width='32' height='32'> Zed | 0.207.4 |
 | <img src='Logos/zed_attack_proxy.png' width='32' height='32'> Zed Attack Proxy | 2.16.1 |
