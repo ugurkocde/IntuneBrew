@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -217,16 +217,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-10-12 00:29 UTC*
+*Last checked: 2025-10-13 00:30 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| UPDF | 2.0.8 | 2.0.9 |
-| Yaak | 2025.6.0 | 2025.6.1 |
-| Trae | 1.0.21083 | 1.0.21130 |
-| Apidog | 2.7.40 | 2.7.42 |
+| Novabench | 5.5.4 | 5.6.0 |
+| Apifox | 2.7.40 | 2.7.42 |
+| Stats | 2.11.56 | 2.11.57 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -362,7 +362,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.5.0 |
 | <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.42 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.40 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.42 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.0 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.116.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.4 |
@@ -428,7 +428,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/codeedit.png' width='32' height='32'> CodeEdit | 0.3.6 |
 | <img src='Logos/coderunner.png' width='32' height='32'> CodeRunner | 4.5 |
 | <img src='Logos/company_portal.png' width='32' height='32'> Company Portal | 5.2508.1 |
-| <img src='Logos/copilot_for_xcode.png' width='32' height='32'> Copilot for Xcode | 0.35.10 |
+| <img src='Logos/copilot_for_xcode.png' width='32' height='32'> Copilot for Xcode | 0.35.11 |
 | <img src='Logos/copyclip.png' width='32' height='32'> CopyClip | 2.9.99.2 |
 | <img src='Logos/coteditor.png' width='32' height='32'> CotEditor | 6.0.3 |
 | <img src='Logos/crashplan.png' width='32' height='32'> CrashPlan | 11.7.0 |
@@ -649,7 +649,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/notion_calendar.png' width='32' height='32'> Notion Calendar | 1.132.0 |
 | <img src='Logos/notunes.png' width='32' height='32'> noTunes | 3.5 |
 | <img src='Logos/noun_project.png' width='32' height='32'> Noun Project | 2.3 |
-| <img src='Logos/novabench.png' width='32' height='32'> Novabench | 5.5.4 |
+| <img src='Logos/novabench.png' width='32' height='32'> Novabench | 5.6.0 |
 | <img src='Logos/nucleo.png' width='32' height='32'> Nucleo | 4.1.7 |
 | <img src='Logos/nudge.png' width='32' height='32'> Nudge | 2.0.12.81807 |
 | <img src='Logos/nvidia_geforce_now.png' width='32' height='32'> NVIDIA GeForce NOW | 2.0.78.148 |
@@ -767,7 +767,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2025.10 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 9.2.2 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.56 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.57 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 4.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.6 |
 | <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.18.1 |
