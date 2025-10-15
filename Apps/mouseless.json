@@ -1,11 +1,11 @@
 {
   "name": "mouseless",
   "description": "Mouse control with the keyboard",
-  "version": "0.4.1",
-  "url": "https://mouseless.click/mouseless-installer_v0.4.1.dmg",
+  "version": "0.4.2",
+  "url": "https://github.com/croian/mouseless/releases/download/v0.4.2/mouseless-installer_v0.4.2.dmg",
   "bundleId": "net.sonuscape.mouseless",
   "homepage": "https://mouseless.click/",
-  "fileName": "mouseless-installer_v0.4.1.dmg",
-  "sha": "12cca19cefc7b107f1ac184b5871f601c6e3332d06331f06d962eda90340dcaf",
+  "fileName": "mouseless-installer_v0.4.2.dmg",
+  "sha": "5e98fb5ff4e138104605ab4ce23884c1175f5db8f1733b5efeab2551b0f69681",
   "previous_version": "0.4.1"
 }

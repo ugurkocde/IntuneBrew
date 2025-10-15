@@ -1,11 +1,11 @@
 {
   "name": "Mozilla Firefox ESR",
   "description": "Web browser",
-  "version": "140.3.1",
-  "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/140.3.1esr/mac/en-US/Firefox%20140.3.1esr.dmg",
+  "version": "140.4.0",
+  "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/140.4.0esr/mac/en-US/Firefox%20140.4.0esr.dmg",
   "bundleId": "org.mozilla.firefox",
   "homepage": "https://www.mozilla.org/en-US/firefox/all/#product-desktop-esr",
-  "fileName": "Firefox%20140.3.1esr.dmg",
-  "sha": "a4082eba7da3b0bbd62d3fc1c01d38aaafdc8c1930ff4e7df5619e21b9227d3e",
+  "fileName": "Firefox%20140.4.0esr.dmg",
+  "sha": "cdbb22b439f830c8958c9e66484844afa20b3b536d876d6b693161d3fbad7287",
   "previous_version": "140.3.1"
 }
