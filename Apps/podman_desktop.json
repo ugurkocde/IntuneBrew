@@ -1,12 +1,12 @@
 {
   "name": "Podman Desktop",
   "description": "Browse, manage, inspect containers and images",
-  "version": "1.22.0",
-  "url": "https://github.com/containers/podman-desktop/releases/download/v1.22.0/podman-desktop-1.22.0-arm64.dmg",
+  "version": "1.22.1",
+  "url": "https://github.com/containers/podman-desktop/releases/download/v1.22.1/podman-desktop-1.22.1-arm64.dmg",
   "bundleId": "io.podmandesktop.PodmanDesktop",
   "homepage": "https://podman-desktop.io/",
-  "fileName": "podman-desktop-1.22.0-arm64.dmg",
-  "sha": "d46dc63465dfffe9648208953137136b6ca5e1d4231b5f749d3a83663a6febb5",
+  "fileName": "podman-desktop-1.22.1-arm64.dmg",
+  "sha": "e597ecdd7159b294b107e59d649dbcb43dce66a9275c51ad8c79ed7792bc5dd9",
   "changelog": "https://github.com/containers/podman-desktop/releases",
   "previous_version": "1.22.0"
 }

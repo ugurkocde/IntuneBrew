@@ -1,12 +1,12 @@
 {
   "name": "Advanced Renamer",
   "description": "Batch file renaming utility",
-  "version": "4.17",
-  "url": "https://www.advancedrenamer.com/down/macos/arm/AdvancedRenamer_4_17.dmg",
+  "version": "4.18",
+  "url": "https://www.advancedrenamer.com/down/macos/arm/AdvancedRenamer_4_18.dmg",
   "bundleId": "com.HulubuluSoftware.AdvancedRenamer",
   "homepage": "https://www.advancedrenamer.com/",
-  "fileName": "AdvancedRenamer_4_17.dmg",
-  "sha": "10049686d788b7d205c8ec8c3f7cca6ae5246319c1ec8551489a280c2a8a073f",
+  "fileName": "AdvancedRenamer_4_18.dmg",
+  "sha": "972b5721fbdccae9bfacaa775edfb20c3c42bbb111e0f7ac51f38ec4c81bfe22",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:29:10Z",
     "qa_result": "Installation successful and verified",

@@ -1,13 +1,13 @@
 {
   "name": "mitmproxy",
   "description": "Intercept, modify, replay, save HTTP/S traffic",
-  "version": "12.1.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/mitmproxy_12.1.2.pkg",
+  "version": "12.2.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/mitmproxy_12.2.0.pkg",
   "bundleId": "org.mitmproxy",
   "homepage": "https://mitmproxy.org/",
-  "fileName": "mitmproxy_12.1.2.pkg",
+  "fileName": "mitmproxy_12.2.0.pkg",
   "type": "app",
-  "sha": "34847f9a75fe497cb84e7b9c450cb474816577fb3beebdca72ca55d6a9731f4c",
+  "sha": "6bda1c2b3fab1fcaeb3d74c4ef038f943716b3f6c92ce0898ee4b3863c508b01",
   "changelog": "https://github.com/mitmproxy/mitmproxy/releases",
-  "previous_version": "12.1.2"
+  "previous_version": "12.2.0"
 }
