@@ -1,11 +1,11 @@
 {
   "name": "NordPass",
   "description": "Password manager",
-  "version": "6.5.20",
+  "version": "7.0.24",
   "url": "https://downloads.npass.app/mac/arm/NordPass.dmg",
   "bundleId": "com.nordsec.nordpass",
   "homepage": "https://nordpass.com/",
   "fileName": "NordPass.dmg",
-  "sha": "7490715c1399751ac12dd373c777e2bd89940168ac65468df85e40ee56743ee4",
+  "sha": "d80b4411ba9bd67809713d6372ce267b59c6de7514995c9370a3d9abfa5f8aed",
   "previous_version": "6.5.20"
 }
