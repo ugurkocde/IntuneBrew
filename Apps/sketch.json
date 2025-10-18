@@ -1,13 +1,13 @@
 {
   "name": "Sketch",
   "description": "Digital design and prototyping platform",
-  "version": "2025.2.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sketch_2025.2.3.pkg",
+  "version": "2025.2.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sketch_2025.2.4.pkg",
   "bundleId": "com.bohemiancoding.sketch3",
   "homepage": "https://www.sketch.com/",
-  "fileName": "sketch_2025.2.3.pkg",
+  "fileName": "sketch_2025.2.4.pkg",
   "type": "app",
-  "sha": "a43089aa9947bdf8152aa04c2a2b5a5d16c574d46cd68c04aca998f73e2987b6",
+  "sha": "c45e8d2bc43ff21b2a96972247d21dde785a1259b2fd8b22f2f97ce9928c1bce",
   "changelog": "https://www.sketch.com/updates/",
-  "previous_version": "2025.2.3"
+  "previous_version": "2025.2.4"
 }
