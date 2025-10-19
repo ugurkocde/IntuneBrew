@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -223,24 +223,19 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-10-18 00:26 UTC*
+*Last checked: 2025-10-19 00:32 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Readest | 0.9.87 | 0.9.88 |
-| Raindrop.io | 5.6.94 | 5.6.95 |
-| Typora | 1.12.1 | 1.12.2 |
-| Trae | 1.0.21130 | 1.0.21557 |
-| AnyDesk | 9.5.0 | 9.5.1 |
-| Bruno | 2.13.1 | 2.13.2 |
-| pgAdmin4 | 9.8 | 9.9 |
-| Microsoft Edge | 141.0.3537.71 | 141.0.3537.85 |
-| calibre | 8.12.0 | 8.13.0 |
-| Windsurf | 1.12.20 | 1.12.21 |
-| Microsoft Auto Update | 4.80.25092610 | 4.81.25101344 |
-| Adobe Acrobat Pro DC | 25.001.20756 | 25.001.20813 |
+| Apifox | 2.7.43 | 2.7.44 |
+| RustDesk | 1.4.2 | 1.4.3 |
+| Alacritty | 0.15.1 | 0.16.0 |
+| VSCodium | 1.105.16954 | 1.105.16999 |
+| OneDrive | 25.159.0817.0003 | 25.184.0921.0004 |
+| Apidog | 2.7.42 | 2.7.44 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -362,7 +357,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/airparrot.png' width='32' height='32'> AirParrot | 3.1.7 |
 | <img src='Logos/airtable.png' width='32' height='32'> Airtable | 1.6.6 |
 | <img src='Logos/airy.png' width='32' height='32'> Airy | 3.29.2 |
-| <img src='Logos/alacritty.png' width='32' height='32'> Alacritty | 0.15.1 |
+| <img src='Logos/alacritty.png' width='32' height='32'> Alacritty | 0.16.0 |
 | <img src='Logos/alcove.png' width='32' height='32'> Alcove | 1.3.9 |
 | <img src='Logos/alfred.png' width='32' height='32'> Alfred | 5.7.1 |
 | <img src='Logos/alttab.png' width='32' height='32'> AltTab | 7.30.0 |
@@ -375,8 +370,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.5.1 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.42 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.43 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.44 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.44 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.0 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.117.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.4 |
@@ -489,7 +484,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/ente.png' width='32' height='32'> Ente | 1.7.14 |
 | <img src='Logos/ente_auth.png' width='32' height='32'> Ente Auth | 4.4.4 |
 | <img src='Logos/epic_games_launcher.png' width='32' height='32'> Epic Games Launcher | 18.10.0 |
-| <img src='Logos/espanso.png' width='32' height='32'> Espanso | 2.2.7 |
+| <img src='Logos/espanso.png' width='32' height='32'> Espanso | 2.3.0 |
 | <img src='Logos/etcher.png' width='32' height='32'> Etcher | 2.1.4 |
 | <img src='Logos/evernote.png' width='32' height='32'> Evernote | 10.105.4 |
 | <img src='Logos/flux.png' width='32' height='32'> f.lux | 42.2 |
@@ -674,7 +669,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/omnifocus.png' width='32' height='32'> OmniFocus | 4.8.4 |
 | <img src='Logos/omnioutliner.png' width='32' height='32'> OmniOutliner | 5.15 |
 | <img src='Logos/omnissa_horizon_client.png' width='32' height='32'> Omnissa Horizon Client | 2506-8.16.0-16536825094 |
-| <img src='Logos/onedrive.png' width='32' height='32'> OneDrive | 25.159.0817.0003 |
+| <img src='Logos/onedrive.png' width='32' height='32'> OneDrive | 25.184.0921.0004 |
 | <img src='Logos/onyx.png' width='32' height='32'> OnyX | 4.9.1 |
 | <img src='Logos/openmtp.png' width='32' height='32'> OpenMTP | 3.2.25 |
 | <img src='Logos/openvpn_connect_client.png' width='32' height='32'> OpenVPN Connect client | 3.7.1 |
@@ -696,7 +691,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/pastebot.png' width='32' height='32'> Pastebot | 2.4.6 |
 | <img src='Logos/pdf_expert.png' width='32' height='32'> PDF Expert | 3.10.22 |
 | <img src='Logos/pdf_pals.png' width='32' height='32'> PDF Pals | 1.9.0 |
-| <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.2.6 |
+| <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.2.7 |
 | <img src='Logos/pgadmin4.png' width='32' height='32'> pgAdmin4 | 9.9 |
 | <img src='Logos/philips_hue_sync.png' width='32' height='32'> Philips Hue Sync | 1.13.1.83 |
 | <img src='Logos/phoenix_slides.png' width='32' height='32'> Phoenix Slides | 1.5.9 |
@@ -756,7 +751,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rotato.png' width='32' height='32'> Rotato | 154 |
 | <img src='Logos/rstudio.png' width='32' height='32'> RStudio | 2025.09.1 |
 | <img src='Logos/rsyncui.png' width='32' height='32'> RsyncUI | 2.7.3 |
-| <img src='Logos/rustdesk.png' width='32' height='32'> RustDesk | 1.4.2 |
+| <img src='Logos/rustdesk.png' width='32' height='32'> RustDesk | 1.4.3 |
 | <img src='Logos/sabnzbd.png' width='32' height='32'> SABnzbd | 4.5.3 |
 | <img src='Logos/santa.png' width='32' height='32'> Santa | 2025.9 |
 | <img src='Logos/screenfocus.png' width='32' height='32'> ScreenFocus | 1.1.1 |
@@ -831,7 +826,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 7.6.3797.63 |
 | <img src='Logos/viz.png' width='32' height='32'> Viz | 2.3.1 |
 | <img src='Logos/vlc_media_player.png' width='32' height='32'> VLC media player | 3.0.21 |
-| <img src='Logos/vscodium.png' width='32' height='32'> VSCodium | 1.105.16954 |
+| <img src='Logos/vscodium.png' width='32' height='32'> VSCodium | 1.105.16999 |
 | <img src='Logos/wave_terminal.png' width='32' height='32'> Wave Terminal | 0.12.0 |
 | ❌ Webex | 45.10.0.33260 |
 | <img src='Logos/webex_teams.png' width='32' height='32'> Webex Teams | 45.6.1.32593 |
@@ -847,7 +842,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/witch.png' width='32' height='32'> Witch | 4.6.2 |
 | <img src='Logos/wondershare_filmora.png' width='32' height='32'> Wondershare Filmora | 13.0.25 |
 | <img src='Logos/xca.png' width='32' height='32'> XCA | 2.9.0 |
-| <img src='Logos/xmind.png' width='32' height='32'> XMind | 26.01.03145-202510161935 |
+| <img src='Logos/xmind.png' width='32' height='32'> XMind | 26.01.03145-202510170301 |
 | <img src='Logos/xnapper.png' width='32' height='32'> Xnapper | 1.17.1 |
 | <img src='Logos/yaak.png' width='32' height='32'> Yaak | 2025.6.1 |
 | <img src='Logos/yubikey_manager.png' width='32' height='32'> Yubikey Manager | 1.2.5 |
