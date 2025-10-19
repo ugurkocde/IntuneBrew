@@ -1,6 +1,6 @@
 {
   "app_name": "Rocket.Chat",
-  "last_updated": "2025-10-12",
+  "last_updated": "2025-10-19",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2025-5892",
@@ -9,43 +9,7 @@
       "base_score": 4.3,
       "severity": "MEDIUM",
       "description": "A vulnerability, which was classified as problematic, has been found in RocketChat up to 7.6.1. This issue affects the function parseMessage of the file /apps/meteor/app/irc/server/servers/RFC2813/parseMessage.js. The manipulation of the argument line leads to inefficient regular expression complexity. The attack may be initiated remotely. The exploit has been disclosed to the public and may be used.",
-      "cpe_name": "cpe:2.3:a:rocket.chat:rocket.chat:6.10.1:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2024-46934",
-      "published_date": "2024-09-25",
-      "last_modified_date": "2025-03-25",
-      "base_score": 6.1,
-      "severity": "MEDIUM",
-      "description": "Rocket.Chat 6.12.0, 6.11.2, 6.10.5, 6.9.6, 6.8.6, 6.7.8, and earlier is vulnerable to DOM-based Cross-site Scripting (XSS). Attackers may be able to abuse the UpdateOTRAck method to forge a message that contains an XSS payload.",
-      "cpe_name": "cpe:2.3:a:rocket.chat:rocket.chat:6.10.1:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2024-46935",
-      "published_date": "2024-09-25",
-      "last_modified_date": "2025-03-25",
-      "base_score": 7.5,
-      "severity": "HIGH",
-      "description": "Rocket.Chat 6.12.0, 6.11.2, 6.10.5, 6.9.6, 6.8.6, 6.7.8, and earlier is vulnerable to denial of service (DoS). Attackers who craft messages with specific characters may crash the workspace due to an issue in the message parser.",
-      "cpe_name": "cpe:2.3:a:rocket.chat:rocket.chat:6.10.1:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2024-47048",
-      "published_date": "2024-09-25",
-      "last_modified_date": "2025-03-25",
-      "base_score": 5.4,
-      "severity": "MEDIUM",
-      "description": "Rocket.Chat 6.12.0, 6.11.2, 6.10.5, 6.9.6, 6.8.6, 6.7.8, and earlier allows stored XSS in the description and release notes of the marketplace and private apps.",
-      "cpe_name": "cpe:2.3:a:rocket.chat:rocket.chat:6.10.1:*:*:*:*:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2024-45621",
-      "published_date": "2024-09-02",
-      "last_modified_date": "2025-03-13",
-      "base_score": 5.4,
-      "severity": "MEDIUM",
-      "description": "The Electron desktop application of Rocket.Chat through 6.3.4 allows stored XSS via links in an uploaded file, related to failure to use a separate browser upon encountering third-party external actions from PDF documents.",
-      "cpe_name": "cpe:2.3:a:rocket.chat:rocket.chat:6.3.4:*:*:*:*:*:*:*"
+      "cpe_name": "cpe:2.3:a:rocket.chat:rocket.chat:7.6.1:*:*:*:*:*:*:*"
     }
   ]
 }

@@ -1,7 +1,16 @@
 {
   "app_name": "Cursor",
-  "last_updated": "2025-10-12",
+  "last_updated": "2025-10-19",
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2025-59944",
+      "published_date": "2025-10-03",
+      "last_modified_date": "2025-10-16",
+      "base_score": 8.0,
+      "severity": "HIGH",
+      "description": "Cursor is a code editor built for programming with AI. Versions 1.6.23 and below contain case-sensitive checks in the way Cursor IDE protects its sensitive files (e.g., */.cursor/mcp.json), which allows attackers to modify the content of these files through prompt injection and achieve remote code execution. A prompt injection can lead to full RCE through modifying sensitive files on case-insensitive fileystems. This issue is fixed in version 1.7.",
+      "cpe_name": "cpe:2.3:a:anysphere:cursor:1.5:*:*:*:*:*:*:*"
+    },
     {
       "cve_id": "CVE-2025-61592",
       "published_date": "2025-10-03",
@@ -18,6 +27,24 @@
       "base_score": 7.1,
       "severity": "HIGH",
       "description": "Cursor is a code editor built for programming with AI. In versions 1.7 and below, a vulnerability in the way Cursor CLI Agent protects its sensitive files (i.e. */.cursor/cli.json) allows attackers to modify the content of the files through prompt injection, thus achieving remote code execution. A prompt injection can lead to full RCE through modifying sensitive files on case-insensitive filesystems. This issue is fixed in a commit, 25b418f, but has yet to be released as of October 3, 2025.",
+      "cpe_name": "cpe:2.3:a:anysphere:cursor:1.5:*:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2025-61590",
+      "published_date": "2025-10-03",
+      "last_modified_date": "2025-10-17",
+      "base_score": 7.5,
+      "severity": "HIGH",
+      "description": "Cursor is a code editor built for programming with AI. Versions 1.6 and below are vulnerable to Remote Code Execution (RCE) attacks through Visual Studio Code Workspaces. Workspaces allow users to open more than a single folder and save specific settings (pretty similar to .vscode/settings.json) for the folders / project. An untitled workspace is automatically created by VS Code (untitled.code-workspace), which contains all the folders and workspace settings from the user's current session, opening up an entire new attack vector if the user has a .code-workspace file in path (either untitled created automatically or a saved one). If an attacker is able to hijack the chat context of the victim (such as via a compromised MCP server), they can use prompt injection to make the Cursor Agent write into this file and modify the workspace. This leads to a bypass of CVE-2025-54130 which can lead to RCE by writing to the settings section. This issue is fixed in version 1.7.",
+      "cpe_name": "cpe:2.3:a:anysphere:cursor:1.5:*:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2025-61591",
+      "published_date": "2025-10-03",
+      "last_modified_date": "2025-10-17",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "description": "Cursor is a code editor built for programming with AI. In versions 1.7 and below, when MCP uses OAuth authentication with an untrusted MCP server, an attacker can impersonate a malicious MCP server and return crafted, maliciously injected commands during the interaction process, leading to command injection and potential remote code execution. If chained with an untrusted MCP service via OAuth, this command injection vulnerability could allow arbitrary code execution on the host by the agent. This can then be used to directly compromise the system by executing malicious commands with full user privileges. This issue does not currently have a fixed release version, but there is a patch, 2025.09.17-25b418f.",
       "cpe_name": "cpe:2.3:a:anysphere:cursor:1.5:*:*:*:*:*:*:*"
     }
   ]
