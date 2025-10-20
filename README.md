@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -224,18 +224,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-10-19 00:32 UTC*
+*Last checked: 2025-10-20 00:30 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Apifox | 2.7.43 | 2.7.44 |
-| RustDesk | 1.4.2 | 1.4.3 |
-| Alacritty | 0.15.1 | 0.16.0 |
-| VSCodium | 1.105.16954 | 1.105.16999 |
-| OneDrive | 25.159.0817.0003 | 25.184.0921.0004 |
-| Apidog | 2.7.42 | 2.7.44 |
+| Lunatask | 2.1.12 | 2.1.13 |
+| DBeaver Community Edition | 25.2.2 | 25.2.3 |
+| VSCodium | 1.105.16999 | 1.105.17017 |
+| Dataflare | 2.5.0 | 2.6.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -447,11 +446,11 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.2.4 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.32 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.9.1 |
-| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.5.0 |
+| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.6.0 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.2.4 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.2.1 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.2.2 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.2.3 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.6.5 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.10.12857136 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
@@ -550,7 +549,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/insta360_studio.png' width='32' height='32'> Insta360 Studio | 5.7.6 |
 | <img src='Logos/intellij_idea_community_edition.png' width='32' height='32'> IntelliJ IDEA Community Edition | 2025.2.3 |
 | <img src='Logos/istherenet.png' width='32' height='32'> IsThereNet | 1.7.1 |
-| <img src='Logos/iterm2.png' width='32' height='32'> iTerm2 | 3.6.4 |
+| <img src='Logos/iterm2.png' width='32' height='32'> iTerm2 | 3.6.5 |
 | <img src='Logos/itsycal.png' width='32' height='32'> Itsycal | 0.15.6 |
 | <img src='Logos/jabra_direct.png' width='32' height='32'> Jabra Direct | 6.24.20901 |
 | <img src='Logos/jamie.png' width='32' height='32'> Jamie | 4.5.0 |
@@ -587,7 +586,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 1.14.6 |
 | <img src='Logos/loop.png' width='32' height='32'> Loop | 1.3.0 |
 | <img src='Logos/lulu.png' width='32' height='32'> LuLu | 4.1.0 |
-| <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.12 |
+| <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.13 |
 | <img src='Logos/löve.png' width='32' height='32'> LÖVE | 11.5 |
 | <img src='Logos/maccy.png' width='32' height='32'> Maccy | 2.5.1 |
 | <img src='Logos/macdown.png' width='32' height='32'> MacDown | 0.7.2 |
@@ -826,7 +825,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 7.6.3797.63 |
 | <img src='Logos/viz.png' width='32' height='32'> Viz | 2.3.1 |
 | <img src='Logos/vlc_media_player.png' width='32' height='32'> VLC media player | 3.0.21 |
-| <img src='Logos/vscodium.png' width='32' height='32'> VSCodium | 1.105.16999 |
+| <img src='Logos/vscodium.png' width='32' height='32'> VSCodium | 1.105.17017 |
 | <img src='Logos/wave_terminal.png' width='32' height='32'> Wave Terminal | 0.12.0 |
 | ❌ Webex | 45.10.0.33260 |
 | <img src='Logos/webex_teams.png' width='32' height='32'> Webex Teams | 45.6.1.32593 |
