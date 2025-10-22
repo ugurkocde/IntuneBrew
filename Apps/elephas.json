@@ -1,12 +1,12 @@
 {
   "name": "Elephas",
   "description": "Personal AI Writing Assistant",
-  "version": "11.1087",
-  "url": "https://assets.elephas.app/Elephas_11_1087.dmg",
+  "version": "11.3013",
+  "url": "https://assets.elephas.app/Elephas%2011.3013.dmg",
   "bundleId": "com.kamban.elephas",
   "homepage": "https://elephas.app/",
-  "fileName": "Elephas_11_1087.dmg",
-  "sha": "6f23b3a02f0a605ba86358a55c3e72d13eb2a49b872fa636e3062696c43f6231",
+  "fileName": "Elephas%2011.3013.dmg",
+  "sha": "50d72e22862bf7a8e73e745299c575ee00a30d2344d332275351683af6745378",
   "changelog": "https://elephas.app/changelog",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:24:23Z",

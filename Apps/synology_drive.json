@@ -8,5 +8,5 @@
   "fileName": "synology-drive-client-17877.dmg",
   "sha": "bc4e93bc54c0fd9d64053fe65f98aa11ebbdd004b1ff76df15dd1399199adf75",
   "changelog": "https://www.synology.com/en-us/releaseNote/SynologyDriveClient",
-  "previous_version": "3.5.2"
+  "previous_version": "4.0.0"
 }

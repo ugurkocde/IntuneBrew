@@ -1,13 +1,13 @@
 {
   "name": "OpenVPN Connect client",
   "description": "Client program for the OpenVPN Access Server",
-  "version": "3.7.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/openvpn_connect_client_3.7.1.pkg",
+  "version": "3.8.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/openvpn_connect_client_3.8.0.pkg",
   "bundleId": "org.openvpn.client.app",
   "homepage": "https://openvpn.net/client-connect-vpn-for-mac-os/",
-  "fileName": "openvpn-connect-3.7.1.5558_signed.dmg",
+  "fileName": "openvpn_connect_client_3.8.0.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://openvpn.net/connect-docs/macos-release-notes.html",
-  "sha": "c6418b8d1fe3ff8485dc72ce4fe80a15fc573e160885ac7d3f6ec8f3d879c2bc",
+  "sha": "8536e48f9045cb921c4271fb16e464ecc1f98093c7e05ed5faf20498646033b5",
   "previous_version": "3.7.1"
 }
