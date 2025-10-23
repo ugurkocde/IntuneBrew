@@ -1,12 +1,12 @@
 {
   "name": "Amazon Chime",
   "description": "Communications service",
-  "version": "5.23.22440",
-  "url": "https://clients.chime.aws/mac-nme/AmazonChime-5.23.22440.dmg",
+  "version": "5.23.22453",
+  "url": "https://clients.chime.aws/mac-nme/AmazonChime-5.23.22453.dmg",
   "bundleId": "com.amazon.Amazon-Chime",
   "homepage": "https://chime.aws/",
-  "fileName": "AmazonChime-5.23.22440.dmg",
-  "sha": "ffe955e402c6ba980b7119898d5f2aa0b935b3b5af7c5e9e2f7ffa7937d4cd43",
+  "fileName": "AmazonChime-5.23.22453.dmg",
+  "sha": "74cb17e9a8f5f2922c69d6cb9af064cdc687c409310db2cddf62547f1d19a15f",
   "changelog": "https://docs.aws.amazon.com/chime/latest/ag/desktop-app.html#desktop-app-changelog",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:31:01Z",
