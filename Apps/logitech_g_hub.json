@@ -1,12 +1,12 @@
 {
   "name": "Logitech G HUB",
   "description": "Support for Logitech G gear",
-  "version": "2025.7.768359",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/logitech_g_hub_2025.7.768359.pkg",
+  "version": "2025.8.789376",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/logitech_g_hub_2025.8.789376.pkg",
   "bundleId": "com.logi.ghub",
   "homepage": "https://www.logitechg.com/en-us/innovation/g-hub.html",
-  "fileName": "logitech_g_hub_2025.7.768359.pkg",
+  "fileName": "logitech_g_hub_2025.8.789376.pkg",
   "type": "app",
-  "sha": "25dbad26edb66d8aca051c08f36a63a0258c04ae04a011b3a7b7ad366f8f3901",
-  "previous_version": "2025.7.768359"
+  "sha": "e55464b04e7a4fa815c7973c0aad58596c7a0e8c689cc6451033f92aa2002f3d",
+  "previous_version": "2025.8.789376"
 }
