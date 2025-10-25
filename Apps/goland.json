@@ -1,12 +1,12 @@
 {
   "name": "Goland",
   "description": "Go (golang) IDE",
-  "version": "2025.2.3",
-  "url": "https://download.jetbrains.com/go/goland-2025.2.3-aarch64.dmg",
+  "version": "2025.2.4",
+  "url": "https://download.jetbrains.com/go/goland-2025.2.4-aarch64.dmg",
   "bundleId": "com.jetbrains.goland",
   "homepage": "https://www.jetbrains.com/go/",
-  "fileName": "goland-2025.2.3-aarch64.dmg",
-  "sha": "bb89e8761b5988bf6230cb7e5b79520db4fc5e2a1e9fe31847991e4a108b2071",
+  "fileName": "goland-2025.2.4-aarch64.dmg",
+  "sha": "d122e1f1109f31373d4a479b99278f569da7cf3b9fea88b1b2077c6d598813bf",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:19:58Z",
     "qa_result": "Installation successful and verified",

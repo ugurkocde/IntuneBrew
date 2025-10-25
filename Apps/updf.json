@@ -1,11 +1,11 @@
 {
   "name": "UPDF",
   "description": "PDF editor",
-  "version": "2.0.9",
+  "version": "2.0.10",
   "url": "https://download.updf.com/updf/basic/mac/apple/updf-mac-full.dmg",
   "bundleId": "com.superace.updf.mac",
   "homepage": "https://updf.com/",
   "fileName": "updf-mac-full.dmg",
-  "sha": "38c80e207c0ac1f83619777878e1d8fbec187bb0edff995564a9b7e4973d04b8",
+  "sha": "6879c5082297725f992650c2dc194b3a40f6acf40d6041e389772512761d059c",
   "previous_version": "2.0.9"
 }
