@@ -1,15 +1,15 @@
 {
   "app_name": "WhatsApp",
-  "last_updated": "2025-10-19",
+  "last_updated": "2025-10-26",
   "vulnerabilities": [
     {
-      "cve_id": "CVE-2025-30401",
-      "published_date": "2025-04-05",
-      "last_modified_date": "2025-04-09",
-      "base_score": 6.7,
-      "severity": "MEDIUM",
-      "description": "A spoofing issue in WhatsApp for Windows prior to version 2.2450.6 displayed attachments according to their MIME type but selected the file opening handler based on the attachment\u2019s filename extension. A maliciously crafted mismatch could have caused the recipient to inadvertently execute arbitrary code rather than view the attachment when manually opening the attachment inside WhatsApp. We have not seen evidence of exploitation in the wild.",
-      "cpe_name": "cpe:2.3:a:whatsapp:whatsapp:2.2320.2:*:*:*:desktop:windows:*:*"
+      "cve_id": "CVE-2019-3568",
+      "published_date": "2019-05-14",
+      "last_modified_date": "2025-10-24",
+      "base_score": 9.8,
+      "severity": "CRITICAL",
+      "description": "A buffer overflow vulnerability in WhatsApp VOIP stack allowed remote code execution via specially crafted series of RTCP packets sent to a target phone number. The issue affects WhatsApp for Android prior to v2.19.134, WhatsApp Business for Android prior to v2.19.44, WhatsApp for iOS prior to v2.19.51, WhatsApp Business for iOS prior to v2.19.51, WhatsApp for Windows Phone prior to v2.18.348, and WhatsApp for Tizen prior to v2.18.15.",
+      "cpe_name": "cpe:2.3:a:whatsapp:whatsapp:-:*:*:*:*:tizen:*:*"
     }
   ]
 }
