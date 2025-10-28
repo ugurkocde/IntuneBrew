@@ -1,12 +1,12 @@
 {
   "name": "DbGate",
   "description": "Database manager for MySQL, PostgreSQL, SQL Server, MongoDB, SQLite and others",
-  "version": "6.6.5",
-  "url": "https://github.com/dbgate/dbgate/releases/download/v6.6.5/dbgate-6.6.5-mac_universal.dmg",
+  "version": "6.6.6",
+  "url": "https://github.com/dbgate/dbgate/releases/download/v6.6.6/dbgate-6.6.6-mac_universal.dmg",
   "bundleId": "org.dbgate",
   "homepage": "https://dbgate.org/",
-  "fileName": "dbgate-6.6.5-mac_universal.dmg",
-  "sha": "6c4d7a19270193d6b7da4e3d3fd5ae4f87f29ac71d6360323fd936f54b0df076",
+  "fileName": "dbgate-6.6.6-mac_universal.dmg",
+  "sha": "a6a1f70850c710e450cdc9d027f3530f27e2485b00ce55904c2dbf666de5f576",
   "changelog": "https://github.com/dbgate/dbgate/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:25:57Z",
