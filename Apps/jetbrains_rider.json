@@ -1,11 +1,11 @@
 {
   "name": "JetBrains Rider",
   "description": ".NET IDE",
-  "version": "2025.2.3",
-  "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2025.2.3-aarch64.dmg",
+  "version": "2025.2.4",
+  "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2025.2.4-aarch64.dmg",
   "bundleId": "com.jetbrains.rider",
   "homepage": "https://www.jetbrains.com/rider/",
-  "fileName": "JetBrains.Rider-2025.2.3-aarch64.dmg",
-  "sha": "67c9c8f73844d9705c8e64f03afc659ef3146caccc079f183a758b0d7666a468",
+  "fileName": "JetBrains.Rider-2025.2.4-aarch64.dmg",
+  "sha": "e6bd0a07f5922c05c73d9170bbaa2219534fa8e5350b99f37c6a4bc9eb7c0870",
   "previous_version": "2025.2.3"
 }

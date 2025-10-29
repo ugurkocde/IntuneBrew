@@ -1,13 +1,13 @@
 {
   "name": "Microsoft Azure Storage Explorer",
   "description": "Explorer for Azure Storage",
-  "version": "1.40.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/microsoft_azure_storage_explorer_1.40.0.pkg",
+  "version": "1.40.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/microsoft_azure_storage_explorer_1.40.1.pkg",
   "bundleId": "com.microsoft.StorageExplorer",
   "homepage": "https://azure.microsoft.com/en-us/features/storage-explorer/",
-  "fileName": "microsoft_azure_storage_explorer_1.40.0.pkg",
+  "fileName": "microsoft_azure_storage_explorer_1.40.1.pkg",
   "type": "app",
-  "sha": "9d0f14c6934c474b84c707e6a0c5672d1fb36ad4d1320a9eda14c90f828f8c00",
+  "sha": "28070fec0d99e31870672512722d1f36ea3a3c405980785562f53bb28d922179",
   "changelog": "https://learn.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes",
-  "previous_version": "1.40.0"
+  "previous_version": "1.40.1"
 }
