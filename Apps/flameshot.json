@@ -1,12 +1,12 @@
 {
   "name": "Flameshot",
   "description": "Screenshot software",
-  "version": "13.2.0",
-  "url": "https://github.com/flameshot-org/flameshot/releases/download/v13.2.0/Flameshot-13.2.0-artifact-macos-arm64.dmg",
+  "version": "13.3.0",
+  "url": "https://github.com/flameshot-org/flameshot/releases/download/v13.3.0/Flameshot-13.3.0-artifact-macos-arm64.dmg",
   "bundleId": "com.Flameshot.flameshot",
   "homepage": "https://flameshot.org/",
-  "fileName": "Flameshot-13.2.0-artifact-macos-arm64.dmg",
-  "sha": "25d9268efbb60013f3f3c4c67be4a3fee35055a1b2db5c86368ed79c44544ad9",
+  "fileName": "Flameshot-13.3.0-artifact-macos-arm64.dmg",
+  "sha": "ecf0d815b5b4c0a55f896d67c4cf74c49816ccb20acf9df715a3cd893e0184e7",
   "changelog": "https://github.com/flameshot-org/flameshot/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:11:10Z",

@@ -1,12 +1,12 @@
 {
   "name": "Eclipse Temurin Java Development Kit",
   "description": "JDK from the Eclipse Foundation (Adoptium)",
-  "version": "25",
-  "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25%2B36/OpenJDK25U-jdk_aarch64_mac_hotspot_25_36.pkg",
+  "version": "25.0.1",
+  "url": "https://github.com/adoptium/temurin25-binaries/releases/download/jdk-25.0.1%2B8/OpenJDK25U-jdk_aarch64_mac_hotspot_25.0.1_8.pkg",
   "bundleId": "net.temurin.23.jdk",
   "homepage": "https://adoptium.net/",
-  "fileName": "OpenJDK25U-jdk_aarch64_mac_hotspot_25_36.pkg",
-  "sha": "c55bcb78dee95f0482e96762dc0912b57d3b1213de0d7e7542321952c8cdd89f",
+  "fileName": "OpenJDK25U-jdk_aarch64_mac_hotspot_25.0.1_8.pkg",
+  "sha": "827672503ebcc0596e4d9f8ca7dd56a3f88a072cf02e660e52f1807503ce4ae8",
   "changelog": "https://adoptium.net/de/temurin/releases/?os=mac&version=23",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:10:14Z",
