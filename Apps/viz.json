@@ -1,12 +1,12 @@
 {
   "name": "Viz",
   "description": "Utility for extracting text from images, videos, QR codes and barcodes",
-  "version": "2.3.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/viz_2.3.1.pkg",
+  "version": "2.3.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/viz_2.3.3.pkg",
   "bundleId": "com.alienator88.Viz",
   "homepage": "https://itsalin.com/appInfo/?id=viz",
-  "fileName": "viz_2.3.1.pkg",
+  "fileName": "viz_2.3.3.pkg",
   "type": "app",
-  "sha": "7f37206f5bc293dbb0365d65981aae2248b8adfc8fb6fa7d9b3b4cfbf7b86008",
-  "previous_version": "2.3.1"
+  "sha": "54becbd3e970b726e08905dd84e3870aa5efffc166cd7aa1e67deac3cb92ec30",
+  "previous_version": "2.3.3"
 }
