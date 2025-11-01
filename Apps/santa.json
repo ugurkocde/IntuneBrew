@@ -1,12 +1,12 @@
 {
   "name": "Santa",
   "description": "Binary authorization system",
-  "version": "2025.9",
-  "url": "https://github.com/northpolesec/santa/releases/download/2025.9/santa-2025.9.dmg",
+  "version": "2025.10",
+  "url": "https://github.com/northpolesec/santa/releases/download/2025.10/santa-2025.10.dmg",
   "bundleId": "com.google.santa",
   "homepage": "https://github.com/google/santa",
-  "fileName": "santa-2025.9.dmg",
-  "sha": "52345d7038a1829e2502ed050a82d49ab7503e2c2a9f1f4460c8e49d961dcd61",
+  "fileName": "santa-2025.10.dmg",
+  "sha": "2eb8fdb1c18fd104aa1204fdc6d7dde79a704908bdd9b1c065c00d864428f5aa",
   "changelog": "https://github.com/google/santa/releases",
   "previous_version": "2025.9"
 }
