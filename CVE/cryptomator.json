@@ -1,6 +1,6 @@
 {
   "app_name": "Cryptomator",
-  "last_updated": "2025-10-26",
+  "last_updated": "2025-11-02",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2023-39520",
