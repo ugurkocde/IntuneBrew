@@ -1,12 +1,12 @@
 {
   "name": "Blender",
   "description": "3D creation suite",
-  "version": "4.5.3",
-  "url": "https://download.blender.org/release/Blender4.5/blender-4.5.3-macos-arm64.dmg",
+  "version": "4.5.4",
+  "url": "https://download.blender.org/release/Blender4.5/blender-4.5.4-macos-arm64.dmg",
   "bundleId": "org.blenderfoundation.blender.savedState",
   "homepage": "https://www.blender.org/",
-  "fileName": "blender-4.5.3-macos-arm64.dmg",
-  "sha": "73ea841053b55404bb3a71a9a22366f1f8821787fe5c899f8b55a7fff929d01b",
+  "fileName": "blender-4.5.4-macos-arm64.dmg",
+  "sha": "7d6bd807563f0af65735cf9e21b788f6ac78bc5ceb87b96c424459785a13cd60",
   "changelog": "https://www.blender.org/download/releases/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:26:41Z",

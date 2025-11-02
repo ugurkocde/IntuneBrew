@@ -1,12 +1,12 @@
 {
   "name": "Rancher Desktop",
   "description": "Kubernetes and container management on the desktop",
-  "version": "1.20.0",
-  "url": "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.20.0/Rancher.Desktop-1.20.0.aarch64.dmg",
+  "version": "1.20.1",
+  "url": "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.20.1/Rancher.Desktop-1.20.1.aarch64.dmg",
   "bundleId": "io.rancherdesktop.app",
   "homepage": "https://rancherdesktop.io/",
-  "fileName": "Rancher.Desktop-1.20.0.aarch64.dmg",
-  "sha": "ee0073896ffc149c3db12a21004981edbaa2f194341d9680375dc2df809fcfc2",
+  "fileName": "Rancher.Desktop-1.20.1.aarch64.dmg",
+  "sha": "6e3f9de4dd663bd4c36d422e44ec1b332aad094a07eda703ae9e4569c9245b97",
   "changelog": "https://github.com/rancher-sandbox/rancher-desktop/releases",
   "previous_version": "1.20.0"
 }
