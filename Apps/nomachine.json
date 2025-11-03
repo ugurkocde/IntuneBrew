@@ -1,13 +1,13 @@
 {
   "name": "NoMachine",
   "description": "Remote desktop software",
-  "version": "8.16.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/nomachine_8.16.1.pkg",
+  "version": "9.2.18",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/nomachine_9.2.18.pkg",
   "bundleId": "com.nomachine.nxdock",
   "homepage": "https://www.nomachine.com/",
-  "fileName": "nomachine_8.16.1_2.dmg",
+  "fileName": "nomachine_9.2.18.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://www.nomachine.com/changelog",
-  "sha": "59391a64b9928015ec9284863d6171922a1011f4d33b9bb2ca450714d3a2aab2",
+  "sha": "85aaf132ed56e727b819d0282ee4f322a3d5d912ecf833a61abfb7b225bc24ae",
   "previous_version": "8.16.1"
 }

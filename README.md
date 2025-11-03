@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -238,20 +238,21 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-11-02 00:31 UTC*
+*Last checked: 2025-11-03 00:32 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| MarkEdit | 1.27.3 | 1.27.4 |
-| Apifox | 2.7.45 | 2.7.46 |
-| ChatWise | 0.9.44 | 0.9.45 |
-| LuLu | 4.1.0 | 4.2.0 |
-| Blender | 4.5.3 | 4.5.4 |
-| Rancher Desktop | 1.20.0 | 1.20.1 |
-| Apidog | 2.7.45 | 2.7.46 |
-| Badgeify | 1.9.2 | 1.9.3 |
+| MySQL Workbench | 8.0.43 | 8.0.44 |
+| DockDoor | 1.25.4 | 1.25.5 |
+| Trae | 1.0.22310 | 1.0.22462 |
+| DBeaver Community Edition | 25.2.3 | 25.2.4 |
+| Windows App | 11.2.5 | 11.2.6 |
+| Insta360 Studio | 5.7.6 | 5.8.0 |
+| Tableau Desktop | 2025.2.3 | 2025.2.4 |
+| NoMachine | 8.16.1 | 9.2.18 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -467,7 +468,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.2.4 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.2.3 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.2.3 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.2.4 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.6.9 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.10.22981688 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
@@ -475,7 +476,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
 | <img src='Logos/discord.png' width='32' height='32'> Discord | 0.0.365 |
 | <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 14.1 |
-| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.25.4 |
+| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.25.5 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.42.1 |
 | <img src='Logos/dockside.png' width='32' height='32'> Dockside | 1.9.54 |
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
@@ -563,7 +564,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/imazing_profile_editor.png' width='32' height='32'> iMazing Profile Editor | 2.1.1 |
 | <img src='Logos/inkscape.png' width='32' height='32'> Inkscape | 1.4.230579 |
 | <img src='Logos/insomnia.png' width='32' height='32'> Insomnia | 11.6.2 |
-| <img src='Logos/insta360_studio.png' width='32' height='32'> Insta360 Studio | 5.7.6 |
+| <img src='Logos/insta360_studio.png' width='32' height='32'> Insta360 Studio | 5.8.0 |
 | <img src='Logos/intellij_idea_community_edition.png' width='32' height='32'> IntelliJ IDEA Community Edition | 2025.2.4 |
 | <img src='Logos/istherenet.png' width='32' height='32'> IsThereNet | 1.7.1 |
 | <img src='Logos/iterm2.png' width='32' height='32'> iTerm2 | 3.6.5 |
@@ -654,7 +655,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/multi.png' width='32' height='32'> Multi | 0.538.2 |
 | <img src='Logos/multiviewer_for_f1.png' width='32' height='32'> MultiViewer for F1 | 1.43.2 |
 | <img src='Logos/mural.png' width='32' height='32'> MURAL | 3.0.4 |
-| <img src='Logos/mysql_workbench.png' width='32' height='32'> MySQL Workbench | 8.0.43 |
+| <img src='Logos/mysql_workbench.png' width='32' height='32'> MySQL Workbench | 8.0.44 |
 | <img src='Logos/name_mangler.png' width='32' height='32'> Name Mangler | 3.9.3 |
 | <img src='Logos/neofinder.png' width='32' height='32'> NeoFinder | 9.0 |
 | <img src='Logos/netbeans_ide.png' width='32' height='32'> NetBeans IDE | 27 |
@@ -662,7 +663,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/netnewswire.png' width='32' height='32'> NetNewsWire | 6.1.10 |
 | <img src='Logos/nextcloud.png' width='32' height='32'> Nextcloud | 4.0.1 |
 | <img src='Logos/nitro_pdf_pro.png' width='32' height='32'> Nitro PDF Pro | 14.7 |
-| <img src='Logos/nomachine.png' width='32' height='32'> NoMachine | 8.16.1 |
+| <img src='Logos/nomachine.png' width='32' height='32'> NoMachine | 9.2.18 |
 | <img src='Logos/nordlayer.png' width='32' height='32'> NordLayer | 3.7.1 |
 | <img src='Logos/nordlocker.png' width='32' height='32'> NordLocker | 4.26.1 |
 | <img src='Logos/nordpass.png' width='32' height='32'> NordPass | 7.0.33 |
@@ -806,7 +807,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sync.png' width='32' height='32'> Sync | 2.2.53 |
 | <img src='Logos/syncovery.png' width='32' height='32'> Syncovery | 11.10.1 |
 | <img src='Logos/synology_drive.png' width='32' height='32'> Synology Drive | 4.0.0 |
-| <img src='Logos/tableau_desktop.png' width='32' height='32'> Tableau Desktop | 2025.2.3 |
+| <img src='Logos/tableau_desktop.png' width='32' height='32'> Tableau Desktop | 2025.2.4 |
 | <img src='Logos/tabtab.png' width='32' height='32'> TabTab | 2.0.3 |
 | <img src='Logos/tailscale.png' width='32' height='32'> Tailscale | 1.84.1 |
 | <img src='Logos/taskbar.png' width='32' height='32'> Taskbar | 1.4.7 |
@@ -824,7 +825,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/todoist.png' width='32' height='32'> Todoist | 9.17.0 |
 | <img src='Logos/tofu.png' width='32' height='32'> Tofu | 3.0.1 |
 | <img src='Logos/topaz_gigapixel_ai.png' width='32' height='32'> Topaz Gigapixel AI | 8.4.4 |
-| <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.22310 |
+| <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.22462 |
 | <img src='Logos/transmission.png' width='32' height='32'> Transmission | 4.0.6 |
 | <img src='Logos/transmit.png' width='32' height='32'> Transmit | 5.11.1 |
 | <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.5.1 |
@@ -850,7 +851,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/wechat_for_mac.png' width='32' height='32'> WeChat for Mac | 4.1.2.17 |
 | <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 2.25.30.72 |
 | <img src='Logos/windowkeys.png' width='32' height='32'> WindowKeys | 3.0.1 |
-| <img src='Logos/windows_app.png' width='32' height='32'> Windows App | 11.2.5 |
+| <img src='Logos/windows_app.png' width='32' height='32'> Windows App | 11.2.6 |
 | <img src='Logos/windsurf.png' width='32' height='32'> Windsurf | 1.12.27 |
 | <img src='Logos/winehqstable.png' width='32' height='32'> WineHQ-stable | 10.0 |
 | <img src='Logos/wire.png' width='32' height='32'> Wire | 3.40.5285 |
