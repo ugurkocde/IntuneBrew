@@ -5,9 +5,9 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/tableau_desktop_2025.2.4.pkg",
   "bundleId": "com.tableausoftware.tableaudesktop",
   "homepage": "https://www.tableau.com/products/desktop",
-  "fileName": "tableau_desktop_2025.2.4.pkg",
+  "fileName": "TableauDesktop-2025-2-4-arm64.dmg",
   "type": "pkg_in_dmg",
   "sha": "05ad176a53f0a4b067f784fc097ef64bec97057feb66944a0d730668d6bb2f4b",
   "changelog": "https://www.tableau.com/support/releases/desktop",
-  "previous_version": "2025.2.3"
+  "previous_version": "2025.2.4"
 }

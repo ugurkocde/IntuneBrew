@@ -5,9 +5,9 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/nomachine_9.2.18.pkg",
   "bundleId": "com.nomachine.nxdock",
   "homepage": "https://www.nomachine.com/",
-  "fileName": "nomachine_9.2.18.pkg",
+  "fileName": "nomachine_9.2.18_1.dmg",
   "type": "pkg_in_dmg",
   "changelog": "https://www.nomachine.com/changelog",
   "sha": "85aaf132ed56e727b819d0282ee4f322a3d5d912ecf833a61abfb7b225bc24ae",
-  "previous_version": "8.16.1"
+  "previous_version": "9.2.18"
 }

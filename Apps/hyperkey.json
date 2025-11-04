@@ -1,11 +1,11 @@
 {
   "name": "Hyperkey",
   "description": "Convert your caps lock key or any of your modifier keys to the hyper key",
-  "version": "0.50",
-  "url": "https://hyperkey.app/downloads/Hyperkey0.50.dmg",
+  "version": "1.54",
+  "url": "https://hyperkey.app/downloads/Hyperkey1.54.dmg",
   "bundleId": "com.knollsoft.Hyperkey",
   "homepage": "https://hyperkey.app/",
-  "fileName": "Hyperkey0.50.dmg",
-  "sha": "c536eac2b6f20f10fa4df6d1cc40ff212bf2baa265c7c0ac9fdeddd3abaa73d7",
+  "fileName": "Hyperkey1.54.dmg",
+  "sha": "e04dd07510bcb1434db27bc5dfc52cfa872c67a225e8c2d61d505868d9d0538a",
   "previous_version": "0.50"
 }
