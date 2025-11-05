@@ -1,12 +1,12 @@
 {
   "name": "Windsurf",
   "description": "Agentic IDE powered by AI Flow paradigm",
-  "version": "1.12.27",
-  "url": "https://windsurf-stable.codeiumdata.com/darwin-arm64-dmg/stable/94ec85969ebc38d14c35c87a0284fafd84bff116/Windsurf-darwin-arm64-1.12.27.dmg",
+  "version": "1.12.28",
+  "url": "https://windsurf-stable.codeiumdata.com/darwin-arm64-dmg/stable/c855b1fa42fce019aedb4b06e6faa69d65ac7fd3/Windsurf-darwin-arm64-1.12.28.dmg",
   "bundleId": "com.exafunction.windsurf",
   "homepage": "https://www.codeium.com/windsurf",
-  "fileName": "Windsurf-darwin-arm64-1.12.27.dmg",
-  "sha": "98a0027d799d24a07cbf8fc85b972dd120a9cdf8d29ab30b2435d5604d045f0a",
+  "fileName": "Windsurf-darwin-arm64-1.12.28.dmg",
+  "sha": "a9d555b2df128c4073e4bec315eb85935e18cc9767903b5b422a07a3fe6a41da",
   "changelog": "https://www.codeium.com/windsurf/changelog",
   "previous_version": "1.12.27"
 }

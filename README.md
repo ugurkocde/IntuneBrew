@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -240,26 +240,26 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-11-04 00:29 UTC*
+*Last checked: 2025-11-05 00:31 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Studio 3T | 2025.19.0 | 2025.20.0 |
-| Hyperkey | 0.50 | 1.54 |
-| RsyncUI | 2.7.5 | 2.7.6 |
-| mouseless | 0.4.2 | 0.4.3 |
-| CotEditor | 6.0.4 | 6.1.0 |
-| MongoDB Compass | 1.48.0 | 1.48.1 |
-| Termius | 9.32.3 | 9.32.4 |
-| DuckDuckGo | 1.162.2 | 1.163.0 |
-| kitty | 0.43.1 | 0.44.0 |
-| Karabiner Elements | 15.5.0 | 15.6.0 |
-| Insomnia | 11.6.2 | 12.0.0 |
-| Jellyfin | 10.11.1 | 10.11.2 |
-| 8x8_work | 8.27.2-4 | 8.28.2-3 |
-| Adobe Acrobat Pro DC | 25.001.20813 | 25.001.20841 |
+| Reqable | 2.33.12 | 3.0.20 |
+| Rive | 0.8.3711 | 0.8.3744 |
+| Hyperkey | 1.54 | 1.55 |
+| Apifox | 2.7.46 | 2.7.47 |
+| NVIDIA GeForce NOW | 2.0.78.158 | 2.0.79.164 |
+| QQ | 6.9.81 | 6.9.82 |
+| Windows App | 11.2.6 | 11.2.7 |
+| Snagit | 2025.3.2 | 2025.4.0 |
+| Dropbox | 235.4.5905 | 236.4.5918 |
+| Krisp | 3.6.8 | 3.7.4 |
+| Windsurf | 1.12.27 | 1.12.28 |
+| Apidog | 2.7.46 | 2.7.47 |
+| Adobe Acrobat Reader | 25.001.20756 | 25.001.20841 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -372,7 +372,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/acronis_true_image.png' width='32' height='32'> Acronis True Image | 29.2 |
 | <img src='Logos/adguard.png' width='32' height='32'> AdGuard | 2.17.3.2020 |
 | <img src='Logos/adobe_acrobat_pro_dc.png' width='32' height='32'> Adobe Acrobat Pro DC | 25.001.20841 |
-| <img src='Logos/adobe_acrobat_reader.png' width='32' height='32'> Adobe Acrobat Reader | 25.001.20756 |
+| <img src='Logos/adobe_acrobat_reader.png' width='32' height='32'> Adobe Acrobat Reader | 25.001.20841 |
 | <img src='Logos/adobe_creative_cloud.png' width='32' height='32'> Adobe Creative Cloud | 6.8.0.821 |
 | <img src='Logos/advanced_renamer.png' width='32' height='32'> Advanced Renamer | 4.18.1 |
 | <img src='Logos/airbuddy.png' width='32' height='32'> AirBuddy | 2.7.4 |
@@ -394,8 +394,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.5.1 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.46 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.46 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.47 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.47 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.0 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.119.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.4 |
@@ -420,7 +420,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.1.311 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 4.0.4 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.6 |
-| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 5.747 |
+| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 5.748 |
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 5.4 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.1.6.31527 |
 | <img src='Logos/binary_ninja.png' width='32' height='32'> Binary Ninja | 5.1.8104 |
@@ -467,7 +467,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/crashplan.png' width='32' height='32'> CrashPlan | 11.8.0 |
 | <img src='Logos/cryptomator.png' width='32' height='32'> Cryptomator | 1.17.1 |
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
-| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 2.0.43 |
+| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 2.0.54 |
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.2.4 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.32 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.9.1 |
@@ -488,11 +488,11 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/dockside.png' width='32' height='32'> Dockside | 1.9.54 |
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
 | <img src='Logos/doughnut.png' width='32' height='32'> Doughnut | 2.0.1 |
-| <img src='Logos/downie.png' width='32' height='32'> Downie | 4.11.4 |
+| <img src='Logos/downie.png' width='32' height='32'> Downie | 4.11.5 |
 | <img src='Logos/drawio_desktop.png' width='32' height='32'> draw.io Desktop | 28.2.8 |
 | <img src='Logos/drawbot.png' width='32' height='32'> DrawBot | 3.132 |
 | <img src='Logos/drivedx.png' width='32' height='32'> DriveDX | 1.12.1 |
-| <img src='Logos/dropbox.png' width='32' height='32'> Dropbox | 235.4.5905 |
+| <img src='Logos/dropbox.png' width='32' height='32'> Dropbox | 236.4.5918 |
 | <img src='Logos/dropdmg.png' width='32' height='32'> DropDMG | 3.7 |
 | <img src='Logos/dropshare.png' width='32' height='32'> Dropshare | 6.7 |
 | <img src='Logos/duckduckgo.png' width='32' height='32'> DuckDuckGo | 1.163.0 |
@@ -564,7 +564,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/huggingchat.png' width='32' height='32'> HuggingChat | 0.7.0 |
 | <img src='Logos/huly.png' width='32' height='32'> Huly | 0.7.266 |
 | <img src='Logos/hyper.png' width='32' height='32'> Hyper | 3.4.1 |
-| <img src='Logos/hyperkey.png' width='32' height='32'> Hyperkey | 1.54 |
+| <img src='Logos/hyperkey.png' width='32' height='32'> Hyperkey | 1.55 |
 | <img src='Logos/ice.png' width='32' height='32'> Ice | 0.11.12 |
 | <img src='Logos/iina.png' width='32' height='32'> IINA | 1.4.1 |
 | <img src='Logos/imazing.png' width='32' height='32'> iMazing | 3.4.0 |
@@ -596,7 +596,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/keyclu.png' width='32' height='32'> KeyClu | 0.30.2 |
 | <img src='Logos/kitty.png' width='32' height='32'> kitty | 0.44.0 |
 | <img src='Logos/klokki.png' width='32' height='32'> Klokki | 1.3.7 |
-| <img src='Logos/krisp.png' width='32' height='32'> Krisp | 3.6.8 |
+| <img src='Logos/krisp.png' width='32' height='32'> Krisp | 3.7.4 |
 | <img src='Logos/krita.png' width='32' height='32'> Krita | 5.2.13 |
 | <img src='Logos/langgraph_studio.png' width='32' height='32'> LangGraph Studio | 0.0.37 |
 | <img src='Logos/last_window_quits.png' width='32' height='32'> Last Window Quits | 1.1.4 |
@@ -633,7 +633,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/menubar_stats.png' width='32' height='32'> MenuBar Stats | 3.9 |
 | <img src='Logos/micro_snitch.png' width='32' height='32'> Micro Snitch | 1.6.1 |
 | <img src='Logos/microsoft_auto_update.png' width='32' height='32'> Microsoft Auto Update | 4.81.25101344 |
-| <img src='Logos/microsoft_azure_storage_explorer.png' width='32' height='32'> Microsoft Azure Storage Explorer | 1.40.0 |
+| <img src='Logos/microsoft_azure_storage_explorer.png' width='32' height='32'> Microsoft Azure Storage Explorer | 1.40.2 |
 | <img src='Logos/microsoft_edge.png' width='32' height='32'> Microsoft Edge | 142.0.3595.53 |
 | <img src='Logos/microsoft_office.png' width='32' height='32'> Microsoft Office | 16.102.25101223 |
 | <img src='Logos/microsoft_teams.png' width='32' height='32'> Microsoft Teams | 25275.2602.4021.9366 |
@@ -667,7 +667,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/neofinder.png' width='32' height='32'> NeoFinder | 9.0 |
 | <img src='Logos/netbeans_ide.png' width='32' height='32'> NetBeans IDE | 27 |
 | <img src='Logos/netiquette.png' width='32' height='32'> Netiquette | 2.3.0 |
-| <img src='Logos/netnewswire.png' width='32' height='32'> NetNewsWire | 6.1.10 |
+| <img src='Logos/netnewswire.png' width='32' height='32'> NetNewsWire | 6.2 |
 | <img src='Logos/nextcloud.png' width='32' height='32'> Nextcloud | 4.0.1 |
 | <img src='Logos/nitro_pdf_pro.png' width='32' height='32'> Nitro PDF Pro | 14.7 |
 | <img src='Logos/nomachine.png' width='32' height='32'> NoMachine | 9.2.18 |
@@ -685,7 +685,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/novabench.png' width='32' height='32'> Novabench | 5.6.0 |
 | <img src='Logos/nucleo.png' width='32' height='32'> Nucleo | 4.1.7 |
 | <img src='Logos/nudge.png' width='32' height='32'> Nudge | 2.0.12.81807 |
-| <img src='Logos/nvidia_geforce_now.png' width='32' height='32'> NVIDIA GeForce NOW | 2.0.78.158 |
+| <img src='Logos/nvidia_geforce_now.png' width='32' height='32'> NVIDIA GeForce NOW | 2.0.79.164 |
 | <img src='Logos/obs.png' width='32' height='32'> OBS | 32.0.2 |
 | <img src='Logos/obsidian.png' width='32' height='32'> Obsidian | 1.9.14 |
 | <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.98.1 |
@@ -715,7 +715,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/pastebot.png' width='32' height='32'> Pastebot | 2.4.6 |
 | <img src='Logos/pdf_expert.png' width='32' height='32'> PDF Expert | 3.10.23 |
 | <img src='Logos/pdf_pals.png' width='32' height='32'> PDF Pals | 1.9.0 |
-| <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.3.5 |
+| <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.3.6 |
 | <img src='Logos/pgadmin4.png' width='32' height='32'> pgAdmin4 | 9.9 |
 | <img src='Logos/philips_hue_sync.png' width='32' height='32'> Philips Hue Sync | 1.13.1.83 |
 | <img src='Logos/phoenix_slides.png' width='32' height='32'> Phoenix Slides | 1.5.9 |
@@ -744,7 +744,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/pulsar.png' width='32' height='32'> Pulsar | 1.130.1 |
 | <img src='Logos/qBittorrent.png' width='32' height='32'> qBittorrent | 5.0.5 |
 | <img src='Logos/qlab.png' width='32' height='32'> QLab | 5.5.6 |
-| <img src='Logos/qq.png' width='32' height='32'> QQ | 6.9.81 |
+| <img src='Logos/qq.png' width='32' height='32'> QQ | 6.9.82 |
 | <img src='Logos/qspace_pro.png' width='32' height='32'> QSpace Pro | 6.0.6 |
 | <img src='Logos/quarto.png' width='32' height='32'> quarto | 1.8.25 |
 | <img src='Logos/quicklook_video.png' width='32' height='32'> QuickLook Video | 2.21 |
@@ -762,11 +762,11 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/reflector.png' width='32' height='32'> Reflector | 4.1.2 |
 | <img src='Logos/remote_desktop_manager.png' width='32' height='32'> Remote Desktop Manager | 2025.3.6.9 |
 | <img src='Logos/remote_help.png' width='32' height='32'> Remote Help | 1.0.2509231 |
-| <img src='Logos/reqable.png' width='32' height='32'> Reqable | 2.33.12 |
+| <img src='Logos/reqable.png' width='32' height='32'> Reqable | 3.0.20 |
 | <img src='Logos/requestly.png' width='32' height='32'> Requestly | 25.10.29 |
 | <img src='Logos/retcon.png' width='32' height='32'> Retcon | 1.4.2 |
 | <img src='Logos/rhinoceros.png' width='32' height='32'> Rhinoceros | 8.20.25157.13002 |
-| <img src='Logos/rive.png' width='32' height='32'> Rive | 0.8.3711 |
+| <img src='Logos/rive.png' width='32' height='32'> Rive | 0.8.3744 |
 | <img src='Logos/rocket.png' width='32' height='32'> Rocket | 1.9.4 |
 | <img src='Logos/rocket_typist.png' width='32' height='32'> Rocket Typist | 3.2.5 |
 | <img src='Logos/rocketchat.png' width='32' height='32'> Rocket.Chat | 4.9.1 |
@@ -787,9 +787,9 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sketchup.png' width='32' height='32'> SketchUp | 2026.0.428.164 |
 | <img src='Logos/skim.png' width='32' height='32'> Skim | 1.7.11 |
 | <img src='Logos/slack.png' width='32' height='32'> Slack | 4.46.104 |
-| <img src='Logos/snagit.png' width='32' height='32'> Snagit | 2025.3.2 |
+| <img src='Logos/snagit.png' width='32' height='32'> Snagit | 2025.4.0 |
 | <img src='Logos/splashtop_business.png' width='32' height='32'> Splashtop Business | 3.8.0.0 |
-| <img src='Logos/splice.png' width='32' height='32'> Splice | 5.3.2 |
+| <img src='Logos/splice.png' width='32' height='32'> Splice | 5.4.1 |
 | <img src='Logos/spline.png' width='32' height='32'> Spline | 0.12.5 |
 | <img src='Logos/spotify.png' width='32' height='32'> Spotify | 1.2.75.510 |
 | <img src='Logos/sproutcube_shortcat.png' width='32' height='32'> Sproutcube Shortcat | 0.12.2 |
@@ -858,8 +858,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/wechat_for_mac.png' width='32' height='32'> WeChat for Mac | 4.1.2.17 |
 | <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 2.25.31.75 |
 | <img src='Logos/windowkeys.png' width='32' height='32'> WindowKeys | 3.0.1 |
-| <img src='Logos/windows_app.png' width='32' height='32'> Windows App | 11.2.6 |
-| <img src='Logos/windsurf.png' width='32' height='32'> Windsurf | 1.12.27 |
+| <img src='Logos/windows_app.png' width='32' height='32'> Windows App | 11.2.7 |
+| <img src='Logos/windsurf.png' width='32' height='32'> Windsurf | 1.12.28 |
 | <img src='Logos/winehqstable.png' width='32' height='32'> WineHQ-stable | 10.0 |
 | <img src='Logos/wire.png' width='32' height='32'> Wire | 3.40.5285 |
 | <img src='Logos/wireshark.png' width='32' height='32'> Wireshark | 4.4.7 |
