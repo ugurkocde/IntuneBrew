@@ -1,12 +1,12 @@
 {
   "name": "ProtonVPN",
   "description": "VPN client focusing on security",
-  "version": "6.0.0",
-  "url": "https://vpn.protondownload.com/download/macos/6.0.0/ProtonVPN_mac_v6.0.0.dmg",
+  "version": "6.1.0",
+  "url": "https://vpn.protondownload.com/download/macos/6.1.0/ProtonVPN_mac_v6.1.0.dmg",
   "bundleId": "ch.protonvpn.mac",
   "homepage": "https://protonvpn.com/",
-  "fileName": "ProtonVPN_mac_v6.0.0.dmg",
-  "sha": "12d0b4e36e8c8f60de91b303c8cee224aad02c8e2d434f3bde5a4902f0c7c69a",
+  "fileName": "ProtonVPN_mac_v6.1.0.dmg",
+  "sha": "bbf277d9e220a5092f17cee3e0b73720a4f46242474f1e096ae2fa4ec5e0fe5b",
   "changelog": "https://protonvpn.com/blog/macos-app-changelog/",
   "previous_version": "6.0.0"
 }

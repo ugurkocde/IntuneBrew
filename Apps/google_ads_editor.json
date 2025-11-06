@@ -1,12 +1,12 @@
 {
   "name": "Google Ads Editor",
   "description": "Managing your campaigns",
-  "version": "2.10",
+  "version": "2.11",
   "url": "https://dl.google.com/adwords_editor/Google_AdWords_Editor.dmg",
   "bundleId": "com.google.googleadseditorlauncher",
   "homepage": "https://ads.google.com/home/tools/ads-editor/",
   "fileName": "Google_AdWords_Editor.dmg",
-  "sha": "e218e47db59fbb3c11633e7ea8fc04d7a11e711c38b77edf7af30139150a95e5",
+  "sha": "2a9dc78f3c47326125b4929dd7ec24d6150244e1cf7c70e4b47ad60598ded685",
   "changelog": "https://support.google.com/google-ads/answer/2485631",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:20:20Z",
