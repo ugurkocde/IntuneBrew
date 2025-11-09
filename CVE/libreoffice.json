@@ -1,11 +1,11 @@
 {
   "app_name": "LibreOffice",
-  "last_updated": "2025-11-02",
+  "last_updated": "2025-11-09",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2025-2866",
       "published_date": "2025-04-27",
-      "last_modified_date": "2025-07-03",
+      "last_modified_date": "2025-11-03",
       "base_score": 5.5,
       "severity": "MEDIUM",
       "description": "Improper Verification of Cryptographic Signature vulnerability in LibreOffice allows PDF Signature Spoofing by Improper Validation.\n\n\n\n\nIn the affected versions of LibreOffice a flaw in the verification code for adbe.pkcs7.sha1 signatures could cause invalid signatures to be accepted as valid\n\n\n\n\nThis issue affects LibreOffice: from 24.8 before < 24.8.6, from 25.2 before < 25.2.2.",

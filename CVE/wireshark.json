@@ -1,6 +1,6 @@
 {
   "app_name": "Wireshark",
-  "last_updated": "2025-11-02",
+  "last_updated": "2025-11-09",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2025-9817",
@@ -32,7 +32,7 @@
     {
       "cve_id": "CVE-2024-8645",
       "published_date": "2024-09-10",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2025-11-03",
       "base_score": 5.5,
       "severity": "MEDIUM",
       "description": "SPRT dissector crash in Wireshark 4.2.0 to 4.0.5 and 4.0.0 to 4.0.15 allows denial of service via packet injection or crafted capture file",
@@ -41,7 +41,7 @@
     {
       "cve_id": "CVE-2024-8250",
       "published_date": "2024-08-29",
-      "last_modified_date": "2024-08-30",
+      "last_modified_date": "2025-11-03",
       "base_score": 7.8,
       "severity": "HIGH",
       "description": "NTLMSSP dissector crash in Wireshark 4.2.0 to 4.0.6 and 4.0.0 to 4.0.16 allows denial of service via packet injection or crafted capture file",
