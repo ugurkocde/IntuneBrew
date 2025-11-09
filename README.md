@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -244,20 +244,15 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-11-08 00:29 UTC*
+*Last checked: 2025-11-09 00:31 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Clop | 2.10.6 | 2.10.7 |
-| Rocket.Chat | 4.9.1 | 4.9.2 |
-| ChatWise | 0.9.48 | 0.9.49 |
-| Trae | 1.0.22672 | 1.0.22796 |
-| WeChat for Mac | 4.1.4.16 | 4.1.4.17 |
-| Bruno | 2.13.2 | 2.14.0 |
-| calibre | 8.13.0 | 8.14.0 |
-| DbGate | 6.6.9 | 6.6.11 |
+| Apifox | 2.7.47 | 2.7.48 |
+| Apidog | 2.7.47 | 2.7.48 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -392,8 +387,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.5.1 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.47 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.47 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.48 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.48 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.0 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.120.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.4 |
@@ -402,7 +397,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/asset_catalog_tinkerer.png' width='32' height='32'> Asset Catalog Tinkerer | 2.9 |
 | <img src='Logos/atlassian_sourcetree.png' width='32' height='32'> Atlassian SourceTree | 4.2.14 |
 | <img src='Logos/audacity.png' width='32' height='32'> Audacity | 3.7.5 |
-| <img src='Logos/audio_hijack.png' width='32' height='32'> Audio Hijack | 4.5.4 |
+| <img src='Logos/audio_hijack.png' width='32' height='32'> Audio Hijack | 4.5.5 |
 | <img src='Logos/autodesk_fusion_360.png' width='32' height='32'> Autodesk Fusion 360 | latest |
 | <img src='Logos/aws_client_vpn.png' width='32' height='32'> AWS Client VPN | 5.3.2 |
 | <img src='Logos/aws_corretto_jdk.png' width='32' height='32'> AWS Corretto JDK | 21.0.9.10.1 |
@@ -713,7 +708,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/pastebot.png' width='32' height='32'> Pastebot | 2.4.6 |
 | <img src='Logos/pdf_expert.png' width='32' height='32'> PDF Expert | 3.10.23 |
 | <img src='Logos/pdf_pals.png' width='32' height='32'> PDF Pals | 1.9.0 |
-| <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.3.7 |
+| <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.3.8 |
 | <img src='Logos/pgadmin4.png' width='32' height='32'> pgAdmin4 | 9.9 |
 | <img src='Logos/philips_hue_sync.png' width='32' height='32'> Philips Hue Sync | 1.13.1.83 |
 | <img src='Logos/phoenix_slides.png' width='32' height='32'> Phoenix Slides | 1.5.9 |
