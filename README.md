@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -245,14 +245,18 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-11-09 00:31 UTC*
+*Last checked: 2025-11-10 00:31 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Apifox | 2.7.47 | 2.7.48 |
-| Apidog | 2.7.47 | 2.7.48 |
+| ChatWise | 0.9.49 | 0.9.50 |
+| Typora | 1.12.2 | 1.12.3 |
+| macFUSE | 5.0.7 | 5.1.1 |
+| Stats | 2.11.58 | 2.11.59 |
+| Dataflare | 2.6.1 | 2.6.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -440,7 +444,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/canva.png' width='32' height='32'> Canva | 1.117.1 |
 | <img src='Logos/capcut.png' width='32' height='32'> CapCut | 3.3.0.1159 |
 | <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2025.301 |
-| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.9.49 |
+| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.9.50 |
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 142.0.7444.18 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20251027035315 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.08.10.31 |
@@ -464,7 +468,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.2.4 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.32 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.9.1 |
-| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.6.1 |
+| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.6.2 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.2.4 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.2.3 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
@@ -608,11 +612,11 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/löve.png' width='32' height='32'> LÖVE | 11.5 |
 | <img src='Logos/maccy.png' width='32' height='32'> Maccy | 2.5.1 |
 | <img src='Logos/macdown.png' width='32' height='32'> MacDown | 0.7.2 |
-| <img src='Logos/macfuse.png' width='32' height='32'> macFUSE | 5.0.7 |
+| <img src='Logos/macfuse.png' width='32' height='32'> macFUSE | 5.1.1 |
 | <img src='Logos/macpass.png' width='32' height='32'> MacPass | 0.8.1 |
 | <img src='Logos/macs_fan_control.png' width='32' height='32'> Macs Fan Control | 1.5.19 |
 | <img src='Logos/mactex.png' width='32' height='32'> MacTeX | 2025.0308 |
-| <img src='Logos/macwhisper.png' width='32' height='32'> MacWhisper | 13.2 |
+| <img src='Logos/macwhisper.png' width='32' height='32'> MacWhisper | 13.2.1 |
 | <img src='Logos/maestral.png' width='32' height='32'> Maestral | 1.9.5 |
 | <img src='Logos/magicquit.png' width='32' height='32'> MagicQuit | 1.4 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.18.2.3483 |
@@ -793,14 +797,14 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2025.10 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 9.2.2 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.58 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.59 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 4.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.7 |
 | <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.18.1 |
 | <img src='Logos/studio_3t.png' width='32' height='32'> Studio 3T | 2025.20.0 |
 | <img src='Logos/sublime_merge.png' width='32' height='32'> Sublime Merge | 2112 |
 | <img src='Logos/sublime_text.png' width='32' height='32'> Sublime Text | 4200 |
-| <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.43.2 |
+| <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.43.3 |
 | <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 2.6.6 |
 | <img src='Logos/suspicious_package.png' width='32' height='32'> Suspicious Package | 4.6 |
 | <img src='Logos/swift_shift.png' width='32' height='32'> Swift Shift | 0.27.1 |
@@ -831,7 +835,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.5.1 |
 | <img src='Logos/tunnelblick.png' width='32' height='32'> Tunnelblick | 8.0 |
 | <img src='Logos/twingate.png' width='32' height='32'> Twingate | 2025.288.20108 |
-| <img src='Logos/typora.png' width='32' height='32'> Typora | 1.12.2 |
+| <img src='Logos/typora.png' width='32' height='32'> Typora | 1.12.3 |
 | <img src='Logos/unnaturalscrollwheels.png' width='32' height='32'> UnnaturalScrollWheels | 1.3.0 |
 | <img src='Logos/updf.png' width='32' height='32'> UPDF | 2.0.10 |
 | <img src='Logos/upscayl.png' width='32' height='32'> Upscayl | 2.15.0 |
