@@ -1,12 +1,12 @@
 {
   "name": "Fathom",
   "description": "Record and transcribe video conferences",
-  "version": "1.42.0",
-  "url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-1.42.0.dmg",
+  "version": "1.42.1",
+  "url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-1.42.1.dmg",
   "bundleId": "Fathom Helper",
   "homepage": "https://fathom.video/",
-  "fileName": "Fathom-darwin-arm64-1.42.0.dmg",
-  "sha": "c63554be80133f348cce5540c61d2ee5e0dd57a8a602186dada7b9bc7a723f7b",
+  "fileName": "Fathom-darwin-arm64-1.42.1.dmg",
+  "sha": "c3947ba68a3cf1fa929e228d7f83f07f870855a06d6a08b3f2e841c22efd2a5c",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:58:34Z",
     "qa_result": "Installation successful and verified",
