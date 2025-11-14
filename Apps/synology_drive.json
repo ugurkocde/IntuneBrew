@@ -1,12 +1,12 @@
 {
   "name": "Synology Drive",
   "description": "Sync and backup service to Synology NAS drives",
-  "version": "4.0.0",
-  "url": "https://global.download.synology.com/download/Utility/SynologyDriveClient/4.0.0-17877/Mac/Installer/synology-drive-client-17877.dmg",
+  "version": "4.0.1",
+  "url": "https://global.download.synology.com/download/Utility/SynologyDriveClient/4.0.1-17885/Mac/Installer/synology-drive-client-17885.dmg",
   "bundleId": "com.synology.CloudStation",
   "homepage": "https://www.synology.com/",
-  "fileName": "synology-drive-client-17877.dmg",
-  "sha": "bc4e93bc54c0fd9d64053fe65f98aa11ebbdd004b1ff76df15dd1399199adf75",
+  "fileName": "synology-drive-client-17885.dmg",
+  "sha": "d2b2bbc38fd10afe2a9a5fbc5d83f02d09b11de9f7a41efddc2a380ef9c356e5",
   "changelog": "https://www.synology.com/en-us/releaseNote/SynologyDriveClient",
   "previous_version": "4.0.0"
 }

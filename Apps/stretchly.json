@@ -1,11 +1,11 @@
 {
   "name": "Stretchly",
   "description": "Break time reminder app",
-  "version": "1.18.1",
-  "url": "https://github.com/hovancik/stretchly/releases/download/v1.18.1/stretchly-1.18.1-arm64.dmg",
+  "version": "1.19.0",
+  "url": "https://github.com/hovancik/stretchly/releases/download/v1.19.0/stretchly-1.19.0-arm64.dmg",
   "bundleId": "net.hovancik.stretchly",
   "homepage": "https://hovancik.net/stretchly/",
-  "fileName": "stretchly-1.18.1-arm64.dmg",
-  "sha": "dd642f02fef1e9a9b73c83b941a91611cf5a467ce2a5173e48d8d4e46710e674",
+  "fileName": "stretchly-1.19.0-arm64.dmg",
+  "sha": "58891390454002d8f5ca60d1a87ac1a9e8d2afeaac6af4d0c3edf96614420fb4",
   "previous_version": "1.18.1"
 }
