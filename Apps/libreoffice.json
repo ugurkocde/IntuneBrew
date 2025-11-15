@@ -1,12 +1,12 @@
 {
   "name": "LibreOffice",
   "description": "Free cross-platform office suite, fresh version",
-  "version": "25.8.2",
-  "url": "https://download.documentfoundation.org/libreoffice/stable/25.8.2/mac/aarch64/LibreOffice_25.8.2_MacOS_aarch64.dmg",
+  "version": "25.8.3",
+  "url": "https://download.documentfoundation.org/libreoffice/stable/25.8.3/mac/aarch64/LibreOffice_25.8.3_MacOS_aarch64.dmg",
   "bundleId": "org.libreoffice.script",
   "homepage": "https://www.libreoffice.org/",
-  "fileName": "LibreOffice_25.8.2_MacOS_aarch64.dmg",
-  "sha": "f6e4881a787134ddb8621830a58dc127921a3b965e299cb6b8c7d6839cfa7b68",
+  "fileName": "LibreOffice_25.8.3_MacOS_aarch64.dmg",
+  "sha": "10b5b3ca63a16f3ea5ebc4b8936d57daee49a9a9d88599d659a0c54e05a9ddb7",
   "changelog": "https://www.libreoffice.org/download/release-notes/",
-  "previous_version": "25.8.2"
+  "previous_version": "25.8.3"
 }

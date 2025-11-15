@@ -1,12 +1,12 @@
 {
   "name": "BreakTimer",
   "description": "Tool to manage periodic breaks",
-  "version": "2.0.1",
-  "url": "https://github.com/tom-james-watson/breaktimer-app/releases/download/v2.0.1/BreakTimer.dmg",
+  "version": "2.0.3",
+  "url": "https://github.com/tom-james-watson/breaktimer-app/releases/download/v2.0.3/BreakTimer.dmg",
   "bundleId": "com.tomjwatson.breaktimer",
   "homepage": "https://breaktimer.app/",
   "fileName": "BreakTimer.dmg",
-  "sha": "a70282f36827975f5db754c68eb8bceee6f7af05ca8f92f380ca2fcb840c0736",
+  "sha": "2b5d3d3a8b9b85c5f41b4eb4384a341ecf6d7d2c0b377619e051a97ceb9ebfdd",
   "changelog": "https://github.com/tom-james-watson/breaktimer-app/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:45:14Z",
@@ -18,5 +18,5 @@
     "bundle_id_status": "verified",
     "installed_version": "1.3.2"
   },
-  "previous_version": "2.0.1"
+  "previous_version": "2.0.3"
 }
