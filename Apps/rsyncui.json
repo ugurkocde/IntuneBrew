@@ -1,11 +1,11 @@
 {
   "name": "RsyncUI",
   "description": "GUI for rsync",
-  "version": "2.7.6",
-  "url": "https://github.com/rsyncOSX/RsyncUI/releases/download/v2.7.6/RsyncUI.2.7.6.dmg",
+  "version": "2.7.8",
+  "url": "https://github.com/rsyncOSX/RsyncUI/releases/download/v2.7.8/RsyncUI.2.7.8.dmg",
   "bundleId": "no.blogspot.RsyncUI",
   "homepage": "https://github.com/rsyncOSX/RsyncUI",
-  "fileName": "RsyncUI.2.7.6.dmg",
-  "sha": "931f3699d93d52473333a492a04b7eb8cadee24e979620f1060e069565ac9881",
+  "fileName": "RsyncUI.2.7.8.dmg",
+  "sha": "262c94b0a889b41847155a4bf66aa51829c78bd7bb15d22dc04d3336be1e0050",
   "previous_version": "2.7.6"
 }

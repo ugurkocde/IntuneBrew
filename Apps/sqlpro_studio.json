@@ -1,12 +1,12 @@
 {
   "name": "SQLPro Studio",
   "description": "Database management tool",
-  "version": "2025.10",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_studio_2025.10.pkg",
+  "version": "2025.78",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_studio_2025.78.pkg",
   "bundleId": "com.hankinsoft.osx.sqlprostudio",
   "homepage": "https://www.sqlprostudio.com/",
-  "fileName": "sqlpro_studio_2025.10.pkg",
+  "fileName": "sqlpro_studio_2025.78.pkg",
   "type": "app",
-  "sha": "2e042da9a9e214cf14331992df0c551d31bb4cb4fc267265e6966295b601f1fe",
-  "previous_version": "2025.10"
+  "sha": "d8a1c89fc8eb14b743c0d42d32254d74e65d133d6c42b62f5fbfc8180795388f",
+  "previous_version": "2025.78"
 }

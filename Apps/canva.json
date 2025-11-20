@@ -1,12 +1,12 @@
 {
   "name": "Canva",
   "description": "Design tool",
-  "version": "1.118.0",
-  "url": "https://desktop-release.canva.com/Canva-1.118.0-universal.dmg",
+  "version": "1.119.0",
+  "url": "https://desktop-release.canva.com/Canva-1.119.0-universal.dmg",
   "bundleId": "com.canva.CanvaDesktop",
   "homepage": "https://www.canva.com/",
-  "fileName": "Canva-1.118.0-universal.dmg",
-  "sha": "5a87e1e681a2f6bedb473b9cc284f58ca1ec7100ec94b5659ceacb5909044791",
+  "fileName": "Canva-1.119.0-universal.dmg",
+  "sha": "b66f268478c5ed9b87f82cb71ee564d6dfdea2defce82a88664a65bd3fa8c02c",
   "changelog": "https://www.canva.com/help/canva-desktop-app/",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:25:36Z",
