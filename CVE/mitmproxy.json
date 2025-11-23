@@ -1,6 +1,6 @@
 {
   "app_name": "mitmproxy",
-  "last_updated": "2025-11-16",
+  "last_updated": "2025-11-23",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2022-24766",
