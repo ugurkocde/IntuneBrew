@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -255,19 +255,15 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-11-23 00:34 UTC*
+*Last checked: 2025-11-24 00:31 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Wave Terminal | 0.12.3 | 0.12.4 |
-| Slack | 4.47.59 | 4.47.65 |
-| AnyDesk | 9.5.1 | 9.6.0 |
-| OrbStack | 2.0.4 | 2.0.5 |
-| Windsurf | 1.12.33 | 1.12.35 |
-| Apidog | 2.7.50 | 2.7.51 |
-| Dataflare | 2.6.4 | 2.6.5 |
+| Hyperkey | 1.55 | 1.56 |
+| Zed | 0.213.3 | 0.213.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -375,7 +371,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/1password.png' width='32' height='32'> 1Password | 8.11.18 |
 | <img src='Logos/8x8_work.png' width='32' height='32'> 8x8_work | 8.28.2-3 |
 | <img src='Logos/a_better_finder_rename.png' width='32' height='32'> A Better Finder Rename | 12.19 |
-| <img src='Logos/abstract.png' width='32' height='32'> Abstract | 98.6.2 |
+| <img src='Logos/abstract.png' width='32' height='32'> Abstract | 98.6.3 |
 | <img src='Logos/acorn.png' width='32' height='32'> Acorn | 8.3.2 |
 | <img src='Logos/acronis_true_image.png' width='32' height='32'> Acronis True Image | 29.2 |
 | <img src='Logos/adguard.png' width='32' height='32'> AdGuard | 2.17.3.2020 |
@@ -475,7 +471,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/crashplan.png' width='32' height='32'> CrashPlan | 11.8.0 |
 | <img src='Logos/cryptomator.png' width='32' height='32'> Cryptomator | 1.18.0 |
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
-| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 2.1.20 |
+| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 2.1.25 |
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.2.4 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.32 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.9.1 |
@@ -572,7 +568,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/huggingchat.png' width='32' height='32'> HuggingChat | 0.7.0 |
 | <img src='Logos/huly.png' width='32' height='32'> Huly | 0.7.307 |
 | <img src='Logos/hyper.png' width='32' height='32'> Hyper | 3.4.1 |
-| <img src='Logos/hyperkey.png' width='32' height='32'> Hyperkey | 1.55 |
+| <img src='Logos/hyperkey.png' width='32' height='32'> Hyperkey | 1.56 |
 | <img src='Logos/ice.png' width='32' height='32'> Ice | 0.11.12 |
 | <img src='Logos/iina.png' width='32' height='32'> IINA | 1.4.1 |
 | <img src='Logos/imazing.png' width='32' height='32'> iMazing | 3.4.0 |
@@ -878,7 +874,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/xnapper.png' width='32' height='32'> Xnapper | 1.17.1 |
 | <img src='Logos/yaak.png' width='32' height='32'> Yaak | 2025.8.2 |
 | <img src='Logos/yubikey_manager.png' width='32' height='32'> Yubikey Manager | 1.2.5 |
-| <img src='Logos/zed.png' width='32' height='32'> Zed | 0.213.3 |
+| <img src='Logos/zed.png' width='32' height='32'> Zed | 0.213.4 |
 | <img src='Logos/zed_attack_proxy.png' width='32' height='32'> Zed Attack Proxy | 2.16.1 |
 | <img src='Logos/zen_browser.png' width='32' height='32'> Zen Browser | 1.12.3b |
 | <img src='Logos/zoom.png' width='32' height='32'> Zoom | 6.6.10.69071 |
