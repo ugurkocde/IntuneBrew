@@ -1,13 +1,13 @@
 {
   "name": "Postman",
   "description": "Collaboration platform for API development",
-  "version": "11.72.9",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/postman_11.72.9.pkg",
+  "version": "11.73.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/postman_11.73.3.pkg",
   "bundleId": "com.postmanlabs.mac",
   "homepage": "https://www.postman.com/",
-  "fileName": "postman_11.72.9.pkg",
+  "fileName": "postman_11.73.3.pkg",
   "type": "app",
-  "sha": "fdbe7a18fb3b3e039af9a6f65a4a3989b2977945630f407484c80a815116e6b4",
+  "sha": "b4a86fb9d4408d9721d696027f972e497902a6bca88cc23e82fbbb375bc2b5dd",
   "changelog": "https://www.postman.com/release-notes/postman-app/",
-  "previous_version": "11.72.9"
+  "previous_version": "11.73.3"
 }

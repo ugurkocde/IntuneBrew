@@ -5,9 +5,9 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/nota_gyazo_gif_10.3.2.pkg",
   "bundleId": "com.gyazo.pkg",
   "homepage": "https://gyazo.com/",
-  "fileName": "nota_gyazo_gif_10.3.2.pkg",
+  "fileName": "Gyazo-10.3.2.pkg",
   "type": "pkg_in_pkg",
   "changelog": "https://support.gyazo.com/hc/en-us/articles/204411615-Release-Notes",
   "sha": "5d258409f6e580d6fb8dd96414698930d64b97bf2deb30e239234d083e839ddf",
-  "previous_version": "10.3.1"
+  "previous_version": "10.3.2"
 }
