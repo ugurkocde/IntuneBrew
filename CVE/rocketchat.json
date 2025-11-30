@@ -1,6 +1,6 @@
 {
   "app_name": "Rocket.Chat",
-  "last_updated": "2025-11-23",
+  "last_updated": "2025-11-30",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2025-5892",

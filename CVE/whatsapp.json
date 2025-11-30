@@ -1,7 +1,16 @@
 {
   "app_name": "WhatsApp",
-  "last_updated": "2025-11-23",
+  "last_updated": "2025-11-30",
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2025-55179",
+      "published_date": "2025-11-18",
+      "last_modified_date": "2025-11-25",
+      "base_score": 5.4,
+      "severity": "MEDIUM",
+      "description": "Incomplete validation of rich response messages in WhatsApp for iOS prior to v2.25.23.73, WhatsApp Business for iOS v2.25.23.82, and WhatsApp for Mac v2.25.23.83 could have allowed a user to trigger processing of media content from an arbitrary URL on another user\u2019s device. We have not seen evidence of exploitation in the wild.",
+      "cpe_name": "cpe:2.3:a:whatsapp:whatsapp:2.25.21.73:*:*:*:*:iphone_os:*:*"
+    },
     {
       "cve_id": "CVE-2019-3568",
       "published_date": "2019-05-14",
