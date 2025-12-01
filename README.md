@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -262,15 +262,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-11-30 00:33 UTC*
+*Last checked: 2025-12-01 00:37 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| LibreWolf | 145.0.1 | 145.0.2 |
-| Zed | 0.214.6 | 0.214.7 |
-| Elephas | 11.3013 | 11.4010 |
+| Apifox | 2.7.52 | 2.7.53 |
+| DBeaver Community Edition | 25.2.5 | 25.3.0 |
+| Apidog | 2.7.52 | 2.7.53 |
+| Nextcloud | 4.0.1 | 4.0.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -405,8 +407,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.6.0 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.52 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.52 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.53 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.53 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.0 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.122.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.4 |
@@ -486,7 +488,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.2.5 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.2.3 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.2.5 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.3.0 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.7.1 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.11.13142470 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
@@ -679,7 +681,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/netbeans_ide.png' width='32' height='32'> NetBeans IDE | 27 |
 | <img src='Logos/netiquette.png' width='32' height='32'> Netiquette | 2.3.0 |
 | <img src='Logos/netnewswire.png' width='32' height='32'> NetNewsWire | 6.2 |
-| <img src='Logos/nextcloud.png' width='32' height='32'> Nextcloud | 4.0.1 |
+| <img src='Logos/nextcloud.png' width='32' height='32'> Nextcloud | 4.0.2 |
 | <img src='Logos/nitro_pdf_pro.png' width='32' height='32'> Nitro PDF Pro | 14.7 |
 | <img src='Logos/nomachine.png' width='32' height='32'> NoMachine | 9.2.18 |
 | <img src='Logos/nordlayer.png' width='32' height='32'> NordLayer | 3.7.1 |
