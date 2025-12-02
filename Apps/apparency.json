@@ -1,12 +1,12 @@
 {
   "name": "Apparency",
   "description": "Inspect application bundles",
-  "version": "3.0",
-  "url": "https://www.mothersruin.com/software/archives/Apparency-3.0.dmg",
+  "version": "3.1",
+  "url": "https://www.mothersruin.com/software/archives/Apparency-3.1.dmg",
   "bundleId": "com.mothersruin.Apparency",
   "homepage": "https://www.mothersruin.com/software/Apparency/",
-  "fileName": "Apparency-3.0.dmg",
-  "sha": "15fef26504c52dd047fb26c8328b6bbf079c7ef93ebb63aa8858059faef13490",
+  "fileName": "Apparency-3.1.dmg",
+  "sha": "41d64d14a07bf7533da6f77e082b7b046e006659cf6c1b05db60f85de08747ea",
   "changelog": "https://www.mothersruin.com/software/Apparency/updates.html",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:33:01Z",

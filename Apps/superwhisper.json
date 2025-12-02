@@ -1,12 +1,12 @@
 {
   "name": "superwhisper",
   "description": "Dictation tool including LLM reformatting",
-  "version": "2.7.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/superwhisper_2.7.0.pkg",
+  "version": "2.7.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/superwhisper_2.7.1.pkg",
   "bundleId": "com.superduper.superwhisper",
   "homepage": "https://superwhisper.com/",
-  "fileName": "superwhisper_2.7.0.pkg",
+  "fileName": "superwhisper_2.7.1.pkg",
   "type": "app",
-  "sha": "f8bd6554f4bde811cba8e5e115e54ee912be5a2950f7491c2dbfaafc043cb846",
-  "previous_version": "2.7.0"
+  "sha": "bd4f02439f11d8ee0b21dc21f1d4496e99a843d99ff1d984cdc3b777c58bbd24",
+  "previous_version": "2.7.1"
 }
