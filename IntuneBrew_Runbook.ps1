@@ -16,9 +16,10 @@
     - Detailed logging for troubleshooting
     - Support for both .pkg and .dmg file formats
     - Automatic logo management for deployed applications
+    - Support for multiple Microsoft cloud environments (Global, USGov, USGovDoD, China)
 
 .NOTES
-    Version:        0.1
+    Version:        0.2
     Author:         Ugur Koc
     Creation Date:  2025-02-24
     Repository:     https://github.com/ugurkocde/IntuneBrew
@@ -35,6 +36,22 @@
         * DeviceManagementApps.ReadWrite.All
     - PowerShell 7.0 or later
     - Microsoft.Graph.Authentication module
+
+.AUTOMATION ACCOUNT VARIABLES
+    Required:
+    - AuthenticationMethod: "ClientSecret", "SystemManagedIdentity", or "UserAssignedManagedIdentity"
+
+    Optional:
+    - Environment: "Global" (default), "USGov", "USGovDoD", or "China"
+    - CopyAssignments: $true or $false (requires Group.Read.All permission if enabled)
+
+    For ClientSecret authentication:
+    - TenantId: Your Azure AD tenant ID
+    - AppId: Your application (client) ID
+    - ClientSecret: Your client secret value
+
+    For UserAssignedManagedIdentity:
+    - AppId: The client ID of the user-assigned managed identity
 #>
 # Disable verbose output to avoid cluttering the Azure Automation Runbook logs
 $VerbosePreference = "SilentlyContinue"
@@ -61,7 +78,57 @@ function Write-Log {
     }
 }
 
-Write-Log "Starting IntuneBrew Automation Runbook - Version 0.1"
+Write-Log "Starting IntuneBrew Automation Runbook - Version 0.2"
+
+# Get the cloud environment from Automation Account variable (defaults to Global if not set)
+$Environment = Get-AutomationVariable -Name 'Environment' -ErrorAction SilentlyContinue
+if ([string]::IsNullOrWhiteSpace($Environment)) {
+    $Environment = 'Global'
+    Write-Log "Environment variable not set, defaulting to Global cloud"
+}
+else {
+    Write-Log "Using $Environment cloud environment"
+}
+
+# Helper function to get environment-specific URLs
+function Get-EnvironmentUrls {
+    param([string]$CloudEnvironment)
+
+    switch ($CloudEnvironment) {
+        'USGov' {
+            return @{
+                GraphBaseUrl = 'https://graph.microsoft.us'
+                IntunePortalDomain = 'microsoft.us'
+            }
+        }
+        'USGovDoD' {
+            return @{
+                GraphBaseUrl = 'https://dod-graph.microsoft.us'
+                IntunePortalDomain = 'microsoft.us'
+            }
+        }
+        'China' {
+            return @{
+                GraphBaseUrl = 'https://microsoftgraph.chinacloudapi.cn'
+                IntunePortalDomain = 'azure.cn'
+            }
+        }
+        default { # Global
+            return @{
+                GraphBaseUrl = 'https://graph.microsoft.com'
+                IntunePortalDomain = 'microsoft.com'
+            }
+        }
+    }
+}
+
+# Get environment-specific URLs
+$envUrls = Get-EnvironmentUrls -CloudEnvironment $Environment
+$graphBaseUrl = $envUrls.GraphBaseUrl
+$intunePortalDomain = $envUrls.IntunePortalDomain
+
+Write-Log "Graph API Base URL: $graphBaseUrl"
+Write-Log "Intune Portal Domain: $intunePortalDomain"
 
 # Authentication START
 
@@ -106,7 +173,7 @@ if ($AuthenticationMethod -eq "ClientSecret") {
     try {
         $SecureClientSecret = ConvertTo-SecureString -String $clientSecret -AsPlainText -Force
         $ClientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $appId, $SecureClientSecret
-        Connect-MgGraph -TenantId $tenantId -ClientSecretCredential $ClientSecretCredential -NoWelcome -ErrorAction Stop
+        Connect-MgGraph -TenantId $tenantId -ClientSecretCredential $ClientSecretCredential -Environment $Environment -NoWelcome -ErrorAction Stop
         Write-Log "Successfully connected to Microsoft Graph using client secret authentication"
     }
     catch {
@@ -120,7 +187,7 @@ elseif ($AuthenticationMethod -eq "SystemManagedIdentity") {
     
     # Authenticate using System Managed Identity from Automation Account
     try {
-        Connect-MgGraph -Identity -NoWelcome -ErrorAction Stop
+        Connect-MgGraph -Identity -Environment $Environment -NoWelcome -ErrorAction Stop
         Write-Log "Successfully connected to Microsoft Graph using System Managed Identity"
     }
     catch {
@@ -136,7 +203,7 @@ elseif ($AuthenticationMethod -eq "UserAssignedManagedIdentity") {
     # Authenticate using System Managed Identity from Automation Account
     try {
         $appId = Get-AutomationVariable -Name 'AppId'
-        Connect-MgGraph -Identity -ClientId $appid -NoWelcome -ErrorAction Stop
+        Connect-MgGraph -Identity -ClientId $appid -Environment $Environment -NoWelcome -ErrorAction Stop
         Write-Log "Successfully connected to Microsoft Graph using User Assigned Managed Identity"
     }
     catch {
@@ -335,7 +402,7 @@ function Get-IntuneAppAssignments {
     }
 
     Write-Log "`n🔍 Fetching assignments for existing app (ID: $AppId)..." -Type "Verbose"
-    $assignmentsUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$AppId/assignments"
+    $assignmentsUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps/$AppId/assignments"
     
     try {
         # Use Invoke-MgGraphRequest for consistency and authentication handling
@@ -377,7 +444,7 @@ function Set-IntuneAppAssignments {
     }
 
     Write-Log "Applying assignments to new app (ID: $NewAppId)..." -Type "Info"
-    $assignmentsUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$NewAppId/assignments"
+    $assignmentsUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps/$NewAppId/assignments"
     $appliedCount = 0
     $failedCount = 0
 
@@ -486,7 +553,7 @@ function Remove-IntuneAppAssignments {
             continue
         }
 
-        $removeUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$OldAppId/assignments/$assignmentId"
+        $removeUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps/$OldAppId/assignments/$assignmentId"
     
         # Determine target description for logging
         $targetDescription = "assignment ID: $assignmentId"
@@ -569,7 +636,7 @@ function Add-IntuneAppLogo {
         }
 
         # Update the app with the logo
-        $logoUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$appId"
+        $logoUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps/$appId"
         $updateBody = @{
             "@odata.type" = "#microsoft.graph.$appType"
             "largeIcon"   = $logoBody
@@ -741,7 +808,7 @@ function Get-IntuneApps {
         Write-Log "[$currentApp/$totalApps] Checking: $appName"
 
         # Fetch Intune app info
-        $intuneQueryUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp')) and displayName eq '$appName'&`$orderby=createdDateTime desc"
+        $intuneQueryUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp')) and displayName eq '$appName'&`$orderby=createdDateTime desc"
 
         try {
             $response = Invoke-MgGraphRequest -Uri $intuneQueryUri -Method Get
@@ -917,7 +984,7 @@ if ($copyAssignments -and $updatableApps.Length -gt 0) {
                         $displayType = "Group"
                         if ($groupId) {
                             try {
-                                $groupUri = "https://graph.microsoft.com/v1.0/groups/$groupId`?`$select=displayName"
+                                $groupUri = "$graphBaseUrl/v1.0/groups/$groupId`?`$select=displayName"
                                 $groupInfo = Invoke-MgGraphRequest -Method GET -Uri $groupUri
                                 if ($groupInfo.displayName) { $targetDetail = "('$($groupInfo.displayName)')" }
                                 else { $targetDetail = "(ID: $groupId)" }
@@ -1076,12 +1143,12 @@ foreach ($app in $appsToUpload) {
             )
         }
 
-        $createAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps"
+        $createAppUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps"
         $newApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($newAppPayload | ConvertTo-Json -Depth 10)
         Write-Log "App created successfully (ID: $($newApp.id))"
 
         Write-Log "🔒 Processing content version..."
-        $contentVersionUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions"
+        $contentVersionUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions"
         $contentVersion = Invoke-MgGraphRequest -Method POST -Uri $contentVersionUri -Body "{}"
         Write-Log "Content version created (ID: $($contentVersion.id))"
 
@@ -1104,7 +1171,7 @@ foreach ($app in $appsToUpload) {
             }
 
             Write-Log "Creating content file entry in Intune..."
-            $contentFileUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files"  
+            $contentFileUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files"  
             $contentFile = Invoke-MgGraphRequest -Method POST -Uri $contentFileUri -Body ($fileContent | ConvertTo-Json)
             Write-Log "Content file entry created successfully"
 
@@ -1116,7 +1183,7 @@ foreach ($app in $appsToUpload) {
                 $waitAttempt++
                 Write-Log "Checking upload state (attempt $waitAttempt of $maxWaitAttempts)..."
                 
-                $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
+                $fileStatusUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
                 $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
                 
                 if ($waitAttempt -eq $maxWaitAttempts -and $fileStatus.uploadState -ne "azureStorageUriRequestSuccess") {
@@ -1137,14 +1204,14 @@ foreach ($app in $appsToUpload) {
         $commitData = @{
             fileEncryptionInfo = $fileEncryptionInfo
         }
-        $commitUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)/commit"
+        $commitUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)/commit"
         Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
 
         $retryCount = 0
         $maxRetries = 10
         do {
             Start-Sleep -Seconds 10
-            $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
+            $fileStatusUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
             $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
             if ($fileStatus.uploadState -eq "commitFileFailed") {
                 $commitResponse = Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
@@ -1160,7 +1227,7 @@ foreach ($app in $appsToUpload) {
             exit 1
         }
 
-        $updateAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)"
+        $updateAppUri = "$graphBaseUrl/beta/deviceAppManagement/mobileApps/$($newApp.id)"
         $updateData = @{
             "@odata.type"           = "#microsoft.graph.$appType"
             committedContentVersion = $contentVersion.id
@@ -1215,7 +1282,7 @@ foreach ($app in $appsToUpload) {
         Write-Log "✅ Cleanup complete" -Type "Info"
 
         Write-Log "Successfully processed $($appInfo.name)"
-        Write-Log "App is now available in Intune Portal: https://intune.microsoft.com/#view/Microsoft_Intune_Apps/SettingsMenu/~/0/appId/$($newApp.id)"
+        Write-Log "App is now available in Intune Portal: https://intune.$intunePortalDomain/#view/Microsoft_Intune_Apps/SettingsMenu/~/0/appId/$($newApp.id)"
         Write-Log " " -Type "Info"
     }
     catch {
