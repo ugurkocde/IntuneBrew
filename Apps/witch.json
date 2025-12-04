@@ -1,11 +1,11 @@
 {
   "name": "Witch",
   "description": "Switch apps, windows, or tabs",
-  "version": "4.6.2",
-  "url": "https://manytricks.com/download/_do_not_hotlink_/witch462.dmg",
+  "version": "4.7.0",
+  "url": "https://manytricks.com/download/_do_not_hotlink_/witch470.dmg",
   "bundleId": "com.manytricks.witchdaemon",
   "homepage": "https://manytricks.com/witch/",
-  "fileName": "witch462.dmg",
-  "sha": "c9d54299613aefbf737e6d47bc9dfeac75a95172cf6350952986532fd55a3905",
+  "fileName": "witch470.dmg",
+  "sha": "aad6812460df8c670999691e244b111bfad19c2544180093ecf2019ca45cb7fe",
   "previous_version": "4.6.2"
 }
