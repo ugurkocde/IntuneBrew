@@ -1,5 +1,5 @@
 <#PSScriptInfo
-.VERSION 1.0.1
+.VERSION 1.0.2
 .GUID 53ddb976-1bc1-4009-bfa0-1e2a51477e4d
 .AUTHOR ugurk
 .COMPANYNAME
@@ -12,6 +12,7 @@
 .REQUIREDSCRIPTS
 .EXTERNALSCRIPTDEPENDENCIES
 .RELEASENOTES
+Version 1.0.2: Fixed issue with Get-FormattedAppName not being found when uploading a local file.
 Version 1.0.1: Fixed issue with missing SHA256 hashes for direct PKG downloads. Updated hash validation to allow user to proceed with warning when hash is missing (common with PKG type apps). Fixes issue #106.
 Version 1.0.0: Major update with 5 new features: Search functionality with fuzzy matching (-Search), Preserve assignments when updating apps (-PreserveAssignments), Bulk upload by app numbers (-BulkUpload), Ignore app version checking (-IgnoreAppVersion), Support for local JSON directory (-LocalJsonDirectory). Fixes issue #100, #74, #16, #66, #5.
 Version 0.9.0: Added -ConfigFile parameter for non-interactive authentication (enables macOS support). Added -UseExistingIntuneApp parameter to update existing apps instead of creating duplicates.
@@ -218,6 +219,24 @@ $requiredPermissions = @(
     "DeviceManagementApps.ReadWrite.All", # Read and write access to apps in Intune
     "Group.Read.All" # Read group names for assignment
 )
+
+# Helper function to format the application name with prefix and suffix
+function Get-FormattedAppName {
+    param(
+        [string]$BaseName,
+        [string]$Prefix,
+        [string]$Suffix
+    )
+
+    $formattedName = $BaseName
+    if (-not [string]::IsNullOrEmpty($Prefix)) {
+        $formattedName = $Prefix + $formattedName
+    }
+    if (-not [string]::IsNullOrEmpty($Suffix)) {
+        $formattedName = $formattedName + $Suffix
+    }
+    return $formattedName
+}
 
 # Function to validate JSON configuration file
 function Test-AuthConfig {
@@ -1623,23 +1642,6 @@ function Format-TimeSpanForSummary {
     }
 }
 
-# Helper function to format the application name with prefix and suffix
-function Get-FormattedAppName {
-    param(
-        [string]$BaseName,
-        [string]$Prefix,
-        [string]$Suffix
-    )
-
-    $formattedName = $BaseName
-    if (-not [string]::IsNullOrEmpty($Prefix)) {
-        $formattedName = $Prefix + $formattedName
-    }
-    if (-not [string]::IsNullOrEmpty($Suffix)) {
-        $formattedName = $formattedName + $Suffix
-    }
-    return $formattedName
-}
 # Retrieves and compares app versions between Intune and GitHub
 function Get-IntuneApp {
     $intuneApps = @()
@@ -2429,5 +2431,3 @@ if ($updateSummaries.Count -gt 0) {
 Write-Host "`n🎉 All operations completed successfully!" -ForegroundColor Green
 Disconnect-MgGraph > $null 2>&1
 Write-Host "Disconnected from Microsoft Graph." -ForegroundColor Green
-
-
