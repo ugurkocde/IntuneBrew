@@ -1,11 +1,11 @@
 {
   "name": "Middle",
   "description": "Add middle click for Trackpad and Magic Mouse",
-  "version": "1.11",
-  "url": "https://middleclick.app/downloads/Middle1.11.dmg",
+  "version": "1.12",
+  "url": "https://middleclick.app/downloads/Middle1.12.dmg",
   "bundleId": "com.knollsoft.Middle",
   "homepage": "https://middleclick.app/",
-  "fileName": "Middle1.11.dmg",
-  "sha": "89b42318bb284c27a41b2ac5580b6705ecbd1d4ea5714794d2b27c32a703cb9d",
+  "fileName": "Middle1.12.dmg",
+  "sha": "753b3df451368e9a40788f799d700f1b87e1f9ebfca3052ca2c10c9275362275",
   "previous_version": "1.11"
 }
