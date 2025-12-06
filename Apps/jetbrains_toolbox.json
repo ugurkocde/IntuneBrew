@@ -1,12 +1,12 @@
 {
   "name": "JetBrains Toolbox",
   "description": "JetBrains tools manager",
-  "version": "3.1.1",
-  "url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.1.1.64142-arm64.dmg",
+  "version": "3.1.2",
+  "url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.1.2.64642-arm64.dmg",
   "bundleId": "com.jetbrains.toolbox",
   "homepage": "https://www.jetbrains.com/toolbox-app/",
-  "fileName": "jetbrains-toolbox-3.1.1.64142-arm64.dmg",
-  "sha": "4ff48b38e9cefb334ccf4cfd5708d88ada884da6fb47d6f06049b5a260315996",
+  "fileName": "jetbrains-toolbox-3.1.2.64642-arm64.dmg",
+  "sha": "042aaaa3eecae7b67284dbfa0a26bd687b30ea0153c5c1670aa3b9cc0bc6c07e",
   "changelog": "https://www.jetbrains.com/toolbox-app/whatsnew/",
   "previous_version": "3.1.1"
 }
