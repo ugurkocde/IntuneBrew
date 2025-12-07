@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -268,21 +268,19 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-12-06 00:29 UTC*
+*Last checked: 2025-12-07 00:33 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Binary Ninja | 5.2.8614 | 5.2.8722 |
-| Ente Auth | 4.4.10 | 4.4.12 |
-| RsyncUI | 2.8.0 | 2.8.1 |
-| DockDoor | 1.26 | 1.27 |
-| Bruno | 2.15.0 | 2.15.1 |
-| Microsoft Edge | 142.0.3595.94 | 143.0.3650.66 |
-| calibre | 8.15.0 | 8.16.1 |
-| Opera | 125.0.5729.12 | 125.0.5729.15 |
-| JetBrains Toolbox | 3.1.1 | 3.1.2 |
+| MySQL Workbench | 8.0.44 | 8.0.45 |
+| Rocket.Chat | 4.9.2 | 4.10.0 |
+| calibre | 8.16.1 | 8.16.2 |
+| OBS | 32.0.2 | 32.0.3 |
+| Dataflare | 2.7.1 | 2.7.2 |
+| Tableau Desktop | 2025.2.4 | 2025.3.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -464,7 +462,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/busycal.png' width='32' height='32'> BusyCal | 2025.4.2 |
 | <img src='Logos/busycontacts.png' width='32' height='32'> BusyContacts | 2025.4.3 |
 | <img src='Logos/caffeine.png' width='32' height='32'> Caffeine | 1.6.1 |
-| <img src='Logos/calibre.png' width='32' height='32'> calibre | 8.16.1 |
+| <img src='Logos/calibre.png' width='32' height='32'> calibre | 8.16.2 |
 | <img src='Logos/calmly_writer.png' width='32' height='32'> Calmly Writer | 2.0.61 |
 | <img src='Logos/camtasia.png' width='32' height='32'> Camtasia | 26.0.2 |
 | <img src='Logos/canva.png' width='32' height='32'> Canva | 1.119.0 |
@@ -494,7 +492,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.3.0 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.32 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.10.0 |
-| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.7.1 |
+| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.7.2 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.3 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.2.3 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
@@ -685,7 +683,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/multi.png' width='32' height='32'> Multi | 0.538.2 |
 | <img src='Logos/multiviewer_for_f1.png' width='32' height='32'> MultiViewer for F1 | 1.43.2 |
 | <img src='Logos/mural.png' width='32' height='32'> MURAL | 3.0.4 |
-| <img src='Logos/mysql_workbench.png' width='32' height='32'> MySQL Workbench | 8.0.44 |
+| <img src='Logos/mysql_workbench.png' width='32' height='32'> MySQL Workbench | 8.0.45 |
 | <img src='Logos/name_mangler.png' width='32' height='32'> Name Mangler | 3.9.3 |
 | <img src='Logos/neofinder.png' width='32' height='32'> NeoFinder | 9.1 |
 | <img src='Logos/netbeans_ide.png' width='32' height='32'> NetBeans IDE | 27 |
@@ -709,7 +707,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/nucleo.png' width='32' height='32'> Nucleo | 4.1.8 |
 | <img src='Logos/nudge.png' width='32' height='32'> Nudge | 2.0.12.81807 |
 | <img src='Logos/nvidia_geforce_now.png' width='32' height='32'> NVIDIA GeForce NOW | 2.0.79.164 |
-| <img src='Logos/obs.png' width='32' height='32'> OBS | 32.0.2 |
+| <img src='Logos/obs.png' width='32' height='32'> OBS | 32.0.3 |
 | <img src='Logos/obsidian.png' width='32' height='32'> Obsidian | 1.10.6 |
 | <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.99.3 |
 | <img src='Logos/ollama.png' width='32' height='32'> Ollama | 0.9.2 |
@@ -792,7 +790,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rive.png' width='32' height='32'> Rive | 0.8.3877 |
 | <img src='Logos/rocket.png' width='32' height='32'> Rocket | 1.9.4 |
 | <img src='Logos/rocket_typist.png' width='32' height='32'> Rocket Typist | 3.2.5 |
-| <img src='Logos/rocketchat.png' width='32' height='32'> Rocket.Chat | 4.9.2 |
+| <img src='Logos/rocketchat.png' width='32' height='32'> Rocket.Chat | 4.10.0 |
 | <img src='Logos/rode_central.png' width='32' height='32'> Rode Central | 2.0.108 |
 | <img src='Logos/rode_connect.png' width='32' height='32'> Rode Connect | 1.3.44 |
 | <img src='Logos/rotato.png' width='32' height='32'> Rotato | 154 |
@@ -837,7 +835,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sync.png' width='32' height='32'> Sync | 2.2.53 |
 | <img src='Logos/syncovery.png' width='32' height='32'> Syncovery | 11.10.4 |
 | <img src='Logos/synology_drive.png' width='32' height='32'> Synology Drive | 4.0.1 |
-| <img src='Logos/tableau_desktop.png' width='32' height='32'> Tableau Desktop | 2025.2.4 |
+| <img src='Logos/tableau_desktop.png' width='32' height='32'> Tableau Desktop | 2025.3.0 |
 | <img src='Logos/tabtab.png' width='32' height='32'> TabTab | 2.0.4 |
 | <img src='Logos/tailscale.png' width='32' height='32'> Tailscale | 1.84.1 |
 | <img src='Logos/taskbar.png' width='32' height='32'> Taskbar | 1.5.2.1 |

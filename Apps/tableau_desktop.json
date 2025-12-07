@@ -1,13 +1,13 @@
 {
   "name": "Tableau Desktop",
   "description": "Data visualization software",
-  "version": "2025.2.4",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/tableau_desktop_2025.2.4.pkg",
+  "version": "2025.3.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tableau_desktop_2025.3.0.pkg",
   "bundleId": "com.tableausoftware.tableaudesktop",
   "homepage": "https://www.tableau.com/products/desktop",
-  "fileName": "TableauDesktop-2025-2-4-arm64.dmg",
+  "fileName": "tableau_desktop_2025.3.0.pkg",
   "type": "pkg_in_dmg",
-  "sha": "05ad176a53f0a4b067f784fc097ef64bec97057feb66944a0d730668d6bb2f4b",
+  "sha": "762166386c83295c2f24c85ec28a0168601a23723bb4c06c91ee14fa7a106cb6",
   "changelog": "https://www.tableau.com/support/releases/desktop",
   "previous_version": "2025.2.4"
 }
