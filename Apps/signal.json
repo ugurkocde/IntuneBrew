@@ -1,12 +1,12 @@
 {
   "name": "Signal",
   "description": "Instant messaging application focusing on security",
-  "version": "7.80.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/signal_7.80.0.pkg",
+  "version": "7.81.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/signal_7.81.0.pkg",
   "bundleId": "org.whispersystems.signal-desktop",
   "homepage": "https://signal.org/",
-  "fileName": "signal_7.80.0.pkg",
+  "fileName": "signal_7.81.0.pkg",
   "type": "app",
-  "sha": "1f8fad72a97fdb451beea5491ac4e95ed70cbf9ba6c240cfba83e180105604e6",
-  "previous_version": "7.80.0"
+  "sha": "038083673567278f62ad95191e155ef06dd0feeffd51bf937921a6af00c9d7cc",
+  "previous_version": "7.81.0"
 }

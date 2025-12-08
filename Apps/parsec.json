@@ -1,12 +1,12 @@
 {
   "name": "Parsec",
   "description": "Remote desktop",
-  "version": "150-100e",
+  "version": "150-101a",
   "url": "https://builds.parsec.app/package/parsec-macos.pkg",
   "bundleId": "tv.parsec.www",
   "homepage": "https://parsec.app/",
   "fileName": "parsec-macos.pkg",
   "type": "pkg",
-  "sha": "9e07bc2bc25a2de58086fc9807c560b375fe09af505c94f73ec2b3f212cae528",
-  "previous_version": "150-100e"
+  "sha": "f15bc65b0b74a4b0bada478825c9f6909c6f58b3a448fb277f14a4b32dae5700",
+  "previous_version": "150-101a"
 }

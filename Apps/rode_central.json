@@ -1,12 +1,12 @@
 {
   "name": "Rode Central",
   "description": "RØDE companion app",
-  "version": "2.0.106",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/rode_central_2.0.106.pkg",
+  "version": "2.0.108",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/rode_central_2.0.108.pkg",
   "bundleId": "com.rodecentral.installer",
   "homepage": "https://rode.com/en/apps/rode-central",
-  "fileName": "rode_central_2.0.106.pkg",
+  "fileName": "rode_central_2.0.108.pkg",
   "type": "app",
-  "sha": "9dae6750b365ac95ab91815b3e8797d869933af2a11b4fc9c613d96b0c4fea4b",
-  "previous_version": "2.0.106"
+  "sha": "95df38b668135320cce552badb871ffdaa812fcb1b1d8f4466e1bb9dda32713b",
+  "previous_version": "2.0.108"
 }

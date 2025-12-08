@@ -1,12 +1,12 @@
 {
   "name": "Plex",
   "description": "Home media player",
-  "version": "1.110.0.351",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/plex_1.110.0.351.pkg",
+  "version": "1.112.0.359",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/plex_1.112.0.359.pkg",
   "bundleId": "tv.plex.desktop",
   "homepage": "https://www.plex.tv/",
-  "fileName": "plex_1.110.0.351.pkg",
+  "fileName": "plex_1.112.0.359.pkg",
   "type": "app",
-  "sha": "313171cf42f06857d94a845e152acb93b3e9a0058f504cf1f9f9f87633d1aa8a",
-  "previous_version": "1.110.0.351"
+  "sha": "4f09252ee9bb93f59cc8f1aa989522c264ed53df23439b0819f0c6a76c19b75f",
+  "previous_version": "1.112.0.359"
 }

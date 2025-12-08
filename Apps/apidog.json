@@ -1,12 +1,12 @@
 {
   "name": "Apidog",
   "description": "API development platform",
-  "version": "2.7.51",
-  "url": "https://file-assets.apidog.com/download/2.7.51/legacy-Apidog-macOS-arm64-2.7.51.dmg",
+  "version": "2.7.54",
+  "url": "https://file-assets.apidog.com/download/2.7.54/legacy-Apidog-macOS-arm64-2.7.54.dmg",
   "bundleId": "com.apidog.app",
   "homepage": "https://apidog.com/",
-  "fileName": "legacy-Apidog-macOS-arm64-2.7.51.dmg",
-  "sha": "f7e2ff62c58a6bd64ad26c41990c4bad956ead429e1bb1f62097f6b22280209d",
+  "fileName": "legacy-Apidog-macOS-arm64-2.7.54.dmg",
+  "sha": "c23bdc6d44da5a896f7983e82d9c33ade52029c9066b241bb8b7d640a297673e",
   "changelog": "https://apidog.com/blog/",
   "qa_info": {
     "qa_timestamp": "2025-05-19T06:52:28Z",
@@ -18,5 +18,5 @@
     "bundle_id_status": "verified",
     "installed_version": "2.7.12"
   },
-  "previous_version": "2.7.50"
+  "previous_version": "2.7.54"
 }

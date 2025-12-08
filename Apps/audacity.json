@@ -1,12 +1,12 @@
 {
   "name": "Audacity",
   "description": "Multi-track audio editor and recorder",
-  "version": "3.7.5",
-  "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.5/audacity-macOS-3.7.5-arm64.dmg",
+  "version": "3.7.6",
+  "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.6/audacity-macOS-3.7.6-arm64.dmg",
   "bundleId": "org.audacityteam.audacity",
   "homepage": "https://www.audacityteam.org/",
-  "fileName": "audacity-macOS-3.7.5-arm64.dmg",
-  "sha": "20beb5515153a0df8cb02c270a39a90efbfaaa5f2d21fe1db06c7b0d987ea653",
+  "fileName": "audacity-macOS-3.7.6-arm64.dmg",
+  "sha": "9a9db7b3748446d6cbc9d41596819bbc82f4ef884a7f8b66c727f72e0581f9ac",
   "changelog": "https://support.audacityteam.org/additional-resources/changelog",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:02:34Z",
@@ -18,5 +18,5 @@
     "bundle_id_status": "verified",
     "installed_version": "3.7.3.0"
   },
-  "previous_version": "3.7.5"
+  "previous_version": "3.7.6"
 }

@@ -1,12 +1,12 @@
 {
   "name": "NordLayer",
   "description": "Security software for business",
-  "version": "3.7.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/nordlayer_3.7.1.pkg",
+  "version": "3.8.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/nordlayer_3.8.0.pkg",
   "bundleId": "com.nordvpn.macos.teams",
   "homepage": "https://nordlayer.com/",
-  "fileName": "NordLayer_v3.7.1.pkg",
+  "fileName": "NordLayer_v3.8.0.pkg",
   "type": "pkg_in_pkg",
-  "sha": "9ec4febc0dc09192169bef9118fa2abbf42b2cf29199a2c53cd84dc5b5812ede",
-  "previous_version": "3.7.1"
+  "sha": "53e7e214b9566bc5cef7fff67e81fdf8c6b9697f2f5cfbdd7b68d37941ad0cc8",
+  "previous_version": "3.8.0"
 }

@@ -1,11 +1,11 @@
 {
   "name": "Hazel",
   "description": "Automated organisation",
-  "version": "6.1",
-  "url": "https://s3.amazonaws.com/Noodlesoft/Hazel-6.1.dmg",
+  "version": "6.1.1",
+  "url": "https://s3.amazonaws.com/Noodlesoft/Hazel-6.1.1.dmg",
   "bundleId": "86Z3GCJ4MF.com.noodlesoft.HazelHelper",
   "homepage": "https://www.noodlesoft.com/",
-  "fileName": "Hazel-6.1.dmg",
-  "sha": "134bb0e66895203d41f38f1345ae1bea49b68d644b1e144bcf57fe6a9bed2b43",
-  "previous_version": "6.1"
+  "fileName": "Hazel-6.1.1.dmg",
+  "sha": "47e7dcbd7ff503134416e0a5683ee441bf5be614c68384dd93f994ab9951d1bb",
+  "previous_version": "6.1.1"
 }
