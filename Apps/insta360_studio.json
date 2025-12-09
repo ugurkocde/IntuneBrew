@@ -1,11 +1,11 @@
 {
   "name": "Insta360 Studio",
   "description": "Video and photo editor",
-  "version": "5.8.2",
-  "url": "https://file.insta360.com/static/78d17f5b5819914844ae0ffe806216ed/Insta360_Studio_5.8.2_release_insta360(RC_build34)_20251114_111723_signed_1763097194595.zip",
+  "version": "5.8.4",
+  "url": "https://file.insta360.com/static/97bd82949b133f320d5fac03d3274bc3/Insta360_Studio_5.8.4_release_insta360(RC_build60)_20251208_165053_signed_1765187012171.zip",
   "bundleId": "com.insta360.studio",
   "homepage": "https://www.insta360.com/",
-  "fileName": "Insta360_Studio_5.8.2_release_insta360(RC_build34)_20251114_111723_signed_1763097194595.zip",
+  "fileName": "Insta360_Studio_5.8.4_release_insta360(RC_build60)_20251208_165053_signed_1765187012171.zip",
   "type": "pkg_in_pkg",
   "sha": "ef607f92c9a2699fb8495f18ec97f8430a131bc03c21c4cb01938f23ee2bf762",
   "previous_version": "5.8.2"
