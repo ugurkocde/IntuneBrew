@@ -1,14 +1,14 @@
 {
   "name": "Adobe Acrobat Pro DC",
   "description": "View, create, manipulate, print and manage files in Portable Document Format",
-  "version": "25.001.20982",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/adobe_acrobat_pro_dc_25.001.20982.pkg",
+  "version": "25.001.20997",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/adobe_acrobat_pro_dc_25.001.20997.pkg",
   "bundleId": "com.adobe.Acrobat.Pro",
   "homepage": "https://www.adobe.com/acrobat/pdf-reader.html",
-  "fileName": "Acrobat_DC_Web_WWMUI.dmg",
+  "fileName": "adobe_acrobat_pro_dc_25.001.20997.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html",
-  "sha": "8b8cdcbe4755d0f65ae45036dfa9c64e027a19c80fd861a84a96c79d40c965e6",
+  "sha": "629a2a0ce7353902fce696a4838a6c9e7a0b8c6374c77e87f45450baf140e0f4",
   "qa_info": {
     "qa_timestamp": "2025-05-19T07:59:04Z",
     "qa_result": "App not found after installation",
