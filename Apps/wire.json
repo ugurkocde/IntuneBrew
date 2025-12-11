@@ -1,12 +1,12 @@
 {
   "name": "Wire",
   "description": "Collaboration platform focusing on security",
-  "version": "3.40.5285",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/wire_3.40.5285.pkg",
+  "version": "3.40.5442",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/wire_3.40.5442.pkg",
   "bundleId": "com.wearezeta.zclient.mac",
   "homepage": "https://wire.com/",
-  "fileName": "Wire.pkg",
+  "fileName": "wire_3.40.5442.pkg",
   "type": "pkg_in_pkg",
-  "sha": "06d472ab0ef97d4d139e51b346cedc217fb83f25b88fe49420fd8fba662b3cc4",
+  "sha": "ee1bc01bbed3b51df19401a9fb06d381ed82b1d53dd1664a3ee4a06013d53fe9",
   "previous_version": "3.40.5285"
 }
