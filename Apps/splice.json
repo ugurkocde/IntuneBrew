@@ -1,12 +1,12 @@
 {
   "name": "Splice",
   "description": "Cloud-based music creation and collaboration platform",
-  "version": "5.4.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/splice_5.4.3.pkg",
+  "version": "5.4.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/splice_5.4.4.pkg",
   "bundleId": "com.splice.Splice",
   "homepage": "https://splice.com/",
-  "fileName": "splice_5.4.3.pkg",
+  "fileName": "splice_5.4.4.pkg",
   "type": "app",
-  "sha": "6b8c9ccf95fa9ee1918455cecbb64b93eb0f912f98efee498b4a1219f9609a26",
-  "previous_version": "5.4.3"
+  "sha": "ad831d6fc947ac8a3e38f359075dc99540a4b2ac7fdf2ce3a857fce3bda5193c",
+  "previous_version": "5.4.4"
 }
