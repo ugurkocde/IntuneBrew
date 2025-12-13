@@ -1,11 +1,11 @@
 {
   "name": "Mozilla Firefox Developer Edition",
   "description": "Web browser",
-  "version": "147.0b2",
-  "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/147.0b2/mac/en-US/Firefox%20147.0b2.dmg",
+  "version": "147.0b3",
+  "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/147.0b3/mac/en-US/Firefox%20147.0b3.dmg",
   "bundleId": "org.mozilla.firefoxdeveloperedition",
   "homepage": "https://www.mozilla.org/firefox/developer/",
-  "fileName": "Firefox%20147.0b2.dmg",
-  "sha": "7460d63bbbbaa278be900ed27473859d012bfa2bca6e9ca2e69d09efa7352b8e",
+  "fileName": "Firefox%20147.0b3.dmg",
+  "sha": "0663fcf43f8fa64de0d41b2748f0f2e4fa8ec94b529acf6297f1e3b30e255d6d",
   "previous_version": "147.0b2"
 }

@@ -1,13 +1,13 @@
 {
   "name": "Microsoft Auto Update",
   "description": "Provides updates to various Microsoft products",
-  "version": "4.81.25111027",
-  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_AutoUpdate_4.81.25111027_Updater.pkg",
+  "version": "4.81.25121042",
+  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_AutoUpdate_4.81.25121042_Updater.pkg",
   "bundleId": "com.microsoft.package.Microsoft_AU_Bootstrapper.app",
   "homepage": "https://docs.microsoft.com/officeupdates/release-history-microsoft-autoupdate",
-  "fileName": "Microsoft_AutoUpdate_4.81.25111027_Updater.pkg",
+  "fileName": "Microsoft_AutoUpdate_4.81.25121042_Updater.pkg",
   "type": "pkg",
-  "sha": "07c055a24521a102bf9154fe36a699bb4fb92cdb820f87024ffdb80938666632",
+  "sha": "bf281c826c18a0a8e8fd8abe1c9bcbc8deb9b25c251fc6b219e3e5dd7452aa21",
   "changelog": "https://learn.microsoft.com/en-us/officeupdates/release-history-microsoft-autoupdate",
   "previous_version": "4.81.25111027"
 }
