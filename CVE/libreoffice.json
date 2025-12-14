@@ -1,6 +1,6 @@
 {
   "app_name": "LibreOffice",
-  "last_updated": "2025-12-07",
+  "last_updated": "2025-12-14",
   "vulnerabilities": [
     {
       "cve_id": "CVE-2025-2866",
@@ -10,6 +10,42 @@
       "severity": "MEDIUM",
       "description": "Improper Verification of Cryptographic Signature vulnerability in LibreOffice allows PDF Signature Spoofing by Improper Validation.\n\n\n\n\nIn the affected versions of LibreOffice a flaw in the verification code for adbe.pkcs7.sha1 signatures could cause invalid signatures to be accepted as valid\n\n\n\n\nThis issue affects LibreOffice: from 24.8 before < 24.8.6, from 25.2 before < 25.2.2.",
       "cpe_name": "cpe:2.3:a:libreoffice:libreoffice:25.2.0.1:*:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2025-1080",
+      "published_date": "2025-03-04",
+      "last_modified_date": "2025-12-10",
+      "base_score": 7.8,
+      "severity": "HIGH",
+      "description": "LibreOffice supports Office URI Schemes to enable browser integration of LibreOffice with MS SharePoint server. An additional scheme 'vnd.libreoffice.command' specific to LibreOffice was added. In the affected versions of LibreOffice a link in a browser using that scheme could be constructed with an embedded inner URL that when passed to LibreOffice could call internal macros with arbitrary arguments.\nThis issue affects LibreOffice: from 24.8 before < 24.8.5, from 25.2 before < 25.2.1.",
+      "cpe_name": "cpe:2.3:a:libreoffice:libreoffice:25.2.0.1:*:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2025-0514",
+      "published_date": "2025-02-25",
+      "last_modified_date": "2025-12-10",
+      "base_score": 7.8,
+      "severity": "HIGH",
+      "description": "Improper Input Validation vulnerability in The Document Foundation LibreOffice allows Windows Executable hyperlink  targets to be executed unconditionally on activation.This issue affects LibreOffice: from 24.8 before < 24.8.5.",
+      "cpe_name": "cpe:2.3:a:libreoffice:libreoffice:24.8.0.0:alpha1:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2024-12426",
+      "published_date": "2025-01-07",
+      "last_modified_date": "2025-12-08",
+      "base_score": 6.5,
+      "severity": "MEDIUM",
+      "description": "Exposure of Environmental Variables and arbitrary INI file values to an Unauthorized Actor vulnerability in The Document Foundation LibreOffice.\n\n\n\n\nURLs could be constructed which expanded environmental variables or INI file values, so potentially sensitive information could be exfiltrated to a remote server on opening a document containing such links.\n\n\nThis issue affects LibreOffice: from 24.8 before < 24.8.4.",
+      "cpe_name": "cpe:2.3:a:libreoffice:libreoffice:24.8.0.0:alpha1:*:*:*:*:*:*"
+    },
+    {
+      "cve_id": "CVE-2024-12425",
+      "published_date": "2025-01-07",
+      "last_modified_date": "2025-12-08",
+      "base_score": 3.3,
+      "severity": "LOW",
+      "description": "Improper Limitation of a Pathname to a Restricted Directory ('Path Traversal') vulnerability in The Document Foundation LibreOffice allows Absolute Path Traversal.\n\n\n\n\nAn attacker can write to arbitrary locations, albeit suffixed with \".ttf\", by supplying a file in a format that supports embedded font files.\n\n\nThis issue affects LibreOffice: from 24.8 before < 24.8.4.",
+      "cpe_name": "cpe:2.3:a:libreoffice:libreoffice:24.8.0.0:alpha1:*:*:*:*:*:*"
     }
   ]
 }
