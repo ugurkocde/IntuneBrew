@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -276,17 +276,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-12-14 00:34 UTC*
+*Last checked: 2025-12-15 00:33 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Yaak | 2025.9.1 | 2025.9.3 |
-| ChatWise | 0.9.66 | 0.9.69 |
-| Slack | 4.47.69 | 4.47.72 |
-| OneDrive | 25.184.0921.0004 | 25.222.1112.0002 |
-| LM Studio | 0.3.34 | 0.3.35 |
+| Mixxx | 2.5.3 | 2.5.4 |
+| RsyncUI | 2.8.1 | 2.8.2 |
+| Apifox | 2.7.55 | 2.7.56 |
+| ChatWise | 0.9.69 | 0.9.72 |
+| CotEditor | 6.1.2 | 6.2.0 |
+| OBS | 32.0.3 | 32.0.4 |
+| Apidog | 2.7.55 | 2.7.56 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -421,8 +424,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.6.0 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.55 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.55 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.56 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.56 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.1 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.125.1 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.5 |
@@ -467,14 +470,14 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/bruno.png' width='32' height='32'> Bruno | 2.15.1 |
 | <img src='Logos/busycal.png' width='32' height='32'> BusyCal | 2025.4.2 |
 | <img src='Logos/busycontacts.png' width='32' height='32'> BusyContacts | 2025.4.3 |
-| <img src='Logos/caffeine.png' width='32' height='32'> Caffeine | 1.6.1 |
+| <img src='Logos/caffeine.png' width='32' height='32'> Caffeine | 1.6.2 |
 | <img src='Logos/calibre.png' width='32' height='32'> calibre | 8.16.2 |
 | <img src='Logos/calmly_writer.png' width='32' height='32'> Calmly Writer | 2.0.61 |
 | <img src='Logos/camtasia.png' width='32' height='32'> Camtasia | 26.0.3 |
 | <img src='Logos/canva.png' width='32' height='32'> Canva | 1.119.0 |
 | <img src='Logos/capcut.png' width='32' height='32'> CapCut | 3.3.0.1159 |
 | <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2025.330 |
-| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.9.69 |
+| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.9.72 |
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 143.0.7499.7 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20251118100311 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.08.10.31 |
@@ -490,7 +493,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/company_portal.png' width='32' height='32'> Company Portal | 5.2510.1 |
 | <img src='Logos/copilot_for_xcode.png' width='32' height='32'> Copilot for Xcode | 0.37.2 |
 | <img src='Logos/copyclip.png' width='32' height='32'> CopyClip | 2.9.99.2 |
-| <img src='Logos/coteditor.png' width='32' height='32'> CotEditor | 6.1.2 |
+| <img src='Logos/coteditor.png' width='32' height='32'> CotEditor | 6.2.0 |
 | <img src='Logos/crashplan.png' width='32' height='32'> CrashPlan | 11.8.0 |
 | <img src='Logos/cryptomator.png' width='32' height='32'> Cryptomator | 1.18.0 |
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
@@ -602,7 +605,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/intellij_idea_community_edition.png' width='32' height='32'> IntelliJ IDEA Community Edition | 2025.2.5 |
 | <img src='Logos/istherenet.png' width='32' height='32'> IsThereNet | 1.7.1 |
 | <img src='Logos/iterm2.png' width='32' height='32'> iTerm2 | 3.6.6 |
-| <img src='Logos/itsycal.png' width='32' height='32'> Itsycal | 0.15.8 |
+| <img src='Logos/itsycal.png' width='32' height='32'> Itsycal | 0.15.10 |
 | <img src='Logos/jabra_direct.png' width='32' height='32'> Jabra Direct | 6.26.32801 |
 | <img src='Logos/jamie.png' width='32' height='32'> Jamie | 4.5.0 |
 | <img src='Logos/jellyfin.png' width='32' height='32'> Jellyfin | 10.11.4 |
@@ -671,7 +674,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/miro.png' width='32' height='32'> Miro | 0.11.124 |
 | <img src='Logos/mist.png' width='32' height='32'> Mist | 0.30 |
 | <img src='Logos/mitmproxy.png' width='32' height='32'> mitmproxy | 12.2.1 |
-| <img src='Logos/mixxx.png' width='32' height='32'> Mixxx | 2.5.3 |
+| <img src='Logos/mixxx.png' width='32' height='32'> Mixxx | 2.5.4 |
 | <img src='Logos/mobirise.png' width='32' height='32'> Mobirise | 6.1.9 |
 | <img src='Logos/mockoon.png' width='32' height='32'> Mockoon | 9.4.0 |
 | <img src='Logos/mongodb_compass.png' width='32' height='32'> MongoDB Compass | 1.48.2 |
@@ -713,7 +716,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/nucleo.png' width='32' height='32'> Nucleo | 4.1.8 |
 | <img src='Logos/nudge.png' width='32' height='32'> Nudge | 2.0.12.81807 |
 | <img src='Logos/nvidia_geforce_now.png' width='32' height='32'> NVIDIA GeForce NOW | 2.0.79.164 |
-| <img src='Logos/obs.png' width='32' height='32'> OBS | 32.0.3 |
+| <img src='Logos/obs.png' width='32' height='32'> OBS | 32.0.4 |
 | <img src='Logos/obsidian.png' width='32' height='32'> Obsidian | 1.10.6 |
 | <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.99.3 |
 | <img src='Logos/ollama.png' width='32' height='32'> Ollama | 0.9.2 |
@@ -801,7 +804,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rode_connect.png' width='32' height='32'> Rode Connect | 1.3.44 |
 | <img src='Logos/rotato.png' width='32' height='32'> Rotato | 154 |
 | <img src='Logos/rstudio.png' width='32' height='32'> RStudio | 2025.09.2 |
-| <img src='Logos/rsyncui.png' width='32' height='32'> RsyncUI | 2.8.1 |
+| <img src='Logos/rsyncui.png' width='32' height='32'> RsyncUI | 2.8.2 |
 | <img src='Logos/rustdesk.png' width='32' height='32'> RustDesk | 1.4.4 |
 | <img src='Logos/sabnzbd.png' width='32' height='32'> SABnzbd | 4.5.5 |
 | <img src='Logos/santa.png' width='32' height='32'> Santa | 2025.11 |
