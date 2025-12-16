@@ -1,12 +1,12 @@
 {
   "name": "Sequel Ace",
   "description": "MySQL/MariaDB database management",
-  "version": "5.0.9",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sequel_ace_5.0.9.pkg",
+  "version": "5.1.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sequel_ace_5.1.0.pkg",
   "bundleId": "com.sequel-ace.sequel-ace",
   "homepage": "https://github.com/Sequel-Ace/Sequel-Ace",
-  "fileName": "sequel_ace_5.0.9.pkg",
+  "fileName": "sequel_ace_5.1.0.pkg",
   "type": "app",
-  "sha": "fa3a31fe20dddd79dce42dbd384dfab639e6e8c925eb67c8f467ce48d080dbad",
-  "previous_version": "5.0.9"
+  "sha": "2962c1fecfd6290fa5626e95d2664fd156eee636d2af40985a7634deedf547fb",
+  "previous_version": "5.1.0"
 }

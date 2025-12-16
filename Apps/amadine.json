@@ -1,12 +1,12 @@
 {
   "name": "Amadine",
   "description": "Vector graphic and illustration software",
-  "version": "1.7",
+  "version": "1.7.1",
   "url": "https://belightsoft.s3.amazonaws.com/Amadine.dmg",
   "bundleId": "com.belightsoft.Amadine",
   "homepage": "https://amadine.com/",
   "fileName": "Amadine.dmg",
-  "sha": "d2488cdbf812536417132c5dc84cd67c05dc5c725a87eaa111915b96ce634eb0",
+  "sha": "d77964ee81552ea05f2b9150df4ac92730d86e3fd14907163e587bacd375217a",
   "changelog": "https://amadine.com/release-notes/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:30:54Z",
