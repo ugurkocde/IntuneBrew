@@ -29,6 +29,12 @@ launchctl unload -w /Library/LaunchAgents/corp.sap.privileges.daemon.plist 2>/de
 launchctl unload -w /Library/LaunchDaemons/corp.sap.privileges.daemon.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/corp.sap.privileges.daemon.plist 2>/dev/null || true
 
+# Unload service corp.sap.privileges.helper
+echo "Unloading service corp.sap.privileges.helper..."
+launchctl unload -w /Library/LaunchAgents/corp.sap.privileges.helper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/corp.sap.privileges.helper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/corp.sap.privileges.helper.plist 2>/dev/null || true
+
 # Unload service corp.sap.privileges.watcher
 echo "Unloading service corp.sap.privileges.watcher..."
 launchctl unload -w /Library/LaunchAgents/corp.sap.privileges.watcher.plist 2>/dev/null || true
