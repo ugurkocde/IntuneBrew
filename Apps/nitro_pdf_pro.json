@@ -1,11 +1,11 @@
 {
   "name": "Nitro PDF Pro",
   "description": "PDF editing software",
-  "version": "14.7",
-  "url": "https://downloads.gonitro.com/macos/Nitro%20PDF%20Pro_14.7.dmg",
+  "version": "14.10.4",
+  "url": "https://downloads.gonitro.com/macos/Nitro%20PDF%20Pro_14.10.4.dmg",
   "bundleId": "com.gonitro.NitroPDFPro",
   "homepage": "https://www.gonitro.com/pdfpen",
-  "fileName": "Nitro%20PDF%20Pro_14.7.dmg",
-  "sha": "4943e85f25a9a7fe4f979f97ad6a6d5c699223b946f47791705d1d985923172d",
+  "fileName": "Nitro%20PDF%20Pro_14.10.4.dmg",
+  "sha": "01e2bd5c9ab3e1c74bcad0bfbccac39c4d95c9bb71661d9465a97c215f697820",
   "previous_version": "14.7"
 }
