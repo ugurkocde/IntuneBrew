@@ -1,12 +1,12 @@
 {
   "name": "Citrix Workspace",
   "description": "Managed desktop virtualization solution",
-  "version": "25.08.10.31",
-  "url": "https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Mac/CitrixWorkspaceAppUniversal25.08.10.31.pkg",
+  "version": "25.11.0.36",
+  "url": "https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Mac/CitrixWorkspaceAppUniversal25.11.0.36.pkg",
   "bundleId": "com.citrix.receiver.nomas",
   "homepage": "https://docs.citrix.com/en-us/citrix-workspace",
-  "fileName": "CitrixWorkspaceAppUniversal25.08.10.31.pkg",
-  "sha": "7dac05328a7a160f4be4db1bb6e60651e6940cdd2d630fccc7710179b8d4df49",
+  "fileName": "CitrixWorkspaceAppUniversal25.11.0.36.pkg",
+  "sha": "ae194811f7ca279647eb0c6e656999f90b7ed55c99446845f3672026351ef198",
   "changelog": "https://docs.citrix.com/en-us/citrix-workspace-app-for-mac/whats-new.html",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:26:59Z",
