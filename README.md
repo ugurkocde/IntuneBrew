@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -282,22 +282,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-12-20 00:38 UTC*
+*Last checked: 2025-12-21 00:33 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 147.0b5 | 147.0b6 |
-| Readest | 0.9.95 | 0.9.96 |
-| ChatWise | 0.9.75 | 0.9.76 |
-| JetBrains PhpStorm | 2025.3 | 2025.3.1 |
-| LibreWolf | 146.0 | 146.0.1 |
-| Google Chrome | 143.0.7499.147 | 143.0.7499.170 |
-| Brave | 1.85.117.0 | 1.85.118.0 |
-| Citrix Workspace | 25.08.10.31 | 25.11.0.36 |
-| Foxit PDF Editor | 14.0.1.69005 | 14.0.2.69164 |
-| Insomnia | 12.1.0 | 12.2.0 |
+| Middle | 1.12 | 1.14 |
+| Spotify | 1.2.78.418 | 1.2.79.425 |
+| Blender | 5.0.0 | 5.0.1 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -464,7 +458,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/binary_ninja.png' width='32' height='32'> Binary Ninja | 5.2.8722 |
 | <img src='Logos/bitwarden.png' width='32' height='32'> Bitwarden | 2025.12.0 |
 | <img src='Logos/bitwig_studio.png' width='32' height='32'> Bitwig Studio | 5.3.13 |
-| <img src='Logos/blender.png' width='32' height='32'> Blender | 5.0.0 |
+| <img src='Logos/blender.png' width='32' height='32'> Blender | 5.0.1 |
 | <img src='Logos/bleunlock.png' width='32' height='32'> BLEUnlock | 1.12.2 |
 | <img src='Logos/blip.png' width='32' height='32'> blip | 1.1.14 |
 | <img src='Logos/blizzard_battlenet.png' width='32' height='32'> Blizzard Battle.net | 1.19.0.3190 |
@@ -585,7 +579,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/google_ads_editor.png' width='32' height='32'> Google Ads Editor | 2.11 |
 | <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 143.0.7499.170 |
 | <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 118.0.1 |
-| <img src='Logos/goose.png' width='32' height='32'> Goose | 1.17.0 |
+| <img src='Logos/goose.png' width='32' height='32'> Goose | 1.18.0 |
 | <img src='Logos/gpt_fdisk.png' width='32' height='32'> GPT fdisk | 1.0.10 |
 | <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.146.3.0 |
 | <img src='Logos/grandperspective.png' width='32' height='32'> GrandPerspective | 3.6 |
@@ -676,7 +670,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/microsoft_office.png' width='32' height='32'> Microsoft Office | 16.104.25121423 |
 | <img src='Logos/microsoft_teams.png' width='32' height='32'> Microsoft Teams | 25290.302.4044.3989 |
 | <img src='Logos/microsoft_visual_studio_code.png' width='32' height='32'> Microsoft Visual Studio Code | 1.107.1 |
-| <img src='Logos/middle.png' width='32' height='32'> Middle | 1.12 |
+| <img src='Logos/middle.png' width='32' height='32'> Middle | 1.14 |
 | <img src='Logos/middleclick.png' width='32' height='32'> MiddleClick | 3.1.3 |
 | <img src='Logos/mindmanager.png' width='32' height='32'> Mindmanager | 25.1.105 |
 | <img src='Logos/miro.png' width='32' height='32'> Miro | 0.11.125 |
@@ -829,7 +823,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/splashtop_business.png' width='32' height='32'> Splashtop Business | 3.8.0.1 |
 | <img src='Logos/splice.png' width='32' height='32'> Splice | 5.4.4.1 |
 | <img src='Logos/spline.png' width='32' height='32'> Spline | 0.12.11 |
-| <img src='Logos/spotify.png' width='32' height='32'> Spotify | 1.2.78.418 |
+| <img src='Logos/spotify.png' width='32' height='32'> Spotify | 1.2.79.425 |
 | <img src='Logos/sproutcube_shortcat.png' width='32' height='32'> Sproutcube Shortcat | 0.12.2 |
 | <img src='Logos/sqlpro_for_mssql.png' width='32' height='32'> SQLPro for MSSQL | 2025.10 |
 | <img src='Logos/sqlpro_for_mysql.png' width='32' height='32'> SQLPro for MySQL | 2025.10 |
