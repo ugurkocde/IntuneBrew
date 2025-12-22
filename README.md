@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -283,15 +283,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-12-21 00:33 UTC*
+*Last checked: 2025-12-22 00:33 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Middle | 1.12 | 1.14 |
-| Spotify | 1.2.78.418 | 1.2.79.425 |
-| Blender | 5.0.0 | 5.0.1 |
+| Apifox | 2.7.59 | 2.7.60 |
+| DockDoor | 1.28.1 | 1.29 |
+| DBeaver Community Edition | 25.3.0 | 25.3.1 |
+| Apidog | 2.7.59 | 2.7.60 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -426,8 +428,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.6.1 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.59 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.59 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.60 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.60 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.1 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.126.1 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.5 |
@@ -507,7 +509,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.3.1 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.3 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.3.0 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.3.1 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.8.0 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.12.23459148 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
@@ -515,7 +517,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
 | <img src='Logos/discord.png' width='32' height='32'> Discord | 0.0.371 |
 | <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 14.2 |
-| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.28.1 |
+| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.29 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.42.1 |
 | <img src='Logos/dockside.png' width='32' height='32'> Dockside | 1.9.54 |
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
