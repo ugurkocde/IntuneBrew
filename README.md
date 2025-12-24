@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -285,24 +285,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-12-23 00:32 UTC*
+*Last checked: 2025-12-24 00:32 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 147.0b6 | 147.0b7 |
-| Lunatask | 2.1.17 | 2.1.19 |
-| Ente Auth | 4.4.12 | 4.4.15 |
-| Mobirise | 6.1.9 | 6.1.12 |
-| GrandPerspective | 3.6 | 3.6.1 |
-| WeChat for Mac | 4.1.6.11 | 4.1.6.12 |
-| CleanShot | 4.8.6 | 4.8.7 |
-| Spotify | 1.2.79.425 | 1.2.79.427 |
-| Termius | 9.34.7 | 9.34.8 |
-| DataSpell | 2025.3 | 2025.3.1 |
-| DbGate | 6.8.0 | 6.8.1 |
-| Nota Gyazo GIF | 10.3.3 | 10.4.0 |
+| Trae | 1.0.26261 | 1.0.27011 |
+| Android Studio | 2025.2.2.7 | 2025.2.2.8 |
+| DataGrip | 2025.3.1 | 2025.3.2 |
+| Elgato Stream Deck | 7.1.0.22321 | 7.1.1.22340 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -431,7 +424,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/amadine.png' width='32' height='32'> Amadine | 1.7.2 |
 | <img src='Logos/amazon_chime.png' width='32' height='32'> Amazon Chime | 5.23.22475 |
 | <img src='Logos/amazon_q.png' width='32' height='32'> Amazon Q | 1.19.6 |
-| <img src='Logos/android_studio.png' width='32' height='32'> Android Studio | 2025.2.2.7 |
+| <img src='Logos/android_studio.png' width='32' height='32'> Android Studio | 2025.2.2.8 |
 | <img src='Logos/angry_ip_scanner.png' width='32' height='32'> Angry IP Scanner | 3.9.3 |
 | <img src='Logos/anki.png' width='32' height='32'> Anki | 25.09 |
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
@@ -515,7 +508,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.32 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.10.0 |
 | <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.7.2 |
-| <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.3.1 |
+| <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.3.2 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.3.1 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
 | <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.3.1 |
@@ -546,7 +539,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/elephas.png' width='32' height='32'> Elephas | 11.4010 |
 | <img src='Logos/elgato_camera_hub.png' width='32' height='32'> Elgato Camera Hub | 2.2.1.6945 |
 | <img src='Logos/elgato_capture_device_utility.png' width='32' height='32'> Elgato Capture Device Utility | 1.3.1 |
-| <img src='Logos/elgato_stream_deck.png' width='32' height='32'> Elgato Stream Deck | 7.1.0.22321 |
+| <img src='Logos/elgato_stream_deck.png' width='32' height='32'> Elgato Stream Deck | 7.1.1.22340 |
 | <img src='Logos/elgato_wave_link.png' width='32' height='32'> Elgato Wave Link | 2.0.7.3795 |
 | <img src='Logos/ente.png' width='32' height='32'> Ente | 1.7.16 |
 | <img src='Logos/ente_auth.png' width='32' height='32'> Ente Auth | 4.4.15 |
@@ -651,7 +644,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/LocalSend.png' width='32' height='32'> LocalSend | 1.17.0 |
 | <img src='Logos/logitech_g_hub.png' width='32' height='32'> Logitech G HUB | 2025.9.814157 |
 | <img src='Logos/logitech_options.png' width='32' height='32'> Logitech Options+ | 1.98.809639 |
-| <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 1.14.9 |
+| <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 1.14.10 |
 | <img src='Logos/loop.png' width='32' height='32'> Loop | 1.3.0 |
 | <img src='Logos/lulu.png' width='32' height='32'> LuLu | 4.2.0 |
 | <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.19 |
@@ -875,7 +868,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/todoist.png' width='32' height='32'> Todoist | 9.17.0 |
 | <img src='Logos/tofu.png' width='32' height='32'> Tofu | 3.0.1 |
 | <img src='Logos/topaz_gigapixel_ai.png' width='32' height='32'> Topaz Gigapixel AI | 8.4.4 |
-| <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.26261 |
+| <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.27011 |
 | <img src='Logos/transmission.png' width='32' height='32'> Transmission | 4.0.6 |
 | <img src='Logos/transmit.png' width='32' height='32'> Transmit | 5.11.3 |
 | <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.5.1 |
