@@ -1,12 +1,12 @@
 {
   "name": "Hammerspoon",
   "description": "Desktop automation application",
-  "version": "1.0.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/hammerspoon_1.0.0.pkg",
+  "version": "1.1.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/hammerspoon_1.1.0.pkg",
   "bundleId": "org.hammerspoon.Hammerspoon",
   "homepage": "https://www.hammerspoon.org/",
-  "fileName": "hammerspoon_1.0.0.pkg",
+  "fileName": "hammerspoon_1.1.0.pkg",
   "type": "app",
-  "sha": "4716aec0977c5f4e4b57894a933bef191c0aec64f02f6f38de69ddd2750c6d75",
-  "previous_version": "1.0.0"
+  "sha": "aecf4d99a3eba56294ce83fd2f45786dcf59fa1bef41390658200171e5da57da",
+  "previous_version": "1.1.0"
 }
