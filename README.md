@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -287,20 +287,18 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-12-25 00:31 UTC*
+*Last checked: 2025-12-26 00:30 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Reqable | 3.0.30 | 3.0.31 |
-| Requestly | 25.12.15 | 25.12.23 |
-| Stretchly | 1.19.0 | 1.20.0 |
-| Notion | 6.3.1 | 6.3.2 |
-| macFUSE | 5.1.2 | 5.1.3 |
-| kitty | 0.44.0 | 0.45.0 |
-| VSCodium | 1.106.37943 | 1.107.18605 |
-| Windsurf | 1.12.47 | 1.13.3 |
+| Vimcal | 1.0.40 | 1.0.41 |
+| Proxyman | 6.2.0 | 6.3.0 |
+| Trae | 1.0.27011 | 1.0.27215 |
+| VSCodium | 1.107.18605 | 1.107.18627 |
+| DisplayLink USB Graphics Software | 14.2 | 15.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -502,7 +500,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/codeedit.png' width='32' height='32'> CodeEdit | 0.3.6 |
 | <img src='Logos/coderunner.png' width='32' height='32'> CodeRunner | 4.5 |
 | <img src='Logos/company_portal.png' width='32' height='32'> Company Portal | 5.2510.1 |
-| <img src='Logos/copilot_for_xcode.png' width='32' height='32'> Copilot for Xcode | 0.37.2 |
+| <img src='Logos/copilot_for_xcode.png' width='32' height='32'> Copilot for Xcode | 0.37.3 |
 | <img src='Logos/copyclip.png' width='32' height='32'> CopyClip | 2.9.99.2 |
 | <img src='Logos/coteditor.png' width='32' height='32'> CotEditor | 6.2.0 |
 | <img src='Logos/crashplan.png' width='32' height='32'> CrashPlan | 11.8.0 |
@@ -523,7 +521,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/devtoys.png' width='32' height='32'> DevToys | 2.0.8.0 |
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
 | <img src='Logos/discord.png' width='32' height='32'> Discord | 0.0.371 |
-| <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 14.2 |
+| <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 15.0 |
 | <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.29 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.42.1 |
 | <img src='Logos/dockside.png' width='32' height='32'> Dockside | 1.9.54 |
@@ -780,7 +778,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/proton_mail.png' width='32' height='32'> Proton Mail | 1.11.0 |
 | <img src='Logos/proton_pass.png' width='32' height='32'> Proton Pass | 1.33.3 |
 | <img src='Logos/protonvpn.png' width='32' height='32'> ProtonVPN | 6.2.0 |
-| <img src='Logos/proxyman.png' width='32' height='32'> Proxyman | 6.2.0 |
+| <img src='Logos/proxyman.png' width='32' height='32'> Proxyman | 6.3.0 |
 | <img src='Logos/ps_remote_play.png' width='32' height='32'> PS Remote Play | 8.5.2 |
 | <img src='Logos/pulsar.png' width='32' height='32'> Pulsar | 1.130.1 |
 | <img src='Logos/qBittorrent.png' width='32' height='32'> qBittorrent | 5.0.5 |
@@ -873,7 +871,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/todoist.png' width='32' height='32'> Todoist | 9.17.0 |
 | <img src='Logos/tofu.png' width='32' height='32'> Tofu | 3.0.1 |
 | <img src='Logos/topaz_gigapixel_ai.png' width='32' height='32'> Topaz Gigapixel AI | 8.4.4 |
-| <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.27011 |
+| <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.27215 |
 | <img src='Logos/transmission.png' width='32' height='32'> Transmission | 4.0.6 |
 | <img src='Logos/transmit.png' width='32' height='32'> Transmit | 5.11.3 |
 | <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.5.1 |
@@ -885,13 +883,13 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/upscayl.png' width='32' height='32'> Upscayl | 2.15.0 |
 | <img src='Logos/utm.png' width='32' height='32'> UTM | 4.7.4 |
 | <img src='Logos/veracrypt.png' width='32' height='32'> VeraCrypt | 1.26.24 |
-| <img src='Logos/vimcal.png' width='32' height='32'> Vimcal | 1.0.40 |
+| <img src='Logos/vimcal.png' width='32' height='32'> Vimcal | 1.0.41 |
 | <img src='Logos/vimr.png' width='32' height='32'> VimR | 0.59.3 |
 | <img src='Logos/visualvm.png' width='32' height='32'> VisualVM | 2.2 |
 | <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 7.7.3851.66 |
 | <img src='Logos/viz.png' width='32' height='32'> Viz | 2.3.3 |
 | <img src='Logos/vlc_media_player.png' width='32' height='32'> VLC media player | 3.0.21 |
-| <img src='Logos/vscodium.png' width='32' height='32'> VSCodium | 1.107.18605 |
+| <img src='Logos/vscodium.png' width='32' height='32'> VSCodium | 1.107.18627 |
 | <img src='Logos/wave_terminal.png' width='32' height='32'> Wave Terminal | 0.13.1 |
 | ❌ Webex | 45.12.0.33788 |
 | <img src='Logos/webex_teams.png' width='32' height='32'> Webex Teams | 45.6.1.32593 |
