@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -288,17 +288,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-12-26 00:30 UTC*
+*Last checked: 2025-12-27 00:29 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Vimcal | 1.0.40 | 1.0.41 |
-| Proxyman | 6.2.0 | 6.3.0 |
-| Trae | 1.0.27011 | 1.0.27215 |
-| VSCodium | 1.107.18605 | 1.107.18627 |
-| DisplayLink USB Graphics Software | 14.2 | 15.0 |
+| RsyncUI | 2.8.2 | 2.8.4 |
+| DockDoor | 1.29 | 1.30 |
+| Inkscape | 1.4.230579 | 1.4.333103 |
+| Insta360 Studio | 5.8.4 | 5.8.6 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -522,7 +522,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
 | <img src='Logos/discord.png' width='32' height='32'> Discord | 0.0.371 |
 | <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 15.0 |
-| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.29 |
+| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.30 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.42.1 |
 | <img src='Logos/dockside.png' width='32' height='32'> Dockside | 1.9.54 |
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
@@ -608,9 +608,9 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/iina.png' width='32' height='32'> IINA | 1.4.1 |
 | <img src='Logos/imazing.png' width='32' height='32'> iMazing | 3.4.0 |
 | <img src='Logos/imazing_profile_editor.png' width='32' height='32'> iMazing Profile Editor | 2.1.2 |
-| <img src='Logos/inkscape.png' width='32' height='32'> Inkscape | 1.4.230579 |
+| <img src='Logos/inkscape.png' width='32' height='32'> Inkscape | 1.4.333103 |
 | <img src='Logos/insomnia.png' width='32' height='32'> Insomnia | 12.2.0 |
-| <img src='Logos/insta360_studio.png' width='32' height='32'> Insta360 Studio | 5.8.4 |
+| <img src='Logos/insta360_studio.png' width='32' height='32'> Insta360 Studio | 5.8.6 |
 | <img src='Logos/intellij_idea_community_edition.png' width='32' height='32'> IntelliJ IDEA Community Edition | 2025.2.5 |
 | <img src='Logos/istherenet.png' width='32' height='32'> IsThereNet | 1.7.1 |
 | <img src='Logos/iterm2.png' width='32' height='32'> iTerm2 | 3.6.6 |
@@ -624,7 +624,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/jetbrains_toolbox.png' width='32' height='32'> JetBrains Toolbox | 3.2 |
 | <img src='Logos/joplin.png' width='32' height='32'> Joplin | 3.4.12 |
 | <img src='Logos/jumpcut.png' width='32' height='32'> Jumpcut | 0.84 |
-| <img src='Logos/jumpshare.png' width='32' height='32'> Jumpshare | 3.3.20 |
+| <img src='Logos/jumpshare.png' width='32' height='32'> Jumpshare | 3.4.21 |
 | <img src='Logos/kap.png' width='32' height='32'> Kap | 3.6.0 |
 | <img src='Logos/karabiner_elements.png' width='32' height='32'> Karabiner Elements | 15.7.0 |
 | <img src='Logos/keepassxc.png' width='32' height='32'> KeePassXC | 2.7.11 |
@@ -813,7 +813,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rode_connect.png' width='32' height='32'> Rode Connect | 1.3.44 |
 | <img src='Logos/rotato.png' width='32' height='32'> Rotato | 154 |
 | <img src='Logos/rstudio.png' width='32' height='32'> RStudio | 2025.09.2 |
-| <img src='Logos/rsyncui.png' width='32' height='32'> RsyncUI | 2.8.2 |
+| <img src='Logos/rsyncui.png' width='32' height='32'> RsyncUI | 2.8.4 |
 | <img src='Logos/rustdesk.png' width='32' height='32'> RustDesk | 1.4.4 |
 | <img src='Logos/sabnzbd.png' width='32' height='32'> SABnzbd | 4.5.5 |
 | <img src='Logos/santa.png' width='32' height='32'> Santa | 2025.12 |
