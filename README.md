@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -289,16 +289,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-12-27 00:29 UTC*
+*Last checked: 2025-12-28 00:35 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| RsyncUI | 2.8.2 | 2.8.4 |
-| DockDoor | 1.29 | 1.30 |
-| Inkscape | 1.4.230579 | 1.4.333103 |
-| Insta360 Studio | 5.8.4 | 5.8.6 |
+| CotEditor | 6.2.0 | 6.2.1 |
+| ChatGPT | 1.2025.343 | 1.2025.350 |
+| Windsurf | 1.13.3 | 1.13.5 |
+| AWS Client VPN | 5.3.2 | 5.3.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -445,7 +446,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/audacity.png' width='32' height='32'> Audacity | 3.7.7 |
 | <img src='Logos/audio_hijack.png' width='32' height='32'> Audio Hijack | 4.5.6 |
 | <img src='Logos/autodesk_fusion_360.png' width='32' height='32'> Autodesk Fusion 360 | latest |
-| <img src='Logos/aws_client_vpn.png' width='32' height='32'> AWS Client VPN | 5.3.2 |
+| <img src='Logos/aws_client_vpn.png' width='32' height='32'> AWS Client VPN | 5.3.3 |
 | <img src='Logos/aws_corretto_jdk.png' width='32' height='32'> AWS Corretto JDK | 21.0.9.10.1 |
 | <img src='Logos/azul_zulu_java_standard_edition_development_kit.png' width='32' height='32'> Azul Zulu Java Standard Edition Development Kit | 25.0.1 |
 | <img src='Logos/azure_data_studio.png' width='32' height='32'> Azure Data Studio | 1.52.0 |
@@ -485,7 +486,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/camtasia.png' width='32' height='32'> Camtasia | 26.0.3 |
 | <img src='Logos/canva.png' width='32' height='32'> Canva | 1.119.0 |
 | <img src='Logos/capcut.png' width='32' height='32'> CapCut | 3.3.0.1159 |
-| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2025.343 |
+| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2025.350 |
 | <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 0.9.76 |
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 143.0.7499.7 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20251118100311 |
@@ -502,11 +503,11 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/company_portal.png' width='32' height='32'> Company Portal | 5.2510.1 |
 | <img src='Logos/copilot_for_xcode.png' width='32' height='32'> Copilot for Xcode | 0.37.3 |
 | <img src='Logos/copyclip.png' width='32' height='32'> CopyClip | 2.9.99.2 |
-| <img src='Logos/coteditor.png' width='32' height='32'> CotEditor | 6.2.0 |
+| <img src='Logos/coteditor.png' width='32' height='32'> CotEditor | 6.2.1 |
 | <img src='Logos/crashplan.png' width='32' height='32'> CrashPlan | 11.8.0 |
 | <img src='Logos/cryptomator.png' width='32' height='32'> Cryptomator | 1.18.0 |
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
-| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 2.2.43 |
+| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 2.2.44 |
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.3.1 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.32 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.10.0 |
@@ -796,7 +797,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.15.1 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.92 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.65.4 |
-| <img src='Logos/recut.png' width='32' height='32'> Recut | 2.1.7 |
+| <img src='Logos/recut.png' width='32' height='32'> Recut | 4.3.4 |
 | <img src='Logos/redis_insight.png' width='32' height='32'> Redis Insight | 2.70.1 |
 | <img src='Logos/reflector.png' width='32' height='32'> Reflector | 4.1.2 |
 | <img src='Logos/remote_desktop_manager.png' width='32' height='32'> Remote Desktop Manager | 2025.3.8.5 |
@@ -898,7 +899,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 2.25.36.33 |
 | <img src='Logos/windowkeys.png' width='32' height='32'> WindowKeys | 3.0.1 |
 | <img src='Logos/windows_app.png' width='32' height='32'> Windows App | 11.3.0 |
-| <img src='Logos/windsurf.png' width='32' height='32'> Windsurf | 1.13.3 |
+| <img src='Logos/windsurf.png' width='32' height='32'> Windsurf | 1.13.5 |
 | <img src='Logos/winehqstable.png' width='32' height='32'> WineHQ-stable | 10.0 |
 | <img src='Logos/wire.png' width='32' height='32'> Wire | 3.40.5442 |
 | <img src='Logos/wireshark.png' width='32' height='32'> Wireshark | 4.4.7 |

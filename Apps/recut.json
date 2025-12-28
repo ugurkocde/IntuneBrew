@@ -1,11 +1,11 @@
 {
   "name": "Recut",
   "description": "Remove silence from videos and automatically generate a cut list",
-  "version": "2.1.7",
-  "url": "https://updates.getrecut.com/Recut-2.1.7.dmg",
+  "version": "4.3.4",
+  "url": "https://updates.getrecut.com/universal/Recut_4.3.4_universal.dmg",
   "bundleId": "co.tinywins.recut",
   "homepage": "https://getrecut.com/",
-  "fileName": "Recut-2.1.7.dmg",
-  "sha": "786c03f4a6396e04e4ee4f3e258ba420f78776114cacffa753ea67f518a7c7e7",
-  "previous_version": "2.1.7"
+  "fileName": "Recut_4.3.4_universal.dmg",
+  "sha": "db979442ba85ac4eb9fe34fac1c7dbcadb579cf8c24bb4387287f3fce8496f0b",
+  "previous_version": "4.3.4"
 }
