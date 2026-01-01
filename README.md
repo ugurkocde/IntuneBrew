@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -293,15 +293,18 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2025-12-31 00:32 UTC*
+*Last checked: 2026-01-01 00:35 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Typora | 1.12.4 | 1.12.5 |
-| Trae | 1.0.27287 | 1.0.27453 |
-| Zoom | 6.7.0.71075 | 6.7.2.72191 |
+| Mozilla Firefox Developer Edition | 147.0b8 | 147.0b9 |
+| UPDF | 2.1.0 | 2.1.1 |
+| Rocket Typist | 3.2.5 | 3.3 |
+| Typora | 1.12.5 | 1.12.6 |
+| Dropbox | 238.4.6075 | 238.4.6305 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -534,7 +537,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/drawio_desktop.png' width='32' height='32'> draw.io Desktop | 29.0.3 |
 | <img src='Logos/drawbot.png' width='32' height='32'> DrawBot | 3.132 |
 | <img src='Logos/drivedx.png' width='32' height='32'> DriveDX | 1.12.1 |
-| <img src='Logos/dropbox.png' width='32' height='32'> Dropbox | 238.4.6075 |
+| <img src='Logos/dropbox.png' width='32' height='32'> Dropbox | 238.4.6305 |
 | <img src='Logos/dropdmg.png' width='32' height='32'> DropDMG | 3.7.1 |
 | <img src='Logos/dropshare.png' width='32' height='32'> Dropshare | 6.8 |
 | <img src='Logos/duckduckgo.png' width='32' height='32'> DuckDuckGo | 1.169.0 |
@@ -698,7 +701,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/mounty_for_ntfs.png' width='32' height='32'> Mounty for NTFS | 2.4 |
 | <img src='Logos/mouseless.png' width='32' height='32'> mouseless | 0.4.3 |
 | <img src='Logos/mozilla_firefox.png' width='32' height='32'> Mozilla Firefox | 146.0.1 |
-| <img src='Logos/mozilla_firefox_developer_edition.png' width='32' height='32'> Mozilla Firefox Developer Edition | 147.0b8 |
+| <img src='Logos/mozilla_firefox_developer_edition.png' width='32' height='32'> Mozilla Firefox Developer Edition | 147.0b9 |
 | <img src='Logos/mozilla_firefox_esr.png' width='32' height='32'> Mozilla Firefox ESR | 140.6.0 |
 | <img src='Logos/mozilla_thunderbird.png' width='32' height='32'> Mozilla Thunderbird | 146.0.1 |
 | <img src='Logos/multi.png' width='32' height='32'> Multi | 0.538.2 |
@@ -810,7 +813,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rhinoceros.png' width='32' height='32'> Rhinoceros | 8.20.25157.13002 |
 | <img src='Logos/rive.png' width='32' height='32'> Rive | 0.8.3982 |
 | <img src='Logos/rocket.png' width='32' height='32'> Rocket | 1.9.4 |
-| <img src='Logos/rocket_typist.png' width='32' height='32'> Rocket Typist | 3.2.5 |
+| <img src='Logos/rocket_typist.png' width='32' height='32'> Rocket Typist | 3.3 |
 | <img src='Logos/rocketchat.png' width='32' height='32'> Rocket.Chat | 4.10.1 |
 | <img src='Logos/rode_central.png' width='32' height='32'> Rode Central | 2.0.108 |
 | <img src='Logos/rode_connect.png' width='32' height='32'> Rode Connect | 1.3.44 |
@@ -880,9 +883,9 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.5.1 |
 | <img src='Logos/tunnelblick.png' width='32' height='32'> Tunnelblick | 8.0 |
 | <img src='Logos/twingate.png' width='32' height='32'> Twingate | 2025.338.21484 |
-| <img src='Logos/typora.png' width='32' height='32'> Typora | 1.12.5 |
+| <img src='Logos/typora.png' width='32' height='32'> Typora | 1.12.6 |
 | <img src='Logos/unnaturalscrollwheels.png' width='32' height='32'> UnnaturalScrollWheels | 1.3.0 |
-| <img src='Logos/updf.png' width='32' height='32'> UPDF | 2.1.0 |
+| <img src='Logos/updf.png' width='32' height='32'> UPDF | 2.1.1 |
 | <img src='Logos/upscayl.png' width='32' height='32'> Upscayl | 2.15.0 |
 | <img src='Logos/utm.png' width='32' height='32'> UTM | 4.7.4 |
 | <img src='Logos/veracrypt.png' width='32' height='32'> VeraCrypt | 1.26.24 |
