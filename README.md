@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -294,17 +294,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-01 00:35 UTC*
+*Last checked: 2026-01-02 00:33 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox Developer Edition | 147.0b8 | 147.0b9 |
-| UPDF | 2.1.0 | 2.1.1 |
-| Rocket Typist | 3.2.5 | 3.3 |
-| Typora | 1.12.5 | 1.12.6 |
-| Dropbox | 238.4.6075 | 238.4.6305 |
+| Apifox | 2.7.61 | 2.8.0 |
+| QQ | 6.9.82 | 6.9.86 |
+| OnyX | 4.9.3 | 4.9.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -440,7 +439,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.6.1 |
 | <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.7.60 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.7.61 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.8.0 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.1 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.126.1 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.5 |
@@ -739,7 +738,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/omnioutliner.png' width='32' height='32'> OmniOutliner | 5.15 |
 | <img src='Logos/omnissa_horizon_client.png' width='32' height='32'> Omnissa Horizon Client | 2506-8.16.0-16536825094 |
 | <img src='Logos/onedrive.png' width='32' height='32'> OneDrive | 25.222.1112.0002 |
-| <img src='Logos/onyx.png' width='32' height='32'> OnyX | 4.9.3 |
+| <img src='Logos/onyx.png' width='32' height='32'> OnyX | 4.9.4 |
 | <img src='Logos/openmtp.png' width='32' height='32'> OpenMTP | 3.2.25 |
 | <img src='Logos/openvpn_connect_client.png' width='32' height='32'> OpenVPN Connect client | 3.8.1 |
 | <img src='Logos/opera.png' width='32' height='32'> Opera | 125.0.5729.49 |
@@ -789,7 +788,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/pulsar.png' width='32' height='32'> Pulsar | 1.130.1 |
 | <img src='Logos/qBittorrent.png' width='32' height='32'> qBittorrent | 5.0.5 |
 | <img src='Logos/qlab.png' width='32' height='32'> QLab | 5.5.9 |
-| <img src='Logos/qq.png' width='32' height='32'> QQ | 6.9.82 |
+| <img src='Logos/qq.png' width='32' height='32'> QQ | 6.9.86 |
 | <img src='Logos/qspace_pro.png' width='32' height='32'> QSpace Pro | 6.0.6 |
 | <img src='Logos/quarto.png' width='32' height='32'> quarto | 1.8.26 |
 | <img src='Logos/quicklook_video.png' width='32' height='32'> QuickLook Video | 2.21 |
