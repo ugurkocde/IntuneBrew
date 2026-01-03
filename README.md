@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -295,15 +295,15 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-02 00:33 UTC*
+*Last checked: 2026-01-03 00:31 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Apifox | 2.7.61 | 2.8.0 |
-| QQ | 6.9.82 | 6.9.86 |
-| OnyX | 4.9.3 | 4.9.4 |
+| DockDoor | 1.30 | 1.30.1 |
+| Inkscape | 1.4.333103 | 1.4.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -527,7 +527,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
 | <img src='Logos/discord.png' width='32' height='32'> Discord | 0.0.371 |
 | <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 15.0 |
-| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.30 |
+| <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.30.1 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.42.1 |
 | <img src='Logos/dockside.png' width='32' height='32'> Dockside | 1.9.54 |
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
@@ -613,7 +613,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/iina.png' width='32' height='32'> IINA | 1.4.1 |
 | <img src='Logos/imazing.png' width='32' height='32'> iMazing | 3.4.0 |
 | <img src='Logos/imazing_profile_editor.png' width='32' height='32'> iMazing Profile Editor | 2.1.2 |
-| <img src='Logos/inkscape.png' width='32' height='32'> Inkscape | 1.4.333103 |
+| <img src='Logos/inkscape.png' width='32' height='32'> Inkscape | 1.4.3 |
 | <img src='Logos/insomnia.png' width='32' height='32'> Insomnia | 12.2.0 |
 | <img src='Logos/insta360_studio.png' width='32' height='32'> Insta360 Studio | 5.8.6 |
 | <img src='Logos/intellij_idea_community_edition.png' width='32' height='32'> IntelliJ IDEA Community Edition | 2025.2.5 |
@@ -852,7 +852,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sublime_merge.png' width='32' height='32'> Sublime Merge | 2121 |
 | <img src='Logos/sublime_text.png' width='32' height='32'> Sublime Text | 4200 |
 | <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.46.0 |
-| <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 2.7.1 |
+| <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 2.8.0 |
 | <img src='Logos/suspicious_package.png' width='32' height='32'> Suspicious Package | 4.6 |
 | <img src='Logos/swift_shift.png' width='32' height='32'> Swift Shift | 0.27.1 |
 | <img src='Logos/sync.png' width='32' height='32'> Sync | 2.2.54 |
