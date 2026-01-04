@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -296,14 +296,18 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-03 00:31 UTC*
+*Last checked: 2026-01-04 00:35 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| DockDoor | 1.30 | 1.30.1 |
-| Inkscape | 1.4.333103 | 1.4.3 |
+| Transnomino | 9.5.1 | 10.0.0 |
+| RsyncUI | 2.8.4 | 2.8.5 |
+| Windows App | 11.3.0 | 11.3.1 |
+| UTM | 4.7.4 | 4.7.5 |
+| draw.io Desktop | 29.0.3 | 29.2.9 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -428,7 +432,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/alacritty.png' width='32' height='32'> Alacritty | 0.16.1 |
 | <img src='Logos/alcove.png' width='32' height='32'> Alcove | 1.4.1 |
 | <img src='Logos/alfred.png' width='32' height='32'> Alfred | 5.7.2 |
-| <img src='Logos/alttab.png' width='32' height='32'> AltTab | 7.38.1 |
+| <img src='Logos/alttab.png' width='32' height='32'> AltTab | 7.39.0 |
 | <img src='Logos/amadine.png' width='32' height='32'> Amadine | 1.7.2 |
 | <img src='Logos/amazon_chime.png' width='32' height='32'> Amazon Chime | 5.23.22475 |
 | <img src='Logos/amazon_q.png' width='32' height='32'> Amazon Q | 1.19.6 |
@@ -513,7 +517,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
 | <img src='Logos/cursor.png' width='32' height='32'> Cursor | 2.2.44 |
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.3.1 |
-| <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.32 |
+| <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.33 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.10.0 |
 | <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.7.2 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.3.2 |
@@ -533,7 +537,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
 | <img src='Logos/doughnut.png' width='32' height='32'> Doughnut | 2.0.1 |
 | <img src='Logos/downie.png' width='32' height='32'> Downie | 4.11.7 |
-| <img src='Logos/drawio_desktop.png' width='32' height='32'> draw.io Desktop | 29.0.3 |
+| <img src='Logos/drawio_desktop.png' width='32' height='32'> draw.io Desktop | 29.2.9 |
 | <img src='Logos/drawbot.png' width='32' height='32'> DrawBot | 3.132 |
 | <img src='Logos/drivedx.png' width='32' height='32'> DriveDX | 1.12.1 |
 | <img src='Logos/dropbox.png' width='32' height='32'> Dropbox | 238.4.6305 |
@@ -818,7 +822,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rode_connect.png' width='32' height='32'> Rode Connect | 1.3.44 |
 | <img src='Logos/rotato.png' width='32' height='32'> Rotato | 154 |
 | <img src='Logos/rstudio.png' width='32' height='32'> RStudio | 2025.09.2 |
-| <img src='Logos/rsyncui.png' width='32' height='32'> RsyncUI | 2.8.4 |
+| <img src='Logos/rsyncui.png' width='32' height='32'> RsyncUI | 2.8.5 |
 | <img src='Logos/rustdesk.png' width='32' height='32'> RustDesk | 1.4.4 |
 | <img src='Logos/sabnzbd.png' width='32' height='32'> SABnzbd | 4.5.5 |
 | <img src='Logos/santa.png' width='32' height='32'> Santa | 2025.12 |
@@ -879,14 +883,14 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/trae.png' width='32' height='32'> Trae | 1.0.27453 |
 | <img src='Logos/transmission.png' width='32' height='32'> Transmission | 4.0.6 |
 | <img src='Logos/transmit.png' width='32' height='32'> Transmit | 5.11.3 |
-| <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 9.5.1 |
+| <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 10.0.0 |
 | <img src='Logos/tunnelblick.png' width='32' height='32'> Tunnelblick | 8.0 |
 | <img src='Logos/twingate.png' width='32' height='32'> Twingate | 2025.338.21484 |
 | <img src='Logos/typora.png' width='32' height='32'> Typora | 1.12.6 |
 | <img src='Logos/unnaturalscrollwheels.png' width='32' height='32'> UnnaturalScrollWheels | 1.3.0 |
 | <img src='Logos/updf.png' width='32' height='32'> UPDF | 2.1.1 |
 | <img src='Logos/upscayl.png' width='32' height='32'> Upscayl | 2.15.0 |
-| <img src='Logos/utm.png' width='32' height='32'> UTM | 4.7.4 |
+| <img src='Logos/utm.png' width='32' height='32'> UTM | 4.7.5 |
 | <img src='Logos/veracrypt.png' width='32' height='32'> VeraCrypt | 1.26.24 |
 | <img src='Logos/vimcal.png' width='32' height='32'> Vimcal | 1.0.41 |
 | <img src='Logos/vimr.png' width='32' height='32'> VimR | 0.59.3 |
@@ -902,7 +906,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/wechat_for_mac.png' width='32' height='32'> WeChat for Mac | 4.1.6.12 |
 | <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 2.25.36.33 |
 | <img src='Logos/windowkeys.png' width='32' height='32'> WindowKeys | 3.0.1 |
-| <img src='Logos/windows_app.png' width='32' height='32'> Windows App | 11.3.0 |
+| <img src='Logos/windows_app.png' width='32' height='32'> Windows App | 11.3.1 |
 | <img src='Logos/windsurf.png' width='32' height='32'> Windsurf | 1.13.5 |
 | <img src='Logos/winehqstable.png' width='32' height='32'> WineHQ-stable | 10.0 |
 | <img src='Logos/wire.png' width='32' height='32'> Wire | 3.40.5442 |
