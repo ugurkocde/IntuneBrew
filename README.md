@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-510-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -297,17 +297,14 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-04 00:35 UTC*
+*Last checked: 2026-01-05 00:34 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Transnomino | 9.5.1 | 10.0.0 |
-| RsyncUI | 2.8.4 | 2.8.5 |
-| Windows App | 11.3.0 | 11.3.1 |
-| UTM | 4.7.4 | 4.7.5 |
-| draw.io Desktop | 29.0.3 | 29.2.9 |
+| DBeaver Community Edition | 25.3.1 | 25.3.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -523,7 +520,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.3.2 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.3.1 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.3.1 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.3.2 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.8.2 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 25.12.23459148 |
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
@@ -803,7 +800,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.8.2 |
 | <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.96 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.15.1 |
-| <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.92 |
+| <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.93 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.65.4 |
 | <img src='Logos/recut.png' width='32' height='32'> Recut | 4.3.4 |
 | <img src='Logos/redis_insight.png' width='32' height='32'> Redis Insight | 2.70.1 |
