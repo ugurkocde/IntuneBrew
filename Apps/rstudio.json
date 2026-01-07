@@ -1,12 +1,12 @@
 {
   "name": "RStudio",
   "description": "Data science software focusing on R and Python",
-  "version": "2025.09.2",
-  "url": "https://download1.rstudio.org/electron/macos/RStudio-2025.09.2-418.dmg",
+  "version": "2026.01.0",
+  "url": "https://download1.rstudio.org/electron/macos/RStudio-2026.01.0-392.dmg",
   "bundleId": "com.rstudio.desktop",
   "homepage": "https://posit.co/products/open-source/rstudio/",
-  "fileName": "RStudio-2025.09.2-418.dmg",
-  "sha": "9d1719ce11ec54027b8b698c966a3ac2fb58b1769f8c05325b86d70be749d8d6",
+  "fileName": "RStudio-2026.01.0-392.dmg",
+  "sha": "ee3f39bb63031fbe9f367bc943c81e8ff5478acf7f10877d16f121843850f937",
   "changelog": "https://docs.posit.co/ide/news/",
   "previous_version": "2025.09.2"
 }
