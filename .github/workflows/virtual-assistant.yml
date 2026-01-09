@@ -233,6 +233,18 @@ jobs:
             // Map the primary label to one of the allowed labels with vibrant colors
             let labels = [];
 
+            // Check if this is an app request (adding new app to IntuneBrew)
+            const issueTitle = `${{ github.event.issue.title }}`.toLowerCase();
+            const issueBody = `${{ github.event.issue.body }}`.toLowerCase();
+
+            const isAppRequest = (
+              (issueTitle.includes('add') && (issueTitle.includes('app') || issueTitle.includes('intunebrew') || issueTitle.includes('application'))) ||
+              issueTitle.match(/\[feature\]\s*add\s+.+\s+to/i) ||
+              issueBody.includes('formulae.brew.sh') ||
+              issueBody.includes('brew install') ||
+              issueBody.includes('homebrew')
+            );
+
             // Type labels with enhanced colors
             if (primaryLabel === 'bug') {
               labels.push({
@@ -241,11 +253,20 @@ jobs:
                 description: 'Something isn\'t working as expected'
               });
             } else if (primaryLabel === 'feature' || primaryLabel.includes('feature')) {
-              labels.push({
-                name: 'feature request',
-                color: '0066ff', // Bright blue for feature requests
-                description: 'New feature or enhancement request'
-              });
+              // Check if it's specifically an app request
+              if (isAppRequest) {
+                labels.push({
+                  name: 'app request',
+                  color: '1d76db', // Blue for app requests
+                  description: 'Request to add a new app to IntuneBrew'
+                });
+              } else {
+                labels.push({
+                  name: 'feature request',
+                  color: '0066ff', // Bright blue for feature requests
+                  description: 'New feature or enhancement request'
+                });
+              }
             } else if (primaryLabel === 'feedback' || primaryLabel === 'question' ||
                       primaryLabel === 'docs' || primaryLabel === 'enhancement') {
               labels.push({
