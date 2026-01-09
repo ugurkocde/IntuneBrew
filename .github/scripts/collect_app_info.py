@@ -507,6 +507,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/fork.json"
     "https://formulae.brew.sh/api/cask/box-tools.json",
     "https://formulae.brew.sh/api/cask/musescore.json",
+    "https://formulae.brew.sh/api/cask/intellij-idea.json",
 ]
 
 # PKG in DMG URLs
