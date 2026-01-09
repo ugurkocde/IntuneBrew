@@ -350,47 +350,56 @@ def add_url_to_list(script_path, list_name, cask_name):
     """Add the Homebrew URL to the appropriate list in collect_app_info.py."""
 
     with open(script_path, 'r') as f:
-        content = f.read()
+        lines = f.readlines()
+
+    content = ''.join(lines)
 
     # Check if app already exists
     if check_app_exists(cask_name, content):
         return False, "App already exists in the supported apps list"
 
-    # Find the list and add the URL
-    url_to_add = f'    "https://formulae.brew.sh/api/cask/{cask_name}.json",'
+    # Find the list and the position to insert
+    url_to_add = f'    "https://formulae.brew.sh/api/cask/{cask_name}.json",\n'
 
-    # Pattern to find the list and its closing bracket
-    # This handles lists that span multiple lines
-    list_pattern = rf'({re.escape(list_name)}\s*=\s*\[)(.*?)(\])'
+    # Find the line where the list starts
+    list_start_pattern = rf'^{re.escape(list_name)}\s*=\s*\['
+    list_start_line = -1
+    in_target_list = False
+    last_url_line = -1
+    bracket_count = 0
 
-    def replacer(match):
-        list_start = match.group(1)
-        list_content = match.group(2)
-        list_end = match.group(3)
+    for i, line in enumerate(lines):
+        if re.match(list_start_pattern, line):
+            list_start_line = i
+            in_target_list = True
+            bracket_count = line.count('[') - line.count(']')
+            if 'formulae.brew.sh' in line:
+                last_url_line = i
+            continue
 
-        # Find the last URL entry and add the new one after it
-        # Look for the last line that contains a URL
-        lines = list_content.split('\n')
-        insert_index = len(lines) - 1
-
-        # Find the last non-empty line
-        for i in range(len(lines) - 1, -1, -1):
-            if lines[i].strip() and 'formulae.brew.sh' in lines[i]:
-                insert_index = i + 1
+        if in_target_list:
+            bracket_count += line.count('[') - line.count(']')
+            if 'formulae.brew.sh' in line:
+                last_url_line = i
+            if bracket_count <= 0:
+                # Found the closing bracket
                 break
 
-        # Insert the new URL
-        lines.insert(insert_index, url_to_add)
-
-        return list_start + '\n'.join(lines) + list_end
-
-    new_content, count = re.subn(list_pattern, replacer, content, flags=re.DOTALL)
-
-    if count == 0:
+    if list_start_line == -1:
         return False, f"Could not find list '{list_name}' in collect_app_info.py"
 
+    # Insert after the last URL line
+    if last_url_line == -1:
+        # Empty list, insert after the opening bracket
+        insert_line = list_start_line + 1
+    else:
+        insert_line = last_url_line + 1
+
+    # Insert the new URL
+    lines.insert(insert_line, url_to_add)
+
     with open(script_path, 'w') as f:
-        f.write(new_content)
+        f.writelines(lines)
 
     return True, None
 

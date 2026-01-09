@@ -44,6 +44,19 @@ jobs:
               content: 'eyes'
             });
 
+      - name: Post progress comment
+        id: progress
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const { data: comment } = await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: `## Processing App Request\n\n- [ ] Validating app on Homebrew\n- [ ] Adding to supported apps list\n- [ ] Committing changes\n- [ ] Triggering build workflow`
+            });
+            core.setOutput('comment_id', comment.id);
+
       - name: Checkout repository
         uses: actions/checkout@v4
         with:
@@ -97,8 +110,13 @@ jobs:
             const appName = '${{ steps.add-app.outputs.app_name }}';
             const appType = '${{ steps.add-app.outputs.app_type }}';
             const caskName = '${{ steps.add-app.outputs.cask_name }}';
+            const commentId = ${{ steps.progress.outputs.comment_id }};
 
             let body = `## Approved\n\n`;
+            body += `- [x] Validating app on Homebrew\n`;
+            body += `- [x] Adding to supported apps list\n`;
+            body += `- [x] Committing changes\n`;
+            body += `- [x] Triggering build workflow\n\n`;
             body += `**${appName}** has been added to IntuneBrew.\n\n`;
             body += `| Property | Value |\n|----------|-------|\n`;
             body += `| Cask | \`${caskName}\` |\n`;
@@ -110,10 +128,10 @@ jobs:
 
             body += `\nThe build has been triggered. Track progress: [Actions](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/workflows/build-app-packages.yml)`;
 
-            await github.rest.issues.createComment({
+            await github.rest.issues.updateComment({
               owner: context.repo.owner,
               repo: context.repo.repo,
-              issue_number: context.issue.number,
+              comment_id: commentId,
               body: body
             });
 
@@ -136,13 +154,25 @@ jobs:
         with:
           script: |
             const error = `${{ steps.add-app.outputs.error_message }}` || 'Unknown error';
+            const commentId = ${{ steps.progress.outputs.comment_id || 0 }};
 
-            await github.rest.issues.createComment({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              issue_number: context.issue.number,
-              body: `## Could Not Add App\n\n${error}\n\nPlease check the issue and try again.`
-            });
+            const body = `## Failed to Add App\n\n- [x] Validating app on Homebrew\n- [ ] Adding to supported apps list\n- [ ] Committing changes\n- [ ] Triggering build workflow\n\n**Error:** ${error}\n\nPlease check the issue and try again.`;
+
+            if (commentId) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: commentId,
+                body: body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: body
+              });
+            }
 
       - name: Update reaction
         if: always()
