@@ -18,8 +18,8 @@ jobs:
   preview-app:
     # Run for: new app request issues, /check comments, or manual dispatch
     if: |
-      (github.event_name == 'issues' && contains(join(github.event.issue.labels.*.name, ','), 'app request')) ||
-      (github.event_name == 'issue_comment' && contains(github.event.comment.body, '/check')) ||
+      (github.event_name == 'issues' && (contains(join(github.event.issue.labels.*.name, ','), 'app request') || contains(join(github.event.issue.labels.*.name, ','), 'feature request'))) ||
+      (github.event_name == 'issue_comment' && (contains(github.event.comment.body, '/check') || contains(github.event.comment.body, '/review'))) ||
       (github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest
 
