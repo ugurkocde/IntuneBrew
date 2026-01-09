@@ -1,18 +1,19 @@
 #!/usr/bin/env python3
 """
-Script to add a new app to IntuneBrew based on GitHub issue content.
+Script to add new apps to IntuneBrew based on GitHub issue content.
 
 This script:
-1. Parses the issue title/body to extract the app name or Homebrew cask name
-2. Searches Homebrew if no direct cask name is found
-3. Fetches app info from Homebrew API to determine the app type
-4. Adds the URL to the appropriate list in collect_app_info.py
-5. Outputs the result for the GitHub Action
+1. Parses the comment for specific cask names (/approve cask1, cask2)
+2. Or extracts app names from issue title/body
+3. Searches Homebrew for each app
+4. Adds all found apps to the appropriate lists in collect_app_info.py
+5. Outputs the results for the GitHub Action
 """
 
 import os
 import re
 import sys
+import json
 import requests
 from difflib import SequenceMatcher
 
@@ -31,7 +32,7 @@ def set_output(name, value):
                 f.write(f"{name}<<{delimiter}\n{value}\n{delimiter}\n")
             else:
                 f.write(f"{name}={value}\n")
-    print(f"Output: {name}={value}")
+    print(f"Output: {name}={value[:100]}..." if len(str(value)) > 100 else f"Output: {name}={value}")
 
 def set_failed(message):
     """Set the action as failed with an error message."""
@@ -61,13 +62,9 @@ def get_homebrew_cask_list():
 
 def normalize_name(name):
     """Normalize an app name for comparison."""
-    # Convert to lowercase
     name = name.lower()
-    # Remove common suffixes
     name = re.sub(r'\s*(app|application|client|desktop|for mac|for macos|macos|mac)$', '', name, flags=re.IGNORECASE)
-    # Replace special characters with spaces
     name = re.sub(r'[_\-\.]+', ' ', name)
-    # Remove extra whitespace
     name = ' '.join(name.split())
     return name
 
@@ -95,7 +92,6 @@ def search_homebrew_casks(search_term):
         if isinstance(names, str):
             names = [names]
 
-        # Calculate various similarity scores
         scores = []
 
         # Exact token match (highest priority)
@@ -133,136 +129,90 @@ def search_homebrew_casks(search_term):
 
         best_score = max(scores) if scores else 0
 
-        if best_score >= 0.4:  # Minimum threshold
+        if best_score >= 0.5:  # Minimum threshold
             results.append((token, cask, best_score))
 
     # Sort by score descending
     results.sort(key=lambda x: x[2], reverse=True)
 
-    return results[:10]  # Return top 10 matches
+    return results[:5]  # Return top 5 matches
 
-def extract_app_name_from_issue(issue_title, issue_body):
-    """Extract the app name from issue title and body."""
+def extract_casks_from_comment(comment_body):
+    """Extract specific cask names from /approve command."""
+    # Match /approve followed by cask names (comma or space separated)
+    match = re.search(r'/approve\s+([^\n]+)', comment_body, re.IGNORECASE)
+    if match:
+        casks_str = match.group(1).strip()
+        # Split by comma, space, or both
+        casks = re.split(r'[,\s]+', casks_str)
+        # Filter out empty strings and common words
+        casks = [c.strip() for c in casks if c.strip() and c.strip().lower() not in ['and', 'the', 'to']]
+        return casks
+    return []
 
-    # Try various patterns in the title
+def extract_casks_from_urls(issue_body):
+    """Extract all cask names from Homebrew URLs in the issue body."""
+    casks = []
+    # Homebrew API URLs
+    for match in re.finditer(r'formulae\.brew\.sh/api/cask/([^/\s.]+)\.json', issue_body):
+        if match.group(1) not in casks:
+            casks.append(match.group(1))
+    # Homebrew cask page URLs
+    for match in re.finditer(r'formulae\.brew\.sh/cask/([^/\s\)]+)', issue_body):
+        if match.group(1) not in casks:
+            casks.append(match.group(1))
+    # brew install commands
+    for match in re.finditer(r'brew\s+install\s+(?:--cask\s+)?([^\s\n]+)', issue_body):
+        if match.group(1) not in casks:
+            casks.append(match.group(1))
+    return casks
+
+def extract_app_names_from_title(issue_title):
+    """Extract multiple app names from issue title."""
+    app_names = []
+
     patterns = [
-        # [Feature] Add AppName to IntuneBrew
-        r'\[Feature\]\s*Add\s+(.+?)\s+to\s+(?:IntuneBrew|the\s+)?(?:Application\s+)?(?:List)?',
-        # Add AppName
-        r'^Add\s+(.+?)(?:\s+to|\s*$)',
-        # Request: AppName
+        r'\[Feature\]\s*Add\s+(.+?)\s+to\s+(?:IntuneBrew|the\s+)?(?:app(?:lication)?\s+)?(?:list)?',
+        r'^Add\s+(.+?)\s+to\s+',
+        r'^Add\s+(.+?)$',
         r'Request[:\s]+(.+?)(?:\s+to|\s*$)',
-        # AppName request
-        r'^(.+?)\s+request',
     ]
 
+    apps_string = None
     for pattern in patterns:
         match = re.search(pattern, issue_title, re.IGNORECASE)
         if match:
-            app_name = match.group(1).strip()
-            # Clean up the app name
-            app_name = re.sub(r'\s+to\s+IntuneBrew.*$', '', app_name, flags=re.IGNORECASE)
-            app_name = re.sub(r'\s+application\s+list.*$', '', app_name, flags=re.IGNORECASE)
-            if app_name and len(app_name) > 1:
-                return app_name
+            apps_string = match.group(1).strip()
+            break
 
-    # Try to find app name in body if title didn't work
-    # Look for patterns like "App name: xyz" or "Application: xyz"
-    body_patterns = [
-        r'app\s*(?:name)?[:\s]+([^\n,]+)',
-        r'application[:\s]+([^\n,]+)',
-        r'software[:\s]+([^\n,]+)',
-        r'requesting[:\s]+([^\n,]+)',
-    ]
+    if apps_string:
+        # Split by comma, "and", or "&"
+        parts = re.split(r'\s*[,&]\s*|\s+and\s+', apps_string)
+        for part in parts:
+            part = part.strip()
+            part = re.sub(r'\s+to\s+IntuneBrew.*$', '', part, flags=re.IGNORECASE)
+            part = re.sub(r'\s+application\s+list.*$', '', part, flags=re.IGNORECASE)
+            if part and len(part) > 1:
+                app_names.append(part)
 
-    for pattern in body_patterns:
-        match = re.search(pattern, issue_body, re.IGNORECASE)
-        if match:
-            app_name = match.group(1).strip()
-            if app_name and len(app_name) > 1 and len(app_name) < 50:
-                return app_name
-
-    return None
-
-def extract_cask_name(issue_title, issue_body, comment_body):
-    """
-    Extract or find the Homebrew cask name from the issue or comment.
-
-    Returns: tuple (cask_name, is_exact_match, search_results)
-    - cask_name: The Homebrew cask token
-    - is_exact_match: True if we found an exact URL/cask reference
-    - search_results: List of alternative matches if search was used
-    """
-
-    # Check if comment has a specific cask name override (e.g., "/approve signal")
-    comment_match = re.search(r'/approve\s+(\S+)', comment_body)
-    if comment_match:
-        cask_name = comment_match.group(1).strip()
-        return cask_name, True, []
-
-    # Try to find Homebrew API URL
-    api_pattern = r'formulae\.brew\.sh/api/cask/([^/\s.]+)\.json'
-    match = re.search(api_pattern, issue_body)
-    if match:
-        return match.group(1), True, []
-
-    # Try to find Homebrew cask page URL
-    cask_pattern = r'formulae\.brew\.sh/cask/([^/\s]+)'
-    match = re.search(cask_pattern, issue_body)
-    if match:
-        return match.group(1), True, []
-
-    # Try to find "brew install --cask" command
-    brew_pattern = r'brew\s+install\s+(?:--cask\s+)?([^\s]+)'
-    match = re.search(brew_pattern, issue_body)
-    if match:
-        return match.group(1), True, []
-
-    # No direct cask reference found, extract app name and search
-    app_name = extract_app_name_from_issue(issue_title, issue_body)
-
-    if not app_name:
-        return None, False, []
-
-    print(f"No direct cask reference found. Searching Homebrew for: '{app_name}'")
-
-    # Search Homebrew
-    search_results = search_homebrew_casks(app_name)
-
-    if not search_results:
-        return None, False, []
-
-    # Get the best match
-    best_match = search_results[0]
-    best_token, best_cask, best_score = best_match
-
-    print(f"Best match: {best_token} (score: {best_score:.2f})")
-    print(f"  Names: {best_cask.get('name', [])}")
-
-    # If score is high enough, use it automatically
-    if best_score >= 0.7:
-        return best_token, False, search_results
-
-    # If score is moderate, still use it but include alternatives
-    if best_score >= 0.5:
-        return best_token, False, search_results
-
-    # Score too low, return results for manual review
-    return None, False, search_results
+    return app_names
 
 def fetch_homebrew_info(cask_name):
     """Fetch app information from Homebrew API."""
     url = f"https://formulae.brew.sh/api/cask/{cask_name}.json"
-    print(f"Fetching Homebrew info from: {url}")
+    print(f"Fetching Homebrew info for: {cask_name}")
 
     try:
         response = requests.get(url, timeout=30)
+        if response.status_code == 404:
+            return None
         response.raise_for_status()
         return response.json()
-    except requests.exceptions.HTTPError as e:
-        if e.response.status_code == 404:
-            return None
-        raise
+    except requests.exceptions.HTTPError:
+        return None
+    except Exception as e:
+        print(f"Error fetching {cask_name}: {e}")
+        return None
 
 def determine_app_type(homebrew_data):
     """
@@ -270,98 +220,57 @@ def determine_app_type(homebrew_data):
     and artifact information.
 
     Returns: tuple (list_name, type_value)
-    - list_name: The Python variable name in collect_app_info.py
-    - type_value: The type to be stored in the JSON (or None for DMG)
     """
     url = homebrew_data.get('url', '').lower()
     artifacts = homebrew_data.get('artifacts', [])
 
-    # Extract actual file extension from URL (handles redirects like ?file=app.dmg)
     def get_url_extension(url):
-        # Check for file parameter in URL (e.g., rotation.php?file=HandBrake.dmg)
-        import re
         file_match = re.search(r'[?&]file=([^&]+)', url)
         if file_match:
             return file_match.group(1).lower()
-        # Get the last path segment
         path = url.split('?')[0].split('/')[-1].lower()
         return path
 
     url_file = get_url_extension(url)
 
-    # Check artifacts first - they're more reliable than URL
-    has_pkg_artifact = False
-    has_app_artifact = False
+    has_pkg_artifact = any(isinstance(a, dict) and 'pkg' in a for a in artifacts)
+    has_app_artifact = any(isinstance(a, dict) and 'app' in a for a in artifacts)
 
-    for artifact in artifacts:
-        if isinstance(artifact, dict):
-            if 'pkg' in artifact:
-                has_pkg_artifact = True
-            if 'app' in artifact:
-                has_app_artifact = True
-
-    # Determine file type from URL
     is_pkg_url = url_file.endswith('.pkg')
     is_dmg_url = url_file.endswith('.dmg')
     is_archive_url = any(url_file.endswith(ext) for ext in ['.zip', '.tar.gz', '.tar.xz', '.tar.bz2', '.tbz', '.tgz'])
 
-    # Decision logic:
-    # 1. If URL is PKG and has pkg artifact -> direct PKG
-    # 2. If URL is DMG and has pkg artifact -> PKG in DMG
-    # 3. If URL is DMG and has app artifact -> regular DMG
-    # 4. If URL is archive (zip/tar) -> needs repackaging (app type)
-    # 5. If URL has no extension but has pkg artifact -> direct PKG
-    # 6. If URL has no extension but has app artifact -> needs repackaging (ZIP download)
-
     if is_pkg_url:
-        if has_pkg_artifact:
-            # Check if it might be pkg-in-pkg (nested package)
-            # This is harder to detect, usually these are special cases
-            return 'pkg_urls', 'pkg'
         return 'pkg_urls', 'pkg'
 
     if is_dmg_url:
         if has_pkg_artifact:
             return 'pkg_in_dmg_urls', 'pkg_in_dmg'
-        return 'homebrew_cask_urls', None
+        return 'homebrew_cask_urls', 'dmg'
 
     if is_archive_url:
         return 'app_urls', 'app'
 
     # URL doesn't have a clear extension - use artifacts to decide
     if has_pkg_artifact:
-        # It's a PKG download (like cloudflare-warp)
         return 'pkg_urls', 'pkg'
 
     if has_app_artifact:
-        # It's likely a ZIP or archive that extracts to .app (like VS Code)
         return 'app_urls', 'app'
 
-    # Default to DMG list if we can't determine
+    # Default to DMG list
     print(f"Warning: Could not determine app type for URL: {url}")
-    return 'homebrew_cask_urls', None
+    return 'homebrew_cask_urls', 'dmg'
 
 def check_app_exists(cask_name, script_content):
     """Check if the app already exists in any of the lists."""
     pattern = rf'formulae\.brew\.sh/api/cask/{re.escape(cask_name)}\.json'
     return bool(re.search(pattern, script_content))
 
-def add_url_to_list(script_path, list_name, cask_name):
-    """Add the Homebrew URL to the appropriate list in collect_app_info.py."""
-
-    with open(script_path, 'r') as f:
-        lines = f.readlines()
-
-    content = ''.join(lines)
-
-    # Check if app already exists
-    if check_app_exists(cask_name, content):
-        return False, "App already exists in the supported apps list"
-
-    # Find the list and the position to insert
+def add_url_to_list(script_path, list_name, cask_name, lines):
+    """Add the Homebrew URL to the appropriate list. Modifies lines in place."""
     url_to_add = f'    "https://formulae.brew.sh/api/cask/{cask_name}.json",\n'
 
-    # Find the line where the list starts
     list_start_pattern = rf'^{re.escape(list_name)}\s*=\s*\['
     list_start_line = -1
     in_target_list = False
@@ -382,112 +291,153 @@ def add_url_to_list(script_path, list_name, cask_name):
             if 'formulae.brew.sh' in line:
                 last_url_line = i
             if bracket_count <= 0:
-                # Found the closing bracket
                 break
 
     if list_start_line == -1:
         return False, f"Could not find list '{list_name}' in collect_app_info.py"
 
-    # Insert after the last URL line
     if last_url_line == -1:
-        # Empty list, insert after the opening bracket
         insert_line = list_start_line + 1
     else:
         insert_line = last_url_line + 1
 
-    # Insert the new URL
     lines.insert(insert_line, url_to_add)
-
-    with open(script_path, 'w') as f:
-        f.writelines(lines)
-
     return True, None
 
 def main():
-    # Get environment variables
     issue_title = os.environ.get('ISSUE_TITLE', '')
     issue_body = os.environ.get('ISSUE_BODY', '')
     comment_body = os.environ.get('COMMENT_BODY', '')
 
     print(f"Issue title: {issue_title}")
-    print(f"Issue body length: {len(issue_body)}")
     print(f"Comment body: {comment_body}")
 
-    # Extract cask name (with search if needed)
-    cask_name, is_exact, search_results = extract_cask_name(issue_title, issue_body, comment_body)
-
-    if not cask_name:
-        if search_results:
-            # We found some matches but none were confident enough
-            suggestions = "\n".join([
-                f"  - `{token}` ({cask.get('name', ['Unknown'])[0]}) - score: {score:.0%}"
-                for token, cask, score in search_results[:5]
-            ])
-            set_failed(
-                f"Could not confidently match the app name. Possible matches:\n{suggestions}\n\n"
-                f"To approve one of these, comment: /approve <cask-name>"
-            )
-        else:
-            set_failed(
-                "Could not find the app on Homebrew. Please ensure:\n"
-                "1. The app is available as a Homebrew cask\n"
-                "2. The issue title clearly states the app name\n"
-                "3. Or include a Homebrew URL in the issue body"
-            )
-        sys.exit(1)
-
-    print(f"Using cask name: {cask_name}")
-    set_output('cask_name', cask_name)
-
-    # If we used search, output the alternatives
-    if not is_exact and search_results:
-        alternatives = ", ".join([f"`{t}`" for t, _, _ in search_results[1:4]])
-        if alternatives:
-            set_output('alternatives', alternatives)
-
-    # Fetch Homebrew info to verify and get details
-    homebrew_data = fetch_homebrew_info(cask_name)
-
-    if not homebrew_data:
-        if search_results and len(search_results) > 1:
-            # Try the next best match
-            next_best = search_results[1]
-            set_failed(
-                f"Could not find '{cask_name}' on Homebrew. "
-                f"Did you mean `{next_best[0]}`? Try: /approve {next_best[0]}"
-            )
-        else:
-            set_failed(f"Could not find '{cask_name}' on Homebrew. Please verify the cask name is correct.")
-        sys.exit(1)
-
-    # Get app name
-    app_name = homebrew_data.get('name', [cask_name])
-    if isinstance(app_name, list):
-        app_name = app_name[0] if app_name else cask_name
-    print(f"App name: {app_name}")
-    set_output('app_name', app_name)
-
-    # Determine app type
-    list_name, app_type = determine_app_type(homebrew_data)
-    print(f"Determined list: {list_name}, type: {app_type}")
-    set_output('app_type', app_type or 'dmg')
-
-    # Add to collect_app_info.py
     script_path = '.github/scripts/collect_app_info.py'
 
-    success, error = add_url_to_list(script_path, list_name, cask_name)
+    # Read the script content
+    with open(script_path, 'r') as f:
+        lines = f.readlines()
+    content = ''.join(lines)
 
-    if not success:
-        set_failed(error)
+    # Determine which casks to add
+    casks_to_process = []
+
+    # First, check if specific casks are mentioned in the /approve command
+    specific_casks = extract_casks_from_comment(comment_body)
+    if specific_casks:
+        print(f"Specific casks from command: {specific_casks}")
+        casks_to_process = specific_casks
+    else:
+        # Try to extract from URLs in issue body
+        casks_from_urls = extract_casks_from_urls(issue_body)
+        if casks_from_urls:
+            print(f"Casks from URLs: {casks_from_urls}")
+            casks_to_process = casks_from_urls
+        else:
+            # Search by app names from title
+            app_names = extract_app_names_from_title(issue_title)
+            print(f"App names from title: {app_names}")
+            for app_name in app_names:
+                results = search_homebrew_casks(app_name)
+                if results:
+                    best_token, _, best_score = results[0]
+                    if best_score >= 0.5:
+                        print(f"  Found: {best_token} (score: {best_score:.2f})")
+                        if best_token not in casks_to_process:
+                            casks_to_process.append(best_token)
+                    else:
+                        print(f"  Low score for {app_name}: {best_token} ({best_score:.2f})")
+
+    if not casks_to_process:
+        set_failed("Could not find any apps to add. Please specify cask names: /approve cask1, cask2")
         sys.exit(1)
 
-    print(f"Successfully added {cask_name} to {list_name}")
-    set_output('app_added', 'true')
+    # Process each cask
+    added_apps = []
+    skipped_apps = []
+    failed_apps = []
 
-    # If search was used, mention it
-    if not is_exact:
-        set_output('search_used', 'true')
-        print(f"Note: App was found via search, not direct URL reference")
+    for cask_name in casks_to_process:
+        # Check if already exists
+        if check_app_exists(cask_name, content):
+            print(f"Skipping {cask_name}: already exists")
+            skipped_apps.append({'cask': cask_name, 'reason': 'already exists'})
+            continue
+
+        # Fetch Homebrew info
+        homebrew_data = fetch_homebrew_info(cask_name)
+        if not homebrew_data:
+            print(f"Failed {cask_name}: not found on Homebrew")
+            failed_apps.append({'cask': cask_name, 'reason': 'not found on Homebrew'})
+            continue
+
+        # Get app name
+        app_name = homebrew_data.get('name', [cask_name])
+        if isinstance(app_name, list):
+            app_name = app_name[0] if app_name else cask_name
+
+        # Determine app type
+        list_name, app_type = determine_app_type(homebrew_data)
+        print(f"Adding {cask_name} ({app_name}) to {list_name} as {app_type}")
+
+        # Add to list
+        success, error = add_url_to_list(script_path, list_name, cask_name, lines)
+        if success:
+            # Update content for subsequent checks
+            content = ''.join(lines)
+            added_apps.append({
+                'cask': cask_name,
+                'name': app_name,
+                'type': app_type,
+                'list': list_name
+            })
+        else:
+            print(f"Failed to add {cask_name}: {error}")
+            failed_apps.append({'cask': cask_name, 'reason': error})
+
+    # Write the updated file if any apps were added
+    if added_apps:
+        with open(script_path, 'w') as f:
+            f.writelines(lines)
+
+        # Generate commit message
+        if len(added_apps) == 1:
+            commit_msg = f"{added_apps[0]['name']} to supported apps list"
+        else:
+            app_names = [a['name'] for a in added_apps]
+            if len(app_names) <= 3:
+                commit_msg = f"{', '.join(app_names)} to supported apps list"
+            else:
+                commit_msg = f"{len(added_apps)} apps to supported apps list"
+
+        set_output('app_added', 'true')
+        set_output('apps_json', json.dumps(added_apps))
+        set_output('commit_message', commit_msg)
+        set_output('added_count', str(len(added_apps)))
+
+        # For single app compatibility
+        if len(added_apps) == 1:
+            set_output('app_name', added_apps[0]['name'])
+            set_output('cask_name', added_apps[0]['cask'])
+            set_output('app_type', added_apps[0]['type'])
+
+        print(f"\nSuccessfully added {len(added_apps)} app(s)")
+    else:
+        if skipped_apps:
+            set_failed(f"All apps already exist: {', '.join(a['cask'] for a in skipped_apps)}")
+        elif failed_apps:
+            set_failed(f"Failed to add apps: {', '.join(f\"{a['cask']} ({a['reason']})\" for a in failed_apps)}")
+        else:
+            set_failed("No apps were added")
+        sys.exit(1)
+
+    # Output summary
+    if skipped_apps:
+        set_output('skipped', json.dumps(skipped_apps))
+        print(f"Skipped {len(skipped_apps)} app(s): {', '.join(a['cask'] for a in skipped_apps)}")
+    if failed_apps:
+        set_output('failed', json.dumps(failed_apps))
+        print(f"Failed {len(failed_apps)} app(s): {', '.join(a['cask'] for a in failed_apps)}")
 
 if __name__ == '__main__':
     main()
