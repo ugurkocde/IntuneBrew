@@ -1,0 +1,10 @@
+{
+  "name": "IntelliJ IDEA Ultimate",
+  "description": "Java IDE by JetBrains",
+  "version": "2025.3.1.1",
+  "url": "https://download.jetbrains.com/idea/ideaIU-2025.3.1.1-aarch64.dmg",
+  "bundleId": null,
+  "homepage": "https://www.jetbrains.com/idea/",
+  "fileName": "ideaIU-2025.3.1.1-aarch64.dmg",
+  "sha": "7bda62f345c11892ff940682bb59e60eee40674bb2f2cdc6204b2e1b2ad38df8"
+}

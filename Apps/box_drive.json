@@ -1,0 +1,11 @@
+{
+  "name": "Box Drive",
+  "description": "Client for the Box cloud storage service",
+  "version": "2.49.255",
+  "url": "https://e3.boxcdn.net/desktop/releases/mac/BoxDrive-2.49.255.pkg",
+  "bundleId": "com.box.desktop.installer.*",
+  "homepage": "https://www.box.com/drive",
+  "fileName": "BoxDrive-2.49.255.pkg",
+  "type": "pkg",
+  "sha": "3307d8af418e52fab82613d2a0ffc9a85152a8bfe67ba25c5fbf59ef1ad0a7c1"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Warp",
+  "description": "Rust-based terminal",
+  "version": "0.2026.01.07.08.13.stable",
+  "url": "https://app.warp.dev/download/brew?version=v0.2026.01.07.08.13.stable_01",
+  "bundleId": null,
+  "homepage": "https://www.warp.dev/",
+  "fileName": "brew?version=v0.2026.01.07.08.13.stable_01",
+  "type": "app"
+}

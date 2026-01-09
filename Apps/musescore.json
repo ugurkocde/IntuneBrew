@@ -1,0 +1,10 @@
+{
+  "name": "MuseScore",
+  "description": "Open-source music notation software",
+  "version": "4.6.5.253511702",
+  "url": "https://github.com/musescore/MuseScore/releases/download/v4.6.5/MuseScore-Studio-4.6.5.253511702.dmg",
+  "bundleId": null,
+  "homepage": "https://musescore.org/",
+  "fileName": "MuseScore-Studio-4.6.5.253511702.dmg",
+  "sha": "89624d9e6618bd7fd224b226e63e83722b9124bc2c466206b01762375c69d4ad"
+}
