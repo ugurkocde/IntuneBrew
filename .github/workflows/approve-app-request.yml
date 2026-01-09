@@ -22,15 +22,13 @@ jobs:
         uses: actions/github-script@v7
         with:
           script: |
-            const { data: permission } = await github.rest.repos.getCollaboratorPermissionLevel({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              username: context.payload.comment.user.login
-            });
+            const commenter = context.payload.comment.user.login;
+            const repoOwner = context.repo.owner;
 
-            const allowedPermissions = ['admin', 'write'];
-            if (!allowedPermissions.includes(permission.permission)) {
-              core.setFailed(`User ${context.payload.comment.user.login} does not have permission to approve app requests.`);
+            // Only the repository owner can use /approve
+            if (commenter.toLowerCase() !== repoOwner.toLowerCase()) {
+              core.setFailed(`Only the repository owner can approve app requests. User: ${commenter}`);
+              return;
             }
 
       - name: Add reaction

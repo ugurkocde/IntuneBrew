@@ -27,6 +27,20 @@ jobs:
       issues: write
 
     steps:
+      - name: Check user permission for commands
+        if: github.event_name == 'issue_comment'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const commenter = context.payload.comment.user.login;
+            const repoOwner = context.repo.owner;
+
+            // Only the repository owner can use /check and /review commands
+            if (commenter.toLowerCase() !== repoOwner.toLowerCase()) {
+              core.setFailed(`Only the repository owner can use /check and /review commands. User: ${commenter}`);
+              return;
+            }
+
       - name: Get issue data
         id: issue
         uses: actions/github-script@v7
