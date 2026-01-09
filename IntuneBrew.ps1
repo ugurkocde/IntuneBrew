@@ -298,7 +298,7 @@ function Connect-WithClientSecret {
 function Connect-Interactive {
     try {
         $permissionsList = $requiredPermissions -join ','
-        Connect-MgGraph -Scopes $permissionsList -NoWelcome -ErrorAction Stop
+        Connect-MgGraph -Environment USGov -Scopes $permissionsList -NoWelcome -ErrorAction Stop
         Write-Host "Successfully connected to Microsoft Graph using interactive sign-in." -ForegroundColor Green
         return $true
     }
