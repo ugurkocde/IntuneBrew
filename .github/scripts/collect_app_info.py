@@ -176,6 +176,7 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/nucleo.json",
     "https://formulae.brew.sh/api/cask/principle.json",
     "https://formulae.brew.sh/api/cask/spline.json"
+    "https://formulae.brew.sh/api/cask/mac-mouse-fix.json",
 ]
 
 # DMG
