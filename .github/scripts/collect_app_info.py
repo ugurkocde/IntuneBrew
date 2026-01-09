@@ -567,6 +567,7 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/cisco-jabber.json",
     "https://formulae.brew.sh/api/cask/microsoft-auto-update.json",
     "https://formulae.brew.sh/api/cask/box-drive.json",
+    "https://formulae.brew.sh/api/cask/session-manager-plugin.json",
 ]
 
 # Custom scraper scripts to run
