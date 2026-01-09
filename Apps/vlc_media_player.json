@@ -1,11 +1,11 @@
 {
   "name": "VLC media player",
   "description": "Multimedia player",
-  "version": "3.0.21",
-  "url": "https://get.videolan.org/vlc/3.0.21/macosx/vlc-3.0.21-arm64.dmg",
+  "version": "3.0.23",
+  "url": "https://get.videolan.org/vlc/3.0.23/macosx/vlc-3.0.23-arm64.dmg",
   "bundleId": "org.videolan.vlc",
   "homepage": "https://www.videolan.org/vlc/",
-  "fileName": "vlc-3.0.21-arm64.dmg",
-  "sha": "15dd65bf6489da9ec6a67f5585c74c40a58993acff41a82958a916dd74178044",
+  "fileName": "vlc-3.0.23-arm64.dmg",
+  "sha": "fc6fac08d87f538517d44aca0c5e7a244b67c8c4cb589bf478363a7315fd5e0d",
   "previous_version": "3.0.21"
 }
