@@ -424,9 +424,11 @@ def main():
         print(f"\nSuccessfully added {len(added_apps)} app(s)")
     else:
         if skipped_apps:
-            set_failed(f"All apps already exist: {', '.join(a['cask'] for a in skipped_apps)}")
+            skipped_list = ', '.join(a['cask'] for a in skipped_apps)
+            set_failed(f"All apps already exist: {skipped_list}")
         elif failed_apps:
-            set_failed(f"Failed to add apps: {', '.join(f\"{a['cask']} ({a['reason']})\" for a in failed_apps)}")
+            failed_list = ', '.join(f"{a['cask']} ({a['reason']})" for a in failed_apps)
+            set_failed(f"Failed to add apps: {failed_list}")
         else:
             set_failed("No apps were added")
         sys.exit(1)
