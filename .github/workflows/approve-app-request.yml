@@ -92,18 +92,7 @@ jobs:
           git commit -m "Add ${{ steps.add-app.outputs.commit_message }}"
           git push
 
-      - name: Trigger build workflow
-        if: steps.add-app.outputs.app_added == 'true'
-        uses: actions/github-script@v7
-        with:
-          github-token: ${{ secrets.PAT }}
-          script: |
-            await github.rest.actions.createWorkflowDispatch({
-              owner: context.repo.owner,
-              repo: context.repo.repo,
-              workflow_id: 'build-app-packages.yml',
-              ref: 'main'
-            });
+      # Build is auto-triggered by push to main (collect_app_info.py change)
 
       - name: Comment success
         if: steps.add-app.outputs.app_added == 'true'
