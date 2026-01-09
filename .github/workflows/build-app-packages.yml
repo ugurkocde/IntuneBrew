@@ -5,6 +5,11 @@ on:
   schedule:
     - cron: "0 0 * * *" # Run at midnight UTC every day
 
+# Cancel old builds when a new one starts (new build includes all apps)
+concurrency:
+  group: build-app-packages
+  cancel-in-progress: true
+
 jobs:
   build:
     runs-on: macos-latest

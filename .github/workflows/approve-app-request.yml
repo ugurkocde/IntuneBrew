@@ -4,6 +4,11 @@ on:
   issue_comment:
     types: [created]
 
+# Queue approvals - only one can run at a time
+concurrency:
+  group: approve-app-request
+  cancel-in-progress: false
+
 jobs:
   approve-app:
     # Only run if comment contains "/approve"
