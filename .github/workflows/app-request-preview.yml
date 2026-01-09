@@ -183,29 +183,49 @@ jobs:
               try:
                   r = requests.get(f"https://formulae.brew.sh/api/cask/{cask_name}.json", timeout=30)
                   data = r.json()
-                  url = data.get('url', '').lower()
+                  url = data.get('url', '')
+                  url_lower = url.lower()
                   artifacts = data.get('artifacts', [])
 
-                  # Get URL file extension
-                  file_match = re.search(r'[?&]file=([^&]+)', url)
-                  url_file = file_match.group(1).lower() if file_match else url.split('?')[0].split('/')[-1].lower()
+                  # Get URL file extension (handle redirects like ?file=app.dmg)
+                  file_match = re.search(r'[?&]file=([^&]+)', url_lower)
+                  url_file = file_match.group(1).lower() if file_match else url_lower.split('?')[0].split('/')[-1].lower()
 
+                  # Check artifacts for installation type
                   has_pkg = any(isinstance(a, dict) and 'pkg' in a for a in artifacts)
                   has_app = any(isinstance(a, dict) and 'app' in a for a in artifacts)
 
+                  # Determine file type from URL or artifacts
                   if url_file.endswith('.pkg'):
-                      return 'pkg', data
-                  if url_file.endswith('.dmg'):
-                      return 'pkg_in_dmg' if has_pkg else 'dmg', data
-                  if any(url_file.endswith(ext) for ext in ['.zip', '.tar.gz', '.tar.xz', '.tar.bz2']):
-                      return 'app (needs repackaging)', data
-                  if has_pkg:
-                      return 'pkg', data
-                  if has_app:
-                      return 'app (needs repackaging)', data
-                  return 'dmg', data
+                      file_type = 'pkg'
+                      app_type = 'pkg'
+                  elif url_file.endswith('.dmg'):
+                      file_type = 'dmg'
+                      app_type = 'pkg_in_dmg' if has_pkg else 'dmg'
+                  elif any(url_file.endswith(ext) for ext in ['.zip', '.tar.gz', '.tar.xz', '.tar.bz2', '.tgz', '.tbz']):
+                      file_type = url_file.split('.')[-1]
+                      if url_file.endswith('.tar.gz'):
+                          file_type = 'tar.gz'
+                      elif url_file.endswith('.tar.xz'):
+                          file_type = 'tar.xz'
+                      elif url_file.endswith('.tar.bz2'):
+                          file_type = 'tar.bz2'
+                      app_type = 'app (needs repackaging)'
+                  elif has_pkg:
+                      # URL is a redirect but artifact shows it's a PKG
+                      file_type = 'pkg (redirect URL)'
+                      app_type = 'pkg'
+                  elif has_app:
+                      # URL is a redirect but artifact shows it's an app bundle (likely ZIP)
+                      file_type = 'zip/archive (redirect URL)'
+                      app_type = 'app (needs repackaging)'
+                  else:
+                      file_type = 'unknown (redirect URL)'
+                      app_type = 'dmg'
+
+                  return app_type, file_type, url, data
               except:
-                  return 'unknown', None
+                  return 'unknown', 'unknown', '', None
 
           # Main logic
           issue_title = os.environ.get('ISSUE_TITLE', '')
@@ -218,7 +238,7 @@ jobs:
 
           if cask_from_url:
               print(f"Found cask from URL: {cask_from_url}")
-              app_type, data = determine_app_type(cask_from_url)
+              app_type, file_type, download_url, data = determine_app_type(cask_from_url)
               if data:
                   names = data.get('name', [cask_from_url])
                   app_name = names[0] if isinstance(names, list) else names
@@ -227,6 +247,8 @@ jobs:
                   set_output('cask_name', cask_from_url)
                   set_output('app_name', app_name)
                   set_output('app_type', app_type)
+                  set_output('file_type', file_type)
+                  set_output('download_url', download_url)
                   set_output('score', '100')
                   set_output('alternatives', '')
               else:
@@ -247,13 +269,15 @@ jobs:
                       names = best_cask.get('name', [best_token])
                       display_name = names[0] if isinstance(names, list) else names
 
-                      app_type, _ = determine_app_type(best_token)
+                      app_type, file_type, download_url, _ = determine_app_type(best_token)
 
                       set_output('found', 'true')
                       set_output('exact_match', 'false')
                       set_output('cask_name', best_token)
                       set_output('app_name', display_name)
                       set_output('app_type', app_type)
+                      set_output('file_type', file_type)
+                      set_output('download_url', download_url)
                       set_output('score', str(int(best_score * 100)))
 
                       # Get alternatives
@@ -286,6 +310,8 @@ jobs:
             const caskName = '${{ steps.search.outputs.cask_name }}';
             const appName = '${{ steps.search.outputs.app_name }}';
             const appType = '${{ steps.search.outputs.app_type }}';
+            const fileType = '${{ steps.search.outputs.file_type }}';
+            const downloadUrl = '${{ steps.search.outputs.download_url }}';
             const score = '${{ steps.search.outputs.score }}';
             const exactMatch = '${{ steps.search.outputs.exact_match }}' === 'true';
             const alternatives = '${{ steps.search.outputs.alternatives }}';
@@ -295,6 +321,8 @@ jobs:
             body += `| App Name | **${appName}** |\n`;
             body += `| Cask | \`${caskName}\` |\n`;
             body += `| Type | \`${appType}\` |\n`;
+            body += `| File Type | \`${fileType}\` |\n`;
+            body += `| Download URL | ${downloadUrl} |\n`;
             body += `| Homebrew | [View on Homebrew](https://formulae.brew.sh/cask/${caskName}) |\n`;
 
             if (!exactMatch) {
