@@ -5,11 +5,10 @@
   "url": "https://www.deepl.com/macos/download/26.1/13531937/DeepL.dmg",
   "bundleId": "com.linguee.DeepLCopyTranslator",
   "homepage": "https://www.deepl.com/",
-  "fileName": "deepl_25.7.22371106.pkg",
-  "type": "app",
+  "fileName": "DeepL.dmg",
   "sha": "1a5d1388ccb95d4ad36d4e825dfa2322f32bdcad5c0cc280ffe1e79a54b09f77",
+  "type": "app",
   "changelog": "https://www.deepl.com/changelog.html",
-  "previous_version": "26.1.13531937",
   "qa_info": {
     "qa_timestamp": "2025-05-14T06:45:18Z",
     "qa_result": "Installation successful and verified",
@@ -19,5 +18,6 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "25.5.12028494"
-  }
+  },
+  "previous_version": "26.1.13531937"
 }
