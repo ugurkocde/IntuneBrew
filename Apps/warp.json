@@ -6,5 +6,6 @@
   "bundleId": null,
   "homepage": "https://www.warp.dev/",
   "fileName": "brew?version=v0.2026.01.07.08.13.stable_01",
-  "type": "app"
+  "type": "app",
+  "previous_version": "0.2026.01.07.08.13.stable"
 }

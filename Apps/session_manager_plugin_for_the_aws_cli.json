@@ -7,5 +7,6 @@
   "homepage": "https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html",
   "fileName": "session-manager-plugin.pkg",
   "type": "pkg",
-  "sha": "a8d01a3fbd52b32ed45d1fb876844df8776010bc3d3f88178e2a31f540c987c9"
+  "sha": "a8d01a3fbd52b32ed45d1fb876844df8776010bc3d3f88178e2a31f540c987c9",
+  "previous_version": "1.2.764.0"
 }

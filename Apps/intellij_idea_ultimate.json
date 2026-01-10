@@ -6,5 +6,6 @@
   "bundleId": null,
   "homepage": "https://www.jetbrains.com/idea/",
   "fileName": "ideaIU-2025.3.1.1-aarch64.dmg",
-  "sha": "7bda62f345c11892ff940682bb59e60eee40674bb2f2cdc6204b2e1b2ad38df8"
+  "sha": "7bda62f345c11892ff940682bb59e60eee40674bb2f2cdc6204b2e1b2ad38df8",
+  "previous_version": "2025.3.1.1"
 }

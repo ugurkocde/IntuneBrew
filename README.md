@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-518-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -302,22 +302,12 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-09 22:10 UTC*
+*Last checked: 2026-01-10 00:31 UTC*
 
-| Application | Previous Version | New Version |
-|-------------|-----------------|-------------|
-| ProcessSpy | 1.10.2 | 1.10.3 |
-| Rocket.Chat | 4.11.0 | 4.11.1 |
-| RsyncUI | 2.8.5 | 2.8.6 |
-| Proton Drive | 2.10.1 | 2.10.2 |
-| RustDesk | 1.4.4 | 1.4.5 |
-| DataGrip | 2025.3.2 | 2025.3.3 |
-| draw.io Desktop | 29.2.9 | 29.3.0 |
-| Keeper Password Manager | 17.4.1 | 17.5.0 |
-| Microsoft Edge | 143.0.3650.96 | 143.0.3650.139 |
-| Insta360 Studio | 5.8.6 | 5.8.8 |
+> All applications are up to date! 🎉
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

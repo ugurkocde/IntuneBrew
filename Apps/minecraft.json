@@ -6,5 +6,6 @@
   "bundleId": null,
   "homepage": "https://minecraft.net/",
   "fileName": "Minecraft.dmg",
-  "sha": "82c59d9b3285017e2d6d1b035f539415c1feb50d7875a4f034cc29af27327b48"
+  "sha": "82c59d9b3285017e2d6d1b035f539415c1feb50d7875a4f034cc29af27327b48",
+  "previous_version": "2.1.3"
 }

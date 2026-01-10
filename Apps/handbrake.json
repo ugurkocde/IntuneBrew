@@ -6,5 +6,6 @@
   "bundleId": null,
   "homepage": "https://handbrake.fr/",
   "fileName": "rotation.php?file=HandBrake-1.10.2.dmg&update=true",
-  "sha": "32a7771d89f02d5d80d5a45711620fb206b22e7182acd8375d1d87afed7b4fd3"
+  "sha": "32a7771d89f02d5d80d5a45711620fb206b22e7182acd8375d1d87afed7b4fd3",
+  "previous_version": "1.10.2"
 }
