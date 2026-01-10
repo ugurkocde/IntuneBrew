@@ -108,7 +108,6 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/1password.json",
     "https://formulae.brew.sh/api/cask/alfred.json",
     "https://formulae.brew.sh/api/cask/asana.json",
-    "https://formulae.brew.sh/api/cask/deepl.json",
     "https://formulae.brew.sh/api/cask/arc.json",
     "https://formulae.brew.sh/api/cask/azure-data-studio.json",
     "https://formulae.brew.sh/api/cask/bartender.json",
@@ -175,10 +174,11 @@ app_urls = [
     "https://formulae.brew.sh/api/formula/antigen.json",
     "https://formulae.brew.sh/api/cask/nucleo.json",
     "https://formulae.brew.sh/api/cask/principle.json",
-    "https://formulae.brew.sh/api/cask/spline.json"
+    "https://formulae.brew.sh/api/cask/spline.json",
     "https://formulae.brew.sh/api/cask/mac-mouse-fix.json",
     "https://formulae.brew.sh/api/cask/amazon-workspaces.json",
     "https://formulae.brew.sh/api/cask/warp.json",
+    "https://formulae.brew.sh/api/cask/insta360-studio.json"
 ]
 
 # DMG
@@ -506,12 +506,13 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/rotato.json",
     "https://formulae.brew.sh/api/cask/tenable-nessus-agent.json",
     "https://formulae.brew.sh/api/cask/8x8-work.json",
-    "https://formulae.brew.sh/api/cask/fork.json"
+    "https://formulae.brew.sh/api/cask/fork.json",
     "https://formulae.brew.sh/api/cask/box-tools.json",
     "https://formulae.brew.sh/api/cask/musescore.json",
     "https://formulae.brew.sh/api/cask/intellij-idea.json",
     "https://formulae.brew.sh/api/cask/handbrake-app.json",
     "https://formulae.brew.sh/api/cask/minecraft.json",
+    "https://formulae.brew.sh/api/cask/deepl.json"
 ]
 
 # PKG in DMG URLs
@@ -547,8 +548,7 @@ pkg_in_pkg_urls = [
     "https://formulae.brew.sh/api/cask/philips-hue-sync.json",
     "https://formulae.brew.sh/api/cask/nordvpn.json",
     "https://formulae.brew.sh/api/cask/tailscale.json",
-    "https://formulae.brew.sh/api/cask/gyazo.json",
-    "https://formulae.brew.sh/api/cask/insta360-studio.json"
+    "https://formulae.brew.sh/api/cask/gyazo.json"
 ]
 
 # PKG
