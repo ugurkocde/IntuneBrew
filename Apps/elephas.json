@@ -18,5 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "11.1086"
   },
-  "previous_version": "11.4010"
+  "previous_version": "11.4010",
+  "category": "Productivity",
+  "publisher": "Elephas"
 }

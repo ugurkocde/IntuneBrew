@@ -7,5 +7,7 @@
   "homepage": "https://mos.caldis.me/",
   "fileName": "Mos.Versions.3.5.0.dmg",
   "sha": "a361f871f32e763a101df29e57839188ef7fb33a289853f420fe83e9e70c008e",
-  "previous_version": "3.5.0"
+  "previous_version": "3.5.0",
+  "category": "Utilities",
+  "publisher": "Caldis"
 }

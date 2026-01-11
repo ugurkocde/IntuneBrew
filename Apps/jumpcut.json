@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "9475fdeb4d0ffd401fdfb77ebef386be31b9c81f6a7abb8e33dfa647244de42d",
   "changelog": "https://github.com/snark/jumpcut/releases",
-  "previous_version": "0.84"
+  "previous_version": "0.84",
+  "category": "Utilities",
+  "publisher": "snark"
 }

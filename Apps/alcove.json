@@ -18,5 +18,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "1.2.5"
-  }
+  },
+  "category": "Utilities",
+  "publisher": "Try Alcove"
 }

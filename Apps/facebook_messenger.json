@@ -16,5 +16,7 @@
     "verify_status": "pending",
     "bundle_id_status": "pending"
   },
-  "previous_version": "525.0.0.34.106"
+  "previous_version": "525.0.0.34.106",
+  "category": "Communication",
+  "publisher": "Meta Platforms, Inc."
 }

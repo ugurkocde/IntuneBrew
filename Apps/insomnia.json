@@ -8,5 +8,7 @@
   "fileName": "Insomnia.Core-12.2.0.dmg",
   "sha": "2124152214794d663f5e4eac5de2fcf7fb2bc69a6a052ef0768448370ba842a8",
   "changelog": "https://github.com/Kong/insomnia/releases",
-  "previous_version": "12.2.0"
+  "previous_version": "12.2.0",
+  "category": "Developer Tools",
+  "publisher": "Kong, Inc."
 }

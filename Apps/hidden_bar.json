@@ -8,5 +8,7 @@
   "fileName": "Hidden.Bar.1.9.dmg",
   "sha": "3f54b024f5c1c40bc18aebe39014710289b47e147e71561fae22a661cab26d02",
   "changelog": "https://github.com/dwarvesf/hidden/releases",
-  "previous_version": "1.9"
+  "previous_version": "1.9",
+  "category": "Utilities",
+  "publisher": "dwarvesf"
 }

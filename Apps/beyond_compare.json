@@ -18,5 +18,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "5.0.7.30840"
-  }
+  },
+  "category": "Utilities",
+  "publisher": "Scooter Software, Inc."
 }

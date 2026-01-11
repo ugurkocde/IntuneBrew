@@ -16,5 +16,7 @@
     "verify_status": "app_not_found",
     "bundle_id_status": "pending"
   },
-  "previous_version": "6.8.0.821"
+  "previous_version": "6.8.0.821",
+  "category": "Design",
+  "publisher": "Adobe Inc."
 }

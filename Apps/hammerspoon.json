@@ -8,5 +8,7 @@
   "fileName": "hammerspoon_1.1.0.pkg",
   "type": "app",
   "sha": "aecf4d99a3eba56294ce83fd2f45786dcf59fa1bef41390658200171e5da57da",
-  "previous_version": "1.1.0"
+  "previous_version": "1.1.0",
+  "category": "Developer Tools",
+  "publisher": "Hammerspoon"
 }

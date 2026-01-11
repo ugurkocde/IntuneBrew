@@ -8,5 +8,7 @@
   "fileName": "Firefox%20146.0.1.dmg",
   "sha": "1f153af0954e0e804cedfac185281a762cd6f270238687d8c7060d162435a1ff",
   "changelog": "https://www.mozilla.org/en-US/firefox/releases/",
-  "previous_version": "146.0.1"
+  "previous_version": "146.0.1",
+  "category": "Browsers",
+  "publisher": "Mozilla Corporation"
 }

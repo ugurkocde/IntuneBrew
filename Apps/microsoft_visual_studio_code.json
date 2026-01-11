@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "d2b5bdd3af13ccc394088f5e41a16376c6402ead46d3a27a474e80af4aad2923",
   "changelog": "https://code.visualstudio.com/updates/",
-  "previous_version": "1.108.0"
+  "previous_version": "1.108.0",
+  "category": "Developer Tools",
+  "publisher": "Microsoft Corporation"
 }

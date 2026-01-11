@@ -19,5 +19,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "42.2"
-  }
+  },
+  "category": "Utilities",
+  "publisher": "f.lux Software LLC"
 }

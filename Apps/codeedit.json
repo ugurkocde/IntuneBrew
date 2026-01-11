@@ -18,5 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "0.3.4"
   },
-  "previous_version": "0.3.6"
+  "previous_version": "0.3.6",
+  "category": "Developer Tools",
+  "publisher": "CodeEdit"
 }

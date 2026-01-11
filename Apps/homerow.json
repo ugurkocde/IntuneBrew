@@ -8,5 +8,7 @@
   "fileName": "homerow_1.4.1.pkg",
   "type": "app",
   "sha": "d04f6cbdb0dcf9a57806613d079f9601f22c3dde9825d2c7766b208732fa334b",
-  "previous_version": "1.4.1"
+  "previous_version": "1.4.1",
+  "category": "Productivity",
+  "publisher": "Homerow"
 }

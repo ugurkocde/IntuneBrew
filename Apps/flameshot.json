@@ -18,5 +18,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "12.1.0"
   },
-  "previous_version": "13.3.0"
+  "previous_version": "13.3.0",
+  "category": "Utilities",
+  "publisher": "Flameshot"
 }

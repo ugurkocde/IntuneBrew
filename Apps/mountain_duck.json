@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "717f9a8befd9991f7d52445a2766b93e943f3e7dd9627b028dd7789e1d3c5f93",
   "changelog": "https://mountainduck.io/changelog/",
-  "previous_version": "5.1.1"
+  "previous_version": "5.1.1",
+  "category": "Utilities",
+  "publisher": "iterate GmbH"
 }

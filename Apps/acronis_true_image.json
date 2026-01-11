@@ -17,5 +17,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "29.2"
   },
-  "previous_version": "29.2"
+  "previous_version": "29.2",
+  "category": "Utilities",
+  "publisher": "Acronis International GmbH"
 }

@@ -9,5 +9,7 @@
   "type": "pkg_in_pkg",
   "changelog": "https://support.gyazo.com/hc/en-us/articles/204411615-Release-Notes",
   "sha": "78c6983c18e3590b6a734514e81328659c96c3679be1d107d1a6a4aaa5bba706",
-  "previous_version": "10.4.0"
+  "previous_version": "10.4.0",
+  "category": "Media",
+  "publisher": "NOTA, Inc."
 }

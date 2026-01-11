@@ -8,5 +8,7 @@
   "fileName": "Insta360_Studio_5.8.8_release_insta360(RC_build53)_20260109_114123_signed_1767949918094.zip",
   "type": "pkg_in_pkg",
   "sha": "ef607f92c9a2699fb8495f18ec97f8430a131bc03c21c4cb01938f23ee2bf762",
-  "previous_version": "5.8.8"
+  "previous_version": "5.8.8",
+  "category": "Media",
+  "publisher": "Insta360"
 }

@@ -17,5 +17,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": ".74-3-3"
   },
-  "previous_version": "0.74-3"
+  "previous_version": "0.74-3",
+  "category": "Utilities",
+  "publisher": "DOSBox Team"
 }

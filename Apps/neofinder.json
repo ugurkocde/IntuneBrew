@@ -8,5 +8,7 @@
   "fileName": "neofinder_9.1.pkg",
   "type": "app",
   "sha": "dab75e7f6fc62d450faffd7a5830f02295c5d4c4ae037fde4392466080b3b410",
-  "previous_version": "9.1"
+  "previous_version": "9.1",
+  "category": "Media",
+  "publisher": "Dirk Krause"
 }

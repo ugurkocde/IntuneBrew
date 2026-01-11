@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "04c5f6ed83b0ca62164578d810fa813ddeffe2879128927a255c425c386bb181",
   "changelog": "https://jumpshare.com/release-notes",
-  "previous_version": "3.4.21"
+  "previous_version": "3.4.21",
+  "category": "Productivity",
+  "publisher": "Jumpshare, Inc."
 }

@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "1dd6f99340c50b1086dd268edbcc66b2290aaa8695945ee01751d2b04077c7dd",
   "changelog": "https://github.com/mitmproxy/mitmproxy/releases",
-  "previous_version": "12.2.1"
+  "previous_version": "12.2.1",
+  "category": "Developer Tools",
+  "publisher": "mitmproxy"
 }

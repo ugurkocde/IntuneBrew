@@ -18,5 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "1.35.2"
   },
-  "previous_version": "1.36.5"
+  "previous_version": "1.36.5",
+  "category": "Communication",
+  "publisher": "BoltAI"
 }

@@ -18,5 +18,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "mismatch",
     "installed_version": "4.0.693"
-  }
+  },
+  "category": "Communication",
+  "publisher": "Beeper"
 }

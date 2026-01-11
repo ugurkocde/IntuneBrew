@@ -18,5 +18,7 @@
     "verify_status": "app_not_found",
     "bundle_id_status": "pending"
   },
-  "previous_version": "25.001.20997"
+  "previous_version": "25.001.20997",
+  "category": "Productivity",
+  "publisher": "Adobe Inc."
 }

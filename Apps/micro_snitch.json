@@ -8,5 +8,7 @@
   "fileName": "MicroSnitch-1.6.1.dmg",
   "sha": "700a265156ae7c8138d7764a0ce87feba098bcaf77deed9b8d9aaa0b3c4fa197",
   "changelog": "https://www.obdev.at/products/microsnitch/releasenotes.html",
-  "previous_version": "1.6.1"
+  "previous_version": "1.6.1",
+  "category": "Security",
+  "publisher": "Objective-See"
 }

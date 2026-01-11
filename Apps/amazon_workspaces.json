@@ -8,5 +8,7 @@
   "fileName": "WorkSpaces_AllProducts_6010.zip",
   "type": "app",
   "previous_version": "5.30.2.6010",
-  "sha": "93fc6cc50578964569a7cd5cbbe700d7ffd905b08131ad94df0d68e2b1b51d53"
+  "sha": "93fc6cc50578964569a7cd5cbbe700d7ffd905b08131ad94df0d68e2b1b51d53",
+  "category": "Utilities",
+  "publisher": "Amazon Web Services, Inc."
 }

@@ -17,5 +17,7 @@
     "verify_status": "app_not_found",
     "bundle_id_status": "pending"
   },
-  "previous_version": "15.0"
+  "previous_version": "15.0",
+  "category": "Utilities",
+  "publisher": "DisplayLink"
 }

@@ -7,5 +7,7 @@
   "homepage": "https://localsend.org/",
   "fileName": "LocalSend-1.17.0.dmg",
   "sha": "fdf1a42ee13eb9fdd6ae94dc5883981e8a09599e758bde23f6e677c4fab5c93c",
-  "previous_version": "1.17.0"
+  "previous_version": "1.17.0",
+  "category": "Utilities",
+  "publisher": "LocalSend"
 }

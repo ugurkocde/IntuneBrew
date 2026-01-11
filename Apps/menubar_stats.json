@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "e12fd11fa43bb35423a2f6e1eadd4969d319a5b6999997b55ad6c183d1fb9c7a",
   "changelog": "https://seense.com/menubarstats/changelog/",
-  "previous_version": "3.9"
+  "previous_version": "3.9",
+  "category": "Utilities",
+  "publisher": "Seense"
 }

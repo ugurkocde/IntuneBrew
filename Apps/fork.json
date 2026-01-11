@@ -7,5 +7,7 @@
   "homepage": "https://fork.dev/",
   "fileName": "Fork-2.60.4.dmg",
   "sha": "5dbf9cfdef2d89de3251d6b2669ca77138e15be170a5ab7f43e76cfc9062ff5f",
-  "previous_version": "2.61.0"
+  "previous_version": "2.61.0",
+  "category": "Developer Tools",
+  "publisher": "Fork Ltd."
 }

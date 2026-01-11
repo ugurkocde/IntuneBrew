@@ -16,5 +16,7 @@
     "verify_status": "pending",
     "bundle_id_status": "pending"
   },
-  "previous_version": "5.3.13"
+  "previous_version": "5.3.13",
+  "category": "Media",
+  "publisher": "Bitwig GmbH"
 }

@@ -8,5 +8,7 @@
   "fileName": "mattermost_6.0.2.pkg",
   "type": "app",
   "sha": "3d9d045f616865a231954a4531bf312b08188b7509f775b47a2a3f2d88f1bc0f",
-  "previous_version": "6.0.2"
+  "previous_version": "6.0.2",
+  "category": "Communication",
+  "publisher": "Mattermost, Inc."
 }

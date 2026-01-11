@@ -8,5 +8,7 @@
   "fileName": "marsedit_5.3.10.pkg",
   "type": "app",
   "sha": "a035a2a7a1d53c53faa8699c086f26a16320c33d0e62db53b2e154b398f76704",
-  "previous_version": "5.3.10"
+  "previous_version": "5.3.10",
+  "category": "Productivity",
+  "publisher": "Red Sweater Software"
 }

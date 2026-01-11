@@ -17,5 +17,7 @@
     "verify_status": "app_not_found",
     "bundle_id_status": "pending"
   },
-  "previous_version": "21.0.9.10.1"
+  "previous_version": "21.0.9.10.1",
+  "category": "Developer Tools",
+  "publisher": "Amazon Software, Inc."
 }

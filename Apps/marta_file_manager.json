@@ -7,5 +7,7 @@
   "homepage": "https://marta.sh/",
   "fileName": "Marta-0.8.2.dmg",
   "sha": "960f3529c099a6e1429dbb15ab120c09ab9d76c6424133a18bdb954c4465bdb6",
-  "previous_version": "0.8.2"
+  "previous_version": "0.8.2",
+  "category": "Utilities",
+  "publisher": "Marta File Manager"
 }

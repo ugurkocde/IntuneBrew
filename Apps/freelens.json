@@ -17,5 +17,7 @@
     "bundle_id_status": "verified",
     "installed_version": "1.3.0"
   },
-  "previous_version": "1.8.0"
+  "previous_version": "1.8.0",
+  "category": "Developer Tools",
+  "publisher": "Freelens"
 }

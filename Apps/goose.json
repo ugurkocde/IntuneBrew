@@ -8,5 +8,7 @@
   "fileName": "goose_1.19.1.pkg",
   "type": "app",
   "sha": "45b6ef7bf4d0d3692eb9a3d1f80f7ed809b66d5f4451875d5c97e51c918ae2c2",
-  "previous_version": "1.19.1"
+  "previous_version": "1.19.1",
+  "category": "Developer Tools",
+  "publisher": "Block, Inc."
 }

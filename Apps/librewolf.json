@@ -7,5 +7,7 @@
   "homepage": "https://librewolf.net/",
   "fileName": "librewolf-146.0.1-1-macos-arm64-package.dmg",
   "sha": "7f55e1c41634e02190d79653b9b07345645ca651d64855f96c7420668be3a23b",
-  "previous_version": "146.0.1"
+  "previous_version": "146.0.1",
+  "category": "Browsers",
+  "publisher": "LibreWolf Project"
 }

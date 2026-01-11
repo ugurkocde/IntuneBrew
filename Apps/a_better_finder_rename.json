@@ -17,5 +17,7 @@
     "bundle_id_status": "verified",
     "installed_version": "12.12"
   },
-  "previous_version": "12.22"
+  "previous_version": "12.22",
+  "category": "Utilities",
+  "publisher": "publicspace.net"
 }

@@ -8,5 +8,7 @@
   "fileName": "medis_2.16.1.pkg",
   "type": "app",
   "sha": "4e132a42542e79ab7a118c93e4d3783ba3f0ce9835a5ba3d7c7e4cf2e8135bb4",
-  "previous_version": "2.16.1"
+  "previous_version": "2.16.1",
+  "category": "Developer Tools",
+  "publisher": "qishibo"
 }

@@ -8,5 +8,7 @@
   "fileName": "loop_1.3.0.pkg",
   "type": "app",
   "sha": "840c601a33932e3b6940b9b4b1f5477bbe73fe4584effa7e584a5b8aec2d2abe",
-  "previous_version": "1.3.0"
+  "previous_version": "1.3.0",
+  "category": "Utilities",
+  "publisher": "MrKai77"
 }

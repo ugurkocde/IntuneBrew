@@ -8,5 +8,7 @@
   "fileName": "keyclu_0.30.2.pkg",
   "type": "app",
   "sha": "61414f17f21b41e05037b25798290ddfd7145fd880d3c4ba41f8efa2e0fe172e",
-  "previous_version": "0.30.2"
+  "previous_version": "0.30.2",
+  "category": "Utilities",
+  "publisher": "Sergii Tatarenkov"
 }

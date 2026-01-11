@@ -19,5 +19,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "mismatch",
     "installed_version": "5.0.9"
-  }
+  },
+  "category": "Utilities",
+  "publisher": "MacPaw"
 }

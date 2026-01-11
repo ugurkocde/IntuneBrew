@@ -17,5 +17,7 @@
     "verify_status": "pending",
     "bundle_id_status": "pending"
   },
-  "previous_version": "1.10.0"
+  "previous_version": "1.10.0",
+  "category": "Utilities",
+  "publisher": "Badgeify"
 }

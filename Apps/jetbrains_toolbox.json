@@ -8,5 +8,7 @@
   "fileName": "jetbrains-toolbox-3.2.0.65851-arm64.dmg",
   "sha": "40bfaf8a40b6db5649415c2123f6206e264501f8efe1538e3d8e8eab62e19d81",
   "changelog": "https://www.jetbrains.com/toolbox-app/whatsnew/",
-  "previous_version": "3.2"
+  "previous_version": "3.2",
+  "category": "Developer Tools",
+  "publisher": "JetBrains s.r.o."
 }

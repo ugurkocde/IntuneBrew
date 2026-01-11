@@ -18,5 +18,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "0.4.3"
   },
-  "previous_version": "0.4.3"
+  "previous_version": "0.4.3",
+  "category": "Utilities",
+  "publisher": "Kylene Ideck"
 }

@@ -8,5 +8,7 @@
   "fileName": "LM-Studio-0.3.37-1-arm64.dmg",
   "sha": "46f92d5944b5d971797449f552af78bca71949ef3d0fec57cbaff4b5f4556155",
   "changelog": "https://github.com/lmstudio-ai/Release/releases",
-  "previous_version": "0.3.37"
+  "previous_version": "0.3.37",
+  "category": "Developer Tools",
+  "publisher": "LM Studio"
 }

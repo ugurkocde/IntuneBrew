@@ -8,5 +8,7 @@
   "fileName": "huggingchat_0.7.0.pkg",
   "type": "app",
   "sha": "d7377b666158380f0c7dad3bf4c0d44172ea54a554af59160cc29a8c40928500",
-  "previous_version": "0.7.0"
+  "previous_version": "0.7.0",
+  "category": "Developer Tools",
+  "publisher": "Hugging Face, Inc."
 }

@@ -7,5 +7,7 @@
   "homepage": "https://www.thunderbird.net/en-US/",
   "fileName": "Thunderbird%20146.0.1.dmg",
   "sha": "5b729073f032a77589b88f69a032066233a6e0f862b66005de81cee0f2adc601",
-  "previous_version": "146.0.1"
+  "previous_version": "146.0.1",
+  "category": "Communication",
+  "publisher": "Mozilla Foundation"
 }

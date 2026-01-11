@@ -18,5 +18,7 @@
     "verify_status": "pending",
     "bundle_id_status": "pending"
   },
-  "previous_version": "latest"
+  "previous_version": "latest",
+  "category": "Design",
+  "publisher": "Autodesk, Inc."
 }

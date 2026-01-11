@@ -7,5 +7,7 @@
   "homepage": "https://headlamp.dev/",
   "fileName": "Headlamp-0.39.0-mac-arm64.dmg",
   "sha": "827d3d58e12380c6dee9fd5d88b2ecd0193c5f896465a2491da6b82d10f3a5c2",
-  "previous_version": "0.39.0"
+  "previous_version": "0.39.0",
+  "category": "Developer Tools",
+  "publisher": "Headlamp"
 }

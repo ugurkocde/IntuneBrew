@@ -8,5 +8,7 @@
   "fileName": "hey_1.2.17.pkg",
   "type": "app",
   "sha": "d7cd1b22a9a467763bb7b3d45608dc267e2a51571b71772c6411ea048f9ce199",
-  "previous_version": "1.2.17"
+  "previous_version": "1.2.17",
+  "category": "Communication",
+  "publisher": "Basecamp, LLC"
 }

@@ -18,5 +18,7 @@
     "install_status": "success",
     "verify_status": "app_found",
     "bundle_id_status": "mismatch"
-  }
+  },
+  "category": "Other",
+  "publisher": "Blizzard Entertainment, Inc."
 }

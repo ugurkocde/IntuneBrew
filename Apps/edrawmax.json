@@ -17,5 +17,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "3.8.7"
   },
-  "previous_version": "14.5.2"
+  "previous_version": "14.5.2",
+  "category": "Design",
+  "publisher": "EdrawSoft"
 }

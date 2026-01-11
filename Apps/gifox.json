@@ -18,5 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "2.6.5"
   },
-  "previous_version": "2.7.2+0"
+  "previous_version": "2.7.2+0",
+  "category": "Media",
+  "publisher": "Gifox"
 }

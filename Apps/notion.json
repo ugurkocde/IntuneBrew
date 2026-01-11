@@ -8,5 +8,7 @@
   "fileName": "Notion-6.4.0-arm64.dmg",
   "sha": "49200a779cd4b8f1eadbe7e901ae14216689337d7db2b7ceba616be178b925a4",
   "changelog": "https://www.notion.so/desktop-release-notes",
-  "previous_version": "6.4.0"
+  "previous_version": "6.4.0",
+  "category": "Productivity",
+  "publisher": "Notion Labs, Inc."
 }

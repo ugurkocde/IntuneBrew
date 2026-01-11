@@ -8,5 +8,7 @@
   "fileName": "MicrosoftEdge-143.0.3650.139.dmg",
   "sha": "ea7bc24ba4e7d649b06a4b3587ec809dbac9e366b484a435cabf1aacd72b1a03",
   "changelog": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
-  "previous_version": "143.0.3650.139"
+  "previous_version": "143.0.3650.139",
+  "category": "Browsers",
+  "publisher": "Microsoft Corporation"
 }

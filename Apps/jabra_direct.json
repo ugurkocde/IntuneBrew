@@ -9,5 +9,7 @@
   "type": "pkg_in_dmg",
   "changelog": "https://www.jabra.com/support/release-notes/release-note-jabra-direct",
   "sha": "4445c47b737a7a42638f4b83204e88fd4d01b79c3c6fdadf98da17448ba60ab1",
-  "previous_version": "6.26.32801"
+  "previous_version": "6.26.32801",
+  "category": "Utilities",
+  "publisher": "GN Audio A/S"
 }

@@ -8,5 +8,7 @@
   "fileName": "home_assistant_2025.11.2.pkg",
   "type": "app",
   "sha": "d1b45f223871ba7ee45d68f33240daf5a1e169f5ca3509fc8f7a043412118132",
-  "previous_version": "2025.11.2"
+  "previous_version": "2025.11.2",
+  "category": "Utilities",
+  "publisher": "Nabu Casa, Inc."
 }

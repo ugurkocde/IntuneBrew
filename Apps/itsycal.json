@@ -8,5 +8,7 @@
   "fileName": "itsycal_0.15.10.pkg",
   "type": "app",
   "sha": "bbad73c828dfd9c41bab73ac655c63c51bb8ef132099ca6e8860de152e61cc4d",
-  "previous_version": "0.15.10"
+  "previous_version": "0.15.10",
+  "category": "Productivity",
+  "publisher": "Mowglii"
 }

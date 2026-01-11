@@ -18,5 +18,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "223.4.4909"
   },
-  "previous_version": "239.4.8301"
+  "previous_version": "239.4.8301",
+  "category": "Productivity",
+  "publisher": "Dropbox, Inc."
 }

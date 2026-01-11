@@ -18,5 +18,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "mismatch",
     "installed_version": "2025.2.1"
-  }
+  },
+  "category": "Productivity",
+  "publisher": "BusyMac"
 }

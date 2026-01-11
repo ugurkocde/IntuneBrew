@@ -18,5 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "2.7.12"
   },
-  "previous_version": "2.8.0"
+  "previous_version": "2.8.0",
+  "category": "Developer Tools",
+  "publisher": "Apidog"
 }

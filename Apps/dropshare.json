@@ -19,5 +19,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "6.3"
-  }
+  },
+  "category": "Utilities",
+  "publisher": "Dropshare"
 }

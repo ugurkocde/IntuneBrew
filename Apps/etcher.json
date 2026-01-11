@@ -18,5 +18,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "2.1.2"
   },
-  "previous_version": "2.1.4"
+  "previous_version": "2.1.4",
+  "category": "Utilities",
+  "publisher": "balena"
 }

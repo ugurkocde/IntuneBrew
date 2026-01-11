@@ -8,5 +8,7 @@
   "fileName": "Karabiner-Elements-15.7.0.dmg",
   "sha": "532d24e31c64af7de3f768f11210ffe8317486191d7fc69c53b96bde14da15ae",
   "changelog": "https://github.com/pqrs-org/Karabiner-Elements/releases",
-  "previous_version": "15.7.0"
+  "previous_version": "15.7.0",
+  "category": "Utilities",
+  "publisher": "pqrs.org"
 }

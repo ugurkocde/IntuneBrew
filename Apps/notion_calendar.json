@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "56a3899e010e8a966f7e6ac12f893d5d79d3795f366b678d7302e30edb6ae892",
   "changelog": "https://www.notion.so/help/calendar-changelog",
-  "previous_version": "1.132.0"
+  "previous_version": "1.132.0",
+  "category": "Productivity",
+  "publisher": "Notion Labs, Inc."
 }

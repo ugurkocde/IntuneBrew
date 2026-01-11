@@ -8,5 +8,7 @@
   "fileName": "macwhisper_13.10.4.pkg",
   "type": "app",
   "sha": "d7f00cb5fa9312bd2edce1ce8e5daf94b964b1aa713da3b42005cfd9f5a56c59",
-  "previous_version": "13.10.4"
+  "previous_version": "13.10.4",
+  "category": "Productivity",
+  "publisher": "Goodsnooze"
 }

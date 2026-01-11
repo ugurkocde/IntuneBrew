@@ -18,5 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "25.02.5"
   },
-  "previous_version": "25.09"
+  "previous_version": "25.09",
+  "category": "Productivity",
+  "publisher": "Ankitects Pty Ltd"
 }

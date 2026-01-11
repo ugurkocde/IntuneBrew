@@ -8,5 +8,7 @@
   "fileName": "macpass_0.8.1.pkg",
   "type": "app",
   "sha": "f66293864d7191c68747c71ddff2eb911005705a370945c93fb04a11af18f608",
-  "previous_version": "0.8.1"
+  "previous_version": "0.8.1",
+  "category": "Security",
+  "publisher": "MacPass Project"
 }

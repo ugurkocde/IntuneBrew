@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "cff02fd8c9bcf2e91c0923d001b88507e85971aaba6ef6cc0786ef00d3160c85",
   "changelog": "https://github.com/p0deje/Maccy/releases",
-  "previous_version": "2.6.1"
+  "previous_version": "2.6.1",
+  "category": "Utilities",
+  "publisher": "Maccy"
 }

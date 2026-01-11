@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "d69420af476ed0a8615554bbd0cee16049287d28d8af2ab3cc5f8b699e753f5f",
   "changelog": "https://support.hp.com/us-en/document/ish_5023611-5023632-16",
-  "previous_version": "2.16.0"
+  "previous_version": "2.16.0",
+  "category": "Utilities",
+  "publisher": "HP Inc."
 }

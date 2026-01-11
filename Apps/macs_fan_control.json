@@ -8,5 +8,7 @@
   "fileName": "macs_fan_control_1.5.20.pkg",
   "type": "app",
   "sha": "5bf960bae2b6b355fd0a4c59762d12c6f9a1b978213a9edad6b286ebe0244a89",
-  "previous_version": "1.5.20"
+  "previous_version": "1.5.20",
+  "category": "Utilities",
+  "publisher": "CrystalIDEA srl"
 }

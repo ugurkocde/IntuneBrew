@@ -8,5 +8,7 @@
   "fileName": "LookAway.dmg",
   "sha": "9805b2f7a948415c260fabbf220fdc1f48ead1d42a5aa38ef69bfccdd420b863",
   "changelog": "https://github.com/mysticalbits/lookaway-releases/releases",
-  "previous_version": "1.14.10"
+  "previous_version": "1.14.10",
+  "category": "Productivity",
+  "publisher": "LookAway"
 }

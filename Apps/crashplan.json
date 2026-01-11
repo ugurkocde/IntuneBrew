@@ -8,5 +8,7 @@
   "fileName": "CrashPlan_11.8.0_609_Mac.dmg",
   "type": "pkg_in_dmg",
   "sha": "9d3e3d3d2e663bee9ce4a17bde71bde0619e6e9632bbca45fde6888ba94ef318",
-  "previous_version": "11.8.0"
+  "previous_version": "11.8.0",
+  "category": "Utilities",
+  "publisher": "Code42 Software, Inc."
 }
