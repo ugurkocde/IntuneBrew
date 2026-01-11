@@ -1,0 +1,15 @@
+{
+  "app_name": "Minecraft",
+  "last_updated": "2026-01-11",
+  "vulnerabilities": [
+    {
+      "cve_id": "CVE-2023-33245",
+      "published_date": "2023-05-30",
+      "last_modified_date": "2025-01-10",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "description": "Minecraft through 1.19 and 1.20 pre-releases before 7 (Java) allow arbitrary file overwrite, and possibly code execution, via crafted world data that contains a symlink.",
+      "cpe_name": "cpe:2.3:a:minecraft:minecraft:1.20:pre-release1:*:*:java:*:*:*"
+    }
+  ]
+}
