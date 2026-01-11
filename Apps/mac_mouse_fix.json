@@ -7,5 +7,6 @@
   "homepage": "https://macmousefix.com/",
   "fileName": "mac_mouse_fix_3.0.8.pkg",
   "type": "app",
-  "sha": "bbab4eaf5179505f14030145ef1efec09c37a67ca1e342418b3e626b8c4fd9d1"
+  "sha": "bbab4eaf5179505f14030145ef1efec09c37a67ca1e342418b3e626b8c4fd9d1",
+  "previous_version": "3.0.8"
 }

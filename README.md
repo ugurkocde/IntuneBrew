@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-521-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -304,11 +304,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-10 11:25 UTC*
+*Last checked: 2026-01-11 00:38 UTC*
 
-> All applications are up to date! 🎉
+| Application | Previous Version | New Version |
+|-------------|-----------------|-------------|
+| Lunatask | 2.1.19 | 2.1.20 |
+| Clop | 2.10.7 | 2.11.0 |
+| Readest | 0.9.96 | 0.9.97 |
+| Fork | 2.61.0 | 2.60.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -508,7 +514,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/cleanshot.png' width='32' height='32'> CleanShot | 4.8.7 |
 | <img src='Logos/clion.png' width='32' height='32'> CLion | 2025.3.1 |
 | <img src='Logos/clipy.png' width='32' height='32'> Clipy | 1.2.1 |
-| <img src='Logos/clop.png' width='32' height='32'> Clop | 2.10.7 |
+| <img src='Logos/clop.png' width='32' height='32'> Clop | 2.11.0 |
 | <img src='Logos/cloudflare_warp.png' width='32' height='32'> Cloudflare WARP | 2025.9.558.0 |
 | <img src='Logos/codeedit.png' width='32' height='32'> CodeEdit | 0.3.6 |
 | <img src='Logos/coderunner.png' width='32' height='32'> CodeRunner | 4.5 |
@@ -521,7 +527,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
 | <img src='Logos/cursor.png' width='32' height='32'> Cursor | 2.3.29 |
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.3.1 |
-| <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.33.1 |
+| <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.33.2 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.10.0 |
 | <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.7.2 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.3.3 |
@@ -573,7 +579,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/flowvision.png' width='32' height='32'> FlowVision | 1.6.7 |
 | <img src='Logos/flycut.png' width='32' height='32'> Flycut | 1.9.6 |
 | <img src='Logos/forecast.png' width='32' height='32'> Forecast | 0.9.6 |
-| <img src='Logos/fork.png' width='32' height='32'> Fork | 2.61.0 |
+| <img src='Logos/fork.png' width='32' height='32'> Fork | 2.60.4 |
 | <img src='Logos/foxit_pdf_editor.png' width='32' height='32'> Foxit PDF Editor | 14.0.2.69164 |
 | <img src='Logos/free_ruler.png' width='32' height='32'> Free Ruler | 2.0.8 |
 | <img src='Logos/freecad.png' width='32' height='32'> FreeCAD | 1.0.2 |
@@ -666,7 +672,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 1.14.10 |
 | <img src='Logos/loop.png' width='32' height='32'> Loop | 1.3.0 |
 | <img src='Logos/lulu.png' width='32' height='32'> LuLu | 4.2.0 |
-| <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.19 |
+| <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.20 |
 | <img src='Logos/löve.png' width='32' height='32'> LÖVE | 11.5 |
 | ❌ Mac Mouse Fix | 3.0.8 |
 | <img src='Logos/maccy.png' width='32' height='32'> Maccy | 2.6.1 |
@@ -811,7 +817,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/rancher_desktop.png' width='32' height='32'> Rancher Desktop | 1.21.0 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 1.104.1 |
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.8.2 |
-| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.96 |
+| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.9.97 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.15.1 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.93 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.65.4 |
