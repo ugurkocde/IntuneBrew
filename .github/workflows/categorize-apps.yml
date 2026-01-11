@@ -37,7 +37,7 @@ jobs:
       - name: Categorize apps
         id: categorize
         env:
-          OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
           RECATEGORIZE_ALL: ${{ github.event.inputs.recategorize_all || 'false' }}
         run: |
           node .github/scripts/categorize-apps.js | tee output.log

@@ -2,7 +2,7 @@ const fs = require('fs');
 const path = require('path');
 const OpenAI = require('openai');
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_API_KEY });
+const openai = new OpenAI({ apiKey: process.env.OPENAI_KEY });
 
 const CATEGORIES = [
   'Productivity',
