@@ -7,5 +7,7 @@
   "homepage": "https://www.webex.com/",
   "fileName": "Webex.dmg",
   "sha": "c8776beba7150d31ade8f50f86305d6eaaa5c600dfe165780cd6ff2c29b3b63d",
-  "previous_version": "45.6.1.32593"
+  "previous_version": "45.6.1.32593",
+  "category": "Communication",
+  "publisher": "Cisco Systems, Inc."
 }

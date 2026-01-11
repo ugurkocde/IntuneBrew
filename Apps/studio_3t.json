@@ -7,5 +7,7 @@
   "homepage": "https://studio3t.com/",
   "fileName": "Studio-3T.dmg",
   "sha": "e7fd165c05c18069efd10f1a69aca1060ed8771ad5d18e1ef77e17f2ede1b26c",
-  "previous_version": "2025.23.0"
+  "previous_version": "2025.23.0",
+  "category": "Developer Tools",
+  "publisher": "3T Software Labs Ltd."
 }

@@ -7,5 +7,7 @@
   "homepage": "https://visualvm.github.io/",
   "fileName": "VisualVM_22.dmg",
   "sha": "5d429cdd74d40b78d5472c0563932268162832ea09ac77a303ca80e3e2aa1df6",
-  "previous_version": "2.2"
+  "previous_version": "2.2",
+  "category": "Developer Tools",
+  "publisher": "Oracle Corporation"
 }

@@ -8,5 +8,7 @@
   "fileName": "nucleo_4.1.8.pkg",
   "type": "app",
   "sha": "baa47f2a6a416b814ee5fe0c4414f37a4e060ca8c7d745d868b2dd1db58ed889",
-  "previous_version": "4.1.8"
+  "previous_version": "4.1.8",
+  "category": "Design",
+  "publisher": "Nucleo"
 }

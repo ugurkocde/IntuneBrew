@@ -7,5 +7,7 @@
   "homepage": "https://portx.online/",
   "fileName": "PortX-2.2.15-arm64.dmg",
   "sha": "aa2d726f53a0211bdf5b3d662c999da31cb5cf9143bba209f4ff7bc19696ad7b",
-  "previous_version": "2.2.15"
+  "previous_version": "2.2.15",
+  "category": "Utilities",
+  "publisher": "PortX"
 }

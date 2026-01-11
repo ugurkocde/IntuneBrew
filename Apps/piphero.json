@@ -7,5 +7,7 @@
   "homepage": "https://piphero.app/",
   "fileName": "PiPHero-1.2.0-mac-arm64.dmg",
   "sha": "0ace00722786d40520f959a4aa08562b4e55cdcfccf138ca0101fd3341d59541",
-  "previous_version": "1.2.0"
+  "previous_version": "1.2.0",
+  "category": "Utilities",
+  "publisher": "PiPHero"
 }

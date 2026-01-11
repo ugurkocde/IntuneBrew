@@ -8,5 +8,7 @@
   "fileName": "pgadmin4-9.11-arm64.dmg",
   "sha": "eb95f0613108f1a5b3a8ec3233da77047f8040064a76551f780c21325974eab5",
   "changelog": "https://www.pgadmin.org/docs/pgadmin4/9.0/release_notes_9_0.html",
-  "previous_version": "9.11"
+  "previous_version": "9.11",
+  "category": "Developer Tools",
+  "publisher": "The pgAdmin Development Team"
 }

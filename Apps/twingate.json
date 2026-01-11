@@ -8,5 +8,7 @@
   "fileName": "Twingate.pkg",
   "type": "pkg_in_pkg",
   "sha": "166784d734cb94f4bf91eb876bbaa120d04033a16e52e65c97af5ac993d572cf",
-  "previous_version": "2025.338.21484"
+  "previous_version": "2025.338.21484",
+  "category": "Security",
+  "publisher": "Twingate, Inc."
 }

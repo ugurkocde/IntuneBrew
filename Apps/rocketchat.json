@@ -7,5 +7,7 @@
   "homepage": "https://rocket.chat/",
   "fileName": "rocketchat-4.11.1-mac.dmg",
   "sha": "76cfb5b1377aeb4a18738c21d174c7fd622b4d055acf1d0406d62ccb6b4b28a4",
-  "previous_version": "4.11.1"
+  "previous_version": "4.11.1",
+  "category": "Communication",
+  "publisher": "Rocket.Chat Technologies Ltd."
 }

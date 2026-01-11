@@ -8,5 +8,7 @@
   "fileName": "HueSyncInstaller_1.13.1.83.pkg",
   "type": "pkg_in_pkg",
   "sha": "227ca7aecb287cfdd7575e60857b89b7c018e2f842a589597ec433c51f81243d",
-  "previous_version": "1.13.1.83"
+  "previous_version": "1.13.1.83",
+  "category": "Utilities",
+  "publisher": "Signify Netherlands B.V."
 }

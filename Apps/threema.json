@@ -7,5 +7,7 @@
   "homepage": "https://threema.ch/",
   "fileName": "Threema-Latest.dmg",
   "sha": "cea50e9af4bf25661e4fca6ee70203d5c05049d8da5cccb89ad9195cef02c19d",
-  "previous_version": "1.2.49"
+  "previous_version": "1.2.49",
+  "category": "Communication",
+  "publisher": "Threema GmbH"
 }

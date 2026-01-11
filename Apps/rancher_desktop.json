@@ -8,5 +8,7 @@
   "fileName": "Rancher.Desktop-1.21.0.aarch64.dmg",
   "sha": "c152e8e72306d5c88cf9b541cb34f4c0901e08292b9edd7238c7eeaf0ece277f",
   "changelog": "https://github.com/rancher-sandbox/rancher-desktop/releases",
-  "previous_version": "1.21.0"
+  "previous_version": "1.21.0",
+  "category": "Developer Tools",
+  "publisher": "Rancher Labs, Inc."
 }

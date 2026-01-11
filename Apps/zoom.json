@@ -8,5 +8,7 @@
   "fileName": "zoomusInstallerFull.pkg",
   "sha": "bf899a5de8541342929993b6388fdddaa5727939c6be4696690cee97fc9d7bcd",
   "changelog": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061222",
-  "previous_version": "6.7.2.72191"
+  "previous_version": "6.7.2.72191",
+  "category": "Communication",
+  "publisher": "Zoom Video Communications, Inc."
 }

@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "380268c1890ba15e2a4edc4a66340b8478c8354ca7ca70faeec1bc1112391d93",
   "changelog": "https://web.whatsapp.com/desktop/windows/release-notes",
-  "previous_version": "2.26.1.58"
+  "previous_version": "2.26.1.58",
+  "category": "Communication",
+  "publisher": "WhatsApp LLC"
 }

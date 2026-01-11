@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "2074d8a848f47b00ac8500d8989f63ac0bcfdd5f7102ca6e9a0b49422667589c",
   "changelog": "https://www.sketch.com/updates/",
-  "previous_version": "2025.3.2"
+  "previous_version": "2025.3.2",
+  "category": "Design",
+  "publisher": "Bohemian Coding"
 }

@@ -8,5 +8,7 @@
   "fileName": "VNC-Viewer-7.15.1-MacOSX-universal.dmg",
   "sha": "9d64bb5ec01015ca76ba85d7cd3f9ae78d90f6fc25a191101ea7f87a278aa940",
   "changelog": "https://help.realvnc.com/hc/en-us/articles/360002253138-Release-Notes",
-  "previous_version": "7.15.1"
+  "previous_version": "7.15.1",
+  "category": "Security",
+  "publisher": "RealVNC Limited"
 }

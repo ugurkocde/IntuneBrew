@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "fe14a227fb0eee793df6518e9271a2fdf1aac63cd2c5255f12be8c431321382e",
   "changelog": "https://macos.telegram.org/changelog",
-  "previous_version": "12.4.1"
+  "previous_version": "12.4.1",
+  "category": "Communication",
+  "publisher": "Telegram Messenger LLP"
 }

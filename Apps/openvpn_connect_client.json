@@ -9,5 +9,7 @@
   "type": "pkg_in_dmg",
   "changelog": "https://openvpn.net/connect-docs/macos-release-notes.html",
   "sha": "88675b571f3eaecc72a415c77936cd47ca97656189bc7c190ed1cd483c2a9130",
-  "previous_version": "3.8.1"
+  "previous_version": "3.8.1",
+  "category": "Security",
+  "publisher": "OpenVPN Technologies, Inc."
 }

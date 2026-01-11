@@ -8,5 +8,7 @@
   "fileName": "sqlpro_for_mssql_2025.10.pkg",
   "type": "app",
   "sha": "32b56ac226f124cae3ca9247615d105b7d0c364b36e667f5a09d7220187ffa37",
-  "previous_version": "2025.10"
+  "previous_version": "2025.10",
+  "category": "Developer Tools",
+  "publisher": "The SQLPro Team"
 }

@@ -8,5 +8,7 @@
   "fileName": "orka.pkg",
   "type": "pkg_in_pkg",
   "sha": "25a79d7d319692eadf24ed436e598fee001ad275ed1d6a490bed239eeb2fdf0c",
-  "previous_version": "2.4.0"
+  "previous_version": "2.4.0",
+  "category": "Developer Tools",
+  "publisher": "MacStadium"
 }

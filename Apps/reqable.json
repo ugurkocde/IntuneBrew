@@ -7,5 +7,7 @@
   "homepage": "https://reqable.com/",
   "fileName": "reqable-app-macos-arm64.dmg",
   "sha": "4b099127afe775c1ec9d85187c8a7b7ace67038d6dec258c35e3f1286e58b457",
-  "previous_version": "3.0.33"
+  "previous_version": "3.0.33",
+  "category": "Developer Tools",
+  "publisher": "Reqable"
 }

@@ -8,5 +8,7 @@
   "fileName": "transmit_5.11.3.pkg",
   "type": "app",
   "sha": "de4900a477ceff7dd97daa69c082508791a311ffda271a4666dd86a69a93cc5d",
-  "previous_version": "5.11.3"
+  "previous_version": "5.11.3",
+  "category": "Utilities",
+  "publisher": "Panic, Inc."
 }

@@ -8,5 +8,7 @@
   "fileName": "Wire.pkg",
   "type": "pkg_in_pkg",
   "sha": "ee1bc01bbed3b51df19401a9fb06d381ed82b1d53dd1664a3ee4a06013d53fe9",
-  "previous_version": "3.40.5442"
+  "previous_version": "3.40.5442",
+  "category": "Communication",
+  "publisher": "Wire Swiss GmbH"
 }

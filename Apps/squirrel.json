@@ -7,5 +7,7 @@
   "homepage": "https://rime.im/",
   "fileName": "Squirrel-1.0.3.pkg",
   "type": "pkg",
-  "previous_version": "1.0.3"
+  "previous_version": "1.0.3",
+  "category": "Productivity",
+  "publisher": "The Rime Project"
 }

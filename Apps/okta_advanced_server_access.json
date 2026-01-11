@@ -8,5 +8,7 @@
   "fileName": "ScaleFT-1.99.5.pkg",
   "type": "pkg_in_pkg",
   "sha": "64b9268aafe4946d7f76699538eaa7598d8b2f9ffdbf7250973e2719b5b169ad",
-  "previous_version": "1.99.5"
+  "previous_version": "1.99.5",
+  "category": "Security",
+  "publisher": "Okta, Inc."
 }

@@ -7,5 +7,7 @@
   "homepage": "https://proton.me/pass",
   "fileName": "ProtonPass_1.33.4.dmg",
   "sha": "8db8c805fa7522e506af6eecbb9f0680dea19bb353f2d838a1b8d29d548702e6",
-  "previous_version": "1.33.4"
+  "previous_version": "1.33.4",
+  "category": "Security",
+  "publisher": "Proton AG"
 }

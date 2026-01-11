@@ -8,5 +8,7 @@
   "fileName": "Devolutions.RemoteDesktopManager.Mac.2025.3.8.5.dmg",
   "sha": "ece6d2de79871667e2d6f1dba8581289796362208bf65b43897cc4b9a6ed590a",
   "changelog": "https://devolutions.net/remote-desktop-manager/release-notes/",
-  "previous_version": "2025.3.8.5"
+  "previous_version": "2025.3.8.5",
+  "category": "Productivity",
+  "publisher": "Devolutions inc."
 }

@@ -8,5 +8,7 @@
   "fileName": "TopazGigapixelAI-8.4.4.pkg",
   "type": "pkg_in_pkg",
   "sha": "812c32843eeaff9fad9763ff3e29163830c4e9c39a24cd88b7eee14e795e35de",
-  "previous_version": "8.4.4"
+  "previous_version": "8.4.4",
+  "category": "Design",
+  "publisher": "Topaz Labs"
 }

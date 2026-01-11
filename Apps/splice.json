@@ -8,5 +8,7 @@
   "fileName": "splice_5.4.4.1.pkg",
   "type": "app",
   "sha": "4f68bf682bc5dcb642fb65d52bcb72002cb0ae71aa2e2f772dfac095f8c002ad",
-  "previous_version": "5.4.4.1"
+  "previous_version": "5.4.4.1",
+  "category": "Media",
+  "publisher": "Splice, Inc."
 }

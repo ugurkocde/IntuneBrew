@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "3bfb1b33077d63e358715fed7899109dff91b35d36498b7ec3770a8dab4b4a06",
   "changelog": "https://principleformac.com/changeLog.html",
-  "previous_version": "6.42"
+  "previous_version": "6.42",
+  "category": "Design",
+  "publisher": "Principle"
 }

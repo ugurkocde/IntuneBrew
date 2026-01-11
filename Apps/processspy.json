@@ -7,5 +7,7 @@
   "homepage": "https://process-spy.app/",
   "fileName": "ProcessSpy_1.10.3.dmg",
   "sha": "450c21e4c4ce0ffecf00d1c31885a22494649c96e355aabcbf2a13ec7ba62273",
-  "previous_version": "1.10.3"
+  "previous_version": "1.10.3",
+  "category": "Utilities",
+  "publisher": "Process Spy"
 }

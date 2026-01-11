@@ -7,5 +7,7 @@
   "homepage": "https://github.com/macstadium/orka-desktop",
   "fileName": "OrkaDesktop-3.1.0.dmg",
   "sha": "9c3389511bc9fae3572a79c08f6a8dfaeb21f4b5ed79f7a0b428554659d44c51",
-  "previous_version": "3.1.0"
+  "previous_version": "3.1.0",
+  "category": "Developer Tools",
+  "publisher": "MacStadium"
 }

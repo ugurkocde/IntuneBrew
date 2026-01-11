@@ -6,5 +6,7 @@
   "bundleId": "com.asagoo.tofu",
   "homepage": "https://amarsagoo.info/tofu/",
   "fileName": "Tofu.dmg",
-  "previous_version": "3.0.1"
+  "previous_version": "3.0.1",
+  "category": "Media",
+  "publisher": "Amar Sagoo"
 }

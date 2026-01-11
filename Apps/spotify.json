@@ -8,5 +8,7 @@
   "fileName": "SpotifyARM64.dmg",
   "sha": "8ce9f884f6f12109dc76392ec924ec05a17333a569a236cc320a61fd5a5a8759",
   "changelog": "https://support.spotify.com/us/article/desktop-app-changelog/",
-  "previous_version": "1.2.79.427"
+  "previous_version": "1.2.79.427",
+  "category": "Media",
+  "publisher": "Spotify AB"
 }

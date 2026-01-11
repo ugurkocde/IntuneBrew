@@ -7,5 +7,7 @@
   "homepage": "https://www.qbittorrent.org/",
   "fileName": "qbittorrent-5.0.5.dmg",
   "sha": "7285e98b5ef4b9a227247dcd933f1a556bfc1ff10901fc7aedb0c4b7ad082814",
-  "previous_version": "5.0.5"
+  "previous_version": "5.0.5",
+  "category": "Utilities",
+  "publisher": "The qBittorrent Project"
 }

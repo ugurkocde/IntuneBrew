@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "64c83819dd162ac2142654f0330a609d1aa81e065be6e1b08a50a44acd12d0b2",
   "changelog": "https://www.winehq.org/news/",
-  "previous_version": "10.0"
+  "previous_version": "10.0",
+  "category": "Utilities",
+  "publisher": "WineHQ"
 }

@@ -8,5 +8,7 @@
   "fileName": "obs-studio-32.0.4-macos-apple.dmg",
   "sha": "7c056644636a794cb18281af98d54b5795ad8b0985e950d93b8c510b645b6298",
   "changelog": "https://github.com/obsproject/obs-studio/releases",
-  "previous_version": "32.0.4"
+  "previous_version": "32.0.4",
+  "category": "Media",
+  "publisher": "OBS Project"
 }

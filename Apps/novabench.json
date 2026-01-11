@@ -7,5 +7,7 @@
   "homepage": "https://novabench.com/",
   "fileName": "novabench.dmg",
   "sha": "739c890b529a39dee508ea8471f42fa58afe6374f550fdc4d557510a111419f5",
-  "previous_version": "5.6.1"
+  "previous_version": "5.6.1",
+  "category": "Utilities",
+  "publisher": "NovaBench"
 }

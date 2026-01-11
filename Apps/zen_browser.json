@@ -8,5 +8,7 @@
   "fileName": "zen.macos-universal.dmg",
   "sha": "2d85375888827aa09eccb9844b9a8f1d60f6d1d910941bf35d28bcd1115680f5",
   "changelog": "https://zen-browser.app/release-notes/",
-  "previous_version": "1.12.1b"
+  "previous_version": "1.12.1b",
+  "category": "Browsers",
+  "publisher": "Unknown"
 }

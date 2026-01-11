@@ -8,5 +8,7 @@
   "fileName": "swift_shift_0.27.1.pkg",
   "type": "app",
   "sha": "264da7c7bc9bfa669756ba48aea273e841fd6600cc48c54d9b5c2f8d1e6d8cdd",
-  "previous_version": "0.27.1"
+  "previous_version": "0.27.1",
+  "category": "Utilities",
+  "publisher": "Swift Shift"
 }

@@ -8,5 +8,7 @@
   "fileName": "sproutcube_shortcat_0.12.2.pkg",
   "type": "app",
   "sha": "30add3b71576c838b600338f991fcd8f3cde14f9e40df7f5861814858305b615",
-  "previous_version": "0.12.2"
+  "previous_version": "0.12.2",
+  "category": "Utilities",
+  "publisher": "Sproutcube"
 }

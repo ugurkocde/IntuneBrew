@@ -8,5 +8,7 @@
   "fileName": "Sync-2.2.54.dmg",
   "sha": "8b5c00127abd7c12affee1cebefd38d70ce574ab9443e7b7eb187f360059f3d0",
   "changelog": "https://www.sync.com/blog/",
-  "previous_version": "2.2.54"
+  "previous_version": "2.2.54",
+  "category": "Productivity",
+  "publisher": "Sync.com"
 }
