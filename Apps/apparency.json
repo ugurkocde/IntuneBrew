@@ -18,7 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "2.2"
   },
-  "previous_version": "3.1",
   "category": "Developer Tools",
-  "publisher": "Mothers Ruin Software"
+  "publisher": "Mothers Ruin Software",
+  "previous_version": "3.1"
 }

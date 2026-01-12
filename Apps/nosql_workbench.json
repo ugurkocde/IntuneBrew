@@ -7,7 +7,7 @@
   "homepage": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html",
   "fileName": "NoSQL%20Workbench-mac-arm64-3.13.7.dmg",
   "sha": "14ceb4a1e5c55f11afa7d8e623c58e6556992272c80738d67e029a1254663638",
-  "previous_version": "3.13.7",
   "category": "Developer Tools",
-  "publisher": "Amazon Web Services, Inc."
+  "publisher": "Amazon Web Services, Inc.",
+  "previous_version": "3.13.7"
 }

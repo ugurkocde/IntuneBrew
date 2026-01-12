@@ -8,7 +8,7 @@
   "fileName": "Zed-aarch64.dmg",
   "sha": "6039b41b0c847e6f1075d8c443773e74940e59420c921cf5f476b7a85ccecbf3",
   "changelog": "https://zed.dev/releases/stable",
-  "previous_version": "0.218.6",
   "category": "Developer Tools",
-  "publisher": "Zed"
+  "publisher": "Zed",
+  "previous_version": "0.218.6"
 }

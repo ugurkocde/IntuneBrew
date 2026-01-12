@@ -8,7 +8,7 @@
   "fileName": "Opera_126.0.5750.18_Setup.dmg",
   "sha": "807e322c51df8b3f6a842db4d4400dd2e4ea1549589bda265c4a5da36ed33202",
   "changelog": "https://blogs.opera.com/desktop/",
-  "previous_version": "126.0.5750.18",
   "category": "Browsers",
-  "publisher": "Opera Software AS"
+  "publisher": "Opera Software AS",
+  "previous_version": "126.0.5750.18"
 }

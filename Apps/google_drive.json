@@ -8,7 +8,7 @@
   "fileName": "GoogleDrive.dmg",
   "sha": "7e112a4767013ee4dd6c5c5d7a222df7ac89915c69c4bb2e5a91c23fd95e17ce",
   "changelog": "https://support.google.com/drive/answer/2375082",
-  "previous_version": "119.0.2",
   "category": "Productivity",
-  "publisher": "Google LLC"
+  "publisher": "Google LLC",
+  "previous_version": "119.0.2"
 }

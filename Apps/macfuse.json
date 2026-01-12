@@ -8,7 +8,7 @@
   "fileName": "macfuse-5.1.3.dmg",
   "sha": "e5f80ff8c3df826e997fb786b35125a0c6a672f4bba2770b0def6ba63ca4ef81",
   "changelog": "https://github.com/macfuse/macfuse/releases",
-  "previous_version": "5.1.3",
   "category": "Developer Tools",
-  "publisher": "The macFUSE Project"
+  "publisher": "The macFUSE Project",
+  "previous_version": "5.1.3"
 }

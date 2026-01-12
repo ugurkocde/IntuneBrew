@@ -7,7 +7,7 @@
   "homepage": "https://updf.com/",
   "fileName": "updf-mac-full.dmg",
   "sha": "0bbea25f6a75fced6dca9c89d97a0a0d1f4582f6fc317e7db7b8f2ebd228fbff",
-  "previous_version": "2.1.1",
   "category": "Productivity",
-  "publisher": "UPDF"
+  "publisher": "UPDF",
+  "previous_version": "2.1.1"
 }

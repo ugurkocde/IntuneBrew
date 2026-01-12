@@ -19,7 +19,7 @@
     "bundle_id_status": "verified",
     "installed_version": "25.001.20467"
   },
-  "previous_version": "25.001.20997",
   "category": "Productivity",
-  "publisher": "Adobe Inc."
+  "publisher": "Adobe Inc.",
+  "previous_version": "25.001.20997"
 }

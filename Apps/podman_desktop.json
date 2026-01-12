@@ -8,7 +8,7 @@
   "fileName": "podman-desktop-1.24.2-arm64.dmg",
   "sha": "0c042c1344438e4277394098af368d78386b3101e78aef834402439e094eeac1",
   "changelog": "https://github.com/containers/podman-desktop/releases",
-  "previous_version": "1.24.2",
   "category": "Developer Tools",
-  "publisher": "Red Hat, Inc."
+  "publisher": "Red Hat, Inc.",
+  "previous_version": "1.24.2"
 }

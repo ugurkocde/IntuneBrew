@@ -7,7 +7,7 @@
   "homepage": "https://grandperspectiv.sourceforge.net/",
   "fileName": "GrandPerspective-3_6_1.dmg",
   "sha": "3a320532ae5759649f7083474d275762785c87786a478d303a704442876cd22f",
-  "previous_version": "3.6.1",
   "category": "Utilities",
-  "publisher": "Erwin Bolwidt"
+  "publisher": "Erwin Bolwidt",
+  "previous_version": "3.6.1"
 }

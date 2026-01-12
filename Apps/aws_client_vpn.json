@@ -17,7 +17,7 @@
     "bundle_id_status": "pending"
   },
   "sha": "0a4393597bcad049ab1cf65267232726f7fd29e292c75cc98d40713fdc69a9f3",
-  "previous_version": "5.3.3",
   "category": "Security",
-  "publisher": "Amazon Web Services, Inc."
+  "publisher": "Amazon Web Services, Inc.",
+  "previous_version": "5.3.3"
 }

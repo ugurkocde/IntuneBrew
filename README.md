@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-521-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -305,16 +305,18 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-11 00:38 UTC*
+*Last checked: 2026-01-12 00:35 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Lunatask | 2.1.19 | 2.1.20 |
-| Clop | 2.10.7 | 2.11.0 |
-| Readest | 0.9.96 | 0.9.97 |
-| Fork | 2.61.0 | 2.60.4 |
+| Apifox | 2.8.0 | 2.8.1 |
+| Easydict | 2.16.2 | 2.16.3 |
+| Stats | 2.11.63 | 2.11.64 |
+| Apidog | 2.8.0 | 2.8.1 |
+| Dataflare | 2.7.2 | 2.8.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -450,8 +452,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 1.1.7 |
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.6.1 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.8.0 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.8.0 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.8.1 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.8.1 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.1 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.129.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.5 |
@@ -496,8 +498,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/brave.png' width='32' height='32'> Brave | 1.85.120.0 |
 | <img src='Logos/breaktimer.png' width='32' height='32'> BreakTimer | 2.0.3 |
 | <img src='Logos/bruno.png' width='32' height='32'> Bruno | 3.0.2 |
-| <img src='Logos/busycal.png' width='32' height='32'> BusyCal | 2025.4.4 |
-| <img src='Logos/busycontacts.png' width='32' height='32'> BusyContacts | 2025.4.4 |
+| <img src='Logos/busycal.png' width='32' height='32'> BusyCal | 2026.1.1 |
+| <img src='Logos/busycontacts.png' width='32' height='32'> BusyContacts | 2026.1.1 |
 | <img src='Logos/caffeine.png' width='32' height='32'> Caffeine | 1.6.2 |
 | <img src='Logos/calibre.png' width='32' height='32'> calibre | 8.16.2 |
 | <img src='Logos/calmly_writer.png' width='32' height='32'> Calmly Writer | 2.0.61 |
@@ -525,11 +527,11 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/crashplan.png' width='32' height='32'> CrashPlan | 11.8.0 |
 | <img src='Logos/cryptomator.png' width='32' height='32'> Cryptomator | 1.18.0 |
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
-| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 2.3.29 |
+| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 2.3.34 |
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.3.1 |
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.33.2 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.10.0 |
-| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.7.2 |
+| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.8.0 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.3.3 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.3.1 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
@@ -554,7 +556,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/dropdmg.png' width='32' height='32'> DropDMG | 3.7.1 |
 | <img src='Logos/dropshare.png' width='32' height='32'> Dropshare | 6.9 |
 | <img src='Logos/duckduckgo.png' width='32' height='32'> DuckDuckGo | 1.171.0 |
-| <img src='Logos/easydict.png' width='32' height='32'> Easydict | 2.16.2 |
+| <img src='Logos/easydict.png' width='32' height='32'> Easydict | 2.16.3 |
 | <img src='Logos/easyfind.png' width='32' height='32'> EasyFind | 5.0.2 |
 | <img src='Logos/eclipse_temurin_java_development_kit.png' width='32' height='32'> Eclipse Temurin Java Development Kit | 25.0.1 |
 | <img src='Logos/edrawmax.png' width='32' height='32'> EdrawMax | 14.5.2 |
@@ -622,7 +624,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/homerow.png' width='32' height='32'> Homerow | 1.4.1 |
 | <img src='Logos/hp_easy_admin.png' width='32' height='32'> HP Easy Admin | 2.16.0 |
 | <img src='Logos/huggingchat.png' width='32' height='32'> HuggingChat | 0.7.0 |
-| <img src='Logos/huly.png' width='32' height='32'> Huly | 0.7.314 |
+| <img src='Logos/huly.png' width='32' height='32'> Huly | 0.7.342 |
 | <img src='Logos/hyper.png' width='32' height='32'> Hyper | 3.4.1 |
 | <img src='Logos/hyperkey.png' width='32' height='32'> Hyperkey | 1.56 |
 | <img src='Logos/ice.png' width='32' height='32'> Ice | 0.11.12 |
@@ -670,7 +672,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/logitech_g_hub.png' width='32' height='32'> Logitech G HUB | 2025.9.814157 |
 | <img src='Logos/logitech_options.png' width='32' height='32'> Logitech Options+ | 1.98.809639 |
 | <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 1.14.10 |
-| <img src='Logos/loop.png' width='32' height='32'> Loop | 1.3.0 |
+| <img src='Logos/loop.png' width='32' height='32'> Loop | 1.4.0 |
 | <img src='Logos/lulu.png' width='32' height='32'> LuLu | 4.2.0 |
 | <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.20 |
 | <img src='Logos/löve.png' width='32' height='32'> LÖVE | 11.5 |
@@ -865,7 +867,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2025.78 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 9.2.3 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.63 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 2.11.64 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 4.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.7 |
 | <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.20.0 |

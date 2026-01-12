@@ -8,7 +8,7 @@
   "fileName": "Microsoft_365_and_Office_16.104.25121423_Installer.pkg",
   "sha": "ecfc3a99cd202e5f5a4d5a2aaa1d55f05f54b1458463d5cbf5bac10c3b406727",
   "changelog": "https://learn.microsoft.com/en-us/officeupdates/release-notes-office-for-mac",
-  "previous_version": "16.104.25121423",
   "category": "Productivity",
-  "publisher": "Microsoft Corporation"
+  "publisher": "Microsoft Corporation",
+  "previous_version": "16.104.25121423"
 }

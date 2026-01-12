@@ -8,7 +8,7 @@
   "fileName": "Grammarly.dmg",
   "sha": "7edb17a440efffad7ae454ef26c75531535078be0c5ffb381d573f15ca4059e8",
   "changelog": "https://www.grammarly.com/desktop/release-notes",
-  "previous_version": "1.147.1.0",
   "category": "Productivity",
-  "publisher": "Grammarly, Inc."
+  "publisher": "Grammarly, Inc.",
+  "previous_version": "1.147.1.0"
 }

@@ -8,7 +8,7 @@
   "fileName": "quarto-1.8.26-macos.pkg",
   "type": "pkg",
   "sha": "c99ef55f8004157f96a6ac57e8e46f0840853185f3cc6bd24f5541710be4601e",
-  "previous_version": "1.8.26",
   "category": "Developer Tools",
-  "publisher": "Posit, Inc."
+  "publisher": "Posit, Inc.",
+  "previous_version": "1.8.26"
 }

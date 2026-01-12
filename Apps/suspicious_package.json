@@ -8,7 +8,7 @@
   "fileName": "SuspiciousPackage.dmg",
   "sha": "489717a9047f762dd3f0adee34abf4d1090bb260c624d53d350108a434aa6093",
   "changelog": "https://www.mothersruin.com/software/SuspiciousPackage/relnotes.html",
-  "previous_version": "4.6",
   "category": "Developer Tools",
-  "publisher": "Mothers Ruin"
+  "publisher": "Mothers Ruin",
+  "previous_version": "4.6"
 }

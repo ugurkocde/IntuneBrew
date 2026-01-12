@@ -7,7 +7,7 @@
   "homepage": "https://www.omnigroup.com/omnioutliner/",
   "fileName": "OmniOutliner-6.0.1.dmg",
   "sha": "47c888186688a4986dd344827b0a3bd9c8ce692e16a2faabbddadef3b0b5b050",
-  "previous_version": "6.0.1",
   "category": "Productivity",
-  "publisher": "The Omni Group"
+  "publisher": "The Omni Group",
+  "previous_version": "6.0.1"
 }

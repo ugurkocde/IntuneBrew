@@ -6,7 +6,7 @@
   "bundleId": "com.mobirise.Mobirise",
   "homepage": "https://mobirise.com/",
   "fileName": "MobiriseSetup-m.dmg",
-  "previous_version": "6.1.12",
   "category": "Design",
-  "publisher": "Mobirise"
+  "publisher": "Mobirise",
+  "previous_version": "6.1.12"
 }

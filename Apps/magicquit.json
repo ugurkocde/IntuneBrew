@@ -7,7 +7,7 @@
   "homepage": "https://magicquit.com/",
   "fileName": "MagicQuit_1.4.dmg",
   "sha": "2deebd8efc69f06ae51cbc17eecfa15310a8a6a46a800645b285d2be360fd922",
-  "previous_version": "1.4",
   "category": "Utilities",
-  "publisher": "MagicQuit"
+  "publisher": "MagicQuit",
+  "previous_version": "1.4"
 }

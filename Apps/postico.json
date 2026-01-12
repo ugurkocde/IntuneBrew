@@ -7,7 +7,7 @@
   "homepage": "https://eggerapps.at/postico2/",
   "fileName": "postico-9786.dmg",
   "sha": "3c6a847b22f4613bf7c545a5630af6b1505c0a9544161c0503f853492c324ae4",
-  "previous_version": "2.3.1",
   "category": "Developer Tools",
-  "publisher": "egger Apps"
+  "publisher": "egger Apps",
+  "previous_version": "2.3.1"
 }

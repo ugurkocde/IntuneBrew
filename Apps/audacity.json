@@ -18,7 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "3.7.3.0"
   },
-  "previous_version": "3.7.7",
   "category": "Media",
-  "publisher": "Audacity Team"
+  "publisher": "Audacity Team",
+  "previous_version": "3.7.7"
 }

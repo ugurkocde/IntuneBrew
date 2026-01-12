@@ -17,7 +17,7 @@
     "bundle_id_status": "verified",
     "installed_version": "2025.1.1"
   },
-  "previous_version": "2025.3.1",
   "category": "Developer Tools",
-  "publisher": "JetBrains s.r.o."
+  "publisher": "JetBrains s.r.o.",
+  "previous_version": "2025.3.1"
 }

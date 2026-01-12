@@ -8,7 +8,7 @@
   "fileName": "MicrosoftTeams.pkg",
   "sha": "0d7f4ed037e0ed8832e1892f0587e0e336abbc0e6376059bfcb58f278ffcab48",
   "changelog": "https://learn.microsoft.com/en-us/officeupdates/teams-app-versioning",
-  "previous_version": "25290.302.4044.3989",
   "category": "Communication",
-  "publisher": "Microsoft Corporation"
+  "publisher": "Microsoft Corporation",
+  "previous_version": "25290.302.4044.3989"
 }

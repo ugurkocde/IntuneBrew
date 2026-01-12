@@ -16,7 +16,7 @@
     "verify_status": "pending",
     "bundle_id_status": "pending"
   },
-  "previous_version": "2.18.0.2089",
   "category": "Security",
-  "publisher": "AdGuard Software Ltd."
+  "publisher": "AdGuard Software Ltd.",
+  "previous_version": "2.18.0.2089"
 }

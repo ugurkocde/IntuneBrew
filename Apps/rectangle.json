@@ -8,7 +8,7 @@
   "fileName": "Rectangle0.93.dmg",
   "sha": "848817526f3f7bd41f73cce295582523ff7bb4746ed64723575659574f298a76",
   "changelog": "https://github.com/rxhanson/Rectangle/releases",
-  "previous_version": "0.93",
   "category": "Utilities",
-  "publisher": "Rectangle"
+  "publisher": "Rectangle",
+  "previous_version": "0.93"
 }

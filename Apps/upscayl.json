@@ -7,7 +7,7 @@
   "homepage": "https://upscayl.org/",
   "fileName": "upscayl-2.15.0-mac.dmg",
   "sha": "0e53c9ee8c1800cb3e2ce0f574e4e1a35a51945e19ff2b93f33928bbd7fd4c5a",
-  "previous_version": "2.15.0",
   "category": "Media",
-  "publisher": "Upscayl"
+  "publisher": "Upscayl",
+  "previous_version": "2.15.0"
 }

@@ -18,7 +18,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "0.9.0"
   },
-  "previous_version": "0.10.0",
   "category": "Security",
-  "publisher": "Dangerzone"
+  "publisher": "Dangerzone",
+  "previous_version": "0.10.0"
 }

@@ -18,7 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "2.0.1"
   },
-  "previous_version": "2.0.1",
   "category": "Media",
-  "publisher": "dyerc"
+  "publisher": "dyerc",
+  "previous_version": "2.0.1"
 }

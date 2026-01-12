@@ -18,7 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "9.0.2"
   },
-  "previous_version": "9.6.1",
   "category": "Productivity",
-  "publisher": "AnyDesk Software GmbH"
+  "publisher": "AnyDesk Software GmbH",
+  "previous_version": "9.6.1"
 }

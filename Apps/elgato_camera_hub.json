@@ -18,7 +18,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "2.0.0"
   },
-  "previous_version": "2.2.1.6945",
   "category": "Utilities",
-  "publisher": "Elgato"
+  "publisher": "Elgato",
+  "previous_version": "2.2.1.6945"
 }

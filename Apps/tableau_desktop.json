@@ -9,7 +9,7 @@
   "type": "pkg_in_dmg",
   "sha": "f7b3650b4b31187175b9b0cdb824f332b837674c467053565c7cd7887ca9011d",
   "changelog": "https://www.tableau.com/support/releases/desktop",
-  "previous_version": "2025.3.1",
   "category": "Productivity",
-  "publisher": "Tableau Software, LLC"
+  "publisher": "Tableau Software, LLC",
+  "previous_version": "2025.3.1"
 }

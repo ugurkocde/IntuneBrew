@@ -18,7 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "3.6.8"
   },
-  "previous_version": "3.7.1",
   "category": "Utilities",
-  "publisher": "C-Command Software"
+  "publisher": "C-Command Software",
+  "previous_version": "3.7.1"
 }

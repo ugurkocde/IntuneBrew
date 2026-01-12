@@ -17,7 +17,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "1.39.0"
   },
-  "previous_version": "1.42.2",
   "category": "Productivity",
-  "publisher": "Fathom, Inc."
+  "publisher": "Fathom, Inc.",
+  "previous_version": "1.42.2"
 }

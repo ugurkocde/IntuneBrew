@@ -18,7 +18,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "13.1.7.63027"
   },
-  "previous_version": "14.0.2.69164",
   "category": "Productivity",
-  "publisher": "Foxit Software"
+  "publisher": "Foxit Software",
+  "previous_version": "14.0.2.69164"
 }

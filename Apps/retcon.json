@@ -7,7 +7,7 @@
   "homepage": "https://retcon.app/",
   "fileName": "retcon-1.5.2.dmg",
   "sha": "76ec3429ce777f9673f8392d934ff95b8b123b0ac9c8fa12b7a54e282b194c64",
-  "previous_version": "1.5.2",
   "category": "Developer Tools",
-  "publisher": "Retcon"
+  "publisher": "Retcon",
+  "previous_version": "1.5.2"
 }

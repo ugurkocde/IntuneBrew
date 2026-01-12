@@ -19,7 +19,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "136.0.7103"
   },
-  "previous_version": "144.0.7559.13",
   "category": "Utilities",
-  "publisher": "Google LLC"
+  "publisher": "Google LLC",
+  "previous_version": "144.0.7559.13"
 }

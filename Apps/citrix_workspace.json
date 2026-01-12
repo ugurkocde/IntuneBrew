@@ -18,7 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "25.03.10"
   },
-  "previous_version": "25.11.0.36",
   "category": "Productivity",
-  "publisher": "Citrix Systems, Inc."
+  "publisher": "Citrix Systems, Inc.",
+  "previous_version": "25.11.0.36"
 }

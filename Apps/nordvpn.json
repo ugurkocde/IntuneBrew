@@ -8,7 +8,7 @@
   "fileName": "NordVPN.pkg",
   "type": "pkg_in_pkg",
   "sha": "20c023745d88a4662c784992b97f5174432549c40144932e7cb65bbb93177a48",
-  "previous_version": "9.10.1",
   "category": "Security",
-  "publisher": "NordVPN S.A."
+  "publisher": "NordVPN S.A.",
+  "previous_version": "9.10.1"
 }

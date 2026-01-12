@@ -18,7 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "1.17.0"
   },
-  "previous_version": "1.17.0",
   "category": "Developer Tools",
-  "publisher": "DevUtils"
+  "publisher": "DevUtils",
+  "previous_version": "1.17.0"
 }

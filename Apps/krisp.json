@@ -8,7 +8,7 @@
   "fileName": "Krisp_3.9.4_arm64.pkg",
   "sha": "2f40ddbd767b1b42e37a88b4c241b657e4d40848810e6353953a934cef968397",
   "changelog": "https://help.krisp.ai/hc/en-us/articles/360012250839-Krisp-Desktop-app-changelog",
-  "previous_version": "3.9.4",
   "category": "Utilities",
-  "publisher": "Krisp Technologies, Inc."
+  "publisher": "Krisp Technologies, Inc.",
+  "previous_version": "3.9.4"
 }

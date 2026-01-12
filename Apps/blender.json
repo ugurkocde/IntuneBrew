@@ -18,7 +18,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "4.4.3"
   },
-  "previous_version": "5.0.1",
   "category": "Design",
-  "publisher": "Blender Foundation"
+  "publisher": "Blender Foundation",
+  "previous_version": "5.0.1"
 }

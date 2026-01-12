@@ -17,7 +17,7 @@
     "verify_status": "pending",
     "bundle_id_status": "pending"
   },
-  "previous_version": "2.11",
   "category": "Productivity",
-  "publisher": "Google LLC"
+  "publisher": "Google LLC",
+  "previous_version": "2.11"
 }

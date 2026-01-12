@@ -7,7 +7,7 @@
   "homepage": "https://nordpass.com/",
   "fileName": "NordPass.dmg",
   "sha": "75b52b6c8c70401306255b1bbcc64e137c8c991a6bb50f6239ad7b98fc49ee4b",
-  "previous_version": "7.2.15",
   "category": "Security",
-  "publisher": "Nord Security"
+  "publisher": "Nord Security",
+  "previous_version": "7.2.15"
 }

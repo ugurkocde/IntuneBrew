@@ -8,7 +8,7 @@
   "fileName": "RemotePlayInstaller.pkg",
   "type": "pkg_in_pkg",
   "sha": "6d1cc05d74d1103bc864eed7f6f377a1f1e8fc00424d018522e96747319ad856",
-  "previous_version": "8.5.2",
   "category": "Utilities",
-  "publisher": "Sony Interactive Entertainment"
+  "publisher": "Sony Interactive Entertainment",
+  "previous_version": "8.5.2"
 }

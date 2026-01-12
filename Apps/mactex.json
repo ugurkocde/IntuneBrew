@@ -8,7 +8,7 @@
   "fileName": "mactex-20250308.pkg",
   "sha": "be084f849e545d9e9511b791da07ca4f9f33d85d42bb69dade636e345421ab7c",
   "changelog": "https://www.tug.org/mactex/changelog.html",
-  "previous_version": "2025.0308",
   "category": "Developer Tools",
-  "publisher": "The MacTeX Project"
+  "publisher": "The MacTeX Project",
+  "previous_version": "2025.0308"
 }

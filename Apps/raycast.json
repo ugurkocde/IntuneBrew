@@ -8,7 +8,7 @@
   "fileName": "download?build=arm",
   "sha": "ce6fabedfeee4d43edbcb4d5c957f5f15c000e5b723aeafc94faaabe95ab46ef",
   "changelog": "https://raycast.com/changelog",
-  "previous_version": "1.104.1",
   "category": "Productivity",
-  "publisher": "Raycast"
+  "publisher": "Raycast",
+  "previous_version": "1.104.1"
 }

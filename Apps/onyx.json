@@ -8,7 +8,7 @@
   "fileName": "OnyX.dmg",
   "sha": "20d3a7a43cc654d6e0847713895173411ac1012dcac39011a36e62388d33c681",
   "changelog": "https://www.titanium-software.fr/en/onyx/changelog.html",
-  "previous_version": "4.9.4",
   "category": "Utilities",
-  "publisher": "Titanium Software"
+  "publisher": "Titanium Software",
+  "previous_version": "4.9.4"
 }

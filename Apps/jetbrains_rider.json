@@ -7,7 +7,7 @@
   "homepage": "https://www.jetbrains.com/rider/",
   "fileName": "JetBrains.Rider-2025.3.1-aarch64.dmg",
   "sha": "d7080323412900f5d37270233e5a4c773011c6853d6031ce1f5e635c77511426",
-  "previous_version": "2025.3.1",
   "category": "Developer Tools",
-  "publisher": "JetBrains s.r.o."
+  "publisher": "JetBrains s.r.o.",
+  "previous_version": "2025.3.1"
 }

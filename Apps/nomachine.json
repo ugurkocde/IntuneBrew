@@ -9,7 +9,7 @@
   "type": "pkg_in_dmg",
   "changelog": "https://www.nomachine.com/changelog",
   "sha": "fff47345f42a4d8bb92c1e6829834da20c3e0db9a21746a83cddad49581efd19",
-  "previous_version": "9.3.7",
   "category": "Utilities",
-  "publisher": "NoMachine"
+  "publisher": "NoMachine",
+  "previous_version": "9.3.7"
 }

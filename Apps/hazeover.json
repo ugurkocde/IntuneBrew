@@ -8,7 +8,7 @@
   "fileName": "HazeOver.dmg",
   "sha": "2024b58ecb5e846ff605859a00312cd9a7ddc6916a0e3cd0f9146f8a4801b09e",
   "changelog": "https://hazeover.com/notes.html",
-  "previous_version": "1.9.6",
   "category": "Utilities",
-  "publisher": "HazeOver"
+  "publisher": "HazeOver",
+  "previous_version": "1.9.6"
 }

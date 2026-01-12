@@ -8,7 +8,7 @@
   "fileName": "Shottr-1.9.1.dmg",
   "sha": "0bfd797dbcfec52a5e122b50062ad6b954847fe3b53d676c05ac4361f50ce5b3",
   "changelog": "https://shottr.cc/#section-releasenotes",
-  "previous_version": "1.9.1",
   "category": "Design",
-  "publisher": "Shottr"
+  "publisher": "Shottr",
+  "previous_version": "1.9.1"
 }

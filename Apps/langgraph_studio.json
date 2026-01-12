@@ -8,7 +8,7 @@
   "fileName": "LangGraph-Studio-0.0.37-universal.dmg",
   "sha": "3686a8164d001f371bfbd019024cbef0f2a8945e8fdca7467836cd5fc8882959",
   "changelog": "https://github.com/langchain-ai/langgraph-studio/releases",
-  "previous_version": "0.0.37",
   "category": "Developer Tools",
-  "publisher": "LangChain"
+  "publisher": "LangChain",
+  "previous_version": "0.0.37"
 }

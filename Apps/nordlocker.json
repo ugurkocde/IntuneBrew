@@ -8,7 +8,7 @@
   "fileName": "NordLocker.pkg",
   "type": "pkg_in_pkg",
   "sha": "80911da2548e1365c048f1bad6a951343468a04bf17e4b2f7a83e86498f5f957",
-  "previous_version": "4.26.1",
   "category": "Security",
-  "publisher": "Nord Security"
+  "publisher": "Nord Security",
+  "previous_version": "4.26.1"
 }

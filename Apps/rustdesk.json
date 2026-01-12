@@ -7,7 +7,7 @@
   "homepage": "https://rustdesk.com/",
   "fileName": "rustdesk-1.4.5-aarch64.dmg",
   "sha": "e548e194d80ad44f66f7ae33b3d2879a6300201adaa0dbdf6dd2bd3594e3e912",
-  "previous_version": "1.4.5",
   "category": "Utilities",
-  "publisher": "RustDesk"
+  "publisher": "RustDesk",
+  "previous_version": "1.4.5"
 }

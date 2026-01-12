@@ -18,7 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "10.105.4"
   },
-  "previous_version": "10.105.4",
   "category": "Productivity",
-  "publisher": "Evernote Corporation"
+  "publisher": "Evernote Corporation",
+  "previous_version": "10.105.4"
 }

@@ -7,7 +7,7 @@
   "homepage": "https://github.com/leits/MeetingBar",
   "fileName": "MeetingBar.dmg",
   "sha": "4f19af496d4ff44b9b0ee02be02bc76207f3e365a7f9e77c7219a08c607838d7",
-  "previous_version": "4.11.6",
   "category": "Productivity",
-  "publisher": "leits"
+  "publisher": "leits",
+  "previous_version": "4.11.6"
 }

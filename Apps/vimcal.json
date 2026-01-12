@@ -7,7 +7,7 @@
   "homepage": "https://vimcal.com/",
   "fileName": "Vimcal-1.0.41-arm64.dmg",
   "sha": "dd7e588498e0376ab23054c0a8c7c5aa9a0bbf2e292c2f93527dd2c484afe1e2",
-  "previous_version": "1.0.41",
   "category": "Productivity",
-  "publisher": "Vimcal, Inc."
+  "publisher": "Vimcal, Inc.",
+  "previous_version": "1.0.41"
 }

@@ -8,7 +8,7 @@
   "fileName": "Slack-4.47.72-macOS.dmg",
   "sha": "02284c4008cc3115897ed40ea7d827202fdd7fc9e7aca9e4a51ca6f2c76d5240",
   "changelog": "https://slack.com/changelog",
-  "previous_version": "4.47.72",
   "category": "Communication",
-  "publisher": "Slack Technologies"
+  "publisher": "Slack Technologies",
+  "previous_version": "4.47.72"
 }

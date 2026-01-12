@@ -7,7 +7,7 @@
   "homepage": "https://getkap.co/",
   "fileName": "Kap-3.6.0-arm64.dmg",
   "sha": "0f4b69d5fd4ec59da7b6e153722314c93dc263db2b81c0d0191e256360473ce3",
-  "previous_version": "3.6.0",
   "category": "Media",
-  "publisher": "Wulkano"
+  "publisher": "Wulkano",
+  "previous_version": "3.6.0"
 }

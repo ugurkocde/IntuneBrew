@@ -7,7 +7,7 @@
   "homepage": "https://github.com/rsyncOSX/RsyncUI",
   "fileName": "RsyncUI.2.8.6.dmg",
   "sha": "e65018cc98bd0ce36755f373b473313e4ea2794ce2ffa54e05908e24c6f7b0d8",
-  "previous_version": "2.8.6",
   "category": "Utilities",
-  "publisher": "rsyncOSX"
+  "publisher": "rsyncOSX",
+  "previous_version": "2.8.6"
 }

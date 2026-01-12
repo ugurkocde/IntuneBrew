@@ -7,7 +7,7 @@
   "homepage": "https://mouseless.click/",
   "fileName": "mouseless-installer_v0.4.3.dmg",
   "sha": "732aaff73f167971678f5fc7a752c7e7ae8ac1b45012a5dec0932af84ce5c149",
-  "previous_version": "0.4.3",
   "category": "Utilities",
-  "publisher": "Mouseless"
+  "publisher": "Mouseless",
+  "previous_version": "0.4.3"
 }

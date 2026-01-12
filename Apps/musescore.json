@@ -7,7 +7,7 @@
   "homepage": "https://musescore.org/",
   "fileName": "MuseScore-Studio-4.6.5.253511702.dmg",
   "sha": "89624d9e6618bd7fd224b226e63e83722b9124bc2c466206b01762375c69d4ad",
-  "previous_version": "4.6.5.253511702",
   "category": "Media",
-  "publisher": "MuseScore"
+  "publisher": "MuseScore",
+  "previous_version": "4.6.5.253511702"
 }

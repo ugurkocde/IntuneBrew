@@ -7,7 +7,7 @@
   "homepage": "https://pulsar-edit.dev/",
   "fileName": "Silicon.Mac.Pulsar-1.130.1-arm64.dmg",
   "sha": "71d954deb32600b60a6722077bac4fb8f2180d4b56a9b10ca7177513cef0c4ae",
-  "previous_version": "1.130.1",
   "category": "Developer Tools",
-  "publisher": "Pulsar"
+  "publisher": "Pulsar",
+  "previous_version": "1.130.1"
 }

@@ -18,7 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "27.0.2"
   },
-  "previous_version": "29.3.0",
   "category": "Design",
-  "publisher": "JGraph Ltd."
+  "publisher": "JGraph Ltd.",
+  "previous_version": "29.3.0"
 }

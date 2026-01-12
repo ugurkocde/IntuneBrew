@@ -7,7 +7,7 @@
   "homepage": "https://mockoon.com/",
   "fileName": "mockoon.setup.9.4.0.arm64.dmg",
   "sha": "a64d822c133487819ea3d5e27dbf280cba474608f007413914b9579448000e96",
-  "previous_version": "9.4.0",
   "category": "Developer Tools",
-  "publisher": "Mockoon"
+  "publisher": "Mockoon",
+  "previous_version": "9.4.0"
 }

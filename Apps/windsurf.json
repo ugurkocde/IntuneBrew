@@ -8,7 +8,7 @@
   "fileName": "Windsurf-darwin-arm64-1.13.5.dmg",
   "sha": "89539eeccf2a2340753330988460e744e2da16f70c3b4057f72fd88f760d3a97",
   "changelog": "https://www.codeium.com/windsurf/changelog",
-  "previous_version": "1.13.5",
   "category": "Developer Tools",
-  "publisher": "Codeium"
+  "publisher": "Codeium",
+  "previous_version": "1.13.5"
 }

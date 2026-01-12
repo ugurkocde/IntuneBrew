@@ -7,7 +7,7 @@
   "homepage": "https://proxyman.com/",
   "fileName": "Proxyman_6.3.0.dmg",
   "sha": "686bf44b11c77aed1a2eae8e296cd45a2ecb86b4d8585d47d18518b2250aa843",
-  "previous_version": "6.3.0",
   "category": "Developer Tools",
-  "publisher": "Proxyman Team"
+  "publisher": "Proxyman Team",
+  "previous_version": "6.3.0"
 }

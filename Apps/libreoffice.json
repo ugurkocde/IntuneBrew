@@ -8,7 +8,7 @@
   "fileName": "LibreOffice_25.8.4_MacOS_aarch64.dmg",
   "sha": "972bb495bd5e249257c53d4030c013f2a5706a6203d3669b8c410ceafe3d0426",
   "changelog": "https://www.libreoffice.org/download/release-notes/",
-  "previous_version": "25.8.4",
   "category": "Productivity",
-  "publisher": "The Document Foundation"
+  "publisher": "The Document Foundation",
+  "previous_version": "25.8.4"
 }

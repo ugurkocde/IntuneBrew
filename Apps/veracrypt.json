@@ -7,7 +7,7 @@
   "homepage": "https://www.veracrypt.fr/",
   "fileName": "VeraCrypt_1.26.24.dmg",
   "sha": "b052052519179ac5ab1ca73df9b087adcd06b95e9b872866e279a68db0745b21",
-  "previous_version": "1.26.24",
   "category": "Security",
-  "publisher": "IDRIX"
+  "publisher": "IDRIX",
+  "previous_version": "1.26.24"
 }

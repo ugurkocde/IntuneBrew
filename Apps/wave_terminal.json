@@ -7,7 +7,7 @@
   "homepage": "https://www.waveterm.dev/",
   "fileName": "Wave-darwin-arm64-0.13.1.dmg",
   "sha": "51b4fb639ab5e3781d85d271333593149eb9b71461d6f7e2dad38c856ead7f76",
-  "previous_version": "0.13.1",
   "category": "Developer Tools",
-  "publisher": "Wave Terminal"
+  "publisher": "Wave Terminal",
+  "previous_version": "0.13.1"
 }

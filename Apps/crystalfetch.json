@@ -18,7 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "2.2.0"
   },
-  "previous_version": "2.2.0",
   "category": "Utilities",
-  "publisher": "TuringSoftware"
+  "publisher": "TuringSoftware",
+  "previous_version": "2.2.0"
 }

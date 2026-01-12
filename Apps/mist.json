@@ -8,7 +8,7 @@
   "fileName": "Mist.0.30.pkg",
   "type": "pkg",
   "sha": "a764f92e23f5a0a1776c5f08c7dbfe99e98ff5ed9feb12da10410cc09e9abefb",
-  "previous_version": "0.30",
   "category": "Utilities",
-  "publisher": "ninxsoft"
+  "publisher": "ninxsoft",
+  "previous_version": "0.30"
 }

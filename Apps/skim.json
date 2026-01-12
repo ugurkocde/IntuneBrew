@@ -7,7 +7,7 @@
   "homepage": "https://skim-app.sourceforge.io/",
   "fileName": "Skim-1.7.12.dmg",
   "sha": "12c2a3464cc26e1717a7cc28929123ad09f6bed737f033bdfbdfd43830df8e8c",
-  "previous_version": "1.7.12",
   "category": "Productivity",
-  "publisher": "Skim Team"
+  "publisher": "Skim Team",
+  "previous_version": "1.7.12"
 }

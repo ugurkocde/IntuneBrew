@@ -7,7 +7,7 @@
   "homepage": "https://www.gonitro.com/pdfpen",
   "fileName": "Nitro%20PDF%20Pro_14.10.4.dmg",
   "sha": "01e2bd5c9ab3e1c74bcad0bfbccac39c4d95c9bb71661d9465a97c215f697820",
-  "previous_version": "14.10.4",
   "category": "Productivity",
-  "publisher": "Nitro Software, Ltd."
+  "publisher": "Nitro Software, Ltd.",
+  "previous_version": "14.10.4"
 }

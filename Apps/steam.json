@@ -8,7 +8,7 @@
   "fileName": "steam.dmg",
   "sha": "5f55670c91afd3603a8a10d82a179da90744fca98f0106647891ee740ea84ba3",
   "changelog": "https://store.steampowered.com/news/",
-  "previous_version": "4.0",
   "category": "Other",
-  "publisher": "Valve Corporation"
+  "publisher": "Valve Corporation",
+  "previous_version": "4.0"
 }

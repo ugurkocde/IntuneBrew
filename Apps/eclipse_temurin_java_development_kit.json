@@ -17,7 +17,7 @@
     "verify_status": "app_not_found",
     "bundle_id_status": "pending"
   },
-  "previous_version": "25.0.1",
   "category": "Developer Tools",
-  "publisher": "Adoptium"
+  "publisher": "Adoptium",
+  "previous_version": "25.0.1"
 }

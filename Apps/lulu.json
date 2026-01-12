@@ -7,7 +7,7 @@
   "homepage": "https://objective-see.org/products/lulu.html",
   "fileName": "LuLu_4.2.0.dmg",
   "sha": "92516f945f681b37600d2649e5296bc48e2babb8adf3b8cc6274e95b382c87fa",
-  "previous_version": "4.2.0",
   "category": "Security",
-  "publisher": "Objective-See"
+  "publisher": "Objective-See",
+  "previous_version": "4.2.0"
 }

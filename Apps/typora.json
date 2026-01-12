@@ -7,7 +7,7 @@
   "homepage": "https://typora.io/",
   "fileName": "Typora-1.12.6.dmg",
   "sha": "249996e3941ac8c9626baae739e716f893df14f1228e13a4a9c8191736974b88",
-  "previous_version": "1.12.6",
   "category": "Productivity",
-  "publisher": "Typora"
+  "publisher": "Typora",
+  "previous_version": "1.12.6"
 }

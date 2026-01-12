@@ -17,7 +17,7 @@
     "verify_status": "app_not_found",
     "bundle_id_status": "pending"
   },
-  "previous_version": "143.0.7499.193",
   "category": "Browsers",
-  "publisher": "Google LLC"
+  "publisher": "Google LLC",
+  "previous_version": "143.0.7499.193"
 }

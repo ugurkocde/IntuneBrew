@@ -17,7 +17,7 @@
     "verify_status": "pending",
     "bundle_id_status": "pending"
   },
-  "previous_version": "4.11.7",
   "category": "Utilities",
-  "publisher": "Charlie Monroe"
+  "publisher": "Charlie Monroe",
+  "previous_version": "4.11.7"
 }

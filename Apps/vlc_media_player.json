@@ -7,7 +7,7 @@
   "homepage": "https://www.videolan.org/vlc/",
   "fileName": "vlc-3.0.23-arm64.dmg",
   "sha": "fc6fac08d87f538517d44aca0c5e7a244b67c8c4cb589bf478363a7315fd5e0d",
-  "previous_version": "3.0.23",
   "category": "Media",
-  "publisher": "VideoLAN"
+  "publisher": "VideoLAN",
+  "previous_version": "3.0.23"
 }

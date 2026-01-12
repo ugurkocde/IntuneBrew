@@ -7,7 +7,7 @@
   "homepage": "https://maestral.app/",
   "fileName": "Maestral-1.9.5.dmg",
   "sha": "cd8f393abba8a70794e527ee30c4d3f11b5da6e935fb315fbe6ff00bf8f79e4c",
-  "previous_version": "1.9.5",
   "category": "Utilities",
-  "publisher": "Maestral Project"
+  "publisher": "Maestral Project",
+  "previous_version": "1.9.5"
 }

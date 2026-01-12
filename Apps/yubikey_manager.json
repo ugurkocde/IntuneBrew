@@ -8,7 +8,7 @@
   "fileName": "yubikey-manager-qt-1.2.5-mac.pkg",
   "sha": "009d1ea2ddf98da0ea748df65c2dc88ae16106a684f444a25a49f542413f8732",
   "changelog": "https://developers.yubico.com/yubikey-manager-qt/Releases/",
-  "previous_version": "1.2.5",
   "category": "Security",
-  "publisher": "Yubico"
+  "publisher": "Yubico",
+  "previous_version": "1.2.5"
 }

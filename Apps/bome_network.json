@@ -17,7 +17,7 @@
     "bundle_id_status": "verified",
     "installed_version": "1.6.0"
   },
-  "previous_version": "1.6.0",
   "category": "Utilities",
-  "publisher": "Bome Software"
+  "publisher": "Bome Software",
+  "previous_version": "1.6.0"
 }

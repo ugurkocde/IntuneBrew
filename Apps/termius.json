@@ -8,7 +8,7 @@
   "fileName": "Termius.dmg",
   "sha": "bd3b8e42e4999efa773ef9f0ac2ed3078ce907092e97e7b58d1d120f77f77e2e",
   "changelog": "https://support.termius.com/hc/en-us/articles/4404036107673-Windows-Linux-Mac",
-  "previous_version": "9.34.8",
   "category": "Developer Tools",
-  "publisher": "Termius"
+  "publisher": "Termius",
+  "previous_version": "9.34.8"
 }

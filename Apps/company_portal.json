@@ -18,7 +18,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "5.2502.1"
   },
-  "previous_version": "5.2510.1",
   "category": "Security",
-  "publisher": "Microsoft Corporation"
+  "publisher": "Microsoft Corporation",
+  "previous_version": "5.2510.1"
 }

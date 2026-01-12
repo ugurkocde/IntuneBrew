@@ -19,7 +19,7 @@
     "bundle_id_status": "verified",
     "installed_version": "25.5.12028494"
   },
-  "previous_version": "26.1.13531937",
   "category": "Productivity",
-  "publisher": "DeepL GmbH"
+  "publisher": "DeepL GmbH",
+  "previous_version": "26.1.13531937"
 }

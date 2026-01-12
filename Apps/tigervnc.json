@@ -7,7 +7,7 @@
   "homepage": "https://tigervnc.org/",
   "fileName": "TigerVNC-1.15.0.dmg",
   "sha": "e43877091f694558f003c2b0e686585c80ed19dd8c8280f0e9817a48b269176c",
-  "previous_version": "1.15.0",
   "category": "Utilities",
-  "publisher": "TigerVNC"
+  "publisher": "TigerVNC",
+  "previous_version": "1.15.0"
 }

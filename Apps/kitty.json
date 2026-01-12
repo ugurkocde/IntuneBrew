@@ -8,7 +8,7 @@
   "fileName": "kitty-0.45.0.dmg",
   "sha": "c0e2afb7580fcf1f4cad410d525068c9d082679c3106a743962610fade4d7381",
   "changelog": "https://github.com/kovidgoyal/kitty/releases",
-  "previous_version": "0.45.0",
   "category": "Developer Tools",
-  "publisher": "Kovid Goyal"
+  "publisher": "Kovid Goyal",
+  "previous_version": "0.45.0"
 }

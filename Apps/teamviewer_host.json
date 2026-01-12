@@ -7,7 +7,7 @@
   "homepage": "https://www.teamviewer.com/",
   "fileName": "TeamViewerHost.dmg",
   "sha": "fdb19920cd01c13999f1559b71275873e1f394ca9ce3bc2fb81cace631246c76",
-  "previous_version": "15",
   "category": "Utilities",
-  "publisher": "TeamViewer GmbH"
+  "publisher": "TeamViewer GmbH",
+  "previous_version": "15"
 }

@@ -18,7 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "6.9.0"
   },
-  "previous_version": "7.1.1.22340",
   "category": "Utilities",
-  "publisher": "Elgato"
+  "publisher": "Elgato",
+  "previous_version": "7.1.1.22340"
 }
