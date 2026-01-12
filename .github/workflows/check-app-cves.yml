@@ -2,44 +2,49 @@ name: Check App CVEs
 
 on:
   workflow_dispatch:
+    inputs:
+      full_sync:
+        description: 'Run full sync (ignore last sync date)'
+        required: false
+        default: 'false'
+        type: boolean
+      specific_app:
+        description: 'Sync specific app only (leave empty for all)'
+        required: false
+        default: ''
+        type: string
   schedule:
-    - cron: "0 22 * * 0" # Run at 10 PM UTC (12 AM CET) every Sunday
+    - cron: "0 6 * * *" # Run daily at 6 AM UTC
 
-# Set permissions for the GITHUB_TOKEN
 permissions:
-  contents: write # This allows the workflow to push changes to the repository
+  contents: write
 
 jobs:
   check-cves:
     runs-on: ubuntu-latest
+    timeout-minutes: 60
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Set up Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
-          python-version: "3.x"
+          python-version: "3.11"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests supabase
-
-      - name: Read supported apps
-        id: read-apps
-        run: |
-          # Read the supported_apps.json file
-          echo "Reading supported apps from supported_apps.json"
+          pip install requests
 
       - name: Check CVEs for apps
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
-          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
-          SUPABASE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+          SPECIFIC_APP: ${{ github.event.inputs.specific_app }}
+          FULL_SYNC: ${{ github.event.inputs.full_sync }}
         run: |
-          cat > check_cves.py << 'EOF'
+          cat > check_cves.py << 'PYTHON_SCRIPT'
           import os
           import sys
           import requests
@@ -47,478 +52,624 @@ jobs:
           import time
           import pathlib
           from datetime import datetime, timedelta
-          from urllib.parse import quote
-          from supabase import create_client, Client
+          from typing import Optional, Dict, List, Any, Tuple
 
-          # Get NVD API key from environment - required
-          nvd_api_key = os.environ.get('NVD_API_KEY')
+          # =============================================================================
+          # CONFIGURATION
+          # =============================================================================
 
-          # Check if API key is available
-          if not nvd_api_key:
-              print("ERROR: NVD_API_KEY is required but not found in environment variables.")
-              print("Please add your NVD API key as a repository secret named NVD_API_KEY.")
-              print("Get an API key at: https://nvd.nist.gov/developers/request-an-api-key")
-              sys.exit(1)
-              
-          # Initialize Supabase client
-          supabase_url = os.environ.get('SUPABASE_URL')
-          supabase_key = os.environ.get('SUPABASE_KEY')
+          NVD_API_KEY = os.environ.get('NVD_API_KEY')
+          SPECIFIC_APP = os.environ.get('SPECIFIC_APP', '').strip()
+          FULL_SYNC = os.environ.get('FULL_SYNC', 'false').lower() == 'true'
 
-          if not supabase_url or not supabase_key:
-              print("ERROR: Supabase credentials are required but not found in environment variables.")
-              print("Please add your Supabase URL and service role key as repository secrets.")
-              sys.exit(1)
-              
-          supabase: Client = create_client(supabase_url, supabase_key)
-              
-          # With API key, rate limits are 50 requests per 30 seconds
+          # Rate limiting: 50 requests per 30 seconds with API key
+          REQUEST_DELAY = 0.7  # seconds between requests
+          MAX_RETRIES = 3
+          RETRY_DELAY = 5  # seconds
 
-          import json
+          # CVE directory
+          CVE_DIR = pathlib.Path('CVE')
+          CVE_DIR.mkdir(exist_ok=True)
 
-          # Function to get proper app name from app JSON file
-          def get_app_display_name(app_key, app_url):
+          # =============================================================================
+          # CURATED CPE MAPPINGS
+          # =============================================================================
+          # Format: app_key -> (vendor, product, [alternative_products])
+          # These are verified CPE vendor:product combinations from NVD
+          # =============================================================================
+
+          CPE_MAPPINGS: Dict[str, Tuple[str, str, List[str]]] = {
+              # Browsers
+              "google_chrome": ("google", "chrome", []),
+              "mozilla_firefox": ("mozilla", "firefox", []),
+              "mozilla_firefox_esr": ("mozilla", "firefox_esr", ["firefox"]),
+              "brave": ("brave", "brave", []),
+              "microsoft_edge": ("microsoft", "edge_chromium", ["edge"]),
+              "arc": ("thebrowser", "arc", []),
+              "opera": ("opera", "opera_browser", ["opera"]),
+              "vivaldi": ("vivaldi", "vivaldi", []),
+
+              # Communication
+              "slack": ("slack", "slack", []),
+              "zoom": ("zoom", "zoom", ["meetings"]),
+              "microsoft_teams": ("microsoft", "teams", []),
+              "discord": ("discord", "discord", []),
+              "signal": ("signal", "signal", []),
+              "whatsapp": ("whatsapp", "whatsapp", []),
+              "webex": ("cisco", "webex_meetings", ["webex"]),
+              "webex_teams": ("cisco", "webex_teams", []),
+              "mattermost": ("mattermost", "mattermost", []),
+              "rocketchat": ("rocket.chat", "rocket.chat", []),
+              "wire": ("wire", "wire", []),
+
+              # Development Tools
+              "microsoft_visual_studio_code": ("microsoft", "visual_studio_code", []),
+              "cursor": ("anysphere", "cursor", []),
+              "sublime_text": ("sublimetext", "sublime_text", ["sublime_text_3"]),
+              "atom": ("atom", "atom", []),
+              "jetbrains_phpstorm": ("jetbrains", "phpstorm", []),
+              "jetbrains_rider": ("jetbrains", "rider", []),
+              "jetbrains_toolbox": ("jetbrains", "toolbox", []),
+              "clion": ("jetbrains", "clion", []),
+              "datagrip": ("jetbrains", "datagrip", []),
+              "dataspell": ("jetbrains", "dataspell", []),
+              "goland": ("jetbrains", "goland", []),
+              "webstorm": ("jetbrains", "webstorm", []),
+              "iterm2": ("iterm2", "iterm2", []),
+              "hyper": ("zeit", "hyper", []),
+              "kitty": ("kovidgoyal", "kitty", []),
+              "docker_desktop": ("docker", "docker_desktop", ["desktop"]),
+              "postman": ("postman", "postman", []),
+              "insomnia": ("kong", "insomnia", []),
+              "bruno": ("usebruno", "bruno", []),
+              "git_credential_manager": ("microsoft", "git_credential_manager", []),
+              "github_desktop": ("github", "desktop", []),
+              "atlassian_sourcetree": ("atlassian", "sourcetree", []),
+              "azure_data_studio": ("microsoft", "azure_data_studio", []),
+              "mongodb_compass": ("mongodb", "compass", []),
+              "mysql_workbench": ("mysql", "workbench", ["mysql_workbench"]),
+              "dbeaver": ("dbeaver", "dbeaver", []),
+
+              # Password Managers
+              "1password": ("1password", "1password", ["agilebits"]),
+              "bitwarden": ("bitwarden", "desktop", ["bitwarden"]),
+              "keepassxc": ("keepassxc", "keepassxc", []),
+              "dashlane": ("dashlane", "dashlane", []),
+              "lastpass": ("lastpass", "lastpass", []),
+
+              # Security & VPN
+              "nordvpn": ("nordvpn", "nordvpn", []),
+              "protonvpn": ("protonvpn", "protonvpn", []),
+              "tailscale": ("tailscale", "tailscale", []),
+              "cloudflare_warp": ("cloudflare", "warp", []),
+              "little_snitch": ("obdev", "little_snitch", []),
+              "malwarebytes_for_mac": ("malwarebytes", "malwarebytes", []),
+              "santa": ("google", "santa", []),
+              "cryptomator": ("cryptomator", "cryptomator", []),
+              "veracrypt": ("idrix", "veracrypt", []),
+
+              # Productivity
+              "notion": ("notion", "notion", []),
+              "obsidian": ("obsidian", "obsidian", []),
+              "evernote": ("evernote", "evernote", []),
+              "joplin": ("joplin", "joplin", []),
+              "typora": ("typora", "typora", []),
+              "macdown": ("macdown", "macdown", []),
+              "xmind": ("xmind", "xmind", []),
+
+              # Office & Documents
+              "microsoft_office": ("microsoft", "office", ["365_apps"]),
+              "libreoffice": ("libreoffice", "libreoffice", []),
+              "adobe_acrobat_reader": ("adobe", "acrobat_reader_dc", ["acrobat_reader", "acrobat"]),
+              "adobe_creative_cloud": ("adobe", "creative_cloud_desktop_application", ["creative_cloud"]),
+              "nitro_pdf_pro": ("gonitro", "nitro_pdf_pro", ["nitro_pro"]),
+
+              # Media
+              "vlc_media_player": ("videolan", "vlc_media_player", []),
+              "spotify": ("spotify", "spotify", []),
+              "plex": ("plex", "plex_media_server", ["plex"]),
+              "jellyfin": ("jellyfin", "jellyfin", []),
+              "obs": ("obsproject", "obs_studio", []),
+              "handbrake": ("handbrake", "handbrake", []),
+              "gimp": ("gimp", "gimp", []),
+              "inkscape": ("inkscape", "inkscape", []),
+              "blender": ("blender", "blender", []),
+              "audacity": ("audacityteam", "audacity", []),
+              "kap": ("wulkano", "kap", []),
+              "camtasia": ("techsmith", "camtasia", []),
+              "snagit": ("techsmith", "snagit", []),
+
+              # Cloud Storage
+              "dropbox": ("dropbox", "dropbox", []),
+              "google_drive": ("google", "drive", []),
+              "onedrive": ("microsoft", "onedrive", []),
+              "nextcloud": ("nextcloud", "desktop_client", ["nextcloud"]),
+              "synology_drive": ("synology", "drive_client", []),
+
+              # Remote Access
+              "anydesk": ("anydesk", "anydesk", []),
+              "teamviewer": ("teamviewer", "teamviewer", []),
+              "rustdesk": ("rustdesk", "rustdesk", []),
+              "parsec": ("parsec", "parsec", []),
+              "nomachine": ("nomachine", "nomachine", []),
+              "tigervnc": ("tigervnc", "tigervnc", []),
+              "remote_desktop_manager": ("devolutions", "remote_desktop_manager", []),
+              "splashtop_business": ("splashtop", "splashtop", []),
+              "moonlight": ("moonlight-stream", "moonlight", []),
+
+              # Utilities
+              "parallels_desktop": ("parallels", "parallels_desktop", []),
+              "utm": ("utm", "utm", []),
+              "rancher_desktop": ("rancher", "rancher_desktop", []),
+              "calibre": ("calibre-ebook", "calibre", []),
+              "transmission": ("transmissionbt", "transmission", []),
+              "qbittorrent": ("qbittorrent", "qbittorrent", []),
+              "wireshark": ("wireshark", "wireshark", []),
+              "mitmproxy": ("mitmproxy", "mitmproxy", []),
+              "stats": ("exelban", "stats", []),
+              "hazel": ("noodlesoft", "hazel", []),
+              "privileges": ("sap", "privileges", []),
+
+              # Enterprise
+              "citrix_workspace": ("citrix", "workspace_app", ["receiver"]),
+              "cisco_jabber": ("cisco", "jabber", []),
+              "okta_advanced_server_access": ("okta", "advanced_server_access", []),
+              "company_portal": ("microsoft", "company_portal", []),
+              "microsoft_auto_update": ("microsoft", "autoupdate", []),
+
+              # Other Popular Apps
+              "steam": ("valvesoftware", "steam_client", ["steam"]),
+              "canva": ("canva", "canva", []),
+              "figma": ("figma", "figma", []),
+              "sketch": ("sketch", "sketch", []),
+              "asana": ("asana", "asana", []),
+              "basecamp": ("basecamp", "basecamp", []),
+              "airtable": ("airtable", "airtable", []),
+              "miro": ("miro", "miro", []),
+              "loom": ("loom", "loom", []),
+              "grammarly": ("grammarly", "grammarly", []),
+              "deepl": ("deepl", "deepl", []),
+              "ollama": ("ollama", "ollama", []),
+              "chatgpt": ("openai", "chatgpt", []),
+          }
+
+          # =============================================================================
+          # CISA KEV CATALOG
+          # =============================================================================
+
+          KEV_CATALOG_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+          kev_cache: Dict[str, Dict] = {}
+
+          def fetch_kev_catalog() -> Dict[str, Dict]:
+              """Fetch and cache the CISA KEV catalog."""
+              global kev_cache
+              if kev_cache:
+                  return kev_cache
+
+              print("Fetching CISA KEV catalog...")
               try:
-                  response = requests.get(app_url)
+                  response = requests.get(KEV_CATALOG_URL, timeout=30)
                   if response.status_code == 200:
-                      app_data = response.json()
-                      # Get the display name from the JSON file
-                      display_name = app_data.get('name') or app_data.get('display_name')
-                      if display_name:
-                          return display_name
-                  # If we can't get the display name, format the key as a fallback
-                  return ' '.join(word.capitalize() for word in app_key.split('_'))
+                      data = response.json()
+                      vulnerabilities = data.get('vulnerabilities', [])
+                      for vuln in vulnerabilities:
+                          cve_id = vuln.get('cveID', '').upper()
+                          if cve_id:
+                              kev_cache[cve_id] = {
+                                  'vendor': vuln.get('vendorProject'),
+                                  'product': vuln.get('product'),
+                                  'vulnerability_name': vuln.get('vulnerabilityName'),
+                                  'date_added': vuln.get('dateAdded'),
+                                  'due_date': vuln.get('dueDate'),
+                                  'known_ransomware_use': vuln.get('knownRansomwareCampaignUse', 'Unknown'),
+                                  'notes': vuln.get('notes'),
+                              }
+                      print(f"Loaded {len(kev_cache)} KEV entries")
+                  else:
+                      print(f"Failed to fetch KEV catalog: {response.status_code}")
               except Exception as e:
-                  print(f"Error fetching app info for {app_key}: {str(e)}")
-                  # Format the key as a fallback
-                  return ' '.join(word.capitalize() for word in app_key.split('_'))
+                  print(f"Error fetching KEV catalog: {e}")
 
-          # Create CVE directory if it doesn't exist
-          cve_dir = pathlib.Path('CVE')
-          cve_dir.mkdir(exist_ok=True)
+              return kev_cache
 
-          # Read the supported apps from the JSON file
-          try:
-              with open('supported_apps.json', 'r') as f:
-                  supported_apps = json.load(f)
-              
-              print(f"Found {len(supported_apps)} apps in supported_apps.json")
-              
-              # Process all apps
-              app_display_names = []
-              app_keys = []
-              
-              for app_key, app_url in supported_apps.items():
-                  display_name = get_app_display_name(app_key, app_url)
-                  app_display_names.append(display_name)
-                  app_keys.append(app_key)
-                  
-                  # Add a small delay to avoid rate limiting when fetching app info
-                  time.sleep(0.1)
-              
-              print(f"Processing {len(app_display_names)} apps for CVE checks")
-              
-          except Exception as e:
-              print(f"Error reading supported_apps.json: {str(e)}")
-              sys.exit(1)
+          def is_kev(cve_id: str) -> Optional[Dict]:
+              """Check if a CVE is in the KEV catalog."""
+              kev = fetch_kev_catalog()
+              return kev.get(cve_id.upper())
 
-          # List of apps to check
-          apps_to_check = app_display_names
+          # =============================================================================
+          # NVD API FUNCTIONS
+          # =============================================================================
 
-          # Function to get CPE names for an app
-          def get_cpe_names(app_name):
-              print(f"\n{'=' * 50}")
-              print(f"Finding CPE names for {app_name}")
-              print(f"{'=' * 50}")
-              
-              # Normalize app name for search and ensure exact match
-              search_term = app_name.strip()
-              
-              try:
-                  # Query the NVD API for CPE names
-                  # Construct the URL directly to ensure exact format
-                  search_term_encoded = quote(search_term)
-                  url = f"https://services.nvd.nist.gov/rest/json/cpes/2.0?keywordSearch={search_term_encoded}"
-                  params = {}  # No params as they're included in the URL
-                  
-                  # Set up headers with API key
-                  headers = {'apiKey': nvd_api_key}
-                  
-                  # Make the request with API key in headers
-                  print(f"Querying CPE API for: {search_term}")
-                  print(f"URL: {url}")
-                  response = requests.get(url, headers=headers)
-                  
-                  # Check if request was successful
-                  if response.status_code != 200:
-                      print(f"Error: CPE API request failed with status code {response.status_code}")
-                      print(f"Response: {response.text}")
-                      return []
-                  
-                  # Parse the JSON response
-                  data = response.json()
-                  
-                  # Print the structure of the response for debugging
-                  print(f"Response structure: {list(data.keys())}")
-                  print(f"Total results: {data.get('totalResults', 0)}")
-                  
-                  # Extract CPEs from the products array
-                  products = data.get('products', [])
-                  
-                  if not products:
-                      print(f"No CPE names found for {app_name}.")
-                      return []
-                  
-                  print(f"Found {len(products)} CPE entries in the products array.")
-                  
-                  # Debug: Print the type of products
-                  print(f"Products type: {type(products)}")
-                  
-                  # If products is a list, print the type of the first few items
-                  if isinstance(products, list) and products:
-                      print(f"First product type: {type(products[0])}")
-                      if len(products) > 1:
-                          print(f"Second product type: {type(products[1])}")
-                  
-                  # Debug: Print the first product to see its structure
-                  if products:
-                      print(f"First product structure: {list(products[0].keys()) if isinstance(products[0], dict) else 'Not a dict'}")
-                  
-                  # Process the products based on their structure
-                  # Filter products to ensure exact match for app_name in the CPE name
-                  filtered_products = []
-                  for product in products:
-                      cpe_obj = product.get('cpe', {})
-                      cpe_name = cpe_obj.get('cpeName', '')
-                      
-                      # Example cpeName: cpe:2.3:a:slackware:slackware:9.0:*:*:*:*:*:*:*
-                      # We want to match the 'product' part, which is the 5th component (index 4)
-                      # after splitting by ':'
-                      
-                      # Ensure it's an application CPE and has enough components
-                      if cpe_name.startswith('cpe:2.3:a:') and len(cpe_name.split(':')) > 4:
-                          product_name_in_cpe = cpe_name.split(':')[4]
-                          
-                          # Perform a case-insensitive exact match on the product name
-                          if product_name_in_cpe.lower() == app_name.lower():
-                              filtered_products.append(product)
-                              
-                  if not filtered_products:
-                      print(f"No valid CPE entries found for {app_name} after filtering.")
-                      return []
-                  
-                  print(f"Processed {len(filtered_products)} valid CPE entries after filtering.")
-                  
-                  # Sort by published date (descending) to get the most recent ones
-                  def extract_date_for_sorting(product):
-                      # Get the created date (which is the published date) from the cpe object
-                      cpe_obj = product.get('cpe', {})
-                      published_date = cpe_obj.get('created', '')
-                      # Parse the date string into a datetime object for sorting
-                      try:
-                          if published_date:
-                              return datetime.strptime(published_date.split('.')[0], "%Y-%m-%dT%H:%M:%S")
-                          return datetime.min
-                      except Exception as e:
-                          print(f"Error parsing date {published_date}: {str(e)}")
-                          return datetime.min
-                  
-                  # Sort by published date in descending order (newest first)
-                  sorted_cpes = sorted(filtered_products, key=extract_date_for_sorting, reverse=True)
-                  
-                  # Take the 5 most recent CPEs
-                  recent_cpes = sorted_cpes[:5]
-                  
-                  # Print the selected CPEs for debugging
-                  print("Selected CPEs by published date:")
-                  for product in recent_cpes:
-                      cpe_obj = product.get('cpe', {})
-                      cpe_name = cpe_obj.get('cpeName', 'N/A')
-                      published_date = cpe_obj.get('created', 'N/A')
-                      print(f"  Name: {cpe_name}, Published: {published_date}")
-                  
-                  # Extract just the CPE names
-                  cpe_names = [product.get('cpe', {}).get('cpeName') for product in recent_cpes
-                              if product.get('cpe', {}).get('cpeName')]
-                  
-                  print(f"Using the {len(cpe_names)} most recent CPE names:")
-                  for cpe_name in cpe_names:
-                      print(f"  - {cpe_name}")
-                  
-                  return cpe_names
-                  
-              except Exception as e:
-                  print(f"Error finding CPE names for {app_name}: {str(e)}")
-                  import traceback
-                  traceback.print_exc()
-                  return []
+          def nvd_request(url: str, params: Dict = None) -> Optional[Dict]:
+              """Make a rate-limited request to NVD API with retries."""
+              headers = {}
+              if NVD_API_KEY:
+                  headers['apiKey'] = NVD_API_KEY
 
-          # Function to check CVEs for a specific CPE name
-          def check_cves_for_cpe(cpe_name, app_name):
-              print(f"\n{'-' * 50}")
-              print(f"Checking CVEs for CPE: {cpe_name}")
-              print(f"{'-' * 50}")
-              
-              # Get CVEs from the last 90 days
-              end_date = datetime.now()
-              start_date = end_date - timedelta(days=90)
-              
-              # Format dates for NVD API (ISO format)
-              start_date_str = start_date.strftime("%Y-%m-%dT00:00:00.000")
-              end_date_str = end_date.strftime("%Y-%m-%dT23:59:59.999")
-              
-              try:
-                  # Query the NVD API for CVEs using the CPE name
-                  # Construct the URL directly to ensure exact format
-                  # cpe_name_encoded = quote(cpe_name)
-                  start_date_encoded = quote(start_date_str)
-                  url = f"https://services.nvd.nist.gov/rest/json/cves/2.0?cpeName={cpe_name}"
-                  
-                  # Set up headers with API key
-                  headers = {'apiKey': nvd_api_key}
-                  
-                  # Make the request with API key in headers
-                  response = requests.get(url, headers=headers)
-                  
-                  # Check if request was successful
-                  if response.status_code != 200:
-                      print(f"Error: CVE API request failed with status code {response.status_code}")
-                      print(f"Response: {response.text}")
-                      return []
-                  
-                  # Parse the JSON response
-                  data = response.json()
-                  
-                  # Get the total count and vulnerabilities
-                  total_results = data.get('totalResults', 0)
+              for attempt in range(MAX_RETRIES):
+                  try:
+                      time.sleep(REQUEST_DELAY)
+                      response = requests.get(url, params=params, headers=headers, timeout=60)
+
+                      if response.status_code == 200:
+                          return response.json()
+                      elif response.status_code == 403:
+                          print(f"Rate limited, waiting {RETRY_DELAY * (attempt + 1)} seconds...")
+                          time.sleep(RETRY_DELAY * (attempt + 1))
+                      elif response.status_code == 404:
+                          return None
+                      else:
+                          print(f"NVD API error {response.status_code}: {response.text[:200]}")
+                          if attempt < MAX_RETRIES - 1:
+                              time.sleep(RETRY_DELAY)
+                  except requests.exceptions.Timeout:
+                      print(f"Request timeout, attempt {attempt + 1}/{MAX_RETRIES}")
+                      if attempt < MAX_RETRIES - 1:
+                          time.sleep(RETRY_DELAY)
+                  except Exception as e:
+                      print(f"Request error: {e}")
+                      if attempt < MAX_RETRIES - 1:
+                          time.sleep(RETRY_DELAY)
+
+              return None
+
+          def extract_version_info(config: Dict) -> Dict[str, Any]:
+              """Extract version range information from CVE configuration."""
+              version_info = {
+                  'affected_version_start': None,
+                  'affected_version_start_type': None,
+                  'affected_version_end': None,
+                  'affected_version_end_type': None,
+              }
+
+              nodes = config.get('nodes', [])
+              for node in nodes:
+                  cpe_matches = node.get('cpeMatch', [])
+                  for match in cpe_matches:
+                      if match.get('vulnerable', False):
+                          # Version start
+                          if 'versionStartIncluding' in match:
+                              version_info['affected_version_start'] = match['versionStartIncluding']
+                              version_info['affected_version_start_type'] = 'including'
+                          elif 'versionStartExcluding' in match:
+                              version_info['affected_version_start'] = match['versionStartExcluding']
+                              version_info['affected_version_start_type'] = 'excluding'
+
+                          # Version end
+                          if 'versionEndIncluding' in match:
+                              version_info['affected_version_end'] = match['versionEndIncluding']
+                              version_info['affected_version_end_type'] = 'including'
+                          elif 'versionEndExcluding' in match:
+                              version_info['affected_version_end'] = match['versionEndExcluding']
+                              version_info['affected_version_end_type'] = 'excluding'
+
+                          # If we found version info, return it
+                          if any(version_info.values()):
+                              return version_info
+
+              return version_info
+
+          def extract_fixed_version(description: str, version_info: Dict) -> Optional[str]:
+              """Extract fixed version from description or version info."""
+              # If we have version end with excluding type, that's the fixed version
+              if version_info.get('affected_version_end') and version_info.get('affected_version_end_type') == 'excluding':
+                  return version_info['affected_version_end']
+
+              # Try to extract from description
+              import re
+              patterns = [
+                  r'(?:fixed|patched|resolved|addressed)\s+(?:in\s+)?(?:version\s+)?(\d+(?:\.\d+)+)',
+                  r'(?:before|prior to)\s+(?:version\s+)?(\d+(?:\.\d+)+)',
+                  r'(?:upgrade|update)\s+to\s+(?:version\s+)?(\d+(?:\.\d+)+)',
+                  r'versions?\s+(?:before|prior to|<)\s+(\d+(?:\.\d+)+)',
+              ]
+
+              for pattern in patterns:
+                  match = re.search(pattern, description, re.IGNORECASE)
+                  if match:
+                      return match.group(1)
+
+              return None
+
+          def is_macos_relevant(cve_data: Dict, vendor: str, product: str) -> bool:
+              """Check if CVE is relevant to macOS platform."""
+              configurations = cve_data.get('configurations', [])
+
+              # If no configurations, check description
+              if not configurations:
+                  description = ""
+                  for desc in cve_data.get('descriptions', []):
+                      if desc.get('lang') == 'en':
+                          description = desc.get('value', '').lower()
+                          break
+
+                  # Exclude if explicitly mentions only other platforms
+                  exclude_terms = ['windows only', 'linux only', 'android only', 'ios only', 'iphone only']
+                  if any(term in description for term in exclude_terms):
+                      return False
+
+                  # Include if mentions macOS or doesn't specify platform
+                  return True
+
+              # Check CPE configurations for platform
+              for config in configurations:
+                  nodes = config.get('nodes', [])
+                  for node in nodes:
+                      cpe_matches = node.get('cpeMatch', [])
+                      for match in cpe_matches:
+                          cpe = match.get('criteria', '')
+                          parts = cpe.split(':')
+
+                          if len(parts) >= 11:
+                              cpe_vendor = parts[3].lower()
+                              cpe_product = parts[4].lower()
+                              target_sw = parts[10].lower() if len(parts) > 10 else '*'
+                              target_hw = parts[11].lower() if len(parts) > 11 else '*'
+
+                              # Check if this matches our vendor/product
+                              if cpe_vendor == vendor.lower() and cpe_product == product.lower():
+                                  # Check platform
+                                  if target_sw in ['*', 'macos', 'mac_os', 'mac_os_x', 'darwin']:
+                                      return True
+                                  if target_hw in ['*', 'mac', 'x86', 'x64', 'arm64']:
+                                      return True
+                                  # Exclude explicit non-macOS platforms
+                                  if target_sw in ['windows', 'linux', 'android', 'ios', 'iphone_os']:
+                                      continue
+
+              # Default to including if no explicit exclusion
+              return True
+
+          def fetch_cves_for_app(app_key: str, vendor: str, product: str, alt_products: List[str]) -> List[Dict]:
+              """Fetch CVEs for an app using its CPE vendor:product."""
+              all_cves = []
+              seen_cve_ids = set()
+
+              products_to_check = [product] + alt_products
+
+              for prod in products_to_check:
+                  # Build CPE match string
+                  cpe_match = f"cpe:2.3:a:{vendor}:{prod}:*:*:*:*:*:*:*:*"
+
+                  print(f"  Querying NVD for CPE: {cpe_match}")
+
+                  url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+                  params = {
+                      'cpeName': cpe_match,
+                      'resultsPerPage': 500,
+                  }
+
+                  data = nvd_request(url, params)
+                  if not data:
+                      continue
+
                   vulnerabilities = data.get('vulnerabilities', [])
-                  
-                  if total_results == 0 or not vulnerabilities:
-                      print(f"No CVEs found for this CPE in the last 90 days.")
-                      return []
-                  
-                  print(f"Found {total_results} CVEs for this CPE in the last 90 days.")
-                  
-                  # Process the vulnerabilities
-                  processed_vulns = []
+                  total_results = data.get('totalResults', 0)
+                  print(f"  Found {total_results} CVEs for {vendor}:{prod}")
+
                   for vuln in vulnerabilities:
                       cve = vuln.get('cve', {})
-                      
-                      # Get CVE details
-                      cve_id = cve.get('id', 'N/A')
-                      
-                      # Get description (English)
-                      description = "N/A"
-                      if 'descriptions' in cve:
-                          for desc in cve['descriptions']:
-                              if desc.get('lang') == 'en':
-                                  description = desc.get('value', 'N/A')
-                                  break
-                      
-                      # Get published and last modified dates
-                      published_date = "N/A"
-                      last_modified_date = "N/A"
-                      published_datetime = None
-                      last_modified_datetime = None
-                      if 'published' in cve:
-                          published_date = cve['published'].split('T')[0]
-                          published_datetime = datetime.strptime(cve['published'].split('.')[0], "%Y-%m-%dT%H:%M:%S")
-                      if 'lastModified' in cve:
-                          last_modified_date = cve['lastModified'].split('T')[0]
-                          last_modified_datetime = datetime.strptime(cve['lastModified'].split('.')[0], "%Y-%m-%dT%H:%M:%S")
-                      
-                      # Get CVSS score and severity if available
-                      base_score = "N/A"
-                      severity = "N/A"
-                      
+                      cve_id = cve.get('id', '')
+
+                      # Skip duplicates
+                      if cve_id in seen_cve_ids:
+                          continue
+
+                      # Check if relevant to macOS
+                      if not is_macos_relevant(cve, vendor, prod):
+                          continue
+
+                      seen_cve_ids.add(cve_id)
+
+                      # Extract description
+                      description = ""
+                      for desc in cve.get('descriptions', []):
+                          if desc.get('lang') == 'en':
+                              description = desc.get('value', '')
+                              break
+
+                      # Extract dates
+                      published = cve.get('published', '')
+                      last_modified = cve.get('lastModified', '')
+                      published_date = published.split('T')[0] if published else None
+                      last_modified_date = last_modified.split('T')[0] if last_modified else None
+
+                      # Extract CVSS metrics
                       metrics = cve.get('metrics', {})
-                      
-                      # Try CVSS 3.1 first
-                      if 'cvssMetricV31' in metrics and metrics['cvssMetricV31']:
-                          cvss_data = metrics['cvssMetricV31'][0].get('cvssData', {})
-                          base_score = cvss_data.get('baseScore', 'N/A')
-                          severity = cvss_data.get('baseSeverity', 'N/A')
-                      # Then try CVSS 3.0
-                      elif 'cvssMetricV30' in metrics and metrics['cvssMetricV30']:
-                          cvss_data = metrics['cvssMetricV30'][0].get('cvssData', {})
-                          base_score = cvss_data.get('baseScore', 'N/A')
-                          severity = cvss_data.get('baseSeverity', 'N/A')
-                      # Finally try CVSS 2.0
-                      elif 'cvssMetricV2' in metrics and metrics['cvssMetricV2']:
-                          cvss_data = metrics['cvssMetricV2'][0].get('cvssData', {})
-                          base_score = cvss_data.get('baseScore', 'N/A')
-                          severity = metrics['cvssMetricV2'][0].get('baseSeverity', 'N/A')
-                      
-                      # Add to processed list with all details
-                      processed_vulns.append({
+                      base_score = None
+                      severity = None
+                      cvss_version = None
+                      cvss_vector = None
+
+                      # Try CVSS 3.1 first, then 3.0, then 2.0
+                      for version_key, version_name in [('cvssMetricV31', '3.1'), ('cvssMetricV30', '3.0'), ('cvssMetricV2', '2.0')]:
+                          if version_key in metrics and metrics[version_key]:
+                              cvss_data = metrics[version_key][0].get('cvssData', {})
+                              base_score = cvss_data.get('baseScore')
+                              severity = cvss_data.get('baseSeverity')
+                              cvss_version = version_name
+                              cvss_vector = cvss_data.get('vectorString')
+
+                              # For CVSS 2.0, severity might be in a different location
+                              if not severity and version_key == 'cvssMetricV2':
+                                  severity = metrics[version_key][0].get('baseSeverity')
+                              break
+
+                      # Extract version information
+                      configurations = cve.get('configurations', [])
+                      version_info = {}
+                      for config in configurations:
+                          version_info = extract_version_info(config)
+                          if any(version_info.values()):
+                              break
+
+                      # Extract fixed version
+                      fixed_version = extract_fixed_version(description, version_info)
+
+                      # Check KEV status
+                      kev_info = is_kev(cve_id)
+
+                      # Build CVE record
+                      cve_record = {
                           'cve_id': cve_id,
                           'published_date': published_date,
-                          'published_datetime': published_datetime,
                           'last_modified_date': last_modified_date,
-                          'last_modified_datetime': last_modified_datetime,
+                          'description': description,
                           'base_score': base_score,
                           'severity': severity,
-                          'description': description,
-                          'cpe_name': cpe_name
-                      })
-                  
-                  return processed_vulns
-                  
-              except Exception as e:
-                  print(f"Error checking CVEs for CPE {cpe_name}: {str(e)}")
-                  import traceback
-                  traceback.print_exc()
-                  return []
-
-          # Function to check CVEs for a specific app
-          def check_cves_for_app(app_name, app_key):
-              print(f"\n{'=' * 50}")
-              print(f"Checking CVEs for {app_name}")
-              print(f"{'=' * 50}")
-              
-              # Step 1: Get CPE names for the app
-              cpe_names = get_cpe_names(app_name)
-              
-              if not cpe_names:
-                  print(f"No CPE names found for {app_name}, cannot check for CVEs.")
-                  return
-              
-              # Step 2: Get CVEs for each CPE name
-              all_vulns = []
-              for cpe_name in cpe_names:
-                  vulns = check_cves_for_cpe(cpe_name, app_name)
-                  all_vulns.extend(vulns)
-                  
-                  # Add a small delay between requests to avoid rate limiting
-                  time.sleep(0.5)
-              
-              if not all_vulns:
-                  print(f"No CVEs found for {app_name} in the last 90 days.")
-                  return
-              
-              # Deduplicate CVEs by cve_id to avoid database constraint violations
-              # Create a dictionary to store the most recent version of each CVE
-              unique_cves = {}
-              for vuln in all_vulns:
-                  cve_id = vuln['cve_id']
-                  # If we haven't seen this CVE before, or this one is more recent, keep it
-                  if (cve_id not in unique_cves or
-                      (vuln['published_datetime'] is not None and
-                       unique_cves[cve_id]['published_datetime'] is not None and
-                       vuln['published_datetime'] > unique_cves[cve_id]['published_datetime'])):
-                      unique_cves[cve_id] = vuln
-              
-              # Convert back to a list
-              deduplicated_vulns = list(unique_cves.values())
-              
-              # Sort by published date (newest first)
-              sorted_vulns = sorted(
-                  [v for v in deduplicated_vulns if v['published_datetime'] is not None],
-                  key=lambda x: x['published_datetime'],
-                  reverse=True
-              )
-              
-              # Take only the 5 most recent CVEs
-              recent_vulns = sorted_vulns[:5]
-              
-              print(f"\nFound {len(all_vulns)} total CVEs for {app_name} in the last 90 days.")
-              print(f"Displaying the 5 most recent CVEs sorted by published date:")
-              print(f"\n{'ID':<20} {'Published':<12} {'Last Modified':<12} {'Base Score':<10} {'Severity':<10}")
-              print(f"{'-' * 72}")
-              
-              # First, delete existing CVEs for this app to avoid duplicates
-              try:
-                  print(f"Removing existing CVE records for {app_name}...")
-                  supabase.table('app_cves').delete().eq('app_name', app_name).execute()
-              except Exception as e:
-                  print(f"Error deleting existing CVEs for {app_name}: {str(e)}")
-              
-              # Store the CVEs in the database
-              if recent_vulns:
-                  print(f"Storing {len(recent_vulns)} CVEs for {app_name} in the database...")
-                  cve_records = []
-                  for vuln in recent_vulns:
-                      # Convert base_score to float if it's not N/A
-                      base_score_value = None
-                      if vuln['base_score'] != 'N/A':
-                          try:
-                              base_score_value = float(vuln['base_score'])
-                          except:
-                              pass
-                          
-                      cve_record = {
-                          'app_name': app_name,
-                          'cve_id': vuln['cve_id'],
-                          'published_date': vuln['published_date'] if vuln['published_date'] != 'N/A' else None,
-                          'last_modified_date': vuln['last_modified_date'] if vuln['last_modified_date'] != 'N/A' else None,
-                          'base_score': base_score_value,
-                          'severity': vuln['severity'] if vuln['severity'] != 'N/A' else None,
-                          'description': vuln['description'] if vuln['description'] != 'N/A' else None,
-                          'cpe_name': vuln['cpe_name']
+                          'cvss_version': cvss_version,
+                          'cvss_vector': cvss_vector,
+                          'affected_version_start': version_info.get('affected_version_start'),
+                          'affected_version_start_type': version_info.get('affected_version_start_type'),
+                          'affected_version_end': version_info.get('affected_version_end'),
+                          'affected_version_end_type': version_info.get('affected_version_end_type'),
+                          'fixed_version': fixed_version,
+                          'is_kev': kev_info is not None,
+                          'kev_date_added': kev_info.get('date_added') if kev_info else None,
+                          'kev_due_date': kev_info.get('due_date') if kev_info else None,
+                          'kev_ransomware_use': kev_info.get('known_ransomware_use') if kev_info else None,
+                          'vendor': vendor,
+                          'product': prod,
                       }
-                      cve_records.append(cve_record)
-                  
-                  try:
-                      result = supabase.table('app_cves').insert(cve_records).execute()
-                      print(f"✅ Successfully stored CVEs for {app_name} in the database")
-                  except Exception as e:
-                      print(f"Error storing CVEs for {app_name}: {str(e)}")
-                  
-                  # Create JSON file in CVE folder with the same name as in Apps/
-                  try:
-                      # Create a JSON structure for the CVE data
-                      cve_json = {
-                          "app_name": app_name,
-                          "last_updated": datetime.now().strftime("%Y-%m-%d"),
-                          "vulnerabilities": []
-                      }
-                      
-                      for vuln in recent_vulns:
-                          cve_json["vulnerabilities"].append({
-                              "cve_id": vuln['cve_id'],
-                              "published_date": vuln['published_date'],
-                              "last_modified_date": vuln['last_modified_date'],
-                              "base_score": vuln['base_score'],
-                              "severity": vuln['severity'],
-                              "description": vuln['description'],
-                              "cpe_name": vuln['cpe_name']
-                          })
-                      
-                      # Write to file with the same name as in Apps/
-                      cve_file_path = cve_dir / f"{app_key}.json"
-                      with open(cve_file_path, 'w') as f:
-                          json.dump(cve_json, f, indent=2)
-                      print(f"✅ Successfully created CVE file at {cve_file_path}")
-                  except Exception as e:
-                      print(f"Error creating CVE file for {app_name}: {str(e)}")
-              
-              # Display the results
-              for vuln in recent_vulns:
-                  print(f"{vuln['cve_id']:<20} {vuln['published_date']:<12} {vuln['last_modified_date']:<12} {vuln['base_score']:<10} {vuln['severity']:<10}")
-                  print(f"CPE: {vuln['cpe_name']}")
-                  print(f"Description: {vuln['description']}")
-                  print(f"{'-' * 72}")
-              
-              # Show how many were found vs. how many are displayed
-              if len(all_vulns) > 5:
-                  print(f"Note: Showing 5 most recent CVEs out of {len(all_vulns)} found for {app_name}.")
 
-          # Check CVEs for each app
-          print(f"\nChecking CVEs for {len(apps_to_check)} apps:")
-          for i, (app, app_key) in enumerate(zip(app_display_names, app_keys)):
-              print(f"\n[{i+1}/{len(apps_to_check)}] Processing app: {app} (key: {app_key})")
-              check_cves_for_app(app.strip(), app_key)
-              # Add a larger delay between apps to avoid rate limiting
-              # Since we're making multiple requests per app now
-              time.sleep(2)  # 2 second delay between apps
+                      all_cves.append(cve_record)
 
-          print("\nCVE check completed and data stored in Supabase database and CVE folder.")
-          EOF
+              return all_cves
+
+          def sort_cves(cves: List[Dict]) -> List[Dict]:
+              """Sort CVEs by severity and date (most critical/recent first)."""
+              severity_order = {'CRITICAL': 0, 'HIGH': 1, 'MEDIUM': 2, 'LOW': 3, None: 4}
+
+              def sort_key(cve):
+                  # KEV CVEs first
+                  kev_priority = 0 if cve.get('is_kev') else 1
+                  # Then by severity
+                  severity = severity_order.get(cve.get('severity', '').upper() if cve.get('severity') else None, 4)
+                  # Then by date (newest first)
+                  date = cve.get('published_date') or '1970-01-01'
+                  return (kev_priority, severity, -int(date.replace('-', '')))
+
+              return sorted(cves, key=sort_key)
+
+          def save_cve_json(app_key: str, app_name: str, cves: List[Dict]):
+              """Save CVEs to JSON file."""
+              output = {
+                  'app_name': app_name,
+                  'app_key': app_key,
+                  'last_updated': datetime.now().strftime('%Y-%m-%d'),
+                  'total_cves': len(cves),
+                  'summary': {
+                      'critical': sum(1 for c in cves if c.get('severity', '').upper() == 'CRITICAL'),
+                      'high': sum(1 for c in cves if c.get('severity', '').upper() == 'HIGH'),
+                      'medium': sum(1 for c in cves if c.get('severity', '').upper() == 'MEDIUM'),
+                      'low': sum(1 for c in cves if c.get('severity', '').upper() == 'LOW'),
+                      'kev_count': sum(1 for c in cves if c.get('is_kev')),
+                  },
+                  'vulnerabilities': cves,
+              }
+
+              file_path = CVE_DIR / f"{app_key}.json"
+              with open(file_path, 'w') as f:
+                  json.dump(output, f, indent=2, default=str)
+
+              print(f"  Saved {len(cves)} CVEs to {file_path}")
+
+          # =============================================================================
+          # MAIN EXECUTION
+          # =============================================================================
+
+          def main():
+              if not NVD_API_KEY:
+                  print("ERROR: NVD_API_KEY is required. Add it as a repository secret.")
+                  print("Get an API key at: https://nvd.nist.gov/developers/request-an-api-key")
+                  sys.exit(1)
+
+              print("=" * 60)
+              print("IntuneBrew CVE Scanner")
+              print("=" * 60)
+              print(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}")
+              print(f"Full sync: {FULL_SYNC}")
+              print(f"Specific app: {SPECIFIC_APP or 'All apps'}")
+              print(f"Apps configured: {len(CPE_MAPPINGS)}")
+              print("=" * 60)
+
+              # Pre-fetch KEV catalog
+              fetch_kev_catalog()
+
+              # Determine which apps to process
+              apps_to_process = {}
+              if SPECIFIC_APP:
+                  if SPECIFIC_APP in CPE_MAPPINGS:
+                      apps_to_process[SPECIFIC_APP] = CPE_MAPPINGS[SPECIFIC_APP]
+                  else:
+                      print(f"ERROR: App '{SPECIFIC_APP}' not found in CPE mappings")
+                      print(f"Available apps: {', '.join(sorted(CPE_MAPPINGS.keys()))}")
+                      sys.exit(1)
+              else:
+                  apps_to_process = CPE_MAPPINGS
+
+              # Process each app
+              total_apps = len(apps_to_process)
+              processed = 0
+              errors = []
+
+              for app_key, (vendor, product, alt_products) in apps_to_process.items():
+                  processed += 1
+                  app_name = ' '.join(word.capitalize() for word in app_key.split('_'))
+
+                  print(f"\n[{processed}/{total_apps}] Processing: {app_name}")
+                  print(f"  Vendor: {vendor}, Product: {product}")
+
+                  try:
+                      cves = fetch_cves_for_app(app_key, vendor, product, alt_products)
+
+                      if cves:
+                          # Sort CVEs
+                          sorted_cves = sort_cves(cves)
+
+                          # Save to JSON
+                          save_cve_json(app_key, app_name, sorted_cves)
+
+                          # Print summary
+                          kev_count = sum(1 for c in cves if c.get('is_kev'))
+                          critical = sum(1 for c in cves if c.get('severity', '').upper() == 'CRITICAL')
+                          high = sum(1 for c in cves if c.get('severity', '').upper() == 'HIGH')
+
+                          print(f"  Total: {len(cves)} CVEs (Critical: {critical}, High: {high}, KEV: {kev_count})")
+                      else:
+                          # Save empty file to indicate we checked
+                          save_cve_json(app_key, app_name, [])
+                          print(f"  No CVEs found")
+
+                  except Exception as e:
+                      print(f"  ERROR: {e}")
+                      errors.append((app_key, str(e)))
+                      import traceback
+                      traceback.print_exc()
+
+              # Print summary
+              print("\n" + "=" * 60)
+              print("SCAN COMPLETE")
+              print("=" * 60)
+              print(f"Apps processed: {processed}")
+              print(f"Errors: {len(errors)}")
+
+              if errors:
+                  print("\nErrors encountered:")
+                  for app_key, error in errors:
+                      print(f"  - {app_key}: {error}")
+
+              print("\nDone!")
+
+          if __name__ == '__main__':
+              main()
+          PYTHON_SCRIPT
 
           python check_cves.py
 
       - name: Commit and push CVE files
         run: |
-          # Check if there are any changes to commit
           if [[ -n $(git status --porcelain) ]]; then
             git config --global user.name 'GitHub Action'
             git config --global user.email 'action@github.com'
