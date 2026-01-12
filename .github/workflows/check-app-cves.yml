@@ -429,111 +429,132 @@ jobs:
               products_to_check = [product] + alt_products
 
               for prod in products_to_check:
-                  # Build CPE match string
-                  cpe_match = f"cpe:2.3:a:{vendor}:{prod}:*:*:*:*:*:*:*:*"
+                  # Build CPE match string for virtualMatchString (pattern matching)
+                  cpe_match = f"cpe:2.3:a:{vendor}:{prod}"
 
-                  print(f"  Querying NVD for CPE: {cpe_match}")
+                  print(f"  Querying NVD for CPE pattern: {cpe_match}")
 
                   url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
-                  params = {
-                      'cpeName': cpe_match,
-                      'resultsPerPage': 500,
-                  }
 
-                  data = nvd_request(url, params)
-                  if not data:
-                      continue
+                  # Paginate through all results
+                  start_index = 0
+                  results_per_page = 500
+                  total_results = None
 
-                  vulnerabilities = data.get('vulnerabilities', [])
-                  total_results = data.get('totalResults', 0)
-                  print(f"  Found {total_results} CVEs for {vendor}:{prod}")
-
-                  for vuln in vulnerabilities:
-                      cve = vuln.get('cve', {})
-                      cve_id = cve.get('id', '')
-
-                      # Skip duplicates
-                      if cve_id in seen_cve_ids:
-                          continue
-
-                      # Check if relevant to macOS
-                      if not is_macos_relevant(cve, vendor, prod):
-                          continue
-
-                      seen_cve_ids.add(cve_id)
-
-                      # Extract description
-                      description = ""
-                      for desc in cve.get('descriptions', []):
-                          if desc.get('lang') == 'en':
-                              description = desc.get('value', '')
-                              break
-
-                      # Extract dates
-                      published = cve.get('published', '')
-                      last_modified = cve.get('lastModified', '')
-                      published_date = published.split('T')[0] if published else None
-                      last_modified_date = last_modified.split('T')[0] if last_modified else None
-
-                      # Extract CVSS metrics
-                      metrics = cve.get('metrics', {})
-                      base_score = None
-                      severity = None
-                      cvss_version = None
-                      cvss_vector = None
-
-                      # Try CVSS 3.1 first, then 3.0, then 2.0
-                      for version_key, version_name in [('cvssMetricV31', '3.1'), ('cvssMetricV30', '3.0'), ('cvssMetricV2', '2.0')]:
-                          if version_key in metrics and metrics[version_key]:
-                              cvss_data = metrics[version_key][0].get('cvssData', {})
-                              base_score = cvss_data.get('baseScore')
-                              severity = cvss_data.get('baseSeverity')
-                              cvss_version = version_name
-                              cvss_vector = cvss_data.get('vectorString')
-
-                              # For CVSS 2.0, severity might be in a different location
-                              if not severity and version_key == 'cvssMetricV2':
-                                  severity = metrics[version_key][0].get('baseSeverity')
-                              break
-
-                      # Extract version information
-                      configurations = cve.get('configurations', [])
-                      version_info = {}
-                      for config in configurations:
-                          version_info = extract_version_info(config)
-                          if any(version_info.values()):
-                              break
-
-                      # Extract fixed version
-                      fixed_version = extract_fixed_version(description, version_info)
-
-                      # Check KEV status
-                      kev_info = is_kev(cve_id)
-
-                      # Build CVE record
-                      cve_record = {
-                          'cve_id': cve_id,
-                          'published_date': published_date,
-                          'last_modified_date': last_modified_date,
-                          'description': description,
-                          'base_score': base_score,
-                          'severity': severity,
-                          'cvss_version': cvss_version,
-                          'cvss_vector': cvss_vector,
-                          'affected_version_start': version_info.get('affected_version_start'),
-                          'affected_version_start_type': version_info.get('affected_version_start_type'),
-                          'affected_version_end': version_info.get('affected_version_end'),
-                          'affected_version_end_type': version_info.get('affected_version_end_type'),
-                          'fixed_version': fixed_version,
-                          'is_kev': kev_info is not None,
-                          'kev_date_added': kev_info.get('date_added') if kev_info else None,
-                          'kev_due_date': kev_info.get('due_date') if kev_info else None,
-                          'kev_ransomware_use': kev_info.get('known_ransomware_use') if kev_info else None,
-                          'vendor': vendor,
-                          'product': prod,
+                  while True:
+                      params = {
+                          'virtualMatchString': cpe_match,
+                          'resultsPerPage': results_per_page,
+                          'startIndex': start_index,
                       }
 
-                      all_cves.append(cve_record)
+                      data = nvd_request(url, params)
+                      if not data:
+                          break
+
+                      vulnerabilities = data.get('vulnerabilities', [])
+
+                      if total_results is None:
+                          total_results = data.get('totalResults', 0)
+                          print(f"  Found {total_results} total CVEs for {vendor}:{prod}")
+
+                      if not vulnerabilities:
+                          break
+
+                      # Process CVEs from this page
+                      for vuln in vulnerabilities:
+                          cve = vuln.get('cve', {})
+                          cve_id = cve.get('id', '')
+
+                          # Skip duplicates
+                          if cve_id in seen_cve_ids:
+                              continue
+
+                          # Check if relevant to macOS
+                          if not is_macos_relevant(cve, vendor, prod):
+                              continue
+
+                          seen_cve_ids.add(cve_id)
+
+                          # Extract description
+                          description = ""
+                          for desc in cve.get('descriptions', []):
+                              if desc.get('lang') == 'en':
+                                  description = desc.get('value', '')
+                                  break
+
+                          # Extract dates
+                          published = cve.get('published', '')
+                          last_modified = cve.get('lastModified', '')
+                          published_date = published.split('T')[0] if published else None
+                          last_modified_date = last_modified.split('T')[0] if last_modified else None
+
+                          # Extract CVSS metrics
+                          metrics = cve.get('metrics', {})
+                          base_score = None
+                          severity = None
+                          cvss_version = None
+                          cvss_vector = None
+
+                          # Try CVSS 3.1 first, then 3.0, then 2.0
+                          for version_key, version_name in [('cvssMetricV31', '3.1'), ('cvssMetricV30', '3.0'), ('cvssMetricV2', '2.0')]:
+                              if version_key in metrics and metrics[version_key]:
+                                  cvss_data = metrics[version_key][0].get('cvssData', {})
+                                  base_score = cvss_data.get('baseScore')
+                                  severity = cvss_data.get('baseSeverity')
+                                  cvss_version = version_name
+                                  cvss_vector = cvss_data.get('vectorString')
+
+                                  # For CVSS 2.0, severity might be in a different location
+                                  if not severity and version_key == 'cvssMetricV2':
+                                      severity = metrics[version_key][0].get('baseSeverity')
+                                  break
+
+                          # Extract version information
+                          configurations = cve.get('configurations', [])
+                          version_info = {}
+                          for config in configurations:
+                              version_info = extract_version_info(config)
+                              if any(version_info.values()):
+                                  break
+
+                          # Extract fixed version
+                          fixed_version = extract_fixed_version(description, version_info)
+
+                          # Check KEV status
+                          kev_info = is_kev(cve_id)
+
+                          # Build CVE record
+                          cve_record = {
+                              'cve_id': cve_id,
+                              'published_date': published_date,
+                              'last_modified_date': last_modified_date,
+                              'description': description,
+                              'base_score': base_score,
+                              'severity': severity,
+                              'cvss_version': cvss_version,
+                              'cvss_vector': cvss_vector,
+                              'affected_version_start': version_info.get('affected_version_start'),
+                              'affected_version_start_type': version_info.get('affected_version_start_type'),
+                              'affected_version_end': version_info.get('affected_version_end'),
+                              'affected_version_end_type': version_info.get('affected_version_end_type'),
+                              'fixed_version': fixed_version,
+                              'is_kev': kev_info is not None,
+                              'kev_date_added': kev_info.get('date_added') if kev_info else None,
+                              'kev_due_date': kev_info.get('due_date') if kev_info else None,
+                              'kev_ransomware_use': kev_info.get('known_ransomware_use') if kev_info else None,
+                              'vendor': vendor,
+                              'product': prod,
+                          }
+
+                          all_cves.append(cve_record)
+
+                      # Move to next page
+                      start_index += results_per_page
+                      if start_index >= total_results:
+                          break
+
+                      print(f"    Fetched {start_index}/{total_results} CVEs...")
 
               return all_cves
 
