@@ -2,13 +2,56 @@
   "app_name": "Postman",
   "app_key": "postman",
   "last_updated": "2026-01-12",
-  "total_cves": 0,
+  "total_cves": 2,
   "summary": {
-    "critical": 0,
-    "high": 0,
+    "critical": 1,
+    "high": 1,
     "medium": 0,
     "low": 0,
     "kev_count": 0
   },
-  "vulnerabilities": []
+  "vulnerabilities": [
+    {
+      "cve_id": "CVE-2024-23738",
+      "published_date": "2024-01-28",
+      "last_modified_date": "2024-11-21",
+      "description": "An issue in Postman version 10.22 and before on macOS allows a remote attacker to execute arbitrary code via the RunAsNode and enableNodeClilnspectArguments settings. NOTE: the vendor states \"we dispute the report's accuracy ... the configuration does not enable remote code execution..\"",
+      "base_score": 9.8,
+      "severity": "CRITICAL",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "10.22",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "10.22",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "postman",
+      "product": "postman"
+    },
+    {
+      "cve_id": "CVE-2018-17215",
+      "published_date": "2018-09-26",
+      "last_modified_date": "2024-11-21",
+      "description": "An information-disclosure issue was discovered in Postman through 6.3.0. It validates a server's X.509 certificate and presents an error if the certificate is not valid. Unfortunately, the associated HTTPS request data is sent anyway. Only the response is not displayed. Thus, all contained information of the HTTPS request is disclosed to a man-in-the-middle attacker (for example, user credentials).",
+      "base_score": 8.1,
+      "severity": "HIGH",
+      "cvss_version": "3.0",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "6.3.0",
+      "affected_version_end_type": "including",
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "postman",
+      "product": "postman"
+    }
+  ]
 }

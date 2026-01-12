@@ -2,13 +2,56 @@
   "app_name": "Kitty",
   "app_key": "kitty",
   "last_updated": "2026-01-12",
-  "total_cves": 0,
+  "total_cves": 2,
   "summary": {
-    "critical": 0,
+    "critical": 1,
     "high": 0,
-    "medium": 0,
+    "medium": 1,
     "low": 0,
     "kev_count": 0
   },
-  "vulnerabilities": []
+  "vulnerabilities": [
+    {
+      "cve_id": "CVE-2020-35605",
+      "published_date": "2020-12-21",
+      "last_modified_date": "2025-04-24",
+      "description": "The Graphics Protocol feature in graphics.c in kitty before 0.19.3 allows remote attackers to execute arbitrary code because a filename containing special characters can be included in an error message.",
+      "base_score": 9.8,
+      "severity": "CRITICAL",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "0.19.3",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "0.19.3",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "kovidgoyal",
+      "product": "kitty"
+    },
+    {
+      "cve_id": "CVE-2025-43929",
+      "published_date": "2025-04-20",
+      "last_modified_date": "2025-04-24",
+      "description": "open_actions.py in kitty before 0.41.0 does not ask for user confirmation before running a local executable file that may have been linked from an untrusted document (e.g., a document opened in KDE ghostwriter).",
+      "base_score": 4.1,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:H/PR:N/UI:R/S:C/C:L/I:L/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "0.41.0",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "0.41.0",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "kovidgoyal",
+      "product": "kitty"
+    }
+  ]
 }

@@ -2,13 +2,35 @@
   "app_name": "Dashlane",
   "app_key": "dashlane",
   "last_updated": "2026-01-12",
-  "total_cves": 0,
+  "total_cves": 1,
   "summary": {
     "critical": 0,
-    "high": 0,
+    "high": 1,
     "medium": 0,
     "low": 0,
     "kev_count": 0
   },
-  "vulnerabilities": []
+  "vulnerabilities": [
+    {
+      "cve_id": "CVE-2017-11657",
+      "published_date": "2017-08-04",
+      "last_modified_date": "2025-04-20",
+      "description": "Dashlane might allow local users to gain privileges by placing a Trojan horse WINHTTP.dll in the %APPDATA%\\Dashlane directory.",
+      "base_score": 7.3,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "dashlane",
+      "product": "dashlane"
+    }
+  ]
 }
