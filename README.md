@@ -73,6 +73,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 - [🤔 Troubleshooting](#-troubleshooting)
   - [Common Issues](#common-issues)
 - [🤝 Contributing](#-contributing)
+- [Automated Workflows](#automated-workflows)
 - [📜 License](#-license)
 - [🙏 Acknowledgments](#-acknowledgments)
 - [📞 Support](#-support)
@@ -1233,6 +1234,65 @@ Contributions are welcome! Please feel free to submit a Pull Request. For major 
 3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
 4. Push to the Branch (`git push origin feature/AmazingFeature`)
 5. Open a Pull Request
+
+## Automated Workflows
+
+IntuneBrew uses a chain of GitHub Actions workflows to automate app management. Here's how the pipeline works:
+
+### Workflow Chain
+
+```
+App Request Approved
+        |
+        v
+[1] Auto-Approve App Request
+    - Validates the app from Homebrew
+    - Adds app URL to collect_app_info.py
+    - Commits and pushes changes
+        |
+        v
+[2] Build App Packages
+    - Collects app information from Homebrew
+    - Downloads and repackages apps (DMG/ZIP to PKG)
+    - Uploads packages to Azure Blob Storage
+    - Updates Apps/*.json with version info
+    - Generates supported_apps.json
+    - Updates README app count badge
+        |
+        +------------------+
+        |                  |
+        v                  v
+[3a] Fetch App Icons   [3b] Update Version Database
+    - Downloads missing      - Syncs versions to Supabase
+      app icons from         - Sends notifications to
+      Brandfetch API           subscribed users
+    - Commits to Logos/          |
+                                 v
+                        [4] Generate Uninstall Scripts
+                            - Creates PowerShell uninstall
+                              scripts for each app
+                            - Commits to Uninstall Scripts/
+```
+
+### Workflow Details
+
+| Workflow | Trigger | What It Does |
+|----------|---------|--------------|
+| **Auto-Approve App Request** | `/.approve` comment or `auto-approved` label | Validates and adds new apps to the supported list |
+| **Build App Packages** | Push to `collect_app_info.py`, daily schedule, or manual | Downloads apps, creates PKG files, uploads to Azure |
+| **Fetch App Icons** | After Build App Packages completes | Downloads missing app logos from Brandfetch |
+| **Update Version Database** | After Build App Packages completes | Updates Supabase with version info, sends notifications |
+| **Generate Uninstall Scripts** | After Update Version Database completes | Creates PowerShell uninstall scripts for Intune |
+
+### Other Workflows
+
+| Workflow | Schedule | Purpose |
+|----------|----------|---------|
+| **Categorize Apps** | Daily or on app changes | Uses AI to categorize apps |
+| **Check App CVEs** | Daily at 6 AM UTC | Scans for security vulnerabilities |
+| **QA App Installation** | Manual only | Tests app installations on macOS |
+| **PSScriptAnalyzer** | On IntuneBrew.ps1 changes | Lints PowerShell code |
+| **Send Weekly Reports** | Mondays at 8 AM UTC | Sends fleet summary reports |
 
 ## 📜 License
 

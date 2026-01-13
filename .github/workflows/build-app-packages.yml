@@ -799,5 +799,34 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add Apps/*.json supported_apps.json README.md
-          git commit -m "Update app information and supported apps list" || exit 0
-          git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update app information and supported apps list"
+
+          MAX_RETRIES=5
+          RETRY_COUNT=0
+          RETRY_DELAY=5
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
+            git pull --rebase origin main
+
+            if git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git; then
+              echo "Push successful"
+              exit 0
+            fi
+
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+              echo "Push failed, retrying in ${RETRY_DELAY} seconds..."
+              sleep $RETRY_DELAY
+              RETRY_DELAY=$((RETRY_DELAY * 2))
+            fi
+          done
+
+          echo "Push failed after $MAX_RETRIES attempts"
+          exit 1

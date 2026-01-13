@@ -76,16 +76,45 @@ jobs:
 
           if [ -n "${{ github.event.inputs.specific_apps }}" ]; then
             if [ "${{ github.event.inputs.force_regenerate }}" == "true" ]; then
-              git commit -m "Force regenerated uninstall scripts for ${{ github.event.inputs.specific_apps }}" || echo "No changes to commit"
+              COMMIT_MSG="Force regenerated uninstall scripts for ${{ github.event.inputs.specific_apps }}"
             else
-              git commit -m "Generated uninstall scripts for ${{ github.event.inputs.specific_apps }}" || echo "No changes to commit"
+              COMMIT_MSG="Generated uninstall scripts for ${{ github.event.inputs.specific_apps }}"
             fi
           else
             if [ "${{ github.event.inputs.force_regenerate }}" == "true" ]; then
-              git commit -m "Force regenerated $SCRIPT_COUNT uninstall scripts" || echo "No changes to commit"
+              COMMIT_MSG="Force regenerated $SCRIPT_COUNT uninstall scripts"
             else
-              git commit -m "Generated $SCRIPT_COUNT uninstall scripts" || echo "No changes to commit"
+              COMMIT_MSG="Generated $SCRIPT_COUNT uninstall scripts"
             fi
           fi
 
-          git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "$COMMIT_MSG"
+
+          MAX_RETRIES=5
+          RETRY_COUNT=0
+          RETRY_DELAY=5
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
+            git pull --rebase origin main
+
+            if git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git; then
+              echo "Push successful"
+              exit 0
+            fi
+
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+              echo "Push failed, retrying in ${RETRY_DELAY} seconds..."
+              sleep $RETRY_DELAY
+              RETRY_DELAY=$((RETRY_DELAY * 2))
+            fi
+          done
+
+          echo "Push failed after $MAX_RETRIES attempts"
+          exit 1
