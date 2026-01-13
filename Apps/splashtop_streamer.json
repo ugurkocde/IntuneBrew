@@ -8,5 +8,7 @@
   "fileName": "Splashtop_Streamer_Mac_INSTALLER_v3.8.0.2.dmg",
   "type": "pkg_in_dmg",
   "previous_version": "3.8.0.2",
-  "sha": "84c1e752e40a28b276455963ea8ff8611e4727bacf4fd543f83257384caa316b"
+  "sha": "84c1e752e40a28b276455963ea8ff8611e4727bacf4fd543f83257384caa316b",
+  "category": "Utilities",
+  "publisher": "Splashtop Inc."
 }

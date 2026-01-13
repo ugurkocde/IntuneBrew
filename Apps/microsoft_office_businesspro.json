@@ -7,5 +7,7 @@
   "homepage": "https://www.microsoft.com/en-us/microsoft-365/mac/microsoft-365-for-mac/",
   "fileName": "Microsoft_365_and_Office_16.105.26011018_BusinessPro_Installer.pkg",
   "type": "pkg",
-  "sha": "373643cdf8c38fcd0224fbdb30f86d55a4d0ae424c4bb45b2768b9de83e040f6"
+  "sha": "373643cdf8c38fcd0224fbdb30f86d55a4d0ae424c4bb45b2768b9de83e040f6",
+  "category": "Productivity",
+  "publisher": "Microsoft Corporation"
 }
