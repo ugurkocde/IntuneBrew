@@ -1,7 +1,7 @@
 {
   "app_name": "Webex Teams",
   "app_key": "webex_teams",
-  "last_updated": "2026-01-12",
+  "last_updated": "2026-01-13",
   "total_cves": 19,
   "summary": {
     "critical": 0,
