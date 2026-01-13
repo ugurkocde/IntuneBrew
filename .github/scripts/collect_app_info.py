@@ -529,6 +529,7 @@ pkg_in_dmg_urls = [
     "https://formulae.brew.sh/api/cask/chrome-remote-desktop-host.json",
     "https://formulae.brew.sh/api/cask/crashplan.json"
     "https://formulae.brew.sh/api/cask/appgate-sdp-client.json",
+    "https://formulae.brew.sh/api/cask/splashtop-streamer.json",
 ]
 
 # PKG in PKG URLs
