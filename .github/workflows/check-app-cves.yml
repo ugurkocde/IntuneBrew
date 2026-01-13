@@ -700,3 +700,18 @@ jobs:
           else
             echo "No changes to commit"
           fi
+
+      - name: Sync CVE data to Supabase
+        if: always()
+        env:
+          SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: |
+          # Skip if secrets are not configured
+          if [ -z "$SUPABASE_URL" ] || [ -z "$SUPABASE_SERVICE_ROLE_KEY" ]; then
+            echo "Supabase secrets not configured, skipping sync"
+            exit 0
+          fi
+
+          pip install supabase
+          python .github/scripts/sync_cves_to_supabase.py --cve-dir ./CVE
