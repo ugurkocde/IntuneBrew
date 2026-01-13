@@ -1,14 +1,14 @@
 {
   "name": "Loop",
   "description": "Window manager",
-  "version": "1.4.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/loop_1.4.0.pkg",
+  "version": "1.4.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/loop_1.4.1.pkg",
   "bundleId": "com.MrKai77.Loop",
   "homepage": "https://github.com/MrKai77/Loop",
-  "fileName": "loop_1.4.0.pkg",
+  "fileName": "loop_1.4.1.pkg",
   "type": "app",
-  "sha": "03ac158ab2f3bbedabdc95fda0e5a514e4559162eafb78232dfcdbd5b73ef319",
-  "previous_version": "1.4.0",
+  "sha": "a2c0cd710560e7a7bf04880dc67048a682d1ec69ce8ba1a2ea8976b0a0db127d",
+  "previous_version": "1.4.1",
   "category": "Utilities",
   "publisher": "MrKai77"
 }
