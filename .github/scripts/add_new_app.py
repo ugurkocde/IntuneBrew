@@ -299,6 +299,11 @@ def add_url_to_list(script_path, list_name, cask_name, lines):
     if last_url_line == -1:
         insert_line = list_start_line + 1
     else:
+        # Ensure the previous line has a trailing comma to avoid string concatenation
+        prev_line = lines[last_url_line].rstrip('\n')
+        if prev_line.rstrip().endswith('"') and not prev_line.rstrip().endswith('",'):
+            # Add comma to the previous line
+            lines[last_url_line] = prev_line.rstrip() + ',\n'
         insert_line = last_url_line + 1
 
     lines.insert(insert_line, url_to_add)
