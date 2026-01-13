@@ -29,7 +29,7 @@ jobs:
 
       - name: Fetch missing app icons
         env:
-          BRANDFETCH_CLIENT_ID: ${{ secrets.BRANDFETCH_CLIENT_ID }}
+          BRANDFETCH_API_KEY: ${{ secrets.BRANDFETCH_API_KEY }}
         run: python .github/scripts/fetch_app_icons.py
 
       - name: Commit and push new icons

@@ -53,23 +53,74 @@ def fetch_from_itunes(bundle_id):
     return None
 
 
-def fetch_from_brandfetch(homepage, client_id=None):
-    """Fetch logo from Brandfetch API (free tier: 100 requests/month)."""
-    if not homepage:
+def fetch_from_brandfetch(homepage, api_key=None):
+    """Fetch logo from Brandfetch Brand API (free tier: 100 requests/month).
+
+    The Brand API uses Bearer token authentication and returns JSON with logo URLs.
+    Endpoint: https://api.brandfetch.io/v2/brands/{domain}
+    """
+    if not homepage or not api_key:
         return None
     try:
         domain = urlparse(homepage).netloc
         if not domain:
             return None
         domain = domain.replace('www.', '')
-        # Brandfetch Logo API
-        url = f"https://logo.brandfetch.com/{domain}"
-        headers = {}
-        if client_id:
-            headers['Authorization'] = f'Bearer {client_id}'
-        resp = requests.get(url, timeout=10, headers=headers)
-        if resp.status_code == 200 and 'image' in resp.headers.get('content-type', ''):
-            return Image.open(BytesIO(resp.content))
+
+        # Brandfetch Brand API - returns JSON with logo data
+        api_url = f"https://api.brandfetch.io/v2/brands/{domain}"
+        headers = {'Authorization': f'Bearer {api_key}'}
+
+        resp = requests.get(api_url, timeout=15, headers=headers)
+        if resp.status_code != 200:
+            print(f"  Brandfetch API returned status {resp.status_code}")
+            return None
+
+        data = resp.json()
+        logos = data.get('logos', [])
+
+        # Find the best logo: prefer PNG with transparent background, or icon type
+        best_logo_url = None
+        best_score = -1
+
+        for logo in logos:
+            logo_type = logo.get('type', '')
+            formats = logo.get('formats', [])
+
+            for fmt in formats:
+                src = fmt.get('src')
+                if not src:
+                    continue
+
+                # Score based on preference
+                score = 0
+                if fmt.get('format') == 'png':
+                    score += 10
+                if fmt.get('background') == 'transparent':
+                    score += 5
+                if logo_type == 'icon':
+                    score += 3
+                if logo_type == 'logo':
+                    score += 1
+                # Prefer larger sizes
+                width = fmt.get('width') or 0
+                if width and width >= 400:
+                    score += 2
+                elif width and width >= 200:
+                    score += 1
+
+                if score > best_score:
+                    best_score = score
+                    best_logo_url = src
+
+        if best_logo_url:
+            print(f"  Found logo URL: {best_logo_url[:60]}...")
+            img_resp = requests.get(best_logo_url, timeout=15)
+            if img_resp.status_code == 200:
+                return Image.open(BytesIO(img_resp.content))
+        else:
+            print(f"  No suitable logo found in Brandfetch response")
+
     except Exception as e:
         print(f"  Brandfetch error: {e}")
     return None
@@ -143,10 +194,10 @@ def main():
                 source = "iTunes"
 
         # Fallback 1: Brandfetch (primary fallback - higher quality logos)
-        brandfetch_client_id = os.environ.get('BRANDFETCH_CLIENT_ID')
-        if image is None and homepage and brandfetch_client_id:
+        brandfetch_api_key = os.environ.get('BRANDFETCH_API_KEY')
+        if image is None and homepage and brandfetch_api_key:
             print(f"  Trying Brandfetch API (homepage: {homepage})")
-            image = fetch_from_brandfetch(homepage, brandfetch_client_id)
+            image = fetch_from_brandfetch(homepage, brandfetch_api_key)
             if image:
                 source = "Brandfetch"
 
