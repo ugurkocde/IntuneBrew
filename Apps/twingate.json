@@ -5,10 +5,10 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/twingate_2025.363.22082.pkg",
   "bundleId": "com.twingate.macos",
   "homepage": "https://twingate.com/",
-  "fileName": "twingate_2025.363.22082.pkg",
+  "fileName": "Twingate.pkg",
   "type": "pkg_in_pkg",
   "sha": "2f19db1eae76a1f72872c04d4d5e30889ffdb2dd2497d691180aaf8f4038d31b",
   "category": "Security",
   "publisher": "Twingate, Inc.",
-  "previous_version": "2025.338.21484"
+  "previous_version": "2025.363.22082"
 }

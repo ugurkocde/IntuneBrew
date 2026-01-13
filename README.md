@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-521-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-525-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -309,30 +309,15 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-13 22:08 UTC*
+*Last checked: 2026-01-13 23:36 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Mozilla Firefox ESR | 140.6.0 | 140.7.0 |
-| Mozilla Firefox Developer Edition | 147.0b9 | 148.0b1 |
-| Rive | 0.8.3982 | 0.8.4100 |
-| Trae | 1.0.27574 | 2.3.2839 |
-| Mozilla Firefox | 146.0.1 | 147.0 |
-| Synology Drive | 4.0.1 | 4.0.2 |
-| Grammarly Desktop | 1.147.1.0 | 1.148.0.0 |
-| Notion | 6.4.0 | 7.0.0 |
-| Zed | 0.218.6 | 0.218.7 |
-| Microsoft Office | 16.104.25121423 | 16.105.26011018 |
-| Windsurf | 1.13.5 | 1.13.6 |
-| gifox | 2.7.2+0 | 2.8.0+2 |
-| Dataflare | 2.8.0 | 2.8.1 |
-| Epic Games Launcher | 18.10.0 | 19.0.0 |
-| Camtasia | 26.0.3 | 26.0.4 |
-| Twingate | 2025.338.21484 | 2025.363.22082 |
-| Malwarebytes for Mac | 5.19.0.3531 | 5.19.1.3534 |
-| Cloudflare WARP | 2025.9.558.0 | 2025.10.186.0 |
+| Bitwarden | 2025.12.0 | 2025.12.1 |
+| LM Studio | 0.3.37 | 0.3.38 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -471,6 +456,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.8.1 |
 | <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.8.1 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.1 |
+| ❌ AppGate SDP Client for macOS | 6.6.0 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.129.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.5 |
 | <img src='Logos/arduino_ide.png' width='32' height='32'> Arduino IDE | 2.3.7 |
@@ -498,7 +484,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 5.4 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.1.7.31736 |
 | <img src='Logos/binary_ninja.png' width='32' height='32'> Binary Ninja | 5.2.8722 |
-| <img src='Logos/bitwarden.png' width='32' height='32'> Bitwarden | 2025.12.0 |
+| <img src='Logos/bitwarden.png' width='32' height='32'> Bitwarden | 2025.12.1 |
 | <img src='Logos/bitwig_studio.png' width='32' height='32'> Bitwig Studio | 5.3.13 |
 | <img src='Logos/blender.png' width='32' height='32'> Blender | 5.0.1 |
 | <img src='Logos/bleunlock.png' width='32' height='32'> BLEUnlock | 1.12.2 |
@@ -683,7 +669,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/libreoffice.png' width='32' height='32'> LibreOffice | 25.8.4 |
 | <img src='Logos/librewolf.png' width='32' height='32'> LibreWolf | 146.0.1 |
 | <img src='Logos/little_snitch.png' width='32' height='32'> Little Snitch | 6.3.3 |
-| <img src='Logos/lm_studio.png' width='32' height='32'> LM Studio | 0.3.37 |
+| <img src='Logos/lm_studio.png' width='32' height='32'> LM Studio | 0.3.38 |
 | <img src='Logos/localsend.png' width='32' height='32'> LocalSend | 1.17.0 |
 | <img src='Logos/logitech_g_hub.png' width='32' height='32'> Logitech G HUB | 2025.9.814157 |
 | <img src='Logos/logitech_options.png' width='32' height='32'> Logitech Options+ | 1.98.824948 |
@@ -716,6 +702,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/microsoft_azure_storage_explorer.png' width='32' height='32'> Microsoft Azure Storage Explorer | 1.40.2 |
 | <img src='Logos/microsoft_edge.png' width='32' height='32'> Microsoft Edge | 143.0.3650.139 |
 | <img src='Logos/microsoft_office.png' width='32' height='32'> Microsoft Office | 16.105.26011018 |
+| ❌ Microsoft Office BusinessPro | 16.105.26011018 |
 | <img src='Logos/microsoft_teams.png' width='32' height='32'> Microsoft Teams | 25290.302.4044.3989 |
 | <img src='Logos/microsoft_visual_studio_code.png' width='32' height='32'> Microsoft Visual Studio Code | 1.108.0 |
 | <img src='Logos/middle.png' width='32' height='32'> Middle | 1.14 |
@@ -817,6 +804,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/privileges.png' width='32' height='32'> Privileges | 2.5.0 |
 | <img src='Logos/processspy.png' width='32' height='32'> ProcessSpy | 1.10.3 |
 | <img src='Logos/pronotes.png' width='32' height='32'> ProNotes | 0.7.8.2 |
+| ❌ ProPresenter | 21.1 |
 | <img src='Logos/proton_drive.png' width='32' height='32'> Proton Drive | 2.10.2 |
 | <img src='Logos/proton_mail.png' width='32' height='32'> Proton Mail | 1.11.0 |
 | <img src='Logos/proton_pass.png' width='32' height='32'> Proton Pass | 1.33.4 |
@@ -872,6 +860,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/slack.png' width='32' height='32'> Slack | 4.47.72 |
 | <img src='Logos/snagit.png' width='32' height='32'> Snagit | 2026.0.0 |
 | <img src='Logos/splashtop_business.png' width='32' height='32'> Splashtop Business | 3.8.0.1 |
+| ❌ Splashtop Streamer | 3.8.0.2 |
 | <img src='Logos/splice.png' width='32' height='32'> Splice | 5.4.4.1 |
 | <img src='Logos/spline.png' width='32' height='32'> Spline | 0.12.11 |
 | <img src='Logos/spotify.png' width='32' height='32'> Spotify | 1.2.79.427 |

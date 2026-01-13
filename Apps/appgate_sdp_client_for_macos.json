@@ -1,0 +1,11 @@
+{
+  "name": "AppGate SDP Client for macOS",
+  "description": "Software-defined perimeter for secure network access",
+  "version": "6.6.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/appgate_sdp_client_for_macos_6.6.0.pkg",
+  "bundleId": "com.appgate.pkg.appgatetun.component",
+  "homepage": "https://www.appgate.com/support/software-defined-perimeter-support",
+  "fileName": "appgate_sdp_client_for_macos_6.6.0.pkg",
+  "type": "pkg_in_dmg",
+  "sha": "2d94a3427443f2805d162d6048bcc8fd940e23b509637e4a373c32e2c95c4cac"
+}
