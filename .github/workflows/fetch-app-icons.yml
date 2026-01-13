@@ -51,11 +51,19 @@ jobs:
 
           while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
             echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
-            git pull --rebase origin main
 
-            if git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git; then
-              echo "Push successful"
-              exit 0
+            # Stash any unstaged changes before rebasing
+            git stash --include-untracked || true
+
+            if git pull --rebase origin main; then
+              git stash pop || true
+
+              if git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git; then
+                echo "Push successful"
+                exit 0
+              fi
+            else
+              git stash pop || true
             fi
 
             RETRY_COUNT=$((RETRY_COUNT + 1))
