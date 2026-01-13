@@ -1,0 +1,41 @@
+name: Fetch Missing App Icons
+
+on:
+  workflow_dispatch: # Manual trigger
+  schedule:
+    - cron: "30 0 * * *" # Run 30 min after main workflow (midnight:30 UTC)
+  workflow_run:
+    workflows: ["Build App Packages and Collect App Information"]
+    types: [completed]
+
+jobs:
+  fetch-icons:
+    runs-on: ubuntu-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests Pillow
+
+      - name: Fetch missing app icons
+        env:
+          BRANDFETCH_CLIENT_ID: ${{ secrets.BRANDFETCH_CLIENT_ID }}
+        run: python .github/scripts/fetch_app_icons.py
+
+      - name: Commit and push new icons
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add Logos/*.png
+          git diff --staged --quiet || git commit -m "Add missing app icons"
+          git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git
