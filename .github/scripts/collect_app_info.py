@@ -179,6 +179,7 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/amazon-workspaces.json",
     "https://formulae.brew.sh/api/cask/warp.json",
     "https://formulae.brew.sh/api/cask/insta360-studio.json"
+    "https://formulae.brew.sh/api/cask/propresenter.json",
 ]
 
 # DMG
