@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/adobe_acrobat_pro_dc_25.001.21078.pkg",
   "bundleId": "com.adobe.Acrobat.Pro",
   "homepage": "https://www.adobe.com/acrobat/pdf-reader.html",
-  "fileName": "adobe_acrobat_pro_dc_25.001.21078.pkg",
+  "fileName": "Acrobat_DC_Web_WWMUI.dmg",
   "type": "pkg_in_dmg",
   "changelog": "https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html",
   "sha": "629a2a0ce7353902fce696a4838a6c9e7a0b8c6374c77e87f45450baf140e0f4",
@@ -20,5 +20,5 @@
   },
   "category": "Productivity",
   "publisher": "Adobe Inc.",
-  "previous_version": "25.001.20997"
+  "previous_version": "25.001.21078"
 }

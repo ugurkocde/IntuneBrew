@@ -2,7 +2,7 @@
   "name": "Packages",
   "description": "Integrated packaging environment",
   "version": "1.2.10",
-  "url": "http://s.sudre.free.fr/Software/files/Packages.dmg",
+  "url": "https://github.com/packagesdev/packages/releases/download/v1.2.10/Packages.dmg",
   "bundleId": "fr.whitebox.Packages",
   "homepage": "http://s.sudre.free.fr/Software/Packages/about.html",
   "fileName": "Packages.dmg",
