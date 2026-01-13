@@ -177,8 +177,6 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/spline.json",
     "https://formulae.brew.sh/api/cask/mac-mouse-fix.json",
     "https://formulae.brew.sh/api/cask/amazon-workspaces.json",
-    "https://formulae.brew.sh/api/cask/warp.json",
-    "https://formulae.brew.sh/api/cask/insta360-studio.json"
     "https://formulae.brew.sh/api/cask/propresenter.json",
 ]
 
@@ -513,7 +511,8 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/intellij-idea.json",
     "https://formulae.brew.sh/api/cask/handbrake-app.json",
     "https://formulae.brew.sh/api/cask/minecraft.json",
-    "https://formulae.brew.sh/api/cask/deepl.json"
+    "https://formulae.brew.sh/api/cask/deepl.json",
+    "https://formulae.brew.sh/api/cask/warp.json",
 ]
 
 # PKG in DMG URLs
@@ -527,13 +526,14 @@ pkg_in_dmg_urls = [
     "https://formulae.brew.sh/api/cask/adobe-acrobat-pro.json",
     "https://formulae.brew.sh/api/cask/openvpn-connect.json",
     "https://formulae.brew.sh/api/cask/chrome-remote-desktop-host.json",
-    "https://formulae.brew.sh/api/cask/crashplan.json"
+    "https://formulae.brew.sh/api/cask/crashplan.json",
     "https://formulae.brew.sh/api/cask/appgate-sdp-client.json",
     "https://formulae.brew.sh/api/cask/splashtop-streamer.json",
 ]
 
-# PKG in PKG URLs
+# PKG in PKG URLs (some are ZIP files containing PKG that contains inner PKGs)
 pkg_in_pkg_urls = [
+    "https://formulae.brew.sh/api/cask/insta360-studio.json",
     "https://formulae.brew.sh/api/cask/blurscreen.json",
     "https://formulae.brew.sh/api/cask/topaz-gigapixel-ai.json",
     "https://formulae.brew.sh/api/cask/parallels-client.json",
@@ -639,7 +639,7 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
     json_string = json.dumps(data)
 
     bundle_id = find_bundle_id(json_string)
-    
+
     # Clean up version string by removing anything after the comma or underscore
     version = data["version"]
     if ',' in version:
@@ -647,16 +647,24 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
     if '_' in version:
         version = version.split('_')[0]
 
+    url = data["url"]
+
+    # Special URL handling for apps with non-working Homebrew URLs
+    app_name = data["name"][0].lower()
+    if app_name == "warp":
+        # Warp's Homebrew URL returns HTML, use direct DMG URL instead
+        url = f"https://releases.warp.dev/stable/v{version}/Warp.dmg"
+
     app_info = {
         "name": data["name"][0],
         "description": data["desc"],
         "version": version,
-        "url": data["url"],
+        "url": url,
         "bundleId": bundle_id,
         "homepage": data["homepage"],
-        "fileName": os.path.basename(data["url"])
+        "fileName": os.path.basename(url)
     }
-    
+
     if needs_packaging:
         app_info["type"] = "app"
     elif is_pkg_in_dmg:
@@ -665,7 +673,7 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         app_info["type"] = "pkg_in_pkg"
     elif is_pkg:
         app_info["type"] = "pkg"
-    
+
     return app_info
 
 def sanitize_filename(name):

@@ -145,7 +145,7 @@ jobs:
             
             # Skip if not a supported type
             if [ "$app_type" != "app" ] && [ "$app_type" != "pkg_in_dmg" ] && [ "$app_type" != "pkg_in_pkg" ]; then
-              echo "⏭️ Skipping URL update for $app_name as it's not of type 'app', 'pkg_in_dmg', or 'pkg_in_pkg'"
+              echo "Skipping URL update for $app_name as it's not of type 'app', 'pkg_in_dmg', or 'pkg_in_pkg'"
               continue
             fi
             
@@ -197,30 +197,64 @@ jobs:
             fi
             
             if [ "$app_type" = "pkg_in_pkg" ]; then
-              echo "🔍 Processing PKG in PKG for $app_name..."
-              echo "📥 Downloading PKG from: $url"
-              
+              echo "Processing PKG in PKG for $app_name..."
+              echo "Downloading from: $url"
+
               # Set download path
               download_path="$HOME/Desktop/${app_name}"
-              
-              # Download PKG
-              curl -L -o "${download_path}.pkg" "$url"
-              if [ $? -eq 0 ]; then
-                echo "✅ PKG download successful"
-                ls -lh "${download_path}.pkg"
-                
+              outer_pkg_path="${download_path}.pkg"
+
+              # Check if URL is a ZIP file
+              if [[ "$url" == *".zip" ]]; then
+                echo "URL is a ZIP file, downloading and extracting first..."
+                curl -L -o "${download_path}.zip" "$url"
+                if [ $? -ne 0 ]; then
+                  echo "Failed to download ZIP file"
+                  FAILED_APPS+=("$app_name")
+                  ERROR_LOG+=("$app_name: Failed to download ZIP from $url")
+                  continue
+                fi
+
+                # Extract ZIP to find the PKG inside
+                zip_extract_dir="${download_path}_zip_extracted"
+                rm -rf "$zip_extract_dir"
+                mkdir -p "$zip_extract_dir"
+                unzip -q "${download_path}.zip" -d "$zip_extract_dir"
+
+                # Find the PKG file inside the ZIP
+                found_pkg=$(find "$zip_extract_dir" -name "*.pkg" -type f -print -quit)
+                if [ -z "$found_pkg" ]; then
+                  echo "No PKG file found inside ZIP"
+                  rm -rf "$zip_extract_dir" "${download_path}.zip"
+                  FAILED_APPS+=("$app_name")
+                  ERROR_LOG+=("$app_name: No PKG found inside ZIP from $url")
+                  continue
+                fi
+
+                echo "Found PKG inside ZIP: $found_pkg"
+                cp "$found_pkg" "$outer_pkg_path"
+                rm -rf "$zip_extract_dir" "${download_path}.zip"
+              else
+                # Direct PKG download
+                curl -L -o "$outer_pkg_path" "$url"
+              fi
+
+              if [ $? -eq 0 ] && [ -f "$outer_pkg_path" ]; then
+                echo "PKG download/extraction successful"
+                ls -lh "$outer_pkg_path"
+
                 # Prepare temporary directory for extraction
-                echo "📂 Preparing temporary directory for extraction"
+                echo "Preparing temporary directory for extraction"
                 temp_dir="${download_path}_extracted"
                 # Remove directory if it exists
                 if [ -d "$temp_dir" ]; then
-                  echo "🧹 Removing existing directory: $temp_dir"
+                  echo "Removing existing directory: $temp_dir"
                   rm -rf "$temp_dir"
                 fi
-                
+
                 # Extract PKG (pkgutil will create the directory)
-                echo "🔓 Extracting outer PKG..."
-                if pkgutil --expand "${download_path}.pkg" "$temp_dir" 2>/dev/null; then
+                echo "Extracting outer PKG..."
+                if pkgutil --expand "$outer_pkg_path" "$temp_dir" 2>/dev/null; then
                   echo "✅ PKG extraction successful"
                   echo "📁 Extracted contents:"
                   ls -R "$temp_dir"
@@ -407,7 +441,7 @@ jobs:
               rm -f "${download_path}.dmg"
               rm -rf "${download_path}_mount"
               echo "✨ Cleanup complete"
-              
+
             else
               # Download app
               echo "Downloading $app_name..."
@@ -813,11 +847,21 @@ jobs:
 
           while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
             echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
-            git pull --rebase origin main
 
-            if git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git; then
-              echo "Push successful"
-              exit 0
+            # Stash any unstaged changes before rebasing to avoid conflicts
+            git stash --include-untracked || true
+
+            if git pull --rebase origin main; then
+              # Restore stashed changes after successful rebase
+              git stash pop || true
+
+              if git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git; then
+                echo "Push successful"
+                exit 0
+              fi
+            else
+              # Restore stashed changes even if rebase fails
+              git stash pop || true
             fi
 
             RETRY_COUNT=$((RETRY_COUNT + 1))
