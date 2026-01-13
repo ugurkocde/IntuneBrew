@@ -3,29 +3,111 @@
 CVE Data Sync Script for IntuneBrew
 
 This script syncs CVE data from the CVE/ directory to Supabase.
-Run automatically as part of the check-app-cves.yml workflow.
+It also calculates "recent" CVE counts based on the latest app versions.
 
 Required environment variables:
 - SUPABASE_URL: Your Supabase project URL
 - SUPABASE_SERVICE_ROLE_KEY: Service role key for write access
 
 Usage:
-    python sync_cves_to_supabase.py [--cve-dir ./CVE]
+    python sync_cves_to_supabase.py [--cve-dir ./CVE] [--apps-dir ./Apps]
 """
 
 import os
 import sys
 import json
 import argparse
+import re
 from datetime import datetime
 from pathlib import Path
-from typing import Dict, List, Any, Optional
+from typing import Dict, List, Any, Optional, Tuple
 
 try:
     from supabase import create_client, Client
 except ImportError:
     print("Error: supabase-py not installed. Run: pip install supabase")
     sys.exit(1)
+
+
+# =============================================================================
+# VERSION COMPARISON UTILITIES
+# =============================================================================
+
+def normalize_version(version: str) -> Optional[Tuple[int, int, int]]:
+    """
+    Normalize version string to (major, minor, patch) tuple.
+    Returns None if version cannot be parsed.
+    """
+    if not version:
+        return None
+
+    # Remove leading 'v' if present
+    cleaned = version.lstrip('vV')
+
+    # Try to extract major.minor.patch
+    match = re.match(r'^(\d+)(?:\.(\d+))?(?:\.(\d+))?', cleaned)
+    if not match:
+        return None
+
+    major = int(match.group(1))
+    minor = int(match.group(2)) if match.group(2) else 0
+    patch = int(match.group(3)) if match.group(3) else 0
+
+    return (major, minor, patch)
+
+
+def is_recent_fix(fixed_version: str, latest_version: str) -> bool:
+    """
+    Check if a CVE fix is "recent" relative to the latest version.
+    Returns True if the fix is in the SAME major version and within 3 minor versions.
+
+    This matches the logic in the website's /api/app-cves endpoint.
+    """
+    fixed = normalize_version(fixed_version)
+    latest = normalize_version(latest_version)
+
+    if not fixed or not latest:
+        # Fall back to exact match for non-parseable versions
+        return fixed_version == latest_version
+
+    fixed_major, fixed_minor, _ = fixed
+    latest_major, latest_minor, _ = latest
+
+    # Must be same major version
+    if fixed_major != latest_major:
+        return False
+
+    # Within 3 minor versions
+    return latest_minor - fixed_minor <= 3
+
+
+# =============================================================================
+# DATA LOADING
+# =============================================================================
+
+def load_app_versions(apps_dir: str) -> Dict[str, str]:
+    """Load app versions from Apps/*.json files."""
+    versions = {}
+    apps_path = Path(apps_dir)
+
+    if not apps_path.exists():
+        print(f"Warning: Apps directory '{apps_dir}' does not exist")
+        return versions
+
+    for json_file in apps_path.glob("*.json"):
+        try:
+            with open(json_file, 'r', encoding='utf-8') as f:
+                data = json.load(f)
+                app_key = json_file.stem
+                version = data.get('version')
+                if version:
+                    versions[app_key] = version
+        except Exception as e:
+            # Silently skip files that can't be parsed
+            pass
+
+    print(f"Loaded versions for {len(versions)} apps")
+    return versions
 
 
 def load_cve_files(cve_dir: str) -> Dict[str, Dict[str, Any]]:
@@ -71,8 +153,12 @@ def load_cve_files(cve_dir: str) -> Dict[str, Dict[str, Any]]:
     return cve_data
 
 
+# =============================================================================
+# SUMMARY CALCULATION
+# =============================================================================
+
 def calculate_summary(cves: List[Dict]) -> Dict[str, int]:
-    """Calculate CVE summary counts."""
+    """Calculate CVE summary counts for all CVEs."""
     summary = {
         'critical_count': 0,
         'high_count': 0,
@@ -98,11 +184,62 @@ def calculate_summary(cves: List[Dict]) -> Dict[str, int]:
     return summary
 
 
-def sync_to_supabase(supabase: Client, cve_data: Dict[str, Dict[str, Any]], batch_size: int = 500) -> Dict[str, int]:
+def calculate_recent_summary(cves: List[Dict], latest_version: Optional[str]) -> Dict[str, int]:
+    """Calculate CVE summary counts for CVEs fixed in recent versions."""
+    summary = {
+        'recent_total_cves': 0,
+        'recent_critical_count': 0,
+        'recent_high_count': 0,
+        'recent_medium_count': 0,
+        'recent_low_count': 0,
+        'recent_kev_count': 0,
+    }
+
+    if not latest_version:
+        return summary
+
+    for cve in cves:
+        fixed_version = cve.get('fixed_version')
+        if not fixed_version:
+            continue
+
+        if not is_recent_fix(fixed_version, latest_version):
+            continue
+
+        # This CVE was fixed in a recent version
+        summary['recent_total_cves'] += 1
+
+        severity = (cve.get('severity') or '').upper()
+        if severity == 'CRITICAL':
+            summary['recent_critical_count'] += 1
+        elif severity == 'HIGH':
+            summary['recent_high_count'] += 1
+        elif severity == 'MEDIUM':
+            summary['recent_medium_count'] += 1
+        elif severity == 'LOW':
+            summary['recent_low_count'] += 1
+
+        if cve.get('is_kev'):
+            summary['recent_kev_count'] += 1
+
+    return summary
+
+
+# =============================================================================
+# SUPABASE SYNC
+# =============================================================================
+
+def sync_to_supabase(
+    supabase: Client,
+    cve_data: Dict[str, Dict[str, Any]],
+    app_versions: Dict[str, str],
+    batch_size: int = 500
+) -> Dict[str, int]:
     """Sync CVE data to Supabase. Returns stats about the sync."""
     stats = {
         'apps_synced': 0,
         'cves_synced': 0,
+        'apps_with_recent_cves': 0,
         'errors': 0,
     }
 
@@ -110,15 +247,24 @@ def sync_to_supabase(supabase: Client, cve_data: Dict[str, Dict[str, Any]], batc
         app_name = app_data['app_name']
         cves = app_data['cves']
 
-        print(f"\nSyncing {app_name} ({len(cves)} CVEs)...")
+        # Get latest version for this app
+        latest_version = app_versions.get(app_key)
 
-        # Calculate summary from CVEs
-        summary = calculate_summary(cves)
+        print(f"\nSyncing {app_name} ({len(cves)} CVEs, latest: {latest_version or 'unknown'})...")
+
+        # Calculate total summary
+        total_summary = calculate_summary(cves)
+
+        # Calculate recent summary (CVEs fixed in recent versions)
+        recent_summary = calculate_recent_summary(cves, latest_version)
+
+        if recent_summary['recent_total_cves'] > 0:
+            stats['apps_with_recent_cves'] += 1
+            print(f"  Recent CVEs: {recent_summary['recent_total_cves']} (Critical: {recent_summary['recent_critical_count']}, KEV: {recent_summary['recent_kev_count']})")
 
         # Use last_updated from file or current timestamp
         last_updated = app_data.get('last_updated')
         if last_updated:
-            # Convert date string to ISO format if needed
             try:
                 if 'T' not in last_updated:
                     last_updated = f"{last_updated}T00:00:00Z"
@@ -127,16 +273,23 @@ def sync_to_supabase(supabase: Client, cve_data: Dict[str, Dict[str, Any]], batc
         else:
             last_updated = datetime.utcnow().isoformat()
 
-        # Build summary record
+        # Build summary record with both total and recent counts
         summary_record = {
             'app_key': app_key,
             'app_name': app_name,
             'total_cves': len(cves),
-            'critical_count': summary['critical_count'],
-            'high_count': summary['high_count'],
-            'medium_count': summary['medium_count'],
-            'low_count': summary['low_count'],
-            'kev_count': summary['kev_count'],
+            'critical_count': total_summary['critical_count'],
+            'high_count': total_summary['high_count'],
+            'medium_count': total_summary['medium_count'],
+            'low_count': total_summary['low_count'],
+            'kev_count': total_summary['kev_count'],
+            'recent_total_cves': recent_summary['recent_total_cves'],
+            'recent_critical_count': recent_summary['recent_critical_count'],
+            'recent_high_count': recent_summary['recent_high_count'],
+            'recent_medium_count': recent_summary['recent_medium_count'],
+            'recent_low_count': recent_summary['recent_low_count'],
+            'recent_kev_count': recent_summary['recent_kev_count'],
+            'latest_version': latest_version,
             'last_updated': last_updated,
         }
 
@@ -211,9 +364,14 @@ def sync_to_supabase(supabase: Client, cve_data: Dict[str, Dict[str, Any]], batc
     return stats
 
 
+# =============================================================================
+# MAIN
+# =============================================================================
+
 def main():
     parser = argparse.ArgumentParser(description='Sync CVE data to Supabase')
     parser.add_argument('--cve-dir', default='./CVE', help='Directory containing CVE JSON files')
+    parser.add_argument('--apps-dir', default='./Apps', help='Directory containing app JSON files with versions')
     parser.add_argument('--batch-size', type=int, default=500, help='Batch size for database inserts')
     args = parser.parse_args()
 
@@ -231,6 +389,7 @@ def main():
     print(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}")
     print(f"Supabase URL: {supabase_url}")
     print(f"CVE Directory: {args.cve_dir}")
+    print(f"Apps Directory: {args.apps_dir}")
     print("=" * 60)
 
     # Create Supabase client
@@ -240,6 +399,10 @@ def main():
     except Exception as e:
         print(f"Error connecting to Supabase: {e}")
         sys.exit(1)
+
+    # Load app versions
+    print(f"\nLoading app versions from: {args.apps_dir}")
+    app_versions = load_app_versions(args.apps_dir)
 
     # Load CVE data
     print(f"\nLoading CVE data from: {args.cve_dir}")
@@ -253,13 +416,14 @@ def main():
 
     # Sync to Supabase
     print("\nStarting sync to Supabase...")
-    stats = sync_to_supabase(supabase, cve_data, args.batch_size)
+    stats = sync_to_supabase(supabase, cve_data, app_versions, args.batch_size)
 
     # Print summary
     print("\n" + "=" * 60)
     print("SYNC COMPLETE")
     print("=" * 60)
     print(f"Apps synced: {stats['apps_synced']}")
+    print(f"Apps with recent CVEs: {stats['apps_with_recent_cves']}")
     print(f"CVEs synced: {stats['cves_synced']}")
     print(f"Errors: {stats['errors']}")
     print("=" * 60)

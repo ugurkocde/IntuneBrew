@@ -714,4 +714,4 @@ jobs:
           fi
 
           pip install supabase
-          python .github/scripts/sync_cves_to_supabase.py --cve-dir ./CVE
+          python .github/scripts/sync_cves_to_supabase.py --cve-dir ./CVE --apps-dir ./Apps
