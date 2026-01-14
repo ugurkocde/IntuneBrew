@@ -625,9 +625,9 @@ pkg_in_dmg_urls = [
     "https://formulae.brew.sh/api/cask/crashplan.json",
     "https://formulae.brew.sh/api/cask/appgate-sdp-client.json",
     "https://formulae.brew.sh/api/cask/splashtop-streamer.json",
-    # New PKG-in-DMG apps (batch 1 - 2 apps)
+    # New PKG-in-DMG apps (batch 1 - 1 app)
     "https://formulae.brew.sh/api/cask/gpg-suite.json",
-    "https://formulae.brew.sh/api/cask/tuxera-ntfs.json",
+    # Note: tuxera-ntfs removed - has directory-based PKG inside .mpkg that needs special handling
 ]
 
 # PKG in PKG URLs (some are ZIP files containing PKG that contains inner PKGs)
