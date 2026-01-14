@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://extraterm.org/",
   "fileName": "ExtratermQt_0.81.4.dmg",
-  "sha": "214bd9bb54fcb8c8cd97c8ea401898adac1a205b5fba74b406178757dbeae814"
+  "sha": "214bd9bb54fcb8c8cd97c8ea401898adac1a205b5fba74b406178757dbeae814",
+  "category": "Developer Tools",
+  "publisher": "Extraterm"
 }

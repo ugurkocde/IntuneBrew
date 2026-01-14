@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://brackets.io/",
   "fileName": "brackets.2.2.0.dmg",
-  "sha": "a8864dd5cc4591d885b0264e88ee2bc9a05962c29369b7c5c1f2f269c50fe1b5"
+  "sha": "a8864dd5cc4591d885b0264e88ee2bc9a05962c29369b7c5c1f2f269c50fe1b5",
+  "category": "Developer Tools",
+  "publisher": "Adobe Inc."
 }

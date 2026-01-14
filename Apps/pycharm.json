@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.jetbrains.com/pycharm/",
   "fileName": "pycharm-professional-2025.3.1.1-aarch64.dmg",
-  "sha": "b1c1b4622a84dead810a1dd54611d9d1ea7a3c363ccd1b410d10494062c33922"
+  "sha": "b1c1b4622a84dead810a1dd54611d9d1ea7a3c363ccd1b410d10494062c33922",
+  "category": "Developer Tools",
+  "publisher": "JetBrains s.r.o."
 }

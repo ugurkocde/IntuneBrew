@@ -7,5 +7,7 @@
   "homepage": "https://unclutterapp.com/",
   "fileName": "unclutter_2.1.25d.pkg",
   "type": "app",
-  "sha": "fbbbafbda8ba046687bd92b7b07b80ba7fe87bf423339b1732d2fa975c6c1d80"
+  "sha": "fbbbafbda8ba046687bd92b7b07b80ba7fe87bf423339b1732d2fa975c6c1d80",
+  "category": "Utilities",
+  "publisher": "Unclutter"
 }

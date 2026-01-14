@@ -6,5 +6,7 @@
   "bundleId": "com.squirrels.Ditto",
   "homepage": "https://www.airsquirrels.com/ditto",
   "fileName": "Ditto-1.11.8.dmg",
-  "sha": "c9f22f136df2354d259b54359289bb539226fec16176821e7c9106b4bd745d80"
+  "sha": "c9f22f136df2354d259b54359289bb539226fec16176821e7c9106b4bd745d80",
+  "category": "Utilities",
+  "publisher": "AirSquirrels"
 }

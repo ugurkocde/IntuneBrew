@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://zipzapmac.com/go2shell",
   "fileName": "Go2Shell.dmg",
-  "sha": "815222856b39a60af60fa07b75d478ce5f3c6a037a76bab989f7f2f7fbbaba06"
+  "sha": "815222856b39a60af60fa07b75d478ce5f3c6a037a76bab989f7f2f7fbbaba06",
+  "category": "Utilities",
+  "publisher": "ZipZapMac"
 }

@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.ocenaudio.com/en",
   "fileName": "ocenaudio_universal.dmg",
-  "sha": "60cf68a5a9c9708061ed936a0293ffc8a51f34c435b9fe52f15b9c6409358d55"
+  "sha": "60cf68a5a9c9708061ed936a0293ffc8a51f34c435b9fe52f15b9c6409358d55",
+  "category": "Media",
+  "publisher": "Ocenaudio"
 }

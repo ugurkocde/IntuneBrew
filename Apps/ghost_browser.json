@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://ghostbrowser.com/",
   "fileName": "GhostBrowser-2.4.1.2_arm64.dmg",
-  "sha": "20795a29d22017b475f3696ff5c4dae71ce3329802328f7c9aa8f761bd42030f"
+  "sha": "20795a29d22017b475f3696ff5c4dae71ce3329802328f7c9aa8f761bd42030f",
+  "category": "Browsers",
+  "publisher": "Ghost Browser"
 }

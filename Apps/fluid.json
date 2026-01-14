@@ -7,5 +7,7 @@
   "homepage": "https://fluidapp.com/",
   "fileName": "fluid_2.1.2.pkg",
   "type": "app",
-  "sha": "4991c72df197645f0edf7ed72e2a81255bcb114e35116735f967905047574f1e"
+  "sha": "4991c72df197645f0edf7ed72e2a81255bcb114e35116735f967905047574f1e",
+  "category": "Productivity",
+  "publisher": "Todd Ditchendorf"
 }

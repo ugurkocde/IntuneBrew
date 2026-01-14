@@ -7,5 +7,7 @@
   "homepage": "https://www.chromium.org/Home",
   "fileName": "chromium_latest.pkg",
   "type": "app",
-  "sha": "f7d2db904839bf5ceaea1c6ea83d6a7af267c5b710f8f306bffedd323341d216"
+  "sha": "f7d2db904839bf5ceaea1c6ea83d6a7af267c5b710f8f306bffedd323341d216",
+  "category": "Browsers",
+  "publisher": "The Chromium Authors"
 }

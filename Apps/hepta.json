@@ -7,5 +7,7 @@
   "homepage": "https://heptabase.com/",
   "fileName": "hepta_1.83.0.pkg",
   "type": "app",
-  "sha": "9dd2ac859743b09fd20d1e46cbf8d258135abf4664445d4b972964ab71bf9138"
+  "sha": "9dd2ac859743b09fd20d1e46cbf8d258135abf4664445d4b972964ab71bf9138",
+  "category": "Productivity",
+  "publisher": "Heptabase"
 }

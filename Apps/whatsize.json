@@ -7,5 +7,7 @@
   "homepage": "https://www.whatsizemac.com/",
   "fileName": "whatsize_8.2.4.pkg",
   "type": "pkg",
-  "sha": "c72c312ac3db237e15d4594a7ee2473b9470a96b0e81e76f57302d9439e88898"
+  "sha": "c72c312ac3db237e15d4594a7ee2473b9470a96b0e81e76f57302d9439e88898",
+  "category": "Utilities",
+  "publisher": "WhatSize"
 }

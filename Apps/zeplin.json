@@ -7,5 +7,7 @@
   "homepage": "https://zeplin.io/",
   "fileName": "zeplin_10.30.0.pkg",
   "type": "app",
-  "sha": "5f101707e731b2688264fd3a89a782968dc02fa1293d4e8df7ca8efe481b57b3"
+  "sha": "5f101707e731b2688264fd3a89a782968dc02fa1293d4e8df7ca8efe481b57b3",
+  "category": "Design",
+  "publisher": "Zeplin Ltd"
 }

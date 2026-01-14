@@ -7,5 +7,7 @@
   "homepage": "https://eugeny.github.io/tabby/",
   "fileName": "tabby_1.0.230.pkg",
   "type": "app",
-  "sha": "91e7f4e495eee6193aa8a3a7f24fd751762d7236c711d647e427c9ef65cafb67"
+  "sha": "91e7f4e495eee6193aa8a3a7f24fd751762d7236c711d647e427c9ef65cafb67",
+  "category": "Developer Tools",
+  "publisher": "Eugeny"
 }

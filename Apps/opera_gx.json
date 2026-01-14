@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.opera.com/gx",
   "fileName": "Opera_GX_125.0.5729.58_Setup.dmg",
-  "sha": "d38c845b9e46ef5c244a8e35fa15ca39ac72bff809bf0b761592dd18e22dd1b7"
+  "sha": "d38c845b9e46ef5c244a8e35fa15ca39ac72bff809bf0b761592dd18e22dd1b7",
+  "category": "Browsers",
+  "publisher": "Opera Software AS"
 }

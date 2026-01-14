@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.omnigroup.com/more/",
   "fileName": "OmniDiskSweeper-1.16.dmg",
-  "sha": "cea5153769290a17c11c58696ac9e32423e4128cec6565ef9a9b5f2c73b0df5c"
+  "sha": "cea5153769290a17c11c58696ac9e32423e4128cec6565ef9a9b5f2c73b0df5c",
+  "category": "Utilities",
+  "publisher": "The Omni Group"
 }

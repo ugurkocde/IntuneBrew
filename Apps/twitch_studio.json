@@ -5,5 +5,7 @@
   "url": "https://live.release.spotlight.twitchsvc.net/installer/mac/twitchstudio.dmg",
   "bundleId": null,
   "homepage": "https://www.twitch.tv/broadcast/studio/",
-  "fileName": "twitchstudio.dmg"
+  "fileName": "twitchstudio.dmg",
+  "category": "Media",
+  "publisher": "Twitch Interactive, Inc."
 }

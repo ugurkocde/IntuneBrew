@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://capacities.io/",
   "fileName": "Capacities-1.57.24-arm64.dmg",
-  "sha": "923714e8269c812843adcc20371d101fd680df40c4f7086ce4d3aecb8b7afff5"
+  "sha": "923714e8269c812843adcc20371d101fd680df40c4f7086ce4d3aecb8b7afff5",
+  "category": "Productivity",
+  "publisher": "Capacities"
 }

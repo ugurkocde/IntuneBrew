@@ -7,5 +7,7 @@
   "homepage": "https://aptonic.com/",
   "fileName": "dropzone_4.80.74.pkg",
   "type": "app",
-  "sha": "48dca72ac2b2336ff0166c70f46384de49bb53bf8ddb2de8e8d9c5bf7d38560c"
+  "sha": "48dca72ac2b2336ff0166c70f46384de49bb53bf8ddb2de8e8d9c5bf7d38560c",
+  "category": "Productivity",
+  "publisher": "Aptonic"
 }

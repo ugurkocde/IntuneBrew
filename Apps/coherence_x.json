@@ -7,5 +7,7 @@
   "homepage": "https://bzgapps.com/coherence",
   "fileName": "coherence_x_5.1.1.pkg",
   "type": "app",
-  "sha": "081a7862556631a8453d3c675b56826d5614c1f83fbe3bc4f148f075347fa9bd"
+  "sha": "081a7862556631a8453d3c675b56826d5614c1f83fbe3bc4f148f075347fa9bd",
+  "category": "Productivity",
+  "publisher": "BZG Apps"
 }

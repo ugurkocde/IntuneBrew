@@ -6,5 +6,7 @@
   "bundleId": "com.ferdium.ferdium-app",
   "homepage": "https://ferdium.org/",
   "fileName": "Ferdium-mac-7.1.1-arm64.dmg",
-  "sha": "8981f3baa90a31a9807fc9aac435f802f34a99aa821b0740ad54ce3b8977870e"
+  "sha": "8981f3baa90a31a9807fc9aac435f802f34a99aa821b0740ad54ce3b8977870e",
+  "category": "Communication",
+  "publisher": "Ferdium"
 }

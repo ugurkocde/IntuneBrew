@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://streamlabs.com/",
   "fileName": "Streamlabs+Desktop-1.19.6-arm64.dmg",
-  "sha": "c29c4480bcaab170f963a5e7515b8197065fc10de5aad98273d620f1e3e0707d"
+  "sha": "c29c4480bcaab170f963a5e7515b8197065fc10de5aad98273d620f1e3e0707d",
+  "category": "Media",
+  "publisher": "Streamlabs, Inc."
 }

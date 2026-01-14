@@ -7,5 +7,7 @@
   "homepage": "https://castr.io/",
   "fileName": "castr_3.1.0.pkg",
   "type": "app",
-  "sha": "260940c40edf181a942995034985776269f478735f2bf625a107e3367612b8b4"
+  "sha": "260940c40edf181a942995034985776269f478735f2bf625a107e3367612b8b4",
+  "category": "Media",
+  "publisher": "Castr"
 }

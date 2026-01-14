@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://ungoogled-software.github.io/",
   "fileName": "ungoogled-chromium_143.0.7499.169-1.1_arm64-macos.dmg",
-  "sha": "603eaa5b8677a35cd118ec26f3c92ccc5fdc2a86c2318e2b50e28cdbcb888bf1"
+  "sha": "603eaa5b8677a35cd118ec26f3c92ccc5fdc2a86c2318e2b50e28cdbcb888bf1",
+  "category": "Browsers",
+  "publisher": "ungoogled-software"
 }

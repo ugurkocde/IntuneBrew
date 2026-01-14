@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.reaper.fm/",
   "fileName": "reaper759_universal.dmg",
-  "sha": "4b84405d6b2cd6d3f398ed33cca7e45cfadc801ab034de441358e98c46799989"
+  "sha": "4b84405d6b2cd6d3f398ed33cca7e45cfadc801ab034de441358e98c46799989",
+  "category": "Media",
+  "publisher": "Cockos Incorporated"
 }

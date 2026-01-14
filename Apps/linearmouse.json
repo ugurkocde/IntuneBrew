@@ -6,5 +6,7 @@
   "bundleId": "com.lujjjh.LinearMouse",
   "homepage": "https://linearmouse.org/",
   "fileName": "LinearMouse.dmg",
-  "sha": "ed331d1597bdf93c7122c7120c08454e7ed3d254eb447dc4122f83a3355ef414"
+  "sha": "ed331d1597bdf93c7122c7120c08454e7ed3d254eb447dc4122f83a3355ef414",
+  "category": "Utilities",
+  "publisher": "LinearMouse"
 }

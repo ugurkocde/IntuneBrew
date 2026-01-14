@@ -7,5 +7,7 @@
   "homepage": "https://github.com/Ji4n1ng/OpenInTerminal",
   "fileName": "openinterminal_2.3.8.pkg",
   "type": "app",
-  "sha": "fd37fe5e5d254b786fd80b7b1ddd0ac132c615a7b924ae1dc601f5788b6dd4d1"
+  "sha": "fd37fe5e5d254b786fd80b7b1ddd0ac132c615a7b924ae1dc601f5788b6dd4d1",
+  "category": "Developer Tools",
+  "publisher": "Ji4n1ng"
 }

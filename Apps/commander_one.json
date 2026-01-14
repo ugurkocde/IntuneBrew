@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://mac.eltima.com/file-manager.html",
   "fileName": "commander.dmg",
-  "sha": "90792d578172fa151494732d7aa762afc9c128dd7cb276ae4c2815d717b996d0"
+  "sha": "90792d578172fa151494732d7aa762afc9c128dd7cb276ae4c2815d717b996d0",
+  "category": "Utilities",
+  "publisher": "Eltima Software"
 }

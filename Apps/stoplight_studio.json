@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://stoplight.io/studio/",
   "fileName": "stoplight-studio-mac-arm64.dmg",
-  "sha": "4e2d57b4cb6471995af03e770bdec2900c8c97ebffc61beb731d47611aba24ee"
+  "sha": "4e2d57b4cb6471995af03e770bdec2900c8c97ebffc61beb731d47611aba24ee",
+  "category": "Developer Tools",
+  "publisher": "Stoplight"
 }
