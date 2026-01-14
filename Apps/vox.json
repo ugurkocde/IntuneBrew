@@ -8,5 +8,6 @@
   "fileName": "VOX-3770.1.dmg",
   "sha": "287159bc31c99a46f71bcad02b73edd2f8fa3926d4bc1bbcfaea3beb7e03a96d",
   "category": "Media",
-  "publisher": "Coppertino"
+  "publisher": "Coppertino",
+  "previous_version": "3.7.7"
 }

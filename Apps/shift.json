@@ -1,0 +1,10 @@
+{
+  "name": "Shift",
+  "description": "Workstation to streamline your accounts, apps, and workflows",
+  "version": "9.6.4.1231",
+  "url": "https://updates.tryshift.com/v9.6.4/stable/shift-v9.6.4.1231-stable-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://shift.com/",
+  "fileName": "shift-v9.6.4.1231-stable-arm64.dmg",
+  "sha": "51210315db71db2be06d95bacad1921c73011f0c62c239cd1cfa527189d255c5"
+}

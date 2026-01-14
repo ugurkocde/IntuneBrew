@@ -8,5 +8,6 @@
   "fileName": "Plexamp-4.12.4-arm64.dmg",
   "sha": "313453eefdb6b8a295800e6530442ad0527884ed14533dfb92166b6bdc2dcca9",
   "category": "Media",
-  "publisher": "Plex, Inc."
+  "publisher": "Plex, Inc.",
+  "previous_version": "4.12.4"
 }

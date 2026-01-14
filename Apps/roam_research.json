@@ -1,0 +1,10 @@
+{
+  "name": "Roam Research",
+  "description": "Note-taking tool for networked thought",
+  "version": "0.0.29",
+  "url": "https://roam-electron-deploy.s3.amazonaws.com/Roam+Research-0.0.29-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://roamresearch.com/",
+  "fileName": "Roam+Research-0.0.29-arm64.dmg",
+  "sha": "9cea7e06e9a55e78ed5e99f4058f0abcde05f7833b15b3571375a04a3a555752"
+}

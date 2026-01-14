@@ -1,0 +1,11 @@
+{
+  "name": "castr",
+  "description": "Desktop application for controlling Castr streaming platform",
+  "version": "3.1.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/castr_3.1.0.pkg",
+  "bundleId": null,
+  "homepage": "https://castr.io/",
+  "fileName": "castr_3.1.0.pkg",
+  "type": "app",
+  "sha": "260940c40edf181a942995034985776269f478735f2bf625a107e3367612b8b4"
+}

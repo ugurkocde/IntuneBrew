@@ -1,0 +1,11 @@
+{
+  "name": "Scrivener",
+  "description": "Word processing software with a typewriter style",
+  "version": "3.5.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/scrivener_3.5.2.pkg",
+  "bundleId": null,
+  "homepage": "https://www.literatureandlatte.com/scrivener/overview",
+  "fileName": "scrivener_3.5.2.pkg",
+  "type": "app",
+  "sha": "e2a7b6208e1e9b7a5fa5c0ddd280285b8670624186bc499a3dec1dcddc7f4149"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Altair GraphQL Client",
+  "description": "GraphQL client",
+  "version": "8.5.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/altair_graphql_client_8.5.0.pkg",
+  "bundleId": null,
+  "homepage": "https://altairgraphql.dev/",
+  "fileName": "altair_graphql_client_8.5.0.pkg",
+  "type": "app",
+  "sha": "3ab255806cad797ecdd05ac762f676a162fb606c1ea90f519432af69d1a59646"
+}

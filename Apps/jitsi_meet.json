@@ -8,5 +8,6 @@
   "fileName": "jitsi-meet.dmg",
   "sha": "713855b796c24d3ac768080544898ef91a709bacdf09586b5536b0bd00ec4745",
   "category": "Communication",
-  "publisher": "8x8, Inc."
+  "publisher": "8x8, Inc.",
+  "previous_version": "2025.10.0"
 }

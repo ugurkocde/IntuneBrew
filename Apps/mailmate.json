@@ -1,0 +1,11 @@
+{
+  "name": "MailMate",
+  "description": "IMAP email client",
+  "version": "5673",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/mailmate_5673.pkg",
+  "bundleId": null,
+  "homepage": "https://freron.com/",
+  "fileName": "mailmate_5673.pkg",
+  "type": "app",
+  "sha": "97c384de839bc1ba8987f72933e246ce07eb32d33370871c9d05d7d27aabc760"
+}

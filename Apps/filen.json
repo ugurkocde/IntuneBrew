@@ -8,5 +8,6 @@
   "fileName": "Filen_mac_arm64.dmg",
   "sha": "041f30b361fb5b07f9039d380cf9f3e56b1180491a1ebf711cc5d2d81d5f741b",
   "category": "Productivity",
-  "publisher": "Filen"
+  "publisher": "Filen",
+  "previous_version": "3.0.47"
 }

@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "bd5dd84811b241265ba96c3a183ee122221d2ffb4a11933abd979890eb4939e0",
   "category": "Media",
-  "publisher": "Yattee"
+  "publisher": "Yattee",
+  "previous_version": "1.5.1"
 }

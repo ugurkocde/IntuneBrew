@@ -8,5 +8,6 @@
   "fileName": "OneSwitchOfficial-429.dmg",
   "sha": "f51c33c8e0e897fd30b877cc3f4e32705986031366f2ae7956e5f70314326cf4",
   "category": "Utilities",
-  "publisher": "Fireball Studio"
+  "publisher": "Fireball Studio",
+  "previous_version": "1.35.2"
 }

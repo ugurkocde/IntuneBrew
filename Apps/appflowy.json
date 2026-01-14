@@ -8,5 +8,6 @@
   "fileName": "Appflowy-0.11.0-macos-arm64.dmg",
   "sha": "92d0c600c34fbe5cea8f0323fdbb6d5b093829e294ec13273065f9ee6c712257",
   "category": "Productivity",
-  "publisher": "AppFlowy"
+  "publisher": "AppFlowy",
+  "previous_version": "0.11.0"
 }

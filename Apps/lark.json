@@ -8,5 +8,6 @@
   "fileName": "Lark-darwin_arm64-7.59.12-signed.dmg",
   "sha": "a5f73540c9b0549338ce0ae70b204b16ab700845d8924764e2330074a55654e6",
   "category": "Productivity",
-  "publisher": "Lark Technologies, Inc."
+  "publisher": "Lark Technologies, Inc.",
+  "previous_version": "7.59.12"
 }

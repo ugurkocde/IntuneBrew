@@ -1,0 +1,11 @@
+{
+  "name": "Scroll Reverser",
+  "description": "Tool to reverse the direction of scrolling",
+  "version": "1.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/scroll_reverser_1.9.pkg",
+  "bundleId": null,
+  "homepage": "https://pilotmoon.com/scrollreverser/",
+  "fileName": "scroll_reverser_1.9.pkg",
+  "type": "app",
+  "sha": "05e8c0c3a1569dfa160979595e418c2ea98dc1fe7cc5cf0e60ffd5e65466cb02"
+}

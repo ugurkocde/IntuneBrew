@@ -8,5 +8,6 @@
   "fileName": "ScreenFlow-10.5.1.dmg",
   "sha": "907f08ecf9c6f0fd3b77c169703fa38aa2bee97901c8e65ccf0ba620d5a6653e",
   "category": "Media",
-  "publisher": "Telestream"
+  "publisher": "Telestream",
+  "previous_version": "10.5.1"
 }

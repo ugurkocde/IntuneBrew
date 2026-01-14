@@ -1,0 +1,11 @@
+{
+  "name": "Unclutter",
+  "description": "Desktop storage area for notes, files and pasteboard clips",
+  "version": "2.1.25d",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/unclutter_2.1.25d.pkg",
+  "bundleId": null,
+  "homepage": "https://unclutterapp.com/",
+  "fileName": "unclutter_2.1.25d.pkg",
+  "type": "app",
+  "sha": "fbbbafbda8ba046687bd92b7b07b80ba7fe87bf423339b1732d2fa975c6c1d80"
+}

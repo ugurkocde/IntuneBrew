@@ -1,0 +1,11 @@
+{
+  "name": "Guitar Pro",
+  "description": "Sheet music editor software for guitar, bass, keyboards, drums and more",
+  "version": "8.1.4-43",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/guitar_pro_8.1.4-43.pkg",
+  "bundleId": "com.arobas-music.guitarpro*",
+  "homepage": "https://www.guitar-pro.com/",
+  "fileName": "guitar_pro_8.1.4-43.pkg",
+  "type": "app",
+  "sha": "98976878310411b0ade0bf1aca5e222b978d27c1b08d1033570f9ae289862bc1"
+}

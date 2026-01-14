@@ -1,0 +1,10 @@
+{
+  "name": "Fleet",
+  "description": "Hybrid IDE and text editor",
+  "version": "1.48.261",
+  "url": "https://download.jetbrains.com/fleet/installers/macos_aarch64/Fleet-1.48.261-aarch64.dmg",
+  "bundleId": null,
+  "homepage": "https://www.jetbrains.com/fleet/",
+  "fileName": "Fleet-1.48.261-aarch64.dmg",
+  "sha": "09e0d68820830e3ef43161f1d3d39a5ff3075ae90b0bfaa48b9b33a6bcf5d4ae"
+}

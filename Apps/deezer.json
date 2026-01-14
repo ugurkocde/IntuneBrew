@@ -1,0 +1,10 @@
+{
+  "name": "Deezer",
+  "description": "Music player",
+  "version": "7.1.40",
+  "url": "https://www.deezer.com/desktop/download/artifact-darwin-x64-7.1.40",
+  "bundleId": null,
+  "homepage": "https://www.deezer.com/download",
+  "fileName": "artifact-darwin-x64-7.1.40",
+  "sha": "5a1714900f6d4c056826eab0e1ec78831b52d3a116cf06dc7640cd2caecd6f3f"
+}

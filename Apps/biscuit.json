@@ -1,0 +1,10 @@
+{
+  "name": "Biscuit",
+  "description": "Browser to organise apps",
+  "version": "1.2.33",
+  "url": "https://github.com/agata/dl.biscuit/releases/download/1.2.33/Biscuit-1.2.33-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://eatbiscuit.com/",
+  "fileName": "Biscuit-1.2.33-arm64.dmg",
+  "sha": "999bcfa3edad7bc16f84573c2ff75342615d031f264a47868375d403445c208f"
+}

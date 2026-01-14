@@ -1,0 +1,11 @@
+{
+  "name": "Iconset",
+  "description": "Organise icon sets and packs in one place",
+  "version": "2.5.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/iconset_2.5.0.pkg",
+  "bundleId": null,
+  "homepage": "https://iconset.io/",
+  "fileName": "iconset_2.5.0.pkg",
+  "type": "app",
+  "sha": "080a02d86c6b9d93ff29bb8a69dbacdad58575dd3b0a97ca76b34f18092e45e2"
+}

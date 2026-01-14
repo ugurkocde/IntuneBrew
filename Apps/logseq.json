@@ -8,5 +8,6 @@
   "fileName": "logseq-darwin-arm64-0.10.15.dmg",
   "sha": "a0b83e5bdc2b8bb639cec5747cedcc0f0a8cd840ca6fa0d44242dc05312d27cb",
   "category": "Productivity",
-  "publisher": "Logseq"
+  "publisher": "Logseq",
+  "previous_version": "0.10.15"
 }

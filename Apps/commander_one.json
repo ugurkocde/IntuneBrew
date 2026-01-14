@@ -1,0 +1,10 @@
+{
+  "name": "Commander One",
+  "description": "Two-panel file manager",
+  "version": "3.17.1",
+  "url": "https://cdn.electronic.us/products/commander/mac/download/commander.dmg",
+  "bundleId": null,
+  "homepage": "https://mac.eltima.com/file-manager.html",
+  "fileName": "commander.dmg",
+  "sha": "90792d578172fa151494732d7aa762afc9c128dd7cb276ae4c2815d717b996d0"
+}

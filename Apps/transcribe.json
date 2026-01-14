@@ -1,0 +1,10 @@
+{
+  "name": "Transcribe!",
+  "description": "Transcribes recorded music",
+  "version": "9.50.1",
+  "url": "https://www.seventhstring.com/xscribe/downmo/transcribe-arm-9.50.1.dmg",
+  "bundleId": "com.seventhstring.transcribe",
+  "homepage": "https://www.seventhstring.com/xscribe/overview.html",
+  "fileName": "transcribe-arm-9.50.1.dmg",
+  "sha": "b9d0c2a1b9355b8fb4d7cd31f2e77e5c30d9e306fbfb2398a21fc117c70cdab2"
+}

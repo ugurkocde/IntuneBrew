@@ -8,5 +8,6 @@
   "fileName": "Lapce-macos.dmg",
   "sha": "354e7e5b89e9f9eb1c08d32fa08906b9230b825c0dcc70624585c4e026fd13b8",
   "category": "Developer Tools",
-  "publisher": "Lapce Authors"
+  "publisher": "Lapce Authors",
+  "previous_version": "0.4.5"
 }

@@ -1,0 +1,10 @@
+{
+  "name": "Stoplight Studio",
+  "description": "Editor for designing and documenting APIs",
+  "version": "2.10.0",
+  "url": "https://github.com/stoplightio/studio/releases/download/v2.10.0-stable.9587.git-0533c10/stoplight-studio-mac-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://stoplight.io/studio/",
+  "fileName": "stoplight-studio-mac-arm64.dmg",
+  "sha": "4e2d57b4cb6471995af03e770bdec2900c8c97ebffc61beb731d47611aba24ee"
+}

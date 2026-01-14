@@ -8,5 +8,6 @@
   "fileName": "LosslessCut-mac-arm64.dmg",
   "sha": "7ab28094b0400cf4ed884abed1e1794fdf1469db41652784432963097b4b7728",
   "category": "Media",
-  "publisher": "mifi"
+  "publisher": "mifi",
+  "previous_version": "3.67.2"
 }

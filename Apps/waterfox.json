@@ -1,0 +1,10 @@
+{
+  "name": "Waterfox",
+  "description": "Web browser",
+  "version": "6.6.8",
+  "url": "https://cdn1.waterfox.net/waterfox/releases/6.6.8/Darwin_x86_64-aarch64/Waterfox%206.6.8.dmg",
+  "bundleId": null,
+  "homepage": "https://www.waterfox.net/",
+  "fileName": "Waterfox%206.6.8.dmg",
+  "sha": "37277b017828c25bddb1e7d019e8ce1fffddd533f11d7ef58fad7f2beacb24d0"
+}

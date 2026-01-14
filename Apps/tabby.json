@@ -1,0 +1,11 @@
+{
+  "name": "Tabby",
+  "description": "Terminal emulator, SSH and serial client",
+  "version": "1.0.230",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tabby_1.0.230.pkg",
+  "bundleId": null,
+  "homepage": "https://eugeny.github.io/tabby/",
+  "fileName": "tabby_1.0.230.pkg",
+  "type": "app",
+  "sha": "91e7f4e495eee6193aa8a3a7f24fd751762d7236c711d647e427c9ef65cafb67"
+}

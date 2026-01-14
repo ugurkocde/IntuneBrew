@@ -1,0 +1,10 @@
+{
+  "name": "Sonos S2",
+  "description": "Control your Sonos system",
+  "version": "90.0-67171",
+  "url": "https://update-software.sonos.com/software/ZethjbGivZ/Sonos_90.0-67171.dmg",
+  "bundleId": null,
+  "homepage": "https://www.sonos.com/",
+  "fileName": "Sonos_90.0-67171.dmg",
+  "sha": "248703bb6ec9ad4753363a6d3b7bd1145184af42d1e4ade62d213a4ffed21942"
+}

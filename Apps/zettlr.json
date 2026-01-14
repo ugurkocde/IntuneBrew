@@ -8,5 +8,6 @@
   "fileName": "Zettlr-4.1.0-arm64.dmg",
   "sha": "5b230f538e7f68213ea8194f3200c30f99a4084165f803a0117ebe7267602754",
   "category": "Productivity",
-  "publisher": "Zettlr Project"
+  "publisher": "Zettlr Project",
+  "previous_version": "4.1.0"
 }

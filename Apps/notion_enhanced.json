@@ -1,0 +1,10 @@
+{
+  "name": "Notion Enhanced",
+  "description": "Enhancer/customiser for the all-in-one productivity workspace notion.so",
+  "version": "2.0.18-1",
+  "url": "https://github.com/notion-enhancer/notion-repackaged/releases/download/v2.0.18-1/Notion-Enhanced-2.0.18-1.dmg",
+  "bundleId": null,
+  "homepage": "https://notion-enhancer.github.io/",
+  "fileName": "Notion-Enhanced-2.0.18-1.dmg",
+  "sha": "e54a37053ed52a42ecbb4ed22a0ce50498ecc1efb3bff5b134099a56a8569309"
+}

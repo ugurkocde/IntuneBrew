@@ -8,5 +8,6 @@
   "fileName": "Viscosity%201.12.dmg",
   "sha": "858bfd81701091639c83dbcf85bb4769f3251262d7de7e1ec07e40b8e8b06728",
   "category": "Security",
-  "publisher": "Sparkly Labs"
+  "publisher": "Sparkly Labs",
+  "previous_version": "1.12"
 }

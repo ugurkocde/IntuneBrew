@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "f77e003d8597d8827052e2fb787b3b0b3cc64825d6d4b8c468d3d7dbfab271e6",
   "category": "Utilities",
-  "publisher": "MEGA Software"
+  "publisher": "MEGA Software",
+  "previous_version": "12.1.2"
 }

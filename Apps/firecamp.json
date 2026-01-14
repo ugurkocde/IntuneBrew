@@ -1,0 +1,10 @@
+{
+  "name": "Firecamp",
+  "description": "Multi-protocol API development platform",
+  "version": "2.6.1",
+  "url": "https://firecamp.ams3.digitaloceanspaces.com/versions/mac/Firecamp-2.6.1.dmg",
+  "bundleId": null,
+  "homepage": "https://firecamp.io/",
+  "fileName": "Firecamp-2.6.1.dmg",
+  "sha": "8b7df7244da0e577a7a5793822af6144548a65024e6b1f8166513ec2435ccb08"
+}
