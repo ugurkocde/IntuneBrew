@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-525-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -310,14 +310,14 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-13 23:36 UTC*
+*Last checked: 2026-01-14 00:32 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Bitwarden | 2025.12.0 | 2025.12.1 |
-| LM Studio | 0.3.37 | 0.3.38 |
+| Mozilla Thunderbird | 146.0.1 | 147.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -456,7 +456,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.8.1 |
 | <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.8.1 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.1 |
-| ❌ AppGate SDP Client for macOS | 6.6.0 |
+| <img src='Logos/appgate_sdp_client_for_macos.png' width='32' height='32'> AppGate SDP Client for macOS | 6.6.0 |
 | <img src='Logos/arc.png' width='32' height='32'> Arc | 1.129.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.5 |
 | <img src='Logos/arduino_ide.png' width='32' height='32'> Arduino IDE | 2.3.7 |
@@ -702,7 +702,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/microsoft_azure_storage_explorer.png' width='32' height='32'> Microsoft Azure Storage Explorer | 1.40.2 |
 | <img src='Logos/microsoft_edge.png' width='32' height='32'> Microsoft Edge | 143.0.3650.139 |
 | <img src='Logos/microsoft_office.png' width='32' height='32'> Microsoft Office | 16.105.26011018 |
-| ❌ Microsoft Office BusinessPro | 16.105.26011018 |
+| <img src='Logos/microsoft_office_businesspro.png' width='32' height='32'> Microsoft Office BusinessPro | 16.105.26011018 |
 | <img src='Logos/microsoft_teams.png' width='32' height='32'> Microsoft Teams | 25290.302.4044.3989 |
 | <img src='Logos/microsoft_visual_studio_code.png' width='32' height='32'> Microsoft Visual Studio Code | 1.108.0 |
 | <img src='Logos/middle.png' width='32' height='32'> Middle | 1.14 |
@@ -726,7 +726,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/mozilla_firefox.png' width='32' height='32'> Mozilla Firefox | 147.0 |
 | <img src='Logos/mozilla_firefox_developer_edition.png' width='32' height='32'> Mozilla Firefox Developer Edition | 148.0b1 |
 | <img src='Logos/mozilla_firefox_esr.png' width='32' height='32'> Mozilla Firefox ESR | 140.7.0 |
-| <img src='Logos/mozilla_thunderbird.png' width='32' height='32'> Mozilla Thunderbird | 146.0.1 |
+| <img src='Logos/mozilla_thunderbird.png' width='32' height='32'> Mozilla Thunderbird | 147.0 |
 | <img src='Logos/multi.png' width='32' height='32'> Multi | 0.538.2 |
 | <img src='Logos/multiviewer_for_f1.png' width='32' height='32'> MultiViewer for F1 | 1.43.2 |
 | <img src='Logos/mural.png' width='32' height='32'> MURAL | 3.0.4 |
@@ -804,7 +804,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/privileges.png' width='32' height='32'> Privileges | 2.5.0 |
 | <img src='Logos/processspy.png' width='32' height='32'> ProcessSpy | 1.10.3 |
 | <img src='Logos/pronotes.png' width='32' height='32'> ProNotes | 0.7.8.2 |
-| ❌ ProPresenter | 21.1 |
+| <img src='Logos/propresenter.png' width='32' height='32'> ProPresenter | 21.1 |
 | <img src='Logos/proton_drive.png' width='32' height='32'> Proton Drive | 2.10.2 |
 | <img src='Logos/proton_mail.png' width='32' height='32'> Proton Mail | 1.11.0 |
 | <img src='Logos/proton_pass.png' width='32' height='32'> Proton Pass | 1.33.4 |
@@ -860,7 +860,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/slack.png' width='32' height='32'> Slack | 4.47.72 |
 | <img src='Logos/snagit.png' width='32' height='32'> Snagit | 2026.0.0 |
 | <img src='Logos/splashtop_business.png' width='32' height='32'> Splashtop Business | 3.8.0.1 |
-| ❌ Splashtop Streamer | 3.8.0.2 |
+| <img src='Logos/splashtop_streamer.png' width='32' height='32'> Splashtop Streamer | 3.8.0.2 |
 | <img src='Logos/splice.png' width='32' height='32'> Splice | 5.4.4.1 |
 | <img src='Logos/spline.png' width='32' height='32'> Spline | 0.12.11 |
 | <img src='Logos/spotify.png' width='32' height='32'> Spotify | 1.2.79.427 |

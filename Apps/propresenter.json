@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "12fa8f2e15aa49c4d404b3f3dad4547241a48c8f575cbbcbd9a157e58ffe3499",
   "category": "Productivity",
-  "publisher": "Renewed Vision, LLC"
+  "publisher": "Renewed Vision, LLC",
+  "previous_version": "21.1"
 }
