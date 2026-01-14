@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-01-13",
+  "last_updated": "2026-01-14",
   "total_cves": 3773,
   "summary": {
     "critical": 143,
@@ -1064,7 +1064,7 @@
     {
       "cve_id": "CVE-2020-6572",
       "published_date": "2021-01-14",
-      "last_modified_date": "2026-01-12",
+      "last_modified_date": "2026-01-13",
       "description": "Use after free in Media in Google Chrome prior to 81.0.4044.92 allowed a remote attacker to execute arbitrary code via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",

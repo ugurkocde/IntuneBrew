@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-01-13",
+  "last_updated": "2026-01-14",
   "total_cves": 2958,
   "summary": {
     "critical": 313,
@@ -6902,8 +6902,8 @@
     {
       "cve_id": "CVE-2025-14327",
       "published_date": "2025-12-09",
-      "last_modified_date": "2025-12-11",
-      "description": "Spoofing issue in the Downloads Panel component. This vulnerability affects Firefox < 146 and Thunderbird < 146.",
+      "last_modified_date": "2026-01-13",
+      "description": "Spoofing issue in the Downloads Panel component. This vulnerability affects Firefox < 146, Thunderbird < 146, and Firefox ESR < 140.7.",
       "base_score": 7.5,
       "severity": "HIGH",
       "cvss_version": "3.1",
@@ -6986,7 +6986,7 @@
     {
       "cve_id": "CVE-2025-14333",
       "published_date": "2025-12-09",
-      "last_modified_date": "2025-12-10",
+      "last_modified_date": "2026-01-13",
       "description": "Memory safety bugs present in Firefox ESR 140.5, Thunderbird ESR 140.5, Firefox 145 and Thunderbird 145. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 146, Firefox ESR < 140.6, Thunderbird < 146, and Thunderbird < 140.6.",
       "base_score": 8.1,
       "severity": "HIGH",
