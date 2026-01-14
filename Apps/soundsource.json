@@ -8,5 +8,7 @@
   "fileName": "SoundSource.zip",
   "type": "app",
   "previous_version": "6.0.2",
-  "sha": "20a26f12fe0d880714fb51eea12bf5a6dbdb1e9b7119e1cf79be3d486c3a040c"
+  "sha": "20a26f12fe0d880714fb51eea12bf5a6dbdb1e9b7119e1cf79be3d486c3a040c",
+  "category": "Utilities",
+  "publisher": "Rogue Amoeba"
 }

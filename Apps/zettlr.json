@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.zettlr.com/",
   "fileName": "Zettlr-4.1.0-arm64.dmg",
-  "sha": "5b230f538e7f68213ea8194f3200c30f99a4084165f803a0117ebe7267602754"
+  "sha": "5b230f538e7f68213ea8194f3200c30f99a4084165f803a0117ebe7267602754",
+  "category": "Productivity",
+  "publisher": "Zettlr Project"
 }

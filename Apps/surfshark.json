@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://surfshark.com/",
   "fileName": "Surfshark.dmg",
-  "sha": "42a436fadded6a844eed115de7d1a7a5f28673bc79cc6d3fd5eb252fcb01f06c"
+  "sha": "42a436fadded6a844eed115de7d1a7a5f28673bc79cc6d3fd5eb252fcb01f06c",
+  "category": "Security",
+  "publisher": "Surfshark Ltd."
 }

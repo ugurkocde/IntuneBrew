@@ -8,5 +8,7 @@
   "fileName": "TunnelBear-5.8.0.zip",
   "type": "app",
   "previous_version": "5.8.0",
-  "sha": "52b64bfb50ad2c0f3c5ead8ec414ee3e27fce497ad801f384c0fdf2fb7d7abd4"
+  "sha": "52b64bfb50ad2c0f3c5ead8ec414ee3e27fce497ad801f384c0fdf2fb7d7abd4",
+  "category": "Security",
+  "publisher": "TunnelBear, Inc."
 }

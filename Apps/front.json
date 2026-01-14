@@ -8,5 +8,7 @@
   "fileName": "Front-3.67.6-arm64.zip",
   "type": "app",
   "previous_version": "3.67.6",
-  "sha": "71cd1f981489cde4183faf79c31290fdf9567aeb7091562ebe8d77af069a52dd"
+  "sha": "71cd1f981489cde4183faf79c31290fdf9567aeb7091562ebe8d77af069a52dd",
+  "category": "Communication",
+  "publisher": "Front, Inc."
 }

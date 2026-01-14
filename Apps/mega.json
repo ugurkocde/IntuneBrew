@@ -7,5 +7,7 @@
   "homepage": "https://megasoftware.net/",
   "fileName": "MEGA_12.1.2_installer.pkg",
   "type": "pkg",
-  "sha": "f77e003d8597d8827052e2fb787b3b0b3cc64825d6d4b8c468d3d7dbfab271e6"
+  "sha": "f77e003d8597d8827052e2fb787b3b0b3cc64825d6d4b8c468d3d7dbfab271e6",
+  "category": "Utilities",
+  "publisher": "MEGA Software"
 }

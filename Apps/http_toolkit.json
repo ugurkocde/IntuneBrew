@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://httptoolkit.tech/",
   "fileName": "HttpToolkit-1.24.2-arm64.dmg",
-  "sha": "4d030ff3f07fe16ef17cdc289a24a182b978a4c68c2dd6c40aedf0d5266a9123"
+  "sha": "4d030ff3f07fe16ef17cdc289a24a182b978a4c68c2dd6c40aedf0d5266a9123",
+  "category": "Developer Tools",
+  "publisher": "HTTP Toolkit"
 }

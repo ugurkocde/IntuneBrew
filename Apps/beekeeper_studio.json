@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.beekeeperstudio.io/",
   "fileName": "Beekeeper-Studio-5.5.3-arm64.dmg",
-  "sha": "89f885d4bba6b568102cf09d5cfefe07527efc05aafd48cae2e480adfe3f3535"
+  "sha": "89f885d4bba6b568102cf09d5cfefe07527efc05aafd48cae2e480adfe3f3535",
+  "category": "Developer Tools",
+  "publisher": "Beekeeper Studio"
 }

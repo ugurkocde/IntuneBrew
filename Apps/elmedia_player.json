@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.electronic.us/products/elmedia/",
   "fileName": "elmediaplayer.dmg",
-  "sha": "6f4921532a8a924af4d949a08b9bcfe13330654d7408b90f57f560c1b525849f"
+  "sha": "6f4921532a8a924af4d949a08b9bcfe13330654d7408b90f57f560c1b525849f",
+  "category": "Media",
+  "publisher": "Electronic Team"
 }

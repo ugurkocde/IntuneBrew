@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://floorp.app/",
   "fileName": "floorp-macOS-universal.dmg",
-  "sha": "d225e9f6f1d81c6049905699ff08a64fb67496a16c31a2634af4c4f2e96f7a6d"
+  "sha": "d225e9f6f1d81c6049905699ff08a64fb67496a16c31a2634af4c4f2e96f7a6d",
+  "category": "Browsers",
+  "publisher": "Floorp Team"
 }

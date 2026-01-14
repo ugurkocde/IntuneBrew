@@ -8,5 +8,7 @@
   "fileName": "Tower-15.0.3-519.zip",
   "type": "app",
   "previous_version": "15.0.3",
-  "sha": "8a53f559720ab1df6fded89a7cf002e5a97e7e6a5218797f9dda98aa1630a7b4"
+  "sha": "8a53f559720ab1df6fded89a7cf002e5a97e7e6a5218797f9dda98aa1630a7b4",
+  "category": "Developer Tools",
+  "publisher": "Absolutist Ltd."
 }

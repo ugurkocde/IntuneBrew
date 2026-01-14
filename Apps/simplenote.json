@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://github.com/Automattic/simplenote-electron",
   "fileName": "Simplenote-macOS-2.24.0.dmg",
-  "sha": "bebf0d07de770c6668289e64fb83708c8b051ac99200c96cab4cd619fe6b9426"
+  "sha": "bebf0d07de770c6668289e64fb83708c8b051ac99200c96cab4cd619fe6b9426",
+  "category": "Productivity",
+  "publisher": "Automattic, Inc."
 }

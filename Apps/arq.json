@@ -7,5 +7,7 @@
   "homepage": "https://www.arqbackup.com/",
   "fileName": "Arq7.37.pkg",
   "type": "pkg",
-  "sha": "4f75b5dd0d7a90c7d425609888a2bd316938fec329bf0f56186e26a9bb409b30"
+  "sha": "4f75b5dd0d7a90c7d425609888a2bd316938fec329bf0f56186e26a9bb409b30",
+  "category": "Utilities",
+  "publisher": "Haystack Software"
 }

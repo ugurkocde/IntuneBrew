@@ -7,5 +7,7 @@
   "homepage": "https://github.com/canonical/multipass/",
   "fileName": "multipass-1.16.1+mac-Darwin.pkg",
   "type": "pkg",
-  "sha": "758d10dc1b71872b0ee7a17070b93fc788dba5ba45c36b980e42fd895d273489"
+  "sha": "758d10dc1b71872b0ee7a17070b93fc788dba5ba45c36b980e42fd895d273489",
+  "category": "Developer Tools",
+  "publisher": "Canonical Ltd."
 }

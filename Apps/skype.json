@@ -5,5 +5,7 @@
   "url": "https://download.skype.com/s4l/download/mac/Skype-8.150.0.125.dmg",
   "bundleId": null,
   "homepage": "https://www.skype.com/",
-  "fileName": "Skype-8.150.0.125.dmg"
+  "fileName": "Skype-8.150.0.125.dmg",
+  "category": "Communication",
+  "publisher": "Microsoft Corporation"
 }

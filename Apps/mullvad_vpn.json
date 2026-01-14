@@ -7,5 +7,7 @@
   "homepage": "https://mullvad.net/",
   "fileName": "MullvadVPN-2025.14.pkg",
   "type": "pkg",
-  "sha": "cf285629ac49fdc19a961acdc0a8ac7c8ef1307e39b361476fba1beac2c9c754"
+  "sha": "cf285629ac49fdc19a961acdc0a8ac7c8ef1307e39b361476fba1beac2c9c754",
+  "category": "Security",
+  "publisher": "Mullvad VPN AB"
 }

@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://audirvana.com/",
   "fileName": "Audirvana_3.5.50.dmg",
-  "sha": "c1adb7d7efdd67f72ffc0a8819cc5b579ffe32363d0e502e1e7264f79c5792e7"
+  "sha": "c1adb7d7efdd67f72ffc0a8819cc5b579ffe32363d0e502e1e7264f79c5792e7",
+  "category": "Media",
+  "publisher": "Audirvana"
 }

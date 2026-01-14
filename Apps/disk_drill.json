@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.cleverfiles.com/",
   "fileName": "diskdrill.dmg",
-  "sha": "2637d51546adf0f3a4cd3289c7975c57ce9c35e29a4cb00acc67a5b665e9dbb1"
+  "sha": "2637d51546adf0f3a4cd3289c7975c57ce9c35e29a4cb00acc67a5b665e9dbb1",
+  "category": "Utilities",
+  "publisher": "CleverFiles"
 }

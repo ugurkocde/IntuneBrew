@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://tresorit.com/",
   "fileName": "Tresorit.dmg",
-  "sha": "af56ba14d907471c14113554773aa45a4b8c3848de6cd6b6c10b389f3a4c779b"
+  "sha": "af56ba14d907471c14113554773aa45a4b8c3848de6cd6b6c10b389f3a4c779b",
+  "category": "Productivity",
+  "publisher": "Tresorit"
 }

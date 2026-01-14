@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.strem.io/",
   "fileName": "Stremio+4.4.171.dmg",
-  "sha": "22909c6959c07bb375f13b3a3e0943ff3e631a32b11cea343d430ce75912ab65"
+  "sha": "22909c6959c07bb375f13b3a3e0943ff3e631a32b11cea343d430ce75912ab65",
+  "category": "Media",
+  "publisher": "Stremio"
 }

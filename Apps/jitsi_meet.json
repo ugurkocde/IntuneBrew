@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://github.com/jitsi/jitsi-meet-electron/",
   "fileName": "jitsi-meet.dmg",
-  "sha": "713855b796c24d3ac768080544898ef91a709bacdf09586b5536b0bd00ec4745"
+  "sha": "713855b796c24d3ac768080544898ef91a709bacdf09586b5536b0bd00ec4745",
+  "category": "Communication",
+  "publisher": "8x8, Inc."
 }

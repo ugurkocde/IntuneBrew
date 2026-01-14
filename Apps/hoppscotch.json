@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://hoppscotch.com/",
   "fileName": "Hoppscotch_mac_aarch64.dmg",
-  "sha": "c33d82a417cbba66b80a83db042edd44ec5a5d94af8af7479ff4d7e3415a90e5"
+  "sha": "c33d82a417cbba66b80a83db042edd44ec5a5d94af8af7479ff4d7e3415a90e5",
+  "category": "Developer Tools",
+  "publisher": "Hoppscotch"
 }

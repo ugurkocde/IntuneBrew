@@ -8,5 +8,7 @@
   "fileName": "ImageOptim1.9.3.tar.xz",
   "type": "app",
   "previous_version": "1.9.3",
-  "sha": "a86aef54ed2480790d3d54022e3ac167b73896a03c42f6d54ab47836713157e6"
+  "sha": "a86aef54ed2480790d3d54022e3ac167b73896a03c42f6d54ab47836713157e6",
+  "category": "Utilities",
+  "publisher": "ImageOptim"
 }

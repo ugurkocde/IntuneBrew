@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.avidemux.org/",
   "fileName": "Avidemux_2.8.1v2_Monterey_Qt6.dmg",
-  "sha": "b0b8890114172d531d138f6c1413f0393c0e5a87530168106a12d6b11ae44833"
+  "sha": "b0b8890114172d531d138f6c1413f0393c0e5a87530168106a12d6b11ae44833",
+  "category": "Media",
+  "publisher": "Mean"
 }

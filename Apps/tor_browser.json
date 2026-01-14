@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.torproject.org/",
   "fileName": "tor-browser-macos-15.0.4.dmg",
-  "sha": "c6d21dd2d67d752af6d8c22ddc2cc515021f9805ff570c00e374201ed97433a7"
+  "sha": "c6d21dd2d67d752af6d8c22ddc2cc515021f9805ff570c00e374201ed97433a7",
+  "category": "Browsers",
+  "publisher": "The Tor Project"
 }

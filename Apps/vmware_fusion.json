@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion",
   "fileName": "com.vmware.fusion.zip.tar",
-  "type": "app"
+  "type": "app",
+  "category": "Developer Tools",
+  "publisher": "VMware, Inc."
 }

@@ -7,5 +7,7 @@
   "homepage": "https://workflowy.com/downloads/mac/",
   "fileName": "workflowy_4.3.2601131010.pkg",
   "type": "app",
-  "sha": "fed1148006fe2066e2b23005a04e566204063b9707ebb48b72a4e07ddc922554"
+  "sha": "fed1148006fe2066e2b23005a04e566204063b9707ebb48b72a4e07ddc922554",
+  "category": "Productivity",
+  "publisher": "WorkFlowy, Inc."
 }

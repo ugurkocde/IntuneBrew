@@ -8,5 +8,7 @@
   "fileName": "coconutBattery_420_192.zip",
   "type": "app",
   "previous_version": "4.2.0",
-  "sha": "dd2c5841671cb3ee985e79d8e7234a32590e7f19e5e63cf85815a58770255e76"
+  "sha": "dd2c5841671cb3ee985e79d8e7234a32590e7f19e5e63cf85815a58770255e76",
+  "category": "Utilities",
+  "publisher": "coconut-flavour"
 }

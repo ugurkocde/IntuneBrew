@@ -8,5 +8,7 @@
   "fileName": "Loopback.zip",
   "type": "app",
   "previous_version": "2.4.8",
-  "sha": "849888dd03778b4166cc4ebbc88f2692ee4afe288bcdeac9928e903abe5da383"
+  "sha": "849888dd03778b4166cc4ebbc88f2692ee4afe288bcdeac9928e903abe5da383",
+  "category": "Utilities",
+  "publisher": "Rogue Amoeba"
 }

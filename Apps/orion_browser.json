@@ -8,5 +8,7 @@
   "fileName": "141.zip",
   "type": "app",
   "previous_version": "1.0.2",
-  "sha": "f5db5dec9b9085ef82688bf034d095b493221d7f1c67a36789607da947edc5a1"
+  "sha": "f5db5dec9b9085ef82688bf034d095b493221d7f1c67a36789607da947edc5a1",
+  "category": "Browsers",
+  "publisher": "Kagi, Inc."
 }
