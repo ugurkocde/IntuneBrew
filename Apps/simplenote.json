@@ -1,0 +1,10 @@
+{
+  "name": "Simplenote",
+  "description": "React client for Simplenote",
+  "version": "2.24.0",
+  "url": "https://github.com/Automattic/simplenote-electron/releases/download/v2.24.0/Simplenote-macOS-2.24.0.dmg",
+  "bundleId": null,
+  "homepage": "https://github.com/Automattic/simplenote-electron",
+  "fileName": "Simplenote-macOS-2.24.0.dmg",
+  "sha": "bebf0d07de770c6668289e64fb83708c8b051ac99200c96cab4cd619fe6b9426"
+}

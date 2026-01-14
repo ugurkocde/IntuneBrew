@@ -1,0 +1,11 @@
+{
+  "name": "Mullvad VPN",
+  "description": "VPN client",
+  "version": "2025.14",
+  "url": "https://cdn.mullvad.net/app/desktop/releases/2025.14/MullvadVPN-2025.14.pkg",
+  "bundleId": "net.mullvad.vpn",
+  "homepage": "https://mullvad.net/",
+  "fileName": "MullvadVPN-2025.14.pkg",
+  "type": "pkg",
+  "sha": "cf285629ac49fdc19a961acdc0a8ac7c8ef1307e39b361476fba1beac2c9c754"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "TripMode",
+  "description": "Control your data usage on slow or expensive networks",
+  "version": "3.2.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tripmode_3.2.4.pkg",
+  "bundleId": "ch.tripmode.nke.TripMode",
+  "homepage": "https://www.tripmode.ch/",
+  "fileName": "TripMode-3.2.4-1385.zip",
+  "type": "app",
+  "previous_version": "3.2.4",
+  "sha": "218140631be441f78bc28a10e20b496d9cf7ab71b0be6fd97c3aa261ffb622ea"
+}

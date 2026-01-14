@@ -1,0 +1,12 @@
+{
+  "name": "The Unarchiver",
+  "description": "Unpacks archive files",
+  "version": "4.3.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/the_unarchiver_4.3.9.pkg",
+  "bundleId": null,
+  "homepage": "https://theunarchiver.com/",
+  "fileName": "TheUnarchiver-147.zip",
+  "type": "app",
+  "previous_version": "4.3.9",
+  "sha": "012babd65ce9821d1d50978dc5d90bc3e3de86f001d4a71a24950eb3c3a4a528"
+}

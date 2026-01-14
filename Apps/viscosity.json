@@ -1,0 +1,10 @@
+{
+  "name": "Viscosity",
+  "description": "OpenVPN client with AppleScript support",
+  "version": "1.12",
+  "url": "https://swupdate.sparklabs.com/download/mac/release/viscosity/Viscosity%201.12.dmg",
+  "bundleId": "com.sparklabs.ViscosityHelper",
+  "homepage": "https://www.sparklabs.com/viscosity/",
+  "fileName": "Viscosity%201.12.dmg",
+  "sha": "858bfd81701091639c83dbcf85bb4769f3251262d7de7e1ec07e40b8e8b06728"
+}

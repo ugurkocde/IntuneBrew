@@ -1,0 +1,10 @@
+{
+  "name": "Craft",
+  "description": "Native document editor",
+  "version": "3.3.6",
+  "url": "https://res.craft.do/native/sparkle/Craft.dmg",
+  "bundleId": null,
+  "homepage": "https://www.craft.do/",
+  "fileName": "Craft.dmg",
+  "sha": "25baa41886f1402cbc88859aeedb3d45120f15ed82865ebb7ca05256fa9d291a"
+}

@@ -1,0 +1,12 @@
+{
+  "name": "Affinity Photo 2",
+  "description": "Professional image editing software",
+  "version": "2.6.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/affinity_photo_2_2.6.5.pkg",
+  "bundleId": null,
+  "homepage": "https://affinity.serif.com/en-us/photo/",
+  "fileName": "Affinity%20Photo%202%20Affinity%20Store%203782.zip",
+  "type": "app",
+  "previous_version": "2.6.5",
+  "sha": "dfdb6158a8a9312b263fe4d2f0ec377e49da97dc2ae5a6cc6d77f2b865550d0b"
+}

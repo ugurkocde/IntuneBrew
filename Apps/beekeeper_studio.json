@@ -1,0 +1,10 @@
+{
+  "name": "Beekeeper Studio",
+  "description": "Cross platform SQL editor and database management app",
+  "version": "5.5.3",
+  "url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.5.3/Beekeeper-Studio-5.5.3-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://www.beekeeperstudio.io/",
+  "fileName": "Beekeeper-Studio-5.5.3-arm64.dmg",
+  "sha": "89f885d4bba6b568102cf09d5cfefe07527efc05aafd48cae2e480adfe3f3535"
+}

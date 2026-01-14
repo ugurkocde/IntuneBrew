@@ -1,0 +1,10 @@
+{
+  "name": "MakeMKV",
+  "description": "Video format converter (transcoder)",
+  "version": "1.18.2",
+  "url": "https://www.makemkv.com/download/makemkv_v1.18.2_osx.dmg",
+  "bundleId": null,
+  "homepage": "https://www.makemkv.com/",
+  "fileName": "makemkv_v1.18.2_osx.dmg",
+  "sha": "aa0f3cdd936061846946b8e7ab3b735006287c27b8853b2b8b15d428789f981f"
+}

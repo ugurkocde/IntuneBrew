@@ -1,0 +1,10 @@
+{
+  "name": "Logseq",
+  "description": "Privacy-first, open-source platform for knowledge sharing and management",
+  "version": "0.10.15",
+  "url": "https://github.com/logseq/logseq/releases/download/0.10.15/logseq-darwin-arm64-0.10.15.dmg",
+  "bundleId": null,
+  "homepage": "https://github.com/logseq/logseq",
+  "fileName": "logseq-darwin-arm64-0.10.15.dmg",
+  "sha": "a0b83e5bdc2b8bb639cec5747cedcc0f0a8cd840ca6fa0d44242dc05312d27cb"
+}

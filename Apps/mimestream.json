@@ -1,0 +1,10 @@
+{
+  "name": "Mimestream",
+  "description": "Native app email client for Gmail",
+  "version": "1.9.4",
+  "url": "https://download.mimestream.com/Mimestream_1.9.4.dmg",
+  "bundleId": null,
+  "homepage": "https://mimestream.com/",
+  "fileName": "Mimestream_1.9.4.dmg",
+  "sha": "1ce491477486d5ad95378af5bd78216a76b69cce047b1043316ddb866c73c48f"
+}

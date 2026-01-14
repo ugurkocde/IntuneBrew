@@ -1,0 +1,10 @@
+{
+  "name": "Sensei",
+  "description": "Monitors the computer system and optimises its performance",
+  "version": "2.0",
+  "url": "https://cdn.cindori.com/apps/sensei/updates/2.0-125/Sensei.dmg",
+  "bundleId": "org.cindori.SenseiTool",
+  "homepage": "https://cindori.com/sensei",
+  "fileName": "Sensei.dmg",
+  "sha": "4d395c8c997489d49e8f763026a45a8c765023d3826fc3afe27ad20425656583"
+}

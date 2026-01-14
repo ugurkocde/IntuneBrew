@@ -1,0 +1,10 @@
+{
+  "name": "Another Redis Desktop Manager",
+  "description": "Redis desktop manager",
+  "version": "1.7.1",
+  "url": "https://github.com/qishibo/AnotherRedisDesktopManager/releases/download/v1.7.1/Another-Redis-Desktop-Manager-mac-1.7.1-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://github.com/qishibo/AnotherRedisDesktopManager/",
+  "fileName": "Another-Redis-Desktop-Manager-mac-1.7.1-arm64.dmg",
+  "sha": "1833e153cd7d9c66cc6d88ec1448b081dfeb5c122c3c65bcae47be1c4d760235"
+}

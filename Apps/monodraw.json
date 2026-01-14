@@ -1,0 +1,12 @@
+{
+  "name": "Monodraw",
+  "description": "Tool to create text-based art",
+  "version": "1.7.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/monodraw_1.7.1.pkg",
+  "bundleId": null,
+  "homepage": "https://monodraw.helftone.com/",
+  "fileName": "Monodraw-b118.zip",
+  "type": "app",
+  "previous_version": "1.7.1",
+  "sha": "630b671131b21d57d985403b5491979dfcf98509cd6d5bc675bf09e39c28ecdf"
+}

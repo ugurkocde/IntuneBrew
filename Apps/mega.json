@@ -1,0 +1,11 @@
+{
+  "name": "MEGA",
+  "description": "Molecular evolution statistical analysis and construction of phylogenetic trees",
+  "version": "12.1.2",
+  "url": "https://megasoftware.net/releases/MEGA_12.1.2_installer.pkg",
+  "bundleId": "com.igem.pkg.MEGA12",
+  "homepage": "https://megasoftware.net/",
+  "fileName": "MEGA_12.1.2_installer.pkg",
+  "type": "pkg",
+  "sha": "f77e003d8597d8827052e2fb787b3b0b3cc64825d6d4b8c468d3d7dbfab271e6"
+}

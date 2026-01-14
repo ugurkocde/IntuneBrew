@@ -1,0 +1,10 @@
+{
+  "name": "Kodi",
+  "description": "Free and open-source media player",
+  "version": "21.3-Omega",
+  "url": "https://mirrors.kodi.tv/releases/osx/arm64/kodi-21.3-Omega-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://kodi.tv/",
+  "fileName": "kodi-21.3-Omega-arm64.dmg",
+  "sha": "4ae19c4d20f41e81c8889302874179c5b8bf1d86bbb3c61b6a7e0d0f2e6cbf22"
+}

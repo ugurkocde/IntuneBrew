@@ -1,15 +1,15 @@
 {
   "name": "WineHQ-stable",
   "description": "Compatibility layer to run Windows applications",
-  "version": "10.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/winehqstable_10.0.pkg",
+  "version": "11.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/winehqstable_11.0.pkg",
   "bundleId": "org.winehq.wine-stable.wine",
   "homepage": "https://wiki.winehq.org/MacOS",
-  "fileName": "wine-stable-10.0-osx64.tar.xz",
+  "fileName": "winehqstable_11.0.pkg",
   "type": "app",
-  "sha": "64c83819dd162ac2142654f0330a609d1aa81e065be6e1b08a50a44acd12d0b2",
+  "sha": "d94a330eb0e4802966c1d9101e882d3288e4c5a676145a5203d96875994bc552",
   "changelog": "https://www.winehq.org/news/",
-  "previous_version": "10.0",
+  "previous_version": "11.0",
   "category": "Utilities",
   "publisher": "WineHQ"
 }
