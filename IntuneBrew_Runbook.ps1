@@ -18,9 +18,10 @@
     - Automatic logo management for deployed applications
 
 .NOTES
-    Version:        0.1
+    Version:        0.2
     Author:         Ugur Koc
     Creation Date:  2025-02-24
+    Updated:        2026-01-14
     Repository:     https://github.com/ugurkocde/IntuneBrew
     License:        MIT
 
@@ -61,7 +62,7 @@ function Write-Log {
     }
 }
 
-Write-Log "Starting IntuneBrew Automation Runbook - Version 0.1"
+Write-Log "Starting IntuneBrew Automation Runbook - Version 0.2"
 
 # Authentication START
 
@@ -74,10 +75,34 @@ $requiredPermissions = @(
 $AuthenticationMethod = Get-AutomationVariable -Name 'AuthenticationMethod'
 $CopyAssignments = Get-AutomationVariable -Name 'CopyAssignments' -ErrorAction SilentlyContinue
 
+# Get UseExistingIntuneApp setting - when true, updates existing apps instead of creating new ones (Issue #141)
+$UseExistingIntuneApp = Get-AutomationVariable -Name 'UseExistingIntuneApp' -ErrorAction SilentlyContinue
+if ($null -eq $UseExistingIntuneApp) { $UseExistingIntuneApp = $false }
+
+# Get MaxAppsPerRun setting - limits apps processed per run to prevent memory exhaustion (Issue #45)
+$MaxAppsPerRun = Get-AutomationVariable -Name 'MaxAppsPerRun' -ErrorAction SilentlyContinue
+if ($null -eq $MaxAppsPerRun -or $MaxAppsPerRun -le 0) { $MaxAppsPerRun = 10 }
+
 if ($CopyAssignments -eq $true) {
     Write-Log "Copy Assignments is set to true"
     $requiredPermissions += "Group.Read.All"
 }
+
+# Don't copy assignments if updating existing app (assignments are preserved on existing app)
+if ($UseExistingIntuneApp -eq $true) {
+    Write-Log "UseExistingIntuneApp is set to true - will update existing apps instead of creating new ones"
+    if ($CopyAssignments -eq $true) {
+        Write-Log "Note: CopyAssignments is ignored when UseExistingIntuneApp is enabled (assignments are preserved)" -Type "Warning"
+        $CopyAssignments = $false
+    }
+}
+
+# Log configuration summary
+Write-Log "Configuration Summary:"
+Write-Log "  - Authentication Method: $AuthenticationMethod"
+Write-Log "  - Copy Assignments: $CopyAssignments"
+Write-Log "  - Use Existing Intune App: $UseExistingIntuneApp"
+Write-Log "  - Max Apps Per Run: $MaxAppsPerRun"
 
 # Check if the AuthenticationMethod variable is empty
 if ([string]::IsNullOrWhiteSpace($AuthenticationMethod)) {
@@ -85,7 +110,7 @@ if ([string]::IsNullOrWhiteSpace($AuthenticationMethod)) {
     throw "Authentication method is required but not provided."
 }
 
-# Use Client Secret for authentication
+# Use Client Secret for authentication (Issues #108, #103)
 if ($AuthenticationMethod -eq "ClientSecret") {
     Write-Log "Using Client Secret for authentication"
 
@@ -102,52 +127,148 @@ if ($AuthenticationMethod -eq "ClientSecret") {
         throw
     }
 
-    # Authenticate using client secret from Automation Account
+    # Clear any existing connections to prevent token cache issues
     try {
+        Disconnect-MgGraph -ErrorAction SilentlyContinue
+    }
+    catch {
+        # Ignore disconnect errors - there may not be an existing connection
+    }
+
+    # Authenticate using client secret from Automation Account
+    $authSuccess = $false
+
+    # Primary method: PSCredential approach
+    try {
+        Write-Log "Attempting primary authentication method (PSCredential)..."
         $SecureClientSecret = ConvertTo-SecureString -String $clientSecret -AsPlainText -Force
         $ClientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $appId, $SecureClientSecret
         Connect-MgGraph -TenantId $tenantId -ClientSecretCredential $ClientSecretCredential -NoWelcome -ErrorAction Stop
         Write-Log "Successfully connected to Microsoft Graph using client secret authentication"
+        $authSuccess = $true
     }
     catch {
-        Write-Log "Failed to connect to Microsoft Graph using client secret. Error: $_" -Type "Error"
-        throw
+        Write-Log "Primary authentication method failed: $_" -Type "Warning"
+        Write-Log "Attempting fallback authentication method (direct token acquisition)..." -Type "Warning"
+
+        # Fallback method: Direct OAuth2 token acquisition via REST API
+        try {
+            $tokenBody = @{
+                Grant_Type    = "client_credentials"
+                Scope         = "https://graph.microsoft.com/.default"
+                Client_Id     = $appId
+                Client_Secret = $clientSecret
+            }
+            $tokenResponse = Invoke-RestMethod -Uri "https://login.microsoftonline.com/$tenantId/oauth2/v2.0/token" -Method Post -Body $tokenBody -ContentType "application/x-www-form-urlencoded"
+            $accessToken = $tokenResponse.access_token
+
+            # Connect with acquired token
+            $secureToken = ConvertTo-SecureString -String $accessToken -AsPlainText -Force
+            Connect-MgGraph -AccessToken $secureToken -NoWelcome -ErrorAction Stop
+            Write-Log "Successfully connected using fallback token acquisition method"
+            $authSuccess = $true
+        }
+        catch {
+            Write-Log "Fallback authentication also failed: $_" -Type "Error"
+        }
+    }
+
+    if (-not $authSuccess) {
+        Write-Log "Failed to authenticate with Microsoft Graph using client secret" -Type "Error"
+        Write-Log "Troubleshooting steps:" -Type "Error"
+        Write-Log "  1. Verify TenantId, AppId, and ClientSecret are correct" -Type "Error"
+        Write-Log "  2. Ensure ClientSecret has not expired" -Type "Error"
+        Write-Log "  3. Verify the app registration has required Graph API permissions" -Type "Error"
+        Write-Log "  4. Check if the ClientSecret value (not ID) is stored in automation variable" -Type "Error"
+        throw "Failed to authenticate with Microsoft Graph using client secret"
+    }
+
+    # Log module version for troubleshooting
+    $graphModule = Get-Module Microsoft.Graph.Authentication -ErrorAction SilentlyContinue
+    if ($graphModule) {
+        Write-Log "Microsoft.Graph.Authentication version: $($graphModule.Version)"
     }
 }
-# Use System Managed Identity for authentication
+# Use System Managed Identity for authentication (Issue #43 - improved error handling)
 elseif ($AuthenticationMethod -eq "SystemManagedIdentity") {
     Write-Log "Using System Managed Identity for authentication"
-    
+
     # Authenticate using System Managed Identity from Automation Account
     try {
         Connect-MgGraph -Identity -NoWelcome -ErrorAction Stop
         Write-Log "Successfully connected to Microsoft Graph using System Managed Identity"
+
+        # Log module version for troubleshooting
+        $graphModule = Get-Module Microsoft.Graph.Authentication -ErrorAction SilentlyContinue
+        if ($graphModule) {
+            Write-Log "Microsoft.Graph.Authentication version: $($graphModule.Version)"
+        }
     }
     catch {
         Write-Log "Failed to connect to Microsoft Graph using System Managed Identity. Error: $_" -Type "Error"
-        Write-Log "Make sure to enable the System Managed Identity using the guide in the README.md." -Type "Error"
+        Write-Log " " -Type "Error"
+        Write-Log "Troubleshooting steps for System Managed Identity:" -Type "Error"
+        Write-Log "  1. Go to Azure Portal > Automation Account > Identity" -Type "Error"
+        Write-Log "  2. Ensure 'System assigned' tab shows Status: On" -Type "Error"
+        Write-Log "  3. Click 'Azure role assignments' and verify Graph API permissions:" -Type "Error"
+        Write-Log "     - DeviceManagementApps.ReadWrite.All" -Type "Error"
+        Write-Log "     - Group.Read.All (if using CopyAssignments)" -Type "Error"
+        Write-Log "  4. If permissions were recently added, wait 5-10 minutes for propagation" -Type "Error"
+        Write-Log " " -Type "Error"
+        Write-Log "To assign permissions via PowerShell:" -Type "Error"
+        Write-Log "  Connect-AzAccount" -Type "Error"
+        Write-Log "  \$MI = Get-AzADServicePrincipal -DisplayName '<AutomationAccountName>'" -Type "Error"
+        Write-Log "  \$GraphApp = Get-AzADServicePrincipal -Filter \"appId eq '00000003-0000-0000-c000-000000000000'\"" -Type "Error"
+        Write-Log "  \$Permission = \$GraphApp.AppRole | Where-Object {{\$_.Value -eq 'DeviceManagementApps.ReadWrite.All'}}" -Type "Error"
+        Write-Log "  New-AzADServicePrincipalAppRoleAssignment -ServicePrincipalId \$MI.Id -ResourceId \$GraphApp.Id -AppRoleId \$Permission.Id" -Type "Error"
         throw
     }
 }
-# Use User Assigned Managed Identity for authentication
+# Use User Assigned Managed Identity for authentication (Issue #43 - improved error handling)
 elseif ($AuthenticationMethod -eq "UserAssignedManagedIdentity") {
     Write-Log "Using User Assigned Managed Identity for authentication"
 
-    # Authenticate using System Managed Identity from Automation Account
+    # Authenticate using User Assigned Managed Identity from Automation Account
     try {
         $appId = Get-AutomationVariable -Name 'AppId'
-        Connect-MgGraph -Identity -ClientId $appid -NoWelcome -ErrorAction Stop
+        if ([string]::IsNullOrWhiteSpace($appId)) {
+            throw "AppId automation variable is not set. Required for User Assigned Managed Identity."
+        }
+        Write-Log "Using Client ID: $appId"
+
+        Connect-MgGraph -Identity -ClientId $appId -NoWelcome -ErrorAction Stop
         Write-Log "Successfully connected to Microsoft Graph using User Assigned Managed Identity"
+
+        # Log module version for troubleshooting
+        $graphModule = Get-Module Microsoft.Graph.Authentication -ErrorAction SilentlyContinue
+        if ($graphModule) {
+            Write-Log "Microsoft.Graph.Authentication version: $($graphModule.Version)"
+        }
     }
     catch {
         Write-Log "Failed to connect to Microsoft Graph using User Assigned Managed Identity. Error: $_" -Type "Error"
-        Write-Log "Make sure to assign the User Assigned Identity to this Automation Account." -Type "Error"
+        Write-Log " " -Type "Error"
+        Write-Log "Troubleshooting steps for User Assigned Managed Identity:" -Type "Error"
+        Write-Log "  1. Go to Azure Portal > Automation Account > Identity" -Type "Error"
+        Write-Log "  2. Switch to 'User assigned' tab" -Type "Error"
+        Write-Log "  3. Click 'Add' and select your User Assigned Managed Identity" -Type "Error"
+        Write-Log "  4. Ensure the 'AppId' automation variable contains the Client ID of your User Assigned Identity" -Type "Error"
+        Write-Log "  5. Verify the User Assigned Identity has Graph API permissions:" -Type "Error"
+        Write-Log "     - DeviceManagementApps.ReadWrite.All" -Type "Error"
+        Write-Log "     - Group.Read.All (if using CopyAssignments)" -Type "Error"
+        Write-Log " " -Type "Error"
+        Write-Log "To find the Client ID of your User Assigned Identity:" -Type "Error"
+        Write-Log "  Go to Azure Portal > Managed Identities > Select your identity > Overview > Client ID" -Type "Error"
         throw
     }
 }
 
 # Check and display the current permissions
 $context = Get-MgContext
+if ($null -eq $context) {
+    Write-Log "Failed to get Graph context - authentication may have failed silently" -Type "Error"
+    throw "No active Graph connection. Please verify authentication succeeded."
+}
 $currentPermissions = $context.Scopes
 
 # Validate required permissions
@@ -169,50 +290,112 @@ Write-Log "All required permissions are present"
 Import-Module Microsoft.Graph.Authentication
 
 # Encrypts app file using AES encryption for Intune upload
+# Fixed with proper resource disposal to prevent memory leaks (Issue #45)
 function EncryptFile($sourceFile) {
     function GenerateKey() {
         $aesSp = [System.Security.Cryptography.AesCryptoServiceProvider]::new()
-        $aesSp.GenerateKey()
-        return $aesSp.Key
+        try {
+            $aesSp.GenerateKey()
+            return $aesSp.Key
+        }
+        finally {
+            $aesSp.Dispose()
+        }
     }
 
     $targetFile = "$sourceFile.bin"
-    $sha256 = [System.Security.Cryptography.SHA256]::Create()
-    $aes = [System.Security.Cryptography.Aes]::Create()
-    $aes.Key = GenerateKey
-    $hmac = [System.Security.Cryptography.HMACSHA256]::new()
-    $hmac.Key = GenerateKey
-    $hashLength = $hmac.HashSize / 8
 
-    $sourceStream = [System.IO.File]::OpenRead($sourceFile)
-    $sourceSha256 = $sha256.ComputeHash($sourceStream)
-    $sourceStream.Seek(0, "Begin") | Out-Null
-    $targetStream = [System.IO.File]::Open($targetFile, "Create")
+    # Initialize all disposable objects to $null for proper cleanup in finally block
+    $sha256 = $null
+    $aes = $null
+    $hmac = $null
+    $sourceStream = $null
+    $targetStream = $null
+    $cryptoStream = $null
+    $transform = $null
 
-    $targetStream.Write((New-Object byte[] $hashLength), 0, $hashLength)
-    $targetStream.Write($aes.IV, 0, $aes.IV.Length)
-    $transform = $aes.CreateEncryptor()
-    $cryptoStream = [System.Security.Cryptography.CryptoStream]::new($targetStream, $transform, "Write")
-    $sourceStream.CopyTo($cryptoStream)
-    $cryptoStream.FlushFinalBlock()
+    # Store values needed for return object before cleanup
+    $encryptionKey = $null
+    $fileDigest = $null
+    $initializationVector = $null
+    $macValue = $null
+    $macKey = $null
 
-    $targetStream.Seek($hashLength, "Begin") | Out-Null
-    $mac = $hmac.ComputeHash($targetStream)
-    $targetStream.Seek(0, "Begin") | Out-Null
-    $targetStream.Write($mac, 0, $mac.Length)
+    try {
+        $sha256 = [System.Security.Cryptography.SHA256]::Create()
+        $aes = [System.Security.Cryptography.Aes]::Create()
+        $aes.Key = GenerateKey
+        $hmac = [System.Security.Cryptography.HMACSHA256]::new()
+        $hmac.Key = GenerateKey
+        $hashLength = $hmac.HashSize / 8
 
-    $targetStream.Close()
-    $cryptoStream.Close()
-    $sourceStream.Close()
+        $sourceStream = [System.IO.File]::OpenRead($sourceFile)
+        $sourceSha256 = $sha256.ComputeHash($sourceStream)
+        $sourceStream.Seek(0, "Begin") | Out-Null
+        $targetStream = [System.IO.File]::Open($targetFile, "Create")
+
+        $targetStream.Write((New-Object byte[] $hashLength), 0, $hashLength)
+        $targetStream.Write($aes.IV, 0, $aes.IV.Length)
+        $transform = $aes.CreateEncryptor()
+        $cryptoStream = [System.Security.Cryptography.CryptoStream]::new($targetStream, $transform, "Write")
+        $sourceStream.CopyTo($cryptoStream)
+        $cryptoStream.FlushFinalBlock()
+
+        $targetStream.Seek($hashLength, "Begin") | Out-Null
+        $mac = $hmac.ComputeHash($targetStream)
+        $targetStream.Seek(0, "Begin") | Out-Null
+        $targetStream.Write($mac, 0, $mac.Length)
+
+        # Store values before cleanup
+        $encryptionKey = [System.Convert]::ToBase64String($aes.Key)
+        $fileDigest = [System.Convert]::ToBase64String($sourceSha256)
+        $initializationVector = [System.Convert]::ToBase64String($aes.IV)
+        $macValue = [System.Convert]::ToBase64String($mac)
+        $macKey = [System.Convert]::ToBase64String($hmac.Key)
+    }
+    finally {
+        # Dispose all resources in reverse order of creation
+        if ($cryptoStream) { $cryptoStream.Dispose() }
+        if ($targetStream) { $targetStream.Dispose() }
+        if ($sourceStream) { $sourceStream.Dispose() }
+        if ($transform) { $transform.Dispose() }
+        if ($hmac) { $hmac.Dispose() }
+        if ($aes) { $aes.Dispose() }
+        if ($sha256) { $sha256.Dispose() }
+    }
 
     return [PSCustomObject][ordered]@{
-        encryptionKey        = [System.Convert]::ToBase64String($aes.Key)
-        fileDigest           = [System.Convert]::ToBase64String($sourceSha256)
+        encryptionKey        = $encryptionKey
+        fileDigest           = $fileDigest
         fileDigestAlgorithm  = "SHA256"
-        initializationVector = [System.Convert]::ToBase64String($aes.IV)
-        mac                  = [System.Convert]::ToBase64String($mac)
-        macKey               = [System.Convert]::ToBase64String($hmac.Key)
+        initializationVector = $initializationVector
+        mac                  = $macValue
+        macKey               = $macKey
         profileIdentifier    = "ProfileVersion1"
+    }
+}
+
+# Aggressively clears memory to prevent Azure Automation sandbox suspension (Issue #45)
+function Clear-MemoryAggressively {
+    # Force garbage collection multiple times for thorough cleanup
+    for ($i = 0; $i -lt 3; $i++) {
+        [System.GC]::Collect()
+        [System.GC]::WaitForPendingFinalizers()
+    }
+
+    # Force full blocking collection
+    [System.GC]::Collect([System.GC]::MaxGeneration, [System.GCCollectionMode]::Forced, $true, $true)
+
+    # Log memory usage for monitoring
+    try {
+        $process = Get-Process -Id $PID -ErrorAction SilentlyContinue
+        if ($process) {
+            $memoryMB = [Math]::Round($process.WorkingSet64 / 1MB, 2)
+            Write-Log "Current memory usage: $memoryMB MB"
+        }
+    }
+    catch {
+        # Ignore errors when getting process info in Azure Automation
     }
 }
 
@@ -775,6 +958,7 @@ function Get-IntuneApps {
                 $intuneApps += [PSCustomObject]@{
                     Name          = $appName
                     IntuneVersion = 'Not in Intune'
+                    IntuneAppId   = $null
                     GitHubVersion = $appInfo.version
                 }
             }
@@ -880,6 +1064,13 @@ if ($appsToUpload.Count -eq 0) {
     exit 0
 }
 
+# Limit apps per run to prevent memory exhaustion in Azure Automation sandbox (Issue #45)
+if ($appsToUpload.Count -gt $MaxAppsPerRun) {
+    Write-Log "Limiting to $MaxAppsPerRun apps per run (out of $($appsToUpload.Count) available) to prevent memory issues." -Type "Warning"
+    Write-Log "Remaining apps will be processed in next scheduled run." -Type "Warning"
+    $appsToUpload = $appsToUpload | Select-Object -First $MaxAppsPerRun
+}
+
 # Check if there are apps to process
 if (($appsToUpload.Count) -eq 0) {
     Write-Log "`nNo new or updatable apps found. Exiting..." -Type "Info"
@@ -951,6 +1142,9 @@ $existingAssignments = $null # Initialize variable to store assignments for upda
 # Main script for uploading only newer apps
 foreach ($app in $appsToUpload) {
     try {
+        # Clear memory before processing each app to prevent Azure sandbox suspension (Issue #45)
+        Clear-MemoryAggressively
+
         Write-Log "Processing application: $($app.Name)"
         Write-Log "Current version in Intune: $($app.IntuneVersion)"
         Write-Log "Available version: $($app.GitHubVersion)"
@@ -1034,8 +1228,6 @@ foreach ($app in $appsToUpload) {
         $appBundleId = $appInfo.bundleId
         $appBundleVersion = $appInfo.version
 
-        Write-Log "🔄 Creating app in Intune..."
-
         # Determine app type based on file extension
         $appType = if ($appInfo.fileName -match '\.dmg$') {
             "macOSDmgApp"
@@ -1048,40 +1240,56 @@ foreach ($app in $appsToUpload) {
             continue
         }
 
-        $newAppPayload = @{
-            "@odata.type"                   = "#microsoft.graph.$appType"
-            displayName                     = $appDisplayName
-            description                     = $appDescription
-            publisher                       = $appPublisher
-            fileName                        = (Split-Path $appFilePath -Leaf)
-            informationUrl                  = $appHomepage
-            packageIdentifier               = $appBundleId
-            bundleId                        = $appBundleId
-            versionNumber                   = $appBundleVersion
-            minimumSupportedOperatingSystem = @{
-                "@odata.type" = "#microsoft.graph.macOSMinimumOperatingSystem"
-                v11_0         = $true
-            }
-        }
+        # Initialize the Intune app ID variable (Issue #141 - UseExistingIntuneApp support)
+        $intuneAppId = $null
 
-        if ($appType -eq "macOSDmgApp" -or $appType -eq "macOSPkgApp") {
-            $newAppPayload["primaryBundleId"] = $appBundleId
-            $newAppPayload["primaryBundleVersion"] = $appBundleVersion
-            $newAppPayload["includedApps"] = @(
-                @{
-                    "@odata.type" = "#microsoft.graph.macOSIncludedApp"
-                    bundleId      = $appBundleId
-                    bundleVersion = $appBundleVersion
+        # Check if we should update existing app or create new one
+        if ($UseExistingIntuneApp -and $app.IntuneAppId) {
+            # Use existing app ID - preserves assignments and other settings
+            $intuneAppId = $app.IntuneAppId
+            Write-Log "🔄 Updating Existing Intune App (ID: $intuneAppId)"
+            Write-Log "Note: Existing app settings (assignments, logo, etc.) will be preserved"
+        }
+        else {
+            # Create new app in Intune
+            Write-Log "🔄 Creating new app in Intune..."
+
+            $newAppPayload = @{
+                "@odata.type"                   = "#microsoft.graph.$appType"
+                displayName                     = $appDisplayName
+                description                     = $appDescription
+                publisher                       = $appPublisher
+                fileName                        = (Split-Path $appFilePath -Leaf)
+                informationUrl                  = $appHomepage
+                packageIdentifier               = $appBundleId
+                bundleId                        = $appBundleId
+                versionNumber                   = $appBundleVersion
+                minimumSupportedOperatingSystem = @{
+                    "@odata.type" = "#microsoft.graph.macOSMinimumOperatingSystem"
+                    v11_0         = $true
                 }
-            )
-        }
+            }
 
-        $createAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps"
-        $newApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($newAppPayload | ConvertTo-Json -Depth 10)
-        Write-Log "App created successfully (ID: $($newApp.id))"
+            if ($appType -eq "macOSDmgApp" -or $appType -eq "macOSPkgApp") {
+                $newAppPayload["primaryBundleId"] = $appBundleId
+                $newAppPayload["primaryBundleVersion"] = $appBundleVersion
+                $newAppPayload["includedApps"] = @(
+                    @{
+                        "@odata.type" = "#microsoft.graph.macOSIncludedApp"
+                        bundleId      = $appBundleId
+                        bundleVersion = $appBundleVersion
+                    }
+                )
+            }
+
+            $createAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps"
+            $newApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($newAppPayload | ConvertTo-Json -Depth 10)
+            $intuneAppId = $newApp.id
+            Write-Log "App created successfully (ID: $intuneAppId)"
+        }
 
         Write-Log "🔒 Processing content version..."
-        $contentVersionUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions"
+        $contentVersionUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions"
         $contentVersion = Invoke-MgGraphRequest -Method POST -Uri $contentVersionUri -Body "{}"
         Write-Log "Content version created (ID: $($contentVersion.id))"
 
@@ -1090,21 +1298,42 @@ foreach ($app in $appsToUpload) {
         if (Test-Path $encryptedFilePath) {
             Remove-Item $encryptedFilePath -Force
         }
+
+        # Store original file size before encryption (needed later for content file entry)
+        $originalFileSize = (Get-Item $appFilePath).Length
+        $originalFileName = [System.IO.Path]::GetFileName($appFilePath)
+
         $fileEncryptionInfo = EncryptFile $appFilePath
         Write-Log "File encryption complete"
+
+        # Store encrypted file size
+        $encryptedFileSize = (Get-Item "$appFilePath.bin").Length
+
+        # Delete original file immediately after encryption to free disk space and memory (Issue #45)
+        # The encrypted .bin file is all we need for upload
+        if (Test-Path $appFilePath) {
+            try {
+                Remove-Item $appFilePath -Force -ErrorAction Stop
+                Write-Log "Original file removed to free resources"
+            }
+            catch {
+                Write-Log "Warning: Could not remove original file immediately: $_" -Type "Warning"
+            }
+        }
+        Clear-MemoryAggressively
 
         try {
             Write-Log "⬆️ Uploading to Azure Storage..."
             $fileContent = @{
                 "@odata.type" = "#microsoft.graph.mobileAppContentFile"
-                name          = [System.IO.Path]::GetFileName($appFilePath)
-                size          = (Get-Item $appFilePath).Length
-                sizeEncrypted = (Get-Item "$appFilePath.bin").Length
+                name          = $originalFileName
+                size          = $originalFileSize
+                sizeEncrypted = $encryptedFileSize
                 isDependency  = $false
             }
 
             Write-Log "Creating content file entry in Intune..."
-            $contentFileUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files"  
+            $contentFileUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files"  
             $contentFile = Invoke-MgGraphRequest -Method POST -Uri $contentFileUri -Body ($fileContent | ConvertTo-Json)
             Write-Log "Content file entry created successfully"
 
@@ -1116,7 +1345,7 @@ foreach ($app in $appsToUpload) {
                 $waitAttempt++
                 Write-Log "Checking upload state (attempt $waitAttempt of $maxWaitAttempts)..."
                 
-                $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
+                $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
                 $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
                 
                 if ($waitAttempt -eq $maxWaitAttempts -and $fileStatus.uploadState -ne "azureStorageUriRequestSuccess") {
@@ -1137,14 +1366,14 @@ foreach ($app in $appsToUpload) {
         $commitData = @{
             fileEncryptionInfo = $fileEncryptionInfo
         }
-        $commitUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)/commit"
+        $commitUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)/commit"
         Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
 
         $retryCount = 0
         $maxRetries = 10
         do {
             Start-Sleep -Seconds 10
-            $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
+            $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
             $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
             if ($fileStatus.uploadState -eq "commitFileFailed") {
                 $commitResponse = Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
@@ -1157,10 +1386,10 @@ foreach ($app in $appsToUpload) {
         }
         else {
             Write-Log "Failed to commit file after $maxRetries attempts." -Type "Error"
-            exit 1
+            throw "Failed to commit file after $maxRetries attempts for $($app.Name)"
         }
 
-        $updateAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($newApp.id)"
+        $updateAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)"
         $updateData = @{
             "@odata.type"           = "#microsoft.graph.$appType"
             committedContentVersion = $contentVersion.id
@@ -1169,12 +1398,12 @@ foreach ($app in $appsToUpload) {
 
             # Apply assignments if the flag is set and assignments were successfully fetched
         if ($copyAssignments -and $existingAssignments -ne $null) {
-            Set-IntuneAppAssignments -NewAppId $newApp.id -Assignments $existingAssignments
+            Set-IntuneAppAssignments -NewAppId $intuneAppId -Assignments $existingAssignments
             # Now remove assignments from the old app version
             Remove-IntuneAppAssignments -OldAppId $app.IntuneAppId -AssignmentsToRemove $existingAssignments
         }
 
-        Add-IntuneAppLogo -appId $newApp.id -appName $appDisplayName -appType $appType -localLogoPath $logoPath
+        Add-IntuneAppLogo -appId $intuneAppId -appName $appDisplayName -appType $appType
 
         Write-Log "🧹 Cleaning up temporary files..."
         if (Test-Path $appFilePath) {
@@ -1215,7 +1444,7 @@ foreach ($app in $appsToUpload) {
         Write-Log "✅ Cleanup complete" -Type "Info"
 
         Write-Log "Successfully processed $($appInfo.name)"
-        Write-Log "App is now available in Intune Portal: https://intune.microsoft.com/#view/Microsoft_Intune_Apps/SettingsMenu/~/0/appId/$($newApp.id)"
+        Write-Log "App is now available in Intune Portal: https://intune.microsoft.com/#view/Microsoft_Intune_Apps/SettingsMenu/~/0/appId/$($intuneAppId)"
         Write-Log " " -Type "Info"
     }
     catch {

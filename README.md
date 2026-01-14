@@ -1100,6 +1100,24 @@ The `-ConfigFile` parameter enables non-interactive authentication, which is per
 
 Using the `-CopyAssignments` switch with `IntuneBrew.ps1` or creating a `CopyAssignments` Variable with Boolean Value `true` in your Azure Automation indicates that assignments from the existing app version should be copied to the new version.
 
+### Azure Automation Variables
+
+The following automation variables can be configured in your Azure Automation Account:
+
+| Variable | Type | Required | Default | Description |
+|----------|------|----------|---------|-------------|
+| `AuthenticationMethod` | String | Yes | - | Authentication method: `SystemManagedIdentity`, `UserAssignedManagedIdentity`, or `ClientSecret` |
+| `TenantId` | String | For ClientSecret | - | Azure AD Tenant ID |
+| `AppId` | String | For ClientSecret/UserAssigned | - | Application/Client ID |
+| `ClientSecret` | String | For ClientSecret | - | Client Secret value (not the ID) |
+| `CopyAssignments` | Boolean | No | false | Copy assignments from old app version to new version |
+| `UseExistingIntuneApp` | Boolean | No | false | Update existing apps instead of creating new ones (preserves assignments) |
+| `MaxAppsPerRun` | Integer | No | 10 | Maximum apps to process per run (prevents memory issues in Azure sandbox) |
+
+**Notes:**
+- When `UseExistingIntuneApp` is `true`, `CopyAssignments` is automatically ignored (assignments are preserved on the existing app)
+- `MaxAppsPerRun` helps prevent the Azure Automation sandbox from suspending due to the 1GB memory limit
+
 ### App JSON Structure
 
 Apps are defined in JSON files with the following structure:
