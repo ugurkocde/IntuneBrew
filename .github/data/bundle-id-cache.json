@@ -1,0 +1,6 @@
+{
+  "version": 1,
+  "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
+  "last_full_scan": null,
+  "apps": {}
+}
