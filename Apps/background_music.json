@@ -3,7 +3,7 @@
   "description": "Audio utility",
   "version": "0.4.3",
   "url": "https://github.com/kyleneideck/BackgroundMusic/releases/download/v0.4.3/BackgroundMusic-0.4.3.pkg",
-  "bundleId": "com.bearisdriving.BGM",
+  "bundleId": "com.bearisdriving.BGM.App",
   "homepage": "https://github.com/kyleneideck/BackgroundMusic",
   "fileName": "BackgroundMusic-0.4.3.pkg",
   "type": "pkg",

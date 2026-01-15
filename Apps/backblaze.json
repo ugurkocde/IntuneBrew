@@ -3,7 +3,7 @@
   "description": "Data backup and storage service",
   "version": "9.2.2.898",
   "url": "https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-9.2.2.898.dmg",
-  "bundleId": "com.backblaze.bzbmenu",
+  "bundleId": "com.backblaze.Backblaze",
   "homepage": "https://backblaze.com/",
   "fileName": "install_backblaze?file=bzinstall-mac-9.2.2.898.dmg",
   "sha": "a1a22004ad24f05585180e17d43f001034ed958d73b4f6522f8123177a5bd126",

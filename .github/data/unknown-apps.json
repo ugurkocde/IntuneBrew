@@ -1,42 +1,72 @@
 [
   {
-    "key": "alacritty",
-    "name": "Alacritty",
-    "currentBundleId": "org.alacritty"
-  },
-  {
-    "key": "amazon_chime",
-    "name": "Amazon Chime",
-    "currentBundleId": "com.amazon.Amazon-Chime"
-  },
-  {
-    "key": "amazon_q",
-    "name": "Amazon Q",
-    "currentBundleId": "com.amazon.codewhisperer"
-  },
-  {
-    "key": "another_redis_desktop_manager",
-    "name": "Another Redis Desktop Manager",
+    "key": "avidemux",
+    "name": "Avidemux",
     "currentBundleId": null
   },
   {
-    "key": "antinote",
-    "name": "Antinote",
-    "currentBundleId": "com.chabomakers.Antinote"
+    "key": "aws_client_vpn",
+    "name": "AWS Client VPN",
+    "currentBundleId": "com.amazon.awsvpnclient"
   },
   {
-    "key": "anydo",
-    "name": "Any.do",
-    "currentBundleId": "com.anydo.mac"
+    "key": "aws_corretto_jdk",
+    "name": "AWS Corretto JDK",
+    "currentBundleId": "com.amazon.corretto.21"
   },
   {
-    "key": "apidog",
-    "name": "Apidog",
-    "currentBundleId": "com.apidog.app"
+    "key": "azul_zulu_java_standard_edition_development_kit",
+    "name": "Azul Zulu Java Standard Edition Development Kit",
+    "currentBundleId": "com.azulsystems.zulu.23"
   },
   {
-    "key": "appflowy",
-    "name": "AppFlowy",
+    "key": "batfi",
+    "name": "BatFi",
+    "currentBundleId": "software.micropixels.BatFi"
+  },
+  {
+    "key": "beeper",
+    "name": "Beeper",
+    "currentBundleId": "im.beeper"
+  },
+  {
+    "key": "binary_ninja",
+    "name": "Binary Ninja",
+    "currentBundleId": "com.vector35.binaryninja"
+  },
+  {
+    "key": "birdfont",
+    "name": "BirdFont",
+    "currentBundleId": null
+  },
+  {
+    "key": "biscuit",
+    "name": "Biscuit",
+    "currentBundleId": null
+  },
+  {
+    "key": "bluefish",
+    "name": "Bluefish",
+    "currentBundleId": null
+  },
+  {
+    "key": "bome_network",
+    "name": "Bome Network",
+    "currentBundleId": "com.bome.network"
+  },
+  {
+    "key": "boxcryptor",
+    "name": "Boxcryptor",
+    "currentBundleId": "com.boxcryptor.ios"
+  },
+  {
+    "key": "breaktimer",
+    "name": "BreakTimer",
+    "currentBundleId": "com.tomjwatson.breaktimer"
+  },
+  {
+    "key": "butler",
+    "name": "Butler",
     "currentBundleId": null
   }
 ]

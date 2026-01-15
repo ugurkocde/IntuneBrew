@@ -3,7 +3,7 @@
   "description": "Contact manager focusing on efficiency",
   "version": "2026.1.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/busycontacts_2026.1.1.pkg",
-  "bundleId": "com.busymac.busycontacts.pkg",
+  "bundleId": "com.busymac.busycontacts",
   "homepage": "https://www.busymac.com/busycontacts/index.html",
   "fileName": "busycontacts_2026.1.1.pkg",
   "type": "app",

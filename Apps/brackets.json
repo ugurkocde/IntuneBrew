@@ -3,7 +3,7 @@
   "description": "Open-source code editor for web-development",
   "version": "2.2.0",
   "url": "https://github.com/brackets-cont/brackets/releases/download/v2.2.0/brackets.2.2.0.dmg",
-  "bundleId": null,
+  "bundleId": "io.brackets.appshell",
   "homepage": "https://brackets.io/",
   "fileName": "brackets.2.2.0.dmg",
   "sha": "a8864dd5cc4591d885b0264e88ee2bc9a05962c29369b7c5c1f2f269c50fe1b5",

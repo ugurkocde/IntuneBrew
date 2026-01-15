@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-15T10:12:27.795Z",
+  "last_full_scan": "2026-01-15T11:47:25.620Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -354,6 +354,356 @@
       "status": "updated",
       "source": "api",
       "name": "aText"
+    },
+    "atlassian_sourcetree": {
+      "last_checked": "2026-01-15T11:12:29.544Z",
+      "bundle_id": "com.torusknot.SourceTreeNotMAS",
+      "status": "verified",
+      "source": "api",
+      "name": "Atlassian SourceTree"
+    },
+    "audacity": {
+      "last_checked": "2026-01-15T11:13:08.196Z",
+      "bundle_id": "org.audacityteam.audacity",
+      "status": "verified",
+      "source": "api",
+      "name": "Audacity"
+    },
+    "audio_hijack": {
+      "last_checked": "2026-01-15T11:13:42.737Z",
+      "bundle_id": "com.rogueamoeba.audiohijack",
+      "status": "verified",
+      "source": "api",
+      "name": "Audio Hijack"
+    },
+    "audirvana": {
+      "last_checked": "2026-01-15T11:14:08.042Z",
+      "bundle_id": "com.audirvana.Audirvana-Studio",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Audirvana"
+    },
+    "autodesk_fusion_360": {
+      "last_checked": "2026-01-15T11:14:33.351Z",
+      "bundle_id": "com.autodesk.fusion360",
+      "previous_bundle_id": "com.autodesk.dls.streamer.scriptapp.Autodesk-Fusion",
+      "status": "updated",
+      "source": "api",
+      "name": "Autodesk Fusion 360"
+    },
+    "avidemux": {
+      "last_checked": "2026-01-15T11:15:10.798Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Avidemux"
+    },
+    "aws_client_vpn": {
+      "last_checked": "2026-01-15T11:15:43.066Z",
+      "bundle_id": "com.amazon.awsvpnclient",
+      "status": "unknown",
+      "name": "AWS Client VPN"
+    },
+    "aws_corretto_jdk": {
+      "last_checked": "2026-01-15T11:16:43.179Z",
+      "bundle_id": "com.amazon.corretto.21",
+      "status": "unknown",
+      "name": "AWS Corretto JDK"
+    },
+    "azul_zulu_java_standard_edition_development_kit": {
+      "last_checked": "2026-01-15T11:17:27.303Z",
+      "bundle_id": "com.azulsystems.zulu.23",
+      "status": "unknown",
+      "name": "Azul Zulu Java Standard Edition Development Kit"
+    },
+    "azure_data_studio": {
+      "last_checked": "2026-01-15T11:17:58.805Z",
+      "bundle_id": "com.azuredatastudio.oss",
+      "status": "verified",
+      "source": "api",
+      "name": "Azure Data Studio"
+    },
+    "backblaze": {
+      "last_checked": "2026-01-15T11:18:30.822Z",
+      "bundle_id": "com.backblaze.Backblaze",
+      "previous_bundle_id": "com.backblaze.bzbmenu",
+      "status": "updated",
+      "source": "api",
+      "name": "Backblaze"
+    },
+    "background_music": {
+      "last_checked": "2026-01-15T11:19:40.575Z",
+      "bundle_id": "com.bearisdriving.BGM.App",
+      "previous_bundle_id": "com.bearisdriving.BGM",
+      "status": "updated",
+      "source": "api",
+      "name": "Background Music"
+    },
+    "badgeify": {
+      "last_checked": "2026-01-15T11:21:05.581Z",
+      "bundle_id": "studio.techflow.badgeify",
+      "status": "verified",
+      "source": "api",
+      "name": "Badgeify"
+    },
+    "bambu_studio": {
+      "last_checked": "2026-01-15T11:21:25.860Z",
+      "bundle_id": "com.bambulab.bambu-studio",
+      "status": "verified",
+      "source": "api",
+      "name": "Bambu Studio"
+    },
+    "bartender": {
+      "last_checked": "2026-01-15T11:21:58.140Z",
+      "bundle_id": "com.surteesstudios.Bartender",
+      "status": "verified",
+      "source": "api",
+      "name": "Bartender"
+    },
+    "basecamp": {
+      "last_checked": "2026-01-15T11:22:28.543Z",
+      "bundle_id": "com.basecamp.basecamp3",
+      "status": "verified",
+      "source": "api",
+      "name": "Basecamp"
+    },
+    "batfi": {
+      "last_checked": "2026-01-15T11:23:02.134Z",
+      "bundle_id": "software.micropixels.BatFi",
+      "status": "unknown",
+      "name": "BatFi"
+    },
+    "bbedit": {
+      "last_checked": "2026-01-15T11:23:31.990Z",
+      "bundle_id": "com.barebones.bbedit",
+      "status": "verified",
+      "source": "api",
+      "name": "BBEdit"
+    },
+    "beekeeper_studio": {
+      "last_checked": "2026-01-15T11:24:42.921Z",
+      "bundle_id": "io.beekeeperstudio.desktop",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Beekeeper Studio"
+    },
+    "beeper": {
+      "last_checked": "2026-01-15T11:25:18.798Z",
+      "bundle_id": "im.beeper",
+      "status": "unknown",
+      "name": "Beeper"
+    },
+    "betterdisplay": {
+      "last_checked": "2026-01-15T11:25:50.821Z",
+      "bundle_id": "pro.betterdisplay.BetterDisplay",
+      "status": "verified",
+      "source": "api",
+      "name": "BetterDisplay"
+    },
+    "bettermouse": {
+      "last_checked": "2026-01-15T11:26:23.819Z",
+      "bundle_id": "com.naotanhaocan.BetterMouse",
+      "status": "verified",
+      "source": "api",
+      "name": "BetterMouse"
+    },
+    "bettertouchtool": {
+      "last_checked": "2026-01-15T11:26:47.680Z",
+      "bundle_id": "com.hegenberg.BetterTouchTool",
+      "status": "verified",
+      "source": "api",
+      "name": "BetterTouchTool"
+    },
+    "betterzip": {
+      "last_checked": "2026-01-15T11:27:04.813Z",
+      "bundle_id": "com.macitbetter.betterzip",
+      "status": "verified",
+      "source": "api",
+      "name": "BetterZip"
+    },
+    "beyond_compare": {
+      "last_checked": "2026-01-15T11:27:23.467Z",
+      "bundle_id": "com.ScooterSoftware.BeyondCompare",
+      "status": "verified",
+      "source": "api",
+      "name": "Beyond Compare"
+    },
+    "binary_ninja": {
+      "last_checked": "2026-01-15T11:27:42.581Z",
+      "bundle_id": "com.vector35.binaryninja",
+      "status": "unknown",
+      "name": "Binary Ninja"
+    },
+    "birdfont": {
+      "last_checked": "2026-01-15T11:29:23.023Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "BirdFont"
+    },
+    "biscuit": {
+      "last_checked": "2026-01-15T11:30:26.583Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Biscuit"
+    },
+    "bitwarden": {
+      "last_checked": "2026-01-15T11:31:04.603Z",
+      "bundle_id": "com.bitwarden.desktop",
+      "status": "verified",
+      "source": "api",
+      "name": "Bitwarden"
+    },
+    "bitwig_studio": {
+      "last_checked": "2026-01-15T11:32:11.950Z",
+      "bundle_id": "com.bitwig.studio",
+      "status": "verified",
+      "source": "api",
+      "name": "Bitwig Studio"
+    },
+    "blender": {
+      "last_checked": "2026-01-15T11:32:46.702Z",
+      "bundle_id": "org.blenderfoundation.blender",
+      "previous_bundle_id": "org.blenderfoundation.blender.savedState",
+      "status": "updated",
+      "source": "api",
+      "name": "Blender"
+    },
+    "bleunlock": {
+      "last_checked": "2026-01-15T11:33:38.347Z",
+      "bundle_id": "jp.sone.BLEUnlock",
+      "status": "verified",
+      "source": "api",
+      "name": "BLEUnlock"
+    },
+    "blip": {
+      "last_checked": "2026-01-15T11:34:32.005Z",
+      "bundle_id": "net.blip.macos",
+      "status": "verified",
+      "source": "api",
+      "name": "blip"
+    },
+    "blizzard_battlenet": {
+      "last_checked": "2026-01-15T11:35:19.629Z",
+      "bundle_id": "net.battle.app",
+      "previous_bundle_id": "com.blizzard.social",
+      "status": "updated",
+      "source": "api",
+      "name": "Blizzard Battle.net"
+    },
+    "bluefish": {
+      "last_checked": "2026-01-15T11:36:03.265Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Bluefish"
+    },
+    "blurscreen": {
+      "last_checked": "2026-01-15T11:36:47.319Z",
+      "bundle_id": "com.blurscreen",
+      "previous_bundle_id": "com.sanskar.blurscreen",
+      "status": "updated",
+      "source": "api",
+      "name": "BlurScreen"
+    },
+    "boltai": {
+      "last_checked": "2026-01-15T11:37:20.435Z",
+      "bundle_id": "co.podzim.BoltGPT",
+      "status": "verified",
+      "source": "api",
+      "name": "BoltAI"
+    },
+    "bome_network": {
+      "last_checked": "2026-01-15T11:38:37.346Z",
+      "bundle_id": "com.bome.network",
+      "status": "unknown",
+      "name": "Bome Network"
+    },
+    "boop": {
+      "last_checked": "2026-01-15T11:39:15.942Z",
+      "bundle_id": "com.okatbest.boop",
+      "status": "verified",
+      "source": "api",
+      "name": "Boop"
+    },
+    "box_drive": {
+      "last_checked": "2026-01-15T11:39:34.752Z",
+      "bundle_id": "com.box.desktop",
+      "previous_bundle_id": "com.box.desktop.installer.*",
+      "status": "updated",
+      "source": "api",
+      "name": "Box Drive"
+    },
+    "box_tools": {
+      "last_checked": "2026-01-15T11:40:26.392Z",
+      "bundle_id": "box.com.Box-Edit",
+      "previous_bundle_id": "com.Box.Box-Edit",
+      "status": "updated",
+      "source": "api",
+      "name": "Box Tools"
+    },
+    "boxcryptor": {
+      "last_checked": "2026-01-15T11:41:22.960Z",
+      "bundle_id": "com.boxcryptor.ios",
+      "status": "unknown",
+      "name": "Boxcryptor"
+    },
+    "brackets": {
+      "last_checked": "2026-01-15T11:42:27.830Z",
+      "bundle_id": "io.brackets.appshell",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Brackets"
+    },
+    "brave": {
+      "last_checked": "2026-01-15T11:42:53.885Z",
+      "bundle_id": "com.brave.Browser",
+      "status": "verified",
+      "source": "api",
+      "name": "Brave"
+    },
+    "breaktimer": {
+      "last_checked": "2026-01-15T11:43:47.152Z",
+      "bundle_id": "com.tomjwatson.breaktimer",
+      "status": "unknown",
+      "name": "BreakTimer"
+    },
+    "bruno": {
+      "last_checked": "2026-01-15T11:44:15.796Z",
+      "bundle_id": "com.usebruno.app",
+      "status": "verified",
+      "source": "api",
+      "name": "Bruno"
+    },
+    "bunch": {
+      "last_checked": "2026-01-15T11:44:25.266Z",
+      "bundle_id": "com.brettterpstra.Bunch",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Bunch"
+    },
+    "busycal": {
+      "last_checked": "2026-01-15T11:44:57.126Z",
+      "bundle_id": "com.busymac.busycal3",
+      "previous_bundle_id": "com.busymac.busycal3.pkg",
+      "status": "updated",
+      "source": "api",
+      "name": "BusyCal"
+    },
+    "busycontacts": {
+      "last_checked": "2026-01-15T11:45:30.147Z",
+      "bundle_id": "com.busymac.busycontacts",
+      "previous_bundle_id": "com.busymac.busycontacts.pkg",
+      "status": "updated",
+      "source": "api",
+      "name": "BusyContacts"
+    },
+    "butler": {
+      "last_checked": "2026-01-15T11:47:25.620Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Butler"
     }
   }
 }

@@ -3,7 +3,7 @@
   "description": "Create and edit any file directly from a web browser",
   "version": "4.31",
   "url": "https://e3.boxcdn.net/box-installers/boxedit/mac/currentrelease/BoxToolsInstaller.dmg",
-  "bundleId": "com.Box.Box-Edit",
+  "bundleId": "box.com.Box-Edit",
   "homepage": "https://www.box.com/resources/downloads",
   "fileName": "BoxToolsInstaller.dmg",
   "sha": "5fcd1e85669ca3a851f5b328801b3c7f16fb71b308c7ab423b5d6638f79b00f8",
