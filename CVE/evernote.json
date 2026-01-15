@@ -1,7 +1,7 @@
 {
   "app_name": "Evernote",
   "app_key": "evernote",
-  "last_updated": "2026-01-14",
+  "last_updated": "2026-01-15",
   "total_cves": 10,
   "summary": {
     "critical": 1,
