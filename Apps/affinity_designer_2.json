@@ -3,7 +3,7 @@
   "description": "Professional graphic design software",
   "version": "2.6.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/affinity_designer_2_2.6.5.pkg",
-  "bundleId": null,
+  "bundleId": "com.seriflabs.affinitydesigner2",
   "homepage": "https://affinity.serif.com/en-us/designer/",
   "fileName": "Affinity%20Designer%202%20Affinity%20Store%203782.zip",
   "type": "app",

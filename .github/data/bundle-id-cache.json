@@ -1,6 +1,359 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": null,
-  "apps": {}
+  "last_full_scan": "2026-01-15T10:12:27.795Z",
+  "apps": {
+    "1password": {
+      "last_checked": "2026-01-15T09:38:57.586Z",
+      "bundle_id": "com.1password.1password",
+      "status": "verified",
+      "source": "api",
+      "name": "1Password"
+    },
+    "8x8_work": {
+      "last_checked": "2026-01-15T09:39:50.880Z",
+      "bundle_id": "com.electron.8x8---virtual-office",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "8x8_work"
+    },
+    "a_better_finder_rename": {
+      "last_checked": "2026-01-15T09:40:58.923Z",
+      "bundle_id": "net.publicspace.abfr12",
+      "status": "verified",
+      "source": "api",
+      "name": "A Better Finder Rename"
+    },
+    "abstract": {
+      "last_checked": "2026-01-15T09:40:59.023Z",
+      "bundle_id": "com.elasticprojects.Abstract",
+      "previous_bundle_id": "com.elasticprojects.abstract-desktop",
+      "status": "updated",
+      "source": "override",
+      "name": "Abstract"
+    },
+    "acorn": {
+      "last_checked": "2026-01-15T09:41:51.661Z",
+      "bundle_id": "com.flyingmeat.Acorn8",
+      "status": "verified",
+      "source": "api",
+      "name": "Acorn"
+    },
+    "acronis_true_image": {
+      "last_checked": "2026-01-15T09:42:59.678Z",
+      "bundle_id": "com.acronis.backup",
+      "previous_bundle_id": "com.acronis.CyberProtectHomeOffice",
+      "status": "updated",
+      "source": "api",
+      "name": "Acronis True Image"
+    },
+    "adguard": {
+      "last_checked": "2026-01-15T09:44:21.440Z",
+      "bundle_id": "com.adguard.mac.adguard",
+      "previous_bundle_id": "com.adguard.mac.adguard-pkg",
+      "status": "updated",
+      "source": "api",
+      "name": "AdGuard"
+    },
+    "adobe_acrobat_pro_dc": {
+      "last_checked": "2026-01-15T09:44:43.070Z",
+      "bundle_id": "com.adobe.Acrobat.Pro",
+      "status": "verified",
+      "source": "api",
+      "name": "Adobe Acrobat Pro DC"
+    },
+    "adobe_acrobat_reader": {
+      "last_checked": "2026-01-15T09:45:30.695Z",
+      "bundle_id": "com.adobe.Reader",
+      "status": "verified",
+      "source": "api",
+      "name": "Adobe Acrobat Reader"
+    },
+    "adobe_creative_cloud": {
+      "last_checked": "2026-01-15T09:46:03.507Z",
+      "bundle_id": "com.adobe.acc.AdobeCreativeCloud",
+      "status": "verified",
+      "source": "api",
+      "name": "Adobe Creative Cloud"
+    },
+    "advanced_renamer": {
+      "last_checked": "2026-01-15T09:46:22.053Z",
+      "bundle_id": "com.HulubuluSoftware.AdvancedRenamer",
+      "status": "verified",
+      "source": "api",
+      "name": "Advanced Renamer"
+    },
+    "affinity_designer_2": {
+      "last_checked": "2026-01-15T09:46:49.212Z",
+      "bundle_id": "com.seriflabs.affinitydesigner2",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Affinity Designer 2"
+    },
+    "affinity_photo_2": {
+      "last_checked": "2026-01-15T09:47:27.591Z",
+      "bundle_id": "com.seriflabs.affinityphoto2",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Affinity Photo 2"
+    },
+    "affinity_publisher_2": {
+      "last_checked": "2026-01-15T09:47:51.821Z",
+      "bundle_id": "com.seriflabs.affinitypublisher2",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Affinity Publisher 2"
+    },
+    "airbuddy": {
+      "last_checked": "2026-01-15T09:48:22.257Z",
+      "bundle_id": "codes.rambo.AirBuddy",
+      "status": "verified",
+      "source": "api",
+      "name": "AirBuddy"
+    },
+    "aircall": {
+      "last_checked": "2026-01-15T09:48:53.878Z",
+      "bundle_id": "io.aircall.phone",
+      "status": "verified",
+      "source": "api",
+      "name": "Aircall"
+    },
+    "airfoil": {
+      "last_checked": "2026-01-15T09:49:40.000Z",
+      "bundle_id": "com.rogueamoeba.Airfoil",
+      "status": "verified",
+      "source": "api",
+      "name": "Airfoil"
+    },
+    "airparrot": {
+      "last_checked": "2026-01-15T09:50:11.976Z",
+      "bundle_id": "com.squirrels.AirParrot-3",
+      "status": "verified",
+      "source": "api",
+      "name": "AirParrot"
+    },
+    "airtable": {
+      "last_checked": "2026-01-15T09:50:51.230Z",
+      "bundle_id": "com.FormaGrid.Airtable",
+      "status": "verified",
+      "source": "api",
+      "name": "Airtable"
+    },
+    "airy": {
+      "last_checked": "2026-01-15T09:51:21.910Z",
+      "bundle_id": "com.eltima.Airy",
+      "status": "verified",
+      "source": "api",
+      "name": "Airy"
+    },
+    "alacritty": {
+      "last_checked": "2026-01-15T09:52:02.082Z",
+      "bundle_id": "org.alacritty",
+      "status": "unknown",
+      "name": "Alacritty"
+    },
+    "alcove": {
+      "last_checked": "2026-01-15T09:52:45.556Z",
+      "bundle_id": "com.henrikruscon.Alcove",
+      "status": "verified",
+      "source": "api",
+      "name": "Alcove"
+    },
+    "aldente": {
+      "last_checked": "2026-01-15T09:53:37.973Z",
+      "bundle_id": "com.apphousekitchen.aldente-pro",
+      "status": "verified",
+      "source": "api",
+      "name": "AlDente"
+    },
+    "alfred": {
+      "last_checked": "2026-01-15T09:54:13.913Z",
+      "bundle_id": "com.runningwithcrayons.Alfred",
+      "status": "verified",
+      "source": "api",
+      "name": "Alfred"
+    },
+    "altair_graphql_client": {
+      "last_checked": "2026-01-15T09:54:45.251Z",
+      "bundle_id": "com.xkoji.altair",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Altair GraphQL Client"
+    },
+    "alttab": {
+      "last_checked": "2026-01-15T09:55:25.293Z",
+      "bundle_id": "com.lwouis.alt-tab-macos",
+      "status": "verified",
+      "source": "api",
+      "name": "AltTab"
+    },
+    "amadine": {
+      "last_checked": "2026-01-15T09:56:09.653Z",
+      "bundle_id": "com.belightsoft.Amadine",
+      "status": "verified",
+      "source": "api",
+      "name": "Amadine"
+    },
+    "amazon_chime": {
+      "last_checked": "2026-01-15T09:56:54.138Z",
+      "bundle_id": "com.amazon.Amazon-Chime",
+      "status": "unknown",
+      "name": "Amazon Chime"
+    },
+    "amazon_music": {
+      "last_checked": "2026-01-15T09:58:02.341Z",
+      "bundle_id": "com.amazon.music",
+      "status": "verified",
+      "source": "api",
+      "name": "Amazon Music"
+    },
+    "amazon_q": {
+      "last_checked": "2026-01-15T09:58:51.273Z",
+      "bundle_id": "com.amazon.codewhisperer",
+      "status": "unknown",
+      "name": "Amazon Q"
+    },
+    "amazon_workspaces": {
+      "last_checked": "2026-01-15T09:59:18.564Z",
+      "bundle_id": "com.amazon.workspaces",
+      "status": "verified",
+      "source": "api",
+      "name": "Amazon Workspaces"
+    },
+    "android_studio": {
+      "last_checked": "2026-01-15T09:59:44.070Z",
+      "bundle_id": "com.google.android.studio",
+      "status": "verified",
+      "source": "api",
+      "name": "Android Studio"
+    },
+    "angry_ip_scanner": {
+      "last_checked": "2026-01-15T10:00:29.130Z",
+      "bundle_id": "net.azib.ipscan",
+      "status": "verified",
+      "source": "api",
+      "name": "Angry IP Scanner"
+    },
+    "anki": {
+      "last_checked": "2026-01-15T10:01:10.212Z",
+      "bundle_id": "net.ankiweb.dtop",
+      "status": "verified",
+      "source": "api",
+      "name": "Anki"
+    },
+    "another_redis_desktop_manager": {
+      "last_checked": "2026-01-15T10:02:21.503Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Another Redis Desktop Manager"
+    },
+    "antinote": {
+      "last_checked": "2026-01-15T10:03:25.246Z",
+      "bundle_id": "com.chabomakers.Antinote",
+      "status": "unknown",
+      "name": "Antinote"
+    },
+    "anydesk": {
+      "last_checked": "2026-01-15T10:04:01.693Z",
+      "bundle_id": "com.philandro.anydesk",
+      "status": "verified",
+      "source": "api",
+      "name": "AnyDesk"
+    },
+    "anydo": {
+      "last_checked": "2026-01-15T10:04:44.518Z",
+      "bundle_id": "com.anydo.mac",
+      "status": "unknown",
+      "name": "Any.do"
+    },
+    "apidog": {
+      "last_checked": "2026-01-15T10:05:29.963Z",
+      "bundle_id": "com.apidog.app",
+      "status": "unknown",
+      "name": "Apidog"
+    },
+    "apifox": {
+      "last_checked": "2026-01-15T10:05:56.963Z",
+      "bundle_id": "cn.apifox.app",
+      "status": "verified",
+      "source": "api",
+      "name": "Apifox"
+    },
+    "apparency": {
+      "last_checked": "2026-01-15T10:06:09.685Z",
+      "bundle_id": "com.mothersruin.Apparency",
+      "status": "verified",
+      "source": "api",
+      "name": "Apparency"
+    },
+    "appflowy": {
+      "last_checked": "2026-01-15T10:07:24.402Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "AppFlowy"
+    },
+    "appgate_sdp_client_for_macos": {
+      "last_checked": "2026-01-15T10:08:37.164Z",
+      "bundle_id": "com.appgate.sdp",
+      "previous_bundle_id": "com.appgate.pkg.appgatetun.component",
+      "status": "updated",
+      "source": "api",
+      "name": "AppGate SDP Client for macOS"
+    },
+    "arc": {
+      "last_checked": "2026-01-15T10:08:58.972Z",
+      "bundle_id": "company.thebrowser.Browser",
+      "status": "verified",
+      "source": "api",
+      "name": "Arc"
+    },
+    "archaeology": {
+      "last_checked": "2026-01-15T10:09:19.011Z",
+      "bundle_id": "com.mothersruin.Archaeology",
+      "status": "verified",
+      "source": "api",
+      "name": "Archaeology"
+    },
+    "arduino_ide": {
+      "last_checked": "2026-01-15T10:09:52.355Z",
+      "bundle_id": "cc.arduino.IDE2",
+      "status": "verified",
+      "source": "api",
+      "name": "Arduino IDE"
+    },
+    "arq": {
+      "last_checked": "2026-01-15T10:10:29.639Z",
+      "bundle_id": "com.haystacksoftware.Arq",
+      "status": "verified",
+      "source": "api",
+      "name": "Arq"
+    },
+    "asana": {
+      "last_checked": "2026-01-15T10:10:56.197Z",
+      "bundle_id": "com.electron.asana",
+      "status": "verified",
+      "source": "api",
+      "name": "Asana"
+    },
+    "asset_catalog_tinkerer": {
+      "last_checked": "2026-01-15T10:11:47.577Z",
+      "bundle_id": "br.com.guilhermerambo.Asset-Catalog-Tinkerer",
+      "status": "verified",
+      "source": "api",
+      "name": "Asset Catalog Tinkerer"
+    },
+    "atext": {
+      "last_checked": "2026-01-15T10:12:27.696Z",
+      "bundle_id": "com.trankynam.aText",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "aText"
+    }
+  }
 }

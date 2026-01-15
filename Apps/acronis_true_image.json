@@ -3,7 +3,7 @@
   "description": "Full image backup and cloning software",
   "version": "29.2",
   "url": "https://dl.acronis.com/u/AcronisTrueImage_42065.dmg",
-  "bundleId": "com.acronis.CyberProtectHomeOffice",
+  "bundleId": "com.acronis.backup",
   "homepage": "https://www.acronis.com/products/true-image/",
   "fileName": "AcronisTrueImage_42065.dmg",
   "sha": "c9ceaac10458342db211f91a18c776f9cba24f75a6828c72e425f0afecf632c2",

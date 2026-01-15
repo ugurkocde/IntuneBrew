@@ -3,7 +3,7 @@
   "description": "Software-defined perimeter for secure network access",
   "version": "6.6.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/appgate_sdp_client_for_macos_6.6.0.pkg",
-  "bundleId": "com.appgate.pkg.appgatetun.component",
+  "bundleId": "com.appgate.sdp",
   "homepage": "https://www.appgate.com/support/software-defined-perimeter-support",
   "fileName": "Appgate-SDP-6.6.0-Installer.dmg",
   "type": "pkg_in_dmg",

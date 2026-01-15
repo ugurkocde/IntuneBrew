@@ -1,0 +1,42 @@
+[
+  {
+    "key": "alacritty",
+    "name": "Alacritty",
+    "currentBundleId": "org.alacritty"
+  },
+  {
+    "key": "amazon_chime",
+    "name": "Amazon Chime",
+    "currentBundleId": "com.amazon.Amazon-Chime"
+  },
+  {
+    "key": "amazon_q",
+    "name": "Amazon Q",
+    "currentBundleId": "com.amazon.codewhisperer"
+  },
+  {
+    "key": "another_redis_desktop_manager",
+    "name": "Another Redis Desktop Manager",
+    "currentBundleId": null
+  },
+  {
+    "key": "antinote",
+    "name": "Antinote",
+    "currentBundleId": "com.chabomakers.Antinote"
+  },
+  {
+    "key": "anydo",
+    "name": "Any.do",
+    "currentBundleId": "com.anydo.mac"
+  },
+  {
+    "key": "apidog",
+    "name": "Apidog",
+    "currentBundleId": "com.apidog.app"
+  },
+  {
+    "key": "appflowy",
+    "name": "AppFlowy",
+    "currentBundleId": null
+  }
+]
