@@ -7,5 +7,7 @@
   "homepage": "https://selfcontrolapp.com/",
   "fileName": "selfcontrol_4.0.2.pkg",
   "type": "app",
-  "sha": "e054986f6c12634d3e9cb92bb972e35fdcf2a560ec734a7bfd160e3c3a3daa31"
+  "sha": "e054986f6c12634d3e9cb92bb972e35fdcf2a560ec734a7bfd160e3c3a3daa31",
+  "category": "Productivity",
+  "publisher": "SelfControl Project"
 }

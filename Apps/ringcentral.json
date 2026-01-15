@@ -7,5 +7,7 @@
   "homepage": "https://www.ringcentral.com/download.html",
   "fileName": "RingCentral-arm64.pkg",
   "type": "pkg",
-  "sha": "323d7c0b8e2d479d75ea572c4bdca20a2149d22c95bf9e77a2dc938678d9c611"
+  "sha": "323d7c0b8e2d479d75ea572c4bdca20a2149d22c95bf9e77a2dc938678d9c611",
+  "category": "Communication",
+  "publisher": "RingCentral, Inc."
 }

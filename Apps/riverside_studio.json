@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://riverside.fm/",
   "fileName": "RiversideStudio.dmg",
-  "sha": "2875ccc984c978138080fe0aa371b4df1a6f42db869e3da66bd94b6b599eae1a"
+  "sha": "2875ccc984c978138080fe0aa371b4df1a6f42db869e3da66bd94b6b599eae1a",
+  "category": "Media",
+  "publisher": "Riverside.fm"
 }

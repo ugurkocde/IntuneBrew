@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://openaudible.org/",
   "fileName": "OpenAudible_4.7.1.dmg",
-  "sha": "77e7054a25698b90829f153eff62e315892ec02d4fe3432431f3c2bd384aabd2"
+  "sha": "77e7054a25698b90829f153eff62e315892ec02d4fe3432431f3c2bd384aabd2",
+  "category": "Media",
+  "publisher": "OpenAudible"
 }

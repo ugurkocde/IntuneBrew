@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://nextcloud.com/talk/",
   "fileName": "Nextcloud.Talk-macos-universal.dmg",
-  "sha": "3658b6cfc7b202ae56dc02f01e21faf88821b64dc97f481a5adc1a6ce252e20c"
+  "sha": "3658b6cfc7b202ae56dc02f01e21faf88821b64dc97f481a5adc1a6ce252e20c",
+  "category": "Communication",
+  "publisher": "Nextcloud"
 }

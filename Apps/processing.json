@@ -6,5 +6,7 @@
   "bundleId": "org.processing.app",
   "homepage": "https://processing.org/",
   "fileName": "processing-4.4.10-macos-aarch64.dmg",
-  "sha": "b7dc4c9c769863b45c1065d0bd5ec861f06fd06dc48518c6e44dc4f4272b6e4a"
+  "sha": "b7dc4c9c769863b45c1065d0bd5ec861f06fd06dc48518c6e44dc4f4272b6e4a",
+  "category": "Developer Tools",
+  "publisher": "Processing Foundation"
 }

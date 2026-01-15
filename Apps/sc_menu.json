@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://github.com/boberito/sc_menu",
   "fileName": "SC_Menu.dmg",
-  "sha": "dce4f87c1237d4de0f8c2be691d98800037967d61b6008fec7059ee683e697f1"
+  "sha": "dce4f87c1237d4de0f8c2be691d98800037967d61b6008fec7059ee683e697f1",
+  "category": "Security",
+  "publisher": "boberito"
 }

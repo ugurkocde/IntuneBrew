@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://rawtherapee.com/",
   "fileName": "RawTherapee_macOS_15.4_Universal_5.12.zip",
-  "type": "app"
+  "type": "app",
+  "category": "Media",
+  "publisher": "RawTherapee Team"
 }

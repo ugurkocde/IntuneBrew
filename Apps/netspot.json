@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.netspotapp.com/",
   "fileName": "NetSpot.dmg",
-  "sha": "50ebaa80d45a0f06a4f63106d46b0b1a1a2254692c7c1bf98d2ec9125d38ef89"
+  "sha": "50ebaa80d45a0f06a4f63106d46b0b1a1a2254692c7c1bf98d2ec9125d38ef89",
+  "category": "Utilities",
+  "publisher": "NetSpot"
 }

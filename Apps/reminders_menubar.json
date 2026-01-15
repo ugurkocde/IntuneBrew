@@ -7,5 +7,7 @@
   "homepage": "https://github.com/DamascenoRafael/reminders-menubar",
   "fileName": "reminders_menubar_1.25.0.pkg",
   "type": "app",
-  "sha": "05b7d73b579fad6663d6b525e7ce2289f8063486d9b3841003ed90fa9a20911e"
+  "sha": "05b7d73b579fad6663d6b525e7ce2289f8063486d9b3841003ed90fa9a20911e",
+  "category": "Productivity",
+  "publisher": "DamascenoRafael"
 }

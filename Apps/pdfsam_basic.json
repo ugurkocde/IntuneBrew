@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://pdfsam.org/",
   "fileName": "pdfsam-basic-5.4.1-macos-arm64.dmg",
-  "sha": "728c728025413cb0d721b3f991f1997cf451e83d42a895931bed4eb0af024bb8"
+  "sha": "728c728025413cb0d721b3f991f1997cf451e83d42a895931bed4eb0af024bb8",
+  "category": "Utilities",
+  "publisher": "PDFsam"
 }

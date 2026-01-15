@@ -7,5 +7,7 @@
   "homepage": "https://okjson.app/",
   "fileName": "ok_json_2.10.1.pkg",
   "type": "app",
-  "sha": "3ae9a64cdb6602369d39168e7220ac6891ba068cf7da30de844f903af05e8761"
+  "sha": "3ae9a64cdb6602369d39168e7220ac6891ba068cf7da30de844f903af05e8761",
+  "category": "Developer Tools",
+  "publisher": "OK JSON"
 }

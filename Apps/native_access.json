@@ -7,5 +7,7 @@
   "homepage": "https://www.native-instruments.com/en/specials/native-access-2/",
   "fileName": "native_access_3.22.0.pkg",
   "type": "app",
-  "sha": "f0028aaa800095322b5eba9557abfa6f0b4bc4b4d736df278bff764f9f90b023"
+  "sha": "f0028aaa800095322b5eba9557abfa6f0b4bc4b4d736df278bff764f9f90b023",
+  "category": "Utilities",
+  "publisher": "Native Instruments"
 }

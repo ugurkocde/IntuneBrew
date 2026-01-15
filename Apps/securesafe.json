@@ -7,5 +7,7 @@
   "homepage": "https://www.securesafe.com/",
   "fileName": "securesafe-2.25.0.pkg",
   "type": "pkg",
-  "sha": "d3f813723e48e49f56f097095bf6de35215b399939e1ece09c82df5ce6bb68f8"
+  "sha": "d3f813723e48e49f56f097095bf6de35215b399939e1ece09c82df5ce6bb68f8",
+  "category": "Security",
+  "publisher": "SecureSafe"
 }

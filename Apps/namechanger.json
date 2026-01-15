@@ -7,5 +7,7 @@
   "homepage": "https://mrrsoftware.com/namechanger/",
   "fileName": "namechanger_3.4.4.pkg",
   "type": "app",
-  "sha": "36fc311dcaf8c970df014631c1c5a762fed1cac6b64c16025da8f94dd7dff571"
+  "sha": "36fc311dcaf8c970df014631c1c5a762fed1cac6b64c16025da8f94dd7dff571",
+  "category": "Utilities",
+  "publisher": "MRR Software"
 }

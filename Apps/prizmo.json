@@ -7,5 +7,7 @@
   "homepage": "https://creaceed.com/prizmo",
   "fileName": "prizmo_4.7.1.pkg",
   "type": "app",
-  "sha": "74314ef0685cbd5e68e3be8f9160b96b6657d547b9bbba3969f87eae338613a8"
+  "sha": "74314ef0685cbd5e68e3be8f9160b96b6657d547b9bbba3969f87eae338613a8",
+  "category": "Productivity",
+  "publisher": "Creaceed"
 }

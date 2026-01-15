@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.scribus.net/",
   "fileName": "scribus-1.6.5-arm64.dmg",
-  "sha": "d3bdc88fa105e932be1db610689bad17395c05e06b133bfbf372410d5bdf102a"
+  "sha": "d3bdc88fa105e932be1db610689bad17395c05e06b133bfbf372410d5bdf102a",
+  "category": "Design",
+  "publisher": "The Scribus Team"
 }

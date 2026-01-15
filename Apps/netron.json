@@ -7,5 +7,7 @@
   "homepage": "https://github.com/lutzroeder/netron",
   "fileName": "netron_8.8.2.pkg",
   "type": "app",
-  "sha": "e2bfe243002497bfa361e70c21cb5ec606a59e71a470ef61be41b88b995e7e41"
+  "sha": "e2bfe243002497bfa361e70c21cb5ec606a59e71a470ef61be41b88b995e7e41",
+  "category": "Developer Tools",
+  "publisher": "Lutz Roeder"
 }

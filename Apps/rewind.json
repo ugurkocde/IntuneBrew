@@ -5,5 +5,7 @@
   "url": "https://download.rewind.ai/Rewind.dmg",
   "bundleId": "com.memoryvault.MemoryVault",
   "homepage": "https://www.rewind.ai/",
-  "fileName": "Rewind.dmg"
+  "fileName": "Rewind.dmg",
+  "category": "Productivity",
+  "publisher": "Rewind AI, Inc."
 }

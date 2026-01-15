@@ -7,5 +7,7 @@
   "homepage": "https://opentoonz.github.io/e/index.html",
   "fileName": "OpenToonz.pkg",
   "type": "pkg",
-  "sha": "b2849f4359499164ee610c17e1a79019f5a3474fb37620243e4bd8c8724fc136"
+  "sha": "b2849f4359499164ee610c17e1a79019f5a3474fb37620243e4bd8c8724fc136",
+  "category": "Design",
+  "publisher": "OpenToonz"
 }

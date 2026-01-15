@@ -7,5 +7,7 @@
   "homepage": "https://developer.salesforce.com/tools/salesforcecli",
   "fileName": "sf-v2.118.20-aa275e9-arm64.pkg",
   "type": "pkg",
-  "sha": "9ab81f0130dba908803eb3334ee9aa8de18eba7352575e0c52d0364a840195b1"
+  "sha": "9ab81f0130dba908803eb3334ee9aa8de18eba7352575e0c52d0364a840195b1",
+  "category": "Developer Tools",
+  "publisher": "Salesforce, Inc."
 }

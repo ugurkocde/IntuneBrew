@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.omnigroup.com/omniplan/",
   "fileName": "OmniPlan-4.10.1.dmg",
-  "sha": "8eac6fee4a8452a31ff3a43b214cff04dfad0c0479acbafde09a4a28ed908489"
+  "sha": "8eac6fee4a8452a31ff3a43b214cff04dfad0c0479acbafde09a4a28ed908489",
+  "category": "Productivity",
+  "publisher": "The Omni Group"
 }

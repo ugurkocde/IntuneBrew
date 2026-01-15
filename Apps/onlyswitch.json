@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://github.com/jacklandrin/OnlySwitch",
   "fileName": "OnlySwitch.dmg",
-  "sha": "5a7a121f38af499342d68050af094ebcd61e8aed944a53633d3985cdb33d56c4"
+  "sha": "5a7a121f38af499342d68050af094ebcd61e8aed944a53633d3985cdb33d56c4",
+  "category": "Utilities",
+  "publisher": "jacklandrin"
 }

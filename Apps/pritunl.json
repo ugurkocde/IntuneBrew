@@ -7,5 +7,7 @@
   "homepage": "https://client.pritunl.com/",
   "fileName": "pritunl_1.3.4466.51.pkg",
   "type": "app",
-  "sha": "8064f829f1771e9359b88a0b24145670fdd41e69cb4dc9b6c9ed3a1dd5bfda13"
+  "sha": "8064f829f1771e9359b88a0b24145670fdd41e69cb4dc9b6c9ed3a1dd5bfda13",
+  "category": "Security",
+  "publisher": "Pritunl, Inc."
 }

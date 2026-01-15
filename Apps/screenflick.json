@@ -7,5 +7,7 @@
   "homepage": "https://www.araelium.com/screenflick-mac-screen-recorder",
   "fileName": "screenflick_3.3.2.pkg",
   "type": "app",
-  "sha": "36c5d909f006e7441373ee0752a893550049c846528f91dd3690fff87ee296e2"
+  "sha": "36c5d909f006e7441373ee0752a893550049c846528f91dd3690fff87ee296e2",
+  "category": "Media",
+  "publisher": "Araelium"
 }

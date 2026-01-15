@@ -7,5 +7,7 @@
   "homepage": "https://www.pingplotter.com/",
   "fileName": "pingplotter_5.25.20.pkg",
   "type": "app",
-  "sha": "64d8c8918670ee59a699eef1d4626c6b0a30d94c3fc7f9fd9fa2ef1adf4be7cc"
+  "sha": "64d8c8918670ee59a699eef1d4626c6b0a30d94c3fc7f9fd9fa2ef1adf4be7cc",
+  "category": "Utilities",
+  "publisher": "PingPlotter, LLC"
 }

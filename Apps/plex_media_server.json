@@ -7,5 +7,7 @@
   "homepage": "https://www.plex.tv/",
   "fileName": "plex_media_server_1.42.2.10156.pkg",
   "type": "app",
-  "sha": "8025b9d8ff788d6aa186b58a1e1748a9f33b521e728967dbc9c1b441bb31c0e7"
+  "sha": "8025b9d8ff788d6aa186b58a1e1748a9f33b521e728967dbc9c1b441bb31c0e7",
+  "category": "Media",
+  "publisher": "Plex, Inc."
 }

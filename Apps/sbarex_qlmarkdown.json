@@ -7,5 +7,7 @@
   "homepage": "https://github.com/sbarex/QLMarkdown",
   "fileName": "sbarex_qlmarkdown_1.0.23.pkg",
   "type": "app",
-  "sha": "0e4313204b6a9fe317853492174a6470aafac1a99d8ed8a06941f31264fec583"
+  "sha": "0e4313204b6a9fe317853492174a6470aafac1a99d8ed8a06941f31264fec583",
+  "category": "Developer Tools",
+  "publisher": "sbarex"
 }

@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://runjs.app/",
   "fileName": "RunJS-3.2.2-universal.dmg",
-  "sha": "be3a69cb88fbbe3fd5f538a3c72a626585838b9d41bf14c2a3484f1adcf81436"
+  "sha": "be3a69cb88fbbe3fd5f538a3c72a626585838b9d41bf14c2a3484f1adcf81436",
+  "category": "Developer Tools",
+  "publisher": "RunJS Ltd."
 }
