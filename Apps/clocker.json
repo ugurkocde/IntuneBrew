@@ -1,0 +1,11 @@
+{
+  "name": "Clocker",
+  "description": "Menu bar timezone tracker and compact calendar",
+  "version": "23.01",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/clocker_23.01.pkg",
+  "bundleId": "com.abhishek.Clocker",
+  "homepage": "https://abhishekbanthia.com/clocker",
+  "fileName": "clocker_23.01.pkg",
+  "type": "app",
+  "sha": "a9d5a0e261af83a21c2cba6ca06638f3f837a102298b41c6a1e3e583ea2b8970"
+}

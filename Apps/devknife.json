@@ -1,0 +1,10 @@
+{
+  "name": "DevKnife",
+  "description": "Collection of handy developer tools",
+  "version": "1.8.0",
+  "url": "https://files.solotuna.com/devknife/DevKnife-1.8.0.dmg",
+  "bundleId": null,
+  "homepage": "https://devknife.app/",
+  "fileName": "DevKnife-1.8.0.dmg",
+  "sha": "1ea24dc1f251e6cfa7fc83772ac5abe91a8dc19678f29b67e79cf37c7ea0a32f"
+}

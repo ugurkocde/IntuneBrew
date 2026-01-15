@@ -1,0 +1,10 @@
+{
+  "name": "Chalk",
+  "description": "Calculator software",
+  "version": "1.7.5",
+  "url": "https://pierre.chachatelier.fr/chalk/downloads/Chalk-1_7_5.dmg",
+  "bundleId": null,
+  "homepage": "https://www.chachatelier.fr/chalk/",
+  "fileName": "Chalk-1_7_5.dmg",
+  "sha": "8906a8ffe54a3481fda6f73dbd850fbb7453cc6c78c7b396d30f9c44f24a8bec"
+}

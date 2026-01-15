@@ -1,0 +1,10 @@
+{
+  "name": "Debookee",
+  "description": "Network traffic analyser",
+  "version": "8.2.0",
+  "url": "https://www.iwaxx.com/debookee/debookee.zip",
+  "bundleId": "com.iwaxx.Debookee.PacketTool",
+  "homepage": "https://debookee.com/",
+  "fileName": "debookee.zip",
+  "type": "app"
+}

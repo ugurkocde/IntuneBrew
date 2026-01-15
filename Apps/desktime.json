@@ -1,0 +1,10 @@
+{
+  "name": "DeskTime",
+  "description": "Time tracker with additional workforce management features",
+  "version": "6.1.3",
+  "url": "https://desktime.com/storage/updates/electro-builder-auto-updater/stable/DeskTime-6.1.3-arm64.dmg",
+  "bundleId": "DeskTime",
+  "homepage": "https://desktime.com/",
+  "fileName": "DeskTime-6.1.3-arm64.dmg",
+  "sha": "0a18b52931598f6bb18bc5ecd81bdaf6a1588117d068cb695f03dea14bba3520"
+}

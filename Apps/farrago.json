@@ -1,0 +1,11 @@
+{
+  "name": "Farrago",
+  "description": "Audio playback",
+  "version": "2.1.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/farrago_2.1.4.pkg",
+  "bundleId": "com.rogueamoeba.farrago",
+  "homepage": "https://rogueamoeba.com/farrago/",
+  "fileName": "farrago_2.1.4.pkg",
+  "type": "app",
+  "sha": "d07ee1225be6de90528c8d88db02c8de7b4da23d41ac934a88383bb427b8ca93"
+}

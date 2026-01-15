@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "892a68a210462496bb8d1b90e2ae50be0eaf44634656ea37081ca4bfd33ba3a8",
   "category": "Security",
-  "publisher": "Enclave"
+  "publisher": "Enclave",
+  "previous_version": "2025.6.2"
 }

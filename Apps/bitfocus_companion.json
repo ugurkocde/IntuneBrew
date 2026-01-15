@@ -8,5 +8,6 @@
   "fileName": "companion-mac-arm64-4.2.2+8755-stable-6b5530ac3d.dmg",
   "sha": "bbc05266e03d45462e69b043708d6ae8775cb606b6d6483733b0fc0cb6ff37d8",
   "category": "Utilities",
-  "publisher": "Bitfocus"
+  "publisher": "Bitfocus",
+  "previous_version": "4.2.2"
 }

@@ -1,0 +1,11 @@
+{
+  "name": "Droplr",
+  "description": "Screenshot and screen recorder",
+  "version": "5.9.19",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/droplr_5.9.19.pkg",
+  "bundleId": "com.droplr.droplr-mac",
+  "homepage": "https://droplr.com/",
+  "fileName": "droplr_5.9.19.pkg",
+  "type": "app",
+  "sha": "07e35d50d2c01ea1e1e6694af8a006c219a6cccae7eb6d2186cc8c153bd69e83"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "ExifRenamer",
+  "description": "Tool to rename digital photos, movie- and audio-clips",
+  "version": "2.4.0",
+  "url": "https://www.qdev.de/downloads/files/ExifRenamer.dmg",
+  "bundleId": null,
+  "homepage": "https://www.qdev.de/?location=mac/exifrenamer&forcelang=en",
+  "fileName": "ExifRenamer.dmg",
+  "sha": "b49a84bb74c02065561d55a38002d4db62495dcbead41ac4b528e5ead12ece2c"
+}

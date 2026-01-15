@@ -8,5 +8,6 @@
   "fileName": "commandlinetools-mac-13114758_latest.zip",
   "type": "app",
   "category": "Developer Tools",
-  "publisher": "Google LLC"
+  "publisher": "Google LLC",
+  "previous_version": "13114758"
 }

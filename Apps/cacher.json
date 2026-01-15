@@ -1,0 +1,11 @@
+{
+  "name": "Cacher",
+  "description": "Code snippet organiser",
+  "version": "2.47.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/cacher_2.47.9.pkg",
+  "bundleId": null,
+  "homepage": "https://www.cacher.io/",
+  "fileName": "cacher_2.47.9.pkg",
+  "type": "app",
+  "sha": "be65d2eb6a7a539d102d6142f5167655327346f261761650b700085663c90fa1"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "digiKam",
+  "description": "Digital photo manager",
+  "version": "8.8.0",
+  "url": "https://download.kde.org/stable/digikam/8.8.0/digiKam-8.8.0-Qt6-MacOS-arm64.pkg",
+  "bundleId": "org.digiKam",
+  "homepage": "https://www.digikam.org/",
+  "fileName": "digiKam-8.8.0-Qt6-MacOS-arm64.pkg",
+  "type": "pkg",
+  "sha": "121001a74b9069e7be22eda13f20a3ded98409203c59e658d25695b3986e71ac"
+}

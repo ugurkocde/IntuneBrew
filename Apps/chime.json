@@ -1,0 +1,11 @@
+{
+  "name": "Chime",
+  "description": "Text and code editor",
+  "version": "2.2.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/chime_2.2.5.pkg",
+  "bundleId": null,
+  "homepage": "https://www.chimehq.com/",
+  "fileName": "chime_2.2.5.pkg",
+  "type": "app",
+  "sha": "3ddc9cd807a0012fb38c90a95b09a4996ea591e60bbc32733ac7b98212f7355b"
+}

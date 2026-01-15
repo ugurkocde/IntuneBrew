@@ -1,0 +1,10 @@
+{
+  "name": "Captain",
+  "description": "Manage Docker containers from the menu bar",
+  "version": "10.5.0",
+  "url": "https://github.com/RickWong/Captain/releases/download/v10.5.0/Captain-10.5.0-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://getcaptain.co/",
+  "fileName": "Captain-10.5.0-arm64.dmg",
+  "sha": "fa9a7d9efb07c9ed837ab856be7ed9e503a01a7614c8bedaeb11420bc647bcfd"
+}

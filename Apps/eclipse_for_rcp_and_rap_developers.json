@@ -6,6 +6,8 @@
   "bundleId": null,
   "homepage": "https://eclipse.org/",
   "fileName": "eclipse-rcp-2025-12-R-macosx-cocoa-aarch64.dmg&r=1",
+  "sha": "35cf161e13086ad018f5aea8680801e6f1bb269eca41d95888ad5bae08989758",
   "category": "Developer Tools",
-  "publisher": "The Eclipse Foundation"
+  "publisher": "The Eclipse Foundation",
+  "previous_version": "4.38"
 }

@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "41df870b069c64033cde7e089a44d0d9c6c675f4878fae55a49f8cf6942cfa58",
   "category": "Media",
-  "publisher": "FileBot"
+  "publisher": "FileBot",
+  "previous_version": "5.2.0"
 }

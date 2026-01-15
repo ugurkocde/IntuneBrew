@@ -1,0 +1,10 @@
+{
+  "name": "AdLock",
+  "description": "Proxy-based ad blocking tool",
+  "version": "2.1.7.3",
+  "url": "https://downloads.adlock.com/mac/AdLock_Installer.dmg",
+  "bundleId": "com.hankuper.adlock-desktop-ui.pkg",
+  "homepage": "https://adlock.com/",
+  "fileName": "AdLock_Installer.dmg",
+  "sha": "48c3ba813adfa179833e97f6110f32d690fdda47f5eebd741d1daf7fa7b20908"
+}

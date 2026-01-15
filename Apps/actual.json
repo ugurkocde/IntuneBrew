@@ -8,5 +8,6 @@
   "fileName": "Actual-mac-arm64.dmg",
   "sha": "f117a89fcb10a5dc00c17ad1f0c79c01f8555d7aee07dec61a8c313e05ed691c",
   "category": "Productivity",
-  "publisher": "Actual"
+  "publisher": "Actual",
+  "previous_version": "26.1.0"
 }

@@ -8,5 +8,6 @@
   "fileName": "CS4_Download.dmg",
   "sha": "464c4b639b3bab2681281dab14812b204b4305aa51ac3a4aa6eaf4246fdd601c",
   "category": "Utilities",
-  "publisher": "Econ Technologies"
+  "publisher": "Econ Technologies",
+  "previous_version": "12.0.0"
 }

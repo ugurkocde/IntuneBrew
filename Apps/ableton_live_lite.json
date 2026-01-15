@@ -8,5 +8,6 @@
   "fileName": "ableton_live_lite_12.3.2_universal.dmg",
   "sha": "65a0e4ff2f36e3f7c2ff63fa33fcbfdd366d9cf82403da7417ecd790ac25af63",
   "category": "Media",
-  "publisher": "Ableton"
+  "publisher": "Ableton",
+  "previous_version": "12.3.2"
 }

@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "0b4a9b7710ac6bc2c76f6eb5ac84f3147c444c626179628a47b1025b70906093",
   "category": "Security",
-  "publisher": "Sinew Software Systems Pvt. Ltd."
+  "publisher": "Sinew Software Systems Pvt. Ltd.",
+  "previous_version": "6.11.17.2135"
 }

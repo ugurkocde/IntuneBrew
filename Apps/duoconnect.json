@@ -1,6 +1,6 @@
 {
   "name": "DuoConnect",
-  "description": "Access your organisation’s SSH servers",
+  "description": "Access your organisation\u2019s SSH servers",
   "version": "2.0.9",
   "url": "https://dl.duosecurity.com/DuoConnect-2.0.9.pkg",
   "bundleId": "com.duo.connect.bin",
@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "12e8dd11775db5094ee2c9577ba3c11fb4c2fc4a3c696260ce2957a8d22e0b29",
   "category": "Security",
-  "publisher": "Duo Security, LLC"
+  "publisher": "Duo Security, LLC",
+  "previous_version": "2.0.9"
 }

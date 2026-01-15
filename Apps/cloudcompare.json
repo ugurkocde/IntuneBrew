@@ -8,5 +8,6 @@
   "fileName": "CloudCompare_2.13.2__arm64.dmg",
   "sha": "490f16a203f2196e64d562750bd815d1bb3e1ba5a206dcebfd32ecc882dfd554",
   "category": "Utilities",
-  "publisher": "Daniel Girardeau-Montaut"
+  "publisher": "Daniel Girardeau-Montaut",
+  "previous_version": "2.13.2"
 }

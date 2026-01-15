@@ -8,5 +8,6 @@
   "fileName": "CoolTermMac240.dmg",
   "sha": "190a1f67d0362ce7ae4b531552925ef28e40004052c3be1fe9bf653e0678cddd",
   "category": "Developer Tools",
-  "publisher": "The Meiers"
+  "publisher": "The Meiers",
+  "previous_version": "2.4.0.3.0.1425"
 }

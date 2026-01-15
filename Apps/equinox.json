@@ -8,5 +8,6 @@
   "fileName": "Equinox.dmg",
   "sha": "ab2dfc4fa18f8fd808aa376bc4e20ea7c23e0eb8f3eb77387a25bef06728f2af",
   "category": "Design",
-  "publisher": "Equinox"
+  "publisher": "Equinox",
+  "previous_version": "4.0"
 }

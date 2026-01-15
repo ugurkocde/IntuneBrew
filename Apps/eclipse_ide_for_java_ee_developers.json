@@ -8,5 +8,6 @@
   "fileName": "eclipse-jee-2025-12-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
   "sha": "182b0bb6d4f004f4c6366a53aa142a4d34b0bbc3a0d2a013e82b2d0d1c4394e2",
   "category": "Developer Tools",
-  "publisher": "The Eclipse Foundation"
+  "publisher": "The Eclipse Foundation",
+  "previous_version": "4.38"
 }

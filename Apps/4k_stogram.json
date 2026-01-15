@@ -1,0 +1,10 @@
+{
+  "name": "4K Stogram",
+  "description": "Download Instagram photos, accounts, hashtags and locations",
+  "version": "4.9.0",
+  "url": "https://dl.4kdownload.com/app/4kstogram_4.9.0_arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://www.4kdownload.com/products/product-stogram",
+  "fileName": "4kstogram_4.9.0_arm64.dmg",
+  "sha": "4aa6ff10b55fd46b9eda84ea83cc5e026c9ee376b93bdf7ce832bdc561deb2e3"
+}

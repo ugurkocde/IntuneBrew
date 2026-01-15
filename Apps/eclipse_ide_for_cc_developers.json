@@ -6,6 +6,8 @@
   "bundleId": null,
   "homepage": "https://eclipse.org/",
   "fileName": "eclipse-cpp-2025-12-R-macosx-cocoa-aarch64.dmg&r=1",
+  "sha": "a3f4fb1bd93089fd4f41b655147db4f9e4bbb0c13fbc65d0e857222031a985c6",
   "category": "Developer Tools",
-  "publisher": "The Eclipse Foundation"
+  "publisher": "The Eclipse Foundation",
+  "previous_version": "4.38"
 }

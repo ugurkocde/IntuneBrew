@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "2ad4c72a6cd4dd81eccece1e6933351c9324aa33d7d6095c1efa65ba8bd6d988",
   "category": "Developer Tools",
-  "publisher": "The TeX Users Group"
+  "publisher": "The TeX Users Group",
+  "previous_version": "2025.0308"
 }

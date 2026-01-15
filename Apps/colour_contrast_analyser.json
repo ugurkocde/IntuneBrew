@@ -1,0 +1,10 @@
+{
+  "name": "Colour Contrast Analyser",
+  "description": "Colour contrast checker",
+  "version": "3.5.5",
+  "url": "https://github.com/ThePacielloGroup/CCAe/releases/download/v3.5.5/CCA-3.5.5.dmg",
+  "bundleId": null,
+  "homepage": "https://www.tpgi.com/color-contrast-checker/",
+  "fileName": "CCA-3.5.5.dmg",
+  "sha": "d0e0922642a05149dd95f57e5b8814049149e94a0c7ea89fc9d56dfb60a813d9"
+}

@@ -1,0 +1,10 @@
+{
+  "name": "Adobe Digital Editions",
+  "description": "E-book reader",
+  "version": "4.5.12",
+  "url": "https://adedownload.adobe.com/pub/adobe/digitaleditions/ADE_4.5_Installer.dmg",
+  "bundleId": "com.adobe.adobedigitaleditions.app",
+  "homepage": "https://www.adobe.com/solutions/ebook/digital-editions.html",
+  "fileName": "ADE_4.5_Installer.dmg",
+  "sha": "6d4f365dd04cf76c7303ac5682f99b37fe5962a1f327789fb2a77f019ff978e2"
+}

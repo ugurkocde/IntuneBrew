@@ -8,5 +8,6 @@
   "fileName": "platform-tools_r36.0.2-darwin.zip",
   "type": "app",
   "category": "Developer Tools",
-  "publisher": "Google LLC"
+  "publisher": "Google LLC",
+  "previous_version": "36.0.2"
 }

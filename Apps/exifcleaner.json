@@ -1,0 +1,10 @@
+{
+  "name": "ExifCleaner",
+  "description": "Metadata cleaner",
+  "version": "3.6.0",
+  "url": "https://github.com/szTheory/exifcleaner/releases/download/v3.6.0/ExifCleaner-3.6.0.dmg",
+  "bundleId": null,
+  "homepage": "https://exifcleaner.com/",
+  "fileName": "ExifCleaner-3.6.0.dmg",
+  "sha": "459b296b000a7cd614713772e9b4ecf1604d3bb10926ab2346e8ea88e44df323"
+}

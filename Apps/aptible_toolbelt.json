@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "239d8906aad720cd5d910c2a9d504be791bd67cdc6dbe27514aeb80b5cdb92c0",
   "category": "Developer Tools",
-  "publisher": "Aptible, Inc."
+  "publisher": "Aptible, Inc.",
+  "previous_version": "0.26.1"
 }

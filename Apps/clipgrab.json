@@ -8,5 +8,6 @@
   "fileName": "ClipGrab-3.9.16.dmg",
   "sha": "cb0b5b47ac8c3de64487994bd03519cd5f99a63221100ac97370138802e5dd2c",
   "category": "Media",
-  "publisher": "ClipGrab"
+  "publisher": "ClipGrab",
+  "previous_version": "3.9.16"
 }

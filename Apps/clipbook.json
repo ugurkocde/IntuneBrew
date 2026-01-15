@@ -1,0 +1,10 @@
+{
+  "name": "ClipBook",
+  "description": "Clipboard history app",
+  "version": "1.32.0",
+  "url": "https://f005.backblazeb2.com/file/clipbook/ClipBook-1.32.0-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://clipbook.app/",
+  "fileName": "ClipBook-1.32.0-arm64.dmg",
+  "sha": "b81d8533f1a8f85f9c7cdb75eaad39e6d6bfab400feab759182056c603b33cce"
+}

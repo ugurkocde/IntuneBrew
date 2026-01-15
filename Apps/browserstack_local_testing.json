@@ -1,0 +1,11 @@
+{
+  "name": "BrowserStack Local Testing",
+  "description": "Test localhost and staging websites",
+  "version": "3.7.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/browserstack_local_testing_3.7.1.pkg",
+  "bundleId": "com.browserstack.local",
+  "homepage": "https://www.browserstack.com/",
+  "fileName": "browserstack_local_testing_3.7.1.pkg",
+  "type": "app",
+  "sha": "50eba501ba846f15e856f350fff33f04d784b0f7398f836f818fe5601667f14f"
+}

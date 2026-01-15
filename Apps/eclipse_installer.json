@@ -8,5 +8,6 @@
   "fileName": "eclipse-inst-jre-mac-aarch64.dmg&r=1",
   "sha": "9a55892a74ee3248acd272a6f33fb4b39a398611244b4ad36db373154cdbdf94",
   "category": "Developer Tools",
-  "publisher": "The Eclipse Foundation"
+  "publisher": "The Eclipse Foundation",
+  "previous_version": "4.38"
 }

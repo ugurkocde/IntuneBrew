@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "b24a7f396f75a6a571f0b3b2b806a517a7093d7075d58909adeeadd89524857b",
   "category": "Utilities",
-  "publisher": "EVKey"
+  "publisher": "EVKey",
+  "previous_version": "3.3.8"
 }

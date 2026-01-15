@@ -1,0 +1,10 @@
+{
+  "name": "Cisco Proximity",
+  "description": "Content sharing and video conference system control",
+  "version": "4.0.0",
+  "url": "https://proximity.cisco.com/mac/Proximity.dmg",
+  "bundleId": "com.cisco.proximity",
+  "homepage": "https://proximity.cisco.com/",
+  "fileName": "Proximity.dmg",
+  "sha": "c9c0c28449e106d5b4598842701072f9201a3c6a53ccfb21295a7773f6fcc439"
+}

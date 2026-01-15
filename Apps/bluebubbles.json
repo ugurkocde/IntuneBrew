@@ -8,5 +8,6 @@
   "fileName": "BlueBubbles-1.9.9-arm64.dmg",
   "sha": "fafd650c883f52e7494a6625e45249f2144d197378a4d57143ccf6198bb2e862",
   "category": "Communication",
-  "publisher": "BlueBubbles"
+  "publisher": "BlueBubbles",
+  "previous_version": "1.9.9"
 }

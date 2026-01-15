@@ -8,5 +8,6 @@
   "fileName": "ableton_live_suite_12.3.2_universal.dmg",
   "sha": "be87bb137367d7c2f53c0fd55eb1d0d8e507a866975dd3a8ab090368e479e196",
   "category": "Media",
-  "publisher": "Ableton"
+  "publisher": "Ableton",
+  "previous_version": "12.3.2"
 }

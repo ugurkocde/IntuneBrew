@@ -8,5 +8,6 @@
   "fileName": "BlackHole64ch-0.6.1.pkg",
   "type": "pkg",
   "category": "Utilities",
-  "publisher": "Existential Audio"
+  "publisher": "Existential Audio",
+  "previous_version": "0.6.1"
 }

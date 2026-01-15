@@ -1,0 +1,10 @@
+{
+  "name": "Fellow",
+  "description": "Collaborative meeting agendas, notes, and action items",
+  "version": "1.7.9",
+  "url": "https://cdn.fellow.app/desktop/1.7.9/darwin/stable/universal/Fellow-1.7.9-universal.dmg",
+  "bundleId": null,
+  "homepage": "https://fellow.app/",
+  "fileName": "Fellow-1.7.9-universal.dmg",
+  "sha": "6721a784a4af76e401e9b4854de342ea26a93b0af38c6afb81f0bc1a91bfcef6"
+}

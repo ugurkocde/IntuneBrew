@@ -1,0 +1,11 @@
+{
+  "name": "EtreCheck",
+  "description": "Utility to finds and fix problems on computer systems",
+  "version": "6.8.12",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/etrecheck_6.8.12.pkg",
+  "bundleId": null,
+  "homepage": "https://etrecheck.com/",
+  "fileName": "etrecheck_6.8.12.pkg",
+  "type": "app",
+  "sha": "81f6e53edb6cbe2c4531c281b9e9cc575ff04668d63714e31b0592ba17b19049"
+}

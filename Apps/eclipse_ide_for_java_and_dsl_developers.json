@@ -8,5 +8,6 @@
   "fileName": "eclipse-dsl-2025-12-R-macosx-cocoa-aarch64.dmg&r=1",
   "sha": "28bb310bce54f0076d2862225b8704091c84c370ac3b125f0f0f444a3584ea1a",
   "category": "Developer Tools",
-  "publisher": "The Eclipse Foundation"
+  "publisher": "The Eclipse Foundation",
+  "previous_version": "4.38"
 }
