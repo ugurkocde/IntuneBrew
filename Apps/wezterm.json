@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "5d11949404b6f152b62ae0c1044d9e32d1ee808a03bd5df2edfccf999ae744f0",
   "category": "Developer Tools",
-  "publisher": "Wez Ferk"
+  "publisher": "Wez Ferk",
+  "previous_version": "20240203-110809"
 }

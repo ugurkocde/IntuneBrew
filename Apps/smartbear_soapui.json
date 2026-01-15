@@ -8,5 +8,6 @@
   "fileName": "SoapUI-arm64-5.9.1.dmg",
   "sha": "8fd400d40bebfa0260d2f7a8ccead22742a08b6c0b33ef321def7b2f19022969",
   "category": "Developer Tools",
-  "publisher": "SmartBear Software, Inc."
+  "publisher": "SmartBear Software, Inc.",
+  "previous_version": "5.9.1"
 }

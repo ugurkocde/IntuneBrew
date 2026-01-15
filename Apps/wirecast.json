@@ -8,5 +8,6 @@
   "fileName": "Wirecast-16.5.0.dmg",
   "sha": "aab982bbd5fee8dd61c37fab8332be99f00aade03dfdf62db0f6b00add3e3317",
   "category": "Media",
-  "publisher": "Telestream"
+  "publisher": "Telestream",
+  "previous_version": "16.5.0"
 }

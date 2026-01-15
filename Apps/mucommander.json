@@ -8,5 +8,6 @@
   "fileName": "muCommander-1.5.2-1-aarch64.dmg",
   "sha": "43f9206c7f886071cb3e2b15d7604acabd9d8b9940be0d284b88661da90037f7",
   "category": "Utilities",
-  "publisher": "muCommander"
+  "publisher": "muCommander",
+  "previous_version": "1.5.2-1"
 }

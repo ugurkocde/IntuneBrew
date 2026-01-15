@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "48dca72ac2b2336ff0166c70f46384de49bb53bf8ddb2de8e8d9c5bf7d38560c",
   "category": "Productivity",
-  "publisher": "Aptonic"
+  "publisher": "Aptonic",
+  "previous_version": "4.80.74"
 }

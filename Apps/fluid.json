@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "4991c72df197645f0edf7ed72e2a81255bcb114e35116735f967905047574f1e",
   "category": "Productivity",
-  "publisher": "Todd Ditchendorf"
+  "publisher": "Todd Ditchendorf",
+  "previous_version": "2.1.2"
 }

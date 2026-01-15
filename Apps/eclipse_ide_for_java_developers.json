@@ -8,5 +8,6 @@
   "fileName": "eclipse-java-2025-12-R-macosx-cocoa-aarch64.dmg&r=1",
   "sha": "470e75a8adb05a1a63c02d98267933e4300fd3b644da821b8c1de1d42d866486",
   "category": "Developer Tools",
-  "publisher": "The Eclipse Foundation"
+  "publisher": "The Eclipse Foundation",
+  "previous_version": "4.38"
 }

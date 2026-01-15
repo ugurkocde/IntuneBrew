@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "98976878310411b0ade0bf1aca5e222b978d27c1b08d1033570f9ae289862bc1",
   "category": "Media",
-  "publisher": "Arobas Music"
+  "publisher": "Arobas Music",
+  "previous_version": "8.1.4-43"
 }

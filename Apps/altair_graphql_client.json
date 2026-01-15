@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "3ab255806cad797ecdd05ac762f676a162fb606c1ea90f519432af69d1a59646",
   "category": "Developer Tools",
-  "publisher": "Altair Labs"
+  "publisher": "Altair Labs",
+  "previous_version": "8.5.0"
 }

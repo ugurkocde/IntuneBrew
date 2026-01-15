@@ -8,5 +8,6 @@
   "fileName": "CopyQ-macos-12-m1.dmg.zip",
   "sha": "2eb743cc57a97fde6c71d6ec0587408ae2beb41939699117d32b74e68882e77e",
   "category": "Productivity",
-  "publisher": "hluk"
+  "publisher": "hluk",
+  "previous_version": "13.0.0"
 }

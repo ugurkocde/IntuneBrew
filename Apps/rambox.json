@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "9d4410388518b72a7a12158e86e27951c48697011ea6b8a0a91dcc22080c48df",
   "category": "Productivity",
-  "publisher": "Rambox Technologies GmbH"
+  "publisher": "Rambox Technologies GmbH",
+  "previous_version": "2.5.2"
 }

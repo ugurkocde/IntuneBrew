@@ -8,5 +8,6 @@
   "fileName": "Biscuit-1.2.33-arm64.dmg",
   "sha": "999bcfa3edad7bc16f84573c2ff75342615d031f264a47868375d403445c208f",
   "category": "Browsers",
-  "publisher": "Eat Biscuit"
+  "publisher": "Eat Biscuit",
+  "previous_version": "1.2.33"
 }

@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "cd8fe736de0d09acf03bc0ec0193375a99beebae08641592bfb4629997de44d3",
   "category": "Developer Tools",
-  "publisher": "skevy"
+  "publisher": "skevy",
+  "previous_version": "0.7.2"
 }

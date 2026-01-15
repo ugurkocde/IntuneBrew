@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "081a7862556631a8453d3c675b56826d5614c1f83fbe3bc4f148f075347fa9bd",
   "category": "Productivity",
-  "publisher": "BZG Apps"
+  "publisher": "BZG Apps",
+  "previous_version": "5.1.1"
 }

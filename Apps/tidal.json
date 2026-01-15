@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "60e9d95c26fc88d7334c752fc45ae2b476a534066210d7331f0352a2e1984ae2",
   "category": "Media",
-  "publisher": "TIDAL Ltd."
+  "publisher": "TIDAL Ltd.",
+  "previous_version": "2.39.5"
 }

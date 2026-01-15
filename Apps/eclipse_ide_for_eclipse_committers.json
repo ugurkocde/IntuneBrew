@@ -6,6 +6,8 @@
   "bundleId": null,
   "homepage": "https://eclipse.org/",
   "fileName": "eclipse-committers-2025-12-R-macosx-cocoa-aarch64.dmg&r=1",
+  "sha": "9c2f8151949725c6bc63651018d3df54d1453f57009724f1db5eee1d53f7e2d9",
   "category": "Developer Tools",
-  "publisher": "The Eclipse Foundation"
+  "publisher": "The Eclipse Foundation",
+  "previous_version": "4.38"
 }

@@ -8,5 +8,6 @@
   "fileName": "Roon.dmg",
   "sha": "7c89dce97fc2ee46bc8dc3503336604ec6354189b9e3f6cad9214c342df7135d",
   "category": "Media",
-  "publisher": "Roon Labs, LLC"
+  "publisher": "Roon Labs, LLC",
+  "previous_version": "2.57"
 }

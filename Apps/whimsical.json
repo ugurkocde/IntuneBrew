@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "f7a98cd6162d35e72e20d6eeac8764c62c86130c528c587eebeff61c13cf8fb3",
   "category": "Design",
-  "publisher": "Whimsical, Inc."
+  "publisher": "Whimsical, Inc.",
+  "previous_version": "0.4.3"
 }

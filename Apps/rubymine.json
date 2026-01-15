@@ -8,5 +8,6 @@
   "fileName": "RubyMine-2025.3.1.1-aarch64.dmg",
   "sha": "2bae88a0c5ea7ecd5fadfa3e81408a42ba7da489b6885c8b35d1453641cf60f7",
   "category": "Developer Tools",
-  "publisher": "JetBrains s.r.o."
+  "publisher": "JetBrains s.r.o.",
+  "previous_version": "2025.3.1.1"
 }

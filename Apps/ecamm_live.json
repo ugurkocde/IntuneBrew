@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "88748d8419f47d66f6ad27f949934f03b0d085df67737536f77aa4a85b374a54",
   "category": "Media",
-  "publisher": "Ecamm Network, LLC"
+  "publisher": "Ecamm Network, LLC",
+  "previous_version": "4.4.14"
 }

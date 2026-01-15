@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "884e12cb5e133cc7db2e519b8d023e38cdd9da84632314816eeeafe94f2d3148",
   "category": "Productivity",
-  "publisher": "Red Sweater Software"
+  "publisher": "Red Sweater Software",
+  "previous_version": "3.3.8"
 }

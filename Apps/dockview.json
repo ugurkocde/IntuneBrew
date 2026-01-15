@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "495003ce70c1caeea9a71500e3382c5bdd888c7a76401bc8dc1cf58492f2982a",
   "category": "Utilities",
-  "publisher": "Noteify"
+  "publisher": "Noteify",
+  "previous_version": "1.7.3"
 }

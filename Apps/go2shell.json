@@ -8,5 +8,6 @@
   "fileName": "Go2Shell.dmg",
   "sha": "815222856b39a60af60fa07b75d478ce5f3c6a037a76bab989f7f2f7fbbaba06",
   "category": "Utilities",
-  "publisher": "ZipZapMac"
+  "publisher": "ZipZapMac",
+  "previous_version": "2.5"
 }

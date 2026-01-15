@@ -8,5 +8,6 @@
   "fileName": "Qobuz.dmg",
   "sha": "446b5acf47dd4a0db7d03dfec5f3cc91ea946669535c5e700cdca72fa539a189",
   "category": "Media",
-  "publisher": "Qobuz"
+  "publisher": "Qobuz",
+  "previous_version": "8.1.0"
 }

@@ -8,5 +8,6 @@
   "fileName": "postbox-7.0.65-mac64.dmg",
   "sha": "baa32f662fe1d3663f1bec4e3afb4120a31809bd6478d13f1b94d72a0363559c",
   "category": "Productivity",
-  "publisher": "Postbox, Inc."
+  "publisher": "Postbox, Inc.",
+  "previous_version": "7.0.65"
 }

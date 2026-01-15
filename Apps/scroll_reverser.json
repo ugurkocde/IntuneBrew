@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "05e8c0c3a1569dfa160979595e418c2ea98dc1fe7cc5cf0e60ffd5e65466cb02",
   "category": "Utilities",
-  "publisher": "Pilot Moon"
+  "publisher": "Pilot Moon",
+  "previous_version": "1.9"
 }

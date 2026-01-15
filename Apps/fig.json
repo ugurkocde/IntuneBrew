@@ -8,5 +8,6 @@
   "fileName": "fig.dmg",
   "sha": "6f0caf57e1251ca06c315c23957734b5c9246fa5af8f1424d5836054ebdd6514",
   "category": "Developer Tools",
-  "publisher": "Fig"
+  "publisher": "Fig",
+  "previous_version": "2.19.0"
 }

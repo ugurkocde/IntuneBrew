@@ -8,5 +8,6 @@
   "fileName": "Waterfox%206.6.8.dmg",
   "sha": "37277b017828c25bddb1e7d019e8ce1fffddd533f11d7ef58fad7f2beacb24d0",
   "category": "Browsers",
-  "publisher": "Waterfox Ltd."
+  "publisher": "Waterfox Ltd.",
+  "previous_version": "6.6.8"
 }

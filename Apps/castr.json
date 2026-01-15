@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "260940c40edf181a942995034985776269f478735f2bf625a107e3367612b8b4",
   "category": "Media",
-  "publisher": "Castr"
+  "publisher": "Castr",
+  "previous_version": "3.1.0"
 }

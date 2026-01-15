@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "d9dfbce5616bfe63045fb4a400a540aefd6b477e18d920795a8189542962bee0",
   "category": "Productivity",
-  "publisher": "Brawo Software"
+  "publisher": "Brawo Software",
+  "previous_version": "4.2.3"
 }
