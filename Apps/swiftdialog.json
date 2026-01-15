@@ -7,5 +7,7 @@
   "homepage": "https://swiftdialog.app/",
   "fileName": "dialog-2.5.6-4805.pkg",
   "type": "pkg",
-  "sha": "69bd7f6412a1b2393906fc059369e65c5ae58af5cc8d289467effd11d8862b2a"
+  "sha": "69bd7f6412a1b2393906fc059369e65c5ae58af5cc8d289467effd11d8862b2a",
+  "category": "Developer Tools",
+  "publisher": "swiftDialog"
 }

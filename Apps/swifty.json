@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://getswifty.pro/",
   "fileName": "Swifty-0.6.13.dmg",
-  "sha": "cc625c8c543bd8596694a5810e5db7967a6806b4511568cb6cda077bc02c3b4b"
+  "sha": "cc625c8c543bd8596694a5810e5db7967a6806b4511568cb6cda077bc02c3b4b",
+  "category": "Security",
+  "publisher": "Swifty"
 }

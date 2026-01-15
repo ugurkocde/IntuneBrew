@@ -7,5 +7,7 @@
   "homepage": "https://www.apptorium.com/sidenotes",
   "fileName": "sidenotes_1.5.2.pkg",
   "type": "app",
-  "sha": "f09b1debd53d2b483d1f790fdffc927b4d6436c4d831ce1b1258237ca6a6e90e"
+  "sha": "f09b1debd53d2b483d1f790fdffc927b4d6436c4d831ce1b1258237ca6a6e90e",
+  "category": "Productivity",
+  "publisher": "Apptorium"
 }

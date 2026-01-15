@@ -7,5 +7,7 @@
   "homepage": "https://www.realmacsoftware.com/squash/",
   "fileName": "squash_3.3.0.pkg",
   "type": "app",
-  "sha": "f5432482cb17afe285fefd94f57ef51d20e74ef4de4addfbbea8f8e14b95c6c2"
+  "sha": "f5432482cb17afe285fefd94f57ef51d20e74ef4de4addfbbea8f8e14b95c6c2",
+  "category": "Media",
+  "publisher": "Realmac Software"
 }

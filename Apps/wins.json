@@ -7,5 +7,7 @@
   "homepage": "https://wins.cool/",
   "fileName": "wins_3.1.1.pkg",
   "type": "app",
-  "sha": "612f6012e7cfd0351108ab39aaf5d63b79ea9f9b9bbf5f6df4e52c41e048d93c"
+  "sha": "612f6012e7cfd0351108ab39aaf5d63b79ea9f9b9bbf5f6df4e52c41e048d93c",
+  "category": "Utilities",
+  "publisher": "Wins"
 }

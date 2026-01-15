@@ -7,5 +7,7 @@
   "homepage": "https://www.devontechnologies.com/apps/freeware",
   "fileName": "wordservice_2.8.3.pkg",
   "type": "app",
-  "sha": "9afa7936f6c438a717944300f89f5e8b2f295d72499754d13ee8ef3d9a2de41c"
+  "sha": "9afa7936f6c438a717944300f89f5e8b2f295d72499754d13ee8ef3d9a2de41c",
+  "category": "Utilities",
+  "publisher": "DEVONtechnologies"
 }

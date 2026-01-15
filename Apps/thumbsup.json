@@ -7,5 +7,7 @@
   "homepage": "https://www.devontechnologies.com/apps/freeware",
   "fileName": "thumbsup_4.5.3.pkg",
   "type": "app",
-  "sha": "48db7a382a1437649c6a489f744f6c5339cbc18e694edc2b3c40fde4984d2a2f"
+  "sha": "48db7a382a1437649c6a489f744f6c5339cbc18e694edc2b3c40fde4984d2a2f",
+  "category": "Utilities",
+  "publisher": "DEVONtechnologies"
 }

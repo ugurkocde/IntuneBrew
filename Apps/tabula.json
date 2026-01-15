@@ -7,5 +7,7 @@
   "homepage": "https://tabula.technology/",
   "fileName": "tabula_1.2.1.pkg",
   "type": "app",
-  "sha": "e91ea1655dc790eba2b8e87a920c1e11adeee96e286827fd09832798a4ce14fc"
+  "sha": "e91ea1655dc790eba2b8e87a920c1e11adeee96e286827fd09832798a4ce14fc",
+  "category": "Productivity",
+  "publisher": "Tabula"
 }

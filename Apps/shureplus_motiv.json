@@ -6,5 +6,7 @@
   "bundleId": "com.shure.motiv.desktop",
   "homepage": "https://www.shure.com/en-US/products/software/shure_plus_motiv_desktop",
   "fileName": "MOTIV-Desktop-macOS-1.5.4.dmg",
-  "sha": "df52cd040a1485046f65228768e3cc3b2c25a0a40520f34c37c8a1c2a5028843"
+  "sha": "df52cd040a1485046f65228768e3cc3b2c25a0a40520f34c37c8a1c2a5028843",
+  "category": "Media",
+  "publisher": "Shure Incorporated"
 }

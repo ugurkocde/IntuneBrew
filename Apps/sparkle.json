@@ -7,5 +7,7 @@
   "homepage": "https://sparkle-project.org/",
   "fileName": "sparkle_2.8.1.pkg",
   "type": "app",
-  "sha": "380b58eeab1181cef26ee5ce8326b18389550b01459805a8a625cd6da3d36542"
+  "sha": "380b58eeab1181cef26ee5ce8326b18389550b01459805a8a625cd6da3d36542",
+  "category": "Developer Tools",
+  "publisher": "The Sparkle Project"
 }

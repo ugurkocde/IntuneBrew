@@ -7,5 +7,7 @@
   "homepage": "https://www.sunsama.com/desktop",
   "fileName": "sunsama_3.2.6.pkg",
   "type": "app",
-  "sha": "23f722dad70e61f862c2a6b86df594dcd2c32322f7eaa37f3085cea6ff0d30e7"
+  "sha": "23f722dad70e61f862c2a6b86df594dcd2c32322f7eaa37f3085cea6ff0d30e7",
+  "category": "Productivity",
+  "publisher": "Sunsama, Inc."
 }

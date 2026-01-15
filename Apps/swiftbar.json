@@ -7,5 +7,7 @@
   "homepage": "https://swiftbar.app/",
   "fileName": "swiftbar_2.0.1.pkg",
   "type": "app",
-  "sha": "71e8bac0569526c3e0c407c852c3c52f5b1ae6a71d916808986f971172732071"
+  "sha": "71e8bac0569526c3e0c407c852c3c52f5b1ae6a71d916808986f971172732071",
+  "category": "Developer Tools",
+  "publisher": "SwiftBar"
 }

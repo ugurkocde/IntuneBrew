@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://weektodo.me/",
   "fileName": "WeekToDo-2.2.0.dmg",
-  "sha": "2b5c2c9ed1a16776fc7121d37f4ccaf40a82d94987906f5b2e75e428acda2167"
+  "sha": "2b5c2c9ed1a16776fc7121d37f4ccaf40a82d94987906f5b2e75e428acda2167",
+  "category": "Productivity",
+  "publisher": "WeekToDo"
 }

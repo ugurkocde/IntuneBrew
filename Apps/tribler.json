@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.tribler.org/",
   "fileName": "Tribler-8.2.3.dmg",
-  "sha": "68d22bbc7d7fcbb290959a9d5f9c99cdf7b9d0f801114b6af707f21142d3cf76"
+  "sha": "68d22bbc7d7fcbb290959a9d5f9c99cdf7b9d0f801114b6af707f21142d3cf76",
+  "category": "Utilities",
+  "publisher": "Tribler Team"
 }

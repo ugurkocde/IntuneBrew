@@ -7,5 +7,7 @@
   "homepage": "https://docs.topazlabs.com/other-apps/legacy",
   "fileName": "TopazPhotoAI-4.0.4.pkg",
   "type": "pkg",
-  "sha": "b69dc080940a53b7b3e1b7965d955c6f2c83b5b512a2082fae0ab1e27da828d0"
+  "sha": "b69dc080940a53b7b3e1b7965d955c6f2c83b5b512a2082fae0ab1e27da828d0",
+  "category": "Design",
+  "publisher": "Topaz Labs"
 }

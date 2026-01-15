@@ -7,5 +7,7 @@
   "homepage": "https://www.apimac.com/mac/timer/",
   "fileName": "timer_9.0.3.pkg",
   "type": "app",
-  "sha": "d2fc0d356020bb560045aa57730a9cd00ea549834c5d36c6c3326ff69f9cd578"
+  "sha": "d2fc0d356020bb560045aa57730a9cd00ea549834c5d36c6c3326ff69f9cd578",
+  "category": "Utilities",
+  "publisher": "Apimac"
 }

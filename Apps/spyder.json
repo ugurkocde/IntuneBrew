@@ -7,5 +7,7 @@
   "homepage": "https://www.spyder-ide.org/",
   "fileName": "Spyder-macOS-arm64.pkg",
   "type": "pkg",
-  "sha": "19bb2b9bbde0d0263cabf3ff787f22aaf0a6e4b0d37cc75ab6aaf65da3e626a9"
+  "sha": "19bb2b9bbde0d0263cabf3ff787f22aaf0a6e4b0d37cc75ab6aaf65da3e626a9",
+  "category": "Developer Tools",
+  "publisher": "Spyder Development Team"
 }

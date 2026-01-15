@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.yworks.com/products/yed",
   "fileName": "yEd-3.25.1_with-JRE21_arm64.dmg",
-  "sha": "db6870a59f3128b3e9b42afb80723963478378cb6e05e6dd9cd3c8a3d99e903b"
+  "sha": "db6870a59f3128b3e9b42afb80723963478378cb6e05e6dd9cd3c8a3d99e903b",
+  "category": "Design",
+  "publisher": "yWorks GmbH"
 }

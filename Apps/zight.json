@@ -7,5 +7,7 @@
   "homepage": "https://zight.com/",
   "fileName": "zight_8.6.0.pkg",
   "type": "app",
-  "sha": "2663c9eaff7943ea293b89676322dfa706505da0672fb463a6e0144ed116c87d"
+  "sha": "2663c9eaff7943ea293b89676322dfa706505da0672fb463a6e0144ed116c87d",
+  "category": "Communication",
+  "publisher": "Zight, Inc."
 }

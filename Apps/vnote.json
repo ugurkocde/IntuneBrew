@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://vnotex.github.io/vnote/",
   "fileName": "VNote-3.20.1-mac-universal.zip",
-  "type": "app"
+  "type": "app",
+  "category": "Productivity",
+  "publisher": "VNotex"
 }

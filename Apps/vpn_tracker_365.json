@@ -7,5 +7,7 @@
   "homepage": "https://vpntracker.com/",
   "fileName": "vpn_tracker_365_26.1.pkg",
   "type": "app",
-  "sha": "0417ec3f5334436dee39c12e49b0ae538eebaf44e1935d674d996edbd118c97a"
+  "sha": "0417ec3f5334436dee39c12e49b0ae538eebaf44e1935d674d996edbd118c97a",
+  "category": "Security",
+  "publisher": "iphion GmbH"
 }

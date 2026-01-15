@@ -7,5 +7,7 @@
   "homepage": "https://sveinbjorn.org/sloth",
   "fileName": "sloth_3.5.pkg",
   "type": "app",
-  "sha": "95c1d74dba7a8b534164bd558ee7dd1981c1d56ae435972739635a6a7ec3ef32"
+  "sha": "95c1d74dba7a8b534164bd558ee7dd1981c1d56ae435972739635a6a7ec3ef32",
+  "category": "Developer Tools",
+  "publisher": "Sveinbjorn Thordarson"
 }

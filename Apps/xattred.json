@@ -7,5 +7,7 @@
   "homepage": "https://eclecticlight.co/xattred-sandstrip-xattr-tools/",
   "fileName": "xattred_1.7.pkg",
   "type": "app",
-  "sha": "20f21c835d13dca077c1db60194d056e0b5fe2b2859680a4ab70eba398448008"
+  "sha": "20f21c835d13dca077c1db60194d056e0b5fe2b2859680a4ab70eba398448008",
+  "category": "Utilities",
+  "publisher": "Sandstrip"
 }

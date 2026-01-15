@@ -6,5 +6,7 @@
   "bundleId": "com.goldenfrog.VyprVPN*",
   "homepage": "https://www.vyprvpn.com/",
   "fileName": "VyprVPN_v6.0.4.11438.dmg",
-  "sha": "11429f4c5f35a9ffa3086a1b7ee4b9740405e5fdbcd1b912dbbfcc8f54c0ef98"
+  "sha": "11429f4c5f35a9ffa3086a1b7ee4b9740405e5fdbcd1b912dbbfcc8f54c0ef98",
+  "category": "Security",
+  "publisher": "Golden Frog GmbH"
 }

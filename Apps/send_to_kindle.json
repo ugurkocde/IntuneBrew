@@ -7,5 +7,7 @@
   "homepage": "https://www.amazon.com/gp/sendtokindle/mac",
   "fileName": "SendToKindleForMac-installer.pkg",
   "type": "pkg",
-  "sha": "314152144a183001081289307eaa322168cd4c4c7fae2e25861ffda6387632e7"
+  "sha": "314152144a183001081289307eaa322168cd4c4c7fae2e25861ffda6387632e7",
+  "category": "Utilities",
+  "publisher": "Amazon.com, Inc."
 }

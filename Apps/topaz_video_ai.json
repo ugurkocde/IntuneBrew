@@ -7,5 +7,7 @@
   "homepage": "https://docs.topazlabs.com/other-apps/legacy",
   "fileName": "TopazVideoAI-7.1.5.pkg",
   "type": "pkg",
-  "sha": "4e3721d5605c36cbf872573471a5bbc5eb63860404c939f889251311135090ba"
+  "sha": "4e3721d5605c36cbf872573471a5bbc5eb63860404c939f889251311135090ba",
+  "category": "Media",
+  "publisher": "Topaz Labs, LLC"
 }

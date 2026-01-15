@@ -7,5 +7,7 @@
   "homepage": "https://setapp.com/",
   "fileName": "setapp_3.49.5.pkg",
   "type": "app",
-  "sha": "63fa9c0e669fb13515faf3bd3bca7a8b7133df54fdaca445fa74fd100f58148b"
+  "sha": "63fa9c0e669fb13515faf3bd3bca7a8b7133df54fdaca445fa74fd100f58148b",
+  "category": "Productivity",
+  "publisher": "MacPaw"
 }

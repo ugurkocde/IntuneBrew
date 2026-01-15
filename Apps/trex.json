@@ -7,5 +7,7 @@
   "homepage": "https://trex.ameba.co/",
   "fileName": "trex_1.9.1.pkg",
   "type": "app",
-  "sha": "d2231f159262d4a1b3ee5da7c9d8edc3d8ecc2fcee12efd87d85cb096f0c888a"
+  "sha": "d2231f159262d4a1b3ee5da7c9d8edc3d8ecc2fcee12efd87d85cb096f0c888a",
+  "category": "Utilities",
+  "publisher": "TRex"
 }

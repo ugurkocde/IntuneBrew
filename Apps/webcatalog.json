@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://webcatalog.io/",
   "fileName": "WebCatalog-72.0.5-universal.dmg",
-  "sha": "fb6f5f03d7dd0e6add321920304b6d3f32dc1dbfd0132e7148ad808faea8f83a"
+  "sha": "fb6f5f03d7dd0e6add321920304b6d3f32dc1dbfd0132e7148ad808faea8f83a",
+  "category": "Productivity",
+  "publisher": "WebCatalog"
 }

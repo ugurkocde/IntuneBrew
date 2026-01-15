@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://slab.com/",
   "fileName": "Slab-1.7.2-darwin-arm64.dmg",
-  "sha": "f26cc76229610e27b96a4ad286c590598105a2986e614faa83d1b3e8580f5056"
+  "sha": "f26cc76229610e27b96a4ad286c590598105a2986e614faa83d1b3e8580f5056",
+  "category": "Productivity",
+  "publisher": "Slab, Inc."
 }

@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.spitfireaudio.com/info/library-manager/",
   "fileName": "SpitfireAudio-Mac-3.4.13.dmg",
-  "sha": "1798f5776c181c217b66dd3a8a0f3d63156631b2584bee4d2943437b82c35269"
+  "sha": "1798f5776c181c217b66dd3a8a0f3d63156631b2584bee4d2943437b82c35269",
+  "category": "Utilities",
+  "publisher": "Spitfire Audio"
 }

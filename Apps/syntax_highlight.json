@@ -7,5 +7,7 @@
   "homepage": "https://github.com/sbarex/SourceCodeSyntaxHighlight",
   "fileName": "syntax_highlight_2.1.27.pkg",
   "type": "app",
-  "sha": "e99c7c73e979e387b3228f78cfe7c1fed83eba9146fce1639088d31e29156ef8"
+  "sha": "e99c7c73e979e387b3228f78cfe7c1fed83eba9146fce1639088d31e29156ef8",
+  "category": "Developer Tools",
+  "publisher": "sbarex"
 }

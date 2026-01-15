@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.smartsheet.com/",
   "fileName": "Smartsheet-setup.dmg",
-  "sha": "9ec4629a7e86fdd8074881de371192373a9ce319bf8ecedfe44e4cc44cc47cda"
+  "sha": "9ec4629a7e86fdd8074881de371192373a9ce319bf8ecedfe44e4cc44cc47cda",
+  "category": "Productivity",
+  "publisher": "Smartsheet, Inc."
 }

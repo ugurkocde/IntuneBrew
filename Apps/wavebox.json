@@ -7,5 +7,7 @@
   "homepage": "https://wavebox.io/",
   "fileName": "wavebox_10.143.21.2.pkg",
   "type": "app",
-  "sha": "316088914b26f8794206ddc6d42bfb070d794c5d2b45dbca7477005f3ec349bf"
+  "sha": "316088914b26f8794206ddc6d42bfb070d794c5d2b45dbca7477005f3ec349bf",
+  "category": "Browsers",
+  "publisher": "Wavebox Ltd"
 }

@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.sonicvisualiser.org/",
   "fileName": "Sonic.Visualiser.5.2.1.dmg",
-  "sha": "bb86819411875cc8128fc49c3899a3c419fba6ff8286ad145bdec02c4bd212f0"
+  "sha": "bb86819411875cc8128fc49c3899a3c419fba6ff8286ad145bdec02c4bd212f0",
+  "category": "Media",
+  "publisher": "Centre for Digital Music (C4DM), Queen Mary University of London"
 }

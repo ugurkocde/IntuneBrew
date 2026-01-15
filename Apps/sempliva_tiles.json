@@ -6,5 +6,7 @@
   "bundleId": "com.sempliva.Tiles",
   "homepage": "https://www.sempliva.com/tiles/",
   "fileName": "Tiles-03b500a8.dmg",
-  "sha": "b051ea7e5048bac0f7a72b6dd893bb1a02cf47ecde6def9f103d2be8e122f01e"
+  "sha": "b051ea7e5048bac0f7a72b6dd893bb1a02cf47ecde6def9f103d2be8e122f01e",
+  "category": "Utilities",
+  "publisher": "Sempliva"
 }

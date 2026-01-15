@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.taskade.com/",
   "fileName": "Taskade-4.6.13-universal.dmg",
-  "sha": "8516cf62fc11ae834aaeafc4466b2cf05bde819c0305f08e4becb8ffe4bc18a9"
+  "sha": "8516cf62fc11ae834aaeafc4466b2cf05bde819c0305f08e4becb8ffe4bc18a9",
+  "category": "Productivity",
+  "publisher": "Taskade, Inc."
 }

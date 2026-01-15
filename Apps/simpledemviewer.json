@@ -7,5 +7,7 @@
   "homepage": "https://jizoh.jp/english.html",
   "fileName": "simpledemviewer_8.5.2.pkg",
   "type": "app",
-  "sha": "ce75198be97fbd93f60fc49757988c5e5a118521856db748212c84ede76e4693"
+  "sha": "ce75198be97fbd93f60fc49757988c5e5a118521856db748212c84ede76e4693",
+  "category": "Utilities",
+  "publisher": "Jizoh"
 }

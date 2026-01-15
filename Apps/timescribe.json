@@ -7,5 +7,7 @@
   "homepage": "https://timescribe.app/",
   "fileName": "timescribe_1.8.0.pkg",
   "type": "app",
-  "sha": "28a99069ef01919e252ea325306101343a4d847514dd9b019892143856e7b810"
+  "sha": "28a99069ef01919e252ea325306101343a4d847514dd9b019892143856e7b810",
+  "category": "Productivity",
+  "publisher": "TimeScribe"
 }

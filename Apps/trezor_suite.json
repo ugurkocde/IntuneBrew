@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://suite.trezor.io/",
   "fileName": "Trezor-Suite-25.12.2-mac-arm64.dmg",
-  "sha": "afb52d2947d483bceed753ae6750c4cd38c2987886e1b63af55ba5b82a32ead3"
+  "sha": "afb52d2947d483bceed753ae6750c4cd38c2987886e1b63af55ba5b82a32ead3",
+  "category": "Security",
+  "publisher": "SatoshiLabs"
 }

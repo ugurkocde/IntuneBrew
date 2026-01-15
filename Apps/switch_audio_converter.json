@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.nch.com.au/switch/",
   "fileName": "switchmaci.zip",
-  "type": "app"
+  "type": "app",
+  "category": "Utilities",
+  "publisher": "NCH Software"
 }

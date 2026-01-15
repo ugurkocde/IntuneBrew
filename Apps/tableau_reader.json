@@ -7,5 +7,7 @@
   "homepage": "https://www.tableau.com/products/reader",
   "fileName": "TableauReader-2025-3-1-arm64.pkg",
   "type": "pkg",
-  "sha": "1e11f047913c2878ec01f44d965eab19566574e159889726b31c9b89654f199c"
+  "sha": "1e11f047913c2878ec01f44d965eab19566574e159889726b31c9b89654f199c",
+  "category": "Productivity",
+  "publisher": "Tableau Software, Inc."
 }

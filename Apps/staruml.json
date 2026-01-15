@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://staruml.io/",
   "fileName": "StarUML-6.3.4-arm64.dmg",
-  "sha": "91df4902c0923f6f41f24325584435f87297c42cf61ecca01c45eea0e31eac24"
+  "sha": "91df4902c0923f6f41f24325584435f87297c42cf61ecca01c45eea0e31eac24",
+  "category": "Developer Tools",
+  "publisher": "StarUML Team"
 }

@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://developers.yubico.com/yubioath-flutter/",
   "fileName": "yubico-authenticator-7.3.0-mac.dmg",
-  "sha": "d060f00d451270b614cd42f7ea7538e8982150b0dd47aeb5eb8f8590e8f303f9"
+  "sha": "d060f00d451270b614cd42f7ea7538e8982150b0dd47aeb5eb8f8590e8f303f9",
+  "category": "Security",
+  "publisher": "Yubico"
 }

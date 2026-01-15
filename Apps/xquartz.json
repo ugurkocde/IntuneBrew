@@ -7,5 +7,7 @@
   "homepage": "https://www.xquartz.org/",
   "fileName": "XQuartz-2.8.5.pkg",
   "type": "pkg",
-  "sha": "e89538a134738dfa71d5b80f8e4658cb812e0803115a760629380b851b608782"
+  "sha": "e89538a134738dfa71d5b80f8e4658cb812e0803115a760629380b851b608782",
+  "category": "Utilities",
+  "publisher": "The XQuartz Project"
 }
