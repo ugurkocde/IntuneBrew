@@ -7,5 +7,7 @@
   "homepage": "https://www.devontechnologies.com/apps/devonagent",
   "fileName": "devonagent_pro_3.11.10.pkg",
   "type": "app",
-  "sha": "fffced28acbef15eefa475e8e1a8692cdf5cdab1d50f861fb7a0a88178266e78"
+  "sha": "fffced28acbef15eefa475e8e1a8692cdf5cdab1d50f861fb7a0a88178266e78",
+  "category": "Productivity",
+  "publisher": "DEVONtechnologies"
 }

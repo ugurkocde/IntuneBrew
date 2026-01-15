@@ -8,5 +8,7 @@
   "fileName": "BackupLoupe-3.14.7.tar.xz",
   "type": "app",
   "previous_version": "3.14.7",
-  "sha": "0d3ef8c46199f679cd5b65665e53d0c7a17235385407230cad2720e48352eba2"
+  "sha": "0d3ef8c46199f679cd5b65665e53d0c7a17235385407230cad2720e48352eba2",
+  "category": "Utilities",
+  "publisher": "Soma Zone"
 }

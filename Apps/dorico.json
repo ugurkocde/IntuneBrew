@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.steinberg.net/dorico/",
   "fileName": "Dorico_6.1.10_Installer_mac.dmg",
-  "sha": "890cbaf877eb5bde79fe38c8677c640be3231eaf0a845b3a1e116515d1489b75"
+  "sha": "890cbaf877eb5bde79fe38c8677c640be3231eaf0a845b3a1e116515d1489b75",
+  "category": "Productivity",
+  "publisher": "Steinberg Media Technologies GmbH"
 }

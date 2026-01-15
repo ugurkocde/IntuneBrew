@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.syntevo.com/deepgit/",
   "fileName": "deepgit-aarch64-4_4.dmg",
-  "sha": "1ff21eb94901e929128c11e49a25868fd71325d4e99701b0eb98f6eb94c5f7d4"
+  "sha": "1ff21eb94901e929128c11e49a25868fd71325d4e99701b0eb98f6eb94c5f7d4",
+  "category": "Developer Tools",
+  "publisher": "Syntevo"
 }

@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://eclipse.org/",
   "fileName": "eclipse-modeling-2025-12-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
-  "sha": "ca0850b9267ce648e80ac2b19ddb2cef1bc9f8c2a6c3b61b2e8bdd16c20a3a61"
+  "sha": "ca0850b9267ce648e80ac2b19ddb2cef1bc9f8c2a6c3b61b2e8bdd16c20a3a61",
+  "category": "Developer Tools",
+  "publisher": "Eclipse Foundation"
 }

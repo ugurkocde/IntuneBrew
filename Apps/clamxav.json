@@ -7,5 +7,7 @@
   "homepage": "https://www.clamxav.com/",
   "fileName": "ClamXAV_3.9.2_11297_Installer.pkg",
   "type": "pkg",
-  "sha": "be1e4bff1bde52507e434bc11918d6e581e2fd87bbc961ca55e5d3e769d2541c"
+  "sha": "be1e4bff1bde52507e434bc11918d6e581e2fd87bbc961ca55e5d3e769d2541c",
+  "category": "Security",
+  "publisher": "The ClamXAV Team"
 }

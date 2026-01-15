@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://developer.android.com/ndk/index.html",
   "fileName": "android-ndk-r29-darwin.dmg",
-  "sha": "2d6922da5f95178bea870069f0a463c33d014ddfa364c74320e11c47531db24d"
+  "sha": "2d6922da5f95178bea870069f0a463c33d014ddfa364c74320e11c47531db24d",
+  "category": "Developer Tools",
+  "publisher": "Google LLC"
 }

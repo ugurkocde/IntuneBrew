@@ -8,5 +8,7 @@
   "fileName": "1_7_2.zip",
   "type": "app",
   "previous_version": "1.7.2",
-  "sha": "5e76e5355a3aa5621aed38e1caf064b017b68aada2407cd675c902500bd3e703"
+  "sha": "5e76e5355a3aa5621aed38e1caf064b017b68aada2407cd675c902500bd3e703",
+  "category": "Utilities",
+  "publisher": "Riley Testut"
 }

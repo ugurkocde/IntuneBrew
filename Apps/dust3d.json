@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://dust3d.org/",
   "fileName": "dust3d-1.0.0-rc.9.dmg",
-  "sha": "9d2a251f26bcdcbe671677d48743f0c617be63c78f5c9291bd5b45e0dbb49a7f"
+  "sha": "9d2a251f26bcdcbe671677d48743f0c617be63c78f5c9291bd5b45e0dbb49a7f",
+  "category": "Design",
+  "publisher": "Dust3D"
 }

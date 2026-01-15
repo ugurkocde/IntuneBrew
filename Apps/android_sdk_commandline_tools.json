@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://developer.android.com/studio",
   "fileName": "commandlinetools-mac-13114758_latest.zip",
-  "type": "app"
+  "type": "app",
+  "category": "Developer Tools",
+  "publisher": "Google LLC"
 }

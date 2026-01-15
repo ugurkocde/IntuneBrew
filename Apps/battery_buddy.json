@@ -8,5 +8,7 @@
   "fileName": "Battery%20Buddy.zip",
   "type": "app",
   "previous_version": "1.0.3",
-  "sha": "8c5e5512ff2bde3199ac2b84a5c4ecb2db41736710604f1803de44fa45445b18"
+  "sha": "8c5e5512ff2bde3199ac2b84a5c4ecb2db41736710604f1803de44fa45445b18",
+  "category": "Utilities",
+  "publisher": "Battery Buddy"
 }

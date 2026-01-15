@@ -5,5 +5,7 @@
   "url": "https://www.douyin.com/download/pc/obj/douyin-pc-web//douyin-pc-client/7044145585217083655/releases/273089372/7.0.0/darwin-universal/douyin-v7.0.0-darwin-universal.dmg",
   "bundleId": null,
   "homepage": "https://www.douyin.com/",
-  "fileName": "douyin-v7.0.0-darwin-universal.dmg"
+  "fileName": "douyin-v7.0.0-darwin-universal.dmg",
+  "category": "Media",
+  "publisher": "ByteDance Ltd."
 }

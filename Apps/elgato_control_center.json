@@ -7,5 +7,7 @@
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
   "fileName": "elgato_control_center_1.8.2.pkg",
   "type": "app",
-  "sha": "2b3c86b5a8a80c3112706f2fd0c5e361a8e4655cb14f944ec34b8bc78477be9f"
+  "sha": "2b3c86b5a8a80c3112706f2fd0c5e361a8e4655cb14f944ec34b8bc78477be9f",
+  "category": "Utilities",
+  "publisher": "Elgato"
 }

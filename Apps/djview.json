@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://djvu.sourceforge.net/",
   "fileName": "DjVuLibre-3.5.29%2BDjView-4.12-universal.dmg",
-  "sha": "eebe6373c896a02d102607566dfa0626ab8541b7816779c3bce5524bf10e65fb"
+  "sha": "eebe6373c896a02d102607566dfa0626ab8541b7816779c3bce5524bf10e65fb",
+  "category": "Utilities",
+  "publisher": "DjVuLibre"
 }

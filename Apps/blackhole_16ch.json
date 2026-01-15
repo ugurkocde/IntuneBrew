@@ -6,5 +6,7 @@
   "bundleId": "audio.existential.BlackHole16ch",
   "homepage": "https://existential.audio/blackhole/",
   "fileName": "BlackHole16ch-0.6.1.pkg",
-  "type": "pkg"
+  "type": "pkg",
+  "category": "Utilities",
+  "publisher": "Existential Audio"
 }

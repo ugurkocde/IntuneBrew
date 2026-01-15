@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://chirp.danplanet.com/projects/chirp/wiki/Home",
   "fileName": "chirp-next-20250801.app.zip",
-  "type": "app"
+  "type": "app",
+  "category": "Utilities",
+  "publisher": "DanPlanet"
 }

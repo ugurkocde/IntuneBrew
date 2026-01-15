@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://bibdesk.sourceforge.io/",
   "fileName": "BibDesk-1.9.8.dmg",
-  "sha": "0fec367468bdfcf11163e97fda7426ec480eb3fab5648bd13ef70e946b977374"
+  "sha": "0fec367468bdfcf11163e97fda7426ec480eb3fab5648bd13ef70e946b977374",
+  "category": "Productivity",
+  "publisher": "The BibDesk Project"
 }

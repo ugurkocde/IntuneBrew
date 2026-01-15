@@ -7,5 +7,7 @@
   "homepage": "https://electronjs.org/",
   "fileName": "electron_39.2.7.pkg",
   "type": "app",
-  "sha": "ecb7b2771afc5604db1364dee145e13d89a2d201b3048220c76ca76f8ee1dc94"
+  "sha": "ecb7b2771afc5604db1364dee145e13d89a2d201b3048220c76ca76f8ee1dc94",
+  "category": "Developer Tools",
+  "publisher": "GitHub, Inc."
 }

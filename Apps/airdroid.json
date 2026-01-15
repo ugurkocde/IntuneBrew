@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.airdroid.com/",
   "fileName": "AirDroid_Desktop_Client_3.7.3.1.dmg",
-  "sha": "f0d8199dedc6daa3a93ca672d5e1c8d33554b07bc7371ba4538802926ea1acba"
+  "sha": "f0d8199dedc6daa3a93ca672d5e1c8d33554b07bc7371ba4538802926ea1acba",
+  "category": "Utilities",
+  "publisher": "Sand Studio Co., Ltd."
 }

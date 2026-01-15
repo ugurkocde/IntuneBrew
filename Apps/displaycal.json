@@ -7,5 +7,7 @@
   "homepage": "https://displaycal.net/",
   "fileName": "DisplayCAL-3.8.9.3.pkg",
   "type": "pkg",
-  "sha": "3e3f4a506c3ffc1e2004d57c6cd521d6cacb1bb6a71f9e3fa4cd81ab6ad4f31a"
+  "sha": "3e3f4a506c3ffc1e2004d57c6cd521d6cacb1bb6a71f9e3fa4cd81ab6ad4f31a",
+  "category": "Design",
+  "publisher": "DisplayCAL"
 }

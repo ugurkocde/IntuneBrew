@@ -5,5 +5,7 @@
   "url": "https://static.frdic.com/pkg/eudicmac.dmg",
   "bundleId": "com.eusoft.eudic",
   "homepage": "https://www.eudic.net/v4/en/app/eudic",
-  "fileName": "eudicmac.dmg"
+  "fileName": "eudicmac.dmg",
+  "category": "Productivity",
+  "publisher": "Eudic"
 }

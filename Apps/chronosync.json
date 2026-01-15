@@ -6,5 +6,7 @@
   "bundleId": "com.econtechnologies.pkg.ChronoSyncApplication",
   "homepage": "https://www.econtechnologies.com/",
   "fileName": "CS4_Download.dmg",
-  "sha": "464c4b639b3bab2681281dab14812b204b4305aa51ac3a4aa6eaf4246fdd601c"
+  "sha": "464c4b639b3bab2681281dab14812b204b4305aa51ac3a4aa6eaf4246fdd601c",
+  "category": "Utilities",
+  "publisher": "Econ Technologies"
 }

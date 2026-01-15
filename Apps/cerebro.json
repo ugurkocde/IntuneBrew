@@ -6,5 +6,7 @@
   "bundleId": "cerebro",
   "homepage": "https://cerebroapp.vercel.app/",
   "fileName": "cerebro-0.11.0.dmg",
-  "sha": "9c26a044f6ae0d7c4f1df8056b88ff5014edb168d4cc13e00f0cad21948359fd"
+  "sha": "9c26a044f6ae0d7c4f1df8056b88ff5014edb168d4cc13e00f0cad21948359fd",
+  "category": "Productivity",
+  "publisher": "Cerebro Project"
 }

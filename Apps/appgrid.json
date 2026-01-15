@@ -8,5 +8,7 @@
   "fileName": "AppGrid-1.0.4.zip",
   "type": "app",
   "previous_version": "1.0.4",
-  "sha": "9323768ee7d609407cf6d7744a2daf4a47525b1770891770b6e0c68a96f0cf73"
+  "sha": "9323768ee7d609407cf6d7744a2daf4a47525b1770891770b6e0c68a96f0cf73",
+  "category": "Utilities",
+  "publisher": "mjolnirapp"
 }

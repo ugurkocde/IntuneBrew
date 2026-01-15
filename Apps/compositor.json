@@ -8,5 +8,7 @@
   "fileName": "Compositor_1.28.0.zip",
   "type": "app",
   "previous_version": "1.28.0",
-  "sha": "56ae0cdf83b0242e35d55fc7aaab1ecd5d08c37bfe979ba8e79e183f317c4351"
+  "sha": "56ae0cdf83b0242e35d55fc7aaab1ecd5d08c37bfe979ba8e79e183f317c4351",
+  "category": "Productivity",
+  "publisher": "Compositor"
 }

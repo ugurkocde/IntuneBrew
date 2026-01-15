@@ -7,5 +7,7 @@
   "homepage": "https://evkeyvn.com/",
   "fileName": "evkey_3.3.8.pkg",
   "type": "app",
-  "sha": "b24a7f396f75a6a571f0b3b2b806a517a7093d7075d58909adeeadd89524857b"
+  "sha": "b24a7f396f75a6a571f0b3b2b806a517a7093d7075d58909adeeadd89524857b",
+  "category": "Utilities",
+  "publisher": "EVKey"
 }

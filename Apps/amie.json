@@ -8,5 +8,7 @@
   "fileName": "Amie-251228.0.0-arm64-mac.zip",
   "type": "app",
   "previous_version": "251228.0.0",
-  "sha": "140207b026a6078e64d978885327795fb67732a37f7acb4bf4863eefea4faf9a"
+  "sha": "140207b026a6078e64d978885327795fb67732a37f7acb4bf4863eefea4faf9a",
+  "category": "Productivity",
+  "publisher": "Amie"
 }

@@ -7,5 +7,7 @@
   "homepage": "https://www.enpass.io/",
   "fileName": "Enpass.pkg",
   "type": "pkg",
-  "sha": "0b4a9b7710ac6bc2c76f6eb5ac84f3147c444c626179628a47b1025b70906093"
+  "sha": "0b4a9b7710ac6bc2c76f6eb5ac84f3147c444c626179628a47b1025b70906093",
+  "category": "Security",
+  "publisher": "Sinew Software Systems Pvt. Ltd."
 }

@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://aerolite.dev/applite",
   "fileName": "Applite.dmg",
-  "sha": "7c2972f21f373c1f64518212098a76604f14b05bd56eb7e56f84c25f4c9c8da2"
+  "sha": "7c2972f21f373c1f64518212098a76604f14b05bd56eb7e56f84c25f4c9c8da2",
+  "category": "Developer Tools",
+  "publisher": "Aerolite"
 }

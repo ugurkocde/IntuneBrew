@@ -7,5 +7,7 @@
   "homepage": "https://archive.mpi.nl/tla/elan",
   "fileName": "elan_7.0.pkg",
   "type": "app",
-  "sha": "bca3d4ef452479cc8a4a360555e1b1d2b89599b1f80f33ff1dec96c79b9cd700"
+  "sha": "bca3d4ef452479cc8a4a360555e1b1d2b89599b1f80f33ff1dec96c79b9cd700",
+  "category": "Media",
+  "publisher": "Max Planck Institute for Psycholinguistics"
 }

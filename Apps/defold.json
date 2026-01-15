@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://defold.com/",
   "fileName": "Defold-arm64-macos.dmg",
-  "sha": "e5740764c4ccc215318ef0ccbaee814c00a62b745bf183d49ebfa8dab8eca636"
+  "sha": "e5740764c4ccc215318ef0ccbaee814c00a62b745bf183d49ebfa8dab8eca636",
+  "category": "Developer Tools",
+  "publisher": "Defold Foundation"
 }

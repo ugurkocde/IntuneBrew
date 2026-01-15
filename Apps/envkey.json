@@ -7,5 +7,7 @@
   "homepage": "https://www.envkey.com/",
   "fileName": "envkey_1.5.10.pkg",
   "type": "app",
-  "sha": "3a767d69d82bda56908b20600d6296cbdfe1d9c4831afed017d98a83788938a8"
+  "sha": "3a767d69d82bda56908b20600d6296cbdfe1d9c4831afed017d98a83788938a8",
+  "category": "Security",
+  "publisher": "EnvKey, Inc."
 }

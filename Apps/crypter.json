@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://github.com/HR/Crypter",
   "fileName": "Crypter-5.0.0.dmg",
-  "sha": "ed136dbfacae87d52493e56e0e225d13203de997c54e7ac5f159feeadfcd4b7a"
+  "sha": "ed136dbfacae87d52493e56e0e225d13203de997c54e7ac5f159feeadfcd4b7a",
+  "category": "Security",
+  "publisher": "HR"
 }

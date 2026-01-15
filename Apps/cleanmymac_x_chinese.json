@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.mycleanmymac.com/",
   "fileName": "CleanMyMacXChinese.dmg",
-  "sha": "c39b42a128b3b5542e7b9a6fcc51eb26d1ab2d123d991dc17e314b092ce671b4"
+  "sha": "c39b42a128b3b5542e7b9a6fcc51eb26d1ab2d123d991dc17e314b092ce671b4",
+  "category": "Utilities",
+  "publisher": "MacPaw Ltd."
 }

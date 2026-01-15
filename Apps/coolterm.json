@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://freeware.the-meiers.org/",
   "fileName": "CoolTermMac240.dmg",
-  "sha": "190a1f67d0362ce7ae4b531552925ef28e40004052c3be1fe9bf653e0678cddd"
+  "sha": "190a1f67d0362ce7ae4b531552925ef28e40004052c3be1fe9bf653e0678cddd",
+  "category": "Developer Tools",
+  "publisher": "The Meiers"
 }

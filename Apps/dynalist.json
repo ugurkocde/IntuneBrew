@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://dynalist.io/",
   "fileName": "download?file=Dynalist.dmg",
-  "sha": "f3452f2da222f484757382a9f33c3dd2c40d8ae6c2ade358dc768de7334a18f9"
+  "sha": "f3452f2da222f484757382a9f33c3dd2c40d8ae6c2ade358dc768de7334a18f9",
+  "category": "Productivity",
+  "publisher": "Dynalist, Inc."
 }

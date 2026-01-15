@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.android.com/filetransfer/",
   "fileName": "androidfiletransfer.dmg",
-  "sha": "b9249399a351e8146358ff1ddb546c68a63134b780be795ae64e0a4c2258bc61"
+  "sha": "b9249399a351e8146358ff1ddb546c68a63134b780be795ae64e0a4c2258bc61",
+  "category": "Utilities",
+  "publisher": "Google LLC"
 }
