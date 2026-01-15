@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://masscode.io/",
   "fileName": "massCode-4.4.0-arm64.dmg",
-  "sha": "8b74cd2f997fda7c6a1a69105c9b503ee2da3db91d9c0a4cfd121b9ac98be9fb"
+  "sha": "8b74cd2f997fda7c6a1a69105c9b503ee2da3db91d9c0a4cfd121b9ac98be9fb",
+  "category": "Developer Tools",
+  "publisher": "MassCode"
 }

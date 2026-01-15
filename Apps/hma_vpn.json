@@ -6,5 +6,7 @@
   "bundleId": "com.privax.osx.provpn.helper",
   "homepage": "https://www.hidemyass.com/index.html",
   "fileName": "HMA-VPN.dmg",
-  "sha": "8e394d115d9ff05ce68549031e01a29235ca28f9b251065b994780150183e147"
+  "sha": "8e394d115d9ff05ce68549031e01a29235ca28f9b251065b994780150183e147",
+  "category": "Security",
+  "publisher": "Hide My Ass! Ltd."
 }

@@ -7,5 +7,7 @@
   "homepage": "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-for-business",
   "fileName": "Microsoft_Outlook_16.105.26011018_Installer.pkg",
   "type": "pkg",
-  "sha": "c1c4df00a51e60ab5ae016a064ce54b04cf34bdd8fc445501975a9553aed3655"
+  "sha": "c1c4df00a51e60ab5ae016a064ce54b04cf34bdd8fc445501975a9553aed3655",
+  "category": "Productivity",
+  "publisher": "Microsoft Corporation"
 }

@@ -7,5 +7,7 @@
   "homepage": "https://github.com/koush/support-wiki/wiki/Helium-Desktop-Installer-and-Android-App",
   "fileName": "helium_1.0.0.pkg",
   "type": "app",
-  "sha": "6df89fa05886c0f80d3cdc69a35bcc0841d142e57bf13b0623a1aeb839f7a03a"
+  "sha": "6df89fa05886c0f80d3cdc69a35bcc0841d142e57bf13b0623a1aeb839f7a03a",
+  "category": "Utilities",
+  "publisher": "Koushik Dutta"
 }

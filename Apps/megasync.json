@@ -6,5 +6,7 @@
   "bundleId": "mega.mac",
   "homepage": "https://mega.nz/sync",
   "fileName": "MEGAsyncSetupArm64.dmg",
-  "sha": "5d0e9fa221d70d4744dfb3d0b1fc321a367bf8ed880df92fe8f27e83dbd98cae"
+  "sha": "5d0e9fa221d70d4744dfb3d0b1fc321a367bf8ed880df92fe8f27e83dbd98cae",
+  "category": "Utilities",
+  "publisher": "MEGA Limited"
 }

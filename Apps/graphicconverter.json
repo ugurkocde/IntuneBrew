@@ -7,5 +7,7 @@
   "homepage": "https://www.lemkesoft.de/en/products/graphicconverter/",
   "fileName": "graphicconverter_12.5.pkg",
   "type": "app",
-  "sha": "15e0b887213f322fd8c0e7a7cc1b345611229a73e31349f61491e3babca8cc76"
+  "sha": "15e0b887213f322fd8c0e7a7cc1b345611229a73e31349f61491e3babca8cc76",
+  "category": "Design",
+  "publisher": "Lemkesoft GmbH"
 }

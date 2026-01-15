@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://lunar.fyi/",
   "fileName": "Lunar-6.9.5.dmg",
-  "sha": "d58d1215f1a58867f5cdfe24f62a25a2d333a006c11f6ed1d1a6e53267dec833"
+  "sha": "d58d1215f1a58867f5cdfe24f62a25a2d333a006c11f6ed1d1a6e53267dec833",
+  "category": "Utilities",
+  "publisher": "Lunar"
 }

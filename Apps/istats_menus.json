@@ -7,5 +7,7 @@
   "homepage": "https://bjango.com/mac/istatmenus/",
   "fileName": "istats_menus_7.20.pkg",
   "type": "app",
-  "sha": "8e19013b62ff4db3267bf401e9131c69c67f5cda8a1a0311fb932a65fda31bde"
+  "sha": "8e19013b62ff4db3267bf401e9131c69c67f5cda8a1a0311fb932a65fda31bde",
+  "category": "Utilities",
+  "publisher": "Bjango"
 }

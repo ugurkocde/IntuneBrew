@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://kicad.org/",
   "fileName": "kicad-unified-universal-9.0.7.dmg",
-  "sha": "449525e4ac119dc79a36b9a5aba5e6a269ecdc1905b94dce9eaf44ea45fd84c2"
+  "sha": "449525e4ac119dc79a36b9a5aba5e6a269ecdc1905b94dce9eaf44ea45fd84c2",
+  "category": "Design",
+  "publisher": "KiCad Project"
 }

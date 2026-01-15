@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.granola.ai/",
   "fileName": "Granola-6.491.0-mac-universal.dmg",
-  "sha": "8463b0530344466a95070f2f162276f0e55232fa84e0d82d177ad45ac70b9028"
+  "sha": "8463b0530344466a95070f2f162276f0e55232fa84e0d82d177ad45ac70b9028",
+  "category": "Productivity",
+  "publisher": "Granola AI"
 }

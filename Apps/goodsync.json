@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.goodsync.com/",
   "fileName": "goodsync-vsub-mac.dmg",
-  "sha": "950e4dc50d68f0b23de13a98e812afbcc5db509c6f0e0019e2ea72f8042da25c"
+  "sha": "950e4dc50d68f0b23de13a98e812afbcc5db509c6f0e0019e2ea72f8042da25c",
+  "category": "Productivity",
+  "publisher": "Siber Systems, Inc."
 }

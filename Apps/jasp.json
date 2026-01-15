@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://jasp-stats.org/",
   "fileName": "JASP-0.95.4.0-macOS-arm64.dmg",
-  "sha": "da91ef4b78e7013da30da1c9981c2644e84bcf104f51e739c169e56abfdd5ab8"
+  "sha": "da91ef4b78e7013da30da1c9981c2644e84bcf104f51e739c169e56abfdd5ab8",
+  "category": "Productivity",
+  "publisher": "JASP Team"
 }

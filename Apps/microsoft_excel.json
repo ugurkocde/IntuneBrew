@@ -7,5 +7,7 @@
   "homepage": "https://www.microsoft.com/en-US/microsoft-365/excel",
   "fileName": "Microsoft_Excel_16.105.26011018_Installer.pkg",
   "type": "pkg",
-  "sha": "e26c6ae1974ab05674cd1f93c75c55f3c32441aab4574f1d08c311991deb88d5"
+  "sha": "e26c6ae1974ab05674cd1f93c75c55f3c32441aab4574f1d08c311991deb88d5",
+  "category": "Productivity",
+  "publisher": "Microsoft Corporation"
 }

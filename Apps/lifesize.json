@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.lifesize.com/",
   "fileName": "Lifesize-3.0.18-mac.zip",
-  "type": "app"
+  "type": "app",
+  "category": "Communication",
+  "publisher": "Lifesize, Inc."
 }

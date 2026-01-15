@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://nektony.com/mac-cleaner-pro",
   "fileName": "mac-cleaner-pro.dmg?build=585",
-  "sha": "0a07a55ef6f8d4b1e2510edc1098a1f55a7a0a123854a2487f7decc57a4f369b"
+  "sha": "0a07a55ef6f8d4b1e2510edc1098a1f55a7a0a123854a2487f7decc57a4f369b",
+  "category": "Utilities",
+  "publisher": "Nektony"
 }

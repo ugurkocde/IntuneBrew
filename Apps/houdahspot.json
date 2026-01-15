@@ -7,5 +7,7 @@
   "homepage": "https://www.houdah.com/houdahSpot/",
   "fileName": "houdahspot_6.6.1.pkg",
   "type": "app",
-  "sha": "f45ddf2ba628571a1765d173805bc5ae7fa15817b05e3397f9e9193e9defd9e4"
+  "sha": "f45ddf2ba628571a1765d173805bc5ae7fa15817b05e3397f9e9193e9defd9e4",
+  "category": "Utilities",
+  "publisher": "Houdah Software"
 }

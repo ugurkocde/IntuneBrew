@@ -7,5 +7,7 @@
   "homepage": "https://folivora.ai/keyboardcleantool",
   "fileName": "keyboardcleantool_7.pkg",
   "type": "app",
-  "sha": "1331dc8263ad265cced33eb3ed8f3e2c42529dde12ffd8e47d43411148ec3897"
+  "sha": "1331dc8263ad265cced33eb3ed8f3e2c42529dde12ffd8e47d43411148ec3897",
+  "category": "Utilities",
+  "publisher": "Folivora"
 }

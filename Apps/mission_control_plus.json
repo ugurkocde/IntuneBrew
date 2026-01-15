@@ -7,5 +7,7 @@
   "homepage": "https://fadel.io/MissionControlPlus",
   "fileName": "mission_control_plus_1.24.pkg",
   "type": "app",
-  "sha": "847b126c2aa2a28fbd198bab56487667d5efeab95287bce29796f1f8214466af"
+  "sha": "847b126c2aa2a28fbd198bab56487667d5efeab95287bce29796f1f8214466af",
+  "category": "Productivity",
+  "publisher": "Fadel"
 }

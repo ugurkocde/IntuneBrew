@@ -6,5 +6,7 @@
   "bundleId": "com.loupedeck.Loupedeck2",
   "homepage": "https://loupedeck.com/",
   "fileName": "LoupedeckInstaller_6.2.4.228.dmg",
-  "sha": "c1e38c6b304cea19b19a4a4c825787fa9483b836916a3b84f6a69b719b38ecec"
+  "sha": "c1e38c6b304cea19b19a4a4c825787fa9483b836916a3b84f6a69b719b38ecec",
+  "category": "Design",
+  "publisher": "Loupedeck"
 }

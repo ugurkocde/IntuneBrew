@@ -7,5 +7,7 @@
   "homepage": "https://mactracker.ca/",
   "fileName": "mactracker_8.0.1.pkg",
   "type": "app",
-  "sha": "b1290ac47daa6c67343a82406f87c352ed31f8a21b240163851bd3fd47c4ae48"
+  "sha": "b1290ac47daa6c67343a82406f87c352ed31f8a21b240163851bd3fd47c4ae48",
+  "category": "Utilities",
+  "publisher": "Mactracker"
 }

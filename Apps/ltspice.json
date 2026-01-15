@@ -7,5 +7,7 @@
   "homepage": "https://www.analog.com/en/resources/design-tools-and-calculators/ltspice-simulator.html",
   "fileName": "LTspice.pkg",
   "type": "pkg",
-  "sha": "187995e92965db1595ffdb1b712d90c157b9ecf01d12b24c4b5259f92f94258d"
+  "sha": "187995e92965db1595ffdb1b712d90c157b9ecf01d12b24c4b5259f92f94258d",
+  "category": "Design",
+  "publisher": "Analog Devices"
 }

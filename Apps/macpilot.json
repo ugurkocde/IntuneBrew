@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.koingosw.com/products/macpilot/",
   "fileName": "macpilot.dmg",
-  "sha": "b201d87d92d1a214b874ef343a970dac9cd4227d0eb15533c9f760aac4981659"
+  "sha": "b201d87d92d1a214b874ef343a970dac9cd4227d0eb15533c9f760aac4981659",
+  "category": "Utilities",
+  "publisher": "Koingo Software"
 }

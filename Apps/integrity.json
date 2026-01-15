@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://peacockmedia.software/mac/integrity/",
   "fileName": "integrity.dmg",
-  "sha": "a86d3a80ea39bd6e2b035f638b9f0b3dcee42c121077c9fc8be45e0ac4f533c3"
+  "sha": "a86d3a80ea39bd6e2b035f638b9f0b3dcee42c121077c9fc8be45e0ac4f533c3",
+  "category": "Developer Tools",
+  "publisher": "Peacock Media"
 }

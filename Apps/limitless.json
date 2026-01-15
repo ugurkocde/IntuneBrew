@@ -5,5 +5,7 @@
   "url": "https://download.limitless.ai/Limitless.dmg",
   "bundleId": null,
   "homepage": "https://www.limitless.ai/",
-  "fileName": "Limitless.dmg"
+  "fileName": "Limitless.dmg",
+  "category": "Productivity",
+  "publisher": "Limitless AI"
 }

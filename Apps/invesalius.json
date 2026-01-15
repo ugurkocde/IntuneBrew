@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://github.com/invesalius/invesalius3/",
   "fileName": "InVesalius.3.1.99998.arm64.dmg",
-  "sha": "b5032dfb80af29efde4e58c9dc48b164c31335d8ef91f5b51dbeea95088f778f"
+  "sha": "b5032dfb80af29efde4e58c9dc48b164c31335d8ef91f5b51dbeea95088f778f",
+  "category": "Utilities",
+  "publisher": "InVesalius"
 }

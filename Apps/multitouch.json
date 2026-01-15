@@ -6,5 +6,7 @@
   "bundleId": "com.brassmonkery.Multitouch",
   "homepage": "https://multitouch.app/",
   "fileName": "multitouch1.41.dmg",
-  "sha": "8f14ccfe355744d57b43e9e0fe897cdb2d5871bfbc05a0fbb931fb9200c70905"
+  "sha": "8f14ccfe355744d57b43e9e0fe897cdb2d5871bfbc05a0fbb931fb9200c70905",
+  "category": "Utilities",
+  "publisher": "Unknown"
 }

@@ -6,5 +6,7 @@
   "bundleId": "it.murus.murusfirewallrules",
   "homepage": "https://www.murusfirewall.com/",
   "fileName": "murus-2.7.zip",
-  "type": "app"
+  "type": "app",
+  "category": "Security",
+  "publisher": "Murus Firewall"
 }

@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://developer.apple.com/icon-composer/",
   "fileName": "Icon-Composer-1.2.dmg",
-  "sha": "dce4d78a615e543832fb2cdca3b28a31355cf21d57b6b4ab96f5b278ed7d5af6"
+  "sha": "dce4d78a615e543832fb2cdca3b28a31355cf21d57b6b4ab96f5b278ed7d5af6",
+  "category": "Developer Tools",
+  "publisher": "Apple Inc."
 }

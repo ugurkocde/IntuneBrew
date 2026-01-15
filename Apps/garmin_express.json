@@ -6,5 +6,7 @@
   "bundleId": "com.garmin.renu.client",
   "homepage": "https://www.garmin.com/en-US/software/express",
   "fileName": "GarminExpress.dmg",
-  "sha": "b788d7f7fc5073ffa311e2fac1211e99a8e070224baa7974231d042c04600586"
+  "sha": "b788d7f7fc5073ffa311e2fac1211e99a8e070224baa7974231d042c04600586",
+  "category": "Utilities",
+  "publisher": "Garmin Ltd."
 }

@@ -7,5 +7,7 @@
   "homepage": "https://iristech.co/iris/",
   "fileName": "iris_1.2.2.pkg",
   "type": "app",
-  "sha": "b105c9981b8d52b0c87b2f1b9e5dde52c4b43a8b0a265f72666fb172468c265f"
+  "sha": "b105c9981b8d52b0c87b2f1b9e5dde52c4b43a8b0a265f72666fb172468c265f",
+  "category": "Utilities",
+  "publisher": "IRIS Technologies Ltd"
 }

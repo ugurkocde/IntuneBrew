@@ -7,5 +7,7 @@
   "homepage": "https://www.minisim.app/",
   "fileName": "minisim_0.9.0.pkg",
   "type": "app",
-  "sha": "7f2b958e29b6bf652f47e62734f113071d8f9121823b926d5c65cfb87bc38895"
+  "sha": "7f2b958e29b6bf652f47e62734f113071d8f9121823b926d5c65cfb87bc38895",
+  "category": "Developer Tools",
+  "publisher": "MiniSim"
 }

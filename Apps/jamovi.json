@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.jamovi.org/",
   "fileName": "jamovi-2.7.17.0-macos-arm64.dmg",
-  "sha": "22a55e3d9becd5cd8cca0d302689df848f579fc052a49cfc77385848f95b9e72"
+  "sha": "22a55e3d9becd5cd8cca0d302689df848f579fc052a49cfc77385848f95b9e72",
+  "category": "Productivity",
+  "publisher": "jamovi Foundation"
 }

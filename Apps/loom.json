@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.loom.com/",
   "fileName": "Loom-0.327.1-arm64.dmg",
-  "sha": "7d867d3d5df5de92d106de84bcd6650cbf5afb8f40a9fb0214014cf681709266"
+  "sha": "7d867d3d5df5de92d106de84bcd6650cbf5afb8f40a9fb0214014cf681709266",
+  "category": "Productivity",
+  "publisher": "Loom, Inc."
 }

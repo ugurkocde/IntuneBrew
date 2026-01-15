@@ -7,5 +7,7 @@
   "homepage": "https://www.microsoft.com/en-US/microsoft-365/powerpoint",
   "fileName": "Microsoft_PowerPoint_16.105.26011018_Installer.pkg",
   "type": "pkg",
-  "sha": "256a9b984e69d0d4eb39bcf2ade6cc6f4716a8ea1c738e3e844df375d4d82fe6"
+  "sha": "256a9b984e69d0d4eb39bcf2ade6cc6f4716a8ea1c738e3e844df375d4d82fe6",
+  "category": "Productivity",
+  "publisher": "Microsoft Corporation"
 }

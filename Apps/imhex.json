@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://imhex.werwolv.net/",
   "fileName": "imhex-1.38.1-macOS-arm64.dmg",
-  "sha": "cbe57f8f16fd9a63bf0bd393d2db695ed201948a8f9167fd10b4af96847b0ee8"
+  "sha": "cbe57f8f16fd9a63bf0bd393d2db695ed201948a8f9167fd10b4af96847b0ee8",
+  "category": "Security",
+  "publisher": "WerWolv"
 }

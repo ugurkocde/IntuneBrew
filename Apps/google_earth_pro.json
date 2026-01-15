@@ -6,5 +6,7 @@
   "bundleId": "com.Google.GoogleEarthPro",
   "homepage": "https://www.google.com/earth/",
   "fileName": "googleearthpromac-intel-7.3.6.dmg",
-  "sha": "10c0a54e58d6686c11645edb7534a5ba91818b67ea7239430075a49d500a6eac"
+  "sha": "10c0a54e58d6686c11645edb7534a5ba91818b67ea7239430075a49d500a6eac",
+  "category": "Utilities",
+  "publisher": "Google LLC"
 }
