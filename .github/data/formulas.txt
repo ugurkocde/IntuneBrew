@@ -1,0 +1,20 @@
+# Homebrew formulas to package
+# Add one formula name per line
+# Source: https://workbrew.com/blog/favorite-homebrew-packages-2026
+
+# System monitoring
+btop
+fastfetch
+
+# Search & navigation
+fzf
+the_silver_searcher
+
+# Shell enhancements
+atuin
+gitstatus
+
+# Utilities
+displayplacer
+jq
+tree
