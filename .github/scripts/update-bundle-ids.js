@@ -6,9 +6,22 @@ const openai = new OpenAI({ apiKey: process.env.OPENAI_KEY });
 
 const APPS_DIR = path.join(__dirname, '../../Apps');
 const CACHE_FILE = path.join(__dirname, '../data/bundle-id-cache.json');
+const OVERRIDES_FILE = path.join(__dirname, '../data/bundle-id-overrides.json');
 
 // How many days before we re-verify an app's bundle ID
 const RECHECK_DAYS = 90;
+
+function loadOverrides() {
+  try {
+    if (fs.existsSync(OVERRIDES_FILE)) {
+      const data = JSON.parse(fs.readFileSync(OVERRIDES_FILE, 'utf8'));
+      return data.overrides || {};
+    }
+  } catch (error) {
+    console.error('Error loading overrides:', error.message);
+  }
+  return {};
+}
 
 function loadCache() {
   try {
@@ -127,10 +140,12 @@ async function processApps() {
   console.log();
 
   const cache = loadCache();
+  const overrides = loadOverrides();
   const files = fs.readdirSync(APPS_DIR).filter(f => f.endsWith('.json'));
 
   console.log(`Found ${files.length} app JSON files`);
   console.log(`Apps in cache: ${Object.keys(cache.apps).length}`);
+  console.log(`Manual overrides: ${Object.keys(overrides).length}`);
   console.log();
 
   let processed = 0;
@@ -138,6 +153,8 @@ async function processApps() {
   let skipped = 0;
   let errors = 0;
   let unknown = 0;
+  let fromOverride = 0;
+  const unknownApps = [];
 
   for (const file of files) {
     if (processed >= maxApps) {
@@ -161,11 +178,23 @@ async function processApps() {
       processed++;
       console.log(`[${processed}] Processing: ${appData.name || appKey}`);
 
-      const newBundleId = await getBundleId(appData);
+      // Check for manual override first
+      let newBundleId = null;
+      let source = 'api';
+
+      if (overrides[appKey]) {
+        newBundleId = overrides[appKey];
+        source = 'override';
+        console.log(`  -> Using manual override`);
+        fromOverride++;
+      } else {
+        newBundleId = await getBundleId(appData);
+      }
 
       if (!newBundleId) {
         console.log(`  -> Could not determine bundle ID (unknown)`);
         unknown++;
+        unknownApps.push({ key: appKey, name: appData.name, currentBundleId: appData.bundleId });
 
         // Still mark as checked so we don't keep retrying
         cache.apps[appKey] = {
@@ -180,7 +209,7 @@ async function processApps() {
       const oldBundleId = appData.bundleId;
 
       if (newBundleId !== oldBundleId) {
-        console.log(`  -> Updating bundle ID:`);
+        console.log(`  -> Updating bundle ID (source: ${source}):`);
         console.log(`     Old: ${oldBundleId || '(empty)'}`);
         console.log(`     New: ${newBundleId}`);
 
@@ -193,6 +222,7 @@ async function processApps() {
           bundle_id: newBundleId,
           previous_bundle_id: oldBundleId || null,
           status: 'updated',
+          source: source,
           name: appData.name
         };
       } else {
@@ -202,12 +232,15 @@ async function processApps() {
           last_checked: new Date().toISOString(),
           bundle_id: newBundleId,
           status: 'verified',
+          source: source,
           name: appData.name
         };
       }
 
-      // Rate limiting delay
-      await new Promise(resolve => setTimeout(resolve, 100));
+      // Rate limiting delay (only for API calls)
+      if (source === 'api') {
+        await new Promise(resolve => setTimeout(resolve, 100));
+      }
 
     } catch (error) {
       console.error(`Error processing ${file}: ${error.message}`);
@@ -225,10 +258,22 @@ async function processApps() {
   console.log('='.repeat(50));
   console.log(`Processed: ${processed}`);
   console.log(`Updated: ${updated}`);
+  console.log(`From overrides: ${fromOverride}`);
   console.log(`Skipped (cached): ${skipped}`);
   console.log(`Unknown: ${unknown}`);
   console.log(`Errors: ${errors}`);
   console.log('='.repeat(50));
+
+  // List unknown apps for manual review
+  if (unknownApps.length > 0) {
+    console.log();
+    console.log('='.repeat(50));
+    console.log('Apps needing manual bundle ID (add to bundle-id-overrides.json):');
+    console.log('='.repeat(50));
+    for (const app of unknownApps) {
+      console.log(`  "${app.key}": "" // ${app.name} (current: ${app.currentBundleId || 'none'})`);
+    }
+  }
 }
 
 processApps().catch(console.error);
