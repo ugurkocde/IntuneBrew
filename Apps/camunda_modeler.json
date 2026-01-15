@@ -7,5 +7,7 @@
   "homepage": "https://camunda.com/",
   "fileName": "camunda_modeler_5.43.1.pkg",
   "type": "app",
-  "sha": "2761859a629993b5b6da37ac91138310641dfab926ce7aa8407c99f8c638fd5f"
+  "sha": "2761859a629993b5b6da37ac91138310641dfab926ce7aa8407c99f8c638fd5f",
+  "category": "Developer Tools",
+  "publisher": "Camunda Services GmbH"
 }

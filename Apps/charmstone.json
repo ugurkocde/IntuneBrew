@@ -6,5 +6,7 @@
   "bundleId": "com.knollsoft.CharmstonePro",
   "homepage": "https://charmstone.app/",
   "fileName": "Charmstone1.43.dmg",
-  "sha": "6e2ebbf6e626dd326cf6ab11aa4d43c745ddb9f07e94ca7a8c96218e825fa8db"
+  "sha": "6e2ebbf6e626dd326cf6ab11aa4d43c745ddb9f07e94ca7a8c96218e825fa8db",
+  "category": "Productivity",
+  "publisher": "Charmstone"
 }

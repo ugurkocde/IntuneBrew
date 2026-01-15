@@ -7,5 +7,7 @@
   "homepage": "https://antigravity.google/",
   "fileName": "google_antigravity_1.14.2.pkg",
   "type": "app",
-  "sha": "952ce2c7f79b221c6d93aa89e930c41228d528bc555d88d45b7c92c4e76f75fa"
+  "sha": "952ce2c7f79b221c6d93aa89e930c41228d528bc555d88d45b7c92c4e76f75fa",
+  "category": "Developer Tools",
+  "publisher": "Google LLC"
 }

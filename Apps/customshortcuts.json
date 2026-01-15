@@ -7,5 +7,7 @@
   "homepage": "https://www.houdah.com/customShortcuts/",
   "fileName": "customshortcuts_1.3.pkg",
   "type": "app",
-  "sha": "4137e44f464e224d9360cc0cfd81f91aab819afb59188302740595ffd9ecdb4f"
+  "sha": "4137e44f464e224d9360cc0cfd81f91aab819afb59188302740595ffd9ecdb4f",
+  "category": "Utilities",
+  "publisher": "Houdah Software"
 }

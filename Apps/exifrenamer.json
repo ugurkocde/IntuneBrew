@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.qdev.de/?location=mac/exifrenamer&forcelang=en",
   "fileName": "ExifRenamer.dmg",
-  "sha": "b49a84bb74c02065561d55a38002d4db62495dcbead41ac4b528e5ead12ece2c"
+  "sha": "b49a84bb74c02065561d55a38002d4db62495dcbead41ac4b528e5ead12ece2c",
+  "category": "Utilities",
+  "publisher": "QDev"
 }

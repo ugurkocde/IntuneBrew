@@ -6,5 +6,7 @@
   "bundleId": "com.hankuper.adlock-desktop-ui.pkg",
   "homepage": "https://adlock.com/",
   "fileName": "AdLock_Installer.dmg",
-  "sha": "48c3ba813adfa179833e97f6110f32d690fdda47f5eebd741d1daf7fa7b20908"
+  "sha": "48c3ba813adfa179833e97f6110f32d690fdda47f5eebd741d1daf7fa7b20908",
+  "category": "Security",
+  "publisher": "AdLock"
 }

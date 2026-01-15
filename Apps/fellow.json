@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://fellow.app/",
   "fileName": "Fellow-1.7.9-universal.dmg",
-  "sha": "6721a784a4af76e401e9b4854de342ea26a93b0af38c6afb81f0bc1a91bfcef6"
+  "sha": "6721a784a4af76e401e9b4854de342ea26a93b0af38c6afb81f0bc1a91bfcef6",
+  "category": "Productivity",
+  "publisher": "Fellow.app"
 }

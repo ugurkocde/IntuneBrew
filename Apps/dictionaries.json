@@ -7,5 +7,7 @@
   "homepage": "https://dictionaries.io/",
   "fileName": "dictionaries_2.8.pkg",
   "type": "app",
-  "sha": "d3e2d0881504433f3ee4bdbfe5847f6d7aedde6540de4aeca8b6196b94dee2a7"
+  "sha": "d3e2d0881504433f3ee4bdbfe5847f6d7aedde6540de4aeca8b6196b94dee2a7",
+  "category": "Productivity",
+  "publisher": "Dictionaries.io"
 }

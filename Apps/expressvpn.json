@@ -7,5 +7,7 @@
   "homepage": "https://www.expressvpn.works/",
   "fileName": "expressvpn_mac_11.71.0.90727_release.pkg",
   "type": "pkg",
-  "sha": "4a13d83a20426d7dc96848ae33850d85820606440053325edf349597badd9b67"
+  "sha": "4a13d83a20426d7dc96848ae33850d85820606440053325edf349597badd9b67",
+  "category": "Security",
+  "publisher": "ExpressVPN International Ltd."
 }

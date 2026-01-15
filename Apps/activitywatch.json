@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://activitywatch.net/",
   "fileName": "activitywatch-v0.13.2-macos-x86_64.dmg",
-  "sha": "22f3bce0e169457902b2c8d2967701cde887171f737d281dd414a210bd3090ed"
+  "sha": "22f3bce0e169457902b2c8d2967701cde887171f737d281dd414a210bd3090ed",
+  "category": "Productivity",
+  "publisher": "ActivityWatch"
 }

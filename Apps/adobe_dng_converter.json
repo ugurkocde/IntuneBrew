@@ -6,5 +6,7 @@
   "bundleId": "com.adobe.CameraRawProfiles",
   "homepage": "https://helpx.adobe.com/camera-raw/using/adobe-dng-converter.html",
   "fileName": "DNGConverter_18_1_1.dmg",
-  "sha": "f52f7b3cb1762900b97f7254dc86d46fd800d7e991c0311f189926fba57ed45a"
+  "sha": "f52f7b3cb1762900b97f7254dc86d46fd800d7e991c0311f189926fba57ed45a",
+  "category": "Utilities",
+  "publisher": "Adobe Inc."
 }

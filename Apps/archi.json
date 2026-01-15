@@ -5,5 +5,7 @@
   "url": "https://github.com/archimatetool/archi.io/releases/download/5/Archi-Mac-Silicon-5.7.0.dmg",
   "bundleId": null,
   "homepage": "https://www.archimatetool.com/",
-  "fileName": "Archi-Mac-Silicon-5.7.0.dmg"
+  "fileName": "Archi-Mac-Silicon-5.7.0.dmg",
+  "category": "Design",
+  "publisher": "The Archi Team"
 }

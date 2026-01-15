@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://mac.eltima.com/download-manager.html",
   "fileName": "downloader_mac.dmg",
-  "sha": "051f292b984160bdd4948c1b70d0dae76a4a9be875b591fcae9fe7768191ca18"
+  "sha": "051f292b984160bdd4948c1b70d0dae76a4a9be875b591fcae9fe7768191ca18",
+  "category": "Utilities",
+  "publisher": "Eltima Software"
 }

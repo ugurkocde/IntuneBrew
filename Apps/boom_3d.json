@@ -6,5 +6,7 @@
   "bundleId": "com.globaldelight.Boom3D",
   "homepage": "https://www.globaldelight.com/boom/",
   "fileName": "Boom3D.dmg",
-  "sha": "3a534cf0a5a1f355a72d1bf280eb426c3c0411677d8d74ae1e7214629f5016e0"
+  "sha": "3a534cf0a5a1f355a72d1bf280eb426c3c0411677d8d74ae1e7214629f5016e0",
+  "category": "Utilities",
+  "publisher": "Global Delight Technologies Pvt. Ltd."
 }

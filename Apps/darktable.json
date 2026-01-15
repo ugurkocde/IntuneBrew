@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.darktable.org/",
   "fileName": "darktable-5.4.0-arm64.dmg",
-  "sha": "17e1eaf2bd7ab0ada2e93d4bba2ba6b81345e99eb338635682d08dae64d7a150"
+  "sha": "17e1eaf2bd7ab0ada2e93d4bba2ba6b81345e99eb338635682d08dae64d7a150",
+  "category": "Media",
+  "publisher": "darktable"
 }

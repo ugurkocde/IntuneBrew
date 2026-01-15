@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.dockfix.app/",
   "fileName": "DockFix.dmg",
-  "sha": "f8061b9f043ce0451c6ee376907bca61c6e4bed8120cea9f83ebbee7bfb41935"
+  "sha": "f8061b9f043ce0451c6ee376907bca61c6e4bed8120cea9f83ebbee7bfb41935",
+  "category": "Utilities",
+  "publisher": "DockFix"
 }

@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.bitrix24.com/apps/mobile-and-desktop-apps.php#desktop_app",
   "fileName": "bitrix24_desktop_arm.dmg",
-  "sha": "4b97e285ed9d86dad95a865f9c19b8454d4a1f85150097771e79631dede23e66"
+  "sha": "4b97e285ed9d86dad95a865f9c19b8454d4a1f85150097771e79631dede23e66",
+  "category": "Productivity",
+  "publisher": "Bitrix24"
 }

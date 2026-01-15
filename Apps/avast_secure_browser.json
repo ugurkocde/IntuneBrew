@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.avast.com/secure-browser#mac",
   "fileName": "AvastSecureBrowser.dmg",
-  "sha": "3533e22bc61ea90fd88014b210eef158cefad8631acdcda7930844d97b096763"
+  "sha": "3533e22bc61ea90fd88014b210eef158cefad8631acdcda7930844d97b096763",
+  "category": "Browsers",
+  "publisher": "AVAST Software s.r.o."
 }

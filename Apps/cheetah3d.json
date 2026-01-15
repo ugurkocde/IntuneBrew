@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.cheetah3d.com/",
   "fileName": "Cheetah3D.dmg",
-  "sha": "138c26a0ec742d20e4dcd05856a860d0953e58b5295f5d0e0eec44fd7c44dbc2"
+  "sha": "138c26a0ec742d20e4dcd05856a860d0953e58b5295f5d0e0eec44fd7c44dbc2",
+  "category": "Design",
+  "publisher": "Cheetah3D"
 }

@@ -6,5 +6,7 @@
   "bundleId": "com.iwaxx.Debookee.PacketTool",
   "homepage": "https://debookee.com/",
   "fileName": "debookee.zip",
-  "type": "app"
+  "type": "app",
+  "category": "Utilities",
+  "publisher": "Debookee"
 }

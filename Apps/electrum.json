@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://electrum.org/",
   "fileName": "electrum-4.6.2.dmg",
-  "sha": "c0cb271e9de5915d3bff740385efc6676cc802977a8218bbb3a5a83152d159fc"
+  "sha": "c0cb271e9de5915d3bff740385efc6676cc802977a8218bbb3a5a83152d159fc",
+  "category": "Security",
+  "publisher": "Electrum Technologies GmbH"
 }

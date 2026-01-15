@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.titanium-software.fr/en/calhash.html",
   "fileName": "CalHash.dmg",
-  "sha": "5dec1685f4772d574730078158ab6332295eebfa01c1c104a43e7ee2a5adf9c4"
+  "sha": "5dec1685f4772d574730078158ab6332295eebfa01c1c104a43e7ee2a5adf9c4",
+  "category": "Utilities",
+  "publisher": "Titanium Software"
 }

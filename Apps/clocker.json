@@ -7,5 +7,7 @@
   "homepage": "https://abhishekbanthia.com/clocker",
   "fileName": "clocker_23.01.pkg",
   "type": "app",
-  "sha": "a9d5a0e261af83a21c2cba6ca06638f3f837a102298b41c6a1e3e583ea2b8970"
+  "sha": "a9d5a0e261af83a21c2cba6ca06638f3f837a102298b41c6a1e3e583ea2b8970",
+  "category": "Productivity",
+  "publisher": "Abhishek Banthia"
 }

@@ -6,5 +6,7 @@
   "bundleId": "com.cisco.proximity",
   "homepage": "https://proximity.cisco.com/",
   "fileName": "Proximity.dmg",
-  "sha": "c9c0c28449e106d5b4598842701072f9201a3c6a53ccfb21295a7773f6fcc439"
+  "sha": "c9c0c28449e106d5b4598842701072f9201a3c6a53ccfb21295a7773f6fcc439",
+  "category": "Communication",
+  "publisher": "Cisco Systems, Inc."
 }

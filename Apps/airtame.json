@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://airtame.com/",
   "fileName": "Airtame-4.15.0.dmg",
-  "sha": "73b70be70c598354d5d4cbec5e2ad69e8d64131cc0ff1c20de9e8eeffbcc392d"
+  "sha": "73b70be70c598354d5d4cbec5e2ad69e8d64131cc0ff1c20de9e8eeffbcc392d",
+  "category": "Productivity",
+  "publisher": "Airtame"
 }

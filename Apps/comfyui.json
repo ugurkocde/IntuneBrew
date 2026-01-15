@@ -7,5 +7,7 @@
   "homepage": "https://www.comfy.org/",
   "fileName": "comfyui_0.7.2.pkg",
   "type": "app",
-  "sha": "8f87af9fb26f27d7480a995d6abde42274dc07bf6e0b9feab12460b757bbdf8b"
+  "sha": "8f87af9fb26f27d7480a995d6abde42274dc07bf6e0b9feab12460b757bbdf8b",
+  "category": "Media",
+  "publisher": "ComfyUI"
 }

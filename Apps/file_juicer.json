@@ -7,5 +7,7 @@
   "homepage": "https://echoone.com/filejuicer/",
   "fileName": "file_juicer_4.114.pkg",
   "type": "app",
-  "sha": "e781a77f81d9bb2225a2f5671183773b058cf9dbfccef0b7ccab0f29ab1a5571"
+  "sha": "e781a77f81d9bb2225a2f5671183773b058cf9dbfccef0b7ccab0f29ab1a5571",
+  "category": "Utilities",
+  "publisher": "Echo One"
 }

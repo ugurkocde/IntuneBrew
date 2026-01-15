@@ -7,5 +7,7 @@
   "homepage": "https://www.browserstack.com/",
   "fileName": "browserstack_local_testing_3.7.1.pkg",
   "type": "app",
-  "sha": "50eba501ba846f15e856f350fff33f04d784b0f7398f836f818fe5601667f14f"
+  "sha": "50eba501ba846f15e856f350fff33f04d784b0f7398f836f818fe5601667f14f",
+  "category": "Developer Tools",
+  "publisher": "BrowserStack"
 }

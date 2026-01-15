@@ -7,5 +7,7 @@
   "homepage": "https://github.com/bdash-app/bdash",
   "fileName": "bdash_1.31.0.pkg",
   "type": "app",
-  "sha": "250c4c64e3526729d9e8139e2ecaf0a37d746a2d83bf36e862addf1667688c51"
+  "sha": "250c4c64e3526729d9e8139e2ecaf0a37d746a2d83bf36e862addf1667688c51",
+  "category": "Developer Tools",
+  "publisher": "bdash-app"
 }
