@@ -1,0 +1,10 @@
+{
+  "name": "Boostnote.Next",
+  "description": "Markdown note editor for developers",
+  "version": "0.23.1",
+  "url": "https://github.com/BoostIO/BoostNote-App/releases/download/v0.23.1/boost-note-mac.dmg",
+  "bundleId": null,
+  "homepage": "https://github.com/BoostIO/BoostNote-App",
+  "fileName": "boost-note-mac.dmg",
+  "sha": "7495fb235067c6548179a7e6fbaaa728e9616b92e5b5984481d4c97f84996953"
+}

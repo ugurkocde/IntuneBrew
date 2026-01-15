@@ -1,0 +1,10 @@
+{
+  "name": "BlueJ",
+  "description": "Java Development Environment designed for beginners",
+  "version": "5.5.0",
+  "url": "https://github.com/k-pet-group/BlueJ-Greenfoot/releases/download/BLUEJ-RELEASE-5.5.0/BlueJ-mac-aarch64-5.5.0.dmg",
+  "bundleId": null,
+  "homepage": "https://www.bluej.org/",
+  "fileName": "BlueJ-mac-aarch64-5.5.0.dmg",
+  "sha": "206c4b329f8b47e84b547a4f8fa5afdc9e143a803717cd47f2a1a2cacf183546"
+}

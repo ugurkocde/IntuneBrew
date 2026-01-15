@@ -1,0 +1,12 @@
+{
+  "name": "Catch",
+  "description": "Broadcatching made easy",
+  "version": "2.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/catch_2.3.pkg",
+  "bundleId": null,
+  "homepage": "https://www.giorgiocalderolla.com/catch.html",
+  "fileName": "Catch-2.3.zip",
+  "type": "app",
+  "previous_version": "2.3",
+  "sha": "10f26f9826f01c53a11999f5d0d469ad2b6c9c36d72145afacb59a18ee806972"
+}

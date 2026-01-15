@@ -1,0 +1,10 @@
+{
+  "name": "DataGraph",
+  "description": "Scientific/statistical graphing software",
+  "version": "5.5",
+  "url": "https://www.visualdatatools.com/DataGraph/DataGraph.dmg",
+  "bundleId": null,
+  "homepage": "https://www.visualdatatools.com/DataGraph/",
+  "fileName": "DataGraph.dmg",
+  "sha": "874c67c8dac62efe3e5a7d9a4972c4bdffc50b85ddb209d2171b963f1b6dc98e"
+}

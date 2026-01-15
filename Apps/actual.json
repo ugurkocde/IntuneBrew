@@ -1,0 +1,10 @@
+{
+  "name": "Actual",
+  "description": "Privacy-focused app for managing your finances",
+  "version": "26.1.0",
+  "url": "https://github.com/actualbudget/actual/releases/download/v26.1.0/Actual-mac-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://actualbudget.org/",
+  "fileName": "Actual-mac-arm64.dmg",
+  "sha": "f117a89fcb10a5dc00c17ad1f0c79c01f8555d7aee07dec61a8c313e05ed691c"
+}

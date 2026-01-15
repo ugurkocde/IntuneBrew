@@ -1,0 +1,10 @@
+{
+  "name": "Android SDK Command-line Tools",
+  "description": "Command-line tools for building and debugging Android apps",
+  "version": "13114758",
+  "url": "https://dl.google.com/android/repository/commandlinetools-mac-13114758_latest.zip",
+  "bundleId": null,
+  "homepage": "https://developer.android.com/studio",
+  "fileName": "commandlinetools-mac-13114758_latest.zip",
+  "type": "app"
+}

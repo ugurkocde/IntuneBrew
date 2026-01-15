@@ -1,0 +1,10 @@
+{
+  "name": "CleanMyMac X Chinese",
+  "description": "Tool to remove unnecessary files and folders from disk Chinese edition",
+  "version": "4.15.14",
+  "url": "https://dl.devmate.com/com.macpaw.zh.CleanMyMac4/CleanMyMacXChinese.dmg",
+  "bundleId": null,
+  "homepage": "https://www.mycleanmymac.com/",
+  "fileName": "CleanMyMacXChinese.dmg",
+  "sha": "c39b42a128b3b5542e7b9a6fcc51eb26d1ab2d123d991dc17e314b092ce671b4"
+}

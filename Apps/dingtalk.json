@@ -1,0 +1,10 @@
+{
+  "name": "DingTalk",
+  "description": "Teamwork app by Alibaba Group",
+  "version": "8.0.2",
+  "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/mac_dmg/Release/M1-Beta/DingTalk_v8.0.2_48936485_universal.dmg",
+  "bundleId": "com.alibaba.DingTalkMac",
+  "homepage": "https://www.dingtalk.com/",
+  "fileName": "DingTalk_v8.0.2_48936485_universal.dmg",
+  "sha": "d35a0e88d92f9398a76959419864b6399a014dbe13c8a286ad4af2939d3b40b7"
+}

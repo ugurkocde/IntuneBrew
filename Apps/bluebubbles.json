@@ -1,0 +1,10 @@
+{
+  "name": "BlueBubbles",
+  "description": "Server for forwarding iMessages",
+  "version": "1.9.9",
+  "url": "https://github.com/BlueBubblesApp/bluebubbles-server/releases/download/v1.9.9/BlueBubbles-1.9.9-arm64.dmg",
+  "bundleId": "com.BlueBubbles.BlueBubbles-Server.ShipIt",
+  "homepage": "https://bluebubbles.app/",
+  "fileName": "BlueBubbles-1.9.9-arm64.dmg",
+  "sha": "fafd650c883f52e7494a6625e45249f2144d197378a4d57143ccf6198bb2e862"
+}

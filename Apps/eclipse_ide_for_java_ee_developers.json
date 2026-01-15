@@ -1,0 +1,10 @@
+{
+  "name": "Eclipse IDE for Java EE Developers",
+  "description": "Eclipse IDE for Java EE developers",
+  "version": "4.38",
+  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2025-12/R/eclipse-jee-2025-12-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
+  "bundleId": null,
+  "homepage": "https://eclipse.org/",
+  "fileName": "eclipse-jee-2025-12-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
+  "sha": "182b0bb6d4f004f4c6366a53aa142a4d34b0bbc3a0d2a013e82b2d0d1c4394e2"
+}

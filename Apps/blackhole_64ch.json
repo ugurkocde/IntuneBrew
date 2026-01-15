@@ -1,0 +1,10 @@
+{
+  "name": "BlackHole 64ch",
+  "description": "Virtual Audio Driver",
+  "version": "0.6.1",
+  "url": "https://existential.audio/downloads/BlackHole64ch-0.6.1.pkg",
+  "bundleId": "audio.existential.BlackHole64ch",
+  "homepage": "https://existential.audio/blackhole/",
+  "fileName": "BlackHole64ch-0.6.1.pkg",
+  "type": "pkg"
+}

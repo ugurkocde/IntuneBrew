@@ -1,0 +1,10 @@
+{
+  "name": "BlackHole 2ch",
+  "description": "Virtual Audio Driver",
+  "version": "0.6.1",
+  "url": "https://existential.audio/downloads/BlackHole2ch-0.6.1.pkg",
+  "bundleId": "audio.existential.BlackHole2ch",
+  "homepage": "https://existential.audio/blackhole/",
+  "fileName": "BlackHole2ch-0.6.1.pkg",
+  "type": "pkg"
+}
