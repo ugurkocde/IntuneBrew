@@ -119,7 +119,7 @@ jobs:
             # 12. Upload to Azure
             az storage blob upload --container-name pkg --file "$pkg_name" --name "$pkg_name" --overwrite true
 
-            # 13. Create/Update JSON file
+            # 13. Create/Update JSON file using jq
             azure_url="https://intunebrew.blob.core.windows.net/pkg/$pkg_name"
 
             # Handle empty dependencies
@@ -129,19 +129,19 @@ jobs:
               deps_json=$(echo "$deps" | jq -R 'split(",")' 2>/dev/null || echo "[]")
             fi
 
-            cat > "Formulas/${formula}.json" << EOF
-{
-  "name": "$formula",
-  "description": "$description",
-  "version": "$version",
-  "homepage": "$homepage",
-  "url": "$azure_url",
-  "fileName": "$pkg_name",
-  "sha": "$sha",
-  "bundledDependencies": $deps_json,
-  "binaryPath": "/usr/local/bin/$formula"
-}
-EOF
+            jq -n \
+              --arg name "$formula" \
+              --arg description "$description" \
+              --arg version "$version" \
+              --arg homepage "$homepage" \
+              --arg url "$azure_url" \
+              --arg fileName "$pkg_name" \
+              --arg sha "$sha" \
+              --argjson bundledDependencies "$deps_json" \
+              --arg binaryPath "/usr/local/bin/$formula" \
+              '{name: $name, description: $description, version: $version, homepage: $homepage, url: $url, fileName: $fileName, sha: $sha, bundledDependencies: $bundledDependencies, binaryPath: $binaryPath}' \
+              > "Formulas/${formula}.json"
+
             echo "Created Formulas/${formula}.json"
 
             # Cleanup
