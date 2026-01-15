@@ -1676,7 +1676,7 @@ function Get-IntuneApp {
             $response = Invoke-MgGraphRequest -Uri $intuneQueryUri -Method Get
             if ($response.value.Count -gt 0) {
                 # Find the latest version among potentially multiple entries
-                $latestAppEntry = $response.value | Sort-Object -Property @{Expression = { [Version]($_.primaryBundleVersion -replace '-.*$') } } -Descending | Select-Object -First 1
+                $latestAppEntry = $response.value | Sort-Object -Property @{Expression = { [Version]($_.primaryBundleVersion -replace '-.*$' -replace '\s*\(.*\)$', '') } } -Descending | Select-Object -First 1
                 
                 $intuneVersion = $latestAppEntry.primaryBundleVersion
                 $intuneAppId = $latestAppEntry.id # Get the ID of the latest version
@@ -1785,9 +1785,9 @@ function Test-NewerVersion($githubVersion, $intuneVersion) {
         $ghVersionParts = $ghVersion -split ','
         $itVersionParts = $itVersion -split ','
 
-        # Compare main version numbers first
-        $ghMainVersion = [Version]($ghVersionParts[0])
-        $itMainVersion = [Version]($itVersionParts[0])
+        # Compare main version numbers first (strip parenthetical content like "build 6300")
+        $ghMainVersion = [Version]($ghVersionParts[0] -replace '\s*\(.*\)$', '')
+        $itMainVersion = [Version]($itVersionParts[0] -replace '\s*\(.*\)$', '')
 
         if ($ghMainVersion -ne $itMainVersion) {
             return ($ghMainVersion -gt $itMainVersion)
