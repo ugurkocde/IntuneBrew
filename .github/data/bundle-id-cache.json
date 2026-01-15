@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-15T18:13:52.614Z",
+  "last_full_scan": "2026-01-15T22:10:49.627Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -2452,6 +2452,347 @@
       "bundle_id": null,
       "status": "unknown",
       "name": "Go2Shell"
+    },
+    "010_editor": {
+      "last_checked": "2026-01-15T21:26:34.192Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "010 Editor"
+    },
+    "1password_cli": {
+      "last_checked": "2026-01-15T21:27:07.878Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "1Password CLI"
+    },
+    "4k_slideshow_maker": {
+      "last_checked": "2026-01-15T21:27:37.139Z",
+      "bundle_id": "com.openmedia.4kslideshowmaker",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "4K Slideshow Maker"
+    },
+    "4k_stogram": {
+      "last_checked": "2026-01-15T21:29:12.344Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "4K Stogram"
+    },
+    "4k_video_downloader": {
+      "last_checked": "2026-01-15T21:29:43.994Z",
+      "bundle_id": "com.openmedia.4kvideodownloader",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "4K Video Downloader"
+    },
+    "4k_video_to_mp3": {
+      "last_checked": "2026-01-15T21:30:46.336Z",
+      "bundle_id": "com.openmedia.4kvideotomp3",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "4K Video to MP3"
+    },
+    "4k_youtube_to_mp3": {
+      "last_checked": "2026-01-15T21:31:35.761Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "4K YouTube to MP3"
+    },
+    "abbyy_finereader_pdf": {
+      "last_checked": "2026-01-15T21:32:34.308Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "ABBYY FineReader PDF"
+    },
+    "activedock": {
+      "last_checked": "2026-01-15T21:33:14.116Z",
+      "bundle_id": "com.sergey-gerasimenko.ActiveDock-2",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "ActiveDock"
+    },
+    "activitywatch": {
+      "last_checked": "2026-01-15T21:34:30.895Z",
+      "bundle_id": "net.activitywatch",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "ActivityWatch"
+    },
+    "adlock": {
+      "last_checked": "2026-01-15T21:34:57.281Z",
+      "bundle_id": "com.hankuper.adlock.desktop",
+      "previous_bundle_id": "com.hankuper.adlock-desktop-ui.pkg",
+      "status": "updated",
+      "source": "api",
+      "name": "AdLock"
+    },
+    "adobe_digital_editions": {
+      "last_checked": "2026-01-15T21:35:17.349Z",
+      "bundle_id": "com.adobe.adobedigitaleditions.app",
+      "status": "verified",
+      "source": "api",
+      "name": "Adobe Digital Editions"
+    },
+    "adobe_dng_converter": {
+      "last_checked": "2026-01-15T21:35:40.081Z",
+      "bundle_id": "com.adobe.DNGConverter",
+      "previous_bundle_id": "com.adobe.CameraRawProfiles",
+      "status": "updated",
+      "source": "api",
+      "name": "Adobe DNG Converter"
+    },
+    "airserver": {
+      "last_checked": "2026-01-15T21:36:07.954Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "AirServer"
+    },
+    "airtame": {
+      "last_checked": "2026-01-15T21:36:28.250Z",
+      "bundle_id": "com.airtame.airtame-application",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Airtame"
+    },
+    "akiflow": {
+      "last_checked": "2026-01-15T21:36:55.170Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Akiflow"
+    },
+    "amethyst": {
+      "last_checked": "2026-01-15T21:37:36.809Z",
+      "bundle_id": "com.amethyst.Amethyst",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Amethyst"
+    },
+    "anytype": {
+      "last_checked": "2026-01-15T21:38:56.175Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Anytype"
+    },
+    "appium_inspector_gui": {
+      "last_checked": "2026-01-15T21:40:06.477Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Appium Inspector GUI"
+    },
+    "archi": {
+      "last_checked": "2026-01-15T21:41:50.319Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Archi"
+    },
+    "avast_secure_browser": {
+      "last_checked": "2026-01-15T21:42:24.227Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Avast Secure Browser"
+    },
+    "axure_rp": {
+      "last_checked": "2026-01-15T21:43:25.224Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Axure RP"
+    },
+    "backlog": {
+      "last_checked": "2026-01-15T21:44:37.835Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Backlog"
+    },
+    "bdash": {
+      "last_checked": "2026-01-15T21:45:49.726Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Bdash"
+    },
+    "beaver_notes": {
+      "last_checked": "2026-01-15T21:46:25.371Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Beaver Notes"
+    },
+    "betaflightconfigurator": {
+      "last_checked": "2026-01-15T21:47:01.555Z",
+      "bundle_id": "com.nw-builder.betaflight-configurator",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Betaflight-Configurator"
+    },
+    "bezel": {
+      "last_checked": "2026-01-15T21:49:23.828Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Bezel"
+    },
+    "binance": {
+      "last_checked": "2026-01-15T21:50:08.937Z",
+      "bundle_id": "com.binance.BinanceDesktop",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Binance"
+    },
+    "bitbox": {
+      "last_checked": "2026-01-15T21:50:44.261Z",
+      "bundle_id": "ch.shiftcrypto.wallet",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "BitBox"
+    },
+    "bitrix24": {
+      "last_checked": "2026-01-15T21:51:55.484Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Bitrix24"
+    },
+    "blockblock": {
+      "last_checked": "2026-01-15T21:53:04.914Z",
+      "bundle_id": "com.objective-see.blockblock",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "BlockBlock"
+    },
+    "bluewallet": {
+      "last_checked": "2026-01-15T21:54:47.874Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "BlueWallet"
+    },
+    "boom_3d": {
+      "last_checked": "2026-01-15T21:55:16.175Z",
+      "bundle_id": "com.globaldelight.Boom3D",
+      "status": "unknown",
+      "name": "Boom 3D"
+    },
+    "browserstack_local_testing": {
+      "last_checked": "2026-01-15T21:55:44.203Z",
+      "bundle_id": "com.browserstack.local",
+      "status": "verified",
+      "source": "api",
+      "name": "BrowserStack Local Testing"
+    },
+    "buttercup": {
+      "last_checked": "2026-01-15T21:56:55.352Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Buttercup"
+    },
+    "buzz": {
+      "last_checked": "2026-01-15T21:57:59.989Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Buzz"
+    },
+    "cacher": {
+      "last_checked": "2026-01-15T21:58:38.405Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Cacher"
+    },
+    "calhash": {
+      "last_checked": "2026-01-15T21:59:38.380Z",
+      "bundle_id": "com.titanium.CalHash",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "CalHash"
+    },
+    "calibrite_profiler": {
+      "last_checked": "2026-01-15T22:00:02.615Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "calibrite PROFILER"
+    },
+    "camunda_modeler": {
+      "last_checked": "2026-01-15T22:00:25.212Z",
+      "bundle_id": "com.camunda.CamundaModeler",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Camunda Modeler"
+    },
+    "captain": {
+      "last_checked": "2026-01-15T22:02:27.040Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Captain"
+    },
+    "captin": {
+      "last_checked": "2026-01-15T22:03:07.757Z",
+      "bundle_id": "com.100hps.captin",
+      "status": "unknown",
+      "name": "Captin"
+    },
+    "capto": {
+      "last_checked": "2026-01-15T22:03:29.168Z",
+      "bundle_id": "com.globaldelight.Capto",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Capto"
+    },
+    "cardhop": {
+      "last_checked": "2026-01-15T22:04:31.393Z",
+      "bundle_id": "com.flexibits.cardhop.mac",
+      "status": "verified",
+      "source": "api",
+      "name": "Cardhop"
+    },
+    "cellprofiler": {
+      "last_checked": "2026-01-15T22:05:31.793Z",
+      "bundle_id": "org.cellprofiler.CellProfiler",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "CellProfiler"
+    },
+    "chalk": {
+      "last_checked": "2026-01-15T22:06:36.312Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Chalk"
+    },
+    "charmstone": {
+      "last_checked": "2026-01-15T22:07:20.035Z",
+      "bundle_id": "com.knollsoft.Charmstone",
+      "previous_bundle_id": "com.knollsoft.CharmstonePro",
+      "status": "updated",
+      "source": "api",
+      "name": "Charmstone"
+    },
+    "chatwork": {
+      "last_checked": "2026-01-15T22:07:53.255Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "ChatWork"
+    },
+    "cheetah3d": {
+      "last_checked": "2026-01-15T22:08:44.874Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Cheetah3D"
+    },
+    "chime": {
+      "last_checked": "2026-01-15T22:10:49.527Z",
+      "bundle_id": "com.chimehq.Edit",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Chime"
     }
   }
 }

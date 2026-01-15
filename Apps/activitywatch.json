@@ -3,7 +3,7 @@
   "description": "Time tracker",
   "version": "0.13.2",
   "url": "https://github.com/ActivityWatch/activitywatch/releases/download/v0.13.2/activitywatch-v0.13.2-macos-x86_64.dmg",
-  "bundleId": null,
+  "bundleId": "net.activitywatch",
   "homepage": "https://activitywatch.net/",
   "fileName": "activitywatch-v0.13.2-macos-x86_64.dmg",
   "sha": "22f3bce0e169457902b2c8d2967701cde887171f737d281dd414a210bd3090ed",

@@ -3,7 +3,7 @@
   "description": "Free video downloader",
   "version": "4.33.5",
   "url": "https://dl.4kdownload.com/app/4kvideodownloader_4.33.5_x64.dmg",
-  "bundleId": null,
+  "bundleId": "com.openmedia.4kvideodownloader",
   "homepage": "https://www.4kdownload.com/products/product-videodownloader",
   "fileName": "4kvideodownloader_4.33.5_x64.dmg",
   "sha": "e16993ebb60f18612fa2444c8b60d95745f14d6fca226a00c5d10eee1fb8d78a",

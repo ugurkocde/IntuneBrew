@@ -3,7 +3,7 @@
   "description": "Automatic tiling window manager similar to xmonad",
   "version": "0.24.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/amethyst_0.24.1.pkg",
-  "bundleId": null,
+  "bundleId": "com.amethyst.Amethyst",
   "homepage": "https://ianyh.com/amethyst/",
   "fileName": "amethyst_0.24.1.pkg",
   "type": "app",

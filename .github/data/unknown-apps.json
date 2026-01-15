@@ -1,212 +1,142 @@
 [
   {
-    "key": "compositor",
-    "name": "Compositor",
+    "key": "010_editor",
+    "name": "010 Editor",
     "currentBundleId": null
   },
   {
-    "key": "crypter",
-    "name": "Crypter",
+    "key": "1password_cli",
+    "name": "1Password CLI",
     "currentBundleId": null
   },
   {
-    "key": "cursr",
-    "name": "Cursr",
+    "key": "4k_stogram",
+    "name": "4K Stogram",
     "currentBundleId": null
   },
   {
-    "key": "deepgit",
-    "name": "DeepGit",
+    "key": "4k_youtube_to_mp3",
+    "name": "4K YouTube to MP3",
     "currentBundleId": null
   },
   {
-    "key": "devkinsta",
-    "name": "DevKinsta",
+    "key": "abbyy_finereader_pdf",
+    "name": "ABBYY FineReader PDF",
     "currentBundleId": null
   },
   {
-    "key": "devonagent_pro",
-    "name": "DEVONagent Pro",
+    "key": "airserver",
+    "name": "AirServer",
     "currentBundleId": null
   },
   {
-    "key": "dingtalk",
-    "name": "DingTalk",
-    "currentBundleId": "com.alibaba.DingTalkMac"
-  },
-  {
-    "key": "douyin",
-    "name": "Douyin",
+    "key": "akiflow",
+    "name": "Akiflow",
     "currentBundleId": null
   },
   {
-    "key": "duoconnect",
-    "name": "DuoConnect",
-    "currentBundleId": "com.duo.connect.bin"
-  },
-  {
-    "key": "dust3d",
-    "name": "Dust3D",
+    "key": "anytype",
+    "name": "Anytype",
     "currentBundleId": null
   },
   {
-    "key": "dynalist",
-    "name": "Dynalist",
+    "key": "appium_inspector_gui",
+    "name": "Appium Inspector GUI",
     "currentBundleId": null
   },
   {
-    "key": "eclipse_for_rcp_and_rap_developers",
-    "name": "Eclipse for RCP and RAP Developers",
+    "key": "archi",
+    "name": "Archi",
     "currentBundleId": null
   },
   {
-    "key": "eclipse_ide_for_cc_developers",
-    "name": "Eclipse IDE for C/C++ Developers",
+    "key": "avast_secure_browser",
+    "name": "Avast Secure Browser",
     "currentBundleId": null
   },
   {
-    "key": "eclipse_ide_for_java_ee_developers",
-    "name": "Eclipse IDE for Java EE Developers",
+    "key": "axure_rp",
+    "name": "Axure RP",
     "currentBundleId": null
   },
   {
-    "key": "eclipse_installer",
-    "name": "Eclipse Installer",
+    "key": "backlog",
+    "name": "Backlog",
     "currentBundleId": null
   },
   {
-    "key": "electric_sheep",
-    "name": "Electric Sheep",
-    "currentBundleId": "org.electricsheep.electricSheep.*"
-  },
-  {
-    "key": "electron_cash",
-    "name": "Electron Cash",
+    "key": "bdash",
+    "name": "Bdash",
     "currentBundleId": null
   },
   {
-    "key": "electron_fiddle",
-    "name": "Electron Fiddle",
+    "key": "beaver_notes",
+    "name": "Beaver Notes",
     "currentBundleId": null
   },
   {
-    "key": "elgato_control_center",
-    "name": "Elgato Control Center",
-    "currentBundleId": "com.corsair.ControlCenter"
-  },
-  {
-    "key": "enclave",
-    "name": "Enclave",
-    "currentBundleId": "com.enclave.*"
-  },
-  {
-    "key": "envkey",
-    "name": "EnvKey",
+    "key": "bezel",
+    "name": "Bezel",
     "currentBundleId": null
   },
   {
-    "key": "extraterm",
-    "name": "Extraterm",
+    "key": "bitrix24",
+    "name": "Bitrix24",
     "currentBundleId": null
   },
   {
-    "key": "ferdium",
-    "name": "Ferdium",
-    "currentBundleId": "com.ferdium.ferdium-app"
-  },
-  {
-    "key": "fig",
-    "name": "fig",
-    "currentBundleId": "com.mschrage.fig"
-  },
-  {
-    "key": "filen",
-    "name": "Filen",
+    "key": "bluewallet",
+    "name": "BlueWallet",
     "currentBundleId": null
   },
   {
-    "key": "firecamp",
-    "name": "Firecamp",
+    "key": "boom_3d",
+    "name": "Boom 3D",
+    "currentBundleId": "com.globaldelight.Boom3D"
+  },
+  {
+    "key": "buttercup",
+    "name": "Buttercup",
     "currentBundleId": null
   },
   {
-    "key": "fleet",
-    "name": "Fleet",
+    "key": "buzz",
+    "name": "Buzz",
     "currentBundleId": null
   },
   {
-    "key": "floorp_browser",
-    "name": "Floorp browser",
+    "key": "cacher",
+    "name": "Cacher",
     "currentBundleId": null
   },
   {
-    "key": "flowvision",
-    "name": "FlowVision",
-    "currentBundleId": "netdcy.FlowVision"
-  },
-  {
-    "key": "fontlab",
-    "name": "Fontlab",
+    "key": "calibrite_profiler",
+    "name": "calibrite PROFILER",
     "currentBundleId": null
   },
   {
-    "key": "fork",
-    "name": "Fork",
+    "key": "captain",
+    "name": "Captain",
     "currentBundleId": null
   },
   {
-    "key": "foxit_pdf_editor",
-    "name": "Foxit PDF Editor",
-    "currentBundleId": "com.foxit.pkg.pdfeditor"
+    "key": "captin",
+    "name": "Captin",
+    "currentBundleId": "com.100hps.captin"
   },
   {
-    "key": "free_ruler",
-    "name": "Free Ruler",
-    "currentBundleId": "com.pascal.freeruler"
+    "key": "chalk",
+    "name": "Chalk",
+    "currentBundleId": null
   },
   {
-    "key": "freecad",
-    "name": "FreeCAD",
-    "currentBundleId": "org.freecad.FreeCAD"
+    "key": "chatwork",
+    "name": "ChatWork",
+    "currentBundleId": null
   },
   {
-    "key": "freelens",
-    "name": "Freelens",
-    "currentBundleId": "app.freelens.Freelens"
-  },
-  {
-    "key": "freetube",
-    "name": "FreeTube",
-    "currentBundleId": "io.freetubeapp.freetube"
-  },
-  {
-    "key": "geany",
-    "name": "Geany",
-    "currentBundleId": "org.geany.geany"
-  },
-  {
-    "key": "geekbench",
-    "name": "Geekbench",
-    "currentBundleId": "com.primatelabs.Geekbench6"
-  },
-  {
-    "key": "geekbench_ai",
-    "name": "Geekbench AI",
-    "currentBundleId": "com.primatelabs.macos.geekbenchml"
-  },
-  {
-    "key": "git_credential_manager",
-    "name": "Git Credential Manager",
-    "currentBundleId": "com.microsoft.GitCredentialManager"
-  },
-  {
-    "key": "gitfinder",
-    "name": "GitFinder",
-    "currentBundleId": "ag.zigz.GitFinder"
-  },
-  {
-    "key": "go2shell",
-    "name": "Go2Shell",
+    "key": "cheetah3d",
+    "name": "Cheetah3D",
     "currentBundleId": null
   }
 ]

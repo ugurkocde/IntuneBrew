@@ -3,7 +3,7 @@
   "description": "Cryptocurrency exchange",
   "version": "2.2.1",
   "url": "https://ftp.binance.com/electron-desktop/mac/production/binance-2.2.1-arm64.dmg",
-  "bundleId": null,
+  "bundleId": "com.binance.BinanceDesktop",
   "homepage": "https://binance.com/",
   "fileName": "binance-2.2.1-arm64.dmg",
   "sha": "b69c093e610bccb1145ffae78b5ba7c7c7d8388f842d56b652740c3a1c8d426c",
