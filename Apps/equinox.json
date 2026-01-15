@@ -3,7 +3,7 @@
   "description": "Create dynamic wallpapers",
   "version": "4.0",
   "url": "https://github.com/rlxone/Equinox/releases/download/v4.0/Equinox.dmg",
-  "bundleId": null,
+  "bundleId": "com.rlxone.equinox",
   "homepage": "https://equinoxmac.com/",
   "fileName": "Equinox.dmg",
   "sha": "ab2dfc4fa18f8fd808aa376bc4e20ea7c23e0eb8f3eb77387a25bef06728f2af",

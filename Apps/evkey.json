@@ -3,7 +3,7 @@
   "description": "Vietnamese keyboard",
   "version": "3.3.8",
   "url": "https://intunebrew.blob.core.windows.net/pkg/evkey_3.3.8.pkg",
-  "bundleId": null,
+  "bundleId": "com.lamquangminh.evkey",
   "homepage": "https://evkeyvn.com/",
   "fileName": "evkey_3.3.8.pkg",
   "type": "app",

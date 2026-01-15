@@ -3,7 +3,7 @@
   "description": "Font manager",
   "version": "2.24.9",
   "url": "https://releases.fontba.se/mac/FontBase-2.24.9.dmg",
-  "bundleId": null,
+  "bundleId": "com.dominiklevitsky.fontbase",
   "homepage": "https://fontba.se/",
   "fileName": "FontBase-2.24.9.dmg",
   "sha": "2f225d919af4d31290779488b84192e499f0d344922052e0e84ceab17dbdfe63",

@@ -3,7 +3,7 @@
   "description": "Git client for simultaneous branches on top of your existing workflow",
   "version": "0.18.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/gitbutler_0.18.3.pkg",
-  "bundleId": null,
+  "bundleId": "com.gitbutler.app",
   "homepage": "https://gitbutler.com/",
   "fileName": "GitButler.app.tar.gz",
   "type": "app",

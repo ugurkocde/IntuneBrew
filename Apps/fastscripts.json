@@ -3,7 +3,7 @@
   "description": "Tool for running time-saving scripts",
   "version": "3.3.8",
   "url": "https://intunebrew.blob.core.windows.net/pkg/fastscripts_3.3.8.pkg",
-  "bundleId": null,
+  "bundleId": "com.red-sweater.fastscripts3",
   "homepage": "https://redsweater.com/fastscripts/",
   "fileName": "fastscripts_3.3.8.pkg",
   "type": "app",

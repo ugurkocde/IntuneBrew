@@ -3,7 +3,7 @@
   "description": "Font editor",
   "version": "3.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/glyphs_3.5.pkg",
-  "bundleId": null,
+  "bundleId": "com.GeorgSeifert.Glyphs3",
   "homepage": "https://glyphsapp.com/",
   "fileName": "Glyphs3.5-3509.zip",
   "type": "app",

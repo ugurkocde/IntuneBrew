@@ -3,7 +3,7 @@
   "description": "Annotation tool for audio and video recordings",
   "version": "7.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/elan_7.0.pkg",
-  "bundleId": null,
+  "bundleId": "nl.mpi.elan",
   "homepage": "https://archive.mpi.nl/tla/elan",
   "fileName": "elan_7.0.pkg",
   "type": "app",

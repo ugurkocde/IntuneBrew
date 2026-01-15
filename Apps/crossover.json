@@ -3,7 +3,7 @@
   "description": "Tool to run Windows software",
   "version": "25.1.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/crossover_25.1.1.pkg",
-  "bundleId": null,
+  "bundleId": "com.codeweavers.CrossOver",
   "homepage": "https://www.codeweavers.com/products/crossover-mac/",
   "fileName": "crossover-25.1.1.zip",
   "type": "app",

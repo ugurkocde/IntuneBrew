@@ -1,102 +1,212 @@
 [
   {
-    "key": "ableton_live_lite",
-    "name": "Ableton Live Lite",
-    "currentBundleId": "com.ableton.live"
-  },
-  {
-    "key": "actual",
-    "name": "Actual",
+    "key": "compositor",
+    "name": "Compositor",
     "currentBundleId": null
   },
   {
-    "key": "airdroid",
-    "name": "AirDroid",
+    "key": "crypter",
+    "name": "Crypter",
     "currentBundleId": null
   },
   {
-    "key": "alloy",
-    "name": "Alloy",
+    "key": "cursr",
+    "name": "Cursr",
     "currentBundleId": null
   },
   {
-    "key": "amie",
-    "name": "Amie",
+    "key": "deepgit",
+    "name": "DeepGit",
     "currentBundleId": null
   },
   {
-    "key": "android_file_transfer",
-    "name": "Android File Transfer",
+    "key": "devkinsta",
+    "name": "DevKinsta",
     "currentBundleId": null
   },
   {
-    "key": "android_ndk",
-    "name": "Android NDK",
+    "key": "devonagent_pro",
+    "name": "DEVONagent Pro",
     "currentBundleId": null
   },
   {
-    "key": "android_sdk_commandline_tools",
-    "name": "Android SDK Command-line Tools",
+    "key": "dingtalk",
+    "name": "DingTalk",
+    "currentBundleId": "com.alibaba.DingTalkMac"
+  },
+  {
+    "key": "douyin",
+    "name": "Douyin",
     "currentBundleId": null
   },
   {
-    "key": "android_sdk_platformtools",
-    "name": "Android SDK Platform-Tools",
+    "key": "duoconnect",
+    "name": "DuoConnect",
+    "currentBundleId": "com.duo.connect.bin"
+  },
+  {
+    "key": "dust3d",
+    "name": "Dust3D",
     "currentBundleId": null
   },
   {
-    "key": "appgrid",
-    "name": "AppGrid",
-    "currentBundleId": "com.sdegutis.AppGrid"
-  },
-  {
-    "key": "applite",
-    "name": "Applite",
+    "key": "dynalist",
+    "name": "Dynalist",
     "currentBundleId": null
   },
   {
-    "key": "apptivate",
-    "name": "Apptivate",
+    "key": "eclipse_for_rcp_and_rap_developers",
+    "name": "Eclipse for RCP and RAP Developers",
     "currentBundleId": null
   },
   {
-    "key": "aptible_toolbelt",
-    "name": "Aptible Toolbelt",
-    "currentBundleId": "com.aptible.toolbelt"
-  },
-  {
-    "key": "basictex",
-    "name": "BasicTeX",
-    "currentBundleId": "org.tug.mactex.basictex2025"
-  },
-  {
-    "key": "bilibili",
-    "name": "Bilibili",
+    "key": "eclipse_ide_for_cc_developers",
+    "name": "Eclipse IDE for C/C++ Developers",
     "currentBundleId": null
   },
   {
-    "key": "boostnotenext",
-    "name": "Boostnote.Next",
+    "key": "eclipse_ide_for_java_ee_developers",
+    "name": "Eclipse IDE for Java EE Developers",
     "currentBundleId": null
   },
   {
-    "key": "cerebro",
-    "name": "Cerebro",
-    "currentBundleId": "cerebro"
-  },
-  {
-    "key": "chronosync",
-    "name": "ChronoSync",
-    "currentBundleId": "com.econtechnologies.pkg.ChronoSyncApplication"
-  },
-  {
-    "key": "cleartext",
-    "name": "Cleartext",
+    "key": "eclipse_installer",
+    "name": "Eclipse Installer",
     "currentBundleId": null
   },
   {
-    "key": "cncnet_classic_command__conquer",
-    "name": "CnCNet: Classic Command & Conquer",
+    "key": "electric_sheep",
+    "name": "Electric Sheep",
+    "currentBundleId": "org.electricsheep.electricSheep.*"
+  },
+  {
+    "key": "electron_cash",
+    "name": "Electron Cash",
+    "currentBundleId": null
+  },
+  {
+    "key": "electron_fiddle",
+    "name": "Electron Fiddle",
+    "currentBundleId": null
+  },
+  {
+    "key": "elgato_control_center",
+    "name": "Elgato Control Center",
+    "currentBundleId": "com.corsair.ControlCenter"
+  },
+  {
+    "key": "enclave",
+    "name": "Enclave",
+    "currentBundleId": "com.enclave.*"
+  },
+  {
+    "key": "envkey",
+    "name": "EnvKey",
+    "currentBundleId": null
+  },
+  {
+    "key": "extraterm",
+    "name": "Extraterm",
+    "currentBundleId": null
+  },
+  {
+    "key": "ferdium",
+    "name": "Ferdium",
+    "currentBundleId": "com.ferdium.ferdium-app"
+  },
+  {
+    "key": "fig",
+    "name": "fig",
+    "currentBundleId": "com.mschrage.fig"
+  },
+  {
+    "key": "filen",
+    "name": "Filen",
+    "currentBundleId": null
+  },
+  {
+    "key": "firecamp",
+    "name": "Firecamp",
+    "currentBundleId": null
+  },
+  {
+    "key": "fleet",
+    "name": "Fleet",
+    "currentBundleId": null
+  },
+  {
+    "key": "floorp_browser",
+    "name": "Floorp browser",
+    "currentBundleId": null
+  },
+  {
+    "key": "flowvision",
+    "name": "FlowVision",
+    "currentBundleId": "netdcy.FlowVision"
+  },
+  {
+    "key": "fontlab",
+    "name": "Fontlab",
+    "currentBundleId": null
+  },
+  {
+    "key": "fork",
+    "name": "Fork",
+    "currentBundleId": null
+  },
+  {
+    "key": "foxit_pdf_editor",
+    "name": "Foxit PDF Editor",
+    "currentBundleId": "com.foxit.pkg.pdfeditor"
+  },
+  {
+    "key": "free_ruler",
+    "name": "Free Ruler",
+    "currentBundleId": "com.pascal.freeruler"
+  },
+  {
+    "key": "freecad",
+    "name": "FreeCAD",
+    "currentBundleId": "org.freecad.FreeCAD"
+  },
+  {
+    "key": "freelens",
+    "name": "Freelens",
+    "currentBundleId": "app.freelens.Freelens"
+  },
+  {
+    "key": "freetube",
+    "name": "FreeTube",
+    "currentBundleId": "io.freetubeapp.freetube"
+  },
+  {
+    "key": "geany",
+    "name": "Geany",
+    "currentBundleId": "org.geany.geany"
+  },
+  {
+    "key": "geekbench",
+    "name": "Geekbench",
+    "currentBundleId": "com.primatelabs.Geekbench6"
+  },
+  {
+    "key": "geekbench_ai",
+    "name": "Geekbench AI",
+    "currentBundleId": "com.primatelabs.macos.geekbenchml"
+  },
+  {
+    "key": "git_credential_manager",
+    "name": "Git Credential Manager",
+    "currentBundleId": "com.microsoft.GitCredentialManager"
+  },
+  {
+    "key": "gitfinder",
+    "name": "GitFinder",
+    "currentBundleId": "ag.zigz.GitFinder"
+  },
+  {
+    "key": "go2shell",
+    "name": "Go2Shell",
     "currentBundleId": null
   }
 ]

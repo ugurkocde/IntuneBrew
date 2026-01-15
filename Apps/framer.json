@@ -3,7 +3,7 @@
   "description": "Tool that helps teams design every part of the product experience",
   "version": "2025.48.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/framer_2025.48.2.pkg",
-  "bundleId": null,
+  "bundleId": "com.framer.electron",
   "homepage": "https://www.framer.com/",
   "fileName": "framer_2025.48.2.pkg",
   "type": "app",

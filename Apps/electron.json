@@ -3,7 +3,7 @@
   "description": "Build desktop apps with JavaScript, HTML, and CSS",
   "version": "39.2.7",
   "url": "https://intunebrew.blob.core.windows.net/pkg/electron_39.2.7.pkg",
-  "bundleId": null,
+  "bundleId": "com.github.electron",
   "homepage": "https://electronjs.org/",
   "fileName": "electron_39.2.7.pkg",
   "type": "app",

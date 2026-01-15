@@ -3,7 +3,7 @@
   "description": "Password and credentials manager",
   "version": "6.11.17.2135",
   "url": "https://dl.enpass.io/stable/mac/package/6.11.17.2135/Enpass.pkg",
-  "bundleId": "in.sinew.Enpass-Desktop.App",
+  "bundleId": "in.sinew.Enpass-Desktop",
   "homepage": "https://www.enpass.io/",
   "fileName": "Enpass.pkg",
   "type": "pkg",

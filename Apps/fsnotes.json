@@ -3,7 +3,7 @@
   "description": "Notes manager",
   "version": "6.10.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/fsnotes_6.10.2.pkg",
-  "bundleId": null,
+  "bundleId": "co.fluder.FSNotes",
   "homepage": "https://fsnot.es/",
   "fileName": "FSNotes_6.10.2.zip",
   "type": "app",

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-15T16:22:26.380Z",
+  "last_full_scan": "2026-01-15T18:13:52.614Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -1753,6 +1753,705 @@
       "status": "verified",
       "source": "api",
       "name": "ColorSnapper 2"
+    },
+    "colorwell": {
+      "last_checked": "2026-01-15T16:38:50.936Z",
+      "bundle_id": "com.sweetpproductions.ColorWell",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "ColorWell"
+    },
+    "combine_pdfs": {
+      "last_checked": "2026-01-15T16:40:11.731Z",
+      "bundle_id": "de.monkeybreadsoftware.combinepdf",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Combine PDFs"
+    },
+    "compositor": {
+      "last_checked": "2026-01-15T16:40:55.581Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Compositor"
+    },
+    "coolterm": {
+      "last_checked": "2026-01-15T16:41:30.301Z",
+      "bundle_id": "org.the-meiers.coolterm",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "CoolTerm"
+    },
+    "crossover": {
+      "last_checked": "2026-01-15T16:41:54.846Z",
+      "bundle_id": "com.codeweavers.CrossOver",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "CrossOver"
+    },
+    "crypter": {
+      "last_checked": "2026-01-15T16:42:31.095Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Crypter"
+    },
+    "cursr": {
+      "last_checked": "2026-01-15T16:43:31.579Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Cursr"
+    },
+    "datagraph": {
+      "last_checked": "2026-01-15T16:44:05.330Z",
+      "bundle_id": "com.visualdatatools.datagraph",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "DataGraph"
+    },
+    "deckset": {
+      "last_checked": "2026-01-15T16:45:47.771Z",
+      "bundle_id": "com.unsignedinteger.Deckset-Paddle",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Deckset"
+    },
+    "deepgit": {
+      "last_checked": "2026-01-15T16:47:08.664Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "DeepGit"
+    },
+    "deepnest": {
+      "last_checked": "2026-01-15T16:47:50.517Z",
+      "bundle_id": "com.deepnest.io",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Deepnest"
+    },
+    "defold": {
+      "last_checked": "2026-01-15T16:48:44.855Z",
+      "bundle_id": "com.defold.editor",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Defold"
+    },
+    "devkinsta": {
+      "last_checked": "2026-01-15T16:49:38.693Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "DevKinsta"
+    },
+    "devonagent_pro": {
+      "last_checked": "2026-01-15T16:51:36.936Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "DEVONagent Pro"
+    },
+    "dingtalk": {
+      "last_checked": "2026-01-15T16:52:35.611Z",
+      "bundle_id": "com.alibaba.DingTalkMac",
+      "status": "unknown",
+      "name": "DingTalk"
+    },
+    "displaperture": {
+      "last_checked": "2026-01-15T16:53:19.360Z",
+      "bundle_id": "com.manytricks.Displaperture",
+      "status": "verified",
+      "source": "api",
+      "name": "Displaperture"
+    },
+    "displaycal": {
+      "last_checked": "2026-01-15T16:53:57.792Z",
+      "bundle_id": "net.displaycal.DisplayCAL",
+      "previous_bundle_id": "net.displaycal.*.DisplayCAL.*",
+      "status": "updated",
+      "source": "api",
+      "name": "DisplayCAL"
+    },
+    "djview": {
+      "last_checked": "2026-01-15T16:54:40.728Z",
+      "bundle_id": "org.djvu.DjView",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "DjView"
+    },
+    "dockstation": {
+      "last_checked": "2026-01-15T16:55:21.439Z",
+      "bundle_id": "com.dockstationio.dockstation",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "DockStation"
+    },
+    "dorico": {
+      "last_checked": "2026-01-15T16:55:45.655Z",
+      "bundle_id": "com.steinberg.dorico",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Dorico"
+    },
+    "douyin": {
+      "last_checked": "2026-01-15T16:56:14.854Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Douyin"
+    },
+    "duet": {
+      "last_checked": "2026-01-15T16:57:07.841Z",
+      "bundle_id": "com.kairos.duetMac",
+      "status": "verified",
+      "source": "api",
+      "name": "Duet"
+    },
+    "duoconnect": {
+      "last_checked": "2026-01-15T16:58:33.771Z",
+      "bundle_id": "com.duo.connect.bin",
+      "status": "unknown",
+      "name": "DuoConnect"
+    },
+    "dust3d": {
+      "last_checked": "2026-01-15T16:59:42.414Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Dust3D"
+    },
+    "dynalist": {
+      "last_checked": "2026-01-15T17:00:33.928Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Dynalist"
+    },
+    "eclipse_for_rcp_and_rap_developers": {
+      "last_checked": "2026-01-15T17:01:36.279Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Eclipse for RCP and RAP Developers"
+    },
+    "eclipse_ide_for_cc_developers": {
+      "last_checked": "2026-01-15T17:02:15.673Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Eclipse IDE for C/C++ Developers"
+    },
+    "eclipse_ide_for_java_and_dsl_developers": {
+      "last_checked": "2026-01-15T17:04:06.674Z",
+      "bundle_id": "org.eclipse.eclipse",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Eclipse IDE for Java and DSL Developers"
+    },
+    "eclipse_ide_for_java_ee_developers": {
+      "last_checked": "2026-01-15T17:04:57.621Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Eclipse IDE for Java EE Developers"
+    },
+    "eclipse_ide_for_php_developers": {
+      "last_checked": "2026-01-15T17:06:18.646Z",
+      "bundle_id": "org.eclipse.sdk.ide",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Eclipse IDE for PHP Developers"
+    },
+    "eclipse_installer": {
+      "last_checked": "2026-01-15T17:06:45.731Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Eclipse Installer"
+    },
+    "eclipse_modeling_tools": {
+      "last_checked": "2026-01-15T17:08:24.165Z",
+      "bundle_id": "org.eclipse.epp.package.modeling.product",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Eclipse Modeling Tools"
+    },
+    "elan": {
+      "last_checked": "2026-01-15T17:09:01.838Z",
+      "bundle_id": "nl.mpi.elan",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "ELAN"
+    },
+    "electric_sheep": {
+      "last_checked": "2026-01-15T17:10:22.579Z",
+      "bundle_id": "org.electricsheep.electricSheep.*",
+      "status": "unknown",
+      "name": "Electric Sheep"
+    },
+    "electron": {
+      "last_checked": "2026-01-15T17:11:07.541Z",
+      "bundle_id": "com.github.electron",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Electron"
+    },
+    "electron_cash": {
+      "last_checked": "2026-01-15T17:12:09.955Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Electron Cash"
+    },
+    "electron_fiddle": {
+      "last_checked": "2026-01-15T17:13:02.614Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Electron Fiddle"
+    },
+    "elgato_control_center": {
+      "last_checked": "2026-01-15T17:13:50.792Z",
+      "bundle_id": "com.corsair.ControlCenter",
+      "status": "unknown",
+      "name": "Elgato Control Center"
+    },
+    "eltima_cloudmounter": {
+      "last_checked": "2026-01-15T17:14:22.102Z",
+      "bundle_id": "com.eltima.cloudmounter-setapp",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Eltima CloudMounter"
+    },
+    "em_client": {
+      "last_checked": "2026-01-15T17:15:02.127Z",
+      "bundle_id": "com.emclient.mail.client",
+      "previous_bundle_id": "com.emclient.mail.client.pkg",
+      "status": "updated",
+      "source": "api",
+      "name": "eM Client"
+    },
+    "enclave": {
+      "last_checked": "2026-01-15T17:15:47.285Z",
+      "bundle_id": "com.enclave.*",
+      "status": "unknown",
+      "name": "Enclave"
+    },
+    "enpass": {
+      "last_checked": "2026-01-15T17:16:15.072Z",
+      "bundle_id": "in.sinew.Enpass-Desktop",
+      "previous_bundle_id": "in.sinew.Enpass-Desktop.App",
+      "status": "updated",
+      "source": "api",
+      "name": "Enpass"
+    },
+    "envkey": {
+      "last_checked": "2026-01-15T17:17:29.710Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "EnvKey"
+    },
+    "equinox": {
+      "last_checked": "2026-01-15T17:18:32.474Z",
+      "bundle_id": "com.rlxone.equinox",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Equinox"
+    },
+    "eudic": {
+      "last_checked": "2026-01-15T17:19:10.927Z",
+      "bundle_id": "com.eusoft.eudic",
+      "status": "verified",
+      "source": "api",
+      "name": "Eudic"
+    },
+    "evkey": {
+      "last_checked": "2026-01-15T17:20:12.781Z",
+      "bundle_id": "com.lamquangminh.evkey",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "EVKey"
+    },
+    "expandrive": {
+      "last_checked": "2026-01-15T17:20:38.037Z",
+      "bundle_id": "com.expandrive.ExpanDrive",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "ExpanDrive"
+    },
+    "extraterm": {
+      "last_checked": "2026-01-15T17:21:45.547Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Extraterm"
+    },
+    "facebook_messenger": {
+      "last_checked": "2026-01-15T17:22:25.560Z",
+      "bundle_id": "com.facebook.archon.developerID",
+      "status": "verified",
+      "source": "api",
+      "name": "Facebook Messenger"
+    },
+    "fantastical": {
+      "last_checked": "2026-01-15T17:23:06.955Z",
+      "bundle_id": "com.flexibits.fantastical2.mac",
+      "status": "verified",
+      "source": "api",
+      "name": "Fantastical"
+    },
+    "far2l": {
+      "last_checked": "2026-01-15T17:24:19.065Z",
+      "bundle_id": "com.far2l",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "far2l"
+    },
+    "fastscripts": {
+      "last_checked": "2026-01-15T17:24:55.312Z",
+      "bundle_id": "com.red-sweater.fastscripts3",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "FastScripts"
+    },
+    "fathom": {
+      "last_checked": "2026-01-15T17:25:49.569Z",
+      "bundle_id": "video.fathom.electron",
+      "previous_bundle_id": "Fathom Helper",
+      "status": "updated",
+      "source": "api",
+      "name": "Fathom"
+    },
+    "ferdium": {
+      "last_checked": "2026-01-15T17:26:40.662Z",
+      "bundle_id": "com.ferdium.ferdium-app",
+      "status": "unknown",
+      "name": "Ferdium"
+    },
+    "fig": {
+      "last_checked": "2026-01-15T17:27:40.290Z",
+      "bundle_id": "com.mschrage.fig",
+      "status": "unknown",
+      "name": "fig"
+    },
+    "figma": {
+      "last_checked": "2026-01-15T17:28:21.068Z",
+      "bundle_id": "com.figma.Desktop",
+      "status": "verified",
+      "source": "api",
+      "name": "Figma"
+    },
+    "filebot": {
+      "last_checked": "2026-01-15T17:28:40.933Z",
+      "bundle_id": "net.filebot.FileBot",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "FileBot"
+    },
+    "filen": {
+      "last_checked": "2026-01-15T17:30:19.445Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Filen"
+    },
+    "firecamp": {
+      "last_checked": "2026-01-15T17:31:39.953Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Firecamp"
+    },
+    "fission": {
+      "last_checked": "2026-01-15T17:32:12.854Z",
+      "bundle_id": "com.rogueamoeba.Fission",
+      "status": "verified",
+      "source": "api",
+      "name": "Fission"
+    },
+    "flameshot": {
+      "last_checked": "2026-01-15T17:32:34.366Z",
+      "bundle_id": "org.flameshot.Flameshot",
+      "previous_bundle_id": "com.Flameshot.flameshot",
+      "status": "updated",
+      "source": "api",
+      "name": "Flameshot"
+    },
+    "fleet": {
+      "last_checked": "2026-01-15T17:33:05.811Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Fleet"
+    },
+    "floorp_browser": {
+      "last_checked": "2026-01-15T17:34:11.545Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Floorp browser"
+    },
+    "flowvision": {
+      "last_checked": "2026-01-15T17:35:40.732Z",
+      "bundle_id": "netdcy.FlowVision",
+      "status": "unknown",
+      "name": "FlowVision"
+    },
+    "fluid": {
+      "last_checked": "2026-01-15T17:36:36.806Z",
+      "bundle_id": "com.fluidapp.Fluid2",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Fluid"
+    },
+    "flux": {
+      "last_checked": "2026-01-15T17:37:01.633Z",
+      "bundle_id": "org.herf.Flux",
+      "status": "verified",
+      "source": "api",
+      "name": "f.lux"
+    },
+    "flycut": {
+      "last_checked": "2026-01-15T17:37:35.407Z",
+      "bundle_id": "com.generalarcade.flycut",
+      "status": "verified",
+      "source": "api",
+      "name": "Flycut"
+    },
+    "fontbase": {
+      "last_checked": "2026-01-15T17:38:06.048Z",
+      "bundle_id": "com.dominiklevitsky.fontbase",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "FontBase"
+    },
+    "fontlab": {
+      "last_checked": "2026-01-15T17:39:20.594Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Fontlab"
+    },
+    "forecast": {
+      "last_checked": "2026-01-15T17:40:14.233Z",
+      "bundle_id": "fm.overcast.forecast-encoder",
+      "status": "verified",
+      "source": "api",
+      "name": "Forecast"
+    },
+    "fork": {
+      "last_checked": "2026-01-15T17:41:58.173Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Fork"
+    },
+    "forklift": {
+      "last_checked": "2026-01-15T17:42:33.353Z",
+      "bundle_id": "com.binarynights.ForkLift",
+      "previous_bundle_id": "com.binarynights.ForkLift-4",
+      "status": "updated",
+      "source": "api",
+      "name": "ForkLift"
+    },
+    "foxit_pdf_editor": {
+      "last_checked": "2026-01-15T17:43:32.554Z",
+      "bundle_id": "com.foxit.pkg.pdfeditor",
+      "status": "unknown",
+      "name": "Foxit PDF Editor"
+    },
+    "framer": {
+      "last_checked": "2026-01-15T17:44:08.357Z",
+      "bundle_id": "com.framer.electron",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Framer"
+    },
+    "franz": {
+      "last_checked": "2026-01-15T17:44:50.721Z",
+      "bundle_id": "com.meetfranz.franz",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Franz"
+    },
+    "free_ruler": {
+      "last_checked": "2026-01-15T17:46:19.342Z",
+      "bundle_id": "com.pascal.freeruler",
+      "status": "unknown",
+      "name": "Free Ruler"
+    },
+    "freecad": {
+      "last_checked": "2026-01-15T17:47:38.034Z",
+      "bundle_id": "org.freecad.FreeCAD",
+      "status": "unknown",
+      "name": "FreeCAD"
+    },
+    "freelens": {
+      "last_checked": "2026-01-15T17:48:51.047Z",
+      "bundle_id": "app.freelens.Freelens",
+      "status": "unknown",
+      "name": "Freelens"
+    },
+    "freemacsoft_appcleaner": {
+      "last_checked": "2026-01-15T17:49:21.491Z",
+      "bundle_id": "net.freemacsoft.AppCleaner",
+      "status": "verified",
+      "source": "api",
+      "name": "FreeMacSoft AppCleaner"
+    },
+    "freetube": {
+      "last_checked": "2026-01-15T17:50:43.776Z",
+      "bundle_id": "io.freetubeapp.freetube",
+      "status": "unknown",
+      "name": "FreeTube"
+    },
+    "front": {
+      "last_checked": "2026-01-15T17:51:35.064Z",
+      "bundle_id": "com.frontapp.Front",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Front"
+    },
+    "fsmonitor": {
+      "last_checked": "2026-01-15T17:52:49.314Z",
+      "bundle_id": "com.tristan.FSMonitor",
+      "previous_bundle_id": "com.tristan.fseventstool",
+      "status": "updated",
+      "source": "api",
+      "name": "FSMonitor"
+    },
+    "fsnotes": {
+      "last_checked": "2026-01-15T17:54:02.033Z",
+      "bundle_id": "co.fluder.FSNotes",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "FSNotes"
+    },
+    "gather_town": {
+      "last_checked": "2026-01-15T17:55:04.216Z",
+      "bundle_id": "com.gather.Gather",
+      "status": "verified",
+      "source": "api",
+      "name": "Gather Town"
+    },
+    "geany": {
+      "last_checked": "2026-01-15T17:55:54.458Z",
+      "bundle_id": "org.geany.geany",
+      "status": "unknown",
+      "name": "Geany"
+    },
+    "geekbench": {
+      "last_checked": "2026-01-15T17:56:38.097Z",
+      "bundle_id": "com.primatelabs.Geekbench6",
+      "status": "unknown",
+      "name": "Geekbench"
+    },
+    "geekbench_ai": {
+      "last_checked": "2026-01-15T17:58:13.980Z",
+      "bundle_id": "com.primatelabs.macos.geekbenchml",
+      "status": "unknown",
+      "name": "Geekbench AI"
+    },
+    "gemini": {
+      "last_checked": "2026-01-15T18:01:27.135Z",
+      "bundle_id": "com.macpaw.site.Gemini",
+      "previous_bundle_id": "com.macpaw.site.Gemini2",
+      "status": "updated",
+      "source": "api",
+      "name": "Gemini"
+    },
+    "gephi": {
+      "last_checked": "2026-01-15T18:02:08.946Z",
+      "bundle_id": "org.gephi",
+      "status": "verified",
+      "source": "api",
+      "name": "Gephi"
+    },
+    "ghost_browser": {
+      "last_checked": "2026-01-15T18:03:25.952Z",
+      "bundle_id": "com.ghostbrowser.gb1",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Ghost Browser"
+    },
+    "ghostty": {
+      "last_checked": "2026-01-15T18:04:42.237Z",
+      "bundle_id": "com.mitchellh.ghostty",
+      "status": "verified",
+      "source": "api",
+      "name": "Ghostty"
+    },
+    "gifox": {
+      "last_checked": "2026-01-15T18:05:15.803Z",
+      "bundle_id": "com.gifox.gifox2",
+      "status": "verified",
+      "source": "api",
+      "name": "gifox"
+    },
+    "gimp": {
+      "last_checked": "2026-01-15T18:05:53.251Z",
+      "bundle_id": "org.gnome.gimp",
+      "previous_bundle_id": "org.gimp.gimp-2.10",
+      "status": "updated",
+      "source": "api",
+      "name": "GIMP"
+    },
+    "git_credential_manager": {
+      "last_checked": "2026-01-15T18:07:48.563Z",
+      "bundle_id": "com.microsoft.GitCredentialManager",
+      "status": "unknown",
+      "name": "Git Credential Manager"
+    },
+    "gitbutler": {
+      "last_checked": "2026-01-15T18:08:54.301Z",
+      "bundle_id": "com.gitbutler.app",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "GitButler"
+    },
+    "gitfinder": {
+      "last_checked": "2026-01-15T18:09:46.711Z",
+      "bundle_id": "ag.zigz.GitFinder",
+      "status": "unknown",
+      "name": "GitFinder"
+    },
+    "github_desktop": {
+      "last_checked": "2026-01-15T18:10:16.834Z",
+      "bundle_id": "com.github.GitHubClient",
+      "status": "verified",
+      "source": "api",
+      "name": "GitHub Desktop"
+    },
+    "gitkraken": {
+      "last_checked": "2026-01-15T18:10:44.949Z",
+      "bundle_id": "com.axosoft.gitkraken",
+      "status": "verified",
+      "source": "api",
+      "name": "GitKraken"
+    },
+    "glyphs": {
+      "last_checked": "2026-01-15T18:11:46.710Z",
+      "bundle_id": "com.GeorgSeifert.Glyphs3",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Glyphs"
+    },
+    "go2shell": {
+      "last_checked": "2026-01-15T18:13:52.614Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Go2Shell"
     }
   }
 }

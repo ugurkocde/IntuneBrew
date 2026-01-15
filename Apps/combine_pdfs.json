@@ -3,7 +3,7 @@
   "description": "PDF file editor",
   "version": "5.6.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/combine_pdfs_5.6.1.pkg",
-  "bundleId": null,
+  "bundleId": "de.monkeybreadsoftware.combinepdf",
   "homepage": "https://www.monkeybreadsoftware.de/Software/CombinePDFs.shtml",
   "fileName": "CombinePDFs561.zip",
   "type": "app",

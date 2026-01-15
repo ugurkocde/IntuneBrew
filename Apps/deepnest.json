@@ -3,7 +3,7 @@
   "description": "Nesting application for CNC machines",
   "version": "1.0.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/deepnest_1.0.5.pkg",
-  "bundleId": null,
+  "bundleId": "com.deepnest.io",
   "homepage": "https://deepnest.io/",
   "fileName": "Deepnest-1.0.5-mac.zip",
   "type": "app",

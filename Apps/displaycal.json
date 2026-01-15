@@ -3,7 +3,7 @@
   "description": "Display calibration and characterization powered by ArgyllCMS",
   "version": "3.8.9.3",
   "url": "https://downloads.sourceforge.net/dispcalgui/release/3.8.9.3/DisplayCAL-3.8.9.3.pkg",
-  "bundleId": "net.displaycal.*.DisplayCAL.*",
+  "bundleId": "net.displaycal.DisplayCAL",
   "homepage": "https://displaycal.net/",
   "fileName": "DisplayCAL-3.8.9.3.pkg",
   "type": "pkg",

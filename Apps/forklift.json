@@ -3,7 +3,7 @@
   "description": "Finder replacement and FTP, SFTP, WebDAV and Amazon s3 client",
   "version": "4.4.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/forklift_4.4.5.pkg",
-  "bundleId": "com.binarynights.ForkLift-4",
+  "bundleId": "com.binarynights.ForkLift",
   "homepage": "https://binarynights.com/",
   "fileName": "ForkLift4.4.5.zip",
   "type": "app",

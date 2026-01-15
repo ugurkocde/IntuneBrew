@@ -3,7 +3,7 @@
   "description": "Mounts cloud storages as local discs",
   "version": "4.16",
   "url": "https://cdn.electronic.us/products/cloudmounter/mac/download/cloudmounter.dmg",
-  "bundleId": null,
+  "bundleId": "com.eltima.cloudmounter-setapp",
   "homepage": "https://mac.eltima.com/mount-cloud-drive.html",
   "fileName": "cloudmounter.dmg",
   "sha": "7681c7dd2d65f3f252637ad3196476642f2687123265ba0121eaf46a3f8e9118",
