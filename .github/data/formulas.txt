@@ -12,7 +12,6 @@ the_silver_searcher
 
 # Shell enhancements
 atuin
-gitstatus
 
 # Utilities
 displayplacer
