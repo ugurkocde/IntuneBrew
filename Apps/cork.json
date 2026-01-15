@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "b53a368eacccb300c4d1b49342f3fc1c3f2b376a46a8e6a9a737fa95eab43654",
   "category": "Developer Tools",
-  "publisher": "Cork"
+  "publisher": "Cork",
+  "previous_version": "1.7.3.1"
 }

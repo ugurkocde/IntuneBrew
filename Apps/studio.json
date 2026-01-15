@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "07a91b3c2f6bfa6e697ce03ae9729890e44012b3333fb76d8bb62b94d35531ba",
   "category": "Design",
-  "publisher": "BrickLink"
+  "publisher": "BrickLink",
+  "previous_version": "2.25.12"
 }

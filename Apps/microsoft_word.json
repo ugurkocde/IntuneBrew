@@ -1,0 +1,11 @@
+{
+  "name": "Microsoft Word",
+  "description": "Word processor",
+  "version": "16.105.26011018",
+  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Word_16.105.26011018_Installer.pkg",
+  "bundleId": "com.microsoft.package.Microsoft_Word.app",
+  "homepage": "https://www.microsoft.com/en-US/microsoft-365/word",
+  "fileName": "Microsoft_Word_16.105.26011018_Installer.pkg",
+  "type": "pkg",
+  "sha": "ceae56a1772b4e314470edc3d17edd7692a403d40663acc25b2f5b3f5a9f13a7"
+}

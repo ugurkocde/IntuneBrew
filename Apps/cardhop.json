@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "f9772fc2ef736f7ddb3fa0dde6f874be6a58b54f9ae50f0a267e0e8399fd302b",
   "category": "Productivity",
-  "publisher": "Flexibits"
+  "publisher": "Flexibits",
+  "previous_version": "2.4.3"
 }

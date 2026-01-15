@@ -1,0 +1,11 @@
+{
+  "name": "Microsoft Build of OpenJDK",
+  "description": "OpenJDK distribution from Microsoft",
+  "version": "25.0.1",
+  "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.1-macos-aarch64.pkg",
+  "bundleId": "com.microsoft.25.jdk",
+  "homepage": "https://microsoft.com/openjdk",
+  "fileName": "microsoft-jdk-25.0.1-macos-aarch64.pkg",
+  "type": "pkg",
+  "sha": "9d348b3ed811423a4640ceffc0ba1b5aae1aed18a0be4f2eac3ff1230a2d51a7"
+}

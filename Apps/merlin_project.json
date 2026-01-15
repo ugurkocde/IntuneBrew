@@ -1,0 +1,11 @@
+{
+  "name": "Merlin Project",
+  "description": "Project management application",
+  "version": "9.1.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/merlin_project_9.1.2.pkg",
+  "bundleId": null,
+  "homepage": "https://www.projectwizards.net/en/products/merlin-project/what-is",
+  "fileName": "merlin_project_9.1.2.pkg",
+  "type": "app",
+  "sha": "c9321c041235ecc78689c8f661691958726635dc58c480a4f9ece23732ac837f"
+}

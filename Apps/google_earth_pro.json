@@ -1,0 +1,10 @@
+{
+  "name": "Google Earth Pro",
+  "description": "Virtual globe",
+  "version": "7.3.6.10441",
+  "url": "https://dl.google.com/dl/earth/client/advanced/current/googleearthpromac-intel-7.3.6.dmg",
+  "bundleId": "com.Google.GoogleEarthPro",
+  "homepage": "https://www.google.com/earth/",
+  "fileName": "googleearthpromac-intel-7.3.6.dmg",
+  "sha": "10c0a54e58d6686c11645edb7534a5ba91818b67ea7239430075a49d500a6eac"
+}

@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "69418621e13c8ae57ad4059943411fdbb2ad713c56f53d5ebdad7794c98564d3",
   "category": "Utilities",
-  "publisher": "ianyh"
+  "publisher": "ianyh",
+  "previous_version": "0.24.1"
 }

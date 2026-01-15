@@ -1,0 +1,10 @@
+{
+  "name": "GitHub Copilot for Xcode",
+  "description": "Xcode extension for GitHub Copilot",
+  "version": "0.46.0",
+  "url": "https://githubcopilotide.z13.web.core.windows.net/0.46.0/GitHubCopilotForXcode.dmg",
+  "bundleId": null,
+  "homepage": "https://github.com/github/CopilotForXcode",
+  "fileName": "GitHubCopilotForXcode.dmg",
+  "sha": "a92f510e4275fab3c8b153c6dc95df2535098027da5a4044c69963211e9f7492"
+}

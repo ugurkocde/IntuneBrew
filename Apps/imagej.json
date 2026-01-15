@@ -1,0 +1,11 @@
+{
+  "name": "ImageJ",
+  "description": "Image Processing and Analysis in Java",
+  "version": "1.54",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/imagej_1.54.pkg",
+  "bundleId": null,
+  "homepage": "https://imagej.net/ij/",
+  "fileName": "imagej_1.54.pkg",
+  "type": "app",
+  "sha": "59150526b8af3ef3fe5a02152654fbc4462298cce13d365a3e5a82904d285359"
+}

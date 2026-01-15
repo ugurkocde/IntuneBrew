@@ -8,5 +8,6 @@
   "fileName": "BitBox-4.49.0-macOS.dmg",
   "sha": "2d1ed9213df70eb31cf1924682b8efad68853529c6451c22b06f39a33d8aa46b",
   "category": "Security",
-  "publisher": "SHIFT Cryptosecurity AG"
+  "publisher": "SHIFT Cryptosecurity AG",
+  "previous_version": "4.49.0"
 }

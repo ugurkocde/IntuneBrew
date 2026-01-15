@@ -1,0 +1,11 @@
+{
+  "name": "LunaSea",
+  "description": "Self-hosted controller built using the Flutter framework",
+  "version": "11.0.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/lunasea_11.0.0.pkg",
+  "bundleId": null,
+  "homepage": "https://www.lunasea.app/",
+  "fileName": "lunasea_11.0.0.pkg",
+  "type": "app",
+  "sha": "3bb77ad53748bf75f0c603a306613af6e90caa57be238d487bfe64cd1766cea6"
+}

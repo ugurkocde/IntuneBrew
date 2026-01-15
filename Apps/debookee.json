@@ -2,11 +2,13 @@
   "name": "Debookee",
   "description": "Network traffic analyser",
   "version": "8.2.0",
-  "url": "https://www.iwaxx.com/debookee/debookee.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/debookee_8.2.0.pkg",
   "bundleId": "com.iwaxx.Debookee.PacketTool",
   "homepage": "https://debookee.com/",
-  "fileName": "debookee.zip",
+  "fileName": "debookee_8.2.0.pkg",
   "type": "app",
   "category": "Utilities",
-  "publisher": "Debookee"
+  "publisher": "Debookee",
+  "previous_version": "8.2.0",
+  "sha": "88332fc358d3e4ba918f3761fdf418b13ec3b0542280da4e7d724f671374a105"
 }

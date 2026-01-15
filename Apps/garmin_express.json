@@ -1,0 +1,10 @@
+{
+  "name": "Garmin Express",
+  "description": "Update maps and software, sync with Garmin Connect and register your device",
+  "version": "7.28.0",
+  "url": "https://download.garmin.com/omt/express/GarminExpress.dmg",
+  "bundleId": "com.garmin.renu.client",
+  "homepage": "https://www.garmin.com/en-US/software/express",
+  "fileName": "GarminExpress.dmg",
+  "sha": "b788d7f7fc5073ffa311e2fac1211e99a8e070224baa7974231d042c04600586"
+}

@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "85fec67b73ff7390ab6b2870f237c3969684f8d41e66a0077427811a9ed30ffc",
   "category": "Productivity",
-  "publisher": "DEVONtechnologies"
+  "publisher": "DEVONtechnologies",
+  "previous_version": "1.9.8"
 }

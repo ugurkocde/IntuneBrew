@@ -8,5 +8,6 @@
   "fileName": "EagleFiler-1.9.19.dmg",
   "sha": "e34c5c3538d965bd229afe40ba812380849b4ccb8a27f686278a47e002c30637",
   "category": "Productivity",
-  "publisher": "C-Command Software"
+  "publisher": "C-Command Software",
+  "previous_version": "1.9.19"
 }

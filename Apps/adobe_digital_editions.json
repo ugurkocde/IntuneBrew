@@ -8,5 +8,6 @@
   "fileName": "ADE_4.5_Installer.dmg",
   "sha": "6d4f365dd04cf76c7303ac5682f99b37fe5962a1f327789fb2a77f019ff978e2",
   "category": "Media",
-  "publisher": "Adobe Inc."
+  "publisher": "Adobe Inc.",
+  "previous_version": "4.5.12"
 }

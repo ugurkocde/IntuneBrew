@@ -1,0 +1,10 @@
+{
+  "name": "JASP",
+  "description": "Statistical analysis application",
+  "version": "0.95.4.0",
+  "url": "https://github.com/jasp-stats/jasp-desktop/releases/download/v0.95.4/JASP-0.95.4.0-macOS-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://jasp-stats.org/",
+  "fileName": "JASP-0.95.4.0-macOS-arm64.dmg",
+  "sha": "da91ef4b78e7013da30da1c9981c2644e84bcf104f51e739c169e56abfdd5ab8"
+}

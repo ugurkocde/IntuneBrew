@@ -1,0 +1,10 @@
+{
+  "name": "lifesize",
+  "description": "Cloud contact and video conferencing",
+  "version": "3.0.18",
+  "url": "https://download.lifesizecloud.com/Lifesize-3.0.18-mac.zip",
+  "bundleId": null,
+  "homepage": "https://www.lifesize.com/",
+  "fileName": "Lifesize-3.0.18-mac.zip",
+  "type": "app"
+}

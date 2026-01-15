@@ -8,5 +8,6 @@
   "fileName": "Captain-10.5.0-arm64.dmg",
   "sha": "fa9a7d9efb07c9ed837ab856be7ed9e503a01a7614c8bedaeb11420bc647bcfd",
   "category": "Developer Tools",
-  "publisher": "Captain"
+  "publisher": "Captain",
+  "previous_version": "10.5.0"
 }

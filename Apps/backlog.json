@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "948c9192c3d9e824af7aa644bbdb949e6d65d3b80864e6cf4f47116bd2bb2828",
   "category": "Productivity",
-  "publisher": "czytelny"
+  "publisher": "czytelny",
+  "previous_version": "1.8.0"
 }

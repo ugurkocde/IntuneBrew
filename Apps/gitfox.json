@@ -1,0 +1,11 @@
+{
+  "name": "Gitfox",
+  "description": "Git client",
+  "version": "4.1.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/gitfox_4.1.0.pkg",
+  "bundleId": null,
+  "homepage": "https://www.gitfox.app/",
+  "fileName": "gitfox_4.1.0.pkg",
+  "type": "app",
+  "sha": "97a8e9c57d78e83daa968490237182f6f38a186adb53738b4ad212473f440c8c"
+}

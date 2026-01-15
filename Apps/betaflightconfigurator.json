@@ -8,5 +8,6 @@
   "fileName": "betaflight-configurator_10.10.0_macOS.dmg",
   "sha": "a9ddadd2d983e62865cab7a3839f5a6513e3c839a0c4c3c79b5fa9730ed5a3bd",
   "category": "Utilities",
-  "publisher": "Betaflight"
+  "publisher": "Betaflight",
+  "previous_version": "10.10.0"
 }

@@ -1,0 +1,10 @@
+{
+  "name": "GoodSync",
+  "description": "File synchronisation and backup software",
+  "version": "12.9.22",
+  "url": "https://www.goodsync.com/download/goodsync-vsub-mac.dmg",
+  "bundleId": null,
+  "homepage": "https://www.goodsync.com/",
+  "fileName": "goodsync-vsub-mac.dmg",
+  "sha": "950e4dc50d68f0b23de13a98e812afbcc5db509c6f0e0019e2ea72f8042da25c"
+}

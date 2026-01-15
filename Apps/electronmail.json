@@ -8,5 +8,6 @@
   "fileName": "electron-mail-5.3.5-mac-arm64.dmg",
   "sha": "e60ffa9dd383b8ad4e91e236f83c184d9a0376033efea318320ac584744f9c02",
   "category": "Communication",
-  "publisher": "vladimiry"
+  "publisher": "vladimiry",
+  "previous_version": "5.3.5"
 }

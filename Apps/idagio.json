@@ -1,0 +1,10 @@
+{
+  "name": "IDAGIO",
+  "description": "Classical music streaming app",
+  "version": "1.13.0",
+  "url": "https://dl.idagio.com/IDAGIO-1.13.0.dmg",
+  "bundleId": null,
+  "homepage": "https://www.idagio.com/",
+  "fileName": "IDAGIO-1.13.0.dmg",
+  "sha": "92bb5576117cff4414abe53c3dc35d47e45ab15f4fd31e96423a42ce67c1dc9e"
+}

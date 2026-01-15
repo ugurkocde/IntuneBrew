@@ -8,5 +8,6 @@
   "fileName": "AirServer-7.2.7.dmg",
   "sha": "e092aa4803418483dac749f71c644d63972b4ffe61f235364b92a5b72e08ae0d",
   "category": "Utilities",
-  "publisher": "AirServer AB"
+  "publisher": "AirServer AB",
+  "previous_version": "7.2.7"
 }

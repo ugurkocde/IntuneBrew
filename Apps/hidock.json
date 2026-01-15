@@ -1,0 +1,11 @@
+{
+  "name": "HiDock",
+  "description": "Set custom Dock settings for when on different displays",
+  "version": "1.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/hidock_1.4.pkg",
+  "bundleId": "design.rafa.HiDock",
+  "homepage": "https://hidock.app/",
+  "fileName": "hidock_1.4.pkg",
+  "type": "app",
+  "sha": "8b0315c23c8ec9dcfdd66cfa1deb85f18df68aec6b29bfab89c135cc72b3498b"
+}

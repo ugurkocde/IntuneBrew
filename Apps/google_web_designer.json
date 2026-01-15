@@ -1,0 +1,10 @@
+{
+  "name": "Google Web Designer",
+  "description": "Create interactive HTML5-based designs and motion graphics",
+  "version": "14.0.1.0",
+  "url": "https://dl.google.com/webdesigner/mac/shell/googlewebdesigner_mac.dmg",
+  "bundleId": null,
+  "homepage": "https://www.google.com/webdesigner/",
+  "fileName": "googlewebdesigner_mac.dmg",
+  "sha": "177da082e2200f286d090e3ffbab12ca23bd1c7b3099072978b44874ae08e73a"
+}

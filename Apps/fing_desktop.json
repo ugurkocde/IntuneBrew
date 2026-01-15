@@ -8,5 +8,6 @@
   "fileName": "Fing-3.9.3.dmg",
   "sha": "77df6bab228e60dc4d14a690b2b97d46041dd047d1c86863fd5ce4fdcee59643",
   "category": "Utilities",
-  "publisher": "Fing Limited"
+  "publisher": "Fing Limited",
+  "previous_version": "3.9.3"
 }

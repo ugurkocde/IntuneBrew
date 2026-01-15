@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "8f87af9fb26f27d7480a995d6abde42274dc07bf6e0b9feab12460b757bbdf8b",
   "category": "Media",
-  "publisher": "ComfyUI"
+  "publisher": "ComfyUI",
+  "previous_version": "0.7.2"
 }

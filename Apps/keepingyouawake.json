@@ -1,0 +1,11 @@
+{
+  "name": "KeepingYouAwake",
+  "description": "Tool to prevent the system from going into sleep mode",
+  "version": "1.6.8",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/keepingyouawake_1.6.8.pkg",
+  "bundleId": "info.marcel-dierkes.KeepingYouAwake",
+  "homepage": "https://keepingyouawake.app/",
+  "fileName": "keepingyouawake_1.6.8.pkg",
+  "type": "app",
+  "sha": "e021ec3b8c30da8ff2b1480575461ae177e11090fac35bc7cd44767b2467fab5"
+}

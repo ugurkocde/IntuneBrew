@@ -8,5 +8,6 @@
   "fileName": "DevKnife-1.8.0.dmg",
   "sha": "1ea24dc1f251e6cfa7fc83772ac5abe91a8dc19678f29b67e79cf37c7ea0a32f",
   "category": "Developer Tools",
-  "publisher": "DevKnife"
+  "publisher": "DevKnife",
+  "previous_version": "1.8.0"
 }

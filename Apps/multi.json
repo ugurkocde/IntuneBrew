@@ -1,12 +1,12 @@
 {
   "name": "Multi",
   "description": "Multiplayer Collaboration",
-  "version": "0.538.2",
-  "url": "https://updates.multi.app/installers/Multi%200.538.2.dmg",
+  "version": "3.0.1",
+  "url": "https://github.com/hkgumbs/multi/releases/download/v3.0.1/Multi.3.0.1.dmg",
   "bundleId": "app.multi.multi",
   "homepage": "https://www.multi.app/",
-  "fileName": "Multi%200.538.2.dmg",
-  "sha": "0864bd4d912667b494b606a0a7b75df086ae4f2ace5d1a4aad40229857fa96b4",
+  "fileName": "Multi.3.0.1.dmg",
+  "sha": "6df8a9f8db0b69733d91428eba815928bb3b65ec526a7c714de9d8e95a03e2f8",
   "category": "Communication",
   "publisher": "Multi",
   "previous_version": "0.538.2"

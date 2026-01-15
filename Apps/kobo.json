@@ -1,0 +1,10 @@
+{
+  "name": "Kobo",
+  "description": "Desktop reader for Kobo eBooks",
+  "version": "latest",
+  "url": "https://cdn.kobo.com/downloads/desktop/kobodesktop/kobosetup.dmg",
+  "bundleId": null,
+  "homepage": "https://www.kobo.com/desktop",
+  "fileName": "kobosetup.dmg",
+  "sha": "3879210b594fc20a0faf7ffadbd14b7fc85255966172e007951118c74097ee6f"
+}

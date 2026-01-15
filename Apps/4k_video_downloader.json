@@ -8,5 +8,6 @@
   "fileName": "4kvideodownloader_4.33.5_x64.dmg",
   "sha": "e16993ebb60f18612fa2444c8b60d95745f14d6fca226a00c5d10eee1fb8d78a",
   "category": "Media",
-  "publisher": "4K Download"
+  "publisher": "4K Download",
+  "previous_version": "4.33.5"
 }

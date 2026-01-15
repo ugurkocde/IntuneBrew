@@ -1,0 +1,10 @@
+{
+  "name": "Local",
+  "description": "WordPress local development tool by Flywheel",
+  "version": "9.2.9",
+  "url": "https://cdn.localwp.com/releases-stable/9.2.9+6887/local-9.2.9-mac-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://localwp.com/",
+  "fileName": "local-9.2.9-mac-arm64.dmg",
+  "sha": "514721b17b9550348e1c9dc2e92fde2e7205835a506f0d747c26ae81fca8bf09"
+}

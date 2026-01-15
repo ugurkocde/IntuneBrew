@@ -1,0 +1,10 @@
+{
+  "name": "Modern CSV",
+  "description": "CSV editor",
+  "version": "2.3",
+  "url": "https://www.moderncsv.com/release/ModernCSV-Mac-v2.3.dmg",
+  "bundleId": null,
+  "homepage": "https://www.moderncsv.com/",
+  "fileName": "ModernCSV-Mac-v2.3.dmg",
+  "sha": "b79e5144f65708d690b70c6f1fe3caf3c2e14cc1aae2fc85a21c49e23172fa92"
+}

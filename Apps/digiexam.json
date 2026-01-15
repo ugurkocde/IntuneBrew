@@ -8,5 +8,6 @@
   "fileName": "Digiexam_Mac_universal.dmg",
   "sha": "860b734c45ee146d7cf247a397469eaee4c3f2670e1594541ce33a663ae705c3",
   "category": "Security",
-  "publisher": "Digiexam"
+  "publisher": "Digiexam",
+  "previous_version": "25.4.6"
 }

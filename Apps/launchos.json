@@ -1,0 +1,10 @@
+{
+  "name": "LaunchOS",
+  "description": "Launchpad alternative",
+  "version": "1.3.0",
+  "url": "https://static.remixdesign.app/launchos/LaunchOS-1.3.0-130.dmg",
+  "bundleId": null,
+  "homepage": "https://launchosapp.com/",
+  "fileName": "LaunchOS-1.3.0-130.dmg",
+  "sha": "39c05f1b807c519c7f179308f1789dea76b651c8ba19ed444500c945fcf47418"
+}

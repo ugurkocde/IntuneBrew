@@ -8,5 +8,6 @@
   "fileName": "ExifCleaner-3.6.0.dmg",
   "sha": "459b296b000a7cd614713772e9b4ecf1604d3bb10926ab2346e8ea88e44df323",
   "category": "Utilities",
-  "publisher": "Exif Cleaner"
+  "publisher": "Exif Cleaner",
+  "previous_version": "3.6.0"
 }

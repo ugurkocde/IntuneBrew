@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "de78390c6dbac9b2fa0a74dd6f43da94579b0c0fc98e2495cc0d255197823416",
   "category": "Utilities",
-  "publisher": "cool8jay"
+  "publisher": "cool8jay",
+  "previous_version": "1.3.1"
 }

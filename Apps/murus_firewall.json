@@ -1,0 +1,10 @@
+{
+  "name": "Murus Firewall",
+  "description": "Firewall app",
+  "version": "2.7",
+  "url": "https://github.com/TheMurusTeam/Murus/releases/download/v2.7/murus-2.7.zip",
+  "bundleId": "it.murus.murusfirewallrules",
+  "homepage": "https://www.murusfirewall.com/",
+  "fileName": "murus-2.7.zip",
+  "type": "app"
+}

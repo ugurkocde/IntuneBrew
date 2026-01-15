@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "6d8ba688f5cb3b682830d77b02bd27fa3362ce16f33a1899c9fe3d6c20787c0e",
   "category": "Utilities",
-  "publisher": "Broad Institute of MIT and Harvard"
+  "publisher": "Broad Institute of MIT and Harvard",
+  "previous_version": "4.2.8"
 }

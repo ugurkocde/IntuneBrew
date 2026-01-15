@@ -1,0 +1,11 @@
+{
+  "name": "MiniSim",
+  "description": "App for launching iOS and Android simulators",
+  "version": "0.9.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/minisim_0.9.0.pkg",
+  "bundleId": "com.oskarkwasniewski.MiniSim",
+  "homepage": "https://www.minisim.app/",
+  "fileName": "minisim_0.9.0.pkg",
+  "type": "app",
+  "sha": "7f2b958e29b6bf652f47e62734f113071d8f9121823b926d5c65cfb87bc38895"
+}

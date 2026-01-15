@@ -1,0 +1,11 @@
+{
+  "name": "Low Profile",
+  "description": "Utility to help inspect Apple Configuration Profile payloads",
+  "version": "5.0.0",
+  "url": "https://github.com/ninxsoft/LowProfile/releases/download/v5.0.0/Low.Profile.5.0.0.pkg",
+  "bundleId": "com.ninxsoft.pkg.lowprofile",
+  "homepage": "https://github.com/ninxsoft/LowProfile",
+  "fileName": "Low.Profile.5.0.0.pkg",
+  "type": "pkg",
+  "sha": "352724ffb62e691d5f26ea09a22b03e945c223fc9e02c45acd6ddbd9b45ea010"
+}

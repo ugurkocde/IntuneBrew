@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "2a07772f26a50e1b204e0bae778eb8d0724d05b425c0648954c4e616b5c20105",
   "category": "Developer Tools",
-  "publisher": "Bezel"
+  "publisher": "Bezel",
+  "previous_version": "3.5.0"
 }

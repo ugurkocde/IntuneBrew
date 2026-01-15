@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "82104ca3c3ec77886ccd578325b6f8561afd99b7f54ce22f911f0a5aabc4a24b",
   "category": "Utilities",
-  "publisher": "Voltaicideas"
+  "publisher": "Voltaicideas",
+  "previous_version": "4.3.1"
 }

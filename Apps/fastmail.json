@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "d51f9f2c5f2d0e18d7cb50a5f2a03beaeafe61527836ba95007e98eab7699db4",
   "category": "Communication",
-  "publisher": "Fastmail Pty Ltd"
+  "publisher": "Fastmail Pty Ltd",
+  "previous_version": "1.0.7"
 }

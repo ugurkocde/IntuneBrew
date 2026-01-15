@@ -1,0 +1,10 @@
+{
+  "name": "Kdenlive",
+  "description": "Free and Open Source Video Editor",
+  "version": "25.12.0",
+  "url": "https://cdn.download.kde.org/stable/kdenlive/25.12/macOS/kdenlive-25.12.0-B-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://kdenlive.org/",
+  "fileName": "kdenlive-25.12.0-B-arm64.dmg",
+  "sha": "7405035f17de36e3d710684524466e90151f0016e49ca9a1e0c3344a41c2f982"
+}

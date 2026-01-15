@@ -8,5 +8,6 @@
   "fileName": "Buzz-1.2.0-mac-arm64.dmg",
   "sha": "8bc210ead8ff0f694246f772ff48b8f0d777d4c5df2594cac57937a5fc0f61d1",
   "category": "Productivity",
-  "publisher": "Chidi Williams"
+  "publisher": "Chidi Williams",
+  "previous_version": "1.2.0"
 }

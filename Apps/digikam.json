@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "121001a74b9069e7be22eda13f20a3ded98409203c59e658d25695b3986e71ac",
   "category": "Media",
-  "publisher": "digiKam Team"
+  "publisher": "digiKam Team",
+  "previous_version": "8.8.0"
 }

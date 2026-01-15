@@ -8,5 +8,6 @@
   "fileName": "Anytype-0.53.1-mac-arm64.dmg",
   "sha": "cfc005e9fc5196f4bd4710f92e269c4fede954accba6f449e977563184c4896c",
   "category": "Productivity",
-  "publisher": "Anytype"
+  "publisher": "Anytype",
+  "previous_version": "0.53.1"
 }

@@ -1,0 +1,11 @@
+{
+  "name": "LaunchControl",
+  "description": "Create, manage and debug system and user services",
+  "version": "2.10.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/launchcontrol_2.10.1.pkg",
+  "bundleId": "com.soma-zone.LaunchControl.Helper",
+  "homepage": "https://www.soma-zone.com/LaunchControl/",
+  "fileName": "launchcontrol_2.10.1.pkg",
+  "type": "app",
+  "sha": "687e709b4b65d5856318130a1d3f00d9257884cd0910fdf348dbbf85aa8615bb"
+}

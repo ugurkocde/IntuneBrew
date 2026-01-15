@@ -1,0 +1,11 @@
+{
+  "name": "gPodder",
+  "description": "Podcast client",
+  "version": "3.11.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/gpodder_3.11.5.pkg",
+  "bundleId": null,
+  "homepage": "https://gpodder.github.io/",
+  "fileName": "gpodder_3.11.5.pkg",
+  "type": "app",
+  "sha": "9fc70bbe543f2665c9fe6b90dbd95e9a40565d9b86d2cf73bb9e04182b287d58"
+}

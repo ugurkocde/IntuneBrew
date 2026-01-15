@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "2761859a629993b5b6da37ac91138310641dfab926ce7aa8407c99f8c638fd5f",
   "category": "Developer Tools",
-  "publisher": "Camunda Services GmbH"
+  "publisher": "Camunda Services GmbH",
+  "previous_version": "5.43.1"
 }

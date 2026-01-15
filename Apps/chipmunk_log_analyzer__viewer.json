@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "2dba4ca49480d63c332df54c3478df85b112b561dc7b80163732b3862b8f2490",
   "category": "Developer Tools",
-  "publisher": "ESR Labs"
+  "publisher": "ESR Labs",
+  "previous_version": "3.19.3"
 }

@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "cb1d148ca9c41b9e53669cfcbd73e12d78048fe5e1edbba56d1545e0df3b9cd2",
   "category": "Developer Tools",
-  "publisher": "Appium"
+  "publisher": "Appium",
+  "previous_version": "2026.1.2"
 }

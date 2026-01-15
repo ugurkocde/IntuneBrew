@@ -8,5 +8,6 @@
   "fileName": "AdLock_Installer.dmg",
   "sha": "48c3ba813adfa179833e97f6110f32d690fdda47f5eebd741d1daf7fa7b20908",
   "category": "Security",
-  "publisher": "AdLock"
+  "publisher": "AdLock",
+  "previous_version": "2.1.7.3"
 }

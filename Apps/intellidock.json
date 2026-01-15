@@ -1,0 +1,10 @@
+{
+  "name": "IntelliDock",
+  "description": "Hides the Dock when it is overlapped by a window",
+  "version": "1.0",
+  "url": "https://mightymac.app/intellidock/download/IntelliDock-1.0.dmg",
+  "bundleId": null,
+  "homepage": "https://mightymac.app/intellidock/",
+  "fileName": "IntelliDock-1.0.dmg",
+  "sha": "592ce456ddf29f3464c3dcdc530d86be92cadc72afd471d968f0f6fd07125e94"
+}
