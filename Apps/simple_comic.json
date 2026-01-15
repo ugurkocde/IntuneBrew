@@ -1,0 +1,11 @@
+{
+  "name": "Simple Comic",
+  "description": "Comic viewer/reader",
+  "version": "1.9.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/simple_comic_1.9.9.pkg",
+  "bundleId": null,
+  "homepage": "https://github.com/MaddTheSane/Simple-Comic",
+  "fileName": "simple_comic_1.9.9.pkg",
+  "type": "app",
+  "sha": "6bb3e10d34c74d2aa1164f7ec8e96aa3ee6187768e6c29c28268c780fb026492"
+}

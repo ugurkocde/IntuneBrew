@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "2dda80432b4d1678124fa2109f99c82fc1ce17177086cc42561b256f6b7d2b86",
   "category": "Security",
-  "publisher": "Radio Silence"
+  "publisher": "Radio Silence",
+  "previous_version": "3.3"
 }

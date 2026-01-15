@@ -1,0 +1,11 @@
+{
+  "name": "TomatoBar",
+  "description": "Menu bar pomodoro timer",
+  "version": "3.5.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tomatobar_3.5.0.pkg",
+  "bundleId": null,
+  "homepage": "https://github.com/ivoronin/TomatoBar",
+  "fileName": "tomatobar_3.5.0.pkg",
+  "type": "app",
+  "sha": "0d9f32cf83aba2143aa2f2bf62856160a2c7f7acaea393b5a42e23bc66bc58d3"
+}

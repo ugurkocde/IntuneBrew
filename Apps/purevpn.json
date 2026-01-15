@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "5f18b0146d3576896720668d22f8e3c1626515f6699a67013a07605874b34634",
   "category": "Security",
-  "publisher": "PureVPN"
+  "publisher": "PureVPN",
+  "previous_version": "9.37.1"
 }

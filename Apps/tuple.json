@@ -1,0 +1,11 @@
+{
+  "name": "Tuple",
+  "description": "Remote pair programming app",
+  "version": "2.2.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tuple_2.2.1.pkg",
+  "bundleId": "app.tuple.app",
+  "homepage": "https://tuple.app/",
+  "fileName": "tuple_2.2.1.pkg",
+  "type": "app",
+  "sha": "87bc7adc5b003c5ce75734813485be813cf6d2fe04ebe8f13a8eeef3e88991d7"
+}

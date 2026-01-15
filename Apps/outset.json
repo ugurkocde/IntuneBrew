@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "f6e39f905b2877ccb5d7a2578e404282d76e7f228a4f8c17260a0ee88fb497c3",
   "category": "Utilities",
-  "publisher": "macadmins"
+  "publisher": "macadmins",
+  "previous_version": "4.2.0.21973"
 }

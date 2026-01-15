@@ -1,0 +1,11 @@
+{
+  "name": "TimeScribe",
+  "description": "Working time tracker",
+  "version": "1.8.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/timescribe_1.8.0.pkg",
+  "bundleId": null,
+  "homepage": "https://timescribe.app/",
+  "fileName": "timescribe_1.8.0.pkg",
+  "type": "app",
+  "sha": "28a99069ef01919e252ea325306101343a4d847514dd9b019892143856e7b810"
+}

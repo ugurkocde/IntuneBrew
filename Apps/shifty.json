@@ -1,0 +1,11 @@
+{
+  "name": "Shifty",
+  "description": "Menu bar app that provides more control over Night Shift",
+  "version": "1.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/shifty_1.2.pkg",
+  "bundleId": "io.natethompson.Shifty",
+  "homepage": "https://shifty.natethompson.io/",
+  "fileName": "shifty_1.2.pkg",
+  "type": "app",
+  "sha": "8ae0ecc0e2f9e3727efb8fb03a0102c6f612c45164fc2781217279ea7eba98f0"
+}

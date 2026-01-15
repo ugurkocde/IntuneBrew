@@ -1,0 +1,10 @@
+{
+  "name": "Ukelele",
+  "description": "Unicode keyboard layout editor",
+  "version": "3.6.0",
+  "url": "https://software.sil.org/downloads/r/ukelele/Ukelele_3.6.0.dmg",
+  "bundleId": null,
+  "homepage": "https://software.sil.org/ukelele/",
+  "fileName": "Ukelele_3.6.0.dmg",
+  "sha": "233405579519a06d522c50a846e74e884058646027a84b649661b29b2826c4ef"
+}

@@ -8,5 +8,6 @@
   "fileName": "redis-pro.dmg",
   "sha": "d7e408a5a7f409bd47e841cb2e48670820a19029f73737ec60a86eb75dda28f6",
   "category": "Developer Tools",
-  "publisher": "cmushroom"
+  "publisher": "cmushroom",
+  "previous_version": "3.1.0"
 }

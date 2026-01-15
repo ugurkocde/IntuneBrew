@@ -1,0 +1,10 @@
+{
+  "name": "StarUML",
+  "description": "Software modeller",
+  "version": "6.3.4",
+  "url": "https://files.staruml.io/releases-v6/StarUML-6.3.4-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://staruml.io/",
+  "fileName": "StarUML-6.3.4-arm64.dmg",
+  "sha": "91df4902c0923f6f41f24325584435f87297c42cf61ecca01c45eea0e31eac24"
+}

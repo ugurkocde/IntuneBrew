@@ -1,0 +1,10 @@
+{
+  "name": "VNote",
+  "description": "Note-taking platform",
+  "version": "3.20.1",
+  "url": "https://github.com/vnotex/vnote/releases/download/v3.20.1/VNote-3.20.1-mac-universal.zip",
+  "bundleId": null,
+  "homepage": "https://vnotex.github.io/vnote/",
+  "fileName": "VNote-3.20.1-mac-universal.zip",
+  "type": "app"
+}

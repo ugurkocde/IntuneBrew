@@ -8,5 +8,6 @@
   "fileName": "qgis_pr_final-3_44_6.dmg",
   "sha": "aeb21c1b1659403e92c7efbc4c48b1a0c4f97f025bf62044d492e6b5931512c0",
   "category": "Productivity",
-  "publisher": "QGIS.org"
+  "publisher": "QGIS.org",
+  "previous_version": "3.44.6"
 }

@@ -1,0 +1,11 @@
+{
+  "name": "TeamViewer",
+  "description": "Remote access and connectivity software focused on security",
+  "version": "15.73.5",
+  "url": "https://dl.teamviewer.com/download/version_15x/update/15.73.5/TeamViewer.pkg",
+  "bundleId": "com.teamviewer.TeamViewer",
+  "homepage": "https://www.teamviewer.com/",
+  "fileName": "TeamViewer.pkg",
+  "type": "pkg",
+  "sha": "a1d03ecf7abe1d96bbcc3876c376da7517823687e6d595acc321fdbdc3907759"
+}

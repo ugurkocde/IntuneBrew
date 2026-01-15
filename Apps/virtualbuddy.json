@@ -1,0 +1,10 @@
+{
+  "name": "VirtualBuddy",
+  "description": "Virtualization tool",
+  "version": "2.1",
+  "url": "https://su.virtualbuddy.app/VirtualBuddy_v2.1-325.dmg",
+  "bundleId": null,
+  "homepage": "https://github.com/insidegui/VirtualBuddy",
+  "fileName": "VirtualBuddy_v2.1-325.dmg",
+  "sha": "6ed17e8d7245931fd405c419321ace7ef9333fe2e3d59b3a7f78e34fcbe628b6"
+}

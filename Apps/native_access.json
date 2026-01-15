@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "f0028aaa800095322b5eba9557abfa6f0b4bc4b4d736df278bff764f9f90b023",
   "category": "Utilities",
-  "publisher": "Native Instruments"
+  "publisher": "Native Instruments",
+  "previous_version": "3.22.0"
 }

@@ -8,5 +8,6 @@
   "fileName": "PicView-4.1.1-macOS-arm64.dmg",
   "sha": "c9cde9f35073962dd603c93daaacfd9dbf1f44473b62b44b4fff1d1be3e2287c",
   "category": "Media",
-  "publisher": "PicView"
+  "publisher": "PicView",
+  "previous_version": "4.1.1"
 }

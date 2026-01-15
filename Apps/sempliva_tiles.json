@@ -1,0 +1,10 @@
+{
+  "name": "Sempliva Tiles",
+  "description": "Window manager",
+  "version": "1.3.2",
+  "url": "https://updates.sempliva.com/tiles/Tiles-03b500a8.dmg",
+  "bundleId": "com.sempliva.Tiles",
+  "homepage": "https://www.sempliva.com/tiles/",
+  "fileName": "Tiles-03b500a8.dmg",
+  "sha": "b051ea7e5048bac0f7a72b6dd893bb1a02cf47ecde6def9f103d2be8e122f01e"
+}

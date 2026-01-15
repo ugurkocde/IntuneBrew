@@ -1,0 +1,10 @@
+{
+  "name": "Swish",
+  "description": "Control windows and applications right from your trackpad",
+  "version": "1.13.2",
+  "url": "https://github.com/chrenn/swish-dl/releases/download/1.13.2/Swish.dmg",
+  "bundleId": null,
+  "homepage": "https://highlyopinionated.co/swish/",
+  "fileName": "Swish.dmg",
+  "sha": "1db6ddcbc950f71d869114cee5dc069485e682d1be7bce494dee2fc3cb04f333"
+}

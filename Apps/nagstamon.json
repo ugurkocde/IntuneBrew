@@ -8,5 +8,6 @@
   "fileName": "Nagstamon.3.16.2.ARM.dmg",
   "sha": "fabb4728569ad3501444037624be7f08659ccf70447f4456b30079a41f0c55fb",
   "category": "Productivity",
-  "publisher": "Nagstamon"
+  "publisher": "Nagstamon",
+  "previous_version": "3.16.2"
 }

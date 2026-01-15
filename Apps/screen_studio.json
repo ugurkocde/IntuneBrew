@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "e583b440f1085514c95ab5b08e02ba9203c548ecc7b5db5668981b5c6e56fb0a",
   "category": "Media",
-  "publisher": "Screen Studio"
+  "publisher": "Screen Studio",
+  "previous_version": "3.5.1-4051"
 }

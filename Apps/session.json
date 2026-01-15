@@ -1,0 +1,10 @@
+{
+  "name": "Session",
+  "description": "Onion routing based messenger",
+  "version": "1.17.6",
+  "url": "https://github.com/session-foundation/session-desktop/releases/download/v1.17.6/session-desktop-mac-arm64-1.17.6.dmg",
+  "bundleId": null,
+  "homepage": "https://getsession.org/",
+  "fileName": "session-desktop-mac-arm64-1.17.6.dmg",
+  "sha": "6d7ee66f2ad60fb81d1e222bc8ad80b127d884fc4dad773a64d16c43472e7d82"
+}

@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "74314ef0685cbd5e68e3be8f9160b96b6657d547b9bbba3969f87eae338613a8",
   "category": "Productivity",
-  "publisher": "Creaceed"
+  "publisher": "Creaceed",
+  "previous_version": "4.7.1"
 }

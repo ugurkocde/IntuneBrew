@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "b8c022be0d2ff4434d3c0704541c3c140f347884df2ece14422b5410173cf8c7",
   "category": "Media",
-  "publisher": "Rogue Amoeba"
+  "publisher": "Rogue Amoeba",
+  "previous_version": "1.9.8"
 }

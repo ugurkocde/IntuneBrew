@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "f756ac751229c979dc7b05cd0279721712ba65c7573c4a7f6f861d10016abb48",
   "category": "Developer Tools",
-  "publisher": "Rocketman-Tech"
+  "publisher": "Rocketman-Tech",
+  "previous_version": "1.0.0"
 }

@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "d3f813723e48e49f56f097095bf6de35215b399939e1ece09c82df5ce6bb68f8",
   "category": "Security",
-  "publisher": "SecureSafe"
+  "publisher": "SecureSafe",
+  "previous_version": "2.25.0"
 }

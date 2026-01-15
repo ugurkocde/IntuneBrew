@@ -8,5 +8,6 @@
   "fileName": "palemoon-33.9.1.arm64.dmg",
   "sha": "401f48f2fc809436404ad5275d9a39f840bae26f269cd2150c5a7884aab9bda9",
   "category": "Browsers",
-  "publisher": "Moonchild Productions"
+  "publisher": "Moonchild Productions",
+  "previous_version": "33.9.1"
 }

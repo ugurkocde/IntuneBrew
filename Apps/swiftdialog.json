@@ -1,0 +1,11 @@
+{
+  "name": "swiftDialog",
+  "description": "Admin utility that presents custom dialogs or messages from shell scripts",
+  "version": "2.5.6",
+  "url": "https://github.com/swiftDialog/swiftDialog/releases/download/v2.5.6/dialog-2.5.6-4805.pkg",
+  "bundleId": "au.csiro.dialogcli",
+  "homepage": "https://swiftdialog.app/",
+  "fileName": "dialog-2.5.6-4805.pkg",
+  "type": "pkg",
+  "sha": "69bd7f6412a1b2393906fc059369e65c5ae58af5cc8d289467effd11d8862b2a"
+}

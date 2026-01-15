@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "87eaf014c35ec396131c95761b9f516be9eba41b541affb143bb4fb930e60101",
   "category": "Developer Tools",
-  "publisher": "Panic"
+  "publisher": "Panic",
+  "previous_version": "4.5.4"
 }

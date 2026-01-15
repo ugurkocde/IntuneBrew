@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "0e4313204b6a9fe317853492174a6470aafac1a99d8ed8a06941f31264fec583",
   "category": "Developer Tools",
-  "publisher": "sbarex"
+  "publisher": "sbarex",
+  "previous_version": "1.0.23"
 }

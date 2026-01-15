@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "05b7d73b579fad6663d6b525e7ce2289f8063486d9b3841003ed90fa9a20911e",
   "category": "Productivity",
-  "publisher": "DamascenoRafael"
+  "publisher": "DamascenoRafael",
+  "previous_version": "1.25.0"
 }

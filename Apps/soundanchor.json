@@ -1,0 +1,10 @@
+{
+  "name": "SoundAnchor",
+  "description": "Audio device utility",
+  "version": "1.4.0",
+  "url": "https://kopiro.s3.eu-west-1.amazonaws.com/soundanchor/SoundAnchor-1.4.0.dmg",
+  "bundleId": null,
+  "homepage": "https://apps.kopiro.me/soundanchor/",
+  "fileName": "SoundAnchor-1.4.0.dmg",
+  "sha": "69fa6c32577751b414ac86934826ed3ccb036831c10902670e509b7723bd6a0b"
+}

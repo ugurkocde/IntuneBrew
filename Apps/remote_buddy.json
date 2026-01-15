@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "63563fb04000253c71f5c12153d679a0aa42f506fe207fa16f6977793747ceed",
   "category": "Utilities",
-  "publisher": "iOSPIRIT"
+  "publisher": "iOSPIRIT",
+  "previous_version": "2.7.2"
 }

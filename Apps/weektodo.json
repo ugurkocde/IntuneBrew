@@ -1,0 +1,10 @@
+{
+  "name": "WeekToDo",
+  "description": "Weekly planner app focused on privacy",
+  "version": "2.2.0",
+  "url": "https://github.com/Zuntek/WeekToDoWeb/releases/download/v2.2.0/WeekToDo-2.2.0.dmg",
+  "bundleId": null,
+  "homepage": "https://weektodo.me/",
+  "fileName": "WeekToDo-2.2.0.dmg",
+  "sha": "2b5c2c9ed1a16776fc7121d37f4ccaf40a82d94987906f5b2e75e428acda2167"
+}

@@ -8,5 +8,6 @@
   "fileName": "Nightfall.dmg",
   "sha": "b98e86466bb89b04b9f5d3f98e4b74c03950052e8821b515ec1ea0c7f71bef6a",
   "category": "Utilities",
-  "publisher": "r-thomson"
+  "publisher": "r-thomson",
+  "previous_version": "3.1.0"
 }

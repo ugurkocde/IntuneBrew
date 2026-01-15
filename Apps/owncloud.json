@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "5ad75cc312ddb251d71c050889dc339e71267aa33e0509ea4380dad2b77db0b9",
   "category": "Productivity",
-  "publisher": "ownCloud GmbH"
+  "publisher": "ownCloud GmbH",
+  "previous_version": "6.0.2.17506"
 }

@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "9ab81f0130dba908803eb3334ee9aa8de18eba7352575e0c52d0364a840195b1",
   "category": "Developer Tools",
-  "publisher": "Salesforce, Inc."
+  "publisher": "Salesforce, Inc.",
+  "previous_version": "2.118.20"
 }

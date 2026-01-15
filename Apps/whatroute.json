@@ -1,0 +1,11 @@
+{
+  "name": "WhatRoute",
+  "description": "Network diagnostic utility",
+  "version": "2.7.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/whatroute_2.7.2.pkg",
+  "bundleId": "net.whatroute.whatroute2",
+  "homepage": "https://www.whatroute.net/",
+  "fileName": "whatroute_2.7.2.pkg",
+  "type": "app",
+  "sha": "a132551702d507f68562b0f7aae7a4c34170a2509839654277a68720537c71bb"
+}

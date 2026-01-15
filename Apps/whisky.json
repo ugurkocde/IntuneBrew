@@ -1,0 +1,11 @@
+{
+  "name": "Whisky",
+  "description": "Wine wrapper built with SwiftUI",
+  "version": "2.3.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/whisky_2.3.5.pkg",
+  "bundleId": null,
+  "homepage": "https://getwhisky.app/",
+  "fileName": "whisky_2.3.5.pkg",
+  "type": "app",
+  "sha": "362fc9df428e50110deddd229579e2aaceb2d3c8f91e8bde8b116e88f1505c58"
+}

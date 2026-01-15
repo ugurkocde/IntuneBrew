@@ -1,0 +1,10 @@
+{
+  "name": "Visual Paradigm",
+  "description": "UML, SysML, BPMN modelling platform",
+  "version": "17.3",
+  "url": "https://www.visual-paradigm.com/downloads/vp17.3/20260101/Visual_Paradigm_17_3_20260101_OSX_AArch64.dmg",
+  "bundleId": null,
+  "homepage": "https://www.visual-paradigm.com/",
+  "fileName": "Visual_Paradigm_17_3_20260101_OSX_AArch64.dmg",
+  "sha": "fb080dd4d6e86b349d9e14cc9875b083322da99bc12ddc80ea06875f3bcc27ec"
+}

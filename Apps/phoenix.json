@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "f923e0e19be872fdf886044b81d0b1a248d4f67a45a9b8be721cfd24f9c34430",
   "category": "Utilities",
-  "publisher": "Kasper"
+  "publisher": "Kasper",
+  "previous_version": "4.0.1"
 }

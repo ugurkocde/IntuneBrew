@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "b2849f4359499164ee610c17e1a79019f5a3474fb37620243e4bd8c8724fc136",
   "category": "Design",
-  "publisher": "OpenToonz"
+  "publisher": "OpenToonz",
+  "previous_version": "1.7.1"
 }

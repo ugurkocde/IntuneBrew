@@ -8,5 +8,6 @@
   "fileName": "notesnook_mac_arm64.dmg",
   "sha": "097e6673c1473765c932839b87959ca13024d54647fd720fa89426b4d660da92",
   "category": "Productivity",
-  "publisher": "Notesnook"
+  "publisher": "Notesnook",
+  "previous_version": "3.3.7"
 }

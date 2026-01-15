@@ -8,5 +8,6 @@
   "fileName": "RetroArch.dmg",
   "sha": "b807f9040caf2b94973ec02dc4a924a45ceb7eee17f8e75e3e04d66838871cb6",
   "category": "Utilities",
-  "publisher": "Libretro"
+  "publisher": "Libretro",
+  "previous_version": "1.22.2"
 }

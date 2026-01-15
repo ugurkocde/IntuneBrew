@@ -1,0 +1,10 @@
+{
+  "name": "Zappy",
+  "description": "Screen capture tool for remote teams",
+  "version": "4.9.3",
+  "url": "https://zappy.zapier.com/releases/zappy-4.9.3.dmg",
+  "bundleId": "com.blackbeltlabs.Zappy",
+  "homepage": "https://zapier.com/zappy",
+  "fileName": "zappy-4.9.3.dmg",
+  "sha": "eb4f8829db4bbbc1b66d217159455c2620c1ff5e4bc087aea50aab7249330c93"
+}

@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "0a8d498e051d93664811e61359756a50227a173e2c79b703c9ae38640c55aaee",
   "category": "Security",
-  "publisher": "Private Internet Access"
+  "publisher": "Private Internet Access",
+  "previous_version": "3.7-08412"
 }

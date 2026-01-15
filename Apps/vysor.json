@@ -1,0 +1,11 @@
+{
+  "name": "Vysor",
+  "description": "Mirror and control your phone",
+  "version": "5.0.7",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/vysor_5.0.7.pkg",
+  "bundleId": null,
+  "homepage": "https://www.vysor.io/",
+  "fileName": "vysor_5.0.7.pkg",
+  "type": "app",
+  "sha": "b96e01450cd88cb8a0ee57a05c8f5d8f61f3859f1fef0bb6e87bd6bc9b8c2927"
+}

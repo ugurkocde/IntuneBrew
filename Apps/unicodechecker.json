@@ -1,0 +1,11 @@
+{
+  "name": "UnicodeChecker",
+  "description": "Explore and convert Unicode",
+  "version": "1.25.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/unicodechecker_1.25.1.pkg",
+  "bundleId": null,
+  "homepage": "https://earthlingsoft.net/UnicodeChecker/",
+  "fileName": "unicodechecker_1.25.1.pkg",
+  "type": "app",
+  "sha": "ffb66c25d0da137587be2defbf0ec61ed9dd1cdee5f4495826cada20eff46499"
+}

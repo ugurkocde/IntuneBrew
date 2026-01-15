@@ -1,0 +1,10 @@
+{
+  "name": "Sococo",
+  "description": "Online workplace client",
+  "version": "6.12.2",
+  "url": "https://s.sococo.com/rs/client/mac/sococo-client-mac.dmg",
+  "bundleId": null,
+  "homepage": "https://app.sococo.com/a/download",
+  "fileName": "sococo-client-mac.dmg",
+  "sha": "5f98f143fbbde959f35cb6d5fb3bab7caa5ec1659452fa5e82e5b306355f033a"
+}

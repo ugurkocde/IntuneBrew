@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "64d8c8918670ee59a699eef1d4626c6b0a30d94c3fc7f9fd9fa2ef1adf4be7cc",
   "category": "Utilities",
-  "publisher": "PingPlotter, LLC"
+  "publisher": "PingPlotter, LLC",
+  "previous_version": "5.25.20"
 }

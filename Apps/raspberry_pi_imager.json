@@ -8,5 +8,6 @@
   "fileName": "rpi-imager-v2.0.3.dmg",
   "sha": "d0d23d36beca095e22c80354ecf4ceb0c31baa3001a547ed12e0e5b4ee350367",
   "category": "Utilities",
-  "publisher": "Raspberry Pi Foundation"
+  "publisher": "Raspberry Pi Foundation",
+  "previous_version": "2.0.3"
 }

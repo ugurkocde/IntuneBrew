@@ -8,5 +8,6 @@
   "fileName": "Bridge-Installer.dmg",
   "sha": "6a8ff1beb2aa219fb9039a58a1bea6748ca7153665c788196a598ad9b8c852b0",
   "category": "Productivity",
-  "publisher": "Proton AG"
+  "publisher": "Proton AG",
+  "previous_version": "3.21.2"
 }

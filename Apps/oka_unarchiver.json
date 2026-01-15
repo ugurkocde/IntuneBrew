@@ -8,5 +8,6 @@
   "fileName": "OkaUnarchiver.dmg",
   "sha": "21bbc2cb96988e67b2f70c7e3ab409d3ed8eb62bb322a234296ac13620984cde",
   "category": "Utilities",
-  "publisher": "Oka Apps"
+  "publisher": "Oka Apps",
+  "previous_version": "2.1.6"
 }

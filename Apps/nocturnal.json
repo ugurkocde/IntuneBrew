@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "535505135534f4fb639b4f867b3ab4cd59c0ff32b58a63d8f2f60c6078bde068",
   "category": "Utilities",
-  "publisher": "Harshil Shah"
+  "publisher": "Harshil Shah",
+  "previous_version": "0.3"
 }

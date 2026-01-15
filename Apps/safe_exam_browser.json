@@ -8,5 +8,6 @@
   "fileName": "SafeExamBrowser-3.6.1.dmg",
   "sha": "ccb581fd8d5ef3c1e783c10bb60a398d18f924a0bd4566103a762d9e7be2524e",
   "category": "Security",
-  "publisher": "Safe Exam Browser Project"
+  "publisher": "Safe Exam Browser Project",
+  "previous_version": "3.6.1"
 }

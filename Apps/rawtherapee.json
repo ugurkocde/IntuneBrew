@@ -8,5 +8,6 @@
   "fileName": "RawTherapee_macOS_15.4_Universal_5.12.zip",
   "type": "app",
   "category": "Media",
-  "publisher": "RawTherapee Team"
+  "publisher": "RawTherapee Team",
+  "previous_version": "5.12"
 }

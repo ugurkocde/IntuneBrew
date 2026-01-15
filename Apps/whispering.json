@@ -1,0 +1,10 @@
+{
+  "name": "Whispering",
+  "description": "Audio transcription that works with local and cloud models",
+  "version": "7.11.0",
+  "url": "https://github.com/epicenter-os/epicenter/releases/download/v7.11.0/Whispering_7.11.0_aarch64.dmg",
+  "bundleId": null,
+  "homepage": "https://whispering.epicenter.so/",
+  "fileName": "Whispering_7.11.0_aarch64.dmg",
+  "sha": "52b79ad24f14907fad55673761935ba90ce70c6d3248f804a7d302b62bfef828"
+}

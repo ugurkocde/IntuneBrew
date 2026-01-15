@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "da8a97fcf615d65a9469417d6e5e5c0706b490f9c8f7b36c5f28fd0fa6f90971",
   "category": "Productivity",
-  "publisher": "ONLYOFFICE"
+  "publisher": "ONLYOFFICE",
+  "previous_version": "9.2.1"
 }

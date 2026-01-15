@@ -8,5 +8,6 @@
   "fileName": "openrefine-mac-3.9.5.dmg",
   "sha": "54b41c4e61bc1f2c9ceb55315b4a4e0f7f1a25ae22e87d1f7949b64343591f36",
   "category": "Developer Tools",
-  "publisher": "OpenRefine"
+  "publisher": "OpenRefine",
+  "previous_version": "3.9.5"
 }

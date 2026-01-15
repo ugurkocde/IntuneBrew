@@ -8,5 +8,6 @@
   "fileName": "InstallPrism10.dmg",
   "sha": "ffe37a1f9937b0d043b692f13881709bde5834f9eb4eab4701dbcfd6daa7126b",
   "category": "Productivity",
-  "publisher": "GraphPad Software, Inc."
+  "publisher": "GraphPad Software, Inc.",
+  "previous_version": "10.6.1"
 }

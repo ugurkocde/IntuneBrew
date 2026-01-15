@@ -1,0 +1,10 @@
+{
+  "name": "Shotcut",
+  "description": "Video editor",
+  "version": "25.12.31",
+  "url": "https://github.com/mltframework/shotcut/releases/download/v25.12.31/shotcut-macos-25.12.31.dmg",
+  "bundleId": null,
+  "homepage": "https://www.shotcut.org/",
+  "fileName": "shotcut-macos-25.12.31.dmg",
+  "sha": "4bf2ba68163f505dd2b8a7d6c9fc491385564d9472fd3cf4c82441669671665b"
+}

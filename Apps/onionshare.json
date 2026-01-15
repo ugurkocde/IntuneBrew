@@ -8,5 +8,6 @@
   "fileName": "OnionShare-2.6.3.dmg",
   "sha": "ba0d7c7a79cc4d9253f9591db9872f45ebdf2e9ca751f873af1a4ffcef9d1a05",
   "category": "Security",
-  "publisher": "The OnionShare Project"
+  "publisher": "The OnionShare Project",
+  "previous_version": "2.6.3"
 }

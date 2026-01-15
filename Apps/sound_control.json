@@ -1,0 +1,10 @@
+{
+  "name": "Sound Control",
+  "description": "Per-app audio controls",
+  "version": "3.3.3",
+  "url": "https://s3.amazonaws.com/staticz.net/downloads/soundcontrol/SoundControl_3.3.3.dmg",
+  "bundleId": "com.staticz.SoundControl",
+  "homepage": "https://staticz.com/soundcontrol/",
+  "fileName": "SoundControl_3.3.3.dmg",
+  "sha": "0d00495d22ae5e5bd25b29647023a124a02c85cb1005e9da5973a7c083f54aa9"
+}

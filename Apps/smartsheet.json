@@ -1,0 +1,10 @@
+{
+  "name": "Smartsheet",
+  "description": "Spreadsheet-style project management solution",
+  "version": "1.0.53",
+  "url": "https://builds.desktopapp.smartsheet.com/public/darwin/Smartsheet-setup.dmg",
+  "bundleId": null,
+  "homepage": "https://www.smartsheet.com/",
+  "fileName": "Smartsheet-setup.dmg",
+  "sha": "9ec4629a7e86fdd8074881de371192373a9ce319bf8ecedfe44e4cc44cc47cda"
+}
