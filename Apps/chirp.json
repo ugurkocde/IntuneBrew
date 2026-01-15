@@ -3,7 +3,7 @@
   "description": "Tool for programming amateur radio",
   "version": "20250801",
   "url": "https://archive.chirpmyradio.com/chirp_next/next-20250801/chirp-next-20250801.app.zip",
-  "bundleId": null,
+  "bundleId": "com.danplanet.chirp",
   "homepage": "https://chirp.danplanet.com/projects/chirp/wiki/Home",
   "fileName": "chirp-next-20250801.app.zip",
   "type": "app",

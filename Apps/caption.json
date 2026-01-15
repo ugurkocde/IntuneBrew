@@ -3,7 +3,7 @@
   "description": "Finds and sets up subtitles automatically",
   "version": "2.0.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/caption_2.0.1.pkg",
-  "bundleId": null,
+  "bundleId": "com.electron.caption",
   "homepage": "https://getcaption.co/",
   "fileName": "caption-2.0.1-mac.zip",
   "type": "app",

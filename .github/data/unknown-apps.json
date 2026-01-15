@@ -1,147 +1,102 @@
 [
   {
-    "key": "calmly_writer",
-    "name": "Calmly Writer",
-    "currentBundleId": "calmlywriter"
+    "key": "ableton_live_lite",
+    "name": "Ableton Live Lite",
+    "currentBundleId": "com.ableton.live"
   },
   {
-    "key": "capacities",
-    "name": "Capacities",
+    "key": "actual",
+    "name": "Actual",
     "currentBundleId": null
   },
   {
-    "key": "capcut",
-    "name": "CapCut",
-    "currentBundleId": "com.lemon.lvoverseas"
-  },
-  {
-    "key": "castr",
-    "name": "castr",
+    "key": "airdroid",
+    "name": "AirDroid",
     "currentBundleId": null
   },
   {
-    "key": "claude",
-    "name": "Claude",
-    "currentBundleId": "com.anthropic.claudefordesktop"
-  },
-  {
-    "key": "cleanmymac",
-    "name": "CleanMyMac",
-    "currentBundleId": "com.macpaw.CleanMyMac5.HealthMonitor"
-  },
-  {
-    "key": "clipy",
-    "name": "Clipy",
-    "currentBundleId": "com.clipy-app.Clipy"
-  },
-  {
-    "key": "coconutbattery",
-    "name": "coconutBattery",
-    "currentBundleId": "com.coconut-flavour.coconutBattery-Menu"
-  },
-  {
-    "key": "coherence_x",
-    "name": "Coherence X",
+    "key": "alloy",
+    "name": "Alloy",
     "currentBundleId": null
   },
   {
-    "key": "cool_retro_term",
-    "name": "Cool Retro Term",
+    "key": "amie",
+    "name": "Amie",
     "currentBundleId": null
   },
   {
-    "key": "crystalfetch",
-    "name": "Crystalfetch",
-    "currentBundleId": "llc.turing.CrystalFetch"
-  },
-  {
-    "key": "curio",
-    "name": "Curio",
+    "key": "android_file_transfer",
+    "name": "Android File Transfer",
     "currentBundleId": null
   },
   {
-    "key": "dangerzone",
-    "name": "Dangerzone",
-    "currentBundleId": "media.firstlook.dangerzone"
-  },
-  {
-    "key": "dataflare",
-    "name": "Dataflare",
-    "currentBundleId": "app.dataflare.desktop"
-  },
-  {
-    "key": "deepl",
-    "name": "DeepL",
-    "currentBundleId": "com.linguee.DeepLCopyTranslator"
-  },
-  {
-    "key": "devtoys",
-    "name": "DevToys",
-    "currentBundleId": "com.devtoys"
-  },
-  {
-    "key": "devutils",
-    "name": "DevUtils",
-    "currentBundleId": "tonyapp.devutils"
-  },
-  {
-    "key": "ditto",
-    "name": "Ditto",
-    "currentBundleId": "com.squirrels.Ditto"
-  },
-  {
-    "key": "dockside",
-    "name": "Dockside",
-    "currentBundleId": "com.hachipoo.Dockside"
-  },
-  {
-    "key": "dockview",
-    "name": "DockView",
+    "key": "android_ndk",
+    "name": "Android NDK",
     "currentBundleId": null
   },
   {
-    "key": "double_commander",
-    "name": "Double Commander",
+    "key": "android_sdk_commandline_tools",
+    "name": "Android SDK Command-line Tools",
     "currentBundleId": null
   },
   {
-    "key": "doughnut",
-    "name": "Doughnut",
-    "currentBundleId": "com.cdyer.doughnut"
-  },
-  {
-    "key": "drawbot",
-    "name": "DrawBot",
-    "currentBundleId": "com.drawbot"
-  },
-  {
-    "key": "eclipse_ide_for_eclipse_committers",
-    "name": "Eclipse IDE for Eclipse Committers",
+    "key": "android_sdk_platformtools",
+    "name": "Android SDK Platform-Tools",
     "currentBundleId": null
   },
   {
-    "key": "eclipse_ide_for_java_developers",
-    "name": "Eclipse IDE for Java Developers",
+    "key": "appgrid",
+    "name": "AppGrid",
+    "currentBundleId": "com.sdegutis.AppGrid"
+  },
+  {
+    "key": "applite",
+    "name": "Applite",
     "currentBundleId": null
   },
   {
-    "key": "eclipse_temurin_java_development_kit",
-    "name": "Eclipse Temurin Java Development Kit",
-    "currentBundleId": "net.temurin.23.jdk"
+    "key": "apptivate",
+    "name": "Apptivate",
+    "currentBundleId": null
   },
   {
-    "key": "edrawmax",
-    "name": "EdrawMax",
-    "currentBundleId": "com.edrawsoft.edrawmax"
+    "key": "aptible_toolbelt",
+    "name": "Aptible Toolbelt",
+    "currentBundleId": "com.aptible.toolbelt"
   },
   {
-    "key": "elgato_capture_device_utility",
-    "name": "Elgato Capture Device Utility",
-    "currentBundleId": "com.elgato.CaptureDeviceUtility"
+    "key": "basictex",
+    "name": "BasicTeX",
+    "currentBundleId": "org.tug.mactex.basictex2025"
   },
   {
-    "key": "elmedia_player",
-    "name": "Elmedia Player",
+    "key": "bilibili",
+    "name": "Bilibili",
+    "currentBundleId": null
+  },
+  {
+    "key": "boostnotenext",
+    "name": "Boostnote.Next",
+    "currentBundleId": null
+  },
+  {
+    "key": "cerebro",
+    "name": "Cerebro",
+    "currentBundleId": "cerebro"
+  },
+  {
+    "key": "chronosync",
+    "name": "ChronoSync",
+    "currentBundleId": "com.econtechnologies.pkg.ChronoSyncApplication"
+  },
+  {
+    "key": "cleartext",
+    "name": "Cleartext",
+    "currentBundleId": null
+  },
+  {
+    "key": "cncnet_classic_command__conquer",
+    "name": "CnCNet: Classic Command & Conquer",
     "currentBundleId": null
   }
 ]

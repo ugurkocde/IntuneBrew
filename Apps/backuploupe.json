@@ -3,7 +3,7 @@
   "description": "Alternative GUI for Time Machine",
   "version": "3.14.7",
   "url": "https://intunebrew.blob.core.windows.net/pkg/backuploupe_3.14.7.pkg",
-  "bundleId": null,
+  "bundleId": "com.soma-zone.BackupLoupe",
   "homepage": "https://www.soma-zone.com/BackupLoupe/",
   "fileName": "BackupLoupe-3.14.7.tar.xz",
   "type": "app",

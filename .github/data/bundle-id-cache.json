@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-15T14:26:50.295Z",
+  "last_full_scan": "2026-01-15T16:22:26.380Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -1402,6 +1402,357 @@
       "status": "verified",
       "source": "api",
       "name": "Evernote"
+    },
+    "ableton_live_lite": {
+      "last_checked": "2026-01-15T15:41:35.285Z",
+      "bundle_id": "com.ableton.live",
+      "status": "unknown",
+      "name": "Ableton Live Lite"
+    },
+    "ableton_live_suite": {
+      "last_checked": "2026-01-15T15:42:16.580Z",
+      "bundle_id": "com.ableton.live",
+      "status": "verified",
+      "source": "api",
+      "name": "Ableton Live Suite"
+    },
+    "actual": {
+      "last_checked": "2026-01-15T15:43:29.192Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Actual"
+    },
+    "adium": {
+      "last_checked": "2026-01-15T15:43:49.200Z",
+      "bundle_id": "com.adiumX.adiumX",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Adium"
+    },
+    "airdroid": {
+      "last_checked": "2026-01-15T15:44:39.488Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "AirDroid"
+    },
+    "alloy": {
+      "last_checked": "2026-01-15T15:46:20.431Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Alloy"
+    },
+    "altserver": {
+      "last_checked": "2026-01-15T15:47:01.271Z",
+      "bundle_id": "com.rileytestut.AltServer",
+      "status": "verified",
+      "source": "api",
+      "name": "AltServer"
+    },
+    "amadeus_pro": {
+      "last_checked": "2026-01-15T15:47:37.101Z",
+      "bundle_id": "com.HairerSoft.AmadeusPro",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Amadeus Pro"
+    },
+    "amie": {
+      "last_checked": "2026-01-15T15:48:37.262Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Amie"
+    },
+    "android_file_transfer": {
+      "last_checked": "2026-01-15T15:49:18.145Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Android File Transfer"
+    },
+    "android_ndk": {
+      "last_checked": "2026-01-15T15:49:33.968Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Android NDK"
+    },
+    "android_sdk_commandline_tools": {
+      "last_checked": "2026-01-15T15:50:05.267Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Android SDK Command-line Tools"
+    },
+    "android_sdk_platformtools": {
+      "last_checked": "2026-01-15T15:50:38.295Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Android SDK Platform-Tools"
+    },
+    "appgrid": {
+      "last_checked": "2026-01-15T15:51:32.543Z",
+      "bundle_id": "com.sdegutis.AppGrid",
+      "status": "unknown",
+      "name": "AppGrid"
+    },
+    "applite": {
+      "last_checked": "2026-01-15T15:52:30.650Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Applite"
+    },
+    "apptivate": {
+      "last_checked": "2026-01-15T15:53:30.880Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Apptivate"
+    },
+    "aptible_toolbelt": {
+      "last_checked": "2026-01-15T15:54:07.937Z",
+      "bundle_id": "com.aptible.toolbelt",
+      "status": "unknown",
+      "name": "Aptible Toolbelt"
+    },
+    "aurora_hdr": {
+      "last_checked": "2026-01-15T15:54:39.785Z",
+      "bundle_id": "com.macphun.aurorahdr2019",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Aurora HDR"
+    },
+    "backuploupe": {
+      "last_checked": "2026-01-15T15:55:18.767Z",
+      "bundle_id": "com.soma-zone.BackupLoupe",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "BackupLoupe"
+    },
+    "balsamiq_wireframes": {
+      "last_checked": "2026-01-15T15:55:51.945Z",
+      "bundle_id": "com.balsamiq.wireframes",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Balsamiq Wireframes"
+    },
+    "bankid_security_application_sweden": {
+      "last_checked": "2026-01-15T15:56:42.481Z",
+      "bundle_id": "com.bankid.BankID",
+      "status": "verified",
+      "source": "api",
+      "name": "BankID Security Application (Sweden)"
+    },
+    "basictex": {
+      "last_checked": "2026-01-15T15:57:19.766Z",
+      "bundle_id": "org.tug.mactex.basictex2025",
+      "status": "unknown",
+      "name": "BasicTeX"
+    },
+    "battery_buddy": {
+      "last_checked": "2026-01-15T15:58:22.471Z",
+      "bundle_id": "com.NeilSardesai.Battery-Buddy",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Battery Buddy"
+    },
+    "beardedspice": {
+      "last_checked": "2026-01-15T15:58:57.115Z",
+      "bundle_id": "com.beardedspice.BeardedSpice",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "BeardedSpice"
+    },
+    "berkeley_open_infrastructure_for_network_computing": {
+      "last_checked": "2026-01-15T15:59:57.387Z",
+      "bundle_id": "edu.berkeley.boinc",
+      "status": "verified",
+      "source": "api",
+      "name": "Berkeley Open Infrastructure for Network Computing"
+    },
+    "bibdesk": {
+      "last_checked": "2026-01-15T16:00:22.636Z",
+      "bundle_id": "edu.ucsd.cs.mmccrack.bibdesk",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "BibDesk"
+    },
+    "bilibili": {
+      "last_checked": "2026-01-15T16:01:18.376Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Bilibili"
+    },
+    "bitbar": {
+      "last_checked": "2026-01-15T16:01:59.572Z",
+      "bundle_id": "com.matryer.BitBar",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "BitBar"
+    },
+    "bitfocus_companion": {
+      "last_checked": "2026-01-15T16:03:03.339Z",
+      "bundle_id": "companion.bitfocus.no",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Bitfocus Companion"
+    },
+    "blackhole_16ch": {
+      "last_checked": "2026-01-15T16:04:18.208Z",
+      "bundle_id": "audio.existential.BlackHole16ch",
+      "status": "verified",
+      "source": "api",
+      "name": "BlackHole 16ch"
+    },
+    "blackhole_2ch": {
+      "last_checked": "2026-01-15T16:04:56.736Z",
+      "bundle_id": "audio.existential.BlackHole2ch",
+      "status": "verified",
+      "source": "api",
+      "name": "BlackHole 2ch"
+    },
+    "blackhole_64ch": {
+      "last_checked": "2026-01-15T16:06:08.502Z",
+      "bundle_id": "audio.existential.BlackHole64ch",
+      "status": "verified",
+      "source": "api",
+      "name": "BlackHole 64ch"
+    },
+    "bluebubbles": {
+      "last_checked": "2026-01-15T16:06:55.469Z",
+      "bundle_id": "com.BlueBubbles.BlueBubbles-Server",
+      "previous_bundle_id": "com.BlueBubbles.BlueBubbles-Server.ShipIt",
+      "status": "updated",
+      "source": "api",
+      "name": "BlueBubbles"
+    },
+    "bluej": {
+      "last_checked": "2026-01-15T16:07:34.646Z",
+      "bundle_id": "org.bluej.BlueJ",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "BlueJ"
+    },
+    "boostnotenext": {
+      "last_checked": "2026-01-15T16:08:42.188Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Boostnote.Next"
+    },
+    "bria": {
+      "last_checked": "2026-01-15T16:09:47.337Z",
+      "bundle_id": "com.CounterPath_Corporation.Bria",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Bria"
+    },
+    "caption": {
+      "last_checked": "2026-01-15T16:10:44.282Z",
+      "bundle_id": "com.electron.caption",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Caption"
+    },
+    "catch": {
+      "last_checked": "2026-01-15T16:12:02.843Z",
+      "bundle_id": "org.giorgiocalderolla.Catch",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Catch"
+    },
+    "cerebro": {
+      "last_checked": "2026-01-15T16:13:05.538Z",
+      "bundle_id": "cerebro",
+      "status": "unknown",
+      "name": "Cerebro"
+    },
+    "chirp": {
+      "last_checked": "2026-01-15T16:13:34.296Z",
+      "bundle_id": "com.danplanet.chirp",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "CHIRP"
+    },
+    "choosy": {
+      "last_checked": "2026-01-15T16:14:31.935Z",
+      "bundle_id": "com.choosyosx.Choosy",
+      "status": "verified",
+      "source": "api",
+      "name": "Choosy"
+    },
+    "chronosync": {
+      "last_checked": "2026-01-15T16:15:06.546Z",
+      "bundle_id": "com.econtechnologies.pkg.ChronoSyncApplication",
+      "status": "unknown",
+      "name": "ChronoSync"
+    },
+    "clamxav": {
+      "last_checked": "2026-01-15T16:16:02.405Z",
+      "bundle_id": "uk.co.canimaansoftware.clamxav",
+      "previous_bundle_id": "uk.co.canimaansoftware.clamxav*",
+      "status": "updated",
+      "source": "api",
+      "name": "ClamXAV"
+    },
+    "cleanmymac_x_chinese": {
+      "last_checked": "2026-01-15T16:17:28.274Z",
+      "bundle_id": "com.macpaw.CleanMyMac4",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "CleanMyMac X Chinese"
+    },
+    "cleartext": {
+      "last_checked": "2026-01-15T16:18:28.999Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Cleartext"
+    },
+    "clipgrab": {
+      "last_checked": "2026-01-15T16:19:16.023Z",
+      "bundle_id": "de.clipgrab.ClipGrab",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "ClipGrab"
+    },
+    "cloudcompare": {
+      "last_checked": "2026-01-15T16:19:56.894Z",
+      "bundle_id": "org.cloudcompare.CloudCompare",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "CloudCompare"
+    },
+    "cloudytabs": {
+      "last_checked": "2026-01-15T16:21:02.495Z",
+      "bundle_id": "com.joshparnham.CloudyTabs",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "CloudyTabs"
+    },
+    "cncnet_classic_command__conquer": {
+      "last_checked": "2026-01-15T16:22:06.156Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "CnCNet: Classic Command & Conquer"
+    },
+    "colorsnapper_2": {
+      "last_checked": "2026-01-15T16:22:26.280Z",
+      "bundle_id": "com.koolesache.ColorSnapper2",
+      "status": "verified",
+      "source": "api",
+      "name": "ColorSnapper 2"
     }
   }
 }

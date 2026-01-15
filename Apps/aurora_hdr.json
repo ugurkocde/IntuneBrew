@@ -3,7 +3,7 @@
   "description": "HDR photo editor with filters, batch processing and more",
   "version": "1.0.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/aurora_hdr_1.0.2.pkg",
-  "bundleId": null,
+  "bundleId": "com.macphun.aurorahdr2019",
   "homepage": "https://skylum.com/aurorahdr",
   "fileName": "AuroraHDR_Distribution_v1_0_2_6495.zip",
   "type": "app",

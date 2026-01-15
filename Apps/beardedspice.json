@@ -3,7 +3,7 @@
   "description": "Control web-based media players with media keys",
   "version": "2.2.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/beardedspice_2.2.3.pkg",
-  "bundleId": null,
+  "bundleId": "com.beardedspice.BeardedSpice",
   "homepage": "https://github.com/beardedspice/beardedspice/",
   "fileName": "BeardedSpice-2.2.3.zip",
   "type": "app",
