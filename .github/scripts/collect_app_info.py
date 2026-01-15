@@ -426,6 +426,12 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/wavebox.json",
     "https://formulae.brew.sh/api/cask/whatroute.json",
     "https://formulae.brew.sh/api/cask/whisky.json",
+    "https://formulae.brew.sh/api/cask/wins.json",
+    "https://formulae.brew.sh/api/cask/wordservice.json",
+    "https://formulae.brew.sh/api/cask/xattred.json",
+    "https://formulae.brew.sh/api/cask/xmenu.json",
+    "https://formulae.brew.sh/api/cask/yippy.json",
+    "https://formulae.brew.sh/api/cask/zight.json",
 ]
 
 # DMG
@@ -1150,6 +1156,16 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/webcatalog.json",
     "https://formulae.brew.sh/api/cask/weektodo.json",
     "https://formulae.brew.sh/api/cask/whispering.json",
+    "https://formulae.brew.sh/api/cask/xld.json",
+    "https://formulae.brew.sh/api/cask/xmplify.json",
+    "https://formulae.brew.sh/api/cask/xnconvert.json",
+    "https://formulae.brew.sh/api/cask/xnviewmp.json",
+    "https://formulae.brew.sh/api/cask/yacreader.json",
+    "https://formulae.brew.sh/api/cask/yed.json",
+    "https://formulae.brew.sh/api/cask/yubico-authenticator.json",
+    "https://formulae.brew.sh/api/cask/zappy.json",
+    "https://formulae.brew.sh/api/cask/zotero.json",
+    "https://formulae.brew.sh/api/cask/zwift.json",
 ]
 
 # PKG in DMG URLs
@@ -1270,6 +1286,7 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/topaz-photo-ai.json",
     "https://formulae.brew.sh/api/cask/topaz-video-ai.json",
     "https://formulae.brew.sh/api/cask/weasis.json",
+    "https://formulae.brew.sh/api/cask/xquartz.json",
 ]
 
 # Custom scraper scripts to run
