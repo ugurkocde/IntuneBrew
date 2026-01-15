@@ -43,7 +43,7 @@ function needsCheck(cache, appKey, forceRecheck) {
 }
 
 async function getBundleId(appData) {
-  const prompt = `You are a macOS application expert. Given the following application information, provide the EXACT macOS bundle identifier (bundleId) for this application.
+  const prompt = `You are a macOS application expert. Search the web to find the EXACT macOS bundle identifier (CFBundleIdentifier) for this application.
 
 Application Name: ${appData.name}
 Description: ${appData.description || 'N/A'}
@@ -51,39 +51,61 @@ Homepage: ${appData.homepage || 'N/A'}
 Publisher: ${appData.publisher || 'N/A'}
 Current bundleId (may be incorrect): ${appData.bundleId || 'N/A'}
 
-macOS bundle identifiers follow reverse domain notation, typically like:
-- com.company.appname
-- org.organization.appname
-- io.company.appname
+INSTRUCTIONS:
+1. Search the web for the official bundle ID of this macOS application
+2. Look for sources like:
+   - Official documentation
+   - GitHub repositories with Info.plist files
+   - macOS admin guides (JAMF, Intune, Kandji, etc.)
+   - Developer forums discussing this app's bundle ID
+3. The bundle ID is found in the app's Info.plist file as CFBundleIdentifier
 
-Research and provide the CORRECT bundle identifier for this macOS application.
+macOS bundle identifiers follow reverse domain notation, examples:
+- com.microsoft.Excel
+- com.apple.Safari
+- org.mozilla.firefox
+- com.google.Chrome
 
-IMPORTANT:
-- Only provide the bundle ID, nothing else
-- If you're not confident about the exact bundle ID, respond with "UNKNOWN"
-- The bundle ID should be the one that appears in the Info.plist of the .app bundle
-- Do not guess - only provide if you're confident
+CRITICAL:
+- Only provide bundle IDs you find from reliable web sources
+- If you cannot find a verified bundle ID from web search, respond with "UNKNOWN"
+- Do not guess or make up bundle IDs
+- The bundle ID must be exact - this is critical for enterprise app management
 
-Respond with ONLY the bundle ID (e.g., "com.apple.Safari") or "UNKNOWN":`;
+Respond with ONLY the bundle ID or "UNKNOWN":`;
 
   try {
-    const response = await openai.chat.completions.create({
-      model: 'gpt-4o-mini',
-      messages: [{ role: 'user', content: prompt }],
-      temperature: 0.1,
-      max_tokens: 100
+    const response = await openai.responses.create({
+      model: 'gpt-5-nano',
+      tools: [{ type: 'web_search' }],
+      input: prompt
     });
 
-    const content = response.choices[0].message.content.trim();
+    // Extract text content from the response
+    let content = '';
+    for (const item of response.output) {
+      if (item.type === 'message') {
+        for (const block of item.content) {
+          if (block.type === 'output_text') {
+            content = block.text.trim();
+            break;
+          }
+        }
+      }
+    }
 
     // Validate bundle ID format
-    if (content === 'UNKNOWN' || content.toLowerCase() === 'unknown') {
+    if (!content || content === 'UNKNOWN' || content.toLowerCase() === 'unknown') {
       return null;
     }
 
+    // Clean up response - remove any extra text, just get the bundle ID
+    const lines = content.split('\n').map(l => l.trim()).filter(l => l);
+    const bundleIdLine = lines.find(l => l.includes('.') && !l.includes(' ') && l.length < 200) || lines[0];
+
     // Basic validation: should contain at least one dot and no spaces
-    if (content.includes('.') && !content.includes(' ') && content.length < 200) {
-      return content;
+    if (bundleIdLine && bundleIdLine.includes('.') && !bundleIdLine.includes(' ') && bundleIdLine.length < 200) {
+      return bundleIdLine;
     }
 
     return null;
