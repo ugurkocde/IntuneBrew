@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "fd50c8bba1fefcb01026fa28e47f504c49a159f27eeca37e6fd673e0facd4807",
   "category": "Utilities",
-  "publisher": "macmade"
+  "publisher": "macmade",
+  "previous_version": "1.9.4"
 }

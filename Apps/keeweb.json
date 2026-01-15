@@ -8,5 +8,6 @@
   "fileName": "KeeWeb-1.18.7.mac.arm64.dmg",
   "sha": "6e4870b1660b91e735eaf30e7d751c7bb8dfae623d5b6c47899bd4d5ab1e6cae",
   "category": "Security",
-  "publisher": "KeeWeb"
+  "publisher": "KeeWeb",
+  "previous_version": "1.18.7"
 }

@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "352724ffb62e691d5f26ea09a22b03e945c223fc9e02c45acd6ddbd9b45ea010",
   "category": "Utilities",
-  "publisher": "ninxsoft"
+  "publisher": "ninxsoft",
+  "previous_version": "5.0.0"
 }

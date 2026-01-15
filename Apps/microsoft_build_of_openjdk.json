@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "9d348b3ed811423a4640ceffc0ba1b5aae1aed18a0be4f2eac3ff1230a2d51a7",
   "category": "Developer Tools",
-  "publisher": "Microsoft Corporation"
+  "publisher": "Microsoft Corporation",
+  "previous_version": "25.0.1"
 }

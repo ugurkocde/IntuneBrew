@@ -8,5 +8,6 @@
   "fileName": "kdenlive-25.12.0-B-arm64.dmg",
   "sha": "7405035f17de36e3d710684524466e90151f0016e49ca9a1e0c3344a41c2f982",
   "category": "Media",
-  "publisher": "Kdenlive Team"
+  "publisher": "Kdenlive Team",
+  "previous_version": "25.12.0"
 }

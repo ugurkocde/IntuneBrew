@@ -1,0 +1,11 @@
+{
+  "name": "Screen Studio",
+  "description": "Screen recorder and editor",
+  "version": "3.5.1-4051",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/screen_studio_3.5.1-4051.pkg",
+  "bundleId": null,
+  "homepage": "https://screen.studio/",
+  "fileName": "screen_studio_3.5.1-4051.pkg",
+  "type": "app",
+  "sha": "e583b440f1085514c95ab5b08e02ba9203c548ecc7b5db5668981b5c6e56fb0a"
+}

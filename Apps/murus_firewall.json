@@ -8,5 +8,6 @@
   "fileName": "murus-2.7.zip",
   "type": "app",
   "category": "Security",
-  "publisher": "Murus Firewall"
+  "publisher": "Murus Firewall",
+  "previous_version": "2.7"
 }

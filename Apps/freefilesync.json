@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "756c76a615c2edb7139b2df3dd073f9ee11ccd71815a369bf8b89ec77adbdbfb",
   "category": "Utilities",
-  "publisher": "FreeFileSync"
+  "publisher": "FreeFileSync",
+  "previous_version": "14.6"
 }

@@ -1,0 +1,11 @@
+{
+  "name": "Private Internet Access",
+  "description": "VPN client",
+  "version": "3.7-08412",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/private_internet_access_3.7-08412.pkg",
+  "bundleId": "com.privateinternetaccess.vpn",
+  "homepage": "https://www.privateinternetaccess.com/",
+  "fileName": "private_internet_access_3.7-08412.pkg",
+  "type": "app",
+  "sha": "0a8d498e051d93664811e61359756a50227a173e2c79b703c9ae38640c55aaee"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Nocturnal",
+  "description": "Simple app to toggle dark mode with one click",
+  "version": "0.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/nocturnal_0.3.pkg",
+  "bundleId": null,
+  "homepage": "https://github.com/HarshilShah/Nocturnal",
+  "fileName": "nocturnal_0.3.pkg",
+  "type": "app",
+  "sha": "535505135534f4fb639b4f867b3ab4cd59c0ff32b58a63d8f2f60c6078bde068"
+}

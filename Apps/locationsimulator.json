@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "6e288abc60701e6edb70f55973c6fe7f8f35c9ede609050d60dac6ba8a476e74",
   "category": "Developer Tools",
-  "publisher": "Schlaubischlump"
+  "publisher": "Schlaubischlump",
+  "previous_version": "0.2.2"
 }

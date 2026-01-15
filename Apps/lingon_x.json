@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "7a1c9afafe73ee3f26d74a2f77fc6da9afdc825d697cdf3235cf930bc44ac931",
   "category": "Utilities",
-  "publisher": "Peter Borg Apps"
+  "publisher": "Peter Borg Apps",
+  "previous_version": "9.6.6"
 }

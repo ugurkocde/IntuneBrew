@@ -8,5 +8,6 @@
   "fileName": "Lifesize-3.0.18-mac.zip",
   "type": "app",
   "category": "Communication",
-  "publisher": "Lifesize, Inc."
+  "publisher": "Lifesize, Inc.",
+  "previous_version": "3.0.18"
 }

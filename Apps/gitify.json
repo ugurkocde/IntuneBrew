@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "e07a3d711fc6cb74f1b458a1331686470516a4ef67132dd02ab787d947f2d483",
   "category": "Productivity",
-  "publisher": "gitify-app"
+  "publisher": "gitify-app",
+  "previous_version": "6.15.0"
 }

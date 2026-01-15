@@ -1,0 +1,11 @@
+{
+  "name": "Retrobatch",
+  "description": "Batch image processor",
+  "version": "2.3.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/retrobatch_2.3.1.pkg",
+  "bundleId": null,
+  "homepage": "https://flyingmeat.com/retrobatch/",
+  "fileName": "retrobatch_2.3.1.pkg",
+  "type": "app",
+  "sha": "c7fbd168805549774b644f871ae22a25f1789faaf98b63d22c635e05425fceb7"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "Rocketman Choices Packager",
+  "description": "Utility for customising installer package choices",
+  "version": "1.0.0",
+  "url": "https://github.com/Rocketman-Tech/Rocketman-Choices-Packager/releases/download/v1.0.0/Rocketman-Choices-Packager-v1.0.0.pkg",
+  "bundleId": "tech.rocketman.ChoicesPackager",
+  "homepage": "https://github.com/Rocketman-Tech/Rocketman-Choices-Packager",
+  "fileName": "Rocketman-Choices-Packager-v1.0.0.pkg",
+  "type": "pkg",
+  "sha": "f756ac751229c979dc7b05cd0279721712ba65c7573c4a7f6f861d10016abb48"
+}

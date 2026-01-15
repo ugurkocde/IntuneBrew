@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "187995e92965db1595ffdb1b712d90c157b9ecf01d12b24c4b5259f92f94258d",
   "category": "Design",
-  "publisher": "Analog Devices"
+  "publisher": "Analog Devices",
+  "previous_version": "17.2.4"
 }

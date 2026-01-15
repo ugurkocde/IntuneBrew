@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "687e709b4b65d5856318130a1d3f00d9257884cd0910fdf348dbbf85aa8615bb",
   "category": "Developer Tools",
-  "publisher": "Soma Zone"
+  "publisher": "Soma Zone",
+  "previous_version": "2.10.1"
 }

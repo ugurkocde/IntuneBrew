@@ -1,0 +1,10 @@
+{
+  "name": "Processing",
+  "description": "Flexible software sketchbook and a language for learning how to code",
+  "version": "4.4.10",
+  "url": "https://github.com/processing/processing4/releases/download/processing-1310-4.4.10/processing-4.4.10-macos-aarch64.dmg",
+  "bundleId": "org.processing.app",
+  "homepage": "https://processing.org/",
+  "fileName": "processing-4.4.10-macos-aarch64.dmg",
+  "sha": "b7dc4c9c769863b45c1065d0bd5ec861f06fd06dc48518c6e44dc4f4272b6e4a"
+}

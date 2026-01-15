@@ -1,0 +1,11 @@
+{
+  "name": "Prizmo",
+  "description": "Scanning application with Optical Character Recognition (OCR)",
+  "version": "4.7.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/prizmo_4.7.1.pkg",
+  "bundleId": null,
+  "homepage": "https://creaceed.com/prizmo",
+  "fileName": "prizmo_4.7.1.pkg",
+  "type": "app",
+  "sha": "74314ef0685cbd5e68e3be8f9160b96b6657d547b9bbba3969f87eae338613a8"
+}

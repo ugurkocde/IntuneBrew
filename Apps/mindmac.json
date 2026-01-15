@@ -8,5 +8,6 @@
   "fileName": "MindMac_1.9.28.dmg",
   "sha": "cc5f87c6b53d9f332c681ab6bc02befc2e3ed86a984b222581f75877e65665c0",
   "category": "Productivity",
-  "publisher": "MindMac"
+  "publisher": "MindMac",
+  "previous_version": "1.9.28"
 }

@@ -1,0 +1,11 @@
+{
+  "name": "Radio Silence",
+  "description": "Network monitor and firewall",
+  "version": "3.3",
+  "url": "https://radiosilenceapp.com/downloads/Radio_Silence_3.3.pkg",
+  "bundleId": "com.radiosilenceapp.*",
+  "homepage": "https://radiosilenceapp.com/",
+  "fileName": "Radio_Silence_3.3.pkg",
+  "type": "pkg",
+  "sha": "2dda80432b4d1678124fa2109f99c82fc1ce17177086cc42561b256f6b7d2b86"
+}

@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "e021ec3b8c30da8ff2b1480575461ae177e11090fac35bc7cd44767b2467fab5",
   "category": "Utilities",
-  "publisher": "KeepingYouAwake"
+  "publisher": "KeepingYouAwake",
+  "previous_version": "1.6.8"
 }

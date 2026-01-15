@@ -8,5 +8,6 @@
   "fileName": "macpilot.dmg",
   "sha": "b201d87d92d1a214b874ef343a970dac9cd4227d0eb15533c9f760aac4981659",
   "category": "Utilities",
-  "publisher": "Koingo Software"
+  "publisher": "Koingo Software",
+  "previous_version": "17.5"
 }

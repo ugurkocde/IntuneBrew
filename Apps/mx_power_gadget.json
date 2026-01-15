@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "271c23e19f4de82632962df8c5d2a31d02679fc9ec5c217bd28f00f356f599f2",
   "category": "Utilities",
-  "publisher": "Seense"
+  "publisher": "Seense",
+  "previous_version": "1.5.2"
 }

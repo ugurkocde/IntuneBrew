@@ -1,0 +1,11 @@
+{
+  "name": "OpenCloud Desktop",
+  "description": "Desktop syncing client for OpenCloud",
+  "version": "3.0.3",
+  "url": "https://github.com/opencloud-eu/desktop/releases/download/v3.0.3/OpenCloud_Desktop-v3.0.3-macos-clang-arm64.pkg",
+  "bundleId": null,
+  "homepage": "https://github.com/opencloud-eu/desktop",
+  "fileName": "OpenCloud_Desktop-v3.0.3-macos-clang-arm64.pkg",
+  "type": "pkg",
+  "sha": "4f1e4292b19c38cb346cbabacd22733a3ad4c37915fc0b6a1db7960a03687b00"
+}

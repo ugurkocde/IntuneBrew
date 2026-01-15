@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "15e0b887213f322fd8c0e7a7cc1b345611229a73e31349f61491e3babca8cc76",
   "category": "Design",
-  "publisher": "Lemkesoft GmbH"
+  "publisher": "Lemkesoft GmbH",
+  "previous_version": "12.5"
 }

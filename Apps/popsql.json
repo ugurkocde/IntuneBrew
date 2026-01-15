@@ -1,0 +1,10 @@
+{
+  "name": "PopSQL",
+  "description": "Collaborative SQL editor",
+  "version": "1.0.135",
+  "url": "https://popsql-releases.s3.amazonaws.com/mac/PopSQL-1.0.135-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://popsql.com/",
+  "fileName": "PopSQL-1.0.135-arm64.dmg",
+  "sha": "2a1e9af94cb191b80771c8bbb1952a85b628402fd6e783d91b2231d48236ae00"
+}

@@ -1,0 +1,11 @@
+{
+  "name": "OpenToonz",
+  "description": "Open-source full-featured 2D animation creation software",
+  "version": "1.7.1",
+  "url": "https://github.com/opentoonz/opentoonz/releases/download/v1.7.1/OpenToonz.pkg",
+  "bundleId": "io.github.opentoonz",
+  "homepage": "https://opentoonz.github.io/e/index.html",
+  "fileName": "OpenToonz.pkg",
+  "type": "pkg",
+  "sha": "b2849f4359499164ee610c17e1a79019f5a3474fb37620243e4bd8c8724fc136"
+}

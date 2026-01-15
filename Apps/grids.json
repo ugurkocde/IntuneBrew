@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "defb9737a7834e66d528855827158713c6c932e68078288e9c0a6f46a89794f7",
   "category": "Media",
-  "publisher": "Grids"
+  "publisher": "Grids",
+  "previous_version": "8.5.8"
 }

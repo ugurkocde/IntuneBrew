@@ -8,5 +8,6 @@
   "fileName": "kobosetup.dmg",
   "sha": "3879210b594fc20a0faf7ffadbd14b7fc85255966172e007951118c74097ee6f",
   "category": "Media",
-  "publisher": "Rakuten Kobo"
+  "publisher": "Rakuten Kobo",
+  "previous_version": "latest"
 }

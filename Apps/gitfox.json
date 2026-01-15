@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "97a8e9c57d78e83daa968490237182f6f38a186adb53738b4ad212473f440c8c",
   "category": "Developer Tools",
-  "publisher": "GitFox"
+  "publisher": "GitFox",
+  "previous_version": "4.1.0"
 }

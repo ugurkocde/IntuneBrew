@@ -1,0 +1,11 @@
+{
+  "name": "RapidWeaver",
+  "description": "Web design software",
+  "version": "9.6.8",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/rapidweaver_9.6.8.pkg",
+  "bundleId": null,
+  "homepage": "https://www.realmacsoftware.com/rapidweaver/",
+  "fileName": "rapidweaver_9.6.8.pkg",
+  "type": "app",
+  "sha": "261bc7f7297ebea6458e2ad7a5fb18181c2120fbcf69931e7f2ce6181803bbf9"
+}

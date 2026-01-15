@@ -1,0 +1,10 @@
+{
+  "name": "Pitch",
+  "description": "Collaborative presentation software",
+  "version": "2.109.0",
+  "url": "https://desktop-app-builds.pitch.com/Pitch-2.109.0-stable.1-ci7725049.dmg",
+  "bundleId": null,
+  "homepage": "https://pitch.com/",
+  "fileName": "Pitch-2.109.0-stable.1-ci7725049.dmg",
+  "sha": "4f72f361113629853f423331f353115f549c08b751c42f21339e40daaad8930e"
+}

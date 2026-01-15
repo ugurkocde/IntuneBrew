@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "58b42f814c95168e149491d330acb286920fcc19c581e958168305b78c8aa478",
   "category": "Utilities",
-  "publisher": "IBM Corporation"
+  "publisher": "IBM Corporation",
+  "previous_version": "4.2.13.820"
 }

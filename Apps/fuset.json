@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "1c4d61a765240a23627a7f1ea9e204e515385a5f4a25165065a570c42bdb9f89",
   "category": "Utilities",
-  "publisher": "The FUSE Project"
+  "publisher": "The FUSE Project",
+  "previous_version": "1.0.49"
 }

@@ -8,5 +8,6 @@
   "fileName": "Museeks_0.23.1_universal.dmg",
   "sha": "8f7795c5921e2e43ea1bf0438b6f5ae717b05dfb00e017f5c50fea2c8bef5e5d",
   "category": "Media",
-  "publisher": "Museeks"
+  "publisher": "Museeks",
+  "previous_version": "0.23.1"
 }

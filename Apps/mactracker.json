@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "b1290ac47daa6c67343a82406f87c352ed31f8a21b240163851bd3fd47c4ae48",
   "category": "Utilities",
-  "publisher": "Mactracker"
+  "publisher": "Mactracker",
+  "previous_version": "8.0.1"
 }

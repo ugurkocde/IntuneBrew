@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "c06996531396ff9e9980cb84355d6a3abd94e69591ff69b55277e16dfa3b5932",
   "category": "Productivity",
-  "publisher": "Memory"
+  "publisher": "Memory",
+  "previous_version": "2023.11"
 }

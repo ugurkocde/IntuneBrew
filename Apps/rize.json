@@ -1,0 +1,10 @@
+{
+  "name": "Rize",
+  "description": "AI time tracker",
+  "version": "2.3.4",
+  "url": "https://github.com/rize-io/lua/releases/download/v2.3.4/Rize-2.3.4-arm64.dmg",
+  "bundleId": null,
+  "homepage": "https://rize.io/",
+  "fileName": "Rize-2.3.4-arm64.dmg",
+  "sha": "62b4fe4d207f05cea3acd46939c8b05f03467a33d12e421e76bdd575311a9d4c"
+}

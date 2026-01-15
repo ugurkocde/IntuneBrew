@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "f45ddf2ba628571a1765d173805bc5ae7fa15817b05e3397f9e9193e9defd9e4",
   "category": "Utilities",
-  "publisher": "Houdah Software"
+  "publisher": "Houdah Software",
+  "previous_version": "6.6.1"
 }

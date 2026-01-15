@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "8b0315c23c8ec9dcfdd66cfa1deb85f18df68aec6b29bfab89c135cc72b3498b",
   "category": "Utilities",
-  "publisher": "HiDock"
+  "publisher": "HiDock",
+  "previous_version": "1.4"
 }

@@ -1,0 +1,10 @@
+{
+  "name": "redis-pro",
+  "description": "Redis desktop",
+  "version": "3.1.0",
+  "url": "https://github.com/cmushroom/redis-pro/releases/download/3.1.0/redis-pro.dmg",
+  "bundleId": null,
+  "homepage": "https://github.com/cmushroom/redis-pro",
+  "fileName": "redis-pro.dmg",
+  "sha": "d7e408a5a7f409bd47e841cb2e48670820a19029f73737ec60a86eb75dda28f6"
+}

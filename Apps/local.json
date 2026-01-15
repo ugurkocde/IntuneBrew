@@ -8,5 +8,6 @@
   "fileName": "local-9.2.9-mac-arm64.dmg",
   "sha": "514721b17b9550348e1c9dc2e92fde2e7205835a506f0d747c26ae81fca8bf09",
   "category": "Developer Tools",
-  "publisher": "Flywheel, Inc."
+  "publisher": "Flywheel, Inc.",
+  "previous_version": "9.2.9"
 }

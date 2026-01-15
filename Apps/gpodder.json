@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "9fc70bbe543f2665c9fe6b90dbd95e9a40565d9b86d2cf73bb9e04182b287d58",
   "category": "Media",
-  "publisher": "The gPodder Team"
+  "publisher": "The gPodder Team",
+  "previous_version": "3.11.5"
 }

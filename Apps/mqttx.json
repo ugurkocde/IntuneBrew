@@ -8,5 +8,6 @@
   "fileName": "MQTTX-1.12.1-arm64.dmg",
   "sha": "f83cdbae6f300d0e4d89f1bacee8717d67acefeca049759c5e6e3509819a32c0",
   "category": "Developer Tools",
-  "publisher": "EMQ Technologies"
+  "publisher": "EMQ Technologies",
+  "previous_version": "1.12.1"
 }

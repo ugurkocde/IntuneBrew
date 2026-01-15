@@ -8,5 +8,6 @@
   "fileName": "Jiggler.dmg",
   "sha": "086e098bdc2178cff9d429ebd526c61f2c7c234f35126bc751f9012ebfa09a62",
   "category": "Utilities",
-  "publisher": "Stick Software"
+  "publisher": "Stick Software",
+  "previous_version": "1.10"
 }

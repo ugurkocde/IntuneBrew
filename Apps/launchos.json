@@ -8,5 +8,6 @@
   "fileName": "LaunchOS-1.3.0-130.dmg",
   "sha": "39c05f1b807c519c7f179308f1789dea76b651c8ba19ed444500c945fcf47418",
   "category": "Utilities",
-  "publisher": "LaunchOS"
+  "publisher": "LaunchOS",
+  "previous_version": "1.3.0"
 }

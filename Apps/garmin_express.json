@@ -8,5 +8,6 @@
   "fileName": "GarminExpress.dmg",
   "sha": "b788d7f7fc5073ffa311e2fac1211e99a8e070224baa7974231d042c04600586",
   "category": "Utilities",
-  "publisher": "Garmin Ltd."
+  "publisher": "Garmin Ltd.",
+  "previous_version": "7.28.0"
 }

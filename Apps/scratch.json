@@ -1,0 +1,10 @@
+{
+  "name": "Scratch",
+  "description": "Programmes interactive stories, games, and animations",
+  "version": "3.31.1",
+  "url": "https://downloads.scratch.mit.edu/desktop/Scratch%203.31.1.dmg",
+  "bundleId": null,
+  "homepage": "https://scratch.mit.edu/download",
+  "fileName": "Scratch%203.31.1.dmg",
+  "sha": "97367a199a00f98965c826cda6cc019285affa097f700a9af09c38697b64863f"
+}

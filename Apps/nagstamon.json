@@ -1,0 +1,10 @@
+{
+  "name": "Nagstamon",
+  "description": "Nagios status monitor",
+  "version": "3.16.2",
+  "url": "https://github.com/HenriWahl/Nagstamon/releases/download/v3.16.2/Nagstamon.3.16.2.ARM.dmg",
+  "bundleId": null,
+  "homepage": "https://nagstamon.de/",
+  "fileName": "Nagstamon.3.16.2.ARM.dmg",
+  "sha": "fabb4728569ad3501444037624be7f08659ccf70447f4456b30079a41f0c55fb"
+}

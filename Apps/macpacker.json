@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "de369d6aa0cce0969cd2aad77406778c82380bec1c0ec985798f559c76d3c72e",
   "category": "Utilities",
-  "publisher": "MacPacker"
+  "publisher": "MacPacker",
+  "previous_version": "0.12"
 }

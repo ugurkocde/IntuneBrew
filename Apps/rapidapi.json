@@ -1,0 +1,11 @@
+{
+  "name": "RapidAPI",
+  "description": "HTTP client that helps testing and describing APIs",
+  "version": "4.5.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/rapidapi_4.5.4.pkg",
+  "bundleId": null,
+  "homepage": "https://paw.cloud/",
+  "fileName": "rapidapi_4.5.4.pkg",
+  "type": "app",
+  "sha": "87eaf014c35ec396131c95761b9f516be9eba41b541affb143bb4fb930e60101"
+}

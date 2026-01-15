@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "c1c4df00a51e60ab5ae016a064ce54b04cf34bdd8fc445501975a9553aed3655",
   "category": "Productivity",
-  "publisher": "Microsoft Corporation"
+  "publisher": "Microsoft Corporation",
+  "previous_version": "16.105.26011018"
 }
