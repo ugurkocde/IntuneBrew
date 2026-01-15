@@ -10,7 +10,7 @@ on:
 
 jobs:
   build-formulas:
-    runs-on: macos-14  # Apple Silicon (arm64)
+    runs-on: macos-15  # Apple Silicon (arm64) - Sequoia
     steps:
       - uses: actions/checkout@v4
 
