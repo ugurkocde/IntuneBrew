@@ -1,9 +1,13 @@
 name: Update Bundle IDs
 
 on:
-  # Run weekly on Sundays at 2 AM UTC
+  # Run weekly on Sundays at 2 AM UTC (fallback for re-verification)
   schedule:
     - cron: '0 2 * * 0'
+  # Run after Categorize Apps completes (sequential to avoid race conditions)
+  workflow_run:
+    workflows: ["Categorize Apps"]
+    types: [completed]
   # Allow manual triggering
   workflow_dispatch:
     inputs:
@@ -24,6 +28,7 @@ permissions:
 jobs:
   update-bundle-ids:
     runs-on: ubuntu-latest
+    if: ${{ github.event_name != 'workflow_run' || github.event.workflow_run.conclusion == 'success' }}
     steps:
       - uses: actions/checkout@v4
 
