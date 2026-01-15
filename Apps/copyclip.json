@@ -3,7 +3,7 @@
   "description": "Clipboard manager",
   "version": "2.9.99.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/copyclip_2.9.99.2.pkg",
-  "bundleId": "com.fiplab.copyclip2",
+  "bundleId": "com.fiplab.clipboard",
   "homepage": "https://fiplab.com/apps/copyclip-for-mac",
   "fileName": "copyclip_2.9.99.2.pkg",
   "type": "app",

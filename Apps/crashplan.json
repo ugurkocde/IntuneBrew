@@ -3,7 +3,7 @@
   "description": "Backup and recovery software",
   "version": "11.8.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/crashplan_11.8.0.pkg",
-  "bundleId": "com.crashplan.app.pkg",
+  "bundleId": "com.crashplan.desktop",
   "homepage": "https://www.crashplan.com/",
   "fileName": "CrashPlan_11.8.0_609_Mac.dmg",
   "type": "pkg_in_dmg",

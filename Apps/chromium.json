@@ -3,7 +3,7 @@
   "description": "Free and open-source web browser",
   "version": "latest",
   "url": "https://intunebrew.blob.core.windows.net/pkg/chromium_latest.pkg",
-  "bundleId": null,
+  "bundleId": "org.chromium.Chromium",
   "homepage": "https://www.chromium.org/Home",
   "fileName": "chromium_latest.pkg",
   "type": "app",

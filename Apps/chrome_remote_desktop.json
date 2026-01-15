@@ -3,7 +3,7 @@
   "description": "Remotely access another computer through the Google Chrome browser",
   "version": "144.0.7559.13",
   "url": "https://intunebrew.blob.core.windows.net/pkg/chrome_remote_desktop_144.0.7559.13.pkg",
-  "bundleId": "com.google.GoogleUpdater.wake.system",
+  "bundleId": "com.google.chromeremotedesktop.me2me-host",
   "homepage": "https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai",
   "fileName": "chromeremotedesktop.dmg",
   "type": "pkg_in_dmg",

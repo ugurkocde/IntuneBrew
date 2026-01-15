@@ -1,72 +1,147 @@
 [
   {
-    "key": "avidemux",
-    "name": "Avidemux",
+    "key": "calmly_writer",
+    "name": "Calmly Writer",
+    "currentBundleId": "calmlywriter"
+  },
+  {
+    "key": "capacities",
+    "name": "Capacities",
     "currentBundleId": null
   },
   {
-    "key": "aws_client_vpn",
-    "name": "AWS Client VPN",
-    "currentBundleId": "com.amazon.awsvpnclient"
+    "key": "capcut",
+    "name": "CapCut",
+    "currentBundleId": "com.lemon.lvoverseas"
   },
   {
-    "key": "aws_corretto_jdk",
-    "name": "AWS Corretto JDK",
-    "currentBundleId": "com.amazon.corretto.21"
-  },
-  {
-    "key": "azul_zulu_java_standard_edition_development_kit",
-    "name": "Azul Zulu Java Standard Edition Development Kit",
-    "currentBundleId": "com.azulsystems.zulu.23"
-  },
-  {
-    "key": "batfi",
-    "name": "BatFi",
-    "currentBundleId": "software.micropixels.BatFi"
-  },
-  {
-    "key": "beeper",
-    "name": "Beeper",
-    "currentBundleId": "im.beeper"
-  },
-  {
-    "key": "binary_ninja",
-    "name": "Binary Ninja",
-    "currentBundleId": "com.vector35.binaryninja"
-  },
-  {
-    "key": "birdfont",
-    "name": "BirdFont",
+    "key": "castr",
+    "name": "castr",
     "currentBundleId": null
   },
   {
-    "key": "biscuit",
-    "name": "Biscuit",
+    "key": "claude",
+    "name": "Claude",
+    "currentBundleId": "com.anthropic.claudefordesktop"
+  },
+  {
+    "key": "cleanmymac",
+    "name": "CleanMyMac",
+    "currentBundleId": "com.macpaw.CleanMyMac5.HealthMonitor"
+  },
+  {
+    "key": "clipy",
+    "name": "Clipy",
+    "currentBundleId": "com.clipy-app.Clipy"
+  },
+  {
+    "key": "coconutbattery",
+    "name": "coconutBattery",
+    "currentBundleId": "com.coconut-flavour.coconutBattery-Menu"
+  },
+  {
+    "key": "coherence_x",
+    "name": "Coherence X",
     "currentBundleId": null
   },
   {
-    "key": "bluefish",
-    "name": "Bluefish",
+    "key": "cool_retro_term",
+    "name": "Cool Retro Term",
     "currentBundleId": null
   },
   {
-    "key": "bome_network",
-    "name": "Bome Network",
-    "currentBundleId": "com.bome.network"
+    "key": "crystalfetch",
+    "name": "Crystalfetch",
+    "currentBundleId": "llc.turing.CrystalFetch"
   },
   {
-    "key": "boxcryptor",
-    "name": "Boxcryptor",
-    "currentBundleId": "com.boxcryptor.ios"
+    "key": "curio",
+    "name": "Curio",
+    "currentBundleId": null
   },
   {
-    "key": "breaktimer",
-    "name": "BreakTimer",
-    "currentBundleId": "com.tomjwatson.breaktimer"
+    "key": "dangerzone",
+    "name": "Dangerzone",
+    "currentBundleId": "media.firstlook.dangerzone"
   },
   {
-    "key": "butler",
-    "name": "Butler",
+    "key": "dataflare",
+    "name": "Dataflare",
+    "currentBundleId": "app.dataflare.desktop"
+  },
+  {
+    "key": "deepl",
+    "name": "DeepL",
+    "currentBundleId": "com.linguee.DeepLCopyTranslator"
+  },
+  {
+    "key": "devtoys",
+    "name": "DevToys",
+    "currentBundleId": "com.devtoys"
+  },
+  {
+    "key": "devutils",
+    "name": "DevUtils",
+    "currentBundleId": "tonyapp.devutils"
+  },
+  {
+    "key": "ditto",
+    "name": "Ditto",
+    "currentBundleId": "com.squirrels.Ditto"
+  },
+  {
+    "key": "dockside",
+    "name": "Dockside",
+    "currentBundleId": "com.hachipoo.Dockside"
+  },
+  {
+    "key": "dockview",
+    "name": "DockView",
+    "currentBundleId": null
+  },
+  {
+    "key": "double_commander",
+    "name": "Double Commander",
+    "currentBundleId": null
+  },
+  {
+    "key": "doughnut",
+    "name": "Doughnut",
+    "currentBundleId": "com.cdyer.doughnut"
+  },
+  {
+    "key": "drawbot",
+    "name": "DrawBot",
+    "currentBundleId": "com.drawbot"
+  },
+  {
+    "key": "eclipse_ide_for_eclipse_committers",
+    "name": "Eclipse IDE for Eclipse Committers",
+    "currentBundleId": null
+  },
+  {
+    "key": "eclipse_ide_for_java_developers",
+    "name": "Eclipse IDE for Java Developers",
+    "currentBundleId": null
+  },
+  {
+    "key": "eclipse_temurin_java_development_kit",
+    "name": "Eclipse Temurin Java Development Kit",
+    "currentBundleId": "net.temurin.23.jdk"
+  },
+  {
+    "key": "edrawmax",
+    "name": "EdrawMax",
+    "currentBundleId": "com.edrawsoft.edrawmax"
+  },
+  {
+    "key": "elgato_capture_device_utility",
+    "name": "Elgato Capture Device Utility",
+    "currentBundleId": "com.elgato.CaptureDeviceUtility"
+  },
+  {
+    "key": "elmedia_player",
+    "name": "Elmedia Player",
     "currentBundleId": null
   }
 ]

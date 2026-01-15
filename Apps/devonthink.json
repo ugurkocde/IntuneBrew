@@ -3,7 +3,7 @@
   "description": "Collect, organise, edit and annotate documents",
   "version": "4.1.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/devonthink_4.1.1.pkg",
-  "bundleId": null,
+  "bundleId": "com.devon-technologies.think",
   "homepage": "https://www.devontechnologies.com/apps/devonthink",
   "fileName": "DEVONthink.app.zip",
   "type": "app",

@@ -3,7 +3,7 @@
   "description": "Software custom-built for content creation",
   "version": "2.0.7.3795",
   "url": "https://edge.elgato.com/egc/macos/wavelink/2.0.7/WaveLink_2.0.7.3795.pkg",
-  "bundleId": "com.elgato.pkg.WaveLink",
+  "bundleId": "com.elgato.WaveLink",
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
   "fileName": "WaveLink_2.0.7.3795.pkg",
   "sha": "8a848a60758990a48807c7f983fb22e33e4e5207243a2aaf31777714bcaa97c9",

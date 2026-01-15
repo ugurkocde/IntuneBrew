@@ -3,7 +3,7 @@
   "description": "Tool to list all active shortcuts of the current application",
   "version": "1.6.4",
   "url": "https://www.mediaatelier.com/CheatSheet/CheatSheet_1.6.4.dmg",
-  "bundleId": null,
+  "bundleId": "com.mediaatelier.CheatSheet",
   "homepage": "https://www.mediaatelier.com/CheatSheet/",
   "fileName": "CheatSheet_1.6.4.dmg",
   "category": "Utilities",

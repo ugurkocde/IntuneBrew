@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-15T11:47:25.620Z",
+  "last_full_scan": "2026-01-15T14:26:50.295Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -704,6 +704,704 @@
       "bundle_id": null,
       "status": "unknown",
       "name": "Butler"
+    },
+    "caffeine": {
+      "last_checked": "2026-01-15T13:07:51.356Z",
+      "bundle_id": "net.domzilla.caffeine",
+      "status": "verified",
+      "source": "api",
+      "name": "Caffeine"
+    },
+    "calibre": {
+      "last_checked": "2026-01-15T13:08:10.620Z",
+      "bundle_id": "net.kovidgoyal.calibre",
+      "status": "verified",
+      "source": "api",
+      "name": "calibre"
+    },
+    "calmly_writer": {
+      "last_checked": "2026-01-15T13:08:55.547Z",
+      "bundle_id": "calmlywriter",
+      "status": "unknown",
+      "name": "Calmly Writer"
+    },
+    "camtasia": {
+      "last_checked": "2026-01-15T13:10:01.967Z",
+      "bundle_id": "com.techsmith.camtasia2023",
+      "status": "verified",
+      "source": "api",
+      "name": "Camtasia"
+    },
+    "canva": {
+      "last_checked": "2026-01-15T13:10:32.695Z",
+      "bundle_id": "com.canva.CanvaDesktop",
+      "status": "verified",
+      "source": "api",
+      "name": "Canva"
+    },
+    "capacities": {
+      "last_checked": "2026-01-15T13:11:21.911Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Capacities"
+    },
+    "capcut": {
+      "last_checked": "2026-01-15T13:11:56.258Z",
+      "bundle_id": "com.lemon.lvoverseas",
+      "status": "unknown",
+      "name": "CapCut"
+    },
+    "carbon_copy_cloner": {
+      "last_checked": "2026-01-15T13:12:24.273Z",
+      "bundle_id": "com.bombich.ccc",
+      "status": "verified",
+      "source": "api",
+      "name": "Carbon Copy Cloner"
+    },
+    "castr": {
+      "last_checked": "2026-01-15T13:13:23.749Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "castr"
+    },
+    "charles": {
+      "last_checked": "2026-01-15T13:13:53.464Z",
+      "bundle_id": "com.xk72.Charles",
+      "status": "verified",
+      "source": "api",
+      "name": "Charles"
+    },
+    "chatgpt": {
+      "last_checked": "2026-01-15T13:14:43.968Z",
+      "bundle_id": "com.openai.chat",
+      "status": "verified",
+      "source": "api",
+      "name": "ChatGPT"
+    },
+    "chatwise": {
+      "last_checked": "2026-01-15T13:15:13.821Z",
+      "bundle_id": "app.chatwise",
+      "status": "verified",
+      "source": "api",
+      "name": "ChatWise"
+    },
+    "cheatsheet": {
+      "last_checked": "2026-01-15T13:16:03.416Z",
+      "bundle_id": "com.mediaatelier.CheatSheet",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "CheatSheet"
+    },
+    "chrome_remote_desktop": {
+      "last_checked": "2026-01-15T13:17:04.344Z",
+      "bundle_id": "com.google.chromeremotedesktop.me2me-host",
+      "previous_bundle_id": "com.google.GoogleUpdater.wake.system",
+      "status": "updated",
+      "source": "api",
+      "name": "Chrome Remote Desktop"
+    },
+    "chromium": {
+      "last_checked": "2026-01-15T13:17:37.218Z",
+      "bundle_id": "org.chromium.Chromium",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Chromium"
+    },
+    "cisco_jabber": {
+      "last_checked": "2026-01-15T13:18:09.085Z",
+      "bundle_id": "com.cisco.Jabber",
+      "status": "verified",
+      "source": "api",
+      "name": "Cisco Jabber"
+    },
+    "citrix_workspace": {
+      "last_checked": "2026-01-15T13:19:03.515Z",
+      "bundle_id": "com.citrix.receiver.nomas",
+      "status": "verified",
+      "source": "api",
+      "name": "Citrix Workspace"
+    },
+    "claude": {
+      "last_checked": "2026-01-15T13:19:25.069Z",
+      "bundle_id": "com.anthropic.claudefordesktop",
+      "status": "unknown",
+      "name": "Claude"
+    },
+    "cleanmymac": {
+      "last_checked": "2026-01-15T13:20:27.679Z",
+      "bundle_id": "com.macpaw.CleanMyMac5.HealthMonitor",
+      "status": "unknown",
+      "name": "CleanMyMac"
+    },
+    "cleanshot": {
+      "last_checked": "2026-01-15T13:21:05.085Z",
+      "bundle_id": "pl.maketheweb.cleanshotx",
+      "status": "verified",
+      "source": "api",
+      "name": "CleanShot"
+    },
+    "clickup": {
+      "last_checked": "2026-01-15T13:21:37.934Z",
+      "bundle_id": "com.clickup.desktop-app",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "ClickUp"
+    },
+    "clion": {
+      "last_checked": "2026-01-15T13:22:09.071Z",
+      "bundle_id": "com.jetbrains.CLion",
+      "status": "verified",
+      "source": "api",
+      "name": "CLion"
+    },
+    "clipy": {
+      "last_checked": "2026-01-15T13:22:53.525Z",
+      "bundle_id": "com.clipy-app.Clipy",
+      "status": "unknown",
+      "name": "Clipy"
+    },
+    "clop": {
+      "last_checked": "2026-01-15T13:23:32.318Z",
+      "bundle_id": "com.lowtechguys.Clop",
+      "status": "verified",
+      "source": "api",
+      "name": "Clop"
+    },
+    "cloudflare_warp": {
+      "last_checked": "2026-01-15T13:24:05.396Z",
+      "bundle_id": "com.cloudflare.1dot1dot1dot1.macos",
+      "status": "verified",
+      "source": "api",
+      "name": "Cloudflare WARP"
+    },
+    "coconutbattery": {
+      "last_checked": "2026-01-15T13:24:39.974Z",
+      "bundle_id": "com.coconut-flavour.coconutBattery-Menu",
+      "status": "unknown",
+      "name": "coconutBattery"
+    },
+    "codeedit": {
+      "last_checked": "2026-01-15T13:25:47.258Z",
+      "bundle_id": "app.codeedit.CodeEdit",
+      "status": "verified",
+      "source": "api",
+      "name": "CodeEdit"
+    },
+    "coderunner": {
+      "last_checked": "2026-01-15T13:26:07.950Z",
+      "bundle_id": "com.krill.CodeRunner",
+      "status": "verified",
+      "source": "api",
+      "name": "CodeRunner"
+    },
+    "coherence_x": {
+      "last_checked": "2026-01-15T13:26:45.246Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Coherence X"
+    },
+    "commander_one": {
+      "last_checked": "2026-01-15T13:27:20.002Z",
+      "bundle_id": "com.eltima.cmd1",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Commander One"
+    },
+    "company_portal": {
+      "last_checked": "2026-01-15T13:27:51.370Z",
+      "bundle_id": "com.microsoft.CompanyPortalMac",
+      "previous_bundle_id": "com.microsoft.CompanyPortal",
+      "status": "updated",
+      "source": "api",
+      "name": "Company Portal"
+    },
+    "contexts": {
+      "last_checked": "2026-01-15T13:28:19.766Z",
+      "bundle_id": "com.contextsformac.Contexts",
+      "status": "verified",
+      "source": "api",
+      "name": "Contexts"
+    },
+    "cool_retro_term": {
+      "last_checked": "2026-01-15T13:29:13.374Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Cool Retro Term"
+    },
+    "copilot_for_xcode": {
+      "last_checked": "2026-01-15T13:30:06.596Z",
+      "bundle_id": "com.github.CopilotForXcode",
+      "status": "verified",
+      "source": "api",
+      "name": "Copilot for Xcode"
+    },
+    "copyclip": {
+      "last_checked": "2026-01-15T13:30:58.570Z",
+      "bundle_id": "com.fiplab.clipboard",
+      "previous_bundle_id": "com.fiplab.copyclip2",
+      "status": "updated",
+      "source": "api",
+      "name": "CopyClip"
+    },
+    "copyq": {
+      "last_checked": "2026-01-15T13:31:50.561Z",
+      "bundle_id": "io.github.hluk.CopyQ",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "CopyQ"
+    },
+    "coteditor": {
+      "last_checked": "2026-01-15T13:32:21.124Z",
+      "bundle_id": "com.coteditor.CotEditor",
+      "status": "verified",
+      "source": "api",
+      "name": "CotEditor"
+    },
+    "craft": {
+      "last_checked": "2026-01-15T13:33:17.388Z",
+      "bundle_id": "com.lukilabs.lukiapp",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Craft"
+    },
+    "crashplan": {
+      "last_checked": "2026-01-15T13:34:09.601Z",
+      "bundle_id": "com.crashplan.desktop",
+      "previous_bundle_id": "com.crashplan.app.pkg",
+      "status": "updated",
+      "source": "api",
+      "name": "CrashPlan"
+    },
+    "cryptomator": {
+      "last_checked": "2026-01-15T13:35:05.066Z",
+      "bundle_id": "org.cryptomator",
+      "status": "verified",
+      "source": "api",
+      "name": "Cryptomator"
+    },
+    "crystalfetch": {
+      "last_checked": "2026-01-15T13:36:30.340Z",
+      "bundle_id": "llc.turing.CrystalFetch",
+      "status": "unknown",
+      "name": "Crystalfetch"
+    },
+    "curio": {
+      "last_checked": "2026-01-15T13:37:12.640Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Curio"
+    },
+    "cursor": {
+      "last_checked": "2026-01-15T13:37:36.421Z",
+      "bundle_id": "com.todesktop.230313mzl4w4u92",
+      "status": "verified",
+      "source": "api",
+      "name": "Cursor"
+    },
+    "cyberduck": {
+      "last_checked": "2026-01-15T13:38:14.857Z",
+      "bundle_id": "ch.sudo.cyberduck",
+      "status": "verified",
+      "source": "api",
+      "name": "Cyberduck"
+    },
+    "daisydisk": {
+      "last_checked": "2026-01-15T13:38:40.023Z",
+      "bundle_id": "com.daisydiskapp.DaisyDiskStandAlone",
+      "previous_bundle_id": "com.daisydiskapp.DaisyDiskAdminHelper",
+      "status": "updated",
+      "source": "api",
+      "name": "DaisyDisk"
+    },
+    "dangerzone": {
+      "last_checked": "2026-01-15T13:40:05.761Z",
+      "bundle_id": "media.firstlook.dangerzone",
+      "status": "unknown",
+      "name": "Dangerzone"
+    },
+    "dash": {
+      "last_checked": "2026-01-15T13:40:35.111Z",
+      "bundle_id": "com.kapeli.dash",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Dash"
+    },
+    "dataflare": {
+      "last_checked": "2026-01-15T13:41:49.135Z",
+      "bundle_id": "app.dataflare.desktop",
+      "status": "unknown",
+      "name": "Dataflare"
+    },
+    "datagrip": {
+      "last_checked": "2026-01-15T13:42:23.273Z",
+      "bundle_id": "com.jetbrains.datagrip",
+      "status": "verified",
+      "source": "api",
+      "name": "DataGrip"
+    },
+    "dataspell": {
+      "last_checked": "2026-01-15T13:43:08.045Z",
+      "bundle_id": "com.jetbrains.DataSpell",
+      "previous_bundle_id": "com.jetbrains.dataspell",
+      "status": "updated",
+      "source": "api",
+      "name": "DataSpell"
+    },
+    "db_browser_for_sqlite": {
+      "last_checked": "2026-01-15T13:45:09.321Z",
+      "bundle_id": "net.sourceforge.sqlitebrowser",
+      "status": "verified",
+      "source": "api",
+      "name": "DB Browser for SQLite"
+    },
+    "dbeaver_community_edition": {
+      "last_checked": "2026-01-15T13:45:26.723Z",
+      "bundle_id": "org.jkiss.dbeaver.core.product",
+      "status": "verified",
+      "source": "api",
+      "name": "DBeaver Community Edition"
+    },
+    "dbgate": {
+      "last_checked": "2026-01-15T13:46:43.098Z",
+      "bundle_id": "org.dbgate",
+      "status": "verified",
+      "source": "api",
+      "name": "DbGate"
+    },
+    "deepl": {
+      "last_checked": "2026-01-15T13:47:28.686Z",
+      "bundle_id": "com.linguee.DeepLCopyTranslator",
+      "status": "unknown",
+      "name": "DeepL"
+    },
+    "deezer": {
+      "last_checked": "2026-01-15T13:47:54.658Z",
+      "bundle_id": "com.deezer.deezer-desktop",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Deezer"
+    },
+    "deskpad": {
+      "last_checked": "2026-01-15T13:49:12.259Z",
+      "bundle_id": "com.stengo.DeskPad",
+      "status": "verified",
+      "source": "api",
+      "name": "DeskPad"
+    },
+    "devonthink": {
+      "last_checked": "2026-01-15T13:49:52.603Z",
+      "bundle_id": "com.devon-technologies.think",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "DEVONthink"
+    },
+    "devtoys": {
+      "last_checked": "2026-01-15T13:51:18.143Z",
+      "bundle_id": "com.devtoys",
+      "status": "unknown",
+      "name": "DevToys"
+    },
+    "devutils": {
+      "last_checked": "2026-01-15T13:52:19.539Z",
+      "bundle_id": "tonyapp.devutils",
+      "status": "unknown",
+      "name": "DevUtils"
+    },
+    "discord": {
+      "last_checked": "2026-01-15T13:53:21.906Z",
+      "bundle_id": "com.hnc.Discord",
+      "status": "verified",
+      "source": "api",
+      "name": "Discord"
+    },
+    "disk_drill": {
+      "last_checked": "2026-01-15T13:53:58.803Z",
+      "bundle_id": "com.cleverfiles.DiskDrill",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Disk Drill"
+    },
+    "disk_inventory_x": {
+      "last_checked": "2026-01-15T13:54:20.717Z",
+      "bundle_id": "com.derlien.DiskInventoryX",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Disk Inventory X"
+    },
+    "displaylink_usb_graphics_software": {
+      "last_checked": "2026-01-15T13:55:03.814Z",
+      "bundle_id": "com.displaylink.DisplayLinkUserAgent",
+      "previous_bundle_id": "com.displaylink.*",
+      "status": "updated",
+      "source": "api",
+      "name": "DisplayLink USB Graphics Software"
+    },
+    "ditto": {
+      "last_checked": "2026-01-15T13:55:53.618Z",
+      "bundle_id": "com.squirrels.Ditto",
+      "status": "unknown",
+      "name": "Ditto"
+    },
+    "dockdoor": {
+      "last_checked": "2026-01-15T13:57:21.232Z",
+      "bundle_id": "com.ejbills.DockDoor",
+      "previous_bundle_id": "com.ethanbills.DockDoor",
+      "status": "updated",
+      "source": "api",
+      "name": "DockDoor"
+    },
+    "docker_desktop": {
+      "last_checked": "2026-01-15T13:58:09.928Z",
+      "bundle_id": "com.docker.docker",
+      "status": "verified",
+      "source": "api",
+      "name": "Docker Desktop"
+    },
+    "dockside": {
+      "last_checked": "2026-01-15T13:59:01.003Z",
+      "bundle_id": "com.hachipoo.Dockside",
+      "status": "unknown",
+      "name": "Dockside"
+    },
+    "dockview": {
+      "last_checked": "2026-01-15T13:59:39.693Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "DockView"
+    },
+    "dosbox": {
+      "last_checked": "2026-01-15T14:00:18.046Z",
+      "bundle_id": "com.dosbox.dosbox",
+      "previous_bundle_id": "dosbox.dosbox",
+      "status": "updated",
+      "source": "api",
+      "name": "DOSBox"
+    },
+    "double_commander": {
+      "last_checked": "2026-01-15T14:01:39.950Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Double Commander"
+    },
+    "doughnut": {
+      "last_checked": "2026-01-15T14:03:13.638Z",
+      "bundle_id": "com.cdyer.doughnut",
+      "status": "unknown",
+      "name": "Doughnut"
+    },
+    "downie": {
+      "last_checked": "2026-01-15T14:03:59.900Z",
+      "bundle_id": "com.charliemonroe.Downie-4",
+      "status": "verified",
+      "source": "api",
+      "name": "Downie"
+    },
+    "drawbot": {
+      "last_checked": "2026-01-15T14:05:13.260Z",
+      "bundle_id": "com.drawbot",
+      "status": "unknown",
+      "name": "DrawBot"
+    },
+    "drawio_desktop": {
+      "last_checked": "2026-01-15T14:05:54.899Z",
+      "bundle_id": "com.jgraph.drawio.desktop",
+      "status": "verified",
+      "source": "api",
+      "name": "draw.io Desktop"
+    },
+    "drivedx": {
+      "last_checked": "2026-01-15T14:06:19.453Z",
+      "bundle_id": "com.binaryfruit.DriveDx",
+      "status": "verified",
+      "source": "api",
+      "name": "DriveDX"
+    },
+    "dropbox": {
+      "last_checked": "2026-01-15T14:07:02.816Z",
+      "bundle_id": "com.getdropbox.dropbox",
+      "status": "verified",
+      "source": "api",
+      "name": "Dropbox"
+    },
+    "dropdmg": {
+      "last_checked": "2026-01-15T14:07:27.343Z",
+      "bundle_id": "com.c-command.DropDMG",
+      "status": "verified",
+      "source": "api",
+      "name": "DropDMG"
+    },
+    "dropshare": {
+      "last_checked": "2026-01-15T14:09:01.256Z",
+      "bundle_id": "net.mkswap.Dropshare",
+      "previous_bundle_id": "net.mkswap.Dropshare5",
+      "status": "updated",
+      "source": "api",
+      "name": "Dropshare"
+    },
+    "dropzone": {
+      "last_checked": "2026-01-15T14:09:58.517Z",
+      "bundle_id": "com.aptonic.Dropzone4",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Dropzone"
+    },
+    "duckduckgo": {
+      "last_checked": "2026-01-15T14:10:38.479Z",
+      "bundle_id": "com.duckduckgo.macos.browser",
+      "status": "verified",
+      "source": "api",
+      "name": "DuckDuckGo"
+    },
+    "easydict": {
+      "last_checked": "2026-01-15T14:11:39.754Z",
+      "bundle_id": "com.izual.Easydict",
+      "status": "verified",
+      "source": "api",
+      "name": "Easydict"
+    },
+    "easyfind": {
+      "last_checked": "2026-01-15T14:12:08.457Z",
+      "bundle_id": "org.grunenberg.EasyFind",
+      "status": "verified",
+      "source": "api",
+      "name": "EasyFind"
+    },
+    "ecamm_live": {
+      "last_checked": "2026-01-15T14:13:02.421Z",
+      "bundle_id": "com.ecamm.EcammLive",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Ecamm Live"
+    },
+    "eclipse_ide_for_eclipse_committers": {
+      "last_checked": "2026-01-15T14:14:17.475Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Eclipse IDE for Eclipse Committers"
+    },
+    "eclipse_ide_for_java_developers": {
+      "last_checked": "2026-01-15T14:15:16.715Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Eclipse IDE for Java Developers"
+    },
+    "eclipse_temurin_java_development_kit": {
+      "last_checked": "2026-01-15T14:16:39.880Z",
+      "bundle_id": "net.temurin.23.jdk",
+      "status": "unknown",
+      "name": "Eclipse Temurin Java Development Kit"
+    },
+    "edrawmax": {
+      "last_checked": "2026-01-15T14:17:30.523Z",
+      "bundle_id": "com.edrawsoft.edrawmax",
+      "status": "unknown",
+      "name": "EdrawMax"
+    },
+    "element": {
+      "last_checked": "2026-01-15T14:17:58.462Z",
+      "bundle_id": "im.riot.app",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Element"
+    },
+    "elephas": {
+      "last_checked": "2026-01-15T14:18:16.584Z",
+      "bundle_id": "com.kamban.elephas",
+      "status": "verified",
+      "source": "api",
+      "name": "Elephas"
+    },
+    "elgato_camera_hub": {
+      "last_checked": "2026-01-15T14:18:48.652Z",
+      "bundle_id": "com.elgato.CameraHub",
+      "previous_bundle_id": "com.displaylink.displaylinkmanagerapp",
+      "status": "updated",
+      "source": "api",
+      "name": "Elgato Camera Hub"
+    },
+    "elgato_capture_device_utility": {
+      "last_checked": "2026-01-15T14:19:20.170Z",
+      "bundle_id": "com.elgato.CaptureDeviceUtility",
+      "status": "unknown",
+      "name": "Elgato Capture Device Utility"
+    },
+    "elgato_stream_deck": {
+      "last_checked": "2026-01-15T14:19:52.525Z",
+      "bundle_id": "com.elgato.StreamDeck",
+      "status": "verified",
+      "source": "api",
+      "name": "Elgato Stream Deck"
+    },
+    "elgato_wave_link": {
+      "last_checked": "2026-01-15T14:20:23.344Z",
+      "bundle_id": "com.elgato.WaveLink",
+      "previous_bundle_id": "com.elgato.pkg.WaveLink",
+      "status": "updated",
+      "source": "api",
+      "name": "Elgato Wave Link"
+    },
+    "elmedia_player": {
+      "last_checked": "2026-01-15T14:21:26.894Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Elmedia Player"
+    },
+    "ente": {
+      "last_checked": "2026-01-15T14:23:27.844Z",
+      "bundle_id": "io.ente.bhari-frame",
+      "status": "verified",
+      "source": "api",
+      "name": "Ente"
+    },
+    "ente_auth": {
+      "last_checked": "2026-01-15T14:24:34.694Z",
+      "bundle_id": "io.ente.auth.mac",
+      "status": "verified",
+      "source": "api",
+      "name": "Ente Auth"
+    },
+    "epic_games_launcher": {
+      "last_checked": "2026-01-15T14:25:02.769Z",
+      "bundle_id": "com.epicgames.EpicGamesLauncher",
+      "status": "verified",
+      "source": "api",
+      "name": "Epic Games Launcher"
+    },
+    "espanso": {
+      "last_checked": "2026-01-15T14:25:40.119Z",
+      "bundle_id": "com.federicoterzi.espanso",
+      "status": "verified",
+      "source": "api",
+      "name": "Espanso"
+    },
+    "etcher": {
+      "last_checked": "2026-01-15T14:26:19.889Z",
+      "bundle_id": "io.balena.etcher",
+      "previous_bundle_id": "io.balena.etcher.*",
+      "status": "updated",
+      "source": "api",
+      "name": "Etcher"
+    },
+    "evernote": {
+      "last_checked": "2026-01-15T14:26:50.195Z",
+      "bundle_id": "com.evernote.Evernote",
+      "status": "verified",
+      "source": "api",
+      "name": "Evernote"
     }
   }
 }

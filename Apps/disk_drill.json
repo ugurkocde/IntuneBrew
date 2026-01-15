@@ -3,7 +3,7 @@
   "description": "Data recovery software",
   "version": "6.1.2111",
   "url": "https://dl.cleverfiles.com/diskdrill.dmg",
-  "bundleId": null,
+  "bundleId": "com.cleverfiles.DiskDrill",
   "homepage": "https://www.cleverfiles.com/",
   "fileName": "diskdrill.dmg",
   "sha": "2637d51546adf0f3a4cd3289c7975c57ce9c35e29a4cb00acc67a5b665e9dbb1",

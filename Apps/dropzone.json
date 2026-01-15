@@ -3,7 +3,7 @@
   "description": "Productivity app",
   "version": "4.80.74",
   "url": "https://intunebrew.blob.core.windows.net/pkg/dropzone_4.80.74.pkg",
-  "bundleId": null,
+  "bundleId": "com.aptonic.Dropzone4",
   "homepage": "https://aptonic.com/",
   "fileName": "dropzone_4.80.74.pkg",
   "type": "app",
