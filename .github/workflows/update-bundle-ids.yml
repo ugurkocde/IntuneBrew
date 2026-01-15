@@ -62,6 +62,21 @@ jobs:
           echo "| Unknown | $UNKNOWN |" >> $GITHUB_STEP_SUMMARY
           echo "| Errors | $ERRORS |" >> $GITHUB_STEP_SUMMARY
 
+          # Add unknown apps table if any exist
+          if [ -f ".github/data/unknown-apps.json" ]; then
+            UNKNOWN_COUNT=$(jq length .github/data/unknown-apps.json)
+            if [ "$UNKNOWN_COUNT" -gt 0 ]; then
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "## Apps Needing Manual Bundle ID" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "Add these to \`.github/data/bundle-id-overrides.json\`:" >> $GITHUB_STEP_SUMMARY
+              echo "" >> $GITHUB_STEP_SUMMARY
+              echo "| App Key | App Name | Current Bundle ID |" >> $GITHUB_STEP_SUMMARY
+              echo "|---------|----------|-------------------|" >> $GITHUB_STEP_SUMMARY
+              jq -r '.[] | "| \(.key) | \(.name) | \(.currentBundleId // "none") |"' .github/data/unknown-apps.json >> $GITHUB_STEP_SUMMARY
+            fi
+          fi
+
           rm output.log
 
       - name: Commit changes

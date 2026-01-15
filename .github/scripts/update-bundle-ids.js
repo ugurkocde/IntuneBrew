@@ -264,16 +264,10 @@ async function processApps() {
   console.log(`Errors: ${errors}`);
   console.log('='.repeat(50));
 
-  // List unknown apps for manual review
-  if (unknownApps.length > 0) {
-    console.log();
-    console.log('='.repeat(50));
-    console.log('Apps needing manual bundle ID (add to bundle-id-overrides.json):');
-    console.log('='.repeat(50));
-    for (const app of unknownApps) {
-      console.log(`  "${app.key}": "" // ${app.name} (current: ${app.currentBundleId || 'none'})`);
-    }
-  }
+  // Write unknown apps to a JSON file for the workflow to pick up
+  const unknownAppsFile = path.join(__dirname, '../data/unknown-apps.json');
+  fs.writeFileSync(unknownAppsFile, JSON.stringify(unknownApps, null, 2) + '\n');
+  console.log(`\nUnknown apps written to: ${unknownAppsFile}`);
 }
 
 processApps().catch(console.error);
