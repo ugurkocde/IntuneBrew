@@ -179,7 +179,14 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add Formulas/*.json supported_formulas.json
+
+          # Add files only if they exist
+          if ls Formulas/*.json 1> /dev/null 2>&1; then
+            git add Formulas/*.json
+          fi
+          if [ -f supported_formulas.json ]; then
+            git add supported_formulas.json
+          fi
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
