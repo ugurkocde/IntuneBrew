@@ -32,7 +32,7 @@ TARGET_SIZE = (512, 512)
 class ProgressBar:
     """Terminal progress bar with real-time stats."""
 
-    def __init__(self, total, bar_width=40):
+    def __init__(self, total, bar_width=30):
         self.total = total
         self.bar_width = bar_width
         self.processed = 0
@@ -40,17 +40,19 @@ class ProgressBar:
         self.failed = 0
         self.current_app = ""
 
-    def update(self, app_name, success=None):
-        """Update progress bar with current status."""
+    def set_current(self, app_name):
+        """Set current app being processed (before result is known)."""
         self.current_app = app_name
+        self._render()
 
-        if success is not None:
-            self.processed += 1
-            if success:
-                self.success += 1
-            else:
-                self.failed += 1
-
+    def update(self, app_name, success):
+        """Update progress bar with result."""
+        self.current_app = app_name
+        self.processed += 1
+        if success:
+            self.success += 1
+        else:
+            self.failed += 1
         self._render()
 
     def _render(self):
@@ -60,16 +62,19 @@ class ProgressBar:
         filled = int(self.bar_width * progress)
         bar = "=" * filled + "-" * (self.bar_width - filled)
 
-        # Build status line
+        # Build status line with current app (truncated)
         percent = progress * 100
-        stats = f"[{bar}] {percent:5.1f}% | {self.processed}/{self.total} | OK: {self.success} | FAIL: {self.failed}"
+        app_display = self.current_app[:20].ljust(20) if self.current_app else " " * 20
+
+        stats = f"\r[{bar}] {percent:5.1f}% | {self.processed}/{self.total} | OK:{self.success} FAIL:{self.failed} | {app_display}"
 
         # Clear line and print
-        sys.stdout.write(f"\r{stats}")
+        sys.stdout.write(f"\033[K{stats}")  # \033[K clears to end of line
         sys.stdout.flush()
 
     def finish(self):
         """Complete the progress bar."""
+        self.current_app = "Done!"
         self._render()
         print()  # New line after progress bar
 
@@ -227,12 +232,16 @@ def main():
     print(f"Processing {total_apps} apps ({mode_str}{offset_str}{limit_str})")
     print()
 
-    # Initialize progress bar
+    # Initialize progress bar and show initial state
     progress = ProgressBar(total_apps)
+    progress._render()  # Show empty progress bar immediately
     fetched = []
     failed = []
 
     for app_name, app_data in all_apps:
+        # Show which app is being processed
+        progress.set_current(app_name)
+
         bundle_id = app_data.get('bundleId')
         homepage = app_data.get('homepage')
         download_url = app_data.get('url')
