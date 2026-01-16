@@ -8,5 +8,6 @@
   "fileName": "VNote-3.20.1-mac-universal.zip",
   "type": "app",
   "category": "Productivity",
-  "publisher": "VNotex"
+  "publisher": "VNotex",
+  "previous_version": "3.20.1"
 }

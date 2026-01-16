@@ -8,5 +8,6 @@
   "fileName": "smartsvn-aarch64-14_5_1.dmg",
   "sha": "bc39635559d13a9fbe49f132e6753705c44b11eff697845c3b685a1bcaf64cca",
   "category": "Developer Tools",
-  "publisher": "Syntevo GmbH"
+  "publisher": "Syntevo GmbH",
+  "previous_version": "14.5.1"
 }

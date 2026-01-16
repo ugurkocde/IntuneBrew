@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "ffb66c25d0da137587be2defbf0ec61ed9dd1cdee5f4495826cada20eff46499",
   "category": "Developer Tools",
-  "publisher": "Earthling Software"
+  "publisher": "Earthling Software",
+  "previous_version": "1.25.1"
 }

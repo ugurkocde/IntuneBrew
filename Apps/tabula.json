@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "e91ea1655dc790eba2b8e87a920c1e11adeee96e286827fd09832798a4ce14fc",
   "category": "Productivity",
-  "publisher": "Tabula"
+  "publisher": "Tabula",
+  "previous_version": "1.2.1"
 }

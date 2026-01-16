@@ -8,5 +8,6 @@
   "fileName": "TechSmithCapture.dmg",
   "sha": "1c4c5e84058b268b0ca3c2a665785fdff39fb90ed408e889261221a0453b9170",
   "category": "Utilities",
-  "publisher": "TechSmith Corporation"
+  "publisher": "TechSmith Corporation",
+  "previous_version": "1.3.31"
 }

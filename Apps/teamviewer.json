@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "a1d03ecf7abe1d96bbcc3876c376da7517823687e6d595acc321fdbdc3907759",
   "category": "Security",
-  "publisher": "TeamViewer GmbH"
+  "publisher": "TeamViewer GmbH",
+  "previous_version": "15.73.5"
 }

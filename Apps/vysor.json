@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "b96e01450cd88cb8a0ee57a05c8f5d8f61f3859f1fef0bb6e87bd6bc9b8c2927",
   "category": "Utilities",
-  "publisher": "Koushik Dutta"
+  "publisher": "Koushik Dutta",
+  "previous_version": "5.0.7"
 }

@@ -8,5 +8,6 @@
   "fileName": "sonobus-1.7.2-mac.dmg",
   "sha": "4ba6eff849973238f45e0a3538b90c9a2d64c0b001d62882d0d337f46e0ddaa9",
   "category": "Media",
-  "publisher": "SonoBus"
+  "publisher": "SonoBus",
+  "previous_version": "1.7.2"
 }

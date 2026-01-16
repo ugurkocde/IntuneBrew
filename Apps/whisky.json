@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "362fc9df428e50110deddd229579e2aaceb2d3c8f91e8bde8b116e88f1505c58",
   "category": "Utilities",
-  "publisher": "Whisky"
+  "publisher": "Whisky",
+  "previous_version": "2.3.5"
 }

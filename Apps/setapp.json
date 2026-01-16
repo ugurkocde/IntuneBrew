@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "63fa9c0e669fb13515faf3bd3bca7a8b7133df54fdaca445fa74fd100f58148b",
   "category": "Productivity",
-  "publisher": "MacPaw"
+  "publisher": "MacPaw",
+  "previous_version": "3.49.5"
 }

@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "9d7691b6a236550c5448dbcc9f4f11b7b257ed382df4507aad34a17b07f3c10a",
   "category": "Utilities",
-  "publisher": "aiaf"
+  "publisher": "aiaf",
+  "previous_version": "1.1"
 }

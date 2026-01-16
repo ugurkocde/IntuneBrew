@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "18220c0a9951162bfedf82792a842d1e55f3753243489946728b12b21de14430",
   "category": "Media",
-  "publisher": "Shutter Encoder"
+  "publisher": "Shutter Encoder",
+  "previous_version": "19.8"
 }

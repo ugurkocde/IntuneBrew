@@ -8,5 +8,6 @@
   "fileName": "sqlectron-1.39.0-arm64.dmg",
   "sha": "c4eb68ce51cf0fadbe30c67ffc309c71832461132aaffa3abfaeeb8bc9a72265",
   "category": "Developer Tools",
-  "publisher": "Sqlectron"
+  "publisher": "Sqlectron",
+  "previous_version": "1.39.0"
 }

@@ -8,5 +8,6 @@
   "fileName": "switchmaci.zip",
   "type": "app",
   "category": "Utilities",
-  "publisher": "NCH Software"
+  "publisher": "NCH Software",
+  "previous_version": "13.07"
 }

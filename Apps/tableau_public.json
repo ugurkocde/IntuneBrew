@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "754cd8dd398e497102d9c2c80bbfe743828cf877ca8c78a464ddd45e6457cb47",
   "category": "Design",
-  "publisher": "Tableau Software"
+  "publisher": "Tableau Software",
+  "previous_version": "2025.3.1"
 }

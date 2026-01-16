@@ -8,5 +8,6 @@
   "fileName": "sococo-client-mac.dmg",
   "sha": "5f98f143fbbde959f35cb6d5fb3bab7caa5ec1659452fa5e82e5b306355f033a",
   "category": "Communication",
-  "publisher": "Sococo, Inc."
+  "publisher": "Sococo, Inc.",
+  "previous_version": "6.12.2"
 }

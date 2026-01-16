@@ -8,5 +8,6 @@
   "fileName": "Transfer_2.3.1.dmg",
   "sha": "3dfc6daf9ffa340be9b47e88d823ce99608b0378c56531235ef4ddb61c25aedf",
   "category": "Utilities",
-  "publisher": "IntuitiBits"
+  "publisher": "IntuitiBits",
+  "previous_version": "2.3.1"
 }

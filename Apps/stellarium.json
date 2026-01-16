@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "9e31b736e9246963e1dda1f935b1b41afdf8c0aaf4c5935836bac272e0eba65a",
   "category": "Utilities",
-  "publisher": "The Stellarium Project"
+  "publisher": "The Stellarium Project",
+  "previous_version": "25.4"
 }

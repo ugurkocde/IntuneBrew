@@ -8,5 +8,6 @@
   "fileName": "session-desktop-mac-arm64-1.17.6.dmg",
   "sha": "6d7ee66f2ad60fb81d1e222bc8ad80b127d884fc4dad773a64d16c43472e7d82",
   "category": "Communication",
-  "publisher": "The Session Project"
+  "publisher": "The Session Project",
+  "previous_version": "1.17.6"
 }

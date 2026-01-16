@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "95c1d74dba7a8b534164bd558ee7dd1981c1d56ae435972739635a6a7ec3ef32",
   "category": "Developer Tools",
-  "publisher": "Sveinbjorn Thordarson"
+  "publisher": "Sveinbjorn Thordarson",
+  "previous_version": "3.5"
 }

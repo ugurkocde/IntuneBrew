@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "314152144a183001081289307eaa322168cd4c4c7fae2e25861ffda6387632e7",
   "category": "Utilities",
-  "publisher": "Amazon.com, Inc."
+  "publisher": "Amazon.com, Inc.",
+  "previous_version": "1.1.1.259"
 }

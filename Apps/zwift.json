@@ -8,5 +8,6 @@
   "fileName": "ZwiftOSX.dmg",
   "sha": "71bf25435c5ff3bbbedc0530cb0bdefe583c01024aab490c0e6a7d4699e9413a",
   "category": "Other",
-  "publisher": "Zwift, Inc."
+  "publisher": "Zwift, Inc.",
+  "previous_version": "1.1.14"
 }

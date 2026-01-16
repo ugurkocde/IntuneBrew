@@ -8,5 +8,6 @@
   "fileName": "VirtualBuddy_v2.1-325.dmg",
   "sha": "6ed17e8d7245931fd405c419321ace7ef9333fe2e3d59b3a7f78e34fcbe628b6",
   "category": "Developer Tools",
-  "publisher": "insidegui"
+  "publisher": "insidegui",
+  "previous_version": "2.1"
 }

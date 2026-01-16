@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "8903813a37539935420e11892cc4f788b451e9e39e240fe24ff0b5b26a08b712",
   "category": "Productivity",
-  "publisher": "The TeXShop Team"
+  "publisher": "The TeXShop Team",
+  "previous_version": "5.57"
 }

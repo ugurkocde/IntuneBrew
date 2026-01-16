@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "550495b72869cf5b621685ef6f339fa27945e851485a9b86f8f1120394ade0cb",
   "category": "Design",
-  "publisher": "Vellum"
+  "publisher": "Vellum",
+  "previous_version": "4.0.2"
 }

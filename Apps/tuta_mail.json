@@ -8,5 +8,6 @@
   "fileName": "tutanota-desktop-mac.dmg",
   "sha": "a7a0a0737ff71583277ebad8bcb20b3331496a91dbd2c9c7db1e21f2fb658fe4",
   "category": "Communication",
-  "publisher": "Tuta"
+  "publisher": "Tuta",
+  "previous_version": "319.260107.1"
 }

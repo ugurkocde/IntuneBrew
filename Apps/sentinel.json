@@ -8,5 +8,6 @@
   "fileName": "sentinel_0.40.0_darwin_arm64.zip",
   "type": "app",
   "category": "Developer Tools",
-  "publisher": "HashiCorp, Inc."
+  "publisher": "HashiCorp, Inc.",
+  "previous_version": "0.40.0"
 }

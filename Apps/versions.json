@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "f13f9881aea7fe3165f5dd8252998e2a4551dc35c5ecbd1b868f8447f8739bbf",
   "category": "Developer Tools",
-  "publisher": "Versions"
+  "publisher": "Versions",
+  "previous_version": "2.4.4"
 }

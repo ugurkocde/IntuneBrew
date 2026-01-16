@@ -8,5 +8,6 @@
   "fileName": "SuperCollider-3.14.1-macOS-universal.dmg",
   "sha": "ed264b32752d27fc86e506dd0a7eb36de7c19ebce73c3fdf2ed5514f8c73f02e",
   "category": "Developer Tools",
-  "publisher": "The SuperCollider Team"
+  "publisher": "The SuperCollider Team",
+  "previous_version": "3.14.1"
 }

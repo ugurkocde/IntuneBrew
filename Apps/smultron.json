@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "55e10e79d65862fdb7dbbbbaef798d4226bd6b7c33a5c8861f62d1c147f45b49",
   "category": "Developer Tools",
-  "publisher": "Peter Borg Apps"
+  "publisher": "Peter Borg Apps",
+  "previous_version": "14.4.5"
 }

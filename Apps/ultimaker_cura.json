@@ -8,5 +8,6 @@
   "fileName": "UltiMaker-Cura-5.11.0-macos-ARM64.dmg",
   "sha": "e0303cd5205e3d4cce1455309bfbee9ee27a96a4acb4abab5e96d4b0b55d3e6d",
   "category": "Design",
-  "publisher": "Ultimaker B.V."
+  "publisher": "Ultimaker B.V.",
+  "previous_version": "5.11.0"
 }

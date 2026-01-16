@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "a5164d9936b2613dd905638ac26e307edee814c7da86c82d28c1a0f6223eab21",
   "category": "Utilities",
-  "publisher": "Eternal Storms Software"
+  "publisher": "Eternal Storms Software",
+  "previous_version": "1.4.5"
 }

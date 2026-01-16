@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "8ae0ecc0e2f9e3727efb8fb03a0102c6f612c45164fc2781217279ea7eba98f0",
   "category": "Utilities",
-  "publisher": "Nate Thompson"
+  "publisher": "Nate Thompson",
+  "previous_version": "1.2"
 }

@@ -8,5 +8,6 @@
   "fileName": "Swish.dmg",
   "sha": "1db6ddcbc950f71d869114cee5dc069485e682d1be7bce494dee2fc3cb04f333",
   "category": "Productivity",
-  "publisher": "Highly Opinionated"
+  "publisher": "Highly Opinionated",
+  "previous_version": "1.13.2"
 }

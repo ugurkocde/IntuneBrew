@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "d2fc0d356020bb560045aa57730a9cd00ea549834c5d36c6c3326ff69f9cd578",
   "category": "Utilities",
-  "publisher": "Apimac"
+  "publisher": "Apimac",
+  "previous_version": "9.0.3"
 }

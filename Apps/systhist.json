@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "5df1c2d1d08e47d657cca59c9afef248b5e59f405b6209ffefdcdbcf55b346b0",
   "category": "Utilities",
-  "publisher": "Eclectic Light Co."
+  "publisher": "Eclectic Light Co.",
+  "previous_version": "1.21"
 }

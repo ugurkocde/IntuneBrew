@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "ce75198be97fbd93f60fc49757988c5e5a118521856db748212c84ede76e4693",
   "category": "Utilities",
-  "publisher": "Jizoh"
+  "publisher": "Jizoh",
+  "previous_version": "8.5.2"
 }

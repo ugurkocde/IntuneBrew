@@ -8,5 +8,6 @@
   "fileName": "Whispering_7.11.0_aarch64.dmg",
   "sha": "52b79ad24f14907fad55673761935ba90ce70c6d3248f804a7d302b62bfef828",
   "category": "Productivity",
-  "publisher": "Epicenter"
+  "publisher": "Epicenter",
+  "previous_version": "7.11.0"
 }

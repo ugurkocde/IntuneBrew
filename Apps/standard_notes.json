@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "f9e3e5958dd2cdd642f2c16a04e0f5793b9b41babb5e2ca1219180aada0bff57",
   "category": "Productivity",
-  "publisher": "Standard Notes"
+  "publisher": "Standard Notes",
+  "previous_version": "3.198.5"
 }

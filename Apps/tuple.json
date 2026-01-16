@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "87bc7adc5b003c5ce75734813485be813cf6d2fe04ebe8f13a8eeef3e88991d7",
   "category": "Developer Tools",
-  "publisher": "Tuple"
+  "publisher": "Tuple",
+  "previous_version": "2.2.1"
 }

@@ -8,5 +8,6 @@
   "fileName": "SpamSieve-3.2.2.dmg",
   "sha": "df4acb744ed0b2327411d06211df4819748f90c9f36aa2733d73d9a725fd85b5",
   "category": "Security",
-  "publisher": "C-Command Software"
+  "publisher": "C-Command Software",
+  "previous_version": "3.2.2"
 }

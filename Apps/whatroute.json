@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "a132551702d507f68562b0f7aae7a4c34170a2509839654277a68720537c71bb",
   "category": "Utilities",
-  "publisher": "WhatRoute"
+  "publisher": "WhatRoute",
+  "previous_version": "2.7.2"
 }

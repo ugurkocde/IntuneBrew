@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "28a99069ef01919e252ea325306101343a4d847514dd9b019892143856e7b810",
   "category": "Productivity",
-  "publisher": "TimeScribe"
+  "publisher": "TimeScribe",
+  "previous_version": "1.8.0"
 }
