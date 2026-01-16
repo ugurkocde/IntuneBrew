@@ -3,7 +3,7 @@
   "description": "GUI companion app for Homebrew",
   "version": "1.7.3.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/cork_1.7.3.1.pkg",
-  "bundleId": null,
+  "bundleId": "eu.davidbures.cork",
   "homepage": "https://corkmac.app/",
   "fileName": "cork_1.7.3.1.pkg",
   "type": "app",

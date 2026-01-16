@@ -1,142 +1,127 @@
 [
   {
-    "key": "010_editor",
-    "name": "010 Editor",
+    "key": "chipmunk_log_analyzer__viewer",
+    "name": "Chipmunk Log Analyzer & Viewer",
     "currentBundleId": null
   },
   {
-    "key": "1password_cli",
-    "name": "1Password CLI",
+    "key": "cleanclip",
+    "name": "CleanClip",
     "currentBundleId": null
   },
   {
-    "key": "4k_stogram",
-    "name": "4K Stogram",
+    "key": "clipbook",
+    "name": "ClipBook",
     "currentBundleId": null
   },
   {
-    "key": "4k_youtube_to_mp3",
-    "name": "4K YouTube to MP3",
+    "key": "colour_contrast_analyser",
+    "name": "Colour Contrast Analyser",
     "currentBundleId": null
   },
   {
-    "key": "abbyy_finereader_pdf",
-    "name": "ABBYY FineReader PDF",
+    "key": "comfyui",
+    "name": "ComfyUI",
     "currentBundleId": null
   },
   {
-    "key": "airserver",
-    "name": "AirServer",
+    "key": "connect_fonts",
+    "name": "Connect Fonts",
     "currentBundleId": null
   },
   {
-    "key": "akiflow",
-    "name": "Akiflow",
+    "key": "cursorsense",
+    "name": "CursorSense",
     "currentBundleId": null
   },
   {
-    "key": "anytype",
-    "name": "Anytype",
+    "key": "customshortcuts",
+    "name": "CustomShortcuts",
     "currentBundleId": null
   },
   {
-    "key": "appium_inspector_gui",
-    "name": "Appium Inspector GUI",
+    "key": "darkmodebuddy",
+    "name": "DarkModeBuddy",
     "currentBundleId": null
   },
   {
-    "key": "archi",
-    "name": "Archi",
+    "key": "darktable",
+    "name": "darktable",
     "currentBundleId": null
   },
   {
-    "key": "avast_secure_browser",
-    "name": "Avast Secure Browser",
+    "key": "devknife",
+    "name": "DevKnife",
     "currentBundleId": null
   },
   {
-    "key": "axure_rp",
-    "name": "Axure RP",
+    "key": "dictionaries",
+    "name": "Dictionaries",
     "currentBundleId": null
   },
   {
-    "key": "backlog",
-    "name": "Backlog",
+    "key": "diffmerge",
+    "name": "DiffMerge",
     "currentBundleId": null
   },
   {
-    "key": "bdash",
-    "name": "Bdash",
+    "key": "digiexam",
+    "name": "digiexam",
     "currentBundleId": null
   },
   {
-    "key": "beaver_notes",
-    "name": "Beaver Notes",
+    "key": "digikam",
+    "name": "digiKam",
+    "currentBundleId": "org.digiKam"
+  },
+  {
+    "key": "dockfix",
+    "name": "DockFix",
     "currentBundleId": null
   },
   {
-    "key": "bezel",
-    "name": "Bezel",
+    "key": "droplr",
+    "name": "Droplr",
+    "currentBundleId": "com.droplr.droplr-mac"
+  },
+  {
+    "key": "dymo_connect",
+    "name": "Dymo Connect",
+    "currentBundleId": "com.dymo.dymo-connect"
+  },
+  {
+    "key": "electronmail",
+    "name": "ElectronMail",
     "currentBundleId": null
   },
   {
-    "key": "bitrix24",
-    "name": "Bitrix24",
+    "key": "electrum",
+    "name": "Electrum",
     "currentBundleId": null
   },
   {
-    "key": "bluewallet",
-    "name": "BlueWallet",
+    "key": "fastmail",
+    "name": "Fastmail",
     "currentBundleId": null
   },
   {
-    "key": "boom_3d",
-    "name": "Boom 3D",
-    "currentBundleId": "com.globaldelight.Boom3D"
-  },
-  {
-    "key": "buttercup",
-    "name": "Buttercup",
+    "key": "filemaker_pro",
+    "name": "FileMaker Pro",
     "currentBundleId": null
   },
   {
-    "key": "buzz",
-    "name": "Buzz",
+    "key": "fing_desktop",
+    "name": "Fing Desktop",
+    "currentBundleId": "com.fing.service"
+  },
+  {
+    "key": "flexoptix_app",
+    "name": "FLEXOPTIX App",
     "currentBundleId": null
   },
   {
-    "key": "cacher",
-    "name": "Cacher",
-    "currentBundleId": null
-  },
-  {
-    "key": "calibrite_profiler",
-    "name": "calibrite PROFILER",
-    "currentBundleId": null
-  },
-  {
-    "key": "captain",
-    "name": "Captain",
-    "currentBundleId": null
-  },
-  {
-    "key": "captin",
-    "name": "Captin",
-    "currentBundleId": "com.100hps.captin"
-  },
-  {
-    "key": "chalk",
-    "name": "Chalk",
-    "currentBundleId": null
-  },
-  {
-    "key": "chatwork",
-    "name": "ChatWork",
-    "currentBundleId": null
-  },
-  {
-    "key": "cheetah3d",
-    "name": "Cheetah3D",
+    "key": "fuset",
+    "name": "FUSE-T",
     "currentBundleId": null
   }
 ]

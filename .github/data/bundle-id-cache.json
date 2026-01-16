@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-15T22:10:49.627Z",
+  "last_full_scan": "2026-01-16T01:23:49.037Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -2793,6 +2793,351 @@
       "status": "updated",
       "source": "api",
       "name": "Chime"
+    },
+    "chipmunk_log_analyzer__viewer": {
+      "last_checked": "2026-01-16T00:46:53.871Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Chipmunk Log Analyzer & Viewer"
+    },
+    "cisco_proximity": {
+      "last_checked": "2026-01-16T00:47:28.093Z",
+      "bundle_id": "com.cisco.experimental.Proximity",
+      "previous_bundle_id": "com.cisco.proximity",
+      "status": "updated",
+      "source": "api",
+      "name": "Cisco Proximity"
+    },
+    "cleanclip": {
+      "last_checked": "2026-01-16T00:48:31.567Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "CleanClip"
+    },
+    "clipbook": {
+      "last_checked": "2026-01-16T00:49:36.600Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "ClipBook"
+    },
+    "clocker": {
+      "last_checked": "2026-01-16T00:50:41.096Z",
+      "bundle_id": "com.abhishek.Clocker",
+      "status": "verified",
+      "source": "api",
+      "name": "Clocker"
+    },
+    "clockify": {
+      "last_checked": "2026-01-16T00:51:12.632Z",
+      "bundle_id": "coing.ClockifyDesktop",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Clockify"
+    },
+    "colour_contrast_analyser": {
+      "last_checked": "2026-01-16T00:52:45.113Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Colour Contrast Analyser"
+    },
+    "comfyui": {
+      "last_checked": "2026-01-16T00:53:57.654Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "ComfyUI"
+    },
+    "connect_fonts": {
+      "last_checked": "2026-01-16T00:54:38.127Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Connect Fonts"
+    },
+    "connectmenow": {
+      "last_checked": "2026-01-16T00:55:29.655Z",
+      "bundle_id": "com.Tweaking4All.ConnectMeNow4",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "ConnectMeNow"
+    },
+    "cork": {
+      "last_checked": "2026-01-16T00:56:02.820Z",
+      "bundle_id": "eu.davidbures.cork",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Cork"
+    },
+    "cursorsense": {
+      "last_checked": "2026-01-16T00:57:08.295Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "CursorSense"
+    },
+    "customshortcuts": {
+      "last_checked": "2026-01-16T00:57:49.955Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "CustomShortcuts"
+    },
+    "darkmodebuddy": {
+      "last_checked": "2026-01-16T00:58:31.412Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "DarkModeBuddy"
+    },
+    "darktable": {
+      "last_checked": "2026-01-16T00:59:43.627Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "darktable"
+    },
+    "debookee": {
+      "last_checked": "2026-01-16T01:00:41.620Z",
+      "bundle_id": "com.iwaxx.Debookee",
+      "previous_bundle_id": "com.iwaxx.Debookee.PacketTool",
+      "status": "updated",
+      "source": "api",
+      "name": "Debookee"
+    },
+    "default_folder_x": {
+      "last_checked": "2026-01-16T01:01:38.033Z",
+      "bundle_id": "com.stclairsoft.DefaultFolderX",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Default Folder X"
+    },
+    "descript": {
+      "last_checked": "2026-01-16T01:02:17.867Z",
+      "bundle_id": "com.descript.beachcube",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Descript"
+    },
+    "desktime": {
+      "last_checked": "2026-01-16T01:03:28.467Z",
+      "bundle_id": "com.desktime.DeskTime",
+      "previous_bundle_id": "DeskTime",
+      "status": "updated",
+      "source": "api",
+      "name": "DeskTime"
+    },
+    "devknife": {
+      "last_checked": "2026-01-16T01:04:01.889Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "DevKnife"
+    },
+    "devonsphere_express": {
+      "last_checked": "2026-01-16T01:04:48.223Z",
+      "bundle_id": "com.devon-technologies.sphereexpress",
+      "status": "verified",
+      "source": "api",
+      "name": "DEVONsphere Express"
+    },
+    "dialpad": {
+      "last_checked": "2026-01-16T01:05:31.891Z",
+      "bundle_id": "com.electron.dialpad",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Dialpad"
+    },
+    "dictionaries": {
+      "last_checked": "2026-01-16T01:06:35.438Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Dictionaries"
+    },
+    "diffmerge": {
+      "last_checked": "2026-01-16T01:07:14.624Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "DiffMerge"
+    },
+    "diffusion_bee": {
+      "last_checked": "2026-01-16T01:07:49.649Z",
+      "bundle_id": "com.diffusionbee.diffusionbee",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Diffusion Bee"
+    },
+    "digiexam": {
+      "last_checked": "2026-01-16T01:08:34.840Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "digiexam"
+    },
+    "digikam": {
+      "last_checked": "2026-01-16T01:09:27.245Z",
+      "bundle_id": "org.digiKam",
+      "status": "unknown",
+      "name": "digiKam"
+    },
+    "dockfix": {
+      "last_checked": "2026-01-16T01:10:06.929Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "DockFix"
+    },
+    "droplr": {
+      "last_checked": "2026-01-16T01:11:03.568Z",
+      "bundle_id": "com.droplr.droplr-mac",
+      "status": "unknown",
+      "name": "Droplr"
+    },
+    "dupeguru": {
+      "last_checked": "2026-01-16T01:11:32.764Z",
+      "bundle_id": "com.hardcoded-software.dupeguru",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "dupeGuru"
+    },
+    "dymo_connect": {
+      "last_checked": "2026-01-16T01:12:06.868Z",
+      "bundle_id": "com.dymo.dymo-connect",
+      "status": "unknown",
+      "name": "Dymo Connect"
+    },
+    "eaglefiler": {
+      "last_checked": "2026-01-16T01:12:41.395Z",
+      "bundle_id": "com.c-command.EagleFiler",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "EagleFiler"
+    },
+    "electronmail": {
+      "last_checked": "2026-01-16T01:13:56.489Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "ElectronMail"
+    },
+    "electrum": {
+      "last_checked": "2026-01-16T01:14:15.095Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Electrum"
+    },
+    "etrecheck": {
+      "last_checked": "2026-01-16T01:14:46.561Z",
+      "bundle_id": "com.etresoft.EtreCheckMAS",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "EtreCheck"
+    },
+    "exifcleaner": {
+      "last_checked": "2026-01-16T01:15:27.604Z",
+      "bundle_id": "com.exifcleaner",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "ExifCleaner"
+    },
+    "exifrenamer": {
+      "last_checked": "2026-01-16T01:15:58.318Z",
+      "bundle_id": "de.qdev.ExifRenamer",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "ExifRenamer"
+    },
+    "expressvpn": {
+      "last_checked": "2026-01-16T01:16:40.300Z",
+      "bundle_id": "com.expressvpn.ExpressVPN",
+      "status": "verified",
+      "source": "api",
+      "name": "ExpressVPN"
+    },
+    "farrago": {
+      "last_checked": "2026-01-16T01:17:11.103Z",
+      "bundle_id": "com.rogueamoeba.farrago",
+      "status": "verified",
+      "source": "api",
+      "name": "Farrago"
+    },
+    "fastmail": {
+      "last_checked": "2026-01-16T01:17:39.880Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Fastmail"
+    },
+    "fellow": {
+      "last_checked": "2026-01-16T01:18:23.566Z",
+      "bundle_id": "com.electron.fellow",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Fellow"
+    },
+    "file_juicer": {
+      "last_checked": "2026-01-16T01:18:43.011Z",
+      "bundle_id": "com.echoone.FileJuicer",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "File Juicer"
+    },
+    "filemaker_pro": {
+      "last_checked": "2026-01-16T01:19:26.961Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "FileMaker Pro"
+    },
+    "fing_desktop": {
+      "last_checked": "2026-01-16T01:20:03.458Z",
+      "bundle_id": "com.fing.service",
+      "status": "unknown",
+      "name": "Fing Desktop"
+    },
+    "flexoptix_app": {
+      "last_checked": "2026-01-16T01:20:54.290Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "FLEXOPTIX App"
+    },
+    "folx": {
+      "last_checked": "2026-01-16T01:21:27.176Z",
+      "bundle_id": "com.eltima.Folx3",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Folx"
+    },
+    "free_download_manager": {
+      "last_checked": "2026-01-16T01:22:01.026Z",
+      "bundle_id": "org.freedownloadmanager.fdm6",
+      "status": "verified",
+      "source": "api",
+      "name": "Free Download Manager"
+    },
+    "freefilesync": {
+      "last_checked": "2026-01-16T01:22:31.816Z",
+      "bundle_id": "org.freefilesync.FreeFileSync",
+      "previous_bundle_id": "org.freefilesync.pkg.FreeFileSync",
+      "status": "updated",
+      "source": "api",
+      "name": "FreeFileSync"
+    },
+    "funter": {
+      "last_checked": "2026-01-16T01:23:05.899Z",
+      "bundle_id": "com.nektony.Funter-SIII",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "api",
+      "name": "Funter"
+    },
+    "fuset": {
+      "last_checked": "2026-01-16T01:23:49.037Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "FUSE-T"
     }
   }
 }

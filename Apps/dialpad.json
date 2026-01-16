@@ -3,7 +3,7 @@
   "description": "Cloud communication platform",
   "version": "2512.0.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/dialpad_2512.0.0.pkg",
-  "bundleId": null,
+  "bundleId": "com.electron.dialpad",
   "homepage": "https://dialpad.com/download",
   "fileName": "dialpad_2512.0.0.pkg",
   "type": "app",

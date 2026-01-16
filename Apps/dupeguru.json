@@ -3,7 +3,7 @@
   "description": "Finds duplicate files in a computer system",
   "version": "4.3.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/dupeguru_4.3.1.pkg",
-  "bundleId": null,
+  "bundleId": "com.hardcoded-software.dupeguru",
   "homepage": "https://dupeguru.voltaicideas.net/",
   "fileName": "dupeguru_4.3.1.pkg",
   "type": "app",

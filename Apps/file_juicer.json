@@ -3,7 +3,7 @@
   "description": "Extract images from PDF, PowerPoint, Word, Excel and other Files",
   "version": "4.114",
   "url": "https://intunebrew.blob.core.windows.net/pkg/file_juicer_4.114.pkg",
-  "bundleId": null,
+  "bundleId": "com.echoone.FileJuicer",
   "homepage": "https://echoone.com/filejuicer/",
   "fileName": "file_juicer_4.114.pkg",
   "type": "app",
