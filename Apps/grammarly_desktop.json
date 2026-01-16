@@ -3,7 +3,7 @@
   "description": "Grammarly for desktop",
   "version": "1.148.0.0",
   "url": "https://download-mac.grammarly.com/versions/1.148.0.0/Grammarly.dmg",
-  "bundleId": "com.grammarly.keyboard",
+  "bundleId": "com.grammarly.ProjectLlama",
   "homepage": "https://www.grammarly.com/desktop",
   "fileName": "Grammarly.dmg",
   "sha": "78f76add89a4953e2430bdffe5d11ad553f9c2ce0324d3ebe6d2aaf785444155",

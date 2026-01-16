@@ -3,7 +3,7 @@
   "description": "File searching application",
   "version": "6.6.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/houdahspot_6.6.1.pkg",
-  "bundleId": "com.houdah.HoudahSpot6",
+  "bundleId": "com.houdah.HoudahSpot",
   "homepage": "https://www.houdah.com/houdahSpot/",
   "fileName": "houdahspot_6.6.1.pkg",
   "type": "app",

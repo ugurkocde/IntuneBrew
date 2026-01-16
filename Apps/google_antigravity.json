@@ -3,7 +3,7 @@
   "description": "AI Coding Agent IDE",
   "version": "1.14.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/google_antigravity_1.14.2.pkg",
-  "bundleId": "com.nicola.Antigravity",
+  "bundleId": "com.google.antigravity",
   "homepage": "https://antigravity.google/",
   "fileName": "google_antigravity_1.14.2.pkg",
   "type": "app",

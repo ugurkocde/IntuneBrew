@@ -3,7 +3,7 @@
   "description": "Client for the Google Drive storage service",
   "version": "119.0.2",
   "url": "https://dl.google.com/drive-file-stream/5-percent/GoogleDrive.dmg",
-  "bundleId": "com.google.pkg.Keystone",
+  "bundleId": "com.google.drivefs",
   "homepage": "https://www.google.com/drive/",
   "fileName": "GoogleDrive.dmg",
   "sha": "7e112a4767013ee4dd6c5c5d7a222df7ac89915c69c4bb2e5a91c23fd95e17ce",

@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-16T01:23:49.037Z",
+  "last_full_scan": "2026-01-16T14:03:56.190Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -3138,6 +3138,355 @@
       "bundle_id": null,
       "status": "unknown",
       "name": "FUSE-T"
+    },
+    "garmin_express": {
+      "last_checked": "2026-01-16T13:26:57.993Z",
+      "bundle_id": "com.garmin.renu.client",
+      "status": "verified",
+      "source": "api",
+      "name": "Garmin Express"
+    },
+    "gdevelop": {
+      "last_checked": "2026-01-16T13:27:45.057Z",
+      "bundle_id": "com.gdevelop",
+      "previous_bundle_id": "com.gdevelop-app.ide",
+      "status": "updated",
+      "source": "api",
+      "name": "GDevelop"
+    },
+    "gitfox": {
+      "last_checked": "2026-01-16T13:28:32.710Z",
+      "bundle_id": "com.bytieful.Gitfox-retail",
+      "status": "unknown",
+      "name": "Gitfox"
+    },
+    "github_copilot_for_xcode": {
+      "last_checked": "2026-01-16T13:30:05.064Z",
+      "bundle_id": "com.github.CopilotForXcode",
+      "status": "verified",
+      "source": "api",
+      "name": "GitHub Copilot for Xcode"
+    },
+    "gitify": {
+      "last_checked": "2026-01-16T13:31:28.358Z",
+      "bundle_id": "com.electron.gitify",
+      "status": "unknown",
+      "name": "Gitify"
+    },
+    "godot_engine": {
+      "last_checked": "2026-01-16T13:32:20.029Z",
+      "bundle_id": "org.godotengine.godot",
+      "status": "verified",
+      "source": "api",
+      "name": "Godot Engine"
+    },
+    "godspeed": {
+      "last_checked": "2026-01-16T13:33:15.656Z",
+      "bundle_id": "com.godspeedapp.Godspeed",
+      "status": "unknown",
+      "name": "Godspeed"
+    },
+    "gog_galaxy": {
+      "last_checked": "2026-01-16T13:34:03.135Z",
+      "bundle_id": "com.gog.galaxy",
+      "previous_bundle_id": "com.gog.galaxy.cef.renderer",
+      "status": "updated",
+      "source": "api",
+      "name": "GOG Galaxy"
+    },
+    "goland": {
+      "last_checked": "2026-01-16T13:34:30.435Z",
+      "bundle_id": "com.jetbrains.goland",
+      "status": "verified",
+      "source": "api",
+      "name": "Goland"
+    },
+    "goodsync": {
+      "last_checked": "2026-01-16T13:35:32.084Z",
+      "bundle_id": "com.sibersystems.goodsyncmac2000",
+      "status": "unknown",
+      "name": "GoodSync"
+    },
+    "google_ads_editor": {
+      "last_checked": "2026-01-16T13:36:00.440Z",
+      "bundle_id": "com.google.googleadseditorlauncher",
+      "status": "verified",
+      "source": "api",
+      "name": "Google Ads Editor"
+    },
+    "google_antigravity": {
+      "last_checked": "2026-01-16T13:36:35.111Z",
+      "bundle_id": "com.google.antigravity",
+      "previous_bundle_id": "com.nicola.Antigravity",
+      "status": "updated",
+      "source": "api",
+      "name": "Google Antigravity"
+    },
+    "google_chrome": {
+      "last_checked": "2026-01-16T13:36:57.203Z",
+      "bundle_id": "com.google.Chrome",
+      "status": "verified",
+      "source": "api",
+      "name": "Google Chrome"
+    },
+    "google_drive": {
+      "last_checked": "2026-01-16T13:37:40.237Z",
+      "bundle_id": "com.google.drivefs",
+      "previous_bundle_id": "com.google.pkg.Keystone",
+      "status": "updated",
+      "source": "api",
+      "name": "Google Drive"
+    },
+    "google_earth_pro": {
+      "last_checked": "2026-01-16T13:38:07.423Z",
+      "bundle_id": "com.Google.GoogleEarthPro",
+      "status": "verified",
+      "source": "api",
+      "name": "Google Earth Pro"
+    },
+    "google_web_designer": {
+      "last_checked": "2026-01-16T13:38:41.966Z",
+      "bundle_id": "com.google.WebDesigner",
+      "status": "unknown",
+      "name": "Google Web Designer"
+    },
+    "goose": {
+      "last_checked": "2026-01-16T13:39:39.750Z",
+      "bundle_id": "com.electron.goose",
+      "status": "unknown",
+      "name": "Goose"
+    },
+    "gpg_suite": {
+      "last_checked": "2026-01-16T13:40:32.692Z",
+      "bundle_id": "org.gpgtools.*",
+      "status": "unknown",
+      "name": "GPG Suite"
+    },
+    "gpodder": {
+      "last_checked": "2026-01-16T13:41:30.649Z",
+      "bundle_id": "org.gpodder.gpodder",
+      "status": "verified",
+      "source": "api",
+      "name": "gPodder"
+    },
+    "gpt_fdisk": {
+      "last_checked": "2026-01-16T13:41:58.890Z",
+      "bundle_id": "com.rodsbooks.pkg.gdisk",
+      "status": "unknown",
+      "name": "GPT fdisk"
+    },
+    "grammarly_desktop": {
+      "last_checked": "2026-01-16T13:42:33.461Z",
+      "bundle_id": "com.grammarly.ProjectLlama",
+      "previous_bundle_id": "com.grammarly.keyboard",
+      "status": "updated",
+      "source": "api",
+      "name": "Grammarly Desktop"
+    },
+    "grandperspective": {
+      "last_checked": "2026-01-16T13:42:50.437Z",
+      "bundle_id": "net.sourceforge.grandperspectiv",
+      "status": "verified",
+      "source": "api",
+      "name": "GrandPerspective"
+    },
+    "granola": {
+      "last_checked": "2026-01-16T13:43:33.487Z",
+      "bundle_id": "com.granola.app",
+      "status": "verified",
+      "source": "api",
+      "name": "Granola"
+    },
+    "graphicconverter": {
+      "last_checked": "2026-01-16T13:44:34.437Z",
+      "bundle_id": "com.lemkesoft.graphicconverter",
+      "previous_bundle_id": "de.lemkesoft.graphicconverter",
+      "status": "updated",
+      "source": "api",
+      "name": "GraphicConverter"
+    },
+    "graphiql_app": {
+      "last_checked": "2026-01-16T13:45:08.963Z",
+      "bundle_id": "com.sk3vy.graphiql-app",
+      "previous_bundle_id": "com.sk3vy.graphiql-app.helper",
+      "status": "updated",
+      "source": "api",
+      "name": "GraphiQL App"
+    },
+    "graphpad_prism": {
+      "last_checked": "2026-01-16T13:45:39.681Z",
+      "bundle_id": "com.GraphPad.Prism",
+      "previous_bundle_id": "com.graphpad.prism",
+      "status": "updated",
+      "source": "api",
+      "name": "GraphPad Prism"
+    },
+    "graphql_playground": {
+      "last_checked": "2026-01-16T13:46:34.230Z",
+      "bundle_id": "cool.graph.playground.helper",
+      "status": "unknown",
+      "name": "GraphQL Playground"
+    },
+    "grids": {
+      "last_checked": "2026-01-16T13:47:20.894Z",
+      "bundle_id": "com.thinktimecreations.GridsLite",
+      "previous_bundle_id": "com.thinktimecreations.Grids",
+      "status": "updated",
+      "source": "api",
+      "name": "Grids"
+    },
+    "guilded": {
+      "last_checked": "2026-01-16T13:48:10.217Z",
+      "bundle_id": "com.electron.guilded",
+      "status": "unknown",
+      "name": "Guilded"
+    },
+    "guitar_pro": {
+      "last_checked": "2026-01-16T13:48:35.525Z",
+      "bundle_id": "com.arobas-music.guitarpro8",
+      "previous_bundle_id": "com.arobas-music.guitarpro*",
+      "status": "updated",
+      "source": "api",
+      "name": "Guitar Pro"
+    },
+    "hammerspoon": {
+      "last_checked": "2026-01-16T13:49:10.482Z",
+      "bundle_id": "org.hammerspoon.Hammerspoon",
+      "status": "verified",
+      "source": "api",
+      "name": "Hammerspoon"
+    },
+    "handbrake": {
+      "last_checked": "2026-01-16T13:49:59.515Z",
+      "bundle_id": "fr.handbrake.HandBrake",
+      "status": "verified",
+      "source": "api",
+      "name": "HandBrake"
+    },
+    "hazel": {
+      "last_checked": "2026-01-16T13:50:37.546Z",
+      "bundle_id": "com.noodlesoft.Hazel",
+      "previous_bundle_id": "86Z3GCJ4MF.com.noodlesoft.HazelHelper",
+      "status": "updated",
+      "source": "api",
+      "name": "Hazel"
+    },
+    "hazeover": {
+      "last_checked": "2026-01-16T13:51:09.335Z",
+      "bundle_id": "com.pointum.hazeover",
+      "status": "verified",
+      "source": "api",
+      "name": "HazeOver"
+    },
+    "headlamp": {
+      "last_checked": "2026-01-16T13:51:57.366Z",
+      "bundle_id": "com.kinvolk.headlamp",
+      "status": "unknown",
+      "name": "Headlamp"
+    },
+    "helium": {
+      "last_checked": "2026-01-16T13:52:38.280Z",
+      "bundle_id": "com.koushikdutta.Helium",
+      "status": "verified",
+      "source": "api",
+      "name": "Helium"
+    },
+    "hepta": {
+      "last_checked": "2026-01-16T13:53:47.475Z",
+      "bundle_id": "app.hepta.desktop",
+      "status": "unknown",
+      "name": "Hepta"
+    },
+    "hex_fiend": {
+      "last_checked": "2026-01-16T13:54:30.889Z",
+      "bundle_id": "com.ridiculousfish.HexFiend",
+      "status": "verified",
+      "source": "api",
+      "name": "Hex Fiend"
+    },
+    "hey": {
+      "last_checked": "2026-01-16T13:55:10.032Z",
+      "bundle_id": "com.hey.app.desktop",
+      "status": "verified",
+      "source": "api",
+      "name": "HEY"
+    },
+    "hidden_bar": {
+      "last_checked": "2026-01-16T13:55:27.989Z",
+      "bundle_id": "com.dwarvesv.minimalbar",
+      "status": "verified",
+      "source": "api",
+      "name": "Hidden Bar"
+    },
+    "hides": {
+      "last_checked": "2026-01-16T13:55:59.496Z",
+      "bundle_id": "com.sweetpproductions.Hides",
+      "previous_bundle_id": "com.macpaw.hides",
+      "status": "updated",
+      "source": "api",
+      "name": "Hides"
+    },
+    "hidock": {
+      "last_checked": "2026-01-16T13:56:21.704Z",
+      "bundle_id": "design.rafa.HiDock",
+      "status": "unknown",
+      "name": "HiDock"
+    },
+    "highlight": {
+      "last_checked": "2026-01-16T13:58:08.714Z",
+      "bundle_id": "tv.medal.highlight",
+      "status": "unknown",
+      "name": "Highlight"
+    },
+    "hma_vpn": {
+      "last_checked": "2026-01-16T13:58:46.972Z",
+      "bundle_id": "com.privax.osx.provpn",
+      "previous_bundle_id": "com.privax.osx.provpn.helper",
+      "status": "updated",
+      "source": "api",
+      "name": "HMA! VPN"
+    },
+    "home_assistant": {
+      "last_checked": "2026-01-16T13:59:35.334Z",
+      "bundle_id": "io.robbie.HomeAssistant",
+      "status": "verified",
+      "source": "api",
+      "name": "Home Assistant"
+    },
+    "homerow": {
+      "last_checked": "2026-01-16T14:00:47.512Z",
+      "bundle_id": "com.superultra.Homerow",
+      "status": "verified",
+      "source": "api",
+      "name": "Homerow"
+    },
+    "hoppscotch": {
+      "last_checked": "2026-01-16T14:01:48.966Z",
+      "bundle_id": "io.hoppscotch.desktop",
+      "status": "verified",
+      "source": "api",
+      "name": "Hoppscotch"
+    },
+    "hot": {
+      "last_checked": "2026-01-16T14:02:40.069Z",
+      "bundle_id": "com.xs-labs.Hot",
+      "status": "verified",
+      "source": "api",
+      "name": "Hot"
+    },
+    "houdahspot": {
+      "last_checked": "2026-01-16T14:03:12.560Z",
+      "bundle_id": "com.houdah.HoudahSpot",
+      "previous_bundle_id": "com.houdah.HoudahSpot6",
+      "status": "updated",
+      "source": "api",
+      "name": "HoudahSpot"
+    },
+    "hp_easy_admin": {
+      "last_checked": "2026-01-16T14:03:56.190Z",
+      "bundle_id": "com.hp.hp-easy-admin",
+      "status": "unknown",
+      "name": "HP Easy Admin"
     }
   }
 }

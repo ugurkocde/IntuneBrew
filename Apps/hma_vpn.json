@@ -3,7 +3,7 @@
   "description": "VPN program from Hide My Ass",
   "version": "latest",
   "url": "https://s-mac-sl.avcdn.net/macosx/privax/HMA-VPN.dmg",
-  "bundleId": "com.privax.osx.provpn.helper",
+  "bundleId": "com.privax.osx.provpn",
   "homepage": "https://www.hidemyass.com/index.html",
   "fileName": "HMA-VPN.dmg",
   "sha": "8e394d115d9ff05ce68549031e01a29235ca28f9b251065b994780150183e147",

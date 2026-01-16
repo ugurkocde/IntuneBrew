@@ -1,127 +1,77 @@
 [
   {
-    "key": "chipmunk_log_analyzer__viewer",
-    "name": "Chipmunk Log Analyzer & Viewer",
-    "currentBundleId": null
+    "key": "gitfox",
+    "name": "Gitfox",
+    "currentBundleId": "com.bytieful.Gitfox-retail"
   },
   {
-    "key": "cleanclip",
-    "name": "CleanClip",
-    "currentBundleId": null
+    "key": "gitify",
+    "name": "Gitify",
+    "currentBundleId": "com.electron.gitify"
   },
   {
-    "key": "clipbook",
-    "name": "ClipBook",
-    "currentBundleId": null
+    "key": "godspeed",
+    "name": "Godspeed",
+    "currentBundleId": "com.godspeedapp.Godspeed"
   },
   {
-    "key": "colour_contrast_analyser",
-    "name": "Colour Contrast Analyser",
-    "currentBundleId": null
+    "key": "goodsync",
+    "name": "GoodSync",
+    "currentBundleId": "com.sibersystems.goodsyncmac2000"
   },
   {
-    "key": "comfyui",
-    "name": "ComfyUI",
-    "currentBundleId": null
+    "key": "google_web_designer",
+    "name": "Google Web Designer",
+    "currentBundleId": "com.google.WebDesigner"
   },
   {
-    "key": "connect_fonts",
-    "name": "Connect Fonts",
-    "currentBundleId": null
+    "key": "goose",
+    "name": "Goose",
+    "currentBundleId": "com.electron.goose"
   },
   {
-    "key": "cursorsense",
-    "name": "CursorSense",
-    "currentBundleId": null
+    "key": "gpg_suite",
+    "name": "GPG Suite",
+    "currentBundleId": "org.gpgtools.*"
   },
   {
-    "key": "customshortcuts",
-    "name": "CustomShortcuts",
-    "currentBundleId": null
+    "key": "gpt_fdisk",
+    "name": "GPT fdisk",
+    "currentBundleId": "com.rodsbooks.pkg.gdisk"
   },
   {
-    "key": "darkmodebuddy",
-    "name": "DarkModeBuddy",
-    "currentBundleId": null
+    "key": "graphql_playground",
+    "name": "GraphQL Playground",
+    "currentBundleId": "cool.graph.playground.helper"
   },
   {
-    "key": "darktable",
-    "name": "darktable",
-    "currentBundleId": null
+    "key": "guilded",
+    "name": "Guilded",
+    "currentBundleId": "com.electron.guilded"
   },
   {
-    "key": "devknife",
-    "name": "DevKnife",
-    "currentBundleId": null
+    "key": "headlamp",
+    "name": "Headlamp",
+    "currentBundleId": "com.kinvolk.headlamp"
   },
   {
-    "key": "dictionaries",
-    "name": "Dictionaries",
-    "currentBundleId": null
+    "key": "hepta",
+    "name": "Hepta",
+    "currentBundleId": "app.hepta.desktop"
   },
   {
-    "key": "diffmerge",
-    "name": "DiffMerge",
-    "currentBundleId": null
+    "key": "hidock",
+    "name": "HiDock",
+    "currentBundleId": "design.rafa.HiDock"
   },
   {
-    "key": "digiexam",
-    "name": "digiexam",
-    "currentBundleId": null
+    "key": "highlight",
+    "name": "Highlight",
+    "currentBundleId": "tv.medal.highlight"
   },
   {
-    "key": "digikam",
-    "name": "digiKam",
-    "currentBundleId": "org.digiKam"
-  },
-  {
-    "key": "dockfix",
-    "name": "DockFix",
-    "currentBundleId": null
-  },
-  {
-    "key": "droplr",
-    "name": "Droplr",
-    "currentBundleId": "com.droplr.droplr-mac"
-  },
-  {
-    "key": "dymo_connect",
-    "name": "Dymo Connect",
-    "currentBundleId": "com.dymo.dymo-connect"
-  },
-  {
-    "key": "electronmail",
-    "name": "ElectronMail",
-    "currentBundleId": null
-  },
-  {
-    "key": "electrum",
-    "name": "Electrum",
-    "currentBundleId": null
-  },
-  {
-    "key": "fastmail",
-    "name": "Fastmail",
-    "currentBundleId": null
-  },
-  {
-    "key": "filemaker_pro",
-    "name": "FileMaker Pro",
-    "currentBundleId": null
-  },
-  {
-    "key": "fing_desktop",
-    "name": "Fing Desktop",
-    "currentBundleId": "com.fing.service"
-  },
-  {
-    "key": "flexoptix_app",
-    "name": "FLEXOPTIX App",
-    "currentBundleId": null
-  },
-  {
-    "key": "fuset",
-    "name": "FUSE-T",
-    "currentBundleId": null
+    "key": "hp_easy_admin",
+    "name": "HP Easy Admin",
+    "currentBundleId": "com.hp.hp-easy-admin"
   }
 ]
