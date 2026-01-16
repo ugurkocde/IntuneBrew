@@ -1,9 +1,8 @@
 #!/usr/bin/env python3
 """
 Fetch missing app icons from multiple sources:
-1. iTunes/App Store API (primary - for Mac App Store apps)
-2. App Bundle Extraction (secondary - download PKG/DMG/ZIP and extract .icns)
-3. Google Favicon API (last resort - free, no auth)
+1. App Bundle Extraction (primary - download PKG/DMG/ZIP and extract .icns)
+2. Google Favicon API (fallback - free, no auth)
 
 All icons are standardized to 512x512 PNG format.
 """
@@ -107,25 +106,6 @@ def get_apps_to_process(force=False):
     # Sort by app name for consistent ordering across runs
     apps.sort(key=lambda x: x[0])
     return apps
-
-
-def fetch_from_itunes(bundle_id):
-    """Fetch icon from iTunes API using bundle ID."""
-    if not bundle_id or bundle_id == "null":
-        return None
-    try:
-        url = f"https://itunes.apple.com/lookup?bundleId={bundle_id}&entity=macSoftware"
-        resp = requests.get(url, timeout=10)
-        data = resp.json()
-        if data.get('resultCount', 0) > 0:
-            artwork_url = data['results'][0].get('artworkUrl512')
-            if artwork_url:
-                img_resp = requests.get(artwork_url, timeout=10)
-                if img_resp.status_code == 200:
-                    return Image.open(BytesIO(img_resp.content))
-    except Exception as e:
-        print(f"\n  iTunes error: {e}")
-    return None
 
 
 def fetch_from_app_bundle(download_url, app_name):
@@ -253,23 +233,15 @@ def main():
         image = None
         source = None
 
-        # Try iTunes first
-        if bundle_id:
-            if args.verbose:
-                print(f"\n  [{app_name}] Trying iTunes API (bundleId: {bundle_id})")
-            image = fetch_from_itunes(bundle_id)
-            if image:
-                source = "iTunes"
-
-        # Fallback 1: Extract from app bundle
-        if image is None and download_url:
+        # Primary: Extract from app bundle (PKG/DMG/ZIP)
+        if download_url:
             if args.verbose:
                 print(f"\n  [{app_name}] Trying app bundle extraction")
             image = fetch_from_app_bundle(download_url, app_name)
             if image:
                 source = "App Bundle"
 
-        # Fallback 2: Google Favicon API
+        # Fallback: Google Favicon API
         if image is None and homepage:
             if args.verbose:
                 print(f"\n  [{app_name}] Trying Google Favicon API")
