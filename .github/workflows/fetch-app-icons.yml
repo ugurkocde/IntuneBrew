@@ -7,6 +7,11 @@ on:
         description: "Max number of apps to process (0 = all)"
         required: false
         default: "0"
+      force:
+        description: "Force re-fetch all icons (overwrites existing)"
+        required: false
+        type: boolean
+        default: false
   schedule:
     - cron: "30 0 * * *" # Run 30 min after main workflow (midnight:30 UTC)
   workflow_run:
@@ -35,12 +40,20 @@ jobs:
       - name: Fetch missing app icons
         working-directory: .github/scripts
         run: |
+          ARGS=""
+
+          # Add --force if specified
+          if [ "${{ github.event.inputs.force }}" == "true" ]; then
+            ARGS="$ARGS --force"
+          fi
+
+          # Add --limit if specified
           LIMIT="${{ github.event.inputs.limit || '0' }}"
           if [ "$LIMIT" != "0" ]; then
-            python fetch_app_icons.py --limit "$LIMIT"
-          else
-            python fetch_app_icons.py
+            ARGS="$ARGS --limit $LIMIT"
           fi
+
+          python fetch_app_icons.py $ARGS
 
       - name: Commit and push new icons
         run: |
@@ -53,7 +66,12 @@ jobs:
             exit 0
           fi
 
-          git commit -m "Add missing app icons"
+          # Use appropriate commit message based on force mode
+          if [ "${{ github.event.inputs.force }}" == "true" ]; then
+            git commit -m "Update app icons (force refresh)"
+          else
+            git commit -m "Add missing app icons"
+          fi
 
           MAX_RETRIES=5
           RETRY_COUNT=0

@@ -28,18 +28,27 @@ LOGOS_DIR = os.path.join(REPO_ROOT, "Logos")
 TARGET_SIZE = (512, 512)
 
 
-def get_missing_icons():
-    """Find apps that don't have icons yet."""
-    missing = []
+def get_apps_to_process(force=False):
+    """Get list of apps to process.
+
+    Args:
+        force: If True, return all apps. If False, only return apps missing icons.
+
+    Returns:
+        List of (app_name, app_data) tuples.
+    """
+    apps = []
     for filename in os.listdir(APPS_DIR):
         if filename.endswith('.json'):
             app_name = filename[:-5]
             icon_path = os.path.join(LOGOS_DIR, f"{app_name}.png")
-            if not os.path.exists(icon_path):
+
+            # Include app if force mode OR icon is missing
+            if force or not os.path.exists(icon_path):
                 with open(os.path.join(APPS_DIR, filename)) as f:
                     app_data = json.load(f)
-                missing.append((app_name, app_data))
-    return missing
+                apps.append((app_name, app_data))
+    return apps
 
 
 def fetch_from_itunes(bundle_id):
@@ -129,6 +138,11 @@ def parse_args():
         default=0,
         help="Maximum number of apps to process (0 = all, default: 0)"
     )
+    parser.add_argument(
+        "--force",
+        action="store_true",
+        help="Force re-fetch icons even if they already exist (overwrites existing)"
+    )
     return parser.parse_args()
 
 
@@ -136,23 +150,24 @@ def main():
     args = parse_args()
 
     os.makedirs(LOGOS_DIR, exist_ok=True)
-    missing = get_missing_icons()
+    apps_to_process = get_apps_to_process(force=args.force)
 
-    if not missing:
+    if not apps_to_process:
         print("All apps have icons!")
         return
 
     # Apply limit if specified
     if args.limit > 0:
-        missing = missing[:args.limit]
-        print(f"Processing {len(missing)} apps (limited from total missing)")
-    else:
-        print(f"Found {len(missing)} apps without icons\n")
+        apps_to_process = apps_to_process[:args.limit]
+
+    mode_str = "FORCE mode (overwriting existing)" if args.force else "missing icons only"
+    print(f"Processing {len(apps_to_process)} apps ({mode_str})\n")
 
     fetched = []
     failed = []
+    skipped = []
 
-    for app_name, app_data in missing:
+    for app_name, app_data in apps_to_process:
         print(f"Processing: {app_name}")
         bundle_id = app_data.get('bundleId')
         homepage = app_data.get('homepage')
@@ -193,7 +208,7 @@ def main():
 
     # Summary
     print("=" * 50)
-    print(f"SUMMARY: {len(fetched)} fetched, {len(failed)} still missing")
+    print(f"SUMMARY: {len(fetched)} fetched, {len(failed)} failed")
     print("=" * 50)
 
     if fetched:
@@ -202,7 +217,7 @@ def main():
             print(f"  + {app_name} (from {source})")
 
     if failed:
-        print("\nStill missing (need manual addition):")
+        print("\nFailed (need manual addition):")
         for app_name in failed:
             print(f"  - {app_name}")
 
