@@ -52,9 +52,35 @@ jobs:
             echo "Dependencies: $deps"
 
             # 2. Check if already exists in Azure
+            arch=$(uname -m)
+            pkg_name="${formula}_${version}_${arch}.pkg"
             existing=$(az storage blob list --container-name pkg --prefix "${formula}_${version}" --query "[].name" -o tsv 2>/dev/null || echo "")
+
             if [ -n "$existing" ]; then
-              echo "Package already exists, skipping build"
+              echo "Package already exists in Azure, creating JSON file only"
+
+              # Handle empty dependencies
+              if [ -z "$deps" ]; then
+                deps_json="[]"
+              else
+                deps_json=$(echo "$deps" | jq -R 'split(",")' 2>/dev/null || echo "[]")
+              fi
+
+              # Create JSON file for existing package (without SHA - can be added later if needed)
+              azure_url="https://intunebrew.blob.core.windows.net/pkg/$pkg_name"
+              jq -n \
+                --arg name "$formula" \
+                --arg description "$description" \
+                --arg version "$version" \
+                --arg homepage "$homepage" \
+                --arg url "$azure_url" \
+                --arg fileName "$pkg_name" \
+                --argjson bundledDependencies "$deps_json" \
+                --arg binaryPath "/usr/local/bin/$formula" \
+                '{name: $name, description: $description, version: $version, homepage: $homepage, url: $url, fileName: $fileName, bundledDependencies: $bundledDependencies, binaryPath: $binaryPath}' \
+                > "Formulas/${formula}.json"
+
+              echo "Created Formulas/${formula}.json (existing package)"
               continue
             fi
 
@@ -110,8 +136,6 @@ jobs:
             done
 
             # 10. Create PKG
-            arch=$(uname -m)
-            pkg_name="${formula}_${version}_${arch}.pkg"
             pkgbuild --root payload --install-location / \
               --identifier "com.intunebrew.formula.${formula}" \
               --version "$version" "$pkg_name"
