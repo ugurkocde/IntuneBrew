@@ -1,7 +1,12 @@
 name: Fetch Missing App Icons
 
 on:
-  workflow_dispatch: # Manual trigger
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max number of apps to process (0 = all)"
+        required: false
+        default: "0"
   schedule:
     - cron: "30 0 * * *" # Run 30 min after main workflow (midnight:30 UTC)
   workflow_run:
@@ -10,7 +15,7 @@ on:
 
 jobs:
   fetch-icons:
-    runs-on: ubuntu-latest
+    runs-on: macos-latest
     if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
 
     steps:
@@ -28,9 +33,14 @@ jobs:
         run: pip install requests Pillow
 
       - name: Fetch missing app icons
-        env:
-          BRANDFETCH_API_KEY: ${{ secrets.BRANDFETCH_API_KEY }}
-        run: python .github/scripts/fetch_app_icons.py
+        working-directory: .github/scripts
+        run: |
+          LIMIT="${{ github.event.inputs.limit || '0' }}"
+          if [ "$LIMIT" != "0" ]; then
+            python fetch_app_icons.py --limit "$LIMIT"
+          else
+            python fetch_app_icons.py
+          fi
 
       - name: Commit and push new icons
         run: |

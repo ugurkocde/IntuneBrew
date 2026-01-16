@@ -2,18 +2,22 @@
 """
 Fetch missing app icons from multiple sources:
 1. iTunes/App Store API (primary - for Mac App Store apps)
-2. Brandfetch Logo API (fallback - high quality company logos)
-3. Google Favicon API (secondary fallback - free, no auth)
+2. App Bundle Extraction (secondary - download PKG/DMG/ZIP and extract .icns)
+3. Google Favicon API (last resort - free, no auth)
 
 All icons are standardized to 512x512 PNG format.
 """
 
+import argparse
 import os
 import json
 import requests
 from urllib.parse import urlparse
 from PIL import Image
 from io import BytesIO
+
+# Import the icon extraction module
+from extract_icon_from_app import extract_icon_from_url
 
 APPS_DIR = "Apps"
 LOGOS_DIR = "Logos"
@@ -53,76 +57,21 @@ def fetch_from_itunes(bundle_id):
     return None
 
 
-def fetch_from_brandfetch(homepage, api_key=None):
-    """Fetch logo from Brandfetch Brand API (free tier: 100 requests/month).
+def fetch_from_app_bundle(download_url, app_name):
+    """Extract icon from app bundle (PKG, DMG, or ZIP).
 
-    The Brand API uses Bearer token authentication and returns JSON with logo URLs.
-    Endpoint: https://api.brandfetch.io/v2/brands/{domain}
+    Downloads the app artifact and extracts the .icns icon file,
+    converting it to PNG format.
+
+    This approach provides the highest quality icons as it uses
+    the actual app icons rather than brand logos.
     """
-    if not homepage or not api_key:
+    if not download_url:
         return None
     try:
-        domain = urlparse(homepage).netloc
-        if not domain:
-            return None
-        domain = domain.replace('www.', '')
-
-        # Brandfetch Brand API - returns JSON with logo data
-        api_url = f"https://api.brandfetch.io/v2/brands/{domain}"
-        headers = {'Authorization': f'Bearer {api_key}'}
-
-        resp = requests.get(api_url, timeout=15, headers=headers)
-        if resp.status_code != 200:
-            print(f"  Brandfetch API returned status {resp.status_code}")
-            return None
-
-        data = resp.json()
-        logos = data.get('logos', [])
-
-        # Find the best logo: prefer PNG with transparent background, or icon type
-        best_logo_url = None
-        best_score = -1
-
-        for logo in logos:
-            logo_type = logo.get('type', '')
-            formats = logo.get('formats', [])
-
-            for fmt in formats:
-                src = fmt.get('src')
-                if not src:
-                    continue
-
-                # Score based on preference
-                score = 0
-                if fmt.get('format') == 'png':
-                    score += 10
-                if fmt.get('background') == 'transparent':
-                    score += 5
-                if logo_type == 'icon':
-                    score += 3
-                if logo_type == 'logo':
-                    score += 1
-                # Prefer larger sizes
-                width = fmt.get('width') or 0
-                if width and width >= 400:
-                    score += 2
-                elif width and width >= 200:
-                    score += 1
-
-                if score > best_score:
-                    best_score = score
-                    best_logo_url = src
-
-        if best_logo_url:
-            print(f"  Found logo URL: {best_logo_url[:60]}...")
-            img_resp = requests.get(best_logo_url, timeout=15)
-            if img_resp.status_code == 200:
-                return Image.open(BytesIO(img_resp.content))
-        else:
-            print(f"  No suitable logo found in Brandfetch response")
-
+        return extract_icon_from_url(download_url, app_name)
     except Exception as e:
-        print(f"  Brandfetch error: {e}")
+        print(f"  App bundle extraction error: {e}")
     return None
 
 
@@ -165,7 +114,23 @@ def save_icon(image, app_name):
     return output_path
 
 
+def parse_args():
+    """Parse command line arguments."""
+    parser = argparse.ArgumentParser(
+        description="Fetch missing app icons from various sources"
+    )
+    parser.add_argument(
+        "--limit",
+        type=int,
+        default=0,
+        help="Maximum number of apps to process (0 = all, default: 0)"
+    )
+    return parser.parse_args()
+
+
 def main():
+    args = parse_args()
+
     os.makedirs(LOGOS_DIR, exist_ok=True)
     missing = get_missing_icons()
 
@@ -173,7 +138,12 @@ def main():
         print("All apps have icons!")
         return
 
-    print(f"Found {len(missing)} apps without icons\n")
+    # Apply limit if specified
+    if args.limit > 0:
+        missing = missing[:args.limit]
+        print(f"Processing {len(missing)} apps (limited from total missing)")
+    else:
+        print(f"Found {len(missing)} apps without icons\n")
 
     fetched = []
     failed = []
@@ -182,6 +152,7 @@ def main():
         print(f"Processing: {app_name}")
         bundle_id = app_data.get('bundleId')
         homepage = app_data.get('homepage')
+        download_url = app_data.get('url')
 
         image = None
         source = None
@@ -193,15 +164,14 @@ def main():
             if image:
                 source = "iTunes"
 
-        # Fallback 1: Brandfetch (primary fallback - higher quality logos)
-        brandfetch_api_key = os.environ.get('BRANDFETCH_API_KEY')
-        if image is None and homepage and brandfetch_api_key:
-            print(f"  Trying Brandfetch API (homepage: {homepage})")
-            image = fetch_from_brandfetch(homepage, brandfetch_api_key)
+        # Fallback 1: Extract from app bundle (PKG/DMG/ZIP)
+        if image is None and download_url:
+            print(f"  Trying app bundle extraction (url: {download_url[:60]}...)")
+            image = fetch_from_app_bundle(download_url, app_name)
             if image:
-                source = "Brandfetch"
+                source = "App Bundle"
 
-        # Fallback 2: Google Favicon API (secondary fallback - free, no auth)
+        # Fallback 2: Google Favicon API (last resort - free, no auth)
         if image is None and homepage:
             print(f"  Trying Google Favicon API (homepage: {homepage})")
             image = fetch_from_google_favicon(homepage)
