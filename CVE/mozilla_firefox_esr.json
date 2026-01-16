@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox Esr",
   "app_key": "mozilla_firefox_esr",
-  "last_updated": "2026-01-15",
+  "last_updated": "2026-01-16",
   "total_cves": 2971,
   "summary": {
     "critical": 314,
@@ -6923,8 +6923,8 @@
     {
       "cve_id": "CVE-2025-14327",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-01-13",
-      "description": "Spoofing issue in the Downloads Panel component. This vulnerability affects Firefox < 146, Thunderbird < 146, and Firefox ESR < 140.7.",
+      "last_modified_date": "2026-01-15",
+      "description": "Spoofing issue in the Downloads Panel component. This vulnerability affects Firefox < 146, Thunderbird < 146, Firefox ESR < 140.7, and Thunderbird < 140.7.",
       "base_score": 7.5,
       "severity": "HIGH",
       "cvss_version": "3.1",
