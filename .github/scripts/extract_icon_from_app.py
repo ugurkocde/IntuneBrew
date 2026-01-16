@@ -25,6 +25,21 @@ import requests
 from PIL import Image
 from io import BytesIO
 
+# Global verbose flag (set by caller)
+VERBOSE = False
+
+
+def set_verbose(verbose: bool):
+    """Set verbose mode for extraction logging."""
+    global VERBOSE
+    VERBOSE = verbose
+
+
+def log(message: str):
+    """Print message only if verbose mode is enabled."""
+    if VERBOSE:
+        print(message)
+
 
 def extract_icon_from_url(url: str, app_name: str) -> Optional[Image.Image]:
     """Extract icon from a PKG, DMG, or ZIP file at the given URL.
@@ -53,7 +68,7 @@ def extract_icon_from_url(url: str, app_name: str) -> Optional[Image.Image]:
     elif path_lower.endswith('.zip') or '.zip' in query_lower:
         return extract_icon_from_zip(url, app_name)
     else:
-        print(f"  Unknown file type for URL: {url}")
+        log(f"  Unknown file type for URL: {url}")
         return None
 
 
@@ -70,14 +85,14 @@ def extract_icon_from_pkg(pkg_url: str, app_name: str) -> Optional[Image.Image]:
     try:
         # Download PKG
         pkg_path = os.path.join(temp_dir, "app.pkg")
-        print(f"  Downloading PKG...")
+        log(f"  Downloading PKG...")
 
         if not download_file(pkg_url, pkg_path):
             return None
 
         # Expand PKG
         expanded_dir = os.path.join(temp_dir, "expanded")
-        print(f"  Expanding PKG...")
+        log(f"  Expanding PKG...")
 
         result = subprocess.run(
             ["pkgutil", "--expand-full", pkg_path, expanded_dir],
@@ -86,19 +101,19 @@ def extract_icon_from_pkg(pkg_url: str, app_name: str) -> Optional[Image.Image]:
         )
 
         if result.returncode != 0:
-            print(f"  pkgutil error: {result.stderr}")
+            log(f"  pkgutil error: {result.stderr}")
             return None
 
         # Find .app bundle in expanded payload
         app_path = find_app_bundle(expanded_dir)
         if not app_path:
-            print(f"  No .app bundle found in PKG")
+            log(f"  No .app bundle found in PKG")
             return None
 
         return extract_icon_from_app_bundle(app_path, temp_dir)
 
     except Exception as e:
-        print(f"  PKG extraction error: {e}")
+        log(f"  PKG extraction error: {e}")
         return None
     finally:
         cleanup_temp_dir(temp_dir)
@@ -120,13 +135,13 @@ def extract_icon_from_dmg(dmg_url: str, app_name: str) -> Optional[Image.Image]:
     try:
         # Download DMG
         dmg_path = os.path.join(temp_dir, "app.dmg")
-        print(f"  Downloading DMG...")
+        log(f"  Downloading DMG...")
 
         if not download_file(dmg_url, dmg_path):
             return None
 
         # Mount DMG (use yes to auto-accept any EULA prompts)
-        print(f"  Mounting DMG...")
+        log(f"  Mounting DMG...")
 
         # First attempt: standard mount with EULA auto-accept via stdin
         result = subprocess.run(
@@ -138,19 +153,19 @@ def extract_icon_from_dmg(dmg_url: str, app_name: str) -> Optional[Image.Image]:
 
         if result.returncode != 0:
             stderr_msg = result.stderr.decode().strip() if result.stderr else "Unknown error"
-            print(f"  hdiutil attach error (code {result.returncode}): {stderr_msg}")
+            log(f"  hdiutil attach error (code {result.returncode}): {stderr_msg}")
             return None
 
         # Parse plist output to get mount point
         if not result.stdout:
             # Some DMGs with EULAs may need a different approach
-            print(f"  hdiutil returned no output (possibly EULA-protected DMG)")
+            log(f"  hdiutil returned no output (possibly EULA-protected DMG)")
             return None
 
         try:
             plist_data = plistlib.loads(result.stdout)
         except Exception as plist_err:
-            print(f"  Failed to parse hdiutil output: {plist_err}")
+            log(f"  Failed to parse hdiutil output: {plist_err}")
             return None
         for entity in plist_data.get("system-entities", []):
             if "mount-point" in entity:
@@ -158,21 +173,21 @@ def extract_icon_from_dmg(dmg_url: str, app_name: str) -> Optional[Image.Image]:
                 break
 
         if not mount_point:
-            print(f"  Could not find mount point")
+            log(f"  Could not find mount point")
             return None
 
-        print(f"  Mounted at: {mount_point}")
+        log(f"  Mounted at: {mount_point}")
 
         # Find .app bundle
         app_path = find_app_bundle(mount_point)
         if not app_path:
-            print(f"  No .app bundle found in DMG")
+            log(f"  No .app bundle found in DMG")
             return None
 
         return extract_icon_from_app_bundle(app_path, temp_dir)
 
     except Exception as e:
-        print(f"  DMG extraction error: {e}")
+        log(f"  DMG extraction error: {e}")
         return None
     finally:
         # Always try to unmount
@@ -197,32 +212,32 @@ def extract_icon_from_zip(zip_url: str, app_name: str) -> Optional[Image.Image]:
     try:
         # Download ZIP
         zip_path = os.path.join(temp_dir, "app.zip")
-        print(f"  Downloading ZIP...")
+        log(f"  Downloading ZIP...")
 
         if not download_file(zip_url, zip_path):
             return None
 
         # Extract ZIP
         extract_dir = os.path.join(temp_dir, "extracted")
-        print(f"  Extracting ZIP...")
+        log(f"  Extracting ZIP...")
 
         try:
             with zipfile.ZipFile(zip_path, 'r') as zf:
                 zf.extractall(extract_dir)
         except zipfile.BadZipFile:
-            print(f"  Invalid ZIP file")
+            log(f"  Invalid ZIP file")
             return None
 
         # Find .app bundle
         app_path = find_app_bundle(extract_dir)
         if not app_path:
-            print(f"  No .app bundle found in ZIP")
+            log(f"  No .app bundle found in ZIP")
             return None
 
         return extract_icon_from_app_bundle(app_path, temp_dir)
 
     except Exception as e:
-        print(f"  ZIP extraction error: {e}")
+        log(f"  ZIP extraction error: {e}")
         return None
     finally:
         cleanup_temp_dir(temp_dir)
@@ -261,14 +276,14 @@ def extract_icon_from_app_bundle(app_path: str, temp_dir: str) -> Optional[Image
     # Read Info.plist
     info_plist_path = os.path.join(app_path, "Contents", "Info.plist")
     if not os.path.exists(info_plist_path):
-        print(f"  No Info.plist found")
+        log(f"  No Info.plist found")
         return None
 
     try:
         with open(info_plist_path, 'rb') as f:
             info = plistlib.load(f)
     except Exception as e:
-        print(f"  Error reading Info.plist: {e}")
+        log(f"  Error reading Info.plist: {e}")
         return None
 
     # Get icon file name from plist
@@ -278,14 +293,14 @@ def extract_icon_from_app_bundle(app_path: str, temp_dir: str) -> Optional[Image
         icon_name = info.get('CFBundleIconName', '')
 
     if not icon_name:
-        print(f"  No icon file specified in Info.plist")
+        log(f"  No icon file specified in Info.plist")
         # Try to find any .icns file
         resources_dir = os.path.join(app_path, "Contents", "Resources")
         if os.path.exists(resources_dir):
             icns_files = glob.glob(os.path.join(resources_dir, "*.icns"))
             if icns_files:
                 icon_name = os.path.basename(icns_files[0])
-                print(f"  Found fallback icon: {icon_name}")
+                log(f"  Found fallback icon: {icon_name}")
 
     if not icon_name:
         return None
@@ -297,10 +312,10 @@ def extract_icon_from_app_bundle(app_path: str, temp_dir: str) -> Optional[Image
     # Find the icon file
     icns_path = os.path.join(app_path, "Contents", "Resources", icon_name)
     if not os.path.exists(icns_path):
-        print(f"  Icon file not found: {icns_path}")
+        log(f"  Icon file not found: {icns_path}")
         return None
 
-    print(f"  Found icon: {icon_name}")
+    log(f"  Found icon: {icon_name}")
 
     # Convert to PNG using sips
     return convert_icns_to_png(icns_path, temp_dir)
@@ -314,7 +329,7 @@ def convert_icns_to_png(icns_path: str, temp_dir: str) -> Optional[Image.Image]:
     """
     png_path = os.path.join(temp_dir, "icon.png")
 
-    print(f"  Converting ICNS to PNG...")
+    log(f"  Converting ICNS to PNG...")
     result = subprocess.run(
         ["sips", "-s", "format", "png", icns_path, "--out", png_path],
         capture_output=True,
@@ -322,11 +337,11 @@ def convert_icns_to_png(icns_path: str, temp_dir: str) -> Optional[Image.Image]:
     )
 
     if result.returncode != 0:
-        print(f"  sips conversion error: {result.stderr}")
+        log(f"  sips conversion error: {result.stderr}")
         return None
 
     if not os.path.exists(png_path):
-        print(f"  PNG conversion failed - no output file")
+        log(f"  PNG conversion failed - no output file")
         return None
 
     try:
@@ -336,7 +351,7 @@ def convert_icns_to_png(icns_path: str, temp_dir: str) -> Optional[Image.Image]:
         # Create a copy in memory
         return img.copy()
     except Exception as e:
-        print(f"  Error loading converted PNG: {e}")
+        log(f"  Error loading converted PNG: {e}")
         return None
 
 
@@ -352,7 +367,7 @@ def download_file(url: str, dest_path: str, timeout: int = 300) -> bool:
 
         total_size = int(response.headers.get('content-length', 0))
         if total_size > 0:
-            print(f"  File size: {total_size / (1024*1024):.1f} MB")
+            log(f"  File size: {total_size / (1024*1024):.1f} MB")
 
         downloaded_size = 0
         with open(dest_path, 'wb') as f:
@@ -362,18 +377,18 @@ def download_file(url: str, dest_path: str, timeout: int = 300) -> bool:
 
         # Verify download completed
         if total_size > 0 and downloaded_size != total_size:
-            print(f"  Download incomplete: got {downloaded_size} bytes, expected {total_size}")
+            log(f"  Download incomplete: got {downloaded_size} bytes, expected {total_size}")
             return False
 
         # Verify file exists and has content
         actual_size = os.path.getsize(dest_path)
         if actual_size < 1000:  # Less than 1KB is suspicious
-            print(f"  Downloaded file too small: {actual_size} bytes")
+            log(f"  Downloaded file too small: {actual_size} bytes")
             return False
 
         return True
     except requests.RequestException as e:
-        print(f"  Download error: {e}")
+        log(f"  Download error: {e}")
         return False
 
 
@@ -383,7 +398,7 @@ def cleanup_temp_dir(temp_dir: str) -> None:
         if temp_dir and os.path.exists(temp_dir):
             shutil.rmtree(temp_dir)
     except Exception as e:
-        print(f"  Warning: Could not clean up temp dir: {e}")
+        log(f"  Warning: Could not clean up temp dir: {e}")
 
 
 if __name__ == "__main__":

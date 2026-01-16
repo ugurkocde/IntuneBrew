@@ -10,6 +10,7 @@ All icons are standardized to 512x512 PNG format.
 
 import argparse
 import os
+import sys
 import json
 import requests
 from urllib.parse import urlparse
@@ -17,7 +18,7 @@ from PIL import Image
 from io import BytesIO
 
 # Import the icon extraction module
-from extract_icon_from_app import extract_icon_from_url
+from extract_icon_from_app import extract_icon_from_url, set_verbose
 
 # Calculate repository root (script is in .github/scripts/)
 SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
@@ -28,6 +29,51 @@ LOGOS_DIR = os.path.join(REPO_ROOT, "Logos")
 TARGET_SIZE = (512, 512)
 
 
+class ProgressBar:
+    """Terminal progress bar with real-time stats."""
+
+    def __init__(self, total, bar_width=40):
+        self.total = total
+        self.bar_width = bar_width
+        self.processed = 0
+        self.success = 0
+        self.failed = 0
+        self.current_app = ""
+
+    def update(self, app_name, success=None):
+        """Update progress bar with current status."""
+        self.current_app = app_name
+
+        if success is not None:
+            self.processed += 1
+            if success:
+                self.success += 1
+            else:
+                self.failed += 1
+
+        self._render()
+
+    def _render(self):
+        """Render the progress bar to terminal."""
+        # Calculate progress
+        progress = self.processed / self.total if self.total > 0 else 0
+        filled = int(self.bar_width * progress)
+        bar = "=" * filled + "-" * (self.bar_width - filled)
+
+        # Build status line
+        percent = progress * 100
+        stats = f"[{bar}] {percent:5.1f}% | {self.processed}/{self.total} | OK: {self.success} | FAIL: {self.failed}"
+
+        # Clear line and print
+        sys.stdout.write(f"\r{stats}")
+        sys.stdout.flush()
+
+    def finish(self):
+        """Complete the progress bar."""
+        self._render()
+        print()  # New line after progress bar
+
+
 def get_apps_to_process(force=False):
     """Get list of apps to process.
 
@@ -35,7 +81,7 @@ def get_apps_to_process(force=False):
         force: If True, return all apps. If False, only return apps missing icons.
 
     Returns:
-        List of (app_name, app_data) tuples.
+        List of (app_name, app_data) tuples, sorted by app name for consistent ordering.
     """
     apps = []
     for filename in os.listdir(APPS_DIR):
@@ -48,6 +94,9 @@ def get_apps_to_process(force=False):
                 with open(os.path.join(APPS_DIR, filename)) as f:
                     app_data = json.load(f)
                 apps.append((app_name, app_data))
+
+    # Sort by app name for consistent ordering across runs
+    apps.sort(key=lambda x: x[0])
     return apps
 
 
@@ -66,25 +115,18 @@ def fetch_from_itunes(bundle_id):
                 if img_resp.status_code == 200:
                     return Image.open(BytesIO(img_resp.content))
     except Exception as e:
-        print(f"  iTunes error: {e}")
+        print(f"\n  iTunes error: {e}")
     return None
 
 
 def fetch_from_app_bundle(download_url, app_name):
-    """Extract icon from app bundle (PKG, DMG, or ZIP).
-
-    Downloads the app artifact and extracts the .icns icon file,
-    converting it to PNG format.
-
-    This approach provides the highest quality icons as it uses
-    the actual app icons rather than brand logos.
-    """
+    """Extract icon from app bundle (PKG, DMG, or ZIP)."""
     if not download_url:
         return None
     try:
         return extract_icon_from_url(download_url, app_name)
     except Exception as e:
-        print(f"  App bundle extraction error: {e}")
+        print(f"\n  App bundle extraction error: {e}")
     return None
 
 
@@ -97,31 +139,26 @@ def fetch_from_google_favicon(homepage):
         if not domain:
             return None
         domain = domain.replace('www.', '')
-        # Google Favicon API - redirects to gstatic.com
         url = f"https://www.google.com/s2/favicons?domain={domain}&sz=256"
         resp = requests.get(url, timeout=10, allow_redirects=True)
         if resp.status_code == 200 and 'image' in resp.headers.get('content-type', ''):
             img = Image.open(BytesIO(resp.content))
-            # Skip if it's the default/placeholder icon (very small)
             if img.size[0] >= 64:
                 return img
     except Exception as e:
-        print(f"  Google Favicon error: {e}")
+        print(f"\n  Google Favicon error: {e}")
     return None
 
 
 def save_icon(image, app_name):
     """Resize and save icon as PNG."""
-    # Handle different image modes
     if image.mode == 'P':
         image = image.convert('RGBA')
     elif image.mode not in ('RGBA', 'RGB'):
         image = image.convert('RGBA')
 
-    # Resize to target size with high quality
     image = image.resize(TARGET_SIZE, Image.LANCZOS)
 
-    # Save as PNG
     output_path = os.path.join(LOGOS_DIR, f"{app_name}.png")
     image.save(output_path, 'PNG')
     return output_path
@@ -139,9 +176,20 @@ def parse_args():
         help="Maximum number of apps to process (0 = all, default: 0)"
     )
     parser.add_argument(
+        "--offset",
+        type=int,
+        default=0,
+        help="Number of apps to skip (for batch processing, default: 0)"
+    )
+    parser.add_argument(
         "--force",
         action="store_true",
         help="Force re-fetch icons even if they already exist (overwrites existing)"
+    )
+    parser.add_argument(
+        "--verbose",
+        action="store_true",
+        help="Show detailed output for each app (disables progress bar)"
     )
     return parser.parse_args()
 
@@ -149,26 +197,42 @@ def parse_args():
 def main():
     args = parse_args()
 
-    os.makedirs(LOGOS_DIR, exist_ok=True)
-    apps_to_process = get_apps_to_process(force=args.force)
+    # Set verbose mode for extraction module
+    set_verbose(args.verbose)
 
-    if not apps_to_process:
+    os.makedirs(LOGOS_DIR, exist_ok=True)
+    all_apps = get_apps_to_process(force=args.force)
+
+    if not all_apps:
         print("All apps have icons!")
         return
 
-    # Apply limit if specified
+    # Apply offset
+    if args.offset > 0:
+        all_apps = all_apps[args.offset:]
+
+    # Apply limit
     if args.limit > 0:
-        apps_to_process = apps_to_process[:args.limit]
+        all_apps = all_apps[:args.limit]
 
-    mode_str = "FORCE mode (overwriting existing)" if args.force else "missing icons only"
-    print(f"Processing {len(apps_to_process)} apps ({mode_str})\n")
+    if not all_apps:
+        print("No apps to process after applying offset/limit")
+        return
 
+    total_apps = len(all_apps)
+    mode_str = "FORCE mode" if args.force else "missing only"
+    offset_str = f", offset={args.offset}" if args.offset > 0 else ""
+    limit_str = f", limit={args.limit}" if args.limit > 0 else ""
+
+    print(f"Processing {total_apps} apps ({mode_str}{offset_str}{limit_str})")
+    print()
+
+    # Initialize progress bar
+    progress = ProgressBar(total_apps)
     fetched = []
     failed = []
-    skipped = []
 
-    for app_name, app_data in apps_to_process:
-        print(f"Processing: {app_name}")
+    for app_name, app_data in all_apps:
         bundle_id = app_data.get('bundleId')
         homepage = app_data.get('homepage')
         download_url = app_data.get('url')
@@ -176,23 +240,26 @@ def main():
         image = None
         source = None
 
-        # Try iTunes first (best quality for Mac App Store apps)
+        # Try iTunes first
         if bundle_id:
-            print(f"  Trying iTunes API (bundleId: {bundle_id})")
+            if args.verbose:
+                print(f"\n  [{app_name}] Trying iTunes API (bundleId: {bundle_id})")
             image = fetch_from_itunes(bundle_id)
             if image:
                 source = "iTunes"
 
-        # Fallback 1: Extract from app bundle (PKG/DMG/ZIP)
+        # Fallback 1: Extract from app bundle
         if image is None and download_url:
-            print(f"  Trying app bundle extraction (url: {download_url[:60]}...)")
+            if args.verbose:
+                print(f"\n  [{app_name}] Trying app bundle extraction")
             image = fetch_from_app_bundle(download_url, app_name)
             if image:
                 source = "App Bundle"
 
-        # Fallback 2: Google Favicon API (last resort - free, no auth)
+        # Fallback 2: Google Favicon API
         if image is None and homepage:
-            print(f"  Trying Google Favicon API (homepage: {homepage})")
+            if args.verbose:
+                print(f"\n  [{app_name}] Trying Google Favicon API")
             image = fetch_from_google_favicon(homepage)
             if image:
                 source = "Google Favicon"
@@ -200,26 +267,39 @@ def main():
         if image:
             save_icon(image, app_name)
             fetched.append((app_name, source))
-            print(f"  [OK] Saved icon from {source}")
+            progress.update(app_name, success=True)
         else:
             failed.append(app_name)
-            print(f"  [MISS] No icon found")
-        print()
+            progress.update(app_name, success=False)
+
+    progress.finish()
 
     # Summary
-    print("=" * 50)
-    print(f"SUMMARY: {len(fetched)} fetched, {len(failed)} failed")
-    print("=" * 50)
+    print()
+    print("=" * 60)
+    print(f"SUMMARY")
+    print("=" * 60)
+    print(f"  Total processed: {len(fetched) + len(failed)}")
+    print(f"  Successfully fetched: {len(fetched)}")
+    print(f"  Failed (need manual): {len(failed)}")
+    print()
 
+    # Source breakdown
     if fetched:
-        print("\nFetched icons:")
-        for app_name, source in fetched:
-            print(f"  + {app_name} (from {source})")
+        sources = {}
+        for _, source in fetched:
+            sources[source] = sources.get(source, 0) + 1
+        print("Source breakdown:")
+        for source, count in sorted(sources.items(), key=lambda x: -x[1]):
+            print(f"  {source}: {count}")
+        print()
 
-    if failed:
-        print("\nFailed (need manual addition):")
+    if failed and len(failed) <= 50:
+        print("Failed apps (need manual addition):")
         for app_name in failed:
             print(f"  - {app_name}")
+    elif failed:
+        print(f"Failed apps: {len(failed)} (too many to list, check logs)")
 
 
 if __name__ == "__main__":
