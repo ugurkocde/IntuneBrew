@@ -1,10 +1,9 @@
 #!/usr/bin/env python3
 """
-Fetch missing app icons from multiple sources:
-1. App Bundle Extraction (primary - download PKG/DMG/ZIP and extract .icns)
-2. Google Favicon API (fallback - free, no auth)
+Fetch app icons by extracting them directly from app bundles (PKG/DMG/ZIP).
 
-All icons are standardized to 512x512 PNG format.
+Downloads the app artifact and extracts the .icns icon file,
+converting it to 512x512 PNG format.
 """
 
 import argparse
@@ -15,10 +14,7 @@ import json
 # Force unbuffered output for real-time progress display
 sys.stdout.reconfigure(line_buffering=True) if hasattr(sys.stdout, 'reconfigure') else None
 os.environ['PYTHONUNBUFFERED'] = '1'
-import requests
-from urllib.parse import urlparse
 from PIL import Image
-from io import BytesIO
 
 # Import the icon extraction module
 from extract_icon_from_app import extract_icon_from_url, set_verbose
@@ -119,26 +115,6 @@ def fetch_from_app_bundle(download_url, app_name):
     return None
 
 
-def fetch_from_google_favicon(homepage):
-    """Fetch favicon from Google's Favicon API (free, no auth required)."""
-    if not homepage:
-        return None
-    try:
-        domain = urlparse(homepage).netloc
-        if not domain:
-            return None
-        domain = domain.replace('www.', '')
-        url = f"https://www.google.com/s2/favicons?domain={domain}&sz=256"
-        resp = requests.get(url, timeout=10, allow_redirects=True)
-        if resp.status_code == 200 and 'image' in resp.headers.get('content-type', ''):
-            img = Image.open(BytesIO(resp.content))
-            if img.size[0] >= 64:
-                return img
-    except Exception as e:
-        print(f"\n  Google Favicon error: {e}")
-    return None
-
-
 def save_icon(image, app_name):
     """Resize and save icon as PNG."""
     if image.mode == 'P':
@@ -233,25 +209,15 @@ def main():
         image = None
         source = None
 
-        # Primary: Extract from app bundle (PKG/DMG/ZIP)
+        # Extract from app bundle (PKG/DMG/ZIP)
         if download_url:
             if args.verbose:
-                print(f"\n  [{app_name}] Trying app bundle extraction")
+                print(f"\n  [{app_name}] Extracting from app bundle")
             image = fetch_from_app_bundle(download_url, app_name)
-            if image:
-                source = "App Bundle"
-
-        # Fallback: Google Favicon API
-        if image is None and homepage:
-            if args.verbose:
-                print(f"\n  [{app_name}] Trying Google Favicon API")
-            image = fetch_from_google_favicon(homepage)
-            if image:
-                source = "Google Favicon"
 
         if image:
             save_icon(image, app_name)
-            fetched.append((app_name, source))
+            fetched.append(app_name)
             progress.update(app_name, success=True)
         else:
             failed.append(app_name)
@@ -265,19 +231,9 @@ def main():
     print(f"SUMMARY")
     print("=" * 60)
     print(f"  Total processed: {len(fetched) + len(failed)}")
-    print(f"  Successfully fetched: {len(fetched)}")
+    print(f"  Successfully extracted: {len(fetched)}")
     print(f"  Failed (need manual): {len(failed)}")
     print()
-
-    # Source breakdown
-    if fetched:
-        sources = {}
-        for _, source in fetched:
-            sources[source] = sources.get(source, 0) + 1
-        print("Source breakdown:")
-        for source, count in sorted(sources.items(), key=lambda x: -x[1]):
-            print(f"  {source}: {count}")
-        print()
 
     if failed and len(failed) <= 50:
         print("Failed apps (need manual addition):")
