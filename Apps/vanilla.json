@@ -3,7 +3,7 @@
   "description": "Tool to hide menu bar icons",
   "version": "2.2",
   "url": "https://macrelease.matthewpalmer.net/distribution/appcasts/Vanilla-61.dmg",
-  "bundleId": null,
+  "bundleId": "net.matthewpalmer.Vanilla",
   "homepage": "https://matthewpalmer.net/vanilla/",
   "fileName": "Vanilla-61.dmg",
   "sha": "249ce3e326fad5f89580803574fbe4229a1c0796b4483e650fc27941c00cfe22",

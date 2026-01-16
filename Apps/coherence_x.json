@@ -3,7 +3,7 @@
   "description": "Turn websites into apps",
   "version": "5.1.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/coherence_x_5.1.1.pkg",
-  "bundleId": null,
+  "bundleId": "com.BZG.CoherenceX5",
   "homepage": "https://bzgapps.com/coherence",
   "fileName": "coherence_x_5.1.1.pkg",
   "type": "app",

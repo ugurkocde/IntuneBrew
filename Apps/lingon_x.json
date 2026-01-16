@@ -3,7 +3,7 @@
   "description": "Automator software to start apps, run scripts or commands and more",
   "version": "9.6.6",
   "url": "https://intunebrew.blob.core.windows.net/pkg/lingon_x_9.6.6.pkg",
-  "bundleId": null,
+  "bundleId": "com.peterborgapps.LingonX4",
   "homepage": "https://www.peterborgapps.com/lingon/",
   "fileName": "lingon_x_9.6.6.pkg",
   "type": "app",

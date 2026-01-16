@@ -3,7 +3,7 @@
   "description": "Detailed information on every Apple product ever made",
   "version": "8.0.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/mactracker_8.0.1.pkg",
-  "bundleId": null,
+  "bundleId": "com.mactrackerapp.Mactracker",
   "homepage": "https://mactracker.ca/",
   "fileName": "mactracker_8.0.1.pkg",
   "type": "app",

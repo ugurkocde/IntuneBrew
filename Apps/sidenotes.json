@@ -3,7 +3,7 @@
   "description": "Note-taking application",
   "version": "1.5.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/sidenotes_1.5.2.pkg",
-  "bundleId": null,
+  "bundleId": "com.apptorium.SideNotes-paddle",
   "homepage": "https://www.apptorium.com/sidenotes",
   "fileName": "sidenotes_1.5.2.pkg",
   "type": "app",

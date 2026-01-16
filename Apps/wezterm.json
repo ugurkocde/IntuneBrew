@@ -3,7 +3,7 @@
   "description": "GPU-accelerated cross-platform terminal emulator and multiplexer",
   "version": "20240203-110809",
   "url": "https://intunebrew.blob.core.windows.net/pkg/wezterm_20240203-110809.pkg",
-  "bundleId": null,
+  "bundleId": "com.github.wez.wezterm",
   "homepage": "https://wezterm.org/",
   "fileName": "wezterm_20240203-110809.pkg",
   "type": "app",

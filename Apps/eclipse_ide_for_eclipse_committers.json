@@ -3,7 +3,7 @@
   "description": "Eclipse integrated development environment",
   "version": "4.38",
   "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2025-12/R/eclipse-committers-2025-12-R-macosx-cocoa-aarch64.dmg&r=1",
-  "bundleId": null,
+  "bundleId": "epp.package.committers",
   "homepage": "https://eclipse.org/",
   "fileName": "eclipse-committers-2025-12-R-macosx-cocoa-aarch64.dmg&r=1",
   "sha": "9c2f8151949725c6bc63651018d3df54d1453f57009724f1db5eee1d53f7e2d9",

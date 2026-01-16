@@ -3,7 +3,7 @@
   "description": "Video communication and virtual meeting platform",
   "version": "46.1.0.33913",
   "url": "https://binaries.webex.com/webex-macos-apple-silicon/Webex.dmg",
-  "bundleId": null,
+  "bundleId": "Cisco-Systems.Spark",
   "homepage": "https://www.webex.com/",
   "fileName": "Webex.dmg",
   "sha": "5c1b2d2d5653a1966183526bb5f2dfe0f9e9a437b63c4eb454e6de10d7c7404a",

@@ -3,7 +3,7 @@
   "description": "Create global hotkeys for your files and applications",
   "version": "2.2.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/apptivate_2.2.1.pkg",
-  "bundleId": null,
+  "bundleId": "se.cocoabeans.apptivate",
   "homepage": "http://www.apptivateapp.com/",
   "fileName": "Apptivate-2.2.1.app.zip",
   "type": "app",

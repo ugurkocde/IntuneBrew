@@ -3,7 +3,7 @@
   "description": "Automation software",
   "version": "11.0.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/keyboard_maestro_11.0.4.pkg",
-  "bundleId": null,
+  "bundleId": "com.stairways.keyboardmaestro.editor",
   "homepage": "https://www.keyboardmaestro.com/main/",
   "fileName": "keyboardmaestro-1104.zip",
   "type": "app",

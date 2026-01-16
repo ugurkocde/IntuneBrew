@@ -3,7 +3,7 @@
   "description": "Screen mirroring receiver",
   "version": "7.2.7",
   "url": "https://dl.airserver.com/mac/AirServer-7.2.7.dmg",
-  "bundleId": null,
+  "bundleId": "com.pratikkumar.airserver-mac.AirServer",
   "homepage": "https://www.airserver.com/",
   "fileName": "AirServer-7.2.7.dmg",
   "sha": "e092aa4803418483dac749f71c644d63972b4ffe61f235364b92a5b72e08ae0d",

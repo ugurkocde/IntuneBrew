@@ -3,7 +3,7 @@
   "description": "iOS screen output recorder",
   "version": "3.5.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/bezel_3.5.0.pkg",
-  "bundleId": null,
+  "bundleId": "com.nonstrict.Bezel-direct",
   "homepage": "https://getbezel.app/",
   "fileName": "bezel_3.5.0.pkg",
   "type": "app",

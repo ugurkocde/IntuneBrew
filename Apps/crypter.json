@@ -3,7 +3,7 @@
   "description": "Encryption software",
   "version": "5.0.0",
   "url": "https://github.com/HR/Crypter/releases/download/v5.0.0/Crypter-5.0.0.dmg",
-  "bundleId": null,
+  "bundleId": "com.github.hr.crypter",
   "homepage": "https://github.com/HR/Crypter",
   "fileName": "Crypter-5.0.0.dmg",
   "sha": "ed136dbfacae87d52493e56e0e225d13203de997c54e7ac5f159feeadfcd4b7a",

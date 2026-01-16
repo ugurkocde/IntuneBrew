@@ -3,7 +3,7 @@
   "description": "Window manager and productivity tool",
   "version": "4.2.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/ubar_4.2.3.pkg",
-  "bundleId": null,
+  "bundleId": "ca.brawer.uBar",
   "homepage": "https://brawersoftware.com/products/ubar",
   "fileName": "ubar_4.2.3.pkg",
   "type": "app",

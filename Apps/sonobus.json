@@ -3,7 +3,7 @@
   "description": "High-quality network audio streaming",
   "version": "1.7.2",
   "url": "https://sonobus.net/releases/sonobus-1.7.2-mac.dmg",
-  "bundleId": null,
+  "bundleId": "net.sonobus.pkg.aax",
   "homepage": "https://sonobus.net/",
   "fileName": "sonobus-1.7.2-mac.dmg",
   "sha": "4ba6eff849973238f45e0a3538b90c9a2d64c0b001d62882d0d337f46e0ddaa9",

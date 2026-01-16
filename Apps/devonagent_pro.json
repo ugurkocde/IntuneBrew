@@ -3,7 +3,7 @@
   "description": "Assistant for efficient web searches",
   "version": "3.11.10",
   "url": "https://intunebrew.blob.core.windows.net/pkg/devonagent_pro_3.11.10.pkg",
-  "bundleId": null,
+  "bundleId": "com.devon-technologies.agent",
   "homepage": "https://www.devontechnologies.com/apps/devonagent",
   "fileName": "devonagent_pro_3.11.10.pkg",
   "type": "app",

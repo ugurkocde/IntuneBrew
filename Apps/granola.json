@@ -3,7 +3,7 @@
   "description": "AI-powered notepad for meetings",
   "version": "6.491.0",
   "url": "https://dr2v7l5emb758.cloudfront.net/6.491.0/Granola-6.491.0-mac-universal.dmg",
-  "bundleId": null,
+  "bundleId": "com.granola.app",
   "homepage": "https://www.granola.ai/",
   "fileName": "Granola-6.491.0-mac-universal.dmg",
   "sha": "8463b0530344466a95070f2f162276f0e55232fa84e0d82d177ad45ac70b9028",

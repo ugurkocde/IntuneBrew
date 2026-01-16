@@ -3,7 +3,7 @@
   "description": "Dock replacement",
   "version": "4.1.6",
   "url": "https://www.dockfix.app/downloads/DockFix.dmg",
-  "bundleId": null,
+  "bundleId": "dk.FIrstForm.DockFix",
   "homepage": "https://www.dockfix.app/",
   "fileName": "DockFix.dmg",
   "sha": "f8061b9f043ce0451c6ee376907bca61c6e4bed8120cea9f83ebbee7bfb41935",

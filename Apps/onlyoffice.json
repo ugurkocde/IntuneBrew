@@ -3,7 +3,7 @@
   "description": "Document editor",
   "version": "9.2.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/onlyoffice_9.2.1.pkg",
-  "bundleId": null,
+  "bundleId": "asc.onlyoffice.editors-helper-renderer",
   "homepage": "https://www.onlyoffice.com/",
   "fileName": "onlyoffice_9.2.1.pkg",
   "type": "app",

@@ -3,7 +3,7 @@
   "description": "VPN client: IPsec, L2TP, OpenVPN, PPTP, SSTP, SonicWALL/AnyConnect/Fortinet SSL",
   "version": "26.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/vpn_tracker_365_26.1.pkg",
-  "bundleId": null,
+  "bundleId": "com.equinux.VPNTracker365",
   "homepage": "https://vpntracker.com/",
   "fileName": "vpn_tracker_365_26.1.pkg",
   "type": "app",

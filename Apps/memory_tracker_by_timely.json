@@ -3,7 +3,7 @@
   "description": "Time tracking software",
   "version": "2023.11",
   "url": "https://intunebrew.blob.core.windows.net/pkg/memory_tracker_by_timely_2023.11.pkg",
-  "bundleId": null,
+  "bundleId": "com.timelyapp.memory",
   "homepage": "https://memory.ai/timely/",
   "fileName": "memory_tracker_by_timely_2023.11.pkg",
   "type": "app",

@@ -3,7 +3,7 @@
   "description": "Fork of Nylas Mail",
   "version": "1.17.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/mailspring_1.17.1.pkg",
-  "bundleId": null,
+  "bundleId": "com.mailspring.mailspring",
   "homepage": "https://getmailspring.com/",
   "fileName": "mailspring_1.17.1.pkg",
   "type": "app",

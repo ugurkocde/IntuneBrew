@@ -3,7 +3,7 @@
   "description": "Install and update your Eclipse Development Environment",
   "version": "4.38",
   "url": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2025-12/R/eclipse-inst-jre-mac-aarch64.dmg&r=1",
-  "bundleId": null,
+  "bundleId": "org.eclipse.oomph.setup.installer.product.with-jre.restricted",
   "homepage": "https://eclipse.org/",
   "fileName": "eclipse-inst-jre-mac-aarch64.dmg&r=1",
   "sha": "9a55892a74ee3248acd272a6f33fb4b39a398611244b4ad36db373154cdbdf94",

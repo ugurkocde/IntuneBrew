@@ -3,7 +3,7 @@
   "description": "Kext-less implementation of FUSE",
   "version": "1.0.49",
   "url": "https://github.com/macos-fuse-t/fuse-t/releases/download/1.0.49/fuse-t-macos-installer-1.0.49.pkg",
-  "bundleId": null,
+  "bundleId": "com.nicola.Fuset",
   "homepage": "https://www.fuse-t.org/",
   "fileName": "fuse-t-macos-installer-1.0.49.pkg",
   "type": "pkg",

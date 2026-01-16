@@ -3,7 +3,7 @@
   "description": "Customise menu item keyboard shortcuts",
   "version": "1.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/customshortcuts_1.3.pkg",
-  "bundleId": null,
+  "bundleId": "com.houdah.CustomShortcuts",
   "homepage": "https://www.houdah.com/customShortcuts/",
   "fileName": "customshortcuts_1.3.pkg",
   "type": "app",

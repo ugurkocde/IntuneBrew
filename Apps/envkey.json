@@ -3,7 +3,7 @@
   "description": "Protects credentials and syncs configurations",
   "version": "1.5.10",
   "url": "https://intunebrew.blob.core.windows.net/pkg/envkey_1.5.10.pkg",
-  "bundleId": null,
+  "bundleId": "com.envkey.EnvKeyApp",
   "homepage": "https://www.envkey.com/",
   "fileName": "envkey_1.5.10.pkg",
   "type": "app",

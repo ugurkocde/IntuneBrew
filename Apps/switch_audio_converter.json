@@ -3,7 +3,7 @@
   "description": "Multiple format audio file converter",
   "version": "13.07",
   "url": "https://www.nch.com.au/components/switchmaci.zip",
-  "bundleId": null,
+  "bundleId": "com.nchsoftware.switch",
   "homepage": "https://www.nch.com.au/switch/",
   "fileName": "switchmaci.zip",
   "type": "app",

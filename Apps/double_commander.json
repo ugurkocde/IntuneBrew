@@ -3,7 +3,7 @@
   "description": "File manager with two panels",
   "version": "1.1.32",
   "url": "https://github.com/doublecmd/doublecmd/releases/download/v1.1.32/doublecmd-1.1.32.cocoa.aarch64.dmg",
-  "bundleId": null,
+  "bundleId": "org.doublecmd.DoubleCommander",
   "homepage": "https://doublecmd.sourceforge.io/",
   "fileName": "doublecmd-1.1.32.cocoa.aarch64.dmg",
   "sha": "dfbf339a2ef78e2346ad2a874a9961f5b725c2a8d8b32c33bc7751348488792b",

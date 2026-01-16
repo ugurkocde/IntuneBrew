@@ -3,7 +3,7 @@
   "description": "Subversion client",
   "version": "2.4.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/versions_2.4.4.pkg",
-  "bundleId": null,
+  "bundleId": "com.versionsapp.v2",
   "homepage": "https://versionsapp.com/",
   "fileName": "versions_2.4.4.pkg",
   "type": "app",

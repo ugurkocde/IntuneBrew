@@ -3,7 +3,7 @@
   "description": "Journaling and blogging software",
   "version": "7.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/macjournal_7.4.pkg",
-  "bundleId": null,
+  "bundleId": "com.DanSchimpf.MacJournal",
   "homepage": "https://danschimpf.com/",
   "fileName": "macjournal_7.4.pkg",
   "type": "app",

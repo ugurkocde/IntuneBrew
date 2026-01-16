@@ -3,7 +3,7 @@
   "description": "LaTeX and TeX editor and previewer",
   "version": "5.57",
   "url": "https://intunebrew.blob.core.windows.net/pkg/texshop_5.57.pkg",
-  "bundleId": null,
+  "bundleId": "TeXShop",
   "homepage": "https://pages.uoregon.edu/koch/texshop/",
   "fileName": "texshop_5.57.pkg",
   "type": "app",

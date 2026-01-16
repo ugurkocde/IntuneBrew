@@ -3,7 +3,7 @@
   "description": "Blocks all Keyboard and TouchBar input",
   "version": "7",
   "url": "https://intunebrew.blob.core.windows.net/pkg/keyboardcleantool_7.pkg",
-  "bundleId": null,
+  "bundleId": "com.foggyhillsoftware.keyboardcleantool",
   "homepage": "https://folivora.ai/keyboardcleantool",
   "fileName": "keyboardcleantool_7.pkg",
   "type": "app",

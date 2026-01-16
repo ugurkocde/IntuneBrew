@@ -3,7 +3,7 @@
   "description": "Music player focusing on visuals",
   "version": "4.12.4",
   "url": "https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp-4.12.4-arm64.dmg",
-  "bundleId": null,
+  "bundleId": "tv.plex.plexamp",
   "homepage": "https://plexamp.com/",
   "fileName": "Plexamp-4.12.4-arm64.dmg",
   "sha": "313453eefdb6b8a295800e6530442ad0527884ed14533dfb92166b6bdc2dcca9",

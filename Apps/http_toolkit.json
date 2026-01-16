@@ -3,7 +3,7 @@
   "description": "HTTP(S) debugging proxy, analyzer, and client",
   "version": "1.24.2",
   "url": "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.24.2/HttpToolkit-1.24.2-arm64.dmg",
-  "bundleId": null,
+  "bundleId": "tech.httptoolkit.desktop",
   "homepage": "https://httptoolkit.tech/",
   "fileName": "HttpToolkit-1.24.2-arm64.dmg",
   "sha": "4d030ff3f07fe16ef17cdc289a24a182b978a4c68c2dd6c40aedf0d5266a9123",

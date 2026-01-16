@@ -3,7 +3,7 @@
   "description": "Keyboard configurator",
   "version": "3.0.0",
   "url": "https://github.com/the-via/releases/releases/download/v3.0.0/via-3.0.0-mac.dmg",
-  "bundleId": null,
+  "bundleId": "org.via.configurator",
   "homepage": "https://caniusevia.com/",
   "fileName": "via-3.0.0-mac.dmg",
   "sha": "30f9f81154a8ee9c0cf19f4fb1a3d6ca9a448f765122845db1e190b9f583d16b",

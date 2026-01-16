@@ -3,7 +3,7 @@
   "description": "Home Theater PC media player",
   "version": "1.71.1.346",
   "url": "https://intunebrew.blob.core.windows.net/pkg/plex_htpc_1.71.1.346.pkg",
-  "bundleId": null,
+  "bundleId": "tv.plex.htpc",
   "homepage": "https://www.plex.tv/",
   "fileName": "plex_htpc_1.71.1.346.pkg",
   "type": "app",

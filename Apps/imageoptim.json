@@ -3,7 +3,7 @@
   "description": "Tool to optimise images to a smaller size",
   "version": "1.9.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/imageoptim_1.9.3.pkg",
-  "bundleId": null,
+  "bundleId": "net.pornel.ImageOptim",
   "homepage": "https://imageoptim.com/mac",
   "fileName": "ImageOptim1.9.3.tar.xz",
   "type": "app",

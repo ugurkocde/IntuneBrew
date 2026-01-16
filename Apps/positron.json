@@ -3,7 +3,7 @@
   "description": "Data science IDE",
   "version": "2026.01.0-147",
   "url": "https://intunebrew.blob.core.windows.net/pkg/positron_2026.01.0-147.pkg",
-  "bundleId": null,
+  "bundleId": "com.rstudio.positron",
   "homepage": "https://positron.posit.co/",
   "fileName": "positron_2026.01.0-147.pkg",
   "type": "app",

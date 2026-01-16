@@ -3,7 +3,7 @@
   "description": "Limitless clipboard",
   "version": "6.3.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/paste_6.3.3.pkg",
-  "bundleId": null,
+  "bundleId": "com.wiheads.paste-direct",
   "homepage": "https://pasteapp.io/",
   "fileName": "paste_6.3.3.pkg",
   "type": "app",

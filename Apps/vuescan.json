@@ -3,7 +3,7 @@
   "description": "App that provides drivers for older model scanners that are no longer supported",
   "version": "9.8.50",
   "url": "https://www.hamrick.com/files/vuea6498.dmg",
-  "bundleId": null,
+  "bundleId": "com.hamrick.vuescan",
   "homepage": "https://www.hamrick.com/",
   "fileName": "vuea6498.dmg",
   "sha": "19ff8e9c4b0f6fa5220784c09550f98d6ea682ce5dc3319dd03f5a71f19bfed2",

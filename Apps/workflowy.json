@@ -3,7 +3,7 @@
   "description": "Notetaking tool",
   "version": "4.3.2601150914",
   "url": "https://intunebrew.blob.core.windows.net/pkg/workflowy_4.3.2601150914.pkg",
-  "bundleId": null,
+  "bundleId": "com.workflowy.desktop",
   "homepage": "https://workflowy.com/downloads/mac/",
   "fileName": "workflowy_4.3.2601150914.pkg",
   "type": "app",

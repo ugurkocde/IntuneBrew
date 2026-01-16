@@ -3,7 +3,7 @@
   "description": "Comic viewer/reader",
   "version": "1.9.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/simple_comic_1.9.9.pkg",
-  "bundleId": null,
+  "bundleId": "com.dancingtortoise.simplecomic",
   "homepage": "https://github.com/MaddTheSane/Simple-Comic",
   "fileName": "simple_comic_1.9.9.pkg",
   "type": "app",

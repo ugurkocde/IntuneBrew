@@ -3,7 +3,7 @@
   "description": "Log analysis tool",
   "version": "3.19.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/chipmunk_log_analyzer__viewer_3.19.4.pkg",
-  "bundleId": null,
+  "bundleId": "org.nicola.chipmunk",
   "homepage": "https://github.com/esrlabs/chipmunk/",
   "fileName": "chipmunk_log_analyzer__viewer_3.19.4.pkg",
   "type": "app",

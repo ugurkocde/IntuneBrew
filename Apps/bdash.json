@@ -3,7 +3,7 @@
   "description": "Simple SQL Client for lightweight data analysis",
   "version": "1.31.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/bdash_1.31.0.pkg",
-  "bundleId": null,
+  "bundleId": "io.bdash",
   "homepage": "https://github.com/bdash-app/bdash",
   "fileName": "bdash_1.31.0.pkg",
   "type": "app",

@@ -3,7 +3,7 @@
   "description": "Clipboard manager",
   "version": "2.4.6",
   "url": "https://cleanclip.cc/releases/download/v2.4.6/CleanClip.dmg",
-  "bundleId": null,
+  "bundleId": "com.antiless.cleanclip.mac",
   "homepage": "https://cleanclip.cc/",
   "fileName": "CleanClip.dmg",
   "sha": "c7fb0c39dc89698a4ca4f80ce905478d965857d7c2629c7f2cb0ffbd14a4a851",

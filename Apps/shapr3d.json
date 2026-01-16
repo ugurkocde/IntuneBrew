@@ -3,7 +3,7 @@
   "description": "3D CAD software",
   "version": "5.1015.0.10234",
   "url": "https://download.shapr3d.com/mac/Shapr3D-5.1015.0.10234.dmg",
-  "bundleId": null,
+  "bundleId": "com.shapr3d.shapr",
   "homepage": "https://www.shapr3d.com/",
   "fileName": "Shapr3D-5.1015.0.10234.dmg",
   "sha": "0dcd36cf5bf82173cfe5be93652ab7bf0e97d669b7d8437dfe7e3cebf1ac7a29",

@@ -3,7 +3,7 @@
   "description": "Companion app for the Trezor hardware wallet",
   "version": "25.12.2",
   "url": "https://data.trezor.io/suite/releases/desktop/latest/Trezor-Suite-25.12.2-mac-arm64.dmg",
-  "bundleId": null,
+  "bundleId": "io.trezor.TrezorSuite",
   "homepage": "https://suite.trezor.io/",
   "fileName": "Trezor-Suite-25.12.2-mac-arm64.dmg",
   "sha": "afb52d2947d483bceed753ae6750c4cd38c2987886e1b63af55ba5b82a32ead3",

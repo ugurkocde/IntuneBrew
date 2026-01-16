@@ -3,7 +3,7 @@
   "description": "Visual communication platform",
   "version": "8.6.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/zight_8.6.0.pkg",
-  "bundleId": null,
+  "bundleId": "com.linebreak.CloudAppMacOSX",
   "homepage": "https://zight.com/",
   "fileName": "zight_8.6.0.pkg",
   "type": "app",

@@ -3,7 +3,7 @@
   "description": "Menu bar utility for toggling dark mode",
   "version": "3.1.0",
   "url": "https://github.com/r-thomson/Nightfall/releases/download/v3.1.0/Nightfall.dmg",
-  "bundleId": null,
+  "bundleId": "com.Lowtide.Nightfall",
   "homepage": "https://github.com/r-thomson/Nightfall/",
   "fileName": "Nightfall.dmg",
   "sha": "b98e86466bb89b04b9f5d3f98e4b74c03950052e8821b515ec1ea0c7f71bef6a",

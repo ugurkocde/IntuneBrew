@@ -3,7 +3,7 @@
   "description": "Open and interact with data visualisations built in Tableau Desktop",
   "version": "2025.3.1",
   "url": "https://downloads.tableau.com/esdalt/2025.3.1/TableauReader-2025-3-1-arm64.pkg",
-  "bundleId": null,
+  "bundleId": "com.tableausoftware.FLEXNet.",
   "homepage": "https://www.tableau.com/products/reader",
   "fileName": "TableauReader-2025-3-1-arm64.pkg",
   "type": "pkg",

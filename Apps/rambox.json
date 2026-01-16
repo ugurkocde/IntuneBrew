@@ -3,7 +3,7 @@
   "description": "Workspace simplifier - to organize your workspace and boost your productivity",
   "version": "2.5.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/rambox_2.5.2.pkg",
-  "bundleId": null,
+  "bundleId": "com.grupovrs.ramboxce.helper",
   "homepage": "https://rambox.app/",
   "fileName": "rambox_2.5.2.pkg",
   "type": "app",

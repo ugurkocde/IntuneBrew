@@ -3,7 +3,7 @@
   "description": "Block your own access to distracting websites",
   "version": "4.0.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/selfcontrol_4.0.2.pkg",
-  "bundleId": null,
+  "bundleId": "org.eyebeam.SelfControl",
   "homepage": "https://selfcontrolapp.com/",
   "fileName": "selfcontrol_4.0.2.pkg",
   "type": "app",

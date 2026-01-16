@@ -3,7 +3,7 @@
   "description": "WYSIWYG LaTeX editor",
   "version": "1.28.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/compositor_1.28.0.pkg",
-  "bundleId": null,
+  "bundleId": "com.microlarge.Compositor",
   "homepage": "https://compositorapp.com/",
   "fileName": "Compositor_1.28.0.zip",
   "type": "app",

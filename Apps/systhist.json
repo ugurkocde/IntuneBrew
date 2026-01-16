@@ -3,7 +3,7 @@
   "description": "Lists full system and security update installation history",
   "version": "1.21",
   "url": "https://intunebrew.blob.core.windows.net/pkg/systhist_1.21.pkg",
-  "bundleId": null,
+  "bundleId": "co.eclecticlight.SystHist",
   "homepage": "https://eclecticlight.co/lockrattler-systhist/",
   "fileName": "systhist_1.21.pkg",
   "type": "app",

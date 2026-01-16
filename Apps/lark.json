@@ -3,7 +3,7 @@
   "description": "Project management software",
   "version": "7.59.12",
   "url": "https://sf16-sg.larksuitecdn.com/obj/lark-artifact-storage/6a063d43/Lark-darwin_arm64-7.59.12-signed.dmg",
-  "bundleId": null,
+  "bundleId": "com.electron.lark.helper",
   "homepage": "https://www.larksuite.com/",
   "fileName": "Lark-darwin_arm64-7.59.12-signed.dmg",
   "sha": "a5f73540c9b0549338ce0ae70b204b16ab700845d8924764e2330074a55654e6",

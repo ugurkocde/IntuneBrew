@@ -3,7 +3,7 @@
   "description": "Knowledge management for organisations",
   "version": "1.7.2",
   "url": "https://github.com/slab/desktop-releases/releases/download/v1.7.2/Slab-1.7.2-darwin-arm64.dmg",
-  "bundleId": null,
+  "bundleId": "com.slab.slab",
   "homepage": "https://slab.com/",
   "fileName": "Slab-1.7.2-darwin-arm64.dmg",
   "sha": "f26cc76229610e27b96a4ad286c590598105a2986e614faa83d1b3e8580f5056",

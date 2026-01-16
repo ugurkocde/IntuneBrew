@@ -3,7 +3,7 @@
   "description": "Helps you learn to play your instrument",
   "version": "4.1.2749",
   "url": "https://intunebrew.blob.core.windows.net/pkg/melodics_4.1.2749.pkg",
-  "bundleId": null,
+  "bundleId": "com.melodics.Melodics",
   "homepage": "https://melodics.com/",
   "fileName": "melodics_4.1.2749.pkg",
   "type": "app",

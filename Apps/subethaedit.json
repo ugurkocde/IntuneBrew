@@ -3,7 +3,7 @@
   "description": "Plain text and source editor",
   "version": "5.2.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/subethaedit_5.2.4.pkg",
-  "bundleId": null,
+  "bundleId": "de.codingmonkeys.SubEthaEdit",
   "homepage": "https://subethaedit.net/",
   "fileName": "subethaedit_5.2.4.pkg",
   "type": "app",

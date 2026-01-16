@@ -3,7 +3,7 @@
   "description": "Note-taking tool for visual learning",
   "version": "1.83.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/hepta_1.83.2.pkg",
-  "bundleId": null,
+  "bundleId": "app.hepta.desktop",
   "homepage": "https://heptabase.com/",
   "fileName": "hepta_1.83.2.pkg",
   "type": "app",

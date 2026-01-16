@@ -3,7 +3,7 @@
   "description": "Working time tracker",
   "version": "1.8.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/timescribe_1.8.0.pkg",
-  "bundleId": null,
+  "bundleId": "com.apple.TimeScribe",
   "homepage": "https://timescribe.app/",
   "fileName": "timescribe_1.8.0.pkg",
   "type": "app",

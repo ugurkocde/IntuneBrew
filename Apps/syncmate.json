@@ -3,7 +3,7 @@
   "description": "All-in-one sync tool",
   "version": "8.9.563",
   "url": "https://intunebrew.blob.core.windows.net/pkg/syncmate_8.9.563.pkg",
-  "bundleId": null,
+  "bundleId": "com.eltima.SyncMate.com.eltima.SyncMateService",
   "homepage": "https://mac.eltima.com/sync-mac.html",
   "fileName": "syncmate_8.9.563.pkg",
   "type": "app",

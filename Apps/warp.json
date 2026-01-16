@@ -3,7 +3,7 @@
   "description": "Rust-based terminal",
   "version": "0.2026.01.07.08.13.stable",
   "url": "https://releases.warp.dev/stable/v0.2026.01.07.08.13.stable/Warp.dmg",
-  "bundleId": null,
+  "bundleId": "dev.warp.Warp-Stable",
   "homepage": "https://www.warp.dev/",
   "fileName": "Warp.dmg",
   "category": "Developer Tools",

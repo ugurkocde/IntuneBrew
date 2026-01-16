@@ -3,7 +3,7 @@
   "description": "Mouse utility to add gesture functions and smooth scrolling to 3rd party mice",
   "version": "3.0.8",
   "url": "https://intunebrew.blob.core.windows.net/pkg/mac_mouse_fix_3.0.8.pkg",
-  "bundleId": null,
+  "bundleId": "com.nuebling.mac-mouse-fix.helper",
   "homepage": "https://macmousefix.com/",
   "fileName": "mac_mouse_fix_3.0.8.pkg",
   "type": "app",

@@ -3,7 +3,7 @@
   "description": "Tool that provides commands for working with selected text",
   "version": "2.8.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/wordservice_2.8.3.pkg",
-  "bundleId": null,
+  "bundleId": "com.devon-technologies.osx.WordService",
   "homepage": "https://www.devontechnologies.com/apps/freeware",
   "fileName": "wordservice_2.8.3.pkg",
   "type": "app",

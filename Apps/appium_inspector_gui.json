@@ -3,7 +3,7 @@
   "description": "GUI inspector for mobile apps",
   "version": "2026.1.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/appium_inspector_gui_2026.1.2.pkg",
-  "bundleId": null,
+  "bundleId": "io.appium.inspector",
   "homepage": "https://github.com/appium/appium-inspector/",
   "fileName": "appium_inspector_gui_2026.1.2.pkg",
   "type": "app",

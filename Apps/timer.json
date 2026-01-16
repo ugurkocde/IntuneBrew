@@ -3,7 +3,7 @@
   "description": "Stopwatch, alarm clock, and clock utility",
   "version": "9.0.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/timer_9.0.3.pkg",
-  "bundleId": null,
+  "bundleId": "com.apimac.Timer",
   "homepage": "https://www.apimac.com/mac/timer/",
   "fileName": "timer_9.0.3.pkg",
   "type": "app",

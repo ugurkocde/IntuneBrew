@@ -3,7 +3,7 @@
   "description": "Tool for working with messy data (previously Google Refine)",
   "version": "3.9.5",
   "url": "https://github.com/OpenRefine/OpenRefine/releases/download/3.9.5/openrefine-mac-3.9.5.dmg",
-  "bundleId": null,
+  "bundleId": "com.google.refine.Refine",
   "homepage": "https://openrefine.org/",
   "fileName": "openrefine-mac-3.9.5.dmg",
   "sha": "54b41c4e61bc1f2c9ceb55315b4a4e0f7f1a25ae22e87d1f7949b64343591f36",

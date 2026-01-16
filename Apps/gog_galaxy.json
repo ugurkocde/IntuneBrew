@@ -3,7 +3,7 @@
   "description": "Game client",
   "version": "2.0.93.53",
   "url": "https://gog-cdn-fastly.gog.com/open/galaxy/client/galaxy_client_2.0.93.53.pkg",
-  "bundleId": null,
+  "bundleId": "com.gog.galaxy.cef.renderer",
   "homepage": "https://www.gog.com/galaxy",
   "fileName": "galaxy_client_2.0.93.53.pkg",
   "type": "pkg",

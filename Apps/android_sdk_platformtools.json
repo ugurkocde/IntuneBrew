@@ -3,7 +3,7 @@
   "description": "Android SDK component",
   "version": "36.0.2",
   "url": "https://dl.google.com/android/repository/platform-tools_r36.0.2-darwin.zip",
-  "bundleId": null,
+  "bundleId": "com.google.android.platform-tools",
   "homepage": "https://developer.android.com/tools/releases/platform-tools",
   "fileName": "platform-tools_r36.0.2-darwin.zip",
   "type": "app",

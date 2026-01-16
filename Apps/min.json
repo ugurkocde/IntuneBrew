@@ -3,7 +3,7 @@
   "description": "Minimal browser that protects privacy",
   "version": "1.35.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/min_1.35.2.pkg",
-  "bundleId": null,
+  "bundleId": "com.electron.min",
   "homepage": "https://minbrowser.org/",
   "fileName": "min-v1.35.2-mac-arm64.zip",
   "type": "app",

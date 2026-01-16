@@ -3,7 +3,7 @@
   "description": "Batch image processor, resiser, and converter",
   "version": "3.3.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/squash_3.3.0.pkg",
-  "bundleId": null,
+  "bundleId": "com.realmacsoftware.squash",
   "homepage": "https://www.realmacsoftware.com/squash/",
   "fileName": "squash_3.3.0.pkg",
   "type": "app",

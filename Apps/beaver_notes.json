@@ -3,7 +3,7 @@
   "description": "Privacy-focused note-taking app",
   "version": "4.2.0",
   "url": "https://github.com/Beaver-Notes/Beaver-Notes/releases/download/4.2.0/Beaver-notes-4.2.0-universal.dmg",
-  "bundleId": null,
+  "bundleId": "com.danielerolli.beaver-notes",
   "homepage": "https://beavernotes.com/",
   "fileName": "Beaver-notes-4.2.0-universal.dmg",
   "sha": "adb9fc45a464fd055c90d4fdc87fa1b01a1db0f8ad87a8d28828e0509ed8d093",

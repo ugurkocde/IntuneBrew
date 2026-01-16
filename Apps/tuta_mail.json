@@ -3,7 +3,7 @@
   "description": "Email client",
   "version": "319.260107.1",
   "url": "https://app.tuta.com/desktop/tutanota-desktop-mac.dmg",
-  "bundleId": null,
+  "bundleId": "de.tutao.tutanota",
   "homepage": "https://tuta.com/",
   "fileName": "tutanota-desktop-mac.dmg",
   "sha": "a7a0a0737ff71583277ebad8bcb20b3331496a91dbd2c9c7db1e21f2fb658fe4",

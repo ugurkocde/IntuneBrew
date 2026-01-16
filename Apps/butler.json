@@ -3,7 +3,7 @@
   "description": "Arrange your tasks in a customisable configuration",
   "version": "4.4.8",
   "url": "https://manytricks.com/download/_do_not_hotlink_/butler448.dmg",
-  "bundleId": null,
+  "bundleId": "com.manytricks.Butler",
   "homepage": "https://manytricks.com/butler/",
   "fileName": "butler448.dmg",
   "sha": "b6877901f1c5b4d75cebe47fe5cecf461c1b424025b756e6b9efaa44ed9faf7f",

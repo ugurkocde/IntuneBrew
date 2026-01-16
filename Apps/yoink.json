@@ -3,7 +3,7 @@
   "description": "Drag and drop utility",
   "version": "3.6.109",
   "url": "https://intunebrew.blob.core.windows.net/pkg/yoink_3.6.109.pkg",
-  "bundleId": null,
+  "bundleId": "at.EternalStorms.Yoink",
   "homepage": "https://eternalstorms.at/yoink/mac/",
   "fileName": "yoink_3.6.109.pkg",
   "type": "app",

@@ -3,7 +3,7 @@
   "description": "Electronics design automation suite",
   "version": "9.0.7",
   "url": "https://github.com/KiCad/kicad-source-mirror/releases/download/9.0.7/kicad-unified-universal-9.0.7.dmg",
-  "bundleId": null,
+  "bundleId": "org.kicad-pcb.kicad",
   "homepage": "https://kicad.org/",
   "fileName": "kicad-unified-universal-9.0.7.dmg",
   "sha": "449525e4ac119dc79a36b9a5aba5e6a269ecdc1905b94dce9eaf44ea45fd84c2",

@@ -3,7 +3,7 @@
   "description": "Tool to organise photo libraries",
   "version": "3.2.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/powerphotos_3.2.2.pkg",
-  "bundleId": null,
+  "bundleId": "com.fatcatsoftware.PowerPhotos",
   "homepage": "https://www.fatcatsoftware.com/powerphotos/",
   "fileName": "powerphotos_3.2.2.pkg",
   "type": "app",

@@ -3,7 +3,7 @@
   "description": "Rename a list of files quickly",
   "version": "3.4.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/namechanger_3.4.4.pkg",
-  "bundleId": null,
+  "bundleId": "com.mrrsoftware.NameChanger",
   "homepage": "https://mrrsoftware.com/namechanger/",
   "fileName": "namechanger_3.4.4.pkg",
   "type": "app",

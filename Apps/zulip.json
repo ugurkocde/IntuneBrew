@@ -3,7 +3,7 @@
   "description": "Desktop client for the Zulip team chat platform",
   "version": "5.12.3",
   "url": "https://github.com/zulip/zulip-desktop/releases/download/v5.12.3/Zulip-5.12.3-arm64.dmg",
-  "bundleId": null,
+  "bundleId": "org.zulip.zulip-electron.helper",
   "homepage": "https://zulipchat.com/apps/",
   "fileName": "Zulip-5.12.3-arm64.dmg",
   "sha": "d2fe145f0d226ba124945e25f9c9a16051e61e15fc489f20a1ce15f22c96b699",

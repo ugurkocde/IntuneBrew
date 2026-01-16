@@ -3,7 +3,7 @@
   "description": "Extended attribute editor",
   "version": "1.7",
   "url": "https://intunebrew.blob.core.windows.net/pkg/xattred_1.7.pkg",
-  "bundleId": null,
+  "bundleId": "co.eclecticlight.xattred",
   "homepage": "https://eclecticlight.co/xattred-sandstrip-xattr-tools/",
   "fileName": "xattred_1.7.pkg",
   "type": "app",

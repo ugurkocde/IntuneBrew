@@ -3,7 +3,7 @@
   "description": "Utility to move and zoom windows\u2014on one display",
   "version": "4.4.1",
   "url": "https://manytricks.com/download/_do_not_hotlink_/moom441.dmg",
-  "bundleId": null,
+  "bundleId": "com.manytricks.Moom",
   "homepage": "https://manytricks.com/moom/",
   "fileName": "moom441.dmg",
   "sha": "a5b3d2ea55f4c52ddbbc49f8a64104c3dadaab2cd9edd638a9e8d1b1e9bef525",

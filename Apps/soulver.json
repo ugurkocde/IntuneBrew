@@ -3,7 +3,7 @@
   "description": "Notepad with a built-in calculator",
   "version": "3.15.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/soulver_3.15.2.pkg",
-  "bundleId": null,
+  "bundleId": "app.soulver.mac",
   "homepage": "https://soulver.app/",
   "fileName": "soulver_3.15.2.pkg",
   "type": "app",

@@ -3,7 +3,7 @@
   "description": "Email client",
   "version": "1038.0.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/superhuman_1038.0.9.pkg",
-  "bundleId": null,
+  "bundleId": "com.superhuman.mail",
   "homepage": "https://superhuman.com/",
   "fileName": "superhuman_1038.0.9.pkg",
   "type": "app",

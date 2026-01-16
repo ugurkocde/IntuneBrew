@@ -3,7 +3,7 @@
   "description": "Catalogue of hi-res music for streaming and download",
   "version": "8.1.0",
   "url": "https://desktop.qobuz.com/releases/darwin/arm64/bigsur/8.1.0-b019/Qobuz.dmg",
-  "bundleId": null,
+  "bundleId": "com.qobuz.QobuzDesktop",
   "homepage": "https://www.qobuz.com/applications",
   "fileName": "Qobuz.dmg",
   "sha": "446b5acf47dd4a0db7d03dfec5f3cc91ea946669535c5e700cdca72fa539a189",

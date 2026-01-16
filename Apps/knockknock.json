@@ -3,7 +3,7 @@
   "description": "Tool to show what is persistently installed on the computer",
   "version": "4.0.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/knockknock_4.0.3.pkg",
-  "bundleId": null,
+  "bundleId": "com.objective-see.KnockKnock",
   "homepage": "https://objective-see.org/products/knockknock.html",
   "fileName": "KnockKnock_4.0.3.zip",
   "type": "app",

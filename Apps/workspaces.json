@@ -3,7 +3,7 @@
   "description": "Workspace organising app",
   "version": "2.1.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/workspaces_2.1.5.pkg",
-  "bundleId": null,
+  "bundleId": "com.apptorium.Workspaces",
   "homepage": "https://www.apptorium.com/workspaces",
   "fileName": "workspaces_2.1.5.pkg",
   "type": "app",

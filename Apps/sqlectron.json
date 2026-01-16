@@ -3,7 +3,7 @@
   "description": "SQL client",
   "version": "1.39.0",
   "url": "https://github.com/sqlectron/sqlectron-gui/releases/download/v1.39.0/sqlectron-1.39.0-arm64.dmg",
-  "bundleId": null,
+  "bundleId": "org.nicola.sqlectron",
   "homepage": "https://sqlectron.github.io/",
   "fileName": "sqlectron-1.39.0-arm64.dmg",
   "sha": "c4eb68ce51cf0fadbe30c67ffc309c71832461132aaffa3abfaeeb8bc9a72265",

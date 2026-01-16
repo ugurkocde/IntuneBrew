@@ -3,7 +3,7 @@
   "description": "Programming language for software modelling",
   "version": "6.2.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/alloy_6.2.0.pkg",
-  "bundleId": null,
+  "bundleId": "com.nicola.Alloy",
   "homepage": "https://alloytools.org/",
   "fileName": "alloy-6.2.0-mac-aarch64.zip",
   "type": "app",

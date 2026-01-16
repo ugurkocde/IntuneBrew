@@ -3,7 +3,7 @@
   "description": "3D medical imaging reconstruction software",
   "version": "3.1.99998",
   "url": "https://github.com/invesalius/invesalius3/releases/download/v3.1.99998/InVesalius.3.1.99998.arm64.dmg",
-  "bundleId": null,
+  "bundleId": "br.gov.cti.invesalius",
   "homepage": "https://github.com/invesalius/invesalius3/",
   "fileName": "InVesalius.3.1.99998.arm64.dmg",
   "sha": "b5032dfb80af29efde4e58c9dc48b164c31335d8ef91f5b51dbeea95088f778f",

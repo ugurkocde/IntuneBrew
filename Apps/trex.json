@@ -3,7 +3,7 @@
   "description": "Easy to use text extraction tool",
   "version": "1.9.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/trex_1.9.1.pkg",
-  "bundleId": null,
+  "bundleId": "com.ameba.TRex",
   "homepage": "https://trex.ameba.co/",
   "fileName": "trex_1.9.1.pkg",
   "type": "app",

@@ -3,7 +3,7 @@
   "description": "Securely and anonymously share files, host websites, and chat with friends",
   "version": "2.6.3",
   "url": "https://onionshare.org/dist/2.6.3/OnionShare-2.6.3.dmg",
-  "bundleId": null,
+  "bundleId": "org.onionshare.onionshare",
   "homepage": "https://onionshare.org/",
   "fileName": "OnionShare-2.6.3.dmg",
   "sha": "ba0d7c7a79cc4d9253f9591db9872f45ebdf2e9ca751f873af1a4ffcef9d1a05",

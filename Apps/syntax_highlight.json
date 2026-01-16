@@ -3,7 +3,7 @@
   "description": "Quicklook extension for source files",
   "version": "2.1.27",
   "url": "https://intunebrew.blob.core.windows.net/pkg/syntax_highlight_2.1.27.pkg",
-  "bundleId": null,
+  "bundleId": "org.sbarex.SourceCodeSyntaxHighlight",
   "homepage": "https://github.com/sbarex/SourceCodeSyntaxHighlight",
   "fileName": "syntax_highlight_2.1.27.pkg",
   "type": "app",

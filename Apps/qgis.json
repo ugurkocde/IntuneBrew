@@ -3,7 +3,7 @@
   "description": "Geographic Information System",
   "version": "3.44.6",
   "url": "https://download.qgis.org/downloads/macos/pr/qgis_pr_final-3_44_6.dmg",
-  "bundleId": null,
+  "bundleId": "org.qgis.qgis",
   "homepage": "https://www.qgis.org/",
   "fileName": "qgis_pr_final-3_44_6.dmg",
   "sha": "aeb21c1b1659403e92c7efbc4c48b1a0c4f97f025bf62044d492e6b5931512c0",

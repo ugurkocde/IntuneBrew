@@ -3,7 +3,7 @@
   "description": "Tool to render realistic skies in real time on the screen",
   "version": "25.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/stellarium_25.4.pkg",
-  "bundleId": null,
+  "bundleId": "org.stellarium.Stellarium",
   "homepage": "https://stellarium.org/",
   "fileName": "stellarium_25.4.pkg",
   "type": "app",

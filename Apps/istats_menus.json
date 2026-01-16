@@ -3,7 +3,7 @@
   "description": "System monitoring app",
   "version": "7.20",
   "url": "https://intunebrew.blob.core.windows.net/pkg/istats_menus_7.20.pkg",
-  "bundleId": null,
+  "bundleId": "com.bjango.istatmenus7.extras",
   "homepage": "https://bjango.com/mac/istatmenus/",
   "fileName": "istats_menus_7.20.pkg",
   "type": "app",

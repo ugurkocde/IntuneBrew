@@ -3,7 +3,7 @@
   "description": "To-do & task list manager",
   "version": "8.0.02",
   "url": "https://ticktick-download-mac.s3.amazonaws.com/download/mac/TickTick_8.0.02_458.dmg",
-  "bundleId": null,
+  "bundleId": "com.TickTick.task.mac",
   "homepage": "https://www.ticktick.com/home",
   "fileName": "TickTick_8.0.02_458.dmg",
   "sha": "02d98ddc354855b035730c5f488edf8df4d908765dd5ad6568ccdd933b352a50",

@@ -3,7 +3,7 @@
   "description": null,
   "version": "1.8.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/backlog_1.8.0.pkg",
-  "bundleId": null,
+  "bundleId": "com.nicola.Backlog",
   "homepage": "https://github.com/czytelny/backlog",
   "fileName": "backlog_1.8.0.pkg",
   "type": "app",

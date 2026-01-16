@@ -3,7 +3,7 @@
   "description": "Displays all open files and sockets in use by all running processes",
   "version": "3.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/sloth_3.5.pkg",
-  "bundleId": null,
+  "bundleId": "org.sveinbjorn.Sloth",
   "homepage": "https://sveinbjorn.org/sloth",
   "fileName": "sloth_3.5.pkg",
   "type": "app",

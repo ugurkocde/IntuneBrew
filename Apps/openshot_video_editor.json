@@ -3,7 +3,7 @@
   "description": "Cross-platform video editor",
   "version": "3.4.0",
   "url": "https://github.com/OpenShot/openshot-qt/releases/download/v3.4.0/OpenShot-v3.4.0-x86_64.dmg",
-  "bundleId": null,
+  "bundleId": "openshot-qt",
   "homepage": "https://openshot.org/",
   "fileName": "OpenShot-v3.4.0-x86_64.dmg",
   "sha": "6e473a710e2995dd780e79a1e8a1c31751295db947c6cb1738d144b90c5cd0be",

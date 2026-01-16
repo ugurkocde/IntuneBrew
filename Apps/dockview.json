@@ -3,7 +3,7 @@
   "description": "Utility to preview application windows in the dock",
   "version": "1.7.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/dockview_1.7.3.pkg",
-  "bundleId": null,
+  "bundleId": "com.sergey-gerasimenko.DockView",
   "homepage": "https://noteifyapp.com/dockview/",
   "fileName": "dockview_1.7.3.pkg",
   "type": "app",

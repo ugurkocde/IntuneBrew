@@ -3,7 +3,7 @@
   "description": "Language and framework for policy as code",
   "version": "0.40.0",
   "url": "https://releases.hashicorp.com/sentinel/0.40.0/sentinel_0.40.0_darwin_arm64.zip",
-  "bundleId": null,
+  "bundleId": "com.getsentinel.sentinel",
   "homepage": "https://docs.hashicorp.com/sentinel",
   "fileName": "sentinel_0.40.0_darwin_arm64.zip",
   "type": "app",

@@ -3,7 +3,7 @@
   "description": "Hex editor focussing on speed",
   "version": "2.18.1",
   "url": "https://github.com/ridiculousfish/HexFiend/releases/download/v2.18.1/Hex_Fiend_2.18.1.dmg",
-  "bundleId": null,
+  "bundleId": "com.ridiculousfish.HexFiend",
   "homepage": "https://ridiculousfish.com/hexfiend/",
   "fileName": "Hex_Fiend_2.18.1.dmg",
   "sha": "837041623a21eaae59b9b6c0bb7f75533938ab96580861ee7e276bb926e0e076",

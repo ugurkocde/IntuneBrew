@@ -3,7 +3,7 @@
   "description": "Free streaming software designed for new streamers",
   "version": "0.114.8",
   "url": "https://live.release.spotlight.twitchsvc.net/installer/mac/twitchstudio.dmg",
-  "bundleId": null,
+  "bundleId": "com.twitch.spotlight",
   "homepage": "https://www.twitch.tv/broadcast/studio/",
   "fileName": "twitchstudio.dmg",
   "category": "Media",

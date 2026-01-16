@@ -3,7 +3,7 @@
   "description": "Control apps and web videos from your phone",
   "version": "2.7.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/remote_buddy_2.7.2.pkg",
-  "bundleId": null,
+  "bundleId": "com.iospirit.RemoteBuddy",
   "homepage": "https://www.iospirit.com/products/remotebuddy/",
   "fileName": "remote_buddy_2.7.2.pkg",
   "type": "app",

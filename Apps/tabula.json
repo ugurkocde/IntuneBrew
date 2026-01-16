@@ -3,7 +3,7 @@
   "description": "Tool for liberating data tables trapped inside PDF files",
   "version": "1.2.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/tabula_1.2.1.pkg",
-  "bundleId": null,
+  "bundleId": "org.nerdpower.tabula.Tabula",
   "homepage": "https://tabula.technology/",
   "fileName": "tabula_1.2.1.pkg",
   "type": "app",
