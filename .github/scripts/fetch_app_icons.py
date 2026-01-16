@@ -19,8 +19,12 @@ from io import BytesIO
 # Import the icon extraction module
 from extract_icon_from_app import extract_icon_from_url
 
-APPS_DIR = "Apps"
-LOGOS_DIR = "Logos"
+# Calculate repository root (script is in .github/scripts/)
+SCRIPT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.dirname(os.path.dirname(SCRIPT_DIR))
+
+APPS_DIR = os.path.join(REPO_ROOT, "Apps")
+LOGOS_DIR = os.path.join(REPO_ROOT, "Logos")
 TARGET_SIZE = (512, 512)
 
 
