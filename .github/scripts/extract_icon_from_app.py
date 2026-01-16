@@ -128,11 +128,20 @@ def extract_icon_from_dmg(dmg_url: str, app_name: str) -> Optional[Image.Image]:
         )
 
         if result.returncode != 0:
-            print(f"  hdiutil attach error: {result.stderr.decode()}")
+            stderr_msg = result.stderr.decode().strip() if result.stderr else "Unknown error"
+            print(f"  hdiutil attach error (code {result.returncode}): {stderr_msg}")
             return None
 
         # Parse plist output to get mount point
-        plist_data = plistlib.loads(result.stdout)
+        if not result.stdout:
+            print(f"  hdiutil returned no output")
+            return None
+
+        try:
+            plist_data = plistlib.loads(result.stdout)
+        except Exception as plist_err:
+            print(f"  Failed to parse hdiutil output: {plist_err}")
+            return None
         for entity in plist_data.get("system-entities", []):
             if "mount-point" in entity:
                 mount_point = entity["mount-point"]
@@ -321,10 +330,11 @@ def convert_icns_to_png(icns_path: str, temp_dir: str) -> Optional[Image.Image]:
         return None
 
 
-def download_file(url: str, dest_path: str, timeout: int = 120) -> bool:
+def download_file(url: str, dest_path: str, timeout: int = 300) -> bool:
     """Download a file from URL to destination path.
 
     Uses streaming download to handle large files efficiently.
+    Verifies downloaded size matches expected size.
     """
     try:
         response = requests.get(url, stream=True, timeout=timeout)
@@ -334,9 +344,22 @@ def download_file(url: str, dest_path: str, timeout: int = 120) -> bool:
         if total_size > 0:
             print(f"  File size: {total_size / (1024*1024):.1f} MB")
 
+        downloaded_size = 0
         with open(dest_path, 'wb') as f:
             for chunk in response.iter_content(chunk_size=8192):
                 f.write(chunk)
+                downloaded_size += len(chunk)
+
+        # Verify download completed
+        if total_size > 0 and downloaded_size != total_size:
+            print(f"  Download incomplete: got {downloaded_size} bytes, expected {total_size}")
+            return False
+
+        # Verify file exists and has content
+        actual_size = os.path.getsize(dest_path)
+        if actual_size < 1000:  # Less than 1KB is suspicious
+            print(f"  Downloaded file too small: {actual_size} bytes")
+            return False
 
         return True
     except requests.RequestException as e:
