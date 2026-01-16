@@ -19,7 +19,7 @@ import subprocess
 import tempfile
 import zipfile
 from typing import Optional
-from urllib.parse import unquote
+from urllib.parse import unquote, urlparse
 
 import requests
 from PIL import Image
@@ -39,13 +39,18 @@ def extract_icon_from_url(url: str, app_name: str) -> Optional[Image.Image]:
     if not url:
         return None
 
-    url_lower = url.lower()
+    # Parse URL to get the path without query parameters
+    parsed = urlparse(url)
+    path_lower = parsed.path.lower()
 
-    if url_lower.endswith('.pkg'):
+    # Also check query params for redirected downloads (e.g., ?file=something.dmg)
+    query_lower = parsed.query.lower() if parsed.query else ""
+
+    if path_lower.endswith('.pkg'):
         return extract_icon_from_pkg(url, app_name)
-    elif url_lower.endswith('.dmg'):
+    elif path_lower.endswith('.dmg') or '.dmg' in query_lower:
         return extract_icon_from_dmg(url, app_name)
-    elif url_lower.endswith('.zip'):
+    elif path_lower.endswith('.zip') or '.zip' in query_lower:
         return extract_icon_from_zip(url, app_name)
     else:
         print(f"  Unknown file type for URL: {url}")
@@ -120,11 +125,15 @@ def extract_icon_from_dmg(dmg_url: str, app_name: str) -> Optional[Image.Image]:
         if not download_file(dmg_url, dmg_path):
             return None
 
-        # Mount DMG
+        # Mount DMG (use yes to auto-accept any EULA prompts)
         print(f"  Mounting DMG...")
+
+        # First attempt: standard mount with EULA auto-accept via stdin
         result = subprocess.run(
-            ["hdiutil", "attach", "-nobrowse", "-quiet", "-plist", dmg_path],
-            capture_output=True
+            ["hdiutil", "attach", "-nobrowse", "-noverify", "-noautoopen", "-plist", dmg_path],
+            capture_output=True,
+            input=b"y\n" * 10,  # Send multiple 'y' responses for EULA prompts
+            timeout=120
         )
 
         if result.returncode != 0:
@@ -134,7 +143,8 @@ def extract_icon_from_dmg(dmg_url: str, app_name: str) -> Optional[Image.Image]:
 
         # Parse plist output to get mount point
         if not result.stdout:
-            print(f"  hdiutil returned no output")
+            # Some DMGs with EULAs may need a different approach
+            print(f"  hdiutil returned no output (possibly EULA-protected DMG)")
             return None
 
         try:
