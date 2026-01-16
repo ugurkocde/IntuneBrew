@@ -360,20 +360,34 @@ def download_file(url: str, dest_path: str, timeout: int = 300) -> bool:
 
     Uses streaming download to handle large files efficiently.
     Verifies downloaded size matches expected size.
+    Shows download progress for large files.
     """
+    import sys
+
     try:
         response = requests.get(url, stream=True, timeout=timeout)
         response.raise_for_status()
 
         total_size = int(response.headers.get('content-length', 0))
-        if total_size > 0:
-            log(f"  File size: {total_size / (1024*1024):.1f} MB")
+        total_mb = total_size / (1024*1024) if total_size > 0 else 0
 
         downloaded_size = 0
         with open(dest_path, 'wb') as f:
-            for chunk in response.iter_content(chunk_size=8192):
+            for chunk in response.iter_content(chunk_size=65536):  # 64KB chunks
                 f.write(chunk)
                 downloaded_size += len(chunk)
+
+                # Show download progress for files > 5MB
+                if total_size > 5 * 1024 * 1024:
+                    downloaded_mb = downloaded_size / (1024*1024)
+                    percent = (downloaded_size / total_size * 100) if total_size > 0 else 0
+                    sys.stdout.write(f"\r    Downloading: {downloaded_mb:.1f}/{total_mb:.1f} MB ({percent:.0f}%)")
+                    sys.stdout.flush()
+
+        # Clear download progress line
+        if total_size > 5 * 1024 * 1024:
+            sys.stdout.write("\r" + " " * 60 + "\r")
+            sys.stdout.flush()
 
         # Verify download completed
         if total_size > 0 and downloaded_size != total_size:

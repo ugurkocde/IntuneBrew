@@ -12,6 +12,10 @@ import argparse
 import os
 import sys
 import json
+
+# Force unbuffered output for real-time progress display
+sys.stdout.reconfigure(line_buffering=True) if hasattr(sys.stdout, 'reconfigure') else None
+os.environ['PYTHONUNBUFFERED'] = '1'
 import requests
 from urllib.parse import urlparse
 from PIL import Image
