@@ -1,0 +1,10 @@
+{
+  "name": "displayplacer",
+  "description": "Utility to configure multi-display resolutions and arrangements",
+  "version": "1.4.0",
+  "homepage": "https://github.com/jakehilborn/displayplacer",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/displayplacer_1.4.0_arm64.pkg",
+  "fileName": "displayplacer_1.4.0_arm64.pkg",
+  "bundledDependencies": [],
+  "binaryPath": "/usr/local/bin/displayplacer"
+}

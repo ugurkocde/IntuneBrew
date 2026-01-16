@@ -1,0 +1,13 @@
+{
+  "name": "the_silver_searcher",
+  "description": "Code-search similar to ack",
+  "version": "2.2.0",
+  "homepage": "https://geoff.greer.fm/ag/",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/the_silver_searcher_2.2.0_arm64.pkg",
+  "fileName": "the_silver_searcher_2.2.0_arm64.pkg",
+  "bundledDependencies": [
+    "pcre2",
+    "xz"
+  ],
+  "binaryPath": "/usr/local/bin/the_silver_searcher"
+}

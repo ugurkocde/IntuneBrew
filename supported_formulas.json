@@ -1,1 +1,10 @@
-{}
+{
+    "atuin": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/atuin.json",
+    "btop": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/btop.json",
+    "displayplacer": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/displayplacer.json",
+    "fastfetch": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/fastfetch.json",
+    "fzf": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/fzf.json",
+    "jq": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/jq.json",
+    "the_silver_searcher": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/the_silver_searcher.json",
+    "tree": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/tree.json"
+}

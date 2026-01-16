@@ -1,0 +1,10 @@
+{
+  "name": "tree",
+  "description": "Display directories as trees (with optional color/HTML output)",
+  "version": "2.2.1",
+  "homepage": "https://oldmanprogrammer.net/source.php?dir=projects/tree",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tree_2.2.1_arm64.pkg",
+  "fileName": "tree_2.2.1_arm64.pkg",
+  "bundledDependencies": [],
+  "binaryPath": "/usr/local/bin/tree"
+}
