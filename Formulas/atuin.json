@@ -6,5 +6,6 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/atuin_18.11.0_arm64.pkg",
   "fileName": "atuin_18.11.0_arm64.pkg",
   "bundledDependencies": [],
-  "binaryPath": "/usr/local/bin/atuin"
+  "binaryPath": "/usr/local/bin/atuin",
+  "bundleId": "com.intunebrew.formula.atuin"
 }

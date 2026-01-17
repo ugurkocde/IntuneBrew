@@ -9,5 +9,6 @@
     "pcre2",
     "xz"
   ],
-  "binaryPath": "/usr/local/bin/the_silver_searcher"
+  "binaryPath": "/usr/local/bin/the_silver_searcher",
+  "bundleId": "com.intunebrew.formula.the_silver_searcher"
 }
