@@ -1,12 +1,12 @@
 {
   "name": "Raspberry Pi Imager",
   "description": "Imaging utility to install operating systems to a microSD card",
-  "version": "2.0.3",
-  "url": "https://github.com/raspberrypi/rpi-imager/releases/download/v2.0.3/rpi-imager-v2.0.3.dmg",
+  "version": "2.0.4",
+  "url": "https://github.com/raspberrypi/rpi-imager/releases/download/v2.0.4/rpi-imager-v2.0.4.dmg",
   "bundleId": "com.raspberrypi.Raspberry Pi Imager",
   "homepage": "https://www.raspberrypi.com/software/",
-  "fileName": "rpi-imager-v2.0.3.dmg",
-  "sha": "d0d23d36beca095e22c80354ecf4ceb0c31baa3001a547ed12e0e5b4ee350367",
+  "fileName": "rpi-imager-v2.0.4.dmg",
+  "sha": "45065bc9f981444cba07914ac6b55a0cf21a8e9e9c815a55d847f1e84cca7e4e",
   "category": "Utilities",
   "publisher": "Raspberry Pi Foundation",
   "previous_version": "2.0.3"

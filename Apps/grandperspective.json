@@ -1,12 +1,12 @@
 {
   "name": "GrandPerspective",
   "description": "Graphically shows disk usage within a file system",
-  "version": "3.6.1",
-  "url": "https://downloads.sourceforge.net/grandperspectiv/grandperspective/3.6.1/GrandPerspective-3_6_1.dmg",
+  "version": "3.6.2",
+  "url": "https://downloads.sourceforge.net/grandperspectiv/grandperspective/3.6.2/GrandPerspective-3_6_2.dmg",
   "bundleId": "net.sourceforge.grandperspectiv",
   "homepage": "https://grandperspectiv.sourceforge.net/",
-  "fileName": "GrandPerspective-3_6_1.dmg",
-  "sha": "3a320532ae5759649f7083474d275762785c87786a478d303a704442876cd22f",
+  "fileName": "GrandPerspective-3_6_2.dmg",
+  "sha": "69dc20aea31642efd4936b52fa7596be8b8b4860657a16490220619f8c864304",
   "category": "Utilities",
   "publisher": "Erwin Bolwidt",
   "previous_version": "3.6.1"

@@ -1,12 +1,12 @@
 {
   "name": "Roam Research",
   "description": "Note-taking tool for networked thought",
-  "version": "0.0.29",
-  "url": "https://roam-electron-deploy.s3.amazonaws.com/Roam+Research-0.0.29-arm64.dmg",
+  "version": "0.0.30",
+  "url": "https://roam-electron-deploy.s3.amazonaws.com/Roam+Research-0.0.30-arm64.dmg",
   "bundleId": "com.roam-research.desktop-app",
   "homepage": "https://roamresearch.com/",
-  "fileName": "Roam+Research-0.0.29-arm64.dmg",
-  "sha": "9cea7e06e9a55e78ed5e99f4058f0abcde05f7833b15b3571375a04a3a555752",
+  "fileName": "Roam+Research-0.0.30-arm64.dmg",
+  "sha": "32f812076e68f591aae2273b8857d84e644b63445d372424030a292c3dd9f66a",
   "category": "Productivity",
   "publisher": "Roam Research, Inc.",
   "previous_version": "0.0.29"
