@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Application Support/discord" ]; then
     rm -f "$HOME/Library/Application Support/discord" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application%20Support/discord
+echo "Removing $HOME/Library/Application%20Support/discord..."
+if [ -d "$HOME/Library/Application%20Support/discord" ]; then
+    rm -rf "$HOME/Library/Application%20Support/discord" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application%20Support/discord" ]; then
+    rm -f "$HOME/Library/Application%20Support/discord" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.hnc.Discord
 echo "Removing $HOME/Library/Caches/com.hnc.Discord..."
 if [ -d "$HOME/Library/Caches/com.hnc.Discord" ]; then
