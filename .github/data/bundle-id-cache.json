@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-17T09:34:56.994Z",
+  "last_full_scan": "2026-01-17T10:34:29.131Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -742,9 +742,10 @@
       "name": "calibre"
     },
     "calmly_writer": {
-      "last_checked": "2026-01-15T13:08:55.547Z",
-      "bundle_id": "calmlywriter",
-      "status": "unknown",
+      "last_checked": "2026-01-17T10:34:29.112Z",
+      "bundle_id": "com.calmlywriter.CalmlyWriter",
+      "status": "verified",
+      "source": "file",
       "name": "Calmly Writer"
     },
     "camtasia": {
@@ -1735,9 +1736,10 @@
       "name": "Catch"
     },
     "cerebro": {
-      "last_checked": "2026-01-15T16:13:05.538Z",
-      "bundle_id": "cerebro",
-      "status": "unknown",
+      "last_checked": "2026-01-17T10:34:29.113Z",
+      "bundle_id": "com.cerebroapp.Cerebro",
+      "status": "verified",
+      "source": "file",
       "name": "Cerebro"
     },
     "chirp": {
@@ -2071,8 +2073,8 @@
       "name": "ELAN"
     },
     "electric_sheep": {
-      "last_checked": "2026-01-17T08:37:42.081Z",
-      "bundle_id": "org.electricsheep.electricSheep.*",
+      "last_checked": "2026-01-17T10:34:29.116Z",
+      "bundle_id": "org.electricsheep.ElectricSheep",
       "status": "verified",
       "source": "file",
       "name": "Electric Sheep"
@@ -2123,8 +2125,8 @@
       "name": "eM Client"
     },
     "enclave": {
-      "last_checked": "2026-01-17T08:37:42.083Z",
-      "bundle_id": "com.enclave.*",
+      "last_checked": "2026-01-17T10:34:29.116Z",
+      "bundle_id": "com.enclave.Enclave",
       "status": "verified",
       "source": "file",
       "name": "Enclave"
@@ -3177,9 +3179,10 @@
       "name": "ElectronMail"
     },
     "electrum": {
-      "last_checked": "2026-01-16T01:14:15.095Z",
-      "bundle_id": null,
-      "status": "unknown",
+      "last_checked": "2026-01-17T10:34:29.116Z",
+      "bundle_id": "org.electrum.electrum",
+      "status": "verified",
+      "source": "file",
       "name": "Electrum"
     },
     "etrecheck": {
@@ -3426,8 +3429,8 @@
       "name": "Goose"
     },
     "gpg_suite": {
-      "last_checked": "2026-01-17T08:37:42.094Z",
-      "bundle_id": "org.gpgtools.*",
+      "last_checked": "2026-01-17T10:34:29.118Z",
+      "bundle_id": "org.gpgtools.gpgmail",
       "status": "verified",
       "source": "file",
       "name": "GPG Suite"
@@ -4171,8 +4174,8 @@
       "name": "Kodi"
     },
     "krisp": {
-      "last_checked": "2026-01-17T08:37:42.118Z",
-      "bundle_id": "ai.krisp.krispMac*",
+      "last_checked": "2026-01-17T10:34:29.120Z",
+      "bundle_id": "ai.krisp.krispMac",
       "status": "verified",
       "source": "file",
       "name": "Krisp"
@@ -4598,8 +4601,8 @@
       "name": "MakeMKV"
     },
     "malwarebytes_for_mac": {
-      "last_checked": "2026-01-17T08:37:42.127Z",
-      "bundle_id": "com.malwarebytes.mbam.*",
+      "last_checked": "2026-01-17T10:34:29.121Z",
+      "bundle_id": "com.malwarebytes.mbam.frontend.application",
       "status": "verified",
       "source": "file",
       "name": "Malwarebytes for Mac"
@@ -4857,8 +4860,8 @@
       "name": "MiddleClick"
     },
     "milanote": {
-      "last_checked": "2026-01-17T08:37:42.131Z",
-      "bundle_id": "com.milanote.",
+      "last_checked": "2026-01-17T10:34:29.122Z",
+      "bundle_id": "com.milanote.app",
       "status": "verified",
       "source": "file",
       "name": "Milanote"
@@ -5116,8 +5119,8 @@
       "name": "Multi"
     },
     "multipass": {
-      "last_checked": "2026-01-17T08:37:42.136Z",
-      "bundle_id": "com.canonical.multipass.*",
+      "last_checked": "2026-01-17T10:34:29.122Z",
+      "bundle_id": "com.canonical.multipassgui",
       "status": "verified",
       "source": "file",
       "name": "Multipass"
@@ -5207,8 +5210,8 @@
       "name": "NAPS2"
     },
     "native_access": {
-      "last_checked": "2026-01-17T08:37:42.137Z",
-      "bundle_id": "com.native-instruments.Native Access",
+      "last_checked": "2026-01-17T10:34:29.123Z",
+      "bundle_id": "com.native-instruments.nativeaccess2",
       "status": "verified",
       "source": "file",
       "name": "Native Access"
@@ -5354,8 +5357,8 @@
       "name": "NoSQL Workbench"
     },
     "nota_gyazo_gif": {
-      "last_checked": "2026-01-17T08:37:42.142Z",
-      "bundle_id": "com.gyazo.pkg",
+      "last_checked": "2026-01-17T10:34:29.123Z",
+      "bundle_id": "com.gyazo.mac",
       "status": "verified",
       "source": "file",
       "name": "Nota Gyazo GIF"
@@ -5375,9 +5378,10 @@
       "name": "Notesnook"
     },
     "notesollama": {
-      "last_checked": "2026-01-17T08:37:42.143Z",
-      "bundle_id": "NotesOllama",
-      "status": "unknown",
+      "last_checked": "2026-01-17T10:34:29.123Z",
+      "bundle_id": "com.notesollama.NotesOllama",
+      "status": "verified",
+      "source": "file",
       "name": "NotesOllama"
     },
     "notion": {
@@ -5654,9 +5658,10 @@
       "name": "OpenRefine"
     },
     "openshot_video_editor": {
-      "last_checked": "2026-01-17T08:37:42.147Z",
-      "bundle_id": "openshot-qt",
-      "status": "unknown",
+      "last_checked": "2026-01-17T10:34:29.124Z",
+      "bundle_id": "org.openshot.OpenShot",
+      "status": "verified",
+      "source": "file",
       "name": "OpenShot Video Editor"
     },
     "opentoonz": {
@@ -5695,8 +5700,8 @@
       "name": "Optimus Player"
     },
     "oracle_virtualbox": {
-      "last_checked": "2026-01-17T08:37:42.148Z",
-      "bundle_id": "org.virtualbox.pkg.*",
+      "last_checked": "2026-01-17T10:34:29.124Z",
+      "bundle_id": "org.virtualbox.app.VirtualBox",
       "status": "verified",
       "source": "file",
       "name": "Oracle VirtualBox"
@@ -5723,8 +5728,8 @@
       "name": "Orion Browser"
     },
     "orka_cli": {
-      "last_checked": "2026-01-17T08:37:42.148Z",
-      "bundle_id": "com.macstadium.orka.pkg",
+      "last_checked": "2026-01-17T10:34:29.124Z",
+      "bundle_id": "com.macstadium.orka.cli",
       "status": "verified",
       "source": "file",
       "name": "Orka CLI"
@@ -5793,8 +5798,8 @@
       "name": "Paintbrush"
     },
     "pale_moon": {
-      "last_checked": "2026-01-17T08:37:42.150Z",
-      "bundle_id": "org.mozilla.pale moon",
+      "last_checked": "2026-01-17T10:34:29.124Z",
+      "bundle_id": "org.palemoon.PaleMoon",
       "status": "verified",
       "source": "file",
       "name": "Pale Moon"
@@ -6150,8 +6155,8 @@
       "name": "Private Internet Access"
     },
     "privileges": {
-      "last_checked": "2026-01-17T08:37:42.156Z",
-      "bundle_id": "corp.sap.privileges.pkg",
+      "last_checked": "2026-01-17T10:34:29.125Z",
+      "bundle_id": "corp.sap.privileges",
       "status": "verified",
       "source": "file",
       "name": "Privileges"
@@ -6241,8 +6246,8 @@
       "name": "Proxyman"
     },
     "ps_remote_play": {
-      "last_checked": "2026-01-17T08:37:42.158Z",
-      "bundle_id": "com.playstation.RemotePlay.pkg",
+      "last_checked": "2026-01-17T10:34:29.125Z",
+      "bundle_id": "com.playstation.RemotePlay",
       "status": "verified",
       "source": "file",
       "name": "PS Remote Play"
@@ -6339,8 +6344,8 @@
       "name": "qView"
     },
     "radio_silence": {
-      "last_checked": "2026-01-17T08:37:42.159Z",
-      "bundle_id": "com.radiosilenceapp.*",
+      "last_checked": "2026-01-17T10:34:29.125Z",
+      "bundle_id": "com.radiosilenceapp.client",
       "status": "verified",
       "source": "file",
       "name": "Radio Silence"
@@ -6381,8 +6386,8 @@
       "name": "RapidWeaver"
     },
     "raspberry_pi_imager": {
-      "last_checked": "2026-01-17T08:37:42.164Z",
-      "bundle_id": "com.raspberrypi.Raspberry Pi Imager",
+      "last_checked": "2026-01-17T10:34:29.125Z",
+      "bundle_id": "org.raspberrypi.imagingutility",
       "status": "verified",
       "source": "file",
       "name": "Raspberry Pi Imager"
@@ -6682,9 +6687,10 @@
       "name": "Rode Connect"
     },
     "roon": {
-      "last_checked": "2026-01-17T08:37:42.168Z",
-      "bundle_id": "RoonServer",
-      "status": "unknown",
+      "last_checked": "2026-01-17T10:34:29.126Z",
+      "bundle_id": "com.roonlabs.Roon",
+      "status": "verified",
+      "source": "file",
       "name": "Roon"
     },
     "rotato": {
@@ -6891,8 +6897,8 @@
       "name": "Sempliva Tiles"
     },
     "send_to_kindle": {
-      "last_checked": "2026-01-17T08:37:42.170Z",
-      "bundle_id": "com.amazon.SendToKindleMacInstaller.pkg",
+      "last_checked": "2026-01-17T10:34:29.126Z",
+      "bundle_id": "com.amazon.SendToKindle",
       "status": "verified",
       "source": "file",
       "name": "Send to Kindle"
@@ -6926,9 +6932,10 @@
       "name": "Session"
     },
     "session_manager_plugin_for_the_aws_cli": {
-      "last_checked": "2026-01-17T08:37:42.171Z",
-      "bundle_id": "session-manager-plugin",
-      "status": "unknown",
+      "last_checked": "2026-01-17T10:34:29.126Z",
+      "bundle_id": "com.amazon.sessionmanagerplugin",
+      "status": "verified",
+      "source": "file",
       "name": "Session Manager Plugin for the AWS CLI"
     },
     "setapp": {
@@ -7037,8 +7044,8 @@
       "name": "Simple Comic"
     },
     "simpledemviewer": {
-      "last_checked": "2026-01-17T08:37:42.173Z",
-      "bundle_id": "jp.jizoh.SDVr*",
+      "last_checked": "2026-01-17T10:34:29.127Z",
+      "bundle_id": "jp.jizoh.simpledemviewer",
       "status": "verified",
       "source": "file",
       "name": "SimpleDEMViewer"
@@ -7163,8 +7170,8 @@
       "name": "Sococo"
     },
     "sonic_visualiser": {
-      "last_checked": "2026-01-17T08:37:42.175Z",
-      "bundle_id": "org.sonicvisualiser.Sonic Visualiser",
+      "last_checked": "2026-01-17T10:34:29.127Z",
+      "bundle_id": "org.sonicvisualiser.SonicVisualiser",
       "status": "verified",
       "source": "file",
       "name": "Sonic Visualiser"
@@ -7233,8 +7240,8 @@
       "name": "Spitfire Audio"
     },
     "splashtop_business": {
-      "last_checked": "2026-01-17T08:37:42.176Z",
-      "bundle_id": "com.splashtop.splashtopBusiness.*",
+      "last_checked": "2026-01-17T10:34:29.127Z",
+      "bundle_id": "com.splashtop.stb.macosx",
       "status": "verified",
       "source": "file",
       "name": "Splashtop Business"
@@ -7275,8 +7282,8 @@
       "name": "Sproutcube Shortcat"
     },
     "spyder": {
-      "last_checked": "2026-01-17T08:37:42.177Z",
-      "bundle_id": "org.spyder-ide.Spyder.pkg*",
+      "last_checked": "2026-01-17T10:34:29.127Z",
+      "bundle_id": "org.spyder-ide.Spyder",
       "status": "verified",
       "source": "file",
       "name": "Spyder"
@@ -7331,8 +7338,8 @@
       "name": "squash"
     },
     "squirrel": {
-      "last_checked": "2026-01-17T08:37:42.178Z",
-      "bundle_id": "com.googlecode.rimeime.Squirrel.pkg",
+      "last_checked": "2026-01-17T10:34:29.127Z",
+      "bundle_id": "com.googlecode.rimeime.inputmethod.Squirrel",
       "status": "verified",
       "source": "file",
       "name": "Squirrel"
@@ -7611,8 +7618,8 @@
       "name": "SyncMate"
     },
     "syncovery": {
-      "last_checked": "2026-01-17T08:37:42.181Z",
-      "bundle_id": "com.company.Syncovery*",
+      "last_checked": "2026-01-17T10:34:29.128Z",
+      "bundle_id": "com.superflexible.Syncovery",
       "status": "verified",
       "source": "file",
       "name": "Syncovery"
@@ -7653,15 +7660,15 @@
       "name": "Tableau Desktop"
     },
     "tableau_public": {
-      "last_checked": "2026-01-17T08:37:42.183Z",
-      "bundle_id": "com.tableausoftware.FLEXNet.*",
+      "last_checked": "2026-01-17T10:34:29.128Z",
+      "bundle_id": "com.tableausoftware.tableaupublic",
       "status": "verified",
       "source": "file",
       "name": "Tableau Public"
     },
     "tableau_reader": {
-      "last_checked": "2026-01-17T08:37:42.183Z",
-      "bundle_id": "com.tableausoftware.FLEXNet.",
+      "last_checked": "2026-01-17T10:34:29.128Z",
+      "bundle_id": "com.tableausoftware.tableaureader",
       "status": "verified",
       "source": "file",
       "name": "Tableau Reader"
@@ -7779,9 +7786,10 @@
       "name": "TeX Live Utility"
     },
     "texshop": {
-      "last_checked": "2026-01-17T08:37:42.184Z",
-      "bundle_id": "TeXShop",
-      "status": "unknown",
+      "last_checked": "2026-01-17T10:34:29.128Z",
+      "bundle_id": "edu.uoregon.eugene.koch.TeXShop",
+      "status": "verified",
+      "source": "file",
       "name": "TeXShop"
     },
     "textexpander": {
@@ -7813,9 +7821,10 @@
       "name": "Thonny"
     },
     "threema": {
-      "last_checked": "2026-01-17T08:38:03.483Z",
-      "bundle_id": "threema-consumer-web",
-      "status": "unknown",
+      "last_checked": "2026-01-17T10:34:29.128Z",
+      "bundle_id": "ch.threema.threema",
+      "status": "verified",
+      "source": "file",
       "name": "Threema"
     },
     "thumbsup": {
@@ -7917,8 +7926,8 @@
       "name": "TopNotch"
     },
     "tor_browser": {
-      "last_checked": "2026-01-17T08:38:03.485Z",
-      "bundle_id": "org.mozilla.tor browser",
+      "last_checked": "2026-01-17T10:34:29.129Z",
+      "bundle_id": "org.torproject.torbrowser",
       "status": "verified",
       "source": "file",
       "name": "Tor Browser"
@@ -8309,8 +8318,8 @@
       "name": "VueScan"
     },
     "vyprvpn": {
-      "last_checked": "2026-01-17T08:38:03.493Z",
-      "bundle_id": "com.goldenfrog.VyprVPN*",
+      "last_checked": "2026-01-17T10:34:29.129Z",
+      "bundle_id": "com.goldenfrog.VyprVPN",
       "status": "verified",
       "source": "file",
       "name": "VyprVPN"
@@ -8428,8 +8437,8 @@
       "name": "WhatsApp"
     },
     "whatsize": {
-      "last_checked": "2026-01-17T08:38:03.495Z",
-      "bundle_id": "com.id-design.v8.whatsize.pkg",
+      "last_checked": "2026-01-17T10:34:29.130Z",
+      "bundle_id": "com.id-design.v7.whatsize",
       "status": "verified",
       "source": "file",
       "name": "WhatSize"
@@ -8505,8 +8514,8 @@
       "name": "Wirecast"
     },
     "wireshark": {
-      "last_checked": "2026-01-17T08:38:03.496Z",
-      "bundle_id": "org.wireshark.*",
+      "last_checked": "2026-01-17T10:34:29.130Z",
+      "bundle_id": "org.wireshark.Wireshark",
       "status": "verified",
       "source": "file",
       "name": "Wireshark"
