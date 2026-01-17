@@ -80,6 +80,9 @@ jobs:
           while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
             echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
 
+            # Clean up any failed rebase state
+            git rebase --abort 2>/dev/null || true
+
             # Stash any unstaged changes before rebasing
             git stash --include-untracked || true
 
@@ -91,6 +94,8 @@ jobs:
                 exit 0
               fi
             else
+              # Abort failed rebase and restore state
+              git rebase --abort 2>/dev/null || true
               git stash pop || true
             fi
 
