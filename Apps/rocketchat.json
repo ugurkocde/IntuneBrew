@@ -1,12 +1,12 @@
 {
   "name": "Rocket.Chat",
   "description": "Official desktop client for Rocket.Chat",
-  "version": "4.11.1",
-  "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/4.11.1/rocketchat-4.11.1-mac.dmg",
+  "version": "4.11.2",
+  "url": "https://github.com/RocketChat/Rocket.Chat.Electron/releases/download/4.11.2/rocketchat-4.11.1-mac.dmg",
   "bundleId": "chat.rocket",
   "homepage": "https://rocket.chat/",
   "fileName": "rocketchat-4.11.1-mac.dmg",
-  "sha": "76cfb5b1377aeb4a18738c21d174c7fd622b4d055acf1d0406d62ccb6b4b28a4",
+  "sha": "2cd2b626b52cc3be3bde5611c24951fe38498000d42fbdb9c9f15e053730c19d",
   "category": "Communication",
   "publisher": "Rocket.Chat Technologies Ltd.",
   "previous_version": "4.11.1"

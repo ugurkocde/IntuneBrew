@@ -5,7 +5,7 @@
   "url": "https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/gh-68/pkg/aptible-toolbelt-0.26.1%2B20260113191247-mac-os-x.10.15.7-1.pkg",
   "bundleId": "com.aptible.toolbelt",
   "homepage": "https://www.aptible.com/docs/reference/aptible-cli/overview",
-  "fileName": "aptible-toolbelt-0.26.1%2B20260113191247-mac-os-x.10.15.7-1.pkg",
+  "fileName": "aptible-toolbelt-0.26.1+20260113191247-mac-os-x.10.15.7-1.pkg",
   "type": "pkg",
   "sha": "239d8906aad720cd5d910c2a9d504be791bd67cdc6dbe27514aeb80b5cdb92c0",
   "category": "Developer Tools",

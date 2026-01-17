@@ -1,12 +1,12 @@
 {
   "name": "Default Folder X",
   "description": "Utility to enhance the Open and Save dialogs in applications",
-  "version": "6.2.4",
-  "url": "https://www.stclairsoft.com/download/DefaultFolderX-6.2.4.dmg",
+  "version": "6.2.5",
+  "url": "https://www.stclairsoft.com/download/DefaultFolderX-6.2.5.dmg",
   "bundleId": "com.stclairsoft.DefaultFolderX",
   "homepage": "https://www.stclairsoft.com/DefaultFolderX/",
-  "fileName": "DefaultFolderX-6.2.4.dmg",
-  "sha": "9f20d518f825be38dd413707d05f52375fa380780db6e32092cc338480f3346f",
+  "fileName": "DefaultFolderX-6.2.5.dmg",
+  "sha": "cea8a40417d5a205a6f96b97cd6470f161c7576fe796ddfb52d1aa307683f6b3",
   "category": "Utilities",
   "publisher": "St. Clair Software",
   "previous_version": "6.2.4"
