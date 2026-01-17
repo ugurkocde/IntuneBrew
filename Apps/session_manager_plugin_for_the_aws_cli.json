@@ -3,7 +3,7 @@
   "description": "Plugin for AWS CLI to start and end sessions that connect to managed instances",
   "version": "1.2.764.0",
   "url": "https://session-manager-downloads.s3.amazonaws.com/plugin/1.2.764.0/mac_arm64/session-manager-plugin.pkg",
-  "bundleId": "session-manager-plugin",
+  "bundleId": "com.amazon.sessionmanagerplugin",
   "homepage": "https://docs.aws.amazon.com/systems-manager/latest/userguide/session-manager-working-with-install-plugin.html",
   "fileName": "session-manager-plugin.pkg",
   "type": "pkg",

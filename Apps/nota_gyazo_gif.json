@@ -3,7 +3,7 @@
   "description": "Screenshot and screen recording tool",
   "version": "10.5.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/nota_gyazo_gif_10.5.0.pkg",
-  "bundleId": "com.gyazo.pkg",
+  "bundleId": "com.gyazo.mac",
   "homepage": "https://gyazo.com/",
   "fileName": "Gyazo-10.5.0.pkg",
   "type": "pkg_in_pkg",

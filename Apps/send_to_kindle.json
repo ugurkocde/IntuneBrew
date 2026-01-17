@@ -3,7 +3,7 @@
   "description": "Tool for sending personal documents to Kindles from Macs",
   "version": "1.1.1.259",
   "url": "https://sendtokindle.s3.amazonaws.com/SendToKindleForMac-installer.pkg",
-  "bundleId": "com.amazon.SendToKindleMacInstaller.pkg",
+  "bundleId": "com.amazon.SendToKindle",
   "homepage": "https://www.amazon.com/gp/sendtokindle/mac",
   "fileName": "SendToKindleForMac-installer.pkg",
   "type": "pkg",

@@ -3,7 +3,7 @@
   "description": "Safely build private networks without configs, firewalls or access control lists",
   "version": "2025.6.2",
   "url": "https://release.enclave.io/enclave_osx-installer-x64-stable-2025.6.2.pkg",
-  "bundleId": "com.enclave.*",
+  "bundleId": "com.enclave.Enclave",
   "homepage": "https://enclave.io/",
   "fileName": "enclave_osx-installer-x64-stable-2025.6.2.pkg",
   "type": "pkg",

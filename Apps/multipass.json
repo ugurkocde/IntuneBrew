@@ -3,7 +3,7 @@
   "description": "Orchestrates virtual Ubuntu instances",
   "version": "1.16.1",
   "url": "https://github.com/canonical/multipass/releases/download/v1.16.1/multipass-1.16.1+mac-Darwin.pkg",
-  "bundleId": "com.canonical.multipass.*",
+  "bundleId": "com.canonical.multipassgui",
   "homepage": "https://github.com/canonical/multipass/",
   "fileName": "multipass-1.16.1+mac-Darwin.pkg",
   "type": "pkg",

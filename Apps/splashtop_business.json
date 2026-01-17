@@ -3,7 +3,7 @@
   "description": "Remote access software",
   "version": "3.8.0.1",
   "url": "https://d17kmd0va0f0mp.cloudfront.net/macclient/STB/Splashtop_Business_Mac_INSTALLER_v3.8.0.1.dmg",
-  "bundleId": "com.splashtop.splashtopBusiness.*",
+  "bundleId": "com.splashtop.stb.macosx",
   "homepage": "https://www.splashtop.com/business",
   "fileName": "Splashtop_Business_Mac_INSTALLER_v3.8.0.1.dmg",
   "sha": "9dc906efdbe7acbee26cf9fdcc4f239a5196e30f54064b52025c65458fe4e207",

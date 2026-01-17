@@ -3,7 +3,7 @@
   "description": "Orchestration with Kubernetes on Apple",
   "version": "2.4.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/orka_cli_2.4.0.pkg",
-  "bundleId": "com.macstadium.orka.pkg",
+  "bundleId": "com.macstadium.orka.cli",
   "homepage": "https://orkadocs.macstadium.com/docs",
   "fileName": "orka.pkg",
   "type": "pkg_in_pkg",

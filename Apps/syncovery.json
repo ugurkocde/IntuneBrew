@@ -3,7 +3,7 @@
   "description": "File synchronisation and backup software",
   "version": "11.10.4",
   "url": "https://www.syncovery.com/release/SyncoveryMac11.10.4-Apple.dmg",
-  "bundleId": "com.company.Syncovery*",
+  "bundleId": "com.superflexible.Syncovery",
   "homepage": "https://www.syncovery.com/",
   "fileName": "SyncoveryMac11.10.4-Apple.dmg",
   "category": "Utilities",

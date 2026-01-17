@@ -3,7 +3,7 @@
   "description": "Open-source launcher",
   "version": "0.11.0",
   "url": "https://github.com/cerebroapp/cerebro/releases/download/v0.11.0/cerebro-0.11.0.dmg",
-  "bundleId": "cerebro",
+  "bundleId": "com.cerebroapp.Cerebro",
   "homepage": "https://cerebroapp.vercel.app/",
   "fileName": "cerebro-0.11.0.dmg",
   "sha": "9c26a044f6ae0d7c4f1df8056b88ff5014edb168d4cc13e00f0cad21948359fd",

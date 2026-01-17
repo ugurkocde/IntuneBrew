@@ -3,7 +3,7 @@
   "description": "Virtualiser for x86 hardware",
   "version": "7.2.4",
   "url": "https://download.virtualbox.org/virtualbox/7.2.4/VirtualBox-7.2.4-170995-macOSArm64.dmg",
-  "bundleId": "org.virtualbox.pkg.*",
+  "bundleId": "org.virtualbox.app.VirtualBox",
   "homepage": "https://www.virtualbox.org/",
   "fileName": "VirtualBox-7.2.4-170995-macOSArm64.dmg",
   "sha": "cef88951ef9da5e609724dca5d50ca8cc898f5f9f29ace529ca9b95305006fdd",
