@@ -5,7 +5,7 @@
   "url": "https://www.bitwig.com/dl/Bitwig%20Studio/5.3.13/installer_mac",
   "bundleId": "com.bitwig.studio",
   "homepage": "https://www.bitwig.com/",
-  "fileName": "installer_mac",
+  "fileName": "Bitwig-Studio-5.3.13.dmg",
   "sha": "ae0da0ec157bc79c7de34bf25a71063ea80c120347eb7bed4f90cb59023055b2",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:05:50Z",

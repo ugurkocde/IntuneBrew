@@ -8,6 +8,51 @@ import subprocess
 from datetime import datetime
 import hashlib
 import tempfile
+from urllib.parse import urlparse, unquote
+
+
+def get_filename_from_url(url, app_name=None, version=None, default_ext=".dmg"):
+    """
+    Extract a proper filename from a URL, handling query parameters and edge cases.
+
+    Args:
+        url: The download URL
+        app_name: Optional app name to use if filename cannot be determined
+        version: Optional version to include in generated filename
+        default_ext: Default extension if none can be determined (default: .dmg)
+
+    Returns:
+        A proper filename with extension
+    """
+    # Parse the URL to get just the path (without query params or fragments)
+    parsed = urlparse(url)
+    path = unquote(parsed.path)
+
+    # Get the basename from the path
+    filename = os.path.basename(path)
+
+    # Check if the filename has a valid extension
+    valid_extensions = ['.dmg', '.pkg', '.zip', '.app', '.tar.gz', '.tar.xz', '.tar.bz2', '.tbz']
+    has_valid_ext = any(filename.lower().endswith(ext) for ext in valid_extensions)
+
+    # If no valid extension found, try to construct a proper filename
+    if not has_valid_ext or not filename or filename in ['download', 'latest']:
+        if app_name:
+            # Construct filename from app name and version
+            safe_name = app_name.replace(' ', '-')
+            if version:
+                filename = f"{safe_name}-{version}{default_ext}"
+            else:
+                filename = f"{safe_name}{default_ext}"
+        else:
+            # Fallback: use the original basename but add extension if missing
+            if not filename or '?' in filename or filename in ['download', 'latest']:
+                filename = f"download{default_ext}"
+            elif '.' not in filename:
+                filename = f"{filename}{default_ext}"
+
+    return filename
+
 
 # List of apps that should preserve their fileName field (not be overwritten)
 preserve_filename_apps = [
@@ -1363,7 +1408,7 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         "url": url,
         "bundleId": bundle_id,
         "homepage": data["homepage"],
-        "fileName": os.path.basename(url)
+        "fileName": get_filename_from_url(url, app_name=data["name"][0], version=version)
     }
 
     if needs_packaging:
@@ -1599,7 +1644,7 @@ def main():
                             app_info["fileName"] = existing_data["fileName"]
                     else:
                         # For non-repackaged apps, update fileName to match the URL
-                        existing_data["fileName"] = os.path.basename(app_info["url"])
+                        existing_data["fileName"] = get_filename_from_url(app_info["url"], app_name=display_name, version=new_version)
                     
                     existing_data["previous_version"] = existing_data.get("version", "")
                     
@@ -1683,7 +1728,7 @@ def main():
                         print(f"⚠️ Preserving custom fileName for {display_name}")
                     else:
                         # For all other apps, update fileName to match the URL
-                        app_info["fileName"] = os.path.basename(new_url)
+                        app_info["fileName"] = get_filename_from_url(new_url, app_name=display_name, version=new_version)
                     if new_sha:
                         app_info["sha"] = new_sha
                     app_info["previous_version"] = previous_version
@@ -1730,7 +1775,7 @@ def main():
                         print(f"⚠️ Preserving custom fileName for {display_name}")
                     else:
                         # For all other apps, update fileName to match the URL
-                        app_info["fileName"] = os.path.basename(new_url)
+                        app_info["fileName"] = get_filename_from_url(new_url, app_name=display_name, version=new_version)
                     # Ensure fileName is preserved
                     app_info["previous_version"] = previous_version
 
@@ -1802,7 +1847,7 @@ def main():
                         print(f"⚠️ Preserving custom fileName for {display_name}")
                     else:
                         # For all other apps, update fileName to match the URL
-                        app_info["fileName"] = os.path.basename(new_url)
+                        app_info["fileName"] = get_filename_from_url(new_url, app_name=display_name, version=new_version)
                     app_info["previous_version"] = previous_version
 
             with open(file_path, "w") as f:
@@ -1847,7 +1892,7 @@ def main():
                         print(f"⚠️ Preserving custom fileName for {display_name}")
                     else:
                         # For all other apps, update fileName to match the URL
-                        app_info["fileName"] = os.path.basename(new_url)
+                        app_info["fileName"] = get_filename_from_url(new_url, app_name=display_name, version=new_version)
                     app_info["previous_version"] = previous_version
 
             with open(file_path, "w") as f:

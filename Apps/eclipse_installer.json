@@ -5,7 +5,7 @@
   "url": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2025-12/R/eclipse-inst-jre-mac-aarch64.dmg&r=1",
   "bundleId": "org.eclipse.oomph.setup.installer.product.with-jre.restricted",
   "homepage": "https://eclipse.org/",
-  "fileName": "eclipse-inst-jre-mac-aarch64.dmg&r=1",
+  "fileName": "Eclipse-Installer-4.38.dmg",
   "sha": "9a55892a74ee3248acd272a6f33fb4b39a398611244b4ad36db373154cdbdf94",
   "category": "Developer Tools",
   "publisher": "The Eclipse Foundation",

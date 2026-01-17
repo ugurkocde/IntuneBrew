@@ -5,7 +5,7 @@
   "url": "https://downloads.cloudflareclient.com/v1/download/macos/version/2025.10.186.0",
   "bundleId": "com.cloudflare.1dot1dot1dot1.macos",
   "homepage": "https://cloudflarewarp.com/",
-  "fileName": "2025.10.186.0",
+  "fileName": "Cloudflare-WARP-2025.10.186.0.dmg",
   "type": "pkg",
   "sha": "9e7a0e5cf4a938947235d082d3f600a012bc4b007efbea95c2066996b8cd8b65",
   "changelog": "https://developers.cloudflare.com/warp-client/release-notes/",

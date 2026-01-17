@@ -5,7 +5,7 @@
   "url": "https://api.badgeify.app/release/download/darwin/aarch64/1.10.0",
   "bundleId": "studio.techflow.badgeify",
   "homepage": "https://badgeify.app/",
-  "fileName": "1.10.0",
+  "fileName": "Badgeify-1.10.0.dmg",
   "sha": "28f3f12999aa21b968faef2b93f48de3fa0630da871e7b5d7ad88be7bd259cba",
   "changelog": "https://badgeify.app/changelog",
   "qa_info": {
