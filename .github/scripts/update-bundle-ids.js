@@ -1,8 +1,12 @@
 const fs = require('fs');
 const path = require('path');
-const OpenAI = require('openai');
 
-const openai = new OpenAI({ apiKey: process.env.OPENAI_KEY });
+// Only initialize OpenAI if API key is provided (allows running locally for cache sync)
+let openai = null;
+if (process.env.OPENAI_KEY) {
+  const OpenAI = require('openai');
+  openai = new OpenAI({ apiKey: process.env.OPENAI_KEY });
+}
 
 const APPS_DIR = path.join(__dirname, '../../Apps');
 const CACHE_FILE = path.join(__dirname, '../data/bundle-id-cache.json');
@@ -42,20 +46,42 @@ function saveCache(cache) {
   fs.writeFileSync(CACHE_FILE, JSON.stringify(cache, null, 2) + '\n');
 }
 
-function needsCheck(cache, appKey, forceRecheck) {
-  if (forceRecheck) return true;
+function needsCheck(cache, appKey, currentBundleId, forceRecheck) {
+  if (forceRecheck) return { needsApi: true, reason: 'force' };
 
+  // If the app already has a valid bundleId, no API call needed
+  // We'll still sync the cache but won't call the API
+  if (currentBundleId && typeof currentBundleId === 'string' && currentBundleId.includes('.')) {
+    const cached = cache.apps[appKey];
+    // If cache matches reality, skip entirely
+    if (cached && cached.bundle_id === currentBundleId && cached.status !== 'unknown') {
+      return { needsApi: false, needsSync: false, reason: 'already_verified' };
+    }
+    // Cache is out of sync - sync it without API call
+    return { needsApi: false, needsSync: true, reason: 'sync_cache' };
+  }
+
+  // No bundleId in file - check cache
   const cached = cache.apps[appKey];
-  if (!cached) return true;
+  if (!cached) return { needsApi: true, reason: 'not_in_cache' };
 
   // Re-check if it's been more than RECHECK_DAYS since last verification
   const lastChecked = new Date(cached.last_checked);
   const daysSince = (Date.now() - lastChecked.getTime()) / (1000 * 60 * 60 * 24);
 
-  return daysSince > RECHECK_DAYS;
+  if (daysSince > RECHECK_DAYS) {
+    return { needsApi: true, reason: 'stale_cache' };
+  }
+
+  return { needsApi: false, needsSync: false, reason: 'cached' };
 }
 
 async function getBundleId(appData) {
+  if (!openai) {
+    console.log('  -> Skipping API call (no OPENAI_KEY provided)');
+    return null;
+  }
+
   const prompt = `You are a macOS application expert. Search the web to find the EXACT macOS bundle identifier (CFBundleIdentifier) for this application.
 
 Application Name: ${appData.name}
@@ -151,17 +177,13 @@ async function processApps() {
   let processed = 0;
   let updated = 0;
   let skipped = 0;
+  let synced = 0;
   let errors = 0;
   let unknown = 0;
   let fromOverride = 0;
   const unknownApps = [];
 
   for (const file of files) {
-    if (processed >= maxApps) {
-      console.log(`\nReached max apps limit (${maxApps}), stopping.`);
-      break;
-    }
-
     const appKey = file.replace('.json', '');
     const filePath = path.join(APPS_DIR, file);
 
@@ -170,13 +192,34 @@ async function processApps() {
       const appData = JSON.parse(content);
 
       // Check if we need to verify this app
-      if (!needsCheck(cache, appKey, forceRecheck)) {
+      const checkResult = needsCheck(cache, appKey, appData.bundleId, forceRecheck);
+
+      if (!checkResult.needsApi && !checkResult.needsSync) {
         skipped++;
         continue;
       }
 
+      // If we just need to sync the cache (file has bundleId but cache is out of sync)
+      if (!checkResult.needsApi && checkResult.needsSync) {
+        cache.apps[appKey] = {
+          last_checked: new Date().toISOString(),
+          bundle_id: appData.bundleId,
+          status: 'verified',
+          source: 'file',
+          name: appData.name
+        };
+        synced++;
+        continue;
+      }
+
+      // Need API call - check max limit
+      if (processed >= maxApps) {
+        console.log(`\nReached max apps limit (${maxApps}), stopping.`);
+        break;
+      }
+
       processed++;
-      console.log(`[${processed}] Processing: ${appData.name || appKey}`);
+      console.log(`[${processed}] Processing: ${appData.name || appKey} (${checkResult.reason})`);
 
       // Check for manual override first
       let newBundleId = null;
@@ -256,10 +299,11 @@ async function processApps() {
   console.log('='.repeat(50));
   console.log('Summary');
   console.log('='.repeat(50));
-  console.log(`Processed: ${processed}`);
+  console.log(`API calls made: ${processed}`);
   console.log(`Updated: ${updated}`);
   console.log(`From overrides: ${fromOverride}`);
-  console.log(`Skipped (cached): ${skipped}`);
+  console.log(`Cache synced (already had bundleId): ${synced}`);
+  console.log(`Skipped (already verified): ${skipped}`);
   console.log(`Unknown: ${unknown}`);
   console.log(`Errors: ${errors}`);
   console.log('='.repeat(50));

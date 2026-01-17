@@ -1,72 +1,7 @@
 [
   {
-    "key": "huly",
-    "name": "Huly",
-    "currentBundleId": "hc.hcengineering.Huly"
-  },
-  {
-    "key": "ibm_aspera_connect",
-    "name": "IBM Aspera Connect",
-    "currentBundleId": "com.ibm.software.aspera.connect"
-  },
-  {
-    "key": "ice",
-    "name": "Ice",
-    "currentBundleId": "com.jordanbaird.Ice"
-  },
-  {
-    "key": "iconset",
-    "name": "Iconset",
-    "currentBundleId": "io.iconset.app"
-  },
-  {
-    "key": "iexplorer",
-    "name": "iExplorer",
-    "currentBundleId": "com.macroplant.iExplorer"
-  },
-  {
-    "key": "iina",
-    "name": "IINA",
-    "currentBundleId": "com.colliderli.iina"
-  },
-  {
-    "key": "imagej",
-    "name": "ImageJ",
-    "currentBundleId": "net.imagej.ImageJ"
-  },
-  {
-    "key": "insta360_studio",
-    "name": "Insta360 Studio",
-    "currentBundleId": "com.insta360.studio"
-  },
-  {
-    "key": "intellidock",
-    "name": "IntelliDock",
-    "currentBundleId": "com.nicola.IntelliDock"
-  },
-  {
-    "key": "invesalius",
-    "name": "InVesalius",
-    "currentBundleId": "br.gov.cti.invesalius"
-  },
-  {
-    "key": "jami",
-    "name": "Jami",
-    "currentBundleId": "net.jami.jami"
-  },
-  {
-    "key": "jetbrains_pycharm_community_edition",
-    "name": "Jetbrains PyCharm Community Edition",
-    "currentBundleId": "com.jetbrains.pycharm.ce"
-  },
-  {
-    "key": "jitsi_meet",
-    "name": "Jitsi Meet",
-    "currentBundleId": "org.jitsi.jitsi-meet"
-  },
-  {
-    "key": "jumpshare",
-    "name": "Jumpshare",
-    "currentBundleId": "com.jumpshare.Jumpshare"
+    "key": "threema",
+    "name": "Threema",
+    "currentBundleId": "threema-consumer-web"
   }
 ]

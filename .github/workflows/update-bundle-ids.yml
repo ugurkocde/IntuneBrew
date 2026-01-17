@@ -50,8 +50,9 @@ jobs:
           node .github/scripts/update-bundle-ids.js | tee output.log
 
           # Extract stats from output
-          PROCESSED=$(grep -oP 'Processed: \K\d+' output.log || echo "0")
+          API_CALLS=$(grep -oP 'API calls made: \K\d+' output.log || echo "0")
           UPDATED=$(grep -oP 'Updated: \K\d+' output.log || echo "0")
+          SYNCED=$(grep -oP 'Cache synced.*: \K\d+' output.log || echo "0")
           SKIPPED=$(grep -oP 'Skipped.*: \K\d+' output.log || echo "0")
           UNKNOWN=$(grep -oP 'Unknown: \K\d+' output.log || echo "0")
           ERRORS=$(grep -oP 'Errors: \K\d+' output.log || echo "0")
@@ -61,9 +62,10 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Metric | Count |" >> $GITHUB_STEP_SUMMARY
           echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
-          echo "| Processed | $PROCESSED |" >> $GITHUB_STEP_SUMMARY
+          echo "| API calls made | $API_CALLS |" >> $GITHUB_STEP_SUMMARY
           echo "| Updated | $UPDATED |" >> $GITHUB_STEP_SUMMARY
-          echo "| Skipped (cached) | $SKIPPED |" >> $GITHUB_STEP_SUMMARY
+          echo "| Cache synced | $SYNCED |" >> $GITHUB_STEP_SUMMARY
+          echo "| Skipped (verified) | $SKIPPED |" >> $GITHUB_STEP_SUMMARY
           echo "| Unknown | $UNKNOWN |" >> $GITHUB_STEP_SUMMARY
           echo "| Errors | $ERRORS |" >> $GITHUB_STEP_SUMMARY
 
