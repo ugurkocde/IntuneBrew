@@ -1,77 +1,72 @@
 [
   {
-    "key": "gitfox",
-    "name": "Gitfox",
-    "currentBundleId": "com.bytieful.Gitfox-retail"
+    "key": "huly",
+    "name": "Huly",
+    "currentBundleId": "hc.hcengineering.Huly"
   },
   {
-    "key": "gitify",
-    "name": "Gitify",
-    "currentBundleId": "com.electron.gitify"
+    "key": "ibm_aspera_connect",
+    "name": "IBM Aspera Connect",
+    "currentBundleId": "com.ibm.software.aspera.connect"
   },
   {
-    "key": "godspeed",
-    "name": "Godspeed",
-    "currentBundleId": "com.godspeedapp.Godspeed"
+    "key": "ice",
+    "name": "Ice",
+    "currentBundleId": "com.jordanbaird.Ice"
   },
   {
-    "key": "goodsync",
-    "name": "GoodSync",
-    "currentBundleId": "com.sibersystems.goodsyncmac2000"
+    "key": "iconset",
+    "name": "Iconset",
+    "currentBundleId": "io.iconset.app"
   },
   {
-    "key": "google_web_designer",
-    "name": "Google Web Designer",
-    "currentBundleId": "com.google.WebDesigner"
+    "key": "iexplorer",
+    "name": "iExplorer",
+    "currentBundleId": "com.macroplant.iExplorer"
   },
   {
-    "key": "goose",
-    "name": "Goose",
-    "currentBundleId": "com.electron.goose"
+    "key": "iina",
+    "name": "IINA",
+    "currentBundleId": "com.colliderli.iina"
   },
   {
-    "key": "gpg_suite",
-    "name": "GPG Suite",
-    "currentBundleId": "org.gpgtools.*"
+    "key": "imagej",
+    "name": "ImageJ",
+    "currentBundleId": "net.imagej.ImageJ"
   },
   {
-    "key": "gpt_fdisk",
-    "name": "GPT fdisk",
-    "currentBundleId": "com.rodsbooks.pkg.gdisk"
+    "key": "insta360_studio",
+    "name": "Insta360 Studio",
+    "currentBundleId": "com.insta360.studio"
   },
   {
-    "key": "graphql_playground",
-    "name": "GraphQL Playground",
-    "currentBundleId": "cool.graph.playground.helper"
+    "key": "intellidock",
+    "name": "IntelliDock",
+    "currentBundleId": "com.nicola.IntelliDock"
   },
   {
-    "key": "guilded",
-    "name": "Guilded",
-    "currentBundleId": "com.electron.guilded"
+    "key": "invesalius",
+    "name": "InVesalius",
+    "currentBundleId": "br.gov.cti.invesalius"
   },
   {
-    "key": "headlamp",
-    "name": "Headlamp",
-    "currentBundleId": "com.kinvolk.headlamp"
+    "key": "jami",
+    "name": "Jami",
+    "currentBundleId": "net.jami.jami"
   },
   {
-    "key": "hepta",
-    "name": "Hepta",
-    "currentBundleId": "app.hepta.desktop"
+    "key": "jetbrains_pycharm_community_edition",
+    "name": "Jetbrains PyCharm Community Edition",
+    "currentBundleId": "com.jetbrains.pycharm.ce"
   },
   {
-    "key": "hidock",
-    "name": "HiDock",
-    "currentBundleId": "design.rafa.HiDock"
+    "key": "jitsi_meet",
+    "name": "Jitsi Meet",
+    "currentBundleId": "org.jitsi.jitsi-meet"
   },
   {
-    "key": "highlight",
-    "name": "Highlight",
-    "currentBundleId": "tv.medal.highlight"
-  },
-  {
-    "key": "hp_easy_admin",
-    "name": "HP Easy Admin",
-    "currentBundleId": "com.hp.hp-easy-admin"
+    "key": "jumpshare",
+    "name": "Jumpshare",
+    "currentBundleId": "com.jumpshare.Jumpshare"
   }
 ]

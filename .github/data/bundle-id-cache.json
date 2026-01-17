@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-16T14:03:56.190Z",
+  "last_full_scan": "2026-01-17T01:04:35.510Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -3487,6 +3487,349 @@
       "bundle_id": "com.hp.hp-easy-admin",
       "status": "unknown",
       "name": "HP Easy Admin"
+    },
+    "http_toolkit": {
+      "last_checked": "2026-01-17T00:28:20.996Z",
+      "bundle_id": "tech.httptoolkit.desktop",
+      "status": "verified",
+      "source": "api",
+      "name": "HTTP Toolkit"
+    },
+    "huggingchat": {
+      "last_checked": "2026-01-17T00:29:55.751Z",
+      "bundle_id": "cyrilzakka.HuggingChat-Mac",
+      "status": "verified",
+      "source": "api",
+      "name": "HuggingChat"
+    },
+    "huly": {
+      "last_checked": "2026-01-17T00:31:00.862Z",
+      "bundle_id": "hc.hcengineering.Huly",
+      "status": "unknown",
+      "name": "Huly"
+    },
+    "hyper": {
+      "last_checked": "2026-01-17T00:31:30.041Z",
+      "bundle_id": "co.zeit.hyper",
+      "status": "verified",
+      "source": "api",
+      "name": "Hyper"
+    },
+    "hyperkey": {
+      "last_checked": "2026-01-17T00:31:59.001Z",
+      "bundle_id": "com.knollsoft.Hyperkey",
+      "status": "verified",
+      "source": "api",
+      "name": "Hyperkey"
+    },
+    "ibm_aspera_connect": {
+      "last_checked": "2026-01-17T00:33:13.494Z",
+      "bundle_id": "com.ibm.software.aspera.connect",
+      "status": "unknown",
+      "name": "IBM Aspera Connect"
+    },
+    "ice": {
+      "last_checked": "2026-01-17T00:34:07.292Z",
+      "bundle_id": "com.jordanbaird.Ice",
+      "status": "unknown",
+      "name": "Ice"
+    },
+    "icon_composer": {
+      "last_checked": "2026-01-17T00:34:35.999Z",
+      "bundle_id": "com.apple.IconComposer",
+      "previous_bundle_id": "com.nicola.IconComposer",
+      "status": "updated",
+      "source": "api",
+      "name": "Icon Composer"
+    },
+    "iconjar": {
+      "last_checked": "2026-01-17T00:35:19.737Z",
+      "bundle_id": "com.iconjar.iconjar",
+      "status": "verified",
+      "source": "api",
+      "name": "IconJar"
+    },
+    "iconset": {
+      "last_checked": "2026-01-17T00:35:49.543Z",
+      "bundle_id": "io.iconset.app",
+      "status": "unknown",
+      "name": "Iconset"
+    },
+    "idagio": {
+      "last_checked": "2026-01-17T00:36:31.150Z",
+      "bundle_id": "com.idagio.desktop",
+      "status": "verified",
+      "source": "api",
+      "name": "IDAGIO"
+    },
+    "iexplorer": {
+      "last_checked": "2026-01-17T00:36:56.958Z",
+      "bundle_id": "com.macroplant.iExplorer",
+      "status": "unknown",
+      "name": "iExplorer"
+    },
+    "iina": {
+      "last_checked": "2026-01-17T00:37:55.553Z",
+      "bundle_id": "com.colliderli.iina",
+      "status": "unknown",
+      "name": "IINA"
+    },
+    "imagej": {
+      "last_checked": "2026-01-17T00:38:57.922Z",
+      "bundle_id": "net.imagej.ImageJ",
+      "status": "unknown",
+      "name": "ImageJ"
+    },
+    "imageoptim": {
+      "last_checked": "2026-01-17T00:39:32.188Z",
+      "bundle_id": "net.pornel.ImageOptim",
+      "status": "verified",
+      "source": "api",
+      "name": "ImageOptim"
+    },
+    "imazing": {
+      "last_checked": "2026-01-17T00:40:23.292Z",
+      "bundle_id": "com.DigiDNA.iMazing3Mac",
+      "previous_bundle_id": "com.DigiDNA.iMazing3.0.6.21166Mac",
+      "status": "updated",
+      "source": "api",
+      "name": "iMazing"
+    },
+    "imazing_converter": {
+      "last_checked": "2026-01-17T00:40:44.632Z",
+      "bundle_id": "com.DigiDNA.iMazingHEICConverterMac",
+      "status": "verified",
+      "source": "api",
+      "name": "iMazing Converter"
+    },
+    "imazing_profile_editor": {
+      "last_checked": "2026-01-17T00:41:02.548Z",
+      "bundle_id": "com.DigiDNA.iMazingProfileEditorMac",
+      "status": "verified",
+      "source": "api",
+      "name": "iMazing Profile Editor"
+    },
+    "imhex": {
+      "last_checked": "2026-01-17T00:41:32.740Z",
+      "bundle_id": "net.WerWolv.ImHex",
+      "status": "verified",
+      "source": "api",
+      "name": "ImHex"
+    },
+    "inkscape": {
+      "last_checked": "2026-01-17T00:41:50.135Z",
+      "bundle_id": "org.inkscape.Inkscape",
+      "status": "verified",
+      "source": "api",
+      "name": "Inkscape"
+    },
+    "input_source_pro": {
+      "last_checked": "2026-01-17T00:42:57.338Z",
+      "bundle_id": "com.runjuu.Input-Source-Pro",
+      "status": "verified",
+      "source": "api",
+      "name": "Input Source Pro"
+    },
+    "insomnia": {
+      "last_checked": "2026-01-17T00:43:34.212Z",
+      "bundle_id": "com.insomnia.app",
+      "status": "verified",
+      "source": "api",
+      "name": "Insomnia"
+    },
+    "insta360_studio": {
+      "last_checked": "2026-01-17T00:44:06.229Z",
+      "bundle_id": "com.insta360.studio",
+      "status": "unknown",
+      "name": "Insta360 Studio"
+    },
+    "integrity": {
+      "last_checked": "2026-01-17T00:44:34.986Z",
+      "bundle_id": "com.peacockmedia.integrity",
+      "status": "verified",
+      "source": "api",
+      "name": "Integrity"
+    },
+    "intellidock": {
+      "last_checked": "2026-01-17T00:45:38.396Z",
+      "bundle_id": "com.nicola.IntelliDock",
+      "status": "unknown",
+      "name": "IntelliDock"
+    },
+    "intellij_idea_community_edition": {
+      "last_checked": "2026-01-17T00:46:20.082Z",
+      "bundle_id": "com.jetbrains.intellij.ce",
+      "status": "verified",
+      "source": "api",
+      "name": "IntelliJ IDEA Community Edition"
+    },
+    "intellij_idea_ultimate": {
+      "last_checked": "2026-01-17T00:46:42.597Z",
+      "bundle_id": "com.jetbrains.intellij",
+      "status": "verified",
+      "source": "api",
+      "name": "IntelliJ IDEA Ultimate"
+    },
+    "invesalius": {
+      "last_checked": "2026-01-17T00:47:55.573Z",
+      "bundle_id": "br.gov.cti.invesalius",
+      "status": "unknown",
+      "name": "InVesalius"
+    },
+    "iris": {
+      "last_checked": "2026-01-17T00:49:22.464Z",
+      "bundle_id": "co.iristech.Iris",
+      "status": "verified",
+      "source": "api",
+      "name": "Iris"
+    },
+    "istats_menus": {
+      "last_checked": "2026-01-17T00:50:15.479Z",
+      "bundle_id": "com.bjango.istatmenus",
+      "previous_bundle_id": "com.bjango.istatmenus7.extras",
+      "status": "updated",
+      "source": "api",
+      "name": "iStats Menus"
+    },
+    "istherenet": {
+      "last_checked": "2026-01-17T00:51:36.887Z",
+      "bundle_id": "com.lowtechguys.IsThereNet",
+      "status": "verified",
+      "source": "api",
+      "name": "IsThereNet"
+    },
+    "iterm2": {
+      "last_checked": "2026-01-17T00:51:59.670Z",
+      "bundle_id": "com.googlecode.iterm2",
+      "status": "verified",
+      "source": "api",
+      "name": "iTerm2"
+    },
+    "itsycal": {
+      "last_checked": "2026-01-17T00:52:33.517Z",
+      "bundle_id": "com.mowglii.ItsycalApp",
+      "status": "verified",
+      "source": "api",
+      "name": "Itsycal"
+    },
+    "jabra_direct": {
+      "last_checked": "2026-01-17T00:53:05.253Z",
+      "bundle_id": "com.jabra.directonline",
+      "status": "verified",
+      "source": "api",
+      "name": "Jabra Direct"
+    },
+    "jami": {
+      "last_checked": "2026-01-17T00:54:19.314Z",
+      "bundle_id": "net.jami.jami",
+      "status": "unknown",
+      "name": "Jami"
+    },
+    "jamie": {
+      "last_checked": "2026-01-17T00:55:06.863Z",
+      "bundle_id": "ai.meetjamie.app",
+      "status": "verified",
+      "source": "api",
+      "name": "Jamie"
+    },
+    "jamovi": {
+      "last_checked": "2026-01-17T00:55:50.608Z",
+      "bundle_id": "org.jamovi.jamovi",
+      "status": "verified",
+      "source": "api",
+      "name": "jamovi"
+    },
+    "jasp": {
+      "last_checked": "2026-01-17T00:57:34.750Z",
+      "bundle_id": "org.jaspstats.jasp",
+      "previous_bundle_id": "org.jasp-stats.JASP",
+      "status": "updated",
+      "source": "api",
+      "name": "JASP"
+    },
+    "jellyfin": {
+      "last_checked": "2026-01-17T00:58:23.899Z",
+      "bundle_id": "org.jellyfin.JellyfinServer",
+      "previous_bundle_id": "Jellyfin.Server",
+      "status": "updated",
+      "source": "api",
+      "name": "Jellyfin"
+    },
+    "jetbrains_phpstorm": {
+      "last_checked": "2026-01-17T00:58:48.886Z",
+      "bundle_id": "com.jetbrains.PhpStorm",
+      "status": "verified",
+      "source": "api",
+      "name": "JetBrains PhpStorm"
+    },
+    "jetbrains_pycharm_community_edition": {
+      "last_checked": "2026-01-17T00:59:16.933Z",
+      "bundle_id": "com.jetbrains.pycharm.ce",
+      "status": "unknown",
+      "name": "Jetbrains PyCharm Community Edition"
+    },
+    "jetbrains_rider": {
+      "last_checked": "2026-01-17T00:59:40.149Z",
+      "bundle_id": "com.jetbrains.rider",
+      "status": "verified",
+      "source": "api",
+      "name": "JetBrains Rider"
+    },
+    "jetbrains_toolbox": {
+      "last_checked": "2026-01-17T01:00:20.126Z",
+      "bundle_id": "com.jetbrains.toolbox",
+      "status": "verified",
+      "source": "api",
+      "name": "JetBrains Toolbox"
+    },
+    "jiggler": {
+      "last_checked": "2026-01-17T01:01:09.371Z",
+      "bundle_id": "com.stick.app.jiggler",
+      "previous_bundle_id": "com.sticksoftware.Jiggler",
+      "status": "updated",
+      "source": "api",
+      "name": "Jiggler"
+    },
+    "jitsi_meet": {
+      "last_checked": "2026-01-17T01:02:03.280Z",
+      "bundle_id": "org.jitsi.jitsi-meet",
+      "status": "unknown",
+      "name": "Jitsi Meet"
+    },
+    "joplin": {
+      "last_checked": "2026-01-17T01:02:31.010Z",
+      "bundle_id": "net.cozic.joplin-desktop",
+      "status": "verified",
+      "source": "api",
+      "name": "Joplin"
+    },
+    "jump_desktop": {
+      "last_checked": "2026-01-17T01:03:08.539Z",
+      "bundle_id": "com.p5sys.jump.connect",
+      "status": "verified",
+      "source": "api",
+      "name": "Jump Desktop"
+    },
+    "jumpcut": {
+      "last_checked": "2026-01-17T01:03:39.710Z",
+      "bundle_id": "net.sf.Jumpcut",
+      "status": "verified",
+      "source": "api",
+      "name": "Jumpcut"
+    },
+    "jumpshare": {
+      "last_checked": "2026-01-17T01:04:05.470Z",
+      "bundle_id": "com.jumpshare.Jumpshare",
+      "status": "unknown",
+      "name": "Jumpshare"
+    },
+    "kaleidoscope": {
+      "last_checked": "2026-01-17T01:04:35.411Z",
+      "bundle_id": "com.blackpixel.kaleidoscope",
+      "previous_bundle_id": "app.kaleidoscope.uninstall_ksdiff",
+      "status": "updated",
+      "source": "api",
+      "name": "Kaleidoscope"
     }
   }
 }

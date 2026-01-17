@@ -3,7 +3,7 @@
   "description": "Spot and merge differences in text and image files or folders",
   "version": "6.4.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/kaleidoscope_6.4.1.pkg",
-  "bundleId": "app.kaleidoscope.uninstall_ksdiff",
+  "bundleId": "com.blackpixel.kaleidoscope",
   "homepage": "https://kaleidoscope.app/",
   "fileName": "Kaleidoscope-6.4.1-9379.app.zip",
   "type": "app",
