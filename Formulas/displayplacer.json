@@ -6,6 +6,5 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/displayplacer_1.4.0_arm64.pkg",
   "fileName": "displayplacer_1.4.0_arm64.pkg",
   "bundledDependencies": [],
-  "binaryPath": "/usr/local/bin/displayplacer",
-  "bundleId": "com.intunebrew.formula.displayplacer"
+  "binaryPath": "/usr/local/bin/displayplacer"
 }

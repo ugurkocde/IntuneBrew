@@ -6,6 +6,5 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/btop_1.4.6_arm64.pkg",
   "fileName": "btop_1.4.6_arm64.pkg",
   "bundledDependencies": [],
-  "binaryPath": "/usr/local/bin/btop",
-  "bundleId": "com.intunebrew.formula.btop"
+  "binaryPath": "/usr/local/bin/btop"
 }

@@ -8,6 +8,5 @@
   "bundledDependencies": [
     "oniguruma"
   ],
-  "binaryPath": "/usr/local/bin/jq",
-  "bundleId": "com.intunebrew.formula.jq"
+  "binaryPath": "/usr/local/bin/jq"
 }

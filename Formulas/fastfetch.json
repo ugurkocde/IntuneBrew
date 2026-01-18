@@ -8,6 +8,5 @@
   "bundledDependencies": [
     "yyjson"
   ],
-  "binaryPath": "/usr/local/bin/fastfetch",
-  "bundleId": "com.intunebrew.formula.fastfetch"
+  "binaryPath": "/usr/local/bin/fastfetch"
 }

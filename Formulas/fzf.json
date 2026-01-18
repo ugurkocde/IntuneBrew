@@ -6,6 +6,5 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/fzf_0.67.0_arm64.pkg",
   "fileName": "fzf_0.67.0_arm64.pkg",
   "bundledDependencies": [],
-  "binaryPath": "/usr/local/bin/fzf",
-  "bundleId": "com.intunebrew.formula.fzf"
+  "binaryPath": "/usr/local/bin/fzf"
 }

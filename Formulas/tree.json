@@ -6,6 +6,5 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/tree_2.2.1_arm64.pkg",
   "fileName": "tree_2.2.1_arm64.pkg",
   "bundledDependencies": [],
-  "binaryPath": "/usr/local/bin/tree",
-  "bundleId": "com.intunebrew.formula.tree"
+  "binaryPath": "/usr/local/bin/tree"
 }
