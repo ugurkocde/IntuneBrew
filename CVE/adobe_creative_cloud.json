@@ -1,7 +1,7 @@
 {
   "app_name": "Adobe Creative Cloud",
   "app_key": "adobe_creative_cloud",
-  "last_updated": "2026-01-17",
+  "last_updated": "2026-01-18",
   "total_cves": 38,
   "summary": {
     "critical": 10,
