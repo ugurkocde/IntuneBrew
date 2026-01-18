@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1226-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1227-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -323,18 +323,26 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-18 00:37 UTC*
+*Last checked: 2026-01-18 21:28 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.2 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
+| Rive | 0.8.4113 | 0.8.4137 |
+| MarkEdit | 1.28.0 | 1.29.0 |
+| Apifox | 2.8.1 | 2.8.2 |
+| FreeTube | 0.23.12 | 0.23.13 |
+| DBeaver Community Edition | 25.3.2 | 25.3.3 |
+| Karabiner Elements | 15.7.0 | 15.8.0 |
+| Apidog | 2.8.1 | 2.8.2 |
+| Badgeify | 1.10.1 | 1.11.0 |
+| Dataflare | 2.8.1 | 2.8.2 |
 | Caffeine | 1.6.2 | 1.1.4 |
-| Bitfocus Companion | 4.2.2 | 4.2.3 |
 | Multi | 0.538.2 | 3.0.1 |
-| Pacifist | 4.1.3 | 4.1.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -508,8 +516,8 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.6.1 |
 | <img src='Logos/anytype.png' width='32' height='32'> Anytype | 0.53.1 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.8.1 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.8.1 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.8.2 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.8.2 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.1 |
 | <img src='Logos/appflowy.png' width='32' height='32'> AppFlowy | 0.11.0 |
 | <img src='Logos/appgate_sdp_client_for_macos.png' width='32' height='32'> AppGate SDP Client for macOS | 6.6.0 |
@@ -543,7 +551,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/background_music.png' width='32' height='32'> Background Music | 0.4.3 |
 | <img src='Logos/backlog.png' width='32' height='32'> Backlog | 1.8.0 |
 | <img src='Logos/backuploupe.png' width='32' height='32'> BackupLoupe | 3.14.7 |
-| <img src='Logos/badgeify.png' width='32' height='32'> Badgeify | 1.10.1 |
+| <img src='Logos/badgeify.png' width='32' height='32'> Badgeify | 1.11.0 |
 | <img src='Logos/balsamiq_wireframes.png' width='32' height='32'> Balsamiq Wireframes | 4.8.6 |
 | <img src='Logos/bambu_studio.png' width='32' height='32'> Bambu Studio | 02.04.00.70 |
 | <img src='Logos/bankid_security_application_sweden.png' width='32' height='32'> BankID Security Application (Sweden) | 7.16.0 |
@@ -708,12 +716,12 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/darkmodebuddy.png' width='32' height='32'> DarkModeBuddy | 1.2 |
 | <img src='Logos/darktable.png' width='32' height='32'> darktable | 5.4.0 |
 | <img src='Logos/dash.png' width='32' height='32'> Dash | 23.0.2 |
-| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.8.1 |
+| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 2.8.2 |
 | <img src='Logos/datagraph.png' width='32' height='32'> DataGraph | 5.5 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2025.3.3 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2025.3.1 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.3.2 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 25.3.3 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 6.8.2 |
 | <img src='Logos/debookee.png' width='32' height='32'> Debookee | 8.2.0 |
 | <img src='Logos/deckset.png' width='32' height='32'> Deckset | 2.0.45 |
@@ -866,7 +874,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/freefilesync.png' width='32' height='32'> FreeFileSync | 14.6 |
 | <img src='Logos/freelens.png' width='32' height='32'> Freelens | 1.8.0 |
 | <img src='Logos/freemacsoft_appcleaner.png' width='32' height='32'> FreeMacSoft AppCleaner | 3.6.8 |
-| <img src='Logos/freetube.png' width='32' height='32'> FreeTube | 0.23.12 |
+| <img src='Logos/freetube.png' width='32' height='32'> FreeTube | 0.23.13 |
 | <img src='Logos/front.png' width='32' height='32'> Front | 3.67.6 |
 | <img src='Logos/fsmonitor.png' width='32' height='32'> FSMonitor | 1.2 |
 | <img src='Logos/fsnotes.png' width='32' height='32'> FSNotes | 6.10.2 |
@@ -961,6 +969,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/inkscape.png' width='32' height='32'> Inkscape | 1.4.3 |
 | <img src='Logos/input_source_pro.png' width='32' height='32'> Input Source Pro | 2.8.0 |
 | <img src='Logos/insomnia.png' width='32' height='32'> Insomnia | 12.3.0 |
+| ❌ Insta360 Link Controller | 2.2.1 |
 | <img src='Logos/insta360_studio.png' width='32' height='32'> Insta360 Studio | 5.8.8 |
 | <img src='Logos/integrity.png' width='32' height='32'> Integrity | 12.11.3 |
 | <img src='Logos/intellidock.png' width='32' height='32'> IntelliDock | 1.0 |
@@ -987,10 +996,10 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/joplin.png' width='32' height='32'> Joplin | 3.5.12 |
 | <img src='Logos/jump_desktop.png' width='32' height='32'> Jump Desktop | 9.1.9 |
 | <img src='Logos/jumpcut.png' width='32' height='32'> Jumpcut | 0.84 |
-| <img src='Logos/jumpshare.png' width='32' height='32'> Jumpshare | 3.4.21 |
+| <img src='Logos/jumpshare.png' width='32' height='32'> Jumpshare | 3.4.22 |
 | <img src='Logos/kaleidoscope.png' width='32' height='32'> Kaleidoscope | 6.4.1 |
 | <img src='Logos/kap.png' width='32' height='32'> Kap | 3.6.0 |
-| <img src='Logos/karabiner_elements.png' width='32' height='32'> Karabiner Elements | 15.7.0 |
+| <img src='Logos/karabiner_elements.png' width='32' height='32'> Karabiner Elements | 15.8.0 |
 | <img src='Logos/kdenlive.png' width='32' height='32'> Kdenlive | 25.12.1 |
 | <img src='Logos/keepassxc.png' width='32' height='32'> KeePassXC | 2.7.11 |
 | <img src='Logos/keeper_password_manager.png' width='32' height='32'> Keeper Password Manager | 17.5.0 |
@@ -1073,7 +1082,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/makemkv.png' width='32' height='32'> MakeMKV | 1.18.2 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.19.1.3534 |
 | <img src='Logos/marginnote.png' width='32' height='32'> MarginNote | 4.2.3 |
-| <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.28.0 |
+| <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.29.0 |
 | <img src='Logos/marsedit.png' width='32' height='32'> MarsEdit | 5.3.12 |
 | <img src='Logos/marta_file_manager.png' width='32' height='32'> Marta File Manager | 0.8.2 |
 | <img src='Logos/masscode.png' width='32' height='32'> massCode | 4.4.0 |
@@ -1114,7 +1123,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/mindmac.png' width='32' height='32'> MindMac | 1.9.28 |
 | <img src='Logos/mindmanager.png' width='32' height='32'> Mindmanager | 25.1.105 |
 | <img src='Logos/minecraft.png' width='32' height='32'> Minecraft | 2.1.3 |
-| <img src='Logos/minisim.png' width='32' height='32'> MiniSim | 0.9.0 |
+| <img src='Logos/minisim.png' width='32' height='32'> MiniSim | 0.9.1 |
 | <img src='Logos/minstaller.png' width='32' height='32'> mInstaller | 3.2.1 |
 | <img src='Logos/miro.png' width='32' height='32'> Miro | 0.11.125 |
 | <img src='Logos/mission_control_plus.png' width='32' height='32'> Mission Control Plus | 1.24 |
@@ -1354,11 +1363,11 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/retroarch.png' width='32' height='32'> RetroArch | 1.22.2 |
 | <img src='Logos/retrobatch.png' width='32' height='32'> Retrobatch | 2.3.1 |
 | <img src='Logos/rewind.png' width='32' height='32'> Rewind | 1.5310 |
-| <img src='Logos/rewritebar.png' width='32' height='32'> RewriteBar | 2.23.0 |
+| <img src='Logos/rewritebar.png' width='32' height='32'> RewriteBar | 2.23.1 |
 | <img src='Logos/rhinoceros.png' width='32' height='32'> Rhinoceros | 8.20.25157.13002 |
 | <img src='Logos/rightfont.png' width='32' height='32'> RightFont | 9.8 |
 | <img src='Logos/ringcentral.png' width='32' height='32'> RingCentral | 25.2.30 |
-| <img src='Logos/rive.png' width='32' height='32'> Rive | 0.8.4113 |
+| <img src='Logos/rive.png' width='32' height='32'> Rive | 0.8.4137 |
 | <img src='Logos/riverside_studio.png' width='32' height='32'> Riverside Studio | 1.18.2 |
 | <img src='Logos/rize.png' width='32' height='32'> Rize | 2.3.4 |
 | <img src='Logos/roam_research.png' width='32' height='32'> Roam Research | 0.0.30 |
@@ -1383,7 +1392,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/salesforce_cli.png' width='32' height='32'> Salesforce CLI | 2.118.20 |
 | <img src='Logos/sanesidebuttons.png' width='32' height='32'> SaneSideButtons | 1.4.1 |
 | <img src='Logos/santa.png' width='32' height='32'> Santa | 2025.12 |
-| <img src='Logos/sbarex_qlmarkdown.png' width='32' height='32'> sbarex QLMarkdown | 1.0.23 |
+| <img src='Logos/sbarex_qlmarkdown.png' width='32' height='32'> sbarex QLMarkdown | 1.0.24 |
 | <img src='Logos/sc_menu.png' width='32' height='32'> SC Menu | 2.0 |
 | <img src='Logos/scratch.png' width='32' height='32'> Scratch | 3.31.1 |
 | <img src='Logos/screaming_frog_seo_spider.png' width='32' height='32'> Screaming Frog SEO Spider | 23.2 |
