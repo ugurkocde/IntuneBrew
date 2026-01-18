@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1226-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -322,23 +322,19 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-17 19:29 UTC*
+*Last checked: 2026-01-18 00:37 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.2 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Rocket.Chat | 4.11.1 | 4.11.2 |
-| DockDoor | 1.30.1 | 1.31.1 |
-| Badgeify | 1.10.0 | 1.10.1 |
-| Joplin | 3.5.11 | 3.5.12 |
-| Beekeeper Studio | 5.5.3 | 5.5.4 |
 | Caffeine | 1.6.2 | 1.1.4 |
-| Default Folder X | 6.2.4 | 6.2.5 |
+| Bitfocus Companion | 4.2.2 | 4.2.3 |
 | Multi | 0.538.2 | 3.0.1 |
-| QGIS | 3.44.6 | 3.44.7 |
+| Pacifist | 4.1.3 | 4.1.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -522,7 +518,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/applite.png' width='32' height='32'> Applite | 1.3.1 |
 | <img src='Logos/apptivate.png' width='32' height='32'> Apptivate | 2.2.1 |
 | <img src='Logos/aptible_toolbelt.png' width='32' height='32'> Aptible Toolbelt | 0.26.1 |
-| <img src='Logos/arc.png' width='32' height='32'> Arc | 1.130.0 |
+| <img src='Logos/arc.png' width='32' height='32'> Arc | 1.130.1 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.5 |
 | <img src='Logos/archi.png' width='32' height='32'> Archi | 5.7.0 |
 | <img src='Logos/arduino_ide.png' width='32' height='32'> Arduino IDE | 2.3.7 |
@@ -578,7 +574,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/biscuit.png' width='32' height='32'> Biscuit | 1.2.33 |
 | <img src='Logos/bitbar.png' width='32' height='32'> BitBar | 1.10.1 |
 | <img src='Logos/bitbox.png' width='32' height='32'> BitBox | 4.49.0 |
-| <img src='Logos/bitfocus_companion.png' width='32' height='32'> Bitfocus Companion | 4.2.2 |
+| <img src='Logos/bitfocus_companion.png' width='32' height='32'> Bitfocus Companion | 4.2.3 |
 | <img src='Logos/bitrix24.png' width='32' height='32'> Bitrix24 | 20.0.28.90 |
 | <img src='Logos/bitwarden.png' width='32' height='32'> Bitwarden | 2025.12.1 |
 | <img src='Logos/bitwig_studio.png' width='32' height='32'> Bitwig Studio | 5.3.13 |
@@ -1243,7 +1239,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/overflow.png' width='32' height='32'> Overflow | 3.2.1 |
 | <img src='Logos/oversight.png' width='32' height='32'> OverSight | 2.4.0 |
 | <img src='Logos/owncloud.png' width='32' height='32'> ownCloud | 6.0.2.17506 |
-| <img src='Logos/pacifist.png' width='32' height='32'> Pacifist | 4.1.3 |
+| <img src='Logos/pacifist.png' width='32' height='32'> Pacifist | 4.1.4 |
 | <img src='Logos/packages.png' width='32' height='32'> Packages | 1.2.10 |
 | <img src='Logos/paintbrush.png' width='32' height='32'> Paintbrush | 2.6.0 |
 | <img src='Logos/pale_moon.png' width='32' height='32'> Pale Moon | 33.9.1 |
