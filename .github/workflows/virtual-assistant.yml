@@ -224,7 +224,10 @@ jobs:
       # Apply labels based on the analysis
       - name: Apply labels with colors
         if: env.PRIMARY_LABEL != ''
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
+        env:
+          ISSUE_TITLE_RAW: ${{ github.event.issue.title }}
+          ISSUE_BODY_RAW: ${{ github.event.issue.body }}
         with:
           script: |
             // Only apply one of the three allowed labels: bug, feature request, or feedback
@@ -234,8 +237,9 @@ jobs:
             let labels = [];
 
             // Check if this is an app request (adding new app to IntuneBrew)
-            const issueTitle = `${{ github.event.issue.title }}`.toLowerCase();
-            const issueBody = `${{ github.event.issue.body }}`.toLowerCase();
+            // Use environment variables to safely handle issue content with special characters
+            const issueTitle = (process.env.ISSUE_TITLE_RAW || '').toLowerCase();
+            const issueBody = (process.env.ISSUE_BODY_RAW || '').toLowerCase();
 
             const isAppRequest = (
               (issueTitle.includes('add') && (issueTitle.includes('app') || issueTitle.includes('intunebrew') || issueTitle.includes('application'))) ||
@@ -381,7 +385,9 @@ jobs:
             }
 
       - name: Post analysis summary
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
+        env:
+          ORIGINAL_ISSUE_TITLE: ${{ github.event.issue.title }}
         with:
           script: |
             // Get the analysis results from environment variables
@@ -453,7 +459,8 @@ jobs:
             let summaryBody = `# 🧠 Virtual Assistant Summary\n\n`;
 
             // Improve the issue title based on the analysis
-            const originalTitle = "${{ github.event.issue.title }}";
+            // Use environment variable to safely handle titles with special characters
+            const originalTitle = process.env.ORIGINAL_ISSUE_TITLE || '';
             let improvedTitle = originalTitle;
 
             // Use the AI-generated title directly if available
@@ -537,7 +544,7 @@ jobs:
             console.log('Posted enhanced analysis summary');
 
       - name: Assign issue to author
-        uses: actions/github-script@v6
+        uses: actions/github-script@v7
         with:
           script: |
             await github.rest.issues.addAssignees({
