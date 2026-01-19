@@ -17,7 +17,8 @@ jobs:
           echo "Triggering weekly fleet reports..."
 
           # Use INTUNEBREW_API_URL if set, otherwise default to production
-          API_BASE_URL="${INTUNEBREW_API_URL:-https://intunebrew.com/api}"
+          # Note: Must use www subdomain to avoid redirect that strips POST body
+          API_BASE_URL="${INTUNEBREW_API_URL:-https://www.intunebrew.com/api}"
 
           RESPONSE=$(curl -sL -w "\n%{http_code}" -X POST "${API_BASE_URL}/weekly-reports/send" \
             -H "Authorization: Bearer ${{ secrets.NOTIFICATIONS_API_KEY }}" \
