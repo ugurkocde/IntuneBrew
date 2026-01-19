@@ -17,58 +17,60 @@ fi
 echo "Stopping ExpressVPN if running..."
 pkill -f "ExpressVPN" 2>/dev/null || true
 
-# Unload service com.expressvpn.ExpressVPN.agent
-echo "Unloading service com.expressvpn.ExpressVPN.agent..."
-launchctl unload -w /Library/LaunchAgents/com.expressvpn.ExpressVPN.agent.plist 2>/dev/null || true
-launchctl unload -w /Library/LaunchDaemons/com.expressvpn.ExpressVPN.agent.plist 2>/dev/null || true
-launchctl unload -w ~/Library/LaunchAgents/com.expressvpn.ExpressVPN.agent.plist 2>/dev/null || true
+# Unload service com.express.vpn.daemon
+echo "Unloading service com.express.vpn.daemon..."
+launchctl unload -w /Library/LaunchAgents/com.express.vpn.daemon.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.express.vpn.daemon.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.express.vpn.daemon.plist 2>/dev/null || true
 
-# Remove /Library/Application Support/com.expressvpn.ExpressVPN
-echo "Removing /Library/Application Support/com.expressvpn.ExpressVPN..."
-if [ -d "/Library/Application Support/com.expressvpn.ExpressVPN" ]; then
-    rm -rf "/Library/Application Support/com.expressvpn.ExpressVPN" 2>/dev/null || true
-elif [ -f "/Library/Application Support/com.expressvpn.ExpressVPN" ]; then
-    rm -f "/Library/Application Support/com.expressvpn.ExpressVPN" 2>/dev/null || true
+# Unload service com.express.vpn.installhelper
+echo "Unloading service com.express.vpn.installhelper..."
+launchctl unload -w /Library/LaunchAgents/com.express.vpn.installhelper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.express.vpn.installhelper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.express.vpn.installhelper.plist 2>/dev/null || true
+
+# Kill application with bundle ID com.express.vpn if running
+echo "Stopping application with bundle ID com.express.vpn if running..."
+killall -9 "com.express.vpn" 2>/dev/null || true
+
+# Remove /Library/Application Support/com.express.vpn
+echo "Removing /Library/Application Support/com.express.vpn..."
+if [ -d "/Library/Application Support/com.express.vpn" ]; then
+    rm -rf "/Library/Application Support/com.express.vpn" 2>/dev/null || true
+elif [ -f "/Library/Application Support/com.express.vpn" ]; then
+    rm -f "/Library/Application Support/com.express.vpn" 2>/dev/null || true
 fi
 
-# Remove /Library/LaunchDaemons/com.expressvpn.expressvpnd.plist
-echo "Removing /Library/LaunchDaemons/com.expressvpn.expressvpnd.plist..."
-if [ -d "/Library/LaunchDaemons/com.expressvpn.expressvpnd.plist" ]; then
-    rm -rf "/Library/LaunchDaemons/com.expressvpn.expressvpnd.plist" 2>/dev/null || true
-elif [ -f "/Library/LaunchDaemons/com.expressvpn.expressvpnd.plist" ]; then
-    rm -f "/Library/LaunchDaemons/com.expressvpn.expressvpnd.plist" 2>/dev/null || true
+# Remove /Library/Preferences/com.express.vpn
+echo "Removing /Library/Preferences/com.express.vpn..."
+if [ -d "/Library/Preferences/com.express.vpn" ]; then
+    rm -rf "/Library/Preferences/com.express.vpn" 2>/dev/null || true
+elif [ -f "/Library/Preferences/com.express.vpn" ]; then
+    rm -f "/Library/Preferences/com.express.vpn" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.expressvpn.ExpressVPN
-echo "Removing $HOME/Library/Application Support/com.expressvpn.ExpressVPN..."
-if [ -d "$HOME/Library/Application Support/com.expressvpn.ExpressVPN" ]; then
-    rm -rf "$HOME/Library/Application Support/com.expressvpn.ExpressVPN" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.expressvpn.ExpressVPN" ]; then
-    rm -f "$HOME/Library/Application Support/com.expressvpn.ExpressVPN" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.express.vpn
+echo "Removing $HOME/Library/Application Support/com.express.vpn..."
+if [ -d "$HOME/Library/Application Support/com.express.vpn" ]; then
+    rm -rf "$HOME/Library/Application Support/com.express.vpn" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.express.vpn" ]; then
+    rm -f "$HOME/Library/Application Support/com.express.vpn" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/HTTPStorages/com.expressvpn.ExpressVPN
-echo "Removing $HOME/Library/HTTPStorages/com.expressvpn.ExpressVPN..."
-if [ -d "$HOME/Library/HTTPStorages/com.expressvpn.ExpressVPN" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/com.expressvpn.ExpressVPN" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/com.expressvpn.ExpressVPN" ]; then
-    rm -f "$HOME/Library/HTTPStorages/com.expressvpn.ExpressVPN" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.express.vpn
+echo "Removing $HOME/Library/Caches/com.express.vpn..."
+if [ -d "$HOME/Library/Caches/com.express.vpn" ]; then
+    rm -rf "$HOME/Library/Caches/com.express.vpn" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.express.vpn" ]; then
+    rm -f "$HOME/Library/Caches/com.express.vpn" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Logs/ExpressVPN
-echo "Removing $HOME/Library/Logs/ExpressVPN..."
-if [ -d "$HOME/Library/Logs/ExpressVPN" ]; then
-    rm -rf "$HOME/Library/Logs/ExpressVPN" 2>/dev/null || true
-elif [ -f "$HOME/Library/Logs/ExpressVPN" ]; then
-    rm -f "$HOME/Library/Logs/ExpressVPN" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Preferences/com.expressvpn.ExpressVPN.plist
-echo "Removing $HOME/Library/Preferences/com.expressvpn.ExpressVPN.plist..."
-if [ -d "$HOME/Library/Preferences/com.expressvpn.ExpressVPN.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.expressvpn.ExpressVPN.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.expressvpn.ExpressVPN.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.expressvpn.ExpressVPN.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.express.vpn
+echo "Removing $HOME/Library/Preferences/com.express.vpn..."
+if [ -d "$HOME/Library/Preferences/com.express.vpn" ]; then
+    rm -rf "$HOME/Library/Preferences/com.express.vpn" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.express.vpn" ]; then
+    rm -f "$HOME/Library/Preferences/com.express.vpn" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
