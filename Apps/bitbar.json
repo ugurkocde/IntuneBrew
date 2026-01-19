@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/bitbar_1.10.1.pkg",
   "bundleId": "com.matryer.BitBar",
   "homepage": "https://github.com/matryer/bitbar/",
-  "fileName": "BitBar.app.zip",
+  "fileName": "bitbar_1.10.1.pkg",
   "type": "app",
   "previous_version": "1.10.1",
   "sha": "288fa7f82ee9d37546cc967aa2b88b27cce5f0324b4dac4eef735c030363837c",

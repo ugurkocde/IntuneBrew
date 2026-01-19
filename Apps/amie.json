@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/amie_251228.0.0.pkg",
   "bundleId": "so.amie.electron-app",
   "homepage": "https://amie.so/",
-  "fileName": "Amie-251228.0.0-arm64-mac.zip",
+  "fileName": "amie_251228.0.0.pkg",
   "type": "app",
   "previous_version": "251228.0.0",
   "sha": "140207b026a6078e64d978885327795fb67732a37f7acb4bf4863eefea4faf9a",

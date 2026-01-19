@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/keyboard_maestro_11.0.4.pkg",
   "bundleId": "com.stairways.keyboardmaestro.editor",
   "homepage": "https://www.keyboardmaestro.com/main/",
-  "fileName": "keyboardmaestro-1104.zip",
+  "fileName": "keyboard_maestro_11.0.4.pkg",
   "type": "app",
   "previous_version": "11.0.4",
   "sha": "8f781106b9b8c3a4a9849d2345b7d259f6df5052e61342333428f1e6fb168fe9",

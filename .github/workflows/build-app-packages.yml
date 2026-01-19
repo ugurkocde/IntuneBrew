@@ -164,7 +164,7 @@ jobs:
                 # Update only URL and version without downloading
                 azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
                 current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" '.url = $url | .version = $version | .previous_version = $prev_version' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg filename "${app_name}_${version}.pkg" '.url = $url | .version = $version | .previous_version = $prev_version | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
                 echo "✅ JSON file updated (SHA preserved)"
               else
                 echo "⚠️ SHA missing in JSON file, downloading to calculate..."
@@ -182,13 +182,13 @@ jobs:
                   # Update JSON with SHA
                   azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
                   current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                  jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg sha "$file_hash" '.url = $url | .version = $version | .previous_version = $prev_version | .sha = $sha' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                  jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg sha "$file_hash" --arg filename "${app_name}_${version}.pkg" '.url = $url | .version = $version | .previous_version = $prev_version | .sha = $sha | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
                   echo "✅ JSON file updated with SHA256"
                 else
                   echo "❌ Could not download file to calculate SHA256"
                   azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
                   current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                  jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" '.url = $url | .version = $version | .previous_version = $prev_version' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                  jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg filename "${app_name}_${version}.pkg" '.url = $url | .version = $version | .previous_version = $prev_version | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
                   echo "⚠️ JSON file updated without SHA256"
                 fi
               fi

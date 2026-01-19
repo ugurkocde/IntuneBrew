@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/fsnotes_6.10.2.pkg",
   "bundleId": "co.fluder.FSNotes",
   "homepage": "https://fsnot.es/",
-  "fileName": "FSNotes_6.10.2.zip",
+  "fileName": "fsnotes_6.10.2.pkg",
   "type": "app",
   "previous_version": "6.10.2",
   "sha": "44cf7924c34a8aabf7f764a44ca1a9befcd99dbabc05985877adfe61985b92b2",

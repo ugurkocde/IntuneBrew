@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/front_3.67.6.pkg",
   "bundleId": "com.frontapp.Front",
   "homepage": "https://front.com/",
-  "fileName": "Front-3.67.6-arm64.zip",
+  "fileName": "front_3.67.6.pkg",
   "type": "app",
   "previous_version": "3.67.6",
   "sha": "71cd1f981489cde4183faf79c31290fdf9567aeb7091562ebe8d77af069a52dd",

@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/cloudytabs_2.0.pkg",
   "bundleId": "com.joshparnham.CloudyTabs",
   "homepage": "https://github.com/josh-/CloudyTabs/",
-  "fileName": "CloudyTabs.zip",
+  "fileName": "cloudytabs_2.0.pkg",
   "type": "app",
   "previous_version": "2.0",
   "sha": "57fffca97aa8aa9faa6ea8f5f9d163f648ada167b2a673f76eee3c28ae951416",

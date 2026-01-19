@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/devonthink_4.1.1.pkg",
   "bundleId": "com.devon-technologies.think",
   "homepage": "https://www.devontechnologies.com/apps/devonthink",
-  "fileName": "DEVONthink.app.zip",
+  "fileName": "devonthink_4.1.1.pkg",
   "type": "app",
   "previous_version": "4.1.1",
   "sha": "354ef8a6b98bec3a7d8780b5d4e8a299622bf00d3985ed248389ae8c82cd0982",

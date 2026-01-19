@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/rightfont_9.8.pkg",
   "bundleId": "com.rightfontapp.RightFont",
   "homepage": "https://rightfontapp.com/",
-  "fileName": "rightfont.zip",
+  "fileName": "rightfont_9.8.pkg",
   "type": "app",
   "previous_version": "9.8",
   "sha": "e2944fc5beb08e6908d7366f84f522e00b2204699cb11e51dc41b774c090301d",

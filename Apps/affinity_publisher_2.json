@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/affinity_publisher_2_2.6.5.pkg",
   "bundleId": "com.seriflabs.affinitypublisher2",
   "homepage": "https://affinity.serif.com/en-us/publisher/",
-  "fileName": "Affinity%20Publisher%202%20Affinity%20Store%203782.zip",
+  "fileName": "affinity_publisher_2_2.6.5.pkg",
   "type": "app",
   "previous_version": "2.6.5",
   "sha": "c65e5c39e3667eab78872ee6964216da2f786919402e96c1efc030f09bda0f46",

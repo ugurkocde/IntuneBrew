@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/apptivate_2.2.1.pkg",
   "bundleId": "se.cocoabeans.apptivate",
   "homepage": "http://www.apptivateapp.com/",
-  "fileName": "Apptivate-2.2.1.app.zip",
+  "fileName": "apptivate_2.2.1.pkg",
   "type": "app",
   "previous_version": "2.2.1",
   "sha": "f9170df54d751de5d7ffc2aec4b82b9fc97fdc28c7eb37c33f91b4013ee978b5",
