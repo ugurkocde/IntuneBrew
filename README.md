@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1227-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -324,25 +324,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-18 21:28 UTC*
+*Last checked: 2026-01-19 00:34 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.2 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Rive | 0.8.4113 | 0.8.4137 |
-| MarkEdit | 1.28.0 | 1.29.0 |
-| Apifox | 2.8.1 | 2.8.2 |
-| FreeTube | 0.23.12 | 0.23.13 |
-| DBeaver Community Edition | 25.3.2 | 25.3.3 |
-| Karabiner Elements | 15.7.0 | 15.8.0 |
-| Apidog | 2.8.1 | 2.8.2 |
-| Badgeify | 1.10.1 | 1.11.0 |
-| Dataflare | 2.8.1 | 2.8.2 |
 | Caffeine | 1.6.2 | 1.1.4 |
+| DevKnife | 1.8.0 | 1.9.0 |
+| Input Source Pro | 2.8.0 | 2.9.0 |
 | Multi | 0.538.2 | 3.0.1 |
+| ExpressVPN | 11.71.0.90727 | 12.0.2.11960 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -659,7 +654,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/cisco_proximity.png' width='32' height='32'> Cisco Proximity | 4.0.0 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.08.10.31 |
 | <img src='Logos/clamxav.png' width='32' height='32'> ClamXAV | 3.9.2 |
-| <img src='Logos/claude.png' width='32' height='32'> Claude | 1.1.351 |
+| <img src='Logos/claude.png' width='32' height='32'> Claude | 1.1.381 |
 | <img src='Logos/cleanclip.png' width='32' height='32'> CleanClip | 2.4.6 |
 | <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.3.0 |
 | <img src='Logos/cleanmymac_x_chinese.png' width='32' height='32'> CleanMyMac X Chinese | 4.15.14 |
@@ -735,7 +730,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/deskpad.png' width='32' height='32'> DeskPad | 1.3.2 |
 | <img src='Logos/desktime.png' width='32' height='32'> DeskTime | 6.1.3 |
 | <img src='Logos/devkinsta.png' width='32' height='32'> DevKinsta | 2.13.6 |
-| <img src='Logos/devknife.png' width='32' height='32'> DevKnife | 1.8.0 |
+| <img src='Logos/devknife.png' width='32' height='32'> DevKnife | 1.9.0 |
 | <img src='Logos/devonagent_pro.png' width='32' height='32'> DEVONagent Pro | 3.11.10 |
 | <img src='Logos/devonsphere_express.png' width='32' height='32'> DEVONsphere Express | 1.9.8 |
 | <img src='Logos/devonthink.png' width='32' height='32'> DEVONthink | 4.1.1 |
@@ -831,7 +826,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/exifcleaner.png' width='32' height='32'> ExifCleaner | 3.6.0 |
 | <img src='Logos/exifrenamer.png' width='32' height='32'> ExifRenamer | 2.4.0 |
 | <img src='Logos/expandrive.png' width='32' height='32'> ExpanDrive | 2025.11.21.808 |
-| <img src='Logos/expressvpn.png' width='32' height='32'> ExpressVPN | 11.71.0.90727 |
+| <img src='Logos/expressvpn.png' width='32' height='32'> ExpressVPN | 12.0.2.11960 |
 | <img src='Logos/extraterm.png' width='32' height='32'> Extraterm | 0.81.4 |
 | <img src='Logos/flux.png' width='32' height='32'> f.lux | 42.2 |
 | <img src='Logos/facebook_messenger.png' width='32' height='32'> Facebook Messenger | 525.0.0.34.106 |
@@ -967,9 +962,9 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/imazing_profile_editor.png' width='32' height='32'> iMazing Profile Editor | 2.1.2 |
 | <img src='Logos/imhex.png' width='32' height='32'> ImHex | 1.38.1 |
 | <img src='Logos/inkscape.png' width='32' height='32'> Inkscape | 1.4.3 |
-| <img src='Logos/input_source_pro.png' width='32' height='32'> Input Source Pro | 2.8.0 |
+| <img src='Logos/input_source_pro.png' width='32' height='32'> Input Source Pro | 2.9.0 |
 | <img src='Logos/insomnia.png' width='32' height='32'> Insomnia | 12.3.0 |
-| ❌ Insta360 Link Controller | 2.2.1 |
+| <img src='Logos/insta360_link_controller.png' width='32' height='32'> Insta360 Link Controller | 2.2.1 |
 | <img src='Logos/insta360_studio.png' width='32' height='32'> Insta360 Studio | 5.8.8 |
 | <img src='Logos/integrity.png' width='32' height='32'> Integrity | 12.11.3 |
 | <img src='Logos/intellidock.png' width='32' height='32'> IntelliDock | 1.0 |
