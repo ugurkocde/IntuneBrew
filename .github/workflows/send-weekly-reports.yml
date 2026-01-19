@@ -16,7 +16,10 @@ jobs:
         run: |
           echo "Triggering weekly fleet reports..."
 
-          RESPONSE=$(curl -sL -w "\n%{http_code}" -X POST "${{ secrets.NOTIFICATIONS_API_URL }}/weekly-reports/send" \
+          # Use INTUNEBREW_API_URL if set, otherwise default to production
+          API_BASE_URL="${INTUNEBREW_API_URL:-https://intunebrew.com/api}"
+
+          RESPONSE=$(curl -sL -w "\n%{http_code}" -X POST "${API_BASE_URL}/weekly-reports/send" \
             -H "Authorization: Bearer ${{ secrets.NOTIFICATIONS_API_KEY }}" \
             -H "Content-Type: application/json" \
             -d '{"trigger": "github_actions_scheduled"}')
@@ -42,5 +45,5 @@ jobs:
             exit 1
           fi
         env:
-          NOTIFICATIONS_API_URL: ${{ secrets.NOTIFICATIONS_API_URL }}
+          INTUNEBREW_API_URL: ${{ secrets.INTUNEBREW_API_URL }}
           NOTIFICATIONS_API_KEY: ${{ secrets.NOTIFICATIONS_API_KEY }}
