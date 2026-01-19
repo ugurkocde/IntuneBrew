@@ -16,7 +16,7 @@ jobs:
         run: |
           echo "Triggering weekly fleet reports..."
 
-          RESPONSE=$(curl -s -w "\n%{http_code}" -X POST "${{ secrets.NOTIFICATIONS_API_URL }}/weekly-reports/send" \
+          RESPONSE=$(curl -sL -w "\n%{http_code}" -X POST "${{ secrets.NOTIFICATIONS_API_URL }}/weekly-reports/send" \
             -H "Authorization: Bearer ${{ secrets.NOTIFICATIONS_API_KEY }}" \
             -H "Content-Type: application/json" \
             -d '{"trigger": "github_actions_scheduled"}')
