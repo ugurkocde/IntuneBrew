@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/blurscreen_1.0.pkg",
   "bundleId": "com.blurscreen",
   "homepage": "https://www.blurscreen.app/",
-  "fileName": "BlurScreen-v2.pkg",
+  "fileName": "blurscreen_1.0.pkg",
   "type": "pkg_in_pkg",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:27:16Z",

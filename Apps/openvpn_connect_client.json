@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/openvpn_connect_client_3.8.1.pkg",
   "bundleId": "org.openvpn.client.app",
   "homepage": "https://openvpn.net/client-connect-vpn-for-mac-os/",
-  "fileName": "openvpn-connect-3.8.1.5790_signed.dmg",
+  "fileName": "openvpn_connect_client_3.8.1.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://openvpn.net/connect-docs/macos-release-notes.html",
   "sha": "88675b571f3eaecc72a415c77936cd47ca97656189bc7c190ed1cd483c2a9130",

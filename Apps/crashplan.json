@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/crashplan_11.8.0.pkg",
   "bundleId": "com.crashplan.desktop",
   "homepage": "https://www.crashplan.com/",
-  "fileName": "CrashPlan_11.8.0_609_Mac.dmg",
+  "fileName": "crashplan_11.8.0.pkg",
   "type": "pkg_in_dmg",
   "sha": "9d3e3d3d2e663bee9ce4a17bde71bde0619e6e9632bbca45fde6888ba94ef318",
   "category": "Utilities",

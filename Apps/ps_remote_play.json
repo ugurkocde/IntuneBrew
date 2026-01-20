@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/ps_remote_play_8.5.2.pkg",
   "bundleId": "com.playstation.RemotePlay",
   "homepage": "https://remoteplay.dl.playstation.net/remoteplay/lang/en/",
-  "fileName": "RemotePlayInstaller.pkg",
+  "fileName": "ps_remote_play_8.5.2.pkg",
   "type": "pkg_in_pkg",
   "sha": "6d1cc05d74d1103bc864eed7f6f377a1f1e8fc00424d018522e96747319ad856",
   "category": "Utilities",

@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/aws_client_vpn_5.3.3.pkg",
   "bundleId": "com.amazon.awsvpnclient",
   "homepage": "https://aws.amazon.com/vpn/",
-  "fileName": "AWS_VPN_Client_ARM64.pkg",
+  "fileName": "aws_client_vpn_5.3.3.pkg",
   "type": "pkg_in_pkg",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:02:37Z",

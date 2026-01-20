@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/alttab_8.2.0.pkg",
   "bundleId": "com.lwouis.alt-tab-macos",
   "homepage": "https://alt-tab-macos.netlify.app/",
-  "fileName": "alttab_8.1.0.pkg",
+  "fileName": "alttab_8.2.0.pkg",
   "type": "app",
   "sha": "b58a5367542f06b6b990884a8523be626fad13bdbd219e347b6582fa336ccfc8",
   "previous_version": "8.2.0",

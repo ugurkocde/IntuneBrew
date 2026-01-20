@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/tailscale_1.84.1.pkg",
   "bundleId": "com.tailscale.ipn.macsys",
   "homepage": "https://tailscale.com/",
-  "fileName": "Tailscale-1.84.1-macos.pkg",
+  "fileName": "tailscale_1.84.1.pkg",
   "type": "pkg_in_pkg",
   "sha": "474dd99082389ec8bb22b16c735233aa9e9797801a2f33237728b9dd2f173dad",
   "changelog": "https://tailscale.com/changelog",

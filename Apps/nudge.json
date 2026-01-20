@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/nudge_2.0.12.81807.pkg",
   "bundleId": "com.github.macadmins.Nudge",
   "homepage": "https://github.com/macadmins/nudge",
-  "fileName": "Nudge-2.0.12.81807.pkg",
+  "fileName": "nudge_2.0.12.81807.pkg",
   "type": "pkg_in_pkg",
   "sha": "9d811da5a3dc2632b5a4fddd6bdade76e815e56e7758ea9d3e8a5e7645ffaefa",
   "category": "Utilities",

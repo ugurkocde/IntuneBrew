@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/gitbutler_0.18.3.pkg",
   "bundleId": "com.gitbutler.app",
   "homepage": "https://gitbutler.com/",
-  "fileName": "GitButler.app.tar.gz",
+  "fileName": "gitbutler_0.18.3.pkg",
   "type": "app",
   "previous_version": "0.18.3",
   "sha": "4988f5755f1723f686737f0a4ca4cfe04c16122e362975e8394fd80e2fda5922",

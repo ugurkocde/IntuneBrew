@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/chrome_remote_desktop_144.0.7559.13.pkg",
   "bundleId": "com.google.chromeremotedesktop.me2me-host",
   "homepage": "https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai",
-  "fileName": "chromeremotedesktop.dmg",
+  "fileName": "chrome_remote_desktop_144.0.7559.13.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://support.google.com/chrome/a/answer/7679408",
   "sha": "d9f87bc7615dbb2c06c202f3df92090a3f15f341c89ed9ed36b09c3bfcd119ec",

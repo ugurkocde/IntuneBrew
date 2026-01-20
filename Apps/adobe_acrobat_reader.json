@@ -5,7 +5,7 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/adobe_acrobat_reader_25.001.20997.pkg",
   "bundleId": "com.adobe.Reader",
   "homepage": "https://www.adobe.com/acrobat/pdf-reader.html",
-  "fileName": "AcroRdrDC_2500120997_MUI.dmg",
+  "fileName": "adobe_acrobat_reader_25.001.20997.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html",
   "sha": "1eb5c807ccfb311f45b99efc81373cc330ac0ab42aa2c417939c22d86c4344df",
