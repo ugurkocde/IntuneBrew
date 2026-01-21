@@ -1,12 +1,12 @@
 {
   "name": "Pale Moon",
   "description": "Web browser",
-  "version": "33.9.1",
-  "url": "https://rm-us.palemoon.org/release/palemoon-33.9.1.arm64.dmg",
+  "version": "34.0.0",
+  "url": "https://rm-us.palemoon.org/release/palemoon-34.0.0.arm64.dmg",
   "bundleId": "org.palemoon.PaleMoon",
   "homepage": "https://www.palemoon.org/",
-  "fileName": "palemoon-33.9.1.arm64.dmg",
-  "sha": "401f48f2fc809436404ad5275d9a39f840bae26f269cd2150c5a7884aab9bda9",
+  "fileName": "palemoon-34.0.0.arm64.dmg",
+  "sha": "bb3bc06ae792b7aa0c563716a03713fccf7ed6537f916da3282e0d6b95573452",
   "category": "Browsers",
   "publisher": "Moonchild Productions",
   "previous_version": "33.9.1"
