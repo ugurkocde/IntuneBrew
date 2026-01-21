@@ -17,84 +17,36 @@ fi
 echo "Stopping BoltAI if running..."
 pkill -f "BoltAI" 2>/dev/null || true
 
-# Remove /Applications/BoltAI.app
-echo "Removing /Applications/BoltAI.app..."
-if [ -d "/Applications/BoltAI.app" ]; then
-    rm -rf "/Applications/BoltAI.app" 2>/dev/null || true
-elif [ -f "/Applications/BoltAI.app" ]; then
-    rm -f "/Applications/BoltAI.app" 2>/dev/null || true
+# Remove /Applications/BoltAI 2.app
+echo "Removing /Applications/BoltAI 2.app..."
+if [ -d "/Applications/BoltAI 2.app" ]; then
+    rm -rf "/Applications/BoltAI 2.app" 2>/dev/null || true
+elif [ -f "/Applications/BoltAI 2.app" ]; then
+    rm -f "/Applications/BoltAI 2.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/.boltai
-echo "Removing $HOME/.boltai..."
-if [ -d "$HOME/.boltai" ]; then
-    rm -rf "$HOME/.boltai" 2>/dev/null || true
-elif [ -f "$HOME/.boltai" ]; then
-    rm -f "$HOME/.boltai" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/co.podzim.boltai-mobile
+echo "Removing $HOME/Library/Application Scripts/co.podzim.boltai-mobile..."
+if [ -d "$HOME/Library/Application Scripts/co.podzim.boltai-mobile" ]; then
+    rm -rf "$HOME/Library/Application Scripts/co.podzim.boltai-mobile" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/co.podzim.boltai-mobile" ]; then
+    rm -f "$HOME/Library/Application Scripts/co.podzim.boltai-mobile" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/co.podzim.BoltGPT
-echo "Removing $HOME/Library/Application Support/co.podzim.BoltGPT..."
-if [ -d "$HOME/Library/Application Support/co.podzim.BoltGPT" ]; then
-    rm -rf "$HOME/Library/Application Support/co.podzim.BoltGPT" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/co.podzim.BoltGPT" ]; then
-    rm -f "$HOME/Library/Application Support/co.podzim.BoltGPT" 2>/dev/null || true
+# Remove $HOME/Library/Containers/co.podzim.boltai-mobile
+echo "Removing $HOME/Library/Containers/co.podzim.boltai-mobile..."
+if [ -d "$HOME/Library/Containers/co.podzim.boltai-mobile" ]; then
+    rm -rf "$HOME/Library/Containers/co.podzim.boltai-mobile" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/co.podzim.boltai-mobile" ]; then
+    rm -f "$HOME/Library/Containers/co.podzim.boltai-mobile" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.podzim.BoltGPT.*
-echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.podzim.BoltGPT.*..."
-if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.podzim.BoltGPT.*" ]; then
-    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.podzim.BoltGPT.*" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.podzim.BoltGPT.*" ]; then
-    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.podzim.BoltGPT.*" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Caches/co.podzim.BoltGPT
-echo "Removing $HOME/Library/Caches/co.podzim.BoltGPT..."
-if [ -d "$HOME/Library/Caches/co.podzim.BoltGPT" ]; then
-    rm -rf "$HOME/Library/Caches/co.podzim.BoltGPT" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/co.podzim.BoltGPT" ]; then
-    rm -f "$HOME/Library/Caches/co.podzim.BoltGPT" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Caches/SentryCrash/BoltAI
-echo "Removing $HOME/Library/Caches/SentryCrash/BoltAI..."
-if [ -d "$HOME/Library/Caches/SentryCrash/BoltAI" ]; then
-    rm -rf "$HOME/Library/Caches/SentryCrash/BoltAI" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/SentryCrash/BoltAI" ]; then
-    rm -f "$HOME/Library/Caches/SentryCrash/BoltAI" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/HTTPStorages/co.podzim.BoltGPT
-echo "Removing $HOME/Library/HTTPStorages/co.podzim.BoltGPT..."
-if [ -d "$HOME/Library/HTTPStorages/co.podzim.BoltGPT" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/co.podzim.BoltGPT" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/co.podzim.BoltGPT" ]; then
-    rm -f "$HOME/Library/HTTPStorages/co.podzim.BoltGPT" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Preferences/co.podzim.BoltGPT.plist
-echo "Removing $HOME/Library/Preferences/co.podzim.BoltGPT.plist..."
-if [ -d "$HOME/Library/Preferences/co.podzim.BoltGPT.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/co.podzim.BoltGPT.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/co.podzim.BoltGPT.plist" ]; then
-    rm -f "$HOME/Library/Preferences/co.podzim.BoltGPT.plist" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Saved Application State/co.podzim.BoltGPT.savedState
-echo "Removing $HOME/Library/Saved Application State/co.podzim.BoltGPT.savedState..."
-if [ -d "$HOME/Library/Saved Application State/co.podzim.BoltGPT.savedState" ]; then
-    rm -rf "$HOME/Library/Saved Application State/co.podzim.BoltGPT.savedState" 2>/dev/null || true
-elif [ -f "$HOME/Library/Saved Application State/co.podzim.BoltGPT.savedState" ]; then
-    rm -f "$HOME/Library/Saved Application State/co.podzim.BoltGPT.savedState" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/WebKit/co.podzim.BoltGPT
-echo "Removing $HOME/Library/WebKit/co.podzim.BoltGPT..."
-if [ -d "$HOME/Library/WebKit/co.podzim.BoltGPT" ]; then
-    rm -rf "$HOME/Library/WebKit/co.podzim.BoltGPT" 2>/dev/null || true
-elif [ -f "$HOME/Library/WebKit/co.podzim.BoltGPT" ]; then
-    rm -f "$HOME/Library/WebKit/co.podzim.BoltGPT" 2>/dev/null || true
+# Remove $HOME/Library/Saved Application State/co.podzim.boltai-mobile.savedState
+echo "Removing $HOME/Library/Saved Application State/co.podzim.boltai-mobile.savedState..."
+if [ -d "$HOME/Library/Saved Application State/co.podzim.boltai-mobile.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/co.podzim.boltai-mobile.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/co.podzim.boltai-mobile.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/co.podzim.boltai-mobile.savedState" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
