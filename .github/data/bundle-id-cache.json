@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-21T00:58:19.244Z",
+  "last_full_scan": "2026-01-21T21:53:55.629Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8770,6 +8770,13 @@
       "bundle_id": null,
       "status": "unknown",
       "name": "BoltAI 2"
+    },
+    "wacom_tablet": {
+      "last_checked": "2026-01-21T21:53:55.628Z",
+      "bundle_id": "com.wacom.TabletInstaller",
+      "status": "verified",
+      "source": "file",
+      "name": "Wacom Tablet"
     }
   }
 }
