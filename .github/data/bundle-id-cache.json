@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-21T00:30:05.648Z",
+  "last_full_scan": "2026-01-21T00:58:19.244Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8764,6 +8764,12 @@
       "status": "verified",
       "source": "file",
       "name": "Insta360 Link Controller"
+    },
+    "boltai_2": {
+      "last_checked": "2026-01-21T00:58:19.218Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "BoltAI 2"
     }
   }
 }
