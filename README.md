@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1228-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1229-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -327,48 +327,36 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-21 00:37 UTC*
+*Last checked: 2026-01-21 21:36 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.2 | 1.1.4 |
+| MySQL Workbench | 8.0.45 | 8.0.46 |
 | Multi | 0.538.2 | 3.0.1 |
-| Reqable | 3.0.35 | 3.0.36 |
-| Rive | 0.8.4137 | 0.8.4146 |
-| Readest | 0.9.97 | 0.9.98 |
-| Rectangle Pro | 3.65.4 | 3.67 |
-| NVIDIA GeForce NOW | 2.0.80.173 | 2.0.81.172 |
-| Grammarly Desktop | 1.148.0.0 | 1.149.1.0 |
-| Dropbox | 239.4.8301 | 240.4.8493 |
-| Obsidian | 1.11.4 | 1.11.5 |
-| Termius | 9.36.1 | 9.36.2 |
-| AWS Corretto JDK | 21.0.9.10.1 | 21.0.10.7.1 |
-| Zed | 0.219.4 | 0.219.5 |
-| Rancher Desktop | 1.21.0 | 1.22.0 |
-| OneDrive | 25.222.1112.0002 | 25.238.1204.0001 |
-| Badgeify | 1.11.1 | 1.11.2 |
-| Beekeeper Studio | 5.5.4 | 5.5.5 |
-| Milanote | 3.18.71 | 3.18.72 |
-| Roam Research | 0.0.30 | 0.0.31 |
+| Mozilla Firefox Developer Edition | 148.0b4 | 148.0b5 |
+| QQ | 6.9.86 | 6.9.88 |
+| Google Chrome | 144.0.7559.60 | 144.0.7559.97 |
+| Company Portal | 5.2510.1 | 5.2511.0 |
+| Notion | 7.0.0 | 7.1.0 |
+| Discord | 0.0.372 | 0.0.373 |
+| Raycast | 1.104.1 | 1.104.2 |
+| Azul Zulu Java Standard Edition Development Kit | 25.0.1 | 25.0.2 |
+| Zed | 0.219.5 | 0.220.2 |
+| Ungoogled Chromium | 143.0.7499.169-1.1 | 144.0.7559.59-1.1 |
 | Caffeine | 1.6.2 | 1.1.4 |
-| ClipBook | 1.32.0 | 1.33.0 |
-| Free Download Manager | 6.32 | 6.33 |
-| Granola | 6.491.0 | 6.491.2 |
-| IDAGIO | 1.13.0 | 1.14.0 |
+| Akiflow | 2.65.13 | 2.66.3 |
+| FLEXOPTIX App | 5.57.0-latest | 5.58.0-latest |
+| LaunchOS | 1.3.0 | 1.4.0 |
 | Multi | 0.538.2 | 3.0.1 |
-| Pale Moon | 33.9.1 | 34.0.0 |
-| Pitch | 2.109.0 | 2.110.0 |
-| Raspberry Pi Imager | 2.0.4 | 2.0.5 |
-| WebCatalog | 72.0.5 | 73.0.0 |
-| NordLayer | 3.8.0 | 3.9.0 |
-| Nextcloud | 4.0.4 | 4.0.5 |
-| Microsoft Excel | 16.105.26011018 | 16.105.26011816 |
-| Microsoft Outlook | 16.105.26011018 | 16.105.26011816 |
-| Microsoft PowerPoint | 16.105.26011018 | 16.105.26011816 |
-| Microsoft Word | 16.105.26011018 | 16.105.26011816 |
-| Adobe Acrobat Pro DC | 25.001.21078 | 25.001.21111 |
+| SoundAnchor | 1.4.0 | 1.6.0 |
+| WebCatalog | 73.0.0 | 73.1.1 |
+| Okta Advanced Server Access | 1.99.5 | 1.99.7 |
+| Studio | 2.25.12 | 2.26.1 |
+| Adobe Acrobat Reader | 25.001.20997 | 25.001.21111 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

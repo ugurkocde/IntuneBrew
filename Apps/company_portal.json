@@ -1,12 +1,12 @@
 {
   "name": "Company Portal",
   "description": "App to manage access to corporate apps, data, and resources",
-  "version": "5.2510.1",
-  "url": "https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/CompanyPortal_5.2510.1-Upgrade.pkg",
+  "version": "5.2511.0",
+  "url": "https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/CompanyPortal_5.2511.0-Upgrade.pkg",
   "bundleId": "com.microsoft.CompanyPortalMac",
   "homepage": "https://docs.microsoft.com/en-us/mem/intune/user-help/enroll-your-device-in-intune-macos-cp",
-  "fileName": "CompanyPortal_5.2510.1-Upgrade.pkg",
-  "sha": "7eeb700b1e753fcb1423e20d7fb32d12c285345e4850752c0077b2afef1439ea",
+  "fileName": "CompanyPortal_5.2511.0-Upgrade.pkg",
+  "sha": "fc2b51fa834bd01c1ffbf00bd4b340ff3ef9a2175956dd57c403b254b14d81ea",
   "changelog": "https://docs.microsoft.com/en-us/mem/intune/user-help/enroll-your-device-in-intune-macos-cp",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:49:29Z",

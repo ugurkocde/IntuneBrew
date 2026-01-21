@@ -1,0 +1,11 @@
+{
+  "name": "Wacom Tablet",
+  "description": "Resources for Wacom tablets",
+  "version": "6.4.12-3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/wacom_tablet_6.4.12-3.pkg",
+  "bundleId": "com.wacom.TabletInstaller",
+  "homepage": "https://www.wacom.com/en-us/support/product-support/drivers",
+  "fileName": "wacom_tablet_6.4.12-3.pkg",
+  "type": "pkg_in_dmg",
+  "sha": "a6577f89f0b8c48a8b65bf02048d0e6ee844a3ab8b1d3e4b63cee8e040717d2d"
+}
