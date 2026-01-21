@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://boltai.com/",
   "fileName": "BoltAI-2.6.0.dmg",
-  "sha": "0994524c2b5d85008130e0966cbfb9f0f2de25d711b71ef65116669cd09ded99"
+  "sha": "0994524c2b5d85008130e0966cbfb9f0f2de25d711b71ef65116669cd09ded99",
+  "category": "Productivity",
+  "publisher": "Bolt AI"
 }
