@@ -385,91 +385,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- PowerShell 7.0 or higher
-- Administrator rights (script must be installed as administrator, specially if you use "Install-Script IntuneBrew -Force")
-- Microsoft.Graph.Authentication Module must be installed
-- Azure App Registration with appropriate permissions OR Manual Connection via Interactive Sign-In
-- Windows or macOS operating system
-
-## 📝 Usage
-
-### Basic Usage
-
-Download the script: IntuneBrew.ps1
-
-Run the script:
-
-```powershell
-.\IntuneBrew.ps1
-```
-
-Follow the interactive prompts to:
-
-1. Select which apps to upload
-2. Authenticate with Microsoft Graph
-3. Monitor the upload progress
-4. View the results in Intune
-
-### Advanced Parameters
-
-#### Upload Specific Apps
-```powershell
-.\IntuneBrew.ps1 -Upload "google_chrome", "slack", "zoom"
-```
-Uploads the specified apps directly without interactive selection.
-
-#### Update All Apps
-```powershell
-.\IntuneBrew.ps1 -UpdateAll
-```
-Updates all applications that have newer versions available.
-
-#### Upload Local Files
-```powershell
-.\IntuneBrew.ps1 -LocalFile
-```
-Upload local PKG or DMG files to Intune with interactive prompts.
-
-#### Copy Assignments
-```powershell
-.\IntuneBrew.ps1 -UpdateAll -CopyAssignments
-```
-When updating apps, copy assignments from existing versions to new versions.
-
-#### Use Existing Intune Apps
-```powershell
-.\IntuneBrew.ps1 -UpdateAll -UseExistingIntuneApp
-```
-Updates existing Intune app entries instead of creating new ones. This prevents duplicate app entries in Intune.
-
-#### Non-Interactive Authentication
-```powershell
-.\IntuneBrew.ps1 -UpdateAll -ConfigFile "clientSecret.json"
-```
-Use a configuration file for non-interactive authentication. This enables automation. See the Configuration section for setup details.
-
-#### Customize App Names
-```powershell
-# Add prefix to app names
-.\IntuneBrew.ps1 -Upload "slack" -AppNamePrefix "Corporate "
-
-# Add suffix to app names  
-.\IntuneBrew.ps1 -Upload "zoom" -AppNameSuffix " - Mac"
-
-# Use both prefix and suffix
-.\IntuneBrew.ps1 -Upload "chrome" -AppNamePrefix "Company " -AppNameSuffix " (Managed)"
-```
-Customize how app names appear in Intune by adding prefixes and/or suffixes.
-
-#### Pre/Post Install Scripts (PKG only)
-```powershell
-.\IntuneBrew.ps1 -Upload "example_app" -PreInstallScriptPath "./scripts/pre-install.sh" -PostInstallScriptPath "./scripts/post-install.sh"
-```
-Execute custom scripts before or after PKG installations.
-
-### 📱 Supported Applications
+### Supported Applications
 
 | Application | Latest Version |
 |-------------|----------------|
@@ -626,7 +542,7 @@ Execute custom scripts before or after PKG installations.
 | <img src='Logos/bluewallet.png' width='32' height='32'> BlueWallet | 7.2.0 |
 | <img src='Logos/blurscreen.png' width='32' height='32'> BlurScreen | 1.0 |
 | <img src='Logos/boltai.png' width='32' height='32'> BoltAI | 1.36.5 |
-| ❌ BoltAI 2 | 2.6.0 |
+| <img src='Logos/boltai_2.png' width='32' height='32'> BoltAI 2 | 2.6.0 |
 | <img src='Logos/bome_network.png' width='32' height='32'> Bome Network | 1.6.0 |
 | <img src='Logos/boom_3d.png' width='32' height='32'> Boom 3D | 2.2 |
 | <img src='Logos/boop.png' width='32' height='32'> Boop | 1.4.0 |
@@ -1704,7 +1620,6 @@ Execute custom scripts before or after PKG installations.
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
-
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:
