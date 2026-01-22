@@ -8777,17 +8777,6 @@
       "status": "verified",
       "source": "file",
       "name": "Wacom Tablet"
-    },
-    "linear": {
-      "last_checked": "2026-01-22T20:34:06.402Z",
-      "bundle_id": "com.linear",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "override",
-      "methods_tried": [
-        "override"
-      ],
-      "name": "Linear"
     }
   }
 }
