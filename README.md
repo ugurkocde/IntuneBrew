@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1229-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -328,35 +328,23 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-21 21:36 UTC*
+*Last checked: 2026-01-22 00:35 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.2 | 1.1.4 |
-| MySQL Workbench | 8.0.45 | 8.0.46 |
 | Multi | 0.538.2 | 3.0.1 |
-| Mozilla Firefox Developer Edition | 148.0b4 | 148.0b5 |
-| QQ | 6.9.86 | 6.9.88 |
-| Google Chrome | 144.0.7559.60 | 144.0.7559.97 |
-| Company Portal | 5.2510.1 | 5.2511.0 |
-| Notion | 7.0.0 | 7.1.0 |
-| Discord | 0.0.372 | 0.0.373 |
-| Raycast | 1.104.1 | 1.104.2 |
-| Azul Zulu Java Standard Edition Development Kit | 25.0.1 | 25.0.2 |
-| Zed | 0.219.5 | 0.220.2 |
-| Ungoogled Chromium | 143.0.7499.169-1.1 | 144.0.7559.59-1.1 |
+| Brave | 1.86.139.0 | 1.86.142.0 |
+| Tenable Nessus Agent | 11.0.3 | 11.1.0 |
+| Lapce | 0.4.5 | 0.4.6 |
 | Caffeine | 1.6.2 | 1.1.4 |
-| Akiflow | 2.65.13 | 2.66.3 |
-| FLEXOPTIX App | 5.57.0-latest | 5.58.0-latest |
-| LaunchOS | 1.3.0 | 1.4.0 |
+| Deckset | 2.0.46 | 2.0.47 |
+| Loom | 0.328.1 | 0.329.1 |
 | Multi | 0.538.2 | 3.0.1 |
-| SoundAnchor | 1.4.0 | 1.6.0 |
-| WebCatalog | 73.0.0 | 73.1.1 |
-| Okta Advanced Server Access | 1.99.5 | 1.99.7 |
-| Studio | 2.25.12 | 2.26.1 |
-| Adobe Acrobat Reader | 25.001.20997 | 25.001.21111 |
+| Salesforce CLI | 2.118.20 | 2.119.8 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

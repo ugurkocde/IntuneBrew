@@ -9,5 +9,6 @@
   "type": "pkg_in_dmg",
   "sha": "a6577f89f0b8c48a8b65bf02048d0e6ee844a3ab8b1d3e4b63cee8e040717d2d",
   "category": "Utilities",
-  "publisher": "Wacom Co., Ltd."
+  "publisher": "Wacom Co., Ltd.",
+  "previous_version": "6.4.12-3"
 }

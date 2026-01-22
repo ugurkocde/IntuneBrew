@@ -1,12 +1,12 @@
 {
   "name": "Deckset",
   "description": "Presentations from Markdown",
-  "version": "2.0.46",
-  "url": "https://dl.decksetapp.com/Deckset+2.0.46+(2789).dmg",
+  "version": "2.0.47",
+  "url": "https://dl.decksetapp.com/Deckset+2.0.47+(2790).dmg",
   "bundleId": "com.unsignedinteger.Deckset-Paddle",
   "homepage": "https://www.decksetapp.com/",
-  "fileName": "Deckset+2.0.46+(2789).dmg",
-  "sha": "0ad75187e51b8097dedd42132d756e2779553a5e52b37a03e9b60bec50df492b",
+  "fileName": "Deckset+2.0.47+(2790).dmg",
+  "sha": "33b74eeeb67f984dd05f143213f48c7865c53df753e5b2f1cfcc88ab9b26f58d",
   "category": "Design",
   "publisher": "Deckset",
   "previous_version": "2.0.46"
