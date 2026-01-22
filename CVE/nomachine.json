@@ -1,7 +1,7 @@
 {
   "app_name": "Nomachine",
   "app_key": "nomachine",
-  "last_updated": "2026-01-21",
+  "last_updated": "2026-01-22",
   "total_cves": 11,
   "summary": {
     "critical": 2,
