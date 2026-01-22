@@ -7,5 +7,7 @@
   "homepage": "https://linear.app/",
   "fileName": "linear_1.28.7.pkg",
   "type": "app",
-  "sha": "0348f85176c25ac19582b4d561ce572680aa3ed959e6369e8527624c52d4495f"
+  "sha": "0348f85176c25ac19582b4d561ce572680aa3ed959e6369e8527624c52d4495f",
+  "category": "Developer Tools",
+  "publisher": "Linear, Inc."
 }
