@@ -235,14 +235,15 @@ async function extractBundleIdFromPackage(appData) {
     }
     fs.mkdirSync(extractDir, { recursive: true });
 
-    // Extract PKG using xar
+    // Extract PKG using 7z (works on Ubuntu, unlike xar)
     try {
-      execSync(`xar -xf "${pkgPath}" -C "${extractDir}"`, {
+      execSync(`7z x "${pkgPath}" -o"${extractDir}" -y`, {
         timeout: 30000,
         stdio: ['pipe', 'pipe', 'pipe']
       });
     } catch (e) {
       console.log(`    PKG extraction failed: ${e.message}`);
+      cleanup();
       return null;
     }
 
@@ -277,11 +278,15 @@ async function extractBundleIdFromPackage(appData) {
         const payloadDir = path.join(path.dirname(payloadPath), 'payload_contents');
         fs.mkdirSync(payloadDir, { recursive: true });
 
-        // Payload is usually a gzipped cpio archive
-        execSync(`cd "${payloadDir}" && cat "${payloadPath}" | gunzip -c 2>/dev/null | cpio -id 2>/dev/null || true`, {
-          timeout: 30000,
-          stdio: ['pipe', 'pipe', 'pipe']
-        });
+        // Payload is usually a gzipped cpio archive - use 7z to extract
+        try {
+          execSync(`7z x "${payloadPath}" -o"${payloadDir}" -y`, {
+            timeout: 30000,
+            stdio: ['pipe', 'pipe', 'pipe']
+          });
+        } catch (e) {
+          // 7z might fail on some payload formats, continue
+        }
 
         // Find Info.plist files
         const infoPlistFiles = findFiles(payloadDir, 'Info.plist');
