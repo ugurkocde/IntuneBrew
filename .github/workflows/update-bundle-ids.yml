@@ -37,21 +37,28 @@ jobs:
         with:
           node-version: '20'
 
-      - name: Install dependencies
-        run: npm install openai
+      - name: Install system dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y xar cpio
+
+      - name: Install Node.js dependencies
+        run: npm install
 
       - name: Update bundle IDs
         id: update
         env:
           OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           FORCE_RECHECK: ${{ github.event.inputs.force_recheck || 'false' }}
           MAX_APPS: ${{ github.event.inputs.max_apps || '50' }}
         run: |
           node .github/scripts/update-bundle-ids.js | tee output.log
 
           # Extract stats from output
-          API_CALLS=$(grep -oP 'API calls made: \K\d+' output.log || echo "0")
+          PROCESSED=$(grep -oP 'Apps processed: \K\d+' output.log || echo "0")
           UPDATED=$(grep -oP 'Updated: \K\d+' output.log || echo "0")
+          FROM_OVERRIDES=$(grep -oP 'From overrides: \K\d+' output.log || echo "0")
           SYNCED=$(grep -oP 'Cache synced.*: \K\d+' output.log || echo "0")
           SKIPPED=$(grep -oP 'Skipped.*: \K\d+' output.log || echo "0")
           UNKNOWN=$(grep -oP 'Unknown: \K\d+' output.log || echo "0")
@@ -62,8 +69,9 @@ jobs:
           echo "" >> $GITHUB_STEP_SUMMARY
           echo "| Metric | Count |" >> $GITHUB_STEP_SUMMARY
           echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
-          echo "| API calls made | $API_CALLS |" >> $GITHUB_STEP_SUMMARY
+          echo "| Apps processed | $PROCESSED |" >> $GITHUB_STEP_SUMMARY
           echo "| Updated | $UPDATED |" >> $GITHUB_STEP_SUMMARY
+          echo "| From overrides | $FROM_OVERRIDES |" >> $GITHUB_STEP_SUMMARY
           echo "| Cache synced | $SYNCED |" >> $GITHUB_STEP_SUMMARY
           echo "| Skipped (verified) | $SKIPPED |" >> $GITHUB_STEP_SUMMARY
           echo "| Unknown | $UNKNOWN |" >> $GITHUB_STEP_SUMMARY
