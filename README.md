@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1229-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1230-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -329,22 +329,27 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-22 00:35 UTC*
+*Last checked: 2026-01-22 14:27 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.2 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Brave | 1.86.139.0 | 1.86.142.0 |
-| Tenable Nessus Agent | 11.0.3 | 11.1.0 |
-| Lapce | 0.4.5 | 0.4.6 |
+| Yaak | 2025.9.3 | 2026.1.0 |
+| Canva | 1.119.0 | 1.120.0 |
+| DataGrip | 2025.3.3 | 2025.3.4 |
+| DbGate | 6.8.2 | 7.0.0 |
+| 8x8_work | 8.29.1-3 | 8.30.2-10 |
 | Caffeine | 1.6.2 | 1.1.4 |
-| Deckset | 2.0.46 | 2.0.47 |
-| Loom | 0.328.1 | 0.329.1 |
 | Multi | 0.538.2 | 3.0.1 |
-| Salesforce CLI | 2.118.20 | 2.119.8 |
+| Pale Moon | 34.0.0 | 34.0.1 |
+| Riverside Studio | 1.18.2 | 1.19.0 |
+| Shapr3D | 5.1015.0.10234 | 26.0.0.10296 |
+| Tribler | 8.2.3 | 8.3.1 |
+| Cisco Jabber | 20251118100311 | 20260122074039 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
