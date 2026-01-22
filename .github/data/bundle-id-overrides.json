@@ -1,7 +1,6 @@
 {
   "description": "Manual bundle ID overrides for apps that cannot be auto-detected. Add apps here with their correct bundle IDs.",
   "overrides": {
-    "abstract": "com.elasticprojects.Abstract",
-    "linear": "com.linear"
+    "abstract": "com.elasticprojects.Abstract"
   }
 }
