@@ -154,29 +154,41 @@ async function lookupMacAppStore(appData) {
       return null;
     }
 
-    // Try to find an exact or close match
     const normalizedAppName = appName.toLowerCase().replace(/[^a-z0-9]/g, '');
+    const normalizedPublisher = appData.publisher ? appData.publisher.toLowerCase().replace(/[^a-z0-9]/g, '') : '';
 
+    // First pass: look for exact matches only
     for (const result of data.results) {
       const resultName = (result.trackName || '').toLowerCase().replace(/[^a-z0-9]/g, '');
-      const sellerName = (result.sellerName || '').toLowerCase();
 
-      // Check for exact match or if the app name is contained
-      if (resultName === normalizedAppName ||
-          resultName.includes(normalizedAppName) ||
-          normalizedAppName.includes(resultName)) {
+      if (resultName === normalizedAppName) {
         if (result.bundleId && isValidBundleId(result.bundleId)) {
           return result.bundleId;
         }
       }
+    }
 
-      // Also check if publisher matches
-      if (appData.publisher) {
-        const normalizedPublisher = appData.publisher.toLowerCase().replace(/[^a-z0-9]/g, '');
-        if (sellerName.includes(normalizedPublisher) || normalizedPublisher.includes(sellerName)) {
-          if (result.bundleId && isValidBundleId(result.bundleId)) {
-            return result.bundleId;
-          }
+    // Second pass: look for close matches with strict criteria
+    for (const result of data.results) {
+      const resultName = (result.trackName || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+      const sellerName = (result.sellerName || '').toLowerCase().replace(/[^a-z0-9]/g, '');
+
+      // For substring matches, require the lengths to be similar (within 30%)
+      // This prevents "linear" matching "linearity" (6 chars vs 9 chars = 50% longer)
+      const lengthRatio = Math.max(resultName.length, normalizedAppName.length) /
+                         Math.min(resultName.length, normalizedAppName.length);
+
+      const isSubstringMatch = (resultName.includes(normalizedAppName) || normalizedAppName.includes(resultName));
+      const isLengthSimilar = lengthRatio <= 1.3;
+      const publisherMatches = normalizedPublisher && (
+        sellerName.includes(normalizedPublisher) ||
+        normalizedPublisher.includes(sellerName)
+      );
+
+      // Accept if: substring match with similar length, OR publisher matches exactly
+      if (isSubstringMatch && (isLengthSimilar || publisherMatches)) {
+        if (result.bundleId && isValidBundleId(result.bundleId)) {
+          return result.bundleId;
         }
       }
     }

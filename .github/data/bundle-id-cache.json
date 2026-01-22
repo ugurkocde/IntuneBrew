@@ -8780,10 +8780,10 @@
     },
     "linear": {
       "last_checked": "2026-01-22T20:46:59.846Z",
-      "bundle_id": "com.linearity.vn",
+      "bundle_id": "com.linear",
       "previous_bundle_id": null,
-      "status": "updated",
-      "source": "mac_app_store",
+      "status": "verified",
+      "source": "override",
       "methods_tried": [
         "mac_app_store"
       ],
