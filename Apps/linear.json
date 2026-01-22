@@ -3,7 +3,7 @@
   "description": "App to manage software development and track bugs",
   "version": "1.28.7",
   "url": "https://intunebrew.blob.core.windows.net/pkg/linear_1.28.7.pkg",
-  "bundleId": "",
+  "bundleId": "com.linearity.vn",
   "homepage": "https://linear.app/",
   "fileName": "linear_1.28.7.pkg",
   "type": "app",
