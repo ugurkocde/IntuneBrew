@@ -8778,11 +8778,5 @@
       "source": "file",
       "name": "Wacom Tablet"
     },
-    "linear": {
-      "last_checked": "2026-01-22T14:44:11.274Z",
-      "bundle_id": null,
-      "status": "unknown",
-      "name": "Linear"
-    }
   }
 }
