@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-01-22T00:49:56.698Z",
+  "last_full_scan": "2026-01-22T14:44:11.292Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8777,6 +8777,12 @@
       "status": "verified",
       "source": "file",
       "name": "Wacom Tablet"
+    },
+    "linear": {
+      "last_checked": "2026-01-22T14:44:11.274Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "name": "Linear"
     }
   }
 }
