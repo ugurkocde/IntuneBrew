@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "0348f85176c25ac19582b4d561ce572680aa3ed959e6369e8527624c52d4495f",
   "category": "Developer Tools",
-  "publisher": "Linear, Inc."
+  "publisher": "Linear, Inc.",
+  "previous_version": "1.28.7"
 }

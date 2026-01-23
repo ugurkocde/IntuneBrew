@@ -1,14 +1,14 @@
 {
   "name": "iStats Menus",
   "description": "System monitoring app",
-  "version": "7.20.6",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/istats_menus_7.20.6.pkg",
+  "version": "7.20.7",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/istats_menus_7.20.7.pkg",
   "bundleId": "com.bjango.istatmenus",
   "homepage": "https://bjango.com/mac/istatmenus/",
-  "fileName": "istats_menus_7.20.6.pkg",
+  "fileName": "istats_menus_7.20.7.pkg",
   "type": "app",
-  "sha": "12fc7b93d30c0ac6634f8ce7556988781c296615051e1a89e6e9ac638ce1c22e",
+  "sha": "8961d8a1581441495651cb40b5a90b15b63785b9c6d9bf89a74450fbc19fa4e7",
   "category": "Utilities",
   "publisher": "Bjango",
-  "previous_version": "7.20.6"
+  "previous_version": "7.20.7"
 }

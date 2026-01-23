@@ -1,13 +1,13 @@
 {
   "name": "Nextcloud",
   "description": "Desktop sync client for Nextcloud software products",
-  "version": "4.0.5",
-  "url": "https://github.com/nextcloud-releases/desktop/releases/download/v4.0.5/Nextcloud-4.0.5.pkg",
+  "version": "4.0.6",
+  "url": "https://github.com/nextcloud-releases/desktop/releases/download/v4.0.6/Nextcloud-4.0.6.pkg",
   "bundleId": "com.nextcloud.desktopclient",
   "homepage": "https://nextcloud.com/",
-  "fileName": "Nextcloud-4.0.5.pkg",
+  "fileName": "Nextcloud-4.0.6.pkg",
   "type": "pkg",
-  "sha": "cdd1dfb124020fe79079dc410276473a5327d9edfd821ec9c9a58f7b770a5657",
+  "sha": "906ef98acda3a7a7e1ae2fa1cf3f1af7abb17951010a699545cd012398032e45",
   "category": "Productivity",
   "publisher": "Nextcloud GmbH",
   "previous_version": "4.0.5"

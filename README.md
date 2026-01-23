@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1230-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -330,26 +330,34 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-22 14:27 UTC*
+*Last checked: 2026-01-23 00:36 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.2 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Yaak | 2025.9.3 | 2026.1.0 |
-| Canva | 1.119.0 | 1.120.0 |
-| DataGrip | 2025.3.3 | 2025.3.4 |
-| DbGate | 6.8.2 | 7.0.0 |
-| 8x8_work | 8.29.1-3 | 8.30.2-10 |
+| Reqable | 3.0.36 | 3.0.37 |
+| JetBrains PhpStorm | 2025.3.1.1 | 2025.3.2 |
+| XMind | 26.01.07153-202512110349 | 26.02.02052-202601211723 |
+| WebStorm | 2025.3.1.1 | 2025.3.2 |
+| Zed | 0.220.2 | 0.220.3 |
+| Opera | 126.0.5750.43 | 126.0.5750.59 |
+| CLion | 2025.3.1.1 | 2025.3.2 |
+| IntelliJ IDEA Ultimate | 2025.3.1.1 | 2025.3.2 |
+| Opera GX | 126.0.5750.36 | 126.0.5750.56 |
+| RubyMine | 2025.3.1.1 | 2025.3.2 |
 | Caffeine | 1.6.2 | 1.1.4 |
+| Fellow | 5.0.0 | 5.0.1 |
+| Mendeley Reference Manager | 2.141.2 | 2.142.0 |
 | Multi | 0.538.2 | 3.0.1 |
-| Pale Moon | 34.0.0 | 34.0.1 |
-| Riverside Studio | 1.18.2 | 1.19.0 |
-| Shapr3D | 5.1015.0.10234 | 26.0.0.10296 |
-| Tribler | 8.2.3 | 8.3.1 |
-| Cisco Jabber | 20251118100311 | 20260122074039 |
+| OpenBoard | 1.7.3 | 1.7.4 |
+| Raspberry Pi Imager | 2.0.5 | 2.0.6 |
+| TREZOR Suite | 25.12.2 | 26.1.2 |
+| WebCatalog | 73.1.1 | 73.2.0 |
+| Nextcloud | 4.0.5 | 4.0.6 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

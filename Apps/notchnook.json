@@ -1,14 +1,14 @@
 {
   "name": "NotchNook",
   "description": "Handy utility to manage and customize the notch area",
-  "version": "1.5.4",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/notchnook_1.5.4.pkg",
+  "version": "1.5.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/notchnook_1.5.5.pkg",
   "bundleId": "lo.cafe.NotchNook",
   "homepage": "https://lo.cafe/notchnook",
-  "fileName": "notchnook_1.5.4.pkg",
+  "fileName": "notchnook_1.5.5.pkg",
   "type": "app",
-  "sha": "4a2d6cfa8d2715d924f0ba2c86e611aba7278c7d1505a55b5566d3bf89258cd0",
+  "sha": "b845e874e9338c0feae0373eb4c35aa415e79abee38f89cf21a53ccac0688959",
   "category": "Utilities",
   "publisher": "lo.cafe",
-  "previous_version": "1.5.4"
+  "previous_version": "1.5.5"
 }
