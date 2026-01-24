@@ -1,14 +1,14 @@
 {
   "name": "Google Antigravity",
   "description": "AI Coding Agent IDE",
-  "version": "1.14.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/google_antigravity_1.14.2.pkg",
+  "version": "1.15.6",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/google_antigravity_1.15.6.pkg",
   "bundleId": "com.google.antigravity",
   "homepage": "https://antigravity.google/",
-  "fileName": "google_antigravity_1.14.2.pkg",
+  "fileName": "google_antigravity_1.15.6.pkg",
   "type": "app",
-  "sha": "952ce2c7f79b221c6d93aa89e930c41228d528bc555d88d45b7c92c4e76f75fa",
+  "sha": "b8391d25383aca9528e3ea160ef8f03c39dd042bb3956b19f4226854add17a70",
   "category": "Developer Tools",
   "publisher": "Google LLC",
-  "previous_version": "1.14.2"
+  "previous_version": "1.15.6"
 }

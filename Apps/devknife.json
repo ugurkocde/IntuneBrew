@@ -1,12 +1,12 @@
 {
   "name": "DevKnife",
   "description": "Collection of handy developer tools",
-  "version": "1.9.0",
-  "url": "https://files.solotuna.com/devknife/DevKnife-1.9.0.dmg",
+  "version": "1.9.1",
+  "url": "https://files.solotuna.com/devknife/DevKnife-1.9.1.dmg",
   "bundleId": "com.solotuna.devknife",
   "homepage": "https://devknife.app/",
-  "fileName": "DevKnife-1.9.0.dmg",
-  "sha": "7d62b28202325d2fbd5f1e9ea2ceb9664c674c50cb9c524947e97dffdba2d630",
+  "fileName": "DevKnife-1.9.1.dmg",
+  "sha": "ce054512db7f77d730b419787ee9f0de4c642bfc22c372775d62c080e7592e47",
   "category": "Developer Tools",
   "publisher": "DevKnife",
   "previous_version": "1.9.0"

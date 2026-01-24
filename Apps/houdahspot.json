@@ -1,14 +1,14 @@
 {
   "name": "HoudahSpot",
   "description": "File searching application",
-  "version": "6.6.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/houdahspot_6.6.1.pkg",
+  "version": "6.7.1",
+  "url": "https://dl.houdah.com/houdahSpot/updates/cast_assets/146cb2a9-cfb3-4b8c-838a-5348d747d7b9/HoudahSpot_6.7.1.dmg",
   "bundleId": "com.houdah.HoudahSpot",
   "homepage": "https://www.houdah.com/houdahSpot/",
   "fileName": "houdahspot_6.6.1.pkg",
   "type": "app",
-  "sha": "f45ddf2ba628571a1765d173805bc5ae7fa15817b05e3397f9e9193e9defd9e4",
+  "sha": "672bfcc58f1744c061b3767711b128b99fda65a6c9f19223ff2e058624b4d158",
   "category": "Utilities",
   "publisher": "Houdah Software",
-  "previous_version": "6.6.1"
+  "previous_version": "6.7.1"
 }

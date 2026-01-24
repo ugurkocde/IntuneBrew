@@ -1,12 +1,12 @@
 {
   "name": "MQTTX",
   "description": "Cross-platform MQTT 5.0 Desktop Client",
-  "version": "1.12.1",
-  "url": "https://github.com/emqx/MQTTX/releases/download/v1.12.1/MQTTX-1.12.1-arm64.dmg",
+  "version": "1.13.0",
+  "url": "https://github.com/emqx/MQTTX/releases/download/v1.13.0/MQTTX-1.13.0-arm64.dmg",
   "bundleId": "com.electron.mqttx",
   "homepage": "https://mqttx.app/",
-  "fileName": "MQTTX-1.12.1-arm64.dmg",
-  "sha": "f83cdbae6f300d0e4d89f1bacee8717d67acefeca049759c5e6e3509819a32c0",
+  "fileName": "MQTTX-1.13.0-arm64.dmg",
+  "sha": "0c5c012018493194528fa2ada5c5034f2bd24538e1a1e86d58192f768451cb46",
   "category": "Developer Tools",
   "publisher": "EMQ Technologies",
   "previous_version": "1.12.1"

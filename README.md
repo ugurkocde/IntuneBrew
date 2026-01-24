@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1230-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -331,33 +331,32 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-23 00:36 UTC*
+*Last checked: 2026-01-24 00:34 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.2 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Reqable | 3.0.36 | 3.0.37 |
-| JetBrains PhpStorm | 2025.3.1.1 | 2025.3.2 |
-| XMind | 26.01.07153-202512110349 | 26.02.02052-202601211723 |
-| WebStorm | 2025.3.1.1 | 2025.3.2 |
-| Zed | 0.220.2 | 0.220.3 |
-| Opera | 126.0.5750.43 | 126.0.5750.59 |
-| CLion | 2025.3.1.1 | 2025.3.2 |
-| IntelliJ IDEA Ultimate | 2025.3.1.1 | 2025.3.2 |
-| Opera GX | 126.0.5750.36 | 126.0.5750.56 |
-| RubyMine | 2025.3.1.1 | 2025.3.2 |
+| Mozilla Firefox Developer Edition | 148.0b5 | 148.0b6 |
+| NVIDIA GeForce NOW | 2.0.81.172 | 2.0.81.177 |
+| DockDoor | 1.31.1 | 1.31.2 |
+| Downie | 4.11.9 | 4.11.10 |
+| Raycast | 1.104.2 | 1.104.3 |
+| Microsoft Edge | 144.0.3719.82 | 144.0.3719.92 |
+| BoltAI 2 | 2.6.0 | 2.6.1 |
+| Warp | 0.2026.01.14.08.15.stable | 0.2026.01.21.08.14.stable |
+| HTTP Toolkit | 1.24.2 | 1.24.4 |
+| Roam Research | 0.0.31 | 0.0.32 |
 | Caffeine | 1.6.2 | 1.1.4 |
-| Fellow | 5.0.0 | 5.0.1 |
-| Mendeley Reference Manager | 2.141.2 | 2.142.0 |
+| DevKnife | 1.9.0 | 1.9.1 |
+| Electrum | 4.6.2 | 4.7.0 |
+| MQTTX | 1.12.1 | 1.13.0 |
 | Multi | 0.538.2 | 3.0.1 |
-| OpenBoard | 1.7.3 | 1.7.4 |
-| Raspberry Pi Imager | 2.0.5 | 2.0.6 |
-| TREZOR Suite | 25.12.2 | 26.1.2 |
-| WebCatalog | 73.1.1 | 73.2.0 |
-| Nextcloud | 4.0.5 | 4.0.6 |
+| Rize | 2.3.4 | 2.3.6 |
+| Session | 1.17.6 | 1.17.7 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
