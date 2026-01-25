@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1230-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -332,31 +332,26 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-24 00:34 UTC*
+*Last checked: 2026-01-25 00:38 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.2 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Mozilla Firefox Developer Edition | 148.0b5 | 148.0b6 |
-| NVIDIA GeForce NOW | 2.0.81.172 | 2.0.81.177 |
-| DockDoor | 1.31.1 | 1.31.2 |
-| Downie | 4.11.9 | 4.11.10 |
-| Raycast | 1.104.2 | 1.104.3 |
-| Microsoft Edge | 144.0.3719.82 | 144.0.3719.92 |
-| BoltAI 2 | 2.6.0 | 2.6.1 |
-| Warp | 0.2026.01.14.08.15.stable | 0.2026.01.21.08.14.stable |
-| HTTP Toolkit | 1.24.2 | 1.24.4 |
-| Roam Research | 0.0.31 | 0.0.32 |
+| GrandPerspective | 3.6.2 | 3.6.3 |
+| Windows App | 11.3.1 | 11.3.2 |
+| Synology Drive | 4.0.1 | 4.0.2 |
+| Google Drive | 119.0.2 | 120.0.1 |
+| Zed | 0.220.3 | 0.220.5 |
+| ExpanDrive | 2025.11.21.808 | 2026.01.22.812 |
+| Lark | 7.59.12 | 7.60.9 |
 | Caffeine | 1.6.2 | 1.1.4 |
-| DevKnife | 1.9.0 | 1.9.1 |
-| Electrum | 4.6.2 | 4.7.0 |
-| MQTTX | 1.12.1 | 1.13.0 |
+| Capto | 2.1.3 | 2.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Rize | 2.3.4 | 2.3.6 |
-| Session | 1.17.6 | 1.17.7 |
+| Zotero | 7.0.32 | 8.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
