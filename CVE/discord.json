@@ -1,7 +1,7 @@
 {
   "app_name": "Discord",
   "app_key": "discord",
-  "last_updated": "2026-01-24",
+  "last_updated": "2026-01-25",
   "total_cves": 2,
   "summary": {
     "critical": 1,
