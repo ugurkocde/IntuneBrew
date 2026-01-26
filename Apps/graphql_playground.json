@@ -1,0 +1,13 @@
+{
+  "name": "GraphQL Playground",
+  "description": "GraphQL IDE for better development workflows",
+  "version": "1.8.10",
+  "url": "https://github.com/prisma/graphql-playground/releases/download/v1.8.10/graphql-playground-electron-1.8.10.dmg",
+  "bundleId": "cool.graph.playground.helper",
+  "homepage": "https://github.com/prisma/graphql-playground",
+  "fileName": "graphql-playground-electron-1.8.10.dmg",
+  "sha": "43d54be598ec83dddcaee789e8434c547d0ff1a49ffc2d95fb798996293b7f13",
+  "category": "Developer Tools",
+  "publisher": "Prisma",
+  "previous_version": "1.8.10"
+}

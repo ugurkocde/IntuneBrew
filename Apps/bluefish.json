@@ -1,0 +1,13 @@
+{
+  "name": "Bluefish",
+  "description": "Open source code editor",
+  "version": "2.2.19",
+  "url": "https://www.bennewitz.com/bluefish/stable/binaries/macosx/Bluefish-2.2.19.dmg",
+  "bundleId": "nl.openoffice.bluefish",
+  "homepage": "https://bluefish.openoffice.nl/index.html",
+  "fileName": "Bluefish-2.2.19.dmg",
+  "sha": "21eecb9232ca838113259749d2db35f6dc333a32f61324cdbd0feff5b34b05d6",
+  "category": "Developer Tools",
+  "publisher": "Bluefish Team",
+  "previous_version": "2.2.19"
+}

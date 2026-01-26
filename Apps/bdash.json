@@ -1,0 +1,14 @@
+{
+  "name": "Bdash",
+  "description": "Simple SQL Client for lightweight data analysis",
+  "version": "1.31.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/bdash_1.31.0.pkg",
+  "bundleId": "io.bdash",
+  "homepage": "https://github.com/bdash-app/bdash",
+  "fileName": "bdash_1.31.0.pkg",
+  "type": "app",
+  "sha": "250c4c64e3526729d9e8139e2ecaf0a37d746a2d83bf36e862addf1667688c51",
+  "category": "Developer Tools",
+  "publisher": "bdash-app",
+  "previous_version": "1.31.0"
+}

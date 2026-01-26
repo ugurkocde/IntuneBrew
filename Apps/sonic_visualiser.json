@@ -1,0 +1,13 @@
+{
+  "name": "Sonic Visualiser",
+  "description": "Visualisation, analysis, and annotation of music audio recordings",
+  "version": "5.2.1",
+  "url": "https://github.com/sonic-visualiser/sonic-visualiser/releases/download/sv_v5.2.1/Sonic.Visualiser.5.2.1.dmg",
+  "bundleId": "org.sonicvisualiser.SonicVisualiser",
+  "homepage": "https://www.sonicvisualiser.org/",
+  "fileName": "Sonic.Visualiser.5.2.1.dmg",
+  "sha": "bb86819411875cc8128fc49c3899a3c419fba6ff8286ad145bdec02c4bd212f0",
+  "category": "Media",
+  "publisher": "Centre for Digital Music (C4DM), Queen Mary University of London",
+  "previous_version": "5.2.1"
+}

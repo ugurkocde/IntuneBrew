@@ -27,44 +27,44 @@ launchctl unload -w ~/Library/LaunchAgents/N4RA379GBW.com.busymac.busycal3.alarm
 echo "Stopping application with bundle ID N4RA379GBW.com.busymac.busycal3.alarm if running..."
 killall -9 "N4RA379GBW.com.busymac.busycal3.alarm" 2>/dev/null || true
 
-# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2025.sfl*
-echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2025.sfl*..."
-if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2025.sfl*" ]; then
-    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2025.sfl*" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2025.sfl*" ]; then
-    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2025.sfl*" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.busymac.busycal4
-echo "Removing $HOME/Library/Containers/com.busymac.busycal4..."
-if [ -d "$HOME/Library/Containers/com.busymac.busycal4" ]; then
-    rm -rf "$HOME/Library/Containers/com.busymac.busycal4" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.busymac.busycal4" ]; then
-    rm -f "$HOME/Library/Containers/com.busymac.busycal4" 2>/dev/null || true
+# Remove $HOME/Library/Containers/com.busymac.busycal1
+echo "Removing $HOME/Library/Containers/com.busymac.busycal1..."
+if [ -d "$HOME/Library/Containers/com.busymac.busycal1" ]; then
+    rm -rf "$HOME/Library/Containers/com.busymac.busycal1" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.busymac.busycal1" ]; then
+    rm -f "$HOME/Library/Containers/com.busymac.busycal1" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/N4RA379GBW.com.busymac.busycal4.alarm
-echo "Removing $HOME/Library/Containers/N4RA379GBW.com.busymac.busycal4.alarm..."
-if [ -d "$HOME/Library/Containers/N4RA379GBW.com.busymac.busycal4.alarm" ]; then
-    rm -rf "$HOME/Library/Containers/N4RA379GBW.com.busymac.busycal4.alarm" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/N4RA379GBW.com.busymac.busycal4.alarm" ]; then
-    rm -f "$HOME/Library/Containers/N4RA379GBW.com.busymac.busycal4.alarm" 2>/dev/null || true
+# Remove $HOME/Library/Containers/N4RA379GBW.com.busymac.busycal1.alarm
+echo "Removing $HOME/Library/Containers/N4RA379GBW.com.busymac.busycal1.alarm..."
+if [ -d "$HOME/Library/Containers/N4RA379GBW.com.busymac.busycal1.alarm" ]; then
+    rm -rf "$HOME/Library/Containers/N4RA379GBW.com.busymac.busycal1.alarm" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/N4RA379GBW.com.busymac.busycal1.alarm" ]; then
+    rm -f "$HOME/Library/Containers/N4RA379GBW.com.busymac.busycal1.alarm" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Group Containers/com.busymac.busycal4
-echo "Removing $HOME/Library/Group Containers/com.busymac.busycal4..."
-if [ -d "$HOME/Library/Group Containers/com.busymac.busycal4" ]; then
-    rm -rf "$HOME/Library/Group Containers/com.busymac.busycal4" 2>/dev/null || true
-elif [ -f "$HOME/Library/Group Containers/com.busymac.busycal4" ]; then
-    rm -f "$HOME/Library/Group Containers/com.busymac.busycal4" 2>/dev/null || true
+# Remove $HOME/Library/Group Containers/com.busymac.busycal1
+echo "Removing $HOME/Library/Group Containers/com.busymac.busycal1..."
+if [ -d "$HOME/Library/Group Containers/com.busymac.busycal1" ]; then
+    rm -rf "$HOME/Library/Group Containers/com.busymac.busycal1" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/com.busymac.busycal1" ]; then
+    rm -f "$HOME/Library/Group Containers/com.busymac.busycal1" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal4
-echo "Removing $HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal4..."
-if [ -d "$HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal4" ]; then
-    rm -rf "$HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal4" 2>/dev/null || true
-elif [ -f "$HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal4" ]; then
-    rm -f "$HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal4" 2>/dev/null || true
+# Remove $HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal1
+echo "Removing $HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal1..."
+if [ -d "$HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal1" ]; then
+    rm -rf "$HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal1" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal1" ]; then
+    rm -f "$HOME/Library/Group Containers/N4RA379GBW.com.busymac.busycal1" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

@@ -8,5 +8,7 @@
   "fileName": "middleclick_3.1.3.pkg",
   "type": "app",
   "sha": "73d006bf446e8310acc950dd864b783667f3eb6417cbc42c161d87c7119a38dd",
-  "previous_version": "3.1.3"
+  "previous_version": "3.1.3",
+  "category": "Utilities",
+  "publisher": "artginzburg"
 }

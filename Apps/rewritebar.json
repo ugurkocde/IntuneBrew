@@ -1,0 +1,14 @@
+{
+  "name": "RewriteBar",
+  "description": "AI-powered writing assistant",
+  "version": "2.24.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/rewritebar_2.24.0.pkg",
+  "bundleId": "com.m91michel.rewritebar",
+  "homepage": "https://rewritebar.com/",
+  "fileName": "rewritebar_2.24.0.pkg",
+  "type": "app",
+  "sha": "28c259ff94d5b035cecb6dd217f728a88255cc7b770fdef7374ce2fa8800547b",
+  "category": "Productivity",
+  "publisher": "RewriteBar",
+  "previous_version": "2.24.0"
+}

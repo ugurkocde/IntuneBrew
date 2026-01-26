@@ -1,15 +1,36 @@
 {
   "app_name": "Basecamp",
-  "last_updated": "2025-12-07",
+  "app_key": "basecamp",
+  "last_updated": "2026-01-26",
+  "total_cves": 1,
+  "summary": {
+    "critical": 0,
+    "high": 1,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
   "vulnerabilities": [
     {
       "cve_id": "CVE-2023-36612",
       "published_date": "2023-06-25",
       "last_modified_date": "2024-11-21",
+      "description": "Directory traversal can occur in the Basecamp com.basecamp.bc3 application before 4.2.1 for Android, which may allow an attacker to write arbitrary files in the application's private directory. Additionally, by using a malicious intent, the attacker may redirect the server's responses (containing sensitive information) to third-party applications by using a custom-crafted deeplink scheme.",
       "base_score": 7.5,
       "severity": "HIGH",
-      "description": "Directory traversal can occur in the Basecamp com.basecamp.bc3 application before 4.2.1 for Android, which may allow an attacker to write arbitrary files in the application's private directory. Additionally, by using a malicious intent, the attacker may redirect the server's responses (containing sensitive information) to third-party applications by using a custom-crafted deeplink scheme.",
-      "cpe_name": "cpe:2.3:a:basecamp:basecamp:4.2.0:*:*:*:*:android:*:*"
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:H/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "4.2.1",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "4.2.1",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "basecamp",
+      "product": "basecamp"
     }
   ]
 }

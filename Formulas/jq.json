@@ -1,0 +1,12 @@
+{
+  "name": "jq",
+  "description": "Lightweight and flexible command-line JSON processor",
+  "version": "1.8.1",
+  "homepage": "https://jqlang.github.io/jq/",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/jq_1.8.1_arm64.pkg",
+  "fileName": "jq_1.8.1_arm64.pkg",
+  "bundledDependencies": [
+    "oniguruma"
+  ],
+  "binaryPath": "/usr/local/bin/jq"
+}

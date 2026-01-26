@@ -8,5 +8,7 @@
   "fileName": "reactotron_3.8.2.pkg",
   "type": "app",
   "sha": "fcee49253dea53b711aa8802c0d604f9d1e8f45fcd54bf454fb2eb67680dde03",
-  "previous_version": "3.8.2"
+  "previous_version": "3.8.2",
+  "category": "Developer Tools",
+  "publisher": "Infinite Red"
 }

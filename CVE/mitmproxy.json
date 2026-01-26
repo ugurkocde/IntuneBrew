@@ -1,33 +1,78 @@
 {
-  "app_name": "mitmproxy",
-  "last_updated": "2025-12-07",
+  "app_name": "Mitmproxy",
+  "app_key": "mitmproxy",
+  "last_updated": "2026-01-26",
+  "total_cves": 3,
+  "summary": {
+    "critical": 1,
+    "high": 2,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
   "vulnerabilities": [
     {
       "cve_id": "CVE-2022-24766",
       "published_date": "2022-03-21",
       "last_modified_date": "2024-11-21",
+      "description": "mitmproxy is an interactive, SSL/TLS-capable intercepting proxy. In mitmproxy 7.0.4 and below, a malicious client or server is able to perform HTTP request smuggling attacks through mitmproxy. This means that a malicious client/server could smuggle a request/response through mitmproxy as part of another request/response's HTTP message body. While mitmproxy would only see one request, the target server would see multiple requests. A smuggled request is still captured as part of another request's body, but it does not appear in the request list and does not go through the usual mitmproxy event hooks, where users may have implemented custom access control checks or input sanitization. Unless mitmproxy is used to protect an HTTP/1 service, no action is required. The vulnerability has been fixed in mitmproxy 8.0.0 and above. There are currently no known workarounds.",
       "base_score": 9.8,
       "severity": "CRITICAL",
-      "description": "mitmproxy is an interactive, SSL/TLS-capable intercepting proxy. In mitmproxy 7.0.4 and below, a malicious client or server is able to perform HTTP request smuggling attacks through mitmproxy. This means that a malicious client/server could smuggle a request/response through mitmproxy as part of another request/response's HTTP message body. While mitmproxy would only see one request, the target server would see multiple requests. A smuggled request is still captured as part of another request's body, but it does not appear in the request list and does not go through the usual mitmproxy event hooks, where users may have implemented custom access control checks or input sanitization. Unless mitmproxy is used to protect an HTTP/1 service, no action is required. The vulnerability has been fixed in mitmproxy 8.0.0 and above. There are currently no known workarounds.",
-      "cpe_name": "cpe:2.3:a:mitmproxy:mitmproxy:3.0.3:*:*:*:*:*:*:*"
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "7.0.4",
+      "affected_version_end_type": "including",
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "mitmproxy",
+      "product": "mitmproxy"
     },
     {
       "cve_id": "CVE-2021-39214",
       "published_date": "2021-09-16",
       "last_modified_date": "2024-11-21",
+      "description": "mitmproxy is an interactive, SSL/TLS-capable intercepting proxy. In mitmproxy 7.0.2 and below, a malicious client or server is able to perform HTTP request smuggling attacks through mitmproxy. This means that a malicious client/server could smuggle a request/response through mitmproxy as part of another request/response's HTTP message body. While a smuggled request is still captured as part of another request's body, it does not appear in the request list and does not go through the usual mitmproxy event hooks, where users may have implemented custom access control checks or input sanitization. Unless one uses mitmproxy to protect an HTTP/1 service, no action is required. The vulnerability has been fixed in mitmproxy 7.0.3 and above.",
       "base_score": 8.1,
       "severity": "HIGH",
-      "description": "mitmproxy is an interactive, SSL/TLS-capable intercepting proxy. In mitmproxy 7.0.2 and below, a malicious client or server is able to perform HTTP request smuggling attacks through mitmproxy. This means that a malicious client/server could smuggle a request/response through mitmproxy as part of another request/response's HTTP message body. While a smuggled request is still captured as part of another request's body, it does not appear in the request list and does not go through the usual mitmproxy event hooks, where users may have implemented custom access control checks or input sanitization. Unless one uses mitmproxy to protect an HTTP/1 service, no action is required. The vulnerability has been fixed in mitmproxy 7.0.3 and above.",
-      "cpe_name": "cpe:2.3:a:mitmproxy:mitmproxy:3.0.3:*:*:*:*:*:*:*"
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "7.0.2",
+      "affected_version_end_type": "including",
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "mitmproxy",
+      "product": "mitmproxy"
     },
     {
       "cve_id": "CVE-2018-14505",
       "published_date": "2018-07-22",
       "last_modified_date": "2024-11-21",
+      "description": "mitmweb in mitmproxy v4.0.3 allows DNS Rebinding attacks, related to tools/web/app.py.",
       "base_score": 8.8,
       "severity": "HIGH",
-      "description": "mitmweb in mitmproxy v4.0.3 allows DNS Rebinding attacks, related to tools/web/app.py.",
-      "cpe_name": "cpe:2.3:a:mitmproxy:mitmproxy:4.0.3:*:*:*:*:*:*:*"
+      "cvss_version": "3.0",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "mitmproxy",
+      "product": "mitmproxy"
     }
   ]
 }

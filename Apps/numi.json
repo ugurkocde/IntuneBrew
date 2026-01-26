@@ -1,0 +1,13 @@
+{
+  "name": "Numi",
+  "description": "Calculator and converter application",
+  "version": "3.32.721",
+  "url": "https://s3.numi.app/updates/3.32.721/Numi.dmg",
+  "bundleId": "com.dmitrynikolaev.numi",
+  "homepage": "https://numi.app/",
+  "fileName": "Numi.dmg",
+  "sha": "21b5f89ecacfab039295874d24b79a450c080d526bcdf31716a46a8b11dddb30",
+  "category": "Productivity",
+  "publisher": "Numi",
+  "previous_version": "3.32.721"
+}

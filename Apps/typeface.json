@@ -1,0 +1,13 @@
+{
+  "name": "Typeface",
+  "description": "Font manager application",
+  "version": "4.2.3",
+  "url": "https://dcdn.typefaceapp.com/Typeface-4.2.3-4845/Typeface-4.2.3-4845.dmg",
+  "bundleId": "com.criminalbird.typeface.standalone",
+  "homepage": "https://typefaceapp.com/",
+  "fileName": "Typeface-4.2.3-4845.dmg",
+  "sha": "84d11c8cbfc70f18ca41106b9f5f9a1ba4d7e305d34f88ac178a3dca4b457bad",
+  "category": "Design",
+  "publisher": "Typeface",
+  "previous_version": "4.2.3"
+}

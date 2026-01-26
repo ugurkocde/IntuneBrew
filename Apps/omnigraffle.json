@@ -1,0 +1,13 @@
+{
+  "name": "OmniGraffle",
+  "description": "Visual communication software",
+  "version": "7.25.1",
+  "url": "https://downloads.omnigroup.com/software/macOS/12/OmniGraffle-7.25.1.dmg",
+  "bundleId": "com.omnigroup.OmniGraffle7",
+  "homepage": "https://www.omnigroup.com/omnigraffle/",
+  "fileName": "OmniGraffle-7.25.1.dmg",
+  "sha": "9921a364ed3f6d0e76c3b5f37e7a881ab9e6a513fc4536492900f45b6b30ef72",
+  "category": "Design",
+  "publisher": "The Omni Group",
+  "previous_version": "7.25.1"
+}

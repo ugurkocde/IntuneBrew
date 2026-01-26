@@ -1,0 +1,12 @@
+{
+  "name": "Limitless",
+  "description": "Personal AI-powered transcription and notetaking service",
+  "version": "2.961.1",
+  "url": "https://download.limitless.ai/Limitless.dmg",
+  "bundleId": "ai.limitless.desktop",
+  "homepage": "https://www.limitless.ai/",
+  "fileName": "Limitless.dmg",
+  "category": "Productivity",
+  "publisher": "Limitless AI",
+  "previous_version": "2.961.1"
+}

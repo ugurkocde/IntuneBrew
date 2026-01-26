@@ -18,5 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "5.0.68"
   },
+  "category": "Productivity",
+  "publisher": "Any.do, Inc.",
   "previous_version": "5.0.68"
 }

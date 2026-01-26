@@ -1,0 +1,12 @@
+{
+  "name": "Skype",
+  "description": "Video chat, voice call and instant messaging application",
+  "version": "8.150.0.125",
+  "url": "https://download.skype.com/s4l/download/mac/Skype-8.150.0.125.dmg",
+  "bundleId": "com.skype.skype",
+  "homepage": "https://www.skype.com/",
+  "fileName": "Skype-8.150.0.125.dmg",
+  "category": "Communication",
+  "publisher": "Microsoft Corporation",
+  "previous_version": "8.150.0.125"
+}

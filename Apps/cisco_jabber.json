@@ -1,13 +1,13 @@
 {
   "name": "Cisco Jabber",
   "description": "Jabber client from Cisco",
-  "version": "20251118100311",
-  "url": "https://binaries.webex.com/jabberclientmac/20251118100311/Install_Cisco-Jabber-Mac.pkg",
+  "version": "20260122074039",
+  "url": "https://binaries.webex.com/jabberclientmac/20260122074039/Install_Cisco-Jabber-Mac.pkg",
   "bundleId": "com.cisco.Jabber",
   "homepage": "https://www.webex.com/downloads/jabber.html",
   "fileName": "Install_Cisco-Jabber-Mac.pkg",
   "type": "pkg",
-  "sha": "02a836c3cced02f2780f980bad48edcf27d62dbd69a00d53d25911d2b7158c7f",
+  "sha": "5644700e420febc1eca304c0a0f24bcff1e64b424112e1beda025d2eb78e16de",
   "changelog": "https://help.webex.com/en-us/article/nqx2qkb/Jabber-Release-Notes",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:26:47Z",
@@ -19,5 +19,7 @@
     "bundle_id_status": "verified",
     "installed_version": "15.1.0"
   },
-  "previous_version": "20251118100311"
+  "category": "Communication",
+  "publisher": "Cisco Systems, Inc.",
+  "previous_version": "20260122074039"
 }

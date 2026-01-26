@@ -1,0 +1,13 @@
+{
+  "name": "RetroArch",
+  "description": "Frontend for emulators, game engines and media players (OpenGL graphics API)",
+  "version": "1.22.2",
+  "url": "https://buildbot.libretro.com/stable/1.22.2/apple/osx/x86_64/RetroArch.dmg",
+  "bundleId": "com.libretro.RetroArch",
+  "homepage": "https://www.retroarch.com/",
+  "fileName": "RetroArch.dmg",
+  "sha": "b807f9040caf2b94973ec02dc4a924a45ceb7eee17f8e75e3e04d66838871cb6",
+  "category": "Utilities",
+  "publisher": "Libretro",
+  "previous_version": "1.22.2"
+}

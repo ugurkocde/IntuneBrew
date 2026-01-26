@@ -1,0 +1,13 @@
+{
+  "name": "X Lossless Decoder",
+  "description": "Lossless audio decoder",
+  "version": "20250302",
+  "url": "https://downloads.sourceforge.net/xld/xld-20250302.dmg",
+  "bundleId": "jp.tmkk.XLD",
+  "homepage": "https://tmkk.undo.jp/xld/index_e.html",
+  "fileName": "xld-20250302.dmg",
+  "sha": "0032a5470ea4e32a11a35b8077ebf4986102891f8eb82743094f2c6621ad8aeb",
+  "category": "Media",
+  "publisher": "TMKK",
+  "previous_version": "20250302"
+}

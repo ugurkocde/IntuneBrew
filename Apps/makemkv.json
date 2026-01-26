@@ -1,0 +1,13 @@
+{
+  "name": "MakeMKV",
+  "description": "Video format converter (transcoder)",
+  "version": "1.18.3",
+  "url": "https://www.makemkv.com/download/makemkv_v1.18.3_osx.dmg",
+  "bundleId": "com.makemkv.MakeMKV",
+  "homepage": "https://www.makemkv.com/",
+  "fileName": "makemkv_v1.18.3_osx.dmg",
+  "sha": "2ba5d9a9e281016f58f54de201c2a11da0e1f5b12d1bc854537473568b7ded5b",
+  "category": "Media",
+  "publisher": "Guinpin Software",
+  "previous_version": "1.18.2"
+}

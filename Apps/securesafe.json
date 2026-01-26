@@ -1,0 +1,14 @@
+{
+  "name": "SecureSafe",
+  "description": "Highly secure online storage with password manager",
+  "version": "2.25.0",
+  "url": "https://app.securesafe.com/app/download/securesafe-2.25.0.pkg",
+  "bundleId": "com.dswiss.securesafe.pkg.sync",
+  "homepage": "https://www.securesafe.com/",
+  "fileName": "securesafe-2.25.0.pkg",
+  "type": "pkg",
+  "sha": "d3f813723e48e49f56f097095bf6de35215b399939e1ece09c82df5ce6bb68f8",
+  "category": "Security",
+  "publisher": "SecureSafe",
+  "previous_version": "2.25.0"
+}

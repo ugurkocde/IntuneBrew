@@ -1,0 +1,13 @@
+{
+  "name": "Mem",
+  "description": "Capture and access information from anywhere",
+  "version": "0.43.0",
+  "url": "https://storage.googleapis.com/mem-desktop-stable-releases/Mem-0.43.0.dmg",
+  "bundleId": "org.memlabs.Mem",
+  "homepage": "https://get.mem.ai/",
+  "fileName": "Mem-0.43.0.dmg",
+  "sha": "8b6298f6dac699be5c160679d3759149a262cf1e41ea305084648dd591de41ae",
+  "category": "Productivity",
+  "publisher": "Mem Labs, Inc.",
+  "previous_version": "0.43.0"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "OK JSON",
+  "description": "Scriptable JSON formatter and editor",
+  "version": "2.10.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/ok_json_2.10.1.pkg",
+  "bundleId": "com.nicola.OK-JSON",
+  "homepage": "https://okjson.app/",
+  "fileName": "ok_json_2.10.1.pkg",
+  "type": "app",
+  "sha": "3ae9a64cdb6602369d39168e7220ac6891ba068cf7da30de844f903af05e8761",
+  "category": "Developer Tools",
+  "publisher": "OK JSON",
+  "previous_version": "2.10.1"
+}

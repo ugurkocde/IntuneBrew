@@ -8,5 +8,7 @@
   "fileName": "sqlpro_for_mysql_2025.10.pkg",
   "type": "app",
   "sha": "7a3727bbb0be0a936100ac35bde4221ab25e54de67722c3c161fd4659983a74c",
-  "previous_version": "2025.10"
+  "previous_version": "2025.10",
+  "category": "Developer Tools",
+  "publisher": "Hankinsoft Development, Ltd."
 }

@@ -8,5 +8,7 @@
   "fileName": "plistedit_pro_1.10.0.pkg",
   "type": "app",
   "sha": "87a69ed471a1ccad9e33b9803492f7febd3e48aaf7670b12600647b8248c846c",
-  "previous_version": "1.10.0"
+  "previous_version": "1.10.0",
+  "category": "Developer Tools",
+  "publisher": "Fat Cat Software"
 }

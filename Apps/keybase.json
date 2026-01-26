@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "312521186a5ab3e5a03748ba57d263949e752b12f6dbad9312cfec7f8dd72253",
   "changelog": "https://github.com/keybase/client/releases",
-  "previous_version": "6.5.4"
+  "previous_version": "6.5.4",
+  "category": "Security",
+  "publisher": "Keybase, Inc."
 }

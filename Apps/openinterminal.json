@@ -1,0 +1,14 @@
+{
+  "name": "OpenInTerminal",
+  "description": "Finder Toolbar app to open the current directory in Terminal or Editor",
+  "version": "2.3.8",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/openinterminal_2.3.8.pkg",
+  "bundleId": "wang.jianing.app.OpenInTerminal",
+  "homepage": "https://github.com/Ji4n1ng/OpenInTerminal",
+  "fileName": "openinterminal_2.3.8.pkg",
+  "type": "app",
+  "sha": "fd37fe5e5d254b786fd80b7b1ddd0ac132c615a7b924ae1dc601f5788b6dd4d1",
+  "category": "Developer Tools",
+  "publisher": "Ji4n1ng",
+  "previous_version": "2.3.8"
+}

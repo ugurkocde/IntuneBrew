@@ -1,0 +1,13 @@
+{
+  "name": "Jiggler",
+  "description": "Keep your computer awake",
+  "version": "1.10",
+  "url": "https://downloads.sticksoftware.com/Jiggler.dmg",
+  "bundleId": "com.stick.app.jiggler",
+  "homepage": "https://www.sticksoftware.com/software/Jiggler.html",
+  "fileName": "Jiggler.dmg",
+  "sha": "086e098bdc2178cff9d429ebd526c61f2c7c234f35126bc751f9012ebfa09a62",
+  "category": "Utilities",
+  "publisher": "Stick Software",
+  "previous_version": "1.10"
+}

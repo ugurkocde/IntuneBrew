@@ -1,11 +1,13 @@
 {
   "name": "MySQL Workbench",
   "description": "Visual tool to design, develop and administer MySQL servers",
-  "version": "8.0.45",
-  "url": "https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.45-macos-arm64.dmg",
+  "version": "8.0.46",
+  "url": "https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.46-macos-arm64.dmg",
   "bundleId": "com.oracle.workbench.MySQLWorkbench",
   "homepage": "https://www.mysql.com/products/workbench/",
-  "fileName": "mysql-workbench-community-8.0.45-macos-arm64.dmg",
-  "sha": "8bbf8bdcce3e890c979373a0dbff3617985ec032b1cf50cb16282a0797b20799",
-  "previous_version": "8.0.45"
+  "fileName": "mysql-workbench-community-8.0.46-macos-arm64.dmg",
+  "sha": "3e0d9fbad11f1496a8d27a80c0e64a07565fb8b8bc27cddfff9754686353d164",
+  "category": "Developer Tools",
+  "publisher": "Oracle Corporation",
+  "previous_version": "8.0.46"
 }

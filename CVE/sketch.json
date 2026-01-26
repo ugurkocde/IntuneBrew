@@ -1,15 +1,57 @@
 {
   "app_name": "Sketch",
-  "last_updated": "2025-12-07",
+  "app_key": "sketch",
+  "last_updated": "2026-01-26",
+  "total_cves": 2,
+  "summary": {
+    "critical": 1,
+    "high": 1,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
   "vulnerabilities": [
     {
       "cve_id": "CVE-2021-40531",
       "published_date": "2021-09-06",
       "last_modified_date": "2024-11-21",
+      "description": "Sketch before 75 allows library feeds to be used to bypass file quarantine. Files are automatically downloaded and opened, without the com.apple.quarantine extended attribute. This results in remote code execution, as demonstrated by CommandString in a terminal profile to Terminal.app.",
       "base_score": 9.8,
       "severity": "CRITICAL",
-      "description": "Sketch before 75 allows library feeds to be used to bypass file quarantine. Files are automatically downloaded and opened, without the com.apple.quarantine extended attribute. This results in remote code execution, as demonstrated by CommandString in a terminal profile to Terminal.app.",
-      "cpe_name": "cpe:2.3:a:sketch:sketch:3.0:*:*:*:*:*:*:*"
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "75",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "75",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "sketch",
+      "product": "sketch"
+    },
+    {
+      "cve_id": "CVE-2002-2047",
+      "published_date": "2002-12-31",
+      "last_modified_date": "2025-04-03",
+      "description": "The file preview functionality in Sketch 0.6.12 and earlier allows remote attackers to execute arbitrary commands via shell metacharacters in the filename of an encapsulated Postscript (EPS) file.",
+      "base_score": 10.0,
+      "severity": "HIGH",
+      "cvss_version": "2.0",
+      "cvss_vector": "AV:N/AC:L/Au:N/C:C/I:C/A:C",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "sketch",
+      "product": "sketch"
     }
   ]
 }

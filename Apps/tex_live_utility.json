@@ -8,5 +8,7 @@
   "fileName": "tex_live_utility_1.54.pkg",
   "type": "app",
   "sha": "e03828735fd64a01b4a23da18ceda04e51b1c6c117653e26d470689bca2ba37c",
-  "previous_version": "1.54"
+  "previous_version": "1.54",
+  "category": "Utilities",
+  "publisher": "Adam Maxwell"
 }

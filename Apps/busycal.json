@@ -1,14 +1,14 @@
 {
   "name": "BusyCal",
   "description": "Calendar software focusing on flexibility and reliability",
-  "version": "2025.4.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/busycal_2025.4.2.pkg",
-  "bundleId": "com.busymac.busycal3.pkg",
+  "version": "2026.1.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/busycal_2026.1.1.pkg",
+  "bundleId": "com.busymac.busycal3",
   "homepage": "https://busymac.com/busycal/index.html",
-  "fileName": "busycal_2025.4.2.pkg",
+  "fileName": "busycal_2026.1.1.pkg",
   "type": "app",
-  "sha": "57febf681394b754176b70ab856e229e1f895766b41ddcb5381d8f325e5aa7ad",
-  "previous_version": "2025.4.2",
+  "sha": "e5379a64b633b31235f76a833ebb5a3dc867f6f3078cc16050182833b6e3c13a",
+  "previous_version": "2026.1.1",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:45:22Z",
     "qa_result": "Installation successful and verified",
@@ -18,5 +18,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "mismatch",
     "installed_version": "2025.2.1"
-  }
+  },
+  "category": "Productivity",
+  "publisher": "BusyMac"
 }

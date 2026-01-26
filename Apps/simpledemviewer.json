@@ -1,0 +1,14 @@
+{
+  "name": "SimpleDEMViewer",
+  "description": "Digital Elevation Model viewer",
+  "version": "8.5.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/simpledemviewer_8.5.2.pkg",
+  "bundleId": "jp.jizoh.simpledemviewer",
+  "homepage": "https://jizoh.jp/english.html",
+  "fileName": "simpledemviewer_8.5.2.pkg",
+  "type": "app",
+  "sha": "ce75198be97fbd93f60fc49757988c5e5a118521856db748212c84ede76e4693",
+  "category": "Utilities",
+  "publisher": "Jizoh",
+  "previous_version": "8.5.2"
+}

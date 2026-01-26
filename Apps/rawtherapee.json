@@ -1,0 +1,13 @@
+{
+  "name": "RawTherapee",
+  "description": "RAW photo processor",
+  "version": "5.12",
+  "url": "https://rawtherapee.com/shared/builds/mac/RawTherapee_macOS_15.4_Universal_5.12.zip",
+  "bundleId": "com.rawtherapee.RawTherapee",
+  "homepage": "https://rawtherapee.com/",
+  "fileName": "RawTherapee_macOS_15.4_Universal_5.12.zip",
+  "type": "app",
+  "category": "Media",
+  "publisher": "RawTherapee Team",
+  "previous_version": "5.12"
+}

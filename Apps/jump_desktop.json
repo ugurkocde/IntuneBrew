@@ -1,0 +1,14 @@
+{
+  "name": "Jump Desktop",
+  "description": "Remote desktop application",
+  "version": "9.1.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/jump_desktop_9.1.9.pkg",
+  "bundleId": "com.p5sys.jump.connect",
+  "homepage": "https://jumpdesktop.com/#jdmac",
+  "fileName": "jump_desktop_9.1.9.pkg",
+  "type": "app",
+  "previous_version": "9.1.9",
+  "sha": "cfae5e5d706d3ade778fc31acc7719336cf96a03e2d033e693baf70882f88f2d",
+  "category": "Productivity",
+  "publisher": "Jump Desktop"
+}

@@ -1,0 +1,250 @@
+name: Fetch Missing App Icons
+
+on:
+  workflow_dispatch:
+    inputs:
+      limit:
+        description: "Max number of apps to process (0 = all)"
+        required: false
+        default: "0"
+      force:
+        description: "Force re-fetch all icons (overwrites existing)"
+        required: false
+        type: boolean
+        default: false
+  schedule:
+    - cron: "30 0 * * *" # Run 30 min after main workflow (midnight:30 UTC)
+  workflow_run:
+    workflows: ["Build App Packages and Collect App Information"]
+    types: [completed]
+
+jobs:
+  fetch-icons:
+    runs-on: macos-latest
+    if: ${{ github.event.workflow_run.conclusion == 'success' || github.event_name != 'workflow_run' }}
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests Pillow
+
+      - name: Fetch missing app icons
+        working-directory: .github/scripts
+        run: |
+          ARGS=""
+
+          # Add --force if specified
+          if [ "${{ github.event.inputs.force }}" == "true" ]; then
+            ARGS="$ARGS --force"
+          fi
+
+          # Add --limit if specified
+          LIMIT="${{ github.event.inputs.limit || '0' }}"
+          if [ "$LIMIT" != "0" ]; then
+            ARGS="$ARGS --limit $LIMIT"
+          fi
+
+          python fetch_app_icons.py $ARGS
+
+      - name: Commit and push new icons
+        id: commit-icons
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add Logos/*.png
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            echo "icons_added=false" >> $GITHUB_OUTPUT
+            exit 0
+          fi
+
+          echo "icons_added=true" >> $GITHUB_OUTPUT
+
+          # Use appropriate commit message based on force mode
+          if [ "${{ github.event.inputs.force }}" == "true" ]; then
+            git commit -m "Update app icons (force refresh)"
+          else
+            git commit -m "Add missing app icons"
+          fi
+
+          MAX_RETRIES=5
+          RETRY_COUNT=0
+          RETRY_DELAY=5
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
+
+            # Clean up any failed rebase state
+            git rebase --abort 2>/dev/null || true
+
+            # Stash any unstaged changes before rebasing
+            git stash --include-untracked || true
+
+            if git pull --rebase origin main; then
+              git stash pop || true
+
+              if git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git; then
+                echo "Push successful"
+                exit 0
+              fi
+            else
+              # Abort failed rebase and restore state
+              git rebase --abort 2>/dev/null || true
+              git stash pop || true
+            fi
+
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+              echo "Push failed, retrying in ${RETRY_DELAY} seconds..."
+              sleep $RETRY_DELAY
+              RETRY_DELAY=$((RETRY_DELAY * 2))
+            fi
+          done
+
+          echo "Push failed after $MAX_RETRIES attempts"
+          exit 1
+
+      - name: Update README with new logos
+        if: steps.commit-icons.outputs.icons_added == 'true'
+        run: |
+          # Pull latest changes after icon commit
+          git pull origin main
+
+          # Run Python script to update README with logos
+          python << 'EOF'
+          import json
+          import os
+          import re
+          from pathlib import Path
+
+          def sanitize_filename(name):
+              sanitized = name.replace(' ', '_')
+              sanitized = re.sub(r'[^\w_]', '', sanitized)
+              return sanitized.lower()
+
+          def update_readme_apps():
+              readme_path = Path("README.md")
+              logos_path = Path("Logos")
+              apps_folder = Path("Apps")
+
+              if not readme_path.exists():
+                  print("README.md not found")
+                  return False
+
+              print("Updating README with new logos...")
+
+              # Read all app JSON files
+              apps_info = []
+              for app_json in apps_folder.glob("*.json"):
+                  with open(app_json, 'r') as f:
+                      try:
+                          data = json.load(f)
+                          display_name = data['name']
+                          logo_name = sanitize_filename(display_name)
+
+                          # Look for matching logo file
+                          logo_file = None
+                          for ext in ['.png', '.ico']:
+                              potential_logos = [f for f in os.listdir(logos_path)
+                                               if f.lower() == f"{logo_name}{ext}".lower()]
+                              if potential_logos:
+                                  logo_file = f"Logos/{potential_logos[0]}"
+                                  break
+
+                          apps_info.append({
+                              'name': display_name,
+                              'version': data['version'],
+                              'logo': logo_file
+                          })
+                      except Exception as e:
+                          print(f"Error reading {app_json}: {e}")
+
+              # Sort apps by name
+              apps_info.sort(key=lambda x: x['name'].lower())
+
+              # Create the new table content (matching original format)
+              table_content = "### Supported Applications\n\n"
+              table_content += "| Application | Latest Version |\n"
+              table_content += "|-------------|----------------|\n"
+
+              for app in apps_info:
+                  logo_cell = f"<img src='{app['logo']}' width='32' height='32'>" if app['logo'] else chr(0x274C)
+                  table_content += f"| {logo_cell} {app['name']} | {app['version']} |\n"
+
+              table_content += "\n> [!NOTE]\n"
+              table_content += "> Missing an app? Feel free to [request additional app support]"
+              table_content += "(https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!\n"
+
+              # Read and update README
+              with open(readme_path, 'r') as f:
+                  content = f.read()
+
+              # Replace the apps table section
+              pattern = r'### .*Supported Applications.*?(?=\n## |\n# |\Z)'
+              if re.search(pattern, content, re.DOTALL):
+                  content = re.sub(pattern, table_content.strip(), content, flags=re.DOTALL)
+                  with open(readme_path, 'w') as f:
+                      f.write(content)
+                  print("README updated successfully")
+                  return True
+              else:
+                  print("Could not find Supported Applications section in README")
+                  return False
+
+          update_readme_apps()
+          EOF
+
+      - name: Commit and push README update
+        if: steps.commit-icons.outputs.icons_added == 'true'
+        run: |
+          git add README.md
+
+          if git diff --staged --quiet; then
+            echo "No README changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update README with new app logos"
+
+          MAX_RETRIES=5
+          RETRY_COUNT=0
+          RETRY_DELAY=5
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
+
+            git rebase --abort 2>/dev/null || true
+            git stash --include-untracked || true
+
+            if git pull --rebase origin main; then
+              git stash pop || true
+
+              if git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git; then
+                echo "README push successful"
+                exit 0
+              fi
+            else
+              git rebase --abort 2>/dev/null || true
+              git stash pop || true
+            fi
+
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+              echo "Push failed, retrying in ${RETRY_DELAY} seconds..."
+              sleep $RETRY_DELAY
+              RETRY_DELAY=$((RETRY_DELAY * 2))
+            fi
+          done
+
+          echo "README push failed after $MAX_RETRIES attempts"
+          exit 1

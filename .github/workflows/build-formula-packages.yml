@@ -1,0 +1,258 @@
+name: Build Formula Packages
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '0 2 * * *'  # Daily at 2 AM UTC
+  push:
+    paths:
+      - '.github/data/formulas.txt'
+
+jobs:
+  build-formulas:
+    runs-on: macos-15  # Apple Silicon (arm64) - Sequoia
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Read formula list
+        id: formulas
+        run: |
+          # Read formulas from file, skip comments and empty lines
+          FORMULAS=$(grep -v '^#' .github/data/formulas.txt | grep -v '^$' | tr '\n' ' ')
+          echo "formulas=$FORMULAS" >> $GITHUB_OUTPUT
+          echo "Formulas to process: $FORMULAS"
+
+      - name: Install Azure CLI
+        run: |
+          brew install azure-cli
+
+      - name: Create Formulas directory
+        run: |
+          mkdir -p Formulas
+
+      - name: Process each formula
+        env:
+          AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
+          FORMULAS: ${{ steps.formulas.outputs.formulas }}
+        run: |
+          for formula in $FORMULAS; do
+            echo "=== Processing $formula ==="
+
+            # 1. Get formula info from Homebrew API
+            info=$(curl -s "https://formulae.brew.sh/api/formula/${formula}.json")
+            version=$(echo "$info" | jq -r '.versions.stable')
+            description=$(echo "$info" | jq -r '.desc')
+            homepage=$(echo "$info" | jq -r '.homepage')
+            deps=$(echo "$info" | jq -r '.dependencies | join(",")')
+
+            echo "Version: $version"
+            echo "Dependencies: $deps"
+
+            # 2. Check if already exists in Azure
+            arch=$(uname -m)
+            pkg_name="${formula}_${version}_${arch}.pkg"
+            existing=$(az storage blob list --container-name pkg --prefix "${formula}_${version}" --query "[].name" -o tsv 2>/dev/null || echo "")
+
+            if [ -n "$existing" ]; then
+              echo "Package already exists in Azure, creating JSON file only"
+
+              # Handle empty dependencies
+              if [ -z "$deps" ]; then
+                deps_json="[]"
+              else
+                deps_json=$(echo "$deps" | jq -R 'split(",")' 2>/dev/null || echo "[]")
+              fi
+
+              # Create JSON file for existing package (without SHA - can be added later if needed)
+              azure_url="https://intunebrew.blob.core.windows.net/pkg/$pkg_name"
+              jq -n \
+                --arg name "$formula" \
+                --arg description "$description" \
+                --arg version "$version" \
+                --arg homepage "$homepage" \
+                --arg url "$azure_url" \
+                --arg fileName "$pkg_name" \
+                --argjson bundledDependencies "$deps_json" \
+                --arg binaryPath "/usr/local/bin/$formula" \
+                '{name: $name, description: $description, version: $version, homepage: $homepage, url: $url, fileName: $fileName, bundledDependencies: $bundledDependencies, binaryPath: $binaryPath}' \
+                > "Formulas/${formula}.json"
+
+              echo "Created Formulas/${formula}.json (existing package)"
+              continue
+            fi
+
+            # 3. Install formula via Homebrew
+            brew install --force-bottle "$formula" || brew install "$formula"
+
+            # 4. Create payload directory
+            mkdir -p payload/usr/local/bin
+            mkdir -p payload/usr/local/lib
+            mkdir -p payload/usr/local/share/man/man1
+
+            # 5. Copy binary
+            cellar_path=$(brew --cellar "$formula")/$version
+            if [ -d "$cellar_path/bin" ]; then
+              cp "$cellar_path/bin/"* payload/usr/local/bin/ 2>/dev/null || true
+            fi
+
+            # 6. Copy man pages if exist
+            if [ -d "$cellar_path/share/man/man1" ]; then
+              cp "$cellar_path/share/man/man1/"*.1 payload/usr/local/share/man/man1/ 2>/dev/null || true
+            fi
+
+            # 7. Bundle dependencies (copy libraries)
+            if [ -n "$deps" ]; then
+              for dep in $(echo "$deps" | tr ',' ' '); do
+                dep_prefix=$(brew --prefix "$dep" 2>/dev/null || echo "")
+                if [ -n "$dep_prefix" ] && [ -d "$dep_prefix/lib" ]; then
+                  cp "$dep_prefix/lib/"*.dylib payload/usr/local/lib/ 2>/dev/null || true
+                fi
+              done
+            fi
+
+            # 8. Relink binary to use bundled libraries
+            for binary in payload/usr/local/bin/*; do
+              if [ -f "$binary" ] && file "$binary" | grep -q "Mach-O"; then
+                for lib in payload/usr/local/lib/*.dylib; do
+                  if [ -f "$lib" ]; then
+                    libname=$(basename "$lib")
+                    old_path=$(otool -L "$binary" 2>/dev/null | grep "$libname" | awk '{print $1}' | head -1)
+                    if [ -n "$old_path" ]; then
+                      install_name_tool -change "$old_path" "/usr/local/lib/$libname" "$binary" 2>/dev/null || true
+                    fi
+                  fi
+                done
+              fi
+            done
+
+            # 9. Re-sign binaries (install_name_tool invalidates signature)
+            for binary in payload/usr/local/bin/*; do
+              if [ -f "$binary" ] && file "$binary" | grep -q "Mach-O"; then
+                codesign --force --sign - "$binary" 2>/dev/null || true
+              fi
+            done
+
+            # 10. Create PKG
+            pkgbuild --root payload --install-location / \
+              --identifier "com.intunebrew.formula.${formula}" \
+              --version "$version" "$pkg_name"
+
+            # 11. Calculate SHA256
+            sha=$(shasum -a 256 "$pkg_name" | awk '{print $1}')
+
+            # 12. Upload to Azure
+            az storage blob upload --container-name pkg --file "$pkg_name" --name "$pkg_name" --overwrite true
+
+            # 13. Create/Update JSON file using jq
+            azure_url="https://intunebrew.blob.core.windows.net/pkg/$pkg_name"
+
+            # Handle empty dependencies
+            if [ -z "$deps" ]; then
+              deps_json="[]"
+            else
+              deps_json=$(echo "$deps" | jq -R 'split(",")' 2>/dev/null || echo "[]")
+            fi
+
+            jq -n \
+              --arg name "$formula" \
+              --arg description "$description" \
+              --arg version "$version" \
+              --arg homepage "$homepage" \
+              --arg url "$azure_url" \
+              --arg fileName "$pkg_name" \
+              --arg sha "$sha" \
+              --argjson bundledDependencies "$deps_json" \
+              --arg binaryPath "/usr/local/bin/$formula" \
+              '{name: $name, description: $description, version: $version, homepage: $homepage, url: $url, fileName: $fileName, sha: $sha, bundledDependencies: $bundledDependencies, binaryPath: $binaryPath}' \
+              > "Formulas/${formula}.json"
+
+            echo "Created Formulas/${formula}.json"
+
+            # Cleanup
+            rm -rf payload "$pkg_name"
+            brew uninstall "$formula" 2>/dev/null || true
+          done
+
+      - name: Create supported_formulas.json
+        run: |
+          python3 << 'EOF'
+          import json
+          import os
+
+          formulas = {}
+          formulas_dir = "Formulas"
+
+          if os.path.exists(formulas_dir):
+              for filename in os.listdir(formulas_dir):
+                  if filename.endswith(".json"):
+                      name = os.path.splitext(filename)[0]
+                      formulas[name] = f"https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/{filename}"
+
+          formulas = dict(sorted(formulas.items()))
+
+          with open("supported_formulas.json", "w") as f:
+              json.dump(formulas, f, indent=4)
+
+          print(f"Created supported_formulas.json with {len(formulas)} formulas")
+          EOF
+
+      - name: Commit and push changes
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+
+          # Add files only if they exist
+          if ls Formulas/*.json 1> /dev/null 2>&1; then
+            git add Formulas/*.json
+          fi
+          if [ -f supported_formulas.json ]; then
+            git add supported_formulas.json
+          fi
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update formula packages"
+
+          MAX_RETRIES=5
+          RETRY_COUNT=0
+          RETRY_DELAY=5
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
+
+            # Clean up any failed rebase state
+            git rebase --abort 2>/dev/null || true
+
+            # Stash any unstaged changes before rebasing to avoid conflicts
+            git stash --include-untracked || true
+
+            if git pull --rebase origin main; then
+              # Restore stashed changes after successful rebase
+              git stash pop || true
+
+              if git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git; then
+                echo "Push successful"
+                exit 0
+              fi
+            else
+              # Abort failed rebase and restore stashed changes
+              git rebase --abort 2>/dev/null || true
+              git stash pop || true
+            fi
+
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+              echo "Push failed, retrying in ${RETRY_DELAY} seconds..."
+              sleep $RETRY_DELAY
+              RETRY_DELAY=$((RETRY_DELAY * 2))
+            fi
+          done
+
+          echo "Push failed after $MAX_RETRIES attempts"
+          exit 1

@@ -3,9 +3,9 @@
   "description": "Blur any part of your screen",
   "version": "1.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/blurscreen_1.0.pkg",
-  "bundleId": "com.sanskar.blurscreen",
+  "bundleId": "com.blurscreen",
   "homepage": "https://www.blurscreen.app/",
-  "fileName": "BlurScreen-v2.pkg",
+  "fileName": "blurscreen_1.0.pkg",
   "type": "pkg_in_pkg",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:27:16Z",
@@ -18,5 +18,7 @@
     "installed_version": "1.0"
   },
   "sha": "2f1fc1a6796d1f3b10dcffeaf79804c75b8c53cba75282c2b11ceb101334d83e",
+  "category": "Utilities",
+  "publisher": "Unknown",
   "previous_version": "1.0"
 }

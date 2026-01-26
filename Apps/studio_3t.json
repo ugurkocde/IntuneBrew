@@ -1,11 +1,13 @@
 {
   "name": "Studio 3T",
   "description": "IDE, client, and GUI for MongoDB",
-  "version": "2025.22.0",
-  "url": "https://download.studio3t.com/studio-3t/mac-aarch64/2025.22.0/Studio-3T.dmg",
+  "version": "2026.1.0",
+  "url": "https://download.studio3t.com/studio-3t/mac-aarch64/2026.1.0/Studio-3T.dmg",
   "bundleId": "com.install4j.0526-4458-1435-8154.837",
   "homepage": "https://studio3t.com/",
   "fileName": "Studio-3T.dmg",
-  "sha": "de143306f992d3bafbba0c849265587db09d7aba206d049111384379cb139740",
-  "previous_version": "2025.22.0"
+  "sha": "b5db56ce14f93ad2619cf2c4930a8383f068aeeceb761aee725daffced1949a9",
+  "category": "Developer Tools",
+  "publisher": "3T Software Labs Ltd.",
+  "previous_version": "2026.1.0"
 }

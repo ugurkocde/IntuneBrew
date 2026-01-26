@@ -1,0 +1,13 @@
+{
+  "name": "YACReader",
+  "description": "Comic reader",
+  "version": "9.16.3.26010361",
+  "url": "https://github.com/YACReader/yacreader/releases/download/9.16.3/YACReader-9.16.3.26010361.MacOSX-U.Qt6.dmg",
+  "bundleId": "com.yacreader.YACReader",
+  "homepage": "https://www.yacreader.com/",
+  "fileName": "YACReader-9.16.3.26010361.MacOSX-U.Qt6.dmg",
+  "sha": "a0c97fb566ba3964d0de189165172e2885cb164a314a7cb72a73cab4f3231300",
+  "category": "Media",
+  "publisher": "YACReader Team",
+  "previous_version": "9.16.3.26010361"
+}

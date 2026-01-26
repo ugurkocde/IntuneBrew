@@ -1,0 +1,13 @@
+{
+  "name": "Descript",
+  "description": "Audio and video editor",
+  "version": "114.0.4-release.20250509.32955",
+  "url": "https://electron.descript.com/Descript-114.0.4-release.20250509.32955-arm64.dmg",
+  "bundleId": "com.descript.beachcube",
+  "homepage": "https://www.descript.com/",
+  "fileName": "Descript-114.0.4-release.20250509.32955-arm64.dmg",
+  "sha": "ab3537b015e60c19500c47cd1a2c59c0932c05240178bbc718d068e23393ca0c",
+  "category": "Media",
+  "publisher": "Descript, Inc.",
+  "previous_version": "114.0.4-release.20250509.32955"
+}

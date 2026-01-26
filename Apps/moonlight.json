@@ -7,5 +7,7 @@
   "homepage": "https://moonlight-stream.org/",
   "fileName": "Moonlight-6.1.0.dmg",
   "sha": "d494740eead8ad4e620cdc8feedb56083bc29cabbbeef34cb82585fd87725fa2",
+  "category": "Utilities",
+  "publisher": "Moonlight Team",
   "previous_version": "6.1.0"
 }

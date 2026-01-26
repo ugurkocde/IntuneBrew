@@ -1,0 +1,14 @@
+{
+  "name": "SubEthaEdit",
+  "description": "Plain text and source editor",
+  "version": "5.2.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/subethaedit_5.2.4.pkg",
+  "bundleId": "de.codingmonkeys.SubEthaEdit",
+  "homepage": "https://subethaedit.net/",
+  "fileName": "subethaedit_5.2.4.pkg",
+  "type": "app",
+  "sha": "f5f7b1d658385514516a558d0623e9121c8b339c9e92e50670d36926a9fd02c3",
+  "category": "Developer Tools",
+  "publisher": "The Coding Monkeys",
+  "previous_version": "5.2.4"
+}

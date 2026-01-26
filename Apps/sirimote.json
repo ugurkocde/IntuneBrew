@@ -1,0 +1,14 @@
+{
+  "name": "SiriMote",
+  "description": "Control your computer with your Apple TV Siri Remote",
+  "version": "1.4.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sirimote_1.4.5.pkg",
+  "bundleId": "com.EvenDevelopment.SiriMote",
+  "homepage": "https://eternalstorms.at/sirimote",
+  "fileName": "sirimote_1.4.5.pkg",
+  "type": "app",
+  "sha": "a5164d9936b2613dd905638ac26e307edee814c7da86c82d28c1a0f6223eab21",
+  "category": "Utilities",
+  "publisher": "Eternal Storms Software",
+  "previous_version": "1.4.5"
+}

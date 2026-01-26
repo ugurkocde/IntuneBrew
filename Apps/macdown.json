@@ -8,5 +8,7 @@
   "fileName": "macdown_0.7.2.pkg",
   "type": "app",
   "sha": "bba030fc49d9dd7ab0c139fe5c39773eff0830336d6ab06b6fa7b23621efe774",
-  "previous_version": "0.7.2"
+  "previous_version": "0.7.2",
+  "category": "Productivity",
+  "publisher": "Uranusjr"
 }

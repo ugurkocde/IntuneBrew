@@ -1,15 +1,13 @@
 {
   "name": "DeepL",
   "description": "Trains AIs to understand and translate texts",
-  "version": "25.11.23262385",
-  "url": "https://www.deepl.com/macos/download/25.11/23262385/DeepL.dmg",
+  "version": "26.1.23595006",
+  "url": "https://www.deepl.com/macos/download/26.1/23595006/DeepL.dmg",
   "bundleId": "com.linguee.DeepLCopyTranslator",
   "homepage": "https://www.deepl.com/",
-  "fileName": "deepl_25.7.22371106.pkg",
-  "type": "app",
-  "sha": "55b5d955b9a07e4441d637c30a085e61316b867de8a1d53ffcd5f6378bd91bf4",
+  "fileName": "DeepL.dmg",
+  "sha": "4de20c582cbee5e5b697b9ee9fc9b7e4188e6bb7a84380d6b54a36d68b22b5fd",
   "changelog": "https://www.deepl.com/changelog.html",
-  "previous_version": "25.11.23262385",
   "qa_info": {
     "qa_timestamp": "2025-05-14T06:45:18Z",
     "qa_result": "Installation successful and verified",
@@ -19,5 +17,8 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "25.5.12028494"
-  }
+  },
+  "category": "Productivity",
+  "publisher": "DeepL GmbH",
+  "previous_version": "26.1.23595006"
 }

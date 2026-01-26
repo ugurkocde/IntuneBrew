@@ -1,0 +1,14 @@
+{
+  "name": "Min",
+  "description": "Minimal browser that protects privacy",
+  "version": "1.35.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/min_1.35.2.pkg",
+  "bundleId": "com.electron.min",
+  "homepage": "https://minbrowser.org/",
+  "fileName": "min_1.35.2.pkg",
+  "type": "app",
+  "previous_version": "1.35.2",
+  "sha": "91878f148886b78a9a797d85854cc299814625eaa3c911be011016603b829fe0",
+  "category": "Browsers",
+  "publisher": "Min"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "BlackHole 16ch",
+  "description": "Virtual Audio Driver",
+  "version": "0.6.1",
+  "url": "https://existential.audio/downloads/BlackHole16ch-0.6.1.pkg",
+  "bundleId": "audio.existential.BlackHole16ch",
+  "homepage": "https://existential.audio/blackhole/",
+  "fileName": "BlackHole16ch-0.6.1.pkg",
+  "type": "pkg",
+  "category": "Utilities",
+  "publisher": "Existential Audio",
+  "previous_version": "0.6.1"
+}

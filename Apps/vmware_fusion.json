@@ -1,0 +1,13 @@
+{
+  "name": "VMware Fusion",
+  "description": "Create, manage, and run virtual machines",
+  "version": "13.6.3",
+  "url": "https://softwareupdate-prod.broadcom.com/cds/vmw-desktop/fusion/13.6.3/24585314/universal/core/com.vmware.fusion.zip.tar",
+  "bundleId": "com.vmware.fusion.LSSharedFileList",
+  "homepage": "https://www.vmware.com/products/desktop-hypervisor/workstation-and-fusion",
+  "fileName": "com.vmware.fusion.zip.tar",
+  "type": "app",
+  "category": "Developer Tools",
+  "publisher": "VMware, Inc.",
+  "previous_version": "13.6.3"
+}

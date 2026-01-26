@@ -1,0 +1,13 @@
+{
+  "name": "calibrite PROFILER",
+  "description": "Display calibration software for Calibrite, ColorChecker and X-Rite devices",
+  "version": "3.0.4",
+  "url": "https://github.com/LUMESCA/calibrite-profiler-releases/releases/download/v3.0.4/calibrite-PROFILER-3.0.4.dmg",
+  "bundleId": "com.calibrite.profiler",
+  "homepage": "https://calibrite.com/calibrite-profiler/",
+  "fileName": "calibrite-PROFILER-3.0.4.dmg",
+  "sha": "4b919de389b7ea597095f665edfefb91103c7b624b7d2e41fb4808e431ac9f75",
+  "category": "Design",
+  "publisher": "Calibrite",
+  "previous_version": "3.0.4"
+}

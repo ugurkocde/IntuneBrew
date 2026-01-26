@@ -1,0 +1,14 @@
+{
+  "name": "Soulver",
+  "description": "Notepad with a built-in calculator",
+  "version": "3.15.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/soulver_3.15.2.pkg",
+  "bundleId": "app.soulver.mac",
+  "homepage": "https://soulver.app/",
+  "fileName": "soulver_3.15.2.pkg",
+  "type": "app",
+  "sha": "cf656b56fdd29619f6134a97ad9eb822ace07b9637f1812c7373bb18af4f6008",
+  "category": "Productivity",
+  "publisher": "Acqualia Pty Ltd",
+  "previous_version": "3.15.2"
+}

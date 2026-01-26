@@ -1,51 +1,14 @@
 {
   "app_name": "Joplin",
-  "last_updated": "2025-12-07",
-  "vulnerabilities": [
-    {
-      "cve_id": "CVE-2025-27409",
-      "published_date": "2025-04-30",
-      "last_modified_date": "2025-05-16",
-      "base_score": 7.5,
-      "severity": "HIGH",
-      "description": "Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. Prior to version 3.3.3, path traversal is possible in Joplin Server if static file path starts with `css/pluginAssets` or `js/pluginAssets`. The `findLocalFile` function in the `default route` calls `localFileFromUrl` to check for special `pluginAssets` paths. If the function returns a path, the result is returned directly, without checking for path traversal. The vulnerability allows attackers to read files outside the intended directories. This issue has been patched in version 3.3.3.",
-      "cpe_name": "cpe:2.3:a:joplin_project:joplin:3.0.15:*:*:*:*:-:*:*"
-    },
-    {
-      "cve_id": "CVE-2025-27134",
-      "published_date": "2025-04-30",
-      "last_modified_date": "2025-05-16",
-      "base_score": 8.8,
-      "severity": "HIGH",
-      "description": "Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. Prior to version 3.3.3, a privilege escalation vulnerability exists in the Joplin server, allowing non-admin users to exploit the API endpoint `PATCH /api/users/:id` to set the `is_admin` field to 1. The vulnerability allows malicious low-privileged users to perform administrative actions without proper authorization. This issue has been patched in version 3.3.3.",
-      "cpe_name": "cpe:2.3:a:joplin_project:joplin:3.0.15:*:*:*:*:-:*:*"
-    },
-    {
-      "cve_id": "CVE-2025-24028",
-      "published_date": "2025-02-07",
-      "last_modified_date": "2025-04-18",
-      "base_score": 7.8,
-      "severity": "HIGH",
-      "description": "Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. This vulnerability is caused by differences between how Joplin's HTML sanitizer handles comments and how the browser handles comments. This affects both the Rich Text Editor and the Markdown viewer. However, unlike the Rich Text Editor, the Markdown viewer is `cross-origin isolated`, which prevents JavaScript from directly accessing functions/variables in the toplevel Joplin `window`. This issue is not present in Joplin 3.1.24 and may have been introduced in `9b50539`. This is an XSS vulnerability that impacts users that open untrusted notes in the Rich Text Editor. This vulnerability has been addressed in version 3.2.12 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
-      "cpe_name": "cpe:2.3:a:joplin_project:joplin:3.0.15:*:*:*:*:-:*:*"
-    },
-    {
-      "cve_id": "CVE-2025-25187",
-      "published_date": "2025-02-07",
-      "last_modified_date": "2025-04-11",
-      "base_score": 7.8,
-      "severity": "HIGH",
-      "description": "Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. This vulnerability is caused by adding note titles to the document using React's `dangerouslySetInnerHTML`, without first escaping HTML entities. Joplin lacks a Content-Security-Policy with a restrictive `script-src`. This allows arbitrary JavaScript execution via inline `onclick`/`onload` event handlers in unsanitized HTML. Additionally, Joplin's main window is created with `nodeIntegration` set to `true`, allowing arbitrary JavaScript execution to result in arbitrary code execution. Anyone who 1) receives notes from unknown sources and 2) uses <kbd>ctrl</kbd>-<kbd>p</kbd> to search is impacted. This issue has been addressed in version 3.1.24 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
-      "cpe_name": "cpe:2.3:a:joplin_project:joplin:3.0.15:*:*:*:*:-:*:*"
-    },
-    {
-      "cve_id": "CVE-2024-55630",
-      "published_date": "2025-02-07",
-      "last_modified_date": "2025-04-18",
-      "base_score": 3.3,
-      "severity": "LOW",
-      "description": "Joplin is a free, open source note taking and to-do application, which can handle a large number of notes organised into notebooks. Joplin's HTML sanitizer allows the `name` attribute to be specified. If `name` is set to the same value as an existing `document` property (e.g. `querySelector`), that property is replaced with the element. This vulnerability's only known impact is denial of service. The note viewer fails to refresh until closed and re-opened with a different note. This issue has been addressed in version 3.2.8 and all users are advised to upgrade. There are no known workarounds for this vulnerability.",
-      "cpe_name": "cpe:2.3:a:joplin_project:joplin:3.0.15:*:*:*:*:-:*:*"
-    }
-  ]
+  "app_key": "joplin",
+  "last_updated": "2026-01-26",
+  "total_cves": 0,
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
+  "vulnerabilities": []
 }

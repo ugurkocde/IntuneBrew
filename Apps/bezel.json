@@ -1,0 +1,14 @@
+{
+  "name": "Bezel",
+  "description": "iOS screen output recorder",
+  "version": "3.5.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/bezel_3.5.1.pkg",
+  "bundleId": "com.nonstrict.Bezel-direct",
+  "homepage": "https://getbezel.app/",
+  "fileName": "bezel_3.5.1.pkg",
+  "type": "app",
+  "sha": "4978495a7321d6d0b9daf6d1c851dcb84a77964d06573260e43e169d5a92f761",
+  "category": "Developer Tools",
+  "publisher": "Bezel",
+  "previous_version": "3.5.1"
+}

@@ -1,12 +1,12 @@
 {
   "name": "CotEditor",
   "description": "Plain-text editor for web pages, program source codes and more",
-  "version": "6.1.2",
-  "url": "https://github.com/coteditor/CotEditor/releases/download/6.1.2/CotEditor_6.1.2.dmg",
+  "version": "6.2.1",
+  "url": "https://github.com/coteditor/CotEditor/releases/download/6.2.1/CotEditor_6.2.1.dmg",
   "bundleId": "com.coteditor.CotEditor",
   "homepage": "https://coteditor.com/",
-  "fileName": "CotEditor_6.1.2.dmg",
-  "sha": "fe5324846e6cc0617d2b6b00ee537a5f33977dfbd858e39e6f17540447c86942",
+  "fileName": "CotEditor_6.2.1.dmg",
+  "sha": "a5648737c08c5d80cd898a505b2cc1c357980f24b853c361c0e4d9d0ee98606d",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:49:51Z",
     "qa_result": "Installation successful and verified",
@@ -17,5 +17,7 @@
     "bundle_id_status": "verified",
     "installed_version": "5.1.6"
   },
-  "previous_version": "6.1.2"
+  "category": "Developer Tools",
+  "publisher": "CotEditor Team",
+  "previous_version": "6.2.1"
 }

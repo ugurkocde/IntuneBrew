@@ -5,7 +5,7 @@
   "url": "https://www.messenger.com/messenger/desktop/downloadV2/?platform=mac&variant=catalyst",
   "bundleId": "com.facebook.archon.developerID",
   "homepage": "https://www.messenger.com/desktop",
-  "fileName": "?platform=mac&variant=catalyst",
+  "fileName": "Facebook-Messenger-525.0.0.34.106.dmg",
   "sha": "4013e3e5305d6b2c9b7b3f91ffd99d7deb9e00e2fa935048fb28f490c38ed987",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:11:04Z",
@@ -16,5 +16,7 @@
     "verify_status": "pending",
     "bundle_id_status": "pending"
   },
+  "category": "Communication",
+  "publisher": "Meta Platforms, Inc.",
   "previous_version": "525.0.0.34.106"
 }

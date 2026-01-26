@@ -1,0 +1,14 @@
+{
+  "name": "MacPacker",
+  "description": "Archive manager",
+  "version": "0.13",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/macpacker_0.13.pkg",
+  "bundleId": "com.sarensx.MacPacker",
+  "homepage": "https://macpacker.app/",
+  "fileName": "macpacker_0.13.pkg",
+  "type": "app",
+  "sha": "cf3cfce804f9c5d280cafe1641cc7e938d9748679b65f2695deca1c7c30a36b9",
+  "category": "Utilities",
+  "publisher": "MacPacker",
+  "previous_version": "0.13"
+}

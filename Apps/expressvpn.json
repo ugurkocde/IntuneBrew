@@ -1,0 +1,14 @@
+{
+  "name": "ExpressVPN",
+  "description": "VPN client for secure internet access and private browsing",
+  "version": "12.0.2.11960",
+  "url": "https://www.expressvpn.works/clients/mac/expressvpn-macos-universal-12.0.2.11960_release.zip",
+  "bundleId": "com.expressvpn.ExpressVPN",
+  "homepage": "https://www.expressvpn.works/",
+  "fileName": "expressvpn-macos-universal-12.0.2.11960_release.zip",
+  "type": "pkg",
+  "sha": "4fa346578f5819d908309d431cd9507063a7065ce42d37ea5e4048713f3057db",
+  "category": "Security",
+  "publisher": "ExpressVPN International Ltd.",
+  "previous_version": "12.0.2.11960"
+}

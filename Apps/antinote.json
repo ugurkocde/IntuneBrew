@@ -17,5 +17,7 @@
     "bundle_id_status": "verified",
     "installed_version": "1.1.5"
   },
+  "category": "Productivity",
+  "publisher": "Antinote",
   "previous_version": "1.1.7"
 }

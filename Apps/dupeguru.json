@@ -1,0 +1,14 @@
+{
+  "name": "dupeGuru",
+  "description": "Finds duplicate files in a computer system",
+  "version": "4.3.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/dupeguru_4.3.1.pkg",
+  "bundleId": "com.hardcoded-software.dupeguru",
+  "homepage": "https://dupeguru.voltaicideas.net/",
+  "fileName": "dupeguru_4.3.1.pkg",
+  "type": "app",
+  "sha": "82104ca3c3ec77886ccd578325b6f8561afd99b7f54ce22f911f0a5aabc4a24b",
+  "category": "Utilities",
+  "publisher": "Voltaicideas",
+  "previous_version": "4.3.1"
+}

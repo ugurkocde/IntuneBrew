@@ -7,5 +7,7 @@
   "homepage": "https://www.tunnelblick.net/",
   "fileName": "Tunnelblick_8.0_build_6300.dmg",
   "sha": "e08925d558959b67c33a09d19b228b004d3bdc000d3d1981c983bf2f9b69d9cb",
+  "category": "Security",
+  "publisher": "The Tunnelblick Project",
   "previous_version": "8.0"
 }

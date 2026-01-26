@@ -1,0 +1,14 @@
+{
+  "name": "BankID Security Application (Sweden)",
+  "description": "Swedish personal electronic identification (eID) system",
+  "version": "7.16.0",
+  "url": "https://cdn.bankid.com/bisp/mac/BankID_installation_7_16_0.pkg",
+  "bundleId": "com.bankid.BankID",
+  "homepage": "https://install.bankid.com/",
+  "fileName": "BankID_installation_7_16_0.pkg",
+  "type": "pkg",
+  "sha": "e8fac398ad222ce6d9e11e5aa8d2b55f207d3ac082b671c552378301c7d0d8ce",
+  "category": "Security",
+  "publisher": "BankID AB",
+  "previous_version": "7.16.0"
+}

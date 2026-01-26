@@ -1,0 +1,13 @@
+{
+  "name": "DiffMerge",
+  "description": "Visually compare and merge files",
+  "version": "4.2.1.1013",
+  "url": "https://download.sourcegear.com/DiffMerge/4.2.1/DiffMerge.4.2.1.1013.intel.stable.dmg",
+  "bundleId": "com.sourcegear.DiffMerge",
+  "homepage": "https://www.sourcegear.com/diffmerge/",
+  "fileName": "DiffMerge.4.2.1.1013.intel.stable.dmg",
+  "sha": "59efeede7beb69a5b3bf3126787f73930984b3b423094500fe73623656f66d43",
+  "category": "Developer Tools",
+  "publisher": "SourceGear LLC",
+  "previous_version": "4.2.1.1013"
+}

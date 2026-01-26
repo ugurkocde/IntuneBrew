@@ -1,0 +1,12 @@
+{
+  "name": "Archi",
+  "description": "Open-source ArchiMate modelling toolkit",
+  "version": "5.7.0",
+  "url": "https://github.com/archimatetool/archi.io/releases/download/5/Archi-Mac-Silicon-5.7.0.dmg",
+  "bundleId": "com.archimatetool.editor",
+  "homepage": "https://www.archimatetool.com/",
+  "fileName": "Archi-Mac-Silicon-5.7.0.dmg",
+  "category": "Design",
+  "publisher": "The Archi Team",
+  "previous_version": "5.7.0"
+}

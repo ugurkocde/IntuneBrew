@@ -1,0 +1,13 @@
+{
+  "name": "iExplorer",
+  "description": "iOS device backup software and file manager",
+  "version": "4.6.0",
+  "url": "https://assets.macroplant.com/download/180/iExplorer-4.6.0.dmg",
+  "bundleId": "com.macroplant.iExplorer",
+  "homepage": "https://macroplant.com/iexplorer",
+  "fileName": "iExplorer-4.6.0.dmg",
+  "sha": "1234ab31439a7f3a35ba2c77e7a65977b75d15fb15d823b322adcefb221eed0f",
+  "category": "Utilities",
+  "publisher": "Macroplant LLC",
+  "previous_version": "4.6.0"
+}

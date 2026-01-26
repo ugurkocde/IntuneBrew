@@ -1,15 +1,15 @@
 {
   "name": "DevToys",
   "description": "Utilities designed to make common development tasks easier",
-  "version": "2.0.8.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/devtoys_2.0.8.0.pkg",
+  "version": "2.0.9.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/devtoys_2.0.9.0.pkg",
   "bundleId": "com.devtoys",
   "homepage": "https://github.com/DevToys-app/DevToys",
-  "fileName": "devtoys_2.0.8.0.pkg",
+  "fileName": "devtoys_2.0.9.0.pkg",
   "type": "app",
-  "sha": "806ec612594dbaa569b75d82345397f26f19dc845dd6c508e92ed928a9ab06b5",
+  "sha": "49d1910e24cecd1709086e47fcf0ece09080f1b93056a3bd2c874de0a0b77a82",
   "changelog": "https://github.com/DevToys-app/DevToys/releases",
-  "previous_version": "2.0.8.0",
+  "previous_version": "2.0.9.0",
   "qa_info": {
     "qa_timestamp": "2025-05-14T08:59:00Z",
     "qa_result": "Installation successful and verified",
@@ -19,5 +19,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "2.0.8"
-  }
+  },
+  "category": "Developer Tools",
+  "publisher": "DevToys-app"
 }

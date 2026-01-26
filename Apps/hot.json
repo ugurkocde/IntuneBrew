@@ -1,0 +1,14 @@
+{
+  "name": "Hot",
+  "description": "Menu bar application that displays the CPU speed limit due to thermal issues",
+  "version": "1.9.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/hot_1.9.4.pkg",
+  "bundleId": "com.xs-labs.Hot",
+  "homepage": "https://github.com/macmade/Hot",
+  "fileName": "hot_1.9.4.pkg",
+  "type": "app",
+  "sha": "fd50c8bba1fefcb01026fa28e47f504c49a159f27eeca37e6fd673e0facd4807",
+  "category": "Utilities",
+  "publisher": "macmade",
+  "previous_version": "1.9.4"
+}

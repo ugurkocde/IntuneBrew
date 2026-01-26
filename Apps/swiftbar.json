@@ -1,0 +1,14 @@
+{
+  "name": "SwiftBar",
+  "description": "Menu bar customization tool",
+  "version": "2.0.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/swiftbar_2.0.1.pkg",
+  "bundleId": "com.ameba.SwiftBar",
+  "homepage": "https://swiftbar.app/",
+  "fileName": "swiftbar_2.0.1.pkg",
+  "type": "app",
+  "sha": "71e8bac0569526c3e0c407c852c3c52f5b1ae6a71d916808986f971172732071",
+  "category": "Developer Tools",
+  "publisher": "SwiftBar",
+  "previous_version": "2.0.1"
+}

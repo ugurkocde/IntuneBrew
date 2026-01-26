@@ -7,5 +7,7 @@
   "homepage": "https://motrix.app/",
   "fileName": "Motrix-1.8.19-arm64.dmg",
   "sha": "d73f4d69f3597ad8f98b821aa0fb58ba964bf85061b4a13f00edcb3618001c0e",
+  "category": "Utilities",
+  "publisher": "Motrix Team",
   "previous_version": "1.8.19"
 }

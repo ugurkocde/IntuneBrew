@@ -7,5 +7,7 @@
   "homepage": "https://raindrop.io/",
   "fileName": "Raindrop-arm64.dmg",
   "sha": "01cb3788e246203c55e9cb590398c1c8ad878fcfa46dffa521c15533519d176d",
+  "category": "Productivity",
+  "publisher": "Raindrop.io",
   "previous_version": "5.6.95"
 }

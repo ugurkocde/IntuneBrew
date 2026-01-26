@@ -1,0 +1,13 @@
+{
+  "name": "Lapce",
+  "description": "Open source code editor written in Rust",
+  "version": "0.4.6",
+  "url": "https://github.com/lapce/lapce/releases/download/v0.4.6/Lapce-macos.dmg",
+  "bundleId": "io.lapce",
+  "homepage": "https://lapce.dev/",
+  "fileName": "Lapce-macos.dmg",
+  "sha": "d4ba42218148446c265c6a823107a969b3b0dca5e14df834563f2859927228f5",
+  "category": "Developer Tools",
+  "publisher": "Lapce Authors",
+  "previous_version": "0.4.6"
+}

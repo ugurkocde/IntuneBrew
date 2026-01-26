@@ -8,5 +8,7 @@
   "fileName": "openmtp_3.2.25.pkg",
   "type": "app",
   "sha": "bffce3f019b2c4ec8de8d52dbf57244c481f0a272a9a621e8728e9ccdc2c4626",
-  "previous_version": "3.2.25"
+  "previous_version": "3.2.25",
+  "category": "Utilities",
+  "publisher": "Ganeshr Vel"
 }

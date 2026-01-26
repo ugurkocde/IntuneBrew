@@ -1,0 +1,13 @@
+{
+  "name": "aText",
+  "description": "Tool to replace abbreviations while typing",
+  "version": "3.21",
+  "url": "https://www.trankynam.com/atext/downloads/aText.dmg",
+  "bundleId": "com.trankynam.aText",
+  "homepage": "https://www.trankynam.com/atext/",
+  "fileName": "aText.dmg",
+  "sha": "b2bf1d2d40300b056825b2ca7023b447d4436d30088cd08293311faad59da77c",
+  "category": "Productivity",
+  "publisher": "Trankynam",
+  "previous_version": "3.21"
+}

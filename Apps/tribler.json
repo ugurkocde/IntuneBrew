@@ -1,0 +1,13 @@
+{
+  "name": "Tribler",
+  "description": "Privacy enhanced BitTorrent client with P2P content discovery",
+  "version": "8.3.1",
+  "url": "https://github.com/Tribler/tribler/releases/download/v8.3.1/Tribler-8.3.1.dmg",
+  "bundleId": "com.nl-tudelft-tribler",
+  "homepage": "https://www.tribler.org/",
+  "fileName": "Tribler-8.3.1.dmg",
+  "sha": "6a37959aa4b89464d863ee663be869459faaf1bc38189797fea69a5b9293b719",
+  "category": "Utilities",
+  "publisher": "Tribler Team",
+  "previous_version": "8.3.1"
+}

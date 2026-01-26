@@ -1,0 +1,14 @@
+{
+  "name": "Amadeus Pro",
+  "description": "Multi-purpose audio recorder, editor and converter",
+  "version": "2.8.14",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/amadeus_pro_2.8.14.pkg",
+  "bundleId": "com.HairerSoft.AmadeusPro",
+  "homepage": "https://www.hairersoft.com/pro.html",
+  "fileName": "amadeus_pro_2.8.14.pkg",
+  "type": "app",
+  "previous_version": "2.8.14",
+  "sha": "b72ca8187107088b1df069e875b4dcd517427bc103ef7b05137af4d2fed52e47",
+  "category": "Media",
+  "publisher": "HairerSoft"
+}

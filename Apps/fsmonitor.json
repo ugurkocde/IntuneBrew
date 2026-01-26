@@ -3,7 +3,7 @@
   "description": null,
   "version": "1.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/fsmonitor_1.2.pkg",
-  "bundleId": "com.tristan.fseventstool",
+  "bundleId": "com.tristan.FSMonitor",
   "homepage": "https://fsmonitor.com/",
   "fileName": "fsmonitor_1.2.pkg",
   "type": "app",
@@ -19,5 +19,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "mismatch",
     "installed_version": "1.2"
-  }
+  },
+  "category": "Developer Tools",
+  "publisher": "FSMonitor"
 }

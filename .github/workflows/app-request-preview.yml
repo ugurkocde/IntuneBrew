@@ -1,0 +1,523 @@
+name: App Request Preview
+
+on:
+  issues:
+    types: [opened, edited]
+
+  issue_comment:
+    types: [created]
+
+  workflow_dispatch:
+    inputs:
+      issue_number:
+        description: 'Issue number to check'
+        required: true
+        type: number
+
+jobs:
+  preview-app:
+    # Run for: new app request issues, /check comments, or manual dispatch
+    if: |
+      (github.event_name == 'issues' && (contains(join(github.event.issue.labels.*.name, ','), 'app request') || contains(join(github.event.issue.labels.*.name, ','), 'feature request'))) ||
+      (github.event_name == 'issue_comment' && (contains(github.event.comment.body, '/check') || contains(github.event.comment.body, '/review'))) ||
+      (github.event_name == 'workflow_dispatch')
+    runs-on: ubuntu-latest
+
+    permissions:
+      issues: write
+
+    steps:
+      - name: Check user permission for commands
+        if: github.event_name == 'issue_comment'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const commenter = context.payload.comment.user.login;
+            const repoOwner = context.repo.owner;
+
+            // Only the repository owner can use /check and /review commands
+            if (commenter.toLowerCase() !== repoOwner.toLowerCase()) {
+              core.setFailed(`Only the repository owner can use /check and /review commands. User: ${commenter}`);
+              return;
+            }
+
+      - name: Get issue data
+        id: issue
+        uses: actions/github-script@v7
+        with:
+          script: |
+            let issueNumber;
+            let issueData;
+
+            if (context.eventName === 'workflow_dispatch') {
+              issueNumber = ${{ inputs.issue_number || 0 }};
+            } else if (context.eventName === 'issue_comment') {
+              issueNumber = context.issue.number;
+            } else {
+              issueNumber = context.issue.number;
+            }
+
+            const { data: issue } = await github.rest.issues.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: issueNumber
+            });
+
+            core.setOutput('number', issue.number);
+            core.setOutput('title', issue.title);
+            core.setOutput('body', issue.body || '');
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install requests
+
+      - name: Search for apps
+        id: search
+        env:
+          ISSUE_TITLE: ${{ steps.issue.outputs.title }}
+          ISSUE_BODY: ${{ steps.issue.outputs.body }}
+        run: |
+          python << 'EOF'
+          import os
+          import re
+          import json
+          import requests
+          from difflib import SequenceMatcher
+
+          # Cache for cask list
+          _cask_cache = None
+
+          def set_output(name, value):
+              output_file = os.environ.get('GITHUB_OUTPUT')
+              if output_file:
+                  with open(output_file, 'a') as f:
+                      if '\n' in str(value):
+                          import uuid
+                          delimiter = uuid.uuid4().hex
+                          f.write(f"{name}<<{delimiter}\n{value}\n{delimiter}\n")
+                      else:
+                          f.write(f"{name}={value}\n")
+
+          def get_cask_list():
+              global _cask_cache
+              if _cask_cache is None:
+                  print("Fetching Homebrew cask list...")
+                  response = requests.get("https://formulae.brew.sh/api/cask.json", timeout=60)
+                  _cask_cache = response.json()
+                  print(f"Loaded {len(_cask_cache)} casks")
+              return _cask_cache
+
+          def normalize_name(name):
+              name = name.lower()
+              name = re.sub(r'\s*(app|application|client|desktop|for mac|for macos|macos|mac)$', '', name, flags=re.IGNORECASE)
+              name = re.sub(r'[_\-\.]+', ' ', name)
+              name = ' '.join(name.split())
+              return name
+
+          def similarity_score(s1, s2):
+              return SequenceMatcher(None, s1.lower(), s2.lower()).ratio()
+
+          def search_homebrew(search_term):
+              casks = get_cask_list()
+              search_normalized = normalize_name(search_term)
+              search_words = set(search_normalized.split())
+              results = []
+
+              for cask in casks:
+                  token = cask.get('token', '')
+                  names = cask.get('name', [])
+                  if isinstance(names, str):
+                      names = [names]
+
+                  scores = []
+
+                  if token.lower() == search_term.lower():
+                      scores.append(1.0)
+                  elif token.lower() == search_term.lower().replace(' ', '-'):
+                      scores.append(0.98)
+
+                  token_normalized = normalize_name(token)
+                  scores.append(similarity_score(search_normalized, token_normalized) * 0.9)
+
+                  for name in names:
+                      name_normalized = normalize_name(name)
+                      if name_normalized == search_normalized:
+                          scores.append(0.95)
+                      scores.append(similarity_score(search_normalized, name_normalized) * 0.85)
+                      name_words = set(name_normalized.split())
+                      if search_words and name_words:
+                          overlap = len(search_words & name_words) / max(len(search_words), len(name_words))
+                          scores.append(overlap * 0.8)
+
+                  if search_normalized.replace(' ', '') in token.replace('-', ''):
+                      scores.append(0.7)
+                  if token.replace('-', '') in search_normalized.replace(' ', ''):
+                      scores.append(0.7)
+
+                  best_score = max(scores) if scores else 0
+                  if best_score >= 0.5:
+                      results.append((token, cask, best_score))
+
+              results.sort(key=lambda x: x[2], reverse=True)
+              return results[:3]
+
+          def extract_casks_from_urls(issue_body):
+              """Extract all cask names from Homebrew URLs in the issue body."""
+              casks = []
+              # Homebrew API URLs
+              for match in re.finditer(r'formulae\.brew\.sh/api/cask/([^/\s.]+)\.json', issue_body):
+                  casks.append(match.group(1))
+              # Homebrew cask page URLs
+              for match in re.finditer(r'formulae\.brew\.sh/cask/([^/\s\)]+)', issue_body):
+                  if match.group(1) not in casks:
+                      casks.append(match.group(1))
+              # brew install commands
+              for match in re.finditer(r'brew\s+install\s+(?:--cask\s+)?([^\s\n]+)', issue_body):
+                  if match.group(1) not in casks:
+                      casks.append(match.group(1))
+              return casks
+
+          def extract_app_names(issue_title, issue_body):
+              """Extract multiple app names from issue title."""
+              app_names = []
+
+              # Pattern to extract the apps part from title
+              patterns = [
+                  r'\[Feature\]\s*Add\s+(.+?)\s+to\s+(?:IntuneBrew|the\s+)?(?:app(?:lication)?\s+)?(?:list)?',
+                  r'^Add\s+(.+?)\s+to\s+',
+                  r'^Add\s+(.+?)$',
+                  r'Request[:\s]+(.+?)(?:\s+to|\s*$)',
+              ]
+
+              apps_string = None
+              for pattern in patterns:
+                  match = re.search(pattern, issue_title, re.IGNORECASE)
+                  if match:
+                      apps_string = match.group(1).strip()
+                      break
+
+              if apps_string:
+                  # Split by comma, "and", or "&"
+                  parts = re.split(r'\s*[,&]\s*|\s+and\s+', apps_string)
+                  for part in parts:
+                      part = part.strip()
+                      # Clean up common suffixes
+                      part = re.sub(r'\s+to\s+IntuneBrew.*$', '', part, flags=re.IGNORECASE)
+                      part = re.sub(r'\s+application\s+list.*$', '', part, flags=re.IGNORECASE)
+                      if part and len(part) > 1:
+                          app_names.append(part)
+
+              return app_names
+
+          def determine_app_type(cask_name):
+              try:
+                  r = requests.get(f"https://formulae.brew.sh/api/cask/{cask_name}.json", timeout=30)
+                  if r.status_code != 200:
+                      return 'unknown', 'unknown', '', None
+                  data = r.json()
+                  url = data.get('url', '')
+                  url_lower = url.lower()
+                  artifacts = data.get('artifacts', [])
+
+                  file_match = re.search(r'[?&]file=([^&]+)', url_lower)
+                  url_file = file_match.group(1).lower() if file_match else url_lower.split('?')[0].split('/')[-1].lower()
+
+                  has_pkg = any(isinstance(a, dict) and 'pkg' in a for a in artifacts)
+                  has_app = any(isinstance(a, dict) and 'app' in a for a in artifacts)
+
+                  if url_file.endswith('.pkg'):
+                      file_type = 'pkg'
+                      app_type = 'pkg'
+                  elif url_file.endswith('.dmg'):
+                      file_type = 'dmg'
+                      app_type = 'pkg_in_dmg' if has_pkg else 'dmg'
+                  elif any(url_file.endswith(ext) for ext in ['.zip', '.tar.gz', '.tar.xz', '.tar.bz2', '.tgz', '.tbz']):
+                      file_type = url_file.split('.')[-1]
+                      if url_file.endswith('.tar.gz'):
+                          file_type = 'tar.gz'
+                      elif url_file.endswith('.tar.xz'):
+                          file_type = 'tar.xz'
+                      elif url_file.endswith('.tar.bz2'):
+                          file_type = 'tar.bz2'
+                      app_type = 'app (needs repackaging)'
+                  elif has_pkg:
+                      file_type = 'pkg (redirect URL)'
+                      app_type = 'pkg'
+                  elif has_app:
+                      file_type = 'zip/archive (redirect URL)'
+                      app_type = 'app (needs repackaging)'
+                  else:
+                      file_type = 'unknown (redirect URL)'
+                      app_type = 'dmg'
+
+                  return app_type, file_type, url, data
+              except:
+                  return 'unknown', 'unknown', '', None
+
+          # Main logic
+          issue_title = os.environ.get('ISSUE_TITLE', '')
+          issue_body = os.environ.get('ISSUE_BODY', '')
+
+          print(f"Issue title: {issue_title}")
+
+          found_apps = []  # List of dicts with app info
+          not_found = []   # List of app names not found
+
+          # First check for direct cask references in URLs
+          casks_from_urls = extract_casks_from_urls(issue_body)
+          print(f"Found casks from URLs: {casks_from_urls}")
+
+          for cask_name in casks_from_urls:
+              app_type, file_type, download_url, data = determine_app_type(cask_name)
+              if data:
+                  names = data.get('name', [cask_name])
+                  app_name = names[0] if isinstance(names, list) else names
+                  found_apps.append({
+                      'cask': cask_name,
+                      'name': app_name,
+                      'type': app_type,
+                      'file_type': file_type,
+                      'url': download_url,
+                      'score': 100,
+                      'source': 'url'
+                  })
+              else:
+                  not_found.append(cask_name)
+
+          # Then extract app names from title and search
+          app_names = extract_app_names(issue_title, issue_body)
+          print(f"Extracted app names from title: {app_names}")
+
+          # Only search if we didn't find apps from URLs
+          if not found_apps and app_names:
+              for app_name in app_names:
+                  print(f"Searching for: {app_name}")
+                  results = search_homebrew(app_name)
+                  if results:
+                      best_token, best_cask, best_score = results[0]
+                      names = best_cask.get('name', [best_token])
+                      display_name = names[0] if isinstance(names, list) else names
+                      app_type, file_type, download_url, _ = determine_app_type(best_token)
+
+                      # Check if we already have this cask
+                      if not any(a['cask'] == best_token for a in found_apps):
+                          found_apps.append({
+                              'cask': best_token,
+                              'name': display_name,
+                              'type': app_type,
+                              'file_type': file_type,
+                              'url': download_url,
+                              'score': int(best_score * 100),
+                              'source': 'search',
+                              'searched_for': app_name
+                          })
+                  else:
+                      not_found.append(app_name)
+
+          # Set outputs
+          if found_apps:
+              set_output('found', 'true')
+              set_output('app_count', str(len(found_apps)))
+              set_output('apps_json', json.dumps(found_apps))
+              # For single app compatibility
+              if len(found_apps) == 1:
+                  app = found_apps[0]
+                  set_output('cask_name', app['cask'])
+                  set_output('app_name', app['name'])
+                  set_output('app_type', app['type'])
+                  set_output('file_type', app['file_type'])
+                  set_output('download_url', app['url'])
+                  set_output('score', str(app['score']))
+              # Cask names for approve command
+              set_output('cask_names', ','.join(a['cask'] for a in found_apps))
+          else:
+              set_output('found', 'false')
+              set_output('app_count', '0')
+              if not_found:
+                  set_output('error', f"Could not find apps on Homebrew: {', '.join(not_found)}")
+              else:
+                  set_output('error', 'Could not extract app names from issue')
+
+          if not_found:
+              set_output('not_found', ','.join(not_found))
+          EOF
+
+      - name: Check which apps already exist
+        if: steps.search.outputs.found == 'true'
+        id: check-exists
+        run: |
+          CASK_NAMES="${{ steps.search.outputs.cask_names }}"
+          NEW_APPS=""
+          EXISTING_APPS=""
+
+          IFS=',' read -ra CASKS <<< "$CASK_NAMES"
+          for cask in "${CASKS[@]}"; do
+            if grep -q "formulae.brew.sh/api/cask/${cask}.json" .github/scripts/collect_app_info.py; then
+              if [ -n "$EXISTING_APPS" ]; then
+                EXISTING_APPS="${EXISTING_APPS},${cask}"
+              else
+                EXISTING_APPS="${cask}"
+              fi
+            else
+              if [ -n "$NEW_APPS" ]; then
+                NEW_APPS="${NEW_APPS},${cask}"
+              else
+                NEW_APPS="${cask}"
+              fi
+            fi
+          done
+
+          echo "new_apps=${NEW_APPS}" >> $GITHUB_OUTPUT
+          echo "existing_apps=${EXISTING_APPS}" >> $GITHUB_OUTPUT
+
+          if [ -n "$NEW_APPS" ]; then
+            echo "has_new=true" >> $GITHUB_OUTPUT
+          else
+            echo "has_new=false" >> $GITHUB_OUTPUT
+          fi
+
+      - name: Comment on issue - Apps Found
+        if: steps.search.outputs.found == 'true'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const appsJson = `${{ steps.search.outputs.apps_json }}`;
+            const apps = JSON.parse(appsJson);
+            const newApps = '${{ steps.check-exists.outputs.new_apps }}'.split(',').filter(x => x);
+            const existingApps = '${{ steps.check-exists.outputs.existing_apps }}'.split(',').filter(x => x);
+            const notFound = '${{ steps.search.outputs.not_found }}'.split(',').filter(x => x);
+
+            let body = '';
+
+            // Show apps that can be added
+            const appsToAdd = apps.filter(a => newApps.includes(a.cask));
+            if (appsToAdd.length > 0) {
+              body += `## Apps Found on Homebrew\n\n`;
+              body += `| App Name | Cask | Type | File Type |\n`;
+              body += `|----------|------|------|----------|\n`;
+
+              for (const app of appsToAdd) {
+                const searchNote = app.source === 'search' ? ` (${app.score}% match)` : '';
+                body += `| **${app.name}**${searchNote} | \`${app.cask}\` | \`${app.type}\` | \`${app.file_type}\` |\n`;
+              }
+
+              body += `\n<details>\n<summary>Download URLs</summary>\n\n`;
+              for (const app of appsToAdd) {
+                body += `- **${app.name}**: ${app.url}\n`;
+              }
+              body += `\n</details>\n\n`;
+
+              body += `---\n\n`;
+              body += `### To approve ${appsToAdd.length > 1 ? 'all apps' : 'this app'}:\n`;
+              body += `\`\`\`\n/approve\n\`\`\`\n\n`;
+
+              if (appsToAdd.length > 1) {
+                body += `### To approve specific apps only:\n`;
+                body += `\`\`\`\n/approve cask1, cask2\n\`\`\`\n`;
+              }
+            }
+
+            // Show apps that already exist
+            if (existingApps.length > 0) {
+              const existingAppDetails = apps.filter(a => existingApps.includes(a.cask));
+              body += `\n## Already in IntuneBrew\n\n`;
+              for (const app of existingAppDetails) {
+                body += `- **${app.name}** (\`${app.cask}\`)\n`;
+              }
+              body += `\n`;
+            }
+
+            // Show apps that weren't found
+            if (notFound.length > 0) {
+              body += `\n## Not Found on Homebrew\n\n`;
+              for (const name of notFound) {
+                body += `- ${name}\n`;
+              }
+              body += `\nPlease provide Homebrew URLs for these apps or verify the names.\n`;
+            }
+
+            // If all apps already exist, close the issue
+            if (appsToAdd.length === 0 && existingApps.length > 0) {
+              body += `\nAll requested apps are already in IntuneBrew. Closing this issue.`;
+
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: ${{ steps.issue.outputs.number }},
+                body: body
+              });
+
+              const { data: issue } = await github.rest.issues.get({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: ${{ steps.issue.outputs.number }}
+              });
+
+              await github.rest.issues.update({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: ${{ steps.issue.outputs.number }},
+                state: 'closed',
+                labels: [...issue.labels.map(l => l.name), 'duplicate']
+              });
+              return;
+            }
+
+            // Check for existing bot comment to update
+            const comments = await github.rest.issues.listComments({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ steps.issue.outputs.number }}
+            });
+
+            const botComment = comments.data.find(c =>
+              c.user.login === 'github-actions[bot]' &&
+              (c.body.includes('## Apps Found on Homebrew') || c.body.includes('## App Found on Homebrew'))
+            );
+
+            if (botComment) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: botComment.id,
+                body: body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: ${{ steps.issue.outputs.number }},
+                body: body
+              });
+            }
+
+      - name: Comment on issue - No Apps Found
+        if: steps.search.outputs.found == 'false'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const error = '${{ steps.search.outputs.error }}';
+
+            const body = `## No Apps Found\n\n` +
+              `${error}\n\n` +
+              `**Please provide one of the following:**\n` +
+              `- Homebrew cask URL: \`https://formulae.brew.sh/cask/<app-name>\`\n` +
+              `- Homebrew API URL: \`https://formulae.brew.sh/api/cask/<app-name>.json\`\n` +
+              `- Brew install command: \`brew install --cask <app-name>\`\n\n` +
+              `You can search for apps at: https://formulae.brew.sh/cask/`;
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: ${{ steps.issue.outputs.number }},
+              body: body
+            });

@@ -1,0 +1,13 @@
+{
+  "name": "Piriform CCleaner",
+  "description": "Remove junk and unused files",
+  "version": "2.09.187",
+  "url": "https://download.ccleaner.com/mac/CCMacSetup209.dmg",
+  "bundleId": "com.piriform.pkg.CCleaner",
+  "homepage": "https://www.ccleaner.com/ccleaner-mac",
+  "fileName": "CCMacSetup209.dmg",
+  "sha": "fc3704c9ace0b4e04891af41c8904b105863f60f2529eda5749a701bbff84ff4",
+  "category": "Utilities",
+  "publisher": "Piriform Ltd.",
+  "previous_version": "2.09.187"
+}

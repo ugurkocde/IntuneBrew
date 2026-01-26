@@ -1,0 +1,13 @@
+{
+  "name": "Integrity",
+  "description": "Tool to scan a website checking for broken links",
+  "version": "12.11.3",
+  "url": "https://peacockmedia.software/mac/integrity/integrity.dmg",
+  "bundleId": "com.peacockmedia.integrity",
+  "homepage": "https://peacockmedia.software/mac/integrity/",
+  "fileName": "integrity.dmg",
+  "sha": "a86d3a80ea39bd6e2b035f638b9f0b3dcee42c121077c9fc8be45e0ac4f533c3",
+  "category": "Developer Tools",
+  "publisher": "Peacock Media",
+  "previous_version": "12.11.3"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Cheetah3D",
+  "description": "3D modelling, rendering and animation software",
+  "version": "8.1.3",
+  "url": "https://www.cheetah3d.com/download/Cheetah3D.dmg",
+  "bundleId": "de.wengenmayer.Cheetah3D",
+  "homepage": "https://www.cheetah3d.com/",
+  "fileName": "Cheetah3D.dmg",
+  "sha": "138c26a0ec742d20e4dcd05856a860d0953e58b5295f5d0e0eec44fd7c44dbc2",
+  "category": "Design",
+  "publisher": "Cheetah3D",
+  "previous_version": "8.1.3"
+}

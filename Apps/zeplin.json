@@ -1,0 +1,14 @@
+{
+  "name": "Zeplin",
+  "description": "Share, organise and collaborate on designs",
+  "version": "10.30.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/zeplin_10.30.0.pkg",
+  "bundleId": "io.zeplin.osx",
+  "homepage": "https://zeplin.io/",
+  "fileName": "zeplin_10.30.0.pkg",
+  "type": "app",
+  "sha": "5f101707e731b2688264fd3a89a782968dc02fa1293d4e8df7ca8efe481b57b3",
+  "category": "Design",
+  "publisher": "Zeplin Ltd",
+  "previous_version": "10.30.0"
+}

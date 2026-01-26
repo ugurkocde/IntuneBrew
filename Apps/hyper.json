@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "04ac47bffe14321f5dc2ced7edd72a7ad9f387acc0e9aa3dc86a19133d1fc539",
   "changelog": "https://github.com/vercel/hyper/releases",
-  "previous_version": "3.4.1"
+  "previous_version": "3.4.1",
+  "category": "Developer Tools",
+  "publisher": "Vercel"
 }

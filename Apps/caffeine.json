@@ -1,15 +1,14 @@
 {
   "name": "Caffeine",
   "description": "Utility that prevents the system from going to sleep",
-  "version": "1.6.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/caffeine_1.6.1.pkg",
+  "version": "1.1.4",
+  "url": "https://github.com/IntelliScape/caffeine/releases/download/1.1.4/Caffeine.dmg",
   "bundleId": "net.domzilla.caffeine",
   "homepage": "https://www.caffeine-app.net/",
-  "fileName": "caffeine_1.6.1.pkg",
+  "fileName": "Caffeine.dmg",
+  "sha": "1ad34c3299a0c866873c4feb432c3e11186375adb6f43c5f481ae9d46d06d723",
   "type": "app",
-  "sha": "6f90a152b02d54fd94fe26c76514b3d34a2067e82ffd55dafd58c109f575293e",
   "changelog": "https://www.caffeine-app.net/",
-  "previous_version": "1.6.1",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:45:45Z",
     "qa_result": "Installation successful and verified",
@@ -19,5 +18,8 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "1.5.1"
-  }
+  },
+  "category": "Utilities",
+  "publisher": "Lighthead Software",
+  "previous_version": "1.6.2"
 }

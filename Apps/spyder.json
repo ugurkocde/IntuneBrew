@@ -1,0 +1,14 @@
+{
+  "name": "Spyder",
+  "description": "Scientific Python IDE",
+  "version": "6.1.2",
+  "url": "https://github.com/spyder-ide/spyder/releases/download/v6.1.2/Spyder-macOS-arm64.pkg",
+  "bundleId": "org.spyder-ide.Spyder",
+  "homepage": "https://www.spyder-ide.org/",
+  "fileName": "Spyder-macOS-arm64.pkg",
+  "type": "pkg",
+  "sha": "19bb2b9bbde0d0263cabf3ff787f22aaf0a6e4b0d37cc75ab6aaf65da3e626a9",
+  "category": "Developer Tools",
+  "publisher": "Spyder Development Team",
+  "previous_version": "6.1.2"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "GraphiQL App",
+  "description": "Light, Electron-based Wrapper around GraphiQL",
+  "version": "0.7.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/graphiql_app_0.7.2.pkg",
+  "bundleId": "com.sk3vy.graphiql-app",
+  "homepage": "https://github.com/skevy/graphiql-app",
+  "fileName": "graphiql_app_0.7.2.pkg",
+  "type": "app",
+  "sha": "cd8fe736de0d09acf03bc0ec0193375a99beebae08641592bfb4629997de44d3",
+  "category": "Developer Tools",
+  "publisher": "skevy",
+  "previous_version": "0.7.2"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Charles",
+  "description": "Web debugging Proxy application",
+  "version": "5.0.3",
+  "url": "https://www.charlesproxy.com/assets/release/5.0.3/charles-proxy-5.0.3.dmg",
+  "bundleId": "com.xk72.Charles",
+  "homepage": "https://www.charlesproxy.com/",
+  "fileName": "charles-proxy-5.0.3.dmg",
+  "sha": "2dc3535b295ff5b3214d474fb310c2a3fd42433f11d145a5d069c88de1b0dbe0",
+  "category": "Developer Tools",
+  "publisher": "XK72 Pty Ltd",
+  "previous_version": "5.0.3"
+}

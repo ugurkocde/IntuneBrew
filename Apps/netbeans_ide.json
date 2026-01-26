@@ -8,5 +8,7 @@
   "fileName": "Apache-NetBeans-27-arm64.pkg",
   "sha": "1b5471269111bd546854008d8b0e067aa7fc72b885563dff99c35274c956233d",
   "changelog": "https://netbeans.apache.org/download/index.html#release-notes",
+  "category": "Developer Tools",
+  "publisher": "Apache Software Foundation",
   "previous_version": "27"
 }

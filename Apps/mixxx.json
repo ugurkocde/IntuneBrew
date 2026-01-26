@@ -1,11 +1,13 @@
 {
   "name": "Mixxx",
   "description": "Open-source DJ software",
-  "version": "2.5.3",
-  "url": "https://downloads.mixxx.org/releases/2.5.3/mixxx-2.5.3-macosarm.dmg",
+  "version": "2.5.4",
+  "url": "https://downloads.mixxx.org/releases/2.5.4/mixxx-2.5.4-macosarm.dmg",
   "bundleId": "org.mixxx.mixxx",
   "homepage": "https://www.mixxx.org/",
-  "fileName": "mixxx-2.5.3-macosarm.dmg",
-  "sha": "76c062aa41a445f0e1c67423a7679e1c6dc2893bea7d1425087b00744e9ff43e",
-  "previous_version": "2.5.3"
+  "fileName": "mixxx-2.5.4-macosarm.dmg",
+  "sha": "fce449cc762d86d516b917ca0c510e6f03b35d17343ae7244340e6d7e6b0dabd",
+  "category": "Media",
+  "publisher": "The Mixxx Team",
+  "previous_version": "2.5.4"
 }

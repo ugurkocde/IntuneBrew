@@ -3,7 +3,7 @@
   "description": "Collaborative design tool with support for Sketch files",
   "version": "98.6.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/abstract_98.6.3.pkg",
-  "bundleId": "com.elasticprojects.abstract-desktop",
+  "bundleId": "com.elasticprojects.Abstract",
   "homepage": "https://www.abstract.com/",
   "fileName": "abstract_98.6.3.pkg",
   "type": "app",
@@ -18,5 +18,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "98.6.1"
-  }
+  },
+  "category": "Design",
+  "publisher": "Abstract, Inc."
 }

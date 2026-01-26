@@ -1,0 +1,13 @@
+{
+  "name": "Capto",
+  "description": "Screen capture/recorder and video editor",
+  "version": "2.1.4",
+  "url": "https://d3l6g06uqih57x.cloudfront.net/Captomac/webstore/Capto.dmg",
+  "bundleId": "com.globaldelight.Capto",
+  "homepage": "https://www.globaldelight.com/capto/",
+  "fileName": "Capto.dmg",
+  "sha": "99d5b39434aedccc45fc5befae1558130637607852c4361d24d3ff8c283548ed",
+  "category": "Media",
+  "publisher": "Global Delight Technologies Pvt. Ltd.",
+  "previous_version": "2.1.4"
+}

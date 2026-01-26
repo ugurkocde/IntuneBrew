@@ -1,15 +1,36 @@
 {
   "app_name": "Azure Data Studio",
-  "last_updated": "2025-05-18",
+  "app_key": "azure_data_studio",
+  "last_updated": "2026-01-26",
+  "total_cves": 1,
+  "summary": {
+    "critical": 0,
+    "high": 1,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
   "vulnerabilities": [
     {
       "cve_id": "CVE-2024-26203",
       "published_date": "2024-03-12",
       "last_modified_date": "2025-01-15",
+      "description": "Azure Data Studio Elevation of Privilege Vulnerability",
       "base_score": 7.3,
       "severity": "HIGH",
-      "description": "Azure Data Studio Elevation of Privilege Vulnerability",
-      "cpe_name": "cpe:2.3:a:microsoft:azure_data_studio:-:*:*:*:*:*:*:*"
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "1.48.0",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "1.48.0",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "microsoft",
+      "product": "azure_data_studio"
     }
   ]
 }

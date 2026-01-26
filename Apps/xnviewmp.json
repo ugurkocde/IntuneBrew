@@ -1,0 +1,13 @@
+{
+  "name": "XnViewMP",
+  "description": "Photo viewer, image manager, image resiser and more",
+  "version": "1.9.10",
+  "url": "https://download.xnview.com/XnViewMP-mac.dmg",
+  "bundleId": "com.gilles-caulier.xnviewmp",
+  "homepage": "https://www.xnview.com/en/xnviewmp/",
+  "fileName": "XnViewMP-mac.dmg",
+  "sha": "876c1be484505127b6c09d7f1b0b61277e5943fbf022727a16c8de02682158bb",
+  "category": "Media",
+  "publisher": "XnSoft",
+  "previous_version": "1.9.10"
+}

@@ -1,0 +1,13 @@
+{
+  "name": "ElectronMail",
+  "description": "Unofficial ProtonMail Desktop App",
+  "version": "5.3.5",
+  "url": "https://github.com/vladimiry/ElectronMail/releases/download/v5.3.5/electron-mail-5.3.5-mac-arm64.dmg",
+  "bundleId": "github.comvladimiryElectronMail",
+  "homepage": "https://github.com/vladimiry/ElectronMail",
+  "fileName": "electron-mail-5.3.5-mac-arm64.dmg",
+  "sha": "e60ffa9dd383b8ad4e91e236f83c184d9a0376033efea318320ac584744f9c02",
+  "category": "Communication",
+  "publisher": "vladimiry",
+  "previous_version": "5.3.5"
+}

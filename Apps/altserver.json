@@ -1,0 +1,14 @@
+{
+  "name": "AltServer",
+  "description": "iOS App Store alternative",
+  "version": "1.7.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/altserver_1.7.2.pkg",
+  "bundleId": "com.rileytestut.AltServer",
+  "homepage": "https://altstore.io/",
+  "fileName": "altserver_1.7.2.pkg",
+  "type": "app",
+  "previous_version": "1.7.2",
+  "sha": "5e76e5355a3aa5621aed38e1caf064b017b68aada2407cd675c902500bd3e703",
+  "category": "Utilities",
+  "publisher": "Riley Testut"
+}

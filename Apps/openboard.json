@@ -1,0 +1,13 @@
+{
+  "name": "OpenBoard",
+  "description": "Interactive whiteboard application",
+  "version": "1.7.4",
+  "url": "https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.4/OpenBoard-1.7.4.dmg",
+  "bundleId": "org.openboard.OpenBoard",
+  "homepage": "https://openboard.ch/index.en.html",
+  "fileName": "OpenBoard-1.7.4.dmg",
+  "sha": "0c1f0f9a64bd2c57c8970f961ceaa87e32e0af49abb9e9c2cab0505ff4a12fe2",
+  "category": "Productivity",
+  "publisher": "OpenBoard",
+  "previous_version": "1.7.4"
+}

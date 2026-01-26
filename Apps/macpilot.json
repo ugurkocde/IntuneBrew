@@ -1,0 +1,13 @@
+{
+  "name": "MacPilot",
+  "description": "Graphical user interface for the command terminal",
+  "version": "17.5",
+  "url": "https://www.koingosw.com/products/macpilot/download/macpilot.dmg",
+  "bundleId": "com.koingosw.MacPilot",
+  "homepage": "https://www.koingosw.com/products/macpilot/",
+  "fileName": "macpilot.dmg",
+  "sha": "b201d87d92d1a214b874ef343a970dac9cd4227d0eb15533c9f760aac4981659",
+  "category": "Utilities",
+  "publisher": "Koingo Software",
+  "previous_version": "17.5"
+}

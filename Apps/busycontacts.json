@@ -1,15 +1,15 @@
 {
   "name": "BusyContacts",
   "description": "Contact manager focusing on efficiency",
-  "version": "2025.4.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/busycontacts_2025.4.3.pkg",
-  "bundleId": "com.busymac.busycontacts.pkg",
+  "version": "2026.1.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/busycontacts_2026.1.1.pkg",
+  "bundleId": "com.busymac.busycontacts",
   "homepage": "https://www.busymac.com/busycontacts/index.html",
-  "fileName": "busycontacts_2025.4.3.pkg",
+  "fileName": "busycontacts_2026.1.1.pkg",
   "type": "app",
-  "sha": "49ee087e675e618a5e90c82af846181d3ca56f29505869630f9f4b55cd998ea8",
+  "sha": "ccc60ff9f93a88bd57788bfa6bf7ea7941483b3ab615b34b9f5387c20a5ea39e",
   "changelog": "https://www.busymac.com/busycontacts/releasenotes.html",
-  "previous_version": "2025.4.3",
+  "previous_version": "2026.1.1",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:45:36Z",
     "qa_result": "Installation successful and verified",
@@ -19,5 +19,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "mismatch",
     "installed_version": "2025.2.1"
-  }
+  },
+  "category": "Productivity",
+  "publisher": "BusyMac, LLC"
 }

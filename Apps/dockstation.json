@@ -1,0 +1,13 @@
+{
+  "name": "DockStation",
+  "description": null,
+  "version": "1.5.1",
+  "url": "https://github.com/DockStation/dockstation/releases/download/v1.5.1/dockstation-1.5.1.dmg",
+  "bundleId": "com.dockstationio.dockstation",
+  "homepage": "https://dockstation.io/",
+  "fileName": "dockstation-1.5.1.dmg",
+  "sha": "3449009fcd2fc8476381d4de62b2086999281ede81f903dfb63715c3383491c7",
+  "category": "Developer Tools",
+  "publisher": "DockStation",
+  "previous_version": "1.5.1"
+}

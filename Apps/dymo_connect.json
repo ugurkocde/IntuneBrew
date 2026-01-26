@@ -1,0 +1,14 @@
+{
+  "name": "Dymo Connect",
+  "description": "Software for DYMO LabelWriters",
+  "version": "1.5.1.15",
+  "url": "https://download.dymo.com/dymo/Software/Mac/DCDMac1.5.1.15.pkg",
+  "bundleId": "com.dymo.dymo-connect",
+  "homepage": "https://www.dymo.com/support?cfid=online-support",
+  "fileName": "DCDMac1.5.1.15.pkg",
+  "type": "pkg",
+  "sha": "04090b1a1cc357791a29463e2b15331bfaff69dd64fe62f6afa5294b7f2a3a6b",
+  "category": "Productivity",
+  "publisher": "DYMO",
+  "previous_version": "1.5.1.15"
+}

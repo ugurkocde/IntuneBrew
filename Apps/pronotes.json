@@ -8,5 +8,7 @@
   "fileName": "pronotes_0.7.8.2.pkg",
   "type": "app",
   "sha": "3f62f893a1858bd350778e64362c3fa31a6d20dc4843a9b47dd97440d76cb3a1",
-  "previous_version": "0.7.8.2"
+  "previous_version": "0.7.8.2",
+  "category": "Productivity",
+  "publisher": "ProNotes"
 }

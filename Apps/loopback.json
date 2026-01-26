@@ -1,0 +1,14 @@
+{
+  "name": "Loopback",
+  "description": "Cable-free audio router",
+  "version": "2.4.8",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/loopback_2.4.8.pkg",
+  "bundleId": "com.rogueamoeba.Loopback",
+  "homepage": "https://rogueamoeba.com/loopback/",
+  "fileName": "loopback_2.4.8.pkg",
+  "type": "app",
+  "previous_version": "2.4.8",
+  "sha": "849888dd03778b4166cc4ebbc88f2692ee4afe288bcdeac9928e903abe5da383",
+  "category": "Utilities",
+  "publisher": "Rogue Amoeba"
+}

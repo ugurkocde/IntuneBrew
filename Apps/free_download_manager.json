@@ -1,0 +1,13 @@
+{
+  "name": "Free Download Manager",
+  "description": "Download accelerator and organiser",
+  "version": "6.33",
+  "url": "https://files2.freedownloadmanager.org/6/latest/fdm.dmg",
+  "bundleId": "org.freedownloadmanager.fdm6",
+  "homepage": "https://www.freedownloadmanager.org/",
+  "fileName": "fdm.dmg",
+  "sha": "c32df27b35aa6569044f9d71b5e625bc268e658cf75d30b03558feaf5cf6fd07",
+  "category": "Utilities",
+  "publisher": "Free Download Manager",
+  "previous_version": "6.33"
+}

@@ -8,5 +8,7 @@
   "fileName": "LittleSnitch-6.3.3.dmg",
   "sha": "9180c2ee2f69259d920255258930783aa7c9cc1ffbbb128920df2f51a9955265",
   "changelog": "https://www.obdev.at/products/littlesnitch/releasenotes.html",
+  "category": "Security",
+  "publisher": "Objective Development Software GmbH",
   "previous_version": "6.3.3"
 }

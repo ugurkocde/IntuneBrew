@@ -1,15 +1,15 @@
 {
   "name": "Dropshare",
   "description": "File sharing solution",
-  "version": "6.8",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/dropshare_6.8.pkg",
-  "bundleId": "net.mkswap.Dropshare5",
+  "version": "6.9.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/dropshare_6.9.1.pkg",
+  "bundleId": "net.mkswap.Dropshare",
   "homepage": "https://dropshare.app/",
-  "fileName": "dropshare_6.8.pkg",
+  "fileName": "dropshare_6.9.1.pkg",
   "type": "app",
-  "sha": "b79a51304dc1dcbb2c9420f82c4c6a6b6a7f30aecd266dc64b00c697c397a630",
+  "sha": "955357dead54b2ed55c627cbe3e4d8a6e7e1e9c35ccda792498cac0eda921f89",
   "changelog": "https://dropshare.app/changelog/",
-  "previous_version": "6.8",
+  "previous_version": "6.9.1",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:23:44Z",
     "qa_result": "Installation successful and verified",
@@ -19,5 +19,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "6.3"
-  }
+  },
+  "category": "Utilities",
+  "publisher": "Dropshare"
 }

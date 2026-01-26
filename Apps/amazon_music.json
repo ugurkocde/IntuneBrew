@@ -1,0 +1,13 @@
+{
+  "name": "Amazon Music",
+  "description": "Desktop client for Amazon Music",
+  "version": "9.5.2.2478",
+  "url": "https://d2j9xt6n9dg5d3.cloudfront.net/mac/24780926_1c962c14fdc55b2e347aeb3c3ffc5ee6/Amazon+Music+Installer.dmg",
+  "bundleId": "com.amazon.music",
+  "homepage": "https://www.amazon.com/musicapps",
+  "fileName": "Amazon+Music+Installer.dmg",
+  "sha": "4b89cfaeab9ad5d8b06b5b350d0fc5a409b47dffcaadf9b3ddc21cb56207881f",
+  "category": "Media",
+  "publisher": "Amazon.com, Inc.",
+  "previous_version": "9.5.2.2478"
+}

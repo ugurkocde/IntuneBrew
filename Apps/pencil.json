@@ -1,0 +1,13 @@
+{
+  "name": "Pencil",
+  "description": "GUI prototyping tool",
+  "version": "3.1.1",
+  "url": "https://pencil.evolus.vn/dl/V3.1.1.ga/Pencil-3.1.1.ga-universal.dmg",
+  "bundleId": "vn.evolus.pencil",
+  "homepage": "https://pencil.evolus.vn/",
+  "fileName": "Pencil-3.1.1.ga-universal.dmg",
+  "sha": "ea72ea7a528e3bb744a1730b9eed4b24af87e649c7feb5906182ab81ef903af5",
+  "category": "Design",
+  "publisher": "Evolus",
+  "previous_version": "3.1.1"
+}

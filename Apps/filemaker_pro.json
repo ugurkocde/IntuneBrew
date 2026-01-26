@@ -1,0 +1,13 @@
+{
+  "name": "FileMaker Pro",
+  "description": "Relational database and rapid application development platform",
+  "version": "22.0.4.406",
+  "url": "https://downloads.claris.com/esd/fmp_22.0.4.406.dmg",
+  "bundleId": "com.filemaker.client.pro12",
+  "homepage": "https://www.claris.com/filemaker/",
+  "fileName": "fmp_22.0.4.406.dmg",
+  "sha": "6ab11d3331ac8ffe203280c509a1aa7ce68f251dc2bf01d2f4910af78bd691d2",
+  "category": "Developer Tools",
+  "publisher": "Claris International, Inc.",
+  "previous_version": "22.0.4.406"
+}

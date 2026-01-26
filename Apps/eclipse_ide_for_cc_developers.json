@@ -1,0 +1,13 @@
+{
+  "name": "Eclipse IDE for C/C++ Developers",
+  "description": "Eclipse IDE for C and C++ developers",
+  "version": "4.38",
+  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2025-12/R/eclipse-cpp-2025-12-R-macosx-cocoa-aarch64.dmg&r=1",
+  "bundleId": "epp.package.cpp",
+  "homepage": "https://eclipse.org/",
+  "fileName": "Eclipse-IDE-for-C/C++-Developers-4.38.dmg",
+  "sha": "a3f4fb1bd93089fd4f41b655147db4f9e4bbb0c13fbc65d0e857222031a985c6",
+  "category": "Developer Tools",
+  "publisher": "The Eclipse Foundation",
+  "previous_version": "4.38"
+}

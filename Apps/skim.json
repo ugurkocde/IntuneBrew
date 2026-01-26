@@ -1,11 +1,13 @@
 {
   "name": "Skim",
   "description": "PDF reader and note-taking application",
-  "version": "1.7.11",
-  "url": "https://downloads.sourceforge.net/skim-app/Skim/Skim-1.7.11/Skim-1.7.11.dmg",
+  "version": "1.7.12",
+  "url": "https://downloads.sourceforge.net/skim-app/Skim/Skim-1.7.12/Skim-1.7.12.dmg",
   "bundleId": "net.sourceforge.skim-app.skim",
   "homepage": "https://skim-app.sourceforge.io/",
-  "fileName": "Skim-1.7.11.dmg",
-  "sha": "25f340e5819bcc77d8fab45196528bdb0991e7e9f0218fbb0caf7ec1107fd3c5",
-  "previous_version": "1.7.11"
+  "fileName": "Skim-1.7.12.dmg",
+  "sha": "12c2a3464cc26e1717a7cc28929123ad09f6bed737f033bdfbdfd43830df8e8c",
+  "category": "Productivity",
+  "publisher": "Skim Team",
+  "previous_version": "1.7.12"
 }

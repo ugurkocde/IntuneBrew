@@ -1,0 +1,14 @@
+{
+  "name": "GPG Suite",
+  "description": "Tools to protect your emails and files",
+  "version": "2023.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/gpg_suite_2023.3.pkg",
+  "bundleId": "org.gpgtools.gpgmail",
+  "homepage": "https://gpgtools.org/",
+  "fileName": "gpg_suite_2023.3.pkg",
+  "type": "pkg_in_dmg",
+  "sha": "ab1ea62077b62033c4d73c1940f619f890df68ddc4cebea3032b6e841ddc2fea",
+  "category": "Security",
+  "publisher": "GPGTools",
+  "previous_version": "2023.3"
+}

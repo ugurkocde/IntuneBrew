@@ -2,8 +2,17 @@ name: Build App Packages and Collect App Information
 
 on:
   workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - '.github/scripts/collect_app_info.py'
   schedule:
     - cron: "0 0 * * *" # Run at midnight UTC every day
+
+# Cancel old builds when a new one starts (new build includes all apps)
+concurrency:
+  group: build-app-packages
+  cancel-in-progress: true
 
 jobs:
   build:
@@ -136,7 +145,7 @@ jobs:
             
             # Skip if not a supported type
             if [ "$app_type" != "app" ] && [ "$app_type" != "pkg_in_dmg" ] && [ "$app_type" != "pkg_in_pkg" ]; then
-              echo "⏭️ Skipping URL update for $app_name as it's not of type 'app', 'pkg_in_dmg', or 'pkg_in_pkg'"
+              echo "Skipping URL update for $app_name as it's not of type 'app', 'pkg_in_dmg', or 'pkg_in_pkg'"
               continue
             fi
             
@@ -155,7 +164,7 @@ jobs:
                 # Update only URL and version without downloading
                 azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
                 current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" '.url = $url | .version = $version | .previous_version = $prev_version' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg filename "${app_name}_${version}.pkg" '.url = $url | .version = $version | .previous_version = $prev_version | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
                 echo "✅ JSON file updated (SHA preserved)"
               else
                 echo "⚠️ SHA missing in JSON file, downloading to calculate..."
@@ -173,13 +182,13 @@ jobs:
                   # Update JSON with SHA
                   azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
                   current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                  jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg sha "$file_hash" '.url = $url | .version = $version | .previous_version = $prev_version | .sha = $sha' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                  jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg sha "$file_hash" --arg filename "${app_name}_${version}.pkg" '.url = $url | .version = $version | .previous_version = $prev_version | .sha = $sha | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
                   echo "✅ JSON file updated with SHA256"
                 else
                   echo "❌ Could not download file to calculate SHA256"
                   azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
                   current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                  jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" '.url = $url | .version = $version | .previous_version = $prev_version' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                  jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg filename "${app_name}_${version}.pkg" '.url = $url | .version = $version | .previous_version = $prev_version | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
                   echo "⚠️ JSON file updated without SHA256"
                 fi
               fi
@@ -188,30 +197,64 @@ jobs:
             fi
             
             if [ "$app_type" = "pkg_in_pkg" ]; then
-              echo "🔍 Processing PKG in PKG for $app_name..."
-              echo "📥 Downloading PKG from: $url"
-              
+              echo "Processing PKG in PKG for $app_name..."
+              echo "Downloading from: $url"
+
               # Set download path
               download_path="$HOME/Desktop/${app_name}"
-              
-              # Download PKG
-              curl -L -o "${download_path}.pkg" "$url"
-              if [ $? -eq 0 ]; then
-                echo "✅ PKG download successful"
-                ls -lh "${download_path}.pkg"
-                
+              outer_pkg_path="${download_path}.pkg"
+
+              # Check if URL is a ZIP file
+              if [[ "$url" == *".zip" ]]; then
+                echo "URL is a ZIP file, downloading and extracting first..."
+                curl -L -o "${download_path}.zip" "$url"
+                if [ $? -ne 0 ]; then
+                  echo "Failed to download ZIP file"
+                  FAILED_APPS+=("$app_name")
+                  ERROR_LOG+=("$app_name: Failed to download ZIP from $url")
+                  continue
+                fi
+
+                # Extract ZIP to find the PKG inside
+                zip_extract_dir="${download_path}_zip_extracted"
+                rm -rf "$zip_extract_dir"
+                mkdir -p "$zip_extract_dir"
+                unzip -q "${download_path}.zip" -d "$zip_extract_dir"
+
+                # Find the PKG file inside the ZIP
+                found_pkg=$(find "$zip_extract_dir" -name "*.pkg" -type f -print -quit)
+                if [ -z "$found_pkg" ]; then
+                  echo "No PKG file found inside ZIP"
+                  rm -rf "$zip_extract_dir" "${download_path}.zip"
+                  FAILED_APPS+=("$app_name")
+                  ERROR_LOG+=("$app_name: No PKG found inside ZIP from $url")
+                  continue
+                fi
+
+                echo "Found PKG inside ZIP: $found_pkg"
+                cp "$found_pkg" "$outer_pkg_path"
+                rm -rf "$zip_extract_dir" "${download_path}.zip"
+              else
+                # Direct PKG download
+                curl -L -o "$outer_pkg_path" "$url"
+              fi
+
+              if [ $? -eq 0 ] && [ -f "$outer_pkg_path" ]; then
+                echo "PKG download/extraction successful"
+                ls -lh "$outer_pkg_path"
+
                 # Prepare temporary directory for extraction
-                echo "📂 Preparing temporary directory for extraction"
+                echo "Preparing temporary directory for extraction"
                 temp_dir="${download_path}_extracted"
                 # Remove directory if it exists
                 if [ -d "$temp_dir" ]; then
-                  echo "🧹 Removing existing directory: $temp_dir"
+                  echo "Removing existing directory: $temp_dir"
                   rm -rf "$temp_dir"
                 fi
-                
+
                 # Extract PKG (pkgutil will create the directory)
-                echo "🔓 Extracting outer PKG..."
-                if pkgutil --expand "${download_path}.pkg" "$temp_dir" 2>/dev/null; then
+                echo "Extracting outer PKG..."
+                if pkgutil --expand "$outer_pkg_path" "$temp_dir" 2>/dev/null; then
                   echo "✅ PKG extraction successful"
                   echo "📁 Extracted contents:"
                   ls -R "$temp_dir"
@@ -398,7 +441,7 @@ jobs:
               rm -f "${download_path}.dmg"
               rm -rf "${download_path}_mount"
               echo "✨ Cleanup complete"
-              
+
             else
               # Download app
               echo "Downloading $app_name..."
@@ -790,5 +833,48 @@ jobs:
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
           git add Apps/*.json supported_apps.json README.md
-          git commit -m "Update app information and supported apps list" || exit 0
-          git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Update app information and supported apps list"
+
+          MAX_RETRIES=5
+          RETRY_COUNT=0
+          RETRY_DELAY=5
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
+
+            # Clean up any failed rebase state
+            git rebase --abort 2>/dev/null || true
+
+            # Stash any unstaged changes before rebasing to avoid conflicts
+            git stash --include-untracked || true
+
+            if git pull --rebase origin main; then
+              # Restore stashed changes after successful rebase
+              git stash pop || true
+
+              if git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git; then
+                echo "Push successful"
+                exit 0
+              fi
+            else
+              # Abort failed rebase and restore stashed changes
+              git rebase --abort 2>/dev/null || true
+              git stash pop || true
+            fi
+
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+              echo "Push failed, retrying in ${RETRY_DELAY} seconds..."
+              sleep $RETRY_DELAY
+              RETRY_DELAY=$((RETRY_DELAY * 2))
+            fi
+          done
+
+          echo "Push failed after $MAX_RETRIES attempts"
+          exit 1

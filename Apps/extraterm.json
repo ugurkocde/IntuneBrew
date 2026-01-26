@@ -1,0 +1,13 @@
+{
+  "name": "Extraterm",
+  "description": "Swiss army chainsaw of terminal emulators",
+  "version": "0.81.4",
+  "url": "https://github.com/sedwards2009/extraterm/releases/download/v0.81.4/ExtratermQt_0.81.4.dmg",
+  "bundleId": "com.electron.extraterm",
+  "homepage": "https://extraterm.org/",
+  "fileName": "ExtratermQt_0.81.4.dmg",
+  "sha": "214bd9bb54fcb8c8cd97c8ea401898adac1a205b5fba74b406178757dbeae814",
+  "category": "Developer Tools",
+  "publisher": "Extraterm",
+  "previous_version": "0.81.4"
+}

@@ -1,0 +1,57 @@
+{
+  "app_name": "Loom",
+  "app_key": "loom",
+  "last_updated": "2026-01-26",
+  "total_cves": 2,
+  "summary": {
+    "critical": 1,
+    "high": 1,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
+  "vulnerabilities": [
+    {
+      "cve_id": "CVE-2024-23742",
+      "published_date": "2024-01-28",
+      "last_modified_date": "2024-11-21",
+      "description": "An issue in Loom on macOS version 0.196.1 and before, allows remote attackers to execute arbitrary code via the RunAsNode and enableNodeClilnspectArguments settings. NOTE: the vendor disputes this because it requires local access to a victim's machine.",
+      "base_score": 9.8,
+      "severity": "CRITICAL",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "0.196.1",
+      "affected_version_end_type": "including",
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "loom",
+      "product": "loom"
+    },
+    {
+      "cve_id": "CVE-2019-14432",
+      "published_date": "2019-08-07",
+      "last_modified_date": "2024-11-21",
+      "description": "Incorrect authentication of application WebSocket connections in Loom Desktop for Mac up to 0.16.0 allows remote code execution from either malicious JavaScript in a browser or hosts on the same network, during periods in which a user is recording a video with the application. The same attack vector can be used to crash the application at any time.",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "cvss_version": "3.0",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "0.16.0",
+      "affected_version_end_type": "including",
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "loom",
+      "product": "loom"
+    }
+  ]
+}

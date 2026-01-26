@@ -1,0 +1,14 @@
+{
+  "name": "Yippy",
+  "description": "Open source clipboard manager",
+  "version": "2.8.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/yippy_2.8.1.pkg",
+  "bundleId": "com.Matthias.yippy",
+  "homepage": "https://github.com/mattDavo/Yippy",
+  "fileName": "yippy_2.8.1.pkg",
+  "type": "app",
+  "sha": "8069f89daf4da7476a6ca469489bc243bf3e25fe01c0f971ca9f3fb8d1a55479",
+  "category": "Productivity",
+  "publisher": "mattDavo",
+  "previous_version": "2.8.1"
+}

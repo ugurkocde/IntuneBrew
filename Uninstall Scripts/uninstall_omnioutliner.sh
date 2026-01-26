@@ -25,36 +25,36 @@ elif [ -f "/Applications/OmniOutliner.app" ]; then
     rm -f "/Applications/OmniOutliner.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5
-echo "Removing $HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5..."
-if [ -d "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5" ]; then
-    rm -rf "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5" ]; then
-    rm -f "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6
+echo "Removing $HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6..."
+if [ -d "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5.Thumbnails
-echo "Removing $HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5.Thumbnails..."
-if [ -d "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5.Thumbnails" ]; then
-    rm -rf "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5.Thumbnails" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5.Thumbnails" ]; then
-    rm -f "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner5.Thumbnails" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6.Thumbnails
+echo "Removing $HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6.Thumbnails..."
+if [ -d "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6.Thumbnails" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6.Thumbnails" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6.Thumbnails" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6.Thumbnails" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.omnigroup.OmniOutliner5
-echo "Removing $HOME/Library/Containers/com.omnigroup.OmniOutliner5..."
-if [ -d "$HOME/Library/Containers/com.omnigroup.OmniOutliner5" ]; then
-    rm -rf "$HOME/Library/Containers/com.omnigroup.OmniOutliner5" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.omnigroup.OmniOutliner5" ]; then
-    rm -f "$HOME/Library/Containers/com.omnigroup.OmniOutliner5" 2>/dev/null || true
+# Remove $HOME/Library/Containers/com.omnigroup.OmniOutliner6
+echo "Removing $HOME/Library/Containers/com.omnigroup.OmniOutliner6..."
+if [ -d "$HOME/Library/Containers/com.omnigroup.OmniOutliner6" ]; then
+    rm -rf "$HOME/Library/Containers/com.omnigroup.OmniOutliner6" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.omnigroup.OmniOutliner6" ]; then
+    rm -f "$HOME/Library/Containers/com.omnigroup.OmniOutliner6" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.omnigroup.OmniOutliner5.Thumbnails
-echo "Removing $HOME/Library/Containers/com.omnigroup.OmniOutliner5.Thumbnails..."
-if [ -d "$HOME/Library/Containers/com.omnigroup.OmniOutliner5.Thumbnails" ]; then
-    rm -rf "$HOME/Library/Containers/com.omnigroup.OmniOutliner5.Thumbnails" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.omnigroup.OmniOutliner5.Thumbnails" ]; then
-    rm -f "$HOME/Library/Containers/com.omnigroup.OmniOutliner5.Thumbnails" 2>/dev/null || true
+# Remove $HOME/Library/Containers/com.omnigroup.OmniOutliner6.Thumbnails
+echo "Removing $HOME/Library/Containers/com.omnigroup.OmniOutliner6.Thumbnails..."
+if [ -d "$HOME/Library/Containers/com.omnigroup.OmniOutliner6.Thumbnails" ]; then
+    rm -rf "$HOME/Library/Containers/com.omnigroup.OmniOutliner6.Thumbnails" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.omnigroup.OmniOutliner6.Thumbnails" ]; then
+    rm -f "$HOME/Library/Containers/com.omnigroup.OmniOutliner6.Thumbnails" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

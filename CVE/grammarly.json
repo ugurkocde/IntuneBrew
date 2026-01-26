@@ -1,0 +1,36 @@
+{
+  "app_name": "Grammarly",
+  "app_key": "grammarly",
+  "last_updated": "2026-01-26",
+  "total_cves": 1,
+  "summary": {
+    "critical": 0,
+    "high": 1,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
+  "vulnerabilities": [
+    {
+      "cve_id": "CVE-2018-6654",
+      "published_date": "2018-02-06",
+      "last_modified_date": "2024-11-21",
+      "description": "The Grammarly extension before 2018-02-02 for Chrome allows remote attackers to discover authentication tokens via an 'action: \"user\"' request to iframe.gr_-ifr, because the exposure of these tokens is not restricted to any specific web site.",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "cvss_version": "3.0",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "grammarly",
+      "product": "grammarly"
+    }
+  ]
+}

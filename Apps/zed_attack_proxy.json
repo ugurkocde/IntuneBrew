@@ -1,11 +1,13 @@
 {
   "name": "Zed Attack Proxy",
   "description": "Free and open source web app scanner",
-  "version": "2.16.1",
-  "url": "https://github.com/zaproxy/zaproxy/releases/download/v2.16.1/ZAP_2.16.1_aarch64.dmg",
+  "version": "2.17.0",
+  "url": "https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2.17.0_aarch64.dmg",
   "bundleId": "org.zaproxy.zap.ZAP",
   "homepage": "https://www.zaproxy.org/",
-  "fileName": "ZAP_2.16.1_aarch64.dmg",
-  "sha": "aa3d1293856fdc380039a866b1e71c5ea24e6f6e3d0119607e365346b07d94d2",
-  "previous_version": "2.16.1"
+  "fileName": "ZAP_2.17.0_aarch64.dmg",
+  "sha": "3b3c6c8b105a33cb2a7d718e7f9aa41418a6d8aae3887d94a42523b5eeac723b",
+  "category": "Security",
+  "publisher": "OWASP Foundation",
+  "previous_version": "2.17.0"
 }

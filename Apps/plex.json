@@ -8,5 +8,7 @@
   "fileName": "plex_1.112.0.359.pkg",
   "type": "app",
   "sha": "4f09252ee9bb93f59cc8f1aa989522c264ed53df23439b0819f0c6a76c19b75f",
-  "previous_version": "1.112.0.359"
+  "previous_version": "1.112.0.359",
+  "category": "Media",
+  "publisher": "Plex, Inc."
 }

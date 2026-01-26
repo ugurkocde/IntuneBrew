@@ -1,0 +1,14 @@
+{
+  "name": "Versions",
+  "description": "Subversion client",
+  "version": "2.4.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/versions_2.4.4.pkg",
+  "bundleId": "com.versionsapp.v2",
+  "homepage": "https://versionsapp.com/",
+  "fileName": "versions_2.4.4.pkg",
+  "type": "app",
+  "sha": "f13f9881aea7fe3165f5dd8252998e2a4551dc35c5ecbd1b868f8447f8739bbf",
+  "category": "Developer Tools",
+  "publisher": "Versions",
+  "previous_version": "2.4.4"
+}

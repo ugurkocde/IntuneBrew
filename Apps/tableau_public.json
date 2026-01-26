@@ -1,0 +1,14 @@
+{
+  "name": "Tableau Public",
+  "description": "Explore, create and publicly share data visualisations online",
+  "version": "2025.3.1",
+  "url": "https://downloads.tableau.com/esdalt/2025.3.1/TableauPublic-2025-3-1-arm64.pkg",
+  "bundleId": "com.tableausoftware.tableaupublic",
+  "homepage": "https://public.tableau.com/s/",
+  "fileName": "TableauPublic-2025-3-1-arm64.pkg",
+  "type": "pkg",
+  "sha": "754cd8dd398e497102d9c2c80bbfe743828cf877ca8c78a464ddd45e6457cb47",
+  "category": "Design",
+  "publisher": "Tableau Software",
+  "previous_version": "2025.3.1"
+}

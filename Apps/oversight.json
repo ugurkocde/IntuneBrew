@@ -8,5 +8,7 @@
   "fileName": "oversight_2.4.0.pkg",
   "type": "app",
   "sha": "de7a0453f78d9e4dda942aebbc5d506da5fdeb970c3b70af4ad0cc4847394f88",
-  "previous_version": "2.4.0"
+  "previous_version": "2.4.0",
+  "category": "Security",
+  "publisher": "Objective-See"
 }

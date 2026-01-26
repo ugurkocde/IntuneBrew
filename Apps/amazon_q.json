@@ -18,5 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "1.10.1"
   },
-  "previous_version": "1.19.5"
+  "previous_version": "1.19.5",
+  "category": "Developer Tools",
+  "publisher": "Amazon Web Services, Inc."
 }

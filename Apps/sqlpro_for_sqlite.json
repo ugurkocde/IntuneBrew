@@ -8,5 +8,7 @@
   "fileName": "sqlpro_for_sqlite_2025.59.pkg",
   "type": "app",
   "sha": "bdb3ef2783de422fd8b5732a9f50c7ee8b109d8550609076920fa37bda327662",
-  "previous_version": "2025.59"
+  "previous_version": "2025.59",
+  "category": "Developer Tools",
+  "publisher": "Hankin Software"
 }

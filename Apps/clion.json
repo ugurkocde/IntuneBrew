@@ -1,12 +1,12 @@
 {
   "name": "CLion",
   "description": "C and C++ IDE",
-  "version": "2025.2.5",
-  "url": "https://download.jetbrains.com/cpp/CLion-2025.2.5-aarch64.dmg",
+  "version": "2025.3.2",
+  "url": "https://download.jetbrains.com/cpp/CLion-2025.3.2-aarch64.dmg",
   "bundleId": "com.jetbrains.CLion",
   "homepage": "https://www.jetbrains.com/clion/",
-  "fileName": "CLion-2025.2.5-aarch64.dmg",
-  "sha": "b0496540a133c82c64ac959f1d4542fe331bd63403fd230e23adf4bc957c84af",
+  "fileName": "CLion-2025.3.2-aarch64.dmg",
+  "sha": "b0b8f94287745f0940fbfb7f668785adb6906ec3f64b7933fc5e558cb9301604",
   "changelog": "https://www.jetbrains.com/clion/whatsnew/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:48:18Z",
@@ -18,5 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "2025.1.1"
   },
-  "previous_version": "2025.2.5"
+  "category": "Developer Tools",
+  "publisher": "JetBrains s.r.o.",
+  "previous_version": "2025.3.2"
 }

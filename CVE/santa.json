@@ -1,15 +1,36 @@
 {
   "app_name": "Santa",
-  "last_updated": "2025-12-07",
+  "app_key": "santa",
+  "last_updated": "2026-01-26",
+  "total_cves": 1,
+  "summary": {
+    "critical": 0,
+    "high": 1,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
   "vulnerabilities": [
     {
       "cve_id": "CVE-2018-10405",
       "published_date": "2018-06-13",
       "last_modified_date": "2024-11-21",
+      "description": "An issue was discovered in Google Santa and molcodesignchecker. A maliciously crafted Universal/fat binary can evade third-party code signing checks. By not completing full inspection of the Universal/fat binary, the user of the third-party tool will believe that the code is signed by Apple, but the malicious unsigned code will execute.",
       "base_score": 7.8,
       "severity": "HIGH",
-      "description": "An issue was discovered in Google Santa and molcodesignchecker. A maliciously crafted Universal/fat binary can evade third-party code signing checks. By not completing full inspection of the Universal/fat binary, the user of the third-party tool will believe that the code is signed by Apple, but the malicious unsigned code will execute.",
-      "cpe_name": "cpe:2.3:a:google:santa:0.9.21:*:*:*:*:*:*:*"
+      "cvss_version": "3.0",
+      "cvss_vector": "CVSS:3.0/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "0.9.24",
+      "affected_version_end_type": "including",
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "google",
+      "product": "santa"
     }
   ]
 }

@@ -1,0 +1,13 @@
+{
+  "name": "ConnectMeNow",
+  "description": "Mount network shares quick and easy",
+  "version": "4.0.18",
+  "url": "https://www.tweaking4all.com/downloads/network/ConnectMeNow4-v4.0.18-macOS-arm64.dmg",
+  "bundleId": "com.Tweaking4All.ConnectMeNow4",
+  "homepage": "https://www.tweaking4all.com/os-tips-and-tricks/macosx-tips-and-tricks/connectmenow-v4/",
+  "fileName": "ConnectMeNow4-v4.0.18-macOS-arm64.dmg",
+  "sha": "001648f6418d472be39900af2decf4d9687c2992374312696073c159faa5dbbe",
+  "category": "Utilities",
+  "publisher": "Tweaking4All",
+  "previous_version": "4.0.18"
+}

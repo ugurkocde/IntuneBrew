@@ -1,0 +1,14 @@
+{
+  "name": "SmoothScroll",
+  "description": "Smooth mouse scrolling utility",
+  "version": "1.7.6",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/smoothscroll_1.7.6.pkg",
+  "bundleId": "com.galambalazs.SmoothScroll",
+  "homepage": "https://www.smoothscroll.net/",
+  "fileName": "smoothscroll_1.7.6.pkg",
+  "type": "app",
+  "sha": "d4b8ca67e60cc24419a63709af95845b4c7052755dab2fed7b9b669a17c0d399",
+  "category": "Utilities",
+  "publisher": "SmoothScroll",
+  "previous_version": "1.7.6"
+}

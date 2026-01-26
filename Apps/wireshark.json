@@ -3,10 +3,12 @@
   "description": "Network protocol analyzer",
   "version": "4.4.7",
   "url": "https://2.na.dl.wireshark.org/osx/all-versions/Wireshark%204.4.7%20Arm%2064.dmg",
-  "bundleId": "org.wireshark.*",
+  "bundleId": "org.wireshark.Wireshark",
   "homepage": "https://www.wireshark.org/",
   "fileName": "Wireshark%204.4.7%20Arm%2064.dmg",
   "sha": "af1189f35774c2cf86578c4c143a79824c43070c59f7b01acff27469a40a847a",
   "changelog": "https://www.wireshark.org/news/",
-  "previous_version": "4.4.7"
+  "previous_version": "4.4.7",
+  "category": "Developer Tools",
+  "publisher": "The Wireshark Foundation"
 }

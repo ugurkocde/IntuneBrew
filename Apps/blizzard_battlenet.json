@@ -3,7 +3,7 @@
   "description": "Online gaming platform",
   "version": "1.19.0.3190",
   "url": "https://intunebrew.blob.core.windows.net/pkg/blizzard_battlenet_1.19.0.3190.pkg",
-  "bundleId": "com.blizzard.social",
+  "bundleId": "net.battle.app",
   "homepage": "https://www.battle.net/",
   "fileName": "blizzard_battlenet_1.19.0.3190.pkg",
   "type": "app",
@@ -18,5 +18,7 @@
     "install_status": "success",
     "verify_status": "app_found",
     "bundle_id_status": "mismatch"
-  }
+  },
+  "category": "Other",
+  "publisher": "Blizzard Entertainment, Inc."
 }

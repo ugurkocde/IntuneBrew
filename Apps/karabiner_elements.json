@@ -1,12 +1,14 @@
 {
   "name": "Karabiner Elements",
   "description": "Keyboard customiser",
-  "version": "15.7.0",
-  "url": "https://github.com/pqrs-org/Karabiner-Elements/releases/download/v15.7.0/Karabiner-Elements-15.7.0.dmg",
+  "version": "15.9.0",
+  "url": "https://github.com/pqrs-org/Karabiner-Elements/releases/download/v15.9.0/Karabiner-Elements-15.9.0.dmg",
   "bundleId": "org.pqrs.Karabiner-DriverKit-VirtualHIDDevice",
   "homepage": "https://karabiner-elements.pqrs.org/",
-  "fileName": "Karabiner-Elements-15.7.0.dmg",
-  "sha": "532d24e31c64af7de3f768f11210ffe8317486191d7fc69c53b96bde14da15ae",
+  "fileName": "Karabiner-Elements-15.9.0.dmg",
+  "sha": "c495f131165a4deefbe32e4a8ff5b3ffb000fcd5507140344899b8fee31574ee",
   "changelog": "https://github.com/pqrs-org/Karabiner-Elements/releases",
-  "previous_version": "15.7.0"
+  "category": "Utilities",
+  "publisher": "pqrs.org",
+  "previous_version": "15.9.0"
 }

@@ -1,15 +1,15 @@
 {
   "name": "Alfred",
   "description": "Application launcher and productivity software",
-  "version": "5.7.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/alfred_5.7.1.pkg",
+  "version": "5.7.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/alfred_5.7.2.pkg",
   "bundleId": "com.runningwithcrayons.Alfred",
   "homepage": "https://www.alfredapp.com/",
-  "fileName": "alfred_5.7.1.pkg",
+  "fileName": "alfred_5.7.2.pkg",
   "type": "app",
-  "sha": "4eb97cd2dfeb56626babe8669d9a5b18f5b0dac797a89ced7262f876c7c69c01",
+  "sha": "2f2fae374950d1c23a2e5601465241726de46ee9b8b893418ec6efa88fb1828c",
   "changelog": "https://www.alfredapp.com/changelog/",
-  "previous_version": "5.7.1",
+  "previous_version": "5.7.2",
   "qa_info": {
     "qa_timestamp": "2025-05-13T07:13:09Z",
     "qa_result": "Installation successful and verified",
@@ -19,5 +19,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "5.6.2"
-  }
+  },
+  "category": "Productivity",
+  "publisher": "Running with Crayons Ltd."
 }

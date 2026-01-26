@@ -18,5 +18,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "5.12.4"
-  }
+  },
+  "category": "Utilities",
+  "publisher": "Rogue Amoeba"
 }

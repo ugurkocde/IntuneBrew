@@ -1,0 +1,13 @@
+{
+  "name": "Rize",
+  "description": "AI time tracker",
+  "version": "2.3.6",
+  "url": "https://github.com/rize-io/lua/releases/download/v2.3.6/Rize-2.3.6-arm64.dmg",
+  "bundleId": "io.rize",
+  "homepage": "https://rize.io/",
+  "fileName": "Rize-2.3.6-arm64.dmg",
+  "sha": "d29a92a5405109ff2defe3cee25c0d5d5bcb94943d5d41753f1f1e3f29699e8c",
+  "category": "Productivity",
+  "publisher": "Rize AI, Inc.",
+  "previous_version": "2.3.6"
+}

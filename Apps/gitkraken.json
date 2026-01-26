@@ -1,14 +1,14 @@
 {
   "name": "GitKraken",
   "description": "Git client focusing on productivity",
-  "version": "11.6.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/gitkraken_11.6.0.pkg",
+  "version": "11.8.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/gitkraken_11.8.0.pkg",
   "bundleId": "com.axosoft.gitkraken",
   "homepage": "https://www.gitkraken.com/",
-  "fileName": "gitkraken_11.6.0.pkg",
+  "fileName": "gitkraken_11.8.0.pkg",
   "type": "app",
-  "sha": "106ea24d338ca69eeae0267a87ecb04ab96b76fe190a8dce258b475b68235ce2",
-  "previous_version": "11.6.0",
+  "sha": "f42480a9d763b1f3201c7b23be11f95a02397fd2347bd9600b79f12013037261",
+  "previous_version": "11.8.0",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:18:52Z",
     "qa_result": "Installation successful and verified",
@@ -18,5 +18,7 @@
     "verify_status": "app_found",
     "bundle_id_status": "verified",
     "installed_version": "11.1.0"
-  }
+  },
+  "category": "Developer Tools",
+  "publisher": "Axosoft, Inc."
 }

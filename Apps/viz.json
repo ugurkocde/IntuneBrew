@@ -8,5 +8,7 @@
   "fileName": "viz_2.3.3.pkg",
   "type": "app",
   "sha": "54becbd3e970b726e08905dd84e3870aa5efffc166cd7aa1e67deac3cb92ec30",
-  "previous_version": "2.3.3"
+  "previous_version": "2.3.3",
+  "category": "Utilities",
+  "publisher": "Itsalin"
 }

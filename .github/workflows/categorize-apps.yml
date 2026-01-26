@@ -1,0 +1,108 @@
+name: Categorize Apps
+
+on:
+  # Run daily at midnight UTC
+  schedule:
+    - cron: '0 0 * * *'
+  # Run when app JSON files are modified
+  push:
+    paths:
+      - 'Apps/**/*.json'
+  # Allow manual triggering
+  workflow_dispatch:
+    inputs:
+      recategorize_all:
+        description: 'Recategorize all apps (ignores existing categories)'
+        required: false
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+
+jobs:
+  categorize:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm install openai
+
+      - name: Categorize apps
+        id: categorize
+        env:
+          OPENAI_KEY: ${{ secrets.OPENAI_KEY }}
+          RECATEGORIZE_ALL: ${{ github.event.inputs.recategorize_all || 'false' }}
+        run: |
+          node .github/scripts/categorize-apps.js | tee output.log
+
+          # Extract stats from output
+          UPDATED=$(grep -oP 'Updated: \K\d+' output.log || echo "0")
+          SKIPPED=$(grep -oP 'Skipped.*: \K\d+' output.log || echo "0")
+          ERRORS=$(grep -oP 'Errors: \K\d+' output.log || echo "0")
+
+          # Write summary
+          echo "## App Categorization Results" >> $GITHUB_STEP_SUMMARY
+          echo "" >> $GITHUB_STEP_SUMMARY
+          echo "| Metric | Count |" >> $GITHUB_STEP_SUMMARY
+          echo "|--------|-------|" >> $GITHUB_STEP_SUMMARY
+          echo "| Updated | $UPDATED |" >> $GITHUB_STEP_SUMMARY
+          echo "| Skipped (already complete) | $SKIPPED |" >> $GITHUB_STEP_SUMMARY
+          echo "| Errors | $ERRORS |" >> $GITHUB_STEP_SUMMARY
+
+          rm output.log
+
+      - name: Commit changes
+        run: |
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git add -A
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Auto-categorize apps"
+
+          MAX_RETRIES=5
+          RETRY_COUNT=0
+          RETRY_DELAY=5
+
+          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
+            echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
+
+            # Clean up any failed rebase state
+            git rebase --abort 2>/dev/null || true
+
+            # Stash any unstaged changes before rebasing
+            git stash --include-untracked || true
+
+            if git pull --rebase origin main; then
+              git stash pop || true
+
+              if git push; then
+                echo "Push successful"
+                exit 0
+              fi
+            else
+              git rebase --abort 2>/dev/null || true
+              git stash pop || true
+            fi
+
+            RETRY_COUNT=$((RETRY_COUNT + 1))
+            if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
+              echo "Push failed, retrying in ${RETRY_DELAY} seconds..."
+              sleep $RETRY_DELAY
+              RETRY_DELAY=$((RETRY_DELAY * 2))
+            fi
+          done
+
+          echo "Push failed after $MAX_RETRIES attempts"
+          exit 1

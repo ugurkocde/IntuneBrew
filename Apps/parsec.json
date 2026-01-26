@@ -8,5 +8,7 @@
   "fileName": "parsec-macos.pkg",
   "type": "pkg",
   "sha": "f15bc65b0b74a4b0bada478825c9f6909c6f58b3a448fb277f14a4b32dae5700",
+  "category": "Utilities",
+  "publisher": "Parsec, Inc.",
   "previous_version": "150-101a"
 }

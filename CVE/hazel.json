@@ -1,24 +1,14 @@
 {
   "app_name": "Hazel",
-  "last_updated": "2025-05-18",
-  "vulnerabilities": [
-    {
-      "cve_id": "CVE-2023-45859",
-      "published_date": "2024-02-28",
-      "last_modified_date": "2025-05-13",
-      "base_score": 7.6,
-      "severity": "HIGH",
-      "description": "In Hazelcast through 4.1.10, 4.2 through 4.2.8, 5.0 through 5.0.5, 5.1 through 5.1.7, 5.2 through 5.2.4, and 5.3 through 5.3.2, some client operations don't check permissions properly, allowing authenticated users to access data stored in the cluster.",
-      "cpe_name": "cpe:2.3:a:hazelcast:hazelcast:5.3.0:*:*:*:enterprise:*:*:*"
-    },
-    {
-      "cve_id": "CVE-2023-45860",
-      "published_date": "2024-02-16",
-      "last_modified_date": "2025-03-27",
-      "base_score": 6.5,
-      "severity": "MEDIUM",
-      "description": "In Hazelcast Platform through 5.3.4, a security issue exists within the SQL mapping for the CSV File Source connector. This issue arises from inadequate permission checking, which could enable unauthorized clients to access data from files stored on a member's filesystem.",
-      "cpe_name": "cpe:2.3:a:hazelcast:hazelcast:5.3.0:*:*:*:enterprise:*:*:*"
-    }
-  ]
+  "app_key": "hazel",
+  "last_updated": "2026-01-26",
+  "total_cves": 0,
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
+  "vulnerabilities": []
 }

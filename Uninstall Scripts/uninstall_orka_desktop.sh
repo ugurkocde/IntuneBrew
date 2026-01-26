@@ -25,12 +25,44 @@ elif [ -f "/Applications/Orka Desktop.app" ]; then
     rm -f "/Applications/Orka Desktop.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/orka-toolkit/
-echo "Removing $HOME/orka-toolkit/..."
-if [ -d "$HOME/orka-toolkit/" ]; then
-    rm -rf "$HOME/orka-toolkit/" 2>/dev/null || true
-elif [ -f "$HOME/orka-toolkit/" ]; then
-    rm -f "$HOME/orka-toolkit/" 2>/dev/null || true
+# Remove $HOME/.local/state/orka
+echo "Removing $HOME/.local/state/orka..."
+if [ -d "$HOME/.local/state/orka" ]; then
+    rm -rf "$HOME/.local/state/orka" 2>/dev/null || true
+elif [ -f "$HOME/.local/state/orka" ]; then
+    rm -f "$HOME/.local/state/orka" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.macstadium.OrkaDesktop/
+echo "Removing $HOME/Library/Caches/com.macstadium.OrkaDesktop/..."
+if [ -d "$HOME/Library/Caches/com.macstadium.OrkaDesktop/" ]; then
+    rm -rf "$HOME/Library/Caches/com.macstadium.OrkaDesktop/" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.macstadium.OrkaDesktop/" ]; then
+    rm -f "$HOME/Library/Caches/com.macstadium.OrkaDesktop/" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.macstadium.OrkaDesktop
+echo "Removing $HOME/Library/HTTPStorages/com.macstadium.OrkaDesktop..."
+if [ -d "$HOME/Library/HTTPStorages/com.macstadium.OrkaDesktop" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.macstadium.OrkaDesktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.macstadium.OrkaDesktop" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.macstadium.OrkaDesktop" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.macstadium.OrkaDesktop.plist
+echo "Removing $HOME/Library/Preferences/com.macstadium.OrkaDesktop.plist..."
+if [ -d "$HOME/Library/Preferences/com.macstadium.OrkaDesktop.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.macstadium.OrkaDesktop.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.macstadium.OrkaDesktop.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.macstadium.OrkaDesktop.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/orka-toolkit
+echo "Removing $HOME/orka-toolkit..."
+if [ -d "$HOME/orka-toolkit" ]; then
+    rm -rf "$HOME/orka-toolkit" 2>/dev/null || true
+elif [ -f "$HOME/orka-toolkit" ]; then
+    rm -f "$HOME/orka-toolkit" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

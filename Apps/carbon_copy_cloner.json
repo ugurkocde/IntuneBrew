@@ -1,0 +1,14 @@
+{
+  "name": "Carbon Copy Cloner",
+  "description": "Hard disk backup and cloning utility",
+  "version": "7.1.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/carbon_copy_cloner_7.1.4.pkg",
+  "bundleId": "com.bombich.ccc",
+  "homepage": "https://bombich.com/",
+  "fileName": "carbon_copy_cloner_7.1.4.pkg",
+  "type": "app",
+  "previous_version": "7.1.4",
+  "sha": "b6c7beca30568f2ad4a0d1499ad7ad7e361163141e54ed75faaa56a68e3fe5ad",
+  "category": "Utilities",
+  "publisher": "Bombich Software"
+}

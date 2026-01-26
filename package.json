@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "openai": "^6.16.0",
+    "plist": "^3.1.0"
+  }
+}

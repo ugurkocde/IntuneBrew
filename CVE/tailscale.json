@@ -1,33 +1,78 @@
 {
   "app_name": "Tailscale",
-  "last_updated": "2025-12-07",
+  "app_key": "tailscale",
+  "last_updated": "2026-01-26",
+  "total_cves": 3,
+  "summary": {
+    "critical": 1,
+    "high": 1,
+    "medium": 1,
+    "low": 0,
+    "kev_count": 0
+  },
   "vulnerabilities": [
-    {
-      "cve_id": "CVE-2023-28436",
-      "published_date": "2023-03-23",
-      "last_modified_date": "2024-11-21",
-      "base_score": 5.7,
-      "severity": "MEDIUM",
-      "description": "Tailscale is software for using Wireguard and multi-factor authentication (MFA). A vulnerability identified in the implementation of Tailscale SSH starting in version 1.34.0 and prior to prior to 1.38.2 in FreeBSD allows commands to be run with a higher privilege group ID than that specified in Tailscale SSH access rules. A difference in the behavior of the FreeBSD `setgroups` system call from POSIX meant that the Tailscale client running on a FreeBSD-based operating system did not appropriately restrict groups on the host when using Tailscale SSH. When accessing a FreeBSD host over Tailscale SSH, the egid of the tailscaled process was used instead of that of the user specified in Tailscale SSH access rules.\n\nTailscale SSH commands may have been run with a higher privilege group ID than that specified in Tailscale SSH access rules if they met all of the following criteria: the destination node was a FreeBSD device with Tailscale SSH enabled; Tailscale SSH access rules permitted access for non-root users; and a non-interactive SSH session was used.\n\nAffected users should upgrade to version 1.38.2 to remediate the issue.\n\n",
-      "cpe_name": "cpe:2.3:a:tailscale:tailscale:1.34:*:*:*:*:*:*:*"
-    },
     {
       "cve_id": "CVE-2022-41924",
       "published_date": "2022-11-23",
       "last_modified_date": "2024-11-21",
+      "description": "A vulnerability identified in the Tailscale Windows client allows a malicious website to reconfigure the Tailscale daemon `tailscaled`, which can then be used to remotely execute code. In the Tailscale Windows client, the local API was bound to a local TCP socket, and communicated with the Windows client GUI in cleartext with no Host header verification. This allowed an attacker-controlled website visited by the node to rebind DNS to an attacker-controlled DNS server, and then make local API requests in the client, including changing the coordination server to an attacker-controlled coordination server. An attacker-controlled coordination server can send malicious URL responses to the client, including pushing executables or installing an SMB share. These allow the attacker to remotely execute code on the node. All Windows clients prior to version v.1.32.3 are affected. If you are running Tailscale on Windows, upgrade to v1.32.3 or later to remediate the issue.",
       "base_score": 9.6,
       "severity": "CRITICAL",
-      "description": "A vulnerability identified in the Tailscale Windows client allows a malicious website to reconfigure the Tailscale daemon `tailscaled`, which can then be used to remotely execute code. In the Tailscale Windows client, the local API was bound to a local TCP socket, and communicated with the Windows client GUI in cleartext with no Host header verification. This allowed an attacker-controlled website visited by the node to rebind DNS to an attacker-controlled DNS server, and then make local API requests in the client, including changing the coordination server to an attacker-controlled coordination server. An attacker-controlled coordination server can send malicious URL responses to the client, including pushing executables or installing an SMB share. These allow the attacker to remotely execute code on the node. All Windows clients prior to version v.1.32.3 are affected. If you are running Tailscale on Windows, upgrade to v1.32.3 or later to remediate the issue.",
-      "cpe_name": "cpe:2.3:a:tailscale:tailscale:-:*:*:*:*:*:*:*"
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "1.32.3",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "1.32.3",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "tailscale",
+      "product": "tailscale"
     },
     {
       "cve_id": "CVE-2022-41925",
       "published_date": "2022-11-23",
       "last_modified_date": "2024-11-21",
+      "description": "A vulnerability identified in the Tailscale client allows a malicious website to access the peer API, which can then be used to access Tailscale environment variables. In the Tailscale client, the peer API was vulnerable to DNS rebinding. This allowed an attacker-controlled website visited by the node to rebind DNS for the peer API to an attacker-controlled DNS server, and then making peer API requests in the client, including accessing the node\u2019s Tailscale environment variables. An attacker with access to the peer API on a node could use that access to read the node\u2019s environment variables, including any credentials or secrets stored in environment variables. This may include Tailscale authentication keys, which could then be used to add new nodes to the user\u2019s tailnet. The peer API access could also be used to learn of other nodes in the tailnet or send files via Taildrop. All Tailscale clients prior to version v1.32.3 are affected. Upgrade to v1.32.3 or later to remediate the issue.",
       "base_score": 8.8,
       "severity": "HIGH",
-      "description": "A vulnerability identified in the Tailscale client allows a malicious website to access the peer API, which can then be used to access Tailscale environment variables. In the Tailscale client, the peer API was vulnerable to DNS rebinding. This allowed an attacker-controlled website visited by the node to rebind DNS for the peer API to an attacker-controlled DNS server, and then making peer API requests in the client, including accessing the node\u2019s Tailscale environment variables. An attacker with access to the peer API on a node could use that access to read the node\u2019s environment variables, including any credentials or secrets stored in environment variables. This may include Tailscale authentication keys, which could then be used to add new nodes to the user\u2019s tailnet. The peer API access could also be used to learn of other nodes in the tailnet or send files via Taildrop. All Tailscale clients prior to version v1.32.3 are affected. Upgrade to v1.32.3 or later to remediate the issue.",
-      "cpe_name": "cpe:2.3:a:tailscale:tailscale:-:*:*:*:*:*:*:*"
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "1.32.3",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "1.32.3",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "tailscale",
+      "product": "tailscale"
+    },
+    {
+      "cve_id": "CVE-2023-28436",
+      "published_date": "2023-03-23",
+      "last_modified_date": "2024-11-21",
+      "description": "Tailscale is software for using Wireguard and multi-factor authentication (MFA). A vulnerability identified in the implementation of Tailscale SSH starting in version 1.34.0 and prior to prior to 1.38.2 in FreeBSD allows commands to be run with a higher privilege group ID than that specified in Tailscale SSH access rules. A difference in the behavior of the FreeBSD `setgroups` system call from POSIX meant that the Tailscale client running on a FreeBSD-based operating system did not appropriately restrict groups on the host when using Tailscale SSH. When accessing a FreeBSD host over Tailscale SSH, the egid of the tailscaled process was used instead of that of the user specified in Tailscale SSH access rules.\n\nTailscale SSH commands may have been run with a higher privilege group ID than that specified in Tailscale SSH access rules if they met all of the following criteria: the destination node was a FreeBSD device with Tailscale SSH enabled; Tailscale SSH access rules permitted access for non-root users; and a non-interactive SSH session was used.\n\nAffected users should upgrade to version 1.38.2 to remediate the issue.\n\n",
+      "base_score": 5.7,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:A/AC:L/PR:H/UI:R/S:C/C:H/I:N/A:N",
+      "affected_version_start": "1.34",
+      "affected_version_start_type": "including",
+      "affected_version_end": "1.38.2",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "1.38.2",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "tailscale",
+      "product": "tailscale"
     }
   ]
 }

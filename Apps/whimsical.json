@@ -1,0 +1,14 @@
+{
+  "name": "Whimsical",
+  "description": "Collaboration and diagramming tool",
+  "version": "0.4.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/whimsical_0.4.3.pkg",
+  "bundleId": "com.whimsical.desktop",
+  "homepage": "https://whimsical.com/",
+  "fileName": "whimsical_0.4.3.pkg",
+  "type": "app",
+  "sha": "f7a98cd6162d35e72e20d6eeac8764c62c86130c528c587eebeff61c13cf8fb3",
+  "category": "Design",
+  "publisher": "Whimsical, Inc.",
+  "previous_version": "0.4.3"
+}

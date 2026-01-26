@@ -1,0 +1,14 @@
+{
+  "name": "TeXShop",
+  "description": "LaTeX and TeX editor and previewer",
+  "version": "5.57",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/texshop_5.57.pkg",
+  "bundleId": "edu.uoregon.eugene.koch.TeXShop",
+  "homepage": "https://pages.uoregon.edu/koch/texshop/",
+  "fileName": "texshop_5.57.pkg",
+  "type": "app",
+  "sha": "8903813a37539935420e11892cc4f788b451e9e39e240fe24ff0b5b26a08b712",
+  "category": "Productivity",
+  "publisher": "The TeXShop Team",
+  "previous_version": "5.57"
+}

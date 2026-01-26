@@ -7,5 +7,7 @@
   "homepage": "https://sabnzbd.org/",
   "fileName": "SABnzbd-4.5.5-macos.dmg",
   "sha": "c54b00e710945cb18ea3edf890b8c48096cd491a28767d7202fd6478f21eaf96",
+  "category": "Utilities",
+  "publisher": "SABnzbd",
   "previous_version": "4.5.5"
 }

@@ -1,0 +1,14 @@
+{
+  "name": "Taccy",
+  "description": "Troubleshoot signature and privacy problems in applications",
+  "version": "1.15",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/taccy_1.15.pkg",
+  "bundleId": "co.eclecticlight.Taccy",
+  "homepage": "https://eclecticlight.co/taccy-signet-precize-alifix-utiutility-alisma/",
+  "fileName": "taccy_1.15.pkg",
+  "type": "app",
+  "sha": "8b6e3fa8e562a94159f2bee2b0d11bf2430bba673bd66df3bceb2822e8e8d3d8",
+  "category": "Security",
+  "publisher": "Eclectic Light Company",
+  "previous_version": "1.15"
+}

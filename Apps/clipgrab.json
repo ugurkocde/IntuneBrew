@@ -1,0 +1,13 @@
+{
+  "name": "ClipGrab",
+  "description": "Downloads videos and audio from websites",
+  "version": "3.9.16",
+  "url": "https://download.clipgrab.org/ClipGrab-3.9.16.dmg",
+  "bundleId": "de.clipgrab.ClipGrab",
+  "homepage": "https://clipgrab.org/",
+  "fileName": "ClipGrab-3.9.16.dmg",
+  "sha": "cb0b5b47ac8c3de64487994bd03519cd5f99a63221100ac97370138802e5dd2c",
+  "category": "Media",
+  "publisher": "ClipGrab",
+  "previous_version": "3.9.16"
+}

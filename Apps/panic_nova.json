@@ -8,5 +8,7 @@
   "fileName": "panic_nova_13.3.pkg",
   "type": "app",
   "sha": "5a6f61f3f5d901aec6d7e2df77202fe5668fbe8679514ea2e235d07f10c8a99d",
-  "previous_version": "13.3"
+  "previous_version": "13.3",
+  "category": "Developer Tools",
+  "publisher": "Panic Inc."
 }

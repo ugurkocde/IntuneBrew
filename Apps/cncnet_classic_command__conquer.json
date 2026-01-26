@@ -1,0 +1,13 @@
+{
+  "name": "CnCNet: Classic Command & Conquer",
+  "description": "Multiplayer platform for classic Command & Conquer games",
+  "version": "2.1",
+  "url": "https://funkyfr3sh.cnc-comm.com/files/CnCNet.dmg",
+  "bundleId": "com.nicola.cncnet",
+  "homepage": "https://cncnet.org/",
+  "fileName": "CnCNet.dmg",
+  "sha": "222e3f831ce42ba47a32e96564d44221fd466d35089ebdcb0378492c6be40b10",
+  "category": "Utilities",
+  "publisher": "CnCNet",
+  "previous_version": "2.1"
+}

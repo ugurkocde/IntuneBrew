@@ -7,5 +7,7 @@
   "homepage": "https://gitlab.com/dehesselle/meld_macos",
   "fileName": "Meld-3.22.3+105_arm64.dmg",
   "sha": "aea65bbe21842e9c2e72c547df996858abbe05b2610c583f5121215556009527",
+  "category": "Developer Tools",
+  "publisher": "dehesselle",
   "previous_version": "3.22.3+105"
 }

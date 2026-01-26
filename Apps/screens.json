@@ -1,0 +1,14 @@
+{
+  "name": "Screens",
+  "description": "Remote access software focusing on usability",
+  "version": "4.12.16",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/screens_4.12.16.pkg",
+  "bundleId": "com.edovia.screens4.mac",
+  "homepage": "https://edovia.com/screens-mac/",
+  "fileName": "screens_4.12.16.pkg",
+  "type": "app",
+  "previous_version": "4.12.16",
+  "sha": "2be4e729c9962a22e2c82a3f271ad54e9638876fe6b9a6cfc2e7d2bee8a14977",
+  "category": "Productivity",
+  "publisher": "Edovia"
+}

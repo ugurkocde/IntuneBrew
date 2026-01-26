@@ -1,0 +1,14 @@
+{
+  "name": "Grids",
+  "description": "Instagram desktop application",
+  "version": "8.5.8",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/grids_8.5.8.pkg",
+  "bundleId": "com.thinktimecreations.GridsLite",
+  "homepage": "https://gridsapp.net/",
+  "fileName": "grids_8.5.8.pkg",
+  "type": "app",
+  "sha": "defb9737a7834e66d528855827158713c6c932e68078288e9c0a6f46a89794f7",
+  "category": "Media",
+  "publisher": "Grids",
+  "previous_version": "8.5.8"
+}

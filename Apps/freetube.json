@@ -1,12 +1,12 @@
 {
   "name": "FreeTube",
   "description": "YouTube player focusing on privacy",
-  "version": "0.23.12",
-  "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.12-beta/freetube-0.23.12-beta-mac-arm64.dmg",
+  "version": "0.23.13",
+  "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.23.13-beta/freetube-0.23.13-beta-mac-arm64.dmg",
   "bundleId": "io.freetubeapp.freetube",
   "homepage": "https://freetubeapp.io/",
-  "fileName": "freetube-0.23.12-beta-mac-arm64.dmg",
-  "sha": "6b70398d0453186b0f2087ac684eebb0c17eb847c75f4ed4e1507cea6d8eed47",
+  "fileName": "freetube-0.23.13-beta-mac-arm64.dmg",
+  "sha": "aad0886f11381f35fc5802e9133fe9fd4e99d92da61d4f565b894f693bd14905",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:15:19Z",
     "qa_result": "Installation successful and verified",
@@ -17,5 +17,7 @@
     "bundle_id_status": "verified",
     "installed_version": "0.23.5"
   },
-  "previous_version": "0.23.12"
+  "category": "Media",
+  "publisher": "FreeTube",
+  "previous_version": "0.23.13"
 }

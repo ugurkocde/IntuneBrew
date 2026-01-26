@@ -1,0 +1,13 @@
+{
+  "name": "Superkey",
+  "description": "Search and click text anywhere on screen",
+  "version": "1.59",
+  "url": "https://superkey.app/downloads/Superkey1.59.dmg",
+  "bundleId": "com.knollsoft.Superkey",
+  "homepage": "https://superkey.app/",
+  "fileName": "Superkey1.59.dmg",
+  "sha": "59c85541912acb3cce29a4fec221f7e2b7fa668112a48fa45df6c69dce4b94aa",
+  "category": "Utilities",
+  "publisher": "Superkey",
+  "previous_version": "1.59"
+}

@@ -17,5 +17,7 @@
     "bundle_id_status": "verified",
     "installed_version": "0.10.1"
   },
+  "category": "Design",
+  "publisher": "Gephi Consortium",
   "previous_version": "0.10.1"
 }

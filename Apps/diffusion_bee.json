@@ -1,0 +1,13 @@
+{
+  "name": "Diffusion Bee",
+  "description": "Run Stable Diffusion locally",
+  "version": "2.5.3",
+  "url": "https://github.com/divamgupta/diffusionbee-stable-diffusion-ui/releases/download/2.5.3/DiffusionBee_MPS_arm64-2.5.3.dmg",
+  "bundleId": "com.diffusionbee.diffusionbee",
+  "homepage": "https://diffusionbee.com/",
+  "fileName": "DiffusionBee_MPS_arm64-2.5.3.dmg",
+  "sha": "1c6deb9f4c745ca86631cc830951b69d5359a13bad13e87e34712617881c2977",
+  "category": "Design",
+  "publisher": "DiffusionBee",
+  "previous_version": "2.5.3"
+}

@@ -1,0 +1,14 @@
+{
+  "name": "CellProfiler",
+  "description": "Open-source application for biological image analysis",
+  "version": "4.2.8",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/cellprofiler_4.2.8.pkg",
+  "bundleId": "org.cellprofiler.CellProfiler",
+  "homepage": "https://cellprofiler.org/",
+  "fileName": "cellprofiler_4.2.8.pkg",
+  "type": "app",
+  "sha": "6d8ba688f5cb3b682830d77b02bd27fa3362ce16f33a1899c9fe3d6c20787c0e",
+  "category": "Utilities",
+  "publisher": "Broad Institute of MIT and Harvard",
+  "previous_version": "4.2.8"
+}

@@ -8,5 +8,7 @@
   "fileName": "textmate_2.0.23.pkg",
   "type": "app",
   "sha": "5ee6812dec319b49e5d90069a6082c658385ddbdcbb16a73a3d97e52822c788a",
-  "previous_version": "2.0.23"
+  "previous_version": "2.0.23",
+  "category": "Developer Tools",
+  "publisher": "Allan Odgaard"
 }

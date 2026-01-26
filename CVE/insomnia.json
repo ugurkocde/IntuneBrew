@@ -1,15 +1,14 @@
 {
   "app_name": "Insomnia",
-  "last_updated": "2025-12-07",
-  "vulnerabilities": [
-    {
-      "cve_id": "CVE-2023-40299",
-      "published_date": "2023-10-04",
-      "last_modified_date": "2024-11-21",
-      "base_score": 7.8,
-      "severity": "HIGH",
-      "description": "Kong Insomnia 2023.4.0 on macOS allows attackers to execute code and access restricted files, or make requests for TCC permissions, by using the DYLD_INSERT_LIBRARIES environment variable.",
-      "cpe_name": "cpe:2.3:a:konghq:insomnia:2023.4.0:*:*:*:*:*:*:*"
-    }
-  ]
+  "app_key": "insomnia",
+  "last_updated": "2026-01-26",
+  "total_cves": 0,
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
+  "vulnerabilities": []
 }

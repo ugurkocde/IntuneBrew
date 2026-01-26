@@ -1,0 +1,13 @@
+{
+  "name": "Cursr",
+  "description": "Customise mouse movements between multiple displays",
+  "version": "1.7.3",
+  "url": "https://github.com/bitgapp/Cursr/releases/download/v1.7.3/Cursr-mac-arm64.dmg",
+  "bundleId": "com.bitgapp.cursr",
+  "homepage": "https://cursr.app/",
+  "fileName": "Cursr-mac-arm64.dmg",
+  "sha": "e60db5a98cadbbdd4d5e1d44c9d335028f9e013f00c473544e04b1153f43f823",
+  "category": "Utilities",
+  "publisher": "Cursr",
+  "previous_version": "1.7.3"
+}

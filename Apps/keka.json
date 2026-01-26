@@ -8,5 +8,7 @@
   "fileName": "Keka-1.6.0.dmg",
   "sha": "6acf206a0065a4a9fd304c8e07faf7885ac771351991a409ac2ce09b26c4d35d",
   "changelog": "https://github.com/aonez/Keka/releases",
+  "category": "Utilities",
+  "publisher": "Keka Team",
   "previous_version": "1.6.0"
 }

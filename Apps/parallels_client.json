@@ -5,8 +5,10 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/parallels_client_19.4.3.pkg",
   "bundleId": "com.2X.Client.Mac",
   "homepage": "https://www.parallels.com/products/ras/features/rdp-client/",
-  "fileName": "RasClient-Mac-Notarized-19.4.3-25221.pkg",
+  "fileName": "parallels_client_19.4.3.pkg",
   "type": "pkg_in_pkg",
   "sha": "a945233c19a8c27a86e815e312fea23da4400d2cbfd6dd84edf8a8c167e82392",
+  "category": "Productivity",
+  "publisher": "Parallels International GmbH",
   "previous_version": "19.4.3"
 }

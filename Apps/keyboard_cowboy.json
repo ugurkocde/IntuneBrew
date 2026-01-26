@@ -1,0 +1,13 @@
+{
+  "name": "Keyboard Cowboy",
+  "description": "Keyboard shortcut utility",
+  "version": "3.28.4",
+  "url": "https://github.com/zenangst/KeyboardCowboy/releases/download/3.28.4/Keyboard.Cowboy.3.28.4.dmg",
+  "bundleId": "com.zenangst.Keyboard-Cowboy",
+  "homepage": "https://github.com/zenangst/KeyboardCowboy",
+  "fileName": "Keyboard.Cowboy.3.28.4.dmg",
+  "sha": "e95e4cc8fd5438215da659acfe20cd901081edcf7aa99824b6fc4001d5b5fc52",
+  "category": "Utilities",
+  "publisher": "zenangst",
+  "previous_version": "3.28.4"
+}

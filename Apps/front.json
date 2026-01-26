@@ -1,0 +1,14 @@
+{
+  "name": "Front",
+  "description": "Customer communication platform",
+  "version": "3.68.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/front_3.68.0.pkg",
+  "bundleId": "com.frontapp.Front",
+  "homepage": "https://front.com/",
+  "fileName": "front_3.68.0.pkg",
+  "type": "app",
+  "previous_version": "3.68.0",
+  "sha": "7bd0931a9cd358ce0d14b17300dd8949eef88bc138e5db3d623783bc91a3c68e",
+  "category": "Communication",
+  "publisher": "Front, Inc."
+}

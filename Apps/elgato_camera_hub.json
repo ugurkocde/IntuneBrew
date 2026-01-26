@@ -3,7 +3,7 @@
   "description": "Elgato FACECAM configuration tool",
   "version": "2.2.1.6945",
   "url": "https://edge.elgato.com/egc/macos/echm/2.2.1/CameraHub_2.2.1.6945.pkg",
-  "bundleId": "com.displaylink.displaylinkmanagerapp",
+  "bundleId": "com.elgato.CameraHub",
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
   "fileName": "CameraHub_2.2.1.6945.pkg",
   "sha": "1d87d17ba63ba3334a1f728b13307a9c80734147733e1186284eab52d553d84f",
@@ -18,5 +18,7 @@
     "bundle_id_status": "mismatch",
     "installed_version": "2.0.0"
   },
+  "category": "Utilities",
+  "publisher": "Elgato",
   "previous_version": "2.2.1.6945"
 }

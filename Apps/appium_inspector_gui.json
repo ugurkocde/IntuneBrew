@@ -1,0 +1,14 @@
+{
+  "name": "Appium Inspector GUI",
+  "description": "GUI inspector for mobile apps",
+  "version": "2026.1.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/appium_inspector_gui_2026.1.3.pkg",
+  "bundleId": "io.appium.inspector",
+  "homepage": "https://github.com/appium/appium-inspector/",
+  "fileName": "appium_inspector_gui_2026.1.3.pkg",
+  "type": "app",
+  "sha": "3a5ee0b6e1c0e277bd28bb4e4782bec18530616235e424dfecf67189239d4d60",
+  "category": "Developer Tools",
+  "publisher": "Appium",
+  "previous_version": "2026.1.3"
+}

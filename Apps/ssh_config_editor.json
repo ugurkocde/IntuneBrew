@@ -1,0 +1,13 @@
+{
+  "name": "SSH Config Editor",
+  "description": "Tool for managing the OpenSSH ssh client configuration file",
+  "version": "2.6.11",
+  "url": "https://hejki.org/download/ssheditor/SSHConfigEditor-112.dmg",
+  "bundleId": "org.hejki.osx.sshce",
+  "homepage": "https://www.hejki.org/ssheditor/",
+  "fileName": "SSHConfigEditor-112.dmg",
+  "sha": "cf73dcea2b6b52185ef4438f3b0911d96b11cc03896a0d60524e18d481932fd7",
+  "category": "Developer Tools",
+  "publisher": "Hejki",
+  "previous_version": "2.6.11"
+}

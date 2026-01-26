@@ -1,0 +1,12 @@
+{
+  "name": "Douyin",
+  "description": "Social software for creating music short videos",
+  "version": "7.1.0",
+  "url": "https://www.douyin.com/download/pc/obj/douyin-pc-web//douyin-pc-client/7044145585217083655/releases/290103052/7.1.0/darwin-universal/douyin-v7.1.0-darwin-universal.dmg",
+  "bundleId": "com.bytedance.douyin.desktop",
+  "homepage": "https://www.douyin.com/",
+  "fileName": "douyin-v7.1.0-darwin-universal.dmg",
+  "category": "Media",
+  "publisher": "ByteDance Ltd.",
+  "previous_version": "7.1.0"
+}

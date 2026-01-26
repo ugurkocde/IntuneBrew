@@ -2,10 +2,12 @@
   "name": "Packages",
   "description": "Integrated packaging environment",
   "version": "1.2.10",
-  "url": "http://s.sudre.free.fr/Software/files/Packages.dmg",
+  "url": "https://github.com/packagesdev/packages/releases/download/v1.2.10/Packages.dmg",
   "bundleId": "fr.whitebox.Packages",
   "homepage": "http://s.sudre.free.fr/Software/Packages/about.html",
   "fileName": "Packages.dmg",
   "sha": "9d9a73a64317ea6697a380014d2e5c8c8188b59d5fb8ce8872e56cec06cd78e8",
+  "category": "Developer Tools",
+  "publisher": "St\u00e9phane Sudre",
   "previous_version": "1.2.10"
 }

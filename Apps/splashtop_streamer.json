@@ -1,0 +1,14 @@
+{
+  "name": "Splashtop Streamer",
+  "description": "Connect to and control computers from desktop and mobile devices",
+  "version": "3.8.0.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/splashtop_streamer_3.8.0.4.pkg",
+  "bundleId": "com.splashtop.Splashtop-Streamer",
+  "homepage": "https://www.splashtop.com/downloads",
+  "fileName": "splashtop_streamer_3.8.0.4.pkg",
+  "type": "pkg_in_dmg",
+  "sha": "1b2a7ac8b7c021790b593526d0be78102ffd5126ddd7fda52580875f47339b50",
+  "category": "Utilities",
+  "publisher": "Splashtop Inc.",
+  "previous_version": "3.8.0.4"
+}

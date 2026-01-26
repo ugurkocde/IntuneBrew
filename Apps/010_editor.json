@@ -1,0 +1,13 @@
+{
+  "name": "010 Editor",
+  "description": "Text editor",
+  "version": "16.0.3",
+  "url": "https://download.sweetscape.com/010EditorMacARM64Installer16.0.3.dmg",
+  "bundleId": "com.SweetScape.010Editor",
+  "homepage": "https://www.sweetscape.com/",
+  "fileName": "010EditorMacARM64Installer16.0.3.dmg",
+  "sha": "0a66ad414546247a62db76f90b76deb4be9890fdfe80e03da7ec5f51bb0ac62d",
+  "category": "Developer Tools",
+  "publisher": "SweetScape Software",
+  "previous_version": "16.0.3"
+}

@@ -5,9 +5,11 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/jumpcut_0.84.pkg",
   "bundleId": "net.sf.Jumpcut",
   "homepage": "https://snark.github.io/jumpcut/",
-  "fileName": "Jumpcut-0.84.tar.bz2",
+  "fileName": "jumpcut_0.84.pkg",
   "type": "app",
   "sha": "9475fdeb4d0ffd401fdfb77ebef386be31b9c81f6a7abb8e33dfa647244de42d",
   "changelog": "https://github.com/snark/jumpcut/releases",
-  "previous_version": "0.84"
+  "previous_version": "0.84",
+  "category": "Utilities",
+  "publisher": "snark"
 }

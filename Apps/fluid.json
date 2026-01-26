@@ -1,0 +1,14 @@
+{
+  "name": "Fluid",
+  "description": "Tool to turn a website into a desktop app",
+  "version": "2.1.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/fluid_2.1.2.pkg",
+  "bundleId": "com.fluidapp.Fluid2",
+  "homepage": "https://fluidapp.com/",
+  "fileName": "fluid_2.1.2.pkg",
+  "type": "app",
+  "sha": "4991c72df197645f0edf7ed72e2a81255bcb114e35116735f967905047574f1e",
+  "category": "Productivity",
+  "publisher": "Todd Ditchendorf",
+  "previous_version": "2.1.2"
+}

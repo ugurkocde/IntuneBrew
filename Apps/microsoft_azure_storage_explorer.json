@@ -9,5 +9,7 @@
   "type": "app",
   "sha": "0f821760ff3cbe33a5028b093c92a8385c01b455b184362db8d44af786ac1126",
   "changelog": "https://learn.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes",
-  "previous_version": "1.40.2"
+  "previous_version": "1.40.2",
+  "category": "Developer Tools",
+  "publisher": "Microsoft Corporation"
 }

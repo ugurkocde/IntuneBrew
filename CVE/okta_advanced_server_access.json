@@ -1,24 +1,57 @@
 {
   "app_name": "Okta Advanced Server Access",
-  "last_updated": "2025-05-18",
+  "app_key": "okta_advanced_server_access",
+  "last_updated": "2026-01-26",
+  "total_cves": 2,
+  "summary": {
+    "critical": 0,
+    "high": 2,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
   "vulnerabilities": [
     {
       "cve_id": "CVE-2023-0093",
       "published_date": "2023-03-06",
       "last_modified_date": "2025-03-06",
+      "description": "Okta Advanced Server Access Client versions 1.13.1 through 1.65.0 are vulnerable to command injection due to the third party library webbrowser. An outdated library, webbrowser, used by the ASA client was found to be vulnerable to command injection. To exploit this issue, an attacker would need to phish the user to enter an attacker controlled server URL during enrollment.",
       "base_score": 8.8,
       "severity": "HIGH",
-      "description": "Okta Advanced Server Access Client versions 1.13.1 through 1.65.0 are vulnerable to command injection due to the third party library webbrowser. An outdated library, webbrowser, used by the ASA client was found to be vulnerable to command injection. To exploit this issue, an attacker would need to phish the user to enter an attacker controlled server URL during enrollment.",
-      "cpe_name": "cpe:2.3:a:okta:advanced_server_access:1.13.1:*:*:*:*:*:*:*"
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": "1.13.1",
+      "affected_version_start_type": "including",
+      "affected_version_end": "1.68.2",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "1.68.2",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "okta",
+      "product": "advanced_server_access"
     },
     {
       "cve_id": "CVE-2022-1030",
       "published_date": "2022-03-23",
       "last_modified_date": "2024-11-21",
+      "description": "Okta Advanced Server Access Client for Linux and macOS prior to version 1.58.0 was found to be vulnerable to command injection via a specially crafted URL. An attacker, who has knowledge of a valid team name for the victim and also knows a valid target host where the user has access, can execute commands on the local system.",
       "base_score": 8.8,
       "severity": "HIGH",
-      "description": "Okta Advanced Server Access Client for Linux and macOS prior to version 1.58.0 was found to be vulnerable to command injection via a specially crafted URL. An attacker, who has knowledge of a valid team name for the victim and also knows a valid target host where the user has access, can execute commands on the local system.",
-      "cpe_name": "cpe:2.3:a:okta:advanced_server_access:1.13.1:*:*:*:*:*:*:*"
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "1.58.0",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "1.58.0",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "okta",
+      "product": "advanced_server_access"
     }
   ]
 }

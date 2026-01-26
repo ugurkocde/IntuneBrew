@@ -1,33 +1,78 @@
 {
-  "app_name": "NordVPN",
-  "last_updated": "2025-12-07",
+  "app_name": "Nordvpn",
+  "app_key": "nordvpn",
+  "last_updated": "2026-01-26",
+  "total_cves": 3,
+  "summary": {
+    "critical": 1,
+    "high": 2,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
   "vulnerabilities": [
-    {
-      "cve_id": "CVE-2018-3952",
-      "published_date": "2018-09-07",
-      "last_modified_date": "2024-11-21",
-      "base_score": 8.8,
-      "severity": "HIGH",
-      "description": "An exploitable code execution vulnerability exists in the connect functionality of NordVPN 6.14.28.0. A specially crafted configuration file can cause a privilege escalation, resulting in the execution of arbitrary commands with system privileges.",
-      "cpe_name": "cpe:2.3:a:nordvpn:nordvpn:6.14.28.0:*:*:*:*:*:*:*"
-    },
     {
       "cve_id": "CVE-2018-10170",
       "published_date": "2018-04-16",
       "last_modified_date": "2024-11-21",
+      "description": "NordVPN 6.12.7.0 for Windows suffers from a SYSTEM privilege escalation vulnerability through the \"nordvpn-service\" service. This service establishes an NetNamedPipe endpoint that allows arbitrary installed applications to connect and call publicly exposed methods. The \"Connect\" method accepts a class instance argument that provides attacker control of the OpenVPN command line. An attacker can specify a dynamic library plugin that should run for every new VPN connection attempt. This plugin will execute code in the context of the SYSTEM user.",
       "base_score": 9.8,
       "severity": "CRITICAL",
-      "description": "NordVPN 6.12.7.0 for Windows suffers from a SYSTEM privilege escalation vulnerability through the \"nordvpn-service\" service. This service establishes an NetNamedPipe endpoint that allows arbitrary installed applications to connect and call publicly exposed methods. The \"Connect\" method accepts a class instance argument that provides attacker control of the OpenVPN command line. An attacker can specify a dynamic library plugin that should run for every new VPN connection attempt. This plugin will execute code in the context of the SYSTEM user.",
-      "cpe_name": "cpe:2.3:a:nordvpn:nordvpn:6.12.7.0:*:*:*:*:windows:*:*"
+      "cvss_version": "3.0",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "nordvpn",
+      "product": "nordvpn"
+    },
+    {
+      "cve_id": "CVE-2018-3952",
+      "published_date": "2018-09-07",
+      "last_modified_date": "2024-11-21",
+      "description": "An exploitable code execution vulnerability exists in the connect functionality of NordVPN 6.14.28.0. A specially crafted configuration file can cause a privilege escalation, resulting in the execution of arbitrary commands with system privileges.",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:C/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "nordvpn",
+      "product": "nordvpn"
     },
     {
       "cve_id": "CVE-2018-9105",
       "published_date": "2018-03-27",
       "last_modified_date": "2024-11-21",
+      "description": "NordVPN 3.3.10 for macOS suffers from a root privilege escalation vulnerability. The vulnerability stems from its privileged helper tool's implemented XPC service. This XPC service is responsible for receiving and processing new OpenVPN connection requests from the main application. Unfortunately this XPC service is not protected, which allows arbitrary applications to connect and send it XPC messages. An attacker can send a crafted XPC message to the privileged helper tool requesting it make a new OpenVPN connection. Because he or she controls the contents of the XPC message, the attacker can specify the location of the openvpn executable, which could point to something malicious they control located on disk. Without validation of the openvpn executable, this will give the attacker code execution in the context of the privileged helper tool.",
       "base_score": 8.8,
       "severity": "HIGH",
-      "description": "NordVPN 3.3.10 for macOS suffers from a root privilege escalation vulnerability. The vulnerability stems from its privileged helper tool's implemented XPC service. This XPC service is responsible for receiving and processing new OpenVPN connection requests from the main application. Unfortunately this XPC service is not protected, which allows arbitrary applications to connect and send it XPC messages. An attacker can send a crafted XPC message to the privileged helper tool requesting it make a new OpenVPN connection. Because he or she controls the contents of the XPC message, the attacker can specify the location of the openvpn executable, which could point to something malicious they control located on disk. Without validation of the openvpn executable, this will give the attacker code execution in the context of the privileged helper tool.",
-      "cpe_name": "cpe:2.3:a:nordvpn:nordvpn:3.3.10:*:*:*:*:macos:*:*"
+      "cvss_version": "3.0",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "nordvpn",
+      "product": "nordvpn"
     }
   ]
 }

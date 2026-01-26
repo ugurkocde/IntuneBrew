@@ -18,5 +18,7 @@
     "bundle_id_status": "verified",
     "installed_version": "1.6.6"
   },
+  "category": "Productivity",
+  "publisher": "Airtable, Inc.",
   "previous_version": "1.6.6"
 }

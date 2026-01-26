@@ -1,0 +1,13 @@
+{
+  "name": "SmartSVN",
+  "description": "Subversion client",
+  "version": "14.5.1",
+  "url": "https://www.smartsvn.com/downloads/smartsvn/smartsvn-aarch64-14_5_1.dmg",
+  "bundleId": "com.syntevo.smartsvn",
+  "homepage": "https://www.smartsvn.com/",
+  "fileName": "smartsvn-aarch64-14_5_1.dmg",
+  "sha": "bc39635559d13a9fbe49f132e6753705c44b11eff697845c3b685a1bcaf64cca",
+  "category": "Developer Tools",
+  "publisher": "Syntevo GmbH",
+  "previous_version": "14.5.1"
+}

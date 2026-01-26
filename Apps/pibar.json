@@ -1,0 +1,14 @@
+{
+  "name": "PiBar",
+  "description": "Pi-hole(s) management in the menu bar",
+  "version": "1.1.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/pibar_1.1.2.pkg",
+  "bundleId": "com.nicola.Pi-bar",
+  "homepage": "https://github.com/amiantos/pibar",
+  "fileName": "pibar_1.1.2.pkg",
+  "type": "app",
+  "sha": "7265f8323632b5fc63675ed57604f9422625bfc47eb24caded95dd304a7e75d2",
+  "category": "Utilities",
+  "publisher": "amiantos",
+  "previous_version": "1.1.2"
+}

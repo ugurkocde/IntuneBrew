@@ -1,11 +1,13 @@
 {
   "name": "Headlamp",
   "description": "UI for Kubernetes",
-  "version": "0.38.0",
-  "url": "https://github.com/headlamp-k8s/headlamp/releases/download/v0.38.0/Headlamp-0.38.0-mac-arm64.dmg",
+  "version": "0.39.0",
+  "url": "https://github.com/headlamp-k8s/headlamp/releases/download/v0.39.0/Headlamp-0.39.0-mac-arm64.dmg",
   "bundleId": "com.kinvolk.headlamp",
   "homepage": "https://headlamp.dev/",
-  "fileName": "Headlamp-0.38.0-mac-arm64.dmg",
-  "sha": "b43f1307efebbc610528e0d63e67e92d8e63948f0bcdcee48b5252ee8b894656",
-  "previous_version": "0.38.0"
+  "fileName": "Headlamp-0.39.0-mac-arm64.dmg",
+  "sha": "827d3d58e12380c6dee9fd5d88b2ecd0193c5f896465a2491da6b82d10f3a5c2",
+  "category": "Developer Tools",
+  "publisher": "Headlamp",
+  "previous_version": "0.39.0"
 }

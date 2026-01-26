@@ -1,15 +1,14 @@
 {
   "app_name": "Rancher Desktop",
-  "last_updated": "2025-05-18",
-  "vulnerabilities": [
-    {
-      "cve_id": "CVE-2022-21947",
-      "published_date": "2022-04-01",
-      "last_modified_date": "2024-11-21",
-      "base_score": 8.3,
-      "severity": "HIGH",
-      "description": "A Exposure of Resource to Wrong Sphere vulnerability in Rancher Desktop of SUSE allows attackers in the local network to connect to the Dashboard API (steve) to carry out arbitrary actions. This issue affects: SUSE Rancher Desktop versions prior to V.",
-      "cpe_name": "cpe:2.3:a:suse:rancher_desktop:1.0.0:beta1:*:*:*:*:*:*"
-    }
-  ]
+  "app_key": "rancher_desktop",
+  "last_updated": "2026-01-26",
+  "total_cves": 0,
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
+  "vulnerabilities": []
 }

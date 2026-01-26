@@ -8,5 +8,7 @@
   "fileName": "sqlpro_studio_2025.78.pkg",
   "type": "app",
   "sha": "d8a1c89fc8eb14b743c0d42d32254d74e65d133d6c42b62f5fbfc8180795388f",
-  "previous_version": "2025.78"
+  "previous_version": "2025.78",
+  "category": "Developer Tools",
+  "publisher": "Hankin Software"
 }

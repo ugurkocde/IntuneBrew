@@ -7,5 +7,7 @@
   "homepage": "https://hohnstaedt.de/xca/",
   "fileName": "xca-2.9.0-Darwin.dmg",
   "sha": "90df40a56bb57bbf46158b4db1c9fddd8a2d7cc48477b5522b457ec4e12cd45a",
+  "category": "Security",
+  "publisher": "The XCA Project",
   "previous_version": "2.9.0"
 }

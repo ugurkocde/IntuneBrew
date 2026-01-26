@@ -1,11 +1,13 @@
 {
   "name": "Postico",
   "description": "GUI client for PostgreSQL databases",
-  "version": "2.3",
-  "url": "https://downloads.eggerapps.at/postico/postico-9777.dmg",
+  "version": "2.3.1",
+  "url": "https://downloads.eggerapps.at/postico/postico-9786.dmg",
   "bundleId": "at.eggerapps.Postico",
   "homepage": "https://eggerapps.at/postico2/",
-  "fileName": "postico-9777.dmg",
-  "sha": "e03a419a57e5d41f09eb467e5ba2b3e35272333c78c741d82470169fdb99e7ad",
-  "previous_version": "2.3"
+  "fileName": "postico-9786.dmg",
+  "sha": "3c6a847b22f4613bf7c545a5630af6b1505c0a9544161c0503f853492c324ae4",
+  "category": "Developer Tools",
+  "publisher": "egger Apps",
+  "previous_version": "2.3.1"
 }

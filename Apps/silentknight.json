@@ -8,5 +8,7 @@
   "fileName": "silentknight_2.12.pkg",
   "type": "app",
   "sha": "cea1eb4c3a2a936f72aace22d2a067ac7e7b07155b099b7f91750e968247131e",
-  "previous_version": "2.12"
+  "previous_version": "2.12",
+  "category": "Security",
+  "publisher": "The Eclectic Light Company"
 }

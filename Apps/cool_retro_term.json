@@ -1,0 +1,13 @@
+{
+  "name": "Cool Retro Term",
+  "description": "Terminal emulator mimicking the old cathode display",
+  "version": "1.2.0",
+  "url": "https://github.com/Swordfish90/cool-retro-term/releases/download/1.2.0/Cool-Retro-Term-1.2.0.dmg",
+  "bundleId": "com.yourcompany.cool-retro-term.cool-retro-term",
+  "homepage": "https://github.com/Swordfish90/cool-retro-term",
+  "fileName": "Cool-Retro-Term-1.2.0.dmg",
+  "sha": "605610df37b6ed92fac14d5e34a83350148e989b10ad9550d3403187fb974e48",
+  "category": "Developer Tools",
+  "publisher": "Swordfish90",
+  "previous_version": "1.2.0"
+}

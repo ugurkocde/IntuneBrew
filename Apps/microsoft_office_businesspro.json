@@ -1,0 +1,14 @@
+{
+  "name": "Microsoft Office BusinessPro",
+  "description": "Office suite",
+  "version": "16.105.26011018",
+  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.105.26011018_BusinessPro_Installer.pkg",
+  "bundleId": "com.microsoft.autoupdate2",
+  "homepage": "https://www.microsoft.com/en-us/microsoft-365/mac/microsoft-365-for-mac/",
+  "fileName": "Microsoft_365_and_Office_16.105.26011018_BusinessPro_Installer.pkg",
+  "type": "pkg",
+  "sha": "373643cdf8c38fcd0224fbdb30f86d55a4d0ae424c4bb45b2768b9de83e040f6",
+  "category": "Productivity",
+  "publisher": "Microsoft Corporation",
+  "previous_version": "16.105.26011018"
+}

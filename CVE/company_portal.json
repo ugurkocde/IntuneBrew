@@ -1,24 +1,14 @@
 {
   "app_name": "Company Portal",
-  "last_updated": "2025-05-18",
-  "vulnerabilities": [
-    {
-      "cve_id": "CVE-2024-26201",
-      "published_date": "2024-03-12",
-      "last_modified_date": "2024-12-06",
-      "base_score": 6.6,
-      "severity": "MEDIUM",
-      "description": "Microsoft Intune Linux Agent Elevation of Privilege Vulnerability",
-      "cpe_name": "cpe:2.3:a:microsoft:intune_company_portal:-:*:*:*:*:android:*:*"
-    },
-    {
-      "cve_id": "CVE-2022-24465",
-      "published_date": "2022-03-09",
-      "last_modified_date": "2024-11-21",
-      "base_score": 3.3,
-      "severity": "LOW",
-      "description": "Microsoft Intune Portal for iOS Security Feature Bypass Vulnerability",
-      "cpe_name": "cpe:2.3:a:microsoft:intune_company_portal:-:*:*:*:*:iphone_os:*:*"
-    }
-  ]
+  "app_key": "company_portal",
+  "last_updated": "2026-01-26",
+  "total_cves": 0,
+  "summary": {
+    "critical": 0,
+    "high": 0,
+    "medium": 0,
+    "low": 0,
+    "kev_count": 0
+  },
+  "vulnerabilities": []
 }
