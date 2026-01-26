@@ -1,7 +1,7 @@
 {
   "app_name": "Steam",
   "app_key": "steam",
-  "last_updated": "2026-01-25",
+  "last_updated": "2026-01-26",
   "total_cves": 9,
   "summary": {
     "critical": 0,

@@ -1,7 +1,7 @@
 {
   "app_name": "Grammarly",
   "app_key": "grammarly",
-  "last_updated": "2026-01-25",
+  "last_updated": "2026-01-26",
   "total_cves": 1,
   "summary": {
     "critical": 0,
