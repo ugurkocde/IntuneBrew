@@ -1,12 +1,12 @@
 {
   "name": "OnlySwitch",
   "description": "System and utility switches",
-  "version": "2.6.4",
-  "url": "https://github.com/jacklandrin/OnlySwitch/releases/download/release_2.6.4/OnlySwitch.dmg",
+  "version": "2.6.5",
+  "url": "https://github.com/jacklandrin/OnlySwitch/releases/download/release_2.6.5/OnlySwitch.dmg",
   "bundleId": "com.jacklandrin.OnlySwitch",
   "homepage": "https://github.com/jacklandrin/OnlySwitch",
   "fileName": "OnlySwitch.dmg",
-  "sha": "5a7a121f38af499342d68050af094ebcd61e8aed944a53633d3985cdb33d56c4",
+  "sha": "e82a4300a3b711ba55abcb9f00147e0dd3cf7036f82aaefd553c93554357aef5",
   "category": "Utilities",
   "publisher": "jacklandrin",
   "previous_version": "2.6.4"

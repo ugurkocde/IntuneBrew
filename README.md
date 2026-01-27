@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1230-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -334,24 +334,40 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-26 00:36 UTC*
+*Last checked: 2026-01-27 00:38 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Caffeine | 1.6.2 | 1.1.4 |
+| Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Syncovery | 11.10.4 | 11.12.2 |
-| Rectangle Pro | 3.67 | 3.68 |
-| GIMP | 3.0.6 | 3.0.8 |
-| Zed | 0.220.5 | 0.220.6 |
-| Dataflare | 2.8.2 | 2.8.3 |
-| Fork | 2.60.4 | 2.61.0 |
-| MakeMKV | 1.18.2 | 1.18.3 |
-| Caffeine | 1.6.2 | 1.1.4 |
-| Jami | 2.37 | 2.38 |
+| Mozilla Firefox Developer Edition | 148.0b6 | 148.0b7 |
+| Retcon | 1.5.2 | 1.5.3 |
+| Rive | 0.8.4146 | 0.8.4169 |
+| Clop | 2.11.1 | 2.11.2 |
+| OmniOutliner | 6.0.1 | 6.0.2 |
+| Pika | 1.2.0 | 1.3.0 |
+| DuckDuckGo | 1.173.0 | 1.174.0 |
+| Podman Desktop | 1.24.2 | 1.25.1 |
+| Git Credential Manager | 2.6.1 | 2.7.0 |
+| Windsurf | 1.13.9 | 1.13.12 |
+| Sync | 2.2.54 | 2.2.55 |
+| Apidog | 2.8.2 | 2.8.3 |
+| Capacities | 1.57.24 | 1.58.14 |
+| FontBase | 2.24.9 | 2.25.0 |
+| Ungoogled Chromium | 144.0.7559.59-1.1 | 144.0.7559.96-1.1 |
+| Ableton Live Lite | 12.3.2 | 12.3.5 |
+| Ableton Live Suite | 12.3.2 | 12.3.5 |
+| Caffeine | 1.6.3 | 1.1.4 |
+| Nektony App Cleaner & Uninstaller | 9.0.3 | 9.0.4 |
+| BitBox | 4.49.0 | 4.50.0 |
+| Granola | 6.491.2 | 6.518.0 |
+| Loom | 0.329.1 | 0.330.1 |
+| Memory Cleaner | 5.5 | 5.5.1 |
 | Multi | 0.538.2 | 3.0.1 |
+| OnlySwitch | 2.6.4 | 2.6.5 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
