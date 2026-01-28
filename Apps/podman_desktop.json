@@ -10,5 +10,5 @@
   "changelog": "https://github.com/containers/podman-desktop/releases",
   "category": "Developer Tools",
   "publisher": "Red Hat, Inc.",
-  "previous_version": "1.24.2"
+  "previous_version": "1.25.1"
 }

@@ -1,12 +1,12 @@
 {
   "name": "GDevelop",
   "description": "Open-source, cross-platform game engine designed to be used by everyone",
-  "version": "5.6.252",
-  "url": "https://github.com/4ian/GDevelop/releases/download/v5.6.252/GDevelop-5-5.6.252-universal.dmg",
+  "version": "5.6.253",
+  "url": "https://github.com/4ian/GDevelop/releases/download/v5.6.253/GDevelop-5-5.6.253-universal.dmg",
   "bundleId": "com.gdevelop",
   "homepage": "https://gdevelop.io/",
-  "fileName": "GDevelop-5-5.6.252-universal.dmg",
-  "sha": "099a18d6c1c69b31405ecf7735fa9cc065b156c783440aa5936f859a32060f04",
+  "fileName": "GDevelop-5-5.6.253-universal.dmg",
+  "sha": "91669571b4affe1cca7803957d46f45bfe47ba3da94d4df6447eb14aef1dcced",
   "category": "Developer Tools",
   "publisher": "Florian Rival",
   "previous_version": "5.6.252"
