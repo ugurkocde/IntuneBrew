@@ -1,7 +1,7 @@
 {
   "app_name": "Adobe Acrobat Reader",
   "app_key": "adobe_acrobat_reader",
-  "last_updated": "2026-01-28",
+  "last_updated": "2026-01-29",
   "total_cves": 2202,
   "summary": {
     "critical": 424,
