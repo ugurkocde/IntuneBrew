@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1230-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -336,51 +336,48 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-28 00:38 UTC*
+*Last checked: 2026-01-29 00:41 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Rive | 0.8.4169 | 0.8.4173 |
-| Bambu Studio | 02.04.00.70 | 02.05.00.64 |
-| Yaak | 2026.1.0 | 2026.1.2 |
-| Trae | 2.3.4284 | 2.3.6266 |
-| LibreWolf | 147.0.1 | 147.0.2 |
-| Adobe Creative Cloud | 6.8.0.821 | 6.8.1.865 |
-| Mozilla Firefox | 147.0.1 | 147.0.2 |
-| Grammarly Desktop | 1.149.1.0 | 1.150.0.0 |
-| MongoDB Compass | 1.49.0 | 1.49.1 |
-| Notion | 7.1.0 | 7.2.1 |
-| Discord | 0.0.373 | 0.0.374 |
-| Elgato Stream Deck | 7.1.1.22340 | 7.2.1.22472 |
-| Zed | 0.220.6 | 0.220.7 |
-| Windsurf | 1.13.12 | 1.13.13 |
-| PyCharm | 2025.3.1.1 | 2025.3.2 |
-| Bilibili | 1.17.4 | 1.17.5 |
+| Mozilla Firefox Developer Edition | 148.0b7 | 148.0b8 |
+| Mozilla Thunderbird | 147.0 | 147.0.1 |
+| Requestly | 26.1.6 | 26.1.28 |
+| Bambu Studio | 02.05.00.64 | 02.05.00.66 |
+| Apifox | 2.8.2 | 2.8.4 |
+| WeChat for Mac | 4.1.6.47 | 4.1.7.30 |
+| Google Chrome | 144.0.7559.97 | 144.0.7559.110 |
+| Brave | 1.86.142.0 | 1.86.146.0 |
+| ChatGPT | 1.2026.006 | 1.2026.013 |
+| Zed | 0.220.7 | 0.221.4 |
+| Oracle VirtualBox | 7.2.4 | 7.2.6 |
+| Transmission | 4.0.6 | 4.1.0 |
+| Windsurf | 1.13.13 | 1.13.14 |
+| LM Studio | 0.3.39 | 0.4.0 |
+| Krita | 5.2.14 | 5.2.15 |
+| Apidog | 2.8.3 | 2.8.4 |
+| Dataflare | 2.8.3 | 2.8.4 |
+| DbGate | 7.0.0 | 7.0.1 |
+| Hoppscotch | 25.12.1-0 | 26.1.0-0 |
+| Milanote | 3.18.72 | 3.18.73 |
+| Mimestream | 1.9.7 | 1.9.8 |
+| Permute | 3.14.5 | 3.14.6 |
+| Zettlr | 4.1.0 | 4.1.1 |
+| Streamlabs Desktop | 1.19.6 | 1.20.6 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| BitBox | 4.50.0 | 4.50.1 |
-| Connect Fonts | 28.0.1 | 28.0.2 |
-| GDevelop | 5.6.252 | 5.6.253 |
-| Granola | 6.518.0 | 6.518.1 |
-| LaunchOS | 1.4.0 | 1.5.0 |
 | Multi | 0.538.2 | 3.0.1 |
-| PDFsam Basic | 5.4.1 | 5.4.5 |
-| Pitch | 2.110.0 | 2.111.0 |
-| Riverside Studio | 1.19.0 | 1.19.1 |
-| TickTick | 8.0.02 | 8.0.10 |
-| Tuta Mail | 319.260107.1 | 322.260120.0 |
-| Zotero | 8.0 | 8.0.1 |
-| ExpressVPN | 12.0.2.11960 | 12.1.0.12128 |
-| GOG Galaxy | 2.0.93.53 | 2.0.94.27 |
-| Microsoft Excel | 16.105.26011816 | 16.105.26012530 |
-| Microsoft Outlook | 16.105.26011816 | 16.105.26012530 |
-| Microsoft PowerPoint | 16.105.26011816 | 16.105.26012530 |
-| Microsoft Word | 16.105.26011816 | 16.105.26012530 |
-| ownCloud | 6.0.2.17506 | 6.0.3.18040 |
-| TeamViewer | 15.73.5 | 15.74.3 |
+| Notesnook | 3.3.7 | 3.3.8 |
+| RustRover | 2025.3.2 | 2025.3.3 |
+| Transfer | 2.3.1 | 2.4.1 |
+| Tuta Mail | 322.260120.0 | 325.260127.0 |
+| NordLayer | 3.9.0 | 3.9.1 |
+| Microsoft Build of OpenJDK | 25.0.1 | 25.0.2 |
+| Salesforce CLI | 2.119.8 | 2.120.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

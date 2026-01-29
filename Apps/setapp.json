@@ -1,14 +1,14 @@
 {
   "name": "Setapp",
   "description": "Collection of apps available by subscription",
-  "version": "3.49.6",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/setapp_3.49.6.pkg",
+  "version": "3.49.7",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/setapp_3.49.7.pkg",
   "bundleId": "com.setapp.DesktopClient.SetappAgent",
   "homepage": "https://setapp.com/",
-  "fileName": "setapp_3.49.6.pkg",
+  "fileName": "setapp_3.49.7.pkg",
   "type": "app",
-  "sha": "df38bf3b0e4be70897750889de44c38bb868c939ed42cf739a5d0db8f8b62a51",
+  "sha": "dce3403919c077a2001acbf81d7af060b65127a9780151ce21a5171da265b794",
   "category": "Productivity",
   "publisher": "MacPaw",
-  "previous_version": "3.49.6"
+  "previous_version": "3.49.7"
 }
