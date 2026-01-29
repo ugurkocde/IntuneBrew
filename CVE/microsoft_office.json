@@ -1,14 +1,14 @@
 {
   "app_name": "Microsoft Office",
   "app_key": "microsoft_office",
-  "last_updated": "2026-01-26",
-  "total_cves": 1054,
+  "last_updated": "2026-01-29",
+  "total_cves": 1055,
   "summary": {
     "critical": 13,
-    "high": 864,
+    "high": 865,
     "medium": 169,
     "low": 8,
-    "kev_count": 36
+    "kev_count": 37
   },
   "vulnerabilities": [
     {
@@ -49,6 +49,27 @@
       "is_kev": true,
       "kev_date_added": "2023-03-14",
       "kev_due_date": "2023-04-04",
+      "kev_ransomware_use": "Unknown",
+      "vendor": "microsoft",
+      "product": "office"
+    },
+    {
+      "cve_id": "CVE-2026-21509",
+      "published_date": "2026-01-26",
+      "last_modified_date": "2026-01-27",
+      "description": "Reliance on untrusted inputs in a security decision in Microsoft Office allows an unauthorized attacker to bypass a security feature locally.",
+      "base_score": 7.8,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": true,
+      "kev_date_added": "2026-01-26",
+      "kev_due_date": "2026-02-16",
       "kev_ransomware_use": "Unknown",
       "vendor": "microsoft",
       "product": "office"

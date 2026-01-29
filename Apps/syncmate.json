@@ -1,14 +1,14 @@
 {
   "name": "SyncMate",
   "description": "All-in-one sync tool",
-  "version": "8.9.563",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/syncmate_8.9.563.pkg",
+  "version": "8.10.575",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/syncmate_8.10.575.pkg",
   "bundleId": "com.eltima.SyncMate.com.eltima.SyncMateService",
   "homepage": "https://mac.eltima.com/sync-mac.html",
-  "fileName": "syncmate_8.9.563.pkg",
+  "fileName": "syncmate_8.10.575.pkg",
   "type": "app",
-  "sha": "9a882ff96613a18171c1897b1525a6764a6f6f3ce2b47d01ea03a86eb052596e",
+  "sha": "a29006a14db0dd4a5457eda8250487e63f8fc0ba3e88b9586e2d9804bcf88173",
   "category": "Productivity",
   "publisher": "Eltima Software",
-  "previous_version": "8.9.563"
+  "previous_version": "8.10.575"
 }

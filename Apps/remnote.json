@@ -1,14 +1,14 @@
 {
   "name": "RemNote",
   "description": "Spaced-repetition powered note-taking tool",
-  "version": "1.22.67",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/remnote_1.22.67.pkg",
+  "version": "1.22.68",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/remnote_1.22.68.pkg",
   "bundleId": "io.remnote",
   "homepage": "https://www.remnote.com/",
-  "fileName": "remnote_1.22.67.pkg",
+  "fileName": "remnote_1.22.68.pkg",
   "type": "app",
-  "sha": "47e3fe588f4d318d3898a411d7ef9c511c86f9e68df4cc2f7f3139025a04d2fd",
+  "sha": "535f888a9839fb84faa111c8d8d94e15b154344c0ea63c8aae457e849c4a7de4",
   "category": "Productivity",
   "publisher": "RemNote",
-  "previous_version": "1.22.67"
+  "previous_version": "1.22.68"
 }
