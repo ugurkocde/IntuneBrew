@@ -7,5 +7,7 @@
   "homepage": "https://business.toshiba.com/support",
   "fileName": "Toshiba-ColorMFP-Drivers-7.119.4.0.dmg",
   "type": "pkg",
-  "sha": "e8d43a0a98f829a2f81fb7e785bc6dec1773b3c00e27d3f63e80d1a7957c1f3b"
+  "sha": "e8d43a0a98f829a2f81fb7e785bc6dec1773b3c00e27d3f63e80d1a7957c1f3b",
+  "category": "Utilities",
+  "publisher": "Toshiba"
 }
