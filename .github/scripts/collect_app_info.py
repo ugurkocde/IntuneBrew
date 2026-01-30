@@ -1320,6 +1320,7 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/weasis.json",
     "https://formulae.brew.sh/api/cask/xquartz.json",
     "https://formulae.brew.sh/api/cask/insta360-link-controller.json",
+    "https://formulae.brew.sh/api/cask/toshiba-color-mfp.json",
 ]
 
 # Custom scraper scripts to run
