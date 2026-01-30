@@ -1,14 +1,14 @@
 {
   "name": "Nucleo",
   "description": "Icon manager and library",
-  "version": "4.1.8",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/nucleo_4.1.8.pkg",
+  "version": "4.1.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/nucleo_4.1.9.pkg",
   "bundleId": "co.ambercreative.nucleo",
   "homepage": "https://nucleoapp.com/",
-  "fileName": "nucleo_4.1.8.pkg",
+  "fileName": "nucleo_4.1.9.pkg",
   "type": "app",
-  "sha": "baa47f2a6a416b814ee5fe0c4414f37a4e060ca8c7d745d868b2dd1db58ed889",
-  "previous_version": "4.1.8",
+  "sha": "fdefe939a2887ab3462f74aea6bcff76012f9ae19bc5c561ae776d21672677e6",
+  "previous_version": "4.1.9",
   "category": "Design",
   "publisher": "Nucleo"
 }

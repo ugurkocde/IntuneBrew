@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1230-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -337,47 +337,41 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-29 00:41 UTC*
+*Last checked: 2026-01-30 00:41 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Mozilla Firefox Developer Edition | 148.0b7 | 148.0b8 |
-| Mozilla Thunderbird | 147.0 | 147.0.1 |
-| Requestly | 26.1.6 | 26.1.28 |
-| Bambu Studio | 02.05.00.64 | 02.05.00.66 |
-| Apifox | 2.8.2 | 2.8.4 |
-| WeChat for Mac | 4.1.6.47 | 4.1.7.30 |
-| Google Chrome | 144.0.7559.97 | 144.0.7559.110 |
-| Brave | 1.86.142.0 | 1.86.146.0 |
-| ChatGPT | 1.2026.006 | 1.2026.013 |
-| Zed | 0.220.7 | 0.221.4 |
-| Oracle VirtualBox | 7.2.4 | 7.2.6 |
-| Transmission | 4.0.6 | 4.1.0 |
-| Windsurf | 1.13.13 | 1.13.14 |
-| LM Studio | 0.3.39 | 0.4.0 |
-| Krita | 5.2.14 | 5.2.15 |
-| Apidog | 2.8.3 | 2.8.4 |
-| Dataflare | 2.8.3 | 2.8.4 |
-| DbGate | 7.0.0 | 7.0.1 |
-| Hoppscotch | 25.12.1-0 | 26.1.0-0 |
-| Milanote | 3.18.72 | 3.18.73 |
-| Mimestream | 1.9.7 | 1.9.8 |
-| Permute | 3.14.5 | 3.14.6 |
-| Zettlr | 4.1.0 | 4.1.1 |
-| Streamlabs Desktop | 1.19.6 | 1.20.6 |
+| Rive | 0.8.4173 | 0.8.4187 |
+| RsyncUI | 2.8.7 | 2.9.0 |
+| JetBrains Rider | 2025.3.1 | 2025.3.2 |
+| ChatWise | 0.9.76 | 0.9.79 |
+| CotEditor | 6.2.1 | 6.2.2 |
+| WeChat for Mac | 4.1.7.30 | 4.1.7.31 |
+| ChatGPT | 1.2026.013 | 1.2026.014 |
+| Santa | 2025.12 | 2026.1 |
+| ProtonVPN | 6.2.0 | 6.3.0 |
+| BoltAI 2 | 2.6.1 | 2.6.2 |
+| DataSpell | 2025.3.1 | 2025.3.2 |
+| Craft | 3.3.6 | 3.3.7 |
+| LosslessCut | 3.67.2 | 3.68.0 |
+| Tor Browser | 15.0.4 | 15.0.5 |
+| Capacities | 1.58.14 | 1.58.27 |
+| Opera GX | 126.0.5750.56 | 126.0.5750.88 |
+| Roam Research | 0.0.32 | 0.0.33 |
+| Roon | 2.57 | 2.58 |
 | Caffeine | 1.6.3 | 1.1.4 |
+| Douyin | 7.1.0 | 7.2.0 |
+| 4K YouTube to MP3 | 26.0.0 | 26.0.1 |
+| ChatWork | 2.19.3 | 2.20.0 |
+| Granola | 6.518.1 | 6.529.0 |
 | Multi | 0.538.2 | 3.0.1 |
-| Notesnook | 3.3.7 | 3.3.8 |
-| RustRover | 2025.3.2 | 2025.3.3 |
-| Transfer | 2.3.1 | 2.4.1 |
-| Tuta Mail | 322.260120.0 | 325.260127.0 |
-| NordLayer | 3.9.0 | 3.9.1 |
-| Microsoft Build of OpenJDK | 25.0.1 | 25.0.2 |
-| Salesforce CLI | 2.119.8 | 2.120.3 |
+| Processing | 4.5.1 | 4.5.2 |
+| Rize | 2.3.6 | 2.3.7 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
