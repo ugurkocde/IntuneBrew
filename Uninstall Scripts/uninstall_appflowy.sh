@@ -17,12 +17,20 @@ fi
 echo "Stopping AppFlowy if running..."
 pkill -f "AppFlowy" 2>/dev/null || true
 
-# Remove /Applications/AppFlowy.app
-echo "Removing /Applications/AppFlowy.app..."
-if [ -d "/Applications/AppFlowy.app" ]; then
-    rm -rf "/Applications/AppFlowy.app" 2>/dev/null || true
-elif [ -f "/Applications/AppFlowy.app" ]; then
-    rm -f "/Applications/AppFlowy.app" 2>/dev/null || true
+# Remove /Applications/AppFlowy-arm64.app
+echo "Removing /Applications/AppFlowy-arm64.app..."
+if [ -d "/Applications/AppFlowy-arm64.app" ]; then
+    rm -rf "/Applications/AppFlowy-arm64.app" 2>/dev/null || true
+elif [ -f "/Applications/AppFlowy-arm64.app" ]; then
+    rm -f "/Applications/AppFlowy-arm64.app" 2>/dev/null || true
+fi
+
+# Remove /Applications/{'target': 'AppFlowy.app'}
+echo "Removing /Applications/{'target': 'AppFlowy.app'}..."
+if [ -d "/Applications/{'target': 'AppFlowy.app'}" ]; then
+    rm -rf "/Applications/{'target': 'AppFlowy.app'}" 2>/dev/null || true
+elif [ -f "/Applications/{'target': 'AppFlowy.app'}" ]; then
+    rm -f "/Applications/{'target': 'AppFlowy.app'}" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Scripts/com.appflowy.macos
