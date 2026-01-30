@@ -1,12 +1,12 @@
 {
   "name": "AppFlowy",
   "description": "Open-source project and knowledge management tool",
-  "version": "0.11.0",
-  "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.11.0/Appflowy-0.11.0-macos-arm64.dmg",
+  "version": "0.11.1",
+  "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.11.1/Appflowy-0.11.1-macos-arm64.zip",
   "bundleId": "io.appflowy.AppFlowy",
   "homepage": "https://www.appflowy.io/",
-  "fileName": "Appflowy-0.11.0-macos-arm64.dmg",
-  "sha": "92d0c600c34fbe5cea8f0323fdbb6d5b093829e294ec13273065f9ee6c712257",
+  "fileName": "Appflowy-0.11.1-macos-arm64.zip",
+  "sha": "e303a8911ed60f84fa5f964bda745b9013327054ad2ef5964e2a36bd4725e685",
   "category": "Productivity",
   "publisher": "AppFlowy",
   "previous_version": "0.11.0"

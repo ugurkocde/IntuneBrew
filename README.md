@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1230-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1231-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -338,40 +338,33 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-30 00:41 UTC*
+*Last checked: 2026-01-30 15:05 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Rive | 0.8.4173 | 0.8.4187 |
-| RsyncUI | 2.8.7 | 2.9.0 |
-| JetBrains Rider | 2025.3.1 | 2025.3.2 |
-| ChatWise | 0.9.76 | 0.9.79 |
-| CotEditor | 6.2.1 | 6.2.2 |
-| WeChat for Mac | 4.1.7.30 | 4.1.7.31 |
-| ChatGPT | 1.2026.013 | 1.2026.014 |
-| Santa | 2025.12 | 2026.1 |
-| ProtonVPN | 6.2.0 | 6.3.0 |
-| BoltAI 2 | 2.6.1 | 2.6.2 |
-| DataSpell | 2025.3.1 | 2025.3.2 |
-| Craft | 3.3.6 | 3.3.7 |
-| LosslessCut | 3.67.2 | 3.68.0 |
-| Tor Browser | 15.0.4 | 15.0.5 |
-| Capacities | 1.58.14 | 1.58.27 |
-| Opera GX | 126.0.5750.56 | 126.0.5750.88 |
-| Roam Research | 0.0.32 | 0.0.33 |
-| Roon | 2.57 | 2.58 |
+| Vimcal | 1.0.41 | 1.0.42 |
+| QSpace Pro | 6.0.6 | 6.1.2 |
+| Apifox | 2.8.4 | 2.8.5 |
+| draw.io Desktop | 29.3.0 | 29.3.6 |
+| Zed | 0.221.4 | 0.221.5 |
+| Microsoft Edge | 144.0.3719.92 | 144.0.3719.104 |
+| calibre | 8.16.2 | 9.0.0 |
+| Apidog | 2.8.4 | 2.8.5 |
+| Badgeify | 1.11.2 | 1.12.0 |
+| Warp | 0.2026.01.21.08.14.stable | 0.2026.01.28.08.14.stable |
+| AppFlowy | 0.11.0 | 0.11.1 |
+| Deezer | 7.1.50 | 7.1.60 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Douyin | 7.1.0 | 7.2.0 |
-| 4K YouTube to MP3 | 26.0.0 | 26.0.1 |
-| ChatWork | 2.19.3 | 2.20.0 |
-| Granola | 6.518.1 | 6.529.0 |
 | Multi | 0.538.2 | 3.0.1 |
-| Processing | 4.5.1 | 4.5.2 |
-| Rize | 2.3.6 | 2.3.7 |
+| Unity Hub | 3.15.4 | 3.16.0 |
+| Tableau Public | 2025.3.1 | 2025.3.2 |
+| Tableau Reader | 2025.3.1 | 2025.3.2 |
+| Tableau Desktop | 2025.3.1 | 2025.3.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
