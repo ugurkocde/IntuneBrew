@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1231-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -339,32 +339,30 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-01-30 15:05 UTC*
+*Last checked: 2026-01-31 00:37 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Vimcal | 1.0.41 | 1.0.42 |
-| QSpace Pro | 6.0.6 | 6.1.2 |
-| Apifox | 2.8.4 | 2.8.5 |
-| draw.io Desktop | 29.3.0 | 29.3.6 |
-| Zed | 0.221.4 | 0.221.5 |
-| Microsoft Edge | 144.0.3719.92 | 144.0.3719.104 |
-| calibre | 8.16.2 | 9.0.0 |
-| Apidog | 2.8.4 | 2.8.5 |
-| Badgeify | 1.11.2 | 1.12.0 |
-| Warp | 0.2026.01.21.08.14.stable | 0.2026.01.28.08.14.stable |
-| AppFlowy | 0.11.0 | 0.11.1 |
-| Deezer | 7.1.50 | 7.1.60 |
+| Mozilla Firefox Developer Edition | 148.0b8 | 148.0b9 |
+| Spotify | 1.2.81.264 | 1.2.82.428 |
+| Dropbox | 240.4.8493 | 240.4.8609 |
+| Windsurf | 1.13.14 | 1.9544.24 |
+| LM Studio | 0.4.0 | 0.4.1 |
+| DeepL | 26.1.23595006 | 26.1.33715377 |
+| Mimestream | 1.9.8 | 1.9.9 |
+| Quicksilver | 2.5.3 | 2.5.4 |
 | Caffeine | 1.6.3 | 1.1.4 |
+| GDevelop | 5.6.253 | 5.6.254 |
+| Lunar | 6.9.5 | 6.9.6 |
 | Multi | 0.538.2 | 3.0.1 |
-| Unity Hub | 3.15.4 | 3.16.0 |
-| Tableau Public | 2025.3.1 | 2025.3.2 |
-| Tableau Reader | 2025.3.1 | 2025.3.2 |
-| Tableau Desktop | 2025.3.1 | 2025.3.2 |
+| Nextcloud Talk Desktop | 2.0.5 | 2.0.6 |
+| Unity Hub | 3.16.0 | 3.16.1 |
+| Malwarebytes for Mac | 5.19.1.3534 | 5.20.0.3620 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

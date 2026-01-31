@@ -2,10 +2,10 @@
   "name": "GIMP",
   "description": "Free and open-source image editor",
   "version": "3.0.8",
-  "url": "https://download.gimp.org/gimp/v3.0/macos/gimp-3.0.8-arm64.dmg",
+  "url": "https://download.gimp.org/gimp/v3.0/macos/gimp-3.0.8-arm64-1.dmg",
   "bundleId": "org.gnome.gimp",
   "homepage": "https://www.gimp.org/",
-  "fileName": "gimp-3.0.8-arm64.dmg",
+  "fileName": "gimp-3.0.8-arm64-1.dmg",
   "sha": "d14ebcf2ffd4920a49195b7f2fd50cae120c135f3ee6947a08efea2ddc389134",
   "changelog": "https://www.gimp.org/release-notes/",
   "qa_info": {
