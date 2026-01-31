@@ -1,7 +1,7 @@
 {
   "app_name": "Libreoffice",
   "app_key": "libreoffice",
-  "last_updated": "2026-01-30",
+  "last_updated": "2026-01-31",
   "total_cves": 69,
   "summary": {
     "critical": 12,

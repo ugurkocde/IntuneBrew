@@ -1,7 +1,7 @@
 {
   "app_name": "Iterm2",
   "app_key": "iterm2",
-  "last_updated": "2026-01-30",
+  "last_updated": "2026-01-31",
   "total_cves": 11,
   "summary": {
     "critical": 9,

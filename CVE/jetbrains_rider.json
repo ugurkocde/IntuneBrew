@@ -1,7 +1,7 @@
 {
   "app_name": "Jetbrains Rider",
   "app_key": "jetbrains_rider",
-  "last_updated": "2026-01-30",
+  "last_updated": "2026-01-31",
   "total_cves": 8,
   "summary": {
     "critical": 1,
