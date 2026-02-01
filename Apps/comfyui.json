@@ -1,14 +1,14 @@
 {
   "name": "ComfyUI",
   "description": "Node-based image, video and audio generator",
-  "version": "0.7.5",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/comfyui_0.7.5.pkg",
+  "version": "0.8.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/comfyui_0.8.0.pkg",
   "bundleId": "org.comfyui.ComfyUI",
   "homepage": "https://www.comfy.org/",
-  "fileName": "comfyui_0.7.5.pkg",
+  "fileName": "comfyui_0.8.0.pkg",
   "type": "app",
-  "sha": "a7d7c0f80ff71f6e6a1a5e60746dcd1af656dac63d1a06d22b1eb84d06be1118",
+  "sha": "055d1a566ab9476244244de7f899b5d253f83c9ab0c31399f01f789128d36b0e",
   "category": "Media",
   "publisher": "ComfyUI",
-  "previous_version": "0.7.5"
+  "previous_version": "0.8.0"
 }
