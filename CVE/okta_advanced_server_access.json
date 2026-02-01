@@ -1,7 +1,7 @@
 {
   "app_name": "Okta Advanced Server Access",
   "app_key": "okta_advanced_server_access",
-  "last_updated": "2026-01-31",
+  "last_updated": "2026-02-01",
   "total_cves": 2,
   "summary": {
     "critical": 0,
