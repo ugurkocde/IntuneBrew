@@ -1,12 +1,12 @@
 {
   "name": "Shotcut",
   "description": "Video editor",
-  "version": "25.12.31",
-  "url": "https://github.com/mltframework/shotcut/releases/download/v25.12.31/shotcut-macos-25.12.31.dmg",
+  "version": "26.1.30",
+  "url": "https://github.com/mltframework/shotcut/releases/download/v26.1.30/shotcut-macos-26.1.30.dmg",
   "bundleId": "com.meltytech.Shotcut",
   "homepage": "https://www.shotcut.org/",
-  "fileName": "shotcut-macos-25.12.31.dmg",
-  "sha": "4bf2ba68163f505dd2b8a7d6c9fc491385564d9472fd3cf4c82441669671665b",
+  "fileName": "shotcut-macos-26.1.30.dmg",
+  "sha": "02276753d591a49c2e91671e70757f0ab94422e5a0e58ceebffa91a7583ca737",
   "category": "Media",
   "publisher": "Meltytech, LLC",
   "previous_version": "25.12.31"

@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1231-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1232-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -341,26 +341,28 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-01 00:47 UTC*
+*Last checked: 2026-02-02 00:41 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Proxyman | 6.4.0 | 6.5.0 |
-| Eclipse Temurin Java Development Kit | 25.0.1 | 25.0.2 |
-| calibre | 9.0.0 | 9.1.0 |
-| Windsurf | 1.9544.24 | 1.9544.26 |
-| OneDrive | 25.238.1204.0001 | 25.243.1211.0001 |
-| Tenable Nessus Agent | 11.1.0 | 11.1.1 |
-| Beekeeper Studio | 5.5.5 | 5.5.6 |
-| Mimestream | 1.9.9 | 1.9.10 |
-| MarginNote | 4.2.3 | 4.2.4 |
-| REAPER | 7.59 | 7.60 |
+| LuLu | 4.2.0 | 4.2.1 |
+| DBeaver Community Edition | 25.3.3 | 25.3.4 |
+| Stats | 2.11.64 | 2.11.66 |
+| VSCodium | 1.108.10359 | 1.108.20787 |
+| Dataflare | 2.8.4 | 2.8.5 |
+| Fork | 2.61.0 | 2.62.1 |
+| Bluefish | 2.2.19 | 2.4.0 |
 | Caffeine | 1.6.3 | 1.1.4 |
+| Equinox | 4.0 | 5.0 |
 | Multi | 0.538.2 | 3.0.1 |
+| Session | 1.17.7 | 1.17.8 |
+| Shotcut | 25.12.31 | 26.1.30 |
+| WebCatalog | 73.2.0 | 73.4.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
