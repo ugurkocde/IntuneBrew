@@ -1199,6 +1199,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/zappy.json",
     "https://formulae.brew.sh/api/cask/zotero.json",
     "https://formulae.brew.sh/api/cask/zwift.json",
+    "https://formulae.brew.sh/api/cask/egnyte.json",
 ]
 
 # PKG in DMG URLs
@@ -1320,6 +1321,7 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/weasis.json",
     "https://formulae.brew.sh/api/cask/xquartz.json",
     "https://formulae.brew.sh/api/cask/insta360-link-controller.json",
+    "https://formulae.brew.sh/api/cask/toshiba-color-mfp.json",
 ]
 
 # Custom scraper scripts to run

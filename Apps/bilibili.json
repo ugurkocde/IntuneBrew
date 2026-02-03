@@ -6,6 +6,7 @@
   "bundleId": "com.bilibili.bilibiliPC",
   "homepage": "https://app.bilibili.com/",
   "fileName": "bili_mac.dmg",
+  "sha": "15c20a96fd186500903685e33dede210874fae46ac82ae9ecfdd632e6ebeb8fb",
   "category": "Media",
   "publisher": "bilibili",
   "previous_version": "1.17.5"

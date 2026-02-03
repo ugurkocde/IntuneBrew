@@ -1,14 +1,14 @@
 {
   "name": "Linear",
   "description": "App to manage software development and track bugs",
-  "version": "1.28.7",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/linear_1.28.7.pkg",
+  "version": "1.28.10",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/linear_1.28.10.pkg",
   "bundleId": "com.linear",
   "homepage": "https://linear.app/",
-  "fileName": "linear_1.28.7.pkg",
+  "fileName": "linear_1.28.10.pkg",
   "type": "app",
-  "sha": "0348f85176c25ac19582b4d561ce572680aa3ed959e6369e8527624c52d4495f",
+  "sha": "78b9662b44f4b20185b73d116d9f6f873638b91e5330e5ccd327097ef6a389e3",
   "category": "Developer Tools",
   "publisher": "Linear, Inc.",
-  "previous_version": "1.28.7"
+  "previous_version": "1.28.10"
 }

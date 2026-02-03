@@ -1,13 +1,13 @@
 {
   "name": "Quicksilver",
   "description": "Productivity application",
-  "version": "2.5.3",
-  "url": "https://github.com/quicksilver/Quicksilver/releases/download/v2.5.3/Quicksilver.2.5.3.dmg",
+  "version": "2.5.4",
+  "url": "https://github.com/quicksilver/Quicksilver/releases/download/v2.5.4/Quicksilver.2.5.4.dmg",
   "bundleId": "com.blacktree.Quicksilver",
   "homepage": "https://qsapp.com/",
-  "fileName": "Quicksilver.2.5.3.dmg",
-  "sha": "1e3ca2a6b00140870e9e1adcad4b7801356701da1761da52b66cefb3b002a52c",
+  "fileName": "Quicksilver.2.5.4.dmg",
+  "sha": "4a072a0cb4b91efaf4b74e9df0639cadde98a25c74aaa3cb13ff53cc15a66dbe",
   "category": "Productivity",
   "publisher": "Blacktree Software",
-  "previous_version": "2.5.3"
+  "previous_version": "2.5.4"
 }

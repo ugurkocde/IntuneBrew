@@ -1,12 +1,12 @@
 {
   "name": "FontBase",
   "description": "Font manager",
-  "version": "2.25.0",
-  "url": "https://releases.fontba.se/mac/FontBase-2.25.0.dmg",
+  "version": "2.25.1",
+  "url": "https://releases.fontba.se/mac/FontBase-2.25.1.dmg",
   "bundleId": "com.dominiklevitsky.fontbase",
   "homepage": "https://fontba.se/",
-  "fileName": "FontBase-2.25.0.dmg",
-  "sha": "c80cac4e1be075434fe0399c3fbe4e8e65be1a6164bf61fa3326c93010ff653c",
+  "fileName": "FontBase-2.25.1.dmg",
+  "sha": "a9758ea97675443a060879971cd9475896eadcefe4629b61114154ea35e1b13f",
   "category": "Design",
   "publisher": "FontBase",
   "previous_version": "2.25.0"

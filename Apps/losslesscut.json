@@ -1,13 +1,13 @@
 {
   "name": "LosslessCut",
   "description": "Trims video and audio files losslessly",
-  "version": "3.67.2",
-  "url": "https://github.com/mifi/lossless-cut/releases/download/v3.67.2/LosslessCut-mac-arm64.dmg",
+  "version": "3.68.0",
+  "url": "https://github.com/mifi/lossless-cut/releases/download/v3.68.0/LosslessCut-mac-arm64.dmg",
   "bundleId": "no.mifi.losslesscut",
   "homepage": "https://github.com/mifi/lossless-cut",
   "fileName": "LosslessCut-mac-arm64.dmg",
-  "sha": "7ab28094b0400cf4ed884abed1e1794fdf1469db41652784432963097b4b7728",
+  "sha": "e61c335bed288bc1869b150bbc314298a29bad82edabd1e3c0b2e9323dcf9db0",
   "category": "Media",
   "publisher": "mifi",
-  "previous_version": "3.67.2"
+  "previous_version": "3.68.0"
 }

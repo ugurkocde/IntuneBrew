@@ -8788,6 +8788,27 @@
         "mac_app_store"
       ],
       "name": "Linear"
+    },
+    "toshiba_colormfp_drivers": {
+      "last_checked": "2026-01-30T15:20:55.946Z",
+      "bundle_id": "com.toshiba.pde.x7.colormfp",
+      "status": "verified",
+      "source": "file",
+      "name": "Toshiba ColorMFP Drivers"
+    },
+    "egnyte": {
+      "last_checked": "2026-02-02T00:52:57.736Z",
+      "bundle_id": "com.egnyte.DesktopApp",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Egnyte"
     }
   }
 }
