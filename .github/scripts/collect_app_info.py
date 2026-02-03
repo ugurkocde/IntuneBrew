@@ -1201,6 +1201,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/zotero.json",
     "https://formulae.brew.sh/api/cask/zwift.json",
     "https://formulae.brew.sh/api/cask/egnyte.json",
+    "https://formulae.brew.sh/api/cask/claude-code.json",
 ]
 
 # PKG in DMG URLs
