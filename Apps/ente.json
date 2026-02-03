@@ -1,12 +1,12 @@
 {
   "name": "Ente",
   "description": "Desktop client for Ente Photos",
-  "version": "1.7.17",
-  "url": "https://github.com/ente-io/photos-desktop/releases/download/v1.7.17/ente-1.7.17-universal.dmg",
+  "version": "1.7.18",
+  "url": "https://github.com/ente-io/photos-desktop/releases/download/v1.7.18/ente-1.7.18-universal.dmg",
   "bundleId": "io.ente.bhari-frame",
   "homepage": "https://ente.io/",
-  "fileName": "ente-1.7.17-universal.dmg",
-  "sha": "39c4a831b732346f2ffc79c0c2735a22cca46aa6e8358ba82c945203f5474096",
+  "fileName": "ente-1.7.18-universal.dmg",
+  "sha": "aa203001e7f39b821018a6645eaceda8b6deea8c4721ab1733b625b7033fc24f",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:25:35Z",
     "qa_result": "Installation successful and verified",

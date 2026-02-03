@@ -1,0 +1,13 @@
+{
+  "name": "Notion Mail",
+  "description": "Email client integrated with Notion workspace",
+  "version": "0.0.44",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/notion_mail_0.0.44.pkg",
+  "bundleId": "notion.mail.id",
+  "homepage": "https://www.notion.com/product/mail",
+  "fileName": "notion_mail_0.0.44.pkg",
+  "type": "app",
+  "sha": "392c5773a0c350ea15ec6e3476f0e7c5e8886752b4448c3f1ae163fcce57c1f3",
+  "category": "Communication",
+  "publisher": "Notion Labs, Inc."
+}

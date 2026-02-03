@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-02-03T10:18:00.856Z",
+  "last_full_scan": "2026-02-03T14:42:23.546Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8809,6 +8809,40 @@
         "openai_improved"
       ],
       "name": "Egnyte"
+    },
+    "chatgpt_atlas": {
+      "last_checked": "2026-02-03T14:40:29.182Z",
+      "bundle_id": "com.openai.atlas",
+      "status": "verified",
+      "source": "file",
+      "name": "ChatGPT Atlas"
+    },
+    "claude_code": {
+      "last_checked": "2026-02-03T14:40:31.050Z",
+      "bundle_id": "com.orange.claudecodelauncher",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "github_search",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search"
+      ],
+      "name": "Claude Code"
+    },
+    "notion_mail": {
+      "last_checked": "2026-02-03T14:42:23.440Z",
+      "bundle_id": "notion.mail.id",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Notion Mail"
     }
   }
 }

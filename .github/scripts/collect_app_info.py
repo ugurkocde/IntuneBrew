@@ -475,6 +475,7 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/yippy.json",
     "https://formulae.brew.sh/api/cask/zight.json",
     "https://formulae.brew.sh/api/cask/linear-linear.json",
+    "https://formulae.brew.sh/api/cask/notion-mail.json",
 ]
 
 # DMG
@@ -1200,6 +1201,8 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/zotero.json",
     "https://formulae.brew.sh/api/cask/zwift.json",
     "https://formulae.brew.sh/api/cask/egnyte.json",
+    "https://formulae.brew.sh/api/cask/claude-code.json",
+    "https://formulae.brew.sh/api/cask/chatgpt-atlas.json",
 ]
 
 # PKG in DMG URLs
