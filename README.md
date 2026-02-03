@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1232-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1235-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -343,33 +343,32 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-03 00:42 UTC*
+*Last checked: 2026-02-03 14:15 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Mozilla Firefox Developer Edition | 148.0b9 | 148.0b10 |
-| Reqable | 3.0.37 | 3.0.38 |
-| MarkEdit | 1.29.0 | 1.29.1 |
-| NVIDIA GeForce NOW | 2.0.81.177 | 2.0.81.178 |
-| Easydict | 2.16.3 | 2.17.0 |
-| DuckDuckGo | 1.174.0 | 1.175.0 |
-| Keeper Password Manager | 17.5.0 | 17.5.1 |
-| Raycast | 1.104.3 | 1.104.4 |
-| Opera | 126.0.5750.59 | 127.0.5778.14 |
-| Badgeify | 1.12.0 | 1.12.1 |
-| Floorp browser | 12.10.2 | 12.10.3 |
-| FontBase | 2.25.0 | 2.25.1 |
-| Actual | 26.1.0 | 26.2.0 |
+| Studio 3T | 2026.1.0 | 2026.2.0 |
+| Proton Pass | 1.33.5 | 1.34.1 |
+| Ente | 1.7.17 | 1.7.18 |
+| NordPass | 7.3.12 | 7.3.14 |
+| Trae | 2.3.6266 | 2.3.8290 |
+| Slack | 4.47.72 | 4.48.86 |
+| Discord | 0.0.374 | 0.0.375 |
+| BoltAI 2 | 2.6.2 | 2.6.3 |
+| Badgeify | 1.12.1 | 1.12.3 |
+| Milanote | 3.18.73 | 3.18.75 |
+| PyCharm | 2025.3.2 | 2025.3.2.1 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| ColorWell | 8.1.3 | 8.1.4 |
-| Granola | 6.529.0 | 7.1.0 |
+| Hides | 7.2.1 | 7.2.2 |
+| LaunchOS | 1.5.0 | 1.5.1 |
 | Multi | 0.538.2 | 3.0.1 |
-| NordVPN | 9.11.0 | 9.12.0 |
-| Adobe Acrobat Pro DC | 25.001.21111 | 25.001.21145 |
+| OpenBoard | 1.7.4 | 1.7.5 |
+| Pitch | 2.111.0 | 2.112.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

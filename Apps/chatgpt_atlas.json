@@ -1,0 +1,10 @@
+{
+  "name": "ChatGPT Atlas",
+  "description": "OpenAI's official browser with ChatGPT built in",
+  "version": "1.2026.21.3",
+  "url": "https://persistent.oaistatic.com/atlas/public/ChatGPT_Atlas_Desktop_public_1.2026.21.3_20260128170249000.dmg",
+  "bundleId": "com.openai.atlas",
+  "homepage": "https://chatgpt.com/atlas",
+  "fileName": "ChatGPT_Atlas_Desktop_public_1.2026.21.3_20260128170249000.dmg",
+  "sha": "36c71f390f8d62c709c72f657490ac01fe0d5593e7be95484de0408fa306a182"
+}

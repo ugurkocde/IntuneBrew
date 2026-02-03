@@ -1,12 +1,12 @@
 {
   "name": "PyCharm",
   "description": "IDE for professional Python development",
-  "version": "2025.3.2",
-  "url": "https://download.jetbrains.com/python/pycharm-professional-2025.3.2-aarch64.dmg",
+  "version": "2025.3.2.1",
+  "url": "https://download.jetbrains.com/python/pycharm-professional-2025.3.2.1-aarch64.dmg",
   "bundleId": "com.jetbrains.pycharm",
   "homepage": "https://www.jetbrains.com/pycharm/",
-  "fileName": "pycharm-professional-2025.3.2-aarch64.dmg",
-  "sha": "9561fa33994e8d4630cf1d80a84bf9dd5ec9fb93c417df8a31929fa9b8af51e6",
+  "fileName": "pycharm-professional-2025.3.2.1-aarch64.dmg",
+  "sha": "031b35fd0d2d67ee1989d512c3c2cc1952ce1269a29e7f9e790c7d4a0d6f2eb2",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
   "previous_version": "2025.3.2"
