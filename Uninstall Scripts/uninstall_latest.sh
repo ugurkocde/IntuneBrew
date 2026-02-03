@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Cookies/com.max-langer.Latest.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/com.max-langer.Latest.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.max-langer.Latest
+echo "Removing $HOME/Library/HTTPStorages/com.max-langer.Latest..."
+if [ -d "$HOME/Library/HTTPStorages/com.max-langer.Latest" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.max-langer.Latest" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.max-langer.Latest" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.max-langer.Latest" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.max-langer.Latest.plist
 echo "Removing $HOME/Library/Preferences/com.max-langer.Latest.plist..."
 if [ -d "$HOME/Library/Preferences/com.max-langer.Latest.plist" ]; then
