@@ -1,7 +1,7 @@
 {
   "app_name": "Loom",
   "app_key": "loom",
-  "last_updated": "2026-02-02",
+  "last_updated": "2026-02-03",
   "total_cves": 2,
   "summary": {
     "critical": 1,

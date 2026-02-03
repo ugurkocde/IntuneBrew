@@ -1,7 +1,7 @@
 {
   "app_name": "Vlc Media Player",
   "app_key": "vlc_media_player",
-  "last_updated": "2026-02-02",
+  "last_updated": "2026-02-03",
   "total_cves": 113,
   "summary": {
     "critical": 6,

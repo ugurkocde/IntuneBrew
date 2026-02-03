@@ -1,7 +1,7 @@
 {
   "app_name": "Atlassian Sourcetree",
   "app_key": "atlassian_sourcetree",
-  "last_updated": "2026-02-02",
+  "last_updated": "2026-02-03",
   "total_cves": 15,
   "summary": {
     "critical": 2,
