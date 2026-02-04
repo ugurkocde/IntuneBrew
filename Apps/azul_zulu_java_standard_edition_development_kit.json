@@ -2,10 +2,10 @@
   "name": "Azul Zulu Java Standard Edition Development Kit",
   "description": "OpenJDK distribution from Azul",
   "version": "25.0.2",
-  "url": "https://cdn.azul.com/zulu/bin/zulu25.32.17-ca-jdk25.0.2-macosx_aarch64.dmg",
+  "url": "https://cdn.azul.com/zulu/bin/zulu25.32.21-ca-jdk25.0.2-macosx_aarch64.dmg",
   "bundleId": "com.azulsystems.zulu.23",
   "homepage": "https://www.azul.com/downloads/",
-  "fileName": "zulu25.32.17-ca-jdk25.0.2-macosx_aarch64.dmg",
+  "fileName": "zulu25.32.21-ca-jdk25.0.2-macosx_aarch64.dmg",
   "sha": "e7ea3ad307c1f55d628d210ab69fffd6b732fa2ddc9c9834a17132d1dfd0b23d",
   "changelog": "https://docs.azul.com/core/release-notes",
   "qa_info": {

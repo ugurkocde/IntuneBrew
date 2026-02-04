@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1235-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -344,31 +344,37 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-03 14:15 UTC*
+*Last checked: 2026-02-04 00:38 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Studio 3T | 2026.1.0 | 2026.2.0 |
-| Proton Pass | 1.33.5 | 1.34.1 |
-| Ente | 1.7.17 | 1.7.18 |
-| NordPass | 7.3.12 | 7.3.14 |
-| Trae | 2.3.6266 | 2.3.8290 |
-| Slack | 4.47.72 | 4.48.86 |
-| Discord | 0.0.374 | 0.0.375 |
-| BoltAI 2 | 2.6.2 | 2.6.3 |
-| Badgeify | 1.12.1 | 1.12.3 |
-| Milanote | 3.18.73 | 3.18.75 |
-| PyCharm | 2025.3.2 | 2025.3.2.1 |
+| Lunatask | 2.1.20 | 2.1.21 |
+| Syncovery | 11.12.2 | 11.12.7 |
+| Rocket.Chat | 4.11.2 | 4.12.0 |
+| Easydict | 2.17.0 | 2.17.1 |
+| Grammarly Desktop | 1.150.0.0 | 1.151.1.0 |
+| Dropbox | 240.4.8609 | 241.4.4795 |
+| Windsurf | 1.9544.26 | 1.9544.28 |
+| REAPER | 7.60 | 7.61 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Hides | 7.2.1 | 7.2.2 |
-| LaunchOS | 1.5.0 | 1.5.1 |
+| iMazing Converter | 2.0.9 | 2.0.10 |
+| Loom | 0.330.1 | 0.331.1 |
 | Multi | 0.538.2 | 3.0.1 |
-| OpenBoard | 1.7.4 | 1.7.5 |
-| Pitch | 2.111.0 | 2.112.0 |
+| Museeks | 0.23.1 | 0.23.2 |
+| OnlySwitch | 2.6.5 | 2.6.6 |
+| Zotero | 8.0.1 | 8.0.2 |
+| Claude Code | 2.1.29 | 2.1.30 |
+| Insta360 Studio | 5.8.8 | 5.9.0 |
+| Microsoft Excel | 16.105.26012530 | 16.105.26020123 |
+| Microsoft Outlook | 16.105.26012530 | 16.105.26020123 |
+| Microsoft PowerPoint | 16.105.26012530 | 16.105.26020123 |
+| Microsoft Word | 16.105.26012530 | 16.105.26020123 |
+| Okta Verify | 9.55.0 | 9.56.1 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
