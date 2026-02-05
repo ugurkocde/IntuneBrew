@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1235-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -345,36 +345,47 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-04 00:38 UTC*
+*Last checked: 2026-02-05 00:43 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Lunatask | 2.1.20 | 2.1.21 |
-| Syncovery | 11.12.2 | 11.12.7 |
-| Rocket.Chat | 4.11.2 | 4.12.0 |
-| Easydict | 2.17.0 | 2.17.1 |
-| Grammarly Desktop | 1.150.0.0 | 1.151.1.0 |
-| Dropbox | 240.4.8609 | 241.4.4795 |
-| Windsurf | 1.9544.26 | 1.9544.28 |
-| REAPER | 7.60 | 7.61 |
+| Mozilla Firefox Developer Edition | 148.0b10 | 148.0b11 |
+| PixelSnap | 2.6.1 | 2.6.2 |
+| Requestly | 26.1.28 | 26.2.4 |
+| LibreWolf | 147.0.2 | 147.0.3 |
+| Downie | 4.11.10 | 4.11.11 |
+| Google Chrome | 144.0.7559.110 | 144.0.7559.133 |
+| Mozilla Firefox | 147.0.2 | 147.0.3 |
+| Slack | 4.48.86 | 4.47.72 |
+| Snagit | 2026.0.0 | 2026.0.1 |
+| Notion | 7.2.1 | 7.3.1 |
+| Brave | 1.86.146.0 | 1.86.148.0 |
+| Termius | 9.36.2 | 9.36.3 |
+| ChatGPT | 1.2026.014 | 1.2026.027 |
+| LibreOffice | 25.8.4 | 26.2.0 |
+| Splashtop Business | 3.8.0.4 | 3.8.0.5 |
+| Zed | 0.221.5 | 0.222.2 |
+| Badgeify | 1.12.3 | 1.12.4 |
+| Camtasia | 26.0.5 | 26.0.6 |
+| Craft | 3.3.7 | 3.3.8 |
+| Jitsi Meet | 2025.10.0 | 2026.1.0 |
+| Lark | 7.60.9 | 7.61.9 |
+| FontBase | 2.25.1 | 2.25.3 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| iMazing Converter | 2.0.9 | 2.0.10 |
-| Loom | 0.330.1 | 0.331.1 |
+| ColorWell | 8.1.4 | 8.1.4.1 |
+| Defold | 1.12.0 | 1.12.1 |
+| Granola | 7.1.0 | 7.6.0 |
 | Multi | 0.538.2 | 3.0.1 |
-| Museeks | 0.23.1 | 0.23.2 |
-| OnlySwitch | 2.6.5 | 2.6.6 |
-| Zotero | 8.0.1 | 8.0.2 |
-| Claude Code | 2.1.29 | 2.1.30 |
-| Insta360 Studio | 5.8.8 | 5.9.0 |
-| Microsoft Excel | 16.105.26012530 | 16.105.26020123 |
-| Microsoft Outlook | 16.105.26012530 | 16.105.26020123 |
-| Microsoft PowerPoint | 16.105.26012530 | 16.105.26020123 |
-| Microsoft Word | 16.105.26012530 | 16.105.26020123 |
-| Okta Verify | 9.55.0 | 9.56.1 |
+| Shapr3D | 26.0.0.10296 | 26.10.0.10376 |
+| WebCatalog | 73.4.0 | 73.6.1 |
+| Claude Code | 2.1.30 | 2.1.31 |
+| ChatGPT Atlas | 1.2026.21.3 | 1.2026.28.6 |
+| Salesforce CLI | 2.120.3 | 2.121.7 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

@@ -1,12 +1,12 @@
 {
   "name": "Jitsi Meet",
   "description": "Secure video conferencing app",
-  "version": "2025.10.0",
-  "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2025.10.0/jitsi-meet.dmg",
+  "version": "2026.1.0",
+  "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2026.1.0/jitsi-meet.dmg",
   "bundleId": "org.jitsi.jitsi-meet",
   "homepage": "https://github.com/jitsi/jitsi-meet-electron/",
   "fileName": "jitsi-meet.dmg",
-  "sha": "713855b796c24d3ac768080544898ef91a709bacdf09586b5536b0bd00ec4745",
+  "sha": "171fd27af16da62d91e8cafecfd31c8f7324677b99bfb9f18a511c915ed0734b",
   "category": "Communication",
   "publisher": "8x8, Inc.",
   "previous_version": "2025.10.0"

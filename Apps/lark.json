@@ -1,12 +1,12 @@
 {
   "name": "Lark",
   "description": "Project management software",
-  "version": "7.60.9",
-  "url": "https://sf16-sg.larksuitecdn.com/obj/lark-version-sg/9c860f5c/Lark-darwin_arm64-7.60.9-signed.dmg",
+  "version": "7.61.9",
+  "url": "https://sf16-sg.larksuitecdn.com/obj/lark-version-sg/e2909939/Lark-darwin_arm64-7.61.9-signed.dmg",
   "bundleId": "com.electron.lark.helper",
   "homepage": "https://www.larksuite.com/",
-  "fileName": "Lark-darwin_arm64-7.60.9-signed.dmg",
-  "sha": "86e48bd117d3eb3019d27744b1291232b7316b09c85b45007a08ff0262cdc4fe",
+  "fileName": "Lark-darwin_arm64-7.61.9-signed.dmg",
+  "sha": "5e02d8f5dd6c900862b80d1342819384c383772a93500d406f2bb357ca988042",
   "category": "Productivity",
   "publisher": "Lark Technologies, Inc.",
   "previous_version": "7.60.9"
