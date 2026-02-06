@@ -1,6 +1,6 @@
 {
   "dependencies": {
-    "openai": "^6.17.0",
+    "openai": "^6.18.0",
     "plist": "^3.1.0"
   }
 }
