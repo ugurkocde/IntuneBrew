@@ -1,14 +1,14 @@
 {
   "name": "mInstaller",
   "description": "Downloader and manager for MotionVFX products",
-  "version": "3.2.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/minstaller_3.2.2.pkg",
+  "version": "3.2.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/minstaller_3.2.3.pkg",
   "bundleId": "com.motionvfx.mInstaller",
   "homepage": "https://www.motionvfx.com/",
-  "fileName": "minstaller_3.2.2.pkg",
+  "fileName": "minstaller_3.2.3.pkg",
   "type": "app",
-  "sha": "92533f12f9bcf2633dd7ecf73649df81ba1bd20563ea22b3428dafdde5affa42",
+  "sha": "a3b98e1863bf11cab3e66b18a63f4aa98fd26361882af44e67e9f24e19b42982",
   "category": "Utilities",
   "publisher": "MotionVFX",
-  "previous_version": "3.2.2"
+  "previous_version": "3.2.3"
 }

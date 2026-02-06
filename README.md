@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1235-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -346,46 +346,47 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-05 00:43 UTC*
+*Last checked: 2026-02-06 00:39 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.1 |
-| Mozilla Firefox Developer Edition | 148.0b10 | 148.0b11 |
-| PixelSnap | 2.6.1 | 2.6.2 |
-| Requestly | 26.1.28 | 26.2.4 |
-| LibreWolf | 147.0.2 | 147.0.3 |
-| Downie | 4.11.10 | 4.11.11 |
-| Google Chrome | 144.0.7559.110 | 144.0.7559.133 |
-| Mozilla Firefox | 147.0.2 | 147.0.3 |
-| Slack | 4.48.86 | 4.47.72 |
-| Snagit | 2026.0.0 | 2026.0.1 |
-| Notion | 7.2.1 | 7.3.1 |
-| Brave | 1.86.146.0 | 1.86.148.0 |
-| Termius | 9.36.2 | 9.36.3 |
-| ChatGPT | 1.2026.014 | 1.2026.027 |
-| LibreOffice | 25.8.4 | 26.2.0 |
-| Splashtop Business | 3.8.0.4 | 3.8.0.5 |
-| Zed | 0.221.5 | 0.222.2 |
-| Badgeify | 1.12.3 | 1.12.4 |
-| Camtasia | 26.0.5 | 26.0.6 |
-| Craft | 3.3.7 | 3.3.8 |
-| Jitsi Meet | 2025.10.0 | 2026.1.0 |
-| Lark | 7.60.9 | 7.61.9 |
-| FontBase | 2.25.1 | 2.25.3 |
+| Lens | 2026.1.161237 | 2026.2.20807 |
+| Redis Insight | 2.70.1 | 3.0.2 |
+| Headlamp | 0.39.0 | 0.40.0 |
+| Parallels Desktop | 26.2.1-57371 | 26.2.2-57373 |
+| Bitwarden | 2025.12.1 | 2026.1.0 |
+| Krisp | 3.9.4 | 3.10.5 |
+| Obsidian | 1.11.5 | 1.11.7 |
+| DataGrip | 2025.3.4 | 2025.3.5 |
+| pgAdmin4 | 9.11 | 9.12 |
+| Microsoft Edge | 144.0.3719.104 | 144.0.3719.115 |
+| Windsurf | 1.9544.28 | 1.9544.35 |
+| Insomnia | 12.3.0 | 12.3.1 |
+| DbGate | 7.0.1 | 7.0.3 |
+| ExpanDrive | 2026.01.22.812 | 2026.02.05.816 |
+| Hoppscotch | 26.1.0-0 | 26.1.1-0 |
+| FontBase | 2.25.3 | 2.25.6 |
+| Opera GX | 126.0.5750.88 | 126.0.5750.112 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| ColorWell | 8.1.4 | 8.1.4.1 |
-| Defold | 1.12.0 | 1.12.1 |
-| Granola | 7.1.0 | 7.6.0 |
+| ColorWell | 8.1.4.1 | 8.1.5 |
+| 4K YouTube to MP3 | 26.0.1 | 26.0.2 |
+| ChatWork | 2.20.0 | 2.20.1 |
+| FLEXOPTIX App | 5.58.0-latest | 5.59.0-latest |
+| GitHub Copilot for Xcode | 0.46.0 | 0.47.0 |
+| Granola | 7.6.0 | 7.6.1 |
 | Multi | 0.538.2 | 3.0.1 |
-| Shapr3D | 26.0.0.10296 | 26.10.0.10376 |
-| WebCatalog | 73.4.0 | 73.6.1 |
-| Claude Code | 2.1.30 | 2.1.31 |
-| ChatGPT Atlas | 1.2026.21.3 | 1.2026.28.6 |
-| Salesforce CLI | 2.120.3 | 2.121.7 |
+| PicView | 4.1.1 | 4.1.2 |
+| SC Menu | 2.0 | 2.1 |
+| Unity Hub | 3.16.1 | 3.16.2 |
+| VueScan | 9.8.50 | 9.8.51 |
+| Claude Code | 2.1.31 | 2.1.32 |
+| Twingate | 2025.363.22082 | 2026.29.22575 |
+| TeamViewer | 15.74.3 | 15.74.5 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
