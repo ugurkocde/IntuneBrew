@@ -81,5 +81,13 @@ elif [ -f "$HOME/Library/Saved Application State/com.macpaw.site.Gemini*" ]; the
     rm -f "$HOME/Library/Saved Application State/com.macpaw.site.Gemini*" 2>/dev/null || true
 fi
 
+# Remove $HOME/.gemini
+echo "Removing $HOME/.gemini..."
+if [ -d "$HOME/.gemini" ]; then
+    rm -rf "$HOME/.gemini" 2>/dev/null || true
+elif [ -f "$HOME/.gemini" ]; then
+    rm -f "$HOME/.gemini" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

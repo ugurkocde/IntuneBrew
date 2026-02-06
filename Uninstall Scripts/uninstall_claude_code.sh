@@ -33,14 +33,6 @@ elif [ -f "$HOME/.cache/claude" ]; then
     rm -f "$HOME/.cache/claude" 2>/dev/null || true
 fi
 
-# Remove $HOME/.claude
-echo "Removing $HOME/.claude..."
-if [ -d "$HOME/.claude" ]; then
-    rm -rf "$HOME/.claude" 2>/dev/null || true
-elif [ -f "$HOME/.claude" ]; then
-    rm -f "$HOME/.claude" 2>/dev/null || true
-fi
-
 # Remove $HOME/.claude.json*
 echo "Removing $HOME/.claude.json*..."
 if [ -d "$HOME/.claude.json*" ]; then
@@ -87,6 +79,14 @@ if [ -d "$HOME/Library/Caches/claude-cli-nodejs" ]; then
     rm -rf "$HOME/Library/Caches/claude-cli-nodejs" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/claude-cli-nodejs" ]; then
     rm -f "$HOME/Library/Caches/claude-cli-nodejs" 2>/dev/null || true
+fi
+
+# Remove $HOME/.claude
+echo "Removing $HOME/.claude..."
+if [ -d "$HOME/.claude" ]; then
+    rm -rf "$HOME/.claude" 2>/dev/null || true
+elif [ -f "$HOME/.claude" ]; then
+    rm -f "$HOME/.claude" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
