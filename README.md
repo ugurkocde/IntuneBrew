@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1235-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -347,46 +347,37 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-06 00:39 UTC*
+*Last checked: 2026-02-07 00:38 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
-| Multi | 0.538.2 | 3.0.1 |
-| Lens | 2026.1.161237 | 2026.2.20807 |
-| Redis Insight | 2.70.1 | 3.0.2 |
-| Headlamp | 0.39.0 | 0.40.0 |
-| Parallels Desktop | 26.2.1-57371 | 26.2.2-57373 |
-| Bitwarden | 2025.12.1 | 2026.1.0 |
-| Krisp | 3.9.4 | 3.10.5 |
-| Obsidian | 1.11.5 | 1.11.7 |
-| DataGrip | 2025.3.4 | 2025.3.5 |
-| pgAdmin4 | 9.11 | 9.12 |
-| Microsoft Edge | 144.0.3719.104 | 144.0.3719.115 |
-| Windsurf | 1.9544.28 | 1.9544.35 |
-| Insomnia | 12.3.0 | 12.3.1 |
-| DbGate | 7.0.1 | 7.0.3 |
-| ExpanDrive | 2026.01.22.812 | 2026.02.05.816 |
-| Hoppscotch | 26.1.0-0 | 26.1.1-0 |
-| FontBase | 2.25.3 | 2.25.6 |
-| Opera GX | 126.0.5750.88 | 126.0.5750.112 |
+| Multi | 0.538.2 | 3.0.2 |
+| Mozilla Firefox Developer Edition | 148.0b11 | 148.0b12 |
+| Proton Pass | 1.34.1 | 1.34.2 |
+| UPDF | 2.1.2 | 2.1.3 |
+| Readest | 0.9.98 | 0.9.99 |
+| OmniFocus | 4.8.6 | 4.8.7 |
+| Requestly | 26.2.4 | 26.2.6 |
+| ChatWise | 0.9.79 | 0.9.80 |
+| Raycast | 1.104.4 | 1.104.5 |
+| Zed | 0.222.2 | 0.222.4 |
+| calibre | 9.1.0 | 9.2.1 |
+| LM Studio | 0.4.1 | 0.4.2 |
+| Badgeify | 1.12.4 | 1.12.5 |
+| Warp | 0.2026.01.28.08.14.stable | 0.2026.02.04.08.20.stable |
+| Mimestream | 1.9.10 | 1.9.11 |
+| Capacities | 1.58.27 | 1.58.38 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| ColorWell | 8.1.4.1 | 8.1.5 |
-| 4K YouTube to MP3 | 26.0.1 | 26.0.2 |
-| ChatWork | 2.20.0 | 2.20.1 |
-| FLEXOPTIX App | 5.58.0-latest | 5.59.0-latest |
-| GitHub Copilot for Xcode | 0.46.0 | 0.47.0 |
-| Granola | 7.6.0 | 7.6.1 |
-| Multi | 0.538.2 | 3.0.1 |
-| PicView | 4.1.1 | 4.1.2 |
-| SC Menu | 2.0 | 2.1 |
-| Unity Hub | 3.16.1 | 3.16.2 |
-| VueScan | 9.8.50 | 9.8.51 |
-| Claude Code | 2.1.31 | 2.1.32 |
-| Twingate | 2025.363.22082 | 2026.29.22575 |
-| TeamViewer | 15.74.3 | 15.74.5 |
+| darktable | 5.4.0 | 5.4.1 |
+| Granola | 7.6.1 | 7.6.2 |
+| Multi | 0.538.2 | 3.0.2 |
+| WebCatalog | 73.6.1 | 73.7.0 |
+| Claude Code | 2.1.32 | 2.1.34 |
+| Adobe Acrobat Pro DC | 25.001.21145 | 25.001.21184 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

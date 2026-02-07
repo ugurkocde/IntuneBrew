@@ -1,14 +1,14 @@
 {
   "name": "Paste",
   "description": "Limitless clipboard",
-  "version": "6.3.5",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/paste_6.3.5.pkg",
+  "version": "6.3.6",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/paste_6.3.6.pkg",
   "bundleId": "com.wiheads.paste-direct",
   "homepage": "https://pasteapp.io/",
-  "fileName": "paste_6.3.5.pkg",
+  "fileName": "paste_6.3.6.pkg",
   "type": "app",
-  "previous_version": "6.3.5",
-  "sha": "26cfee347000b26ff87084012150ce25ffb828e8f41dd4853c74f6576e5f3959",
+  "previous_version": "6.3.6",
+  "sha": "aff4a87726d5845eba161bfe513ccd2340bc187ae58a9fd067d88758c5a75ff7",
   "category": "Productivity",
   "publisher": "Paste"
 }
