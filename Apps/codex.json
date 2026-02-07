@@ -1,0 +1,10 @@
+{
+  "name": "Codex",
+  "description": "OpenAI's coding agent that runs in your terminal",
+  "version": "0.98.0",
+  "url": "https://github.com/openai/codex/releases/download/rust-v0.98.0/codex-aarch64-apple-darwin.tar.gz",
+  "bundleId": null,
+  "homepage": "https://github.com/openai/codex",
+  "fileName": "codex-aarch64-apple-darwin.tar.gz",
+  "type": "app"
+}

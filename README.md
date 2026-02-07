@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1235-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1236-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -348,36 +348,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-07 00:38 UTC*
+*Last checked: 2026-02-07 14:02 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 148.0b11 | 148.0b12 |
-| Proton Pass | 1.34.1 | 1.34.2 |
-| UPDF | 2.1.2 | 2.1.3 |
-| Readest | 0.9.98 | 0.9.99 |
-| OmniFocus | 4.8.6 | 4.8.7 |
-| Requestly | 26.2.4 | 26.2.6 |
-| ChatWise | 0.9.79 | 0.9.80 |
-| Raycast | 1.104.4 | 1.104.5 |
-| Zed | 0.222.2 | 0.222.4 |
-| calibre | 9.1.0 | 9.2.1 |
-| LM Studio | 0.4.1 | 0.4.2 |
-| Badgeify | 1.12.4 | 1.12.5 |
-| Warp | 0.2026.01.28.08.14.stable | 0.2026.02.04.08.20.stable |
-| Mimestream | 1.9.10 | 1.9.11 |
-| Capacities | 1.58.27 | 1.58.38 |
+| Webex | 46.1.0.33913 | 46.2.0.34137 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| darktable | 5.4.0 | 5.4.1 |
-| Granola | 7.6.1 | 7.6.2 |
+| Loom | 0.331.1 | 0.332.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| WebCatalog | 73.6.1 | 73.7.0 |
-| Claude Code | 2.1.32 | 2.1.34 |
-| Adobe Acrobat Pro DC | 25.001.21145 | 25.001.21184 |
+| PureVPN | 9.38.1 | 9.39.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
