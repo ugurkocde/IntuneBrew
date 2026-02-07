@@ -1,7 +1,7 @@
 {
   "app_name": "Veracrypt",
   "app_key": "veracrypt",
-  "last_updated": "2026-02-06",
+  "last_updated": "2026-02-07",
   "total_cves": 5,
   "summary": {
     "critical": 0,

@@ -1,7 +1,7 @@
 {
   "app_name": "Qbittorrent",
   "app_key": "qbittorrent",
-  "last_updated": "2026-02-06",
+  "last_updated": "2026-02-07",
   "total_cves": 7,
   "summary": {
     "critical": 2,
