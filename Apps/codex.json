@@ -8,5 +8,6 @@
   "fileName": "codex-aarch64-apple-darwin.tar.gz",
   "type": "app",
   "category": "Developer Tools",
-  "publisher": "OpenAI"
+  "publisher": "OpenAI",
+  "previous_version": "0.98.0"
 }
