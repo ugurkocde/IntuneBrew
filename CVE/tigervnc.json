@@ -1,7 +1,7 @@
 {
   "app_name": "Tigervnc",
   "app_key": "tigervnc",
-  "last_updated": "2026-02-07",
+  "last_updated": "2026-02-08",
   "total_cves": 29,
   "summary": {
     "critical": 3,

@@ -1,7 +1,7 @@
 {
   "app_name": "Gimp",
   "app_key": "gimp",
-  "last_updated": "2026-02-07",
+  "last_updated": "2026-02-08",
   "total_cves": 58,
   "summary": {
     "critical": 1,
