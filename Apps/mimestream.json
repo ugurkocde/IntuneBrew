@@ -1,13 +1,13 @@
 {
   "name": "Mimestream",
   "description": "Native app email client for Gmail",
-  "version": "1.9.10",
-  "url": "https://download.mimestream.com/Mimestream_1.9.10.dmg",
+  "version": "1.9.11",
+  "url": "https://download.mimestream.com/Mimestream_1.9.11.dmg",
   "bundleId": "com.mimestream.Mimestream",
   "homepage": "https://mimestream.com/",
-  "fileName": "Mimestream_1.9.10.dmg",
-  "sha": "3fcb187e2f9f4d881beab66f88863e88f556e40d89fe10a740fa38394d96f744",
+  "fileName": "Mimestream_1.9.11.dmg",
+  "sha": "347464d796844dd9b1aed868bb8b78f53e57ece233b2c991b72d56b53e8d16e0",
   "category": "Communication",
   "publisher": "Mimestream, Inc.",
-  "previous_version": "1.9.10"
+  "previous_version": "1.9.11"
 }

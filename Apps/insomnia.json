@@ -1,14 +1,14 @@
 {
   "name": "Insomnia",
   "description": "HTTP and GraphQL Client",
-  "version": "12.3.0",
-  "url": "https://github.com/Kong/insomnia/releases/download/core%4012.3.0/Insomnia.Core-12.3.0.dmg",
+  "version": "12.3.1",
+  "url": "https://github.com/Kong/insomnia/releases/download/core%4012.3.1/Insomnia.Core-12.3.1.dmg",
   "bundleId": "com.insomnia.app",
   "homepage": "https://insomnia.rest/",
-  "fileName": "Insomnia.Core-12.3.0.dmg",
-  "sha": "9d923e46ab4bf5b0155efe273a0f2bc4271d5ab596a8bc0653ce0bba09b83b21",
+  "fileName": "Insomnia.Core-12.3.1.dmg",
+  "sha": "78a1d98d9f27551202dbc2c9968916a29d311c663261c512e9e873bb923ff021",
   "changelog": "https://github.com/Kong/insomnia/releases",
   "category": "Developer Tools",
   "publisher": "Kong, Inc.",
-  "previous_version": "12.3.0"
+  "previous_version": "12.3.1"
 }

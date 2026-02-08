@@ -1,13 +1,13 @@
 {
   "name": "darktable",
   "description": "Photography workflow application and raw developer",
-  "version": "5.4.0",
-  "url": "https://github.com/darktable-org/darktable/releases/download/release-5.4.0/darktable-5.4.0-arm64.dmg",
+  "version": "5.4.1",
+  "url": "https://github.com/darktable-org/darktable/releases/download/release-5.4.1/darktable-5.4.1-arm64.dmg",
   "bundleId": "org.darktable",
   "homepage": "https://www.darktable.org/",
-  "fileName": "darktable-5.4.0-arm64.dmg",
-  "sha": "17e1eaf2bd7ab0ada2e93d4bba2ba6b81345e99eb338635682d08dae64d7a150",
+  "fileName": "darktable-5.4.1-arm64.dmg",
+  "sha": "23ce74a4d7cbab30dc5e55043f97480b2a4eb1d96d602d529c9f9a428b99d041",
   "category": "Media",
   "publisher": "darktable",
-  "previous_version": "5.4.0"
+  "previous_version": "5.4.1"
 }

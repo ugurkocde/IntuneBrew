@@ -1,7 +1,7 @@
 {
   "app_name": "Jetbrains Phpstorm",
   "app_key": "jetbrains_phpstorm",
-  "last_updated": "2026-02-03",
+  "last_updated": "2026-02-08",
   "total_cves": 4,
   "summary": {
     "critical": 2,

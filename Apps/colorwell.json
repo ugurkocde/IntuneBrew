@@ -1,13 +1,13 @@
 {
   "name": "ColorWell",
   "description": "Colour picker and colour palette generator",
-  "version": "8.1.4",
+  "version": "8.1.5",
   "url": "https://sweetpproductions.com/products/colorwell/ColorWell.dmg",
   "bundleId": "com.sweetpproductions.ColorWell",
   "homepage": "https://colorwell.sweetpproductions.com/",
   "fileName": "ColorWell.dmg",
-  "sha": "12e8866829b9b33632caebf888cc91a80db7853fbe8504dfdb026535483efd3c",
+  "sha": "e58b9dc0f203e2748cba6d5defa4e183289e3ed48db58de62a6224c29ecf4967",
   "category": "Design",
   "publisher": "SweetP Productions",
-  "previous_version": "8.1.4"
+  "previous_version": "8.1.5"
 }

@@ -1,14 +1,14 @@
 {
   "name": "LaunchControl",
   "description": "Create, manage and debug system and user services",
-  "version": "2.10.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/launchcontrol_2.10.1.pkg",
+  "version": "2.10.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/launchcontrol_2.10.2.pkg",
   "bundleId": "com.soma-zone.LaunchControl.Helper",
   "homepage": "https://www.soma-zone.com/LaunchControl/",
-  "fileName": "launchcontrol_2.10.1.pkg",
+  "fileName": "launchcontrol_2.10.2.pkg",
   "type": "app",
-  "sha": "687e709b4b65d5856318130a1d3f00d9257884cd0910fdf348dbbf85aa8615bb",
+  "sha": "fa7a9649014e6acd0b00ac684262b4e0805bc7ab3d771f3a483c1da7c78a743e",
   "category": "Developer Tools",
   "publisher": "Soma Zone",
-  "previous_version": "2.10.1"
+  "previous_version": "2.10.2"
 }

@@ -1,14 +1,14 @@
 {
   "name": "Salesforce CLI",
   "description": "CLI tools for Salesforce",
-  "version": "2.120.3",
-  "url": "https://github.com/salesforcecli/cli/releases/download/2.120.3/sf-v2.120.3-0e363e5-arm64.pkg",
+  "version": "2.121.7",
+  "url": "https://github.com/salesforcecli/cli/releases/download/2.121.7/sf-v2.121.7-d73c0e0-arm64.pkg",
   "bundleId": "com.salesforce.cli",
   "homepage": "https://developer.salesforce.com/tools/salesforcecli",
-  "fileName": "sf-v2.120.3-0e363e5-arm64.pkg",
+  "fileName": "sf-v2.121.7-d73c0e0-arm64.pkg",
   "type": "pkg",
-  "sha": "2a1cd3448c9cca3903c77795c1888fe8edc76c15366094d7a6fedc3527786fee",
+  "sha": "00d7b46a69cafa7b306f79812eae7e0acb7450ca4ad2344b256c001daceee62a",
   "category": "Developer Tools",
   "publisher": "Salesforce, Inc.",
-  "previous_version": "2.120.3"
+  "previous_version": "2.121.7"
 }

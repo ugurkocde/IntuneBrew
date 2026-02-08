@@ -1,13 +1,13 @@
 {
   "name": "LibreWolf",
   "description": "Web browser",
-  "version": "147.0.2",
-  "url": "https://codeberg.org/api/packages/librewolf/generic/librewolf/147.0.2-1/librewolf-147.0.2-1-macos-arm64-package.dmg",
+  "version": "147.0.3",
+  "url": "https://codeberg.org/api/packages/librewolf/generic/librewolf/147.0.3-2/librewolf-147.0.3-2-macos-arm64-package.dmg",
   "bundleId": "org.mozilla.librewolf",
   "homepage": "https://librewolf.net/",
-  "fileName": "librewolf-147.0.2-1-macos-arm64-package.dmg",
-  "sha": "304e10b1d2e237ab76cabfc1f2f01be3ee86a15e615b9e03ca640d60e53d72de",
+  "fileName": "librewolf-147.0.3-2-macos-arm64-package.dmg",
+  "sha": "efa2c26e5e9d834c5a4841e4c4ab33a10611d6f6dc3242772c28be1e9216007f",
   "category": "Browsers",
   "publisher": "LibreWolf Project",
-  "previous_version": "147.0.2"
+  "previous_version": "147.0.3"
 }
