@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1236-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -350,20 +350,24 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-08 00:50 UTC*
+*Last checked: 2026-02-09 00:42 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| BoltAI 2 | 2.6.3 | 2.7.0 |
-| FontBase | 2.25.6 | 2.25.10 |
+| SketchUp | 2026.0.428.164 | 2026.1.188.46 |
+| NetBeans IDE | 27 | 28 |
+| Dataflare | 2.8.5 | 2.8.6 |
 | Caffeine | 1.6.3 | 1.1.4 |
+| Bitfocus Companion | 4.2.3 | 4.2.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Zotero | 8.0.2 | 8.0.3 |
-| Claude Code | 2.1.34 | 2.1.37 |
+| Riverside Studio | 1.19.1 | 1.19.2 |
+| Spitfire Audio | 3.4.13 | 3.4.17 |
+| Shutter Encoder | 19.8 | 19.9 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

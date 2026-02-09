@@ -1,12 +1,12 @@
 {
   "name": "SketchUp",
   "description": "3D modeling software used to create and manipulate 3D models",
-  "version": "2026.0.428.164",
-  "url": "https://download.sketchup.com/SketchUp-2026-0-428-164.dmg",
+  "version": "2026.1.188.46",
+  "url": "https://download.sketchup.com/SketchUp-2026-1-188-46.dmg",
   "bundleId": "com.sketchup.SketchUp.2025",
   "homepage": "https://www.sketchup.com/",
-  "fileName": "SketchUp-2026-0-428-164.dmg",
-  "sha": "eb2ed5fb18b9dcc63350057275ab14d4f9624a98996c4ce7f6f1299832fa2dd5",
+  "fileName": "SketchUp-2026-1-188-46.dmg",
+  "sha": "02cb9ebb719a25f851e26162b49614dfbf42c64ecea16bc4f606d48596e49362",
   "category": "Design",
   "publisher": "Trimble Inc.",
   "previous_version": "2026.0.428.164"

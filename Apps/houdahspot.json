@@ -1,14 +1,14 @@
 {
   "name": "HoudahSpot",
   "description": "File searching application",
-  "version": "6.7.3",
-  "url": "https://dl.houdah.com/houdahSpot/updates/cast_assets/d715eae6-3276-4ac8-9bb4-202f784ce629/HoudahSpot_6.7.3.dmg",
+  "version": "6.7.4",
+  "url": "https://dl.houdah.com/houdahSpot/updates/cast_assets/822f5d17-28d9-4efe-92d5-6cf26403e53d/HoudahSpot_6.7.4.dmg",
   "bundleId": "com.houdah.HoudahSpot",
   "homepage": "https://www.houdah.com/houdahSpot/",
   "fileName": "houdahspot_6.6.1.pkg",
   "type": "app",
-  "sha": "9ac5551c2e3d81dd990c1ac19b2bc92eb815367add315d1d26d6af46f8e05087",
+  "sha": "d4e9a1cedb1eecad01e153e9488194a50f1e9563070a872072fe27de5e01b98f",
   "category": "Utilities",
   "publisher": "Houdah Software",
-  "previous_version": "6.7.3"
+  "previous_version": "6.7.4"
 }
