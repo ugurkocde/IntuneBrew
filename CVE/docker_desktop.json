@@ -1,7 +1,7 @@
 {
   "app_name": "Docker Desktop",
   "app_key": "docker_desktop",
-  "last_updated": "2026-02-09",
+  "last_updated": "2026-02-10",
   "total_cves": 27,
   "summary": {
     "critical": 2,
