@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1236-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -351,23 +351,38 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-09 00:42 UTC*
+*Last checked: 2026-02-10 00:48 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| SketchUp | 2026.0.428.164 | 2026.1.188.46 |
-| NetBeans IDE | 27 | 28 |
-| Dataflare | 2.8.5 | 2.8.6 |
+| Mozilla Firefox Developer Edition | 148.0b12 | 148.0b13 |
+| Postico | 2.3.1 | 2.3.2 |
+| QSpace Pro | 6.1.2 | 6.1.4 |
+| Apifox | 2.8.5 | 2.8.6 |
+| Proton Mail | 1.11.0 | 1.12.1 |
+| Termius | 9.36.3 | 9.37.0 |
+| Discord | 0.0.375 | 0.0.376 |
+| DuckDuckGo | 1.175.0 | 1.176.0 |
+| Goland | 2025.3.1.1 | 2025.3.2 |
+| Apidog | 2.8.5 | 2.8.6 |
+| DbGate | 7.0.3 | 7.0.4 |
+| Beekeeper Studio | 5.5.6 | 5.5.7 |
+| Jitsi Meet | 2026.1.0 | 2026.1.1 |
+| Lunacy | 11.6 | 12.1 |
+| Capacities | 1.58.38 | 1.58.42 |
+| Opera GX | 126.0.5750.112 | 127.0.5778.41 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Bitfocus Companion | 4.2.3 | 4.2.4 |
+| iMazing Converter | 2.0.10 | 2.0.11 |
+| Kdenlive | 25.12.1 | 25.12.2 |
 | Multi | 0.538.2 | 3.0.2 |
-| Riverside Studio | 1.19.1 | 1.19.2 |
-| Spitfire Audio | 3.4.13 | 3.4.17 |
-| Shutter Encoder | 19.8 | 19.9 |
+| Proton Mail Bridge | 3.21.2 | 3.22.0 |
+| TickTick | 8.0.10 | 8.0.20 |
+| eM Client | 10.4.4293 | 10.4.4756 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

@@ -1,14 +1,14 @@
 {
   "name": "Standard Notes",
   "description": "Free, open-source, and completely encrypted notes app",
-  "version": "3.201.10",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/standard_notes_3.201.10.pkg",
+  "version": "3.201.18",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/standard_notes_3.201.18.pkg",
   "bundleId": "org.standardnotes.standardnotes.helper",
   "homepage": "https://standardnotes.com/",
-  "fileName": "standard_notes_3.201.10.pkg",
+  "fileName": "standard_notes_3.201.18.pkg",
   "type": "app",
-  "sha": "de577e530f97e067892a28c748f9fd3a9003218d259b37bbb929f8f2b4b928bc",
+  "sha": "c20126779fc03dc1490bb79471af4f7f910132c44726a95ae3c47c708b92db9f",
   "category": "Productivity",
   "publisher": "Standard Notes",
-  "previous_version": "3.201.10"
+  "previous_version": "3.201.18"
 }
