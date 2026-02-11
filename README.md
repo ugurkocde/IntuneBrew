@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1236-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1237-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -353,50 +353,22 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-11 00:48 UTC*
+*Last checked: 2026-02-11 11:03 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Studio 3T | 2026.2.0 | 2026.3.0 |
-| Syncovery | 11.12.7 | 11.12.8 |
-| Raindrop.io | 5.6.95 | 5.7.0 |
-| Apifox | 2.8.6 | 2.8.7 |
-| Headlamp | 0.40.0 | 0.40.1 |
-| Zoom | 6.7.2.72191 | 6.7.5.75246 |
-| Grammarly Desktop | 1.151.1.0 | 1.152.1.0 |
-| XMind | 26.02.02052-202601211723 | 26.02.04171-202602092224 |
-| Webex | 46.2.0.34137 | 46.2.1.34187 |
-| Notion | 7.3.1 | 7.4.0 |
-| VSCodium | 1.108.20787 | 1.109.01000 |
-| Microsoft Office | 16.105.26011018 | 16.106.26020821 |
-| Apidog | 2.8.6 | 2.8.7 |
-| Dataflare | 2.8.6 | 2.8.7 |
-| Warp | 0.2026.02.04.08.20.stable | 0.2026.02.10.11.37.stable |
-| ExpanDrive | 2026.02.05.816 | 2026.02.09.821 |
-| Lunacy | 12.1 | 12.2 |
-| ClickUp | 3.5.163 | 3.5.176 |
-| Polymail | 2.4.3002 | 2.4.3003 |
-| Streamlabs Desktop | 1.20.6 | 1.20.7 |
+| Trae | 2.3.8290 | 2.3.9373 |
+| Dropbox | 241.4.4795 | 241.4.4853 |
+| Milanote | 3.18.75 | 3.18.76 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Granola | 7.6.2 | 7.14.2 |
-| Loom | 0.332.0 | 0.333.0 |
+| Douyin | 7.2.0 | 7.3.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Pitch | 2.112.0 | 2.113.0 |
-| SF Symbols | 7.1 | 7.2 |
-| Transfer | 2.4.1 | 2.4.2 |
-| Tuta Mail | 325.260127.0 | 327.260210.0 |
-| Zappy | 4.9.3 | 4.9.4 |
-| Claude Code | 2.1.37 | 2.1.38 |
-| NordVPN | 9.12.0 | 9.13.0 |
-| Microsoft Excel | 16.105.26020123 | 16.106.26020821 |
-| Microsoft OneNote | 16.105.26011018 | 16.106.26020821 |
-| Microsoft Outlook | 16.105.26020123 | 16.106.26020821 |
-| Microsoft PowerPoint | 16.105.26020123 | 16.106.26020821 |
-| Microsoft Word | 16.105.26020123 | 16.106.26020821 |
+| Claude Code | 2.1.38 | 2.1.39 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
