@@ -1,7 +1,7 @@
 {
   "app_name": "Synology Drive",
   "app_key": "synology_drive",
-  "last_updated": "2026-02-10",
+  "last_updated": "2026-02-11",
   "total_cves": 6,
   "summary": {
     "critical": 0,
