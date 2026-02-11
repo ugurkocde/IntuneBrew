@@ -7,5 +7,7 @@
   "homepage": "https://perimeter81.com/",
   "fileName": "Harmony_SASE_12.3.0.7524.pkg",
   "type": "pkg",
-  "sha": "5a2589fab60bfe2dc00c62cd2b162482a578b7908f55b266612d61b691097a7d"
+  "sha": "5a2589fab60bfe2dc00c62cd2b162482a578b7908f55b266612d61b691097a7d",
+  "category": "Security",
+  "publisher": "Perimeter 81"
 }
