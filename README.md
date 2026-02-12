@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1237-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -354,21 +354,38 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-11 11:03 UTC*
+*Last checked: 2026-02-12 00:43 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Trae | 2.3.8290 | 2.3.9373 |
-| Dropbox | 241.4.4795 | 241.4.4853 |
-| Milanote | 3.18.75 | 3.18.76 |
+| Mozilla Firefox Developer Edition | 148.0b13 | 148.0b14 |
+| Nitro PDF Pro | 14.10.4 | 26.0 |
+| Easydict | 2.17.1 | 2.17.3 |
+| Google Chrome | 144.0.7559.133 | 145.0.7632.46 |
+| Miro | 0.11.125 | 0.11.128 |
+| BetterDisplay | 4.1.1 | 4.1.5 |
+| Google Drive | 120.0.1 | 121.0.1 |
+| Raycast | 1.104.5 | 1.104.6 |
+| Zed | 0.222.4 | 0.223.3 |
+| VSCodium | 1.109.01000 | 1.109.21026 |
+| Opera | 127.0.5778.14 | 127.0.5778.47 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Douyin | 7.2.0 | 7.3.0 |
+| 4K YouTube to MP3 | 26.0.2 | 26.0.3 |
+| Beaver Notes | 4.2.0 | 4.3.0 |
+| digiexam | 25.4.6 | 25.4.31 |
+| Fellow | 5.0.1 | 5.0.5 |
 | Multi | 0.538.2 | 3.0.2 |
-| Claude Code | 2.1.38 | 2.1.39 |
+| WebCatalog | 73.7.0 | 73.8.0 |
+| ChatGPT Atlas | 1.2026.28.6 | 1.2026.35.4 |
+| Microsoft Office BusinessPro | 16.105.26011018 | 16.106.26020821 |
+| Salesforce CLI | 2.121.7 | 2.122.6 |
+| TeamViewer | 15.74.5 | 15.74.6 |
+| Chrome Remote Desktop | 144.0.7559.13 | 145.0.7632.9 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

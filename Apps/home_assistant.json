@@ -1,14 +1,14 @@
 {
   "name": "Home Assistant",
   "description": "Companion app for Home Assistant home automation software",
-  "version": "2025.11.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/home_assistant_2025.11.2.pkg",
+  "version": "2026.2.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/home_assistant_2026.2.1.pkg",
   "bundleId": "io.robbie.HomeAssistant",
   "homepage": "https://companion.home-assistant.io/",
-  "fileName": "home_assistant_2025.11.2.pkg",
+  "fileName": "home_assistant_2026.2.1.pkg",
   "type": "app",
-  "sha": "d1b45f223871ba7ee45d68f33240daf5a1e169f5ca3509fc8f7a043412118132",
-  "previous_version": "2025.11.2",
+  "sha": "aa5fd42e55a27cc934a1fb0bf6c93a3c75e16ee8a3d36bd08a4dcb1a05a219cb",
+  "previous_version": "2026.2.1",
   "category": "Utilities",
   "publisher": "Nabu Casa, Inc."
 }

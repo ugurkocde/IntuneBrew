@@ -1,14 +1,14 @@
 {
   "name": "Superhuman",
   "description": "Email client",
-  "version": "1038.0.22",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/superhuman_1038.0.22.pkg",
+  "version": "1038.0.23",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/superhuman_1038.0.23.pkg",
   "bundleId": "com.superhuman.mail",
   "homepage": "https://superhuman.com/",
-  "fileName": "superhuman_1038.0.22.pkg",
+  "fileName": "superhuman_1038.0.23.pkg",
   "type": "app",
-  "sha": "80adffb9d7374737a3829f14badd339cc423d487228cda19c8773920a3cbf7ff",
+  "sha": "c46091a2efa378c9127f04cf4ebb017776d9cb4acdb67bb64e8f5e7a22d81ab3",
   "category": "Productivity",
   "publisher": "Superhuman, Inc.",
-  "previous_version": "1038.0.22"
+  "previous_version": "1038.0.23"
 }

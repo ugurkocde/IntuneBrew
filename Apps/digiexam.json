@@ -1,12 +1,12 @@
 {
   "name": "digiexam",
   "description": "Academic testing platform with device lockdown",
-  "version": "25.4.6",
+  "version": "25.4.31",
   "url": "https://www.digiexam.com/hubfs/client/Digiexam_Mac_universal.dmg",
   "bundleId": "se.digiexam.DigiExam",
   "homepage": "https://www.digiexam.com/",
   "fileName": "Digiexam_Mac_universal.dmg",
-  "sha": "860b734c45ee146d7cf247a397469eaee4c3f2670e1594541ce33a663ae705c3",
+  "sha": "d55587356160df1d31ea717cfe48db3d144fc03d6b389e9b57ab9fdefc324355",
   "category": "Security",
   "publisher": "Digiexam",
   "previous_version": "25.4.6"
