@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1237-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1238-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -356,40 +356,32 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-13 00:46 UTC*
+*Last checked: 2026-02-13 16:22 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Rive | 0.8.4187 | 0.8.4257 |
-| Clop | 2.11.2 | 2.11.3 |
-| Wave Terminal | 0.13.1 | 0.14.0 |
-| Readest | 0.9.99 | 0.9.100 |
-| QuickLook Video | 2.21 | 3.00 |
-| Lens | 2026.2.20807 | 2026.2.111511 |
-| Downie | 4.11.11 | 4.11.12 |
-| AnyDesk | 9.6.1 | 9.6.2 |
-| Brave | 1.86.148.0 | 1.87.186.0 |
-| Krisp | 3.10.5 | 3.10.7 |
-| Calmly Writer | 2.0.61 | 2.0.63 |
-| Tenable Nessus Agent | 11.1.1 | 11.1.2 |
-| Stremio | 4.4.171 | 4.4.172 |
-| Viscosity | 1.12 | 1.12.1 |
-| Deezer | 7.1.60 | 7.1.70 |
-| Opera GX | 127.0.5778.41 | 127.0.5778.53 |
-| Quicksilver | 2.5.4 | 2.5.5 |
+| Google Chrome | 145.0.7632.46 | 145.0.7632.68 |
+| Zoom | 6.7.5.75246 | 6.7.6.75444 |
+| Grammarly Desktop | 1.152.1.0 | 1.152.2.0 |
+| Canva | 1.120.0 | 1.121.0 |
+| AnyDesk | 9.6.2 | 9.6.3 |
+| Windsurf | 1.9544.35 | 1.9552.21 |
+| Amadine | 1.7.2 | 1.8 |
+| DbGate | 7.0.4 | 7.0.6 |
+| Warp | 0.2026.02.10.11.37.stable | 0.2026.02.11.08.23.stable |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Akiflow | 2.66.3 | 2.67.9 |
-| ChatWork | 2.20.1 | 2.20.2 |
-| digiexam | 25.4.31 | 25.4.32 |
-| Fellow | 5.0.5 | 5.0.6 |
-| GDevelop | 5.6.254 | 5.6.256 |
-| Lunar | 6.9.6 | 6.9.7 |
+| GDevelop | 5.6.256 | 5.6.257 |
 | Multi | 0.538.2 | 3.0.2 |
-| Adobe Acrobat Pro DC | 25.001.21184 | 25.001.21208 |
+| Claude Code | 2.1.39 | 2.1.41 |
+| Dymo Connect | 1.5.1.15 | 1.6.0.41 |
+| Spyder | 6.1.2 | 6.1.3 |
+| Perimeter 81 | 12.3.0.7524 | 12.5.1.8141 |
+| Jabra Direct | 6.26.32801 | 6.27.03702 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
