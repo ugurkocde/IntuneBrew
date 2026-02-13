@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1237-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -355,37 +355,41 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-12 00:43 UTC*
+*Last checked: 2026-02-13 00:46 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 148.0b13 | 148.0b14 |
-| Nitro PDF Pro | 14.10.4 | 26.0 |
-| Easydict | 2.17.1 | 2.17.3 |
-| Google Chrome | 144.0.7559.133 | 145.0.7632.46 |
-| Miro | 0.11.125 | 0.11.128 |
-| BetterDisplay | 4.1.1 | 4.1.5 |
-| Google Drive | 120.0.1 | 121.0.1 |
-| Raycast | 1.104.5 | 1.104.6 |
-| Zed | 0.222.4 | 0.223.3 |
-| VSCodium | 1.109.01000 | 1.109.21026 |
-| Opera | 127.0.5778.14 | 127.0.5778.47 |
+| Rive | 0.8.4187 | 0.8.4257 |
+| Clop | 2.11.2 | 2.11.3 |
+| Wave Terminal | 0.13.1 | 0.14.0 |
+| Readest | 0.9.99 | 0.9.100 |
+| QuickLook Video | 2.21 | 3.00 |
+| Lens | 2026.2.20807 | 2026.2.111511 |
+| Downie | 4.11.11 | 4.11.12 |
+| AnyDesk | 9.6.1 | 9.6.2 |
+| Brave | 1.86.148.0 | 1.87.186.0 |
+| Krisp | 3.10.5 | 3.10.7 |
+| Calmly Writer | 2.0.61 | 2.0.63 |
+| Tenable Nessus Agent | 11.1.1 | 11.1.2 |
+| Stremio | 4.4.171 | 4.4.172 |
+| Viscosity | 1.12 | 1.12.1 |
+| Deezer | 7.1.60 | 7.1.70 |
+| Opera GX | 127.0.5778.41 | 127.0.5778.53 |
+| Quicksilver | 2.5.4 | 2.5.5 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| 4K YouTube to MP3 | 26.0.2 | 26.0.3 |
-| Beaver Notes | 4.2.0 | 4.3.0 |
-| digiexam | 25.4.6 | 25.4.31 |
-| Fellow | 5.0.1 | 5.0.5 |
+| Akiflow | 2.66.3 | 2.67.9 |
+| ChatWork | 2.20.1 | 2.20.2 |
+| digiexam | 25.4.31 | 25.4.32 |
+| Fellow | 5.0.5 | 5.0.6 |
+| GDevelop | 5.6.254 | 5.6.256 |
+| Lunar | 6.9.6 | 6.9.7 |
 | Multi | 0.538.2 | 3.0.2 |
-| WebCatalog | 73.7.0 | 73.8.0 |
-| ChatGPT Atlas | 1.2026.28.6 | 1.2026.35.4 |
-| Microsoft Office BusinessPro | 16.105.26011018 | 16.106.26020821 |
-| Salesforce CLI | 2.121.7 | 2.122.6 |
-| TeamViewer | 15.74.5 | 15.74.6 |
-| Chrome Remote Desktop | 144.0.7559.13 | 145.0.7632.9 |
+| Adobe Acrobat Pro DC | 25.001.21184 | 25.001.21208 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

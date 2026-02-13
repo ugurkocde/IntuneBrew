@@ -1,12 +1,12 @@
 {
   "name": "Stremio",
   "description": "Open-source media center",
-  "version": "4.4.171",
-  "url": "https://dl.strem.io/shell-osx/v4.4.171/Stremio+4.4.171.dmg",
+  "version": "4.4.172",
+  "url": "https://dl.strem.io/shell-osx/v4.4.172/Stremio+4.4.172.dmg",
   "bundleId": "com.smartcodeltd.stremio",
   "homepage": "https://www.strem.io/",
-  "fileName": "Stremio+4.4.171.dmg",
-  "sha": "22909c6959c07bb375f13b3a3e0943ff3e631a32b11cea343d430ce75912ab65",
+  "fileName": "Stremio+4.4.172.dmg",
+  "sha": "a91fc0aa92f6e5593718c69b5558a383b02abde0e56901a13ec21d5365b6e1e0",
   "category": "Media",
   "publisher": "Stremio",
   "previous_version": "4.4.171"
