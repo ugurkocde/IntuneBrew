@@ -1,7 +1,7 @@
 {
   "app_name": "Mongodb Compass",
   "app_key": "mongodb_compass",
-  "last_updated": "2026-02-12",
+  "last_updated": "2026-02-13",
   "total_cves": 4,
   "summary": {
     "critical": 0,
