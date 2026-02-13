@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-02-13T01:09:59.038Z",
+  "last_full_scan": "2026-02-13T16:38:11.623Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8861,6 +8861,13 @@
       "status": "verified",
       "source": "file",
       "name": "Perimeter 81"
+    },
+    "pppc_utility": {
+      "last_checked": "2026-02-13T16:38:11.615Z",
+      "bundle_id": "com.jamf.opensource.pppcutility",
+      "status": "verified",
+      "source": "file",
+      "name": "PPPC Utility"
     }
   }
 }
