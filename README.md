@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1238-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -357,31 +357,24 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-13 16:22 UTC*
+*Last checked: 2026-02-14 00:41 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Google Chrome | 145.0.7632.46 | 145.0.7632.68 |
-| Zoom | 6.7.5.75246 | 6.7.6.75444 |
-| Grammarly Desktop | 1.152.1.0 | 1.152.2.0 |
-| Canva | 1.120.0 | 1.121.0 |
-| AnyDesk | 9.6.2 | 9.6.3 |
-| Windsurf | 1.9544.35 | 1.9552.21 |
-| Amadine | 1.7.2 | 1.8 |
-| DbGate | 7.0.4 | 7.0.6 |
-| Warp | 0.2026.02.10.11.37.stable | 0.2026.02.11.08.23.stable |
+| Mozilla Firefox Developer Edition | 148.0b14 | 148.0b15 |
+| Freelens | 1.8.0 | 1.8.1 |
+| VSCodium | 1.109.21026 | 1.109.31074 |
+| Roon | 2.58 | 2.60 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| GDevelop | 5.6.256 | 5.6.257 |
 | Multi | 0.538.2 | 3.0.2 |
-| Claude Code | 2.1.39 | 2.1.41 |
-| Dymo Connect | 1.5.1.15 | 1.6.0.41 |
-| Spyder | 6.1.2 | 6.1.3 |
-| Perimeter 81 | 12.3.0.7524 | 12.5.1.8141 |
-| Jabra Direct | 6.26.32801 | 6.27.03702 |
+| Claude Code | 2.1.41 | 2.1.42 |
+| Malwarebytes for Mac | 5.20.0.3620 | 5.20.1.3626 |
+| Aptible Toolbelt | 0.26.1 | 0.26.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
