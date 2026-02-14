@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-02-13",
+  "last_updated": "2026-02-14",
   "total_cves": 950,
   "summary": {
     "critical": 17,
@@ -12971,7 +12971,7 @@
     {
       "cve_id": "CVE-2025-47963",
       "published_date": "2025-07-11",
-      "last_modified_date": "2025-07-17",
+      "last_modified_date": "2026-02-13",
       "description": "No cwe for this issue in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -12992,7 +12992,7 @@
     {
       "cve_id": "CVE-2025-47964",
       "published_date": "2025-07-11",
-      "last_modified_date": "2025-07-17",
+      "last_modified_date": "2026-02-13",
       "description": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
       "base_score": 5.4,
       "severity": "MEDIUM",
