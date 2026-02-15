@@ -1,7 +1,7 @@
 {
   "app_name": "Onedrive",
   "app_key": "onedrive",
-  "last_updated": "2026-02-14",
+  "last_updated": "2026-02-15",
   "total_cves": 14,
   "summary": {
     "critical": 1,
