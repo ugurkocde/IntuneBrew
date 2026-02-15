@@ -1,14 +1,14 @@
 {
   "name": "TRex",
   "description": "Easy to use text extraction tool",
-  "version": "1.9.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/trex_1.9.1.pkg",
+  "version": "2.0.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/trex_2.0.0.pkg",
   "bundleId": "com.ameba.TRex",
   "homepage": "https://trex.ameba.co/",
-  "fileName": "trex_1.9.1.pkg",
+  "fileName": "trex_2.0.0.pkg",
   "type": "app",
-  "sha": "d2231f159262d4a1b3ee5da7c9d8edc3d8ecc2fcee12efd87d85cb096f0c888a",
+  "sha": "c28c8c9f1b5db6d85113f01cf7f8c988026a6f53fca1f7ec6098e38b8247d0a9",
   "category": "Utilities",
   "publisher": "TRex",
-  "previous_version": "1.9.1"
+  "previous_version": "2.0.0"
 }

@@ -1,12 +1,12 @@
 {
   "name": "ScreenFlow",
   "description": "Screen recording and video editing software",
-  "version": "10.5.1",
-  "url": "https://www.telestream.net/download-files/screenflow/10-5/ScreenFlow-10.5.1.dmg",
+  "version": "10.5.2",
+  "url": "https://www.telestream.net/download-files/screenflow/10-5/ScreenFlow-10.5.2.dmg",
   "bundleId": "net.telestream.screenflow.globallibrary",
   "homepage": "https://www.telestream.net/screenflow/",
-  "fileName": "ScreenFlow-10.5.1.dmg",
-  "sha": "907f08ecf9c6f0fd3b77c169703fa38aa2bee97901c8e65ccf0ba620d5a6653e",
+  "fileName": "ScreenFlow-10.5.2.dmg",
+  "sha": "00bb03b77cffcdee8d1ed12011c2e303bb9117021deee611a402090116d84263",
   "category": "Media",
   "publisher": "Telestream",
   "previous_version": "10.5.1"
