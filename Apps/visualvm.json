@@ -1,12 +1,12 @@
 {
   "name": "VisualVM",
   "description": "All-in-One Java Troubleshooting Tool",
-  "version": "2.2",
-  "url": "https://github.com/oracle/visualvm/releases/download/2.2/VisualVM_22.dmg",
+  "version": "2.2.1",
+  "url": "https://github.com/oracle/visualvm/releases/download/2.2.1/VisualVM_221.dmg",
   "bundleId": "io.visualvm.VisualVM",
   "homepage": "https://visualvm.github.io/",
-  "fileName": "VisualVM_22.dmg",
-  "sha": "5d429cdd74d40b78d5472c0563932268162832ea09ac77a303ca80e3e2aa1df6",
+  "fileName": "VisualVM_221.dmg",
+  "sha": "f9e254e4264ea992d9d6087327949b5fc4c8f10c83c6623693d22450f1b7572d",
   "category": "Developer Tools",
   "publisher": "Oracle Corporation",
   "previous_version": "2.2"

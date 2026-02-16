@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1238-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -359,32 +359,30 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-15 00:44 UTC*
+*Last checked: 2026-02-16 00:41 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Trae | 2.3.9373 | 2.3.10208 |
-| Google Chrome | 145.0.7632.68 | 145.0.7632.76 |
-| Slack | 4.47.72 | 4.48.92 |
-| Brave | 1.87.186.0 | 1.87.188.0 |
-| Microsoft Edge | 144.0.3719.115 | 145.0.3800.58 |
-| Opera | 127.0.5778.47 | 127.0.5778.64 |
-| OnyX | 4.9.4 | 4.9.5 |
-| Apidog | 2.8.7 | 2.8.8 |
-| AppFlowy | 0.11.1 | 0.11.2 |
-| ScreenFlow | 10.5.1 | 10.5.2 |
-| Opera GX | 127.0.5778.53 | 127.0.5778.67 |
-| Quicksilver | 2.5.5 | 2.5.6 |
-| Roam Research | 0.0.33 | 0.0.34 |
-| Ungoogled Chromium | 144.0.7559.96-1.1 | 145.0.7632.45-1.1 |
+| Clop | 2.11.3 | 2.11.4 |
+| Dockside | 1.9.54 | 1.9.56 |
+| Pulsar | 1.130.1 | 1.131.0 |
+| Apifox | 2.8.7 | 2.8.8 |
+| Yaak | 2026.1.2 | 2026.2.1 |
+| VisualVM | 2.2 | 2.2.1 |
+| DBeaver Community Edition | 25.3.4 | 25.3.5 |
+| Spotify | 1.2.82.428 | 1.2.83.461 |
+| Stats | 2.11.66 | 2.11.67 |
+| Path Finder | 2211 | 11.0 |
+| Stremio | 4.4.172 | 5.1.14 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Hides | 7.2.2 | 7.3 |
 | Multi | 0.538.2 | 3.0.2 |
-| ChatGPT Atlas | 1.2026.35.4 | 1.2026.35.5 |
+| Riverside Studio | 1.19.2 | 1.19.3 |
+| Zwift | 1.1.14 | 1.1.15 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
