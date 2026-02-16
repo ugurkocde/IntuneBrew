@@ -1,0 +1,11 @@
+{
+  "name": "UniFi Identity Endpoint",
+  "description": "License free Wi-Fi, VPN, and Access Application for Organizations",
+  "version": "3.6.0",
+  "url": "https://fw-download.ubnt.com/data/uid-identity-standard-desktop-app/c816-macOS-3.6.0-96918512-1d16-4410-bc24-5d60a514cd52.pkg",
+  "bundleId": "com.ui.uid.standard-desktop",
+  "homepage": "https://www.ui.com/identity",
+  "fileName": "c816-macOS-3.6.0-96918512-1d16-4410-bc24-5d60a514cd52.pkg",
+  "type": "pkg",
+  "sha": "d131daaa870970042a484a8e153a561e400dc04a28f83eb77259103d38e3cb4d"
+}

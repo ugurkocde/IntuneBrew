@@ -1,0 +1,11 @@
+{
+  "name": "WiFiman Desktop",
+  "description": "Network monitoring and troubleshooting tool",
+  "version": "1.2.8",
+  "url": "https://desktop.wifiman.com/wifiman-desktop-1.2.8-arm64.pkg",
+  "bundleId": "ui.wifiman.com",
+  "homepage": "https://wifiman.com/",
+  "fileName": "wifiman-desktop-1.2.8-arm64.pkg",
+  "type": "pkg",
+  "sha": "4e8f51aa02122227a8c93ba9aae6a0aa7738701a0a0e231248787c26319ec011"
+}
