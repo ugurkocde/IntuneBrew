@@ -7,5 +7,7 @@
   "homepage": "https://www.ui.com/identity",
   "fileName": "c816-macOS-3.6.0-96918512-1d16-4410-bc24-5d60a514cd52.pkg",
   "type": "pkg",
-  "sha": "d131daaa870970042a484a8e153a561e400dc04a28f83eb77259103d38e3cb4d"
+  "sha": "d131daaa870970042a484a8e153a561e400dc04a28f83eb77259103d38e3cb4d",
+  "category": "Security",
+  "publisher": "Ubiquiti Inc."
 }
