@@ -1328,6 +1328,7 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/insta360-link-controller.json",
     "https://formulae.brew.sh/api/cask/toshiba-color-mfp.json",
     "https://formulae.brew.sh/api/cask/perimeter81.json",
+    "https://formulae.brew.sh/api/cask/unifi-identity-endpoint.json",
 ]
 
 # Custom scraper scripts to run
