@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-02-16T00:53:17.945Z",
+  "last_full_scan": "2026-02-16T14:38:45.274Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8868,6 +8868,20 @@
       "status": "verified",
       "source": "file",
       "name": "PPPC Utility"
+    },
+    "unifi_identity_endpoint": {
+      "last_checked": "2026-02-16T14:38:45.271Z",
+      "bundle_id": "com.ui.uid.standard-desktop",
+      "status": "verified",
+      "source": "file",
+      "name": "UniFi Identity Endpoint"
+    },
+    "wifiman_desktop": {
+      "last_checked": "2026-02-16T14:38:45.272Z",
+      "bundle_id": "ui.wifiman.com",
+      "status": "verified",
+      "source": "file",
+      "name": "WiFiman Desktop"
     }
   }
 }
