@@ -1,7 +1,7 @@
 {
   "app_name": "Blender",
   "app_key": "blender",
-  "last_updated": "2026-02-15",
+  "last_updated": "2026-02-16",
   "total_cves": 35,
   "summary": {
     "critical": 0,
