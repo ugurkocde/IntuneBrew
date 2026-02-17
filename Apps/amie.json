@@ -1,14 +1,14 @@
 {
   "name": "Amie",
   "description": "Calendar and task manager",
-  "version": "260212.0.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/amie_260212.0.1.pkg",
+  "version": "260216.1.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/amie_260216.1.0.pkg",
   "bundleId": "so.amie.electron-app",
   "homepage": "https://amie.so/",
-  "fileName": "amie_260212.0.1.pkg",
+  "fileName": "amie_260216.1.0.pkg",
   "type": "app",
-  "previous_version": "260212.0.1",
-  "sha": "a78a889ebc20939cc34378dbfd4ed6f0fed1e8430ae954a6eed68daf33ae3b58",
+  "previous_version": "260216.1.0",
+  "sha": "43b68ef3b01b05ba6b0c8ef607d4d3a8a95c3ea967bc081e9161e473bc1b2848",
   "category": "Productivity",
   "publisher": "Amie"
 }

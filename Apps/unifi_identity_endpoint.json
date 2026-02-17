@@ -9,5 +9,6 @@
   "type": "pkg",
   "sha": "d131daaa870970042a484a8e153a561e400dc04a28f83eb77259103d38e3cb4d",
   "category": "Security",
-  "publisher": "Ubiquiti Inc."
+  "publisher": "Ubiquiti Inc.",
+  "previous_version": "3.6.0"
 }
