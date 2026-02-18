@@ -1,14 +1,14 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-02-17",
-  "total_cves": 3797,
+  "last_updated": "2026-02-18",
+  "total_cves": 3798,
   "summary": {
     "critical": 146,
-    "high": 2047,
+    "high": 2048,
     "medium": 1587,
     "low": 17,
-    "kev_count": 70
+    "kev_count": 71
   },
   "vulnerabilities": [
     {
@@ -322,6 +322,27 @@
       "is_kev": true,
       "kev_date_added": "2024-09-17",
       "kev_due_date": "2024-10-08",
+      "kev_ransomware_use": "Unknown",
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
+      "cve_id": "CVE-2026-2441",
+      "published_date": "2026-02-13",
+      "last_modified_date": "2026-02-17",
+      "description": "Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "145.0.7632.75",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "145.0.7632.75",
+      "is_kev": true,
+      "kev_date_added": "2026-02-17",
+      "kev_due_date": "2026-03-10",
       "kev_ransomware_use": "Unknown",
       "vendor": "google",
       "product": "chrome"

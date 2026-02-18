@@ -1,7 +1,7 @@
 {
   "app_name": "Wireshark",
   "app_key": "wireshark",
-  "last_updated": "2026-02-17",
+  "last_updated": "2026-02-18",
   "total_cves": 689,
   "summary": {
     "critical": 1,
