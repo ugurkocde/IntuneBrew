@@ -17,6 +17,12 @@ fi
 echo "Stopping Stats if running..."
 pkill -f "Stats" 2>/dev/null || true
 
+# Unload service eu.exelban.Stats.SMC.Helper
+echo "Unloading service eu.exelban.Stats.SMC.Helper..."
+launchctl unload -w /Library/LaunchAgents/eu.exelban.Stats.SMC.Helper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/eu.exelban.Stats.SMC.Helper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/eu.exelban.Stats.SMC.Helper.plist 2>/dev/null || true
+
 # Kill application with bundle ID eu.exelban.Stats if running
 echo "Stopping application with bundle ID eu.exelban.Stats if running..."
 killall -9 "eu.exelban.Stats" 2>/dev/null || true
@@ -43,6 +49,14 @@ if [ -d "$HOME/Library/Application Scripts/eu.exelban.Stats.Widgets" ]; then
     rm -rf "$HOME/Library/Application Scripts/eu.exelban.Stats.Widgets" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/eu.exelban.Stats.Widgets" ]; then
     rm -f "$HOME/Library/Application Scripts/eu.exelban.Stats.Widgets" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Stats
+echo "Removing $HOME/Library/Application Support/Stats..."
+if [ -d "$HOME/Library/Application Support/Stats" ]; then
+    rm -rf "$HOME/Library/Application Support/Stats" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Stats" ]; then
+    rm -f "$HOME/Library/Application Support/Stats" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/eu.exelban.Stats
@@ -107,6 +121,14 @@ if [ -d "/Library/LaunchDaemons/eu.exelban.Stats.SMC.Helper.plist" ]; then
     rm -rf "/Library/LaunchDaemons/eu.exelban.Stats.SMC.Helper.plist" 2>/dev/null || true
 elif [ -f "/Library/LaunchDaemons/eu.exelban.Stats.SMC.Helper.plist" ]; then
     rm -f "/Library/LaunchDaemons/eu.exelban.Stats.SMC.Helper.plist" 2>/dev/null || true
+fi
+
+# Remove /Library/PrivilegedHelperTools/eu.exelban.Stats.SMC.Helper
+echo "Removing /Library/PrivilegedHelperTools/eu.exelban.Stats.SMC.Helper..."
+if [ -d "/Library/PrivilegedHelperTools/eu.exelban.Stats.SMC.Helper" ]; then
+    rm -rf "/Library/PrivilegedHelperTools/eu.exelban.Stats.SMC.Helper" 2>/dev/null || true
+elif [ -f "/Library/PrivilegedHelperTools/eu.exelban.Stats.SMC.Helper" ]; then
+    rm -f "/Library/PrivilegedHelperTools/eu.exelban.Stats.SMC.Helper" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
