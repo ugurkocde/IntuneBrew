@@ -1,13 +1,13 @@
 {
   "name": "eM Client",
   "description": "Email client",
-  "version": "10.4.4756",
-  "url": "https://cdn-dist.emclient.com/dist/v10.4.4756_Mac/setup.pkg",
+  "version": "10.4.4842",
+  "url": "https://cdn-dist.emclient.com/dist/v10.4.4842_Mac/setup.pkg",
   "bundleId": "com.emclient.mail.client",
   "homepage": "https://www.emclient.com/",
   "fileName": "setup.pkg",
   "type": "pkg",
-  "sha": "26d87f31831799a60f0d3286a6b2af130df3e56bcce35f3457988730aacddd76",
+  "sha": "80962ac8377aa17770c56e074c480529836e0a7b9e9678a4e08b9007ee52b280",
   "category": "Communication",
   "publisher": "eM Client",
   "previous_version": "10.4.4756"

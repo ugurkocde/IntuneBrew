@@ -1,12 +1,12 @@
 {
   "name": "Discord",
   "description": "Voice and text chat software",
-  "version": "0.0.376",
-  "url": "https://dl.discordapp.net/apps/osx/0.0.376/Discord.dmg",
+  "version": "0.0.377",
+  "url": "https://dl.discordapp.net/apps/osx/0.0.377/Discord.dmg",
   "bundleId": "com.hnc.Discord",
   "homepage": "https://discord.com/",
   "fileName": "Discord.dmg",
-  "sha": "01b82f23c549d6e4461708252f59aa38b1129620256c541d3f881c25ffadd4f6",
+  "sha": "006170769a2b793c790fccdbec67f910220cde3bf84fa6755b40711d9d0d03ca",
   "changelog": "https://discord.com/tags/changelog",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:26:31Z",

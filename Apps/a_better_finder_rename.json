@@ -1,12 +1,12 @@
 {
   "name": "A Better Finder Rename",
   "description": "Renamer for files, music and photos",
-  "version": "12.23",
+  "version": "12.24",
   "url": "https://www.publicspace.net/download/ABFRX12.dmg",
   "bundleId": "net.publicspace.abfr12",
   "homepage": "https://www.publicspace.net/ABetterFinderRename/",
   "fileName": "ABFRX12.dmg",
-  "sha": "cf0b159e2600fc4b49318046dfac664cc3b9f433cdeb6db04cfb6ab43e113d03",
+  "sha": "b0cd04ebb0e89f9c0073ead55340e19a0d4db0c9d2d17062a1cb67ea75207f4c",
   "qa_info": {
     "qa_timestamp": "2025-05-12T08:52:11Z",
     "qa_result": "Installation successful and verified",
