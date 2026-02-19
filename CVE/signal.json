@@ -1,7 +1,7 @@
 {
   "app_name": "Signal",
   "app_key": "signal",
-  "last_updated": "2026-02-18",
+  "last_updated": "2026-02-19",
   "total_cves": 5,
   "summary": {
     "critical": 0,
