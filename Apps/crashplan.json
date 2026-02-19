@@ -1,13 +1,13 @@
 {
   "name": "CrashPlan",
   "description": "Backup and recovery software",
-  "version": "11.8.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/crashplan_11.8.0.pkg",
+  "version": "11.9.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/crashplan_11.9.0.pkg",
   "bundleId": "com.crashplan.desktop",
   "homepage": "https://www.crashplan.com/",
-  "fileName": "crashplan_11.8.0.pkg",
+  "fileName": "crashplan_11.9.0.pkg",
   "type": "pkg_in_dmg",
-  "sha": "9d3e3d3d2e663bee9ce4a17bde71bde0619e6e9632bbca45fde6888ba94ef318",
+  "sha": "a071fbac493b0ead370634869c955d8ba0aabe9bbaa1688167764179772ed1b7",
   "category": "Utilities",
   "publisher": "Code42 Software, Inc.",
   "previous_version": "11.8.0"

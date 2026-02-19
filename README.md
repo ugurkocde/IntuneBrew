@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1240-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -363,51 +363,40 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-18 00:44 UTC*
+*Last checked: 2026-02-19 00:42 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Lunatask | 2.1.21 | 2.1.23 |
-| Dockside | 1.9.56 | 1.9.58 |
-| Ente Auth | 4.4.15 | 4.4.17 |
-| A Better Finder Rename | 12.23 | 12.24 |
-| Pulsar | 1.131.0 | 1.131.1 |
-| Requestly | 26.2.6 | 26.2.17 |
-| Apifox | 2.8.8 | 2.8.9 |
-| NVIDIA GeForce NOW | 2.0.81.178 | 2.0.82.163 |
-| Grammarly Desktop | 1.152.2.0 | 1.153.0.0 |
-| BBEdit | 15.5.4 | 15.5.5 |
-| Discord | 0.0.376 | 0.0.377 |
-| Bruno | 3.1.0 | 3.1.1 |
-| Zed | 0.223.3 | 0.223.5 |
-| Craft | 3.3.8 | 3.3.9 |
-| Floorp browser | 12.10.3 | 12.10.4 |
-| Milanote | 3.18.76 | 3.18.77 |
-| Mullvad Browser | 15.0.4 | 15.0.6 |
-| Responsively | 1.17.1 | 1.18.0 |
-| Surfshark | 4.25.1 | 4.26.0 |
-| Tor Browser | 15.0.5 | 15.0.6 |
+| CotEditor | 6.2.2 | 6.2.3 |
+| Hazel | 6.1.1 | 6.1.2 |
+| Notion | 7.4.0 | 7.5.0 |
+| Dropbox | 241.4.4853 | 242.4.5815 |
+| ChatGPT | 1.2026.027 | 1.2026.041 |
+| Bruno | 3.1.1 | 3.1.2 |
+| Zed | 0.223.5 | 0.224.5 |
+| Windsurf | 1.9552.21 | 1.9552.24 |
+| Opera | 127.0.5778.64 | 127.0.5778.76 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Anytype | 0.54.0 | 0.54.1 |
-| Folx | 5.32 | 5.33 |
-| Loom | 0.333.0 | 0.334.2 |
-| Moom | 4.4.1 | 4.4.2 |
+| Anytype | 0.54.1 | 0.54.2 |
+| ElectronMail | 5.3.5 | 5.3.6 |
+| Loom | 0.334.2 | 0.334.3 |
 | Multi | 0.538.2 | 3.0.2 |
-| Pitch | 2.113.1 | 2.114.0 |
-| GraphPad Prism | 10.6.1 | 11.0.0 |
-| Claude Code | 2.1.44 | 2.1.45 |
-| Nota Gyazo GIF | 10.5.0 | 10.6.0 |
-| Microsoft Auto Update | 4.81.25121042 | 4.82.26020434 |
-| Session Manager Plugin for the AWS CLI | 1.2.764.0 | 1.2.779.0 |
-| eM Client | 10.4.4756 | 10.4.4842 |
-| Microsoft Excel | 16.106.26020821 | 16.106.26021521 |
-| Microsoft Outlook | 16.106.26020821 | 16.106.26021521 |
-| Microsoft PowerPoint | 16.106.26020821 | 16.106.26021521 |
-| Microsoft Word | 16.106.26020821 | 16.106.26021521 |
+| Museeks | 0.23.2 | 0.23.3 |
+| OpenAudible | 4.7.1 | 4.7.2 |
+| Shapr3D | 26.10.0.10376 | 26.20.0.10440 |
+| Claude Code | 2.1.45 | 2.1.47 |
+| ChatGPT Atlas | 1.2026.35.5 | 1.2026.42.5 |
+| AWS Client VPN | 5.3.3 | 5.3.4 |
+| Arq | 7.37 | 7.38 |
+| eM Client | 10.4.4842 | 10.4.4859 |
+| Salesforce CLI | 2.122.6 | 2.123.1 |
+| Adobe Acrobat Pro DC | 25.001.21208 | 25.001.21223 |
+| CrashPlan | 11.8.0 | 11.9.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

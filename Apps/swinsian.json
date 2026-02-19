@@ -1,14 +1,14 @@
 {
   "name": "Swinsian",
   "description": "Music player",
-  "version": "3.0.6",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/swinsian_3.0.6.pkg",
+  "version": "3.0.7",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/swinsian_3.0.7.pkg",
   "bundleId": "com.swinsian.Swinsian",
   "homepage": "https://swinsian.com/",
-  "fileName": "swinsian_3.0.6.pkg",
+  "fileName": "swinsian_3.0.7.pkg",
   "type": "app",
-  "previous_version": "3.0.6",
-  "sha": "af1551dcc49a47aea6024a754799a16e5258f66a75beb4b43fc4e03004f55b20",
+  "previous_version": "3.0.7",
+  "sha": "380a77a625545ed6dbd2e5608b6b667cc82fef2423af15b794756b51159c9718",
   "category": "Media",
   "publisher": "Swinsian"
 }
