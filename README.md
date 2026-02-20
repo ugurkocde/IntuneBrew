@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1240-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -364,39 +364,51 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-19 00:42 UTC*
+*Last checked: 2026-02-20 00:41 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| CotEditor | 6.2.2 | 6.2.3 |
-| Hazel | 6.1.1 | 6.1.2 |
-| Notion | 7.4.0 | 7.5.0 |
-| Dropbox | 241.4.4853 | 242.4.5815 |
-| ChatGPT | 1.2026.027 | 1.2026.041 |
-| Bruno | 3.1.1 | 3.1.2 |
-| Zed | 0.223.5 | 0.224.5 |
-| Windsurf | 1.9552.21 | 1.9552.24 |
-| Opera | 127.0.5778.64 | 127.0.5778.76 |
+| Clop | 2.11.5 | 2.11.6 |
+| Syncovery | 11.12.8 | 11.12.12 |
+| JetBrains Rider | 2025.3.2 | 2025.3.3 |
+| Yaak | 2026.2.1 | 2026.2.3 |
+| Slack | 4.48.92 | 4.48.95 |
+| Company Portal | 5.2511.0 | 5.2601.0 |
+| Suspicious Package | 4.6 | 4.6.1 |
+| Brave | 1.87.188.0 | 1.87.190.0 |
+| RStudio | 2026.01.0 | 2026.01.1 |
+| Termius | 9.37.0 | 9.37.1 |
+| Goland | 2025.3.2 | 2025.3.3 |
+| WebStorm | 2025.3.2 | 2025.3.3 |
+| iMazing | 3.4.0 | 3.5.0 |
+| Zed | 0.224.5 | 0.224.7 |
+| ProtonVPN | 6.3.0 | 6.4.0 |
+| CLion | 2025.3.2 | 2025.3.3 |
+| Remote Desktop Manager | 2025.3.9.2 | 2025.3.10.2 |
+| Path Finder | 11.0 | 11.1 |
+| Deezer | 7.1.70 | 7.1.80 |
+| FontBase | 2.25.10 | 2026.2.0 |
+| Opera GX | 127.0.5778.67 | 127.0.5778.75 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Anytype | 0.54.1 | 0.54.2 |
-| ElectronMail | 5.3.5 | 5.3.6 |
-| Loom | 0.334.2 | 0.334.3 |
+| Nektony App Cleaner & Uninstaller | 9.0.4 | 9.1 |
+| Default Folder X | 6.2.5 | 6.2.6 |
+| Free Download Manager | 6.33 | 6.33.1 |
+| Granola | 7.14.2 | 7.30.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| Museeks | 0.23.2 | 0.23.3 |
-| OpenAudible | 4.7.1 | 4.7.2 |
-| Shapr3D | 26.10.0.10376 | 26.20.0.10440 |
-| Claude Code | 2.1.45 | 2.1.47 |
-| ChatGPT Atlas | 1.2026.35.5 | 1.2026.42.5 |
-| AWS Client VPN | 5.3.3 | 5.3.4 |
-| Arq | 7.37 | 7.38 |
-| eM Client | 10.4.4842 | 10.4.4859 |
-| Salesforce CLI | 2.122.6 | 2.123.1 |
-| Adobe Acrobat Pro DC | 25.001.21208 | 25.001.21223 |
-| CrashPlan | 11.8.0 | 11.9.0 |
+| Museeks | 0.23.3 | 0.23.4 |
+| OpenAudible | 4.7.2 | 4.7.3 |
+| RustRover | 2025.3.3 | 2025.3.4 |
+| Session | 1.17.8 | 1.17.10 |
+| TREZOR Suite | 26.1.2 | 26.2.3 |
+| eM Client | 10.4.4859 | 10.4.4867 |
+| RingCentral | 25.2.30 | 26.1.10 |
+| Tableau Public | 2025.3.2 | 2025.3.3 |
+| Adobe Acrobat Reader | 25.001.21111 | 25.001.21223 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

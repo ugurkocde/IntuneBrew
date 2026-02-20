@@ -1,14 +1,14 @@
 {
   "name": "TomatoBar",
   "description": "Menu bar pomodoro timer",
-  "version": "3.6.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/tomatobar_3.6.0.pkg",
+  "version": "3.6.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tomatobar_3.6.1.pkg",
   "bundleId": "com.pomodoro.TomatoBar",
   "homepage": "https://github.com/ivoronin/TomatoBar",
-  "fileName": "tomatobar_3.6.0.pkg",
+  "fileName": "tomatobar_3.6.1.pkg",
   "type": "app",
-  "sha": "5784f100d685752bf0e4f45533d1c51f9e41c81778945fb9f879ab2af85a7512",
+  "sha": "de39ad96642cf2f8a2d7732ac23ba37d2ec1ca98814ee072139869e4d9daed77",
   "category": "Productivity",
   "publisher": "ivoronin",
-  "previous_version": "3.6.0"
+  "previous_version": "3.6.1"
 }

@@ -1,12 +1,12 @@
 {
   "name": "Deezer",
   "description": "Music player",
-  "version": "7.1.70",
-  "url": "https://www.deezer.com/desktop/download/artifact-darwin-x64-7.1.70",
+  "version": "7.1.80",
+  "url": "https://www.deezer.com/desktop/download/artifact-darwin-x64-7.1.80",
   "bundleId": "com.deezer.deezer-desktop",
   "homepage": "https://www.deezer.com/download",
-  "fileName": "Deezer-7.1.70.dmg",
-  "sha": "a079d590b040d35c2977a35f6e3dbffb1367b0d62a310a757578846ca43ff74f",
+  "fileName": "Deezer-7.1.80.dmg",
+  "sha": "bf3783fcaa60f3a44091745907d730b6be31ec1503c3c6ae6a9a0b1a7e683ea2",
   "category": "Media",
   "publisher": "Deezer",
   "previous_version": "7.1.70"
