@@ -1,13 +1,13 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-02-19",
-  "total_cves": 951,
+  "last_updated": "2026-02-20",
+  "total_cves": 952,
   "summary": {
     "critical": 17,
     "high": 589,
     "medium": 322,
-    "low": 23,
+    "low": 24,
     "kev_count": 18
   },
   "vulnerabilities": [
@@ -19498,6 +19498,27 @@
       "kev_ransomware_use": null,
       "vendor": "microsoft",
       "product": "edge"
+    },
+    {
+      "cve_id": "CVE-2026-0102",
+      "published_date": "2026-02-17",
+      "last_modified_date": "2026-02-19",
+      "description": "Under specific conditions, a malicious webpage may trigger autofill population after two consecutive taps, potentially without clear or intentional user consent. This could result in disclosure of stored autofill data such as addresses, email, or phone number metadata.",
+      "base_score": 3.1,
+      "severity": "LOW",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:L/I:N/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "145.0.3800.58",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "145.0.3800.58",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "microsoft",
+      "product": "edge_chromium"
     },
     {
       "cve_id": "CVE-2025-65046",
