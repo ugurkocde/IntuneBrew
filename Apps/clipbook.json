@@ -1,12 +1,12 @@
 {
   "name": "ClipBook",
   "description": "Clipboard history app",
-  "version": "1.33.0",
-  "url": "https://f005.backblazeb2.com/file/clipbook/ClipBook-1.33.0-arm64.dmg",
+  "version": "1.33.1",
+  "url": "https://f005.backblazeb2.com/file/clipbook/ClipBook-1.33.1-arm64.dmg",
   "bundleId": "com.ikryanov.clipbook",
   "homepage": "https://clipbook.app/",
-  "fileName": "ClipBook-1.33.0-arm64.dmg",
-  "sha": "b8ddec4532924178ce5bce8fa01d7582725d8b642679b8951f59f3607b1d8fbb",
+  "fileName": "ClipBook-1.33.1-arm64.dmg",
+  "sha": "1637fec74d7f87b34466d7b3d6ecc62ddf4e2b3299ee43006fe05d8ebdbd1d48",
   "category": "Productivity",
   "publisher": "ClipBook",
   "previous_version": "1.33.0"

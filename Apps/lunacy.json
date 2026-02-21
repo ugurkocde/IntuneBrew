@@ -1,12 +1,12 @@
 {
   "name": "Lunacy",
   "description": "Graphic design software",
-  "version": "12.2",
-  "url": "https://lcdn.icons8.com/setup/Lunacy_12.2.dmg",
+  "version": "12.3",
+  "url": "https://lcdn.icons8.com/setup/Lunacy_12.3.dmg",
   "bundleId": "com.icons8.Lunacy",
   "homepage": "https://icons8.com/lunacy",
-  "fileName": "Lunacy_12.2.dmg",
-  "sha": "92d638bfdea954f3ab947bc691456e180cb0c2cab145362dccbe7780e6a1e153",
+  "fileName": "Lunacy_12.3.dmg",
+  "sha": "a997645000045d023a7b87786d56da5555a3fffa685780d97f6102d118b73c89",
   "category": "Design",
   "publisher": "Icons8",
   "previous_version": "12.2"

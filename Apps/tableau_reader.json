@@ -1,13 +1,13 @@
 {
   "name": "Tableau Reader",
   "description": "Open and interact with data visualisations built in Tableau Desktop",
-  "version": "2025.3.2",
-  "url": "https://downloads.tableau.com/esdalt/2025.3.2/TableauReader-2025-3-2-arm64.pkg",
+  "version": "2025.3.3",
+  "url": "https://downloads.tableau.com/esdalt/2025.3.3/TableauReader-2025-3-3-arm64.pkg",
   "bundleId": "com.tableausoftware.tableaureader",
   "homepage": "https://www.tableau.com/products/reader",
-  "fileName": "TableauReader-2025-3-2-arm64.pkg",
+  "fileName": "TableauReader-2025-3-3-arm64.pkg",
   "type": "pkg",
-  "sha": "a5ea5e45df04e85f27402d585775dec5ee1d0b34926713b7c806e8adb800400d",
+  "sha": "184114ae8f1edccf5f78a12586e8757fad19dcfa2bfb38d42adc53c4df15db09",
   "category": "Productivity",
   "publisher": "Tableau Software, Inc.",
   "previous_version": "2025.3.2"

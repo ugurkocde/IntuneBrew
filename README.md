@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1240-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -365,50 +365,53 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-20 00:41 UTC*
+*Last checked: 2026-02-21 00:43 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Clop | 2.11.5 | 2.11.6 |
-| Syncovery | 11.12.8 | 11.12.12 |
-| JetBrains Rider | 2025.3.2 | 2025.3.3 |
-| Yaak | 2026.2.1 | 2026.2.3 |
-| Slack | 4.48.92 | 4.48.95 |
-| Company Portal | 5.2511.0 | 5.2601.0 |
-| Suspicious Package | 4.6 | 4.6.1 |
-| Brave | 1.87.188.0 | 1.87.190.0 |
-| RStudio | 2026.01.0 | 2026.01.1 |
-| Termius | 9.37.0 | 9.37.1 |
-| Goland | 2025.3.2 | 2025.3.3 |
-| WebStorm | 2025.3.2 | 2025.3.3 |
-| iMazing | 3.4.0 | 3.5.0 |
-| Zed | 0.224.5 | 0.224.7 |
-| ProtonVPN | 6.3.0 | 6.4.0 |
-| CLion | 2025.3.2 | 2025.3.3 |
-| Remote Desktop Manager | 2025.3.9.2 | 2025.3.10.2 |
-| Path Finder | 11.0 | 11.1 |
-| Deezer | 7.1.70 | 7.1.80 |
-| FontBase | 2.25.10 | 2026.2.0 |
-| Opera GX | 127.0.5778.67 | 127.0.5778.75 |
+| Rive | 0.8.4257 | 0.8.4303 |
+| Requestly | 26.2.17 | 26.2.20 |
+| Yaak | 2026.2.3 | 2026.2.4 |
+| QQ | 6.9.88 | 6.9.89 |
+| JetBrains PhpStorm | 2025.3.2 | 2025.3.3 |
+| Bitwarden | 2026.1.0 | 2026.1.1 |
+| Notion | 7.5.0 | 7.5.2 |
+| Krisp | 3.10.7 | 3.10.9 |
+| draw.io Desktop | 29.3.6 | 29.5.1 |
+| Bruno | 3.1.2 | 3.1.3 |
+| Zed | 0.224.7 | 0.224.10 |
+| Microsoft Edge | 145.0.3800.58 | 145.0.3800.70 |
+| calibre | 9.2.1 | 9.3.0 |
+| VSCodium | 1.109.41146 | 1.109.51242 |
+| Transmission | 4.1.0 | 4.1.1 |
+| LM Studio | 0.4.2 | 0.4.3 |
+| IntelliJ IDEA Ultimate | 2025.3.2 | 2025.3.3 |
+| Warp | 0.2026.02.11.08.23.stable | 0.2026.02.18.08.22.stable |
+| Lunacy | 12.2 | 12.3 |
+| Mimestream | 1.9.11 | 1.9.13 |
+| ocenaudio | 3.17.1 | 3.17.2 |
+| PyCharm | 2025.3.2.1 | 2025.3.3 |
+| RubyMine | 2025.3.2 | 2025.3.3 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Nektony App Cleaner & Uninstaller | 9.0.4 | 9.1 |
-| Default Folder X | 6.2.5 | 6.2.6 |
-| Free Download Manager | 6.33 | 6.33.1 |
-| Granola | 7.14.2 | 7.30.1 |
+| 4K YouTube to MP3 | 26.0.4 | 26.0.5 |
+| Adobe DNG Converter | 18.1.1 | 18.2 |
+| Bitrix24 | 20.0.28.90 | 21.0.28.90 |
+| ClipBook | 1.33.0 | 1.33.1 |
+| GDevelop | 5.6.257 | 5.6.258 |
+| Loom | 0.334.3 | 0.335.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| Museeks | 0.23.3 | 0.23.4 |
-| OpenAudible | 4.7.2 | 4.7.3 |
-| RustRover | 2025.3.3 | 2025.3.4 |
-| Session | 1.17.8 | 1.17.10 |
-| TREZOR Suite | 26.1.2 | 26.2.3 |
-| eM Client | 10.4.4859 | 10.4.4867 |
-| RingCentral | 25.2.30 | 26.1.10 |
-| Tableau Public | 2025.3.2 | 2025.3.3 |
-| Adobe Acrobat Reader | 25.001.21111 | 25.001.21223 |
+| Nextcloud Talk Desktop | 2.0.6 | 2.1.1 |
+| Taskade | 4.6.13 | 4.6.14 |
+| VueScan | 9.8.51 | 9.8.52 |
+| Claude Code | 2.1.47 | 2.1.49 |
+| Arq | 7.38 | 7.38.1 |
+| Tableau Reader | 2025.3.2 | 2025.3.3 |
+| Tableau Desktop | 2025.3.2 | 2025.3.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
