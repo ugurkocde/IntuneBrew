@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Visual Studio Code",
   "app_key": "microsoft_visual_studio_code",
-  "last_updated": "2026-02-20",
+  "last_updated": "2026-02-21",
   "total_cves": 52,
   "summary": {
     "critical": 0,
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2025-55319",
       "published_date": "2025-09-12",
-      "last_modified_date": "2025-09-24",
+      "last_modified_date": "2026-02-20",
       "description": "Ai command injection in Agentic AI and Visual Studio Code allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",

@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-02-20",
+  "last_updated": "2026-02-21",
   "total_cves": 3801,
   "summary": {
     "critical": 146,
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2026-2441",
       "published_date": "2026-02-13",
-      "last_modified_date": "2026-02-18",
+      "last_modified_date": "2026-02-20",
       "description": "Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -65387,7 +65387,7 @@
     {
       "cve_id": "CVE-2013-6662",
       "published_date": "2017-04-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-02-20",
       "description": "Google Chrome caches TLS sessions before certificate validation occurs.",
       "base_score": 6.5,
       "severity": "MEDIUM",
