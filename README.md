@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1240-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -366,52 +366,29 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-21 00:43 UTC*
+*Last checked: 2026-02-22 00:42 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Rive | 0.8.4257 | 0.8.4303 |
-| Requestly | 26.2.17 | 26.2.20 |
-| Yaak | 2026.2.3 | 2026.2.4 |
-| QQ | 6.9.88 | 6.9.89 |
-| JetBrains PhpStorm | 2025.3.2 | 2025.3.3 |
-| Bitwarden | 2026.1.0 | 2026.1.1 |
-| Notion | 7.5.0 | 7.5.2 |
-| Krisp | 3.10.7 | 3.10.9 |
-| draw.io Desktop | 29.3.6 | 29.5.1 |
-| Bruno | 3.1.2 | 3.1.3 |
-| Zed | 0.224.7 | 0.224.10 |
-| Microsoft Edge | 145.0.3800.58 | 145.0.3800.70 |
-| calibre | 9.2.1 | 9.3.0 |
-| VSCodium | 1.109.41146 | 1.109.51242 |
-| Transmission | 4.1.0 | 4.1.1 |
-| LM Studio | 0.4.2 | 0.4.3 |
-| IntelliJ IDEA Ultimate | 2025.3.2 | 2025.3.3 |
-| Warp | 0.2026.02.11.08.23.stable | 0.2026.02.18.08.22.stable |
-| Lunacy | 12.2 | 12.3 |
-| Mimestream | 1.9.11 | 1.9.13 |
-| ocenaudio | 3.17.1 | 3.17.2 |
-| PyCharm | 2025.3.2.1 | 2025.3.3 |
-| RubyMine | 2025.3.2 | 2025.3.3 |
+| Dockside | 1.9.58 | 1.9.59 |
+| Apifox | 2.8.9 | 2.8.10 |
+| Proxyman | 6.5.0 | 6.6.0 |
+| Google Chrome | 145.0.7632.76 | 145.0.7632.110 |
+| Termius | 9.37.1 | 9.37.2 |
+| Zed | 0.224.10 | 0.224.11 |
+| calibre | 9.3.0 | 9.3.1 |
+| Windsurf | 1.9552.24 | 1.9552.25 |
+| BoltAI 2 | 2.7.0 | 2.8.0 |
+| Apidog | 2.8.9 | 2.8.10 |
+| Zettlr | 4.1.1 | 4.2.0 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| 4K YouTube to MP3 | 26.0.4 | 26.0.5 |
-| Adobe DNG Converter | 18.1.1 | 18.2 |
-| Bitrix24 | 20.0.28.90 | 21.0.28.90 |
-| ClipBook | 1.33.0 | 1.33.1 |
-| GDevelop | 5.6.257 | 5.6.258 |
-| Loom | 0.334.3 | 0.335.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| Nextcloud Talk Desktop | 2.0.6 | 2.1.1 |
-| Taskade | 4.6.13 | 4.6.14 |
-| VueScan | 9.8.51 | 9.8.52 |
-| Claude Code | 2.1.47 | 2.1.49 |
-| Arq | 7.38 | 7.38.1 |
-| Tableau Reader | 2025.3.2 | 2025.3.3 |
-| Tableau Desktop | 2025.3.2 | 2025.3.3 |
+| Claude Code | 2.1.49 | 2.1.50 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
