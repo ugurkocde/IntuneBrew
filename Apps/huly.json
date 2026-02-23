@@ -1,14 +1,14 @@
 {
   "name": "Huly",
   "description": "All-in-One Project Management Platform",
-  "version": "0.7.353",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/huly_0.7.353.pkg",
+  "version": "0.7.375",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/huly_0.7.375.pkg",
   "bundleId": "hc.hcengineering.Huly",
   "homepage": "https://huly.io/",
-  "fileName": "huly_0.7.353.pkg",
+  "fileName": "huly_0.7.375.pkg",
   "type": "app",
-  "sha": "4d1b085763bb3aa9ad7c6d8a7d831d6266e19f9e546eb7220cb1f1222e01607a",
-  "previous_version": "0.7.353",
+  "sha": "e7961ebe2a40c0207a5eed31880c5cab86bb56bdeba2d882709e0747cc3ba6c4",
+  "previous_version": "0.7.375",
   "category": "Productivity",
   "publisher": "Huly"
 }
