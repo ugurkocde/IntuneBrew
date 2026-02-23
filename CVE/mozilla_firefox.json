@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-02-22",
+  "last_updated": "2026-02-23",
   "total_cves": 2978,
   "summary": {
     "critical": 317,
@@ -6902,7 +6902,7 @@
     {
       "cve_id": "CVE-2026-2447",
       "published_date": "2026-02-16",
-      "last_modified_date": "2026-02-18",
+      "last_modified_date": "2026-02-22",
       "description": "Heap buffer overflow in libvpx. This vulnerability affects Firefox < 147.0.4, Firefox ESR < 140.7.1, Firefox ESR < 115.32.1, Thunderbird < 140.7.2, and Thunderbird < 147.0.2.",
       "base_score": 8.8,
       "severity": "HIGH",
