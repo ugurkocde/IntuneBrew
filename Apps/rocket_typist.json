@@ -1,12 +1,12 @@
 {
   "name": "Rocket Typist",
   "description": "Text expander for common phrases",
-  "version": "3.3",
+  "version": "3.3.1",
   "url": "https://witt-software.com/downloads/rockettypist/Rocket%20Typist.dmg",
   "bundleId": "com.witt-software.Rocket-Typist-2",
   "homepage": "https://witt-software.com/rockettypist/",
   "fileName": "Rocket Typist.dmg",
-  "sha": "fdbc89c26645e2c594bf0c8e7c2e355f1681f6d7fce8185f5ce848ae35f9cb21",
+  "sha": "3acf0ebd95cd9bde88c032bdff6801c78f1d579c9714b12e6d0c848fbdd18f80",
   "category": "Productivity",
   "publisher": "Witt Software",
   "previous_version": "3.3"

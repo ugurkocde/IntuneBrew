@@ -1,12 +1,12 @@
 {
   "name": "Rectangle Pro",
   "description": "Window snapping tool",
-  "version": "3.68",
-  "url": "https://rectangleapp.com/pro/downloads/Rectangle%20Pro%203.68.dmg",
+  "version": "3.69",
+  "url": "https://rectangleapp.com/pro/downloads/Rectangle%20Pro%203.69.dmg",
   "bundleId": "com.knollsoft.Hookshot",
   "homepage": "https://rectangleapp.com/pro",
-  "fileName": "Rectangle Pro 3.68.dmg",
-  "sha": "f2d4bdbc7e7903887babe78c0c62a895c2baa3c1db8005dc3e62e5cdb2375bc1",
+  "fileName": "Rectangle Pro 3.69.dmg",
+  "sha": "eb6c3fdf234e4c1228f15f875311439b2a977d8462043d88b7d0b0fe8441cc80",
   "category": "Productivity",
   "publisher": "The Rectangle Team",
   "previous_version": "3.68"

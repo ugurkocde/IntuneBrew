@@ -1,14 +1,14 @@
 {
   "name": "Sparkle",
   "description": "Software update framework for Cocoa developers",
-  "version": "2.8.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sparkle_2.8.1.pkg",
+  "version": "2.9.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sparkle_2.9.0.pkg",
   "bundleId": "org.sparkle-project.SparkleTestApp",
   "homepage": "https://sparkle-project.org/",
-  "fileName": "sparkle_2.8.1.pkg",
+  "fileName": "sparkle_2.9.0.pkg",
   "type": "app",
-  "sha": "380b58eeab1181cef26ee5ce8326b18389550b01459805a8a625cd6da3d36542",
+  "sha": "da11669118a7c5265f95c687d0f7adbc7b992857498ea3d2fa729536e889dba8",
   "category": "Developer Tools",
   "publisher": "The Sparkle Project",
-  "previous_version": "2.8.1"
+  "previous_version": "2.9.0"
 }
