@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-02-23T00:55:47.507Z",
+  "last_full_scan": "2026-02-23T12:05:01.647Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8882,6 +8882,19 @@
       "status": "verified",
       "source": "file",
       "name": "WiFiman Desktop"
+    },
+    "kiro": {
+      "last_checked": "2026-02-23T12:05:01.634Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved",
+        "openai_alternative"
+      ],
+      "name": "kiro"
     }
   }
 }
