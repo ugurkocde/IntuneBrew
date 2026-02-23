@@ -25,14 +25,6 @@ elif [ -f "/Applications/Sparkle Test App.app" ]; then
     rm -f "/Applications/Sparkle Test App.app" 2>/dev/null || true
 fi
 
-# Remove /usr/local/bin/sparkle.app/Contents/MacOS/sparkle
-echo "Removing /usr/local/bin/sparkle.app/Contents/MacOS/sparkle..."
-if [ -d "/usr/local/bin/sparkle.app/Contents/MacOS/sparkle" ]; then
-    rm -rf "/usr/local/bin/sparkle.app/Contents/MacOS/sparkle" 2>/dev/null || true
-elif [ -f "/usr/local/bin/sparkle.app/Contents/MacOS/sparkle" ]; then
-    rm -f "/usr/local/bin/sparkle.app/Contents/MacOS/sparkle" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Application Scripts/org.sparkle-project.Downloader
 echo "Removing $HOME/Library/Application Scripts/org.sparkle-project.Downloader..."
 if [ -d "$HOME/Library/Application Scripts/org.sparkle-project.Downloader" ]; then
