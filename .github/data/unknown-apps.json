@@ -1,14 +1,1 @@
-[
-  {
-    "key": "kiro",
-    "name": "kiro",
-    "currentBundleId": null,
-    "methods_tried": [
-      "mac_app_store",
-      "pkg_inspection",
-      "github_search",
-      "openai_improved",
-      "openai_alternative"
-    ]
-  }
-]
+[]
