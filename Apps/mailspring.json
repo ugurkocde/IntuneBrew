@@ -1,14 +1,14 @@
 {
   "name": "Mailspring",
   "description": "Fork of Nylas Mail",
-  "version": "1.17.4",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/mailspring_1.17.4.pkg",
+  "version": "1.18.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/mailspring_1.18.0.pkg",
   "bundleId": "com.mailspring.mailspring",
   "homepage": "https://getmailspring.com/",
-  "fileName": "mailspring_1.17.4.pkg",
+  "fileName": "mailspring_1.18.0.pkg",
   "type": "app",
-  "sha": "798a91060434a96b2c6978ea0c4d3a64fb9a46995c470389a69ede9795e901f1",
+  "sha": "51129d659d5ba9e07c6b87485b2c966c93fec1aabecc4f1dc5693f353a905870",
   "category": "Productivity",
   "publisher": "The Mailspring Team",
-  "previous_version": "1.17.4"
+  "previous_version": "1.18.0"
 }

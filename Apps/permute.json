@@ -1,12 +1,12 @@
 {
   "name": "Permute",
   "description": "Converts and edits video, audio or image files",
-  "version": "3.14.6",
-  "url": "https://software.charliemonroe.net/trial/permute/v3/Permute_3_2895.dmg",
+  "version": "3.14.7",
+  "url": "https://software.charliemonroe.net/trial/permute/v3/Permute_3_4012.dmg",
   "bundleId": "com.charliemonroe.Permute-3",
   "homepage": "https://software.charliemonroe.net/permute/",
-  "fileName": "Permute_3_2895.dmg",
-  "sha": "1149f517fba1ba87fd153c48c2bbd6f24802c1c9bb12d4d14339b0958988db81",
+  "fileName": "Permute_3_4012.dmg",
+  "sha": "b1f45fdb2f8036f85eaec4eaa617887fad982fd5f810c8cc7f8e5f9e5d00b87d",
   "category": "Media",
   "publisher": "Charlie Monroe",
   "previous_version": "3.14.6"
