@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-02-23",
+  "last_updated": "2026-02-24",
   "total_cves": 3801,
   "summary": {
     "critical": 146,
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2026-2441",
       "published_date": "2026-02-13",
-      "last_modified_date": "2026-02-20",
+      "last_modified_date": "2026-02-23",
       "description": "Use after free in CSS in Google Chrome prior to 145.0.7632.75 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -56966,8 +56966,8 @@
     {
       "cve_id": "CVE-2020-16873",
       "published_date": "2020-09-11",
-      "last_modified_date": "2024-11-21",
-      "description": "<p>A spoofing vulnerability manifests in Microsoft Xamarin.Forms due to the default settings on Android WebView version prior to 83.0.4103.106. This vulnerability could allow an attacker to execute arbitrary Javascript code on a target system.</p>\n<p>For the attack to be successful, the targeted user would need to browse to a malicious website or a website serving the malicious code through Xamarin.Forms.</p>\n<p>The security update addresses this vulnerability by preventing the malicious Javascript from running in the WebView.</p>\n",
+      "last_modified_date": "2026-02-23",
+      "description": "<p>A spoofing vulnerability manifests in Microsoft Xamarin.Forms due to the default settings on Android WebView version prior to 83.0.4103.106. This vulnerability could allow an attacker to execute arbitrary Javascript code on a target system.</p>\n<p>For the attack to be successful, the targeted user would need to browse to a malicious website or a website serving the malicious code through Xamarin.Forms.</p>\n<p>The security update addresses this vulnerability by preventing the malicious Javascript from running in the WebView.</p>",
       "base_score": 4.7,
       "severity": "MEDIUM",
       "cvss_version": "3.1",
@@ -65387,12 +65387,12 @@
     {
       "cve_id": "CVE-2013-6662",
       "published_date": "2017-04-13",
-      "last_modified_date": "2026-02-20",
+      "last_modified_date": "2026-02-23",
       "description": "Google Chrome caches TLS sessions before certificate validation occurs.",
       "base_score": 6.5,
       "severity": "MEDIUM",
-      "cvss_version": "3.0",
-      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:H/A:N",
       "affected_version_start": null,
       "affected_version_start_type": null,
       "affected_version_end": null,
