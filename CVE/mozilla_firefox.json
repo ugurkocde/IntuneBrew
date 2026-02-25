@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-02-24",
+  "last_updated": "2026-02-25",
   "total_cves": 2978,
   "summary": {
     "critical": 317,

@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Auto Update",
   "app_key": "microsoft_auto_update",
-  "last_updated": "2026-02-24",
+  "last_updated": "2026-02-25",
   "total_cves": 8,
   "summary": {
     "critical": 0,
