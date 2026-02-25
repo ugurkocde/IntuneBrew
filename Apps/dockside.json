@@ -1,12 +1,12 @@
 {
   "name": "Dockside",
   "description": "Dock utility",
-  "version": "2.0.0",
-  "url": "https://github.com/PrajwalSD/Dockside/releases/download/v2.0.0/Dockside.dmg",
+  "version": "2.0.1",
+  "url": "https://github.com/PrajwalSD/Dockside/releases/download/v2.0.1/Dockside.dmg",
   "bundleId": "com.hachipoo.Dockside",
   "homepage": "https://hachipoo.com/dockside-app",
   "fileName": "Dockside.dmg",
-  "sha": "951921a02a3dee8f533e2aa4fcc04183a6459b7ec6ed2dfb58c6c6d662166e94",
+  "sha": "dee752b6fdb8ba410912e69c7f54072e396e2a1ada93170cd281952454a73b4f",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:27:11Z",
     "qa_result": "Installation successful and verified",

@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -370,33 +370,48 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-24 00:41 UTC*
+*Last checked: 2026-02-25 01:00 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| NordPass | 7.3.14 | 7.4.8 |
-| NetBeans IDE | 28 | 29 |
-| Discord | 0.0.377 | 0.0.378 |
-| DuckDuckGo | 1.177.0 | 1.178.1 |
-| LM Studio | 0.4.3 | 0.4.4 |
-| BoltAI 2 | 2.8.0 | 2.8.1 |
-| DeepL | 26.1.33715377 | 26.2.13897266 |
-| ExpanDrive | 2026.02.09.821 | 2026.02.12.823 |
-| Permute | 3.14.6 | 3.14.7 |
+| Mozilla Firefox ESR | 140.7.1 | 140.8.0 |
+| Dockside | 2.0.0 | 2.0.1 |
+| A Better Finder Rename | 12.24 | 12.25 |
+| Mozilla Thunderbird | 147.0.2 | 148.0 |
+| OmniOutliner | 6.0.2 | 6.0.3 |
+| Raindrop.io | 5.7.0 | 5.7.3 |
+| LibreWolf | 147.0.4 | 148.0 |
+| Downie | 4.11.12 | 4.11.13 |
+| Google Chrome | 145.0.7632.110 | 145.0.7632.117 |
+| Mozilla Firefox | 147.0.4 | 148.0 |
+| Notion | 7.5.2 | 7.6.1 |
+| Krisp | 3.10.9 | 3.10.10 |
+| DuckDuckGo | 1.178.1 | 1.178.2 |
+| OneDrive | 25.243.1211.0001 | 26.017.0126.0002 |
+| Amazon Chime | 5.23.22475 | 5.23.22488 |
+| DbGate | 7.0.6 | 7.1.0 |
+| Milanote | 3.18.77 | 3.18.80 |
+| Mimestream | 1.9.13 | 1.9.14 |
+| Tor Browser | 15.0.6 | 15.0.7 |
+| Waterfox | 6.6.8 | 6.6.9 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Deckset | 2.0.47 | 2.0.48 |
-| BlueWallet | 7.2.0 | 7.2.6 |
-| jamovi | 2.7.17.0 | 2.7.18.0 |
-| LyX | 2.4.4 | 2.5.0 |
+| Fing Desktop | 3.9.3 | 3.10.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Riverside Studio | 1.19.3 | 1.20.0 |
-| DisplayLink USB Graphics Software | 15.0 | 15.1 |
-| Enpass | 6.11.17.2135 | 6.11.19.2205 |
-| ExpressVPN | 12.1.0.12128 | 12.1.0.12141 |
+| Pitch | 2.114.0 | 2.115.0 |
+| Session | 1.17.10 | 1.17.12 |
+| Shapr3D | 26.20.0.10440 | 26.22.0.10470 |
+| Tuta Mail | 327.260210.0 | 328.260224.0 |
+| Claude Code | 2.1.50 | 2.1.52 |
+| kiro | 0.10.16 | 0.10.32 |
+| Cloudflare WARP | 2025.10.186.0 | 2026.1.150.0 |
+| Microsoft Outlook | 16.106.26021521 | 16.106.26022219 |
+| swiftDialog | 2.5.6 | 3.0.0 |
+| TeamViewer | 15.74.6 | 15.75.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

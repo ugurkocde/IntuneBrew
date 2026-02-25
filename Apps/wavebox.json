@@ -1,14 +1,14 @@
 {
   "name": "Wavebox",
   "description": "Web browser",
-  "version": "10.145.17.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/wavebox_10.145.17.2.pkg",
+  "version": "10.145.41.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/wavebox_10.145.41.2.pkg",
   "bundleId": "io.wavebox.wavebox",
   "homepage": "https://wavebox.io/",
-  "fileName": "wavebox_10.145.17.2.pkg",
+  "fileName": "wavebox_10.145.41.2.pkg",
   "type": "app",
-  "sha": "ce3c2f8613f8ecdaef935d68ac069f0798953d0948b8031f870aa093f215df83",
+  "sha": "5f36c85fc59120e2c93868fd48280667fe00632ee7b729d158e3d9aec6b4248d",
   "category": "Browsers",
   "publisher": "Wavebox Ltd",
-  "previous_version": "10.145.17.2"
+  "previous_version": "10.145.41.2"
 }

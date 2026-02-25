@@ -1,12 +1,12 @@
 {
   "name": "Fing Desktop",
   "description": "Network scanner",
-  "version": "3.9.3",
-  "url": "https://get.fing.com/fing-desktop-releases/mac/Fing-3.9.3.dmg",
+  "version": "3.10.0",
+  "url": "https://get.fing.com/fing-desktop-releases/mac/Fing-3.10.0.dmg",
   "bundleId": "com.fing.service",
   "homepage": "https://www.fing.com/products/fing-desktop",
-  "fileName": "Fing-3.9.3.dmg",
-  "sha": "77df6bab228e60dc4d14a690b2b97d46041dd047d1c86863fd5ce4fdcee59643",
+  "fileName": "Fing-3.10.0.dmg",
+  "sha": "542aa8cb7ed27c0f9b14a668dfe936291ce4491d304e42cf6b35efe66260d80c",
   "category": "Utilities",
   "publisher": "Fing Limited",
   "previous_version": "3.9.3"

@@ -1,12 +1,12 @@
 {
   "name": "Tor Browser",
   "description": "Web browser focusing on security",
-  "version": "15.0.6",
-  "url": "https://www.torproject.org/dist/torbrowser/15.0.6/tor-browser-macos-15.0.6.dmg",
+  "version": "15.0.7",
+  "url": "https://www.torproject.org/dist/torbrowser/15.0.7/tor-browser-macos-15.0.7.dmg",
   "bundleId": "org.torproject.torbrowser",
   "homepage": "https://www.torproject.org/",
-  "fileName": "tor-browser-macos-15.0.6.dmg",
-  "sha": "469b4bb0441ee7be57c08d00a1d52bf6a04e9b591f5f4deb06b55e4234050fc5",
+  "fileName": "tor-browser-macos-15.0.7.dmg",
+  "sha": "29852c4f3aa3b77bccdf359c5a22cf3ffa49ad1828b3967fb722134ffdc29e20",
   "category": "Browsers",
   "publisher": "The Tor Project",
   "previous_version": "15.0.6"
