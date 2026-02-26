@@ -1,7 +1,7 @@
 {
   "app_name": "Mattermost",
   "app_key": "mattermost",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-02-26",
   "total_cves": 76,
   "summary": {
     "critical": 1,

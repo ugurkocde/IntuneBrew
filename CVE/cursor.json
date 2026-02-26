@@ -1,7 +1,7 @@
 {
   "app_name": "Cursor",
   "app_key": "cursor",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-02-26",
   "total_cves": 18,
   "summary": {
     "critical": 2,

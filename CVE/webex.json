@@ -1,7 +1,7 @@
 {
   "app_name": "Webex",
   "app_key": "webex",
-  "last_updated": "2026-02-25",
+  "last_updated": "2026-02-26",
   "total_cves": 77,
   "summary": {
     "critical": 8,
