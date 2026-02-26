@@ -1,12 +1,12 @@
 {
   "name": "OpenAudible",
   "description": "Audiobook manager for Audible users",
-  "version": "4.7.3",
-  "url": "https://github.com/openaudible/openaudible/releases/download/v4.7.3/OpenAudible_4.7.3.dmg",
+  "version": "4.7.4",
+  "url": "https://github.com/openaudible/openaudible/releases/download/v4.7.4/OpenAudible_4.7.4.dmg",
   "bundleId": "org.openaudible.OpenAudible",
   "homepage": "https://openaudible.org/",
-  "fileName": "OpenAudible_4.7.3.dmg",
-  "sha": "d7d3db86763015c92a4042c305130a6ec52bedf7f8cd92cb6a04246369380ec3",
+  "fileName": "OpenAudible_4.7.4.dmg",
+  "sha": "adfd3fa198f3dff417e76d21d65a349fad4a62dceac67ddd5b95c9d47df829b0",
   "category": "Media",
   "publisher": "OpenAudible",
   "previous_version": "4.7.3"

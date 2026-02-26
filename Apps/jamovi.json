@@ -1,12 +1,12 @@
 {
   "name": "jamovi",
   "description": "Statistical software",
-  "version": "2.7.18.0",
-  "url": "https://www.jamovi.org/downloads/jamovi-2.7.18.0-macos-arm64.dmg",
+  "version": "2.7.19.0",
+  "url": "https://www.jamovi.org/downloads/jamovi-2.7.19.0-macos-arm64.dmg",
   "bundleId": "org.jamovi.jamovi",
   "homepage": "https://www.jamovi.org/",
-  "fileName": "jamovi-2.7.18.0-macos-arm64.dmg",
-  "sha": "0757defb5a5b03281f67ec95ffea3fcd3c20ffa2e2313ed348d5c380e10c02e3",
+  "fileName": "jamovi-2.7.19.0-macos-arm64.dmg",
+  "sha": "9ff282b22878bd7d557debfbbdd943bad209ccbd9177f709baee836910c11ae8",
   "category": "Productivity",
   "publisher": "jamovi Foundation",
   "previous_version": "2.7.18.0"

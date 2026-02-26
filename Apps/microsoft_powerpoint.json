@@ -1,13 +1,13 @@
 {
   "name": "Microsoft PowerPoint",
   "description": "Presentation software",
-  "version": "16.106.26021521",
-  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_PowerPoint_16.106.26021521_Installer.pkg",
+  "version": "16.106.26022219",
+  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_PowerPoint_16.106.26022219_Installer.pkg",
   "bundleId": "com.microsoft.package.Microsoft_PowerPoint.app",
   "homepage": "https://www.microsoft.com/en-US/microsoft-365/powerpoint",
-  "fileName": "Microsoft_PowerPoint_16.106.26021521_Installer.pkg",
+  "fileName": "Microsoft_PowerPoint_16.106.26022219_Installer.pkg",
   "type": "pkg",
-  "sha": "a85e3a3ce4247a061471c9110288cc6640a85e1982c13e8cd0281b18be3ba749",
+  "sha": "ee448122303b742577ec3f3636974f56e8bdfedb992637015ceadce2a96584c3",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
   "previous_version": "16.106.26021521"

@@ -1,13 +1,13 @@
 {
   "name": "Microsoft Excel",
   "description": "Spreadsheet software",
-  "version": "16.106.26021521",
-  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.106.26021521_Installer.pkg",
+  "version": "16.106.26022219",
+  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.106.26022219_Installer.pkg",
   "bundleId": "com.microsoft.package.Microsoft_Excel.app",
   "homepage": "https://www.microsoft.com/en-US/microsoft-365/excel",
-  "fileName": "Microsoft_Excel_16.106.26021521_Installer.pkg",
+  "fileName": "Microsoft_Excel_16.106.26022219_Installer.pkg",
   "type": "pkg",
-  "sha": "690cf4a953317dce6fd775c162f538a83541ae42de4352f3328f8f511a5bd3ff",
+  "sha": "84957619383f51c3e92463961f43698c706ae419838bf6e24143bb1ae80cde00",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
   "previous_version": "16.106.26021521"
