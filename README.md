@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -372,53 +372,39 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-26 00:41 UTC*
+*Last checked: 2026-02-27 00:44 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 148.0b15 | 149.0b1 |
-| Studio 3T | 2026.3.0 | 2026.4.0 |
-| Rive | 0.8.4303 | 0.8.4342 |
-| A Better Finder Rename | 12.25 | 12.26 |
-| OmniFocus | 4.8.7 | 4.8.8 |
-| Rectangle Pro | 3.69 | 3.70 |
-| Apifox | 2.8.10 | 2.8.11 |
-| Rectangle | 0.93 | 0.94 |
-| Arduino IDE | 2.3.7 | 2.3.8 |
-| MongoDB Compass | 1.49.1 | 1.49.2 |
-| Brave | 1.87.190.0 | 1.87.191.0 |
-| DuckDuckGo | 1.178.2 | 1.178.3 |
-| Bruno | 3.1.3 | 3.1.4 |
-| Zed | 0.224.11 | 0.225.9 |
-| Windsurf | 1.9552.25 | 1.9566.9 |
-| LM Studio | 0.4.4 | 0.4.5 |
-| Apidog | 2.8.10 | 2.8.11 |
-| Joplin | 3.5.12 | 3.5.13 |
-| AppFlowy | 0.11.2 | 0.11.3 |
-| Backblaze | 9.2.2.898 | 10.0.0.1030 |
-| Mullvad Browser | 15.0.6 | 15.0.7 |
+| Pika | 1.3.0 | 1.4.0 |
+| Proton Drive | 2.10.2 | 2.11.0 |
+| ChatWise | 0.9.80 | 0.9.81 |
+| Redis Insight | 3.0.3 | 3.2.0 |
+| Grammarly Desktop | 1.153.0.0 | 1.154.0.0 |
+| ChatGPT | 1.2026.041 | 1.2026.048 |
+| LibreOffice | 26.2.0 | 26.2.1 |
+| Raycast | 1.104.6 | 1.104.7 |
+| Windsurf | 1.9566.9 | 1.9566.11 |
+| Opera | 127.0.5778.76 | 128.0.5807.25 |
+| JetBrains Toolbox | 3.2 | 3.3 |
+| Hoppscotch | 26.1.1-0 | 26.2.0-0 |
+| Capacities | 1.58.53 | 1.58.71 |
+| Deezer | 7.1.80 | 7.1.90 |
+| Opera GX | 127.0.5778.75 | 127.0.5778.96 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| DevKnife | 1.9.1 | 1.10.0 |
-| Google Earth Pro | 7.3.6.10441 | 7.3.7.1094 |
-| jamovi | 2.7.18.0 | 2.7.19.0 |
-| LaunchOS | 1.5.1 | 1.5.2 |
+| Granola | 7.30.1 | 7.41.2 |
+| jamovi | 2.7.19.0 | 2.7.22.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| OpenAudible | 4.7.3 | 4.7.4 |
-| OpenBoard | 1.7.5 | 1.7.6 |
-| Tuta Mail | 328.260224.0 | 331.260224.0 |
-| Unity Hub | 3.16.2 | 3.16.3 |
-| Wealthfolio | 2.1.0 | 3.0.0 |
-| Claude Code | 2.1.52 | 2.1.58 |
-| ChatGPT Atlas | 1.2026.42.5 | 1.2026.49.8 |
-| Box Drive | 2.49.255 | 2.50.191 |
-| Microsoft Excel | 16.106.26021521 | 16.106.26022219 |
-| Microsoft PowerPoint | 16.106.26021521 | 16.106.26022219 |
-| Microsoft Word | 16.106.26021521 | 16.106.26022219 |
-| Salesforce CLI | 2.123.1 | 2.124.7 |
+| OmniGraffle | 7.25.1 | 7.25.2 |
+| Timing | 2026.1 | 2026.2 |
+| WebCatalog | 73.8.0 | 73.10.1 |
+| Claude Code | 2.1.58 | 2.1.59 |
+| Okta Advanced Server Access | 1.99.7 | 1.100.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

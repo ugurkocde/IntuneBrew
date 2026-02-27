@@ -1,12 +1,12 @@
 {
   "name": "WebCatalog",
   "description": "Tool to run web apps like desktop apps",
-  "version": "73.8.0",
-  "url": "https://cdn-2.webcatalog.io/webcatalog/WebCatalog-73.8.0-universal.dmg",
+  "version": "73.10.1",
+  "url": "https://cdn-2.webcatalog.io/webcatalog/WebCatalog-73.10.1-universal.dmg",
   "bundleId": "com.webcatalog.jordan",
   "homepage": "https://webcatalog.io/",
-  "fileName": "WebCatalog-73.8.0-universal.dmg",
-  "sha": "96b5e51eac3a684e1fe3a1d63fcdd5f200df281db5367795f353698d971b33cd",
+  "fileName": "WebCatalog-73.10.1-universal.dmg",
+  "sha": "130a5c567f227848336f9777c0a38a5923da4d756ba91d4232e270a13e8c8cc5",
   "category": "Productivity",
   "publisher": "WebCatalog",
   "previous_version": "73.8.0"
