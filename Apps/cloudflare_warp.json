@@ -5,21 +5,21 @@
   "url": "https://downloads.cloudflareclient.com/v1/download/macos/version/2026.1.150.0",
   "bundleId": "com.cloudflare.1dot1dot1dot1.macos",
   "homepage": "https://cloudflarewarp.com/",
-  "fileName": "Cloudflare-WARP-2026.1.150.0.dmg",
+  "fileName": "Cloudflare_WARP_2026.1.150.0.pkg",
   "type": "pkg",
   "sha": "a41a64be7cec83b65d1dc983e0ba7be4083ae67ca946599d9f6dbeab3b9beade",
   "changelog": "https://developers.cloudflare.com/warp-client/release-notes/",
   "qa_info": {
-    "qa_timestamp": "2025-05-14T06:44:43Z",
+    "qa_timestamp": "2026-02-26T00:00:00Z",
     "qa_result": "Installation successful and verified",
     "download_status": "success",
-    "sha_status": "not_provided",
+    "sha_status": "verified",
     "install_status": "success",
     "verify_status": "app_found",
     "bundle_id_status": "verified",
-    "installed_version": "2025.4.929.0"
+    "installed_version": "2026.1.150.0"
   },
   "category": "Security",
   "publisher": "Cloudflare, Inc.",
-  "previous_version": "2026.1.150.0"
+  "previous_version": "2026.1.89.1"
 }
