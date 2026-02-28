@@ -1,12 +1,12 @@
 {
   "name": "Badgeify",
   "description": "Add apps to the menu bar",
-  "version": "1.12.5",
-  "url": "https://api.badgeify.app/release/download/darwin/universal/1.12.5",
+  "version": "1.12.6",
+  "url": "https://api.badgeify.app/release/download/darwin/universal/1.12.6",
   "bundleId": "studio.techflow.badgeify",
   "homepage": "https://badgeify.app/",
-  "fileName": "Badgeify-1.12.5.dmg",
-  "sha": "cd99d431bee0d9faf9ef3fc1446a6ec645938d0d618955a458417f9f9c122ebb",
+  "fileName": "Badgeify-1.12.6.dmg",
+  "sha": "713bc1671d334e9855c8d4f79a62cb4b5b4ebb6afa18b85e36458c4d01f41e84",
   "changelog": "https://badgeify.app/changelog",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:02:54Z",

@@ -1,14 +1,14 @@
 {
   "name": "Google Antigravity",
   "description": "AI Coding Agent IDE",
-  "version": "1.19.5",
-  "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/1.19.5-5117559161880576/darwin-arm/Antigravity.dmg",
+  "version": "1.19.6",
+  "url": "https://edgedl.me.gvt1.com/edgedl/release2/j0qc3/antigravity/stable/1.19.6-6514342219874304/darwin-arm/Antigravity.dmg",
   "bundleId": "com.google.antigravity",
   "homepage": "https://antigravity.google/",
   "fileName": "google_antigravity_1.15.6.pkg",
   "type": "app",
-  "sha": "498db9a72a9a1129d2904fe62647e6685e11da6a48f77f0b5e45174fe68d3b99",
+  "sha": "b94f724d56bcf980df4222bee99627c007db5729305e09818bd2b3883a02713d",
   "category": "Developer Tools",
   "publisher": "Google LLC",
-  "previous_version": "1.19.5"
+  "previous_version": "1.19.6"
 }

@@ -1,14 +1,14 @@
 {
   "name": "Slidepad",
   "description": "Slide over browser",
-  "version": "1.6.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/slidepad_1.6.0.pkg",
+  "version": "1.6.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/slidepad_1.6.2.pkg",
   "bundleId": "com.slidepad.slidepad",
   "homepage": "https://slidepad.app/",
-  "fileName": "slidepad_1.6.0.pkg",
+  "fileName": "slidepad_1.6.2.pkg",
   "type": "app",
-  "sha": "33413a9aed8c5c62bd0fe982675e1c9fca11bc812164e03f88a34299279f9c3a",
+  "sha": "7d4a3dc404d096e200b4322353a1267ecd5ae63f0e5e00b4e9d8cce9331274cb",
   "category": "Utilities",
   "publisher": "Slidepad",
-  "previous_version": "1.6.0"
+  "previous_version": "1.6.2"
 }
