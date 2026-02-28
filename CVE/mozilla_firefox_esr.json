@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox Esr",
   "app_key": "mozilla_firefox_esr",
-  "last_updated": "2026-02-27",
+  "last_updated": "2026-02-28",
   "total_cves": 3043,
   "summary": {
     "critical": 362,
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2026-2634",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-27",
       "description": "Malicious scripts could cause desynchronization between the address bar and web content before a response is received in Firefox iOS, allowing attacker-controlled pages to be presented under spoofed domains. This vulnerability affects Firefox for iOS < 147.4.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -455,7 +455,7 @@
     {
       "cve_id": "CVE-2026-2762",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Integer overflow in the JavaScript: Standard Library component. This vulnerability affects Firefox < 148, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -476,7 +476,7 @@
     {
       "cve_id": "CVE-2026-2763",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Use-after-free in the JavaScript Engine component. This vulnerability affects Firefox < 148, Firefox ESR < 115.33, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -497,7 +497,7 @@
     {
       "cve_id": "CVE-2026-2764",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "JIT miscompilation, use-after-free in the JavaScript Engine: JIT component. This vulnerability affects Firefox < 148, Firefox ESR < 115.33, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -518,7 +518,7 @@
     {
       "cve_id": "CVE-2026-2765",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Use-after-free in the JavaScript Engine component. This vulnerability affects Firefox < 148, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -539,7 +539,7 @@
     {
       "cve_id": "CVE-2026-2766",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Use-after-free in the JavaScript Engine: JIT component. This vulnerability affects Firefox < 148, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -665,7 +665,7 @@
     {
       "cve_id": "CVE-2026-2773",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Incorrect boundary conditions in the Web Audio component. This vulnerability affects Firefox < 148, Firefox ESR < 115.33, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -707,7 +707,7 @@
     {
       "cve_id": "CVE-2026-2775",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Mitigation bypass in the DOM: HTML Parser component. This vulnerability affects Firefox < 148, Firefox ESR < 115.33, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -728,7 +728,7 @@
     {
       "cve_id": "CVE-2026-2776",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Sandbox escape due to incorrect boundary conditions in the Telemetry component in External Software. This vulnerability affects Firefox < 148, Firefox ESR < 115.33, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 10.0,
       "severity": "CRITICAL",
@@ -770,7 +770,7 @@
     {
       "cve_id": "CVE-2026-2778",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Sandbox escape due to incorrect boundary conditions in the DOM: Core & HTML component. This vulnerability affects Firefox < 148, Firefox ESR < 115.33, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 10.0,
       "severity": "CRITICAL",
@@ -791,7 +791,7 @@
     {
       "cve_id": "CVE-2026-2779",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Incorrect boundary conditions in the Networking: JAR component. This vulnerability affects Firefox < 148, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -875,7 +875,7 @@
     {
       "cve_id": "CVE-2026-2784",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Mitigation bypass in the DOM: Security component. This vulnerability affects Firefox < 148, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -959,7 +959,7 @@
     {
       "cve_id": "CVE-2026-2788",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Incorrect boundary conditions in the Audio/Video: GMP component. This vulnerability affects Firefox < 148, Firefox ESR < 115.33, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -1022,7 +1022,7 @@
     {
       "cve_id": "CVE-2026-2791",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-28",
       "description": "Mitigation bypass in the Networking: Cache component. This vulnerability affects Firefox < 148, Firefox ESR < 140.8, Thunderbird < 148, and Thunderbird < 140.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -1106,7 +1106,7 @@
     {
       "cve_id": "CVE-2026-2796",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-02-27",
       "description": "JIT miscompilation in the JavaScript: WebAssembly component. This vulnerability affects Firefox < 148 and Thunderbird < 148.",
       "base_score": 9.8,
       "severity": "CRITICAL",
