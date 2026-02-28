@@ -1,13 +1,13 @@
 {
   "name": "OpenBoard",
   "description": "Interactive whiteboard application",
-  "version": "1.7.5",
-  "url": "https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.5/OpenBoard-1.7.5.dmg",
+  "version": "1.7.6",
+  "url": "https://github.com/OpenBoard-org/OpenBoard/releases/download/v1.7.6/OpenBoard-1.7.6.dmg",
   "bundleId": "org.openboard.OpenBoard",
   "homepage": "https://openboard.ch/index.en.html",
-  "fileName": "OpenBoard-1.7.5.dmg",
-  "sha": "f0f06c57e437096a379e1153e50ae5c2941f24e1e56906b78b398562e4d4a34b",
+  "fileName": "OpenBoard-1.7.6.dmg",
+  "sha": "33c41fc8debe93dbb99fb2643470ea07418f02071900c7c9b68f44dfe59d9332",
   "category": "Productivity",
   "publisher": "OpenBoard",
-  "previous_version": "1.7.5"
+  "previous_version": "1.7.6"
 }

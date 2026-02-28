@@ -1,7 +1,7 @@
 {
   "app_name": "Nomachine",
   "app_key": "nomachine",
-  "last_updated": "2026-02-08",
+  "last_updated": "2026-02-28",
   "total_cves": 11,
   "summary": {
     "critical": 2,
@@ -224,12 +224,12 @@
     {
       "cve_id": "CVE-2018-20029",
       "published_date": "2018-12-10",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-02-25",
       "description": "The nxfs.sys driver in the DokanFS library 0.6.0 in NoMachine before 6.4.6 on Windows 10 allows local users to cause a denial of service (BSOD) because uninitialized memory can be read.",
       "base_score": 5.5,
       "severity": "MEDIUM",
-      "cvss_version": "3.0",
-      "cvss_vector": "CVSS:3.0/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:L/UI:N/S:U/C:N/I:N/A:H",
       "affected_version_start": null,
       "affected_version_start_type": null,
       "affected_version_end": "6.4.6",

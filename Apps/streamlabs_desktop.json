@@ -1,13 +1,13 @@
 {
   "name": "Streamlabs Desktop",
   "description": "All-in-one live streaming software",
-  "version": "1.20.6",
-  "url": "https://slobs-cdn.streamlabs.com/Streamlabs+Desktop-1.20.6-arm64.dmg",
+  "version": "1.20.7",
+  "url": "https://slobs-cdn.streamlabs.com/Streamlabs+Desktop-1.20.7-arm64.dmg",
   "bundleId": "com.streamlabs.slobs",
   "homepage": "https://streamlabs.com/",
-  "fileName": "Streamlabs+Desktop-1.20.6-arm64.dmg",
-  "sha": "4cbca4292a3167c0c37eff0dbb9926274858e5b6572f812b1a2b954ed17d41ca",
+  "fileName": "Streamlabs+Desktop-1.20.7-arm64.dmg",
+  "sha": "1cbae6b436ed6bffe0925eddaf02e55b74b14ad518ea694a68009c17a814615c",
   "category": "Media",
   "publisher": "Streamlabs, Inc.",
-  "previous_version": "1.20.6"
+  "previous_version": "1.20.7"
 }

@@ -1,12 +1,12 @@
 {
   "name": "Android Studio",
   "description": "Tools for building Android applications",
-  "version": "2025.2.3.9",
-  "url": "https://redirector.gvt1.com/edgedl/android/studio/install/2025.2.3.9/android-studio-2025.2.3.9-mac_arm.dmg",
+  "version": "2025.3.1.8",
+  "url": "https://edgedl.me.gvt1.com/android/studio/install/2025.3.1.8/android-studio-panda1-patch1-mac_arm.dmg",
   "bundleId": "com.google.android.studio",
   "homepage": "https://developer.android.com/studio/",
-  "fileName": "android-studio-2025.2.3.9-mac_arm.dmg",
-  "sha": "b6285cdee418492658a4f5ee68beb52896e81ad27e7d10b3486b9b6e02b33e88",
+  "fileName": "android-studio-panda1-patch1-mac_arm.dmg",
+  "sha": "55ad6f06b8af88ab9ffc68f33108ea7c734416c1548118997f5a45f3ac77d596",
   "changelog": "https://developer.android.com/studio/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:01:54Z",
@@ -20,5 +20,5 @@
   },
   "category": "Developer Tools",
   "publisher": "Google LLC",
-  "previous_version": "2025.2.3.9"
+  "previous_version": "2025.3.1.8"
 }

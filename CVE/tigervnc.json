@@ -1,7 +1,7 @@
 {
   "app_name": "Tigervnc",
   "app_key": "tigervnc",
-  "last_updated": "2026-02-08",
+  "last_updated": "2026-02-28",
   "total_cves": 29,
   "summary": {
     "critical": 3,
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2023-6377",
       "published_date": "2023-12-13",
-      "last_modified_date": "2025-08-18",
+      "last_modified_date": "2026-02-25",
       "description": "A flaw was found in xorg-server. Querying or changing XKB button actions such as moving from a touchpad to a mouse can result in out-of-bounds memory reads and writes. This may allow local privilege escalation or possible remote code execution in cases where X11 forwarding is involved.",
       "base_score": 7.8,
       "severity": "HIGH",

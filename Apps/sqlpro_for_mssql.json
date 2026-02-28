@@ -1,14 +1,14 @@
 {
   "name": "SQLPro for MSSQL",
   "description": "Microsoft SQL Server database client",
-  "version": "2025.10",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_for_mssql_2025.10.pkg",
+  "version": "2026.07",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_for_mssql_2026.07.pkg",
   "bundleId": "com.hankinsoft.osx.tinysqlstudio",
   "homepage": "https://www.macsqlclient.com/",
-  "fileName": "sqlpro_for_mssql_2025.10.pkg",
+  "fileName": "sqlpro_for_mssql_2026.07.pkg",
   "type": "app",
-  "sha": "32b56ac226f124cae3ca9247615d105b7d0c364b36e667f5a09d7220187ffa37",
-  "previous_version": "2025.10",
+  "sha": "a155e57676e7d22709ce6000eaf9ad137ef27bc6b12ef9fb943c0daa1c286124",
+  "previous_version": "2026.07",
   "category": "Developer Tools",
   "publisher": "The SQLPro Team"
 }

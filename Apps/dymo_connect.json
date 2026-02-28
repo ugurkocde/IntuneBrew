@@ -1,14 +1,14 @@
 {
   "name": "Dymo Connect",
   "description": "Software for DYMO LabelWriters",
-  "version": "1.5.1.15",
-  "url": "https://download.dymo.com/dymo/Software/Mac/DCDMac1.5.1.15.pkg",
+  "version": "1.6.0.41",
+  "url": "https://dymoreleasecontent.blob.core.windows.net/dymo-release/DCDMAC/DCDMac1.6.0.41-Arm64.pkg",
   "bundleId": "com.dymo.dymo-connect",
   "homepage": "https://www.dymo.com/support?cfid=online-support",
-  "fileName": "DCDMac1.5.1.15.pkg",
+  "fileName": "DCDMac1.6.0.41-Arm64.pkg",
   "type": "pkg",
-  "sha": "04090b1a1cc357791a29463e2b15331bfaff69dd64fe62f6afa5294b7f2a3a6b",
+  "sha": "a42f4da175b26b4017384ac41ed978470078aee84b1f43bb591b3c9855d2c919",
   "category": "Productivity",
   "publisher": "DYMO",
-  "previous_version": "1.5.1.15"
+  "previous_version": "1.6.0.41"
 }

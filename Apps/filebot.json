@@ -1,14 +1,14 @@
 {
   "name": "FileBot",
   "description": "Tool for organising and renaming movies, TV shows, anime or music",
-  "version": "5.2.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/filebot_5.2.0.pkg",
+  "version": "5.2.1",
+  "url": "https://get.filebot.net/filebot/FileBot_5.2.1/FileBot_5.2.1_arm64.pkg",
   "bundleId": "net.filebot.FileBot",
   "homepage": "https://www.filebot.net/",
   "fileName": "filebot_5.2.0.pkg",
   "type": "app",
-  "sha": "41df870b069c64033cde7e089a44d0d9c6c675f4878fae55a49f8cf6942cfa58",
+  "sha": "16bd651406b235ad505b8838d28fcb512d39e28389973476da0728d085ed73ca",
   "category": "Media",
   "publisher": "FileBot",
-  "previous_version": "5.2.0"
+  "previous_version": "5.2.1"
 }

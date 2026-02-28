@@ -1,14 +1,14 @@
 {
   "name": "ONLYOFFICE",
   "description": "Document editor",
-  "version": "9.2.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/onlyoffice_9.2.1.pkg",
+  "version": "9.3.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/onlyoffice_9.3.0.pkg",
   "bundleId": "asc.onlyoffice.editors-helper-renderer",
   "homepage": "https://www.onlyoffice.com/",
-  "fileName": "onlyoffice_9.2.1.pkg",
+  "fileName": "onlyoffice_9.3.0.pkg",
   "type": "app",
-  "sha": "da8a97fcf615d65a9469417d6e5e5c0706b490f9c8f7b36c5f28fd0fa6f90971",
+  "sha": "7a856005383f58e1408b8a8792b99dc2c1e8dd8f5105c48d1ecf7ee8c0218c94",
   "category": "Productivity",
   "publisher": "ONLYOFFICE",
-  "previous_version": "9.2.1"
+  "previous_version": "9.3.0"
 }

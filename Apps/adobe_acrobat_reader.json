@@ -1,14 +1,14 @@
 {
   "name": "Adobe Acrobat Reader",
   "description": "View, print, and comment on PDF documents",
-  "version": "25.001.21111",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/adobe_acrobat_reader_25.001.21111.pkg",
+  "version": "25.001.21223",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/adobe_acrobat_reader_25.001.21223.pkg",
   "bundleId": "com.adobe.Reader",
   "homepage": "https://www.adobe.com/acrobat/pdf-reader.html",
-  "fileName": "adobe_acrobat_reader_25.001.21111.pkg",
+  "fileName": "adobe_acrobat_reader_25.001.21223.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html",
-  "sha": "27eeb9475bca90af5355d5519260832426a85a88179b2cac0e3043f8eb44561d",
+  "sha": "b2a2337f2eb39894080bf13bfef288bc73e3594cecb9beda0fba46fe7768ac05",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:27:42Z",
     "qa_result": "Installation successful and verified",
@@ -21,5 +21,5 @@
   },
   "category": "Productivity",
   "publisher": "Adobe Inc.",
-  "previous_version": "25.001.21111"
+  "previous_version": "25.001.21223"
 }

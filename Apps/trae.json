@@ -1,13 +1,13 @@
 {
   "name": "Trae",
   "description": "Adaptive AI IDE",
-  "version": "2.3.8290",
-  "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.8290/darwin/Trae-darwin-arm64.dmg",
+  "version": "2.3.10208",
+  "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.10208/darwin/Trae-darwin-arm64.dmg",
   "bundleId": "com.trae.app",
   "homepage": "https://www.trae.ai/",
   "fileName": "Trae-darwin-arm64.dmg",
-  "sha": "c73ddf0e74600b8c99c50f08200603426f5d4f2748577da5197ef3e818e5d550",
+  "sha": "6c1fca0d4482b8b65aadbcab3ead610c183ea17c1554b27aa9c50a79a9505f28",
   "category": "Developer Tools",
   "publisher": "Trae AI",
-  "previous_version": "2.3.8290"
+  "previous_version": "2.3.10208"
 }

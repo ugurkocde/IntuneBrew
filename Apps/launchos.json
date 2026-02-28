@@ -1,13 +1,13 @@
 {
   "name": "LaunchOS",
   "description": "Launchpad alternative",
-  "version": "1.5.1",
-  "url": "https://static.remixdesign.app/launchos/LaunchOS-1.5.1-162.dmg",
+  "version": "1.5.2",
+  "url": "https://static.remixdesign.app/launchos/LaunchOS-1.5.2-174.dmg",
   "bundleId": "app.remixdesign.LaunchOS",
   "homepage": "https://launchosapp.com/",
-  "fileName": "LaunchOS-1.5.1-162.dmg",
-  "sha": "88c46ec5cd14c26409a7d62fb61e44d3bb856ddab4d50d54f52396588c309aca",
+  "fileName": "LaunchOS-1.5.2-174.dmg",
+  "sha": "a5b6e829d99484969093c264dfe25389a295347e05ca52e8d9ab5c6738137945",
   "category": "Utilities",
   "publisher": "LaunchOS",
-  "previous_version": "1.5.1"
+  "previous_version": "1.5.2"
 }

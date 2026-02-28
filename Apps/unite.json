@@ -1,14 +1,14 @@
 {
   "name": "Unite",
   "description": "Turn websites into apps",
-  "version": "6.5",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/unite_6.5.pkg",
+  "version": "6.6",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/unite_6.6.pkg",
   "bundleId": "com.BZG.unite",
   "homepage": "https://bzgapps.com/unite",
-  "fileName": "unite_6.5.pkg",
+  "fileName": "unite_6.6.pkg",
   "type": "app",
-  "sha": "b37ab37ce18aafb5cef30b9c6e1c2cea0e45d5af47571f222a1061a0fabb5738",
+  "sha": "67f6e4dda4ad02057150bbbbe5fea0c7d0bb358e46f1f2d9ca662069a849d60e",
   "category": "Utilities",
   "publisher": "BZG Apps",
-  "previous_version": "6.5"
+  "previous_version": "6.6"
 }

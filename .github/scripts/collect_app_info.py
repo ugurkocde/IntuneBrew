@@ -477,6 +477,7 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/linear-linear.json",
     "https://formulae.brew.sh/api/cask/notion-mail.json",
     "https://formulae.brew.sh/api/cask/codex.json",
+    "https://formulae.brew.sh/api/cask/pppc-utility.json",
 ]
 
 # DMG
@@ -1204,6 +1205,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/egnyte.json",
     "https://formulae.brew.sh/api/cask/claude-code.json",
     "https://formulae.brew.sh/api/cask/chatgpt-atlas.json",
+    "https://formulae.brew.sh/api/cask/kiro.json",
 ]
 
 # PKG in DMG URLs
@@ -1326,6 +1328,9 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/xquartz.json",
     "https://formulae.brew.sh/api/cask/insta360-link-controller.json",
     "https://formulae.brew.sh/api/cask/toshiba-color-mfp.json",
+    "https://formulae.brew.sh/api/cask/perimeter81.json",
+    "https://formulae.brew.sh/api/cask/unifi-identity-endpoint.json",
+    "https://formulae.brew.sh/api/cask/wifiman.json",
 ]
 
 # Custom scraper scripts to run

@@ -1,14 +1,14 @@
 {
   "name": "Panic Nova",
   "description": "Native code editor",
-  "version": "13.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/panic_nova_13.3.pkg",
+  "version": "13.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/panic_nova_13.4.pkg",
   "bundleId": "com.panic.Nova",
   "homepage": "https://nova.app/",
-  "fileName": "panic_nova_13.3.pkg",
+  "fileName": "panic_nova_13.4.pkg",
   "type": "app",
-  "sha": "5a6f61f3f5d901aec6d7e2df77202fe5668fbe8679514ea2e235d07f10c8a99d",
-  "previous_version": "13.3",
+  "sha": "270c5ef996d532b46759e8fa53b046810fe40325e0ba5768fd123b84f5590950",
+  "previous_version": "13.4",
   "category": "Developer Tools",
   "publisher": "Panic Inc."
 }

@@ -1,14 +1,14 @@
 {
   "name": "CrossOver",
   "description": "Tool to run Windows software",
-  "version": "25.1.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/crossover_25.1.1.pkg",
+  "version": "26.0.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/crossover_26.0.0.pkg",
   "bundleId": "com.codeweavers.CrossOver",
   "homepage": "https://www.codeweavers.com/products/crossover-mac/",
-  "fileName": "crossover_25.1.1.pkg",
+  "fileName": "crossover_26.0.0.pkg",
   "type": "app",
-  "previous_version": "25.1.1",
-  "sha": "f0d1c8c0c8008718818c528f404d9ec5037774ce88c0ddf44fa834fab36cdd9a",
+  "previous_version": "26.0.0",
+  "sha": "ca736143704bca0876504622e2cbfcaef3aaf45c9f98f03cb776f8b5d0807d69",
   "category": "Utilities",
   "publisher": "CodeWeavers, Inc."
 }

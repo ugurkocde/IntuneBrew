@@ -1,13 +1,13 @@
 {
   "name": "Path Finder",
   "description": "File manager",
-  "version": "2211",
+  "version": "11.1",
   "url": "https://get.cocoatech.com/PathFinder.dmg",
   "bundleId": "com.cocoatech.PathFinder",
   "homepage": "https://www.cocoatech.io/",
   "fileName": "PathFinder.dmg",
-  "sha": "c7ee16a3c2ab1f3c2bf74941eddd39e4aa3019ce3f0f758fe089bb16ce37c0e7",
+  "sha": "facffe15a8b58ebc6befebfca169eb09ff90c060e7caadb2b4baa809ae2c2798",
   "category": "Utilities",
   "publisher": "Cocoatech",
-  "previous_version": "2211"
+  "previous_version": "11.1"
 }

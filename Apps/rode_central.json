@@ -1,14 +1,14 @@
 {
   "name": "Rode Central",
   "description": "RØDE companion app",
-  "version": "2.0.108",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/rode_central_2.0.108.pkg",
+  "version": "2.0.109",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/rode_central_2.0.109.pkg",
   "bundleId": "com.rodecentral.installer",
   "homepage": "https://rode.com/en/apps/rode-central",
-  "fileName": "rode_central_2.0.108.pkg",
+  "fileName": "rode_central_2.0.109.pkg",
   "type": "app",
-  "sha": "95df38b668135320cce552badb871ffdaa812fcb1b1d8f4466e1bb9dda32713b",
-  "previous_version": "2.0.108",
+  "sha": "ebd86bd1a31c453adcb4b935a53cbc3dd798f8db364cb3a3b71e7f6a142e5644",
+  "previous_version": "2.0.109",
   "category": "Media",
   "publisher": "RØDE Microphones Pty Ltd"
 }

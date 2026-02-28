@@ -1,14 +1,14 @@
 {
   "name": "Camunda Modeler",
   "description": "Workflow and Decision Automation Platform",
-  "version": "5.43.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/camunda_modeler_5.43.1.pkg",
+  "version": "5.44.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/camunda_modeler_5.44.0.pkg",
   "bundleId": "com.camunda.CamundaModeler",
   "homepage": "https://camunda.com/",
-  "fileName": "camunda_modeler_5.43.1.pkg",
+  "fileName": "camunda_modeler_5.44.0.pkg",
   "type": "app",
-  "sha": "2761859a629993b5b6da37ac91138310641dfab926ce7aa8407c99f8c638fd5f",
+  "sha": "10c9790cfcf9b2da7bdb29f7c9ed1ea447e11ed8946b68430db836fc5d33c0cb",
   "category": "Developer Tools",
   "publisher": "Camunda Services GmbH",
-  "previous_version": "5.43.1"
+  "previous_version": "5.44.0"
 }

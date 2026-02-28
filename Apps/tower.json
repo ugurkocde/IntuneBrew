@@ -1,14 +1,14 @@
 {
   "name": "Tower",
   "description": "Git client focusing on power and productivity",
-  "version": "15.0.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/tower_15.0.3.pkg",
+  "version": "15.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tower_15.1.pkg",
   "bundleId": "com.fournova.Tower",
   "homepage": "https://www.git-tower.com/",
-  "fileName": "tower_15.0.3.pkg",
+  "fileName": "tower_15.1.pkg",
   "type": "app",
-  "previous_version": "15.0.3",
-  "sha": "8a53f559720ab1df6fded89a7cf002e5a97e7e6a5218797f9dda98aa1630a7b4",
+  "previous_version": "15.1",
+  "sha": "c846c2b18b7a24bacf58e4cc47ea0da1a5c2739d5afb4d22dd3d51f749bd3997",
   "category": "Developer Tools",
   "publisher": "Absolutist Ltd."
 }

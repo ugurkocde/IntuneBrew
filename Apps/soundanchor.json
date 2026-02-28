@@ -1,13 +1,13 @@
 {
   "name": "SoundAnchor",
   "description": "Audio device utility",
-  "version": "1.6.0",
-  "url": "https://kopiro.s3.eu-west-1.amazonaws.com/soundanchor/SoundAnchor-1.6.0.dmg",
+  "version": "1.6.1",
+  "url": "https://kopiro.s3.amazonaws.com/soundanchor/soundanchor-1.6.1.dmg",
   "bundleId": "com.nicola.SoundAnchor",
   "homepage": "https://apps.kopiro.me/soundanchor/",
-  "fileName": "SoundAnchor-1.6.0.dmg",
-  "sha": "035065faf2fdd3e5e9b2c7e43d09f17254cf637c6882d34b78d8c0f4d81868cb",
+  "fileName": "soundanchor-1.6.1.dmg",
+  "sha": "90872e7cd66aeed0b9cf3ecab132be4f5b27743d485d5dc60903d5d0c9567444",
   "category": "Utilities",
   "publisher": "Kopiro",
-  "previous_version": "1.6.0"
+  "previous_version": "1.6.1"
 }

@@ -1,13 +1,13 @@
 {
   "name": "Taskade",
   "description": "Task manager for teams",
-  "version": "4.6.13",
-  "url": "https://apps.taskade.com/updates/Taskade-4.6.13-universal.dmg",
+  "version": "4.6.14",
+  "url": "https://apps.taskade.com/updates/Taskade-4.6.14-universal.dmg",
   "bundleId": "com.taskade",
   "homepage": "https://www.taskade.com/",
-  "fileName": "Taskade-4.6.13-universal.dmg",
-  "sha": "8516cf62fc11ae834aaeafc4466b2cf05bde819c0305f08e4becb8ffe4bc18a9",
+  "fileName": "Taskade-4.6.14-universal.dmg",
+  "sha": "912d7fe1f71feac48ffd22fc5deed8cfadccd7b995c22246155f3fa8de94d16b",
   "category": "Productivity",
   "publisher": "Taskade, Inc.",
-  "previous_version": "4.6.13"
+  "previous_version": "4.6.14"
 }

@@ -1,7 +1,7 @@
 {
   "app_name": "Onedrive",
   "app_key": "onedrive",
-  "last_updated": "2026-02-08",
+  "last_updated": "2026-02-28",
   "total_cves": 14,
   "summary": {
     "critical": 1,
@@ -56,8 +56,8 @@
     {
       "cve_id": "CVE-2020-16851",
       "published_date": "2020-09-11",
-      "last_modified_date": "2024-11-21",
-      "description": "<p>An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links. An attacker who successfully exploited this vulnerability could overwrite a targeted file with an elevated status.</p>\n<p>To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and delete a targeted file with an elevated status.</p>\n<p>The update addresses this vulnerability by correcting where the OneDrive updater performs file writes while running with elevation.</p>\n",
+      "last_modified_date": "2026-02-23",
+      "description": "<p>An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links. An attacker who successfully exploited this vulnerability could overwrite a targeted file with an elevated status.</p>\n<p>To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and delete a targeted file with an elevated status.</p>\n<p>The update addresses this vulnerability by correcting where the OneDrive updater performs file writes while running with elevation.</p>",
       "base_score": 7.1,
       "severity": "HIGH",
       "cvss_version": "3.1",
@@ -77,8 +77,8 @@
     {
       "cve_id": "CVE-2020-16852",
       "published_date": "2020-09-11",
-      "last_modified_date": "2024-11-21",
-      "description": "<p>An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links. An attacker who successfully exploited this vulnerability could overwrite a targeted file with an elevated status.</p>\n<p>To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and delete a targeted file with an elevated status.</p>\n<p>The update addresses this vulnerability by correcting where the OneDrive updater performs file writes while running with elevation.</p>\n",
+      "last_modified_date": "2026-02-23",
+      "description": "<p>An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links. An attacker who successfully exploited this vulnerability could overwrite a targeted file with an elevated status.</p>\n<p>To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and delete a targeted file with an elevated status.</p>\n<p>The update addresses this vulnerability by correcting where the OneDrive updater performs file writes while running with elevation.</p>",
       "base_score": 7.1,
       "severity": "HIGH",
       "cvss_version": "3.1",
@@ -98,8 +98,8 @@
     {
       "cve_id": "CVE-2020-16853",
       "published_date": "2020-09-11",
-      "last_modified_date": "2024-11-21",
-      "description": "<p>An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links. An attacker who successfully exploited this vulnerability could overwrite a targeted file with an elevated status.</p>\n<p>To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and delete a targeted file with an elevated status.</p>\n<p>The update addresses this vulnerability by correcting where the OneDrive updater performs file writes while running with elevation.</p>\n",
+      "last_modified_date": "2026-02-23",
+      "description": "<p>An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links. An attacker who successfully exploited this vulnerability could overwrite a targeted file with an elevated status.</p>\n<p>To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and delete a targeted file with an elevated status.</p>\n<p>The update addresses this vulnerability by correcting where the OneDrive updater performs file writes while running with elevation.</p>",
       "base_score": 7.1,
       "severity": "HIGH",
       "cvss_version": "3.1",

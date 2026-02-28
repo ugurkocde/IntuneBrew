@@ -1,14 +1,14 @@
 {
   "name": "Plex Media Server",
   "description": "Home media server",
-  "version": "1.43.0.10467",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/plex_media_server_1.43.0.10467.pkg",
+  "version": "1.43.0.10492",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/plex_media_server_1.43.0.10492.pkg",
   "bundleId": "com.plexapp.plexmediaserver",
   "homepage": "https://www.plex.tv/",
-  "fileName": "plex_media_server_1.43.0.10467.pkg",
+  "fileName": "plex_media_server_1.43.0.10492.pkg",
   "type": "app",
-  "sha": "feb1a24effe764447529a65f462eba5f88ac0ebb8d5283a915039c67a2c616ed",
+  "sha": "757f2a3bbc555480077b07b250f1a51e90e57ccab3ee5dd26cef1b3aecbb1d3b",
   "category": "Media",
   "publisher": "Plex, Inc.",
-  "previous_version": "1.43.0.10467"
+  "previous_version": "1.43.0.10492"
 }

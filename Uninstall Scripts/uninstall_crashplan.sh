@@ -27,12 +27,68 @@ launchctl unload -w ~/Library/LaunchAgents/com.crashplan.engine.plist 2>/dev/nul
 echo "Stopping application with bundle ID com.crashplan.app if running..."
 killall -9 "com.crashplan.app" 2>/dev/null || true
 
+# Remove /Library/Application Support/CrashPlan
+echo "Removing /Library/Application Support/CrashPlan..."
+if [ -d "/Library/Application Support/CrashPlan" ]; then
+    rm -rf "/Library/Application Support/CrashPlan" 2>/dev/null || true
+elif [ -f "/Library/Application Support/CrashPlan" ]; then
+    rm -f "/Library/Application Support/CrashPlan" 2>/dev/null || true
+fi
+
+# Remove /Library/Caches/CrashPlan
+echo "Removing /Library/Caches/CrashPlan..."
+if [ -d "/Library/Caches/CrashPlan" ]; then
+    rm -rf "/Library/Caches/CrashPlan" 2>/dev/null || true
+elif [ -f "/Library/Caches/CrashPlan" ]; then
+    rm -f "/Library/Caches/CrashPlan" 2>/dev/null || true
+fi
+
+# Remove /Library/LaunchDaemons/com.crashplan.service.plist
+echo "Removing /Library/LaunchDaemons/com.crashplan.service.plist..."
+if [ -d "/Library/LaunchDaemons/com.crashplan.service.plist" ]; then
+    rm -rf "/Library/LaunchDaemons/com.crashplan.service.plist" 2>/dev/null || true
+elif [ -f "/Library/LaunchDaemons/com.crashplan.service.plist" ]; then
+    rm -f "/Library/LaunchDaemons/com.crashplan.service.plist" 2>/dev/null || true
+fi
+
+# Remove /Library/Logs/CrashPlan
+echo "Removing /Library/Logs/CrashPlan..."
+if [ -d "/Library/Logs/CrashPlan" ]; then
+    rm -rf "/Library/Logs/CrashPlan" 2>/dev/null || true
+elif [ -f "/Library/Logs/CrashPlan" ]; then
+    rm -f "/Library/Logs/CrashPlan" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.crashplan.desktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.crashplan.desktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.crashplan.desktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.crashplan.desktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.crashplan.desktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.crashplan.desktop.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/CrashPlan
 echo "Removing $HOME/Library/Application Support/CrashPlan..."
 if [ -d "$HOME/Library/Application Support/CrashPlan" ]; then
     rm -rf "$HOME/Library/Application Support/CrashPlan" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/CrashPlan" ]; then
     rm -f "$HOME/Library/Application Support/CrashPlan" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/LaunchAgents/com.crashplan.menubar.plist
+echo "Removing $HOME/Library/LaunchAgents/com.crashplan.menubar.plist..."
+if [ -d "$HOME/Library/LaunchAgents/com.crashplan.menubar.plist" ]; then
+    rm -rf "$HOME/Library/LaunchAgents/com.crashplan.menubar.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/LaunchAgents/com.crashplan.menubar.plist" ]; then
+    rm -f "$HOME/Library/LaunchAgents/com.crashplan.menubar.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/CrashPlan
+echo "Removing $HOME/Library/Logs/CrashPlan..."
+if [ -d "$HOME/Library/Logs/CrashPlan" ]; then
+    rm -rf "$HOME/Library/Logs/CrashPlan" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/CrashPlan" ]; then
+    rm -f "$HOME/Library/Logs/CrashPlan" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.crashplan.desktop.plist

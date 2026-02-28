@@ -1,13 +1,13 @@
 {
   "name": "Mullvad Browser",
   "description": "Web browser focused on privacy and on minimizing tracking and fingerprinting",
-  "version": "15.0.4",
-  "url": "https://cdn.mullvad.net/browser/15.0.4/mullvad-browser-macos-15.0.4.dmg",
+  "version": "15.0.7",
+  "url": "https://cdn.mullvad.net/browser/15.0.7/mullvad-browser-macos-15.0.7.dmg",
   "bundleId": "net.mullvad.mullvadbrowser",
   "homepage": "https://mullvad.net/browser",
-  "fileName": "mullvad-browser-macos-15.0.4.dmg",
-  "sha": "f0ac9ee1865f1c3c9e1fa950c17e371943f896b8adcc1affe13f1d102afcccce",
+  "fileName": "mullvad-browser-macos-15.0.7.dmg",
+  "sha": "40e3542d4fb46b914da64d85d014b3906816745af337d54993e4284ee155fb76",
   "category": "Browsers",
   "publisher": "Mullvad VPN AB",
-  "previous_version": "15.0.4"
+  "previous_version": "15.0.7"
 }

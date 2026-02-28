@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-02-08T03:03:19.634Z",
+  "last_full_scan": "2026-02-28T00:52:31.233Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8854,6 +8854,47 @@
         "mac_app_store"
       ],
       "name": "Codex"
+    },
+    "perimeter_81": {
+      "last_checked": "2026-02-11T11:18:46.454Z",
+      "bundle_id": "com.safervpn.osx.smb",
+      "status": "verified",
+      "source": "file",
+      "name": "Perimeter 81"
+    },
+    "pppc_utility": {
+      "last_checked": "2026-02-13T16:38:11.615Z",
+      "bundle_id": "com.jamf.opensource.pppcutility",
+      "status": "verified",
+      "source": "file",
+      "name": "PPPC Utility"
+    },
+    "unifi_identity_endpoint": {
+      "last_checked": "2026-02-16T14:38:45.271Z",
+      "bundle_id": "com.ui.uid.standard-desktop",
+      "status": "verified",
+      "source": "file",
+      "name": "UniFi Identity Endpoint"
+    },
+    "wifiman_desktop": {
+      "last_checked": "2026-02-16T14:38:45.272Z",
+      "bundle_id": "ui.wifiman.com",
+      "status": "verified",
+      "source": "file",
+      "name": "WiFiman Desktop"
+    },
+    "kiro": {
+      "last_checked": "2026-02-23T12:05:01.634Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved",
+        "openai_alternative"
+      ],
+      "name": "kiro"
     }
   }
 }

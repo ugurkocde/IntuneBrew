@@ -1,12 +1,12 @@
 {
   "name": "Arduino IDE",
   "description": "Electronics prototyping platform",
-  "version": "2.3.7",
-  "url": "https://github.com/arduino/arduino-ide/releases/download/2.3.7/arduino-ide_2.3.7_macOS_ARM64.dmg",
+  "version": "2.3.8",
+  "url": "https://github.com/arduino/arduino-ide/releases/download/2.3.8/arduino-ide_2.3.8_macOS_ARM64.dmg",
   "bundleId": "cc.arduino.IDE2",
   "homepage": "https://www.arduino.cc/en/software",
-  "fileName": "arduino-ide_2.3.7_macOS_ARM64.dmg",
-  "sha": "040640f8684c30b9be3ea06d62f8ff202d1af84c3df6a4a47407e458f19a0356",
+  "fileName": "arduino-ide_2.3.8_macOS_ARM64.dmg",
+  "sha": "8965919943d12dd68ca5ee20947bc2b37dc5aa297c5b30e22a890f84ef72c2ec",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:33:50Z",
     "qa_result": "Installation successful and verified",
@@ -19,5 +19,5 @@
   },
   "category": "Developer Tools",
   "publisher": "Arduino LLC",
-  "previous_version": "2.3.7"
+  "previous_version": "2.3.8"
 }

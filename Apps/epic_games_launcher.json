@@ -1,12 +1,12 @@
 {
   "name": "Epic Games Launcher",
   "description": "Launcher for *Epic Games* games",
-  "version": "19.1.5",
-  "url": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Mac/EpicInstaller-19.1.5.dmg",
+  "version": "19.2.0",
+  "url": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Mac/EpicInstaller-19.2.0.dmg",
   "bundleId": "com.epicgames.EpicGamesLauncher",
   "homepage": "https://www.epicgames.com/",
-  "fileName": "EpicInstaller-19.1.5.dmg",
-  "sha": "cbf703988c647cefeec539727e0f14dfe8ee03a9ea58f80eaae411faf61e34fd",
+  "fileName": "EpicInstaller-19.2.0.dmg",
+  "sha": "bc47f4dcf271b95dbdea356921a04d237340b20f1a1be924f40b039766a320da",
   "changelog": "https://store.epicgames.com/en-US/news/launcher-release-notes",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:57:09Z",
@@ -20,5 +20,5 @@
   },
   "category": "Utilities",
   "publisher": "Epic Games, Inc.",
-  "previous_version": "19.1.5"
+  "previous_version": "19.2.0"
 }
