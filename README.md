@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -374,42 +374,27 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-02-28 00:39 UTC*
+*Last checked: 2026-03-01 00:46 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 149.0b1 | 149.0b2 |
-| Fathom | 1.42.2 | 1.42.3 |
-| Rive | 0.8.4342 | 0.8.4359 |
-| Dockside | 2.0.1 | 2.0.2 |
-| Requestly | 26.2.20 | 26.2.27 |
-| ChatWise | 0.9.81 | 0.9.82 |
-| WeChat for Mac | 4.1.7.31 | 4.1.7.33 |
-| Obsidian | 1.11.7 | 1.12.4 |
-| Zed | 0.225.9 | 0.225.10 |
-| Microsoft Edge | 145.0.3800.70 | 145.0.3800.82 |
-| calibre | 9.3.1 | 9.4.0 |
-| Badgeify | 1.12.5 | 1.12.6 |
-| DbGate | 7.1.0 | 7.1.1 |
-| 8x8_work | 8.30.2-10 | 8.31.3-1 |
-| Warp | 0.2026.02.18.08.22.stable | 0.2026.02.25.08.24.stable |
-| Lark | 7.61.9 | 7.62.7 |
-| Surfshark | 4.26.0 | 4.26.1 |
-| Roam Research | 0.0.34 | 0.0.35 |
+| Readest | 0.9.100 | 0.9.101 |
+| ChatWise | 0.9.82 | 0.10.1 |
+| LM Studio | 0.4.5 | 0.4.6 |
+| Krita | 5.2.15 | 5.2.16 |
+| REAPER | 7.61 | 7.62 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| DevKnife | 1.10.0 | 1.10.1 |
-| digiexam | 25.4.32 | 25.4.49 |
-| GDevelop | 5.6.258 | 5.6.259 |
-| Mellel | 6.6.0 | 6.6.1 |
+| LaunchOS | 1.5.2 | 1.5.3 |
+| Lunar | 6.9.8 | 6.9.9 |
 | Multi | 0.538.2 | 3.0.2 |
-| OmniPlan | 4.10.1 | 4.10.2 |
-| OpenRefine | 3.9.5 | 3.10.0 |
-| Shotcut | 26.1.30 | 26.2.26 |
-| Claude Code | 2.1.59 | 2.1.62 |
+| Nagstamon | 3.16.2 | 3.18.0 |
+| WebCatalog | 73.10.1 | 73.11.0 |
+| Claude Code | 2.1.62 | 2.1.63 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
