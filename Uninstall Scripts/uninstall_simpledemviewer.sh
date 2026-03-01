@@ -21,12 +21,12 @@ pkill -f "SimpleDEMViewer" 2>/dev/null || true
 echo "Stopping application with bundle ID jp.jizoh.SDVr* if running..."
 killall -9 "jp.jizoh.SDVr*" 2>/dev/null || true
 
-# Remove /Applications/SimpleDEMViewer 8.5.2/SimpleDEMViewer.app
-echo "Removing /Applications/SimpleDEMViewer 8.5.2/SimpleDEMViewer.app..."
-if [ -d "/Applications/SimpleDEMViewer 8.5.2/SimpleDEMViewer.app" ]; then
-    rm -rf "/Applications/SimpleDEMViewer 8.5.2/SimpleDEMViewer.app" 2>/dev/null || true
-elif [ -f "/Applications/SimpleDEMViewer 8.5.2/SimpleDEMViewer.app" ]; then
-    rm -f "/Applications/SimpleDEMViewer 8.5.2/SimpleDEMViewer.app" 2>/dev/null || true
+# Remove /Applications/SimpleDEMViewer 8.5.3/SimpleDEMViewer.app
+echo "Removing /Applications/SimpleDEMViewer 8.5.3/SimpleDEMViewer.app..."
+if [ -d "/Applications/SimpleDEMViewer 8.5.3/SimpleDEMViewer.app" ]; then
+    rm -rf "/Applications/SimpleDEMViewer 8.5.3/SimpleDEMViewer.app" 2>/dev/null || true
+elif [ -f "/Applications/SimpleDEMViewer 8.5.3/SimpleDEMViewer.app" ]; then
+    rm -f "/Applications/SimpleDEMViewer 8.5.3/SimpleDEMViewer.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/jp.jizoh.SDVr8.plist
