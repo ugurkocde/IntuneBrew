@@ -1,7 +1,7 @@
 {
   "app_name": "Tailscale",
   "app_key": "tailscale",
-  "last_updated": "2026-02-28",
+  "last_updated": "2026-03-01",
   "total_cves": 3,
   "summary": {
     "critical": 1,

@@ -1,7 +1,7 @@
 {
   "app_name": "Whatsapp",
   "app_key": "whatsapp",
-  "last_updated": "2026-02-28",
+  "last_updated": "2026-03-01",
   "total_cves": 42,
   "summary": {
     "critical": 15,
