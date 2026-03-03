@@ -1,12 +1,12 @@
 {
   "name": "Charmstone",
   "description": "App launcher and switcher",
-  "version": "1.43",
-  "url": "https://charmstone.app/downloads/Charmstone1.43.dmg",
+  "version": "1.44",
+  "url": "https://charmstone.app/downloads/Charmstone1.44.dmg",
   "bundleId": "com.knollsoft.Charmstone",
   "homepage": "https://charmstone.app/",
-  "fileName": "Charmstone1.43.dmg",
-  "sha": "6e2ebbf6e626dd326cf6ab11aa4d43c745ddb9f07e94ca7a8c96218e825fa8db",
+  "fileName": "Charmstone1.44.dmg",
+  "sha": "04b9a560a395abd4d731c7d4ffa4b091e595d3892cd93289b08f8248f5e459de",
   "category": "Productivity",
   "publisher": "Charmstone",
   "previous_version": "1.43"

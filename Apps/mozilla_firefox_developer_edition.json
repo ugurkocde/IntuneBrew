@@ -1,12 +1,12 @@
 {
   "name": "Mozilla Firefox Developer Edition",
   "description": "Web browser",
-  "version": "149.0b2",
-  "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/149.0b2/mac/en-US/Firefox%20149.0b2.dmg",
+  "version": "149.0b3",
+  "url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/149.0b3/mac/en-US/Firefox%20149.0b3.dmg",
   "bundleId": "org.mozilla.firefoxdeveloperedition",
   "homepage": "https://www.mozilla.org/firefox/developer/",
-  "fileName": "Firefox 149.0b2.dmg",
-  "sha": "f9f4bd55b0faea74fe70c14980d72b1a96ec95ebbcaf13110fb345f4fc822849",
+  "fileName": "Firefox 149.0b3.dmg",
+  "sha": "32a6a23ca4f6ac3e04fcb89e326ae351c1a0cb410e36df6a62a8165c28661a68",
   "category": "Browsers",
   "publisher": "Mozilla Foundation",
   "previous_version": "149.0b2"

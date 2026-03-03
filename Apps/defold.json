@@ -1,12 +1,12 @@
 {
   "name": "Defold",
   "description": "Game engine for development of desktop, mobile and web games",
-  "version": "1.12.1",
-  "url": "https://github.com/defold/defold/releases/download/1.12.1/Defold-arm64-macos.dmg",
+  "version": "1.12.2",
+  "url": "https://github.com/defold/defold/releases/download/1.12.2/Defold-arm64-macos.dmg",
   "bundleId": "com.defold.editor",
   "homepage": "https://defold.com/",
   "fileName": "Defold-arm64-macos.dmg",
-  "sha": "5931727e3808d2ea36b3cf5b41c071ff6d687140a245e1ad3fbfc0fd3d0522d7",
+  "sha": "545eca9ab3cc38f50064765e3bed25155b868ae9cfed610f49010ae502134435",
   "category": "Developer Tools",
   "publisher": "Defold Foundation",
   "previous_version": "1.12.1"
