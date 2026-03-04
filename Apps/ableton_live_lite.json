@@ -1,12 +1,12 @@
 {
   "name": "Ableton Live Lite",
   "description": "Sound and music editor",
-  "version": "12.3.5",
-  "url": "https://cdn-downloads.ableton.com/channels/12.3.5/ableton_live_lite_12.3.5_universal.dmg",
+  "version": "12.3.6",
+  "url": "https://cdn-downloads.ableton.com/channels/12.3.6/ableton_live_lite_12.3.6_universal.dmg",
   "bundleId": "com.ableton.live",
   "homepage": "https://www.ableton.com/en/products/live-lite/",
-  "fileName": "ableton_live_lite_12.3.5_universal.dmg",
-  "sha": "8dba8cc0a59429e6cb3eb380c40dd6e9085b7f1ea15e4bca79df0da0fc1ee163",
+  "fileName": "ableton_live_lite_12.3.6_universal.dmg",
+  "sha": "aa4ebbefe3dd6073606c87287476a0d904e0a8395bb6c2892153cdc187f61127",
   "category": "Media",
   "publisher": "Ableton",
   "previous_version": "12.3.5"

@@ -1,13 +1,13 @@
 {
   "name": "GOG Galaxy",
   "description": "Game client",
-  "version": "2.0.94.27",
-  "url": "https://gog-cdn-fastly.gog.com/open/galaxy/client/galaxy_client_2.0.94.27.pkg",
+  "version": "2.0.95.66",
+  "url": "https://gog-cdn-fastly.gog.com/open/galaxy/client/galaxy_client_2.0.95.66.pkg",
   "bundleId": "com.gog.galaxy",
   "homepage": "https://www.gog.com/galaxy",
-  "fileName": "galaxy_client_2.0.94.27.pkg",
+  "fileName": "galaxy_client_2.0.95.66.pkg",
   "type": "pkg",
-  "sha": "0ce78d8024066f8294085cb179e6def098ec21bed5148dbff9c25227bae315dc",
+  "sha": "eacc2c23cca99d7b138c687828a437a808ac2649dd7485b2dd3b2319fe607eab",
   "category": "Other",
   "publisher": "GOG.com",
   "previous_version": "2.0.94.27"

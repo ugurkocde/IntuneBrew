@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -377,42 +377,53 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-03 00:41 UTC*
+*Last checked: 2026-03-04 00:50 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 149.0b2 | 149.0b3 |
-| Dockside | 2.0.2 | 2.0.3 |
-| DockDoor | 1.31.2 | 1.32.1 |
-| ChatWise | 0.10.4 | 0.10.5 |
-| Skim | 1.7.12 | 1.7.13 |
-| Trae | 2.3.10208 | 2.3.11009 |
-| Discord | 0.0.378 | 0.0.379 |
-| DuckDuckGo | 1.178.3 | 1.179.0 |
-| Raycast | 1.104.7 | 1.104.8 |
-| Privileges | 2.5.0 | 2.5.1 |
-| BoltAI 2 | 2.8.1 | 2.8.2 |
-| DbGate | 7.1.1 | 7.1.2 |
-| Sensei | 2.0 | 2.0.1 |
-| TablePlus | 6.8.0 | 6.8.2 |
-| Capacities | 1.58.71 | 1.59.1 |
-| Ungoogled Chromium | 145.0.7632.45-1.1 | 145.0.7632.116-1.1 |
+| OmniOutliner | 6.0.3 | 6.0.4 |
+| Postico | 2.3.2 | 2.3.3 |
+| Requestly | 26.2.27 | 26.3.3 |
+| NVIDIA GeForce NOW | 2.0.82.163 | 2.0.82.177 |
+| Downie | 4.11.13 | 4.11.14 |
+| Android Studio | 2025.3.1.8 | 2025.3.2.6 |
+| Dropbox | 242.4.5815 | 243.4.6956 |
+| Krisp | 3.10.10 | 3.10.12 |
+| Elgato Stream Deck | 7.2.1.22472 | 7.3.0.22599 |
+| Google Drive | 121.0.1 | 122.0.1 |
+| Santa | 2026.1 | 2026.2 |
+| iMazing | 3.5.0 | 3.5.1 |
+| Zed | 0.225.10 | 0.225.12 |
+| Opera | 128.0.5807.25 | 128.0.5807.37 |
+| Remote Desktop Manager | 2025.3.10.2 | 2026.1.8.6 |
+| Lunacy | 12.3 | 13.0 |
+| Milanote | 3.18.80 | 3.18.81 |
+| Roon | 2.60 | 2.61 |
+| Ableton Live Lite | 12.3.5 | 12.3.6 |
+| Ableton Live Suite | 12.3.5 | 12.3.6 |
+| Actual | 26.2.1 | 26.3.0 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Defold | 1.12.1 | 1.12.2 |
-| Akiflow | 2.67.10 | 2.68.3 |
-| Charmstone | 1.43 | 1.44 |
-| digiexam | 25.4.49 | 25.4.50 |
-| Electrum | 4.7.0 | 4.7.1 |
-| Loom | 0.335.1 | 0.336.4 |
-| Mendeley Reference Manager | 2.142.0 | 2.143.0 |
+| Bitfocus Companion | 4.2.4 | 4.2.5 |
+| Akiflow | 2.68.3 | 2.68.4 |
+| FileMaker Pro | 22.0.4.406 | 22.0.5.500 |
+| GDevelop | 5.6.259 | 5.6.260 |
+| Granola | 7.41.2 | 7.45.0 |
+| LibreCAD | 2.2.1.3 | 2.2.1.4 |
+| Modern CSV | 2.3 | 2.3.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| BasicTeX | 2025.0308 | 2026.0301 |
-| Okta Verify | 9.56.1 | 9.57.2 |
-| Adobe Acrobat Pro DC | 25.001.21223 | 25.001.21265 |
+| Pale Moon | 34.0.1 | 34.1.0 |
+| Pitch | 2.115.0 | 2.116.0 |
+| Shapr3D | 26.22.0.10470 | 26.30.0.10505 |
+| Smartsheet | 1.0.53 | 1.0.54 |
+| Wealthfolio | 3.0.0 | 3.0.2 |
+| Insta360 Studio | 5.9.0 | 5.9.2 |
+| GOG Galaxy | 2.0.94.27 | 2.0.95.66 |
+| Microsoft Outlook | 16.106.26022219 | 16.106.26030211 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

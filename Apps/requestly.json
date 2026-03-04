@@ -1,12 +1,12 @@
 {
   "name": "Requestly",
   "description": "Intercept and modify HTTP requests",
-  "version": "26.2.27",
-  "url": "https://github.com/requestly/requestly-desktop-app/releases/download/v26.2.27/Requestly-26.2.27-arm64.dmg",
+  "version": "26.3.3",
+  "url": "https://github.com/requestly/requestly-desktop-app/releases/download/v26.3.3/Requestly-26.3.3-arm64.dmg",
   "bundleId": "io.requestly.beta",
   "homepage": "https://requestly.com/",
-  "fileName": "Requestly-26.2.27-arm64.dmg",
-  "sha": "1cabedff61b95fa287f105769aef75084f155b0f7628924372ebef4f24fffd73",
+  "fileName": "Requestly-26.3.3-arm64.dmg",
+  "sha": "8f4f3da94376b797717aaa98dfe3ad27cd75234e3e227ce4e34b817c3e82755f",
   "category": "Developer Tools",
   "publisher": "Requestly",
   "previous_version": "26.2.27"

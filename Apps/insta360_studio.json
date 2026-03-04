@@ -1,13 +1,13 @@
 {
   "name": "Insta360 Studio",
   "description": "Video and photo editor",
-  "version": "5.9.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/insta360_studio_5.9.0.pkg",
+  "version": "5.9.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/insta360_studio_5.9.2.pkg",
   "bundleId": "com.insta360.studio",
   "homepage": "https://www.insta360.com/",
-  "fileName": "insta360_studio_5.9.0.pkg",
+  "fileName": "insta360_studio_5.9.2.pkg",
   "type": "pkg_in_pkg",
-  "sha": "dfc55d9aa3e54a7b01b77f34ce30c20abf3d3a6a9f1568e52001dc8270097db0",
+  "sha": "a513bcd2845c552e2e3591f58827522f4d00d9ef11754e07f177e79db4cf8450",
   "category": "Media",
   "publisher": "Insta360",
   "previous_version": "5.9.0"
