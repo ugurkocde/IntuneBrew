@@ -17,12 +17,12 @@ fi
 echo "Stopping Rambox if running..."
 pkill -f "Rambox" 2>/dev/null || true
 
-# Remove /Applications/Rambox.app
-echo "Removing /Applications/Rambox.app..."
-if [ -d "/Applications/Rambox.app" ]; then
-    rm -rf "/Applications/Rambox.app" 2>/dev/null || true
-elif [ -f "/Applications/Rambox.app" ]; then
-    rm -f "/Applications/Rambox.app" 2>/dev/null || true
+# Remove /Applications/Rambox-darwin-universal/Rambox.app
+echo "Removing /Applications/Rambox-darwin-universal/Rambox.app..."
+if [ -d "/Applications/Rambox-darwin-universal/Rambox.app" ]; then
+    rm -rf "/Applications/Rambox-darwin-universal/Rambox.app" 2>/dev/null || true
+elif [ -f "/Applications/Rambox-darwin-universal/Rambox.app" ]; then
+    rm -f "/Applications/Rambox-darwin-universal/Rambox.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/CrashReporter/Rambox Helper_*.plist
