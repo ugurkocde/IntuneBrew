@@ -1,12 +1,12 @@
 {
   "name": "FontBase",
   "description": "Font manager",
-  "version": "2026.2.0",
-  "url": "https://releases.fontba.se/mac/FontBase-2026.2.0.dmg",
+  "version": "2026.2.5",
+  "url": "https://releases.fontba.se/mac/FontBase-2026.2.5.dmg",
   "bundleId": "com.dominiklevitsky.fontbase",
   "homepage": "https://fontba.se/",
-  "fileName": "FontBase-2026.2.0.dmg",
-  "sha": "24bea36b36de5267272f848e5b8bb5a5c2784411d51d1400762eaa2c00747161",
+  "fileName": "FontBase-2026.2.5.dmg",
+  "sha": "92b060a14602cad3d3884912d5e29abe6611862b223c9c77da107ac62bb20f36",
   "category": "Design",
   "publisher": "FontBase",
   "previous_version": "2026.2.0"

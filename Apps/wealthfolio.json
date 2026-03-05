@@ -1,13 +1,13 @@
 {
   "name": "Wealthfolio",
   "description": "Investment portfolio tracker",
-  "version": "3.0.2",
-  "url": "https://github.com/afadil/wealthfolio/releases/download/v3.0.2/Wealthfolio_3.0.2_aarch64.dmg",
+  "version": "3.0.3",
+  "url": "https://github.com/afadil/wealthfolio/releases/download/v3.0.3/Wealthfolio_3.0.3_aarch64.dmg",
   "bundleId": "app.wealthfolio.desktop",
   "homepage": "https://wealthfolio.app/",
-  "fileName": "Wealthfolio_3.0.2_aarch64.dmg",
-  "sha": "5c64f4ec0e816e59c129b8607b6ccc6c398f4843c07da4fb43a9e06f5361155f",
+  "fileName": "Wealthfolio_3.0.3_aarch64.dmg",
+  "sha": "c364c901188590d453ab26cc901df3e5193d77312820c27ad28a514afb347d5b",
   "category": "Productivity",
   "publisher": "Wealthfolio",
-  "previous_version": "3.0.0"
+  "previous_version": "3.0.2"
 }

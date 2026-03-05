@@ -1,12 +1,12 @@
 {
   "name": "QuickLook Video",
   "description": "Thumbnails, static previews, cover art and metadata for video files",
-  "version": "3.03",
-  "url": "https://github.com/Marginal/QLVideo/releases/download/rel-303/QLVideo_303.dmg",
+  "version": "3.04",
+  "url": "https://github.com/Marginal/QLVideo/releases/download/rel-304/QLVideo_304.dmg",
   "bundleId": "com.apple.uk.org.marginal.qlvideo",
   "homepage": "https://github.com/Marginal/QLVideo",
-  "fileName": "QLVideo_303.dmg",
-  "sha": "46a98668c10ba6e260bc4c65e6bd2cb628dc659ed598520a2d15d4b48be25633",
+  "fileName": "QLVideo_304.dmg",
+  "sha": "f39774763656cec6f97288e152c323c310acfdc2dd0ceaf761d43c0ebbe92294",
   "category": "Media",
   "publisher": "Marginal",
   "previous_version": "3.03"
