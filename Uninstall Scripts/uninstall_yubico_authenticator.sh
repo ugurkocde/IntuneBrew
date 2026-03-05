@@ -25,20 +25,20 @@ elif [ -f "/Applications/Yubico Authenticator.app" ]; then
     rm -f "/Applications/Yubico Authenticator.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Scripts/com.yubico.authenticator
-echo "Removing $HOME/Library/Application Scripts/com.yubico.authenticator..."
-if [ -d "$HOME/Library/Application Scripts/com.yubico.authenticator" ]; then
-    rm -rf "$HOME/Library/Application Scripts/com.yubico.authenticator" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/com.yubico.authenticator" ]; then
-    rm -f "$HOME/Library/Application Scripts/com.yubico.authenticator" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/com.yubico.yubioath
+echo "Removing $HOME/Library/Application Scripts/com.yubico.yubioath..."
+if [ -d "$HOME/Library/Application Scripts/com.yubico.yubioath" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.yubico.yubioath" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.yubico.yubioath" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.yubico.yubioath" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.yubico.authenticator
-echo "Removing $HOME/Library/Containers/com.yubico.authenticator..."
-if [ -d "$HOME/Library/Containers/com.yubico.authenticator" ]; then
-    rm -rf "$HOME/Library/Containers/com.yubico.authenticator" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.yubico.authenticator" ]; then
-    rm -f "$HOME/Library/Containers/com.yubico.authenticator" 2>/dev/null || true
+# Remove $HOME/Library/Containers/com.yubico.yubioath
+echo "Removing $HOME/Library/Containers/com.yubico.yubioath..."
+if [ -d "$HOME/Library/Containers/com.yubico.yubioath" ]; then
+    rm -rf "$HOME/Library/Containers/com.yubico.yubioath" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.yubico.yubioath" ]; then
+    rm -f "$HOME/Library/Containers/com.yubico.yubioath" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
