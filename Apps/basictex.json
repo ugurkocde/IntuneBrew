@@ -1,14 +1,14 @@
 {
   "name": "BasicTeX",
   "description": "Compact TeX distribution as alternative to the full TeX Live / MacTeX",
-  "version": "2025.0308",
-  "url": "https://mirror.ctan.org/systems/mac/mactex/mactex-basictex-20250308.pkg",
+  "version": "2026.0301",
+  "url": "https://mirror.ctan.org/systems/mac/mactex/mactex-basictex-20260301.pkg",
   "bundleId": "org.tug.mactex.basictex2025",
   "homepage": "https://www.tug.org/mactex/morepackages.html",
-  "fileName": "mactex-basictex-20250308.pkg",
+  "fileName": "mactex-basictex-20260301.pkg",
   "type": "pkg",
-  "sha": "2ad4c72a6cd4dd81eccece1e6933351c9324aa33d7d6095c1efa65ba8bd6d988",
+  "sha": "19164fbfef08c30fd433f59203c8804abbbd685d3a344ef7f0ba8c1fd4157cb3",
   "category": "Developer Tools",
   "publisher": "The TeX Users Group",
-  "previous_version": "2025.0308"
+  "previous_version": "2026.0301"
 }

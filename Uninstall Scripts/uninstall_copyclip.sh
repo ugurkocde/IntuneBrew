@@ -17,9 +17,9 @@ fi
 echo "Stopping CopyClip if running..."
 pkill -f "CopyClip" 2>/dev/null || true
 
-# Kill application with bundle ID com.fiplab.copyclip2 if running
-echo "Stopping application with bundle ID com.fiplab.copyclip2 if running..."
-killall -9 "com.fiplab.copyclip2" 2>/dev/null || true
+# Kill application with bundle ID com.fiplab.copyclip3 if running
+echo "Stopping application with bundle ID com.fiplab.copyclip3 if running..."
+killall -9 "com.fiplab.copyclip3" 2>/dev/null || true
 
 # Remove /Applications/CopyClip 2.app
 echo "Removing /Applications/CopyClip 2.app..."

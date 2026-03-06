@@ -1,14 +1,14 @@
 {
   "name": "Framer",
   "description": "Tool that helps teams design every part of the product experience",
-  "version": "2026.8.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/framer_2026.8.0.pkg",
+  "version": "2026.9.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/framer_2026.9.1.pkg",
   "bundleId": "com.framer.electron",
   "homepage": "https://www.framer.com/",
-  "fileName": "framer_2026.8.0.pkg",
+  "fileName": "framer_2026.9.1.pkg",
   "type": "app",
-  "sha": "6751de361396f6f0ef19a89b75361972fb37e19e58d736bffa0df63ae1047751",
+  "sha": "4dfe4998b4661b1ef8ad2da43ab3802d869e775efaef80baed8f2c402029ef99",
   "category": "Design",
   "publisher": "Framer B.V.",
-  "previous_version": "2026.8.0"
+  "previous_version": "2026.9.1"
 }

@@ -1,14 +1,14 @@
 {
   "name": "Reflect Notes",
   "description": "Note taking app for meetings, ideas, journalling, and research",
-  "version": "3.1.11",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/reflect_notes_3.1.11.pkg",
+  "version": "3.1.12",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/reflect_notes_3.1.12.pkg",
   "bundleId": "app.reflect.ReflectDesktop",
   "homepage": "https://reflect.app/",
-  "fileName": "reflect_notes_3.1.11.pkg",
+  "fileName": "reflect_notes_3.1.12.pkg",
   "type": "app",
-  "sha": "aa5371ec3fb22c08d3d287530935ee3072f24d7c1c2c0a52fe7e50f0dbd9db13",
+  "sha": "8a7924b1fa61aabdd4c88c86c5e23da19d4e6ac0221f81f2539c7debe2e1d569",
   "category": "Productivity",
   "publisher": "Reflect",
-  "previous_version": "3.1.11"
+  "previous_version": "3.1.12"
 }

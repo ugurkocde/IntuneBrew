@@ -1,14 +1,14 @@
 {
   "name": "MacTeX",
   "description": "Full TeX Live distribution with GUI applications",
-  "version": "2025.0308",
-  "url": "https://mirror.ctan.org/systems/mac/mactex/mactex-20250308.pkg",
+  "version": "2026.0301",
+  "url": "https://mirror.ctan.org/systems/mac/mactex/mactex-20260301.pkg",
   "bundleId": "org.tug.mactex.gui2024",
   "homepage": "https://www.tug.org/mactex/",
-  "fileName": "mactex-20250308.pkg",
-  "sha": "be084f849e545d9e9511b791da07ca4f9f33d85d42bb69dade636e345421ab7c",
+  "fileName": "mactex-20260301.pkg",
+  "sha": "61f8ec54441b9f4ac831df9728ab149c0a39ecdaceff04302fabf7301a57c346",
   "changelog": "https://www.tug.org/mactex/changelog.html",
   "category": "Developer Tools",
   "publisher": "The MacTeX Project",
-  "previous_version": "2025.0308"
+  "previous_version": "2026.0301"
 }

@@ -1,14 +1,14 @@
 {
   "name": "NeoFinder",
   "description": "Digital media asset manager",
-  "version": "9.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/neofinder_9.1.pkg",
+  "version": "9.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/neofinder_9.2.pkg",
   "bundleId": "de.wfs-apps.neofinder",
   "homepage": "https://www.cdfinder.de/",
-  "fileName": "neofinder_9.1.pkg",
+  "fileName": "neofinder_9.2.pkg",
   "type": "app",
-  "sha": "dab75e7f6fc62d450faffd7a5830f02295c5d4c4ae037fde4392466080b3b410",
-  "previous_version": "9.1",
+  "sha": "a1b2a5d97f4001762bc49dbb25d7eaaa6a71542f3690cc311b9aaf46cc19ca10",
+  "previous_version": "9.2",
   "category": "Media",
   "publisher": "Dirk Krause"
 }

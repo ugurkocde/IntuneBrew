@@ -1,13 +1,13 @@
 {
   "name": "Modern CSV",
   "description": "CSV editor",
-  "version": "2.3",
-  "url": "https://www.moderncsv.com/release/ModernCSV-Mac-v2.3.dmg",
+  "version": "2.3.1",
+  "url": "https://www.moderncsv.com/release/ModernCSV-Mac-v2.3.1.dmg",
   "bundleId": "net.galliumdigital.Modern-CSV",
   "homepage": "https://www.moderncsv.com/",
-  "fileName": "ModernCSV-Mac-v2.3.dmg",
-  "sha": "b79e5144f65708d690b70c6f1fe3caf3c2e14cc1aae2fc85a21c49e23172fa92",
+  "fileName": "ModernCSV-Mac-v2.3.1.dmg",
+  "sha": "b691f5881cd0884ee52a1262f91acfbdb60bdd5a2569ed24e7edcc8e81f6c3d0",
   "category": "Productivity",
   "publisher": "Modern CSV",
-  "previous_version": "2.3"
+  "previous_version": "2.3.1"
 }

@@ -25,12 +25,12 @@ elif [ -f "/usr/local/texlive/texmf-local" ]; then
     rm -f "/usr/local/texlive/texmf-local" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/texlive/2025basic
-echo "Removing $HOME/Library/texlive/2025basic..."
-if [ -d "$HOME/Library/texlive/2025basic" ]; then
-    rm -rf "$HOME/Library/texlive/2025basic" 2>/dev/null || true
-elif [ -f "$HOME/Library/texlive/2025basic" ]; then
-    rm -f "$HOME/Library/texlive/2025basic" 2>/dev/null || true
+# Remove $HOME/Library/texlive/2026basic
+echo "Removing $HOME/Library/texlive/2026basic..."
+if [ -d "$HOME/Library/texlive/2026basic" ]; then
+    rm -rf "$HOME/Library/texlive/2026basic" 2>/dev/null || true
+elif [ -f "$HOME/Library/texlive/2026basic" ]; then
+    rm -f "$HOME/Library/texlive/2026basic" 2>/dev/null || true
 fi
 
 # Remove /usr/local/texlive
