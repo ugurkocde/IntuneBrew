@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -379,48 +379,46 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-05 00:50 UTC*
+*Last checked: 2026-03-06 00:47 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 149.0b3 | 149.0b4 |
-| Wave Terminal | 0.14.0 | 0.14.1 |
-| Rectangle Pro | 3.70 | 3.72 |
-| RsyncUI | 2.9.0 | 2.9.1 |
-| QuickLook Video | 3.03 | 3.04 |
-| Zoom | 6.7.6.75444 | 6.7.7.76486 |
-| Slack | 4.48.95 | 4.48.99 |
-| Grammarly Desktop | 1.154.0.0 | 1.155.0.0 |
-| Brave | 1.87.191.0 | 1.87.192.0 |
-| Zed | 0.225.12 | 0.226.4 |
-| MacTeX | 2025.0308 | 2026.0301 |
-| JetBrains Toolbox | 3.3 | 3.3.1 |
-| FontBase | 2026.2.0 | 2026.2.5 |
-| Roon | 2.61 | 2.62 |
+| UPDF | 2.1.3 | 2.2.0 |
+| Rive | 0.8.4359 | 0.8.4375 |
+| Ente | 1.7.18 | 1.7.21 |
+| FreeTube | 0.23.13 | 0.23.14 |
+| WeChat for Mac | 4.1.7.33 | 4.1.7.57 |
+| RustDesk | 1.4.5 | 1.4.6 |
+| Google Chrome | 145.0.7632.117 | 145.0.7632.160 |
+| Bitwarden | 2026.1.1 | 2026.2.1 |
+| Webex | 46.2.1.34187 | 46.3.0.34324 |
+| Krisp | 3.10.12 | 3.10.14 |
+| pgAdmin4 | 9.12 | 9.13 |
+| Insomnia | 12.3.1 | 12.4.0 |
+| Beekeeper Studio | 5.5.7 | 5.6.0 |
+| Hoppscotch | 26.2.0-0 | 26.2.1-0 |
+| Deezer | 7.1.90 | 7.1.100 |
+| Opera GX | 127.0.5778.96 | 128.0.5807.51 |
+| Wirecast | 16.5.0 | 16.5.1 |
+| BibDesk | 1.9.10 | 1.9.11 |
+| Bria | 6.8.5 | 6.8.6 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| JASP | 0.95.4.0 | 0.96.0.0 |
-| Loom | 0.336.4 | 0.336.5 |
+| Electron Cash | 4.4.2 | 4.4.3 |
+| 010 Editor | 16.0.3 | 16.0.4 |
+| 4K YouTube to MP3 | 26.0.5 | 26.0.6 |
+| Nektony App Cleaner & Uninstaller | 9.1 | 9.1.1 |
+| GDevelop | 5.6.260 | 5.6.261 |
+| Granola | 7.45.0 | 7.54.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Tuta Mail | 331.260224.0 | 332.260303.0 |
-| Wealthfolio | 3.0.2 | 3.0.3 |
-| XnViewMP | 1.9.10 | 1.10.3 |
-| Yubico Authenticator | 7.3.0 | 7.3.2 |
-| Claude Code | 2.1.63 | 2.1.68 |
-| ChatGPT Atlas | 1.2026.49.8 | 1.2026.56.5 |
-| Studio | 2.26.1 | 2.26.2 |
-| digiKam | 8.8.0 | 9.0.0 |
-| Microsoft Excel | 16.106.26022219 | 16.106.26030211 |
-| Microsoft PowerPoint | 16.106.26022219 | 16.106.26030211 |
-| Microsoft Word | 16.106.26022219 | 16.106.26030211 |
-| Salesforce CLI | 2.124.7 | 2.125.2 |
-| Tableau Public | 2025.3.3 | 2026.1.0 |
-| Tableau Reader | 2025.3.3 | 2026.1.0 |
-| TeamViewer | 15.75.4 | 15.75.5 |
-| Tableau Desktop | 2025.3.3 | 2026.1.0 |
+| OpenRefine | 3.10.0 | 3.10.1 |
+| UltiMaker Cura | 5.11.0 | 5.12.0 |
+| Claude Code | 2.1.68 | 2.1.69 |
+| Perimeter 81 | 12.5.1.8141 | 12.6.0.8419 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
