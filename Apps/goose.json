@@ -1,14 +1,14 @@
 {
   "name": "Goose",
   "description": "Open source, extensible AI agent that goes beyond code suggestions",
-  "version": "1.27.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/goose_1.27.0.pkg",
+  "version": "1.27.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/goose_1.27.1.pkg",
   "bundleId": "com.electron.goose",
   "homepage": "https://block.github.io/goose/",
-  "fileName": "goose_1.27.0.pkg",
+  "fileName": "goose_1.27.1.pkg",
   "type": "app",
-  "sha": "741fea64e8cf4195e1e46566bb4e6631cef2fe666b23ad9d9cdeb70b1d6ddbbc",
-  "previous_version": "1.27.0",
+  "sha": "02ab46930386a3477b39444d2703a2618c0897ff41c3fc6545b896cc2773b2ac",
+  "previous_version": "1.27.1",
   "category": "Developer Tools",
   "publisher": "Block, Inc."
 }

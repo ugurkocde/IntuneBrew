@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -380,45 +380,45 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-06 00:47 UTC*
+*Last checked: 2026-03-07 00:44 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| UPDF | 2.1.3 | 2.2.0 |
-| Rive | 0.8.4359 | 0.8.4375 |
-| Ente | 1.7.18 | 1.7.21 |
-| FreeTube | 0.23.13 | 0.23.14 |
-| WeChat for Mac | 4.1.7.33 | 4.1.7.57 |
-| RustDesk | 1.4.5 | 1.4.6 |
-| Google Chrome | 145.0.7632.117 | 145.0.7632.160 |
-| Bitwarden | 2026.1.1 | 2026.2.1 |
-| Webex | 46.2.1.34187 | 46.3.0.34324 |
-| Krisp | 3.10.12 | 3.10.14 |
-| pgAdmin4 | 9.12 | 9.13 |
-| Insomnia | 12.3.1 | 12.4.0 |
-| Beekeeper Studio | 5.5.7 | 5.6.0 |
-| Hoppscotch | 26.2.0-0 | 26.2.1-0 |
-| Deezer | 7.1.90 | 7.1.100 |
-| Opera GX | 127.0.5778.96 | 128.0.5807.51 |
-| Wirecast | 16.5.0 | 16.5.1 |
-| BibDesk | 1.9.10 | 1.9.11 |
-| Bria | 6.8.5 | 6.8.6 |
+| Reqable | 3.0.38 | 3.0.39 |
+| Rive | 0.8.4375 | 0.8.4380 |
+| Dockside | 2.0.3 | 2.0.4 |
+| ChatWise | 0.10.5 | 0.10.7 |
+| Slack | 4.48.99 | 4.48.100 |
+| Elgato Stream Deck | 7.3.0.22599 | 7.3.1.22604 |
+| Zed | 0.226.4 | 0.226.5 |
+| VSCodium | 1.109.51242 | 1.110.01571 |
+| OneDrive | 26.017.0126.0002 | 26.022.0203.0006 |
+| Opera | 128.0.5807.37 | 128.0.5807.52 |
+| Amadine | 1.8 | 1.8.1 |
+| Warp | 0.2026.02.25.08.24.stable | 0.2026.03.04.08.20.stable |
+| Stremio | 5.1.14 | 5.1.16 |
+| ocenaudio | 3.17.2 | 3.17.3 |
+| REAPER | 7.62 | 7.64 |
+| Superkey | 1.59 | 1.60 |
+| Ungoogled Chromium | 145.0.7632.116-1.1 | 145.0.7632.159-1.1 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Electron Cash | 4.4.2 | 4.4.3 |
-| 010 Editor | 16.0.3 | 16.0.4 |
-| 4K YouTube to MP3 | 26.0.5 | 26.0.6 |
-| Nektony App Cleaner & Uninstaller | 9.1 | 9.1.1 |
-| GDevelop | 5.6.260 | 5.6.261 |
-| Granola | 7.45.0 | 7.54.0 |
+| Douyin | 7.3.0 | 7.4.0 |
+| Akiflow | 2.68.4 | 2.68.5 |
+| ClipBook | 1.33.1 | 1.34.0 |
+| massCode | 4.4.0 | 4.5.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| OpenRefine | 3.10.0 | 3.10.1 |
-| UltiMaker Cura | 5.11.0 | 5.12.0 |
-| Claude Code | 2.1.68 | 2.1.69 |
-| Perimeter 81 | 12.5.1.8141 | 12.6.0.8419 |
+| Shapr3D | 26.30.0.10505 | 26.32.0.10532 |
+| SoundAnchor | 1.6.1 | 1.6.2 |
+| Wealthfolio | 3.0.3 | 3.0.4 |
+| WebCatalog | 73.11.0 | 73.12.0 |
+| Claude Code | 2.1.69 | 2.1.70 |
+| kiro | 0.10.32 | 0.10.78 |
+| Malwarebytes for Mac | 5.20.1.3626 | 5.21.1.3705 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

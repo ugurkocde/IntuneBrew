@@ -1,12 +1,12 @@
 {
   "name": "REAPER",
   "description": "Digital audio production application",
-  "version": "7.62",
-  "url": "https://dlcf.reaper.fm/7.x/reaper762_universal.dmg",
+  "version": "7.64",
+  "url": "https://dlcf.reaper.fm/7.x/reaper764_universal.dmg",
   "bundleId": "com.cockos.reaper",
   "homepage": "https://www.reaper.fm/",
-  "fileName": "reaper762_universal.dmg",
-  "sha": "897dba992779e21e55643fd3bf6199ac9801eb05803929dc8a7228819b744ef1",
+  "fileName": "reaper764_universal.dmg",
+  "sha": "4bc15bbaf08eefeb81d0dee01536050d83aad929655a07c0ca4503ba6c4c5afb",
   "category": "Media",
   "publisher": "Cockos Incorporated",
   "previous_version": "7.62"
