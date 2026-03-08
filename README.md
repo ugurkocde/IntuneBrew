@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -381,44 +381,37 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-07 00:44 UTC*
+*Last checked: 2026-03-08 00:47 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Reqable | 3.0.38 | 3.0.39 |
-| Rive | 0.8.4375 | 0.8.4380 |
-| Dockside | 2.0.3 | 2.0.4 |
-| ChatWise | 0.10.5 | 0.10.7 |
-| Slack | 4.48.99 | 4.48.100 |
-| Elgato Stream Deck | 7.3.0.22599 | 7.3.1.22604 |
-| Zed | 0.226.4 | 0.226.5 |
-| VSCodium | 1.109.51242 | 1.110.01571 |
-| OneDrive | 26.017.0126.0002 | 26.022.0203.0006 |
-| Opera | 128.0.5807.37 | 128.0.5807.52 |
-| Amadine | 1.8 | 1.8.1 |
-| Warp | 0.2026.02.25.08.24.stable | 0.2026.03.04.08.20.stable |
-| Stremio | 5.1.14 | 5.1.16 |
-| ocenaudio | 3.17.2 | 3.17.3 |
-| REAPER | 7.62 | 7.64 |
-| Superkey | 1.59 | 1.60 |
-| Ungoogled Chromium | 145.0.7632.116-1.1 | 145.0.7632.159-1.1 |
+| Mozilla Firefox Developer Edition | 149.0b4 | 149.0b5 |
+| Vimcal | 1.0.42 | 1.0.45 |
+| Dockside | 2.0.4 | 2.0.6 |
+| Rocket.Chat | 4.12.0 | 4.13.0 |
+| Mos | 4.0.0 | 4.0.1 |
+| Microsoft Edge | 145.0.3800.82 | 145.0.3800.97 |
+| VSCodium | 1.110.01571 | 1.110.11602 |
+| Hidden Bar | 1.9 | 1.10 |
+| Fork | 2.62.1 | 2.63.2 |
+| Zettlr | 4.2.0 | 4.2.1 |
+| LinearMouse | 0.10.2 | 0.10.3 |
+| muCommander | 1.5.2-1 | 1.6.0-1 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Douyin | 7.3.0 | 7.4.0 |
-| Akiflow | 2.68.4 | 2.68.5 |
-| ClipBook | 1.33.1 | 1.34.0 |
-| massCode | 4.4.0 | 4.5.0 |
+| jamovi | 2.7.22.0 | 2.7.23.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Shapr3D | 26.30.0.10505 | 26.32.0.10532 |
-| SoundAnchor | 1.6.1 | 1.6.2 |
-| Wealthfolio | 3.0.3 | 3.0.4 |
-| WebCatalog | 73.11.0 | 73.12.0 |
-| Claude Code | 2.1.69 | 2.1.70 |
-| kiro | 0.10.32 | 0.10.78 |
-| Malwarebytes for Mac | 5.20.1.3626 | 5.21.1.3705 |
+| QGIS | 3.44.7 | 3.44.8 |
+| TickTick | 8.0.20 | 8.0.21 |
+| Wealthfolio | 3.0.4 | 3.0.5 |
+| Xmplify | 1.11.10 | 1.11.11 |
+| Zotero | 8.0.3 | 8.0.4 |
+| Claude Code | 2.1.70 | 2.1.71 |
+| Okta Verify | 9.57.2 | 9.57.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

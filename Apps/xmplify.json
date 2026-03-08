@@ -1,12 +1,12 @@
 {
   "name": "Xmplify",
   "description": "XML editor",
-  "version": "1.11.10",
-  "url": "https://xmplifyapp.com/releases/Xmplify-1.11.10.dmg",
+  "version": "1.11.11",
+  "url": "https://xmplifyapp.com/releases/Xmplify-1.11.11.dmg",
   "bundleId": "au.com.moso.Xmplify",
   "homepage": "https://xmplifyapp.com/",
-  "fileName": "Xmplify-1.11.10.dmg",
-  "sha": "5123abdecb7a267e0bd69e7bbdb1011d8713d374652c308738f18e46e41929be",
+  "fileName": "Xmplify-1.11.11.dmg",
+  "sha": "ed2bbb1f77bf83fd64f209ad487495cb03c05d7f61512e40e2e6b98dc93910ee",
   "category": "Developer Tools",
   "publisher": "Xmplify",
   "previous_version": "1.11.10"
