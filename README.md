@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -382,36 +382,22 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-08 00:47 UTC*
+*Last checked: 2026-03-09 00:41 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 149.0b4 | 149.0b5 |
-| Vimcal | 1.0.42 | 1.0.45 |
-| Dockside | 2.0.4 | 2.0.6 |
-| Rocket.Chat | 4.12.0 | 4.13.0 |
-| Mos | 4.0.0 | 4.0.1 |
-| Microsoft Edge | 145.0.3800.82 | 145.0.3800.97 |
-| VSCodium | 1.110.01571 | 1.110.11602 |
-| Hidden Bar | 1.9 | 1.10 |
-| Fork | 2.62.1 | 2.63.2 |
-| Zettlr | 4.2.0 | 4.2.1 |
-| LinearMouse | 0.10.2 | 0.10.3 |
-| muCommander | 1.5.2-1 | 1.6.0-1 |
+| Mos | 4.0.1 | 4.0.2 |
+| draw.io Desktop | 29.5.2 | 29.6.1 |
+| Stats | 2.12.1 | 2.12.3 |
+| VSCodium | 1.110.11602 | 1.110.11607 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| jamovi | 2.7.22.0 | 2.7.23.0 |
+| massCode | 4.5.0 | 4.6.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| QGIS | 3.44.7 | 3.44.8 |
-| TickTick | 8.0.20 | 8.0.21 |
-| Wealthfolio | 3.0.4 | 3.0.5 |
-| Xmplify | 1.11.10 | 1.11.11 |
-| Zotero | 8.0.3 | 8.0.4 |
-| Claude Code | 2.1.70 | 2.1.71 |
-| Okta Verify | 9.57.2 | 9.57.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
