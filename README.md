@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -383,21 +383,41 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-09 00:41 UTC*
+*Last checked: 2026-03-10 00:40 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mos | 4.0.1 | 4.0.2 |
-| draw.io Desktop | 29.5.2 | 29.6.1 |
-| Stats | 2.12.1 | 2.12.3 |
-| VSCodium | 1.110.11602 | 1.110.11607 |
+| Mozilla Firefox Developer Edition | 149.0b5 | 149.0b6 |
+| Studio 3T | 2026.4.0 | 2026.5.0 |
+| Proton Pass | 1.34.2 | 1.35.0 |
+| Syncovery | 11.13.4 | 11.13.5 |
+| Cryptomator | 1.18.0 | 1.19.0 |
+| MongoDB Compass | 1.49.2 | 1.49.3 |
+| Discord | 0.0.379 | 0.0.380 |
+| DuckDuckGo | 1.179.0 | 1.180.0 |
+| Ghostty | 1.2.3 | 1.3.0 |
+| VSCodium | 1.110.11607 | 1.110.11631 |
+| BoltAI 2 | 2.8.2 | 2.8.3 |
+| Apidog | 2.8.11 | 2.8.12 |
+| HandBrake | 1.10.2 | 1.11.0 |
+| AppFlowy | 0.11.3 | 0.11.4 |
+| Craft | 3.3.9 | 3.3.10 |
+| Disk Drill | 6.1.2111 | 6.2.2219 |
+| LinearMouse | 0.10.3 | 0.10.4 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| massCode | 4.5.0 | 4.6.0 |
+| Axure RP | 11.0.0.4134 | 11.0.0.4137 |
+| Fing Desktop | 3.10.0 | 3.10.1 |
+| iMazing Converter | 2.0.11 | 2.0.12 |
+| Lunar | 6.9.9 | 6.9.10 |
 | Multi | 0.538.2 | 3.0.2 |
+| Multitouch | 1.41 | 1.43 |
+| Riverside Studio | 1.20.0 | 1.21.0 |
+| TickTick | 8.0.21 | 8.0.30 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
