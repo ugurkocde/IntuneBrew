@@ -1,12 +1,12 @@
 {
   "name": "ChatGPT Atlas",
   "description": "OpenAI's official browser with ChatGPT built in",
-  "version": "1.2026.56.5",
-  "url": "https://persistent.oaistatic.com/atlas/public/ChatGPT_Atlas_Desktop_public_1.2026.56.5_20260302173142000.dmg",
+  "version": "1.2026.63.7",
+  "url": "https://persistent.oaistatic.com/atlas/public/ChatGPT_Atlas_Desktop_public_1.2026.63.7_20260309220323000.dmg",
   "bundleId": "com.openai.atlas",
   "homepage": "https://chatgpt.com/atlas",
-  "fileName": "ChatGPT_Atlas_Desktop_public_1.2026.56.5_20260302173142000.dmg",
-  "sha": "3c812979915e12568097bd52c0cdccee9cb5a68e54559e9feebcdf84da2863fe",
+  "fileName": "ChatGPT_Atlas_Desktop_public_1.2026.63.7_20260309220323000.dmg",
+  "sha": "b02b89f43a226773152efdb0a71ef13b5a4cfa65f9ea0decb82952b318f3315c",
   "category": "Browsers",
   "publisher": "OpenAI, Inc.",
   "previous_version": "1.2026.56.5"

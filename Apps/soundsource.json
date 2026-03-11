@@ -1,14 +1,14 @@
 {
   "name": "SoundSource",
   "description": "Sound and audio controller",
-  "version": "6.0.5",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/soundsource_6.0.5.pkg",
+  "version": "6.0.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/soundsource_6.0.4.pkg",
   "bundleId": "com.rogueamoeba.soundsource",
   "homepage": "https://rogueamoeba.com/soundsource/",
-  "fileName": "soundsource_6.0.5.pkg",
+  "fileName": "soundsource_6.0.4.pkg",
   "type": "app",
-  "previous_version": "6.0.5",
-  "sha": "9313d48c290c6ef80e8a73bf1209bd3ef2143e01f9668effdab1f5c2e26f155e",
+  "previous_version": "6.0.4",
+  "sha": "d617c578f8c50a76837bb3b41bb18f2de3f1c6a6136132d8cb1581309157c20d",
   "category": "Utilities",
   "publisher": "Rogue Amoeba"
 }

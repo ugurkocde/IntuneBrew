@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -384,40 +384,55 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-10 00:40 UTC*
+*Last checked: 2026-03-11 00:41 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 149.0b5 | 149.0b6 |
-| Studio 3T | 2026.4.0 | 2026.5.0 |
-| Proton Pass | 1.34.2 | 1.35.0 |
-| Syncovery | 11.13.4 | 11.13.5 |
-| Cryptomator | 1.18.0 | 1.19.0 |
-| MongoDB Compass | 1.49.2 | 1.49.3 |
-| Discord | 0.0.379 | 0.0.380 |
-| DuckDuckGo | 1.179.0 | 1.180.0 |
-| Ghostty | 1.2.3 | 1.3.0 |
-| VSCodium | 1.110.11607 | 1.110.11631 |
-| BoltAI 2 | 2.8.2 | 2.8.3 |
-| Apidog | 2.8.11 | 2.8.12 |
-| HandBrake | 1.10.2 | 1.11.0 |
-| AppFlowy | 0.11.3 | 0.11.4 |
-| Craft | 3.3.9 | 3.3.10 |
-| Disk Drill | 6.1.2111 | 6.2.2219 |
-| LinearMouse | 0.10.3 | 0.10.4 |
+| Threema | 1.2.49 | 1.2.50 |
+| SketchUp | 2026.1.188.46 | 2026.1.253.80 |
+| Vimcal | 1.0.45 | 1.0.46 |
+| SteerMouse | 5.7.7 | 5.7.8 |
+| Rive | 0.8.4380 | 0.8.4385 |
+| Mozilla Thunderbird | 148.0 | 148.0.1 |
+| Rectangle Pro | 3.72 | 3.73 |
+| Apifox | 2.8.11 | 2.8.13 |
+| Trae | 2.3.11009 | 2.3.12786 |
+| Mozilla Firefox | 148.0 | 148.0.2 |
+| KeePassXC | 2.7.11 | 2.7.12 |
+| Termius | 9.37.2 | 9.37.4 |
+| Splashtop Business | 3.8.0.5 | 3.8.0.6 |
+| Git Credential Manager | 2.7.0 | 2.7.3 |
+| Raycast | 1.104.8 | 1.104.9 |
+| Windsurf | 1.9566.11 | 1.9577.24 |
+| Opera | 128.0.5807.52 | 128.0.5807.66 |
+| Apidog | 2.8.12 | 2.8.13 |
+| Camtasia | 26.0.6 | 26.0.7 |
+| AlDente | 1.36.3 | 1.37 |
+| Typinator | 9.2 | 10.0 |
+| Ditto | 1.11.8 | 1.11.9 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Axure RP | 11.0.0.4134 | 11.0.0.4137 |
-| Fing Desktop | 3.10.0 | 3.10.1 |
-| iMazing Converter | 2.0.11 | 2.0.12 |
-| Lunar | 6.9.9 | 6.9.10 |
+| Dorico | 6.1.10 | 6.2 |
+| Anytype | 0.54.2 | 0.54.5 |
+| Granola | 7.54.0 | 7.57.0 |
+| Loom | 0.336.5 | 0.337.3 |
+| massCode | 4.6.0 | 4.7.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| Multitouch | 1.41 | 1.43 |
-| Riverside Studio | 1.20.0 | 1.21.0 |
-| TickTick | 8.0.21 | 8.0.30 |
+| Notesnook | 3.3.8 | 3.3.9 |
+| Pitch | 2.116.0 | 2.117.0 |
+| Tuta Mail | 332.260303.0 | 335.260310.0 |
+| Claude Code | 2.1.71 | 2.1.72 |
+| ChatGPT Atlas | 1.2026.56.5 | 1.2026.63.7 |
+| NordVPN | 9.14.0 | 9.15.0 |
+| Nota Gyazo GIF | 10.6.0 | 10.7.0 |
+| Microsoft Excel | 16.106.26030211 | 16.107.26030819 |
+| Microsoft PowerPoint | 16.106.26030211 | 16.107.26030819 |
+| Microsoft Word | 16.106.26030211 | 16.107.26030819 |
+| Adobe Acrobat Pro DC | 25.001.21265 | 25.001.21288 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

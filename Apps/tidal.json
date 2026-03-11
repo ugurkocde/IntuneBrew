@@ -1,14 +1,14 @@
 {
   "name": "TIDAL",
   "description": "Music streaming service with high fidelity sound and hi-def video quality",
-  "version": "2.40.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/tidal_2.40.0.pkg",
+  "version": "2.41.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tidal_2.41.3.pkg",
   "bundleId": "com.tidal.desktop",
   "homepage": "https://tidal.com/",
-  "fileName": "tidal_2.40.0.pkg",
+  "fileName": "tidal_2.41.3.pkg",
   "type": "app",
-  "sha": "eebfaaaf36b4157e88001e082c566b32ca5034f24cff302ce14555e1ff7be2b5",
+  "sha": "1460c868303fdb96fe0e777fd9ae9455550a8cd3d4ba048d364bb6b55a829d76",
   "category": "Media",
   "publisher": "TIDAL Ltd.",
-  "previous_version": "2.40.0"
+  "previous_version": "2.41.3"
 }
