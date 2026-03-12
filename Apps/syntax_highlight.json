@@ -1,14 +1,14 @@
 {
   "name": "Syntax Highlight",
   "description": "Quicklook extension for source files",
-  "version": "2.1.27",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/syntax_highlight_2.1.27.pkg",
+  "version": "2.1.28",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/syntax_highlight_2.1.28.pkg",
   "bundleId": "org.sbarex.SourceCodeSyntaxHighlight",
   "homepage": "https://github.com/sbarex/SourceCodeSyntaxHighlight",
-  "fileName": "syntax_highlight_2.1.27.pkg",
+  "fileName": "syntax_highlight_2.1.28.pkg",
   "type": "app",
-  "sha": "e99c7c73e979e387b3228f78cfe7c1fed83eba9146fce1639088d31e29156ef8",
+  "sha": "e6583d453e26f04a6478e19cfcdfdfd043e7cc3c39df4a2130cef294c2416bf4",
   "category": "Developer Tools",
   "publisher": "sbarex",
-  "previous_version": "2.1.27"
+  "previous_version": "2.1.28"
 }

@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -385,54 +385,60 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-11 00:41 UTC*
+*Last checked: 2026-03-12 00:42 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Threema | 1.2.49 | 1.2.50 |
-| SketchUp | 2026.1.188.46 | 2026.1.253.80 |
-| Vimcal | 1.0.45 | 1.0.46 |
-| SteerMouse | 5.7.7 | 5.7.8 |
-| Rive | 0.8.4380 | 0.8.4385 |
-| Mozilla Thunderbird | 148.0 | 148.0.1 |
-| Rectangle Pro | 3.72 | 3.73 |
-| Apifox | 2.8.11 | 2.8.13 |
-| Trae | 2.3.11009 | 2.3.12786 |
-| Mozilla Firefox | 148.0 | 148.0.2 |
-| KeePassXC | 2.7.11 | 2.7.12 |
-| Termius | 9.37.2 | 9.37.4 |
-| Splashtop Business | 3.8.0.5 | 3.8.0.6 |
-| Git Credential Manager | 2.7.0 | 2.7.3 |
-| Raycast | 1.104.8 | 1.104.9 |
-| Windsurf | 1.9566.11 | 1.9577.24 |
-| Opera | 128.0.5807.52 | 128.0.5807.66 |
-| Apidog | 2.8.12 | 2.8.13 |
-| Camtasia | 26.0.6 | 26.0.7 |
-| AlDente | 1.36.3 | 1.37 |
-| Typinator | 9.2 | 10.0 |
-| Ditto | 1.11.8 | 1.11.9 |
+| Mozilla Firefox Developer Edition | 149.0b6 | 149.0b7 |
+| Bitwig Studio | 5.3.13 | 6.0 |
+| RsyncUI | 2.9.1 | 2.9.2 |
+| Yaak | 2026.2.4 | 2026.3.0 |
+| QuickLook Video | 3.04 | 3.05 |
+| LibreWolf | 148.0 | 148.0.2 |
+| Downie | 4.11.14 | 4.12 |
+| Google Chrome | 145.0.7632.160 | 146.0.7680.72 |
+| Company Portal | 5.2601.0 | 5.2602.0 |
+| Grammarly Desktop | 1.155.0.0 | 1.156.1.0 |
+| MongoDB Compass | 1.49.3 | 1.49.4 |
+| Notion | 7.6.1 | 7.7.1 |
+| Brave | 1.87.192.0 | 1.88.127.0 |
+| BetterDisplay | 4.1.5 | 4.2.2 |
+| Zed | 0.226.5 | 0.227.1 |
+| kitty | 0.45.0 | 0.46.0 |
+| BoltAI 2 | 2.8.3 | 2.8.4 |
+| Apparency | 3.1 | 3.2 |
+| Epic Games Launcher | 19.2.0 | 19.2.2 |
+| Remote Desktop Manager | 2026.1.8.6 | 2026.1.8.7 |
+| Beekeeper Studio | 5.6.0 | 5.6.2 |
+| Lark | 7.62.7 | 7.63.8 |
+| Milanote | 3.18.81 | 3.18.83 |
+| Eclipse IDE for Eclipse Committers | 4.38 | 4.39 |
+| Eclipse IDE for Java Developers | 4.38 | 4.39 |
+| REAPER | 7.64 | 7.65 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Dorico | 6.1.10 | 6.2 |
-| Anytype | 0.54.2 | 0.54.5 |
-| Granola | 7.54.0 | 7.57.0 |
-| Loom | 0.336.5 | 0.337.3 |
-| massCode | 4.6.0 | 4.7.1 |
+| Eclipse IDE for C/C++ Developers | 4.38 | 4.39 |
+| Eclipse IDE for Java and DSL Developers | 4.38 | 4.39 |
+| Eclipse Installer | 4.38 | 4.39 |
+| Eclipse IDE for Java EE Developers | 4.38 | 4.39 |
+| Eclipse Modeling Tools | 4.38 | 4.39 |
+| Eclipse IDE for PHP Developers | 4.38 | 4.39 |
+| Eclipse for RCP and RAP Developers | 4.38 | 4.39 |
+| 4K YouTube to MP3 | 26.0.6 | 26.0.7 |
+| Fellow | 5.0.6 | 5.2.3 |
+| Loom | 0.337.3 | 0.337.5 |
 | Multi | 0.538.2 | 3.0.2 |
-| Notesnook | 3.3.8 | 3.3.9 |
-| Pitch | 2.116.0 | 2.117.0 |
-| Tuta Mail | 332.260303.0 | 335.260310.0 |
-| Claude Code | 2.1.71 | 2.1.72 |
-| ChatGPT Atlas | 1.2026.56.5 | 1.2026.63.7 |
-| NordVPN | 9.14.0 | 9.15.0 |
-| Nota Gyazo GIF | 10.6.0 | 10.7.0 |
-| Microsoft Excel | 16.106.26030211 | 16.107.26030819 |
-| Microsoft PowerPoint | 16.106.26030211 | 16.107.26030819 |
-| Microsoft Word | 16.106.26030211 | 16.107.26030819 |
-| Adobe Acrobat Pro DC | 25.001.21265 | 25.001.21288 |
+| QGIS | 3.44.8 | 4.0.0 |
+| Ukelele | 3.6.0 | 3.6.1 |
+| Claude Code | 2.1.72 | 2.1.73 |
+| Nextcloud | 4.0.6 | 4.0.7 |
+| Microsoft Outlook | 16.106.26030211 | 16.107.26030937 |
+| Salesforce CLI | 2.125.2 | 2.126.4 |
+| Adobe Acrobat Reader | 25.001.21223 | 25.001.21288 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
