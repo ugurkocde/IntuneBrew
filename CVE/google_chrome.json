@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-03-11",
+  "last_updated": "2026-03-12",
   "total_cves": 3814,
   "summary": {
     "critical": 149,
@@ -4319,7 +4319,7 @@
     {
       "cve_id": "CVE-2026-3536",
       "published_date": "2026-03-04",
-      "last_modified_date": "2026-03-05",
+      "last_modified_date": "2026-03-11",
       "description": "Integer overflow in ANGLE in Google Chrome prior to 145.0.7632.159 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -4340,7 +4340,7 @@
     {
       "cve_id": "CVE-2026-3537",
       "published_date": "2026-03-04",
-      "last_modified_date": "2026-03-05",
+      "last_modified_date": "2026-03-11",
       "description": "Object lifecycle issue in PowerVR in Google Chrome on Android prior to 145.0.7632.159 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -4361,7 +4361,7 @@
     {
       "cve_id": "CVE-2026-3538",
       "published_date": "2026-03-04",
-      "last_modified_date": "2026-03-05",
+      "last_modified_date": "2026-03-11",
       "description": "Integer overflow in Skia in Google Chrome prior to 145.0.7632.159 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
