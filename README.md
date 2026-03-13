@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -386,59 +386,38 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-12 00:42 UTC*
+*Last checked: 2026-03-13 00:41 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 149.0b6 | 149.0b7 |
-| Bitwig Studio | 5.3.13 | 6.0 |
-| RsyncUI | 2.9.1 | 2.9.2 |
-| Yaak | 2026.2.4 | 2026.3.0 |
-| QuickLook Video | 3.04 | 3.05 |
-| LibreWolf | 148.0 | 148.0.2 |
-| Downie | 4.11.14 | 4.12 |
-| Google Chrome | 145.0.7632.160 | 146.0.7680.72 |
-| Company Portal | 5.2601.0 | 5.2602.0 |
-| Grammarly Desktop | 1.155.0.0 | 1.156.1.0 |
-| MongoDB Compass | 1.49.3 | 1.49.4 |
-| Notion | 7.6.1 | 7.7.1 |
-| Brave | 1.87.192.0 | 1.88.127.0 |
-| BetterDisplay | 4.1.5 | 4.2.2 |
-| Zed | 0.226.5 | 0.227.1 |
-| kitty | 0.45.0 | 0.46.0 |
-| BoltAI 2 | 2.8.3 | 2.8.4 |
-| Apparency | 3.1 | 3.2 |
-| Epic Games Launcher | 19.2.0 | 19.2.2 |
-| Remote Desktop Manager | 2026.1.8.6 | 2026.1.8.7 |
-| Beekeeper Studio | 5.6.0 | 5.6.2 |
-| Lark | 7.62.7 | 7.63.8 |
-| Milanote | 3.18.81 | 3.18.83 |
-| Eclipse IDE for Eclipse Committers | 4.38 | 4.39 |
-| Eclipse IDE for Java Developers | 4.38 | 4.39 |
-| REAPER | 7.64 | 7.65 |
+| Dockside | 2.0.6 | 2.1.1 |
+| Wave Terminal | 0.14.1 | 0.14.2 |
+| Cryptomator | 1.19.0 | 1.19.1 |
+| Yaak | 2026.3.0 | 2026.3.1 |
+| BetterDisplay | 4.2.2 | 4.2.3 |
+| Google Ads Editor | 2.11 | 2.12 |
+| Dataflare | 2.8.7 | 2.9.0 |
+| Deezer | 7.1.100 | 7.1.110 |
+| Opera GX | 128.0.5807.51 | 128.0.5807.71 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Eclipse IDE for C/C++ Developers | 4.38 | 4.39 |
-| Eclipse IDE for Java and DSL Developers | 4.38 | 4.39 |
-| Eclipse Installer | 4.38 | 4.39 |
-| Eclipse IDE for Java EE Developers | 4.38 | 4.39 |
-| Eclipse Modeling Tools | 4.38 | 4.39 |
-| Eclipse IDE for PHP Developers | 4.38 | 4.39 |
-| Eclipse for RCP and RAP Developers | 4.38 | 4.39 |
-| 4K YouTube to MP3 | 26.0.6 | 26.0.7 |
-| Fellow | 5.0.6 | 5.2.3 |
-| Loom | 0.337.3 | 0.337.5 |
+| ChronoSync | 12.0.0 | 12.0.1 |
+| Akiflow | 2.68.5 | 2.69.1 |
+| Default Folder X | 6.2.6 | 6.2.7 |
+| Granola | 7.57.0 | 7.65.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| QGIS | 3.44.8 | 4.0.0 |
-| Ukelele | 3.6.0 | 3.6.1 |
-| Claude Code | 2.1.72 | 2.1.73 |
-| Nextcloud | 4.0.6 | 4.0.7 |
-| Microsoft Outlook | 16.106.26030211 | 16.107.26030937 |
-| Salesforce CLI | 2.125.2 | 2.126.4 |
-| Adobe Acrobat Reader | 25.001.21223 | 25.001.21288 |
+| Nagstamon | 3.18.0 | 3.18.1 |
+| Notesnook | 3.3.9 | 3.3.10 |
+| Pitch | 2.117.0 | 2.117.1 |
+| RustRover | 2025.3.4 | 2025.3.5 |
+| Claude Code | 2.1.73 | 2.1.74 |
+| kiro | 0.10.78 | 0.11.28 |
+| Arq | 7.38.1 | 7.38.2 |
+| Aptible Toolbelt | 0.26.2 | 0.26.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

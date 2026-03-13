@@ -1,12 +1,12 @@
 {
   "name": "RustRover",
   "description": "Rust IDE",
-  "version": "2025.3.4",
-  "url": "https://download.jetbrains.com/rustrover/RustRover-2025.3.4-aarch64.dmg",
+  "version": "2025.3.5",
+  "url": "https://download.jetbrains.com/rustrover/RustRover-2025.3.5-aarch64.dmg",
   "bundleId": "com.jetbrains.rustrover",
   "homepage": "https://www.jetbrains.com/rust/",
-  "fileName": "RustRover-2025.3.4-aarch64.dmg",
-  "sha": "7e88458e38273399c7eb3c70c8ce0078a2ed19e34b894639e136496da326362e",
+  "fileName": "RustRover-2025.3.5-aarch64.dmg",
+  "sha": "3770fa604eaf57cc7eb25be9872ab30eeda64e9f32dae01e4994d9834a4c0014",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
   "previous_version": "2025.3.4"

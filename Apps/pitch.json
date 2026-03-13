@@ -1,12 +1,12 @@
 {
   "name": "Pitch",
   "description": "Collaborative presentation software",
-  "version": "2.117.0",
-  "url": "https://desktop-app-builds.pitch.com/Pitch-2.117.0-stable.1-ci7892290.dmg",
+  "version": "2.117.1",
+  "url": "https://desktop-app-builds.pitch.com/Pitch-2.117.1-stable.1-ci7901663.dmg",
   "bundleId": "io.pitch.pitch-macos",
   "homepage": "https://pitch.com/",
-  "fileName": "Pitch-2.117.0-stable.1-ci7892290.dmg",
-  "sha": "5b2b428eaac06b9198b01432302ab53c621a1f946c566b41ffa7a0a553a56ac6",
+  "fileName": "Pitch-2.117.1-stable.1-ci7901663.dmg",
+  "sha": "3fe37fa1e5bf773a06e84f28d24405390fbf9a57c1f36840c5c512978992b544",
   "category": "Productivity",
   "publisher": "Pitch Technologies GmbH",
   "previous_version": "2.117.0"

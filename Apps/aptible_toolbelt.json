@@ -1,13 +1,13 @@
 {
   "name": "Aptible Toolbelt",
   "description": "Command-line tool for Aptible Deploy, an audit-ready App Deployment Platform",
-  "version": "0.26.2",
-  "url": "https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/gh-70/pkg/aptible-toolbelt-0.26.2%2B20260213192548-mac-os-x.10.15.7-1.pkg",
+  "version": "0.26.4",
+  "url": "https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/gh-72/pkg/aptible-toolbelt-0.26.4%2B20260312204729-mac-os-x.10.15.7-1.pkg",
   "bundleId": "com.aptible.toolbelt",
   "homepage": "https://www.aptible.com/docs/reference/aptible-cli/overview",
-  "fileName": "aptible-toolbelt-0.26.2+20260213192548-mac-os-x.10.15.7-1.pkg",
+  "fileName": "aptible-toolbelt-0.26.4+20260312204729-mac-os-x.10.15.7-1.pkg",
   "type": "pkg",
-  "sha": "58b510041799ef43ffad7f52481f3983652a1906e0168230bed52b885a4e2a7a",
+  "sha": "7c95363ceb43b561ef2cf4facb3ca75ba785858f41c1a4f84fd0c42ea113a6f3",
   "category": "Developer Tools",
   "publisher": "Aptible, Inc.",
   "previous_version": "0.26.2"
