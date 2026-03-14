@@ -2,7 +2,7 @@
   "name": "Proton Pass",
   "description": "Desktop client for Proton Pass",
   "version": "1.35.0",
-  "url": "https://proton.me/download/PassDesktop/darwin/universal/ProtonPass_1.35.0.dmg",
+  "url": "https://proton.me/download/pass/macos/ProtonPass_1.35.0.dmg",
   "bundleId": "me.proton.pass.electron",
   "homepage": "https://proton.me/pass",
   "fileName": "ProtonPass_1.35.0.dmg",

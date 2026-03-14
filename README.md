@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -387,37 +387,43 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-13 00:41 UTC*
+*Last checked: 2026-03-14 00:41 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Dockside | 2.0.6 | 2.1.1 |
-| Wave Terminal | 0.14.1 | 0.14.2 |
-| Cryptomator | 1.19.0 | 1.19.1 |
-| Yaak | 2026.3.0 | 2026.3.1 |
-| BetterDisplay | 4.2.2 | 4.2.3 |
-| Google Ads Editor | 2.11 | 2.12 |
-| Dataflare | 2.8.7 | 2.9.0 |
-| Deezer | 7.1.100 | 7.1.110 |
-| Opera GX | 128.0.5807.51 | 128.0.5807.71 |
+| Mozilla Firefox Developer Edition | 149.0b7 | 149.0b8 |
+| Rive | 0.8.4385 | 0.8.4403 |
+| Wave Terminal | 0.14.2 | 0.14.3 |
+| Proton Drive | 2.11.0 | 2.11.1 |
+| DockDoor | 1.32.1 | 1.32.2 |
+| Lens | 2026.2.111511 | 2026.3.130712 |
+| Trae | 2.3.12786 | 2.3.13344 |
+| WeChat for Mac | 4.1.7.57 | 4.1.8.27 |
+| Brave | 1.88.127.0 | 1.88.130.0 |
+| Keeper Password Manager | 17.5.1 | 17.5.3 |
+| Ghostty | 1.3.0 | 1.3.1 |
+| Microsoft Edge | 145.0.3800.97 | 146.0.3856.59 |
+| calibre | 9.4.0 | 9.5.0 |
+| Windsurf | 1.9577.24 | 1.9577.27 |
+| Opera | 128.0.5807.66 | 128.0.5807.77 |
+| Floorp browser | 12.10.4 | 12.11.0 |
+| Mimestream | 1.9.14 | 1.9.15 |
+| ClickUp | 3.5.176 | 3.5.185 |
+| Opera GX | 128.0.5807.71 | 128.0.5807.78 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| ChronoSync | 12.0.0 | 12.0.1 |
-| Akiflow | 2.68.5 | 2.69.1 |
-| Default Folder X | 6.2.6 | 6.2.7 |
-| Granola | 7.57.0 | 7.65.0 |
+| Adobe DNG Converter | 18.2 | 18.2.2 |
 | Multi | 0.538.2 | 3.0.2 |
-| Nagstamon | 3.18.0 | 3.18.1 |
-| Notesnook | 3.3.9 | 3.3.10 |
-| Pitch | 2.117.0 | 2.117.1 |
-| RustRover | 2025.3.4 | 2025.3.5 |
-| Claude Code | 2.1.73 | 2.1.74 |
-| kiro | 0.10.78 | 0.11.28 |
-| Arq | 7.38.1 | 7.38.2 |
-| Aptible Toolbelt | 0.26.2 | 0.26.4 |
+| Session | 1.17.12 | 1.17.14 |
+| Zappy | 4.9.4 | 4.9.5 |
+| Claude Code | 2.1.74 | 2.1.75 |
+| ChatGPT Atlas | 1.2026.63.7 | 1.2026.63.9 |
+| kiro | 0.11.28 | 0.11.34 |
+| Aptible Toolbelt | 0.26.4 | 0.26.5 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

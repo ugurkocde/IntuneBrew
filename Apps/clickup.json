@@ -1,12 +1,12 @@
 {
   "name": "ClickUp",
   "description": "Productivity platform for tasks, docs, goals, and chat",
-  "version": "3.5.176",
-  "url": "https://download.todesktop.com/221003ra4tebclw/ClickUp%203.5.176%20-%20Build%20260210al7vspjfr-arm64.dmg",
+  "version": "3.5.185",
+  "url": "https://download.todesktop.com/221003ra4tebclw/ClickUp%203.5.185%20-%20Build%202603135dev5rzzi-arm64.dmg",
   "bundleId": "com.clickup.desktop-app",
   "homepage": "https://clickup.com/",
-  "fileName": "ClickUp 3.5.176 - Build 260210al7vspjfr-arm64.dmg",
-  "sha": "c762a7c44314abd4674705ddef1d51a8a4d6c4e908b0ebe3da445f699abdce63",
+  "fileName": "ClickUp 3.5.185 - Build 2603135dev5rzzi-arm64.dmg",
+  "sha": "ce6ea48fb1b0461e66f833de1526dcc780362ecaf09e9566eb4055f71096c7ac",
   "category": "Productivity",
   "publisher": "ClickUp, Inc.",
   "previous_version": "3.5.176"

@@ -1,12 +1,12 @@
 {
   "name": "Proton Drive",
   "description": "Client for Proton Drive",
-  "version": "2.11.0",
-  "url": "https://proton.me/download/drive/macos/ProtonDrive-2.11.0.dmg",
+  "version": "2.11.1",
+  "url": "https://proton.me/download/drive/macos/2.11.1/ProtonDrive-2.11.1.dmg",
   "bundleId": "ch.protonmail.drive",
   "homepage": "https://proton.me/drive",
-  "fileName": "ProtonDrive-2.11.0.dmg",
-  "sha": "adba0371269136eff242e08a137a847b7156cddcc653955425d148fbb09e73a5",
+  "fileName": "ProtonDrive-2.11.1.dmg",
+  "sha": "004878bb816f86627d80f48c3f3fce0870806aba45a17ff62d5617d42fcf25cf",
   "category": "Productivity",
   "publisher": "Proton AG",
   "previous_version": "2.11.0"
