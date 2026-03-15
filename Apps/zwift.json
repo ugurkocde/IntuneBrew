@@ -1,12 +1,12 @@
 {
   "name": "Zwift",
   "description": "Indoor cycling game",
-  "version": "1.1.15",
+  "version": "1.1.16",
   "url": "https://cdn.zwift.com/app/ZwiftOSX.dmg",
   "bundleId": "com.zwift.ZwiftLauncher",
   "homepage": "https://www.zwift.com/",
   "fileName": "ZwiftOSX.dmg",
-  "sha": "71a2f7cac31f22bdd6c230070694bd23060db87679161c13307d79b43bccc64e",
+  "sha": "eb163285415649572a878c969f52399db207095bb1fb5d1c5f74ac84fd63512a",
   "category": "Other",
   "publisher": "Zwift, Inc.",
   "previous_version": "1.1.15"

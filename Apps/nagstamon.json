@@ -1,12 +1,12 @@
 {
   "name": "Nagstamon",
   "description": "Nagios status monitor",
-  "version": "3.18.1",
-  "url": "https://github.com/HenriWahl/Nagstamon/releases/download/v3.18.1/Nagstamon-3.18.1-ARM.dmg",
+  "version": "3.18.2",
+  "url": "https://github.com/HenriWahl/Nagstamon/releases/download/v3.18.2/Nagstamon-3.18.2-ARM.dmg",
   "bundleId": "de.ifw-dresden.nagstamon",
   "homepage": "https://nagstamon.de/",
-  "fileName": "Nagstamon-3.18.1-ARM.dmg",
-  "sha": "b6f014811dfab97924755a5a91a7a9f64f8f068e675cfc9b56c72791f61e16f3",
+  "fileName": "Nagstamon-3.18.2-ARM.dmg",
+  "sha": "c15cc9002635cc26e6ee496ab6b89ff3f453b9b9697f40a4b9bfa042a07772c7",
   "category": "Productivity",
   "publisher": "Nagstamon",
   "previous_version": "3.18.1"

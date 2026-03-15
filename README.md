@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -388,42 +388,31 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-14 00:41 UTC*
+*Last checked: 2026-03-15 00:46 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 149.0b7 | 149.0b8 |
-| Rive | 0.8.4385 | 0.8.4403 |
-| Wave Terminal | 0.14.2 | 0.14.3 |
-| Proton Drive | 2.11.0 | 2.11.1 |
-| DockDoor | 1.32.1 | 1.32.2 |
-| Lens | 2026.2.111511 | 2026.3.130712 |
-| Trae | 2.3.12786 | 2.3.13344 |
-| WeChat for Mac | 4.1.7.57 | 4.1.8.27 |
-| Brave | 1.88.127.0 | 1.88.130.0 |
-| Keeper Password Manager | 17.5.1 | 17.5.3 |
-| Ghostty | 1.3.0 | 1.3.1 |
-| Microsoft Edge | 145.0.3800.97 | 146.0.3856.59 |
-| calibre | 9.4.0 | 9.5.0 |
-| Windsurf | 1.9577.24 | 1.9577.27 |
-| Opera | 128.0.5807.66 | 128.0.5807.77 |
-| Floorp browser | 12.10.4 | 12.11.0 |
-| Mimestream | 1.9.14 | 1.9.15 |
-| ClickUp | 3.5.176 | 3.5.185 |
-| Opera GX | 128.0.5807.71 | 128.0.5807.78 |
+| Dockside | 2.1.1 | 2.1.2 |
+| Apifox | 2.8.13 | 2.8.14 |
+| Proton Drive | 2.11.1 | 2.10.3 |
+| CotEditor | 6.2.4 | 6.2.5 |
+| WeChat for Mac | 4.1.8.27 | 4.1.8.28 |
+| LuLu | 4.2.1 | 4.3.0 |
+| Google Chrome | 146.0.7680.72 | 146.0.7680.80 |
+| Brave | 1.88.130.0 | 1.88.132.0 |
+| GIMP | 3.0.8 | 3.2.0 |
+| Apidog | 2.8.13 | 2.8.14 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Adobe DNG Converter | 18.2 | 18.2.2 |
 | Multi | 0.538.2 | 3.0.2 |
-| Session | 1.17.12 | 1.17.14 |
-| Zappy | 4.9.4 | 4.9.5 |
-| Claude Code | 2.1.74 | 2.1.75 |
-| ChatGPT Atlas | 1.2026.63.7 | 1.2026.63.9 |
-| kiro | 0.11.28 | 0.11.34 |
-| Aptible Toolbelt | 0.26.4 | 0.26.5 |
+| Nagstamon | 3.18.1 | 3.18.2 |
+| Wealthfolio | 3.0.5 | 3.1.0 |
+| Zwift | 1.1.15 | 1.1.16 |
+| Claude Code | 2.1.75 | 2.1.76 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
