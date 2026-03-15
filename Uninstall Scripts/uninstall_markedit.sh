@@ -25,20 +25,12 @@ elif [ -f "/Applications/MarkEdit.app" ]; then
     rm -f "/Applications/MarkEdit.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Scripts/app.cyan.markedit
-echo "Removing $HOME/Library/Application Scripts/app.cyan.markedit..."
-if [ -d "$HOME/Library/Application Scripts/app.cyan.markedit" ]; then
-    rm -rf "$HOME/Library/Application Scripts/app.cyan.markedit" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/app.cyan.markedit" ]; then
-    rm -f "$HOME/Library/Application Scripts/app.cyan.markedit" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Application Scripts/app.cyan.markedit.preview-extension
-echo "Removing $HOME/Library/Application Scripts/app.cyan.markedit.preview-extension..."
-if [ -d "$HOME/Library/Application Scripts/app.cyan.markedit.preview-extension" ]; then
-    rm -rf "$HOME/Library/Application Scripts/app.cyan.markedit.preview-extension" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/app.cyan.markedit.preview-extension" ]; then
-    rm -f "$HOME/Library/Application Scripts/app.cyan.markedit.preview-extension" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/app.cyan.markedit*
+echo "Removing $HOME/Library/Application Scripts/app.cyan.markedit*..."
+if [ -d "$HOME/Library/Application Scripts/app.cyan.markedit*" ]; then
+    rm -rf "$HOME/Library/Application Scripts/app.cyan.markedit*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/app.cyan.markedit*" ]; then
+    rm -f "$HOME/Library/Application Scripts/app.cyan.markedit*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.cyan.markedit.sfl*
@@ -49,20 +41,12 @@ elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.
     rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.cyan.markedit.sfl*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/app.cyan.markedit
-echo "Removing $HOME/Library/Containers/app.cyan.markedit..."
-if [ -d "$HOME/Library/Containers/app.cyan.markedit" ]; then
-    rm -rf "$HOME/Library/Containers/app.cyan.markedit" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/app.cyan.markedit" ]; then
-    rm -f "$HOME/Library/Containers/app.cyan.markedit" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Containers/app.cyan.markedit.preview-extension
-echo "Removing $HOME/Library/Containers/app.cyan.markedit.preview-extension..."
-if [ -d "$HOME/Library/Containers/app.cyan.markedit.preview-extension" ]; then
-    rm -rf "$HOME/Library/Containers/app.cyan.markedit.preview-extension" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/app.cyan.markedit.preview-extension" ]; then
-    rm -f "$HOME/Library/Containers/app.cyan.markedit.preview-extension" 2>/dev/null || true
+# Remove $HOME/Library/Containers/app.cyan.markedit*
+echo "Removing $HOME/Library/Containers/app.cyan.markedit*..."
+if [ -d "$HOME/Library/Containers/app.cyan.markedit*" ]; then
+    rm -rf "$HOME/Library/Containers/app.cyan.markedit*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/app.cyan.markedit*" ]; then
+    rm -f "$HOME/Library/Containers/app.cyan.markedit*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/app.cyan.markedit.savedState

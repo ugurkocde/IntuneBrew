@@ -25,12 +25,20 @@ elif [ -f "/Applications/Ghostty.app" ]; then
     rm -f "/Applications/Ghostty.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/.config/ghostty/
-echo "Removing $HOME/.config/ghostty/..."
-if [ -d "$HOME/.config/ghostty/" ]; then
-    rm -rf "$HOME/.config/ghostty/" 2>/dev/null || true
-elif [ -f "$HOME/.config/ghostty/" ]; then
-    rm -f "$HOME/.config/ghostty/" 2>/dev/null || true
+# Remove $HOME/.cache/ghostty
+echo "Removing $HOME/.cache/ghostty..."
+if [ -d "$HOME/.cache/ghostty" ]; then
+    rm -rf "$HOME/.cache/ghostty" 2>/dev/null || true
+elif [ -f "$HOME/.cache/ghostty" ]; then
+    rm -f "$HOME/.cache/ghostty" 2>/dev/null || true
+fi
+
+# Remove $HOME/.config/ghostty
+echo "Removing $HOME/.config/ghostty..."
+if [ -d "$HOME/.config/ghostty" ]; then
+    rm -rf "$HOME/.config/ghostty" 2>/dev/null || true
+elif [ -f "$HOME/.config/ghostty" ]; then
+    rm -f "$HOME/.config/ghostty" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/com.mitchellh.ghostty
