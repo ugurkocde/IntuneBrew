@@ -1,13 +1,13 @@
 {
   "name": "Eclipse Modeling Tools",
   "description": "Tools and runtimes for building model-based applications",
-  "version": "4.38",
-  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2025-12/R/eclipse-modeling-2025-12-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
+  "version": "4.39",
+  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-modeling-2026-03-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
   "bundleId": "org.eclipse.epp.package.modeling.product",
   "homepage": "https://eclipse.org/",
-  "fileName": "Eclipse-Modeling-Tools-4.38.dmg",
-  "sha": "ca0850b9267ce648e80ac2b19ddb2cef1bc9f8c2a6c3b61b2e8bdd16c20a3a61",
+  "fileName": "Eclipse-Modeling-Tools-4.39.dmg",
+  "sha": "4d9b38edfa09c5ca17253824730990326f200cccc13206fb64c7c7a34a2f7cae",
   "category": "Developer Tools",
   "publisher": "Eclipse Foundation",
-  "previous_version": "4.38"
+  "previous_version": "4.39"
 }

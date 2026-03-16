@@ -1,14 +1,14 @@
 {
   "name": "Mactracker",
   "description": "Detailed information on every Apple product ever made",
-  "version": "8.1.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/mactracker_8.1.1.pkg",
+  "version": "8.1.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/mactracker_8.1.2.pkg",
   "bundleId": "com.mactrackerapp.Mactracker",
   "homepage": "https://mactracker.ca/",
-  "fileName": "mactracker_8.1.1.pkg",
+  "fileName": "mactracker_8.1.2.pkg",
   "type": "app",
-  "sha": "54ea1d1fe6d9019b62f551aecffc64575ed9f93a3b785341da9ca908f23f5c0f",
+  "sha": "bbb7b49a0a94a1392db288a3d0b717e37a735dc5a130fbe226b43d40f6412842",
   "category": "Utilities",
   "publisher": "Mactracker",
-  "previous_version": "8.1.1"
+  "previous_version": "8.1.2"
 }

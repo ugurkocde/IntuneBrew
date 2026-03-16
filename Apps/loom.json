@@ -1,13 +1,13 @@
 {
   "name": "Loom",
   "description": "Screen and video recording software",
-  "version": "0.336.5",
-  "url": "https://packages.loom.com/desktop-packages/Loom-0.336.5-arm64.dmg",
+  "version": "0.337.5",
+  "url": "https://packages.loom.com/desktop-packages/Loom-0.337.5-arm64.dmg",
   "bundleId": "com.loom.desktop",
   "homepage": "https://www.loom.com/",
-  "fileName": "Loom-0.336.5-arm64.dmg",
-  "sha": "3fa1908ab80d9dab3d8e8c6f28ae4f76116eeb3ad7873112e8bf1def1622b1e3",
+  "fileName": "Loom-0.337.5-arm64.dmg",
+  "sha": "2f84080f542fd160c857cdf0339a4a100fc833b35138a824209b6e0a14dad361",
   "category": "Productivity",
   "publisher": "Loom, Inc.",
-  "previous_version": "0.336.5"
+  "previous_version": "0.337.5"
 }

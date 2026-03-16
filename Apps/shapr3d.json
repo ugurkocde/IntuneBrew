@@ -1,13 +1,13 @@
 {
   "name": "Shapr3D",
   "description": "3D CAD software",
-  "version": "26.30.0.10505",
-  "url": "https://download.shapr3d.com/mac/Shapr3D-26.30.0.10505.dmg",
+  "version": "26.32.0.10532",
+  "url": "https://download.shapr3d.com/mac/Shapr3D-26.32.0.10532.dmg",
   "bundleId": "com.shapr3d.shapr",
   "homepage": "https://www.shapr3d.com/",
-  "fileName": "Shapr3D-26.30.0.10505.dmg",
-  "sha": "af140a8dd5ba367a2ae33414ac22f66f35e62556367118b79c530b11a152f13c",
+  "fileName": "Shapr3D-26.32.0.10532.dmg",
+  "sha": "eecc5cc5d0e453ed56ef2b09a5de50124e9a4cc077ae2e0120c7aff6a4b70fd1",
   "category": "Design",
   "publisher": "Shapr3D Ltd.",
-  "previous_version": "26.30.0.10505"
+  "previous_version": "26.32.0.10532"
 }

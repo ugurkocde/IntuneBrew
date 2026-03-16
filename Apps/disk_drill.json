@@ -1,13 +1,13 @@
 {
   "name": "Disk Drill",
   "description": "Data recovery software",
-  "version": "6.1.2111",
+  "version": "6.2.2219",
   "url": "https://dl.cleverfiles.com/diskdrill.dmg",
   "bundleId": "com.cleverfiles.DiskDrill",
   "homepage": "https://www.cleverfiles.com/",
   "fileName": "diskdrill.dmg",
-  "sha": "2637d51546adf0f3a4cd3289c7975c57ce9c35e29a4cb00acc67a5b665e9dbb1",
+  "sha": "f01dd624fef67d3f4cd2dd3dab062bfd11a8e012ae92e035af7bc8dbe9889e8e",
   "category": "Utilities",
   "publisher": "CleverFiles",
-  "previous_version": "6.1.2111"
+  "previous_version": "6.2.2219"
 }

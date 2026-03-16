@@ -1,14 +1,14 @@
 {
   "name": "Sunsama",
   "description": "Daily planner and calendar",
-  "version": "3.2.6",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sunsama_3.2.6.pkg",
+  "version": "3.3.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sunsama_3.3.1.pkg",
   "bundleId": "com.sunsama.native-app",
   "homepage": "https://www.sunsama.com/desktop",
-  "fileName": "sunsama_3.2.6.pkg",
+  "fileName": "sunsama_3.3.1.pkg",
   "type": "app",
-  "sha": "23f722dad70e61f862c2a6b86df594dcd2c32322f7eaa37f3085cea6ff0d30e7",
+  "sha": "1d15166ae586f3f2e0b6812db81d38fade8754896945e491277d9ef33cadea1b",
   "category": "Productivity",
   "publisher": "Sunsama, Inc.",
-  "previous_version": "3.2.6"
+  "previous_version": "3.3.1"
 }

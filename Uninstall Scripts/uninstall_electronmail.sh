@@ -25,6 +25,22 @@ elif [ -f "/Applications/electron-mail.app" ]; then
     rm -f "/Applications/electron-mail.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/github.comvladimiryelectronmail.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/github.comvladimiryelectronmail.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/github.comvladimiryelectronmail.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/github.comvladimiryelectronmail.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/github.comvladimiryelectronmail.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/github.comvladimiryelectronmail.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/electron-mail
+echo "Removing $HOME/Library/Application Support/electron-mail..."
+if [ -d "$HOME/Library/Application Support/electron-mail" ]; then
+    rm -rf "$HOME/Library/Application Support/electron-mail" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/electron-mail" ]; then
+    rm -f "$HOME/Library/Application Support/electron-mail" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/ElectronMail
 echo "Removing $HOME/Library/Logs/ElectronMail..."
 if [ -d "$HOME/Library/Logs/ElectronMail" ]; then

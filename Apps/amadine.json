@@ -1,12 +1,12 @@
 {
   "name": "Amadine",
   "description": "Vector graphic and illustration software",
-  "version": "1.8",
+  "version": "1.8.1",
   "url": "https://belightsoft.s3.amazonaws.com/Amadine.dmg",
   "bundleId": "com.belightsoft.Amadine",
   "homepage": "https://amadine.com/",
   "fileName": "Amadine.dmg",
-  "sha": "ba96105e407c7e494da351381b8f3c9b17d07982027c23e5cb23ecdb91d86d4a",
+  "sha": "f5fb492f4084c207a9ab1beeacb838975c39684bfc4597bed0d858a403044cdb",
   "changelog": "https://amadine.com/release-notes/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:30:54Z",
@@ -20,5 +20,5 @@
   },
   "category": "Design",
   "publisher": "Nektony Ltd.",
-  "previous_version": "1.8"
+  "previous_version": "1.8.1"
 }

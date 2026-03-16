@@ -1,13 +1,13 @@
 {
   "name": "iMazing Converter",
   "description": "Free tool to convert HEIC to JPEG and HEVC to MP4",
-  "version": "2.0.11",
-  "url": "https://downloads.imazing.com/mac/iMazing-Converter/2.0.11.571/iMazing_Converter_2.0.11.571.dmg",
+  "version": "2.0.12",
+  "url": "https://downloads.imazing.com/mac/iMazing-Converter/2.0.12.574/iMazing_Converter_2.0.12.574.dmg",
   "bundleId": "com.DigiDNA.iMazingHEICConverterMac",
   "homepage": "https://imazing.com/converter",
-  "fileName": "iMazing_Converter_2.0.11.571.dmg",
-  "sha": "428d25d5485dd38059b4f24a19c2b6679ede4611deebadfb6185f1329a70a943",
+  "fileName": "iMazing_Converter_2.0.12.574.dmg",
+  "sha": "0a57109c995bdfae84c62d5aaa91db617902f849ed66b68c39f828210e288103",
   "category": "Utilities",
   "publisher": "iMazing",
-  "previous_version": "2.0.11"
+  "previous_version": "2.0.12"
 }
