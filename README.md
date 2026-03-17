@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -390,22 +390,40 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-16 00:45 UTC*
+*Last checked: 2026-03-17 00:39 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Syncovery | 11.13.5 | 11.13.6 |
-| Stats | 2.12.3 | 2.12.4 |
-| Dataflare | 2.9.0 | 2.9.1 |
+| Mozilla Firefox Developer Edition | 149.0b8 | 149.0b9 |
+| Dockside | 2.1.2 | 2.1.5 |
+| NordPass | 7.4.8 | 7.5.6 |
+| Lens | 2026.3.130712 | 2026.3.160808 |
+| Termius | 9.37.4 | 9.37.5 |
+| DuckDuckGo | 1.180.0 | 1.181.1 |
+| Raycast | 1.104.9 | 1.104.10 |
+| kitty | 0.46.0 | 0.46.1 |
+| OBS | 32.0.4 | 32.1.0 |
+| Apidog | 2.8.14 | 2.8.15 |
+| Elephas | 11.4010 | 11.6009 |
+| HTTP Toolkit | 1.24.4 | 1.25.0 |
 | Caffeine | 1.6.3 | 1.1.4 |
+| 4K YouTube to MP3 | 26.0.7 | 26.0.8 |
+| Akiflow | 2.69.1 | 2.69.3 |
+| EagleFiler | 1.9.19 | 1.9.20 |
+| KiCad | 9.0.7 | 9.0.8 |
+| Local | 9.2.9 | 10.0.0 |
+| MEGAsync | 6.1.1.0 | 6.2.0.5 |
 | Multi | 0.538.2 | 3.0.2 |
-| Screaming Frog SEO Spider | 23.2 | 23.3 |
-| Wealthfolio | 3.1.0 | 3.1.1 |
-| FUSE-T | 1.0.49 | 1.0.54 |
+| Unity Hub | 3.16.3 | 3.16.4 |
+| Wealthfolio | 3.1.1 | 3.1.2 |
+| XnViewMP | 1.10.3 | 1.10.5 |
+| Mullvad VPN | 2025.14 | 2026.1 |
+| UniFi Identity Endpoint | 3.6.0 | 3.6.1 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

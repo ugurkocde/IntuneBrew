@@ -1,12 +1,12 @@
 {
   "name": "Local",
   "description": "WordPress local development tool by Flywheel",
-  "version": "9.2.9",
-  "url": "https://cdn.localwp.com/releases-stable/9.2.9+6887/local-9.2.9-mac-arm64.dmg",
+  "version": "10.0.0",
+  "url": "https://cdn.localwp.com/releases-stable/10.0.0+6907/local-10.0.0-mac-arm64.dmg",
   "bundleId": "com.getflywheel.lightning.local",
   "homepage": "https://localwp.com/",
-  "fileName": "local-9.2.9-mac-arm64.dmg",
-  "sha": "514721b17b9550348e1c9dc2e92fde2e7205835a506f0d747c26ae81fca8bf09",
+  "fileName": "local-10.0.0-mac-arm64.dmg",
+  "sha": "739104356839d91465c60d6454037822d6cf34197b34e3338f85e44ee17351ff",
   "category": "Developer Tools",
   "publisher": "Flywheel, Inc.",
   "previous_version": "9.2.9"

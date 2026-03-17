@@ -1,12 +1,12 @@
 {
   "name": "4K YouTube to MP3",
   "description": "Turn YouTube links into MP3 files",
-  "version": "26.0.7",
-  "url": "https://dl.4kdownload.com/app/4kyoutubetomp3_26.0.7_arm64.dmg",
+  "version": "26.0.8",
+  "url": "https://dl.4kdownload.com/app/4kyoutubetomp3_26.0.8_arm64.dmg",
   "bundleId": "com.openmedia.4kyoutubetomp3",
   "homepage": "https://www.4kdownload.com/products/youtubetomp3/1",
-  "fileName": "4kyoutubetomp3_26.0.7_arm64.dmg",
-  "sha": "bb91494c68b030ea617e87ebb6830041a3b0b9cc9c88399118d482ae85d82c3a",
+  "fileName": "4kyoutubetomp3_26.0.8_arm64.dmg",
+  "sha": "f6ea66d0c74e9268dd65a727d14c74014d3645470d3bad07846e683bb061552d",
   "category": "Media",
   "publisher": "4K Download",
   "previous_version": "26.0.7"
