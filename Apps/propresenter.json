@@ -1,14 +1,14 @@
 {
   "name": "ProPresenter",
   "description": "Presentation and production application for live events",
-  "version": "21.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/propresenter_21.2.pkg",
+  "version": "21.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/propresenter_21.3.pkg",
   "bundleId": "com.renewedvision.ProPresenter21",
   "homepage": "https://renewedvision.com/propresenter/",
-  "fileName": "propresenter_21.2.pkg",
+  "fileName": "propresenter_21.3.pkg",
   "type": "app",
-  "sha": "a41603a104f7fe41a5b195ad08544ab0d491d80d11676ffdf4aaafcef7dc52bc",
+  "sha": "a7a556dfe7c9ee9564039d69d0ef836b703ecc1cd72a9bc2f77da04e3bc3b44b",
   "category": "Productivity",
   "publisher": "Renewed Vision, LLC",
-  "previous_version": "21.2"
+  "previous_version": "21.3"
 }
