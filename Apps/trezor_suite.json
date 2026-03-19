@@ -1,12 +1,12 @@
 {
   "name": "TREZOR Suite",
   "description": "Companion app for the Trezor hardware wallet",
-  "version": "26.2.3",
-  "url": "https://data.trezor.io/suite/releases/desktop/latest/Trezor-Suite-26.2.3-mac-arm64.dmg",
+  "version": "26.3.2",
+  "url": "https://data.trezor.io/suite/releases/desktop/latest/Trezor-Suite-26.3.2-mac-arm64.dmg",
   "bundleId": "io.trezor.TrezorSuite",
   "homepage": "https://suite.trezor.io/",
-  "fileName": "Trezor-Suite-26.2.3-mac-arm64.dmg",
-  "sha": "13a1678c85a2a7003beb9acc60c023304bb8be6e6fe33bee0ddcb9d4a918a968",
+  "fileName": "Trezor-Suite-26.3.2-mac-arm64.dmg",
+  "sha": "5a04e2b6bf7f86422460f53d5ad421aa8c64d9ddb7e27b310b33fc96f9fecd8d",
   "category": "Security",
   "publisher": "SatoshiLabs",
   "previous_version": "26.2.3"

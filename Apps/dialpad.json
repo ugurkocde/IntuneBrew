@@ -1,14 +1,14 @@
 {
   "name": "Dialpad",
   "description": "Cloud communication platform",
-  "version": "2602.4.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/dialpad_2602.4.1.pkg",
+  "version": "2603.2.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/dialpad_2603.2.0.pkg",
   "bundleId": "com.electron.dialpad",
   "homepage": "https://dialpad.com/download",
-  "fileName": "dialpad_2602.4.1.pkg",
+  "fileName": "dialpad_2603.2.0.pkg",
   "type": "app",
-  "sha": "456932f06bb49ac554beda813f920384c4899caf20cbf523f93d6f2a183fbd8a",
+  "sha": "568cc9a5a4beb8a85b001b9724f0126bb6128ad0ad5d2f43e5fd0f6fa597ef7f",
   "category": "Communication",
   "publisher": "Dialpad, Inc.",
-  "previous_version": "2602.4.1"
+  "previous_version": "2603.2.0"
 }

@@ -1,12 +1,12 @@
 {
   "name": "Bruno",
   "description": "Opensource IDE for exploring and testing api's",
-  "version": "3.1.4",
-  "url": "https://github.com/usebruno/bruno/releases/download/v3.1.4/bruno_3.1.4_arm64_mac.dmg",
+  "version": "3.2.0",
+  "url": "https://github.com/usebruno/bruno/releases/download/v3.2.0/bruno_3.2.0_arm64_mac.dmg",
   "bundleId": "com.usebruno.app",
   "homepage": "https://www.usebruno.com/",
-  "fileName": "bruno_3.1.4_arm64_mac.dmg",
-  "sha": "99599391b6e1d24ef0e1915a5b6abcfe3f81ffe7119d522412e799a2c7655cd8",
+  "fileName": "bruno_3.2.0_arm64_mac.dmg",
+  "sha": "246470d4d569380c2b58e58d59522b4e7f425ba009190d6975e8795dcdea116e",
   "changelog": "https://github.com/usebruno/bruno/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:25:20Z",

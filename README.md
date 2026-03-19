@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -392,54 +392,43 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-18 00:46 UTC*
+*Last checked: 2026-03-19 00:46 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Pulsar | 1.131.1 | 1.131.2 |
-| Pika | 1.4.0 | 1.5.0 |
-| JetBrains PhpStorm | 2025.3.3 | 2025.3.4 |
-| Proxyman | 6.6.0 | 6.7.0 |
-| LuLu | 4.3.0 | 4.3.1 |
-| Slack | 4.48.100 | 4.48.102 |
-| Microsoft Teams | 25290.302.4044.3989 | 26032.605.4378.6183 |
-| Spotify | 1.2.84.476 | 1.2.85.519 |
-| Grammarly Desktop | 1.156.1.0 | 1.157.1.0 |
-| Blender | 5.0.1 | 5.1.0 |
-| Notion | 7.7.1 | 7.8.0 |
-| Dropbox | 243.4.6956 | 244.4.6580 |
-| Krisp | 3.10.14 | 3.11.4 |
-| Discord | 0.0.380 | 0.0.381 |
-| Azul Zulu Java Standard Edition Development Kit | 25.0.2 | 26.0.0 |
-| Microsoft Edge | 146.0.3856.59 | 146.0.3856.62 |
-| Keka | 1.6.0 | 1.6.1 |
-| OneDrive | 26.022.0203.0006 | 26.032.0217.0003 |
-| JetBrains Toolbox | 3.3.1 | 3.4 |
-| Steam | 4.0 | 6.0 |
-| Dataflare | 2.9.1 | 2.9.2 |
-| IntelliJ IDEA Ultimate | 2025.3.3 | 2025.3.4 |
-| DeepL | 26.2.13897266 | 26.3.14124477 |
-| Milanote | 3.18.83 | 3.18.84 |
-| MarginNote | 4.2.4 | 4.2.5 |
-| TextExpander | 8.4.1 | 8.4.2 |
-| Ungoogled Chromium | 145.0.7632.159-1.1 | 146.0.7680.80-1.1 |
+| Mozilla Firefox Developer Edition | 149.0b9 | 149.0b10 |
+| Dockside | 2.1.5 | 2.1.6 |
+| FreeTube | 0.23.14 | 0.23.15 |
+| AnyDesk | 9.6.3 | 9.6.4 |
+| WebStorm | 2025.3.3 | 2025.3.4 |
+| Bruno | 3.1.4 | 3.2.0 |
+| Zed | 0.227.1 | 0.228.0 |
+| Microsoft Office | 16.106.26020821 | 16.107.26031524 |
+| LM Studio | 0.4.6 | 0.4.7 |
+| Opera | 128.0.5807.77 | 129.0.5823.15 |
+| DbGate | 7.1.2 | 7.1.3 |
+| Epic Games Launcher | 19.2.2 | 19.2.3 |
+| REAPER | 7.65 | 7.66 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Anytype | 0.54.5 | 0.54.9 |
-| digiexam | 25.4.50 | 26.1.10 |
-| Granola | 7.65.0 | 7.71.1 |
-| jamovi | 2.7.23.0 | 2.7.24.0 |
+| Connect Fonts | 28.0.2 | 28.0.3 |
+| Fellow | 5.2.3 | 5.2.4 |
+| FLEXOPTIX App | 5.59.0-latest | 5.60.0-latest |
 | Multi | 0.538.2 | 3.0.2 |
-| Pitch | 2.117.1 | 2.118.0 |
-| Shapr3D | 26.32.0.10532 | 26.40.0.10572 |
-| Tuta Mail | 335.260310.0 | 336.260316.0 |
-| Claude Code | 2.1.76 | 2.1.77 |
-| ChatGPT Atlas | 1.2026.63.9 | 1.2026.63.10 |
-| Microsoft Outlook | 16.107.26030937 | 16.107.26031524 |
-| Perimeter 81 | 12.6.0.8419 | 12.7.0.8565 |
+| TREZOR Suite | 26.2.3 | 26.3.2 |
+| Claude Code | 2.1.77 | 2.1.79 |
+| kiro | 0.11.34 | 0.11.63 |
+| PS Remote Play | 8.5.2 | 9.0.0 |
+| Microsoft Office BusinessPro | 16.106.26020821 | 16.107.26031524 |
+| Microsoft Excel | 16.107.26030819 | 16.107.26031524 |
+| Microsoft OneNote | 16.106.26020821 | 16.107.26031524 |
+| Microsoft PowerPoint | 16.107.26030819 | 16.107.26031524 |
+| Microsoft Word | 16.107.26030819 | 16.107.26031524 |
+| Salesforce CLI | 2.126.4 | 2.127.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

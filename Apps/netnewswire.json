@@ -1,14 +1,14 @@
 {
   "name": "NetNewsWire",
   "description": "Free and open-source RSS reader",
-  "version": "7.0.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/netnewswire_7.0.1.pkg",
+  "version": "7.0.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/netnewswire_7.0.2.pkg",
   "bundleId": "com.ranchero.NetNewsWire-Evergreen",
   "homepage": "https://netnewswire.com/",
-  "fileName": "netnewswire_7.0.1.pkg",
+  "fileName": "netnewswire_7.0.2.pkg",
   "type": "app",
-  "sha": "04cd831fd0d7e1cf74628421449a7ceae2916cd598350975c2dc3222015d4335",
-  "previous_version": "7.0.1",
+  "sha": "7cdf3ab14c5b5bd3f3366608c3939b74e2e86526d47383329f00c8473e5b972a",
+  "previous_version": "7.0.2",
   "category": "Productivity",
   "publisher": "Ranchero Software"
 }
