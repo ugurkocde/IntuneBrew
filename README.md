@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -393,42 +393,42 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-19 00:46 UTC*
+*Last checked: 2026-03-20 00:47 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 149.0b9 | 149.0b10 |
-| Dockside | 2.1.5 | 2.1.6 |
-| FreeTube | 0.23.14 | 0.23.15 |
-| AnyDesk | 9.6.3 | 9.6.4 |
-| WebStorm | 2025.3.3 | 2025.3.4 |
-| Bruno | 3.1.4 | 3.2.0 |
-| Zed | 0.227.1 | 0.228.0 |
-| Microsoft Office | 16.106.26020821 | 16.107.26031524 |
-| LM Studio | 0.4.6 | 0.4.7 |
-| Opera | 128.0.5807.77 | 129.0.5823.15 |
-| DbGate | 7.1.2 | 7.1.3 |
-| Epic Games Launcher | 19.2.2 | 19.2.3 |
-| REAPER | 7.65 | 7.66 |
+| ChatWise | 0.10.7 | 0.10.8 |
+| WeChat for Mac | 4.1.8.28 | 4.1.8.29 |
+| Google Chrome | 146.0.7680.80 | 146.0.7680.154 |
+| Microsoft Teams | 26032.605.4378.6183 | 26043.2109.4484.3337 |
+| Brave | 1.88.132.0 | 1.88.134.0 |
+| Windsurf | 1.9577.27 | 1.9577.43 |
+| DbGate | 7.1.3 | 7.1.4 |
+| Remote Desktop Manager | 2026.1.8.7 | 2026.1.9.5 |
+| Craft | 3.3.10 | 3.3.11 |
+| Sensei | 2.0.1 | 2.0.2 |
+| Surfshark | 4.26.1 | 4.26.2 |
+| Deezer | 7.1.110 | 7.1.120 |
+| MarginNote | 4.2.5 | 4.3.0 |
+| Opera GX | 128.0.5807.78 | 128.0.5807.97 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Connect Fonts | 28.0.2 | 28.0.3 |
-| Fellow | 5.2.3 | 5.2.4 |
-| FLEXOPTIX App | 5.59.0-latest | 5.60.0-latest |
+| ChatWork | 2.20.2 | 2.21.0 |
+| Granola | 7.71.1 | 7.80.0 |
+| LaunchOS | 1.5.3 | 1.5.4 |
+| Loom | 0.337.5 | 0.338.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| TREZOR Suite | 26.2.3 | 26.3.2 |
-| Claude Code | 2.1.77 | 2.1.79 |
-| kiro | 0.11.34 | 0.11.63 |
-| PS Remote Play | 8.5.2 | 9.0.0 |
-| Microsoft Office BusinessPro | 16.106.26020821 | 16.107.26031524 |
-| Microsoft Excel | 16.107.26030819 | 16.107.26031524 |
-| Microsoft OneNote | 16.106.26020821 | 16.107.26031524 |
-| Microsoft PowerPoint | 16.107.26030819 | 16.107.26031524 |
-| Microsoft Word | 16.107.26030819 | 16.107.26031524 |
-| Salesforce CLI | 2.126.4 | 2.127.2 |
+| Royal TSX | 6.3.0.1000 | 6.4.0.1000 |
+| Session | 1.17.14 | 1.17.15 |
+| Tuta Mail | 336.260316.0 | 338.260318.0 |
+| Nextcloud | 4.0.7 | 4.0.8 |
+| GOG Galaxy | 2.0.95.66 | 2.0.96.26 |
+| Okta Verify | 9.57.3 | 9.59.0 |
+| osquery | 5.21.0 | 5.22.1 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
