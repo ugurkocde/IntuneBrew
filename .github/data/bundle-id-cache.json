@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-03-20T16:52:55.430Z",
+  "last_full_scan": "2026-03-20T22:55:34.047Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8909,6 +8909,17 @@
         "openai_improved"
       ],
       "name": "cmux"
+    },
+    "winzip": {
+      "last_checked": "2026-03-20T22:55:33.946Z",
+      "bundle_id": "com.winzip.wzmmacsub1y",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "mac_app_store",
+      "methods_tried": [
+        "mac_app_store"
+      ],
+      "name": "WinZip"
     }
   }
 }
