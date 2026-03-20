@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-03-20T01:07:11.690Z",
+  "last_full_scan": "2026-03-20T16:52:55.430Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8895,6 +8895,20 @@
         "openai_alternative"
       ],
       "name": "kiro"
+    },
+    "cmux": {
+      "last_checked": "2026-03-20T16:52:55.310Z",
+      "bundle_id": "com.cmuxterm.app",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "cmux"
     }
   }
 }
