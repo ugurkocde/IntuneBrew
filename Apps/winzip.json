@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://www.winzip.com/mac/en/winzip.html",
   "fileName": "winzipmacedition12.dmg",
-  "sha": "ac69719cdadcefcb75729831983d884f44e9e57e5cc608672b3d4a1c87963c0e"
+  "sha": "ac69719cdadcefcb75729831983d884f44e9e57e5cc608672b3d4a1c87963c0e",
+  "category": "Utilities",
+  "publisher": "WinZip Computing, LLC"
 }
