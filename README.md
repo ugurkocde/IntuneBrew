@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1241-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1242-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -394,41 +394,29 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-20 00:47 UTC*
+*Last checked: 2026-03-20 16:40 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| ChatWise | 0.10.7 | 0.10.8 |
-| WeChat for Mac | 4.1.8.28 | 4.1.8.29 |
-| Google Chrome | 146.0.7680.80 | 146.0.7680.154 |
-| Microsoft Teams | 26032.605.4378.6183 | 26043.2109.4484.3337 |
-| Brave | 1.88.132.0 | 1.88.134.0 |
-| Windsurf | 1.9577.27 | 1.9577.43 |
-| DbGate | 7.1.3 | 7.1.4 |
-| Remote Desktop Manager | 2026.1.8.7 | 2026.1.9.5 |
-| Craft | 3.3.10 | 3.3.11 |
-| Sensei | 2.0.1 | 2.0.2 |
-| Surfshark | 4.26.1 | 4.26.2 |
-| Deezer | 7.1.110 | 7.1.120 |
-| MarginNote | 4.2.5 | 4.3.0 |
-| Opera GX | 128.0.5807.78 | 128.0.5807.97 |
+| Pulsar | 1.131.2 | 1.131.3 |
+| Apifox | 2.8.14 | 2.8.16 |
+| Cryptomator | 1.19.1 | 1.19.2 |
+| Goland | 2025.3.3 | 2025.3.4 |
+| BoltAI 2 | 2.8.4 | 2.8.5 |
+| Warp | 0.2026.03.04.08.20.stable | 0.2026.03.18.08.24.stable |
+| LaunchBar | 6.22.2 | 6.23 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| ChatWork | 2.20.2 | 2.21.0 |
-| Granola | 7.71.1 | 7.80.0 |
-| LaunchOS | 1.5.3 | 1.5.4 |
-| Loom | 0.337.5 | 0.338.4 |
+| Douyin | 7.4.0 | 7.5.1 |
+| CalHash | 1.5.3 | 1.5.4 |
+| KiCad | 9.0.8 | 10.0.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Royal TSX | 6.3.0.1000 | 6.4.0.1000 |
-| Session | 1.17.14 | 1.17.15 |
-| Tuta Mail | 336.260316.0 | 338.260318.0 |
-| Nextcloud | 4.0.7 | 4.0.8 |
-| GOG Galaxy | 2.0.95.66 | 2.0.96.26 |
-| Okta Verify | 9.57.3 | 9.59.0 |
-| osquery | 5.21.0 | 5.22.1 |
+| Royal TSX | 6.4.0.1000 | 6.4.1.1000 |
+| Claude Code | 2.1.79 | 2.1.80 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

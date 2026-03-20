@@ -1,14 +1,14 @@
 {
   "name": "Zight",
   "description": "Visual communication platform",
-  "version": "8.6.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/zight_8.6.0.pkg",
+  "version": "8.7.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/zight_8.7.2.pkg",
   "bundleId": "com.linebreak.CloudAppMacOSX",
   "homepage": "https://zight.com/",
-  "fileName": "zight_8.6.0.pkg",
+  "fileName": "zight_8.7.2.pkg",
   "type": "app",
-  "sha": "2663c9eaff7943ea293b89676322dfa706505da0672fb463a6e0144ed116c87d",
+  "sha": "05c159bff8a998c2cda4ffab04adb3233fd818eae4228b978af1e143d6063e4c",
   "category": "Communication",
   "publisher": "Zight, Inc.",
-  "previous_version": "8.6.0"
+  "previous_version": "8.7.2"
 }
