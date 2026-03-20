@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1242-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1243-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -395,28 +395,23 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-20 16:40 UTC*
+*Last checked: 2026-03-20 22:43 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Pulsar | 1.131.2 | 1.131.3 |
-| Apifox | 2.8.14 | 2.8.16 |
-| Cryptomator | 1.19.1 | 1.19.2 |
-| Goland | 2025.3.3 | 2025.3.4 |
-| BoltAI 2 | 2.8.4 | 2.8.5 |
-| Warp | 0.2026.03.04.08.20.stable | 0.2026.03.18.08.24.stable |
-| LaunchBar | 6.22.2 | 6.23 |
+| Rive | 0.8.4403 | 0.8.4450 |
+| RsyncUI | 2.9.2 | 2.9.3 |
+| VSCodium | 1.110.11631 | 1.112.01907 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Douyin | 7.4.0 | 7.5.1 |
-| CalHash | 1.5.3 | 1.5.4 |
-| KiCad | 9.0.8 | 10.0.0 |
+| Connect Fonts | 28.0.3 | 28.0.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Royal TSX | 6.4.0.1000 | 6.4.1.1000 |
-| Claude Code | 2.1.79 | 2.1.80 |
+| quarto | 1.8.27 | 1.9.36 |
+| Session Manager Plugin for the AWS CLI | 1.2.779.0 | 1.2.792.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

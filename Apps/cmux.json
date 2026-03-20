@@ -8,5 +8,6 @@
   "fileName": "cmux-macos.dmg",
   "sha": "214cf96cd930563ffa43c526852d5c4c40f6a556a8f147fc035673a5cd37d846",
   "category": "Developer Tools",
-  "publisher": "cmux"
+  "publisher": "cmux",
+  "previous_version": "0.62.2"
 }
