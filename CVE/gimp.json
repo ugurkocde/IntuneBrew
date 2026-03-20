@@ -1,7 +1,7 @@
 {
   "app_name": "Gimp",
   "app_key": "gimp",
-  "last_updated": "2026-03-19",
+  "last_updated": "2026-03-20",
   "total_cves": 64,
   "summary": {
     "critical": 1,
@@ -896,7 +896,7 @@
     {
       "cve_id": "CVE-2025-6035",
       "published_date": "2025-06-13",
-      "last_modified_date": "2026-01-08",
+      "last_modified_date": "2026-03-19",
       "description": "A flaw was found in GIMP. An integer overflow vulnerability exists in the GIMP \"Despeckle\"  plug-in. The issue occurs due to unchecked multiplication of image dimensions, such as width, height, and bytes-per-pixel (img_bpp), which can result in allocating insufficient memory and subsequently performing out-of-bounds writes. This issue could lead to heap corruption, a potential denial of service (DoS), or arbitrary code execution in certain scenarios.",
       "base_score": 6.1,
       "severity": "MEDIUM",
