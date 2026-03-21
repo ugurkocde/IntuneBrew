@@ -1,16 +1,37 @@
 {
   "app_name": "Jellyfin",
   "app_key": "jellyfin",
-  "last_updated": "2026-03-20",
-  "total_cves": 14,
+  "last_updated": "2026-03-21",
+  "total_cves": 15,
   "summary": {
-    "critical": 1,
+    "critical": 2,
     "high": 8,
     "medium": 5,
     "low": 0,
     "kev_count": 0
   },
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2026-31852",
+      "published_date": "2026-03-11",
+      "last_modified_date": "2026-03-20",
+      "description": "Jellyfin is an open-source media system. The code-quality.yml GitHub Actions workflow in jellyfin/jellyfin-ios is vulnerable to arbitrary code execution via pull requests from forked repositories. Due to the workflow's elevated permissions (nearly all write permissions), this vulnerability enables full repository takeover of jellyfin/jellyfin-ios, exfiltration of highly privileged secrets, Apple App Store supply chain attack, GitHub Container Registry (ghcr.io) package poisoning, and full jellyfin organization compromise via cross-repository token usage. Note: This is not a code vulnerability, but a vulnerability in the GitHub Actions workflows. No new version is required for this GHSA and end users do not need to take any actions.",
+      "base_score": 10.0,
+      "severity": "CRITICAL",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:C/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "jellyfin",
+      "product": "jellyfin"
+    },
     {
       "cve_id": "CVE-2023-30627",
       "published_date": "2023-04-24",
