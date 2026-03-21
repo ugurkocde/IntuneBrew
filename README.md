@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1243-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -396,22 +396,21 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-20 22:43 UTC*
+*Last checked: 2026-03-21 00:39 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Rive | 0.8.4403 | 0.8.4450 |
-| RsyncUI | 2.9.2 | 2.9.3 |
-| VSCodium | 1.110.11631 | 1.112.01907 |
+| Microsoft Edge | 146.0.3856.62 | 146.0.3856.72 |
+| Mimestream | 1.9.15 | 1.9.16 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Connect Fonts | 28.0.3 | 28.0.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| quarto | 1.8.27 | 1.9.36 |
-| Session Manager Plugin for the AWS CLI | 1.2.779.0 | 1.2.792.0 |
+| OpenShot Video Editor | 3.4.0 | 3.5.0 |
+| Claude Code | 2.1.80 | 2.1.81 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
