@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1243-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -398,24 +398,26 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-22 00:44 UTC*
+*Last checked: 2026-03-23 00:43 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Lunatask | 2.1.23 | 2.1.26 |
-| GrandPerspective | 3.6.3 | 3.6.4 |
-| ChatWise | 0.10.8 | 26.3.23 |
-| kitty | 0.46.1 | 0.46.2 |
-| Apidog | 2.8.15 | 2.8.18 |
-| Zettlr | 4.2.1 | 4.3.0 |
-| MarginNote | 4.3.0 | 4.3.1 |
+| Dockside | 2.1.6 | 2.2.0 |
+| Readest | 0.9.101 | 0.10.1 |
+| QQ | 6.9.89 | 6.9.91 |
+| ChatWise | 26.3.23 | 26.3.25 |
+| DBeaver Community Edition | 26.0.0 | 26.0.1 |
+| Stats | 2.12.4 | 2.12.5 |
+| HazeOver | 1.9.6 | 1.9.7 |
+| Calmly Writer | 2.0.63 | 2.0.64 |
+| HandBrake | 1.11.0 | 1.11.1 |
+| Quicksilver | 2.5.6 | 2.5.7 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Bitfocus Companion | 4.2.5 | 4.2.6 |
-| Granola | 7.80.0 | 7.80.2 |
 | Multi | 0.538.2 | 3.0.2 |
 ## ✨ Features
 
