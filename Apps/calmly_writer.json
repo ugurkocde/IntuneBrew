@@ -1,12 +1,12 @@
 {
   "name": "Calmly Writer",
   "description": "Word processor with markdown formatting and select themes",
-  "version": "2.0.64",
-  "url": "https://www.calmlywriter.com/releases/Calmly%20Writer-2.0.64-arm64.dmg",
+  "version": "2.0.65",
+  "url": "https://www.calmlywriter.com/releases/Calmly%20Writer-2.0.65-arm64.dmg",
   "bundleId": "com.calmlywriter.CalmlyWriter",
   "homepage": "https://calmlywriter.com/",
-  "fileName": "Calmly Writer-2.0.64-arm64.dmg",
-  "sha": "e1c8befee1e038df4237bd777218d5d094abc42ebb2d1554959ab7782f273dc5",
+  "fileName": "Calmly Writer-2.0.65-arm64.dmg",
+  "sha": "3c76aeff11564eed2c921e98420396316e59e77cf8c4ccdfd70a88c809831795",
   "changelog": "https://calmlywriter.com/blog/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:46:15Z",
@@ -20,5 +20,5 @@
   },
   "category": "Productivity",
   "publisher": "Calmly Writer",
-  "previous_version": "2.0.63"
+  "previous_version": "2.0.64"
 }

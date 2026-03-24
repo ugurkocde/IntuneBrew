@@ -1,14 +1,14 @@
 {
   "name": "Melodics",
   "description": "Helps you learn to play your instrument",
-  "version": "5.0.133",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/melodics_5.0.133.pkg",
+  "version": "5.0.139",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/melodics_5.0.139.pkg",
   "bundleId": "com.melodics.Melodics",
   "homepage": "https://melodics.com/",
-  "fileName": "melodics_5.0.133.pkg",
+  "fileName": "melodics_5.0.139.pkg",
   "type": "app",
-  "sha": "ed54aac410d4ba9114aceb78af1fdb894064eda2bd3a57959928be938904585e",
+  "sha": "2b9217d18b7aa6a0c93e6f2f212e52626d94ceb6dd8d397c8330222d2b9abbcd",
   "category": "Media",
   "publisher": "Melodics",
-  "previous_version": "5.0.133"
+  "previous_version": "5.0.139"
 }

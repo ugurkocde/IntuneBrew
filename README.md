@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1243-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -399,26 +399,41 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-23 00:43 UTC*
+*Last checked: 2026-03-24 00:43 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Dockside | 2.1.6 | 2.2.0 |
-| Readest | 0.9.101 | 0.10.1 |
-| QQ | 6.9.89 | 6.9.91 |
-| ChatWise | 26.3.23 | 26.3.25 |
-| DBeaver Community Edition | 26.0.0 | 26.0.1 |
-| Stats | 2.12.4 | 2.12.5 |
-| HazeOver | 1.9.6 | 1.9.7 |
-| Calmly Writer | 2.0.63 | 2.0.64 |
-| HandBrake | 1.11.0 | 1.11.1 |
-| Quicksilver | 2.5.6 | 2.5.7 |
+| Mindmanager | 25.1.105 | 25.2.105 |
+| Orca Slicer | 2.3.1 | 2.3.2 |
+| Apifox | 2.8.16 | 2.8.20 |
+| ChatWise | 26.3.25 | 26.3.28 |
+| CotEditor | 6.2.5 | 6.2.6 |
+| Headlamp | 0.40.1 | 0.41.0 |
+| CleanShot | 4.8.7 | 4.8.8 |
+| Obsidian | 1.12.4 | 1.12.7 |
+| Discord | 0.0.381 | 0.0.382 |
+| DuckDuckGo | 1.181.1 | 1.182.0 |
+| Elgato Wave Link | 2.0.7.3795 | 3.0.0 |
+| Podman Desktop | 1.25.1 | 1.26.1 |
+| Raycast | 1.104.10 | 1.104.11 |
+| CLion | 2025.3.3 | 2025.3.4 |
+| Dataflare | 2.9.2 | 2.9.3 |
+| Calmly Writer | 2.0.64 | 2.0.65 |
+| Box Tools | 4.31 | 4.32 |
+| Beekeeper Studio | 5.6.2 | 5.6.3 |
+| Craft | 3.3.11 | 3.3.12 |
+| Tresorit | 3.5.3376.4650 | 3.5.3421.4750 |
+| RubyMine | 2025.3.3 | 2025.3.4 |
 | Caffeine | 1.6.3 | 1.1.4 |
+| Mellel | 6.6.1 | 6.6.5 |
+| Modern CSV | 2.3.1 | 2.4 |
 | Multi | 0.538.2 | 3.0.2 |
+| Proton Mail Bridge | 3.22.0 | 3.23.1 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
