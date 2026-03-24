@@ -1,13 +1,13 @@
 {
   "name": "LaunchBar",
   "description": "Productivity tool",
-  "version": "6.22.2",
-  "url": "https://www.obdev.at/downloads/launchbar/LaunchBar-6.22.2.dmg",
+  "version": "6.23",
+  "url": "https://www.obdev.at/downloads/launchbar/LaunchBar-6.23.dmg",
   "bundleId": "at.obdev.LaunchBar",
   "homepage": "https://www.obdev.at/products/launchbar/index.html",
-  "fileName": "LaunchBar-6.22.2.dmg",
-  "sha": "38fe2b52b0f8f1a49e22f2cd46409d4d92704ef2c5bf8779622386d5feed2f6f",
+  "fileName": "LaunchBar-6.23.dmg",
+  "sha": "00691cdd8e0e832dbb5a10871b1de15047556eb5ffb97a5c8c2ddec724c158b4",
   "category": "Productivity",
   "publisher": "Objective Development",
-  "previous_version": "6.22.2"
+  "previous_version": "6.23"
 }

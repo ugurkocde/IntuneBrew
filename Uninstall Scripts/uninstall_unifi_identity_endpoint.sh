@@ -39,5 +39,13 @@ launchctl unload -w ~/Library/LaunchAgents/com.ui.uid.standard-desktop.startup.p
 echo "Stopping application with bundle ID com.ui.uid.standard-desktop if running..."
 killall -9 "com.ui.uid.standard-desktop" 2>/dev/null || true
 
+# Remove $HOME/Library/Application Support/com.ui.uid.standard-desktop
+echo "Removing $HOME/Library/Application Support/com.ui.uid.standard-desktop..."
+if [ -d "$HOME/Library/Application Support/com.ui.uid.standard-desktop" ]; then
+    rm -rf "$HOME/Library/Application Support/com.ui.uid.standard-desktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.ui.uid.standard-desktop" ]; then
+    rm -f "$HOME/Library/Application Support/com.ui.uid.standard-desktop" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

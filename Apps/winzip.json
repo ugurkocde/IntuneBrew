@@ -1,0 +1,13 @@
+{
+  "name": "WinZip",
+  "description": "File archiving tool",
+  "version": "12.0.7282",
+  "url": "https://download.winzip.com/winzipmacedition12.dmg",
+  "bundleId": "com.winzip.wzmmacsub1y",
+  "homepage": "https://www.winzip.com/mac/en/winzip.html",
+  "fileName": "winzipmacedition12.dmg",
+  "sha": "ac69719cdadcefcb75729831983d884f44e9e57e5cc608672b3d4a1c87963c0e",
+  "category": "Utilities",
+  "publisher": "WinZip Computing, LLC",
+  "previous_version": "12.0.7282"
+}

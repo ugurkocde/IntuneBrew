@@ -1,13 +1,13 @@
 {
   "name": "HandBrake",
   "description": "Open-source video transcoder",
-  "version": "1.11.0",
-  "url": "https://handbrake.fr/rotation.php?file=HandBrake-1.11.0.dmg&update=true",
+  "version": "1.11.1",
+  "url": "https://handbrake.fr/rotation.php?file=HandBrake-1.11.1.dmg&update=true",
   "bundleId": "fr.handbrake.HandBrake",
   "homepage": "https://handbrake.fr/",
-  "fileName": "HandBrake-1.11.0.dmg",
-  "sha": "d63d9bb325b8d5b5469b56b534422b6437f015baf6fce9d4323a1e55ded5c365",
+  "fileName": "HandBrake-1.11.1.dmg",
+  "sha": "0973dcc4ccf53388498fbb35dbf7118b28276f2fe4ecbf08eca8596985f2c684",
   "category": "Media",
   "publisher": "The HandBrake Team",
-  "previous_version": "1.11.0"
+  "previous_version": "1.11.1"
 }

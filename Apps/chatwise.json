@@ -1,12 +1,12 @@
 {
   "name": "ChatWise",
   "description": "AI chatbot for many LLMs",
-  "version": "0.10.7",
-  "url": "https://github.com/egoist/chatwise-releases/releases/download/v0.10.7/ChatWise_0.10.7_aarch64.dmg",
+  "version": "26.3.28",
+  "url": "https://releases.chatwise.app/26.3.28/ChatWise-26.3.28-arm64.dmg",
   "bundleId": "app.chatwise",
   "homepage": "https://chatwise.app/",
-  "fileName": "ChatWise_0.10.7_aarch64.dmg",
-  "sha": "12443900074b1cee24accd66f8ca9912caf7289c8f0df9b2b5baf8243bf9d355",
+  "fileName": "ChatWise-26.3.28-arm64.dmg",
+  "sha": "9b0d0f122ff6549d497ca1e05ed5e41aeec44f240be26addf5c4da2c517129ad",
   "qa_info": {
     "qa_timestamp": "2025-05-14T06:43:14Z",
     "qa_result": "Installation successful and verified",
@@ -19,5 +19,5 @@
   },
   "category": "Productivity",
   "publisher": "ChatWise",
-  "previous_version": "0.10.7"
+  "previous_version": "26.3.25"
 }

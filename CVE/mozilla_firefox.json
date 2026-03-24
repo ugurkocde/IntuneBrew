@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-03-16",
+  "last_updated": "2026-03-24",
   "total_cves": 3033,
   "summary": {
     "critical": 361,
@@ -50813,7 +50813,7 @@
     {
       "cve_id": "CVE-2015-0797",
       "published_date": "2015-05-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-03-17",
       "description": "GStreamer before 1.4.5, as used in Mozilla Firefox before 38.0, Firefox ESR 31.x before 31.7, and Thunderbird before 31.7 on Linux, allows remote attackers to cause a denial of service (buffer over-read and application crash) or possibly execute arbitrary code via crafted H.264 video data in an m4v file.",
       "base_score": 6.8,
       "severity": "MEDIUM",

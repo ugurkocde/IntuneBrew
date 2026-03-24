@@ -1,14 +1,14 @@
 {
   "name": "Fastmail",
   "description": "Email client",
-  "version": "1.2.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/fastmail_1.2.0.pkg",
+  "version": "1.2.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/fastmail_1.2.1.pkg",
   "bundleId": "com.fastmail.mac.Fastmail",
   "homepage": "https://www.fastmail.com/",
-  "fileName": "fastmail_1.2.0.pkg",
+  "fileName": "fastmail_1.2.1.pkg",
   "type": "app",
-  "sha": "ad031cff0e9c80378acd5fed75628831244ec0f89b3058becc43e596d7d92852",
+  "sha": "b34849f615354f80e843196f2fc65c247b136ca8457ec5582579b06b1a5ec394",
   "category": "Communication",
   "publisher": "Fastmail Pty Ltd",
-  "previous_version": "1.2.0"
+  "previous_version": "1.2.1"
 }

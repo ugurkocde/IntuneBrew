@@ -1,13 +1,13 @@
 {
   "name": "CalHash",
   "description": "Calculate and compare file checksums",
-  "version": "1.5.3",
+  "version": "1.5.4",
   "url": "https://www.titanium-software.fr/download/26/CalHash.dmg",
   "bundleId": "com.titanium.CalHash",
   "homepage": "https://www.titanium-software.fr/en/calhash.html",
   "fileName": "CalHash.dmg",
-  "sha": "14549a7d3bd94108c05892f3f650f6c230358b07183f3c8432c883ccd1673c53",
+  "sha": "f259781ca33950126be413713b708d30a6ef6c74253ace7fb34aad199e5edf00",
   "category": "Utilities",
   "publisher": "Titanium Software",
-  "previous_version": "1.5.3"
+  "previous_version": "1.5.4"
 }

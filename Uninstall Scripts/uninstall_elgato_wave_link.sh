@@ -23,9 +23,49 @@ launchctl unload -w /Library/LaunchAgents/com.elgato.WaveLink.plist 2>/dev/null 
 launchctl unload -w /Library/LaunchDaemons/com.elgato.WaveLink.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.elgato.WaveLink.plist 2>/dev/null || true
 
-# Kill application with bundle ID com.elgato.WaveLink if running
-echo "Stopping application with bundle ID com.elgato.WaveLink if running..."
-killall -9 "com.elgato.WaveLink" 2>/dev/null || true
+# Kill application with bundle ID com.elgato.WaveLink* if running
+echo "Stopping application with bundle ID com.elgato.WaveLink* if running..."
+killall -9 "com.elgato.WaveLink*" 2>/dev/null || true
+
+# Remove /Applications/Elgato Wave Link.app
+echo "Removing /Applications/Elgato Wave Link.app..."
+if [ -d "/Applications/Elgato Wave Link.app" ]; then
+    rm -rf "/Applications/Elgato Wave Link.app" 2>/dev/null || true
+elif [ -f "/Applications/Elgato Wave Link.app" ]; then
+    rm -f "/Applications/Elgato Wave Link.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.elgato.WaveLink*
+echo "Removing $HOME/Library/Application Scripts/com.elgato.WaveLink*..."
+if [ -d "$HOME/Library/Application Scripts/com.elgato.WaveLink*" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.elgato.WaveLink*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.elgato.WaveLink*" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.elgato.WaveLink*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.elgato.WaveLink*
+echo "Removing $HOME/Library/Containers/com.elgato.WaveLink*..."
+if [ -d "$HOME/Library/Containers/com.elgato.WaveLink*" ]; then
+    rm -rf "$HOME/Library/Containers/com.elgato.WaveLink*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.elgato.WaveLink*" ]; then
+    rm -f "$HOME/Library/Containers/com.elgato.WaveLink*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato
+echo "Removing $HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato..."
+if [ -d "$HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato" ]; then
+    rm -rf "$HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato" ]; then
+    rm -f "$HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/ElgatoWaveLink
+echo "Removing $HOME/Library/Logs/ElgatoWaveLink..."
+if [ -d "$HOME/Library/Logs/ElgatoWaveLink" ]; then
+    rm -rf "$HOME/Library/Logs/ElgatoWaveLink" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/ElgatoWaveLink" ]; then
+    rm -f "$HOME/Library/Logs/ElgatoWaveLink" 2>/dev/null || true
+fi
 
 # Remove $HOME/Library/Logs/WaveLink
 echo "Removing $HOME/Library/Logs/WaveLink..."

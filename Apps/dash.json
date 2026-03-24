@@ -1,14 +1,14 @@
 {
   "name": "Dash",
   "description": "API documentation browser and code snippet manager",
-  "version": "23.1.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/dash_23.1.0.pkg",
+  "version": "23.1.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/dash_23.1.2.pkg",
   "bundleId": "com.kapeli.dash",
   "homepage": "https://kapeli.com/dash",
-  "fileName": "dash_23.1.0.pkg",
+  "fileName": "dash_23.1.2.pkg",
   "type": "app",
-  "previous_version": "23.1.0",
-  "sha": "dd8751ac2f5b7c92ffd19ac9446ab4b250ef3008ce96e3586ed827256173daef",
+  "previous_version": "23.1.2",
+  "sha": "88ed839f9c664f3260ad9f0a11447c73c4d053e97bc135cf5698a4fdd0c96e64",
   "category": "Developer Tools",
   "publisher": "Kapeli"
 }

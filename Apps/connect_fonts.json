@@ -1,13 +1,13 @@
 {
   "name": "Connect Fonts",
   "description": "Font manager",
-  "version": "28.0.2",
-  "url": "https://bin.extensis.com/ConnectFonts-M-28-0-2.dmg",
+  "version": "28.0.4",
+  "url": "https://bin.extensis.com/ConnectFonts-M-28-0-4.dmg",
   "bundleId": "com.extensis.SuitcaseFusion",
   "homepage": "https://www.extensis.com/products/connect",
-  "fileName": "ConnectFonts-M-28-0-2.dmg",
-  "sha": "2fe863f20332f250dce810cce4895feea37690ab909b90f6859de7bda6618a6e",
+  "fileName": "ConnectFonts-M-28-0-4.dmg",
+  "sha": "95261f31179279d3c583de6f92d7acc43ed1fa078f8db86f99bb173539aace63",
   "category": "Design",
   "publisher": "Extensis",
-  "previous_version": "28.0.2"
+  "previous_version": "28.0.4"
 }

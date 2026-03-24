@@ -1,13 +1,13 @@
 {
   "name": "Opera GX",
   "description": "Alternate version of the Opera web browser to complement gaming",
-  "version": "128.0.5807.78",
-  "url": "https://get.geo.opera.com/pub/opera_gx/128.0.5807.78/mac/Opera_GX_128.0.5807.78_Setup.dmg",
+  "version": "128.0.5807.97",
+  "url": "https://get.geo.opera.com/pub/opera_gx/128.0.5807.97/mac/Opera_GX_128.0.5807.97_Setup.dmg",
   "bundleId": "com.operasoftware.OperaGX",
   "homepage": "https://www.opera.com/gx",
-  "fileName": "Opera_GX_128.0.5807.78_Setup.dmg",
-  "sha": "2400c735511efbd13c1e362169fe9ec3bf34a4af925186bb144ac8f972730872",
+  "fileName": "Opera_GX_128.0.5807.97_Setup.dmg",
+  "sha": "5d5f927baf8c72dff28dc510a96aebfef432f678c86331152c2e9b747058153b",
   "category": "Browsers",
   "publisher": "Opera Software AS",
-  "previous_version": "128.0.5807.78"
+  "previous_version": "128.0.5807.97"
 }

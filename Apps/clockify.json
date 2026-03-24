@@ -1,14 +1,14 @@
 {
   "name": "Clockify",
   "description": "Time tracking tool for agencies and freelancers",
-  "version": "2.12.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/clockify_2.12.2.pkg",
+  "version": "2.12.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/clockify_2.12.3.pkg",
   "bundleId": "coing.ClockifyDesktop",
   "homepage": "https://clockify.me/mac-time-tracking",
-  "fileName": "clockify_2.12.2.pkg",
+  "fileName": "clockify_2.12.3.pkg",
   "type": "app",
-  "sha": "777a28ad472b35c3dc2df0a1454d88866d7ea58f21ba28821cddc0ab601cbdfc",
+  "sha": "84f940ffc68c4f08643a99a2e902053faf9d9b60d1708fa37c308c845059fe45",
   "category": "Productivity",
   "publisher": "Clockify",
-  "previous_version": "2.12.2"
+  "previous_version": "2.12.3"
 }
