@@ -1,12 +1,12 @@
 {
   "name": "Butler",
   "description": "Arrange your tasks in a customisable configuration",
-  "version": "4.4.8",
-  "url": "https://manytricks.com/download/_do_not_hotlink_/butler448.dmg",
+  "version": "4.4.9",
+  "url": "https://manytricks.com/download/_do_not_hotlink_/butler449.dmg",
   "bundleId": "com.manytricks.Butler",
   "homepage": "https://manytricks.com/butler/",
-  "fileName": "butler448.dmg",
-  "sha": "b6877901f1c5b4d75cebe47fe5cecf461c1b424025b756e6b9efaa44ed9faf7f",
+  "fileName": "butler449.dmg",
+  "sha": "fe01992fa005bc4162f7b38d9d8521b713a48f4e43fc3ebf7e787f570803fab1",
   "category": "Productivity",
   "publisher": "Many Tricks",
   "previous_version": "4.4.8"

@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1243-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -400,40 +400,53 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-24 00:43 UTC*
+*Last checked: 2026-03-25 00:46 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mindmanager | 25.1.105 | 25.2.105 |
-| Orca Slicer | 2.3.1 | 2.3.2 |
-| Apifox | 2.8.16 | 2.8.20 |
-| ChatWise | 26.3.25 | 26.3.28 |
-| CotEditor | 6.2.5 | 6.2.6 |
-| Headlamp | 0.40.1 | 0.41.0 |
-| CleanShot | 4.8.7 | 4.8.8 |
-| Obsidian | 1.12.4 | 1.12.7 |
-| Discord | 0.0.381 | 0.0.382 |
-| DuckDuckGo | 1.181.1 | 1.182.0 |
-| Elgato Wave Link | 2.0.7.3795 | 3.0.0 |
-| Podman Desktop | 1.25.1 | 1.26.1 |
-| Raycast | 1.104.10 | 1.104.11 |
-| CLion | 2025.3.3 | 2025.3.4 |
-| Dataflare | 2.9.2 | 2.9.3 |
-| Calmly Writer | 2.0.64 | 2.0.65 |
-| Box Tools | 4.31 | 4.32 |
-| Beekeeper Studio | 5.6.2 | 5.6.3 |
-| Craft | 3.3.11 | 3.3.12 |
-| Tresorit | 3.5.3376.4650 | 3.5.3421.4750 |
-| RubyMine | 2025.3.3 | 2025.3.4 |
+| Mozilla Firefox ESR | 140.8.0 | 140.9.0 |
+| Studio 3T | 2026.5.0 | 2026.6.0 |
+| ProcessSpy | 1.10.3 | 1.11.0 |
+| Dockside | 2.2.0 | 2.2.3 |
+| Mozilla Thunderbird | 148.0.1 | 149.0 |
+| Apifox | 2.8.20 | 2.8.21 |
+| ChatWise | 26.3.28 | 26.3.29 |
+| Google Chrome | 146.0.7680.154 | 146.0.7680.165 |
+| Zoom | 6.7.7.76486 | 7.0.0.77593 |
+| Mozilla Firefox | 148.0.2 | 149.0 |
+| Grammarly Desktop | 1.157.1.0 | 1.158.0.0 |
+| Webex | 46.3.0.34324 | 46.3.1.34493 |
+| Notion | 7.8.0 | 7.9.0 |
+| Brave | 1.88.134.0 | 1.88.136.0 |
+| Sync | 2.2.55 | 2.2.57 |
+| JetBrains Toolbox | 3.4 | 3.4.1 |
+| Krita | 5.2.16 | 5.3.0 |
+| Apidog | 2.8.18 | 2.8.21 |
+| Milanote | 3.18.84 | 3.18.85 |
+| Tor Browser | 15.0.7 | 15.0.8 |
+| Butler | 4.4.8 | 4.4.9 |
+| CopyQ | 13.0.0 | 14.0.0 |
+| Quicksilver | 2.5.7 | 2.5.8 |
+| Roam Research | 0.0.35 | 0.0.36 |
+| Waterfox | 6.6.9 | 6.6.10 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Mellel | 6.6.1 | 6.6.5 |
-| Modern CSV | 2.3.1 | 2.4 |
+| Free Download Manager | 6.33.1 | 6.33.2 |
+| GDevelop | 5.6.261 | 5.6.262 |
+| Mendeley Reference Manager | 2.143.0 | 2.144.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Proton Mail Bridge | 3.22.0 | 3.23.1 |
+| Pitch | 2.118.0 | 2.119.0 |
+| Royal TSX | 6.4.1.1000 | 6.4.2.1000 |
+| Nextcloud | 4.0.8 | 33.0.0 |
+| Microsoft Excel | 16.107.26031524 | 16.107.26032211 |
+| Microsoft Outlook | 16.107.26031524 | 16.107.26032211 |
+| Microsoft PowerPoint | 16.107.26031524 | 16.107.26032211 |
+| Microsoft Word | 16.107.26031524 | 16.107.26032211 |
+| TeamViewer | 15.75.5 | 15.76.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

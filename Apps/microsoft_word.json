@@ -1,13 +1,13 @@
 {
   "name": "Microsoft Word",
   "description": "Word processor",
-  "version": "16.107.26031524",
-  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Word_16.107.26031524_Installer.pkg",
+  "version": "16.107.26032211",
+  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Word_16.107.26032211_Installer.pkg",
   "bundleId": "com.microsoft.package.Microsoft_Word.app",
   "homepage": "https://www.microsoft.com/en-US/microsoft-365/word",
-  "fileName": "Microsoft_Word_16.107.26031524_Installer.pkg",
+  "fileName": "Microsoft_Word_16.107.26032211_Installer.pkg",
   "type": "pkg",
-  "sha": "fb54e9b2cd2c03e48a52c2221f05a4c4055e71a8cb0c96dde011321916c4148e",
+  "sha": "c14fdcaecd2cec5096d39cdf983f550a7e4e22031ff780a80b3912c3ae7337bc",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
   "previous_version": "16.107.26031524"
