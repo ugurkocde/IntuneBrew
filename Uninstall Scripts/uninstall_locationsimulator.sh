@@ -25,12 +25,44 @@ elif [ -f "/Applications/LocationSimulator.app" ]; then
     rm -f "/Applications/LocationSimulator.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/de.davidklopp.locationsimulator
+echo "Removing $HOME/Library/Application Scripts/de.davidklopp.locationsimulator..."
+if [ -d "$HOME/Library/Application Scripts/de.davidklopp.locationsimulator" ]; then
+    rm -rf "$HOME/Library/Application Scripts/de.davidklopp.locationsimulator" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/de.davidklopp.locationsimulator" ]; then
+    rm -f "$HOME/Library/Application Scripts/de.davidklopp.locationsimulator" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/de.davidklopp.locationsimulator.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/de.davidklopp.locationsimulator.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/de.davidklopp.locationsimulator.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/de.davidklopp.locationsimulator.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/de.davidklopp.locationsimulator.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/de.davidklopp.locationsimulator.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/LocationSimulator
 echo "Removing $HOME/Library/Application Support/LocationSimulator..."
 if [ -d "$HOME/Library/Application Support/LocationSimulator" ]; then
     rm -rf "$HOME/Library/Application Support/LocationSimulator" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/LocationSimulator" ]; then
     rm -f "$HOME/Library/Application Support/LocationSimulator" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.apple.helpd/Generated/de.davidklopp.locationsimulatorhelp*0.2.2
+echo "Removing $HOME/Library/Caches/com.apple.helpd/Generated/de.davidklopp.locationsimulatorhelp*0.2.2..."
+if [ -d "$HOME/Library/Caches/com.apple.helpd/Generated/de.davidklopp.locationsimulatorhelp*0.2.2" ]; then
+    rm -rf "$HOME/Library/Caches/com.apple.helpd/Generated/de.davidklopp.locationsimulatorhelp*0.2.2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.apple.helpd/Generated/de.davidklopp.locationsimulatorhelp*0.2.2" ]; then
+    rm -f "$HOME/Library/Caches/com.apple.helpd/Generated/de.davidklopp.locationsimulatorhelp*0.2.2" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/de.davidklopp.locationsimulator
+echo "Removing $HOME/Library/Containers/de.davidklopp.locationsimulator..."
+if [ -d "$HOME/Library/Containers/de.davidklopp.locationsimulator" ]; then
+    rm -rf "$HOME/Library/Containers/de.davidklopp.locationsimulator" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/de.davidklopp.locationsimulator" ]; then
+    rm -f "$HOME/Library/Containers/de.davidklopp.locationsimulator" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.schlaubi.LocationSimulator.plist
