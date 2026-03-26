@@ -1,12 +1,12 @@
 {
   "name": "IntelliJ IDEA Ultimate",
   "description": "Java IDE by JetBrains",
-  "version": "2025.3.4",
-  "url": "https://download.jetbrains.com/idea/ideaIU-2025.3.4-aarch64.dmg",
+  "version": "2026.1",
+  "url": "https://download.jetbrains.com/idea/ideaIU-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.intellij",
   "homepage": "https://www.jetbrains.com/idea/",
-  "fileName": "ideaIU-2025.3.4-aarch64.dmg",
-  "sha": "3cec5a2d7e577e320810601eed0bf69a9628f3f1b82a33e40bf6472231bfc6b8",
+  "fileName": "ideaIU-2026.1-aarch64.dmg",
+  "sha": "90f2aeca3fd0173102b3d2734ad863602bb17146c317fe2d88b0618fd47ea600",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
   "previous_version": "2025.3.4"

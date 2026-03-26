@@ -1,14 +1,14 @@
 {
   "name": "DEVONsphere Express",
   "description": "Find items related to the frontmost document locally or online",
-  "version": "1.9.8",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/devonsphere_express_1.9.8.pkg",
+  "version": "1.9.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/devonsphere_express_1.9.9.pkg",
   "bundleId": "com.devon-technologies.sphereexpress",
   "homepage": "https://www.devontechnologies.com/apps/devonsphere",
-  "fileName": "devonsphere_express_1.9.8.pkg",
+  "fileName": "devonsphere_express_1.9.9.pkg",
   "type": "app",
-  "sha": "85fec67b73ff7390ab6b2870f237c3969684f8d41e66a0077427811a9ed30ffc",
+  "sha": "0c8acafbff78459105a64fc607c3fbaf8c9c1edc6f954afc258b057f7e65bf40",
   "category": "Productivity",
   "publisher": "DEVONtechnologies",
-  "previous_version": "1.9.8"
+  "previous_version": "1.9.9"
 }
