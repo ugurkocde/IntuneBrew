@@ -1,12 +1,12 @@
 {
   "name": "RubyMine",
   "description": "Ruby on Rails IDE",
-  "version": "2025.3.4",
-  "url": "https://download.jetbrains.com/ruby/RubyMine-2025.3.4-aarch64.dmg",
+  "version": "2026.1",
+  "url": "https://download.jetbrains.com/ruby/RubyMine-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.rubymine",
   "homepage": "https://www.jetbrains.com/ruby/",
-  "fileName": "RubyMine-2025.3.4-aarch64.dmg",
-  "sha": "988ddbd71bbf7d66d605b6fdff64c88454ae497bf36060a6404812429f016878",
+  "fileName": "RubyMine-2026.1-aarch64.dmg",
+  "sha": "c43f896268ae74c246082241dcf7fcfa634651124547130387e363ef152b7f3f",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
   "previous_version": "2025.3.4"

@@ -1,13 +1,13 @@
 {
   "name": "swiftDialog",
   "description": "Admin utility that presents custom dialogs or messages from shell scripts",
-  "version": "3.0.0",
-  "url": "https://github.com/swiftDialog/swiftDialog/releases/download/v3.0.0/dialog-3.0.0-4952.pkg",
+  "version": "3.0.1",
+  "url": "https://github.com/swiftDialog/swiftDialog/releases/download/v3.0.1/dialog-3.0.1-4955.pkg",
   "bundleId": "au.csiro.dialogcli",
   "homepage": "https://swiftdialog.app/",
-  "fileName": "dialog-3.0.0-4952.pkg",
+  "fileName": "dialog-3.0.1-4955.pkg",
   "type": "pkg",
-  "sha": "a0ea899a8b8ab10b63df47d70ca6daf9983a4a976819bdce60cb44301105c900",
+  "sha": "8977a08d706a4615b6c48b6b47badf0fd61cd6c9904c7a4712aa4431c612f385",
   "category": "Developer Tools",
   "publisher": "swiftDialog",
   "previous_version": "3.0.0"

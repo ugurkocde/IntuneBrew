@@ -1,12 +1,12 @@
 {
   "name": "MEGAsync",
   "description": "Syncs files between computers and MEGA Cloud drives",
-  "version": "6.2.0.5",
+  "version": "6.2.1.0",
   "url": "https://mega.nz/MEGAsyncSetupArm64.dmg",
   "bundleId": "mega.mac",
   "homepage": "https://mega.nz/sync",
   "fileName": "MEGAsyncSetupArm64.dmg",
-  "sha": "43377abcf9bbc00405dbeaef8a7ae478fd54273c28f1f1c0dd1400221656afa9",
+  "sha": "9506564b3145a2cca8b08029c3e0b41c44a20c974f117d1ee704807e13368332",
   "category": "Utilities",
   "publisher": "MEGA Limited",
   "previous_version": "6.2.0.5"

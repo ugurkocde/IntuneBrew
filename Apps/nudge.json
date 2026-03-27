@@ -1,13 +1,13 @@
 {
   "name": "Nudge",
   "description": "Application for enforcing OS updates",
-  "version": "2.0.12.81807",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/nudge_2.0.12.81807.pkg",
+  "version": "2.1.0.81852",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/nudge_2.1.0.81852.pkg",
   "bundleId": "com.github.macadmins.Nudge",
   "homepage": "https://github.com/macadmins/nudge",
-  "fileName": "nudge_2.0.12.81807.pkg",
+  "fileName": "nudge_2.1.0.81852.pkg",
   "type": "pkg_in_pkg",
-  "sha": "9d811da5a3dc2632b5a4fddd6bdade76e815e56e7758ea9d3e8a5e7645ffaefa",
+  "sha": "bdbba7bc9b456d783211cb5df94b215a3e3f060230bbd03bba60f5bf2510003a",
   "category": "Utilities",
   "publisher": "macadmins",
   "previous_version": "2.0.12.81807"

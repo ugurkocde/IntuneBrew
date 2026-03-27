@@ -1,14 +1,14 @@
 {
   "name": "Vellum",
   "description": "Ebook creation software",
-  "version": "4.0.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/vellum_4.0.3.pkg",
+  "version": "4.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/vellum_4.1.pkg",
   "bundleId": "com.180g.Vellum",
   "homepage": "https://vellum.pub/",
-  "fileName": "vellum_4.0.3.pkg",
+  "fileName": "vellum_4.1.pkg",
   "type": "app",
-  "sha": "c8199fce0eb0d4747f54a6b5883a746832593fcfd81ff4bb7882a030c617d5b0",
+  "sha": "ce3142a033a5e1b6d405b7581c72aae54e9046fca94b4b1aeb7b7e9441acbf2e",
   "category": "Design",
   "publisher": "Vellum",
-  "previous_version": "4.0.3"
+  "previous_version": "4.1"
 }
