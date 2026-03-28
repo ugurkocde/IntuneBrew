@@ -1,14 +1,14 @@
 {
   "name": "Mx Power Gadget",
   "description": "Power management and monitoring for Apple Mx processors",
-  "version": "1.6.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/mx_power_gadget_1.6.2.pkg",
+  "version": "1.6.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/mx_power_gadget_1.6.3.pkg",
   "bundleId": "com.fabriceleyne.MxPowerGadget",
   "homepage": "https://www.seense.com/menubarstats/mxpg/",
-  "fileName": "mx_power_gadget_1.6.2.pkg",
+  "fileName": "mx_power_gadget_1.6.3.pkg",
   "type": "app",
-  "sha": "81cb372d3945c13a75fdc22800dca714ee55f27f4f2cd91be446af29c0cd60ba",
+  "sha": "f7590b2a48abcf7f6ec3d23ee66628498258ed62a9c9d3ce78e85936a180bdbf",
   "category": "Utilities",
   "publisher": "Seense",
-  "previous_version": "1.6.2"
+  "previous_version": "1.6.3"
 }
