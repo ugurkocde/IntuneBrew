@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Office",
   "app_key": "microsoft_office",
-  "last_updated": "2026-03-28",
+  "last_updated": "2026-03-29",
   "total_cves": 1072,
   "summary": {
     "critical": 13,
