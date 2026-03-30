@@ -478,6 +478,7 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/notion-mail.json",
     "https://formulae.brew.sh/api/cask/codex.json",
     "https://formulae.brew.sh/api/cask/pppc-utility.json",
+    "https://formulae.brew.sh/api/cask/battery.json",
 ]
 
 # DMG
