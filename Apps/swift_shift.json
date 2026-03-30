@@ -1,14 +1,14 @@
 {
   "name": "Swift Shift",
   "description": "Window manager",
-  "version": "0.27.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/swift_shift_0.27.1.pkg",
+  "version": "1.0.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/swift_shift_1.0.2.pkg",
   "bundleId": "com.pablopunk.Swift-Shift",
   "homepage": "https://www.swiftshift.app/",
-  "fileName": "swift_shift_0.27.1.pkg",
+  "fileName": "swift_shift_1.0.2.pkg",
   "type": "app",
-  "sha": "264da7c7bc9bfa669756ba48aea273e841fd6600cc48c54d9b5c2f8d1e6d8cdd",
-  "previous_version": "0.27.1",
+  "sha": "5eb63f9e01b112ae4f6800f073c73a4dc740a19ec8469a34a0d62bb10c9f0bba",
+  "previous_version": "1.0.2",
   "category": "Utilities",
   "publisher": "Swift Shift"
 }

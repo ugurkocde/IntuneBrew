@@ -1,14 +1,14 @@
 {
   "name": "FreeFileSync",
   "description": "Folder comparison and synchronization software",
-  "version": "14.8",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/freefilesync_14.8.pkg",
+  "version": "14.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/freefilesync_14.9.pkg",
   "bundleId": "org.freefilesync.FreeFileSync",
   "homepage": "https://freefilesync.org/",
-  "fileName": "freefilesync_14.8.pkg",
+  "fileName": "freefilesync_14.9.pkg",
   "type": "app",
-  "sha": "3ccc95fce2c1f9b005986a58fbc333c741ad3667dd3965850b278516152924a4",
+  "sha": "cf705cc6e320c2694897dfb66e149c3aa38b2e1bec3eb20ceca4416a31c17f4a",
   "category": "Utilities",
   "publisher": "FreeFileSync",
-  "previous_version": "14.8"
+  "previous_version": "14.9"
 }

@@ -1,12 +1,12 @@
 {
   "name": "PicView",
   "description": "Picture viewer",
-  "version": "4.1.2",
-  "url": "https://github.com/Ruben2776/PicView/releases/download/4.1.2/PicView-4.1.2-macOS-arm64.dmg",
+  "version": "4.2.0",
+  "url": "https://github.com/Ruben2776/PicView/releases/download/4.2.0/PicView-4.2.0-macOS-arm64.dmg",
   "bundleId": "com.ruben2776.picview",
   "homepage": "https://picview.org/",
-  "fileName": "PicView-4.1.2-macOS-arm64.dmg",
-  "sha": "d0109cddcdd132858c04b43716310ff0a87588add4303f49290f9260f39714b5",
+  "fileName": "PicView-4.2.0-macOS-arm64.dmg",
+  "sha": "50032ae50d097a6bd1b0d57d2be15dc1448a03fade07193f0be981849b821b95",
   "category": "Media",
   "publisher": "PicView",
   "previous_version": "4.1.2"
