@@ -5,7 +5,6 @@
   "homepage": "https://github.com/fastfetch-cli/fastfetch",
   "url": "https://intunebrew.blob.core.windows.net/pkg/fastfetch_2.61.0_arm64.pkg",
   "fileName": "fastfetch_2.61.0_arm64.pkg",
-  "sha": "d1563489356543edce070036a652a637b1bb0223411f6889a0eb60aa5f28756e",
   "bundledDependencies": [
     "yyjson"
   ],
