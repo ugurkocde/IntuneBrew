@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-03-30T01:01:06.105Z",
+  "last_full_scan": "2026-03-30T20:06:40.137Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8920,6 +8920,17 @@
         "mac_app_store"
       ],
       "name": "WinZip"
+    },
+    "battery": {
+      "last_checked": "2026-03-30T20:06:40.016Z",
+      "bundle_id": "cn.better365.Battery",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "mac_app_store",
+      "methods_tried": [
+        "mac_app_store"
+      ],
+      "name": "Battery"
     }
   }
 }
