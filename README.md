@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1243-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1244-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -406,26 +406,44 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-30 00:48 UTC*
+*Last checked: 2026-03-30 19:51 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Syncovery | 11.13.6 | 11.14.0 |
-| Dockside | 2.3.2 | 2.4.0 |
-| Stats | 2.12.6 | 2.12.7 |
+| Mozilla Firefox Developer Edition | 150.0b2 | 150.0b3 |
+| NVIDIA GeForce NOW | 2.0.82.177 | 2.0.83.130 |
+| JetBrains Rider | 2025.3.4 | 2026.1 |
+| ChatWise | 26.3.34 | 26.3.36 |
+| Trae | 2.3.13344 | 2.3.17111 |
+| Microsoft Teams | 26043.2109.4484.3337 | 26059.604.4471.2584 |
+| Krisp | 3.11.7 | 3.11.8 |
+| Discord | 0.0.382 | 0.0.383 |
+| DuckDuckGo | 1.182.0 | 1.183.0 |
+| Privileges | 2.5.1 | 2.5.2 |
+| DataSpell | 2025.3.2 | 2026.1 |
+| Zettlr | 4.3.0 | 4.3.1 |
+| FontBase | 2026.2.5 | 2026.3.0 |
+| PyCharm | 2025.3.4 | 2026.1 |
+| REAPER | 7.66 | 7.67 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| DevKnife | 1.10.1 | 1.11.0 |
+| Akiflow | 2.70.5 | 2.70.6 |
+| DeskTime | 6.1.3 | 6.1.4 |
+| massCode | 4.7.1 | 5.0.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| OnlySwitch | 2.6.6 | 2.6.7 |
-| PicView | 4.1.2 | 4.2.0 |
-| Claude Code | 2.1.86 | 2.1.87 |
-| cmux | 0.63.0 | 0.63.1 |
-| ExpressVPN | 12.1.0.12141 | 12.1.0.12143 |
-| FUSE-T | 1.0.54 | 1.1.0 |
+| OpenBoard | 1.7.6 | 1.7.7 |
+| Riverside Studio | 1.21.0 | 1.22.0 |
+| RustRover | 2025.3.5 | 2026.1 |
+| Claude Code | 2.1.87 | 2.1.81 |
+| Malwarebytes for Mac | 5.21.1.3705 | 5.22.0.3758 |
+| Nudge | 2.1.1.81855 | 2.1.2.81856 |
+| Arq | 7.38.2 | 7.39 |
+| ClamXAV | 3.9.2 | 3.10 |
+| Chrome Remote Desktop | 146.0.7680.5 | 147.0.7727.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

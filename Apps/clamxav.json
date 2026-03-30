@@ -1,13 +1,13 @@
 {
   "name": "ClamXAV",
   "description": "Anti-virus and malware scanner",
-  "version": "3.9.2",
-  "url": "https://cdn.clamxav.com/ClamXAVdownloads/ClamXAV_3.9.2_11297_Installer.pkg",
+  "version": "3.10",
+  "url": "https://cdn.clamxav.com/ClamXAVdownloads/ClamXAV_3.10_11436_Installer.pkg",
   "bundleId": "uk.co.canimaansoftware.clamxav",
   "homepage": "https://www.clamxav.com/",
-  "fileName": "ClamXAV_3.9.2_11297_Installer.pkg",
+  "fileName": "ClamXAV_3.10_11436_Installer.pkg",
   "type": "pkg",
-  "sha": "be1e4bff1bde52507e434bc11918d6e581e2fd87bbc961ca55e5d3e769d2541c",
+  "sha": "bb71d63e8ee2eedcdb04d882e3e4fed6718b43ca3a127e67e9acebddf23b1366",
   "category": "Security",
   "publisher": "The ClamXAV Team",
   "previous_version": "3.9.2"

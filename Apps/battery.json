@@ -1,0 +1,11 @@
+{
+  "name": "Battery",
+  "description": "App for managing battery charging. (Also installs a CLI on first use.)",
+  "version": "1.4.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/battery_1.4.0.pkg",
+  "bundleId": null,
+  "homepage": "https://github.com/actuallymentor/battery/",
+  "fileName": "battery_1.4.0.pkg",
+  "type": "app",
+  "sha": "5e24add9f68b285285dc1f01abc168d1c109519335969bb1722872cd95ca725c"
+}

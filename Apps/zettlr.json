@@ -1,12 +1,12 @@
 {
   "name": "Zettlr",
   "description": "Open-source markdown editor",
-  "version": "4.3.0",
-  "url": "https://github.com/Zettlr/Zettlr/releases/download/v4.3.0/Zettlr-4.3.0-arm64.dmg",
+  "version": "4.3.1",
+  "url": "https://github.com/Zettlr/Zettlr/releases/download/v4.3.1/Zettlr-4.3.1-arm64.dmg",
   "bundleId": "com.zettlr.app",
   "homepage": "https://www.zettlr.com/",
-  "fileName": "Zettlr-4.3.0-arm64.dmg",
-  "sha": "ea5cd59bc37bf68ea2233ba6fb409f2e4a97b5e4c89197ce537e87c8a42b14e4",
+  "fileName": "Zettlr-4.3.1-arm64.dmg",
+  "sha": "76dabb6e687f21822e8bfaae7f9a925588bb0903b204b1b21c33f696425cc9b1",
   "category": "Productivity",
   "publisher": "Zettlr Project",
   "previous_version": "4.3.0"
