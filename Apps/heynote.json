@@ -6,5 +6,7 @@
   "bundleId": null,
   "homepage": "https://heynote.com/",
   "fileName": "Heynote_2.8.2_arm64.dmg",
-  "sha": "3e5718775802d8c27f55b5c46b147d8230c58432a7f635ea572d67bf20b54c6a"
+  "sha": "3e5718775802d8c27f55b5c46b147d8230c58432a7f635ea572d67bf20b54c6a",
+  "category": "Developer Tools",
+  "publisher": "Heynote"
 }
