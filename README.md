@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1244-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1246-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -408,22 +408,39 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-03-31 00:43 UTC*
+*Last checked: 2026-03-31 17:28 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Remote Desktop Manager | 2026.1.9.5 | 2026.1.10.3 |
-| Quicksilver | 2.5.8 | 2.5.9 |
+| ProcessSpy | 1.11.1 | 1.11.2 |
+| UPDF | 2.2.0 | 2.5.0 |
+| Dockside | 2.4.0 | 2.4.1 |
+| Windows App | 11.3.2 | 11.3.3 |
+| Grammarly Desktop | 1.158.0.0 | 1.159.0.0 |
+| Termius | 9.37.5 | 9.37.6 |
+| Foxit PDF Editor | 14.0.2.69164 | 14.0.3.69295 |
+| Krita | 5.3.0 | 5.3.1 |
+| gifox | 2.8.0+2 | 2.9.0+0 |
+| AlDente | 1.37.1 | 1.37.2 |
+| Hoppscotch | 26.2.1-0 | 26.3.0-0 |
+| Jitsi Meet | 2026.1.1 | 2026.4.0 |
+| Milanote | 3.18.85 | 3.18.87 |
+| Ungoogled Chromium | 146.0.7680.153-1.1 | 146.0.7680.164-1.1 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| GoodSync | 12.9.26 | 12.9.27 |
+| ChatWork | 2.21.0 | 2.21.1 |
+| FileMaker Pro | 22.0.5.500 | 22.0.6.601 |
+| Granola | 7.87.7 | 7.99.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| PDFsam Basic | 5.4.5 | 6.0.0 |
-| Okta Advanced Server Access | 1.101.2 | 1.102.0 |
-| Nextcloud | 33.0.0 | 33.0.1 |
+| Pitch | 2.119.0 | 2.120.0 |
+| Riverside Studio | 1.22.0 | 1.22.1 |
+| Session | 1.17.16 | 1.17.17 |
+| Shapr3D | 26.40.0.10572 | 26.50.0.10685 |
+| Microsoft Outlook | 16.107.26032211 | 16.107.26032814 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
