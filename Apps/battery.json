@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "5e24add9f68b285285dc1f01abc168d1c109519335969bb1722872cd95ca725c",
   "category": "Utilities",
-  "publisher": "Actually Mentor"
+  "publisher": "Actually Mentor",
+  "previous_version": "1.4.0"
 }
