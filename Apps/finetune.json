@@ -3,7 +3,7 @@
   "description": "Per-application volume mixer, equalizer, and audio router",
   "version": "1.4.1",
   "url": "https://github.com/ronitsingh10/FineTune/releases/download/v1.4.1/FineTune-1.4.1.dmg",
-  "bundleId": null,
+  "bundleId": "org.tordini.flavio.finetune",
   "homepage": "https://github.com/ronitsingh10/FineTune",
   "fileName": "FineTune-1.4.1.dmg",
   "sha": "e05ef4d3e66d7e519eb25c966c10de8911b2307b2b224bb63762ac269a8e708c",
