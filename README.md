@@ -504,7 +504,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/akiflow.png' width='32' height='32'> Akiflow | 2.70.6 |
 | <img src='Logos/alacritty.png' width='32' height='32'> Alacritty | 0.16.1 |
 | <img src='Logos/alcove.png' width='32' height='32'> Alcove | 1.6.15 |
-| <img src='Logos/aldente.png' width='32' height='32'> AlDente | 1.37.1 |
+| <img src='Logos/aldente.png' width='32' height='32'> AlDente | 1.37.2 |
 | <img src='Logos/alfred.png' width='32' height='32'> Alfred | 5.7.2 |
 | <img src='Logos/alloy.png' width='32' height='32'> Alloy | 6.2.0 |
 | <img src='Logos/altair_graphql_client.png' width='32' height='32'> Altair GraphQL Client | 8.5.0 |
@@ -585,7 +585,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/betaflightconfigurator.png' width='32' height='32'> Betaflight-Configurator | 10.10.0 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 4.2.3 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.6 |
-| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.322 |
+| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.325 |
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 5.4.2 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.2.1.32035 |
 | <img src='Logos/bezel.png' width='32' height='32'> Bezel | 4.2.2 |
@@ -662,7 +662,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2026.049 |
 | <img src='Logos/chatgpt_atlas.png' width='32' height='32'> ChatGPT Atlas | 1.2026.63.11 |
 | <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 26.3.36 |
-| <img src='Logos/chatwork.png' width='32' height='32'> ChatWork | 2.21.0 |
+| <img src='Logos/chatwork.png' width='32' height='32'> ChatWork | 2.21.1 |
 | <img src='Logos/cheatsheet.png' width='32' height='32'> CheatSheet | 1.6.4 |
 | <img src='Logos/cheetah3d.png' width='32' height='32'> Cheetah3D | 8.1.3 |
 | <img src='Logos/chime.png' width='32' height='32'> Chime | 2.2.5 |
@@ -676,7 +676,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/cisco_proximity.png' width='32' height='32'> Cisco Proximity | 4.0.0 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 25.11.1.42 |
 | <img src='Logos/clamxav.png' width='32' height='32'> ClamXAV | 3.10 |
-| <img src='Logos/claude.png' width='32' height='32'> Claude | 1.1.9493 |
+| <img src='Logos/claude.png' width='32' height='32'> Claude | 1.1.9669 |
 | ❌ Claude Code | 2.1.81 |
 | <img src='Logos/cleanclip.png' width='32' height='32'> CleanClip | 2.4.6 |
 | <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.3.1 |
@@ -779,7 +779,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.32.2 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.42.1 |
 | <img src='Logos/dockfix.png' width='32' height='32'> DockFix | 4.1.6 |
-| <img src='Logos/dockside.png' width='32' height='32'> Dockside | 2.4.0 |
+| <img src='Logos/dockside.png' width='32' height='32'> Dockside | 2.4.1 |
 | <img src='Logos/dockstation.png' width='32' height='32'> DockStation | 1.5.1 |
 | <img src='Logos/dockview.png' width='32' height='32'> DockView | 1.7.5 |
 | <img src='Logos/dorico.png' width='32' height='32'> Dorico | 6.2 |
@@ -856,7 +856,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/extraterm.png' width='32' height='32'> Extraterm | 0.81.4 |
 | <img src='Logos/flux.png' width='32' height='32'> f.lux | 42.2 |
 | <img src='Logos/facebook_messenger.png' width='32' height='32'> Facebook Messenger | 525.0.0.34.106 |
-| <img src='Logos/fantastical.png' width='32' height='32'> Fantastical | 4.1.10 |
+| <img src='Logos/fantastical.png' width='32' height='32'> Fantastical | 4.1.11 |
 | <img src='Logos/far2l.png' width='32' height='32'> far2l | 2.7.0 |
 | <img src='Logos/farrago.png' width='32' height='32'> Farrago | 2.1.5 |
 | <img src='Logos/fastmail.png' width='32' height='32'> Fastmail | 1.2.1 |
@@ -868,8 +868,9 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/figma.png' width='32' height='32'> Figma | 126.2.10 |
 | <img src='Logos/file_juicer.png' width='32' height='32'> File Juicer | 4.115 |
 | <img src='Logos/filebot.png' width='32' height='32'> FileBot | 5.2.1 |
-| <img src='Logos/filemaker_pro.png' width='32' height='32'> FileMaker Pro | 22.0.5.500 |
+| <img src='Logos/filemaker_pro.png' width='32' height='32'> FileMaker Pro | 22.0.6.601 |
 | <img src='Logos/filen.png' width='32' height='32'> Filen | 3.0.47 |
+| <img src='Logos/finetune.png' width='32' height='32'> FineTune | 1.4.1 |
 | <img src='Logos/fing_desktop.png' width='32' height='32'> Fing Desktop | 3.10.1 |
 | <img src='Logos/firecamp.png' width='32' height='32'> Firecamp | 2.6.1 |
 | <img src='Logos/fission.png' width='32' height='32'> Fission | 2.9.4 |
@@ -885,8 +886,8 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/fontlab.png' width='32' height='32'> Fontlab | 8.4.2.8950 |
 | <img src='Logos/forecast.png' width='32' height='32'> Forecast | 0.9.6 |
 | <img src='Logos/fork.png' width='32' height='32'> Fork | 2.63.2 |
-| <img src='Logos/forklift.png' width='32' height='32'> ForkLift | 4.5.1 |
-| <img src='Logos/foxit_pdf_editor.png' width='32' height='32'> Foxit PDF Editor | 14.0.2.69164 |
+| <img src='Logos/forklift.png' width='32' height='32'> ForkLift | 4.6 |
+| <img src='Logos/foxit_pdf_editor.png' width='32' height='32'> Foxit PDF Editor | 14.0.3.69295 |
 | <img src='Logos/framer.png' width='32' height='32'> Framer | 2026.12.6 |
 | <img src='Logos/franz.png' width='32' height='32'> Franz | 5.11.0 |
 | <img src='Logos/free_download_manager.png' width='32' height='32'> Free Download Manager | 6.33.2 |
@@ -911,7 +912,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/gephi.png' width='32' height='32'> Gephi | 0.10.1 |
 | <img src='Logos/ghost_browser.png' width='32' height='32'> Ghost Browser | 2.4.1.2 |
 | <img src='Logos/ghostty.png' width='32' height='32'> Ghostty | 1.3.1 |
-| <img src='Logos/gifox.png' width='32' height='32'> gifox | 2.8.0+2 |
+| <img src='Logos/gifox.png' width='32' height='32'> gifox | 2.9.0+0 |
 | <img src='Logos/gimp.png' width='32' height='32'> GIMP | 3.2.0 |
 | <img src='Logos/git_credential_manager.png' width='32' height='32'> Git Credential Manager | 2.7.3 |
 | <img src='Logos/gitbutler.png' width='32' height='32'> GitButler | 0.19.6 |
@@ -927,20 +928,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/godspeed.png' width='32' height='32'> Godspeed | 1.9.19 |
 | <img src='Logos/gog_galaxy.png' width='32' height='32'> GOG Galaxy | 2.0.96.26 |
 | <img src='Logos/goland.png' width='32' height='32'> Goland | 2026.1 |
-| <img src='Logos/goodsync.png' width='32' height='32'> GoodSync | 12.9.26 |
+| <img src='Logos/goodsync.png' width='32' height='32'> GoodSync | 12.9.27 |
 | <img src='Logos/google_ads_editor.png' width='32' height='32'> Google Ads Editor | 2.12 |
-| <img src='Logos/google_antigravity.png' width='32' height='32'> Google Antigravity | 1.21.6 |
+| <img src='Logos/google_antigravity.png' width='32' height='32'> Google Antigravity | 1.21.9 |
 | <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 146.0.7680.165 |
 | <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 123.0.1 |
 | <img src='Logos/google_earth_pro.png' width='32' height='32'> Google Earth Pro | 7.3.7.1094 |
 | <img src='Logos/google_web_designer.png' width='32' height='32'> Google Web Designer | 14.0.1.0 |
-| <img src='Logos/goose.png' width='32' height='32'> Goose | 1.28.0 |
+| <img src='Logos/goose.png' width='32' height='32'> Goose | 1.29.0 |
 | <img src='Logos/gpg_suite.png' width='32' height='32'> GPG Suite | 2023.3 |
 | <img src='Logos/gpodder.png' width='32' height='32'> gPodder | 3.11.5 |
 | <img src='Logos/gpt_fdisk.png' width='32' height='32'> GPT fdisk | 1.0.10 |
-| <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.158.0.0 |
+| <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.159.0.0 |
 | <img src='Logos/grandperspective.png' width='32' height='32'> GrandPerspective | 3.6.4 |
-| <img src='Logos/granola.png' width='32' height='32'> Granola | 7.87.7 |
+| <img src='Logos/granola.png' width='32' height='32'> Granola | 7.99.1 |
 | <img src='Logos/graphicconverter.png' width='32' height='32'> GraphicConverter | 12.5.1 |
 | <img src='Logos/graphiql_app.png' width='32' height='32'> GraphiQL App | 0.7.2 |
 | <img src='Logos/graphpad_prism.png' width='32' height='32'> GraphPad Prism | 11.0.0 |
@@ -954,9 +955,10 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/hazeover.png' width='32' height='32'> HazeOver | 1.9.7 |
 | <img src='Logos/headlamp.png' width='32' height='32'> Headlamp | 0.41.0 |
 | <img src='Logos/helium.png' width='32' height='32'> Helium | 1.0.0 |
-| <img src='Logos/hepta.png' width='32' height='32'> Hepta | 1.87.2 |
+| <img src='Logos/hepta.png' width='32' height='32'> Hepta | 1.88.0 |
 | <img src='Logos/hex_fiend.png' width='32' height='32'> Hex Fiend | 2.18.1 |
 | <img src='Logos/hey.png' width='32' height='32'> HEY | 1.2.17 |
+| <img src='Logos/heynote.png' width='32' height='32'> Heynote | 2.8.2 |
 | <img src='Logos/hidden_bar.png' width='32' height='32'> Hidden Bar | 1.10 |
 | <img src='Logos/hides.png' width='32' height='32'> Hides | 7.3 |
 | <img src='Logos/hidock.png' width='32' height='32'> HiDock | 1.4 |
@@ -964,7 +966,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/hma_vpn.png' width='32' height='32'> HMA! VPN | latest |
 | <img src='Logos/home_assistant.png' width='32' height='32'> Home Assistant | 2026.2.1 |
 | <img src='Logos/homerow.png' width='32' height='32'> Homerow | 1.5.3 |
-| <img src='Logos/hoppscotch.png' width='32' height='32'> Hoppscotch | 26.2.1-0 |
+| <img src='Logos/hoppscotch.png' width='32' height='32'> Hoppscotch | 26.3.0-0 |
 | <img src='Logos/hot.png' width='32' height='32'> Hot | 1.9.4 |
 | <img src='Logos/houdahspot.png' width='32' height='32'> HoudahSpot | 6.8.1 |
 | <img src='Logos/hp_easy_admin.png' width='32' height='32'> HP Easy Admin | 2.16.0 |
@@ -1013,7 +1015,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/jetbrains_rider.png' width='32' height='32'> JetBrains Rider | 2026.1 |
 | <img src='Logos/jetbrains_toolbox.png' width='32' height='32'> JetBrains Toolbox | 3.4.1 |
 | <img src='Logos/jiggler.png' width='32' height='32'> Jiggler | 1.10 |
-| <img src='Logos/jitsi_meet.png' width='32' height='32'> Jitsi Meet | 2026.1.1 |
+| <img src='Logos/jitsi_meet.png' width='32' height='32'> Jitsi Meet | 2026.4.0 |
 | <img src='Logos/joplin.png' width='32' height='32'> Joplin | 3.5.13 |
 | <img src='Logos/jump_desktop.png' width='32' height='32'> Jump Desktop | 9.1.9 |
 | <img src='Logos/jumpcut.png' width='32' height='32'> Jumpcut | 0.84 |
@@ -1042,7 +1044,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/kobo.png' width='32' height='32'> Kobo | latest |
 | <img src='Logos/kodi.png' width='32' height='32'> Kodi | 21.3-Omega |
 | <img src='Logos/krisp.png' width='32' height='32'> Krisp | 3.11.8 |
-| <img src='Logos/krita.png' width='32' height='32'> Krita | 5.3.0 |
+| <img src='Logos/krita.png' width='32' height='32'> Krita | 5.3.1 |
 | <img src='Logos/langgraph_studio.png' width='32' height='32'> LangGraph Studio | 0.0.37 |
 | <img src='Logos/lapce.png' width='32' height='32'> Lapce | 0.4.6 |
 | <img src='Logos/lark.png' width='32' height='32'> Lark | 7.64.7 |
@@ -1133,14 +1135,14 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/microsoft_office.png' width='32' height='32'> Microsoft Office | 16.107.26032211 |
 | <img src='Logos/microsoft_office_businesspro.png' width='32' height='32'> Microsoft Office BusinessPro | 16.107.26032211 |
 | <img src='Logos/microsoft_onenote.png' width='32' height='32'> Microsoft OneNote | 16.107.26032211 |
-| <img src='Logos/microsoft_outlook.png' width='32' height='32'> Microsoft Outlook | 16.107.26032211 |
+| <img src='Logos/microsoft_outlook.png' width='32' height='32'> Microsoft Outlook | 16.107.26032814 |
 | <img src='Logos/microsoft_powerpoint.png' width='32' height='32'> Microsoft PowerPoint | 16.107.26032211 |
 | <img src='Logos/microsoft_teams.png' width='32' height='32'> Microsoft Teams | 26059.604.4471.2584 |
 | <img src='Logos/microsoft_visual_studio_code.png' width='32' height='32'> Microsoft Visual Studio Code | 1.113.0 |
 | <img src='Logos/microsoft_word.png' width='32' height='32'> Microsoft Word | 16.107.26032211 |
 | <img src='Logos/middle.png' width='32' height='32'> Middle | 1.14 |
 | <img src='Logos/middleclick.png' width='32' height='32'> MiddleClick | 3.1.3 |
-| <img src='Logos/milanote.png' width='32' height='32'> Milanote | 3.18.85 |
+| <img src='Logos/milanote.png' width='32' height='32'> Milanote | 3.18.87 |
 | <img src='Logos/mimestream.png' width='32' height='32'> Mimestream | 1.9.16 |
 | <img src='Logos/min.png' width='32' height='32'> Min | 1.35.2 |
 | <img src='Logos/mindmac.png' width='32' height='32'> MindMac | 1.9.28 |
@@ -1200,7 +1202,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/netnewswire.png' width='32' height='32'> NetNewsWire | 7.0.3 |
 | <img src='Logos/netron.png' width='32' height='32'> Netron | 8.9.9 |
 | <img src='Logos/netspot.png' width='32' height='32'> NetSpot | 5.1.4971 |
-| <img src='Logos/nextcloud.png' width='32' height='32'> Nextcloud | 33.0.0 |
+| <img src='Logos/nextcloud.png' width='32' height='32'> Nextcloud | 33.0.1 |
 | <img src='Logos/nextcloud_talk_desktop.png' width='32' height='32'> Nextcloud Talk Desktop | 2.1.1 |
 | <img src='Logos/nightfall.png' width='32' height='32'> Nightfall | 3.1.0 |
 | <img src='Logos/nitro_pdf_pro.png' width='32' height='32'> Nitro PDF Pro | 26.0 |
@@ -1231,7 +1233,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/ocenaudio.png' width='32' height='32'> ocenaudio | 3.17.3 |
 | <img src='Logos/ok_json.png' width='32' height='32'> OK JSON | 2.10.2 |
 | <img src='Logos/oka_unarchiver.png' width='32' height='32'> Oka Unarchiver | 2.1.6 |
-| <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.101.2 |
+| <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.102.0 |
 | <img src='Logos/okta_verify.png' width='32' height='32'> Okta Verify | 9.59.0 |
 | <img src='Logos/ollama.png' width='32' height='32'> Ollama | 0.9.2 |
 | <img src='Logos/omnidisksweeper.png' width='32' height='32'> OmniDiskSweeper | 1.16 |
@@ -1286,7 +1288,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/path_finder.png' width='32' height='32'> Path Finder | 11.1 |
 | <img src='Logos/pdf_expert.png' width='32' height='32'> PDF Expert | 3.11.2 |
 | <img src='Logos/pdf_pals.png' width='32' height='32'> PDF Pals | 1.9.0 |
-| <img src='Logos/pdfsam_basic.png' width='32' height='32'> PDFsam Basic | 5.4.5 |
+| <img src='Logos/pdfsam_basic.png' width='32' height='32'> PDFsam Basic | 6.0.0 |
 | <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.4.3 |
 | <img src='Logos/pencil.png' width='32' height='32'> Pencil | 3.1.1 |
 | <img src='Logos/perimeter_81.png' width='32' height='32'> Perimeter 81 | 12.7.0.8565 |
@@ -1303,7 +1305,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/pingplotter.png' width='32' height='32'> PingPlotter | 5.25.20 |
 | <img src='Logos/piphero.png' width='32' height='32'> PiPHero | 1.2.0 |
 | <img src='Logos/piriform_ccleaner.png' width='32' height='32'> Piriform CCleaner | 2.09.187 |
-| <img src='Logos/pitch.png' width='32' height='32'> Pitch | 2.119.0 |
+| <img src='Logos/pitch.png' width='32' height='32'> Pitch | 2.120.0 |
 | <img src='Logos/pixelsnap.png' width='32' height='32'> PixelSnap | 2.6.2 |
 | <img src='Logos/platypus.png' width='32' height='32'> Platypus | 5.5.0 |
 | <img src='Logos/plex.png' width='32' height='32'> Plex | 1.112.0.359 |
@@ -1320,7 +1322,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/positron.png' width='32' height='32'> Positron | 2026.03.0-212 |
 | <img src='Logos/postbox.png' width='32' height='32'> Postbox | 7.0.65 |
 | <img src='Logos/postico.png' width='32' height='32'> Postico | 2.3.3 |
-| <img src='Logos/postman.png' width='32' height='32'> Postman | 12.4.1 |
+| <img src='Logos/postman.png' width='32' height='32'> Postman | 12.4.2 |
 | <img src='Logos/powerphotos.png' width='32' height='32'> PowerPhotos | 3.2.6 |
 | <img src='Logos/powershell.png' width='32' height='32'> PowerShell | 7.5.4 |
 | <img src='Logos/pppc_utility.png' width='32' height='32'> PPPC Utility | 1.5.0 |
@@ -1331,7 +1333,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/privileges.png' width='32' height='32'> Privileges | 2.5.2 |
 | <img src='Logos/prizmo.png' width='32' height='32'> Prizmo | 4.7.1 |
 | <img src='Logos/processing.png' width='32' height='32'> Processing | 4.5.2 |
-| <img src='Logos/processspy.png' width='32' height='32'> ProcessSpy | 1.11.1 |
+| <img src='Logos/processspy.png' width='32' height='32'> ProcessSpy | 1.11.2 |
 | <img src='Logos/pronotes.png' width='32' height='32'> ProNotes | 0.7.8.2 |
 | <img src='Logos/propresenter.png' width='32' height='32'> ProPresenter | 21.3 |
 | <img src='Logos/proton_drive.png' width='32' height='32'> Proton Drive | 2.10.3 |
@@ -1353,7 +1355,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/qspace_pro.png' width='32' height='32'> QSpace Pro | 6.1.4 |
 | <img src='Logos/quarto.png' width='32' height='32'> quarto | 1.9.36 |
 | <img src='Logos/quicklook_video.png' width='32' height='32'> QuickLook Video | 3.05 |
-| <img src='Logos/quicksilver.png' width='32' height='32'> Quicksilver | 2.5.8 |
+| <img src='Logos/quicksilver.png' width='32' height='32'> Quicksilver | 2.5.9 |
 | <img src='Logos/qview.png' width='32' height='32'> qView | 7.1 |
 | <img src='Logos/radio_silence.png' width='32' height='32'> Radio Silence | 3.3 |
 | <img src='Logos/raindropio.png' width='32' height='32'> Raindrop.io | 5.7.3 |
@@ -1364,7 +1366,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/raspberry_pi_imager.png' width='32' height='32'> Raspberry Pi Imager | 2.0.7 |
 | <img src='Logos/rawtherapee.png' width='32' height='32'> RawTherapee | 5.12 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 1.104.11 |
-| <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.8.2 |
+| <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.9.0 |
 | <img src='Logos/readest.png' width='32' height='32'> Readest | 0.10.1 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.15.1 |
 | <img src='Logos/reaper.png' width='32' height='32'> REAPER | 7.67 |
@@ -1379,7 +1381,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/reminders_menubar.png' width='32' height='32'> Reminders MenuBar | 1.25.0 |
 | <img src='Logos/remnote.png' width='32' height='32'> RemNote | 1.24.7 |
 | <img src='Logos/remote_buddy.png' width='32' height='32'> Remote Buddy | 2.7.3 |
-| <img src='Logos/remote_desktop_manager.png' width='32' height='32'> Remote Desktop Manager | 2026.1.9.5 |
+| <img src='Logos/remote_desktop_manager.png' width='32' height='32'> Remote Desktop Manager | 2026.1.10.3 |
 | <img src='Logos/remote_help.png' width='32' height='32'> Remote Help | 1.0.2509231 |
 | <img src='Logos/reqable.png' width='32' height='32'> Reqable | 3.0.40 |
 | <img src='Logos/requestly.png' width='32' height='32'> Requestly | 26.3.3 |
@@ -1394,7 +1396,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/rightfont.png' width='32' height='32'> RightFont | 9.8 |
 | <img src='Logos/ringcentral.png' width='32' height='32'> RingCentral | 26.1.10 |
 | <img src='Logos/rive.png' width='32' height='32'> Rive | 0.8.4490 |
-| <img src='Logos/riverside_studio.png' width='32' height='32'> Riverside Studio | 1.22.0 |
+| <img src='Logos/riverside_studio.png' width='32' height='32'> Riverside Studio | 1.22.1 |
 | <img src='Logos/rize.png' width='32' height='32'> Rize | 2.3.7 |
 | <img src='Logos/roam_research.png' width='32' height='32'> Roam Research | 0.0.36 |
 | <img src='Logos/roboform.png' width='32' height='32'> RoboForm | 9.9.2 |
@@ -1438,11 +1440,11 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/sensei.png' width='32' height='32'> Sensei | 2.0.2 |
 | <img src='Logos/sentinel.png' width='32' height='32'> Sentinel | 0.40.0 |
 | <img src='Logos/sequel_ace.png' width='32' height='32'> Sequel Ace | 5.2.0 |
-| <img src='Logos/session.png' width='32' height='32'> Session | 1.17.16 |
+| <img src='Logos/session.png' width='32' height='32'> Session | 1.17.17 |
 | <img src='Logos/session_manager_plugin_for_the_aws_cli.png' width='32' height='32'> Session Manager Plugin for the AWS CLI | 1.2.792.0 |
 | <img src='Logos/setapp.png' width='32' height='32'> Setapp | 3.51.1 |
 | <img src='Logos/sf_symbols.png' width='32' height='32'> SF Symbols | 7.2 |
-| <img src='Logos/shapr3d.png' width='32' height='32'> Shapr3D | 26.40.0.10572 |
+| <img src='Logos/shapr3d.png' width='32' height='32'> Shapr3D | 26.50.0.10685 |
 | <img src='Logos/shift.png' width='32' height='32'> Shift | 9.6.4.1231 |
 | <img src='Logos/shifty.png' width='32' height='32'> Shifty | 1.2 |
 | <img src='Logos/shotcut.png' width='32' height='32'> Shotcut | 26.2.26 |
@@ -1559,7 +1561,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/techsmith_capture.png' width='32' height='32'> TechSmith Capture | 1.3.31 |
 | <img src='Logos/telegram_for_macos.png' width='32' height='32'> Telegram for macOS | 12.5 |
 | <img src='Logos/tenable_nessus_agent.png' width='32' height='32'> Tenable Nessus Agent | 11.1.2 |
-| <img src='Logos/termius.png' width='32' height='32'> Termius | 9.37.5 |
+| <img src='Logos/termius.png' width='32' height='32'> Termius | 9.37.6 |
 | <img src='Logos/tex_live_utility.png' width='32' height='32'> TeX Live Utility | 1.55 |
 | <img src='Logos/texshop.png' width='32' height='32'> TeXShop | 5.57 |
 | <img src='Logos/textexpander.png' width='32' height='32'> TextExpander | 8.4.2 |
@@ -1610,13 +1612,13 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/ukelele.png' width='32' height='32'> Ukelele | 3.6.1 |
 | <img src='Logos/ultimaker_cura.png' width='32' height='32'> UltiMaker Cura | 5.12.0 |
 | <img src='Logos/unclutter.png' width='32' height='32'> Unclutter | 2.2.16d |
-| <img src='Logos/ungoogled_chromium.png' width='32' height='32'> Ungoogled Chromium | 146.0.7680.153-1.1 |
+| <img src='Logos/ungoogled_chromium.png' width='32' height='32'> Ungoogled Chromium | 146.0.7680.164-1.1 |
 | <img src='Logos/unicodechecker.png' width='32' height='32'> UnicodeChecker | 1.25.1 |
 | <img src='Logos/unifi_identity_endpoint.png' width='32' height='32'> UniFi Identity Endpoint | 3.6.1 |
 | <img src='Logos/unite.png' width='32' height='32'> Unite | 6.6 |
 | <img src='Logos/unity_hub.png' width='32' height='32'> Unity Hub | 3.16.4 |
 | <img src='Logos/unnaturalscrollwheels.png' width='32' height='32'> UnnaturalScrollWheels | 1.3.0 |
-| <img src='Logos/updf.png' width='32' height='32'> UPDF | 2.2.0 |
+| <img src='Logos/updf.png' width='32' height='32'> UPDF | 2.5.0 |
 | <img src='Logos/upscayl.png' width='32' height='32'> Upscayl | 2.15.0 |
 | <img src='Logos/utm.png' width='32' height='32'> UTM | 4.7.5 |
 | <img src='Logos/vanilla.png' width='32' height='32'> Vanilla | 2.2 |
@@ -1663,7 +1665,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/whispering.png' width='32' height='32'> Whispering | 7.11.0 |
 | <img src='Logos/wifiman_desktop.png' width='32' height='32'> WiFiman Desktop | 1.2.8 |
 | <img src='Logos/windowkeys.png' width='32' height='32'> WindowKeys | 3.0.1 |
-| <img src='Logos/windows_app.png' width='32' height='32'> Windows App | 11.3.2 |
+| <img src='Logos/windows_app.png' width='32' height='32'> Windows App | 11.3.3 |
 | <img src='Logos/windsurf.png' width='32' height='32'> Windsurf | 1.9577.43 |
 | <img src='Logos/winehqstable.png' width='32' height='32'> WineHQ-stable | 11.0 |
 | <img src='Logos/wins.png' width='32' height='32'> Wins | 3.2 |
@@ -1674,7 +1676,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/witch.png' width='32' height='32'> Witch | 4.7.0 |
 | <img src='Logos/wondershare_filmora.png' width='32' height='32'> Wondershare Filmora | 13.0.25 |
 | <img src='Logos/wordservice.png' width='32' height='32'> WordService | 2.8.3 |
-| <img src='Logos/workflowy.png' width='32' height='32'> WorkFlowy | 4.3.2603251447 |
+| <img src='Logos/workflowy.png' width='32' height='32'> WorkFlowy | 4.3.2603311056 |
 | <img src='Logos/workspaces.png' width='32' height='32'> Workspaces | 2.1.5 |
 | <img src='Logos/x_lossless_decoder.png' width='32' height='32'> X Lossless Decoder | 20250302 |
 | <img src='Logos/xattred.png' width='32' height='32'> xattred | 1.7 |
