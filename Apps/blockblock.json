@@ -1,14 +1,14 @@
 {
   "name": "BlockBlock",
   "description": "Monitors common persistence locations",
-  "version": "2.4.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/blockblock_2.4.2.pkg",
+  "version": "2.4.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/blockblock_2.4.3.pkg",
   "bundleId": "com.objective-see.blockblock",
   "homepage": "https://objective-see.org/products/blockblock.html",
-  "fileName": "blockblock_2.4.2.pkg",
+  "fileName": "blockblock_2.4.3.pkg",
   "type": "app",
-  "sha": "c845ab86b0a822567504ee418e57d3db9320dd901d4b55cc337a0435e6a20339",
+  "sha": "e12bfcbff2608ec6da3ab8249bdb1f2b4c6d7f2e7bf60b70c861778af81617aa",
   "category": "Security",
   "publisher": "Objective-See",
-  "previous_version": "2.4.2"
+  "previous_version": "2.4.3"
 }

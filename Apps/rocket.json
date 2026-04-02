@@ -1,12 +1,12 @@
 {
   "name": "Rocket",
   "description": "Emoji picker optimised for blind people",
-  "version": "1.9.4",
-  "url": "https://macrelease.matthewpalmer.net/distribution/appcasts/Rocket-87.dmg",
+  "version": "1.9.5",
+  "url": "https://macrelease.matthewpalmer.net/distribution/appcasts/Rocket-88.dmg",
   "bundleId": "net.matthewpalmer.Rocket",
   "homepage": "https://matthewpalmer.net/rocket/",
-  "fileName": "Rocket-87.dmg",
-  "sha": "8f09928a04d670a6639d1eae534c0833a406a71eea3faf090262e9860ecec0e4",
+  "fileName": "Rocket-88.dmg",
+  "sha": "a6050156f5cf583fdd8d7f2714967d0d06f9547f91ef9d3ba094f076e0a58c34",
   "category": "Utilities",
   "publisher": "Matthew Palmer",
   "previous_version": "1.9.4"
