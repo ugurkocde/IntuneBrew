@@ -1,13 +1,13 @@
 {
   "name": "ExpressVPN",
   "description": "VPN client for secure internet access and private browsing",
-  "version": "12.1.0.12143",
-  "url": "https://www.expressvpn.works/clients/mac/expressvpn-macos-universal-12.1.0.12143_release.zip",
+  "version": "14.0.0.12844",
+  "url": "https://www.expressvpn.works/clients/mac/expressvpn-macos-universal-14.0.0.12844_release.zip",
   "bundleId": "com.expressvpn.ExpressVPN",
   "homepage": "https://www.expressvpn.works/",
-  "fileName": "expressvpn-macos-universal-12.1.0.12143_release.zip",
+  "fileName": "expressvpn-macos-universal-14.0.0.12844_release.zip",
   "type": "pkg",
-  "sha": "d5831963c1560da6c56ffa078094c72ac4ba762c5d6ec45a4b57b069c2b8182b",
+  "sha": "7ebeb5220062fe286690a8c3dc19d40ecf6b0c4af1834d3565b6625a33f39438",
   "category": "Security",
   "publisher": "ExpressVPN International Ltd.",
   "previous_version": "12.1.0.12143"

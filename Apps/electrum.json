@@ -1,12 +1,12 @@
 {
   "name": "Electrum",
   "description": "Bitcoin thin client",
-  "version": "4.7.1",
-  "url": "https://download.electrum.org/4.7.1/electrum-4.7.1.dmg",
+  "version": "4.7.2",
+  "url": "https://download.electrum.org/4.7.2/electrum-4.7.2.dmg",
   "bundleId": "org.electrum.electrum",
   "homepage": "https://electrum.org/",
-  "fileName": "electrum-4.7.1.dmg",
-  "sha": "471146a829be482c94321a89bac3844666be2d762bc29c66837873c7b8be14da",
+  "fileName": "electrum-4.7.2.dmg",
+  "sha": "3370b3fea652c4bc707e5ec913ae42a03602083ff05482c3eae0d2a00bf3b842",
   "category": "Security",
   "publisher": "Electrum Technologies GmbH",
   "previous_version": "4.7.1"

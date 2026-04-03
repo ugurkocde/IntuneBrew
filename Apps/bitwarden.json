@@ -1,12 +1,12 @@
 {
   "name": "Bitwarden",
   "description": "Desktop password and login vault",
-  "version": "2026.2.1",
-  "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.2.1/Bitwarden-2026.2.1-universal.dmg",
+  "version": "2026.3.1",
+  "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-2026.3.1-universal.dmg",
   "bundleId": "com.bitwarden.desktop",
   "homepage": "https://bitwarden.com/",
-  "fileName": "Bitwarden-2026.2.1-universal.dmg",
-  "sha": "086697442f9db4eb2656704ac78261bca499510b7cdb49bfd8c08044672f1f61",
+  "fileName": "Bitwarden-2026.3.1-universal.dmg",
+  "sha": "b3d3d139d67c616ec6e484454872693991e29beb42dc4fc43c0c0c28262de8ff",
   "changelog": "https://github.com/bitwarden/clients/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:25:58Z",

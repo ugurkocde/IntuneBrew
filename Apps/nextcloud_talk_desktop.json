@@ -1,12 +1,12 @@
 {
   "name": "Nextcloud Talk Desktop",
   "description": "Official Nextcloud Talk Desktop client",
-  "version": "2.1.1",
-  "url": "https://github.com/nextcloud-releases/talk-desktop/releases/download/v2.1.1/Nextcloud.Talk-macos-universal.dmg",
+  "version": "2.1.2",
+  "url": "https://github.com/nextcloud-releases/talk-desktop/releases/download/v2.1.2/Nextcloud.Talk-macos-universal.dmg",
   "bundleId": "com.nextcloud.talk.mac",
   "homepage": "https://nextcloud.com/talk/",
   "fileName": "Nextcloud.Talk-macos-universal.dmg",
-  "sha": "ae9ebe6d86f763cc845d8518f9cb83a3b2f0e9cabf1149cf8cb22ab1c29e50b7",
+  "sha": "9a3362ef9757e01fe8bfecc49a22434d5fb6a369d59f5cef39c0f992e709767a",
   "category": "Communication",
   "publisher": "Nextcloud",
   "previous_version": "2.1.1"
