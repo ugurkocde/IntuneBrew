@@ -1,7 +1,7 @@
 {
   "app_name": "Nextcloud",
   "app_key": "nextcloud",
-  "last_updated": "2026-04-03",
+  "last_updated": "2026-04-04",
   "total_cves": 28,
   "summary": {
     "critical": 1,
