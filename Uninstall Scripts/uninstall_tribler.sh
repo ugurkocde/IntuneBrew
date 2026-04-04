@@ -17,12 +17,20 @@ fi
 echo "Stopping Tribler if running..."
 pkill -f "Tribler" 2>/dev/null || true
 
-# Remove /Applications/Tribler.app
-echo "Removing /Applications/Tribler.app..."
-if [ -d "/Applications/Tribler.app" ]; then
-    rm -rf "/Applications/Tribler.app" 2>/dev/null || true
-elif [ -f "/Applications/Tribler.app" ]; then
-    rm -f "/Applications/Tribler.app" 2>/dev/null || true
+# Remove /Applications/tribler-8.4.2-arm.app
+echo "Removing /Applications/tribler-8.4.2-arm.app..."
+if [ -d "/Applications/tribler-8.4.2-arm.app" ]; then
+    rm -rf "/Applications/tribler-8.4.2-arm.app" 2>/dev/null || true
+elif [ -f "/Applications/tribler-8.4.2-arm.app" ]; then
+    rm -f "/Applications/tribler-8.4.2-arm.app" 2>/dev/null || true
+fi
+
+# Remove /Applications/{'target': 'Tribler.app'}
+echo "Removing /Applications/{'target': 'Tribler.app'}..."
+if [ -d "/Applications/{'target': 'Tribler.app'}" ]; then
+    rm -rf "/Applications/{'target': 'Tribler.app'}" 2>/dev/null || true
+elif [ -f "/Applications/{'target': 'Tribler.app'}" ]; then
+    rm -f "/Applications/{'target': 'Tribler.app'}" 2>/dev/null || true
 fi
 
 # Remove $HOME/.Tribler
