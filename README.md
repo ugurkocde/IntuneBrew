@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1246-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -412,48 +412,33 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-03 00:50 UTC*
+*Last checked: 2026-04-04 00:42 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Rive | 0.8.4490 | 0.8.4521 |
-| OmniOutliner | 6.0.4 | 6.1 |
-| Rectangle | 0.94 | 0.95 |
-| Mockoon | 9.6.0 | 9.6.1 |
-| Easydict | 2.17.3 | 2.18.0 |
-| Bitwarden | 2026.2.1 | 2026.3.1 |
-| Android Studio | 2025.3.2.6 | 2025.3.3.6 |
-| DataGrip | 2026.1 | 2026.1.1 |
-| iMazing | 3.5.1 | 3.5.2 |
-| pgAdmin4 | 9.13 | 9.14 |
-| OBS | 32.1.0 | 32.1.1 |
-| Insomnia | 12.4.0 | 12.5.0 |
-| LM Studio | 0.4.8 | 0.4.9 |
-| Opera | 129.0.5823.28 | 129.0.5823.44 |
-| Amadine | 1.8.1 | 1.8.2 |
-| Warp | 0.2026.03.25.08.24.stable | 0.2026.04.01.08.39.stable |
-| Biscuit | 1.2.33 | 1.2.34 |
-| Opera GX | 129.0.5823.26 | 129.0.5823.49 |
-| Roon | 2.62 | 2.64 |
+| Mozilla Firefox Developer Edition | 150.0b4 | 150.0b5 |
+| Dockside | 2.4.2 | 2.4.3 |
+| WeChat for Mac | 4.1.8.67 | 4.1.8.100 |
+| UnnaturalScrollWheels | 1.3.0 | 1.4.0 |
+| Bruno | 3.2.0 | 3.2.2 |
+| Zed | 0.230.0 | 0.230.1 |
+| 8x8_work | 8.31.3-1 | 8.32.2-10 |
+| Stremio | 5.1.16 | 5.1.18 |
+| Biscuit | 1.2.34 | 1.2.35 |
+| Bluefish | 2.4.0 | 2.4.1 |
+| Deezer | 7.1.130 | 7.1.140 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Eltima CloudMounter | 4.16 | 4.17 |
-| Douyin | 7.5.1 | 7.6.0 |
-| Electrum | 4.7.1 | 4.7.2 |
-| Fellow | 5.2.5 | 5.2.7 |
-| GDevelop | 5.6.263 | 5.6.264 |
 | Multi | 0.538.2 | 3.0.2 |
-| Nextcloud Talk Desktop | 2.1.1 | 2.1.2 |
-| kiro | 0.11.107 | 0.11.130 |
-| Twingate | 2026.29.22575 | 2026.85.23872 |
-| Cloudflare WARP | 2026.1.150.0 | 2026.3.846.0 |
-| ExpressVPN | 12.1.0.12143 | 14.0.0.12844 |
-| TeamViewer | 15.76.3 | 15.76.5 |
-| Adobe Acrobat Pro DC | 26.001.21346 | 26.001.21367 |
-| CrashPlan | 11.9.0 | 11.9.1 |
+| Tribler | 8.3.1 | 8.4.2 |
+| Wealthfolio | 3.1.2 | 3.2.1 |
+| Claude Code | 2.1.81 | 2.1.84 |
+| PureVPN | 9.40.0 | 9.41.0 |
+| Salesforce CLI | 2.128.5 | 2.129.8 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

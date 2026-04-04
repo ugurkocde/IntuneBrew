@@ -1,13 +1,13 @@
 {
   "name": "Biscuit",
   "description": "Browser to organise apps",
-  "version": "1.2.34",
-  "url": "https://github.com/agata/dl.biscuit/releases/download/1.2.34/Biscuit-1.2.34-arm64.dmg",
+  "version": "1.2.35",
+  "url": "https://github.com/agata/dl.biscuit/releases/download/1.2.35/Biscuit-1.2.35-arm64.dmg",
   "bundleId": "com.eatbiscuit.biscuit",
   "homepage": "https://eatbiscuit.com/",
-  "fileName": "Biscuit-1.2.34-arm64.dmg",
-  "sha": "37a03ff8c9b123966fb25424c5e36cfb6ae4b048fb8d04f502391ec833dd6965",
+  "fileName": "Biscuit-1.2.35-arm64.dmg",
+  "sha": "bdf14210f4b7aa9c96eed6257e72b6dcf0e65c892ceae80c0eee3b7964bcc49c",
   "category": "Browsers",
   "publisher": "Eat Biscuit",
-  "previous_version": "1.2.33"
+  "previous_version": "1.2.34"
 }
