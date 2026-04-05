@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-04-05T03:04:00.188Z",
+  "last_full_scan": "2026-04-05T14:18:12.251Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8956,6 +8956,20 @@
         "openai_improved"
       ],
       "name": "Heynote"
+    },
+    "music_decoy": {
+      "last_checked": "2026-04-05T14:18:12.143Z",
+      "bundle_id": "com.apple.Music",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Music Decoy"
     }
   }
 }
