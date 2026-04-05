@@ -7,5 +7,7 @@
   "homepage": "https://lowtechguys.com/musicdecoy",
   "fileName": "music_decoy_1.1.pkg",
   "type": "app",
-  "sha": "4b9ebfbb64074b61bad9f99fac7302747698e9cc54d04f8025b674bb4be6bc20"
+  "sha": "4b9ebfbb64074b61bad9f99fac7302747698e9cc54d04f8025b674bb4be6bc20",
+  "category": "Utilities",
+  "publisher": "Low Tech Guys"
 }
