@@ -1,7 +1,7 @@
 {
   "app_name": "Jellyfin",
   "app_key": "jellyfin",
-  "last_updated": "2026-04-04",
+  "last_updated": "2026-04-05",
   "total_cves": 15,
   "summary": {
     "critical": 2,

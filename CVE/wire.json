@@ -1,7 +1,7 @@
 {
   "app_name": "Wire",
   "app_key": "wire",
-  "last_updated": "2026-04-04",
+  "last_updated": "2026-04-05",
   "total_cves": 13,
   "summary": {
     "critical": 1,
