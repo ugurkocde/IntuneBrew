@@ -25,12 +25,52 @@ elif [ -f "/Applications/Permute 3.app" ]; then
     rm -f "/Applications/Permute 3.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/*.com.charliemonroe.eney
+echo "Removing $HOME/Library/Application Scripts/*.com.charliemonroe.eney..."
+if [ -d "$HOME/Library/Application Scripts/*.com.charliemonroe.eney" ]; then
+    rm -rf "$HOME/Library/Application Scripts/*.com.charliemonroe.eney" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/*.com.charliemonroe.eney" ]; then
+    rm -f "$HOME/Library/Application Scripts/*.com.charliemonroe.eney" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/*com.charliemonroe.Permute*
+echo "Removing $HOME/Library/Application Scripts/*com.charliemonroe.Permute*..."
+if [ -d "$HOME/Library/Application Scripts/*com.charliemonroe.Permute*" ]; then
+    rm -rf "$HOME/Library/Application Scripts/*com.charliemonroe.Permute*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/*com.charliemonroe.Permute*" ]; then
+    rm -f "$HOME/Library/Application Scripts/*com.charliemonroe.Permute*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.apple.helpd/Generated/com.charliemonroe.Permute-3*
+echo "Removing $HOME/Library/Caches/com.apple.helpd/Generated/com.charliemonroe.Permute-3*..."
+if [ -d "$HOME/Library/Caches/com.apple.helpd/Generated/com.charliemonroe.Permute-3*" ]; then
+    rm -rf "$HOME/Library/Caches/com.apple.helpd/Generated/com.charliemonroe.Permute-3*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.apple.helpd/Generated/com.charliemonroe.Permute-3*" ]; then
+    rm -f "$HOME/Library/Caches/com.apple.helpd/Generated/com.charliemonroe.Permute-3*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.charliemonroe.Permute-3
 echo "Removing $HOME/Library/Containers/com.charliemonroe.Permute-3..."
 if [ -d "$HOME/Library/Containers/com.charliemonroe.Permute-3" ]; then
     rm -rf "$HOME/Library/Containers/com.charliemonroe.Permute-3" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.charliemonroe.Permute-3" ]; then
     rm -f "$HOME/Library/Containers/com.charliemonroe.Permute-3" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.charliemonroe.Permute.MetadataProcessor
+echo "Removing $HOME/Library/Containers/com.charliemonroe.Permute.MetadataProcessor..."
+if [ -d "$HOME/Library/Containers/com.charliemonroe.Permute.MetadataProcessor" ]; then
+    rm -rf "$HOME/Library/Containers/com.charliemonroe.Permute.MetadataProcessor" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.charliemonroe.Permute.MetadataProcessor" ]; then
+    rm -f "$HOME/Library/Containers/com.charliemonroe.Permute.MetadataProcessor" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/*.com.charliemonroe.Permute*
+echo "Removing $HOME/Library/Group Containers/*.com.charliemonroe.Permute*..."
+if [ -d "$HOME/Library/Group Containers/*.com.charliemonroe.Permute*" ]; then
+    rm -rf "$HOME/Library/Group Containers/*.com.charliemonroe.Permute*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/*.com.charliemonroe.Permute*" ]; then
+    rm -f "$HOME/Library/Group Containers/*.com.charliemonroe.Permute*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.charliemonroe.Permute-3.plist
