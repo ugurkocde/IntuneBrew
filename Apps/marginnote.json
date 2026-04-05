@@ -1,12 +1,12 @@
 {
   "name": "MarginNote",
   "description": "E-reader",
-  "version": "4.3.1",
-  "url": "https://dist.marginnote.cn/MarginNote4.3.1.dmg",
+  "version": "4.3.2",
+  "url": "https://dist.marginnote.cn/MarginNote4.3.2.dmg",
   "bundleId": "com.marginnote.marginnote3.mac",
   "homepage": "https://www.marginnote.com/",
-  "fileName": "MarginNote4.3.1.dmg",
-  "sha": "71abaab560732c4dbf1dcccc20fca54c3334aca3f967745bc0f7c7edde4dd8b8",
+  "fileName": "MarginNote4.3.2.dmg",
+  "sha": "8705e492e51f7e28a3dc7680435753fb5f58a4d6bd8ba3dfa3a2dcae11815e24",
   "category": "Productivity",
   "publisher": "MarginNote Team",
   "previous_version": "4.3.1"

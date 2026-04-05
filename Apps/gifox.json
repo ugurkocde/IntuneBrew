@@ -1,12 +1,12 @@
 {
   "name": "gifox",
   "description": "GIF recording and sharing",
-  "version": "2.9.0+0",
-  "url": "https://d1fqctmfkpkkcg.cloudfront.net/gifox/020900.00.dmg",
+  "version": "2.9.0+1",
+  "url": "https://d1fqctmfkpkkcg.cloudfront.net/gifox/020900.01.dmg",
   "bundleId": "com.gifox.gifox2",
   "homepage": "https://gifox.io/",
-  "fileName": "020900.00.dmg",
-  "sha": "d4d192d9860ed29fc48a08323a1de749dae58b2a180e4d39407daf0676914122",
+  "fileName": "020900.01.dmg",
+  "sha": "6e4076c37aeb136a5f12bcdadaa3693624de6de585f3e181c5017cf4b57088b6",
   "changelog": "https://gifox.io/changelog/",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:18:02Z",

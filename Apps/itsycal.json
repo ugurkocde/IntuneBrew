@@ -1,14 +1,14 @@
 {
   "name": "Itsycal",
   "description": "Menu bar calendar",
-  "version": "0.15.10",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/itsycal_0.15.10.pkg",
+  "version": "0.15.11",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/itsycal_0.15.11.pkg",
   "bundleId": "com.mowglii.ItsycalApp",
   "homepage": "https://www.mowglii.com/itsycal/",
-  "fileName": "itsycal_0.15.10.pkg",
+  "fileName": "itsycal_0.15.11.pkg",
   "type": "app",
-  "sha": "bbad73c828dfd9c41bab73ac655c63c51bb8ef132099ca6e8860de152e61cc4d",
-  "previous_version": "0.15.10",
+  "sha": "43e6dd53d13d6994006eba5cd4458af0020c6f473b9f00056237f9cb20388d12",
+  "previous_version": "0.15.11",
   "category": "Productivity",
   "publisher": "Mowglii"
 }
