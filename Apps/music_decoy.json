@@ -9,5 +9,6 @@
   "type": "app",
   "sha": "4b9ebfbb64074b61bad9f99fac7302747698e9cc54d04f8025b674bb4be6bc20",
   "category": "Utilities",
-  "publisher": "Low Tech Guys"
+  "publisher": "Low Tech Guys",
+  "previous_version": "1.1"
 }

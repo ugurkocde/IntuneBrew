@@ -1,13 +1,13 @@
 {
   "name": "FUSE-T",
   "description": "Kext-less implementation of FUSE",
-  "version": "1.2.0",
-  "url": "https://github.com/macos-fuse-t/fuse-t/releases/download/1.2.0/fuse-t-macos-installer-1.2.0.pkg",
+  "version": "1.2.1",
+  "url": "https://github.com/macos-fuse-t/fuse-t/releases/download/1.2.1/fuse-t-macos-installer-1.2.1.pkg",
   "bundleId": "com.nicola.Fuset",
   "homepage": "https://www.fuse-t.org/",
-  "fileName": "fuse-t-macos-installer-1.2.0.pkg",
+  "fileName": "fuse-t-macos-installer-1.2.1.pkg",
   "type": "pkg",
-  "sha": "6e21e4fcf072a8cd41e13bed080289531621e35a5f484d81ac7953f6bd3cd8d2",
+  "sha": "77e0feca3d5a3dde5bd2683b1613fb52f23385381e41b9f47216dcc88644a346",
   "category": "Utilities",
   "publisher": "The FUSE Project",
   "previous_version": "1.2.0"
