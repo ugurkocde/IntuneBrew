@@ -1,12 +1,12 @@
 {
   "name": "cmux",
   "description": "Ghostty-based terminal with vertical tabs and notifications for AI coding agents",
-  "version": "0.63.1",
-  "url": "https://github.com/manaflow-ai/cmux/releases/download/v0.63.1/cmux-macos.dmg",
+  "version": "0.63.2",
+  "url": "https://github.com/manaflow-ai/cmux/releases/download/v0.63.2/cmux-macos.dmg",
   "bundleId": "com.cmuxterm.app",
   "homepage": "https://www.cmux.dev/",
   "fileName": "cmux-macos.dmg",
-  "sha": "b616c3ea0fab182bc0fa0d71438e5c4644601db38a38010e8b7da3ad88d6b01f",
+  "sha": "c64d8a2f54f34bbb422fa940fbc01d525abc014a099292c866d89f206235a94c",
   "category": "Developer Tools",
   "publisher": "cmux",
   "previous_version": "0.63.1"

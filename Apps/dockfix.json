@@ -1,12 +1,12 @@
 {
   "name": "DockFix",
   "description": "Dock replacement",
-  "version": "4.1.6",
+  "version": "4.2.0",
   "url": "https://www.dockfix.app/downloads/DockFix.dmg",
   "bundleId": "dk.FIrstForm.DockFix",
   "homepage": "https://www.dockfix.app/",
   "fileName": "DockFix.dmg",
-  "sha": "f8061b9f043ce0451c6ee376907bca61c6e4bed8120cea9f83ebbee7bfb41935",
+  "sha": "b56e72e843aa3ef906b74143aec10d73c2e2057fb44952b801e85e7e93b23da0",
   "category": "Utilities",
   "publisher": "DockFix",
   "previous_version": "4.1.6"
