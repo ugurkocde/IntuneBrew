@@ -1,12 +1,12 @@
 {
   "name": "Proton Pass",
   "description": "Desktop client for Proton Pass",
-  "version": "1.35.0",
-  "url": "https://proton.me/download/pass/macos/ProtonPass_1.35.0.dmg",
+  "version": "1.36.0",
+  "url": "https://proton.me/download/pass/macos/ProtonPass_1.36.0.dmg",
   "bundleId": "me.proton.pass.electron",
   "homepage": "https://proton.me/pass",
-  "fileName": "ProtonPass_1.35.0.dmg",
-  "sha": "cf05758c16eda6533b4dd4b52a4122f35dd9d9ec78e73dc13f6640ef6b3aa711",
+  "fileName": "ProtonPass_1.36.0.dmg",
+  "sha": "3d58fadbd5ba9fbc1e2a40095bcc6a380cc095cf6325bb2f18bdb762ecdcf804",
   "category": "Security",
   "publisher": "Proton AG",
   "previous_version": "1.35.0"

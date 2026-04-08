@@ -1,13 +1,13 @@
 {
   "name": "Shutter Encoder",
   "description": "Video, audio and image converter",
-  "version": "19.9",
-  "url": "https://www.shutterencoder.com/Shutter%20Encoder%2019.9%20Apple%20Silicon.pkg",
+  "version": "20.0",
+  "url": "https://www.shutterencoder.com/Shutter%20Encoder%2020.0%20Apple%20Silicon.pkg",
   "bundleId": "com.paulpacifico.shutterencoder",
   "homepage": "https://www.shutterencoder.com/",
-  "fileName": "Shutter Encoder 19.9 Apple Silicon.pkg",
+  "fileName": "Shutter Encoder 20.0 Apple Silicon.pkg",
   "type": "pkg",
-  "sha": "2eb1d7a4fff76d0d9b660053ed1f022d0b4c284d563abce5778b4168c69db58f",
+  "sha": "fe25e708d355df2251936960596c3fcfc9b0e431c5bfc2ab23d4ddb6fc960f16",
   "category": "Media",
   "publisher": "Shutter Encoder",
   "previous_version": "19.9"
