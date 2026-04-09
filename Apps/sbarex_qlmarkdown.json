@@ -1,14 +1,14 @@
 {
   "name": "sbarex QLMarkdown",
   "description": "Quick Look generator for Markdown files",
-  "version": "1.0.24",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sbarex_qlmarkdown_1.0.24.pkg",
+  "version": "1.5.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sbarex_qlmarkdown_1.5.0.pkg",
   "bundleId": "org.sbarex.QLMarkdown",
   "homepage": "https://github.com/sbarex/QLMarkdown",
-  "fileName": "sbarex_qlmarkdown_1.0.24.pkg",
+  "fileName": "sbarex_qlmarkdown_1.5.0.pkg",
   "type": "app",
-  "sha": "303e1c7b967d9582d38c6b2e822f7b419802def93615d5430478cf00dc686e67",
+  "sha": "579ea53f74a950d41f8cc4f103ee3073d6824cbe1865b2f3890912083c2a7dc8",
   "category": "Developer Tools",
   "publisher": "sbarex",
-  "previous_version": "1.0.24"
+  "previous_version": "1.5.0"
 }

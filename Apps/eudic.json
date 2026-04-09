@@ -2,7 +2,7 @@
   "name": "Eudic",
   "description": "English dictionary",
   "version": "latest",
-  "url": "https://static.frdic.com/pkg/eudicmac.dmg",
+  "url": "https://static.frdic.com/pkg/eudicmac.dmg?version",
   "bundleId": "com.eusoft.eudic",
   "homepage": "https://www.eudic.net/v4/en/app/eudic",
   "fileName": "eudicmac.dmg",

@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1247-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -418,54 +418,42 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-08 00:52 UTC*
+*Last checked: 2026-04-09 00:41 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox ESR | 140.9.0 | 140.9.1 |
-| Proton Pass | 1.35.0 | 1.36.0 |
-| NoSQL Workbench | 3.20.1 | 3.20.2 |
-| Dockside | 2.5.0 | 2.5.1 |
-| Mozilla Thunderbird | 149.0.1 | 149.0.2 |
-| LookAway | 1.14.10 | 2.0.0 |
-| ChatWise | 26.4.0 | 26.4.2 |
-| LibreWolf | 149.0 | 149.0.2 |
-| Mozilla Firefox | 149.0 | 149.0.2 |
-| Notion | 7.9.1 | 7.10.0 |
-| Discord | 0.0.383 | 0.0.384 |
-| DuckDuckGo | 1.184.0 | 1.184.1 |
-| Splashtop Business | 3.8.0.6 | 3.8.2.0 |
-| Eclipse Temurin Java Development Kit | 25.0.2 | 26 |
-| Microsoft Office | 16.107.26032814 | 16.107.26040410 |
-| Windsurf | 1.9600.38 | 1.9600.40 |
-| Beekeeper Studio | 5.6.4 | 5.6.5 |
-| Mullvad Browser | 15.0.8 | 15.0.9 |
-| Tor Browser | 15.0.8 | 15.0.9 |
+| Mozilla Firefox Developer Edition | 150.0b6 | 150.0b7 |
+| Novabench | 5.6.1 | 6.0.0 |
+| Rocket.Chat | 4.13.0 | 4.14.0 |
+| Downie | 4.12.1 | 4.12.2 |
+| Google Chrome | 146.0.7680.178 | 147.0.7727.56 |
+| Microsoft Teams | 26059.604.4471.2584 | 26072.605.4546.510 |
+| Grammarly Desktop | 1.159.0.0 | 1.160.0.0 |
+| Webex | 46.3.1.34493 | 46.4.0.34620 |
+| Zed | 0.230.2 | 0.231.1 |
+| Windsurf | 1.9600.40 | 1.9600.41 |
+| OneDrive | 26.032.0217.0003 | 26.040.0301.0001 |
+| Opera | 129.0.5823.65 | 130.0.5847.12 |
+| DeepL | 26.3.14124477 | 26.4.14340455 |
+| AppFlowy | 0.11.6 | 0.11.7 |
+| Movist Pro | 2.13.1 | 2.15 |
+| Biscuit | 1.2.35 | 1.2.37 |
+| Waterfox | 6.6.10 | 6.6.11 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Defold | 1.12.2 | 1.12.3 |
-| Connect Fonts | 28.0.4 | 28.1.0 |
-| DockFix | 4.2.0 | 4.2.1 |
-| Loom | 0.341.0 | 0.342.1 |
+| Google Earth Pro | 7.3.7.1094 | 7.3.7.1155 |
 | Multi | 0.538.2 | 3.0.2 |
-| Notesnook | 3.3.12 | 3.3.13 |
-| Pale Moon | 34.1.0 | 34.2.0 |
-| Pitch | 2.120.1 | 2.121.0 |
-| NordVPN | 9.15.0 | 10.0.1 |
-| DisplayLink USB Graphics Software | 15.1 | 16.0 |
-| Microsoft Office BusinessPro | 16.107.26032814 | 16.107.26040410 |
-| eM Client | 10.4.4867 | 10.4.5298 |
-| Microsoft Excel | 16.107.26032814 | 16.107.26040410 |
-| Microsoft OneNote | 16.107.26032814 | 16.107.26040410 |
-| Microsoft Outlook | 16.107.26032814 | 16.107.26040410 |
-| Microsoft PowerPoint | 16.107.26032814 | 16.107.26040410 |
-| Microsoft Word | 16.107.26032814 | 16.107.26040410 |
-| Shutter Encoder | 19.9 | 20.0 |
-| Spyder | 6.1.3 | 6.1.4 |
-| Splashtop Streamer | 3.8.0.4 | 3.8.2.0 |
+| OpenAudible | 4.7.4 | 4.8 |
+| OpenShot Video Editor | 3.5.0 | 3.5.1 |
+| Raspberry Pi Imager | 2.0.7 | 2.0.8 |
+| Claude Code | 2.1.85 | 2.1.87 |
+| Box Drive | 2.50.191 | 2.51.230 |
+| GOG Galaxy | 2.0.96.26 | 2.0.97.49 |
+| Salesforce CLI | 2.129.8 | 2.130.9 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

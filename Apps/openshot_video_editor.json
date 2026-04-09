@@ -1,12 +1,12 @@
 {
   "name": "OpenShot Video Editor",
   "description": "Cross-platform video editor",
-  "version": "3.5.0",
-  "url": "https://github.com/OpenShot/openshot-qt/releases/download/v3.5.0/OpenShot-v3.5.0-x86_64.dmg",
+  "version": "3.5.1",
+  "url": "https://github.com/OpenShot/openshot-qt/releases/download/v3.5.1/OpenShot-v3.5.1-x86_64.dmg",
   "bundleId": "org.openshot.OpenShot",
   "homepage": "https://openshot.org/",
-  "fileName": "OpenShot-v3.5.0-x86_64.dmg",
-  "sha": "380ada548e0c13d87cab9c520a3eaabab2d907b24e9d9f9160f685a29f1c0003",
+  "fileName": "OpenShot-v3.5.1-x86_64.dmg",
+  "sha": "c9207253e5ad962ec6d5adb36b9f269add43394394b5f9493e222d07c23256d1",
   "category": "Media",
   "publisher": "OpenShot Studios, LLC",
   "previous_version": "3.5.0"

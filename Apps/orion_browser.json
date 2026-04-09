@@ -1,14 +1,14 @@
 {
   "name": "Orion Browser",
   "description": "WebKit based web browser",
-  "version": "1.0.4",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/orion_browser_1.0.4.pkg",
+  "version": "1.0.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/orion_browser_1.0.5.pkg",
   "bundleId": "com.kagi.kagimacOS",
   "homepage": "https://browser.kagi.com/",
-  "fileName": "orion_browser_1.0.4.pkg",
+  "fileName": "orion_browser_1.0.5.pkg",
   "type": "app",
-  "previous_version": "1.0.4",
-  "sha": "5f743aa505614a3424112a489a4b93bd68427e193b7958067cc84a0efb0e8d47",
+  "previous_version": "1.0.5",
+  "sha": "635e9f5f78ca0df601b16d52b33d68d2304d2a2476c216735bb616950380fac9",
   "category": "Browsers",
   "publisher": "Kagi, Inc."
 }
