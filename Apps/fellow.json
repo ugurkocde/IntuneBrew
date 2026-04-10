@@ -1,12 +1,12 @@
 {
   "name": "Fellow",
   "description": "Collaborative meeting agendas, notes, and action items",
-  "version": "5.2.7",
-  "url": "https://cdn.fellow.app/desktop/5.2.7/darwin/stable/universal/Fellow-5.2.7-universal.dmg",
+  "version": "5.3.1",
+  "url": "https://cdn.fellow.app/desktop/5.3.1/darwin/stable/universal/Fellow-5.3.1-universal.dmg",
   "bundleId": "com.electron.fellow",
   "homepage": "https://fellow.app/",
-  "fileName": "Fellow-5.2.7-universal.dmg",
-  "sha": "e08d43ccc743504d0f0b45a983b15a15332bd489d9e340d1cd6fbd7f3e425a17",
+  "fileName": "Fellow-5.3.1-universal.dmg",
+  "sha": "b8edd891fd5fc823e69c790f18863e0052c36f47713a9f33607d610d0198b6d2",
   "category": "Productivity",
   "publisher": "Fellow.app",
   "previous_version": "5.2.7"

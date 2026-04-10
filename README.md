@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1247-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -419,41 +419,50 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-09 00:41 UTC*
+*Last checked: 2026-04-10 00:48 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 150.0b6 | 150.0b7 |
-| Novabench | 5.6.1 | 6.0.0 |
-| Rocket.Chat | 4.13.0 | 4.14.0 |
-| Downie | 4.12.1 | 4.12.2 |
-| Google Chrome | 146.0.7680.178 | 147.0.7727.56 |
-| Microsoft Teams | 26059.604.4471.2584 | 26072.605.4546.510 |
-| Grammarly Desktop | 1.159.0.0 | 1.160.0.0 |
-| Webex | 46.3.1.34493 | 46.4.0.34620 |
-| Zed | 0.230.2 | 0.231.1 |
-| Windsurf | 1.9600.40 | 1.9600.41 |
-| OneDrive | 26.032.0217.0003 | 26.040.0301.0001 |
-| Opera | 129.0.5823.65 | 130.0.5847.12 |
-| DeepL | 26.3.14124477 | 26.4.14340455 |
-| AppFlowy | 0.11.6 | 0.11.7 |
-| Movist Pro | 2.13.1 | 2.15 |
-| Biscuit | 1.2.35 | 1.2.37 |
-| Waterfox | 6.6.10 | 6.6.11 |
+| Studio 3T | 2026.6.0 | 2026.7.0 |
+| Rive | 0.8.4521 | 0.8.4571 |
+| MarkEdit | 1.30.0 | 1.31.1 |
+| NVIDIA GeForce NOW | 2.0.83.130 | 2.0.83.141 |
+| JetBrains Rider | 2026.1 | 2026.1.0.1 |
+| Skim | 1.7.13 | 1.7.14 |
+| Brave | 1.88.138.0 | 1.89.132.0 |
+| DataGrip | 2026.1.1 | 2026.1.2 |
+| iMazing Profile Editor | 2.1.2 | 2.2.0 |
+| Raycast | 1.104.11 | 1.104.12 |
+| LM Studio | 0.4.9 | 0.4.10 |
+| BoltAI 2 | 2.8.5 | 2.9.0 |
+| DbGate | 7.1.6 | 7.1.8 |
+| Warp | 0.2026.04.01.08.39.stable | 0.2026.04.08.08.36.stable |
+| Lark | 7.64.7 | 7.65.9 |
+| Milanote | 3.18.87 | 3.18.89 |
+| Mimestream | 1.9.17 | 1.9.18 |
+| Biscuit | 1.2.37 | 1.2.38 |
+| Deezer | 7.1.140 | 7.1.150 |
+| Opera GX | 129.0.5823.64 | 129.0.5823.70 |
+| REAPER | 7.67 | 7.68 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Google Earth Pro | 7.3.7.1094 | 7.3.7.1155 |
+| Akiflow | 2.70.7 | 2.71.5 |
+| Fellow | 5.2.7 | 5.3.1 |
+| LaunchOS | 1.5.5 | 1.5.6 |
+| massCode | 5.0.0 | 5.1.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| OpenAudible | 4.7.4 | 4.8 |
-| OpenShot Video Editor | 3.5.0 | 3.5.1 |
-| Raspberry Pi Imager | 2.0.7 | 2.0.8 |
-| Claude Code | 2.1.85 | 2.1.87 |
-| Box Drive | 2.50.191 | 2.51.230 |
-| GOG Galaxy | 2.0.96.26 | 2.0.97.49 |
-| Salesforce CLI | 2.129.8 | 2.130.9 |
+| Pitch | 2.121.0 | 2.121.1 |
+| Session | 1.17.17 | 1.18.0 |
+| Claude Code | 2.1.87 | 2.1.89 |
+| kiro | 0.11.130 | 0.11.131 |
+| FineTune | 1.4.1 | 1.5.0 |
+| Okta Advanced Server Access | 1.102.0 | 1.103.2 |
+| quarto | 1.9.36 | 1.9.37 |
+| Session Manager Plugin for the AWS CLI | 1.2.792.0 | 1.2.804.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

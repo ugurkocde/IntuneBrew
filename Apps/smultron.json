@@ -1,14 +1,14 @@
 {
   "name": "Smultron",
   "description": "General-purpose text editor",
-  "version": "14.4.7",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/smultron_14.4.7.pkg",
+  "version": "14.4.8",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/smultron_14.4.8.pkg",
   "bundleId": "com.peterborgapps.Smultron12",
   "homepage": "https://www.peterborgapps.com/smultron/",
-  "fileName": "smultron_14.4.7.pkg",
+  "fileName": "smultron_14.4.8.pkg",
   "type": "app",
-  "sha": "a1cd7ada431448866457f4a156389e029647821d68c4eadc54bb64ad1e996e38",
+  "sha": "79bf93eb934bc0da9b5b5da62406eb08d8db65d71793929e4c983998c0a89c92",
   "category": "Developer Tools",
   "publisher": "Peter Borg Apps",
-  "previous_version": "14.4.7"
+  "previous_version": "14.4.8"
 }

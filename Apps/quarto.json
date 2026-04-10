@@ -1,13 +1,13 @@
 {
   "name": "quarto",
   "description": "Scientific and technical publishing system built on Pandoc",
-  "version": "1.9.36",
-  "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.36/quarto-1.9.36-macos.pkg",
+  "version": "1.9.37",
+  "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.37/quarto-1.9.37-macos.pkg",
   "bundleId": "org.rstudio.quarto",
   "homepage": "https://www.quarto.org/",
-  "fileName": "quarto-1.9.36-macos.pkg",
+  "fileName": "quarto-1.9.37-macos.pkg",
   "type": "pkg",
-  "sha": "2a82ae4ab653c9fe7331582abc319bd39b456fef86e240944ea2f5ffa453ed0b",
+  "sha": "607d5dc4d701f3de843c268a5c3e4c291222e2baa1921349b3cee2aa9fbd4cb2",
   "category": "Developer Tools",
   "publisher": "Posit, Inc.",
   "previous_version": "1.9.36"

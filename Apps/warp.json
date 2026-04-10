@@ -1,8 +1,8 @@
 {
   "name": "Warp",
   "description": "Rust-based terminal",
-  "version": "0.2026.04.01.08.39.stable",
-  "url": "https://releases.warp.dev/stable/v0.2026.04.01.08.39.stable/Warp.dmg",
+  "version": "0.2026.04.08.08.36.stable",
+  "url": "https://releases.warp.dev/stable/v0.2026.04.08.08.36.stable/Warp.dmg",
   "bundleId": "dev.warp.Warp-Stable",
   "homepage": "https://www.warp.dev/",
   "fileName": "Warp.dmg",

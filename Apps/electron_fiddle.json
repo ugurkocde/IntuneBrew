@@ -1,14 +1,14 @@
 {
   "name": "Electron Fiddle",
   "description": "Create and play with small Electron experiments",
-  "version": "0.38.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/electron_fiddle_0.38.0.pkg",
+  "version": "0.39.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/electron_fiddle_0.39.0.pkg",
   "bundleId": "com.electron.fiddle",
   "homepage": "https://www.electronjs.org/fiddle",
-  "fileName": "electron_fiddle_0.38.0.pkg",
+  "fileName": "electron_fiddle_0.39.0.pkg",
   "type": "app",
-  "sha": "dd0be7195860a1413bb915b466fe16c348ce2b00761956390115a01f97ef1f48",
+  "sha": "2460f18ed6a25f0bc17ccfeed4d739215b393a13e912b06b8efa5ad5cd82c8ab",
   "category": "Developer Tools",
   "publisher": "Electron",
-  "previous_version": "0.38.0"
+  "previous_version": "0.39.0"
 }

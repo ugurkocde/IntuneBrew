@@ -1,15 +1,15 @@
 {
   "name": "WhatsApp",
   "description": "Native desktop client for WhatsApp",
-  "version": "2.26.13.15",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/whatsapp_2.26.13.15.pkg",
+  "version": "2.26.15.12",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/whatsapp_2.26.15.12.pkg",
   "bundleId": "net.whatsapp.WhatsApp",
   "homepage": "https://www.whatsapp.com/",
-  "fileName": "whatsapp_2.26.13.15.pkg",
+  "fileName": "whatsapp_2.26.15.12.pkg",
   "type": "app",
-  "sha": "1ae91881fb73e30253ca7611d9db6a3634974b087860c96a9d6712e151341602",
+  "sha": "35d4bd6844ece3fccbd7ebc15e563ccda65a1f4e98b021f86309a252ac6a920b",
   "changelog": "https://web.whatsapp.com/desktop/windows/release-notes",
-  "previous_version": "2.26.13.15",
+  "previous_version": "2.26.15.12",
   "category": "Communication",
   "publisher": "WhatsApp LLC"
 }
