@@ -1,12 +1,12 @@
 {
   "name": "Zotero",
   "description": "Collect, organise, cite, and share research sources",
-  "version": "8.0.5",
-  "url": "https://download.zotero.org/client/release/8.0.5/Zotero-8.0.5.dmg",
+  "version": "9.0",
+  "url": "https://download.zotero.org/client/release/9.0/Zotero-9.0.dmg",
   "bundleId": "org.zotero.zotero",
   "homepage": "https://www.zotero.org/",
-  "fileName": "Zotero-8.0.5.dmg",
-  "sha": "128023036bd4dd3a861042f5918333491d61cd72dec3fd604ddf7488fa154f37",
+  "fileName": "Zotero-9.0.dmg",
+  "sha": "2ac2a826ac1632ec6f81b668d9cd34fb8f78f92f57ecdeb2e0d6b481769ac32e",
   "category": "Productivity",
   "publisher": "Zotero",
   "previous_version": "8.0.5"

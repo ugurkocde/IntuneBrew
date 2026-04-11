@@ -1,14 +1,14 @@
 {
   "name": "Adobe Acrobat Reader",
   "description": "View, print, and comment on PDF documents",
-  "version": "26.001.21367",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/adobe_acrobat_reader_26.001.21367.pkg",
+  "version": "26.001.21411",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/adobe_acrobat_reader_26.001.21411.pkg",
   "bundleId": "com.adobe.Reader",
   "homepage": "https://www.adobe.com/acrobat/pdf-reader.html",
-  "fileName": "adobe_acrobat_reader_26.001.21367.pkg",
+  "fileName": "adobe_acrobat_reader_26.001.21411.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html",
-  "sha": "4f276d393296efdeddd0dc5151cea56665359624dd0d5029cc5ca31b7cd0684c",
+  "sha": "65b8af8e5f1691fcb4434442db746f805e9f91a2dc667d4508225d519df592ae",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:27:42Z",
     "qa_result": "Installation successful and verified",
