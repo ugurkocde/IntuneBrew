@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1247-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -421,46 +421,23 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-11 00:46 UTC*
+*Last checked: 2026-04-12 00:48 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 150.0b7 | 150.0b8 |
-| Dockside | 2.5.1 | 2.5.3 |
-| Novabench | 6.0.0 | 6.0.1 |
-| LookAway | 2.0.0 | 2.0.1 |
-| Typora | 1.12.6 | 1.13.2 |
-| Trae | 2.3.17433 | 2.3.18717 |
-| WeChat for Mac | 4.1.8.100 | 4.1.8.106 |
-| Windows App | 11.3.3 | 11.3.4 |
-| Canva | 1.121.0 | 1.122.0 |
-| ChatGPT | 1.2026.049 | 1.2026.051 |
-| Santa | 2026.2 | 2026.3 |
-| Zed | 0.231.1 | 0.231.2 |
-| Microsoft Edge | 146.0.3856.97 | 147.0.3912.60 |
-| calibre | 9.6.0 | 9.7.0 |
-| BoltAI 2 | 2.9.0 | 2.9.1 |
-| Apidog | 2.8.23 | 2.8.24 |
-| Badgeify | 1.13.0 | 1.13.1 |
-| Dataflare | 2.9.4 | 2.9.5 |
-| Hoppscotch | 26.3.0-0 | 26.3.1-0 |
+| LM Studio | 0.4.10 | 0.4.11 |
+| Biscuit | 1.2.38 | 1.2.39 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| GoodSync | 12.9.27 | 12.9.28 |
-| Granola | 7.99.1 | 7.128.0 |
-| Lunar | 6.9.10 | 6.10.0 |
+| DevKnife | 1.12.0 | 1.12.1 |
+| Lunar | 6.10.0 | 6.10.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| TickTick | 8.0.30 | 8.0.40 |
-| Zotero | 8.0.5 | 9.0 |
-| Claude Code | 2.1.89 | 2.1.91 |
-| ChatGPT Atlas | 1.2026.63.11 | 1.2026.84.2 |
-| NordVPN | 10.0.1 | 10.0.3 |
-| eM Client | 10.4.5298 | 10.4.5326 |
-| Adobe Acrobat Reader | 26.001.21367 | 26.001.21411 |
-| Adobe Acrobat Pro DC | 26.001.21367 | 26.001.21411 |
+| ExpressVPN | 14.0.0.12844 | 14.0.1.12858 |
+| Radio Silence | 3.3 | 3.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
