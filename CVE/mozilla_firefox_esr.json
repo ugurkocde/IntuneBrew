@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox Esr",
   "app_key": "mozilla_firefox_esr",
-  "last_updated": "2026-04-12",
+  "last_updated": "2026-04-13",
   "total_cves": 3095,
   "summary": {
     "critical": 385,
