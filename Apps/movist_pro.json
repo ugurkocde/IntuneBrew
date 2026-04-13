@@ -1,12 +1,12 @@
 {
   "name": "Movist Pro",
   "description": "Media player",
-  "version": "2.15",
-  "url": "https://s3.ap-northeast-2.amazonaws.com/update.cocoable.com/MovistPro_2.15.dmg",
+  "version": "2.15.1",
+  "url": "https://s3.ap-northeast-2.amazonaws.com/update.cocoable.com/MovistPro_2.15.1.dmg",
   "bundleId": "com.movist.MovistPro",
   "homepage": "https://movistprime.com/",
-  "fileName": "MovistPro_2.15.dmg",
-  "sha": "2a856e0bd99d56e16de3b78fdb9b859e67edb0953a96654ab32dc936a064a373",
+  "fileName": "MovistPro_2.15.1.dmg",
+  "sha": "46ea30935bed4f6160dea5635f032b5ac040759c3aac2c45cab0545d0e207a2c",
   "category": "Media",
   "publisher": "Movist Prime",
   "previous_version": "2.15"

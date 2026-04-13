@@ -1,14 +1,14 @@
 {
   "name": "OpenRCT2",
   "description": "Open-source re-implementation of RollerCoaster Tycoon 2",
-  "version": "0.4.32",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/openrct2_0.4.32.pkg",
+  "version": "0.5.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/openrct2_0.5.0.pkg",
   "bundleId": "io.openrct2.OpenRCT2",
   "homepage": "https://openrct2.io/",
-  "fileName": "openrct2_0.4.32.pkg",
+  "fileName": "openrct2_0.5.0.pkg",
   "type": "app",
-  "sha": "5791e577737225c43fd3d1127ffe04b7c5c409958d36d3626a38dd931c9f749e",
+  "sha": "51c5842395b69e6deb13f9c25c9e8cf569bf1ca5a07dd7500cb32dd453d5d732",
   "category": "Other",
   "publisher": "OpenRCT2 Project",
-  "previous_version": "0.4.32"
+  "previous_version": "0.5.0"
 }
