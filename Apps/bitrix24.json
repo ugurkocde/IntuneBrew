@@ -1,12 +1,12 @@
 {
   "name": "Bitrix24",
   "description": "Business management platform",
-  "version": "21.0.28.90",
+  "version": "22.0.28.91",
   "url": "https://dl.bitrix24.com/b24/bitrix24_desktop_arm.dmg",
   "bundleId": "com.bitrix24.Bitrix24",
   "homepage": "https://www.bitrix24.com/apps/mobile-and-desktop-apps.php#desktop_app",
   "fileName": "bitrix24_desktop_arm.dmg",
-  "sha": "ecff883d21e855a00a21bce8dad56eb7ccc19f9eb23601cc860c3ca6925b3286",
+  "sha": "0ca164ea7426a63173e7ab8dc382726502e80cbf9df52750830ebe5956b39c79",
   "category": "Productivity",
   "publisher": "Bitrix24",
   "previous_version": "21.0.28.90"

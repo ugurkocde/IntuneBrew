@@ -1,12 +1,12 @@
 {
   "name": "Ableton Live Suite",
   "description": "Sound and music editor",
-  "version": "12.3.6",
-  "url": "https://cdn-downloads.ableton.com/channels/12.3.6/ableton_live_suite_12.3.6_universal.dmg",
+  "version": "12.3.7",
+  "url": "https://cdn-downloads.ableton.com/channels/12.3.7/ableton_live_suite_12.3.7_universal.dmg",
   "bundleId": "com.ableton.live",
   "homepage": "https://www.ableton.com/en/live/",
-  "fileName": "ableton_live_suite_12.3.6_universal.dmg",
-  "sha": "de5009a0364d679dd3e41b4ec99e49aa7277a0b556cbc2f753a82c7ffdefb8e6",
+  "fileName": "ableton_live_suite_12.3.7_universal.dmg",
+  "sha": "ccc68df59d16c060d01d5d0e9d9aa3dbb86826212da903bc2b2449210067d4ed",
   "category": "Media",
   "publisher": "Ableton",
   "previous_version": "12.3.6"
