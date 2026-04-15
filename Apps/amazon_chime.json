@@ -3,6 +3,7 @@
   "description": "Communications service",
   "version": "5.23.22488",
   "url": "https://clients.chime.aws/mac-nme/AmazonChime-5.23.22488.dmg",
+  "vendor_url": "https://clients.chime.aws/mac-nme/AmazonChime-5.23.22488.dmg",
   "bundleId": "com.amazon.Amazon-Chime",
   "homepage": "https://chime.aws/",
   "fileName": "AmazonChime-5.23.22488.dmg",

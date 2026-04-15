@@ -3,6 +3,7 @@
   "description": "Note-taking tool for networked thought",
   "version": "0.0.36",
   "url": "https://roam-electron-deploy.s3.amazonaws.com/Roam+Research-0.0.36-arm64.dmg",
+  "vendor_url": "https://roam-electron-deploy.s3.amazonaws.com/Roam+Research-0.0.36-arm64.dmg",
   "bundleId": "com.roam-research.desktop-app",
   "homepage": "https://roamresearch.com/",
   "fileName": "Roam+Research-0.0.36-arm64.dmg",

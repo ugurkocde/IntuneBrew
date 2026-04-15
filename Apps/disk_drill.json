@@ -3,6 +3,7 @@
   "description": "Data recovery software",
   "version": "6.2.2219",
   "url": "https://dl.cleverfiles.com/diskdrill.dmg",
+  "vendor_url": "https://dl.cleverfiles.com/diskdrill.dmg",
   "bundleId": "com.cleverfiles.DiskDrill",
   "homepage": "https://www.cleverfiles.com/",
   "fileName": "diskdrill.dmg",

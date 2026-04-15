@@ -3,6 +3,7 @@
   "description": "Note-taking tool for visual learning",
   "version": "1.90.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/hepta_1.90.4.pkg",
+  "vendor_url": "https://github.com/heptameta/project-meta/releases/download/v1.90.4/Heptabase-1.90.4-arm64-mac.zip",
   "bundleId": "app.hepta.desktop",
   "homepage": "https://heptabase.com/",
   "fileName": "hepta_1.90.4.pkg",

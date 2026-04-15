@@ -3,6 +3,7 @@
   "description": "App for managing battery charging. (Also installs a CLI on first use.)",
   "version": "1.4.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/battery_1.4.0.pkg",
+  "vendor_url": "https://github.com/actuallymentor/battery/releases/download/v1.4.0/battery-1.4.0-mac-arm64.zip",
   "bundleId": "cn.better365.Battery",
   "homepage": "https://github.com/actuallymentor/battery/",
   "fileName": "battery_1.4.0.pkg",

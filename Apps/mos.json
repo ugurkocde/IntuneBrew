@@ -3,6 +3,7 @@
   "description": "Smooths scrolling and set mouse scroll directions independently",
   "version": "4.0.2",
   "url": "https://github.com/Caldis/Mos/releases/download/4.0.2/Mos.Versions.4.0.2-20260308.2.zip",
+  "vendor_url": "https://github.com/Caldis/Mos/releases/download/4.0.2/Mos.Versions.4.0.2-20260308.2.zip",
   "bundleId": "com.caldis.Mos",
   "homepage": "https://mos.caldis.me/",
   "fileName": "Mos.Versions.4.0.2-20260308.2.zip",

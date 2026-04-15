@@ -3,6 +3,7 @@
   "description": "Opensource IDE for exploring and testing api's",
   "version": "3.2.2",
   "url": "https://github.com/usebruno/bruno/releases/download/v3.2.2/bruno_3.2.2_arm64_mac.dmg",
+  "vendor_url": "https://github.com/usebruno/bruno/releases/download/v3.2.2/bruno_3.2.2_arm64_mac.dmg",
   "bundleId": "com.usebruno.app",
   "homepage": "https://www.usebruno.com/",
   "fileName": "bruno_3.2.2_arm64_mac.dmg",

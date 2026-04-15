@@ -3,6 +3,7 @@
   "description": "Swedish personal electronic identification (eID) system",
   "version": "7.16.0",
   "url": "https://cdn.bankid.com/bisp/mac/BankID_installation_7_16_0.pkg",
+  "vendor_url": "https://cdn.bankid.com/bisp/mac/BankID_installation_7_16_0.pkg",
   "bundleId": "com.bankid.BankID",
   "homepage": "https://install.bankid.com/",
   "fileName": "BankID_installation_7_16_0.pkg",

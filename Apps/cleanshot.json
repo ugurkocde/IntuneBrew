@@ -3,6 +3,7 @@
   "description": "Screen capturing tool",
   "version": "4.8.8",
   "url": "https://updates.getcleanshot.com/v3/CleanShot-X-4.8.8.dmg",
+  "vendor_url": "https://updates.getcleanshot.com/v3/CleanShot-X-4.8.8.dmg",
   "bundleId": "pl.maketheweb.cleanshotx",
   "homepage": "https://getcleanshot.com/",
   "fileName": "CleanShot-X-4.8.8.dmg",

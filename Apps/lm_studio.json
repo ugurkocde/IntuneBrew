@@ -3,6 +3,7 @@
   "description": "Discover, download, and run local LLMs",
   "version": "0.4.11",
   "url": "https://installers.lmstudio.ai/darwin/arm64/0.4.11-1/LM-Studio-0.4.11-1-arm64.dmg",
+  "vendor_url": "https://installers.lmstudio.ai/darwin/arm64/0.4.11-1/LM-Studio-0.4.11-1-arm64.dmg",
   "bundleId": "ai.elementlabs.lmstudio",
   "homepage": "https://lmstudio.ai/",
   "fileName": "LM-Studio-0.4.11-1-arm64.dmg",

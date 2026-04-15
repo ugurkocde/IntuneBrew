@@ -3,6 +3,7 @@
   "description": "Video and audio player",
   "version": "8.24",
   "url": "https://cdn.electronic.us/products/elmedia/mac/download/elmediaplayer.dmg",
+  "vendor_url": "https://cdn.electronic.us/products/elmedia/mac/download/elmediaplayer.dmg",
   "bundleId": "com.Eltima.ElmediaPlayer.LSSharedFileList",
   "homepage": "https://www.electronic.us/products/elmedia/",
   "fileName": "elmediaplayer.dmg",

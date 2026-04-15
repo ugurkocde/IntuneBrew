@@ -3,6 +3,7 @@
   "description": "Note-taking and organisation tool",
   "version": "32.0.4",
   "url": "https://www.zengobi.com/downloads/Curio32041.dmg",
+  "vendor_url": "https://www.zengobi.com/downloads/Curio32041.dmg",
   "bundleId": "com.zengobi.curio",
   "homepage": "https://zengobi.com/curio/",
   "fileName": "Curio32041.dmg",

@@ -3,6 +3,7 @@
   "description": "XML editor",
   "version": "1.11.11",
   "url": "https://xmplifyapp.com/releases/Xmplify-1.11.11.dmg",
+  "vendor_url": "https://xmplifyapp.com/releases/Xmplify-1.11.11.dmg",
   "bundleId": "au.com.moso.Xmplify",
   "homepage": "https://xmplifyapp.com/",
   "fileName": "Xmplify-1.11.11.dmg",

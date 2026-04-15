@@ -3,6 +3,7 @@
   "description": "Peer to peer Bitorrent client",
   "version": "5.0.5",
   "url": "https://downloads.sourceforge.net/qbittorrent/qbittorrent-mac/qbittorrent-5.0.5/qbittorrent-5.0.5.dmg",
+  "vendor_url": "https://downloads.sourceforge.net/qbittorrent/qbittorrent-mac/qbittorrent-5.0.5/qbittorrent-5.0.5.dmg",
   "bundleId": "org.qbittorrent.qBittorrent",
   "homepage": "https://www.qbittorrent.org/",
   "fileName": "qbittorrent-5.0.5.dmg",

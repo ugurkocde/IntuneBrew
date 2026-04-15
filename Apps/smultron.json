@@ -3,6 +3,7 @@
   "description": "General-purpose text editor",
   "version": "14.4.8",
   "url": "https://intunebrew.blob.core.windows.net/pkg/smultron_14.4.8.pkg",
+  "vendor_url": "https://www.peterborgapps.com/downloads/Smultron14.zip",
   "bundleId": "com.peterborgapps.Smultron12",
   "homepage": "https://www.peterborgapps.com/smultron/",
   "fileName": "smultron_14.4.8.pkg",

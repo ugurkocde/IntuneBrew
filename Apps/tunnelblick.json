@@ -3,6 +3,7 @@
   "description": "Free and open-source OpenVPN client",
   "version": "8.0.1",
   "url": "https://tunnelblick.net/iprelease/Tunnelblick_8.0.1_build_6301.dmg",
+  "vendor_url": "https://tunnelblick.net/iprelease/Tunnelblick_8.0.1_build_6301.dmg",
   "bundleId": "net.tunnelblick.tunnelblick",
   "homepage": "https://www.tunnelblick.net/",
   "fileName": "Tunnelblick_8.0.1_build_6301.dmg",

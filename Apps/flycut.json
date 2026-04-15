@@ -3,6 +3,7 @@
   "description": "Clipboard manager for developers",
   "version": "1.9.6",
   "url": "https://intunebrew.blob.core.windows.net/pkg/flycut_1.9.6.pkg",
+  "vendor_url": "https://github.com/TermiT/Flycut/releases/download/1.9.6/Flycut.1.9.6.zip",
   "bundleId": "com.generalarcade.flycut",
   "homepage": "https://github.com/TermiT/Flycut",
   "fileName": "flycut_1.9.6.pkg",

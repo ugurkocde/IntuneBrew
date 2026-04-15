@@ -3,6 +3,7 @@
   "description": "Free and open-source media player",
   "version": "1.4.1",
   "url": "https://dl-portal.iina.io/IINA.v1.4.1.dmg",
+  "vendor_url": "https://dl-portal.iina.io/IINA.v1.4.1.dmg",
   "bundleId": "com.colliderli.iina",
   "homepage": "https://iina.io/",
   "fileName": "IINA.v1.4.1.dmg",

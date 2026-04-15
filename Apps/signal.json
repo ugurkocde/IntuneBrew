@@ -3,6 +3,7 @@
   "description": "Instant messaging application focusing on security",
   "version": "8.6.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/signal_8.6.1.pkg",
+  "vendor_url": "https://updates.signal.org/desktop/signal-desktop-mac-arm64-8.6.1.zip",
   "bundleId": "org.whispersystems.signal-desktop",
   "homepage": "https://signal.org/",
   "fileName": "signal_8.6.1.pkg",

@@ -3,6 +3,7 @@
   "description": "Full TeX Live distribution with GUI applications",
   "version": "2026.0324",
   "url": "https://mirror.ctan.org/systems/mac/mactex/mactex-20260324.pkg",
+  "vendor_url": "https://mirror.ctan.org/systems/mac/mactex/mactex-20260324.pkg",
   "bundleId": "org.tug.mactex.gui2024",
   "homepage": "https://www.tug.org/mactex/",
   "fileName": "mactex-20260324.pkg",

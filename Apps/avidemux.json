@@ -3,6 +3,7 @@
   "description": "Video editor",
   "version": "2.8.1",
   "url": "https://downloads.sourceforge.net/avidemux/avidemux/2.8.1/Avidemux_2.8.1v2_Monterey_Qt6.dmg",
+  "vendor_url": "https://downloads.sourceforge.net/avidemux/avidemux/2.8.1/Avidemux_2.8.1v2_Monterey_Qt6.dmg",
   "bundleId": "Avidemux.org",
   "homepage": "https://www.avidemux.org/",
   "fileName": "Avidemux_2.8.1v2_Monterey_Qt6.dmg",

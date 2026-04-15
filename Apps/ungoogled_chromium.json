@@ -3,6 +3,7 @@
   "description": "Google Chromium, sans integration with Google",
   "version": "146.0.7680.177-1.1",
   "url": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/146.0.7680.177-1.1/ungoogled-chromium_146.0.7680.177-1.1_arm64-macos.dmg",
+  "vendor_url": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/146.0.7680.177-1.1/ungoogled-chromium_146.0.7680.177-1.1_arm64-macos.dmg",
   "bundleId": "org.chromium.Chromium",
   "homepage": "https://ungoogled-software.github.io/",
   "fileName": "ungoogled-chromium_146.0.7680.177-1.1_arm64-macos.dmg",

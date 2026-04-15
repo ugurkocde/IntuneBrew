@@ -3,6 +3,7 @@
   "description": "Virtualiser for x86 hardware",
   "version": "7.2.6",
   "url": "https://download.virtualbox.org/virtualbox/7.2.6/VirtualBox-7.2.6-172322-macOSArm64.dmg",
+  "vendor_url": "https://download.virtualbox.org/virtualbox/7.2.6/VirtualBox-7.2.6-172322-macOSArm64.dmg",
   "bundleId": "org.virtualbox.app.VirtualBox",
   "homepage": "https://www.virtualbox.org/",
   "fileName": "VirtualBox-7.2.6-172322-macOSArm64.dmg",

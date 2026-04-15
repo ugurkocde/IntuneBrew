@@ -3,6 +3,7 @@
   "description": "Tool to flash OS images to SD cards & USB drives",
   "version": "2.1.4",
   "url": "https://github.com/balena-io/etcher/releases/download/v2.1.4/balenaEtcher-2.1.4-arm64.dmg",
+  "vendor_url": "https://github.com/balena-io/etcher/releases/download/v2.1.4/balenaEtcher-2.1.4-arm64.dmg",
   "bundleId": "io.balena.etcher",
   "homepage": "https://balena.io/etcher",
   "fileName": "balenaEtcher-2.1.4-arm64.dmg",

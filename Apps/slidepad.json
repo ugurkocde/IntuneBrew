@@ -3,6 +3,7 @@
   "description": "Slide over browser",
   "version": "1.6.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/slidepad_1.6.2.pkg",
+  "vendor_url": "https://f002.backblazeb2.com/file/Slidepad/Slidepad_1_6_2.zip",
   "bundleId": "com.slidepad.slidepad",
   "homepage": "https://slidepad.app/",
   "fileName": "slidepad_1.6.2.pkg",

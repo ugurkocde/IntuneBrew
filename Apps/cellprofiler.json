@@ -3,6 +3,7 @@
   "description": "Open-source application for biological image analysis",
   "version": "4.2.8",
   "url": "https://intunebrew.blob.core.windows.net/pkg/cellprofiler_4.2.8.pkg",
+  "vendor_url": "https://github.com/CellProfiler/CellProfiler/releases/download/v4.2.8/CellProfiler-macOS-4.2.8.zip",
   "bundleId": "org.cellprofiler.CellProfiler",
   "homepage": "https://cellprofiler.org/",
   "fileName": "cellprofiler_4.2.8.pkg",

@@ -3,6 +3,7 @@
   "description": "Desktop client for Ente Photos",
   "version": "1.7.22",
   "url": "https://github.com/ente-io/photos-desktop/releases/download/v1.7.22/ente-1.7.22-universal.dmg",
+  "vendor_url": "https://github.com/ente-io/photos-desktop/releases/download/v1.7.22/ente-1.7.22-universal.dmg",
   "bundleId": "io.ente.bhari-frame",
   "homepage": "https://ente.io/",
   "fileName": "ente-1.7.22-universal.dmg",

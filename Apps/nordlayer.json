@@ -3,6 +3,7 @@
   "description": "Security software for business",
   "version": "3.9.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/nordlayer_3.9.1.pkg",
+  "vendor_url": "https://downloads.nordlayer.com/mac/latest/NordLayer_v3.9.1.pkg",
   "bundleId": "com.nordvpn.macos.teams",
   "homepage": "https://nordlayer.com/",
   "fileName": "nordlayer_3.9.1.pkg",

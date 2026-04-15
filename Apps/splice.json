@@ -3,6 +3,7 @@
   "description": "Cloud-based music creation and collaboration platform",
   "version": "5.4.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/splice_5.4.9.pkg",
+  "vendor_url": "https://desktop.splice.com/conveyor/stable/splice-5.4.9-mac-aarch64.zip",
   "bundleId": "com.splice.Splice",
   "homepage": "https://splice.com/",
   "fileName": "splice_5.4.9.pkg",

@@ -3,6 +3,7 @@
   "description": "Bitcoin thin client",
   "version": "4.7.2",
   "url": "https://download.electrum.org/4.7.2/electrum-4.7.2.dmg",
+  "vendor_url": "https://download.electrum.org/4.7.2/electrum-4.7.2.dmg",
   "bundleId": "org.electrum.electrum",
   "homepage": "https://electrum.org/",
   "fileName": "electrum-4.7.2.dmg",

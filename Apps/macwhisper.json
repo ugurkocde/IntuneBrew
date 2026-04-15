@@ -3,6 +3,7 @@
   "description": "Speech recognition tool",
   "version": "13.19.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/macwhisper_13.19.1.pkg",
+  "vendor_url": "https://cdn.macwhisper.com/macwhisper/MacWhisper-1407.zip",
   "bundleId": "com.goodsnooze.MacWhisper",
   "homepage": "https://goodsnooze.gumroad.com/l/macwhisper",
   "fileName": "macwhisper_13.19.1.pkg",

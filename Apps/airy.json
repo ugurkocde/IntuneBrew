@@ -3,6 +3,7 @@
   "description": "YouTube video and MP3 downloader",
   "version": "3.29.2",
   "url": "https://cdn.airy-youtube-downloader.com/products/airy/mac/download/airy.dmg",
+  "vendor_url": "https://cdn.airy-youtube-downloader.com/products/airy/mac/download/airy.dmg",
   "bundleId": "com.eltima.Airy",
   "homepage": "https://www.airy-youtube-downloader.com/mac/",
   "fileName": "airy.dmg",

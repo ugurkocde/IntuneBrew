@@ -3,6 +3,7 @@
   "description": "Tool to disable temporal dithering on Apple Silicon Macs",
   "version": "1.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/stillcolor_1.1.pkg",
+  "vendor_url": "https://github.com/aiaf/Stillcolor/releases/download/v1.1/Stillcolor-v1.1.zip",
   "bundleId": "com.nicola.StillColor",
   "homepage": "https://github.com/aiaf/Stillcolor",
   "fileName": "stillcolor_1.1.pkg",

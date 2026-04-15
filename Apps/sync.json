@@ -3,6 +3,7 @@
   "description": "Store, share and access files from anywhere",
   "version": "2.2.57",
   "url": "https://www10.sync.com/download/apple/Sync-2.2.57.dmg",
+  "vendor_url": "https://www10.sync.com/download/apple/Sync-2.2.57.dmg",
   "bundleId": "com.sync.desktop",
   "homepage": "https://www.sync.com/",
   "fileName": "Sync-2.2.57.dmg",

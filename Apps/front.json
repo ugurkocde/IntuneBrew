@@ -3,6 +3,7 @@
   "description": "Customer communication platform",
   "version": "3.71.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/front_3.71.1.pkg",
+  "vendor_url": "https://dl.frontapp.com/desktop/builds/3.71.1/Front-3.71.1-arm64.zip",
   "bundleId": "com.frontapp.Front",
   "homepage": "https://front.com/",
   "fileName": "front_3.71.1.pkg",

@@ -3,6 +3,7 @@
   "description": "Icon manager and library",
   "version": "4.2.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/nucleo_4.2.0.pkg",
+  "vendor_url": "https://downloads.nucleoapp.com/mac-silicon/Nucleo_4.2.0.zip",
   "bundleId": "co.ambercreative.nucleo",
   "homepage": "https://nucleoapp.com/",
   "fileName": "nucleo_4.2.0.pkg",

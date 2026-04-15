@@ -3,6 +3,7 @@
   "description": "AI-powered meeting notes",
   "version": "5.6.38",
   "url": "https://github.com/meetjamie/releases/releases/download/app-v5.6.38/Jamie_universal.app.tar.gz",
+  "vendor_url": "https://github.com/meetjamie/releases/releases/download/app-v5.6.38/Jamie_universal.app.tar.gz",
   "bundleId": "ai.meetjamie.app",
   "homepage": "https://meetjamie.ai/",
   "fileName": "Jamie_universal.app.tar.gz",

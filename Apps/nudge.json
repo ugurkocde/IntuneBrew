@@ -3,6 +3,7 @@
   "description": "Application for enforcing OS updates",
   "version": "2.1.2.81856",
   "url": "https://intunebrew.blob.core.windows.net/pkg/nudge_2.1.2.81856.pkg",
+  "vendor_url": "https://github.com/macadmins/nudge/releases/download/v2.1.2.81856/Nudge-2.1.2.81856.pkg",
   "bundleId": "com.github.macadmins.Nudge",
   "homepage": "https://github.com/macadmins/nudge",
   "fileName": "nudge_2.1.2.81856.pkg",

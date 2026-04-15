@@ -3,6 +3,7 @@
   "description": "RØDE companion app",
   "version": "2.0.111",
   "url": "https://intunebrew.blob.core.windows.net/pkg/rode_central_2.0.111.pkg",
+  "vendor_url": "https://update.rode.com/central/RODE_Central_MACOS.zip",
   "bundleId": "com.rodecentral.installer",
   "homepage": "https://rode.com/en/apps/rode-central",
   "fileName": "rode_central_2.0.111.pkg",

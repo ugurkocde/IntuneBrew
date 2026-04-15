@@ -3,6 +3,7 @@
   "description": "Protects credentials and syncs configurations",
   "version": "1.5.10",
   "url": "https://intunebrew.blob.core.windows.net/pkg/envkey_1.5.10.pkg",
+  "vendor_url": "https://github.com/envkey/envkey-app/releases/download/darwin-x64-prod-v1.5.10/EnvKey-1.5.10-mac.zip",
   "bundleId": "com.envkey.EnvKeyApp",
   "homepage": "https://www.envkey.com/",
   "fileName": "envkey_1.5.10.pkg",

@@ -3,6 +3,7 @@
   "description": "Colour picker and colour palette generator",
   "version": "8.1.5",
   "url": "https://sweetpproductions.com/products/colorwell/ColorWell.dmg",
+  "vendor_url": "https://sweetpproductions.com/products/colorwell/ColorWell.dmg",
   "bundleId": "com.sweetpproductions.ColorWell",
   "homepage": "https://colorwell.sweetpproductions.com/",
   "fileName": "ColorWell.dmg",

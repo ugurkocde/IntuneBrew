@@ -3,6 +3,7 @@
   "description": "Cloud storage client",
   "version": "26.040.0301.0001",
   "url": "https://oneclient.sfx.ms/Mac/Installers/26.040.0301.0001/universal/OneDrive.pkg",
+  "vendor_url": "https://oneclient.sfx.ms/Mac/Installers/26.040.0301.0001/universal/OneDrive.pkg",
   "bundleId": "com.microsoft.OneDrive",
   "homepage": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
   "fileName": "OneDrive.pkg",

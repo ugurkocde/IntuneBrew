@@ -3,6 +3,7 @@
   "description": "Write, edit, and chat about your code with AI",
   "version": "3.1.14",
   "url": "https://intunebrew.blob.core.windows.net/pkg/cursor_3.1.14.pkg",
+  "vendor_url": "https://downloads.cursor.com/production/d8673fb56ba50fda33ad78382000b519bb8acb7e/darwin/arm64/Cursor-darwin-arm64.zip",
   "bundleId": "com.todesktop.230313mzl4w4u92",
   "homepage": "https://www.cursor.com/",
   "fileName": "cursor_3.1.14.pkg",

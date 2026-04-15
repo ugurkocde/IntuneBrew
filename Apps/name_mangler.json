@@ -3,6 +3,7 @@
   "description": "Multi-file renaming tool",
   "version": "3.9.3",
   "url": "https://manytricks.com/download/_do_not_hotlink_/namemangler393.dmg",
+  "vendor_url": "https://manytricks.com/download/_do_not_hotlink_/namemangler393.dmg",
   "bundleId": "com.manytricks.NameMangler",
   "homepage": "https://manytricks.com/namemangler/",
   "fileName": "namemangler393.dmg",

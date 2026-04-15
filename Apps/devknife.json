@@ -3,6 +3,7 @@
   "description": "Collection of handy developer tools",
   "version": "1.12.1",
   "url": "https://files.solotuna.com/devknife/DevKnife-1.12.1.dmg",
+  "vendor_url": "https://files.solotuna.com/devknife/DevKnife-1.12.1.dmg",
   "bundleId": "com.solotuna.devknife",
   "homepage": "https://devknife.app/",
   "fileName": "DevKnife-1.12.1.dmg",

@@ -3,6 +3,7 @@
   "description": "Xcode extension for GitHub Copilot",
   "version": "0.47.0",
   "url": "https://githubcopilotide.z13.web.core.windows.net/0.47.0/GitHubCopilotForXcode.dmg",
+  "vendor_url": "https://githubcopilotide.z13.web.core.windows.net/0.47.0/GitHubCopilotForXcode.dmg",
   "bundleId": "com.github.CopilotForXcode",
   "homepage": "https://github.com/github/CopilotForXcode",
   "fileName": "GitHubCopilotForXcode.dmg",

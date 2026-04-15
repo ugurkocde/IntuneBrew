@@ -3,6 +3,7 @@
   "description": "Web browser",
   "version": "149.0.2",
   "url": "https://codeberg.org/api/packages/librewolf/generic/librewolf/149.0.2-2/librewolf-149.0.2-2-macos-arm64-package.dmg",
+  "vendor_url": "https://codeberg.org/api/packages/librewolf/generic/librewolf/149.0.2-2/librewolf-149.0.2-2-macos-arm64-package.dmg",
   "bundleId": "org.mozilla.librewolf",
   "homepage": "https://librewolf.net/",
   "fileName": "librewolf-149.0.2-2-macos-arm64-package.dmg",

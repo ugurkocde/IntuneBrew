@@ -3,6 +3,7 @@
   "description": "Virtual machines UI using QEMU",
   "version": "4.7.5",
   "url": "https://github.com/utmapp/UTM/releases/download/v4.7.5/UTM.dmg",
+  "vendor_url": "https://github.com/utmapp/UTM/releases/download/v4.7.5/UTM.dmg",
   "bundleId": "com.utmapp.UTM",
   "homepage": "https://mac.getutm.app/",
   "fileName": "UTM.dmg",

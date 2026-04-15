@@ -3,6 +3,7 @@
   "description": "Group chat platform",
   "version": "1.0.9329126",
   "url": "https://www.guilded.gg/AppBuilds/mac/Guilded-1.0.9329126-release.dmg",
+  "vendor_url": "https://www.guilded.gg/AppBuilds/mac/Guilded-1.0.9329126-release.dmg",
   "bundleId": "com.electron.guilded",
   "homepage": "https://www.guilded.gg/",
   "fileName": "Guilded-1.0.9329126-release.dmg",

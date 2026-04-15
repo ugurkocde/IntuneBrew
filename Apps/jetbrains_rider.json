@@ -3,6 +3,7 @@
   "description": ".NET IDE",
   "version": "2026.1.0.1",
   "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2026.1.0.1-aarch64.dmg",
+  "vendor_url": "https://download.jetbrains.com/rider/JetBrains.Rider-2026.1.0.1-aarch64.dmg",
   "bundleId": "com.jetbrains.rider",
   "homepage": "https://www.jetbrains.com/rider/",
   "fileName": "JetBrains.Rider-2026.1.0.1-aarch64.dmg",

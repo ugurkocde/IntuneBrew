@@ -3,6 +3,7 @@
   "description": "Document scanning application",
   "version": "8.2.1",
   "url": "https://github.com/cyanfish/naps2/releases/download/v8.2.1/naps2-8.2.1-mac-arm64.pkg",
+  "vendor_url": "https://github.com/cyanfish/naps2/releases/download/v8.2.1/naps2-8.2.1-mac-arm64.pkg",
   "bundleId": "com.naps2.desktop",
   "homepage": "https://www.naps2.com/",
   "fileName": "naps2-8.2.1-mac-arm64.pkg",

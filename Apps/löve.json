@@ -3,6 +3,7 @@
   "description": "2D game framework for Lua",
   "version": "11.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/löve_11.5.pkg",
+  "vendor_url": "https://github.com/love2d/love/releases/download/11.5/love-11.5-macos.zip",
   "bundleId": "org.love2d.love",
   "homepage": "https://love2d.org/",
   "fileName": "löve_11.5.pkg",

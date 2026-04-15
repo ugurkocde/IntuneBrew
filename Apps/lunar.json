@@ -3,6 +3,7 @@
   "description": "Adaptive brightness for external displays",
   "version": "6.10.1",
   "url": "https://files.lunar.fyi/releases/Lunar-6.10.1.dmg",
+  "vendor_url": "https://files.lunar.fyi/releases/Lunar-6.10.1.dmg",
   "bundleId": "fyi.lunar.Lunar",
   "homepage": "https://lunar.fyi/",
   "fileName": "Lunar-6.10.1.dmg",

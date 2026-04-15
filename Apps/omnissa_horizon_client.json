@@ -3,6 +3,7 @@
   "description": "Virtual machine client",
   "version": "2506-8.16.0-16536825094",
   "url": "https://download3.omnissa.com/software/CART26FQ2_MAC_2506/Omnissa-Horizon-Client-2506-8.16.0-16536825094.dmg",
+  "vendor_url": "https://download3.omnissa.com/software/CART26FQ2_MAC_2506/Omnissa-Horizon-Client-2506-8.16.0-16536825094.dmg",
   "bundleId": "com.omnissa.horizonapp",
   "homepage": "https://www.omnissa.com/",
   "fileName": "Omnissa-Horizon-Client-2506-8.16.0-16536825094.dmg",

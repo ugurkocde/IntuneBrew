@@ -3,6 +3,7 @@
   "description": "Send any size file between devices",
   "version": "1.1.15",
   "url": "https://intunebrew.blob.core.windows.net/pkg/blip_1.1.15.pkg",
+  "vendor_url": "https://f000.backblazeb2.com/file/push-mac/Blip-20260112093151.zip",
   "bundleId": "net.blip.macos",
   "homepage": "https://blip.net/",
   "fileName": "blip_1.1.15.pkg",

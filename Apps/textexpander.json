@@ -3,6 +3,7 @@
   "description": "Inserts pre-made snippets of text anywhere",
   "version": "8.4.2",
   "url": "https://cdn.textexpander.com/mac/842.9/TextExpander_8.4.2.dmg",
+  "vendor_url": "https://cdn.textexpander.com/mac/842.9/TextExpander_8.4.2.dmg",
   "bundleId": "com.smileonmymac.textexpander",
   "homepage": "https://textexpander.com/",
   "fileName": "TextExpander_8.4.2.dmg",

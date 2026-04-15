@@ -3,6 +3,7 @@
   "description": "GameStream client",
   "version": "6.1.0",
   "url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/Moonlight-6.1.0.dmg",
+  "vendor_url": "https://github.com/moonlight-stream/moonlight-qt/releases/download/v6.1.0/Moonlight-6.1.0.dmg",
   "bundleId": "com.moonlight-stream.Moonlight",
   "homepage": "https://moonlight-stream.org/",
   "fileName": "Moonlight-6.1.0.dmg",

@@ -3,6 +3,7 @@
   "description": "Elgato FACECAM configuration tool",
   "version": "2.2.1.6945",
   "url": "https://edge.elgato.com/egc/macos/echm/2.2.1/CameraHub_2.2.1.6945.pkg",
+  "vendor_url": "https://edge.elgato.com/egc/macos/echm/2.2.1/CameraHub_2.2.1.6945.pkg",
   "bundleId": "com.elgato.CameraHub",
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
   "fileName": "CameraHub_2.2.1.6945.pkg",

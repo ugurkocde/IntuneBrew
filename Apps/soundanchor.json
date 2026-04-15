@@ -3,6 +3,7 @@
   "description": "Audio device utility",
   "version": "1.6.2",
   "url": "https://cdn.kopiro.me/soundanchor/soundanchor-1.6.2.dmg",
+  "vendor_url": "https://cdn.kopiro.me/soundanchor/soundanchor-1.6.2.dmg",
   "bundleId": "com.nicola.SoundAnchor",
   "homepage": "https://apps.kopiro.me/soundanchor/",
   "fileName": "soundanchor-1.6.2.dmg",

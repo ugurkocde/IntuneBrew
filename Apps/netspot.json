@@ -3,6 +3,7 @@
   "description": "WiFi site survey software and WiFi scanner",
   "version": "5.1.4971",
   "url": "https://cdn.netspotapp.com/download/NetSpot.dmg",
+  "vendor_url": "https://cdn.netspotapp.com/download/NetSpot.dmg",
   "bundleId": "com.etwok.netspotwifi",
   "homepage": "https://www.netspotapp.com/",
   "fileName": "NetSpot.dmg",

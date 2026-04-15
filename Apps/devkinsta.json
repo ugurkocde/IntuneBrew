@@ -3,6 +3,7 @@
   "description": "Local WordPress Development Suite by Kinsta",
   "version": "2.13.6",
   "url": "https://intunebrew.blob.core.windows.net/pkg/devkinsta_2.13.6.pkg",
+  "vendor_url": "https://devkinsta-updates.s3.amazonaws.com/DevKinsta-2.13.6-arm64.zip",
   "bundleId": "org.kinsta.DevKinsta",
   "homepage": "https://devkinsta.com/",
   "fileName": "devkinsta_2.13.6.pkg",

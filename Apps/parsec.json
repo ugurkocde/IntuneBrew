@@ -3,6 +3,7 @@
   "description": "Remote desktop",
   "version": "150-102b",
   "url": "https://builds.parsec.app/package/parsec-macos.pkg",
+  "vendor_url": "https://builds.parsec.app/package/parsec-macos.pkg",
   "bundleId": "tv.parsec.www",
   "homepage": "https://parsec.app/",
   "fileName": "parsec-macos.pkg",

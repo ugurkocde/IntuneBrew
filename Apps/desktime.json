@@ -3,6 +3,7 @@
   "description": "Time tracker with additional workforce management features",
   "version": "6.1.4",
   "url": "https://desktime.com/storage/updates/electro-builder-auto-updater/stable/DeskTime-6.1.4-arm64.dmg",
+  "vendor_url": "https://desktime.com/storage/updates/electro-builder-auto-updater/stable/DeskTime-6.1.4-arm64.dmg",
   "bundleId": "com.desktime.DeskTime",
   "homepage": "https://desktime.com/",
   "fileName": "DeskTime-6.1.4-arm64.dmg",

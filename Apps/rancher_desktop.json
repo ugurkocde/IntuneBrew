@@ -3,6 +3,7 @@
   "description": "Kubernetes and container management on the desktop",
   "version": "1.22.0",
   "url": "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.22.0/Rancher.Desktop-1.22.0.aarch64.dmg",
+  "vendor_url": "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.22.0/Rancher.Desktop-1.22.0.aarch64.dmg",
   "bundleId": "io.rancherdesktop.app",
   "homepage": "https://rancherdesktop.io/",
   "fileName": "Rancher.Desktop-1.22.0.aarch64.dmg",

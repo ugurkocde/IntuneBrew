@@ -3,6 +3,7 @@
   "description": "Free cross-platform office suite, fresh version",
   "version": "26.2.2",
   "url": "https://download.documentfoundation.org/libreoffice/stable/26.2.2/mac/aarch64/LibreOffice_26.2.2_MacOS_aarch64.dmg",
+  "vendor_url": "https://download.documentfoundation.org/libreoffice/stable/26.2.2/mac/aarch64/LibreOffice_26.2.2_MacOS_aarch64.dmg",
   "bundleId": "org.libreoffice.script",
   "homepage": "https://www.libreoffice.org/",
   "fileName": "LibreOffice_26.2.2_MacOS_aarch64.dmg",

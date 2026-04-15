@@ -3,6 +3,7 @@
   "description": "Enable Windows-like alt-tab",
   "version": "10.12.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/alttab_10.12.0.pkg",
+  "vendor_url": "https://github.com/lwouis/alt-tab-macos/releases/download/v10.12.0/AltTab-10.12.0.zip",
   "bundleId": "com.lwouis.alt-tab-macos",
   "homepage": "https://alt-tab-macos.netlify.app/",
   "fileName": "alttab_10.12.0.pkg",

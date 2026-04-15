@@ -3,6 +3,7 @@
   "description": "Open-source, cross-platform game engine designed to be used by everyone",
   "version": "5.6.266",
   "url": "https://github.com/4ian/GDevelop/releases/download/v5.6.266/GDevelop-5-5.6.266-universal.dmg",
+  "vendor_url": "https://github.com/4ian/GDevelop/releases/download/v5.6.266/GDevelop-5-5.6.266-universal.dmg",
   "bundleId": "com.gdevelop",
   "homepage": "https://gdevelop.io/",
   "fileName": "GDevelop-5-5.6.266-universal.dmg",

@@ -3,6 +3,7 @@
   "description": "ChatGPT client",
   "version": "1.9.28",
   "url": "https://github.com/MindMacApp/MindMac/releases/download/1.9.28/MindMac_1.9.28.dmg",
+  "vendor_url": "https://github.com/MindMacApp/MindMac/releases/download/1.9.28/MindMac_1.9.28.dmg",
   "bundleId": "app.mindmac.macos",
   "homepage": "https://mindmac.app/",
   "fileName": "MindMac_1.9.28.dmg",

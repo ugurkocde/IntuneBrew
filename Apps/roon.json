@@ -3,6 +3,7 @@
   "description": "Music player",
   "version": "2.64",
   "url": "https://download.roonlabs.net/builds/Roon.dmg",
+  "vendor_url": "https://download.roonlabs.net/builds/Roon.dmg",
   "bundleId": "com.roonlabs.Roon",
   "homepage": "https://roonlabs.com/",
   "fileName": "Roon.dmg",

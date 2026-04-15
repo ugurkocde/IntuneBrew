@@ -3,6 +3,7 @@
   "description": "Open-source DJ software",
   "version": "2.5.6",
   "url": "https://downloads.mixxx.org/releases/2.5.6/mixxx-2.5.6-macosarm.dmg",
+  "vendor_url": "https://downloads.mixxx.org/releases/2.5.6/mixxx-2.5.6-macosarm.dmg",
   "bundleId": "org.mixxx.mixxx",
   "homepage": "https://www.mixxx.org/",
   "fileName": "mixxx-2.5.6-macosarm.dmg",

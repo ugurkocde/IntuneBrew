@@ -3,6 +3,7 @@
   "description": "Support for Logitech G gear",
   "version": "2026.2.861820",
   "url": "https://intunebrew.blob.core.windows.net/pkg/logitech_g_hub_2026.2.861820.pkg",
+  "vendor_url": "https://download01.logi.com/web/ftp/pub/techsupport/gaming/lghub_installer.zip",
   "bundleId": "com.logi.ghub",
   "homepage": "https://www.logitechg.com/en-us/innovation/g-hub.html",
   "fileName": "logitech_g_hub_2026.2.861820.pkg",

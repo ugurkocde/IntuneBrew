@@ -3,6 +3,7 @@
   "description": "Translate words without ever opening a dictionary",
   "version": "2.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/dictionaries_2.9.pkg",
+  "vendor_url": "https://download.dictionaries.io/mac/Dictionaries-2.9.zip",
   "bundleId": "io.dictionaries.Dictionaries",
   "homepage": "https://dictionaries.io/",
   "fileName": "dictionaries_2.9.pkg",

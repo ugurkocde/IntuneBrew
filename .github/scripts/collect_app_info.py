@@ -1421,11 +1421,14 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         # Warp's Homebrew URL returns HTML, use direct DMG URL instead
         url = f"https://releases.warp.dev/stable/v{version}/Warp.dmg"
 
+    vendor_url = url
+
     app_info = {
         "name": data["name"][0],
         "description": data["desc"],
         "version": version,
         "url": url,
+        "vendor_url": vendor_url,
         "bundleId": bundle_id,
         "homepage": data["homepage"],
         "fileName": get_filename_from_url(url, app_name=data["name"][0], version=version)

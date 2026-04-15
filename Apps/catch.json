@@ -3,6 +3,7 @@
   "description": "Broadcatching made easy",
   "version": "2.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/catch_2.3.pkg",
+  "vendor_url": "https://github.com/mipstian/catch/releases/download/2.3/Catch-2.3.zip",
   "bundleId": "org.giorgiocalderolla.Catch",
   "homepage": "https://www.giorgiocalderolla.com/catch.html",
   "fileName": "catch_2.3.pkg",

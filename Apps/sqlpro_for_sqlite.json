@@ -3,6 +3,7 @@
   "description": "Advanced sqlite editor",
   "version": "2025.59",
   "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_for_sqlite_2025.59.pkg",
+  "vendor_url": "https://d3fwkemdw8spx3.cloudfront.net/sqlite/SQLProSQLite.2025.59.app.zip",
   "bundleId": "com.hankinsoft.osx.sqliteprofessional",
   "homepage": "https://www.sqlitepro.com/",
   "fileName": "sqlpro_for_sqlite_2025.59.pkg",

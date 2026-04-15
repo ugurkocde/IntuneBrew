@@ -3,6 +3,7 @@
   "description": "Unofficial desktop client for F1TV",
   "version": "1.43.2",
   "url": "https://releases.multiviewer.app/download/243288028/MultiViewer.for.F1-1.43.2-arm64.dmg",
+  "vendor_url": "https://releases.multiviewer.app/download/243288028/MultiViewer.for.F1-1.43.2-arm64.dmg",
   "bundleId": "com.electron.multiviewer-for-f1",
   "homepage": "https://multiviewer.app/",
   "fileName": "MultiViewer.for.F1-1.43.2-arm64.dmg",

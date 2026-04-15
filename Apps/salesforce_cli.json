@@ -3,6 +3,7 @@
   "description": "CLI tools for Salesforce",
   "version": "2.130.9",
   "url": "https://github.com/salesforcecli/cli/releases/download/2.130.9/sf-v2.130.9-43b21a1-arm64.pkg",
+  "vendor_url": "https://github.com/salesforcecli/cli/releases/download/2.130.9/sf-v2.130.9-43b21a1-arm64.pkg",
   "bundleId": "com.salesforce.cli",
   "homepage": "https://developer.salesforce.com/tools/salesforcecli",
   "fileName": "sf-v2.130.9-43b21a1-arm64.pkg",

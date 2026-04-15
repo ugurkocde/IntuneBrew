@@ -3,6 +3,7 @@
   "description": "Backup and recovery software",
   "version": "11.9.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/crashplan_11.9.1.pkg",
+  "vendor_url": "https://download.crashplan.com/installs/agent/cloud/11.9.1/19/install/CrashPlan_11.9.1_19_Mac.dmg",
   "bundleId": "com.crashplan.desktop",
   "homepage": "https://www.crashplan.com/",
   "fileName": "crashplan_11.9.1.pkg",

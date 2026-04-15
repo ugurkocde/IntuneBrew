@@ -3,6 +3,7 @@
   "description": "Sends audio from computer to outputs",
   "version": "5.12.6",
   "url": "https://intunebrew.blob.core.windows.net/pkg/airfoil_5.12.6.pkg",
+  "vendor_url": "https://cdn.rogueamoeba.com/airfoil/mac/download/Airfoil.zip",
   "bundleId": "com.rogueamoeba.Airfoil",
   "homepage": "https://rogueamoeba.com/airfoil/mac/",
   "fileName": "airfoil_5.12.6.pkg",

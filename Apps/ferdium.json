@@ -3,6 +3,7 @@
   "description": "Multi-platform multi-messaging app",
   "version": "7.1.1",
   "url": "https://github.com/ferdium/ferdium-app/releases/download/v7.1.1/Ferdium-mac-7.1.1-arm64.dmg",
+  "vendor_url": "https://github.com/ferdium/ferdium-app/releases/download/v7.1.1/Ferdium-mac-7.1.1-arm64.dmg",
   "bundleId": "com.ferdium.ferdium-app",
   "homepage": "https://ferdium.org/",
   "fileName": "Ferdium-mac-7.1.1-arm64.dmg",

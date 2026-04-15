@@ -3,6 +3,7 @@
   "description": "Business management platform",
   "version": "22.0.28.91",
   "url": "https://dl.bitrix24.com/b24/bitrix24_desktop_arm.dmg",
+  "vendor_url": "https://dl.bitrix24.com/b24/bitrix24_desktop_arm.dmg",
   "bundleId": "com.bitrix24.Bitrix24",
   "homepage": "https://www.bitrix24.com/apps/mobile-and-desktop-apps.php#desktop_app",
   "fileName": "bitrix24_desktop_arm.dmg",

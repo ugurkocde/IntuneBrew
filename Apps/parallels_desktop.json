@@ -3,6 +3,7 @@
   "description": "Desktop virtualization software",
   "version": "26.3.0-57392",
   "url": "https://download.parallels.com/desktop/v26/26.3.0-57392/ParallelsDesktop-26.3.0-57392.dmg",
+  "vendor_url": "https://download.parallels.com/desktop/v26/26.3.0-57392/ParallelsDesktop-26.3.0-57392.dmg",
   "bundleId": "com.parallels.desktop.console",
   "homepage": "https://www.parallels.com/products/desktop/",
   "fileName": "ParallelsDesktop-26.3.0-57392.dmg",

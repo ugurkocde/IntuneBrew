@@ -3,6 +3,7 @@
   "description": "Menu bar app to picture-in-picture any window",
   "version": "1.2.0",
   "url": "https://github.com/pipheroapp/downloads/releases/download/v1.2.0/PiPHero-1.2.0-mac-arm64.dmg",
+  "vendor_url": "https://github.com/pipheroapp/downloads/releases/download/v1.2.0/PiPHero-1.2.0-mac-arm64.dmg",
   "bundleId": "com.piphero.app",
   "homepage": "https://piphero.app/",
   "fileName": "PiPHero-1.2.0-mac-arm64.dmg",

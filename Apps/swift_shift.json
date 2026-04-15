@@ -3,6 +3,7 @@
   "description": "Window manager",
   "version": "1.0.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/swift_shift_1.0.3.pkg",
+  "vendor_url": "https://github.com/pablopunk/SwiftShift/releases/download/1.0.3/SwiftShift.zip",
   "bundleId": "com.pablopunk.Swift-Shift",
   "homepage": "https://www.swiftshift.app/",
   "fileName": "swift_shift_1.0.3.pkg",

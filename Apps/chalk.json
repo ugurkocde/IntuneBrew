@@ -3,6 +3,7 @@
   "description": "Calculator software",
   "version": "1.7.5",
   "url": "https://pierre.chachatelier.fr/chalk/downloads/Chalk-1_7_5.dmg",
+  "vendor_url": "https://pierre.chachatelier.fr/chalk/downloads/Chalk-1_7_5.dmg",
   "bundleId": "fr.chachatelier.pierre.Chalk",
   "homepage": "https://www.chachatelier.fr/chalk/",
   "fileName": "Chalk-1_7_5.dmg",

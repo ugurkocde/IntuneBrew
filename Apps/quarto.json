@@ -3,6 +3,7 @@
   "description": "Scientific and technical publishing system built on Pandoc",
   "version": "1.9.37",
   "url": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.37/quarto-1.9.37-macos.pkg",
+  "vendor_url": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.37/quarto-1.9.37-macos.pkg",
   "bundleId": "org.rstudio.quarto",
   "homepage": "https://www.quarto.org/",
   "fileName": "quarto-1.9.37-macos.pkg",

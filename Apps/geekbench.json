@@ -3,6 +3,7 @@
   "description": "Tool to measure the computer system's performance",
   "version": "6.6.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/geekbench_6.6.0.pkg",
+  "vendor_url": "https://cdn.geekbench.com/Geekbench-6.6.0-Mac.zip",
   "bundleId": "com.primatelabs.Geekbench6",
   "homepage": "https://www.geekbench.com/",
   "fileName": "geekbench_6.6.0.pkg",

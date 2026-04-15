@@ -3,6 +3,7 @@
   "description": "Cross-platform AI benchmark to evaluate AI workload performance",
   "version": "1.7.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/geekbench_ai_1.7.0.pkg",
+  "vendor_url": "https://cdn.geekbench.com/GeekbenchAI-1.7.0-Mac.zip",
   "bundleId": "com.primatelabs.macos.geekbenchml",
   "homepage": "https://www.geekbench.com/ai/",
   "fileName": "geekbench_ai_1.7.0.pkg",

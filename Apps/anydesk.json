@@ -3,6 +3,7 @@
   "description": "Allows connection to a computer remotely",
   "version": "9.6.5",
   "url": "https://download.anydesk.com/anydesk.dmg",
+  "vendor_url": "https://download.anydesk.com/anydesk.dmg",
   "bundleId": "com.philandro.anydesk",
   "homepage": "https://anydesk.com/",
   "fileName": "anydesk.dmg",

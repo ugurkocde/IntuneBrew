@@ -3,6 +3,7 @@
   "description": "Software custom-built for content creation",
   "version": "3.1.0",
   "url": "https://edge.elgato.com/egc/macos/ewlm/release/ElgatoWaveLink-3.1.0.2334.dmg",
+  "vendor_url": "https://edge.elgato.com/egc/macos/ewlm/release/ElgatoWaveLink-3.1.0.2334.dmg",
   "bundleId": "com.elgato.WaveLink",
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
   "fileName": "ElgatoWaveLink-3.1.0.2334.dmg",

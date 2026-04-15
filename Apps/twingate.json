@@ -3,6 +3,7 @@
   "description": "Zero trust network access platform",
   "version": "2026.85.23872",
   "url": "https://intunebrew.blob.core.windows.net/pkg/twingate_2026.85.23872.pkg",
+  "vendor_url": "https://binaries.twingate.com/client/macos/2026.85.23872/Twingate.pkg",
   "bundleId": "com.twingate.macos",
   "homepage": "https://twingate.com/",
   "fileName": "twingate_2026.85.23872.pkg",

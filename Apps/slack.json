@@ -3,6 +3,7 @@
   "description": "Team communication and collaboration software",
   "version": "4.49.81",
   "url": "https://downloads.slack-edge.com/desktop-releases/mac/arm64/4.49.81/Slack-4.49.81-macOS.dmg",
+  "vendor_url": "https://downloads.slack-edge.com/desktop-releases/mac/arm64/4.49.81/Slack-4.49.81-macOS.dmg",
   "bundleId": "com.tinyspeck.slackmacgap",
   "homepage": "https://slack.com/",
   "fileName": "Slack-4.49.81-macOS.dmg",

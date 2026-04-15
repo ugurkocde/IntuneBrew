@@ -3,6 +3,7 @@
   "description": "Companion app for Home Assistant home automation software",
   "version": "2026.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/home_assistant_2026.4.pkg",
+  "vendor_url": "https://github.com/home-assistant/iOS/releases/download/release%2F2026.4%2F2026.1862/home-assistant-mac.zip",
   "bundleId": "io.robbie.HomeAssistant",
   "homepage": "https://companion.home-assistant.io/",
   "fileName": "home_assistant_2026.4.pkg",

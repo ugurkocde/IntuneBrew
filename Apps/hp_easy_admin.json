@@ -3,6 +3,7 @@
   "description": "Tool to directly download HP printing and/or scanning drivers",
   "version": "2.16.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/hp_easy_admin_2.16.0.pkg",
+  "vendor_url": "https://ftp.hp.com/pub/softlib/software12/HP_Quick_Start/osx/Applications/HP_Easy_Admin.app.zip",
   "bundleId": "com.hp.hp-easy-admin",
   "homepage": "https://support.hp.com/",
   "fileName": "hp_easy_admin_2.16.0.pkg",

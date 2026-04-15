@@ -3,6 +3,7 @@
   "description": "Open-source 3D modelling software",
   "version": "1.0.0-rc.9",
   "url": "https://github.com/huxingyi/dust3d/releases/download/1.0.0-rc.9/dust3d-1.0.0-rc.9.dmg",
+  "vendor_url": "https://github.com/huxingyi/dust3d/releases/download/1.0.0-rc.9/dust3d-1.0.0-rc.9.dmg",
   "bundleId": "org.nicola.Dust3D",
   "homepage": "https://dust3d.org/",
   "fileName": "dust3d-1.0.0-rc.9.dmg",

@@ -3,6 +3,7 @@
   "description": "Open source, extensible AI agent that goes beyond code suggestions",
   "version": "1.30.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/goose_1.30.0.pkg",
+  "vendor_url": "https://github.com/block/goose/releases/download/v1.30.0/Goose.zip",
   "bundleId": "com.electron.goose",
   "homepage": "https://block.github.io/goose/",
   "fileName": "goose_1.30.0.pkg",

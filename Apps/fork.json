@@ -3,6 +3,7 @@
   "description": "GIT client",
   "version": "2.63.2",
   "url": "https://cdn.fork.dev/mac/Fork-2.63.2.dmg",
+  "vendor_url": "https://cdn.fork.dev/mac/Fork-2.63.2.dmg",
   "bundleId": "com.DanPristupov.Fork",
   "homepage": "https://fork.dev/",
   "fileName": "Fork-2.63.2.dmg",

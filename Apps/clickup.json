@@ -3,6 +3,7 @@
   "description": "Productivity platform for tasks, docs, goals, and chat",
   "version": "3.5.185",
   "url": "https://download.todesktop.com/221003ra4tebclw/ClickUp%203.5.185%20-%20Build%202603135dev5rzzi-arm64.dmg",
+  "vendor_url": "https://download.todesktop.com/221003ra4tebclw/ClickUp%203.5.185%20-%20Build%202603135dev5rzzi-arm64.dmg",
   "bundleId": "com.clickup.desktop-app",
   "homepage": "https://clickup.com/",
   "fileName": "ClickUp 3.5.185 - Build 2603135dev5rzzi-arm64.dmg",

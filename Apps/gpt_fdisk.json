@@ -3,6 +3,7 @@
   "description": "Disk partitioning tool",
   "version": "1.0.10",
   "url": "https://downloads.sourceforge.net/gptfdisk/gdisk-1.0.10.pkg",
+  "vendor_url": "https://downloads.sourceforge.net/gptfdisk/gdisk-1.0.10.pkg",
   "bundleId": "com.rodsbooks.pkg.gdisk",
   "homepage": "https://sourceforge.net/projects/gptfdisk/",
   "fileName": "gdisk-1.0.10.pkg",

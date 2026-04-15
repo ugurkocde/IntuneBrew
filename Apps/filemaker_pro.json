@@ -3,6 +3,7 @@
   "description": "Relational database and rapid application development platform",
   "version": "22.0.6.601",
   "url": "https://downloads.claris.com/esd/fmp_22.0.6.601.dmg",
+  "vendor_url": "https://downloads.claris.com/esd/fmp_22.0.6.601.dmg",
   "bundleId": "com.filemaker.client.pro12",
   "homepage": "https://www.claris.com/filemaker/",
   "fileName": "fmp_22.0.6.601.dmg",

@@ -3,6 +3,7 @@
   "description": "File sync and share software",
   "version": "3.1.2.1076",
   "url": "https://download-cdn.resilio.com/stable/mac/osx/0/Resilio-Sync.dmg",
+  "vendor_url": "https://download-cdn.resilio.com/stable/mac/osx/0/Resilio-Sync.dmg",
   "bundleId": "com.resilio.Sync",
   "homepage": "https://www.resilio.com/",
   "fileName": "Resilio-Sync.dmg",

@@ -3,6 +3,7 @@
   "description": "Wine wrapper built with SwiftUI",
   "version": "2.3.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/whisky_2.3.5.pkg",
+  "vendor_url": "https://github.com/IsaacMarovitz/Whisky/releases/download/v2.3.5/Whisky.zip",
   "bundleId": "com.isaacmarovitz.Whisky",
   "homepage": "https://getwhisky.app/",
   "fileName": "whisky_2.3.5.pkg",

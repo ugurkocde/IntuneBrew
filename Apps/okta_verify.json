@@ -3,6 +3,7 @@
   "description": "Identity verification provider",
   "version": "9.59.0",
   "url": "https://okta.okta.com/artifacts/OKTA_VERIFY_MACOS/9.59.0/OktaVerify-9.59.0-6053-5038b2d.pkg",
+  "vendor_url": "https://okta.okta.com/artifacts/OKTA_VERIFY_MACOS/9.59.0/OktaVerify-9.59.0-6053-5038b2d.pkg",
   "bundleId": "com.okta.mobile",
   "homepage": "https://help.okta.com/eu/en-us/content/topics/end-user/ov-overview-macos.htm",
   "fileName": "OktaVerify-9.59.0-6053-5038b2d.pkg",

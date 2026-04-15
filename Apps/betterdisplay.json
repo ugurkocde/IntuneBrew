@@ -3,6 +3,7 @@
   "description": "Display management tool",
   "version": "4.2.3",
   "url": "https://github.com/waydabber/BetterDisplay/releases/download/v4.2.3/BetterDisplay-v4.2.3.dmg",
+  "vendor_url": "https://github.com/waydabber/BetterDisplay/releases/download/v4.2.3/BetterDisplay-v4.2.3.dmg",
   "bundleId": "pro.betterdisplay.BetterDisplay",
   "homepage": "https://betterdisplay.pro/",
   "fileName": "BetterDisplay-v4.2.3.dmg",

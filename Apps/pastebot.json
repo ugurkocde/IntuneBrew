@@ -3,6 +3,7 @@
   "description": "Workflow application to improve productivity",
   "version": "2.4.6",
   "url": "https://tapbots.net/pastebot2/Pastebot.dmg",
+  "vendor_url": "https://tapbots.net/pastebot2/Pastebot.dmg",
   "bundleId": "com.tapbots.Pastebot2Mac",
   "homepage": "https://tapbots.com/pastebot/",
   "fileName": "Pastebot.dmg",

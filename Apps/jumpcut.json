@@ -3,6 +3,7 @@
   "description": "Clipboard manager",
   "version": "0.84",
   "url": "https://intunebrew.blob.core.windows.net/pkg/jumpcut_0.84.pkg",
+  "vendor_url": "https://github.com/snark/jumpcut/releases/download/v0.84/Jumpcut-0.84.tar.bz2",
   "bundleId": "net.sf.Jumpcut",
   "homepage": "https://snark.github.io/jumpcut/",
   "fileName": "jumpcut_0.84.pkg",

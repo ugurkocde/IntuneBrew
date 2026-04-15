@@ -3,6 +3,7 @@
   "description": "Administration and development platform for PostgreSQL",
   "version": "9.14",
   "url": "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v9.14/macos/pgadmin4-9.14-arm64.dmg",
+  "vendor_url": "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v9.14/macos/pgadmin4-9.14-arm64.dmg",
   "bundleId": "org.pgadmin.pgadmin4",
   "homepage": "https://www.pgadmin.org/",
   "fileName": "pgadmin4-9.14-arm64.dmg",

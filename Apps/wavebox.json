@@ -3,6 +3,7 @@
   "description": "Web browser",
   "version": "10.147.44.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/wavebox_10.147.44.2.pkg",
+  "vendor_url": "https://download.wavebox.app/stable/macarm64/Wavebox_10.147.44.2.zip",
   "bundleId": "io.wavebox.wavebox",
   "homepage": "https://wavebox.io/",
   "fileName": "wavebox_10.147.44.2.pkg",

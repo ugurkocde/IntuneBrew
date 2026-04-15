@@ -3,6 +3,7 @@
   "description": "Multiplayer platform for classic Command & Conquer games",
   "version": "2.1",
   "url": "https://funkyfr3sh.cnc-comm.com/files/CnCNet.dmg",
+  "vendor_url": "https://funkyfr3sh.cnc-comm.com/files/CnCNet.dmg",
   "bundleId": "com.nicola.cncnet",
   "homepage": "https://cncnet.org/",
   "fileName": "CnCNet.dmg",

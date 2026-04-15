@@ -3,6 +3,7 @@
   "description": "Database manager",
   "version": "2.9.6",
   "url": "https://assets.dataflare.app/release/darwin/aarch64/Dataflare-2.9.6.dmg",
+  "vendor_url": "https://assets.dataflare.app/release/darwin/aarch64/Dataflare-2.9.6.dmg",
   "bundleId": "app.dataflare.desktop",
   "homepage": "https://dataflare.app/",
   "fileName": "Dataflare-2.9.6.dmg",

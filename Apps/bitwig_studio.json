@@ -3,6 +3,7 @@
   "description": "Digital audio workstation",
   "version": "6.0",
   "url": "https://www.bitwig.com/dl/Bitwig%20Studio/6.0/installer_mac",
+  "vendor_url": "https://www.bitwig.com/dl/Bitwig%20Studio/6.0/installer_mac",
   "bundleId": "com.bitwig.studio",
   "homepage": "https://www.bitwig.com/",
   "fileName": "Bitwig-Studio-6.0.dmg",

@@ -3,6 +3,7 @@
   "description": "Multi-platform VNC client and server",
   "version": "1.15.0",
   "url": "https://downloads.sourceforge.net/tigervnc/TigerVNC-1.15.0.dmg",
+  "vendor_url": "https://downloads.sourceforge.net/tigervnc/TigerVNC-1.15.0.dmg",
   "bundleId": "com.tigervnc.tigervnc",
   "homepage": "https://tigervnc.org/",
   "fileName": "TigerVNC-1.15.0.dmg",

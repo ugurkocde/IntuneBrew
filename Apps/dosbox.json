@@ -3,6 +3,7 @@
   "description": "Emulator for x86 with DOS",
   "version": "0.74-3",
   "url": "https://downloads.sourceforge.net/dosbox/dosbox/0.74-3/DOSBox-0.74-3-3.dmg",
+  "vendor_url": "https://downloads.sourceforge.net/dosbox/dosbox/0.74-3/DOSBox-0.74-3-3.dmg",
   "bundleId": "com.dosbox.dosbox",
   "homepage": "https://www.dosbox.com/",
   "fileName": "DOSBox-0.74-3-3.dmg",

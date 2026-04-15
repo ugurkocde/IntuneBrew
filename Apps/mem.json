@@ -3,6 +3,7 @@
   "description": "Capture and access information from anywhere",
   "version": "0.43.0",
   "url": "https://storage.googleapis.com/mem-desktop-stable-releases/Mem-0.43.0.dmg",
+  "vendor_url": "https://storage.googleapis.com/mem-desktop-stable-releases/Mem-0.43.0.dmg",
   "bundleId": "org.memlabs.Mem",
   "homepage": "https://get.mem.ai/",
   "fileName": "Mem-0.43.0.dmg",

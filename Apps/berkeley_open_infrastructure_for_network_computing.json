@@ -3,6 +3,7 @@
   "description": "Downloads scientific computing jobs and runs them invisibly in the background",
   "version": "8.2.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/berkeley_open_infrastructure_for_network_computing_8.2.5.pkg",
+  "vendor_url": "https://boinc.berkeley.edu/dl/boinc_8.2.5_macOSX_universal.zip",
   "bundleId": "edu.berkeley.boinc",
   "homepage": "https://boinc.berkeley.edu/",
   "fileName": "berkeley_open_infrastructure_for_network_computing_8.2.5.pkg",

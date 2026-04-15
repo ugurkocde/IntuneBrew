@@ -3,6 +3,7 @@
   "description": "Desktop application for controlling Castr streaming platform",
   "version": "3.1.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/castr_3.1.0.pkg",
+  "vendor_url": "https://download.todesktop.com/210610elr9v3cm6/Castr%203.1.0-arm64-mac.zip",
   "bundleId": "io.castr.app",
   "homepage": "https://castr.io/",
   "fileName": "castr_3.1.0.pkg",

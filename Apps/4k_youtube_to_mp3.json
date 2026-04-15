@@ -3,6 +3,7 @@
   "description": "Turn YouTube links into MP3 files",
   "version": "26.1.0",
   "url": "https://dl.4kdownload.com/app/4kyoutubetomp3_26.1.0_arm64.dmg",
+  "vendor_url": "https://dl.4kdownload.com/app/4kyoutubetomp3_26.1.0_arm64.dmg",
   "bundleId": "com.openmedia.4kyoutubetomp3",
   "homepage": "https://www.4kdownload.com/products/youtubetomp3/1",
   "fileName": "4kyoutubetomp3_26.1.0_arm64.dmg",

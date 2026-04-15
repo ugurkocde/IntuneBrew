@@ -3,6 +3,7 @@
   "description": "Game development engine",
   "version": "4.6.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/godot_engine_4.6.2.pkg",
+  "vendor_url": "https://github.com/godotengine/godot/releases/download/3.6.2-stable/Godot_v3.6.2-stable_osx.universal.zip",
   "bundleId": "org.godotengine.godot",
   "homepage": "https://godotengine.org/",
   "fileName": "godot_engine_4.6.2.pkg",

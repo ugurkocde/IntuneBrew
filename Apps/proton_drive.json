@@ -3,6 +3,7 @@
   "description": "Client for Proton Drive",
   "version": "2.10.3",
   "url": "https://proton.me/download/drive/macos/2.10.3/ProtonDrive-2.10.3.dmg",
+  "vendor_url": "https://proton.me/download/drive/macos/2.10.3/ProtonDrive-2.10.3.dmg",
   "bundleId": "ch.protonmail.drive",
   "homepage": "https://proton.me/drive",
   "fileName": "ProtonDrive-2.10.3.dmg",

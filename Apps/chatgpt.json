@@ -3,6 +3,7 @@
   "description": "OpenAI's official ChatGPT desktop app",
   "version": "1.2026.051",
   "url": "https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_1.2026.051_1775834670.dmg",
+  "vendor_url": "https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_1.2026.051_1775834670.dmg",
   "bundleId": "com.openai.chat",
   "homepage": "https://chatgpt.com/",
   "fileName": "ChatGPT_Desktop_public_1.2026.051_1775834670.dmg",

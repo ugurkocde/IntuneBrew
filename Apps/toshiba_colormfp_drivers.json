@@ -3,6 +3,7 @@
   "description": "Drivers for Toshiba ColorMFP devices",
   "version": "7.119.4.0",
   "url": "https://business.toshiba.com/downloads/KB/f1Ulds/21838/TOSHIBA_ColorMFP.dmg.gz",
+  "vendor_url": "https://business.toshiba.com/downloads/KB/f1Ulds/21838/TOSHIBA_ColorMFP.dmg.gz",
   "bundleId": "com.toshiba.pde.x7.colormfp",
   "homepage": "https://business.toshiba.com/support",
   "fileName": "Toshiba-ColorMFP-Drivers-7.119.4.0.dmg",

@@ -3,6 +3,7 @@
   "description": "App to hide all open apps except the current one",
   "version": "7.3",
   "url": "https://sweetpproductions.com/products/hides/Hides.dmg",
+  "vendor_url": "https://sweetpproductions.com/products/hides/Hides.dmg",
   "bundleId": "com.sweetpproductions.Hides",
   "homepage": "https://hides.sweetpproductions.com/",
   "fileName": "Hides.dmg",

@@ -3,6 +3,7 @@
   "description": "Group chat software",
   "version": "2.21.1",
   "url": "https://desktop-app.chatwork.com/installer/ChatWork.dmg",
+  "vendor_url": "https://desktop-app.chatwork.com/installer/ChatWork.dmg",
   "bundleId": "com.electron.chatwork",
   "homepage": "https://www.chatwork.com/",
   "fileName": "ChatWork.dmg",

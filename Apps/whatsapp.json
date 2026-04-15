@@ -3,6 +3,7 @@
   "description": "Native desktop client for WhatsApp",
   "version": "2.26.15.16",
   "url": "https://intunebrew.blob.core.windows.net/pkg/whatsapp_2.26.15.16.pkg",
+  "vendor_url": "https://web.whatsapp.com/desktop/mac_native/release/?version=2.26.15.16&extension=zip&configuration=Release&branch=master&is_buck=true",
   "bundleId": "net.whatsapp.WhatsApp",
   "homepage": "https://www.whatsapp.com/",
   "fileName": "whatsapp_2.26.15.16.pkg",

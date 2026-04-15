@@ -3,6 +3,7 @@
   "description": "OpenJDK distribution from Azul",
   "version": "26.0.0",
   "url": "https://cdn.azul.com/zulu/bin/zulu26.28.59-ca-jdk26.0.0-macosx_aarch64.dmg",
+  "vendor_url": "https://cdn.azul.com/zulu/bin/zulu26.28.59-ca-jdk26.0.0-macosx_aarch64.dmg",
   "bundleId": "com.azulsystems.zulu.23",
   "homepage": "https://www.azul.com/downloads/",
   "fileName": "zulu26.28.59-ca-jdk26.0.0-macosx_aarch64.dmg",

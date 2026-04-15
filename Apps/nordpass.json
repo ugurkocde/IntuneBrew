@@ -3,6 +3,7 @@
   "description": "Password manager",
   "version": "7.6.14",
   "url": "https://downloads.npass.app/mac/arm/NordPass.dmg",
+  "vendor_url": "https://downloads.npass.app/mac/arm/NordPass.dmg",
   "bundleId": "com.nordsec.nordpass",
   "homepage": "https://nordpass.com/",
   "fileName": "NordPass.dmg",

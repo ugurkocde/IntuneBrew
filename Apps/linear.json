@@ -3,6 +3,7 @@
   "description": "App to manage software development and track bugs",
   "version": "1.28.13",
   "url": "https://intunebrew.blob.core.windows.net/pkg/linear_1.28.13.pkg",
+  "vendor_url": "https://download.todesktop.com/200315glz2793v6/Linear%201.28.13%20-%20Build%20260318pho1bttxr-arm64-mac.zip",
   "bundleId": "com.linear",
   "homepage": "https://linear.app/",
   "fileName": "linear_1.28.13.pkg",

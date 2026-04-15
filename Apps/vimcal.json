@@ -3,6 +3,7 @@
   "description": "Calendar",
   "version": "1.0.46",
   "url": "https://vimcal-m1.s3.amazonaws.com/Vimcal-1.0.46-arm64.dmg",
+  "vendor_url": "https://vimcal-m1.s3.amazonaws.com/Vimcal-1.0.46-arm64.dmg",
   "bundleId": "com.vimcal.app",
   "homepage": "https://vimcal.com/",
   "fileName": "Vimcal-1.0.46-arm64.dmg",

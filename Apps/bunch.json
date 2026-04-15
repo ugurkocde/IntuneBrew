@@ -3,6 +3,7 @@
   "description": "Automation tool",
   "version": "1.4.17",
   "url": "https://brettterpstra.com/updates/bunch/Bunch1.4.17180.dmg",
+  "vendor_url": "https://brettterpstra.com/updates/bunch/Bunch1.4.17180.dmg",
   "bundleId": "com.brettterpstra.Bunch",
   "homepage": "https://bunchapp.co/",
   "fileName": "Bunch1.4.17180.dmg",

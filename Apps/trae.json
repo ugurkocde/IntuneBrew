@@ -3,6 +3,7 @@
   "description": "Adaptive AI IDE",
   "version": "2.3.19583",
   "url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.19583/darwin/Trae-darwin-arm64.dmg",
+  "vendor_url": "https://lf-cdn.trae.ai/obj/trae-ai-us/pkg/app/releases/stable/2.3.19583/darwin/Trae-darwin-arm64.dmg",
   "bundleId": "com.trae.app",
   "homepage": "https://www.trae.ai/",
   "fileName": "Trae-darwin-arm64.dmg",

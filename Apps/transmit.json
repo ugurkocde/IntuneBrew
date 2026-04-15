@@ -3,6 +3,7 @@
   "description": "File transfer application",
   "version": "5.11.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/transmit_5.11.5.pkg",
+  "vendor_url": "https://download-cdn.panic.com/transmit/Transmit%205.11.5.zip",
   "bundleId": "com.panic.Transmit",
   "homepage": "https://panic.com/transmit/",
   "fileName": "transmit_5.11.5.pkg",

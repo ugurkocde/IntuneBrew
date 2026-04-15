@@ -3,6 +3,7 @@
   "description": "AI time tracker",
   "version": "2.3.7",
   "url": "https://github.com/rize-io/lua/releases/download/v2.3.7/Rize-2.3.7-arm64.dmg",
+  "vendor_url": "https://github.com/rize-io/lua/releases/download/v2.3.7/Rize-2.3.7-arm64.dmg",
   "bundleId": "io.rize",
   "homepage": "https://rize.io/",
   "fileName": "Rize-2.3.7-arm64.dmg",

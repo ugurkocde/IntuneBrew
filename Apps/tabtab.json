@@ -3,6 +3,7 @@
   "description": "Window and tab manager",
   "version": "2.0.4",
   "url": "https://github.com/riccqi/TabTabApp/releases/download/prod/tabtab.dmg",
+  "vendor_url": "https://github.com/riccqi/TabTabApp/releases/download/prod/tabtab.dmg",
   "bundleId": "riccqi.TabTab",
   "homepage": "https://tabtabapp.net/",
   "fileName": "tabtab.dmg",

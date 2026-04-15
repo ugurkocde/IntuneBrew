@@ -3,6 +3,7 @@
   "description": "Customise mouse behavior",
   "version": "0.10.4",
   "url": "https://dl.linearmouse.org/v0.10.4/LinearMouse.dmg",
+  "vendor_url": "https://dl.linearmouse.org/v0.10.4/LinearMouse.dmg",
   "bundleId": "com.lujjjh.LinearMouse",
   "homepage": "https://linearmouse.org/",
   "fileName": "LinearMouse.dmg",

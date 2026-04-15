@@ -3,6 +3,7 @@
   "description": "Open-source software for live streaming and screen recording",
   "version": "32.1.1",
   "url": "https://cdn-fastly.obsproject.com/downloads/obs-studio-32.1.1-macos-apple.dmg",
+  "vendor_url": "https://cdn-fastly.obsproject.com/downloads/obs-studio-32.1.1-macos-apple.dmg",
   "bundleId": "com.obsproject.obs-studio",
   "homepage": "https://obsproject.com/",
   "fileName": "obs-studio-32.1.1-macos-apple.dmg",

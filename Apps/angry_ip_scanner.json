@@ -3,6 +3,7 @@
   "description": "Network scanner",
   "version": "3.9.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/angry_ip_scanner_3.9.3.pkg",
+  "vendor_url": "https://github.com/angryip/ipscan/releases/download/3.9.3/ipscan-macArm64-3.9.3.zip",
   "bundleId": "net.azib.ipscan",
   "homepage": "https://angryip.org/",
   "fileName": "angry_ip_scanner_3.9.3.pkg",

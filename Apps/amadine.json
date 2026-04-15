@@ -3,6 +3,7 @@
   "description": "Vector graphic and illustration software",
   "version": "1.8.2",
   "url": "https://belightsoft.s3.amazonaws.com/Amadine.dmg",
+  "vendor_url": "https://belightsoft.s3.amazonaws.com/Amadine.dmg",
   "bundleId": "com.belightsoft.Amadine",
   "homepage": "https://amadine.com/",
   "fileName": "Amadine.dmg",

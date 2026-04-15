@@ -3,6 +3,7 @@
   "description": "Desktop app for prototyping and debugging LangGraph applications locally",
   "version": "0.0.37",
   "url": "https://github.com/langchain-ai/langgraph-studio/releases/download/v0.0.37/LangGraph-Studio-0.0.37-universal.dmg",
+  "vendor_url": "https://github.com/langchain-ai/langgraph-studio/releases/download/v0.0.37/LangGraph-Studio-0.0.37-universal.dmg",
   "bundleId": "com.electron.langgraph-studio-desktop",
   "homepage": "https://studio.langchain.com/",
   "fileName": "LangGraph-Studio-0.0.37-universal.dmg",

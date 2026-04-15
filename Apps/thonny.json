@@ -3,6 +3,7 @@
   "description": "Python IDE for beginners",
   "version": "4.1.7",
   "url": "https://github.com/thonny/thonny/releases/download/v4.1.7/thonny-4.1.7.pkg",
+  "vendor_url": "https://github.com/thonny/thonny/releases/download/v4.1.7/thonny-4.1.7.pkg",
   "bundleId": "org.thonny.Thonny.component",
   "homepage": "https://thonny.org/",
   "fileName": "thonny-4.1.7.pkg",

@@ -3,6 +3,7 @@
   "description": "HTTP and GraphQL Client",
   "version": "12.5.0",
   "url": "https://github.com/Kong/insomnia/releases/download/core%4012.5.0/Insomnia.Core-12.5.0.dmg",
+  "vendor_url": "https://github.com/Kong/insomnia/releases/download/core%4012.5.0/Insomnia.Core-12.5.0.dmg",
   "bundleId": "com.insomnia.app",
   "homepage": "https://insomnia.rest/",
   "fileName": "Insomnia.Core-12.5.0.dmg",

@@ -3,6 +3,7 @@
   "description": "Remote pair programming app",
   "version": "2.4.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/tuple_2.4.1.pkg",
+  "vendor_url": "https://d32ifkf9k9ezcg.cloudfront.net/production/sparkle/tuple-2.4.1-2026-03-24-530848911.zip",
   "bundleId": "app.tuple.app",
   "homepage": "https://tuple.app/",
   "fileName": "tuple_2.4.1.pkg",

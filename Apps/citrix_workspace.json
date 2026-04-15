@@ -3,6 +3,7 @@
   "description": "Managed desktop virtualization solution",
   "version": "26.03.0.49",
   "url": "https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Mac/CitrixWorkspaceAppUniversal26.03.0.49.pkg",
+  "vendor_url": "https://downloadplugins.citrix.com/ReceiverUpdates/Prod/Receiver/Mac/CitrixWorkspaceAppUniversal26.03.0.49.pkg",
   "bundleId": "com.citrix.receiver.nomas",
   "homepage": "https://docs.citrix.com/en-us/citrix-workspace",
   "fileName": "CitrixWorkspaceAppUniversal26.03.0.49.pkg",

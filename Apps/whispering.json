@@ -3,6 +3,7 @@
   "description": "Audio transcription that works with local and cloud models",
   "version": "7.11.0",
   "url": "https://github.com/epicenter-os/epicenter/releases/download/v7.11.0/Whispering_7.11.0_aarch64.dmg",
+  "vendor_url": "https://github.com/epicenter-os/epicenter/releases/download/v7.11.0/Whispering_7.11.0_aarch64.dmg",
   "bundleId": "com.bradenwong.whispering",
   "homepage": "https://whispering.epicenter.so/",
   "fileName": "Whispering_7.11.0_aarch64.dmg",

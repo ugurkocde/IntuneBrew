@@ -3,6 +3,7 @@
   "description": "Unix fork of FAR Manager v2",
   "version": "2.7.0",
   "url": "https://github.com/elfmz/far2l/releases/download/v_2.7.0/far2l-2.7.0-beta-MacOS-11.2-universal.dmg",
+  "vendor_url": "https://github.com/elfmz/far2l/releases/download/v_2.7.0/far2l-2.7.0-beta-MacOS-11.2-universal.dmg",
   "bundleId": "com.far2l",
   "homepage": "https://github.com/elfmz/far2l",
   "fileName": "far2l-2.7.0-beta-MacOS-11.2-universal.dmg",

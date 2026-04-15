@@ -3,6 +3,7 @@
   "description": "Tool to invert scroll direction for physical scroll wheels",
   "version": "1.4.0",
   "url": "https://github.com/ther0n/UnnaturalScrollWheels/releases/download/1.4.0/UnnaturalScrollWheels-1.4.0.dmg",
+  "vendor_url": "https://github.com/ther0n/UnnaturalScrollWheels/releases/download/1.4.0/UnnaturalScrollWheels-1.4.0.dmg",
   "bundleId": "com.theron.UnnaturalScrollWheels",
   "homepage": "https://github.com/ther0n/UnnaturalScrollWheels",
   "fileName": "UnnaturalScrollWheels-1.4.0.dmg",

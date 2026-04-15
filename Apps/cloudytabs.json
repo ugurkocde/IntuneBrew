@@ -3,6 +3,7 @@
   "description": "Menu bar application that lists iCloud Tabs",
   "version": "2.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/cloudytabs_2.0.pkg",
+  "vendor_url": "https://github.com/josh-/CloudyTabs/releases/download/v2.0/CloudyTabs.zip",
   "bundleId": "com.joshparnham.CloudyTabs",
   "homepage": "https://github.com/josh-/CloudyTabs/",
   "fileName": "cloudytabs_2.0.pkg",

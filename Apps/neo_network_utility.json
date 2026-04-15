@@ -3,6 +3,7 @@
   "description": "Network information and diagnostics utility",
   "version": "2.0",
   "url": "https://download.devontechnologies.com/download/freeware/networkutility/2.0/Neo_Network_Utility.dmg.zip",
+  "vendor_url": "https://download.devontechnologies.com/download/freeware/networkutility/2.0/Neo_Network_Utility.dmg.zip",
   "bundleId": "com.devon-technologies.network-utility",
   "homepage": "https://www.devontechnologies.com/apps/freeware",
   "fileName": "Neo_Network_Utility.dmg.zip",

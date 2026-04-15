@@ -3,6 +3,7 @@
   "description": "IDE for Python programming - Community Edition",
   "version": "2025.2.5",
   "url": "https://download.jetbrains.com/python/pycharm-community-2025.2.5-aarch64.dmg",
+  "vendor_url": "https://download.jetbrains.com/python/pycharm-community-2025.2.5-aarch64.dmg",
   "bundleId": "com.jetbrains.pycharm.ce",
   "homepage": "https://www.jetbrains.com/pycharm/",
   "fileName": "pycharm-community-2025.2.5-aarch64.dmg",

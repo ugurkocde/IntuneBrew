@@ -3,6 +3,7 @@
   "description": "PDF editing software",
   "version": "26.0",
   "url": "https://downloads.gonitro.com/macos/Nitro%20PDF%20Pro_26.0.dmg",
+  "vendor_url": "https://downloads.gonitro.com/macos/Nitro%20PDF%20Pro_26.0.dmg",
   "bundleId": "com.gonitro.NitroPDFPro",
   "homepage": "https://www.gonitro.com/pdfpen",
   "fileName": "Nitro PDF Pro_26.0.dmg",

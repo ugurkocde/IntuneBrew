@@ -3,6 +3,7 @@
   "description": "Browser to organise apps",
   "version": "1.2.39",
   "url": "https://github.com/agata/dl.biscuit/releases/download/1.2.39/Biscuit-1.2.39-arm64.dmg",
+  "vendor_url": "https://github.com/agata/dl.biscuit/releases/download/1.2.39/Biscuit-1.2.39-arm64.dmg",
   "bundleId": "com.eatbiscuit.biscuit",
   "homepage": "https://eatbiscuit.com/",
   "fileName": "Biscuit-1.2.39-arm64.dmg",

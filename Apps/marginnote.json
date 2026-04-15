@@ -3,6 +3,7 @@
   "description": "E-reader",
   "version": "4.3.2",
   "url": "https://dist.marginnote.cn/MarginNote4.3.2.dmg",
+  "vendor_url": "https://dist.marginnote.cn/MarginNote4.3.2.dmg",
   "bundleId": "com.marginnote.marginnote3.mac",
   "homepage": "https://www.marginnote.com/",
   "fileName": "MarginNote4.3.2.dmg",

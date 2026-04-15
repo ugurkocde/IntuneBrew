@@ -3,6 +3,7 @@
   "description": "Git client focusing on productivity",
   "version": "11.10.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/gitkraken_11.10.0.pkg",
+  "vendor_url": "https://api.gitkraken.dev/releases/production/darwin/arm64/11.10.0/GitKraken-v11.10.0.zip",
   "bundleId": "com.axosoft.gitkraken",
   "homepage": "https://www.gitkraken.com/",
   "fileName": "gitkraken_11.10.0.pkg",

@@ -3,6 +3,7 @@
   "description": "Text editor",
   "version": "16.0.4",
   "url": "https://download.sweetscape.com/010EditorMacARM64Installer16.0.4.dmg",
+  "vendor_url": "https://download.sweetscape.com/010EditorMacARM64Installer16.0.4.dmg",
   "bundleId": "com.SweetScape.010Editor",
   "homepage": "https://www.sweetscape.com/",
   "fileName": "010EditorMacARM64Installer16.0.4.dmg",

@@ -3,6 +3,7 @@
   "description": "Media player",
   "version": "2.15.1",
   "url": "https://s3.ap-northeast-2.amazonaws.com/update.cocoable.com/MovistPro_2.15.1.dmg",
+  "vendor_url": "https://s3.ap-northeast-2.amazonaws.com/update.cocoable.com/MovistPro_2.15.1.dmg",
   "bundleId": "com.movist.MovistPro",
   "homepage": "https://movistprime.com/",
   "fileName": "MovistPro_2.15.1.dmg",

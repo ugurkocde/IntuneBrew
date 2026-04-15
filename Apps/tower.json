@@ -3,6 +3,7 @@
   "description": "Git client focusing on power and productivity",
   "version": "15.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/tower_15.1.pkg",
+  "vendor_url": "https://www.git-tower.com/apps/tower3-mac/524-2420f6bb/Tower-15.1-524.zip",
   "bundleId": "com.fournova.Tower",
   "homepage": "https://www.git-tower.com/",
   "fileName": "tower_15.1.pkg",

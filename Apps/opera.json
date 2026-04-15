@@ -3,6 +3,7 @@
   "description": "Web browser",
   "version": "130.0.5847.12",
   "url": "https://get.geo.opera.com/pub/opera/desktop/130.0.5847.12/mac/Opera_130.0.5847.12_Setup.dmg",
+  "vendor_url": "https://get.geo.opera.com/pub/opera/desktop/130.0.5847.12/mac/Opera_130.0.5847.12_Setup.dmg",
   "bundleId": "com.operasoftware.Opera",
   "homepage": "https://www.opera.com/",
   "fileName": "Opera_130.0.5847.12_Setup.dmg",

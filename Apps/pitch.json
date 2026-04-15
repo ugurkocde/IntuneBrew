@@ -3,6 +3,7 @@
   "description": "Collaborative presentation software",
   "version": "2.122.0",
   "url": "https://desktop-app-builds.pitch.com/Pitch-2.122.0-stable.1-ci7975720.dmg",
+  "vendor_url": "https://desktop-app-builds.pitch.com/Pitch-2.122.0-stable.1-ci7975720.dmg",
   "bundleId": "io.pitch.pitch-macos",
   "homepage": "https://pitch.com/",
   "fileName": "Pitch-2.122.0-stable.1-ci7975720.dmg",

@@ -3,6 +3,7 @@
   "description": "Time blocking and productivity platform",
   "version": "2.71.7",
   "url": "https://download.akiflow.com/builds/Akiflow-2.71.7-851fb05d-universal.dmg",
+  "vendor_url": "https://download.akiflow.com/builds/Akiflow-2.71.7-851fb05d-universal.dmg",
   "bundleId": "com.akiflow.akiflow",
   "homepage": "https://akiflow.com/",
   "fileName": "Akiflow-2.71.7-851fb05d-universal.dmg",

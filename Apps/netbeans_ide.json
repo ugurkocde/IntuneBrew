@@ -3,6 +3,7 @@
   "description": "Development environment, tooling platform and application framework",
   "version": "29",
   "url": "https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29-arm64.pkg",
+  "vendor_url": "https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29-arm64.pkg",
   "bundleId": "org.apache.netbeans",
   "homepage": "https://netbeans.apache.org/",
   "fileName": "Apache-NetBeans-29-arm64.pkg",

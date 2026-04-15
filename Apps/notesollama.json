@@ -3,6 +3,7 @@
   "description": "LLM support for Apple Notes through Ollama",
   "version": "0.2.6",
   "url": "https://intunebrew.blob.core.windows.net/pkg/notesollama_0.2.6.pkg",
+  "vendor_url": "https://smallest.app/notesollama/dist/NotesOllama-0.2.6.zip",
   "bundleId": "com.notesollama.NotesOllama",
   "homepage": "https://smallest.app/notesollama/",
   "fileName": "notesollama_0.2.6.pkg",

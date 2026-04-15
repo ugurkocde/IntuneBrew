@@ -3,6 +3,7 @@
   "description": "Window manager",
   "version": "1.4.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/loop_1.4.2.pkg",
+  "vendor_url": "https://github.com/MrKai77/Loop/releases/download/1.4.2/Loop.zip",
   "bundleId": "com.MrKai77.Loop",
   "homepage": "https://github.com/MrKai77/Loop",
   "fileName": "loop_1.4.2.pkg",

@@ -3,6 +3,7 @@
   "description": "Native desktop app for Messenger (formerly Facebook Messenger)",
   "version": "525.0.0.34.106",
   "url": "https://www.messenger.com/messenger/desktop/downloadV2/?platform=mac&variant=catalyst",
+  "vendor_url": "https://www.messenger.com/messenger/desktop/downloadV2/?platform=mac&variant=catalyst",
   "bundleId": "com.facebook.archon.developerID",
   "homepage": "https://www.messenger.com/desktop",
   "fileName": "Facebook-Messenger-525.0.0.34.106.dmg",

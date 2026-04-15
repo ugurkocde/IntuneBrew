@@ -3,6 +3,7 @@
   "description": "Modified browser that helps in responsive web development",
   "version": "1.18.0",
   "url": "https://github.com/responsively-org/responsively-app-releases/releases/download/v1.18.0/ResponsivelyApp-1.18.0-arm64.dmg",
+  "vendor_url": "https://github.com/responsively-org/responsively-app-releases/releases/download/v1.18.0/ResponsivelyApp-1.18.0-arm64.dmg",
   "bundleId": "app.responsively",
   "homepage": "https://responsively.app/",
   "fileName": "ResponsivelyApp-1.18.0-arm64.dmg",

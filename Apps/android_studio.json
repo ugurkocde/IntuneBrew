@@ -3,6 +3,7 @@
   "description": "Tools for building Android applications",
   "version": "2025.3.3.7",
   "url": "https://edgedl.me.gvt1.com/android/studio/install/2025.3.3.7/android-studio-panda3-patch1-mac_arm.dmg",
+  "vendor_url": "https://edgedl.me.gvt1.com/android/studio/install/2025.3.3.7/android-studio-panda3-patch1-mac_arm.dmg",
   "bundleId": "com.google.android.studio",
   "homepage": "https://developer.android.com/studio/",
   "fileName": "android-studio-panda3-patch1-mac_arm.dmg",

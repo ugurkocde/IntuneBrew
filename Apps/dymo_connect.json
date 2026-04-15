@@ -3,6 +3,7 @@
   "description": "Software for DYMO LabelWriters",
   "version": "1.6.0.41",
   "url": "https://dymoreleasecontent.blob.core.windows.net/dymo-release/DCDMAC/DCDMac1.6.0.41-Arm64.pkg",
+  "vendor_url": "https://dymoreleasecontent.blob.core.windows.net/dymo-release/DCDMAC/DCDMac1.6.0.41-Arm64.pkg",
   "bundleId": "com.dymo.dymo-connect",
   "homepage": "https://www.dymo.com/support?cfid=online-support",
   "fileName": "DCDMac1.6.0.41-Arm64.pkg",

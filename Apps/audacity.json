@@ -3,6 +3,7 @@
   "description": "Multi-track audio editor and recorder",
   "version": "3.7.7",
   "url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.7/audacity-macOS-3.7.7-arm64.dmg",
+  "vendor_url": "https://github.com/audacity/audacity/releases/download/Audacity-3.7.7/audacity-macOS-3.7.7-arm64.dmg",
   "bundleId": "org.audacityteam.audacity",
   "homepage": "https://www.audacityteam.org/",
   "fileName": "audacity-macOS-3.7.7-arm64.dmg",

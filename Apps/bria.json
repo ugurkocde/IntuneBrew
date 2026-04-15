@@ -3,6 +3,7 @@
   "description": "Softphone application",
   "version": "6.8.6",
   "url": "https://counterpath.s3.amazonaws.com/downloads/Bria_6.8.6_129508.dmg",
+  "vendor_url": "https://counterpath.s3.amazonaws.com/downloads/Bria_6.8.6_129508.dmg",
   "bundleId": "com.CounterPath_Corporation.Bria",
   "homepage": "https://www.counterpath.com/bria-solo/",
   "fileName": "Bria_6.8.6_129508.dmg",

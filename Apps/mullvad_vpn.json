@@ -3,6 +3,7 @@
   "description": "VPN client",
   "version": "2026.1",
   "url": "https://cdn.mullvad.net/app/desktop/releases/2026.1/MullvadVPN-2026.1.pkg",
+  "vendor_url": "https://cdn.mullvad.net/app/desktop/releases/2026.1/MullvadVPN-2026.1.pkg",
   "bundleId": "net.mullvad.vpn",
   "homepage": "https://mullvad.net/",
   "fileName": "MullvadVPN-2026.1.pkg",

@@ -3,6 +3,7 @@
   "description": "Web browser",
   "version": "6.6.11",
   "url": "https://cdn1.waterfox.net/waterfox/releases/6.6.11/Darwin_x86_64-aarch64/Waterfox%206.6.11.dmg",
+  "vendor_url": "https://cdn1.waterfox.net/waterfox/releases/6.6.11/Darwin_x86_64-aarch64/Waterfox%206.6.11.dmg",
   "bundleId": "org.waterfoxproject.waterfox",
   "homepage": "https://www.waterfox.net/",
   "fileName": "Waterfox 6.6.11.dmg",

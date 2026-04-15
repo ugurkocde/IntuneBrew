@@ -3,6 +3,7 @@
   "description": "Edit and manage bibliographies",
   "version": "1.9.11",
   "url": "https://downloads.sourceforge.net/bibdesk/BibDesk/BibDesk-1.9.11/BibDesk-1.9.11.dmg",
+  "vendor_url": "https://downloads.sourceforge.net/bibdesk/BibDesk/BibDesk-1.9.11/BibDesk-1.9.11.dmg",
   "bundleId": "edu.ucsd.cs.mmccrack.bibdesk",
   "homepage": "https://bibdesk.sourceforge.io/",
   "fileName": "BibDesk-1.9.11.dmg",

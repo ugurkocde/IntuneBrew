@@ -3,6 +3,7 @@
   "description": "Tool for multi-language users",
   "version": "2.9.0",
   "url": "https://inputsource.pro/stable/Input%20Source%20Pro%202.9.0.dmg",
+  "vendor_url": "https://inputsource.pro/stable/Input%20Source%20Pro%202.9.0.dmg",
   "bundleId": "com.runjuu.Input-Source-Pro",
   "homepage": "https://inputsource.pro/",
   "fileName": "Input Source Pro 2.9.0.dmg",

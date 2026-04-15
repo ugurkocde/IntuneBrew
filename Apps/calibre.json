@@ -3,6 +3,7 @@
   "description": "E-books management software",
   "version": "9.7.0",
   "url": "https://download.calibre-ebook.com/9.7.0/calibre-9.7.0.dmg",
+  "vendor_url": "https://download.calibre-ebook.com/9.7.0/calibre-9.7.0.dmg",
   "bundleId": "net.kovidgoyal.calibre",
   "homepage": "https://calibre-ebook.com/",
   "fileName": "calibre-9.7.0.dmg",

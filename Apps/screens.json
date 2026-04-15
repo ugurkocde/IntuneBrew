@@ -3,6 +3,7 @@
   "description": "Remote access software focusing on usability",
   "version": "4.12.16",
   "url": "https://intunebrew.blob.core.windows.net/pkg/screens_4.12.16.pkg",
+  "vendor_url": "https://updates.edovia.com/com.edovia.screens4.mac/Screens_4.12.16b1696599453.zip",
   "bundleId": "com.edovia.screens4.mac",
   "homepage": "https://edovia.com/screens-mac/",
   "fileName": "screens_4.12.16.pkg",

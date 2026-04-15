@@ -3,6 +3,7 @@
   "description": "Colour contrast checker",
   "version": "3.5.5",
   "url": "https://github.com/ThePacielloGroup/CCAe/releases/download/v3.5.5/CCA-3.5.5.dmg",
+  "vendor_url": "https://github.com/ThePacielloGroup/CCAe/releases/download/v3.5.5/CCA-3.5.5.dmg",
   "bundleId": "com.electron.cca",
   "homepage": "https://www.tpgi.com/color-contrast-checker/",
   "fileName": "CCA-3.5.5.dmg",

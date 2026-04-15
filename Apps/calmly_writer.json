@@ -3,6 +3,7 @@
   "description": "Word processor with markdown formatting and select themes",
   "version": "2.0.66",
   "url": "https://www.calmlywriter.com/releases/Calmly%20Writer-2.0.66-arm64.dmg",
+  "vendor_url": "https://www.calmlywriter.com/releases/Calmly%20Writer-2.0.66-arm64.dmg",
   "bundleId": "com.calmlywriter.CalmlyWriter",
   "homepage": "https://calmlywriter.com/",
   "fileName": "Calmly Writer-2.0.66-arm64.dmg",

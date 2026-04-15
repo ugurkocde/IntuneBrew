@@ -3,6 +3,7 @@
   "description": "Scheduling application focusing on organisation",
   "version": "4.8.9",
   "url": "https://downloads.omnigroup.com/software/macOS/14/OmniFocus-4.8.9.dmg",
+  "vendor_url": "https://downloads.omnigroup.com/software/macOS/14/OmniFocus-4.8.9.dmg",
   "bundleId": "com.omnigroup.OmniFocus4",
   "homepage": "https://www.omnigroup.com/omnifocus/",
   "fileName": "OmniFocus-4.8.9.dmg",

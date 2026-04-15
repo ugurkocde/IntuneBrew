@@ -3,6 +3,7 @@
   "description": "Cross-platform video editor",
   "version": "3.5.1",
   "url": "https://github.com/OpenShot/openshot-qt/releases/download/v3.5.1/OpenShot-v3.5.1-x86_64.dmg",
+  "vendor_url": "https://github.com/OpenShot/openshot-qt/releases/download/v3.5.1/OpenShot-v3.5.1-x86_64.dmg",
   "bundleId": "org.openshot.OpenShot",
   "homepage": "https://openshot.org/",
   "fileName": "OpenShot-v3.5.1-x86_64.dmg",

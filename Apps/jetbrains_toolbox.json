@@ -3,6 +3,7 @@
   "description": "JetBrains tools manager",
   "version": "3.4.2",
   "url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.4.2.80952-arm64.dmg",
+  "vendor_url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.4.2.80952-arm64.dmg",
   "bundleId": "com.jetbrains.toolbox",
   "homepage": "https://www.jetbrains.com/toolbox-app/",
   "fileName": "jetbrains-toolbox-3.4.2.80952-arm64.dmg",

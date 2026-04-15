@@ -3,6 +3,7 @@
   "description": "Spreadsheet-database hybrid cloud collaboration",
   "version": "1.6.6",
   "url": "https://static.airtable.com/download/macos/Airtable-1.6.6.dmg",
+  "vendor_url": "https://static.airtable.com/download/macos/Airtable-1.6.6.dmg",
   "bundleId": "com.FormaGrid.Airtable",
   "homepage": "https://airtable.com/",
   "fileName": "Airtable-1.6.6.dmg",

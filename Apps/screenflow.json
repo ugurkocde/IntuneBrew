@@ -3,6 +3,7 @@
   "description": "Screen recording and video editing software",
   "version": "10.5.2",
   "url": "https://www.telestream.net/download-files/screenflow/10-5/ScreenFlow-10.5.2.dmg",
+  "vendor_url": "https://www.telestream.net/download-files/screenflow/10-5/ScreenFlow-10.5.2.dmg",
   "bundleId": "net.telestream.screenflow.globallibrary",
   "homepage": "https://www.telestream.net/screenflow/",
   "fileName": "ScreenFlow-10.5.2.dmg",

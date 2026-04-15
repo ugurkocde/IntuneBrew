@@ -3,6 +3,7 @@
   "description": "Web browser with built-in email client focusing on customization and control",
   "version": "7.9.3970.50",
   "url": "https://intunebrew.blob.core.windows.net/pkg/vivaldi_7.9.3970.50.pkg",
+  "vendor_url": "https://downloads.vivaldi.com/stable-auto/Vivaldi.7.9.3970.50.universal.tar.xz",
   "bundleId": "com.vivaldi.Vivaldi",
   "homepage": "https://vivaldi.com/",
   "fileName": "vivaldi_7.9.3970.50.pkg",

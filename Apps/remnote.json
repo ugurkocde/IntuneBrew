@@ -3,6 +3,7 @@
   "description": "Spaced-repetition powered note-taking tool",
   "version": "1.25.7",
   "url": "https://intunebrew.blob.core.windows.net/pkg/remnote_1.25.7.pkg",
+  "vendor_url": "https://download2.remnote.io/remnote-desktop2/RemNote-1.25.7-arm64-mac.zip",
   "bundleId": "io.remnote",
   "homepage": "https://www.remnote.com/",
   "fileName": "remnote_1.25.7.pkg",

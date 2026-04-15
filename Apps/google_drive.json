@@ -3,6 +3,7 @@
   "description": "Client for the Google Drive storage service",
   "version": "123.0.1",
   "url": "https://dl.google.com/drive-file-stream/5-percent/GoogleDrive.dmg",
+  "vendor_url": "https://dl.google.com/drive-file-stream/5-percent/GoogleDrive.dmg",
   "bundleId": "com.google.drivefs",
   "homepage": "https://www.google.com/drive/",
   "fileName": "GoogleDrive.dmg",

@@ -3,6 +3,7 @@
   "description": "Git client",
   "version": "2125",
   "url": "https://intunebrew.blob.core.windows.net/pkg/sublime_merge_2125.pkg",
+  "vendor_url": "https://download.sublimetext.com/sublime_merge_build_2125_mac.zip",
   "bundleId": "com.sublimemerge",
   "homepage": "https://www.sublimemerge.com/",
   "fileName": "sublime_merge_2125.pkg",

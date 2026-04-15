@@ -3,6 +3,7 @@
   "description": "File manager with a dual-pane interface",
   "version": "1.6.0-1",
   "url": "https://github.com/mucommander/mucommander/releases/download/1.6.0-1/muCommander-1.6.0-1-aarch64.dmg",
+  "vendor_url": "https://github.com/mucommander/mucommander/releases/download/1.6.0-1/muCommander-1.6.0-1-aarch64.dmg",
   "bundleId": "com.mucommander.muCommander",
   "homepage": "https://www.mucommander.com/",
   "fileName": "muCommander-1.6.0-1-aarch64.dmg",

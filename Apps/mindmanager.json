@@ -3,6 +3,7 @@
   "description": "Mind Mapping Tool",
   "version": "25.2.105",
   "url": "https://download.mindjet.com/MindManager_Mac_25.2.105.dmg",
+  "vendor_url": "https://download.mindjet.com/MindManager_Mac_25.2.105.dmg",
   "bundleId": "com.mindjet.mindmanager.24",
   "homepage": "https://www.mindjet.com/mindmanager/",
   "fileName": "MindManager_Mac_25.2.105.dmg",

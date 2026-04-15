@@ -3,6 +3,7 @@
   "description": "Markdown note editor for developers",
   "version": "0.23.1",
   "url": "https://github.com/BoostIO/BoostNote-App/releases/download/v0.23.1/boost-note-mac.dmg",
+  "vendor_url": "https://github.com/BoostIO/BoostNote-App/releases/download/v0.23.1/boost-note-mac.dmg",
   "bundleId": "com.boostnote.legacy",
   "homepage": "https://github.com/BoostIO/BoostNote-App",
   "fileName": "boost-note-mac.dmg",

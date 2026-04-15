@@ -3,6 +3,7 @@
   "description": "Dock utility",
   "version": "2.6.0",
   "url": "https://github.com/PrajwalSD/Dockside/releases/download/v2.6.0/Dockside.dmg",
+  "vendor_url": "https://github.com/PrajwalSD/Dockside/releases/download/v2.6.0/Dockside.dmg",
   "bundleId": "com.hachipoo.Dockside",
   "homepage": "https://hachipoo.com/dockside-app",
   "fileName": "Dockside.dmg",

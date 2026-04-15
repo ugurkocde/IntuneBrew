@@ -3,6 +3,7 @@
   "description": "Data science IDE",
   "version": "2026.04.0-269",
   "url": "https://intunebrew.blob.core.windows.net/pkg/positron_2026.04.0-269.pkg",
+  "vendor_url": "https://cdn.posit.co/positron/releases/mac/arm64/Positron-darwin-2026.04.0-269-arm64.zip",
   "bundleId": "com.rstudio.positron",
   "homepage": "https://positron.posit.co/",
   "fileName": "positron_2026.04.0-269.pkg",

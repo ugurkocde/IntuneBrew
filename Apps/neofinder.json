@@ -3,6 +3,7 @@
   "description": "Digital media asset manager",
   "version": "9.2.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/neofinder_9.2.1.pkg",
+  "vendor_url": "https://www.wfs-apps.de/updates/neofinder-mac.9.2.1.zip",
   "bundleId": "de.wfs-apps.neofinder",
   "homepage": "https://www.cdfinder.de/",
   "fileName": "neofinder_9.2.1.pkg",

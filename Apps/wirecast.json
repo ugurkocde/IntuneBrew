@@ -3,6 +3,7 @@
   "description": "Live video streaming production tool",
   "version": "16.5.1",
   "url": "https://www.telestream.net/download-files/wirecast/16-5/Wirecast-16.5.1.dmg",
+  "vendor_url": "https://www.telestream.net/download-files/wirecast/16-5/Wirecast-16.5.1.dmg",
   "bundleId": "net.telestream.wirecast",
   "homepage": "https://www.telestream.net/wirecast/",
   "fileName": "Wirecast-16.5.1.dmg",

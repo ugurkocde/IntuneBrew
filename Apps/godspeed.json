@@ -3,6 +3,7 @@
   "description": "Keyboard-focused todo manager",
   "version": "1.9.19",
   "url": "https://intunebrew.blob.core.windows.net/pkg/godspeed_1.9.19.pkg",
+  "vendor_url": "https://app-updates.godspeedapp.com/1.9.19%2FGodspeed.zip",
   "bundleId": "com.godspeedapp.Godspeed",
   "homepage": "https://godspeedapp.com/",
   "fileName": "godspeed_1.9.19.pkg",

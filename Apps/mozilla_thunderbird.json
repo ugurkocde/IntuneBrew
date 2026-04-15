@@ -3,6 +3,7 @@
   "description": "Customizable email client",
   "version": "149.0.2",
   "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/149.0.2/mac/en-US/Thunderbird%20149.0.2.dmg",
+  "vendor_url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/149.0.2/mac/en-US/Thunderbird%20149.0.2.dmg",
   "bundleId": "org.mozilla.thunderbird",
   "homepage": "https://www.thunderbird.net/en-US/",
   "fileName": "Thunderbird 149.0.2.dmg",

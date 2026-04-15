@@ -3,6 +3,7 @@
   "description": "AI chatbot for many LLMs",
   "version": "26.4.5",
   "url": "https://releases.chatwise.app/26.4.5/ChatWise-26.4.5-arm64.dmg",
+  "vendor_url": "https://releases.chatwise.app/26.4.5/ChatWise-26.4.5-arm64.dmg",
   "bundleId": "app.chatwise",
   "homepage": "https://chatwise.app/",
   "fileName": "ChatWise-26.4.5-arm64.dmg",

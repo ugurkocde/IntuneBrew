@@ -3,6 +3,7 @@
   "description": "Clipboard manager with advanced features",
   "version": "15.0.0",
   "url": "https://github.com/hluk/CopyQ/releases/download/v15.0.0/CopyQ-15.0.0-macos-12-m1.dmg",
+  "vendor_url": "https://github.com/hluk/CopyQ/releases/download/v15.0.0/CopyQ-15.0.0-macos-12-m1.dmg",
   "bundleId": "io.github.hluk.CopyQ",
   "homepage": "https://hluk.github.io/CopyQ/",
   "fileName": "CopyQ-15.0.0-macos-12-m1.dmg",

@@ -3,6 +3,7 @@
   "description": "Privacy enhanced BitTorrent client with P2P content discovery",
   "version": "8.4.2",
   "url": "https://github.com/Tribler/tribler/releases/download/v8.4.2/Tribler-8.4.2-arm.dmg",
+  "vendor_url": "https://github.com/Tribler/tribler/releases/download/v8.4.2/Tribler-8.4.2-arm.dmg",
   "bundleId": "com.nl-tudelft-tribler",
   "homepage": "https://www.tribler.org/",
   "fileName": "Tribler-8.4.2-arm.dmg",

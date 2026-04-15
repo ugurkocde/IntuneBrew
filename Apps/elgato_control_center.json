@@ -3,6 +3,7 @@
   "description": "Control your Elgato key lights",
   "version": "1.8.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/elgato_control_center_1.8.2.pkg",
+  "vendor_url": "https://edge.elgato.com/egc/macos/eccm/1.8.2/ElgatoControlCenter-1.8.2.20643.zip",
   "bundleId": "com.corsair.ControlCenter",
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
   "fileName": "elgato_control_center_1.8.2.pkg",

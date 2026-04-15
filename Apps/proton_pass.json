@@ -3,6 +3,7 @@
   "description": "Desktop client for Proton Pass",
   "version": "1.36.0",
   "url": "https://proton.me/download/pass/macos/ProtonPass_1.36.0.dmg",
+  "vendor_url": "https://proton.me/download/pass/macos/ProtonPass_1.36.0.dmg",
   "bundleId": "me.proton.pass.electron",
   "homepage": "https://proton.me/pass",
   "fileName": "ProtonPass_1.36.0.dmg",

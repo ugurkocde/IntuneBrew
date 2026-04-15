@@ -3,6 +3,7 @@
   "description": "SSH Client",
   "version": "2.2.15",
   "url": "https://cdn.netsarang.net/0ac7ea20/PortX-2.2.15-arm64.dmg",
+  "vendor_url": "https://cdn.netsarang.net/0ac7ea20/PortX-2.2.15-arm64.dmg",
   "bundleId": "com.netsarang.portx",
   "homepage": "https://portx.online/",
   "fileName": "PortX-2.2.15-arm64.dmg",

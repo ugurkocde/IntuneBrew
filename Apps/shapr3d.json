@@ -3,6 +3,7 @@
   "description": "3D CAD software",
   "version": "26.50.0.10685",
   "url": "https://download.shapr3d.com/mac/Shapr3D-26.50.0.10685.dmg",
+  "vendor_url": "https://download.shapr3d.com/mac/Shapr3D-26.50.0.10685.dmg",
   "bundleId": "com.shapr3d.shapr",
   "homepage": "https://www.shapr3d.com/",
   "fileName": "Shapr3D-26.50.0.10685.dmg",

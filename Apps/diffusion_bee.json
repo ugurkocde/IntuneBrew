@@ -3,6 +3,7 @@
   "description": "Run Stable Diffusion locally",
   "version": "2.5.3",
   "url": "https://github.com/divamgupta/diffusionbee-stable-diffusion-ui/releases/download/2.5.3/DiffusionBee_MPS_arm64-2.5.3.dmg",
+  "vendor_url": "https://github.com/divamgupta/diffusionbee-stable-diffusion-ui/releases/download/2.5.3/DiffusionBee_MPS_arm64-2.5.3.dmg",
   "bundleId": "com.diffusionbee.diffusionbee",
   "homepage": "https://diffusionbee.com/",
   "fileName": "DiffusionBee_MPS_arm64-2.5.3.dmg",

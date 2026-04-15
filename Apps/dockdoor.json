@@ -3,6 +3,7 @@
   "description": "Window peeking utility app",
   "version": "1.34.1",
   "url": "https://github.com/ejbills/DockDoor/releases/download/1.34.1/DockDoor.dmg",
+  "vendor_url": "https://github.com/ejbills/DockDoor/releases/download/1.34.1/DockDoor.dmg",
   "bundleId": "com.ejbills.DockDoor",
   "homepage": "https://dockdoor.net/",
   "fileName": "DockDoor.dmg",

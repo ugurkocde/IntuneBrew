@@ -3,6 +3,7 @@
   "description": "Dictionary and translator app",
   "version": "2.18.1",
   "url": "https://github.com/tisfeng/Easydict/releases/download/2.18.1/Easydict.dmg",
+  "vendor_url": "https://github.com/tisfeng/Easydict/releases/download/2.18.1/Easydict.dmg",
   "bundleId": "com.izual.Easydict",
   "homepage": "https://github.com/tisfeng/Easydict/",
   "fileName": "Easydict.dmg",

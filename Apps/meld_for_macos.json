@@ -3,6 +3,7 @@
   "description": "Visual diff and merge tool",
   "version": "3.22.3+105",
   "url": "https://gitlab.com/api/v4/projects/51547804/packages/generic/meld_macos/3.22.3+105/Meld-3.22.3+105_arm64.dmg",
+  "vendor_url": "https://gitlab.com/api/v4/projects/51547804/packages/generic/meld_macos/3.22.3+105/Meld-3.22.3+105_arm64.dmg",
   "bundleId": "org.gnome.Meld",
   "homepage": "https://gitlab.com/dehesselle/meld_macos",
   "fileName": "Meld-3.22.3+105_arm64.dmg",

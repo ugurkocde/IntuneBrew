@@ -3,6 +3,7 @@
   "description": "Contacts manager",
   "version": "2.4.7",
   "url": "https://intunebrew.blob.core.windows.net/pkg/cardhop_2.4.7.pkg",
+  "vendor_url": "https://cdn.flexibits.com/Cardhop_2.4.7.zip",
   "bundleId": "com.flexibits.cardhop.mac",
   "homepage": "https://flexibits.com/cardhop",
   "fileName": "cardhop_2.4.7.pkg",

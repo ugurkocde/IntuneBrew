@@ -3,6 +3,7 @@
   "description": "Note-taking application",
   "version": "1.5.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/sidenotes_1.5.4.pkg",
+  "vendor_url": "https://www.apptorium.com/public/products/sidenotes/releases/SideNotes-1.5.4.zip",
   "bundleId": "com.apptorium.SideNotes-paddle",
   "homepage": "https://www.apptorium.com/sidenotes",
   "fileName": "sidenotes_1.5.4.pkg",

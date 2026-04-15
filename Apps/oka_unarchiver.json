@@ -3,6 +3,7 @@
   "description": "Free unarchiver",
   "version": "2.1.6",
   "url": "https://cdn.okaapps.com/resource/download/OkaUnarchiver.dmg",
+  "vendor_url": "https://cdn.okaapps.com/resource/download/OkaUnarchiver.dmg",
   "bundleId": "com.nicola.Oka-Unarchiver",
   "homepage": "https://okaapps.com/product/1441507725",
   "fileName": "OkaUnarchiver.dmg",

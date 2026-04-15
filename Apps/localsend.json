@@ -3,6 +3,7 @@
   "description": "Open-source cross-platform alternative to AirDrop",
   "version": "1.17.0",
   "url": "https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0.dmg",
+  "vendor_url": "https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0.dmg",
   "bundleId": "org.localsend.localsendApp",
   "homepage": "https://localsend.org/",
   "fileName": "LocalSend-1.17.0.dmg",

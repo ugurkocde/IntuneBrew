@@ -3,6 +3,7 @@
   "description": "Sound, video and lighting control",
   "version": "5.5.10",
   "url": "https://intunebrew.blob.core.windows.net/pkg/qlab_5.5.10.pkg",
+  "vendor_url": "https://qlab.app/downloads/archive/QLab-5.5.10.zip",
   "bundleId": "com.figure53.QLab.5",
   "homepage": "https://qlab.app/",
   "fileName": "qlab_5.5.10.pkg",

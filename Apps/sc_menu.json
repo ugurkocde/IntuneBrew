@@ -3,6 +3,7 @@
   "description": "Simple smartcard menu item",
   "version": "2.1",
   "url": "https://github.com/boberito/sc_menu/releases/download/2.1/SC_Menu.dmg",
+  "vendor_url": "https://github.com/boberito/sc_menu/releases/download/2.1/SC_Menu.dmg",
   "bundleId": "de.sccm.SCMenu",
   "homepage": "https://github.com/boberito/sc_menu",
   "fileName": "SC_Menu.dmg",

@@ -3,6 +3,7 @@
   "description": "Companion app for the Trezor hardware wallet",
   "version": "26.3.3",
   "url": "https://data.trezor.io/suite/releases/desktop/latest/Trezor-Suite-26.3.3-mac-arm64.dmg",
+  "vendor_url": "https://data.trezor.io/suite/releases/desktop/latest/Trezor-Suite-26.3.3-mac-arm64.dmg",
   "bundleId": "io.trezor.TrezorSuite",
   "homepage": "https://suite.trezor.io/",
   "fileName": "Trezor-Suite-26.3.3-mac-arm64.dmg",

@@ -3,6 +3,7 @@
   "description": "Screenshot software",
   "version": "13.3.0",
   "url": "https://github.com/flameshot-org/flameshot/releases/download/v13.3.0/Flameshot-13.3.0-artifact-macos-arm64.dmg",
+  "vendor_url": "https://github.com/flameshot-org/flameshot/releases/download/v13.3.0/Flameshot-13.3.0-artifact-macos-arm64.dmg",
   "bundleId": "org.flameshot.Flameshot",
   "homepage": "https://flameshot.org/",
   "fileName": "Flameshot-13.3.0-artifact-macos-arm64.dmg",

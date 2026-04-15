@@ -3,6 +3,7 @@
   "description": "Ebook reader",
   "version": "0.10.6",
   "url": "https://github.com/readest/readest/releases/download/v0.10.6/Readest_0.10.6_universal.dmg",
+  "vendor_url": "https://github.com/readest/readest/releases/download/v0.10.6/Readest_0.10.6_universal.dmg",
   "bundleId": "com.bilingify.readest",
   "homepage": "https://readest.com/",
   "fileName": "Readest_0.10.6_universal.dmg",

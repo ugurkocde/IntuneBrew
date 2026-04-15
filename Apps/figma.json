@@ -3,6 +3,7 @@
   "description": "Collaborative team software",
   "version": "126.2.10",
   "url": "https://intunebrew.blob.core.windows.net/pkg/figma_126.2.10.pkg",
+  "vendor_url": "https://desktop.figma.com/mac-arm/Figma-126.2.10.zip",
   "bundleId": "com.figma.Desktop",
   "homepage": "https://www.figma.com/",
   "fileName": "figma_126.2.10.pkg",

@@ -3,6 +3,7 @@
   "description": "Audio playback software",
   "version": "3.5.50",
   "url": "https://audirvana.com/delivery/Audirvana_3.5.50.dmg",
+  "vendor_url": "https://audirvana.com/delivery/Audirvana_3.5.50.dmg",
   "bundleId": "com.audirvana.Audirvana-Studio",
   "homepage": "https://audirvana.com/",
   "fileName": "Audirvana_3.5.50.dmg",

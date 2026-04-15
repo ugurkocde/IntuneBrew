@@ -3,6 +3,7 @@
   "description": "API development platform",
   "version": "2.8.24",
   "url": "https://file-assets.apidog.com/download/2.8.24/legacy-Apidog-macOS-arm64-2.8.24.dmg",
+  "vendor_url": "https://file-assets.apidog.com/download/2.8.24/legacy-Apidog-macOS-arm64-2.8.24.dmg",
   "bundleId": "com.apidog.app",
   "homepage": "https://apidog.com/",
   "fileName": "legacy-Apidog-macOS-arm64-2.8.24.dmg",

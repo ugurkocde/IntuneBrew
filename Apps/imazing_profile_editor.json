@@ -3,6 +3,7 @@
   "description": "Apple Device Configuration Profile Editor",
   "version": "2.2.0",
   "url": "https://downloads.imazing.com/mac/iMazing-Profile-Editor/2.2.0.392103/iMazing_Profile_Editor_2.2.0.392103.dmg",
+  "vendor_url": "https://downloads.imazing.com/mac/iMazing-Profile-Editor/2.2.0.392103/iMazing_Profile_Editor_2.2.0.392103.dmg",
   "bundleId": "com.DigiDNA.iMazingProfileEditorMac",
   "homepage": "https://imazing.com/profile-editor",
   "fileName": "iMazing_Profile_Editor_2.2.0.392103.dmg",

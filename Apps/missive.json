@@ -3,6 +3,7 @@
   "description": "Team inbox and chat tool",
   "version": "11.12.4",
   "url": "https://downloads.missiveapp.com/11.12.4/Missive-11.12.4.dmg",
+  "vendor_url": "https://downloads.missiveapp.com/11.12.4/Missive-11.12.4.dmg",
   "bundleId": "com.missiveapp.osx",
   "homepage": "https://missiveapp.com/",
   "fileName": "Missive-11.12.4.dmg",

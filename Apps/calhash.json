@@ -3,6 +3,7 @@
   "description": "Calculate and compare file checksums",
   "version": "1.5.5",
   "url": "https://www.titanium-software.fr/download/26/CalHash.dmg",
+  "vendor_url": "https://www.titanium-software.fr/download/26/CalHash.dmg",
   "bundleId": "com.titanium.CalHash",
   "homepage": "https://www.titanium-software.fr/en/calhash.html",
   "fileName": "CalHash.dmg",

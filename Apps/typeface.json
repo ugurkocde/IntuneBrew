@@ -3,6 +3,7 @@
   "description": "Font manager application",
   "version": "4.2.3",
   "url": "https://dcdn.typefaceapp.com/Typeface-4.2.3-4845/Typeface-4.2.3-4845.dmg",
+  "vendor_url": "https://dcdn.typefaceapp.com/Typeface-4.2.3-4845/Typeface-4.2.3-4845.dmg",
   "bundleId": "com.criminalbird.typeface.standalone",
   "homepage": "https://typefaceapp.com/",
   "fileName": "Typeface-4.2.3-4845.dmg",

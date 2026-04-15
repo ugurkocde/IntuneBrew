@@ -3,6 +3,7 @@
   "description": "Command-line tool for Aptible Deploy, an audit-ready App Deployment Platform",
   "version": "0.26.5",
   "url": "https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/gh-74/pkg/aptible-toolbelt-0.26.5%2B20260312232223-mac-os-x.10.15.7-1.pkg",
+  "vendor_url": "https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/gh-74/pkg/aptible-toolbelt-0.26.5%2B20260312232223-mac-os-x.10.15.7-1.pkg",
   "bundleId": "com.aptible.toolbelt",
   "homepage": "https://www.aptible.com/docs/reference/aptible-cli/overview",
   "fileName": "aptible-toolbelt-0.26.5+20260312232223-mac-os-x.10.15.7-1.pkg",

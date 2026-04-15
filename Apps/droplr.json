@@ -3,6 +3,7 @@
   "description": "Screenshot and screen recorder",
   "version": "5.9.19",
   "url": "https://intunebrew.blob.core.windows.net/pkg/droplr_5.9.19.pkg",
+  "vendor_url": "https://files.droplr.com/apps/mac/Droplr5919-478.zip",
   "bundleId": "com.droplr.droplr-mac",
   "homepage": "https://droplr.com/",
   "fileName": "droplr_5.9.19.pkg",

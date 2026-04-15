@@ -3,6 +3,7 @@
   "description": "Batch rename utility",
   "version": "10.1.0",
   "url": "https://www.transnomino.com/download/Transnomino-10.1.0.dmg",
+  "vendor_url": "https://www.transnomino.com/download/Transnomino-10.1.0.dmg",
   "bundleId": "com.bastiaanverreijt.Transnomino",
   "homepage": "https://www.transnomino.com/",
   "fileName": "Transnomino-10.1.0.dmg",

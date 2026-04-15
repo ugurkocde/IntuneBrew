@@ -3,6 +3,7 @@
   "description": "Transcribes and translates audio",
   "version": "1.2.0",
   "url": "https://github.com/chidiwilliams/buzz/releases/download/v1.2.0/Buzz-1.2.0-mac-arm64.dmg",
+  "vendor_url": "https://github.com/chidiwilliams/buzz/releases/download/v1.2.0/Buzz-1.2.0-mac-arm64.dmg",
   "bundleId": "com.chidiwilliams.buzz",
   "homepage": "https://github.com/chidiwilliams/buzz",
   "fileName": "Buzz-1.2.0-mac-arm64.dmg",

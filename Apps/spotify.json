@@ -3,6 +3,7 @@
   "description": "Music streaming service",
   "version": "1.2.86.502",
   "url": "https://download.scdn.co/SpotifyARM64.dmg",
+  "vendor_url": "https://download.scdn.co/SpotifyARM64.dmg",
   "bundleId": "com.spotify.client",
   "homepage": "https://www.spotify.com/",
   "fileName": "SpotifyARM64.dmg",

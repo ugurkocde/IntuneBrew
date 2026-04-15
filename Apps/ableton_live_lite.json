@@ -3,6 +3,7 @@
   "description": "Sound and music editor",
   "version": "12.3.7",
   "url": "https://cdn-downloads.ableton.com/channels/12.3.7/ableton_live_lite_12.3.7_universal.dmg",
+  "vendor_url": "https://cdn-downloads.ableton.com/channels/12.3.7/ableton_live_lite_12.3.7_universal.dmg",
   "bundleId": "com.ableton.live",
   "homepage": "https://www.ableton.com/en/products/live-lite/",
   "fileName": "ableton_live_lite_12.3.7_universal.dmg",

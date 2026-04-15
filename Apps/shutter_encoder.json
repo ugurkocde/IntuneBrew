@@ -3,6 +3,7 @@
   "description": "Video, audio and image converter",
   "version": "20.0",
   "url": "https://www.shutterencoder.com/Shutter%20Encoder%2020.0%20Apple%20Silicon.pkg",
+  "vendor_url": "https://www.shutterencoder.com/Shutter%20Encoder%2020.0%20Apple%20Silicon.pkg",
   "bundleId": "com.paulpacifico.shutterencoder",
   "homepage": "https://www.shutterencoder.com/",
   "fileName": "Shutter Encoder 20.0 Apple Silicon.pkg",

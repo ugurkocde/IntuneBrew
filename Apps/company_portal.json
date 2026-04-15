@@ -3,6 +3,7 @@
   "description": "App to manage access to corporate apps, data, and resources",
   "version": "5.2602.0",
   "url": "https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/CompanyPortal_5.2602.0-Upgrade.pkg",
+  "vendor_url": "https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/CompanyPortal_5.2602.0-Upgrade.pkg",
   "bundleId": "com.microsoft.CompanyPortalMac",
   "homepage": "https://docs.microsoft.com/en-us/mem/intune/user-help/enroll-your-device-in-intune-macos-cp",
   "fileName": "CompanyPortal_5.2602.0-Upgrade.pkg",

@@ -3,6 +3,7 @@
   "description": "HTTP(S) debugging proxy, analyzer, and client",
   "version": "1.25.1",
   "url": "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.25.1/HttpToolkit-1.25.1-arm64.dmg",
+  "vendor_url": "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.25.1/HttpToolkit-1.25.1-arm64.dmg",
   "bundleId": "tech.httptoolkit.desktop",
   "homepage": "https://httptoolkit.tech/",
   "fileName": "HttpToolkit-1.25.1-arm64.dmg",

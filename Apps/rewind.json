@@ -3,6 +3,7 @@
   "description": "Record and search your screen and audio",
   "version": "1.5310",
   "url": "https://download.rewind.ai/Rewind.dmg",
+  "vendor_url": "https://download.rewind.ai/Rewind.dmg",
   "bundleId": "com.memoryvault.MemoryVault",
   "homepage": "https://www.rewind.ai/",
   "fileName": "Rewind.dmg",

@@ -3,6 +3,7 @@
   "description": "End-to-end encryption software",
   "version": "6.6.2",
   "url": "https://prerelease.keybase.io/Keybase-arm64.dmg",
+  "vendor_url": "https://prerelease.keybase.io/Keybase-arm64.dmg",
   "bundleId": "keybase.Helper",
   "homepage": "https://keybase.io/",
   "fileName": "keybase_6.5.4.pkg",

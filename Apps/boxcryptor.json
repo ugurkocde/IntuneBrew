@@ -3,6 +3,7 @@
   "description": "Tool to encrypt files and folders in various cloud storage services",
   "version": "3.13.680",
   "url": "https://downloads.boxcryptor.com/boxcryptor/mac/Boxcryptor_v3.13.680_Installer.dmg",
+  "vendor_url": "https://downloads.boxcryptor.com/boxcryptor/mac/Boxcryptor_v3.13.680_Installer.dmg",
   "bundleId": "com.boxcryptor.ios",
   "homepage": "https://www.boxcryptor.com/en/",
   "fileName": "Boxcryptor_v3.13.680_Installer.dmg",

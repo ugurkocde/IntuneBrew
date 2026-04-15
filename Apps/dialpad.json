@@ -3,6 +3,7 @@
   "description": "Cloud communication platform",
   "version": "2603.3.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/dialpad_2603.3.3.pkg",
+  "vendor_url": "https://storage.googleapis.com/dialpad_native/osx/arm64/Dialpad.2603.3.3.zip",
   "bundleId": "com.electron.dialpad",
   "homepage": "https://dialpad.com/download",
   "fileName": "dialpad_2603.3.3.pkg",

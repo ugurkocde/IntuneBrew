@@ -3,6 +3,7 @@
   "description": "Anti-virus and malware scanner",
   "version": "3.10",
   "url": "https://cdn.clamxav.com/ClamXAVdownloads/ClamXAV_3.10_11436_Installer.pkg",
+  "vendor_url": "https://cdn.clamxav.com/ClamXAVdownloads/ClamXAV_3.10_11436_Installer.pkg",
   "bundleId": "uk.co.canimaansoftware.clamxav",
   "homepage": "https://www.clamxav.com/",
   "fileName": "ClamXAV_3.10_11436_Installer.pkg",

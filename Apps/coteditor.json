@@ -3,6 +3,7 @@
   "description": "Plain-text editor for web pages, program source codes and more",
   "version": "6.2.6",
   "url": "https://github.com/coteditor/CotEditor/releases/download/6.2.6/CotEditor_6.2.6.dmg",
+  "vendor_url": "https://github.com/coteditor/CotEditor/releases/download/6.2.6/CotEditor_6.2.6.dmg",
   "bundleId": "com.coteditor.CotEditor",
   "homepage": "https://coteditor.com/",
   "fileName": "CotEditor_6.2.6.dmg",

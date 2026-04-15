@@ -3,6 +3,7 @@
   "description": "Onion routing based messenger",
   "version": "1.18.0",
   "url": "https://github.com/session-foundation/session-desktop/releases/download/v1.18.0/session-desktop-mac-arm64-1.18.0.dmg",
+  "vendor_url": "https://github.com/session-foundation/session-desktop/releases/download/v1.18.0/session-desktop-mac-arm64-1.18.0.dmg",
   "bundleId": "com.loki-project.messenger-desktop",
   "homepage": "https://getsession.org/",
   "fileName": "session-desktop-mac-arm64-1.18.0.dmg",

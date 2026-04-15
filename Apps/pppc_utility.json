@@ -3,6 +3,7 @@
   "description": "Create configuration profiles containing a PPPC payload",
   "version": "1.5.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/pppc_utility_1.5.0.pkg",
+  "vendor_url": "https://github.com/jamf/PPPC-Utility/releases/download/1.5.0/PPPC-Utility.zip",
   "bundleId": "com.jamf.opensource.pppcutility",
   "homepage": "https://github.com/jamf/PPPC-Utility",
   "fileName": "pppc_utility_1.5.0.pkg",

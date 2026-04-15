@@ -3,6 +3,7 @@
   "description": "Explore, create and publicly share data visualisations online",
   "version": "2026.1.0",
   "url": "https://downloads.tableau.com/esdalt/2026.1.0/TableauPublic-2026-1-0-arm64.pkg",
+  "vendor_url": "https://downloads.tableau.com/esdalt/2026.1.0/TableauPublic-2026-1-0-arm64.pkg",
   "bundleId": "com.tableausoftware.tableaupublic",
   "homepage": "https://public.tableau.com/s/",
   "fileName": "TableauPublic-2026-1-0-arm64.pkg",

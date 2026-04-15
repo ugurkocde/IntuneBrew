@@ -3,6 +3,7 @@
   "description": "Git client with Finder integration",
   "version": "1.7.11",
   "url": "https://gitfinder.com/updates/GitFinder1_7_11.dmg",
+  "vendor_url": "https://gitfinder.com/updates/GitFinder1_7_11.dmg",
   "bundleId": "ag.zigz.GitFinder",
   "homepage": "https://gitfinder.com/",
   "fileName": "GitFinder1_7_11.dmg",

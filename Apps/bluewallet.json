@@ -3,6 +3,7 @@
   "description": "Bitcoin wallet and Lightning wallet",
   "version": "7.2.6",
   "url": "https://github.com/BlueWallet/BlueWallet/releases/download/v7.2.6/BlueWallet.7.2.6.dmg",
+  "vendor_url": "https://github.com/BlueWallet/BlueWallet/releases/download/v7.2.6/BlueWallet.7.2.6.dmg",
   "bundleId": "io.bluewallet.bluewallet",
   "homepage": "https://bluewallet.io/",
   "fileName": "BlueWallet.7.2.6.dmg",

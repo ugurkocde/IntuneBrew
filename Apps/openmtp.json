@@ -3,6 +3,7 @@
   "description": "Android file transfer",
   "version": "3.2.25",
   "url": "https://intunebrew.blob.core.windows.net/pkg/openmtp_3.2.25.pkg",
+  "vendor_url": "https://github.com/ganeshrvel/openmtp/releases/download/v3.2.25/openmtp-3.2.25-mac-arm64.zip",
   "bundleId": "io.ganeshrvel.openmtp",
   "homepage": "https://openmtp.ganeshrvel.com/",
   "fileName": "openmtp_3.2.25.pkg",

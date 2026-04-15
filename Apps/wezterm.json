@@ -3,6 +3,7 @@
   "description": "GPU-accelerated cross-platform terminal emulator and multiplexer",
   "version": "20240203-110809",
   "url": "https://intunebrew.blob.core.windows.net/pkg/wezterm_20240203-110809.pkg",
+  "vendor_url": "https://github.com/wezterm/wezterm/releases/download/20240203-110809-5046fc22/WezTerm-macos-20240203-110809-5046fc22.zip",
   "bundleId": "com.github.wez.wezterm",
   "homepage": "https://wezterm.org/",
   "fileName": "wezterm_20240203-110809.pkg",

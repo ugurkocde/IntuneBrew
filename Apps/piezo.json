@@ -3,6 +3,7 @@
   "description": "Audio recording application",
   "version": "1.9.8",
   "url": "https://intunebrew.blob.core.windows.net/pkg/piezo_1.9.8.pkg",
+  "vendor_url": "https://cdn.rogueamoeba.com/piezo/download/Piezo.zip",
   "bundleId": "com.rogueamoeba.Piezo",
   "homepage": "https://rogueamoeba.com/piezo/",
   "fileName": "piezo_1.9.8.pkg",

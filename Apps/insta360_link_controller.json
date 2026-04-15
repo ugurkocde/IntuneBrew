@@ -3,6 +3,7 @@
   "description": "Controller for Insta360 webcams",
   "version": "2.2.1",
   "url": "https://wassets.insta360.com/common/da87dfa499b745129aa20d51113aab71/Insta360LinkController_2.2.1(build24)_20260202_115048_signed_1770004724733.pkg",
+  "vendor_url": "https://wassets.insta360.com/common/da87dfa499b745129aa20d51113aab71/Insta360LinkController_2.2.1(build24)_20260202_115048_signed_1770004724733.pkg",
   "bundleId": "com.insta360.webcam",
   "homepage": "https://www.insta360.com/",
   "fileName": "Insta360LinkController_2.2.1(build24)_20260202_115048_signed_1770004724733.pkg",

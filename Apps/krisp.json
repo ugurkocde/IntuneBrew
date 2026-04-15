@@ -3,6 +3,7 @@
   "description": "Noise cancelling application",
   "version": "3.11.8",
   "url": "https://cdn.krisp.ai/mp/mn/3.11/mac/Krisp_3.11.8_arm64.pkg",
+  "vendor_url": "https://cdn.krisp.ai/mp/mn/3.11/mac/Krisp_3.11.8_arm64.pkg",
   "bundleId": "ai.krisp.krispMac",
   "homepage": "https://krisp.ai/",
   "fileName": "Krisp_3.11.8_arm64.pkg",

@@ -3,6 +3,7 @@
   "description": "Test localhost and staging websites",
   "version": "3.7.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/browserstack_local_testing_3.7.5.pkg",
+  "vendor_url": "https://www.browserstack.com/local-testing/downloads/native-app/BrowserStackLocal.tar.gz",
   "bundleId": "com.browserstack.local",
   "homepage": "https://www.browserstack.com/",
   "fileName": "browserstack_local_testing_3.7.5.pkg",

@@ -3,6 +3,7 @@
   "description": "Shows the next meeting in the menu bar",
   "version": "4.11.6",
   "url": "https://github.com/leits/MeetingBar/releases/download/v4.11.6/MeetingBar.dmg",
+  "vendor_url": "https://github.com/leits/MeetingBar/releases/download/v4.11.6/MeetingBar.dmg",
   "bundleId": "leits.MeetingBar",
   "homepage": "https://github.com/leits/MeetingBar",
   "fileName": "MeetingBar.dmg",

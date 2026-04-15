@@ -3,6 +3,7 @@
   "description": "Tool to customise input devices and automate computer systems",
   "version": "6.378",
   "url": "https://intunebrew.blob.core.windows.net/pkg/bettertouchtool_6.378.pkg",
+  "vendor_url": "https://folivora.ai/releases/btt6.378-2026041404.zip",
   "bundleId": "com.hegenberg.BetterTouchTool",
   "homepage": "https://folivora.ai/",
   "fileName": "bettertouchtool_6.378.pkg",

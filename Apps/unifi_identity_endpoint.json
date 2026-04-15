@@ -3,6 +3,7 @@
   "description": "License free Wi-Fi, VPN, and Access Application for Organizations",
   "version": "3.6.1",
   "url": "https://fw-download.ubnt.com/data/uid-identity-standard-desktop-app/63e6-macOS-3.6.1-bc43dfbc-7c53-47f3-82eb-917c2fa92c93.pkg",
+  "vendor_url": "https://fw-download.ubnt.com/data/uid-identity-standard-desktop-app/63e6-macOS-3.6.1-bc43dfbc-7c53-47f3-82eb-917c2fa92c93.pkg",
   "bundleId": "com.ui.uid.standard-desktop",
   "homepage": "https://www.ui.com/identity",
   "fileName": "63e6-macOS-3.6.1-bc43dfbc-7c53-47f3-82eb-917c2fa92c93.pkg",

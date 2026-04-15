@@ -3,6 +3,7 @@
   "description": "3D parametric modeller",
   "version": "1.1.0",
   "url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.0/FreeCAD_1.1.0-macOS-arm64-py311.dmg",
+  "vendor_url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.0/FreeCAD_1.1.0-macOS-arm64-py311.dmg",
   "bundleId": "org.freecad.FreeCAD",
   "homepage": "https://www.freecad.org/",
   "fileName": "FreeCAD_1.1.0-macOS-arm64-py311.dmg",

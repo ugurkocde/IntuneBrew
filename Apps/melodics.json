@@ -3,6 +3,7 @@
   "description": "Helps you learn to play your instrument",
   "version": "5.0.265",
   "url": "https://intunebrew.blob.core.windows.net/pkg/melodics_5.0.265.pkg",
+  "vendor_url": "https://web-cdn.melodics.com/download/C00B1D2D-B1BF-44B2-B562-FCD54601F1D1.zip",
   "bundleId": "com.melodics.Melodics",
   "homepage": "https://melodics.com/",
   "fileName": "melodics_5.0.265.pkg",

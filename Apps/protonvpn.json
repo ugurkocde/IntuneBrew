@@ -3,6 +3,7 @@
   "description": "VPN client focusing on security",
   "version": "6.4.0",
   "url": "https://vpn.protondownload.com/download/macos/6.4.0/ProtonVPN_mac_v6.4.0.dmg",
+  "vendor_url": "https://vpn.protondownload.com/download/macos/6.4.0/ProtonVPN_mac_v6.4.0.dmg",
   "bundleId": "ch.protonvpn.mac",
   "homepage": "https://protonvpn.com/",
   "fileName": "ProtonVPN_mac_v6.4.0.dmg",

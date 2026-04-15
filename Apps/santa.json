@@ -3,6 +3,7 @@
   "description": "Binary authorization system",
   "version": "2026.3",
   "url": "https://github.com/northpolesec/santa/releases/download/2026.3/santa-2026.3.dmg",
+  "vendor_url": "https://github.com/northpolesec/santa/releases/download/2026.3/santa-2026.3.dmg",
   "bundleId": "com.google.santa",
   "homepage": "https://github.com/google/santa",
   "fileName": "santa-2026.3.dmg",

@@ -3,6 +3,7 @@
   "description": "Monitors and reports any microphone and camera activity",
   "version": "1.6.1",
   "url": "https://sw-update.obdev.at/ftp/pub/Products/MicroSnitch/MicroSnitch-1.6.1.dmg",
+  "vendor_url": "https://sw-update.obdev.at/ftp/pub/Products/MicroSnitch/MicroSnitch-1.6.1.dmg",
   "bundleId": "at.obdev.MicroSnitch",
   "homepage": "https://www.obdev.at/products/microsnitch/index.html",
   "fileName": "MicroSnitch-1.6.1.dmg",

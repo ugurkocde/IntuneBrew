@@ -3,6 +3,7 @@
   "description": "Desktop app for inspecting React JS and React Native projects",
   "version": "3.10.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/reactotron_3.10.0.pkg",
+  "vendor_url": "https://github.com/infinitered/reactotron/releases/download/reactotron-app%403.10.0/Reactotron-3.10.0-arm64-mac.zip",
   "bundleId": "com.reactotron.app",
   "homepage": "https://github.com/infinitered/reactotron",
   "fileName": "reactotron_3.10.0.pkg",

@@ -3,6 +3,7 @@
   "description": "Calendar for professionals and teams",
   "version": "1.132.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/notion_calendar_1.132.0.pkg",
+  "vendor_url": "https://calendar-desktop-release.notion-static.com/Notion%20Calendar-darwin-arm64-1.132.0.zip",
   "bundleId": "com.cron.electron",
   "homepage": "https://www.notion.so/product/calendar",
   "fileName": "notion_calendar_1.132.0.pkg",

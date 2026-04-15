@@ -3,6 +3,7 @@
   "description": "Alternate version of the Opera web browser to complement gaming",
   "version": "129.0.5823.70",
   "url": "https://get.geo.opera.com/pub/opera_gx/129.0.5823.70/mac/Opera_GX_129.0.5823.70_Setup.dmg",
+  "vendor_url": "https://get.geo.opera.com/pub/opera_gx/129.0.5823.70/mac/Opera_GX_129.0.5823.70_Setup.dmg",
   "bundleId": "com.operasoftware.OperaGX",
   "homepage": "https://www.opera.com/gx",
   "fileName": "Opera_GX_129.0.5823.70_Setup.dmg",

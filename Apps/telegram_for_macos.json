@@ -3,6 +3,7 @@
   "description": "Messaging app with a focus on speed and security",
   "version": "12.6",
   "url": "https://intunebrew.blob.core.windows.net/pkg/telegram_for_macos_12.6.pkg",
+  "vendor_url": "https://osx.telegram.org/updates/Telegram-12.6.279903.app.zip",
   "bundleId": "ru.keepcoder.Telegram",
   "homepage": "https://macos.telegram.org/",
   "fileName": "telegram_for_macos_12.6.pkg",

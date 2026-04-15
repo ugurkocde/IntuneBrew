@@ -3,6 +3,7 @@
   "description": "Search and click text anywhere on screen",
   "version": "1.60",
   "url": "https://superkey.app/downloads/Superkey1.60.dmg",
+  "vendor_url": "https://superkey.app/downloads/Superkey1.60.dmg",
   "bundleId": "com.knollsoft.Superkey",
   "homepage": "https://superkey.app/",
   "fileName": "Superkey1.60.dmg",

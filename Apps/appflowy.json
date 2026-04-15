@@ -3,6 +3,7 @@
   "description": "Open-source project and knowledge management tool",
   "version": "0.11.7",
   "url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.11.7/Appflowy-0.11.7-macos-arm64.zip",
+  "vendor_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.11.7/Appflowy-0.11.7-macos-arm64.zip",
   "bundleId": "io.appflowy.AppFlowy",
   "homepage": "https://www.appflowy.io/",
   "fileName": "Appflowy-0.11.7-macos-arm64.zip",

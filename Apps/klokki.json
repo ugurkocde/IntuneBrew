@@ -3,6 +3,7 @@
   "description": "Automatic time-tracking solution",
   "version": "1.3.7",
   "url": "https://klokki.com/download/Klokki.dmg",
+  "vendor_url": "https://klokki.com/download/Klokki.dmg",
   "bundleId": "com.klokki-launcher",
   "homepage": "https://klokki.com/",
   "fileName": "Klokki.dmg",

@@ -3,6 +3,7 @@
   "description": "Administration tool for Native Instruments products",
   "version": "3.24.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/native_access_3.24.0.pkg",
+  "vendor_url": "https://na-update.native-instruments.com/arm64/Native-Access-arm64-mac-latest.zip",
   "bundleId": "com.native-instruments.nativeaccess2",
   "homepage": "https://www.native-instruments.com/en/specials/native-access-2/",
   "fileName": "native_access_3.24.0.pkg",

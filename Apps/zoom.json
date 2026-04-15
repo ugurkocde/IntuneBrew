@@ -3,6 +3,7 @@
   "description": "Video communication and virtual meeting platform",
   "version": "7.0.0.77593",
   "url": "https://cdn.zoom.us/prod/7.0.0.77593/arm64/zoomusInstallerFull.pkg",
+  "vendor_url": "https://cdn.zoom.us/prod/7.0.0.77593/arm64/zoomusInstallerFull.pkg",
   "bundleId": "us.zoom.pkg.videomeeting",
   "homepage": "https://www.zoom.us/",
   "fileName": "zoomusInstallerFull.pkg",

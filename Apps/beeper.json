@@ -3,6 +3,7 @@
   "description": "Universal chat app powered by Matrix",
   "version": "4.2.715",
   "url": "https://intunebrew.blob.core.windows.net/pkg/beeper_4.2.715.pkg",
+  "vendor_url": "https://beeper-desktop.download.beeper.com/builds/Beeper-4.2.742-arm64-mac.zip",
   "bundleId": "im.beeper",
   "homepage": "https://www.beeper.com/",
   "fileName": "beeper_4.2.715.pkg",

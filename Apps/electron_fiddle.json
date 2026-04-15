@@ -3,6 +3,7 @@
   "description": "Create and play with small Electron experiments",
   "version": "0.39.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/electron_fiddle_0.39.0.pkg",
+  "vendor_url": "https://github.com/electron/fiddle/releases/download/v0.39.0/Electron.Fiddle-darwin-arm64-0.39.0.zip",
   "bundleId": "com.electron.fiddle",
   "homepage": "https://www.electronjs.org/fiddle",
   "fileName": "electron_fiddle_0.39.0.pkg",

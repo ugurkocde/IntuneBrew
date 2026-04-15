@@ -3,6 +3,7 @@
   "description": "Free, open-source, and completely encrypted notes app",
   "version": "3.201.21",
   "url": "https://intunebrew.blob.core.windows.net/pkg/standard_notes_3.201.21.pkg",
+  "vendor_url": "https://github.com/standardnotes/app/releases/download/%40standardnotes%2Fdesktop%403.201.21/standard-notes-3.201.21-mac-arm64.zip",
   "bundleId": "org.standardnotes.standardnotes.helper",
   "homepage": "https://standardnotes.com/",
   "fileName": "standard_notes_3.201.21.pkg",

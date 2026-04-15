@@ -3,6 +3,7 @@
   "description": "Multiplayer Collaboration",
   "version": "3.0.2",
   "url": "https://github.com/hkgumbs/multi/releases/download/v3.0.2/Multi.3.0.2.dmg",
+  "vendor_url": "https://github.com/hkgumbs/multi/releases/download/v3.0.2/Multi.3.0.2.dmg",
   "bundleId": "app.multi.multi",
   "homepage": "https://www.multi.app/",
   "fileName": "Multi.3.0.2.dmg",

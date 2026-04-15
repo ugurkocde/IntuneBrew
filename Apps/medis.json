@@ -3,6 +3,7 @@
   "description": "Modern GUI for Redis",
   "version": "2.16.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/medis_2.16.1.pkg",
+  "vendor_url": "https://api.getmedis.com/medis/medis-2.16.1.zip",
   "bundleId": "li.zihua.medis",
   "homepage": "https://getmedis.com/",
   "fileName": "medis_2.16.1.pkg",

@@ -3,6 +3,7 @@
   "description": "PDF Editor",
   "version": "14.0.3.69295",
   "url": "https://cdn01.foxitsoftware.com/pub/foxit/phantomPDF/desktop/mac/14.x/14.0.3/FoxitPDFEditor1403.L10N.Setup.pkg",
+  "vendor_url": "https://cdn01.foxitsoftware.com/pub/foxit/phantomPDF/desktop/mac/14.x/14.0.3/FoxitPDFEditor1403.L10N.Setup.pkg",
   "bundleId": "com.foxit.pkg.pdfeditor",
   "homepage": "https://www.foxit.com/pdf-editor/",
   "fileName": "FoxitPDFEditor1403.L10N.Setup.pkg",

@@ -3,6 +3,7 @@
   "description": "Enhancer/customiser for the all-in-one productivity workspace notion.so",
   "version": "2.0.18-1",
   "url": "https://github.com/notion-enhancer/notion-repackaged/releases/download/v2.0.18-1/Notion-Enhanced-2.0.18-1.dmg",
+  "vendor_url": "https://github.com/notion-enhancer/notion-repackaged/releases/download/v2.0.18-1/Notion-Enhanced-2.0.18-1.dmg",
   "bundleId": "com.github.notion-repackaged",
   "homepage": "https://notion-enhancer.github.io/",
   "fileName": "Notion-Enhanced-2.0.18-1.dmg",

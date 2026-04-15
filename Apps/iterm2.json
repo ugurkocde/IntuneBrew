@@ -3,6 +3,7 @@
   "description": "Terminal emulator as alternative to Apple's Terminal app",
   "version": "3.6.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/iterm2_3.6.9.pkg",
+  "vendor_url": "https://iterm2.com/downloads/stable/iTerm2-3_6_9.zip",
   "bundleId": "com.googlecode.iterm2",
   "homepage": "https://iterm2.com/",
   "fileName": "iterm2_3.6.9.pkg",

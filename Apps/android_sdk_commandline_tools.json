@@ -3,6 +3,7 @@
   "description": "Command-line tools for building and debugging Android apps",
   "version": "14742923",
   "url": "https://dl.google.com/android/repository/commandlinetools-mac-14742923_latest.zip",
+  "vendor_url": "https://dl.google.com/android/repository/commandlinetools-mac-14742923_latest.zip",
   "bundleId": "com.google.android.commandlinetools",
   "homepage": "https://developer.android.com/studio",
   "fileName": "commandlinetools-mac-13114758_latest.zip",

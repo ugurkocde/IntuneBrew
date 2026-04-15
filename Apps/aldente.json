@@ -3,6 +3,7 @@
   "description": "Menu bar tool to limit maximum charging percentage",
   "version": "1.37.3",
   "url": "https://apphousekitchen.com/aldente/AlDente1.37.3.dmg",
+  "vendor_url": "https://apphousekitchen.com/aldente/AlDente1.37.3.dmg",
   "bundleId": "com.apphousekitchen.aldente-pro",
   "homepage": "https://apphousekitchen.com/",
   "fileName": "AlDente1.37.3.dmg",

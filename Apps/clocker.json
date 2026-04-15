@@ -3,6 +3,7 @@
   "description": "Menu bar timezone tracker and compact calendar",
   "version": "26.07",
   "url": "https://intunebrew.blob.core.windows.net/pkg/clocker_26.07.pkg",
+  "vendor_url": "https://github.com/n0shake/Clocker/releases/download/v26.07/Clocker.zip",
   "bundleId": "com.abhishek.Clocker",
   "homepage": "https://abhishekbanthia.com/clocker",
   "fileName": "clocker_26.07.pkg",

@@ -3,6 +3,7 @@
   "description": "Binary newsreader",
   "version": "4.5.5",
   "url": "https://github.com/sabnzbd/sabnzbd/releases/download/4.5.5/SABnzbd-4.5.5-macos.dmg",
+  "vendor_url": "https://github.com/sabnzbd/sabnzbd/releases/download/4.5.5/SABnzbd-4.5.5-macos.dmg",
   "bundleId": "org.sabnzbd.sabnzbd",
   "homepage": "https://sabnzbd.org/",
   "fileName": "SABnzbd-4.5.5-macos.dmg",

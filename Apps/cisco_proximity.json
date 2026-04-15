@@ -3,6 +3,7 @@
   "description": "Content sharing and video conference system control",
   "version": "4.0.0",
   "url": "https://proximity.cisco.com/mac/Proximity.dmg",
+  "vendor_url": "https://proximity.cisco.com/mac/Proximity.dmg",
   "bundleId": "com.cisco.experimental.Proximity",
   "homepage": "https://proximity.cisco.com/",
   "fileName": "Proximity.dmg",

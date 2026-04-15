@@ -3,6 +3,7 @@
   "description": "Process packages and scripts during boot, login, or on demand",
   "version": "4.2.0.21973",
   "url": "https://github.com/macadmins/outset/releases/download/v4.2.0.21973/Outset-4.2.0.21973.pkg",
+  "vendor_url": "https://github.com/macadmins/outset/releases/download/v4.2.0.21973/Outset-4.2.0.21973.pkg",
   "bundleId": "io.macadmins.Outset",
   "homepage": "https://github.com/macadmins/outset",
   "fileName": "Outset-4.2.0.21973.pkg",

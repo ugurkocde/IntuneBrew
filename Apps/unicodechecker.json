@@ -3,6 +3,7 @@
   "description": "Explore and convert Unicode",
   "version": "1.25.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/unicodechecker_1.25.1.pkg",
+  "vendor_url": "https://earthlingsoft.net/UnicodeChecker/UnicodeChecker%201.25.1%20(862).zip",
   "bundleId": "net.earthlingsoft.UnicodeChecker",
   "homepage": "https://earthlingsoft.net/UnicodeChecker/",
   "fileName": "unicodechecker_1.25.1.pkg",

@@ -3,6 +3,7 @@
   "description": "Open-source code editor",
   "version": "1.115.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/microsoft_visual_studio_code_1.115.0.pkg",
+  "vendor_url": "https://update.code.visualstudio.com/1.115.0/darwin-arm64/stable",
   "bundleId": "com.microsoft.VSCode",
   "homepage": "https://code.visualstudio.com/",
   "fileName": "microsoft_visual_studio_code_1.115.0.pkg",

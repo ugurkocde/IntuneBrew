@@ -3,6 +3,7 @@
   "description": "Desktop client for GitHub repositories",
   "version": "3.5.8-b1d863ab",
   "url": "https://intunebrew.blob.core.windows.net/pkg/github_desktop_3.5.8-b1d863ab.pkg",
+  "vendor_url": "https://desktop.githubusercontent.com/releases/3.5.9-beta1-de0185ed/GitHubDesktop-arm64.zip",
   "bundleId": "com.github.GitHubClient",
   "homepage": "https://desktop.github.com/",
   "fileName": "github_desktop_3.5.8-b1d863ab.pkg",

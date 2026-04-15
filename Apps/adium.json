@@ -3,6 +3,7 @@
   "description": "Instant messaging application",
   "version": "1.5.10.4",
   "url": "https://adiumx.cachefly.net/Adium_1.5.10.4.dmg",
+  "vendor_url": "https://adiumx.cachefly.net/Adium_1.5.10.4.dmg",
   "bundleId": "com.adiumX.adiumX",
   "homepage": "https://www.adium.im/",
   "fileName": "Adium_1.5.10.4.dmg",

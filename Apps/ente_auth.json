@@ -3,6 +3,7 @@
   "description": "Desktop client for Ente Auth",
   "version": "4.4.17",
   "url": "https://github.com/ente-io/ente/releases/download/auth-v4.4.17/ente-auth-v4.4.17.dmg",
+  "vendor_url": "https://github.com/ente-io/ente/releases/download/auth-v4.4.17/ente-auth-v4.4.17.dmg",
   "bundleId": "io.ente.auth.mac",
   "homepage": "https://ente.io/auth/",
   "fileName": "ente-auth-v4.4.17.dmg",

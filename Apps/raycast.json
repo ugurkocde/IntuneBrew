@@ -3,6 +3,7 @@
   "description": "Control your tools with a few keystrokes",
   "version": "1.104.12",
   "url": "https://releases.raycast.com/releases/1.104.12/download?build=arm",
+  "vendor_url": "https://releases.raycast.com/releases/1.104.12/download?build=arm",
   "bundleId": "com.raycast.macos",
   "homepage": "https://raycast.com/",
   "fileName": "Raycast-1.104.12.dmg",

@@ -3,6 +3,7 @@
   "description": "Add apps to the menu bar",
   "version": "1.13.1",
   "url": "https://api.badgeify.app/release/download/darwin/universal/1.13.1",
+  "vendor_url": "https://api.badgeify.app/release/download/darwin/universal/1.13.1",
   "bundleId": "studio.techflow.badgeify",
   "homepage": "https://badgeify.app/",
   "fileName": "Badgeify-1.13.1.dmg",

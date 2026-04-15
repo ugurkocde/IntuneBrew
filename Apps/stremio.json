@@ -3,6 +3,7 @@
   "description": "Open-source media center",
   "version": "5.1.18",
   "url": "https://dl.strem.io/stremio-shell-macos/v5.1.18/Stremio_arm64.dmg",
+  "vendor_url": "https://dl.strem.io/stremio-shell-macos/v5.1.18/Stremio_arm64.dmg",
   "bundleId": "com.smartcodeltd.stremio",
   "homepage": "https://www.strem.io/",
   "fileName": "Stremio_arm64.dmg",

@@ -3,6 +3,7 @@
   "description": "Finds large, unwanted files and deletes them",
   "version": "1.16",
   "url": "https://downloads.omnigroup.com/software/macOS/11/OmniDiskSweeper-1.16.dmg",
+  "vendor_url": "https://downloads.omnigroup.com/software/macOS/11/OmniDiskSweeper-1.16.dmg",
   "bundleId": "com.omnigroup.OmniDiskSweeper",
   "homepage": "https://www.omnigroup.com/more/",
   "fileName": "OmniDiskSweeper-1.16.dmg",

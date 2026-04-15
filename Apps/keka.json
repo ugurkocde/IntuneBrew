@@ -3,6 +3,7 @@
   "description": "File archiver",
   "version": "1.6.1",
   "url": "https://github.com/aonez/Keka/releases/download/v1.6.1/Keka-1.6.1.dmg",
+  "vendor_url": "https://github.com/aonez/Keka/releases/download/v1.6.1/Keka-1.6.1.dmg",
   "bundleId": "com.aone.keka",
   "homepage": "https://www.keka.io/",
   "fileName": "Keka-1.6.1.dmg",

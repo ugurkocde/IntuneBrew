@@ -3,6 +3,7 @@
   "description": "Control your smart light system",
   "version": "1.13.1.83",
   "url": "https://intunebrew.blob.core.windows.net/pkg/philips_hue_sync_1.13.1.83.pkg",
+  "vendor_url": "https://firmware.meethue.com/storage/huesyncmac/83/367fa136-d05e-4de6-8f9b-318fed481842/HueSyncInstaller_1.13.1.83.pkg",
   "bundleId": "com.lighting.huesync",
   "homepage": "https://www.philips-hue.com/en-us/explore-hue/propositions/entertainment/sync-with-pc",
   "fileName": "philips_hue_sync_1.13.1.83.pkg",

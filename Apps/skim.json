@@ -3,6 +3,7 @@
   "description": "PDF reader and note-taking application",
   "version": "1.7.14",
   "url": "https://downloads.sourceforge.net/skim-app/Skim/Skim-1.7.14/Skim-1.7.14.dmg",
+  "vendor_url": "https://downloads.sourceforge.net/skim-app/Skim/Skim-1.7.14/Skim-1.7.14.dmg",
   "bundleId": "net.sourceforge.skim-app.skim",
   "homepage": "https://skim-app.sourceforge.io/",
   "fileName": "Skim-1.7.14.dmg",

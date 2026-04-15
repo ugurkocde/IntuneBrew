@@ -3,6 +3,7 @@
   "description": "Screen capture tool for remote teams",
   "version": "4.9.5",
   "url": "https://zappy.zapier.com/releases/zappy-4.9.5.dmg",
+  "vendor_url": "https://zappy.zapier.com/releases/zappy-4.9.5.dmg",
   "bundleId": "com.blackbeltlabs.Zappy",
   "homepage": "https://zapier.com/zappy",
   "fileName": "zappy-4.9.5.dmg",

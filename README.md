@@ -1920,12 +1920,20 @@ Apps are defined in JSON files with the following structure:
   "name": "Application Name",
   "description": "Application Description",
   "version": "1.0.0",
-  "url": "https://download.url/app.dmg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/app_1.0.0.pkg",
+  "vendor_url": "https://download.url/app.dmg",
   "bundleId": "com.example.app",
   "homepage": "https://app.homepage.com",
-  "fileName": "app.dmg"
+  "fileName": "app_1.0.0.pkg"
 }
 ```
+
+#### `url` vs `vendor_url`
+
+- **`url`** — the deployment URL used by the IntuneBrew automation. For apps that are repackaged into a `.pkg` (DMG/ZIP/APP sources), this points to the IntuneBrew Azure blob storage. For apps that ship a vendor-distributed `.pkg` directly, it points to the vendor URL unchanged.
+- **`vendor_url`** — the original download URL from Homebrew (or the corrected vendor URL when Homebrew's URL is broken). This field always points to the vendor's own server and is never rewritten to the IntuneBrew blob. It is intended for downstream consumers (such as the IntuneBrew website's Apple Business section) that need a vendor-direct link.
+
+For apps where no repackaging happened, `url` and `vendor_url` are identical.
 
 ## 🔄 Version Management
 

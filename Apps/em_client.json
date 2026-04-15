@@ -3,6 +3,7 @@
   "description": "Email client",
   "version": "10.4.5326",
   "url": "https://cdn-dist.emclient.com/dist/v10.4.5326_Mac/setup.pkg",
+  "vendor_url": "https://cdn-dist.emclient.com/dist/v10.4.5326_Mac/setup.pkg",
   "bundleId": "com.emclient.mail.client",
   "homepage": "https://www.emclient.com/",
   "fileName": "setup.pkg",

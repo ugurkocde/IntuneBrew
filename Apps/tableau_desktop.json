@@ -3,6 +3,7 @@
   "description": "Data visualization software",
   "version": "2026.1.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/tableau_desktop_2026.1.0.pkg",
+  "vendor_url": "https://downloads.tableau.com/esdalt/2026.1.0/TableauDesktop-2026-1-0-arm64.dmg",
   "bundleId": "com.tableausoftware.tableaudesktop",
   "homepage": "https://www.tableau.com/products/desktop",
   "fileName": "tableau_desktop_2026.1.0.pkg",

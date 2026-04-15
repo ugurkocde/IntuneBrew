@@ -3,6 +3,7 @@
   "description": "Data science software focusing on R and Python",
   "version": "2026.01.2",
   "url": "https://download1.rstudio.org/electron/macos/RStudio-2026.01.2-418.dmg",
+  "vendor_url": "https://download1.rstudio.org/electron/macos/RStudio-2026.01.2-418.dmg",
   "bundleId": "com.rstudio.desktop",
   "homepage": "https://posit.co/products/open-source/rstudio/",
   "fileName": "RStudio-2026.01.2-418.dmg",

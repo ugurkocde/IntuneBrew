@@ -3,6 +3,7 @@
   "description": "All-in-One Project Management Platform",
   "version": "0.7.413",
   "url": "https://intunebrew.blob.core.windows.net/pkg/huly_0.7.413.pkg",
+  "vendor_url": "https://dist.huly.io/Huly-macos-0.7.413-arm64.zip",
   "bundleId": "hc.hcengineering.Huly",
   "homepage": "https://huly.io/",
   "fileName": "huly_0.7.413.pkg",

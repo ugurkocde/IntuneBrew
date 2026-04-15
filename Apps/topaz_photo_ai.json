@@ -3,6 +3,7 @@
   "description": "AI image enhancer",
   "version": "4.0.4",
   "url": "https://downloads.topazlabs.com/deploy/TopazPhotoAI/4.0.4/TopazPhotoAI-4.0.4.pkg",
+  "vendor_url": "https://downloads.topazlabs.com/deploy/TopazPhotoAI/4.0.4/TopazPhotoAI-4.0.4.pkg",
   "bundleId": "com.topazlabs.TopazPhotoAI",
   "homepage": "https://docs.topazlabs.com/other-apps/legacy",
   "fileName": "TopazPhotoAI-4.0.4.pkg",

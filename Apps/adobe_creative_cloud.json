@@ -3,6 +3,7 @@
   "description": "Collection of apps and services for photography, design, video, web, and UX",
   "version": "6.8.1.865",
   "url": "https://ccmdls.adobe.com/AdobeProducts/StandaloneBuilds/ACCC/ESD/6.8.1/865/macarm64/ACCCx6_8_1_865.dmg",
+  "vendor_url": "https://ccmdls.adobe.com/AdobeProducts/StandaloneBuilds/ACCC/ESD/6.8.1/865/macarm64/ACCCx6_8_1_865.dmg",
   "bundleId": "com.adobe.acc.AdobeCreativeCloud",
   "homepage": "https://www.adobe.com/creativecloud.html",
   "fileName": "ACCCx6_8_1_865.dmg",

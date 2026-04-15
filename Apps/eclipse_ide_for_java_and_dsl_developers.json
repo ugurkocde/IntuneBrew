@@ -3,6 +3,7 @@
   "description": "Eclipse IDE for Java and DSL developers",
   "version": "4.39",
   "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-dsl-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
+  "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-dsl-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
   "bundleId": "org.eclipse.eclipse",
   "homepage": "https://eclipse.org/",
   "fileName": "Eclipse-IDE-for-Java-and-DSL-Developers-4.39.dmg",

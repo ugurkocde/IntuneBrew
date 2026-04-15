@@ -3,6 +3,7 @@
   "description": "All-in-one toolbox for developers",
   "version": "1.17.0",
   "url": "https://devutils.com/archives/DevUtils-1.17.0.dmg",
+  "vendor_url": "https://devutils.com/archives/DevUtils-1.17.0.dmg",
   "bundleId": "tonyapp.devutils",
   "homepage": "https://devutils.com/",
   "fileName": "DevUtils-1.17.0.dmg",

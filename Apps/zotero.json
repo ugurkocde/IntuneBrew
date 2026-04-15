@@ -3,6 +3,7 @@
   "description": "Collect, organise, cite, and share research sources",
   "version": "9.0",
   "url": "https://download.zotero.org/client/release/9.0/Zotero-9.0.dmg",
+  "vendor_url": "https://download.zotero.org/client/release/9.0/Zotero-9.0.dmg",
   "bundleId": "org.zotero.zotero",
   "homepage": "https://www.zotero.org/",
   "fileName": "Zotero-9.0.dmg",

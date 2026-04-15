@@ -3,6 +3,7 @@
   "description": "Batch image processor",
   "version": "2.3.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/retrobatch_2.3.1.pkg",
+  "vendor_url": "https://flyingmeat.com/download/Retrobatch-2.3.1.zip",
   "bundleId": "com.flyingmeat.Retrobatch",
   "homepage": "https://flyingmeat.com/retrobatch/",
   "fileName": "retrobatch_2.3.1.pkg",

@@ -3,6 +3,7 @@
   "description": "Open-source platform for visualizing and manipulating large graphs",
   "version": "0.10.1",
   "url": "https://github.com/gephi/gephi/releases/download/v0.10.1/gephi-0.10.1-macos-aarch64.dmg",
+  "vendor_url": "https://github.com/gephi/gephi/releases/download/v0.10.1/gephi-0.10.1-macos-aarch64.dmg",
   "bundleId": "org.gephi",
   "homepage": "https://gephi.org/",
   "fileName": "gephi-0.10.1-macos-aarch64.dmg",

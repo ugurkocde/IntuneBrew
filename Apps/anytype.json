@@ -3,6 +3,7 @@
   "description": "Local-first and end-to-end encrypted notes app",
   "version": "0.54.11",
   "url": "https://anytype-release.fra1.cdn.digitaloceanspaces.com/Anytype-0.54.11-mac-arm64.dmg",
+  "vendor_url": "https://anytype-release.fra1.cdn.digitaloceanspaces.com/Anytype-0.54.11-mac-arm64.dmg",
   "bundleId": "com.anytype.anytype",
   "homepage": "https://anytype.io/",
   "fileName": "Anytype-0.54.11-mac-arm64.dmg",

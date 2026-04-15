@@ -3,6 +3,7 @@
   "description": "Unpacks archive files",
   "version": "4.3.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/the_unarchiver_4.3.9.pkg",
+  "vendor_url": "https://dl.devmate.com/com.macpaw.site.theunarchiver/147/1742287964/TheUnarchiver-147.zip",
   "bundleId": "cx.c3.theunarchiver",
   "homepage": "https://theunarchiver.com/",
   "fileName": "the_unarchiver_4.3.9.pkg",

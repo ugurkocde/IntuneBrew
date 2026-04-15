@@ -3,6 +3,7 @@
   "description": "Spot and merge differences in text and image files or folders",
   "version": "6.6",
   "url": "https://intunebrew.blob.core.windows.net/pkg/kaleidoscope_6.6.pkg",
+  "vendor_url": "https://updates.kaleidoscope.app/v6/prod/Kaleidoscope-6.6-9910.app.zip",
   "bundleId": "com.blackpixel.kaleidoscope",
   "homepage": "https://kaleidoscope.app/",
   "fileName": "kaleidoscope_6.6.pkg",

@@ -3,6 +3,7 @@
   "description": "Admin utility that presents custom dialogs or messages from shell scripts",
   "version": "3.0.1",
   "url": "https://github.com/swiftDialog/swiftDialog/releases/download/v3.0.1/dialog-3.0.1-4955.pkg",
+  "vendor_url": "https://github.com/swiftDialog/swiftDialog/releases/download/v3.0.1/dialog-3.0.1-4955.pkg",
   "bundleId": "au.csiro.dialogcli",
   "homepage": "https://swiftdialog.app/",
   "fileName": "dialog-3.0.1-4955.pkg",

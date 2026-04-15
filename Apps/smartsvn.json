@@ -3,6 +3,7 @@
   "description": "Subversion client",
   "version": "14.5.1",
   "url": "https://www.smartsvn.com/downloads/smartsvn/smartsvn-aarch64-14_5_1.dmg",
+  "vendor_url": "https://www.smartsvn.com/downloads/smartsvn/smartsvn-aarch64-14_5_1.dmg",
   "bundleId": "com.syntevo.smartsvn",
   "homepage": "https://www.smartsvn.com/",
   "fileName": "smartsvn-aarch64-14_5_1.dmg",

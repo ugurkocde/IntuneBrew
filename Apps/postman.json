@@ -3,6 +3,7 @@
   "description": "Collaboration platform for API development",
   "version": "12.6.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/postman_12.6.1.pkg",
+  "vendor_url": "https://dl.pstmn.io/download/version/12.6.3/osx_arm64",
   "bundleId": "com.postmanlabs.mac",
   "homepage": "https://www.postman.com/",
   "fileName": "postman_12.6.1.pkg",

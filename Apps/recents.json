@@ -3,6 +3,7 @@
   "description": "File launcher",
   "version": "2.5.0",
   "url": "https://recentsapp.com/releases/Recents_2.5.0.dmg",
+  "vendor_url": "https://recentsapp.com/releases/Recents_2.5.0.dmg",
   "bundleId": "com.lapier.Recents",
   "homepage": "https://recentsapp.com/",
   "fileName": "Recents_2.5.0.dmg",

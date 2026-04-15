@@ -3,6 +3,7 @@
   "description": "Desktop password and login vault",
   "version": "2026.3.1",
   "url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-2026.3.1-universal.dmg",
+  "vendor_url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-2026.3.1-universal.dmg",
   "bundleId": "com.bitwarden.desktop",
   "homepage": "https://bitwarden.com/",
   "fileName": "Bitwarden-2026.3.1-universal.dmg",

@@ -3,6 +3,7 @@
   "description": "Native document editor",
   "version": "3.3.12",
   "url": "https://res.craft.do/native/sparkle/Craft.dmg",
+  "vendor_url": "https://res.craft.do/native/sparkle/Craft.dmg",
   "bundleId": "com.lukilabs.lukiapp",
   "homepage": "https://www.craft.do/",
   "fileName": "Craft.dmg",

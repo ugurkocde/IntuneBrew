@@ -3,6 +3,7 @@
   "description": "Audio editor",
   "version": "3.17.3",
   "url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg",
+  "vendor_url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg",
   "bundleId": "com.ocenaudio",
   "homepage": "https://www.ocenaudio.com/en",
   "fileName": "ocenaudio_universal.dmg",

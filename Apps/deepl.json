@@ -3,6 +3,7 @@
   "description": "Trains AIs to understand and translate texts",
   "version": "26.4.14340455",
   "url": "https://www.deepl.com/macos/download/26.4/14340455/DeepL.dmg",
+  "vendor_url": "https://www.deepl.com/macos/download/26.4/14340455/DeepL.dmg",
   "bundleId": "com.linguee.DeepLCopyTranslator",
   "homepage": "https://www.deepl.com/",
   "fileName": "DeepL.dmg",

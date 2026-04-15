@@ -3,6 +3,7 @@
   "description": "Drive health diagnostic & monitoring tool",
   "version": "1.12.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/drivedx_1.12.1.pkg",
+  "vendor_url": "https://binaryfruit.com/download/drivedx/mac/1/bin/DriveDx.1.12.1.zip",
   "bundleId": "com.binaryfruit.DriveDx",
   "homepage": "https://binaryfruit.com/drivedx",
   "fileName": "drivedx_1.12.1.pkg",

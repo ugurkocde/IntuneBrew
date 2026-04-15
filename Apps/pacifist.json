@@ -3,6 +3,7 @@
   "description": "Extract files and folders from package files, disk images, and archives",
   "version": "4.1.4",
   "url": "https://www.charlessoft.com/pacifist_download/Pacifist_4.1.4.dmg",
+  "vendor_url": "https://www.charlessoft.com/pacifist_download/Pacifist_4.1.4.dmg",
   "bundleId": "com.charlessoft.pacifist",
   "homepage": "https://www.charlessoft.com/",
   "fileName": "Pacifist_4.1.4.dmg",

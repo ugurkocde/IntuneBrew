@@ -3,6 +3,7 @@
   "description": "GitHub notifications on your menu bar",
   "version": "6.19.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/gitify_6.19.0.pkg",
+  "vendor_url": "https://github.com/gitify-app/gitify/releases/download/v6.19.0/Gitify-6.19.0-universal-mac.zip",
   "bundleId": "com.electron.gitify",
   "homepage": "https://github.com/gitify-app/gitify",
   "fileName": "gitify_6.19.0.pkg",

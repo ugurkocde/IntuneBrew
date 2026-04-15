@@ -3,6 +3,7 @@
   "description": "Network drive and browser for cloud storage",
   "version": "2026.02.12.823",
   "url": "https://www.expandrive.com/api/download/expandrive?platform=macos",
+  "vendor_url": "https://www.expandrive.com/api/download/expandrive?platform=macos",
   "bundleId": "com.expandrive.ExpanDrive",
   "homepage": "https://www.expandrive.com/apps/expandrive/",
   "fileName": "ExpanDrive-2026.02.12.823.dmg",

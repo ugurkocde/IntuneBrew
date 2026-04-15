@@ -3,6 +3,7 @@
   "description": "Automatic time and productivity tracking app",
   "version": "2026.2",
   "url": "https://updates.timingapp.com/download/Timing-2026.2.dmg",
+  "vendor_url": "https://updates.timingapp.com/download/Timing-2026.2.dmg",
   "bundleId": "info.eurocomp.Timing2",
   "homepage": "https://timingapp.com/",
   "fileName": "Timing-2026.2.dmg",

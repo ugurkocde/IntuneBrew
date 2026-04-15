@@ -3,6 +3,7 @@
   "description": "File sharing solution",
   "version": "6.10",
   "url": "https://intunebrew.blob.core.windows.net/pkg/dropshare_6.10.pkg",
+  "vendor_url": "https://d2wvuuix8c9e48.cloudfront.net/Dropshare6-6172.app.zip",
   "bundleId": "net.mkswap.Dropshare",
   "homepage": "https://dropshare.app/",
   "fileName": "dropshare_6.10.pkg",

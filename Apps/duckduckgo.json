@@ -3,6 +3,7 @@
   "description": "Web browser focusing on privacy",
   "version": "1.184.1",
   "url": "https://staticcdn.duckduckgo.com/macos-desktop-browser/duckduckgo-1.184.1.674.dmg",
+  "vendor_url": "https://staticcdn.duckduckgo.com/macos-desktop-browser/duckduckgo-1.184.1.674.dmg",
   "bundleId": "com.duckduckgo.macos.browser",
   "homepage": "https://duckduckgo.com/",
   "fileName": "duckduckgo-1.184.1.674.dmg",

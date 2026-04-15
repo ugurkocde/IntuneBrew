@@ -3,6 +3,7 @@
   "description": "Programmes interactive stories, games, and animations",
   "version": "3.31.1",
   "url": "https://downloads.scratch.mit.edu/desktop/Scratch%203.31.1.dmg",
+  "vendor_url": "https://downloads.scratch.mit.edu/desktop/Scratch%203.31.1.dmg",
   "bundleId": "edu.mit.scratch.scratch-desktop",
   "homepage": "https://scratch.mit.edu/download",
   "fileName": "Scratch 3.31.1.dmg",

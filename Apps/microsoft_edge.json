@@ -3,6 +3,7 @@
   "description": "Multi-platform web browser",
   "version": "147.0.3912.60",
   "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/b3b6a577-fc74-4bfe-b7a9-ee3a54e24a9a/MicrosoftEdge-147.0.3912.60.dmg",
+  "vendor_url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/b3b6a577-fc74-4bfe-b7a9-ee3a54e24a9a/MicrosoftEdge-147.0.3912.60.dmg",
   "bundleId": "com.microsoft.edgemac",
   "homepage": "https://www.microsoft.com/en-us/edge?form=",
   "fileName": "MicrosoftEdge-147.0.3912.60.dmg",

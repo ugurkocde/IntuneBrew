@@ -3,6 +3,7 @@
   "description": "Web browser",
   "version": "1.19.0.4",
   "url": "https://releases.sigmaos.com/SigmaOS-1.19.0.4.dmg",
+  "vendor_url": "https://releases.sigmaos.com/SigmaOS-1.19.0.4.dmg",
   "bundleId": "com.nicola.sigmaos",
   "homepage": "https://sigmaos.com/",
   "fileName": "SigmaOS-1.19.0.4.dmg",

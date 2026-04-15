@@ -3,6 +3,7 @@
   "description": "IMAP email client",
   "version": "5673",
   "url": "https://intunebrew.blob.core.windows.net/pkg/mailmate_5673.pkg",
+  "vendor_url": "https://updates.mailmate-app.com/archives/MailMate_r5673.tbz",
   "bundleId": "com.freron.MailMate",
   "homepage": "https://freron.com/",
   "fileName": "mailmate_5673.pkg",

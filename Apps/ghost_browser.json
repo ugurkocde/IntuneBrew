@@ -3,6 +3,7 @@
   "description": "Web browser",
   "version": "2.4.1.2",
   "url": "https://downloads.ghostbrowser.com/GhostBrowser-2.4.1.2_arm64.dmg",
+  "vendor_url": "https://downloads.ghostbrowser.com/GhostBrowser-2.4.1.2_arm64.dmg",
   "bundleId": "com.ghostbrowser.gb1",
   "homepage": "https://ghostbrowser.com/",
   "fileName": "GhostBrowser-2.4.1.2_arm64.dmg",

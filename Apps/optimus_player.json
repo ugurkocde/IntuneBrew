@@ -3,6 +3,7 @@
   "description": "Media player",
   "version": "1.5",
   "url": "https://download.optimusplayer.com/Optimus%20Player%201.5.dmg",
+  "vendor_url": "https://download.optimusplayer.com/Optimus%20Player%201.5.dmg",
   "bundleId": "mo.darren.optimus.player.mac",
   "homepage": "https://www.optimusplayer.com/",
   "fileName": "Optimus Player 1.5.dmg",

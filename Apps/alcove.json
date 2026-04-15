@@ -3,6 +3,7 @@
   "description": "Utility to add Dynamic Island like features to notch area",
   "version": "1.7.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/alcove_1.7.2.pkg",
+  "vendor_url": "https://github.com/henrikruscon/alcove-releases/releases/download/1.7.2/Alcove.zip",
   "bundleId": "com.henrikruscon.Alcove",
   "homepage": "https://tryalcove.com/",
   "fileName": "alcove_1.7.2.pkg",

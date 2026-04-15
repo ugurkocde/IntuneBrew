@@ -3,6 +3,7 @@
   "description": "Control your computer with your Apple TV Siri Remote",
   "version": "1.4.6",
   "url": "https://intunebrew.blob.core.windows.net/pkg/sirimote_1.4.6.pkg",
+  "vendor_url": "https://eternalstorms.at/sirimote/SiriMote.zip",
   "bundleId": "com.EvenDevelopment.SiriMote",
   "homepage": "https://eternalstorms.at/sirimote",
   "fileName": "sirimote_1.4.6.pkg",

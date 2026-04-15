@@ -3,6 +3,7 @@
   "description": "Productivity tool",
   "version": "6.23",
   "url": "https://www.obdev.at/downloads/launchbar/LaunchBar-6.23.dmg",
+  "vendor_url": "https://www.obdev.at/downloads/launchbar/LaunchBar-6.23.dmg",
   "bundleId": "at.obdev.LaunchBar",
   "homepage": "https://www.obdev.at/products/launchbar/index.html",
   "fileName": "LaunchBar-6.23.dmg",

@@ -3,6 +3,7 @@
   "description": "Native app email client for Gmail",
   "version": "1.9.18",
   "url": "https://download.mimestream.com/Mimestream_1.9.18.dmg",
+  "vendor_url": "https://download.mimestream.com/Mimestream_1.9.18.dmg",
   "bundleId": "com.mimestream.Mimestream",
   "homepage": "https://mimestream.com/",
   "fileName": "Mimestream_1.9.18.dmg",

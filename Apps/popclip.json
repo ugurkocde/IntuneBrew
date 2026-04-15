@@ -3,6 +3,7 @@
   "description": "Used to access context-specific actions when text is selected",
   "version": "2025.9.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/popclip_2025.9.2.pkg",
+  "vendor_url": "https://pilotmoon.com/downloads/PopClip-2025.9.2.zip",
   "bundleId": "com.pilotmoon.popclip",
   "homepage": "https://www.popclip.app/",
   "fileName": "popclip_2025.9.2.pkg",

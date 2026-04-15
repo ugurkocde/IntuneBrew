@@ -3,6 +3,7 @@
   "description": "Tool to run Windows software",
   "version": "26.1.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/crossover_26.1.0.pkg",
+  "vendor_url": "https://media.codeweavers.com/pub/crossover/cxmac/demo/crossover-26.1.0.zip",
   "bundleId": "com.codeweavers.CrossOver",
   "homepage": "https://www.codeweavers.com/products/crossover-mac/",
   "fileName": "crossover_26.1.0.pkg",

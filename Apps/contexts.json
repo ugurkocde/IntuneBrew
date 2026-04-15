@@ -3,6 +3,7 @@
   "description": "Allows switching between application windows",
   "version": "3.9.0",
   "url": "https://contexts.co/releases/Contexts-3.9.0.dmg",
+  "vendor_url": "https://contexts.co/releases/Contexts-3.9.0.dmg",
   "bundleId": "com.contextsformac.Contexts",
   "homepage": "https://contexts.co/",
   "fileName": "Contexts-3.9.0.dmg",

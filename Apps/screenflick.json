@@ -3,6 +3,7 @@
   "description": "Screen recorder with audio",
   "version": "3.3.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/screenflick_3.3.2.pkg",
+  "vendor_url": "https://store.araelium.com/screenflick/downloads/versions/Screenflick3.3.2.zip",
   "bundleId": "com.araeliumgroup.screenflick",
   "homepage": "https://www.araelium.com/screenflick-mac-screen-recorder",
   "fileName": "screenflick_3.3.2.pkg",

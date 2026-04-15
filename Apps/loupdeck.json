@@ -3,6 +3,7 @@
   "description": "Software for Loupedeck consoles",
   "version": "6.2.4.228",
   "url": "https://support.loupedeck.com/hubfs/Knowledge%20Base/LD%20Software%20Downloads/6.2.4/LoupedeckInstaller_6.2.4.228.dmg",
+  "vendor_url": "https://support.loupedeck.com/hubfs/Knowledge%20Base/LD%20Software%20Downloads/6.2.4/LoupedeckInstaller_6.2.4.228.dmg",
   "bundleId": "com.loupedeck.Loupedeck2",
   "homepage": "https://loupedeck.com/",
   "fileName": "LoupedeckInstaller_6.2.4.228.dmg",

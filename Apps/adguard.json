@@ -3,6 +3,7 @@
   "description": "Stand alone ad blocker",
   "version": "2.18.0.2089",
   "url": "https://static.adguard.com/mac/release/AdGuard-2.18.0.2089.dmg",
+  "vendor_url": "https://static.adguard.com/mac/release/AdGuard-2.18.0.2089.dmg",
   "bundleId": "com.adguard.mac.adguard",
   "homepage": "https://adguard.com/",
   "fileName": "AdGuard-2.18.0.2089.dmg",

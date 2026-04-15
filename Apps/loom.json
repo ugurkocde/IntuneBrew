@@ -3,6 +3,7 @@
   "description": "Screen and video recording software",
   "version": "0.344.0",
   "url": "https://packages.loom.com/desktop-packages/Loom-0.344.0-arm64.dmg",
+  "vendor_url": "https://packages.loom.com/desktop-packages/Loom-0.344.0-arm64.dmg",
   "bundleId": "com.loom.desktop",
   "homepage": "https://www.loom.com/",
   "fileName": "Loom-0.344.0-arm64.dmg",

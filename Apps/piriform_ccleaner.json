@@ -3,6 +3,7 @@
   "description": "Remove junk and unused files",
   "version": "2.09.187",
   "url": "https://download.ccleaner.com/mac/CCMacSetup209.dmg",
+  "vendor_url": "https://download.ccleaner.com/mac/CCMacSetup209.dmg",
   "bundleId": "com.piriform.pkg.CCleaner",
   "homepage": "https://www.ccleaner.com/ccleaner-mac",
   "fileName": "CCMacSetup209.dmg",

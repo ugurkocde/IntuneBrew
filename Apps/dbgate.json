@@ -3,6 +3,7 @@
   "description": "Database manager for MySQL, PostgreSQL, SQL Server, MongoDB, SQLite and others",
   "version": "7.1.8",
   "url": "https://github.com/dbgate/dbgate/releases/download/v7.1.8/dbgate-7.1.8-mac_universal.dmg",
+  "vendor_url": "https://github.com/dbgate/dbgate/releases/download/v7.1.8/dbgate-7.1.8-mac_universal.dmg",
   "bundleId": "org.dbgate",
   "homepage": "https://dbgate.org/",
   "fileName": "dbgate-7.1.8-mac_universal.dmg",

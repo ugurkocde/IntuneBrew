@@ -3,6 +3,7 @@
   "description": "Weekly planner app focused on privacy",
   "version": "2.2.0",
   "url": "https://github.com/Zuntek/WeekToDoWeb/releases/download/v2.2.0/WeekToDo-2.2.0.dmg",
+  "vendor_url": "https://github.com/Zuntek/WeekToDoWeb/releases/download/v2.2.0/WeekToDo-2.2.0.dmg",
   "bundleId": "weektodo-app.netlify.app",
   "homepage": "https://weektodo.me/",
   "fileName": "WeekToDo-2.2.0.dmg",

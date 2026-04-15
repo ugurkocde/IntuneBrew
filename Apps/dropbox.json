@@ -3,6 +3,7 @@
   "description": "Client for the Dropbox cloud storage service",
   "version": "248.4.3576",
   "url": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20248.4.3576.arm64.dmg",
+  "vendor_url": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20248.4.3576.arm64.dmg",
   "bundleId": "com.getdropbox.dropbox",
   "homepage": "https://www.dropbox.com/",
   "fileName": "Dropbox 248.4.3576.arm64.dmg",

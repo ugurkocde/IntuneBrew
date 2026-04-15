@@ -3,6 +3,7 @@
   "description": "Calendar and task manager",
   "version": "260216.1.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/amie_260216.1.0.pkg",
+  "vendor_url": "https://github.com/amieso/electron-releases/releases/download/v260216.1.0/Amie-260216.1.0-arm64-mac.zip",
   "bundleId": "so.amie.electron-app",
   "homepage": "https://amie.so/",
   "fileName": "amie_260216.1.0.pkg",

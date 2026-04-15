@@ -3,6 +3,7 @@
   "description": "Microsoft SQL Server database client",
   "version": "2026.07",
   "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_for_mssql_2026.07.pkg",
+  "vendor_url": "https://d3fwkemdw8spx3.cloudfront.net/mssql/SQLProMSSQL.2026.07.app.zip",
   "bundleId": "com.hankinsoft.osx.tinysqlstudio",
   "homepage": "https://www.macsqlclient.com/",
   "fileName": "sqlpro_for_mssql_2026.07.pkg",

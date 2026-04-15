@@ -3,6 +3,7 @@
   "description": "Window manager",
   "version": "1.3.2",
   "url": "https://updates.sempliva.com/tiles/Tiles-03b500a8.dmg",
+  "vendor_url": "https://updates.sempliva.com/tiles/Tiles-03b500a8.dmg",
   "bundleId": "com.sempliva.Tiles",
   "homepage": "https://www.sempliva.com/tiles/",
   "fileName": "Tiles-03b500a8.dmg",

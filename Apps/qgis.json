@@ -3,6 +3,7 @@
   "description": "Geographic Information System",
   "version": "4.0.1",
   "url": "https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_0_1.dmg",
+  "vendor_url": "https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_0_1.dmg",
   "bundleId": "org.qgis.qgis",
   "homepage": "https://www.qgis.org/",
   "fileName": "qgis_pr_final-4_0_1.dmg",

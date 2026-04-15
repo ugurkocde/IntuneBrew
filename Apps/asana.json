@@ -3,6 +3,7 @@
   "description": "Manage team projects and tasks",
   "version": "2.6.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/asana_2.6.0.pkg",
+  "vendor_url": "https://desktop-downloads.asana.com/darwin_arm64/prod/v2.6.0/Asana-darwin-arm64-2.6.0.zip",
   "bundleId": "com.electron.asana",
   "homepage": "https://asana.com/",
   "fileName": "asana_2.6.0.pkg",

@@ -3,6 +3,7 @@
   "description": "Native code editor",
   "version": "13.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/panic_nova_13.4.pkg",
+  "vendor_url": "https://panic.com/download/nova/Nova%2013.4.zip",
   "bundleId": "com.panic.Nova",
   "homepage": "https://nova.app/",
   "fileName": "panic_nova_13.4.pkg",

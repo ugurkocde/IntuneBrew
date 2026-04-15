@@ -3,6 +3,7 @@
   "description": "Utilities designed to make common development tasks easier",
   "version": "2.0.9.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/devtoys_2.0.9.0.pkg",
+  "vendor_url": "https://github.com/DevToys-app/DevToys/releases/download/v2.0.9.0/devtoys_osx_arm64.zip",
   "bundleId": "com.devtoys",
   "homepage": "https://github.com/DevToys-app/DevToys",
   "fileName": "devtoys_2.0.9.0.pkg",

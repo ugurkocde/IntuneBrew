@@ -3,6 +3,7 @@
   "description": "Email client integrated with Notion workspace",
   "version": "0.0.45",
   "url": "https://intunebrew.blob.core.windows.net/pkg/notion_mail_0.0.45.pkg",
+  "vendor_url": "https://mail-desktop-release.notion-static.com/Notion%20Mail-0.0.45-arm64.zip",
   "bundleId": "notion.mail.id",
   "homepage": "https://www.notion.com/product/mail",
   "fileName": "notion_mail_0.0.45.pkg",

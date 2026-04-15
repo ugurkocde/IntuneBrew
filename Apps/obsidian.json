@@ -3,6 +3,7 @@
   "description": "Knowledge base that works on top of a local folder of plain text Markdown files",
   "version": "1.12.7",
   "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.dmg",
+  "vendor_url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.12.7/Obsidian-1.12.7.dmg",
   "bundleId": "md.obsidian",
   "homepage": "https://obsidian.md/",
   "fileName": "Obsidian-1.12.7.dmg",

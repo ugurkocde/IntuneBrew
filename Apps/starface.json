@@ -3,6 +3,7 @@
   "description": "STARFACE UCC Client for macOS - Unified Communications and Collaboration",
   "version": "9.2.3",
   "url": "https://www.starface-cdn.de/starface/clients/mac/STARFACE_9.2.3_1559_82080dc.dmg",
+  "vendor_url": "https://www.starface-cdn.de/starface/clients/mac/STARFACE_9.2.3_1559_82080dc.dmg",
   "bundleId": "de.starface.STARFACE",
   "homepage": "https://www.starface.com/",
   "fileName": "STARFACE_9.2.3_1559_82080dc.dmg",

@@ -3,6 +3,7 @@
   "description": "Free app that makes your Internet safer",
   "version": "2026.3.846.0",
   "url": "https://downloads.cloudflareclient.com/v1/download/macos/version/2026.3.846.0",
+  "vendor_url": "https://downloads.cloudflareclient.com/v1/download/macos/version/2026.3.846.0",
   "bundleId": "com.cloudflare.1dot1dot1dot1.macos",
   "homepage": "https://cloudflarewarp.com/",
   "fileName": "Cloudflare-WARP-2026.3.846.0.dmg",

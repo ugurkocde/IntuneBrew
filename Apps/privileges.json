@@ -3,6 +3,7 @@
   "description": "Admin rights switcher",
   "version": "2.5.2",
   "url": "https://github.com/SAP/macOS-enterprise-privileges/releases/download/2.5.2/Privileges_2.5.2.pkg",
+  "vendor_url": "https://github.com/SAP/macOS-enterprise-privileges/releases/download/2.5.2/Privileges_2.5.2.pkg",
   "bundleId": "corp.sap.privileges",
   "homepage": "https://github.com/SAP/macOS-enterprise-privileges",
   "fileName": "Privileges_2.5.2.pkg",

@@ -3,6 +3,7 @@
   "description": "Email client",
   "version": "1038.0.31",
   "url": "https://intunebrew.blob.core.windows.net/pkg/superhuman_1038.0.31.pkg",
+  "vendor_url": "https://storage.googleapis.com/download.superhuman.com/supertron-update/Superhuman-1038.0.31-arm64-latest-mac.zip",
   "bundleId": "com.superhuman.mail",
   "homepage": "https://superhuman.com/",
   "fileName": "superhuman_1038.0.31.pkg",

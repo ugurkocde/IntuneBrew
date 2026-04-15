@@ -3,6 +3,7 @@
   "description": "Utility that prevents the system from going to sleep",
   "version": "1.1.4",
   "url": "https://github.com/IntelliScape/caffeine/releases/download/1.1.4/Caffeine.dmg",
+  "vendor_url": "https://github.com/IntelliScape/caffeine/releases/download/1.1.4/Caffeine.dmg",
   "bundleId": "net.domzilla.caffeine",
   "homepage": "https://www.caffeine-app.net/",
   "fileName": "Caffeine.dmg",

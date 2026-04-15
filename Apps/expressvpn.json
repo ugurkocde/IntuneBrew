@@ -3,6 +3,7 @@
   "description": "VPN client for secure internet access and private browsing",
   "version": "14.0.1.12858",
   "url": "https://www.expressvpn.works/clients/mac/expressvpn-macos-universal-14.0.1.12858_release.zip",
+  "vendor_url": "https://www.expressvpn.works/clients/mac/expressvpn-macos-universal-14.0.1.12858_release.zip",
   "bundleId": "com.expressvpn.ExpressVPN",
   "homepage": "https://www.expressvpn.works/",
   "fileName": "expressvpn-macos-universal-14.0.1.12858_release.zip",

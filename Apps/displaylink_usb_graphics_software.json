@@ -3,6 +3,7 @@
   "description": "Drivers for DisplayLink docks, adapters and monitors",
   "version": "16.0",
   "url": "https://www.synaptics.com/sites/default/files/exe_files/2026-04/DisplayLink%20Manager%20Graphics%20Connectivity16.0-EXE.pkg",
+  "vendor_url": "https://www.synaptics.com/sites/default/files/exe_files/2026-04/DisplayLink%20Manager%20Graphics%20Connectivity16.0-EXE.pkg",
   "bundleId": "com.displaylink.DisplayLinkUserAgent",
   "homepage": "https://www.synaptics.com/products/displaylink-graphics",
   "fileName": "DisplayLink Manager Graphics Connectivity16.0-EXE.pkg",

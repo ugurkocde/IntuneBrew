@@ -3,6 +3,7 @@
   "description": "Kubernetes IDE",
   "version": "2026.3.251250",
   "url": "https://api.k8slens.dev/binaries/Lens-2026.3.251250-latest-arm64.dmg",
+  "vendor_url": "https://api.k8slens.dev/binaries/Lens-2026.3.251250-latest-arm64.dmg",
   "bundleId": "com.electron.kontena-lens",
   "homepage": "https://k8slens.dev/",
   "fileName": "Lens-2026.3.251250-latest-arm64.dmg",

@@ -3,6 +3,7 @@
   "description": "PDF reader, editor and annotator",
   "version": "3.11.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/pdf_expert_3.11.2.pkg",
+  "vendor_url": "https://downloads.pdfexpert.com/pem3/versions/1150/PDFExpert.zip",
   "bundleId": "com.readdle.PDFExpert-Mac",
   "homepage": "https://pdfexpert.com/",
   "fileName": "pdf_expert_3.11.2.pkg",

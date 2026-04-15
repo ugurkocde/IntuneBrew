@@ -3,6 +3,7 @@
   "description": "Music player for high resolution (Hi-Res) music through the external sources",
   "version": "3.7.7",
   "url": "https://cdn.vox.rocks/vox-player/releases/versions/VOX-3770.1.dmg",
+  "vendor_url": "https://cdn.vox.rocks/vox-player/releases/versions/VOX-3770.1.dmg",
   "bundleId": "com.coppertino.VoxHelper",
   "homepage": "https://vox.rocks/mac-music-player",
   "fileName": "VOX-3770.1.dmg",

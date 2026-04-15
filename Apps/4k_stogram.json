@@ -3,6 +3,7 @@
   "description": "Download Instagram photos, accounts, hashtags and locations",
   "version": "4.9.0",
   "url": "https://dl.4kdownload.com/app/4kstogram_4.9.0_arm64.dmg",
+  "vendor_url": "https://dl.4kdownload.com/app/4kstogram_4.9.0_arm64.dmg",
   "bundleId": "com.openmedia.4kstogram",
   "homepage": "https://www.4kdownload.com/products/product-stogram",
   "fileName": "4kstogram_4.9.0_arm64.dmg",

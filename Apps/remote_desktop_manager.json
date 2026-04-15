@@ -3,6 +3,7 @@
   "description": "Centralises all remote connections on a single platform",
   "version": "2026.1.10.3",
   "url": "https://cdn.devolutions.net/download/Mac/Devolutions.RemoteDesktopManager.Mac.2026.1.10.3.dmg",
+  "vendor_url": "https://cdn.devolutions.net/download/Mac/Devolutions.RemoteDesktopManager.Mac.2026.1.10.3.dmg",
   "bundleId": "com.devolutions.remotedesktopmanager",
   "homepage": "https://mac.remotedesktopmanager.com/",
   "fileName": "Devolutions.RemoteDesktopManager.Mac.2026.1.10.3.dmg",

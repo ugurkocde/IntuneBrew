@@ -3,6 +3,7 @@
   "description": "Renamer for files, music and photos",
   "version": "12.28",
   "url": "https://www.publicspace.net/download/ABFRX12.dmg",
+  "vendor_url": "https://www.publicspace.net/download/ABFRX12.dmg",
   "bundleId": "net.publicspace.abfr12",
   "homepage": "https://www.publicspace.net/ABetterFinderRename/",
   "fileName": "ABFRX12.dmg",

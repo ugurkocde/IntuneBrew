@@ -3,6 +3,7 @@
   "description": "Benchmark tool to quickly test and compare the computer's performance",
   "version": "6.0.1",
   "url": "https://novabench.com/files/novabench.dmg",
+  "vendor_url": "https://novabench.com/files/novabench.dmg",
   "bundleId": "com.novabench.client",
   "homepage": "https://novabench.com/",
   "fileName": "novabench.dmg",

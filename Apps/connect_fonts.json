@@ -3,6 +3,7 @@
   "description": "Font manager",
   "version": "28.1.1",
   "url": "https://bin.extensis.com/ConnectFonts-M-28-1-1.dmg",
+  "vendor_url": "https://bin.extensis.com/ConnectFonts-M-28-1-1.dmg",
   "bundleId": "com.extensis.SuitcaseFusion",
   "homepage": "https://www.extensis.com/products/connect",
   "fileName": "ConnectFonts-M-28-1-1.dmg",

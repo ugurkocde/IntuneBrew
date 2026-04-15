@@ -3,6 +3,7 @@
   "description": "Classical music streaming app",
   "version": "1.15.0",
   "url": "https://dl.idagio.com/IDAGIO-1.15.0.dmg",
+  "vendor_url": "https://dl.idagio.com/IDAGIO-1.15.0.dmg",
   "bundleId": "com.idagio.desktop",
   "homepage": "https://www.idagio.com/",
   "fileName": "IDAGIO-1.15.0.dmg",

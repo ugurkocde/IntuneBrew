@@ -3,6 +3,7 @@
   "description": "Network monitor and firewall",
   "version": "3.4",
   "url": "https://radiosilenceapp.com/downloads/Radio_Silence_3.4.pkg",
+  "vendor_url": "https://radiosilenceapp.com/downloads/Radio_Silence_3.4.pkg",
   "bundleId": "com.radiosilenceapp.client",
   "homepage": "https://radiosilenceapp.com/",
   "fileName": "Radio_Silence_3.4.pkg",

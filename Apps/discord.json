@@ -3,6 +3,7 @@
   "description": "Voice and text chat software",
   "version": "0.0.385",
   "url": "https://dl.discordapp.net/apps/osx/0.0.385/Discord.dmg",
+  "vendor_url": "https://dl.discordapp.net/apps/osx/0.0.385/Discord.dmg",
   "bundleId": "com.hnc.Discord",
   "homepage": "https://discord.com/",
   "fileName": "Discord.dmg",

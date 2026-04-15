@@ -3,6 +3,7 @@
   "description": "Collaborative to-do list app",
   "version": "1.52.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/superlist_1.52.1.pkg",
+  "vendor_url": "https://storage.googleapis.com/superlist-appcast/beta/updates/Superlist-1.52.1.zip",
   "bundleId": "com.superlist.superlist.app",
   "homepage": "https://www.superlist.com/",
   "fileName": "superlist_1.52.1.pkg",

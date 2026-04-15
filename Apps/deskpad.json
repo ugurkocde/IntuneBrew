@@ -3,6 +3,7 @@
   "description": "Virtual monitor for screen sharing",
   "version": "1.3.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/deskpad_1.3.2.pkg",
+  "vendor_url": "https://github.com/Stengo/DeskPad/releases/download/v1.3.2/DeskPad.app.zip",
   "bundleId": "com.stengo.DeskPad",
   "homepage": "https://github.com/Stengo/DeskPad",
   "fileName": "deskpad_1.3.2.pkg",

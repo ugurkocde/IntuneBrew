@@ -3,6 +3,7 @@
   "description": "Cloud native persistent desktop virtualization",
   "version": "5.31.0.6030",
   "url": "https://intunebrew.blob.core.windows.net/pkg/amazon_workspaces_5.31.0.6030.pkg",
+  "vendor_url": "https://d2td7dqidlhjx7.cloudfront.net/prod/global/osx/WorkSpaces_AllProducts_6030.zip",
   "bundleId": "com.amazon.workspaces",
   "homepage": "https://clients.amazonworkspaces.com/",
   "fileName": "amazon_workspaces_5.31.0.6030.pkg",

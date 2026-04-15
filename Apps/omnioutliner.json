@@ -3,6 +3,7 @@
   "description": "Note taking application and information organiser",
   "version": "6.1",
   "url": "https://downloads.omnigroup.com/software/macOS/15/OmniOutliner-6.1.dmg",
+  "vendor_url": "https://downloads.omnigroup.com/software/macOS/15/OmniOutliner-6.1.dmg",
   "bundleId": "com.omnigroup.OmniOutliner5",
   "homepage": "https://www.omnigroup.com/omnioutliner/",
   "fileName": "OmniOutliner-6.1.dmg",

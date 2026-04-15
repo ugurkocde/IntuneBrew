@@ -3,6 +3,7 @@
   "description": "Optimise and personalise your Jabra headset",
   "version": "6.27.03702",
   "url": "https://intunebrew.blob.core.windows.net/pkg/jabra_direct_6.27.03702.pkg",
+  "vendor_url": "https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg",
   "bundleId": "com.jabra.directonline",
   "homepage": "https://www.jabra.com/software-and-services/jabra-direct",
   "fileName": "jabra_direct_6.27.03702.pkg",

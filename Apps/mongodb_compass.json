@@ -3,6 +3,7 @@
   "description": "Interactive tool for analyzing MongoDB data",
   "version": "1.49.4",
   "url": "https://downloads.mongodb.com/compass/mongodb-compass-1.49.4-darwin-arm64.dmg",
+  "vendor_url": "https://downloads.mongodb.com/compass/mongodb-compass-1.49.4-darwin-arm64.dmg",
   "bundleId": "com.mongodb.compass",
   "homepage": "https://www.mongodb.com/products/compass",
   "fileName": "mongodb-compass-1.49.4-darwin-arm64.dmg",

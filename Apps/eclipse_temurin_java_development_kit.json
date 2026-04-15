@@ -3,6 +3,7 @@
   "description": "JDK from the Eclipse Foundation (Adoptium)",
   "version": "26",
   "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.pkg",
+  "vendor_url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.pkg",
   "bundleId": "net.temurin.23.jdk",
   "homepage": "https://adoptium.net/",
   "fileName": "OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.pkg",

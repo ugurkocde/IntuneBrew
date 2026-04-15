@@ -3,6 +3,7 @@
   "description": "Tool for digging into binary files",
   "version": "1.5",
   "url": "https://www.mothersruin.com/software/downloads/Archaeology.dmg",
+  "vendor_url": "https://www.mothersruin.com/software/downloads/Archaeology.dmg",
   "bundleId": "com.mothersruin.Archaeology",
   "homepage": "https://www.mothersruin.com/software/Archaeology/",
   "fileName": "Archaeology.dmg",

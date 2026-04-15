@@ -3,6 +3,7 @@
   "description": "Simple SQL Client for lightweight data analysis",
   "version": "1.34.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/bdash_1.34.0.pkg",
+  "vendor_url": "https://github.com/bdash-app/bdash/releases/download/v1.34.0/Bdash-1.34.0-universal-mac.zip",
   "bundleId": "io.bdash",
   "homepage": "https://github.com/bdash-app/bdash",
   "fileName": "bdash_1.34.0.pkg",

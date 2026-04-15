@@ -3,6 +3,7 @@
   "description": "Tool to reverse the direction of scrolling",
   "version": "1.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/scroll_reverser_1.9.pkg",
+  "vendor_url": "https://pilotmoon.com/downloads/ScrollReverser-1.9.zip",
   "bundleId": "com.pilotmoon.scroll-reverser",
   "homepage": "https://pilotmoon.com/scrollreverser/",
   "fileName": "scroll_reverser_1.9.pkg",

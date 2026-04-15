@@ -3,6 +3,7 @@
   "description": "Media system",
   "version": "10.11.8",
   "url": "https://repo.jellyfin.org/files/server/macos/stable/v10.11.8/arm64/jellyfin_10.11.8-arm64.dmg",
+  "vendor_url": "https://repo.jellyfin.org/files/server/macos/stable/v10.11.8/arm64/jellyfin_10.11.8-arm64.dmg",
   "bundleId": "org.jellyfin.JellyfinServer",
   "homepage": "https://jellyfin.org/",
   "fileName": "jellyfin_10.11.8-arm64.dmg",

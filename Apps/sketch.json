@@ -3,6 +3,7 @@
   "description": "Digital design and prototyping platform",
   "version": "2026.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/sketch_2026.1.pkg",
+  "vendor_url": "https://download.sketch.com/sketch-2026.1-228201.zip",
   "bundleId": "com.bohemiancoding.sketch3",
   "homepage": "https://www.sketch.com/",
   "fileName": "sketch_2026.1.pkg",

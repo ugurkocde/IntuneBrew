@@ -3,6 +3,7 @@
   "description": "Open and interact with data visualisations built in Tableau Desktop",
   "version": "2026.1.0",
   "url": "https://downloads.tableau.com/esdalt/2026.1.0/TableauReader-2026-1-0-arm64.pkg",
+  "vendor_url": "https://downloads.tableau.com/esdalt/2026.1.0/TableauReader-2026-1-0-arm64.pkg",
   "bundleId": "com.tableausoftware.tableaureader",
   "homepage": "https://www.tableau.com/products/reader",
   "fileName": "TableauReader-2026-1-0-arm64.pkg",

@@ -3,6 +3,7 @@
   "description": "Desktop sync client for Nextcloud software products",
   "version": "33.0.2",
   "url": "https://github.com/nextcloud-releases/desktop/releases/download/v33.0.2/Nextcloud-33.0.2.pkg",
+  "vendor_url": "https://github.com/nextcloud-releases/desktop/releases/download/v33.0.2/Nextcloud-33.0.2.pkg",
   "bundleId": "com.nextcloud.desktopclient",
   "homepage": "https://nextcloud.com/",
   "fileName": "Nextcloud-33.0.2.pkg",

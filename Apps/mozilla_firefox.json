@@ -3,6 +3,7 @@
   "description": "Web browser",
   "version": "149.0.2",
   "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/149.0.2/mac/en-US/Firefox%20149.0.2.dmg",
+  "vendor_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/149.0.2/mac/en-US/Firefox%20149.0.2.dmg",
   "bundleId": "org.mozilla.firefox",
   "homepage": "https://www.mozilla.org/firefox/",
   "fileName": "Firefox 149.0.2.dmg",

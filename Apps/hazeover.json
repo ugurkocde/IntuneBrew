@@ -3,6 +3,7 @@
   "description": "Windows manager and desktop organiser",
   "version": "1.9.7",
   "url": "https://hazeover.com/HazeOver.dmg",
+  "vendor_url": "https://hazeover.com/HazeOver.dmg",
   "bundleId": "com.pointum.hazeover",
   "homepage": "https://hazeover.com/",
   "fileName": "HazeOver.dmg",

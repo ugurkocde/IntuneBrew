@@ -3,6 +3,7 @@
   "description": "Visual tool to design, develop and administer MySQL servers",
   "version": "8.0.46",
   "url": "https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.46-macos-arm64.dmg",
+  "vendor_url": "https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.46-macos-arm64.dmg",
   "bundleId": "com.oracle.workbench.MySQLWorkbench",
   "homepage": "https://www.mysql.com/products/workbench/",
   "fileName": "mysql-workbench-community-8.0.46-macos-arm64.dmg",

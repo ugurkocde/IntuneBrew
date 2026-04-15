@@ -3,6 +3,7 @@
   "description": "Collection of apps available by subscription",
   "version": "3.51.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/setapp_3.51.1.pkg",
+  "vendor_url": "https://dl.devmate.com/com.setapp.DesktopClient/143/1774596828/Setapp-143.zip",
   "bundleId": "com.setapp.DesktopClient.SetappAgent",
   "homepage": "https://setapp.com/",
   "fileName": "setapp_3.51.1.pkg",

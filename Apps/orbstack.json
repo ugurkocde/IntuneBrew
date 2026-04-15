@@ -3,6 +3,7 @@
   "description": "Replacement for Docker Desktop",
   "version": "2.0.5",
   "url": "https://cdn-updates.orbstack.dev/arm64/OrbStack_v2.0.5_19905_arm64.dmg",
+  "vendor_url": "https://cdn-updates.orbstack.dev/arm64/OrbStack_v2.0.5_19905_arm64.dmg",
   "bundleId": "dev.kdrag0n.MacVirt",
   "homepage": "https://orbstack.dev/",
   "fileName": "OrbStack_v2.0.5_19905_arm64.dmg",

@@ -3,6 +3,7 @@
   "description": "Thumbnails, static previews, cover art and metadata for video files",
   "version": "3.05",
   "url": "https://github.com/Marginal/QLVideo/releases/download/rel-305/QLVideo_305.dmg",
+  "vendor_url": "https://github.com/Marginal/QLVideo/releases/download/rel-305/QLVideo_305.dmg",
   "bundleId": "com.apple.uk.org.marginal.qlvideo",
   "homepage": "https://github.com/Marginal/QLVideo",
   "fileName": "QLVideo_305.dmg",

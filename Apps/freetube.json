@@ -3,6 +3,7 @@
   "description": "YouTube player focusing on privacy",
   "version": "0.24.0",
   "url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.24.0-beta/freetube-0.24.0-beta-mac-arm64.dmg",
+  "vendor_url": "https://github.com/FreeTubeApp/FreeTube/releases/download/v0.24.0-beta/freetube-0.24.0-beta-mac-arm64.dmg",
   "bundleId": "io.freetubeapp.freetube",
   "homepage": "https://freetubeapp.io/",
   "fileName": "freetube-0.24.0-beta-mac-arm64.dmg",

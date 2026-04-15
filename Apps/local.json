@@ -3,6 +3,7 @@
   "description": "WordPress local development tool by Flywheel",
   "version": "10.0.0",
   "url": "https://cdn.localwp.com/releases-stable/10.0.0+6907/local-10.0.0-mac-arm64.dmg",
+  "vendor_url": "https://cdn.localwp.com/releases-stable/10.0.0+6907/local-10.0.0-mac-arm64.dmg",
   "bundleId": "com.getflywheel.lightning.local",
   "homepage": "https://localwp.com/",
   "fileName": "local-10.0.0-mac-arm64.dmg",

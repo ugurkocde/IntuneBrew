@@ -3,6 +3,7 @@
   "description": "Folder comparison and synchronization software",
   "version": "14.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/freefilesync_14.9.pkg",
+  "vendor_url": "https://freefilesync.org/download/FreeFileSync_14.9_macOS.zip",
   "bundleId": "org.freefilesync.FreeFileSync",
   "homepage": "https://freefilesync.org/",
   "fileName": "freefilesync_14.9.pkg",

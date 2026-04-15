@@ -3,6 +3,7 @@
   "description": "All-In-One Toolkit for Working Remotely",
   "version": "3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/basecamp_3.pkg",
+  "vendor_url": "https://basecamp.com/desktop/mac_arm64/basecamp3-2.5.2.zip",
   "bundleId": "com.basecamp.basecamp3",
   "homepage": "https://basecamp.com/help/3,2.4.2/guides/apps/mac",
   "fileName": "basecamp_3.pkg",

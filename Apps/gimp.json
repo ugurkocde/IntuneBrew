@@ -3,6 +3,7 @@
   "description": "Free and open-source image editor",
   "version": "3.2.2",
   "url": "https://download.gimp.org/gimp/v3.2/macos/gimp-3.2.2-arm64.dmg",
+  "vendor_url": "https://download.gimp.org/gimp/v3.2/macos/gimp-3.2.2-arm64.dmg",
   "bundleId": "org.gnome.gimp",
   "homepage": "https://www.gimp.org/",
   "fileName": "gimp-3.2.2-arm64.dmg",

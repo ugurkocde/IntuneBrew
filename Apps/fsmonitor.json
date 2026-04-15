@@ -3,6 +3,7 @@
   "description": null,
   "version": "1.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/fsmonitor_1.2.pkg",
+  "vendor_url": "https://tristan-software.ch/FSMonitor/Archives/FSMonitor_1.2(137).zip",
   "bundleId": "com.tristan.FSMonitor",
   "homepage": "https://fsmonitor.com/",
   "fileName": "fsmonitor_1.2.pkg",

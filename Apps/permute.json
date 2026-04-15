@@ -3,6 +3,7 @@
   "description": "Converts and edits video, audio or image files",
   "version": "3.14.7",
   "url": "https://software.charliemonroe.net/trial/permute/v3/Permute_3_4012.dmg",
+  "vendor_url": "https://software.charliemonroe.net/trial/permute/v3/Permute_3_4012.dmg",
   "bundleId": "com.charliemonroe.Permute-3",
   "homepage": "https://software.charliemonroe.net/permute/",
   "fileName": "Permute_3_4012.dmg",

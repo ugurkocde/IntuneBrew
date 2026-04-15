@@ -3,6 +3,7 @@
   "description": "Digital audio production application",
   "version": "7.69",
   "url": "https://dlcf.reaper.fm/7.x/reaper769_universal.dmg",
+  "vendor_url": "https://dlcf.reaper.fm/7.x/reaper769_universal.dmg",
   "bundleId": "com.cockos.reaper",
   "homepage": "https://www.reaper.fm/",
   "fileName": "reaper769_universal.dmg",

@@ -3,6 +3,7 @@
   "description": "Management tool for Unity",
   "version": "3.16.4",
   "url": "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup-arm64.dmg",
+  "vendor_url": "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup-arm64.dmg",
   "bundleId": "com.unity3d.unityhub",
   "homepage": "https://unity3d.com/get-unity/download",
   "fileName": "UnityHubSetup-arm64.dmg",

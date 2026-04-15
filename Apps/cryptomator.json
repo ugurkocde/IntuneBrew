@@ -3,6 +3,7 @@
   "description": "Multi-platform client-side cloud file encryption tool",
   "version": "1.19.2",
   "url": "https://github.com/cryptomator/cryptomator/releases/download/1.19.2/Cryptomator-1.19.2-arm64.dmg",
+  "vendor_url": "https://github.com/cryptomator/cryptomator/releases/download/1.19.2/Cryptomator-1.19.2-arm64.dmg",
   "bundleId": "org.cryptomator",
   "homepage": "https://cryptomator.org/",
   "fileName": "Cryptomator-1.19.2-arm64.dmg",

@@ -3,6 +3,7 @@
   "description": "Show photos or camera feeds on the desktop",
   "version": "6.0.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/photostickies_6.0.1.pkg",
+  "vendor_url": "https://download.devontechnologies.com/download/freeware/photostickies/6.0.1/PhotoStickies.app.zip",
   "bundleId": "org.grunenberg.PhotoStickies",
   "homepage": "https://www.devontechnologies.com/apps/freeware",
   "fileName": "photostickies_6.0.1.pkg",

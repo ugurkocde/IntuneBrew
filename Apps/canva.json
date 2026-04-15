@@ -3,6 +3,7 @@
   "description": "Design tool",
   "version": "1.122.0",
   "url": "https://desktop-release.canva.com/Canva-1.122.0-universal.dmg",
+  "vendor_url": "https://desktop-release.canva.com/Canva-1.122.0-universal.dmg",
   "bundleId": "com.canva.CanvaDesktop",
   "homepage": "https://www.canva.com/",
   "fileName": "Canva-1.122.0-universal.dmg",

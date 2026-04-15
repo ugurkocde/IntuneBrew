@@ -3,6 +3,7 @@
   "description": "AI-powered writing assistant",
   "version": "2.26.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/rewritebar_2.26.0.pkg",
+  "vendor_url": "https://rewritebar.com/download/v2.26.0.zip",
   "bundleId": "com.m91michel.rewritebar",
   "homepage": "https://rewritebar.com/",
   "fileName": "rewritebar_2.26.0.pkg",

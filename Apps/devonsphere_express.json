@@ -3,6 +3,7 @@
   "description": "Find items related to the frontmost document locally or online",
   "version": "1.9.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/devonsphere_express_1.9.9.pkg",
+  "vendor_url": "https://download.devontechnologies.com/download/devonsphere/1.9.9/DEVONsphere_Express.app.zip",
   "bundleId": "com.devon-technologies.sphereexpress",
   "homepage": "https://www.devontechnologies.com/apps/devonsphere",
   "fileName": "devonsphere_express_1.9.9.pkg",

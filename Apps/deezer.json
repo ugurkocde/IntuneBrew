@@ -3,6 +3,7 @@
   "description": "Music player",
   "version": "7.1.150",
   "url": "https://www.deezer.com/desktop/download/artifact-darwin-x64-7.1.150",
+  "vendor_url": "https://www.deezer.com/desktop/download/artifact-darwin-x64-7.1.150",
   "bundleId": "com.deezer.deezer-desktop",
   "homepage": "https://www.deezer.com/download",
   "fileName": "Deezer-7.1.150.dmg",

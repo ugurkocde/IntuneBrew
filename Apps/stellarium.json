@@ -3,6 +3,7 @@
   "description": "Tool to render realistic skies in real time on the screen",
   "version": "26.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/stellarium_26.1.pkg",
+  "vendor_url": "https://github.com/Stellarium/stellarium/releases/download/v26.1/Stellarium-26.1-qt6-macOS.zip",
   "bundleId": "org.stellarium.Stellarium",
   "homepage": "https://stellarium.org/",
   "fileName": "stellarium_26.1.pkg",

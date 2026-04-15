@@ -3,6 +3,7 @@
   "description": "Mounts servers and cloud storages as a disk on the desktop",
   "version": "5.2.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/mountain_duck_5.2.1.pkg",
+  "vendor_url": "https://dist.mountainduck.io/Mountain%20Duck-5.2.1.28671.zip",
   "bundleId": "io.mountainduck",
   "homepage": "https://mountainduck.io/",
   "fileName": "mountain_duck_5.2.1.pkg",

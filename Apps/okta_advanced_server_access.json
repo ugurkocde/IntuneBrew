@@ -3,6 +3,7 @@
   "description": "Identity and access management",
   "version": "1.103.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/okta_advanced_server_access_1.103.2.pkg",
+  "vendor_url": "https://dist.scaleft.com/repos/macos/stable/all/macos-client/v1.103.2/ScaleFT-1.103.2.pkg",
   "bundleId": "com.scaleft.ScaleFT",
   "homepage": "https://help.okta.com/asa/en-us/Content/Topics/Adv_Server_Access/docs/sft-osx.htm",
   "fileName": "okta_advanced_server_access_1.103.2.pkg",

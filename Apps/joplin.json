@@ -3,6 +3,7 @@
   "description": "Note taking and to-do application with synchronisation capabilities",
   "version": "3.5.13",
   "url": "https://github.com/laurent22/joplin/releases/download/v3.5.13/Joplin-3.5.13-arm64.DMG",
+  "vendor_url": "https://github.com/laurent22/joplin/releases/download/v3.5.13/Joplin-3.5.13-arm64.DMG",
   "bundleId": "net.cozic.joplin-desktop",
   "homepage": "https://joplinapp.org/",
   "fileName": "Joplin-3.5.13-arm64.DMG",

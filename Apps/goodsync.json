@@ -3,6 +3,7 @@
   "description": "File synchronisation and backup software",
   "version": "12.9.28",
   "url": "https://www.goodsync.com/download/goodsync-vsub-mac.dmg",
+  "vendor_url": "https://www.goodsync.com/download/goodsync-vsub-mac.dmg",
   "bundleId": "com.sibersystems.goodsyncmac2000",
   "homepage": "https://www.goodsync.com/",
   "fileName": "goodsync-vsub-mac.dmg",

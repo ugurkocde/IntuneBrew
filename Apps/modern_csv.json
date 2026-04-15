@@ -3,6 +3,7 @@
   "description": "CSV editor",
   "version": "2.4.1",
   "url": "https://www.moderncsv.com/release/ModernCSV-Mac-v2.4.1.dmg",
+  "vendor_url": "https://www.moderncsv.com/release/ModernCSV-Mac-v2.4.1.dmg",
   "bundleId": "net.galliumdigital.Modern-CSV",
   "homepage": "https://www.moderncsv.com/",
   "fileName": "ModernCSV-Mac-v2.4.1.dmg",

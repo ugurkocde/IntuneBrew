@@ -3,6 +3,7 @@
   "description": "MySQL & MariaDB database client",
   "version": "2026.07",
   "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_for_mysql_2026.07.pkg",
+  "vendor_url": "https://d3fwkemdw8spx3.cloudfront.net/mysql/SQLProMySQL.2026.07.app.zip",
   "bundleId": "com.hankinsoft.osx.mysql",
   "homepage": "https://www.mysqlui.com/",
   "fileName": "sqlpro_for_mysql_2026.07.pkg",

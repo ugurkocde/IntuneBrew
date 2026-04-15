@@ -3,6 +3,7 @@
   "description": "Video and photo editor",
   "version": "5.9.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/insta360_studio_5.9.2.pkg",
+  "vendor_url": "https://wassets.insta360.com/common/4125b6f1018d4b37b7c41309adc776e8/Insta360_Studio_5.9.2_release_insta360(RC_build54)_20260303_111658_signed_1772515615194.zip",
   "bundleId": "com.insta360.studio",
   "homepage": "https://www.insta360.com/",
   "fileName": "insta360_studio_5.9.2.pkg",

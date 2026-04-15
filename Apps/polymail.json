@@ -3,6 +3,7 @@
   "description": "Email productivity application",
   "version": "2.4.3003",
   "url": "https://sparkle-updater.polymail.io/macos-arm64/builds/Polymail-v2.4.3003.dmg",
+  "vendor_url": "https://sparkle-updater.polymail.io/macos-arm64/builds/Polymail-v2.4.3003.dmg",
   "bundleId": "io.polymail.osx",
   "homepage": "https://polymail.io/",
   "fileName": "Polymail-v2.4.3003.dmg",

@@ -3,6 +3,7 @@
   "description": "Cryptocurrency exchange",
   "version": "2.2.1",
   "url": "https://ftp.binance.com/electron-desktop/mac/production/binance-2.2.1-arm64.dmg",
+  "vendor_url": "https://ftp.binance.com/electron-desktop/mac/production/binance-2.2.1-arm64.dmg",
   "bundleId": "com.binance.BinanceDesktop",
   "homepage": "https://binance.com/",
   "fileName": "binance-2.2.1-arm64.dmg",

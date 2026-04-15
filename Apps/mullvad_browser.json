@@ -3,6 +3,7 @@
   "description": "Web browser focused on privacy and on minimizing tracking and fingerprinting",
   "version": "15.0.9",
   "url": "https://cdn.mullvad.net/browser/15.0.9/mullvad-browser-macos-15.0.9.dmg",
+  "vendor_url": "https://cdn.mullvad.net/browser/15.0.9/mullvad-browser-macos-15.0.9.dmg",
   "bundleId": "net.mullvad.mullvadbrowser",
   "homepage": "https://mullvad.net/browser",
   "fileName": "mullvad-browser-macos-15.0.9.dmg",

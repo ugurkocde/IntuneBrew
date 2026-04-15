@@ -3,6 +3,7 @@
   "description": "Downloads videos from different websites",
   "version": "4.12.3",
   "url": "https://software.charliemonroe.net/trial/downie/v4/Downie_4_5163.dmg",
+  "vendor_url": "https://software.charliemonroe.net/trial/downie/v4/Downie_4_5163.dmg",
   "bundleId": "com.charliemonroe.Downie-4",
   "homepage": "https://software.charliemonroe.net/downie.php",
   "fileName": "Downie_4_5163.dmg",

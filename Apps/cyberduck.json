@@ -3,6 +3,7 @@
   "description": "Server and cloud storage browser",
   "version": "9.4.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/cyberduck_9.4.1.pkg",
+  "vendor_url": "https://update.cyberduck.io/Cyberduck-9.4.1.44384.zip",
   "bundleId": "ch.sudo.cyberduck",
   "homepage": "https://cyberduck.io/",
   "fileName": "cyberduck_9.4.1.pkg",

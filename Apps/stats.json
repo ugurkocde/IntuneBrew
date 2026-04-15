@@ -3,6 +3,7 @@
   "description": "System monitor for the menu bar",
   "version": "2.12.9",
   "url": "https://github.com/exelban/stats/releases/download/v2.12.9/Stats.dmg",
+  "vendor_url": "https://github.com/exelban/stats/releases/download/v2.12.9/Stats.dmg",
   "bundleId": "eu.exelban.Stats",
   "homepage": "https://github.com/exelban/stats",
   "fileName": "Stats.dmg",

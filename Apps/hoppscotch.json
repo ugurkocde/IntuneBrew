@@ -3,6 +3,7 @@
   "description": "Open source API development ecosystem",
   "version": "26.3.1-0",
   "url": "https://github.com/hoppscotch/releases/releases/download/v26.3.1-0/Hoppscotch_mac_aarch64.dmg",
+  "vendor_url": "https://github.com/hoppscotch/releases/releases/download/v26.3.1-0/Hoppscotch_mac_aarch64.dmg",
   "bundleId": "io.hoppscotch.desktop",
   "homepage": "https://hoppscotch.com/",
   "fileName": "Hoppscotch_mac_aarch64.dmg",

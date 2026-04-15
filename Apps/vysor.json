@@ -3,6 +3,7 @@
   "description": "Mirror and control your phone",
   "version": "5.0.7",
   "url": "https://intunebrew.blob.core.windows.net/pkg/vysor_5.0.7.pkg",
+  "vendor_url": "https://github.com/koush/vysor.io/releases/download/v5.0.7/Vysor-mac-5.0.7.zip",
   "bundleId": "com.electron.vysor.helper",
   "homepage": "https://www.vysor.io/",
   "fileName": "vysor_5.0.7.pkg",

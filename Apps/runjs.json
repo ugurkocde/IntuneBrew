@@ -3,6 +3,7 @@
   "description": "JavaScript playground that auto-evaluates as code is typed",
   "version": "3.2.2",
   "url": "https://github.com/lukehaas/RunJS/releases/download/v3.2.2/RunJS-3.2.2-universal.dmg",
+  "vendor_url": "https://github.com/lukehaas/RunJS/releases/download/v3.2.2/RunJS-3.2.2-universal.dmg",
   "bundleId": "me.lukehaas.runjs",
   "homepage": "https://runjs.app/",
   "fileName": "RunJS-3.2.2-universal.dmg",

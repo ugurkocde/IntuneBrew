@@ -3,6 +3,7 @@
   "description": "Organise your ideas and projects into visual boards",
   "version": "3.18.91",
   "url": "https://milanote-app-releases.s3.amazonaws.com/Milanote-3.18.91.dmg",
+  "vendor_url": "https://milanote-app-releases.s3.amazonaws.com/Milanote-3.18.91.dmg",
   "bundleId": "com.milanote.app",
   "homepage": "https://www.milanote.com/",
   "fileName": "Milanote-3.18.91.dmg",

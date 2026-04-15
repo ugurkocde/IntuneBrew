@@ -3,6 +3,7 @@
   "description": "Spam filtering extension for e-mail clients",
   "version": "3.3",
   "url": "https://c-command.com/downloads/SpamSieve-3.3.dmg",
+  "vendor_url": "https://c-command.com/downloads/SpamSieve-3.3.dmg",
   "bundleId": "com.c-command.SpamSieve",
   "homepage": "https://c-command.com/spamsieve/",
   "fileName": "SpamSieve-3.3.dmg",

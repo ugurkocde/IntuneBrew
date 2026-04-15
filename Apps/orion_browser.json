@@ -3,6 +3,7 @@
   "description": "WebKit based web browser",
   "version": "1.0.6",
   "url": "https://intunebrew.blob.core.windows.net/pkg/orion_browser_1.0.6.pkg",
+  "vendor_url": "https://cdn.kagi.com/updates/26_0/145.zip",
   "bundleId": "com.kagi.kagimacOS",
   "homepage": "https://browser.kagi.com/",
   "fileName": "orion_browser_1.0.6.pkg",
