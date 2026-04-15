@@ -1,7 +1,7 @@
 {
   "app_name": "Adobe Acrobat Reader",
   "app_key": "adobe_acrobat_reader",
-  "last_updated": "2026-04-14",
+  "last_updated": "2026-04-15",
   "total_cves": 2206,
   "summary": {
     "critical": 424,
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2020-9715",
       "published_date": "2020-08-19",
-      "last_modified_date": "2026-04-13",
+      "last_modified_date": "2026-04-14",
       "description": "Adobe Acrobat and Reader versions 2020.009.20074 and earlier, 2020.001.30002, 2017.011.30171 and earlier, and 2015.006.30523 and earlier have an use-after-free vulnerability. Successful exploitation could lead to arbitrary code execution .",
       "base_score": 7.8,
       "severity": "HIGH",

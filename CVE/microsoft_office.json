@@ -1,14 +1,14 @@
 {
   "app_name": "Microsoft Office",
   "app_key": "microsoft_office",
-  "last_updated": "2026-04-14",
+  "last_updated": "2026-04-15",
   "total_cves": 1072,
   "summary": {
     "critical": 13,
     "high": 879,
     "medium": 171,
     "low": 9,
-    "kev_count": 39
+    "kev_count": 40
   },
   "vulnerabilities": [
     {
@@ -763,6 +763,27 @@
       "is_kev": true,
       "kev_date_added": "2022-06-08",
       "kev_due_date": "2022-06-22",
+      "kev_ransomware_use": "Unknown",
+      "vendor": "microsoft",
+      "product": "office"
+    },
+    {
+      "cve_id": "CVE-2009-0238",
+      "published_date": "2009-02-25",
+      "last_modified_date": "2026-04-14",
+      "description": "Microsoft Office Excel 2000 SP3, 2002 SP3, 2003 SP3, and 2007 SP1; Excel Viewer 2003 Gold and SP3; Excel Viewer; Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1; and Excel in Microsoft Office 2004 and 2008 for Mac allow remote attackers to execute arbitrary code via a crafted Excel document that triggers an access attempt on an invalid object, as exploited in the wild in February 2009 by Trojan.Mdropper.AC.",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": true,
+      "kev_date_added": "2026-04-14",
+      "kev_due_date": "2026-04-28",
       "kev_ransomware_use": "Unknown",
       "vendor": "microsoft",
       "product": "office"
@@ -16396,27 +16417,6 @@
       "published_date": "2009-04-15",
       "last_modified_date": "2025-04-09",
       "description": "Microsoft Office Excel 2000 SP3, 2002 SP3, 2003 SP3, and 2007 SP1; Excel in Microsoft Office 2004 and 2008 for Mac; Microsoft Office Excel Viewer and Excel Viewer 2003 SP3; and Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 do not properly parse the Excel spreadsheet file format, which allows remote attackers to execute arbitrary code via a crafted spreadsheet that contains a malformed object with \"an offset and a two-byte value\" that trigger a memory calculation error, aka \"Memory Corruption Vulnerability.\"",
-      "base_score": 9.3,
-      "severity": "HIGH",
-      "cvss_version": "2.0",
-      "cvss_vector": "AV:N/AC:M/Au:N/C:C/I:C/A:C",
-      "affected_version_start": null,
-      "affected_version_start_type": null,
-      "affected_version_end": null,
-      "affected_version_end_type": null,
-      "fixed_version": null,
-      "is_kev": false,
-      "kev_date_added": null,
-      "kev_due_date": null,
-      "kev_ransomware_use": null,
-      "vendor": "microsoft",
-      "product": "office"
-    },
-    {
-      "cve_id": "CVE-2009-0238",
-      "published_date": "2009-02-25",
-      "last_modified_date": "2025-04-09",
-      "description": "Microsoft Office Excel 2000 SP3, 2002 SP3, 2003 SP3, and 2007 SP1; Excel Viewer 2003 Gold and SP3; Excel Viewer; Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1; and Excel in Microsoft Office 2004 and 2008 for Mac allow remote attackers to execute arbitrary code via a crafted Excel document that triggers an access attempt on an invalid object, as exploited in the wild in February 2009 by Trojan.Mdropper.AC.",
       "base_score": 9.3,
       "severity": "HIGH",
       "cvss_version": "2.0",
