@@ -2,7 +2,7 @@
   "name": "Bambu Studio",
   "description": "3D model slicing software for 3D printers, maintained by Bambu Lab",
   "version": "02.05.03.61",
-  "url": "https://github.com/bambulab/BambuStudio/releases/download/v02.05.03.61/Bambu_Studio_mac-v02.05.03.61-20260414213734.dmg",
+  "url": "https://github.com/bambulab/BambuStudio/releases/download/v02.05.03.62/Bambu_Studio_mac-v02.05.03.61-20260414213734.dmg",
   "vendor_url": "https://github.com/bambulab/BambuStudio/releases/download/v02.05.03.61/Bambu_Studio_mac-v02.05.03.61-20260414213734.dmg",
   "bundleId": "com.bambulab.bambu-studio",
   "homepage": "https://bambulab.com/en/download/studio",
@@ -20,5 +20,5 @@
   },
   "category": "Design",
   "publisher": "Bambu Lab",
-  "previous_version": "02.05.00.66"
+  "previous_version": "02.05.03.61"
 }

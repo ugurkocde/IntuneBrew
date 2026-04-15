@@ -1,16 +1,16 @@
 {
   "name": "Postman",
   "description": "Collaboration platform for API development",
-  "version": "12.6.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/postman_12.6.1.pkg",
+  "version": "12.6.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/postman_12.6.3.pkg",
   "vendor_url": "https://dl.pstmn.io/download/version/12.6.3/osx_arm64",
   "bundleId": "com.postmanlabs.mac",
   "homepage": "https://www.postman.com/",
-  "fileName": "postman_12.6.1.pkg",
+  "fileName": "postman_12.6.3.pkg",
   "type": "app",
-  "sha": "5fc1396b190d2b64a1819afe0afa191c6ee5365dd58ec17c4d5c7ee39a1e3b77",
+  "sha": "ec7ee123fdc5b5ffe5d0a0f8f7712649ca6d88b35903a114697ce729b00f3536",
   "changelog": "https://www.postman.com/release-notes/postman-app/",
-  "previous_version": "12.6.1",
+  "previous_version": "12.6.3",
   "category": "Developer Tools",
   "publisher": "Postman, Inc."
 }

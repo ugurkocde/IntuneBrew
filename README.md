@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1247-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -425,55 +425,26 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-15 01:05 UTC*
+*Last checked: 2026-04-15 12:10 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| ProcessSpy | 1.11.2 | 1.11.3 |
-| Binary Ninja | 5.2.8722 | 5.3.9434 |
-| Rive | 0.8.4571 | 0.8.4602 |
-| Syncovery | 11.14.0 | 11.14.4 |
-| A Better Finder Rename | 12.26 | 12.28 |
-| NordPass | 7.5.7 | 7.6.14 |
-| Raindrop.io | 5.7.3 | 5.7.6 |
-| Pika | 1.5.0 | 1.6.0 |
-| Bambu Studio | 02.05.00.66 | 02.05.03.61 |
-| Apifox | 2.8.22 | 2.8.24 |
-| ChatWise | 26.4.4 | 26.4.5 |
-| Trae | 2.3.18717 | 2.3.19583 |
-| Redis Insight | 3.2.0 | 3.4.0 |
-| Downie | 4.12.2 | 4.12.3 |
-| Grammarly Desktop | 1.160.0.0 | 1.161.1.0 |
-| Blender | 5.1.0 | 5.1.1 |
-| Dropbox | 246.4.3513 | 248.4.3576 |
-| Discord | 0.0.384 | 0.0.385 |
-| Elgato Stream Deck | 7.4.0.22712 | 7.4.1.22720 |
-| Microsoft Office | 16.107.26040410 | 16.108.26041219 |
-| JetBrains Toolbox | 3.4.1 | 3.4.2 |
-| Dataflare | 2.9.5 | 2.9.6 |
-| Milanote | 3.18.89 | 3.18.91 |
-| Plexamp | 4.12.4 | 4.13.1 |
-| Surfshark | 4.26.2 | 4.27.0 |
+| Notion | 7.10.0 | 7.11.0 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Deckset | 2.0.49 | 2.0.50 |
-| Akiflow | 2.71.6 | 2.71.7 |
-| Connect Fonts | 28.1.0 | 28.1.1 |
-| Loom | 0.343.0 | 0.344.0 |
+| Electron Cash | 4.4.3 | 4.4.4 |
+| ChatWork | 2.21.1 | 2.21.2 |
+| jamovi | 2.7.24.0 | 2.7.26.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Notesnook | 3.3.13 | 3.3.14 |
-| Pitch | 2.121.1 | 2.122.0 |
-| Scribus | 1.6.5 | 1.6.6 |
-| Microsoft Excel | 16.107.26040410 | 16.108.26041219 |
-| Microsoft OneNote | 16.107.26040410 | 16.108.26041219 |
-| Microsoft Outlook | 16.107.26040410 | 16.108.26041219 |
-| Microsoft PowerPoint | 16.107.26040410 | 16.108.26041219 |
-| Microsoft Word | 16.107.26040410 | 16.108.26041219 |
-| Adobe Acrobat Reader | 26.001.21411 | 26.001.21431 |
-| Adobe Acrobat Pro DC | 26.001.21411 | 26.001.21431 |
+| Unity Hub | 3.16.4 | 3.17.1 |
+| WebCatalog | 74.0.2 | 74.2.0 |
+| Insta360 Studio | 5.9.2 | 5.9.4 |
+| Microsoft Office BusinessPro | 16.107.26040410 | 16.108.26041219 |
+| UniFi Identity Endpoint | 3.6.1 | 3.6.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

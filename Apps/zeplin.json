@@ -1,15 +1,15 @@
 {
   "name": "Zeplin",
   "description": "Share, organise and collaborate on designs",
-  "version": "10.31.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/zeplin_10.31.0.pkg",
+  "version": "10.32.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/zeplin_10.32.0.pkg",
   "vendor_url": "https://pkg.zeplin.io/macos/latest/zeplin-darwin-universal.zip",
   "bundleId": "io.zeplin.osx",
   "homepage": "https://zeplin.io/",
-  "fileName": "zeplin_10.31.0.pkg",
+  "fileName": "zeplin_10.32.0.pkg",
   "type": "app",
-  "sha": "6f979a6cc684bb79c76e02415fe38436eef31e4ea298f0f04723dd78941e9a4f",
+  "sha": "78aab76c8ca784b534293a641fcc92779a098928a6fee3906694257174b41027",
   "category": "Design",
   "publisher": "Zeplin Ltd",
-  "previous_version": "10.31.0"
+  "previous_version": "10.32.0"
 }
