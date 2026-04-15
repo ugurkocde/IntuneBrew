@@ -1,14 +1,14 @@
 {
   "name": "Sublime Merge",
   "description": "Git client",
-  "version": "2123",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sublime_merge_2123.pkg",
+  "version": "2125",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sublime_merge_2125.pkg",
   "bundleId": "com.sublimemerge",
   "homepage": "https://www.sublimemerge.com/",
-  "fileName": "sublime_merge_2123.pkg",
+  "fileName": "sublime_merge_2125.pkg",
   "type": "app",
-  "sha": "9258f7136cae2215d9caeeb3059dab064862f0288270dfb632648e9e8e9a50de",
-  "previous_version": "2123",
+  "sha": "5ceb6724819be514d2563d508aeb5a74f986af8f6a3fc27f883c1b97d37e0890",
+  "previous_version": "2125",
   "category": "Developer Tools",
   "publisher": "Sublime HQ Pty Ltd"
 }
