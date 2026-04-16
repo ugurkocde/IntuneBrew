@@ -1,13 +1,13 @@
 {
   "name": "Yubico Authenticator",
   "description": "Application for generating TOTP and HOTP codes",
-  "version": "7.3.2",
-  "url": "https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-7.3.2-mac.dmg",
+  "version": "7.3.3",
+  "url": "https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-7.3.3-mac.dmg",
   "vendor_url": "https://developers.yubico.com/yubioath-flutter/Releases/yubico-authenticator-7.3.2-mac.dmg",
   "bundleId": "com.yubico.yubioath",
   "homepage": "https://developers.yubico.com/yubioath-flutter/",
-  "fileName": "yubico-authenticator-7.3.2-mac.dmg",
-  "sha": "ad34e188025ec5d3f557dbedf08c7f50586852380833a58ced2df2148ee75864",
+  "fileName": "yubico-authenticator-7.3.3-mac.dmg",
+  "sha": "afda30861d6f899ed1905018fe234ee68c0ed0c3d04e0789e1538d02227aadc4",
   "category": "Security",
   "publisher": "Yubico",
   "previous_version": "7.3.2"

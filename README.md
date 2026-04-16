@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1247-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -426,25 +426,34 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-15 12:10 UTC*
+*Last checked: 2026-04-16 00:53 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Notion | 7.10.0 | 7.11.0 |
+| Mozilla Firefox Developer Edition | 150.0b9 | 150.0b10 |
+| Fathom | 1.42.6 | 3.0.0 |
+| ChatWise | 26.4.5 | 26.4.6 |
+| Spotify | 1.2.86.502 | 1.2.87.414 |
+| Zed | 0.231.2 | 0.232.2 |
+| Windsurf | 1.9600.41 | 2.0.44 |
+| FreeCAD | 1.1.0 | 1.1.1 |
+| OneDrive | 26.040.0301.0001 | 26.051.0316.0004 |
+| JetBrains Toolbox | 3.4.2 | 3.4.3 |
+| FontBase | 2026.3.0 | 2026.4.1 |
+| Typeface | 4.2.3 | 4.3.0 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Electron Cash | 4.4.3 | 4.4.4 |
-| ChatWork | 2.21.1 | 2.21.2 |
-| jamovi | 2.7.24.0 | 2.7.26.0 |
+| Akiflow | 2.71.7 | 2.71.8 |
+| Connect Fonts | 28.1.1 | 28.1.2 |
+| DevKnife | 1.12.1 | 1.12.2 |
+| KiCad | 10.0.0 | 10.0.1 |
+| Loupdeck | 6.2.4.228 | 6.3.0.340 |
 | Multi | 0.538.2 | 3.0.2 |
-| Unity Hub | 3.16.4 | 3.17.1 |
-| WebCatalog | 74.0.2 | 74.2.0 |
-| Insta360 Studio | 5.9.2 | 5.9.4 |
-| Microsoft Office BusinessPro | 16.107.26040410 | 16.108.26041219 |
-| UniFi Identity Endpoint | 3.6.1 | 3.6.2 |
+| Yubico Authenticator | 7.3.2 | 7.3.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
