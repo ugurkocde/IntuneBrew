@@ -1,7 +1,7 @@
 {
   "app_name": "Inkscape",
   "app_key": "inkscape",
-  "last_updated": "2026-04-15",
+  "last_updated": "2026-04-16",
   "total_cves": 9,
   "summary": {
     "critical": 0,
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2005-3737",
       "published_date": "2005-11-22",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in the SVG importer (style.cpp) of inkscape 0.41 through 0.42.2 might allow remote attackers to execute arbitrary code via a SVG file with long CSS style property values.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2005-3885",
       "published_date": "2005-11-29",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The ps2epsi extension shell script (ps2epsi.sh) in Inkscape before 0.41 allows local users to overwrite arbitrary files via a symlink attack on the tmpepsifile.epsi temporary file.",
       "base_score": 2.1,
       "severity": "LOW",

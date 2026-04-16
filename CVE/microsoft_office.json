@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Office",
   "app_key": "microsoft_office",
-  "last_updated": "2026-04-15",
+  "last_updated": "2026-04-16",
   "total_cves": 1072,
   "summary": {
     "critical": 13,
@@ -812,7 +812,7 @@
     {
       "cve_id": "CVE-2006-2492",
       "published_date": "2006-05-20",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in Microsoft Word in Office 2000 SP3, Office XP SP3, Office 2003 Sp1 and SP2, and Microsoft Works Suites through 2006, allows user-assisted attackers to execute arbitrary code via a malformed object pointer, as originally reported by ISC on 20060519 for a zero-day attack.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -18284,7 +18284,7 @@
     {
       "cve_id": "CVE-2006-0001",
       "published_date": "2006-09-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Stack-based buffer overflow in Microsoft Publisher 2000 through 2003 allows user-assisted remote attackers to execute arbitrary code via a crafted PUB file, which causes an overflow when parsing fonts.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18305,7 +18305,7 @@
     {
       "cve_id": "CVE-2006-4534",
       "published_date": "2006-09-05",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Microsoft Word 2000, 2002, and Office 2003 allows remote user-assisted attackers to execute arbitrary code via unspecified vectors involving a crafted file resulting in a malformed stack, as exploited by malware with names including Trojan.Mdropper.Q, Mofei, and Femo.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18326,7 +18326,7 @@
     {
       "cve_id": "CVE-2006-0007",
       "published_date": "2006-07-11",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in GIFIMP32.FLT, as used in Microsoft Office 2003 SP1 and SP2, Office XP SP3, Office 2000 SP3, and other products, allows user-assisted attackers to execute arbitrary code via a crafted GIF image that triggers memory corruption when it is parsed.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18347,7 +18347,7 @@
     {
       "cve_id": "CVE-2006-0033",
       "published_date": "2006-07-11",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Microsoft Office 2003 SP1 and SP2, Office XP SP3, Office 2000 SP3, and other products, allows user-assisted attackers to execute arbitrary code via a crafted PNG image that triggers memory corruption when it is parsed.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18368,7 +18368,7 @@
     {
       "cve_id": "CVE-2006-1316",
       "published_date": "2006-07-11",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Microsoft Office 2003 SP1 and SP2, Office XP SP3, Office 2000 SP3, and other products, allows user-assisted attackers to execute arbitrary code via an Office file with malformed string that triggers memory corruption related to record lengths, aka \"Microsoft Office Parsing Vulnerability,\" a different vulnerability than CVE-2006-2389.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18389,7 +18389,7 @@
     {
       "cve_id": "CVE-2006-2389",
       "published_date": "2006-07-11",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Microsoft Office 2003 SP1 and SP2, Office XP SP3, Office 2000 SP3, and other products, allows user-assisted attackers to execute arbitrary code via an Office file with a malformed property that triggers memory corruption related to record lengths, aka \"Microsoft Office Property Vulnerability,\" a different vulnerability than CVE-2006-1316.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18410,7 +18410,7 @@
     {
       "cve_id": "CVE-2006-1540",
       "published_date": "2006-03-30",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "MSO.DLL in Microsoft Office 2000, Office XP (2002), and Office 2003 allows user-assisted attackers to cause a denial of service and execute arbitrary code via multiple attack vectors, as originally demonstrated using a crafted document record with a malformed string, as demonstrated by replacing a certain \"01 00 00 00\" byte sequence with an \"FF FF FF FF\" byte sequence, possibly causing an invalid array index, in (1) an Excel .xls document, which triggers an access violation in ole32.dll; (2) an Excel .xlw document, which triggers an access violation in excel.exe; (3) a Word document, which triggers an access violation in mso.dll in winword.exe; and (4) a PowerPoint document, which triggers an access violation in powerpnt.txt.  NOTE: after the initial disclosure, this issue was demonstrated by triggering an integer overflow using an inconsistent size for a Unicode \"Sheet Name\" string.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18431,7 +18431,7 @@
     {
       "cve_id": "CVE-2006-0008",
       "published_date": "2006-02-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The ShellAbout API call in Korean Input Method Editor (IME) in Korean versions of Microsoft Windows XP SP1 and SP2, Windows Server 2003 up to SP1, and Office 2003, allows local users to gain privileges by launching the \"shell about dialog box\" and clicking the \"End-User License Agreement\" link, which executes Notepad with the privileges of the program that displays the about box.",
       "base_score": 7.2,
       "severity": "HIGH",
@@ -18452,7 +18452,7 @@
     {
       "cve_id": "CVE-2006-0002",
       "published_date": "2006-01-10",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Microsoft Outlook 2000 through 2003, Exchange 5.0 Server SP2 and 5.5 SP4, Exchange 2000 SP3, and Office allows remote attackers to execute arbitrary code via an e-mail message with a crafted Transport Neutral Encapsulation Format (TNEF) MIME attachment, related to message length validation.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18473,7 +18473,7 @@
     {
       "cve_id": "CVE-2005-2127",
       "published_date": "2005-08-19",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Microsoft Internet Explorer 5.01, 5.5, and 6 allows remote attackers to cause a denial of service (application crash) and possibly execute arbitrary code via a web page with embedded CLSIDs that reference certain COM objects that are not intended for use within Internet Explorer, as originally demonstrated using the (1) DDS Library Shape Control (Msdds.dll) COM object, and other objects including (2) Blnmgrps.dll, (3) Ciodm.dll, (4) Comsvcs.dll, (5) Danim.dll, (6) Htmlmarq.ocx, (7) Mdt2dd.dll (as demonstrated using a heap corruption attack with uninitialized memory), (8) Mdt2qd.dll, (9) Mpg4ds32.ax, (10) Msadds32.ax, (11) Msb1esen.dll, (12) Msb1fren.dll, (13) Msb1geen.dll, (14) Msdtctm.dll, (15) Mshtml.dll, (16) Msoeacct.dll, (17) Msosvfbr.dll, (18) Mswcrun.dll, (19) Netshell.dll, (20) Ole2disp.dll, (21) Outllib.dll, (22) Psisdecd.dll, (23) Qdvd.dll, (24) Repodbc.dll, (25) Shdocvw.dll, (26) Shell32.dll, (27) Soa.dll, (28) Srchui.dll, (29) Stobject.dll, (30) Vdt70.dll, (31) Vmhelper.dll, and (32) Wbemads.dll, aka a variant of the \"COM Object Instantiation Memory Corruption vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18494,7 +18494,7 @@
     {
       "cve_id": "CVE-2004-0848",
       "published_date": "2005-02-08",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in Microsoft Office XP allows remote attackers to execute arbitrary code via a link with a URL file location containing long inputs after (1) \"%00 (null byte) in .doc filenames or (2) \"%0a\" (carriage return) in .rtf filenames.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18515,7 +18515,7 @@
     {
       "cve_id": "CVE-2004-0846",
       "published_date": "2004-11-03",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unknown vulnerability in Microsoft Excel 2000, 2002, 2001 for Mac, and v.X for Mac allows remote attackers to execute arbitrary code via a malicious file containing certain parameters that are not properly validated.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18536,7 +18536,7 @@
     {
       "cve_id": "CVE-2004-0200",
       "published_date": "2004-09-28",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in the JPEG (JPG) parsing engine in the Microsoft Graphic Device Interface Plus (GDI+) component, GDIPlus.dll, allows remote attackers to execute arbitrary code via a JPEG image with a small JPEG COM field length that is normalized to a large integer length before a memory copy operation.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18557,7 +18557,7 @@
     {
       "cve_id": "CVE-2004-0573",
       "published_date": "2004-09-28",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in the converter for Microsoft WordPerfect 5.x on Office 2000, Office XP, Office 2003, and Works Suites 2001 through 2004 allows remote attackers to execute arbitrary code via a malicious document or website.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18578,7 +18578,7 @@
     {
       "cve_id": "CVE-2004-0121",
       "published_date": "2004-04-15",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Argument injection vulnerability in Microsoft Outlook 2002 does not sufficiently filter parameters of mailto: URLs when using them as arguments when calling OUTLOOK.EXE, which allows remote attackers to use script code in the Local Machine zone and execute arbitrary programs.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18599,7 +18599,7 @@
     {
       "cve_id": "CVE-2003-0347",
       "published_date": "2003-10-20",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Heap-based buffer overflow in VBE.DLL and VBE6.DLL of Microsoft Visual Basic for Applications (VBA) SDK 5.0 through 6.3 allows remote attackers to execute arbitrary code via a document with a long ID parameter.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -18620,7 +18620,7 @@
     {
       "cve_id": "CVE-2002-0618",
       "published_date": "2002-08-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Macro Security Model in Microsoft Excel 2000 and 2002 for Windows allows remote attackers to execute code in the Local Computer zone by embedding HTML scripts within an Excel workbook that contains an XSL stylesheet, aka \"Excel XSL Stylesheet Script Execution\".",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18641,7 +18641,7 @@
     {
       "cve_id": "CVE-2002-0619",
       "published_date": "2002-08-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Mail Merge Tool in Microsoft Word 2002 for Windows, when Microsoft Access is present on a system, allows remote attackers to execute Visual Basic (VBA) scripts within a mail merge document that is saved in HTML format, aka a \"Variant of MS00-071, Word Mail Merge Vulnerability\" (CVE-2000-0788).",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18662,7 +18662,7 @@
     {
       "cve_id": "CVE-2002-0615",
       "published_date": "2002-07-03",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Windows Media Active Playlist in Microsoft Windows Media Player 7.1 stores information in a well known location on the local file system, allowing attackers to execute HTML scripts in the Local Computer zone, aka \"Media Playback Script Invocation\".",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18683,7 +18683,7 @@
     {
       "cve_id": "CVE-2002-0152",
       "published_date": "2002-04-22",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in various Microsoft applications for Macintosh allows remote attackers to cause a denial of service (crash) or execute arbitrary code by invoking the file:// directive with a large number of / characters, which affects Internet Explorer 5.1, Outlook Express 5.0 through 5.0.2, Entourage v. X and 2001, PowerPoint v. X, 2001, and 98, and Excel v. X and 2001 for Macintosh.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18704,7 +18704,7 @@
     {
       "cve_id": "CVE-2000-0854",
       "published_date": "2000-11-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "When a Microsoft Office 2000 document is launched, the directory of that document is first used to locate DLL's such as riched20.dll and msi.dll, which could allow an attacker to execute arbitrary commands by inserting a Trojan Horse DLL into the same directory as the document.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -18725,7 +18725,7 @@
     {
       "cve_id": "CVE-2000-0419",
       "published_date": "2000-05-11",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Office 2000 UA ActiveX Control is marked as \"safe for scripting,\" which allows remote attackers to conduct unauthorized activities via the \"Show Me\" function in Office Help, aka the \"Office 2000 UA Control\" vulnerability.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18746,7 +18746,7 @@
     {
       "cve_id": "CVE-2000-0088",
       "published_date": "2000-01-20",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in the conversion utilities for Japanese, Korean and Chinese Word 5 documents allows an attacker to execute commands, aka the \"Malformed Conversion Data\" vulnerability.",
       "base_score": 7.2,
       "severity": "HIGH",
@@ -22022,7 +22022,7 @@
     {
       "cve_id": "CVE-2006-3493",
       "published_date": "2006-07-10",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in LsCreateLine function (mso_203) in mso.dll and mso9.dll, as used by Microsoft Word and possibly other products in Microsoft Office 2003, 2002, and 2000, allows remote user-assisted attackers to cause a denial of service (crash) via a crafted Word DOC or other Office file type.  NOTE: this issue was originally reported to allow code execution, but on 20060710 Microsoft stated that code execution is not possible, and the original researcher agrees.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -22043,7 +22043,7 @@
     {
       "cve_id": "CVE-2006-0009",
       "published_date": "2006-03-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in Microsoft Office 2000 SP3, XP SP3, and other versions and packages, allows user-assisted attackers to execute arbitrary code via a routing slip that is longer than specified by the provided length field, as exploited by malware such as TROJ_MDROPPER.BH and Trojan.PPDropper.E in attacks against PowerPoint.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -22064,7 +22064,7 @@
     {
       "cve_id": "CVE-2006-0028",
       "published_date": "2006-03-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Microsoft Excel 2000, 2002, and 2003, in Microsoft Office 2000 SP3 and other packages, allows user-assisted attackers to execute arbitrary code via a BIFF parsing format file containing malformed BOOLERR records that lead to memory corruption, probably involving invalid pointers.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -22085,7 +22085,7 @@
     {
       "cve_id": "CVE-2006-0029",
       "published_date": "2006-03-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Microsoft Excel 2000, 2002, and 2003, in Microsoft Office 2000 SP3 and other packages, allows user-assisted attackers to execute arbitrary code via an Excel file with a malformed description, which leads to memory corruption.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -22106,7 +22106,7 @@
     {
       "cve_id": "CVE-2006-0030",
       "published_date": "2006-03-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Microsoft Excel 2000, 2002, and 2003, in Microsoft Office 2000 SP3 and other packages, allows user-assisted attackers to execute arbitrary code via an Excel file with a malformed graphic, which leads to memory corruption.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -22127,7 +22127,7 @@
     {
       "cve_id": "CVE-2006-0031",
       "published_date": "2006-03-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Stack-based buffer overflow in Microsoft Excel 2000, 2002, and 2003, in Microsoft Office 2000 SP3 and other packages, allows user-assisted attackers to execute arbitrary code via an Excel file with a malformed record with a modified length value, which leads to memory corruption.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -22148,7 +22148,7 @@
     {
       "cve_id": "CVE-2006-0004",
       "published_date": "2006-02-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Microsoft PowerPoint 2000 in Office 2000 SP3 has an interaction with Internet Explorer that allows remote attackers to obtain sensitive information via a PowerPoint presentation that attempts to access objects in the Temporary Internet Files Folder (TIFF).",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -22169,7 +22169,7 @@
     {
       "cve_id": "CVE-2002-1716",
       "published_date": "2002-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Host() function in the Microsoft spreadsheet component on Microsoft Office XP allows remote attackers to create arbitrary files using the SaveAs capability.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -22190,7 +22190,7 @@
     {
       "cve_id": "CVE-2002-0862",
       "published_date": "2002-10-04",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The (1) CertGetCertificateChain, (2) CertVerifyCertificateChainPolicy, and (3) WinVerifyTrust APIs within the CryptoAPI for Microsoft products including Microsoft Windows 98 through XP, Office for Mac, Internet Explorer for Mac, and Outlook Express for Mac, do not properly verify the Basic Constraints of intermediate CA-signed X.509 certificates, which allows remote attackers to spoof the certificates of trusted sites via a man-in-the-middle attack for SSL sessions, as originally reported for Internet Explorer and IIS.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -22211,7 +22211,7 @@
     {
       "cve_id": "CVE-2002-0616",
       "published_date": "2002-08-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Macro Security Model in Microsoft Excel 2000 and 2002 for Windows allows remote attackers to execute code by attaching an inline macro to an object within an Excel workbook, aka the \"Excel Inline Macros Vulnerability.\"",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -22232,7 +22232,7 @@
     {
       "cve_id": "CVE-2002-0617",
       "published_date": "2002-08-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Macro Security Model in Microsoft Excel 2000 and 2002 for Windows allows remote attackers to execute code by creating a hyperlink on a drawing shape in a source workbook that points to a destination workbook containing an autoexecute macro, aka \"Hyperlinked Excel Workbook Macro Bypass.\"",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -22253,7 +22253,7 @@
     {
       "cve_id": "CVE-2002-0021",
       "published_date": "2002-03-08",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Network Product Identification (PID) Checker in Microsoft Office v. X for Mac allows remote attackers to cause a denial of service (crash) via a malformed product announcement.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -22274,7 +22274,7 @@
     {
       "cve_id": "CVE-2001-0003",
       "published_date": "2001-02-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Web Extender Client (WEC) in Microsoft Office 2000, Windows 2000, and Windows Me does not properly process Internet Explorer security settings for NTLM authentication, which allows attackers to obtain NTLM credentials and possibly obtain the password, aka the \"Web Client NTLM Authentication\" vulnerability.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -22295,7 +22295,7 @@
     {
       "cve_id": "CVE-1999-0794",
       "published_date": "1999-10-01",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Microsoft Excel does not warn a user when a macro is present in a Symbolic Link (SYLK) format file.",
       "base_score": 4.6,
       "severity": "MEDIUM",
@@ -22316,7 +22316,7 @@
     {
       "cve_id": "CVE-1999-0384",
       "published_date": "1999-01-01",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Forms 2.0 ActiveX control (included with Visual Basic for Applications 5.0) can be used to read text from a user's clipboard when the user accesses documents with ActiveX content.",
       "base_score": 4.6,
       "severity": "MEDIUM",
@@ -22505,7 +22505,7 @@
     {
       "cve_id": "CVE-1999-1259",
       "published_date": "1999-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Microsoft Office 98, Macintosh Edition, does not properly initialize the disk space used by Office 98 files and effectively inserts data from previously deleted files into the Office file, which could allow attackers to obtain sensitive information.",
       "base_score": 2.1,
       "severity": "LOW",

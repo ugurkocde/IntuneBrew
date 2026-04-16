@@ -1,7 +1,7 @@
 {
   "app_name": "Wireshark",
   "app_key": "wireshark",
-  "last_updated": "2026-04-15",
+  "last_updated": "2026-04-16",
   "total_cves": 692,
   "summary": {
     "critical": 1,
@@ -4949,7 +4949,7 @@
     {
       "cve_id": "CVE-2006-3628",
       "published_date": "2006-07-21",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Multiple format string vulnerabilities in Wireshark (aka Ethereal) 0.10.x to 0.99.0 allow remote attackers to cause a denial of service and possibly execute arbitrary code via the (1) ANSI MAP, (2) Checkpoint FW-1, (3) MQ, (4) XML, and (5) NTP dissectors.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -4970,7 +4970,7 @@
     {
       "cve_id": "CVE-2006-3630",
       "published_date": "2006-07-21",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Multiple off-by-one errors in Wireshark (aka Ethereal) 0.9.7 to 0.99.0 have unknown impact and remote attack vectors via the (1) NCP NMAS and (2) NDPS dissectors.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -13076,7 +13076,7 @@
     {
       "cve_id": "CVE-2006-4330",
       "published_date": "2006-08-24",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in the SCSI dissector in Wireshark (formerly Ethereal) 0.99.2 allows remote attackers to cause a denial of service (crash) via unspecified vectors.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -13097,7 +13097,7 @@
     {
       "cve_id": "CVE-2006-4331",
       "published_date": "2006-08-24",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Multiple off-by-one errors in the IPSec ESP preference parser in Wireshark (formerly Ethereal) 0.99.2 allow remote attackers to cause a denial of service (crash) via unspecified vectors.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -13118,7 +13118,7 @@
     {
       "cve_id": "CVE-2006-4332",
       "published_date": "2006-08-24",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in the DHCP dissector in Wireshark (formerly Ethereal) 0.10.13 through 0.99.2, when run on Windows, allows remote attackers to cause a denial of service (crash) via unspecified vectors that trigger a bug in Glib.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -13139,7 +13139,7 @@
     {
       "cve_id": "CVE-2006-4333",
       "published_date": "2006-08-24",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The SSCOP dissector in Wireshark (formerly Ethereal) before 0.99.3 allows remote attackers to cause a denial of service (resource consumption) via malformed packets that cause the Q.2391 dissector to use excessive memory.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -13160,7 +13160,7 @@
     {
       "cve_id": "CVE-2006-3627",
       "published_date": "2006-07-21",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in the GSM BSSMAP dissector in Wireshark (aka Ethereal) 0.10.11 to 0.99.0 allows remote attackers to cause a denial of service (crash) via unspecified vectors.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -13181,7 +13181,7 @@
     {
       "cve_id": "CVE-2006-3631",
       "published_date": "2006-07-21",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in the SSH dissector in Wireshark (aka Ethereal) 0.9.10 to 0.99.0 allows remote attackers to cause a denial of service (infinite loop) via unknown attack vectors.",
       "base_score": 5.0,
       "severity": "MEDIUM",

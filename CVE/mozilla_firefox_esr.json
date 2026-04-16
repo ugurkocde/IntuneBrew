@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox Esr",
   "app_key": "mozilla_firefox_esr",
-  "last_updated": "2026-04-15",
+  "last_updated": "2026-04-16",
   "total_cves": 3095,
   "summary": {
     "critical": 385,
@@ -35294,7 +35294,7 @@
     {
       "cve_id": "CVE-2006-4565",
       "published_date": "2006-09-15",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Heap-based buffer overflow in Mozilla Firefox before 1.5.0.7, Thunderbird before 1.5.0.7, and SeaMonkey before 1.0.5 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a JavaScript regular expression with a \"minimal quantifier.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35315,7 +35315,7 @@
     {
       "cve_id": "CVE-2006-4561",
       "published_date": "2006-09-06",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5.0.6 allows remote attackers to execute arbitrary JavaScript in the context of the browser's session with an arbitrary intranet web server, by hosting script on an Internet web server that can be made inaccessible by the attacker and that has a domain name under the attacker's control, which can force the browser to drop DNS pinning and perform a new DNS query for the domain name after the script is already running.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35336,7 +35336,7 @@
     {
       "cve_id": "CVE-2006-4253",
       "published_date": "2006-08-21",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Concurrency vulnerability in Mozilla Firefox 1.5.0.6 and earlier allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via multiple Javascript timed events that load a deeply nested XML file, followed by redirecting the browser to another page, which leads to a concurrency failure that causes structures to be freed incorrectly, as demonstrated by (1) ffoxdie and (2) ffoxdie3.  NOTE: it has been reported that Netscape 8.1 and K-Meleon 1.0.1 are also affected by ffoxdie.  Mozilla confirmed to CVE that ffoxdie and ffoxdie3 trigger the same underlying vulnerability.  NOTE: it was later reported that Firefox 2.0 RC2 and 1.5.0.7 are also affected.",
       "base_score": 7.6,
       "severity": "HIGH",
@@ -35357,7 +35357,7 @@
     {
       "cve_id": "CVE-2006-3677",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5 before 1.5.0.5 and SeaMonkey before 1.0.3 allows remote attackers to execute arbitrary code by changing certain properties of the window navigator object (window.navigator) that are accessed when Java starts up, which causes a crash that leads to code execution.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35378,7 +35378,7 @@
     {
       "cve_id": "CVE-2006-3806",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Multiple integer overflows in the Javascript engine in Mozilla Firefox before 1.5.0.5, Thunderbird before 1.5.0.5, and SeaMonkey before 1.0.3 might allow remote attackers to execute arbitrary code via vectors involving (1) long strings in the toSource method of the Object, Array, and String objects; and (2) unspecified \"string function arguments.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35399,7 +35399,7 @@
     {
       "cve_id": "CVE-2006-3807",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 1.5.0.5, Thunderbird before 1.5.0.5, and SeaMonkey before 1.0.3 allows remote attackers to execute arbitrary code via script that changes the standard Object() constructor to return a reference to a privileged object and calling \"named JavaScript functions\" that use the constructor.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35420,7 +35420,7 @@
     {
       "cve_id": "CVE-2006-3113",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5 before 1.5.0.5, Thunderbird before 1.5.0.5, and SeaMonkey before 1.0.3 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via simultaneous XPCOM events, which causes a timer object to be deleted in a way that triggers memory corruption.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35441,7 +35441,7 @@
     {
       "cve_id": "CVE-2006-3801",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5 before 1.5.0.5 and SeaMonkey before 1.0.3 does not properly clear a JavaScript reference to a frame or window, which leaves a pointer to a deleted object that allows remote attackers to execute arbitrary native code.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35462,7 +35462,7 @@
     {
       "cve_id": "CVE-2006-3805",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Javascript engine in Mozilla Firefox before 1.5.0.5, Thunderbird before 1.5.0.5, and SeaMonkey before 1.0.3 might allow remote attackers to execute arbitrary code via vectors involving garbage collection that causes deletion of a temporary object that is still being used.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35483,7 +35483,7 @@
     {
       "cve_id": "CVE-2006-3808",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 1.5.0.5 and SeaMonkey before 1.0.3 allows remote Proxy AutoConfig (PAC) servers to execute code with elevated privileges via a PAC script that sets the FindProxyForURL function to an eval method on a privileged object.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35504,7 +35504,7 @@
     {
       "cve_id": "CVE-2006-3809",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 1.5.0.5, Thunderbird before 1.5.0.5, and SeaMonkey before 1.0.3 allows scripts with the UniversalBrowserRead privilege to gain UniversalXPConnect privileges and possibly execute code or obtain sensitive data by reading into a privileged context.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35525,7 +35525,7 @@
     {
       "cve_id": "CVE-2006-3811",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Multiple vulnerabilities in Mozilla Firefox before 1.5.0.5, Thunderbird before 1.5.0.5, and SeaMonkey before 1.0.3 allow remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via Javascript that leads to memory corruption, including (1) nsListControlFrame::FireMenuItemActiveEvent, (2) buffer overflows in the string class in out-of-memory conditions, (3) table row and column groups, (4) \"anonymous box selectors outside of UA stylesheets,\" (5) stale references to \"removed nodes,\" and (6) running the crypto.generateCRMFRequest callback on deleted context.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35546,7 +35546,7 @@
     {
       "cve_id": "CVE-2006-2775",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox and Thunderbird before 1.5.0.4 associates XUL attributes with the wrong URL under certain unspecified circumstances, which might allow remote attackers to bypass restrictions by causing a persisted string to be associated with the wrong URL.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35567,7 +35567,7 @@
     {
       "cve_id": "CVE-2006-2776",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Certain privileged UI code in Mozilla Firefox and Thunderbird before 1.5.0.4 calls content-defined setters on an object prototype, which allows remote attackers to execute code at a higher privilege than intended.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35588,7 +35588,7 @@
     {
       "cve_id": "CVE-2006-2777",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Mozilla Firefox before 1.5.0.4 and SeaMonkey before 1.0.2 allows remote attackers to execute arbitrary code by using the nsISelectionPrivate interface of the Selection object to add a SelectionListener and create notifications that are executed in a privileged context.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35609,7 +35609,7 @@
     {
       "cve_id": "CVE-2006-2779",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox and Thunderbird before 1.5.0.4 allow remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via (1) nested <option> tags in a select tag, (2) a DOMNodeRemoved mutation event, (3) \"Content-implemented tree views,\" (4) BoxObjects, (5) the XBL implementation, (6) an iframe that attempts to remove itself, which leads to memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35630,7 +35630,7 @@
     {
       "cve_id": "CVE-2006-2780",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Integer overflow in Mozilla Firefox and Thunderbird before 1.5.0.4 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via \"jsstr tagify,\" which leads to memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35651,7 +35651,7 @@
     {
       "cve_id": "CVE-2006-2787",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "EvalInSandbox in Mozilla Firefox and Thunderbird before 1.5.0.4 allows remote attackers to gain privileges via javascript that calls the valueOf method on objects that were created outside of the sandbox.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35672,7 +35672,7 @@
     {
       "cve_id": "CVE-2006-2788",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Double free vulnerability in the getRawDER function for nsIX509Cert in Firefox allows remote attackers to cause a denial of service (hang) and possibly execute arbitrary code via certain Javascript code.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35693,7 +35693,7 @@
     {
       "cve_id": "CVE-2006-0748",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox and Thunderbird 1.x before 1.5.0.2 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0.1 allows remote attackers to execute arbitrary code via \"an invalid and non-sensical ordering of table-related tags\" that results in a negative array index.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35714,7 +35714,7 @@
     {
       "cve_id": "CVE-2006-0749",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "nsHTMLContentSink.cpp in Mozilla Firefox and Thunderbird 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via unknown vectors involving a \"particular sequence of HTML tags\" that leads to memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35735,7 +35735,7 @@
     {
       "cve_id": "CVE-2006-1529",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Firefox and Thunderbird before 1.5.0.2, and SeaMonkey before 1.0.1, allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via unknown attack vectors related to DHTML.  NOTE: due to the lack of sufficient public details from the vendor as of 20060413, it is unclear how CVE-2006-1529, CVE-2006-1530, CVE-2006-1531, and CVE-2006-1723 are different.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35756,7 +35756,7 @@
     {
       "cve_id": "CVE-2006-1530",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Firefox and Thunderbird before 1.5.0.2, and SeaMonkey before 1.0.1, allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via unknown attack vectors related to DHTML.  NOTE: due to the lack of sufficient public details from the vendor as of 20060413, it is unclear how CVE-2006-1529, CVE-2006-1530, CVE-2006-1531, and CVE-2006-1723 are different.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35777,7 +35777,7 @@
     {
       "cve_id": "CVE-2006-1531",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Firefox and Thunderbird before 1.5.0.2, and SeaMonkey before 1.0.1, allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via unknown attack vectors related to DHTML.  NOTE: due to the lack of sufficient public details from the vendor as of 20060413, it is unclear how CVE-2006-1529, CVE-2006-1530, CVE-2006-1531, and CVE-2006-1723 are different.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35798,7 +35798,7 @@
     {
       "cve_id": "CVE-2006-1723",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Firefox and Thunderbird before 1.5.0.2, and SeaMonkey before 1.0.1, allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via unknown attack vectors related to DHTML.  NOTE: due to the lack of sufficient public details from the vendor as of 20060413, it is unclear how CVE-2006-1529, CVE-2006-1530, CVE-2006-1531, and CVE-2006-1723 are different.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35819,7 +35819,7 @@
     {
       "cve_id": "CVE-2006-1724",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Firefox and Thunderbird before 1.5.0.2, 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0.1 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via attack vectors related to DHTML.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35840,7 +35840,7 @@
     {
       "cve_id": "CVE-2006-1726",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Firefox and Thunderbird 1.5 before 1.5.0.2, and SeaMonkey before 1.0.1, allows remote attackers to bypass the js_ValueToFunctionObject check and execute arbitrary code via unknown vectors involving setTimeout and Firefox' ForEach method.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35861,7 +35861,7 @@
     {
       "cve_id": "CVE-2006-1727",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Mozilla Firefox and Thunderbird 1.x before 1.5.0.2 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0.1 allows remote attackers to gain chrome privileges via multiple attack vectors related to the use of XBL scripts with \"Print Preview\".",
       "base_score": 7.6,
       "severity": "HIGH",
@@ -35882,7 +35882,7 @@
     {
       "cve_id": "CVE-2006-1728",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Mozilla Firefox and Thunderbird 1.x before 1.5.0.2 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0.1 allows remote attackers to execute arbitrary code via unknown vectors related to the crypto.generateCRMFRequest method.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35903,7 +35903,7 @@
     {
       "cve_id": "CVE-2006-1730",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Integer overflow in Mozilla Firefox and Thunderbird 1.x before 1.5.0.2 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0.1 allows remote attackers to execute arbitrary code via a large number in the CSS letter-spacing property that leads to a heap-based buffer overflow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35924,7 +35924,7 @@
     {
       "cve_id": "CVE-2006-1735",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox and Thunderbird 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 allows remote attackers to execute arbitrary code by using an eval in an XBL method binding (XBL.method.eval) to create Javascript functions that are compiled with extra privileges.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35945,7 +35945,7 @@
     {
       "cve_id": "CVE-2006-1739",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The CSS border-rendering code in Mozilla Firefox and Thunderbird 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via certain Cascading Style Sheets (CSS) that causes an out-of-bounds array write and buffer overflow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35966,7 +35966,7 @@
     {
       "cve_id": "CVE-2006-1737",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Integer overflow in Mozilla Firefox and Thunderbird 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary bytecode via JavaScript with a large regular expression.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -35987,7 +35987,7 @@
     {
       "cve_id": "CVE-2006-1790",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "A regression fix in Mozilla Firefox 1.0.7 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via the InstallTrigger.install method, which leads to memory corruption.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -36008,7 +36008,7 @@
     {
       "cve_id": "CVE-2006-1273",
       "published_date": "2006-03-19",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.0.7 and 1.5.0.1 allows remote attackers to cause a denial of service (crash) via an HTML tag with a large number of script action handlers such as onload and onmouseover, which triggers the crash when the user views the page source.  NOTE: Red Hat has disputed this issue, suggesting that \"It is likely the reporter was running the IE Tab extension,\" and Mozilla also confirmed that this is not an issue in Firefox itself",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -36029,7 +36029,7 @@
     {
       "cve_id": "CVE-2006-0292",
       "published_date": "2006-02-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Javascript interpreter (jsinterp.c) in Mozilla and Firefox before 1.5.1 does not properly dereference objects, which allows remote attackers to cause a denial of service (crash) or execute arbitrary code via unknown attack vectors related to garbage collection.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36050,7 +36050,7 @@
     {
       "cve_id": "CVE-2006-0293",
       "published_date": "2006-02-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The function allocation code (js_NewFunction in jsfun.c) in Firefox 1.5 allows attackers to cause a denial of service (memory corruption) and possibly execute arbitrary code via user-defined methods that trigger garbage collection in a way that operates on freed objects.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36071,7 +36071,7 @@
     {
       "cve_id": "CVE-2006-0294",
       "published_date": "2006-02-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 1.5.0.1, Thunderbird 1.5 if running Javascript in mail, and SeaMonkey before 1.0 allow remote attackers to execute arbitrary code by changing an element's style from position:relative to position:static, which causes Gecko to operate on freed memory.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36092,7 +36092,7 @@
     {
       "cve_id": "CVE-2005-2701",
       "published_date": "2005-09-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Heap-based buffer overflow in Firefox before 1.0.7 and Mozilla Suite before 1.7.12 allows remote attackers to execute arbitrary code via an XBM image file that ends in a large number of spaces instead of the expected end tag.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36113,7 +36113,7 @@
     {
       "cve_id": "CVE-2005-2702",
       "published_date": "2005-09-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.7 and Mozilla Suite before 1.7.12 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via Unicode sequences with \"zero-width non-joiner\" characters.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36134,7 +36134,7 @@
     {
       "cve_id": "CVE-2005-2705",
       "published_date": "2005-09-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Integer overflow in the JavaScript engine in Firefox before 1.0.7 and Mozilla Suite before 1.7.12 might allow remote attackers to execute arbitrary code.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36155,7 +36155,7 @@
     {
       "cve_id": "CVE-2005-2968",
       "published_date": "2005-09-20",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox 1.0.6 and Mozilla 1.7.10 allows attackers to execute arbitrary commands via shell metacharacters in a URL that is provided to the browser on the command line, which is sent unfiltered to bash.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36176,7 +36176,7 @@
     {
       "cve_id": "CVE-2005-2871",
       "published_date": "2005-09-09",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in the International Domain Name (IDN) support in Mozilla Firefox 1.0.6 and earlier, and Netscape 8.0.3.3 and 7.2, allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a hostname with all \"soft\" hyphens (character 0xAD), which is not properly handled by the NormalizeIDN call in nsStandardURL::BuildNormalizedSpec.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36197,7 +36197,7 @@
     {
       "cve_id": "CVE-2005-2260",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The browser user interface in Firefox before 1.0.5, Mozilla before 1.7.9, and Netscape 8.0.2 and 7.2 does not properly distinguish between user-generated events and untrusted synthetic events, which makes it easier for remote attackers to perform dangerous actions that normally could only be performed manually by the user.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36218,7 +36218,7 @@
     {
       "cve_id": "CVE-2005-2261",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.5, Thunderbird before 1.0.5, Mozilla before 1.7.9, Netscape 8.0.2, and K-Meleon 0.9 runs XBL scripts even when Javascript has been disabled, which makes it easier for remote attackers to bypass such protection.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36239,7 +36239,7 @@
     {
       "cve_id": "CVE-2005-2264",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.5 allows remote attackers to steal sensitive information by opening a malicious link in the Firefox sidebar using the _search target, then injecting script into other pages via a data: URL.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36260,7 +36260,7 @@
     {
       "cve_id": "CVE-2005-2267",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.5 allows remote attackers to steal information and possibly execute arbitrary code by using standalone applications such as Flash and QuickTime to open a javascript: URL, which is run in the context of the previous page, and may lead to code execution if the standalone application loads a privileged chrome: URL.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36281,7 +36281,7 @@
     {
       "cve_id": "CVE-2005-2269",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.5, Mozilla before 1.7.9, and Netscape 8.0.2 does not properly verify the associated types of DOM node names within the context of their namespaces, which allows remote attackers to modify certain tag properties, possibly leading to execution of arbitrary script or code, as demonstrated using an XHTML document with IMG tags with custom properties (\"XHTML node spoofing\").",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36302,7 +36302,7 @@
     {
       "cve_id": "CVE-2005-2270",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.5 and Mozilla before 1.7.9 does not properly clone base objects, which allows remote attackers to execute arbitrary code by navigating the prototype chain to reach a privileged object.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36323,7 +36323,7 @@
     {
       "cve_id": "CVE-2005-1531",
       "published_date": "2005-05-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.4 and Mozilla Suite before 1.7.8 does not properly implement certain security checks for script injection, which allows remote attackers to execute script via \"Wrapped\" javascript: URLs, as demonstrated using (1) a javascript: URL in a view-source: URL, (2) a javascript: URL in a jar: URL, or (3) \"a nested variant.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36344,7 +36344,7 @@
     {
       "cve_id": "CVE-2005-1532",
       "published_date": "2005-05-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.4 and Mozilla Suite before 1.7.8 do not properly limit privileges of Javascript eval and Script objects in the calling context, which allows remote attackers to conduct unauthorized activities via \"non-DOM property overrides,\" a variant of CVE-2005-1160.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36365,7 +36365,7 @@
     {
       "cve_id": "CVE-2005-0147",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0 and Mozilla before 1.7.5, when configured to use a proxy, respond to 407 proxy auth requests from arbitrary servers, which allows remote attackers to steal NTLM or SPNEGO credentials.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36386,7 +36386,7 @@
     {
       "cve_id": "CVE-2005-1153",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.3 and Mozilla Suite before 1.7.7, when blocking a popup, allows remote attackers to execute arbitrary code via a javascript: URL that is executed when the user selects the \"Show javascript\" option.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36407,7 +36407,7 @@
     {
       "cve_id": "CVE-2005-1154",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.3 and Mozilla Suite before 1.7.7 allows remote attackers to execute arbitrary script in other domains via a setter function for a variable in the target domain, which is executed when the user visits that domain, aka \"Cross-site scripting through global scope pollution.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36428,7 +36428,7 @@
     {
       "cve_id": "CVE-2005-1155",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The favicon functionality in Firefox before 1.0.3 and Mozilla Suite before 1.7.7 allows remote attackers to execute arbitrary code via a <LINK rel=\"icon\"> tag with a javascript: URL in the href attribute, aka \"Firelinking.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36449,7 +36449,7 @@
     {
       "cve_id": "CVE-2005-1156",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.3, Mozilla Suite before 1.7.7, and Netscape 7.2 allows remote attackers to execute arbitrary script and code via a new search plugin using sidebar.addSearchEngine, aka \"Firesearching 1.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36470,7 +36470,7 @@
     {
       "cve_id": "CVE-2005-1157",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.3, Mozilla Suite before 1.7.7, and Netscape 7.2 allows remote attackers to replace existing search plugins with malicious ones using sidebar.addSearchEngine and the same filename as the target engine, which may not be displayed in the GUI, which could then be used to execute malicious script, aka \"Firesearching 2.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36491,7 +36491,7 @@
     {
       "cve_id": "CVE-2005-1159",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The native implementations of InstallTrigger and other functions in Firefox before 1.0.3 and Mozilla Suite before 1.7.7 do not properly verify the types of objects being accessed, which causes the Javascript interpreter to continue execution at the wrong memory address, which may allow attackers to cause a denial of service (application crash) and possibly execute arbitrary code by passing objects of the wrong type.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36512,7 +36512,7 @@
     {
       "cve_id": "CVE-2005-0752",
       "published_date": "2005-04-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Plugin Finder Service (PFS) in Firefox before 1.0.3 allows remote attackers to execute arbitrary code via a javascript: URL in the PLUGINSPAGE attribute of an EMBED tag.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36533,7 +36533,7 @@
     {
       "cve_id": "CVE-2005-0592",
       "published_date": "2005-03-25",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Heap-based buffer overflow in the UTF8ToNewUnicode function for Firefox before 1.0.1 and Mozilla before 1.7.6 might allow remote attackers to cause a denial of service (crash) or execute arbitrary code via invalid sequences in a UTF8 encoded string that result in a zero length value.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36554,7 +36554,7 @@
     {
       "cve_id": "CVE-2005-0233",
       "published_date": "2005-02-08",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The International Domain Name (IDN) support in Firefox 1.0, Camino .8.5, and Mozilla before 1.7.6 allows remote attackers to spoof domain names using punycode encoded domain names that are decoded in URLs and SSL certificates in a way that uses homograph characters from other character sets, which facilitates phishing attacks.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36575,7 +36575,7 @@
     {
       "cve_id": "CVE-2004-0904",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Integer overflow in the bitmap (BMP) decoder for Mozilla Firefox before the Preview Release, Mozilla before 1.7.3, and Thunderbird before 0.8 allow remote attackers to execute arbitrary code via wide bitmap files that trigger heap-based buffer overflows.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -36596,7 +36596,7 @@
     {
       "cve_id": "CVE-2004-2228",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 1.0 is installed with world-writable permissions on Mac OS X, which allows local users to gain privileges.",
       "base_score": 7.2,
       "severity": "HIGH",
@@ -36617,7 +36617,7 @@
     {
       "cve_id": "CVE-2004-0867",
       "published_date": "2004-12-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 0.9.2 allows web sites to set cookies for country-specific top-level domains, such as .ltd.uk, .plc.uk, and .sch.uk, which could allow remote attackers to perform a session fixation attack and hijack a user's HTTP session.  NOTE: it was later reported that 2.x is also affected.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36638,7 +36638,7 @@
     {
       "cve_id": "CVE-2004-0866",
       "published_date": "2004-09-16",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Internet Explorer 6.0 allows web sites to set cookies for country-specific top-level domains, such as .ltd.uk, .plc.uk, and .sch.uk, which could allow remote attackers to perform a session fixation attack and hijack a user's HTTP session.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36659,7 +36659,7 @@
     {
       "cve_id": "CVE-2004-0757",
       "published_date": "2004-08-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Heap-based buffer overflow in the SendUidl in the POP3 capability for Mozilla before 1.7, Firefox before 0.9, and Thunderbird before 0.7, may allow remote POP3 mail servers to execute arbitrary code.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -36680,7 +36680,7 @@
     {
       "cve_id": "CVE-2004-0764",
       "published_date": "2004-08-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla before 1.7, Firefox before 0.9, and Thunderbird before 0.7, allow remote web sites to hijack the user interface via the \"chrome\" flag and XML User Interface Language (XUL) files.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -36701,7 +36701,7 @@
     {
       "cve_id": "CVE-2004-0765",
       "published_date": "2004-08-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The cert_TestHostName function in Mozilla before 1.7, Firefox before 0.9, and Thunderbird before 0.7, only checks the hostname portion of a certificate when the hostname portion of the URI is not a fully qualified domain name (FQDN), which allows remote attackers to spoof trusted certificates.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36722,7 +36722,7 @@
     {
       "cve_id": "CVE-2004-0779",
       "published_date": "2004-08-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The (1) Mozilla 1.6, (2) Firebird 0.7 and (3) Firefox 0.8 web browsers do not properly verify that cached passwords for SSL encrypted sites are only sent via SSL encrypted sessions to the site, which allows a remote attacker to cause a cached password to be sent in cleartext to a spoofed site.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -36743,7 +36743,7 @@
     {
       "cve_id": "CVE-2004-0648",
       "published_date": "2004-08-06",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla (Suite) before 1.7.1, Firefox before 0.9.2, and Thunderbird before 0.7.2 allow remote attackers to launch arbitrary programs via a URI referencing the shell: protocol.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -61733,7 +61733,7 @@
     {
       "cve_id": "CVE-2006-4340",
       "published_date": "2006-09-15",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Network Security Service (NSS) library before 3.11.3, as used in Mozilla Firefox before 1.5.0.7, Thunderbird before 1.5.0.7, and SeaMonkey before 1.0.5, when using an RSA key with exponent 3, does not properly handle extra data in a signature, which allows remote attackers to forge signatures for SSL/TLS and email certificates, a similar vulnerability to CVE-2006-4339.  NOTE: on 20061107, Mozilla released an advisory stating that these versions were not completely patched by MFSA2006-60. The newer fixes for 1.5.0.7 are covered by CVE-2006-5462.",
       "base_score": 4.0,
       "severity": "MEDIUM",
@@ -61754,7 +61754,7 @@
     {
       "cve_id": "CVE-2006-4566",
       "published_date": "2006-09-15",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 1.5.0.7, Thunderbird before 1.5.0.7, and SeaMonkey before 1.0.5 allows remote attackers to cause a denial of service (crash) via a malformed JavaScript regular expression that ends with a backslash in an unterminated character set (\"[\\\\\"), which leads to a buffer over-read.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -61775,7 +61775,7 @@
     {
       "cve_id": "CVE-2006-4568",
       "published_date": "2006-09-15",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 1.5.0.7 and SeaMonkey before 1.0.5 allows remote attackers to bypass the security model and inject content into the sub-frame of another site via targetWindow.frames[n].document.open(), which facilitates spoofing and other attacks.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -61796,7 +61796,7 @@
     {
       "cve_id": "CVE-2006-4310",
       "published_date": "2006-08-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5.0.6 allows remote attackers to cause a denial of service (crash) via a crafted FTP response, when attempting to connect with a username and password via the FTP URI.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -61817,7 +61817,7 @@
     {
       "cve_id": "CVE-2006-3803",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Race condition in the JavaScript garbage collection in Mozilla Firefox 1.5 before 1.5.0.5, Thunderbird before 1.5.0.5, and SeaMonkey before 1.0.3 might allow remote attackers to execute arbitrary code by causing the garbage collector to delete a temporary variable while it is still being used during the creation of a new Function object.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -61838,7 +61838,7 @@
     {
       "cve_id": "CVE-2006-3802",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 1.5.0.5, Thunderbird before 1.5.0.5, and SeaMonkey before 1.0.3 allows remote attackers to hijack native DOM methods from objects in another domain and conduct cross-site scripting (XSS) attacks using DOM methods of the top-level object.",
       "base_score": 5.8,
       "severity": "MEDIUM",
@@ -61859,7 +61859,7 @@
     {
       "cve_id": "CVE-2006-3810",
       "published_date": "2006-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Cross-site scripting (XSS) vulnerability in Mozilla Firefox 1.5 before 1.5.0.5, Thunderbird before 1.5.0.5, and SeaMonkey before 1.0.3 allows remote attackers to inject arbitrary web script or HTML via the XPCNativeWrapper(window).Function construct.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -61880,7 +61880,7 @@
     {
       "cve_id": "CVE-2006-3352",
       "published_date": "2006-07-06",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Cross-domain vulnerability in Mozilla Firefox allows remote attackers to access restricted information from other domains via an object tag with a data parameter that references a link on the attacker's originating site that specifies a Location HTTP header that references the target site, which then makes that content available through the outerHTML attribute of the object.  NOTE: this description was based on a report that has since been retracted by the original authors. The authors misinterpreted their test results. Other third parties also disputed the original report. Therefore, this is not a vulnerability. It is being assigned a candidate number to provide a clear indication of its status",
       "base_score": 6.4,
       "severity": "MEDIUM",
@@ -61901,7 +61901,7 @@
     {
       "cve_id": "CVE-2006-2894",
       "published_date": "2006-06-07",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5.0.4, 2.0.x before 2.0.0.8, Mozilla Suite 1.7.13, Mozilla SeaMonkey 1.0.2 and other versions before 1.1.5, and Netscape 8.1 and earlier allow user-assisted remote attackers to read arbitrary files by tricking a user into typing the characters of the target filename in a text box and using the OnKeyDown, OnKeyPress, and OnKeyUp Javascript keystroke events to change the focus and cause those characters to be inserted into a file upload input control, which can then upload the file when the user submits the form.",
       "base_score": 4.0,
       "severity": "MEDIUM",
@@ -61922,7 +61922,7 @@
     {
       "cve_id": "CVE-2006-2778",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The crypto.signText function in Mozilla Firefox and Thunderbird before 1.5.0.4 allows remote attackers to execute arbitrary code via certain optional Certificate Authority name arguments, which causes an invalid array index and triggers a buffer overflow.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -61943,7 +61943,7 @@
     {
       "cve_id": "CVE-2006-2782",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox 1.5.0.2 does not fix all test cases associated with CVE-2006-1729, which allows remote attackers to read arbitrary files by inserting the target filename into a text box, then turning that box into a file upload control.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -61964,7 +61964,7 @@
     {
       "cve_id": "CVE-2006-2783",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox and Thunderbird before 1.5.0.4 strip the Unicode Byte-order-Mark (BOM) from a UTF-8 page before the page is passed to the parser, which allows remote attackers to conduct cross-site scripting (XSS) attacks via a BOM sequence in the middle of a dangerous tag such as SCRIPT.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -61985,7 +61985,7 @@
     {
       "cve_id": "CVE-2006-2784",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The PLUGINSPAGE functionality in Mozilla Firefox before 1.5.0.4 allows remote user-assisted attackers to execute privileged code by tricking a user into installing missing plugins and selecting the \"Manual Install\" button, then using nested javascript: URLs.  NOTE: the manual install button is used for downloading software from a remote web site, so this issue would not cross privilege boundaries if the user progresses to the point of installing malicious software from the attacker-controlled site.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62006,7 +62006,7 @@
     {
       "cve_id": "CVE-2006-2785",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Cross-site scripting (XSS) vulnerability in Mozilla Firefox before 1.5.0.4 allows user-assisted remote attackers to inject arbitrary web script or HTML by tricking a user into (1) performing a \"View Image\" on a broken image in which the SRC attribute contains a Javascript URL, or (2) selecting \"Show only this frame\" on a frame whose SRC attribute contains a Javascript URL.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -62027,7 +62027,7 @@
     {
       "cve_id": "CVE-2006-2723",
       "published_date": "2006-06-01",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified versions of Mozilla Firefox allow remote attackers to cause a denial of service (crash) via a web page that contains a large number of nested marquee tags.  NOTE: a followup post indicated that the initial report could not be verified.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62048,7 +62048,7 @@
     {
       "cve_id": "CVE-2006-2613",
       "published_date": "2006-05-26",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Suite 1.7.13, Mozilla Firefox 1.5.0.3 and possibly other versions before before 1.8.0, and Netscape 7.2 and 8.1, and possibly other versions and products, allows remote user-assisted attackers to obtain information such as the installation path by causing exceptions to be thrown and checking the message contents.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -62069,7 +62069,7 @@
     {
       "cve_id": "CVE-2006-2057",
       "published_date": "2006-04-26",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Argument injection vulnerability in Mozilla Firefox 1.0.6 allows user-assisted remote attackers to modify command line arguments to an invoked mail client via \" (double quote) characters in a mailto: scheme handler, as demonstrated by launching Microsoft Outlook with an arbitrary filename as an attachment.  NOTE: it is not clear whether this issue is implementation-specific or a problem in the Microsoft API.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62090,7 +62090,7 @@
     {
       "cve_id": "CVE-2006-1993",
       "published_date": "2006-04-25",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5.0.2, when designMode is enabled, allows remote attackers to cause a denial of service and possibly execute arbitrary code via certain Javascript that is not properly handled by the contentWindow.focus method in an iframe, which causes a reference to a deleted controller context object.  NOTE: this was originally claimed to be a buffer overflow in (1) js320.dll and (2) xpcom_core.dll, but the vendor disputes this claim.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62111,7 +62111,7 @@
     {
       "cve_id": "CVE-2006-1942",
       "published_date": "2006-04-20",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5.0.2 and possibly other versions before 1.5.0.4, Netscape 8.1, 8.0.4, and 7.2, and K-Meleon 0.9.13 allows user-assisted remote attackers to open local files via a web page with an IMG element containing a SRC attribute with a non-image file:// URL, then tricking the user into selecting View Image for the broken image, as demonstrated using a .wma file to launch Windows Media Player, or by referencing an \"alternate web page.\"",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62132,7 +62132,7 @@
     {
       "cve_id": "CVE-2006-1729",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.x before 1.5.0.2 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0.1 allows remote attackers to read arbitrary files by (1) inserting the target filename into a text box, then turning that box into a file upload control, or (2) changing the type of the input control that is associated with an event handler.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -62153,7 +62153,7 @@
     {
       "cve_id": "CVE-2006-1731",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox and Thunderbird 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 returns the Object class prototype instead of the global window object when (1) .valueOf.call or (2) .valueOf.apply are called without any arguments, which allows remote attackers to conduct cross-site scripting (XSS) attacks.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -62174,7 +62174,7 @@
     {
       "cve_id": "CVE-2006-1732",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Mozilla Firefox and Thunderbird 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 allows remote attackers to bypass same-origin protections and conduct cross-site scripting (XSS) attacks via unspecified vectors involving the window.controllers array.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -62195,7 +62195,7 @@
     {
       "cve_id": "CVE-2006-1733",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox and Thunderbird 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 does not properly protect the compilation scope of privileged built-in XBL bindings, which allows remote attackers to execute arbitrary code via the (1) valueOf.call or (2) valueOf.apply methods of an XBL binding, or (3) \"by inserting an XBL method into the DOM's document.body prototype chain.\"",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -62216,7 +62216,7 @@
     {
       "cve_id": "CVE-2006-1734",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox and Thunderbird 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 allows remote attackers to execute arbitrary code by using the Object.watch method to access the \"clone parent\" internal function.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -62237,7 +62237,7 @@
     {
       "cve_id": "CVE-2006-1741",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 allows remote attackers to inject arbitrary Javascript into other sites by (1) \"using a modal alert to suspend an event handler while a new page is being loaded\", (2) using eval(), and using certain variants involving (3) \"new Script;\" and (4) using window.__proto__ to extend eval, aka \"cross-site JavaScript injection\".",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -62258,7 +62258,7 @@
     {
       "cve_id": "CVE-2006-1742",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The JavaScript engine in Mozilla Firefox and Thunderbird 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 does not properly handle temporary variables that are not garbage collected, which might allow remote attackers to trigger operations on freed memory and cause memory corruption.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62279,7 +62279,7 @@
     {
       "cve_id": "CVE-2006-1738",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified vulnerability in Mozilla Firefox and Thunderbird 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 allows remote attackers to cause a denial of service (crash) by changing the (1) -moz-grid and (2) -moz-grid-group display styles.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62300,7 +62300,7 @@
     {
       "cve_id": "CVE-2006-1650",
       "published_date": "2006-04-06",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox 1.5.0.1 allows remote attackers to spoof the address bar and possibly conduct phishing attacks by re-opening the window to a malicious Shockwave Flash application, then changing the window location back to a trusted URL while the Flash application is still loading.  NOTE: a followup was unable to replicate this issue.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62321,7 +62321,7 @@
     {
       "cve_id": "CVE-2006-0295",
       "published_date": "2006-02-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5, Thunderbird 1.5 if Javascript is enabled in mail, and SeaMonkey before 1.0 might allow remote attackers to execute arbitrary code via the QueryInterface method of the built-in Location and Navigator objects, which leads to memory corruption.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62342,7 +62342,7 @@
     {
       "cve_id": "CVE-2006-0296",
       "published_date": "2006-02-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The XULDocument.persist function in Mozilla, Firefox before 1.5.0.1, and SeaMonkey before 1.0 does not validate the attribute name, which allows remote attackers to execute arbitrary Javascript by injecting RDF data into the user's localstore.rdf file.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62363,7 +62363,7 @@
     {
       "cve_id": "CVE-2006-0297",
       "published_date": "2006-02-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Multiple integer overflows in Mozilla Firefox 1.5, Thunderbird 1.5 if Javascript is enabled in mail, and SeaMonkey before 1.0 might allow remote attackers to execute arbitrary code via the (1) EscapeAttributeValue in jsxml.c for E4X, (2) nsSVGCairoSurface::Init in SVG, and (3) nsCanvasRenderingContext2D.cpp in Canvas.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62384,7 +62384,7 @@
     {
       "cve_id": "CVE-2006-0298",
       "published_date": "2006-02-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The XML parser in Mozilla Firefox before 1.5.0.1 and SeaMonkey before 1.0 allows remote attackers to cause a denial of service (crash) and possibly read sensitive data via unknown attack vectors that trigger an out-of-bounds read.",
       "base_score": 5.8,
       "severity": "MEDIUM",
@@ -62405,7 +62405,7 @@
     {
       "cve_id": "CVE-2006-0299",
       "published_date": "2006-02-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The E4X implementation in Mozilla Firefox before 1.5.0.1, Thunderbird 1.5 if running Javascript in mail, and SeaMonkey before 1.0 exposes the internal \"AnyName\" object to external interfaces, which allows multiple cooperating domains to exchange information in violation of the same origin restrictions.",
       "base_score": 6.4,
       "severity": "MEDIUM",
@@ -62426,7 +62426,7 @@
     {
       "cve_id": "CVE-2006-0496",
       "published_date": "2006-02-01",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Cross-site scripting (XSS) vulnerability in Mozilla 1.7.12 and possibly earlier, Mozilla Firefox 1.0.7 and possibly earlier, and Netscape 8.1 and possibly earlier, allows remote attackers to inject arbitrary web script or HTML via the -moz-binding (Cascading Style Sheets) CSS property, which does not require that the style sheet have the same origin as the web page, as demonstrated by the compromise of a large number of LiveJournal accounts.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -62447,7 +62447,7 @@
     {
       "cve_id": "CVE-2005-4685",
       "published_date": "2005-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox and Mozilla can associate a cookie with multiple domains when the DNS resolver has a non-root domain in its search list, which allows remote attackers to trick a user into accepting a cookie for a hostname formed via search-list expansion of the hostname entered by the user, or steal a cookie for an expanded hostname, as demonstrated by an attacker who operates an ap1.com Internet web site to steal cookies associated with an ap1.com.example.com intranet web site.",
       "base_score": 6.4,
       "severity": "MEDIUM",
@@ -62468,7 +62468,7 @@
     {
       "cve_id": "CVE-2005-4720",
       "published_date": "2005-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.0.7 and earlier on Linux allows remote attackers to cause a denial of service (client crash) via an IFRAME element with a large value of the WIDTH attribute, which triggers a problem related to representation of floating-point numbers, leading to an infinite loop of widget resizes and a corresponding large number of function calls on the stack.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62489,7 +62489,7 @@
     {
       "cve_id": "CVE-2005-4809",
       "published_date": "2005-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.0.1 and possibly other versions, including Mozilla and Thunderbird, allows remote attackers to spoof the URL in the Status Bar via an A HREF tag that contains a TABLE tag that contains another A tag.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62510,7 +62510,7 @@
     {
       "cve_id": "CVE-2005-4134",
       "published_date": "2005-12-09",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5, Netscape 8.0.4 and 7.2, and K-Meleon before 0.9.12 allows remote attackers to cause a denial of service (CPU consumption and delayed application startup) via a web site with a large title, which is recorded in history.dat but not processed efficiently during startup.  NOTE: despite initial reports, the Mozilla vendor does not believe that this issue can be used to trigger a crash or buffer overflow in Firefox.  Also, it has been independently reported that Netscape 8.1 does not have this issue.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62531,7 +62531,7 @@
     {
       "cve_id": "CVE-2005-2703",
       "published_date": "2005-09-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.7 and Mozilla Suite before 1.7.12 allows remote attackers to modify HTTP headers of XML HTTP requests via XMLHttpRequest, and possibly use the client to exploit vulnerabilities in servers or proxies, including HTTP request smuggling and HTTP request splitting.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62552,7 +62552,7 @@
     {
       "cve_id": "CVE-2005-2704",
       "published_date": "2005-09-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.7 and Mozilla Suite before 1.7.12 allows remote attackers to spoof DOM objects via an XBL control that implements an internal XPCOM interface.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62573,7 +62573,7 @@
     {
       "cve_id": "CVE-2005-2706",
       "published_date": "2005-09-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.7 and Mozilla before Suite 1.7.12 allows remote attackers to execute Javascript with chrome privileges via an about: page such as about:mozilla.",
       "base_score": 6.4,
       "severity": "MEDIUM",
@@ -62594,7 +62594,7 @@
     {
       "cve_id": "CVE-2005-2707",
       "published_date": "2005-09-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.7 and Mozilla Suite before 1.7.12 allows remote attackers to spawn windows without user interface components such as the address and status bar, which could be used to conduct spoofing or phishing attacks.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62615,7 +62615,7 @@
     {
       "cve_id": "CVE-2005-2429",
       "published_date": "2005-08-03",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox, when opening Microsoft Word documents, does not properly set the permissions on shared sections, which allows remote attackers to write arbitrary data to open applications in Microsoft Office.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62636,7 +62636,7 @@
     {
       "cve_id": "CVE-2005-2395",
       "published_date": "2005-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.0.4 and 1.0.5 does not choose the challenge with the strongest authentication scheme available as required by RFC2617, which might cause credentials to be sent in plaintext even if an encrypted channel is available.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62657,7 +62657,7 @@
     {
       "cve_id": "CVE-2005-2262",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox 1.0.3 and 1.0.4, and Netscape 8.0.2, allows remote attackers to execute arbitrary code by tricking the user into using the \"Set As Wallpaper\" (in Firefox) or \"Set as Background\" (in Netscape) context menu on an image URL that is really a javascript: URL with an eval statement, aka \"Firewalling.\"",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62678,7 +62678,7 @@
     {
       "cve_id": "CVE-2005-2263",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The InstallTrigger.install method in Firefox before 1.0.5 and Mozilla before 1.7.9 allows remote attackers to execute a callback function in the context of another domain by forcing a page navigation after the install method has been called, which causes the callback to be run in the context of the new page and results in a same origin violation.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62699,7 +62699,7 @@
     {
       "cve_id": "CVE-2005-2265",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.5, Mozilla before 1.7.9, and Netscape 8.0.2 and 7.2 allows remote attackers to cause a denial of service (access violation and crash), and possibly execute arbitrary code, by calling InstallVersion.compareTo with an object instead of a string.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62720,7 +62720,7 @@
     {
       "cve_id": "CVE-2005-2266",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.5 and Mozilla before 1.7.9 allows a child frame to call top.focus and other methods in a parent frame, even when the parent is in a different domain, which violates the same origin policy and allows remote attackers to steal sensitive information such as cookies and passwords from web sites whose child frames do not verify that they are in the same domain as their parents.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62741,7 +62741,7 @@
     {
       "cve_id": "CVE-2005-2114",
       "published_date": "2005-07-05",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla 1.7.8, Firefox 1.0.4, Camino 0.8.4, Netscape 8.0.2, and K-Meleon 0.9, and possibly other products that use the Gecko engine, allow remote attackers to cause a denial of service (application crash) via JavaScript that repeatedly calls an empty function.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62762,7 +62762,7 @@
     {
       "cve_id": "CVE-2005-0150",
       "published_date": "2005-05-26",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0 allows the user to store a (1) javascript: or (2) data: URLs as a Livefeed bookmark, then executes it in the security context of the currently loaded page when the user later accesses the bookmark, which could allow remote attackers to execute arbitrary code.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62783,7 +62783,7 @@
     {
       "cve_id": "CVE-2005-1575",
       "published_date": "2005-05-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The file download dialog in Mozilla Firefox 0.10.1 and 1.0 for Windows allows remote attackers to hide the real file types of downloaded files via the Content-Type HTTP header and a filename containing whitespace, dots, or ASCII byte 160.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62804,7 +62804,7 @@
     {
       "cve_id": "CVE-2005-1476",
       "published_date": "2005-05-09",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox 1.0.3 allows remote attackers to execute arbitrary Javascript in other domains by using an IFRAME and causing the browser to navigate to a previous javascript: URL, which can lead to arbitrary code execution when combined with CVE-2005-1477.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62825,7 +62825,7 @@
     {
       "cve_id": "CVE-2005-1477",
       "published_date": "2005-05-09",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The install function in Firefox 1.0.3 allows remote web sites on the browser's whitelist, such as update.mozilla.org or addon.mozilla.org, to execute arbitrary Javascript with chrome privileges, leading to arbitrary code execution on the system when combined with vulnerabilities such as CVE-2005-1476, as demonstrated using a javascript: URL as the package icon and a cross-site scripting (XSS) attack on a vulnerable whitelist site.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62846,7 +62846,7 @@
     {
       "cve_id": "CVE-2005-0146",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0 and Mozilla before 1.7.5 allow remote attackers to obtain sensitive data from the clipboard via Javascript that generates a middle-click event on systems for which a middle-click performs a paste operation.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62867,7 +62867,7 @@
     {
       "cve_id": "CVE-2005-0230",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox 1.0 does not prevent the user from dragging an executable file to the desktop when it has an image/gif content type but has a dangerous extension such as .bat or .exe, which allows remote attackers to bypass the intended restriction and execute arbitrary commands via malformed GIF files that can still be parsed by the Windows batch file parser, aka \"firedragging.\"",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62888,7 +62888,7 @@
     {
       "cve_id": "CVE-2005-0255",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "String handling functions in Mozilla 1.7.3, Firefox 1.0, and Thunderbird before 1.0.2, such as the nsTSubstring_CharT::Replace function, do not properly check the return values of other functions that resize the string, which allows remote attackers to cause a denial of service and possibly execute arbitrary code by forcing an out-of-memory state that causes a reallocation to fail and return a pointer to a fixed address, which leads to heap corruption.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62909,7 +62909,7 @@
     {
       "cve_id": "CVE-2005-0399",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Heap-based buffer overflow in GIF2.cpp in Firefox before 1.0.2, Mozilla before to 1.7.6, and Thunderbird before 1.0.2, and possibly other applications that use the same library, allows remote attackers to execute arbitrary code via a GIF image with a crafted Netscape extension 2 block and buffer size.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62930,7 +62930,7 @@
     {
       "cve_id": "CVE-2005-0401",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "FireFox 1.0.1 and Mozilla before 1.7.6 do not sufficiently address all attack vectors for loading chrome files and hijacking drag and drop events, which allows remote attackers to execute arbitrary XUL code by tricking a user into dragging a scrollbar, a variant of CVE-2005-0527, aka \"Firescrolling 2.\"",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62951,7 +62951,7 @@
     {
       "cve_id": "CVE-2005-0527",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox 1.0 allows remote attackers to execute arbitrary code via plugins that load \"privileged content\" into frames, as demonstrated using certain XUL events when a user drags a scrollbar two times, aka \"Firescrolling.\"",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -62972,7 +62972,7 @@
     {
       "cve_id": "CVE-2005-0588",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.1 and Mozilla before 1.7.6 does not restrict xsl:include and xsl:import tags in XSLT stylesheets to the current domain, which allows remote attackers to determine the existence of files on the local system.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -62993,7 +62993,7 @@
     {
       "cve_id": "CVE-2005-0589",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Form Fill feature in Firefox before 1.0.1 allows remote attackers to steal potentially sensitive information via an input control that monitors the values that are generated by the autocomplete capability.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63014,7 +63014,7 @@
     {
       "cve_id": "CVE-2005-0590",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The installation confirmation dialog in Firefox before 1.0.1, Thunderbird before 1.0.1, and Mozilla before 1.7.6 allows remote attackers to use InstallTrigger to spoof the hostname of the host performing the installation via a long \"user:pass\" sequence in the URL, which appears before the real hostname.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63035,7 +63035,7 @@
     {
       "cve_id": "CVE-2005-0989",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The find_replen function in jsstr.c in the Javascript engine for Mozilla Suite 1.7.6, Firefox 1.0.1 and 1.0.2, and Netscape 7.2 allows remote attackers to read portions of heap memory in a Javascript string via the lambda replace method.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63056,7 +63056,7 @@
     {
       "cve_id": "CVE-2005-1158",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Multiple \"missing security checks\" in Firefox before 1.0.3 allow remote attackers to inject arbitrary Javascript into privileged pages using the _search target of the Firefox sidebar.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63077,7 +63077,7 @@
     {
       "cve_id": "CVE-2005-1160",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The privileged \"chrome\" UI code in Firefox before 1.0.3 and Mozilla Suite before 1.7.7 allows remote attackers to gain privileges by overriding certain properties or methods of DOM nodes, as demonstrated using multiple attacks involving the eval function or the Script object.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -63098,7 +63098,7 @@
     {
       "cve_id": "CVE-2005-0587",
       "published_date": "2005-03-25",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.1 and Mozilla before 1.7.6 allows remote malicious web sites to overwrite arbitrary files by tricking the user into downloading a .LNK (link) file twice, which overwrites the file that was referenced in the first .LNK file.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -63119,7 +63119,7 @@
     {
       "cve_id": "CVE-2004-1156",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla before 1.7.6, and Firefox before 1.0.1, allows remote attackers to spoof arbitrary web sites by injecting content from one window into a target window whose name is known but resides in a different domain, as demonstrated using a pop-up window on a trusted web site, aka the \"window injection\" vulnerability.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -63140,7 +63140,7 @@
     {
       "cve_id": "CVE-2004-1200",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox and Mozilla allow remote attackers to cause a denial of service (application crash from memory consumption), as demonstrated using Javascript code that continuously creates nested arrays and then sorts the newly created arrays.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63161,7 +63161,7 @@
     {
       "cve_id": "CVE-2004-2225",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 0.10.1 allows remote attackers to delete arbitrary files in the download directory via a crafted data: URI that is not properly handled when the user clicks the Save button.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63182,7 +63182,7 @@
     {
       "cve_id": "CVE-2004-2227",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 1.0 truncates long filenames in the file download dialog box, which makes it easier for remote attackers to trick users into downloading files with dangerous extensions.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63203,7 +63203,7 @@
     {
       "cve_id": "CVE-2004-1639",
       "published_date": "2004-10-26",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 0.10, Mozilla 5.0, and Gecko 20040913 allows remote attackers to cause a denial of service (application crash or memory consumption) via a large binary file with a .html extension.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63224,7 +63224,7 @@
     {
       "cve_id": "CVE-2004-1380",
       "published_date": "2004-10-20",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0 and Mozilla before 1.7.5 allows inactive (background) tabs to launch dialog boxes, which can allow remote attackers to spoof the dialog boxes from web sites in other windows and facilitate phishing attacks, aka the \"Dialog Box Spoofing Vulnerability.\"",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63245,7 +63245,7 @@
     {
       "cve_id": "CVE-2004-1381",
       "published_date": "2004-10-20",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0 and Mozilla before 1.7.5 allow inactive (background) tabs to focus on input being entered in the active tab, as originally reported using form fields, which allows remote attackers to steal sensitive data that is intended for other sites, which could facilitate phishing attacks.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63266,7 +63266,7 @@
     {
       "cve_id": "CVE-2004-0905",
       "published_date": "2004-09-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before the Preview Release, Mozilla before 1.7.3, and Thunderbird before 0.8 allows remote attackers to perform cross-domain scripting and possibly execute arbitrary code by convincing a user to drag and drop javascript: links to a frame or page in another domain.",
       "base_score": 4.6,
       "severity": "MEDIUM",
@@ -63287,7 +63287,7 @@
     {
       "cve_id": "CVE-2004-0761",
       "published_date": "2004-08-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla before 1.7, Firefox before 0.9, and Thunderbird before 0.7, allow remote attackers to use certain redirect sequences to spoof the security lock icon that makes a web page appear to be encrypted.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63308,7 +63308,7 @@
     {
       "cve_id": "CVE-2004-0762",
       "published_date": "2004-08-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla before 1.7, Firefox before 0.9, and Thunderbird before 0.7, allow remote web sites to install arbitrary extensions by using interactive events to manipulate the XPInstall Security dialog box.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63329,7 +63329,7 @@
     {
       "cve_id": "CVE-2004-0763",
       "published_date": "2004-08-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 0.9.1 and 0.9.2 allows remote web sites to spoof certificates of trusted web sites via redirects and Javascript that uses the \"onunload\" method.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -63350,7 +63350,7 @@
     {
       "cve_id": "CVE-2003-1492",
       "published_date": "2003-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Netscape Navigator 7.0.2 and Mozilla allows remote attackers to access cookie information in a different domain via an HTTP request for a domain with an extra . (dot) at the end.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -64358,7 +64358,7 @@
     {
       "cve_id": "CVE-2006-4567",
       "published_date": "2006-09-15",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 1.5.0.7 and Thunderbird before 1.5.0.7 makes it easy for users to accept self-signed certificates for the auto-update mechanism, which might allow remote user-assisted attackers to use DNS spoofing to trick users into visiting a malicious site and accepting a malicious certificate for the Mozilla update site, which can then be used to install arbitrary code on the next update.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64379,7 +64379,7 @@
     {
       "cve_id": "CVE-2006-4569",
       "published_date": "2006-09-15",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The popup blocker in Mozilla Firefox before 1.5.0.7 opens the \"blocked popups\" display in the context of the Location bar instead of the subframe from which the popup originated, which might make it easier for remote user-assisted attackers to conduct cross-site scripting (XSS) attacks.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64400,7 +64400,7 @@
     {
       "cve_id": "CVE-2006-3812",
       "published_date": "2006-07-29",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox before 1.5.0.5, Thunderbird before 1.5.0.5, and SeaMonkey before 1.0.3 allows remote attackers to reference remote files and possibly load chrome: URLs by tricking the user into copying or dragging links.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64421,7 +64421,7 @@
     {
       "cve_id": "CVE-2006-3731",
       "published_date": "2006-07-21",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5.0.4 and earlier allows remote user-assisted attackers to cause a denial of service (crash) via a form with a multipart/form-data encoding and a user-uploaded file.  NOTE: a third party has claimed that this issue might be related to the LiveHTTPHeaders extension.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64442,7 +64442,7 @@
     {
       "cve_id": "CVE-2006-2786",
       "published_date": "2006-06-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "HTTP response smuggling vulnerability in Mozilla Firefox and Thunderbird before 1.5.0.4, when used with certain proxy servers, allows remote attackers to cause Firefox to interpret certain responses as if they were responses from two different sites via (1) invalid HTTP response headers with spaces between the header name and the colon, which might not be ignored in some cases, or (2) HTTP 1.1 headers through an HTTP 1.0 proxy, which are ignored by the proxy but processed by the client.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64463,7 +64463,7 @@
     {
       "cve_id": "CVE-2006-2538",
       "published_date": "2006-05-22",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "IE Tab 1.0.9 plugin for Mozilla Firefox 1.5.0.3 allows remote user-assisted attackers to cause a denial of service (application crash), possibly due to a null dereference, via certain Javascript, as demonstrated using a url parameter to the content/reloaded.html page in a chrome:// URI.  Some third-party researchers claim that they are unable to reproduce this vulnerability.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64484,7 +64484,7 @@
     {
       "cve_id": "CVE-2006-2332",
       "published_date": "2006-05-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5.0.3 allows remote attackers to cause a denial of service via a web page with a large number of IMG elements in which the SRC attribute is a mailto URI.  NOTE: another researcher found that the web page caused a temporary browser slowdown instead of a crash.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64505,7 +64505,7 @@
     {
       "cve_id": "CVE-2006-1725",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5 before 1.5.0.2 and SeaMonkey before 1.0.1 causes certain windows to become translucent due to an interaction between XUL content windows and the history mechanism, which might allow user-assisted remote attackers to trick users into executing arbitrary code.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64526,7 +64526,7 @@
     {
       "cve_id": "CVE-2006-1736",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 allows remote attackers to trick users into downloading and saving an executable file via an image that is overlaid by a transparent image link that points to the executable, which causes the executable to be saved when the user clicks the \"Save image as...\" option.  NOTE: this attack is made easier due to a GUI truncation issue that prevents the user from seeing the malicious extension when there is extra whitespace in the filename.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64547,7 +64547,7 @@
     {
       "cve_id": "CVE-2006-1740",
       "published_date": "2006-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.x before 1.5 and 1.0.x before 1.0.8, Mozilla Suite before 1.7.13, and SeaMonkey before 1.0 allows remote attackers to spoof secure site indicators such as the locked icon by opening the trusted site in a popup window, then changing the location to a malicious site.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64568,7 +64568,7 @@
     {
       "cve_id": "CVE-2005-3089",
       "published_date": "2005-09-28",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox 1.0.6 allows attackers to cause a denial of service (crash) via a Proxy Auto-Config (PAC) script that uses an eval statement. NOTE: it is not clear whether an untrusted party has any role in triggering this issue, so it might not be a vulnerability.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64589,7 +64589,7 @@
     {
       "cve_id": "CVE-2005-2602",
       "published_date": "2005-08-17",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Thunderbird 1.0 and Firefox 1.0.6 allows remote attackers to obfuscate URIs via a long URI, which causes the address bar to go blank and could facilitate phishing attacks.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64610,7 +64610,7 @@
     {
       "cve_id": "CVE-2005-2268",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.5 and Mozilla before 1.7.9 does not clearly associate a Javascript dialog box with the web page that generated it, which allows remote attackers to spoof a dialog box from a trusted site and facilitates phishing attacks, aka the \"Dialog Origin Spoofing Vulnerability.\"",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64631,7 +64631,7 @@
     {
       "cve_id": "CVE-2005-1937",
       "published_date": "2005-06-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "A regression error in Firefox 1.0.3 and Mozilla 1.7.7 allows remote attackers to inject arbitrary Javascript from one page into the frameset of another site, aka the frame injection spoofing vulnerability, a re-introduction of a vulnerability that was originally identified and addressed by CVE-2004-0718.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64652,7 +64652,7 @@
     {
       "cve_id": "CVE-2005-1576",
       "published_date": "2005-05-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The file download dialog in Mozilla Firefox 0.10.1 and 1.0 for Windows uses the Content-Type HTTP header to determine the file type, but saves the original file extension when \"Save to Disk\" is selected, which allows remote attackers to hide the real file types of downloaded files.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64673,7 +64673,7 @@
     {
       "cve_id": "CVE-2005-0141",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0 and Mozilla before 1.7.5 allow remote attackers to load local files via links \"with a custom getter and toString method\" that are middle-clicked by the user to be opened in a new tab.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64694,7 +64694,7 @@
     {
       "cve_id": "CVE-2005-0142",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox 0.9, Thunderbird 0.6 and other versions before 0.9, and Mozilla 1.7 before 1.7.5 save temporary files with world-readable permissions, which allows local users to read certain web content or attachments that belong to other users, e.g. content that is managed by helper applications such as PDF.",
       "base_score": 2.1,
       "severity": "LOW",
@@ -64715,7 +64715,7 @@
     {
       "cve_id": "CVE-2005-0144",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0 and Mozilla before 1.7.5 display the secure site lock icon when a view-source: URL references a secure SSL site while an insecure page is being loaded, which could facilitate phishing attacks.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64736,7 +64736,7 @@
     {
       "cve_id": "CVE-2005-0232",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox 1.0 allows remote attackers to modify Boolean configuration parameters for the about:config site by using a plugin such as Flash, and the -moz-opacity filter, to display the about:config site then cause the user to double-click at a certain screen position, aka \"Fireflashing.\"",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64757,7 +64757,7 @@
     {
       "cve_id": "CVE-2005-0402",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.2 allows remote attackers to execute arbitrary code by tricking a user into saving a page as a Firefox sidebar panel, then using the sidebar panel to inject Javascript into a privileged page.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64778,7 +64778,7 @@
     {
       "cve_id": "CVE-2005-0578",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.1 and Mozilla Suite before 1.7.6 use a predictable filename for the plugin temporary directory, which allows local users to delete arbitrary files of other users via a symlink attack on the plugtmp directory.",
       "base_score": 2.1,
       "severity": "LOW",
@@ -64799,7 +64799,7 @@
     {
       "cve_id": "CVE-2005-0584",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.1 and Mozilla before 1.7.6, when displaying the HTTP Authentication dialog, do not change the focus to the tab that generated the prompt, which could facilitate spoofing and phishing attacks.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64820,7 +64820,7 @@
     {
       "cve_id": "CVE-2005-0586",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.1 and Mozilla before 1.7.6 allows remote malicious web sites to spoof the extensions of files to download via the Content-Disposition header, which could be used to trick users into downloading dangerous content.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64841,7 +64841,7 @@
     {
       "cve_id": "CVE-2005-0591",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.1 allows remote attackers to spoof the (1) security and (2) download modal dialog boxes, which could be used to trick users into executing script or downloading and executing a file, aka \"Firespoofing.\"",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64862,7 +64862,7 @@
     {
       "cve_id": "CVE-2005-0585",
       "published_date": "2005-03-25",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.1 and Mozilla before 1.7.6 truncates long sub-domains or paths for display, which may allow remote malicious web sites to spoof legitimate sites and facilitate phishing attacks.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64883,7 +64883,7 @@
     {
       "cve_id": "CVE-2005-0143",
       "published_date": "2005-03-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0 and Mozilla before 1.7.5 display the SSL lock icon when an insecure page loads a binary file from a trusted site, which could facilitate phishing attacks.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64904,7 +64904,7 @@
     {
       "cve_id": "CVE-2005-0593",
       "published_date": "2005-03-04",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0.1 and Mozilla before 1.7.6 allows remote attackers to spoof the SSL \"secure site\" lock icon via (1) a web site that does not finish loading, which shows the lock of the previous site, (2) a non-HTTP server that uses SSL, which causes the lock to be displayed when the SSL handshake is completed, or (3) a URL that generates an HTTP 204 error, which updates the icon and location information but does not change the display of the original site.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64925,7 +64925,7 @@
     {
       "cve_id": "CVE-2005-0231",
       "published_date": "2005-02-07",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox 1.0 does not invoke the Javascript Security Manager when a user drags a javascript: or data: URL to a tab, which allows remote attackers to bypass the security model, aka \"firetabbing.\"",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64946,7 +64946,7 @@
     {
       "cve_id": "CVE-2005-0145",
       "published_date": "2005-01-24",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Firefox before 1.0 does not properly distinguish between user-generated and synthetic click events, which allows remote attackers to use Javascript to bypass the file download prompt when the user uses the Alt-click feature.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64967,7 +64967,7 @@
     {
       "cve_id": "CVE-2004-1753",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Apple Java plugin, as used in Netscape 7.1 and 7.2, Mozilla 1.7.2, and Firefox 0.9.3 on MacOS X 10.3.5, when tabbed browsing is enabled, does not properly handle SetWindow(NULL) calls, which allows Java applets from one tab to draw to other tabs and facilitates phishing attacks that spoof tabs.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -64988,7 +64988,7 @@
     {
       "cve_id": "CVE-2004-2657",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Mozilla Firefox 1.5.0.1, and possibly other versions, preserves some records of user activity even after uninstalling, which allows local users who share a Windows profile to view the records after a new installation of Firefox, as reported for the list of Passwords Never Saved web sites.  NOTE: The vendor has disputed this issue, stating that \"The uninstaller is primarily there to uninstall the application. It is not there to uninstall user data. For the moment I will stick by my module-owner decision.",
       "base_score": 1.7,
       "severity": "LOW",

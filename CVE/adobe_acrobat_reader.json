@@ -1,7 +1,7 @@
 {
   "app_name": "Adobe Acrobat Reader",
   "app_key": "adobe_acrobat_reader",
-  "last_updated": "2026-04-15",
+  "last_updated": "2026-04-16",
   "total_cves": 2206,
   "summary": {
     "critical": 424,
@@ -34370,7 +34370,7 @@
     {
       "cve_id": "CVE-2006-3459",
       "published_date": "2006-08-03",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Multiple stack-based buffer overflows in the TIFF library (libtiff) before 3.8.2, as used in Adobe Reader 9.3.0 and other products, allow context-dependent attackers to execute arbitrary code or cause a denial of service via unspecified vectors, including a large tdir_count value in the TIFFFetchShortPair function in tif_dirread.c.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -34391,7 +34391,7 @@
     {
       "cve_id": "CVE-2006-1627",
       "published_date": "2006-04-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Adobe Document Server for Reader Extensions 6.0 does not provide proper access control, which allows remote authenticated users to perform privileged actions by modifying the (1) actionID and (2) pageID parameters.  NOTE: due to an error during reservation, this identifier was inadvertently associated with multiple issues.  Other CVE identifiers have been assigned to handle other problems that are covered by the same disclosure.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -34412,7 +34412,7 @@
     {
       "cve_id": "CVE-2005-2470",
       "published_date": "2005-08-16",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in a \"core application plug-in\" for Adobe Reader 5.1 through 7.0.2 and Acrobat 5.0 through 7.0.2 allows attackers to cause a denial of service (crash) and possibly execute arbitrary code via unknown vectors.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -34433,7 +34433,7 @@
     {
       "cve_id": "CVE-2005-1306",
       "published_date": "2005-06-15",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Adobe Reader control in Adobe Reader and Acrobat 7.0 and 7.0.1 allows remote attackers to determine the existence of files via Javascript containing XML script, aka the \"XML External Entity vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -34454,7 +34454,7 @@
     {
       "cve_id": "CVE-2004-1152",
       "published_date": "2005-01-10",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in the mailListIsPdf function in Adobe Acrobat Reader 5.09 for Unix allows remote attackers to execute arbitrary code via an e-mail message with a crafted PDF attachment.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -34475,7 +34475,7 @@
     {
       "cve_id": "CVE-2004-1153",
       "published_date": "2005-01-10",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Format string vulnerability in Adobe Acrobat Reader 6.0.0 through 6.0.2 allows remote attackers to cause a denial of service (application crash) and possibly execute arbitrary code via an .ETD document containing format string specifiers in (1) title or (2) baseurl fields.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -34496,7 +34496,7 @@
     {
       "cve_id": "CVE-2004-0629",
       "published_date": "2004-09-28",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in the ActiveX component (pdf.ocx) for Adobe Acrobat 5.0.5 and Acrobat Reader, and possibly other versions, allows remote attackers to execute arbitrary code via a URI for a PDF file with a null terminator (%00) followed by a long string.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -34517,7 +34517,7 @@
     {
       "cve_id": "CVE-2004-0630",
       "published_date": "2004-08-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The uudecoding feature in Adobe Acrobat Reader 5.0.5 and 5.0.6 for Unix and Linux, and possibly other versions including those before 5.0.9, allows remote attackers to execute arbitrary code via shell metacharacters (\"`\" or backtick) in the filename of the PDF file that is provided to the uudecode command.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -34538,7 +34538,7 @@
     {
       "cve_id": "CVE-2004-0631",
       "published_date": "2004-08-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in the uudecoding feature for Adobe Acrobat Reader 5.0.5 and 5.0.6 for Unix and Linux, and possibly other versions including those before 5.0.9, allows remote attackers to execute arbitrary code via a long filename for the PDF file that is provided to the uudecode command.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -34559,7 +34559,7 @@
     {
       "cve_id": "CVE-2004-0632",
       "published_date": "2004-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Adobe Reader 6.0 does not properly handle null characters when splitting a filename path into components, which allows remote attackers to execute arbitrary code via a file with a long extension that is not normally handled by Reader, triggering a buffer overflow.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -34580,7 +34580,7 @@
     {
       "cve_id": "CVE-2004-0194",
       "published_date": "2004-03-29",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Stack-based buffer overflow in the OutputDebugString function for Adobe Acrobat Reader 5.1 allows remote attackers to execute arbitrary code via a PDF document with XML Forms Data Format (XFDF) data.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -34601,7 +34601,7 @@
     {
       "cve_id": "CVE-2003-0508",
       "published_date": "2003-08-07",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in the WWWLaunchNetscape function of Adobe Acrobat Reader (acroread) 5.0.7 and earlier allows remote attackers to execute arbitrary code via a .pdf file with a long mailto link.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -34622,7 +34622,7 @@
     {
       "cve_id": "CVE-2003-0434",
       "published_date": "2003-07-24",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Various PDF viewers including (1) Adobe Acrobat 5.06 and (2) Xpdf 1.01 allow remote attackers to execute arbitrary commands via shell metacharacters in an embedded hyperlink.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -34643,7 +34643,7 @@
     {
       "cve_id": "CVE-2003-0284",
       "published_date": "2003-06-16",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Adobe Acrobat 5 does not properly validate JavaScript in PDF files, which allows remote attackers to write arbitrary files into the Plug-ins folder that spread to other PDF documents, as demonstrated by the W32.Yourde virus.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -34664,7 +34664,7 @@
     {
       "cve_id": "CVE-2001-1069",
       "published_date": "2001-08-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "libCoolType library as used in Adobe Acrobat (acroread) on Linux creates the AdobeFnt.lst file with world-writable permissions, which allows local users to modify the file and possibly modify acroread's behavior.",
       "base_score": 7.2,
       "severity": "HIGH",
@@ -34685,7 +34685,7 @@
     {
       "cve_id": "CVE-2000-0713",
       "published_date": "2000-10-20",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in Adobe Acrobat 4.05, Reader, Business Tools, and Fill In products that handle PDF files allows attackers to execute arbitrary commands via a long /Registry or /Ordering specifier.",
       "base_score": 7.6,
       "severity": "HIGH",
@@ -34706,7 +34706,7 @@
     {
       "cve_id": "CVE-1999-1576",
       "published_date": "1999-09-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in Adobe Acrobat ActiveX control (pdf.ocx, PDF.PdfCtrl.1) 1.3.188 for Acrobat Reader 4.0 allows remote attackers to execute arbitrary code via the pdf.setview method.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -45248,7 +45248,7 @@
     {
       "cve_id": "CVE-2006-3453",
       "published_date": "2006-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in Adobe Acrobat 6.0 to 6.0.4 allows remote attackers to execute arbitrary code via unknown vectors in a document that triggers the overflow when it is distilled to PDF.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -45269,7 +45269,7 @@
     {
       "cve_id": "CVE-2006-3452",
       "published_date": "2006-07-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Adobe Reader and Acrobat 6.0.4 and earlier, on Mac OSX, has insecure file and directory permissions, which allows local users to gain privileges by overwriting program files.",
       "base_score": 4.6,
       "severity": "MEDIUM",
@@ -45290,7 +45290,7 @@
     {
       "cve_id": "CVE-2006-3093",
       "published_date": "2006-06-19",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Multiple unspecified vulnerabilities in Adobe Acrobat Reader (acroread) before 7.0.8 have unknown impact and unknown vectors.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -45311,7 +45311,7 @@
     {
       "cve_id": "CVE-2006-0525",
       "published_date": "2006-02-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Multiple Adobe products, including (1) Photoshop CS2, (2) Illustrator CS2, and (3) Adobe Help Center, install a large number of .EXE and .DLL files with write-access permission for the Everyone group, which allows local users to gain privileges via Trojan horse programs.",
       "base_score": 4.6,
       "severity": "MEDIUM",
@@ -45332,7 +45332,7 @@
     {
       "cve_id": "CVE-2005-1625",
       "published_date": "2005-07-05",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Stack-based buffer overflow in the UnixAppOpenFilePerform function in Adobe Reader 5.0.9 and 5.0.10 for Unix allows remote attackers to execute arbitrary code via a PDF document with a long /Filespec tag.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -45353,7 +45353,7 @@
     {
       "cve_id": "CVE-2005-0035",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Acrobat web control in Adobe Acrobat and Acrobat Reader 7.0 and earlier, when used with Internet Explorer, allows remote attackers to determine the existence of arbitrary files via the LoadFile ActiveX method.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -45374,7 +45374,7 @@
     {
       "cve_id": "CVE-2004-1598",
       "published_date": "2004-10-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Adobe Acrobat and Acrobat Reader 6.0 allow remote attackers to read arbitrary files via a PDF file that contains an embedded Shockwave (swf) file that references files outside of the temporary directory.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -45395,7 +45395,7 @@
     {
       "cve_id": "CVE-2003-0142",
       "published_date": "2003-08-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Adobe Acrobat Reader (acroread) 6, under certain circumstances when running with the \"Certified plug-ins only\" option disabled, loads plug-ins with signatures used for older versions of Acrobat, which can allow attackers to cause Acrobat to enter Certified mode and run untrusted plugins by modifying the CTIsCertifiedMode function.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -45416,7 +45416,7 @@
     {
       "cve_id": "CVE-2002-0030",
       "published_date": "2003-04-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The digital signature mechanism for the Adobe Acrobat PDF viewer only verifies the PE header of executable code for a plug-in, which can allow attackers to execute arbitrary code in certified mode by making the plug-in appear to be signed by Adobe.",
       "base_score": 4.6,
       "severity": "MEDIUM",
@@ -46256,7 +46256,7 @@
     {
       "cve_id": "CVE-2005-1841",
       "published_date": "2005-07-07",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The control for Adobe Reader 5.0.9 and 5.0.10 on Linux, Solaris, HP-UX, and AIX creates temporary files with the permissions as specified in a user's umask, which could allow local users to read PDF documents of that user if the umask allows it.",
       "base_score": 2.1,
       "severity": "LOW",
@@ -46277,7 +46277,7 @@
     {
       "cve_id": "CVE-2005-0492",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Adobe Acrobat Reader 6.0.3 and 7.0.0 allows remote attackers to cause a denial of service (application crash) via a PDF file that contains a negative Count value in the root page node.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -46298,7 +46298,7 @@
     {
       "cve_id": "CVE-2005-1347",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "** UNVERIFIABLE **  NOTE: this issue describes a problem that can not be independently verified as of 20050421.  Adobe Acrobat reader (AcroRd32.exe) 6.0 and earlier allows remote attackers to cause a denial of service (\"Invalid-ID-Handle-Error\" error) and modify memory beginning at a particular address, possibly allowing the execution of arbitrary code, via a crafted PDF file.  NOTE: the vendor has stated that the reporter refused to provide sufficient details to confirm the issue.  In addition, due to the lack of details in the original advisory, an independent verification is not possible.  Finally, the reliability of the original reporter is unknown.  This item has only been assigned a CVE identifier for tracking purposes, and to serve as a concrete example of the newly defined UNVERIFIABLE and PRERELEASE content decisions in CVE, which must be discussed by the Editorial Board. Without additional details or independent verification by reliable sources, it is highly likely that this item will be REJECTED.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -46319,7 +46319,7 @@
     {
       "cve_id": "CVE-2002-1764",
       "published_date": "2002-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "acroread in Adobe Acrobat Reader 4.05 on Linux allows local users to overwrite arbitrary files via a symlink attack on temporary files.",
       "base_score": 2.1,
       "severity": "LOW",

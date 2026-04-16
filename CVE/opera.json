@@ -1,7 +1,7 @@
 {
   "app_name": "Opera",
   "app_key": "opera",
-  "last_updated": "2026-04-15",
+  "last_updated": "2026-04-16",
   "total_cves": 304,
   "summary": {
     "critical": 0,
@@ -1358,7 +1358,7 @@
     {
       "cve_id": "CVE-2006-3198",
       "published_date": "2006-06-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Integer overflow in Opera 8.54 and earlier allows remote attackers to execute arbitrary code via a JPEG image with large height and width values, which causes less memory to be allocated than intended.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1379,7 +1379,7 @@
     {
       "cve_id": "CVE-2005-3750",
       "published_date": "2005-11-22",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera before 8.51 on Linux and Unix systems allows remote attackers to execute arbitrary code via shell metacharacters (backticks) in a URL that another product provides in a command line argument when launching Opera.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1400,7 +1400,7 @@
     {
       "cve_id": "CVE-2005-3059",
       "published_date": "2005-09-26",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Multiple unspecified vulnerabilities in Opera 8.50 on Linux and Windows have unknown impact and attack vectors, related to (1) \" handling of must-revalidate cache directive for HTTPS pages\" or (2) a \"display issue with cookie comment encoding.\"",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -1421,7 +1421,7 @@
     {
       "cve_id": "CVE-2005-1475",
       "published_date": "2005-06-16",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The XMLHttpRequest object in Opera 8.0 Final Build 1095 allows remote attackers to bypass access restrictions and perform unauthorized actions on other domains via a redirect.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1442,7 +1442,7 @@
     {
       "cve_id": "CVE-2005-0457",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 7.54 and earlier on Gentoo Linux uses an insecure path for plugins, which could allow local users to gain privileges by inserting malicious libraries into the PORTAGE_TMPDIR (portage) temporary directory.",
       "base_score": 7.2,
       "severity": "HIGH",
@@ -1463,7 +1463,7 @@
     {
       "cve_id": "CVE-2005-1139",
       "published_date": "2005-04-14",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 8 Beta 3, when using first-generation vetted digital certificates, displays the Organizational information of an SSL certificate, which is easily spoofed and can facilitate phishing attacks.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1484,7 +1484,7 @@
     {
       "cve_id": "CVE-2005-0233",
       "published_date": "2005-02-08",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The International Domain Name (IDN) support in Firefox 1.0, Camino .8.5, and Mozilla before 1.7.6 allows remote attackers to spoof domain names using punycode encoded domain names that are decoded in URLs and SSL certificates in a way that uses homograph characters from other character sets, which facilitates phishing attacks.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1505,7 +1505,7 @@
     {
       "cve_id": "CVE-2004-1157",
       "published_date": "2005-01-10",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 7.x up to 7.54, and possibly other versions, allows remote attackers to spoof arbitrary web sites by injecting content from one window into a target window whose name is known but resides in a different domain, as demonstrated using a pop-up window on a trusted web site, aka the \"window injection\" vulnerability.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1526,7 +1526,7 @@
     {
       "cve_id": "CVE-2004-0717",
       "published_date": "2004-07-27",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 7.51 for Windows and 7.50 for Linux does not properly prevent a frame in one domain from injecting content into a frame that belongs to another domain, which facilitates web site spoofing and other attacks, aka the frame injection vulnerability.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1547,7 +1547,7 @@
     {
       "cve_id": "CVE-2003-0593",
       "published_date": "2004-04-15",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera allows remote attackers to bypass intended cookie access restrictions on a web application via \"%2e%2e\" (encoded dot dot) directory traversal sequences in a URL, which causes Opera to send the cookie outside the specified URL subsets, e.g. to a vulnerable application that runs on the same server as the target application.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1568,7 +1568,7 @@
     {
       "cve_id": "CVE-2003-1387",
       "published_date": "2003-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in Opera 6.05 and 6.06, and possibly other versions, allows remote attackers to execute arbitrary code via a URL with a long username.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1589,7 +1589,7 @@
     {
       "cve_id": "CVE-2003-1388",
       "published_date": "2003-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Buffer overflow in Opera 7.02 Build 2668 allows remote attackers to crash Opera via a long HTTP request ending in a .ZIP extension.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1610,7 +1610,7 @@
     {
       "cve_id": "CVE-2003-0870",
       "published_date": "2003-11-17",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Heap-based buffer overflow in Opera 7.11 and 7.20 allows remote attackers to execute arbitrary code via an HREF with a large number of escaped characters in the server name.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -5453,7 +5453,7 @@
     {
       "cve_id": "CVE-2006-3945",
       "published_date": "2006-07-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The CSS functionality in Opera 9 on Windows XP SP2 allows remote attackers to cause a denial of service (crash) by setting the background property of a DHTML element to a long http or https URL, which triggers memory corruption.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5474,7 +5474,7 @@
     {
       "cve_id": "CVE-2006-3353",
       "published_date": "2006-07-06",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 9 allows remote attackers to cause a denial of service (crash) via a crafted web page that triggers an out-of-bounds memory access, related to an iframe and JavaScript that accesses certain style sheets properties.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5495,7 +5495,7 @@
     {
       "cve_id": "CVE-2006-3331",
       "published_date": "2006-06-30",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera before 9.0 does not reset the SSL security bar after displaying a download dialog from an SSL-enabled website, which allows remote attackers to spoof a trusted SSL certificate from an untrusted website and facilitates phishing attacks.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5516,7 +5516,7 @@
     {
       "cve_id": "CVE-2006-3199",
       "published_date": "2006-06-23",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 9 allows remote attackers to cause a denial of service (crash) via an A tag with an href attribute with a URL containing a long hostname, which triggers an out-of-bounds operation.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5537,7 +5537,7 @@
     {
       "cve_id": "CVE-2006-1834",
       "published_date": "2006-04-19",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Integer signedness error in Opera before 8.54 allows remote attackers to execute arbitrary code via long values in a stylesheet attribute, which pass a length check.  NOTE: a sign extension problem makes the attack easier with shorter strings.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -5558,7 +5558,7 @@
     {
       "cve_id": "CVE-2005-4718",
       "published_date": "2005-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 8.02 and earlier allows remote attackers to cause a denial of service (client crash) via (1) a crafted HTML file with a \"content: url(0);\" style attribute, a \"bodyA\" tag, a long string, and a \"u\" tag with a long attribute, as demonstrated by opera.html; and (2) a BGSOUND element with a \"margin:-99;\" STYLE attribute.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5579,7 +5579,7 @@
     {
       "cve_id": "CVE-2005-4210",
       "published_date": "2005-12-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera before 8.51, when running on Windows with Input Method Editor (IME) installed, allows remote attackers to cause a denial of service (persistent application crash) by bookmarking a site with a long title.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5600,7 +5600,7 @@
     {
       "cve_id": "CVE-2005-3946",
       "published_date": "2005-12-01",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 8.50 allows remote attackers to cause a denial of service (crash) via a Java applet with a large string argument to the removeMember JNI method for the com.opera.JSObject class.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5621,7 +5621,7 @@
     {
       "cve_id": "CVE-2005-3699",
       "published_date": "2005-11-21",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera Web Browser 8.50 and 8.0 through 8.0.2 allows remote attackers to spoof the URL in the status bar via the title in an image in a link to a trusted site within a form to the malicious site.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5642,7 +5642,7 @@
     {
       "cve_id": "CVE-2005-3041",
       "published_date": "2005-09-22",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Unspecified \"drag-and-drop vulnerability\" in Opera Web Browser before 8.50 on Windows allows \"unintentional file uploads.\"",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5663,7 +5663,7 @@
     {
       "cve_id": "CVE-2005-3006",
       "published_date": "2005-09-21",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The mail client in Opera before 8.50 opens attached files from the user's cache directory without warning the user, which might allow remote attackers to inject arbitrary web script and spoof attachment filenames.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5684,7 +5684,7 @@
     {
       "cve_id": "CVE-2005-2405",
       "published_date": "2005-08-01",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 8.01, when the \"Arial Unicode MS\" font (ARIALUNI.TTF) is installed, does not properly handle extended ASCII characters in the file download dialog box, which allows remote attackers to spoof file extensions and possibly trick users into executing arbitrary code.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5705,7 +5705,7 @@
     {
       "cve_id": "CVE-2005-2406",
       "published_date": "2005-08-01",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 8.01 allows remote attackers to conduct cross-site scripting (XSS) attacks or modify which files are uploaded by tricking a user into dragging an image that is a \"javascript:\" URI.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -5726,7 +5726,7 @@
     {
       "cve_id": "CVE-2005-2407",
       "published_date": "2005-08-01",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "A design error in Opera 8.01 and earlier allows user-assisted attackers to execute arbitrary code by overlaying a malicious new window above a file download dialog box, then tricking the user into double-clicking on the \"Run\" button, aka \"link hijacking\".",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -5747,7 +5747,7 @@
     {
       "cve_id": "CVE-2005-2309",
       "published_date": "2005-07-19",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 8.01 allows remote attackers to cause a denial of service (CPU consumption) via a crafted JPEG image, as demonstrated using random.jpg.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5768,7 +5768,7 @@
     {
       "cve_id": "CVE-2005-1669",
       "published_date": "2005-06-16",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Cross-site scripting (XSS) vulnerability in Opera 8.0 Final Build 1095 allows remote attackers to inject arbitrary web script or HTML via \"javascript:\" URLs when a new window or frame is opened, which allows remote attackers to bypass access restrictions and perform unauthorized actions on other domains.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -5789,7 +5789,7 @@
     {
       "cve_id": "CVE-2005-0235",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The International Domain Name (IDN) support in Opera 7.54 allows remote attackers to spoof domain names using punycode encoded domain names that are decoded in URLs and SSL certificates in a way that uses homograph characters from other character sets, which facilitates phishing attacks.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5810,7 +5810,7 @@
     {
       "cve_id": "CVE-2005-0238",
       "published_date": "2005-05-02",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The International Domain Name (IDN) support in Epiphany allows remote attackers to spoof domain names using punycode encoded domain names that are decoded in URLs and SSL certificates in a way that uses homograph characters from other character sets, which facilitates phishing attacks.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5831,7 +5831,7 @@
     {
       "cve_id": "CVE-2005-0456",
       "published_date": "2005-01-12",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 7.54 and earlier does not properly validate base64 encoded binary data in a data: (RFC 2397) URL, which causes the URL to be obscured in a download dialog, which may allow remote attackers to trick users into executing arbitrary code.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5852,7 +5852,7 @@
     {
       "cve_id": "CVE-2004-1201",
       "published_date": "2005-01-10",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 7.54 allows remote attackers to cause a denial of service (application crash from memory exhaustion), as demonstrated using Javascript code that continuously creates nested arrays and then sorts the newly created arrays.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5873,7 +5873,7 @@
     {
       "cve_id": "CVE-2004-1491",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 7.54 and earlier uses kfmclient exec to handle unknown MIME types, which allows remote attackers to execute arbitrary code via a shortcut or launcher that contains an Exec entry.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5894,7 +5894,7 @@
     {
       "cve_id": "CVE-2004-1810",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The Javascript engine in Opera 7.23 allows remote attackers to cause a denial of service (crash) by creating a new Array object with a large size value, then writing into that array.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5915,7 +5915,7 @@
     {
       "cve_id": "CVE-2004-2260",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera Browser 7.23, and other versions before 7.50, updates the address bar as soon as the user clicks a link, which allows remote attackers to redirect to other sites via the onUnload attribute.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5936,7 +5936,7 @@
     {
       "cve_id": "CVE-2004-2570",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera before 7.54 allows remote attackers to modify properties and methods of the location object and execute Javascript to read arbitrary files from the client's local filesystem or display a false URL to the user.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5957,7 +5957,7 @@
     {
       "cve_id": "CVE-2004-2659",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera offers an Open button to verify that a user wishes to execute a downloaded file, which allows user-assisted remote attackers to construct a race condition that tricks a user into clicking Open via a request for a different mouse or keyboard action very shortly before the Open dialog appears.  NOTE: this is a different issue than CVE-2005-2407.",
       "base_score": 4.0,
       "severity": "MEDIUM",
@@ -5978,7 +5978,7 @@
     {
       "cve_id": "CVE-2004-0872",
       "published_date": "2004-09-16",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera does not prevent cookies that are sent over an insecure channel (HTTP) from also being sent over a secure channel (HTTPS/SSL) in the same domain, which could allow remote attackers to steal cookies and conduct unauthorized activities, aka \"Cross Security Boundary Cookie Injection.\"",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -5999,7 +5999,7 @@
     {
       "cve_id": "CVE-2004-0537",
       "published_date": "2004-08-06",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 7.50 and earlier allows remote web sites to provide a \"Shortcut Icon\" (favicon) that is wider than expected, which could allow the web sites to spoof a trusted domain and facilitate phishing attacks using a wide icon and extra spaces.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -6020,7 +6020,7 @@
     {
       "cve_id": "CVE-2003-1396",
       "published_date": "2003-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Heap-based buffer overflow in Opera 6.05 through 7.10 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a filename with a long extension.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -6041,7 +6041,7 @@
     {
       "cve_id": "CVE-2003-1397",
       "published_date": "2003-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "The PluginContext object of Opera 6.05 and 7.0 allows remote attackers to cause a denial of service (crash) via an HTTP request containing a long string that gets passed to the ShowDocument method.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -6062,7 +6062,7 @@
     {
       "cve_id": "CVE-2003-1420",
       "published_date": "2003-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Cross-site scripting (XSS) vulnerability in Opera 6.0 through 7.0 with automatic redirection disabled allows remote attackers to inject arbitrary web script or HTML via the HTTP Location header.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -6083,7 +6083,7 @@
     {
       "cve_id": "CVE-2003-1561",
       "published_date": "2003-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera, probably before 7.50, sends Referer headers containing https:// URLs in requests for http:// URLs, which allows remote attackers to obtain potentially sensitive information by reading Referer log data.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -6230,7 +6230,7 @@
     {
       "cve_id": "CVE-2005-3007",
       "published_date": "2005-09-21",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera before 8.50 allows remote attackers to spoof the content type of files via a filename with a trailing \".\" (dot), which might allow remote attackers to trick users into processing dangerous content.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -6251,7 +6251,7 @@
     {
       "cve_id": "CVE-2005-2273",
       "published_date": "2005-07-13",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 7.x and 8 before 8.01 does not clearly associate a Javascript dialog box with the web page that generated it, which allows remote attackers to spoof a dialog box from a trusted site and facilitates phishing attacks, aka the \"Dialog Origin Spoofing Vulnerability.\"",
       "base_score": 2.6,
       "severity": "LOW",
@@ -6272,7 +6272,7 @@
     {
       "cve_id": "CVE-2004-1489",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 7.54 and earlier does not properly limit an applet's access to internal Java packages from Sun, which allows remote attackers to gain sensitive information, such as user names and the installation directory.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -6293,7 +6293,7 @@
     {
       "cve_id": "CVE-2004-1490",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera 7.54 and earlier allows remote attackers to spoof file types in the download dialog via dots and non-breaking spaces (ASCII character code 160) in the (1) Content-Disposition or (2) Content-Type headers.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -6314,7 +6314,7 @@
     {
       "cve_id": "CVE-2004-2491",
       "published_date": "2004-12-31",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "A race condition in Opera web browser 7.53 Build 3850 causes Opera to fill in the address bar before the page has been loaded, which allows remote attackers to spoof the URL in the address bar via the window.open and location.replace HTML parameters, which facilitates phishing attacks.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -6335,7 +6335,7 @@
     {
       "cve_id": "CVE-2004-1615",
       "published_date": "2004-10-18",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera allows remote attackers to cause a denial of service (invalid memory reference and application crash) via a web page or HTML email that contains a TBODY tag with a large COL SPAN value, as demonstrated by mangleme.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -6356,7 +6356,7 @@
     {
       "cve_id": "CVE-2004-0473",
       "published_date": "2004-07-07",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Argument injection vulnerability in Opera before 7.50 does not properly filter \"-\" characters that begin a hostname in a telnet URI, which allows remote attackers to insert options to the resulting command line and overwrite arbitrary files via (1) the \"-f\" option on Windows XP or (2) the \"-n\" option on Linux.",
       "base_score": 2.6,
       "severity": "LOW",
@@ -6377,7 +6377,7 @@
     {
       "cve_id": "CVE-2004-2083",
       "published_date": "2004-02-11",
-      "last_modified_date": "2025-04-03",
+      "last_modified_date": "2026-04-16",
       "description": "Opera Web Browser 7.0 through 7.23 allows remote attackers to trick users into executing a malicious file by embedding a CLSID in the file name, which causes the malicious file to appear as a trusted file type, aka \"File Download Extension Spoofing.\"",
       "base_score": 2.6,
       "severity": "LOW",
