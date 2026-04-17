@@ -1,12 +1,12 @@
 {
   "app_name": "Adobe Acrobat Reader",
   "app_key": "adobe_acrobat_reader",
-  "last_updated": "2026-04-16",
-  "total_cves": 2206,
+  "last_updated": "2026-04-17",
+  "total_cves": 2208,
   "summary": {
     "critical": 424,
-    "high": 1229,
-    "medium": 510,
+    "high": 1230,
+    "medium": 511,
     "low": 43,
     "kev_count": 26
   },
@@ -9355,6 +9355,27 @@
       "kev_ransomware_use": null,
       "vendor": "adobe",
       "product": "acrobat"
+    },
+    {
+      "cve_id": "CVE-2026-34622",
+      "published_date": "2026-04-14",
+      "last_modified_date": "2026-04-16",
+      "description": "Acrobat Reader versions 26.001.21411, 24.001.30360, 24.001.30362 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+      "base_score": 8.6,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected_version_start": "24.0.0",
+      "affected_version_start_type": "including",
+      "affected_version_end": "24.001.30365",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "24.001.30365",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "adobe",
+      "product": "acrobat_reader_dc"
     },
     {
       "cve_id": "CVE-2026-27220",
@@ -34723,6 +34744,27 @@
       "kev_ransomware_use": null,
       "vendor": "adobe",
       "product": "acrobat_reader"
+    },
+    {
+      "cve_id": "CVE-2026-34626",
+      "published_date": "2026-04-14",
+      "last_modified_date": "2026-04-16",
+      "description": "Acrobat Reader versions 26.001.21411, 24.001.30360, 24.001.30362 and earlier are affected by an Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution') vulnerability that could result in arbitrary file system read in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
+      "base_score": 6.3,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+      "affected_version_start": "24.0.0",
+      "affected_version_start_type": "including",
+      "affected_version_end": "24.001.30365",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "24.001.30365",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "adobe",
+      "product": "acrobat_reader_dc"
     },
     {
       "cve_id": "CVE-2026-27221",

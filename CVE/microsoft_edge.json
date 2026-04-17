@@ -1,12 +1,12 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-04-16",
-  "total_cves": 955,
+  "last_updated": "2026-04-17",
+  "total_cves": 956,
   "summary": {
     "critical": 17,
     "high": 591,
-    "medium": 323,
+    "medium": 324,
     "low": 24,
     "kev_count": 18
   },
@@ -12820,6 +12820,27 @@
       "kev_ransomware_use": null,
       "vendor": "microsoft",
       "product": "edge"
+    },
+    {
+      "cve_id": "CVE-2026-33118",
+      "published_date": "2026-04-10",
+      "last_modified_date": "2026-04-16",
+      "description": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "base_score": 4.3,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "147.0.3912.60",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "147.0.3912.60",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "microsoft",
+      "product": "edge_chromium"
     },
     {
       "cve_id": "CVE-2026-33119",
