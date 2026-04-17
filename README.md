@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1247-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -427,33 +427,48 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-16 00:53 UTC*
+*Last checked: 2026-04-17 00:53 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 150.0b9 | 150.0b10 |
-| Fathom | 1.42.6 | 3.0.0 |
-| ChatWise | 26.4.5 | 26.4.6 |
-| Spotify | 1.2.86.502 | 1.2.87.414 |
-| Zed | 0.231.2 | 0.232.2 |
-| Windsurf | 1.9600.41 | 2.0.44 |
-| FreeCAD | 1.1.0 | 1.1.1 |
-| OneDrive | 26.040.0301.0001 | 26.051.0316.0004 |
-| JetBrains Toolbox | 3.4.2 | 3.4.3 |
-| FontBase | 2026.3.0 | 2026.4.1 |
-| Typeface | 4.2.3 | 4.3.0 |
+| SketchUp | 2026.1.253.80 | 2026.1.257.82 |
+| Proton Pass | 1.36.0 | 1.36.1 |
+| Syncovery | 11.14.4 | 11.14.6 |
+| Dockside | 2.6.0 | 2.6.1 |
+| Wave Terminal | 0.14.4 | 0.14.5 |
+| ChatWise | 26.4.6 | 26.4.7 |
+| Lens | 2026.3.251250 | 2026.4.151333 |
+| Google Chrome | 147.0.7727.56 | 147.0.7727.102 |
+| Parallels Desktop | 26.3.0-57392 | 26.3.1-57396 |
+| Brave | 1.89.132.0 | 1.89.137.0 |
+| Google Drive | 123.0.1 | 124.0.3 |
+| macFUSE | 5.1.3 | 5.2.0 |
+| Microsoft Edge | 147.0.3912.60 | 147.0.3912.72 |
+| Keka | 1.6.1 | 1.6.3 |
+| Windsurf | 2.0.44 | 2.0.50 |
+| Opera | 130.0.5847.12 | 130.0.5847.41 |
+| HTTP Toolkit | 1.25.1 | 1.25.2 |
+| Milanote | 3.18.91 | 3.18.92 |
+| Stremio | 5.1.18 | 5.1.19 |
+| Deezer | 7.1.150 | 7.1.160 |
+| Opera GX | 129.0.5823.70 | 130.0.5847.58 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Akiflow | 2.71.7 | 2.71.8 |
-| Connect Fonts | 28.1.1 | 28.1.2 |
-| DevKnife | 1.12.1 | 1.12.2 |
-| KiCad | 10.0.0 | 10.0.1 |
-| Loupdeck | 6.2.4.228 | 6.3.0.340 |
+| Adobe DNG Converter | 18.2.2 | 18.3 |
+| Akiflow | 2.71.8 | 2.71.10 |
+| Granola | 7.128.0 | 7.140.1 |
+| MEGAsync | 6.2.1.0 | 6.2.2.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Yubico Authenticator | 7.3.2 | 7.3.3 |
+| OpenAudible | 4.8 | 4.8.1 |
+| Pitch | 2.122.0 | 2.122.1 |
+| Egnyte | 1.15.0 | 1.16.0 |
+| ChatGPT Atlas | 1.2026.84.2 | 1.2026.98.2 |
+| Microsoft Auto Update | 4.82.26020434 | 4.83.26040910 |
+| Perimeter 81 | 12.7.0.8565 | 12.7.3.9355 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

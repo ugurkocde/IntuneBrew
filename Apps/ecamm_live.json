@@ -1,15 +1,15 @@
 {
   "name": "Ecamm Live",
   "description": "Live streaming & video production studio",
-  "version": "4.5.4",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/ecamm_live_4.5.4.pkg",
+  "version": "4.5.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/ecamm_live_4.5.5.pkg",
   "vendor_url": "https://downloads.ecamm.com/EcammLive.zip",
   "bundleId": "com.ecamm.EcammLive",
   "homepage": "https://www.ecamm.com/",
-  "fileName": "ecamm_live_4.5.4.pkg",
+  "fileName": "ecamm_live_4.5.5.pkg",
   "type": "app",
-  "sha": "08ec580c51bb6f21bf5e6442a8119f45a282aee4b38567553d6e4d2a271d8854",
+  "sha": "132ae7653f8f34c50418c2d099c95634656737f1398cc42573e04b60045ed488",
   "category": "Media",
   "publisher": "Ecamm Network, LLC",
-  "previous_version": "4.5.4"
+  "previous_version": "4.5.5"
 }

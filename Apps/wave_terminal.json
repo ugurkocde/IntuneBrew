@@ -1,13 +1,13 @@
 {
   "name": "Wave Terminal",
   "description": "Terminal emulator",
-  "version": "0.14.4",
-  "url": "https://dl.waveterm.dev/releases-w2/Wave-darwin-arm64-0.14.4.dmg",
+  "version": "0.14.5",
+  "url": "https://dl.waveterm.dev/releases-w2/Wave-darwin-arm64-0.14.5.dmg",
   "vendor_url": "https://dl.waveterm.dev/releases-w2/Wave-darwin-arm64-0.14.4.dmg",
   "bundleId": "dev.commandline.waveterm",
   "homepage": "https://www.waveterm.dev/",
-  "fileName": "Wave-darwin-arm64-0.14.4.dmg",
-  "sha": "2ffe22e7ba6930ddd229c84eec606bb76693a34c4b10905fab6139f38f7fc419",
+  "fileName": "Wave-darwin-arm64-0.14.5.dmg",
+  "sha": "8d72ae31bd2c3a81356d55ec86e70ea284a65bde117b52834529da3e2e40ff39",
   "category": "Developer Tools",
   "publisher": "Wave Terminal",
   "previous_version": "0.14.4"

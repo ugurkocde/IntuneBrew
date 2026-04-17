@@ -1,14 +1,14 @@
 {
   "name": "Perimeter 81",
   "description": "Zero trust network as a service client",
-  "version": "12.7.0.8565",
-  "url": "https://static.perimeter81.com/agents/mac/Harmony_SASE_12.7.0.8565.pkg",
+  "version": "12.7.3.9355",
+  "url": "https://static.perimeter81.com/agents/mac/Harmony_SASE_12.7.3.9355.pkg",
   "vendor_url": "https://static.perimeter81.com/agents/mac/Harmony_SASE_12.7.0.8565.pkg",
   "bundleId": "com.safervpn.osx.smb",
   "homepage": "https://perimeter81.com/",
-  "fileName": "Harmony_SASE_12.7.0.8565.pkg",
+  "fileName": "Harmony_SASE_12.7.3.9355.pkg",
   "type": "pkg",
-  "sha": "d19e49c17e977ada6b7289f46eace521f3f82d57d672d9b6f648ae1535f1a209",
+  "sha": "2ce49f438bcf81a4c361147f455952e8b54bc9d510422ca79dfe0a6aac54a944",
   "category": "Security",
   "publisher": "Perimeter 81",
   "previous_version": "12.7.0.8565"
