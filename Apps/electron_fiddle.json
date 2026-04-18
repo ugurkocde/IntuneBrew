@@ -8,7 +8,7 @@
   "homepage": "https://www.electronjs.org/fiddle",
   "fileName": "electron_fiddle_0.39.0.pkg",
   "type": "app",
-  "sha": "2460f18ed6a25f0bc17ccfeed4d739215b393a13e912b06b8efa5ad5cd82c8ab",
+  "sha": "a37caee56ede0d7942787ebc444bba6642a9596f7fccf25f4730b3036a2011b9",
   "category": "Developer Tools",
   "publisher": "Electron",
   "previous_version": "0.39.0"

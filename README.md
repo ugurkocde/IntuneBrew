@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1247-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -428,47 +428,40 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-17 00:53 UTC*
+*Last checked: 2026-04-18 00:47 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.3 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| SketchUp | 2026.1.253.80 | 2026.1.257.82 |
-| Proton Pass | 1.36.0 | 1.36.1 |
-| Syncovery | 11.14.4 | 11.14.6 |
-| Dockside | 2.6.0 | 2.6.1 |
-| Wave Terminal | 0.14.4 | 0.14.5 |
-| ChatWise | 26.4.6 | 26.4.7 |
-| Lens | 2026.3.251250 | 2026.4.151333 |
-| Google Chrome | 147.0.7727.56 | 147.0.7727.102 |
-| Parallels Desktop | 26.3.0-57392 | 26.3.1-57396 |
-| Brave | 1.89.132.0 | 1.89.137.0 |
-| Google Drive | 123.0.1 | 124.0.3 |
-| macFUSE | 5.1.3 | 5.2.0 |
-| Microsoft Edge | 147.0.3912.60 | 147.0.3912.72 |
-| Keka | 1.6.1 | 1.6.3 |
-| Windsurf | 2.0.44 | 2.0.50 |
-| Opera | 130.0.5847.12 | 130.0.5847.41 |
-| HTTP Toolkit | 1.25.1 | 1.25.2 |
-| Milanote | 3.18.91 | 3.18.92 |
-| Stremio | 5.1.18 | 5.1.19 |
-| Deezer | 7.1.150 | 7.1.160 |
-| Opera GX | 129.0.5823.70 | 130.0.5847.58 |
+| Rive | 0.8.4602 | 0.8.4630 |
+| Raindrop.io | 5.7.6 | 5.7.7 |
+| Bambu Studio | 02.05.03.61 | 02.06.00.51 |
+| DockDoor | 1.34.1 | 1.35.1 |
+| ChatWise | 26.4.7 | 26.4.8 |
+| ChatGPT | 1.2026.051 | 1.2026.097 |
+| IINA | 1.4.1 | 1.4.2 |
+| LM Studio | 0.4.11 | 0.4.12 |
+| Warp | 0.2026.04.08.08.36.stable | 0.2026.04.15.08.45.stable |
+| Movist Pro | 2.15.1 | 2.15.3 |
+| ocenaudio | 3.17.3 | 3.18.0 |
+| Ungoogled Chromium | 146.0.7680.177-1.1 | 147.0.7727.55-1.1 |
 | Caffeine | 1.6.3 | 1.1.4 |
-| Adobe DNG Converter | 18.2.2 | 18.3 |
-| Akiflow | 2.71.8 | 2.71.10 |
-| Granola | 7.128.0 | 7.140.1 |
-| MEGAsync | 6.2.1.0 | 6.2.2.0 |
+| Douyin | 7.6.0 | 7.7.0 |
+| Akiflow | 2.71.10 | 2.71.11 |
+| Beaver Notes | 4.3.0 | 4.4.0 |
+| Fellow | 5.3.1 | 5.3.2 |
+| Integrity | 12.11.3 | 12.12.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| OpenAudible | 4.8 | 4.8.1 |
-| Pitch | 2.122.0 | 2.122.1 |
-| Egnyte | 1.15.0 | 1.16.0 |
-| ChatGPT Atlas | 1.2026.84.2 | 1.2026.98.2 |
-| Microsoft Auto Update | 4.82.26020434 | 4.83.26040910 |
-| Perimeter 81 | 12.7.0.8565 | 12.7.3.9355 |
+| Pitch | 2.122.1 | 2.122.2 |
+| Shapr3D | 26.50.0.10685 | 26.51.0.10768 |
+| Unity Hub | 3.17.1 | 3.17.2 |
+| Claude Code | 2.1.92 | 2.1.98 |
+| kiro | 0.11.131 | 0.11.132 |
+| NordVPN | 10.0.3 | 10.0.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

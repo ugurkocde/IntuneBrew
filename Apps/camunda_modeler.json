@@ -1,15 +1,15 @@
 {
   "name": "Camunda Modeler",
   "description": "Workflow and Decision Automation Platform",
-  "version": "5.46.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/camunda_modeler_5.46.0.pkg",
+  "version": "5.46.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/camunda_modeler_5.46.1.pkg",
   "vendor_url": "https://downloads.camunda.cloud/release/camunda-modeler/5.46.0/camunda-modeler-5.46.0-mac-arm64.zip",
   "bundleId": "com.camunda.CamundaModeler",
   "homepage": "https://camunda.com/",
-  "fileName": "camunda_modeler_5.46.0.pkg",
+  "fileName": "camunda_modeler_5.46.1.pkg",
   "type": "app",
-  "sha": "9491f7ee962e8a10dc450dac74292275600a98cb90620d3bf13bffd600b37b9b",
+  "sha": "5afa29bb7e8dc55bec93f5224af748c05a387e95fb02cc68fe257c5662724f01",
   "category": "Developer Tools",
   "publisher": "Camunda Services GmbH",
-  "previous_version": "5.46.0"
+  "previous_version": "5.46.1"
 }
