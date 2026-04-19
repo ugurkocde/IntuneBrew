@@ -31,6 +31,14 @@ if [ -f "/Applications/cmux.app/cmux.app/Contents/Resources/bin/cmux" ]; then
     rm -f "/Applications/cmux.app/cmux.app/Contents/Resources/bin/cmux" 2>/dev/null || true
 fi
 
+# Remove $HOME/.config/cmux
+echo "Removing $HOME/.config/cmux..."
+if [ -d "$HOME/.config/cmux" ]; then
+    rm -rf "$HOME/.config/cmux" 2>/dev/null || true
+elif [ -f "$HOME/.config/cmux" ]; then
+    rm -f "$HOME/.config/cmux" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/cmux
 echo "Removing $HOME/Library/Application Support/cmux..."
 if [ -d "$HOME/Library/Application Support/cmux" ]; then
@@ -63,12 +71,36 @@ elif [ -f "$HOME/Library/Caches/com.cmuxterm.app" ]; then
     rm -f "$HOME/Library/Caches/com.cmuxterm.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/SentryCrash/cmux
+echo "Removing $HOME/Library/Caches/SentryCrash/cmux..."
+if [ -d "$HOME/Library/Caches/SentryCrash/cmux" ]; then
+    rm -rf "$HOME/Library/Caches/SentryCrash/cmux" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/SentryCrash/cmux" ]; then
+    rm -f "$HOME/Library/Caches/SentryCrash/cmux" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.cmuxterm.app
 echo "Removing $HOME/Library/HTTPStorages/com.cmuxterm.app..."
 if [ -d "$HOME/Library/HTTPStorages/com.cmuxterm.app" ]; then
     rm -rf "$HOME/Library/HTTPStorages/com.cmuxterm.app" 2>/dev/null || true
 elif [ -f "$HOME/Library/HTTPStorages/com.cmuxterm.app" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.cmuxterm.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.cmuxterm.app.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/com.cmuxterm.app.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/com.cmuxterm.app.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.cmuxterm.app.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.cmuxterm.app.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.cmuxterm.app.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/cmux-update.log
+echo "Removing $HOME/Library/Logs/cmux-update.log..."
+if [ -d "$HOME/Library/Logs/cmux-update.log" ]; then
+    rm -rf "$HOME/Library/Logs/cmux-update.log" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/cmux-update.log" ]; then
+    rm -f "$HOME/Library/Logs/cmux-update.log" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.cmuxterm.app.plist
