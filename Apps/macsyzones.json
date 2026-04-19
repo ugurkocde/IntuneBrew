@@ -1,15 +1,15 @@
 {
   "name": "MacsyZones",
   "description": "Window management utility",
-  "version": "2.2.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/macsyzones_2.2.3.pkg",
+  "version": "2.2.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/macsyzones_2.2.5.pkg",
   "vendor_url": "https://github.com/rohanrhu/MacsyZones/releases/download/v2.2.2/MacsyZones.zip",
   "bundleId": "com.macsyzones.MacsyZones",
   "homepage": "https://macsyzones.com/",
-  "fileName": "macsyzones_2.2.3.pkg",
+  "fileName": "macsyzones_2.2.5.pkg",
   "type": "app",
-  "sha": "82dff5e6e7534bb084d50c3fc39fedad15360cb5f09bab24a33aca83f825665f",
+  "sha": "1f666b3d0a97cbe73c3a55e15fc022c717f7f45942494637a4e6ac8f39d125a5",
   "category": "Utilities",
   "publisher": "MacsyZones",
-  "previous_version": "2.2.3"
+  "previous_version": "2.2.5"
 }

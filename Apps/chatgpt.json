@@ -1,13 +1,13 @@
 {
   "name": "ChatGPT",
   "description": "OpenAI's official ChatGPT desktop app",
-  "version": "1.2026.097",
-  "url": "https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_1.2026.097_1776384809.dmg",
+  "version": "1.2026.098",
+  "url": "https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_1.2026.098_1776453807.dmg",
   "vendor_url": "https://persistent.oaistatic.com/sidekick/public/ChatGPT_Desktop_public_1.2026.051_1775834670.dmg",
   "bundleId": "com.openai.chat",
   "homepage": "https://chatgpt.com/",
-  "fileName": "ChatGPT_Desktop_public_1.2026.097_1776384809.dmg",
-  "sha": "2a19ad707ece5f2094f65b7c48c728901a78ef6d7842264f39d652c37c928baa",
+  "fileName": "ChatGPT_Desktop_public_1.2026.098_1776453807.dmg",
+  "sha": "87883fbc5761f55114a658432c0f3a3c83edd9104bb8524ebcf04ae229dff798",
   "changelog": "https://help.openai.com/en/articles/9703738-macos-app-release-notes",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:26:17Z",
@@ -21,5 +21,5 @@
   },
   "category": "Productivity",
   "publisher": "OpenAI",
-  "previous_version": "1.2026.051"
+  "previous_version": "1.2026.097"
 }
