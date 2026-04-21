@@ -4,7 +4,7 @@
   "version": "2.10.1",
   "url": "https://updates.boltai.com/dmg/BoltAI-2.10.1.dmg",
   "vendor_url": "https://updates.boltai.com/dmg/BoltAI-2.9.2.dmg",
-  "bundleId": null,
+  "bundleId": "co.podzim.boltai-mobile",
   "homepage": "https://boltai.com/",
   "fileName": "BoltAI-2.10.1.dmg",
   "sha": "7ef2e17dc63b1e94352ee9632309f1f6d2ca486f282cf21e6990ba4094a80429",
