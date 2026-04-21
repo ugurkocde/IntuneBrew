@@ -1,13 +1,13 @@
 {
   "name": "Dataflare",
   "description": "Database manager",
-  "version": "2.9.6",
-  "url": "https://assets.dataflare.app/release/darwin/aarch64/Dataflare-2.9.6.dmg",
+  "version": "2.10.1",
+  "url": "https://assets.dataflare.app/release/darwin/aarch64/Dataflare-2.10.1.dmg",
   "vendor_url": "https://assets.dataflare.app/release/darwin/aarch64/Dataflare-2.9.6.dmg",
   "bundleId": "app.dataflare.desktop",
   "homepage": "https://dataflare.app/",
-  "fileName": "Dataflare-2.9.6.dmg",
-  "sha": "038f8efc398db2bfd6c6b0c50fe5d1ab2db01344ddc9de27bfb999798cfa54bd",
+  "fileName": "Dataflare-2.10.1.dmg",
+  "sha": "d0ad5e9b9844968daa8fb9f6131cdf069eeac8623e4b70a96805892d45f91514",
   "changelog": "https://dataflare.app/changelog",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:24:59Z",

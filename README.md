@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1248-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -432,22 +432,38 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-20 00:51 UTC*
+*Last checked: 2026-04-21 00:54 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Caffeine | 1.6.3 | 1.1.4 |
+| Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| ChatWise | 26.4.10 | 26.4.11 |
-| DBeaver Community Edition | 26.0.2 | 26.0.3 |
-| GIMP | 3.2.2 | 3.2.4 |
-| Stats | 2.12.9 | 2.12.11 |
-| Ferdium | 7.1.1 | 7.1.2 |
-| Quicksilver | 2.5.9 | 2.6.0 |
-| Caffeine | 1.6.3 | 1.1.4 |
+| Studio 3T | 2026.7.0 | 2026.8.0 |
+| ChatWise | 26.4.11 | 26.4.12 |
+| CotEditor | 6.2.6 | 7.0.0 |
+| Redis Insight | 3.4.0 | 3.4.1 |
+| OrbStack | 2.0.5 | 2.1.1 |
+| ChatGPT | 1.2026.098 | 1.2026.099 |
+| Discord | 0.0.385 | 0.0.386 |
+| DuckDuckGo | 1.184.1 | 1.186.1 |
+| Zed | 0.232.2 | 0.232.3 |
+| BoltAI 2 | 2.10.0 | 2.10.1 |
+| Dataflare | 2.9.6 | 2.10.1 |
+| Craft | 3.3.12 | 3.4.0 |
+| One Switch | 1.35.2 | 1.35.4 |
+| Caffeine | 1.6.4 | 1.1.4 |
+| Akiflow | 2.71.11 | 2.71.12 |
+| Loom | 0.344.0 | 0.345.1 |
 | Multi | 0.538.2 | 3.0.2 |
+| Notesnook | 3.3.14 | 3.3.15 |
+| Proton Mail Bridge | 3.23.1 | 3.24.1 |
+| Riverside Studio | 1.22.1 | 1.23.0 |
+| Tuta Mail | 340.260326.1 | 341.260417.0 |
+| Box Drive | 2.51.230 | 2.51.233 |
+| Perimeter 81 | 12.7.3.9355 | 12.7.4.9577 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
