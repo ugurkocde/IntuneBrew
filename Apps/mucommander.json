@@ -1,13 +1,13 @@
 {
   "name": "muCommander",
   "description": "File manager with a dual-pane interface",
-  "version": "1.6.0-1",
-  "url": "https://github.com/mucommander/mucommander/releases/download/1.6.0-1/muCommander-1.6.0-1-aarch64.dmg",
+  "version": "1.6.1-1",
+  "url": "https://github.com/mucommander/mucommander/releases/download/1.6.1-1/muCommander-1.6.1-1-aarch64.dmg",
   "vendor_url": "https://github.com/mucommander/mucommander/releases/download/1.6.0-1/muCommander-1.6.0-1-aarch64.dmg",
   "bundleId": "com.mucommander.muCommander",
   "homepage": "https://www.mucommander.com/",
-  "fileName": "muCommander-1.6.0-1-aarch64.dmg",
-  "sha": "d3946a00a800c311580cd2088d2861c75de5db0519e9939dfa669d3538f14ddd",
+  "fileName": "muCommander-1.6.1-1-aarch64.dmg",
+  "sha": "1bf4ef5957aec0bbac1e170862929f8e6340c47170048dc2a8150c8703149b64",
   "category": "Utilities",
   "publisher": "muCommander",
   "previous_version": "1.6.0-1"

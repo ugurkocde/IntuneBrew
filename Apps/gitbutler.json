@@ -1,15 +1,15 @@
 {
   "name": "GitButler",
   "description": "Git client for simultaneous branches on top of your existing workflow",
-  "version": "0.19.8",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/gitbutler_0.19.8.pkg",
+  "version": "0.19.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/gitbutler_0.19.9.pkg",
   "vendor_url": "https://releases.gitbutler.com/releases/release/0.19.7-2956/macos/aarch64/GitButler.app.tar.gz",
   "bundleId": "com.gitbutler.app",
   "homepage": "https://gitbutler.com/",
-  "fileName": "gitbutler_0.19.8.pkg",
+  "fileName": "gitbutler_0.19.9.pkg",
   "type": "app",
-  "previous_version": "0.19.8",
-  "sha": "56d3f809e373c8ad3a8559be6ba11af5dcbd0fbacd4be83cd6f5b9998c25f0c8",
+  "previous_version": "0.19.9",
+  "sha": "863ecd1a4b5808c3469e6179ac5e1a241711def2de6ec925c0fa4322cbeaaf65",
   "category": "Developer Tools",
   "publisher": "GitButler"
 }
