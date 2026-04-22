@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-04-21",
+  "last_updated": "2026-04-22",
   "total_cves": 3083,
   "summary": {
     "critical": 385,
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2010-3765",
       "published_date": "2010-10-28",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "Mozilla Firefox 3.5.x through 3.5.14 and 3.6.x through 3.6.11, Thunderbird 3.1.6 before 3.1.6 and 3.0.x before 3.0.10, and SeaMonkey 2.x before 2.0.10, when JavaScript is enabled, allows remote attackers to execute arbitrary code via vectors related to nsCSSFrameConstructor::ContentAppended, the appendChild method, incorrect index tracking, and the creation of multiple frames, which triggers memory corruption, as exploited in the wild in October 2010 by the Belmoo malware.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2015-4495",
       "published_date": "2015-08-08",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "The PDF reader in Mozilla Firefox before 39.0.3, Firefox ESR 38.x before 38.1.1, and Firefox OS before 2.2 allows remote attackers to bypass the Same Origin Policy, and read arbitrary files or gain privileges, via vectors involving crafted JavaScript code and a native setter, as exploited in the wild in August 2015.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2013-1690",
       "published_date": "2013-06-26",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "Mozilla Firefox before 22.0, Firefox ESR 17.x before 17.0.7, Thunderbird before 17.0.7, and Thunderbird ESR 17.x before 17.0.7 do not properly handle onreadystatechange events in conjunction with page reloading, which allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted web site that triggers an attempt to execute data at an unmapped memory location.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -308,7 +308,7 @@
     {
       "cve_id": "CVE-2013-1675",
       "published_date": "2013-05-16",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "Mozilla Firefox before 21.0, Firefox ESR 17.x before 17.0.6, Thunderbird before 17.0.6, and Thunderbird ESR 17.x before 17.0.6 do not properly initialize data structures for the nsDOMSVGZoomEvent::mPreviousScale and nsDOMSVGZoomEvent::mNewScale functions, which allows remote attackers to obtain sensitive information from process memory via a crafted web site.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -1337,8 +1337,8 @@
     {
       "cve_id": "CVE-2026-2781",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-04-13",
-      "description": "Integer overflow in the Libraries component in NSS. This vulnerability was fixed in Firefox 148, Firefox ESR 140.8, Thunderbird 148, and Thunderbird 140.8.",
+      "last_modified_date": "2026-04-21",
+      "description": "Integer overflow in the Libraries component in NSS. This vulnerability was fixed in Firefox 148, Firefox ESR 140.8, Thunderbird 148, Thunderbird 140.8, and Firefox ESR 115.35.",
       "base_score": 9.8,
       "severity": "CRITICAL",
       "cvss_version": "3.1",

@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-04-21",
+  "last_updated": "2026-04-22",
   "total_cves": 956,
   "summary": {
     "critical": 17,
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2015-0313",
       "published_date": "2015-02-02",
-      "last_modified_date": "2025-11-17",
+      "last_modified_date": "2026-04-21",
       "description": "Use-after-free vulnerability in Adobe Flash Player before 13.0.0.269 and 14.x through 16.x before 16.0.0.305 on Windows and OS X and before 11.2.202.442 on Linux allows remote attackers to execute arbitrary code via unspecified vectors, as exploited in the wild in February 2015, a different vulnerability than CVE-2015-0315, CVE-2015-0320, and CVE-2015-0322.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2015-0311",
       "published_date": "2015-01-23",
-      "last_modified_date": "2025-11-17",
+      "last_modified_date": "2026-04-21",
       "description": "Unspecified vulnerability in Adobe Flash Player through 13.0.0.262 and 14.x, 15.x, and 16.x through 16.0.0.287 on Windows and OS X and through 11.2.202.438 on Linux allows remote attackers to execute arbitrary code via unknown vectors, as exploited in the wild in January 2015.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2017-0037",
       "published_date": "2017-02-26",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "Microsoft Internet Explorer 10 and 11 and Microsoft Edge have a type confusion issue in the Layout::MultiColumnBoxBuilder::HandleColumnBreakOnColumnSpanningElement function in mshtml.dll, which allows remote attackers to execute arbitrary code via vectors involving a crafted Cascading Style Sheets (CSS) token sequence and crafted JavaScript code that operates on a TH element.",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -308,7 +308,7 @@
     {
       "cve_id": "CVE-2016-7200",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "The Chakra JavaScript scripting engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7201, CVE-2016-7202, CVE-2016-7203, CVE-2016-7208, CVE-2016-7240, CVE-2016-7242, and CVE-2016-7243.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2016-7201",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "The Chakra JavaScript scripting engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7200, CVE-2016-7202, CVE-2016-7203, CVE-2016-7208, CVE-2016-7240, CVE-2016-7242, and CVE-2016-7243.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -371,7 +371,7 @@
     {
       "cve_id": "CVE-2016-3351",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to obtain sensitive information via a crafted web site, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 6.5,
       "severity": "MEDIUM",

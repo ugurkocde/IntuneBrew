@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-04-21",
+  "last_updated": "2026-04-22",
   "total_cves": 3991,
   "summary": {
     "critical": 156,
@@ -308,7 +308,7 @@
     {
       "cve_id": "CVE-2014-0497",
       "published_date": "2014-02-05",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "Integer underflow in Adobe Flash Player before 11.7.700.261 and 11.8.x through 12.0.x before 12.0.0.44 on Windows and Mac OS X, and before 11.2.202.336 on Linux, allows remote attackers to execute arbitrary code via unspecified vectors.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -1316,7 +1316,7 @@
     {
       "cve_id": "CVE-2017-5070",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "Type confusion in V8 in Google Chrome prior to 59.0.3071.86 for Linux, Windows, and Mac, and 59.0.3071.92 for Android, allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1337,7 +1337,7 @@
     {
       "cve_id": "CVE-2017-5030",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "Incorrect handling of complex species in V8 in Google Chrome prior to 57.0.2987.98 for Linux, Windows, and Mac and 57.0.2987.108 for Android allowed a remote attacker to execute arbitrary code via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1358,7 +1358,7 @@
     {
       "cve_id": "CVE-2016-5198",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "V8 in Google Chrome prior to 54.0.2840.90 for Linux, and 54.0.2840.85 for Android, and 54.0.2840.87 for Windows and Mac included incorrect optimisation assumptions, which allowed a remote attacker to perform arbitrary read/write operations, leading to code execution, via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1379,7 +1379,7 @@
     {
       "cve_id": "CVE-2016-1646",
       "published_date": "2016-03-29",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "The Array.prototype.concat implementation in builtins.cc in Google V8, as used in Google Chrome before 49.0.2623.108, does not properly consider element data types, which allows remote attackers to cause a denial of service (out-of-bounds read) or possibly have unspecified other impact via crafted JavaScript code.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1400,7 +1400,7 @@
     {
       "cve_id": "CVE-2011-0611",
       "published_date": "2011-04-13",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "Adobe Flash Player before 10.2.154.27 on Windows, Mac OS X, Linux, and Solaris and 10.2.156.12 and earlier on Android; Adobe AIR before 2.6.19140; and Authplay.dll (aka AuthPlayLib.bundle) in Adobe Reader 9.x before 9.4.4 and 10.x through 10.0.1 on Windows, Adobe Reader 9.x before 9.4.4 and 10.x before 10.0.3 on Mac OS X, and Adobe Acrobat 9.x before 9.4.4 and 10.x before 10.0.3 on Windows and Mac OS X allow remote attackers to execute arbitrary code or cause a denial of service (application crash) via crafted Flash content; as demonstrated by a Microsoft Office document with an embedded .swf file that has a size inconsistency in a \"group of included constants,\" object type confusion, ActionScript that adds custom functions to prototypes, and Date objects; and as exploited in the wild in April 2011.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1421,7 +1421,7 @@
     {
       "cve_id": "CVE-2011-0609",
       "published_date": "2011-03-15",
-      "last_modified_date": "2025-10-22",
+      "last_modified_date": "2026-04-21",
       "description": "Unspecified vulnerability in Adobe Flash Player 10.2.154.13 and earlier on Windows, Mac OS X, Linux, and Solaris; 10.1.106.16 and earlier on Android; Adobe AIR 2.5.1 and earlier; and Authplay.dll (aka AuthPlayLib.bundle) in Adobe Reader and Acrobat 9.x through 9.4.2 and 10.x through 10.0.1 on Windows and Mac OS X, allows remote attackers to execute arbitrary code or cause a denial of service (application crash) via crafted Flash content, as demonstrated by a .swf file embedded in an Excel spreadsheet, and as exploited in the wild in March 2011.",
       "base_score": 7.8,
       "severity": "HIGH",
