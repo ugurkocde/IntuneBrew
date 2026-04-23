@@ -1,14 +1,14 @@
 {
   "name": "Tableau Public",
   "description": "Explore, create and publicly share data visualisations online",
-  "version": "2026.1.0",
-  "url": "https://downloads.tableau.com/esdalt/2026.1.0/TableauPublic-2026-1-0-arm64.pkg",
+  "version": "2026.1.1",
+  "url": "https://downloads.tableau.com/esdalt/2026.1.1/TableauPublic-2026-1-1-arm64.pkg",
   "vendor_url": "https://downloads.tableau.com/esdalt/2026.1.0/TableauPublic-2026-1-0-arm64.pkg",
   "bundleId": "com.tableausoftware.tableaupublic",
   "homepage": "https://public.tableau.com/s/",
-  "fileName": "TableauPublic-2026-1-0-arm64.pkg",
+  "fileName": "TableauPublic-2026-1-1-arm64.pkg",
   "type": "pkg",
-  "sha": "ca508b343f5f6365668e14eb7ee44ad951226e0c80de6942ac75d383d518bcf4",
+  "sha": "7463aa0a17f3ee1b85def74b526e40bfd3b16de5b56466cbfc893067714568ca",
   "category": "Design",
   "publisher": "Tableau Software",
   "previous_version": "2026.1.0"

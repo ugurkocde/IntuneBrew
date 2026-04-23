@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1248-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -434,63 +434,51 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-22 00:53 UTC*
+*Last checked: 2026-04-23 01:10 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox ESR | 140.9.1 | 140.10.0 |
-| MarkEdit | 1.31.1 | 1.32.0 |
-| Dockside | 2.6.2 | 2.6.3 |
-| DockDoor | 1.35.1 | 1.36 |
-| Trae | 2.3.19583 | 2.3.20623 |
-| WeChat for Mac | 4.1.8.106 | 4.1.9.26 |
-| LibreWolf | 149.0.2 | 150.0 |
-| Mozilla Firefox | 149.0.2 | 150.0 |
-| Grammarly Desktop | 1.161.1.0 | 1.162.2.0 |
-| XMind | 26.02.04171-202602092224 | 26.03.04126-202604200306 |
-| Android Studio | 2025.3.3.7 | 2025.3.4.6 |
-| ChatGPT | 1.2026.099 | 1.2026.104 |
-| Discord | 0.0.386 | 0.0.387 |
-| Oracle VirtualBox | 7.2.6 | 7.2.8 |
-| OBS | 32.1.1 | 32.1.2 |
-| Microsoft Office | 16.108.26041219 | 16.108.26041915 |
-| Windsurf | 2.0.61 | 2.0.63 |
-| OneDrive | 26.051.0316.0004 | 26.055.0323.0004 |
-| OnyX | 4.9.8 | 4.9.9 |
-| Dataflare | 2.10.1 | 2.10.2 |
-| DeepL | 26.4.14340455 | 26.4.24484530 |
-| Charles | 5.0.3 | 5.1 |
-| Mullvad Browser | 15.0.9 | 15.0.10 |
-| Tor Browser | 15.0.9 | 15.0.10 |
-| Biscuit | 1.2.39 | 2.0.0 |
-| muCommander | 1.6.0-1 | 1.6.1-1 |
+| Rive | 0.8.4630 | 0.8.4666 |
+| Dockside | 2.6.3 | 2.6.4 |
+| Mozilla Thunderbird | 149.0.2 | 150.0 |
+| QSpace Pro | 6.1.4 | 6.2.2 |
+| Proton Drive | 2.10.3 | 2.11.4 |
+| Redis Insight | 3.4.1 | 3.4.2 |
+| Microsoft Teams | 26072.605.4546.510 | 26072.608.4595.8484 |
+| Webex | 46.4.0.34620 | 46.4.0.34752 |
+| MongoDB Compass | 1.49.4 | 1.49.5 |
+| Notion | 7.11.0 | 7.12.0 |
+| Brave | 1.89.137.0 | 1.89.141.0 |
+| AWS Corretto JDK | 21.0.10.7.1 | 21.0.11.10.1 |
+| Raycast | 1.104.12 | 1.104.13 |
+| Azul Zulu Java Standard Edition Development Kit | 26.0.0 | 26.0.1 |
+| Bruno | 3.2.2 | 3.3.0 |
+| Zed | 0.232.3 | 0.233.5 |
+| Windsurf | 2.0.63 | 2.0.67 |
+| Opera | 130.0.5847.41 | 130.0.5847.82 |
+| DbGate | 7.1.8 | 7.1.9 |
+| Lark | 7.65.9 | 7.66.6 |
+| Milanote | 3.18.92 | 3.18.93 |
+| Waterfox | 6.6.11 | 6.6.12 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| far2l | 2.7.0 | 2.8.0 |
-| Connect Fonts | 28.1.2 | 28.1.3 |
-| Granola | 7.140.1 | 7.147.1 |
+| ChatWork | 2.21.2 | 2.21.3 |
+| Connect Fonts | 28.1.3 | 28.1.4 |
+| DevKnife | 1.12.2 | 1.13.0 |
+| Loom | 0.345.1 | 0.345.3 |
 | Multi | 0.538.2 | 3.0.2 |
-| Pitch | 2.122.2 | 2.123.0 |
-| Shapr3D | 26.51.0.10768 | 26.60.0.10796 |
-| TickTick | 8.0.40 | 8.0.50 |
-| Timing | 2026.2 | 2026.3 |
-| TradingView Desktop | 2.14.0 | 3.1.0 |
-| Unity Hub | 3.17.2 | 3.17.3 |
-| WebCatalog | 74.2.0 | 74.4.0 |
-| Zotero | 9.0 | 9.0.1 |
-| Claude Code | 2.1.98 | 2.1.104 |
-| Morgen | 4.0.4 | 4.0.5 |
-| Microsoft Office BusinessPro | 16.108.26041219 | 16.108.26041915 |
-| Microsoft Excel | 16.108.26041219 | 16.108.26041915 |
-| Microsoft OneNote | 16.108.26041219 | 16.108.26041915 |
-| Microsoft Outlook | 16.108.26041219 | 16.108.26041915 |
-| Microsoft PowerPoint | 16.108.26041219 | 16.108.26041915 |
-| Microsoft Word | 16.108.26041219 | 16.108.26041915 |
-| Insta360 Link Controller | 2.2.1 | 2.2.2 |
-| Tableau Desktop | 2026.1.0 | 2026.1.1 |
+| TREZOR Suite | 26.3.3 | 26.4.2 |
+| Tuta Mail | 341.260417.0 | 345.260421.2 |
+| WebCatalog | 74.4.0 | 74.5.0 |
+| kiro | 0.11.132 | 0.11.133 |
+| Salesforce CLI | 2.130.9 | 2.131.7 |
+| Tableau Public | 2026.1.0 | 2026.1.1 |
+| Tableau Reader | 2026.1.0 | 2026.1.1 |
+| UniFi Identity Endpoint | 3.6.2 | 3.6.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

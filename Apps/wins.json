@@ -1,15 +1,15 @@
 {
   "name": "Wins",
   "description": "Window manager",
-  "version": "3.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/wins_3.2.pkg",
+  "version": "3.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/wins_3.3.pkg",
   "vendor_url": "https://winswebsite.s3.us-east-005.backblazeb2.com/Wins.zip",
   "bundleId": "cools.wins.main",
   "homepage": "https://wins.cool/",
-  "fileName": "wins_3.2.pkg",
+  "fileName": "wins_3.3.pkg",
   "type": "app",
-  "sha": "d39ad6c34cf5081fa83eaf1fe43ae2cb2e7698281e57cdeb618987952d26db1f",
+  "sha": "215e6c261a4e423e0b34fa270c304a25b5aec6ea201539b717bbc639ca51275e",
   "category": "Utilities",
   "publisher": "Wins",
-  "previous_version": "3.2"
+  "previous_version": "3.3"
 }

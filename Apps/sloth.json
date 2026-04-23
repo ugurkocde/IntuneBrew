@@ -1,15 +1,15 @@
 {
   "name": "Sloth",
   "description": "Displays all open files and sockets in use by all running processes",
-  "version": "3.5",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sloth_3.5.pkg",
+  "version": "3.6",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sloth_3.6.pkg",
   "vendor_url": "https://sveinbjorn.org/files/software/sloth/sloth-3.5.zip",
   "bundleId": "org.sveinbjorn.Sloth",
   "homepage": "https://sveinbjorn.org/sloth",
-  "fileName": "sloth_3.5.pkg",
+  "fileName": "sloth_3.6.pkg",
   "type": "app",
-  "sha": "95c1d74dba7a8b534164bd558ee7dd1981c1d56ae435972739635a6a7ec3ef32",
+  "sha": "311052fca85df0a6dc2e55c49964122d7a5243e5d6d189eb4e4ab50b2f8924dd",
   "category": "Developer Tools",
   "publisher": "Sveinbjorn Thordarson",
-  "previous_version": "3.5"
+  "previous_version": "3.6"
 }
