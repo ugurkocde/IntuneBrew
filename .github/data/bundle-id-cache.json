@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-04-23T01:28:55.476Z",
+  "last_full_scan": "2026-04-23T09:21:04.682Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8991,6 +8991,20 @@
         "openai_alternative"
       ],
       "name": "Morgen"
+    },
+    "dia": {
+      "last_checked": "2026-04-23T09:21:04.568Z",
+      "bundle_id": "company.thebrowser.dia",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Dia"
     }
   }
 }

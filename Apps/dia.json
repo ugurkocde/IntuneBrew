@@ -4,7 +4,7 @@
   "version": "1.27.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/dia_1.27.2.pkg",
   "vendor_url": "https://releases.diabrowser.com/release/Dia-1.27.2-79242.zip",
-  "bundleId": null,
+  "bundleId": "company.thebrowser.dia",
   "homepage": "https://www.diabrowser.com/",
   "fileName": "dia_1.27.2.pkg",
   "type": "app",
