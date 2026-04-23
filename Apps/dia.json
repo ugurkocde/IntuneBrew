@@ -8,5 +8,7 @@
   "homepage": "https://www.diabrowser.com/",
   "fileName": "dia_1.27.2.pkg",
   "type": "app",
-  "sha": "2684495fd54bfaab7d371efe0d9f4c7038934415271ad04fe3b757edd56360d5"
+  "sha": "2684495fd54bfaab7d371efe0d9f4c7038934415271ad04fe3b757edd56360d5",
+  "category": "Browsers",
+  "publisher": "Dia Browser"
 }
