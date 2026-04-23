@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Office",
   "app_key": "microsoft_office",
-  "last_updated": "2026-04-22",
+  "last_updated": "2026-04-23",
   "total_cves": 1072,
   "summary": {
     "critical": 13,
@@ -308,7 +308,7 @@
     {
       "cve_id": "CVE-2017-11882",
       "published_date": "2017-11-15",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Office 2007 Service Pack 3, Microsoft Office 2010 Service Pack 2, Microsoft Office 2013 Service Pack 1, and Microsoft Office 2016 allow an attacker to run arbitrary code in the context of the current user by failing to properly handle objects in memory, aka \"Microsoft Office Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11884.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2017-8570",
       "published_date": "2017-07-11",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Office allows a remote code execution vulnerability due to the way that it handles objects in memory, aka \"Microsoft Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-0243.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -350,7 +350,7 @@
     {
       "cve_id": "CVE-2017-0261",
       "published_date": "2017-05-12",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Office 2010 SP2, Office 2013 SP1, and Office 2016 allow a remote code execution vulnerability when the software fails to properly handle objects in memory, aka \"Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-0262 and CVE-2017-0281.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -371,7 +371,7 @@
     {
       "cve_id": "CVE-2017-0262",
       "published_date": "2017-05-12",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Office 2010 SP2, Office 2013 SP1, and Office 2016 allow a remote code execution vulnerability when the software fails to properly handle objects in memory, aka \"Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-0261 and CVE-2017-0281.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -392,7 +392,7 @@
     {
       "cve_id": "CVE-2017-0199",
       "published_date": "2017-04-12",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Office 2007 SP3, Microsoft Office 2010 SP2, Microsoft Office 2013 SP1, Microsoft Office 2016, Microsoft Windows Vista SP2, Windows Server 2008 SP2, Windows 7 SP1, Windows 8.1 allow remote attackers to execute arbitrary code via a crafted document, aka \"Microsoft Office/WordPad Remote Code Execution Vulnerability w/Windows API.\"",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -413,7 +413,7 @@
     {
       "cve_id": "CVE-2016-7193",
       "published_date": "2016-10-14",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Word 2007 SP2, Office 2010 SP2, Word 2013 SP1, Word 2013 RT SP1, Word 2016, Word for Mac 2011, Word 2016 for Mac, Office Compatibility Pack SP3, Word Viewer, Word Automation Services on SharePoint Server 2010 SP2, Word Automation Services on SharePoint Server 2013 SP1, Office Web Apps 2010 SP2, Office Web Apps Server 2013 SP1, and Office Online Server allow remote attackers to execute arbitrary code via a crafted RTF document, aka \"Microsoft Office Memory Corruption Vulnerability.\"",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -434,7 +434,7 @@
     {
       "cve_id": "CVE-2015-2545",
       "published_date": "2015-09-09",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Office 2007 SP3, 2010 SP2, 2013 SP1, and 2013 RT SP1 allows remote attackers to execute arbitrary code via a crafted EPS image, aka \"Microsoft Office Malformed EPS File Vulnerability.\"",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -455,7 +455,7 @@
     {
       "cve_id": "CVE-2015-1642",
       "published_date": "2015-08-15",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Office 2007 SP3, 2010 SP2, and 2013 SP1 allows remote attackers to execute arbitrary code via a crafted document, aka \"Microsoft Office Memory Corruption Vulnerability.\"",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -476,7 +476,7 @@
     {
       "cve_id": "CVE-2015-2424",
       "published_date": "2015-07-14",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft PowerPoint 2007 SP3, Word 2007 SP3, PowerPoint 2010 SP2, Word 2010 SP2, PowerPoint 2013 SP1, Word 2013 SP1, and PowerPoint 2013 RT SP1 allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted Office document, aka \"Microsoft Office Memory Corruption Vulnerability.\"",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -497,7 +497,7 @@
     {
       "cve_id": "CVE-2015-1770",
       "published_date": "2015-06-10",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Office 2013 SP1 and 2013 RT SP1 allows remote attackers to execute arbitrary code via a crafted Office document, aka \"Microsoft Office Uninitialized Memory Use Vulnerability.\"",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -518,7 +518,7 @@
     {
       "cve_id": "CVE-2015-1641",
       "published_date": "2015-04-14",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, Word 2013 SP1, Word 2013 RT SP1, Word for Mac 2011, Office Compatibility Pack SP3, Word Automation Services on SharePoint Server 2010 SP2 and 2013 SP1, and Office Web Apps Server 2010 SP2 and 2013 SP1 allow remote attackers to execute arbitrary code via a crafted RTF document, aka \"Microsoft Office Memory Corruption Vulnerability.\"",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -560,7 +560,7 @@
     {
       "cve_id": "CVE-2013-3906",
       "published_date": "2013-11-06",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "GDI+ in Microsoft Windows Vista SP2 and Server 2008 SP2; Office 2003 SP3, 2007 SP3, and 2010 SP1 and SP2; Office Compatibility Pack SP3; and Lync 2010, 2010 Attendee, 2013, and Basic 2013 allows remote attackers to execute arbitrary code via a crafted TIFF image, as demonstrated by an image in a Word document, and exploited in the wild in October and November 2013.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -581,7 +581,7 @@
     {
       "cve_id": "CVE-2013-1331",
       "published_date": "2013-06-12",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Buffer overflow in Microsoft Office 2003 SP3 and Office 2011 for Mac allows remote attackers to execute arbitrary code via crafted PNG data in an Office document, leading to improper memory allocation, aka \"Office Buffer Overflow Vulnerability.\"",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -602,7 +602,7 @@
     {
       "cve_id": "CVE-2012-1856",
       "published_date": "2012-08-15",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "The TabStrip ActiveX control in the Common Controls in MSCOMCTL.OCX in Microsoft Office 2003 SP3, Office 2003 Web Components SP3, Office 2007 SP2 and SP3, Office 2010 SP1, SQL Server 2000 SP4, SQL Server 2005 SP4, SQL Server 2008 SP2, SP3, R2, R2 SP1, and R2 SP2, Commerce Server 2002 SP4, Commerce Server 2007 SP2, Commerce Server 2009 Gold and R2, Host Integration Server 2004 SP1, Visual FoxPro 8.0 SP1, Visual FoxPro 9.0 SP2, and Visual Basic 6.0 Runtime allows remote attackers to execute arbitrary code via a crafted (1) document or (2) web page that triggers system-state corruption, aka \"MSCOMCTL.OCX RCE Vulnerability.\"",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -623,7 +623,7 @@
     {
       "cve_id": "CVE-2012-1854",
       "published_date": "2012-07-10",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Untrusted search path vulnerability in VBE6.dll in Microsoft Office 2003 SP3, 2007 SP2 and SP3, and 2010 Gold and SP1; Microsoft Visual Basic for Applications (VBA); and Summit Microsoft Visual Basic for Applications SDK allows local users to gain privileges via a Trojan horse DLL in the current working directory, as demonstrated by a directory that contains a .docx file, aka \"Visual Basic for Applications Insecure Library Loading Vulnerability,\" as exploited in the wild in July 2012.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -644,7 +644,7 @@
     {
       "cve_id": "CVE-2012-1889",
       "published_date": "2012-06-13",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft XML Core Services 3.0, 4.0, 5.0, and 6.0 accesses uninitialized memory locations, which allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -665,7 +665,7 @@
     {
       "cve_id": "CVE-2012-0158",
       "published_date": "2012-04-10",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "The (1) ListView, (2) ListView2, (3) TreeView, and (4) TreeView2 ActiveX controls in MSCOMCTL.OCX in the Common Controls in Microsoft Office 2003 SP3, 2007 SP2 and SP3, and 2010 Gold and SP1; Office 2003 Web Components SP3; SQL Server 2000 SP4, 2005 SP4, and 2008 SP2, SP3, and R2; BizTalk Server 2002 SP1; Commerce Server 2002 SP4, 2007 SP2, and 2009 Gold and R2; Visual FoxPro 8.0 SP1 and 9.0 SP2; and Visual Basic 6.0 Runtime allow remote attackers to execute arbitrary code via a crafted (a) web site, (b) Office document, or (c) .rtf file that triggers \"system state\" corruption, as exploited in the wild in April 2012, aka \"MSCOMCTL.OCX RCE Vulnerability.\"",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -686,7 +686,7 @@
     {
       "cve_id": "CVE-2010-3333",
       "published_date": "2010-11-10",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Stack-based buffer overflow in Microsoft Office XP SP3, Office 2003 SP3, Office 2007 SP2, Office 2010, Office 2004 and 2008 for Mac, Office for Mac 2011, and Open XML File Format Converter for Mac allows remote attackers to execute arbitrary code via crafted RTF data, aka \"RTF Stack Buffer Overflow Vulnerability.\"",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -707,7 +707,7 @@
     {
       "cve_id": "CVE-2009-3129",
       "published_date": "2009-11-11",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Office Excel 2002 SP3, 2003 SP3, and 2007 SP1 and SP2; Office 2004 and 2008 for Mac; Open XML File Format Converter for Mac; Office Excel Viewer 2003 SP3; Office Excel Viewer SP1 and SP2; and Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 allows remote attackers to execute arbitrary code via a spreadsheet with a FEATHEADER record containing an invalid cbHdrData size element that affects a pointer offset, aka \"Excel Featheader Record Memory Corruption Vulnerability.\"",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -728,7 +728,7 @@
     {
       "cve_id": "CVE-2009-0563",
       "published_date": "2009-06-10",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Stack-based buffer overflow in Microsoft Office Word 2002 SP3, 2003 SP3, and 2007 SP1 and SP2; Microsoft Office for Mac 2004 and 2008; Open XML File Format Converter for Mac; Microsoft Office Word Viewer 2003 SP3; Microsoft Office Word Viewer; and Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 allows remote attackers to execute arbitrary code via a Word document with a crafted tag containing an invalid length field, aka \"Word Buffer Overflow Vulnerability.\"",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -749,7 +749,7 @@
     {
       "cve_id": "CVE-2009-0557",
       "published_date": "2009-06-10",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Excel in Microsoft Office 2000 SP3, Office XP SP3, Office 2003 SP3, and Office 2004 and 2008 for Mac; Excel in 2007 Microsoft Office System SP1 and SP2; Open XML File Format Converter for Mac; Microsoft Office Excel Viewer 2003 SP3; Microsoft Office Excel Viewer; and Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 allow remote attackers to execute arbitrary code via a crafted Excel file with a malformed record object, aka \"Object Record Corruption Vulnerability.\"",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -770,7 +770,7 @@
     {
       "cve_id": "CVE-2009-0238",
       "published_date": "2009-02-25",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Microsoft Office Excel 2000 SP3, 2002 SP3, 2003 SP3, and 2007 SP1; Excel Viewer 2003 Gold and SP3; Excel Viewer; Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1; and Excel in Microsoft Office 2004 and 2008 for Mac allow remote attackers to execute arbitrary code via a crafted Excel document that triggers an access attempt on an invalid object, as exploited in the wild in February 2009 by Trojan.Mdropper.AC.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -791,7 +791,7 @@
     {
       "cve_id": "CVE-2007-0671",
       "published_date": "2007-02-03",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-04-22",
       "description": "Unspecified vulnerability in Microsoft Excel 2000, XP, 2003, and 2004 for Mac, and possibly other Office products, allows remote user-assisted attackers to execute arbitrary code via unknown attack vectors, as demonstrated by Exploit-MSExcel.h in targeted zero-day attacks.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1064,7 +1064,7 @@
     {
       "cve_id": "CVE-2008-0081",
       "published_date": "2008-01-16",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Excel 2000 SP3 through 2003 SP2, Viewer 2003, and Office 2004 for Mac allows user-assisted remote attackers to execute arbitrary code via crafted macros, aka \"Macro Validation Vulnerability,\" a different vulnerability than CVE-2007-3490.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -15806,7 +15806,7 @@
     {
       "cve_id": "CVE-2009-3127",
       "published_date": "2009-11-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2002 SP3 and 2003 SP3, Office 2004 and 2008 for Mac, Open XML File Format Converter for Mac, and Office Excel Viewer 2003 SP3 do not properly parse the Excel file format, which allows remote attackers to execute arbitrary code via a crafted spreadsheet, aka \"Excel Cache Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -15827,7 +15827,7 @@
     {
       "cve_id": "CVE-2009-3128",
       "published_date": "2009-11-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2002 SP3 and 2003 SP3, and Office Excel Viewer 2003 SP3, does not properly parse the Excel file format, which allows remote attackers to execute arbitrary code via a spreadsheet with a malformed record object, aka \"Excel SxView Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -15848,7 +15848,7 @@
     {
       "cve_id": "CVE-2009-3135",
       "published_date": "2009-11-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in Microsoft Office Word 2002 SP3 and 2003 SP3, Office 2004 and 2008 for Mac, Open XML File Format Converter for Mac, Office Word Viewer 2003 SP3, and Office Word Viewer allow remote attackers to execute arbitrary code via a Word document with a malformed File Information Block (FIB) structure, aka \"Microsoft Office Word File Information Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -15869,7 +15869,7 @@
     {
       "cve_id": "CVE-2009-3130",
       "published_date": "2009-11-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in Microsoft Office Excel 2002 SP3, Office 2004 and 2008 for Mac, and Open XML File Format Converter for Mac allows remote attackers to execute arbitrary code via a spreadsheet containing a malformed Binary File Format (aka BIFF) record that triggers memory corruption, aka \"Excel Document Parsing Heap Overflow Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -15890,7 +15890,7 @@
     {
       "cve_id": "CVE-2009-3131",
       "published_date": "2009-11-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2002 SP3, 2003 SP3, and 2007 SP1 and SP2; Office 2004 and 2008 for Mac; Open XML File Format Converter for Mac; Office Excel Viewer 2003 SP3; Office Excel Viewer SP1 and SP2; and Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 allow remote attackers to execute arbitrary code via a spreadsheet with a crafted formula embedded in a cell, aka \"Excel Formula Parsing Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -15911,7 +15911,7 @@
     {
       "cve_id": "CVE-2009-3132",
       "published_date": "2009-11-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2002 SP3, 2003 SP3, and 2007 SP1 and SP2; Office 2004 and 2008 for Mac; Open XML File Format Converter for Mac; Office Excel Viewer 2003 SP3; Office Excel Viewer SP1 and SP2; and Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 allow remote attackers to execute arbitrary code via a spreadsheet containing a malformed formula, related to a \"pointer corruption\" issue, aka \"Excel Index Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -15932,7 +15932,7 @@
     {
       "cve_id": "CVE-2009-3133",
       "published_date": "2009-11-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2002 SP3, Office 2004 and 2008 for Mac, and Open XML File Format Converter for Mac allow remote attackers to execute arbitrary code via a spreadsheet containing a malformed object that triggers memory corruption, related to \"loading Excel records,\" aka \"Excel Document Parsing Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -15953,7 +15953,7 @@
     {
       "cve_id": "CVE-2009-3134",
       "published_date": "2009-11-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2002 SP3, 2003 SP3, and 2007 SP1 and SP2; Office 2004 and 2008 for Mac; Open XML File Format Converter for Mac; Office Excel Viewer 2003 SP3; Office Excel Viewer SP1 and SP2; and Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 do not properly parse the Excel file format, which allows remote attackers to execute arbitrary code via a spreadsheet with a malformed record object, aka \"Excel Field Sanitization Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -15974,7 +15974,7 @@
     {
       "cve_id": "CVE-2009-2500",
       "published_date": "2009-10-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in GDI+ in Microsoft Internet Explorer 6 SP1, Windows XP SP2 and SP3, Office XP SP3, Office 2003 SP3, 2007 Microsoft Office System SP1 and SP2, Office Project 2002 SP1, Visio 2002 SP2, Office Word Viewer, Word Viewer 2003 Gold and SP3, Office Excel Viewer 2003 Gold and SP3, Office Excel Viewer, Office PowerPoint Viewer 2007 Gold, SP1, and SP2, Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2, Expression Web, Expression Web 2, Groove 2007 Gold and SP1, Works 8.5, SQL Server 2000 Reporting Services SP2, SQL Server 2005 SP2 and SP3, Report Viewer 2005 SP1, Report Viewer 2008 Gold and SP1, and Forefront Client Security 1.0 allows remote attackers to execute arbitrary code via a crafted WMF image file, aka \"GDI+ WMF Integer Overflow Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -15995,7 +15995,7 @@
     {
       "cve_id": "CVE-2009-2501",
       "published_date": "2009-10-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in GDI+ in Microsoft Internet Explorer 6 SP1, Windows XP SP2 and SP3, Office XP SP3, Office 2003 SP3, 2007 Microsoft Office System SP1 and SP2, Office Project 2002 SP1, Visio 2002 SP2, Office Word Viewer, Word Viewer 2003 Gold and SP3, Office Excel Viewer 2003 Gold and SP3, Office Excel Viewer, Office PowerPoint Viewer 2007 Gold, SP1, and SP2, Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2, Expression Web, Expression Web 2, Groove 2007 Gold and SP1, Works 8.5, SQL Server 2000 Reporting Services SP2, SQL Server 2005 SP2 and SP3, Report Viewer 2005 SP1, Report Viewer 2008 Gold and SP1, and Forefront Client Security 1.0 allows remote attackers to execute arbitrary code via a crafted PNG image file, aka \"GDI+ PNG Heap Overflow Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16016,7 +16016,7 @@
     {
       "cve_id": "CVE-2009-2502",
       "published_date": "2009-10-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in GDI+ in Microsoft Internet Explorer 6 SP1, Windows XP SP2 and SP3, Office XP SP3, Office 2003 SP3, 2007 Microsoft Office System SP1 and SP2, Office Project 2002 SP1, Visio 2002 SP2, Office Word Viewer, Word Viewer 2003 Gold and SP3, Office Excel Viewer 2003 Gold and SP3, Office Excel Viewer, Office PowerPoint Viewer 2007 Gold, SP1, and SP2, Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2, Expression Web, Expression Web 2, Groove 2007 Gold and SP1, Works 8.5, SQL Server 2000 Reporting Services SP2, SQL Server 2005 SP2 and SP3, Report Viewer 2005 SP1, Report Viewer 2008 Gold and SP1, and Forefront Client Security 1.0 allows remote attackers to execute arbitrary code via a crafted TIFF image file, aka \"GDI+ TIFF Buffer Overflow Vulnerability.\"",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -16037,7 +16037,7 @@
     {
       "cve_id": "CVE-2009-2503",
       "published_date": "2009-10-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "GDI+ in Microsoft Internet Explorer 6 SP1, Windows XP SP2 and SP3, Windows Server 2003 SP2, Office XP SP3, Office 2003 SP3, 2007 Microsoft Office System SP1 and SP2, Office Project 2002 SP1, Visio 2002 SP2, Office Word Viewer, Word Viewer 2003 Gold and SP3, Office Excel Viewer 2003 Gold and SP3, Office Excel Viewer, Office PowerPoint Viewer 2007 Gold, SP1, and SP2, Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2, Expression Web, Expression Web 2, Groove 2007 Gold and SP1, Works 8.5, SQL Server 2000 Reporting Services SP2, SQL Server 2005 SP2 and SP3, Report Viewer 2005 SP1, Report Viewer 2008 Gold and SP1, and Forefront Client Security 1.0 does not properly allocate an unspecified buffer, which allows remote attackers to execute arbitrary code via a crafted TIFF image file that triggers memory corruption, aka \"GDI+ TIFF Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16058,7 +16058,7 @@
     {
       "cve_id": "CVE-2009-2504",
       "published_date": "2009-10-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple integer overflows in unspecified APIs in GDI+ in Microsoft .NET Framework 1.1 SP1, .NET Framework 2.0 SP1 and SP2, Windows XP SP2 and SP3, Windows Server 2003 SP2, Vista Gold and SP1, Server 2008 Gold, Office XP SP3, Office 2003 SP3, 2007 Microsoft Office System SP1 and SP2, Office Project 2002 SP1, Visio 2002 SP2, Office Word Viewer, Word Viewer 2003 Gold and SP3, Office Excel Viewer 2003 Gold and SP3, Office Excel Viewer, Office PowerPoint Viewer 2007 Gold, SP1, and SP2, Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2, Expression Web, Expression Web 2, Groove 2007 Gold and SP1, Works 8.5, SQL Server 2000 Reporting Services SP2, SQL Server 2005 SP2 and SP3, Report Viewer 2005 SP1, Report Viewer 2008 Gold and SP1, and Forefront Client Security 1.0 allow remote attackers to execute arbitrary code via (1) a crafted XAML browser application (XBAP), (2) a crafted ASP.NET application, or (3) a crafted .NET Framework application, aka \"GDI+ .NET API Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16079,7 +16079,7 @@
     {
       "cve_id": "CVE-2009-2518",
       "published_date": "2009-10-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in GDI+ in Microsoft Office XP SP3 allows remote attackers to execute arbitrary code via an Office document with a bitmap (aka BMP) image that triggers memory corruption, aka \"Office BMP Integer Overflow Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16100,7 +16100,7 @@
     {
       "cve_id": "CVE-2009-2528",
       "published_date": "2009-10-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "GDI+ in Microsoft Office XP SP3 does not properly handle malformed objects in Office Art Property Tables, which allows remote attackers to execute arbitrary code via a crafted Office document that triggers memory corruption, aka \"Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16121,7 +16121,7 @@
     {
       "cve_id": "CVE-2009-3126",
       "published_date": "2009-10-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in GDI+ in Microsoft Internet Explorer 6 SP1, Windows XP SP2 and SP3, Office XP SP3, Office 2003 SP3, 2007 Microsoft Office System SP1 and SP2, Office Project 2002 SP1, Visio 2002 SP2, Office Word Viewer, Word Viewer 2003 Gold and SP3, Office Excel Viewer 2003 Gold and SP3, Office Excel Viewer, Office PowerPoint Viewer 2007 Gold, SP1, and SP2, Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2, Expression Web, Expression Web 2, Groove 2007 Gold and SP1, Works 8.5, SQL Server 2000 Reporting Services SP2, SQL Server 2005 SP2 and SP3, Report Viewer 2005 SP1, Report Viewer 2008 Gold and SP1, and Forefront Client Security 1.0 allows remote attackers to execute arbitrary code via a crafted PNG image file, aka \"GDI+ PNG Integer Overflow Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16142,7 +16142,7 @@
     {
       "cve_id": "CVE-2009-0562",
       "published_date": "2009-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The Office Web Components ActiveX Control in Microsoft Office XP SP3, Office 2003 SP3, Office XP Web Components SP3, Office 2003 Web Components SP3, Office 2003 Web Components SP1 for the 2007 Microsoft Office System, Internet Security and Acceleration (ISA) Server 2004 SP3 and 2006 SP1, and Office Small Business Accounting 2006 does not properly allocate memory, which allows remote attackers to execute arbitrary code via unspecified vectors that trigger \"system state\" corruption, aka \"Office Web Components Memory Allocation Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16163,7 +16163,7 @@
     {
       "cve_id": "CVE-2009-1534",
       "published_date": "2009-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in the Office Web Components ActiveX Control in Microsoft Office XP SP3, Office 2000 Web Components SP3, Office XP Web Components SP3, BizTalk Server 2002, and Visual Studio .NET 2003 SP1 allows remote attackers to execute arbitrary code via crafted property values, aka \"Office Web Components Buffer Overflow Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16184,7 +16184,7 @@
     {
       "cve_id": "CVE-2009-2496",
       "published_date": "2009-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in the Office Web Components ActiveX Control in Microsoft Office XP SP3, Office 2003 SP3, Office XP Web Components SP3, Office 2003 Web Components SP3, Office 2003 Web Components SP1 for the 2007 Microsoft Office System, Internet Security and Acceleration (ISA) Server 2004 SP3 and 2006 SP1, and Office Small Business Accounting 2006 allows remote attackers to execute arbitrary code via unspecified parameters to unknown methods, aka \"Office Web Components Heap Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16205,7 +16205,7 @@
     {
       "cve_id": "CVE-2009-1136",
       "published_date": "2009-07-15",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The Microsoft Office Web Components Spreadsheet ActiveX control (aka OWC10 or OWC11), as distributed in Office XP SP3 and Office 2003 SP3, Office XP Web Components SP3, Office 2003 Web Components SP3, Office 2003 Web Components SP1 for the 2007 Microsoft Office System, Internet Security and Acceleration (ISA) Server 2004 SP3 and 2006 Gold and SP1, and Office Small Business Accounting 2006, when used in Internet Explorer, allows remote attackers to execute arbitrary code via a crafted call to the msDataSourceObject method, as exploited in the wild in July and August 2009, aka \"Office Web Components HTML Script Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16226,7 +16226,7 @@
     {
       "cve_id": "CVE-2009-0565",
       "published_date": "2009-06-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in Microsoft Office Word 2000 SP3, 2002 SP3, and 2007 SP1 and SP2; Microsoft Office for Mac 2004 and 2008; Open XML File Format Converter for Mac; and Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 allows remote attackers to execute arbitrary code via a Word document with a malformed record that triggers memory corruption, aka \"Word Buffer Overflow Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16247,7 +16247,7 @@
     {
       "cve_id": "CVE-2009-1533",
       "published_date": "2009-06-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in the Works for Windows document converters in Microsoft Office 2000 SP3, Office XP SP3, Office 2003 SP3, Office 2007 SP1, and Works 8.5 and 9 allows remote attackers to execute arbitrary code via a crafted Works .wps file that triggers memory corruption, aka \"File Converter Buffer Overflow Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16268,7 +16268,7 @@
     {
       "cve_id": "CVE-2009-0549",
       "published_date": "2009-06-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Excel in Microsoft Office 2000 SP3, Office XP SP3, Office 2003 SP3, and Office 2004 and 2008 for Mac; Open XML File Format Converter for Mac; and Microsoft Office Excel Viewer 2003 SP3 allow remote attackers to execute arbitrary code via a crafted Excel file with a malformed record object, aka \"Record Pointer Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16289,7 +16289,7 @@
     {
       "cve_id": "CVE-2009-0558",
       "published_date": "2009-06-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Array index error in Excel in Microsoft Office 2000 SP3 and Office 2004 and 2008 for Mac, and Open XML File Format Converter for Mac, allows remote attackers to execute arbitrary code via a crafted Excel file with a malformed record object, aka \"Array Indexing Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16310,7 +16310,7 @@
     {
       "cve_id": "CVE-2009-0559",
       "published_date": "2009-06-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in Excel in Microsoft Office 2000 SP3 and Office XP SP3 allows remote attackers to execute arbitrary code via a crafted Excel file with a malformed record object, aka \"String Copy Stack-Based Overrun Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16331,7 +16331,7 @@
     {
       "cve_id": "CVE-2009-0560",
       "published_date": "2009-06-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Excel in Microsoft Office 2000 SP3, Office XP SP3, Office 2003 SP3, and Office 2004 and 2008 for Mac; Excel in 2007 Microsoft Office System SP1 and SP2; Open XML File Format Converter for Mac; Microsoft Office Excel Viewer 2003 SP3; Microsoft Office Excel Viewer; and Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 allow remote attackers to execute arbitrary code via a crafted Excel file with a malformed record object, aka \"Field Sanitization Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16352,7 +16352,7 @@
     {
       "cve_id": "CVE-2009-0561",
       "published_date": "2009-06-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in Excel in Microsoft Office 2000 SP3, Office XP SP3, Office 2003 SP3, and Office 2004 and 2008 for Mac; Excel in 2007 Microsoft Office System SP1 and SP2; Open XML File Format Converter for Mac; Microsoft Office Excel Viewer 2003 SP3; Microsoft Office Excel Viewer; Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2; and Microsoft Office SharePoint Server 2007 SP1 and SP2 allows remote attackers to execute arbitrary code via an Excel file with a Shared String Table (SST) record with a numeric field that specifies an invalid number of unique strings, which triggers a heap-based buffer overflow, aka \"Record Integer Overflow Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16373,7 +16373,7 @@
     {
       "cve_id": "CVE-2009-1134",
       "published_date": "2009-06-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Excel in 2007 Microsoft Office System SP1 and SP2; Microsoft Office Excel Viewer; and Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 and SP2 allow remote attackers to execute arbitrary code via a BIFF file with a malformed Qsir (0x806) record object, aka \"Record Pointer Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16394,7 +16394,7 @@
     {
       "cve_id": "CVE-2009-1130",
       "published_date": "2009-05-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in Microsoft Office PowerPoint 2002 SP3 and 2003 SP3, and PowerPoint in Microsoft Office 2004 for Mac, allows remote attackers to execute arbitrary code via a crafted structure in a Notes container in a PowerPoint file that causes PowerPoint to read more data than was allocated when creating a C++ object, leading to an overwrite of a function pointer, aka \"Heap Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16415,7 +16415,7 @@
     {
       "cve_id": "CVE-2009-0100",
       "published_date": "2009-04-15",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2000 SP3, 2002 SP3, 2003 SP3, and 2007 SP1; Excel in Microsoft Office 2004 and 2008 for Mac; Microsoft Office Excel Viewer and Excel Viewer 2003 SP3; and Microsoft Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats SP1 do not properly parse the Excel spreadsheet file format, which allows remote attackers to execute arbitrary code via a crafted spreadsheet that contains a malformed object with \"an offset and a two-byte value\" that trigger a memory calculation error, aka \"Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16436,7 +16436,7 @@
     {
       "cve_id": "CVE-2008-4024",
       "published_date": "2008-12-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Word 2000 SP3 and 2002 SP3 and Office 2004 for Mac allow remote attackers to execute arbitrary code via a Word document with a crafted lcbPlcfBkfSdt field in the File Information Block (FIB), which bypasses an initialization step and triggers an \"arbitrary free,\" aka \"Word Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16457,7 +16457,7 @@
     {
       "cve_id": "CVE-2008-4025",
       "published_date": "2008-12-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in Microsoft Office Word 2000 SP3, 2002 SP3, 2003 SP3, and 2007 Gold and SP1; Outlook 2007 Gold and SP1; Word Viewer 2003 Gold and SP3; Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats Gold and SP1; Office 2004 and 2008 for Mac; and Open XML File Format Converter for Mac allow remote attackers to execute arbitrary code via (1) an RTF file or (2) a rich text e-mail message containing an invalid number of points for a polyline or polygon, which triggers a heap-based buffer overflow, aka \"Word RTF Object Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16478,7 +16478,7 @@
     {
       "cve_id": "CVE-2008-4026",
       "published_date": "2008-12-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Word 2000 SP3, 2002 SP3, 2003 SP3, and 2007 Gold and SP1; Word Viewer 2003 Gold and SP3; Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats Gold and SP1; Office 2004 and 2008 for Mac; and Open XML File Format Converter for Mac allow remote attackers to execute arbitrary code via a crafted Word document that contains a malformed value, which triggers memory corruption, aka \"Word Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16499,7 +16499,7 @@
     {
       "cve_id": "CVE-2008-4027",
       "published_date": "2008-12-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Double free vulnerability in Microsoft Office Word 2000 SP3, 2002 SP3, 2003 SP3, and 2007 Gold and SP1; Outlook 2007 Gold and SP1; Word Viewer 2003 Gold and SP3; Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats Gold and SP1; and Office 2004 for Mac allow remote attackers to execute arbitrary code via a crafted (1) RTF file or (2) rich text e-mail message with multiple consecutive Drawing Object (\"\\do\") tags, which triggers a \"memory calculation error\" and memory corruption, aka \"Word RTF Object Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16520,7 +16520,7 @@
     {
       "cve_id": "CVE-2008-4028",
       "published_date": "2008-12-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Word 2000 SP3, 2002 SP3, 2003 SP3, and 2007 Gold and SP1; Outlook 2007 Gold and SP1; Word Viewer 2003 Gold and SP3; Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats Gold and SP1; Office 2004 and 2008 for Mac; and Open XML File Format Converter for Mac allow remote attackers to execute arbitrary code via crafted control words related to multiple Drawing Object tags in (1) an RTF file or (2) a rich text e-mail message, which triggers incorrect memory allocation and a heap-based buffer overflow, aka \"Word RTF Object Parsing Vulnerability,\" a different vulnerability than CVE-2008-4030.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16541,7 +16541,7 @@
     {
       "cve_id": "CVE-2008-4030",
       "published_date": "2008-12-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Word 2000 SP3, 2002 SP3, 2003 SP3, and 2007 Gold and SP1; Outlook 2007 Gold and SP1; Word Viewer 2003 Gold and SP3; and Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats Gold and SP1 allow remote attackers to execute arbitrary code via crafted control words in (1) an RTF file or (2) a rich text e-mail message, which triggers incorrect memory allocation and memory corruption, aka \"Word RTF Object Parsing Vulnerability,\" a different vulnerability than CVE-2008-4028.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16562,7 +16562,7 @@
     {
       "cve_id": "CVE-2008-4031",
       "published_date": "2008-12-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Word 2000 SP3, 2002 SP3, 2003 SP3, and 2007 Gold and SP1; Outlook 2007 Gold and SP1; Word Viewer 2003 Gold and SP3; Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats Gold and SP1; Office 2004 and 2008 for Mac; and Open XML File Format Converter for Mac allow remote attackers to execute arbitrary code via a malformed string in (1) an RTF file or (2) a rich text e-mail message, which triggers incorrect memory allocation and memory corruption, aka \"Word RTF Object Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16583,7 +16583,7 @@
     {
       "cve_id": "CVE-2008-4264",
       "published_date": "2008-12-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2000 SP3, 2002 SP3, 2003 SP3, and 2007 Gold and SP1; Excel Viewer 2003 Gold and SP3; Excel Viewer; Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats Gold and SP1; Office 2004 and 2008 for Mac; and Open XML File Format Converter for Mac allow remote attackers to execute arbitrary code via a crafted Excel spreadsheet that contains a malformed formula, which triggers \"pointer corruption\" during the loading of formulas from this spreadsheet, aka \"File Format Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16604,7 +16604,7 @@
     {
       "cve_id": "CVE-2008-4265",
       "published_date": "2008-12-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2000 SP3 allows remote attackers to execute arbitrary code via a crafted Excel spreadsheet that contains a malformed object, which triggers memory corruption during the loading of records from this spreadsheet, aka \"File Format Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16625,7 +16625,7 @@
     {
       "cve_id": "CVE-2008-4266",
       "published_date": "2008-12-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Array index vulnerability in Microsoft Office Excel 2000 SP3, 2002 SP3, and 2003 SP3; Excel Viewer 2003 Gold and SP3; Office 2004 and 2008 for Mac; and Open XML File Format Converter for Mac allow remote attackers to execute arbitrary code via an Excel spreadsheet with a NAME record that contains an invalid index value, which triggers stack corruption, aka \"Excel Global Array Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16646,7 +16646,7 @@
     {
       "cve_id": "CVE-2008-4837",
       "published_date": "2008-12-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in Microsoft Office Word 2000 SP3, 2002 SP3, 2003 SP3, and 2007 Gold and SP1; Word Viewer 2003 Gold and SP3; Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats Gold and SP1; and Microsoft Works 8 allow remote attackers to execute arbitrary code via a crafted Word document that contains a malformed table property, which triggers memory corruption, aka \"Word Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16667,7 +16667,7 @@
     {
       "cve_id": "CVE-2008-4922",
       "published_date": "2008-11-04",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in the DjVu ActiveX Control 3.0 for Microsoft Office (DjVu_ActiveX_MSOffice.dll) allows remote attackers to execute arbitrary code via a long (1) ImageURL property, and possibly the (2) Mode, (3) Page, or (4) Zoom properties.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16688,7 +16688,7 @@
     {
       "cve_id": "CVE-2008-3471",
       "published_date": "2008-10-15",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2 and SP3, and 2007 Gold and SP1; Office Excel Viewer 2003 SP3; Office Excel Viewer; Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats Gold and SP1; Office 2004 and 2008 for Mac; and Open XML File Format Converter for Mac allows remote attackers to execute arbitrary code via a BIFF file with a malformed record that triggers a user-influenced size calculation, aka \"File Format Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16709,7 +16709,7 @@
     {
       "cve_id": "CVE-2008-4019",
       "published_date": "2008-10-15",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in the REPT function in Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2 and SP3, and 2007 Gold and SP1; Office Excel Viewer 2003 SP3; Office Excel Viewer; Office Compatibility Pack for Word, Excel, and PowerPoint 2007 File Formats Gold and SP1; Office SharePoint Server 2007 Gold and SP1; Office 2004 and 2008 for Mac; and Open XML File Format Converter for Mac allows remote attackers to execute arbitrary code via an Excel file containing a formula within a cell, aka \"Formula Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16730,7 +16730,7 @@
     {
       "cve_id": "CVE-2007-5348",
       "published_date": "2008-09-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in GDI+ in Microsoft Internet Explorer 6 SP1, Windows XP SP2 and SP3, Server 2003 SP1 and SP2, Vista Gold and SP1, Server 2008, Office XP SP3, Office 2003 SP2 and SP3, 2007 Microsoft Office System Gold and SP1, Visio 2002 SP2, PowerPoint Viewer 2003, Works 8, Digital Image Suite 2006, SQL Server 2000 Reporting Services SP2, SQL Server 2005 SP2, Report Viewer 2005 SP1 and 2008, and Forefront Client Security 1.0 allows remote attackers to execute arbitrary code via an image file with crafted gradient sizes in gradient fill input, which triggers a heap-based buffer overflow related to GdiPlus.dll and VGX.DLL, aka \"GDI+ VML Buffer Overrun Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16751,7 +16751,7 @@
     {
       "cve_id": "CVE-2008-3007",
       "published_date": "2008-09-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Argument injection vulnerability in a URI handler in Microsoft Office XP SP3, 2003 SP2 and SP3, 2007 Office System Gold and SP1, and Office OneNote 2007 Gold and SP1 allow remote attackers to execute arbitrary code via a crafted onenote:// URL, aka \"Uniform Resource Locator Validation Error Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16772,7 +16772,7 @@
     {
       "cve_id": "CVE-2008-3012",
       "published_date": "2008-09-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "gdiplus.dll in GDI+ in Microsoft Internet Explorer 6 SP1, Windows XP SP2 and SP3, Server 2003 SP1 and SP2, Vista Gold and SP1, Server 2008, Office XP SP3, Office 2003 SP2 and SP3, 2007 Microsoft Office System Gold and SP1, Visio 2002 SP2, PowerPoint Viewer 2003, Works 8, Digital Image Suite 2006, SQL Server 2000 Reporting Services SP2, SQL Server 2005 SP2, Report Viewer 2005 SP1 and 2008, and Forefront Client Security 1.0 does not properly perform memory allocation, which allows remote attackers to execute arbitrary code via a malformed EMF image file, aka \"GDI+ EMF Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16793,7 +16793,7 @@
     {
       "cve_id": "CVE-2008-3013",
       "published_date": "2008-09-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "gdiplus.dll in GDI+ in Microsoft Internet Explorer 6 SP1, Windows XP SP2 and SP3, Server 2003 SP1 and SP2, Vista Gold and SP1, Server 2008, Office XP SP3, Office 2003 SP2 and SP3, 2007 Microsoft Office System Gold and SP1, Visio 2002 SP2, PowerPoint Viewer 2003, Works 8, Digital Image Suite 2006, SQL Server 2000 Reporting Services SP2, SQL Server 2005 SP2, Report Viewer 2005 SP1 and 2008, and Forefront Client Security 1.0 allows remote attackers to execute arbitrary code via a malformed GIF image file containing many extension markers for graphic control extensions and subsequent unknown labels, aka \"GDI+ GIF Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16814,7 +16814,7 @@
     {
       "cve_id": "CVE-2008-3014",
       "published_date": "2008-09-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in gdiplus.dll in GDI+ in Microsoft Internet Explorer 6 SP1, Windows XP SP2 and SP3, Server 2003 SP1 and SP2, Vista Gold and SP1, Server 2008, Office XP SP3, Office 2003 SP2 and SP3, 2007 Microsoft Office System Gold and SP1, Visio 2002 SP2, PowerPoint Viewer 2003, Works 8, Digital Image Suite 2006, SQL Server 2000 Reporting Services SP2, SQL Server 2005 SP2, Report Viewer 2005 SP1 and 2008, and Forefront Client Security 1.0 allows remote attackers to execute arbitrary code via a malformed WMF image file that triggers improper memory allocation, aka \"GDI+ WMF Buffer Overrun Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16835,7 +16835,7 @@
     {
       "cve_id": "CVE-2008-3015",
       "published_date": "2008-09-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in gdiplus.dll in GDI+ in Microsoft Office XP SP3, Office 2003 SP2 and SP3, 2007 Microsoft Office System Gold and SP1, Visio 2002 SP2, PowerPoint Viewer 2003, Works 8, Digital Image Suite 2006, SQL Server 2000 Reporting Services SP2, SQL Server 2005 SP2, Report Viewer 2005 SP1 and 2008, and Forefront Client Security 1.0 allows remote attackers to execute arbitrary code via a BMP image file with a malformed BitMapInfoHeader that triggers a buffer overflow, aka \"GDI+ BMP Integer Overflow Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16856,7 +16856,7 @@
     {
       "cve_id": "CVE-2008-3004",
       "published_date": "2008-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2000 SP3, 2002 SP3, and 2003 SP2 and SP3; Office Excel Viewer 2003; and Office 2004 and 2008 for Mac do not properly validate index values for AxesSet records when loading Excel files, which allows remote attackers to execute arbitrary code via a crafted Excel file, aka the \"Excel Indexing Validation Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16877,7 +16877,7 @@
     {
       "cve_id": "CVE-2008-3005",
       "published_date": "2008-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Array index vulnerability in Microsoft Office Excel 2000 SP3 and 2002 SP3, and Office 2004 and 2008 for Mac allows remote attackers to execute arbitrary code via an Excel file with a crafted array index for a FORMAT record, aka the \"Excel Index Array Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16898,7 +16898,7 @@
     {
       "cve_id": "CVE-2008-3006",
       "published_date": "2008-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2000 SP3, 2002 SP3, 2003 SP2 and SP3, and 2007 Gold and SP1; Office Excel Viewer 2003 Gold and SP3; Office Excel Viewer; Office Compatibility Pack 2007 Gold and SP1; Office SharePoint Server 2007 Gold and SP1; and Office 2004 and 2008 for Mac do not properly parse Country record values when loading Excel files, which allows remote attackers to execute arbitrary code via a crafted Excel file, aka the \"Excel Record Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16919,7 +16919,7 @@
     {
       "cve_id": "CVE-2008-3018",
       "published_date": "2008-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office 2000 SP3, XP SP3, and 2003 SP2; Office Converter Pack; and Works 8 do not properly parse the length of a PICT file, which allows remote attackers to execute arbitrary code via a crafted PICT file, aka the \"Malformed PICT Filter Vulnerability,\" a different vulnerability than CVE-2008-3021.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16940,7 +16940,7 @@
     {
       "cve_id": "CVE-2008-3019",
       "published_date": "2008-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office 2000 SP3, XP SP3, and 2003 SP2; Office Converter Pack; and Works 8 do not properly parse the length of an Encapsulated PostScript (EPS) file, which allows remote attackers to execute arbitrary code via a crafted EPS file, aka the \"Malformed EPS Filter Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16961,7 +16961,7 @@
     {
       "cve_id": "CVE-2008-3020",
       "published_date": "2008-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office 2000 SP3 and XP SP3; Office Converter Pack; and Works 8 do not properly parse the length of a BMP file, which allows remote attackers to execute arbitrary code via a crafted BMP file, aka the \"Malformed BMP Filter Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -16982,7 +16982,7 @@
     {
       "cve_id": "CVE-2008-3021",
       "published_date": "2008-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office 2000 SP3, XP SP3, and 2003 SP2; Office Converter Pack; and Works 8 do not properly parse the length of a PICT file, which allows remote attackers to execute arbitrary code via a crafted PICT file with an invalid bits_per_pixel field, aka the \"PICT Filter Parsing Vulnerability,\" a different vulnerability than CVE-2008-3018.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17003,7 +17003,7 @@
     {
       "cve_id": "CVE-2008-3460",
       "published_date": "2008-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "WPGIMP32.FLT in Microsoft Office 2000 SP3, XP SP3, and 2003 SP2; Office Converter Pack; and Works 8 does not properly parse the length of a WordPerfect Graphics (WPG) file, which allows remote attackers to execute arbitrary code via a crafted WPG file, aka the \"WPG Image File Heap Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17024,7 +17024,7 @@
     {
       "cve_id": "CVE-2008-3068",
       "published_date": "2008-07-07",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Crypto API 5.131.2600.2180 through 6.0, as used in Outlook, Windows Live Mail, and Office 2007, performs Certificate Revocation List (CRL) checks by using an arbitrary URL from a certificate embedded in a (1) S/MIME e-mail message or (2) signed document, which allows remote attackers to obtain reading times and IP addresses of recipients, and port-scan results, via a crafted certificate with an Authority Information Access (AIA) extension.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -17045,7 +17045,7 @@
     {
       "cve_id": "CVE-2008-0119",
       "published_date": "2008-05-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Publisher in Office 2000 and XP SP3, 2003 SP2 and SP3, and 2007 SP1 and earlier allows remote attackers to execute arbitrary code via a Publisher file with crafted object header data that triggers memory corruption, aka \"Publisher Object Handler Validation Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17066,7 +17066,7 @@
     {
       "cve_id": "CVE-2008-1091",
       "published_date": "2008-05-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Word in Office 2000 and XP SP3, 2003 SP2 and SP3, and 2007 Office System SP1 and earlier allows remote attackers to execute arbitrary code via a Rich Text Format (.rtf) file with a malformed string that triggers a \"memory calculation error\" and a heap-based buffer overflow, aka \"Object Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17087,7 +17087,7 @@
     {
       "cve_id": "CVE-2008-1434",
       "published_date": "2008-05-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Use-after-free vulnerability in Microsoft Word in Office 2000 and XP SP3, 2003 SP2 and SP3, and 2007 Office System SP1 and earlier allows remote attackers to execute arbitrary code via an HTML document with a large number of Cascading Style Sheets (CSS) selectors, related to a \"memory handling error\" that triggers memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17108,7 +17108,7 @@
     {
       "cve_id": "CVE-2008-1898",
       "published_date": "2008-04-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "A certain ActiveX control in WkImgSrv.dll 7.03.0616.0, as distributed in Microsoft Works 7 and Microsoft Office 2003 and 2007, allows remote attackers to execute arbitrary code or cause a denial of service (browser crash) via an invalid WksPictureInterface property value, which triggers an improper function call.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17129,7 +17129,7 @@
     {
       "cve_id": "CVE-2008-1089",
       "published_date": "2008-04-08",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Visio 2002 SP2, 2003 SP2 and SP3, and 2007 up to SP1 allows user-assisted remote attackers to execute arbitrary code via a Visio file containing crafted object header data, aka \"Visio Object Header Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17150,7 +17150,7 @@
     {
       "cve_id": "CVE-2008-1090",
       "published_date": "2008-04-08",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Visio 2002 SP2, 2003 SP2 and SP3, and 2007 up to SP1 allows user-assisted remote attackers to execute arbitrary code via a crafted .DXF file, aka \"Visio Memory Validation Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17171,7 +17171,7 @@
     {
       "cve_id": "CVE-2007-1201",
       "published_date": "2008-03-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in certain COM objects in Microsoft Office Web Components 2000 allows user-assisted remote attackers to execute arbitrary code via vectors related to DataSource that trigger memory corruption, aka \"Office Web Components DataSource Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17192,7 +17192,7 @@
     {
       "cve_id": "CVE-2008-0110",
       "published_date": "2008-03-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Outlook in Office 2000 SP3, XP SP3, 2003 SP2 and Sp3, and Office System allows user-assisted remote attackers to execute arbitrary code via a crafted mailto URI.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17213,7 +17213,7 @@
     {
       "cve_id": "CVE-2008-0111",
       "published_date": "2008-03-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Excel 2000 SP3 through 2007, Viewer 2003, Compatibility Pack, and Office 2004 for Mac allows user-assisted remote attackers to execute arbitrary code via crafted data validation records, aka \"Excel Data Validation Record Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17234,7 +17234,7 @@
     {
       "cve_id": "CVE-2008-0112",
       "published_date": "2008-03-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Excel 2000 SP3, and Office for Mac 2004 and 2008 allows user-assisted remote attackers to execute arbitrary code via a crafted .SLK file that is not properly handled when importing the file, aka \"Excel File Import Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17255,7 +17255,7 @@
     {
       "cve_id": "CVE-2008-0114",
       "published_date": "2008-03-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Excel 2000 SP3 through 2003 SP2, Viewer 2003, and Office for Mac 2004 allows user-assisted remote attackers to execute arbitrary code via crafted Style records that trigger memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17276,7 +17276,7 @@
     {
       "cve_id": "CVE-2008-0115",
       "published_date": "2008-03-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Excel 2000 SP3 through 2007, Viewer 2003, Compatibility Pack, and Office for Mac 2004 allows user-assisted remote attackers to execute arbitrary code via malformed formulas, aka \"Excel Formula Parsing Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17297,7 +17297,7 @@
     {
       "cve_id": "CVE-2008-0116",
       "published_date": "2008-03-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Excel 2000 SP3 through 2003 SP2, Viewer 2003, Compatibility Pack, and Office 2004 and 2008 for Mac allows user-assisted remote attackers to execute arbitrary code via malformed tags in rich text, aka \"Excel Rich Text Validation Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17318,7 +17318,7 @@
     {
       "cve_id": "CVE-2008-0117",
       "published_date": "2008-03-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Excel 2000 SP3 and 2002 SP2, and Office 2004 and 2008 for Mac, allows user-assisted remote attackers to execute arbitrary code via crafted conditional formatting values, aka \"Excel Conditional Formatting Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17339,7 +17339,7 @@
     {
       "cve_id": "CVE-2008-0118",
       "published_date": "2008-03-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Office 2000 SP3, XP SP3, 2003 SP2, Excel Viewer 2003 up to SP3, and Office 2004 for Mac allows user-assisted remote attackers to execute arbitrary code via a crafted Office document that triggers memory corruption from an \"allocation error,\" aka \"Microsoft Office Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17360,7 +17360,7 @@
     {
       "cve_id": "CVE-2008-0103",
       "published_date": "2008-02-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Office 2000 SP3, Office XP SP3, Office 2003 SP2, and Office 2004 for Mac allows remote attackers to execute arbitrary code via an Office document that contains a malformed object, related to a \"memory handling error,\" aka \"Microsoft Office Execution Jump Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17381,7 +17381,7 @@
     {
       "cve_id": "CVE-2007-0065",
       "published_date": "2008-02-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in Object Linking and Embedding (OLE) Automation in Microsoft Windows 2000 SP4, XP SP2, Server 2003 SP1 and SP2, Vista, Office 2004 for Mac, and Visual basic 6.0 SP6 allows remote attackers to execute arbitrary code via a crafted script request.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -17402,7 +17402,7 @@
     {
       "cve_id": "CVE-2007-0216",
       "published_date": "2008-02-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "wkcvqd01.dll in Microsoft Works 6 File Converter, as used in Office 2003 SP2, Works 8.0, and Works Suite 2005, allows remote attackers to execute arbitrary code via a .wps file with crafted section length headers, aka \"Microsoft Works File Converter Input Validation Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17423,7 +17423,7 @@
     {
       "cve_id": "CVE-2008-0104",
       "published_date": "2008-02-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Office Publisher 2000, 2002, and 2003 SP2 allows remote attackers to execute arbitrary code via a crafted .pub file, aka \"Publisher Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17444,7 +17444,7 @@
     {
       "cve_id": "CVE-2008-0105",
       "published_date": "2008-02-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Works 6 File Converter, as used in Office 2003 SP2 and SP3, Works 8.0, and Works Suite 2005, allows remote attackers to execute arbitrary code via a .wps file with crafted section header index table information, aka \"Microsoft Works File Converter Index Table Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17465,7 +17465,7 @@
     {
       "cve_id": "CVE-2008-0108",
       "published_date": "2008-02-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in wkcvqd01.dll in Microsoft Works 6 File Converter, as used in Office 2003 SP2 and SP3, Works 8.0, and Works Suite 2005, allows remote attackers to execute arbitrary code via a .wps file with crafted field lengths, aka \"Microsoft Works File Converter Field Length Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17486,7 +17486,7 @@
     {
       "cve_id": "CVE-2008-0109",
       "published_date": "2008-02-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Word in Microsoft Office 2000 SP3, XP SP3, Office 2003 SP2, and Office Word Viewer 2003 allows remote attackers to execute arbitrary code via crafted fields within the File Information Block (FIB) of a Word file, which triggers length calculation errors and memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17507,7 +17507,7 @@
     {
       "cve_id": "CVE-2007-6026",
       "published_date": "2007-11-20",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in Microsoft msjet40.dll 4.0.8618.0 (aka Microsoft Jet Engine), as used by Access 2003 in Microsoft Office 2003 SP3, allows user-assisted attackers to execute arbitrary code via a crafted MDB file database file containing a column structure with a modified column count.  NOTE: this might be the same issue as CVE-2005-0944.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17528,7 +17528,7 @@
     {
       "cve_id": "CVE-2007-3899",
       "published_date": "2007-10-09",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Word 2000 SP3, Word 2002 SP3, and Office 2004 for Mac allows user-assisted remote attackers to execute arbitrary code via a malformed string in a Word file, aka \"Word Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17549,7 +17549,7 @@
     {
       "cve_id": "CVE-2007-2223",
       "published_date": "2007-08-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft XML Core Services (MSXML) 3.0 through 6.0 allows remote attackers to execute arbitrary code via the substringData method on a (1) TextNode or (2) XMLDOM object, which causes an integer overflow that leads to a buffer overflow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17570,7 +17570,7 @@
     {
       "cve_id": "CVE-2007-2224",
       "published_date": "2007-08-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Object linking and embedding (OLE) Automation, as used in Microsoft Windows 2000 SP4, XP SP2, Server 2003 SP1 and SP2, Office 2004 for Mac, and Visual Basic 6.0 allows remote attackers to execute arbitrary code via the substringData method on a TextNode object, which causes an integer overflow that leads to a buffer overflow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17591,7 +17591,7 @@
     {
       "cve_id": "CVE-2007-3890",
       "published_date": "2007-08-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Excel in Office 2000 SP3, Office XP SP3, Office 2003 SP2, and Office 2004 for Mac allows remote attackers to execute arbitrary code via a Workspace with a certain index value that triggers memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17612,7 +17612,7 @@
     {
       "cve_id": "CVE-2007-1756",
       "published_date": "2007-07-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, 2003 Viewer, and Office Excel 2007 does not properly validate version information, which allows user-assisted remote attackers to execute arbitrary code via a crafted Excel file, aka \"Calculation Error Vulnerability\".",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17633,7 +17633,7 @@
     {
       "cve_id": "CVE-2007-3029",
       "published_date": "2007-07-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Excel 2002 SP3 and 2003 SP2 allows user-assisted remote attackers to execute arbitrary code via a malformed Excel file containing multiple active worksheets, which results in memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17654,7 +17654,7 @@
     {
       "cve_id": "CVE-2007-3282",
       "published_date": "2007-06-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in the Microsoft Office MSODataSourceControl ActiveX object allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a long argument to the DeleteRecordSourceIfUnused method.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -17675,7 +17675,7 @@
     {
       "cve_id": "CVE-2007-0936",
       "published_date": "2007-06-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple unspecified vulnerabilities in Microsoft Visio 2002 allow remote user-assisted attackers to execute arbitrary code via a Visio (.VSD, VSS, .VST) file with a crafted packed object that triggers memory corruption, aka \"Visio Document Packaging Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17696,7 +17696,7 @@
     {
       "cve_id": "CVE-2007-0035",
       "published_date": "2007-05-08",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Word (or Word Viewer) in Microsoft Office 2000 SP3, XP SP3, 2003 SP2, 2004 for Mac, and Works Suite 2004, 2005, and 2006 does not properly handle data in a certain array, which allows user-assisted remote attackers to execute arbitrary code, aka the \"Word Array Overflow Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17717,7 +17717,7 @@
     {
       "cve_id": "CVE-2007-0215",
       "published_date": "2007-05-08",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, and 2003 Viewer allows user-assisted remote attackers to execute arbitrary code via a .XLS BIFF file with a malformed Named Graph record, which results in memory corruption.",
       "base_score": 7.6,
       "severity": "HIGH",
@@ -17738,7 +17738,7 @@
     {
       "cve_id": "CVE-2007-1747",
       "published_date": "2007-05-08",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in MSO.dll in Microsoft Office 2000 SP3, 2002 SP3, 2003 SP2, 2004 for Mac, and 2007 allows user-assisted remote attackers to execute arbitrary code via a malformed drawing object, which triggers memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17759,7 +17759,7 @@
     {
       "cve_id": "CVE-2006-1311",
       "published_date": "2007-02-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The RichEdit component in Microsoft Windows 2000 SP4, XP SP2, and 2003 SP1; Office 2000 SP3, XP SP3, 2003 SP2, and Office 2004 for Mac; and Learning Essentials for Microsoft Office 1.0, 1.1, and 1.5 allows user-assisted remote attackers to execute arbitrary code via a malformed OLE object in an RTF file, which triggers memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17780,7 +17780,7 @@
     {
       "cve_id": "CVE-2007-0208",
       "published_date": "2007-02-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Word in Office 2000 SP3, XP SP3, Office 2003 SP2, Works Suite 2004 to 2006, and Office 2004 for Mac does not correctly check the properties of certain documents and warn the user of macro content, which allows user-assisted remote attackers to execute arbitrary code.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17801,7 +17801,7 @@
     {
       "cve_id": "CVE-2007-0209",
       "published_date": "2007-02-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Word in Office 2000 SP3, XP SP3, Office 2003 SP2, Works Suite 2004 to 2006, and Office 2004 for Mac allows user-assisted remote attackers to execute arbitrary code via a Word file with a malformed drawing object, which leads to memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17822,7 +17822,7 @@
     {
       "cve_id": "CVE-2007-0515",
       "published_date": "2007-01-26",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Word allows user-assisted remote attackers to execute arbitrary code on Word 2000, and cause a denial of service on Word 2003, via unknown attack vectors that trigger memory corruption, as exploited by Trojan.Mdropper.W and later by Trojan.Mdropper.X, a different issue than CVE-2006-6456, CVE-2006-5994, and CVE-2006-6561.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17843,7 +17843,7 @@
     {
       "cve_id": "CVE-2007-0027",
       "published_date": "2007-01-09",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, 2004 for Mac, and v.X for Mac allows remote attackers to execute arbitrary code via malformed IMDATA records that trigger memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17864,7 +17864,7 @@
     {
       "cve_id": "CVE-2007-0028",
       "published_date": "2007-01-09",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Excel 2000, 2002, 2003, Viewer 2003, Office 2004 for Mac, and Office v.X for Mac does not properly handle certain opcodes, which allows user-assisted remote attackers to execute arbitrary code via a crafted XLS file, which results in an \"Improper Memory Access Vulnerability.\"  NOTE: an early disclosure of this issue used CVE-2006-3432, but only CVE-2007-0028 should be used.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17885,7 +17885,7 @@
     {
       "cve_id": "CVE-2007-0029",
       "published_date": "2007-01-09",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, 2004 for Mac, and v.X for Mac allows user-assisted remote attackers to execute arbitrary code via a malformed string, aka \"Excel Malformed String Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17906,7 +17906,7 @@
     {
       "cve_id": "CVE-2007-0030",
       "published_date": "2007-01-09",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, 2004 for Mac, and v.X for Mac allows user-assisted remote attackers to execute arbitrary code via an Excel file with an out-of-range Column field in certain BIFF8 record types, which references arbitrary memory.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17927,7 +17927,7 @@
     {
       "cve_id": "CVE-2007-0031",
       "published_date": "2007-01-09",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in Microsoft Excel 2000 SP3, 2002 SP3, 2003 SP2, 2004 for Mac, and v.X for Mac allows user-assisted remote attackers to execute arbitrary code via a BIFF8 spreadsheet with a PALETTE record that contains a large number of entries.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17948,7 +17948,7 @@
     {
       "cve_id": "CVE-2007-0033",
       "published_date": "2007-01-09",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Outlook 2002 and 2003 allows user-assisted remote attackers to execute arbitrary code via a malformed VEVENT record in an .iCal meeting request or ICS file.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17969,7 +17969,7 @@
     {
       "cve_id": "CVE-2007-0034",
       "published_date": "2007-01-09",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in the Advanced Search (Finder.exe) feature of Microsoft Outlook 2000, 2002, and 2003 allows user-assisted remote attackers to execute arbitrary code via a crafted Outlook Saved Searches (OSS) file that triggers memory corruption, aka \"Microsoft Outlook Advanced Find Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17990,7 +17990,7 @@
     {
       "cve_id": "CVE-2006-5574",
       "published_date": "2006-12-31",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the Brazilian Portuguese Grammar Checker in Microsoft Office 2003 and the Multilingual Interface for Office 2003, Project 2003, and Visio 2003 allows user-assisted remote attackers to execute arbitrary code via crafted text that is not properly parsed.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18011,7 +18011,7 @@
     {
       "cve_id": "CVE-2006-6561",
       "published_date": "2006-12-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Word 2000, 2002, and Word Viewer 2003 allows user-assisted remote attackers to execute arbitrary code via a crafted DOC file that triggers memory corruption, as demonstrated via the 12122006-djtest.doc file, a different issue than CVE-2006-5994 and CVE-2006-6456.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18032,7 +18032,7 @@
     {
       "cve_id": "CVE-2006-6456",
       "published_date": "2006-12-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Word 2000, 2002, and 2003 and Word Viewer 2003 allows remote attackers to execute code via unspecified vectors related to malformed data structures that trigger memory corruption, a different vulnerability than CVE-2006-5994.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18053,7 +18053,7 @@
     {
       "cve_id": "CVE-2006-5994",
       "published_date": "2006-12-06",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Word 2000 and 2002, Office Word and Word Viewer 2003, Word 2004 and 2004 v. X for Mac, and Works 2004, 2005, and 2006 allows remote attackers to execute arbitrary code via a Word document with a malformed string that triggers memory corruption, a different vulnerability than CVE-2006-6456.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18074,7 +18074,7 @@
     {
       "cve_id": "CVE-2006-3435",
       "published_date": "2006-10-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "PowerPoint in Microsoft Office 2000, XP, 2003, 2004 for Mac, and v.X for Mac does not properly parse the slide notes field in a document, which allows remote user-assisted attackers to execute arbitrary code via crafted data in this field, which triggers an erroneous object pointer calculation that uses data from within the document. NOTE: this issue is different than other PowerPoint vulnerabilities including CVE-2006-4694.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18095,7 +18095,7 @@
     {
       "cve_id": "CVE-2006-3876",
       "published_date": "2006-10-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in PowerPoint in Microsoft Office 2000, Office 2002, Office 2003, Office 2004 for Mac, and Office v.X for Mac allows user-assisted attackers to execute arbitrary code via a crafted Data record in a PPT file, a different vulnerability than CVE-2006-3435 and CVE-2006-4694.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18116,7 +18116,7 @@
     {
       "cve_id": "CVE-2006-3434",
       "published_date": "2006-10-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Office 2000, XP, 2003, 2004 for Mac, and v.X for Mac allows remote user-assisted attackers to execute arbitrary code via a crafted string that triggers memory corruption.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18137,7 +18137,7 @@
     {
       "cve_id": "CVE-2006-3647",
       "published_date": "2006-10-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in Microsoft Word 2000, 2002, 2003, 2004 for Mac, and v.X for Mac allows remote user-assisted attackers to execute arbitrary code via a crafted string in a Word document, which overflows a 16-bit integer length value, aka \"Memmove Code Execution,\" a different vulnerability than CVE-2006-3651 and CVE-2006-4693.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18158,7 +18158,7 @@
     {
       "cve_id": "CVE-2006-3650",
       "published_date": "2006-10-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office 2000, XP, 2003, 2004 for Mac, and v.X for Mac do not properly parse the length of a chart record, which allows remote user-assisted attackers to execute arbitrary code via a Word document with an embedded malformed chart record that triggers an overwrite of pointer values with values from the document, a different vulnerability than CVE-2006-3434, CVE-2006-3864, and CVE-2006-3868.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18179,7 +18179,7 @@
     {
       "cve_id": "CVE-2006-3651",
       "published_date": "2006-10-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Word 2000, 2002, and Office 2003 allows remote user-assisted attackers to execute arbitrary code via a crafted mail merge file, a different vulnerability than CVE-2006-3647 and CVE-2006-4693.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18200,7 +18200,7 @@
     {
       "cve_id": "CVE-2006-3864",
       "published_date": "2006-10-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in mso.dll in Microsoft Office 2000, XP, and 2003, and Microsoft PowerPoint 2000, XP, and 2003, allows remote user-assisted attackers to execute arbitrary code via a malformed record in a (1) .DOC, (2) .PPT, or (3) .XLS file that triggers memory corruption, related to an \"array boundary condition\" (possibly an array index overflow), a different vulnerability than CVE-2006-3434, CVE-2006-3650, and CVE-2006-3868.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18221,7 +18221,7 @@
     {
       "cve_id": "CVE-2006-3877",
       "published_date": "2006-10-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in PowerPoint in Microsoft Office 2000, Office 2002, Office 2003, Office 2004 for Mac, and Office v.X for Mac allows user-assisted attackers to execute arbitrary code via an unspecified \"crafted file,\" a different vulnerability than CVE-2006-3435, CVE-2006-4694, and CVE-2006-3876.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18242,7 +18242,7 @@
     {
       "cve_id": "CVE-2006-4693",
       "published_date": "2006-10-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Word 2004 for Mac and v.X for Mac allows remote user-assisted attackers to execute arbitrary code via a crafted string in a Word file, a different issue than CVE-2006-3647 and CVE-2006-3651.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18263,7 +18263,7 @@
     {
       "cve_id": "CVE-2006-4694",
       "published_date": "2006-09-27",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in PowerPoint in Microsoft Office 2000, Office XP and Office 2003 allows user-assisted attackers to execute arbitrary code via a crafted record in a PPT file, as exploited by malware such as Exploit:Win32/Controlppt.W, Exploit:Win32/Controlppt.X, and Exploit-PPT.d/Trojan.PPDropper.F. NOTE: it has been reported that the attack vector involves SlideShowWindows.View.GotoNamedShow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -21770,7 +21770,7 @@
     {
       "cve_id": "CVE-2008-7217",
       "published_date": "2009-09-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office 2008 for Mac, when running on Macintosh systems that restrict Office access to administrators, does not enforce this restriction for user ID 502, which allows local users with that ID to bypass intended security policy and access Office programs, related to permissions and ownership for certain directories.",
       "base_score": 4.6,
       "severity": "MEDIUM",
@@ -21791,7 +21791,7 @@
     {
       "cve_id": "CVE-2008-4033",
       "published_date": "2008-11-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Cross-domain vulnerability in Microsoft XML Core Services 3.0 through 6.0, as used in Microsoft Expression Web, Office, Internet Explorer, and other products, allows remote attackers to obtain sensitive information from another domain and corrupt the session state via HTTP request header fields, as demonstrated by the Transfer-Encoding field, aka \"MSXML Header Request Vulnerability.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -21812,7 +21812,7 @@
     {
       "cve_id": "CVE-2008-4020",
       "published_date": "2008-10-15",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Cross-site scripting (XSS) vulnerability in Microsoft Office XP SP3 allows remote attackers to inject arbitrary web script or HTML via a document that contains a \"Content-Disposition: attachment\" header and is accessed through a cdo: URL, which renders the content instead of raising a File Download dialog box, aka \"Vulnerability in Content-Disposition Header Vulnerability.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -21833,7 +21833,7 @@
     {
       "cve_id": "CVE-2008-1455",
       "published_date": "2008-08-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "A \"memory calculation error\" in Microsoft Office PowerPoint 2000 SP3, 2002 SP3, 2003 SP2, and 2007 through SP1; Office Compatibility Pack for Word, Excel, and PowerPoint 2007 through SP1; and Office 2004 for Mac allows remote attackers to execute arbitrary code via a PowerPoint file with crafted list values that trigger memory corruption, aka \"Parsing Overflow Vulnerability.\"",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -21854,7 +21854,7 @@
     {
       "cve_id": "CVE-2008-3003",
       "published_date": "2008-08-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office Excel 2007 Gold and SP1 does not properly delete the PWD (password) string from connections.xml when a .xlsx file is configured not to save the remote data session password, which allows local users to obtain sensitive information and obtain access to a remote data source, aka the \"Excel Credential Caching Vulnerability.\"",
       "base_score": 6.6,
       "severity": "MEDIUM",
@@ -21875,7 +21875,7 @@
     {
       "cve_id": "CVE-2007-6329",
       "published_date": "2007-12-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office 2007 12.0.6015.5000 and MSO 12.0.6017.5000 do not sign the metadata of Office Open XML (OOXML) documents, which makes it easier for remote attackers to modify Dublin Core metadata fields, as demonstrated by the (1) LastModifiedBy and (2) creator fields in docProps/core.xml in the OOXML ZIP container.",
       "base_score": 6.4,
       "severity": "MEDIUM",
@@ -21896,7 +21896,7 @@
     {
       "cve_id": "CVE-2007-3109",
       "published_date": "2007-06-07",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The CERN Image Map Dispatcher (htimage.exe) in Microsoft FrontPage allows remote attackers to determine the existence, and possibly partial contents, of arbitrary files under the web root via a relative pathname in the PATH_INFO.",
       "base_score": 6.4,
       "severity": "MEDIUM",
@@ -21917,7 +21917,7 @@
     {
       "cve_id": "CVE-2007-2903",
       "published_date": "2007-05-30",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in the HelpPopup method in the Microsoft Office 2000 Controllo UA di Microsoft Office ActiveX control (OUACTRL.OCX) 1.0.1.9 allows remote attackers to cause a denial of service (probably winhlp32.exe crash) via a long first argument.  NOTE: it is not clear whether this issue crosses privilege boundaries.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -21938,7 +21938,7 @@
     {
       "cve_id": "CVE-2007-1238",
       "published_date": "2007-03-03",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Office 2003 allows user-assisted remote attackers to cause a denial of service (application crash) by attempting to insert a corrupted WMF file.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -21959,7 +21959,7 @@
     {
       "cve_id": "CVE-2006-1305",
       "published_date": "2006-12-31",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Microsoft Outlook 2000, 2002, and 2003 allows user-assisted remote attackers to cause a denial of service (memory exhaustion and interrupted mail recovery) via malformed e-mail header information, possibly related to (1) long subject lines or (2) large numbers of recipients in To or CC headers.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -21980,7 +21980,7 @@
     {
       "cve_id": "CVE-2006-2387",
       "published_date": "2006-10-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Excel 2000, 2002, 2003, 2004 for Mac, v.X for Mac, Excel Viewer 2003, and Microsoft Works Suite 2004 through 2006 allows user-assisted attackers to execute arbitrary code via a crafted DATETIME record in an XLS file, a different vulnerability than CVE-2006-3867 and CVE-2006-3875.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -22001,7 +22001,7 @@
     {
       "cve_id": "CVE-2006-3868",
       "published_date": "2006-10-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Microsoft Office XP and 2003 allows remote user-assisted attackers to execute arbitrary code via a malformed Smart Tag.",
       "base_score": 5.1,
       "severity": "MEDIUM",

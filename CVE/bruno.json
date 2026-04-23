@@ -1,16 +1,37 @@
 {
   "app_name": "Bruno",
   "app_key": "bruno",
-  "last_updated": "2026-04-22",
-  "total_cves": 3,
+  "last_updated": "2026-04-23",
+  "total_cves": 4,
   "summary": {
-    "critical": 0,
+    "critical": 1,
     "high": 0,
     "medium": 3,
     "low": 0,
     "kev_count": 0
   },
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2026-34841",
+      "published_date": "2026-04-06",
+      "last_modified_date": "2026-04-22",
+      "description": "Bruno is an open source IDE for exploring and testing APIs. Prior to 3.2.1, Bruno was affected by a supply chain attack involving compromised versions of the axios npm package, which introduced a hidden dependency deploying a cross-platform Remote Access Trojan (RAT). Users of @usebruno/cli who ran npm install between 00:21 UTC and ~03:30 UTC on March 31, 2026 may have been impacted. Upgrade to 3.2.1",
+      "base_score": 9.8,
+      "severity": "CRITICAL",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "3.2.1",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "3.2.1",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "usebruno",
+      "product": "bruno"
+    },
     {
       "cve_id": "CVE-2025-30210",
       "published_date": "2025-04-01",

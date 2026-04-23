@@ -1,7 +1,7 @@
 {
   "app_name": "Wireshark",
   "app_key": "wireshark",
-  "last_updated": "2026-04-22",
+  "last_updated": "2026-04-23",
   "total_cves": 692,
   "summary": {
     "critical": 1,
@@ -4634,7 +4634,7 @@
     {
       "cve_id": "CVE-2009-4376",
       "published_date": "2009-12-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in the daintree_sna_read function in the Daintree SNA file parser in Wireshark 1.2.0 through 1.2.4 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a crafted packet.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -4655,7 +4655,7 @@
     {
       "cve_id": "CVE-2009-3829",
       "published_date": "2009-10-30",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in wiretap/erf.c in Wireshark before 1.2.2 allows remote attackers to execute arbitrary code or cause a denial of service (application crash) via a crafted erf file, related to an \"unsigned integer wrap vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -4676,7 +4676,7 @@
     {
       "cve_id": "CVE-2009-3241",
       "published_date": "2009-09-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the OpcUa (OPC UA) dissector in Wireshark 0.99.6 through 1.0.8 and 1.2.0 through 1.2.1 allows remote attackers to cause a denial of service (memory and CPU consumption) via malformed OPCUA Service CallRequest packets.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -4697,7 +4697,7 @@
     {
       "cve_id": "CVE-2009-2563",
       "published_date": "2009-07-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the Infiniband dissector in Wireshark 1.0.6 through 1.2.0, when running on unspecified platforms, allows remote attackers to cause a denial of service (crash) via unknown vectors.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -4718,7 +4718,7 @@
     {
       "cve_id": "CVE-2009-1266",
       "published_date": "2009-04-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Wireshark before 1.0.7 has unknown impact and attack vectors.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -4739,7 +4739,7 @@
     {
       "cve_id": "CVE-2009-1210",
       "published_date": "2009-04-01",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Format string vulnerability in the PROFINET/DCP (PN-DCP) dissector in Wireshark 1.0.6 and earlier allows remote attackers to execute arbitrary code via a PN-DCP packet with format string specifiers in the station name.  NOTE: some of these details are obtained from third party information.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -4760,7 +4760,7 @@
     {
       "cve_id": "CVE-2008-3146",
       "published_date": "2008-09-02",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple buffer overflows in packet_ncp2222.inc in Wireshark (formerly Ethereal) 0.9.7 through 1.0.2 allow attackers to cause a denial of service (application crash) and possibly execute arbitrary code via a crafted NCP packet that causes an invalid pointer to be used.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -4781,7 +4781,7 @@
     {
       "cve_id": "CVE-2007-6111",
       "published_date": "2007-11-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple unspecified vulnerabilities in Wireshark (formerly Ethereal) allow remote attackers to cause a denial of service (crash) via (1) a crafted MP3 file or (2) unspecified vectors to the NCP dissector.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -4802,7 +4802,7 @@
     {
       "cve_id": "CVE-2007-6112",
       "published_date": "2007-11-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in the PPP dissector Wireshark (formerly Ethereal) 0.99.6 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via unknown vectors.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -4823,7 +4823,7 @@
     {
       "cve_id": "CVE-2007-6114",
       "published_date": "2007-11-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple buffer overflows in Wireshark (formerly Ethereal) 0.99.0 through 0.99.6 allow remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via (1) the SSL dissector or (2) the iSeries (OS/400) Communication trace file parser.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -4844,7 +4844,7 @@
     {
       "cve_id": "CVE-2007-6115",
       "published_date": "2007-11-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in the ANSI MAP dissector for Wireshark (formerly Ethereal) 0.99.5 to 0.99.6, when running on unspecified platforms, allows remote attackers to cause a denial of service and possibly execute arbitrary code via unknown vectors.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -4865,7 +4865,7 @@
     {
       "cve_id": "CVE-2007-6118",
       "published_date": "2007-11-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The MEGACO dissector in Wireshark (formerly Ethereal) 0.9.14 to 0.99.6 allows remote attackers to cause a denial of service (long loop and resource consumption) via unknown vectors.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -4886,7 +4886,7 @@
     {
       "cve_id": "CVE-2007-6119",
       "published_date": "2007-11-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The DCP ETSI dissector in Wireshark (formerly Ethereal) 0.99.6 allows remote attackers to cause a denial of service (long loop and resource consumption) via unknown vectors.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -4907,7 +4907,7 @@
     {
       "cve_id": "CVE-2007-3391",
       "published_date": "2007-06-26",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Wireshark 0.99.5 allows remote attackers to cause a denial of service (memory consumption) via a malformed DCP ETSI packet that triggers an infinite loop.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -4928,7 +4928,7 @@
     {
       "cve_id": "CVE-2006-4574",
       "published_date": "2006-10-28",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Off-by-one error in the MIME Multipart dissector in Wireshark (formerly Ethereal) 0.10.1 through 0.99.3 allows remote attackers to cause a denial of service (crash) via certain vectors that trigger an assertion error related to unexpected length values.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11816,7 +11816,7 @@
     {
       "cve_id": "CVE-2009-4377",
       "published_date": "2009-12-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The (1) SMB and (2) SMB2 dissectors in Wireshark 0.9.0 through 1.2.4 allow remote attackers to cause a denial of service (crash) via a crafted packet that triggers a NULL pointer dereference, as demonstrated by fuzz-2009-12-07-11141.pcap.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -11837,7 +11837,7 @@
     {
       "cve_id": "CVE-2009-4378",
       "published_date": "2009-12-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The IPMI dissector in Wireshark 1.2.0 through 1.2.4 on Windows allows remote attackers to cause a denial of service (crash) via a crafted packet, related to \"formatting a date/time using strftime.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -11858,7 +11858,7 @@
     {
       "cve_id": "CVE-2009-3549",
       "published_date": "2009-10-30",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "packet-paltalk.c in the Paltalk dissector in Wireshark 1.2.0 through 1.2.2, on SPARC and certain other platforms, allows remote attackers to cause a denial of service (application crash) via a file that records a malformed packet trace.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -11879,7 +11879,7 @@
     {
       "cve_id": "CVE-2009-3550",
       "published_date": "2009-10-30",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The DCERPC/NT dissector in Wireshark 0.10.10 through 1.0.9 and 1.2.0 through 1.2.2 allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a file that records a malformed packet trace.  NOTE: some of these details are obtained from third party information.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -11900,7 +11900,7 @@
     {
       "cve_id": "CVE-2009-3551",
       "published_date": "2009-10-30",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Off-by-one error in the dissect_negprot_response function in packet-smb.c in the SMB dissector in Wireshark 1.2.0 through 1.2.2 allows remote attackers to cause a denial of service (application crash) via a file that records a malformed packet trace.  NOTE: some of these details are obtained from third party information.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -11921,7 +11921,7 @@
     {
       "cve_id": "CVE-2009-3242",
       "published_date": "2009-09-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in packet.c in the GSM A RR dissector in Wireshark 1.2.0 and 1.2.1 allows remote attackers to cause a denial of service (application crash) via unknown vectors related to \"an uninitialized dissector handle,\" which triggers an assertion failure.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -11942,7 +11942,7 @@
     {
       "cve_id": "CVE-2009-3243",
       "published_date": "2009-09-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the TLS dissector in Wireshark 1.2.0 and 1.2.1, when running on Windows, allows remote attackers to cause a denial of service (application crash) via unknown vectors related to TLS 1.2 conversations.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -11963,7 +11963,7 @@
     {
       "cve_id": "CVE-2009-2559",
       "published_date": "2009-07-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in the IPMI dissector in Wireshark 1.2.0 allows remote attackers to cause a denial of service (crash) via unspecified vectors related to an array index error.  NOTE: some of these details are obtained from third party information.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -11984,7 +11984,7 @@
     {
       "cve_id": "CVE-2009-2560",
       "published_date": "2009-07-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple unspecified vulnerabilities in Wireshark 1.2.0 allow remote attackers to cause a denial of service (application crash) via a file that records a malformed packet trace and is processed by the (1) Bluetooth L2CAP, (2) RADIUS, or (3) MIOP dissector. NOTE: it was later reported that the RADIUS issue also affects 0.10.13 through 1.0.9.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12005,7 +12005,7 @@
     {
       "cve_id": "CVE-2009-2561",
       "published_date": "2009-07-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the sFlow dissector in Wireshark 1.2.0 allows remote attackers to cause a denial of service (CPU and memory consumption) via unspecified vectors.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12026,7 +12026,7 @@
     {
       "cve_id": "CVE-2009-2562",
       "published_date": "2009-07-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the AFS dissector in Wireshark 0.9.2 through 1.2.0 allows remote attackers to cause a denial of service (crash) via unknown vectors.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12047,7 +12047,7 @@
     {
       "cve_id": "CVE-2009-1829",
       "published_date": "2009-05-29",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the PCNFSD dissector in Wireshark 0.8.20 through 1.0.7 allows remote attackers to cause a denial of service (crash) via crafted PCNFSD packets.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12068,7 +12068,7 @@
     {
       "cve_id": "CVE-2009-1267",
       "published_date": "2009-04-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the LDAP dissector in Wireshark 0.99.2 through 1.0.6, when running on Windows, allows remote attackers to cause a denial of service (crash) via unknown attack vectors.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12089,7 +12089,7 @@
     {
       "cve_id": "CVE-2009-1268",
       "published_date": "2009-04-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The Check Point High-Availability Protocol (CPHAP) dissector in Wireshark 0.9.6 through 1.0.6 allows remote attackers to cause a denial of service (crash) via a crafted FWHA_MY_STATE packet.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12110,7 +12110,7 @@
     {
       "cve_id": "CVE-2009-1269",
       "published_date": "2009-04-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Wireshark 0.99.6 through 1.0.6 allows remote attackers to cause a denial of service (crash) via a crafted Tektronix .rf5 file.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12131,7 +12131,7 @@
     {
       "cve_id": "CVE-2008-6472",
       "published_date": "2009-03-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The WLCCP dissector in Wireshark 0.99.7 through 1.0.4 allows remote attackers to cause a denial of service (infinite loop) via unspecified vectors.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12152,7 +12152,7 @@
     {
       "cve_id": "CVE-2009-0599",
       "published_date": "2009-02-16",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in wiretap/netscreen.c in Wireshark 0.99.7 through 1.0.5 allows user-assisted remote attackers to cause a denial of service (application crash) via a malformed NetScreen snoop file.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12173,7 +12173,7 @@
     {
       "cve_id": "CVE-2009-0600",
       "published_date": "2009-02-16",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Wireshark 0.99.6 through 1.0.5 allows user-assisted remote attackers to cause a denial of service (application crash) via a crafted Tektronix K12 text capture file, as demonstrated by a file with exactly one frame.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12194,7 +12194,7 @@
     {
       "cve_id": "CVE-2008-5285",
       "published_date": "2008-12-01",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Wireshark 1.0.4 and earlier allows remote attackers to cause a denial of service via a long SMTP request, which triggers an infinite loop.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12215,7 +12215,7 @@
     {
       "cve_id": "CVE-2008-4680",
       "published_date": "2008-10-22",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "packet-usb.c in the USB dissector in Wireshark 0.99.7 through 1.0.3 allows remote attackers to cause a denial of service (application crash or abort) via a malformed USB Request Block (URB).",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12236,7 +12236,7 @@
     {
       "cve_id": "CVE-2008-4681",
       "published_date": "2008-10-22",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the Bluetooth RFCOMM dissector in Wireshark 0.99.7 through 1.0.3 allows remote attackers to cause a denial of service (application crash or abort) via unknown packets.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12257,7 +12257,7 @@
     {
       "cve_id": "CVE-2008-4682",
       "published_date": "2008-10-22",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "wtap.c in Wireshark 0.99.7 through 1.0.3 allows remote attackers to cause a denial of service (application abort) via a malformed Tamos CommView capture file (aka .ncf file) with an \"unknown/unexpected packet type\" that triggers a failed assertion.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12278,7 +12278,7 @@
     {
       "cve_id": "CVE-2008-4683",
       "published_date": "2008-10-22",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The dissect_btacl function in packet-bthci_acl.c in the Bluetooth ACL dissector in Wireshark 0.99.2 through 1.0.3 allows remote attackers to cause a denial of service (application crash or abort) via a packet with an invalid length, related to an erroneous tvb_memcpy call.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12299,7 +12299,7 @@
     {
       "cve_id": "CVE-2008-4684",
       "published_date": "2008-10-22",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "packet-frame in Wireshark 0.99.2 through 1.0.3 does not properly handle exceptions thrown by post dissectors, which allows remote attackers to cause a denial of service (application crash) via a certain series of packets, as demonstrated by enabling the (1) PRP or (2) MATE post dissector.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12320,7 +12320,7 @@
     {
       "cve_id": "CVE-2008-4685",
       "published_date": "2008-10-22",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Use-after-free vulnerability in the dissect_q931_cause_ie function in packet-q931.c in the Q.931 dissector in Wireshark 0.10.3 through 1.0.3 allows remote attackers to cause a denial of service (application crash or abort) via certain packets that trigger an exception.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12341,7 +12341,7 @@
     {
       "cve_id": "CVE-2008-3932",
       "published_date": "2008-09-04",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Wireshark (formerly Ethereal) 0.9.7 through 1.0.2 allows attackers to cause a denial of service (hang) via a crafted NCP packet that triggers an infinite loop.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12362,7 +12362,7 @@
     {
       "cve_id": "CVE-2008-3145",
       "published_date": "2008-07-16",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The fragment_add_work function in epan/reassemble.c in Wireshark 0.8.19 through 1.0.1 allows remote attackers to cause a denial of service (crash) via a series of fragmented packets with non-sequential fragmentation offset values, which lead to a buffer over-read.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12383,7 +12383,7 @@
     {
       "cve_id": "CVE-2008-3137",
       "published_date": "2008-07-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The GSM SMS dissector in Wireshark (formerly Ethereal) 0.99.2 through 1.0.0 allows remote attackers to cause a denial of service (application crash) via unknown vectors.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12404,7 +12404,7 @@
     {
       "cve_id": "CVE-2008-3138",
       "published_date": "2008-07-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The (1) PANA and (2) KISMET dissectors in Wireshark (formerly Ethereal) 0.99.3 through 1.0.0 allow remote attackers to cause a denial of service (application stop) via unknown vectors.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12425,7 +12425,7 @@
     {
       "cve_id": "CVE-2008-3139",
       "published_date": "2008-07-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The RTMPT dissector in Wireshark (formerly Ethereal) 0.99.8 through 1.0.0 allows remote attackers to cause a denial of service (crash) via unknown vectors.  NOTE: this might be due to a use-after-free error.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12446,7 +12446,7 @@
     {
       "cve_id": "CVE-2008-3140",
       "published_date": "2008-07-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The syslog dissector in Wireshark (formerly Ethereal) 1.0.0 allows remote attackers to cause a denial of service (application crash) via unknown vectors, possibly related to an \"incomplete SS7 MSU syslog encapsulated packet.\"",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12467,7 +12467,7 @@
     {
       "cve_id": "CVE-2008-3141",
       "published_date": "2008-07-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the RMI dissector in Wireshark (formerly Ethereal) 0.9.5 through 1.0.0 allows remote attackers to read system memory via unspecified vectors.",
       "base_score": 4.9,
       "severity": "MEDIUM",
@@ -12488,7 +12488,7 @@
     {
       "cve_id": "CVE-2008-1561",
       "published_date": "2008-03-31",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple unspecified vulnerabilities in Wireshark (formerly Ethereal) 0.99.5 through 0.99.8 allow remote attackers to cause a denial of service (application crash) via a malformed packet to the (1) X.509sat or (2) Roofnet dissectors.  NOTE: Vector 2 might also lead to a hang.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12509,7 +12509,7 @@
     {
       "cve_id": "CVE-2008-1562",
       "published_date": "2008-03-31",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The LDAP dissector in Wireshark (formerly Ethereal) 0.99.2 through 0.99.8 allows remote attackers to cause a denial of service (application crash) via a malformed packet, a different vulnerability than CVE-2006-5740.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12530,7 +12530,7 @@
     {
       "cve_id": "CVE-2008-1563",
       "published_date": "2008-03-31",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The \"decode as\" feature in packet-bssap.c in the SCCP dissector in Wireshark (formerly Ethereal) 0.99.6 through 0.99.8 allows remote attackers to cause a denial of service (application crash) via a malformed packet.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12551,7 +12551,7 @@
     {
       "cve_id": "CVE-2008-1070",
       "published_date": "2008-02-28",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The SCTP dissector in Wireshark (formerly Ethereal) 0.99.5 through 0.99.7 allows remote attackers to cause a denial of service (crash) via a malformed packet.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12572,7 +12572,7 @@
     {
       "cve_id": "CVE-2008-1071",
       "published_date": "2008-02-28",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The SNMP dissector in Wireshark (formerly Ethereal) 0.99.6 through 0.99.7 allows remote attackers to cause a denial of service (crash) via a malformed packet.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12593,7 +12593,7 @@
     {
       "cve_id": "CVE-2008-1072",
       "published_date": "2008-02-28",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The TFTP dissector in Wireshark (formerly Ethereal) 0.6.0 through 0.99.7, when running on Ubuntu 7.10, allows remote attackers to cause a denial of service (crash or memory consumption) via a malformed packet, possibly related to a Cairo library bug.",
       "base_score": 4.7,
       "severity": "MEDIUM",
@@ -12614,7 +12614,7 @@
     {
       "cve_id": "CVE-2007-6438",
       "published_date": "2007-12-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the SMB dissector in Wireshark (formerly Ethereal) 0.99.6 allows remote attackers to cause a denial of service via unknown vectors.  NOTE: this identifier originally included MP3 and NCP, but those issues are already covered by CVE-2007-6111.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12635,7 +12635,7 @@
     {
       "cve_id": "CVE-2007-6439",
       "published_date": "2007-12-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Wireshark (formerly Ethereal) 0.99.6 allows remote attackers to cause a denial of service (infinite or large loop) via the (1) IPv6 or (2) USB dissector, which can trigger resource consumption or a crash. NOTE: this identifier originally included Firebird/Interbase, but it is already covered by CVE-2007-6116.  The DCP ETSI issue is already covered by CVE-2007-6119.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -12656,7 +12656,7 @@
     {
       "cve_id": "CVE-2007-6450",
       "published_date": "2007-12-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The RPL dissector in Wireshark (formerly Ethereal) 0.9.8 to 0.99.6 allows remote attackers to cause a denial of service (infinite loop) via unknown vectors.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12677,7 +12677,7 @@
     {
       "cve_id": "CVE-2007-6451",
       "published_date": "2007-12-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the CIP dissector in Wireshark (formerly Ethereal) 0.9.14 to 0.99.6 allows remote attackers to cause a denial of service (crash) via unknown vectors that trigger allocation of large amounts of memory.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12698,7 +12698,7 @@
     {
       "cve_id": "CVE-2007-6113",
       "published_date": "2007-11-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer signedness error in the DNP3 dissector in Wireshark (formerly Ethereal) 0.10.12 to 0.99.6 allows remote attackers to cause a denial of service (long loop) via a malformed DNP3 packet.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12719,7 +12719,7 @@
     {
       "cve_id": "CVE-2007-6116",
       "published_date": "2007-11-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The Firebird/Interbase dissector in Wireshark (formerly Ethereal) 0.99.6 allows remote attackers to cause a denial of service (infinite loop or crash) via unknown vectors.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12740,7 +12740,7 @@
     {
       "cve_id": "CVE-2007-6117",
       "published_date": "2007-11-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the HTTP dissector for Wireshark (formerly Ethereal) 0.10.14 to 0.99.6 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via crafted chunked messages.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12761,7 +12761,7 @@
     {
       "cve_id": "CVE-2007-6120",
       "published_date": "2007-11-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The Bluetooth SDP dissector Wireshark (formerly Ethereal) 0.99.2 to 0.99.6 allows remote attackers to cause a denial of service (infinite loop) via unknown vectors.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12782,7 +12782,7 @@
     {
       "cve_id": "CVE-2007-6121",
       "published_date": "2007-11-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Wireshark (formerly Ethereal) 0.8.16 to 0.99.6 allows remote attackers to cause a denial of service (crash) via a malformed RPC Portmap packet.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12803,7 +12803,7 @@
     {
       "cve_id": "CVE-2007-3389",
       "published_date": "2007-06-26",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Wireshark before 0.99.6 allows remote attackers to cause a denial of service (crash) via a crafted chunked encoding in an HTTP response, possibly related to a zero-length payload.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12824,7 +12824,7 @@
     {
       "cve_id": "CVE-2007-3390",
       "published_date": "2007-06-26",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Wireshark 0.99.5 and 0.10.x up to 0.10.14, when running on certain systems, allows remote attackers to cause a denial of service (crash) via crafted iSeries capture files that trigger a SIGTRAP.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12845,7 +12845,7 @@
     {
       "cve_id": "CVE-2007-3392",
       "published_date": "2007-06-26",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Wireshark before 0.99.6 allows remote attackers to cause a denial of service via malformed (1) SSL or (2) MMS packets that trigger an infinite loop.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12866,7 +12866,7 @@
     {
       "cve_id": "CVE-2007-3393",
       "published_date": "2007-06-26",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Off-by-one error in the DHCP/BOOTP dissector in Wireshark before 0.99.6 allows remote attackers to cause a denial of service (crash) via crafted DHCP-over-DOCSIS packets.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12887,7 +12887,7 @@
     {
       "cve_id": "CVE-2007-0456",
       "published_date": "2007-02-02",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the LLT dissector in Wireshark (formerly Ethereal) 0.99.3 and 0.99.4 allows remote attackers to cause a denial of service (application crash) via unspecified vectors.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12908,7 +12908,7 @@
     {
       "cve_id": "CVE-2007-0457",
       "published_date": "2007-02-02",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the IEEE 802.11 dissector in Wireshark (formerly Ethereal) 0.10.14 through 0.99.4 allows remote attackers to cause a denial of service (application crash) via unspecified vectors.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12929,7 +12929,7 @@
     {
       "cve_id": "CVE-2007-0458",
       "published_date": "2007-02-02",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the HTTP dissector in Wireshark (formerly Ethereal) 0.99.3 and 0.99.4 allows remote attackers to cause a denial of service (application crash) via unspecified vectors, a different issue than CVE-2006-5468.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -12950,7 +12950,7 @@
     {
       "cve_id": "CVE-2007-0459",
       "published_date": "2007-02-02",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "packet-tcp.c in the TCP dissector in Wireshark (formerly Ethereal) 0.99.2 through 0.99.4 allows remote attackers to cause a denial of service (application crash or hang) via fragmented HTTP packets.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12971,7 +12971,7 @@
     {
       "cve_id": "CVE-2006-5469",
       "published_date": "2006-10-28",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the WBXML dissector in Wireshark (formerly Ethereal) 0.10.11 through 0.99.3 allows remote attackers to cause a denial of service (crash) via certain vectors that trigger a null dereference.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -12992,7 +12992,7 @@
     {
       "cve_id": "CVE-2006-5595",
       "published_date": "2006-10-28",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the AirPcap support in Wireshark (formerly Ethereal) 0.99.3 has unspecified attack vectors related to WEP key parsing.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -13013,7 +13013,7 @@
     {
       "cve_id": "CVE-2006-4805",
       "published_date": "2006-10-27",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "epan/dissectors/packet-xot.c in the XOT dissector (dissect_xot_pdu) in Wireshark (formerly Ethereal) 0.9.8 through 0.99.3 allows remote attackers to cause a denial of service (memory consumption and crash) via an encoded XOT packet that produces a zero length value when it is decoded.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -13034,7 +13034,7 @@
     {
       "cve_id": "CVE-2006-5468",
       "published_date": "2006-10-27",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the HTTP dissector in Wireshark (formerly Ethereal) 0.99.3 allows remote attackers to cause a denial of service (crash) via unspecified vectors.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -13055,7 +13055,7 @@
     {
       "cve_id": "CVE-2006-5740",
       "published_date": "2006-10-27",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in the LDAP dissector in Wireshark (formerly Ethereal) 0.99.3 allows remote attackers to cause a denial of service (crash) via a crafted LDAP packet.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -14462,7 +14462,7 @@
     {
       "cve_id": "CVE-2009-0601",
       "published_date": "2009-02-16",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Format string vulnerability in Wireshark 0.99.8 through 1.0.5 on non-Windows platforms allows local users to cause a denial of service (application crash) via format string specifiers in the HOME environment variable.",
       "base_score": 2.1,
       "severity": "LOW",
@@ -14483,7 +14483,7 @@
     {
       "cve_id": "CVE-2008-3933",
       "published_date": "2008-09-04",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Wireshark (formerly Ethereal) 0.10.14 through 1.0.2 allows attackers to cause a denial of service (crash) via a packet with crafted zlib-compressed data that triggers an invalid read in the tvb_uncompress function.",
       "base_score": 3.3,
       "severity": "LOW",
@@ -14504,7 +14504,7 @@
     {
       "cve_id": "CVE-2008-3934",
       "published_date": "2008-09-04",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Unspecified vulnerability in Wireshark (formerly Ethereal) 0.99.6 through 1.0.2 allows attackers to cause a denial of service (crash) via a crafted Tektronix .rf5 file.",
       "base_score": 3.3,
       "severity": "LOW",
@@ -14525,7 +14525,7 @@
     {
       "cve_id": "CVE-2007-6441",
       "published_date": "2007-12-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The WiMAX dissector in Wireshark (formerly Ethereal) 0.99.6 allows remote attackers to cause a denial of service (crash) via unknown vectors related to \"unaligned access on some platforms.\"",
       "base_score": 3.3,
       "severity": "LOW",

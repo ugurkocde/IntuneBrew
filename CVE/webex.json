@@ -1,7 +1,7 @@
 {
   "app_name": "Webex",
   "app_key": "webex",
-  "last_updated": "2026-04-22",
+  "last_updated": "2026-04-23",
   "total_cves": 78,
   "summary": {
     "critical": 8,
@@ -560,7 +560,7 @@
     {
       "cve_id": "CVE-2009-2875",
       "published_date": "2009-12-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in atas32.dll in the Cisco WebEx WRF Player 26.x before 26.49.32 for Windows, 27.x before 27.10.x for Windows, 26.x before 26.49.35 for Mac OS X and Linux, and 27.x before 27.11.8 for Mac OS X and Linux allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted WebEx Recording Format (WRF) file.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -581,7 +581,7 @@
     {
       "cve_id": "CVE-2009-2876",
       "published_date": "2009-12-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in atas32.dll in the Cisco WebEx WRF Player 26.x before 26.49.32 (aka T26SP49EP32) for Windows, 27.x before 27.10.x (aka T27SP10) for Windows, 26.x before 26.49.35 for Mac OS X and Linux, and 27.x before 27.11.8 for Mac OS X and Linux allows remote attackers to cause a denial of service (application crash) or execute arbitrary code via a crafted WebEx Recording Format (WRF) file, a different vulnerability than CVE-2009-2878 and CVE-2009-2879.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -602,7 +602,7 @@
     {
       "cve_id": "CVE-2009-2877",
       "published_date": "2009-12-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in ataudio.dll in the Cisco WebEx WRF Player 26.x before 26.49.32 for Windows, 27.x before 27.10.x (aka T27SP10) for Windows, 26.x before 26.49.35 for Mac OS X and Linux, and 27.x before 27.11.8 for Mac OS X and Linux allows remote attackers to cause a denial of service (application crash) or execute arbitrary code via a crafted WebEx Recording Format (WRF) file.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -623,7 +623,7 @@
     {
       "cve_id": "CVE-2009-2878",
       "published_date": "2009-12-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in atas32.dll in the Cisco WebEx WRF Player 26.x before 26.49.32 (aka T26SP49EP32) for Windows, 27.x before 27.10.x (aka T27SP10) for Windows, 26.x before 26.49.35 for Mac OS X and Linux, and 27.x before 27.11.8 for Mac OS X and Linux allows remote attackers to cause a denial of service (application crash) or execute arbitrary code via a crafted WebEx Recording Format (WRF) file, a different vulnerability than CVE-2009-2876 and CVE-2009-2879.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -644,7 +644,7 @@
     {
       "cve_id": "CVE-2009-2879",
       "published_date": "2009-12-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in atas32.dll in the Cisco WebEx WRF Player 26.x before 26.49.32 (aka T26SP49EP32) for Windows, 27.x before 27.10.x (aka T27SP10) for Windows, 26.x before 26.49.35 for Mac OS X and Linux, and 27.x before 27.11.8 for Mac OS X and Linux allows remote attackers to cause a denial of service (application crash) or execute arbitrary code via a crafted WebEx Recording Format (WRF) file, a different vulnerability than CVE-2009-2876 and CVE-2009-2878.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -665,7 +665,7 @@
     {
       "cve_id": "CVE-2009-2880",
       "published_date": "2009-12-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in atrpui.dll in the Cisco WebEx WRF Player 26.x before 26.49.32 for Windows, 27.x before 27.10.x for Windows, 26.x before 26.49.35 for Mac OS X and Linux, and 27.x before 27.11.8 for Mac OS X and Linux allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted WebEx Recording Format (WRF) file.",
       "base_score": 9.3,
       "severity": "HIGH",

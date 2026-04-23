@@ -1,7 +1,7 @@
 {
   "app_name": "Gimp",
   "app_key": "gimp",
-  "last_updated": "2026-04-22",
+  "last_updated": "2026-04-23",
   "total_cves": 73,
   "summary": {
     "critical": 1,
@@ -917,7 +917,7 @@
     {
       "cve_id": "CVE-2009-3909",
       "published_date": "2009-11-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in the read_channel_data function in plug-ins/file-psd/psd-load.c in GIMP 2.6.7 might allow remote attackers to execute arbitrary code via a crafted PSD file that triggers a heap-based buffer overflow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -938,7 +938,7 @@
     {
       "cve_id": "CVE-2009-1570",
       "published_date": "2009-11-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in the ReadImage function in plug-ins/file-bmp/bmp-read.c in GIMP 2.6.7 might allow remote attackers to execute arbitrary code via a BMP file with crafted width and height values that trigger a heap-based buffer overflow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -959,7 +959,7 @@
     {
       "cve_id": "CVE-2009-0723",
       "published_date": "2009-03-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple integer overflows in LittleCMS (aka lcms or liblcms) before 1.18beta2, as used in Firefox 3.1beta, OpenJDK, and GIMP, allow context-dependent attackers to execute arbitrary code via a crafted image file that triggers a heap-based buffer overflow.  NOTE: some of these details are obtained from third party information.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -980,7 +980,7 @@
     {
       "cve_id": "CVE-2009-0733",
       "published_date": "2009-03-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple stack-based buffer overflows in the ReadSetOfCurves function in LittleCMS (aka lcms or liblcms) before 1.18beta2, as used in Firefox 3.1beta, OpenJDK, and GIMP, allow context-dependent attackers to execute arbitrary code via a crafted image file associated with a large integer value for the (1) input or (2) output channel, related to the ReadLUT_A2B and ReadLUT_B2A functions.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1358,7 +1358,7 @@
     {
       "cve_id": "CVE-2009-0581",
       "published_date": "2009-03-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Memory leak in LittleCMS (aka lcms or liblcms) before 1.18beta2, as used in Firefox 3.1beta, OpenJDK, and GIMP, allows context-dependent attackers to cause a denial of service (memory consumption and application crash) via a crafted image file.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -1379,7 +1379,7 @@
     {
       "cve_id": "CVE-2006-4519",
       "published_date": "2007-07-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple integer overflows in the image loader plug-ins in GIMP before 2.2.16 allow user-assisted remote attackers to execute arbitrary code via crafted length values in (1) DICOM, (2) PNM, (3) PSD, (4) PSP, (5) Sun RAS, (6) XBM, and (7) XWD files.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1400,7 +1400,7 @@
     {
       "cve_id": "CVE-2007-2949",
       "published_date": "2007-07-04",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in the seek_to_and_unpack_pixeldata function in the psd.c plugin in Gimp 2.2.15 allows remote attackers to execute arbitrary code via a crafted PSD file that contains a large (1) width or (2) height value.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1421,7 +1421,7 @@
     {
       "cve_id": "CVE-2007-3126",
       "published_date": "2007-06-08",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Gimp before 2.8.22 allows context-dependent attackers to cause a denial of service (crash) via an ICO file with an InfoHeader containing a Height of zero, a similar issue to CVE-2007-2237.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -1442,7 +1442,7 @@
     {
       "cve_id": "CVE-2007-2356",
       "published_date": "2007-04-30",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in the set_color_table function in sunras.c in the SUNRAS plugin in Gimp 2.2.14 allows user-assisted remote attackers to execute arbitrary code via a crafted RAS file.",
       "base_score": 6.8,
       "severity": "MEDIUM",

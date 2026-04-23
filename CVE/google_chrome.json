@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-04-22",
+  "last_updated": "2026-04-23",
   "total_cves": 3991,
   "summary": {
     "critical": 156,
@@ -48818,7 +48818,7 @@
     {
       "cve_id": "CVE-2009-3931",
       "published_date": "2009-11-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Incomplete blacklist vulnerability in browser/download/download_exe.cc in Google Chrome before 3.0.195.32 allows remote attackers to force the download of certain dangerous files via a \"Content-Disposition: attachment\" designation, as demonstrated by (1) .mht and (2) .mhtml files, which are automatically executed by Internet Explorer 6; (3) .svg files, which are automatically executed by Safari; (4) .xml files; (5) .htt files; (6) .xsl files; (7) .xslt files; and (8) image files that are forbidden by the victim's site policy.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -48839,7 +48839,7 @@
     {
       "cve_id": "CVE-2009-3932",
       "published_date": "2009-11-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The Gears plugin in Google Chrome before 3.0.195.32 allows user-assisted remote attackers to cause a denial of service (memory corruption and plugin crash) or possibly execute arbitrary code via unspecified use of the Gears SQL API, related to putting \"SQL metadata into a bad state.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -48860,7 +48860,7 @@
     {
       "cve_id": "CVE-2009-3456",
       "published_date": "2009-09-29",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome, possibly 3.0.195.21 and earlier, does not properly handle a '\\0' character in a domain name in the subject's Common Name (CN) field of an X.509 certificate, which allows man-in-the-middle attackers to spoof arbitrary SSL servers via a crafted certificate issued by a legitimate Certification Authority, a related issue to CVE-2009-2408.  NOTE: the provenance of this information is unknown; the details are obtained solely from third party information.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -48881,7 +48881,7 @@
     {
       "cve_id": "CVE-2009-2935",
       "published_date": "2009-08-27",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google V8, as used in Google Chrome before 2.0.172.43, allows remote attackers to bypass intended restrictions on reading memory, and possibly obtain sensitive information or execute arbitrary code in the Chrome sandbox, via crafted JavaScript.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -48902,7 +48902,7 @@
     {
       "cve_id": "CVE-2008-6994",
       "published_date": "2009-08-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in the SaveAs feature (SaveFileAsWithFilter function) in win_util.cc in Google Chrome 0.2.149.27 allows user-assisted remote attackers to execute arbitrary code via a web page with a long TITLE element, which triggers the overflow when the user saves the page and a long filename is generated.  NOTE: it might be possible to exploit this issue via an HTTP response that includes a long filename in a Content-Disposition header.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -48923,7 +48923,7 @@
     {
       "cve_id": "CVE-2008-6998",
       "published_date": "2009-08-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in chrome/common/gfx/url_elider.cc in Google Chrome 0.2.149.27 and other versions before 0.2.149.29 might allow user-assisted remote attackers to execute arbitrary code via a link target (href attribute) with a large number of path elements, which triggers the overflow when the status bar is updated after the user hovers over the link.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -48944,7 +48944,7 @@
     {
       "cve_id": "CVE-2009-2555",
       "published_date": "2009-07-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in src/jsregexp.cc in Google V8 before 1.1.10.14, as used in Google Chrome before 2.0.172.37, allows remote attackers to execute arbitrary code in the Chrome sandbox via a crafted JavaScript regular expression.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -48965,7 +48965,7 @@
     {
       "cve_id": "CVE-2009-2556",
       "published_date": "2009-07-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome before 2.0.172.37 allows attackers to leverage renderer access to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via unspecified vectors that trigger excessive memory allocation.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -48986,7 +48986,7 @@
     {
       "cve_id": "CVE-2009-2121",
       "published_date": "2009-06-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Buffer overflow in the browser kernel in Google Chrome before 2.0.172.33 allows remote HTTP servers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted response.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -49007,7 +49007,7 @@
     {
       "cve_id": "CVE-2009-1690",
       "published_date": "2009-06-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Use-after-free vulnerability in WebKit, as used in Apple Safari before 4.0, iPhone OS 1.0 through 2.2.1, iPhone OS for iPod touch 1.1 through 2.2.1, Google Chrome 1.0.154.53, and possibly other products, allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption and application crash) by setting an unspecified property of an HTML tag that causes child elements to be freed and later accessed when an HTML error occurs, related to \"recursion in certain DOM event handlers.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -49028,7 +49028,7 @@
     {
       "cve_id": "CVE-2009-1598",
       "published_date": "2009-05-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome executes DOM calls in response to a javascript: URI in the target attribute of a submit element within a form contained in an inline PDF file, which might allow remote attackers to bypass intended Adobe Acrobat JavaScript restrictions on accessing the document object, as demonstrated by a web site that permits PDF uploads by untrusted users, and therefore has a shared document.domain between the web site and this javascript: URI.  NOTE: the researcher reports that Adobe's position is \"a PDF file is active content.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -49049,7 +49049,7 @@
     {
       "cve_id": "CVE-2009-1441",
       "published_date": "2009-05-07",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in the ParamTraits<SkBitmap>::Read function in Google Chrome before 1.0.154.64 allows attackers to leverage renderer access to cause a denial of service (application crash) or possibly execute arbitrary code via vectors related to a large bitmap that arrives over the IPC channel.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -49070,7 +49070,7 @@
     {
       "cve_id": "CVE-2009-1412",
       "published_date": "2009-04-24",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Argument injection vulnerability in the chromehtml: protocol handler in Google Chrome before 1.0.154.59, when invoked by Internet Explorer, allows remote attackers to determine the existence of files, and open tabs for URLs that do not satisfy the IsWebSafeScheme restriction, via a web page that sets document.location to a chromehtml: value, as demonstrated by use of a (1) javascript: or (2) data: URL.  NOTE: this can be leveraged for Universal XSS by exploiting certain behavior involving persistence across page transitions.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -82754,7 +82754,7 @@
     {
       "cve_id": "CVE-2010-0315",
       "published_date": "2010-01-14",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "WebKit before r53607, as used in Google Chrome before 4.0.249.89, allows remote attackers to discover a redirect's target URL, for the session of a specific user of a web site, by placing the site's URL in the HREF attribute of a stylesheet LINK element, and then reading the document.styleSheets[0].href property value, related to an IFRAME element.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -82775,7 +82775,7 @@
     {
       "cve_id": "CVE-2009-2816",
       "published_date": "2009-11-13",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The implementation of Cross-Origin Resource Sharing (CORS) in WebKit, as used in Apple Safari before 4.0.4 and Google Chrome before 3.0.195.33, includes certain custom HTTP headers in the OPTIONS request during cross-origin operations with preflight, which makes it easier for remote attackers to conduct cross-site request forgery (CSRF) attacks via a crafted web page.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -82796,7 +82796,7 @@
     {
       "cve_id": "CVE-2009-3933",
       "published_date": "2009-11-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "WebKit before r50173, as used in Google Chrome before 3.0.195.32, allows remote attackers to cause a denial of service (CPU consumption) via a web page that calls the JavaScript setInterval method, which triggers an incompatibility between the WTF::currentTime and base::Time functions.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -82817,7 +82817,7 @@
     {
       "cve_id": "CVE-2009-3934",
       "published_date": "2009-11-12",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The WebFrameLoaderClient::dispatchDidChangeLocationWithinPage function in src/webkit/glue/webframeloaderclient_impl.cc in Google Chrome before 3.0.195.32 allows user-assisted remote attackers to cause a denial of service via a page-local link, related to an \"empty redirect chain,\" as demonstrated by a message in Yahoo! Mail.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -82838,7 +82838,7 @@
     {
       "cve_id": "CVE-2008-7246",
       "published_date": "2009-09-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 0.2.149.29 and earlier allows remote attackers to cause a denial of service (unusable browser) by calling the window.print function in a loop, aka a \"printing DoS attack,\" possibly a related issue to CVE-2009-0821.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -82859,7 +82859,7 @@
     {
       "cve_id": "CVE-2009-3263",
       "published_date": "2009-09-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Cross-site scripting (XSS) vulnerability in Google Chrome 2.x and 3.x before 3.0.195.21 allows remote attackers to inject arbitrary web script or HTML via a (1) RSS or (2) Atom feed, related to the rendering of the application/rss+xml content type as XML \"active content.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -82880,7 +82880,7 @@
     {
       "cve_id": "CVE-2009-3264",
       "published_date": "2009-09-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The getSVGDocument method in Google Chrome before 3.0.195.21 omits an unspecified \"access check,\" which allows remote web servers to bypass the Same Origin Policy and conduct cross-site scripting attacks via unknown vectors, related to a user's visit to a different web server that hosts an SVG document.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -82901,7 +82901,7 @@
     {
       "cve_id": "CVE-2009-3268",
       "published_date": "2009-09-18",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 1.0.154.48 and earlier allows remote attackers to cause a denial of service (CPU consumption) via an automatically submitted form containing a KEYGEN element, a related issue to CVE-2009-1828.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -82922,7 +82922,7 @@
     {
       "cve_id": "CVE-2009-3011",
       "published_date": "2009-08-31",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 1.0.154.48 and earlier, 2.0.172.28, 2.0.172.37, and 3.0.193.2 Beta does not properly block data: URIs in Refresh headers in HTTP responses, which allows remote attackers to conduct cross-site scripting (XSS) attacks via vectors related to (1) injecting a Refresh header that contains JavaScript sequences in a data:text/html URI or (2) entering a data:text/html URI with JavaScript sequences when specifying the content of a Refresh header.  NOTE: the JavaScript executes outside of the context of the HTTP site.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -82943,7 +82943,7 @@
     {
       "cve_id": "CVE-2009-2973",
       "published_date": "2009-08-27",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome before 2.0.172.43 does not prevent SSL connections to a site with an X.509 certificate signed with the (1) MD2 or (2) MD4 algorithm, which makes it easier for man-in-the-middle attackers to spoof arbitrary HTTPS servers via a crafted certificate, a related issue to CVE-2009-2409.",
       "base_score": 6.4,
       "severity": "MEDIUM",
@@ -82964,7 +82964,7 @@
     {
       "cve_id": "CVE-2009-2974",
       "published_date": "2009-08-27",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 1.0.154.65, 1.0.154.48, and earlier allows remote attackers to (1) cause a denial of service (application hang) via vectors involving a chromehtml: URI value for the document.location property or (2) cause a denial of service (application hang and CPU consumption) via vectors involving a series of function calls that set a chromehtml: URI value for the document.location property.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -82985,7 +82985,7 @@
     {
       "cve_id": "CVE-2009-2955",
       "published_date": "2009-08-24",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 1.0.154.48 and earlier allows remote attackers to cause a denial of service (CPU consumption and application hang) via JavaScript code with a long string value for the hash property (aka location.hash), a related issue to CVE-2008-5715.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -83006,7 +83006,7 @@
     {
       "cve_id": "CVE-2008-7061",
       "published_date": "2009-08-24",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The tooltip manager (chrome/views/tooltip_manager.cc) in Google Chrome 0.2.149.29 Build 1798 and possibly other versions before 0.2.149.30 allows remote attackers to cause a denial of service (CPU consumption or crash) via a tag with a long title attribute, which is not properly handled when displaying a tooltip, a different vulnerability than CVE-2008-6994.  NOTE: there is inconsistent information about the environments under which this issue exists.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -83027,7 +83027,7 @@
     {
       "cve_id": "CVE-2008-6995",
       "published_date": "2009-08-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer underflow in net/base/escape.cc in chrome.dll in Google Chrome 0.2.149.27 allows remote attackers to cause a denial of service (browser crash) via a URI with an invalid handler followed by a \"%\" (percent) character, which triggers a buffer over-read, as demonstrated using an \"about:%\" URI.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -83048,7 +83048,7 @@
     {
       "cve_id": "CVE-2008-6996",
       "published_date": "2009-08-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome BETA (0.2.149.27) does not prompt the user before saving an executable file, which makes it easier for remote attackers or malware to cause a denial of service (disk consumption) or exploit other vulnerabilities via a URL that references an executable file, possibly related to the \"ask where to save each file before downloading\" setting.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -83069,7 +83069,7 @@
     {
       "cve_id": "CVE-2008-6997",
       "published_date": "2009-08-19",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 0.2.149.27 allows user-assisted remote attackers to cause a denial of service (browser crash) via an IMG tag with a long src attribute, which triggers the crash when the victim performs an \"Inspect Element\" action.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -83090,7 +83090,7 @@
     {
       "cve_id": "CVE-2009-2416",
       "published_date": "2009-08-11",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple use-after-free vulnerabilities in libxml2 2.5.10, 2.6.16, 2.6.26, 2.6.27, and 2.6.32, and libxml 1.8.17, allow context-dependent attackers to cause a denial of service (application crash) via crafted (1) Notation or (2) Enumeration attribute types in an XML file, as demonstrated by the Codenomicon XML fuzzing framework.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -83111,7 +83111,7 @@
     {
       "cve_id": "CVE-2009-2578",
       "published_date": "2009-07-22",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 2.x through 2.0.172 allows remote attackers to cause a denial of service (application crash) via a long Unicode string argument to the write method, a related issue to CVE-2009-2479.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -83132,7 +83132,7 @@
     {
       "cve_id": "CVE-2009-2352",
       "published_date": "2009-07-07",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 1.0.154.48 and earlier does not block javascript: URIs in Refresh headers in HTTP responses, which allows remote attackers to conduct cross-site scripting (XSS) attacks via vectors related to (1) injecting a Refresh header or (2) specifying the content of a Refresh header, a related issue to CVE-2009-1312. NOTE: it was later reported that 2.0.172.28, 2.0.172.37, and 3.0.193.2 Beta are also affected.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -83153,7 +83153,7 @@
     {
       "cve_id": "CVE-2009-2060",
       "published_date": "2009-06-15",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "src/net/http/http_transaction_winhttp.cc in Google Chrome before 1.0.154.53 uses the HTTP Host header to determine the context of a document provided in a (1) 4xx or (2) 5xx CONNECT response from a proxy server, which allows man-in-the-middle attackers to execute arbitrary web script by modifying this CONNECT response, aka an \"SSL tampering\" attack.",
       "base_score": 5.8,
       "severity": "MEDIUM",
@@ -83174,7 +83174,7 @@
     {
       "cve_id": "CVE-2009-2071",
       "published_date": "2009-06-15",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome before 1.0.154.53 displays a cached certificate for a (1) 4xx or (2) 5xx CONNECT response page returned by a proxy server, which allows man-in-the-middle attackers to spoof an arbitrary https site by letting a browser obtain a valid certificate from this site during one request, and then sending the browser a crafted 502 response page upon a subsequent request.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -83195,7 +83195,7 @@
     {
       "cve_id": "CVE-2009-1442",
       "published_date": "2009-05-07",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple integer overflows in Skia, as used in Google Chrome 1.x before 1.0.154.64 and 2.x, and possibly Android, might allow remote attackers to execute arbitrary code in the renderer process via a crafted (1) image or (2) canvas.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -83216,7 +83216,7 @@
     {
       "cve_id": "CVE-2009-1514",
       "published_date": "2009-05-04",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 1.0.154.53 allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a throw statement with a long exception value.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -83237,7 +83237,7 @@
     {
       "cve_id": "CVE-2009-1413",
       "published_date": "2009-04-24",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 1.0.x does not cancel timeouts upon a page transition, which makes it easier for attackers to conduct Universal XSS attacks by calling setTimeout to trigger future execution of JavaScript code, and then modifying document.location to arrange for JavaScript execution in the context of an arbitrary web site.  NOTE: this can be leveraged for a remote attack by exploiting a chromehtml: argument-injection vulnerability.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -83258,7 +83258,7 @@
     {
       "cve_id": "CVE-2009-1414",
       "published_date": "2009-04-24",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 2.0.x lets modifications to the global object persist across a page transition, which makes it easier for attackers to conduct Universal XSS attacks via unspecified vectors.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -83279,7 +83279,7 @@
     {
       "cve_id": "CVE-2009-0276",
       "published_date": "2009-02-03",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Cross-domain vulnerability in the V8 JavaScript engine in Google Chrome before 1.0.154.46 allows remote attackers to bypass the Same Origin Policy via a crafted script that accesses another frame and reads its full URL and possibly other sensitive information, or modifies the URL of this frame.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -83300,7 +83300,7 @@
     {
       "cve_id": "CVE-2009-0411",
       "published_date": "2009-02-03",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome before 1.0.154.46 does not properly restrict access from web pages to the (1) Set-Cookie and (2) Set-Cookie2 HTTP response headers, which allows remote attackers to obtain sensitive information from cookies via XMLHttpRequest calls and other web script.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -83321,7 +83321,7 @@
     {
       "cve_id": "CVE-2009-0374",
       "published_date": "2009-01-30",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 1.0.154.43 allows remote attackers to trick a user into visiting an arbitrary URL via an onclick action that moves a crafted element to the current mouse position, related to a \"Clickjacking\" vulnerability.  NOTE: a third party disputes the relevance of this issue, stating that \"every sufficiently featured browser is and likely will remain susceptible to the behavior known as clickjacking,\" and adding that the exploit code \"is not a valid demonstration of the issue.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -83342,7 +83342,7 @@
     {
       "cve_id": "CVE-2008-5749",
       "published_date": "2008-12-29",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Argument injection vulnerability in Google Chrome 1.0.154.36 on Windows XP SP3 allows remote attackers to execute arbitrary commands via the --renderer-path option in a chromehtml: URI.  NOTE: a third party disputes this issue, stating that Chrome \"will ask for user permission\" and \"cannot launch the applet even [if] you have given out the permission.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -83363,7 +83363,7 @@
     {
       "cve_id": "CVE-2008-4724",
       "published_date": "2008-10-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple cross-site scripting (XSS) vulnerabilities in Google Chrome 0.2.149.30 allow remote attackers to inject arbitrary web script or HTML via an ftp:// URL for an HTML document within a (1) JPG, (2) PDF, or (3) TXT file.  NOTE: the provenance of this information is unknown; the details are obtained solely from third party information.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -83384,7 +83384,7 @@
     {
       "cve_id": "CVE-2008-4340",
       "published_date": "2008-09-30",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Google Chrome 0.2.149.29 and 0.2.149.30 allows remote attackers to cause a denial of service (memory consumption) via an HTML document containing a carriage return (\"\\r\\n\\r\\n\") argument to the window.open function.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -83804,7 +83804,7 @@
     {
       "cve_id": "CVE-2008-5915",
       "published_date": "2009-01-20",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "An unspecified function in the JavaScript implementation in Google Chrome creates and exposes a \"temporary footprint\" when there is a current login to a web site, which makes it easier for remote attackers to trick a user into acting upon a spoofed pop-up message, aka an \"in-session phishing attack.\" NOTE: as of 20090116, the only disclosure is a vague pre-advisory with no actionable information. However, because it is from a well-known researcher, it is being assigned a CVE identifier for tracking purposes.",
       "base_score": 2.1,
       "severity": "LOW",

@@ -1,7 +1,7 @@
 {
   "app_name": "Inkscape",
   "app_key": "inkscape",
-  "last_updated": "2026-04-22",
+  "last_updated": "2026-04-23",
   "total_cves": 9,
   "summary": {
     "critical": 0,
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2007-1463",
       "published_date": "2007-03-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Format string vulnerability in Inkscape before 0.45.1 allows user-assisted remote attackers to execute arbitrary code via format string specifiers in a URI, which is not properly handled by certain dialogs.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2007-1464",
       "published_date": "2007-03-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Format string vulnerability in the whiteboard Jabber protocol in Inkscape before 0.45.1 allows user-assisted remote attackers to execute arbitrary code via unspecified vectors.",
       "base_score": 6.8,
       "severity": "MEDIUM",

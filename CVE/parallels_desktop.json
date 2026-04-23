@@ -1,7 +1,7 @@
 {
   "app_name": "Parallels Desktop",
   "app_key": "parallels_desktop",
-  "last_updated": "2026-04-22",
+  "last_updated": "2026-04-23",
   "total_cves": 74,
   "summary": {
     "critical": 0,
@@ -980,7 +980,7 @@
     {
       "cve_id": "CVE-2007-1222",
       "published_date": "2007-03-02",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Parallels Desktop for Mac before 20070216 implements Drag and Drop by sharing the entire host filesystem as the .psf share, which allows local users of the guest operating system to write arbitrary files to the host filesystem, and execute arbitrary code via launchd by writing a plist file to a LaunchAgents directory.",
       "base_score": 7.2,
       "severity": "HIGH",
@@ -1484,7 +1484,7 @@
     {
       "cve_id": "CVE-2007-2454",
       "published_date": "2007-05-02",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in the VGA device in Parallels allows local users, with root access to the guest operating system, to terminate the virtual machine and possibly execute arbitrary code in the host operating system via unspecified vectors related to bitblt operations.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1505,7 +1505,7 @@
     {
       "cve_id": "CVE-2007-2455",
       "published_date": "2007-05-02",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Parallels allows local users to cause a denial of service (virtual machine abort) via (1) certain INT instructions, as demonstrated by INT 0xAA; (2) an IRET instruction when an invalid address is at the top of the stack; (3) a malformed MOVNTI instruction, as demonstrated by using a register as a destination; or a write operation to (4) SEGR6 or (5) SEGR7.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1547,7 +1547,7 @@
     {
       "cve_id": "CVE-2006-5817",
       "published_date": "2006-11-08",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "prl_dhcpd in Parallels Desktop for Mac Build 1940 uses insecure permissions (0666) for /Library/Parallels/.dhcpd_configuration, which allows local users to modify DHCP configuration.",
       "base_score": 2.1,
       "severity": "LOW",
