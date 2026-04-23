@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1248-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1249-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -435,50 +435,26 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-23 01:10 UTC*
+*Last checked: 2026-04-23 09:06 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
+| MySQL Workbench | 8.0.46 | 8.0.47 |
 | Multi | 0.538.2 | 3.0.2 |
-| Rive | 0.8.4630 | 0.8.4666 |
-| Dockside | 2.6.3 | 2.6.4 |
-| Mozilla Thunderbird | 149.0.2 | 150.0 |
-| QSpace Pro | 6.1.4 | 6.2.2 |
-| Proton Drive | 2.10.3 | 2.11.4 |
-| Redis Insight | 3.4.1 | 3.4.2 |
-| Microsoft Teams | 26072.605.4546.510 | 26072.608.4595.8484 |
-| Webex | 46.4.0.34620 | 46.4.0.34752 |
-| MongoDB Compass | 1.49.4 | 1.49.5 |
-| Notion | 7.11.0 | 7.12.0 |
-| Brave | 1.89.137.0 | 1.89.141.0 |
-| AWS Corretto JDK | 21.0.10.7.1 | 21.0.11.10.1 |
-| Raycast | 1.104.12 | 1.104.13 |
-| Azul Zulu Java Standard Edition Development Kit | 26.0.0 | 26.0.1 |
-| Bruno | 3.2.2 | 3.3.0 |
-| Zed | 0.232.3 | 0.233.5 |
-| Windsurf | 2.0.63 | 2.0.67 |
-| Opera | 130.0.5847.41 | 130.0.5847.82 |
-| DbGate | 7.1.8 | 7.1.9 |
-| Lark | 7.65.9 | 7.66.6 |
-| Milanote | 3.18.92 | 3.18.93 |
-| Waterfox | 6.6.11 | 6.6.12 |
+| Mozilla Firefox Developer Edition | 150.0b10 | 151.0b1 |
+| Rive | 0.8.4666 | 0.8.4678 |
+| Proxyman | 6.8.0 | 6.9.0 |
+| Google Chrome | 147.0.7727.102 | 147.0.7727.117 |
+| Krita | 5.3.1 | 5.3.1.1 |
+| Floorp browser | 12.12.1 | 12.12.2 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| ChatWork | 2.21.2 | 2.21.3 |
-| Connect Fonts | 28.1.3 | 28.1.4 |
-| DevKnife | 1.12.2 | 1.13.0 |
-| Loom | 0.345.1 | 0.345.3 |
+| GitHub Copilot for Xcode | 0.47.0 | 0.48.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| TREZOR Suite | 26.3.3 | 26.4.2 |
-| Tuta Mail | 341.260417.0 | 345.260421.2 |
-| WebCatalog | 74.4.0 | 74.5.0 |
-| kiro | 0.11.132 | 0.11.133 |
-| Salesforce CLI | 2.130.9 | 2.131.7 |
-| Tableau Public | 2026.1.0 | 2026.1.1 |
-| Tableau Reader | 2026.1.0 | 2026.1.1 |
-| UniFi Identity Endpoint | 3.6.2 | 3.6.3 |
+| Claude Code | 2.1.104 | 2.1.108 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
