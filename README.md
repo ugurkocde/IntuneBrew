@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1249-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -436,25 +436,42 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-23 09:06 UTC*
+*Last checked: 2026-04-24 00:59 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| MySQL Workbench | 8.0.46 | 8.0.47 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 150.0b10 | 151.0b1 |
-| Rive | 0.8.4666 | 0.8.4678 |
-| Proxyman | 6.8.0 | 6.9.0 |
-| Google Chrome | 147.0.7727.102 | 147.0.7727.117 |
-| Krita | 5.3.1 | 5.3.1.1 |
-| Floorp browser | 12.12.1 | 12.12.2 |
+| Rive | 0.8.4678 | 0.8.4682 |
+| LookAway | 2.0.1 | 2.1.0 |
+| DockDoor | 1.36 | 1.37 |
+| WeChat for Mac | 4.1.9.26 | 4.1.9.27 |
+| Adobe Creative Cloud | 6.8.1.865 | 6.9.1.1 |
+| Brave | 1.89.141.0 | 1.89.143.0 |
+| Goland | 2026.1 | 2026.1.1 |
+| ProtonVPN | 6.4.0 | 6.5.0 |
+| CLion | 2026.1 | 2026.1.1 |
+| Tenable Nessus Agent | 11.1.2 | 11.1.3 |
+| IntelliJ IDEA Ultimate | 2026.1 | 2026.1.1 |
+| Craft | 3.4.0 | 3.4.1 |
+| Deezer | 7.1.160 | 7.1.170 |
+| FontBase | 2026.4.1 | 2026.4.6 |
+| LinearMouse | 0.10.4 | 0.11.0 |
+| Opera GX | 130.0.5847.58 | 130.0.5847.89 |
+| RubyMine | 2026.1 | 2026.1.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| GitHub Copilot for Xcode | 0.47.0 | 0.48.0 |
+| Akiflow | 2.71.12 | 2.72.5 |
+| Fellow | 5.3.2 | 5.3.3 |
+| Granola | 7.147.1 | 7.155.1 |
+| LyX | 2.5.0 | 2.5.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| Claude Code | 2.1.104 | 2.1.108 |
+| GraphPad Prism | 11.0.0 | 11.0.1 |
+| RustRover | 2026.1 | 2026.1.1 |
+| Timing | 2026.3 | 2026.3.1 |
+| FineTune | 1.5.0 | 1.6.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

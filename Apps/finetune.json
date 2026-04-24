@@ -1,13 +1,13 @@
 {
   "name": "FineTune",
   "description": "Per-application volume mixer, equalizer, and audio router",
-  "version": "1.5.0",
-  "url": "https://github.com/ronitsingh10/FineTune/releases/download/v1.5.0/FineTune.dmg",
+  "version": "1.6.0",
+  "url": "https://github.com/ronitsingh10/FineTune/releases/download/v1.6.0/FineTune.dmg",
   "vendor_url": "https://github.com/ronitsingh10/FineTune/releases/download/v1.5.0/FineTune.dmg",
   "bundleId": "org.tordini.flavio.finetune",
   "homepage": "https://github.com/ronitsingh10/FineTune",
   "fileName": "FineTune.dmg",
-  "sha": "0ae321011cb8628419be4b11477e3933beadec75d6a258a83476880be806b24e",
+  "sha": "bd3e40de605a08e94da537f1fff721e0aa865998b184c18ef81a1652dd1fa0d6",
   "category": "Utilities",
   "publisher": "ronitsingh10",
   "previous_version": "1.5.0"

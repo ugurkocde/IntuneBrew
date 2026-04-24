@@ -1,13 +1,13 @@
 {
   "name": "RustRover",
   "description": "Rust IDE",
-  "version": "2026.1",
-  "url": "https://download.jetbrains.com/rustrover/RustRover-2026.1-aarch64.dmg",
+  "version": "2026.1.1",
+  "url": "https://download.jetbrains.com/rustrover/RustRover-2026.1.1-aarch64.dmg",
   "vendor_url": "https://download.jetbrains.com/rustrover/RustRover-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.rustrover",
   "homepage": "https://www.jetbrains.com/rust/",
-  "fileName": "RustRover-2026.1-aarch64.dmg",
-  "sha": "0de2e4c0aab4d4cdf39abdb26673985c29f4099fb43fd32d582f5b308ccaad51",
+  "fileName": "RustRover-2026.1.1-aarch64.dmg",
+  "sha": "2bd1b092e771f96576e5f035211c1f0e5a9c2bc5f423f4b3acbed2da21bb21f2",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
   "previous_version": "2026.1"

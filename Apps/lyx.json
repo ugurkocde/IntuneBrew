@@ -1,13 +1,13 @@
 {
   "name": "LyX",
   "description": "GUI document processor based on the LaTeX typesetting system",
-  "version": "2.5.0",
-  "url": "https://ftp.lip6.fr/pub/lyx/bin/2.5.0/LyX-2.5.0+qt6-x86_64-arm64-cocoa.dmg",
+  "version": "2.5.1",
+  "url": "https://ftp.lip6.fr/pub/lyx/bin/2.5.1/LyX-2.5.1+qt6-x86_64-arm64-cocoa.dmg",
   "vendor_url": "https://ftp.lip6.fr/pub/lyx/bin/2.5.0/LyX-2.5.0+qt6-x86_64-arm64-cocoa.dmg",
   "bundleId": "org.lyx.LyX-2.4",
   "homepage": "https://www.lyx.org/",
-  "fileName": "LyX-2.5.0+qt6-x86_64-arm64-cocoa.dmg",
-  "sha": "62149418cdb14b2f3dbebbec13e20c5252f3e2ce1bb0ad8914a4e75b86a41917",
+  "fileName": "LyX-2.5.1+qt6-x86_64-arm64-cocoa.dmg",
+  "sha": "1c3a8cbf7c81e9d06b53e1ba291119363881b347722816cf53b6b912b3589370",
   "category": "Productivity",
   "publisher": "The LyX Team",
   "previous_version": "2.5.0"
