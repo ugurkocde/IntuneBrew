@@ -1,7 +1,7 @@
 {
   "name": "ocenaudio",
   "description": "Audio editor",
-  "version": "3.18.0",
+  "version": "3.18.1",
   "url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg",
   "vendor_url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg",
   "bundleId": "com.ocenaudio",

@@ -1,15 +1,15 @@
 {
   "name": "SQLPro for MySQL",
   "description": "MySQL & MariaDB database client",
-  "version": "2026.07",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_for_mysql_2026.07.pkg",
+  "version": "2026.85",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_for_mysql_2026.85.pkg",
   "vendor_url": "https://d3fwkemdw8spx3.cloudfront.net/mysql/SQLProMySQL.2026.07.app.zip",
   "bundleId": "com.hankinsoft.osx.mysql",
   "homepage": "https://www.mysqlui.com/",
-  "fileName": "sqlpro_for_mysql_2026.07.pkg",
+  "fileName": "sqlpro_for_mysql_2026.85.pkg",
   "type": "app",
-  "sha": "7e7c4be377106393f4af5c84c4341262c412ca6405f0f8cbfc81aab64d4a9803",
-  "previous_version": "2026.07",
+  "sha": "4f7109788631d1f486bcabfc4819c8093ba0a7efcdb843914ccd15f7ada50006",
+  "previous_version": "2026.85",
   "category": "Developer Tools",
   "publisher": "Hankinsoft Development, Ltd."
 }

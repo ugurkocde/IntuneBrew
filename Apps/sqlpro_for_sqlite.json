@@ -1,15 +1,15 @@
 {
   "name": "SQLPro for SQLite",
   "description": "Advanced sqlite editor",
-  "version": "2025.59",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_for_sqlite_2025.59.pkg",
+  "version": "2026.85",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_for_sqlite_2026.85.pkg",
   "vendor_url": "https://d3fwkemdw8spx3.cloudfront.net/sqlite/SQLProSQLite.2025.59.app.zip",
   "bundleId": "com.hankinsoft.osx.sqliteprofessional",
   "homepage": "https://www.sqlitepro.com/",
-  "fileName": "sqlpro_for_sqlite_2025.59.pkg",
+  "fileName": "sqlpro_for_sqlite_2026.85.pkg",
   "type": "app",
-  "sha": "bdb3ef2783de422fd8b5732a9f50c7ee8b109d8550609076920fa37bda327662",
-  "previous_version": "2025.59",
+  "sha": "d0cedce44603cde3bd80dda82c380bc7d429a8f9ccc0f80e5018b5857b5827eb",
+  "previous_version": "2026.85",
   "category": "Developer Tools",
   "publisher": "Hankin Software"
 }

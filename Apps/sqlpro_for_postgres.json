@@ -1,15 +1,15 @@
 {
   "name": "SQLPro for Postgres",
   "description": "Lightweight PostgreSQL database client",
-  "version": "2026.07",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_for_postgres_2026.07.pkg",
+  "version": "2026.85",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_for_postgres_2026.85.pkg",
   "vendor_url": "https://d3fwkemdw8spx3.cloudfront.net/postgres/SQLProPostgres.2026.07.app.zip",
   "bundleId": "com.hankinsoft.osx.SQLProPostgres",
   "homepage": "https://www.macpostgresclient.com/SQLProPostgres",
-  "fileName": "sqlpro_for_postgres_2026.07.pkg",
+  "fileName": "sqlpro_for_postgres_2026.85.pkg",
   "type": "app",
-  "sha": "547ca52867757a4b22463be5584c88e7aa5f9c65a23cbfaf98f4faa2026cccf9",
-  "previous_version": "2026.07",
+  "sha": "8de80fc80ea224e85ad8896110d7b5e019b3f30a1b6d90d6a0f70fa97e9df96f",
+  "previous_version": "2026.85",
   "category": "Developer Tools",
   "publisher": "Hankin Software"
 }

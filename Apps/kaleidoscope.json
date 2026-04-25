@@ -1,15 +1,15 @@
 {
   "name": "Kaleidoscope",
   "description": "Spot and merge differences in text and image files or folders",
-  "version": "6.6",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/kaleidoscope_6.6.pkg",
+  "version": "6.7",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/kaleidoscope_6.7.pkg",
   "vendor_url": "https://updates.kaleidoscope.app/v6/prod/Kaleidoscope-6.6-9910.app.zip",
   "bundleId": "com.blackpixel.kaleidoscope",
   "homepage": "https://kaleidoscope.app/",
-  "fileName": "kaleidoscope_6.6.pkg",
+  "fileName": "kaleidoscope_6.7.pkg",
   "type": "app",
-  "previous_version": "6.6",
-  "sha": "280410570b8172bc5cbd227679254b40113b93d90d3b654e7f9be49487daeadd",
+  "previous_version": "6.7",
+  "sha": "f0d9bf38650a582c52536f05ed8c7a3cd792a9e5e1dafafc5ce2f72057b810c9",
   "category": "Developer Tools",
   "publisher": "Black Pixel"
 }
