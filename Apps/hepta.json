@@ -1,15 +1,15 @@
 {
   "name": "Hepta",
   "description": "Note-taking tool for visual learning",
-  "version": "1.91.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/hepta_1.91.0.pkg",
+  "version": "1.91.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/hepta_1.91.2.pkg",
   "vendor_url": "https://github.com/heptameta/project-meta/releases/download/v1.90.4/Heptabase-1.90.4-arm64-mac.zip",
   "bundleId": "app.hepta.desktop",
   "homepage": "https://heptabase.com/",
-  "fileName": "hepta_1.91.0.pkg",
+  "fileName": "hepta_1.91.2.pkg",
   "type": "app",
-  "sha": "063013156173d3d8943511c0cfbcb72a1520b662fbd0b85a53a418231bc702e1",
+  "sha": "e81db0f95f918e1107b10c5cba3fd09bd92c8475f40f11653e14c6b2d815e37c",
   "category": "Productivity",
   "publisher": "Heptabase",
-  "previous_version": "1.91.0"
+  "previous_version": "1.91.2"
 }

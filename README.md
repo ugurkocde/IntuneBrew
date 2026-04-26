@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1249-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -438,41 +438,23 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-04-25 00:50 UTC*
+*Last checked: 2026-04-26 00:53 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 151.0b1 | 151.0b2 |
-| ProcessSpy | 1.11.3 | 1.12.0 |
-| UPDF | 2.5.0 | 2.5.1 |
-| Dockside | 2.6.4 | 2.6.5 |
-| ChatWise | 26.4.12 | 26.4.13 |
-| JetBrains PhpStorm | 2026.1 | 2026.1.1 |
-| Trae | 2.3.20623 | 2.3.21083 |
-| Spotify | 1.2.87.415 | 1.2.88.483 |
-| Miro | 0.11.134 | 0.11.139 |
-| RStudio | 2026.01.2 | 2026.04.0 |
-| draw.io Desktop | 29.7.8 | 29.7.9 |
-| WebStorm | 2026.1 | 2026.1.1 |
-| Zed | 0.233.5 | 0.233.10 |
-| Opera | 130.0.5847.82 | 130.0.5847.92 |
-| Warp | 0.2026.04.15.08.45.stable | 0.2026.04.22.08.46.stable |
-| AppFlowy | 0.11.7 | 0.11.8 |
-| Zettlr | 4.3.1 | 4.4.0 |
-| ocenaudio | 3.18.0 | 3.18.1 |
+| Dockside | 2.6.5 | 2.6.6 |
+| Stretchly | 1.20.0 | 1.21.0 |
+| ChatWise | 26.4.13 | 26.4.14 |
+| Microsoft Edge | 147.0.3912.72 | 147.0.3912.86 |
+| ocenaudio | 3.18.1 | 3.18.2 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| DevKnife | 1.13.0 | 1.13.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| Shapr3D | 26.60.0.10796 | 26.61.0.10813 |
-| Zappy | 4.9.5 | 4.9.6 |
-| Claude Code | 2.1.108 | 2.1.109 |
-| Okta Advanced Server Access | 1.103.2 | 1.104.0 |
-| PureVPN | 9.41.0 | 9.42.0 |
-| Adobe Acrobat Pro DC | 26.001.21431 | 26.001.21483 |
+| Claude Code | 2.1.109 | 2.1.112 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
