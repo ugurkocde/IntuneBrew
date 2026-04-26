@@ -249,13 +249,18 @@ function Connect-WithCertificate {
     
     $config = Get-Content $ConfigPath | ConvertFrom-Json
     
-    if (-not $config.appId -or -not $config.tenantId -or -not $config.certificateThumbprint) {
-        Write-Host "Error: Configuration file must contain appId, tenantId, and certificateThumbprint" -ForegroundColor Red
+    $appId = $config.appId
+    if (-not $appId -and $config.clientId) {
+        $appId = $config.clientId
+    }
+    
+    if (-not $appId -or -not $config.tenantId -or -not $config.certificateThumbprint) {
+        Write-Host "Error: Configuration file must contain appId/clientId, tenantId, and certificateThumbprint" -ForegroundColor Red
         return $false
     }
     
     try {
-        Connect-MgGraph -ClientId $config.appId -TenantId $config.tenantId -CertificateThumbprint $config.certificateThumbprint -NoWelcome -ErrorAction Stop
+        Connect-MgGraph -ClientId $appId -TenantId $config.tenantId -CertificateThumbprint $config.certificateThumbprint -NoWelcome -ErrorAction Stop
         Write-Host "Successfully connected to Microsoft Graph using certificate-based authentication." -ForegroundColor Green
         return $true
     }
@@ -276,14 +281,19 @@ function Connect-WithClientSecret {
     
     $config = Get-Content $ConfigPath | ConvertFrom-Json
     
-    if (-not $config.appId -or -not $config.tenantId -or -not $config.clientSecret) {
-        Write-Host "Error: Configuration file must contain appId, tenantId, and clientSecret" -ForegroundColor Red
+    $appId = $config.appId
+    if (-not $appId -and $config.clientId) {
+        $appId = $config.clientId
+    }
+    
+    if (-not $appId -or -not $config.tenantId -or -not $config.clientSecret) {
+        Write-Host "Error: Configuration file must contain appId/clientId, tenantId, and clientSecret" -ForegroundColor Red
         return $false
     }
     
     try {
         $SecureClientSecret = ConvertTo-SecureString -String $config.clientSecret -AsPlainText -Force
-        $ClientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $config.appId, $SecureClientSecret
+        $ClientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $appId, $SecureClientSecret
         Connect-MgGraph -TenantId $config.tenantId -ClientSecretCredential $ClientSecretCredential -NoWelcome -ErrorAction Stop
         Write-Host "Successfully connected to Microsoft Graph using client secret authentication." -ForegroundColor Green
         return $true
@@ -347,45 +357,82 @@ function Show-FilePickerDialog {
     return $null
 }
 
-# Display authentication options
-Write-Host "`nChoose authentication method:" -ForegroundColor Cyan
-Write-Host "1. App Registration with Certificate"
-Write-Host "2. App Registration with Secret"
-Write-Host "3. Interactive Session with Admin Account"
-$authChoice = Read-Host "`nEnter your choice (1-3)"
-
 $authenticated = $false
+$authChoice = $null
 
-switch ($authChoice) {
-    "1" {
-        Write-Host "`nPlease select the certificate configuration JSON file..." -ForegroundColor Yellow
-        $configPath = $ConfigFile ? $ConfigFile : (Show-FilePickerDialog -Title "Select Certificate Configuration JSON File")
-        if ($configPath -and (Test-AuthConfig $configPath)) {
-            $authenticated = Connect-WithCertificate $configPath
-        } else {
-            Write-Host "The provided configuration file is invalid. Please select a valid file." -ForegroundColor Red
-            $configPath = Show-FilePickerDialog -Title "Select Certificate Configuration JSON File"
-            if ($configPath -and (Test-AuthConfig $configPath)) {
-                $authenticated = Connect-WithCertificate $configPath
-            } else {
-                Write-Host "Failed to authenticate. Exiting script." -ForegroundColor Red
+# Attempt non-interactive authentication when a config file with authMethod is supplied
+if ($ConfigFile) {
+    if (-not (Test-AuthConfig $ConfigFile)) {
+        exit
+    }
+
+    try {
+        $configFromFile = Get-Content $ConfigFile | ConvertFrom-Json
+    }
+    catch {
+        Write-Host "Error: Unable to read or parse configuration file at '$ConfigFile'." -ForegroundColor Red
+        exit
+    }
+
+    if ($configFromFile.authMethod) {
+        switch ($configFromFile.authMethod) {
+            "Certificate" {
+                Write-Host "`nConfig file specifies certificate-based authentication. Attempting to authenticate..." -ForegroundColor Cyan
+                $authChoice = "1"
+                $authenticated = Connect-WithCertificate $ConfigFile
+            }
+            "ClientSecret" {
+                Write-Host "`nConfig file specifies client secret authentication. Attempting to authenticate..." -ForegroundColor Cyan
+                $authChoice = "2"
+                $authenticated = Connect-WithClientSecret $ConfigFile
+            }
+            default {
+                Write-Host "Error: Unsupported authMethod '$($configFromFile.authMethod)'. Supported values are 'Certificate' and 'ClientSecret'." -ForegroundColor Red
                 exit
             }
         }
     }
-    "2" {
-        Write-Host "`nPlease select the client secret configuration JSON file..." -ForegroundColor Yellow
-        $configPath = $ConfigFile ? $ConfigFile : (Show-FilePickerDialog -Title "Select Client Secret Configuration JSON File")
-        if ($configPath -and (Test-AuthConfig $configPath)) {
-            $authenticated = Connect-WithClientSecret $configPath
+}
+
+if (-not $authChoice) {
+    # Display authentication options
+    Write-Host "`nChoose authentication method:" -ForegroundColor Cyan
+    Write-Host "1. App Registration with Certificate"
+    Write-Host "2. App Registration with Secret"
+    Write-Host "3. Interactive Session with Admin Account"
+    $authChoice = Read-Host "`nEnter your choice (1-3)"
+
+    switch ($authChoice) {
+        "1" {
+            Write-Host "`nPlease select the certificate configuration JSON file..." -ForegroundColor Yellow
+            $configPath = $ConfigFile ? $ConfigFile : (Show-FilePickerDialog -Title "Select Certificate Configuration JSON File")
+            if ($configPath -and (Test-AuthConfig $configPath)) {
+                $authenticated = Connect-WithCertificate $configPath
+            } else {
+                Write-Host "The provided configuration file is invalid. Please select a valid file." -ForegroundColor Red
+                $configPath = Show-FilePickerDialog -Title "Select Certificate Configuration JSON File"
+                if ($configPath -and (Test-AuthConfig $configPath)) {
+                    $authenticated = Connect-WithCertificate $configPath
+                } else {
+                    Write-Host "Failed to authenticate. Exiting script." -ForegroundColor Red
+                    exit
+                }
+            }
         }
-    }
-    "3" {
-        $authenticated = Connect-Interactive
-    }
-    default {
-        Write-Host "Invalid choice. Please select 1, 2, or 3." -ForegroundColor Red
-        exit
+        "2" {
+            Write-Host "`nPlease select the client secret configuration JSON file..." -ForegroundColor Yellow
+            $configPath = $ConfigFile ? $ConfigFile : (Show-FilePickerDialog -Title "Select Client Secret Configuration JSON File")
+            if ($configPath -and (Test-AuthConfig $configPath)) {
+                $authenticated = Connect-WithClientSecret $configPath
+            }
+        }
+        "3" {
+            $authenticated = Connect-Interactive
+        }
+        default {
+            Write-Host "Invalid choice. Please select 1, 2, or 3." -ForegroundColor Red
+            exit
+        }
     }
 }
 
@@ -2429,5 +2476,3 @@ if ($updateSummaries.Count -gt 0) {
 Write-Host "`n🎉 All operations completed successfully!" -ForegroundColor Green
 Disconnect-MgGraph > $null 2>&1
 Write-Host "Disconnected from Microsoft Graph." -ForegroundColor Green
-
-
