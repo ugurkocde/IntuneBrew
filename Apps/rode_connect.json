@@ -3,6 +3,7 @@
   "description": "Podcasting software",
   "version": "1.3.47",
   "url": "https://intunebrew.blob.core.windows.net/pkg/rode_connect_1.3.47.pkg",
+  "vendor_url": "https://update.rode.com/connect/RODE_Connect_MACOS.zip",
   "bundleId": "com.rodeconnect.installer",
   "homepage": "https://rode.com/en-us/software/rodeconnect",
   "fileName": "rode_connect_1.3.47.pkg",

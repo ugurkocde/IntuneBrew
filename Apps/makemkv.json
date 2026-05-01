@@ -3,6 +3,7 @@
   "description": "Video format converter (transcoder)",
   "version": "1.18.3",
   "url": "https://www.makemkv.com/download/makemkv_v1.18.3_osx.dmg",
+  "vendor_url": "https://www.makemkv.com/download/makemkv_v1.18.3_osx.dmg",
   "bundleId": "com.makemkv.MakeMKV",
   "homepage": "https://www.makemkv.com/",
   "fileName": "makemkv_v1.18.3_osx.dmg",

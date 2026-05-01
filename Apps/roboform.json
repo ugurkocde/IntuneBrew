@@ -3,6 +3,7 @@
   "description": "Password manager and form filler application",
   "version": "9.9.2",
   "url": "https://www.roboform.com/dist/roboform-mac-v9.dmg",
+  "vendor_url": "https://www.roboform.com/dist/roboform-mac-v9.dmg",
   "bundleId": "com.SiberSystems.RoboForm",
   "homepage": "https://www.roboform.com/",
   "fileName": "roboform-mac-v9.dmg",

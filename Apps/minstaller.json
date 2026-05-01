@@ -3,6 +3,7 @@
   "description": "Downloader and manager for MotionVFX products",
   "version": "3.2.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/minstaller_3.2.5.pkg",
+  "vendor_url": "https://s3.motionvfx.com/mvfxpublic/mInstaller/sparkle/mInstaller-3.2.5.zip",
   "bundleId": "com.motionvfx.mInstaller",
   "homepage": "https://www.motionvfx.com/",
   "fileName": "minstaller_3.2.5.pkg",

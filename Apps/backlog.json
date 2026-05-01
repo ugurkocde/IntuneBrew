@@ -3,6 +3,7 @@
   "description": null,
   "version": "1.8.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/backlog_1.8.0.pkg",
+  "vendor_url": "https://github.com/czytelny/backlog/releases/download/v1.8.0/Backlog-darwin-x64.zip",
   "bundleId": "com.nicola.Backlog",
   "homepage": "https://github.com/czytelny/backlog",
   "fileName": "backlog_1.8.0.pkg",

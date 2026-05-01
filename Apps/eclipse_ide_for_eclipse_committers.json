@@ -3,6 +3,7 @@
   "description": "Eclipse integrated development environment",
   "version": "4.39",
   "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-committers-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
+  "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-committers-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
   "bundleId": "epp.package.committers",
   "homepage": "https://eclipse.org/",
   "fileName": "Eclipse-IDE-for-Eclipse-Committers-4.39.dmg",

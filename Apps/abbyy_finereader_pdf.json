@@ -3,6 +3,7 @@
   "description": "Scan, OCR, and convert documents to searchable PDFs and other formats",
   "version": "1402.19",
   "url": "https://downloads.abbyy.com/fr/fr_mac/current/ABBYY_FineReader_PDF.dmg?secure=5c11NlPrQmIZeGn6dK2PZA==",
+  "vendor_url": "https://downloads.abbyy.com/fr/fr_mac/current/ABBYY_FineReader_PDF.dmg?secure=5c11NlPrQmIZeGn6dK2PZA==",
   "bundleId": "com.abbyy.finereader.pdf",
   "homepage": "https://pdf.abbyy.com/finereader-pdf-for-mac/",
   "fileName": "ABBYY_FineReader_PDF.dmg",

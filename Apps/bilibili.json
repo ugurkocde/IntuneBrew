@@ -1,13 +1,14 @@
 {
   "name": "Bilibili",
   "description": "Official bilibili video streaming and sharing platform",
-  "version": "1.17.5",
+  "version": "1.17.6",
   "url": "https://dl.hdslb.com/mobile/fixed/pc_electron_mac/bili_mac.dmg",
+  "vendor_url": "https://dl.hdslb.com/mobile/fixed/pc_electron_mac/bili_mac.dmg",
   "bundleId": "com.bilibili.bilibiliPC",
   "homepage": "https://app.bilibili.com/",
   "fileName": "bili_mac.dmg",
-  "sha": "15c20a96fd186500903685e33dede210874fae46ac82ae9ecfdd632e6ebeb8fb",
+  "sha": "7d9b553b65bec646752195b10beb3c399781820251ddd535c0cf8dcb1f60c49a",
   "category": "Media",
   "publisher": "bilibili",
-  "previous_version": "1.17.5"
+  "previous_version": "1.17.6"
 }

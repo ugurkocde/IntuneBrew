@@ -3,6 +3,7 @@
   "description": "Chat client for models on HuggingFace",
   "version": "0.7.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/huggingchat_0.7.0.pkg",
+  "vendor_url": "https://github.com/huggingface/chat-macOS/releases/download/v0.7.0/HuggingChat.zip",
   "bundleId": "cyrilzakka.HuggingChat-Mac",
   "homepage": "https://github.com/huggingface/chat-macOS",
   "fileName": "huggingchat_0.7.0.pkg",

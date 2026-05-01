@@ -3,6 +3,7 @@
   "description": "Opens a terminal window to the current directory in Finder",
   "version": "2.5",
   "url": "https://zipzapmac.com/DMGs/Go2Shell.dmg",
+  "vendor_url": "https://zipzapmac.com/DMGs/Go2Shell.dmg",
   "bundleId": "com.zipzapmac.Go2Shell",
   "homepage": "https://zipzapmac.com/go2shell",
   "fileName": "Go2Shell.dmg",

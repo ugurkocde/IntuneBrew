@@ -3,6 +3,7 @@
   "description": "AI image upscaler",
   "version": "2.15.0",
   "url": "https://github.com/upscayl/upscayl/releases/download/v2.15.0/upscayl-2.15.0-mac.dmg",
+  "vendor_url": "https://github.com/upscayl/upscayl/releases/download/v2.15.0/upscayl-2.15.0-mac.dmg",
   "bundleId": "org.upscayl.Upscayl",
   "homepage": "https://upscayl.org/",
   "fileName": "upscayl-2.15.0-mac.dmg",

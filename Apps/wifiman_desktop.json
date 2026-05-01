@@ -3,6 +3,7 @@
   "description": "Network monitoring and troubleshooting tool",
   "version": "1.2.8",
   "url": "https://desktop.wifiman.com/wifiman-desktop-1.2.8-arm64.pkg",
+  "vendor_url": "https://desktop.wifiman.com/wifiman-desktop-1.2.8-arm64.pkg",
   "bundleId": "ui.wifiman.com",
   "homepage": "https://wifiman.com/",
   "fileName": "wifiman-desktop-1.2.8-arm64.pkg",

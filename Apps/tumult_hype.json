@@ -3,6 +3,7 @@
   "description": "App to create animated and interactive web content",
   "version": "4.1.20",
   "url": "https://tumult.com/hype/download/Hype-778.dmg",
+  "vendor_url": "https://tumult.com/hype/download/Hype-778.dmg",
   "bundleId": "com.tumult.Hype4",
   "homepage": "https://tumult.com/hype/",
   "fileName": "Hype-778.dmg",

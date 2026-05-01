@@ -3,6 +3,7 @@
   "description": "Mockup generator & animator 3D",
   "version": "154",
   "url": "https://download.rota.to/Rotato-154.dmg",
+  "vendor_url": "https://download.rota.to/Rotato-154.dmg",
   "bundleId": "com.mortenjust.Rendermock",
   "homepage": "https://rotato.app/",
   "fileName": "Rotato-154.dmg",

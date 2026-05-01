@@ -1,7 +1,7 @@
 {
   "app_name": "Libreoffice",
   "app_key": "libreoffice",
-  "last_updated": "2026-03-24",
+  "last_updated": "2026-05-01",
   "total_cves": 70,
   "summary": {
     "critical": 12,
@@ -896,7 +896,7 @@
     {
       "cve_id": "CVE-2012-2665",
       "published_date": "2012-08-06",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Multiple heap-based buffer overflows in the XML manifest encryption tag parsing functionality in OpenOffice.org and LibreOffice before 3.5.5 allow remote attackers to cause a denial of service and possibly execute arbitrary code via a crafted Open Document Text (.odt) file with (1) a child tag within an incorrect parent tag, (2) duplicate tags, or (3) a Base64 ChecksumAttribute whose length is not evenly divisible by four.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -917,7 +917,7 @@
     {
       "cve_id": "CVE-2012-1149",
       "published_date": "2012-06-21",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Integer overflow in the vclmi.dll module in OpenOffice.org (OOo) 3.3, 3.4 Beta, and possibly earlier, and LibreOffice before 3.5.3, allows remote attackers to cause a denial of service (application crash) and possibly execute arbitrary code via a crafted embedded image object, as demonstrated by a JPEG image in a .DOC file, which triggers a heap-based buffer overflow.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -938,7 +938,7 @@
     {
       "cve_id": "CVE-2011-2685",
       "published_date": "2011-07-21",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Stack-based buffer overflow in the Lotus Word Pro import filter in LibreOffice before 3.3.3 allows remote attackers to execute arbitrary code via a crafted .lwp file.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1379,7 +1379,7 @@
     {
       "cve_id": "CVE-2012-4233",
       "published_date": "2012-11-19",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "LibreOffice 3.5.x before 3.5.7.2 and 3.6.x before 3.6.1, and OpenOffice.org (OOo), allows remote attackers to cause a denial of service (NULL pointer dereference) via a crafted (1) odt file to vcllo.dll, (2) ODG (Drawing document) file to svxcorelo.dll, (3) PolyPolygon record in a .wmf (Window Meta File) file embedded in a ppt (PowerPoint) file to tllo.dll, or (4) xls (Excel) file to scfiltlo.dll.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -1400,7 +1400,7 @@
     {
       "cve_id": "CVE-2012-2334",
       "published_date": "2012-06-19",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Integer overflow in filter/source/msfilter/msdffimp.cxx in OpenOffice.org (OOo) 3.3, 3.4 Beta, and possibly earlier, and LibreOffice before 3.5.3, allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via the length of an Escher graphics record in a PowerPoint (.ppt) document, which triggers a buffer overflow.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1421,7 +1421,7 @@
     {
       "cve_id": "CVE-2012-0037",
       "published_date": "2012-06-17",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Redland Raptor (aka libraptor) before 2.0.7, as used by OpenOffice 3.3 and 3.4 Beta, LibreOffice before 3.4.6 and 3.5.x before 3.5.1, and other products, allows user-assisted remote attackers to read arbitrary files via a crafted XML external entity (XXE) declaration and reference in an RDF document.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -1442,7 +1442,7 @@
     {
       "cve_id": "CVE-2011-2713",
       "published_date": "2011-10-21",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "oowriter in OpenOffice.org 3.3.0 and LibreOffice before 3.4.3 allows user-assisted remote attackers to cause a denial of service (crash) via a crafted DOC file that triggers an out-of-bounds read in the DOC sprm parser.",
       "base_score": 4.3,
       "severity": "MEDIUM",

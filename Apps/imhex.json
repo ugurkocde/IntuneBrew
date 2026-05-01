@@ -3,6 +3,7 @@
   "description": "Hex editor for reverse engineers",
   "version": "1.38.1",
   "url": "https://github.com/WerWolv/ImHex/releases/download/v1.38.1/imhex-1.38.1-macOS-arm64.dmg",
+  "vendor_url": "https://github.com/WerWolv/ImHex/releases/download/v1.38.1/imhex-1.38.1-macOS-arm64.dmg",
   "bundleId": "net.WerWolv.ImHex",
   "homepage": "https://imhex.werwolv.net/",
   "fileName": "imhex-1.38.1-macOS-arm64.dmg",

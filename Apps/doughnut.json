@@ -3,6 +3,7 @@
   "description": "Podcast client",
   "version": "2.0.1",
   "url": "https://github.com/dyerc/Doughnut/releases/download/v2.0.1/Doughnut-2.0.1.dmg",
+  "vendor_url": "https://github.com/dyerc/Doughnut/releases/download/v2.0.1/Doughnut-2.0.1.dmg",
   "bundleId": "com.cdyer.doughnut",
   "homepage": "https://github.com/dyerc/Doughnut/",
   "fileName": "Doughnut-2.0.1.dmg",

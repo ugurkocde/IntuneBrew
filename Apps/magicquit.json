@@ -3,6 +3,7 @@
   "description": "Efficiency tool for automatically closing apps when they are not in use",
   "version": "1.4",
   "url": "https://magicquit.com/apps/MagicQuit_1.4.dmg",
+  "vendor_url": "https://magicquit.com/apps/MagicQuit_1.4.dmg",
   "bundleId": "com.MagicQuit",
   "homepage": "https://magicquit.com/",
   "fileName": "MagicQuit_1.4.dmg",

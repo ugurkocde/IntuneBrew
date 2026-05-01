@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-03-24T01:02:03.480Z",
+  "last_full_scan": "2026-05-01T01:22:36.461Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8766,9 +8766,17 @@
       "name": "Insta360 Link Controller"
     },
     "boltai_2": {
-      "last_checked": "2026-01-21T00:58:19.218Z",
-      "bundle_id": null,
-      "status": "unknown",
+      "last_checked": "2026-04-21T01:16:27.049Z",
+      "bundle_id": "co.podzim.boltai-mobile",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
       "name": "BoltAI 2"
     },
     "wacom_tablet": {
@@ -8920,6 +8928,123 @@
         "mac_app_store"
       ],
       "name": "WinZip"
+    },
+    "battery": {
+      "last_checked": "2026-03-30T20:06:40.016Z",
+      "bundle_id": "cn.better365.Battery",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "mac_app_store",
+      "methods_tried": [
+        "mac_app_store"
+      ],
+      "name": "Battery"
+    },
+    "finetune": {
+      "last_checked": "2026-03-31T17:42:30.230Z",
+      "bundle_id": "org.tordini.flavio.finetune",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "mac_app_store",
+      "methods_tried": [
+        "mac_app_store"
+      ],
+      "name": "FineTune"
+    },
+    "heynote": {
+      "last_checked": "2026-03-31T17:43:17.125Z",
+      "bundle_id": "com.heynote.app",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Heynote"
+    },
+    "music_decoy": {
+      "last_checked": "2026-04-05T14:18:12.143Z",
+      "bundle_id": "com.apple.Music",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Music Decoy"
+    },
+    "morgen": {
+      "last_checked": "2026-04-19T14:31:07.055Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved",
+        "openai_alternative"
+      ],
+      "name": "Morgen"
+    },
+    "dia": {
+      "last_checked": "2026-04-23T09:21:04.568Z",
+      "bundle_id": "company.thebrowser.dia",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Dia"
+    },
+    "cardpresso": {
+      "last_checked": "2026-04-27T21:53:52.887Z",
+      "bundle_id": "com.cardpresso.cardPresso",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "cardPresso"
+    },
+    "affinity": {
+      "last_checked": "2026-04-28T17:05:59.927Z",
+      "bundle_id": "ptujec.LaunchBar.action.AffinityRecentDocuments",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "github_search",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search"
+      ],
+      "name": "Affinity"
+    },
+    "lastpass": {
+      "last_checked": "2026-04-29T13:41:35.610Z",
+      "bundle_id": "com.auxilium.lastpasslauncher",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "github_search",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search"
+      ],
+      "name": "LastPass"
     }
   }
 }

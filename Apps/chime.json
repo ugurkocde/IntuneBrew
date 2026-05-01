@@ -3,6 +3,7 @@
   "description": "Text and code editor",
   "version": "2.2.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/chime_2.2.5.pkg",
+  "vendor_url": "https://updates.chimehq.com/com.chimehq.Edit/157/Chime.app.zip",
   "bundleId": "com.chimehq.Edit",
   "homepage": "https://www.chimehq.com/",
   "fileName": "chime_2.2.5.pkg",

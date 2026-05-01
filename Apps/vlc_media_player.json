@@ -3,6 +3,7 @@
   "description": "Multimedia player",
   "version": "3.0.23",
   "url": "https://get.videolan.org/vlc/3.0.23/macosx/vlc-3.0.23-arm64.dmg",
+  "vendor_url": "https://get.videolan.org/vlc/3.0.23/macosx/vlc-3.0.23-arm64.dmg",
   "bundleId": "org.videolan.vlc",
   "homepage": "https://www.videolan.org/vlc/",
   "fileName": "vlc-3.0.23-arm64.dmg",

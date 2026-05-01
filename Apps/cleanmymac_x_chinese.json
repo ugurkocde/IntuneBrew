@@ -3,6 +3,7 @@
   "description": "Tool to remove unnecessary files and folders from disk Chinese edition",
   "version": "4.15.14",
   "url": "https://dl.devmate.com/com.macpaw.zh.CleanMyMac4/CleanMyMacXChinese.dmg",
+  "vendor_url": "https://dl.devmate.com/com.macpaw.zh.CleanMyMac4/CleanMyMacXChinese.dmg",
   "bundleId": "com.macpaw.CleanMyMac4",
   "homepage": "https://www.mycleanmymac.com/",
   "fileName": "CleanMyMacXChinese.dmg",

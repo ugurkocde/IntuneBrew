@@ -17,6 +17,12 @@ fi
 echo "Stopping ExpressVPN if running..."
 pkill -f "ExpressVPN" 2>/dev/null || true
 
+# Unload service com.express.vpn.client
+echo "Unloading service com.express.vpn.client..."
+launchctl unload -w /Library/LaunchAgents/com.express.vpn.client.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.express.vpn.client.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.express.vpn.client.plist 2>/dev/null || true
+
 # Unload service com.express.vpn.daemon
 echo "Unloading service com.express.vpn.daemon..."
 launchctl unload -w /Library/LaunchAgents/com.express.vpn.daemon.plist 2>/dev/null || true

@@ -3,6 +3,7 @@
   "description": "Tool to prevent the system from going into sleep mode",
   "version": "1.6.8",
   "url": "https://intunebrew.blob.core.windows.net/pkg/keepingyouawake_1.6.8.pkg",
+  "vendor_url": "https://github.com/newmarcel/KeepingYouAwake/releases/download/1.6.8/KeepingYouAwake-1.6.8.zip",
   "bundleId": "info.marcel-dierkes.KeepingYouAwake",
   "homepage": "https://keepingyouawake.app/",
   "fileName": "keepingyouawake_1.6.8.pkg",

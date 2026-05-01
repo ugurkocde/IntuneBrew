@@ -3,6 +3,7 @@
   "description": "Utility improving 3rd party mouse performance and functionalities",
   "version": "1.6",
   "url": "https://intunebrew.blob.core.windows.net/pkg/bettermouse_1.6.pkg",
+  "vendor_url": "https://better-mouse.com/wp-content/uploads/BetterMouse.1.6.8780.zip",
   "bundleId": "com.naotanhaocan.BetterMouse",
   "homepage": "https://better-mouse.com/",
   "fileName": "bettermouse_1.6.pkg",

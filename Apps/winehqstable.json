@@ -3,6 +3,7 @@
   "description": "Compatibility layer to run Windows applications",
   "version": "11.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/winehqstable_11.0.pkg",
+  "vendor_url": "https://github.com/Gcenx/macOS_Wine_builds/releases/download/11.6/wine-staging-11.6-osx64.tar.xz",
   "bundleId": "org.winehq.wine-stable.wine",
   "homepage": "https://wiki.winehq.org/MacOS",
   "fileName": "winehqstable_11.0.pkg",

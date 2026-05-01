@@ -3,6 +3,7 @@
   "description": "Terminal built on web technologies",
   "version": "3.4.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/hyper_3.4.1.pkg",
+  "vendor_url": "https://github.com/vercel/hyper/releases/download/v3.4.1/Hyper-3.4.1-mac-arm64.zip",
   "bundleId": "co.zeit.hyper",
   "homepage": "https://hyper.is/",
   "fileName": "hyper_3.4.1.pkg",

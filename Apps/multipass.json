@@ -1,14 +1,15 @@
 {
   "name": "Multipass",
   "description": "Orchestrates virtual Ubuntu instances",
-  "version": "1.16.1",
-  "url": "https://github.com/canonical/multipass/releases/download/v1.16.1/multipass-1.16.1+mac-Darwin.pkg",
+  "version": "1.16.2",
+  "url": "https://github.com/canonical/multipass/releases/download/v1.16.2/multipass-1.16.2+mac-Darwin.pkg",
+  "vendor_url": "https://github.com/canonical/multipass/releases/download/v1.16.1/multipass-1.16.1+mac-Darwin.pkg",
   "bundleId": "com.canonical.multipassgui",
   "homepage": "https://github.com/canonical/multipass/",
-  "fileName": "multipass-1.16.1+mac-Darwin.pkg",
+  "fileName": "multipass-1.16.2+mac-Darwin.pkg",
   "type": "pkg",
-  "sha": "758d10dc1b71872b0ee7a17070b93fc788dba5ba45c36b980e42fd895d273489",
+  "sha": "ae54883b8f60f71d2b9ea8ceaeb9cf68284e13189e519955e3e57a400f730c50",
   "category": "Developer Tools",
   "publisher": "Canonical Ltd.",
-  "previous_version": "1.16.1"
+  "previous_version": "1.16.2"
 }

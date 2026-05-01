@@ -3,6 +3,7 @@
   "description": "Client for Proton Mail and Proton Calendar",
   "version": "1.12.1",
   "url": "https://proton.me/download/mail/macos/1.12.1/ProtonMail-desktop.dmg",
+  "vendor_url": "https://proton.me/download/mail/macos/1.12.1/ProtonMail-desktop.dmg",
   "bundleId": "ch.protonmail.desktop",
   "homepage": "https://proton.me/mail",
   "fileName": "ProtonMail-desktop.dmg",

@@ -3,6 +3,7 @@
   "description": "Tool to automate the insertion of frequently used text and graphics",
   "version": "10.0",
   "url": "https://www.ergonis.com/downloads/products/typinator/Typinator100-Install.dmg",
+  "vendor_url": "https://www.ergonis.com/downloads/products/typinator/Typinator100-Install.dmg",
   "bundleId": "com.macility.typinator2",
   "homepage": "https://www.ergonis.com/products/typinator/",
   "fileName": "Typinator100-Install.dmg",

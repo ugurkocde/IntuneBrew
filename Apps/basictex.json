@@ -3,6 +3,7 @@
   "description": "Compact TeX distribution as alternative to the full TeX Live / MacTeX",
   "version": "2026.0301",
   "url": "https://mirror.ctan.org/systems/mac/mactex/mactex-basictex-20260301.pkg",
+  "vendor_url": "https://mirror.ctan.org/systems/mac/mactex/mactex-basictex-20260301.pkg",
   "bundleId": "org.tug.mactex.basictex2025",
   "homepage": "https://www.tug.org/mactex/morepackages.html",
   "fileName": "mactex-basictex-20260301.pkg",

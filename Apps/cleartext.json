@@ -3,6 +3,7 @@
   "description": "Text editor",
   "version": "2.45",
   "url": "https://intunebrew.blob.core.windows.net/pkg/cleartext_2.45.pkg",
+  "vendor_url": "https://github.com/mortenjust/cleartext-mac/releases/download/2.45/Cleartext.zip",
   "bundleId": "com.nicola.ClearText",
   "homepage": "https://github.com/mortenjust/cleartext-mac",
   "fileName": "cleartext_2.45.pkg",

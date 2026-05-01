@@ -3,6 +3,7 @@
   "description": "Javascript Secrets Vault - Multi-Platform Desktop Application",
   "version": "2.28.1",
   "url": "https://github.com/buttercup/buttercup-desktop/releases/download/v2.28.1/Buttercup-mac-x64-2.28.1.dmg",
+  "vendor_url": "https://github.com/buttercup/buttercup-desktop/releases/download/v2.28.1/Buttercup-mac-x64-2.28.1.dmg",
   "bundleId": "pw.buttercup.desktop",
   "homepage": "https://buttercup.pw/",
   "fileName": "Buttercup-mac-x64-2.28.1.dmg",

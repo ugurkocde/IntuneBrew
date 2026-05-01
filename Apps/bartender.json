@@ -3,6 +3,7 @@
   "description": "Menu bar icon organiser",
   "version": "6.4.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/bartender_6.4.1.pkg",
+  "vendor_url": "https://macbartender.com/B2/updates/6-4-1/Bartender%206.zip",
   "bundleId": "com.surteesstudios.Bartender",
   "homepage": "https://www.macbartender.com/",
   "fileName": "bartender_6.4.1.pkg",

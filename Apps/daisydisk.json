@@ -3,6 +3,7 @@
   "description": "Disk space visualiser",
   "version": "4.33.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/daisydisk_4.33.3.pkg",
+  "vendor_url": "https://daisydiskapp.com/download/DaisyDisk.zip",
   "bundleId": "com.daisydiskapp.DaisyDiskStandAlone",
   "homepage": "https://daisydiskapp.com/",
   "fileName": "daisydisk_4.33.3.pkg",

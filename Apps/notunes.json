@@ -3,6 +3,7 @@
   "description": "Simple application that will prevent iTunes or Apple Music from launching",
   "version": "3.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/notunes_3.5.pkg",
+  "vendor_url": "https://github.com/tombonez/noTunes/releases/download/v3.5/noTunes-3.5.zip",
   "bundleId": "digital.twisted.noTunes",
   "homepage": "https://github.com/tombonez/noTunes",
   "fileName": "notunes_3.5.pkg",

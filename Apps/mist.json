@@ -3,6 +3,7 @@
   "description": "Utility that automatically downloads firmwares and installers",
   "version": "0.30",
   "url": "https://github.com/ninxsoft/Mist/releases/download/v0.30/Mist.0.30.pkg",
+  "vendor_url": "https://github.com/ninxsoft/Mist/releases/download/v0.30/Mist.0.30.pkg",
   "bundleId": "com.ninxsoft.pkg.mist",
   "homepage": "https://github.com/ninxsoft/Mist",
   "fileName": "Mist.0.30.pkg",

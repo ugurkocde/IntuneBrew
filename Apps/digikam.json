@@ -3,6 +3,7 @@
   "description": "Digital photo manager",
   "version": "9.0.0",
   "url": "https://download.kde.org/stable/digikam/9.0.0/digiKam-9.0.0-Qt6-MacOS-arm64.pkg",
+  "vendor_url": "https://download.kde.org/stable/digikam/9.0.0/digiKam-9.0.0-Qt6-MacOS-arm64.pkg",
   "bundleId": "org.digiKam",
   "homepage": "https://www.digikam.org/",
   "fileName": "digiKam-9.0.0-Qt6-MacOS-arm64.pkg",

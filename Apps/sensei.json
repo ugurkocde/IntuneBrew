@@ -3,6 +3,7 @@
   "description": "Monitors the computer system and optimises its performance",
   "version": "2.0.2",
   "url": "https://cdn.cindori.com/apps/sensei/updates/2.0.2-127/Sensei.dmg",
+  "vendor_url": "https://cdn.cindori.com/apps/sensei/updates/2.0.2-127/Sensei.dmg",
   "bundleId": "org.cindori.SenseiTool",
   "homepage": "https://cindori.com/sensei",
   "fileName": "Sensei.dmg",

@@ -3,6 +3,7 @@
   "description": "Remote desktop and second display tool",
   "version": "3.20.3.0",
   "url": "https://duetdownload.com/Mac/3_x/duet-dd-3-20-3-0.dmg",
+  "vendor_url": "https://duetdownload.com/Mac/3_x/duet-dd-3-20-3-0.dmg",
   "bundleId": "com.kairos.duetMac",
   "homepage": "https://www.duetdisplay.com/",
   "fileName": "duet-dd-3-20-3-0.dmg",

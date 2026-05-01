@@ -3,6 +3,7 @@
   "description": "Keep your computer awake",
   "version": "1.10",
   "url": "https://downloads.sticksoftware.com/Jiggler.dmg",
+  "vendor_url": "https://downloads.sticksoftware.com/Jiggler.dmg",
   "bundleId": "com.stick.app.jiggler",
   "homepage": "https://www.sticksoftware.com/software/Jiggler.html",
   "fileName": "Jiggler.dmg",

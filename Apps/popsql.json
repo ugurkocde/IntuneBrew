@@ -3,6 +3,7 @@
   "description": "Collaborative SQL editor",
   "version": "1.0.135",
   "url": "https://popsql-releases.s3.amazonaws.com/mac/PopSQL-1.0.135-arm64.dmg",
+  "vendor_url": "https://popsql-releases.s3.amazonaws.com/mac/PopSQL-1.0.135-arm64.dmg",
   "bundleId": "org.electron.popsql",
   "homepage": "https://popsql.com/",
   "fileName": "PopSQL-1.0.135-arm64.dmg",

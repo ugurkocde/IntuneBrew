@@ -3,6 +3,7 @@
   "description": "General-purpose text editor",
   "version": "2.0.23",
   "url": "https://intunebrew.blob.core.windows.net/pkg/textmate_2.0.23.pkg",
+  "vendor_url": "https://github.com/textmate/textmate/releases/download/v2.0.23/TextMate_2.0.23.tbz",
   "bundleId": "com.macromates.TextMate",
   "homepage": "https://macromates.com/",
   "fileName": "textmate_2.0.23.pkg",

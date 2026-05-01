@@ -1,14 +1,15 @@
 {
   "name": "Berkeley Open Infrastructure for Network Computing",
   "description": "Downloads scientific computing jobs and runs them invisibly in the background",
-  "version": "8.2.5",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/berkeley_open_infrastructure_for_network_computing_8.2.5.pkg",
+  "version": "8.2.11",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/berkeley_open_infrastructure_for_network_computing_8.2.11.pkg",
+  "vendor_url": "https://boinc.berkeley.edu/dl/boinc_8.2.5_macOSX_universal.zip",
   "bundleId": "edu.berkeley.boinc",
   "homepage": "https://boinc.berkeley.edu/",
-  "fileName": "berkeley_open_infrastructure_for_network_computing_8.2.5.pkg",
+  "fileName": "berkeley_open_infrastructure_for_network_computing_8.2.11.pkg",
   "type": "app",
-  "previous_version": "8.2.5",
-  "sha": "7f18086485f17405c9c41e5368660fe53338d782840f362b2a332ddf33607a38",
+  "previous_version": "8.2.11",
+  "sha": "e0524549ef8579da0d5383a2bfbc5f4ae56d1f4d59108a655a57ca6e6af5e554",
   "category": "Utilities",
   "publisher": "University of California, Berkeley"
 }

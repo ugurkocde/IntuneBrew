@@ -1,13 +1,14 @@
 {
   "name": "Novabench",
   "description": "Benchmark tool to quickly test and compare the computer's performance",
-  "version": "5.6.1",
+  "version": "6.0.1",
   "url": "https://novabench.com/files/novabench.dmg",
+  "vendor_url": "https://novabench.com/files/novabench.dmg",
   "bundleId": "com.novabench.client",
   "homepage": "https://novabench.com/",
   "fileName": "novabench.dmg",
-  "sha": "739c890b529a39dee508ea8471f42fa58afe6374f550fdc4d557510a111419f5",
+  "sha": "b30e3baf37e86ade02332f40434250937a58202fb4c024578211abf4fd0e1717",
   "category": "Utilities",
   "publisher": "NovaBench",
-  "previous_version": "5.6.1"
+  "previous_version": "6.0.1"
 }

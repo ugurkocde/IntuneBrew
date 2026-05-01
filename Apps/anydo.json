@@ -3,6 +3,7 @@
   "description": "Reminder, planner & calendar",
   "version": "5.0.68",
   "url": "https://electron-app.any.do/Anydo-5.0.68-universal.dmg",
+  "vendor_url": "https://electron-app.any.do/Anydo-5.0.68-universal.dmg",
   "bundleId": "com.anydo.mac",
   "homepage": "https://www.any.do/",
   "fileName": "Anydo-5.0.68-universal.dmg",

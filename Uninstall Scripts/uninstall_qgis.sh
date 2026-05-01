@@ -17,12 +17,12 @@ fi
 echo "Stopping QGIS if running..."
 pkill -f "QGIS" 2>/dev/null || true
 
-# Remove /Applications/QGIS-final-4_0_0.app
-echo "Removing /Applications/QGIS-final-4_0_0.app..."
-if [ -d "/Applications/QGIS-final-4_0_0.app" ]; then
-    rm -rf "/Applications/QGIS-final-4_0_0.app" 2>/dev/null || true
-elif [ -f "/Applications/QGIS-final-4_0_0.app" ]; then
-    rm -f "/Applications/QGIS-final-4_0_0.app" 2>/dev/null || true
+# Remove /Applications/QGIS-final-4_0_1.app
+echo "Removing /Applications/QGIS-final-4_0_1.app..."
+if [ -d "/Applications/QGIS-final-4_0_1.app" ]; then
+    rm -rf "/Applications/QGIS-final-4_0_1.app" 2>/dev/null || true
+elif [ -f "/Applications/QGIS-final-4_0_1.app" ]; then
+    rm -f "/Applications/QGIS-final-4_0_1.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/QGIS

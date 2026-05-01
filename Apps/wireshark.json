@@ -3,6 +3,7 @@
   "description": "Network protocol analyzer",
   "version": "4.4.7",
   "url": "https://2.na.dl.wireshark.org/osx/all-versions/Wireshark%204.4.7%20Arm%2064.dmg",
+  "vendor_url": "https://2.na.dl.wireshark.org/osx/all-versions/Wireshark%204.4.7%20Arm%2064.dmg",
   "bundleId": "org.wireshark.Wireshark",
   "homepage": "https://www.wireshark.org/",
   "fileName": "Wireshark%204.4.7%20Arm%2064.dmg",

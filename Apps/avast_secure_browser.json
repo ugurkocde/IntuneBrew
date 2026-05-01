@@ -3,6 +3,7 @@
   "description": "Web browser focusing on privacy",
   "version": "139.0.6697.68",
   "url": "https://cdn-update.avast.securebrowser.com/browser/mac/arm/139.0.6697.68/AvastSecureBrowser.dmg",
+  "vendor_url": "https://cdn-update.avast.securebrowser.com/browser/mac/arm/139.0.6697.68/AvastSecureBrowser.dmg",
   "bundleId": "com.avast.AvastSecureBrowser",
   "homepage": "https://www.avast.com/secure-browser#mac",
   "fileName": "AvastSecureBrowser.dmg",

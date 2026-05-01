@@ -3,6 +3,7 @@
   "description": "Data management tool that enables working with SQL Server",
   "version": "1.52.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/azure_data_studio_1.52.0.pkg",
+  "vendor_url": "https://download.microsoft.com/download/6b2bfeac-9c1b-4182-9a2f-ce86ff8cc371/azuredatastudio-macos-arm64-1.52.0.zip",
   "bundleId": "com.azuredatastudio.oss",
   "homepage": "https://docs.microsoft.com/en-us/sql/azure-data-studio/",
   "fileName": "azure_data_studio_1.52.0.pkg",

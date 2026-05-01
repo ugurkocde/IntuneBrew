@@ -3,6 +3,7 @@
   "description": "Clipboard history app",
   "version": "1.34.0",
   "url": "https://f005.backblazeb2.com/file/clipbook/ClipBook-1.34.0-arm64.dmg",
+  "vendor_url": "https://f005.backblazeb2.com/file/clipbook/ClipBook-1.34.0-arm64.dmg",
   "bundleId": "com.ikryanov.clipbook",
   "homepage": "https://clipbook.app/",
   "fileName": "ClipBook-1.34.0-arm64.dmg",

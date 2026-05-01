@@ -3,6 +3,7 @@
   "description": "Tool for organising and renaming movies, TV shows, anime or music",
   "version": "5.2.1",
   "url": "https://get.filebot.net/filebot/FileBot_5.2.1/FileBot_5.2.1_arm64.pkg",
+  "vendor_url": "https://get.filebot.net/filebot/FileBot_5.2.1/FileBot_5.2.1_arm64.pkg",
   "bundleId": "net.filebot.FileBot",
   "homepage": "https://www.filebot.net/",
   "fileName": "filebot_5.2.0.pkg",

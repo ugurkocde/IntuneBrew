@@ -3,6 +3,7 @@
   "description": "Audio playback",
   "version": "2.1.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/farrago_2.1.5.pkg",
+  "vendor_url": "https://cdn.rogueamoeba.com/farrago/download/Farrago.zip",
   "bundleId": "com.rogueamoeba.farrago",
   "homepage": "https://rogueamoeba.com/farrago/",
   "fileName": "farrago_2.1.5.pkg",

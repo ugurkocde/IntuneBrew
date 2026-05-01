@@ -3,6 +3,7 @@
   "description": "GUI for rsync",
   "version": "2.9.3",
   "url": "https://github.com/rsyncOSX/RsyncUI/releases/download/v2.9.3/RsyncUI.2.9.3.dmg",
+  "vendor_url": "https://github.com/rsyncOSX/RsyncUI/releases/download/v2.9.3/RsyncUI.2.9.3.dmg",
   "bundleId": "no.blogspot.RsyncUI",
   "homepage": "https://github.com/rsyncOSX/RsyncUI",
   "fileName": "RsyncUI.2.9.3.dmg",

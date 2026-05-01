@@ -3,6 +3,7 @@
   "description": "Remote connectivity solution",
   "version": "15",
   "url": "https://download.teamviewer.com/download/version_15x/TeamViewerHost.dmg",
+  "vendor_url": "https://download.teamviewer.com/download/version_15x/TeamViewerHost.dmg",
   "bundleId": "com.teamviewer.TeamViewerHost",
   "homepage": "https://www.teamviewer.com/",
   "fileName": "TeamViewerHost.dmg",

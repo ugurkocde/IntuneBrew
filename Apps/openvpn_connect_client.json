@@ -3,6 +3,7 @@
   "description": "Client program for the OpenVPN Access Server",
   "version": "3.8.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/openvpn_connect_client_3.8.1.pkg",
+  "vendor_url": "https://swupdate.openvpn.net/downloads/connect/openvpn-connect-3.8.1.5790_signed.dmg",
   "bundleId": "org.openvpn.client.app",
   "homepage": "https://openvpn.net/client-connect-vpn-for-mac-os/",
   "fileName": "openvpn_connect_client_3.8.1.pkg",

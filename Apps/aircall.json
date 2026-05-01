@@ -3,6 +3,7 @@
   "description": "Cloud-based call center and phone system software",
   "version": "3.1.66",
   "url": "https://download-electron.aircall.io/Aircall-3.1.66.dmg",
+  "vendor_url": "https://download-electron.aircall.io/Aircall-3.1.66.dmg",
   "bundleId": "io.aircall.phone",
   "homepage": "https://aircall.io/",
   "fileName": "Aircall-3.1.66.dmg",

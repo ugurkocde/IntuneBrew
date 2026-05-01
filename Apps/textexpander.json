@@ -1,13 +1,14 @@
 {
   "name": "TextExpander",
   "description": "Inserts pre-made snippets of text anywhere",
-  "version": "8.4.2",
-  "url": "https://cdn.textexpander.com/mac/842.9/TextExpander_8.4.2.dmg",
+  "version": "8.4.3",
+  "url": "https://cdn.textexpander.com/mac/843.7/TextExpander_8.4.3.dmg",
+  "vendor_url": "https://cdn.textexpander.com/mac/842.9/TextExpander_8.4.2.dmg",
   "bundleId": "com.smileonmymac.textexpander",
   "homepage": "https://textexpander.com/",
-  "fileName": "TextExpander_8.4.2.dmg",
-  "sha": "22a708c85a13737d1ce2d83fb5a0c5ef6dbda619aa1e12104f29d178b290b484",
+  "fileName": "TextExpander_8.4.3.dmg",
+  "sha": "beb68635409fe6c538695db8729c439589db5b6d8ff23755ad80683048f842a4",
   "category": "Productivity",
   "publisher": "Smile Software, Inc.",
-  "previous_version": "8.4.2"
+  "previous_version": "8.4.3"
 }

@@ -3,6 +3,7 @@
   "description": "Java Development Environment designed for beginners",
   "version": "5.5.0",
   "url": "https://github.com/k-pet-group/BlueJ-Greenfoot/releases/download/BLUEJ-RELEASE-5.5.0/BlueJ-mac-aarch64-5.5.0.dmg",
+  "vendor_url": "https://github.com/k-pet-group/BlueJ-Greenfoot/releases/download/BLUEJ-RELEASE-5.5.0/BlueJ-mac-aarch64-5.5.0.dmg",
   "bundleId": "org.bluej.BlueJ",
   "homepage": "https://www.bluej.org/",
   "fileName": "BlueJ-mac-aarch64-5.5.0.dmg",

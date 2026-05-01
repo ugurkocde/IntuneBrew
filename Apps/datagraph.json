@@ -3,6 +3,7 @@
   "description": "Scientific/statistical graphing software",
   "version": "5.5",
   "url": "https://www.visualdatatools.com/DataGraph/DataGraph.dmg",
+  "vendor_url": "https://www.visualdatatools.com/DataGraph/DataGraph.dmg",
   "bundleId": "com.visualdatatools.datagraph",
   "homepage": "https://www.visualdatatools.com/DataGraph/",
   "fileName": "DataGraph.dmg",

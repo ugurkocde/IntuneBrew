@@ -3,6 +3,7 @@
   "description": "Privacy-first, open-source platform for knowledge sharing and management",
   "version": "0.10.15",
   "url": "https://github.com/logseq/logseq/releases/download/0.10.15/logseq-darwin-arm64-0.10.15.dmg",
+  "vendor_url": "https://github.com/logseq/logseq/releases/download/0.10.15/logseq-darwin-arm64-0.10.15.dmg",
   "bundleId": "com.electron.logseq",
   "homepage": "https://github.com/logseq/logseq",
   "fileName": "logseq-darwin-arm64-0.10.15.dmg",

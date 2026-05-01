@@ -3,6 +3,7 @@
   "description": "Switch apps, windows, or tabs",
   "version": "4.7.0",
   "url": "https://manytricks.com/download/_do_not_hotlink_/witch470.dmg",
+  "vendor_url": "https://manytricks.com/download/_do_not_hotlink_/witch470.dmg",
   "bundleId": "com.manytricks.witchdaemon",
   "homepage": "https://manytricks.com/witch/",
   "fileName": "witch470.dmg",

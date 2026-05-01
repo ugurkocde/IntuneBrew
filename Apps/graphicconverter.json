@@ -3,6 +3,7 @@
   "description": "For browsing, enhancing and converting images",
   "version": "12.5.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/graphicconverter_12.5.1.pkg",
+  "vendor_url": "https://www.lemkesoft.info/files/graphicconverter/gc12_build7134.zip",
   "bundleId": "com.lemkesoft.graphicconverter",
   "homepage": "https://www.lemkesoft.de/en/products/graphicconverter/",
   "fileName": "graphicconverter_12.5.1.pkg",

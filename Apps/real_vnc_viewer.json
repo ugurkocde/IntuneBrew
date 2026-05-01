@@ -3,6 +3,7 @@
   "description": "Remote desktop application focusing on security",
   "version": "7.15.1",
   "url": "https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-7.15.1-MacOSX-universal.dmg",
+  "vendor_url": "https://downloads.realvnc.com/download/file/viewer.files/VNC-Viewer-7.15.1-MacOSX-universal.dmg",
   "bundleId": "com.realvnc.vncviewer",
   "homepage": "https://www.realvnc.com/",
   "fileName": "VNC-Viewer-7.15.1-MacOSX-universal.dmg",

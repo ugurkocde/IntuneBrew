@@ -17,12 +17,12 @@ fi
 echo "Stopping Jamie if running..."
 pkill -f "Jamie" 2>/dev/null || true
 
-# Remove /Applications/jamie.app
-echo "Removing /Applications/jamie.app..."
-if [ -d "/Applications/jamie.app" ]; then
-    rm -rf "/Applications/jamie.app" 2>/dev/null || true
-elif [ -f "/Applications/jamie.app" ]; then
-    rm -f "/Applications/jamie.app" 2>/dev/null || true
+# Remove /Applications/Jamie.app
+echo "Removing /Applications/Jamie.app..."
+if [ -d "/Applications/Jamie.app" ]; then
+    rm -rf "/Applications/Jamie.app" 2>/dev/null || true
+elif [ -f "/Applications/Jamie.app" ]; then
+    rm -f "/Applications/Jamie.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/jamie

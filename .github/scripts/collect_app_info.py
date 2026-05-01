@@ -478,6 +478,10 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/notion-mail.json",
     "https://formulae.brew.sh/api/cask/codex.json",
     "https://formulae.brew.sh/api/cask/pppc-utility.json",
+    "https://formulae.brew.sh/api/cask/battery.json",
+    "https://formulae.brew.sh/api/cask/music-decoy.json",
+    "https://formulae.brew.sh/api/cask/thebrowsercompany-dia.json",
+    "https://formulae.brew.sh/api/cask/affinity.json",
 ]
 
 # DMG
@@ -1208,6 +1212,11 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/kiro.json",
     "https://formulae.brew.sh/api/cask/cmux.json",
     "https://formulae.brew.sh/api/cask/winzip.json",
+    "https://formulae.brew.sh/api/cask/finetune.json",
+    "https://formulae.brew.sh/api/cask/heynote.json",
+    "https://formulae.brew.sh/api/cask/morgen.json",
+    "https://formulae.brew.sh/api/cask/cardpresso.json",
+    "https://formulae.brew.sh/api/cask/lastpass.json",
 ]
 
 # PKG in DMG URLs
@@ -1417,11 +1426,14 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         # Warp's Homebrew URL returns HTML, use direct DMG URL instead
         url = f"https://releases.warp.dev/stable/v{version}/Warp.dmg"
 
+    vendor_url = url
+
     app_info = {
         "name": data["name"][0],
         "description": data["desc"],
         "version": version,
         "url": url,
+        "vendor_url": vendor_url,
         "bundleId": bundle_id,
         "homepage": data["homepage"],
         "fileName": get_filename_from_url(url, app_name=data["name"][0], version=version)

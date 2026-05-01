@@ -3,6 +3,7 @@
   "description": "Presentation and production application for live events",
   "version": "21.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/propresenter_21.3.pkg",
+  "vendor_url": "https://renewedvision.com/downloads/propresenter/mac/ProPresenter_21.3_352518178.zip",
   "bundleId": "com.renewedvision.ProPresenter21",
   "homepage": "https://renewedvision.com/propresenter/",
   "fileName": "propresenter_21.3.pkg",

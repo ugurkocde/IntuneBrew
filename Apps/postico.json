@@ -3,6 +3,7 @@
   "description": "GUI client for PostgreSQL databases",
   "version": "2.3.3",
   "url": "https://downloads.eggerapps.at/postico/postico-9804.dmg",
+  "vendor_url": "https://downloads.eggerapps.at/postico/postico-9804.dmg",
   "bundleId": "at.eggerapps.Postico",
   "homepage": "https://eggerapps.at/postico2/",
   "fileName": "postico-9804.dmg",

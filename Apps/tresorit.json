@@ -1,13 +1,14 @@
 {
   "name": "Tresorit",
   "description": "Client for the Tresorit cloud storage service",
-  "version": "3.5.3421.4750",
+  "version": "3.5.3430.4780",
   "url": "https://installer.tresorit.com/Tresorit.dmg",
+  "vendor_url": "https://installer.tresorit.com/Tresorit.dmg",
   "bundleId": "com.tresorit.mac",
   "homepage": "https://tresorit.com/",
   "fileName": "Tresorit.dmg",
-  "sha": "bbc36100036792bb804f2974b1631a3ad0d6a6bbe53ccba3131cdad8ebc47236",
+  "sha": "0e94a241f119dc31b77a9161c8a25b484da9e8c8847f163377c99ab0b09e56ba",
   "category": "Productivity",
   "publisher": "Tresorit",
-  "previous_version": "3.5.3376.4650"
+  "previous_version": "3.5.3430.4780"
 }

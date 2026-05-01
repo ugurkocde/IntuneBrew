@@ -1,14 +1,15 @@
 {
   "name": "Positron",
   "description": "Data science IDE",
-  "version": "2026.03.0-212",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/positron_2026.03.0-212.pkg",
+  "version": "2026.04.1-10",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/positron_2026.04.1-10.pkg",
+  "vendor_url": "https://cdn.posit.co/positron/releases/mac/arm64/Positron-darwin-2026.04.0-269-arm64.zip",
   "bundleId": "com.rstudio.positron",
   "homepage": "https://positron.posit.co/",
-  "fileName": "positron_2026.03.0-212.pkg",
+  "fileName": "positron_2026.04.1-10.pkg",
   "type": "app",
-  "sha": "9552d97e5114b4e8a3860cb14a717d39988ff6d3d784d2d8af02edd6315a16e0",
+  "sha": "d35c8b7841ce97ab599565bb55977a569492666def79998b58c63f5d7c69ee17",
   "category": "Developer Tools",
   "publisher": "Posit, PBC",
-  "previous_version": "2026.03.0-212"
+  "previous_version": "2026.04.1-10"
 }

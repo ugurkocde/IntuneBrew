@@ -3,6 +3,7 @@
   "description": "Team messaging, video meetings, and business phone",
   "version": "26.1.10",
   "url": "https://app.ringcentral.com/download/RingCentral-arm64.pkg",
+  "vendor_url": "https://app.ringcentral.com/download/RingCentral-arm64.pkg",
   "bundleId": "com.ringcentral.glip",
   "homepage": "https://www.ringcentral.com/download.html",
   "fileName": "RingCentral-arm64.pkg",

@@ -3,6 +3,7 @@
   "description": "Tool to wirelessly mirror the screen or stream media files",
   "version": "3.1.7",
   "url": "https://download.airsquirrels.com/AirParrot3/Mac/AirParrot-3.1.7.dmg",
+  "vendor_url": "https://download.airsquirrels.com/AirParrot3/Mac/AirParrot-3.1.7.dmg",
   "bundleId": "com.squirrels.AirParrot-3",
   "homepage": "https://www.airsquirrels.com/airparrot/",
   "fileName": "AirParrot-3.1.7.dmg",

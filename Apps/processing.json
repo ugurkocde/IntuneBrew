@@ -3,6 +3,7 @@
   "description": "Flexible software sketchbook and a language for learning how to code",
   "version": "4.5.2",
   "url": "https://github.com/processing/processing4/releases/download/processing-1313-4.5.2/processing-4.5.2-macos-aarch64.dmg",
+  "vendor_url": "https://github.com/processing/processing4/releases/download/processing-1313-4.5.2/processing-4.5.2-macos-aarch64.dmg",
   "bundleId": "org.processing.app",
   "homepage": "https://processing.org/",
   "fileName": "processing-4.5.2-macos-aarch64.dmg",

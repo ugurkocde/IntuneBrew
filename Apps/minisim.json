@@ -3,6 +3,7 @@
   "description": "App for launching iOS and Android simulators",
   "version": "0.10.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/minisim_0.10.0.pkg",
+  "vendor_url": "https://github.com/okwasniewski/MiniSim/releases/download/v0.10.0/MiniSim.app.zip",
   "bundleId": "com.oskarkwasniewski.MiniSim",
   "homepage": "https://www.minisim.app/",
   "fileName": "minisim_0.10.0.pkg",

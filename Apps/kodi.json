@@ -3,6 +3,7 @@
   "description": "Free and open-source media player",
   "version": "21.3-Omega",
   "url": "https://mirrors.kodi.tv/releases/osx/arm64/kodi-21.3-Omega-arm64.dmg",
+  "vendor_url": "https://mirrors.kodi.tv/releases/osx/arm64/kodi-21.3-Omega-arm64.dmg",
   "bundleId": "org.xbmc.kodi",
   "homepage": "https://kodi.tv/",
   "fileName": "kodi-21.3-Omega-arm64.dmg",

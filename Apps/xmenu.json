@@ -3,6 +3,7 @@
   "description": "Access folders, files or text snippets from the menu bar",
   "version": "1.9.11",
   "url": "https://intunebrew.blob.core.windows.net/pkg/xmenu_1.9.11.pkg",
+  "vendor_url": "https://download.devontechnologies.com/download/freeware/xmenu/1.9.11/XMenu.app.zip",
   "bundleId": "com.devon-technologies.XMenu",
   "homepage": "https://www.devontechnologies.com/apps/freeware",
   "fileName": "xmenu_1.9.11.pkg",

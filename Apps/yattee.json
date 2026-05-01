@@ -3,6 +3,7 @@
   "description": "Alternative and privacy-friendly YouTube frontend",
   "version": "1.5.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/yattee_1.5.1.pkg",
+  "vendor_url": "https://github.com/yattee/yattee/releases/download/v1.5.1/Yattee-1.5.1-macOS.zip",
   "bundleId": "stream.yattee.app",
   "homepage": "https://github.com/yattee/yattee",
   "fileName": "yattee_1.5.1.pkg",

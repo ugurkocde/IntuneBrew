@@ -3,6 +3,7 @@
   "description": "Software for Logitech devices",
   "version": "2.1.854976",
   "url": "https://intunebrew.blob.core.windows.net/pkg/logitech_options_2.1.854976.pkg",
+  "vendor_url": "https://download01.logi.com/web/ftp/pub/techsupport/options/options_installer.zip",
   "bundleId": "com.logitech.Logi-Options",
   "homepage": "https://www.logitech.com/en-us/software/logi-options-plus.html",
   "fileName": "logitech_options_2.1.854976.pkg",

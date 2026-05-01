@@ -3,6 +3,7 @@
   "description": "Command-line shell and scripting language",
   "version": "7.5.4",
   "url": "https://github.com/PowerShell/PowerShell/releases/download/v7.5.4/powershell-7.5.4-osx-arm64.pkg",
+  "vendor_url": "https://github.com/PowerShell/PowerShell/releases/download/v7.5.4/powershell-7.5.4-osx-arm64.pkg",
   "bundleId": "com.microsoft.powershell",
   "homepage": "https://github.com/PowerShell/PowerShell",
   "fileName": "powershell-7.5.4-osx-arm64.pkg",

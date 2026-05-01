@@ -3,6 +3,7 @@
   "description": "Enable Windows-like program quitting when all windows are closed",
   "version": "1.5",
   "url": "https://intunebrew.blob.core.windows.net/pkg/swift_quit_1.5.pkg",
+  "vendor_url": "https://github.com/onebadidea/swiftquit/releases/download/v1.5/Swift.Quit.zip",
   "bundleId": "onebadidea.Swift-Quit",
   "homepage": "https://github.com/onebadidea/swiftquit",
   "fileName": "swift_quit_1.5.pkg",

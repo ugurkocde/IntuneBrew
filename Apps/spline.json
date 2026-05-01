@@ -3,6 +3,7 @@
   "description": "Design and collaborate in 3D",
   "version": "0.12.11",
   "url": "https://intunebrew.blob.core.windows.net/pkg/spline_0.12.11.pkg",
+  "vendor_url": "https://cdn.spline.design/_assets/Spline-0.12.11-arm64.mac.zip",
   "bundleId": "com.design.spline",
   "homepage": "https://spline.design/",
   "fileName": "spline_0.12.11.pkg",

@@ -3,6 +3,7 @@
   "description": "Intercept and modify HTTP requests",
   "version": "26.3.3",
   "url": "https://github.com/requestly/requestly-desktop-app/releases/download/v26.3.3/Requestly-26.3.3-arm64.dmg",
+  "vendor_url": "https://github.com/requestly/requestly-desktop-app/releases/download/v26.3.3/Requestly-26.3.3-arm64.dmg",
   "bundleId": "io.requestly.beta",
   "homepage": "https://requestly.com/",
   "fileName": "Requestly-26.3.3-arm64.dmg",

@@ -3,6 +3,7 @@
   "description": "Your internet connection status at a glance",
   "version": "1.7.1",
   "url": "https://files.lowtechguys.com/releases/IsThereNet-1.7.1.dmg",
+  "vendor_url": "https://files.lowtechguys.com/releases/IsThereNet-1.7.1.dmg",
   "bundleId": "com.lowtechguys.IsThereNet",
   "homepage": "https://lowtechguys.com/istherenet/",
   "fileName": "IsThereNet-1.7.1.dmg",

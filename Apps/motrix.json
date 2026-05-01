@@ -3,6 +3,7 @@
   "description": "Open-source download manager",
   "version": "1.8.19",
   "url": "https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-arm64.dmg",
+  "vendor_url": "https://github.com/agalwood/Motrix/releases/download/v1.8.19/Motrix-1.8.19-arm64.dmg",
   "bundleId": "app.motrix.native",
   "homepage": "https://motrix.app/",
   "fileName": "Motrix-1.8.19-arm64.dmg",

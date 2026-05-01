@@ -3,6 +3,7 @@
   "description": "Open-source BitTorrent client",
   "version": "4.1.1",
   "url": "https://github.com/transmission/transmission/releases/download/4.1.1/Transmission-4.1.1.dmg",
+  "vendor_url": "https://github.com/transmission/transmission/releases/download/4.1.1/Transmission-4.1.1.dmg",
   "bundleId": "org.m0k.transmission",
   "homepage": "https://transmissionbt.com/",
   "fileName": "Transmission-4.1.1.dmg",

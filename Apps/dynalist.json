@@ -3,6 +3,7 @@
   "description": "Outlining app for your work",
   "version": "1.0.6",
   "url": "https://dynalist.io/standalone/download?file=Dynalist.dmg",
+  "vendor_url": "https://dynalist.io/standalone/download?file=Dynalist.dmg",
   "bundleId": "io.dynalist.dynalist-desktop",
   "homepage": "https://dynalist.io/",
   "fileName": "Dynalist-1.0.6.dmg",

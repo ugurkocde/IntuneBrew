@@ -3,6 +3,7 @@
   "description": "Customizable dock, application launcher, dock replacement",
   "version": "2.860",
   "url": "https://intunebrew.blob.core.windows.net/pkg/activedock_2.860.pkg",
+  "vendor_url": "https://macplus-software.com/downloads/ActiveDock.zip",
   "bundleId": "com.sergey-gerasimenko.ActiveDock-2",
   "homepage": "https://www.noteifyapp.com/activedock/",
   "fileName": "activedock_2.860.pkg",

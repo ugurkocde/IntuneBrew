@@ -3,6 +3,7 @@
   "description": "Convert your caps lock key or any of your modifier keys to the hyper key",
   "version": "1.56",
   "url": "https://hyperkey.app/downloads/Hyperkey1.56.dmg",
+  "vendor_url": "https://hyperkey.app/downloads/Hyperkey1.56.dmg",
   "bundleId": "com.knollsoft.Hyperkey",
   "homepage": "https://hyperkey.app/",
   "fileName": "Hyperkey1.56.dmg",

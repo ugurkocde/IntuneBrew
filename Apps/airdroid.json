@@ -3,6 +3,7 @@
   "description": "Mobile device management suite",
   "version": "3.7.3.1",
   "url": "https://dl.airdroid.com/AirDroid_Desktop_Client_3.7.3.1.dmg",
+  "vendor_url": "https://dl.airdroid.com/AirDroid_Desktop_Client_3.7.3.1.dmg",
   "bundleId": "com.sandstudio.airdroid",
   "homepage": "https://www.airdroid.com/",
   "fileName": "AirDroid_Desktop_Client_3.7.3.1.dmg",

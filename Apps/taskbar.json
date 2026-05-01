@@ -3,6 +3,7 @@
   "description": "Windows-style taskbar as a Dock replacement",
   "version": "1.5.2.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/taskbar_1.5.2.1.pkg",
+  "vendor_url": "https://lawand.io/wp-content/uploads/2025/11/taskbar-1.5.2.1.zip",
   "bundleId": "com.fpfxtknjju.wbgcdolfev",
   "homepage": "https://lawand.io/taskbar/",
   "fileName": "taskbar_1.5.2.1.pkg",

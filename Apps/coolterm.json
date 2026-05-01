@@ -3,6 +3,7 @@
   "description": "Serial port terminal",
   "version": "2.4.0.3.0.1425",
   "url": "https://freeware.the-meiers.org/previous/CoolTermMac240.dmg",
+  "vendor_url": "https://freeware.the-meiers.org/previous/CoolTermMac240.dmg",
   "bundleId": "org.the-meiers.coolterm",
   "homepage": "https://freeware.the-meiers.org/",
   "fileName": "CoolTermMac240.dmg",

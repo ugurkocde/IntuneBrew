@@ -1,7 +1,7 @@
 {
   "app_name": "Cisco Jabber",
   "app_key": "cisco_jabber",
-  "last_updated": "2026-03-24",
+  "last_updated": "2026-05-01",
   "total_cves": 34,
   "summary": {
     "critical": 11,
@@ -665,7 +665,7 @@
     {
       "cve_id": "CVE-2014-0666",
       "published_date": "2014-01-16",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Directory traversal vulnerability in the Send Screen Capture implementation in Cisco Jabber 9.2(.1) and earlier on Windows allows remote attackers to upload arbitrary types of files, and consequently execute arbitrary code, via modified packets, aka Bug ID CSCug48056.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -686,7 +686,7 @@
     {
       "cve_id": "CVE-2013-1228",
       "published_date": "2013-09-06",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Cisco Jabber on Windows does not verify X.509 certificates from SSL servers, which allows man-in-the-middle attackers to spoof servers and modify the client-server data stream via a crafted certificate, aka Bug ID CSCug30280.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -707,7 +707,7 @@
     {
       "cve_id": "CVE-2013-3393",
       "published_date": "2013-06-26",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "The Precision Video Engine component in Cisco Jabber for Windows and Cisco Virtualization Experience Media Engine allows remote attackers to cause a denial of service (process crash and call disconnection) via crafted RTP packets, aka Bug IDs CSCuh60706 and CSCue21117.",
       "base_score": 5.0,
       "severity": "MEDIUM",

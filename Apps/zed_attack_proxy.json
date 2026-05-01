@@ -3,6 +3,7 @@
   "description": "Free and open source web app scanner",
   "version": "2.17.0",
   "url": "https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2.17.0_aarch64.dmg",
+  "vendor_url": "https://github.com/zaproxy/zaproxy/releases/download/v2.17.0/ZAP_2.17.0_aarch64.dmg",
   "bundleId": "org.zaproxy.zap.ZAP",
   "homepage": "https://www.zaproxy.org/",
   "fileName": "ZAP_2.17.0_aarch64.dmg",

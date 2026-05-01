@@ -1,14 +1,15 @@
 {
   "name": "PowerPhotos",
   "description": "Tool to organise photo libraries",
-  "version": "3.2.6",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/powerphotos_3.2.6.pkg",
+  "version": "3.3.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/powerphotos_3.3.3.pkg",
+  "vendor_url": "https://www.fatcatsoftware.com/powerphotos/PowerPhotos.zip",
   "bundleId": "com.fatcatsoftware.PowerPhotos",
   "homepage": "https://www.fatcatsoftware.com/powerphotos/",
-  "fileName": "powerphotos_3.2.6.pkg",
+  "fileName": "powerphotos_3.3.3.pkg",
   "type": "app",
-  "sha": "1cec77cae65f11b5085861461e844fd97b5d452762e9f0f02340d2a8c529f72e",
+  "sha": "114b11a9c00896477be7681744322dad414755a253abb149b8fcd9901c02c06d",
   "category": "Utilities",
   "publisher": "Fat Cat Software",
-  "previous_version": "3.2.6"
+  "previous_version": "3.3.3"
 }

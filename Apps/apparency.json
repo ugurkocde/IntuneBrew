@@ -3,6 +3,7 @@
   "description": "Inspect application bundles",
   "version": "3.2",
   "url": "https://www.mothersruin.com/software/archives/Apparency-3.2.dmg",
+  "vendor_url": "https://www.mothersruin.com/software/archives/Apparency-3.2.dmg",
   "bundleId": "com.mothersruin.Apparency",
   "homepage": "https://www.mothersruin.com/software/Apparency/",
   "fileName": "Apparency-3.2.dmg",

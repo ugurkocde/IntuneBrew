@@ -17,12 +17,12 @@ fi
 echo "Stopping ELAN if running..."
 pkill -f "ELAN" 2>/dev/null || true
 
-# Remove /Applications/ELAN_7-0_M1_mac/ELAN_7.0.app
-echo "Removing /Applications/ELAN_7-0_M1_mac/ELAN_7.0.app..."
-if [ -d "/Applications/ELAN_7-0_M1_mac/ELAN_7.0.app" ]; then
-    rm -rf "/Applications/ELAN_7-0_M1_mac/ELAN_7.0.app" 2>/dev/null || true
-elif [ -f "/Applications/ELAN_7-0_M1_mac/ELAN_7.0.app" ]; then
-    rm -f "/Applications/ELAN_7-0_M1_mac/ELAN_7.0.app" 2>/dev/null || true
+# Remove /Applications/ELAN_7-1_M1_mac/ELAN_7.1.app
+echo "Removing /Applications/ELAN_7-1_M1_mac/ELAN_7.1.app..."
+if [ -d "/Applications/ELAN_7-1_M1_mac/ELAN_7.1.app" ]; then
+    rm -rf "/Applications/ELAN_7-1_M1_mac/ELAN_7.1.app" 2>/dev/null || true
+elif [ -f "/Applications/ELAN_7-1_M1_mac/ELAN_7.1.app" ]; then
+    rm -f "/Applications/ELAN_7-1_M1_mac/ELAN_7.1.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/ELAN

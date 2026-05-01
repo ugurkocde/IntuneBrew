@@ -3,6 +3,7 @@
   "description": "Unicode keyboard layout editor",
   "version": "3.6.1",
   "url": "https://software.sil.org/downloads/r/ukelele/Ukelele_3.6.1.dmg",
+  "vendor_url": "https://software.sil.org/downloads/r/ukelele/Ukelele_3.6.1.dmg",
   "bundleId": "org.sil.ukelele",
   "homepage": "https://software.sil.org/ukelele/",
   "fileName": "Ukelele_3.6.1.dmg",

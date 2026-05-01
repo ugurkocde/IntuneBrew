@@ -3,6 +3,7 @@
   "description": "3D printing setup, management, and monitoring",
   "version": "3.48.0",
   "url": "https://downloads.formlabs.com/PreForm/Release/3.48.0/PreForm_mac_3.48.0_release_releaser_523_98058.dmg",
+  "vendor_url": "https://downloads.formlabs.com/PreForm/Release/3.48.0/PreForm_mac_3.48.0_release_releaser_523_98058.dmg",
   "bundleId": "com.formlabs.PreForm",
   "homepage": "https://formlabs.com/tools/preform/",
   "fileName": "PreForm_mac_3.48.0_release_releaser_523_98058.dmg",

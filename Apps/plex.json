@@ -3,6 +3,7 @@
   "description": "Home media player",
   "version": "1.112.0.359",
   "url": "https://intunebrew.blob.core.windows.net/pkg/plex_1.112.0.359.pkg",
+  "vendor_url": "https://downloads.plex.tv/plex-desktop/1.112.0.359-0d79a49f/macos/Plex-1.112.0.359-0d79a49f-universal.zip",
   "bundleId": "tv.plex.desktop",
   "homepage": "https://www.plex.tv/",
   "fileName": "plex_1.112.0.359.pkg",

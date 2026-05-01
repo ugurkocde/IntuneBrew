@@ -3,6 +3,7 @@
   "description": "Menu bar app that provides more control over Night Shift",
   "version": "1.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/shifty_1.2.pkg",
+  "vendor_url": "https://github.com/thompsonate/Shifty/releases/download/v1.2/Shifty-1.2.zip",
   "bundleId": "io.natethompson.Shifty",
   "homepage": "https://shifty.natethompson.io/",
   "fileName": "shifty_1.2.pkg",

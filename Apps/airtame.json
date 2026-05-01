@@ -3,6 +3,7 @@
   "description": "Wireless screen sharing platform",
   "version": "4.15.0",
   "url": "https://downloads-cdn.airtame.com/app/latest/mac/Airtame-4.15.0.dmg",
+  "vendor_url": "https://downloads-cdn.airtame.com/app/latest/mac/Airtame-4.15.0.dmg",
   "bundleId": "com.airtame.airtame-application",
   "homepage": "https://airtame.com/",
   "fileName": "Airtame-4.15.0.dmg",

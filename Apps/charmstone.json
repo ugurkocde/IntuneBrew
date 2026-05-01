@@ -3,6 +3,7 @@
   "description": "App launcher and switcher",
   "version": "1.44",
   "url": "https://charmstone.app/downloads/Charmstone1.44.dmg",
+  "vendor_url": "https://charmstone.app/downloads/Charmstone1.44.dmg",
   "bundleId": "com.knollsoft.Charmstone",
   "homepage": "https://charmstone.app/",
   "fileName": "Charmstone1.44.dmg",

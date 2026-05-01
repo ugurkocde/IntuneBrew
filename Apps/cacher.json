@@ -3,6 +3,7 @@
   "description": "Code snippet organiser",
   "version": "2.47.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/cacher_2.47.9.pkg",
+  "vendor_url": "https://cacher-download.nyc3.digitaloceanspaces.com/Cacher-2.47.9-universal-mac.zip",
   "bundleId": "net.PenguinLabs.Cacher",
   "homepage": "https://www.cacher.io/",
   "fileName": "cacher_2.47.9.pkg",

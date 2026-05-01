@@ -1,14 +1,15 @@
 {
   "name": "Thonny",
   "description": "Python IDE for beginners",
-  "version": "4.1.7",
-  "url": "https://github.com/thonny/thonny/releases/download/v4.1.7/thonny-4.1.7.pkg",
+  "version": "5.0.0",
+  "url": "https://github.com/thonny/thonny/releases/download/v5.0.0/thonny-5.0.0-arm64.pkg",
+  "vendor_url": "https://github.com/thonny/thonny/releases/download/v4.1.7/thonny-4.1.7.pkg",
   "bundleId": "org.thonny.Thonny.component",
   "homepage": "https://thonny.org/",
-  "fileName": "thonny-4.1.7.pkg",
+  "fileName": "thonny-5.0.0-arm64.pkg",
   "type": "pkg",
-  "sha": "32c7540498b9df038abb286363f2eab13b5ba6a731c3cb3d9e348226762225d9",
+  "sha": "cdaaef53d59580139c8c811bc5a2a9f4246e0cb9d194bce0a89f621889b29e7e",
   "category": "Developer Tools",
   "publisher": "The University of Tartu",
-  "previous_version": "4.1.7"
+  "previous_version": "5.0.0"
 }

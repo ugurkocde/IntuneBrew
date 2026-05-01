@@ -1,13 +1,14 @@
 {
   "name": "JetBrains PhpStorm",
   "description": "PHP IDE by JetBrains",
-  "version": "2025.3.4",
-  "url": "https://download.jetbrains.com/webide/PhpStorm-2025.3.4-aarch64.dmg",
+  "version": "2026.1.1",
+  "url": "https://download.jetbrains.com/webide/PhpStorm-2026.1.1-aarch64.dmg",
+  "vendor_url": "https://download.jetbrains.com/webide/PhpStorm-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.PhpStorm",
   "homepage": "https://www.jetbrains.com/phpstorm/",
-  "fileName": "PhpStorm-2025.3.4-aarch64.dmg",
-  "sha": "9b1ad3739bf82080e0673c0cb5bbdd89f99eb680da7063448725733e254c492c",
+  "fileName": "PhpStorm-2026.1.1-aarch64.dmg",
+  "sha": "b66fd4147ff9157d0743f1678d0fc9c3069ffdca4861be23d0dbca95acc1a74f",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
-  "previous_version": "2025.3.4"
+  "previous_version": "2026.1.1"
 }

@@ -3,6 +3,7 @@
   "description": "Update and configure Elgato Capture devices",
   "version": "1.3.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/elgato_capture_device_utility_1.3.1.pkg",
+  "vendor_url": "https://edge.elgato.com/egc/macos/ecdu/1.3.1/ElgatoCaptureDeviceUtility-1.3.1.684.app.zip",
   "bundleId": "com.elgato.CaptureDeviceUtility",
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
   "fileName": "elgato_capture_device_utility_1.3.1.pkg",

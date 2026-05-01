@@ -3,6 +3,7 @@
   "description": "Launcher for *Epic Games* games",
   "version": "19.2.3",
   "url": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Mac/EpicInstaller-19.2.3.dmg",
+  "vendor_url": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Mac/EpicInstaller-19.2.3.dmg",
   "bundleId": "com.epicgames.EpicGamesLauncher",
   "homepage": "https://www.epicgames.com/",
   "fileName": "EpicInstaller-19.2.3.dmg",

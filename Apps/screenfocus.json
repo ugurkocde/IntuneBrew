@@ -3,6 +3,7 @@
   "description": "Tool to manage multiple screens",
   "version": "1.1.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/screenfocus_1.1.1.pkg",
+  "vendor_url": "https://www.apptorium.com/public/products/screenfocus/releases/ScreenFocus-1.1.1.zip",
   "bundleId": "com.apptorium.ScreenFocus-dm",
   "homepage": "https://www.apptorium.com/screenfocus",
   "fileName": "screenfocus_1.1.1.pkg",

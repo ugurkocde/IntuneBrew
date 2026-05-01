@@ -3,6 +3,7 @@
   "description": "Screen capture/recorder and video editor",
   "version": "2.1.4",
   "url": "https://d3l6g06uqih57x.cloudfront.net/Captomac/webstore/Capto.dmg",
+  "vendor_url": "https://d3l6g06uqih57x.cloudfront.net/Captomac/webstore/Capto.dmg",
   "bundleId": "com.globaldelight.Capto",
   "homepage": "https://www.globaldelight.com/capto/",
   "fileName": "Capto.dmg",

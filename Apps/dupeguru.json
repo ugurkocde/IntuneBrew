@@ -3,6 +3,7 @@
   "description": "Finds duplicate files in a computer system",
   "version": "4.3.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/dupeguru_4.3.1.pkg",
+  "vendor_url": "https://github.com/arsenetar/dupeguru/releases/download/4.3.1/dupeguru_macOS_Qt_4.3.1.zip",
   "bundleId": "com.hardcoded-software.dupeguru",
   "homepage": "https://dupeguru.voltaicideas.net/",
   "fileName": "dupeguru_4.3.1.pkg",

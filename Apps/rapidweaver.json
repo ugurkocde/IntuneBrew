@@ -3,6 +3,7 @@
   "description": "Web design software",
   "version": "9.6.8",
   "url": "https://intunebrew.blob.core.windows.net/pkg/rapidweaver_9.6.8.pkg",
+  "vendor_url": "https://dl.devant.io/v1/3c53887f-427a-4af7-9144-ee16178c62f4/21159/RapidWeaver.zip",
   "bundleId": "com.realmacsoftware.rapidweaver8",
   "homepage": "https://www.realmacsoftware.com/rapidweaver/",
   "fileName": "rapidweaver_9.6.8.pkg",

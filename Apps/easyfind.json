@@ -3,6 +3,7 @@
   "description": "Find files, folders, or contents in any file",
   "version": "5.0.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/easyfind_5.0.2.pkg",
+  "vendor_url": "https://download.devontechnologies.com/download/freeware/easyfind/5.0.2/EasyFind.app.zip",
   "bundleId": "org.grunenberg.EasyFind",
   "homepage": "https://www.devontechnologies.com/apps/freeware",
   "fileName": "easyfind_5.0.2.pkg",

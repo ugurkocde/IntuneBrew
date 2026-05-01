@@ -1,0 +1,14 @@
+{
+  "name": "LastPass",
+  "description": "Password manager",
+  "version": "4.116.0",
+  "url": "https://download.cloud.lastpass.com/mac/LastPass.dmg",
+  "vendor_url": "https://download.cloud.lastpass.com/mac/LastPass.dmg",
+  "bundleId": "com.auxilium.lastpasslauncher",
+  "homepage": "https://www.lastpass.com/",
+  "fileName": "LastPass.dmg",
+  "sha": "e57596149e25c5edc4f4997e12b553f1e02b790824cc9cf6ef3f270b5488ef8e",
+  "category": "Security",
+  "publisher": "GoTo",
+  "previous_version": "4.116.0"
+}

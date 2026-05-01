@@ -3,6 +3,7 @@
   "description": "Graphically shows disk usage within a file system",
   "version": "3.6.4",
   "url": "https://downloads.sourceforge.net/grandperspectiv/grandperspective/3.6.4/GrandPerspective-3_6_4.dmg",
+  "vendor_url": "https://downloads.sourceforge.net/grandperspectiv/grandperspective/3.6.4/GrandPerspective-3_6_4.dmg",
   "bundleId": "net.sourceforge.grandperspectiv",
   "homepage": "https://grandperspectiv.sourceforge.net/",
   "fileName": "GrandPerspective-3_6_4.dmg",

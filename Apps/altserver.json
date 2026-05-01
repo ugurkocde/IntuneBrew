@@ -3,6 +3,7 @@
   "description": "iOS App Store alternative",
   "version": "1.7.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/altserver_1.7.2.pkg",
+  "vendor_url": "https://cdn.altstore.io/file/altstore/altserver/1_7_2.zip",
   "bundleId": "com.rileytestut.AltServer",
   "homepage": "https://altstore.io/",
   "fileName": "altserver_1.7.2.pkg",

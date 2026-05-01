@@ -3,6 +3,7 @@
   "description": "Context-aware AI assistant",
   "version": "1.2.131",
   "url": "https://cdn.highlightai.com/releases/darwin/arm64/Highlight-1.2.131-arm64.dmg",
+  "vendor_url": "https://cdn.highlightai.com/releases/darwin/arm64/Highlight-1.2.131-arm64.dmg",
   "bundleId": "tv.medal.highlight",
   "homepage": "https://highlightai.com/",
   "fileName": "Highlight-1.2.131-arm64.dmg",

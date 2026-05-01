@@ -1,7 +1,7 @@
 {
   "app_name": "Vlc Media Player",
   "app_key": "vlc_media_player",
-  "last_updated": "2026-03-24",
+  "last_updated": "2026-05-01",
   "total_cves": 113,
   "summary": {
     "critical": 6,
@@ -980,7 +980,7 @@
     {
       "cve_id": "CVE-2013-6934",
       "published_date": "2014-01-23",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "The parseRTSPRequestString function in Live Networks Live555 Streaming Media 2013.11.26, as used in VideoLAN VLC Media Player, allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a space character at the beginning of an RTSP message, which triggers an integer underflow, infinite loop, and buffer overflow.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2013-6933.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1001,7 +1001,7 @@
     {
       "cve_id": "CVE-2013-6283",
       "published_date": "2013-10-25",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "VideoLAN VLC Media Player 2.0.8 and earlier allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a long string in a URL in a m3u file.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1022,7 +1022,7 @@
     {
       "cve_id": "CVE-2013-1868",
       "published_date": "2013-07-10",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Multiple buffer overflows in VideoLAN VLC media player 2.0.4 and earlier allow remote attackers to cause a denial of service (crash) and execute arbitrary code via vectors related to the (1) freetype renderer and (2) HTML subtitle parser.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1043,7 +1043,7 @@
     {
       "cve_id": "CVE-2012-0023",
       "published_date": "2012-10-30",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Double free vulnerability in the get_chunk_header function in modules/demux/ty.c in VideoLAN VLC media player 0.9.0 through 1.1.12 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a crafted TiVo (TY) file.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1064,7 +1064,7 @@
     {
       "cve_id": "CVE-2012-1775",
       "published_date": "2012-03-19",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Stack-based buffer overflow in VideoLAN VLC media player before 2.0.1 allows remote attackers to execute arbitrary code via a crafted MMS:// stream.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1085,7 +1085,7 @@
     {
       "cve_id": "CVE-2012-1776",
       "published_date": "2012-03-19",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Multiple heap-based buffer overflows in VideoLAN VLC media player before 2.0.1 allow remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted Real RTSP stream.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1106,7 +1106,7 @@
     {
       "cve_id": "CVE-2011-2194",
       "published_date": "2011-06-24",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Integer overflow in the XSPF playlist parser in VideoLAN VLC media player 0.8.5 through 1.1.9 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via unspecified vectors that trigger a heap-based buffer overflow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1127,7 +1127,7 @@
     {
       "cve_id": "CVE-2011-1087",
       "published_date": "2011-05-03",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Buffer overflow in VideoLAN VLC media player 1.0.5 allows user-assisted remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via a crafted .mp3 file that is played during bookmark creation.",
       "base_score": 7.6,
       "severity": "HIGH",
@@ -1148,7 +1148,7 @@
     {
       "cve_id": "CVE-2010-3275",
       "published_date": "2011-03-28",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "libdirectx_plugin.dll in VideoLAN VLC Media Player before 1.1.8 allows remote attackers to execute arbitrary code via a crafted width in an AMV file, related to a \"dangling pointer vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1169,7 +1169,7 @@
     {
       "cve_id": "CVE-2010-3276",
       "published_date": "2011-03-28",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "libdirectx_plugin.dll in VideoLAN VLC Media Player before 1.1.8 allows remote attackers to execute arbitrary code via a crafted width in an NSV file.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1190,7 +1190,7 @@
     {
       "cve_id": "CVE-2011-0531",
       "published_date": "2011-02-07",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "demux/mkv/mkv.hpp in the MKV demuxer plugin in VideoLAN VLC media player 1.1.6.1 and earlier allows remote attackers to cause a denial of service (crash) and execute arbitrary commands via a crafted MKV (WebM or Matroska) file that triggers memory corruption, related to \"class mismatching\" and the MKV_IS_ID macro.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1211,7 +1211,7 @@
     {
       "cve_id": "CVE-2011-0021",
       "published_date": "2011-01-25",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Multiple heap-based buffer overflows in cdg.c in the CDG decoder in VideoLAN VLC Media Player before 1.1.6 allow remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted CDG video.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1232,7 +1232,7 @@
     {
       "cve_id": "CVE-2010-3907",
       "published_date": "2011-01-03",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Multiple integer overflows in real.c in the Real demuxer plugin in VideoLAN VLC Media Player before 1.1.6 allow remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a zero i_subpackets value in a Real Media file, leading to a heap-based buffer overflow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1253,7 +1253,7 @@
     {
       "cve_id": "CVE-2010-3124",
       "published_date": "2010-08-26",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Untrusted search path vulnerability in bin/winvlc.c in VLC Media Player 1.1.3 and earlier allows local users, and possibly remote attackers, to execute arbitrary code and conduct DLL hijacking attacks via a Trojan horse wintab32.dll that is located in the same folder as a .mp3 file.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1274,7 +1274,7 @@
     {
       "cve_id": "CVE-2010-0364",
       "published_date": "2010-01-21",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Stack-based buffer overflow in VideoLAN VLC Media Player 0.8.6 allows user-assisted remote attackers to execute arbitrary code via an ogg file with a crafted Advanced SubStation Alpha Subtitle (.ass) file, probably involving the Dialogue field.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1295,7 +1295,7 @@
     {
       "cve_id": "CVE-2009-2484",
       "published_date": "2009-07-16",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in the Win32AddConnection function in modules/access/smb.c in VideoLAN VLC media player 0.9.9, when running on Microsoft Windows, allows remote attackers to cause a denial of service (application crash) and possibly execute arbitrary code via a long smb URI in a playlist file.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1316,7 +1316,7 @@
     {
       "cve_id": "CVE-2008-5276",
       "published_date": "2008-12-03",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in the ReadRealIndex function in real.c in the Real demuxer plugin in VideoLAN VLC media player 0.9.0 through 0.9.7 allows remote attackers to execute arbitrary code via a malformed RealMedia (.rm) file that triggers a heap-based buffer overflow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1337,7 +1337,7 @@
     {
       "cve_id": "CVE-2008-5032",
       "published_date": "2008-11-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in VideoLAN VLC media player 0.5.0 through 0.9.5 might allow user-assisted attackers to execute arbitrary code via the header of an invalid CUE image file, related to modules/access/vcd/cdrom.c.  NOTE: this identifier originally included an issue related to RealText, but that issue has been assigned a separate identifier, CVE-2008-5036.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1358,7 +1358,7 @@
     {
       "cve_id": "CVE-2008-5036",
       "published_date": "2008-11-10",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in VideoLAN VLC media player 0.9.x before 0.9.6 might allow user-assisted attackers to execute arbitrary code via an an invalid RealText (rt) subtitle file, related to the ParseRealText function in modules/demux/subtitle.c.  NOTE: this issue was SPLIT from CVE-2008-5032 on 20081110.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1379,7 +1379,7 @@
     {
       "cve_id": "CVE-2008-4654",
       "published_date": "2008-10-22",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Stack-based buffer overflow in the parse_master function in the Ty demux plugin (modules/demux/ty.c) in VLC Media Player 0.9.0 through 0.9.4 allows remote attackers to execute arbitrary code via a TiVo TY media file with a header containing a crafted size value.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1400,7 +1400,7 @@
     {
       "cve_id": "CVE-2008-4686",
       "published_date": "2008-10-22",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple integer overflows in ty.c in the TY demux plugin (aka the TiVo demuxer) in VideoLAN VLC media player, probably 0.9.4, might allow remote attackers to execute arbitrary code via a crafted .ty file, a different vulnerability than CVE-2008-4654.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1421,7 +1421,7 @@
     {
       "cve_id": "CVE-2008-3732",
       "published_date": "2008-08-20",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in the Open function in modules/demux/tta.c in VLC Media Player 0.8.6i allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted TTA file, which triggers a heap-based buffer overflow.  NOTE: some of these details are obtained from third party information.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1442,7 +1442,7 @@
     {
       "cve_id": "CVE-2008-2430",
       "published_date": "2008-07-07",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in the Open function in modules/demux/wav.c in VLC Media Player 0.8.6h on Windows allows remote attackers to execute arbitrary code via a large fmt chunk in a WAV file.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1463,7 +1463,7 @@
     {
       "cve_id": "CVE-2008-0984",
       "published_date": "2008-02-26",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "The MP4 demuxer (mp4.c) for VLC media player 0.8.6d and earlier, as used in Miro Player 1.1 and earlier, allows remote attackers to overwrite arbitrary memory and execute arbitrary code via a malformed MP4 file.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1484,7 +1484,7 @@
     {
       "cve_id": "CVE-2008-0295",
       "published_date": "2008-01-16",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in modules/access/rtsp/real_sdpplin.c in the Xine library, as used in VideoLAN VLC Media Player 0.8.6d and earlier, allows user-assisted remote attackers to cause a denial of service (crash) or execute arbitrary code via long Session Description Protocol (SDP) data.",
       "base_score": 8.5,
       "severity": "HIGH",
@@ -1505,7 +1505,7 @@
     {
       "cve_id": "CVE-2008-0296",
       "published_date": "2008-01-16",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Heap-based buffer overflow in the libaccess_realrtsp plugin in VideoLAN VLC Media Player 0.8.6d and earlier on Windows might allow remote RTSP servers to cause a denial of service (application crash) or execute arbitrary code via a long string.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -1526,7 +1526,7 @@
     {
       "cve_id": "CVE-2007-3467",
       "published_date": "2007-06-27",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer overflow in the __status_Update function in stats.c VideoLAN VLC Media Player before 0.8.6c allows remote attackers to cause a denial of service (crash) via a WAV file with a large sample rate.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1547,7 +1547,7 @@
     {
       "cve_id": "CVE-2007-3468",
       "published_date": "2007-06-27",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "input.c in VideoLAN VLC Media Player before 0.8.6c allows remote attackers to cause a denial of service (crash) via a crafted WAV file that causes an uninitialized i_nb_resamplers variable to be used.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1568,7 +1568,7 @@
     {
       "cve_id": "CVE-2007-3316",
       "published_date": "2007-06-21",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple format string vulnerabilities in plugins in VideoLAN VLC Media Player before 0.8.6c allow remote attackers to cause a denial of service (crash) or execute arbitrary code via format string specifiers in (1) an Ogg/Vorbis file, (2) an Ogg/Theora file, (3) a CDDB entry for a CD Digital Audio (CDDA) file, or (4) Service Announce Protocol (SAP) multicast packets.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1589,7 +1589,7 @@
     {
       "cve_id": "CVE-2007-0256",
       "published_date": "2007-01-16",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "VideoLAN VLC 0.8.6a allows remote attackers to cause a denial of service (application crash) via a crafted .wmv file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1967,7 +1967,7 @@
     {
       "cve_id": "CVE-2014-1684",
       "published_date": "2014-03-03",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-04-29",
       "description": "The ASF_ReadObject_file_properties function in modules/demux/asf/libasf.c in the ASF Demuxer in VideoLAN VLC Media Player before 2.1.3 allows remote attackers to cause a denial of service (divide-by-zero error and crash) via a zero minimum and maximum data packet size in an ASF file.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -1988,7 +1988,7 @@
     {
       "cve_id": "CVE-2013-4388",
       "published_date": "2013-10-11",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Buffer overflow in the mp4a packetizer (modules/packetizer/mpeg4audio.c) in VideoLAN VLC Media Player before 2.0.8 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via unspecified vectors.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -2009,7 +2009,7 @@
     {
       "cve_id": "CVE-2012-5855",
       "published_date": "2013-07-10",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "The SHAddToRecentDocs function in VideoLAN VLC media player 2.0.4 and earlier might allow user-assisted attackers to cause a denial of service (crash) via a crafted file name that triggers an incorrect string-length calculation when the file is added to VLC.  NOTE: it is not clear whether this issue crosses privilege boundaries or whether it can be exploited without user interaction.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -2030,7 +2030,7 @@
     {
       "cve_id": "CVE-2013-1954",
       "published_date": "2013-07-10",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "The ASF Demuxer (modules/demux/asf/asf.c) in VideoLAN VLC media player 2.0.5 and earlier allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a crafted ASF movie that triggers an out-of-bounds read.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -2051,7 +2051,7 @@
     {
       "cve_id": "CVE-2013-3245",
       "published_date": "2013-07-10",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "plugins/demux/libmkv_plugin.dll in VideoLAN VLC Media Player 2.0.7, and possibly other versions, allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a crafted MKV file, possibly involving an integer overflow and out-of-bounds read or heap-based buffer overflow, or an uncaught exception.  NOTE: the vendor disputes the severity and claimed vulnerability type of this issue, stating \"This PoC crashes VLC, indeed, but does nothing more... this is not an integer overflow error, but an uncaught exception and I doubt that it is exploitable. This uncaught exception makes VLC abort, not execute random code, on my Linux 64bits machine.\" A PoC posted by the original researcher shows signs of an attacker-controlled out-of-bounds read, but the affected instruction does not involve a register that directly influences control flow",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -2072,7 +2072,7 @@
     {
       "cve_id": "CVE-2012-5470",
       "published_date": "2012-10-26",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "libpng_plugin in VideoLAN VLC media player 2.0.3 allows remote attackers to cause a denial of service (application crash) via a crafted PNG file.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -2093,7 +2093,7 @@
     {
       "cve_id": "CVE-2012-3377",
       "published_date": "2012-07-12",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Heap-based buffer overflow in the Ogg_DecodePacket function in the OGG demuxer (modules/demux/ogg.c) in VideoLAN VLC media player before 2.0.2 allows remote attackers to cause a denial of service (application crash) and possibly execute arbitrary code via a crafted OGG file.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -2114,7 +2114,7 @@
     {
       "cve_id": "CVE-2012-2396",
       "published_date": "2012-04-19",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "VideoLAN VLC media player 2.0.1 allows remote attackers to cause a denial of service (divide-by-zero error and application crash) via a crafted MP4 file.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -2135,7 +2135,7 @@
     {
       "cve_id": "CVE-2012-0904",
       "published_date": "2012-01-20",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "VLC media player 1.1.11 allows remote attackers to cause a denial of service (crash) via a long string in an amr file.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -2156,7 +2156,7 @@
     {
       "cve_id": "CVE-2011-2587",
       "published_date": "2011-07-27",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Heap-based buffer overflow in the DemuxAudioSipr function in real.c in the RealMedia demuxer in VideoLAN VLC media player 1.1.x before 1.1.11 allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted Real Media file.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -2177,7 +2177,7 @@
     {
       "cve_id": "CVE-2011-2588",
       "published_date": "2011-07-27",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Heap-based buffer overflow in the AVI_ChunkRead_strf function in libavi.c in the AVI demuxer in VideoLAN VLC media player before 1.1.11 allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted AVI media file.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -2198,7 +2198,7 @@
     {
       "cve_id": "CVE-2011-1931",
       "published_date": "2011-07-07",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "sp5xdec.c in the Sunplus SP5X JPEG decoder in libavcodec in FFmpeg before 0.6.3 and libav through 0.6.2, as used in VideoLAN VLC media player 1.1.9 and earlier and other products, performs a write operation outside the bounds of an unspecified array, which allows remote attackers to cause a denial of service (memory corruption) or possibly execute arbitrary code via a malformed AMV file.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -2219,7 +2219,7 @@
     {
       "cve_id": "CVE-2011-1684",
       "published_date": "2011-05-03",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "Heap-based buffer overflow in the MP4_ReadBox_skcr function in libmp4.c in the MP4 demultiplexer in VideoLAN VLC media player 1.x before 1.1.9 allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted MP4 file.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -2240,7 +2240,7 @@
     {
       "cve_id": "CVE-2011-0522",
       "published_date": "2011-02-07",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "The StripTags function in (1) the USF decoder (modules/codec/subtitles/subsdec.c) and (2) the Text decoder (modules/codec/subtitles/subsusf.c) in VideoLAN VLC Media Player 1.1 before 1.1.6-rc allows remote attackers to execute arbitrary code via a subtitle with an opening \"<\" without a closing \">\" in an MKV file, which triggers heap memory corruption, as demonstrated using refined-australia-blu720p-sample.mkv.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -2261,7 +2261,7 @@
     {
       "cve_id": "CVE-2010-2937",
       "published_date": "2010-08-20",
-      "last_modified_date": "2025-04-11",
+      "last_modified_date": "2026-04-29",
       "description": "The ReadMetaFromId3v2 function in taglib.cpp in the TagLib plugin in VideoLAN VLC media player 0.9.0 through 1.1.2 does not properly process ID3v2 tags, which allows remote attackers to cause a denial of service (application crash) via a crafted media file.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -2282,7 +2282,7 @@
     {
       "cve_id": "CVE-2009-1045",
       "published_date": "2009-03-23",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "requests/status.xml in VLC 0.9.8a allows remote attackers to cause a denial of service (stack consumption and crash) via a long input argument in an in_play action.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -2303,7 +2303,7 @@
     {
       "cve_id": "CVE-2008-4558",
       "published_date": "2008-10-15",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Array index error in VLC media player 0.9.2 allows remote attackers to overwrite arbitrary memory and execute arbitrary code via an XSPF playlist file with a negative identifier tag, which passes a signed comparison.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -2324,7 +2324,7 @@
     {
       "cve_id": "CVE-2008-3794",
       "published_date": "2008-08-26",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Integer signedness error in the mms_ReceiveCommand function in modules/access/mms/mmstu.c in VLC Media Player 0.8.6i allows remote attackers to execute arbitrary code via a crafted mmst link with a negative size value, which bypasses a size check and triggers an integer overflow followed by a heap-based buffer overflow.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -2345,7 +2345,7 @@
     {
       "cve_id": "CVE-2007-6262",
       "published_date": "2007-12-06",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "A certain ActiveX control in axvlc.dll in VideoLAN VLC 0.8.6 before 0.8.6d allows remote attackers to execute arbitrary code via crafted arguments to the (1) addTarget, (2) getVariable, or (3) setVariable function, resulting from a \"bad initialized pointer,\" aka a \"recursive plugin release vulnerability.\"",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -2366,7 +2366,7 @@
     {
       "cve_id": "CVE-2007-0017",
       "published_date": "2007-01-03",
-      "last_modified_date": "2025-04-09",
+      "last_modified_date": "2026-04-23",
       "description": "Multiple format string vulnerabilities in (1) the cdio_log_handler function in modules/access/cdda/access.c in the CDDA (libcdda_plugin) plugin, and the (2) cdio_log_handler and (3) vcd_log_handler functions in modules/access/vcdx/access.c in the VCDX (libvcdx_plugin) plugin, in VideoLAN VLC 0.7.0 through 0.8.6 allow user-assisted remote attackers to execute arbitrary code via format string specifiers in an invalid URI, as demonstrated by a udp://-- URI in an M3U file.",
       "base_score": 6.8,
       "severity": "MEDIUM",

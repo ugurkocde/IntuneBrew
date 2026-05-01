@@ -3,6 +3,7 @@
   "description": "Utility to display all characters of a font",
   "version": "10.5",
   "url": "https://www.ergonis.com/downloads/products/popcharx/PopCharX105-Install.dmg",
+  "vendor_url": "https://www.ergonis.com/downloads/products/popcharx/PopCharX105-Install.dmg",
   "bundleId": "com.macility.popchar3",
   "homepage": "https://www.ergonis.com/products/popcharx/",
   "fileName": "PopCharX105-Install.dmg",

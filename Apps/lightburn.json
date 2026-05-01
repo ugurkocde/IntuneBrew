@@ -3,6 +3,7 @@
   "description": "Layout, editing, and control software for laser cutters",
   "version": "2.0.05",
   "url": "https://release.lightburnsoftware.com/LightBurn/Release/LightBurn-v2.0.05/LightBurn.V2.0.05.dmg",
+  "vendor_url": "https://release.lightburnsoftware.com/LightBurn/Release/LightBurn-v2.0.05/LightBurn.V2.0.05.dmg",
   "bundleId": "com.LightBurnSoftware.LightBurn",
   "homepage": "https://lightburnsoftware.com/",
   "fileName": "LightBurn.V2.0.05.dmg",

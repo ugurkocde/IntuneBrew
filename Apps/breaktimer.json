@@ -3,6 +3,7 @@
   "description": "Tool to manage periodic breaks",
   "version": "2.0.3",
   "url": "https://github.com/tom-james-watson/breaktimer-app/releases/download/v2.0.3/BreakTimer.dmg",
+  "vendor_url": "https://github.com/tom-james-watson/breaktimer-app/releases/download/v2.0.3/BreakTimer.dmg",
   "bundleId": "com.tomjwatson.breaktimer",
   "homepage": "https://breaktimer.app/",
   "fileName": "BreakTimer.dmg",

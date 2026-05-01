@@ -3,6 +3,7 @@
   "description": "Managed client-based VPN service to securely access AWS resources",
   "version": "5.3.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/aws_client_vpn_5.3.4.pkg",
+  "vendor_url": "https://d20adtppz83p9s.cloudfront.net/OSX_ARM64/5.3.4/AWS_VPN_Client_ARM64.pkg",
   "bundleId": "com.amazon.awsvpnclient",
   "homepage": "https://aws.amazon.com/vpn/",
   "fileName": "aws_client_vpn_5.3.4.pkg",

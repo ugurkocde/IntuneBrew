@@ -3,6 +3,7 @@
   "description": "Transcribes recorded music",
   "version": "9.50.1",
   "url": "https://www.seventhstring.com/xscribe/downmo/transcribe-arm-9.50.1.dmg",
+  "vendor_url": "https://www.seventhstring.com/xscribe/downmo/transcribe-arm-9.50.1.dmg",
   "bundleId": "com.seventhstring.transcribe",
   "homepage": "https://www.seventhstring.com/xscribe/overview.html",
   "fileName": "transcribe-arm-9.50.1.dmg",

@@ -3,6 +3,7 @@
   "description": "Screen measuring tool",
   "version": "2.6.2",
   "url": "https://updates.getpixelsnap.com/v2/PixelSnap-2-2.6.2.dmg",
+  "vendor_url": "https://updates.getpixelsnap.com/v2/PixelSnap-2-2.6.2.dmg",
   "bundleId": "pl.maketheweb.pixelsnap2",
   "homepage": "https://getpixelsnap.com/",
   "fileName": "PixelSnap-2-2.6.2.dmg",

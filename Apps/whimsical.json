@@ -3,6 +3,7 @@
   "description": "Collaboration and diagramming tool",
   "version": "0.4.7",
   "url": "https://intunebrew.blob.core.windows.net/pkg/whimsical_0.4.7.pkg",
+  "vendor_url": "https://download.todesktop.com/2402209z4j37b73/Whimsical%200.4.7%20-%20Build%202603038bdrbb7wz-arm64-mac.zip",
   "bundleId": "com.whimsical.desktop",
   "homepage": "https://whimsical.com/",
   "fileName": "whimsical_0.4.7.pkg",

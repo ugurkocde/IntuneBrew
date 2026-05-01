@@ -3,6 +3,7 @@
   "description": "Keyboard shortcuts for every button on your screen",
   "version": "1.5.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/homerow_1.5.3.pkg",
+  "vendor_url": "https://builds.homerow.app/v1.5.3/Homerow.zip",
   "bundleId": "com.superultra.Homerow",
   "homepage": "https://www.homerow.app/",
   "fileName": "homerow_1.5.3.pkg",

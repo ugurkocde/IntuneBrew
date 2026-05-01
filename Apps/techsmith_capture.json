@@ -3,6 +3,7 @@
   "description": "Screen capture software",
   "version": "1.3.31",
   "url": "https://cdn.cloud.techsmith.com/techsmithcapture/mac/TechSmithCapture.dmg",
+  "vendor_url": "https://cdn.cloud.techsmith.com/techsmithcapture/mac/TechSmithCapture.dmg",
   "bundleId": "com.techsmith.relayrecorder",
   "homepage": "https://www.techsmith.com/jing-tool.html",
   "fileName": "TechSmithCapture.dmg",

@@ -3,6 +3,7 @@
   "description": "Screenshot tool",
   "version": "1.17.1",
   "url": "https://xnapper.com/dmg/Xnapper-1.17.1.dmg",
+  "vendor_url": "https://xnapper.com/dmg/Xnapper-1.17.1.dmg",
   "bundleId": "com.devuap.beautyshotapp",
   "homepage": "https://xnapper.com/",
   "fileName": "Xnapper-1.17.1.dmg",

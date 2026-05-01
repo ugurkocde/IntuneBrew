@@ -3,6 +3,7 @@
   "description": "Icon manager",
   "version": "2.3",
   "url": "https://nounproject.s3.amazonaws.com/mac/NounProject.dmg",
+  "vendor_url": "https://nounproject.s3.amazonaws.com/mac/NounProject.dmg",
   "bundleId": "com.thenounproject.Noun-Project",
   "homepage": "https://thenounproject.com/",
   "fileName": "NounProject.dmg",

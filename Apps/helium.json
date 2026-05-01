@@ -3,6 +3,7 @@
   "description": null,
   "version": "1.0.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/helium_1.0.0.pkg",
+  "vendor_url": "https://github.com/koush/CarbonResources/releases/download/v1.0.0/carbon-mac.zip",
   "bundleId": "com.koushikdutta.Helium",
   "homepage": "https://github.com/koush/support-wiki/wiki/Helium-Desktop-Installer-and-Android-App",
   "fileName": "helium_1.0.0.pkg",

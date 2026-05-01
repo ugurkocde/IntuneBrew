@@ -3,6 +3,7 @@
   "description": "AI Chat with PDFs",
   "version": "1.9.0",
   "url": "https://download.pdfpals.com/releases/PDFPals-1.9.0.dmg",
+  "vendor_url": "https://download.pdfpals.com/releases/PDFPals-1.9.0.dmg",
   "bundleId": "co.podzim.PDFPals",
   "homepage": "https://pdfpals.com/",
   "fileName": "PDFPals-1.9.0.dmg",

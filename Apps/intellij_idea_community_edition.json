@@ -3,6 +3,7 @@
   "description": "IDE for Java development - community edition",
   "version": "2025.2.5",
   "url": "https://download.jetbrains.com/idea/ideaIC-2025.2.5-aarch64.dmg",
+  "vendor_url": "https://download.jetbrains.com/idea/ideaIC-2025.2.5-aarch64.dmg",
   "bundleId": "com.jetbrains.intellij.ce",
   "homepage": "https://www.jetbrains.com/idea/",
   "fileName": "ideaIC-2025.2.5-aarch64.dmg",

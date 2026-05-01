@@ -1,12 +1,13 @@
 {
   "name": "Bitwig Studio",
   "description": "Digital audio workstation",
-  "version": "6.0",
-  "url": "https://www.bitwig.com/dl/Bitwig%20Studio/6.0/installer_mac",
+  "version": "6.0.5",
+  "url": "https://www.bitwig.com/dl/Bitwig%20Studio/6.0.5/installer_mac",
+  "vendor_url": "https://www.bitwig.com/dl/Bitwig%20Studio/6.0/installer_mac",
   "bundleId": "com.bitwig.studio",
   "homepage": "https://www.bitwig.com/",
-  "fileName": "Bitwig-Studio-6.0.dmg",
-  "sha": "e188612bffefd2b649afcfbd244d405d9614d34db88d3ea829a2f9a2e6ee72d0",
+  "fileName": "Bitwig-Studio-6.0.5.dmg",
+  "sha": "73db566a26bdae51f3d18f889e84f43879bec715d90f8d840584a70bc66f550b",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:05:50Z",
     "qa_result": "Installation failed",
@@ -18,5 +19,5 @@
   },
   "category": "Media",
   "publisher": "Bitwig GmbH",
-  "previous_version": "6.0"
+  "previous_version": "6.0.5"
 }

@@ -3,6 +3,7 @@
   "description": "Password manager app",
   "version": "2.7.12",
   "url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.7.12/KeePassXC-2.7.12-arm64.dmg",
+  "vendor_url": "https://github.com/keepassxreboot/keepassxc/releases/download/2.7.12/KeePassXC-2.7.12-arm64.dmg",
   "bundleId": "org.keepassxc.keepassxc",
   "homepage": "https://keepassxc.org/",
   "fileName": "KeePassXC-2.7.12-arm64.dmg",

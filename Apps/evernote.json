@@ -3,6 +3,7 @@
   "description": "App for note taking, organising, task lists, and archiving",
   "version": "10.105.4",
   "url": "https://mac.desktop.evernote.com/builds/Evernote-10.105.4-mac-ddl-stage-20240910164757-a2e60a8d876a07eded5d212fa56ba45214114ad0.dmg",
+  "vendor_url": "https://mac.desktop.evernote.com/builds/Evernote-10.105.4-mac-ddl-stage-20240910164757-a2e60a8d876a07eded5d212fa56ba45214114ad0.dmg",
   "bundleId": "com.evernote.Evernote",
   "homepage": "https://evernote.com/",
   "fileName": "Evernote-10.105.4-mac-ddl-stage-20240910164757-a2e60a8d876a07eded5d212fa56ba45214114ad0.dmg",

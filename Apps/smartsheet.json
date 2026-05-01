@@ -3,6 +3,7 @@
   "description": "Spreadsheet-style project management solution",
   "version": "1.0.54",
   "url": "https://builds.desktopapp.smartsheet.com/public/darwin/Smartsheet-setup.dmg",
+  "vendor_url": "https://builds.desktopapp.smartsheet.com/public/darwin/Smartsheet-setup.dmg",
   "bundleId": "com.smartsheet.desktopapp",
   "homepage": "https://www.smartsheet.com/",
   "fileName": "Smartsheet-setup.dmg",

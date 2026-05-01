@@ -3,6 +3,7 @@
   "description": "Additional features and controls for Shure MV7 and MV88+ microphones",
   "version": "1.5.4",
   "url": "https://content-files.shure.com/Software/shure_plus_motiv_desktop/1-5-4/MOTIV-Desktop-macOS-1.5.4.dmg",
+  "vendor_url": "https://content-files.shure.com/Software/shure_plus_motiv_desktop/1-5-4/MOTIV-Desktop-macOS-1.5.4.dmg",
   "bundleId": "com.shure.motiv.desktop",
   "homepage": "https://www.shure.com/en-US/products/software/shure_plus_motiv_desktop",
   "fileName": "MOTIV-Desktop-macOS-1.5.4.dmg",

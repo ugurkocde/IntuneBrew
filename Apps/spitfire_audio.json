@@ -3,6 +3,7 @@
   "description": "Download manager for Spitfire audio libraries",
   "version": "3.4.17",
   "url": "https://d1t3zg51rvnesz.cloudfront.net/p/files/lm/1770184800/mac/SpitfireAudio.Mac-3.4.17.dmg",
+  "vendor_url": "https://d1t3zg51rvnesz.cloudfront.net/p/files/lm/1770184800/mac/SpitfireAudio.Mac-3.4.17.dmg",
   "bundleId": "com.spitfireaudio.Library",
   "homepage": "https://www.spitfireaudio.com/info/library-manager/",
   "fileName": "SpitfireAudio.Mac-3.4.17.dmg",

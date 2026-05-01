@@ -3,6 +3,7 @@
   "description": "File archiving tool",
   "version": "12.0.7282",
   "url": "https://download.winzip.com/winzipmacedition12.dmg",
+  "vendor_url": "https://download.winzip.com/winzipmacedition12.dmg",
   "bundleId": "com.winzip.wzmmacsub1y",
   "homepage": "https://www.winzip.com/mac/en/winzip.html",
   "fileName": "winzipmacedition12.dmg",

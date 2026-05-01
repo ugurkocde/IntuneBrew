@@ -3,6 +3,7 @@
   "description": "Self-hosted controller built using the Flutter framework",
   "version": "11.0.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/lunasea_11.0.0.pkg",
+  "vendor_url": "https://github.com/JagandeepBrar/LunaSea/releases/download/v11.0.0/lunasea-macos-amd64.zip",
   "bundleId": "app.lunasea.lunasea",
   "homepage": "https://www.lunasea.app/",
   "fileName": "lunasea_11.0.0.pkg",

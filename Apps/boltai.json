@@ -3,6 +3,7 @@
   "description": "AI chat client",
   "version": "1.36.5",
   "url": "https://download.boltai.com/releases/BoltAI-1.36.5.dmg",
+  "vendor_url": "https://download.boltai.com/releases/BoltAI-1.36.5.dmg",
   "bundleId": "co.podzim.BoltGPT",
   "homepage": "https://boltai.com/",
   "fileName": "BoltAI-1.36.5.dmg",

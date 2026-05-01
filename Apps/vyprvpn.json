@@ -3,6 +3,7 @@
   "description": "VPN client",
   "version": "6.0.4.11438",
   "url": "https://downloads.vyprvpn.com/downloads/vyprvpn/desktop/mac/production/6.0.4.11438/VyprVPN_v6.0.4.11438.dmg",
+  "vendor_url": "https://downloads.vyprvpn.com/downloads/vyprvpn/desktop/mac/production/6.0.4.11438/VyprVPN_v6.0.4.11438.dmg",
   "bundleId": "com.goldenfrog.VyprVPN",
   "homepage": "https://www.vyprvpn.com/",
   "fileName": "VyprVPN_v6.0.4.11438.dmg",

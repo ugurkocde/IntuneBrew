@@ -3,6 +3,7 @@
   "description": "Network diagnostic utility",
   "version": "2.7.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/whatroute_2.7.2.pkg",
+  "vendor_url": "https://www.whatroute.net/software/whatroute-2.7.2.zip",
   "bundleId": "net.whatroute.whatroute2",
   "homepage": "https://www.whatroute.net/",
   "fileName": "whatroute_2.7.2.pkg",

@@ -3,6 +3,7 @@
   "description": "Music player",
   "version": "3.0.8",
   "url": "https://intunebrew.blob.core.windows.net/pkg/swinsian_3.0.8.pkg",
+  "vendor_url": "https://www.swinsian.com/sparkle/Swinsian_3.0.8.zip",
   "bundleId": "com.swinsian.Swinsian",
   "homepage": "https://swinsian.com/",
   "fileName": "swinsian_3.0.8.pkg",

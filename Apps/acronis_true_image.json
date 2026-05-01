@@ -3,6 +3,7 @@
   "description": "Full image backup and cloning software",
   "version": "29.2",
   "url": "https://dl.acronis.com/u/AcronisTrueImage_42065.dmg",
+  "vendor_url": "https://dl.acronis.com/u/AcronisTrueImage_42065.dmg",
   "bundleId": "com.acronis.backup",
   "homepage": "https://www.acronis.com/products/true-image/",
   "fileName": "AcronisTrueImage_42065.dmg",

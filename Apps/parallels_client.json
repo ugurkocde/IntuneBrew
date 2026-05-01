@@ -3,6 +3,7 @@
   "description": "RDP client",
   "version": "19.4.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/parallels_client_19.4.3.pkg",
+  "vendor_url": "https://download.parallels.com/ras/v19/19.4.3.25221/RasClient-Mac-Notarized-19.4.3-25221.pkg",
   "bundleId": "com.2X.Client.Mac",
   "homepage": "https://www.parallels.com/products/ras/features/rdp-client/",
   "fileName": "parallels_client_19.4.3.pkg",

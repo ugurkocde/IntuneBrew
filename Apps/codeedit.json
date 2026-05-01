@@ -3,6 +3,7 @@
   "description": "Code editor",
   "version": "0.3.6",
   "url": "https://github.com/CodeEditApp/CodeEdit/releases/download/v0.3.6/CodeEdit.dmg",
+  "vendor_url": "https://github.com/CodeEditApp/CodeEdit/releases/download/v0.3.6/CodeEdit.dmg",
   "bundleId": "app.codeedit.CodeEdit",
   "homepage": "https://www.codeedit.app/",
   "fileName": "CodeEdit.dmg",

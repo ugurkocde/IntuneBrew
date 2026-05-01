@@ -3,6 +3,7 @@
   "description": "Screenshot measurement and annotation tool",
   "version": "1.9.1",
   "url": "https://shottr.cc/dl/Shottr-1.9.1.dmg",
+  "vendor_url": "https://shottr.cc/dl/Shottr-1.9.1.dmg",
   "bundleId": "cc.ffitch.shottr",
   "homepage": "https://shottr.cc/",
   "fileName": "Shottr-1.9.1.dmg",

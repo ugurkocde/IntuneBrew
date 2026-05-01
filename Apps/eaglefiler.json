@@ -3,6 +3,7 @@
   "description": "Organise files, archive e-mails, save Web pages and notes, search everything",
   "version": "1.9.20",
   "url": "https://c-command.com/downloads/EagleFiler-1.9.20.dmg",
+  "vendor_url": "https://c-command.com/downloads/EagleFiler-1.9.20.dmg",
   "bundleId": "com.c-command.EagleFiler",
   "homepage": "https://c-command.com/eaglefiler/",
   "fileName": "EagleFiler-1.9.20.dmg",

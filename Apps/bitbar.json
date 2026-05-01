@@ -3,6 +3,7 @@
   "description": "Utility to display the output from any script or program in the menu bar",
   "version": "1.10.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/bitbar_1.10.1.pkg",
+  "vendor_url": "https://github.com/matryer/bitbar/releases/download/v1.10.1/BitBar.app.zip",
   "bundleId": "com.matryer.BitBar",
   "homepage": "https://github.com/matryer/bitbar/",
   "fileName": "bitbar_1.10.1.pkg",

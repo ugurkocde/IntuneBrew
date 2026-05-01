@@ -3,6 +3,7 @@
   "description": "Word processing software with a typewriter style",
   "version": "3.5.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/scrivener_3.5.2.pkg",
+  "vendor_url": "https://scrivener.s3.amazonaws.com/mac_updates/Scrivener_11_17487.zip",
   "bundleId": "com.literatureandlatte.scrivener",
   "homepage": "https://www.literatureandlatte.com/scrivener/overview",
   "fileName": "scrivener_3.5.2.pkg",

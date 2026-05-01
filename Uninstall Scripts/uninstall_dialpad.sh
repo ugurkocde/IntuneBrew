@@ -17,14 +17,6 @@ fi
 echo "Stopping Dialpad if running..."
 pkill -f "Dialpad" 2>/dev/null || true
 
-# Remove /Applications/Dialpad.app
-echo "Removing /Applications/Dialpad.app..."
-if [ -d "/Applications/Dialpad.app" ]; then
-    rm -rf "/Applications/Dialpad.app" 2>/dev/null || true
-elif [ -f "/Applications/Dialpad.app" ]; then
-    rm -f "/Applications/Dialpad.app" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Application Support/Dialpad
 echo "Removing $HOME/Library/Application Support/Dialpad..."
 if [ -d "$HOME/Library/Application Support/Dialpad" ]; then

@@ -3,6 +3,7 @@
   "description": "Virtualization tool",
   "version": "2.1",
   "url": "https://su.virtualbuddy.app/VirtualBuddy_v2.1-325.dmg",
+  "vendor_url": "https://su.virtualbuddy.app/VirtualBuddy_v2.1-325.dmg",
   "bundleId": "codes.rambo.VirtualBuddy",
   "homepage": "https://github.com/insidegui/VirtualBuddy",
   "fileName": "VirtualBuddy_v2.1-325.dmg",

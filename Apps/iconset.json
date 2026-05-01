@@ -3,6 +3,7 @@
   "description": "Organise icon sets and packs in one place",
   "version": "2.5.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/iconset_2.5.0.pkg",
+  "vendor_url": "https://github.com/IconsetApp/iconset/releases/download/v2.5.0/Iconset-2.5.0-arm64-mac.zip",
   "bundleId": "io.iconset.app",
   "homepage": "https://iconset.io/",
   "fileName": "iconset_2.5.0.pkg",

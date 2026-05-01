@@ -3,6 +3,7 @@
   "description": "Mouse control with the keyboard",
   "version": "0.4.3",
   "url": "https://github.com/croian/mouseless/releases/download/v0.4.3/mouseless-installer_v0.4.3.dmg",
+  "vendor_url": "https://github.com/croian/mouseless/releases/download/v0.4.3/mouseless-installer_v0.4.3.dmg",
   "bundleId": "net.sonuscape.mouseless",
   "homepage": "https://mouseless.click/",
   "fileName": "mouseless-installer_v0.4.3.dmg",

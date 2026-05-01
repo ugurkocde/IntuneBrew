@@ -3,6 +3,7 @@
   "description": "Streamdeck extension and emulation software",
   "version": "4.2.6",
   "url": "https://s4.bitfocus.io/builds/companion/companion-mac-arm64-4.2.6+8823-stable-4ecdfe70ba.dmg",
+  "vendor_url": "https://s4.bitfocus.io/builds/companion/companion-mac-arm64-4.2.6+8823-stable-4ecdfe70ba.dmg",
   "bundleId": "companion.bitfocus.no",
   "homepage": "https://bitfocus.io/companion",
   "fileName": "companion-mac-arm64-4.2.6+8823-stable-4ecdfe70ba.dmg",

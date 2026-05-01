@@ -3,6 +3,7 @@
   "description": "Automatically switch between light and dark modes based on ambient light sensor",
   "version": "1.2",
   "url": "https://su.darkmodebuddy.app/DarkModeBuddy_v1.2-13.dmg",
+  "vendor_url": "https://su.darkmodebuddy.app/DarkModeBuddy_v1.2-13.dmg",
   "bundleId": "com.nicola.DarkModeBuddy",
   "homepage": "https://github.com/insidegui/DarkModeBuddy",
   "fileName": "DarkModeBuddy_v1.2-13.dmg",

@@ -3,6 +3,7 @@
   "description": "OpenJDK distribution from Microsoft",
   "version": "25.0.2",
   "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.2-macos-aarch64.pkg",
+  "vendor_url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.2-macos-aarch64.pkg",
   "bundleId": "com.microsoft.25.jdk",
   "homepage": "https://microsoft.com/openjdk",
   "fileName": "microsoft-jdk-25.0.2-macos-aarch64.pkg",

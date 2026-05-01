@@ -3,6 +3,7 @@
   "description": "Music player",
   "version": "0.23.4",
   "url": "https://github.com/martpie/museeks/releases/download/0.23.4/Museeks_0.23.4_universal.dmg",
+  "vendor_url": "https://github.com/martpie/museeks/releases/download/0.23.4/Museeks_0.23.4_universal.dmg",
   "bundleId": "com.electron.museeks",
   "homepage": "https://museeks.io/",
   "fileName": "Museeks_0.23.4_universal.dmg",

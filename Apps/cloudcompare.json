@@ -3,6 +3,7 @@
   "description": "3D point cloud and mesh processing software",
   "version": "2.13.2",
   "url": "https://www.simulation.openfields.fr/phocadownload/CloudCompare_2.13.2__arm64.dmg",
+  "vendor_url": "https://www.simulation.openfields.fr/phocadownload/CloudCompare_2.13.2__arm64.dmg",
   "bundleId": "org.cloudcompare.CloudCompare",
   "homepage": "https://www.danielgm.net/cc/",
   "fileName": "CloudCompare_2.13.2__arm64.dmg",

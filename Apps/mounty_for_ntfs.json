@@ -3,6 +3,7 @@
   "description": "Re-mounts write-protected NTFS volumes",
   "version": "2.4",
   "url": "https://mounty.app/releases/Mounty-2.4.dmg",
+  "vendor_url": "https://mounty.app/releases/Mounty-2.4.dmg",
   "bundleId": "com.cu4uc.mounty",
   "homepage": "https://mounty.app/",
   "fileName": "Mounty-2.4.dmg",

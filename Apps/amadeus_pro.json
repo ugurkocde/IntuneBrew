@@ -3,6 +3,7 @@
   "description": "Multi-purpose audio recorder, editor and converter",
   "version": "2.8.14",
   "url": "https://intunebrew.blob.core.windows.net/pkg/amadeus_pro_2.8.14.pkg",
+  "vendor_url": "https://s3.amazonaws.com/AmadeusPro2/AmadeusPro.zip",
   "bundleId": "com.HairerSoft.AmadeusPro",
   "homepage": "https://www.hairersoft.com/pro.html",
   "fileName": "amadeus_pro_2.8.14.pkg",

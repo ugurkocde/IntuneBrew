@@ -17,13 +17,13 @@ fi
 echo "Stopping iMazing if running..."
 pkill -f "iMazing" 2>/dev/null || true
 
-# Kill application with bundle ID com.DigiDNA.iMazing3.5.1.23810Mac if running
-echo "Stopping application with bundle ID com.DigiDNA.iMazing3.5.1.23810Mac if running..."
-killall -9 "com.DigiDNA.iMazing3.5.1.23810Mac" 2>/dev/null || true
+# Kill application with bundle ID com.DigiDNA.iMazing3.5.2.24017Mac if running
+echo "Stopping application with bundle ID com.DigiDNA.iMazing3.5.2.24017Mac if running..."
+killall -9 "com.DigiDNA.iMazing3.5.2.24017Mac" 2>/dev/null || true
 
-# Kill application with bundle ID com.DigiDNA.iMazing3.5.1.23810Mac.Mini if running
-echo "Stopping application with bundle ID com.DigiDNA.iMazing3.5.1.23810Mac.Mini if running..."
-killall -9 "com.DigiDNA.iMazing3.5.1.23810Mac.Mini" 2>/dev/null || true
+# Kill application with bundle ID com.DigiDNA.iMazing3.5.2.24017Mac.Mini if running
+echo "Stopping application with bundle ID com.DigiDNA.iMazing3.5.2.24017Mac.Mini if running..."
+killall -9 "com.DigiDNA.iMazing3.5.2.24017Mac.Mini" 2>/dev/null || true
 
 # Remove /Applications/iMazing.app
 echo "Removing /Applications/iMazing.app..."

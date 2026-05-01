@@ -3,6 +3,7 @@
   "description": "X Certificate and Key management",
   "version": "2.9.0",
   "url": "https://github.com/chris2511/xca/releases/download/RELEASE.2.9.0/xca-2.9.0-Darwin.dmg",
+  "vendor_url": "https://github.com/chris2511/xca/releases/download/RELEASE.2.9.0/xca-2.9.0-Darwin.dmg",
   "bundleId": "de.hohnstaedt.xca",
   "homepage": "https://hohnstaedt.de/xca/",
   "fileName": "xca-2.9.0-Darwin.dmg",

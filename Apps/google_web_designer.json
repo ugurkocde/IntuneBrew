@@ -3,6 +3,7 @@
   "description": "Create interactive HTML5-based designs and motion graphics",
   "version": "14.0.1.0",
   "url": "https://dl.google.com/webdesigner/mac/shell/googlewebdesigner_mac.dmg",
+  "vendor_url": "https://dl.google.com/webdesigner/mac/shell/googlewebdesigner_mac.dmg",
   "bundleId": "com.google.WebDesigner",
   "homepage": "https://www.google.com/webdesigner/",
   "fileName": "googlewebdesigner_mac.dmg",

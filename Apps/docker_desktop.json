@@ -3,6 +3,7 @@
   "description": "App to build and share containerised applications and microservices",
   "version": "4.42.1",
   "url": "https://desktop.docker.com/mac/main/arm64/196648/Docker.dmg",
+  "vendor_url": "https://desktop.docker.com/mac/main/arm64/196648/Docker.dmg",
   "bundleId": "com.docker.docker",
   "homepage": "https://www.docker.com/products/docker-desktop",
   "fileName": "Docker.dmg",

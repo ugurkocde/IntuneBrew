@@ -3,6 +3,7 @@
   "description": "Swiss army chainsaw of terminal emulators",
   "version": "0.81.4",
   "url": "https://github.com/sedwards2009/extraterm/releases/download/v0.81.4/ExtratermQt_0.81.4.dmg",
+  "vendor_url": "https://github.com/sedwards2009/extraterm/releases/download/v0.81.4/ExtratermQt_0.81.4.dmg",
   "bundleId": "com.electron.extraterm",
   "homepage": "https://extraterm.org/",
   "fileName": "ExtratermQt_0.81.4.dmg",

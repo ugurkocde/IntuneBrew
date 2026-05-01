@@ -3,6 +3,7 @@
   "description": "Diagram software",
   "version": "14.5.2",
   "url": "https://download.edrawsoft.com/cbs_down/edraw-max_full5380.zip",
+  "vendor_url": "https://download.edrawsoft.com/cbs_down/edraw-max_full5380.zip",
   "bundleId": "com.edrawsoft.edrawmax",
   "homepage": "https://www.edrawsoft.com/",
   "fileName": "edraw-max_full5380.zip",

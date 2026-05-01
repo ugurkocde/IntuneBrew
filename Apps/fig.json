@@ -3,6 +3,7 @@
   "description": "Reimagine your terminal",
   "version": "2.19.0",
   "url": "https://repo.fig.io/generic/stable/asset/2.19.0/universal/fig.dmg",
+  "vendor_url": "https://repo.fig.io/generic/stable/asset/2.19.0/universal/fig.dmg",
   "bundleId": "com.mschrage.fig",
   "homepage": "https://fig.io/",
   "fileName": "fig.dmg",

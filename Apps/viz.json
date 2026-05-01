@@ -3,6 +3,7 @@
   "description": "Utility for extracting text from images, videos, QR codes and barcodes",
   "version": "2.3.3",
   "url": "https://intunebrew.blob.core.windows.net/pkg/viz_2.3.3.pkg",
+  "vendor_url": "https://github.com/alienator88/Viz/releases/download/2.3.3/Viz.zip",
   "bundleId": "com.alienator88.Viz",
   "homepage": "https://itsalin.com/appInfo/?id=viz",
   "fileName": "viz_2.3.3.pkg",

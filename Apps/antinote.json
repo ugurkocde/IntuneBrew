@@ -3,6 +3,7 @@
   "description": "Temporary notes with calculations and extensible features",
   "version": "1.1.7",
   "url": "https://antinote.io/updates/Antinote_1.1.7.dmg",
+  "vendor_url": "https://antinote.io/updates/Antinote_1.1.7.dmg",
   "bundleId": "com.chabomakers.Antinote",
   "homepage": "https://antinote.io/",
   "fileName": "Antinote_1.1.7.dmg",

@@ -3,6 +3,7 @@
   "description": "Control windows and applications right from your trackpad",
   "version": "1.13.2",
   "url": "https://github.com/chrenn/swish-dl/releases/download/1.13.2/Swish.dmg",
+  "vendor_url": "https://github.com/chrenn/swish-dl/releases/download/1.13.2/Swish.dmg",
   "bundleId": "co.highlyopinionated.swish",
   "homepage": "https://highlyopinionated.co/swish/",
   "fileName": "Swish.dmg",

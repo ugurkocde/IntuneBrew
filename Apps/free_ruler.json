@@ -3,6 +3,7 @@
   "description": "Horizontal and vertical rulers",
   "version": "2.0.8",
   "url": "https://intunebrew.blob.core.windows.net/pkg/free_ruler_2.0.8.pkg",
+  "vendor_url": "https://github.com/pascalpp/FreeRuler/releases/download/v2.0.8/free-ruler-2.0.8.zip",
   "bundleId": "com.pascal.freeruler",
   "homepage": "https://www.pascal.com/freeruler",
   "fileName": "free_ruler_2.0.8.pkg",

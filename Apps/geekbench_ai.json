@@ -3,11 +3,12 @@
   "description": "Cross-platform AI benchmark to evaluate AI workload performance",
   "version": "1.7.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/geekbench_ai_1.7.0.pkg",
+  "vendor_url": "https://cdn.geekbench.com/GeekbenchAI-1.7.0-Mac.zip",
   "bundleId": "com.primatelabs.macos.geekbenchml",
   "homepage": "https://www.geekbench.com/ai/",
   "fileName": "geekbench_ai_1.7.0.pkg",
   "type": "app",
-  "sha": "b28b6b58446d1ec2e5da1f36f8bd180007c6cca1732759f9b36372bdb429d07d",
+  "sha": "c6b375bd25b8db5710e4d22d8dabefafc56995d40327845aeddb776d9f7978b7",
   "previous_version": "1.7.0",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:16:53Z",

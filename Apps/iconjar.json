@@ -3,6 +3,7 @@
   "description": "Icon organiser",
   "version": "2.11.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/iconjar_2.11.4.pkg",
+  "vendor_url": "https://geticonjar.com/releases/IconJar.app.50604.zip",
   "bundleId": "com.iconjar.iconjar",
   "homepage": "https://geticonjar.com/",
   "fileName": "iconjar_2.11.4.pkg",

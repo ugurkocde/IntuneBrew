@@ -3,6 +3,7 @@
   "description": "Two-panel file manager",
   "version": "3.17.1",
   "url": "https://cdn.electronic.us/products/commander/mac/download/commander.dmg",
+  "vendor_url": "https://cdn.electronic.us/products/commander/mac/download/commander.dmg",
   "bundleId": "com.eltima.cmd1",
   "homepage": "https://mac.eltima.com/file-manager.html",
   "fileName": "commander.dmg",

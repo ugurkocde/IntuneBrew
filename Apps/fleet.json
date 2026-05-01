@@ -3,6 +3,7 @@
   "description": "Hybrid IDE and text editor",
   "version": "1.48.261",
   "url": "https://download.jetbrains.com/fleet/installers/macos_aarch64/Fleet-1.48.261-aarch64.dmg",
+  "vendor_url": "https://download.jetbrains.com/fleet/installers/macos_aarch64/Fleet-1.48.261-aarch64.dmg",
   "bundleId": "com.jetbrains.fleet",
   "homepage": "https://www.jetbrains.com/fleet/",
   "fileName": "Fleet-1.48.261-aarch64.dmg",

@@ -3,6 +3,7 @@
   "description": "Batch file renaming utility",
   "version": "4.20",
   "url": "https://www.advancedrenamer.com/down/macos/arm/AdvancedRenamer_4_20.dmg",
+  "vendor_url": "https://www.advancedrenamer.com/down/macos/arm/AdvancedRenamer_4_20.dmg",
   "bundleId": "com.HulubuluSoftware.AdvancedRenamer",
   "homepage": "https://www.advancedrenamer.com/",
   "fileName": "AdvancedRenamer_4_20.dmg",

@@ -3,6 +3,7 @@
   "description": "Tool to replace abbreviations while typing",
   "version": "3.21",
   "url": "https://www.trankynam.com/atext/downloads/aText.dmg",
+  "vendor_url": "https://www.trankynam.com/atext/downloads/aText.dmg",
   "bundleId": "com.trankynam.aText",
   "homepage": "https://www.trankynam.com/atext/",
   "fileName": "aText.dmg",

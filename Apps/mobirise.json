@@ -3,6 +3,7 @@
   "description": "No-code website creator",
   "version": "6.1.12",
   "url": "https://download.mobirise.com/MobiriseSetup-m.dmg",
+  "vendor_url": "https://download.mobirise.com/MobiriseSetup-m.dmg",
   "bundleId": "com.mobirise.Mobirise",
   "homepage": "https://mobirise.com/",
   "fileName": "MobiriseSetup-m.dmg",

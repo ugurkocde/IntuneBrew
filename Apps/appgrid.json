@@ -3,6 +3,7 @@
   "description": "Window manager with Vim–like hotkeys",
   "version": "1.0.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/appgrid_1.0.4.pkg",
+  "vendor_url": "https://github.com/mjolnirapp/AppGrid/releases/download/1.0.4/AppGrid-1.0.4.zip",
   "bundleId": "com.sdegutis.AppGrid",
   "homepage": "https://github.com/mjolnirapp/AppGrid/",
   "fileName": "appgrid_1.0.4.pkg",

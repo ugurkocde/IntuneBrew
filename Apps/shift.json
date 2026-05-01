@@ -3,6 +3,7 @@
   "description": "Workstation to streamline your accounts, apps, and workflows",
   "version": "9.6.4.1231",
   "url": "https://updates.tryshift.com/v9.6.4/stable/shift-v9.6.4.1231-stable-arm64.dmg",
+  "vendor_url": "https://updates.tryshift.com/v9.6.4/stable/shift-v9.6.4.1231-stable-arm64.dmg",
   "bundleId": "com.rdbrck.shift",
   "homepage": "https://shift.com/",
   "fileName": "shift-v9.6.4.1231-stable-arm64.dmg",

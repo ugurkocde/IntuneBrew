@@ -3,6 +3,7 @@
   "description": "Font manager that helps preview, install, sync and manage fonts",
   "version": "9.8",
   "url": "https://intunebrew.blob.core.windows.net/pkg/rightfont_9.8.pkg",
+  "vendor_url": "https://rightfontapp.com/update/rightfont.zip",
   "bundleId": "com.rightfontapp.RightFont",
   "homepage": "https://rightfontapp.com/",
   "fileName": "rightfont_9.8.pkg",

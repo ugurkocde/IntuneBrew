@@ -3,6 +3,7 @@
   "description": "Monitors computer mic and webcam",
   "version": "2.4.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/oversight_2.4.0.pkg",
+  "vendor_url": "https://github.com/objective-see/OverSight/releases/download/v2.4.0/OverSight_2.4.0.zip",
   "bundleId": "com.objective-see.oversight",
   "homepage": "https://objective-see.org/products/oversight.html",
   "fileName": "oversight_2.4.0.pkg",

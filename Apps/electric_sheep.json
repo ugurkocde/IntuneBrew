@@ -3,6 +3,7 @@
   "description": "Collaborative abstract artwork software",
   "version": "3.0.2",
   "url": "https://d100rc88eim93q.cloudfront.net/electricsheep-3.0.2.dmg",
+  "vendor_url": "https://d100rc88eim93q.cloudfront.net/electricsheep-3.0.2.dmg",
   "bundleId": "org.electricsheep.ElectricSheep",
   "homepage": "https://gold.electricsheep.org/",
   "fileName": "electricsheep-3.0.2.dmg",

@@ -3,6 +3,7 @@
   "description": "Colour picker",
   "version": "1.6.4",
   "url": "https://intunebrew.blob.core.windows.net/pkg/colorsnapper_2_1.6.4.pkg",
+  "vendor_url": "https://cs2-binaries.s3.amazonaws.com/ColorSnapper2-1_6_4.zip",
   "bundleId": "com.koolesache.ColorSnapper2",
   "homepage": "https://colorsnapper.com/",
   "fileName": "colorsnapper_2_1.6.4.pkg",

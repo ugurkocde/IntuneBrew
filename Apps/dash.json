@@ -3,6 +3,7 @@
   "description": "API documentation browser and code snippet manager",
   "version": "23.1.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/dash_23.1.2.pkg",
+  "vendor_url": "https://kapeli.com/downloads/v8/Dash.zip",
   "bundleId": "com.kapeli.dash",
   "homepage": "https://kapeli.com/dash",
   "fileName": "dash_23.1.2.pkg",

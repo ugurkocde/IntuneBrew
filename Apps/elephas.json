@@ -3,6 +3,7 @@
   "description": "Personal AI Writing Assistant",
   "version": "11.6009",
   "url": "https://assets.elephas.app/Elephas_6009.dmg",
+  "vendor_url": "https://assets.elephas.app/Elephas_6009.dmg",
   "bundleId": "com.kamban.elephas",
   "homepage": "https://elephas.app/",
   "fileName": "Elephas_6009.dmg",

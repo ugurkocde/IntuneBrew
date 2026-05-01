@@ -3,6 +3,7 @@
   "description": "Image, video and clipboard optimiser",
   "version": "2.11.6",
   "url": "https://files.lowtechguys.com/releases/Clop-2.11.6.dmg",
+  "vendor_url": "https://files.lowtechguys.com/releases/Clop-2.11.6.dmg",
   "bundleId": "com.lowtechguys.Clop",
   "homepage": "https://lowtechguys.com/clop/",
   "fileName": "Clop-2.11.6.dmg",

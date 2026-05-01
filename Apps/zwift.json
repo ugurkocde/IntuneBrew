@@ -3,6 +3,7 @@
   "description": "Indoor cycling game",
   "version": "1.1.16",
   "url": "https://cdn.zwift.com/app/ZwiftOSX.dmg",
+  "vendor_url": "https://cdn.zwift.com/app/ZwiftOSX.dmg",
   "bundleId": "com.zwift.ZwiftLauncher",
   "homepage": "https://www.zwift.com/",
   "fileName": "ZwiftOSX.dmg",

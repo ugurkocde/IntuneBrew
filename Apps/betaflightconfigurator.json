@@ -3,6 +3,7 @@
   "description": "Configuration tool for the Betaflight firmware",
   "version": "10.10.0",
   "url": "https://github.com/betaflight/betaflight-configurator/releases/download/10.10.0/betaflight-configurator_10.10.0_macOS.dmg",
+  "vendor_url": "https://github.com/betaflight/betaflight-configurator/releases/download/10.10.0/betaflight-configurator_10.10.0_macOS.dmg",
   "bundleId": "com.nw-builder.betaflight-configurator",
   "homepage": "https://github.com/betaflight/betaflight-configurator",
   "fileName": "betaflight-configurator_10.10.0_macOS.dmg",

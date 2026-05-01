@@ -3,6 +3,7 @@
   "description": "Create interactive prototypes",
   "version": "9.0.0",
   "url": "https://release.protopie.io/ProtoPie-9.0.0-universal.dmg",
+  "vendor_url": "https://release.protopie.io/ProtoPie-9.0.0-universal.dmg",
   "bundleId": "io.protopie",
   "homepage": "https://www.protopie.io/",
   "fileName": "ProtoPie-9.0.0-universal.dmg",

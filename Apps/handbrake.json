@@ -3,6 +3,7 @@
   "description": "Open-source video transcoder",
   "version": "1.11.1",
   "url": "https://handbrake.fr/rotation.php?file=HandBrake-1.11.1.dmg&update=true",
+  "vendor_url": "https://handbrake.fr/rotation.php?file=HandBrake-1.11.1.dmg&update=true",
   "bundleId": "fr.handbrake.HandBrake",
   "homepage": "https://handbrake.fr/",
   "fileName": "HandBrake-1.11.1.dmg",

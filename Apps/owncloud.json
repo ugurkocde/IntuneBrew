@@ -3,6 +3,7 @@
   "description": "Desktop syncing client for ownCloud",
   "version": "6.0.3.18040",
   "url": "https://download.owncloud.com/desktop/ownCloud/stable/6.0.3.18040/mac/ownCloud-6.0.3.18040-arm64.pkg",
+  "vendor_url": "https://download.owncloud.com/desktop/ownCloud/stable/6.0.3.18040/mac/ownCloud-6.0.3.18040-arm64.pkg",
   "bundleId": "com.owncCloud.finderPlugin",
   "homepage": "https://owncloud.com/",
   "fileName": "ownCloud-6.0.3.18040-arm64.pkg",

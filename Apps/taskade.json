@@ -3,6 +3,7 @@
   "description": "Task manager for teams",
   "version": "4.6.14",
   "url": "https://apps.taskade.com/updates/Taskade-4.6.14-universal.dmg",
+  "vendor_url": "https://apps.taskade.com/updates/Taskade-4.6.14-universal.dmg",
   "bundleId": "com.taskade",
   "homepage": "https://www.taskade.com/",
   "fileName": "Taskade-4.6.14-universal.dmg",

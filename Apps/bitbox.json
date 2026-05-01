@@ -3,6 +3,7 @@
   "description": "Protect your coins with the latest Swiss made hardware wallet",
   "version": "4.50.1",
   "url": "https://github.com/BitBoxSwiss/bitbox-wallet-app/releases/download/v4.50.1/BitBox-4.50.1-macOS.dmg",
+  "vendor_url": "https://github.com/BitBoxSwiss/bitbox-wallet-app/releases/download/v4.50.1/BitBox-4.50.1-macOS.dmg",
   "bundleId": "ch.shiftcrypto.wallet",
   "homepage": "https://bitbox.swiss/",
   "fileName": "BitBox-4.50.1-macOS.dmg",

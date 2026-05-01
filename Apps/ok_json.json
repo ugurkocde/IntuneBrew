@@ -3,6 +3,7 @@
   "description": "Scriptable JSON formatter and editor",
   "version": "2.10.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/ok_json_2.10.2.pkg",
+  "vendor_url": "https://okjson.app/download/okjson-latest.zip",
   "bundleId": "com.nicola.OK-JSON",
   "homepage": "https://okjson.app/",
   "fileName": "ok_json_2.10.2.pkg",

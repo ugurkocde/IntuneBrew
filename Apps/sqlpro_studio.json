@@ -1,14 +1,15 @@
 {
   "name": "SQLPro Studio",
   "description": "Database management tool",
-  "version": "2026.07",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_studio_2026.07.pkg",
+  "version": "2026.87",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sqlpro_studio_2026.87.pkg",
+  "vendor_url": "https://d3fwkemdw8spx3.cloudfront.net/studio/SQLProStudio.2026.07.app.zip",
   "bundleId": "com.hankinsoft.osx.sqlprostudio",
   "homepage": "https://www.sqlprostudio.com/",
-  "fileName": "sqlpro_studio_2026.07.pkg",
+  "fileName": "sqlpro_studio_2026.87.pkg",
   "type": "app",
-  "sha": "fa4c3d0225b452519806da94a58581b5d2b7b883776abdec07eeddb702bba393",
-  "previous_version": "2026.07",
+  "sha": "05e729d035d1aea5ff50983f7a3814ff2104a7ff667d54a343e614cbd6853c38",
+  "previous_version": "2026.87",
   "category": "Developer Tools",
   "publisher": "Hankin Software"
 }

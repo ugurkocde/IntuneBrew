@@ -3,6 +3,7 @@
   "description": "Scriptable scratchpad for developers",
   "version": "1.4.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/boop_1.4.0.pkg",
+  "vendor_url": "https://github.com/IvanMathy/Boop/releases/download/1.4.0/Boop.zip",
   "bundleId": "com.okatbest.boop",
   "homepage": "https://boop.okat.best/",
   "fileName": "boop_1.4.0.pkg",

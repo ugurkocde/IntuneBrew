@@ -3,6 +3,7 @@
   "description": "Remote desktop application",
   "version": "9.1.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/jump_desktop_9.1.9.pkg",
+  "vendor_url": "https://mirror.jumpdesktop.com/downloads/jdm/JumpDesktopMac-90109.zip",
   "bundleId": "com.p5sys.jump.connect",
   "homepage": "https://jumpdesktop.com/#jdmac",
   "fileName": "jump_desktop_9.1.9.pkg",
