@@ -1,13 +1,13 @@
 {
   "name": "Anytype",
   "description": "Local-first and end-to-end encrypted notes app",
-  "version": "0.55.3",
-  "url": "https://anytype-release.fra1.cdn.digitaloceanspaces.com/Anytype-0.55.3-mac-arm64.dmg",
+  "version": "0.55.4",
+  "url": "https://anytype-release.fra1.cdn.digitaloceanspaces.com/Anytype-0.55.4-mac-arm64.dmg",
   "vendor_url": "https://anytype-release.fra1.cdn.digitaloceanspaces.com/Anytype-0.54.11-mac-arm64.dmg",
   "bundleId": "com.anytype.anytype",
   "homepage": "https://anytype.io/",
-  "fileName": "Anytype-0.55.3-mac-arm64.dmg",
-  "sha": "55086a71abe1e8be0dc0d89b24f33ded97e7e205fb93b11de1871f3f10713ff9",
+  "fileName": "Anytype-0.55.4-mac-arm64.dmg",
+  "sha": "6651689343cf347962a71c0603d0a5fdfea57912483e9e2b7be911a34639b4b2",
   "category": "Productivity",
   "publisher": "Anytype",
   "previous_version": "0.55.3"

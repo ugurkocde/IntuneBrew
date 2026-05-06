@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1252-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -451,36 +451,53 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-05 00:54 UTC*
+*Last checked: 2026-05-06 01:01 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 151.0b5 | 151.0b6 |
-| AnyDesk | 9.6.5 | 9.7.0 |
-| Discord | 0.0.388 | 0.0.389 |
-| DuckDuckGo | 1.187.0 | 1.188.0 |
-| Zed | 1.0.0 | 1.0.1 |
-| Rancher Desktop | 1.22.0 | 1.22.2 |
-| BoltAI 2 | 2.11.0 | 2.12.0 |
-| 8x8_work | 8.32.2-10 | 8.33.2-2 |
-| Craft | 3.4.1 | 3.4.2 |
+| Ente | 1.7.22 | 1.7.23 |
+| Rocket.Chat | 4.14.0 | 4.14.1 |
+| Freelens | 1.8.1 | 1.9.0 |
+| Trae | 2.3.21083 | 2.3.24300 |
+| Mos | 4.0.2 | 4.2.0 |
+| Easydict | 2.18.1 | 2.19.0 |
+| Grammarly Desktop | 1.163.1.0 | 1.164.0.0 |
+| XMind | 26.03.04126-202604200306 | 26.03.04126-202604280709 |
+| Android Studio | 2025.3.4.6 | 2025.3.4.7 |
+| DataGrip | 2026.1.2 | 2026.1.3 |
+| Microsoft Office | 16.108.26042616 | 16.108.26050324 |
+| Milanote | 3.18.94 | 3.18.96 |
+| Path Finder | 11.1 | 11.2 |
+| Roon | 2.65 | 2.66 |
+| Ableton Live Lite | 12.3.8 | 12.4 |
+| Ableton Live Suite | 12.3.8 | 12.4 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Defold | 1.12.3 | 1.12.4 |
-| Dust3D | 1.0.0-rc.9 | 1.0.0 |
-| jamovi | 2.7.27.2 | 2.7.28.0 |
-| massCode | 5.2.0 | 5.3.0 |
+| Anytype | 0.55.3 | 0.55.4 |
+| Local | 10.0.0 | 10.1.0 |
+| MEGAsync | 6.2.2.0 | 6.3.0.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| Notesnook | 3.3.16 | 3.3.17 |
-| QGIS | 4.0.1 | 4.0.2 |
-| Nextcloud | 33.0.3 | 33.0.4 |
-| Aptible Toolbelt | 0.26.5 | 0.26.6 |
-| GOG Galaxy | 2.0.97.49 | 2.0.98.44 |
-| Shutter Encoder | 20.0 | 20.1 |
-| Adobe Acrobat Reader | 26.001.21431 | 26.001.21529 |
+| Pitch | 2.124.0 | 2.125.1 |
+| RunJS | 4.0.2 | 4.0.4 |
+| Shapr3D | 26.70.0.10837 | 26.71.0.10875 |
+| Tuta Mail | 346.260428.0 | 348.260505.1 |
+| Zappy | 4.9.6 | 4.9.7 |
+| Claude Code | 2.1.118 | 2.1.119 |
+| cmux | 0.63.2 | 0.64.1 |
+| Malwarebytes for Mac | 5.22.0.3758 | 5.23.0.3860 |
+| Session Manager Plugin for the AWS CLI | 1.2.804.0 | 1.2.814.0 |
+| Microsoft Office BusinessPro | 16.108.26042616 | 16.108.26050324 |
+| Microsoft Excel | 16.108.26042616 | 16.108.26050324 |
+| Microsoft OneNote | 16.108.26042616 | 16.108.26050324 |
+| Microsoft Outlook | 16.108.26042616 | 16.108.26050324 |
+| Microsoft PowerPoint | 16.108.26042616 | 16.108.26050324 |
+| Microsoft Word | 16.108.26042616 | 16.108.26050324 |
+| Okta Verify | 9.59.0 | 9.61.1 |
+| osquery | 5.22.1 | 5.23.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

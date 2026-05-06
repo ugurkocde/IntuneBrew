@@ -1,13 +1,13 @@
 {
   "name": "Zappy",
   "description": "Screen capture tool for remote teams",
-  "version": "4.9.6",
-  "url": "https://zappy.zapier.com/releases/zappy-4.9.6.dmg",
+  "version": "4.9.7",
+  "url": "https://zappy.zapier.com/releases/zappy-4.9.7.dmg",
   "vendor_url": "https://zappy.zapier.com/releases/zappy-4.9.5.dmg",
   "bundleId": "com.blackbeltlabs.Zappy",
   "homepage": "https://zapier.com/zappy",
-  "fileName": "zappy-4.9.6.dmg",
-  "sha": "54d928d7acbea5fc0977e7077b25325fd6f301b900f76d93c7a3f0c38ee5725d",
+  "fileName": "zappy-4.9.7.dmg",
+  "sha": "5a9cd962cc034f1640b9b55ebe88738d6c90703c82f985641deb0ba01d0811b3",
   "category": "Productivity",
   "publisher": "Zapier, Inc.",
   "previous_version": "4.9.6"
