@@ -1,14 +1,14 @@
 {
   "name": "Arq",
   "description": "Multi-cloud backup application",
-  "version": "7.40.2",
-  "url": "https://www.arqbackup.com/download/arqbackup/Arq7.40.2.pkg",
+  "version": "7.41",
+  "url": "https://www.arqbackup.com/download/arqbackup/Arq7.41.pkg",
   "vendor_url": "https://www.arqbackup.com/download/arqbackup/Arq7.39.1.pkg",
   "bundleId": "com.haystacksoftware.Arq",
   "homepage": "https://www.arqbackup.com/",
-  "fileName": "Arq7.40.2.pkg",
+  "fileName": "Arq7.41.pkg",
   "type": "pkg",
-  "sha": "4b9f24376d816c5abb77569b6e6d98d27f4c63e024d2cf1d3dfa3d5bae03cad6",
+  "sha": "cce13f76909e864247181c2d660c2f52a0ce10eaa7a96eb4a7c80a43e2d89463",
   "category": "Utilities",
   "publisher": "Haystack Software",
   "previous_version": "7.40.2"

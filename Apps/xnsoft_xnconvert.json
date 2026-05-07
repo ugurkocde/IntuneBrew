@@ -1,13 +1,13 @@
 {
   "name": "XnSoft XnConvert",
   "description": "Image-converter and resiser tool",
-  "version": "1.106.0",
-  "url": "https://download.xnview.com/old_versions/XnConvert/XnConvert-1.106.0-mac.dmg",
+  "version": "1.111.0",
+  "url": "https://download.xnview.com/old_versions/XnConvert/XnConvert-1.111.0-mac.dmg",
   "vendor_url": "https://download.xnview.com/old_versions/XnConvert/XnConvert-1.106.0-mac.dmg",
   "bundleId": "com.gilles-caulier.xnconvert",
   "homepage": "https://www.xnview.com/en/xnconvert/",
-  "fileName": "XnConvert-1.106.0-mac.dmg",
-  "sha": "594a43a3dc1741b4aa5074db9058687903541af1cee5543518e6ae73d003701e",
+  "fileName": "XnConvert-1.111.0-mac.dmg",
+  "sha": "045ecbd9c5f1d8f91fdc4217eba668ebc634e53db23963a41f1e21fbd7a1e7b6",
   "category": "Media",
   "publisher": "XnSoft",
   "previous_version": "1.106.0"
