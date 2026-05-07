@@ -1,7 +1,7 @@
 {
   "app_name": "Little Snitch",
   "app_key": "little_snitch",
-  "last_updated": "2026-05-06",
+  "last_updated": "2026-05-07",
   "total_cves": 5,
   "summary": {
     "critical": 0,
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2016-8661",
       "published_date": "2016-11-15",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Little Snitch version 3.0 through 3.6.1 suffer from a buffer overflow vulnerability that could be locally exploited which could lead to an escalation of privileges (EoP) and unauthorised ring0 access to the operating system. The buffer overflow is related to insufficient checking of parameters to the \"OSMalloc\" and \"copyin\" kernel API calls.",
       "base_score": 8.4,
       "severity": "HIGH",

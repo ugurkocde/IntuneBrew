@@ -1,7 +1,7 @@
 {
   "app_name": "Opera",
   "app_key": "opera",
-  "last_updated": "2026-05-06",
+  "last_updated": "2026-05-07",
   "total_cves": 304,
   "summary": {
     "critical": 0,
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2015-8960",
       "published_date": "2016-09-21",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The TLS protocol 1.2 and earlier supports the rsa_fixed_dh, dss_fixed_dh, rsa_fixed_ecdh, and ecdsa_fixed_ecdh values for ClientCertificateType but does not directly document the ability to compute the master secret in certain situations with a client secret key and server public key but not a server secret key, which makes it easier for man-in-the-middle attackers to spoof TLS servers by leveraging knowledge of the secret key for an arbitrary installed client X.509 certificate, aka the \"Key Compromise Impersonation (KCI)\" issue.",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -1757,7 +1757,7 @@
     {
       "cve_id": "CVE-2016-7153",
       "published_date": "2016-09-06",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The HTTP/2 protocol does not consider the role of the TCP congestion window in providing information about content length, which makes it easier for remote attackers to obtain cleartext data by leveraging a web-browser configuration in which third-party cookies are sent, aka a \"HEIST\" attack.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -1778,7 +1778,7 @@
     {
       "cve_id": "CVE-2016-7152",
       "published_date": "2016-09-06",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The HTTPS protocol does not consider the role of the TCP congestion window in providing information about content length, which makes it easier for remote attackers to obtain cleartext data by leveraging a web-browser configuration in which third-party cookies are sent, aka a \"HEIST\" attack.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -6104,7 +6104,7 @@
     {
       "cve_id": "CVE-2015-4000",
       "published_date": "2015-05-21",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The TLS protocol 1.2 and earlier, when a DHE_EXPORT ciphersuite is enabled on a server but not on a client, does not properly convey a DHE_EXPORT choice, which allows man-in-the-middle attackers to conduct cipher-downgrade attacks by rewriting a ClientHello with DHE replaced by DHE_EXPORT and then rewriting a ServerHello with DHE_EXPORT replaced by DHE, aka the \"Logjam\" issue.",
       "base_score": 3.7,
       "severity": "LOW",

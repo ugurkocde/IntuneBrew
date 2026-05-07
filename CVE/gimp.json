@@ -1,7 +1,7 @@
 {
   "app_name": "Gimp",
   "app_key": "gimp",
-  "last_updated": "2026-05-06",
+  "last_updated": "2026-05-07",
   "total_cves": 79,
   "summary": {
     "critical": 1,
@@ -812,7 +812,7 @@
     {
       "cve_id": "CVE-2016-4994",
       "published_date": "2016-07-12",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Use-after-free vulnerability in the xcf_load_image function in app/xcf/xcf-load.c in GIMP allows remote attackers to cause a denial of service (program crash) or possibly execute arbitrary code via a crafted XCF file.",
       "base_score": 7.8,
       "severity": "HIGH",

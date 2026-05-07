@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-05-06",
+  "last_updated": "2026-05-07",
   "total_cves": 956,
   "summary": {
     "critical": 17,
@@ -623,7 +623,7 @@
     {
       "cve_id": "CVE-2016-0003",
       "published_date": "2016-01-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code via unspecified vectors, aka \"Microsoft Edge Memory Corruption Vulnerability.\"",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -10346,7 +10346,7 @@
     {
       "cve_id": "CVE-2017-0002",
       "published_date": "2017-01-10",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to bypass the Same Origin Policy via vectors involving the about:blank URL and data: URLs, aka \"Microsoft Edge Elevation of Privilege Vulnerability.\"",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -10367,7 +10367,7 @@
     {
       "cve_id": "CVE-2016-7181",
       "published_date": "2016-12-20",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10388,7 +10388,7 @@
     {
       "cve_id": "CVE-2016-7279",
       "published_date": "2016-12-20",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10409,7 +10409,7 @@
     {
       "cve_id": "CVE-2016-7286",
       "published_date": "2016-12-20",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The scripting engines in Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7288, CVE-2016-7296, and CVE-2016-7297.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10430,7 +10430,7 @@
     {
       "cve_id": "CVE-2016-7287",
       "published_date": "2016-12-20",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The scripting engines in Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10451,7 +10451,7 @@
     {
       "cve_id": "CVE-2016-7288",
       "published_date": "2016-12-20",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The scripting engines in Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7286, CVE-2016-7296, and CVE-2016-7297.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10472,7 +10472,7 @@
     {
       "cve_id": "CVE-2016-7296",
       "published_date": "2016-12-20",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The scripting engines in Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7286, CVE-2016-7288, and CVE-2016-7297.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10493,7 +10493,7 @@
     {
       "cve_id": "CVE-2016-7297",
       "published_date": "2016-12-20",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The scripting engines in Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7286, CVE-2016-7288, and CVE-2016-7296.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10514,7 +10514,7 @@
     {
       "cve_id": "CVE-2016-7195",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7198.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10535,7 +10535,7 @@
     {
       "cve_id": "CVE-2016-7196",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 10 and 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10556,7 +10556,7 @@
     {
       "cve_id": "CVE-2016-7198",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7195.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10577,7 +10577,7 @@
     {
       "cve_id": "CVE-2016-7202",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The scripting engines in Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" as demonstrated by the Chakra JavaScript engine, a different vulnerability than CVE-2016-7200, CVE-2016-7201, CVE-2016-7203, CVE-2016-7208, CVE-2016-7240, CVE-2016-7242, and CVE-2016-7243.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10598,7 +10598,7 @@
     {
       "cve_id": "CVE-2016-7203",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript scripting engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7200, CVE-2016-7201, CVE-2016-7202, CVE-2016-7208, CVE-2016-7240, CVE-2016-7242, and CVE-2016-7243.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10619,7 +10619,7 @@
     {
       "cve_id": "CVE-2016-7208",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript scripting engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7200, CVE-2016-7201, CVE-2016-7202, CVE-2016-7203, CVE-2016-7240, CVE-2016-7242, and CVE-2016-7243.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10640,7 +10640,7 @@
     {
       "cve_id": "CVE-2016-7240",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript scripting engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7200, CVE-2016-7201, CVE-2016-7202, CVE-2016-7203, CVE-2016-7208, CVE-2016-7242, and CVE-2016-7243.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10661,7 +10661,7 @@
     {
       "cve_id": "CVE-2016-7241",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10682,7 +10682,7 @@
     {
       "cve_id": "CVE-2016-7242",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript scripting engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7200, CVE-2016-7201, CVE-2016-7202, CVE-2016-7203, CVE-2016-7208, CVE-2016-7240, and CVE-2016-7243.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10703,7 +10703,7 @@
     {
       "cve_id": "CVE-2016-7243",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript scripting engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-7200, CVE-2016-7201, CVE-2016-7202, CVE-2016-7203, CVE-2016-7208, CVE-2016-7240, and CVE-2016-7242.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10724,7 +10724,7 @@
     {
       "cve_id": "CVE-2016-3331",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10745,7 +10745,7 @@
     {
       "cve_id": "CVE-2016-3382",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The scripting engines in Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, as demonstrated by the Chakra JavaScript engine, aka \"Scripting Engine Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10766,7 +10766,7 @@
     {
       "cve_id": "CVE-2016-3386",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3389, CVE-2016-7190, and CVE-2016-7194.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10787,7 +10787,7 @@
     {
       "cve_id": "CVE-2016-3387",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 10 and 11 and Microsoft Edge do not properly restrict access to private namespaces, which allows remote attackers to gain privileges via unspecified vectors, aka \"Microsoft Browser Elevation of Privilege Vulnerability,\" a different vulnerability than CVE-2016-3388.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10808,7 +10808,7 @@
     {
       "cve_id": "CVE-2016-3389",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3386, CVE-2016-7190, and CVE-2016-7194.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10829,7 +10829,7 @@
     {
       "cve_id": "CVE-2016-3390",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The scripting engines in Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, as demonstrated by the Chakra JavaScript engine, aka \"Scripting Engine Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10850,7 +10850,7 @@
     {
       "cve_id": "CVE-2016-7189",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code via a crafted web site, aka \"Scripting Engine Remote Code Execution Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10871,7 +10871,7 @@
     {
       "cve_id": "CVE-2016-7190",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3386, CVE-2016-3389, and CVE-2016-7194.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10892,7 +10892,7 @@
     {
       "cve_id": "CVE-2016-7194",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3386, CVE-2016-3389, and CVE-2016-7190.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10913,7 +10913,7 @@
     {
       "cve_id": "CVE-2016-3247",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10934,7 +10934,7 @@
     {
       "cve_id": "CVE-2016-3294",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3330.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10955,7 +10955,7 @@
     {
       "cve_id": "CVE-2016-3295",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 10 and 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10976,7 +10976,7 @@
     {
       "cve_id": "CVE-2016-3297",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -10997,7 +10997,7 @@
     {
       "cve_id": "CVE-2016-3330",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3294.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11018,7 +11018,7 @@
     {
       "cve_id": "CVE-2016-3350",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3377.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11039,7 +11039,7 @@
     {
       "cve_id": "CVE-2016-3377",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3350.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11060,7 +11060,7 @@
     {
       "cve_id": "CVE-2016-3289",
       "published_date": "2016-08-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Edge allow remote attackers to execute arbitrary code via a crafted web page, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3322.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11081,7 +11081,7 @@
     {
       "cve_id": "CVE-2016-3293",
       "published_date": "2016-08-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Edge allow remote attackers to execute arbitrary code via a crafted web page, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11102,7 +11102,7 @@
     {
       "cve_id": "CVE-2016-3296",
       "published_date": "2016-08-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11123,7 +11123,7 @@
     {
       "cve_id": "CVE-2016-3319",
       "published_date": "2016-08-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The PDF library in Microsoft Windows 8.1, Windows Server 2012 Gold and R2, Windows 10 Gold and 1511, and Microsoft Edge allows remote attackers to execute arbitrary code via a crafted PDF file, aka \"Microsoft PDF Remote Code Execution Vulnerability.\"",
       "base_score": 7.0,
       "severity": "HIGH",
@@ -11144,7 +11144,7 @@
     {
       "cve_id": "CVE-2016-3322",
       "published_date": "2016-08-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Edge allow remote attackers to execute arbitrary code via a crafted web page, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3289.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11165,7 +11165,7 @@
     {
       "cve_id": "CVE-2016-3246",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11186,7 +11186,7 @@
     {
       "cve_id": "CVE-2016-3248",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Microsoft (1) JScript 9, (2) VBScript, and (3) Chakra JavaScript engines, as used in Microsoft Internet Explorer 9 through 11, Microsoft Edge, and other products, allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3259.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11207,7 +11207,7 @@
     {
       "cve_id": "CVE-2016-3259",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Microsoft (1) JScript 9, (2) VBScript, and (3) Chakra JavaScript engines, as used in Microsoft Internet Explorer 9 through 11, Microsoft Edge, and other products, allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3248.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11228,7 +11228,7 @@
     {
       "cve_id": "CVE-2016-3260",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Microsoft (1) JScript 9, (2) VBScript, and (3) Chakra JavaScript engines, as used in Microsoft Internet Explorer 11, Microsoft Edge, and other products, allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability.\"",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11249,7 +11249,7 @@
     {
       "cve_id": "CVE-2016-3264",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11270,7 +11270,7 @@
     {
       "cve_id": "CVE-2016-3265",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3269.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11291,7 +11291,7 @@
     {
       "cve_id": "CVE-2016-3269",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3265.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11312,7 +11312,7 @@
     {
       "cve_id": "CVE-2016-3199",
       "published_date": "2016-06-16",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3214.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11333,7 +11333,7 @@
     {
       "cve_id": "CVE-2016-3202",
       "published_date": "2016-06-16",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Microsoft (1) Chakra JavaScript, (2) JScript, and (3) VBScript engines, as used in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11354,7 +11354,7 @@
     {
       "cve_id": "CVE-2016-3203",
       "published_date": "2016-06-16",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Windows 8.1, Windows Server 2012 Gold and R2, Windows 10 Gold and 1511, and Microsoft Edge allow remote attackers to execute arbitrary code via a crafted PDF document, aka \"Windows PDF Remote Code Execution Vulnerability.\"",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11375,7 +11375,7 @@
     {
       "cve_id": "CVE-2016-3214",
       "published_date": "2016-06-16",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-3199.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11396,7 +11396,7 @@
     {
       "cve_id": "CVE-2016-3222",
       "published_date": "2016-06-16",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability.\"",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11417,7 +11417,7 @@
     {
       "cve_id": "CVE-2016-0186",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0191 and CVE-2016-0193.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11438,7 +11438,7 @@
     {
       "cve_id": "CVE-2016-0191",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0186 and CVE-2016-0193.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11459,7 +11459,7 @@
     {
       "cve_id": "CVE-2016-0192",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11480,7 +11480,7 @@
     {
       "cve_id": "CVE-2016-0193",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Scripting Engine Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0186 and CVE-2016-0191.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11501,7 +11501,7 @@
     {
       "cve_id": "CVE-2016-1096",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11522,7 +11522,7 @@
     {
       "cve_id": "CVE-2016-1097",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11543,7 +11543,7 @@
     {
       "cve_id": "CVE-2016-1098",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11564,7 +11564,7 @@
     {
       "cve_id": "CVE-2016-1099",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11585,7 +11585,7 @@
     {
       "cve_id": "CVE-2016-1100",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11606,7 +11606,7 @@
     {
       "cve_id": "CVE-2016-1101",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11627,7 +11627,7 @@
     {
       "cve_id": "CVE-2016-1102",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11648,7 +11648,7 @@
     {
       "cve_id": "CVE-2016-1103",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11669,7 +11669,7 @@
     {
       "cve_id": "CVE-2016-1104",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11690,7 +11690,7 @@
     {
       "cve_id": "CVE-2016-1105",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11711,7 +11711,7 @@
     {
       "cve_id": "CVE-2016-1106",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11732,7 +11732,7 @@
     {
       "cve_id": "CVE-2016-1107",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11753,7 +11753,7 @@
     {
       "cve_id": "CVE-2016-1108",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11774,7 +11774,7 @@
     {
       "cve_id": "CVE-2016-1109",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11795,7 +11795,7 @@
     {
       "cve_id": "CVE-2016-1110",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11816,7 +11816,7 @@
     {
       "cve_id": "CVE-2016-4108",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11837,7 +11837,7 @@
     {
       "cve_id": "CVE-2016-4109",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11858,7 +11858,7 @@
     {
       "cve_id": "CVE-2016-4110",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11879,7 +11879,7 @@
     {
       "cve_id": "CVE-2016-4111",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11900,7 +11900,7 @@
     {
       "cve_id": "CVE-2016-4112",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11921,7 +11921,7 @@
     {
       "cve_id": "CVE-2016-4113",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11942,7 +11942,7 @@
     {
       "cve_id": "CVE-2016-4114",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11963,7 +11963,7 @@
     {
       "cve_id": "CVE-2016-4115",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -11984,7 +11984,7 @@
     {
       "cve_id": "CVE-2016-4116",
       "published_date": "2016-05-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unspecified vulnerability in Adobe Flash Player 21.0.0.213 and earlier, as used in the Adobe Flash libraries in Microsoft Internet Explorer 10 and 11 and Microsoft Edge, has unknown impact and attack vectors, a different vulnerability than other CVEs listed in MS16-064.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12005,7 +12005,7 @@
     {
       "cve_id": "CVE-2016-0154",
       "published_date": "2016-04-12",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12026,7 +12026,7 @@
     {
       "cve_id": "CVE-2016-0155",
       "published_date": "2016-04-12",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0156 and CVE-2016-0157.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12047,7 +12047,7 @@
     {
       "cve_id": "CVE-2016-0156",
       "published_date": "2016-04-12",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0155 and CVE-2016-0157.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12068,7 +12068,7 @@
     {
       "cve_id": "CVE-2016-0157",
       "published_date": "2016-04-12",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0155 and CVE-2016-0156.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12089,7 +12089,7 @@
     {
       "cve_id": "CVE-2016-0102",
       "published_date": "2016-03-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0103, CVE-2016-0106, CVE-2016-0108, CVE-2016-0109, and CVE-2016-0114.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12110,7 +12110,7 @@
     {
       "cve_id": "CVE-2016-0105",
       "published_date": "2016-03-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0107, CVE-2016-0111, CVE-2016-0112, and CVE-2016-0113.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12131,7 +12131,7 @@
     {
       "cve_id": "CVE-2016-0109",
       "published_date": "2016-03-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0102, CVE-2016-0103, CVE-2016-0106, CVE-2016-0108, and CVE-2016-0114.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12152,7 +12152,7 @@
     {
       "cve_id": "CVE-2016-0110",
       "published_date": "2016-03-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 10 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12173,7 +12173,7 @@
     {
       "cve_id": "CVE-2016-0111",
       "published_date": "2016-03-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0105, CVE-2016-0107, CVE-2016-0112, and CVE-2016-0113.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12194,7 +12194,7 @@
     {
       "cve_id": "CVE-2016-0116",
       "published_date": "2016-03-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0123, CVE-2016-0124, CVE-2016-0129, and CVE-2016-0130.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12215,7 +12215,7 @@
     {
       "cve_id": "CVE-2016-0123",
       "published_date": "2016-03-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0116, CVE-2016-0124, CVE-2016-0129, and CVE-2016-0130.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12236,7 +12236,7 @@
     {
       "cve_id": "CVE-2016-0124",
       "published_date": "2016-03-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0116, CVE-2016-0123, CVE-2016-0129, and CVE-2016-0130.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12257,7 +12257,7 @@
     {
       "cve_id": "CVE-2016-0129",
       "published_date": "2016-03-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0116, CVE-2016-0123, CVE-2016-0124, and CVE-2016-0130.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12278,7 +12278,7 @@
     {
       "cve_id": "CVE-2016-0130",
       "published_date": "2016-03-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0116, CVE-2016-0123, CVE-2016-0124, and CVE-2016-0129.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12299,7 +12299,7 @@
     {
       "cve_id": "CVE-2016-0060",
       "published_date": "2016-02-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0061, CVE-2016-0063, CVE-2016-0067, and CVE-2016-0072.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -12320,7 +12320,7 @@
     {
       "cve_id": "CVE-2016-0061",
       "published_date": "2016-02-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2016-0060, CVE-2016-0063, CVE-2016-0067, and CVE-2016-0072.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -12341,7 +12341,7 @@
     {
       "cve_id": "CVE-2016-0062",
       "published_date": "2016-02-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -12362,7 +12362,7 @@
     {
       "cve_id": "CVE-2016-0084",
       "published_date": "2016-02-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability.\"",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -12383,7 +12383,7 @@
     {
       "cve_id": "CVE-2016-0024",
       "published_date": "2016-01-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Chakra JavaScript engine in Microsoft Edge allows remote attackers to execute arbitrary code via unspecified vectors, aka \"Scripting Engine Memory Corruption Vulnerability.\"",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -12404,7 +12404,7 @@
     {
       "cve_id": "CVE-2015-6139",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge mishandle content types, which allows remote attackers to execute arbitrary web script in a privileged context via a crafted web site, aka \"Microsoft Browser Elevation of Privilege Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12425,7 +12425,7 @@
     {
       "cve_id": "CVE-2015-6140",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-6142, CVE-2015-6143, CVE-2015-6153, CVE-2015-6158, CVE-2015-6159, and CVE-2015-6160.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12446,7 +12446,7 @@
     {
       "cve_id": "CVE-2015-6142",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-6140, CVE-2015-6143, CVE-2015-6153, CVE-2015-6158, CVE-2015-6159, and CVE-2015-6160.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12467,7 +12467,7 @@
     {
       "cve_id": "CVE-2015-6151",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 8 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-6083.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12488,7 +12488,7 @@
     {
       "cve_id": "CVE-2015-6153",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-6140, CVE-2015-6142, CVE-2015-6143, CVE-2015-6158, CVE-2015-6159, and CVE-2015-6160.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12509,7 +12509,7 @@
     {
       "cve_id": "CVE-2015-6154",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 7 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-6150.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12530,7 +12530,7 @@
     {
       "cve_id": "CVE-2015-6155",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 10 and 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12551,7 +12551,7 @@
     {
       "cve_id": "CVE-2015-6158",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-6140, CVE-2015-6142, CVE-2015-6143, CVE-2015-6153, CVE-2015-6159, and CVE-2015-6160.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12572,7 +12572,7 @@
     {
       "cve_id": "CVE-2015-6159",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-6140, CVE-2015-6142, CVE-2015-6143, CVE-2015-6153, CVE-2015-6158, and CVE-2015-6160.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12593,7 +12593,7 @@
     {
       "cve_id": "CVE-2015-6168",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Edge Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-6153.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12614,7 +12614,7 @@
     {
       "cve_id": "CVE-2015-6064",
       "published_date": "2015-11-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 10 and 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-6084 and CVE-2015-6085.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12635,7 +12635,7 @@
     {
       "cve_id": "CVE-2015-6073",
       "published_date": "2015-11-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-6068, CVE-2015-6072, CVE-2015-6075, CVE-2015-6077, CVE-2015-6079, CVE-2015-6080, and CVE-2015-6082.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12656,7 +12656,7 @@
     {
       "cve_id": "CVE-2015-6078",
       "published_date": "2015-11-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Microsoft Browser Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-6065.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12677,7 +12677,7 @@
     {
       "cve_id": "CVE-2015-2485",
       "published_date": "2015-09-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-2491 and CVE-2015-2541.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12698,7 +12698,7 @@
     {
       "cve_id": "CVE-2015-2486",
       "published_date": "2015-09-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 7 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-2487, CVE-2015-2490, CVE-2015-2492, CVE-2015-2494, CVE-2015-2498, and CVE-2015-2499.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12719,7 +12719,7 @@
     {
       "cve_id": "CVE-2015-2494",
       "published_date": "2015-09-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 7 through 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-2486, CVE-2015-2487, CVE-2015-2490, CVE-2015-2492, CVE-2015-2498, and CVE-2015-2499.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12740,7 +12740,7 @@
     {
       "cve_id": "CVE-2015-2542",
       "published_date": "2015-09-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 10 and 11 and Microsoft Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12761,7 +12761,7 @@
     {
       "cve_id": "CVE-2015-2441",
       "published_date": "2015-08-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 7 through 11 and Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-2452.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12782,7 +12782,7 @@
     {
       "cve_id": "CVE-2015-2442",
       "published_date": "2015-08-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 8 through 11 and Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-2444.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -12803,7 +12803,7 @@
     {
       "cve_id": "CVE-2015-2446",
       "published_date": "2015-08-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Edge allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted web site, aka \"Memory Corruption Vulnerability,\" a different vulnerability than CVE-2015-2447.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18872,7 +18872,7 @@
     {
       "cve_id": "CVE-2016-7206",
       "published_date": "2016-12-20",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Cross-site scripting (XSS) vulnerability in Microsoft Edge allows remote attackers to inject arbitrary web script or HTML via unspecified vectors, aka \"Microsoft Edge Information Disclosure Vulnerability,\" a different vulnerability than CVE-2016-7280.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -18893,7 +18893,7 @@
     {
       "cve_id": "CVE-2016-7280",
       "published_date": "2016-12-20",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Cross-site scripting (XSS) vulnerability in Microsoft Edge allows remote attackers to inject arbitrary web script or HTML via unspecified vectors, aka \"Microsoft Edge Information Disclosure Vulnerability,\" a different vulnerability than CVE-2016-7206.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -18914,7 +18914,7 @@
     {
       "cve_id": "CVE-2016-7281",
       "published_date": "2016-12-20",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Web Workers implementation in Microsoft Internet Explorer 10 and 11 and Microsoft Edge allows remote attackers to bypass the Same Origin Policy via unspecified vectors, aka \"Microsoft Browser Security Feature Bypass Vulnerability.\"",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -18935,7 +18935,7 @@
     {
       "cve_id": "CVE-2016-7282",
       "published_date": "2016-12-20",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Cross-site scripting (XSS) vulnerability in Microsoft Internet Explorer 9 through 11 and Microsoft Edge allows remote attackers to inject arbitrary web script or HTML via unspecified vectors, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -18956,7 +18956,7 @@
     {
       "cve_id": "CVE-2016-7209",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to spoof web content via a crafted web site, aka \"Microsoft Edge Spoofing Vulnerability.\"",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -18977,7 +18977,7 @@
     {
       "cve_id": "CVE-2016-3267",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to determine the existence of unspecified files via a crafted web site, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -18998,7 +18998,7 @@
     {
       "cve_id": "CVE-2016-3388",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 10 and 11 and Microsoft Edge do not properly restrict access to private namespaces, which allows remote attackers to gain privileges via unspecified vectors, aka \"Microsoft Browser Elevation of Privilege Vulnerability,\" a different vulnerability than CVE-2016-3387.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -19019,7 +19019,7 @@
     {
       "cve_id": "CVE-2016-3391",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 10 and 11 and Microsoft Edge allow context-dependent attackers to discover credentials by leveraging access to a memory dump, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -19040,7 +19040,7 @@
     {
       "cve_id": "CVE-2016-3392",
       "published_date": "2016-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Edge Content Security Policy feature in Microsoft Edge does not properly validate documents, which allows remote attackers to bypass intended access restrictions via a crafted web site, aka \"Microsoft Browser Security Feature Bypass Vulnerability.\"",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -19061,7 +19061,7 @@
     {
       "cve_id": "CVE-2016-3370",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The PDF library in Microsoft Edge, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, and Windows 10 Gold, 1511, and 1607 allows remote attackers to obtain sensitive information via a crafted web site, aka \"PDF Library Information Disclosure Vulnerability,\" a different vulnerability than CVE-2016-3374.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -19082,7 +19082,7 @@
     {
       "cve_id": "CVE-2016-3374",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The PDF library in Microsoft Edge, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, and Windows 10 Gold, 1511, and 1607 allows remote attackers to obtain sensitive information via a crafted web site, aka \"PDF Library Information Disclosure Vulnerability,\" a different vulnerability than CVE-2016-3370.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -19103,7 +19103,7 @@
     {
       "cve_id": "CVE-2016-7152",
       "published_date": "2016-09-06",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The HTTPS protocol does not consider the role of the TCP congestion window in providing information about content length, which makes it easier for remote attackers to obtain cleartext data by leveraging a web-browser configuration in which third-party cookies are sent, aka a \"HEIST\" attack.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -19124,7 +19124,7 @@
     {
       "cve_id": "CVE-2016-7153",
       "published_date": "2016-09-06",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The HTTP/2 protocol does not consider the role of the TCP congestion window in providing information about content length, which makes it easier for remote attackers to obtain cleartext data by leveraging a web-browser configuration in which third-party cookies are sent, aka a \"HEIST\" attack.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -19145,7 +19145,7 @@
     {
       "cve_id": "CVE-2016-3326",
       "published_date": "2016-08-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Edge allow remote attackers to obtain sensitive information via a crafted web page, aka \"Microsoft Browser Information Disclosure Vulnerability,\" a different vulnerability than CVE-2016-3327.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -19166,7 +19166,7 @@
     {
       "cve_id": "CVE-2016-3327",
       "published_date": "2016-08-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Edge allow remote attackers to obtain sensitive information via a crafted web page, aka \"Microsoft Browser Information Disclosure Vulnerability,\" a different vulnerability than CVE-2016-3326.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -19187,7 +19187,7 @@
     {
       "cve_id": "CVE-2016-3329",
       "published_date": "2016-08-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Edge allow remote attackers to determine the existence of files via a crafted webpage, aka \"Internet Explorer Information Disclosure Vulnerability.\"",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -19208,7 +19208,7 @@
     {
       "cve_id": "CVE-2016-3244",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to bypass the ASLR protection mechanism via a crafted web site, aka \"Microsoft Edge Security Feature Bypass.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -19229,7 +19229,7 @@
     {
       "cve_id": "CVE-2016-3271",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The VBScript engine in Microsoft Edge allows remote attackers to obtain sensitive information from process memory via a crafted web site, aka \"Scripting Engine Information Disclosure Vulnerability.\"",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -19250,7 +19250,7 @@
     {
       "cve_id": "CVE-2016-3273",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The XSS Filter in Microsoft Internet Explorer 9 through 11 and Microsoft Edge does not properly restrict JavaScript code, which allows remote attackers to obtain sensitive information via a crafted web site, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -19271,7 +19271,7 @@
     {
       "cve_id": "CVE-2016-3277",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 10 and 11 and Microsoft Edge allow remote attackers to obtain sensitive information via a crafted web site, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -19292,7 +19292,7 @@
     {
       "cve_id": "CVE-2016-3198",
       "published_date": "2016-06-16",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to bypass the Content Security Policy (CSP) protection mechanism via a crafted document, aka \"Microsoft Edge Security Feature Bypass.\"",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -19313,7 +19313,7 @@
     {
       "cve_id": "CVE-2016-3201",
       "published_date": "2016-06-16",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Windows 8.1, Windows Server 2012 Gold and R2, Windows 10 Gold and 1511, and Microsoft Edge allow remote attackers to obtain sensitive information from process memory via a crafted PDF document, aka \"Windows PDF Information Disclosure Vulnerability,\" a different vulnerability than CVE-2016-3215.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -19334,7 +19334,7 @@
     {
       "cve_id": "CVE-2016-3215",
       "published_date": "2016-06-16",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Windows 8.1, Windows Server 2012 Gold and R2, Windows 10 1511, and Microsoft Edge allow remote attackers to obtain sensitive information from process memory via a crafted PDF document, aka \"Windows PDF Information Disclosure Vulnerability,\" a different vulnerability than CVE-2016-3201.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -19355,7 +19355,7 @@
     {
       "cve_id": "CVE-2016-0158",
       "published_date": "2016-04-12",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to bypass the Same Origin Policy via unspecified vectors, aka \"Microsoft Edge Elevation of Privilege Vulnerability,\" a different vulnerability than CVE-2016-0161.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -19376,7 +19376,7 @@
     {
       "cve_id": "CVE-2016-0161",
       "published_date": "2016-04-12",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to bypass the Same Origin Policy via unspecified vectors, aka \"Microsoft Edge Elevation of Privilege Vulnerability,\" a different vulnerability than CVE-2016-0158.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -19397,7 +19397,7 @@
     {
       "cve_id": "CVE-2016-0077",
       "published_date": "2016-02-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge misparse HTTP responses, which allows remote attackers to spoof web sites via a crafted URL, aka \"Microsoft Browser Spoofing Vulnerability.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -19418,7 +19418,7 @@
     {
       "cve_id": "CVE-2016-0080",
       "published_date": "2016-02-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge mishandles exceptions during window-message dispatch operations, which allows remote attackers to bypass the ASLR protection mechanism via a crafted web site, aka \"Microsoft Edge ASLR Bypass.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -19439,7 +19439,7 @@
     {
       "cve_id": "CVE-2015-6169",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge misparses HTTP responses, which allows remote attackers to redirect users to arbitrary web sites via unspecified vectors, aka \"Microsoft Edge Spoofing Vulnerability.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -19460,7 +19460,7 @@
     {
       "cve_id": "CVE-2015-6170",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to gain privileges via a crafted web site, aka \"Microsoft Browser Elevation of Privilege Vulnerability.\"",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -19481,7 +19481,7 @@
     {
       "cve_id": "CVE-2015-6176",
       "published_date": "2015-12-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge mishandles HTML attributes in HTTP responses, which allows remote attackers to bypass a cross-site scripting (XSS) protection mechanism via unspecified vectors, aka \"Microsoft Edge XSS Filter Bypass Vulnerability.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -19502,7 +19502,7 @@
     {
       "cve_id": "CVE-2015-6088",
       "published_date": "2015-11-11",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to bypass the ASLR protection mechanism via a crafted web site, aka \"Microsoft Browser ASLR Bypass.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -19523,7 +19523,7 @@
     {
       "cve_id": "CVE-2015-6057",
       "published_date": "2015-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to obtain sensitive information from process memory via a crafted web site, aka \"Microsoft Edge Information Disclosure Vulnerability.\"",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -19544,7 +19544,7 @@
     {
       "cve_id": "CVE-2015-6058",
       "published_date": "2015-10-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge mishandles HTML attributes in HTTP responses, which allows remote attackers to bypass a cross-site scripting (XSS) protection mechanism via unspecified vectors, aka \"Microsoft Edge XSS Filter Bypass.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -19565,7 +19565,7 @@
     {
       "cve_id": "CVE-2015-2449",
       "published_date": "2015-08-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 7 through 11 and Edge allow remote attackers to bypass the ASLR protection mechanism via a crafted web site, aka \"ASLR Bypass.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -19922,7 +19922,7 @@
     {
       "cve_id": "CVE-2016-7199",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to bypass the Same Origin Policy and obtain sensitive window-state information via a crafted web site, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 3.1,
       "severity": "LOW",
@@ -19943,7 +19943,7 @@
     {
       "cve_id": "CVE-2016-7204",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge allows remote attackers to access arbitrary \"My Documents\" files via a crafted web site, aka \"Microsoft Edge Information Disclosure Vulnerability.\"",
       "base_score": 3.1,
       "severity": "LOW",
@@ -19964,7 +19964,7 @@
     {
       "cve_id": "CVE-2016-7227",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The scripting engines in Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to determine the existence of local files via unspecified vectors, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 3.1,
       "severity": "LOW",
@@ -19985,7 +19985,7 @@
     {
       "cve_id": "CVE-2016-7239",
       "published_date": "2016-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The RegEx class in the XSS filter in Microsoft Internet Explorer 9 through 11 and Microsoft Edge allows remote attackers to conduct cross-site scripting (XSS) attacks and obtain sensitive information via unspecified vectors, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 3.1,
       "severity": "LOW",
@@ -20006,7 +20006,7 @@
     {
       "cve_id": "CVE-2016-3291",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge mishandle cross-origin requests, which allows remote attackers to obtain sensitive information via a crafted web site, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 2.4,
       "severity": "LOW",
@@ -20027,7 +20027,7 @@
     {
       "cve_id": "CVE-2016-3325",
       "published_date": "2016-09-14",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to obtain sensitive information via a crafted web site, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 3.1,
       "severity": "LOW",
@@ -20048,7 +20048,7 @@
     {
       "cve_id": "CVE-2016-3274",
       "published_date": "2016-07-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to conduct content-spoofing attacks via a crafted URL, aka \"Microsoft Browser Spoofing Vulnerability.\"",
       "base_score": 3.1,
       "severity": "LOW",
@@ -20069,7 +20069,7 @@
     {
       "cve_id": "CVE-2016-0125",
       "published_date": "2016-03-09",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Microsoft Edge mishandles the Referer policy, which allows remote attackers to obtain sensitive browser-history and request information via a crafted HTTPS web site, aka \"Microsoft Edge Information Disclosure Vulnerability.\"",
       "base_score": 3.1,
       "severity": "LOW",

@@ -1,7 +1,7 @@
 {
   "app_name": "Libreoffice",
   "app_key": "libreoffice",
-  "last_updated": "2026-05-06",
+  "last_updated": "2026-05-07",
   "total_cves": 70,
   "summary": {
     "critical": 12,
@@ -749,7 +749,7 @@
     {
       "cve_id": "CVE-2016-4324",
       "published_date": "2016-07-08",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Use-after-free vulnerability in LibreOffice before 5.1.4 allows remote attackers to execute arbitrary code via a crafted RTF file, related to stylesheet and superscript tokens.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -770,7 +770,7 @@
     {
       "cve_id": "CVE-2016-0794",
       "published_date": "2016-02-18",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The lwp filter in LibreOffice before 5.0.4 allows remote attackers to cause a denial of service (memory corruption) or possibly have unspecified other impact via a crafted LotusWordPro (lwp) document.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -791,7 +791,7 @@
     {
       "cve_id": "CVE-2016-0795",
       "published_date": "2016-02-18",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "LibreOffice before 5.0.5 allows remote attackers to cause a denial of service (memory corruption) or possibly have unspecified other impact via a crafted LwpTocSuperLayout record in a LotusWordPro (lwp) document.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -812,7 +812,7 @@
     {
       "cve_id": "CVE-2014-9093",
       "published_date": "2014-11-26",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "LibreOffice before 4.3.5 allows remote attackers to cause a denial of service (invalid write operation and crash) and possibly execute arbitrary code via a crafted RTF file.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -833,7 +833,7 @@
     {
       "cve_id": "CVE-2014-3693",
       "published_date": "2014-11-07",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Use-after-free vulnerability in the socket manager of Impress Remote in LibreOffice 4.x before 4.2.7 and 4.3.x before 4.3.3 allows remote attackers to cause a denial of service (crash) or possibly execute arbitrary code via a crafted request to TCP port 1599.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -854,7 +854,7 @@
     {
       "cve_id": "CVE-2014-3524",
       "published_date": "2014-08-26",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Apache OpenOffice before 4.1.1 allows remote attackers to execute arbitrary commands and possibly have other unspecified impact via a crafted Calc spreadsheet.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -875,7 +875,7 @@
     {
       "cve_id": "CVE-2014-0247",
       "published_date": "2014-07-03",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "LibreOffice 4.2.4 executes unspecified VBA macros automatically, which has unspecified impact and attack vectors, possibly related to doc/docmacromode.cxx.",
       "base_score": 10.0,
       "severity": "HIGH",
@@ -1253,7 +1253,7 @@
     {
       "cve_id": "CVE-2015-4551",
       "published_date": "2015-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "LibreOffice before 4.4.5 and Apache OpenOffice before 4.1.2 uses the stored LinkUpdateMode configuration information in OpenDocument Format files and templates when handling links, which might allow remote attackers to obtain sensitive information via a crafted document, which embeds data from local files into (1) Calc or (2) Writer.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -1274,7 +1274,7 @@
     {
       "cve_id": "CVE-2015-5212",
       "published_date": "2015-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Integer underflow in LibreOffice before 4.4.5 and Apache OpenOffice before 4.1.2, when the configuration setting \"Load printer settings with the document\" is enabled, allows remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via crafted PrinterSetup data in an ODF document.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1295,7 +1295,7 @@
     {
       "cve_id": "CVE-2015-5213",
       "published_date": "2015-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Integer overflow in LibreOffice before 4.4.5 and Apache OpenOffice before 4.1.2 allows remote attackers to cause a denial of service (memory corruption and application crash) or possibly execute arbitrary code via a long DOC file, which triggers a buffer overflow.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1316,7 +1316,7 @@
     {
       "cve_id": "CVE-2015-5214",
       "published_date": "2015-11-10",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "LibreOffice before 4.4.6 and 5.x before 5.0.1 and Apache OpenOffice before 4.1.2 allows remote attackers to cause a denial of service (memory corruption and application crash) or execute arbitrary code via an index to a non-existent bookmark in a DOC file.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1337,7 +1337,7 @@
     {
       "cve_id": "CVE-2015-1774",
       "published_date": "2015-04-28",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The HWP filter in LibreOffice before 4.3.7 and 4.4.x before 4.4.2 and Apache OpenOffice before 4.1.2 allows remote attackers to cause a denial of service (crash) or possibly execute arbitrary code via a crafted HWP document, which triggers an out-of-bounds write.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1358,7 +1358,7 @@
     {
       "cve_id": "CVE-2014-3575",
       "published_date": "2014-08-27",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The OLE preview generation in Apache OpenOffice before 4.1.1 and OpenOffice.org (OOo) might allow remote attackers to embed arbitrary data into documents via crafted OLE objects.",
       "base_score": 4.3,
       "severity": "MEDIUM",
