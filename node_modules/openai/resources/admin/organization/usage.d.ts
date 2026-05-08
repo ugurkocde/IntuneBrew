@@ -424,6 +424,11 @@ export declare namespace UsageAudioSpeechesResponse {
              * costs result.
              */
             project_id?: string | null;
+            /**
+             * When `group_by=line_item`, this field provides the quantity of the grouped costs
+             * result.
+             */
+            quantity?: number | null;
         }
         namespace OrganizationCostsResult {
             /**
@@ -755,6 +760,11 @@ export declare namespace UsageAudioTranscriptionsResponse {
              * costs result.
              */
             project_id?: string | null;
+            /**
+             * When `group_by=line_item`, this field provides the quantity of the grouped costs
+             * result.
+             */
+            quantity?: number | null;
         }
         namespace OrganizationCostsResult {
             /**
@@ -1086,6 +1096,11 @@ export declare namespace UsageCodeInterpreterSessionsResponse {
              * costs result.
              */
             project_id?: string | null;
+            /**
+             * When `group_by=line_item`, this field provides the quantity of the grouped costs
+             * result.
+             */
+            quantity?: number | null;
         }
         namespace OrganizationCostsResult {
             /**
@@ -1417,6 +1432,11 @@ export declare namespace UsageCompletionsResponse {
              * costs result.
              */
             project_id?: string | null;
+            /**
+             * When `group_by=line_item`, this field provides the quantity of the grouped costs
+             * result.
+             */
+            quantity?: number | null;
         }
         namespace OrganizationCostsResult {
             /**
@@ -1748,6 +1768,11 @@ export declare namespace UsageCostsResponse {
              * costs result.
              */
             project_id?: string | null;
+            /**
+             * When `group_by=line_item`, this field provides the quantity of the grouped costs
+             * result.
+             */
+            quantity?: number | null;
         }
         namespace OrganizationCostsResult {
             /**
@@ -2079,6 +2104,11 @@ export declare namespace UsageEmbeddingsResponse {
              * costs result.
              */
             project_id?: string | null;
+            /**
+             * When `group_by=line_item`, this field provides the quantity of the grouped costs
+             * result.
+             */
+            quantity?: number | null;
         }
         namespace OrganizationCostsResult {
             /**
@@ -2410,6 +2440,11 @@ export declare namespace UsageImagesResponse {
              * costs result.
              */
             project_id?: string | null;
+            /**
+             * When `group_by=line_item`, this field provides the quantity of the grouped costs
+             * result.
+             */
+            quantity?: number | null;
         }
         namespace OrganizationCostsResult {
             /**
@@ -2741,6 +2776,11 @@ export declare namespace UsageModerationsResponse {
              * costs result.
              */
             project_id?: string | null;
+            /**
+             * When `group_by=line_item`, this field provides the quantity of the grouped costs
+             * result.
+             */
+            quantity?: number | null;
         }
         namespace OrganizationCostsResult {
             /**
@@ -3072,6 +3112,11 @@ export declare namespace UsageVectorStoresResponse {
              * costs result.
              */
             project_id?: string | null;
+            /**
+             * When `group_by=line_item`, this field provides the quantity of the grouped costs
+             * result.
+             */
+            quantity?: number | null;
         }
         namespace OrganizationCostsResult {
             /**
