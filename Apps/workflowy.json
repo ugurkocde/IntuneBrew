@@ -1,15 +1,15 @@
 {
   "name": "WorkFlowy",
   "description": "Notetaking tool",
-  "version": "4.3.2605051613",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/workflowy_4.3.2605051613.pkg",
+  "version": "4.3.2605071037",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/workflowy_4.3.2605071037.pkg",
   "vendor_url": "https://github.com/workflowy/desktop/releases/download/v4.3.2604141553/WorkFlowy.zip",
   "bundleId": "com.workflowy.desktop",
   "homepage": "https://workflowy.com/downloads/mac/",
-  "fileName": "workflowy_4.3.2605051613.pkg",
+  "fileName": "workflowy_4.3.2605071037.pkg",
   "type": "app",
-  "sha": "f7d20b1d65d3e0aa2892fa786478a93d7085f4fd4bbe04388e5b4775bae7bb0d",
+  "sha": "42a0622f08dbf3c0fc1ba83629fe531b9809761938d9c314f22873a03107411c",
   "category": "Productivity",
   "publisher": "WorkFlowy, Inc.",
-  "previous_version": "4.3.2605051613"
+  "previous_version": "4.3.2605071037"
 }
