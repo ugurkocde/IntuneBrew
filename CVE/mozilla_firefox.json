@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-05-07",
+  "last_updated": "2026-05-08",
   "total_cves": 3129,
   "summary": {
     "critical": 390,
@@ -8981,7 +8981,7 @@
     {
       "cve_id": "CVE-2026-6784",
       "published_date": "2026-04-21",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-05-07",
       "description": "Memory safety bugs present in Firefox 149 and Thunderbird 149. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 150 and Thunderbird 150.",
       "base_score": 7.5,
       "severity": "HIGH",
