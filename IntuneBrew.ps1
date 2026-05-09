@@ -308,6 +308,42 @@ function Connect-Interactive {
     }
 }
 
+# Function to authenticate using environment variables (TENANT_ID, CLIENT_ID, CLIENT_SECRET)
+function Connect-WithEnvironmentVariables {
+    Disconnect-MgGraph -ErrorAction SilentlyContinue
+
+    $tenantId     = $env:TENANT_ID
+    $clientId     = $env:CLIENT_ID
+    $clientSecret = $env:CLIENT_SECRET
+
+    $missing = @()
+    if ([string]::IsNullOrWhiteSpace($tenantId))     { $missing += 'TENANT_ID' }
+    if ([string]::IsNullOrWhiteSpace($clientId))     { $missing += 'CLIENT_ID' }
+    if ([string]::IsNullOrWhiteSpace($clientSecret)) { $missing += 'CLIENT_SECRET' }
+
+    if ($missing.Count -gt 0) {
+        Write-Host "Error: The following required environment variable(s) are not set or empty:" -ForegroundColor Red
+        foreach ($var in $missing) {
+            Write-Host "  - $var" -ForegroundColor Yellow
+        }
+        Write-Host "`nSet all three variables before running the script. See the README for details:" -ForegroundColor Yellow
+        Write-Host "https://github.com/ugurkocde/IntuneBrew#authentication" -ForegroundColor Cyan
+        return $false
+    }
+
+    try {
+        $SecureClientSecret = ConvertTo-SecureString -String $clientSecret -AsPlainText -Force
+        $ClientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $clientId, $SecureClientSecret
+        Connect-MgGraph -TenantId $tenantId -ClientSecretCredential $ClientSecretCredential -NoWelcome -ErrorAction Stop
+        Write-Host "Successfully connected to Microsoft Graph using environment variable authentication." -ForegroundColor Green
+        return $true
+    }
+    catch {
+        Write-Host "Failed to connect to Microsoft Graph using environment variables. Error: $_" -ForegroundColor Red
+        return $false
+    }
+}
+
 # Function to show file picker dialog
 function Show-FilePickerDialog {
     param (
@@ -347,12 +383,40 @@ function Show-FilePickerDialog {
     return $null
 }
 
+# Validate environment variables if any of the three are set
+$_envTenantId     = $env:TENANT_ID
+$_envClientId     = $env:CLIENT_ID
+$_envClientSecret = $env:CLIENT_SECRET
+
+if ((-not [string]::IsNullOrWhiteSpace($_envTenantId)) -or
+    (-not [string]::IsNullOrWhiteSpace($_envClientId)) -or
+    (-not [string]::IsNullOrWhiteSpace($_envClientSecret))) {
+
+    Write-Host "`nEnvironment variables detected (TENANT_ID / CLIENT_ID / CLIENT_SECRET)." -ForegroundColor Cyan
+
+    $missingEnvVars = @()
+    if ([string]::IsNullOrWhiteSpace($_envTenantId))     { $missingEnvVars += "TENANT_ID" }
+    if ([string]::IsNullOrWhiteSpace($_envClientId))     { $missingEnvVars += "CLIENT_ID" }
+    if ([string]::IsNullOrWhiteSpace($_envClientSecret)) { $missingEnvVars += "CLIENT_SECRET" }
+
+    if ($missingEnvVars.Count -gt 0) {
+        Write-Host "Error: The following required environment variable(s) are not set or empty:" -ForegroundColor Red
+        foreach ($var in $missingEnvVars) {
+            Write-Host "  - $var" -ForegroundColor Yellow
+        }
+        Write-Host "`nAll three variables must be present when using environment variable authentication." -ForegroundColor Yellow
+        Write-Host "See the README for setup instructions: https://github.com/ugurkocde/IntuneBrew#authentication" -ForegroundColor Cyan
+        exit 1
+    }
+}
+
 # Display authentication options
 Write-Host "`nChoose authentication method:" -ForegroundColor Cyan
 Write-Host "1. App Registration with Certificate"
 Write-Host "2. App Registration with Secret"
 Write-Host "3. Interactive Session with Admin Account"
-$authChoice = Read-Host "`nEnter your choice (1-3)"
+Write-Host "4. Environment Variables (TENANT_ID, CLIENT_ID, CLIENT_SECRET)"
+$authChoice = Read-Host "`nEnter your choice (1-4)"
 
 $authenticated = $false
 
@@ -383,8 +447,11 @@ switch ($authChoice) {
     "3" {
         $authenticated = Connect-Interactive
     }
+    "4" {
+        $authenticated = Connect-WithEnvironmentVariables
+    }
     default {
-        Write-Host "Invalid choice. Please select 1, 2, or 3." -ForegroundColor Red
+        Write-Host "Invalid choice. Please select 1, 2, 3, or 4." -ForegroundColor Red
         exit
     }
 }
