@@ -22,3 +22,5 @@ jobs:
         with:
           anthropic-api-key: ${{ secrets.ANTHROPIC_API_KEY }}
           github-token: ${{ secrets.GITHUB_TOKEN }}
+          supabase-url: ${{ secrets.SUPABASE_URL }}
+          supabase-secret-key: ${{ secrets.SUPABASE_SECRET_KEY }}
