@@ -1,13 +1,13 @@
 {
   "name": "Electron Cash",
   "description": "Thin client for Bitcoin Cash",
-  "version": "4.4.4",
-  "url": "https://electroncash.org/downloads/4.4.4/mac/Electron-Cash-4.4.4-macosx.dmg",
+  "version": "4.4.5",
+  "url": "https://electroncash.org/downloads/4.4.5/mac/Electron-Cash-4.4.5-macosx.dmg",
   "vendor_url": "https://electroncash.org/downloads/4.4.3/mac/Electron-Cash-4.4.3-macosx.dmg",
   "bundleId": "org.electroncash.ElectronCash",
   "homepage": "https://electroncash.org/",
-  "fileName": "Electron-Cash-4.4.4-macosx.dmg",
-  "sha": "7e500b832d4118f1efb8e1b83a77c8bb4b32e194cd3feba7f5b0a60dd241ba5f",
+  "fileName": "Electron-Cash-4.4.5-macosx.dmg",
+  "sha": "ea4e48d345b6466df90e4e007f7d564dd4df14857e020b401b8c8668e2a907e6",
   "category": "Utilities",
   "publisher": "Electron Cash",
   "previous_version": "4.4.4"

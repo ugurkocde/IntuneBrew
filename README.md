@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1252-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -454,43 +454,41 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-08 00:57 UTC*
+*Last checked: 2026-05-09 00:57 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox ESR | 140.10.1 | 140.10.2 |
-| Lunatask | 2.1.27 | 2.1.28 |
-| ProcessSpy | 1.12.0 | 1.13.0 |
-| Headlamp | 0.41.0 | 0.42.0 |
-| Mozilla Firefox | 150.0.1 | 150.0.2 |
-| Brave | 1.89.145.0 | 1.90.121.0 |
-| Keeper Password Manager | 17.6.0 | 17.6.1 |
-| Eclipse Temurin Java Development Kit | 26 | 26.0.1 |
-| Microsoft Edge | 147.0.3912.98 | 148.0.3967.54 |
-| Keka | 1.6.3 | 1.6.4 |
-| BoltAI 2 | 2.12.0 | 2.12.1 |
-| Milanote | 3.18.96 | 3.18.97 |
-| Mullvad Browser | 15.0.11 | 15.0.12 |
-| Path Finder | 11.2 | 26.0 |
-| Tor Browser | 15.0.11 | 15.0.13 |
-| Deezer | 7.1.180 | 7.1.190 |
-| Ditto | 1.11.9 | 1.11.10 |
-| Opera GX | 130.0.5847.108 | 131.0.5877.36 |
+| Mozilla Firefox Developer Edition | 151.0b7 | 151.0b8 |
+| Reqable | 3.0.40 | 3.1.0 |
+| Rive | 0.8.4742 | 0.8.4804 |
+| AirBuddy | 2.8 | 2.8.1 |
+| Mozilla Thunderbird | 150.0.1 | 150.0.2 |
+| LibreWolf | 150.0.1 | 150.0.2 |
+| Google Drive | 124.0.3 | 125.0.0 |
+| Raycast | 1.104.15 | 1.104.16 |
+| Zed | 1.1.6 | 1.1.7 |
+| Joplin | 3.5.13 | 3.6.11 |
+| Warp | 0.2026.04.29.08.57.stable | 0.2026.05.06.15.42.stable |
+| Floorp browser | 12.13.0 | 12.14.0 |
+| Zettlr | 4.4.0 | 4.5.0 |
+| ClickUp | 3.5.185 | 3.5.208 |
+| REAPER | 7.71 | 7.72 |
+| Actual | 26.5.0 | 26.5.2 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| AirServer | 7.2.7 | 7.3 |
-| Akiflow | 2.72.6 | 2.73.11 |
-| GDevelop | 5.6.268 | 5.6.269 |
+| Dust3D | 1.0.0 | 1.0.1 |
+| Electron Cash | 4.4.4 | 4.4.5 |
+| ClipBook | 1.34.0 | 1.35.0 |
+| Granola | 7.162.5 | 7.162.6 |
+| Kdenlive | 25.12.2 | 26.04.0 |
+| KiCad | 10.0.1 | 10.0.2 |
+| Lunar | 6.10.1 | 6.10.2 |
 | Multi | 0.538.2 | 3.0.2 |
-| TickTick | 8.0.50 | 8.0.60 |
-| Tuta Mail | 348.260505.1 | 348.260506.0 |
-| WebCatalog | 74.7.1 | 74.8.0 |
-| Zappy | 4.9.7 | 4.9.8 |
-| Okta Advanced Server Access | 1.104.0 | 1.105.0 |
-| NoMachine | 9.4.14 | 9.5.7 |
+| Claude Code | 2.1.119 | 2.1.126 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

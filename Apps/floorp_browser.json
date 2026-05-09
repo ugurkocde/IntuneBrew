@@ -1,13 +1,13 @@
 {
   "name": "Floorp browser",
   "description": "Privacy-focused Firefox-based browser",
-  "version": "12.13.0",
-  "url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.13.0/floorp-macOS-universal.dmg",
+  "version": "12.14.0",
+  "url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.14.0/floorp-macOS-universal.dmg",
   "vendor_url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.12.1/floorp-macOS-universal.dmg",
   "bundleId": "org.nicola.floorp",
   "homepage": "https://floorp.app/",
   "fileName": "floorp-macOS-universal.dmg",
-  "sha": "0c848d1a65fbabf94e226cdfd9fae4915aa6357e9262608b30140ff221d43ad1",
+  "sha": "494d1a9dcbedd3430290ccb672a174acdafeb056860071fb26ecc9bf45137e3a",
   "category": "Browsers",
   "publisher": "Floorp Team",
   "previous_version": "12.13.0"
