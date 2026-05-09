@@ -1,0 +1,23 @@
+# Maintainer config for IntuneBrew
+# https://github.com/ugurkocde/Maintainer
+
+triage:
+  enabled: true
+  auto_label: true
+  auto_dedupe: true
+
+fix:
+  enabled: true
+  # Conservative default for the first repo: only attempt fixes
+  # when explicitly invoked via `/maintainer fix` or `@maintainer fix this`.
+  auto_attempt: false
+
+commands:
+  enabled: true
+  require_write_permission: true
+
+stale:
+  enabled: true
+  days_until_stale: 90
+  days_until_close: 14
+  exempt_labels: [pinned, security, enhancement]
