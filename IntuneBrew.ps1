@@ -1667,6 +1667,11 @@ function Get-IntuneApp {
             continue
         }
 
+        if ([string]::IsNullOrEmpty($appInfo.version)) {
+            Write-Host "[$currentApp/$totalApps] Warning: '$($appInfo.name)' is missing the Version field. Skipping." -ForegroundColor Yellow
+            continue
+        }
+
         $originalAppName = $appInfo.name
         $formattedAppName = Get-FormattedAppName -BaseName $originalAppName -Prefix $AppNamePrefix -Suffix $AppNameSuffix
         # We'll modify the output format but keep the check logic the same
@@ -2099,6 +2104,11 @@ foreach ($app in $appsToUpload) {
     $appInfo = Get-GitHubAppInfo -jsonUrl $jsonUrl
     if ($null -eq $appInfo) {
         Write-Host "`n❌ Failed to fetch app info for $jsonUrl. Skipping." -ForegroundColor Red
+        continue
+    }
+
+    if ([string]::IsNullOrEmpty($appInfo.version)) {
+        Write-Host "`n⚠️ Warning: '$($appInfo.name)' is missing the Version field. Skipping." -ForegroundColor Yellow
         continue
     }
 
