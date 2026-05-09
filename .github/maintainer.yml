@@ -8,9 +8,9 @@ triage:
 
 fix:
   enabled: true
-  # Conservative default for the first repo: only attempt fixes
-  # when explicitly invoked via `/maintainer fix` or `@maintainer fix this`.
-  auto_attempt: false
+  # When triage classifies an issue as fixable (scoped + bug + reproducible),
+  # attempt a fix automatically and open a draft pull request.
+  auto_attempt: true
 
 commands:
   enabled: true
