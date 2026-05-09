@@ -11,6 +11,9 @@ fix:
   # When triage classifies an issue as fixable (scoped + bug + reproducible),
   # attempt a fix automatically and open a draft pull request.
   auto_attempt: true
+  # Sonnet is roughly one-fifth the cost of Opus and good enough for
+  # scoped bugs. Switch to claude-opus-4-7 if fix quality drops.
+  model: claude-sonnet-4-6
 
 commands:
   enabled: true
