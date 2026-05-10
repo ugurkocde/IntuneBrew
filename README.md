@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1252-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -455,40 +455,27 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-09 00:57 UTC*
+*Last checked: 2026-05-10 01:01 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 151.0b7 | 151.0b8 |
-| Reqable | 3.0.40 | 3.1.0 |
-| Rive | 0.8.4742 | 0.8.4804 |
-| AirBuddy | 2.8 | 2.8.1 |
-| Mozilla Thunderbird | 150.0.1 | 150.0.2 |
-| LibreWolf | 150.0.1 | 150.0.2 |
-| Google Drive | 124.0.3 | 125.0.0 |
-| Raycast | 1.104.15 | 1.104.16 |
-| Zed | 1.1.6 | 1.1.7 |
-| Joplin | 3.5.13 | 3.6.11 |
-| Warp | 0.2026.04.29.08.57.stable | 0.2026.05.06.15.42.stable |
-| Floorp browser | 12.13.0 | 12.14.0 |
-| Zettlr | 4.4.0 | 4.5.0 |
-| ClickUp | 3.5.185 | 3.5.208 |
-| REAPER | 7.71 | 7.72 |
-| Actual | 26.5.0 | 26.5.2 |
+| Dockside | 2.7.2 | 2.8.0 |
+| Pika | 1.6.0 | 1.7.0 |
+| draw.io Desktop | 29.7.9 | 30.0.0 |
+| OneDrive | 26.062.0402.0002 | 26.063.0405.0002 |
+| Dataflare | 3.0.0 | 3.0.1 |
+| Lark | 7.66.6 | 7.67.10 |
+| Path Finder | 26.0 | 26.0.1 |
+| LinearMouse | 0.11.1 | 0.11.2 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Dust3D | 1.0.0 | 1.0.1 |
-| Electron Cash | 4.4.4 | 4.4.5 |
-| ClipBook | 1.34.0 | 1.35.0 |
-| Granola | 7.162.5 | 7.162.6 |
-| Kdenlive | 25.12.2 | 26.04.0 |
-| KiCad | 10.0.1 | 10.0.2 |
-| Lunar | 6.10.1 | 6.10.2 |
+| Douyin | 7.7.0 | 7.8.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Claude Code | 2.1.119 | 2.1.126 |
+| Riverside Studio | 1.23.0 | 1.24.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
