@@ -17,7 +17,8 @@ fix:
 
 commands:
   enabled: true
-  require_write_permission: true
+  # Strict allowlist: only ugurkocde can trigger /maintainer or @maintainer.
+  allowed_users: [ugurkocde]
 
 stale:
   enabled: true
