@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-05-10",
+  "last_updated": "2026-05-11",
   "total_cves": 4151,
   "summary": {
     "critical": 161,
@@ -4760,7 +4760,7 @@
     {
       "cve_id": "CVE-2026-7902",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-05-06",
+      "last_modified_date": "2026-05-10",
       "description": "Out of bounds memory access in V8 in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -7091,7 +7091,7 @@
     {
       "cve_id": "CVE-2026-5863",
       "published_date": "2026-04-08",
-      "last_modified_date": "2026-04-13",
+      "last_modified_date": "2026-05-10",
       "description": "Inappropriate implementation in V8 in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -51065,7 +51065,7 @@
     {
       "cve_id": "CVE-2026-7915",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-05-06",
+      "last_modified_date": "2026-05-10",
       "description": "Insufficient data validation in DevTools in Google Chrome on Android prior to 148.0.7778.96 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -52829,7 +52829,7 @@
     {
       "cve_id": "CVE-2026-5911",
       "published_date": "2026-04-08",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-05-10",
       "description": "Policy bypass in ServiceWorkers in Google Chrome prior to 147.0.7727.55 allowed a remote attacker to bypass content security policy via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -86765,7 +86765,7 @@
     {
       "cve_id": "CVE-2026-6312",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-10",
       "description": "Insufficient policy enforcement in Passwords in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 3.1,
       "severity": "LOW",

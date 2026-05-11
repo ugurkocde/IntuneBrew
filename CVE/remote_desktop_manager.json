@@ -1,7 +1,7 @@
 {
   "app_name": "Remote Desktop Manager",
   "app_key": "remote_desktop_manager",
-  "last_updated": "2026-05-10",
+  "last_updated": "2026-05-11",
   "total_cves": 50,
   "summary": {
     "critical": 6,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2026-2590",
       "published_date": "2026-03-03",
-      "last_modified_date": "2026-03-05",
+      "last_modified_date": "2026-05-10",
       "description": "Improper\n enforcement of the Disable password saving in vaults setting in the \nconnection entry component in Devolutions Remote Desktop Manager 2025.3.30 and earlier allows an authenticated user to persist credentials in vault entries, \npotentially exposing sensitive information to other users, by creating \nor editing certain connection types while password saving is disabled.",
       "base_score": 9.8,
       "severity": "CRITICAL",
