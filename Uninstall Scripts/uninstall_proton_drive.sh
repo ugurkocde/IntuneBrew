@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Scripts/ch.protonmail.drive*" ]; then
     rm -f "$HOME/Library/Application Scripts/ch.protonmail.drive*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/FileProvider/ch.protonmail.drive.fileprovider
+echo "Removing $HOME/Library/Application Support/FileProvider/ch.protonmail.drive.fileprovider..."
+if [ -d "$HOME/Library/Application Support/FileProvider/ch.protonmail.drive.fileprovider" ]; then
+    rm -rf "$HOME/Library/Application Support/FileProvider/ch.protonmail.drive.fileprovider" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/FileProvider/ch.protonmail.drive.fileprovider" ]; then
+    rm -f "$HOME/Library/Application Support/FileProvider/ch.protonmail.drive.fileprovider" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/ch.protonmail.drive*
 echo "Removing $HOME/Library/Containers/ch.protonmail.drive*..."
 if [ -d "$HOME/Library/Containers/ch.protonmail.drive*" ]; then
@@ -41,12 +49,20 @@ elif [ -f "$HOME/Library/Containers/ch.protonmail.drive*" ]; then
     rm -f "$HOME/Library/Containers/ch.protonmail.drive*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Group Containers/group.ch.protonmail.protondrive
-echo "Removing $HOME/Library/Group Containers/group.ch.protonmail.protondrive..."
-if [ -d "$HOME/Library/Group Containers/group.ch.protonmail.protondrive" ]; then
-    rm -rf "$HOME/Library/Group Containers/group.ch.protonmail.protondrive" 2>/dev/null || true
-elif [ -f "$HOME/Library/Group Containers/group.ch.protonmail.protondrive" ]; then
-    rm -f "$HOME/Library/Group Containers/group.ch.protonmail.protondrive" 2>/dev/null || true
+# Remove $HOME/Library/Group Containers/*ch.protonmail.protondrive
+echo "Removing $HOME/Library/Group Containers/*ch.protonmail.protondrive..."
+if [ -d "$HOME/Library/Group Containers/*ch.protonmail.protondrive" ]; then
+    rm -rf "$HOME/Library/Group Containers/*ch.protonmail.protondrive" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/*ch.protonmail.protondrive" ]; then
+    rm -f "$HOME/Library/Group Containers/*ch.protonmail.protondrive" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/ch.protonmail.drive*
+echo "Removing $HOME/Library/Preferences/ch.protonmail.drive*..."
+if [ -d "$HOME/Library/Preferences/ch.protonmail.drive*" ]; then
+    rm -rf "$HOME/Library/Preferences/ch.protonmail.drive*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/ch.protonmail.drive*" ]; then
+    rm -f "$HOME/Library/Preferences/ch.protonmail.drive*" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
