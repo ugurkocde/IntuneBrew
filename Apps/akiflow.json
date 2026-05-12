@@ -1,13 +1,13 @@
 {
   "name": "Akiflow",
   "description": "Time blocking and productivity platform",
-  "version": "2.73.11",
-  "url": "https://download.akiflow.com/builds/Akiflow-2.73.11-f256bb71-universal.dmg",
+  "version": "2.73.12",
+  "url": "https://download.akiflow.com/builds/Akiflow-2.73.12-2b609582-universal.dmg",
   "vendor_url": "https://download.akiflow.com/builds/Akiflow-2.71.7-851fb05d-universal.dmg",
   "bundleId": "com.akiflow.akiflow",
   "homepage": "https://akiflow.com/",
-  "fileName": "Akiflow-2.73.11-f256bb71-universal.dmg",
-  "sha": "6312c7f9d392b1b4a34ec56a53e5b2860f9e30848e0276b83a98451ac044b1ee",
+  "fileName": "Akiflow-2.73.12-2b609582-universal.dmg",
+  "sha": "b0f9c7e2dcda4e9e7b6dd986bcca854984d297b7030aea6b4b4687fe556deead",
   "category": "Productivity",
   "publisher": "Akiflow",
   "previous_version": "2.73.11"

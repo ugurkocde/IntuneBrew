@@ -1,13 +1,13 @@
 {
   "name": "DeskTime",
   "description": "Time tracker with additional workforce management features",
-  "version": "6.1.4",
-  "url": "https://desktime.com/storage/updates/electro-builder-auto-updater/stable/DeskTime-6.1.4-arm64.dmg",
+  "version": "6.2.1",
+  "url": "https://desktime.com/storage/updates/electro-builder-auto-updater/stable/DeskTime-6.2.1-arm64.dmg",
   "vendor_url": "https://desktime.com/storage/updates/electro-builder-auto-updater/stable/DeskTime-6.1.4-arm64.dmg",
   "bundleId": "com.desktime.DeskTime",
   "homepage": "https://desktime.com/",
-  "fileName": "DeskTime-6.1.4-arm64.dmg",
-  "sha": "e6f2ebde4b09c3513b89130561726fe88a7f10c9580d603cb0edfb32f4c9510c",
+  "fileName": "DeskTime-6.2.1-arm64.dmg",
+  "sha": "2ae730a79aa604272875bbf2476c05b6157a1e1803223263d15a58550456dc42",
   "category": "Productivity",
   "publisher": "DeskTime",
   "previous_version": "6.1.4"
