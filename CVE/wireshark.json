@@ -1,7 +1,7 @@
 {
   "app_name": "Wireshark",
   "app_key": "wireshark",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 735,
   "summary": {
     "critical": 1,
@@ -2996,7 +2996,7 @@
     {
       "cve_id": "CVE-2017-17997",
       "published_date": "2017-12-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark before 2.2.12, the MRDISC dissector misuses a NULL pointer and crashes. This was addressed in epan/dissectors/packet-mrdisc.c by validating an IPv4 address. This vulnerability is similar to CVE-2017-9343.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3017,7 +3017,7 @@
     {
       "cve_id": "CVE-2017-17935",
       "published_date": "2017-12-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The File_read_line function in epan/wslua/wslua_file.c in Wireshark through 2.2.11 does not properly strip '\\n' characters, which allows remote attackers to cause a denial of service (buffer underflow and application crash) via a crafted packet that triggers the attempted processing of an empty line.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3038,7 +3038,7 @@
     {
       "cve_id": "CVE-2017-17083",
       "published_date": "2017-12-01",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0 to 2.4.2 and 2.2.0 to 2.2.10, the NetBIOS dissector could crash. This was addressed in epan/dissectors/packet-netbios.c by ensuring that write operations are bounded by the beginning of a buffer.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3059,7 +3059,7 @@
     {
       "cve_id": "CVE-2017-17084",
       "published_date": "2017-12-01",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0 to 2.4.2 and 2.2.0 to 2.2.10, the IWARP_MPA dissector could crash. This was addressed in epan/dissectors/packet-iwarp-mpa.c by validating a ULPDU length.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3080,7 +3080,7 @@
     {
       "cve_id": "CVE-2017-17085",
       "published_date": "2017-12-01",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0 to 2.4.2 and 2.2.0 to 2.2.10, the CIP Safety dissector could crash. This was addressed in epan/dissectors/packet-cipsafety.c by validating the packet length.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3101,7 +3101,7 @@
     {
       "cve_id": "CVE-2017-15189",
       "published_date": "2017-10-10",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0 to 2.4.1, the DOCSIS dissector could go into an infinite loop. This was addressed in plugins/docsis/packet-docsis.c by adding decrements.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3122,7 +3122,7 @@
     {
       "cve_id": "CVE-2017-15190",
       "published_date": "2017-10-10",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0 to 2.4.1, the RTSP dissector could crash. This was addressed in epan/dissectors/packet-rtsp.c by correcting the scope of a variable.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3143,7 +3143,7 @@
     {
       "cve_id": "CVE-2017-15191",
       "published_date": "2017-10-10",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0 to 2.4.1, 2.2.0 to 2.2.9, and 2.0.0 to 2.0.15, the DMP dissector could crash. This was addressed in epan/dissectors/packet-dmp.c by validating a string length.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3164,7 +3164,7 @@
     {
       "cve_id": "CVE-2017-15192",
       "published_date": "2017-10-10",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0 to 2.4.1 and 2.2.0 to 2.2.9, the BT ATT dissector could crash. This was addressed in epan/dissectors/packet-btatt.c by considering a case where not all of the BTATT packets have the same encapsulation level.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3185,7 +3185,7 @@
     {
       "cve_id": "CVE-2017-15193",
       "published_date": "2017-10-10",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0 to 2.4.1 and 2.2.0 to 2.2.9, the MBIM dissector could crash or exhaust system memory. This was addressed in epan/dissectors/packet-mbim.c by changing the memory-allocation approach.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3206,7 +3206,7 @@
     {
       "cve_id": "CVE-2017-13764",
       "published_date": "2017-08-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0, the Modbus dissector could crash with a NULL pointer dereference. This was addressed in epan/dissectors/packet-mbtcp.c by adding length validation.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3227,7 +3227,7 @@
     {
       "cve_id": "CVE-2017-13765",
       "published_date": "2017-08-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0, 2.2.0 to 2.2.8, and 2.0.0 to 2.0.14, the IrCOMM dissector has a buffer over-read and application crash. This was addressed in plugins/irda/packet-ircomm.c by adding length validation.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3248,7 +3248,7 @@
     {
       "cve_id": "CVE-2017-13766",
       "published_date": "2017-08-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0 and 2.2.0 to 2.2.8, the Profinet I/O dissector could crash with an out-of-bounds write. This was addressed in plugins/profinet/packet-dcerpc-pn-io.c by adding string validation.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3269,7 +3269,7 @@
     {
       "cve_id": "CVE-2017-13767",
       "published_date": "2017-08-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.4.0, 2.2.0 to 2.2.8, and 2.0.0 to 2.0.14, the MSDP dissector could go into an infinite loop. This was addressed in epan/dissectors/packet-msdp.c by adding length validation.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3290,7 +3290,7 @@
     {
       "cve_id": "CVE-2017-11406",
       "published_date": "2017-07-18",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.7 and 2.0.0 to 2.0.13, the DOCSIS dissector could go into an infinite loop. This was addressed in plugins/docsis/packet-docsis.c by rejecting invalid Frame Control parameter values.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3311,7 +3311,7 @@
     {
       "cve_id": "CVE-2017-11407",
       "published_date": "2017-07-18",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.7 and 2.0.0 to 2.0.13, the MQ dissector could crash. This was addressed in epan/dissectors/packet-mq.c by validating the fragment length before a reassembly attempt.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3332,7 +3332,7 @@
     {
       "cve_id": "CVE-2017-11408",
       "published_date": "2017-07-18",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.7 and 2.0.0 to 2.0.13, the AMQP dissector could crash. This was addressed in epan/dissectors/packet-amqp.c by checking for successful list dissection.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3353,7 +3353,7 @@
     {
       "cve_id": "CVE-2017-11409",
       "published_date": "2017-07-18",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.0.0 to 2.0.13, the GPRS LLC dissector could go into a large loop. This was addressed in epan/dissectors/packet-gprs-llc.c by using a different integer data type.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3374,7 +3374,7 @@
     {
       "cve_id": "CVE-2017-11410",
       "published_date": "2017-07-18",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark through 2.0.13 and 2.2.x through 2.2.7, the WBXML dissector could go into an infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-wbxml.c by adding validation of the relationships between indexes and lengths. NOTE: this vulnerability exists because of an incomplete fix for CVE-2017-7702.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3395,7 +3395,7 @@
     {
       "cve_id": "CVE-2017-11411",
       "published_date": "2017-07-18",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark through 2.0.13 and 2.2.x through 2.2.7, the openSAFETY dissector could crash or exhaust system memory. This was addressed in epan/dissectors/packet-opensafety.c by adding length validation. NOTE: this vulnerability exists because of an incomplete fix for CVE-2017-9350.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3416,7 +3416,7 @@
     {
       "cve_id": "CVE-2017-9766",
       "published_date": "2017-06-21",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.7, PROFINET IO data with a high recursion depth allows remote attackers to cause a denial of service (stack exhaustion) in the dissect_IODWriteReq function in plugins/profinet/packet-dcerpc-pn-io.c.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3437,7 +3437,7 @@
     {
       "cve_id": "CVE-2017-9343",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6 and 2.0.0 to 2.0.12, the MSNIP dissector misuses a NULL pointer. This was addressed in epan/dissectors/packet-msnip.c by validating an IPv4 address.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3458,7 +3458,7 @@
     {
       "cve_id": "CVE-2017-9344",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6 and 2.0.0 to 2.0.12, the Bluetooth L2CAP dissector could divide by zero. This was addressed in epan/dissectors/packet-btl2cap.c by validating an interval value.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3479,7 +3479,7 @@
     {
       "cve_id": "CVE-2017-9345",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6 and 2.0.0 to 2.0.12, the DNS dissector could go into an infinite loop. This was addressed in epan/dissectors/packet-dns.c by trying to detect self-referencing pointers.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3500,7 +3500,7 @@
     {
       "cve_id": "CVE-2017-9346",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6 and 2.0.0 to 2.0.12, the SoulSeek dissector could go into an infinite loop. This was addressed in epan/dissectors/packet-slsk.c by making loop bounds more explicit.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3521,7 +3521,7 @@
     {
       "cve_id": "CVE-2017-9347",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6, the ROS dissector could crash with a NULL pointer dereference. This was addressed in epan/dissectors/asn1/ros/packet-ros-template.c by validating an OID.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3542,7 +3542,7 @@
     {
       "cve_id": "CVE-2017-9348",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6, the DOF dissector could read past the end of a buffer. This was addressed in epan/dissectors/packet-dof.c by validating a size value.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3563,7 +3563,7 @@
     {
       "cve_id": "CVE-2017-9349",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6 and 2.0.0 to 2.0.12, the DICOM dissector has an infinite loop. This was addressed in epan/dissectors/packet-dcm.c by validating a length value.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3584,7 +3584,7 @@
     {
       "cve_id": "CVE-2017-9350",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6 and 2.0.0 to 2.0.12, the openSAFETY dissector could crash or exhaust system memory. This was addressed in epan/dissectors/packet-opensafety.c by checking for a negative length.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3605,7 +3605,7 @@
     {
       "cve_id": "CVE-2017-9351",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6 and 2.0.0 to 2.0.12, the DHCP dissector could read past the end of a buffer. This was addressed in epan/dissectors/packet-bootp.c by extracting the Vendor Class Identifier more carefully.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3626,7 +3626,7 @@
     {
       "cve_id": "CVE-2017-9352",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6 and 2.0.0 to 2.0.12, the Bazaar dissector could go into an infinite loop. This was addressed in epan/dissectors/packet-bzr.c by ensuring that backwards parsing cannot occur.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3647,7 +3647,7 @@
     {
       "cve_id": "CVE-2017-9353",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6, the IPv6 dissector could crash. This was addressed in epan/dissectors/packet-ipv6.c by validating an IPv6 address.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3668,7 +3668,7 @@
     {
       "cve_id": "CVE-2017-9354",
       "published_date": "2017-06-02",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.6 and 2.0.0 to 2.0.12, the RGMP dissector could crash. This was addressed in epan/dissectors/packet-rgmp.c by validating an IPv4 address.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3689,7 +3689,7 @@
     {
       "cve_id": "CVE-2016-7957",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0, the Bluetooth L2CAP dissector could crash, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-btl2cap.c by avoiding use of a seven-byte memcmp for potentially shorter strings.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3710,7 +3710,7 @@
     {
       "cve_id": "CVE-2016-7958",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0, the NCP dissector could crash, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/CMakeLists.txt by registering this dissector.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3731,7 +3731,7 @@
     {
       "cve_id": "CVE-2017-7701",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.5 and 2.0.0 to 2.0.11, the BGP dissector could go into an infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-bgp.c by using a different integer data type.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3752,7 +3752,7 @@
     {
       "cve_id": "CVE-2017-7702",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.5 and 2.0.0 to 2.0.11, the WBXML dissector could go into an infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-wbxml.c by adding length validation.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3773,7 +3773,7 @@
     {
       "cve_id": "CVE-2017-7703",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.5 and 2.0.0 to 2.0.11, the IMAP dissector could crash, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-imap.c by calculating a line's end correctly.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3794,7 +3794,7 @@
     {
       "cve_id": "CVE-2017-7704",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.5, the DOF dissector could go into an infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-dof.c by using a different integer data type and adjusting a return value.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3815,7 +3815,7 @@
     {
       "cve_id": "CVE-2017-7705",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.5 and 2.0.0 to 2.0.11, the RPC over RDMA dissector could go into an infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-rpcrdma.c by correctly checking for going beyond the maximum offset.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3836,7 +3836,7 @@
     {
       "cve_id": "CVE-2017-7745",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.5 and 2.0.0 to 2.0.11, the SIGCOMP dissector could go into an infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-sigcomp.c by correcting a memory-size check.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3857,7 +3857,7 @@
     {
       "cve_id": "CVE-2017-7746",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.5 and 2.0.0 to 2.0.11, the SLSK dissector could go into an infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-slsk.c by adding checks for the remaining length.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3878,7 +3878,7 @@
     {
       "cve_id": "CVE-2017-7747",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.5 and 2.0.0 to 2.0.11, the PacketBB dissector could crash, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-packetbb.c by restricting additions to the protocol tree.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3899,7 +3899,7 @@
     {
       "cve_id": "CVE-2017-7748",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.5 and 2.0.0 to 2.0.11, the WSP dissector could go into an infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-wsp.c by adding a length check.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3920,7 +3920,7 @@
     {
       "cve_id": "CVE-2017-6467",
       "published_date": "2017-03-04",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.4 and 2.0.0 to 2.0.10, there is a Netscaler file parser infinite loop, triggered by a malformed capture file. This was addressed in wiretap/netscaler.c by changing the restrictions on file size.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3941,7 +3941,7 @@
     {
       "cve_id": "CVE-2017-6468",
       "published_date": "2017-03-04",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.4 and 2.0.0 to 2.0.10, there is a NetScaler file parser crash, triggered by a malformed capture file. This was addressed in wiretap/netscaler.c by validating the relationship between pages and records.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3962,7 +3962,7 @@
     {
       "cve_id": "CVE-2017-6469",
       "published_date": "2017-03-04",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.4 and 2.0.0 to 2.0.10, there is an LDSS dissector crash, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-ldss.c by ensuring that memory is allocated for a certain data structure.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -3983,7 +3983,7 @@
     {
       "cve_id": "CVE-2017-6470",
       "published_date": "2017-03-04",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.4 and 2.0.0 to 2.0.10, there is an IAX2 infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-iax2.c by constraining packet lateness.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -4004,7 +4004,7 @@
     {
       "cve_id": "CVE-2017-6471",
       "published_date": "2017-03-04",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.4 and 2.0.0 to 2.0.10, there is a WSP infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-wsp.c by validating the capability length.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -4025,7 +4025,7 @@
     {
       "cve_id": "CVE-2017-6472",
       "published_date": "2017-03-04",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.4 and 2.0.0 to 2.0.10, there is an RTMPT dissector infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-rtmpt.c by properly incrementing a certain sequence value.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -4046,7 +4046,7 @@
     {
       "cve_id": "CVE-2017-6473",
       "published_date": "2017-03-04",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.4 and 2.0.0 to 2.0.10, there is a K12 file parser crash, triggered by a malformed capture file. This was addressed in wiretap/k12.c by validating the relationships between lengths and offsets.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -4067,7 +4067,7 @@
     {
       "cve_id": "CVE-2017-6474",
       "published_date": "2017-03-04",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.4 and 2.0.0 to 2.0.10, there is a NetScaler file parser infinite loop, triggered by a malformed capture file. This was addressed in wiretap/netscaler.c by validating record sizes.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -4088,7 +4088,7 @@
     {
       "cve_id": "CVE-2017-6014",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.4 and earlier, a crafted or malformed STANAG 4607 capture file will cause an infinite loop and memory exhaustion. If the packet size field in a packet header is null, the offset to read from will not advance, causing continuous attempts to read the same zero length packet. This will quickly exhaust all system memory.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -4109,7 +4109,7 @@
     {
       "cve_id": "CVE-2017-5596",
       "published_date": "2017-01-25",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.3 and 2.0.0 to 2.0.9, the ASTERIX dissector could go into an infinite loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-asterix.c by changing a data type to avoid an integer overflow.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -4130,7 +4130,7 @@
     {
       "cve_id": "CVE-2017-5597",
       "published_date": "2017-01-25",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.3 and 2.0.0 to 2.0.9, the DHCPv6 dissector could go into a large loop, triggered by packet injection or a malformed capture file. This was addressed in epan/dissectors/packet-dhcpv6.c by changing a data type to avoid an integer overflow.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7364,7 +7364,7 @@
     {
       "cve_id": "CVE-2017-9616",
       "published_date": "2017-06-14",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.7, overly deep mp4 chunks may cause stack exhaustion (uncontrolled recursion) in the dissect_mp4_box function in epan/dissectors/file-mp4.c.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -7385,7 +7385,7 @@
     {
       "cve_id": "CVE-2017-9617",
       "published_date": "2017-06-14",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.7, deeply nested DAAP data may cause stack exhaustion (uncontrolled recursion) in the dissect_daap_one_tag function in epan/dissectors/packet-daap.c in the DAAP dissector.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -7406,7 +7406,7 @@
     {
       "cve_id": "CVE-2017-7700",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Wireshark 2.2.0 to 2.2.5 and 2.0.0 to 2.0.11, the NetScaler file parser could go into an infinite loop, triggered by a malformed capture file. This was addressed in wiretap/netscaler.c by ensuring a nonzero record size.",
       "base_score": 6.5,
       "severity": "MEDIUM",

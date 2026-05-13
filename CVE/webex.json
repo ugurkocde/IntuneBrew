@@ -1,7 +1,7 @@
 {
   "app_name": "Webex",
   "app_key": "webex",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 78,
   "summary": {
     "critical": 8,
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2017-12368",
       "published_date": "2017-11-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A \"Cisco WebEx Network Recording Player Remote Code Execution Vulnerability\" exists in Cisco WebEx Network Recording Player for Advanced Recording Format (ARF) and WebEx Recording Format (WRF) files. A remote attacker could exploit this by providing a user with a malicious ARF or WRF file via email or URL and convincing the user to launch the file. Exploitation of this could cause an affected player to crash and, in some cases, could allow arbitrary code execution on the system of a targeted user. Cisco Bug IDs: CSCve10584, CSCve10591, CSCve11503, CSCve10658, CSCve11507, CSCve10749, CSCve10744, CSCve11532, CSCve10762, CSCve10764, CSCve11538.",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2017-12369",
       "published_date": "2017-11-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A \"Cisco WebEx Network Recording Player Out-of-Bounds Vulnerability\" exists in Cisco WebEx Network Recording Player for Advanced Recording Format (ARF) and WebEx Recording Format (WRF) files. A remote attacker could exploit this by providing a user with a malicious ARF or WRF file via email or URL and convincing the user to launch the file. Exploitation of this could cause an affected player to crash and, in some cases, could allow arbitrary code execution on the system of a targeted user. Cisco Bug IDs: CSCve30208, CSCve30214, CSCve30268.",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2017-12370",
       "published_date": "2017-11-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A \"Cisco WebEx Network Recording Player Remote Code Execution Vulnerability\" exists in Cisco WebEx Network Recording Player for Advanced Recording Format (ARF) and WebEx Recording Format (WRF) files. A remote attacker could exploit this by providing a user with a malicious ARF or WRF file via email or URL and convincing the user to launch the file. Exploitation of this could cause an affected player to crash and, in some cases, could allow arbitrary code execution on the system of a targeted user. Cisco Bug IDs: CSCvf38060, CSCvg54836, CSCvf38077, CSCvg54843, CSCvf38084, CSCvg54850.",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2017-12371",
       "published_date": "2017-11-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A \"Cisco WebEx Network Recording Player Remote Code Execution Vulnerability\" exists in Cisco WebEx Network Recording Player for Advanced Recording Format (ARF) and WebEx Recording Format (WRF) files. A remote attacker could exploit this by providing a user with a malicious ARF or WRF file via email or URL and convincing the user to launch the file. Exploitation of this could cause an affected player to crash and, in some cases, could allow arbitrary code execution on the system of a targeted user. Cisco Bug IDs: CSCvf49650, CSCvg54853, CSCvg54856, CSCvf49697, CSCvg54861, CSCvf49707, CSCvg54867.",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2017-12372",
       "published_date": "2017-11-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A \"Cisco WebEx Network Recording Player Remote Code Execution Vulnerability\" exists in Cisco WebEx Network Recording Player for Advanced Recording Format (ARF) and WebEx Recording Format (WRF) files. A remote attacker could exploit this by providing a user with a malicious ARF or WRF file via email or URL and convincing the user to launch the file. Exploitation of this could cause an affected player to crash and, in some cases, could allow arbitrary code execution on the system of a targeted user. Cisco Bug IDs: CSCvf57234, CSCvg54868, CSCvg54870.",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -518,7 +518,7 @@
     {
       "cve_id": "CVE-2017-6753",
       "published_date": "2017-07-25",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A vulnerability in Cisco WebEx browser extensions for Google Chrome and Mozilla Firefox could allow an unauthenticated, remote attacker to execute arbitrary code with the privileges of the affected browser on an affected system. This vulnerability affects the browser extensions for Cisco WebEx Meetings Server, Cisco WebEx Centers (Meeting Center, Event Center, Training Center, and Support Center), and Cisco WebEx Meetings when they are running on Microsoft Windows. The vulnerability is due to a design defect in the extension. An attacker who can convince an affected user to visit an attacker-controlled web page or follow an attacker-supplied link with an affected browser could exploit the vulnerability. If successful, the attacker could execute arbitrary code with the privileges of the affected browser. The following versions of the Cisco WebEx browser extensions are affected: Versions prior to 1.0.12 of the Cisco WebEx extension on Google Chrome, Versions prior to 1.0.12 of the Cisco WebEx extension on Mozilla Firefox. Cisco Bug IDs: CSCvf15012 CSCvf15020 CSCvf15030 CSCvf15033 CSCvf15036 CSCvf15037.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -539,7 +539,7 @@
     {
       "cve_id": "CVE-2017-3823",
       "published_date": "2017-02-01",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in the Cisco WebEx Extension before 1.0.7 on Google Chrome, the ActiveTouch General Plugin Container before 106 on Mozilla Firefox, the GpcContainer Class ActiveX control plugin before 10031.6.2017.0126 on Internet Explorer, and the Download Manager ActiveX control plugin before 2.1.0.10 on Internet Explorer. A vulnerability in these Cisco WebEx browser extensions could allow an unauthenticated, remote attacker to execute arbitrary code with the privileges of the affected browser on an affected system. This vulnerability affects the browser extensions for Cisco WebEx Meetings Server and Cisco WebEx Centers (Meeting Center, Event Center, Training Center, and Support Center) when they are running on Microsoft Windows. The vulnerability is a design defect in an application programing interface (API) response parser within the extension. An attacker that can convince an affected user to visit an attacker-controlled web page or follow an attacker-supplied link with an affected browser could exploit the vulnerability. If successful, the attacker could execute arbitrary code with the privileges of the affected browser.",
       "base_score": 8.8,
       "severity": "HIGH",

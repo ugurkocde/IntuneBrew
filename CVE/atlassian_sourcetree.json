@@ -1,7 +1,7 @@
 {
   "app_name": "Atlassian Sourcetree",
   "app_key": "atlassian_sourcetree",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 15,
   "summary": {
     "critical": 2,
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2017-8768",
       "published_date": "2017-05-04",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Atlassian SourceTree v2.5c and prior are affected by a command injection in the handling of the sourcetree:// scheme. It will lead to arbitrary OS command execution with a URL substring of sourcetree://cloneRepo/ext:: or sourcetree://checkoutRef/ext:: followed by the command. The Atlassian ID number is SRCTREE-4632.",
       "base_score": 9.8,
       "severity": "CRITICAL",

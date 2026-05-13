@@ -1,7 +1,7 @@
 {
   "app_name": "Whatsapp",
   "app_key": "whatsapp",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 44,
   "summary": {
     "critical": 15,
@@ -896,7 +896,7 @@
     {
       "cve_id": "CVE-2017-8769",
       "published_date": "2017-05-18",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Facebook WhatsApp Messenger before 2.16.323 for Android uses the SD card for cleartext storage of files (Audio, Documents, Images, Video, and Voice Notes) associated with a chat, even after that chat is deleted. There may be users who expect file deletion to occur upon chat deletion, or who expect encryption (consistent with the application's use of an encrypted database to store chat text). NOTE: the vendor reportedly indicates that they do not \"consider these to be security issues\" because a user may legitimately want to preserve any file for use \"in other apps like the Google Photos gallery\" regardless of whether its associated chat is deleted",
       "base_score": 4.6,
       "severity": "MEDIUM",

@@ -1,7 +1,7 @@
 {
   "app_name": "Opera",
   "app_key": "opera",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 304,
   "summary": {
     "critical": 0,
@@ -1715,7 +1715,7 @@
     {
       "cve_id": "CVE-2016-4075",
       "published_date": "2017-04-21",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Opera Mini 13 and Opera Stable 36 allow remote attackers to spoof the displayed URL via a crafted HTML document, related to the about:blank URL.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1736,7 +1736,7 @@
     {
       "cve_id": "CVE-2016-6908",
       "published_date": "2017-01-26",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Characters from languages are such as Arabic, Hebrew are displayed from RTL (Right To Left) order in Opera 37.0.2192.105088 for Android, due to mishandling of several unicode characters such as U+FE70, U+0622, U+0623 etc and how they are rendered combined with (first strong character) such as an IP address or alphabet could lead to a spoofed URL. It was noticed that by placing neutral characters such as \"/\", \"?\" in filepath causes the URL to be flipped and displayed from Right To Left. However, in order for the URL to be spoofed the URL must begin with an IP address followed by neutral characters as omnibox considers IP address to be combination of punctuation and numbers and since LTR (Left To Right) direction is not properly enforced, this causes the entire URL to be treated and rendered from RTL (Right To Left). However, it doesn't have be an IP address, what matters is that first strong character (generally, alphabetic character) in the URL must be an RTL character.",
       "base_score": 6.1,
       "severity": "MEDIUM",

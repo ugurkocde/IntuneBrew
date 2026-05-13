@@ -1,7 +1,7 @@
 {
   "app_name": "Nomachine",
   "app_key": "nomachine",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 14,
   "summary": {
     "critical": 2,
@@ -245,7 +245,7 @@
     {
       "cve_id": "CVE-2017-12763",
       "published_date": "2017-08-29",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An unspecified server utility in NoMachine before 5.3.10 on Mac OS X and Linux allows authenticated users to gain privileges by gaining access to local files.",
       "base_score": 8.8,
       "severity": "HIGH",

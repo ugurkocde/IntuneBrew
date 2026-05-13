@@ -1,7 +1,7 @@
 {
   "app_name": "Adobe Acrobat Reader",
   "app_key": "adobe_acrobat_reader",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 2208,
   "summary": {
     "critical": 423,
@@ -4991,7 +4991,7 @@
     {
       "cve_id": "CVE-2017-11293",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. An exploitable memory corruption vulnerability exists. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -5012,7 +5012,7 @@
     {
       "cve_id": "CVE-2017-16398",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a use after free vulnerability in the JavaScript engine. The mismatch between an old and a new object can provide an attacker with unintended memory access -- potentially leading to code corruption, control-flow hijack, or an information leak attack. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -5033,7 +5033,7 @@
     {
       "cve_id": "CVE-2017-3124",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the picture exchange (PCX) file format parsing module. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -5054,7 +5054,7 @@
     {
       "cve_id": "CVE-2017-3037",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the JavaScript engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -5075,7 +5075,7 @@
     {
       "cve_id": "CVE-2017-3010",
       "published_date": "2017-03-31",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 15.020.20042 and earlier, 15.006.30244 and earlier, 11.0.18 and earlier have an exploitable memory corruption vulnerability in the rendering engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -22967,7 +22967,7 @@
     {
       "cve_id": "CVE-2017-16360",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a use after free vulnerability in the MakeAccessible plugin, when creating an internal data structure. The mismatch between an old and a new object can provide an attacker with unintended memory access -- potentially leading to code corruption, control-flow hijack, or an information leak attack. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -22988,7 +22988,7 @@
     {
       "cve_id": "CVE-2017-16362",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of an out of bounds read vulnerability in the MakeAccesible plugin, when handling font data. It causes an out of bounds memory access, which sometimes triggers an access violation exception. Attackers can exploit the vulnerability by using the out of bounds access for unintended reads, writes, or frees, potentially leading to code corruption, control-flow hijack, or an information leak attack.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23009,7 +23009,7 @@
     {
       "cve_id": "CVE-2017-16363",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a buffer over-read in the module that handles character codes for certain textual representations. Invalid input leads to a computation where the pointer arithmetic results in a location outside valid memory locations belonging to the buffer. An attack can be used to obtain sensitive information, such as object heap addresses, etc.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23030,7 +23030,7 @@
     {
       "cve_id": "CVE-2017-16364",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This issue is due to an untrusted pointer dereference when handling number format dictionary entries. In this scenario, the input is crafted in way that the computation results in pointers to memory locations that do not belong to the relevant process address space. The dereferencing operation is a read operation, and an attack can result in sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23051,7 +23051,7 @@
     {
       "cve_id": "CVE-2017-16365",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a buffer over-read in the True Type2 Font parsing module. A corrupted cmap table input leads to a computation where the pointer arithmetic results in a location outside valid memory locations belonging to the buffer. An attack can be used to obtain sensitive information, such as object heap addresses, etc.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23072,7 +23072,7 @@
     {
       "cve_id": "CVE-2017-16366",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a security bypass vulnerability in the AcroPDF plugin.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -23093,7 +23093,7 @@
     {
       "cve_id": "CVE-2017-16367",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a type confusion overflow vulnerability. The vulnerability leads to an out of bounds memory access. Attackers can exploit the vulnerability by using the out of bounds access for unintended reads or writes -- potentially leading to code corruption, control-flow hijack, or an information leak attack.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23114,7 +23114,7 @@
     {
       "cve_id": "CVE-2017-16368",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-05-06",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability leads to a stack-based buffer overflow condition in the internal Unicode string manipulation module. It is triggered by an invalid PDF file, where a crafted Unicode string causes an out of bounds memory access of a stack allocated buffer, due to improper checks when manipulating an offset of a pointer to the buffer. Attackers can exploit the vulnerability and achieve arbitrary code execution if they can effectively control the accessible memory.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23135,7 +23135,7 @@
     {
       "cve_id": "CVE-2017-16370",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs because of a computation that reads data that is past the end of the target buffer; the computation is a part of the JavaScript engine. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23156,7 +23156,7 @@
     {
       "cve_id": "CVE-2017-16371",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This issue is due to an untrusted pointer dereference in the JavaScript engine. In this scenario, the input is crafted in a way that the computation results in pointers to memory locations that do not belong to the relevant process address space. The dereferencing operation is a read operation, and an attack can result in sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23177,7 +23177,7 @@
     {
       "cve_id": "CVE-2017-16372",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This issue is due to untrusted pointer dereference in the JavaScript API engine. In this scenario, the JavaScript input is crafted in way that the computation results with pointer to memory locations that do not belong to the relevant process address space. The dereferencing operation is a read operation, and an attack can result with sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23198,7 +23198,7 @@
     {
       "cve_id": "CVE-2017-16373",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This issue is due to an untrusted pointer dereference. In this scenario, the input is crafted in way that the computation results in pointers to memory locations that do not belong to the relevant process address space. The dereferencing operation is a read operation, and an attack can result in sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23219,7 +23219,7 @@
     {
       "cve_id": "CVE-2017-16374",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a buffer over-read in the JPEG 2000 module. An invalid JPEG 2000 input code stream leads to a computation where the pointer arithmetic results in a location outside valid memory locations belonging to the buffer. An attack can be used to obtain sensitive information, such as object heap addresses, etc.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23240,7 +23240,7 @@
     {
       "cve_id": "CVE-2017-16375",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This issue is due to an untrusted pointer dereference in the JavaSscript API engine. In this scenario, the JavaScript input is crafted in way that the computation results in pointers to memory locations that do not belong to the relevant process address space. The dereferencing operation is a read operation, and an attack can result in sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23261,7 +23261,7 @@
     {
       "cve_id": "CVE-2017-16376",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is a part of the MakeAccessible plugin. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23282,7 +23282,7 @@
     {
       "cve_id": "CVE-2017-16377",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is due to a computation that accesses a pointer that has not been initialized in the main DLL. In this case, a computation defines a read from an unexpected memory location. Therefore, an attacker might be able to read sensitive portions of memory.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23303,7 +23303,7 @@
     {
       "cve_id": "CVE-2017-16378",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is due to a computation that accesses a pointer that has not been initialized; the computation occurs during internal AST thread manipulation. In this case, a computation defines a read from an unexpected memory location. Therefore, an attacker might be able to read sensitive portions of memory.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23324,7 +23324,7 @@
     {
       "cve_id": "CVE-2017-16379",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a type confusion overflow vulnerability in the graphics rendering engine.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23345,7 +23345,7 @@
     {
       "cve_id": "CVE-2017-16380",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a security bypass vulnerability for a certain file-type extension. Acrobat maintains both a blacklist and whitelist (the user can specify an allowed attachment). However, any file extensions that are neither on the blacklist nor the whitelist can still be opened after displaying a warning prompt.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23366,7 +23366,7 @@
     {
       "cve_id": "CVE-2017-16381",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a buffer access with an incorrect length value when processing TIFF files embedded within an XPS document. Crafted TIFF image input causes a mismatch between allocated buffer size and the access allowed by the computation. If an attacker can adequately control the accessible memory then this vulnerability can be leveraged to achieve arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23387,7 +23387,7 @@
     {
       "cve_id": "CVE-2017-16382",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is part of the image conversion module. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23408,7 +23408,7 @@
     {
       "cve_id": "CVE-2017-16383",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a heap overflow vulnerability when processing a JPEG file embedded within an XPS document.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23429,7 +23429,7 @@
     {
       "cve_id": "CVE-2017-16384",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a buffer over-read in the exif processing module for a PNG file (during XPS conversion). Invalid input leads to a computation where pointer arithmetic results in a location outside valid memory locations belonging to the buffer. An attack can be used to obtain sensitive information, such as object heap addresses, etc.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23450,7 +23450,7 @@
     {
       "cve_id": "CVE-2017-16385",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a buffer access with an incorrect length value in TIFF parsing during XPS conversion. Crafted TIFF image input causes a mismatch between allocated buffer size and the access allowed by the computation. If an attacker can adequately control the accessible memory then this vulnerability can be leveraged to achieve arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23471,7 +23471,7 @@
     {
       "cve_id": "CVE-2017-16386",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is part of the XPS2PDF conversion engine. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23492,7 +23492,7 @@
     {
       "cve_id": "CVE-2017-16387",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is part of the JPEG2000 codec. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23513,7 +23513,7 @@
     {
       "cve_id": "CVE-2017-16388",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a use after free vulnerability in the JavaScript API engine. The mismatch between an old and a new object can provide an attacker with unintended memory access -- potentially leading to code corruption, control-flow hijack, or an information leak attack. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23534,7 +23534,7 @@
     {
       "cve_id": "CVE-2017-16389",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a use after free vulnerability in the JavaScript engine. The mismatch between an old and a new object can provide an attacker with unintended memory access. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23555,7 +23555,7 @@
     {
       "cve_id": "CVE-2017-16390",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a use after free vulnerability in the JavaScript engine API. The mismatch between an old and a new object can provide an attacker with unintended memory access -- potentially leading to code corruption, control-flow hijack, or an information leak attack. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23576,7 +23576,7 @@
     {
       "cve_id": "CVE-2017-16391",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is a result of untrusted input that is used to calculate an array index; the calculation occurs in the printing functionality. The vulnerability leads to an operation that can write to a memory location that is outside of the memory addresses allocated for the data structure. The specific scenario leads to a write access to a memory location that does not belong to the relevant process address space.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23597,7 +23597,7 @@
     {
       "cve_id": "CVE-2017-16392",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a buffer access with an incorrect length value in the JPEG processing module. Crafted input with an unexpected JPEG file segment size causes a mismatch between allocated buffer size and the access allowed by the computation. If an attacker can adequately control the accessible memory then this vulnerability can be leveraged to achieve arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23618,7 +23618,7 @@
     {
       "cve_id": "CVE-2017-16393",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a use after free vulnerability in the JavaScript engine. The mismatch between an old and a new object can provide an attacker with unintended memory access -- potentially leading to code corruption, control-flow hijack, or an information leak attack. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23639,7 +23639,7 @@
     {
       "cve_id": "CVE-2017-16394",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is a part of the WebCapture module. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23660,7 +23660,7 @@
     {
       "cve_id": "CVE-2017-16395",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a buffer access with an incorrect length value in the image conversion module when processing Enhanced Metafile Format (EMF). Crafted EMF input (EMR_STRETCHDIBITS) causes a mismatch between allocated buffer size and the access allowed by the computation. If an attacker can adequately control the accessible memory then this vulnerability can be leveraged to achieve arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23681,7 +23681,7 @@
     {
       "cve_id": "CVE-2017-16396",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a buffer access with an incorrect length value in the TIFF processing module. Crafted input causes a mismatch between allocated buffer size and the access allowed by the computation. If an attacker can adequately control the accessible memory then this vulnerability can be leveraged to achieve arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23702,7 +23702,7 @@
     {
       "cve_id": "CVE-2017-16397",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is a part of Enhanced Metafile Format (EMF) processing within the image conversion module. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23723,7 +23723,7 @@
     {
       "cve_id": "CVE-2017-16399",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This issue is due to an untrusted pointer dereference in the XPS parsing module. In this scenario, the input is crafted in a way that the computation results in pointers to memory locations that do not belong to the relevant process address space. The dereferencing operation is a read operation, and an attack can result in sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23744,7 +23744,7 @@
     {
       "cve_id": "CVE-2017-16400",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is part of the JPEG 2000 parser. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23765,7 +23765,7 @@
     {
       "cve_id": "CVE-2017-16401",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is part of an image conversion, specifically in Enhanced Metafile Format Plus (EMF +) processing modules. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23786,7 +23786,7 @@
     {
       "cve_id": "CVE-2017-16402",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is a part of the JPEG 2000 module. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23807,7 +23807,7 @@
     {
       "cve_id": "CVE-2017-16403",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is part of the image conversion module that processes Enhanced Metafile Format Plus (EMF+) data. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23828,7 +23828,7 @@
     {
       "cve_id": "CVE-2017-16404",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a computation that writes data past the end of the intended buffer; the computation is part of processing Enhanced Metafile Format Plus (EMF+). The vulnerability is a result of an out of range pointer offset that is used to access sub-elements of an internal data structure. An attacker can potentially leverage the vulnerability to corrupt sensitive data or execute arbitrary code.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23849,7 +23849,7 @@
     {
       "cve_id": "CVE-2017-16405",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is part of Acrobat's page display functionality. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23870,7 +23870,7 @@
     {
       "cve_id": "CVE-2017-16406",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a type confusion vulnerability in the EMF processing module. The issue causes the program to access an object using an incompatible type, leading to an out of bounds memory access. Attackers can exploit the vulnerability by using the out of bounds access for unintended reads, writes, or frees -- potentially leading to code corruption, control-flow hijack, or information leak attack.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23891,7 +23891,7 @@
     {
       "cve_id": "CVE-2017-16407",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a computation that writes data past the end of the intended buffer; the computation is part of handling an EMF EMR_BITBLT record. The vulnerability is a result of an out of range pointer offset that is used to access sub-elements of an internal data structure. An attacker can potentially leverage the vulnerability to corrupt sensitive data or execute arbitrary code.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23912,7 +23912,7 @@
     {
       "cve_id": "CVE-2017-16408",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is a part of the WebCapture module. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23933,7 +23933,7 @@
     {
       "cve_id": "CVE-2017-16409",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is part of the Adobe graphics module responsible for displaying textual data. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23954,7 +23954,7 @@
     {
       "cve_id": "CVE-2017-16410",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is a result of untrusted input that is used to calculate an array index; the calculation occurs in the image conversion module, when processing GIF files. The vulnerability leads to an operation that can write to a memory location that is outside of the memory addresses allocated for the data structure. The specific scenario leads to a write access to a memory location that does not belong to the relevant process address space.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23975,7 +23975,7 @@
     {
       "cve_id": "CVE-2017-16411",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is part of the WebCapture module, related to an internal hash table implementation. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -23996,7 +23996,7 @@
     {
       "cve_id": "CVE-2017-16412",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs because of a computation that reads data that is past the end of the target buffer; the computation is part of the XPS conversion module, when handling a JPEG resource. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24017,7 +24017,7 @@
     {
       "cve_id": "CVE-2017-16413",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a computation that writes data past the end of the intended buffer; the computation is part of the XPS to PDF conversion module, when processing TIFF files. The vulnerability is a result of an out of range pointer offset that is used to access sub-elements of an internal data structure. An attacker can potentially leverage the vulnerability to corrupt sensitive data or execute arbitrary code.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24038,7 +24038,7 @@
     {
       "cve_id": "CVE-2017-16414",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is a part of the JavaScript API module responsible for form field computation. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24059,7 +24059,7 @@
     {
       "cve_id": "CVE-2017-16415",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a computation that writes data past the end of the intended buffer; the computation is a part of the functionality that handles font encodings. The vulnerability is a result of out of range pointer offset that is used to access sub-elements of an internal data structure. An attacker can potentially leverage the vulnerability to corrupt sensitive data or execute arbitrary code.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24080,7 +24080,7 @@
     {
       "cve_id": "CVE-2017-16416",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The vulnerability is caused by a computation that writes data past the end of the intended buffer; the computation is part of the image conversion module that handles Enhanced Metafile Format Plus (EMF+) data. The vulnerability is a result of an out of range pointer offset that is used to access sub-elements of an internal data structure. An attacker can potentially leverage the vulnerability to corrupt sensitive data or execute arbitrary code.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24101,7 +24101,7 @@
     {
       "cve_id": "CVE-2017-16417",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is a part of the font parsing module. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24122,7 +24122,7 @@
     {
       "cve_id": "CVE-2017-16418",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is a part of the image conversion module that handles XPS files. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24143,7 +24143,7 @@
     {
       "cve_id": "CVE-2017-16420",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability occurs as a result of a computation that reads data that is past the end of the target buffer; the computation is in the part of the JavaScript engine that handles annotation abstraction. The use of an invalid (out-of-range) pointer offset during access of internal data structure fields causes the vulnerability. A successful attack can lead to sensitive data exposure.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24164,7 +24164,7 @@
     {
       "cve_id": "CVE-2017-11211",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable heap overflow vulnerability in the JPEG parser. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24185,7 +24185,7 @@
     {
       "cve_id": "CVE-2017-11212",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to text output. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24206,7 +24206,7 @@
     {
       "cve_id": "CVE-2017-11214",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to rendering a path. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24227,7 +24227,7 @@
     {
       "cve_id": "CVE-2017-11216",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to bitmap transformations. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24248,7 +24248,7 @@
     {
       "cve_id": "CVE-2017-11218",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable use after free vulnerability in XFA event management. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24269,7 +24269,7 @@
     {
       "cve_id": "CVE-2017-11219",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable use after free vulnerability in the XFA rendering engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24290,7 +24290,7 @@
     {
       "cve_id": "CVE-2017-11220",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable heap overflow vulnerability in an internal data structure. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24311,7 +24311,7 @@
     {
       "cve_id": "CVE-2017-11221",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable type confusion vulnerability in the annotation functionality. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24332,7 +24332,7 @@
     {
       "cve_id": "CVE-2017-11222",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the Product Representation Compact (PRC) engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24353,7 +24353,7 @@
     {
       "cve_id": "CVE-2017-11223",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable use after free vulnerability in the core of the XFA engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24374,7 +24374,7 @@
     {
       "cve_id": "CVE-2017-11224",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable use after free vulnerability in the XFA layout engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24395,7 +24395,7 @@
     {
       "cve_id": "CVE-2017-11226",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image processing engine when processing JPEG 2000 (JP2) code stream data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24416,7 +24416,7 @@
     {
       "cve_id": "CVE-2017-11227",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) private data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24437,7 +24437,7 @@
     {
       "cve_id": "CVE-2017-11228",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing JPEG 2000 (JP2) code stream data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24458,7 +24458,7 @@
     {
       "cve_id": "CVE-2017-11229",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has a security bypass vulnerability when manipulating Forms Data Format (FDF).",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24479,7 +24479,7 @@
     {
       "cve_id": "CVE-2017-11231",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable use after free vulnerability in Acrobat/Reader rendering engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24500,7 +24500,7 @@
     {
       "cve_id": "CVE-2017-11234",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing TIFF data related to the way how the components of each pixel are stored. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24521,7 +24521,7 @@
     {
       "cve_id": "CVE-2017-11235",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable use after free vulnerability in the image conversion engine when decompressing JPEG data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24542,7 +24542,7 @@
     {
       "cve_id": "CVE-2017-11237",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the font parsing module. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24563,7 +24563,7 @@
     {
       "cve_id": "CVE-2017-11241",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable heap overflow vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to polygons. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24584,7 +24584,7 @@
     {
       "cve_id": "CVE-2017-11251",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the JPEG 2000 parsing module. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24605,7 +24605,7 @@
     {
       "cve_id": "CVE-2017-11254",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable use after free vulnerability in the Acrobat/Reader's JavaScript engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24626,7 +24626,7 @@
     {
       "cve_id": "CVE-2017-11256",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable use after free vulnerability when generating content using XFA layout engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24647,7 +24647,7 @@
     {
       "cve_id": "CVE-2017-11257",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable type confusion vulnerability in the XFA layout engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24668,7 +24668,7 @@
     {
       "cve_id": "CVE-2017-11259",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) private data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24689,7 +24689,7 @@
     {
       "cve_id": "CVE-2017-11260",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) private data interpreted as a GIF image. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24710,7 +24710,7 @@
     {
       "cve_id": "CVE-2017-11261",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) private data and the embedded TIF image. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24731,7 +24731,7 @@
     {
       "cve_id": "CVE-2017-11262",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to drawing ASCII text string. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24752,7 +24752,7 @@
     {
       "cve_id": "CVE-2017-11263",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the internal data structure manipulation related to document encoding. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24773,7 +24773,7 @@
     {
       "cve_id": "CVE-2017-11267",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) private data interpreted as JPEG data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24794,7 +24794,7 @@
     {
       "cve_id": "CVE-2017-11268",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) private JPEG data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24815,7 +24815,7 @@
     {
       "cve_id": "CVE-2017-11269",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) image stream data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24836,7 +24836,7 @@
     {
       "cve_id": "CVE-2017-11270",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) private data representing icons. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24857,7 +24857,7 @@
     {
       "cve_id": "CVE-2017-11271",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to transfer of pixel blocks. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24878,7 +24878,7 @@
     {
       "cve_id": "CVE-2017-3016",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24899,7 +24899,7 @@
     {
       "cve_id": "CVE-2017-3113",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable use after free vulnerability in JavaScript engine when creating large strings. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24920,7 +24920,7 @@
     {
       "cve_id": "CVE-2017-3116",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the MakeAccessible plugin when parsing TrueType font data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24941,7 +24941,7 @@
     {
       "cve_id": "CVE-2017-3117",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable heap overflow vulnerability in the plugin that handles links within the PDF. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24962,7 +24962,7 @@
     {
       "cve_id": "CVE-2017-3119",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in Acrobat/Reader 11.0.19 engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -24983,7 +24983,7 @@
     {
       "cve_id": "CVE-2017-3120",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable use after free vulnerability in the XFA parsing engine when handling certain types of internal instructions. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -25004,7 +25004,7 @@
     {
       "cve_id": "CVE-2017-3121",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the Enhanced Metafile Format (EMF) parser. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -25025,7 +25025,7 @@
     {
       "cve_id": "CVE-2017-3123",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data drawing position definition. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -25046,7 +25046,7 @@
     {
       "cve_id": "CVE-2017-3011",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable integer overflow vulnerability in the CCITT fax PDF filter. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25067,7 +25067,7 @@
     {
       "cve_id": "CVE-2017-3012",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an insecure library loading (DLL hijacking) vulnerability in the OCR plugin.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25088,7 +25088,7 @@
     {
       "cve_id": "CVE-2017-3013",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an insecure library loading (DLL hijacking) vulnerability in a DLL related to remote logging.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25109,7 +25109,7 @@
     {
       "cve_id": "CVE-2017-3014",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable use after free vulnerability in XML Forms Architecture (XFA) related to reset form functionality. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25130,7 +25130,7 @@
     {
       "cve_id": "CVE-2017-3015",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the JBIG2 parsing functionality. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25151,7 +25151,7 @@
     {
       "cve_id": "CVE-2017-3017",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability when handling a malformed PDF file. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25172,7 +25172,7 @@
     {
       "cve_id": "CVE-2017-3018",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the renderer functionality. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25193,7 +25193,7 @@
     {
       "cve_id": "CVE-2017-3019",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the Product Representation Compact (PRC) format parser. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25214,7 +25214,7 @@
     {
       "cve_id": "CVE-2017-3023",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the JPEG 2000 code-stream tile functionality. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25235,7 +25235,7 @@
     {
       "cve_id": "CVE-2017-3024",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability when manipulating PDF annotations. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25256,7 +25256,7 @@
     {
       "cve_id": "CVE-2017-3025",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability related to internal object representation manipulation. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25277,7 +25277,7 @@
     {
       "cve_id": "CVE-2017-3026",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable use after free vulnerability when manipulating an internal data structure. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25298,7 +25298,7 @@
     {
       "cve_id": "CVE-2017-3027",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable use after free vulnerability in the XFA module, related to the choiceList element. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25319,7 +25319,7 @@
     {
       "cve_id": "CVE-2017-3028",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the image conversion module, related to processing of TIFF files. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25340,7 +25340,7 @@
     {
       "cve_id": "CVE-2017-3030",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the AES module. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25361,7 +25361,7 @@
     {
       "cve_id": "CVE-2017-3034",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable integer overflow vulnerability in the XML Forms Architecture (XFA) engine, related to layout functionality. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25382,7 +25382,7 @@
     {
       "cve_id": "CVE-2017-3035",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable use after free vulnerability in the XML Forms Architecture (XFA) engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25403,7 +25403,7 @@
     {
       "cve_id": "CVE-2017-3036",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in image conversion related to processing of the PCX (picture exchange) file format. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25424,7 +25424,7 @@
     {
       "cve_id": "CVE-2017-3038",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability when parsing TTF (TrueType font format) stream data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25445,7 +25445,7 @@
     {
       "cve_id": "CVE-2017-3039",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the PPKLite security handler. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25466,7 +25466,7 @@
     {
       "cve_id": "CVE-2017-3040",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the JBIG2 image compression module. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25487,7 +25487,7 @@
     {
       "cve_id": "CVE-2017-3041",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability when parsing font data in the MakeAccessible plugin. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25508,7 +25508,7 @@
     {
       "cve_id": "CVE-2017-3042",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable heap overflow vulnerability in image conversion, related to parsing offsets in TIFF files. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25529,7 +25529,7 @@
     {
       "cve_id": "CVE-2017-3044",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the JPEG 2000 engine, related to image scaling. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25550,7 +25550,7 @@
     {
       "cve_id": "CVE-2017-3047",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable use after free vulnerability in the JavaScript engine's annotation-related API. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25571,7 +25571,7 @@
     {
       "cve_id": "CVE-2017-3048",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable heap overflow vulnerability in the image conversion engine, related to internal scan line representation in TIFF files. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25592,7 +25592,7 @@
     {
       "cve_id": "CVE-2017-3049",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable heap overflow vulnerability in the image conversion engine, related to internal tile manipulation in TIFF files. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25613,7 +25613,7 @@
     {
       "cve_id": "CVE-2017-3050",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the image conversion engine, related to parsing of GIF files. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25634,7 +25634,7 @@
     {
       "cve_id": "CVE-2017-3051",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the image conversion engine, related to parsing of JPEG files. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25655,7 +25655,7 @@
     {
       "cve_id": "CVE-2017-3054",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the image conversion engine, related to manipulation of EMF files. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25676,7 +25676,7 @@
     {
       "cve_id": "CVE-2017-3055",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable heap overflow vulnerability in JPEG 2000 parsing of the fragment list tag. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25697,7 +25697,7 @@
     {
       "cve_id": "CVE-2017-3056",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the JavaScript engine, related to string manipulation. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25718,7 +25718,7 @@
     {
       "cve_id": "CVE-2017-3057",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable use after free vulnerability in the JavaScript API related to the collaboration functionality. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25739,7 +25739,7 @@
     {
       "cve_id": "CVE-2017-3065",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have an exploitable memory corruption vulnerability in the font manipulation functionality. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25760,7 +25760,7 @@
     {
       "cve_id": "CVE-2017-3009",
       "published_date": "2017-03-31",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 15.020.20042 and earlier, 15.006.30244 and earlier, 11.0.18 and earlier have an exploitable buffer overflow vulnerability in the JPEG2000 parser. Successful exploitation could lead to information disclosure.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -25781,7 +25781,7 @@
     {
       "cve_id": "CVE-2017-2970",
       "published_date": "2017-01-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 15.020.20042 and earlier, 15.006.30244 and earlier, 11.0.18 and earlier have an exploitable heap overflow vulnerability in the XSLT engine related to template manipulation. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25802,7 +25802,7 @@
     {
       "cve_id": "CVE-2017-2971",
       "published_date": "2017-01-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 15.020.20042 and earlier, 15.006.30244 and earlier, 11.0.18 and earlier have an exploitable heap overflow vulnerability in the JPEG decoder routine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -25823,7 +25823,7 @@
     {
       "cve_id": "CVE-2017-2972",
       "published_date": "2017-01-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 15.020.20042 and earlier, 15.006.30244 and earlier, 11.0.18 and earlier have an exploitable memory corruption vulnerability in the image conversion module related to JPEG parsing. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -42161,7 +42161,7 @@
     {
       "cve_id": "CVE-2017-16361",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a security bypass vulnerability when handling XFDF files.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42182,7 +42182,7 @@
     {
       "cve_id": "CVE-2017-16369",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. This vulnerability is an instance of a Same Origin Policy security bypass vulnerability, affecting files on the local system, etc.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42203,7 +42203,7 @@
     {
       "cve_id": "CVE-2017-16419",
       "published_date": "2017-12-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An issue was discovered in Adobe Acrobat and Reader: 2017.012.20098 and earlier versions, 2017.011.30066 and earlier versions, 2015.006.30355 and earlier versions, and 11.0.22 and earlier versions. The issue is a stack exhaustion problem within the JavaScript API, where the computation does not correctly control the amount of recursion that can happen with respect to system resources.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42224,7 +42224,7 @@
     {
       "cve_id": "CVE-2017-11209",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability that occurs when reading a JPEG file embedded within XML Paper Specification (XPS) file. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42245,7 +42245,7 @@
     {
       "cve_id": "CVE-2017-11210",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the font parsing, where the font is embedded in the XML Paper Specification (XPS) file. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42266,7 +42266,7 @@
     {
       "cve_id": "CVE-2017-11217",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to drawing of Unicode text strings. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42287,7 +42287,7 @@
     {
       "cve_id": "CVE-2017-11230",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the JPEG 2000 engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42308,7 +42308,7 @@
     {
       "cve_id": "CVE-2017-11232",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable use after free vulnerability when processing Enhanced Metafile Format (EMF) data related to brush manipulation. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42329,7 +42329,7 @@
     {
       "cve_id": "CVE-2017-11233",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to block transfer of pixels. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42350,7 +42350,7 @@
     {
       "cve_id": "CVE-2017-11236",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the internal handling of UTF-16 literal strings. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42371,7 +42371,7 @@
     {
       "cve_id": "CVE-2017-11238",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to curve drawing. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42392,7 +42392,7 @@
     {
       "cve_id": "CVE-2017-11239",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to text strings. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42413,7 +42413,7 @@
     {
       "cve_id": "CVE-2017-11242",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to line segments. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42434,7 +42434,7 @@
     {
       "cve_id": "CVE-2017-11243",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the XSLT engine. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42455,7 +42455,7 @@
     {
       "cve_id": "CVE-2017-11244",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to transformation of blocks of pixels. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42476,7 +42476,7 @@
     {
       "cve_id": "CVE-2017-11245",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) private data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42497,7 +42497,7 @@
     {
       "cve_id": "CVE-2017-11246",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when parsing JPEG data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42518,7 +42518,7 @@
     {
       "cve_id": "CVE-2017-11248",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to pixel block transfer. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42539,7 +42539,7 @@
     {
       "cve_id": "CVE-2017-11249",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when parsing an invalid Enhanced Metafile Format (EMF) record. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42560,7 +42560,7 @@
     {
       "cve_id": "CVE-2017-11252",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the Adobe Graphics Manager (AGM) module. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42581,7 +42581,7 @@
     {
       "cve_id": "CVE-2017-11255",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing TIFF color map data. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42602,7 +42602,7 @@
     {
       "cve_id": "CVE-2017-11258",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) private data and the embedded GIF image. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42623,7 +42623,7 @@
     {
       "cve_id": "CVE-2017-11265",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the Adobe Graphics Manager module. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42644,7 +42644,7 @@
     {
       "cve_id": "CVE-2017-3115",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an information disclosure vulnerability when handling links in a PDF document.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42665,7 +42665,7 @@
     {
       "cve_id": "CVE-2017-3118",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has a security bypass vulnerability related to execution of malicious attachments.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42686,7 +42686,7 @@
     {
       "cve_id": "CVE-2017-3122",
       "published_date": "2017-08-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader 2017.009.20058 and earlier, 2017.008.30051 and earlier, 2015.006.30306 and earlier, and 11.0.20 and earlier has an exploitable memory corruption vulnerability in the image conversion engine when processing Enhanced Metafile Format (EMF) data related to Bezier curves. Successful exploitation could lead to arbitrary code execution.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -42707,7 +42707,7 @@
     {
       "cve_id": "CVE-2017-3043",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability in the collaboration functionality.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -42728,7 +42728,7 @@
     {
       "cve_id": "CVE-2017-3045",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability in the JPEG 2000 parser, related to the palette box.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -42749,7 +42749,7 @@
     {
       "cve_id": "CVE-2017-3046",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability in the JPEG 2000 parser, related to contiguous code-stream parsing.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -42770,7 +42770,7 @@
     {
       "cve_id": "CVE-2017-3052",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability in the image conversion engine, related to parsing of EMF - enhanced meta file format.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -42791,7 +42791,7 @@
     {
       "cve_id": "CVE-2017-3053",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability in the image conversion engine, related to parsing of the APP13 segment in JPEG files.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -42812,7 +42812,7 @@
     {
       "cve_id": "CVE-2017-2929",
       "published_date": "2017-01-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Chrome extension version 15.1.0.3 and earlier have a DOM-based cross-site scripting vulnerability. Successful exploitation could lead to JavaScript code execution.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -46109,7 +46109,7 @@
     {
       "cve_id": "CVE-2017-3020",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability in the weblink module.",
       "base_score": 3.3,
       "severity": "LOW",
@@ -46130,7 +46130,7 @@
     {
       "cve_id": "CVE-2017-3021",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability in the JPEG 2000 parser engine.",
       "base_score": 3.3,
       "severity": "LOW",
@@ -46151,7 +46151,7 @@
     {
       "cve_id": "CVE-2017-3022",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability when parsing the header of a JPEG 2000 file.",
       "base_score": 3.3,
       "severity": "LOW",
@@ -46172,7 +46172,7 @@
     {
       "cve_id": "CVE-2017-3029",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability when handling a JPEG 2000 code-stream.",
       "base_score": 3.3,
       "severity": "LOW",
@@ -46193,7 +46193,7 @@
     {
       "cve_id": "CVE-2017-3031",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability in the XSLT engine.",
       "base_score": 3.3,
       "severity": "LOW",
@@ -46214,7 +46214,7 @@
     {
       "cve_id": "CVE-2017-3032",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability in the JPEG 2000 code-stream parser.",
       "base_score": 3.3,
       "severity": "LOW",
@@ -46235,7 +46235,7 @@
     {
       "cve_id": "CVE-2017-3033",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Acrobat Reader versions 11.0.19 and earlier, 15.006.30280 and earlier, 15.023.20070 and earlier have a memory address leak vulnerability when handling JPEG 2000 code-stream tile data.",
       "base_score": 3.3,
       "severity": "LOW",

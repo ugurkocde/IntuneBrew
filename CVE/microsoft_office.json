@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Office",
   "app_key": "microsoft_office",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 1084,
   "summary": {
     "critical": 13,
@@ -11690,7 +11690,7 @@
     {
       "cve_id": "CVE-2017-11935",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office 2016 Click-to-Run (C2R) allows a remote code execution vulnerability due to the way files are handled in memory, aka \"Microsoft Excel Remote Code Execution Vulnerability\".",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11711,7 +11711,7 @@
     {
       "cve_id": "CVE-2017-11854",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Word 2007 Service Pack 3, Microsoft Word 2010 Service Pack 2, Microsoft Office 2010 Service Pack 2, and Microsoft Office Compatibility Pack Service Pack 3 allow an attacker to run arbitrary code in the context of the current user by failing to properly handle objects in memory, aka \"Microsoft Word Memory Corruption Vulnerability\".",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11732,7 +11732,7 @@
     {
       "cve_id": "CVE-2017-11825",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office 2016 Click-to-Run (C2R) and Microsoft Office 2016 for Mac allow an attacker to use a specially crafted file to perform actions in the security context of the current user, due to how Microsoft Office handles files in memory, aka \"Microsoft Office Remote Code Execution Vulnerability\".",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11753,7 +11753,7 @@
     {
       "cve_id": "CVE-2017-8630",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office 2016 allows a remote code execution vulnerability when it fails to properly handle objects in memory, aka \"Microsoft Office Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8631, CVE-2017-8632, and CVE-2017-8744.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11774,7 +11774,7 @@
     {
       "cve_id": "CVE-2017-8744",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Excel Services, Microsoft Excel 2007 Service Pack 3, Microsoft Excel 2010 Service Pack 2, Microsoft Excel 2013 Service Pack 1, Microsoft Excel 2013 RT Service Pack 1, and Microsoft Excel 2016 when they fail to properly handle objects in memory, aka \"Microsoft Office Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8630, CVE-2017-8632, and CVE-2017-8731.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11795,7 +11795,7 @@
     {
       "cve_id": "CVE-2017-0243",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office allows a remote code execution vulnerability due to the way that it handles objects in memory, aka \"Microsoft Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-8570.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11816,7 +11816,7 @@
     {
       "cve_id": "CVE-2017-8501",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office allows a remote code execution vulnerability due to the way that it handles objects in memory, aka \"Microsoft Office Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8502.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11837,7 +11837,7 @@
     {
       "cve_id": "CVE-2017-0260",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Office when the software fails to properly handle objects in memory, aka \"Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-8509, CVE-2017-8510, CVE-2017-8511, CVE-2017-8512, and CVE-2017-8506.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11858,7 +11858,7 @@
     {
       "cve_id": "CVE-2017-0283",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Uniscribe in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, Windows Server 2016, Microsoft Office 2007 SP3, Microsoft Office 2010 SP2, Microsoft Office Word Viewer, Microsoft Lync 2013 SP1, Skype for Business 2016, Microsoft Silverlight 5 Developer Runtime when installed on Microsoft Windows, and Microsoft Silverlight 5 when installed on Microsoft Windows allows a remote code execution vulnerability due to the way it handles objects in memory, aka \"Windows Uniscribe Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-8528.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11879,7 +11879,7 @@
     {
       "cve_id": "CVE-2017-8509",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Office when the software fails to properly handle objects in memory, aka \"Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-8510, CVE-2017-8511, CVE-2017-8512, CVE-2017-0260, and CVE-2017-8506.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11900,7 +11900,7 @@
     {
       "cve_id": "CVE-2017-8510",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Office when the software fails to properly handle objects in memory, aka \"Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-8509, CVE-2017-8511, CVE-2017-8512, CVE-2017-0260, and CVE-2017-8506.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11921,7 +11921,7 @@
     {
       "cve_id": "CVE-2017-8511",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Office when the software fails to properly handle objects in memory, aka \"Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-8509, CVE-2017-8510, CVE-2017-8512, CVE-2017-0260, and CVE-2017-8506.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11942,7 +11942,7 @@
     {
       "cve_id": "CVE-2017-8512",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Office when the software fails to properly handle objects in memory, aka \"Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-8509, CVE-2017-8510, CVE-2017-8511, CVE-2017-0260, and CVE-2017-8506.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11963,7 +11963,7 @@
     {
       "cve_id": "CVE-2017-8527",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Graphics in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows a remote code execution vulnerability due to the way it handles objects in memory, aka \"Windows Graphics Remote Code Execution Vulnerability\".",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -11984,7 +11984,7 @@
     {
       "cve_id": "CVE-2017-8528",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Uniscribe in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, Windows Server 2016, Microsoft Office 2007 SP3, and Microsoft Office 2010 SP2 allows a remote code execution vulnerability due to the way it handles objects in memory, aka \"Windows Uniscribe Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-0283.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -12005,7 +12005,7 @@
     {
       "cve_id": "CVE-2017-0254",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Word 2007, Office 2010 SP2, Word 2010 SP2, Office Compatibility Pack SP3, Office for Mac 2011, Office for Mac 2016, Microsoft Office Web Apps 2010 SP2, Office Web Apps Server 2013 SP1, Word 2013 RT SP1, Word 2013 SP1, Word Automation Services on Microsoft SharePoint Server 2013 SP1, Office Word Viewer, SharePoint Enterprise Server 2016, and Word 2016 allow a remote code execution vulnerability when the software fails to properly handle objects in memory, aka \"Microsoft Office Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-0264 and CVE-2017-0265.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -12026,7 +12026,7 @@
     {
       "cve_id": "CVE-2017-0281",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office 2007 SP3, Office 2010 SP2, Office 2013 SP1, Office 2016, Office Online Server 2016, Office Web Apps 2010 SP2,Office Web Apps 2013 SP1, Project Server 2013 SP1, SharePoint Enterprise Server 2013 SP1, SharePoint Enterprise Server 2016, SharePoint Foundation 2013 SP1, Sharepoint Server 2010 SP2, Word 2016, and Skype for Business 2016 allow a remote code execution vulnerability when the software fails to properly handle objects in memory, aka \"Office Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-0261 and CVE-2017-0262.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -12047,7 +12047,7 @@
     {
       "cve_id": "CVE-2017-0014",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The Windows Graphics Component in Microsoft Office 2010 SP2; Windows Server 2008 R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; Windows 10 Gold, 1511, and 1607; and Windows Server 2016 allows remote attackers to execute arbitrary code via a crafted web site, aka \"Windows Graphics Component Remote Code Execution Vulnerability.\" This vulnerability is different from that described in CVE-2017-0108.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -12068,7 +12068,7 @@
     {
       "cve_id": "CVE-2017-0030",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office 2010 SP2, Office Compatibility Pack SP3, Office Web Apps Server 2010 SP2, Word 2007 SP3, Word 2010 SP2, and Word Automation Services on SharePoint Server 2010 SP2 allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted document, aka \"Microsoft Office Memory Corruption Vulnerability.\" This vulnerability is different from those described in CVE-2017-0006, CVE-2017-0019, CVE-2017-0020, CVE-2017-0031, CVE-2017-0052, and CVE-2017-0053.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -12089,7 +12089,7 @@
     {
       "cve_id": "CVE-2017-0031",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office 2010 SP2, Office Compatibility Pack SP3, Word 2007 SP3, and Word 2010 SP2 allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted document, aka \"Microsoft Office Memory Corruption Vulnerability.\" This vulnerability is different from those described in CVE-2017-0006, CVE-2017-0019, CVE-2017-0020, CVE-2017-0030, CVE-2017-0052, and CVE-2017-0053.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -12110,7 +12110,7 @@
     {
       "cve_id": "CVE-2017-0053",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office 2010 SP2, Office Compatibility Pack SP3, Word 2007 SP3, Word 2010 SP2, Word 2013 SP1, Word 2013 R2 SP1, Word 2016, and Word Viewer allow remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted document, aka \"Microsoft Office Memory Corruption Vulnerability.\" This vulnerability is different from those described in CVE-2017-0006, CVE-2017-0019, CVE-2017-0020, CVE-2017-0030, CVE-2017-0031, and CVE-2017-0052.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -12131,7 +12131,7 @@
     {
       "cve_id": "CVE-2017-0108",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The Windows Graphics Component in Microsoft Office 2007 SP3; 2010 SP2; and Word Viewer; Skype for Business 2016; Lync 2013 SP1; Lync 2010; Live Meeting 2007; Silverlight 5; Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; and Windows 7 SP1 allows remote attackers to execute arbitrary code via a crafted web site, aka \"Graphics Component Remote Code Execution Vulnerability.\" This vulnerability is different from that described in CVE-2017-0014.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -21161,7 +21161,7 @@
     {
       "cve_id": "CVE-2017-11934",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office 2013 RT SP1, Microsoft Office 2013 SP1, and Microsoft Office 2016 allow an information disclosure vulnerability due to the way certain functions handle objects in memory, aka \"Microsoft Office Information Disclosure Vulnerability\".",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -21182,7 +21182,7 @@
     {
       "cve_id": "CVE-2017-11939",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office 2016 Click-to-Run (C2R) allows an information disclosure vulnerability due to the way Microsoft Office enforces DRM copy/paste permissions, aka \"Microsoft Office Information Disclosure Vulnerability\".",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -21203,7 +21203,7 @@
     {
       "cve_id": "CVE-2017-8695",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Windows Uniscribe in Microsoft Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; Windows 10 Gold, 1511, 1607, 1703, and Server 2016; Office 2007 SP3; Office 2010 SP2; Word Viewer; Office for Mac 2011 and 2016; Skype for Business 2016; Lync 2013 SP1; Lync 2010; Lync 2010 Attendee; and Live Meeting 2007 Add-in and Console allows an attacker to obtain information to further compromise a user's system via a specially crafted document or an untrusted webpage, aka \"Graphics Component Information Disclosure Vulnerability.\"",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -21224,7 +21224,7 @@
     {
       "cve_id": "CVE-2017-0282",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Uniscribe in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, Windows Server 2016, Microsoft Office 2007 SP3, and Microsoft Office 2010 SP2 allows improper disclosure of memory contents, aka \"Windows Uniscribe Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-0284, CVE-2017-0285, and CVE-2017-8534.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -21245,7 +21245,7 @@
     {
       "cve_id": "CVE-2017-0284",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Uniscribe in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, Windows Server 2016, Microsoft Office 2007 SP3, and Microsoft Office 2010 SP2 allows improper disclosure of memory contents, aka \"Windows Uniscribe Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-0282, CVE-2017-0285, and CVE-2017-8534.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -21266,7 +21266,7 @@
     {
       "cve_id": "CVE-2017-0285",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Uniscribe in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, Windows Server 2016, Microsoft Office 2007 SP3, Microsoft Office 2010 SP2, and Microsoft Office Word Viewer allows improper disclosure of memory contents, aka \"Windows Uniscribe Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-0282, CVE-2017-0284, and CVE-2017-8534.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -21287,7 +21287,7 @@
     {
       "cve_id": "CVE-2017-0286",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Graphics in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows improper disclosure of memory contents, aka \"Windows Graphics Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-0287, CVE-2017-0288, CVE-2017-0289, CVE-2017-8531, CVE-2017-8532, and CVE-2017-8533.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -21308,7 +21308,7 @@
     {
       "cve_id": "CVE-2017-0287",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Graphics in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows improper disclosure of memory contents, aka \"Graphics Uniscribe Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-0286, CVE-2017-0288, CVE-2017-0289, CVE-2017-8531, CVE-2017-8532, and CVE-2017-8533.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -21329,7 +21329,7 @@
     {
       "cve_id": "CVE-2017-0288",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Graphics in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows improper disclosure of memory contents, aka \"Windows Graphics Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-0286, CVE-2017-0287, CVE-2017-0289, CVE-2017-8531, CVE-2017-8532, and CVE-2017-8533.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -21350,7 +21350,7 @@
     {
       "cve_id": "CVE-2017-0289",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Graphics in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows improper disclosure of memory contents, aka \"Windows Graphics Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-0286, CVE-2017-0287, CVE-2017-0288, CVE-2017-8531, CVE-2017-8532, and CVE-2017-8533.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -21371,7 +21371,7 @@
     {
       "cve_id": "CVE-2017-8531",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Graphics in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, Windows Server 2016, Microsoft Office 2007 Service Pack 3, and Microsoft Office 2010 Service Pack 2 allows improper disclosure of memory contents, aka \"Graphics Uniscribe Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-0286, CVE-2017-0287, CVE-2017-0288, CVE-2017-0289, CVE-2017-8532, and CVE-2017-8533.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -21392,7 +21392,7 @@
     {
       "cve_id": "CVE-2017-8532",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Graphics in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows improper disclosure of memory contents, aka \"Graphics Uniscribe Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-0286, CVE-2017-0287, CVE-2017-0288, CVE-2017-0289, CVE-2017-8531, and CVE-2017-8533.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -21413,7 +21413,7 @@
     {
       "cve_id": "CVE-2017-8533",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Graphics in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows improper disclosure of memory contents, aka \"Graphics Uniscribe Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-0286, CVE-2017-0287, CVE-2017-0288, CVE-2017-0289, CVE-2017-8531, and CVE-2017-8532.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -21434,7 +21434,7 @@
     {
       "cve_id": "CVE-2017-8534",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Uniscribe in Windows Server 2008 SP2 and R2 SP1, Windows 7 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, Windows Server 2016, Microsoft Office 2007 SP3, and Microsoft Office 2010 SP2 allows improper disclosure of memory contents, aka \"Windows Uniscribe Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-0282, CVE-2017-0284, and CVE-2017-0285.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -21455,7 +21455,7 @@
     {
       "cve_id": "CVE-2017-8550",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Skype for Business when the software fails to sanitize specially crafted content, aka \"Skype for Business Remote Code Execution Vulnerability\".",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -21476,7 +21476,7 @@
     {
       "cve_id": "CVE-2017-0029",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Office 2010 SP2, Word 2010 SP2, Word 2013 RT SP1, and Word 2016 allow remote attackers to cause a denial of service (application hang) via a crafted Office document, aka \"Microsoft Office Denial of Service Vulnerability.\"",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -21497,7 +21497,7 @@
     {
       "cve_id": "CVE-2017-0060",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The Graphics Device Interface (GDI) in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607 allows remote attackers to obtain sensitive information from process memory via a crafted web site, aka \"GDI+ Information Disclosure Vulnerability.\" This vulnerability is different from those described in CVE-2017-0060 and CVE-2017-0062.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -21518,7 +21518,7 @@
     {
       "cve_id": "CVE-2017-0073",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The Graphics Device Interface (GDI) in Microsoft Windows Vista SP2; Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; and Windows 10 Gold, 1511, and 1607 allows remote attackers to obtain sensitive information from process memory via a crafted web site, aka \"Windows GDI+ Information Disclosure Vulnerability.\" This vulnerability is different from those described in CVE-2017-0060 and CVE-2017-0062.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -21539,7 +21539,7 @@
     {
       "cve_id": "CVE-2017-0105",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Word 2007 SP3, Office 2010 SP2, Word 2010 SP2, Word for Mac 2011, Office Compatibility Pack SP3, Word Automation Services on SharePoint Server 2010 SP2, and Office Web Apps 2010 SP2 allow remote attackers to obtain sensitive information from out-of-bound memory via a crafted Office document, aka \"Microsoft Office Information Disclosure Vulnerability.\"",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -22715,7 +22715,7 @@
     {
       "cve_id": "CVE-2017-8676",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The Windows Graphics Device Interface (GDI) in Microsoft Windows Server 2008 SP2 and R2 SP1; Windows 7 SP1; Windows 8.1; Windows Server 2012 Gold and R2; Windows RT 8.1; Windows 10 Gold, 1511, 1607, 1703, and Server 2016; Office 2007 SP3; Office 2010 SP2; Word Viewer; Office for Mac 2011 and 2016; Skype for Business 2016; Lync 2013 SP1; Lync 2010; Lync 2010 Attendee; and Live Meeting 2007 Add-in and Console allows an authenticated attacker to retrieve information from a targeted system via a specially crafted application, aka \"Windows GDI+ Information Disclosure Vulnerability.\"",
       "base_score": 3.3,
       "severity": "LOW",

@@ -1,7 +1,7 @@
 {
   "app_name": "Nextcloud",
   "app_key": "nextcloud",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 28,
   "summary": {
     "critical": 1,
@@ -413,7 +413,7 @@
     {
       "cve_id": "CVE-2017-0888",
       "published_date": "2017-04-05",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Nextcloud Server before 9.0.55 and 10.0.2 suffers from a Content-Spoofing vulnerability in the \"files\" app. The top navigation bar displayed in the files list contained partially user-controllable input leading to a potential misrepresentation of information.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -434,7 +434,7 @@
     {
       "cve_id": "CVE-2016-9460",
       "published_date": "2017-03-28",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Nextcloud Server before 9.0.52 & ownCloud Server before 9.0.4 are vulnerable to a content-spoofing attack in the files app. The location bar in the files app was not verifying the passed parameters. An attacker could craft an invalid link to a fake directory structure and use this to display an attacker-controlled error message to the user.",
       "base_score": 5.3,
       "severity": "MEDIUM",

@@ -1,7 +1,7 @@
 {
   "app_name": "Audacity",
   "app_key": "audacity",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 6,
   "summary": {
     "critical": 0,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2017-1000010",
       "published_date": "2017-07-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Audacity 2.1.2 through 2.3.2 is vulnerable to Dll HIjacking in the avformat-55.dll resulting arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",

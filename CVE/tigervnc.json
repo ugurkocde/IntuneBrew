@@ -1,7 +1,7 @@
 {
   "app_name": "Tigervnc",
   "app_key": "tigervnc",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 30,
   "summary": {
     "critical": 3,
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2017-5581",
       "published_date": "2017-02-28",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Buffer overflow in the ModifiablePixelBuffer::fillRect function in TigerVNC before 1.7.1 allows remote servers to execute arbitrary code via an RRE message with subrectangle outside framebuffer boundaries.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -455,7 +455,7 @@
     {
       "cve_id": "CVE-2017-7392",
       "published_date": "2017-04-01",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In TigerVNC 1.7.1 (SSecurityVeNCrypt.cxx SSecurityVeNCrypt::SSecurityVeNCrypt), an unauthenticated client can cause a small memory leak in the server.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -476,7 +476,7 @@
     {
       "cve_id": "CVE-2017-7393",
       "published_date": "2017-04-01",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In TigerVNC 1.7.1 (VNCSConnectionST.cxx VNCSConnectionST::fence), an authenticated client can cause a double free, leading to denial of service or potentially code execution.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -497,7 +497,7 @@
     {
       "cve_id": "CVE-2017-7394",
       "published_date": "2017-04-01",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In TigerVNC 1.7.1 (SSecurityPlain.cxx SSecurityPlain::processMsg), unauthenticated users can crash the server by sending long usernames.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -518,7 +518,7 @@
     {
       "cve_id": "CVE-2017-7396",
       "published_date": "2017-04-01",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In TigerVNC 1.7.1 (CConnection.cxx CConnection::CConnection), an unauthenticated client can cause a small memory leak in the server.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -539,7 +539,7 @@
     {
       "cve_id": "CVE-2016-10207",
       "published_date": "2017-02-28",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The Xvnc server in TigerVNC allows remote attackers to cause a denial of service (invalid memory access and crash) by terminating a TLS handshake early.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -602,7 +602,7 @@
     {
       "cve_id": "CVE-2017-7395",
       "published_date": "2017-04-01",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In TigerVNC 1.7.1 (SMsgReader.cxx SMsgReader::readClientCutText), by causing an integer overflow, an authenticated client can crash the server.",
       "base_score": 6.5,
       "severity": "MEDIUM",

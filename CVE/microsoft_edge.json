@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 956,
   "summary": {
     "critical": 17,
@@ -560,7 +560,7 @@
     {
       "cve_id": "CVE-2017-0028",
       "published_date": "2017-07-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists when Microsoft scripting engine improperly accesses objects in memory. The vulnerability could corrupt memory in a way that enables an attacker to execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user, aka \"Scripting Engine Memory Corruption Vulnerability.\"",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -581,7 +581,7 @@
     {
       "cve_id": "CVE-2017-0223",
       "published_date": "2017-05-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Chakra Core in the way JavaScript engines render when handling objects in memory. aka \"Scripting Engine Memory Corruption Vulnerability\". This vulnerability is unique from CVE-2017-0252.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -602,7 +602,7 @@
     {
       "cve_id": "CVE-2017-0252",
       "published_date": "2017-05-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Chakra Core in the way JavaScript engines render when handling objects in memory. aka \"Scripting Engine Memory Corruption Vulnerability\". This vulnerability is unique from CVE-2017-0223.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -7238,7 +7238,7 @@
     {
       "cve_id": "CVE-2017-11888",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how Microsoft Edge handles objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability\".",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7259,7 +7259,7 @@
     {
       "cve_id": "CVE-2017-11889",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11890, CVE-2017-11893, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11910, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7280,7 +7280,7 @@
     {
       "cve_id": "CVE-2017-11893",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11890, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11910, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7301,7 +7301,7 @@
     {
       "cve_id": "CVE-2017-11894",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore, and Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 and R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, and and Internet Explorer adn Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11890, CVE-2017-11893, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11910, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7322,7 +7322,7 @@
     {
       "cve_id": "CVE-2017-11895",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore, and Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 R2, and Internet Explorer and Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11890, CVE-2017-11893, CVE-2017-11894, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11910, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7343,7 +7343,7 @@
     {
       "cve_id": "CVE-2017-11905",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11890, CVE-2017-11893, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11910, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7364,7 +7364,7 @@
     {
       "cve_id": "CVE-2017-11908",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Windows 10 1709 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11890, CVE-2017-11893, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11905, CVE-2017-11907, CVE-2017-11909, CVE-2017-11910, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7385,7 +7385,7 @@
     {
       "cve_id": "CVE-2017-11909",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Windows 10 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11890, CVE-2017-11893, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11910, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7406,7 +7406,7 @@
     {
       "cve_id": "CVE-2017-11910",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Windows 10 Gold, 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11890, CVE-2017-11893, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7427,7 +7427,7 @@
     {
       "cve_id": "CVE-2017-11911",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Windows 10 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11890, CVE-2017-11893, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11910, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7448,7 +7448,7 @@
     {
       "cve_id": "CVE-2017-11912",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore, and Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 and R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, and Internet Explorer and Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11890, CVE-2017-11893, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11910, CVE-2017-11911, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7469,7 +7469,7 @@
     {
       "cve_id": "CVE-2017-11914",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11890, CVE-2017-11893, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11910, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11916, CVE-2017-11918, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7490,7 +7490,7 @@
     {
       "cve_id": "CVE-2017-11918",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11886, CVE-2017-11889, CVE-2017-11890, CVE-2017-11893, CVE-2017-11894, CVE-2017-11895, CVE-2017-11901, CVE-2017-11903, CVE-2017-11905, CVE-2017-11905, CVE-2017-11907, CVE-2017-11908, CVE-2017-11909, CVE-2017-11910, CVE-2017-11911, CVE-2017-11912, CVE-2017-11913, CVE-2017-11914, CVE-2017-11916, and CVE-2017-11930.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7511,7 +7511,7 @@
     {
       "cve_id": "CVE-2017-11827",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, and Microsoft Edge and Internet Explorer in Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how Microsoft browsers handle objects in memory, aka \"Microsoft Browser Memory Corruption Vulnerability\".",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7532,7 +7532,7 @@
     {
       "cve_id": "CVE-2017-11836",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore, and Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to take control of an affected system, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7553,7 +7553,7 @@
     {
       "cve_id": "CVE-2017-11837",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 R2, and Microsoft Edge and Internet Explorer in Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7574,7 +7574,7 @@
     {
       "cve_id": "CVE-2017-11838",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 R2, and Microsoft Edge and Internet Explorer in Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7595,7 +7595,7 @@
     {
       "cve_id": "CVE-2017-11839",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to take control of an affected system, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7616,7 +7616,7 @@
     {
       "cve_id": "CVE-2017-11840",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7637,7 +7637,7 @@
     {
       "cve_id": "CVE-2017-11841",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7658,7 +7658,7 @@
     {
       "cve_id": "CVE-2017-11843",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 and R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 R2, and Microsoft Edge and Internet Explorer in Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7679,7 +7679,7 @@
     {
       "cve_id": "CVE-2017-11845",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user, due to how Microsoft Edge handles objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability\".",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7700,7 +7700,7 @@
     {
       "cve_id": "CVE-2017-11846",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 and R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, and Microsoft Edge and Internet Explorer in Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7721,7 +7721,7 @@
     {
       "cve_id": "CVE-2017-11858",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 and R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, and Microsoft Edge and Internet Explorer in Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how Microsoft browsers handle objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7742,7 +7742,7 @@
     {
       "cve_id": "CVE-2017-11861",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7763,7 +7763,7 @@
     {
       "cve_id": "CVE-2017-11862",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 1709 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7784,7 +7784,7 @@
     {
       "cve_id": "CVE-2017-11866",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11869, CVE-2017-11870, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7805,7 +7805,7 @@
     {
       "cve_id": "CVE-2017-11870",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 1703, 1709, and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11871, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7826,7 +7826,7 @@
     {
       "cve_id": "CVE-2017-11871",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 1703, 1709, and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, and CVE-2017-11873.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7847,7 +7847,7 @@
     {
       "cve_id": "CVE-2017-11873",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to gain the same user rights as the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11836, CVE-2017-11837, CVE-2017-11838, CVE-2017-11839, CVE-2017-11840, CVE-2017-11841, CVE-2017-11843, CVE-2017-11846, CVE-2017-11858, CVE-2017-11859, CVE-2017-11861, CVE-2017-11862, CVE-2017-11866, CVE-2017-11869, CVE-2017-11870, and CVE-2017-11871.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7868,7 +7868,7 @@
     {
       "cve_id": "CVE-2017-11792",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 1703 allow an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11793, CVE-2017-11796, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7889,7 +7889,7 @@
     {
       "cve_id": "CVE-2017-11796",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7910,7 +7910,7 @@
     {
       "cve_id": "CVE-2017-11798",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7931,7 +7931,7 @@
     {
       "cve_id": "CVE-2017-11799",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7952,7 +7952,7 @@
     {
       "cve_id": "CVE-2017-11800",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7973,7 +7973,7 @@
     {
       "cve_id": "CVE-2017-11802",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -7994,7 +7994,7 @@
     {
       "cve_id": "CVE-2017-11804",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8015,7 +8015,7 @@
     {
       "cve_id": "CVE-2017-11805",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8036,7 +8036,7 @@
     {
       "cve_id": "CVE-2017-11806",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8057,7 +8057,7 @@
     {
       "cve_id": "CVE-2017-11807",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8078,7 +8078,7 @@
     {
       "cve_id": "CVE-2017-11808",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8099,7 +8099,7 @@
     {
       "cve_id": "CVE-2017-11809",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11810, CVE-2017-11811, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8120,7 +8120,7 @@
     {
       "cve_id": "CVE-2017-11811",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8141,7 +8141,7 @@
     {
       "cve_id": "CVE-2017-11812",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11812, and CVE-2017-11821.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8162,7 +8162,7 @@
     {
       "cve_id": "CVE-2017-11821",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11792, CVE-2017-11793, CVE-2017-11796, CVE-2017-11797, CVE-2017-11798, CVE-2017-11799, CVE-2017-11800, CVE-2017-11801, CVE-2017-11802, CVE-2017-11804, CVE-2017-11805, CVE-2017-11806, CVE-2017-11807, CVE-2017-11808, CVE-2017-11809, CVE-2017-11810, CVE-2017-11811, and CVE-2017-11812.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8183,7 +8183,7 @@
     {
       "cve_id": "CVE-2017-11764",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that the Microsoft Edge scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8649, CVE-2017-8660, CVE-2017-8729, CVE-2017-8738, CVE-2017-8740, CVE-2017-8741, CVE-2017-8748, CVE-2017-8752, CVE-2017-8753, CVE-2017-8755, and CVE-2017-8756.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8204,7 +8204,7 @@
     {
       "cve_id": "CVE-2017-11766",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that Microsoft Edge accesses objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8731, CVE-2017-8734, and CVE-2017-8751.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8225,7 +8225,7 @@
     {
       "cve_id": "CVE-2017-8649",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8660, CVE-2017-8729, CVE-2017-8738, CVE-2017-8740, CVE-2017-8741, CVE-2017-8748, CVE-2017-8752, CVE-2017-8753, CVE-2017-8755, CVE-2017-8756, and CVE-2017-11764.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8246,7 +8246,7 @@
     {
       "cve_id": "CVE-2017-8660",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8649, CVE-2017-8729, CVE-2017-8738, CVE-2017-8740, CVE-2017-8741, CVE-2017-8748, CVE-2017-8752, CVE-2017-8753, CVE-2017-8755, CVE-2017-8756, and CVE-2017-11764.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -8267,7 +8267,7 @@
     {
       "cve_id": "CVE-2017-8728",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Windows PDF Library in Microsoft Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that Windows PDF Library handles objects in memory, aka \"Windows PDF Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-8737.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8288,7 +8288,7 @@
     {
       "cve_id": "CVE-2017-8729",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user, due to the way that the Microsoft Edge scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8649, CVE-2017-8660, CVE-2017-8738, CVE-2017-8740, CVE-2017-8741, CVE-2017-8748, CVE-2017-8752, CVE-2017-8753, CVE-2017-8755, CVE-2017-8756, and CVE-2017-11764.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8309,7 +8309,7 @@
     {
       "cve_id": "CVE-2017-8731",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1607 and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that Microsoft Edge accesses objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8734, CVE-2017-8751, and CVE-2017-11766.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8330,7 +8330,7 @@
     {
       "cve_id": "CVE-2017-8734",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that Microsoft Edge accesses objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8731, CVE-2017-8751, and CVE-2017-11766.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8351,7 +8351,7 @@
     {
       "cve_id": "CVE-2017-8737",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Windows PDF Library in Microsoft Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that Windows PDF Library handles objects in memory, aka \"Windows PDF Remote Code Execution Vulnerability\". This CVE ID is unique from CVE-2017-8728.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8372,7 +8372,7 @@
     {
       "cve_id": "CVE-2017-8738",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that the Microsoft Edge scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8649, CVE-2017-8660, CVE-2017-8729, CVE-2017-8740, CVE-2017-8741, CVE-2017-8748, CVE-2017-8752, CVE-2017-8753, CVE-2017-8755, CVE-2017-8756, and CVE-2017-11764.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8393,7 +8393,7 @@
     {
       "cve_id": "CVE-2017-8740",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user, due to the way that the Microsoft Edge scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8649, CVE-2017-8660, CVE-2017-8729, CVE-2017-8738, CVE-2017-8740, CVE-2017-8741, CVE-2017-8748, CVE-2017-8752, CVE-2017-8753, CVE-2017-8755, CVE-2017-8756, and CVE-2017-11764.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8414,7 +8414,7 @@
     {
       "cve_id": "CVE-2017-8741",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 SP2 and R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, and Internet Explorer and Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user, due to the way that the Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8649, CVE-2017-8660, CVE-2017-8729, CVE-2017-8738, CVE-2017-8740, CVE-2017-8741, CVE-2017-8748, CVE-2017-8752, CVE-2017-8753, CVE-2017-8755, CVE-2017-8756, and CVE-2017-11764.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8435,7 +8435,7 @@
     {
       "cve_id": "CVE-2017-8748",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 R2, and Microsoft Edge and Internet Explorer in Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user, due to the way that the Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8649, CVE-2017-8660, CVE-2017-8729, CVE-2017-8738, CVE-2017-8740, CVE-2017-8741, CVE-2017-8752, CVE-2017-8753, CVE-2017-8755, CVE-2017-8756, and CVE-2017-11764.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8456,7 +8456,7 @@
     {
       "cve_id": "CVE-2017-8750",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 R2, and Microsoft Edge and Internet Explorer in Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browsers access objects in memory, aka \"Microsoft Browser Memory Corruption Vulnerability\".",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8477,7 +8477,7 @@
     {
       "cve_id": "CVE-2017-8751",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 1703 allows an attacker to execute arbitrary code in the context of the current user, due to the way that Microsoft Edge accesses objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8731, CVE-2017-8734, and CVE-2017-11766.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8498,7 +8498,7 @@
     {
       "cve_id": "CVE-2017-8752",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that the Microsoft Edge scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8649, CVE-2017-8660, CVE-2017-8729, CVE-2017-8738, CVE-2017-8740, CVE-2017-8741, CVE-2017-8748, CVE-2017-8753, CVE-2017-8755, CVE-2017-8756, and CVE-2017-11764.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8519,7 +8519,7 @@
     {
       "cve_id": "CVE-2017-8753",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that the Microsoft Edge scripting engine handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8649, CVE-2017-8660, CVE-2017-8729, CVE-2017-8738, CVE-2017-8740, CVE-2017-8741, CVE-2017-8748, CVE-2017-8752, CVE-2017-8755, CVE-2017-8756, and CVE-2017-11764.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8540,7 +8540,7 @@
     {
       "cve_id": "CVE-2017-8755",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that the scripting engine handles objects in memory in Microsoft Edge, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8649, CVE-2017-8649, CVE-2017-8660, CVE-2017-8729, CVE-2017-8738, CVE-2017-8740, CVE-2017-8741, CVE-2017-8748, CVE-2017-8752, CVE-2017-8753, CVE-2017-8756, and CVE-2017-11764.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8561,7 +8561,7 @@
     {
       "cve_id": "CVE-2017-8756",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way that Microsoft Edge accesses objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8649, CVE-2017-8660, CVE-2017-8729, CVE-2017-8738, CVE-2017-8740, CVE-2017-8741, CVE-2017-8748, CVE-2017-8752, CVE-2017-8753, CVE-2017-8755, and CVE-2017-11764.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8582,7 +8582,7 @@
     {
       "cve_id": "CVE-2017-8757",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to the way Microsoft Edge handles objects in memory, aka \"Microsoft Edge Remote Code Execution Vulnerability\".",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8603,7 +8603,7 @@
     {
       "cve_id": "CVE-2017-8518",
       "published_date": "2017-08-10",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge allows a remote code execution vulnerability due to the way it accesses objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\".",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8624,7 +8624,7 @@
     {
       "cve_id": "CVE-2017-0293",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Windows PDF Library in Windows Server 2008 R2 SP1, Windows 8.1, Windows Server 2012 Gold and R2, Windows RT 8.1, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows a remote code execution vulnerability when it improperly handles objects in memory, aka \"Windows PDF Remote Code Execution Vulnerability\".",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8645,7 +8645,7 @@
     {
       "cve_id": "CVE-2017-8503",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1511, 1607, 1703, and Windows Server 2016 allows an attacker to escape from the AppContainer sandbox, aka \"Microsoft Edge Elevation of Privilege Vulnerability\". This CVE ID is unique from CVE-2017-8642.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -8666,7 +8666,7 @@
     {
       "cve_id": "CVE-2017-8634",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8687,7 +8687,7 @@
     {
       "cve_id": "CVE-2017-8635",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user due to the way that JavaScript engines render when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8708,7 +8708,7 @@
     {
       "cve_id": "CVE-2017-8636",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8729,7 +8729,7 @@
     {
       "cve_id": "CVE-2017-8638",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8750,7 +8750,7 @@
     {
       "cve_id": "CVE-2017-8639",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8771,7 +8771,7 @@
     {
       "cve_id": "CVE-2017-8640",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8792,7 +8792,7 @@
     {
       "cve_id": "CVE-2017-8641",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8813,7 +8813,7 @@
     {
       "cve_id": "CVE-2017-8645",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8834,7 +8834,7 @@
     {
       "cve_id": "CVE-2017-8646",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8855,7 +8855,7 @@
     {
       "cve_id": "CVE-2017-8647",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8876,7 +8876,7 @@
     {
       "cve_id": "CVE-2017-8653",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers in Microsoft Windows 7 SP1, Windows Server 2008 SP2 and R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user due to Microsoft browsers improperly accessing objects in memory, aka \"Microsoft Browser Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8669.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8897,7 +8897,7 @@
     {
       "cve_id": "CVE-2017-8655",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8918,7 +8918,7 @@
     {
       "cve_id": "CVE-2017-8656",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8939,7 +8939,7 @@
     {
       "cve_id": "CVE-2017-8657",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8670, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8960,7 +8960,7 @@
     {
       "cve_id": "CVE-2017-8661",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user due to the way affected Microsoft scripting engines render when handling objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability\".",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8981,7 +8981,7 @@
     {
       "cve_id": "CVE-2017-8669",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 R2, Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user due to Microsoft browsers improperly handling objects in memory while rendering content, aka \"Microsoft Browser Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8653.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9002,7 +9002,7 @@
     {
       "cve_id": "CVE-2017-8670",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8671, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9023,7 +9023,7 @@
     {
       "cve_id": "CVE-2017-8671",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8672, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9044,7 +9044,7 @@
     {
       "cve_id": "CVE-2017-8672",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, and CVE-2017-8674.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9065,7 +9065,7 @@
     {
       "cve_id": "CVE-2017-8674",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user due to the way that Microsoft browser JavaScript engines render content when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8634, CVE-2017-8635, CVE-2017-8636, CVE-2017-8638, CVE-2017-8639, CVE-2017-8640, CVE-2017-8641, CVE-2017-8645, CVE-2017-8646, CVE-2017-8647, CVE-2017-8655, CVE-2017-8656, CVE-2017-8657, CVE-2017-8670, CVE-2017-8671, and CVE-2017-8672.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9086,7 +9086,7 @@
     {
       "cve_id": "CVE-2017-0152",
       "published_date": "2017-07-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engine render when handling objects in memory in Microsoft browsers. The vulnerability could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user, aka \"Scripting Engine Memory Corruption Vulnerability.\"",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -9107,7 +9107,7 @@
     {
       "cve_id": "CVE-2017-8595",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engine fails to render when handling objects in memory in Microsoft Edge, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8596, CVE-2017-8601,CVE-2017-8618, CVE-2017-8619, CVE-2017-8610, CVE-2017-8601, CVE-2017-8603, CVE-2017-8604, CVE-2017-8605, CVE-2017-8606, CVE-2017-8607, CVE-2017-8608, and CVE-2017-8609.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9128,7 +9128,7 @@
     {
       "cve_id": "CVE-2017-8596",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1607, and 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engine fails to render when handling objects in memory in Microsoft Edge, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8598, CVE-2017-8610, CVE-2017-8595, CVE-2017-8601, CVE-2017-8603, CVE-2017-8604, CVE-2017-8605, CVE-2017-8606, CVE-2017-8607, CVE-2017-8608, and CVE-2017-8609.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9149,7 +9149,7 @@
     {
       "cve_id": "CVE-2017-8598",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engine fails to render when handling objects in memory in Microsoft Edge, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8596, CVE-2017-8610, CVE-2017-8618, CVE-2017-8619, CVE-2017-8595, CVE-2017-8601, CVE-2017-8603, CVE-2017-8604, CVE-2017-8605, CVE-2017-8606, CVE-2017-8607, CVE-2017-8608, and CVE-2017-8609.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9170,7 +9170,7 @@
     {
       "cve_id": "CVE-2017-8601",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engine fails to render when handling objects in memory in Microsoft Edge, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8596, CVE-2017-8610, CVE-2017-8618, CVE-2017-8619, CVE-2017-8603, CVE-2017-8604, CVE-2017-8605, CVE-2017-8606, CVE-2017-8607, CVE-2017-8608, CVE-2017-8598 and CVE-2017-8609.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9191,7 +9191,7 @@
     {
       "cve_id": "CVE-2017-8603",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1511, 1607, and 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engine fails to render when handling objects in memory in Microsoft Edge, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8596, CVE-2017-8610, CVE-2017-8598, CVE-2017-8618, CVE-2017-8619, CVE-2017-8595, CVE-2017-8601, CVE-2017-8604, CVE-2017-8605, CVE-2017-8606, CVE-2017-8607, CVE-2017-8608, and CVE-2017-8609.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9212,7 +9212,7 @@
     {
       "cve_id": "CVE-2017-8604",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1511, 1607, and 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engine fails to render when handling objects in memory in Microsoft Edge, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8596, CVE-2017-8618, CVE-2017-8619, CVE-2017-8601, CVE-2017-8610, CVE-2017-8603, CVE-2017-8598, CVE-2017-8601, CVE-2017-8605, CVE-2017-8606, CVE-2017-8607, CVE-2017-8608, and CVE-2017-8609.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9233,7 +9233,7 @@
     {
       "cve_id": "CVE-2017-8605",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engine fails to render when handling objects in memory in Microsoft Edge, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8596, CVE-2017-8601, CVE-2017-8618, CVE-2017-8619, CVE-2017-8610, CVE-2017-8601, CVE-2017-8603, CVE-2017-8604, CVE-2017-8598, CVE-2017-8606, CVE-2017-8607, CVE-2017-8608, and CVE-2017-8609.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9254,7 +9254,7 @@
     {
       "cve_id": "CVE-2017-8606",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers in Microsoft Windows 7, Windows Server 2008 and R2, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engines fail to render when handling objects in memory in Microsoft browsers, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8598, CVE-2017-8596, CVE-2017-8618, CVE-2017-8619, CVE-2017-8610, CVE-2017-8601, CVE-2017-8603, CVE-2017-8604, CVE-2017-8605, CVE-2017-8595, CVE-2017-8607, CVE-2017-8608, and CVE-2017-8609",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9275,7 +9275,7 @@
     {
       "cve_id": "CVE-2017-8607",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers in Microsoft Windows 7, Windows Server 2008 and R2, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engines fail to render when handling objects in memory in Microsoft browsers, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8598, CVE-2017-8596, CVE-2017-8618, CVE-2017-8619, CVE-2017-8610, CVE-2017-8601, CVE-2017-8603, CVE-2017-8604, CVE-2017-8605, CVE-2017-8595, CVE-2017-8606, CVE-2017-8608, and CVE-2017-8609",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9296,7 +9296,7 @@
     {
       "cve_id": "CVE-2017-8608",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers in Microsoft Windows Server 2008 and R2, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engines fail to render when handling objects in memory in Microsoft browsers, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8598, CVE-2017-8596, CVE-2017-8610, CVE-2017-8601, CVE-2017-8618, CVE-2017-8619, CVE-2017-8603, CVE-2017-8604, CVE-2017-8605, CVE-2017-8595, CVE-2017-8606, CVE-2017-8607, and CVE-2017-8609",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9317,7 +9317,7 @@
     {
       "cve_id": "CVE-2017-8609",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Internet Explorer in Microsoft Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engine fails to render when handling objects in memory in Microsoft Internet Explorer, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8596, CVE-2017-8610, CVE-2017-8618, CVE-2017-8619, CVE-2017-8595, CVE-2017-8601, CVE-2017-8603, CVE-2017-8604, CVE-2017-8605, CVE-2017-8606, CVE-2017-8607, CVE-2017-8608, and CVE-2017-8609.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9338,7 +9338,7 @@
     {
       "cve_id": "CVE-2017-8610",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user when the JavaScript engine fails to render when handling objects in memory in Microsoft Edge, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8598, CVE-2017-8596, CVE-2017-8595, CVE-2017-8618, CVE-2017-8619, CVE-2017-8601, CVE-2017-8603, CVE-2017-8604, CVE-2017-8605, CVE-2017-8606, CVE-2017-8607, CVE-2017-8608, and CVE-2017-8609.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9359,7 +9359,7 @@
     {
       "cve_id": "CVE-2017-8617",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1703 Microsoft Edge allows a remote code execution vulnerability in the way affected Microsoft scripting engines render when handling objects in memory, aka \"Microsoft Edge Remote Code Execution Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9380,7 +9380,7 @@
     {
       "cve_id": "CVE-2017-8619",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge on Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allows a remote code execution vulnerability in the way affected Microsoft scripting engines render when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-8596, CVE-2017-8610, CVE-2017-8601, CVE-2017-8603, CVE-2017-8604, CVE-2017-8605, CVE-2017-8606, CVE-2017-8607, CVE-2017-8608, CVE-2017-8618, CVE-2017-9598 and CVE-2017-8609.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9401,7 +9401,7 @@
     {
       "cve_id": "CVE-2017-8496",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1607 and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user when Microsoft Edge improperly accesses objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8497.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9422,7 +9422,7 @@
     {
       "cve_id": "CVE-2017-8497",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1607 and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user when Microsoft Edge improperly accesses objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8496.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9443,7 +9443,7 @@
     {
       "cve_id": "CVE-2017-8499",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user when the Edge JavaScript scripting engine fails to handle objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8520, CVE-2017-8521, CVE-2017-8548, and CVE-2017-8549.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9464,7 +9464,7 @@
     {
       "cve_id": "CVE-2017-8520",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user when the Edge JavaScript scripting engine fails to handle objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8499, CVE-2017-8521, CVE-2017-8548, and CVE-2017-8549.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9485,7 +9485,7 @@
     {
       "cve_id": "CVE-2017-8521",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1703 allows an attacker to execute arbitrary code in the context of the current user when the Edge JavaScript scripting engine fails to handle objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8499, CVE-2017-8520, CVE-2017-8548, and CVE-2017-8549.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9506,7 +9506,7 @@
     {
       "cve_id": "CVE-2017-8522",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers in Microsoft Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow an allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engines fail to render when handling objects in memory in Microsoft browsers, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8517 and CVE-2017-8524.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9527,7 +9527,7 @@
     {
       "cve_id": "CVE-2017-8524",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow an allow an attacker to execute arbitrary code in the context of the current user when the JavaScript engines fail to render when handling objects in memory in Microsoft browsers, aka \"Scripting Engine Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-8517 and CVE-2017-8522.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9548,7 +9548,7 @@
     {
       "cve_id": "CVE-2017-8548",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allows an attacker to obtain information to further compromise the user's system when Microsoft Edge improperly handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\".  This CVE ID is unique from CVE-2017-8499, CVE-2017-8520, CVE-2017-8521, and CVE-2017-8549.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9569,7 +9569,7 @@
     {
       "cve_id": "CVE-2017-8549",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allows an attacker to obtain information to further compromise the user's system when Microsoft Edge improperly handles objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability\".  This CVE ID is unique from CVE-2017-8499, CVE-2017-8520, CVE-2017-8521, and CVE-2017-8548.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9590,7 +9590,7 @@
     {
       "cve_id": "CVE-2017-0221",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A vulnerability exists when Microsoft Edge improperly accesses objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0227 and CVE-2017-0240.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9611,7 +9611,7 @@
     {
       "cve_id": "CVE-2017-0224",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way JavaScript engines render when handling objects in memory in Microsoft Edge, aka \"Scripting Engine Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0228, CVE-2017-0229, CVE-2017-0230, CVE-2017-0234, CVE-2017-0235, CVE-2017-0236, and CVE-2017-0238.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9632,7 +9632,7 @@
     {
       "cve_id": "CVE-2017-0227",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Edge in the way affected Microsoft scripting engines render when handling objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0221 and CVE-2017-0240.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9653,7 +9653,7 @@
     {
       "cve_id": "CVE-2017-0228",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft browsers in the way JavaScript engines render when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0224, CVE-2017-0229, CVE-2017-0230, CVE-2017-0234, CVE-2017-0235, CVE-2017-0236, and CVE-2017-0238.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9674,7 +9674,7 @@
     {
       "cve_id": "CVE-2017-0229",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Edge in the way JavaScript engines render when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0224, CVE-2017-0228, CVE-2017-0230, CVE-2017-0234, CVE-2017-0235, CVE-2017-0236, and CVE-2017-0238.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9695,7 +9695,7 @@
     {
       "cve_id": "CVE-2017-0230",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Edge in the way JavaScript engines render when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0224, CVE-2017-0228, CVE-2017-0229, CVE-2017-0234, CVE-2017-0235, CVE-2017-0236, and CVE-2017-0238.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9716,7 +9716,7 @@
     {
       "cve_id": "CVE-2017-0233",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An elevation of privilege vulnerability exists in Microsoft Edge that could allow an attacker to escape from the AppContainer sandbox in the browser, aka \"Microsoft Edge Elevation of Privilege Vulnerability.\" This CVE ID is unique from CVE-2017-0241.",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -9737,7 +9737,7 @@
     {
       "cve_id": "CVE-2017-0234",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Edge in the way that the Chakra JavaScript engine renders when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0224, CVE-2017-0228, CVE-2017-0229, CVE-2017-0230, CVE-2017-0235, CVE-2017-0236, and CVE-2017-0238.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9758,7 +9758,7 @@
     {
       "cve_id": "CVE-2017-0235",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Edge in the way that the Chakra JavaScript engine renders when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0224, CVE-2017-0228, CVE-2017-0229, CVE-2017-0230, CVE-2017-0234, CVE-2017-0236, and CVE-2017-0238.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9779,7 +9779,7 @@
     {
       "cve_id": "CVE-2017-0236",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Edge in the way that the Chakra JavaScript engine renders when handling objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0224, CVE-2017-0228, CVE-2017-0229, CVE-2017-0230, CVE-2017-0234, CVE-2017-0235, and CVE-2017-0238.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9800,7 +9800,7 @@
     {
       "cve_id": "CVE-2017-0238",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft browsers in the way JavaScript scripting engines handle objects in memory, aka \"Scripting Engine Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0224, CVE-2017-0228, CVE-2017-0229, CVE-2017-0230, CVE-2017-0234, CVE-2017-0235, and CVE-2017-0236.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9821,7 +9821,7 @@
     {
       "cve_id": "CVE-2017-0240",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Edge in the way affected Microsoft scripting engines render when handling objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0221 and CVE-2017-0227.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9842,7 +9842,7 @@
     {
       "cve_id": "CVE-2017-0266",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in Microsoft Edge in the way affected Microsoft scripting engines render when handling objects in memory, aka \"Microsoft Edge Remote Code Execution Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9863,7 +9863,7 @@
     {
       "cve_id": "CVE-2017-0093",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability in Microsoft Edge exists in the way that the Scripting Engine renders when handling objects in memory in Microsoft browsers. The vulnerability could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user, aka \"Scripting Engine Memory Corruption Vulnerability.\" This CVE ID is unique from CVE-2017-0201.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9884,7 +9884,7 @@
     {
       "cve_id": "CVE-2017-0200",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists when Microsoft Edge improperly accesses objects in memory. The vulnerability could corrupt memory in such a way that enables an attacker to execute arbitrary code in the context of the current user, aka \"Microsoft Edge Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9905,7 +9905,7 @@
     {
       "cve_id": "CVE-2017-0205",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists when Microsoft Edge improperly accesses objects in memory. The vulnerability could corrupt memory in such a way that enables an attacker to execute arbitrary code in the context of the current user, aka \"Microsoft Edge Memory Corruption Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9926,7 +9926,7 @@
     {
       "cve_id": "CVE-2017-0010",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9947,7 +9947,7 @@
     {
       "cve_id": "CVE-2017-0015",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9968,7 +9968,7 @@
     {
       "cve_id": "CVE-2017-0023",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The PDF library in Microsoft Edge; Windows 8.1; Windows Server 2012 and R2; Windows RT 8.1; and Windows 10, 1511, and 1607 allows remote attackers to execute arbitrary code via a crafted PDF file, aka \"Microsoft PDF Remote Code Execution Vulnerability.\"",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9989,7 +9989,7 @@
     {
       "cve_id": "CVE-2017-0032",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10010,7 +10010,7 @@
     {
       "cve_id": "CVE-2017-0034",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists when Microsoft Edge improperly accesses objects in memory. The vulnerability could corrupt memory in a way that enables an attacker to execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10031,7 +10031,7 @@
     {
       "cve_id": "CVE-2017-0035",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10052,7 +10052,7 @@
     {
       "cve_id": "CVE-2017-0067",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10073,7 +10073,7 @@
     {
       "cve_id": "CVE-2017-0070",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10094,7 +10094,7 @@
     {
       "cve_id": "CVE-2017-0071",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10115,7 +10115,7 @@
     {
       "cve_id": "CVE-2017-0094",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10136,7 +10136,7 @@
     {
       "cve_id": "CVE-2017-0131",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10157,7 +10157,7 @@
     {
       "cve_id": "CVE-2017-0132",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10178,7 +10178,7 @@
     {
       "cve_id": "CVE-2017-0133",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10199,7 +10199,7 @@
     {
       "cve_id": "CVE-2017-0134",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10220,7 +10220,7 @@
     {
       "cve_id": "CVE-2017-0136",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10241,7 +10241,7 @@
     {
       "cve_id": "CVE-2017-0137",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0138, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10262,7 +10262,7 @@
     {
       "cve_id": "CVE-2017-0138",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0141, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10283,7 +10283,7 @@
     {
       "cve_id": "CVE-2017-0141",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0150, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10304,7 +10304,7 @@
     {
       "cve_id": "CVE-2017-0150",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, and CVE-2017-0151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -10325,7 +10325,7 @@
     {
       "cve_id": "CVE-2017-0151",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A remote code execution vulnerability exists in the way affected Microsoft scripting engines render when handling objects in memory in Microsoft browsers. These vulnerabilities could corrupt memory in such a way that an attacker could execute arbitrary code in the context of the current user. An attacker who successfully exploited the vulnerability could gain the same user rights as the current user. If the current user is logged on with administrative user rights, an attacker who successfully exploited the vulnerability could take control of an affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. This vulnerability is different from those described in CVE-2017-0010, CVE-2017-0015, CVE-2017-0032, CVE-2017-0035, CVE-2017-0067, CVE-2017-0070, CVE-2017-0071, CVE-2017-0094, CVE-2017-0131, CVE-2017-0132, CVE-2017-0133, CVE-2017-0134, CVE-2017-0136, CVE-2017-0137, CVE-2017-0138, CVE-2017-0141, and CVE-2017-0150.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -17864,7 +17864,7 @@
     {
       "cve_id": "CVE-2017-11919",
       "published_date": "2017-12-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore, and Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 R2, and Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016, and Microsoft Edge in Windows 10 Gold, 1511, 1607, 1703, 1709, and Windows Server 2016 allows an attacker to obtain information to further compromise the user's system, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-11887 and CVE-2017-11906.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -17885,7 +17885,7 @@
     {
       "cve_id": "CVE-2017-11803",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703, 1709 and Windows Server, version 1709 allows an attacker to obtain information to further compromise the user's system, due to how Microsoft Edge handles objects in memory, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-11833 and CVE-2017-11844.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -17906,7 +17906,7 @@
     {
       "cve_id": "CVE-2017-11844",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703, 1709 and Windows Server, version 1709 allows an attacker to obtain information to further compromise the user's system, due to how Microsoft Edge handles objects in memory, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-11803 and CVE-2017-11833.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -17927,7 +17927,7 @@
     {
       "cve_id": "CVE-2017-11863",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to trick a user into loading a page containing malicious content, due to how the Edge Content Security Policy (CSP) validates documents, aka \"Microsoft Edge Security Feature Bypass Vulnerability\". This CVE ID is unique from CVE-2017-11872 and CVE-2017-11874.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -17948,7 +17948,7 @@
     {
       "cve_id": "CVE-2017-11872",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1607, 1703, and Windows Server 2016 allows an attacker to force the browser to send data that would otherwise be restricted to a destination website of the attacker's choice, due to how Microsoft Edge handles redirect requests, aka \"Microsoft Edge Security Feature Bypass Vulnerability\". This CVE ID is unique from CVE-2017-11863 and CVE-2017-11874.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -17969,7 +17969,7 @@
     {
       "cve_id": "CVE-2017-11794",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to obtain information to further compromise the user's system, due to how Microsoft Edge handles objects in memory, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-8726 and CVE-2017-11803.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -17990,7 +17990,7 @@
     {
       "cve_id": "CVE-2017-8726",
       "published_date": "2017-10-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to execute arbitrary code in the context of the current user, due to how affected Microsoft scripting engines handle objects in memory, aka \"Microsoft Edge Memory Corruption Vulnerability\". This CVE ID is unique from CVE-2017-11794 and CVE-2017-11803.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18011,7 +18011,7 @@
     {
       "cve_id": "CVE-2017-8597",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Version 1703 allows an attacker to obtain information to further compromise the user's system, due to the way that Microsoft Edge handles objects in memory, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-8643 and CVE-2017-8648.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18032,7 +18032,7 @@
     {
       "cve_id": "CVE-2017-8643",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to leave a malicious website open during user clipboard activities, due to the way that Microsoft Edge handles clipboard events, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-8597 and CVE-2017-8648.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18053,7 +18053,7 @@
     {
       "cve_id": "CVE-2017-8648",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows Version 1703 allows an attacker to obtain information to further compromise the user's system, due to the way that Microsoft Edge handles objects in memory, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-8597 and CVE-2017-8643.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18074,7 +18074,7 @@
     {
       "cve_id": "CVE-2017-8723",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to trick a user into loading a page containing malicious content, due to the way that the Edge Content Security Policy (CSP) validates certain specially crafted documents, aka \"Microsoft Edge Security Feature Bypass Vulnerability\". This CVE ID is unique from CVE-2017-8754.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18095,7 +18095,7 @@
     {
       "cve_id": "CVE-2017-8724",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Version 1703 allows an attacker to trick a user by redirecting the user to a specially crafted website, due to the way that Microsoft Edge parses HTTP content, aka \"Microsoft Edge Spoofing Vulnerability\". This CVE ID is unique from CVE-2017-8735.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18116,7 +18116,7 @@
     {
       "cve_id": "CVE-2017-8735",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to trick a user by redirecting the user to a specially crafted website, due to the way that Microsoft Edge parses HTTP content, aka \"Microsoft Edge Spoofing Vulnerability\". This CVE ID is unique from CVE-2017-8724.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18137,7 +18137,7 @@
     {
       "cve_id": "CVE-2017-8736",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 R2, and Microsoft Edge and Internet Explorer in Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allow an attacker to obtain specific information used in the parent domain, due to Microsoft browser parent domain verification in certain functionality, aka \"Microsoft Browser Information Disclosure Vulnerability\".",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18158,7 +18158,7 @@
     {
       "cve_id": "CVE-2017-8739",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to obtain information to further compromise the user's system, due to the way that the Microsoft Edge scripting engine handles objects in memory, aka \"Scripting Engine Information Disclosure Vulnerability\".",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18179,7 +18179,7 @@
     {
       "cve_id": "CVE-2017-8754",
       "published_date": "2017-09-13",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to trick a user into loading a page containing malicious content, due to the way that the Edge Content Security Policy (CSP) validates certain specially crafted documents, aka \"Microsoft Edge Security Feature Bypass Vulnerability\". This CVE ID is unique from CVE-2017-8723.",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -18200,7 +18200,7 @@
     {
       "cve_id": "CVE-2017-8637",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to bypass Arbitrary Code Guard (ACG) due to how Microsoft Edge accesses memory in code compiled by the Edge Just-In-Time (JIT) compiler, aka \"Scripting Engine Security Feature Bypass Vulnerability\".",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -18221,7 +18221,7 @@
     {
       "cve_id": "CVE-2017-8642",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to elevate privileges due to the way that Microsoft Edge validates JavaScript under specific conditions, aka \"Microsoft Edge Elevation of Privilege Vulnerability\". This CVE ID is unique from CVE-2017-8503.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -18242,7 +18242,7 @@
     {
       "cve_id": "CVE-2017-8644",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to disclose information due to the way that Microsoft Edge handles objects in memory, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-8652 and CVE-2017-8662.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18263,7 +18263,7 @@
     {
       "cve_id": "CVE-2017-8650",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to exploit a security feature bypass due to Microsoft Edge not properly enforcing same-origin policies, aka \"Microsoft Edge Security Feature Bypass Vulnerability\".",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -18284,7 +18284,7 @@
     {
       "cve_id": "CVE-2017-8652",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, and Windows Server 2016 allows an attacker to disclose information due to the way that Microsoft Edge handles objects in memory, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-8644 and CVE-2017-8662.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -18305,7 +18305,7 @@
     {
       "cve_id": "CVE-2017-8659",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to obtain information to further compromise the user's system due to the Chakra scripting engine not properly handling objects in memory, aka \"Scripting Engine Information Disclosure Vulnerability\".",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18326,7 +18326,7 @@
     {
       "cve_id": "CVE-2017-8662",
       "published_date": "2017-08-08",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to disclose information due to how strings are validated in specific scenarios, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-8644 and CVE-2017-8652.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18347,7 +18347,7 @@
     {
       "cve_id": "CVE-2017-0196",
       "published_date": "2017-07-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An information disclosure vulnerability in Microsoft scripting engine allows remote attackers to obtain sensitive information from process memory via a crafted web site, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -18368,7 +18368,7 @@
     {
       "cve_id": "CVE-2017-8592",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers on when Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1, Windows RT 8.1, and Windows Server 2012 and R2, Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow a security feature bypass vulnerability when they improperly handle redirect requests, aka \"Microsoft Browser Security Feature Bypass\".",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -18389,7 +18389,7 @@
     {
       "cve_id": "CVE-2017-8599",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allows an attacker to trick a user into loading a page with malicious content when the Edge Content Security Policy (CSP) fails to properly validate certain specially crafted documents, aka \"Microsoft Edge Security Feature Bypass Vulnerability\".",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -18410,7 +18410,7 @@
     {
       "cve_id": "CVE-2017-8602",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft browsers on Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 R2, Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allow a spoofing vulnerability in the way they parse HTTP content, aka \"Microsoft Browser Spoofing Vulnerability.\"",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -18431,7 +18431,7 @@
     {
       "cve_id": "CVE-2017-8611",
       "published_date": "2017-07-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge on Microsoft Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allows remote attackers to spoof web content via a crafted web site, aka \"Microsoft Edge Spoofing Vulnerability.\"",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -18452,7 +18452,7 @@
     {
       "cve_id": "CVE-2017-8498",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1607 and 1703, and Windows Server 2016 allows an attacker to read data not intended to be disclosed when Edge allows JavaScript XML DOM objects to detect installed browser extensions, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-8504.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18473,7 +18473,7 @@
     {
       "cve_id": "CVE-2017-8504",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Windows 10 1607 and 1703, and Windows Server 2016 allows an attacker to read the URL of a cross-origin request when the Microsoft Edge Fetch API incorrectly handles a filtered response type, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-8498.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18494,7 +18494,7 @@
     {
       "cve_id": "CVE-2017-8523",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allows an attacker to trick a user into loading a page with malicious content when Microsoft Edge fails to correctly apply Same Origin Policy for HTML elements present in other browser windows, aka \"Microsoft Edge Security Feature Bypass Vulnerability\". This CVE ID is unique from CVE-2017-8530 and CVE-2017-8555.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18515,7 +18515,7 @@
     {
       "cve_id": "CVE-2017-8529",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, and Windows Server 2012 and R2 allow an attacker to detect specific files on the user's computer when affected Microsoft scripting engines do not properly handle objects in memory, aka \"Microsoft Browser Information Disclosure Vulnerability\".",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -18536,7 +18536,7 @@
     {
       "cve_id": "CVE-2017-8530",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, and 1703, and Windows Server 2016 allows an attacker to trick a user into loading a page with malicious content when Microsoft Edge does not properly enforce same-origin policies, aka \"Microsoft Edge Security Feature Bypass Vulnerability\". This CVE ID is unique from CVE-2017-8523 and CVE-2017-8555.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -18557,7 +18557,7 @@
     {
       "cve_id": "CVE-2017-8555",
       "published_date": "2017-06-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703 allows an attacker to trick a user into loading a page with malicious content when the Edge Content Security Policy (CSP) fails to properly validate certain specially crafted documents, aka \"Microsoft Edge Security Feature Bypass Vulnerability\". This CVE ID is unique from CVE-2017-8523 and CVE-2017-8530.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18578,7 +18578,7 @@
     {
       "cve_id": "CVE-2017-0231",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A spoofing vulnerability exists when Microsoft browsers render SmartScreen Filter, aka \"Microsoft Browser Spoofing Vulnerability.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18599,7 +18599,7 @@
     {
       "cve_id": "CVE-2017-0241",
       "published_date": "2017-05-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An elevation of privilege vulnerability exists when Microsoft Edge renders a domain-less page in the URL, which could allow Microsoft Edge to perform actions in the context of the Intranet Zone and access functionality that is not typically available to the browser when browsing in the context of the Internet Zone, aka \"Microsoft Edge Elevation of Privilege Vulnerability.\" This CVE ID is unique from CVE-2017-0233.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -18620,7 +18620,7 @@
     {
       "cve_id": "CVE-2017-0203",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A vulnerability exists in Microsoft Edge when the Edge Content Security Policy (CSP) fails to properly validate certain specially crafted documents. An attacker could trick a user into loading a web page with malicious content, aka \"Microsoft Edge Security Feature Bypass Vulnerability.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18641,7 +18641,7 @@
     {
       "cve_id": "CVE-2017-0208",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An information disclosure vulnerability exists in Microsoft Edge when the Chakra scripting engine does not properly handle objects in memory. An attacker who successfully exploited the vulnerability could obtain information to further compromise the user's system, a.k.a. \"Scripting Engine Information Disclosure Vulnerability.\"",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18662,7 +18662,7 @@
     {
       "cve_id": "CVE-2017-0011",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge allows remote attackers to obtain sensitive information via a crafted web site, aka \"Microsoft Edge Information Disclosure Vulnerability.\" This vulnerability is different from those described in CVE-2017-0009, CVE-2017-0017, CVE-2017-0065, and CVE-2017-0068.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18683,7 +18683,7 @@
     {
       "cve_id": "CVE-2017-0012",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to spoof web content via a crafted web site, aka \"Microsoft Browser Spoofing Vulnerability.\" This vulnerability is different from those described in CVE-2017-0033 and CVE-2017-0069.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18704,7 +18704,7 @@
     {
       "cve_id": "CVE-2017-0017",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The RegEx class in the XSS filter in Microsoft Edge allows remote attackers to conduct cross-site scripting (XSS) attacks and obtain sensitive information via unspecified vectors, aka \"Microsoft Edge Information Disclosure Vulnerability.\" This vulnerability is different from those described in CVE-2017-0009, CVE-2017-0011, CVE-2017-0065, and CVE-2017-0068.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -18725,7 +18725,7 @@
     {
       "cve_id": "CVE-2017-0033",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Internet Explorer 11 and Microsoft Edge allow remote attackers to spoof web content via a crafted web site, aka \"Microsoft Browser Spoofing Vulnerability.\" This vulnerability is different from those described in CVE-2017-0012 and CVE-2017-0069.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18746,7 +18746,7 @@
     {
       "cve_id": "CVE-2017-0065",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge allows remote attackers to obtain sensitive information from process memory via a crafted web site, aka \"Microsoft Browser Information Disclosure Vulnerability.\" This vulnerability is different from those described in CVE-2017-0009, CVE-2017-0011, CVE-2017-0017, and CVE-2017-0068.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18767,7 +18767,7 @@
     {
       "cve_id": "CVE-2017-0066",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge allows remote attackers to bypass the Same Origin Policy for HTML elements in other browser windows, aka \"Microsoft Edge Security Feature Bypass Vulnerability.\" This vulnerability is different from those described in CVE-2017-0135 and CVE-2017-0140.",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -18788,7 +18788,7 @@
     {
       "cve_id": "CVE-2017-0068",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Browsers in Microsoft Edge allow remote attackers to obtain sensitive information from process memory via a crafted web site, aka \"Microsoft Edge Information Disclosure Vulnerability.\" This vulnerability is different from those described in CVE-2017-0009, CVE-2017-0011, CVE-2017-0017, and CVE-2017-0065.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18809,7 +18809,7 @@
     {
       "cve_id": "CVE-2017-0069",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge allows remote attackers to spoof web content via a crafted web site, aka \"Microsoft Edge Spoofing Vulnerability.\" This vulnerability is different from those described in CVE-2017-0012 and CVE-2017-0033.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -18830,7 +18830,7 @@
     {
       "cve_id": "CVE-2017-0135",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge allows remote attackers to bypass the Same Origin Policy for HTML elements in other browser windows, aka \"Microsoft Edge Security Feature Bypass Vulnerability.\" This vulnerability is different from those described in CVE-2017-0066 and CVE-2017-0140.",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -18851,7 +18851,7 @@
     {
       "cve_id": "CVE-2017-0140",
       "published_date": "2017-03-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge allows remote attackers to bypass the Same Origin Policy for HTML elements in other browser windows, aka \"Microsoft Edge Security Feature Bypass Vulnerability.\" This vulnerability is different from those described in CVE-2017-0066 and CVE-2017-0135.",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -19859,7 +19859,7 @@
     {
       "cve_id": "CVE-2017-11791",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "ChakraCore and Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 SP2 and R2 SP1, Windows 8.1 and Windows RT 8.1, Windows Server 2012 and R2, and Microsoft Edge and Internet Explorer in Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to obtain information to further compromise the user's system, due to how the scripting engine handles objects in memory, aka \"Scripting Engine Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-11834.",
       "base_score": 3.1,
       "severity": "LOW",
@@ -19880,7 +19880,7 @@
     {
       "cve_id": "CVE-2017-11833",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 Gold, 1511, 1607, 1703, 1709, Windows Server 2016 and Windows Server, version 1709 allows an attacker to determine the origin of all webpages in the affected browser, due to how Microsoft Edge handles cross-origin requests, aka \"Microsoft Edge Information Disclosure Vulnerability\". This CVE ID is unique from CVE-2017-11803 and CVE-2017-11844.",
       "base_score": 3.1,
       "severity": "LOW",
@@ -19901,7 +19901,7 @@
     {
       "cve_id": "CVE-2017-11874",
       "published_date": "2017-11-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Microsoft Edge in Microsoft Windows 10 1703, 1709, Windows Server, version 1709, and ChakraCore allows an attacker to bypass Control Flow Guard (CFG) to run arbitrary code on a target system, due to how Microsoft Edge handles accessing memory in code compiled by the Edge Just-In-Time (JIT) compiler, aka \"Microsoft Edge Security Feature Bypass Vulnerability\". This CVE ID is unique from CVE-2017-11863 and CVE-2017-11872.",
       "base_score": 3.1,
       "severity": "LOW",

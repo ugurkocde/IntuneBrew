@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 4151,
   "summary": {
     "critical": 161,
@@ -1589,7 +1589,7 @@
     {
       "cve_id": "CVE-2026-7910",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-05-07",
+      "last_modified_date": "2026-05-12",
       "description": "Use after free in Views in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -3857,7 +3857,7 @@
     {
       "cve_id": "CVE-2017-5053",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An out-of-bounds read in V8 in Google Chrome prior to 57.0.2987.133 for Linux, Windows, and Mac, and 57.0.2987.132 for Android, allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page, related to Array.prototype.indexOf.",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -3878,7 +3878,7 @@
     {
       "cve_id": "CVE-2016-5178",
       "published_date": "2017-05-23",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Multiple unspecified vulnerabilities in Google Chrome before 53.0.2785.143 allow remote attackers to cause a denial of service or possibly have other impact via unknown vectors.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -3899,7 +3899,7 @@
     {
       "cve_id": "CVE-2014-9654",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The Regular Expressions package in International Components for Unicode (ICU) for C/C++ before 2014-12-03, as used in Google Chrome before 40.0.2214.91, calculates certain values without ensuring that they can be represented in a 24-bit field, which allows remote attackers to cause a denial of service (memory corruption) or possibly have unspecified other impact via a crafted string, a related issue to CVE-2014-7923.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -3920,7 +3920,7 @@
     {
       "cve_id": "CVE-2013-6647",
       "published_date": "2017-04-11",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use-after-free in AnimationController::endAnimationUpdate in Google Chrome.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -34874,7 +34874,7 @@
     {
       "cve_id": "CVE-2017-5052",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An incorrect assumption about block structure in Blink in Google Chrome prior to 57.0.2987.133 for Mac, Windows, and Linux, and 57.0.2987.132 for Android, allowed a remote attacker to potentially exploit memory corruption via a crafted HTML page that triggers improper casting.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -34895,7 +34895,7 @@
     {
       "cve_id": "CVE-2017-5054",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An out-of-bounds read in V8 in Google Chrome prior to 57.0.2987.133 for Linux, Windows, and Mac, and 57.0.2987.132 for Android, allowed a remote attacker to obtain heap memory contents via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -34916,7 +34916,7 @@
     {
       "cve_id": "CVE-2017-5055",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in printing in Google Chrome prior to 57.0.2987.133 for Linux and Windows allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -34937,7 +34937,7 @@
     {
       "cve_id": "CVE-2017-5056",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in Blink in Google Chrome prior to 57.0.2987.133 for Linux, Windows, and Mac, and 57.0.2987.132 for Android, allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -34958,7 +34958,7 @@
     {
       "cve_id": "CVE-2017-5057",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Type confusion in PDFium in Google Chrome prior to 58.0.3029.81 for Mac, Windows, and Linux, and 58.0.3029.83 for Android, allowed a remote attacker to perform an out of bounds memory read via a crafted PDF file.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -34979,7 +34979,7 @@
     {
       "cve_id": "CVE-2017-5058",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in PrintPreview in Google Chrome prior to 58.0.3029.81 for Windows allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35000,7 +35000,7 @@
     {
       "cve_id": "CVE-2017-5059",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Type confusion in Blink in Google Chrome prior to 58.0.3029.81 for Linux, Windows, and Mac, and 58.0.3029.83 for Android, allowed a remote attacker to potentially obtain code execution via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35021,7 +35021,7 @@
     {
       "cve_id": "CVE-2017-5062",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in Chrome Apps in Google Chrome prior to 58.0.3029.81 for Mac, Windows, and Linux, and 58.0.3029.83 for Android, allowed a remote attacker to potentially perform out of bounds memory access via a crafted Chrome extension.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35042,7 +35042,7 @@
     {
       "cve_id": "CVE-2017-5063",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A numeric overflow in Skia in Google Chrome prior to 58.0.3029.81 for Linux, Windows, and Mac, and 58.0.3029.83 for Android, allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35063,7 +35063,7 @@
     {
       "cve_id": "CVE-2017-5064",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Incorrect handling of DOM changes in Blink in Google Chrome prior to 58.0.3029.81 for Windows allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35084,7 +35084,7 @@
     {
       "cve_id": "CVE-2017-5068",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Incorrect handling of picture ID in WebRTC in Google Chrome prior to 58.0.3029.96 for Mac, Windows, and Linux allowed a remote attacker to trigger a race condition via a crafted HTML page.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35105,7 +35105,7 @@
     {
       "cve_id": "CVE-2017-5073",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Use after free in print preview in Blink in Google Chrome prior to 59.0.3071.86 for Linux, Windows, and Mac, and 59.0.3071.92 for Android, allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35126,7 +35126,7 @@
     {
       "cve_id": "CVE-2017-5074",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in Chrome Apps in Google Chrome prior to 59.0.3071.86 for Windows allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page, related to Bluetooth.",
       "base_score": 8.0,
       "severity": "HIGH",
@@ -35147,7 +35147,7 @@
     {
       "cve_id": "CVE-2017-5077",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient validation of untrusted input in Skia in Google Chrome prior to 59.0.3071.86 for Linux, Windows, and Mac, and 59.0.3071.92 for Android, allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35168,7 +35168,7 @@
     {
       "cve_id": "CVE-2017-5078",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient validation of untrusted input in Blink's mailto: handling in Google Chrome prior to 59.0.3071.86 for Linux, Windows, and Mac allowed a remote attacker to perform command injection via a crafted HTML page, a similar issue to CVE-2004-0121. For example, characters such as * have an incorrect interaction with xdg-email in xdg-utils, and a space character can be used in front of a command-line argument.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35189,7 +35189,7 @@
     {
       "cve_id": "CVE-2017-5080",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in credit card autofill in Google Chrome prior to 59.0.3071.86 for Linux and Windows allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35210,7 +35210,7 @@
     {
       "cve_id": "CVE-2017-5087",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in Blink in Google Chrome prior to 59.0.3071.104 for Mac, Windows, and Linux, and 59.0.3071.117 for Android, allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page, aka an IndexedDB sandbox escape.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35231,7 +35231,7 @@
     {
       "cve_id": "CVE-2017-5088",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient validation of untrusted input in V8 in Google Chrome prior to 59.0.3071.104 for Mac, Windows, and Linux, and 59.0.3071.117 for Android, allowed a remote attacker to perform out of bounds memory access via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35252,7 +35252,7 @@
     {
       "cve_id": "CVE-2017-5091",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in IndexedDB in Google Chrome prior to 60.0.3112.78 for Linux, Android, Windows, and Mac allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35273,7 +35273,7 @@
     {
       "cve_id": "CVE-2017-5092",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient validation of untrusted input in PPAPI Plugins in Google Chrome prior to 60.0.3112.78 for Windows allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35294,7 +35294,7 @@
     {
       "cve_id": "CVE-2017-5095",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Stack overflow in PDFium in Google Chrome prior to 60.0.3112.78 for Linux, Windows, and Mac allowed a remote attacker to potentially exploit stack corruption via a crafted PDF file.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35315,7 +35315,7 @@
     {
       "cve_id": "CVE-2017-5097",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient validation of untrusted input in Skia in Google Chrome prior to 60.0.3112.78 for Linux allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35336,7 +35336,7 @@
     {
       "cve_id": "CVE-2017-5098",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in V8 in Google Chrome prior to 60.0.3112.78 for Mac, Windows, Linux, and Android allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35357,7 +35357,7 @@
     {
       "cve_id": "CVE-2017-5099",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient validation of untrusted input in PPAPI Plugins in Google Chrome prior to 60.0.3112.78 for Mac allowed a remote attacker to potentially gain privilege elevation via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35378,7 +35378,7 @@
     {
       "cve_id": "CVE-2017-5100",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in Apps in Google Chrome prior to 60.0.3112.78 for Windows allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35399,7 +35399,7 @@
     {
       "cve_id": "CVE-2017-5108",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Type confusion in PDFium in Google Chrome prior to 60.0.3112.78 for Mac, Windows, Linux, and Android allowed a remote attacker to potentially maliciously modify objects via a crafted PDF file.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35420,7 +35420,7 @@
     {
       "cve_id": "CVE-2017-5111",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in PDFium in Google Chrome prior to 61.0.3163.79 for Linux, Windows, and Mac allowed a remote attacker to potentially exploit memory corruption via a crafted PDF file.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35441,7 +35441,7 @@
     {
       "cve_id": "CVE-2017-5112",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Heap buffer overflow in WebGL in Google Chrome prior to 61.0.3163.79 for Windows allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35462,7 +35462,7 @@
     {
       "cve_id": "CVE-2017-5113",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Math overflow in Skia in Google Chrome prior to 61.0.3163.79 for Mac, Windows, and Linux, and 61.0.3163.81 for Android, allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35483,7 +35483,7 @@
     {
       "cve_id": "CVE-2017-5114",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate use of partition alloc in PDFium in Google Chrome prior to 61.0.3163.79 for Linux, Windows, and Mac, and 61.0.3163.81 for Android, allowed a remote attacker to potentially exploit memory corruption via a crafted PDF file.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35504,7 +35504,7 @@
     {
       "cve_id": "CVE-2017-5115",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Type confusion in V8 in Google Chrome prior to 61.0.3163.79 for Windows allowed a remote attacker to potentially exploit object corruption via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35525,7 +35525,7 @@
     {
       "cve_id": "CVE-2017-5116",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Type confusion in V8 in Google Chrome prior to 61.0.3163.79 for Mac, Windows, and Linux, and 61.0.3163.81 for Android, allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35546,7 +35546,7 @@
     {
       "cve_id": "CVE-2017-5121",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate use of JIT optimisation in V8 in Google Chrome prior to 61.0.3163.100 for Linux, Windows, and Mac allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page, related to the escape analysis phase.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35567,7 +35567,7 @@
     {
       "cve_id": "CVE-2017-5122",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate use of table size handling in V8 in Google Chrome prior to 61.0.3163.100 for Windows allowed a remote attacker to trigger out-of-bounds access via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35588,7 +35588,7 @@
     {
       "cve_id": "CVE-2016-5177",
       "published_date": "2017-05-23",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Use-after-free vulnerability in V8 in Google Chrome before 53.0.2785.143 allows remote attackers to cause a denial of service (crash) or possibly have unspecified other impact via unknown vectors.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35609,7 +35609,7 @@
     {
       "cve_id": "CVE-2017-5047",
       "published_date": "2017-04-25",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An integer overflow in FFmpeg in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android allowed a remote attacker to perform an out of bounds memory write via a crafted video file, related to ChunkDemuxer.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35630,7 +35630,7 @@
     {
       "cve_id": "CVE-2017-5048",
       "published_date": "2017-04-25",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An integer overflow in FFmpeg in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android allowed a remote attacker to perform an out of bounds memory write via a crafted video file, related to ChunkDemuxer.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35651,7 +35651,7 @@
     {
       "cve_id": "CVE-2017-5049",
       "published_date": "2017-04-25",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An integer overflow in FFmpeg in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android allowed a remote attacker to perform an out of bounds memory write via a crafted video file, related to ChunkDemuxer.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35672,7 +35672,7 @@
     {
       "cve_id": "CVE-2017-5050",
       "published_date": "2017-04-25",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An integer overflow in FFmpeg in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android allowed a remote attacker to perform an out of bounds memory write via a crafted video file, related to ChunkDemuxer.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35693,7 +35693,7 @@
     {
       "cve_id": "CVE-2017-5051",
       "published_date": "2017-04-25",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An integer overflow in FFmpeg in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android allowed a remote attacker to perform an out of bounds memory write via a crafted video file, related to ChunkDemuxer.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35714,7 +35714,7 @@
     {
       "cve_id": "CVE-2017-5029",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The xsltAddTextString function in transform.c in libxslt 1.1.29, as used in Blink in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android, lacked a check for integer overflow during a size calculation, which allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35735,7 +35735,7 @@
     {
       "cve_id": "CVE-2017-5031",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in ANGLE in Google Chrome prior to 57.0.2987.98 for Windows allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35756,7 +35756,7 @@
     {
       "cve_id": "CVE-2017-5032",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "PDFium in Google Chrome prior to 57.0.2987.98 for Windows could be made to increment off the end of a buffer, which allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35777,7 +35777,7 @@
     {
       "cve_id": "CVE-2017-5034",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in PDFium in Google Chrome prior to 57.0.2987.98 for Linux and Windows allowed a remote attacker to perform an out of bounds memory read via a crafted PDF file.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35798,7 +35798,7 @@
     {
       "cve_id": "CVE-2017-5035",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Google Chrome prior to 57.0.2987.98 for Windows and Mac had a race condition, which could cause Chrome to display incorrect certificate information for a site.",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -35819,7 +35819,7 @@
     {
       "cve_id": "CVE-2017-5036",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in PDFium in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android allowed a remote attacker to have an unspecified impact via a crafted PDF file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -35840,7 +35840,7 @@
     {
       "cve_id": "CVE-2017-5037",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An integer overflow in FFmpeg in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android allowed a remote attacker to perform an out of bounds memory write via a crafted video file, related to ChunkDemuxer.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -35861,7 +35861,7 @@
     {
       "cve_id": "CVE-2017-5039",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in PDFium in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -35882,7 +35882,7 @@
     {
       "cve_id": "CVE-2017-5043",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Chrome Apps in Google Chrome prior to 57.0.2987.98 for Linux, Windows, and Mac had a use after free bug in GuestView, which allowed a remote attacker to perform an out of bounds memory read via a crafted Chrome extension.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35903,7 +35903,7 @@
     {
       "cve_id": "CVE-2016-5168",
       "published_date": "2017-04-21",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Skia, as used in Google Chrome before 50.0.2661.94, allows remote attackers to bypass the Same Origin Policy and obtain sensitive information.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -35924,7 +35924,7 @@
     {
       "cve_id": "CVE-2017-5009",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "WebRTC in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, failed to perform proper bounds checking, which allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35945,7 +35945,7 @@
     {
       "cve_id": "CVE-2017-5012",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A heap buffer overflow in V8 in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35966,7 +35966,7 @@
     {
       "cve_id": "CVE-2016-5196",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The content renderer client in Google Chrome prior to 54.0.2840.85 for Android insufficiently enforced the Same Origin Policy amongst downloaded files, which allowed a remote attacker to access any downloaded file and interact with sites, including those the user was logged into, via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -35987,7 +35987,7 @@
     {
       "cve_id": "CVE-2016-5197",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The content view client in Google Chrome prior to 54.0.2840.85 for Android insufficiently validated intent URLs, which allowed a remote attacker who had compromised the renderer process to start arbitrary activity on the system via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -36008,7 +36008,7 @@
     {
       "cve_id": "CVE-2016-5199",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An off by one error resulting in an allocation of zero size in FFmpeg in Google Chrome prior to 54.0.2840.98 for Mac, and 54.0.2840.99 for Windows, and 54.0.2840.100 for Linux, and 55.0.2883.84 for Android allowed a remote attacker to potentially exploit heap corruption via a crafted video file.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -36029,7 +36029,7 @@
     {
       "cve_id": "CVE-2016-5200",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "V8 in Google Chrome prior to 54.0.2840.98 for Mac, and 54.0.2840.99 for Windows, and 54.0.2840.100 for Linux, and 55.0.2883.84 for Android incorrectly applied type rules, which allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -36050,7 +36050,7 @@
     {
       "cve_id": "CVE-2016-5203",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in PDFium in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -36071,7 +36071,7 @@
     {
       "cve_id": "CVE-2016-5206",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The PDF plugin in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android incorrectly followed redirects, which allowed a remote attacker to bypass the Same Origin Policy via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -36092,7 +36092,7 @@
     {
       "cve_id": "CVE-2016-5209",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Bad casting in bitmap manipulation in Blink in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -36113,7 +36113,7 @@
     {
       "cve_id": "CVE-2016-5210",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Heap buffer overflow during TIFF image parsing in PDFium in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -36134,7 +36134,7 @@
     {
       "cve_id": "CVE-2016-5211",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in PDFium in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to potentially exploit heap corruption via a crafted PDF file.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -36155,7 +36155,7 @@
     {
       "cve_id": "CVE-2016-5213",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in V8 in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -71477,7 +71477,7 @@
     {
       "cve_id": "CVE-2017-5060",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient Policy Enforcement in Omnibox in Google Chrome prior to 58.0.3029.81 for Mac, Windows, and Linux, and 58.0.3029.83 for Android, allowed a remote attacker to perform domain spoofing via IDN homographs in a crafted domain name.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71498,7 +71498,7 @@
     {
       "cve_id": "CVE-2017-5061",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A race condition in navigation in Google Chrome prior to 58.0.3029.81 for Linux, Windows, and Mac allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -71519,7 +71519,7 @@
     {
       "cve_id": "CVE-2017-5065",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Lack of an appropriate action on page navigation in Blink in Google Chrome prior to 58.0.3029.81 for Windows and Mac allowed a remote attacker to potentially confuse a user into making an incorrect security decision via a crafted HTML page.",
       "base_score": 4.7,
       "severity": "MEDIUM",
@@ -71540,7 +71540,7 @@
     {
       "cve_id": "CVE-2017-5066",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient consistency checks in signature handling in the networking stack in Google Chrome prior to 58.0.3029.81 for Mac, Windows, and Linux, and 58.0.3029.83 for Android, allowed a remote attacker to incorrectly accept a badly formed X.509 certificate via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71561,7 +71561,7 @@
     {
       "cve_id": "CVE-2017-5067",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "An insufficient watchdog timer in navigation in Google Chrome prior to 58.0.3029.81 for Linux, Windows, and Mac allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71582,7 +71582,7 @@
     {
       "cve_id": "CVE-2017-5069",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Incorrect MIME type of XSS-Protection reports in Blink in Google Chrome prior to 58.0.3029.81 for Linux, Windows, and Mac, and 58.0.3029.83 for Android, allowed a remote attacker to circumvent Cross-Origin Resource Sharing checks via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -71603,7 +71603,7 @@
     {
       "cve_id": "CVE-2017-5071",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient validation of untrusted input in V8 in Google Chrome prior to 59.0.3071.86 for Linux, Windows and Mac, and 59.0.3071.92 for Android allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -71624,7 +71624,7 @@
     {
       "cve_id": "CVE-2017-5072",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate implementation in Omnibox in Google Chrome prior to 59.0.3071.92 for Android allowed a remote attacker to perform domain spoofing with RTL characters via a crafted URL page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71645,7 +71645,7 @@
     {
       "cve_id": "CVE-2017-5075",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate implementation in CSP reporting in Blink in Google Chrome prior to 59.0.3071.86 for Linux, Windows, and Mac, and 59.0.3071.92 for Android, allowed a remote attacker to obtain the value of url fragments via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -71666,7 +71666,7 @@
     {
       "cve_id": "CVE-2017-5076",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient Policy Enforcement in Omnibox in Google Chrome prior to 59.0.3071.86 for Mac, Windows, and Linux, and 59.0.3071.92 for Android, allowed a remote attacker to perform domain spoofing via IDN homographs in a crafted domain name.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71687,7 +71687,7 @@
     {
       "cve_id": "CVE-2017-5079",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate implementation in Blink in Google Chrome prior to 59.0.3071.86 for Mac, Windows, and Linux, and 59.0.3071.92 for Android, allowed a remote attacker to display UI on a non attacker controlled tab via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -71708,7 +71708,7 @@
     {
       "cve_id": "CVE-2017-5082",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Failure to take advantage of available mitigations in credit card autofill in Google Chrome prior to 59.0.3071.92 for Android allowed a local attacker to take screen shots of credit card information via a crafted HTML page.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -71729,7 +71729,7 @@
     {
       "cve_id": "CVE-2017-5083",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate implementation in Blink in Google Chrome prior to 59.0.3071.86 for Mac, Windows, and Linux, and 59.0.3071.92 for Android, allowed a remote attacker to display UI on a non attacker controlled tab via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -71750,7 +71750,7 @@
     {
       "cve_id": "CVE-2017-5086",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient Policy Enforcement in Omnibox in Google Chrome prior to 59.0.3071.86 for Windows and Mac allowed a remote attacker to perform domain spoofing via IDN homographs in a crafted domain name.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71771,7 +71771,7 @@
     {
       "cve_id": "CVE-2017-5089",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient Policy Enforcement in Omnibox in Google Chrome prior to 59.0.3071.104 for Mac allowed a remote attacker to perform domain spoofing via a crafted domain name.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71792,7 +71792,7 @@
     {
       "cve_id": "CVE-2017-5090",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient Policy Enforcement in Omnibox in Google Chrome prior to 59.0.3071.115 for Mac allowed a remote attacker to perform domain spoofing via a crafted domain name containing a U+0620 character, aka Apple rdar problem 32458012.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71813,7 +71813,7 @@
     {
       "cve_id": "CVE-2017-5093",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate implementation in modal dialog handling in Blink in Google Chrome prior to 60.0.3112.78 for Mac, Windows, Linux, and Android allowed a remote attacker to prevent a full screen warning from being displayed via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71834,7 +71834,7 @@
     {
       "cve_id": "CVE-2017-5094",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Type confusion in extensions JavaScript bindings in Google Chrome prior to 60.0.3112.78 for Mac, Windows, Linux, and Android allowed a remote attacker to potentially maliciously modify objects via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71855,7 +71855,7 @@
     {
       "cve_id": "CVE-2017-5096",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient policy enforcement during navigation between different schemes in Google Chrome prior to 60.0.3112.78 for Android allowed a remote attacker to perform cross origin content download via a crafted HTML page, related to intents.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -71876,7 +71876,7 @@
     {
       "cve_id": "CVE-2017-5101",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate implementation in Omnibox in Google Chrome prior to 60.0.3112.78 for Linux, Windows, and Mac allowed a remote attacker to spoof the contents of the Omnibox via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71897,7 +71897,7 @@
     {
       "cve_id": "CVE-2017-5102",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Use of an uninitialized value in Skia in Google Chrome prior to 60.0.3112.78 for Mac, Windows, Linux, and Android allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -71918,7 +71918,7 @@
     {
       "cve_id": "CVE-2017-5103",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Use of an uninitialized value in Skia in Google Chrome prior to 60.0.3112.78 for Linux, Windows, and Mac allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -71939,7 +71939,7 @@
     {
       "cve_id": "CVE-2017-5104",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate implementation in interstitials in Google Chrome prior to 60.0.3112.78 for Mac allowed a remote attacker to spoof the contents of the omnibox via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71960,7 +71960,7 @@
     {
       "cve_id": "CVE-2017-5105",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient Policy Enforcement in Omnibox in Google Chrome prior to 60.0.3112.78 for Mac, Windows, Linux, and Android allowed a remote attacker to perform domain spoofing via IDN homographs in a crafted domain name.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -71981,7 +71981,7 @@
     {
       "cve_id": "CVE-2017-5106",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Insufficient Policy Enforcement in Omnibox in Google Chrome prior to 60.0.3112.78 for Mac, Windows, Linux, and Android allowed a remote attacker to perform domain spoofing via IDN homographs in a crafted domain name.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72002,7 +72002,7 @@
     {
       "cve_id": "CVE-2017-5107",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A timing attack in SVG rendering in Google Chrome prior to 60.0.3112.78 for Linux, Windows, and Mac allowed a remote attacker to extract pixel values from a cross-origin page being iframe'd via a crafted HTML page.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -72023,7 +72023,7 @@
     {
       "cve_id": "CVE-2017-5109",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate implementation of unload handler handling in permission prompts in Google Chrome prior to 60.0.3112.78 for Linux, Windows, and Mac allowed a remote attacker to display UI on a non attacker controlled tab via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72044,7 +72044,7 @@
     {
       "cve_id": "CVE-2017-5110",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate implementation of the web payments API on blob: and data: schemes in Web Payments in Google Chrome prior to 60.0.3112.78 for Mac, Windows, Linux, and Android allowed a remote attacker to spoof the contents of the Omnibox via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72065,7 +72065,7 @@
     {
       "cve_id": "CVE-2017-5117",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Use of an uninitialized value in Skia in Google Chrome prior to 61.0.3163.79 for Linux and Windows allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72086,7 +72086,7 @@
     {
       "cve_id": "CVE-2017-5118",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 61.0.3163.79 for Mac, Windows, and Linux, and 61.0.3163.81 for Android, failed to correctly propagate CSP restrictions to javascript scheme pages, which allowed a remote attacker to bypass content security policy via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72107,7 +72107,7 @@
     {
       "cve_id": "CVE-2017-5119",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Use of an uninitialized value in Skia in Google Chrome prior to 61.0.3163.79 for Mac, Windows, and Linux, and 61.0.3163.81 for Android, allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72128,7 +72128,7 @@
     {
       "cve_id": "CVE-2017-5120",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Inappropriate use of www mismatch redirects in browser navigation in Google Chrome prior to 61.0.3163.79 for Mac, Windows, and Linux, and 61.0.3163.81 for Android, allowed a remote attacker to potentially downgrade HTTPS requests to HTTP via a crafted HTML page. In other words, Chrome could transmit cleartext even though the user had entered an https URL, because of a misdesigned workaround for cases where the domain name in a URL almost matches the domain name in an X.509 server certificate (but differs in the initial \"www.\" substring).",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72149,7 +72149,7 @@
     {
       "cve_id": "CVE-2015-1239",
       "published_date": "2017-10-18",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Double free vulnerability in the j2k_read_ppm_v3 function in OpenJPEG before r2997, as used in PDFium in Google Chrome, allows remote attackers to cause a denial of service (process crash) via a crafted PDF.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72170,7 +72170,7 @@
     {
       "cve_id": "CVE-2015-1206",
       "published_date": "2017-10-06",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Heap-based buffer overflow in Google Chrome before M40 allows remote attackers to cause a denial of service (unpaged memory write and process crash) via a crafted MP4 file.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -72191,7 +72191,7 @@
     {
       "cve_id": "CVE-2015-1207",
       "published_date": "2017-06-06",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Double-free vulnerability in libavformat/mov.c in FFMPEG in Google Chrome 41.0.2251.0 allows remote attackers to cause a denial of service (memory corruption and crash) via a crafted .m4a file.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72212,7 +72212,7 @@
     {
       "cve_id": "CVE-2017-5033",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android failed to correctly propagate CSP restrictions to local scheme pages, which allowed a remote attacker to bypass content security policy via a crafted HTML page, related to the unsafe-inline keyword.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72233,7 +72233,7 @@
     {
       "cve_id": "CVE-2017-5038",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Chrome Apps in Google Chrome prior to 57.0.2987.98 for Linux, Windows, and Mac had a use after free bug in GuestView, which allowed a remote attacker to perform an out of bounds memory read via a crafted Chrome extension.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -72254,7 +72254,7 @@
     {
       "cve_id": "CVE-2017-5040",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "V8 in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android was missing a neutering check, which allowed a remote attacker to read values in memory via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72275,7 +72275,7 @@
     {
       "cve_id": "CVE-2017-5041",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Google Chrome prior to 57.0.2987.100 incorrectly handled back-forward navigation, which allowed a remote attacker to display incorrect information for a site via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72296,7 +72296,7 @@
     {
       "cve_id": "CVE-2017-5042",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Cast in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android sent cookies to sites discovered via SSDP, which allowed an attacker on the local network segment to initiate connections to arbitrary URLs and observe any plaintext cookies sent.",
       "base_score": 5.7,
       "severity": "MEDIUM",
@@ -72317,7 +72317,7 @@
     {
       "cve_id": "CVE-2017-5044",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Heap buffer overflow in filter processing in Skia in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -72338,7 +72338,7 @@
     {
       "cve_id": "CVE-2017-5045",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "XSS Auditor in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android allowed detection of a blocked iframe load, which allowed a remote attacker to brute force JavaScript variables via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -72359,7 +72359,7 @@
     {
       "cve_id": "CVE-2017-5046",
       "published_date": "2017-04-24",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "V8 in Google Chrome prior to 57.0.2987.98 for Mac, Windows, and Linux and 57.0.2987.108 for Android had insufficient policy enforcement, which allowed a remote attacker to spoof the location object via a crafted HTML page, related to Blink information disclosure.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72401,7 +72401,7 @@
     {
       "cve_id": "CVE-2017-5006",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, incorrectly handled object owner relationships, which allowed a remote attacker to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -72422,7 +72422,7 @@
     {
       "cve_id": "CVE-2017-5007",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, incorrectly handled the sequence of events when closing a page, which allowed a remote attacker to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -72443,7 +72443,7 @@
     {
       "cve_id": "CVE-2017-5008",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, allowed attacker controlled JavaScript to be run during the invocation of a private script method, which allowed a remote attacker to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -72464,7 +72464,7 @@
     {
       "cve_id": "CVE-2017-5010",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, resolved promises in an inappropriate context, which allowed a remote attacker to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -72485,7 +72485,7 @@
     {
       "cve_id": "CVE-2017-5011",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Google Chrome prior to 56.0.2924.76 for Windows insufficiently sanitized DevTools URLs, which allowed a remote attacker who convinced a user to install a malicious extension to read filesystem contents via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72506,7 +72506,7 @@
     {
       "cve_id": "CVE-2017-5013",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Google Chrome prior to 56.0.2924.76 for Linux incorrectly handled new tab page navigations in non-selected tabs, which allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72527,7 +72527,7 @@
     {
       "cve_id": "CVE-2017-5014",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Heap buffer overflow during image processing in Skia in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -72548,7 +72548,7 @@
     {
       "cve_id": "CVE-2017-5015",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, incorrectly handled Unicode glyphs, which allowed a remote attacker to perform domain spoofing via IDN homographs in a crafted domain name.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72569,7 +72569,7 @@
     {
       "cve_id": "CVE-2017-5016",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, failed to prevent certain UI elements from being displayed by non-visible pages, which allowed a remote attacker to show certain UI elements on a page they don't control via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72590,7 +72590,7 @@
     {
       "cve_id": "CVE-2017-5017",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Interactions with the OS in Google Chrome prior to 56.0.2924.76 for Mac insufficiently cleared video memory, which allowed a remote attacker to possibly extract image fragments on systems with GeForce 8600M graphics chips via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72611,7 +72611,7 @@
     {
       "cve_id": "CVE-2017-5018",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, had an insufficiently strict content security policy on the Chrome app launcher page, which allowed a remote attacker to inject scripts or HTML into a privileged page via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -72632,7 +72632,7 @@
     {
       "cve_id": "CVE-2017-5019",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -72653,7 +72653,7 @@
     {
       "cve_id": "CVE-2017-5020",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, failed to require a user gesture for powerful download operations, which allowed a remote attacker who convinced a user to install a malicious extension to execute arbitrary code via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -72674,7 +72674,7 @@
     {
       "cve_id": "CVE-2017-5021",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72695,7 +72695,7 @@
     {
       "cve_id": "CVE-2017-5022",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, failed to properly enforce unsafe-inline content security policy, which allowed a remote attacker to bypass content security policy via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72716,7 +72716,7 @@
     {
       "cve_id": "CVE-2017-5023",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Type confusion in Histogram in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, allowed a remote attacker to potentially exploit a near null dereference via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72737,7 +72737,7 @@
     {
       "cve_id": "CVE-2017-5024",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "FFmpeg in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, failed to perform proper bounds checking, which allowed a remote attacker to potentially exploit heap corruption via a crafted video file.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -72758,7 +72758,7 @@
     {
       "cve_id": "CVE-2017-5025",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "FFmpeg in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, failed to perform proper bounds checking, which allowed a remote attacker to potentially exploit heap corruption via a crafted video file.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -72779,7 +72779,7 @@
     {
       "cve_id": "CVE-2017-5026",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, failed to prevent alerts from being displayed by swapped out frames, which allowed a remote attacker to show alerts on a page they don't control via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72800,7 +72800,7 @@
     {
       "cve_id": "CVE-2017-5027",
       "published_date": "2017-02-17",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 56.0.2924.76 for Linux, Windows and Mac, and 56.0.2924.87 for Android, failed to properly enforce unsafe-inline content security policy, which allowed a remote attacker to bypass content security policy via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72821,7 +72821,7 @@
     {
       "cve_id": "CVE-2016-5201",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A leak of privateClass in the extensions API in Google Chrome prior to 54.0.2840.100 for Linux, and 54.0.2840.99 for Windows, and 54.0.2840.98 for Mac allowed a remote attacker to access privileged JavaScript code via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72842,7 +72842,7 @@
     {
       "cve_id": "CVE-2016-5204",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Leaking of an SVG shadow tree leading to corruption of the DOM tree in Blink in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -72863,7 +72863,7 @@
     {
       "cve_id": "CVE-2016-5205",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 55.0.2883.75 for Linux, Windows and Mac, incorrectly handles deferred page loads, which allowed a remote attacker to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -72884,7 +72884,7 @@
     {
       "cve_id": "CVE-2016-5207",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In Blink in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android, corruption of the DOM tree could occur during the removal of a full screen element, which allowed a remote attacker to achieve arbitrary code execution via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -72905,7 +72905,7 @@
     {
       "cve_id": "CVE-2016-5208",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 55.0.2883.75 for Linux and Windows, and 55.0.2883.84 for Android allowed possible corruption of the DOM tree during synchronous event handling, which allowed a remote attacker to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -72926,7 +72926,7 @@
     {
       "cve_id": "CVE-2016-5212",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android insufficiently sanitized DevTools URLs, which allowed a remote attacker to read local files via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -72947,7 +72947,7 @@
     {
       "cve_id": "CVE-2016-5214",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Google Chrome prior to 55.0.2883.75 for Windows mishandled downloaded files, which allowed a remote attacker to prevent the downloaded file from receiving the Mark of the Web via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -72968,7 +72968,7 @@
     {
       "cve_id": "CVE-2016-5215",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in webaudio in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -72989,7 +72989,7 @@
     {
       "cve_id": "CVE-2016-5216",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A use after free in PDFium in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to perform an out of bounds memory read via a crafted PDF file.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -73010,7 +73010,7 @@
     {
       "cve_id": "CVE-2016-5217",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The extensions API in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android incorrectly permitted access to privileged plugins, which allowed a remote attacker to bypass site isolation via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -73031,7 +73031,7 @@
     {
       "cve_id": "CVE-2016-5218",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The extensions API in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android incorrectly handled navigation within PDFs, which allowed a remote attacker to temporarily spoof the contents of the Omnibox (URL bar) via a crafted HTML page containing PDF data.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -73052,7 +73052,7 @@
     {
       "cve_id": "CVE-2016-5219",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A heap use after free in V8 in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -73073,7 +73073,7 @@
     {
       "cve_id": "CVE-2016-5220",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "PDFium in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android incorrectly handled navigation within PDFs, which allowed a remote attacker to read local files via a crafted PDF file.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -73094,7 +73094,7 @@
     {
       "cve_id": "CVE-2016-5221",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Type confusion in libGLESv2 in ANGLE in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android possibly allowed a remote attacker to bypass buffer validation via a crafted HTML page.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -73115,7 +73115,7 @@
     {
       "cve_id": "CVE-2016-5222",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Incorrect handling of invalid URLs in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to spoof the contents of the Omnibox (URL bar) via a crafted HTML page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -73136,7 +73136,7 @@
     {
       "cve_id": "CVE-2016-5223",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Integer overflow in PDFium in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to potentially exploit heap corruption or DoS via a crafted PDF file.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -73157,7 +73157,7 @@
     {
       "cve_id": "CVE-2016-5224",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "A timing attack on denormalized floating point arithmetic in SVG filters in Blink in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android allowed a remote attacker to bypass the Same Origin Policy via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -73178,7 +73178,7 @@
     {
       "cve_id": "CVE-2016-5225",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android incorrectly handled form actions, which allowed a remote attacker to bypass Content Security Policy via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -73199,7 +73199,7 @@
     {
       "cve_id": "CVE-2016-5226",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 55.0.2883.75 for Linux, Windows and Mac executed javascript: URLs entered in the URL bar in the context of the current tab, which allowed a socially engineered user to XSS themselves by dragging and dropping a javascript: URL into the URL bar.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -73220,7 +73220,7 @@
     {
       "cve_id": "CVE-2016-9650",
       "published_date": "2017-01-19",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Blink in Google Chrome prior to 55.0.2883.75 for Mac, Windows and Linux, and 55.0.2883.84 for Android incorrectly handled iframes, which allowed a remote attacker to bypass a no-referrer policy via a crafted HTML page.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -86996,7 +86996,7 @@
     {
       "cve_id": "CVE-2017-5081",
       "published_date": "2017-10-27",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Lack of verification of an extension's locale folder in Google Chrome prior to 59.0.3071.86 for Mac, Windows, and Linux, and 59.0.3071.92 for Android, allowed an attacker with local write access to modify extensions by modifying extension files.",
       "base_score": 3.3,
       "severity": "LOW",

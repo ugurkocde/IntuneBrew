@@ -1,7 +1,7 @@
 {
   "app_name": "Vlc Media Player",
   "app_key": "vlc_media_player",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 113,
   "summary": {
     "critical": 6,
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2017-10699",
       "published_date": "2017-06-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "avcodec 2.2.x, as used in VideoLAN VLC media player 2.2.7-x before 2017-06-29, allows out-of-bounds heap memory write due to calling memcpy() with a wrong size, leading to a denial of service (application crash) or possibly code execution.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -770,7 +770,7 @@
     {
       "cve_id": "CVE-2017-17670",
       "published_date": "2017-12-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "In VideoLAN VLC media player through 2.2.8, there is a type conversion vulnerability in modules/demux/mp4/libmp4.c in the MP4 demux module leading to a invalid free, because the type of a box may be changed between a read operation and a free operation.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -791,7 +791,7 @@
     {
       "cve_id": "CVE-2017-9300",
       "published_date": "2017-05-29",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "plugins\\codec\\libflac_plugin.dll in VideoLAN VLC media player 2.2.4 allows remote attackers to cause a denial of service (heap corruption and application crash) or possibly have unspecified other impact via a crafted FLAC file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -812,7 +812,7 @@
     {
       "cve_id": "CVE-2017-9301",
       "published_date": "2017-05-29",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "plugins\\audio_filter\\libmpgatofixed32_plugin.dll in VideoLAN VLC media player 2.2.4 allows remote attackers to cause a denial of service (invalid read and application crash) or possibly have unspecified other impact via a crafted file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -833,7 +833,7 @@
     {
       "cve_id": "CVE-2017-8311",
       "published_date": "2017-05-23",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Potential heap based buffer overflow in ParseJSS in VideoLAN VLC before 2.2.5 due to skipping NULL terminator in an input string allows attackers to execute arbitrary code via a crafted subtitles file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1736,7 +1736,7 @@
     {
       "cve_id": "CVE-2017-8310",
       "published_date": "2017-05-23",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Heap out-of-bound read in CreateHtmlSubtitle in VideoLAN VLC 2.2.x due to missing check of string termination allows attackers to read data beyond allocated memory and potentially crash the process (causing a denial of service) via a crafted subtitles file.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1757,7 +1757,7 @@
     {
       "cve_id": "CVE-2017-8312",
       "published_date": "2017-05-23",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Heap out-of-bound read in ParseJSS in VideoLAN VLC due to missing check of string length allows attackers to read heap uninitialized data via a crafted subtitles file.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1778,7 +1778,7 @@
     {
       "cve_id": "CVE-2017-8313",
       "published_date": "2017-05-23",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Heap out-of-bound read in ParseJSS in VideoLAN VLC before 2.2.5 due to missing check of string termination allows attackers to read data beyond allocated memory and potentially crash the process via a crafted subtitles file.",
       "base_score": 5.5,
       "severity": "MEDIUM",

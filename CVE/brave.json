@@ -1,7 +1,7 @@
 {
   "app_name": "Brave",
   "app_key": "brave",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 15,
   "summary": {
     "critical": 0,
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2017-8458",
       "published_date": "2017-05-03",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Brave 0.12.4 has a URI Obfuscation issue in which a string such as https://safe.example.com@unsafe.example.com/ is displayed without a clear UI indication that it is not a resource on the safe.example.com web site.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -308,7 +308,7 @@
     {
       "cve_id": "CVE-2017-8459",
       "published_date": "2017-05-03",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Brave 0.12.4 has a Status Bar Obfuscation issue in which a redirection target is shown in a possibly unexpected way. NOTE: third parties dispute this issue because it is a behavior that might have legitimate applications in (for example) the display of web-search results",
       "base_score": 5.3,
       "severity": "MEDIUM",

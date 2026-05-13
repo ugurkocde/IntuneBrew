@@ -1,7 +1,7 @@
 {
   "app_name": "Libreoffice",
   "app_key": "libreoffice",
-  "last_updated": "2026-05-12",
+  "last_updated": "2026-05-13",
   "total_cves": 71,
   "summary": {
     "critical": 12,
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2017-8358",
       "published_date": "2017-04-30",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "LibreOffice before 2017-03-17 has an out-of-bounds write caused by a heap-based buffer overflow related to the ReadJPEG function in vcl/source/filter/jpeg/jpegc.cxx.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2017-7882",
       "published_date": "2017-04-15",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "LibreOffice before 2017-03-14 has an out-of-bounds write related to the HWPFile::TagsRead function in hwpfilter/source/hwpfile.cxx.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2016-10327",
       "published_date": "2017-04-14",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "LibreOffice before 2016-12-22 has an out-of-bounds write caused by a heap-based buffer overflow related to the EnhWMFReader::ReadEnhWMF function in vcl/source/filter/wmf/enhwmf.cxx.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2017-7856",
       "published_date": "2017-04-14",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "LibreOffice before 2017-03-11 has an out-of-bounds write caused by a heap-based buffer overflow in the SVMConverter::ImplConvertFromSVM1 function in vcl/source/gdi/svmconverter.cxx.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -245,7 +245,7 @@
     {
       "cve_id": "CVE-2017-7870",
       "published_date": "2017-04-14",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "LibreOffice before 2017-01-02 has an out-of-bounds write caused by a heap-based buffer overflow related to the tools::Polygon::Insert function in tools/source/generic/poly.cxx.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -749,7 +749,7 @@
     {
       "cve_id": "CVE-2017-14226",
       "published_date": "2017-09-09",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "WP1StylesListener.cpp, WP5StylesListener.cpp, and WP42StylesListener.cpp in libwpd 0.10.1 mishandle iterators, which allows remote attackers to cause a denial of service (heap-based buffer over-read in the WPXTableList class in WPXTable.cpp). This vulnerability can be triggered in LibreOffice before 5.3.7. It may lead to suffering a remote attack against a LibreOffice application.",
       "base_score": 7.5,
       "severity": "HIGH",
