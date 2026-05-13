@@ -1,13 +1,13 @@
 {
   "name": "kiro",
   "description": "Agent-centric IDE with spec-driven development",
-  "version": "0.12.155",
-  "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/0.12.155/kiro-ide-0.12.155-stable-darwin-arm64.dmg",
+  "version": "0.12.184",
+  "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/0.12.184/kiro-ide-0.12.184-stable-darwin-arm64.dmg",
   "vendor_url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/0.11.131/kiro-ide-0.11.131-stable-darwin-arm64.dmg",
   "bundleId": null,
   "homepage": "https://kiro.dev/",
-  "fileName": "kiro-ide-0.12.155-stable-darwin-arm64.dmg",
-  "sha": "4b734ab90fc98de6097219c05ac20d12c045f697e889e2b6e184ed1c734a8833",
+  "fileName": "kiro-ide-0.12.184-stable-darwin-arm64.dmg",
+  "sha": "2e905d1b39834d5946218116c5e47d97dcb02744f91c4e2b6c2a171b17f8571b",
   "category": "Developer Tools",
   "publisher": "Kiro",
   "previous_version": "0.12.155"

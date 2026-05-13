@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1252-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -458,38 +458,56 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-12 00:56 UTC*
+*Last checked: 2026-05-13 01:05 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 151.0b8 | 151.0b9 |
-| PixelSnap | 2.6.2 | 2.6.3 |
-| Dockside | 2.8.1 | 2.8.4 |
-| Readest | 0.10.6 | 0.11.1 |
-| Packages | 1.2.10 | 1.2.11 |
-| XMind | 26.03.04126-202604280709 | 26.03.04129-202605110616 |
-| Termius | 9.38.1 | 9.38.2 |
-| DuckDuckGo | 1.188.0 | 1.189.0 |
-| Git Credential Manager | 2.7.3 | 2.8.0 |
-| pgAdmin4 | 9.14 | 9.15 |
-| Apidog | 2.8.27 | 2.8.28 |
-| Elephas | 11.6009 | 11.7008 |
-| Jitsi Meet | 2026.4.0 | 2026.5.0 |
+| ProcessSpy | 1.13.0 | 1.13.1 |
+| RsyncUI | 2.9.3 | 2.9.8 |
+| Apifox | 2.8.27 | 2.8.28 |
+| LibreWolf | 150.0.2 | 150.0.3 |
+| Mozilla Firefox | 150.0.2 | 150.0.3 |
+| Slack | 4.49.89 | 4.50.121 |
+| Synology Drive | 4.0.2 | 4.0.3 |
+| Grammarly Desktop | 1.164.0.0 | 1.165.1.0 |
+| MongoDB Compass | 1.49.6 | 1.49.7 |
+| Notion | 7.16.0 | 7.17.0 |
+| Dropbox | 250.4.3245 | 252.4.3485 |
+| Discord | 0.0.389 | 0.0.390 |
+| Zed | 1.1.7 | 1.1.8 |
+| Microsoft Office | 16.108.26050324 | 16.109.26051019 |
+| ProtonVPN | 6.5.0 | 6.5.1 |
+| Amazon Chime | 5.23.22488 | 5.23.22522 |
+| Joplin | 3.6.11 | 3.6.13 |
+| AppFlowy | 0.11.8 | 0.11.9 |
+| HTTP Toolkit | 1.25.2 | 1.26.0 |
+| Milanote | 3.18.97 | 3.18.99 |
+| TablePlus | 6.9.1 | 6.9.6 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| AirServer | 7.3 | 7.3.1 |
-| Akiflow | 2.73.11 | 2.73.12 |
-| DeskTime | 6.1.4 | 6.2.1 |
-| Loom | 0.346.4 | 0.347.4 |
+| Nektony App Cleaner & Uninstaller | 9.1.1 | 9.2 |
+| calibrite PROFILER | 3.0.4 | 3.1.0 |
+| Granola | 7.162.6 | 7.205.1 |
+| jamovi | 2.7.28.0 | 2.7.29.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Notesnook | 3.3.17 | 3.3.18 |
-| ChatGPT Atlas | 1.2026.98.2 | 1.2026.119.1 |
-| cmux | 0.64.3 | 0.64.4 |
-| Cloudflare WARP | 2026.3.846.0 | 2026.4.1350.0 |
-| Enpass | 6.11.21.2315 | 6.12.0.2411 |
+| Pitch | 2.125.1 | 2.126.2 |
+| Riverside Studio | 1.24.2 | 1.24.3 |
+| Royal TSX | 6.4.2.1000 | 6.4.3.1000 |
+| Shapr3D | 26.71.0.10875 | 26.80.0.10920 |
+| WebCatalog | 74.8.0 | 74.9.0 |
+| Claude Code | 2.1.126 | 2.1.128 |
+| kiro | 0.12.155 | 0.12.184 |
+| Arq | 7.41 | 7.42 |
+| FUSE-T | 1.2.1 | 1.2.6 |
+| Microsoft Excel | 16.108.26050324 | 16.109.26051019 |
+| Microsoft OneNote | 16.108.26050324 | 16.109.26051019 |
+| Microsoft Outlook | 16.108.26050324 | 16.109.26051019 |
+| Microsoft PowerPoint | 16.108.26050324 | 16.109.26051019 |
+| Microsoft Word | 16.108.26050324 | 16.109.26051019 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
