@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1252-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -459,55 +459,46 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-13 01:05 UTC*
+*Last checked: 2026-05-14 01:05 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| ProcessSpy | 1.13.0 | 1.13.1 |
-| RsyncUI | 2.9.3 | 2.9.8 |
-| Apifox | 2.8.27 | 2.8.28 |
-| LibreWolf | 150.0.2 | 150.0.3 |
-| Mozilla Firefox | 150.0.2 | 150.0.3 |
-| Slack | 4.49.89 | 4.50.121 |
-| Synology Drive | 4.0.2 | 4.0.3 |
-| Grammarly Desktop | 1.164.0.0 | 1.165.1.0 |
-| MongoDB Compass | 1.49.6 | 1.49.7 |
-| Notion | 7.16.0 | 7.17.0 |
-| Dropbox | 250.4.3245 | 252.4.3485 |
-| Discord | 0.0.389 | 0.0.390 |
-| Zed | 1.1.7 | 1.1.8 |
-| Microsoft Office | 16.108.26050324 | 16.109.26051019 |
-| ProtonVPN | 6.5.0 | 6.5.1 |
-| Amazon Chime | 5.23.22488 | 5.23.22522 |
-| Joplin | 3.6.11 | 3.6.13 |
-| AppFlowy | 0.11.8 | 0.11.9 |
-| HTTP Toolkit | 1.25.2 | 1.26.0 |
-| Milanote | 3.18.97 | 3.18.99 |
-| TablePlus | 6.9.1 | 6.9.6 |
+| Mozilla Firefox Developer Edition | 151.0b9 | 151.0b10 |
+| Retcon | 1.6 | 1.6.1 |
+| Rive | 0.8.4804 | 0.8.4840 |
+| Ente Auth | 4.4.17 | 4.4.22 |
+| NVIDIA GeForce NOW | 2.0.84.124 | 2.0.84.131 |
+| Google Chrome | 148.0.7778.97 | 148.0.7778.168 |
+| Microsoft Teams | 26093.311.4599.3126 | 26106.2108.4669.9776 |
+| Spotify | 1.2.88.483 | 1.2.89.539 |
+| Company Portal | 5.2603.0 | 5.2604.0 |
+| Brave | 1.90.121.0 | 1.90.122.0 |
+| draw.io Desktop | 30.0.0 | 30.0.1 |
+| Zed | 1.1.8 | 1.2.3 |
+| Etcher | 2.1.4 | 2.1.6 |
+| Rancher Desktop | 1.22.2 | 1.22.3 |
+| Path Finder | 26.0.1 | 26.1 |
+| Deezer | 7.1.190 | 7.1.200 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Nektony App Cleaner & Uninstaller | 9.1.1 | 9.2 |
-| calibrite PROFILER | 3.0.4 | 3.1.0 |
-| Granola | 7.162.6 | 7.205.1 |
-| jamovi | 2.7.28.0 | 2.7.29.0 |
+| Dust3D | 1.0.2 | 1.0.3 |
+| Boom 3D | 2.2 | 2.2.6 |
+| ChatWork | 2.21.3 | 2.22.0 |
+| DevKnife | 1.13.1 | 1.13.2 |
+| JASP | 0.96.0.0 | 0.97.0.0 |
+| Kdenlive | 26.04.0 | 26.04.1 |
+| Loom | 0.347.4 | 0.347.8 |
+| massCode | 5.4.0 | 5.5.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Pitch | 2.125.1 | 2.126.2 |
-| Riverside Studio | 1.24.2 | 1.24.3 |
-| Royal TSX | 6.4.2.1000 | 6.4.3.1000 |
-| Shapr3D | 26.71.0.10875 | 26.80.0.10920 |
-| WebCatalog | 74.8.0 | 74.9.0 |
-| Claude Code | 2.1.126 | 2.1.128 |
-| kiro | 0.12.155 | 0.12.184 |
-| Arq | 7.41 | 7.42 |
-| FUSE-T | 1.2.1 | 1.2.6 |
-| Microsoft Excel | 16.108.26050324 | 16.109.26051019 |
-| Microsoft OneNote | 16.108.26050324 | 16.109.26051019 |
-| Microsoft Outlook | 16.108.26050324 | 16.109.26051019 |
-| Microsoft PowerPoint | 16.108.26050324 | 16.109.26051019 |
-| Microsoft Word | 16.108.26050324 | 16.109.26051019 |
+| Transfer | 2.4.2 | 2.4.3 |
+| cmux | 0.64.4 | 0.64.5 |
+| Malwarebytes for Mac | 5.23.0.3860 | 5.23.1.3862 |
+| Microsoft Office BusinessPro | 16.108.26050324 | 16.109.26051019 |
+| Salesforce CLI | 2.133.4 | 2.134.6 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

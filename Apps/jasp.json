@@ -1,13 +1,13 @@
 {
   "name": "JASP",
   "description": "Statistical analysis application",
-  "version": "0.96.0.0",
-  "url": "https://github.com/jasp-stats/jasp-desktop/releases/download/v0.96.0/JASP-0.96.0.0-macOS-arm64.dmg",
+  "version": "0.97.0.0",
+  "url": "https://github.com/jasp-stats/jasp-desktop/releases/download/v0.97.0/JASP-0.97.0.0-macOS-arm64.dmg",
   "vendor_url": "https://github.com/jasp-stats/jasp-desktop/releases/download/v0.96.0/JASP-0.96.0.0-macOS-arm64.dmg",
   "bundleId": "org.jaspstats.jasp",
   "homepage": "https://jasp-stats.org/",
-  "fileName": "JASP-0.96.0.0-macOS-arm64.dmg",
-  "sha": "00e60bf3be6d86f410b4f5c1b606132b23185f0234e94d36753393ea06ba5c3b",
+  "fileName": "JASP-0.97.0.0-macOS-arm64.dmg",
+  "sha": "dae1452a6cca56c72b37f7d811748905c9840b54e3df07dbe26fc1176aa06ca7",
   "category": "Productivity",
   "publisher": "JASP Team",
   "previous_version": "0.96.0.0"
