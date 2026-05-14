@@ -1,16 +1,37 @@
 {
   "app_name": "Rocketchat",
   "app_key": "rocketchat",
-  "last_updated": "2026-05-13",
-  "total_cves": 56,
+  "last_updated": "2026-05-14",
+  "total_cves": 57,
   "summary": {
-    "critical": 8,
+    "critical": 9,
     "high": 11,
     "medium": 37,
     "low": 0,
     "kev_count": 0
   },
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2026-29198",
+      "published_date": "2026-04-23",
+      "last_modified_date": "2026-05-13",
+      "description": "In Rocket.Chat <8.3.0, <8.2.1, <8.1.2, <8.0.3, <7.13.5, <7.12.6, <7.11.6, and <7.10.9, a NoSQL injection vulnerability can lead to account takeover of the first user with a generated token when an OAuth app is configured.",
+      "base_score": 9.8,
+      "severity": "CRITICAL",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "7.10.9",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "7.10.9",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "rocket.chat",
+      "product": "rocket.chat"
+    },
     {
       "cve_id": "CVE-2026-28514",
       "published_date": "2026-03-06",
