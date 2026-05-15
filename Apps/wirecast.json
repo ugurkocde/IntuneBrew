@@ -1,13 +1,13 @@
 {
   "name": "Wirecast",
   "description": "Live video streaming production tool",
-  "version": "16.5.1",
-  "url": "https://www.telestream.net/download-files/wirecast/16-5/Wirecast-16.5.1.dmg",
+  "version": "16.5.2",
+  "url": "https://www.telestream.net/download-files/wirecast/16-5/Wirecast-16.5.2.dmg",
   "vendor_url": "https://www.telestream.net/download-files/wirecast/16-5/Wirecast-16.5.1.dmg",
   "bundleId": "net.telestream.wirecast",
   "homepage": "https://www.telestream.net/wirecast/",
-  "fileName": "Wirecast-16.5.1.dmg",
-  "sha": "175d35d5b144f7f312fafd45177ad1111421a66cf6260ad24de1132e6fde898a",
+  "fileName": "Wirecast-16.5.2.dmg",
+  "sha": "289caee253ddf67fe053bb9b7bf696ba7cae3b0547792b513eb0b144967c556e",
   "category": "Media",
   "publisher": "Telestream",
   "previous_version": "16.5.1"
