@@ -1,11 +1,11 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-05-15",
-  "total_cves": 958,
+  "last_updated": "2026-05-16",
+  "total_cves": 959,
   "summary": {
     "critical": 17,
-    "high": 591,
+    "high": 592,
     "medium": 326,
     "low": 24,
     "kev_count": 18
@@ -640,6 +640,27 @@
       "kev_ransomware_use": null,
       "vendor": "microsoft",
       "product": "edge"
+    },
+    {
+      "cve_id": "CVE-2026-41107",
+      "published_date": "2026-05-12",
+      "last_modified_date": "2026-05-15",
+      "description": "External control of file name or path in Microsoft Edge (Chromium-based) allows an unauthorized attacker to disclose information over a network.",
+      "base_score": 7.4,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "148.0.3967.55",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "148.0.3967.55",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "microsoft",
+      "product": "edge_chromium"
     },
     {
       "cve_id": "CVE-2026-26133",
