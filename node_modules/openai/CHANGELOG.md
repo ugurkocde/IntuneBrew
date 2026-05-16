@@ -1,5 +1,13 @@
 # Changelog
 
+## 6.38.0 (2026-05-13)
+
+Full Changelog: [v6.37.0...v6.38.0](https://github.com/openai/openai-node/compare/v6.37.0...v6.38.0)
+
+### Features
+
+* **api:** add service_tier parameter to responses compact method ([423e838](https://github.com/openai/openai-node/commit/423e838c498bd1b77f3b732cfc43c54fc5d261df))
+
 ## 6.37.0 (2026-05-07)
 
 Full Changelog: [v6.36.0...v6.37.0](https://github.com/openai/openai-node/compare/v6.36.0...v6.37.0)

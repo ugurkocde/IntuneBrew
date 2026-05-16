@@ -75,6 +75,8 @@ For secure, automated environments like cloud-managed Kubernetes, Azure, and GCP
 
 The `workloadIdentity` parameter is mutually exclusive with `apiKey`.
 
+The required fields are `identityProviderId`, `serviceAccountId`, and `provider`.
+
 ### Kubernetes (service account tokens)
 
 ```ts
@@ -83,7 +85,6 @@ import { k8sServiceAccountTokenProvider } from 'openai/auth';
 
 const client = new OpenAI({
   workloadIdentity: {
-    clientId: 'your-client-id',
     identityProviderId: 'idp-123',
     serviceAccountId: 'sa-456',
     provider: k8sServiceAccountTokenProvider('/var/run/secrets/kubernetes.io/serviceaccount/token'),
@@ -104,7 +105,6 @@ import { azureManagedIdentityTokenProvider } from 'openai/auth';
 
 const client = new OpenAI({
   workloadIdentity: {
-    clientId: 'your-client-id',
     identityProviderId: 'idp-123',
     serviceAccountId: 'sa-456',
     provider: azureManagedIdentityTokenProvider(),
@@ -120,7 +120,6 @@ import { gcpIDTokenProvider } from 'openai/auth';
 
 const client = new OpenAI({
   workloadIdentity: {
-    clientId: 'your-client-id',
     identityProviderId: 'idp-123',
     serviceAccountId: 'sa-456',
     provider: gcpIDTokenProvider(),
@@ -135,7 +134,6 @@ import OpenAI from 'openai';
 
 const client = new OpenAI({
   workloadIdentity: {
-    clientId: 'your-client-id',
     identityProviderId: 'idp-123',
     serviceAccountId: 'sa-456',
     provider: {
@@ -156,7 +154,6 @@ import { k8sServiceAccountTokenProvider } from 'openai/auth';
 
 const client = new OpenAI({
   workloadIdentity: {
-    clientId: 'your-client-id',
     identityProviderId: 'idp-123',
     serviceAccountId: 'sa-456',
     provider: k8sServiceAccountTokenProvider('/var/token'),

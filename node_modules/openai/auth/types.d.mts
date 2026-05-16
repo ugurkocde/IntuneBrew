@@ -3,8 +3,8 @@ export interface SubjectTokenProvider {
     getToken: () => Promise<string>;
 }
 export interface WorkloadIdentity {
-    /**A unique string that identifies the client.*/
-    clientId: string;
+    /**Optional client identifier for token exchange compatibility.*/
+    clientId?: string;
     /**Identity provider resource id in WIFAPI.*/
     identityProviderId: string;
     /**OpenAI Service account id to bind the verified external identity to.*/
