@@ -1,13 +1,13 @@
 {
   "name": "GitHub Copilot for Xcode",
   "description": "Xcode extension for GitHub Copilot",
-  "version": "0.48.0",
-  "url": "https://githubcopilotide.z13.web.core.windows.net/0.48.0/GitHubCopilotForXcode.dmg",
+  "version": "0.49.0",
+  "url": "https://githubcopilotide.z13.web.core.windows.net/0.49.0/GitHubCopilotForXcode.dmg",
   "vendor_url": "https://githubcopilotide.z13.web.core.windows.net/0.47.0/GitHubCopilotForXcode.dmg",
   "bundleId": "com.github.CopilotForXcode",
   "homepage": "https://github.com/github/CopilotForXcode",
   "fileName": "GitHubCopilotForXcode.dmg",
-  "sha": "169de00f5519952894d8c635f3339b940122883eff4c4683df98ac58a6d2cb08",
+  "sha": "73efa5397a14ca8a47a79cd3c0f3c627d135cce3fb345e6d6ae82bae56fc960c",
   "category": "Developer Tools",
   "publisher": "GitHub, Inc.",
   "previous_version": "0.48.0"

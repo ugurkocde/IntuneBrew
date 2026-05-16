@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1252-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -461,50 +461,46 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-15 01:04 UTC*
+*Last checked: 2026-05-16 00:57 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Rive | 0.8.4840 | 0.8.4850 |
-| Dockside | 2.8.4 | 2.8.5 |
-| SABnzbd | 5.0.1 | 5.0.2 |
-| Typora | 1.13.5 | 1.13.6 |
-| CotEditor | 7.0.2 | 7.0.3 |
-| Trae | 2.3.24300 | 2.3.25938 |
-| Miro | 0.11.139 | 0.11.140 |
-| Snagit | 2026.0.1 | 2026.1.0 |
-| Webex | 46.4.0.34752 | 46.5.0.34931 |
-| Keeper Password Manager | 17.6.1 | 18.0.0 |
-| Splashtop Business | 3.8.2.0 | 3.8.4.0 |
-| Raycast | 1.104.16 | 1.104.17 |
-| LM Studio | 0.4.12 | 0.4.13 |
-| Opera | 131.0.5877.24 | 131.0.5877.55 |
-| Camtasia | 26.0.7 | 2026.1.0 |
-| Hoppscotch | 26.4.0-0 | 26.4.1-0 |
-| Capacities | 1.59.1 | 1.64.6 |
-| muCommander | 1.6.1-1 | 1.6.2-1 |
-| Opera GX | 131.0.5877.36 | 131.0.5877.57 |
-| Polymail | 2.4.3003 | 2.4.3004 |
-| Wirecast | 16.5.1 | 16.5.2 |
+| Rive | 0.8.4850 | 0.8.4858 |
+| Dockside | 2.8.5 | 2.8.7 |
+| SABnzbd | 5.0.2 | 5.0.3 |
+| RsyncUI | 2.9.8 | 3.0.0 |
+| LookAway | 2.1.1 | 2.1.2 |
+| Apifox | 2.8.28 | 2.8.29 |
+| GrandPerspective | 3.7.0 | 3.7.1 |
+| WeChat for Mac | 4.1.9.31 | 4.1.9.57 |
+| BetterDisplay | 4.2.3 | 4.3.3 |
+| Goland | 2026.1.1 | 2026.1.2 |
+| WebStorm | 2026.1.1 | 2026.1.2 |
+| Zed | 1.2.3 | 1.2.6 |
+| Microsoft Edge | 148.0.3967.54 | 148.0.3967.70 |
+| Privileges | 2.5.2 | 2.5.3 |
+| Apidog | 2.8.28 | 2.8.29 |
+| IntelliJ IDEA Ultimate | 2026.1.1 | 2026.1.2 |
+| Warp | 0.2026.05.06.15.42.stable | 0.2026.05.13.09.15.stable |
+| Beekeeper Studio | 5.7.2 | 5.7.3 |
+| MarginNote | 4.3.2 | 4.4.0 |
+| PyCharm | 2026.1.1 | 2026.1.2 |
+| REAPER | 7.72 | 7.73 |
+| RubyMine | 2026.1.1 | 2026.1.2 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| ChronoSync | 12.0.1 | 12.0.2 |
-| digiexam | 26.1.10 | 26.1.24 |
-| Free Download Manager | 6.33.2 | 6.34.0 |
-| Granola | 7.205.1 | 7.220.0 |
-| Input Source Pro | 2.9.0 | 2.10.0 |
-| Lunar | 6.10.2 | 6.10.3 |
+| GitHub Copilot for Xcode | 0.48.0 | 0.49.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Shapr3D | 26.80.0.10920 | 26.81.0.10934 |
-| VueScan | 9.8.53 | 9.8.54 |
-| cmux | 0.64.5 | 0.64.6 |
-| FineTune | 1.6.0 | 1.7.0 |
-| NordVPN | 10.1.0 | 10.2.0 |
-| Okta Verify | 9.61.1 | 9.63.0 |
-| UniFi Identity Endpoint | 3.6.3 | 4.0.0 |
+| Wealthfolio | 3.3.0 | 3.4.0 |
+| Claude Code | 2.1.128 | 2.1.132 |
+| AWS Client VPN | 5.3.4 | 5.3.5 |
+| Arq | 7.42 | 7.42.1 |
+| Enpass | 6.12.0.2411 | 6.12.1.2423 |
+| Adobe Acrobat Pro DC | 26.001.21529 | 26.001.21563 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

@@ -1,14 +1,14 @@
 {
   "name": "SABnzbd",
   "description": "Binary newsreader",
-  "version": "5.0.2",
-  "url": "https://github.com/sabnzbd/sabnzbd/releases/download/5.0.2/SABnzbd-5.0.2-macos.dmg",
+  "version": "5.0.3",
+  "url": "https://github.com/sabnzbd/sabnzbd/releases/download/5.0.3/SABnzbd-5.0.3-macos.dmg",
   "vendor_url": "https://github.com/sabnzbd/sabnzbd/releases/download/4.5.5/SABnzbd-4.5.5-macos.dmg",
   "bundleId": "org.sabnzbd.sabnzbd",
   "homepage": "https://sabnzbd.org/",
-  "fileName": "SABnzbd-5.0.2-macos.dmg",
-  "sha": "86e2d74b424aa38bcc493a550e5a40e07cd9d731c9fe51613433bd29879c9d31",
+  "fileName": "SABnzbd-5.0.3-macos.dmg",
+  "sha": "c1a066f598b635d843f33ac9f173223272a1f338a4f9f920a1ec02fd9407fb26",
   "category": "Utilities",
   "publisher": "SABnzbd",
-  "previous_version": "5.0.1"
+  "previous_version": "5.0.2"
 }
