@@ -1,13 +1,13 @@
 {
   "name": "Eclipse Temurin Java Development Kit",
   "description": "JDK from the Eclipse Foundation (Adoptium)",
-  "version": "26",
-  "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.pkg",
+  "version": "26.0.1",
+  "url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26.0.1%2B8/OpenJDK26U-jdk_aarch64_mac_hotspot_26.0.1_8.pkg",
   "vendor_url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.pkg",
   "bundleId": "net.temurin.23.jdk",
   "homepage": "https://adoptium.net/",
-  "fileName": "OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.pkg",
-  "sha": "b843236ed2d297cad1e0285a9488633fa2b17e199284a449e3aae870492ecbbe",
+  "fileName": "OpenJDK26U-jdk_aarch64_mac_hotspot_26.0.1_8.pkg",
+  "sha": "cbca2c87323aa7aaa6d8d5bfb6424dfaabc7abc7369d33a26edc78ec891ededa",
   "changelog": "https://adoptium.net/de/temurin/releases/?os=mac&version=23",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:10:14Z",
@@ -20,5 +20,5 @@
   },
   "category": "Developer Tools",
   "publisher": "Adoptium",
-  "previous_version": "26"
+  "previous_version": "26.0.1"
 }

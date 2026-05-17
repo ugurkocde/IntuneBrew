@@ -1,15 +1,15 @@
 {
   "name": "XMind",
   "description": "Mind mapping and brainstorming tool",
-  "version": "26.03.04126-202604200306",
-  "url": "https://dl3.xmind.net/Xmind-for-macOS-26.03.04126-202604200306.dmg",
+  "version": "26.03.04129-202605150708",
+  "url": "https://dl3.xmind.net/Xmind-for-macOS-26.03.04129-202605150708.dmg",
   "vendor_url": "https://dl3.xmind.net/Xmind-for-macOS-26.02.04171-202602092224.dmg",
   "bundleId": "net.xmind.vana.app",
   "homepage": "https://www.xmind.net/",
-  "fileName": "Xmind-for-macOS-26.03.04126-202604200306.dmg",
-  "sha": "feda04fe9702527bad71a22e021fa926b7c3ade659a1ef54be419db6ad36b4bb",
+  "fileName": "Xmind-for-macOS-26.03.04129-202605150708.dmg",
+  "sha": "54dd3e24a57f24d76fd7b58e992bae704422740a34f2236bdea5d151def39cfc",
   "changelog": "https://xmind.app/desktop/release-notes/",
   "category": "Productivity",
   "publisher": "XMind Ltd.",
-  "previous_version": "26.03.04126-202604200306"
+  "previous_version": "26.03.04129-202605110616"
 }

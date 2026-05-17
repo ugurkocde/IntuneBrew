@@ -1,14 +1,14 @@
 {
   "name": "Heynote",
   "description": "Dedicated scratchpad for developers",
-  "version": "2.8.2",
-  "url": "https://github.com/heyman/heynote/releases/download/v2.8.2/Heynote_2.8.2_arm64.dmg",
+  "version": "2.9.0",
+  "url": "https://github.com/heyman/heynote/releases/download/v2.9.0/Heynote_2.9.0_arm64.dmg",
   "vendor_url": "https://github.com/heyman/heynote/releases/download/v2.8.2/Heynote_2.8.2_arm64.dmg",
   "bundleId": "com.heynote.app",
   "homepage": "https://heynote.com/",
-  "fileName": "Heynote_2.8.2_arm64.dmg",
-  "sha": "3e5718775802d8c27f55b5c46b147d8230c58432a7f635ea572d67bf20b54c6a",
+  "fileName": "Heynote_2.9.0_arm64.dmg",
+  "sha": "e3594f14c7f33e316e1d6b54d9fa73e156edc871285e148b4d4b02fb22a444bc",
   "category": "Developer Tools",
   "publisher": "Heynote",
-  "previous_version": "2.8.2"
+  "previous_version": "2.9.0"
 }

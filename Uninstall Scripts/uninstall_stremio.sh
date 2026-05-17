@@ -41,6 +41,22 @@ elif [ -f "$HOME/Library/Application Support/stremio-server" ]; then
     rm -f "$HOME/Library/Application Support/stremio-server" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.stremio.stremio-shell-macos
+echo "Removing $HOME/Library/Caches/com.stremio.stremio-shell-macos..."
+if [ -d "$HOME/Library/Caches/com.stremio.stremio-shell-macos" ]; then
+    rm -rf "$HOME/Library/Caches/com.stremio.stremio-shell-macos" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.stremio.stremio-shell-macos" ]; then
+    rm -f "$HOME/Library/Caches/com.stremio.stremio-shell-macos" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.westbridge.stremio*-mac
+echo "Removing $HOME/Library/Caches/com.westbridge.stremio*-mac..."
+if [ -d "$HOME/Library/Caches/com.westbridge.stremio*-mac" ]; then
+    rm -rf "$HOME/Library/Caches/com.westbridge.stremio*-mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.westbridge.stremio*-mac" ]; then
+    rm -f "$HOME/Library/Caches/com.westbridge.stremio*-mac" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/Smart Code ltd
 echo "Removing $HOME/Library/Caches/Smart Code ltd..."
 if [ -d "$HOME/Library/Caches/Smart Code ltd" ]; then
@@ -65,12 +81,36 @@ elif [ -f "$HOME/Library/Preferences/com.stremio.Stremio.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.stremio.Stremio.plist" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.westbridge.stremio*-mac.plist
+echo "Removing $HOME/Library/Preferences/com.westbridge.stremio*-mac.plist..."
+if [ -d "$HOME/Library/Preferences/com.westbridge.stremio*-mac.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.westbridge.stremio*-mac.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.westbridge.stremio*-mac.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.westbridge.stremio*-mac.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/com.smartcodeltd.stremio.savedState
 echo "Removing $HOME/Library/Saved Application State/com.smartcodeltd.stremio.savedState..."
 if [ -d "$HOME/Library/Saved Application State/com.smartcodeltd.stremio.savedState" ]; then
     rm -rf "$HOME/Library/Saved Application State/com.smartcodeltd.stremio.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.smartcodeltd.stremio.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.smartcodeltd.stremio.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.stremio.stremio-shell-macos
+echo "Removing $HOME/Library/WebKit/com.stremio.stremio-shell-macos..."
+if [ -d "$HOME/Library/WebKit/com.stremio.stremio-shell-macos" ]; then
+    rm -rf "$HOME/Library/WebKit/com.stremio.stremio-shell-macos" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.stremio.stremio-shell-macos" ]; then
+    rm -f "$HOME/Library/WebKit/com.stremio.stremio-shell-macos" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.westbridge.stremio*-mac
+echo "Removing $HOME/Library/WebKit/com.westbridge.stremio*-mac..."
+if [ -d "$HOME/Library/WebKit/com.westbridge.stremio*-mac" ]; then
+    rm -rf "$HOME/Library/WebKit/com.westbridge.stremio*-mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.westbridge.stremio*-mac" ]; then
+    rm -f "$HOME/Library/WebKit/com.westbridge.stremio*-mac" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

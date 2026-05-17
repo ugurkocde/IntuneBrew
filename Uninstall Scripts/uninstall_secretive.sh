@@ -41,20 +41,12 @@ elif [ -f "$HOME/Library/Application Scripts/com.maxgoedjen.Secretive.SecretAgen
     rm -f "$HOME/Library/Application Scripts/com.maxgoedjen.Secretive.SecretAgent" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.maxgoedjen.Secretive.Host
-echo "Removing $HOME/Library/Containers/com.maxgoedjen.Secretive.Host..."
-if [ -d "$HOME/Library/Containers/com.maxgoedjen.Secretive.Host" ]; then
-    rm -rf "$HOME/Library/Containers/com.maxgoedjen.Secretive.Host" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.maxgoedjen.Secretive.Host" ]; then
-    rm -f "$HOME/Library/Containers/com.maxgoedjen.Secretive.Host" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent
-echo "Removing $HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent..."
-if [ -d "$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent" ]; then
-    rm -rf "$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent" ]; then
-    rm -f "$HOME/Library/Containers/com.maxgoedjen.Secretive.SecretAgent" 2>/dev/null || true
+# Remove $HOME/Library/Containers/com.maxgoedjen.Secretive.*
+echo "Removing $HOME/Library/Containers/com.maxgoedjen.Secretive.*..."
+if [ -d "$HOME/Library/Containers/com.maxgoedjen.Secretive.*" ]; then
+    rm -rf "$HOME/Library/Containers/com.maxgoedjen.Secretive.*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.maxgoedjen.Secretive.*" ]; then
+    rm -f "$HOME/Library/Containers/com.maxgoedjen.Secretive.*" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

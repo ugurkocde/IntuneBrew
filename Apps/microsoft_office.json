@@ -1,15 +1,15 @@
 {
   "name": "Microsoft Office",
   "description": "Office suite",
-  "version": "16.108.26042616",
-  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.108.26042616_Installer.pkg",
+  "version": "16.109.26051019",
+  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.109.26051019_Installer.pkg",
   "vendor_url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.108.26041219_Installer.pkg",
   "bundleId": "com.microsoft.Office365",
   "homepage": "https://www.microsoft.com/en-us/microsoft-365/mac/microsoft-365-for-mac/",
-  "fileName": "Microsoft_365_and_Office_16.108.26042616_Installer.pkg",
-  "sha": "5cf7dc03e9c74fc2f275ec3723aa19e483c47f3b7ecdf0a60bbd338363803eae",
+  "fileName": "Microsoft_365_and_Office_16.109.26051019_Installer.pkg",
+  "sha": "43249d6a05856d010333bfa2adca062263a9818cdefcfbb7e106832ab9fcea39",
   "changelog": "https://learn.microsoft.com/en-us/officeupdates/release-notes-office-for-mac",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
-  "previous_version": "16.108.26042616"
+  "previous_version": "16.109.26051019"
 }

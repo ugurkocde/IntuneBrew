@@ -1,15 +1,15 @@
 {
   "name": "Yoink",
   "description": "Drag and drop utility",
-  "version": "3.7.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/yoink_3.7.1.pkg",
+  "version": "3.7.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/yoink_3.7.2.pkg",
   "vendor_url": "https://downloads.eternalstorms.at/Yoink.zip",
   "bundleId": "at.EternalStorms.Yoink",
   "homepage": "https://eternalstorms.at/yoink/mac/",
-  "fileName": "yoink_3.7.1.pkg",
+  "fileName": "yoink_3.7.2.pkg",
   "type": "app",
-  "sha": "14b9f4aadfd02364d15b6dcdff48f1f045b58728918957cdfa8d561cc144c642",
+  "sha": "aa902218afdd64e1e26362000ddbf748b9d229779a9f8bea969a0cfd7b402443",
   "category": "Utilities",
   "publisher": "Eternal Storms Software",
-  "previous_version": "3.7.1"
+  "previous_version": "3.7.2"
 }

@@ -17,12 +17,12 @@ fi
 echo "Stopping Dust3D if running..."
 pkill -f "Dust3D" 2>/dev/null || true
 
-# Remove /Applications/dust3d-1.0.0-rc.9.app
-echo "Removing /Applications/dust3d-1.0.0-rc.9.app..."
-if [ -d "/Applications/dust3d-1.0.0-rc.9.app" ]; then
-    rm -rf "/Applications/dust3d-1.0.0-rc.9.app" 2>/dev/null || true
-elif [ -f "/Applications/dust3d-1.0.0-rc.9.app" ]; then
-    rm -f "/Applications/dust3d-1.0.0-rc.9.app" 2>/dev/null || true
+# Remove /Applications/dust3d.app
+echo "Removing /Applications/dust3d.app..."
+if [ -d "/Applications/dust3d.app" ]; then
+    rm -rf "/Applications/dust3d.app" 2>/dev/null || true
+elif [ -f "/Applications/dust3d.app" ]; then
+    rm -f "/Applications/dust3d.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.yourcompany.dust3d.savedState

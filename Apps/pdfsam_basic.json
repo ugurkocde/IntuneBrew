@@ -1,14 +1,14 @@
 {
   "name": "PDFsam Basic",
   "description": "Extracts pages, splits, merges, mixes and rotates PDF files",
-  "version": "6.0.0",
-  "url": "https://github.com/torakiki/pdfsam/releases/download/v6.0.0/pdfsam-basic-6.0.0-macos-arm64.dmg",
+  "version": "6.0.1",
+  "url": "https://github.com/torakiki/pdfsam/releases/download/v6.0.1/pdfsam-basic-6.0.1-macos-arm64.dmg",
   "vendor_url": "https://github.com/torakiki/pdfsam/releases/download/v6.0.0/pdfsam-basic-6.0.0-macos-arm64.dmg",
   "bundleId": "org.pdfsam.modules",
   "homepage": "https://pdfsam.org/",
-  "fileName": "pdfsam-basic-6.0.0-macos-arm64.dmg",
-  "sha": "704b567abb2f76d36c5ea6ccf8329bc63335cfd873581c61f171eca757276dae",
+  "fileName": "pdfsam-basic-6.0.1-macos-arm64.dmg",
+  "sha": "b05830681fdf81698acffb45f3f5d46dc5a7ee4c64d2afd39e8332eaecdf83e6",
   "category": "Utilities",
   "publisher": "PDFsam",
-  "previous_version": "6.0.0"
+  "previous_version": "6.0.1"
 }

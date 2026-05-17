@@ -17,12 +17,12 @@ fi
 echo "Stopping Ecamm Live if running..."
 pkill -f "Ecamm Live" 2>/dev/null || true
 
-# Remove /Applications/Ecamm Live/Ecamm Live.app
-echo "Removing /Applications/Ecamm Live/Ecamm Live.app..."
-if [ -d "/Applications/Ecamm Live/Ecamm Live.app" ]; then
-    rm -rf "/Applications/Ecamm Live/Ecamm Live.app" 2>/dev/null || true
-elif [ -f "/Applications/Ecamm Live/Ecamm Live.app" ]; then
-    rm -f "/Applications/Ecamm Live/Ecamm Live.app" 2>/dev/null || true
+# Remove /Applications/Ecamm/Ecamm Live.app
+echo "Removing /Applications/Ecamm/Ecamm Live.app..."
+if [ -d "/Applications/Ecamm/Ecamm Live.app" ]; then
+    rm -rf "/Applications/Ecamm/Ecamm Live.app" 2>/dev/null || true
+elif [ -f "/Applications/Ecamm/Ecamm Live.app" ]; then
+    rm -f "/Applications/Ecamm/Ecamm Live.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/com.ecamm.EcammLive

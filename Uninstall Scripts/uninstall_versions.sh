@@ -49,12 +49,28 @@ elif [ -f "$HOME/Library/Caches/com.versionsapp.v2" ]; then
     rm -f "$HOME/Library/Caches/com.versionsapp.v2" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.versionsapp.v2
+echo "Removing $HOME/Library/HTTPStorages/com.versionsapp.v2..."
+if [ -d "$HOME/Library/HTTPStorages/com.versionsapp.v2" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.versionsapp.v2" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.versionsapp.v2" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.versionsapp.v2" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.versionsapp.v2.plist
 echo "Removing $HOME/Library/Preferences/com.versionsapp.v2.plist..."
 if [ -d "$HOME/Library/Preferences/com.versionsapp.v2.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.versionsapp.v2.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.versionsapp.v2.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.versionsapp.v2.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.versionsapp.v2
+echo "Removing $HOME/Library/WebKit/com.versionsapp.v2..."
+if [ -d "$HOME/Library/WebKit/com.versionsapp.v2" ]; then
+    rm -rf "$HOME/Library/WebKit/com.versionsapp.v2" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.versionsapp.v2" ]; then
+    rm -f "$HOME/Library/WebKit/com.versionsapp.v2" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

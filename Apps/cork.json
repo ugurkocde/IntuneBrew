@@ -1,15 +1,15 @@
 {
   "name": "Cork",
   "description": "GUI companion app for Homebrew",
-  "version": "1.7.4",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/cork_1.7.4.pkg",
+  "version": "1.7.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/cork_1.7.5.pkg",
   "vendor_url": "https://corkmac.app/RLS/1.7.4/Cork.zip",
   "bundleId": "eu.davidbures.cork",
   "homepage": "https://corkmac.app/",
-  "fileName": "cork_1.7.4.pkg",
+  "fileName": "cork_1.7.5.pkg",
   "type": "app",
-  "sha": "4e587872d4c4d838d8fde3e12431f9592ea3d494e71d184c58328614d4c75668",
+  "sha": "428fce3697aeaf609b2d3c8d6e2850f9686178852ef71cf5617d5a3f79722b6a",
   "category": "Developer Tools",
   "publisher": "Cork",
-  "previous_version": "1.7.4"
+  "previous_version": "1.7.5"
 }

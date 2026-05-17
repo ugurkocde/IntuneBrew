@@ -1,14 +1,14 @@
 {
   "name": "Beekeeper Studio",
   "description": "Cross platform SQL editor and database management app",
-  "version": "5.7.2",
-  "url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.7.2/Beekeeper-Studio-5.7.2-arm64.dmg",
+  "version": "5.7.3",
+  "url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.7.3/Beekeeper-Studio-5.7.3-arm64.dmg",
   "vendor_url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.6.5/Beekeeper-Studio-5.6.5-arm64.dmg",
   "bundleId": "io.beekeeperstudio.desktop",
   "homepage": "https://www.beekeeperstudio.io/",
-  "fileName": "Beekeeper-Studio-5.7.2-arm64.dmg",
-  "sha": "3711f2f9d1943adf7a95e6debd301157619d11de70a4fd44bcc973b1532ea389",
+  "fileName": "Beekeeper-Studio-5.7.3-arm64.dmg",
+  "sha": "bd44b34c53affddad85daf794b44fa2b108fdfc638f168da861fc2d2c5dc7502",
   "category": "Developer Tools",
   "publisher": "Beekeeper Studio",
-  "previous_version": "5.7.2"
+  "previous_version": "5.7.3"
 }

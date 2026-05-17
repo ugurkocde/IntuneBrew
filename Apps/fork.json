@@ -1,14 +1,14 @@
 {
   "name": "Fork",
   "description": "GIT client",
-  "version": "2.63.2",
-  "url": "https://cdn.fork.dev/mac/Fork-2.63.2.dmg",
+  "version": "2.66.7",
+  "url": "https://cdn.fork.dev/mac/Fork-2.66.7.dmg",
   "vendor_url": "https://cdn.fork.dev/mac/Fork-2.63.2.dmg",
   "bundleId": "com.DanPristupov.Fork",
   "homepage": "https://fork.dev/",
-  "fileName": "Fork-2.63.2.dmg",
-  "sha": "152c20e7e9285e41518deaae36a6feae0df6190caca878091f0d489a5a75b030",
+  "fileName": "Fork-2.66.7.dmg",
+  "sha": "f344f9e3943cd09f83ae2eb66e3e360b1504c4eec70bf8a185ff6d814f62f10d",
   "category": "Developer Tools",
   "publisher": "Fork Ltd.",
-  "previous_version": "2.63.2"
+  "previous_version": "2.66.7"
 }

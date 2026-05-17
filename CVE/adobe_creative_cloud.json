@@ -1,7 +1,7 @@
 {
   "app_name": "Adobe Creative Cloud",
   "app_key": "adobe_creative_cloud",
-  "last_updated": "2026-05-01",
+  "last_updated": "2026-05-17",
   "total_cves": 38,
   "summary": {
     "critical": 10,
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2016-1034",
       "published_date": "2016-04-12",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "The Sync Process in the JavaScript API for Creative Cloud Libraries in Adobe Creative Cloud Desktop Application before 3.6.0.244 allows remote attackers to read or write to arbitrary files via unspecified vectors.",
       "base_score": 9.1,
       "severity": "CRITICAL",
@@ -560,7 +560,7 @@
     {
       "cve_id": "CVE-2017-3006",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Thor versions 3.9.5.353 and earlier have a vulnerability related to the use of improper resource permissions during the installation of Creative Cloud desktop applications.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -581,7 +581,7 @@
     {
       "cve_id": "CVE-2017-3007",
       "published_date": "2017-04-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Adobe Thor versions 3.9.5.353 and earlier have a vulnerability in the directory search path used to find resources, related to Creative Cloud desktop applications.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -602,7 +602,7 @@
     {
       "cve_id": "CVE-2016-6935",
       "published_date": "2016-10-13",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unquoted Windows search path vulnerability in Adobe Creative Cloud Desktop Application before 3.8.0.310 on Windows allows local users to gain privileges via a Trojan horse executable file in the %SYSTEMDRIVE% directory.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -623,7 +623,7 @@
     {
       "cve_id": "CVE-2016-4157",
       "published_date": "2016-06-16",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Untrusted search path vulnerability in the installer in Adobe Creative Cloud Desktop Application before 3.7.0.272 on Windows allows local users to gain privileges via a Trojan horse resource in an unspecified directory.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -644,7 +644,7 @@
     {
       "cve_id": "CVE-2016-4158",
       "published_date": "2016-06-16",
-      "last_modified_date": "2025-04-12",
+      "last_modified_date": "2026-05-06",
       "description": "Unquoted Windows search path vulnerability in Adobe Creative Cloud Desktop Application before 3.7.0.272 on Windows allows local users to gain privileges via a Trojan horse executable file in the %SYSTEMDRIVE% directory.",
       "base_score": 7.3,
       "severity": "HIGH",

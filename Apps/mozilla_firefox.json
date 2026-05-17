@@ -1,15 +1,15 @@
 {
   "name": "Mozilla Firefox",
   "description": "Web browser",
-  "version": "150.0.1",
-  "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/150.0.1/mac/en-US/Firefox%20150.0.1.dmg",
+  "version": "150.0.3",
+  "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/150.0.3/mac/en-US/Firefox%20150.0.3.dmg",
   "vendor_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/149.0.2/mac/en-US/Firefox%20149.0.2.dmg",
   "bundleId": "org.mozilla.firefox",
   "homepage": "https://www.mozilla.org/firefox/",
-  "fileName": "Firefox 150.0.1.dmg",
-  "sha": "4221ec4972cb385042354b25940728e5eb7ececce7c95d2ec3f83d2323673d6a",
+  "fileName": "Firefox 150.0.3.dmg",
+  "sha": "5f8571d35b883c9c210ad4249f25c6a46e7861291a440f65d5249587dd1b9051",
   "changelog": "https://www.mozilla.org/en-US/firefox/releases/",
   "category": "Browsers",
   "publisher": "Mozilla Corporation",
-  "previous_version": "150.0.1"
+  "previous_version": "150.0.3"
 }

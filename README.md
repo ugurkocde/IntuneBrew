@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1252-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -447,44 +447,42 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-01 01:01 UTC*
+*Last checked: 2026-05-17 01:02 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Rive | 0.8.4723 | 0.8.4740 |
-| Dockside | 2.7.0 | 2.7.1 |
-| Mozilla Thunderbird | 150.0 | 150.0.1 |
-| NordPass | 7.6.18 | 7.6.20 |
-| NVIDIA GeForce NOW | 2.0.83.141 | 2.0.84.124 |
-| ChatWise | 26.4.17 | 26.4.18 |
-| Microsoft Teams | 26072.608.4595.8484 | 26093.311.4599.3126 |
-| Keeper Password Manager | 17.5.3 | 17.6.0 |
-| LibreOffice | 26.2.2 | 26.2.3 |
-| Microsoft Edge | 147.0.3912.86 | 147.0.3912.98 |
-| Rancher Desktop | 1.22.0 | 1.22.1 |
-| Sync | 2.2.57 | 2.2.58 |
-| Hoppscotch | 26.3.1-0 | 26.4.0-0 |
-| Stremio | 5.1.21 | 5.1.22 |
-| Deezer | 7.1.170 | 7.1.180 |
-| FontBase | 2026.4.6 | 2026.5.0 |
-| REAPER | 7.70 | 7.71 |
+| Rive | 0.8.4858 | 0.8.4865 |
+| XMind | 26.03.04129-202605110616 | 26.03.04129-202605150708 |
+| Dataflare | 3.0.1 | 3.0.2 |
+| Floorp browser | 12.14.0 | 12.14.2 |
+| Ungoogled Chromium | 147.0.7727.116-1.1 | 148.0.7778.167-1.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Dorico | 6.2.10 | 6.2.20 |
-| Anytype | 0.55.0 | 0.55.2 |
-| LaunchOS | 1.5.6 | 1.5.7 |
-| Loom | 0.346.3 | 0.346.4 |
+| GoodSync | 12.9.29 | 12.11.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| RunJS | 4.0.1 | 4.0.2 |
-| Shotcut | 26.2.26 | 26.4.30 |
-| XnViewMP | 1.10.5 | 1.11.2 |
-| Zotero | 9.0.1 | 9.0.2 |
-| Parsec | 150-102b | 150-103a |
-| Arq | 7.40 | 7.40.1 |
-| ExpressVPN | 14.0.1.12858 | 14.1.0.13058 |
+| WebCatalog | 74.9.0 | 75.0.2 |
+| Claude Code | 2.1.132 | 2.1.133 |
+| kiro | 0.12.184 | 0.12.200 |
+| ExpressVPN | 14.1.0.13058 | 14.1.1.13156 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

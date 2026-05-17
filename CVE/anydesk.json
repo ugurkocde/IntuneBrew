@@ -1,7 +1,7 @@
 {
   "app_name": "Anydesk",
   "app_key": "anydesk",
-  "last_updated": "2026-05-01",
+  "last_updated": "2026-05-17",
   "total_cves": 16,
   "summary": {
     "critical": 3,
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2017-14397",
       "published_date": "2017-09-12",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "AnyDesk before 3.6.1 on Windows has a DLL injection vulnerability.",
       "base_score": 9.8,
       "severity": "CRITICAL",

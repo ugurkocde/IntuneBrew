@@ -1,15 +1,15 @@
 {
   "name": "BrowserStack Local Testing",
   "description": "Test localhost and staging websites",
-  "version": "3.7.5",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/browserstack_local_testing_3.7.5.pkg",
+  "version": "3.7.6",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/browserstack_local_testing_3.7.6.pkg",
   "vendor_url": "https://www.browserstack.com/local-testing/downloads/native-app/BrowserStackLocal.tar.gz",
   "bundleId": "com.browserstack.local",
   "homepage": "https://www.browserstack.com/",
-  "fileName": "browserstack_local_testing_3.7.5.pkg",
+  "fileName": "browserstack_local_testing_3.7.6.pkg",
   "type": "app",
-  "sha": "b31da0b4ee07568b5f0629e6e12b6eef1d2e8d8a983bd306510bc438ca3f8d47",
+  "sha": "da25ace6c946a28999363e03417b75640395757dcb6db271e86e5e23e9253c06",
   "category": "Developer Tools",
   "publisher": "BrowserStack",
-  "previous_version": "3.7.5"
+  "previous_version": "3.7.6"
 }

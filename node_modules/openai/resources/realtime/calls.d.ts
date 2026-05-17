@@ -85,7 +85,7 @@ export interface CallAcceptParams {
     /**
      * The Realtime model used for this session.
      */
-    model?: (string & {}) | 'gpt-realtime' | 'gpt-realtime-1.5' | 'gpt-realtime-2025-08-28' | 'gpt-4o-realtime-preview' | 'gpt-4o-realtime-preview-2024-10-01' | 'gpt-4o-realtime-preview-2024-12-17' | 'gpt-4o-realtime-preview-2025-06-03' | 'gpt-4o-mini-realtime-preview' | 'gpt-4o-mini-realtime-preview-2024-12-17' | 'gpt-realtime-mini' | 'gpt-realtime-mini-2025-10-06' | 'gpt-realtime-mini-2025-12-15' | 'gpt-audio-1.5' | 'gpt-audio-mini' | 'gpt-audio-mini-2025-10-06' | 'gpt-audio-mini-2025-12-15';
+    model?: (string & {}) | 'gpt-realtime' | 'gpt-realtime-1.5' | 'gpt-realtime-2' | 'gpt-realtime-2025-08-28' | 'gpt-4o-realtime-preview' | 'gpt-4o-realtime-preview-2024-10-01' | 'gpt-4o-realtime-preview-2024-12-17' | 'gpt-4o-realtime-preview-2025-06-03' | 'gpt-4o-mini-realtime-preview' | 'gpt-4o-mini-realtime-preview-2024-12-17' | 'gpt-realtime-mini' | 'gpt-realtime-mini-2025-10-06' | 'gpt-realtime-mini-2025-12-15' | 'gpt-audio-1.5' | 'gpt-audio-mini' | 'gpt-audio-mini-2025-10-06' | 'gpt-audio-mini-2025-12-15';
     /**
      * The set of modalities the model can respond with. It defaults to `["audio"]`,
      * indicating that the model will respond with audio plus a transcript. `["text"]`
@@ -94,10 +94,19 @@ export interface CallAcceptParams {
      */
     output_modalities?: Array<'text' | 'audio'>;
     /**
+     * Whether the model may call multiple tools in parallel. Only supported by
+     * reasoning Realtime models such as `gpt-realtime-2`.
+     */
+    parallel_tool_calls?: boolean;
+    /**
      * Reference to a prompt template and its variables.
      * [Learn more](https://platform.openai.com/docs/guides/text?api-mode=responses#reusable-prompts).
      */
     prompt?: ResponsesAPI.ResponsePrompt | null;
+    /**
+     * Configuration for reasoning-capable Realtime models such as `gpt-realtime-2`.
+     */
+    reasoning?: RealtimeAPI.RealtimeReasoning;
     /**
      * How the model chooses tools. Provide one of the string modes or force a specific
      * function/MCP tool.

@@ -1,7 +1,7 @@
 {
   "app_name": "Iterm2",
   "app_key": "iterm2",
-  "last_updated": "2026-05-01",
+  "last_updated": "2026-05-17",
   "total_cves": 11,
   "summary": {
     "critical": 9,
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2015-9231",
       "published_date": "2017-09-20",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "iTerm2 3.x before 3.1.1 allows remote attackers to discover passwords by reading DNS queries. A new (default) feature was added to iTerm2 version 3.0.0 (and unreleased 2.9.x versions such as 2.9.20150717) that resulted in a potential information disclosure. In an attempt to see whether the text under the cursor (or selected text) was a URL, the text would be sent as an unencrypted DNS query. This has the potential to result in passwords and other sensitive information being sent in cleartext without the user being aware.",
       "base_score": 7.5,
       "severity": "HIGH",

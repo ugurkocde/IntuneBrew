@@ -1,15 +1,15 @@
 {
   "name": "ColorSnapper 2",
   "description": "Colour picker",
-  "version": "1.6.4",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/colorsnapper_2_1.6.4.pkg",
+  "version": "1.7.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/colorsnapper_2_1.7.1.pkg",
   "vendor_url": "https://cs2-binaries.s3.amazonaws.com/ColorSnapper2-1_6_4.zip",
   "bundleId": "com.koolesache.ColorSnapper2",
   "homepage": "https://colorsnapper.com/",
-  "fileName": "colorsnapper_2_1.6.4.pkg",
+  "fileName": "colorsnapper_2_1.7.1.pkg",
   "type": "app",
-  "previous_version": "1.6.4",
-  "sha": "65a9ceed6264fe1c2e0c703099202decfbca546b9a60a6d176f5dd976dd8fccf",
+  "previous_version": "1.7.1",
+  "sha": "16f1704d8184c6b2c739a349a185e3a0b6b502aeb7a15c7edb5a090ff3518c98",
   "category": "Design",
   "publisher": "ColorSnapper"
 }

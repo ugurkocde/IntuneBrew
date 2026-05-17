@@ -1,15 +1,15 @@
 {
   "name": "Okta Verify",
   "description": "Identity verification provider",
-  "version": "9.59.0",
-  "url": "https://okta.okta.com/artifacts/OKTA_VERIFY_MACOS/9.59.0/OktaVerify-9.59.0-6053-5038b2d.pkg",
+  "version": "9.63.0",
+  "url": "https://okta.okta.com/artifacts/OKTA_VERIFY_MACOS/9.63.0/OktaVerify-9.63.0-6186-0c33212.pkg",
   "vendor_url": "https://okta.okta.com/artifacts/OKTA_VERIFY_MACOS/9.59.0/OktaVerify-9.59.0-6053-5038b2d.pkg",
   "bundleId": "com.okta.mobile",
   "homepage": "https://help.okta.com/eu/en-us/content/topics/end-user/ov-overview-macos.htm",
-  "fileName": "OktaVerify-9.59.0-6053-5038b2d.pkg",
+  "fileName": "OktaVerify-9.63.0-6186-0c33212.pkg",
   "type": "pkg",
-  "sha": "0f70a8a9d58d22024e32deae4cfe0a369506f89c7ab7d8db90d86a27e21d1612",
+  "sha": "0a40d8af3a8cf2eb2a6e0125821b557416f88c2ff59f6fe49c0d7c6318be82ee",
   "category": "Security",
   "publisher": "Okta, Inc.",
-  "previous_version": "9.59.0"
+  "previous_version": "9.63.0"
 }

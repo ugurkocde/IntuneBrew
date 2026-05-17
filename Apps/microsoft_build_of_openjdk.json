@@ -1,15 +1,15 @@
 {
   "name": "Microsoft Build of OpenJDK",
   "description": "OpenJDK distribution from Microsoft",
-  "version": "25.0.2",
-  "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.2-macos-aarch64.pkg",
+  "version": "25.0.3",
+  "url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.3-macos-aarch64.pkg",
   "vendor_url": "https://aka.ms/download-jdk/microsoft-jdk-25.0.2-macos-aarch64.pkg",
   "bundleId": "com.microsoft.25.jdk",
   "homepage": "https://microsoft.com/openjdk",
-  "fileName": "microsoft-jdk-25.0.2-macos-aarch64.pkg",
+  "fileName": "microsoft-jdk-25.0.3-macos-aarch64.pkg",
   "type": "pkg",
-  "sha": "1c176d2d278e4b70b2a675cc3e8fb1541be2fc4f65ff1202535fd8224665e315",
+  "sha": "0626c4c2d9d75b60aab26c83990e5e38e750d858eb203af9d8a8fda7300fe360",
   "category": "Developer Tools",
   "publisher": "Microsoft Corporation",
-  "previous_version": "25.0.2"
+  "previous_version": "25.0.3"
 }

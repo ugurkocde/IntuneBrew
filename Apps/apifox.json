@@ -1,13 +1,13 @@
 {
   "name": "Apifox",
   "description": "Platform for API documentation, debugging, and testing",
-  "version": "2.8.26",
-  "url": "https://file-assets.apifox.com/download/2.8.26/Apifox-macOS-arm64-2.8.26.dmg",
+  "version": "2.8.29",
+  "url": "https://file-assets.apifox.com/download/2.8.29/Apifox-macOS-arm64-2.8.29.dmg",
   "vendor_url": "https://file-assets.apifox.com/download/2.8.24/Apifox-macOS-arm64-2.8.24.dmg",
   "bundleId": "cn.apifox.app",
   "homepage": "https://www.apifox.com/",
-  "fileName": "Apifox-macOS-arm64-2.8.26.dmg",
-  "sha": "27b2a684f517323e8eb9dc417cd5f018151bc7159447d1d93684f31996f6f6f9",
+  "fileName": "Apifox-macOS-arm64-2.8.29.dmg",
+  "sha": "a020ef77f4950d9a10b63abf58c86633405b2e14e4cbf2cd6b316f582b35761c",
   "qa_info": {
     "qa_timestamp": "2025-05-19T06:52:32Z",
     "qa_result": "Installation successful and verified",
@@ -20,5 +20,5 @@
   },
   "category": "Developer Tools",
   "publisher": "Apifox",
-  "previous_version": "2.8.26"
+  "previous_version": "2.8.29"
 }

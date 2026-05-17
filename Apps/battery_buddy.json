@@ -1,15 +1,15 @@
 {
   "name": "Battery Buddy",
   "description": "Replacement of the default battery indicator in the menu bar",
-  "version": "1.0.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/battery_buddy_1.0.3.pkg",
+  "version": "1.0.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/battery_buddy_1.0.4.pkg",
   "vendor_url": "https://batterybuddy.app/releases/Battery%20Buddy.zip",
   "bundleId": "com.NeilSardesai.Battery-Buddy",
   "homepage": "https://batterybuddy.app/",
-  "fileName": "battery_buddy_1.0.3.pkg",
+  "fileName": "battery_buddy_1.0.4.pkg",
   "type": "app",
-  "previous_version": "1.0.3",
-  "sha": "d38cb86d301f4d598195b2d0f19e420634cd5cd16db381221b23ad29e73f143d",
+  "previous_version": "1.0.4",
+  "sha": "45e3d3e46ab7bc186012ab89c74987b28fbc8151cbd0a2ab412d148aa3a08ade",
   "category": "Utilities",
   "publisher": "Battery Buddy"
 }

@@ -1678,14 +1678,16 @@ function Get-FormattedAppName {
         [string]$Suffix
     )
 
-    $formattedName = $BaseName
+    # Trim incoming components so stray whitespace (e.g. "Slack ") does not
+    # silently break Intune lookups, group assignments, or logo URL resolution.
+    $formattedName = if ($null -ne $BaseName) { $BaseName.Trim() } else { '' }
     if (-not [string]::IsNullOrEmpty($Prefix)) {
-        $formattedName = $Prefix + $formattedName
+        $formattedName = $Prefix.Trim() + $formattedName
     }
     if (-not [string]::IsNullOrEmpty($Suffix)) {
-        $formattedName = $formattedName + $Suffix
+        $formattedName = $formattedName + $Suffix.Trim()
     }
-    return $formattedName
+    return $formattedName.Trim()
 }
 # Retrieves and compares app versions between Intune and GitHub
 function Get-IntuneApp {

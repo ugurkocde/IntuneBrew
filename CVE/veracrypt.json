@@ -1,7 +1,7 @@
 {
   "app_name": "Veracrypt",
   "app_key": "veracrypt",
-  "last_updated": "2026-05-01",
+  "last_updated": "2026-05-17",
   "total_cves": 5,
   "summary": {
     "critical": 0,
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2015-7358",
       "published_date": "2017-10-03",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The IsDriveLetterAvailable method in Driver/Ntdriver.c in TrueCrypt 7.0, VeraCrypt before 1.15, and CipherShed, when running on Windows, does not properly validate drive letter symbolic links, which allows local users to mount an encrypted volume over an existing drive letter and gain privileges via an entry in the /GLOBAL?? directory.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2015-7359",
       "published_date": "2017-10-03",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "The (1) IsVolumeAccessibleByCurrentUser and (2) MountDevice methods in Ntdriver.c in TrueCrypt 7.0, VeraCrypt before 1.15, and CipherShed, when running on Windows, do not check the impersonation level of impersonation tokens, which allows local users to impersonate a user at SecurityIdentify level and gain access to other users' mounted encrypted volumes.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2016-1281",
       "published_date": "2017-01-23",
-      "last_modified_date": "2025-04-20",
+      "last_modified_date": "2026-05-13",
       "description": "Untrusted search path vulnerability in the installer for TrueCrypt 7.2 and 7.1a, VeraCrypt before 1.17-BETA, and possibly other products allows local users to execute arbitrary code with administrator privileges and conduct DLL hijacking attacks via a Trojan horse DLL in the \"application directory\", as demonstrated with the USP10.dll, RichEd20.dll, NTMarta.dll and SRClient.dll DLLs.",
       "base_score": 7.8,
       "severity": "HIGH",

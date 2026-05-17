@@ -1,14 +1,14 @@
 {
   "name": "Transfer",
   "description": "Standalone TFTP, FTP, and SFTP server",
-  "version": "2.4.2",
-  "url": "https://www.intuitibits.com/downloads/Transfer_2.4.2.dmg",
+  "version": "2.4.3",
+  "url": "https://www.intuitibits.com/downloads/Transfer_2.4.3.dmg",
   "vendor_url": "https://www.intuitibits.com/downloads/Transfer_2.4.2.dmg",
   "bundleId": "com.adriangranados.Transfer",
   "homepage": "https://www.intuitibits.com/products/transfer/",
-  "fileName": "Transfer_2.4.2.dmg",
-  "sha": "b99d7c421694dec9ab24b7feae6c907253102462e30f0dbd565b210fbfe0fa89",
+  "fileName": "Transfer_2.4.3.dmg",
+  "sha": "f97bd2d3ef07ec54a607926eef6b6a605a72f87eb66cb07ae2e9a1e2e42b5613",
   "category": "Utilities",
   "publisher": "IntuitiBits",
-  "previous_version": "2.4.2"
+  "previous_version": "2.4.3"
 }
