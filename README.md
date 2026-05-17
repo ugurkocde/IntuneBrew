@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1252-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -462,45 +462,27 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-16 00:57 UTC*
+*Last checked: 2026-05-17 01:02 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Rive | 0.8.4850 | 0.8.4858 |
-| Dockside | 2.8.5 | 2.8.7 |
-| SABnzbd | 5.0.2 | 5.0.3 |
-| RsyncUI | 2.9.8 | 3.0.0 |
-| LookAway | 2.1.1 | 2.1.2 |
-| Apifox | 2.8.28 | 2.8.29 |
-| GrandPerspective | 3.7.0 | 3.7.1 |
-| WeChat for Mac | 4.1.9.31 | 4.1.9.57 |
-| BetterDisplay | 4.2.3 | 4.3.3 |
-| Goland | 2026.1.1 | 2026.1.2 |
-| WebStorm | 2026.1.1 | 2026.1.2 |
-| Zed | 1.2.3 | 1.2.6 |
-| Microsoft Edge | 148.0.3967.54 | 148.0.3967.70 |
-| Privileges | 2.5.2 | 2.5.3 |
-| Apidog | 2.8.28 | 2.8.29 |
-| IntelliJ IDEA Ultimate | 2026.1.1 | 2026.1.2 |
-| Warp | 0.2026.05.06.15.42.stable | 0.2026.05.13.09.15.stable |
-| Beekeeper Studio | 5.7.2 | 5.7.3 |
-| MarginNote | 4.3.2 | 4.4.0 |
-| PyCharm | 2026.1.1 | 2026.1.2 |
-| REAPER | 7.72 | 7.73 |
-| RubyMine | 2026.1.1 | 2026.1.2 |
+| Rive | 0.8.4858 | 0.8.4865 |
+| XMind | 26.03.04129-202605110616 | 26.03.04129-202605150708 |
+| Dataflare | 3.0.1 | 3.0.2 |
+| Floorp browser | 12.14.0 | 12.14.2 |
+| Ungoogled Chromium | 147.0.7727.116-1.1 | 148.0.7778.167-1.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| GitHub Copilot for Xcode | 0.48.0 | 0.49.0 |
+| GoodSync | 12.9.29 | 12.11.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| Wealthfolio | 3.3.0 | 3.4.0 |
-| Claude Code | 2.1.128 | 2.1.132 |
-| AWS Client VPN | 5.3.4 | 5.3.5 |
-| Arq | 7.42 | 7.42.1 |
-| Enpass | 6.12.0.2411 | 6.12.1.2423 |
-| Adobe Acrobat Pro DC | 26.001.21529 | 26.001.21563 |
+| WebCatalog | 74.9.0 | 75.0.2 |
+| Claude Code | 2.1.132 | 2.1.133 |
+| kiro | 0.12.184 | 0.12.200 |
+| ExpressVPN | 14.1.0.13058 | 14.1.1.13156 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
