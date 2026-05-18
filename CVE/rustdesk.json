@@ -1,7 +1,7 @@
 {
   "app_name": "Rustdesk",
   "app_key": "rustdesk",
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-05-18",
   "total_cves": 11,
   "summary": {
     "critical": 4,
