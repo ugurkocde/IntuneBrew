@@ -7,5 +7,7 @@
   "bundleId": "com.SMI-Inc.InstantView",
   "homepage": "https://www.siliconmotion.com/",
   "fileName": "macOS_InstantView_V3.24R0004.dmg",
-  "sha": "968cd5ca428ad5e754425c3134acbf1b230a8ec41a5de47d5d5a1abbbd81c218"
+  "sha": "968cd5ca428ad5e754425c3134acbf1b230a8ec41a5de47d5d5a1abbbd81c218",
+  "category": "Utilities",
+  "publisher": "Silicon Motion Technology Corp."
 }
