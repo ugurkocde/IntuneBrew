@@ -1,13 +1,13 @@
 {
   "name": "Typeface",
   "description": "Font manager application",
-  "version": "4.3.0",
-  "url": "https://dcdn.typefaceapp.com/Typeface-4.3.0-5029/Typeface-4.3.0-5029.dmg",
+  "version": "4.3.1",
+  "url": "https://dcdn.typefaceapp.com/Typeface-4.3.1-5064/Typeface-4.3.1-5064.dmg",
   "vendor_url": "https://dcdn.typefaceapp.com/Typeface-4.2.3-4845/Typeface-4.2.3-4845.dmg",
   "bundleId": "com.criminalbird.typeface.standalone",
   "homepage": "https://typefaceapp.com/",
-  "fileName": "Typeface-4.3.0-5029.dmg",
-  "sha": "616c0ca869a0e7622df72184ebe6510ee71287726d093566e8192bcdb5f0fe8b",
+  "fileName": "Typeface-4.3.1-5064.dmg",
+  "sha": "b0aadeef317c1b466c048834d0c0342771bd13b64b5f9dd457cf625af5a7d4c2",
   "category": "Design",
   "publisher": "Typeface",
   "previous_version": "4.3.0"
