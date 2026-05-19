@@ -1,0 +1,11 @@
+{
+  "name": "SiliconMotion InstantView",
+  "description": "Driver for SM76x with UI",
+  "version": "3.24",
+  "url": "https://www.siliconmotion.com/downloads/macOS_InstantView_V3.24R0004.dmg",
+  "vendor_url": "https://www.siliconmotion.com/downloads/macOS_InstantView_V3.24R0004.dmg",
+  "bundleId": "com.SMI-Inc.InstantView",
+  "homepage": "https://www.siliconmotion.com/",
+  "fileName": "macOS_InstantView_V3.24R0004.dmg",
+  "sha": "968cd5ca428ad5e754425c3134acbf1b230a8ec41a5de47d5d5a1abbbd81c218"
+}
