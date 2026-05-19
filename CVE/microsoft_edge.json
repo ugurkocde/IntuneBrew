@@ -1,12 +1,12 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-05-18",
-  "total_cves": 959,
+  "last_updated": "2026-05-19",
+  "total_cves": 961,
   "summary": {
     "critical": 17,
     "high": 592,
-    "medium": 326,
+    "medium": 328,
     "low": 24,
     "kev_count": 18
   },
@@ -12843,6 +12843,27 @@
       "product": "edge"
     },
     {
+      "cve_id": "CVE-2026-40416",
+      "published_date": "2026-05-12",
+      "last_modified_date": "2026-05-18",
+      "description": "User interface (ui) misrepresentation of critical information in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
+      "base_score": 4.3,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:N/I:L/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "148.0.3967.55",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "148.0.3967.55",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "microsoft",
+      "product": "edge_chromium"
+    },
+    {
       "cve_id": "CVE-2026-42838",
       "published_date": "2026-05-12",
       "last_modified_date": "2026-05-14",
@@ -12883,6 +12904,27 @@
       "kev_ransomware_use": null,
       "vendor": "microsoft",
       "product": "edge_chromium"
+    },
+    {
+      "cve_id": "CVE-2026-35429",
+      "published_date": "2026-05-12",
+      "last_modified_date": "2026-05-18",
+      "description": "User interface (ui) misrepresentation of critical information in Microsoft Edge for Android allows an unauthorized attacker to perform spoofing over a network.",
+      "base_score": 4.3,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "148.0.3967.55",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "148.0.3967.55",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "microsoft",
+      "product": "edge"
     },
     {
       "cve_id": "CVE-2026-33118",
