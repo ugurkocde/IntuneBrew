@@ -17,6 +17,10 @@ fi
 echo "Stopping Lunar if running..."
 pkill -f "Lunar" 2>/dev/null || true
 
+# Kill application with bundle ID fyi.lunar.Lunar if running
+echo "Stopping application with bundle ID fyi.lunar.Lunar if running..."
+killall -9 "fyi.lunar.Lunar" 2>/dev/null || true
+
 # Remove /Applications/Lunar.app
 echo "Removing /Applications/Lunar.app..."
 if [ -d "/Applications/Lunar.app" ]; then

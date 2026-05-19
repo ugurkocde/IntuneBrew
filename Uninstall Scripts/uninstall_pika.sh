@@ -17,6 +17,10 @@ fi
 echo "Stopping Pika if running..."
 pkill -f "Pika" 2>/dev/null || true
 
+# Kill application with bundle ID com.superhighfives.Pika if running
+echo "Stopping application with bundle ID com.superhighfives.Pika if running..."
+killall -9 "com.superhighfives.Pika" 2>/dev/null || true
+
 # Remove /Applications/Pika.app
 echo "Removing /Applications/Pika.app..."
 if [ -d "/Applications/Pika.app" ]; then

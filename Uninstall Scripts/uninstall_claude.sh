@@ -17,6 +17,14 @@ fi
 echo "Stopping Claude if running..."
 pkill -f "Claude" 2>/dev/null || true
 
+# Kill application with bundle ID com.anthropic.claudefordesktop if running
+echo "Stopping application with bundle ID com.anthropic.claudefordesktop if running..."
+killall -9 "com.anthropic.claudefordesktop" 2>/dev/null || true
+
+# Kill application with bundle ID com.anthropic.claudefordesktop.helper if running
+echo "Stopping application with bundle ID com.anthropic.claudefordesktop.helper if running..."
+killall -9 "com.anthropic.claudefordesktop.helper" 2>/dev/null || true
+
 # Remove /Applications/Claude.app
 echo "Removing /Applications/Claude.app..."
 if [ -d "/Applications/Claude.app" ]; then
