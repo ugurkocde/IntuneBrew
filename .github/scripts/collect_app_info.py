@@ -1217,6 +1217,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/morgen.json",
     "https://formulae.brew.sh/api/cask/cardpresso.json",
     "https://formulae.brew.sh/api/cask/lastpass.json",
+    "https://formulae.brew.sh/api/cask/instantview.json",
 ]
 
 # PKG in DMG URLs
