@@ -8,5 +8,7 @@
   "homepage": "https://www.nightbirdsevolve.com/meta/",
   "fileName": "meta_2.3.9.pkg",
   "type": "app",
-  "sha": "17867043282abc82dc0fb1d284a0f092bd250a9bf8d134915539a34c0aa6a6cb"
+  "sha": "17867043282abc82dc0fb1d284a0f092bd250a9bf8d134915539a34c0aa6a6cb",
+  "category": "Media",
+  "publisher": "NightBirdsEvolve"
 }
