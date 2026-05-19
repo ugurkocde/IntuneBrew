@@ -4,7 +4,7 @@
   "version": "2.3.9",
   "url": "https://intunebrew.blob.core.windows.net/pkg/meta_2.3.9.pkg",
   "vendor_url": "https://www.nightbirdsevolve.com/meta/updates/bin/Meta%202.3.9.zip",
-  "bundleId": null,
+  "bundleId": "com.nightbirdsevolve.Meta",
   "homepage": "https://www.nightbirdsevolve.com/meta/",
   "fileName": "meta_2.3.9.pkg",
   "type": "app",

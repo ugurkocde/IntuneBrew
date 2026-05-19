@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-05-19T09:43:38.821Z",
+  "last_full_scan": "2026-05-19T15:08:13.520Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9052,6 +9052,20 @@
       "status": "verified",
       "source": "file",
       "name": "SiliconMotion InstantView"
+    },
+    "meta": {
+      "last_checked": "2026-05-19T15:08:13.413Z",
+      "bundle_id": "com.nightbirdsevolve.Meta",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Meta"
     }
   }
 }
