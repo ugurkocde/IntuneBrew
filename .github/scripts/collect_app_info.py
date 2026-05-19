@@ -482,6 +482,7 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/music-decoy.json",
     "https://formulae.brew.sh/api/cask/thebrowsercompany-dia.json",
     "https://formulae.brew.sh/api/cask/affinity.json",
+    "https://formulae.brew.sh/api/cask/meta.json",
 ]
 
 # DMG
