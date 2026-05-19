@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1252-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -464,23 +464,38 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-18 01:03 UTC*
+*Last checked: 2026-05-19 01:05 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Dockside | 2.8.7 | 2.9.0 |
-| Novabench | 6.0.1 | 6.0.2 |
-| DBeaver Community Edition | 26.0.4 | 26.0.5 |
-| Stats | 2.12.13 | 2.12.14 |
-| Windsurf | 2.2.17 | 2.3.9 |
-| Path Finder | 26.1 | 26.1.1 |
+| UPDF | 2.5.1 | 2.5.2 |
+| Dockside | 2.9.0 | 2.9.2 |
+| Pulsar | 1.131.3 | 1.132.0 |
+| Easydict | 2.19.0 | 2.20.0 |
+| Zoom | 7.0.0.77593 | 7.0.5.81138 |
+| Microsoft Teams | 26106.2108.4669.9776 | 26106.2113.4690.1073 |
+| Discord | 0.0.390 | 0.0.391 |
+| DuckDuckGo | 1.189.0 | 1.190.0 |
+| Elgato Stream Deck | 7.4.1.22720 | 7.4.2.22730 |
+| draw.io Desktop | 30.0.1 | 30.0.2 |
+| CLion | 2026.1.1 | 2026.1.2 |
+| Craft | 3.4.2 | 3.4.3 |
+| TablePlus | 6.9.6 | 7.0.0 |
 | Caffeine | 1.6.4 | 1.1.4 |
+| BitBox | 4.50.1 | 4.51.0 |
+| Default Folder X | 6.2.7 | 6.2.8 |
 | Multi | 0.538.2 | 3.0.2 |
-| PureVPN | 9.42.0 | 9.43.0 |
+| Notesnook | 3.3.18 | 3.3.19 |
+| RustRover | 2026.1.1 | 2026.1.2 |
+| SoundAnchor | 1.6.2 | 1.7.0 |
+| Tuta Mail | 348.260506.0 | 348.260518.0 |
+| GOG Galaxy | 2.0.98.44 | 2.0.100.1 |
+| Splashtop Streamer | 3.8.2.0 | 3.8.4.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
