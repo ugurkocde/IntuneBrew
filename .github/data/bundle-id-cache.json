@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-05-20T01:30:26.461Z",
+  "last_full_scan": "2026-05-20T13:56:31.052Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9066,6 +9066,13 @@
         "openai_improved"
       ],
       "name": "Meta"
+    },
+    "macshot": {
+      "last_checked": "2026-05-20T13:56:31.042Z",
+      "bundle_id": "com.sw33tlie.macshot.macshot",
+      "status": "verified",
+      "source": "file",
+      "name": "macshot"
     }
   }
 }
