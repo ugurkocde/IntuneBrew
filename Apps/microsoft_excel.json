@@ -1,14 +1,14 @@
 {
   "name": "Microsoft Excel",
   "description": "Spreadsheet software",
-  "version": "16.109.26051019",
-  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.109.26051019_Installer.pkg",
+  "version": "16.109.26051717",
+  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.109.26051717_Installer.pkg",
   "vendor_url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.108.26041219_Installer.pkg",
   "bundleId": "com.microsoft.package.Microsoft_Excel.app",
   "homepage": "https://www.microsoft.com/en-US/microsoft-365/excel",
-  "fileName": "Microsoft_Excel_16.109.26051019_Installer.pkg",
+  "fileName": "Microsoft_Excel_16.109.26051717_Installer.pkg",
   "type": "pkg",
-  "sha": "457e1468bb7b4e19ddb308b0215a5a83068c60bc2d76275263166408c6488b07",
+  "sha": "48eb77a28d927c508557605fc9acb6378472ab1cfd521cc4e3732282533182dc",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
   "previous_version": "16.109.26051019"

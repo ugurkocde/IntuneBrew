@@ -10,5 +10,6 @@
   "type": "app",
   "sha": "17867043282abc82dc0fb1d284a0f092bd250a9bf8d134915539a34c0aa6a6cb",
   "category": "Media",
-  "publisher": "NightBirdsEvolve"
+  "publisher": "NightBirdsEvolve",
+  "previous_version": "2.3.9"
 }

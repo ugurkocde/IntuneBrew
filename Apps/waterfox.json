@@ -1,13 +1,13 @@
 {
   "name": "Waterfox",
   "description": "Web browser",
-  "version": "6.6.12",
-  "url": "https://cdn1.waterfox.net/waterfox/releases/6.6.12/Darwin_x86_64-aarch64/Waterfox%206.6.12.dmg",
+  "version": "6.6.13",
+  "url": "https://cdn1.waterfox.net/waterfox/releases/6.6.13/Darwin_x86_64-aarch64/Waterfox%206.6.13.dmg",
   "vendor_url": "https://cdn1.waterfox.net/waterfox/releases/6.6.11/Darwin_x86_64-aarch64/Waterfox%206.6.11.dmg",
   "bundleId": "org.waterfoxproject.waterfox",
   "homepage": "https://www.waterfox.net/",
-  "fileName": "Waterfox 6.6.12.dmg",
-  "sha": "b17976301f15ff5c4f9b4228e13c078d4963586d2b982cd1988ee4a69f5baf8e",
+  "fileName": "Waterfox 6.6.13.dmg",
+  "sha": "8f76fa3240d5207a5e58f56423f372300d9318c8fe0e74cdfa1ea9ea9db3efe7",
   "category": "Browsers",
   "publisher": "Waterfox Ltd.",
   "previous_version": "6.6.12"

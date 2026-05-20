@@ -1,15 +1,15 @@
 {
   "name": "Dia",
   "description": "Web browser",
-  "version": "1.31.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/dia_1.31.0.pkg",
+  "version": "1.31.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/dia_1.31.3.pkg",
   "vendor_url": "https://releases.diabrowser.com/release/Dia-1.27.2-79242.zip",
   "bundleId": "company.thebrowser.dia",
   "homepage": "https://www.diabrowser.com/",
-  "fileName": "dia_1.31.0.pkg",
+  "fileName": "dia_1.31.3.pkg",
   "type": "app",
-  "sha": "1dd3addc0c9302055f33c686b2b583ca774f5c3deaf9745a50076b5dafcb0280",
+  "sha": "1548a13527ada8555e990713678dbbadbee4ee0366321ae176744f5e499a1317",
   "category": "Browsers",
   "publisher": "Dia Browser",
-  "previous_version": "1.31.0"
+  "previous_version": "1.31.3"
 }

@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1254-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -467,30 +467,44 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-19 14:52 UTC*
+*Last checked: 2026-05-20 01:08 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Dockside | 2.9.2 | 2.9.3 |
-| Trae | 2.3.25938 | 2.3.27642 |
-| WeChat for Mac | 4.1.9.57 | 4.1.9.58 |
-| iMazing Profile Editor | 2.2.0 | 2.2.1 |
-| kitty | 0.46.2 | 0.47.0 |
-| Mullvad Browser | 15.0.12 | 15.0.14 |
-| TablePlus | 7.0.0 | 7.0.4 |
-| Tor Browser | 15.0.13 | 15.0.14 |
-| FontBase | 2026.5.0 | 2026.5.17 |
-| Typeface | 4.3.0 | 4.3.1 |
+| Mozilla Firefox ESR | 140.10.2 | 140.11.0 |
+| SketchUp | 2026.1.257.82 | 2026.2.242.76 |
+| Mozilla Thunderbird | 150.0.2 | 151.0 |
+| Apifox | 2.8.29 | 2.8.30 |
+| JetBrains Rider | 2026.1.1 | 2026.1.2 |
+| JetBrains PhpStorm | 2026.1.1 | 2026.1.2 |
+| Lens | 2026.4.151333 | 2026.5.181248 |
+| Mozilla Firefox | 150.0.3 | 151.0 |
+| Zed | 1.2.6 | 1.2.7 |
+| Microsoft Office | 16.109.26051019 | 16.109.26051717 |
+| Apidog | 2.8.29 | 2.8.30 |
+| Joplin | 3.6.13 | 3.6.14 |
+| Path Finder | 26.1.1 | 26.1.2 |
+| Waterfox | 6.6.12 | 6.6.13 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| iMazing Converter | 2.0.12 | 2.0.13 |
-| jamovi | 2.7.29.0 | 2.7.30.0 |
+| Granola | 7.220.0 | 7.227.4 |
+| LightBurn | 2.0.05 | 2.1.00 |
+| Loom | 0.347.8 | 0.348.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Pitch | 2.126.2 | 2.127.0 |
-| Shapr3D | 26.81.0.10934 | 26.82.0.10943 |
+| SoundAnchor | 1.7.0 | 1.7.1 |
+| Claude Code | 2.1.138 | 2.1.139 |
+| cmux | 0.64.6 | 0.64.7 |
+| Nextcloud | 33.0.4 | 33.0.5 |
+| Arq | 7.42.1 | 7.44 |
+| Microsoft Excel | 16.109.26051019 | 16.109.26051717 |
+| Microsoft OneNote | 16.109.26051019 | 16.109.26051717 |
+| Microsoft Outlook | 16.109.26051019 | 16.109.26051717 |
+| Microsoft PowerPoint | 16.109.26051019 | 16.109.26051717 |
+| Microsoft Word | 16.109.26051019 | 16.109.26051717 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
