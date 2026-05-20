@@ -9,5 +9,6 @@
   "fileName": "MacShot.dmg",
   "sha": "195c8903b1d0386a40610533edb91ee35a2b65dd34aa36b586d5efc621b662bf",
   "category": "Utilities",
-  "publisher": "sw33tLie"
+  "publisher": "sw33tLie",
+  "previous_version": "4.1.0"
 }
