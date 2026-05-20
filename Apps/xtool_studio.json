@@ -7,5 +7,7 @@
   "bundleId": null,
   "homepage": "https://www.xtool.com/pages/software",
   "fileName": "xTool-Studio-arm64-1.2.11.dmg",
-  "sha": "07222ff336d46b907958bb776ed23663f0bf27d8dd6bf7f176675b6ed9dd37ed"
+  "sha": "07222ff336d46b907958bb776ed23663f0bf27d8dd6bf7f176675b6ed9dd37ed",
+  "category": "Design",
+  "publisher": "xTool Co., Ltd."
 }
