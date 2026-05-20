@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1254-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1255-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -468,43 +468,26 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-20 01:08 UTC*
+*Last checked: 2026-05-20 13:42 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox ESR | 140.10.2 | 140.11.0 |
-| SketchUp | 2026.1.257.82 | 2026.2.242.76 |
-| Mozilla Thunderbird | 150.0.2 | 151.0 |
-| Apifox | 2.8.29 | 2.8.30 |
-| JetBrains Rider | 2026.1.1 | 2026.1.2 |
-| JetBrains PhpStorm | 2026.1.1 | 2026.1.2 |
-| Lens | 2026.4.151333 | 2026.5.181248 |
-| Mozilla Firefox | 150.0.3 | 151.0 |
-| Zed | 1.2.6 | 1.2.7 |
-| Microsoft Office | 16.109.26051019 | 16.109.26051717 |
-| Apidog | 2.8.29 | 2.8.30 |
-| Joplin | 3.6.13 | 3.6.14 |
-| Path Finder | 26.1.1 | 26.1.2 |
-| Waterfox | 6.6.12 | 6.6.13 |
+| LibreWolf | 150.0.3 | 151.0 |
+| Google Chrome | 148.0.7778.168 | 148.0.7778.179 |
+| Opera | 131.0.5877.55 | 131.0.5877.74 |
+| DbGate | 7.1.11 | 7.1.12 |
+| Movist Pro | 2.15.3 | 2.15.4 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Granola | 7.220.0 | 7.227.4 |
-| LightBurn | 2.0.05 | 2.1.00 |
-| Loom | 0.347.8 | 0.348.4 |
+| Adobe DNG Converter | 18.3 | 18.3.1 |
+| ChatWork | 2.22.0 | 2.22.1 |
+| GitHub Copilot for Xcode | 0.49.0 | 0.50.0 |
+| MEGAsync | 6.3.0.1 | 6.3.1.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| SoundAnchor | 1.7.0 | 1.7.1 |
-| Claude Code | 2.1.138 | 2.1.139 |
-| cmux | 0.64.6 | 0.64.7 |
-| Nextcloud | 33.0.4 | 33.0.5 |
-| Arq | 7.42.1 | 7.44 |
-| Microsoft Excel | 16.109.26051019 | 16.109.26051717 |
-| Microsoft OneNote | 16.109.26051019 | 16.109.26051717 |
-| Microsoft Outlook | 16.109.26051019 | 16.109.26051717 |
-| Microsoft PowerPoint | 16.109.26051019 | 16.109.26051717 |
-| Microsoft Word | 16.109.26051019 | 16.109.26051717 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
