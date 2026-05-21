@@ -4,7 +4,7 @@
   "version": "7.99",
   "url": "https://nmap.org/dist/nmap-7.99.dmg",
   "vendor_url": "https://nmap.org/dist/nmap-7.99.dmg",
-  "bundleId": null,
+  "bundleId": "org.insecure.Zenmap",
   "homepage": "https://nmap.org/zenmap/",
   "fileName": "nmap-7.99.dmg",
   "type": "pkg_in_dmg",
