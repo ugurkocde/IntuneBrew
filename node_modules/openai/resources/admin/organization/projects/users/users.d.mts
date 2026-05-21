@@ -1,6 +1,6 @@
 import { APIResource } from "../../../../../core/resource.mjs";
 import * as RolesAPI from "./roles.mjs";
-import { RoleCreateParams, RoleCreateResponse, RoleDeleteParams, RoleDeleteResponse, RoleListParams, RoleListResponse, RoleListResponsesPage, Roles } from "./roles.mjs";
+import { RoleCreateParams, RoleCreateResponse, RoleDeleteParams, RoleDeleteResponse, RoleListParams, RoleListResponse, RoleListResponsesPage, RoleRetrieveParams, RoleRetrieveResponse, Roles } from "./roles.mjs";
 import { APIPromise } from "../../../../../core/api-promise.mjs";
 import { ConversationCursorPage, type ConversationCursorPageParams, PagePromise } from "../../../../../core/pagination.mjs";
 import { RequestOptions } from "../../../../../internal/request-options.mjs";
@@ -152,6 +152,6 @@ export interface UserDeleteParams {
 }
 export declare namespace Users {
     export { type ProjectUser as ProjectUser, type UserDeleteResponse as UserDeleteResponse, type ProjectUsersPage as ProjectUsersPage, type UserCreateParams as UserCreateParams, type UserRetrieveParams as UserRetrieveParams, type UserUpdateParams as UserUpdateParams, type UserListParams as UserListParams, type UserDeleteParams as UserDeleteParams, };
-    export { Roles as Roles, type RoleCreateResponse as RoleCreateResponse, type RoleListResponse as RoleListResponse, type RoleDeleteResponse as RoleDeleteResponse, type RoleListResponsesPage as RoleListResponsesPage, type RoleCreateParams as RoleCreateParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
+    export { Roles as Roles, type RoleCreateResponse as RoleCreateResponse, type RoleRetrieveResponse as RoleRetrieveResponse, type RoleListResponse as RoleListResponse, type RoleDeleteResponse as RoleDeleteResponse, type RoleListResponsesPage as RoleListResponsesPage, type RoleCreateParams as RoleCreateParams, type RoleRetrieveParams as RoleRetrieveParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
 }
 //# sourceMappingURL=users.d.mts.map

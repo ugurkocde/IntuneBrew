@@ -7,5 +7,7 @@
   "bundleId": null,
   "homepage": "https://nmap.org/zenmap/",
   "fileName": "nmap-7.99.dmg",
-  "type": "pkg_in_dmg"
+  "type": "pkg_in_dmg",
+  "category": "Security",
+  "publisher": "The Nmap Project"
 }

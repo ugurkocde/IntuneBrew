@@ -4,12 +4,20 @@ import * as APIKeysAPI from "./api-keys.mjs";
 import { APIKeys, } from "./api-keys.mjs";
 import * as CertificatesAPI from "./certificates.mjs";
 import { Certificates, } from "./certificates.mjs";
+import * as DataRetentionAPI from "./data-retention.mjs";
+import { DataRetention } from "./data-retention.mjs";
+import * as HostedToolPermissionsAPI from "./hosted-tool-permissions.mjs";
+import { HostedToolPermissions, } from "./hosted-tool-permissions.mjs";
+import * as ModelPermissionsAPI from "./model-permissions.mjs";
+import { ModelPermissions, } from "./model-permissions.mjs";
 import * as RateLimitsAPI from "./rate-limits.mjs";
 import { RateLimits, } from "./rate-limits.mjs";
 import * as RolesAPI from "./roles.mjs";
 import { Roles, } from "./roles.mjs";
 import * as ServiceAccountsAPI from "./service-accounts.mjs";
 import { ServiceAccounts, } from "./service-accounts.mjs";
+import * as SpendAlertsAPI from "./spend-alerts.mjs";
+import { SpendAlerts, } from "./spend-alerts.mjs";
 import * as GroupsAPI from "./groups/groups.mjs";
 import { Groups, } from "./groups/groups.mjs";
 import * as UsersAPI from "./users/users.mjs";
@@ -23,8 +31,12 @@ export class Projects extends APIResource {
         this.serviceAccounts = new ServiceAccountsAPI.ServiceAccounts(this._client);
         this.apiKeys = new APIKeysAPI.APIKeys(this._client);
         this.rateLimits = new RateLimitsAPI.RateLimits(this._client);
+        this.modelPermissions = new ModelPermissionsAPI.ModelPermissions(this._client);
+        this.hostedToolPermissions = new HostedToolPermissionsAPI.HostedToolPermissions(this._client);
         this.groups = new GroupsAPI.Groups(this._client);
         this.roles = new RolesAPI.Roles(this._client);
+        this.dataRetention = new DataRetentionAPI.DataRetention(this._client);
+        this.spendAlerts = new SpendAlertsAPI.SpendAlerts(this._client);
         this.certificates = new CertificatesAPI.Certificates(this._client);
     }
     /**
@@ -122,7 +134,11 @@ Projects.Users = Users;
 Projects.ServiceAccounts = ServiceAccounts;
 Projects.APIKeys = APIKeys;
 Projects.RateLimits = RateLimits;
+Projects.ModelPermissions = ModelPermissions;
+Projects.HostedToolPermissions = HostedToolPermissions;
 Projects.Groups = Groups;
 Projects.Roles = Roles;
+Projects.DataRetention = DataRetention;
+Projects.SpendAlerts = SpendAlerts;
 Projects.Certificates = Certificates;
 //# sourceMappingURL=projects.mjs.map

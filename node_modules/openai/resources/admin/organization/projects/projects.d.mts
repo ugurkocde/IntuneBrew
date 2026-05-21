@@ -3,14 +3,22 @@ import * as APIKeysAPI from "./api-keys.mjs";
 import { APIKeyDeleteParams, APIKeyDeleteResponse, APIKeyListParams, APIKeyRetrieveParams, APIKeys, ProjectAPIKey, ProjectAPIKeysPage } from "./api-keys.mjs";
 import * as CertificatesAPI from "./certificates.mjs";
 import { CertificateActivateParams, CertificateActivateResponse, CertificateActivateResponsesPage, CertificateDeactivateParams, CertificateDeactivateResponse, CertificateDeactivateResponsesPage, CertificateListParams, CertificateListResponse, CertificateListResponsesPage, Certificates } from "./certificates.mjs";
+import * as DataRetentionAPI from "./data-retention.mjs";
+import { DataRetention, DataRetentionUpdateParams, ProjectDataRetention } from "./data-retention.mjs";
+import * as HostedToolPermissionsAPI from "./hosted-tool-permissions.mjs";
+import { HostedToolPermissionUpdateParams, HostedToolPermissions, ProjectHostedToolPermissions } from "./hosted-tool-permissions.mjs";
+import * as ModelPermissionsAPI from "./model-permissions.mjs";
+import { ModelPermissionUpdateParams, ModelPermissions, ProjectModelPermissions, ProjectModelPermissionsDeleted } from "./model-permissions.mjs";
 import * as RateLimitsAPI from "./rate-limits.mjs";
 import { ProjectRateLimit, ProjectRateLimitsPage, RateLimitListRateLimitsParams, RateLimitUpdateRateLimitParams, RateLimits } from "./rate-limits.mjs";
 import * as RolesAPI from "./roles.mjs";
-import { RoleCreateParams, RoleDeleteParams, RoleDeleteResponse, RoleListParams, RoleUpdateParams, Roles } from "./roles.mjs";
+import { RoleCreateParams, RoleDeleteParams, RoleDeleteResponse, RoleListParams, RoleRetrieveParams, RoleUpdateParams, Roles } from "./roles.mjs";
 import * as ServiceAccountsAPI from "./service-accounts.mjs";
-import { ProjectServiceAccount, ProjectServiceAccountsPage, ServiceAccountCreateParams, ServiceAccountCreateResponse, ServiceAccountDeleteParams, ServiceAccountDeleteResponse, ServiceAccountListParams, ServiceAccountRetrieveParams, ServiceAccounts } from "./service-accounts.mjs";
+import { ProjectServiceAccount, ProjectServiceAccountsPage, ServiceAccountCreateParams, ServiceAccountCreateResponse, ServiceAccountDeleteParams, ServiceAccountDeleteResponse, ServiceAccountListParams, ServiceAccountRetrieveParams, ServiceAccountUpdateParams, ServiceAccounts } from "./service-accounts.mjs";
+import * as SpendAlertsAPI from "./spend-alerts.mjs";
+import { ProjectSpendAlert, ProjectSpendAlertDeleted, ProjectSpendAlertsPage, SpendAlertCreateParams, SpendAlertDeleteParams, SpendAlertListParams, SpendAlertUpdateParams, SpendAlerts } from "./spend-alerts.mjs";
 import * as GroupsAPI from "./groups/groups.mjs";
-import { GroupCreateParams, GroupDeleteParams, GroupDeleteResponse, GroupListParams, Groups, ProjectGroup, ProjectGroupsPage } from "./groups/groups.mjs";
+import { GroupCreateParams, GroupDeleteParams, GroupDeleteResponse, GroupListParams, GroupRetrieveParams, Groups, ProjectGroup, ProjectGroupsPage } from "./groups/groups.mjs";
 import * as UsersAPI from "./users/users.mjs";
 import { ProjectUser, ProjectUsersPage, UserCreateParams, UserDeleteParams, UserDeleteResponse, UserListParams, UserRetrieveParams, UserUpdateParams, Users } from "./users/users.mjs";
 import { APIPromise } from "../../../../core/api-promise.mjs";
@@ -21,8 +29,12 @@ export declare class Projects extends APIResource {
     serviceAccounts: ServiceAccountsAPI.ServiceAccounts;
     apiKeys: APIKeysAPI.APIKeys;
     rateLimits: RateLimitsAPI.RateLimits;
+    modelPermissions: ModelPermissionsAPI.ModelPermissions;
+    hostedToolPermissions: HostedToolPermissionsAPI.HostedToolPermissions;
     groups: GroupsAPI.Groups;
     roles: RolesAPI.Roles;
+    dataRetention: DataRetentionAPI.DataRetention;
+    spendAlerts: SpendAlertsAPI.SpendAlerts;
     certificates: CertificatesAPI.Certificates;
     /**
      * Create a new project in the organization. Projects can be created and archived,
@@ -162,11 +174,15 @@ export interface ProjectListParams extends ConversationCursorPageParams {
 export declare namespace Projects {
     export { type Project as Project, type ProjectsPage as ProjectsPage, type ProjectCreateParams as ProjectCreateParams, type ProjectUpdateParams as ProjectUpdateParams, type ProjectListParams as ProjectListParams, };
     export { Users as Users, type ProjectUser as ProjectUser, type UserDeleteResponse as UserDeleteResponse, type ProjectUsersPage as ProjectUsersPage, type UserCreateParams as UserCreateParams, type UserRetrieveParams as UserRetrieveParams, type UserUpdateParams as UserUpdateParams, type UserListParams as UserListParams, type UserDeleteParams as UserDeleteParams, };
-    export { ServiceAccounts as ServiceAccounts, type ProjectServiceAccount as ProjectServiceAccount, type ServiceAccountCreateResponse as ServiceAccountCreateResponse, type ServiceAccountDeleteResponse as ServiceAccountDeleteResponse, type ProjectServiceAccountsPage as ProjectServiceAccountsPage, type ServiceAccountCreateParams as ServiceAccountCreateParams, type ServiceAccountRetrieveParams as ServiceAccountRetrieveParams, type ServiceAccountListParams as ServiceAccountListParams, type ServiceAccountDeleteParams as ServiceAccountDeleteParams, };
+    export { ServiceAccounts as ServiceAccounts, type ProjectServiceAccount as ProjectServiceAccount, type ServiceAccountCreateResponse as ServiceAccountCreateResponse, type ServiceAccountDeleteResponse as ServiceAccountDeleteResponse, type ProjectServiceAccountsPage as ProjectServiceAccountsPage, type ServiceAccountCreateParams as ServiceAccountCreateParams, type ServiceAccountRetrieveParams as ServiceAccountRetrieveParams, type ServiceAccountUpdateParams as ServiceAccountUpdateParams, type ServiceAccountListParams as ServiceAccountListParams, type ServiceAccountDeleteParams as ServiceAccountDeleteParams, };
     export { APIKeys as APIKeys, type ProjectAPIKey as ProjectAPIKey, type APIKeyDeleteResponse as APIKeyDeleteResponse, type ProjectAPIKeysPage as ProjectAPIKeysPage, type APIKeyRetrieveParams as APIKeyRetrieveParams, type APIKeyListParams as APIKeyListParams, type APIKeyDeleteParams as APIKeyDeleteParams, };
     export { RateLimits as RateLimits, type ProjectRateLimit as ProjectRateLimit, type ProjectRateLimitsPage as ProjectRateLimitsPage, type RateLimitListRateLimitsParams as RateLimitListRateLimitsParams, type RateLimitUpdateRateLimitParams as RateLimitUpdateRateLimitParams, };
-    export { Groups as Groups, type ProjectGroup as ProjectGroup, type GroupDeleteResponse as GroupDeleteResponse, type ProjectGroupsPage as ProjectGroupsPage, type GroupCreateParams as GroupCreateParams, type GroupListParams as GroupListParams, type GroupDeleteParams as GroupDeleteParams, };
-    export { Roles as Roles, type RoleDeleteResponse as RoleDeleteResponse, type RoleCreateParams as RoleCreateParams, type RoleUpdateParams as RoleUpdateParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
+    export { ModelPermissions as ModelPermissions, type ProjectModelPermissions as ProjectModelPermissions, type ProjectModelPermissionsDeleted as ProjectModelPermissionsDeleted, type ModelPermissionUpdateParams as ModelPermissionUpdateParams, };
+    export { HostedToolPermissions as HostedToolPermissions, type ProjectHostedToolPermissions as ProjectHostedToolPermissions, type HostedToolPermissionUpdateParams as HostedToolPermissionUpdateParams, };
+    export { Groups as Groups, type ProjectGroup as ProjectGroup, type GroupDeleteResponse as GroupDeleteResponse, type ProjectGroupsPage as ProjectGroupsPage, type GroupCreateParams as GroupCreateParams, type GroupRetrieveParams as GroupRetrieveParams, type GroupListParams as GroupListParams, type GroupDeleteParams as GroupDeleteParams, };
+    export { Roles as Roles, type RoleDeleteResponse as RoleDeleteResponse, type RoleCreateParams as RoleCreateParams, type RoleRetrieveParams as RoleRetrieveParams, type RoleUpdateParams as RoleUpdateParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
+    export { DataRetention as DataRetention, type ProjectDataRetention as ProjectDataRetention, type DataRetentionUpdateParams as DataRetentionUpdateParams, };
+    export { SpendAlerts as SpendAlerts, type ProjectSpendAlert as ProjectSpendAlert, type ProjectSpendAlertDeleted as ProjectSpendAlertDeleted, type ProjectSpendAlertsPage as ProjectSpendAlertsPage, type SpendAlertCreateParams as SpendAlertCreateParams, type SpendAlertUpdateParams as SpendAlertUpdateParams, type SpendAlertListParams as SpendAlertListParams, type SpendAlertDeleteParams as SpendAlertDeleteParams, };
     export { Certificates as Certificates, type CertificateListResponse as CertificateListResponse, type CertificateActivateResponse as CertificateActivateResponse, type CertificateDeactivateResponse as CertificateDeactivateResponse, type CertificateListResponsesPage as CertificateListResponsesPage, type CertificateActivateResponsesPage as CertificateActivateResponsesPage, type CertificateDeactivateResponsesPage as CertificateDeactivateResponsesPage, type CertificateListParams as CertificateListParams, type CertificateActivateParams as CertificateActivateParams, type CertificateDeactivateParams as CertificateDeactivateParams, };
 }
 //# sourceMappingURL=projects.d.mts.map

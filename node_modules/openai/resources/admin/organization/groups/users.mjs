@@ -23,6 +23,25 @@ export class Users extends APIResource {
         });
     }
     /**
+     * Retrieves a user in a group.
+     *
+     * @example
+     * ```ts
+     * const user =
+     *   await client.admin.organization.groups.users.retrieve(
+     *     'user_id',
+     *     { group_id: 'group_id' },
+     *   );
+     * ```
+     */
+    retrieve(userID, params, options) {
+        const { group_id } = params;
+        return this._client.get(path `/organization/groups/${group_id}/users/${userID}`, {
+            ...options,
+            __security: { adminAPIKeyAuth: true },
+        });
+    }
+    /**
      * Lists the users assigned to a group.
      *
      * @example

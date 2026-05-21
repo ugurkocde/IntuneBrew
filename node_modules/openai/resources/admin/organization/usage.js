@@ -113,6 +113,24 @@ class Usage extends resource_1.APIResource {
         });
     }
     /**
+     * Get file search calls usage details for the organization.
+     *
+     * @example
+     * ```ts
+     * const response =
+     *   await client.admin.organization.usage.fileSearchCalls({
+     *     start_time: 0,
+     *   });
+     * ```
+     */
+    fileSearchCalls(query, options) {
+        return this._client.get('/organization/usage/file_search_calls', {
+            query,
+            ...options,
+            __security: { adminAPIKeyAuth: true },
+        });
+    }
+    /**
      * Get images usage details for the organization.
      *
      * @example
@@ -161,6 +179,24 @@ class Usage extends resource_1.APIResource {
      */
     vectorStores(query, options) {
         return this._client.get('/organization/usage/vector_stores', {
+            query,
+            ...options,
+            __security: { adminAPIKeyAuth: true },
+        });
+    }
+    /**
+     * Get web search calls usage details for the organization.
+     *
+     * @example
+     * ```ts
+     * const response =
+     *   await client.admin.organization.usage.webSearchCalls({
+     *     start_time: 0,
+     *   });
+     * ```
+     */
+    webSearchCalls(query, options) {
+        return this._client.get('/organization/usage/web_search_calls', {
             query,
             ...options,
             __security: { adminAPIKeyAuth: true },

@@ -16,6 +16,17 @@ export declare class Roles extends APIResource {
      */
     create(body: RoleCreateParams, options?: RequestOptions): APIPromise<Role>;
     /**
+     * Retrieves an organization role.
+     *
+     * @example
+     * ```ts
+     * const role = await client.admin.organization.roles.retrieve(
+     *   'role_id',
+     * );
+     * ```
+     */
+    retrieve(roleID: string, options?: RequestOptions): APIPromise<Role>;
+    /**
      * Updates an existing organization role.
      *
      * @example

@@ -19,6 +19,19 @@ export declare class Roles extends APIResource {
      */
     create(userID: string, params: RoleCreateParams, options?: RequestOptions): APIPromise<RoleCreateResponse>;
     /**
+     * Retrieves a project role assigned to a user.
+     *
+     * @example
+     * ```ts
+     * const role =
+     *   await client.admin.organization.projects.users.roles.retrieve(
+     *     'role_id',
+     *     { project_id: 'project_id', user_id: 'user_id' },
+     *   );
+     * ```
+     */
+    retrieve(roleID: string, params: RoleRetrieveParams, options?: RequestOptions): APIPromise<RoleRetrieveResponse>;
+    /**
      * Lists the project roles assigned to a user within a project.
      *
      * @example
@@ -69,11 +82,15 @@ export interface RoleCreateResponse {
  * Detailed information about a role assignment entry returned when listing
  * assignments.
  */
-export interface RoleListResponse {
+export interface RoleRetrieveResponse {
     /**
      * Identifier for the role.
      */
     id: string;
+    /**
+     * Principals from which the role assignment is inherited, when available.
+     */
+    assignment_sources: Array<RoleRetrieveResponse.AssignmentSource> | null;
     /**
      * When the role was created.
      */
@@ -119,6 +136,76 @@ export interface RoleListResponse {
      */
     updated_at: number | null;
 }
+export declare namespace RoleRetrieveResponse {
+    interface AssignmentSource {
+        principal_id: string;
+        principal_type: string;
+    }
+}
+/**
+ * Detailed information about a role assignment entry returned when listing
+ * assignments.
+ */
+export interface RoleListResponse {
+    /**
+     * Identifier for the role.
+     */
+    id: string;
+    /**
+     * Principals from which the role assignment is inherited, when available.
+     */
+    assignment_sources: Array<RoleListResponse.AssignmentSource> | null;
+    /**
+     * When the role was created.
+     */
+    created_at: number | null;
+    /**
+     * Identifier of the actor who created the role.
+     */
+    created_by: string | null;
+    /**
+     * User details for the actor that created the role, when available.
+     */
+    created_by_user_obj: {
+        [key: string]: unknown;
+    } | null;
+    /**
+     * Description of the role.
+     */
+    description: string | null;
+    /**
+     * Arbitrary metadata stored on the role.
+     */
+    metadata: {
+        [key: string]: unknown;
+    } | null;
+    /**
+     * Name of the role.
+     */
+    name: string;
+    /**
+     * Permissions associated with the role.
+     */
+    permissions: Array<string>;
+    /**
+     * Whether the role is predefined by OpenAI.
+     */
+    predefined_role: boolean;
+    /**
+     * Resource type the role applies to.
+     */
+    resource_type: string;
+    /**
+     * When the role was last updated.
+     */
+    updated_at: number | null;
+}
+export declare namespace RoleListResponse {
+    interface AssignmentSource {
+        principal_id: string;
+        principal_type: string;
+    }
+}
 /**
  * Confirmation payload returned after unassigning a role.
  */
@@ -143,6 +230,16 @@ export interface RoleCreateParams {
      */
     role_id: string;
 }
+export interface RoleRetrieveParams {
+    /**
+     * The ID of the project to inspect.
+     */
+    project_id: string;
+    /**
+     * The ID of the user to inspect.
+     */
+    user_id: string;
+}
 export interface RoleListParams extends NextCursorPageParams {
     /**
      * Path param: The ID of the project to inspect.
@@ -164,6 +261,6 @@ export interface RoleDeleteParams {
     user_id: string;
 }
 export declare namespace Roles {
-    export { type RoleCreateResponse as RoleCreateResponse, type RoleListResponse as RoleListResponse, type RoleDeleteResponse as RoleDeleteResponse, type RoleListResponsesPage as RoleListResponsesPage, type RoleCreateParams as RoleCreateParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
+    export { type RoleCreateResponse as RoleCreateResponse, type RoleRetrieveResponse as RoleRetrieveResponse, type RoleListResponse as RoleListResponse, type RoleDeleteResponse as RoleDeleteResponse, type RoleListResponsesPage as RoleListResponsesPage, type RoleCreateParams as RoleCreateParams, type RoleRetrieveParams as RoleRetrieveParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
 }
 //# sourceMappingURL=roles.d.mts.map

@@ -27,6 +27,25 @@ class Roles extends resource_1.APIResource {
         });
     }
     /**
+     * Retrieves a project role assigned to a user.
+     *
+     * @example
+     * ```ts
+     * const role =
+     *   await client.admin.organization.projects.users.roles.retrieve(
+     *     'role_id',
+     *     { project_id: 'project_id', user_id: 'user_id' },
+     *   );
+     * ```
+     */
+    retrieve(roleID, params, options) {
+        const { project_id, user_id } = params;
+        return this._client.get((0, path_1.path) `/projects/${project_id}/users/${user_id}/roles/${roleID}`, {
+            ...options,
+            __security: { adminAPIKeyAuth: true },
+        });
+    }
+    /**
      * Lists the project roles assigned to a user within a project.
      *
      * @example

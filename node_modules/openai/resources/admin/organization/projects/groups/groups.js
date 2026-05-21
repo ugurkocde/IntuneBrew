@@ -33,6 +33,26 @@ class Groups extends resource_1.APIResource {
         });
     }
     /**
+     * Retrieves a project's group.
+     *
+     * @example
+     * ```ts
+     * const projectGroup =
+     *   await client.admin.organization.projects.groups.retrieve(
+     *     'group_id',
+     *     { project_id: 'project_id' },
+     *   );
+     * ```
+     */
+    retrieve(groupID, params, options) {
+        const { project_id, ...query } = params;
+        return this._client.get((0, path_1.path) `/organization/projects/${project_id}/groups/${groupID}`, {
+            query,
+            ...options,
+            __security: { adminAPIKeyAuth: true },
+        });
+    }
+    /**
      * Lists the groups that have access to a project.
      *
      * @example
