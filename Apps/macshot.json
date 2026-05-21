@@ -1,13 +1,13 @@
 {
   "name": "macshot",
   "description": "Screenshot and screen recording tool",
-  "version": "4.1.0",
-  "url": "https://github.com/sw33tLie/macshot/releases/download/v4.1.0/MacShot.dmg",
+  "version": "4.1.1",
+  "url": "https://github.com/sw33tLie/macshot/releases/download/v4.1.1/MacShot.dmg",
   "vendor_url": "https://github.com/sw33tLie/macshot/releases/download/v4.1.0/MacShot.dmg",
   "bundleId": "com.sw33tlie.macshot.macshot",
   "homepage": "https://github.com/sw33tLie/macshot",
   "fileName": "MacShot.dmg",
-  "sha": "195c8903b1d0386a40610533edb91ee35a2b65dd34aa36b586d5efc621b662bf",
+  "sha": "89e4822807ac9b66c88370f4791bf665e0c535535db87f896fcc7c8decd3da63",
   "category": "Utilities",
   "publisher": "sw33tLie",
   "previous_version": "4.1.0"
