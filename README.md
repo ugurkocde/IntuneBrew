@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1256-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -470,23 +470,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-20 22:21 UTC*
+*Last checked: 2026-05-21 01:04 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Grammarly Desktop | 1.165.1.0 | 1.166.1.0 |
-| XMind | 26.03.04129-202605150708 | 26.03.04129-202605200137 |
-| Krisp | 3.11.8 | 3.12.4 |
-| Raycast | 1.104.17 | 1.104.18 |
-| Remote Desktop Manager | 2026.1.11.4 | 2026.1.12.2 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| KiCad | 10.0.2 | 10.0.3 |
 | Multi | 0.538.2 | 3.0.2 |
-| GraphPad Prism | 11.0.1 | 11.0.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
