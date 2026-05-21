@@ -17,6 +17,10 @@ fi
 echo "Stopping Hoppscotch if running..."
 pkill -f "Hoppscotch" 2>/dev/null || true
 
+# Kill application with bundle ID io.hoppscotch.desktop if running
+echo "Stopping application with bundle ID io.hoppscotch.desktop if running..."
+killall -9 "io.hoppscotch.desktop" 2>/dev/null || true
+
 # Remove /Applications/Hoppscotch.app
 echo "Removing /Applications/Hoppscotch.app..."
 if [ -d "/Applications/Hoppscotch.app" ]; then
