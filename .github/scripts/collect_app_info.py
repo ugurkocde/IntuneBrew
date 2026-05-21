@@ -1240,6 +1240,7 @@ pkg_in_dmg_urls = [
     # New PKG-in-DMG apps (batch 1 - 1 app)
     "https://formulae.brew.sh/api/cask/gpg-suite.json",
     "https://formulae.brew.sh/api/cask/wacom-tablet.json",
+    "https://formulae.brew.sh/api/cask/zenmap.json",
     # Note: tuxera-ntfs removed - has directory-based PKG inside .mpkg that needs special handling
 ]
 
