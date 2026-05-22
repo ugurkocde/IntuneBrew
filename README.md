@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1257-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -472,55 +472,25 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-21 21:33 UTC*
+*Last checked: 2026-05-22 01:03 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 151.0b10 | 152.0b1 |
-| Advanced Renamer | 4.20 | 4.21 |
-| ProcessSpy | 1.13.1 | 1.13.2 |
-| A Better Finder Rename | 12.29 | 12.30 |
-| OmniFocus | 4.8.10 | 4.8.11 |
-| Pulsar | 1.132.0 | 1.132.1 |
-| ChatWise | 26.5.0 | 26.5.1 |
-| Mozilla Firefox | 151.0 | 151.0.1 |
-| Bitwarden | 2026.3.1 | 2026.4.0 |
-| Notion | 7.17.0 | 7.18.0 |
-| Brave | 1.90.122.0 | 1.90.124.0 |
-| Santa | 2026.3 | 2026.4 |
-| Podman Desktop | 1.27.1 | 1.27.2 |
-| iMazing | 3.5.2 | 3.5.3 |
-| Bruno | 3.3.0 | 3.4.1 |
-| Zed | 1.2.7 | 1.3.5 |
-| Jellyfin | 10.11.8 | 10.11.9 |
-| Remote Desktop Manager | 2026.1.12.2 | 2026.1.12.4 |
-| Simplenote | 2.24.0 | 2.25.0 |
-| TablePlus | 7.0.4 | 7.0.6 |
-| MarginNote | 4.4.0 | 4.4.1 |
-| Opera GX | 131.0.5877.57 | 131.0.5877.84 |
+| Zed | 1.3.5 | 1.3.6 |
+| Microsoft Edge | 148.0.3967.70 | 148.0.3967.83 |
+| Warp | 0.2026.05.18.05.32.stable | 0.2026.05.20.09.21.stable |
+| Backblaze | 10.0.1.1038 | 10.0.2.1048 |
+| Path Finder | 26.1.2 | 26.1.3 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| 4K YouTube to MP3 | 26.1.1 | 26.1.2 |
-| Akiflow | 2.73.12 | 2.74.21 |
-| Nektony App Cleaner & Uninstaller | 9.2 | 9.2.1 |
-| Granola | 7.227.4 | 7.255.6 |
-| Loom | 0.348.4 | 0.349.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Scratch | 3.31.1 | 3.32.0 |
-| TickTick | 8.0.60 | 8.0.70 |
-| TREZOR Suite | 26.4.2 | 26.5.1 |
-| Tuta Mail | 348.260518.0 | 348.260519.0 |
-| Claude Code | 2.1.139 | 2.1.140 |
-| kiro | 0.12.200 | 0.12.224 |
-| Morgen | 4.0.5 | 4.0.6 |
-| macshot | 4.1.0 | 4.1.1 |
-| Okta Advanced Server Access | 1.105.0 | 1.106.0 |
-| Microsoft Office BusinessPro | 16.109.26051019 | 16.109.26051717 |
-| Salesforce CLI | 2.134.6 | 2.135.7 |
-| UniFi Identity Endpoint | 4.0.0 | 4.0.1 |
+| OmniGraffle | 7.25.2 | 7.25.3 |
+| Claude Code | 2.1.140 | 2.1.141 |
+| Arq | 7.44 | 7.44.1 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
