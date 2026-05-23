@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1257-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -473,24 +473,39 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-22 01:03 UTC*
+*Last checked: 2026-05-23 01:02 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Zed | 1.3.5 | 1.3.6 |
-| Microsoft Edge | 148.0.3967.70 | 148.0.3967.83 |
-| Warp | 0.2026.05.18.05.32.stable | 0.2026.05.20.09.21.stable |
-| Backblaze | 10.0.1.1038 | 10.0.2.1048 |
-| Path Finder | 26.1.2 | 26.1.3 |
+| Mozilla Firefox Developer Edition | 152.0b1 | 152.0b2 |
+| Proton Pass | 1.36.1 | 1.37.0 |
+| UPDF | 2.5.2 | 2.5.3 |
+| Rive | 0.8.4865 | 0.8.4917 |
+| NordPass | 7.6.20 | 7.7.12 |
+| Proton Drive | 2.11.4 | 2.11.5 |
+| Company Portal | 5.2604.0 | 5.2604.1 |
+| Insomnia | 12.5.0 | 12.6.0 |
+| LM Studio | 0.4.13 | 0.4.14 |
+| Opera | 131.0.5877.74 | 131.0.5877.97 |
+| Dataflare | 3.0.2 | 3.0.3 |
+| DataSpell | 2026.1.1 | 2026.1.2 |
+| Lunacy | 14.0 | 14.1 |
+| Milanote | 3.18.100 | 3.18.101 |
+| Deezer | 7.1.200 | 7.1.210 |
 | Caffeine | 1.6.4 | 1.1.4 |
+| LightBurn | 2.1.00 | 2.1.01 |
 | Multi | 0.538.2 | 3.0.2 |
-| OmniGraffle | 7.25.2 | 7.25.3 |
-| Claude Code | 2.1.140 | 2.1.141 |
-| Arq | 7.44 | 7.44.1 |
+| Notesnook | 3.3.19 | 3.3.20 |
+| WebCatalog | 75.0.2 | 75.1.1 |
+| Zotero | 9.0.3 | 9.0.4 |
+| Claude Code | 2.1.141 | 2.1.142 |
+| cmux | 0.64.7 | 0.64.9 |
+| LTspice | 17.2.4 | 26.0.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

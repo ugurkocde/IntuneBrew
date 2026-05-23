@@ -1,7 +1,7 @@
 {
   "name": "LTspice",
   "description": "SPICE simulation software, schematic capture and waveform viewer",
-  "version": "17.2.4",
+  "version": "26.0.2",
   "url": "https://ltspice.analog.com/software/LTspice.pkg",
   "vendor_url": "https://ltspice.analog.com/software/LTspice.pkg",
   "bundleId": "com.analog.LTspice",
