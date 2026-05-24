@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1257-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -474,38 +474,28 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-23 01:02 UTC*
+*Last checked: 2026-05-24 01:05 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 152.0b1 | 152.0b2 |
-| Proton Pass | 1.36.1 | 1.37.0 |
-| UPDF | 2.5.2 | 2.5.3 |
-| Rive | 0.8.4865 | 0.8.4917 |
-| NordPass | 7.6.20 | 7.7.12 |
-| Proton Drive | 2.11.4 | 2.11.5 |
-| Company Portal | 5.2604.0 | 5.2604.1 |
-| Insomnia | 12.5.0 | 12.6.0 |
-| LM Studio | 0.4.13 | 0.4.14 |
-| Opera | 131.0.5877.74 | 131.0.5877.97 |
-| Dataflare | 3.0.2 | 3.0.3 |
-| DataSpell | 2026.1.1 | 2026.1.2 |
-| Lunacy | 14.0 | 14.1 |
-| Milanote | 3.18.100 | 3.18.101 |
-| Deezer | 7.1.200 | 7.1.210 |
+| Apifox | 2.8.30 | 2.8.31 |
+| DockDoor | 1.37 | 1.38 |
+| Yaak | 2026.3.1 | 2026.4.0 |
+| CotEditor | 7.0.3 | 7.0.4 |
+| LibreWolf | 151.0 | 151.0.1 |
+| BBEdit | 15.5.5 | 16.0 |
+| IINA | 1.4.2 | 1.4.3 |
+| VSCodium | 1.116.02821 | 1.121.03429 |
+| Apidog | 2.8.30 | 2.8.31 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| LightBurn | 2.1.00 | 2.1.01 |
+| Bitfocus Companion | 4.2.6 | 4.3.3 |
 | Multi | 0.538.2 | 3.0.2 |
-| Notesnook | 3.3.19 | 3.3.20 |
-| WebCatalog | 75.0.2 | 75.1.1 |
-| Zotero | 9.0.3 | 9.0.4 |
-| Claude Code | 2.1.141 | 2.1.142 |
-| cmux | 0.64.7 | 0.64.9 |
-| LTspice | 17.2.4 | 26.0.2 |
+| cmux | 0.64.9 | 0.64.10 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
