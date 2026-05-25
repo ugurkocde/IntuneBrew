@@ -1,15 +1,15 @@
 {
   "name": "Altair GraphQL Client",
   "description": "GraphQL client",
-  "version": "8.5.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/altair_graphql_client_8.5.0.pkg",
+  "version": "8.5.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/altair_graphql_client_8.5.3.pkg",
   "vendor_url": "https://github.com/imolorhe/altair/releases/download/v8.5.0/altair_8.5.0_arm64_mac.zip",
   "bundleId": "com.xkoji.altair",
   "homepage": "https://altairgraphql.dev/",
-  "fileName": "altair_graphql_client_8.5.0.pkg",
+  "fileName": "altair_graphql_client_8.5.3.pkg",
   "type": "app",
-  "sha": "3ab255806cad797ecdd05ac762f676a162fb606c1ea90f519432af69d1a59646",
+  "sha": "b87c67997fb4f1a730da288072064260205f4aeccbc5fac24e03952b89a73371",
   "category": "Developer Tools",
   "publisher": "Altair Labs",
-  "previous_version": "8.5.0"
+  "previous_version": "8.5.3"
 }
