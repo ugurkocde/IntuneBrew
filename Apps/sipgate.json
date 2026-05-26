@@ -8,5 +8,7 @@
   "homepage": "https://www.sipgate.de/app",
   "fileName": "sipgate_2.39.3.pkg",
   "type": "app",
-  "sha": "6e66db511324242c00fa8d37d0e2e399458bf9e1500e652690dc1350d05e2731"
+  "sha": "6e66db511324242c00fa8d37d0e2e399458bf9e1500e652690dc1350d05e2731",
+  "category": "Communication",
+  "publisher": "sipgate GmbH"
 }
