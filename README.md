@@ -1102,7 +1102,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/krita.png' width='32' height='32'> Krita | 5.3.1.1 |
 | <img src='Logos/langgraph_studio.png' width='32' height='32'> LangGraph Studio | 0.0.37 |
 | <img src='Logos/lapce.png' width='32' height='32'> Lapce | 0.4.6 |
-| <img src='Logos/lark.png' width='32' height='32'> Lark | 7.67.10 |
+| <img src='Logos/lark.png' width='32' height='32'> Lark | 7.68.7 |
 | <img src='Logos/last_window_quits.png' width='32' height='32'> Last Window Quits | 1.1.4 |
 | <img src='Logos/lastpass.png' width='32' height='32'> LastPass | 4.116.0 |
 | <img src='Logos/latest.png' width='32' height='32'> Latest | 0.11 |
@@ -1352,7 +1352,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.4.3 |
 | <img src='Logos/pencil.png' width='32' height='32'> Pencil | 3.1.1 |
 | <img src='Logos/perimeter_81.png' width='32' height='32'> Perimeter 81 | 12.7.4.9577 |
-| <img src='Logos/permute.png' width='32' height='32'> Permute | 3.14.7 |
+| <img src='Logos/permute.png' width='32' height='32'> Permute | 3.14.8 |
 | <img src='Logos/pgadmin4.png' width='32' height='32'> pgAdmin4 | 9.15 |
 | <img src='Logos/philips_hue_sync.png' width='32' height='32'> Philips Hue Sync | 1.13.1.83 |
 | <img src='Logos/phoenix.png' width='32' height='32'> Phoenix | 4.0.1 |
@@ -1365,7 +1365,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/pingplotter.png' width='32' height='32'> PingPlotter | 5.25.20 |
 | <img src='Logos/piphero.png' width='32' height='32'> PiPHero | 1.2.0 |
 | <img src='Logos/piriform_ccleaner.png' width='32' height='32'> Piriform CCleaner | 2.09.187 |
-| <img src='Logos/pitch.png' width='32' height='32'> Pitch | 2.127.0 |
+| <img src='Logos/pitch.png' width='32' height='32'> Pitch | 2.128.0 |
 | <img src='Logos/pixelsnap.png' width='32' height='32'> PixelSnap | 2.6.3 |
 | <img src='Logos/platypus.png' width='32' height='32'> Platypus | 5.5.0 |
 | <img src='Logos/plex.png' width='32' height='32'> Plex | 1.112.0.359 |
@@ -1587,6 +1587,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/superkey.png' width='32' height='32'> Superkey | 1.60 |
 | <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.55.0 |
 | <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 2.14.0 |
+| <img src='Logos/support_app.png' width='32' height='32'> Support App | 3.0.3 |
 | <img src='Logos/support_companion.png' width='32' height='32'> Support Companion | 2.3.1.81039 |
 | <img src='Logos/surfshark.png' width='32' height='32'> Surfshark | 4.27.0 |
 | <img src='Logos/surge.png' width='32' height='32'> Surge | 6.5.0 |
@@ -1609,7 +1610,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/tableau_desktop.png' width='32' height='32'> Tableau Desktop | 2026.1.1 |
 | <img src='Logos/tableau_public.png' width='32' height='32'> Tableau Public | 2026.1.1 |
 | <img src='Logos/tableau_reader.png' width='32' height='32'> Tableau Reader | 2026.1.1 |
-| <img src='Logos/tableplus.png' width='32' height='32'> TablePlus | 7.0.6 |
+| <img src='Logos/tableplus.png' width='32' height='32'> TablePlus | 7.0.8 |
 | <img src='Logos/tabtab.png' width='32' height='32'> TabTab | 2.0.4 |
 | <img src='Logos/tabula.png' width='32' height='32'> Tabula | 1.2.1 |
 | <img src='Logos/taccy.png' width='32' height='32'> Taccy | 1.15 |
