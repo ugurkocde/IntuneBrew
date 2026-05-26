@@ -696,7 +696,16 @@ jobs:
             git config --global user.email 'action@github.com'
             git add CVE/
             git commit -m "Update CVE data [skip ci]"
-            git push
+            for attempt in 1 2 3 4 5; do
+              if git push; then
+                echo "Push succeeded on attempt $attempt"
+                exit 0
+              fi
+              echo "Push rejected (attempt $attempt) - fetching and rebasing on origin/main..."
+              git pull --rebase origin main
+            done
+            echo "Push failed after 5 attempts"
+            exit 1
           else
             echo "No changes to commit"
           fi
