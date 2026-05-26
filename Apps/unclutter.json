@@ -1,15 +1,15 @@
 {
   "name": "Unclutter",
   "description": "Desktop storage area for notes, files and pasteboard clips",
-  "version": "2.2.17d",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/unclutter_2.2.17d.pkg",
+  "version": "2.2.18d",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/unclutter_2.2.18d.pkg",
   "vendor_url": "https://unclutterapp.com/files/Unclutter.zip",
   "bundleId": "com.softwareambience.Unclutter",
   "homepage": "https://unclutterapp.com/",
-  "fileName": "unclutter_2.2.17d.pkg",
+  "fileName": "unclutter_2.2.18d.pkg",
   "type": "app",
-  "sha": "bc71bfeff2fa51215d763d97629a335ea53bf1eb5f166bb827984191e3fba707",
+  "sha": "755af86e1b58e0d2974c048b51c7a32f89ecfdb5d838caa99522e914b190b9e9",
   "category": "Utilities",
   "publisher": "Unclutter",
-  "previous_version": "2.2.17d"
+  "previous_version": "2.2.18d"
 }
