@@ -7,8 +7,9 @@
   "bundleId": "com.spotify.client",
   "homepage": "https://www.spotify.com/",
   "fileName": "SpotifyARM64.dmg",
+  "sha": "ad0baf17b2d61c1477abc1894163baef59f53510ca8a7429b3ecd87d73e4b6b5",
   "changelog": "https://support.spotify.com/us/article/desktop-app-changelog/",
   "category": "Media",
   "publisher": "Spotify AB",
-  "previous_version": "1.2.89.539"
+  "previous_version": "1.2.90.451"
 }

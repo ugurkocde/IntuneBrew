@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1257-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1258-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -477,34 +477,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-26 01:03 UTC*
+*Last checked: 2026-05-26 09:15 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 152.0b2 | 152.0b3 |
-| Phoenix Slides | 1.5.9 | 1.6 |
-| Trae | 2.3.27642 | 2.3.30128 |
-| Spotify | 1.2.89.539 | 1.2.90.451 |
-| BetterDisplay | 4.3.3 | 4.3.4 |
-| DuckDuckGo | 1.190.0 | 1.191.0 |
-| Zed | 1.3.6 | 1.3.7 |
-| Jellyfin | 10.11.9 | 10.11.10 |
-| Dataflare | 3.0.3 | 3.0.4 |
-| AppFlowy | 0.11.9 | 0.12.0 |
-| Simplenote | 2.25.0 | 2.26.0 |
+| qBittorrent | 5.2.0 | 5.2.1 |
+| Milanote | 3.18.101 | 3.18.102 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Binance | 2.2.1 | 2.3.1 |
-| Integrity | 12.12.0 | 12.12.1 |
-| Lunar | 6.10.3 | 6.10.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Riverside Studio | 1.24.3 | 1.24.4 |
-| RoboForm | 9.9.2 | 9.9.4 |
-| quarto | 1.9.37 | 1.9.38 |
-| DisplayLink USB Graphics Software | 16.0 | 16.1 |
+| Nota Gyazo GIF | 10.8.0 | 10.9.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
