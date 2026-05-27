@@ -1,14 +1,14 @@
 {
   "name": "Microsoft Outlook",
   "description": "Email client",
-  "version": "16.109.26051717",
-  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Outlook_16.109.26051717_Installer.pkg",
+  "version": "16.109.26052523",
+  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Outlook_16.109.26052523_Installer.pkg",
   "vendor_url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Outlook_16.108.26041219_Installer.pkg",
   "bundleId": "com.microsoft.package.Microsoft_Outlook.app",
   "homepage": "https://www.microsoft.com/en-us/microsoft-365/outlook/outlook-for-business",
-  "fileName": "Microsoft_Outlook_16.109.26051717_Installer.pkg",
+  "fileName": "Microsoft_Outlook_16.109.26052523_Installer.pkg",
   "type": "pkg",
-  "sha": "f2ad674436d001b80625252bf4f51805e784bff368ab3a8a151d187868733d0f",
+  "sha": "f02cc11e6f7f107d161395a6eb2ed3e1d3c1ac191949a3934f427e55998b8108",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
   "previous_version": "16.109.26051717"

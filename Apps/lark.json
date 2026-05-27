@@ -7,7 +7,8 @@
   "bundleId": "com.electron.lark.helper",
   "homepage": "https://www.larksuite.com/",
   "fileName": "Lark-darwin_arm64-7.68.7-signed.dmg",
+  "sha": "05f5c0712287dcb199a714dbdd44b2340cf30fb175939ca71cfb161c0b68e11f",
   "category": "Productivity",
   "publisher": "Lark Technologies, Inc.",
-  "previous_version": "7.67.10"
+  "previous_version": "7.68.7"
 }

@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1259-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -479,20 +479,49 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-26 13:14 UTC*
+*Last checked: 2026-05-27 01:07 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Lark | 7.67.10 | 7.68.7 |
-| Permute | 3.14.7 | 3.14.8 |
-| TablePlus | 7.0.6 | 7.0.8 |
+| Reqable | 3.1.1 | 3.1.2 |
+| Syncovery | 11.15.2 | 11.15.8 |
+| Mozilla Thunderbird | 151.0 | 151.0.1 |
+| NVIDIA GeForce NOW | 2.0.84.131 | 2.0.85.133 |
+| DockDoor | 1.38.1 | 1.39 |
+| Arduino IDE | 2.3.8 | 2.3.9 |
+| Lens | 2026.5.181248 | 2026.5.250609 |
+| Downie | 4.12.4 | 4.12.5 |
+| Mozilla Firefox | 151.0.1 | 151.0.2 |
+| Slack | 4.50.121 | 4.50.128 |
+| Webex | 46.5.0.34931 | 46.5.0.35006 |
+| Notion | 7.18.0 | 7.19.0 |
+| Krisp | 3.12.4 | 3.12.5 |
+| RStudio | 2026.04.0 | 2026.05.0 |
+| Discord | 0.0.391 | 0.0.392 |
+| Keeper Password Manager | 18.0.0 | 18.0.2 |
+| Bruno | 3.4.1 | 3.4.2 |
+| TablePlus | 7.0.8 | 7.1.0 |
+| Opera GX | 131.0.5877.84 | 131.0.5877.104 |
+| Roon | 2.66 | 2.67 |
 | Caffeine | 1.6.4 | 1.1.4 |
+| Granola | 7.255.6 | 7.269.0 |
+| LaunchOS | 1.5.7 | 2.0.0 |
+| Loom | 0.349.0 | 0.350.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| Pitch | 2.127.0 | 2.128.0 |
+| Shapr3D | 26.82.0.10943 | 26.90.0.10979 |
+| NordVPN | 10.2.0 | 10.3.0 |
+| Multipass | 1.16.2 | 1.16.3 |
+| Microsoft Outlook | 16.109.26051717 | 16.109.26052523 |
+| Tableau Public | 2026.1.1 | 2026.1.2 |
+| Tableau Reader | 2026.1.1 | 2026.1.2 |
+| TeamViewer | 15.76.6 | 15.78.3 |
+| Tableau Desktop | 2026.1.1 | 2026.1.2 |
+| OpenVPN Connect client | 3.8.1 | 3.8.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

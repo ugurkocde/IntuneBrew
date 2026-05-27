@@ -1,14 +1,14 @@
 {
   "name": "TablePlus",
   "description": "Native GUI tool for relational databases",
-  "version": "7.0.8",
-  "url": "https://files.tableplus.com/macos/708/TablePlus.dmg",
+  "version": "7.1.0",
+  "url": "https://files.tableplus.com/macos/710/TablePlus.dmg",
   "vendor_url": "https://files.tableplus.com/macos/662/TablePlus.dmg",
   "bundleId": "com.tinyapp.TablePlus",
   "homepage": "https://tableplus.com/",
   "fileName": "TablePlus.dmg",
-  "sha": "ccbcc494bd5367ac28ecefbf671fcc98ca3629e46e0b2d8d5dabd92ca6df9cfc",
+  "sha": "e409a746cf45ac33d578b2c4062578c4edf090174c729304f901cafd1cd90ad3",
   "category": "Developer Tools",
   "publisher": "TablePlus",
-  "previous_version": "7.0.6"
+  "previous_version": "7.0.8"
 }
