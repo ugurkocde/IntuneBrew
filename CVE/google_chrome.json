@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-05-27",
+  "last_updated": "2026-05-28",
   "total_cves": 4246,
   "summary": {
     "critical": 163,
@@ -7574,7 +7574,7 @@
     {
       "cve_id": "CVE-2026-6921",
       "published_date": "2026-04-23",
-      "last_modified_date": "2026-04-24",
+      "last_modified_date": "2026-05-27",
       "description": "Race in GPU in Google Chrome on Windows prior to 147.0.7727.117 allowed a remote attacker to potentially perform a sandbox escape via a crafted video file. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -7595,7 +7595,7 @@
     {
       "cve_id": "CVE-2026-6297",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-27",
       "description": "Use after free in Proxy in Google Chrome prior to 147.0.7727.101 allowed an attacker in a privileged network position to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -7700,7 +7700,7 @@
     {
       "cve_id": "CVE-2026-6303",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-27",
       "description": "Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -7742,7 +7742,7 @@
     {
       "cve_id": "CVE-2026-6305",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-27",
       "description": "Heap buffer overflow in PDFium in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted PDF file. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -7847,7 +7847,7 @@
     {
       "cve_id": "CVE-2026-6310",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-27",
       "description": "Use after free in Dawn in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -7868,7 +7868,7 @@
     {
       "cve_id": "CVE-2026-6311",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-27",
       "description": "Uninitialized Use in Accessibility in Google Chrome on Windows prior to 147.0.7727.101 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -7931,7 +7931,7 @@
     {
       "cve_id": "CVE-2026-6316",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-27",
       "description": "Use after free in Forms in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -7973,7 +7973,7 @@
     {
       "cve_id": "CVE-2026-6318",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-27",
       "description": "Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -7994,7 +7994,7 @@
     {
       "cve_id": "CVE-2026-6319",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-27",
       "description": "Use after free in Payments in Google Chrome on Android prior to 147.0.7727.101 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -8015,7 +8015,7 @@
     {
       "cve_id": "CVE-2026-6358",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-27",
       "description": "Use after free in XR in Google Chrome on Android prior to 147.0.7727.101 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -8099,7 +8099,7 @@
     {
       "cve_id": "CVE-2026-6363",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-27",
       "description": "Type Confusion in V8 in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -53963,7 +53963,7 @@
     {
       "cve_id": "CVE-2026-6298",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-17",
+      "last_modified_date": "2026-05-27",
       "description": "Heap buffer overflow in Skia in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -89033,12 +89033,12 @@
     {
       "cve_id": "CVE-2015-4000",
       "published_date": "2015-05-21",
-      "last_modified_date": "2026-05-06",
+      "last_modified_date": "2026-05-27",
       "description": "The TLS protocol 1.2 and earlier, when a DHE_EXPORT ciphersuite is enabled on a server but not on a client, does not properly convey a DHE_EXPORT choice, which allows man-in-the-middle attackers to conduct cipher-downgrade attacks by rewriting a ClientHello with DHE replaced by DHE_EXPORT and then rewriting a ServerHello with DHE_EXPORT replaced by DHE, aka the \"Logjam\" issue.",
       "base_score": 3.7,
       "severity": "LOW",
-      "cvss_version": "3.0",
-      "cvss_vector": "CVSS:3.0/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:N/I:L/A:N",
       "affected_version_start": "1.0.1",
       "affected_version_start_type": "including",
       "affected_version_end": "1.0.1m",
