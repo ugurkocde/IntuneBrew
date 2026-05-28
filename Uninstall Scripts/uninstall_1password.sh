@@ -17,6 +17,10 @@ fi
 echo "Stopping 1Password if running..."
 pkill -f "1Password" 2>/dev/null || true
 
+# Kill application with bundle ID com.1password.1password if running
+echo "Stopping application with bundle ID com.1password.1password if running..."
+killall -9 "com.1password.1password" 2>/dev/null || true
+
 # Remove /Applications/1Password.app
 echo "Removing /Applications/1Password.app..."
 if [ -d "/Applications/1Password.app" ]; then
