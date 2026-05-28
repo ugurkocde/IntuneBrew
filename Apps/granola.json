@@ -1,14 +1,14 @@
 {
   "name": "Granola",
   "description": "AI-powered notepad for meetings",
-  "version": "7.269.0",
-  "url": "https://dr2v7l5emb758.cloudfront.net/7.269.0/Granola-7.269.0-mac-universal.dmg",
+  "version": "7.269.1",
+  "url": "https://dr2v7l5emb758.cloudfront.net/7.269.1/Granola-7.269.1-mac-universal.dmg",
   "vendor_url": "https://dr2v7l5emb758.cloudfront.net/7.128.0/Granola-7.128.0-mac-universal.dmg",
   "bundleId": "com.granola.app",
   "homepage": "https://www.granola.ai/",
-  "fileName": "Granola-7.269.0-mac-universal.dmg",
-  "sha": "c8bfeb310ba07717b0d08e9385dee099935c741fe4ae4cdb14ed3bef72589c86",
+  "fileName": "Granola-7.269.1-mac-universal.dmg",
+  "sha": "3a2c42822724b53f4d457468c1b7b9829f888ea7fcc170a1caaf10986de04cc3",
   "category": "Productivity",
   "publisher": "Granola AI",
-  "previous_version": "7.255.6"
+  "previous_version": "7.269.0"
 }

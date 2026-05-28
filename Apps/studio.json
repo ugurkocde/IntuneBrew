@@ -1,14 +1,14 @@
 {
   "name": "Studio",
   "description": "Build, render, and create LEGO instructions",
-  "version": "2.26.4",
-  "url": "https://studio.download.bricklink.info/Studio2.0/Archive/2.26.4_1/Studio+2.0.pkg",
+  "version": "2.26.5",
+  "url": "https://studio.download.bricklink.info/Studio2.0/Archive/2.26.5_1/Studio+2.0.pkg",
   "vendor_url": "https://studio.download.bricklink.info/Studio2.0/Archive/2.26.3_1/Studio+2.0.pkg",
   "bundleId": "com.bricklink.pkg.Studio2.0",
   "homepage": "https://www.bricklink.com/v3/studio/download.page",
   "fileName": "Studio+2.0.pkg",
   "type": "pkg",
-  "sha": "9220038ec1d4f9256ef2388c11dca2d3e805ea811be155268d0815ea20112beb",
+  "sha": "30bfa06ff56f597af5b87c3bcd2cd254d24ef266de5b0428c7c31c6c53e19caa",
   "category": "Design",
   "publisher": "BrickLink",
   "previous_version": "2.26.4"

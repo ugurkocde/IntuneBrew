@@ -1,15 +1,15 @@
 {
   "name": "sipgate",
   "description": "Softphone for making telephone calls over the internet",
-  "version": "2.39.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sipgate_2.39.3.pkg",
+  "version": "2.39.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sipgate_2.39.5.pkg",
   "vendor_url": "https://s3-eu-central-1.amazonaws.com/desktop.download.sipgate.com/sipgate-2.39.3.zip",
   "bundleId": "de.sipgate.sipgate",
   "homepage": "https://www.sipgate.de/app",
-  "fileName": "sipgate_2.39.3.pkg",
+  "fileName": "sipgate_2.39.5.pkg",
   "type": "app",
-  "sha": "6e66db511324242c00fa8d37d0e2e399458bf9e1500e652690dc1350d05e2731",
+  "sha": "0bd0e30c930c4631bf6a256aa8c86c86c74484a26a1e6592b4a532af162ad89c",
   "category": "Communication",
   "publisher": "sipgate GmbH",
-  "previous_version": "2.39.3"
+  "previous_version": "2.39.5"
 }

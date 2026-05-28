@@ -8,7 +8,8 @@
   "homepage": "https://www.tableau.com/products/reader",
   "fileName": "TableauReader-2026-1-2-arm64.pkg",
   "type": "pkg",
+  "sha": "12242a3e312ce4c5dc85478c1d0bc87b7c2b52010bd9d8fc499dcfea3359da64",
   "category": "Productivity",
   "publisher": "Tableau Software, Inc.",
-  "previous_version": "2026.1.1"
+  "previous_version": "2026.1.2"
 }
