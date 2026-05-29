@@ -392,7 +392,10 @@ export class OpenAI {
             if (isTimeout) {
                 throw new Errors.APIConnectionTimeoutError();
             }
-            throw new Errors.APIConnectionError({ cause: response });
+            throw new Errors.APIConnectionError({
+                message: getConnectionErrorMessage(response),
+                cause: response,
+            });
         }
         const specialHeaders = [...response.headers.entries()]
             .filter(([name]) => name === 'x-request-id')
@@ -724,4 +727,23 @@ OpenAI.Evals = Evals;
 OpenAI.Containers = Containers;
 OpenAI.Skills = Skills;
 OpenAI.Videos = Videos;
+function getConnectionErrorMessage(error) {
+    if (isUndiciDispatcherVersionMismatchError(error)) {
+        return `Connection error. This may be caused by passing an undici dispatcher, such as ProxyAgent, that is incompatible with the fetch implementation. If you are using undici's ProxyAgent, pass the fetch implementation from the same undici package: import { fetch, ProxyAgent } from 'undici'; new OpenAI({ fetch, fetchOptions: { dispatcher: new ProxyAgent(...) } });`;
+    }
+    return undefined;
+}
+function isUndiciDispatcherVersionMismatchError(error) {
+    let current = error;
+    for (let i = 0; i < 8 && current && typeof current === 'object'; i++) {
+        const err = current;
+        if (err.code === 'UND_ERR_INVALID_ARG' &&
+            typeof err.message === 'string' &&
+            err.message.includes('invalid onRequestStart method')) {
+            return true;
+        }
+        current = err.cause;
+    }
+    return false;
+}
 //# sourceMappingURL=client.mjs.map
