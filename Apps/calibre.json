@@ -1,13 +1,13 @@
 {
   "name": "calibre",
   "description": "E-books management software",
-  "version": "9.8.0",
-  "url": "https://download.calibre-ebook.com/9.8.0/calibre-9.8.0.dmg",
+  "version": "9.9.0",
+  "url": "https://download.calibre-ebook.com/9.9.0/calibre-9.9.0.dmg",
   "vendor_url": "https://download.calibre-ebook.com/9.7.0/calibre-9.7.0.dmg",
   "bundleId": "net.kovidgoyal.calibre",
   "homepage": "https://calibre-ebook.com/",
-  "fileName": "calibre-9.8.0.dmg",
-  "sha": "79307abb2d7823d35a91f3cff54e6f852b94f246be9d7bf8ebda7e21e341b608",
+  "fileName": "calibre-9.9.0.dmg",
+  "sha": "66cddba176f7a3d6f2932fe2e710f54898f01dff1d7532957124ce5c2fc22b36",
   "changelog": "https://calibre-ebook.com/whats-new",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:45:49Z",
