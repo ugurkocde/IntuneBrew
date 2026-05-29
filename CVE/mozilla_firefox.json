@@ -1,12 +1,12 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-05-28",
-  "total_cves": 3171,
+  "last_updated": "2026-05-29",
+  "total_cves": 3172,
   "summary": {
     "critical": 398,
     "high": 1413,
-    "medium": 1282,
+    "medium": 1283,
     "low": 78,
     "kev_count": 15
   },
@@ -38064,6 +38064,27 @@
       "product": "firefox"
     },
     {
+      "cve_id": "CVE-2026-9078",
+      "published_date": "2026-05-25",
+      "last_modified_date": "2026-05-28",
+      "description": "Firefox for iOS displayed specially crafted right-to-left (RTL) and internationalized domain names (IDNs) incorrectly in link preview UI surfaces. A crafted RTL hostname could visually reorder portions of the displayed domain, causing attacker-controlled sites to appear as trusted origins. This vulnerability was fixed in Firefox for iOS 151.1.",
+      "base_score": 5.4,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:N/A:L",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "151.1",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "151.1",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "mozilla",
+      "product": "firefox"
+    },
+    {
       "cve_id": "CVE-2026-8951",
       "published_date": "2026-05-19",
       "last_modified_date": "2026-05-20",
@@ -49448,7 +49469,7 @@
     {
       "cve_id": "CVE-2019-7317",
       "published_date": "2019-02-04",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-05-28",
       "description": "png_image_free in png.c in libpng 1.6.x before 1.6.37 has a use-after-free because png_image_free_function is called under png_safe_execute.",
       "base_score": 5.3,
       "severity": "MEDIUM",
