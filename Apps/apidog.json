@@ -1,13 +1,13 @@
 {
   "name": "Apidog",
   "description": "API development platform",
-  "version": "2.8.31",
-  "url": "https://file-assets.apidog.com/download/2.8.31/legacy-Apidog-macOS-arm64-2.8.31.dmg",
+  "version": "2.8.32",
+  "url": "https://file-assets.apidog.com/download/2.8.32/legacy-Apidog-macOS-arm64-2.8.32.dmg",
   "vendor_url": "https://file-assets.apidog.com/download/2.8.24/legacy-Apidog-macOS-arm64-2.8.24.dmg",
   "bundleId": "com.apidog.app",
   "homepage": "https://apidog.com/",
-  "fileName": "legacy-Apidog-macOS-arm64-2.8.31.dmg",
-  "sha": "0a76513acbcfcd67c076198cfff6dabd20cacd99567cd0215ac43dcf39ac3921",
+  "fileName": "legacy-Apidog-macOS-arm64-2.8.32.dmg",
+  "sha": "50b835ffddb405d9b97950f3a3a9120b43c8797df10854515955113ed94b2853",
   "changelog": "https://apidog.com/blog/",
   "qa_info": {
     "qa_timestamp": "2025-05-19T06:52:28Z",

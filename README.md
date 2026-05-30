@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1259-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -482,54 +482,38 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-29 01:09 UTC*
+*Last checked: 2026-05-30 01:06 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| ProcessSpy | 1.13.2 | 1.13.3 |
-| TabTab | 2.0.4 | 2.1 |
-| DockDoor | 1.39 | 1.39.1 |
-| LibreWolf | 151.0.1 | 151.0.2 |
-| Google Chrome | 148.0.7778.179 | 148.0.7778.216 |
-| Parallels Desktop | 26.3.2-57398 | 26.3.3-57507 |
-| Grammarly Desktop | 1.167.0.0 | 1.167.1.0 |
-| Snagit | 2026.1.0 | 2026.2.0 |
-| Brave | 1.90.124.0 | 1.90.128.0 |
-| Elgato Wave Link | 3.1.1 | 3.2.0 |
-| Raycast | 1.104.18 | 1.104.19 |
-| Zed | 1.4.2 | 1.4.4 |
-| kitty | 0.47.0 | 0.47.1 |
-| Microsoft Edge | 148.0.3967.83 | 148.0.3967.96 |
-| calibre | 9.8.0 | 9.9.0 |
-| Opera | 131.0.5877.97 | 132.0.5905.11 |
-| Dataflare | 3.0.4 | 3.0.5 |
-| Camtasia | 2026.1.0 | 2026.1.2 |
-| Remote Desktop Manager | 2026.1.12.4 | 2026.1.12.6 |
-| ExpanDrive | 2026.02.12.823 | 2026.05.27.833 |
-| Hoppscotch | 26.4.1-0 | 26.5.0-0 |
-| Milanote | 3.18.103 | 3.18.104 |
-| Capacities | 1.64.6 | 1.65.9 |
-| Deezer | 7.1.210 | 7.1.220 |
-| Opera GX | 131.0.5877.104 | 131.0.5877.111 |
-| Ableton Live Lite | 12.4 | 12.4.1 |
-| Ableton Live Suite | 12.4 | 12.4.1 |
-| BibDesk | 1.9.11 | 1.9.12 |
+| Mozilla Firefox Developer Edition | 152.0b4 | 152.0b5 |
+| Reqable | 3.1.2 | 3.1.3 |
+| Apifox | 2.8.31 | 2.8.32 |
+| ChatWise | 26.5.2 | 26.5.3 |
+| WeChat for Mac | 4.1.10.24 | 4.1.10.26 |
+| Microsoft Teams | 26106.2113.4690.1073 | 26120.3106.4725.800 |
+| Keka | 1.6.4 | 1.6.5 |
+| Windsurf | 2.3.9 | 2.3.15 |
+| Apidog | 2.8.31 | 2.8.32 |
+| Warp | 0.2026.05.20.09.21.stable | 0.2026.05.27.15.44.stable |
+| Milanote | 3.18.104 | 3.18.105 |
+| Capacities | 1.65.9 | 1.65.13 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Deckset | 2.0.50 | 2.0.51 |
-| CleanClip | 2.4.6 | 2.4.7 |
-| Granola | 7.269.1 | 7.277.1 |
+| Loom | 0.350.1 | 0.351.1 |
 | Multi | 0.538.2 | 3.0.2 |
-| Pitch | 2.129.4 | 2.129.5 |
-| SoundAnchor | 1.7.1 | 1.7.0 |
-| Tuta Mail | 348.260519.0 | 348.260526.0 |
-| UltiMaker Cura | 5.12.1 | 5.13.0 |
-| Claude Code | 2.1.144 | 2.1.145 |
-| kiro | 0.12.224 | 0.12.263 |
-| Weasis | 4.6.6 | 4.7.0 |
+| OpenAudible | 4.8.1 | 4.8.2 |
+| Pitch | 2.129.5 | 2.129.6 |
+| QGIS | 4.0.2 | 4.0.3 |
+| Claude Code | 2.1.145 | 2.1.148 |
+| ChatGPT Atlas | 1.2026.119.1 | 1.2026.126.0 |
+| Insta360 Studio | 5.9.4 | 5.9.8 |
+| Okta Advanced Server Access | 1.106.0 | 1.107.0 |
+| NoMachine | 9.5.7 | 9.6.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

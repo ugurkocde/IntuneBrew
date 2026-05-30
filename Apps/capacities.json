@@ -1,14 +1,14 @@
 {
   "name": "Capacities",
   "description": "App to write and organise your ideas",
-  "version": "1.65.9",
-  "url": "https://2vks4.upcloudobjects.com/capacities-desktop-app/Capacities-1.65.9-arm64.dmg",
+  "version": "1.65.13",
+  "url": "https://2vks4.upcloudobjects.com/capacities-desktop-app/Capacities-1.65.13-arm64.dmg",
   "vendor_url": "https://capacities-desktop-app.fra1.cdn.digitaloceanspaces.com/Capacities-1.59.1-arm64.dmg",
   "bundleId": "io.capacities.app",
   "homepage": "https://capacities.io/",
-  "fileName": "Capacities-1.65.9-arm64.dmg",
-  "sha": "ff1275b0ed0dd189eec34b1e8e951fe6cbf4fa8be8243eab7ebd48e3c4bacbc5",
+  "fileName": "Capacities-1.65.13-arm64.dmg",
+  "sha": "3d87b3cc90da81f69ba83b0f88c713986b70d9ad2934984bc65f74d41a45b04f",
   "category": "Productivity",
   "publisher": "Capacities",
-  "previous_version": "1.64.6"
+  "previous_version": "1.65.9"
 }
