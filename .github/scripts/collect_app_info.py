@@ -1224,6 +1224,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/macshot.json",
     "https://formulae.brew.sh/api/cask/xtool-studio.json",
     "https://formulae.brew.sh/api/cask/brainfm.json",
+    "https://formulae.brew.sh/api/cask/macdown-3000.json",
 ]
 
 # PKG in DMG URLs
