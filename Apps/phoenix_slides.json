@@ -1,13 +1,13 @@
 {
   "name": "Phoenix Slides",
   "description": "Full-screen slideshow program",
-  "version": "1.6",
-  "url": "https://github.com/gobbledegook/creevey/releases/download/v1.6/phoenix-slides-160.dmg",
+  "version": "1.6.1",
+  "url": "https://github.com/gobbledegook/creevey/releases/download/v1.6.1/phoenix-slides-161.dmg",
   "vendor_url": "https://github.com/gobbledegook/creevey/releases/download/v1.5.9/phoenix-slides-159.dmg",
   "bundleId": "net.blyt.phoenixslides",
   "homepage": "https://blyt.net/phxslides/",
-  "fileName": "phoenix-slides-160.dmg",
-  "sha": "cac62d9b99dca6f9820c275f0ba90db22c31cf7495564cedabadfff6303a82e9",
+  "fileName": "phoenix-slides-161.dmg",
+  "sha": "84c6165c37ad3f143bfbbab8e57a797b23d9524cbbc2c7349884f8ed5de4c694",
   "category": "Media",
   "publisher": "BLYT",
   "previous_version": "1.6"

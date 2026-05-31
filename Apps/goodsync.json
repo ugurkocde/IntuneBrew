@@ -1,13 +1,13 @@
 {
   "name": "GoodSync",
   "description": "File synchronisation and backup software",
-  "version": "12.11.1",
+  "version": "12.11.2",
   "url": "https://www.goodsync.com/download/goodsync-vsub-mac.dmg",
   "vendor_url": "https://www.goodsync.com/download/goodsync-vsub-mac.dmg",
   "bundleId": "com.sibersystems.goodsyncmac2000",
   "homepage": "https://www.goodsync.com/",
   "fileName": "goodsync-vsub-mac.dmg",
-  "sha": "8fda061481aa8cd4d12f9d153b99b02df435c8c25c120d01182bef59f87441cd",
+  "sha": "679e8d5a2a4569d6660b5b0488a3f763335ca7e6aebe1335c82968e0e54c5793",
   "category": "Productivity",
   "publisher": "Siber Systems, Inc.",
   "previous_version": "12.11.1"

@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1259-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1260-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -484,29 +484,21 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-31 01:10 UTC*
+*Last checked: 2026-05-31 09:22 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Rive | 0.8.4941 | 0.8.4959 |
-| Dockside | 2.9.3 | 2.9.4 |
-| Readest | 0.11.1 | 0.11.2 |
-| QQ | 6.9.91 | 6.9.95 |
-| Bitwarden | 2026.4.0 | 2026.5.0 |
-| Google Drive | 126.0.4 | 126.0.5 |
-| LM Studio | 0.4.14 | 0.4.15 |
-| BoltAI 2 | 2.12.1 | 2.13.1 |
-| CopyQ | 15.0.0 | 16.0.0 |
-| ocenaudio | 3.18.2 | 3.19.1 |
+| Phoenix Slides | 1.6 | 1.6.1 |
+| TabTab | 2.1 | 2.1.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Dust3D | 1.1.1 | 1.1.2 |
-| Adobe DNG Converter | 18.3.1 | 18.3.2 |
+| Dust3D | 1.1.2 | 1.1.3 |
+| GoodSync | 12.11.1 | 12.11.2 |
 | Multi | 0.538.2 | 3.0.2 |
-| Claude Code | 2.1.148 | 2.1.149 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
