@@ -1,15 +1,15 @@
 {
   "name": "PPPC Utility",
   "description": "Create configuration profiles containing a PPPC payload",
-  "version": "1.5.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/pppc_utility_1.5.0.pkg",
+  "version": "2.0.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/pppc_utility_2.0.0.pkg",
   "vendor_url": "https://github.com/jamf/PPPC-Utility/releases/download/1.5.0/PPPC-Utility.zip",
   "bundleId": "com.jamf.opensource.pppcutility",
   "homepage": "https://github.com/jamf/PPPC-Utility",
-  "fileName": "pppc_utility_1.5.0.pkg",
+  "fileName": "pppc_utility_2.0.0.pkg",
   "type": "app",
-  "sha": "0451ceacfd06af6391c863408ad6eab6fe693aeb828c6f3199f1f0533c6f6058",
+  "sha": "5c4e48058a8d9d2fe0b1cba18e813f83cf728e19f8986bba15c2c79da223cbd9",
   "category": "Utilities",
   "publisher": "Jamf",
-  "previous_version": "1.5.0"
+  "previous_version": "2.0.0"
 }

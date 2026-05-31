@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1259-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -483,37 +483,30 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-05-30 01:06 UTC*
+*Last checked: 2026-05-31 01:10 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 152.0b4 | 152.0b5 |
-| Reqable | 3.1.2 | 3.1.3 |
-| Apifox | 2.8.31 | 2.8.32 |
-| ChatWise | 26.5.2 | 26.5.3 |
-| WeChat for Mac | 4.1.10.24 | 4.1.10.26 |
-| Microsoft Teams | 26106.2113.4690.1073 | 26120.3106.4725.800 |
-| Keka | 1.6.4 | 1.6.5 |
-| Windsurf | 2.3.9 | 2.3.15 |
-| Apidog | 2.8.31 | 2.8.32 |
-| Warp | 0.2026.05.20.09.21.stable | 0.2026.05.27.15.44.stable |
-| Milanote | 3.18.104 | 3.18.105 |
-| Capacities | 1.65.9 | 1.65.13 |
+| Rive | 0.8.4941 | 0.8.4959 |
+| Dockside | 2.9.3 | 2.9.4 |
+| Readest | 0.11.1 | 0.11.2 |
+| QQ | 6.9.91 | 6.9.95 |
+| Bitwarden | 2026.4.0 | 2026.5.0 |
+| Google Drive | 126.0.4 | 126.0.5 |
+| LM Studio | 0.4.14 | 0.4.15 |
+| BoltAI 2 | 2.12.1 | 2.13.1 |
+| CopyQ | 15.0.0 | 16.0.0 |
+| ocenaudio | 3.18.2 | 3.19.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Loom | 0.350.1 | 0.351.1 |
+| Dust3D | 1.1.1 | 1.1.2 |
+| Adobe DNG Converter | 18.3.1 | 18.3.2 |
 | Multi | 0.538.2 | 3.0.2 |
-| OpenAudible | 4.8.1 | 4.8.2 |
-| Pitch | 2.129.5 | 2.129.6 |
-| QGIS | 4.0.2 | 4.0.3 |
-| Claude Code | 2.1.145 | 2.1.148 |
-| ChatGPT Atlas | 1.2026.119.1 | 1.2026.126.0 |
-| Insta360 Studio | 5.9.4 | 5.9.8 |
-| Okta Advanced Server Access | 1.106.0 | 1.107.0 |
-| NoMachine | 9.5.7 | 9.6.3 |
+| Claude Code | 2.1.148 | 2.1.149 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
