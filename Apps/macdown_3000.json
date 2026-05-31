@@ -7,5 +7,7 @@
   "bundleId": null,
   "homepage": "https://macdown.app/",
   "fileName": "MacDown-3000.0.6.dmg",
-  "sha": "f4cd91a4bda40314322209ffdeddcb7309c917be216f7ce7817cd5a19e4d7dd9"
+  "sha": "f4cd91a4bda40314322209ffdeddcb7309c917be216f7ce7817cd5a19e4d7dd9",
+  "category": "Developer Tools",
+  "publisher": "MacDown Project"
 }
