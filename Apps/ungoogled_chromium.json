@@ -1,13 +1,13 @@
 {
   "name": "Ungoogled Chromium",
   "description": "Google Chromium, sans integration with Google",
-  "version": "148.0.7778.167-1.1",
-  "url": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/148.0.7778.167-1.1/ungoogled-chromium_148.0.7778.167-1.1_arm64-macos.dmg",
+  "version": "148.0.7778.215-1.1",
+  "url": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/148.0.7778.215-1.1/ungoogled-chromium_148.0.7778.215-1.1_arm64-macos.dmg",
   "vendor_url": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/146.0.7680.177-1.1/ungoogled-chromium_146.0.7680.177-1.1_arm64-macos.dmg",
   "bundleId": "org.chromium.Chromium",
   "homepage": "https://ungoogled-software.github.io/",
-  "fileName": "ungoogled-chromium_148.0.7778.167-1.1_arm64-macos.dmg",
-  "sha": "a30ae0adab8156f4224c81c6968f4ccbec9c2196c0e5cc3afe56d3b081b1922f",
+  "fileName": "ungoogled-chromium_148.0.7778.215-1.1_arm64-macos.dmg",
+  "sha": "96c3fdeb88185243d4467aedb8ba084c70f1d5ab917e5c010f437153e1f724e7",
   "category": "Browsers",
   "publisher": "ungoogled-software",
   "previous_version": "148.0.7778.167-1.1"
