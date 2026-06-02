@@ -1,15 +1,15 @@
 {
   "name": "RightFont",
   "description": "Font manager that helps preview, install, sync and manage fonts",
-  "version": "9.8",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/rightfont_9.8.pkg",
+  "version": "10.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/rightfont_10.0.pkg",
   "vendor_url": "https://rightfontapp.com/update/rightfont.zip",
   "bundleId": "com.rightfontapp.RightFont",
   "homepage": "https://rightfontapp.com/",
-  "fileName": "rightfont_9.8.pkg",
+  "fileName": "rightfont_10.0.pkg",
   "type": "app",
-  "previous_version": "9.8",
-  "sha": "e2944fc5beb08e6908d7366f84f522e00b2204699cb11e51dc41b774c090301d",
+  "previous_version": "10.0",
+  "sha": "9f1c377b3fe506fb685605e8c2e15e3116a036c993b2b7c2be0d75988772d78c",
   "category": "Design",
   "publisher": "RightFont, Inc."
 }

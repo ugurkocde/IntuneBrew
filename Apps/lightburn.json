@@ -1,13 +1,13 @@
 {
   "name": "LightBurn",
   "description": "Layout, editing, and control software for laser cutters",
-  "version": "2.1.01",
-  "url": "https://release.lightburnsoftware.com/LightBurn/Release/LightBurn-v2.1.01/LightBurn.V2.1.01.dmg",
+  "version": "2.1.02",
+  "url": "https://release.lightburnsoftware.com/LightBurn/Release/LightBurn-v2.1.02/LightBurn.V2.1.02.dmg",
   "vendor_url": "https://release.lightburnsoftware.com/LightBurn/Release/LightBurn-v2.0.05/LightBurn.V2.0.05.dmg",
   "bundleId": "com.LightBurnSoftware.LightBurn",
   "homepage": "https://lightburnsoftware.com/",
-  "fileName": "LightBurn.V2.1.01.dmg",
-  "sha": "b857223f45da4e6514453fdf91fd65664f0a41a7490ae76698ca45439407892f",
+  "fileName": "LightBurn.V2.1.02.dmg",
+  "sha": "2beec7e5fa9816ee5ea674d3b2631a24b874dc7c5dd1bccfc4c84a1e2205e459",
   "category": "Design",
   "publisher": "LightBurn Software",
   "previous_version": "2.1.01"

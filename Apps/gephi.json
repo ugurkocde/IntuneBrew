@@ -1,13 +1,13 @@
 {
   "name": "Gephi",
   "description": "Open-source platform for visualizing and manipulating large graphs",
-  "version": "0.10.1",
-  "url": "https://github.com/gephi/gephi/releases/download/v0.10.1/gephi-0.10.1-macos-aarch64.dmg",
+  "version": "0.11.2",
+  "url": "https://github.com/gephi/gephi/releases/download/v0.11.2/gephi-0.11.2-macos-aarch64.dmg",
   "vendor_url": "https://github.com/gephi/gephi/releases/download/v0.10.1/gephi-0.10.1-macos-aarch64.dmg",
   "bundleId": "org.gephi",
   "homepage": "https://gephi.org/",
-  "fileName": "gephi-0.10.1-macos-aarch64.dmg",
-  "sha": "cbb852d2f33cddf793290a64aee564cd46ad80ef6c51766ad05dfeb801ac7227",
+  "fileName": "gephi-0.11.2-macos-aarch64.dmg",
+  "sha": "c5ab54d387386f568b400c03d6918a7a99232de828e29f6eb36c79d86f435fa8",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:17:55Z",
     "qa_result": "Installation successful and verified",

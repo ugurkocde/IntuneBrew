@@ -1,13 +1,13 @@
 {
   "name": "Typinator",
   "description": "Tool to automate the insertion of frequently used text and graphics",
-  "version": "10.0",
-  "url": "https://storage.ergonis.com/apps/production/typinator/archive/Typinator_100.dmg",
+  "version": "10.1",
+  "url": "https://storage.ergonis.com/apps/production/typinator/archive/Typinator_101.dmg",
   "vendor_url": "https://www.ergonis.com/downloads/products/typinator/Typinator100-Install.dmg",
   "bundleId": "com.macility.typinator2",
   "homepage": "https://www.ergonis.com/products/typinator/",
-  "fileName": "Typinator_100.dmg",
-  "sha": "dc01024d8b36bbb5770b63336eaf1873ba0620265554ba6a973f96650065e6d8",
+  "fileName": "Typinator_101.dmg",
+  "sha": "223b0ef7d877274ba0133aaf1bf836ff06a3122e0683c82f790446a6d038fd77",
   "category": "Productivity",
   "publisher": "Ergonis Software",
   "previous_version": "10.0"

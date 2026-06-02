@@ -1,13 +1,13 @@
 {
   "name": "ExpanDrive",
   "description": "Network drive and browser for cloud storage",
-  "version": "2026.05.27.833",
+  "version": "2026.06.01.842",
   "url": "https://www.expandrive.com/api/download/expandrive?platform=macos",
   "vendor_url": "https://www.expandrive.com/api/download/expandrive?platform=macos",
   "bundleId": "com.expandrive.ExpanDrive",
   "homepage": "https://www.expandrive.com/apps/expandrive/",
-  "fileName": "ExpanDrive-2026.05.27.833.dmg",
-  "sha": "b37b55ca54dbda30e37f214fb65d9400594921148beabe6e45b986d76e424847",
+  "fileName": "ExpanDrive-2026.06.01.842.dmg",
+  "sha": "1a7c6bb68d7e218fa2e75dc98efc959f4854c29d371b105cae82e88e811c0125",
   "category": "Utilities",
   "publisher": "ExpanDrive, Inc.",
   "previous_version": "2026.05.27.833"
