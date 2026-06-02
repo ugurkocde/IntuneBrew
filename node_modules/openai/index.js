@@ -4,7 +4,7 @@ exports = module.exports = function (...args) {
   return new exports.default(...args)
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.AzureOpenAI = exports.SubjectTokenProviderError = exports.OAuthError = exports.InvalidWebhookSignatureError = exports.UnprocessableEntityError = exports.PermissionDeniedError = exports.InternalServerError = exports.AuthenticationError = exports.BadRequestError = exports.RateLimitError = exports.ConflictError = exports.NotFoundError = exports.APIUserAbortError = exports.APIConnectionTimeoutError = exports.APIConnectionError = exports.APIError = exports.OpenAIError = exports.PagePromise = exports.OpenAI = exports.APIPromise = exports.toFile = exports.default = void 0;
+exports.BedrockOpenAI = exports.AzureOpenAI = exports.SubjectTokenProviderError = exports.OAuthError = exports.InvalidWebhookSignatureError = exports.UnprocessableEntityError = exports.PermissionDeniedError = exports.InternalServerError = exports.AuthenticationError = exports.BadRequestError = exports.RateLimitError = exports.ConflictError = exports.NotFoundError = exports.APIUserAbortError = exports.APIConnectionTimeoutError = exports.APIConnectionError = exports.APIError = exports.OpenAIError = exports.PagePromise = exports.OpenAI = exports.APIPromise = exports.toFile = exports.default = void 0;
 var client_1 = require("./client.js");
 Object.defineProperty(exports, "default", { enumerable: true, get: function () { return client_1.OpenAI; } });
 var uploads_1 = require("./core/uploads.js");
@@ -34,4 +34,6 @@ Object.defineProperty(exports, "OAuthError", { enumerable: true, get: function (
 Object.defineProperty(exports, "SubjectTokenProviderError", { enumerable: true, get: function () { return error_1.SubjectTokenProviderError; } });
 var azure_1 = require("./azure.js");
 Object.defineProperty(exports, "AzureOpenAI", { enumerable: true, get: function () { return azure_1.AzureOpenAI; } });
+var bedrock_1 = require("./bedrock.js");
+Object.defineProperty(exports, "BedrockOpenAI", { enumerable: true, get: function () { return bedrock_1.BedrockOpenAI; } });
 //# sourceMappingURL=index.js.map

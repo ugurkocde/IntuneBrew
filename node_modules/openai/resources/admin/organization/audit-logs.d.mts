@@ -34,7 +34,7 @@ export interface AuditLogListResponse {
     /**
      * The event type.
      */
-    type: 'api_key.created' | 'api_key.updated' | 'api_key.deleted' | 'certificate.created' | 'certificate.updated' | 'certificate.deleted' | 'certificates.activated' | 'certificates.deactivated' | 'checkpoint.permission.created' | 'checkpoint.permission.deleted' | 'external_key.registered' | 'external_key.removed' | 'group.created' | 'group.updated' | 'group.deleted' | 'invite.sent' | 'invite.accepted' | 'invite.deleted' | 'ip_allowlist.created' | 'ip_allowlist.updated' | 'ip_allowlist.deleted' | 'ip_allowlist.config.activated' | 'ip_allowlist.config.deactivated' | 'login.succeeded' | 'login.failed' | 'logout.succeeded' | 'logout.failed' | 'organization.updated' | 'project.created' | 'project.updated' | 'project.archived' | 'project.deleted' | 'rate_limit.updated' | 'rate_limit.deleted' | 'resource.deleted' | 'tunnel.created' | 'tunnel.updated' | 'tunnel.deleted' | 'role.created' | 'role.updated' | 'role.deleted' | 'role.assignment.created' | 'role.assignment.deleted' | 'scim.enabled' | 'scim.disabled' | 'service_account.created' | 'service_account.updated' | 'service_account.deleted' | 'user.added' | 'user.updated' | 'user.deleted';
+    type: 'api_key.created' | 'api_key.updated' | 'api_key.deleted' | 'certificate.created' | 'certificate.updated' | 'certificate.deleted' | 'certificates.activated' | 'certificates.deactivated' | 'checkpoint.permission.created' | 'checkpoint.permission.deleted' | 'external_key.registered' | 'external_key.removed' | 'group.created' | 'group.updated' | 'group.deleted' | 'invite.sent' | 'invite.accepted' | 'invite.deleted' | 'ip_allowlist.created' | 'ip_allowlist.updated' | 'ip_allowlist.deleted' | 'ip_allowlist.config.activated' | 'ip_allowlist.config.deactivated' | 'login.succeeded' | 'login.failed' | 'logout.succeeded' | 'logout.failed' | 'organization.updated' | 'project.created' | 'project.updated' | 'project.archived' | 'project.deleted' | 'rate_limit.updated' | 'rate_limit.deleted' | 'resource.deleted' | 'tunnel.created' | 'tunnel.updated' | 'tunnel.deleted' | 'workload_identity_provider.created' | 'workload_identity_provider.updated' | 'workload_identity_provider.deleted' | 'workload_identity_provider_mapping.created' | 'workload_identity_provider_mapping.updated' | 'workload_identity_provider_mapping.deleted' | 'role.created' | 'role.updated' | 'role.deleted' | 'role.assignment.created' | 'role.assignment.deleted' | 'scim.enabled' | 'scim.disabled' | 'service_account.created' | 'service_account.updated' | 'service_account.deleted' | 'user.added' | 'user.updated' | 'user.deleted';
     /**
      * The actor who performed the audit logged action.
      */
@@ -234,6 +234,30 @@ export interface AuditLogListResponse {
      * The details for events with this `type`.
      */
     'user.updated'?: AuditLogListResponse.UserUpdated;
+    /**
+     * The details for events with this `type`.
+     */
+    'workload_identity_provider_mapping.created'?: AuditLogListResponse.WorkloadIdentityProviderMappingCreated;
+    /**
+     * The details for events with this `type`.
+     */
+    'workload_identity_provider_mapping.deleted'?: AuditLogListResponse.WorkloadIdentityProviderMappingDeleted;
+    /**
+     * The details for events with this `type`.
+     */
+    'workload_identity_provider_mapping.updated'?: AuditLogListResponse.WorkloadIdentityProviderMappingUpdated;
+    /**
+     * The details for events with this `type`.
+     */
+    'workload_identity_provider.created'?: AuditLogListResponse.WorkloadIdentityProviderCreated;
+    /**
+     * The details for events with this `type`.
+     */
+    'workload_identity_provider.deleted'?: AuditLogListResponse.WorkloadIdentityProviderDeleted;
+    /**
+     * The details for events with this `type`.
+     */
+    'workload_identity_provider.updated'?: AuditLogListResponse.WorkloadIdentityProviderUpdated;
 }
 export declare namespace AuditLogListResponse {
     /**
@@ -1197,6 +1221,100 @@ export declare namespace AuditLogListResponse {
             role?: string;
         }
     }
+    /**
+     * The details for events with this `type`.
+     */
+    interface WorkloadIdentityProviderMappingCreated {
+        /**
+         * The workload identity provider mapping ID.
+         */
+        id?: string;
+        /**
+         * The payload used to create the workload identity provider mapping.
+         */
+        data?: unknown;
+        /**
+         * The workload identity provider ID.
+         */
+        identity_provider_id?: string;
+    }
+    /**
+     * The details for events with this `type`.
+     */
+    interface WorkloadIdentityProviderMappingDeleted {
+        /**
+         * The workload identity provider mapping ID.
+         */
+        id?: string;
+        /**
+         * The workload identity provider ID.
+         */
+        identity_provider_id?: string;
+        /**
+         * The project ID.
+         */
+        project_id?: string;
+        /**
+         * The mapped service account ID.
+         */
+        service_account_id?: string;
+    }
+    /**
+     * The details for events with this `type`.
+     */
+    interface WorkloadIdentityProviderMappingUpdated {
+        /**
+         * The workload identity provider mapping ID.
+         */
+        id?: string;
+        /**
+         * The payload used to update the workload identity provider mapping.
+         */
+        changes_requested?: unknown;
+        /**
+         * The workload identity provider ID.
+         */
+        identity_provider_id?: string;
+    }
+    /**
+     * The details for events with this `type`.
+     */
+    interface WorkloadIdentityProviderCreated {
+        /**
+         * The workload identity provider ID.
+         */
+        id?: string;
+        /**
+         * The payload used to create the workload identity provider.
+         */
+        data?: unknown;
+    }
+    /**
+     * The details for events with this `type`.
+     */
+    interface WorkloadIdentityProviderDeleted {
+        /**
+         * The workload identity provider ID.
+         */
+        id?: string;
+        /**
+         * The workload identity provider name.
+         */
+        name?: string;
+    }
+    /**
+     * The details for events with this `type`.
+     */
+    interface WorkloadIdentityProviderUpdated {
+        /**
+         * The workload identity provider ID.
+         */
+        id?: string;
+        /**
+         * The payload used to update the workload identity provider.
+         */
+        changes_requested?: unknown;
+    }
 }
 export interface AuditLogListParams extends ConversationCursorPageParams {
     /**
@@ -1224,7 +1342,7 @@ export interface AuditLogListParams extends ConversationCursorPageParams {
      * `project.created`. For all options, see the documentation for the
      * [audit log object](https://platform.openai.com/docs/api-reference/audit-logs/object).
      */
-    event_types?: Array<'api_key.created' | 'api_key.updated' | 'api_key.deleted' | 'certificate.created' | 'certificate.updated' | 'certificate.deleted' | 'certificates.activated' | 'certificates.deactivated' | 'checkpoint.permission.created' | 'checkpoint.permission.deleted' | 'external_key.registered' | 'external_key.removed' | 'group.created' | 'group.updated' | 'group.deleted' | 'invite.sent' | 'invite.accepted' | 'invite.deleted' | 'ip_allowlist.created' | 'ip_allowlist.updated' | 'ip_allowlist.deleted' | 'ip_allowlist.config.activated' | 'ip_allowlist.config.deactivated' | 'login.succeeded' | 'login.failed' | 'logout.succeeded' | 'logout.failed' | 'organization.updated' | 'project.created' | 'project.updated' | 'project.archived' | 'project.deleted' | 'rate_limit.updated' | 'rate_limit.deleted' | 'resource.deleted' | 'tunnel.created' | 'tunnel.updated' | 'tunnel.deleted' | 'role.created' | 'role.updated' | 'role.deleted' | 'role.assignment.created' | 'role.assignment.deleted' | 'scim.enabled' | 'scim.disabled' | 'service_account.created' | 'service_account.updated' | 'service_account.deleted' | 'user.added' | 'user.updated' | 'user.deleted'>;
+    event_types?: Array<'api_key.created' | 'api_key.updated' | 'api_key.deleted' | 'certificate.created' | 'certificate.updated' | 'certificate.deleted' | 'certificates.activated' | 'certificates.deactivated' | 'checkpoint.permission.created' | 'checkpoint.permission.deleted' | 'external_key.registered' | 'external_key.removed' | 'group.created' | 'group.updated' | 'group.deleted' | 'invite.sent' | 'invite.accepted' | 'invite.deleted' | 'ip_allowlist.created' | 'ip_allowlist.updated' | 'ip_allowlist.deleted' | 'ip_allowlist.config.activated' | 'ip_allowlist.config.deactivated' | 'login.succeeded' | 'login.failed' | 'logout.succeeded' | 'logout.failed' | 'organization.updated' | 'project.created' | 'project.updated' | 'project.archived' | 'project.deleted' | 'rate_limit.updated' | 'rate_limit.deleted' | 'resource.deleted' | 'tunnel.created' | 'tunnel.updated' | 'tunnel.deleted' | 'workload_identity_provider.created' | 'workload_identity_provider.updated' | 'workload_identity_provider.deleted' | 'workload_identity_provider_mapping.created' | 'workload_identity_provider_mapping.updated' | 'workload_identity_provider_mapping.deleted' | 'role.created' | 'role.updated' | 'role.deleted' | 'role.assignment.created' | 'role.assignment.deleted' | 'scim.enabled' | 'scim.disabled' | 'service_account.created' | 'service_account.updated' | 'service_account.deleted' | 'user.added' | 'user.updated' | 'user.deleted'>;
     /**
      * Return only events for these projects.
      */
