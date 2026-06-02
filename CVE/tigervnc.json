@@ -1,7 +1,7 @@
 {
   "app_name": "Tigervnc",
   "app_key": "tigervnc",
-  "last_updated": "2026-06-01",
+  "last_updated": "2026-06-02",
   "total_cves": 30,
   "summary": {
     "critical": 3,
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2025-26597",
       "published_date": "2025-02-25",
-      "last_modified_date": "2026-04-06",
+      "last_modified_date": "2026-06-02",
       "description": "A buffer overflow flaw was found in X.Org and Xwayland. If XkbChangeTypesOfKey() is called with a 0 group, it will resize the key symbols table to 0 but leave the key actions unchanged. If the same function is later called with a non-zero value of groups, this will cause a buffer overflow because the key actions are of the wrong size.",
       "base_score": 7.8,
       "severity": "HIGH",

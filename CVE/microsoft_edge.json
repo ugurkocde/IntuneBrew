@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-06-01",
+  "last_updated": "2026-06-02",
   "total_cves": 964,
   "summary": {
     "critical": 17,
@@ -12971,8 +12971,8 @@
     {
       "cve_id": "CVE-2026-35429",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-05-18",
-      "description": "User interface (ui) misrepresentation of critical information in Microsoft Edge for Android allows an unauthorized attacker to perform spoofing over a network.",
+      "last_modified_date": "2026-06-01",
+      "description": "User interface (ui) misrepresentation of critical information in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 4.3,
       "severity": "MEDIUM",
       "cvss_version": "3.1",
