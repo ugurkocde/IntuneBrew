@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1261-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -488,46 +488,52 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-02 01:10 UTC*
+*Last checked: 2026-06-03 01:23 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 152.0b5 | 152.0b6 |
-| Gephi | 0.10.1 | 0.11.2 |
-| Dockside | 2.9.4 | 2.9.5 |
-| Bambu Studio | 02.06.00.51 | 02.07.01.57 |
-| Skim | 1.7.14 | 1.7.15 |
-| Trae | 2.3.30128 | 2.3.33256 |
-| Downie | 4.12.5 | 4.12.6 |
-| Grammarly Desktop | 1.167.1.0 | 1.167.2.0 |
-| Notion | 7.19.0 | 7.20.0 |
-| NetBeans IDE | 29 | 30 |
-| ChatGPT | 1.2026.118 | 1.2026.119 |
-| Discord | 0.0.392 | 0.0.393 |
-| DuckDuckGo | 1.191.0 | 1.192.0 |
-| Tenable Nessus Agent | 11.1.3 | 11.2.0 |
-| Beekeeper Studio | 5.7.3 | 5.8.0 |
-| ExpanDrive | 2026.05.27.833 | 2026.06.01.842 |
-| Milanote | 3.18.105 | 3.18.106 |
-| Typinator | 10.0 | 10.1 |
-| Actual | 26.5.2 | 26.6.0 |
+| Rive | 0.8.4959 | 0.8.4972 |
+| MarkEdit | 1.32.1 | 1.33.0 |
+| Readest | 0.11.2 | 0.11.4 |
+| Rectangle Pro | 3.78 | 3.80 |
+| DockDoor | 1.39.2 | 1.39.3 |
+| RustDesk | 1.4.6 | 1.4.7 |
+| Google Chrome | 148.0.7778.216 | 149.0.7827.54 |
+| Mozilla Firefox | 151.0.2 | 151.0.3 |
+| Grammarly Desktop | 1.167.2.0 | 1.168.0.0 |
+| Miro | 0.11.140 | 0.11.144 |
+| Android Studio | 2025.3.4.7 | 2026.1.1.8 |
+| Termius | 9.38.2 | 9.39.0 |
+| Microsoft Office | 16.109.26052523 | 16.109.26053122 |
+| Transmission | 4.1.1 | 4.1.2 |
+| Opera | 132.0.5905.11 | 132.0.5905.19 |
+| JetBrains Toolbox | 3.4.3 | 3.5 |
+| Camtasia | 2026.1.2 | 2026.1.3 |
+| Remote Desktop Manager | 2026.1.12.6 | 2026.2.1.2 |
+| Beekeeper Studio | 5.8.0 | 5.8.1 |
+| Milanote | 3.18.106 | 3.18.107 |
+| Polymail | 2.4.3004 | 2.4.3005 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Capto | 2.1.4 | 2.1.5 |
-| DevKnife | 1.14.0 | 1.15.0 |
-| Jami | 2.39 | 2.40 |
-| jamovi | 2.7.30.0 | 2.7.31.0 |
-| LaunchOS | 2.0.0 | 2.0.1 |
-| LightBurn | 2.1.01 | 2.1.02 |
-| Loom | 0.351.1 | 0.351.2 |
+| Free Download Manager | 6.34.0 | 6.34.1 |
+| GDevelop | 5.6.269 | 5.6.270 |
+| Granola | 7.277.1 | 7.290.0 |
 | Multi | 0.538.2 | 3.0.2 |
-| Notesnook | 3.3.20 | 3.3.21 |
-| Rize | 2.3.7 | 3.0.7 |
-| cmux | 0.64.10 | 0.64.11 |
-| NordVPN | 10.3.0 | 10.3.1 |
+| Pale Moon | 34.2.2 | 34.3.0 |
+| Pitch | 2.129.6 | 2.130.1 |
+| Shapr3D | 26.90.0.10979 | 26.91.0.11012 |
+| Tuta Mail | 348.260526.0 | 348.260529.2 |
+| cmux | 0.64.11 | 0.64.12 |
+| Microsoft Office BusinessPro | 16.109.26052523 | 16.109.26053122 |
+| Microsoft Excel | 16.109.26052523 | 16.109.26053122 |
+| Microsoft OneNote | 16.109.26052523 | 16.109.26053122 |
+| Microsoft Outlook | 16.109.26052523 | 16.109.26053122 |
+| Microsoft PowerPoint | 16.109.26052523 | 16.109.26053122 |
+| Microsoft Word | 16.109.26052523 | 16.109.26053122 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

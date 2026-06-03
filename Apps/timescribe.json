@@ -1,15 +1,15 @@
 {
   "name": "TimeScribe",
   "description": "Working time tracker",
-  "version": "1.14.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/timescribe_1.14.0.pkg",
+  "version": "1.15.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/timescribe_1.15.0.pkg",
   "vendor_url": "https://github.com/WINBIGFOX/TimeScribe/releases/download/v1.12.0/TimeScribe-1.12.0-arm64.zip",
   "bundleId": "com.apple.TimeScribe",
   "homepage": "https://timescribe.app/",
-  "fileName": "timescribe_1.14.0.pkg",
+  "fileName": "timescribe_1.15.0.pkg",
   "type": "app",
-  "sha": "67e6a15ea74388f607f20d2d3abd6a93c9a9e88c4d1819f61b284ec9fb9841cd",
+  "sha": "d03ef3f74a0c2dbb41dda872761ad074f9d73e80c93362fd7a0ecfa1bb01db3d",
   "category": "Productivity",
   "publisher": "TimeScribe",
-  "previous_version": "1.14.0"
+  "previous_version": "1.15.0"
 }

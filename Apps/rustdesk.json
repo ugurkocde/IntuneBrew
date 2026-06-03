@@ -1,13 +1,13 @@
 {
   "name": "RustDesk",
   "description": "Open source virtual/remote desktop application",
-  "version": "1.4.6",
-  "url": "https://github.com/rustdesk/rustdesk/releases/download/1.4.6/rustdesk-1.4.6-aarch64.dmg",
+  "version": "1.4.7",
+  "url": "https://github.com/rustdesk/rustdesk/releases/download/1.4.7/rustdesk-1.4.7-aarch64.dmg",
   "vendor_url": "https://github.com/rustdesk/rustdesk/releases/download/1.4.6/rustdesk-1.4.6-aarch64.dmg",
   "bundleId": "com.carriez.rustdesk",
   "homepage": "https://rustdesk.com/",
-  "fileName": "rustdesk-1.4.6-aarch64.dmg",
-  "sha": "0cd498e3f99c878bfa3c54996089b9671fdd15aee5d1ac160444841f95ea01bc",
+  "fileName": "rustdesk-1.4.7-aarch64.dmg",
+  "sha": "f77e517fa792c8d46eb9eade3a2ce74f68d7f585924fc4202719f4ed82038ead",
   "category": "Utilities",
   "publisher": "RustDesk",
   "previous_version": "1.4.6"
