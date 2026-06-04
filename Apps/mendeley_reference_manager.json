@@ -1,13 +1,13 @@
 {
   "name": "Mendeley Reference Manager",
   "description": "Research management tool",
-  "version": "2.144.0",
-  "url": "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.144.0-universal.dmg",
+  "version": "2.145.0",
+  "url": "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.145.0-universal.dmg",
   "vendor_url": "https://static.mendeley.com/bin/desktop/mendeley-reference-manager-2.144.0-universal.dmg",
   "bundleId": "com.elsevier.mendeley",
   "homepage": "https://www.mendeley.com/download-reference-manager/macOS/",
-  "fileName": "mendeley-reference-manager-2.144.0-universal.dmg",
-  "sha": "f7c497fd61d9372d0be4e30b2dd53eb9d8feba7a31070bad405434c6091c3421",
+  "fileName": "mendeley-reference-manager-2.145.0-universal.dmg",
+  "sha": "b0fe5f19dc1fc282e340595fd6437392af8ae4d445a81395264017a8b3c96726",
   "category": "Productivity",
   "publisher": "Mendeley Ltd.",
   "previous_version": "2.144.0"
