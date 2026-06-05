@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1261-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -490,40 +490,43 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-04 01:18 UTC*
+*Last checked: 2026-06-05 01:09 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 152.0b6 | 152.0b7 |
-| Dockside | 2.9.5 | 2.9.6 |
-| WeChat for Mac | 4.1.10.26 | 4.1.10.31 |
-| LibreWolf | 151.0.2 | 151.0.3 |
-| Stats | 2.12.15 | 2.12.16 |
-| Zed | 1.4.4 | 1.5.3 |
-| Opera | 132.0.5905.19 | 132.0.5905.22 |
-| 8x8_work | 8.33.2-2 | 8.34.1-11 |
-| Tor Browser | 15.0.14 | 15.0.15 |
-| Superkey | 1.60 | 1.62 |
-| Waterfox | 6.6.13 | 6.6.14 |
+| ProcessSpy | 1.13.3 | 1.13.4 |
+| JetBrains PhpStorm | 2026.1.2 | 2026.1.3 |
+| Brave | 1.90.128.0 | 1.91.168.0 |
+| OrbStack | 2.1.3 | 2.2.1 |
+| WebStorm | 2026.1.2 | 2026.1.3 |
+| Microsoft Edge | 148.0.3967.96 | 149.0.4022.52 |
+| LM Studio | 0.4.15 | 0.4.16 |
+| BoltAI 2 | 2.13.2 | 2.13.3 |
+| IntelliJ IDEA Ultimate | 2026.1.2 | 2026.1.3 |
+| ExpanDrive | 2026.06.01.842 | 2026.06.02.856 |
+| LosslessCut | 3.68.0 | 3.69.0 |
+| Sensei | 2.0.2 | 2.1 |
+| Deezer | 7.1.220 | 7.1.230 |
+| Missive | 11.12.4 | 11.29.0 |
+| RubyMine | 2026.1.2 | 2026.1.3 |
+| Bilibili | 1.17.6 | 1.17.8 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Dorico | 6.2.20 | 6.2.30 |
-| Anytype | 0.55.4 | 0.55.5 |
-| DevKnife | 1.15.0 | 1.15.1 |
-| Folx | 5.33 | 5.34 |
-| GDevelop | 5.6.270 | 5.6.271 |
-| Mendeley Reference Manager | 2.144.0 | 2.145.0 |
+| Dust3D | 1.1.3 | 1.1.4 |
+| AirServer | 7.3.1 | 7.3.2 |
+| Granola | 7.290.0 | 7.303.0 |
+| Loom | 0.351.2 | 0.352.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Riverside Studio | 1.24.4 | 1.25.1 |
-| TradingView Desktop | 3.1.0 | 3.2.0 |
-| Tuta Mail | 348.260529.2 | 349.260602.1 |
-| Claude Code | 2.1.150 | 2.1.152 |
-| Enclave | 2026.5.23 | 2026.6.3 |
-| FUSE-T | 1.2.6 | 1.2.7 |
-| Salesforce CLI | 2.136.8 | 2.137.7 |
+| Claude Code | 2.1.152 | 2.1.153 |
+| kiro | 0.12.263 | 0.12.292 |
+| cmux | 0.64.12 | 0.64.13 |
+| Enpass | 6.12.1.2423 | 6.12.2.2561 |
+| RingCentral | 26.1.10 | 26.2.10 |
+| UniFi Identity Endpoint | 4.0.1 | 4.0.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

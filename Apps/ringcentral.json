@@ -1,14 +1,14 @@
 {
   "name": "RingCentral",
   "description": "Team messaging, video meetings, and business phone",
-  "version": "26.1.10",
+  "version": "26.2.10",
   "url": "https://app.ringcentral.com/download/RingCentral-arm64.pkg",
   "vendor_url": "https://app.ringcentral.com/download/RingCentral-arm64.pkg",
   "bundleId": "com.ringcentral.glip",
   "homepage": "https://www.ringcentral.com/download.html",
   "fileName": "RingCentral-arm64.pkg",
   "type": "pkg",
-  "sha": "9c3b0aeea473d0b2e0b3b0083152c6690d0fb1a00b62fdc281a26e5f32a9ed0f",
+  "sha": "df67009aa52c1efe5b01686feadcdd44715e740b8a84bbb5ae387699e89013e6",
   "category": "Communication",
   "publisher": "RingCentral, Inc.",
   "previous_version": "26.1.10"
