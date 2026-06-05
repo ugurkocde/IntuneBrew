@@ -1,7 +1,7 @@
 {
   "app_name": "Tigervnc",
   "app_key": "tigervnc",
-  "last_updated": "2026-06-04",
+  "last_updated": "2026-06-05",
   "total_cves": 30,
   "summary": {
     "critical": 3,
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2026-34352",
       "published_date": "2026-03-26",
-      "last_modified_date": "2026-06-03",
+      "last_modified_date": "2026-06-04",
       "description": "In TigerVNC before 1.16.2, Image.cxx in x0vncserver allows other users to observe or manipulate the screen contents, or cause an application crash, because of incorrect permissions.",
       "base_score": 8.5,
       "severity": "HIGH",
