@@ -1,13 +1,13 @@
 {
   "name": "Screaming Frog SEO Spider",
   "description": "SEO site audit tool",
-  "version": "23.3",
-  "url": "https://download.screamingfrog.co.uk/products/seo-spider/ScreamingFrogSEOSpider-23.3-aarch64.dmg",
+  "version": "24.0",
+  "url": "https://download.screamingfrog.co.uk/products/seo-spider/ScreamingFrogSEOSpider-24.0-aarch64.dmg",
   "vendor_url": "https://download.screamingfrog.co.uk/products/seo-spider/ScreamingFrogSEOSpider-23.3-aarch64.dmg",
   "bundleId": "com.screamingfrog.ScreamingFrogSEOSpider",
   "homepage": "https://www.screamingfrog.co.uk/seo-spider/",
-  "fileName": "ScreamingFrogSEOSpider-23.3-aarch64.dmg",
-  "sha": "d263873f08a4323104a259b776c1a3a12ccebdd1a19ae0f22312e188954a52b5",
+  "fileName": "ScreamingFrogSEOSpider-24.0-aarch64.dmg",
+  "sha": "b62307014dbac5d6587bded045e1c362b975681ff012a02c9e17eb2cd7367ff3",
   "category": "Utilities",
   "publisher": "Screaming Frog Ltd",
   "previous_version": "23.3"

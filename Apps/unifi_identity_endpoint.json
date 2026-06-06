@@ -1,15 +1,15 @@
 {
   "name": "UniFi Identity Endpoint",
   "description": "License free Wi-Fi, VPN, and Access Application for Organizations",
-  "version": "4.0.2",
-  "url": "https://fw-download.ubnt.com/data/uid-identity-standard-desktop-app/b6a8-macOS-4.0.2-0fcaaa25-879c-4b31-b5c2-f4ba3bfd84db.pkg",
+  "version": "4.0.3",
+  "url": "https://fw-download.ubnt.com/data/uid-identity-standard-desktop-app/8f79-macOS-4.0.3-1895971c-f843-4d21-b7fb-e08dd3be3ffc.pkg",
   "vendor_url": "https://fw-download.ubnt.com/data/uid-identity-standard-desktop-app/63e6-macOS-3.6.1-bc43dfbc-7c53-47f3-82eb-917c2fa92c93.pkg",
   "bundleId": "com.ui.uid.standard-desktop",
   "homepage": "https://www.ui.com/identity",
-  "fileName": "b6a8-macOS-4.0.2-0fcaaa25-879c-4b31-b5c2-f4ba3bfd84db.pkg",
+  "fileName": "8f79-macOS-4.0.3-1895971c-f843-4d21-b7fb-e08dd3be3ffc.pkg",
   "type": "pkg",
-  "sha": "07d7134e40ad517568bf006d7872c0805bc4efc0cafe9bd60b80f9d8b2a5e7d8",
+  "sha": "4f0848e4aad164e3fd375b92ad9a8055bb035be4d06e580b3859cfb6e3dbe027",
   "category": "Security",
   "publisher": "Ubiquiti Inc.",
-  "previous_version": "4.0.1"
+  "previous_version": "4.0.2"
 }

@@ -1,15 +1,15 @@
 {
   "name": "Netron",
   "description": "Visualiser for neural network, deep learning, and machine learning models",
-  "version": "9.1.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/netron_9.1.0.pkg",
+  "version": "9.1.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/netron_9.1.1.pkg",
   "vendor_url": "https://github.com/lutzroeder/netron/releases/download/v9.0.1/Netron-9.0.1-mac.zip",
   "bundleId": "com.lutzroeder.netron",
   "homepage": "https://github.com/lutzroeder/netron",
-  "fileName": "netron_9.1.0.pkg",
+  "fileName": "netron_9.1.1.pkg",
   "type": "app",
-  "sha": "c42fe7a9c47caeb970eee2c263446a836d78f6f2b08f85d9340711ac9fd360ac",
+  "sha": "fad55ab28d3c5608822d583898d4cd959bd15d143fa2f3c0e1ce7a4be32fd5dc",
   "category": "Developer Tools",
   "publisher": "Lutz Roeder",
-  "previous_version": "9.1.0"
+  "previous_version": "9.1.1"
 }

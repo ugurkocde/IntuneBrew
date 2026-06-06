@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1261-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -491,42 +491,42 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-05 01:09 UTC*
+*Last checked: 2026-06-06 01:05 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| ProcessSpy | 1.13.3 | 1.13.4 |
-| JetBrains PhpStorm | 2026.1.2 | 2026.1.3 |
-| Brave | 1.90.128.0 | 1.91.168.0 |
-| OrbStack | 2.1.3 | 2.2.1 |
-| WebStorm | 2026.1.2 | 2026.1.3 |
-| Microsoft Edge | 148.0.3967.96 | 149.0.4022.52 |
-| LM Studio | 0.4.15 | 0.4.16 |
-| BoltAI 2 | 2.13.2 | 2.13.3 |
-| IntelliJ IDEA Ultimate | 2026.1.2 | 2026.1.3 |
-| ExpanDrive | 2026.06.01.842 | 2026.06.02.856 |
-| LosslessCut | 3.68.0 | 3.69.0 |
-| Sensei | 2.0.2 | 2.1 |
-| Deezer | 7.1.220 | 7.1.230 |
-| Missive | 11.12.4 | 11.29.0 |
-| RubyMine | 2026.1.2 | 2026.1.3 |
-| Bilibili | 1.17.6 | 1.17.8 |
+| Mozilla Firefox Developer Edition | 152.0b7 | 152.0b8 |
+| Rive | 0.8.4972 | 0.8.4993 |
+| Tofu | 3.0.1 | 3.1 |
+| BBEdit | 16.0 | 16.0.1 |
+| Keeper Password Manager | 18.0.2 | 18.1.0 |
+| LibreOffice | 26.2.3 | 26.2.4 |
+| Apidog | 2.8.32 | 2.8.33 |
+| Warp | 0.2026.05.27.15.44.stable | 0.2026.06.03.09.49.stable |
+| AppFlowy | 0.12.1 | 0.12.2 |
+| Craft | 3.4.3 | 3.4.4 |
+| ExpanDrive | 2026.06.02.856 | 2026.06.05.858 |
+| Mimestream | 1.10.0 | 1.10.1 |
+| Sensei | 2.1 | 2.1.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Dust3D | 1.1.3 | 1.1.4 |
-| AirServer | 7.3.1 | 7.3.2 |
-| Granola | 7.290.0 | 7.303.0 |
-| Loom | 0.351.2 | 0.352.4 |
+| Dust3D | 1.1.4 | 1.1.5 |
+| AirServer | 7.3.2 | 7.3.3 |
+| Nektony App Cleaner & Uninstaller | 9.2.1 | 9.2.2 |
+| Funter | 7.1 | 7.1.1 |
+| JASP | 0.97.0.0 | 0.97.1.0 |
+| LaunchOS | 2.0.1 | 2.1.0 |
+| Nektony MacCleaner Pro | 4.0.2 | 4.0.3 |
+| Memory Cleaner | 5.5.1 | 5.5.2 |
 | Multi | 0.538.2 | 3.0.2 |
-| Claude Code | 2.1.152 | 2.1.153 |
-| kiro | 0.12.263 | 0.12.292 |
-| cmux | 0.64.12 | 0.64.13 |
-| Enpass | 6.12.1.2423 | 6.12.2.2561 |
-| RingCentral | 26.1.10 | 26.2.10 |
-| UniFi Identity Endpoint | 4.0.1 | 4.0.2 |
+| Multitouch | 1.43 | 1.46 |
+| Screaming Frog SEO Spider | 23.3 | 24.0 |
+| UniFi Identity Endpoint | 4.0.2 | 4.0.3 |
+| Adobe Acrobat Pro DC | 26.001.21563 | 26.001.21651 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

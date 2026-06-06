@@ -1,15 +1,15 @@
 {
   "name": "Superhuman",
   "description": "Email client",
-  "version": "1041.0.11",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/superhuman_1041.0.11.pkg",
+  "version": "1041.0.12",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/superhuman_1041.0.12.pkg",
   "vendor_url": "https://storage.googleapis.com/download.superhuman.com/supertron-update/Superhuman-1038.0.31-arm64-latest-mac.zip",
   "bundleId": "com.superhuman.mail",
   "homepage": "https://superhuman.com/",
-  "fileName": "superhuman_1041.0.11.pkg",
+  "fileName": "superhuman_1041.0.12.pkg",
   "type": "app",
-  "sha": "8449964e1400bdc08f460353452df6671acaff7000ded6f1dfd1df92ce253321",
+  "sha": "ca4c27a0af93953bc8ff1412c13d48df249788b73890322f7f5275476e46e2cd",
   "category": "Productivity",
   "publisher": "Superhuman, Inc.",
-  "previous_version": "1041.0.11"
+  "previous_version": "1041.0.12"
 }

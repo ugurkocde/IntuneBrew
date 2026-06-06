@@ -1,13 +1,13 @@
 {
   "name": "BBEdit",
   "description": "Text, code, and markup editor",
-  "version": "16.0",
-  "url": "https://s3.amazonaws.com/BBSW-download/BBEdit_16.0.dmg",
+  "version": "16.0.1",
+  "url": "https://s3.amazonaws.com/BBSW-download/BBEdit_16.0.1.dmg",
   "vendor_url": "https://s3.amazonaws.com/BBSW-download/BBEdit_15.5.5.dmg",
   "bundleId": "com.barebones.bbedit",
   "homepage": "https://www.barebones.com/products/bbedit/",
-  "fileName": "BBEdit_16.0.dmg",
-  "sha": "c72d162800542ada299df33e1b8d72be17791fb0bdbec04dcde810980b75dd4f",
+  "fileName": "BBEdit_16.0.1.dmg",
+  "sha": "e4ac925a2fecf4ed6f3d5b18bd77e223d1323994724adcb2fec764c984d6f689",
   "changelog": "https://www.barebones.com/company/news.html",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:23:00Z",
