@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1261-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -492,41 +492,32 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-06 01:05 UTC*
+*Last checked: 2026-06-07 01:10 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Multi | 0.538.2 | 3.0.2 |
-| Mozilla Firefox Developer Edition | 152.0b7 | 152.0b8 |
-| Rive | 0.8.4972 | 0.8.4993 |
-| Tofu | 3.0.1 | 3.1 |
-| BBEdit | 16.0 | 16.0.1 |
-| Keeper Password Manager | 18.0.2 | 18.1.0 |
-| LibreOffice | 26.2.3 | 26.2.4 |
-| Apidog | 2.8.32 | 2.8.33 |
-| Warp | 0.2026.05.27.15.44.stable | 0.2026.06.03.09.49.stable |
-| AppFlowy | 0.12.1 | 0.12.2 |
-| Craft | 3.4.3 | 3.4.4 |
-| ExpanDrive | 2026.06.02.856 | 2026.06.05.858 |
-| Mimestream | 1.10.0 | 1.10.1 |
-| Sensei | 2.1 | 2.1.1 |
+| Trae | 2.3.33256 | 2.3.37196 |
+| Citrix Workspace | 26.03.0.49 | 26.03.10.40 |
+| Zed | 1.5.3 | 1.5.4 |
+| OneDrive | 26.078.0426.0002 | 26.088.0510.0004 |
+| Krita | 5.3.1.1 | 5.3.2.1 |
+| Permute | 3.14.8 | 4.0.2 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Dust3D | 1.1.4 | 1.1.5 |
-| AirServer | 7.3.2 | 7.3.3 |
-| Nektony App Cleaner & Uninstaller | 9.2.1 | 9.2.2 |
-| Funter | 7.1 | 7.1.1 |
-| JASP | 0.97.0.0 | 0.97.1.0 |
-| LaunchOS | 2.0.1 | 2.1.0 |
-| Nektony MacCleaner Pro | 4.0.2 | 4.0.3 |
-| Memory Cleaner | 5.5.1 | 5.5.2 |
+| Buzz | 1.2.0 | 1.4.4 |
+| Kdenlive | 26.04.1 | 26.04.2 |
+| MEGAsync | 6.3.1.0 | 6.4.0.2 |
 | Multi | 0.538.2 | 3.0.2 |
-| Multitouch | 1.43 | 1.46 |
-| Screaming Frog SEO Spider | 23.3 | 24.0 |
-| UniFi Identity Endpoint | 4.0.2 | 4.0.3 |
-| Adobe Acrobat Pro DC | 26.001.21563 | 26.001.21651 |
+| Notesnook | 3.3.21 | 3.3.22 |
+| kiro | 0.12.292 | 0.12.301 |
+| cmux | 0.64.13 | 0.64.14 |
+| Box Drive | 2.51.233 | 2.52.306 |
+| Insta360 Link Controller | 2.2.2 | 2.2.3 |
+| CrashPlan | 11.9.1 | 12.0.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

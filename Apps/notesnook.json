@@ -1,13 +1,13 @@
 {
   "name": "Notesnook",
   "description": "Privacy-focused note taking app",
-  "version": "3.3.21",
-  "url": "https://github.com/streetwriters/notesnook/releases/download/v3.3.21/notesnook_mac_arm64.dmg",
+  "version": "3.3.22",
+  "url": "https://github.com/streetwriters/notesnook/releases/download/v3.3.22/notesnook_mac_arm64.dmg",
   "vendor_url": "https://github.com/streetwriters/notesnook/releases/download/v3.3.14/notesnook_mac_arm64.dmg",
   "bundleId": "com.streetwriters.notesnook",
   "homepage": "https://notesnook.com/",
   "fileName": "notesnook_mac_arm64.dmg",
-  "sha": "f424c6a423c963ab2ae89583a68093c8e4edfefb426b30daa03cc5154cd1f738",
+  "sha": "78c7bfcc2d0895fc5be23d6d13f9818b7c3de3db1ce5161ea6c8ce9bc192212d",
   "category": "Productivity",
   "publisher": "Notesnook",
   "previous_version": "3.3.21"

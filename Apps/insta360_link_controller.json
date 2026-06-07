@@ -1,14 +1,14 @@
 {
   "name": "Insta360 Link Controller",
   "description": "Controller for Insta360 webcams",
-  "version": "2.2.2",
-  "url": "https://wassets.insta360.com/common/83441c791e89488490c5de605d657970/Insta360LinkController_2.2.2(build20)_20260416_201106_signed_1776341833088.pkg",
+  "version": "2.2.3",
+  "url": "https://wassets.insta360.com/common/1a4e9490784c43c39b4bb4b43f040831/Insta360LinkController_2.2.3(build13).pkg",
   "vendor_url": "https://wassets.insta360.com/common/da87dfa499b745129aa20d51113aab71/Insta360LinkController_2.2.1(build24)_20260202_115048_signed_1770004724733.pkg",
   "bundleId": "com.insta360.webcam",
   "homepage": "https://www.insta360.com/",
-  "fileName": "Insta360LinkController_2.2.2(build20)_20260416_201106_signed_1776341833088.pkg",
+  "fileName": "Insta360LinkController_2.2.3(build13).pkg",
   "type": "pkg",
-  "sha": "4f466c43c012ffb15c032407740431075f8dba83b0b50ec7abf57b5a3e83e85d",
+  "sha": "996d2fd60c554ec0087e08901ec554daff58bb4094f5d6eb800d8da6bd26e8d1",
   "category": "Utilities",
   "publisher": "Insta360",
   "previous_version": "2.2.2"
