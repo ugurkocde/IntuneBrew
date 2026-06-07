@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-06-06",
+  "last_updated": "2026-06-07",
   "total_cves": 4596,
   "summary": {
     "critical": 195,
@@ -1694,7 +1694,7 @@
     {
       "cve_id": "CVE-2026-10971",
       "published_date": "2026-06-04",
-      "last_modified_date": "2026-06-05",
+      "last_modified_date": "2026-06-06",
       "description": "Insufficient validation of untrusted input in Printing in Google Chrome on Windows prior to 149.0.7827.53 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -58205,12 +58205,12 @@
     {
       "cve_id": "CVE-2026-11199",
       "published_date": "2026-06-04",
-      "last_modified_date": "2026-06-05",
+      "last_modified_date": "2026-06-06",
       "description": "Inappropriate implementation in WebRTC in Google Chrome prior to 149.0.7827.53 allowed an attacker in a privileged network position to leak cross-origin data via malicious network traffic. (Chromium security severity: Medium)",
-      "base_score": 5.7,
+      "base_score": 5.9,
       "severity": "MEDIUM",
       "cvss_version": "3.1",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:R/S:U/C:H/I:N/A:N",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:N/A:N",
       "affected_version_start": null,
       "affected_version_start_type": null,
       "affected_version_end": "149.0.7827.53",
