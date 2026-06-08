@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-06-08T01:23:54.028Z",
+  "last_full_scan": "2026-06-08T21:58:54.233Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9151,6 +9151,13 @@
         "openai_alternative"
       ],
       "name": "MacDown 3000"
+    },
+    "r": {
+      "last_checked": "2026-06-08T21:58:54.227Z",
+      "bundle_id": "org.r-project*",
+      "status": "verified",
+      "source": "file",
+      "name": "R"
     }
   }
 }
