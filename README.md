@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1261-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -493,31 +493,22 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-07 01:10 UTC*
+*Last checked: 2026-06-08 01:09 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Multi | 0.538.2 | 3.0.2 |
-| Trae | 2.3.33256 | 2.3.37196 |
-| Citrix Workspace | 26.03.0.49 | 26.03.10.40 |
-| Zed | 1.5.3 | 1.5.4 |
-| OneDrive | 26.078.0426.0002 | 26.088.0510.0004 |
-| Krita | 5.3.1.1 | 5.3.2.1 |
-| Permute | 3.14.8 | 4.0.2 |
+| Easydict | 2.20.0 | 2.21.0 |
+| Stats | 2.12.16 | 3.0.1 |
+| kitty | 0.47.1 | 0.47.2 |
+| Jellyfin | 10.11.10 | 10.11.11 |
+| Dataflare | 3.0.5 | 3.1.0 |
+| HandBrake | 1.11.1 | 1.11.2 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Buzz | 1.2.0 | 1.4.4 |
-| Kdenlive | 26.04.1 | 26.04.2 |
-| MEGAsync | 6.3.1.0 | 6.4.0.2 |
-| Multi | 0.538.2 | 3.0.2 |
-| Notesnook | 3.3.21 | 3.3.22 |
-| kiro | 0.12.292 | 0.12.301 |
-| cmux | 0.64.13 | 0.64.14 |
-| Box Drive | 2.51.233 | 2.52.306 |
-| Insta360 Link Controller | 2.2.2 | 2.2.3 |
-| CrashPlan | 11.9.1 | 12.0.0 |
+| Multitouch | 1.46 | 1.48 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

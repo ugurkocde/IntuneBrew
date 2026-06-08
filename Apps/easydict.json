@@ -1,13 +1,13 @@
 {
   "name": "Easydict",
   "description": "Dictionary and translator app",
-  "version": "2.20.0",
-  "url": "https://github.com/tisfeng/Easydict/releases/download/2.20.0/Easydict.dmg",
+  "version": "2.21.0",
+  "url": "https://github.com/tisfeng/Easydict/releases/download/2.21.0/Easydict.dmg",
   "vendor_url": "https://github.com/tisfeng/Easydict/releases/download/2.18.1/Easydict.dmg",
   "bundleId": "com.izual.Easydict",
   "homepage": "https://github.com/tisfeng/Easydict/",
   "fileName": "Easydict.dmg",
-  "sha": "9d4b7e814feb47ae7598e63efe10c63cce24f7e8944b6960b74f54d8cb094504",
+  "sha": "23410f4cb087fce56c23c271832a99f05020965899e2293fff22835f798c00ef",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:24:05Z",
     "qa_result": "Installation successful and verified",
