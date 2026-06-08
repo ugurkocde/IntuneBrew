@@ -8,5 +8,7 @@
   "homepage": "https://www.r-project.org/",
   "fileName": "R-4.6.0-arm64.pkg",
   "type": "pkg",
-  "sha": "549f9a06d9816b515fa1adff13c4aefd64a27887bb888caa6279b61059e757da"
+  "sha": "549f9a06d9816b515fa1adff13c4aefd64a27887bb888caa6279b61059e757da",
+  "category": "Developer Tools",
+  "publisher": "The R Foundation for Statistical Computing"
 }
