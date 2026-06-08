@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1261-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1262-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -494,21 +494,38 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-08 01:09 UTC*
+*Last checked: 2026-06-08 21:40 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Easydict | 2.20.0 | 2.21.0 |
-| Stats | 2.12.16 | 3.0.1 |
-| kitty | 0.47.1 | 0.47.2 |
-| Jellyfin | 10.11.10 | 10.11.11 |
-| Dataflare | 3.0.5 | 3.1.0 |
-| HandBrake | 1.11.1 | 1.11.2 |
+| Mozilla Firefox Developer Edition | 152.0b8 | 152.0b9 |
+| Advanced Renamer | 4.21 | 4.23 |
+| Rive | 0.8.4993 | 0.8.5006 |
+| Requestly | 26.3.3 | 26.6.8 |
+| Proton Drive | 2.11.5 | 3.0.0 |
+| mouseless | 0.4.3 | 0.4.4 |
+| FreeTube | 0.24.0 | 0.24.1 |
+| Proxyman | 6.10.0 | 6.11.0 |
+| Microsoft Teams | 26120.3106.4725.800 | 26134.1610.4759.7759 |
+| DuckDuckGo | 1.192.0 | 1.193.0 |
+| Santa | 2026.4 | 2026.5 |
+| iMazing | 3.5.3 | 3.5.4 |
+| Dataflare | 3.1.0 | 3.1.1 |
+| DbGate | 7.1.13 | 7.2.0 |
+| ocenaudio | 3.19.1 | 3.19.2 |
+| Opera GX | 131.0.5877.111 | 132.0.5905.28 |
+| REAPER | 7.73 | 7.74 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Multitouch | 1.46 | 1.48 |
+| Douyin | 7.8.0 | 7.9.0 |
+| 4K YouTube to MP3 | 26.1.2 | 26.1.4 |
+| Loom | 0.352.4 | 0.352.5 |
+| RunJS | 4.0.5 | 4.0.6 |
+| Unity Hub | 3.18.0 | 3.18.2 |
+| macshot | 4.1.1 | 4.1.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

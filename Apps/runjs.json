@@ -1,13 +1,13 @@
 {
   "name": "RunJS",
   "description": "JavaScript playground that auto-evaluates as code is typed",
-  "version": "4.0.5",
-  "url": "https://github.com/lukehaas/RunJS/releases/download/v4.0.5/RunJS-4.0.5-universal.dmg",
+  "version": "4.0.6",
+  "url": "https://github.com/lukehaas/RunJS/releases/download/v4.0.6/RunJS-4.0.6-universal.dmg",
   "vendor_url": "https://github.com/lukehaas/RunJS/releases/download/v3.2.2/RunJS-3.2.2-universal.dmg",
   "bundleId": "me.lukehaas.runjs",
   "homepage": "https://runjs.app/",
-  "fileName": "RunJS-4.0.5-universal.dmg",
-  "sha": "8c3a9900a37a88d801c16c4bcd5f19b4aee544b45754e69868188fecc4f57617",
+  "fileName": "RunJS-4.0.6-universal.dmg",
+  "sha": "85e845630a07c50329e59cbedfcbbe01510fd86de9eba6a23eb4d2fea0296fdb",
   "category": "Developer Tools",
   "publisher": "RunJS Ltd.",
   "previous_version": "4.0.5"

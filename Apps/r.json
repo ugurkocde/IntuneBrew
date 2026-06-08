@@ -1,0 +1,12 @@
+{
+  "name": "R",
+  "description": "Environment for statistical computing and graphics",
+  "version": "4.6.0",
+  "url": "https://cloud.r-project.org/bin/macosx/sonoma-arm64/base/R-4.6.0-arm64.pkg",
+  "vendor_url": "https://cloud.r-project.org/bin/macosx/sonoma-arm64/base/R-4.6.0-arm64.pkg",
+  "bundleId": "org.r-project*",
+  "homepage": "https://www.r-project.org/",
+  "fileName": "R-4.6.0-arm64.pkg",
+  "type": "pkg",
+  "sha": "549f9a06d9816b515fa1adff13c4aefd64a27887bb888caa6279b61059e757da"
+}
