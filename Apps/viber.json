@@ -7,5 +7,7 @@
   "bundleId": null,
   "homepage": "https://www.viber.com/",
   "fileName": "Viber.dmg",
-  "sha": "1ea610fff807c4caa633fa21cf381d8de5f2bbb3dca4ebedc776e395355f261b"
+  "sha": "1ea610fff807c4caa633fa21cf381d8de5f2bbb3dca4ebedc776e395355f261b",
+  "category": "Communication",
+  "publisher": "Viber Media, Inc."
 }
