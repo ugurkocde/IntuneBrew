@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-06-09T01:15:11.796Z",
+  "last_full_scan": "2026-06-09T10:01:59.222Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9158,6 +9158,20 @@
       "status": "verified",
       "source": "file",
       "name": "R"
+    },
+    "viber": {
+      "last_checked": "2026-06-09T10:01:59.120Z",
+      "bundle_id": "com.viber.osx",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Viber"
     }
   }
 }
