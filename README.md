@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1263-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1264-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -498,41 +498,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-10 01:10 UTC*
+*Last checked: 2026-06-10 02:21 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Dockside | 2.9.6 | 2.9.7 |
-| Ente Auth | 4.4.22 | 4.4.23 |
-| NVIDIA GeForce NOW | 2.0.85.133 | 2.0.85.135 |
-| Arduino IDE | 2.3.9 | 2.3.10 |
-| LibreWolf | 151.0.3 | 151.0.4 |
-| Google Chrome | 149.0.7827.54 | 149.0.7827.103 |
-| Mozilla Firefox | 151.0.3 | 151.0.4 |
-| Grammarly Desktop | 1.168.0.0 | 1.169.1.0 |
-| Notion | 7.20.0 | 7.21.0 |
-| Brave | 1.91.168.0 | 1.91.171.0 |
-| Dropbox | 254.4.2518 | 256.4.3790 |
-| Microsoft Edge | 149.0.4022.52 | 149.0.4022.62 |
-| CLion | 2026.1.2 | 2026.1.3 |
-| Path Finder | 26.1.3 | 26.1.4 |
-| Bria | 6.8.6 | 6.8.7 |
+| Zed | 1.5.4 | 1.5.5 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| ChatWork | 2.22.2 | 2.22.3 |
-| FileMaker Pro | 22.0.6.601 | 26.0.1.51 |
-| Granola | 7.303.0 | 7.309.0 |
-| Nextcloud Talk Desktop | 2.1.2 | 2.2.0 |
-| OnionShare | 2.6.3 | 2.6.4 |
-| Pitch | 2.130.1 | 2.131.0 |
-| RustRover | 2026.1.2 | 2026.1.3 |
-| Shapr3D | 26.91.0.11012 | 26.100.0.11031 |
-| Wealthfolio | 3.4.0 | 3.5.1 |
-| kiro | 0.12.316 | 0.12.318 |
-| TeamViewer | 15.78.3 | 15.78.4 |
-| Adobe Acrobat Pro DC | 26.001.21651 | 26.001.21662 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

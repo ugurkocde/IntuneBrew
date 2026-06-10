@@ -1,0 +1,12 @@
+{
+  "name": "Microsoft 365 Copilot",
+  "description": "AI-first productivity assistant for Microsoft 365",
+  "version": "1.2606.0101",
+  "url": "https://res.cdn.office.net/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_Copilot_universal_1.2606.0101_Installer.pkg",
+  "vendor_url": "https://res.cdn.office.net/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_Copilot_universal_1.2606.0101_Installer.pkg",
+  "bundleId": "com.microsoft.m365copilot",
+  "homepage": "https://www.microsoft.com/en-us/microsoft-365-copilot/download-copilot-app",
+  "fileName": "Microsoft_365_Copilot_universal_1.2606.0101_Installer.pkg",
+  "type": "pkg",
+  "sha": "99c2abda06be7a5369b2f3a9124c4735ecb4db69b1438265a872a4f1d768eabc"
+}
