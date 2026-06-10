@@ -1,13 +1,13 @@
 {
   "name": "Bria",
   "description": "Softphone application",
-  "version": "6.8.6",
-  "url": "https://counterpath.s3.amazonaws.com/downloads/Bria_6.8.6_129508.dmg",
+  "version": "6.8.7",
+  "url": "https://counterpath.s3.amazonaws.com/downloads/Bria_6.8.7_130266.dmg",
   "vendor_url": "https://counterpath.s3.amazonaws.com/downloads/Bria_6.8.6_129508.dmg",
   "bundleId": "com.CounterPath_Corporation.Bria",
   "homepage": "https://www.counterpath.com/bria-solo/",
-  "fileName": "Bria_6.8.6_129508.dmg",
-  "sha": "b11f9aaf90cc51221da514f2c1a41f7098fb6e369e4c07ed982cf2d18a44586b",
+  "fileName": "Bria_6.8.7_130266.dmg",
+  "sha": "7859ef30105bfe1a629c889c354eae1f83bcbf2f7e3f579d7fbb0aab71fd722a",
   "category": "Communication",
   "publisher": "CounterPath Corporation",
   "previous_version": "6.8.6"
