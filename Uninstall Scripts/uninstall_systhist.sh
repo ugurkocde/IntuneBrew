@@ -17,12 +17,12 @@ fi
 echo "Stopping SystHist if running..."
 pkill -f "SystHist" 2>/dev/null || true
 
-# Remove /Applications/systhist121/SystHist.app
-echo "Removing /Applications/systhist121/SystHist.app..."
-if [ -d "/Applications/systhist121/SystHist.app" ]; then
-    rm -rf "/Applications/systhist121/SystHist.app" 2>/dev/null || true
-elif [ -f "/Applications/systhist121/SystHist.app" ]; then
-    rm -f "/Applications/systhist121/SystHist.app" 2>/dev/null || true
+# Remove /Applications/systhist122/SystHist.app
+echo "Removing /Applications/systhist122/SystHist.app..."
+if [ -d "/Applications/systhist122/SystHist.app" ]; then
+    rm -rf "/Applications/systhist122/SystHist.app" 2>/dev/null || true
+elif [ -f "/Applications/systhist122/SystHist.app" ]; then
+    rm -f "/Applications/systhist122/SystHist.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/co.eclecticlight.SystHist
