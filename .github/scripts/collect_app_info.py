@@ -1353,6 +1353,7 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/unifi-identity-endpoint.json",
     "https://formulae.brew.sh/api/cask/wifiman.json",
     "https://formulae.brew.sh/api/cask/r-app.json",
+    "https://formulae.brew.sh/api/cask/microsoft-365-copilot.json",
 ]
 
 # Custom scraper scripts to run
