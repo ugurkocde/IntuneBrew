@@ -8,5 +8,7 @@
   "homepage": "https://www.microsoft.com/en-us/microsoft-365-copilot/download-copilot-app",
   "fileName": "Microsoft_365_Copilot_universal_1.2606.0101_Installer.pkg",
   "type": "pkg",
-  "sha": "99c2abda06be7a5369b2f3a9124c4735ecb4db69b1438265a872a4f1d768eabc"
+  "sha": "99c2abda06be7a5369b2f3a9124c4735ecb4db69b1438265a872a4f1d768eabc",
+  "category": "Productivity",
+  "publisher": "Microsoft Corporation"
 }
