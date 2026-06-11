@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1264-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -499,15 +499,57 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-10 02:21 UTC*
+*Last checked: 2026-06-11 01:16 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Zed | 1.5.4 | 1.5.5 |
+| Mozilla Firefox Developer Edition | 152.0b9 | 152.0b10 |
+| Lunatask | 2.1.28 | 2.1.29 |
+| Binary Ninja | 5.3.9434 | 5.3.9757 |
+| OmniOutliner | 6.1 | 6.2 |
+| Trae | 2.3.37196 | 2.3.38456 |
+| ChatGPT | 1.2026.119 | 1.2026.153 |
+| Goland | 2026.1.2 | 2026.1.3 |
+| iMazing | 3.5.4 | 3.5.5 |
+| Zed | 1.5.5 | 1.6.3 |
+| Opera | 132.0.5905.22 | 132.0.5905.37 |
+| Badgeify | 1.13.1 | 1.13.2 |
+| ExpanDrive | 2026.06.05.858 | 2026.06.10.860 |
+| HTTP Toolkit | 1.26.0 | 1.26.1 |
+| Lark | 7.68.7 | 7.69.12 |
+| Mimestream | 1.10.1 | 1.10.2 |
+| Stremio | 5.1.22 | 5.1.24 |
+| TablePlus | 7.1.0 | 7.1.8 |
+| Eclipse IDE for Eclipse Committers | 4.39 | 4.40 |
+| Eclipse IDE for Java Developers | 4.39 | 4.40 |
+| Ungoogled Chromium | 148.0.7778.215-1.1 | 149.0.7827.53-1.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
+| Eclipse IDE for C/C++ Developers | 4.39 | 4.40 |
+| Eclipse IDE for Java and DSL Developers | 4.39 | 4.40 |
+| Eclipse Installer | 4.39 | 4.40 |
+| Eclipse IDE for Java EE Developers | 4.39 | 4.40 |
+| Eclipse Modeling Tools | 4.39 | 4.40 |
+| Eclipse IDE for PHP Developers | 4.39 | 4.40 |
+| Eclipse for RCP and RAP Developers | 4.39 | 4.40 |
+| GoodSync | 12.11.2 | 12.11.3 |
+| Loom | 0.352.5 | 0.353.3 |
+| Pale Moon | 34.3.0 | 34.3.0.1 |
+| Proton Mail Bridge | 3.24.2 | 3.25.0 |
+| Tuta Mail | 349.260602.1 | 350.260608.0 |
+| Wealthfolio | 3.5.1 | 3.5.2 |
+| kiro | 0.12.318 | 0.12.333 |
+| Insta360 Studio | 5.9.8 | 5.9.9 |
+| Nota Gyazo GIF | 10.9.0 | 10.10.0 |
+| Background Music | 0.4.3 | 0.5.0 |
+| Salesforce CLI | 2.137.7 | 2.138.6 |
+| Tableau Public | 2026.1.2 | 2026.2.0 |
+| Tableau Reader | 2026.1.2 | 2026.2.0 |
+| Tableau Desktop | 2026.1.2 | 2026.2.0 |
+| Adobe Acrobat Reader | 26.001.21529 | 26.001.21662 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

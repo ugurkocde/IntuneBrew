@@ -1,13 +1,13 @@
 {
   "name": "HTTP Toolkit",
   "description": "HTTP(S) debugging proxy, analyzer, and client",
-  "version": "1.26.0",
-  "url": "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.26.0/HttpToolkit-1.26.0-arm64.dmg",
+  "version": "1.26.1",
+  "url": "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.26.1/HttpToolkit-1.26.1-arm64.dmg",
   "vendor_url": "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.25.1/HttpToolkit-1.25.1-arm64.dmg",
   "bundleId": "tech.httptoolkit.desktop",
   "homepage": "https://httptoolkit.tech/",
-  "fileName": "HttpToolkit-1.26.0-arm64.dmg",
-  "sha": "367251caf39bdfa5172a6631c530fae24f7e1c1b89bc571e97f2df24a442de5e",
+  "fileName": "HttpToolkit-1.26.1-arm64.dmg",
+  "sha": "f7c2f5360ce12e6de1df3d9dbc0888634fc9e4a3db5a7d2f80548155a82863b4",
   "category": "Developer Tools",
   "publisher": "HTTP Toolkit",
   "previous_version": "1.26.0"

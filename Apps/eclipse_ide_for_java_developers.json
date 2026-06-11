@@ -1,13 +1,13 @@
 {
   "name": "Eclipse IDE for Java Developers",
   "description": "Eclipse IDE for Java developers",
-  "version": "4.39",
-  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-java-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
+  "version": "4.40",
+  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-06/R/eclipse-java-2026-06-R-macosx-cocoa-aarch64.dmg&r=1",
   "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-java-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
   "bundleId": "epp.package.java",
   "homepage": "https://eclipse.org/",
-  "fileName": "Eclipse-IDE-for-Java-Developers-4.39.dmg",
-  "sha": "c79eb486ed23dba6613f48163c306fadc1756ebd834d740829cc06ec1919dc83",
+  "fileName": "Eclipse-IDE-for-Java-Developers-4.40.dmg",
+  "sha": "c3707b2e26ab47d799825842541aaf797b7f2fd4c09754c98926e5d78913e489",
   "category": "Developer Tools",
   "publisher": "The Eclipse Foundation",
   "previous_version": "4.39"

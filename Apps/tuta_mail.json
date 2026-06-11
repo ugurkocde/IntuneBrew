@@ -1,13 +1,13 @@
 {
   "name": "Tuta Mail",
   "description": "Email client",
-  "version": "349.260602.1",
+  "version": "350.260608.0",
   "url": "https://app.tuta.com/desktop/tutanota-desktop-mac.dmg",
   "vendor_url": "https://app.tuta.com/desktop/tutanota-desktop-mac.dmg",
   "bundleId": "de.tutao.tutanota",
   "homepage": "https://tuta.com/",
   "fileName": "tutanota-desktop-mac.dmg",
-  "sha": "bf2b13727b692425a0e7fae7b1d50037d85615e174f425699ad1226642bfc2a9",
+  "sha": "61bf07adfa6d589590e2f7219f6d19edb75b547701979653bb57939937c9766b",
   "category": "Communication",
   "publisher": "Tuta",
   "previous_version": "349.260602.1"

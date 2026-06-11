@@ -1,13 +1,13 @@
 {
   "name": "Eclipse for RCP and RAP Developers",
   "description": "Eclipse IDE for RCP and RAP developers",
-  "version": "4.39",
-  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-rcp-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
+  "version": "4.40",
+  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-06/R/eclipse-rcp-2026-06-R-macosx-cocoa-aarch64.dmg&r=1",
   "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-rcp-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
   "bundleId": "epp.package.rcp",
   "homepage": "https://eclipse.org/",
-  "fileName": "Eclipse-for-RCP-and-RAP-Developers-4.39.dmg",
-  "sha": "48f6f94a30a1f658385baae054478ad5dad0be95e0cde37a060047419569a11e",
+  "fileName": "Eclipse-for-RCP-and-RAP-Developers-4.40.dmg",
+  "sha": "382b008a81a0ea0962dc6b05eaea572dd8ec08a01b7a5fa4a108c0f12f6160a4",
   "category": "Developer Tools",
   "publisher": "The Eclipse Foundation",
   "previous_version": "4.39"
