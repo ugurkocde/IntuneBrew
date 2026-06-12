@@ -1,16 +1,37 @@
 {
   "app_name": "Microsoft Visual Studio Code",
   "app_key": "microsoft_visual_studio_code",
-  "last_updated": "2026-06-11",
-  "total_cves": 56,
+  "last_updated": "2026-06-12",
+  "total_cves": 57,
   "summary": {
     "critical": 0,
-    "high": 48,
+    "high": 49,
     "medium": 8,
     "low": 0,
     "kev_count": 0
   },
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2026-40376",
+      "published_date": "2026-06-09",
+      "last_modified_date": "2026-06-11",
+      "description": "Improper input validation in Visual Studio Code allows an unauthorized attacker to elevate privileges over a network.",
+      "base_score": 7.5,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": "1.0.0",
+      "affected_version_start_type": "including",
+      "affected_version_end": "1.123.2",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "1.123.2",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "microsoft",
+      "product": "visual_studio_code"
+    },
     {
       "cve_id": "CVE-2026-41109",
       "published_date": "2026-05-12",
