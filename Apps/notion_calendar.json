@@ -1,16 +1,16 @@
 {
   "name": "Notion Calendar",
   "description": "Calendar for professionals and teams",
-  "version": "1.134.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/notion_calendar_1.134.2.pkg",
+  "version": "1.135.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/notion_calendar_1.135.1.pkg",
   "vendor_url": "https://calendar-desktop-release.notion-static.com/Notion%20Calendar-darwin-arm64-1.132.0.zip",
   "bundleId": "com.cron.electron",
   "homepage": "https://www.notion.so/product/calendar",
-  "fileName": "notion_calendar_1.134.2.pkg",
+  "fileName": "notion_calendar_1.135.1.pkg",
   "type": "app",
-  "sha": "7239d37f2b54bb25fa6e7cad7389cff968dc9a0592f3803050da8eb52c19d891",
+  "sha": "9f38c80aa4a419f0bfbf79c0ed6f772d31004bfb95feeefd467dd4e939efea64",
   "changelog": "https://www.notion.so/help/calendar-changelog",
-  "previous_version": "1.134.2",
+  "previous_version": "1.135.1",
   "category": "Productivity",
   "publisher": "Notion Labs, Inc."
 }

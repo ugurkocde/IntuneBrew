@@ -1,13 +1,13 @@
 {
   "name": "MuseScore",
   "description": "Open-source music notation software",
-  "version": "4.7.2.260525085",
-  "url": "https://github.com/musescore/MuseScore/releases/download/v4.7.2/MuseScore-Studio-4.7.2.260525085.dmg",
+  "version": "4.7.3.260608135",
+  "url": "https://github.com/musescore/MuseScore/releases/download/v4.7.3/MuseScore-Studio-4.7.3.260608135.dmg",
   "vendor_url": "https://github.com/musescore/MuseScore/releases/download/v4.6.5/MuseScore-Studio-4.6.5.253511702.dmg",
   "bundleId": "org.musescore.MuseScore",
   "homepage": "https://musescore.org/",
-  "fileName": "MuseScore-Studio-4.7.2.260525085.dmg",
-  "sha": "87d06f8e02fddb4025f48f13391e87d8bbb4f11a870540e952bc93f390d57b0b",
+  "fileName": "MuseScore-Studio-4.7.3.260608135.dmg",
+  "sha": "1e9749f9268714f5b62e1f7c31201540f2c6d18275f0760e0600a5c01c1aea85",
   "category": "Media",
   "publisher": "MuseScore",
   "previous_version": "4.7.2.260525085"
