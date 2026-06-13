@@ -1,15 +1,15 @@
 {
   "name": "Chipmunk Log Analyzer & Viewer",
   "description": "Log analysis tool",
-  "version": "4.0.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/chipmunk_log_analyzer__viewer_4.0.0.pkg",
+  "version": "4.0.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/chipmunk_log_analyzer__viewer_4.0.1.pkg",
   "vendor_url": "https://github.com/esrlabs/chipmunk/releases/download/3.19.4/chipmunk@3.19.4-darwin-arm64-portable.tgz",
   "bundleId": "org.nicola.chipmunk",
   "homepage": "https://github.com/esrlabs/chipmunk/",
-  "fileName": "chipmunk_log_analyzer__viewer_4.0.0.pkg",
+  "fileName": "chipmunk_log_analyzer__viewer_4.0.1.pkg",
   "type": "app",
-  "sha": "777cd6b9b991d44edd4c02bfc1bc3e8a9a0246384b86a853744a9331a0eb44d7",
+  "sha": "fd66166ddf084923fb74a8e474a7fd4d9dce5f976a16286975ec1e901d82d282",
   "category": "Developer Tools",
   "publisher": "ESR Labs",
-  "previous_version": "4.0.0"
+  "previous_version": "4.0.1"
 }

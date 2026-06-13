@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1264-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -501,41 +501,39 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-12 01:18 UTC*
+*Last checked: 2026-06-13 01:16 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Rive | 0.8.5006 | 0.8.5037 |
-| Clop | 2.11.6 | 3.0.0 |
-| SABnzbd | 5.0.3 | 5.0.4 |
-| Tunnelblick | 8.0.1 | 8.0.2 |
-| Downie | 4.12.6 | 4.12.7 |
-| Android Studio | 2026.1.1.8 | 2026.1.1.9 |
-| Audacity | 3.7.7 | 3.7.8 |
-| DuckDuckGo | 1.193.0 | 1.193.1 |
-| MuseScore | 4.7.2.260525085 | 4.7.3.260608135 |
-| ExpanDrive | 2026.06.10.860 | 2026.06.11.862 |
-| Permute | 4.0.2 | 4.0.3 |
-| Simplenote | 2.26.0 | 2.26.1 |
-| Tresorit | 3.5.3430.4780 | 3.5.3467.4810 |
-| Opera GX | 132.0.5905.28 | 132.0.5905.43 |
-| Roam Research | 0.0.36 | 0.0.37 |
-| Wirecast | 16.5.2 | 16.5.3 |
-| Ableton Live Lite | 12.4.1 | 12.4.2 |
-| Ableton Live Suite | 12.4.1 | 12.4.2 |
-| Bilibili | 1.17.8 | 1.17.9 |
+| UPDF | 2.5.3 | 2.5.4 |
+| Dockside | 2.9.7 | 2.9.8 |
+| Apifox | 2.8.32 | 2.8.34 |
+| VeraCrypt | 1.26.24 | 1.26.29 |
+| QQ | 6.9.95 | 6.9.96 |
+| WeChat for Mac | 4.1.10.31 | 4.1.10.53 |
+| Google Chrome | 149.0.7827.103 | 149.0.7827.115 |
+| Spotify | 1.2.90.451 | 1.2.92.147 |
+| Brave | 1.91.171.0 | 1.91.172.0 |
+| Keeper Password Manager | 18.1.0 | 18.2.1 |
+| kitty | 0.47.2 | 0.47.3 |
+| Microsoft Edge | 149.0.4022.62 | 149.0.4022.69 |
+| Apidog | 2.8.33 | 2.8.34 |
+| Remote Desktop Manager | 2026.2.1.2 | 2026.2.1.5 |
+| Warp | 0.2026.06.03.09.49.stable | 0.2026.06.10.09.27.stable |
+| Charles | 5.1 | 5.2 |
+| ocenaudio | 3.19.2 | 3.19.3 |
+| Ungoogled Chromium | 149.0.7827.53-1.1 | 149.0.7827.102-1.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| DevKnife | 1.15.1 | 1.15.2 |
-| Granola | 7.309.0 | 7.319.1 |
-| LaunchOS | 2.1.0 | 2.1.1 |
-| OmniPlan | 4.10.2 | 4.10.3 |
-| Riverside Studio | 1.25.1 | 1.25.2 |
-| SF Symbols | 7.2 | 8.0 |
-| Twingate | 2026.120.24748 | 2026.155.25395 |
-| Chrome Remote Desktop | 147.0.7727.3 | 149.0.7827.18 |
+| ElectronMail | 5.3.6 | 5.3.7 |
+| Garmin Express | 7.28.0 | 7.29.0 |
+| massCode | 5.5.0 | 5.6.1 |
+| OpenAudible | 4.8.2 | 4.8.3 |
+| cmux | 0.64.14 | 0.64.15 |
+| NordVPN | 10.3.1 | 10.4.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
