@@ -8,5 +8,7 @@
   "homepage": "https://github.com/stonerl/Thaw/",
   "fileName": "thaw_1.2.0.pkg",
   "type": "app",
-  "sha": "049e376a016260d3728ee5bc6b048f9fb3cd46c37eb05a72d9917db657ce7ce4"
+  "sha": "049e376a016260d3728ee5bc6b048f9fb3cd46c37eb05a72d9917db657ce7ce4",
+  "category": "Utilities",
+  "publisher": "stonerl"
 }
