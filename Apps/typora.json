@@ -2,7 +2,7 @@
   "name": "Typora",
   "description": "Configurable document editor that supports Markdown",
   "version": "1.13.7",
-  "url": "https://download.typora.io/mac/Typora-1.13.7.dmg",
+  "url": "https://downloads.typora.io/mac/Typora-1.13.7.dmg",
   "vendor_url": "https://download.typora.io/mac/Typora-1.13.4.dmg",
   "bundleId": "abnerworks.Typora",
   "homepage": "https://typora.io/",

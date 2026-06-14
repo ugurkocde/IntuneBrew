@@ -10,5 +10,6 @@
   "type": "app",
   "sha": "049e376a016260d3728ee5bc6b048f9fb3cd46c37eb05a72d9917db657ce7ce4",
   "category": "Utilities",
-  "publisher": "stonerl"
+  "publisher": "stonerl",
+  "previous_version": "1.2.0"
 }
