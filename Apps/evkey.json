@@ -1,15 +1,15 @@
 {
   "name": "EVKey",
   "description": "Vietnamese keyboard",
-  "version": "3.3.9",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/evkey_3.3.9.pkg",
+  "version": "3.3.10",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/evkey_3.3.10.pkg",
   "vendor_url": "https://github.com/lamquangminh/EVKey/releases/download/Release/EVKeyMac.zip",
   "bundleId": "com.lamquangminh.evkey",
   "homepage": "https://evkeyvn.com/",
-  "fileName": "evkey_3.3.9.pkg",
+  "fileName": "evkey_3.3.10.pkg",
   "type": "app",
-  "sha": "2db6aed6df0b4f05713620444a46fb5c194407723e01e69b80228d9acc237a31",
+  "sha": "b4a948df2bad0fa92a492174e905e3b8d8ea51b993c304f74ecca73069bfb578",
   "category": "Utilities",
   "publisher": "EVKey",
-  "previous_version": "3.3.9"
+  "previous_version": "3.3.10"
 }

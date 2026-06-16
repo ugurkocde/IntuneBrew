@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1265-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -505,21 +505,42 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-15 01:16 UTC*
+*Last checked: 2026-06-16 01:17 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Syncovery | 11.15.14 | 11.15.15 |
-| Dockside | 2.9.8 | 2.9.9 |
-| Typora | 1.13.7 | 1.13.8 |
-| Stats | 3.0.1 | 3.0.3 |
-| BoltAI 2 | 2.13.3 | 2.13.4 |
-| TablePlus | 7.1.8 | 7.2.0 |
-| Zettlr | 4.5.0 | 4.6.0 |
+| Recut | 4.4.5 | 4.4.6 |
+| Dockside | 2.9.9 | 2.9.10 |
+| OmniFocus | 4.8.11 | 4.8.12 |
+| JetBrains Rider | 2026.1.2 | 2026.1.3 |
+| Trae | 2.3.38456 | 2.3.40354 |
+| Redis Insight | 3.4.2 | 3.6.0 |
+| Slack | 4.50.128 | 4.50.140 |
+| XMind | 26.03.04129-202605240138 | 26.04.01327-202606141958 |
+| Discord | 0.0.394 | 0.0.395 |
+| DuckDuckGo | 1.193.1 | 1.194.0 |
+| kitty | 0.47.3 | 0.47.4 |
+| Dataflare | 3.1.1 | 3.1.2 |
+| Epic Games Launcher | 19.2.3 | 20.1.0 |
+| DeepL | 26.4.24484530 | 26.6.14916780 |
+| MakeMKV | 1.18.3 | 1.18.4 |
+| TablePlus | 7.2.0 | 7.2.2 |
+| Deezer | 7.1.230 | 7.1.240 |
+| Franz | 5.11.0 | 6.3.1 |
+| Superkey | 1.62 | 1.65 |
 | Caffeine | 1.6.4 | 1.1.4 |
+| Loom | 0.353.3 | 0.354.0 |
+| Timing | 2026.3.1 | 2026.4 |
+| Tuta Mail | 350.260608.0 | 351.260612.0 |
+| cmux | 0.64.15 | 0.64.16 |
+| FineTune | 1.7.0 | 1.8.0 |
+| Box Drive | 2.52.306 | 2.52.312 |
+| Mullvad VPN | 2026.2 | 2026.3 |
+| ClamXAV | 3.10 | 3.10.1 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

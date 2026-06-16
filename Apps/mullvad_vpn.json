@@ -1,14 +1,14 @@
 {
   "name": "Mullvad VPN",
   "description": "VPN client",
-  "version": "2026.2",
-  "url": "https://cdn.mullvad.net/app/desktop/releases/2026.2/MullvadVPN-2026.2.pkg",
+  "version": "2026.3",
+  "url": "https://cdn.mullvad.net/app/desktop/releases/2026.3/MullvadVPN-2026.3.pkg",
   "vendor_url": "https://cdn.mullvad.net/app/desktop/releases/2026.1/MullvadVPN-2026.1.pkg",
   "bundleId": "net.mullvad.vpn",
   "homepage": "https://mullvad.net/",
-  "fileName": "MullvadVPN-2026.2.pkg",
+  "fileName": "MullvadVPN-2026.3.pkg",
   "type": "pkg",
-  "sha": "d8e292550021cafc8acb2f572d9bfab8f441a1f3f4f651a2324714cf9e6f4ffb",
+  "sha": "662dc67e42eaa915b594c0e68d3e84927f72f784d5a07c9a84e996ca358bf62c",
   "category": "Security",
   "publisher": "Mullvad VPN AB",
   "previous_version": "2026.2"
