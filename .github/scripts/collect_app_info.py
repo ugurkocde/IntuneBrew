@@ -1355,6 +1355,7 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/wifiman.json",
     "https://formulae.brew.sh/api/cask/r-app.json",
     "https://formulae.brew.sh/api/cask/microsoft-365-copilot.json",
+    "https://formulae.brew.sh/api/cask/vnc-server.json",
 ]
 
 # Custom scraper scripts to run
