@@ -17,6 +17,14 @@ fi
 echo "Stopping Thaw if running..."
 pkill -f "Thaw" 2>/dev/null || true
 
+# Kill application with bundle ID com.stonerl.Thaw if running
+echo "Stopping application with bundle ID com.stonerl.Thaw if running..."
+killall -9 "com.stonerl.Thaw" 2>/dev/null || true
+
+# Kill application with bundle ID com.stonerl.Thaw.MenuBarItemService if running
+echo "Stopping application with bundle ID com.stonerl.Thaw.MenuBarItemService if running..."
+killall -9 "com.stonerl.Thaw.MenuBarItemService" 2>/dev/null || true
+
 # Remove /Applications/Thaw.app
 echo "Removing /Applications/Thaw.app..."
 if [ -d "/Applications/Thaw.app" ]; then
