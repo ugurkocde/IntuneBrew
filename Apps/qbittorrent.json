@@ -1,13 +1,13 @@
 {
   "name": "qBittorrent",
   "description": "Peer to peer Bitorrent client",
-  "version": "5.2.1",
-  "url": "https://downloads.sourceforge.net/qbittorrent/qbittorrent-mac/qbittorrent-5.2.1/qbittorrent-5.2.1.dmg",
+  "version": "5.2.2",
+  "url": "https://downloads.sourceforge.net/qbittorrent/qbittorrent-mac/qbittorrent-5.2.2/qbittorrent-5.2.2.dmg",
   "vendor_url": "https://downloads.sourceforge.net/qbittorrent/qbittorrent-mac/qbittorrent-5.0.5/qbittorrent-5.0.5.dmg",
   "bundleId": "org.qbittorrent.qBittorrent",
   "homepage": "https://www.qbittorrent.org/",
-  "fileName": "qbittorrent-5.2.1.dmg",
-  "sha": "168ec82f892a9c558d1c2dfcc265524adafa4c6d8ec388db3122aaddbe03cb4f",
+  "fileName": "qbittorrent-5.2.2.dmg",
+  "sha": "4d6eec9ffd932cd64d35d3fa3df85932bf397457461a69cebcde6d5b737ae5e4",
   "category": "Utilities",
   "publisher": "The qBittorrent Project",
   "previous_version": "5.2.1"

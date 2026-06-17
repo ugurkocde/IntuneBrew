@@ -1,13 +1,13 @@
 {
   "name": "Android Studio",
   "description": "Tools for building Android applications",
-  "version": "2026.1.1.9",
-  "url": "https://edgedl.me.gvt1.com/android/studio/install/2026.1.1.9/android-studio-quail1-patch1-mac_arm.dmg",
+  "version": "2026.1.1.10",
+  "url": "https://edgedl.me.gvt1.com/android/studio/install/2026.1.1.10/android-studio-quail1-patch2-mac_arm.dmg",
   "vendor_url": "https://edgedl.me.gvt1.com/android/studio/install/2025.3.3.7/android-studio-panda3-patch1-mac_arm.dmg",
   "bundleId": "com.google.android.studio",
   "homepage": "https://developer.android.com/studio/",
-  "fileName": "android-studio-quail1-patch1-mac_arm.dmg",
-  "sha": "07145348f0b7bce6336eb362addd773093a84c40a4780f436beb6795a48b1270",
+  "fileName": "android-studio-quail1-patch2-mac_arm.dmg",
+  "sha": "69a13f8b7430f91919ff8b958c941d69953c13095e29fafa51e77d32417521a2",
   "changelog": "https://developer.android.com/studio/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:01:54Z",

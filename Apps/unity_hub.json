@@ -1,7 +1,7 @@
 {
   "name": "Unity Hub",
   "description": "Management tool for Unity",
-  "version": "3.18.2",
+  "version": "3.18.3",
   "url": "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup-arm64.dmg",
   "vendor_url": "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup-arm64.dmg",
   "bundleId": "com.unity3d.unityhub",
