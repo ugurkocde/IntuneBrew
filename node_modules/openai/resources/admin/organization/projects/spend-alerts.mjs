@@ -31,6 +31,25 @@ export class SpendAlerts extends APIResource {
         });
     }
     /**
+     * Retrieves a project spend alert.
+     *
+     * @example
+     * ```ts
+     * const projectSpendAlert =
+     *   await client.admin.organization.projects.spendAlerts.retrieve(
+     *     'alert_id',
+     *     { project_id: 'project_id' },
+     *   );
+     * ```
+     */
+    retrieve(alertID, params, options) {
+        const { project_id } = params;
+        return this._client.get(path `/organization/projects/${project_id}/spend_alerts/${alertID}`, {
+            ...options,
+            __security: { adminAPIKeyAuth: true },
+        });
+    }
+    /**
      * Updates a project spend alert.
      *
      * @example

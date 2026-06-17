@@ -22,6 +22,18 @@ export declare class SpendAlerts extends APIResource {
      */
     create(body: SpendAlertCreateParams, options?: RequestOptions): APIPromise<OrganizationSpendAlert>;
     /**
+     * Retrieves an organization spend alert.
+     *
+     * @example
+     * ```ts
+     * const organizationSpendAlert =
+     *   await client.admin.organization.spendAlerts.retrieve(
+     *     'alert_id',
+     *   );
+     * ```
+     */
+    retrieve(alertID: string, options?: RequestOptions): APIPromise<OrganizationSpendAlert>;
+    /**
      * Updates an organization spend alert.
      *
      * @example

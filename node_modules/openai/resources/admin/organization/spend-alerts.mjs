@@ -28,6 +28,23 @@ export class SpendAlerts extends APIResource {
         });
     }
     /**
+     * Retrieves an organization spend alert.
+     *
+     * @example
+     * ```ts
+     * const organizationSpendAlert =
+     *   await client.admin.organization.spendAlerts.retrieve(
+     *     'alert_id',
+     *   );
+     * ```
+     */
+    retrieve(alertID, options) {
+        return this._client.get(path `/organization/spend_alerts/${alertID}`, {
+            ...options,
+            __security: { adminAPIKeyAuth: true },
+        });
+    }
+    /**
      * Updates an organization spend alert.
      *
      * @example

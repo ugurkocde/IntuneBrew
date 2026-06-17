@@ -25,6 +25,19 @@ export declare class SpendAlerts extends APIResource {
      */
     create(projectID: string, body: SpendAlertCreateParams, options?: RequestOptions): APIPromise<ProjectSpendAlert>;
     /**
+     * Retrieves a project spend alert.
+     *
+     * @example
+     * ```ts
+     * const projectSpendAlert =
+     *   await client.admin.organization.projects.spendAlerts.retrieve(
+     *     'alert_id',
+     *     { project_id: 'project_id' },
+     *   );
+     * ```
+     */
+    retrieve(alertID: string, params: SpendAlertRetrieveParams, options?: RequestOptions): APIPromise<ProjectSpendAlert>;
+    /**
      * Updates a project spend alert.
      *
      * @example
@@ -177,6 +190,12 @@ export declare namespace SpendAlertCreateParams {
         subject_prefix?: string | null;
     }
 }
+export interface SpendAlertRetrieveParams {
+    /**
+     * The ID of the project.
+     */
+    project_id: string;
+}
 export interface SpendAlertUpdateParams {
     /**
      * Path param: The ID of the project to update.
@@ -236,6 +255,6 @@ export interface SpendAlertDeleteParams {
     project_id: string;
 }
 export declare namespace SpendAlerts {
-    export { type ProjectSpendAlert as ProjectSpendAlert, type ProjectSpendAlertDeleted as ProjectSpendAlertDeleted, type ProjectSpendAlertsPage as ProjectSpendAlertsPage, type SpendAlertCreateParams as SpendAlertCreateParams, type SpendAlertUpdateParams as SpendAlertUpdateParams, type SpendAlertListParams as SpendAlertListParams, type SpendAlertDeleteParams as SpendAlertDeleteParams, };
+    export { type ProjectSpendAlert as ProjectSpendAlert, type ProjectSpendAlertDeleted as ProjectSpendAlertDeleted, type ProjectSpendAlertsPage as ProjectSpendAlertsPage, type SpendAlertCreateParams as SpendAlertCreateParams, type SpendAlertRetrieveParams as SpendAlertRetrieveParams, type SpendAlertUpdateParams as SpendAlertUpdateParams, type SpendAlertListParams as SpendAlertListParams, type SpendAlertDeleteParams as SpendAlertDeleteParams, };
 }
 //# sourceMappingURL=spend-alerts.d.mts.map
