@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-06-17T01:06:02.737Z",
+  "last_full_scan": "2026-06-17T01:37:39.883Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9193,6 +9193,13 @@
         "openai_improved"
       ],
       "name": "Thaw"
+    },
+    "real_vnc_server": {
+      "last_checked": "2026-06-17T01:37:39.875Z",
+      "bundle_id": "com.realvnc.vncserver.1",
+      "status": "verified",
+      "source": "file",
+      "name": "Real VNC Server"
     }
   }
 }
