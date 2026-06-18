@@ -234,7 +234,7 @@ export interface VideoEditParams {
 }
 export declare namespace VideoEditParams {
     /**
-     * Reference to the completed video.
+     * Reference to the completed video to edit.
      */
     interface VideoReferenceInputParam {
         /**
