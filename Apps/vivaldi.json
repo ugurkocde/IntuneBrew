@@ -1,15 +1,15 @@
 {
   "name": "Vivaldi",
   "description": "Web browser with built-in email client focusing on customization and control",
-  "version": "8.0.4033.48",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/vivaldi_8.0.4033.48.pkg",
+  "version": "8.0.4033.50",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/vivaldi_8.0.4033.50.pkg",
   "vendor_url": "https://downloads.vivaldi.com/stable-auto/Vivaldi.7.9.3970.50.universal.tar.xz",
   "bundleId": "com.vivaldi.Vivaldi",
   "homepage": "https://vivaldi.com/",
-  "fileName": "vivaldi_8.0.4033.48.pkg",
+  "fileName": "vivaldi_8.0.4033.50.pkg",
   "type": "app",
-  "sha": "5f579c949b1fe89fdf7fbd3e54c53d47529c6d1965fbb4b32edbfa6224a36cc4",
-  "previous_version": "8.0.4033.48",
+  "sha": "5c480ce05fed96a829169445357d54d41d7d14936eb5b081ddb057fa9404a10d",
+  "previous_version": "8.0.4033.50",
   "category": "Browsers",
   "publisher": "Vivaldi Technologies"
 }

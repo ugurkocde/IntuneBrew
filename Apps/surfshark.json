@@ -1,13 +1,13 @@
 {
   "name": "Surfshark",
   "description": "VPN client for secure internet access and private browsing",
-  "version": "4.27.0",
-  "url": "https://downloads.surfshark.com/macOS/stable/4.27.0/4324/Surfshark.dmg",
+  "version": "4.28.0",
+  "url": "https://downloads.surfshark.com/macOS/stable/4.28.0/4370/Surfshark.dmg",
   "vendor_url": "https://downloads.surfshark.com/macOS/stable/4.27.0/4324/Surfshark.dmg",
   "bundleId": "com.surfshark.vpnclient.macos",
   "homepage": "https://surfshark.com/",
   "fileName": "Surfshark.dmg",
-  "sha": "e4c4c5d7d3f92b652f418585b8b7588034db79945502e5cd3959a74c55fd794d",
+  "sha": "62d09a025a8cf3da97f32f9fa4d9986fe2860d6d0520407e5a9c29988576b32e",
   "category": "Security",
   "publisher": "Surfshark Ltd.",
   "previous_version": "4.27.0"

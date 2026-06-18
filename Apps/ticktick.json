@@ -1,13 +1,13 @@
 {
   "name": "TickTick",
   "description": "To-do & task list manager",
-  "version": "8.0.70",
-  "url": "https://download.ticktick.app/download/mac/TickTick_8.0.70_471.dmg",
+  "version": "8.0.75",
+  "url": "https://download.ticktick.app/download/mac/TickTick_8.0.75_472.dmg",
   "vendor_url": "https://download.ticktick.app/download/mac/TickTick_8.0.40_466.dmg",
   "bundleId": "com.TickTick.task.mac",
   "homepage": "https://www.ticktick.com/home",
-  "fileName": "TickTick_8.0.70_471.dmg",
-  "sha": "bde79cb46837db5b08fc0c675f05f2e0b4384135135f9450ee30c9564a803c6e",
+  "fileName": "TickTick_8.0.75_472.dmg",
+  "sha": "9aba1aaed5b06f6016f2be52043da4f079b5658b77d7930b315c3fe5f30da638",
   "category": "Productivity",
   "publisher": "Appest Co., Ltd.",
   "previous_version": "8.0.70"
