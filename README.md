@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1266-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -508,40 +508,45 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-18 01:13 UTC*
+*Last checked: 2026-06-19 01:20 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Mozilla Firefox Developer Edition | 152.0b10 | 153.0b1 |
-| Dockside | 2.9.10 | 2.9.11 |
-| Trae | 2.3.40354 | 2.3.42912 |
-| Headlamp | 0.42.0 | 0.43.0 |
-| LibreWolf | 151.0.4 | 152.0 |
-| Google Chrome | 149.0.7827.115 | 149.0.7827.156 |
-| Microsoft Teams | 26134.1610.4759.7759 | 26149.1804.4788.5681 |
-| Company Portal | 5.2604.1 | 5.2604.2 |
-| Brave | 1.91.172.0 | 1.91.175.0 |
-| Zed | 1.6.3 | 1.7.2 |
-| Floorp browser | 12.14.2 | 12.15.0 |
-| Surfshark | 4.27.0 | 4.28.0 |
-| Tor Browser | 15.0.15 | 15.0.16 |
-| Waterfox | 6.6.14 | 6.6.15 |
+| Phoenix Slides | 1.6.1 | 1.6.2 |
+| Rive | 0.8.5068 | 0.8.5084 |
+| Clop | 3.0.0 | 3.1.0 |
+| Jamie | 5.6.38 | 5.7.3 |
+| Novabench | 6.0.3 | 6.1.0 |
+| Apifox | 2.8.34 | 2.8.35 |
+| Downie | 4.12.7 | 4.12.8 |
+| Mozilla Firefox | 152.0 | 152.0.1 |
+| AnyDesk | 9.7.0 | 9.7.1 |
+| Anki | 25.09 | 26.05 |
+| draw.io Desktop | 30.0.4 | 30.2.4 |
+| pgAdmin4 | 9.15 | 9.16 |
+| Microsoft Edge | 149.0.4022.69 | 149.0.4022.80 |
+| Insomnia | 13.0.0 | 13.0.1 |
+| Apidog | 2.8.34 | 2.8.35 |
+| AppFlowy | 0.12.2 | 0.12.3 |
+| Mullvad Browser | 15.0.14 | 15.0.16 |
+| Permute | 4.0.3 | 4.0.4 |
+| Deezer | 7.1.240 | 7.1.250 |
+| Opera GX | 132.0.5905.43 | 132.0.5905.82 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Douyin | 7.9.0 | 8.0.0 |
-| 4K YouTube to MP3 | 26.1.4 | 26.1.5 |
-| GDevelop | 5.6.271 | 5.6.272 |
-| Loom | 0.354.0 | 0.354.2 |
-| TickTick | 8.0.70 | 8.0.75 |
-| TREZOR Suite | 26.5.2 | 26.6.1 |
-| Claude Code | 2.1.169 | 2.1.170 |
-| kiro | 0.12.333 | 1.0.0 |
-| Insta360 Studio | 5.9.9 | 5.9.10 |
-| Okta Advanced Server Access | 1.107.0 | 1.108.0 |
-| ExpressVPN | 14.1.1.13156 | 14.2.0.13656 |
-| Salesforce CLI | 2.138.6 | 2.139.6 |
+| Eltima CloudMounter | 4.17 | 4.18 |
+| DeepGit | 4.4 | 26.1.003 |
+| Adobe DNG Converter | 18.3.2 | 18.4 |
+| Boom 3D | 2.2.6 | 2.3.0 |
+| Granola | 7.324.2 | 7.345.3 |
+| Tribler | 8.4.2 | 8.4.3 |
+| BlackHole 16ch | 0.6.1 | 0.7.0 |
+| BlackHole 2ch | 0.6.1 | 0.7.0 |
+| BlackHole 64ch | 0.6.1 | 0.7.0 |
+| Microsoft 365 Copilot | 1.2606.0101 | 1.2606.0801 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

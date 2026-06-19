@@ -1,13 +1,13 @@
 {
   "name": "draw.io Desktop",
   "description": "Online diagram software",
-  "version": "30.0.4",
-  "url": "https://github.com/jgraph/drawio-desktop/releases/download/v30.0.4/draw.io-arm64-30.0.4.dmg",
+  "version": "30.2.4",
+  "url": "https://github.com/jgraph/drawio-desktop/releases/download/v30.2.4/draw.io-arm64-30.2.4.dmg",
   "vendor_url": "https://github.com/jgraph/drawio-desktop/releases/download/v29.6.6/draw.io-arm64-29.6.6.dmg",
   "bundleId": "com.jgraph.drawio.desktop",
   "homepage": "https://www.diagrams.net/",
-  "fileName": "draw.io-arm64-30.0.4.dmg",
-  "sha": "7e598dcd83dbebe15969cb0e20b0a987140ab9e6fe3e69544f667bab0cf89aba",
+  "fileName": "draw.io-arm64-30.2.4.dmg",
+  "sha": "c3aad06da601d40b4a7842a8d51b414038e312b4a5c66a05a6a022952b25e423",
   "changelog": "https://github.com/jgraph/drawio-desktop/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:23:14Z",

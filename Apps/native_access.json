@@ -1,15 +1,15 @@
 {
   "name": "Native Access",
   "description": "Administration tool for Native Instruments products",
-  "version": "3.24.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/native_access_3.24.0.pkg",
+  "version": "3.25.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/native_access_3.25.0.pkg",
   "vendor_url": "https://na-update.native-instruments.com/arm64/Native-Access-arm64-mac-latest.zip",
   "bundleId": "com.native-instruments.nativeaccess2",
   "homepage": "https://www.native-instruments.com/en/specials/native-access-2/",
-  "fileName": "native_access_3.24.0.pkg",
+  "fileName": "native_access_3.25.0.pkg",
   "type": "app",
-  "sha": "ff3ca651e506b3f4b474c8bbc1a5ddd6ac7d80267ea2be853545864a1d00aca5",
+  "sha": "268536a82f0b8bfbf28132d83170f23dce248668f11e29054d0b6ef03ddbbf1c",
   "category": "Utilities",
   "publisher": "Native Instruments",
-  "previous_version": "3.24.0"
+  "previous_version": "3.25.0"
 }

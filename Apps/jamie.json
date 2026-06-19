@@ -1,13 +1,13 @@
 {
   "name": "Jamie",
   "description": "AI-powered meeting notes",
-  "version": "5.6.38",
-  "url": "https://github.com/meetjamie/releases/releases/download/app-v5.6.38/Jamie_universal.app.tar.gz",
+  "version": "5.7.3",
+  "url": "https://github.com/meetjamie/releases/releases/download/app-v5.7.3/Jamie_universal.app.tar.gz",
   "vendor_url": "https://github.com/meetjamie/releases/releases/download/app-v5.6.38/Jamie_universal.app.tar.gz",
   "bundleId": "ai.meetjamie.app",
   "homepage": "https://meetjamie.ai/",
   "fileName": "Jamie_universal.app.tar.gz",
-  "sha": "6c44acf0073ccb5d3ad6b781040279cffc3d9d8ba84cf436d2f586ca4b4aa73a",
+  "sha": "923363ea48b86bc5578a424c9c73b50df1d37420ae34343cb3072a7b144be3bb",
   "category": "Productivity",
   "publisher": "Jamie AI, Inc.",
   "previous_version": "5.6.38"
