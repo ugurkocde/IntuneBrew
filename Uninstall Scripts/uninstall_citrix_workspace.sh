@@ -59,12 +59,6 @@ launchctl unload -w /Library/LaunchAgents/com.citrix.ReceiverUninstallHelper.pli
 launchctl unload -w /Library/LaunchDaemons/com.citrix.ReceiverUninstallHelper.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.citrix.ReceiverUninstallHelper.plist 2>/dev/null || true
 
-# Unload service com.citrix.ReceiverUpdaterHelper
-echo "Unloading service com.citrix.ReceiverUpdaterHelper..."
-launchctl unload -w /Library/LaunchAgents/com.citrix.ReceiverUpdaterHelper.plist 2>/dev/null || true
-launchctl unload -w /Library/LaunchDaemons/com.citrix.ReceiverUpdaterHelper.plist 2>/dev/null || true
-launchctl unload -w ~/Library/LaunchAgents/com.citrix.ReceiverUpdaterHelper.plist 2>/dev/null || true
-
 # Unload service com.citrix.safariadapter
 echo "Unloading service com.citrix.safariadapter..."
 launchctl unload -w /Library/LaunchAgents/com.citrix.safariadapter.plist 2>/dev/null || true
