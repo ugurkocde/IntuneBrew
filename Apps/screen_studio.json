@@ -1,15 +1,15 @@
 {
   "name": "Screen Studio",
   "description": "Screen recorder and editor",
-  "version": "3.7.1-4399",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/screen_studio_3.7.1-4399.pkg",
+  "version": "3.7.2-4445",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/screen_studio_3.7.2-4445.pkg",
   "vendor_url": "https://screenstudioassets.com/releases/3.6.0-4214/Screen%20Studio-3.6.0-4214-arm64-mac.zip",
   "bundleId": "com.timpler.screenstudio",
   "homepage": "https://screen.studio/",
-  "fileName": "screen_studio_3.7.1-4399.pkg",
+  "fileName": "screen_studio_3.7.2-4445.pkg",
   "type": "app",
-  "sha": "b5575d554a8ecd2a823ee2499ef5fb09f68e00090215fd6762141ff8fe81a03d",
+  "sha": "eff62349b5b6371274970756165e33ea3853199692c6d3077468e4405c478666",
   "category": "Media",
   "publisher": "Screen Studio",
-  "previous_version": "3.7.1-4399"
+  "previous_version": "3.7.2-4445"
 }

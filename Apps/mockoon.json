@@ -1,13 +1,13 @@
 {
   "name": "Mockoon",
   "description": "Create mock APIs in seconds",
-  "version": "9.6.1",
-  "url": "https://github.com/mockoon/mockoon/releases/download/v9.6.1/mockoon.setup.9.6.1.arm64.dmg",
+  "version": "9.7.0",
+  "url": "https://github.com/mockoon/mockoon/releases/download/v9.7.0/mockoon.setup.9.7.0.arm64.dmg",
   "vendor_url": "https://github.com/mockoon/mockoon/releases/download/v9.6.1/mockoon.setup.9.6.1.arm64.dmg",
   "bundleId": "com.mockoon.app",
   "homepage": "https://mockoon.com/",
-  "fileName": "mockoon.setup.9.6.1.arm64.dmg",
-  "sha": "f27fa1aec0b3e84533e1ff9079184873007e67d30fc957f7021d406c34557235",
+  "fileName": "mockoon.setup.9.7.0.arm64.dmg",
+  "sha": "ebb05ad602b1a4df68e0b633027d4011fb335f9539b0a2ed1c1a28d9523934ac",
   "category": "Developer Tools",
   "publisher": "Mockoon",
   "previous_version": "9.6.1"
