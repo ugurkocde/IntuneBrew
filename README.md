@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1266-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -510,41 +510,24 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-20 01:11 UTC*
+*Last checked: 2026-06-21 01:13 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Recut | 4.4.6 | 4.4.7 |
-| Mozilla Firefox Developer Edition | 153.0b1 | 153.0b2 |
-| Rive | 0.8.5084 | 0.8.5086 |
-| Dockside | 2.9.11 | 2.9.12 |
-| Readest | 0.11.4 | 0.11.10 |
-| Mockoon | 9.6.1 | 9.7.0 |
-| Freelens | 1.9.0 | 1.10.0 |
-| LibreWolf | 152.0 | 152.0.1 |
-| Windows App | 11.3.5 | 11.3.6 |
-| Citrix Workspace | 26.03.10.40 | 26.03.0.49 |
-| Microsoft Office | 16.109.26053122 | 16.110.26061317 |
-| DbGate | 7.2.0 | 7.2.1 |
-| Warp | 0.2026.06.10.09.27.stable | 0.2026.06.17.09.49.stable |
-| MarginNote | 4.4.2 | 4.4.3 |
-| ocenaudio | 3.19.3 | 3.19.4 |
+| Dockside | 2.9.12 | 2.9.13 |
+| Readest | 0.11.10 | 0.11.12 |
+| Orca Slicer | 2.3.2 | 2.4.0 |
+| Freelens | 1.10.0 | 1.10.1 |
+| Flameshot | 13.3.0 | 14.0.0 |
+| Joplin | 3.6.14 | 3.6.15 |
+| AppFlowy | 0.12.3 | 0.12.4 |
+| Floorp browser | 12.15.0 | 12.15.2 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Piriform CCleaner | 2.09.187 | 2.11.194 |
-| Garmin Express | 7.29.0 | 7.29.1 |
-| GoodSync | 12.11.3 | 12.11.4 |
-| Granola | 7.345.3 | 7.345.5 |
-| OpenAudible | 4.8.3 | 4.8.5 |
-| Raspberry Pi Imager | 2.0.8 | 2.0.10 |
-| Microsoft Office BusinessPro | 16.109.26053122 | 16.110.26061317 |
-| Microsoft Excel | 16.109.26053122 | 16.110.26061317 |
-| Microsoft OneNote | 16.109.26053122 | 16.110.26061317 |
-| Microsoft PowerPoint | 16.109.26053122 | 16.110.26061317 |
-| Microsoft Word | 16.109.26053122 | 16.110.26061317 |
-| OpenToonz | 1.7.1 | 1.8.0 |
+| Claude Code | 2.1.170 | 2.1.176 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
