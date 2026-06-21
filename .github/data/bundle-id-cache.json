@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-06-20T01:29:49.809Z",
+  "last_full_scan": "2026-06-21T01:07:18.764Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
