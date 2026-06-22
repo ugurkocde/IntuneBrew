@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1266-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -511,23 +511,29 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-21 01:13 UTC*
+*Last checked: 2026-06-22 01:14 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Dockside | 2.9.12 | 2.9.13 |
-| Readest | 0.11.10 | 0.11.12 |
-| Orca Slicer | 2.3.2 | 2.4.0 |
-| Freelens | 1.10.0 | 1.10.1 |
-| Flameshot | 13.3.0 | 14.0.0 |
-| Joplin | 3.6.14 | 3.6.15 |
-| AppFlowy | 0.12.3 | 0.12.4 |
-| Floorp browser | 12.15.0 | 12.15.2 |
+| Dockside | 2.9.13 | 2.9.14 |
+| DBeaver Community Edition | 26.1.0 | 26.1.1 |
+| RustDesk | 1.4.7 | 1.4.8 |
+| Stats | 3.0.3 | 3.0.4 |
+| Clipy | 1.2.1 | 1.3.0 |
+| Little Snitch | 6.3.3 | 6.4 |
+| BoltAI 2 | 2.13.4 | 2.13.5 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Claude Code | 2.1.170 | 2.1.176 |
+| darktable | 5.4.1 | 5.6.0 |
+| Input Source Pro | 2.10.0 | 2.11.0 |
+| KiCad | 10.0.3 | 10.0.4 |
+| Screaming Frog SEO Spider | 24.0 | 24.1 |
+| WebCatalog | 76.0.1 | 76.1.1 |
+| kiro | 1.0.0 | 0.12.333 |
+| Adobe Acrobat Pro DC | 26.001.21662 | 26.001.21677 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
