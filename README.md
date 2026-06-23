@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1266-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -512,28 +512,47 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-22 01:14 UTC*
+*Last checked: 2026-06-23 01:07 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Dockside | 2.9.13 | 2.9.14 |
-| DBeaver Community Edition | 26.1.0 | 26.1.1 |
-| RustDesk | 1.4.7 | 1.4.8 |
-| Stats | 3.0.3 | 3.0.4 |
-| Clipy | 1.2.1 | 1.3.0 |
-| Little Snitch | 6.3.3 | 6.4 |
-| BoltAI 2 | 2.13.4 | 2.13.5 |
+| Mozilla Firefox Developer Edition | 153.0b2 | 153.0b3 |
+| Fathom | 3.0.1 | 3.2.0 |
+| ProcessSpy | 1.13.4 | 1.14.0 |
+| Rive | 0.8.5086 | 0.8.5094 |
+| LookAway | 2.1.2 | 2.2.0 |
+| Proton Mail | 1.12.1 | 1.13.3 |
+| Trae | 2.3.42912 | 2.3.44176 |
+| Adobe Creative Cloud | 6.9.1.1 | 6.10.0.252.3 |
+| Zoom | 7.0.5.81138 | 7.1.0.83064 |
+| Parallels Desktop | 26.3.3-57507 | 26.4.0-57513 |
+| ChatGPT | 1.2026.153 | 1.2026.160 |
+| Discord | 0.0.395 | 0.0.396 |
+| DuckDuckGo | 1.194.0 | 1.195.0 |
+| Podman Desktop | 1.27.2 | 1.28.2 |
+| Raycast | 1.104.19 | 1.104.20 |
+| Sync | 2.2.58 | 2.2.60 |
+| Little Snitch | 6.4 | 6.4.1 |
+| BoltAI 2 | 2.13.5 | 2.13.6 |
+| Tumult Hype | 4.1.20 | 4.1.21 |
+| ClickUp | 3.5.208 | 3.5.230 |
+| Ungoogled Chromium | 149.0.7827.102-1.1 | 149.0.7827.155-1.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| darktable | 5.4.1 | 5.6.0 |
-| Input Source Pro | 2.10.0 | 2.11.0 |
-| KiCad | 10.0.3 | 10.0.4 |
-| Screaming Frog SEO Spider | 24.0 | 24.1 |
-| WebCatalog | 76.0.1 | 76.1.1 |
-| kiro | 1.0.0 | 0.12.333 |
-| Adobe Acrobat Pro DC | 26.001.21662 | 26.001.21677 |
+| Loom | 0.354.2 | 0.355.2 |
+| Screaming Frog SEO Spider | 24.1 | 24.2 |
+| Shapr3D | 26.100.0.11031 | 26.110.0.11116 |
+| Tuta Mail | 351.260612.0 | 352.260618.0 |
+| Claude Code | 2.1.176 | 2.1.177 |
+| Malwarebytes for Mac | 5.23.1.3862 | 5.24.0.4031 |
+| Nextcloud | 33.0.5 | 33.0.6 |
+| Session Manager Plugin for the AWS CLI | 1.2.814.0 | 1.2.835.0 |
+| Arq | 7.45 | 7.46 |
+| Okta Verify | 9.63.0 | 9.65.2 |
+| TeamViewer | 15.78.4 | 15.79.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
