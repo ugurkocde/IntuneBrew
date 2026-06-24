@@ -1,12 +1,12 @@
 {
   "name": "AWS Client VPN",
   "description": "Managed client-based VPN service to securely access AWS resources",
-  "version": "5.3.5",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/aws_client_vpn_5.3.5.pkg",
+  "version": "5.4.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/aws_client_vpn_5.4.0.pkg",
   "vendor_url": "https://d20adtppz83p9s.cloudfront.net/OSX_ARM64/5.3.4/AWS_VPN_Client_ARM64.pkg",
   "bundleId": "com.amazon.awsvpnclient",
   "homepage": "https://aws.amazon.com/vpn/",
-  "fileName": "aws_client_vpn_5.3.5.pkg",
+  "fileName": "aws_client_vpn_5.4.0.pkg",
   "type": "pkg_in_pkg",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:02:37Z",
@@ -17,7 +17,7 @@
     "verify_status": "app_not_found",
     "bundle_id_status": "pending"
   },
-  "sha": "65126294cee03f9a5fff92bf4d0776983721b132d4c0444774dfa133bdee8415",
+  "sha": "d213c46e1b0a77905e5e7b403e5c7c175d40dcf9a2f8f198fb30eb4f216ff6c4",
   "category": "Security",
   "publisher": "Amazon Web Services, Inc.",
   "previous_version": "5.3.5"

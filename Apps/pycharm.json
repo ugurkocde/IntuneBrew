@@ -1,13 +1,13 @@
 {
   "name": "PyCharm",
   "description": "IDE for professional Python development",
-  "version": "2026.1.2",
-  "url": "https://download.jetbrains.com/python/pycharm-professional-2026.1.2-aarch64.dmg",
+  "version": "2026.1.3",
+  "url": "https://download.jetbrains.com/python/pycharm-professional-2026.1.3-aarch64.dmg",
   "vendor_url": "https://download.jetbrains.com/python/pycharm-professional-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.pycharm",
   "homepage": "https://www.jetbrains.com/pycharm/",
-  "fileName": "pycharm-professional-2026.1.2-aarch64.dmg",
-  "sha": "a1abbfc1af6ca589e7ed7134ecd1ac20dcaaa1fdccbbdb7d5902ee3c04384c37",
+  "fileName": "pycharm-professional-2026.1.3-aarch64.dmg",
+  "sha": "cbad63e00d35d9069265924967434d1b94662f8276e1e02a785f67b44cfe01d8",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
   "previous_version": "2026.1.2"

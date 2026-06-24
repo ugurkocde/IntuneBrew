@@ -1,16 +1,16 @@
 {
   "name": "Sketch",
   "description": "Digital design and prototyping platform",
-  "version": "2026.1.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sketch_2026.1.2.pkg",
+  "version": "2026.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sketch_2026.2.pkg",
   "vendor_url": "https://download.sketch.com/sketch-2026.1-228201.zip",
   "bundleId": "com.bohemiancoding.sketch3",
   "homepage": "https://www.sketch.com/",
-  "fileName": "sketch_2026.1.2.pkg",
+  "fileName": "sketch_2026.2.pkg",
   "type": "app",
-  "sha": "f39c38279dfe139dbe94079ca0f9b0c731b5ccf81de384d23cba1e23ac3713d7",
+  "sha": "bea304ffce4c6ede19757812bb611f83bab3fb7a04b1bfec0d55de9354ec191a",
   "changelog": "https://www.sketch.com/updates/",
-  "previous_version": "2026.1.2",
+  "previous_version": "2026.2",
   "category": "Design",
   "publisher": "Bohemian Coding"
 }
