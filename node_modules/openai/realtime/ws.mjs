@@ -1,6 +1,6 @@
 import * as WS from 'ws';
 import { OpenAI } from "../index.mjs";
-import { OpenAIRealtimeEmitter, buildRealtimeURL, isAzure } from "./internal-base.mjs";
+import { OpenAIRealtimeEmitter, buildRealtimeURL, getAzureRealtimeConnection, isAzure, } from "./internal-base.mjs";
 export class OpenAIRealtimeWS extends OpenAIRealtimeEmitter {
     constructor(props, client) {
         super();
@@ -9,11 +9,10 @@ export class OpenAIRealtimeWS extends OpenAIRealtimeEmitter {
         if (hasProvider && !props.__resolvedApiKey) {
             throw new Error([
                 'Cannot open Realtime WebSocket with a function-based apiKey.',
-                'Use the .create() method so that the key is resolved before connecting:',
-                'await OpenAIRealtimeWS.create(client, { model })',
+                'Use the .create() method so that the key is resolved before connecting.',
             ].join('\n'));
         }
-        this.url = buildRealtimeURL(client, props.model);
+        this.url = buildRealtimeURL(client, props);
         this.socket = new WS.WebSocket(this.url, {
             ...props.options,
             headers: {
@@ -50,17 +49,14 @@ export class OpenAIRealtimeWS extends OpenAIRealtimeEmitter {
         return new OpenAIRealtimeWS({ ...props, __resolvedApiKey: await client._callApiKey() }, client);
     }
     static async azure(client, props = {}) {
+        const connection = getAzureRealtimeConnection(client, props);
         const isApiKeyProvider = await client._callApiKey();
         const apiKey = client.apiKey;
         if (!apiKey) {
             throw new Error('Azure OpenAI Realtime requires an API key');
         }
-        const deploymentName = props.deploymentName ?? client.deploymentName;
-        if (!deploymentName) {
-            throw new Error('No deployment name provided');
-        }
         return new OpenAIRealtimeWS({
-            model: deploymentName,
+            ...connection,
             options: {
                 ...props.options,
                 headers: {

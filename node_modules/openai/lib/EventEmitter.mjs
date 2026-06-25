@@ -55,8 +55,18 @@ export class EventEmitter {
      */
     emitted(event) {
         return new Promise((resolve, reject) => {
-            // TODO: handle errors
-            this.once(event, resolve);
+            const onError = (error) => {
+                this.off(event, onEvent);
+                reject(error);
+            };
+            const onEvent = (value) => {
+                if (event !== 'error')
+                    this.off('error', onError);
+                resolve(value);
+            };
+            if (event !== 'error')
+                this.once('error', onError);
+            this.once(event, onEvent);
         });
     }
     _emit(event, ...args) {

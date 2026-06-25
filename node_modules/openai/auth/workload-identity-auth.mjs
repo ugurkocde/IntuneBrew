@@ -1,5 +1,5 @@
 import * as Shims from "../internal/shims.mjs";
-import { APIError, OAuthError } from "../core/error.mjs";
+import { APIError, OAuthError, OpenAIError } from "../core/error.mjs";
 const SUBJECT_TOKEN_TYPES = {
     jwt: 'urn:ietf:params:oauth:token-type:jwt',
     id: 'urn:ietf:params:oauth:token-type:id_token',
@@ -65,14 +65,22 @@ export class WorkloadIdentityAuth {
             }
             throw APIError.generate(response.status, body, `Token exchange failed with status ${response.status}`, response.headers);
         }
-        const tokenResponse = (await response.json());
-        const expiresIn = tokenResponse.expires_in || 3600;
+        const tokenResponse = await response.json();
+        if (typeof tokenResponse !== 'object' ||
+            tokenResponse === null ||
+            !('access_token' in tokenResponse) ||
+            typeof tokenResponse.access_token !== 'string' ||
+            tokenResponse.access_token.trim().length === 0) {
+            throw new OpenAIError("Token exchange response missing 'access_token' field");
+        }
+        const accessToken = tokenResponse.access_token;
+        const expiresIn = tokenResponse.expires_in ?? 3600;
         const expiresAt = Date.now() + expiresIn * 1000;
         this.cachedToken = {
-            token: tokenResponse.access_token,
+            token: accessToken,
             expiresAt,
         };
-        return tokenResponse.access_token;
+        return accessToken;
     }
     isTokenExpired(cachedToken) {
         return Date.now() >= cachedToken.expiresAt;

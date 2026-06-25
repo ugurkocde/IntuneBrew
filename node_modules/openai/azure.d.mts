@@ -4,7 +4,9 @@ import { FinalRequestOptions } from "./internal/request-options.mjs";
 import { OpenAI } from "./client.mjs";
 import type { ClientOptions } from "./client.mjs";
 /** API Client for interfacing with the Azure OpenAI API. */
-export interface AzureClientOptions extends ClientOptions {
+export interface AzureClientOptions extends Omit<ClientOptions, 'provider'> {
+    /** AzureOpenAI does not support third-party provider configuration. */
+    provider?: never;
     /**
      * Defaults to process.env['OPENAI_API_VERSION'].
      */

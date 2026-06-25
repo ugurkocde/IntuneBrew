@@ -1,6 +1,6 @@
 import { parseDef } from "../parseDef.mjs";
 import { primitiveMappings } from "./union.mjs";
-export function parseNullableDef(def, refs) {
+export function parseNullableDef(def, refs, forceResolution) {
     if (['ZodString', 'ZodNumber', 'ZodBigInt', 'ZodBoolean', 'ZodNull'].includes(def.innerType._def.typeName) &&
         (!def.innerType._def.checks || !def.innerType._def.checks.length)) {
         if (refs.target === 'openApi3' || refs.nullableStrategy === 'property') {
@@ -17,7 +17,7 @@ export function parseNullableDef(def, refs) {
         const base = parseDef(def.innerType._def, {
             ...refs,
             currentPath: [...refs.currentPath],
-        });
+        }, forceResolution);
         if (base && '$ref' in base)
             return { allOf: [base], nullable: true };
         return base && { ...base, nullable: true };

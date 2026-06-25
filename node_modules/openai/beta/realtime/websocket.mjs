@@ -1,6 +1,6 @@
 import { OpenAI } from "../../index.mjs";
 import { OpenAIError } from "../../error.mjs";
-import { OpenAIRealtimeEmitter, buildRealtimeURL, isAzure } from "./internal-base.mjs";
+import { OpenAIRealtimeEmitter, buildRealtimeURL, isAzure, } from "./internal-base.mjs";
 import { isRunningInBrowser } from "../../internal/detect-platform.mjs";
 export class OpenAIRealtimeWebSocket extends OpenAIRealtimeEmitter {
     constructor(props, client) {
@@ -16,11 +16,10 @@ export class OpenAIRealtimeWebSocket extends OpenAIRealtimeEmitter {
         if (hasProvider && !props?.__resolvedApiKey) {
             throw new Error([
                 'Cannot open Realtime WebSocket with a function-based apiKey.',
-                'Use the .create() method so that the key is resolved before connecting:',
-                'await OpenAIRealtimeWebSocket.create(client, { model })',
+                'Use the .create() method so that the key is resolved before connecting.',
             ].join('\n'));
         }
-        this.url = buildRealtimeURL(client, props.model);
+        this.url = buildRealtimeURL(client, props);
         props.onURL?.(this.url);
         // @ts-ignore
         this.socket = new WebSocket(this.url.toString(), [

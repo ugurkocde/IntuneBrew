@@ -2,12 +2,12 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.parsePipelineDef = void 0;
 const parseDef_1 = require("../parseDef.js");
-const parsePipelineDef = (def, refs) => {
+const parsePipelineDef = (def, refs, forceResolution) => {
     if (refs.pipeStrategy === 'input') {
-        return (0, parseDef_1.parseDef)(def.in._def, refs);
+        return (0, parseDef_1.parseDef)(def.in._def, refs, forceResolution);
     }
     else if (refs.pipeStrategy === 'output') {
-        return (0, parseDef_1.parseDef)(def.out._def, refs);
+        return (0, parseDef_1.parseDef)(def.out._def, refs, forceResolution);
     }
     const a = (0, parseDef_1.parseDef)(def.in._def, {
         ...refs,
