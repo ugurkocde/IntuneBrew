@@ -1,15 +1,15 @@
 {
   "name": "Stellarium",
   "description": "Tool to render realistic skies in real time on the screen",
-  "version": "26.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/stellarium_26.1.pkg",
+  "version": "26.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/stellarium_26.2.pkg",
   "vendor_url": "https://github.com/Stellarium/stellarium/releases/download/v26.1/Stellarium-26.1-qt6-macOS.zip",
   "bundleId": "org.stellarium.Stellarium",
   "homepage": "https://stellarium.org/",
-  "fileName": "stellarium_26.1.pkg",
+  "fileName": "stellarium_26.2.pkg",
   "type": "app",
-  "sha": "054d5848615fc1c4e1f19f95520178f0b5fd8edd0d3d246658dd7cd8df64a393",
+  "sha": "64778f8dee3626a0049c613594a7aa78159c12c2217a9a59ecb184f3693fc168",
   "category": "Utilities",
   "publisher": "The Stellarium Project",
-  "previous_version": "26.1"
+  "previous_version": "26.2"
 }
