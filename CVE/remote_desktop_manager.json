@@ -1,7 +1,7 @@
 {
   "app_name": "Remote Desktop Manager",
   "app_key": "remote_desktop_manager",
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-26",
   "total_cves": 52,
   "summary": {
     "critical": 6,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2026-2590",
       "published_date": "2026-03-03",
-      "last_modified_date": "2026-05-10",
+      "last_modified_date": "2026-06-17",
       "description": "Improper\n enforcement of the Disable password saving in vaults setting in the \nconnection entry component in Devolutions Remote Desktop Manager 2025.3.30 and earlier allows an authenticated user to persist credentials in vault entries, \npotentially exposing sensitive information to other users, by creating \nor editing certain connection types while password saving is disabled.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2024-6057",
       "published_date": "2024-06-17",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Improper authentication in the vault password feature in Devolutions Remote Desktop Manager 2024.1.31.0 and earlier allows an attacker that has compromised an access to an RDM instance to bypass the vault master password via the offline mode feature.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2023-6593",
       "published_date": "2023-12-12",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "\n\nClient side permission bypass in Devolutions Remote Desktop Manager 2023.3.4.0 and earlier on iOS allows an attacker that has access to the application to execute entries in a SQL data source without restriction.\n\n\n",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2023-5765",
       "published_date": "2023-11-01",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Improper access control in the password analyzer feature in Devolutions Remote Desktop Manager 2023.2.33 and earlier on Windows allows an attacker to bypass permissions via data source switching.\n",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2023-5766",
       "published_date": "2023-11-01",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "\n\nA remote code execution vulnerability in Remote Desktop Manager 2023.2.33 and earlier on Windows allows an attacker to remotely execute code from another windows user session on the same host via a specially crafted TCP packet.\n\n\n",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2023-4373",
       "published_date": "2023-08-21",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "\nInadequate validation of permissions when employing remote tools and macros within Devolutions Remote Desktop Manager versions 2023.2.19 and earlier permits a user to initiate a connection without proper execution rights via the remote tools feature.\n\n",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2026-12161",
       "published_date": "2026-06-16",
-      "last_modified_date": "2026-06-16",
+      "last_modified_date": "2026-06-17",
       "description": "Improper input validation in the SSH Elevate Shell feature in \nDevolutions Remote Desktop Manager 2026.2.7 allows an authenticated user\n with permission to create or modify a shared SSH entry to execute \narbitrary commands on a remote SSH host using stored elevation \ncredentials via a crafted alternate username and user interaction with \nthe Elevate Shell action.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2025-5334",
       "published_date": "2025-05-29",
-      "last_modified_date": "2025-07-02",
+      "last_modified_date": "2026-06-17",
       "description": "Exposure of private personal information to an unauthorized actor in the user vaults component of Devolutions Remote Desktop Manager\nallows an authenticated user to gain unauthorized access to private personal information. \n\n\n\nUnder specific circumstances, entries may be unintentionally moved from user vaults to shared vaults when edited by their owners, making them accessible to other users.\n\n\n\n\nThis issue affects the following versions :\n\n  *  Remote Desktop Manager Windows 2025.1.34.0 and earlier\n  *  \nRemote Desktop Manager macOS 2025.1.16.3 and earlier\n\n\n\n  *  \nRemote Desktop Manager Android 2025.1.3.3 and earlier\n  *  \nRemote Desktop Manager iOS 2025.1.6.0 and earlier",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2024-11621",
       "published_date": "2025-02-10",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Missing certificate validation in Devolutions Remote Desktop Manager on macOS, iOS, Android, Linux allows an attacker to intercept and modify encrypted communications via a man-in-the-middle attack.\n\nVersions affected are :\nRemote Desktop Manager macOS 2024.3.9.0 and earlier\nRemote Desktop Manager Linux 2024.3.2.5 and earlier\nRemote Desktop Manager Android  2024.3.3.7 and earlier\nRemote Desktop Manager iOS 2024.3.3.0 and earlier\n\nRemote Desktop Manager Powershell 2024.3.6.0 and earlier",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2025-1193",
       "published_date": "2025-02-10",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Improper host validation in the certificate validation component in Devolutions Remote Desktop Manager on 2024.3.19 and earlier on Windows allows an attacker to intercept and modify encrypted communications via a man-in-the-middle attack \nby presenting a certificate for a different host.",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2024-12149",
       "published_date": "2024-12-04",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Incorrect permission assignment in temporary access requests component in Devolutions Remote Desktop Manager 2024.3.19.0 and earlier on Windows allows an authenticated user that request temporary permissions on an entry to obtain more privileges than requested.",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -245,7 +245,7 @@
     {
       "cve_id": "CVE-2024-6492",
       "published_date": "2024-07-16",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Exposure of Sensitive Information in edge browser session proxy feature in Devolutions Remote Desktop Manager 2024.2.14.0 and earlier on Windows allows an attacker to intercept proxy credentials via a specially crafted website.",
       "base_score": 7.4,
       "severity": "HIGH",
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2024-6354",
       "published_date": "2024-06-26",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Improper access control in PAM dashboard in Devolutions Remote Desktop Manager 2024.2.11 and earlier on Windows allows an authenticated user to bypass the execute permission via the use of the PAM dashboard.",
       "base_score": 7.2,
       "severity": "HIGH",
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2023-6288",
       "published_date": "2023-12-06",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Code injection in Remote Desktop Manager 2023.3.9.3 and earlier on macOS allows an attacker to execute code via the DYLIB_INSERT_LIBRARIES environment variable.\n\n\n\n\n\n\n\n\n\n",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -308,7 +308,7 @@
     {
       "cve_id": "CVE-2022-26964",
       "published_date": "2022-12-26",
-      "last_modified_date": "2025-04-14",
+      "last_modified_date": "2026-06-17",
       "description": "Weak password derivation for export in Devolutions Remote Desktop Manager before 2022.1 allows information disclosure via a password brute-force attack. An error caused base64 to be decoded.",
       "base_score": 7.4,
       "severity": "HIGH",
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2022-4287",
       "published_date": "2022-12-21",
-      "last_modified_date": "2025-04-14",
+      "last_modified_date": "2026-06-17",
       "description": "Authentication bypass in local application lock feature in Devolutions Remote Desktop Manager\u00a0 2022.3.26 and earlier on Windows allows malicious user to access the application.\n\n",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -350,7 +350,7 @@
     {
       "cve_id": "CVE-2022-3641",
       "published_date": "2022-12-12",
-      "last_modified_date": "2025-04-23",
+      "last_modified_date": "2026-06-17",
       "description": "Elevation of privilege in the Azure SQL Data Source in Devolutions Remote Desktop Manager 2022.3.13 to 2022.3.24 allows an authenticated user to spoof a privileged account.\n",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -371,7 +371,7 @@
     {
       "cve_id": "CVE-2022-3780",
       "published_date": "2022-11-01",
-      "last_modified_date": "2025-05-05",
+      "last_modified_date": "2026-06-17",
       "description": "Database connections on deleted users could stay active on MySQL data sources in Remote Desktop Manager 2022.3.7 and below which allow deleted users to access unauthorized data. \n\nThis issue affects : \nRemote Desktop Manager 2022.3.7 and prior versions.\n\n",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -392,7 +392,7 @@
     {
       "cve_id": "CVE-2022-3182",
       "published_date": "2022-09-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Improper Access Control vulnerability in the Duo SMS two-factor of Devolutions Remote Desktop Manager 2022.2.14 and earlier allows attackers to bypass the application lock. This issue affects: Devolutions Remote Desktop Manager version 2022.2.14 and prior versions.",
       "base_score": 7.0,
       "severity": "HIGH",
@@ -413,7 +413,7 @@
     {
       "cve_id": "CVE-2022-33995",
       "published_date": "2022-06-21",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "A path traversal issue in entry attachments in Devolutions Remote Desktop Manager before 2022.2 allows attackers to create or overwrite files in an arbitrary location.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -434,7 +434,7 @@
     {
       "cve_id": "CVE-2021-42098",
       "published_date": "2021-10-18",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An incomplete permission check on entries in Devolutions Remote Desktop Manager before 2021.2.16 allows attackers to bypass permissions via batch custom PowerShell.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -455,7 +455,7 @@
     {
       "cve_id": "CVE-2026-12162",
       "published_date": "2026-06-16",
-      "last_modified_date": "2026-06-16",
+      "last_modified_date": "2026-06-17",
       "description": "Improper host validation in the social login autofill feature in \nDevolutions Remote Desktop Manager 2026.2.8 allows an attacker to \ndisclose stored social login credentials via a crafted web entry \npointing to a provider lookalike domain.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -476,7 +476,7 @@
     {
       "cve_id": "CVE-2025-13683",
       "published_date": "2025-11-28",
-      "last_modified_date": "2025-12-18",
+      "last_modified_date": "2026-06-17",
       "description": "Exposure of credentials in unintended requests in Devolutions Server, Remote Desktop Manager on Windows.This issue affects Devolutions Server: through 2025.3.8.0; Remote Desktop Manager: through 2025.3.23.0.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -497,7 +497,7 @@
     {
       "cve_id": "CVE-2025-2499",
       "published_date": "2025-03-26",
-      "last_modified_date": "2025-07-02",
+      "last_modified_date": "2026-06-17",
       "description": "Client side access control bypass in the permission component in \nDevolutions Remote Desktop Manager on Windows. An authenticated user can exploit this flaw to bypass certain permission restrictions\u2014specifically View Password, Edit Asset, and Edit Permissions by performing specific actions. \n\nThis issue affects Remote Desktop Manager versions from 2025.1.24 through 2025.1.25, and all versions up to 2024.3.29.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -518,7 +518,7 @@
     {
       "cve_id": "CVE-2025-2562",
       "published_date": "2025-03-26",
-      "last_modified_date": "2025-07-02",
+      "last_modified_date": "2026-06-17",
       "description": "Insufficient logging in the autotyping feature in Devolutions Remote Desktop Manager on Windows allows an authenticated user to use a stored password without generating a corresponding log event, via the use of the autotyping functionality.\n\n\n\n\n\n\n\nThis issue affects Remote Desktop Manager versions from 2025.1.24 through 2025.1.25, and all versions up to 2024.3.29.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -539,7 +539,7 @@
     {
       "cve_id": "CVE-2025-2600",
       "published_date": "2025-03-26",
-      "last_modified_date": "2025-08-26",
+      "last_modified_date": "2026-06-17",
       "description": "Improper authorization in the variable component in Devolutions Remote Desktop Manager on Windows allows an authenticated user to use the ELEVATED_PASSWORD variable even though not allowed by the \"Allow password in variable policy\". \n\n\n\n\n\nThis issue affects Remote Desktop Manager versions from 2025.1.24 through 2025.1.25, and all versions up to 2024.3.29.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -560,7 +560,7 @@
     {
       "cve_id": "CVE-2025-1635",
       "published_date": "2025-03-13",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Exposure of sensitive information in hub data source export feature in Devolutions Remote Desktop Manager 2024.3.29 and earlier on Windows allows a user exporting a hub data source to include his authenticated session in the export due to faulty business logic.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -581,7 +581,7 @@
     {
       "cve_id": "CVE-2025-1636",
       "published_date": "2025-03-13",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Exposure of sensitive information in My Personal Credentials password history component in Devolutions Remote Desktop Manager 2024.3.29 and earlier on Windows allows an authenticated user to inadvertently leak the My Personal Credentials in a shared vault via the clear history feature due to faulty business logic.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -602,7 +602,7 @@
     {
       "cve_id": "CVE-2024-11670",
       "published_date": "2024-11-25",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Incorrect authorization in the permission validation component of Devolutions Remote Desktop Manager 2024.2.21 and earlier on Windows allows a malicious authenticated user to bypass the \"View Password\" permission via specific actions.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -623,7 +623,7 @@
     {
       "cve_id": "CVE-2024-11671",
       "published_date": "2024-11-25",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Improper authentication in SQL data source MFA validation in Devolutions Remote Desktop Manager 2024.3.17 and earlier on Windows allows an authenticated user to bypass the MFA validation via data source switching.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -644,7 +644,7 @@
     {
       "cve_id": "CVE-2024-11672",
       "published_date": "2024-11-25",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Incorrect authorization in the add permission component in Devolutions Remote Desktop Manager 2024.2.21 and earlier on Windows allows an authenticated malicious user to bypass the \"Add\" permission via the import in vault feature.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -665,7 +665,7 @@
     {
       "cve_id": "CVE-2024-7421",
       "published_date": "2024-09-25",
-      "last_modified_date": "2025-03-17",
+      "last_modified_date": "2026-06-17",
       "description": "An information exposure in Devolutions Remote Desktop Manager 2024.2.20.0 and earlier on Windows allows local attackers with access to system logs to obtain session credentials via passwords included in command-line arguments when launching WinSCP sessions",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -686,7 +686,7 @@
     {
       "cve_id": "CVE-2024-6055",
       "published_date": "2024-06-17",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Improper removal of sensitive information in data source export feature in Devolutions Remote Desktop Manager 2024.1.32.0 and earlier on Windows allows an attacker that obtains the exported settings to recover powershell credentials configured on the data source via stealing the configuration file.",
       "base_score": 4.7,
       "severity": "MEDIUM",
@@ -707,7 +707,7 @@
     {
       "cve_id": "CVE-2024-3545",
       "published_date": "2024-04-09",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "Improper permission handling in the vault offline cache feature in Devolutions Remote Desktop Manager 2024.1.20 and earlier on windows and Devolutions Server 2024.1.8 and earlier allows an attacker to access sensitive informations contained in the offline cache file by gaining access to a computer where the software is installed even though the offline mode is disabled.\n\n",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -728,7 +728,7 @@
     {
       "cve_id": "CVE-2024-2403",
       "published_date": "2024-03-13",
-      "last_modified_date": "2025-08-25",
+      "last_modified_date": "2026-06-17",
       "description": "\nImproper cleanup in temporary file handling component in Devolutions Remote Desktop Manager 2024.1.12 and\nearlier on Windows allows an attacker that compromised a user endpoint, under specific circumstances, to access sensitive information via residual files in the temporary directory.\n\n",
       "base_score": 5.9,
       "severity": "MEDIUM",
@@ -749,7 +749,7 @@
     {
       "cve_id": "CVE-2024-0589",
       "published_date": "2024-01-31",
-      "last_modified_date": "2025-06-09",
+      "last_modified_date": "2026-06-17",
       "description": "Cross-site scripting (XSS) vulnerability in the entry overview tab in Devolutions Remote Desktop Manager 2023.3.36 and earlier on Windows allows an attacker with access to a data source to inject a malicious script via a specially crafted input in an entry.\n\n\n\n\n\n",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -770,7 +770,7 @@
     {
       "cve_id": "CVE-2023-7047",
       "published_date": "2023-12-21",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "\nInadequate validation of permissions when employing remote tools and \nmacros via the context menu within Devolutions Remote Desktop Manager versions 2023.3.31 and \nearlier permits a user to initiate a connection without proper execution\n rights via the remote tools feature. This affects only SQL data sources.\n",
       "base_score": 4.4,
       "severity": "MEDIUM",
@@ -791,7 +791,7 @@
     {
       "cve_id": "CVE-2023-4417",
       "published_date": "2023-08-21",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Improper access controls in the entry duplication component in Devolutions Remote Desktop Manager 2023.2.19 and earlier versions on Windows allows an authenticated user, under specific circumstances, to inadvertently share their personal vault entry with shared vaults via an incorrect vault in the duplication write process.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -812,7 +812,7 @@
     {
       "cve_id": "CVE-2023-2282",
       "published_date": "2023-04-25",
-      "last_modified_date": "2025-02-04",
+      "last_modified_date": "2026-06-17",
       "description": "Improper access control in the Web Login listener in Devolutions Remote Desktop Manager 2023.1.22 and earlier on Windows allows an authenticated user to bypass administrator-enforced Web Login restrictions and gain access to entries via an unexpected vector.\n",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -833,7 +833,7 @@
     {
       "cve_id": "CVE-2023-1939",
       "published_date": "2023-04-11",
-      "last_modified_date": "2025-02-10",
+      "last_modified_date": "2026-06-17",
       "description": "No access control for the OTP key\u00a0\n\n\u00a0on OTP entries\n\n in Devolutions Remote Desktop Manager Windows 2022.3.33.0 and prior versions and Remote Desktop Manager Linux 2022.3.2.0 and prior versions allows non admin users to see OTP keys via the user interface.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -854,7 +854,7 @@
     {
       "cve_id": "CVE-2023-1980",
       "published_date": "2023-04-11",
-      "last_modified_date": "2025-02-10",
+      "last_modified_date": "2026-06-17",
       "description": "Two factor \n\nauthentication\n\nbypass on login in Devolutions Remote Desktop Manager 2022.3.35 and earlier allow user to cancel the two factor authentication via the application user interface and open entries.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -875,7 +875,7 @@
     {
       "cve_id": "CVE-2023-1202",
       "published_date": "2023-04-02",
-      "last_modified_date": "2025-02-20",
+      "last_modified_date": "2026-06-17",
       "description": "Permission bypass when importing or synchronizing entries\u00a0in User vault\n\n in Devolutions Remote Desktop Manager 2023.1.9 and prior versions allows users with restricted rights to bypass entry permission via id collision.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -896,7 +896,7 @@
     {
       "cve_id": "CVE-2023-1574",
       "published_date": "2023-04-02",
-      "last_modified_date": "2025-02-25",
+      "last_modified_date": "2026-06-17",
       "description": "Information disclosure in the user creation feature of a MSSQL data source in Devolutions Remote Desktop Manager 2023.1.9 and below on Windows allows an attacker with access to the user interface to obtain sensitive information via the error message dialog that displays the password in clear text.\n\n\n\n\n\n\n\n\n\n\n\n",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -917,7 +917,7 @@
     {
       "cve_id": "CVE-2023-1203",
       "published_date": "2023-03-10",
-      "last_modified_date": "2025-03-06",
+      "last_modified_date": "2026-06-17",
       "description": "Improper removal of sensitive data in the entry edit feature of Hub Business submodule in Devolutions Remote Desktop Manager PowerShell Module 2022.3.1.5 and earlier allows an authenticated user to access sensitive data on entries that were edited using the affected submodule.\n\n\n",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -938,7 +938,7 @@
     {
       "cve_id": "CVE-2022-3781",
       "published_date": "2022-11-01",
-      "last_modified_date": "2025-05-05",
+      "last_modified_date": "2026-06-17",
       "description": "Dashlane password and Keepass Server password in My Account Settings\u00a0 are not encrypted in the database in Devolutions Remote Desktop Manager 2022.2.26 and prior versions and Devolutions Server 2022.3.1 and prior versions which allows database users to read the data.\n\nThis issue affects : \nRemote Desktop Manager 2022.2.26 and prior versions.\n\nDevolutions Server 2022.3.1 and prior versions.\n\n\n",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -959,7 +959,7 @@
     {
       "cve_id": "CVE-2022-2221",
       "published_date": "2022-06-27",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Information Exposure vulnerability in My Account Settings of Devolutions Remote Desktop Manager before 2022.1.8 allows authenticated users to access credentials of other users. This issue affects: Devolutions Remote Desktop Manager versions prior to 2022.1.8.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -980,7 +980,7 @@
     {
       "cve_id": "CVE-2022-1342",
       "published_date": "2022-06-15",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "A lack of password masking in Devolutions Remote Desktop Manager allows physically proximate attackers to observe sensitive data. A caching issue can cause sensitive fields to sometimes stay revealed when closing and reopening a panel, which could lead to involuntarily disclosing sensitive information. This issue affects: Devolutions Remote Desktop Manager 2022.1.24 version and prior versions.",
       "base_score": 4.6,
       "severity": "MEDIUM",
@@ -1001,7 +1001,7 @@
     {
       "cve_id": "CVE-2021-28047",
       "published_date": "2021-04-01",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Cross-Site Scripting (XSS) in Administrative Reports in Devolutions Remote Desktop Manager before 2021.1 allows remote authenticated users to inject arbitrary web script or HTML via multiple input fields.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -1022,7 +1022,7 @@
     {
       "cve_id": "CVE-2021-23922",
       "published_date": "2021-04-01",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in Devolutions Remote Desktop Manager before 2020.2.12. There is a cross-site scripting (XSS) vulnerability in webviews.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -1043,7 +1043,7 @@
     {
       "cve_id": "CVE-2026-0747",
       "published_date": "2026-01-08",
-      "last_modified_date": "2026-01-22",
+      "last_modified_date": "2026-06-17",
       "description": "Exposure of sensitive information in the TeamViewer entry dashboard component in Devolutions Remote Desktop Manager 2025.3.24.0 through 2025.3.28.0 on Windows allows an external observer to view a password on screen via a defective masking feature, for example during physical observation or screen sharing.",
       "base_score": 3.3,
       "severity": "LOW",
@@ -1064,7 +1064,7 @@
     {
       "cve_id": "CVE-2025-2528",
       "published_date": "2025-03-26",
-      "last_modified_date": "2025-07-02",
+      "last_modified_date": "2026-06-17",
       "description": "Improper authorization in application password policy in Devolutions Remote Desktop Manager on Windows allows an authenticated user to \nuse a configuration different from the one mandated by the system administrators.\n\n\n\n\n\nThis issue affects Remote Desktop Manager versions from 2025.1.24 through 2025.1.25, and all versions up to 2024.3.29.",
       "base_score": 3.6,
       "severity": "LOW",
@@ -1085,7 +1085,7 @@
     {
       "cve_id": "CVE-2023-0463",
       "published_date": "2023-01-26",
-      "last_modified_date": "2025-04-02",
+      "last_modified_date": "2026-06-17",
       "description": "The force offline MFA prompt setting is not respected when switching to offline mode in Devolutions Remote Desktop Manager 2022.3.29 to 2022.3.30 allows a user to save sensitive data on disk.\n\n",
       "base_score": 3.3,
       "severity": "LOW",

@@ -1,7 +1,7 @@
 {
   "app_name": "Bruno",
   "app_key": "bruno",
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-26",
   "total_cves": 4,
   "summary": {
     "critical": 1,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2026-34841",
       "published_date": "2026-04-06",
-      "last_modified_date": "2026-04-22",
+      "last_modified_date": "2026-06-17",
       "description": "Bruno is an open source IDE for exploring and testing APIs. Prior to 3.2.1, Bruno was affected by a supply chain attack involving compromised versions of the axios npm package, which introduced a hidden dependency deploying a cross-platform Remote Access Trojan (RAT). Users of @usebruno/cli who ran npm install between 00:21 UTC and ~03:30 UTC on March 31, 2026 may have been impacted. Upgrade to 3.2.1",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2025-30210",
       "published_date": "2025-04-01",
-      "last_modified_date": "2025-09-23",
+      "last_modified_date": "2026-06-17",
       "description": "Bruno is an open source IDE for exploring and testing APIs. Prior to 1.39.1, the custom tool-tip components which internally use react-tooltip were setting the content (in this case the Environment name) as raw HTML which then gets injected into DOM on hover. This, combined with loose Content Security Policy restrictions, allowed any valid HTML text containing inline script to get executed on hovering over the respective Environment's name. This vulnerability's attack surface is limited strictly to scenarios where users import collections from untrusted or malicious sources. The exploit requires deliberate action from the user\u2014specifically, downloading and opening an externally provided malicious Bruno or Postman collection export and the user hovers on the environment name. This vulnerability is fixed in 1.39.1.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2025-30354",
       "published_date": "2025-04-01",
-      "last_modified_date": "2025-09-22",
+      "last_modified_date": "2026-06-17",
       "description": "Bruno is an open source IDE for exploring and testing APIs. A bug in the assertion runtime caused assert expressions to run in Developer Mode, even if Safe Mode was selected. The bug resulted in the sandbox settings to be ignored for the particular case where a single request is run/sent. This vulnerability's attack surface is limited strictly to scenarios where users import collections from untrusted or malicious sources. The exploit requires deliberate action from the user\u2014specifically, downloading and opening an externally provided malicious Bruno collection. The vulnerability is fixed in 1.39.1.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2024-48463",
       "published_date": "2024-11-04",
-      "last_modified_date": "2025-09-23",
+      "last_modified_date": "2026-06-17",
       "description": "Bruno before 1.29.1 uses Electron shell.openExternal without validation (of http or https) for opening windows within the Markdown docs viewer.",
       "base_score": 6.5,
       "severity": "MEDIUM",

@@ -1,7 +1,7 @@
 {
   "app_name": "Onedrive",
   "app_key": "onedrive",
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-26",
   "total_cves": 14,
   "summary": {
     "critical": 1,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2020-0654",
       "published_date": "2020-01-14",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "A security feature bypass vulnerability exists in Microsoft OneDrive App for Android.This could allow an attacker to bypass the passcode or fingerprint requirements of the App.The security update addresses the vulnerability by correcting the way Microsoft OneDrive App for Android handles sharing links., aka 'Microsoft OneDrive for Android Security Feature Bypass Vulnerability'.",
       "base_score": 9.1,
       "severity": "CRITICAL",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2023-24930",
       "published_date": "2023-03-14",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Microsoft OneDrive for MacOS Elevation of Privilege Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2020-16851",
       "published_date": "2020-09-11",
-      "last_modified_date": "2026-02-23",
+      "last_modified_date": "2026-06-17",
       "description": "<p>An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links. An attacker who successfully exploited this vulnerability could overwrite a targeted file with an elevated status.</p>\n<p>To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and delete a targeted file with an elevated status.</p>\n<p>The update addresses this vulnerability by correcting where the OneDrive updater performs file writes while running with elevation.</p>",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2020-16852",
       "published_date": "2020-09-11",
-      "last_modified_date": "2026-02-23",
+      "last_modified_date": "2026-06-17",
       "description": "<p>An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links. An attacker who successfully exploited this vulnerability could overwrite a targeted file with an elevated status.</p>\n<p>To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and delete a targeted file with an elevated status.</p>\n<p>The update addresses this vulnerability by correcting where the OneDrive updater performs file writes while running with elevation.</p>",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2020-16853",
       "published_date": "2020-09-11",
-      "last_modified_date": "2026-02-23",
+      "last_modified_date": "2026-06-17",
       "description": "<p>An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links. An attacker who successfully exploited this vulnerability could overwrite a targeted file with an elevated status.</p>\n<p>To exploit this vulnerability, an attacker would first have to log on to the system. An attacker could then run a specially crafted application that could exploit the vulnerability and delete a targeted file with an elevated status.</p>\n<p>The update addresses this vulnerability by correcting where the OneDrive updater performs file writes while running with elevation.</p>",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2020-1465",
       "published_date": "2020-07-14",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An elevation of privilege vulnerability exists in Microsoft OneDrive that allows file deletion in arbitrary locations.To exploit the vulnerability, an attacker would first have to log on to the system, aka 'Microsoft OneDrive Elevation of Privilege Vulnerability'.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2018-0592",
       "published_date": "2018-06-26",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Untrusted search path vulnerability in Microsoft OneDrive allows an attacker to gain privileges via a Trojan horse DLL in an unspecified directory.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2018-0593",
       "published_date": "2018-06-26",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Untrusted search path vulnerability in the installer of Microsoft OneDrive allows an attacker to gain privileges via a Trojan horse DLL in an unspecified directory.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2025-60722",
       "published_date": "2025-11-11",
-      "last_modified_date": "2025-11-17",
+      "last_modified_date": "2026-06-17",
       "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in OneDrive for Android allows an authorized attacker to elevate privileges over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2023-24882",
       "published_date": "2023-03-14",
-      "last_modified_date": "2025-02-28",
+      "last_modified_date": "2026-06-17",
       "description": "Microsoft OneDrive for Android Information Disclosure Vulnerability",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2023-24890",
       "published_date": "2023-03-14",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Microsoft OneDrive for iOS Security Feature Bypass Vulnerability",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -245,7 +245,7 @@
     {
       "cve_id": "CVE-2023-24923",
       "published_date": "2023-03-14",
-      "last_modified_date": "2025-02-28",
+      "last_modified_date": "2026-06-17",
       "description": "Microsoft OneDrive for Android Information Disclosure Vulnerability",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2022-23255",
       "published_date": "2022-02-09",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Microsoft OneDrive for Android Security Feature Bypass Vulnerability",
       "base_score": 5.9,
       "severity": "MEDIUM",
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2020-0935",
       "published_date": "2020-04-15",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An elevation of privilege vulnerability exists when the OneDrive for Windows Desktop application improperly handles symbolic links, aka 'OneDrive for Windows Elevation of Privilege Vulnerability'.",
       "base_score": 5.5,
       "severity": "MEDIUM",

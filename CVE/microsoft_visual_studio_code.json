@@ -1,11 +1,11 @@
 {
   "app_name": "Microsoft Visual Studio Code",
   "app_key": "microsoft_visual_studio_code",
-  "last_updated": "2026-06-17",
-  "total_cves": 62,
+  "last_updated": "2026-06-26",
+  "total_cves": 63,
   "summary": {
     "critical": 1,
-    "high": 51,
+    "high": 52,
     "medium": 10,
     "low": 0,
     "kev_count": 0
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2026-47281",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-15",
+      "last_modified_date": "2026-06-17",
       "description": "Improper input validation in Visual Studio Code allows an unauthorized attacker to elevate privileges over a network.",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2026-40376",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-11",
+      "last_modified_date": "2026-06-17",
       "description": "Improper input validation in Visual Studio Code allows an unauthorized attacker to elevate privileges over a network.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -54,9 +54,30 @@
       "product": "visual_studio_code"
     },
     {
+      "cve_id": "CVE-2026-45482",
+      "published_date": "2026-06-09",
+      "last_modified_date": "2026-06-23",
+      "description": "Initialization of a resource with an insecure default in GitHub Copilot and Visual Studio Code allows an unauthorized attacker to disclose information over a network.",
+      "base_score": 8.4,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "1.123.2",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "1.123.2",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "microsoft",
+      "product": "visual_studio_code"
+    },
+    {
       "cve_id": "CVE-2026-47292",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-15",
+      "last_modified_date": "2026-06-17",
       "description": "Inclusion of functionality from untrusted control sphere in Visual Studio Code allows an unauthorized attacker to elevate privileges locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -77,7 +98,7 @@
     {
       "cve_id": "CVE-2026-48569",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-12",
+      "last_modified_date": "2026-06-17",
       "description": "Improper input validation in Visual Studio Code allows an unauthorized attacker to bypass a security feature locally.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -98,7 +119,7 @@
     {
       "cve_id": "CVE-2026-41109",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-05-15",
+      "last_modified_date": "2026-06-17",
       "description": "Improper neutralization of special elements in output used by a downstream component ('injection') in GitHub Copilot and Visual Studio allows an unauthorized attacker to bypass a security feature over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -119,7 +140,7 @@
     {
       "cve_id": "CVE-2026-41611",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-05-15",
+      "last_modified_date": "2026-06-17",
       "description": "Improper neutralization of script-related html tags in a web page (basic xss) in Visual Studio Code allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -140,7 +161,7 @@
     {
       "cve_id": "CVE-2026-41613",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-05-15",
+      "last_modified_date": "2026-06-17",
       "description": "Session fixation in Visual Studio Code allows an unauthorized attacker to elevate privileges over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -161,7 +182,7 @@
     {
       "cve_id": "CVE-2026-21518",
       "published_date": "2026-02-10",
-      "last_modified_date": "2026-02-23",
+      "last_modified_date": "2026-06-17",
       "description": "Improper neutralization of special elements used in a command ('command injection') in GitHub Copilot and Visual Studio Code allows an unauthorized attacker to bypass a security feature over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -182,7 +203,7 @@
     {
       "cve_id": "CVE-2026-21523",
       "published_date": "2026-02-10",
-      "last_modified_date": "2026-02-11",
+      "last_modified_date": "2026-06-17",
       "description": "Time-of-check time-of-use (toctou) race condition in GitHub Copilot and Visual Studio allows an authorized attacker to execute code over a network.",
       "base_score": 8.0,
       "severity": "HIGH",
@@ -203,7 +224,7 @@
     {
       "cve_id": "CVE-2025-64660",
       "published_date": "2025-11-20",
-      "last_modified_date": "2025-11-26",
+      "last_modified_date": "2026-06-17",
       "description": "Improper access control in GitHub Copilot and Visual Studio Code allows an authorized attacker to execute code over a network.",
       "base_score": 8.0,
       "severity": "HIGH",
@@ -224,7 +245,7 @@
     {
       "cve_id": "CVE-2025-55319",
       "published_date": "2025-09-12",
-      "last_modified_date": "2026-02-20",
+      "last_modified_date": "2026-06-17",
       "description": "Ai command injection in Agentic AI and Visual Studio Code allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -245,7 +266,7 @@
     {
       "cve_id": "CVE-2025-21264",
       "published_date": "2025-05-13",
-      "last_modified_date": "2025-05-19",
+      "last_modified_date": "2026-06-17",
       "description": "Files or directories accessible to external parties in Visual Studio Code allows an unauthorized attacker to bypass a security feature locally.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -266,7 +287,7 @@
     {
       "cve_id": "CVE-2025-26631",
       "published_date": "2025-03-11",
-      "last_modified_date": "2025-07-03",
+      "last_modified_date": "2026-06-17",
       "description": "Uncontrolled search path element in Visual Studio Code allows an authorized attacker to elevate privileges locally.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -287,7 +308,7 @@
     {
       "cve_id": "CVE-2025-24039",
       "published_date": "2025-02-11",
-      "last_modified_date": "2025-07-02",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Elevation of Privilege Vulnerability",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -308,7 +329,7 @@
     {
       "cve_id": "CVE-2025-24042",
       "published_date": "2025-02-11",
-      "last_modified_date": "2025-07-02",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code JS Debug Extension Elevation of Privilege Vulnerability",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -329,7 +350,7 @@
     {
       "cve_id": "CVE-2024-43488",
       "published_date": "2024-10-08",
-      "last_modified_date": "2024-10-21",
+      "last_modified_date": "2026-06-17",
       "description": "Missing authentication for critical function in Visual Studio Code extension for Arduino allows an unauthenticated attacker to perform remote code execution through network attack vector.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -350,7 +371,7 @@
     {
       "cve_id": "CVE-2024-43601",
       "published_date": "2024-10-08",
-      "last_modified_date": "2024-11-08",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code for Linux Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -371,7 +392,7 @@
     {
       "cve_id": "CVE-2024-26165",
       "published_date": "2024-03-12",
-      "last_modified_date": "2024-12-27",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Elevation of Privilege Vulnerability",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -392,7 +413,7 @@
     {
       "cve_id": "CVE-2023-36742",
       "published_date": "2023-09-12",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -413,7 +434,7 @@
     {
       "cve_id": "CVE-2023-24893",
       "published_date": "2023-04-11",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -434,7 +455,7 @@
     {
       "cve_id": "CVE-2023-21779",
       "published_date": "2023-01-10",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -455,7 +476,7 @@
     {
       "cve_id": "CVE-2022-41034",
       "published_date": "2022-10-11",
-      "last_modified_date": "2025-01-02",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -476,7 +497,7 @@
     {
       "cve_id": "CVE-2022-41042",
       "published_date": "2022-10-11",
-      "last_modified_date": "2025-01-02",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Information Disclosure Vulnerability",
       "base_score": 7.4,
       "severity": "HIGH",
@@ -497,7 +518,7 @@
     {
       "cve_id": "CVE-2022-38020",
       "published_date": "2022-09-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Elevation of Privilege Vulnerability",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -518,7 +539,7 @@
     {
       "cve_id": "CVE-2022-30129",
       "published_date": "2022-05-10",
-      "last_modified_date": "2025-01-02",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -539,7 +560,7 @@
     {
       "cve_id": "CVE-2022-26921",
       "published_date": "2022-04-15",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Elevation of Privilege Vulnerability",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -560,7 +581,7 @@
     {
       "cve_id": "CVE-2022-21991",
       "published_date": "2022-02-09",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Development Extension Remote Code Execution Vulnerability",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -581,7 +602,7 @@
     {
       "cve_id": "CVE-2021-43891",
       "published_date": "2021-12-15",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -602,7 +623,7 @@
     {
       "cve_id": "CVE-2021-42322",
       "published_date": "2021-11-10",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Elevation of Privilege Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -623,7 +644,7 @@
     {
       "cve_id": "CVE-2021-34479",
       "published_date": "2021-07-14",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Microsoft Visual Studio Spoofing Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -644,7 +665,7 @@
     {
       "cve_id": "CVE-2021-34528",
       "published_date": "2021-07-14",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -665,7 +686,7 @@
     {
       "cve_id": "CVE-2021-34529",
       "published_date": "2021-07-14",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -686,7 +707,7 @@
     {
       "cve_id": "CVE-2021-31211",
       "published_date": "2021-05-11",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -707,7 +728,7 @@
     {
       "cve_id": "CVE-2021-31214",
       "published_date": "2021-05-11",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -728,7 +749,7 @@
     {
       "cve_id": "CVE-2021-28457",
       "published_date": "2021-04-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -749,7 +770,7 @@
     {
       "cve_id": "CVE-2021-28469",
       "published_date": "2021-04-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -770,7 +791,7 @@
     {
       "cve_id": "CVE-2021-28471",
       "published_date": "2021-04-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Remote Development Extension for Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -791,7 +812,7 @@
     {
       "cve_id": "CVE-2021-28473",
       "published_date": "2021-04-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -812,7 +833,7 @@
     {
       "cve_id": "CVE-2021-28475",
       "published_date": "2021-04-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -833,7 +854,7 @@
     {
       "cve_id": "CVE-2021-28477",
       "published_date": "2021-04-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.0,
       "severity": "HIGH",
@@ -854,7 +875,7 @@
     {
       "cve_id": "CVE-2021-27060",
       "published_date": "2021-03-11",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -875,7 +896,7 @@
     {
       "cve_id": "CVE-2021-1639",
       "published_date": "2021-02-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Code Execution Vulnerability",
       "base_score": 7.0,
       "severity": "HIGH",
@@ -896,7 +917,7 @@
     {
       "cve_id": "CVE-2020-17148",
       "published_date": "2020-12-10",
-      "last_modified_date": "2025-08-28",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Remote Development Extension Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -917,7 +938,7 @@
     {
       "cve_id": "CVE-2020-17104",
       "published_date": "2020-11-11",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code JSHint Extension Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -938,7 +959,7 @@
     {
       "cve_id": "CVE-2020-16977",
       "published_date": "2020-10-16",
-      "last_modified_date": "2026-02-23",
+      "last_modified_date": "2026-06-17",
       "description": "<p>A remote code execution vulnerability exists in Visual Studio Code when the Python extension loads a Jupyter notebook file. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the current user. If the current user is logged on with administrative user rights, an attacker could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.</p>\n<p>To exploit this vulnerability, an attacker would need to convince a target to open a specially crafted file in Visual Studio Code with the Python extension installed.</p>\n<p>The update addresses the vulnerability by modifying the way Visual Studio Code Python extension renders notebook content.</p>",
       "base_score": 7.0,
       "severity": "HIGH",
@@ -959,7 +980,7 @@
     {
       "cve_id": "CVE-2020-17023",
       "published_date": "2020-10-16",
-      "last_modified_date": "2026-02-23",
+      "last_modified_date": "2026-06-17",
       "description": "<p>A remote code execution vulnerability exists in Visual Studio Code when a user is tricked into opening a malicious 'package.json' file. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the current user. If the current user is logged on with administrative user rights, an attacker could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.</p>\n<p>To exploit this vulnerability, an attacker would need to convince a target to clone a repository and open it in Visual Studio Code. Attacker-specified code would execute when the target opens the malicious 'package.json' file.</p>\n<p>The update address the vulnerability by modifying the way Visual Studio Code handles JSON files.</p>",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -980,7 +1001,7 @@
     {
       "cve_id": "CVE-2020-16881",
       "published_date": "2020-09-11",
-      "last_modified_date": "2026-02-23",
+      "last_modified_date": "2026-06-17",
       "description": "<p>A remote code execution vulnerability exists in Visual Studio Code when a user is tricked into opening a malicious 'package.json' file. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the current user. If the current user is logged on with administrative user rights, an attacker could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.</p>\n<p>To exploit this vulnerability, an attacker would need to convince a target to clone a repository and open it in Visual Studio Code. Attacker-specified code would execute when the target opens the malicious 'package.json' file.</p>\n<p>The update address the vulnerability by modifying the way Visual Studio Code handles JSON files.</p>",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1001,7 +1022,7 @@
     {
       "cve_id": "CVE-2020-0604",
       "published_date": "2020-08-17",
-      "last_modified_date": "2026-02-23",
+      "last_modified_date": "2026-06-17",
       "description": "A remote code execution vulnerability exists in Visual Studio Code when it process environment variables after opening a project. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the current user. If the current user is logged on with administrative user rights, an attacker could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights.\nTo exploit this vulnerability, an attacker would need to convince a target to clone a repository and open it in Visual Studio Code. Attacker-specified code would execute when the target opened the integrated terminal.\nThe update address the vulnerability by modifying the way Visual Studio Code handles environment variables.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1022,7 +1043,7 @@
     {
       "cve_id": "CVE-2020-1416",
       "published_date": "2020-07-14",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An elevation of privilege vulnerability exists in Visual Studio and Visual Studio Code when they load software dependencies, aka 'Visual Studio and Visual Studio Code Elevation of Privilege Vulnerability'.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1043,7 +1064,7 @@
     {
       "cve_id": "CVE-2019-1414",
       "published_date": "2020-01-24",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An elevation of privilege vulnerability exists in Visual Studio Code when it exposes a debug listener to users of a local computer, aka 'Visual Studio Code Elevation of Privilege Vulnerability'.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1064,7 +1085,7 @@
     {
       "cve_id": "CVE-2019-0728",
       "published_date": "2019-03-05",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "A remote code execution vulnerability exists in Visual Studio Code when it process environment variables after opening a project, aka 'Visual Studio Code Remote Code Execution Vulnerability'.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1085,7 +1106,7 @@
     {
       "cve_id": "CVE-2018-0597",
       "published_date": "2018-06-26",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Untrusted search path vulnerability in the installer of Visual Studio Code allows an attacker to gain privileges via a Trojan horse DLL in an unspecified directory.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1106,7 +1127,7 @@
     {
       "cve_id": "CVE-2026-47284",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-15",
+      "last_modified_date": "2026-06-17",
       "description": "Exposure of sensitive information to an unauthorized actor in Visual Studio Code allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -1127,7 +1148,7 @@
     {
       "cve_id": "CVE-2026-47287",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-15",
+      "last_modified_date": "2026-06-17",
       "description": "Relative path traversal in Visual Studio Code allows an unauthorized attacker to perform tampering over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -1148,7 +1169,7 @@
     {
       "cve_id": "CVE-2026-41610",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-05-15",
+      "last_modified_date": "2026-06-17",
       "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Visual Studio Code allows an unauthorized attacker to bypass a security feature locally.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -1169,7 +1190,7 @@
     {
       "cve_id": "CVE-2025-62453",
       "published_date": "2025-11-11",
-      "last_modified_date": "2025-11-14",
+      "last_modified_date": "2026-06-17",
       "description": "Improper validation of generative ai output in GitHub Copilot and Visual Studio Code allows an authorized attacker to bypass a security feature locally.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -1190,7 +1211,7 @@
     {
       "cve_id": "CVE-2025-32726",
       "published_date": "2025-04-12",
-      "last_modified_date": "2025-07-08",
+      "last_modified_date": "2026-06-17",
       "description": "Improper access control in Visual Studio Code allows an authorized attacker to elevate privileges locally.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1211,7 +1232,7 @@
     {
       "cve_id": "CVE-2023-33144",
       "published_date": "2023-06-14",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Spoofing Vulnerability",
       "base_score": 6.6,
       "severity": "MEDIUM",
@@ -1232,7 +1253,7 @@
     {
       "cve_id": "CVE-2023-29338",
       "published_date": "2023-05-09",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Spoofing Vulnerability",
       "base_score": 6.6,
       "severity": "MEDIUM",
@@ -1253,7 +1274,7 @@
     {
       "cve_id": "CVE-2022-24526",
       "published_date": "2022-03-09",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Spoofing Vulnerability",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1274,7 +1295,7 @@
     {
       "cve_id": "CVE-2021-43908",
       "published_date": "2021-12-15",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Spoofing Vulnerability",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -1295,7 +1316,7 @@
     {
       "cve_id": "CVE-2021-26437",
       "published_date": "2021-09-15",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Visual Studio Code Spoofing Vulnerability",
       "base_score": 5.5,
       "severity": "MEDIUM",

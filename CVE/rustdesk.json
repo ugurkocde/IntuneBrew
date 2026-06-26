@@ -1,11 +1,11 @@
 {
   "app_name": "Rustdesk",
   "app_key": "rustdesk",
-  "last_updated": "2026-06-17",
-  "total_cves": 11,
+  "last_updated": "2026-06-26",
+  "total_cves": 10,
   "summary": {
     "critical": 4,
-    "high": 6,
+    "high": 5,
     "medium": 1,
     "low": 0,
     "kev_count": 0
@@ -14,8 +14,8 @@
     {
       "cve_id": "CVE-2026-30783",
       "published_date": "2026-03-05",
-      "last_modified_date": "2026-03-25",
-      "description": "A vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android, WebClient (Client signaling, API sync loop, config management modules) allows Privilege Abuse. This vulnerability is associated with program files src/rendezvous_mediator.Rs, src/hbbs_http/sync.Rs and program routines API sync loop, api-server config handling.\n\nThis issue affects RustDesk Client: through 1.4.5.",
+      "last_modified_date": "2026-06-22",
+      "description": "A vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android, WebClient (Client signaling, API sync loop, config management modules) allows Privilege Abuse.\n\n This vulnerability is associated with program files src/rendezvous_mediator.Rs, src/hbbs_http/sync.Rs and program routines API sync loop, api-server config handling.\n\n\n\nThis issue affects RustDesk Client: through 1.4.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
       "cvss_version": "3.1",
@@ -35,8 +35,8 @@
     {
       "cve_id": "CVE-2026-30789",
       "published_date": "2026-03-05",
-      "last_modified_date": "2026-03-25",
-      "description": "Authentication Bypass by Capture-replay, Use of Password Hash With Insufficient Computational Effort vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android (Client login, peer authentication modules) allows Reusing Session IDs (aka Session Replay). This vulnerability is associated with program files src/client.Rs and program routines hash_password(), login proof construction.\n\nThis issue affects RustDesk Client: through 1.4.5.",
+      "last_modified_date": "2026-06-22",
+      "description": "Use of Password Hash With Insufficient Computational Effort, Improper Restriction of Excessive Authentication Attempts vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android (Client login, peer authentication modules) allows Password Brute Forcing.\n\nThe authentication proof is SHA256(SHA256(password + salt) + challenge), where both the salt and the challenge are generated entirely by the server with no client-side nonce, and the hash uses no slow key-derivation function. A rogue or on-path API/relay server (see CVE-2026-30794 / CVE-2026-30797) can issue a chosen salt and challenge, capture the resulting proof, and recover the password offline. The capture-replay claim (CWE-294) is withdrawn: the challenge is regenerated per connection (challenge = Config::get_auto_password(6)), so a captured proof is not replayable against the legitimate server. The 1.4.7 OTP brute-force limiter and the existing LOGIN_FAILURES counter constrain only ONLINE attempts and do not address offline recovery.\n\nThis vulnerability is associated with program files src/client.rs and program routines handle_hash(), handle_login_from_ui() (login proof construction).\n\nThis issue affects RustDesk Client: through 1.4.8.",
       "base_score": 9.8,
       "severity": "CRITICAL",
       "cvss_version": "3.1",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2026-30793",
       "published_date": "2026-03-05",
-      "last_modified_date": "2026-03-25",
+      "last_modified_date": "2026-06-17",
       "description": "Cross-Site Request Forgery (CSRF) vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android (Flutter URI scheme handler, FFI bridge modules) allows Privilege Escalation. This vulnerability is associated with program files flutter/lib/common.Dart, src/flutter_ffi.Rs and program routines URI handler for rustdesk://password/, bind.MainSetPermanentPassword().\n\nThis issue affects RustDesk Client: through 1.4.5.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2024-25140",
       "published_date": "2024-02-06",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "A default installation of RustDesk 1.2.3 on Windows places a WDKTestCert certificate under Trusted Root Certification Authorities with Enhanced Key Usage of Code Signing (1.3.6.1.5.5.7.3.3), valid from 2023 until 2033. This is potentially unwanted, e.g., because there is no public documentation of security measures for the private key, and arbitrary software could be signed if the private key were to be compromised. NOTE: the vendor's position is \"we do not have EV cert, so we use test cert as a workaround.\" Insertion into Trusted Root Certification Authorities was the originally intended behavior, and the UI ensured that the certificate installation step (checked by default) was visible to the user before proceeding with the product installation.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2026-30791",
       "published_date": "2026-03-05",
-      "last_modified_date": "2026-03-18",
+      "last_modified_date": "2026-06-17",
       "description": "Use of a Broken or Risky Cryptographic Algorithm vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android, WebClient (Config import, URI scheme handler, CLI --config modules) allows Retrieve Embedded Sensitive Data. This vulnerability is associated with program files flutter/lib/common.Dart, hbb_common/src/config.Rs and program routines parseRustdeskUri(), importConfig().\n\nThis issue affects RustDesk Client: through 1.4.5.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -119,29 +119,8 @@
     {
       "cve_id": "CVE-2026-30792",
       "published_date": "2026-03-05",
-      "last_modified_date": "2026-03-25",
-      "description": "A vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android, WebClient (Strategy sync, HTTP API client, config options engine modules) allows Application API Message Manipulation via Man-in-the-Middle. This vulnerability is associated with program files src/hbbs_http/sync.Rs, hbb_common/src/config.Rs and program routines Strategy merge loop in sync.Rs, Config::set_options().\n\nThis issue affects RustDesk Client: through 1.4.5.",
-      "base_score": 8.1,
-      "severity": "HIGH",
-      "cvss_version": "3.1",
-      "cvss_vector": "CVSS:3.1/AV:N/AC:H/PR:N/UI:N/S:U/C:H/I:H/A:H",
-      "affected_version_start": null,
-      "affected_version_start_type": null,
-      "affected_version_end": "1.4.5",
-      "affected_version_end_type": "including",
-      "fixed_version": null,
-      "is_kev": false,
-      "kev_date_added": null,
-      "kev_due_date": null,
-      "kev_ransomware_use": null,
-      "vendor": "rustdesk",
-      "product": "rustdesk"
-    },
-    {
-      "cve_id": "CVE-2026-30794",
-      "published_date": "2026-03-05",
-      "last_modified_date": "2026-03-25",
-      "description": "Improper Certificate Validation vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android (HTTP API client, TLS transport modules) allows Adversary in the Middle (AiTM). This vulnerability is associated with program files src/hbbs_http/http_client.Rs and program routines TLS retry with danger_accept_invalid_certs(true).\n\nThis issue affects RustDesk Client: through 1.4.5.",
+      "last_modified_date": "2026-06-22",
+      "description": "A vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android, WebClient (Strategy sync, HTTP API client, config options engine modules) allows Application API Message Manipulation via Man-in-the-Middle.\n\n This vulnerability is associated with program files src/hbbs_http/sync.Rs, hbb_common/src/config.Rs and program routines Strategy merge loop in sync.Rs, Config::set_options().\n\n\n\nThis issue affects RustDesk Client: through 1.4.8.",
       "base_score": 8.1,
       "severity": "HIGH",
       "cvss_version": "3.1",
@@ -161,7 +140,7 @@
     {
       "cve_id": "CVE-2026-30795",
       "published_date": "2026-03-05",
-      "last_modified_date": "2026-03-25",
+      "last_modified_date": "2026-06-17",
       "description": "Cleartext Transmission of Sensitive Information vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android (Heartbeat sync loop modules) allows Sniffing Attacks. This vulnerability is associated with program files src/hbbs_http/sync.Rs and program routines Heartbeat JSON payload construction (preset-address-book-password).\n\nThis issue affects RustDesk Client: through 1.4.5.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -182,7 +161,7 @@
     {
       "cve_id": "CVE-2026-30797",
       "published_date": "2026-03-05",
-      "last_modified_date": "2026-03-25",
+      "last_modified_date": "2026-06-17",
       "description": "Missing Authorization vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android (Flutter URI scheme handler, config import modules) allows Application API Message Manipulation via Man-in-the-Middle. This vulnerability is associated with program files flutter/lib/common.Dart and program routines importConfig() via URI handler.\n\nThis issue affects RustDesk Client: through 1.4.5.",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -203,8 +182,8 @@
     {
       "cve_id": "CVE-2026-30798",
       "published_date": "2026-03-05",
-      "last_modified_date": "2026-03-10",
-      "description": "Insufficient Verification of Data Authenticity, Improper Handling of Exceptional Conditions vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android (Heartbeat sync loop, strategy processing modules) allows Protocol Manipulation. This vulnerability is associated with program files src/hbbs_http/sync.Rs and program routines stop-service handler in heartbeat loop.\n\nThis issue affects RustDesk Client: through 1.4.5.",
+      "last_modified_date": "2026-06-22",
+      "description": "Insufficient Verification of Data Authenticity, Improper Handling of Exceptional Conditions vulnerability in rustdesk-client RustDesk Client rustdesk-client on Windows, MacOS, Linux, iOS, Android (Heartbeat sync loop, strategy processing modules) allows Protocol Manipulation.\n\n This vulnerability is associated with program files src/hbbs_http/sync.Rs and program routines stop-service handler in heartbeat loop.\n\n\n\nThis issue affects RustDesk Client: through 1.4.8.",
       "base_score": 7.5,
       "severity": "HIGH",
       "cvss_version": "3.1",
@@ -224,7 +203,7 @@
     {
       "cve_id": "CVE-2026-30785",
       "published_date": "2026-03-05",
-      "last_modified_date": "2026-03-25",
+      "last_modified_date": "2026-06-17",
       "description": "Improperly Controlled Modification of Object Prototype Attributes ('Prototype Pollution'), Use of Password Hash With Insufficient Computational Effort vulnerability in rustdesk-client RustDesk Client rustdesk, hbb_common on Windows, MacOS, Linux (Password security module, config encryption, machine UID modules) allows Retrieve Embedded Sensitive Data. This vulnerability is associated with program files hbb_common/src/password_security.Rs, hbb_common/src/config.Rs, hbb_common/src/lib.Rs (get_uuid), machine-uid/src/lib.Rs and program routines symmetric_crypt(), encrypt_str_or_original(), decrypt_str_or_original(), get_uuid(), get_machine_id().\n\nThis issue affects RustDesk Client: through 1.4.5.",
       "base_score": 5.5,
       "severity": "MEDIUM",

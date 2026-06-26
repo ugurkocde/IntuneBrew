@@ -1,7 +1,7 @@
 {
   "app_name": "Cryptomator",
   "app_key": "cryptomator",
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-26",
   "total_cves": 10,
   "summary": {
     "critical": 0,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2026-32303",
       "published_date": "2026-03-20",
-      "last_modified_date": "2026-03-26",
+      "last_modified_date": "2026-06-17",
       "description": "Cryptomator encrypts data being stored on cloud infrastructure. Prior to version 1.19.1, an integrity check vulnerability allows an attacker to tamper with the vault configuration file leading to a man-in-the-middle vulnerability in Hub key loading mechanism. Before this fix, the client trusted endpoints from the vault config without host authenticity checks, which could allow token exfiltration by mixing a legitimate auth endpoint with a malicious API endpoint. Impacted are users unlocking Hub-backed vaults with affected client versions in environments where an attacker can alter the vault.cryptomator file. This issue has been patched in version 1.19.1.",
       "base_score": 7.6,
       "severity": "HIGH",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2026-32309",
       "published_date": "2026-03-20",
-      "last_modified_date": "2026-03-27",
+      "last_modified_date": "2026-06-17",
       "description": "Cryptomator encrypts data being stored on cloud infrastructure. Prior to version 1.19.1, the Hub-based unlock flow explicitly supports hub+http and consumes Hub endpoints from vault metadata without enforcing HTTPS. As a result, a vault configuration can drive OAuth and key-loading traffic over plaintext HTTP or other insecure endpoint combinations. An active network attacker can tamper with or observe this traffic. Even when the vault key is encrypted for the device, bearer tokens and endpoint-level trust decisions are still exposed to downgrade and interception. This issue has been patched in version 1.19.1.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2026-32317",
       "published_date": "2026-03-20",
-      "last_modified_date": "2026-03-26",
+      "last_modified_date": "2026-06-17",
       "description": "Cryptomator for Android offers multi-platform transparent client-side encryption for files in the cloud. Prior to version 1.12.3, an integrity check vulnerability allows an attacker tamper with the vault configuration file leading to a man-in-the-middle vulnerability in Hub key loading mechanism. Before this fix, the client trusted endpoints from the vault config without host authenticity checks, which could allow token exfiltration by mixing a legitimate auth endpoint with a malicious API endpoint. Impacted are users unlocking Hub-backed vaults with affected client versions in environments where an attacker can alter the vault.cryptomator file. This issue has been patched in version 1.12.3.",
       "base_score": 7.6,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2026-32318",
       "published_date": "2026-03-20",
-      "last_modified_date": "2026-03-26",
+      "last_modified_date": "2026-06-17",
       "description": "Cryptomator for IOS offers multi-platform transparent client-side encryption for files in the cloud. Prior to version 2.8.3, an integrity check vulnerability allows an attacker tamper with the vault configuration file leading to a man-in-the-middle vulnerability in Hub key loading mechanism. Before this fix, the client trusted endpoints from the vault config without host authenticity checks, which could allow token exfiltration by mixing a legitimate auth endpoint with a malicious API endpoint. Impacted are users unlocking Hub-backed vaults with affected client versions in environments where an attacker can alter the vault.cryptomator file. This issue has been patched in version 2.8.3.",
       "base_score": 7.6,
       "severity": "HIGH",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2023-37907",
       "published_date": "2023-07-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Cryptomator is data encryption software for users who store their files in the cloud. Prior to version 1.9.2, the MSI installer provided on the homepage allows local privilege escalation (LPE) for low privileged users, if already installed. The problem occurs as the repair function of the MSI spawns two administrative CMDs. A simple LPE is possible via a breakout. Version 1.9.2 fixes this issue.",
       "base_score": 7.0,
       "severity": "HIGH",
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2022-25366",
       "published_date": "2022-02-19",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Cryptomator through 1.6.5 allows DYLIB injection because, although it has the flag 0x1000 for Hardened Runtime, it has the com.apple.security.cs.disable-library-validation and com.apple.security.cs.allow-dyld-environment-variables entitlements. An attacker can exploit this by creating a malicious .dylib file that can be executed via the DYLD_INSERT_LIBRARIES environment variable.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2026-33472",
       "published_date": "2026-04-16",
-      "last_modified_date": "2026-04-22",
+      "last_modified_date": "2026-06-17",
       "description": "Cryptomator is an open-source client-side encryption application for cloud storage. Version 1.19.1 contains a logic flaw in CheckHostTrustController.getAuthority() that allows an attacker to bypass the security fix for CVE-2026-32303. The method hardcodes the URI scheme based on port number, causing HTTPS URLs with port 80 to produce the same authority string as HTTP URLs, which defeats both the consistency check and the HTTP block validation. An attacker with write access to a cloud-synced vault.cryptomator file can craft a Hub configuration where apiBaseUrl and authEndpoint use HTTPS with port 80 to pass auto-trust validation, while tokenEndpoint uses plaintext HTTP. The vault is auto-trusted without user prompt, and a network-positioned attacker can intercept the OAuth token exchange to access the Cryptomator Hub API as the victim. This issue has been fixed in version 1.19.2.",
       "base_score": 4.8,
       "severity": "MEDIUM",
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2026-32310",
       "published_date": "2026-03-20",
-      "last_modified_date": "2026-03-25",
+      "last_modified_date": "2026-06-17",
       "description": "Cryptomator encrypts data being stored on cloud infrastructure. From version 1.6.0 to before version 1.19.1, vault configuration is parsed before its integrity is verified, and the masterkeyfile loader uses the unverified keyId as a filesystem path. The loader resolves keyId.getSchemeSpecificPart() directly against the vault path and immediately calls Files.exists(...). This allows a malicious vault config to supply parent-directory escapes, absolute local paths, or UNC paths (e.g., masterkeyfile://attacker/share/masterkey.cryptomator). On Windows, the UNC variant is especially dangerous because Path.resolve(\"//attacker/share/...\") becomes \\\\attacker\\share\\..., so the existence check can trigger outbound SMB access before the user even enters a passphrase. This issue has been patched in version 1.19.1.",
       "base_score": 4.1,
       "severity": "MEDIUM",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2023-39520",
       "published_date": "2023-08-07",
-      "last_modified_date": "2025-04-10",
+      "last_modified_date": "2026-06-17",
       "description": "Cryptomator encrypts data being stored on cloud infrastructure. The MSI installer provided on the homepage for Cryptomator version 1.9.2 allows local privilege escalation for low privileged users, via the `repair` function. The problem occurs as the repair function of the MSI is spawning an SYSTEM Powershell without the `-NoProfile` parameter. Therefore the profile of the user starting the repair will be loaded. Version 1.9.3 contains a fix for this issue. Adding a `-NoProfile` to the powershell is a possible workaround.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2026-29110",
       "published_date": "2026-03-06",
-      "last_modified_date": "2026-03-13",
+      "last_modified_date": "2026-06-17",
       "description": "Cryptomator encrypts data being stored on cloud infrastructure. Prior to version 1.19.0, in non-debug mode Cryptomator might leak cleartext paths into the log file. This can reveal meta information about the files stored inside a vault at a time, where the actual vault is closed. Not every cleartext path is logged. Only if a filesystem request fails for some reason (e.g. damaged encrypted file, not existing file), a log message is created. This issue has been patched in version 1.19.0.",
       "base_score": 2.2,
       "severity": "LOW",

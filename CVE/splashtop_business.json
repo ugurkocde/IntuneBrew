@@ -1,7 +1,7 @@
 {
   "app_name": "Splashtop Business",
   "app_key": "splashtop_business",
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-26",
   "total_cves": 3,
   "summary": {
     "critical": 0,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2023-3181",
       "published_date": "2024-01-25",
-      "last_modified_date": "2025-08-14",
+      "last_modified_date": "2026-06-17",
       "description": "The C:\\Program Files (x86)\\Splashtop\\Splashtop Software Updater\\uninst.exe process creates a folder at C:\\Windows\\Temp~nsu.tmp and copies itself to it as Au_.exe. The C:\\Windows\\Temp~nsu.tmp\\Au_.exe file is automatically launched as SYSTEM when the system reboots or when a standard user runs an MSI repair using Splashtop Streamer\u2019s Windows Installer. Since the C:\\Windows\\Temp~nsu.tmp folder inherits permissions from C:\\Windows\\Temp and Au_.exe is susceptible to DLL hijacking, standard users can write a malicious DLL to it and elevate their privileges.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2021-42713",
       "published_date": "2022-02-15",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Splashtop Remote Client (Personal Edition) through 3.4.6.1 creates a Temporary File in a Directory with Insecure Permissions.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2021-42714",
       "published_date": "2022-02-15",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Splashtop Remote Client (Business Edition) through 3.4.8.3 creates a Temporary File in a Directory with Insecure Permissions.",
       "base_score": 7.8,
       "severity": "HIGH",

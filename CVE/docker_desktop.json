@@ -1,7 +1,7 @@
 {
   "app_name": "Docker Desktop",
   "app_key": "docker_desktop",
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-26",
   "total_cves": 31,
   "summary": {
     "critical": 2,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2024-8695",
       "published_date": "2024-09-12",
-      "last_modified_date": "2024-09-13",
+      "last_modified_date": "2026-06-17",
       "description": "A remote code execution (RCE) vulnerability via crafted extension description/changelog could be abused by a malicious extension in Docker Desktop before 4.34.2.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2024-8696",
       "published_date": "2024-09-12",
-      "last_modified_date": "2024-09-13",
+      "last_modified_date": "2026-06-17",
       "description": "A remote code execution (RCE) vulnerability via crafted extension publisher-url/additional-urls could be abused by a malicious extension in Docker Desktop before 4.34.2.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2026-6406",
       "published_date": "2026-05-22",
-      "last_modified_date": "2026-05-29",
+      "last_modified_date": "2026-06-17",
       "description": "The Docker CLI --use-api-socket flag bypasses Enhanced Container Isolation (ECI) restrictions in Docker Desktop. When ECI is enabled, Docker socket mounts from containers are denied unless explicitly allowed via the admin-settings configuration. However, the --use-api-socket flag adds the Docker socket mount via the HostConfig.Mounts field rather than the HostConfig.Binds field. The ECI enforcement in the Docker Desktop API proxy only inspected Binds, allowing the mount to pass unchecked. This grants a container full access to the Docker Engine socket and, if the host user has logged in to container registries, their authentication credentials.\n\nA local attacker with the ability to run Docker CLI commands can exploit this to escape ECI restrictions, access the Docker Engine, and potentially escalate privileges.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2026-5817",
       "published_date": "2026-05-22",
-      "last_modified_date": "2026-06-01",
+      "last_modified_date": "2026-06-17",
       "description": "The vllm-metal inference backend in Docker Model Runner on macOS unconditionally sets trust_remote_code=True when loading model tokenizers, and runs without sandboxing. This causes transformers.AutoTokenizer.from_pretrained() to import and execute arbitrary Python files included in any model pulled from an OCI registry, resulting in arbitrary code execution on the Docker host as the Docker Desktop user when inference is triggered.\n\nAny container on the Docker network can trigger this by calling the model-runner.docker.internal API to pull a malicious model and request inference.",
       "base_score": 8.2,
       "severity": "HIGH",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2026-5843",
       "published_date": "2026-05-22",
-      "last_modified_date": "2026-06-01",
+      "last_modified_date": "2026-06-17",
       "description": "The MLX inference backend in Docker Model Runner on macOS uses the MLX-LM library, which unconditionally imports and executes arbitrary Python files from model directories via the model_file configuration field in config.json. When a model's config.json specifies a model_file pointing to a Python file, MLX-LM uses importlib to load and execute it with no trust_remote_code gate or equivalent safety check. The MLX backend runs without sandboxing, resulting in arbitrary code execution on the Docker host as the Docker Desktop user.\n\nAny container on the Docker network can trigger this by calling the model-runner.docker.internal API to pull a malicious model from an attacker-controlled OCI registry and request inference.",
       "base_score": 8.2,
       "severity": "HIGH",
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2026-2664",
       "published_date": "2026-02-24",
-      "last_modified_date": "2026-02-27",
+      "last_modified_date": "2026-06-17",
       "description": "An out of bounds read vulnerability in the grpcfuse kernel module present in the Linux VM in Docker Desktop for Windows, Linux and macOS up to version 4.61.0 could allow a local attacker to cause an unspecified impact by writing to /proc/docker entries. The issue has been fixed in\u00a0Docker Desktop 4.62.0 .",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2025-13743",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-01-30",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop diagnostics bundles were found to include expired Hub PATs in log output due to error object serialization. This poses a risk of leaking sensitive information in exported diagnostics, especially when access denied errors occurred.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2025-3224",
       "published_date": "2025-04-28",
-      "last_modified_date": "2025-05-10",
+      "last_modified_date": "2026-06-17",
       "description": "A vulnerability in the update process of Docker Desktop for Windows versions prior to 4.41.0\u00a0could allow a local, low-privileged attacker to escalate privileges to SYSTEM. During an update, Docker Desktop attempts to delete files and subdirectories under the path C:\\ProgramData\\Docker\\config with high privileges. However, this directory often does not exist by default, and C:\\ProgramData\\ allows normal users to create new directories. By creating a malicious Docker\\config folder structure at this location, an attacker can force the privileged update process to delete or manipulate arbitrary system files, leading to Elevation of Privilege.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2024-6222",
       "published_date": "2024-07-09",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "In Docker Desktop before v4.29.0, an attacker who has gained access to the Docker Desktop VM through a container breakout can further escape to the host by passing extensions and dashboard related IPC messages.\n\nDocker Desktop  v4.29.0 https://docs.docker.com/desktop/release-notes/#4290  fixes the issue on MacOS, Linux and Windows with Hyper-V backend.\n\nAs exploitation requires \"Allow only extensions distributed through the Docker Marketplace\" to be disabled, Docker Desktop\u00a0 v4.31.0 https://docs.docker.com/desktop/release-notes/#4310 \u00a0additionally changes the default configuration to enable this setting by default.",
       "base_score": 7.0,
       "severity": "HIGH",
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2023-0625",
       "published_date": "2023-09-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop before 4.12.0 is vulnerable to RCE via a crafted extension description or changelog.\n\nThis issue affects Docker Desktop: before 4.12.0.\n\n",
       "base_score": 8.0,
       "severity": "HIGH",
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2023-0626",
       "published_date": "2023-09-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop before 4.12.0 is vulnerable to RCE via query parameters in message-box route.\n\nThis issue affects Docker Desktop: before 4.12.0.\n\n",
       "base_score": 8.0,
       "severity": "HIGH",
@@ -245,7 +245,7 @@
     {
       "cve_id": "CVE-2023-0633",
       "published_date": "2023-09-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "In Docker Desktop on Windows before 4.12.0 an argument injection to installer may result in local privilege escalation (LPE).This issue affects Docker Desktop: before 4.12.0.\n\n",
       "base_score": 7.2,
       "severity": "HIGH",
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2023-5165",
       "published_date": "2023-09-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop before 4.23.0 allows an unprivileged user to bypass Enhanced Container Isolation (ECI) restrictions via the debug shell which remains accessible for a short time window after launching Docker Desktop. The affected functionality is available for Docker Business customers only and assumes an environment where users are not granted local root or Administrator privileges. \n\nThis issue has been fixed in Docker Desktop 4.23.0. \n\nAffected Docker Desktop versions: from 4.13.0 before 4.23.0.\n",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2023-5166",
       "published_date": "2023-09-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop before 4.23.0 allows Access Token theft via a crafted extension icon URL.\n\nThis issue affects Docker Desktop: before 4.23.0.\n\n",
       "base_score": 8.0,
       "severity": "HIGH",
@@ -308,7 +308,7 @@
     {
       "cve_id": "CVE-2022-31647",
       "published_date": "2023-04-27",
-      "last_modified_date": "2025-01-31",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop before 4.6.0 on Windows allows attackers to delete any file through the hyperv/destroy dockerBackendV2 API via a symlink in the DataFolder parameter, a different vulnerability than CVE-2022-26659.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2022-34292",
       "published_date": "2023-04-27",
-      "last_modified_date": "2025-01-31",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop for Windows before 4.6.0 allows attackers to overwrite any file through a symlink attack on the hyperv/create dockerBackendV2 API by controlling the DataFolder parameter for DockerDesktop.vhdx, a similar issue to CVE-2022-31647.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -350,7 +350,7 @@
     {
       "cve_id": "CVE-2022-37326",
       "published_date": "2023-04-27",
-      "last_modified_date": "2025-01-31",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop for Windows before 4.6.0 allows attackers to delete (or create) any file through the dockerBackendV2 windowscontainers/start API by controlling the pidfile field inside the DaemonJSON field in the WindowsContainerStartRequest class. This can indirectly lead to privilege escalation.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -371,7 +371,7 @@
     {
       "cve_id": "CVE-2023-0629",
       "published_date": "2023-03-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop before 4.17.0 allows an unprivileged user to bypass Enhanced Container Isolation (ECI) restrictions by setting the Docker host to docker.raw.sock, or npipe:////.pipe/docker_engine_linux on Windows, via the -H (--host) CLI flag or the DOCKER_HOST environment variable and launch containers without the additional hardening features provided by ECI. This would not affect already running containers, nor containers launched through the usual approach (without Docker's raw socket).\n\nThe affected functionality is available for Docker Business customers only and assumes an environment where users are not granted local root or Administrator privileges.\nThis issue has been fixed in Docker Desktop 4.17.0. \n\nAffected Docker Desktop versions: from 4.13.0 before 4.17.0.\n\n",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -392,7 +392,7 @@
     {
       "cve_id": "CVE-2021-44719",
       "published_date": "2022-05-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop 4.3.0 has Incorrect Access Control.",
       "base_score": 8.4,
       "severity": "HIGH",
@@ -413,7 +413,7 @@
     {
       "cve_id": "CVE-2022-26659",
       "published_date": "2022-03-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop installer on Windows in versions before 4.6.0 allows an attacker to overwrite any administrator writable files by creating a symlink in place of where the installer writes its log file. Starting from version 4.6.0, the Docker Desktop installer, when run elevated, will write its log files to a location not writable by non-administrator users.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -434,7 +434,7 @@
     {
       "cve_id": "CVE-2021-37841",
       "published_date": "2021-08-12",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop before 3.6.0 suffers from incorrect access control. If a low-privileged account is able to access the server running the Windows containers, it can lead to a full container compromise in both process isolation and Hyper-V isolation modes. This security issue leads an attacker with low privilege to read, write and possibly even execute code inside the containers.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -455,7 +455,7 @@
     {
       "cve_id": "CVE-2020-15360",
       "published_date": "2020-06-27",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "com.docker.vmnetd in Docker Desktop 2.3.0.3 allows privilege escalation because of a lack of client verification.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -476,7 +476,7 @@
     {
       "cve_id": "CVE-2020-11492",
       "published_date": "2020-06-05",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in Docker Desktop through 2.2.0.5 on Windows. If a local attacker sets up their own named pipe prior to starting Docker with the same name, this attacker can intercept a connection attempt from Docker Service (which runs as SYSTEM), and then impersonate their privileges.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -497,7 +497,7 @@
     {
       "cve_id": "CVE-2024-5652",
       "published_date": "2024-07-09",
-      "last_modified_date": "2025-03-19",
+      "last_modified_date": "2026-06-17",
       "description": "In Docker Desktop on Windows before v4.31.0\u00a0allows a user in the docker-users\u00a0group to cause a Windows Denial-of-Service through the exec-path\u00a0Docker daemon config option in Windows containers mode.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -518,7 +518,7 @@
     {
       "cve_id": "CVE-2023-0627",
       "published_date": "2023-09-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop 4.11.x allows --no-windows-containers flag bypass via IPC response spoofing which may lead to Local Privilege Escalation (LPE).This issue affects Docker Desktop: 4.11.X.\n\n",
       "base_score": 6.7,
       "severity": "MEDIUM",
@@ -539,7 +539,7 @@
     {
       "cve_id": "CVE-2022-38730",
       "published_date": "2023-04-27",
-      "last_modified_date": "2025-01-31",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop for Windows before 4.6 allows attackers to overwrite any file through the windowscontainers/start dockerBackendV2 API by controlling the data-root field inside the DaemonJSON field in the WindowsContainerStartRequest class. This allows exploiting a symlink vulnerability in ..\\dataRoot\\network\\files\\local-kv.db because of a TOCTOU race condition.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -560,7 +560,7 @@
     {
       "cve_id": "CVE-2023-1802",
       "published_date": "2023-04-06",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "In Docker Desktop 4.17.x the Artifactory Integration falls back to sending registry credentials over plain HTTP if the HTTPS health check has failed.\u00a0A targeted network sniffing attack can lead to a disclosure of sensitive information. Only users who have Access Experimental Features enabled and have logged in to a private registry are affected. \n",
       "base_score": 5.9,
       "severity": "MEDIUM",
@@ -581,7 +581,7 @@
     {
       "cve_id": "CVE-2023-0628",
       "published_date": "2023-03-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop before 4.17.0 allows an attacker to execute an arbitrary command inside a Dev Environments container during initialization by tricking a user to open a crafted malicious docker-desktop:// URL.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -602,7 +602,7 @@
     {
       "cve_id": "CVE-2022-23774",
       "published_date": "2022-02-01",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop before 4.4.4 on Windows allows attackers to move arbitrary files.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -623,7 +623,7 @@
     {
       "cve_id": "CVE-2021-45449",
       "published_date": "2022-01-12",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop version 4.3.0 and 4.3.1 has a bug that may log sensitive information (access token or password) on the user's machine during login. This only affects users if they are on Docker Desktop 4.3.0, 4.3.1 and the user has logged in while on 4.3.0, 4.3.1. Gaining access to this data would require having access to the user\u2019s local files.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -644,7 +644,7 @@
     {
       "cve_id": "CVE-2020-10665",
       "published_date": "2020-03-18",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Docker Desktop allows local privilege escalation to NT AUTHORITY\\SYSTEM because it mishandles the collection of diagnostics with Administrator privileges, leading to arbitrary DACL permissions overwrites and arbitrary file writes. This affects Docker Desktop Enterprise before 2.1.0.9, Docker Desktop for Windows Stable before 2.2.0.4, and Docker Desktop for Windows Edge before 2.2.2.0.",
       "base_score": 6.7,
       "severity": "MEDIUM",

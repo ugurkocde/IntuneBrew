@@ -1,7 +1,7 @@
 {
   "app_name": "Nomachine",
   "app_key": "nomachine",
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-26",
   "total_cves": 14,
   "summary": {
     "critical": 2,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2023-39107",
       "published_date": "2023-08-04",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An arbitrary file overwrite vulnerability in NoMachine Free Edition and Enterprise Client for macOS before v8.8.1 allows attackers to overwrite root-owned files by using hardlinks.",
       "base_score": 9.1,
       "severity": "CRITICAL",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2018-0664",
       "published_date": "2018-09-04",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "A vulnerability in NoMachine App for Android 5.0.63 and earlier allows attackers to alter environment variables via unspecified vectors.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2026-5053",
       "published_date": "2026-04-11",
-      "last_modified_date": "2026-04-15",
+      "last_modified_date": "2026-06-17",
       "description": "NoMachine External Control of File Path Arbitrary File Deletion Vulnerability. This vulnerability allows local attackers to delete arbitrary files on affected installations of NoMachine. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the handling of environment variables. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to delete files in the context of root. Was ZDI-CAN-28644.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2026-5054",
       "published_date": "2026-04-11",
-      "last_modified_date": "2026-04-15",
+      "last_modified_date": "2026-06-17",
       "description": "NoMachine External Control of File Path Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the handling of command line parameters. The issue results from the lack of proper validation of a user-supplied path prior to using it in file operations. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of root. Was ZDI-CAN-28630.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2026-5055",
       "published_date": "2026-04-11",
-      "last_modified_date": "2026-04-15",
+      "last_modified_date": "2026-06-17",
       "description": "NoMachine Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine.  An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the NoMachine Device Server. The product loads a library from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of SYSTEM. Was ZDI-CAN-28494.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2025-8614",
       "published_date": "2025-09-02",
-      "last_modified_date": "2025-09-10",
+      "last_modified_date": "2026-06-17",
       "description": "NoMachine Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine.  An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within the configuration of OpenSSL. The product loads an OpenSSL configuration file from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of the service account. Was ZDI-CAN-26766.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2024-7253",
       "published_date": "2024-11-22",
-      "last_modified_date": "2025-05-21",
+      "last_modified_date": "2026-06-17",
       "description": "NoMachine Uncontrolled Search Path Element Local Privilege Escalation Vulnerability. This vulnerability allows local attackers to escalate privileges on affected installations of NoMachine. An attacker must first obtain the ability to execute low-privileged code on the target system in order to exploit this vulnerability.\n\nThe specific flaw exists within nxnode.exe. The process loads a library from an unsecured location. An attacker can leverage this vulnerability to escalate privileges and execute arbitrary code in the context of SYSTEM.\n\n. Was ZDI-CAN-24039.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2022-34043",
       "published_date": "2022-06-29",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Incorrect permissions for the folder C:\\ProgramData\\NoMachine\\var\\uninstall of Nomachine v7.9.2 allows attackers to perform a DLL hijacking attack and execute arbitrary code.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2021-33436",
       "published_date": "2022-04-28",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "NoMachine for Windows prior to version 6.15.1 and 7.5.2 suffer from local privilege escalation due to the lack of safe DLL loading. This vulnerability allows local non-privileged users to perform DLL Hijacking via any writable directory listed under the system path and ultimately execute code as NT AUTHORITY\\SYSTEM.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2018-17980",
       "published_date": "2018-10-15",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "NoMachine before 5.3.27 and 6.x before 6.3.6 allows attackers to gain privileges via a Trojan horse wintab32.dll file located in the same directory as a .nxs file, as demonstrated by a scenario where the .nxs file and the DLL are in the current working directory, and the Trojan horse code is executed. (The directory could, in general, be on a local filesystem or a network share.).",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2018-6947",
       "published_date": "2018-02-28",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An uninitialised stack variable in the nxfuse component that is part of the Open Source DokanFS library shipped with NoMachine 6.0.66_2 and earlier allows a local low privileged user to gain elevation of privileges on Windows 7 (32 and 64bit), and denial of service for Windows 8 and 10.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -245,7 +245,7 @@
     {
       "cve_id": "CVE-2017-12763",
       "published_date": "2017-08-29",
-      "last_modified_date": "2026-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "An unspecified server utility in NoMachine before 5.3.10 on Mac OS X and Linux allows authenticated users to gain privileges by gaining access to local files.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2022-48074",
       "published_date": "2023-02-03",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An issue in NoMachine before v8.2.3 allows attackers to execute arbitrary commands via a crafted .nxs file.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2018-20029",
       "published_date": "2018-12-10",
-      "last_modified_date": "2026-02-25",
+      "last_modified_date": "2026-06-17",
       "description": "The nxfs.sys driver in the DokanFS library 0.6.0 in NoMachine before 6.4.6 on Windows 10 allows local users to cause a denial of service (BSOD) because uninitialized memory can be read.",
       "base_score": 5.5,
       "severity": "MEDIUM",

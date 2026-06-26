@@ -1,7 +1,7 @@
 {
   "app_name": "Audacity",
   "app_key": "audacity",
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-26",
   "total_cves": 6,
   "summary": {
     "critical": 0,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2017-1000010",
       "published_date": "2017-07-17",
-      "last_modified_date": "2026-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "Audacity 2.1.2 through 2.3.2 is vulnerable to Dll HIjacking in the avformat-55.dll resulting arbitrary code execution.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2009-0490",
       "published_date": "2009-02-10",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Stack-based buffer overflow in the String_parse::get_nonspace_quoted function in lib-src/allegro/strparse.cpp in Audacity 1.2.6 and other versions before 1.3.6 allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a .gro file containing a long string.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2016-2540",
       "published_date": "2018-02-07",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Audacity before 2.1.2 allows remote attackers to cause a denial of service (memory corruption and application crash) via a crafted FORMATCHUNK structure.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2016-2541",
       "published_date": "2018-02-07",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Audacity before 2.1.2 allows remote attackers to cause a denial of service (memory corruption and application crash) via a crafted MP2 file.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2007-6061",
       "published_date": "2007-11-20",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Audacity 1.3.2 creates a temporary directory with a predictable name without checking for previous existence of that directory, which allows local users to cause a denial of service (recording deadlock) by creating the directory before Audacity is run.  NOTE: this issue can be leveraged to delete arbitrary files or directories via a symlink attack.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2020-11867",
       "published_date": "2020-11-30",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Audacity through 2.3.3 saves temporary files to /var/tmp/audacity-$USER by default. After Audacity creates the temporary directory, it sets its permissions to 755. Any user on the system can read and play the temporary audio .au files located there.",
       "base_score": 3.3,
       "severity": "LOW",

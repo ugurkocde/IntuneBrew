@@ -1,7 +1,7 @@
 {
   "app_name": "Obsidian",
   "app_key": "obsidian",
-  "last_updated": "2026-06-17",
+  "last_updated": "2026-06-26",
   "total_cves": 5,
   "summary": {
     "critical": 1,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2021-38148",
       "published_date": "2021-08-07",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Obsidian before 0.12.12 does not require user confirmation for non-http/https URLs.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2023-2110",
       "published_date": "2023-08-19",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Improper path handling in Obsidian desktop before 1.2.8 on Windows, Linux and macOS allows a crafted webpage to access local files and exfiltrate them to remote web servers via \"app://local/<absolute-path>\". This vulnerability can be exploited if a user opens a malicious markdown file in Obsidian, or copies text from a malicious webpage and paste it into Obsidian.",
       "base_score": 8.2,
       "severity": "HIGH",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2023-33244",
       "published_date": "2023-05-20",
-      "last_modified_date": "2025-01-31",
+      "last_modified_date": "2026-06-17",
       "description": "Obsidian before 1.2.2 allows calls to unintended APIs (for microphone access, camera access, and desktop notification) via an embedded web page.",
       "base_score": 8.2,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2022-36450",
       "published_date": "2022-07-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Obsidian 0.14.x and 0.15.x before 0.15.5 allows obsidian://hook-get-address remote code execution because window.open is used without checking the URL.",
       "base_score": 8.0,
       "severity": "HIGH",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2023-27035",
       "published_date": "2023-05-01",
-      "last_modified_date": "2025-01-30",
+      "last_modified_date": "2026-06-17",
       "description": "An issue discovered in Obsidian Canvas 1.1.9 allows remote attackers to send desktop notifications, record user audio and other unspecified impacts via embedded website on the canvas page.",
       "base_score": 6.5,
       "severity": "MEDIUM",
