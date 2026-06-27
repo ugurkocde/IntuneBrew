@@ -1,14 +1,14 @@
 {
   "name": "Eclipse IDE for Java EE Developers",
   "description": "Eclipse IDE for Java EE developers",
-  "version": "4.39",
-  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-jee-2026-03-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
+  "version": "4.40",
+  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-06/R/eclipse-jee-2026-06-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
   "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-jee-2026-03-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
   "bundleId": "org.eclipse.platform.ide",
   "homepage": "https://eclipse.org/",
-  "fileName": "Eclipse-IDE-for-Java-EE-Developers-4.39.dmg",
-  "sha": "a9d4e2cf87188fafabb5a8467618b78012179770bd080bdc64099cfe07cd00bb",
+  "fileName": "Eclipse-IDE-for-Java-EE-Developers-4.40.dmg",
+  "sha": "4efe323ef95b12c377b114ef7ec80a311556f28dcb4ed40ff6b8658b339e5d64",
   "category": "Developer Tools",
   "publisher": "The Eclipse Foundation",
-  "previous_version": "4.39"
+  "previous_version": "4.40"
 }

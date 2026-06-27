@@ -1,14 +1,14 @@
 {
   "name": "Background Music",
   "description": "Audio utility",
-  "version": "0.4.3",
-  "url": "https://github.com/kyleneideck/BackgroundMusic/releases/download/v0.4.3/BackgroundMusic-0.4.3.pkg",
+  "version": "0.5.0",
+  "url": "https://github.com/kyleneideck/BackgroundMusic/releases/download/v0.5.0/BackgroundMusic-0.5.0.pkg",
   "vendor_url": "https://github.com/kyleneideck/BackgroundMusic/releases/download/v0.4.3/BackgroundMusic-0.4.3.pkg",
   "bundleId": "com.bearisdriving.BGM.App",
   "homepage": "https://github.com/kyleneideck/BackgroundMusic",
-  "fileName": "BackgroundMusic-0.4.3.pkg",
+  "fileName": "BackgroundMusic-0.5.0.pkg",
   "type": "pkg",
-  "sha": "c1c48a37c83af44ce50bee68879856c96b2f6c97360ce461b1c7d653515be7fd",
+  "sha": "c7742b48ac2e9ea955fea66e5c13bb56be5f1487e0b12bad93820984bccb69ef",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:35:46Z",
     "qa_result": "Installation successful and verified",
@@ -21,5 +21,5 @@
   },
   "category": "Utilities",
   "publisher": "Kylene Ideck",
-  "previous_version": "0.4.3"
+  "previous_version": "0.5.0"
 }

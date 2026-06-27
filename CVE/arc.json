@@ -1,7 +1,7 @@
 {
   "app_name": "Arc",
   "app_key": "arc",
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-06-26",
   "total_cves": 1,
   "summary": {
     "critical": 1,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2024-52928",
       "published_date": "2025-06-26",
-      "last_modified_date": "2025-07-10",
+      "last_modified_date": "2026-06-17",
       "description": "Arc before 1.26.1 on Windows has a bypass issue in the site settings that allows websites (with previously granted permissions) to add new permissions when the user clicks anywhere on the website.",
       "base_score": 9.6,
       "severity": "CRITICAL",

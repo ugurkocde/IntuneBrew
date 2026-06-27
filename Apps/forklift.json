@@ -1,15 +1,15 @@
 {
   "name": "ForkLift",
   "description": "Finder replacement and FTP, SFTP, WebDAV and Amazon s3 client",
-  "version": "4.6.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/forklift_4.6.2.pkg",
+  "version": "4.6.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/forklift_4.6.4.pkg",
   "vendor_url": "https://download.binarynights.com/ForkLift/ForkLift4.6.zip",
   "bundleId": "com.binarynights.ForkLift",
   "homepage": "https://binarynights.com/",
-  "fileName": "forklift_4.6.2.pkg",
+  "fileName": "forklift_4.6.4.pkg",
   "type": "app",
-  "previous_version": "4.6.2",
-  "sha": "91f9f8bde98b8c464816e690e91427e1fd2e6e92f9a6b0702306023d86b8c6b3",
+  "previous_version": "4.6.4",
+  "sha": "83b74c72bc2683e302d318a42e0d13d982284c734f305155c76904dc3a782911",
   "category": "Utilities",
   "publisher": "BinaryNights"
 }

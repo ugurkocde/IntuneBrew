@@ -17,6 +17,10 @@ fi
 echo "Stopping Transmit if running..."
 pkill -f "Transmit" 2>/dev/null || true
 
+# Kill application with bundle ID com.panic.Transmit if running
+echo "Stopping application with bundle ID com.panic.Transmit if running..."
+killall -9 "com.panic.Transmit" 2>/dev/null || true
+
 # Remove /Applications/Transmit.app
 echo "Removing /Applications/Transmit.app..."
 if [ -d "/Applications/Transmit.app" ]; then

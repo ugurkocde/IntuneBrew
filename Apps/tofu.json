@@ -1,7 +1,7 @@
 {
   "name": "Tofu",
   "description": "E-reader software",
-  "version": "3.0.1",
+  "version": "3.1",
   "url": "https://amarsagoo.info/tofu/Tofu.dmg",
   "vendor_url": "https://amarsagoo.info/tofu/Tofu.dmg",
   "bundleId": "com.asagoo.tofu",
@@ -9,5 +9,5 @@
   "fileName": "Tofu.dmg",
   "category": "Media",
   "publisher": "Amar Sagoo",
-  "previous_version": "3.0.1"
+  "previous_version": "3.1"
 }

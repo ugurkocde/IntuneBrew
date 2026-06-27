@@ -1,14 +1,14 @@
 {
   "name": "KiCad",
   "description": "Electronics design automation suite",
-  "version": "10.0.2",
-  "url": "https://github.com/KiCad/kicad-source-mirror/releases/download/10.0.2/kicad-unified-universal-10.0.2.dmg",
+  "version": "10.0.4",
+  "url": "https://github.com/KiCad/kicad-source-mirror/releases/download/10.0.4/kicad-unified-universal-10.0.4.dmg",
   "vendor_url": "https://github.com/KiCad/kicad-source-mirror/releases/download/10.0.0/kicad-unified-universal-10.0.0.dmg",
   "bundleId": "org.kicad-pcb.kicad",
   "homepage": "https://kicad.org/",
-  "fileName": "kicad-unified-universal-10.0.2.dmg",
-  "sha": "f992d8179a94154808c8331a8ca4397880fae71b4869b78efacf21919d71f425",
+  "fileName": "kicad-unified-universal-10.0.4.dmg",
+  "sha": "fa87baa14694b6c12c42da1230b473bac89c03b783a74d89c4a06319e5cabffe",
   "category": "Design",
   "publisher": "KiCad Project",
-  "previous_version": "10.0.2"
+  "previous_version": "10.0.4"
 }

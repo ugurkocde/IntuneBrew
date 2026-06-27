@@ -34,6 +34,23 @@ class Groups extends resource_1.APIResource {
         });
     }
     /**
+     * Retrieves a group.
+     *
+     * @example
+     * ```ts
+     * const group =
+     *   await client.admin.organization.groups.retrieve(
+     *     'group_id',
+     *   );
+     * ```
+     */
+    retrieve(groupID, options) {
+        return this._client.get((0, path_1.path) `/organization/groups/${groupID}`, {
+            ...options,
+            __security: { adminAPIKeyAuth: true },
+        });
+    }
+    /**
      * Updates a group's information.
      *
      * @example

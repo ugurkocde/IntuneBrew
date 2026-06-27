@@ -1,14 +1,14 @@
 {
   "name": "Polymail",
   "description": "Email productivity application",
-  "version": "2.4.3004",
-  "url": "https://sparkle-updater.polymail.io/macos-arm64/builds/Polymail-v2.4.3004.dmg",
+  "version": "2.4.3005",
+  "url": "https://sparkle-updater.polymail.io/macos-arm64/builds/Polymail-v2.4.3005.dmg",
   "vendor_url": "https://sparkle-updater.polymail.io/macos-arm64/builds/Polymail-v2.4.3003.dmg",
   "bundleId": "io.polymail.osx",
   "homepage": "https://polymail.io/",
-  "fileName": "Polymail-v2.4.3004.dmg",
-  "sha": "1d0501ffd2140e23bb9debd416a5cca291b91ce2cdd64755527e836a7a59d465",
+  "fileName": "Polymail-v2.4.3005.dmg",
+  "sha": "3c3053489bbd64a76773b46783eb018bf43d75eace3cf1731b9eaaf462aeb643",
   "category": "Productivity",
   "publisher": "Polymail, Inc.",
-  "previous_version": "2.4.3004"
+  "previous_version": "2.4.3005"
 }

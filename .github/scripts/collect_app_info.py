@@ -482,6 +482,10 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/music-decoy.json",
     "https://formulae.brew.sh/api/cask/thebrowsercompany-dia.json",
     "https://formulae.brew.sh/api/cask/affinity.json",
+    "https://formulae.brew.sh/api/cask/meta.json",
+    "https://formulae.brew.sh/api/cask/sipgate.json",
+    "https://formulae.brew.sh/api/cask/support.json",
+    "https://formulae.brew.sh/api/cask/thaw.json",
 ]
 
 # DMG
@@ -1217,6 +1221,12 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/morgen.json",
     "https://formulae.brew.sh/api/cask/cardpresso.json",
     "https://formulae.brew.sh/api/cask/lastpass.json",
+    "https://formulae.brew.sh/api/cask/instantview.json",
+    "https://formulae.brew.sh/api/cask/macshot.json",
+    "https://formulae.brew.sh/api/cask/xtool-studio.json",
+    "https://formulae.brew.sh/api/cask/brainfm.json",
+    "https://formulae.brew.sh/api/cask/macdown-3000.json",
+    "https://formulae.brew.sh/api/cask/viber.json",
 ]
 
 # PKG in DMG URLs
@@ -1236,6 +1246,7 @@ pkg_in_dmg_urls = [
     # New PKG-in-DMG apps (batch 1 - 1 app)
     "https://formulae.brew.sh/api/cask/gpg-suite.json",
     "https://formulae.brew.sh/api/cask/wacom-tablet.json",
+    "https://formulae.brew.sh/api/cask/zenmap.json",
     # Note: tuxera-ntfs removed - has directory-based PKG inside .mpkg that needs special handling
 ]
 
@@ -1342,6 +1353,9 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/perimeter81.json",
     "https://formulae.brew.sh/api/cask/unifi-identity-endpoint.json",
     "https://formulae.brew.sh/api/cask/wifiman.json",
+    "https://formulae.brew.sh/api/cask/r-app.json",
+    "https://formulae.brew.sh/api/cask/microsoft-365-copilot.json",
+    "https://formulae.brew.sh/api/cask/vnc-server.json",
 ]
 
 # Custom scraper scripts to run

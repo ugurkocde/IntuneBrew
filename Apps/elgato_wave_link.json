@@ -1,13 +1,13 @@
 {
   "name": "Elgato Wave Link",
   "description": "Software custom-built for content creation",
-  "version": "3.1.1",
-  "url": "https://edge.elgato.com/egc/macos/ewlm/release/ElgatoWaveLink-3.1.1.2484.dmg",
+  "version": "3.2.0",
+  "url": "https://edge.elgato.com/egc/macos/ewlm/release/ElgatoWaveLink-3.2.0.2698.dmg",
   "vendor_url": "https://edge.elgato.com/egc/macos/ewlm/release/ElgatoWaveLink-3.1.0.2334.dmg",
   "bundleId": "com.elgato.WaveLink",
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
-  "fileName": "ElgatoWaveLink-3.1.1.2484.dmg",
-  "sha": "6a8cc22b65b9e919122b9d0759ac5d3aee30861456224d5ea4c47fb206d17443",
+  "fileName": "ElgatoWaveLink-3.2.0.2698.dmg",
+  "sha": "5b4cd8d229963c2ae157c47d17d1d8efc1382906acf8e2bfb662456e98ef5c14",
   "changelog": "https://help.elgato.com/hc/en-us/sections/4913442828941-Wave-Link-Release-Notes",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:10:50Z",
@@ -21,5 +21,5 @@
   },
   "category": "Utilities",
   "publisher": "Elgato",
-  "previous_version": "3.1.1"
+  "previous_version": "3.2.0"
 }

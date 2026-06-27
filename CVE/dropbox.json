@@ -1,7 +1,7 @@
 {
   "app_name": "Dropbox",
   "app_key": "dropbox",
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-06-26",
   "total_cves": 5,
   "summary": {
     "critical": 0,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2019-12171",
       "published_date": "2019-07-08",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Dropbox.exe (and QtWebEngineProcess.exe in the Web Helper) in the Dropbox desktop application 71.4.108.0 store cleartext credentials in memory upon successful login or new account creation. These are not securely freed in the running process.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2018-12271",
       "published_date": "2018-06-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in the com.getdropbox.Dropbox app 100.2 for iOS. The LAContext class for Biometric (TouchID) validation allows authentication bypass by overriding the LAContext return Boolean value to be \"true\" because the kSecAccessControlUserPresence protection mechanism is not used. In other words, an attacker could authenticate with an arbitrary fingerprint. NOTE: the vendor indicates that this is not an attack of interest within the context of their threat model, which excludes iOS devices on which a jailbreak has occurred",
       "base_score": 6.4,
       "severity": "MEDIUM",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2010-3354",
       "published_date": "2010-10-20",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "dropboxd in Dropbox 0.7.110 places a zero-length directory name in the LD_LIBRARY_PATH, which allows local users to gain privileges via a Trojan horse shared library in the current working directory.",
       "base_score": 6.9,
       "severity": "MEDIUM",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2018-12445",
       "published_date": "2018-06-20",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in the com.dropbox.android application 98.2.2 for Android. The FingerprintManager class for Biometric validation allows authentication bypass through the callback method from onAuthenticationFailed to onAuthenticationSucceeded with null, because the fingerprint API in conjunction with the Android keyGenerator class is not implemented. In other words, an attacker could authenticate with an arbitrary fingerprint. NOTE: the vendor indicates that this is not an attack of interest within the context of their threat model, which excludes Android devices on which rooting has occurred",
       "base_score": 3.1,
       "severity": "LOW",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2018-12446",
       "published_date": "2018-06-20",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in the com.dropbox.android application 98.2.2 for Android. The Passcode feature allows authentication bypass via runtime manipulation that forces a certain method's return value to true. In other words, an attacker could authenticate with an arbitrary passcode. NOTE: the vendor indicates that this is not an attack of interest within the context of their threat model, which excludes Android devices on which rooting has occurred",
       "base_score": 3.6,
       "severity": "LOW",

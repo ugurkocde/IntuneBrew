@@ -1,15 +1,15 @@
 {
   "name": "Microsoft Teams",
   "description": "Meet, chat, call, and collaborate in just one place",
-  "version": "26106.2108.4669.9776",
-  "url": "https://statics.teams.cdn.office.net/production-osx/26106.2108.4669.9776/MicrosoftTeams.pkg",
+  "version": "26149.1804.4788.5681",
+  "url": "https://statics.teams.cdn.office.net/production-osx/26149.1804.4788.5681/MicrosoftTeams.pkg",
   "vendor_url": "https://statics.teams.cdn.office.net/production-osx/26072.605.4546.510/MicrosoftTeams.pkg",
   "bundleId": "com.microsoft.autoupdate2",
   "homepage": "https://www.microsoft.com/en/microsoft-teams/group-chat-software/",
   "fileName": "MicrosoftTeams.pkg",
-  "sha": "b0db820dfeee43898f931dd732994fdc61209fedd4587e5324f19bc0cd83d0e9",
+  "sha": "bcf6d54723446063e3b37c5a03bbd5c9f5f8e7bf5e7517d6db2676fc0e684e0b",
   "changelog": "https://learn.microsoft.com/en-us/officeupdates/teams-app-versioning",
   "category": "Communication",
   "publisher": "Microsoft Corporation",
-  "previous_version": "26106.2108.4669.9776"
+  "previous_version": "26149.1804.4788.5681"
 }

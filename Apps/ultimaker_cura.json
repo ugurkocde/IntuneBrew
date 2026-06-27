@@ -1,14 +1,14 @@
 {
   "name": "UltiMaker Cura",
   "description": "3D printer and slicing GUI",
-  "version": "5.12.1",
-  "url": "https://github.com/Ultimaker/Cura/releases/download/5.12.1/UltiMaker-Cura-5.12.1-macos-ARM64.dmg",
+  "version": "5.13.0",
+  "url": "https://github.com/Ultimaker/Cura/releases/download/5.13.0/UltiMaker-Cura-5.13.0-macos-ARM64.dmg",
   "vendor_url": "https://github.com/Ultimaker/Cura/releases/download/5.12.1/UltiMaker-Cura-5.12.1-macos-ARM64.dmg",
   "bundleId": "nl.ultimaker.cura.dmg",
   "homepage": "https://ultimaker.com/software/ultimaker-cura",
-  "fileName": "UltiMaker-Cura-5.12.1-macos-ARM64.dmg",
-  "sha": "cea25e09c4210a1cedaedd7f9a109c3dc807e6c26fb0a79c29e921bb71df4116",
+  "fileName": "UltiMaker-Cura-5.13.0-macos-ARM64.dmg",
+  "sha": "1483806486a19728bc0f363f847d75be3f179ea43c7f074bfc327f5b5c6e05ad",
   "category": "Design",
   "publisher": "Ultimaker B.V.",
-  "previous_version": "5.12.1"
+  "previous_version": "5.13.0"
 }

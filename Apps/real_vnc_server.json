@@ -1,0 +1,15 @@
+{
+  "name": "Real VNC Server",
+  "description": "Remote desktop server application",
+  "version": "7.17.0",
+  "url": "https://downloads.realvnc.com/download/file/vnc.files/VNC-Server-7.17.0-MacOSX-universal.pkg",
+  "vendor_url": "https://downloads.realvnc.com/download/file/vnc.files/VNC-Server-7.17.0-MacOSX-universal.pkg",
+  "bundleId": "com.realvnc.vncserver.1",
+  "homepage": "https://www.realvnc.com/",
+  "fileName": "VNC-Server-7.17.0-MacOSX-universal.pkg",
+  "type": "pkg",
+  "sha": "147092e514099a1b4d6a3ae53088a5c3bc6cd6498c5cf98d4d4022049cb3ff9e",
+  "category": "Security",
+  "publisher": "RealVNC Ltd",
+  "previous_version": "7.17.0"
+}

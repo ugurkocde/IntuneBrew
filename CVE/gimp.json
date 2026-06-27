@@ -1,7 +1,7 @@
 {
   "app_name": "Gimp",
   "app_key": "gimp",
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-06-26",
   "total_cves": 79,
   "summary": {
     "critical": 1,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2018-12713",
       "published_date": "2018-06-24",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP through 2.10.2 makes g_get_tmp_dir calls to establish temporary filenames, which may result in a filename that already exists, as demonstrated by the gimp_write_and_read_file function in app/tests/test-xcf.c. This might be leveraged by attackers to overwrite files or read file content that was intended to be private.",
       "base_score": 9.1,
       "severity": "CRITICAL",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2026-6384",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-28",
+      "last_modified_date": "2026-06-17",
       "description": "A flaw was found in gimp. This buffer overflow vulnerability in the GIF image loading component's `ReadJeffsImage` function allows an attacker to write beyond an allocated buffer by processing a specially crafted GIF file. This can lead to a denial of service or potentially arbitrary code execution.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2026-4150",
       "published_date": "2026-04-11",
-      "last_modified_date": "2026-04-14",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP PSD File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PSD files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28807.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2026-4151",
       "published_date": "2026-04-11",
-      "last_modified_date": "2026-04-14",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP ANI File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of ANI files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28813.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2026-4152",
       "published_date": "2026-04-11",
-      "last_modified_date": "2026-04-14",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP JP2 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of JP2 files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28863.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2026-4153",
       "published_date": "2026-04-11",
-      "last_modified_date": "2026-04-14",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28874.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2026-4154",
       "published_date": "2026-04-11",
-      "last_modified_date": "2026-04-14",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP XPM File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of XPM files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28901.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2026-0797",
       "published_date": "2026-02-20",
-      "last_modified_date": "2026-02-24",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP ICO File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of ICO files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28599.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2026-2044",
       "published_date": "2026-02-20",
-      "last_modified_date": "2026-02-24",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP PGM File Parsing Uninitialized Memory Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PGM files. The issue results from the lack of proper initialization of memory prior to accessing it. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28158.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2026-2045",
       "published_date": "2026-02-20",
-      "last_modified_date": "2026-02-24",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP XWD File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of XWD files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28265.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2026-2047",
       "published_date": "2026-02-20",
-      "last_modified_date": "2026-02-24",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP ICNS File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of ICNS files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28530.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -245,7 +245,7 @@
     {
       "cve_id": "CVE-2026-2048",
       "published_date": "2026-02-20",
-      "last_modified_date": "2026-02-24",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP XWD File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of XWD files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28591.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2025-15059",
       "published_date": "2026-01-23",
-      "last_modified_date": "2026-02-26",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP PSP File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28232.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2025-14422",
       "published_date": "2025-12-23",
-      "last_modified_date": "2026-01-20",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP PNM File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PNM files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28273.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -308,7 +308,7 @@
     {
       "cve_id": "CVE-2025-14423",
       "published_date": "2025-12-23",
-      "last_modified_date": "2026-01-20",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP LBM File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of LBM files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28311.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2025-14424",
       "published_date": "2025-12-23",
-      "last_modified_date": "2026-01-20",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP XCF File Parsing Use-After-Free Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of XCF files. The issue results from the lack of validating the existence of an object prior to performing operations on the object. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28376.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -350,7 +350,7 @@
     {
       "cve_id": "CVE-2025-14425",
       "published_date": "2025-12-23",
-      "last_modified_date": "2026-01-20",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP JP2 File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of JP2 files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28248.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -371,7 +371,7 @@
     {
       "cve_id": "CVE-2025-10920",
       "published_date": "2025-10-29",
-      "last_modified_date": "2025-11-04",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP ICNS File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of ICNS files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-27684.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -392,7 +392,7 @@
     {
       "cve_id": "CVE-2025-10921",
       "published_date": "2025-10-29",
-      "last_modified_date": "2025-11-04",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP HDR File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of HDR files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-27803.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -413,7 +413,7 @@
     {
       "cve_id": "CVE-2025-10922",
       "published_date": "2025-10-29",
-      "last_modified_date": "2025-11-04",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP DCM File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of DCM files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-27863.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -434,7 +434,7 @@
     {
       "cve_id": "CVE-2025-10923",
       "published_date": "2025-10-29",
-      "last_modified_date": "2025-11-04",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP WBMP File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of WBMP files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-27878.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -455,7 +455,7 @@
     {
       "cve_id": "CVE-2025-10924",
       "published_date": "2025-10-29",
-      "last_modified_date": "2025-11-04",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP FF File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of FF files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-27836.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -476,7 +476,7 @@
     {
       "cve_id": "CVE-2025-10925",
       "published_date": "2025-10-29",
-      "last_modified_date": "2025-11-04",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP ILBM File Parsing Stack-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of ILBM files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a stack-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-27793.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -497,7 +497,7 @@
     {
       "cve_id": "CVE-2025-10934",
       "published_date": "2025-10-29",
-      "last_modified_date": "2025-11-04",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP XWD File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of XWD files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-27823.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -518,7 +518,7 @@
     {
       "cve_id": "CVE-2025-8672",
       "published_date": "2025-08-11",
-      "last_modified_date": "2025-09-12",
+      "last_modified_date": "2026-06-17",
       "description": "MacOS version of GIMP bundles a Python interpreter that inherits the Transparency, Consent, and Control (TCC) permissions\ngranted by the user to the main application bundle. An attacker with local user access can\ninvoke this interpreter with arbitrary commands or scripts, leveraging the\napplication's previously granted TCC permissions to access user's files in privacy-protected folders without triggering user prompts. Accessing other resources beyond previously granted TCC permissions will prompt the user for approval in the name of GIMP, potentially disguising attacker's malicious intent.\n\nThis issue has been fixed in 3.1.4.2 version of GIMP.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -539,7 +539,7 @@
     {
       "cve_id": "CVE-2025-5473",
       "published_date": "2025-06-06",
-      "last_modified_date": "2025-11-03",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP ICO File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of ICO files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before writing to memory. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-26752.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -560,7 +560,7 @@
     {
       "cve_id": "CVE-2025-2760",
       "published_date": "2025-04-23",
-      "last_modified_date": "2025-11-03",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP XWD File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of XWD files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before allocating a buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25082.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -581,7 +581,7 @@
     {
       "cve_id": "CVE-2025-2761",
       "published_date": "2025-04-23",
-      "last_modified_date": "2025-11-03",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP FLI File Parsing Out-Of-Bounds Write Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of FLI files. The issue results from the lack of proper validation of user-supplied data, which can result in a write past the end of an allocated buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-25100.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -602,7 +602,7 @@
     {
       "cve_id": "CVE-2023-44441",
       "published_date": "2024-05-03",
-      "last_modified_date": "2025-11-04",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP DDS File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of DDS files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process.\n. Was ZDI-CAN-22093.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -623,7 +623,7 @@
     {
       "cve_id": "CVE-2023-44442",
       "published_date": "2024-05-03",
-      "last_modified_date": "2025-11-04",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP PSD File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PSD files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute arbitrary code in the context of the current process. Was ZDI-CAN-22094.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -644,7 +644,7 @@
     {
       "cve_id": "CVE-2023-44443",
       "published_date": "2024-05-03",
-      "last_modified_date": "2025-08-14",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP PSP File Parsing Integer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PSP files. The issue results from the lack of proper validation of user-supplied data, which can result in an integer overflow before writing to memory. An attacker can leverage this vulnerability to execute code in the context of the current process.\n. Was ZDI-CAN-22096.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -665,7 +665,7 @@
     {
       "cve_id": "CVE-2023-44444",
       "published_date": "2024-05-03",
-      "last_modified_date": "2025-11-04",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP PSP File Parsing Off-By-One Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of PSP files. Crafted data in a PSP file can trigger an off-by-one error when calculating a location to write within a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process.\n. Was ZDI-CAN-22097.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -686,7 +686,7 @@
     {
       "cve_id": "CVE-2021-45463",
       "published_date": "2021-12-23",
-      "last_modified_date": "2025-11-03",
+      "last_modified_date": "2026-06-17",
       "description": "load_cache in GEGL before 0.4.34 allows shell expansion when a pathname in a constructed command line is not escaped or filtered. This is caused by use of the system library function for execution of the ImageMagick convert fallback in magick-load. NOTE: GEGL releases before 0.4.34 are used in GIMP releases before 2.10.30; however, this does not imply that GIMP builds enable the vulnerable feature.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -707,7 +707,7 @@
     {
       "cve_id": "CVE-2017-17784",
       "published_date": "2017-12-20",
-      "last_modified_date": "2026-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "In GIMP 2.8.22, there is a heap-based buffer over-read in load_image in plug-ins/common/file-gbr.c in the gbr import parser, related to mishandling of UTF-8 data.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -728,7 +728,7 @@
     {
       "cve_id": "CVE-2017-17785",
       "published_date": "2017-12-20",
-      "last_modified_date": "2026-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "In GIMP 2.8.22, there is a heap-based buffer overflow in the fli_read_brun function in plug-ins/file-fli/fli.c.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -749,7 +749,7 @@
     {
       "cve_id": "CVE-2017-17786",
       "published_date": "2017-12-20",
-      "last_modified_date": "2026-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "In GIMP 2.8.22, there is a heap-based buffer over-read in ReadImage in plug-ins/common/file-tga.c (related to bgr2rgb.part.1) via an unexpected bits-per-pixel value for an RGBA image.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -770,7 +770,7 @@
     {
       "cve_id": "CVE-2017-17787",
       "published_date": "2017-12-20",
-      "last_modified_date": "2026-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "In GIMP 2.8.22, there is a heap-based buffer over-read in read_creator_block in plug-ins/common/file-psp.c.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -791,7 +791,7 @@
     {
       "cve_id": "CVE-2017-17789",
       "published_date": "2017-12-20",
-      "last_modified_date": "2026-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "In GIMP 2.8.22, there is a heap-based buffer overflow in read_channel_data in plug-ins/common/file-psp.c.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -812,7 +812,7 @@
     {
       "cve_id": "CVE-2016-4994",
       "published_date": "2016-07-12",
-      "last_modified_date": "2026-05-06",
+      "last_modified_date": "2026-06-17",
       "description": "Use-after-free vulnerability in the xcf_load_image function in app/xcf/xcf-load.c in GIMP allows remote attackers to cause a denial of service (program crash) or possibly execute arbitrary code via a crafted XCF file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -833,7 +833,7 @@
     {
       "cve_id": "CVE-2012-5576",
       "published_date": "2012-12-18",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Multiple stack-based buffer overflows in file-xwd.c in the X Window Dump (XWD) plug-in in GIMP 2.8.2 allow remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a large (1) red, (2) green, or (3) blue color mask in an XWD file.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -854,7 +854,7 @@
     {
       "cve_id": "CVE-2012-2763",
       "published_date": "2012-07-12",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Buffer overflow in the readstr_upto function in plug-ins/script-fu/tinyscheme/scheme.c in GIMP 2.6.12 and earlier, and possibly 2.6.13, allows remote attackers to execute arbitrary code via a long string in a command to the script-fu server.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -875,7 +875,7 @@
     {
       "cve_id": "CVE-2011-1782",
       "published_date": "2011-07-27",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Heap-based buffer overflow in the read_channel_data function in file-psp.c in the Paint Shop Pro (PSP) plugin in GIMP 2.6.11 allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a PSP_COMP_RLE (aka RLE compression) image file that begins a long run count at the end of the image.  NOTE: some of these details are obtained from third party information.  NOTE: this vulnerability exists because of an incomplete fix for CVE-2010-4543.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -896,7 +896,7 @@
     {
       "cve_id": "CVE-2010-4541",
       "published_date": "2011-01-07",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Stack-based buffer overflow in the loadit function in plug-ins/common/sphere-designer.c in the SPHERE DESIGNER plugin in GIMP 2.6.11 allows user-assisted remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a long \"Number of lights\" field in a plugin configuration file.  NOTE: it may be uncommon to obtain a GIMP plugin configuration file from an untrusted source that is separate from the distribution of the plugin itself.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -917,7 +917,7 @@
     {
       "cve_id": "CVE-2010-4543",
       "published_date": "2011-01-07",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Heap-based buffer overflow in the read_channel_data function in file-psp.c in the Paint Shop Pro (PSP) plugin in GIMP 2.6.11 allows remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a PSP_COMP_RLE (aka RLE compression) image file that begins a long run count at the end of the image.  NOTE: some of these details are obtained from third party information.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -938,7 +938,7 @@
     {
       "cve_id": "CVE-2009-3909",
       "published_date": "2009-11-19",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Integer overflow in the read_channel_data function in plug-ins/file-psd/psd-load.c in GIMP 2.6.7 might allow remote attackers to execute arbitrary code via a crafted PSD file that triggers a heap-based buffer overflow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -959,7 +959,7 @@
     {
       "cve_id": "CVE-2009-1570",
       "published_date": "2009-11-13",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Integer overflow in the ReadImage function in plug-ins/file-bmp/bmp-read.c in GIMP 2.6.7 might allow remote attackers to execute arbitrary code via a BMP file with crafted width and height values that trigger a heap-based buffer overflow.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -980,7 +980,7 @@
     {
       "cve_id": "CVE-2009-0723",
       "published_date": "2009-03-23",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Multiple integer overflows in LittleCMS (aka lcms or liblcms) before 1.18beta2, as used in Firefox 3.1beta, OpenJDK, and GIMP, allow context-dependent attackers to execute arbitrary code via a crafted image file that triggers a heap-based buffer overflow.  NOTE: some of these details are obtained from third party information.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1001,7 +1001,7 @@
     {
       "cve_id": "CVE-2009-0733",
       "published_date": "2009-03-23",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Multiple stack-based buffer overflows in the ReadSetOfCurves function in LittleCMS (aka lcms or liblcms) before 1.18beta2, as used in Firefox 3.1beta, OpenJDK, and GIMP, allow context-dependent attackers to execute arbitrary code via a crafted image file associated with a large integer value for the (1) input or (2) output channel, related to the ReadLUT_A2B and ReadLUT_B2A functions.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -1022,7 +1022,7 @@
     {
       "cve_id": "CVE-2026-40915",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-28",
+      "last_modified_date": "2026-06-17",
       "description": "A flaw was found in GIMP. A remote attacker could exploit an integer overflow vulnerability in the FITS image loader by providing a specially crafted FITS file. This integer overflow leads to a zero-byte memory allocation, which is then subjected to a heap buffer overflow when processing pixel data. Successful exploitation could result in a denial of service (DoS) or potentially arbitrary code execution.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1043,7 +1043,7 @@
     {
       "cve_id": "CVE-2026-40916",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-28",
+      "last_modified_date": "2026-06-17",
       "description": "A flaw was found in GIMP. A stack buffer overflow vulnerability in the TIM image loader's 4BPP decoding path allows a local user to cause a Denial of Service (DoS). By opening a specially crafted TIM image file, the application crashes due to an unconditional overflow when writing to a variable-length array.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -1064,7 +1064,7 @@
     {
       "cve_id": "CVE-2026-40917",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-28",
+      "last_modified_date": "2026-06-17",
       "description": "A flaw was found in GIMP. This vulnerability, a heap buffer over-read in the `icns_slurp()` function, occurs when processing specially crafted ICNS image files. An attacker could provide a malicious ICNS file, potentially leading to application crashes or information disclosure on systems that process such files.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -1085,7 +1085,7 @@
     {
       "cve_id": "CVE-2026-40918",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-28",
+      "last_modified_date": "2026-06-17",
       "description": "A flaw was found in GIMP. Processing a specially crafted PVR image file with large dimensions can lead to a denial of service (DoS). This occurs due to a stack-based buffer overflow and an out-of-bounds read in the PVR image loader, causing the application to crash. Systems that process untrusted PVR image files are affected.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1106,7 +1106,7 @@
     {
       "cve_id": "CVE-2026-40919",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-04-28",
+      "last_modified_date": "2026-06-17",
       "description": "A flaw was found in GIMP. This vulnerability, a buffer overflow in the `file-seattle-filmworks` plugin, can be exploited when a user opens a specially crafted Seattle Filmworks file. A remote attacker could leverage this to cause a denial of service (DoS), leading to the plugin crashing and potentially impacting the stability of the GIMP application.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1127,7 +1127,7 @@
     {
       "cve_id": "CVE-2026-4887",
       "published_date": "2026-03-26",
-      "last_modified_date": "2026-05-14",
+      "last_modified_date": "2026-06-17",
       "description": "A flaw was found in GIMP. This issue is a heap buffer over-read in GIMP PCX file loader due to an off-by-one error. A remote attacker could exploit this by convincing a user to open a specially crafted PCX image. Successful exploitation could lead to out-of-bounds memory disclosure and a possible application crash, resulting in a Denial of Service (DoS).",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1148,7 +1148,7 @@
     {
       "cve_id": "CVE-2026-2272",
       "published_date": "2026-03-26",
-      "last_modified_date": "2026-04-03",
+      "last_modified_date": "2026-06-17",
       "description": "A flaw was found in GIMP. An integer overflow vulnerability exists when processing ICO image files, specifically in the `ico_read_info` and `ico_read_icon` functions. This issue arises because a size calculation for image buffers can wrap around due to a 32-bit integer evaluation, allowing oversized image headers to bypass security checks. A remote attacker could exploit this by providing a specially crafted ICO file, leading to a buffer overflow and memory corruption, which may result in an application level denial of service.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -1169,7 +1169,7 @@
     {
       "cve_id": "CVE-2025-6035",
       "published_date": "2025-06-13",
-      "last_modified_date": "2026-03-19",
+      "last_modified_date": "2026-06-25",
       "description": "A flaw was found in GIMP. An integer overflow vulnerability exists in the GIMP \"Despeckle\"  plug-in. The issue occurs due to unchecked multiplication of image dimensions, such as width, height, and bytes-per-pixel (img_bpp), which can result in allocating insufficient memory and subsequently performing out-of-bounds writes. This issue could lead to heap corruption, a potential denial of service (DoS), or arbitrary code execution in certain scenarios.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1190,7 +1190,7 @@
     {
       "cve_id": "CVE-2022-32990",
       "published_date": "2022-06-24",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An issue in gimp_layer_invalidate_boundary of GNOME GIMP 2.10.30 allows attackers to trigger an unhandled exception via a crafted XCF file, causing a Denial of Service (DoS).",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1211,7 +1211,7 @@
     {
       "cve_id": "CVE-2022-30067",
       "published_date": "2022-05-17",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "GIMP 2.10.30 and 2.99.10 are vulnerable to Buffer Overflow. Through a crafted XCF file, the program will allocate for a huge amount of memory, resulting in insufficient memory or program crash.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1232,7 +1232,7 @@
     {
       "cve_id": "CVE-2017-17788",
       "published_date": "2017-12-20",
-      "last_modified_date": "2026-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "In GIMP 2.8.22, there is a stack-based buffer over-read in xcf_load_stream in app/xcf/xcf.c when there is no '\\0' character after the version string.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1253,7 +1253,7 @@
     {
       "cve_id": "CVE-2013-1913",
       "published_date": "2013-12-12",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Integer overflow in the load_image function in file-xwd.c in the X Window Dump (XWD) plug-in in GIMP 2.6.9 and earlier, when used with glib before 2.24, allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via a large color entries value in an X Window System (XWD) image dump.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1274,7 +1274,7 @@
     {
       "cve_id": "CVE-2013-1978",
       "published_date": "2013-12-12",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Heap-based buffer overflow in the read_xwd_cols function in file-xwd.c in the X Window Dump (XWD) plug-in in GIMP 2.6.9 and earlier allows remote attackers to cause a denial of service (crash) and possibly execute arbitrary code via an X Window System (XWD) image dump with more colors than color map entries.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1295,7 +1295,7 @@
     {
       "cve_id": "CVE-2012-4245",
       "published_date": "2012-08-31",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "The scriptfu network server in GIMP 2.6 does not require authentication, which allows remote attackers to execute arbitrary commands via the python-fu-eval command.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1316,7 +1316,7 @@
     {
       "cve_id": "CVE-2012-3402",
       "published_date": "2012-08-25",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Integer overflow in plug-ins/common/psd.c in the Adobe Photoshop PSD plugin in GIMP 2.2.13 and earlier allows remote attackers to cause a denial of service and possibly execute arbitrary code via a crafted channels header value in a PSD image file, which triggers a heap-based buffer overflow, a different vulnerability than CVE-2009-3909.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1337,7 +1337,7 @@
     {
       "cve_id": "CVE-2012-3403",
       "published_date": "2012-08-25",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Heap-based buffer overflow in the KiSS CEL file format plug-in in GIMP 2.8.x and earlier allows remote attackers to cause a denial of service and possibly execute arbitrary code via a crafted KiSS palette file, which triggers an \"invalid free.\"",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1358,7 +1358,7 @@
     {
       "cve_id": "CVE-2012-3481",
       "published_date": "2012-08-25",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Integer overflow in the ReadImage function in plug-ins/common/file-gif-load.c in the GIF image format plug-in in GIMP 2.8.x and earlier allows remote attackers to cause a denial of service (application crash) and possibly execute arbitrary code via crafted height and len properties in a GIF image file, which triggers a heap-based buffer overflow.  NOTE: some of these details are obtained from third party information.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1379,7 +1379,7 @@
     {
       "cve_id": "CVE-2012-3236",
       "published_date": "2012-07-12",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "fits-io.c in GIMP before 2.8.1 allows remote attackers to cause a denial of service (NULL pointer dereference and application crash) via a malformed XTENSION header of a .fit file, as demonstrated using a long string.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -1400,7 +1400,7 @@
     {
       "cve_id": "CVE-2011-2896",
       "published_date": "2011-08-19",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "The LZW decompressor in the LWZReadByte function in giftoppm.c in the David Koblas GIF decoder in PBMPLUS, as used in the gif_read_lzw function in filter/image-gif.c in CUPS before 1.4.7, the LZWReadByte function in plug-ins/common/file-gif-load.c in GIMP 2.6.11 and earlier, the LZWReadByte function in img/gifread.c in XPCE in SWI-Prolog 5.10.4 and earlier, and other products, does not properly handle code words that are absent from the decompression table when encountered, which allows remote attackers to trigger an infinite loop or a heap-based buffer overflow, and possibly execute arbitrary code, via a crafted compressed stream, a related issue to CVE-2006-1168 and CVE-2011-2895.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -1421,7 +1421,7 @@
     {
       "cve_id": "CVE-2011-1178",
       "published_date": "2011-06-06",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Multiple integer overflows in the load_image function in file-pcx.c in the Personal Computer Exchange (PCX) plugin in GIMP 2.6.x and earlier allow remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a crafted PCX image that triggers a heap-based buffer overflow.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1442,7 +1442,7 @@
     {
       "cve_id": "CVE-2010-4540",
       "published_date": "2011-01-07",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Stack-based buffer overflow in the load_preset_response function in plug-ins/lighting/lighting-ui.c in the \"LIGHTING EFFECTS > LIGHT\" plugin in GIMP 2.6.11 allows user-assisted remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a long Position field in a plugin configuration file.  NOTE: it may be uncommon to obtain a GIMP plugin configuration file from an untrusted source that is separate from the distribution of the plugin itself.  NOTE: some of these details are obtained from third party information.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1463,7 +1463,7 @@
     {
       "cve_id": "CVE-2010-4542",
       "published_date": "2011-01-07",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Stack-based buffer overflow in the gfig_read_parameter_gimp_rgb function in plug-ins/gfig/gfig-style.c in the GFIG plugin in GIMP 2.6.11 allows user-assisted remote attackers to cause a denial of service (application crash) or possibly execute arbitrary code via a long Foreground field in a plugin configuration file.  NOTE: it may be uncommon to obtain a GIMP plugin configuration file from an untrusted source that is separate from the distribution of the plugin itself. NOTE: some of these details are obtained from third party information.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1484,7 +1484,7 @@
     {
       "cve_id": "CVE-2009-0581",
       "published_date": "2009-03-23",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Memory leak in LittleCMS (aka lcms or liblcms) before 1.18beta2, as used in Firefox 3.1beta, OpenJDK, and GIMP, allows context-dependent attackers to cause a denial of service (memory consumption and application crash) via a crafted image file.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -1505,7 +1505,7 @@
     {
       "cve_id": "CVE-2006-4519",
       "published_date": "2007-07-10",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Multiple integer overflows in the image loader plug-ins in GIMP before 2.2.16 allow user-assisted remote attackers to execute arbitrary code via crafted length values in (1) DICOM, (2) PNM, (3) PSD, (4) PSP, (5) Sun RAS, (6) XBM, and (7) XWD files.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1526,7 +1526,7 @@
     {
       "cve_id": "CVE-2007-2949",
       "published_date": "2007-07-04",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Integer overflow in the seek_to_and_unpack_pixeldata function in the psd.c plugin in Gimp 2.2.15 allows remote attackers to execute arbitrary code via a crafted PSD file that contains a large (1) width or (2) height value.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1547,7 +1547,7 @@
     {
       "cve_id": "CVE-2007-3126",
       "published_date": "2007-06-08",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Gimp before 2.8.22 allows context-dependent attackers to cause a denial of service (crash) via an ICO file with an InfoHeader containing a Height of zero, a similar issue to CVE-2007-2237.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -1568,7 +1568,7 @@
     {
       "cve_id": "CVE-2007-2356",
       "published_date": "2007-04-30",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Stack-based buffer overflow in the set_color_table function in sunras.c in the SUNRAS plugin in Gimp 2.2.14 allows user-assisted remote attackers to execute arbitrary code via a crafted RAS file.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -1589,7 +1589,7 @@
     {
       "cve_id": "CVE-2006-3404",
       "published_date": "2006-07-06",
-      "last_modified_date": "2026-04-16",
+      "last_modified_date": "2026-06-16",
       "description": "Buffer overflow in the xcf_load_vector function in app/xcf/xcf-load.c for gimp before 2.2.12 allows user-assisted attackers to cause a denial of service (crash) and possibly execute arbitrary code via an XCF file with a large num_axes value in the VECTORS property.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -1610,7 +1610,7 @@
     {
       "cve_id": "CVE-2005-0654",
       "published_date": "2005-05-02",
-      "last_modified_date": "2026-04-16",
+      "last_modified_date": "2026-06-16",
       "description": "gifload.exe in GIMP 2.0.5, 2.2.3, and possibly 2.2.4 allows remote attackers or local users to cause a denial of service (application crash) via the image descriptor (1) height or (2) width fields set to zero.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -1631,7 +1631,7 @@
     {
       "cve_id": "CVE-2026-2239",
       "published_date": "2026-03-26",
-      "last_modified_date": "2026-04-03",
+      "last_modified_date": "2026-06-17",
       "description": "A flaw was found in GIMP. Heap-buffer-overflow vulnerability exists in the fread_pascal_string function when processing a specially crafted PSD (Photoshop Document) file. This occurs because the buffer allocated for a Pascal string is not properly null-terminated, leading to an out-of-bounds read when strlen() is subsequently called. Successfully exploiting this vulnerability can cause the application to crash, resulting in an application level Denial of Service.",
       "base_score": 2.8,
       "severity": "LOW",
@@ -1652,7 +1652,7 @@
     {
       "cve_id": "CVE-2026-2271",
       "published_date": "2026-03-26",
-      "last_modified_date": "2026-04-21",
+      "last_modified_date": "2026-06-17",
       "description": "A flaw was found in GIMP's PSP (Paint Shop Pro) file parser. A remote attacker could exploit an integer overflow vulnerability in the read_creator_block() function by providing a specially crafted PSP image file. This vulnerability occurs when a 32-bit length value from the file is used for memory allocation without proper validation, leading to a heap overflow and an out-of-bounds write. Successful exploitation could result in an application level denial of service.",
       "base_score": 3.3,
       "severity": "LOW",

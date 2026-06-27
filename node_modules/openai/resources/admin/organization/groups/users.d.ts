@@ -17,6 +17,19 @@ export declare class Users extends APIResource {
      */
     create(groupID: string, body: UserCreateParams, options?: RequestOptions): APIPromise<UserCreateResponse>;
     /**
+     * Retrieves a user in a group.
+     *
+     * @example
+     * ```ts
+     * const user =
+     *   await client.admin.organization.groups.users.retrieve(
+     *     'user_id',
+     *     { group_id: 'group_id' },
+     *   );
+     * ```
+     */
+    retrieve(userID: string, params: UserRetrieveParams, options?: RequestOptions): APIPromise<UserRetrieveResponse>;
+    /**
      * Lists the users assigned to a group.
      *
      * @example
@@ -80,6 +93,35 @@ export interface UserCreateResponse {
     user_id: string;
 }
 /**
+ * Details about a user returned from an organization group membership lookup.
+ */
+export interface UserRetrieveResponse {
+    /**
+     * Identifier for the user.
+     */
+    id: string;
+    /**
+     * Email address of the user, or `null` for users without an email.
+     */
+    email: string | null;
+    /**
+     * Whether the user is a service account.
+     */
+    is_service_account: boolean | null;
+    /**
+     * Display name of the user.
+     */
+    name: string;
+    /**
+     * URL of the user's profile picture, if available.
+     */
+    picture: string | null;
+    /**
+     * The type of user.
+     */
+    user_type: 'user' | 'tenant_user';
+}
+/**
  * Confirmation payload returned after removing a user from a group.
  */
 export interface UserDeleteResponse {
@@ -98,6 +140,12 @@ export interface UserCreateParams {
      */
     user_id: string;
 }
+export interface UserRetrieveParams {
+    /**
+     * The ID of the group to inspect.
+     */
+    group_id: string;
+}
 export interface UserListParams extends NextCursorPageParams {
     /**
      * Specifies the sort order of users in the list.
@@ -111,6 +159,6 @@ export interface UserDeleteParams {
     group_id: string;
 }
 export declare namespace Users {
-    export { type OrganizationGroupUser as OrganizationGroupUser, type UserCreateResponse as UserCreateResponse, type UserDeleteResponse as UserDeleteResponse, type OrganizationGroupUsersPage as OrganizationGroupUsersPage, type UserCreateParams as UserCreateParams, type UserListParams as UserListParams, type UserDeleteParams as UserDeleteParams, };
+    export { type OrganizationGroupUser as OrganizationGroupUser, type UserCreateResponse as UserCreateResponse, type UserRetrieveResponse as UserRetrieveResponse, type UserDeleteResponse as UserDeleteResponse, type OrganizationGroupUsersPage as OrganizationGroupUsersPage, type UserCreateParams as UserCreateParams, type UserRetrieveParams as UserRetrieveParams, type UserListParams as UserListParams, type UserDeleteParams as UserDeleteParams, };
 }
 //# sourceMappingURL=users.d.ts.map

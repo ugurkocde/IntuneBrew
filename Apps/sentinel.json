@@ -1,8 +1,8 @@
 {
   "name": "Sentinel",
   "description": "Language and framework for policy as code",
-  "version": "0.40.0",
-  "url": "https://releases.hashicorp.com/sentinel/0.40.0/sentinel_0.40.0_darwin_arm64.zip",
+  "version": "0.41.0",
+  "url": "https://releases.hashicorp.com/sentinel/0.41.0/sentinel_0.41.0_darwin_arm64.zip",
   "vendor_url": "https://releases.hashicorp.com/sentinel/0.40.0/sentinel_0.40.0_darwin_arm64.zip",
   "bundleId": "com.getsentinel.sentinel",
   "homepage": "https://docs.hashicorp.com/sentinel",
@@ -10,5 +10,6 @@
   "type": "app",
   "category": "Developer Tools",
   "publisher": "HashiCorp, Inc.",
-  "previous_version": "0.40.0"
+  "previous_version": "0.41.0",
+  "sha": "1ce9485f96ad51520cf19a74ce4ed4a4edc3ffc988fd537a26a4bd937662bf65"
 }

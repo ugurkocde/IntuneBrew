@@ -17,6 +17,18 @@ fi
 echo "Stopping Discord if running..."
 pkill -f "Discord" 2>/dev/null || true
 
+# Kill application with bundle ID com.hnc.Discord if running
+echo "Stopping application with bundle ID com.hnc.Discord if running..."
+killall -9 "com.hnc.Discord" 2>/dev/null || true
+
+# Kill application with bundle ID com.hnc.Discord.helper.Plugin if running
+echo "Stopping application with bundle ID com.hnc.Discord.helper.Plugin if running..."
+killall -9 "com.hnc.Discord.helper.Plugin" 2>/dev/null || true
+
+# Kill application with bundle ID com.hnc.Discord.helper.Renderer if running
+echo "Stopping application with bundle ID com.hnc.Discord.helper.Renderer if running..."
+killall -9 "com.hnc.Discord.helper.Renderer" 2>/dev/null || true
+
 # Remove /Applications/Discord.app
 echo "Removing /Applications/Discord.app..."
 if [ -d "/Applications/Discord.app" ]; then

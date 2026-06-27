@@ -1,14 +1,14 @@
 {
   "name": "BibDesk",
   "description": "Edit and manage bibliographies",
-  "version": "1.9.11",
-  "url": "https://downloads.sourceforge.net/bibdesk/BibDesk/BibDesk-1.9.11/BibDesk-1.9.11.dmg",
+  "version": "1.9.12",
+  "url": "https://downloads.sourceforge.net/bibdesk/BibDesk/BibDesk-1.9.12/BibDesk-1.9.12.dmg",
   "vendor_url": "https://downloads.sourceforge.net/bibdesk/BibDesk/BibDesk-1.9.11/BibDesk-1.9.11.dmg",
   "bundleId": "edu.ucsd.cs.mmccrack.bibdesk",
   "homepage": "https://bibdesk.sourceforge.io/",
-  "fileName": "BibDesk-1.9.11.dmg",
-  "sha": "94a4b2aafc77db0ac5f3aeb9d6a375b293e705ea2f03dec1c0bb681a4cf50413",
+  "fileName": "BibDesk-1.9.12.dmg",
+  "sha": "a32e553d5214e2b87d941bb8678b00fb9958c80ac271d9dd7cd7c24cc0e9caa3",
   "category": "Productivity",
   "publisher": "The BibDesk Project",
-  "previous_version": "1.9.11"
+  "previous_version": "1.9.12"
 }

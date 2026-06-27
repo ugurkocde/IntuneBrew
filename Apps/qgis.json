@@ -1,14 +1,14 @@
 {
   "name": "QGIS",
   "description": "Geographic Information System",
-  "version": "4.0.2",
-  "url": "https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_0_2.dmg",
+  "version": "4.0.3",
+  "url": "https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_0_3.dmg",
   "vendor_url": "https://download.qgis.org/downloads/macos/pr/qgis_pr_final-4_0_1.dmg",
   "bundleId": "org.qgis.qgis",
   "homepage": "https://www.qgis.org/",
-  "fileName": "qgis_pr_final-4_0_2.dmg",
-  "sha": "5246a99ccb348dad33c0fadc732c7c6f59f5693f4a61aed059862f4b1d228aa3",
+  "fileName": "qgis_pr_final-4_0_3.dmg",
+  "sha": "bf340ccafe07f74c528ec4ef7b89be4ef91dda51763a4c41994294df67da23b7",
   "category": "Productivity",
   "publisher": "QGIS.org",
-  "previous_version": "4.0.2"
+  "previous_version": "4.0.3"
 }

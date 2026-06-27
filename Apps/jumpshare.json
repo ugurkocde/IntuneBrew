@@ -1,16 +1,16 @@
 {
   "name": "Jumpshare",
   "description": "File sharing, screen recording, and screenshot capture app",
-  "version": "3.4.22",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/jumpshare_3.4.22.pkg",
+  "version": "3.5.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/jumpshare_3.5.1.pkg",
   "vendor_url": "https://d21hi1or3tbtjm.cloudfront.net/desktop/mac/updates/Jumpshare-3.4.22.tar.bz2",
   "bundleId": "com.jumpshare.Jumpshare",
   "homepage": "https://jumpshare.com/",
-  "fileName": "jumpshare_3.4.22.pkg",
+  "fileName": "jumpshare_3.5.1.pkg",
   "type": "app",
-  "sha": "1b54725874e2abedfb4fe8565a0fec621efd6f87d06c4e799a6bb5a84bbff826",
+  "sha": "13be7fa84ac7419e8ff924f3f36e5b9a48c4a84bdf5cc1884c09db3d99b85570",
   "changelog": "https://jumpshare.com/release-notes",
-  "previous_version": "3.4.22",
+  "previous_version": "3.5.1",
   "category": "Productivity",
   "publisher": "Jumpshare, Inc."
 }

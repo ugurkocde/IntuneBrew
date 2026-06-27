@@ -3,7 +3,7 @@ Object.defineProperty(exports, "__esModule", { value: true });
 exports.parseNullableDef = parseNullableDef;
 const parseDef_1 = require("../parseDef.js");
 const union_1 = require("./union.js");
-function parseNullableDef(def, refs) {
+function parseNullableDef(def, refs, forceResolution) {
     if (['ZodString', 'ZodNumber', 'ZodBigInt', 'ZodBoolean', 'ZodNull'].includes(def.innerType._def.typeName) &&
         (!def.innerType._def.checks || !def.innerType._def.checks.length)) {
         if (refs.target === 'openApi3' || refs.nullableStrategy === 'property') {
@@ -20,7 +20,7 @@ function parseNullableDef(def, refs) {
         const base = (0, parseDef_1.parseDef)(def.innerType._def, {
             ...refs,
             currentPath: [...refs.currentPath],
-        });
+        }, forceResolution);
         if (base && '$ref' in base)
             return { allOf: [base], nullable: true };
         return base && { ...base, nullable: true };

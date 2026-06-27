@@ -1,10 +1,10 @@
 {
   "app_name": "Ollama",
   "app_key": "ollama",
-  "last_updated": "2026-05-17",
-  "total_cves": 21,
+  "last_updated": "2026-06-26",
+  "total_cves": 23,
   "summary": {
-    "critical": 2,
+    "critical": 4,
     "high": 15,
     "medium": 3,
     "low": 1,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2026-7482",
       "published_date": "2026-05-04",
-      "last_modified_date": "2026-05-11",
+      "last_modified_date": "2026-06-17",
       "description": "Ollama before 0.17.1 contains a heap out-of-bounds read vulnerability in the GGUF model loader. The /api/create endpoint accepts an attacker-supplied GGUF file in which the declared tensor offset and size exceed the file's actual length; during quantization in fs/ggml/gguf.go and server/quantization.go (WriteTo()), the server reads past the allocated heap buffer. The leaked memory contents may include environment variables, API keys, system prompts, and concurrent users' conversation data, and can be exfiltrated by uploading the resulting model artifact through the /api/push endpoint to an attacker-controlled registry. The /api/create and /api/push endpoints have no authentication in the upstream distribution. Default deployments bind to 127.0.0.1, but the documented OLLAMA_HOST=0.0.0.0 configuration is widely used in practice (large public-internet exposure observed).",
       "base_score": 9.1,
       "severity": "CRITICAL",
@@ -33,9 +33,51 @@
       "product": "ollama"
     },
     {
+      "cve_id": "CVE-2026-42248",
+      "published_date": "2026-04-29",
+      "last_modified_date": "2026-06-17",
+      "description": "Ollama for Windows does not perform integrity or authenticity verification of downloaded update executables. Unlike other platforms, the Windows implementation of the update verification routine unconditionally returns success so no digital signature or trust validation is performed before staging or executing update payloads, enabling attacker\u2011supplied executables to be accepted and later executed by the application.\n\nCritically, Ollama for Windows performs silent automatic updates, so the malicious payload may be installed automatically without user awareness.\n\nMaintainers of this project were notified early about this vulnerability, but didn't respond with the details of vulnerability or vulnerable version range. Versions from 0.12.10 to 0.17.5 were tested and confirmed as vulnerable, other versions were not tested but might also be vulnerable.",
+      "base_score": 9.8,
+      "severity": "CRITICAL",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": "0.12.10",
+      "affected_version_start_type": "including",
+      "affected_version_end": "0.17.5",
+      "affected_version_end_type": "including",
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "ollama",
+      "product": "ollama"
+    },
+    {
+      "cve_id": "CVE-2026-42249",
+      "published_date": "2026-04-29",
+      "last_modified_date": "2026-06-17",
+      "description": "Ollama for Windows\u00a0contains a Remote Code Execution vulnerability in its update mechanism due to improper handling of attacker\u2011controlled HTTP response headers. When downloading updates, the application constructs local file paths using values derived from HTTP headers without validation. These values are passed directly to filepath.Join, allowing path traversal sequences (../) to be resolved and enabling files to be written outside the intended update staging directory.\nAn attacker who can influence update responses can exploit this flaw to write arbitrary executables to attacker\u2011chosen locations accessible to the current user, including the Windows Startup directory. This allows execution of arbitrary executables.\n\nCritically, when chained with CVE\u20112026\u201142248 (Missing Signature Verification for Updates),\u00a0an attacker can deliver malicious payloads that are written to sensitive locations and executed automatically. Because Ollama for Windows performs silent automatic updates and executes staged binaries without user interaction, this results in automatic and persistent code execution without user awareness.\n\nMaintainers of this project were notified early about this vulnerability, but didn't respond with the details of vulnerability or vulnerable version range. Versions from 0.12.10 to 0.17.5 were tested and confirmed as vulnerable, other versions were not tested but might also be vulnerable.",
+      "base_score": 9.8,
+      "severity": "CRITICAL",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:N/S:U/C:H/I:H/A:H",
+      "affected_version_start": "0.12.10",
+      "affected_version_start_type": "including",
+      "affected_version_end": "0.17.5",
+      "affected_version_end_type": "including",
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "ollama",
+      "product": "ollama"
+    },
+    {
       "cve_id": "CVE-2025-63389",
       "published_date": "2025-12-18",
-      "last_modified_date": "2026-01-22",
+      "last_modified_date": "2026-06-17",
       "description": "A critical authentication bypass vulnerability exists in Ollama platform's API endpoints in versions prior to and including v0.12.3. The platform exposes multiple API endpoints without requiring authentication, enabling remote attackers to perform unauthorized model management operations.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -56,7 +98,7 @@
     {
       "cve_id": "CVE-2025-66959",
       "published_date": "2026-01-21",
-      "last_modified_date": "2026-02-02",
+      "last_modified_date": "2026-06-17",
       "description": "An issue in ollama v.0.12.10 allows a remote attacker to cause a denial of service via the GGUF decoder",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -77,7 +119,7 @@
     {
       "cve_id": "CVE-2025-66960",
       "published_date": "2026-01-21",
-      "last_modified_date": "2026-02-02",
+      "last_modified_date": "2026-06-17",
       "description": "An issue in ollama v.0.12.10 allows a remote attacker to cause a denial of service via the fs/ggml/gguf.go, function readGGUFV1String reads a string length from untrusted GGUF metadata",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -98,7 +140,7 @@
     {
       "cve_id": "CVE-2025-15514",
       "published_date": "2026-01-12",
-      "last_modified_date": "2026-01-21",
+      "last_modified_date": "2026-06-17",
       "description": "Ollama 0.11.5-rc0 through current version 0.13.5 contain a null pointer dereference vulnerability in the multi-modal model image processing functionality. When processing base64-encoded image data via the /api/chat endpoint, the application fails to validate that the decoded data represents valid media before passing it to the mtmd_helper_bitmap_init_from_buf function. This function can return NULL for malformed input, but the code does not check this return value before dereferencing the pointer in subsequent operations. A remote attacker can exploit this by sending specially crafted base64 image data that decodes to invalid media, causing a segmentation fault and crashing the runner process. This results in a denial of service condition where the model becomes unavailable to all users until the service is restarted.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -119,7 +161,7 @@
     {
       "cve_id": "CVE-2025-1975",
       "published_date": "2025-05-16",
-      "last_modified_date": "2025-06-24",
+      "last_modified_date": "2026-06-17",
       "description": "A vulnerability in the Ollama server version 0.5.11 allows a malicious user to cause a Denial of Service (DoS) attack by customizing the manifest content and spoofing a service. This is due to improper validation of array index access when downloading a model via the /api/pull endpoint, which can lead to a server crash.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -140,7 +182,7 @@
     {
       "cve_id": "CVE-2024-12055",
       "published_date": "2025-03-20",
-      "last_modified_date": "2025-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "A vulnerability in Ollama versions <=0.3.14 allows a malicious user to create a customized gguf model file that can be uploaded to the public Ollama server. When the server processes this malicious model, it crashes, leading to a Denial of Service (DoS) attack. The root cause of the issue is an out-of-bounds read in the gguf.go file.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -161,7 +203,7 @@
     {
       "cve_id": "CVE-2024-8063",
       "published_date": "2025-03-20",
-      "last_modified_date": "2025-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "A divide by zero vulnerability exists in ollama/ollama version v0.3.3. The vulnerability occurs when importing GGUF models with a crafted type for `block_count` in the Modelfile. This can lead to a denial of service (DoS) condition when the server processes the model, causing it to crash.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -182,7 +224,7 @@
     {
       "cve_id": "CVE-2025-0312",
       "published_date": "2025-03-20",
-      "last_modified_date": "2025-03-28",
+      "last_modified_date": "2026-06-17",
       "description": "A vulnerability in ollama/ollama versions <=0.3.14 allows a malicious user to create a customized GGUF model file that, when uploaded and created on the Ollama server, can cause a crash due to an unchecked null pointer dereference. This can lead to a Denial of Service (DoS) attack via remote network.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -203,7 +245,7 @@
     {
       "cve_id": "CVE-2025-0315",
       "published_date": "2025-03-20",
-      "last_modified_date": "2025-04-02",
+      "last_modified_date": "2026-06-17",
       "description": "A vulnerability in ollama/ollama <=0.3.14 allows a malicious user to create a customized GGUF model file, upload it to the Ollama server, and create it. This can cause the server to allocate unlimited memory, leading to a Denial of Service (DoS) attack.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -224,7 +266,7 @@
     {
       "cve_id": "CVE-2025-0317",
       "published_date": "2025-03-20",
-      "last_modified_date": "2025-04-02",
+      "last_modified_date": "2026-06-17",
       "description": "A vulnerability in ollama/ollama versions <=0.3.14 allows a malicious user to upload and create a customized GGUF model file on the Ollama server. This can lead to a division by zero error in the ggufPadding function, causing the server to crash and resulting in a Denial of Service (DoS) attack.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -245,7 +287,7 @@
     {
       "cve_id": "CVE-2024-39719",
       "published_date": "2024-10-31",
-      "last_modified_date": "2025-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in Ollama through 0.3.14. File existence disclosure can occur via api/create. When calling the CreateModel route with a path parameter that does not exist, it reflects the \"File does not exist\" error message to the attacker, providing a primitive for file existence on the server.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -266,7 +308,7 @@
     {
       "cve_id": "CVE-2024-39720",
       "published_date": "2024-10-31",
-      "last_modified_date": "2025-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in Ollama before 0.1.46. An attacker can use two HTTP requests to upload a malformed GGUF file containing just 4 bytes starting with the GGUF custom magic header. By leveraging a custom Modelfile that includes a FROM statement pointing to the attacker-controlled blob file, the attacker can crash the application through the CreateModel route, leading to a segmentation fault (signal SIGSEGV: segmentation violation).",
       "base_score": 8.2,
       "severity": "HIGH",
@@ -287,7 +329,7 @@
     {
       "cve_id": "CVE-2024-39721",
       "published_date": "2024-10-31",
-      "last_modified_date": "2025-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in Ollama before 0.1.34. The CreateModelHandler function uses os.Open to read a file until completion. The req.Path parameter is user-controlled and can be set to /dev/random, which is blocking, causing the goroutine to run infinitely (even after the HTTP request is aborted by the client).",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -308,7 +350,7 @@
     {
       "cve_id": "CVE-2024-39722",
       "published_date": "2024-10-31",
-      "last_modified_date": "2025-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in Ollama before 0.1.46. It exposes which files exist on the server on which it is deployed via path traversal in the api/push route.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -329,7 +371,7 @@
     {
       "cve_id": "CVE-2024-45436",
       "published_date": "2024-08-29",
-      "last_modified_date": "2024-08-30",
+      "last_modified_date": "2026-06-17",
       "description": "extractFromZipFile in model.go in Ollama before 0.1.47 can extract members of a ZIP archive outside of the parent directory.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -350,7 +392,7 @@
     {
       "cve_id": "CVE-2024-37032",
       "published_date": "2024-05-31",
-      "last_modified_date": "2025-05-01",
+      "last_modified_date": "2026-06-17",
       "description": "Ollama before 0.1.34 does not validate the format of the digest (sha256 with 64 hex digits) when getting the model path, and thus mishandles the TestGetBlobsPath test cases such as fewer than 64 hex digits, more than 64 hex digits, or an initial ../ substring.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -371,7 +413,7 @@
     {
       "cve_id": "CVE-2025-44779",
       "published_date": "2025-08-07",
-      "last_modified_date": "2025-08-14",
+      "last_modified_date": "2026-06-17",
       "description": "An issue in Ollama v0.1.33 allows attackers to delete arbitrary files via sending a crafted packet to the endpoint /api/pull.",
       "base_score": 6.6,
       "severity": "MEDIUM",
@@ -392,7 +434,7 @@
     {
       "cve_id": "CVE-2025-51471",
       "published_date": "2025-07-22",
-      "last_modified_date": "2025-10-17",
+      "last_modified_date": "2026-06-17",
       "description": "Cross-Domain Token Exposure in server.auth.getAuthorizationToken in Ollama 0.6.7 allows remote attackers to steal authentication tokens and bypass access controls via a malicious realm value in a WWW-Authenticate header returned by the /api/pull endpoint.",
       "base_score": 6.9,
       "severity": "MEDIUM",
@@ -413,7 +455,7 @@
     {
       "cve_id": "CVE-2024-28224",
       "published_date": "2024-04-08",
-      "last_modified_date": "2025-05-13",
+      "last_modified_date": "2026-06-17",
       "description": "Ollama before 0.1.29 has a DNS rebinding vulnerability that can inadvertently allow remote access to the full API, thereby letting an unauthorized user chat with a large language model, delete a model, or cause a denial of service (resource exhaustion).",
       "base_score": 6.6,
       "severity": "MEDIUM",
@@ -434,7 +476,7 @@
     {
       "cve_id": "CVE-2026-7020",
       "published_date": "2026-04-26",
-      "last_modified_date": "2026-05-06",
+      "last_modified_date": "2026-06-17",
       "description": "A security flaw has been discovered in Ollama up to 0.20.2. This affects the function digestToPath of the file x/imagegen/transfer/transfer.go of the component Tensor Model Transfer Handler. The manipulation of the argument digest results in path traversal. The attack may be performed from remote. This attack is characterized by high complexity. The exploitability is reported as difficult. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
       "base_score": 3.7,
       "severity": "LOW",

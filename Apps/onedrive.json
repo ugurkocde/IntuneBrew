@@ -1,15 +1,15 @@
 {
   "name": "OneDrive",
   "description": "Cloud storage client",
-  "version": "26.063.0405.0002",
-  "url": "https://oneclient.sfx.ms/Mac/Installers/26.063.0405.0002/universal/OneDrive.pkg",
+  "version": "26.098.0524.0004",
+  "url": "https://oneclient.sfx.ms/Mac/Installers/26.098.0524.0004/universal/OneDrive.pkg",
   "vendor_url": "https://oneclient.sfx.ms/Mac/Installers/26.040.0301.0001/universal/OneDrive.pkg",
   "bundleId": "com.microsoft.OneDrive",
   "homepage": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
   "fileName": "OneDrive.pkg",
-  "sha": "2a832e34c4603b7de122d3a7bc7652f1b254dc8af0045f0ec6e4730427f68623",
+  "sha": "85dfbe556b09a8e287186bed4a61d05a8a04350a0f669d99a3ed3e0396ae85ef",
   "changelog": "https://support.microsoft.com/en-us/office/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
-  "previous_version": "26.063.0405.0002"
+  "previous_version": "26.098.0524.0004"
 }

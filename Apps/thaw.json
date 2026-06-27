@@ -1,0 +1,15 @@
+{
+  "name": "Thaw",
+  "description": "Menu bar manager",
+  "version": "1.2.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/thaw_1.2.0.pkg",
+  "vendor_url": "https://github.com/stonerl/Thaw/releases/download/1.2.0/Thaw_1.2.0.zip",
+  "bundleId": "com.stonerl.Thaw",
+  "homepage": "https://github.com/stonerl/Thaw/",
+  "fileName": "thaw_1.2.0.pkg",
+  "type": "app",
+  "sha": "049e376a016260d3728ee5bc6b048f9fb3cd46c37eb05a72d9917db657ce7ce4",
+  "category": "Utilities",
+  "publisher": "stonerl",
+  "previous_version": "1.2.0"
+}

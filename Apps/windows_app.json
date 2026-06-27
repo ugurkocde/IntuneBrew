@@ -1,15 +1,15 @@
 {
   "name": "Windows App",
   "description": "Connect to Windows",
-  "version": "11.3.5",
-  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Windows_App_11.3.5_installer.pkg",
+  "version": "11.3.6",
+  "url": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Windows_App_11.3.6_installer.pkg",
   "vendor_url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Windows_App_11.3.5_installer.pkg",
   "bundleId": "com.microsoft.rdc.macos",
   "homepage": "https://aka.ms/WindowsApp",
-  "fileName": "Windows_App_11.3.5_installer.pkg",
-  "sha": "f725f2a4e48203c6e943d11507f0467938433aeafd220e950456f63638ac05fb",
+  "fileName": "Windows_App_11.3.6_installer.pkg",
+  "sha": "e3a0e38b29de21868b3dd2c2d22f838a2e49df2908a26cbf61f34b52c42c4032",
   "changelog": "https://learn.microsoft.com/en-us/windows-app/whats-new?tabs=macos",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
-  "previous_version": "11.3.5"
+  "previous_version": "11.3.6"
 }

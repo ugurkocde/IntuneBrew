@@ -1,14 +1,14 @@
 {
   "name": "Mozilla Thunderbird",
   "description": "Customizable email client",
-  "version": "150.0.2",
-  "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/150.0.2/mac/en-US/Thunderbird%20150.0.2.dmg",
+  "version": "152.0",
+  "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/152.0/mac/en-US/Thunderbird%20152.0.dmg",
   "vendor_url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/149.0.2/mac/en-US/Thunderbird%20149.0.2.dmg",
   "bundleId": "org.mozilla.thunderbird",
   "homepage": "https://www.thunderbird.net/en-US/",
-  "fileName": "Thunderbird 150.0.2.dmg",
-  "sha": "6ae5c89ebe9aca4f896b0af5f160e45de99df8e12f3e7c7a51cd2d500f6528cb",
+  "fileName": "Thunderbird 152.0.dmg",
+  "sha": "42ac9a908831d8fb32c85dbd484a8d31106dd9fee950be5b43565dcf8303ea7f",
   "category": "Communication",
   "publisher": "Mozilla Foundation",
-  "previous_version": "150.0.2"
+  "previous_version": "152.0"
 }

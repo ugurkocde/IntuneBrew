@@ -13,11 +13,10 @@ class OpenAIRealtimeWS extends internal_base_1.OpenAIRealtimeEmitter {
         if (hasProvider && !props.__resolvedApiKey) {
             throw new Error([
                 'Cannot open Realtime WebSocket with a function-based apiKey.',
-                'Use the .create() method so that the key is resolved before connecting:',
-                'await OpenAIRealtimeWS.create(client, { model })',
+                'Use the .create() method so that the key is resolved before connecting.',
             ].join('\n'));
         }
-        this.url = (0, internal_base_1.buildRealtimeURL)(client, props.model);
+        this.url = (0, internal_base_1.buildRealtimeURL)(client, props);
         this.socket = new WS.WebSocket(this.url, {
             ...props.options,
             headers: {

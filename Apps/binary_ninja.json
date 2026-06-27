@@ -1,13 +1,13 @@
 {
   "name": "Binary Ninja",
   "description": "Reverse engineering platform",
-  "version": "5.3.9434",
+  "version": "5.3.9757",
   "url": "https://cdn.binary.ninja/installers/binaryninja_free_macosx.dmg",
   "vendor_url": "https://cdn.binary.ninja/installers/binaryninja_free_macosx.dmg",
   "bundleId": "com.vector35.binaryninja",
   "homepage": "https://binary.ninja/",
   "fileName": "binaryninja_free_macosx.dmg",
-  "sha": "11976441b9aa139ab1127f3fa1deefea2f1fa28460cbce0d4a78e6842ade6ffc",
+  "sha": "6d86c18aeb2ca44978be0395cd4fab9f4258f795752fbd1644dfad5f989d45fb",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:03:14Z",
     "qa_result": "Installation successful and verified",
@@ -20,5 +20,5 @@
   },
   "category": "Developer Tools",
   "publisher": "Vector 35, LLC",
-  "previous_version": "5.3.9434"
+  "previous_version": "5.3.9757"
 }

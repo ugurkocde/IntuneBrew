@@ -1,15 +1,15 @@
 {
   "name": "Parallels Desktop",
   "description": "Desktop virtualization software",
-  "version": "26.3.2-57398",
-  "url": "https://download.parallels.com/desktop/v26/26.3.2-57398/ParallelsDesktop-26.3.2-57398.dmg",
+  "version": "26.4.0-57513",
+  "url": "https://download.parallels.com/desktop/v26/26.4.0-57513/ParallelsDesktop-26.4.0-57513.dmg",
   "vendor_url": "https://download.parallels.com/desktop/v26/26.3.0-57392/ParallelsDesktop-26.3.0-57392.dmg",
   "bundleId": "com.parallels.desktop.console",
   "homepage": "https://www.parallels.com/products/desktop/",
-  "fileName": "ParallelsDesktop-26.3.2-57398.dmg",
-  "sha": "2636d7404b4f29f0ac80ea6e7df9868e66b2a554ff24adeac7dd87594149ed52",
+  "fileName": "ParallelsDesktop-26.4.0-57513.dmg",
+  "sha": "424ba5fa1661d09ee0f3e0fe4fb44b99faed2b68bdd3ec25b2b7e6e6d35a62e8",
   "changelog": "https://kb.parallels.com/en/129060",
   "category": "Utilities",
   "publisher": "Parallels International GmbH",
-  "previous_version": "26.3.2-57398"
+  "previous_version": "26.4.0-57513"
 }

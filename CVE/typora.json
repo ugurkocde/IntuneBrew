@@ -1,7 +1,7 @@
 {
   "app_name": "Typora",
   "app_key": "typora",
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-06-26",
   "total_cves": 23,
   "summary": {
     "critical": 1,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2019-20374",
       "published_date": "2020-01-09",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "A mutation cross-site scripting (XSS) issue in Typora through 0.9.9.31.2 on macOS and through 0.9.81 on Linux leads to Remote Code Execution through Mermaid code blocks. To exploit this vulnerability, one must open a file in Typora. The XSS vulnerability is then triggered due to improper HTML sanitization. Given that the application is based on the Electron framework, the XSS leads to remote code execution in an unsandboxed environment.",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2024-33300",
       "published_date": "2024-05-01",
-      "last_modified_date": "2025-06-10",
+      "last_modified_date": "2026-06-17",
       "description": "Typora v1.0.0 through v1.7 version (below) Markdown editor has a cross-site scripting (XSS) vulnerability, which allows attackers to execute arbitrary code by uploading Markdown files.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2020-18336",
       "published_date": "2023-10-10",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Cross Site Scripting (XSS) vulnerability found in Typora v.0.9.65 allows a remote attacker to obtain sensitive information via the PDF file exporting function.",
       "base_score": 7.4,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2023-2316",
       "published_date": "2023-08-19",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Improper path handling in Typora before 1.6.7 on Windows and Linux allows a crafted webpage to access local files and exfiltrate them to remote web servers via \"typora://app/<absolute-path>\". \n\nThis vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.\n\n\n\n\n\n",
       "base_score": 7.4,
       "severity": "HIGH",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2023-2317",
       "published_date": "2023-08-19",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "DOM-based XSS in updater/update.html in Typora before 1.6.7 on Windows and Linux allows a crafted markdown file to run arbitrary JavaScript code in the context of Typora main window via loading typora://app/typemark/updater/update.html in <embed> tag. This vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.",
       "base_score": 8.6,
       "severity": "HIGH",
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2019-12172",
       "published_date": "2019-05-17",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Typora 0.9.9.21.1 (1913) allows arbitrary code execution via a modified file: URL syntax in the HREF attribute of an AREA element, as demonstrated by file:\\\\\\ on macOS or Linux, or file://C| on Windows. This is different from CVE-2019-12137.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2019-12137",
       "published_date": "2019-05-16",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Typora 0.9.9.24.6 on macOS allows directory traversal, for execution of arbitrary programs, via a file:/// or ../ substring in a shared note.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2024-41481",
       "published_date": "2024-08-12",
-      "last_modified_date": "2025-03-20",
+      "last_modified_date": "2026-06-17",
       "description": "Typora before 1.9.3 Markdown editor has a cross-site scripting (XSS) vulnerability via the Mermaid component.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2024-41482",
       "published_date": "2024-08-12",
-      "last_modified_date": "2025-03-25",
+      "last_modified_date": "2026-06-17",
       "description": "Typora before 1.9.3 Markdown editor has a cross-site scripting (XSS) vulnerability via the MathJax component.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2024-31783",
       "published_date": "2024-04-16",
-      "last_modified_date": "2025-06-10",
+      "last_modified_date": "2026-06-17",
       "description": "Cross Site Scripting (XSS) vulnerability in Typora v.1.6.7 and before, allows a local attacker to obtain sensitive information via a crafted script during markdown file creation.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2024-31784",
       "published_date": "2024-04-16",
-      "last_modified_date": "2025-06-10",
+      "last_modified_date": "2026-06-17",
       "description": "An issue in Typora v.1.8.10 and before, allows a local attacker to obtain sensitive information and execute arbitrary code via a crafted payload to the src component.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -245,7 +245,7 @@
     {
       "cve_id": "CVE-2023-39703",
       "published_date": "2023-09-01",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "A cross site scripting (XSS) vulnerability in the Markdown Editor component of Typora v1.6.7 allows attackers to execute arbitrary code via uploading a crafted Markdown file.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2023-2971",
       "published_date": "2023-08-19",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Improper path handling in Typora before 1.7.0-dev on Windows and Linux allows a crafted webpage to access local files and exfiltrate them to remote web servers via \"typora://app/typemark/\". This vulnerability can be exploited if a user opens a malicious markdown file in Typora, or copies text from a malicious webpage and paste it into Typora.",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2020-21058",
       "published_date": "2023-06-20",
-      "last_modified_date": "2024-12-10",
+      "last_modified_date": "2026-06-17",
       "description": "Cross Site Scripting vulnerability in Typora v.0.9.79 allows a remote attacker to execute arbitrary code via the mermaid sytax.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -308,7 +308,7 @@
     {
       "cve_id": "CVE-2023-1003",
       "published_date": "2023-03-07",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "A vulnerability, which was classified as critical, was found in Typora up to 1.5.5 on Windows. Affected is an unknown function of the component WSH JScript Handler. The manipulation leads to code injection. An attack has to be approached locally. The exploit has been disclosed to the public and may be used. Upgrading to version 1.5.8 is able to address this issue. It is recommended to upgrade the affected component. The identifier of this vulnerability is VDB-221736.",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2022-40011",
       "published_date": "2022-12-23",
-      "last_modified_date": "2026-02-23",
+      "last_modified_date": "2026-06-17",
       "description": "Typora through 1.3.8 allows XSS if a document containing an SVG element with an attacker-controlled onload attribute is exported and then used at a victim's origin.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -350,7 +350,7 @@
     {
       "cve_id": "CVE-2022-43668",
       "published_date": "2022-12-07",
-      "last_modified_date": "2025-04-23",
+      "last_modified_date": "2026-06-17",
       "description": "Typora versions prior to 1.4.4 fails to properly neutralize JavaScript code, which may result in executing JavaScript code contained in the file when opening a file with the affected product.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -371,7 +371,7 @@
     {
       "cve_id": "CVE-2020-18748",
       "published_date": "2021-08-19",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Cross Site Scripting (XSS) in Typora v0.9.65 allows attackers to execute arbitrary code via mathjax syntax due to a mathjax configuration error in the mathematical formula blocks. This is a different vulnerability from CVE-2020-18221.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -392,7 +392,7 @@
     {
       "cve_id": "CVE-2020-18221",
       "published_date": "2021-05-26",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Cross Site Scripting (XSS) in Typora v0.9.65 and earlier allows remote attackers to execute arbitrary code by injecting commands during block rendering of a mathematical formula.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -413,7 +413,7 @@
     {
       "cve_id": "CVE-2020-18737",
       "published_date": "2021-02-05",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in Typora 0.9.67. There is an XSS vulnerability that causes Remote Code Execution.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -434,7 +434,7 @@
     {
       "cve_id": "CVE-2019-7295",
       "published_date": "2019-01-31",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "typora through 0.9.63 has XSS, with resultant remote command execution, during block rendering of a mathematical formula.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -455,7 +455,7 @@
     {
       "cve_id": "CVE-2019-7296",
       "published_date": "2019-01-31",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "typora through 0.9.64 has XSS, with resultant remote command execution, during inline rendering of a mathematical formula.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -476,7 +476,7 @@
     {
       "cve_id": "CVE-2019-6803",
       "published_date": "2019-01-25",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "typora through 0.9.9.20.3 beta has XSS, with resultant remote command execution, via the left outline bar.",
       "base_score": 6.1,
       "severity": "MEDIUM",

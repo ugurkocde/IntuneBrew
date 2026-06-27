@@ -1,6 +1,6 @@
 import { APIResource } from "../../../../core/resource.js";
 import * as RolesAPI from "./roles.js";
-import { RoleCreateParams, RoleCreateResponse, RoleDeleteParams, RoleDeleteResponse, RoleListParams, RoleListResponse, RoleListResponsesPage, Roles } from "./roles.js";
+import { RoleCreateParams, RoleCreateResponse, RoleDeleteParams, RoleDeleteResponse, RoleListParams, RoleListResponse, RoleListResponsesPage, RoleRetrieveParams, RoleRetrieveResponse, Roles } from "./roles.js";
 import { APIPromise } from "../../../../core/api-promise.js";
 import { ConversationCursorPage, type ConversationCursorPageParams, PagePromise } from "../../../../core/pagination.js";
 import { RequestOptions } from "../../../../internal/request-options.js";
@@ -180,6 +180,6 @@ export interface UserListParams extends ConversationCursorPageParams {
 }
 export declare namespace Users {
     export { type OrganizationUser as OrganizationUser, type UserDeleteResponse as UserDeleteResponse, type OrganizationUsersPage as OrganizationUsersPage, type UserUpdateParams as UserUpdateParams, type UserListParams as UserListParams, };
-    export { Roles as Roles, type RoleCreateResponse as RoleCreateResponse, type RoleListResponse as RoleListResponse, type RoleDeleteResponse as RoleDeleteResponse, type RoleListResponsesPage as RoleListResponsesPage, type RoleCreateParams as RoleCreateParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
+    export { Roles as Roles, type RoleCreateResponse as RoleCreateResponse, type RoleRetrieveResponse as RoleRetrieveResponse, type RoleListResponse as RoleListResponse, type RoleDeleteResponse as RoleDeleteResponse, type RoleListResponsesPage as RoleListResponsesPage, type RoleCreateParams as RoleCreateParams, type RoleRetrieveParams as RoleRetrieveParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
 }
 //# sourceMappingURL=users.d.ts.map

@@ -17,6 +17,10 @@ fi
 echo "Stopping Zotero if running..."
 pkill -f "Zotero" 2>/dev/null || true
 
+# Kill application with bundle ID org.zotero.zotero if running
+echo "Stopping application with bundle ID org.zotero.zotero if running..."
+killall -9 "org.zotero.zotero" 2>/dev/null || true
+
 # Remove /Applications/Zotero.app
 echo "Removing /Applications/Zotero.app..."
 if [ -d "/Applications/Zotero.app" ]; then

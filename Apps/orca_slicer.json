@@ -1,14 +1,14 @@
 {
   "name": "Orca Slicer",
   "description": "G-code generator for 3D printers",
-  "version": "2.3.2",
-  "url": "https://github.com/SoftFever/OrcaSlicer/releases/download/v2.3.2/OrcaSlicer_Mac_universal_V2.3.2.dmg",
+  "version": "2.4.0",
+  "url": "https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.4.0/OrcaSlicer_Mac_universal_V2.4.0.dmg",
   "vendor_url": "https://github.com/SoftFever/OrcaSlicer/releases/download/v2.3.2/OrcaSlicer_Mac_universal_V2.3.2.dmg",
   "bundleId": "com.softfever3d.orca-slicer",
   "homepage": "https://github.com/SoftFever/OrcaSlicer",
-  "fileName": "OrcaSlicer_Mac_universal_V2.3.2.dmg",
-  "sha": "334f7265b1df930e94ac75a318005bbe63f670fe719a9e7778c30f4d7c887cc2",
+  "fileName": "OrcaSlicer_Mac_universal_V2.4.0.dmg",
+  "sha": "9a6ca1583ea9c7199a23b167a2c23398f0255f813cda0bfea5e9ab767a3f6c4d",
   "category": "Utilities",
   "publisher": "SoftFever",
-  "previous_version": "2.3.2"
+  "previous_version": "2.4.0"
 }

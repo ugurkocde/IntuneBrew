@@ -1,14 +1,14 @@
 {
   "name": "Eclipse IDE for Eclipse Committers",
   "description": "Eclipse integrated development environment",
-  "version": "4.39",
-  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-committers-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
+  "version": "4.40",
+  "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-06/R/eclipse-committers-2026-06-R-macosx-cocoa-aarch64.dmg&r=1",
   "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-committers-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
   "bundleId": "epp.package.committers",
   "homepage": "https://eclipse.org/",
-  "fileName": "Eclipse-IDE-for-Eclipse-Committers-4.39.dmg",
-  "sha": "3f59b7088f78b865215ff04cf57d2a2b8def175965b0cb1c22b0cbe75abda7f8",
+  "fileName": "Eclipse-IDE-for-Eclipse-Committers-4.40.dmg",
+  "sha": "069e2418aa5faffd443516b0c147ad9f6453d6b4fc70e5209bd01b3673e48b53",
   "category": "Developer Tools",
   "publisher": "The Eclipse Foundation",
-  "previous_version": "4.39"
+  "previous_version": "4.40"
 }

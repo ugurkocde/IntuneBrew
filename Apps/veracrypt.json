@@ -1,14 +1,14 @@
 {
   "name": "VeraCrypt",
   "description": "Disk encryption software focusing on security based on TrueCrypt",
-  "version": "1.26.24",
-  "url": "https://launchpad.net/veracrypt/trunk/1.26.24/+download/VeraCrypt_1.26.24.dmg",
+  "version": "1.26.29",
+  "url": "https://launchpad.net/veracrypt/trunk/1.26.29/+download/VeraCrypt_1.26.29.dmg",
   "vendor_url": "https://launchpad.net/veracrypt/trunk/1.26.24/+download/VeraCrypt_1.26.24.dmg",
   "bundleId": "com.idrix.pkg.veracrypt",
   "homepage": "https://www.veracrypt.fr/",
-  "fileName": "VeraCrypt_1.26.24.dmg",
-  "sha": "b052052519179ac5ab1ca73df9b087adcd06b95e9b872866e279a68db0745b21",
+  "fileName": "VeraCrypt_1.26.29.dmg",
+  "sha": "a316c2dcb7f42eb3b0fcccbd305ae1c2abc46df6d79e9e5bf0544719d7774ed4",
   "category": "Security",
   "publisher": "IDRIX",
-  "previous_version": "1.26.24"
+  "previous_version": "1.26.29"
 }

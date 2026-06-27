@@ -48,6 +48,20 @@ jobs:
           // Initialize Supabase client
           const supabase = createClient(SUPABASE_URL, SUPABASE_KEY);
 
+          // Fail fast if Supabase credentials are invalid. Without this, a 401
+          // on every query is swallowed by per-call try/catch and the workflow
+          // reports green while doing zero actual work.
+          async function verifySupabaseAuth() {
+            const { error } = await supabase
+              .from('app_versions')
+              .select('id', { count: 'exact', head: true });
+            if (error) {
+              console.error('Supabase auth verification failed:', error);
+              process.exit(1);
+            }
+            console.log('Supabase auth verified');
+          }
+
           // Function to read app JSON files
           async function readAppFiles() {
             try {
@@ -343,7 +357,13 @@ jobs:
           }
 
           // Run the update
-          updateVersionsAndNotify();
+          (async () => {
+            await verifySupabaseAuth();
+            await updateVersionsAndNotify();
+          })().catch((err) => {
+            console.error('Fatal error in update workflow:', err);
+            process.exit(1);
+          });
           EOF
 
       - name: Run version tracking script

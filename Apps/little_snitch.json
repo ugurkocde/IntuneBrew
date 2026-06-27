@@ -1,15 +1,15 @@
 {
   "name": "Little Snitch",
   "description": "Host-based application firewall",
-  "version": "6.3.3",
-  "url": "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-6.3.3.dmg",
+  "version": "6.4.1",
+  "url": "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-6.4.1.dmg",
   "vendor_url": "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-6.3.3.dmg",
   "bundleId": "at.obdev.littlesnitch",
   "homepage": "https://www.obdev.at/products/littlesnitch/index.html",
-  "fileName": "LittleSnitch-6.3.3.dmg",
-  "sha": "9180c2ee2f69259d920255258930783aa7c9cc1ffbbb128920df2f51a9955265",
+  "fileName": "LittleSnitch-6.4.1.dmg",
+  "sha": "46074f19a492dbb36dbbbfc267942beff662b2f2f938c5e517d7e090ba0d7264",
   "changelog": "https://www.obdev.at/products/littlesnitch/releasenotes.html",
   "category": "Security",
   "publisher": "Objective Development Software GmbH",
-  "previous_version": "6.3.3"
+  "previous_version": "6.4.1"
 }

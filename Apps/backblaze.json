@@ -1,14 +1,14 @@
 {
   "name": "Backblaze",
   "description": "Data backup and storage service",
-  "version": "10.0.1.1038",
-  "url": "https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-10.0.1.1038.dmg",
+  "version": "10.0.2.1048",
+  "url": "https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-10.0.2.1048.dmg",
   "vendor_url": "https://secure.backblaze.com/api/install_backblaze?file=bzinstall-mac-10.0.1.1038.dmg",
   "bundleId": "com.backblaze.Backblaze",
   "homepage": "https://backblaze.com/",
-  "fileName": "Backblaze-10.0.1.1038.dmg",
-  "sha": "1d0a05838cb7bf3eaa4bb2d16897b5c6b6d11ff34d5dd0719c3b52d713017f8a",
+  "fileName": "Backblaze-10.0.2.1048.dmg",
+  "sha": "21c7501391c3f28c13fd49c7e4eae24ea2780b708ef690cdc70464a88e141d57",
   "category": "Utilities",
   "publisher": "Backblaze, Inc.",
-  "previous_version": "10.0.1.1038"
+  "previous_version": "10.0.2.1048"
 }

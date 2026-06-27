@@ -24,6 +24,25 @@ export class Roles extends APIResource {
         });
     }
     /**
+     * Retrieves a project role assigned to a group.
+     *
+     * @example
+     * ```ts
+     * const role =
+     *   await client.admin.organization.projects.groups.roles.retrieve(
+     *     'role_id',
+     *     { project_id: 'project_id', group_id: 'group_id' },
+     *   );
+     * ```
+     */
+    retrieve(roleID, params, options) {
+        const { project_id, group_id } = params;
+        return this._client.get(path `/projects/${project_id}/groups/${group_id}/roles/${roleID}`, {
+            ...options,
+            __security: { adminAPIKeyAuth: true },
+        });
+    }
+    /**
      * Lists the project roles assigned to a group within a project.
      *
      * @example

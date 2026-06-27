@@ -1,15 +1,15 @@
 {
   "name": "SystHist",
   "description": "Lists full system and security update installation history",
-  "version": "1.21",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/systhist_1.21.pkg",
+  "version": "1.22",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/systhist_1.22.pkg",
   "vendor_url": "https://eclecticlight.co/wp-content/uploads/2025/06/systhist121.zip",
   "bundleId": "co.eclecticlight.SystHist",
   "homepage": "https://eclecticlight.co/lockrattler-systhist/",
-  "fileName": "systhist_1.21.pkg",
+  "fileName": "systhist_1.22.pkg",
   "type": "app",
-  "sha": "5df1c2d1d08e47d657cca59c9afef248b5e59f405b6209ffefdcdbcf55b346b0",
+  "sha": "25adcac800debfab757d3f1a6e6dda4fe085bc0414b49d8662cf6c120fbfaa2c",
   "category": "Utilities",
   "publisher": "Eclectic Light Co.",
-  "previous_version": "1.21"
+  "previous_version": "1.22"
 }

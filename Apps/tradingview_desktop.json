@@ -1,14 +1,14 @@
 {
   "name": "TradingView Desktop",
   "description": "Charting and social-networking for investment traders",
-  "version": "3.1.0",
-  "url": "https://tvd-packages.tradingview.com/stable/3.1.0/darwin/TradingView.dmg",
+  "version": "3.2.0",
+  "url": "https://tvd-packages.tradingview.com/stable/3.2.0/darwin/TradingView.dmg",
   "vendor_url": "https://tvd-packages.tradingview.com/stable/2.14.0/darwin/TradingView.dmg",
   "bundleId": "com.tradingview.tradingviewapp.desktop",
   "homepage": "https://www.tradingview.com/desktop/",
   "fileName": "TradingView.dmg",
-  "sha": "d1eed77804da7a6a72928595bdfcb920fe658b2ee4e5406d1cfca9af03f04b69",
+  "sha": "972b3a52bc2d50451a29e2a21ed5dced8db674c8b2dd8eae41e280732cb7ff47",
   "category": "Productivity",
   "publisher": "TradingView",
-  "previous_version": "3.1.0"
+  "previous_version": "3.2.0"
 }

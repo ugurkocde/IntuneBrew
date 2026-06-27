@@ -7,5 +7,5 @@ export type JsonSchema7NullableType = {
 } | {
     type: [string, 'null'];
 };
-export declare function parseNullableDef(def: ZodNullableDef, refs: Refs): JsonSchema7NullableType | undefined;
+export declare function parseNullableDef(def: ZodNullableDef, refs: Refs, forceResolution: boolean): JsonSchema7NullableType | undefined;
 //# sourceMappingURL=nullable.d.ts.map

@@ -1,8 +1,8 @@
 declare const formats: {
-    formatters: Record<import("./types").Format, (str: PropertyKey) => string>;
+    formatters: Record<import("./types.mjs").Format, (str: PropertyKey) => string>;
     RFC1738: string;
     RFC3986: string;
-    default: import("./types").Format;
+    default: import("./types.mjs").Format;
 };
 export { stringify } from "./stringify.mjs";
 export { formats };

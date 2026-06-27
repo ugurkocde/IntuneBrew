@@ -1,0 +1,14 @@
+{
+  "name": "Zenmap",
+  "description": "Multi-platform graphical interface for official Nmap Security Scanner",
+  "version": "7.99",
+  "url": "https://nmap.org/dist/nmap-7.99.dmg",
+  "vendor_url": "https://nmap.org/dist/nmap-7.99.dmg",
+  "bundleId": "org.insecure.Zenmap",
+  "homepage": "https://nmap.org/zenmap/",
+  "fileName": "nmap-7.99.dmg",
+  "type": "pkg_in_dmg",
+  "category": "Security",
+  "publisher": "The Nmap Project",
+  "previous_version": "7.99"
+}

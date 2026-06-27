@@ -23,6 +23,10 @@ launchctl unload -w /Library/LaunchAgents/com.dropbox.DropboxMacUpdate.agent.pli
 launchctl unload -w /Library/LaunchDaemons/com.dropbox.DropboxMacUpdate.agent.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.dropbox.DropboxMacUpdate.agent.plist 2>/dev/null || true
 
+# Kill application with bundle ID com.getdropbox.dropbox if running
+echo "Stopping application with bundle ID com.getdropbox.dropbox if running..."
+killall -9 "com.getdropbox.dropbox" 2>/dev/null || true
+
 # Remove /Applications/Dropbox.app
 echo "Removing /Applications/Dropbox.app..."
 if [ -d "/Applications/Dropbox.app" ]; then

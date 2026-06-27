@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-05-17T03:06:23.439Z",
+  "last_full_scan": "2026-06-27T01:30:03.676Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8892,15 +8892,15 @@
       "name": "WiFiman Desktop"
     },
     "kiro": {
-      "last_checked": "2026-02-23T12:05:01.634Z",
-      "bundle_id": null,
-      "status": "unknown",
+      "last_checked": "2026-05-25T00:58:44.737Z",
+      "bundle_id": "com.kiro.kantoku",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "github_search",
       "methods_tried": [
         "mac_app_store",
         "pkg_inspection",
-        "github_search",
-        "openai_improved",
-        "openai_alternative"
+        "github_search"
       ],
       "name": "kiro"
     },
@@ -9045,6 +9045,161 @@
         "github_search"
       ],
       "name": "LastPass"
+    },
+    "siliconmotion_instantview": {
+      "last_checked": "2026-05-19T09:43:38.816Z",
+      "bundle_id": "com.SMI-Inc.InstantView",
+      "status": "verified",
+      "source": "file",
+      "name": "SiliconMotion InstantView"
+    },
+    "meta": {
+      "last_checked": "2026-05-19T15:08:13.413Z",
+      "bundle_id": "com.nightbirdsevolve.Meta",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Meta"
+    },
+    "macshot": {
+      "last_checked": "2026-05-20T13:56:31.042Z",
+      "bundle_id": "com.sw33tlie.macshot.macshot",
+      "status": "verified",
+      "source": "file",
+      "name": "macshot"
+    },
+    "xtool_studio": {
+      "last_checked": "2026-05-20T22:37:32.041Z",
+      "bundle_id": "com.makeblock.xtool-studio",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "xTool Studio"
+    },
+    "zenmap": {
+      "last_checked": "2026-05-21T22:01:22.832Z",
+      "bundle_id": "org.insecure.Zenmap",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Zenmap"
+    },
+    "sipgate": {
+      "last_checked": "2026-05-26T09:31:47.757Z",
+      "bundle_id": "de.sipgate.sipgate",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_alternative",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved",
+        "openai_alternative"
+      ],
+      "name": "sipgate"
+    },
+    "support_app": {
+      "last_checked": "2026-05-26T13:25:18.709Z",
+      "bundle_id": "nl.root3.support",
+      "status": "verified",
+      "source": "file",
+      "name": "Support App"
+    },
+    "brainfm": {
+      "last_checked": "2026-05-31T09:35:27.480Z",
+      "bundle_id": "com.electron.brain.fm",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_alternative",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved",
+        "openai_alternative"
+      ],
+      "name": "Brain.fm"
+    },
+    "macdown_3000": {
+      "last_checked": "2026-05-31T10:14:37.654Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved",
+        "openai_alternative"
+      ],
+      "name": "MacDown 3000"
+    },
+    "r": {
+      "last_checked": "2026-06-08T21:58:54.227Z",
+      "bundle_id": "org.r-project*",
+      "status": "verified",
+      "source": "file",
+      "name": "R"
+    },
+    "viber": {
+      "last_checked": "2026-06-09T10:01:59.120Z",
+      "bundle_id": "com.viber.osx",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Viber"
+    },
+    "microsoft_365_copilot": {
+      "last_checked": "2026-06-10T02:34:17.909Z",
+      "bundle_id": "com.microsoft.m365copilot",
+      "status": "verified",
+      "source": "file",
+      "name": "Microsoft 365 Copilot"
+    },
+    "thaw": {
+      "last_checked": "2026-06-13T11:17:52.178Z",
+      "bundle_id": "com.stonerl.Thaw",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "Thaw"
+    },
+    "real_vnc_server": {
+      "last_checked": "2026-06-17T01:37:39.875Z",
+      "bundle_id": "com.realvnc.vncserver.1",
+      "status": "verified",
+      "source": "file",
+      "name": "Real VNC Server"
     }
   }
 }

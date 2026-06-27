@@ -1,15 +1,15 @@
 {
   "name": "NetBeans IDE",
   "description": "Development environment, tooling platform and application framework",
-  "version": "29",
-  "url": "https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29-arm64.pkg",
+  "version": "30",
+  "url": "https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb30-zulu25/Apache-NetBeans-30-zulu-25-arm64.pkg",
   "vendor_url": "https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29-arm64.pkg",
   "bundleId": "org.apache.netbeans",
   "homepage": "https://netbeans.apache.org/",
-  "fileName": "Apache-NetBeans-29-arm64.pkg",
-  "sha": "5a3dcad4edc2a327b7ef25f0c299060f41879f2ca482e27281700ae9ee14e776",
+  "fileName": "Apache-NetBeans-30-zulu-25-arm64.pkg",
+  "sha": "d7af84ab960540e8a0769e28b400ceac6cb87bd9d2626487db3a08d0cb52f929",
   "changelog": "https://netbeans.apache.org/download/index.html#release-notes",
   "category": "Developer Tools",
   "publisher": "Apache Software Foundation",
-  "previous_version": "29"
+  "previous_version": "30"
 }

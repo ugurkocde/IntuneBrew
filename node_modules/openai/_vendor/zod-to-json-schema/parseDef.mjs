@@ -49,12 +49,21 @@ export function parseDef(def, refs, forceResolution = false) {
     }
     const newItem = { def, path: refs.currentPath, jsonSchema: undefined };
     refs.seen.set(def, newItem);
-    const jsonSchema = selectParser(def, def.typeName, refs, forceResolution);
-    if (jsonSchema) {
-        addMeta(def, refs, jsonSchema);
+    try {
+        const jsonSchema = selectParser(def, def.typeName, refs, forceResolution);
+        if (jsonSchema) {
+            addMeta(def, refs, jsonSchema);
+        }
+        newItem.jsonSchema = jsonSchema;
+        return jsonSchema;
     }
-    newItem.jsonSchema = jsonSchema;
-    return jsonSchema;
+    finally {
+        if (forceResolution && seenItem) {
+            // Materializing a definition temporarily moves it to the definition path. Restore the
+            // original path so later references to a shared inner type don't inherit wrapper metadata.
+            refs.seen.set(def, seenItem);
+        }
+    }
 }
 const get$ref = (item, refs) => {
     switch (refs.$refStrategy) {
@@ -69,7 +78,13 @@ const get$ref = (item, refs) => {
         // `["#","definitions","contactPerson","properties","person1","properties","name"]`
         // then we'll extract it out to `contactPerson_properties_person1_properties_name`
         case 'extract-to-root':
-            const name = item.path.slice(refs.basePath.length + 1).join('_');
+            const name = item.path
+                .slice(refs.basePath.length + 1)
+                // The first part is either the root schema name or an extracted definition
+                // name that is being materialized. Keep it stable so recursive definitions
+                // do not generate a new name each time they are resolved.
+                .map((part, index) => (index === 0 ? part : encodeDefinitionPathPart(part)))
+                .join('_');
             // we don't need to extract the root schema in this case, as it's already
             // been added to the definitions
             if (name !== refs.name && refs.nameStrategy === 'duplicate-ref') {
@@ -88,6 +103,17 @@ const get$ref = (item, refs) => {
             return refs.$refStrategy === 'seen' ? {} : undefined;
         }
     }
+};
+const encodedDefinitionPathPartPrefix = '_x_';
+const encodeDefinitionPathPart = (part) => {
+    if (/^[A-Za-z0-9_-]*$/.test(part) && !part.startsWith(encodedDefinitionPathPartPrefix)) {
+        return part;
+    }
+    let encoded = encodedDefinitionPathPartPrefix;
+    for (let i = 0; i < part.length; i++) {
+        encoded += part.charCodeAt(i).toString(16).padStart(4, '0');
+    }
+    return encoded;
 };
 const getRelativePath = (pathA, pathB) => {
     let i = 0;
@@ -133,17 +159,17 @@ const selectParser = (def, typeName, refs, forceResolution) => {
         case ZodFirstPartyTypeKind.ZodNativeEnum:
             return parseNativeEnumDef(def);
         case ZodFirstPartyTypeKind.ZodNullable:
-            return parseNullableDef(def, refs);
+            return parseNullableDef(def, refs, forceResolution);
         case ZodFirstPartyTypeKind.ZodOptional:
-            return parseOptionalDef(def, refs);
+            return parseOptionalDef(def, refs, forceResolution);
         case ZodFirstPartyTypeKind.ZodMap:
             return parseMapDef(def, refs);
         case ZodFirstPartyTypeKind.ZodSet:
             return parseSetDef(def, refs);
         case ZodFirstPartyTypeKind.ZodLazy:
-            return parseDef(def.getter()._def, refs);
+            return parseDef(def.getter()._def, refs, forceResolution);
         case ZodFirstPartyTypeKind.ZodPromise:
-            return parsePromiseDef(def, refs);
+            return parsePromiseDef(def, refs, forceResolution);
         case ZodFirstPartyTypeKind.ZodNaN:
         case ZodFirstPartyTypeKind.ZodNever:
             return parseNeverDef();
@@ -154,15 +180,15 @@ const selectParser = (def, typeName, refs, forceResolution) => {
         case ZodFirstPartyTypeKind.ZodUnknown:
             return parseUnknownDef();
         case ZodFirstPartyTypeKind.ZodDefault:
-            return parseDefaultDef(def, refs);
+            return parseDefaultDef(def, refs, forceResolution);
         case ZodFirstPartyTypeKind.ZodBranded:
-            return parseBrandedDef(def, refs);
+            return parseBrandedDef(def, refs, forceResolution);
         case ZodFirstPartyTypeKind.ZodReadonly:
-            return parseReadonlyDef(def, refs);
+            return parseReadonlyDef(def, refs, forceResolution);
         case ZodFirstPartyTypeKind.ZodCatch:
-            return parseCatchDef(def, refs);
+            return parseCatchDef(def, refs, forceResolution);
         case ZodFirstPartyTypeKind.ZodPipeline:
-            return parsePipelineDef(def, refs);
+            return parsePipelineDef(def, refs, forceResolution);
         case ZodFirstPartyTypeKind.ZodFunction:
         case ZodFirstPartyTypeKind.ZodVoid:
         case ZodFirstPartyTypeKind.ZodSymbol:

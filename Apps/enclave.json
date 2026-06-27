@@ -1,15 +1,15 @@
 {
   "name": "Enclave",
   "description": "Safely build private networks without configs, firewalls or access control lists",
-  "version": "2025.6.2",
-  "url": "https://release.enclave.io/enclave_osx-installer-x64-stable-2025.6.2.pkg",
+  "version": "2026.6.3",
+  "url": "https://release.enclave.io/enclave_osx-installer-x64-stable-2026.6.3.pkg",
   "vendor_url": "https://release.enclave.io/enclave_osx-installer-x64-stable-2025.6.2.pkg",
   "bundleId": "com.enclave.Enclave",
   "homepage": "https://enclave.io/",
-  "fileName": "enclave_osx-installer-x64-stable-2025.6.2.pkg",
+  "fileName": "enclave_osx-installer-x64-stable-2026.6.3.pkg",
   "type": "pkg",
-  "sha": "892a68a210462496bb8d1b90e2ae50be0eaf44634656ea37081ca4bfd33ba3a8",
+  "sha": "2b306c42f574e60284ad03992960d8c4491f2619034de4a381bd9532029bd652",
   "category": "Security",
   "publisher": "Enclave",
-  "previous_version": "2025.6.2"
+  "previous_version": "2026.6.3"
 }

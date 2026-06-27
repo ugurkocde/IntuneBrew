@@ -1,15 +1,15 @@
 {
   "name": "coconutBattery",
   "description": "Tool to show live information about the batteries in various devices",
-  "version": "4.3.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/coconutbattery_4.3.0.pkg",
+  "version": "4.3.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/coconutbattery_4.3.3.pkg",
   "vendor_url": "https://www.coconut-flavour.com/downloads/coconutBattery_430_209.zip",
   "bundleId": "com.coconut-flavour.coconutBattery-Menu",
   "homepage": "https://www.coconut-flavour.com/coconutbattery/",
-  "fileName": "coconutbattery_4.3.0.pkg",
+  "fileName": "coconutbattery_4.3.3.pkg",
   "type": "app",
-  "previous_version": "4.3.0",
-  "sha": "8de05abfcd5801a303a31d72ec88d3efc5b9ff3f344ae40563a64dd165ed369e",
+  "previous_version": "4.3.3",
+  "sha": "9ea0410a29d7040263708ebdac66e95a5ea8db2eb9bc4ce72d36cdba319ab351",
   "category": "Utilities",
   "publisher": "coconut-flavour"
 }

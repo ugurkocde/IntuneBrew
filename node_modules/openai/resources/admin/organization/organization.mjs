@@ -6,10 +6,14 @@ import * as AuditLogsAPI from "./audit-logs.mjs";
 import { AuditLogs } from "./audit-logs.mjs";
 import * as CertificatesAPI from "./certificates.mjs";
 import { Certificates, } from "./certificates.mjs";
+import * as DataRetentionAPI from "./data-retention.mjs";
+import { DataRetention } from "./data-retention.mjs";
 import * as InvitesAPI from "./invites.mjs";
 import { Invites, } from "./invites.mjs";
 import * as RolesAPI from "./roles.mjs";
 import { Roles, } from "./roles.mjs";
+import * as SpendAlertsAPI from "./spend-alerts.mjs";
+import { SpendAlerts, } from "./spend-alerts.mjs";
 import * as UsageAPI from "./usage.mjs";
 import { Usage, } from "./usage.mjs";
 import * as GroupsAPI from "./groups/groups.mjs";
@@ -28,6 +32,8 @@ export class Organization extends APIResource {
         this.users = new UsersAPI.Users(this._client);
         this.groups = new GroupsAPI.Groups(this._client);
         this.roles = new RolesAPI.Roles(this._client);
+        this.dataRetention = new DataRetentionAPI.DataRetention(this._client);
+        this.spendAlerts = new SpendAlertsAPI.SpendAlerts(this._client);
         this.certificates = new CertificatesAPI.Certificates(this._client);
         this.projects = new ProjectsAPI.Projects(this._client);
     }
@@ -39,6 +45,8 @@ Organization.Invites = Invites;
 Organization.Users = Users;
 Organization.Groups = Groups;
 Organization.Roles = Roles;
+Organization.DataRetention = DataRetention;
+Organization.SpendAlerts = SpendAlerts;
 Organization.Certificates = Certificates;
 Organization.Projects = Projects;
 //# sourceMappingURL=organization.mjs.map

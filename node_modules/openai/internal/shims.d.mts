@@ -1,3 +1,9 @@
+/**
+ * This module provides internal shims and utility functions for environments where certain Node.js or global types may not be available.
+ *
+ * These are used to ensure we can provide a consistent behaviour between different JavaScript environments and good error
+ * messages in cases where an environment isn't fully supported.
+ */
 import type { Fetch } from "./builtin-types.mjs";
 import type { ReadableStream } from "./shim-types.mjs";
 export declare function getDefaultFetch(): Fetch;

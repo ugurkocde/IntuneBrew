@@ -17,12 +17,12 @@ fi
 echo "Stopping EVKey if running..."
 pkill -f "EVKey" 2>/dev/null || true
 
-# Remove /Applications/EVKey.app
-echo "Removing /Applications/EVKey.app..."
-if [ -d "/Applications/EVKey.app" ]; then
-    rm -rf "/Applications/EVKey.app" 2>/dev/null || true
-elif [ -f "/Applications/EVKey.app" ]; then
-    rm -f "/Applications/EVKey.app" 2>/dev/null || true
+# Remove /Applications/EVKeyMac.app
+echo "Removing /Applications/EVKeyMac.app..."
+if [ -d "/Applications/EVKeyMac.app" ]; then
+    rm -rf "/Applications/EVKeyMac.app" 2>/dev/null || true
+elif [ -f "/Applications/EVKeyMac.app" ]; then
+    rm -f "/Applications/EVKeyMac.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Containers/com.lamquangminh.evkey

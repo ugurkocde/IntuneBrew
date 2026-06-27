@@ -17,6 +17,10 @@ fi
 echo "Stopping Mattermost if running..."
 pkill -f "Mattermost" 2>/dev/null || true
 
+# Kill application with bundle ID Mattermost.Desktop if running
+echo "Stopping application with bundle ID Mattermost.Desktop if running..."
+killall -9 "Mattermost.Desktop" 2>/dev/null || true
+
 # Remove /Applications/Mattermost.app
 echo "Removing /Applications/Mattermost.app..."
 if [ -d "/Applications/Mattermost.app" ]; then

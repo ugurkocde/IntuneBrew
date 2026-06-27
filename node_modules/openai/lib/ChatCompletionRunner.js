@@ -10,7 +10,7 @@ class ChatCompletionRunner extends AbstractChatCompletionRunner_1.AbstractChatCo
             ...options,
             headers: { ...options?.headers, 'X-Stainless-Helper-Method': 'runTools' },
         };
-        runner._run(() => runner._runTools(client, params, opts));
+        runner._run(() => runner._runTools(client, params, runner, opts));
         return runner;
     }
     _addMessage(message, emit = true) {

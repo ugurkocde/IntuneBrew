@@ -1,14 +1,14 @@
 {
   "name": "Boom 3D",
   "description": "Volume booster and equaliser software",
-  "version": "2.2.6",
+  "version": "2.3.0",
   "url": "https://dfvk972795zr9.cloudfront.net/Boom3Dmac/webstore/Boom3D.dmg",
   "vendor_url": "https://dfvk972795zr9.cloudfront.net/Boom3Dmac/webstore/Boom3D.dmg",
   "bundleId": "com.globaldelight.Boom3D",
   "homepage": "https://www.globaldelight.com/boom/",
   "fileName": "Boom3D.dmg",
-  "sha": "3a534cf0a5a1f355a72d1bf280eb426c3c0411677d8d74ae1e7214629f5016e0",
+  "sha": "8b4ffc6762911bfcf3b0a60ff54dcd95e56347f23afd24eeead0d95e314a53f9",
   "category": "Utilities",
   "publisher": "Global Delight Technologies Pvt. Ltd.",
-  "previous_version": "2.2.6"
+  "previous_version": "2.3.0"
 }

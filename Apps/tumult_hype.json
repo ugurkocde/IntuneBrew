@@ -1,14 +1,14 @@
 {
   "name": "Tumult Hype",
   "description": "App to create animated and interactive web content",
-  "version": "4.1.20",
-  "url": "https://tumult.com/hype/download/Hype-778.dmg",
+  "version": "4.1.21",
+  "url": "https://tumult.com/hype/download/Hype-780.dmg",
   "vendor_url": "https://tumult.com/hype/download/Hype-778.dmg",
   "bundleId": "com.tumult.Hype4",
   "homepage": "https://tumult.com/hype/",
-  "fileName": "Hype-778.dmg",
-  "sha": "68643d45b0466a2c8b4373c0b64fb8fede389ecfd43de5f7e7432f54838a328b",
+  "fileName": "Hype-780.dmg",
+  "sha": "06ebcae431416dabfcd10bdc7a8906f6c96a3ab6b2d43eae212fab79eaec6a5e",
   "category": "Design",
   "publisher": "Tumult, Inc.",
-  "previous_version": "4.1.20"
+  "previous_version": "4.1.21"
 }

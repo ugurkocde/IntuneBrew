@@ -1,7 +1,7 @@
 {
   "app_name": "Santa",
   "app_key": "santa",
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-06-26",
   "total_cves": 1,
   "summary": {
     "critical": 0,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2018-10405",
       "published_date": "2018-06-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in Google Santa and molcodesignchecker. A maliciously crafted Universal/fat binary can evade third-party code signing checks. By not completing full inspection of the Universal/fat binary, the user of the third-party tool will believe that the code is signed by Apple, but the malicious unsigned code will execute.",
       "base_score": 7.8,
       "severity": "HIGH",

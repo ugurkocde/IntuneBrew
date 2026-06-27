@@ -1,15 +1,15 @@
 {
   "name": "Adobe Acrobat Pro DC",
   "description": "View, create, manipulate, print and manage files in Portable Document Format",
-  "version": "26.001.21563",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/adobe_acrobat_pro_dc_26.001.21563.pkg",
+  "version": "26.001.21691",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/adobe_acrobat_pro_dc_26.001.21691.pkg",
   "vendor_url": "https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2600121431/AcroRdrDC_2600121431_MUI.dmg",
   "bundleId": "com.adobe.Acrobat.Pro",
   "homepage": "https://www.adobe.com/acrobat/pdf-reader.html",
-  "fileName": "adobe_acrobat_pro_dc_26.001.21563.pkg",
+  "fileName": "adobe_acrobat_pro_dc_26.001.21691.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html",
-  "sha": "1a50c20df4e244d29cb1ab42ec9382990e69b49798707279c74adf887ef11fcc",
+  "sha": "f6b4f4773e59dd25fb1a215f0020b80b36b0db885b53bff5edc5835c1980ae14",
   "qa_info": {
     "qa_timestamp": "2025-05-19T07:59:04Z",
     "qa_result": "App not found after installation",
@@ -21,5 +21,5 @@
   },
   "category": "Productivity",
   "publisher": "Adobe Inc.",
-  "previous_version": "26.001.21563"
+  "previous_version": "26.001.21677"
 }

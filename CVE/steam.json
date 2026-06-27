@@ -1,7 +1,7 @@
 {
   "app_name": "Steam",
   "app_key": "steam",
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-06-26",
   "total_cves": 9,
   "summary": {
     "critical": 0,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2021-30481",
       "published_date": "2021-04-10",
-      "last_modified_date": "2025-11-03",
+      "last_modified_date": "2026-06-17",
       "description": "Valve Steam before 2021-04-17, when a Source engine game is installed, allows remote authenticated users to execute arbitrary code because of a buffer overflow that occurs for a Steam invite after one click.",
       "base_score": 8.0,
       "severity": "HIGH",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2020-15530",
       "published_date": "2020-07-05",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An issue was discovered in Valve Steam Client 2.10.91.91. The installer allows local users to gain NT AUTHORITY\\SYSTEM privileges because some parts of %PROGRAMFILES(X86)%\\Steam and/or %COMMONPROGRAMFILES(X86)%\\Steam have weak permissions during a critical time window. An attacker can make this time window arbitrarily long by using opportunistic locks.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2019-17180",
       "published_date": "2019-10-04",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Valve Steam Client before 2019-09-12 allows placing or appending partially controlled filesystem content, as demonstrated by file modifications on Windows in the context of NT AUTHORITY\\SYSTEM. This could lead to denial of service, elevation of privilege, or unspecified other impact.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2019-15315",
       "published_date": "2019-08-21",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Valve Steam Client for Windows through 2019-08-16 allows privilege escalation (to NT AUTHORITY\\SYSTEM) because local users can replace the current versions of SteamService.exe and SteamService.dll with older versions that lack the CVE-2019-14743 patch.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2019-15316",
       "published_date": "2019-08-21",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Valve Steam Client for Windows through 2019-08-20 has weak folder permissions, leading to privilege escalation (to NT AUTHORITY\\SYSTEM) via crafted use of CreateMountPoint.exe and SetOpLock.exe to leverage a TOCTOU race condition.",
       "base_score": 7.0,
       "severity": "HIGH",
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2015-7985",
       "published_date": "2015-11-24",
-      "last_modified_date": "2026-05-06",
+      "last_modified_date": "2026-06-17",
       "description": "Valve Steam 2.10.91.91 uses weak permissions (Users: read and write) for the Install folder, which allows local users to gain privileges via a Trojan horse steam.exe file.",
       "base_score": 7.2,
       "severity": "HIGH",
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2019-14743",
       "published_date": "2019-08-07",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "In Valve Steam Client for Windows through 2019-08-07, HKLM\\SOFTWARE\\Wow6432Node\\Valve\\Steam has explicit \"Full control\" for the Users group, which allows local users to gain NT AUTHORITY\\SYSTEM access.",
       "base_score": 6.6,
       "severity": "MEDIUM",
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2018-12270",
       "published_date": "2019-05-20",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "In Valve Steam 1528829181 BETA, it is possible to perform a homograph / homoglyph attack to create fake URLs in the client, which may trick users into visiting unintended web sites.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2015-4016",
       "published_date": "2015-05-20",
-      "last_modified_date": "2026-05-06",
+      "last_modified_date": "2026-06-17",
       "description": "The client detection protocol in Valve Steam allows remote attackers to cause a denial of service (process crash) via a crafted response to a broadcast packet.",
       "base_score": 5.0,
       "severity": "MEDIUM",

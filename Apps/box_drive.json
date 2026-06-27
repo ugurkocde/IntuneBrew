@@ -1,15 +1,15 @@
 {
   "name": "Box Drive",
   "description": "Client for the Box cloud storage service",
-  "version": "2.51.233",
-  "url": "https://e3.boxcdn.net/desktop/releases/mac/BoxDrive-2.51.233.pkg",
+  "version": "2.52.312",
+  "url": "https://e3.boxcdn.net/desktop/releases/mac/BoxDrive-2.52.312.pkg",
   "vendor_url": "https://e3.boxcdn.net/desktop/releases/mac/BoxDrive-2.51.230.pkg",
   "bundleId": "com.box.desktop",
   "homepage": "https://www.box.com/drive",
-  "fileName": "BoxDrive-2.51.233.pkg",
+  "fileName": "BoxDrive-2.52.312.pkg",
   "type": "pkg",
-  "sha": "4c2a7bf1f14eec4a03d8c4144aecaf8b94ccd9e3c3925d073a89727a1e1a130a",
+  "sha": "395b7e97827be38ceb2d0d4cf2a0073701c5d7ad84cc9355f727160c8cad04bf",
   "category": "Productivity",
   "publisher": "Box, Inc.",
-  "previous_version": "2.51.233"
+  "previous_version": "2.52.312"
 }

@@ -1,15 +1,15 @@
 {
   "name": "Microsoft Office BusinessPro",
   "description": "Office suite",
-  "version": "16.109.26051019",
-  "url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.109.26051019_BusinessPro_Installer.pkg",
+  "version": "16.110.26062112",
+  "url": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.110.26062112_BusinessPro_Installer.pkg",
   "vendor_url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_365_and_Office_16.107.26040410_BusinessPro_Installer.pkg",
   "bundleId": "com.microsoft.autoupdate2",
   "homepage": "https://www.microsoft.com/en-us/microsoft-365/mac/microsoft-365-for-mac/",
-  "fileName": "Microsoft_365_and_Office_16.109.26051019_BusinessPro_Installer.pkg",
+  "fileName": "Microsoft_365_and_Office_16.110.26062112_BusinessPro_Installer.pkg",
   "type": "pkg",
-  "sha": "4740c3fd9c5d8d2283eb2d1ce2d327ab7bbf9d59312bc08bb5ced2b271ad05f8",
+  "sha": "bc2474eaaf1c738f78da05738ff72a957cbf3e6642acaa841d304588d9862acf",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
-  "previous_version": "16.109.26051019"
+  "previous_version": "16.110.26062112"
 }

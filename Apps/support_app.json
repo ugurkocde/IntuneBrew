@@ -1,0 +1,15 @@
+{
+  "name": "Support App",
+  "description": "Menu bar app for user and help desk support",
+  "version": "3.0.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/support_app_3.0.3.pkg",
+  "vendor_url": "https://github.com/root3nl/SupportApp/releases/download/v3.0.3/Support.3.0.3.zip",
+  "bundleId": "nl.root3.support",
+  "homepage": "https://github.com/root3nl/SupportApp",
+  "fileName": "support_app_3.0.3.pkg",
+  "type": "app",
+  "sha": "c802d8a6634ee40996b280686df78cbfa381bc0944768373e4bf0c81f89a2d50",
+  "category": "Utilities",
+  "publisher": "root3nl",
+  "previous_version": "3.0.3"
+}

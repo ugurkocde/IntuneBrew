@@ -1,14 +1,14 @@
 {
   "name": "Dorico",
   "description": "Scoring software",
-  "version": "6.2.20",
-  "url": "https://download.steinberg.net/automated_updates/sda_downloads/ebb343b1-4034-4e2e-8655-536e2ef378a0/Dorico_6.2.20_Installer_mac.dmg",
+  "version": "6.2.30",
+  "url": "https://download.steinberg.net/automated_updates/sda_downloads/2cba044b-898a-41f8-9ab3-ae084c669d98/Dorico_6.2.30_Installer_mac.dmg",
   "vendor_url": "https://download.steinberg.net/automated_updates/sda_downloads/aa79cebc-bdea-4359-98f9-c27535dc1b16/Dorico_6.2.10_Installer_mac.dmg",
   "bundleId": "com.steinberg.dorico",
   "homepage": "https://www.steinberg.net/dorico/",
-  "fileName": "Dorico_6.2.20_Installer_mac.dmg",
-  "sha": "672e6b29a3888b9102a4c9d259812bd0df1973eaa2f81e4a3e5baf92053394a3",
+  "fileName": "Dorico_6.2.30_Installer_mac.dmg",
+  "sha": "3a6650521affd1f519fea22ea0e55f3791b0bcb15c3981da19bd64dd1da86439",
   "category": "Productivity",
   "publisher": "Steinberg Media Technologies GmbH",
-  "previous_version": "6.2.20"
+  "previous_version": "6.2.30"
 }

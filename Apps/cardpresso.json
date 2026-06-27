@@ -1,14 +1,14 @@
 {
   "name": "cardPresso",
   "description": "Card software tool for professional card production",
-  "version": "1.7.130",
-  "url": "https://www.cardpresso.com/downloads/cardpresso_releases/for_mac_osx/cardPresso1.7.130.dmg",
+  "version": "1.7.140",
+  "url": "https://www.cardpresso.com/downloads/cardpresso_releases/for_mac_osx/cardPresso1.7.140.dmg",
   "vendor_url": "https://www.cardpresso.com/downloads/cardpresso_releases/for_mac_osx/cardPresso1.7.130.dmg",
   "bundleId": "com.cardpresso.cardPresso",
   "homepage": "https://www.cardpresso.com/",
-  "fileName": "cardPresso1.7.130.dmg",
-  "sha": "0e8a0b3e0647cef61310341b7b068943b28025a1aeae3d78b57e418fe06e65c7",
+  "fileName": "cardPresso1.7.140.dmg",
+  "sha": "5e8ca104db9a16aa8ae446d9e882b74e9feaf07ff29da5418e526ec46e9045d1",
   "category": "Design",
   "publisher": "CardPresso",
-  "previous_version": "1.7.130"
+  "previous_version": "1.7.140"
 }

@@ -1,7 +1,7 @@
 {
   "app_name": "Snagit",
   "app_key": "snagit",
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-06-26",
   "total_cves": 5,
   "summary": {
     "critical": 0,
@@ -14,8 +14,8 @@
     {
       "cve_id": "CVE-2020-18169",
       "published_date": "2021-07-26",
-      "last_modified_date": "2024-11-21",
-      "description": "A vulnerability in the Windows installer XML (WiX) toolset of TechSmith Snagit 19.1.1.2860 allows attackers to escalate privileges. NOTE: Exploit of the Snagit installer would require the end user to ignore other safety mechanisms provided by the Host OS. See reference document for more details",
+      "last_modified_date": "2026-06-17",
+      "description": "A vulnerability in the Windows installer XML (WiX) toolset of TechSmith Snagit 19.1.1.2860 allows attackers to escalate privileges. NOTE: Exploit of the Snagit installer would require the end user to ignore other safety mechanisms provided by the Host OS. See reference document for more details.",
       "base_score": 7.8,
       "severity": "HIGH",
       "cvss_version": "3.1",
@@ -35,8 +35,8 @@
     {
       "cve_id": "CVE-2020-18171",
       "published_date": "2021-07-26",
-      "last_modified_date": "2024-11-21",
-      "description": "TechSmith Snagit 19.1.0.2653 uses Object Linking and Embedding (OLE) which can allow attackers to obfuscate and embed crafted files used to escalate privileges. NOTE: This implies that Snagit's use of OLE is a security vulnerability unto itself and it is not. See reference document for more details",
+      "last_modified_date": "2026-06-17",
+      "description": "TechSmith Snagit 19.1.0.2653 uses Object Linking and Embedding (OLE) which can allow attackers to obfuscate and embed crafted files used to escalate privileges. NOTE: This implies that Snagit's use of OLE is a security vulnerability unto itself and it is not. See reference document for more details.",
       "base_score": 8.8,
       "severity": "HIGH",
       "cvss_version": "3.1",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2019-13382",
       "published_date": "2019-07-26",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "UploaderService in SnagIT 2019.1.2 allows elevation of privilege by placing an invalid presentation file in %PROGRAMDATA%\\TechSmith\\TechSmith Recorder\\QueuedPresentations and then creating a symbolic link in %PROGRAMDATA%\\Techsmith\\TechSmith Recorder\\InvalidPresentations that points to an arbitrary folder with an arbitrary file name. TechSmith Relay Classic Recorder prior to 5.2.1 on Windows is vulnerable. The vulnerability was introduced in SnagIT Windows 12.4.1.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2010-3130",
       "published_date": "2010-08-26",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Untrusted search path vulnerability in TechSmith Snagit all versions 10.x and 11.x allows local users, and possibly remote attackers, to execute arbitrary code and conduct DLL hijacking attacks via a Trojan horse dwmapi.dll that is located in the same folder as a snag, snagcc, or snagprof file.",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2020-11541",
       "published_date": "2020-05-08",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "In TechSmith SnagIt 11.2.1 through 20.0.3, an XML External Entity (XXE) injection issue exists that would allow a local attacker to exfiltrate data under the local Administrator account.",
       "base_score": 5.5,
       "severity": "MEDIUM",

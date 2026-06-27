@@ -1,8 +1,8 @@
 {
   "name": "Codex",
   "description": "OpenAI's coding agent that runs in your terminal",
-  "version": "0.130.0",
-  "url": "https://github.com/openai/codex/releases/download/rust-v0.130.0/codex-aarch64-apple-darwin.tar.gz",
+  "version": "0.142.3",
+  "url": "https://github.com/openai/codex/releases/download/rust-v0.142.3/codex-aarch64-apple-darwin.tar.gz",
   "vendor_url": "https://github.com/openai/codex/releases/download/rust-v0.120.0/codex-aarch64-apple-darwin.tar.gz",
   "bundleId": "levi.CodexSessionViewer",
   "homepage": "https://github.com/openai/codex",
@@ -10,6 +10,6 @@
   "type": "app",
   "category": "Developer Tools",
   "publisher": "OpenAI",
-  "previous_version": "0.130.0",
-  "sha": "bc50a4b7f9a0c8ca99179189e4659b601107830770e21547dc0c246bce733577"
+  "previous_version": "0.142.3",
+  "sha": "c30315cb41d66d000fc9ad66735f4288d9ff0c7fe748f68f71abad702d72f832"
 }

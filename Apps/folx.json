@@ -1,14 +1,14 @@
 {
   "name": "Folx",
   "description": "Download manager with a torrent client",
-  "version": "5.33",
+  "version": "5.34",
   "url": "https://cdn.electronic.us/products/folx/mac/download/downloader_mac.dmg",
   "vendor_url": "https://cdn.electronic.us/products/folx/mac/download/downloader_mac.dmg",
   "bundleId": "com.eltima.Folx3",
   "homepage": "https://mac.eltima.com/download-manager.html",
   "fileName": "downloader_mac.dmg",
-  "sha": "df967d89d3174b49552df1a59b65ee5ab7eb98632b855d3001b11677c4aa8083",
+  "sha": "5533458b2d767aeb043b2676ad710f6d9236de8d1a9dc02994114c30cf6f02be",
   "category": "Utilities",
   "publisher": "Eltima Software",
-  "previous_version": "5.33"
+  "previous_version": "5.34"
 }

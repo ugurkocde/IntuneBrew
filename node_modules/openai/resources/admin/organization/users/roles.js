@@ -26,6 +26,25 @@ class Roles extends resource_1.APIResource {
         });
     }
     /**
+     * Retrieves an organization role assigned to a user.
+     *
+     * @example
+     * ```ts
+     * const role =
+     *   await client.admin.organization.users.roles.retrieve(
+     *     'role_id',
+     *     { user_id: 'user_id' },
+     *   );
+     * ```
+     */
+    retrieve(roleID, params, options) {
+        const { user_id } = params;
+        return this._client.get((0, path_1.path) `/organization/users/${user_id}/roles/${roleID}`, {
+            ...options,
+            __security: { adminAPIKeyAuth: true },
+        });
+    }
+    /**
      * Lists the organization roles assigned to a user within the organization.
      *
      * @example

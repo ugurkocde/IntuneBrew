@@ -1,6 +1,6 @@
 import { APIResource } from "../../../../../core/resource.mjs";
 import * as RolesAPI from "./roles.mjs";
-import { RoleCreateParams, RoleCreateResponse, RoleDeleteParams, RoleDeleteResponse, RoleListParams, RoleListResponse, RoleListResponsesPage, Roles } from "./roles.mjs";
+import { RoleCreateParams, RoleCreateResponse, RoleDeleteParams, RoleDeleteResponse, RoleListParams, RoleListResponse, RoleListResponsesPage, RoleRetrieveParams, RoleRetrieveResponse, Roles } from "./roles.mjs";
 import { APIPromise } from "../../../../../core/api-promise.mjs";
 import { NextCursorPage, type NextCursorPageParams, PagePromise } from "../../../../../core/pagination.mjs";
 import { RequestOptions } from "../../../../../internal/request-options.mjs";
@@ -19,6 +19,19 @@ export declare class Groups extends APIResource {
      * ```
      */
     create(projectID: string, body: GroupCreateParams, options?: RequestOptions): APIPromise<ProjectGroup>;
+    /**
+     * Retrieves a project's group.
+     *
+     * @example
+     * ```ts
+     * const projectGroup =
+     *   await client.admin.organization.projects.groups.retrieve(
+     *     'group_id',
+     *     { project_id: 'project_id' },
+     *   );
+     * ```
+     */
+    retrieve(groupID: string, params: GroupRetrieveParams, options?: RequestOptions): APIPromise<ProjectGroup>;
     /**
      * Lists the groups that have access to a project.
      *
@@ -67,7 +80,7 @@ export interface ProjectGroup {
     /**
      * The type of the group.
      */
-    group_type: string;
+    group_type: 'group' | 'tenant_group';
     /**
      * Always `project.group`.
      */
@@ -100,6 +113,16 @@ export interface GroupCreateParams {
      */
     role: string;
 }
+export interface GroupRetrieveParams {
+    /**
+     * Path param: The ID of the project to inspect.
+     */
+    project_id: string;
+    /**
+     * Query param: The type of group to retrieve.
+     */
+    group_type?: 'group' | 'tenant_group';
+}
 export interface GroupListParams extends NextCursorPageParams {
     /**
      * Sort order for the returned groups.
@@ -113,7 +136,7 @@ export interface GroupDeleteParams {
     project_id: string;
 }
 export declare namespace Groups {
-    export { type ProjectGroup as ProjectGroup, type GroupDeleteResponse as GroupDeleteResponse, type ProjectGroupsPage as ProjectGroupsPage, type GroupCreateParams as GroupCreateParams, type GroupListParams as GroupListParams, type GroupDeleteParams as GroupDeleteParams, };
-    export { Roles as Roles, type RoleCreateResponse as RoleCreateResponse, type RoleListResponse as RoleListResponse, type RoleDeleteResponse as RoleDeleteResponse, type RoleListResponsesPage as RoleListResponsesPage, type RoleCreateParams as RoleCreateParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
+    export { type ProjectGroup as ProjectGroup, type GroupDeleteResponse as GroupDeleteResponse, type ProjectGroupsPage as ProjectGroupsPage, type GroupCreateParams as GroupCreateParams, type GroupRetrieveParams as GroupRetrieveParams, type GroupListParams as GroupListParams, type GroupDeleteParams as GroupDeleteParams, };
+    export { Roles as Roles, type RoleCreateResponse as RoleCreateResponse, type RoleRetrieveResponse as RoleRetrieveResponse, type RoleListResponse as RoleListResponse, type RoleDeleteResponse as RoleDeleteResponse, type RoleListResponsesPage as RoleListResponsesPage, type RoleCreateParams as RoleCreateParams, type RoleRetrieveParams as RoleRetrieveParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
 }
 //# sourceMappingURL=groups.d.mts.map

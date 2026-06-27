@@ -1,15 +1,15 @@
 {
   "name": "Tableau Reader",
   "description": "Open and interact with data visualisations built in Tableau Desktop",
-  "version": "2026.1.1",
-  "url": "https://downloads.tableau.com/esdalt/2026.1.1/TableauReader-2026-1-1-arm64.pkg",
+  "version": "2026.2.0",
+  "url": "https://downloads.tableau.com/esdalt/2026.2.0/TableauReader-2026-2-0-arm64.pkg",
   "vendor_url": "https://downloads.tableau.com/esdalt/2026.1.0/TableauReader-2026-1-0-arm64.pkg",
   "bundleId": "com.tableausoftware.tableaureader",
   "homepage": "https://www.tableau.com/products/reader",
-  "fileName": "TableauReader-2026-1-1-arm64.pkg",
+  "fileName": "TableauReader-2026-2-0-arm64.pkg",
   "type": "pkg",
-  "sha": "118b67d08edf61e2057b81ca7abdbd61d51eb364c5218404e03fd24d53795f01",
+  "sha": "29c51e60a80a9c74ff98cf1f2477ceaa0f3376af4199e46788e347be80fbfda7",
   "category": "Productivity",
   "publisher": "Tableau Software, Inc.",
-  "previous_version": "2026.1.1"
+  "previous_version": "2026.2.0"
 }

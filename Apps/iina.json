@@ -1,15 +1,15 @@
 {
   "name": "IINA",
   "description": "Free and open-source media player",
-  "version": "1.4.2",
-  "url": "https://dl-portal.iina.io/IINA.v1.4.2-build164.dmg",
+  "version": "1.4.4",
+  "url": "https://dl.iina.io/IINA.v1.4.4.dmg",
   "vendor_url": "https://dl-portal.iina.io/IINA.v1.4.1.dmg",
   "bundleId": "com.colliderli.iina",
   "homepage": "https://iina.io/",
-  "fileName": "IINA.v1.4.2-build164.dmg",
-  "sha": "2e0fd89fbba1c92a6c115171e5b51904883bb497fbe513a6961d080fbab08ff6",
+  "fileName": "IINA.v1.4.4.dmg",
+  "sha": "dd0fc0bd4b37fb57a1c8d30d6e3201b3a64bafd29959fe56953964613237beb1",
   "changelog": "https://github.com/iina/iina/releases",
   "category": "Media",
   "publisher": "IINA Team",
-  "previous_version": "1.4.2"
+  "previous_version": "1.4.3"
 }

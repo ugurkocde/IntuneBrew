@@ -1,7 +1,7 @@
 {
   "app_name": "Google Drive",
   "app_key": "google_drive",
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-06-26",
   "total_cves": 1,
   "summary": {
     "critical": 0,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2022-3421",
       "published_date": "2022-10-17",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "An attacker can pre-create the `/Applications/Google\\ Drive.app/Contents/MacOS` directory which is expected to be owned by root to be owned by a non-root user. When the Drive for Desktop installer is run for the first time, it will place a binary in that directory with execute permissions and set its setuid bit. Since the attacker owns the directory, the attacker can replace the binary with a symlink, causing the installer to set the setuid bit on the symlink. When the symlink is executed, it will run with root permissions. We recommend upgrading past version 64.0",
       "base_score": 5.6,
       "severity": "MEDIUM",

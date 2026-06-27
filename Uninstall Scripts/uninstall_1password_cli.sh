@@ -25,12 +25,12 @@ elif [ -f "/usr/local/bin/op" ]; then
     rm -f "/usr/local/bin/op" 2>/dev/null || true
 fi
 
-# Remove $HOME/.op
-echo "Removing $HOME/.op..."
-if [ -d "$HOME/.op" ]; then
-    rm -rf "$HOME/.op" 2>/dev/null || true
-elif [ -f "$HOME/.op" ]; then
-    rm -f "$HOME/.op" 2>/dev/null || true
+# Remove $HOME/.config/op
+echo "Removing $HOME/.config/op..."
+if [ -d "$HOME/.config/op" ]; then
+    rm -rf "$HOME/.config/op" 2>/dev/null || true
+elif [ -f "$HOME/.config/op" ]; then
+    rm -f "$HOME/.config/op" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

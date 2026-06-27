@@ -23,6 +23,25 @@ export class Roles extends APIResource {
         });
     }
     /**
+     * Retrieves a project role.
+     *
+     * @example
+     * ```ts
+     * const role =
+     *   await client.admin.organization.projects.roles.retrieve(
+     *     'role_id',
+     *     { project_id: 'project_id' },
+     *   );
+     * ```
+     */
+    retrieve(roleID, params, options) {
+        const { project_id } = params;
+        return this._client.get(path `/projects/${project_id}/roles/${roleID}`, {
+            ...options,
+            __security: { adminAPIKeyAuth: true },
+        });
+    }
+    /**
      * Updates an existing project role.
      *
      * @example

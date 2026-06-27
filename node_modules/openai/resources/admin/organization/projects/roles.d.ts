@@ -19,6 +19,19 @@ export declare class Roles extends APIResource {
      */
     create(projectID: string, body: RoleCreateParams, options?: RequestOptions): APIPromise<RolesAPI.Role>;
     /**
+     * Retrieves a project role.
+     *
+     * @example
+     * ```ts
+     * const role =
+     *   await client.admin.organization.projects.roles.retrieve(
+     *     'role_id',
+     *     { project_id: 'project_id' },
+     *   );
+     * ```
+     */
+    retrieve(roleID: string, params: RoleRetrieveParams, options?: RequestOptions): APIPromise<RolesAPI.Role>;
+    /**
      * Updates an existing project role.
      *
      * @example
@@ -90,6 +103,12 @@ export interface RoleCreateParams {
      */
     description?: string | null;
 }
+export interface RoleRetrieveParams {
+    /**
+     * The ID of the project.
+     */
+    project_id: string;
+}
 export interface RoleUpdateParams {
     /**
      * Path param: The ID of the project to update.
@@ -121,7 +140,7 @@ export interface RoleDeleteParams {
     project_id: string;
 }
 export declare namespace Roles {
-    export { type RoleDeleteResponse as RoleDeleteResponse, type RoleCreateParams as RoleCreateParams, type RoleUpdateParams as RoleUpdateParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
+    export { type RoleDeleteResponse as RoleDeleteResponse, type RoleCreateParams as RoleCreateParams, type RoleRetrieveParams as RoleRetrieveParams, type RoleUpdateParams as RoleUpdateParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
 }
 export { type RolesPage };
 //# sourceMappingURL=roles.d.ts.map

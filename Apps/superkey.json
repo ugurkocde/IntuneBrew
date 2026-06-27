@@ -1,14 +1,14 @@
 {
   "name": "Superkey",
   "description": "Search and click text anywhere on screen",
-  "version": "1.60",
-  "url": "https://superkey.app/downloads/Superkey1.60.dmg",
+  "version": "1.66",
+  "url": "https://superkey.app/downloads/Superkey1.66.dmg",
   "vendor_url": "https://superkey.app/downloads/Superkey1.60.dmg",
   "bundleId": "com.knollsoft.Superkey",
   "homepage": "https://superkey.app/",
-  "fileName": "Superkey1.60.dmg",
-  "sha": "5b34f7d914b2847a5496eb830b2db6dba41108c83235fc7297ce001e1d6eefa4",
+  "fileName": "Superkey1.66.dmg",
+  "sha": "cf2e19a2ed79cf2230efa5a6b1baf19da4278e5e3b834c62043fec65790cc918",
   "category": "Utilities",
   "publisher": "Superkey",
-  "previous_version": "1.60"
+  "previous_version": "1.66"
 }

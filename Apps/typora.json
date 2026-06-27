@@ -1,14 +1,14 @@
 {
   "name": "Typora",
   "description": "Configurable document editor that supports Markdown",
-  "version": "1.13.6",
-  "url": "https://download.typora.io/mac/Typora-1.13.6.dmg",
+  "version": "1.13.8",
+  "url": "https://downloads.typora.io/mac/Typora-1.13.8.dmg",
   "vendor_url": "https://download.typora.io/mac/Typora-1.13.4.dmg",
   "bundleId": "abnerworks.Typora",
   "homepage": "https://typora.io/",
-  "fileName": "Typora-1.13.6.dmg",
-  "sha": "9179f386ebb722d17d995d31fafefe85b60d08ea350c07c8cd8307c002fe2c73",
+  "fileName": "Typora-1.13.8.dmg",
+  "sha": "bea6c1d7c8ab138634674e4c96c077e7a0db140da725d9b8294e446789d81ac7",
   "category": "Productivity",
   "publisher": "Typora",
-  "previous_version": "1.13.6"
+  "previous_version": "1.13.8"
 }

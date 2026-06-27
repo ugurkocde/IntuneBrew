@@ -1,10 +1,10 @@
 {
   "name": "fzf",
   "description": "Command-line fuzzy finder written in Go",
-  "version": "0.72.0",
-  "homepage": "https://github.com/junegunn/fzf",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/fzf_0.72.0_arm64.pkg",
-  "fileName": "fzf_0.72.0_arm64.pkg",
+  "version": "0.73.1",
+  "homepage": "https://junegunn.github.io/fzf/",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/fzf_0.73.1_arm64.pkg",
+  "fileName": "fzf_0.73.1_arm64.pkg",
   "bundledDependencies": [],
   "binaryPath": "/usr/local/bin/fzf"
 }

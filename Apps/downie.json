@@ -1,13 +1,13 @@
 {
   "name": "Downie",
   "description": "Downloads videos from different websites",
-  "version": "4.12.4",
-  "url": "https://software.charliemonroe.net/trial/downie/v4/Downie_4_5169.dmg",
+  "version": "4.12.8",
+  "url": "https://software.charliemonroe.net/trial/downie/v4/Downie_4_5197.dmg",
   "vendor_url": "https://software.charliemonroe.net/trial/downie/v4/Downie_4_5163.dmg",
   "bundleId": "com.charliemonroe.Downie-4",
   "homepage": "https://software.charliemonroe.net/downie.php",
-  "fileName": "Downie_4_5169.dmg",
-  "sha": "e02ba2df9ba2003d56f31156e7e640d269a0c943e3b94771a24ad8538c14d5ed",
+  "fileName": "Downie_4_5197.dmg",
+  "sha": "27b76527dc168501c944e940708c2ddf085fe4d2267262832c0bfbb426a7cdd8",
   "changelog": "https://software.charliemonroe.net/downie/version-history/",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:10:13Z",
@@ -20,5 +20,5 @@
   },
   "category": "Utilities",
   "publisher": "Charlie Monroe",
-  "previous_version": "4.12.4"
+  "previous_version": "4.12.8"
 }

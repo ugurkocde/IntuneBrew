@@ -19,11 +19,10 @@ class OpenAIRealtimeWebSocket extends internal_base_1.OpenAIRealtimeEmitter {
         if (hasProvider && !props?.__resolvedApiKey) {
             throw new Error([
                 'Cannot open Realtime WebSocket with a function-based apiKey.',
-                'Use the .create() method so that the key is resolved before connecting:',
-                'await OpenAIRealtimeWebSocket.create(client, { model })',
+                'Use the .create() method so that the key is resolved before connecting.',
             ].join('\n'));
         }
-        this.url = (0, internal_base_1.buildRealtimeURL)(client, props.model);
+        this.url = (0, internal_base_1.buildRealtimeURL)(client, props);
         props.onURL?.(this.url);
         // @ts-ignore
         this.socket = new WebSocket(this.url.toString(), [
@@ -67,6 +66,7 @@ class OpenAIRealtimeWebSocket extends internal_base_1.OpenAIRealtimeEmitter {
         return new OpenAIRealtimeWebSocket({ ...props, __resolvedApiKey: await client._callApiKey() }, client);
     }
     static async azure(client, options = {}) {
+        const connection = (0, internal_base_1.getAzureRealtimeConnection)(client, options);
         const isApiKeyProvider = await client._callApiKey();
         const apiKey = client.apiKey;
         if (!apiKey) {
@@ -81,13 +81,9 @@ class OpenAIRealtimeWebSocket extends internal_base_1.OpenAIRealtimeEmitter {
                 url.searchParams.set('api-key', azureApiKey);
             }
         }
-        const deploymentName = options.deploymentName ?? client.deploymentName;
-        if (!deploymentName) {
-            throw new Error('No deployment name provided');
-        }
         const { dangerouslyAllowBrowser } = options;
         return new OpenAIRealtimeWebSocket({
-            model: deploymentName,
+            ...connection,
             onURL,
             ...(dangerouslyAllowBrowser ? { dangerouslyAllowBrowser } : {}),
             __resolvedApiKey: isApiKeyProvider,

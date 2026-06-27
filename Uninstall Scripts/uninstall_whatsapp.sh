@@ -17,6 +17,10 @@ fi
 echo "Stopping WhatsApp if running..."
 pkill -f "WhatsApp" 2>/dev/null || true
 
+# Kill application with bundle ID net.whatsapp.WhatsApp if running
+echo "Stopping application with bundle ID net.whatsapp.WhatsApp if running..."
+killall -9 "net.whatsapp.WhatsApp" 2>/dev/null || true
+
 # Remove /Applications/WhatsApp.app
 echo "Removing /Applications/WhatsApp.app..."
 if [ -d "/Applications/WhatsApp.app" ]; then

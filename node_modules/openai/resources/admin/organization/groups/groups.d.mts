@@ -1,8 +1,8 @@
 import { APIResource } from "../../../../core/resource.mjs";
 import * as RolesAPI from "./roles.mjs";
-import { RoleCreateParams, RoleCreateResponse, RoleDeleteParams, RoleDeleteResponse, RoleListParams, RoleListResponse, RoleListResponsesPage, Roles } from "./roles.mjs";
+import { RoleCreateParams, RoleCreateResponse, RoleDeleteParams, RoleDeleteResponse, RoleListParams, RoleListResponse, RoleListResponsesPage, RoleRetrieveParams, RoleRetrieveResponse, Roles } from "./roles.mjs";
 import * as UsersAPI from "./users.mjs";
-import { OrganizationGroupUser, OrganizationGroupUsersPage, UserCreateParams, UserCreateResponse, UserDeleteParams, UserDeleteResponse, UserListParams, Users } from "./users.mjs";
+import { OrganizationGroupUser, OrganizationGroupUsersPage, UserCreateParams, UserCreateResponse, UserDeleteParams, UserDeleteResponse, UserListParams, UserRetrieveParams, UserRetrieveResponse, Users } from "./users.mjs";
 import { APIPromise } from "../../../../core/api-promise.mjs";
 import { NextCursorPage, type NextCursorPageParams, PagePromise } from "../../../../core/pagination.mjs";
 import { RequestOptions } from "../../../../internal/request-options.mjs";
@@ -20,6 +20,18 @@ export declare class Groups extends APIResource {
      * ```
      */
     create(body: GroupCreateParams, options?: RequestOptions): APIPromise<Group>;
+    /**
+     * Retrieves a group.
+     *
+     * @example
+     * ```ts
+     * const group =
+     *   await client.admin.organization.groups.retrieve(
+     *     'group_id',
+     *   );
+     * ```
+     */
+    retrieve(groupID: string, options?: RequestOptions): APIPromise<Group>;
     /**
      * Updates a group's information.
      *
@@ -72,7 +84,7 @@ export interface Group {
     /**
      * The type of the group.
      */
-    group_type: string;
+    group_type: 'group' | 'tenant_group';
     /**
      * Whether the group is managed through SCIM and controlled by your identity
      * provider.
@@ -142,7 +154,7 @@ export interface GroupListParams extends NextCursorPageParams {
 }
 export declare namespace Groups {
     export { type Group as Group, type GroupUpdateResponse as GroupUpdateResponse, type GroupDeleteResponse as GroupDeleteResponse, type GroupsPage as GroupsPage, type GroupCreateParams as GroupCreateParams, type GroupUpdateParams as GroupUpdateParams, type GroupListParams as GroupListParams, };
-    export { Users as Users, type OrganizationGroupUser as OrganizationGroupUser, type UserCreateResponse as UserCreateResponse, type UserDeleteResponse as UserDeleteResponse, type OrganizationGroupUsersPage as OrganizationGroupUsersPage, type UserCreateParams as UserCreateParams, type UserListParams as UserListParams, type UserDeleteParams as UserDeleteParams, };
-    export { Roles as Roles, type RoleCreateResponse as RoleCreateResponse, type RoleListResponse as RoleListResponse, type RoleDeleteResponse as RoleDeleteResponse, type RoleListResponsesPage as RoleListResponsesPage, type RoleCreateParams as RoleCreateParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
+    export { Users as Users, type OrganizationGroupUser as OrganizationGroupUser, type UserCreateResponse as UserCreateResponse, type UserRetrieveResponse as UserRetrieveResponse, type UserDeleteResponse as UserDeleteResponse, type OrganizationGroupUsersPage as OrganizationGroupUsersPage, type UserCreateParams as UserCreateParams, type UserRetrieveParams as UserRetrieveParams, type UserListParams as UserListParams, type UserDeleteParams as UserDeleteParams, };
+    export { Roles as Roles, type RoleCreateResponse as RoleCreateResponse, type RoleRetrieveResponse as RoleRetrieveResponse, type RoleListResponse as RoleListResponse, type RoleDeleteResponse as RoleDeleteResponse, type RoleListResponsesPage as RoleListResponsesPage, type RoleCreateParams as RoleCreateParams, type RoleRetrieveParams as RoleRetrieveParams, type RoleListParams as RoleListParams, type RoleDeleteParams as RoleDeleteParams, };
 }
 //# sourceMappingURL=groups.d.mts.map

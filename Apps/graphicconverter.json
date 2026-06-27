@@ -1,15 +1,15 @@
 {
   "name": "GraphicConverter",
   "description": "For browsing, enhancing and converting images",
-  "version": "12.5.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/graphicconverter_12.5.1.pkg",
+  "version": "12.5.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/graphicconverter_12.5.2.pkg",
   "vendor_url": "https://www.lemkesoft.info/files/graphicconverter/gc12_build7134.zip",
   "bundleId": "com.lemkesoft.graphicconverter",
   "homepage": "https://www.lemkesoft.de/en/products/graphicconverter/",
-  "fileName": "graphicconverter_12.5.1.pkg",
+  "fileName": "graphicconverter_12.5.2.pkg",
   "type": "app",
-  "sha": "090e3afd1c7d1fc3ed6e93bce7a3faa0c0ab202299bedae8f08daa86b6f28738",
+  "sha": "afa512e9c8bcaa1af770369f3b8fca1ac5d75b4aa5531b0d604c2b1866c674fa",
   "category": "Design",
   "publisher": "Lemkesoft GmbH",
-  "previous_version": "12.5.1"
+  "previous_version": "12.5.2"
 }

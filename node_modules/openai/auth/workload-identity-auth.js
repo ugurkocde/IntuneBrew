@@ -69,14 +69,22 @@ class WorkloadIdentityAuth {
             }
             throw error_1.APIError.generate(response.status, body, `Token exchange failed with status ${response.status}`, response.headers);
         }
-        const tokenResponse = (await response.json());
-        const expiresIn = tokenResponse.expires_in || 3600;
+        const tokenResponse = await response.json();
+        if (typeof tokenResponse !== 'object' ||
+            tokenResponse === null ||
+            !('access_token' in tokenResponse) ||
+            typeof tokenResponse.access_token !== 'string' ||
+            tokenResponse.access_token.trim().length === 0) {
+            throw new error_1.OpenAIError("Token exchange response missing 'access_token' field");
+        }
+        const accessToken = tokenResponse.access_token;
+        const expiresIn = tokenResponse.expires_in ?? 3600;
         const expiresAt = Date.now() + expiresIn * 1000;
         this.cachedToken = {
-            token: tokenResponse.access_token,
+            token: accessToken,
             expiresAt,
         };
-        return tokenResponse.access_token;
+        return accessToken;
     }
     isTokenExpired(cachedToken) {
         return Date.now() >= cachedToken.expiresAt;

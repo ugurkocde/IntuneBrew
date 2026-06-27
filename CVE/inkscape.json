@@ -1,12 +1,12 @@
 {
   "app_name": "Inkscape",
   "app_key": "inkscape",
-  "last_updated": "2026-05-17",
-  "total_cves": 9,
+  "last_updated": "2026-06-26",
+  "total_cves": 10,
   "summary": {
     "critical": 0,
     "high": 1,
-    "medium": 5,
+    "medium": 6,
     "low": 3,
     "kev_count": 0
   },
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2021-42704",
       "published_date": "2022-05-18",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Inkscape version 0.91 is vulnerable to an out-of-bounds write, which may allow an attacker to arbitrary execute code.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -33,9 +33,30 @@
       "product": "inkscape"
     },
     {
+      "cve_id": "CVE-2026-4980",
+      "published_date": "2026-03-27",
+      "last_modified_date": "2026-06-17",
+      "description": "A local file disclosure vulnerability in the XInclude processing component of Inkscape 1.1 before 1.3 allows a remote attacker to read local files via a crafted SVG file containing malicious xi:include tags.",
+      "base_score": 6.3,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:L/AC:L/PR:N/UI:R/S:C/C:H/I:N/A:N",
+      "affected_version_start": "1.1",
+      "affected_version_start_type": "including",
+      "affected_version_end": "1.3",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "1.3",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "inkscape",
+      "product": "inkscape"
+    },
+    {
       "cve_id": "CVE-2012-6076",
       "published_date": "2013-03-12",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "Inkscape before 0.48.4 reads .eps files from /tmp instead of the current directory, which might cause Inkspace to process unintended files, allow local users to obtain sensitive information, and possibly have other unspecified impacts.",
       "base_score": 4.4,
       "severity": "MEDIUM",
@@ -56,7 +77,7 @@
     {
       "cve_id": "CVE-2012-5656",
       "published_date": "2013-01-18",
-      "last_modified_date": "2026-04-29",
+      "last_modified_date": "2026-06-16",
       "description": "The rasterization process in Inkscape before 0.48.4 allows local users to read arbitrary files via an external entity in a SVG file, aka an XML external entity (XXE) injection attack.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -77,7 +98,7 @@
     {
       "cve_id": "CVE-2007-1463",
       "published_date": "2007-03-21",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Format string vulnerability in Inkscape before 0.45.1 allows user-assisted remote attackers to execute arbitrary code via format string specifiers in a URI, which is not properly handled by certain dialogs.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -98,7 +119,7 @@
     {
       "cve_id": "CVE-2007-1464",
       "published_date": "2007-03-21",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-16",
       "description": "Format string vulnerability in the whiteboard Jabber protocol in Inkscape before 0.45.1 allows user-assisted remote attackers to execute arbitrary code via unspecified vectors.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -119,7 +140,7 @@
     {
       "cve_id": "CVE-2005-3737",
       "published_date": "2005-11-22",
-      "last_modified_date": "2026-04-16",
+      "last_modified_date": "2026-06-16",
       "description": "Buffer overflow in the SVG importer (style.cpp) of inkscape 0.41 through 0.42.2 might allow remote attackers to execute arbitrary code via a SVG file with long CSS style property values.",
       "base_score": 5.1,
       "severity": "MEDIUM",
@@ -140,7 +161,7 @@
     {
       "cve_id": "CVE-2021-42700",
       "published_date": "2022-05-18",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Inkscape 0.91 is vulnerable to an out-of-bounds read, which may allow an attacker to have access to unauthorized information.",
       "base_score": 3.3,
       "severity": "LOW",
@@ -161,7 +182,7 @@
     {
       "cve_id": "CVE-2021-42702",
       "published_date": "2022-05-18",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Inkscape version 0.91 can access an uninitialized pointer, which may allow an attacker to have access to unauthorized information.",
       "base_score": 3.3,
       "severity": "LOW",
@@ -182,7 +203,7 @@
     {
       "cve_id": "CVE-2005-3885",
       "published_date": "2005-11-29",
-      "last_modified_date": "2026-04-16",
+      "last_modified_date": "2026-06-16",
       "description": "The ps2epsi extension shell script (ps2epsi.sh) in Inkscape before 0.41 allows local users to overwrite arbitrary files via a symlink attack on the tmpepsifile.epsi temporary file.",
       "base_score": 2.1,
       "severity": "LOW",

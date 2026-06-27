@@ -1,0 +1,14 @@
+{
+  "name": "xTool Studio",
+  "description": "Design and control software for xTool laser machines",
+  "version": "1.2.11",
+  "url": "https://storage.atomm.com/efficacy/atomm-package/prod/packages/121/c518d71e-2d6a-4494-851f-8e61b8a76949/xTool-Studio-arm64-1.2.11.dmg",
+  "vendor_url": "https://storage.atomm.com/efficacy/atomm-package/prod/packages/121/c518d71e-2d6a-4494-851f-8e61b8a76949/xTool-Studio-arm64-1.2.11.dmg",
+  "bundleId": "com.makeblock.xtool-studio",
+  "homepage": "https://www.xtool.com/pages/software",
+  "fileName": "xTool-Studio-arm64-1.2.11.dmg",
+  "sha": "07222ff336d46b907958bb776ed23663f0bf27d8dd6bf7f176675b6ed9dd37ed",
+  "category": "Design",
+  "publisher": "xTool Co., Ltd.",
+  "previous_version": "1.2.11"
+}

@@ -1,14 +1,14 @@
 {
   "name": "SF Symbols",
   "description": "Tool that provides consistent, highly configurable symbols for apps",
-  "version": "7.2",
-  "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-7.dmg",
+  "version": "8.0",
+  "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-8.dmg",
   "vendor_url": "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-7.dmg",
   "bundleId": "com.apple.pkg.SFSymbols",
   "homepage": "https://developer.apple.com/sf-symbols/",
-  "fileName": "SF-Symbols-7.dmg",
-  "sha": "c2f227790299ca514220369ce83057077457fbcc08f0e0a3262e33bca4408a02",
+  "fileName": "SF-Symbols-8.dmg",
+  "sha": "5869365aef0a2a6b9d273a0d15a23dec98686c60c25c6abc088676e94470b1d0",
   "category": "Developer Tools",
   "publisher": "Apple Inc.",
-  "previous_version": "7.2"
+  "previous_version": "8.0"
 }

@@ -5,4 +5,5 @@ export { OpenAI, type ClientOptions } from "./client.mjs";
 export { PagePromise } from "./core/pagination.mjs";
 export { OpenAIError, APIError, APIConnectionError, APIConnectionTimeoutError, APIUserAbortError, NotFoundError, ConflictError, RateLimitError, BadRequestError, AuthenticationError, InternalServerError, PermissionDeniedError, UnprocessableEntityError, InvalidWebhookSignatureError, OAuthError, SubjectTokenProviderError, } from "./core/error.mjs";
 export { AzureOpenAI } from "./azure.mjs";
+export { BedrockOpenAI, type BedrockClientOptions } from "./bedrock.mjs";
 //# sourceMappingURL=index.d.mts.map

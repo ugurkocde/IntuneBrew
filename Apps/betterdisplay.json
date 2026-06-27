@@ -1,13 +1,13 @@
 {
   "name": "BetterDisplay",
   "description": "Display management tool",
-  "version": "4.3.3",
-  "url": "https://github.com/waydabber/BetterDisplay/releases/download/v4.3.3/BetterDisplay-v4.3.3.dmg",
+  "version": "4.3.4",
+  "url": "https://github.com/waydabber/BetterDisplay/releases/download/v4.3.4/BetterDisplay-v4.3.4.dmg",
   "vendor_url": "https://github.com/waydabber/BetterDisplay/releases/download/v4.2.3/BetterDisplay-v4.2.3.dmg",
   "bundleId": "pro.betterdisplay.BetterDisplay",
   "homepage": "https://betterdisplay.pro/",
-  "fileName": "BetterDisplay-v4.3.3.dmg",
-  "sha": "5e105e8eb17e3dfd8823573f6a6426930bfe9272b43e2ecf148a33c89a50d317",
+  "fileName": "BetterDisplay-v4.3.4.dmg",
+  "sha": "234122f7e4ec6e6b00ea2143d42c12720ad4ece3bd98bddf977feebc2612e092",
   "changelog": "https://github.com/waydabber/BetterDisplay/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:23:27Z",
@@ -21,5 +21,5 @@
   },
   "category": "Utilities",
   "publisher": "BetterDisplay",
-  "previous_version": "4.3.3"
+  "previous_version": "4.3.4"
 }

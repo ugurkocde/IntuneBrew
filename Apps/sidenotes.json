@@ -1,15 +1,15 @@
 {
   "name": "SideNotes",
   "description": "Note-taking application",
-  "version": "1.6.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sidenotes_1.6.0.pkg",
+  "version": "1.6.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sidenotes_1.6.2.pkg",
   "vendor_url": "https://www.apptorium.com/public/products/sidenotes/releases/SideNotes-1.5.4.zip",
   "bundleId": "com.apptorium.SideNotes-paddle",
   "homepage": "https://www.apptorium.com/sidenotes",
-  "fileName": "sidenotes_1.6.0.pkg",
+  "fileName": "sidenotes_1.6.2.pkg",
   "type": "app",
-  "sha": "0f77c0047bf0601e2ef2d45d4493fc7526b431cec1531bf839eae7a740ea4aaf",
+  "sha": "06d779d39153853ab213629f47b2048b9068ccc66fa539240f3e4ef271023c3c",
   "category": "Productivity",
   "publisher": "Apptorium",
-  "previous_version": "1.6.0"
+  "previous_version": "1.6.2"
 }

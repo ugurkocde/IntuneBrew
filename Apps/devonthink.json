@@ -1,15 +1,15 @@
 {
   "name": "DEVONthink",
   "description": "Collect, organise, edit and annotate documents",
-  "version": "4.2.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/devonthink_4.2.2.pkg",
+  "version": "4.3.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/devonthink_4.3.2.pkg",
   "vendor_url": "https://download.devontechnologies.com/download/devonthink/4.2.2/DEVONthink.app.zip",
   "bundleId": "com.devon-technologies.think",
   "homepage": "https://www.devontechnologies.com/apps/devonthink",
-  "fileName": "devonthink_4.2.2.pkg",
+  "fileName": "devonthink_4.3.2.pkg",
   "type": "app",
-  "previous_version": "4.2.2",
-  "sha": "823ee3528ec51416cbe47f0625946ec51820df1aeef4c9a94583c655e1e9e2a2",
+  "previous_version": "4.3.2",
+  "sha": "69350ad2f1df6bb4f7cb3dddb29e7bb8413fe737599e631dba54904117942958",
   "category": "Productivity",
   "publisher": "DEVONtechnologies"
 }

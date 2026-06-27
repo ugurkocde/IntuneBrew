@@ -1,14 +1,14 @@
 {
   "name": "CleanClip",
   "description": "Clipboard manager",
-  "version": "2.4.6",
-  "url": "https://cleanclip.cc/releases/download/v2.4.6/CleanClip.dmg",
+  "version": "2.4.7",
+  "url": "https://cleanclip.cc/releases/download/v2.4.7/CleanClip.dmg",
   "vendor_url": "https://cleanclip.cc/releases/download/v2.4.6/CleanClip.dmg",
   "bundleId": "com.antiless.cleanclip.mac",
   "homepage": "https://cleanclip.cc/",
   "fileName": "CleanClip.dmg",
-  "sha": "c7fb0c39dc89698a4ca4f80ce905478d965857d7c2629c7f2cb0ffbd14a4a851",
+  "sha": "a5e4d694dbd97a1b5371e88bef148dc4e31311bf1f05fdda7693285bdafb088b",
   "category": "Utilities",
   "publisher": "CleanClip",
-  "previous_version": "2.4.6"
+  "previous_version": "2.4.7"
 }

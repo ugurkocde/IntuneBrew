@@ -1,10 +1,10 @@
 import { parseDef } from "../parseDef.mjs";
-export const parsePipelineDef = (def, refs) => {
+export const parsePipelineDef = (def, refs, forceResolution) => {
     if (refs.pipeStrategy === 'input') {
-        return parseDef(def.in._def, refs);
+        return parseDef(def.in._def, refs, forceResolution);
     }
     else if (refs.pipeStrategy === 'output') {
-        return parseDef(def.out._def, refs);
+        return parseDef(def.out._def, refs, forceResolution);
     }
     const a = parseDef(def.in._def, {
         ...refs,

@@ -1,7 +1,7 @@
 {
   "app_name": "Jellyfin",
   "app_key": "jellyfin",
-  "last_updated": "2026-05-17",
+  "last_updated": "2026-06-26",
   "total_cves": 19,
   "summary": {
     "critical": 4,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2026-35031",
       "published_date": "2026-04-14",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is an open source self hosted media server. Versions prior to 10.11.7 contain a vulnerability chain in the subtitle upload endpoint (POST /Videos/{itemId}/Subtitles), where the Format field is not validated, allowing path traversal via the file extension and enabling arbitrary file write. This arbitrary file write can be chained into arbitrary file read via .strm files, database extraction, admin privilege escalation, and ultimately remote code execution as root via ld.so.preload. Exploitation requires an administrator account or a user that has been explicitly granted the \"Upload Subtitles\" permission. This issue has been fixed in version 10.11.7. If users are unable to upgrade immediately, they can grant non-administrator users Subtitle upload permissions to reduce attack surface.",
       "base_score": 9.9,
       "severity": "CRITICAL",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2026-35033",
       "published_date": "2026-04-14",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is an open source self hosted media server. Versions prior to 10.11.7 contain an unauthenticated arbitrary file read vulnerability via ffmpeg argument injection through the StreamOptions query parameter parsing mechanism. The ParseStreamOptions method in StreamingHelpers.cs adds any lowercase query parameter to a dictionary without validation, bypassing the RegularExpression attribute on the level controller parameter, and the unsanitized value is concatenated directly into the ffmpeg command line. By injecting a drawtext filter with a textfile argument, an attacker can read arbitrary server files such as /etc/shadow and exfiltrate their contents as text rendered in the video stream response. The vulnerable /Videos/{itemId}/stream endpoint has no Authorize attribute, making this exploitable without authentication, though item GUIDs are pseudorandom and require an authenticated user to obtain. This issue has been fixed in version 10.11.7.",
       "base_score": 9.1,
       "severity": "CRITICAL",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2026-31852",
       "published_date": "2026-03-11",
-      "last_modified_date": "2026-03-20",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is an open-source media system. The code-quality.yml GitHub Actions workflow in jellyfin/jellyfin-ios is vulnerable to arbitrary code execution via pull requests from forked repositories. Due to the workflow's elevated permissions (nearly all write permissions), this vulnerability enables full repository takeover of jellyfin/jellyfin-ios, exfiltration of highly privileged secrets, Apple App Store supply chain attack, GitHub Container Registry (ghcr.io) package poisoning, and full jellyfin organization compromise via cross-repository token usage. Note: This is not a code vulnerability, but a vulnerability in the GitHub Actions workflows. No new version is required for this GHSA and end users do not need to take any actions.",
       "base_score": 10.0,
       "severity": "CRITICAL",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2023-30627",
       "published_date": "2023-04-24",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "jellyfin-web is the web client for Jellyfin, a free-software media system. Starting in version 10.1.0 and prior to version 10.8.10, a stored cross-site scripting vulnerability in device.js can be used to make arbitrary calls to the `REST` endpoints with admin privileges. When combined with CVE-2023-30626, this results in remote code execution on the Jellyfin instance in the context of the user who's running it. This issue is patched in version 10.8.10. There are no known workarounds.",
       "base_score": 9.0,
       "severity": "CRITICAL",
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2026-35032",
       "published_date": "2026-04-14",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is an open source self hosted media server. Versions prior to 10.11.7 contain a vulnerability chain in the LiveTV M3U tuner endpoint (POST /LiveTv/TunerHosts), where the tuner URL is not validated, allowing local file read via non-HTTP paths and Server-Side Request Forgery (SSRF) via HTTP URLs. This is exploitable by any authenticated user because the EnableLiveTvManagement permission defaults to true for all new users. An attacker can chain these vulnerabilities by adding an M3U tuner pointing to an attacker-controlled server, serving a crafted M3U with a channel pointing to the Jellyfin database, exfiltrating the database to extract admin session tokens, and escalating to admin privileges. This issue has been fixed in version 10.11.7. If users are unable to upgrade immediately, they can disable Live TV Management privileges for all users.",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -119,7 +119,7 @@
     {
       "cve_id": "CVE-2025-32012",
       "published_date": "2025-04-15",
-      "last_modified_date": "2025-10-06",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is an open source self hosted media server. In versions 10.9.0 to before 10.10.7, the /System/Restart endpoint provides administrators the ability to restart their Jellyfin server. This endpoint is intended to be admins-only, but it also authorizes requests from any device in the same local network as the Jellyfin server. Due to the method Jellyfin uses to determine the source IP of a request, an unauthenticated attacker is able to spoof their IP to appear as a LAN IP, allowing them to restart the Jellyfin server process without authentication. This means that an unauthenticated attacker could mount a denial-of-service attack on any default-configured Jellyfin server by simply sending the same spoofed request every few seconds to restart the server over and over. This method of IP spoofing also bypasses some security mechanisms, cause a denial-of-service attack, and possible bypass the admin restart requirement if combined with remote code execution. This issue is patched in version 10.10.7.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2025-31499",
       "published_date": "2025-04-15",
-      "last_modified_date": "2025-10-06",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is an open source self hosted media server. Versions before 10.10.7 are vulnerable to argument injection in FFmpeg. This can be leveraged to possibly achieve remote code execution by anyone with credentials to a low-privileged user. This vulnerability was previously reported in CVE-2023-49096 and patched in version 10.8.13, but the patch can be bypassed. The original fix sanitizes some parameters to make injection impossible, but certain unsanitized parameters can still be used for argument injection. The same unauthenticated endpoints are vulnerable: /Videos/<itemId>/stream and /Videos/<itemId>/stream.<container>, likely alongside similar endpoints in AudioController. This argument injection can be exploited to achieve arbitrary file write, leading to possible remote code execution through the plugin system. While the unauthenticated endpoints are vulnerable, a valid itemId is required for exploitation and any authenticated attacker could easily retrieve a valid itemId to make the exploit work. This vulnerability is patched in version 10.10.7.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2023-48702",
       "published_date": "2023-12-13",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is a system for managing and streaming media. Prior to version 10.8.13, the `/System/MediaEncoder/Path` endpoint executes an arbitrary file using `ProcessStartInfo` via the `ValidateVersion` function. A malicious administrator can setup a network share and supply a UNC path to `/System/MediaEncoder/Path` which points to an executable on the network share, causing Jellyfin server to run the executable in the local context. The endpoint was removed in version 10.8.13.",
       "base_score": 7.2,
       "severity": "HIGH",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2023-49096",
       "published_date": "2023-12-06",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is a Free Software Media System for managing and streaming media. In affected versions there is an argument injection in the VideosController, specifically the `/Videos/<itemId>/stream` and `/Videos/<itemId>/stream.<container>` endpoints which are present in the current Jellyfin version. Additional endpoints in the AudioController might also be vulnerable, as they differ only slightly in execution. Those endpoints are reachable by an unauthenticated user. In order to exploit this vulnerability an unauthenticated attacker has to guess an itemId, which is a completely random GUID. It\u2019s a very unlikely case even for a large media database with lots of items. Without an additional information leak, this vulnerability shouldn\u2019t be directly exploitable, even if the instance is reachable from the Internet. There are a lot of query parameters that get accepted by the method. At least two of those, videoCodec and audioCodec are vulnerable to the argument injection. The values can be traced through a lot of code and might be changed in the process. However, the fallback is to always use them as-is, which means we can inject our own arguments. Those arguments land in the command line of FFmpeg. Because UseShellExecute is always set to false, we can\u2019t simply terminate the FFmpeg command and execute our own. It should only be possible to add additional arguments to FFmpeg, which is powerful enough as it stands. There is probably a way of overwriting an arbitrary file with malicious content. This vulnerability has been addressed in version 10.8.13. Users are advised to upgrade. There are no known workarounds for this vulnerability.",
       "base_score": 7.7,
       "severity": "HIGH",
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2023-30626",
       "published_date": "2023-04-24",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is a free-software media system. Versions starting with 10.8.0 and prior to 10.8.10 and prior have a directory traversal vulnerability inside the `ClientLogController`, specifically `/ClientLog/Document`. When combined with a cross-site scripting vulnerability (CVE-2023-30627), this can result in file write and arbitrary code execution. Version 10.8.10 has a patch for this issue. There are no known workarounds.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2023-27161",
       "published_date": "2023-03-10",
-      "last_modified_date": "2025-02-28",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin up to v10.7.7 was discovered to contain a Server-Side Request Forgery (SSRF) via the component /Repositories. This vulnerability allows attackers to access network resources and sensitive information via a crafted POST request.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -245,7 +245,7 @@
     {
       "cve_id": "CVE-2022-35909",
       "published_date": "2022-08-19",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "In Jellyfin before 10.8, the /users endpoint has incorrect access control for admin functionality.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2021-21402",
       "published_date": "2021-03-23",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is a Free Software Media System. In Jellyfin before version 10.7.1, with certain endpoints, well crafted requests will allow arbitrary file read from a Jellyfin server's file system. This issue is more prevalent when Windows is used as the host OS. Servers that are exposed to the public Internet are potentially at risk. This is fixed in version 10.7.1. As a workaround, users may be able to restrict some access by enforcing strict security permissions on their filesystem, however, it is recommended to update as soon as possible.",
       "base_score": 7.7,
       "severity": "HIGH",
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2026-35034",
       "published_date": "2026-04-14",
-      "last_modified_date": "2026-04-23",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is an open source self hosted media server. Versions prior to 10.11.7 contain a denial of service vulnerability in the SyncPlay group creation endpoint (POST /SyncPlay/New), where an authenticated user can create groups with names of unlimited size due to insufficient input validation. By sending large payloads combined with arbitrary group IDs, an attacker can lock out the endpoint for other clients attempting to join SyncPlay groups and significantly increase the memory usage of the Jellyfin process, potentially leading to an out-of-memory crash. This issue has been fixed in version 10.11.7.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -308,7 +308,7 @@
     {
       "cve_id": "CVE-2024-43801",
       "published_date": "2024-09-02",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is an open source self hosted media server. The Jellyfin user profile image upload accepts SVG files, allowing for a stored XSS attack against an admin user via a specially crafted malicious SVG file. When viewed by an admin outside of the Jellyfin Web UI (e.g. via \"view image\" in a browser), this malicious SVG file could interact with the browser's LocalStorage and retrieve an AccessToken, which in turn can be used in an API call to elevate the target user to a Jellyfin administrator. The actual attack vector is unlikely to be exploited, as it requires specific actions by the administrator to view the SVG image outside of Jellyfin's WebUI, i.e. it is not a passive attack. The underlying exploit mechanism is solved by PR #12490, which forces attached images (including the potential malicious SVG) to be treated as attachments and thus downloaded by browsers, rather than viewed. This prevents exploitation of the LocalStorage of the browser. This PR has been merged and the relevant code changes are included in release version 10.9.10. All users are advised to upgrade.",
       "base_score": 4.6,
       "severity": "MEDIUM",
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2023-23635",
       "published_date": "2023-02-03",
-      "last_modified_date": "2025-03-26",
+      "last_modified_date": "2026-06-17",
       "description": "In Jellyfin 10.8.x through 10.8.3, the name of a collection is vulnerable to stored XSS. This allows an attacker to steal access tokens from the localStorage of the victim.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -350,7 +350,7 @@
     {
       "cve_id": "CVE-2023-23636",
       "published_date": "2023-02-03",
-      "last_modified_date": "2025-03-26",
+      "last_modified_date": "2026-06-17",
       "description": "In Jellyfin 10.8.x through 10.8.3, the name of a playlist is vulnerable to stored XSS. This allows an attacker to steal access tokens from the localStorage of the victim.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -371,7 +371,7 @@
     {
       "cve_id": "CVE-2022-35910",
       "published_date": "2022-08-19",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "In Jellyfin before 10.8, stored XSS allows theft of an admin access token.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -392,7 +392,7 @@
     {
       "cve_id": "CVE-2021-29490",
       "published_date": "2021-05-06",
-      "last_modified_date": "2024-11-21",
+      "last_modified_date": "2026-06-17",
       "description": "Jellyfin is a free software media system that provides media from a dedicated server to end-user devices via multiple apps. Verions prior to 10.7.3 vulnerable to unauthenticated Server-Side Request Forgery (SSRF) attacks via the imageUrl parameter. This issue potentially exposes both internal and external HTTP servers or other resources available via HTTP `GET` that are visible from the Jellyfin server. The vulnerability is patched in version 10.7.3. As a workaround, disable external access to the API endpoints `/Items/*/RemoteImages/Download`, `/Items/RemoteSearch/Image` and `/Images/Remote` via reverse proxy, or limit to known-friendly IPs.",
       "base_score": 5.8,
       "severity": "MEDIUM",
