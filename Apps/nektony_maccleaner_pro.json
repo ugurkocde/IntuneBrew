@@ -1,13 +1,13 @@
 {
   "name": "Nektony MacCleaner Pro",
   "description": "Delete junk, unnecessary files and folders, and speed up your computer",
-  "version": "4.0.3",
-  "url": "https://nektony.com/download/mac-cleaner-pro/dmg/mac-cleaner-pro.dmg?build=599",
+  "version": "4.0.4",
+  "url": "https://nektony.com/download/mac-cleaner-pro/dmg/mac-cleaner-pro.dmg?build=606",
   "vendor_url": "https://nektony.com/download/mac-cleaner-pro/dmg/mac-cleaner-pro.dmg?build=585",
   "bundleId": "com.nektony.MacCleaner-PRO",
   "homepage": "https://nektony.com/mac-cleaner-pro",
   "fileName": "mac-cleaner-pro.dmg",
-  "sha": "cdd50ab50adfe4da42cdfa97013ad2d5fc3b1370ac9e63cf2e016bfa5fd4d61a",
+  "sha": "0e8b09295aaa03415b199e41236813327cd298e7abaf48b9b052e9182e18c9c8",
   "category": "Utilities",
   "publisher": "Nektony",
   "previous_version": "4.0.3"

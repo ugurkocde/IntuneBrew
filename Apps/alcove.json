@@ -1,15 +1,15 @@
 {
   "name": "Alcove",
   "description": "Utility to add Dynamic Island like features to notch area",
-  "version": "1.7.4",
+  "version": "1.7.7",
   "url": "https://download.tryalcove.com/Alcove.dmg",
   "vendor_url": "https://github.com/henrikruscon/alcove-releases/releases/download/1.7.2/Alcove.zip",
   "bundleId": "com.henrikruscon.Alcove",
   "homepage": "https://tryalcove.com/",
   "fileName": "alcove_1.7.2.pkg",
   "type": "app",
-  "sha": "7ab6438fb677bd0ab9ee41f9f9e3641b9abf67d9dbd482e4c35ec678f20e837d",
-  "previous_version": "1.7.4",
+  "sha": "17c481ffa9af91fc76e2ba9995f96750538bf171e5eb2be602c07255f4d944e5",
+  "previous_version": "1.7.7",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:30:05Z",
     "qa_result": "Installation successful and verified",

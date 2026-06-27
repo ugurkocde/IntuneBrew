@@ -1,13 +1,13 @@
 {
   "name": "Funter",
   "description": "Shows hidden files and folders and switches their visibility in Finder",
-  "version": "7.1.1",
-  "url": "https://download.nektony.com/download/funter/Funter.dmg?build=374",
+  "version": "7.1.2",
+  "url": "https://download.nektony.com/download/funter/Funter.dmg?build=377",
   "vendor_url": "https://download.nektony.com/download/funter/Funter.dmg?build=366",
   "bundleId": "com.nektony.Funter-SIII",
   "homepage": "https://nektony.com/products/funter",
   "fileName": "Funter.dmg",
-  "sha": "8a8f8784ef3042106ff1f776803d96682f079c175e21a63d8f42568205e1081c",
+  "sha": "8f160d43fb50191b4e1bc9fe74a6c979a1be14faff9b8c2ce564506e75e8844f",
   "category": "Utilities",
   "publisher": "Nektony",
   "previous_version": "7.1.1"

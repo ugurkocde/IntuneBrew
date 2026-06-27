@@ -1,13 +1,13 @@
 {
   "name": "Memory Cleaner",
   "description": "Free up RAM manually and automatically",
-  "version": "5.5.2",
-  "url": "https://download.nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg?build=269",
+  "version": "5.5.3",
+  "url": "https://download.nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg?build=271",
   "vendor_url": "https://download.nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg?build=260",
   "bundleId": "com.nektony.Memory-Cleaner-SII",
   "homepage": "https://nektony.com/memory-cleaner",
   "fileName": "memory-cleaner.dmg",
-  "sha": "d05edd300d033b1cc4d81b33145cce4ddd2d2379619a3fd1815c620aa9ee802c",
+  "sha": "6b1097ccc760723e1c521a851ceef68b92c4a5647e1e1d5426f644f02d7517f3",
   "category": "Utilities",
   "publisher": "Nektony Ltd.",
   "previous_version": "5.5.2"
