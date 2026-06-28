@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1266-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -516,60 +516,23 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-27 01:06 UTC*
+*Last checked: 2026-06-28 01:07 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Mozilla Firefox Developer Edition | 153.0b4 | 153.0b5 |
-| Fathom | 3.2.2 | 3.2.3 |
-| Vimcal | 1.0.46 | 1.0.48 |
-| Studio 3T | 2026.8.0 | 2026.11.0 |
-| Rive | 0.8.5103 | 0.8.5117 |
-| Clop | 3.1.0 | 3.2.0 |
-| Dockside | 2.9.15 | 2.9.17 |
-| Jamie | 5.7.3 | 5.7.5 |
-| A Better Finder Rename | 12.30 | 12.31 |
-| ChatWise | 26.5.3 | 26.6.0 |
-| Lens | 2026.6.231104 | 2026.6.260931 |
-| Trae | 2.3.44176 | 2.3.44884 |
-| WeChat for Mac | 4.1.11.21 | 4.1.11.23 |
-| Google Chrome | 149.0.7827.197 | 149.0.7827.201 |
-| Mozilla Firefox | 152.0.2 | 152.0.3 |
-| Bitwarden | 2026.5.0 | 2026.6.0 |
-| Webex | 46.6.0.35178 | 46.6.1.35236 |
-| Brave | 1.91.178.0 | 1.91.180.0 |
-| Termius | 9.39.0 | 9.40.1 |
-| Citrix Workspace | 26.03.0.49 | 26.03.11.41 |
-| draw.io Desktop | 30.2.4 | 30.2.6 |
-| IINA | 1.4.3 | 1.4.4 |
-| Microsoft Edge | 149.0.4022.80 | 149.0.4022.98 |
-| calibre | 9.9.0 | 9.10.0 |
-| Rancher Desktop | 1.22.3 | 1.23.0 |
-| Warp | 0.2026.06.17.09.49.stable | 0.2026.06.24.09.19.stable |
-| Lark | 7.69.12 | 7.70.12 |
-| Path Finder | 26.1.4 | 26.1.5 |
-| TablePlus | 7.2.2 | 26.6.0 |
-| Zulip | 5.12.3 | 5.12.4 |
-| ocenaudio | 3.19.4 | 3.19.5 |
-| Opera GX | 132.0.5905.82 | 132.0.5905.110 |
+| Fathom | 3.2.3 | 3.3.1 |
+| Clop | 3.2.0 | 3.2.1 |
+| LookAway | 2.2.0 | 2.2.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Nektony App Cleaner & Uninstaller | 9.2.2 | 9.2.3 |
-| Funter | 7.1.1 | 7.1.2 |
-| Granola | 7.356.2 | 7.372.2 |
-| LaunchOS | 2.1.1 | 2.1.2 |
-| Nektony MacCleaner Pro | 4.0.3 | 4.0.4 |
-| Memory Cleaner | 5.5.2 | 5.5.3 |
-| Modern CSV | 2.4.2 | 2.4.3 |
-| Pitch | 2.133.2 | 2.133.3 |
-| Shapr3D | 26.110.0.11116 | 26.112.0.11153 |
-| Tuta Mail | 352.260618.0 | 353.260624.0 |
-| Wealthfolio | 3.5.2 | 3.5.3 |
-| Claude Code | 2.1.179 | 2.1.181 |
-| NordVPN | 10.4.0 | 10.5.1 |
-| Adobe Acrobat Pro DC | 26.001.21677 | 26.001.21691 |
+| DevKnife | 1.15.3 | 1.15.4 |
+| jamovi | 2.7.31.0 | 2.7.34.0 |
+| OpenAudible | 4.8.5 | 4.8.6 |
+| Shotcut | 26.4.30 | 26.6.25 |
+| Spyder | 6.1.4 | 6.1.5 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune

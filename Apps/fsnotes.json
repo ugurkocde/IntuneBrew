@@ -1,15 +1,15 @@
 {
   "name": "FSNotes",
   "description": "Notes manager",
-  "version": "7.2.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/fsnotes_7.2.1.pkg",
+  "version": "7.2.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/fsnotes_7.2.2.pkg",
   "vendor_url": "https://github.com/glushchenko/fsnotes/releases/download/v7.1.1/FSNotes_v7.1.1.zip",
   "bundleId": "co.fluder.FSNotes",
   "homepage": "https://fsnot.es/",
-  "fileName": "fsnotes_7.2.1.pkg",
+  "fileName": "fsnotes_7.2.2.pkg",
   "type": "app",
-  "previous_version": "7.2.1",
-  "sha": "da580c50ec29f24271259cd71577e2912e1c4f6e4f9d7c0324088b8c40fc65f3",
+  "previous_version": "7.2.2",
+  "sha": "06a199306f6a4ccd3461558e7212c1b0fdc2373cc2f6376c6813b6410f64ef07",
   "category": "Productivity",
   "publisher": "FSNotes"
 }
