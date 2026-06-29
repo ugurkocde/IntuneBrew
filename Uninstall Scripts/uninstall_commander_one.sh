@@ -49,12 +49,52 @@ elif [ -f "$HOME/Library/HTTPStorages/com.eltima.cmd1" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.eltima.cmd1" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.eltima.activator.xml
+echo "Removing $HOME/Library/Preferences/com.eltima.activator.xml..."
+if [ -d "$HOME/Library/Preferences/com.eltima.activator.xml" ]; then
+    rm -rf "$HOME/Library/Preferences/com.eltima.activator.xml" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.eltima.activator.xml" ]; then
+    rm -f "$HOME/Library/Preferences/com.eltima.activator.xml" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.eltima.cmd1.plist
 echo "Removing $HOME/Library/Preferences/com.eltima.cmd1.plist..."
 if [ -d "$HOME/Library/Preferences/com.eltima.cmd1.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.eltima.cmd1.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.eltima.cmd1.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.eltima.cmd1.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.eltima.TCXDropboxFS.plist
+echo "Removing $HOME/Library/Preferences/com.eltima.TCXDropboxFS.plist..."
+if [ -d "$HOME/Library/Preferences/com.eltima.TCXDropboxFS.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.eltima.TCXDropboxFS.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.eltima.TCXDropboxFS.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.eltima.TCXDropboxFS.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.eltima.TCXFtpFS.plist
+echo "Removing $HOME/Library/Preferences/com.eltima.TCXFtpFS.plist..."
+if [ -d "$HOME/Library/Preferences/com.eltima.TCXFtpFS.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.eltima.TCXFtpFS.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.eltima.TCXFtpFS.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.eltima.TCXFtpFS.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.eltima.TCXGDrive.plist
+echo "Removing $HOME/Library/Preferences/com.eltima.TCXGDrive.plist..."
+if [ -d "$HOME/Library/Preferences/com.eltima.TCXGDrive.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.eltima.TCXGDrive.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.eltima.TCXGDrive.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.eltima.TCXGDrive.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.eltima.TCXWebDAVFS.plist
+echo "Removing $HOME/Library/Preferences/com.eltima.TCXWebDAVFS.plist..."
+if [ -d "$HOME/Library/Preferences/com.eltima.TCXWebDAVFS.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.eltima.TCXWebDAVFS.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.eltima.TCXWebDAVFS.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.eltima.TCXWebDAVFS.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.eltima.cmd1.savedState
