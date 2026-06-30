@@ -1,15 +1,15 @@
 {
   "name": "Electron",
   "description": "Build desktop apps with JavaScript, HTML, and CSS",
-  "version": "42.5.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/electron_42.5.0.pkg",
+  "version": "42.5.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/electron_42.5.1.pkg",
   "vendor_url": "https://github.com/electron/electron/releases/download/v41.2.0/electron-v41.2.0-darwin-arm64.zip",
   "bundleId": "com.github.electron",
   "homepage": "https://electronjs.org/",
-  "fileName": "electron_42.5.0.pkg",
+  "fileName": "electron_42.5.1.pkg",
   "type": "app",
-  "sha": "97a4eb77c96b0e02ce0148557f132a90778c88a01fbc75533c8e1f2356a8e6e3",
+  "sha": "81adf9e018ce4c94662e92bd554b4a067d074a67a3ac33191672d1ffa4915a73",
   "category": "Developer Tools",
   "publisher": "GitHub, Inc.",
-  "previous_version": "42.5.0"
+  "previous_version": "42.5.1"
 }

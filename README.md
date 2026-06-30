@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1266-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -518,25 +518,46 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-29 01:09 UTC*
+*Last checked: 2026-06-30 01:06 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Readest | 0.11.12 | 0.11.16 |
-| Orca Slicer | 2.4.0 | 2.4.1 |
-| Proxyman | 6.11.0 | 6.12.0 |
-| Freelens | 1.10.1 | 1.10.2 |
-| Stats | 3.0.4 | 3.0.5 |
+| Recut | 4.4.7 | 4.4.8 |
+| Mozilla Firefox Developer Edition | 153.0b5 | 153.0b6 |
+| Reqable | 3.1.3 | 3.2.2 |
+| Dockside | 2.9.17 | 2.9.18 |
+| Readest | 0.11.16 | 0.11.17 |
+| Jamie | 5.7.5 | 5.7.7 |
+| Novabench | 6.1.0 | 6.1.1 |
+| Rocket.Chat | 4.14.1 | 4.15.0 |
+| Requestly | 26.6.22 | 26.6.29 |
+| Apifox | 2.8.35 | 2.8.36 |
+| NVIDIA GeForce NOW | 2.0.85.135 | 2.0.86.124 |
+| Cryptomator | 1.19.2 | 1.19.3 |
+| Downie | 4.12.8 | 4.12.9 |
+| Suspicious Package | 4.6.1 | 4.6.2 |
+| RStudio | 2026.05.1 | 2026.06.0 |
+| Discord | 0.0.396 | 0.0.397 |
+| DuckDuckGo | 1.195.0 | 1.196.0 |
+| Rancher Desktop | 1.23.0 | 1.23.1 |
+| Opera | 132.0.5905.102 | 133.0.5932.10 |
+| Apidog | 2.8.35 | 2.8.36 |
+| Mimestream | 1.10.2 | 1.10.3 |
+| Tor Browser | 15.0.16 | 15.0.17 |
+| REAPER | 7.75 | 7.76 |
+| Shift | 9.6.4.1231 | 9.6.7.1268 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| LaunchOS | 2.1.2 | 2.1.3 |
-| OnlySwitch | 2.6.7 | 2.6.8 |
-| Riverside Studio | 1.25.2 | 1.26.0 |
-| VueScan | 9.8.55 | 9.8.56 |
-| Shutter Encoder | 20.1 | 20.2 |
-| R | 4.6.0 | 4.6.1 |
+| Defold | 1.12.4 | 1.13.0 |
+| ClipBook | 1.35.0 | 1.36.0 |
+| jamovi | 2.7.34.0 | 2.7.36.0 |
+| Loom | 0.356.1 | 0.357.1 |
+| Screaming Frog SEO Spider | 24.2 | 24.3 |
+| XnViewMP | 1.11.2 | 1.11.5 |
+| Nextcloud | 33.0.6 | 33.0.7 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
