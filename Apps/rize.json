@@ -1,13 +1,13 @@
 {
   "name": "Rize",
   "description": "AI time tracker",
-  "version": "3.0.7",
-  "url": "https://github.com/rize-io/lua/releases/download/v3.0.7/Rize-3.0.7-arm64.dmg",
+  "version": "3.0.15",
+  "url": "https://github.com/rize-io/lua/releases/download/v3.0.15/Rize-3.0.15-arm64.dmg",
   "vendor_url": "https://github.com/rize-io/lua/releases/download/v2.3.7/Rize-2.3.7-arm64.dmg",
   "bundleId": "io.rize",
   "homepage": "https://rize.io/",
-  "fileName": "Rize-3.0.7-arm64.dmg",
-  "sha": "7b4188fa8729d579806ebb167e12959a7ef818990a2c2d6fbf8c0d34b640fa4b",
+  "fileName": "Rize-3.0.15-arm64.dmg",
+  "sha": "77d01df1e49310f5dfb6958a9ed7e9e7f82ddcc96731c056eeb7231ad574d056",
   "category": "Productivity",
   "publisher": "Rize AI, Inc.",
   "previous_version": "3.0.7"

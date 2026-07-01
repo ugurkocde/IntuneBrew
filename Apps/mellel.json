@@ -1,13 +1,13 @@
 {
   "name": "Mellel",
   "description": "Advanced word processor built for long and complex documents",
-  "version": "6.6.7",
-  "url": "https://d1riogbqt3a9uw.cloudfront.net/mellel_66703.dmg",
+  "version": "6.7.0",
+  "url": "https://d1riogbqt3a9uw.cloudfront.net/mellel_67002.dmg",
   "vendor_url": "https://d1riogbqt3a9uw.cloudfront.net/mellel_66510.dmg",
   "bundleId": "com.redlex.mellel6",
   "homepage": "https://www.mellel.com/",
-  "fileName": "mellel_66703.dmg",
-  "sha": "c5a93a3f023debfcd7176e42311e8d267c8586b5f7f3af40037baf3ab0be0cf4",
+  "fileName": "mellel_67002.dmg",
+  "sha": "f8833dc531d5d028fe0fed2aef033a61f4330dd75b0a931825b0f3ce9a6e727f",
   "category": "Productivity",
   "publisher": "Mellel Ltd.",
   "previous_version": "6.6.7"

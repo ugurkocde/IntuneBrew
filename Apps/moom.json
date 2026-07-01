@@ -1,13 +1,13 @@
 {
   "name": "Moom",
   "description": "Utility to move and zoom windows\u2014on one display",
-  "version": "4.5.0",
-  "url": "https://manytricks.com/download/_do_not_hotlink_/moom450.dmg",
+  "version": "4.5.1",
+  "url": "https://manytricks.com/download/_do_not_hotlink_/moom451.dmg",
   "vendor_url": "https://manytricks.com/download/_do_not_hotlink_/moom442.dmg",
   "bundleId": "com.manytricks.Moom",
   "homepage": "https://manytricks.com/moom/",
-  "fileName": "moom450.dmg",
-  "sha": "2db67bab024ec2fdc4ffb5044848d6cd3e6314a1669a6bbbbcd1b68f64a8cb23",
+  "fileName": "moom451.dmg",
+  "sha": "79ffff597f140b4126afad309c923742588ef1580050b83e24c6ebcbe44247d9",
   "category": "Utilities",
   "publisher": "Many Tricks",
   "previous_version": "4.5.0"

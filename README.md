@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1266-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -519,45 +519,56 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-06-30 01:06 UTC*
+*Last checked: 2026-07-01 01:14 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Recut | 4.4.7 | 4.4.8 |
-| Mozilla Firefox Developer Edition | 153.0b5 | 153.0b6 |
-| Reqable | 3.1.3 | 3.2.2 |
-| Dockside | 2.9.17 | 2.9.18 |
-| Readest | 0.11.16 | 0.11.17 |
-| Jamie | 5.7.5 | 5.7.7 |
-| Novabench | 6.1.0 | 6.1.1 |
-| Rocket.Chat | 4.14.1 | 4.15.0 |
-| Requestly | 26.6.22 | 26.6.29 |
-| Apifox | 2.8.35 | 2.8.36 |
-| NVIDIA GeForce NOW | 2.0.85.135 | 2.0.86.124 |
-| Cryptomator | 1.19.2 | 1.19.3 |
-| Downie | 4.12.8 | 4.12.9 |
-| Suspicious Package | 4.6.1 | 4.6.2 |
-| RStudio | 2026.05.1 | 2026.06.0 |
-| Discord | 0.0.396 | 0.0.397 |
-| DuckDuckGo | 1.195.0 | 1.196.0 |
-| Rancher Desktop | 1.23.0 | 1.23.1 |
-| Opera | 132.0.5905.102 | 133.0.5932.10 |
-| Apidog | 2.8.35 | 2.8.36 |
-| Mimestream | 1.10.2 | 1.10.3 |
-| Tor Browser | 15.0.16 | 15.0.17 |
-| REAPER | 7.75 | 7.76 |
-| Shift | 9.6.4.1231 | 9.6.7.1268 |
+| Fathom | 3.3.1 | 3.3.2 |
+| Reqable | 3.2.2 | 3.2.3 |
+| MarkEdit | 1.33.0 | 1.33.1 |
+| Dockside | 2.9.18 | 2.9.19 |
+| Ente | 1.7.24 | 1.7.25 |
+| LookAway | 2.2.1 | 2.2.2 |
+| Mozilla Firefox | 152.0.3 | 152.0.4 |
+| Grammarly Desktop | 1.171.1.0 | 1.172.1.0 |
+| Bitwarden | 2026.6.0 | 2026.6.1 |
+| Miro | 0.11.144 | 0.11.154 |
+| Notion | 7.23.0 | 7.24.0 |
+| Krisp | 3.12.5 | 3.13.8 |
+| Elgato Stream Deck | 7.4.2.22730 | 7.5.0.22885 |
+| Oracle VirtualBox | 7.2.10 | 7.2.12 |
+| Keka | 1.6.5 | 1.6.7 |
+| Transmission | 4.1.2 | 4.1.3 |
+| LM Studio | 0.4.16 | 0.4.18 |
+| Hoppscotch | 26.5.0-0 | 26.6.0-0 |
+| Milanote | 3.18.111 | 3.18.113 |
+| Capacities | 1.66.1 | 1.66.7 |
+| Franz | 6.3.1 | 6.4.0 |
+| Qobuz | 8.1.0 | 8.2.0 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Defold | 1.12.4 | 1.13.0 |
-| ClipBook | 1.35.0 | 1.36.0 |
-| jamovi | 2.7.34.0 | 2.7.36.0 |
-| Loom | 0.356.1 | 0.357.1 |
-| Screaming Frog SEO Spider | 24.2 | 24.3 |
-| XnViewMP | 1.11.2 | 1.11.5 |
-| Nextcloud | 33.0.6 | 33.0.7 |
+| Fellow | 5.3.3 | 5.4.4 |
+| GDevelop | 5.6.272 | 5.6.273 |
+| Granola | 7.372.2 | 7.373.1 |
+| LightBurn | 2.1.02 | 2.1.03 |
+| Mellel | 6.6.7 | 6.7.0 |
+| Moom | 4.5.0 | 4.5.1 |
+| Notesnook | 3.3.23 | 3.4.1 |
+| Pitch | 2.133.3 | 2.134.0 |
+| Rize | 3.0.7 | 3.0.15 |
+| Shapr3D | 26.112.0.11153 | 26.113.0.11178 |
+| Claude Code | 2.1.181 | 2.1.185 |
+| Nota Gyazo GIF | 10.10.2 | 10.11.0 |
+| Cloudflare WARP | 2026.4.1390.0 | 2026.6.822.0 |
+| Studio | 2.26.5 | 2.26.6 |
+| Microsoft Excel | 16.110.26062112 | 16.110.26062818 |
+| Microsoft OneNote | 16.110.26062112 | 16.110.26062818 |
+| Microsoft PowerPoint | 16.110.26062112 | 16.110.26062818 |
+| Microsoft Word | 16.110.26062112 | 16.110.26062818 |
+| Insta360 Link Controller | 2.2.3 | 2.2.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
