@@ -583,101 +583,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 ## 🚀 Getting Started
 
-### Prerequisites
-
-- PowerShell 7.0 or higher (works on Windows and macOS)
-- The `Microsoft.Graph.Authentication` PowerShell module
-- An Entra ID account or app registration with the `DeviceManagementApps.ReadWrite.All` and `Group.Read.All` permissions
-
-Install the script from the PowerShell Gallery:
-
-```powershell
-Install-Script IntuneBrew
-```
-
-Or clone this repository and run `IntuneBrew.ps1` directly.
-
-> [!NOTE]
-> On macOS, `Install-Script` places the script in `~/.local/share/powershell/Scripts`, which is not on your PATH by default. Either call it with the full path (`~/.local/share/powershell/Scripts/IntuneBrew.ps1`) or add the folder to your PATH in your PowerShell profile: `$env:PATH += ":$HOME/.local/share/powershell/Scripts"`
-
-## 📝 Usage
-
-### Basic Usage
-
-Run the script without parameters for the interactive experience. It guides you through authentication, shows which apps are already in your tenant and which have updates, and lets you select what to upload:
-
-```powershell
-.\IntuneBrew.ps1
-```
-
-### Advanced Parameters
-
-#### Upload Specific Apps
-
-```powershell
-.\IntuneBrew.ps1 -Upload firefox, google_chrome
-```
-
-#### Update All Apps
-
-Automatically selects and updates every app that is already in Intune and has a newer version available:
-
-```powershell
-.\IntuneBrew.ps1 -UpdateAll
-```
-
-#### Upload Local Files
-
-Upload a local PKG or DMG file instead of downloading from the catalog:
-
-```powershell
-.\IntuneBrew.ps1 -LocalFile
-```
-
-#### Copy Assignments
-
-Copy group assignments from the previous app version to the newly uploaded version:
-
-```powershell
-.\IntuneBrew.ps1 -UpdateAll -CopyAssignments
-```
-
-#### Use Existing Intune Apps
-
-Update the existing app record in Intune instead of creating a new one. Assignments and settings are preserved:
-
-```powershell
-.\IntuneBrew.ps1 -UpdateAll -UseExistingIntuneApp
-```
-
-#### Non-Interactive Authentication
-
-Authenticate with a certificate or client secret configuration file. The authentication method is detected from the file contents, so no prompts appear:
-
-```powershell
-.\IntuneBrew.ps1 -Upload firefox -ConfigFile .\clientSecret.json
-```
-
-See the [Configuration](#-configuration) section for the configuration file format.
-
-#### Customize App Names
-
-Add a prefix or suffix to the app display name in Intune:
-
-```powershell
-.\IntuneBrew.ps1 -Upload firefox -AppNamePrefix "Managed - " -AppNameSuffix " (IntuneBrew)"
-```
-
-#### Pre/Post Install Scripts (PKG only)
-
-Attach pre-install and post-install scripts to PKG deployments:
-
-```powershell
-.\IntuneBrew.ps1 -Upload firefox -PreInstallScriptPath .\pre.sh -PostInstallScriptPath .\post.sh
-```
-
-Other useful parameters: `-Search <name>` to search the catalog, `-BulkUpload` to select apps by number, `-IgnoreAppVersion` to re-upload regardless of version, `-LocalJsonDirectory <path>` to add or override app definitions with local JSON files, and `-ScopeTagIds <ids>` to apply role scope tags to created and updated apps.
-
 ### 📱 Supported Applications
 
 | Application | Latest Version |
@@ -906,7 +811,7 @@ Other useful parameters: `-Search <name>` to search the catalog, `-BulkUpload` t
 | <img src='Logos/cleanmymac_x_chinese.png' width='32' height='32'> CleanMyMac X Chinese | 4.15.14 |
 | <img src='Logos/cleanshot.png' width='32' height='32'> CleanShot | 4.8.8 |
 | <img src='Logos/cleartext.png' width='32' height='32'> Cleartext | 2.45 |
-| ❌ ClickShare | 4.50.0 |
+| <img src='Logos/clickshare.png' width='32' height='32'> ClickShare | 4.50.0 |
 | <img src='Logos/clickup.png' width='32' height='32'> ClickUp | 3.5.230 |
 | <img src='Logos/clion.png' width='32' height='32'> CLion | 2026.1.3 |
 | <img src='Logos/clipbook.png' width='32' height='32'> ClipBook | 1.36.0 |
@@ -923,7 +828,7 @@ Other useful parameters: `-Search <name>` to search the catalog, `-BulkUpload` t
 | <img src='Logos/coconutbattery.png' width='32' height='32'> coconutBattery | 4.3.3 |
 | <img src='Logos/codeedit.png' width='32' height='32'> CodeEdit | 0.3.6 |
 | <img src='Logos/coderunner.png' width='32' height='32'> CodeRunner | 4.5 |
-| ❌ Codex | 26.623.81905 |
+| <img src='Logos/codex.png' width='32' height='32'> Codex | 26.623.81905 |
 | <img src='Logos/coherence_x.png' width='32' height='32'> Coherence X | 5.1.2 |
 | <img src='Logos/colorsnapper_2.png' width='32' height='32'> ColorSnapper 2 | 1.7.1 |
 | <img src='Logos/colorwell.png' width='32' height='32'> ColorWell | 8.1.5 |
@@ -1335,14 +1240,14 @@ Other useful parameters: `-Search <name>` to search the catalog, `-BulkUpload` t
 | <img src='Logos/mailspring.png' width='32' height='32'> Mailspring | 1.22.0 |
 | <img src='Logos/makemkv.png' width='32' height='32'> MakeMKV | 1.18.4 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.24.0.4031 |
-| ❌ MAMP | 7.4 |
+| <img src='Logos/mamp.png' width='32' height='32'> MAMP | 7.4 |
 | <img src='Logos/marginnote.png' width='32' height='32'> MarginNote | 4.4.3 |
 | <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.33.1 |
 | <img src='Logos/marsedit.png' width='32' height='32'> MarsEdit | 5.4.3 |
 | <img src='Logos/marta_file_manager.png' width='32' height='32'> Marta File Manager | 0.8.2 |
 | <img src='Logos/masscode.png' width='32' height='32'> massCode | 5.7.0 |
 | <img src='Logos/mattermost.png' width='32' height='32'> Mattermost | 6.2.2 |
-| ❌ MediaInfo | 26.05 |
+| <img src='Logos/mediainfo.png' width='32' height='32'> MediaInfo | 26.05 |
 | <img src='Logos/medis.png' width='32' height='32'> Medis | 2.16.1 |
 | <img src='Logos/meetingbar.png' width='32' height='32'> MeetingBar | 4.11.6 |
 | <img src='Logos/mega.png' width='32' height='32'> MEGA | 12.1.2 |
@@ -1956,7 +1861,6 @@ Other useful parameters: `-Search <name>` to search the catalog, `-BulkUpload` t
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
-
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:
