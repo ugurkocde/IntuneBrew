@@ -173,7 +173,9 @@ jobs:
               apps_info.sort(key=lambda x: x['name'].lower())
 
               # Create the new table content (matching original format)
-              table_content = "### Supported Applications\n\n"
+              # Heading must match the marker used by collect_app_info.py and the
+              # README table of contents anchor (Issue #183)
+              table_content = "### \U0001F4F1 Supported Applications\n\n"
               table_content += "| Application | Latest Version |\n"
               table_content += "|-------------|----------------|\n"
 

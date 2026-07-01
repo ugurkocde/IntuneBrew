@@ -585,7 +585,102 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 ## 🚀 Getting Started
 
-### Supported Applications
+### Prerequisites
+
+- PowerShell 7.0 or higher (works on Windows and macOS)
+- The `Microsoft.Graph.Authentication` PowerShell module
+- An Entra ID account or app registration with the `DeviceManagementApps.ReadWrite.All` and `Group.Read.All` permissions
+
+Install the script from the PowerShell Gallery:
+
+```powershell
+Install-Script IntuneBrew
+```
+
+Or clone this repository and run `IntuneBrew.ps1` directly.
+
+> [!NOTE]
+> On macOS, `Install-Script` places the script in `~/.local/share/powershell/Scripts`, which is not on your PATH by default. Either call it with the full path (`~/.local/share/powershell/Scripts/IntuneBrew.ps1`) or add the folder to your PATH in your PowerShell profile: `$env:PATH += ":$HOME/.local/share/powershell/Scripts"`
+
+## 📝 Usage
+
+### Basic Usage
+
+Run the script without parameters for the interactive experience. It guides you through authentication, shows which apps are already in your tenant and which have updates, and lets you select what to upload:
+
+```powershell
+.\IntuneBrew.ps1
+```
+
+### Advanced Parameters
+
+#### Upload Specific Apps
+
+```powershell
+.\IntuneBrew.ps1 -Upload firefox, google_chrome
+```
+
+#### Update All Apps
+
+Automatically selects and updates every app that is already in Intune and has a newer version available:
+
+```powershell
+.\IntuneBrew.ps1 -UpdateAll
+```
+
+#### Upload Local Files
+
+Upload a local PKG or DMG file instead of downloading from the catalog:
+
+```powershell
+.\IntuneBrew.ps1 -LocalFile
+```
+
+#### Copy Assignments
+
+Copy group assignments from the previous app version to the newly uploaded version:
+
+```powershell
+.\IntuneBrew.ps1 -UpdateAll -CopyAssignments
+```
+
+#### Use Existing Intune Apps
+
+Update the existing app record in Intune instead of creating a new one. Assignments and settings are preserved:
+
+```powershell
+.\IntuneBrew.ps1 -UpdateAll -UseExistingIntuneApp
+```
+
+#### Non-Interactive Authentication
+
+Authenticate with a certificate or client secret configuration file. The authentication method is detected from the file contents, so no prompts appear:
+
+```powershell
+.\IntuneBrew.ps1 -Upload firefox -ConfigFile .\clientSecret.json
+```
+
+See the [Configuration](#-configuration) section for the configuration file format.
+
+#### Customize App Names
+
+Add a prefix or suffix to the app display name in Intune:
+
+```powershell
+.\IntuneBrew.ps1 -Upload firefox -AppNamePrefix "Managed - " -AppNameSuffix " (IntuneBrew)"
+```
+
+#### Pre/Post Install Scripts (PKG only)
+
+Attach pre-install and post-install scripts to PKG deployments:
+
+```powershell
+.\IntuneBrew.ps1 -Upload firefox -PreInstallScriptPath .\pre.sh -PostInstallScriptPath .\post.sh
+```
+
+Other useful parameters: `-Search <name>` to search the catalog, `-BulkUpload` to select apps by number, `-IgnoreAppVersion` to re-upload regardless of version, `-LocalJsonDirectory <path>` to add or override app definitions with local JSON files, and `-ScopeTagIds <ids>` to apply role scope tags to created and updated apps.
+
+### 📱 Supported Applications
 
 | Application | Latest Version |
 |-------------|----------------|
