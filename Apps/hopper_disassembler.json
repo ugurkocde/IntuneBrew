@@ -6,5 +6,7 @@
   "vendor_url": "https://www.hopperapp.com/downloader/public/Hopper-6.4.3-demo.dmg",
   "bundleId": null,
   "homepage": "https://www.hopperapp.com/",
-  "fileName": "Hopper-6.4.3-demo.dmg"
+  "fileName": "Hopper-6.4.3-demo.dmg",
+  "category": "Developer Tools",
+  "publisher": "Hopper Team"
 }

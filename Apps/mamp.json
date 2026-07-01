@@ -8,5 +8,7 @@
   "homepage": "https://www.mamp.info/",
   "fileName": "MAMP-MAMP-PRO-7.4-Apple-chip.pkg",
   "type": "pkg",
-  "sha": "ffbd16a23f5054d0bc6dba3647fb4014e6311562a0179ea1a6edb92a44fe06a7"
+  "sha": "ffbd16a23f5054d0bc6dba3647fb4014e6311562a0179ea1a6edb92a44fe06a7",
+  "category": "Developer Tools",
+  "publisher": "appsolute GmbH"
 }
