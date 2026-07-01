@@ -161,7 +161,6 @@ jobs:
               "microsoft_office": ("microsoft", "office", ["365_apps"]),
               "libreoffice": ("libreoffice", "libreoffice", []),
               "adobe_acrobat_reader": ("adobe", "acrobat_reader_dc", ["acrobat_reader", "acrobat"]),
-              "adobe_creative_cloud": ("adobe", "creative_cloud_desktop_application", ["creative_cloud"]),
               "nitro_pdf_pro": ("gonitro", "nitro_pdf_pro", ["nitro_pro"]),
 
               # Media

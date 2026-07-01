@@ -17,3 +17,14 @@ atuin
 displayplacer
 jq
 tree
+
+# Kubernetes and cloud CLIs (Issue #138)
+k9s
+kubernetes-cli
+azure-cli
+
+# Development runtimes (Issue #47)
+node
+
+# Embedded tooling (Issues #205, #219)
+uuu

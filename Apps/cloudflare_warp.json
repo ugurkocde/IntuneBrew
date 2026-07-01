@@ -6,7 +6,7 @@
   "vendor_url": "https://downloads.cloudflareclient.com/v1/download/macos/version/2026.3.846.0",
   "bundleId": "com.cloudflare.1dot1dot1dot1.macos",
   "homepage": "https://cloudflarewarp.com/",
-  "fileName": "Cloudflare-WARP-2026.6.822.0.dmg",
+  "fileName": "Cloudflare-WARP-2026.6.822.0.pkg",
   "type": "pkg",
   "sha": "601823e4b3c2a55b7a9f914add1bcc1b8a0a49c1c7762d13198c1ec8801aefc7",
   "changelog": "https://developers.cloudflare.com/warp-client/release-notes/",

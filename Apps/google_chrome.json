@@ -2,23 +2,14 @@
   "name": "Google Chrome",
   "description": "Web browser",
   "version": "149.0.7827.201",
-  "url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
-  "vendor_url": "https://dl.google.com/chrome/mac/universal/stable/GGRO/googlechrome.dmg",
+  "url": "https://dl.google.com/dl/chrome/mac/universal/stable/gcem/GoogleChrome.pkg",
+  "vendor_url": "https://dl.google.com/dl/chrome/mac/universal/stable/gcem/GoogleChrome.pkg",
   "bundleId": "com.google.Chrome",
   "homepage": "https://www.google.com/chrome/",
-  "fileName": "googlechrome.dmg",
-  "sha": "1fddac1409bf0495d215d70009f568c6855aa8c805f2dda1748f40ba393a4a0e",
+  "fileName": "GoogleChrome-149.0.7827.201.pkg",
+  "type": "pkg",
+  "sha": "dd0680e3dd5b6fb6aeee412501e5554d7efc8f4a46a7a46b3b8e7732f8880958",
   "changelog": "https://chromereleases.googleblog.com/",
-  "qa_info": {
-    "qa_timestamp": "2025-05-13T08:20:37Z",
-    "qa_result": "App not found after installation",
-    "download_status": "success",
-    "sha_status": "verified",
-    "install_status": "success",
-    "verify_status": "app_not_found",
-    "bundle_id_status": "pending"
-  },
   "category": "Browsers",
-  "publisher": "Google LLC",
-  "previous_version": "149.0.7827.201"
+  "publisher": "Google LLC"
 }

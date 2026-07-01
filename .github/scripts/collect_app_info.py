@@ -476,7 +476,10 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/zight.json",
     "https://formulae.brew.sh/api/cask/linear-linear.json",
     "https://formulae.brew.sh/api/cask/notion-mail.json",
-    "https://formulae.brew.sh/api/cask/codex.json",
+    # codex-app is the OpenAI Codex desktop app. The plain "codex" cask is the CLI
+    # tarball, which is not deployable via Intune (Issues #167, #174)
+    "https://formulae.brew.sh/api/cask/codex-app.json",
+    "https://formulae.brew.sh/api/cask/clickshare.json",
     "https://formulae.brew.sh/api/cask/pppc-utility.json",
     "https://formulae.brew.sh/api/cask/battery.json",
     "https://formulae.brew.sh/api/cask/music-decoy.json",
@@ -644,9 +647,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/hazel.json",
     "https://formulae.brew.sh/api/cask/cleanshot.json",
     "https://formulae.brew.sh/api/cask/pastebot.json",
-    "https://formulae.brew.sh/api/cask/omnissa-horizon-client.json",
-    "https://formulae.brew.sh/api/cask/adobe-creative-cloud.json",
-    "https://formulae.brew.sh/api/cask/google-chrome.json",
     "https://formulae.brew.sh/api/cask/zoom.json",
     "https://formulae.brew.sh/api/cask/firefox.json",
     "https://formulae.brew.sh/api/cask/slack.json",
@@ -660,7 +660,9 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/grammarly-desktop.json",
     "https://formulae.brew.sh/api/cask/todoist.json",
     "https://formulae.brew.sh/api/cask/xmind.json",
-    "https://formulae.brew.sh/api/cask/docker.json",
+    # Homebrew renamed the "docker" cask to "docker-desktop"; the old endpoint 404s,
+    # which silently froze Docker Desktop version updates (Issue #125)
+    "https://formulae.brew.sh/api/cask/docker-desktop.json",
     "https://formulae.brew.sh/api/cask/vlc.json",
     "https://formulae.brew.sh/api/cask/bitwarden.json",
     "https://formulae.brew.sh/api/cask/miro.json",
@@ -704,7 +706,8 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/gimp.json",
     "https://formulae.brew.sh/api/cask/geany.json",
     "https://formulae.brew.sh/api/cask/goland.json",
-    "https://formulae.brew.sh/api/cask/google-drive.json",
+    "https://formulae.brew.sh/api/cask/mediainfo.json",
+    "https://formulae.brew.sh/api/cask/hopper-disassembler.json",
     "https://formulae.brew.sh/api/cask/santa.json",
     "https://formulae.brew.sh/api/cask/intellij-idea-ce.json",
     "https://formulae.brew.sh/api/cask/keeper-password-manager.json",
@@ -1248,6 +1251,11 @@ pkg_in_dmg_urls = [
     "https://formulae.brew.sh/api/cask/wacom-tablet.json",
     "https://formulae.brew.sh/api/cask/zenmap.json",
     # Note: tuxera-ntfs removed - has directory-based PKG inside .mpkg that needs special handling
+    # Google Drive and Omnissa Horizon ship DMGs containing a PKG installer, which
+    # Intune cannot deploy as a DMG app (Issues #142, #135)
+    "https://formulae.brew.sh/api/cask/google-drive.json",
+    "https://formulae.brew.sh/api/cask/omnissa-horizon-client.json",
+    "https://formulae.brew.sh/api/cask/vagrant.json",
 ]
 
 # PKG in PKG URLs (some are ZIP files containing PKG that contains inner PKGs)
@@ -1356,12 +1364,17 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/r-app.json",
     "https://formulae.brew.sh/api/cask/microsoft-365-copilot.json",
     "https://formulae.brew.sh/api/cask/vnc-server.json",
+    "https://formulae.brew.sh/api/cask/mamp.json",
 ]
 
 # Custom scraper scripts to run
 custom_scrapers = [
     ".github/scripts/scrapers/remotehelp.sh",
-    ".github/scripts/scrapers/starface.sh"
+    ".github/scripts/scrapers/starface.sh",
+    # Chrome uses the enterprise PKG so Keystone is registered and self-updates work (Issue #203)
+    ".github/scripts/scrapers/google_chrome.sh",
+    # Wazuh is not in Homebrew; version is tracked from GitHub releases (Issue #97)
+    ".github/scripts/scrapers/wazuh_agent.sh"
 ]
 
 def calculate_file_hash(url):
@@ -1450,7 +1463,10 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         "vendor_url": vendor_url,
         "bundleId": bundle_id,
         "homepage": data["homepage"],
-        "fileName": get_filename_from_url(url, app_name=data["name"][0], version=version)
+        # Direct PKG apps must never fall back to a .dmg filename: the uploader derives
+        # the Intune app type from the file extension, so a PKG served from an
+        # extensionless URL would be deployed as a DMG and fail to mount (Issue #107)
+        "fileName": get_filename_from_url(url, app_name=data["name"][0], version=version, default_ext=".pkg" if is_pkg else ".dmg")
     }
 
     if needs_packaging:
@@ -1673,7 +1689,11 @@ def main():
                     # Store the new version and check if it changed
                     new_version = app_info["version"]
                     version_changed = existing_data.get("version") != new_version
-                    
+
+                    # Capture the previous version before overwriting it, otherwise
+                    # previous_version always equals version (noted in Issue #116)
+                    existing_data["previous_version"] = existing_data.get("version", "")
+
                     # Always update version and url
                     existing_data["version"] = new_version
                     existing_data["url"] = app_info["url"]
@@ -1687,8 +1707,6 @@ def main():
                     else:
                         # For non-repackaged apps, update fileName to match the URL
                         existing_data["fileName"] = get_filename_from_url(app_info["url"], app_name=display_name, version=new_version)
-                    
-                    existing_data["previous_version"] = existing_data.get("version", "")
                     
                     # Calculate new hash if version changed
                     if version_changed:
@@ -1888,8 +1906,10 @@ def main():
                         # For apps in the exclusion list, preserve the existing fileName
                         print(f"⚠️ Preserving custom fileName for {display_name}")
                     else:
-                        # For all other apps, update fileName to match the URL
-                        app_info["fileName"] = get_filename_from_url(new_url, app_name=display_name, version=new_version)
+                        # For all other apps, update fileName to match the URL. Direct PKG
+                        # apps default to .pkg so extensionless URLs are not mislabeled as
+                        # DMG, which broke Cloudflare WARP deployments (Issue #107)
+                        app_info["fileName"] = get_filename_from_url(new_url, app_name=display_name, version=new_version, default_ext=".pkg")
                     app_info["previous_version"] = previous_version
 
             with open(file_path, "w") as f:

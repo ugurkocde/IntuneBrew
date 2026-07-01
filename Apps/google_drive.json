@@ -7,6 +7,7 @@
   "bundleId": "com.google.drivefs",
   "homepage": "https://www.google.com/drive/",
   "fileName": "GoogleDrive.dmg",
+  "type": "pkg_in_dmg",
   "sha": "b99d4026bdc456f507127a6fbfd8d156958130cc49a4115e545ea38403a29c8b",
   "changelog": "https://support.google.com/drive/answer/2375082",
   "category": "Productivity",
