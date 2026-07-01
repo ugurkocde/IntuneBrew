@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-07-01T01:30:51.216Z",
+  "last_full_scan": "2026-07-01T22:06:58.985Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8853,14 +8853,10 @@
       "name": "Notion Mail"
     },
     "codex": {
-      "last_checked": "2026-02-07T14:15:13.342Z",
-      "bundle_id": "levi.CodexSessionViewer",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "mac_app_store",
-      "methods_tried": [
-        "mac_app_store"
-      ],
+      "last_checked": "2026-07-01T22:06:58.971Z",
+      "bundle_id": "com.openai.codex",
+      "status": "verified",
+      "source": "file",
       "name": "Codex"
     },
     "perimeter_81": {
@@ -9200,6 +9196,13 @@
       "status": "verified",
       "source": "file",
       "name": "Real VNC Server"
+    },
+    "wazuh_agent": {
+      "last_checked": "2026-07-01T22:06:58.984Z",
+      "bundle_id": "com.wazuh.pkg.wazuh-agent",
+      "status": "verified",
+      "source": "file",
+      "name": "Wazuh Agent"
     }
   }
 }
