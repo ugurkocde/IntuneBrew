@@ -1,5 +1,5 @@
 <#PSScriptInfo
-.VERSION 1.0.1
+.VERSION 1.1.0
 .GUID 53ddb976-1bc1-4009-bfa0-1e2a51477e4d
 .AUTHOR ugurk
 .COMPANYNAME
@@ -12,6 +12,7 @@
 .REQUIREDSCRIPTS
 .EXTERNALSCRIPTDEPENDENCIES
 .RELEASENOTES
+Version 1.1.0: Non-interactive authentication now works with -ConfigFile alone (auth method is inferred from the file, fixes #136). Version comparison supports versions with five or more segments like AWS Corretto (fixes #168). Upload URLs are renewed during long uploads so multi-GB apps no longer fail with SAS expiry errors (fixes #154). Failed uploads clean up the incomplete app entry in Intune (fixes #87). Added -ScopeTagIds parameter to apply role scope tags (fixes #51). -LocalJsonDirectory now merges and overrides catalog apps correctly and accepts file:// definitions (fixes #115). Apps managed via Apple VPP are detected and skipped instead of duplicated (fixes #204). Fixed Get-FormattedAppName not being found when uploading a local file (PR #127).
 Version 1.0.1: Fixed issue with missing SHA256 hashes for direct PKG downloads. Updated hash validation to allow user to proceed with warning when hash is missing (common with PKG type apps). Fixes issue #106.
 Version 1.0.0: Major update with 5 new features: Search functionality with fuzzy matching (-Search), Preserve assignments when updating apps (-PreserveAssignments), Bulk upload by app numbers (-BulkUpload), Ignore app version checking (-IgnoreAppVersion), Support for local JSON directory (-LocalJsonDirectory). Fixes issue #100, #74, #16, #66, #5.
 Version 0.9.0: Added -ConfigFile parameter for non-interactive authentication (enables macOS support). Added -UseExistingIntuneApp parameter to update existing apps instead of creating duplicates.
@@ -97,6 +98,11 @@ Version 0.3.7: Fix Parse Errors
  Specifies a local directory containing custom JSON app definitions.
  Example: IntuneBrew -LocalJsonDirectory "./custom-apps"
 
+.PARAMETER ScopeTagIds
+ Specifies one or more role scope tag IDs to apply to apps created or updated in Intune.
+ Required for accounts that do not have access to the Default scope tag.
+ Example: IntuneBrew -Upload firefox -ScopeTagIds "1","2"
+
 #>
 param(
     [Parameter(Mandatory = $false)]
@@ -142,7 +148,10 @@ param(
     [switch]$IgnoreAppVersion,
     
     [Parameter(Mandatory = $false)]
-    [string]$LocalJsonDirectory
+    [string]$LocalJsonDirectory,
+
+    [Parameter(Mandatory = $false)]
+    [string[]]$ScopeTagIds
 )
 
 Write-Host "
@@ -155,8 +164,8 @@ ___       _                    ____
 
 Write-Host "IntuneBrew - Automated macOS Application Deployment via Microsoft Intune" -ForegroundColor Green
 Write-Host "Made by Ugur Koc with" -NoNewline; Write-Host " ❤️  and ☕" -NoNewline
-Write-Host " | Version" -NoNewline; Write-Host " 1.0.1" -ForegroundColor Yellow -NoNewline
-Write-Host " | Last updated: " -NoNewline; Write-Host "2025-08-24" -ForegroundColor Magenta
+Write-Host " | Version" -NoNewline; Write-Host " 1.1.0" -ForegroundColor Yellow -NoNewline
+Write-Host " | Last updated: " -NoNewline; Write-Host "2026-07-01" -ForegroundColor Magenta
 Write-Host ""
 Write-Host "This is a preview version. If you have any feedback, please open an issue at https://github.com/ugurkocde/IntuneBrew/issues. Thank you!" -ForegroundColor Cyan
 Write-Host "You can sponsor the development of this project at https://github.com/sponsors/ugurkocde" -ForegroundColor Red
@@ -218,6 +227,27 @@ $requiredPermissions = @(
     "DeviceManagementApps.ReadWrite.All", # Read and write access to apps in Intune
     "Group.Read.All" # Read group names for assignment
 )
+
+# Helper function to format the application name with prefix and suffix.
+# Defined before any executing code so the -LocalFile flow can use it (PR #127).
+function Get-FormattedAppName {
+    param(
+        [string]$BaseName,
+        [string]$Prefix,
+        [string]$Suffix
+    )
+
+    # Trim incoming components so stray whitespace (e.g. "Slack ") does not
+    # silently break Intune lookups, group assignments, or logo URL resolution.
+    $formattedName = if ($null -ne $BaseName) { $BaseName.Trim() } else { '' }
+    if (-not [string]::IsNullOrEmpty($Prefix)) {
+        $formattedName = $Prefix.Trim() + $formattedName
+    }
+    if (-not [string]::IsNullOrEmpty($Suffix)) {
+        $formattedName = $formattedName + $Suffix.Trim()
+    }
+    return $formattedName.Trim()
+}
 
 # Function to validate JSON configuration file
 function Test-AuthConfig {
@@ -374,8 +404,16 @@ if ($ConfigFile) {
         exit
     }
 
-    if ($configFromFile.authMethod) {
-        switch ($configFromFile.authMethod) {
+    # Infer the auth method from the config file contents when authMethod is not set,
+    # so the shipped templates work non-interactively without an extra key (Issue #136)
+    $effectiveAuthMethod = $configFromFile.authMethod
+    if (-not $effectiveAuthMethod) {
+        if ($configFromFile.clientSecret) { $effectiveAuthMethod = "ClientSecret" }
+        elseif ($configFromFile.certificateThumbprint) { $effectiveAuthMethod = "Certificate" }
+    }
+
+    if ($effectiveAuthMethod) {
+        switch ($effectiveAuthMethod) {
             "Certificate" {
                 Write-Host "`nConfig file specifies certificate-based authentication. Attempting to authenticate..." -ForegroundColor Cyan
                 $authChoice = "1"
@@ -387,7 +425,7 @@ if ($ConfigFile) {
                 $authenticated = Connect-WithClientSecret $ConfigFile
             }
             default {
-                Write-Host "Error: Unsupported authMethod '$($configFromFile.authMethod)'. Supported values are 'Certificate' and 'ClientSecret'." -ForegroundColor Red
+                Write-Host "Error: Unsupported authMethod '$effectiveAuthMethod'. Supported values are 'Certificate' and 'ClientSecret'." -ForegroundColor Red
                 exit
             }
         }
@@ -527,14 +565,47 @@ function EncryptFile($sourceFile) {
 }
 
 # Handles chunked upload of large files to Azure Storage
+# Renews the Azure Storage SAS URI for an in-progress upload via the Graph renewUpload
+# action. Large uploads outlast the SAS token validity window, which failed blocks with
+# a signed expiry error and forced full restarts (Issue #154, Issue #87).
+function Request-RenewedSasUri {
+    param([string]$fileStatusUri)
+
+    if ([string]::IsNullOrEmpty($fileStatusUri)) {
+        Write-Host "Warning: No content file status URI available to renew the upload URL." -ForegroundColor Yellow
+        return $null
+    }
+
+    try {
+        Invoke-MgGraphRequest -Method POST -Uri "$fileStatusUri/renewUpload" -Body "{}" | Out-Null
+    }
+    catch {
+        Write-Host "Warning: Upload URL renewal request failed: $($_.Exception.Message)" -ForegroundColor Yellow
+    }
+
+    for ($renewAttempt = 0; $renewAttempt -lt 6; $renewAttempt++) {
+        Start-Sleep -Seconds 5
+        $renewedStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
+        if ($renewedStatus.azureStorageUri) {
+            return $renewedStatus.azureStorageUri
+        }
+    }
+    return $null
+}
+
 function UploadFileToAzureStorage($sasUri, $filepath) {
     $blockSize = 8 * 1024 * 1024  # 8 MB block size
     $fileSize = (Get-Item $filepath).Length
     $totalBlocks = [Math]::Ceiling($fileSize / $blockSize)
-    
+
     $maxRetries = 3
     $retryCount = 0
     $uploadSuccess = $false
+
+    # Renew the SAS URI proactively during long uploads so blocks never hit the
+    # token expiry window (Issue #154)
+    $sasRenewalStopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+    $sasRenewalIntervalMinutes = 7
 
     while (-not $uploadSuccess -and $retryCount -lt $maxRetries) {
         try {
@@ -561,6 +632,15 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
             Write-Host ""  # Add a blank line before progress bar
             
             while ($bytesRead = $fileStream.Read($blockBuffer, 0, $blockSize)) {
+                # Refresh the SAS URI before it expires so multi-GB uploads survive (Issue #154)
+                if ($sasRenewalStopwatch.Elapsed.TotalMinutes -ge $sasRenewalIntervalMinutes) {
+                    $renewedUri = Request-RenewedSasUri $fileStatusUri
+                    if ($renewedUri) {
+                        $sasUri = $renewedUri
+                    }
+                    $sasRenewalStopwatch.Restart()
+                }
+
                 # Ensure block ID is properly padded and valid base64
                 $blockIdBytes = [System.Text.Encoding]::UTF8.GetBytes($blockId.ToString("D6"))
                 $id = [System.Convert]::ToBase64String($blockIdBytes)
@@ -590,15 +670,21 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                     catch {
                         $blockRetries--
                         if ($blockRetries -gt 0) {
+                            # An expired SAS token is the most common block failure on long
+                            # uploads - renew it and retry the same block (Issue #154)
+                            if ($_.Exception.Message -match "AuthenticationFailed|Signed expiry time|403") {
+                                Write-Host "`nUpload token expired. Requesting a new upload URL..." -ForegroundColor Yellow
+                                $renewedUri = Request-RenewedSasUri $fileStatusUri
+                                if ($renewedUri) {
+                                    $sasUri = $renewedUri
+                                    $sasRenewalStopwatch.Restart()
+                                }
+                            }
                             Write-Host "Retrying block upload..." -ForegroundColor Yellow
                             Start-Sleep -Seconds 2
                         }
                         else {
                             Write-Host "Block upload failed: $_" -ForegroundColor Red
-                            if ($_.Exception.Message -match "AuthenticationFailed.*Signed expiry time.*has to be after signed start time") {
-                                Write-Host "Token timing issue detected. Adding additional delay..." -ForegroundColor Yellow
-                                Start-Sleep -Seconds 5
-                            }
                             throw $_
                         }
                     }
@@ -648,12 +734,11 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                 
                 # Request a new SAS token and wait for it to be valid
                 Write-Host "Requesting new upload URL..." -ForegroundColor Yellow
-                Start-Sleep -Seconds 2  # Add delay before requesting new token
-                $newFileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
-                if ($newFileStatus.azureStorageUri) {
-                    $sasUri = $newFileStatus.azureStorageUri
+                $renewedUri = Request-RenewedSasUri $fileStatusUri
+                if ($renewedUri) {
+                    $sasUri = $renewedUri
+                    $sasRenewalStopwatch.Restart()
                     Write-Host "Received new upload URL" -ForegroundColor Green
-                    Start-Sleep -Seconds 2  # Add delay to ensure token is valid
                 }
             }
             else {
@@ -1047,6 +1132,10 @@ if ($LocalFile) {
             }
         )
     }
+
+    if ($ScopeTagIds) {
+        $app["roleScopeTagIds"] = @($ScopeTagIds)
+    }
     
     $createAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps"
     $newApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($app | ConvertTo-Json -Depth 10)
@@ -1267,12 +1356,10 @@ try {
     # Fetch the supported apps JSON
     $supportedApps = Invoke-RestMethod -Uri $supportedAppsUrl -Method Get
     
-    # Merge local apps with supported apps
+    # Merge local apps with supported apps. A local JSON definition always wins,
+    # so it can both add new apps and override existing catalog entries (Issue #115).
     foreach ($localApp in $localJsonOverrides.Keys) {
-        if (-not $supportedApps.PSObject.Properties.Name -contains $localApp) {
-            # Add local app to supported apps
-            $supportedApps | Add-Member -MemberType NoteProperty -Name $localApp -Value "file://$($localJsonOverrides[$localApp])" -Force
-        }
+        $supportedApps | Add-Member -MemberType NoteProperty -Name $localApp -Value "file://$($localJsonOverrides[$localApp])" -Force
     }
 
 
@@ -1634,6 +1721,16 @@ function Test-ValidUrl {
         [string]$url
     )
 
+    # Local JSON definitions supplied via -LocalJsonDirectory use file:// URLs (Issue #115)
+    if ($url -like "file://*") {
+        $localPath = $url.Substring(7)
+        if (Test-Path $localPath) {
+            return $true
+        }
+        Write-Host "Local JSON file not found: $localPath" -ForegroundColor Red
+        return $false
+    }
+
     if ($url -match "^$([regex]::Escape($gitHubRespositoryRawUrl))/main/Apps/.*\.json$") {
         return $true
     }
@@ -1670,25 +1767,6 @@ function Format-TimeSpanForSummary {
     }
 }
 
-# Helper function to format the application name with prefix and suffix
-function Get-FormattedAppName {
-    param(
-        [string]$BaseName,
-        [string]$Prefix,
-        [string]$Suffix
-    )
-
-    # Trim incoming components so stray whitespace (e.g. "Slack ") does not
-    # silently break Intune lookups, group assignments, or logo URL resolution.
-    $formattedName = if ($null -ne $BaseName) { $BaseName.Trim() } else { '' }
-    if (-not [string]::IsNullOrEmpty($Prefix)) {
-        $formattedName = $Prefix.Trim() + $formattedName
-    }
-    if (-not [string]::IsNullOrEmpty($Suffix)) {
-        $formattedName = $formattedName + $Suffix.Trim()
-    }
-    return $formattedName.Trim()
-}
 # Retrieves and compares app versions between Intune and GitHub
 function Get-IntuneApp {
     $intuneApps = @()
@@ -1725,7 +1803,7 @@ function Get-IntuneApp {
             $response = Invoke-MgGraphRequest -Uri $intuneQueryUri -Method Get
             if ($response.value.Count -gt 0) {
                 # Find the latest version among potentially multiple entries
-                $latestAppEntry = $response.value | Sort-Object -Property @{Expression = { [Version]($_.primaryBundleVersion -replace '-.*$' -replace '\s*\(.*\)$', '') } } -Descending | Select-Object -First 1
+                $latestAppEntry = $response.value | Sort-Object -Property @{Expression = { Convert-VersionToSortable $_.primaryBundleVersion } } -Descending | Select-Object -First 1
                 
                 $intuneVersion = $latestAppEntry.primaryBundleVersion
                 $intuneAppId = $latestAppEntry.id # Get the ID of the latest version
@@ -1792,15 +1870,33 @@ function Get-IntuneApp {
                 }
             }
             else {
-                # Improved output for apps not in Intune
-                Write-Host "[$currentApp/$totalApps] ➕ $formattedAppName" -NoNewline -ForegroundColor Yellow
-                Write-Host ": Not in Intune (Latest: $($appInfo.version))" -ForegroundColor Yellow
-                $intuneApps += [PSCustomObject]@{
-                    Name          = $originalAppName
-                    FormattedName = $formattedAppName
-                    IntuneVersion = 'Not in Intune'
-                    IntuneAppId   = $null # No ID if not in Intune
-                    GitHubVersion = $appInfo.version
+                # Before treating the app as missing, check whether it is managed through
+                # Apple VPP, so a duplicate PKG/DMG entry is not offered next to it (Issue #204)
+                $vppQueryUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOsVppApp')) and displayName eq '$formattedAppName'"
+                $vppResponse = Invoke-MgGraphRequest -Uri $vppQueryUri -Method Get
+
+                if ($vppResponse.value.Count -gt 0) {
+                    Write-Host "[$currentApp/$totalApps] 🍎 $formattedAppName" -NoNewline -ForegroundColor Cyan
+                    Write-Host ": Managed via Apple VPP - skipping" -ForegroundColor Cyan
+                    $intuneApps += [PSCustomObject]@{
+                        Name          = $originalAppName
+                        FormattedName = $formattedAppName
+                        IntuneVersion = 'Managed via VPP'
+                        IntuneAppId   = $null
+                        GitHubVersion = $appInfo.version
+                    }
+                }
+                else {
+                    # Improved output for apps not in Intune
+                    Write-Host "[$currentApp/$totalApps] ➕ $formattedAppName" -NoNewline -ForegroundColor Yellow
+                    Write-Host ": Not in Intune (Latest: $($appInfo.version))" -ForegroundColor Yellow
+                    $intuneApps += [PSCustomObject]@{
+                        Name          = $originalAppName
+                        FormattedName = $formattedAppName
+                        IntuneVersion = 'Not in Intune'
+                        IntuneAppId   = $null # No ID if not in Intune
+                        GitHubVersion = $appInfo.version
+                    }
                 }
             }
         }
@@ -1814,15 +1910,67 @@ function Get-IntuneApp {
     return $intuneApps
 }
 
+# Compares two dotted version strings segment by segment. PowerShell's [Version] type
+# only supports four segments, which breaks five-part versions like Corretto's
+# 21.0.8.9.1 (Issue #168). Returns a negative number, zero, or a positive number.
+function Compare-VersionSegments {
+    param(
+        [string]$VersionA,
+        [string]$VersionB
+    )
+
+    $partsA = $VersionA -split '\.'
+    $partsB = $VersionB -split '\.'
+    $maxLength = [Math]::Max($partsA.Length, $partsB.Length)
+
+    for ($i = 0; $i -lt $maxLength; $i++) {
+        $segmentA = if ($i -lt $partsA.Length) { $partsA[$i].Trim() } else { "0" }
+        $segmentB = if ($i -lt $partsB.Length) { $partsB[$i].Trim() } else { "0" }
+
+        $numA = [int64]0
+        $numB = [int64]0
+        $isNumA = [int64]::TryParse($segmentA, [ref]$numA)
+        $isNumB = [int64]::TryParse($segmentB, [ref]$numB)
+
+        if ($isNumA -and $isNumB) {
+            if ($numA -gt $numB) { return 1 }
+            if ($numA -lt $numB) { return -1 }
+        }
+        else {
+            $stringComparison = [string]::Compare($segmentA, $segmentB, $true)
+            if ($stringComparison -ne 0) { return $stringComparison }
+        }
+    }
+    return 0
+}
+
+# Converts a version string into a zero-padded form so string sorting matches
+# numeric version ordering regardless of segment count (Issue #168)
+function Convert-VersionToSortable {
+    param([string]$Version)
+
+    $segments = ($Version -replace '-.*$' -replace '\s*\(.*\)$', '') -split '[.,]'
+    $padded = foreach ($segment in $segments) {
+        $num = [int64]0
+        if ([int64]::TryParse($segment.Trim(), [ref]$num)) { $num.ToString("D12") } else { $segment }
+    }
+    return ($padded -join '.')
+}
+
 # Compares version strings accounting for build numbers
 function Test-NewerVersion($githubVersion, $intuneVersion) {
     # If IgnoreAppVersion is set, always return false for existing apps (don't update based on version)
     if ($script:IgnoreAppVersion -and $intuneVersion -ne 'Not in Intune') {
         return $false
     }
-    
+
     if ($intuneVersion -eq 'Not in Intune') {
         return $true
+    }
+
+    # Apps managed through Apple VPP are never updated by IntuneBrew (Issue #204)
+    if ($intuneVersion -eq 'Managed via VPP') {
+        return $false
     }
 
     try {
@@ -1835,11 +1983,10 @@ function Test-NewerVersion($githubVersion, $intuneVersion) {
         $itVersionParts = $itVersion -split ','
 
         # Compare main version numbers first (strip parenthetical content like "build 6300")
-        $ghMainVersion = [Version]($ghVersionParts[0] -replace '\s*\(.*\)$', '')
-        $itMainVersion = [Version]($itVersionParts[0] -replace '\s*\(.*\)$', '')
+        $mainComparison = Compare-VersionSegments ($ghVersionParts[0] -replace '\s*\(.*\)$', '') ($itVersionParts[0] -replace '\s*\(.*\)$', '')
 
-        if ($ghMainVersion -ne $itMainVersion) {
-            return ($ghMainVersion -gt $itMainVersion)
+        if ($mainComparison -ne 0) {
+            return ($mainComparison -gt 0)
         }
 
         # If main versions are equal and there are build numbers
@@ -1877,6 +2024,10 @@ if (-not $UpdateAll) {
         if ($app.IntuneVersion -eq 'Not in Intune') {
             $status = "Not in Intune"
             $statusColor = "Red"
+        }
+        elseif ($app.IntuneVersion -eq 'Managed via VPP') {
+            $status = "Managed via Apple VPP (not handled by IntuneBrew)"
+            $statusColor = "Cyan"
         }
         elseif (Test-NewerVersion $app.GitHubVersion $app.IntuneVersion) {
             $status = "Update Available"
@@ -2252,9 +2403,13 @@ foreach ($app in $appsToUpload) {
                     bundleId      = $appBundleId
                     bundleVersion = $appBundleVersion
                 }
-            )    
+            )
         }
-    
+
+        if ($ScopeTagIds) {
+            $newAppPayload["roleScopeTagIds"] = @($ScopeTagIds)
+        }
+
         $createAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps"
         $newApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($newAppPayload | ConvertTo-Json -Depth 10)
         Write-Host "✅ App created successfully (ID: $($newApp.id))" -ForegroundColor Green
@@ -2263,66 +2418,84 @@ foreach ($app in $appsToUpload) {
         $intuneAppId = $newApp.id
     }
 
-    Write-Host "`n🔒 Processing content version..." -ForegroundColor Yellow
-    $contentVersionUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions"
-    $contentVersion = Invoke-MgGraphRequest -Method POST -Uri $contentVersionUri -Body "{}"
-    Write-Host "✅ Content version created (ID: $($contentVersion.id))" -ForegroundColor Green
+    # A failure between app creation and content commit must remove the freshly created
+    # app record, otherwise every failed run leaves an incomplete entry behind (Issue #87)
+    try {
+        Write-Host "`n🔒 Processing content version..." -ForegroundColor Yellow
+        $contentVersionUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions"
+        $contentVersion = Invoke-MgGraphRequest -Method POST -Uri $contentVersionUri -Body "{}"
+        Write-Host "✅ Content version created (ID: $($contentVersion.id))" -ForegroundColor Green
 
-    Write-Host "`n🔐 Encrypting application file..." -ForegroundColor Yellow
-    $encryptedFilePath = "$appFilePath.bin"
-    if (Test-Path $encryptedFilePath) {
-        Remove-Item $encryptedFilePath -Force
-    }
-    $fileEncryptionInfo = EncryptFile $appFilePath
-    Write-Host "✅ Encryption complete" -ForegroundColor Green
-
-    Write-Host "`n⬆️  Uploading to Azure Storage..." -ForegroundColor Yellow
-    $fileContent = @{
-        "@odata.type" = "#microsoft.graph.mobileAppContentFile"
-        name          = [System.IO.Path]::GetFileName($appFilePath)
-        size          = (Get-Item $appFilePath).Length
-        sizeEncrypted = (Get-Item "$appFilePath.bin").Length
-        isDependency  = $false
-    }
-
-    $contentFileUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files"  
-    $contentFile = Invoke-MgGraphRequest -Method POST -Uri $contentFileUri -Body ($fileContent | ConvertTo-Json)
-
-    do {
-        Start-Sleep -Seconds 5
-        $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
-        $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
-    } while ($fileStatus.uploadState -ne "azureStorageUriRequestSuccess")
-
-    UploadFileToAzureStorage $fileStatus.azureStorageUri "$appFilePath.bin"
-    Write-Host "✅ Upload completed successfully" -ForegroundColor Green
-
-    Write-Host "`n🔄 Committing file..." -ForegroundColor Yellow
-    $commitData = @{
-        fileEncryptionInfo = $fileEncryptionInfo
-    }
-    $commitUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)/commit"
-    Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
-
-    $retryCount = 0
-    $maxRetries = 10
-    do {
-        Start-Sleep -Seconds 10
-        $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
-        $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
-        if ($fileStatus.uploadState -eq "commitFileFailed") {
-            # Execute the request without storing the unused response
-            Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json) | Out-Null
-            $retryCount++
+        Write-Host "`n🔐 Encrypting application file..." -ForegroundColor Yellow
+        $encryptedFilePath = "$appFilePath.bin"
+        if (Test-Path $encryptedFilePath) {
+            Remove-Item $encryptedFilePath -Force
         }
-    } while ($fileStatus.uploadState -ne "commitFileSuccess" -and $retryCount -lt $maxRetries)
+        $fileEncryptionInfo = EncryptFile $appFilePath
+        Write-Host "✅ Encryption complete" -ForegroundColor Green
 
-    if ($fileStatus.uploadState -eq "commitFileSuccess") {
-        Write-Host "✅ File committed successfully" -ForegroundColor Green
+        Write-Host "`n⬆️  Uploading to Azure Storage..." -ForegroundColor Yellow
+        $fileContent = @{
+            "@odata.type" = "#microsoft.graph.mobileAppContentFile"
+            name          = [System.IO.Path]::GetFileName($appFilePath)
+            size          = (Get-Item $appFilePath).Length
+            sizeEncrypted = (Get-Item "$appFilePath.bin").Length
+            isDependency  = $false
+        }
+
+        $contentFileUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files"
+        $contentFile = Invoke-MgGraphRequest -Method POST -Uri $contentFileUri -Body ($fileContent | ConvertTo-Json)
+
+        do {
+            Start-Sleep -Seconds 5
+            $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
+            $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
+        } while ($fileStatus.uploadState -ne "azureStorageUriRequestSuccess")
+
+        UploadFileToAzureStorage $fileStatus.azureStorageUri "$appFilePath.bin"
+        Write-Host "✅ Upload completed successfully" -ForegroundColor Green
+
+        Write-Host "`n🔄 Committing file..." -ForegroundColor Yellow
+        $commitData = @{
+            fileEncryptionInfo = $fileEncryptionInfo
+        }
+        $commitUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)/commit"
+        Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
+
+        $retryCount = 0
+        $maxRetries = 10
+        do {
+            Start-Sleep -Seconds 10
+            $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
+            $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
+            if ($fileStatus.uploadState -eq "commitFileFailed") {
+                # Execute the request without storing the unused response
+                Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json) | Out-Null
+                $retryCount++
+            }
+        } while ($fileStatus.uploadState -ne "commitFileSuccess" -and $retryCount -lt $maxRetries)
+
+        if ($fileStatus.uploadState -eq "commitFileSuccess") {
+            Write-Host "✅ File committed successfully" -ForegroundColor Green
+        }
+        else {
+            throw "Failed to commit file after $maxRetries attempts."
+        }
     }
-    else {
-        Write-Host "Failed to commit file after $maxRetries attempts."
-        exit 1
+    catch {
+        Write-Host "`n❌ Upload failed for $appDisplayName : $_" -ForegroundColor Red
+        $appWasCreatedThisRun = -not ($updateExistingIntuneApp -and $app.IntuneAppId)
+        if ($appWasCreatedThisRun -and $intuneAppId) {
+            Write-Host "🧹 Removing incomplete app entry from Intune (ID: $intuneAppId)..." -ForegroundColor Yellow
+            try {
+                Invoke-MgGraphRequest -Method DELETE -Uri "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$intuneAppId" | Out-Null
+                Write-Host "✅ Incomplete app entry removed" -ForegroundColor Green
+            }
+            catch {
+                Write-Host "Warning: Could not remove incomplete app entry (ID: $intuneAppId). Please delete it manually in the Intune portal. Error: $_" -ForegroundColor Yellow
+            }
+        }
+        continue
     }
 
     # Update the app (new or existing) with new content version and supplied additional data
@@ -2343,6 +2516,10 @@ foreach ($app in $appsToUpload) {
             "@odata.type" = "#microsoft.graph.macOSMinimumOperatingSystem"
             v11_0         = $true
         }
+    }
+
+    if ($ScopeTagIds) {
+        $updateData["roleScopeTagIds"] = @($ScopeTagIds)
     }
 
     if ($appType -eq "macOSDmgApp" -or $appType -eq "macOSPkgApp") {

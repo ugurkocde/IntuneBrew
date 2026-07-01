@@ -400,20 +400,53 @@ function Clear-MemoryAggressively {
 }
 
 # Handles chunked upload of large files to Azure Storage
+# Renews the Azure Storage SAS URI for an in-progress upload via the Graph renewUpload
+# action. Large uploads outlast the SAS token validity window, which failed blocks with
+# a signed expiry error and forced full restarts (Issue #154, Issue #87).
+function Request-RenewedSasUri {
+    param([string]$fileStatusUri)
+
+    if ([string]::IsNullOrEmpty($fileStatusUri)) {
+        Write-Log "No content file status URI available to renew the upload URL." -Type "Warning"
+        return $null
+    }
+
+    try {
+        Invoke-MgGraphRequest -Method POST -Uri "$fileStatusUri/renewUpload" -Body "{}" | Out-Null
+    }
+    catch {
+        Write-Log "Upload URL renewal request failed: $($_.Exception.Message)" -Type "Warning"
+    }
+
+    for ($renewAttempt = 0; $renewAttempt -lt 6; $renewAttempt++) {
+        Start-Sleep -Seconds 5
+        $renewedStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
+        if ($renewedStatus.azureStorageUri) {
+            return $renewedStatus.azureStorageUri
+        }
+    }
+    return $null
+}
+
 function UploadFileToAzureStorage($sasUri, $filepath) {
     try {
         Write-Log "Starting file upload to Azure Storage"
         $fileSize = [Math]::Round((Get-Item $filepath).Length / 1MB, 2)
         Write-Log "File size: $fileSize MB"
-        
+
         $blockSize = 8 * 1024 * 1024  # 8 MB block size
         $fileSize = (Get-Item $filepath).Length
         $totalBlocks = [Math]::Ceiling($fileSize / $blockSize)
-        
+
         $maxRetries = 3
         $retryCount = 0
         $uploadSuccess = $false
         $lastProgressReport = 0
+
+        # Renew the SAS URI proactively during long uploads so blocks never hit the
+        # token expiry window (Issue #154)
+        $sasRenewalStopwatch = [System.Diagnostics.Stopwatch]::StartNew()
+        $sasRenewalIntervalMinutes = 7
 
         while (-not $uploadSuccess -and $retryCount -lt $maxRetries) {
             try {
@@ -432,6 +465,15 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                 $blockBuffer = [byte[]]::new($blockSize)
                 
                 while ($bytesRead = $fileStream.Read($blockBuffer, 0, $blockSize)) {
+                    # Refresh the SAS URI before it expires so multi-GB uploads survive (Issue #154)
+                    if ($sasRenewalStopwatch.Elapsed.TotalMinutes -ge $sasRenewalIntervalMinutes) {
+                        $renewedUri = Request-RenewedSasUri $fileStatusUri
+                        if ($renewedUri) {
+                            $sasUri = $renewedUri
+                        }
+                        $sasRenewalStopwatch.Restart()
+                    }
+
                     $blockIdBytes = [System.Text.Encoding]::UTF8.GetBytes($blockId.ToString("D6"))
                     $id = [System.Convert]::ToBase64String($blockIdBytes)
                     $blockList.Root.Add([System.Xml.Linq.XElement]::new("Latest", $id))
@@ -451,6 +493,16 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                         catch {
                             $blockRetries--
                             if ($blockRetries -gt 0) {
+                                # An expired SAS token is the most common block failure on long
+                                # uploads - renew it and retry the same block (Issue #154)
+                                if ($_.Exception.Message -match "AuthenticationFailed|Signed expiry time|403") {
+                                    Write-Log "Upload token expired. Requesting a new upload URL..." -Type "Warning"
+                                    $renewedUri = Request-RenewedSasUri $fileStatusUri
+                                    if ($renewedUri) {
+                                        $sasUri = $renewedUri
+                                        $sasRenewalStopwatch.Restart()
+                                    }
+                                }
                                 Start-Sleep -Seconds 2
                             }
                             else {
@@ -486,6 +538,12 @@ function UploadFileToAzureStorage($sasUri, $filepath) {
                 Write-Log "Upload attempt failed: $_" -Type "Error"
                 if ($retryCount -lt $maxRetries) {
                     Write-Log "Retrying upload..." -Type "Warning"
+                    $renewedUri = Request-RenewedSasUri $fileStatusUri
+                    if ($renewedUri) {
+                        $sasUri = $renewedUri
+                        $sasRenewalStopwatch.Restart()
+                        Write-Log "Received new upload URL"
+                    }
                     Start-Sleep -Seconds 5
                 }
                 else {
@@ -897,6 +955,72 @@ function Is-ValidUrl {
 }
 
 # Retrieves and compares app versions between Intune and GitHub
+# Compares two dotted version strings segment by segment. PowerShell's [Version] type
+# only supports four segments, which breaks five-part versions like Corretto's
+# 21.0.8.9.1 (Issue #168). Returns a negative number, zero, or a positive number.
+function Compare-VersionSegments {
+    param(
+        [string]$VersionA,
+        [string]$VersionB
+    )
+
+    $partsA = $VersionA -split '\.'
+    $partsB = $VersionB -split '\.'
+    $maxLength = [Math]::Max($partsA.Length, $partsB.Length)
+
+    for ($i = 0; $i -lt $maxLength; $i++) {
+        $segmentA = if ($i -lt $partsA.Length) { $partsA[$i].Trim() } else { "0" }
+        $segmentB = if ($i -lt $partsB.Length) { $partsB[$i].Trim() } else { "0" }
+
+        $numA = [int64]0
+        $numB = [int64]0
+        $isNumA = [int64]::TryParse($segmentA, [ref]$numA)
+        $isNumB = [int64]::TryParse($segmentB, [ref]$numB)
+
+        if ($isNumA -and $isNumB) {
+            if ($numA -gt $numB) { return 1 }
+            if ($numA -lt $numB) { return -1 }
+        }
+        else {
+            $stringComparison = [string]::Compare($segmentA, $segmentB, $true)
+            if ($stringComparison -ne 0) { return $stringComparison }
+        }
+    }
+    return 0
+}
+
+# Converts a version string into a zero-padded form so string sorting matches
+# numeric version ordering regardless of segment count (Issue #168)
+function Convert-VersionToSortable {
+    param([string]$Version)
+
+    $segments = ($Version -replace '-.*$' -replace '\s*\(.*\)$', '') -split '[.,]'
+    $padded = foreach ($segment in $segments) {
+        $num = [int64]0
+        if ([int64]::TryParse($segment.Trim(), [ref]$num)) { $num.ToString("D12") } else { $segment }
+    }
+    return ($padded -join '.')
+}
+
+# Cache of all macOS PKG/DMG apps in the tenant, used to match apps by bundle id
+# when the display name lookup finds nothing (e.g. renamed apps, Issue #217)
+$script:allMacOsAppsCache = $null
+function Get-AllMacOsApps {
+    if ($null -ne $script:allMacOsAppsCache) {
+        return $script:allMacOsAppsCache
+    }
+
+    $allApps = @()
+    $uri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp'))"
+    while ($uri) {
+        $page = Invoke-MgGraphRequest -Uri $uri -Method Get
+        if ($page.value) { $allApps += $page.value }
+        $uri = $page.'@odata.nextLink'
+    }
+    $script:allMacOsAppsCache = $allApps
+    return $allApps
+}
+
 function Get-IntuneApps {
     $intuneApps = @()
     $totalApps = $githubJsonUrls.Count
@@ -930,22 +1054,22 @@ function Get-IntuneApps {
             $response = Invoke-MgGraphRequest -Uri $intuneQueryUri -Method Get
             if ($response.value.Count -gt 0) {
                 # Find the latest version among potentially multiple entries
-                $latestAppEntry = $response.value | Sort-Object -Property @{Expression = { [Version]($_.primaryBundleVersion -replace '-.*$' -replace '\s*\(.*\)$', '') } } -Descending | Select-Object -First 1
+                $latestAppEntry = $response.value | Sort-Object -Property @{Expression = { Convert-VersionToSortable $_.primaryBundleVersion } } -Descending | Select-Object -First 1
 
                 $intuneVersion = $latestAppEntry.primaryBundleVersion
                 $intuneAppId = $latestAppEntry.id # Get the ID of the latest version
                 $githubVersion = $appInfo.version
-                
+
                 # Check if GitHub version is newer
                 $needsUpdate = Is-NewerVersion $githubVersion $intuneVersion
-                
+
                 if ($needsUpdate) {
                     Write-Log "Update available for $appName ($intuneVersion → $githubVersion)"
                 }
                 else {
                     Write-Log "$appName is up to date (Version: $intuneVersion)"
                 }
-                
+
                 $intuneApps += [PSCustomObject]@{
                     Name          = $appName
                     IntuneVersion = $intuneVersion
@@ -954,12 +1078,57 @@ function Get-IntuneApps {
                 }
             }
             else {
-                Write-Log "$appName not found in Intune"
-                $intuneApps += [PSCustomObject]@{
-                    Name          = $appName
-                    IntuneVersion = 'Not in Intune'
-                    IntuneAppId   = $null
-                    GitHubVersion = $appInfo.version
+                # Fall back to matching by bundle id so apps that were renamed in Intune
+                # or uploaded with a name prefix are still detected (Issue #217)
+                $bundleMatches = @()
+                if ($appInfo.bundleId) {
+                    $bundleMatches = @(Get-AllMacOsApps | Where-Object { $_.primaryBundleId -eq $appInfo.bundleId })
+                }
+
+                if ($bundleMatches.Count -gt 0) {
+                    $latestAppEntry = $bundleMatches | Sort-Object -Property @{Expression = { Convert-VersionToSortable $_.primaryBundleVersion } } -Descending | Select-Object -First 1
+                    $intuneVersion = $latestAppEntry.primaryBundleVersion
+                    $githubVersion = $appInfo.version
+                    Write-Log "$appName matched by bundle id '$($appInfo.bundleId)' under display name '$($latestAppEntry.displayName)'"
+
+                    if (Is-NewerVersion $githubVersion $intuneVersion) {
+                        Write-Log "Update available for $appName ($intuneVersion → $githubVersion)"
+                    }
+                    else {
+                        Write-Log "$appName is up to date (Version: $intuneVersion)"
+                    }
+
+                    $intuneApps += [PSCustomObject]@{
+                        Name          = $appName
+                        IntuneVersion = $intuneVersion
+                        IntuneAppId   = $latestAppEntry.id
+                        GitHubVersion = $githubVersion
+                    }
+                }
+                else {
+                    # Before treating the app as missing, check whether it is managed through
+                    # Apple VPP, so a duplicate PKG/DMG entry is not created (Issue #204)
+                    $vppQueryUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOsVppApp')) and displayName eq '$appName'"
+                    $vppResponse = Invoke-MgGraphRequest -Uri $vppQueryUri -Method Get
+
+                    if ($vppResponse.value.Count -gt 0) {
+                        Write-Log "$appName is managed via Apple VPP - skipping"
+                        $intuneApps += [PSCustomObject]@{
+                            Name          = $appName
+                            IntuneVersion = 'Managed via VPP'
+                            IntuneAppId   = $null
+                            GitHubVersion = $appInfo.version
+                        }
+                    }
+                    else {
+                        Write-Log "$appName not found in Intune"
+                        $intuneApps += [PSCustomObject]@{
+                            Name          = $appName
+                            IntuneVersion = 'Not in Intune'
+                            IntuneAppId   = $null
+                            GitHubVersion = $appInfo.version
+                        }
+                    }
                 }
             }
         }
@@ -977,6 +1146,11 @@ function Is-NewerVersion($githubVersion, $intuneVersion) {
         return $true
     }
 
+    # Apps managed through Apple VPP are never updated by IntuneBrew (Issue #204)
+    if ($intuneVersion -eq 'Managed via VPP') {
+        return $false
+    }
+
     try {
         # Remove hyphens and everything after them for comparison
         $ghVersion = $githubVersion -replace '-.*$'
@@ -986,12 +1160,12 @@ function Is-NewerVersion($githubVersion, $intuneVersion) {
         $ghVersionParts = $ghVersion -split ','
         $itVersionParts = $itVersion -split ','
 
-        # Compare main version numbers first (strip parenthetical content like "build 6300")
-        $ghMainVersion = [Version]($ghVersionParts[0] -replace '\s*\(.*\)$', '')
-        $itMainVersion = [Version]($itVersionParts[0] -replace '\s*\(.*\)$', '')
+        # Compare main version numbers first (strip parenthetical content like "build 6300").
+        # Segment-wise comparison supports versions with five or more parts (Issue #168).
+        $mainComparison = Compare-VersionSegments ($ghVersionParts[0] -replace '\s*\(.*\)$', '') ($itVersionParts[0] -replace '\s*\(.*\)$', '')
 
-        if ($ghMainVersion -ne $itMainVersion) {
-            return ($ghMainVersion -gt $itMainVersion)
+        if ($mainComparison -ne 0) {
+            return ($mainComparison -gt 0)
         }
 
         # If main versions are equal and there are build numbers
@@ -1394,7 +1568,24 @@ foreach ($app in $appsToUpload) {
             "@odata.type"           = "#microsoft.graph.$appType"
             committedContentVersion = $contentVersion.id
         }
-        Invoke-MgGraphRequest -Method PATCH -Uri $updateAppUri -Body ($updateData | ConvertTo-Json)
+
+        # The version fields must be updated together with the committed content version.
+        # Without them an existing app keeps reporting the old version, so the same update
+        # is re-applied on every run (Issue #216).
+        if ($appType -eq "macOSDmgApp" -or $appType -eq "macOSPkgApp") {
+            $updateData["versionNumber"] = $appBundleVersion
+            $updateData["primaryBundleId"] = $appBundleId
+            $updateData["primaryBundleVersion"] = $appBundleVersion
+            $updateData["includedApps"] = @(
+                @{
+                    "@odata.type" = "#microsoft.graph.macOSIncludedApp"
+                    bundleId      = $appBundleId
+                    bundleVersion = $appBundleVersion
+                }
+            )
+        }
+
+        Invoke-MgGraphRequest -Method PATCH -Uri $updateAppUri -Body ($updateData | ConvertTo-Json -Depth 10)
 
             # Apply assignments if the flag is set and assignments were successfully fetched
         if ($copyAssignments -and $existingAssignments -ne $null) {
