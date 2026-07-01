@@ -17,11 +17,11 @@ fi
 echo "Stopping Elgato Stream Deck if running..."
 pkill -f "Elgato Stream Deck" 2>/dev/null || true
 
-# Unload service com.elgato.StreamDeck
-echo "Unloading service com.elgato.StreamDeck..."
-launchctl unload -w /Library/LaunchAgents/com.elgato.StreamDeck.plist 2>/dev/null || true
-launchctl unload -w /Library/LaunchDaemons/com.elgato.StreamDeck.plist 2>/dev/null || true
-launchctl unload -w ~/Library/LaunchAgents/com.elgato.StreamDeck.plist 2>/dev/null || true
+# Unload service com.elgato.StreamDeck*
+echo "Unloading service com.elgato.StreamDeck*..."
+launchctl unload -w /Library/LaunchAgents/com.elgato.StreamDeck*.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.elgato.StreamDeck*.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.elgato.StreamDeck*.plist 2>/dev/null || true
 
 # Kill application with bundle ID com.elgato.StreamDeck if running
 echo "Stopping application with bundle ID com.elgato.StreamDeck if running..."

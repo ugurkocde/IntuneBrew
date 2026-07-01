@@ -33,5 +33,53 @@ elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.
     rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.fadel.missioncontrolplus.sfl*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/Mission Control Plus
+echo "Removing $HOME/Library/Application Support/Mission Control Plus..."
+if [ -d "$HOME/Library/Application Support/Mission Control Plus" ]; then
+    rm -rf "$HOME/Library/Application Support/Mission Control Plus" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Mission Control Plus" ]; then
+    rm -f "$HOME/Library/Application Support/Mission Control Plus" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/io.fadel.MissionControlPlus
+echo "Removing $HOME/Library/Caches/io.fadel.MissionControlPlus..."
+if [ -d "$HOME/Library/Caches/io.fadel.MissionControlPlus" ]; then
+    rm -rf "$HOME/Library/Caches/io.fadel.MissionControlPlus" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/io.fadel.MissionControlPlus" ]; then
+    rm -f "$HOME/Library/Caches/io.fadel.MissionControlPlus" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/io.fadel.MissionControlPlus
+echo "Removing $HOME/Library/HTTPStorages/io.fadel.MissionControlPlus..."
+if [ -d "$HOME/Library/HTTPStorages/io.fadel.MissionControlPlus" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/io.fadel.MissionControlPlus" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/io.fadel.MissionControlPlus" ]; then
+    rm -f "$HOME/Library/HTTPStorages/io.fadel.MissionControlPlus" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/io.fadel.MissionControlPlus.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/io.fadel.MissionControlPlus.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/io.fadel.MissionControlPlus.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/io.fadel.MissionControlPlus.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/io.fadel.MissionControlPlus.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/io.fadel.MissionControlPlus.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/io.fadel.MissionControlPlus.plist
+echo "Removing $HOME/Library/Preferences/io.fadel.MissionControlPlus.plist..."
+if [ -d "$HOME/Library/Preferences/io.fadel.MissionControlPlus.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/io.fadel.MissionControlPlus.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/io.fadel.MissionControlPlus.plist" ]; then
+    rm -f "$HOME/Library/Preferences/io.fadel.MissionControlPlus.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/io.fadel.missioncontrolplus.preferences.plist
+echo "Removing $HOME/Library/Preferences/io.fadel.missioncontrolplus.preferences.plist..."
+if [ -d "$HOME/Library/Preferences/io.fadel.missioncontrolplus.preferences.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/io.fadel.missioncontrolplus.preferences.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/io.fadel.missioncontrolplus.preferences.plist" ]; then
+    rm -f "$HOME/Library/Preferences/io.fadel.missioncontrolplus.preferences.plist" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0
