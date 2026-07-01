@@ -1,13 +1,13 @@
 {
   "name": "NordPass",
   "description": "Password manager",
-  "version": "7.7.12",
+  "version": "7.8.15",
   "url": "https://downloads.npass.app/mac/arm/NordPass.dmg",
   "vendor_url": "https://downloads.npass.app/mac/arm/NordPass.dmg",
   "bundleId": "com.nordsec.nordpass",
   "homepage": "https://nordpass.com/",
   "fileName": "NordPass.dmg",
-  "sha": "cbae181716ac00bb470a5f9eedee09af27d8c667411272df0139c3e203ad8e7b",
+  "sha": "86154a964f531c832fa5683670118217939fb592f5953f384e54606b12bb8665",
   "category": "Security",
   "publisher": "Nord Security",
   "previous_version": "7.7.12"

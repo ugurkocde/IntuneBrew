@@ -1,14 +1,14 @@
 {
   "name": "osquery",
   "description": "SQL powered operating system instrumentation and analytics",
-  "version": "5.23.0",
-  "url": "https://github.com/osquery/osquery/releases/download/5.23.0/osquery-5.23.0.pkg",
+  "version": "5.23.1",
+  "url": "https://github.com/osquery/osquery/releases/download/5.23.1/osquery-5.23.1.pkg",
   "vendor_url": "https://github.com/osquery/osquery/releases/download/5.22.1/osquery-5.22.1.pkg",
   "bundleId": "com.facebook.osquery",
   "homepage": "https://osquery.io/",
-  "fileName": "osquery-5.23.0.pkg",
+  "fileName": "osquery-5.23.1.pkg",
   "type": "pkg",
-  "sha": "2621179c334a6482fa822732f121409bbccc36784db18f576e2965dfc4f1845d",
+  "sha": "9f40cea0358759ab2ee871c577055657e3cc2c7cbe5c1247f764245941178aa6",
   "category": "Security",
   "publisher": "Facebook, Inc.",
   "previous_version": "5.23.0"

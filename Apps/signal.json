@@ -1,14 +1,14 @@
 {
   "name": "Signal",
   "description": "Instant messaging application focusing on security",
-  "version": "8.16.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/signal_8.16.0.pkg",
+  "version": "8.17.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/signal_8.17.0.pkg",
   "vendor_url": "https://updates.signal.org/desktop/signal-desktop-mac-arm64-8.6.1.zip",
   "bundleId": "org.whispersystems.signal-desktop",
   "homepage": "https://signal.org/",
-  "fileName": "signal_8.16.0.pkg",
+  "fileName": "signal_8.17.0.pkg",
   "type": "app",
-  "sha": "38541daa2dc01c870ee848097825e1eb9f9d9304ab1684ab9857ef361d1e1b8f",
+  "sha": "fbed0b46e1d0fd90d0a8bfe7fc445e995334c8513a8c1d07fd3fcf27fa5af414",
   "previous_version": "8.16.0",
   "category": "Communication",
   "publisher": "Signal Foundation"

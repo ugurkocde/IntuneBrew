@@ -1,0 +1,12 @@
+{
+  "name": "ClickShare",
+  "description": "Client for wireless screen sharing with Barco conferencing systems",
+  "version": "4.50.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/clickshare_4.50.0.pkg",
+  "vendor_url": "https://assets.cloud.barco.com/clickshare/release/ClickShare-4.50.0-b15_mac.zip",
+  "bundleId": "com.barco.clickshare.updater",
+  "homepage": "https://www.barco.com/en/product/clickshare-app",
+  "fileName": "clickshare_4.50.0.pkg",
+  "type": "app",
+  "sha": "67be3d6c3e986d746fded40d8bf6dc5834169c2890fc575533b45d591479c2a4"
+}

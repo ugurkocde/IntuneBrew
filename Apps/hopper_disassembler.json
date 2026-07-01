@@ -1,0 +1,10 @@
+{
+  "name": "Hopper Disassembler",
+  "description": "Reverse engineering tool that lets you disassemble, decompile and debug your app",
+  "version": "6.4.3",
+  "url": "https://www.hopperapp.com/downloader/public/Hopper-6.4.3-demo.dmg",
+  "vendor_url": "https://www.hopperapp.com/downloader/public/Hopper-6.4.3-demo.dmg",
+  "bundleId": null,
+  "homepage": "https://www.hopperapp.com/",
+  "fileName": "Hopper-6.4.3-demo.dmg"
+}

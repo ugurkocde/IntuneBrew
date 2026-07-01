@@ -1,14 +1,14 @@
 {
   "name": "DaisyDisk",
   "description": "Disk space visualiser",
-  "version": "4.33.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/daisydisk_4.33.3.pkg",
+  "version": "4.34",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/daisydisk_4.34.pkg",
   "vendor_url": "https://daisydiskapp.com/download/DaisyDisk.zip",
   "bundleId": "com.daisydiskapp.DaisyDiskStandAlone",
   "homepage": "https://daisydiskapp.com/",
-  "fileName": "daisydisk_4.33.3.pkg",
+  "fileName": "daisydisk_4.34.pkg",
   "type": "app",
-  "sha": "1d845eabd602feea1207b4a681d6d753b7bd8175b4f7a4339d39196886aa7ead",
+  "sha": "25d1cddfada8b7602807f75fcaf81045ebf04388e4b831b97aee31b232486fad",
   "changelog": "https://daisydiskapp.com/changelog/",
   "previous_version": "4.33.3",
   "qa_info": {
