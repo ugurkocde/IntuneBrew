@@ -9,5 +9,7 @@
   "fileName": "Skype-8.150.0.125.dmg",
   "category": "Communication",
   "publisher": "Microsoft Corporation",
-  "previous_version": "8.150.0.125"
+  "previous_version": "8.150.0.125",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: discontinued"
 }
