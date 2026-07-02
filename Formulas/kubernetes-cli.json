@@ -1,0 +1,10 @@
+{
+  "name": "kubernetes-cli",
+  "description": "Kubernetes command-line interface",
+  "version": "1.36.2",
+  "homepage": "https://kubernetes.io/docs/reference/kubectl/",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/kubernetes-cli_1.36.2_arm64.pkg",
+  "fileName": "kubernetes-cli_1.36.2_arm64.pkg",
+  "bundledDependencies": [],
+  "binaryPath": "/usr/local/bin/kubernetes-cli"
+}

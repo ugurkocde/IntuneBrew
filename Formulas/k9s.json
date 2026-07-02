@@ -1,0 +1,10 @@
+{
+  "name": "k9s",
+  "description": "Kubernetes CLI To Manage Your Clusters In Style!",
+  "version": "0.51.0",
+  "homepage": "https://k9scli.io/",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/k9s_0.51.0_arm64.pkg",
+  "fileName": "k9s_0.51.0_arm64.pkg",
+  "bundledDependencies": [],
+  "binaryPath": "/usr/local/bin/k9s"
+}

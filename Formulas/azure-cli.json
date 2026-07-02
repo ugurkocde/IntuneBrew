@@ -1,0 +1,15 @@
+{
+  "name": "azure-cli",
+  "description": "Microsoft Azure CLI 2.0",
+  "version": "2.87.0",
+  "homepage": "https://docs.microsoft.com/cli/azure/overview",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/azure-cli_2.87.0_arm64.pkg",
+  "fileName": "azure-cli_2.87.0_arm64.pkg",
+  "bundledDependencies": [
+    "libsodium",
+    "libyaml",
+    "openssl@3",
+    "python@3.13"
+  ],
+  "binaryPath": "/usr/local/bin/azure-cli"
+}

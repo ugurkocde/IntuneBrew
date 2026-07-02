@@ -1,10 +1,15 @@
 {
     "atuin": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/atuin.json",
+    "azure-cli": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/azure-cli.json",
     "btop": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/btop.json",
     "displayplacer": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/displayplacer.json",
     "fastfetch": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/fastfetch.json",
     "fzf": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/fzf.json",
     "jq": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/jq.json",
+    "k9s": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/k9s.json",
+    "kubernetes-cli": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/kubernetes-cli.json",
+    "node": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/node.json",
     "the_silver_searcher": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/the_silver_searcher.json",
-    "tree": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/tree.json"
+    "tree": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/tree.json",
+    "uuu": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Formulas/uuu.json"
 }

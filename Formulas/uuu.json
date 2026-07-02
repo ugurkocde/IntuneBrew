@@ -1,0 +1,17 @@
+{
+  "name": "uuu",
+  "description": "Universal Update Utility, mfgtools 3.0. NXP I.MX Chip image deploy tools",
+  "version": "1.5.243",
+  "homepage": "https://github.com/nxp-imx/mfgtools",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/uuu_1.5.243_arm64.pkg",
+  "fileName": "uuu_1.5.243_arm64.pkg",
+  "sha": "eac0cf336b1afbf789457a6274e6b2165147831c2f54d488b5d50d55996297a6",
+  "bundledDependencies": [
+    "libusb",
+    "libzip",
+    "openssl@3",
+    "tinyxml2",
+    "zstd"
+  ],
+  "binaryPath": "/usr/local/bin/uuu"
+}
