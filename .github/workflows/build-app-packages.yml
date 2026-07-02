@@ -47,6 +47,10 @@ jobs:
           apps_to_build=()
           for file in Apps/*.json; do
             if [ -f "$file" ]; then
+              if [ "$(jq -r '.deprecated // false' "$file")" = "true" ]; then
+                echo "Skipping deprecated app: $(basename "$file" .json)"
+                continue
+              fi
               type=$(jq -r '.type // empty' "$file")
               if [ "$type" = "app" ] || [ "$type" = "pkg_in_dmg" ] || [ "$type" = "pkg_in_pkg" ] || [ "$type" = "pkg" ]; then
                 app_name=$(basename "$file" .json)
@@ -70,6 +74,16 @@ jobs:
 
           for filename in os.listdir(apps_folder):
               if filename.endswith(".json"):
+                  # Deprecated apps stay in Apps/ for history but must not be
+                  # offered for upload, their download URLs no longer work
+                  try:
+                      with open(os.path.join(apps_folder, filename)) as f:
+                          app_data = json.load(f)
+                  except ValueError:
+                      app_data = {}
+                  if app_data.get("deprecated"):
+                      print(f"Excluding deprecated app: {filename}")
+                      continue
                   app_name = os.path.splitext(filename)[0]
                   supported_apps[app_name] = f"https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/{filename}"
 

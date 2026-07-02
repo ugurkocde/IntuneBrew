@@ -9,5 +9,7 @@
   "fileName": "CheatSheet_1.6.4.dmg",
   "category": "Utilities",
   "publisher": "Media Atelier",
-  "previous_version": "1.6.4"
+  "previous_version": "1.6.4",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: discontinued"
 }

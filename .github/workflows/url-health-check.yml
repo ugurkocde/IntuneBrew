@@ -1,0 +1,73 @@
+name: Check Download URL Health
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 6 * * 1,4" # Mondays and Thursdays at 06:00 UTC
+
+permissions:
+  contents: read
+  issues: write
+
+env:
+  ISSUE_TITLE: Broken download URLs in app catalog
+
+jobs:
+  check-urls:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: pip install requests
+
+      - name: Check download URLs
+        id: check
+        run: python .github/scripts/check_download_urls.py
+
+      - name: Find existing report issue
+        id: issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          number=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open \
+            --search "\"$ISSUE_TITLE\" in:title" --json number,title \
+            --jq ".[] | select(.title == \"$ISSUE_TITLE\") | .number" | head -1)
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+
+      - name: Create or update report issue
+        if: steps.check.outputs.broken_count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ steps.issue.outputs.number }}
+        run: |
+          if [ -n "$ISSUE_NUMBER" ]; then
+            gh issue edit "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body-file url-health-report.md
+            echo "Updated issue #$ISSUE_NUMBER"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$ISSUE_TITLE" --body-file url-health-report.md
+          fi
+
+      - name: Close report issue when everything is healthy
+        if: steps.check.outputs.broken_count == '0' && steps.issue.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ steps.issue.outputs.number }}
+        run: |
+          gh issue close "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" \
+            --comment "All catalog download URLs are healthy again."
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: url-health-report
+          path: url-health-report.md
+          if-no-files-found: ignore

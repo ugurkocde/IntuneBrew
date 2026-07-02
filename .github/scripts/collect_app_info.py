@@ -1430,10 +1430,43 @@ def find_bundle_id(json_string):
 
     return None
 
+class CaskUnavailableError(Exception):
+    """Raised when a Homebrew cask is deprecated or disabled upstream."""
+    def __init__(self, display_name, reason):
+        super().__init__(f"{display_name}: {reason}")
+        self.display_name = display_name
+        self.reason = reason
+
+def mark_app_deprecated(apps_folder, display_name, reason):
+    """Flag an existing app JSON as deprecated so it is excluded from supported_apps.json."""
+    file_path = os.path.join(apps_folder, f"{sanitize_filename(display_name)}.json")
+    if not os.path.exists(file_path):
+        print(f"Cask for {display_name} is unavailable ({reason}) and has no local JSON file, skipping")
+        return
+    with open(file_path, "r") as f:
+        app_data = json.load(f)
+    if app_data.get("deprecated") and app_data.get("deprecation_reason") == reason:
+        print(f"{display_name} is already flagged as deprecated")
+        return
+    app_data["deprecated"] = True
+    app_data["deprecation_reason"] = reason
+    with open(file_path, "w") as f:
+        json.dump(app_data, f, indent=2)
+    print(f"Flagged {display_name} as deprecated: {reason}")
+
 def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, is_pkg_in_pkg=False, is_pkg=False):
     response = requests.get(json_url)
     response.raise_for_status()
     data = response.json()
+
+    # A deprecated or disabled cask means the vendor discontinued the app or
+    # its download can no longer be fetched reliably. Its URL will rot, so it
+    # must not be offered for upload.
+    if data.get("deprecated") or data.get("disabled"):
+        status = "disabled" if data.get("disabled") else "deprecated"
+        reason = data.get("disable_reason") or data.get("deprecation_reason") or "no reason given"
+        raise CaskUnavailableError(data["name"][0], f"{status} in Homebrew: {reason}")
+
     json_string = json.dumps(data)
 
     bundle_id = find_bundle_id(json_string)
@@ -1694,6 +1727,10 @@ def main():
                     # previous_version always equals version (noted in Issue #116)
                     existing_data["previous_version"] = existing_data.get("version", "")
 
+                    # The cask is healthy again, so drop any stale deprecation flag
+                    existing_data.pop("deprecated", None)
+                    existing_data.pop("deprecation_reason", None)
+
                     # Always update version and url
                     existing_data["version"] = new_version
                     existing_data["url"] = app_info["url"]
@@ -1727,6 +1764,8 @@ def main():
 
             apps_info.append(app_info)
             print(f"Saved app information for {display_name} to {file_path}")
+        except CaskUnavailableError as e:
+            mark_app_deprecated(apps_folder, e.display_name, e.reason)
         except Exception as e:
             print(f"Error processing special app {url}: {str(e)}")
             print(f"Full error details: ", e)
@@ -1775,7 +1814,7 @@ def main():
                     
                     # Preserve all existing data except version, url, sha, and previous_version
                     for key in existing_data:
-                        if key not in ["version", "url", "sha", "previous_version"]:
+                        if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url, sha and previous_version
@@ -1798,6 +1837,8 @@ def main():
 
             apps_info.append(app_info)
             print(f"Saved app information for {display_name} to {file_path}")
+        except CaskUnavailableError as e:
+            mark_app_deprecated(apps_folder, e.display_name, e.reason)
         except Exception as e:
             print(f"Error processing {url}: {str(e)}")
 
@@ -1822,7 +1863,7 @@ def main():
                     
                     # Preserve all existing data except version, url and previous_version
                     for key in existing_data:
-                        if key not in ["version", "url", "previous_version"]:
+                        if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version
@@ -1844,6 +1885,8 @@ def main():
 
             apps_info.append(app_info)
             print(f"Saved app information for {display_name} to {file_path}")
+        except CaskUnavailableError as e:
+            mark_app_deprecated(apps_folder, e.display_name, e.reason)
         except Exception as e:
             print(f"Error processing PKG in PKG app {url}: {str(e)}")
 
@@ -1892,7 +1935,7 @@ def main():
                     
                     # Preserve all existing data except version, url, sha and previous_version
                     for key in existing_data:
-                        if key not in ["version", "url", "sha", "previous_version"]:
+                        if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url, sha and previous_version
@@ -1917,6 +1960,8 @@ def main():
 
             apps_info.append(app_info)
             print(f"Saved app information for {display_name} to {file_path}")
+        except CaskUnavailableError as e:
+            mark_app_deprecated(apps_folder, e.display_name, e.reason)
         except Exception as e:
             print(f"Error processing direct PKG app {url}: {str(e)}")
 
@@ -1941,7 +1986,7 @@ def main():
                     
                     # Preserve all existing data except version, url and previous_version
                     for key in existing_data:
-                        if key not in ["version", "url", "previous_version"]:
+                        if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version
@@ -1962,6 +2007,8 @@ def main():
 
             apps_info.append(app_info)
             print(f"Saved app information for {display_name} to {file_path}")
+        except CaskUnavailableError as e:
+            mark_app_deprecated(apps_folder, e.display_name, e.reason)
         except Exception as e:
             print(f"Error processing PKG in DMG app {url}: {str(e)}")
 

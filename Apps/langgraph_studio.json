@@ -11,5 +11,7 @@
   "changelog": "https://github.com/langchain-ai/langgraph-studio/releases",
   "category": "Developer Tools",
   "publisher": "LangChain",
-  "previous_version": "0.0.37"
+  "previous_version": "0.0.37",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: discontinued"
 }
