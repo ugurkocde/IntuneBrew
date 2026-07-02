@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1271-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -521,52 +521,21 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-01 22:12 UTC*
+*Last checked: 2026-07-02 01:04 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Signal | 8.16.0 | 8.17.0 |
-| Microsoft Visual Studio Code | 1.126.0 | 1.127.0 |
-| Postman | 12.16.4 | 12.17.2 |
-| GitHub Desktop | 3.6.1-8fa814ac | 3.6.2-57f0b637 |
-| Basecamp | 5.1.3 | 5.1.4 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Claude | 1.17377.0 | 1.17377.2 |
-| WhatsApp | 26.26.12 | 26.26.17 |
-| DaisyDisk | 4.33.3 | 4.34 |
 | Dash | 8.1.1 | 23.1.7 |
-| WorkFlowy | 4.3.2606271457 | 4.3.2607011039 |
 | Dash | 8.1.1 | 23.1.7 |
-| Reminders MenuBar | 2.1.0 | 2.1.1 |
-| Mozilla Firefox Developer Edition | 153.0b6 | 153.0b7 |
-| Rive | 0.8.5117 | 0.8.5134 |
-| Clop | 3.2.1 | 3.2.2 |
-| Mozilla Thunderbird | 152.0 | 152.0.1 |
-| NordPass | 7.7.12 | 7.8.15 |
-| ChatWise | 26.6.0 | 26.7.1 |
-| Microsoft Teams | 26149.1804.4788.5681 | 26163.407.4839.8659 |
-| Docker Desktop | 4.42.1 | 4.80.0 |
-| Zed | 1.8.2 | 1.9.0 |
-| OneDrive | 26.098.0524.0004 | 26.106.0603.0003 |
-| Dataflare | 3.1.2 | 3.1.3 |
-| Simplenote | 2.26.1 | 2.27.1 |
-| Franz | 6.4.0 | 6.4.1 |
-| BlueJ | 5.5.0 | 6.0.0 |
+| gifox | 2.9.0+1 | 2.10.0+0 |
+| AlDente | 1.37.3 | 1.38 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| ElectronMail | 5.3.7 | 5.3.8 |
-| Granola | 7.373.1 | 7.373.2 |
-| jamovi | 2.7.36.0 | 2.7.37.0 |
-| JASP | 0.97.1.0 | 0.98.0.0 |
-| Notesnook | 3.4.1 | 3.4.2 |
-| OpenAudible | 4.8.6 | 4.8.7 |
-| Riverside Studio | 1.26.0 | 1.27.0 |
-| Timing | 2026.4 | 2026.4.1 |
-| Tuta Mail | 353.260624.0 | 353.260630.0 |
-| Unity Hub | 3.18.3 | 3.19.2 |
-| Microsoft Office BusinessPro | 16.110.26062112 | 16.110.26062818 |
-| osquery | 5.23.0 | 5.23.1 |
+| Loom | 0.357.1 | 0.358.1 |
+| Claude Code | 2.1.185 | 2.1.187 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -630,7 +599,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/akiflow.png' width='32' height='32'> Akiflow | 2.74.21 |
 | <img src='Logos/alacritty.png' width='32' height='32'> Alacritty | 0.17.0 |
 | <img src='Logos/alcove.png' width='32' height='32'> Alcove | 1.7.7 |
-| <img src='Logos/aldente.png' width='32' height='32'> AlDente | 1.37.3 |
+| <img src='Logos/aldente.png' width='32' height='32'> AlDente | 1.38 |
 | <img src='Logos/alfred.png' width='32' height='32'> Alfred | 5.7.3 |
 | <img src='Logos/alloy.png' width='32' height='32'> Alloy | 6.2.0 |
 | <img src='Logos/altair_graphql_client.png' width='32' height='32'> Altair GraphQL Client | 8.5.7 |
@@ -805,7 +774,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 26.03.11.41 |
 | <img src='Logos/clamxav.png' width='32' height='32'> ClamXAV | 3.10.1 |
 | <img src='Logos/claude.png' width='32' height='32'> Claude | 1.17377.2 |
-| ❌ Claude Code | 2.1.185 |
+| ❌ Claude Code | 2.1.187 |
 | <img src='Logos/cleanclip.png' width='32' height='32'> CleanClip | 2.4.7 |
 | <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.5.4 |
 | <img src='Logos/cleanmymac_x_chinese.png' width='32' height='32'> CleanMyMac X Chinese | 4.15.14 |
@@ -1042,7 +1011,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/gephi.png' width='32' height='32'> Gephi | 0.11.2 |
 | <img src='Logos/ghost_browser.png' width='32' height='32'> Ghost Browser | 2.4.1.2 |
 | <img src='Logos/ghostty.png' width='32' height='32'> Ghostty | 1.3.1 |
-| <img src='Logos/gifox.png' width='32' height='32'> gifox | 2.9.0+1 |
+| <img src='Logos/gifox.png' width='32' height='32'> gifox | 2.10.0+0 |
 | <img src='Logos/gimp.png' width='32' height='32'> GIMP | 3.2.4 |
 | <img src='Logos/git_credential_manager.png' width='32' height='32'> Git Credential Manager | 2.8.0 |
 | <img src='Logos/gitbutler.png' width='32' height='32'> GitButler | 0.20.4 |
@@ -1205,7 +1174,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/logitech_options.png' width='32' height='32'> Logitech Options+ | 2.1.854976 |
 | <img src='Logos/logseq.png' width='32' height='32'> Logseq | 0.10.15 |
 | <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 2.2.2 |
-| <img src='Logos/loom.png' width='32' height='32'> Loom | 0.357.1 |
+| <img src='Logos/loom.png' width='32' height='32'> Loom | 0.358.1 |
 | <img src='Logos/loop.png' width='32' height='32'> Loop | 1.4.2 |
 | <img src='Logos/loopback.png' width='32' height='32'> Loopback | 2.4.10 |
 | <img src='Logos/losslesscut.png' width='32' height='32'> LosslessCut | 3.69.0 |
@@ -1861,6 +1830,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
+
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:

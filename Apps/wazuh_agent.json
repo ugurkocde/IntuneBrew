@@ -8,7 +8,7 @@
   "homepage": "https://wazuh.com/",
   "fileName": "wazuh-agent-4.14.5-1.arm64.pkg",
   "type": "pkg",
+  "sha": "eedf9edfce4aacc6a30365dfc50adde0bdbf664c230969846dc3f12aeb1de943",
   "category": "Security",
-  "publisher": "Wazuh, Inc.",
-  "sha": "eedf9edfce4aacc6a30365dfc50adde0bdbf664c230969846dc3f12aeb1de943"
+  "publisher": "Wazuh, Inc."
 }

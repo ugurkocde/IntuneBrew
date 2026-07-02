@@ -8,5 +8,6 @@
   "homepage": "https://www.hopperapp.com/",
   "fileName": "Hopper-6.4.3-demo.dmg",
   "category": "Developer Tools",
-  "publisher": "Hopper Team"
+  "publisher": "Hopper Team",
+  "previous_version": "6.4.3"
 }

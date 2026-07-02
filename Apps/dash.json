@@ -8,8 +8,8 @@
   "homepage": "https://kapeli.com/dash",
   "fileName": "dash_23.1.7.pkg",
   "type": "app",
-  "previous_version": "8.1.1",
-  "sha": "2187bf41cba38e16d35caa16fc1ebe61bd194090c685c842c1743cfa4438d7b1",
+  "previous_version": "23.1.7",
+  "sha": "40208e470cf8282d781c77d19689d3eeffea786f5c54097006bb87f92f2fe055",
   "category": "Developer Tools",
   "publisher": "Kapeli"
 }

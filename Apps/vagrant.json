@@ -10,5 +10,6 @@
   "type": "pkg_in_dmg",
   "sha": "d98cb357048154f813d83ee077f87438ac2b26ffbd6db77f5dd6eff2996d6b44",
   "category": "Developer Tools",
-  "publisher": "HashiCorp"
+  "publisher": "HashiCorp",
+  "previous_version": "2.4.9"
 }

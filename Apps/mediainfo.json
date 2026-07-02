@@ -9,5 +9,6 @@
   "fileName": "MediaInfo_GUI_26.05_Mac.dmg",
   "sha": "3aa0b8953a7608a937c65fd86b62fec833c0ed7936a8c9db4082811f1ba31ac0",
   "category": "Utilities",
-  "publisher": "MediaArea.net"
+  "publisher": "MediaArea.net",
+  "previous_version": "26.05"
 }
