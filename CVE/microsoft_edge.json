@@ -1,11 +1,11 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-07-02",
-  "total_cves": 966,
+  "last_updated": "2026-07-03",
+  "total_cves": 967,
   "summary": {
     "critical": 17,
-    "high": 594,
+    "high": 595,
     "medium": 331,
     "low": 24,
     "kev_count": 18
@@ -640,6 +640,27 @@
       "kev_ransomware_use": null,
       "vendor": "microsoft",
       "product": "edge"
+    },
+    {
+      "cve_id": "CVE-2026-50521",
+      "published_date": "2026-07-01",
+      "last_modified_date": "2026-07-03",
+      "description": "Use after free in Microsoft Edge (Chromium-based) allows an authorized attacker to execute code over a network.",
+      "base_score": 8.3,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:L/UI:N/S:U/C:H/I:H/A:L",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "149.0.4022.67",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "149.0.4022.67",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "microsoft",
+      "product": "edge_chromium"
     },
     {
       "cve_id": "CVE-2026-32208",
