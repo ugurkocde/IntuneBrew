@@ -1,15 +1,15 @@
 {
   "name": "Codex",
   "description": "OpenAI's Codex desktop app for managing coding agents",
-  "version": "26.623.81905",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/codex_26.623.81905.pkg",
+  "version": "26.623.101652",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/codex_26.623.101652.pkg",
   "vendor_url": "https://persistent.oaistatic.com/codex-app-prod/Codex-darwin-arm64-26.623.81905.zip",
   "bundleId": "com.openai.codex",
   "homepage": "https://openai.com/codex",
-  "fileName": "codex_26.623.81905.pkg",
+  "fileName": "codex_26.623.101652.pkg",
   "type": "app",
   "category": "Developer Tools",
   "publisher": "OpenAI",
   "previous_version": "26.623.81905",
-  "sha": "51ec3defe24d12c901906060a6057b744a0996b3ceb387dfcd4ad34fdcd80054"
+  "sha": "ad96fcacd4553ecb91e2ff858240a86b649c7fd2320e21c9e830a7c30dbc1cb4"
 }
