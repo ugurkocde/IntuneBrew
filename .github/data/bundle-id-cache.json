@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-07-03T01:14:26.816Z",
+  "last_full_scan": "2026-07-03T12:18:05.845Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9248,6 +9248,13 @@
       "status": "verified",
       "source": "file",
       "name": "Vagrant"
+    },
+    "simplysign_desktop": {
+      "last_checked": "2026-07-03T12:18:05.839Z",
+      "bundle_id": "pl.assecods.pkg.SimplySignDesktop-proCertumSmartSign",
+      "status": "verified",
+      "source": "file",
+      "name": "SimplySign Desktop"
     }
   }
 }
