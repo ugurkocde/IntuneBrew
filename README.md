@@ -1579,7 +1579,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/simple_comic.png' width='32' height='32'> Simple Comic | 1.9.9 |
 | <img src='Logos/simpledemviewer.png' width='32' height='32'> SimpleDEMViewer | 8.6.0 |
 | <img src='Logos/simplenote.png' width='32' height='32'> Simplenote | 2.27.1 |
-| ❌ SimplySign Desktop | 2.10.22-9.4.4.0 |
+| <img src='Logos/simplysign_desktop.png' width='32' height='32'> SimplySign Desktop | 2.10.22-9.4.4.0 |
 | <img src='Logos/sipgate.png' width='32' height='32'> sipgate | 2.40.1 |
 | <img src='Logos/sirimote.png' width='32' height='32'> SiriMote | 1.4.6 |
 | <img src='Logos/sketch.png' width='32' height='32'> Sketch | 2026.2 |
@@ -1839,7 +1839,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
-
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:
