@@ -8,5 +8,7 @@
   "homepage": "https://support.certum.eu/en/software/procertum-smartsign/",
   "fileName": "simplysign_desktop_2.10.22-9.4.4.0.pkg",
   "type": "pkg_in_dmg",
-  "sha": "0c9f89e8a2cc2a41efceb18d589ac6f06166ab99b264113f18ad50a48d772ada"
+  "sha": "0c9f89e8a2cc2a41efceb18d589ac6f06166ab99b264113f18ad50a48d772ada",
+  "category": "Security",
+  "publisher": "Certum"
 }
