@@ -1,7 +1,7 @@
 {
   "app_name": "Anydesk",
   "app_key": "anydesk",
-  "last_updated": "2026-07-04",
+  "last_updated": "2026-07-05",
   "total_cves": 17,
   "summary": {
     "critical": 3,
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2022-32450",
       "published_date": "2022-07-18",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-05",
       "description": "AnyDesk 7.0.9 allows a local user to gain SYSTEM privileges via a symbolic link because the user can write to their own %APPDATA% folder (used for ad.trace and chat) but the product runs as SYSTEM when writing chat-room data there.",
       "base_score": 7.1,
       "severity": "HIGH",
