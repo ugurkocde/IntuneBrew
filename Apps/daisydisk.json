@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "dd0443d9e41877ca7d4b76733e07682d18326067502ea299994ec76a169e8e5d",
   "changelog": "https://daisydiskapp.com/changelog/",
-  "previous_version": "4.34",
+  "previous_version": "4.34.1",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:24:44Z",
     "qa_result": "Installation successful and verified",

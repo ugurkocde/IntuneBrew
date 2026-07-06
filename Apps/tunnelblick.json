@@ -1,13 +1,13 @@
 {
   "name": "Tunnelblick",
   "description": "Free and open-source OpenVPN client",
-  "version": "8.0.2",
-  "url": "https://tunnelblick.net/iprelease/Tunnelblick_8.0.2_build_6302.dmg",
+  "version": "8.0.3",
+  "url": "https://tunnelblick.net/iprelease/Tunnelblick_8.0.3_build_6303.dmg",
   "vendor_url": "https://tunnelblick.net/iprelease/Tunnelblick_8.0.1_build_6301.dmg",
   "bundleId": "net.tunnelblick.tunnelblick",
   "homepage": "https://www.tunnelblick.net/",
-  "fileName": "Tunnelblick_8.0.2_build_6302.dmg",
-  "sha": "95901968ee899aa5b37622bf50eb567565e7f89b4c3132b5702e418060a6166f",
+  "fileName": "Tunnelblick_8.0.3_build_6303.dmg",
+  "sha": "20c73f78697e4f4baf1c443dff7c494bd9746c9def92b0d5fdb0c1d689d241d7",
   "category": "Security",
   "publisher": "The Tunnelblick Project",
   "previous_version": "8.0.2"
