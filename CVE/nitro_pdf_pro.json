@@ -1,7 +1,7 @@
 {
   "app_name": "Nitro Pdf Pro",
   "app_key": "nitro_pdf_pro",
-  "last_updated": "2026-07-05",
+  "last_updated": "2026-07-06",
   "total_cves": 25,
   "summary": {
     "critical": 0,
@@ -35,8 +35,8 @@
     {
       "cve_id": "CVE-2025-69624",
       "published_date": "2026-04-13",
-      "last_modified_date": "2026-06-17",
-      "description": "Nitro PDF Pro for Windows 14.41.1.4 contains a NULL pointer dereference vulnerability in the JavaScript implementation of app.alert(). When app.alert() is called with more than one argument and the first argument evaluates to null (for example, app.alert(app.activeDocs, true) when app.activeDocs is null), the engine routes the call through a fallback path intended for non-string arguments. In this path, js_ValueToString() is invoked on the null value and returns an invalid string pointer, which is then passed to JS_GetStringChars() without validation. Dereferencing this pointer leads to an access violation and application crash when opening a crafted PDF.",
+      "last_modified_date": "2026-07-05",
+      "description": "Nitro PDF Pro before 14.43 for Windows contains a NULL pointer dereference vulnerability in the JavaScript implementation of app.alert(). When app.alert() is called with more than one argument and the first argument evaluates to null (for example, app.alert(app.activeDocs, true) when app.activeDocs is null), the engine routes the call through a fallback path intended for non-string arguments. In this path, js_ValueToString() is invoked on the null value and returns an invalid string pointer, which is then passed to JS_GetStringChars() without validation. Dereferencing this pointer leads to an access violation and application crash when opening a crafted PDF. For example, 14.41.1.4 and 14.42.0.34 have been reported as vulnerable.",
       "base_score": 7.5,
       "severity": "HIGH",
       "cvss_version": "3.1",
@@ -45,7 +45,7 @@
       "affected_version_start_type": null,
       "affected_version_end": null,
       "affected_version_end_type": null,
-      "fixed_version": null,
+      "fixed_version": "14.43",
       "is_kev": false,
       "kev_date_added": null,
       "kev_due_date": null,
