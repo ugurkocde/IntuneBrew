@@ -7,5 +7,7 @@
   "bundleId": "com.adobe.acc.AdobeCreativeCloud",
   "homepage": "https://www.adobe.com/creativecloud.html",
   "fileName": "ACCCx6_10_0_252_3.dmg",
-  "sha": "d02fc307e32b583c0552fbbca87cfe40b098f2fc707a12b033dff726091a21d6"
+  "sha": "d02fc307e32b583c0552fbbca87cfe40b098f2fc707a12b033dff726091a21d6",
+  "category": "Design",
+  "publisher": "Adobe Inc."
 }
