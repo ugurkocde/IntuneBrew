@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1272-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1273-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -527,33 +527,22 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-06 00:55 UTC*
+*Last checked: 2026-07-06 10:15 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
+| Postman | 12.17.3 | 12.18.0 |
 | Caffeine | 1.6.4 | 1.1.4 |
+| Cursor | 3.9.16 | 3.10.11 |
 | Dash | 8.1.1 | 23.1.7 |
-| RemNote | 1.26.20 | 1.26.30 |
 | Dash | 8.1.1 | 23.1.7 |
-| OpenRCT2 | 0.5.2 | 0.5.3 |
-| Clop | 3.2.3 | 3.2.4b1 |
-| DockDoor | 1.39.3 | 1.39.4 |
-| CotEditor | 7.0.5 | 7.0.6 |
-| Tunnelblick | 8.0.2 | 8.0.3 |
-| DBeaver Community Edition | 26.1.1 | 26.1.2 |
-| Windows App | 11.3.6 | 11.3.7 |
-| Stats | 3.0.5 | 3.0.6 |
-| Karabiner Elements | 16.0.0 | 16.1.0 |
-| Path Finder | 26.1.5 | 26.1.6 |
+| Apifox | 2.8.36 | 2.8.37 |
+| Apidog | 2.8.36 | 2.8.37 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| OnlySwitch | 2.6.8 | 2.6.9 |
-| Wealthfolio | 3.5.3 | 3.6.0 |
-| BlackHole 16ch | 0.7.0 | 0.7.1 |
-| BlackHole 2ch | 0.7.0 | 0.7.1 |
-| BlackHole 64ch | 0.7.0 | 0.7.1 |
-| PureVPN | 9.43.0 | 9.44.0 |
+| Unity Hub | 3.19.2 | 3.19.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -598,6 +587,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/adlock.png' width='32' height='32'> AdLock | 2.1.7.3 |
 | <img src='Logos/adobe_acrobat_pro_dc.png' width='32' height='32'> Adobe Acrobat Pro DC | 26.001.21691 |
 | <img src='Logos/adobe_acrobat_reader.png' width='32' height='32'> Adobe Acrobat Reader | 26.001.21662 |
+| <img src='Logos/adobe_creative_cloud.png' width='32' height='32'> Adobe Creative Cloud | 6.10.0.252.3 |
 | <img src='Logos/adobe_digital_editions.png' width='32' height='32'> Adobe Digital Editions | 4.5.12 |
 | <img src='Logos/adobe_dng_converter.png' width='32' height='32'> Adobe DNG Converter | 18.4 |
 | <img src='Logos/advanced_renamer.png' width='32' height='32'> Advanced Renamer | 4.23 |
@@ -643,8 +633,8 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.7.1 |
 | <img src='Logos/anytype.png' width='32' height='32'> Anytype | 0.55.5 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.8.36 |
-| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.8.36 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.8.37 |
+| <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.8.37 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.2 |
 | <img src='Logos/appflowy.png' width='32' height='32'> AppFlowy | 0.12.5 |
 | <img src='Logos/appgate_sdp_client_for_macos.png' width='32' height='32'> AppGate SDP Client for macOS | 6.6.0 |
@@ -842,7 +832,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/cryptomator.png' width='32' height='32'> Cryptomator | 1.19.3 |
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
 | <img src='Logos/curio.png' width='32' height='32'> Curio | 32.0.4 |
-| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 3.9.16 |
+| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 3.10.11 |
 | <img src='Logos/cursorsense.png' width='32' height='32'> CursorSense | 2.4.3 |
 | <img src='Logos/cursr.png' width='32' height='32'> Cursr | 1.7.3 |
 | <img src='Logos/customshortcuts.png' width='32' height='32'> CustomShortcuts | 1.3 |
@@ -1449,7 +1439,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/positron.png' width='32' height='32'> Positron | 2026.06.1-6 |
 | <img src='Logos/postbox.png' width='32' height='32'> Postbox | 7.0.65 |
 | <img src='Logos/postico.png' width='32' height='32'> Postico | 2.3.3 |
-| <img src='Logos/postman.png' width='32' height='32'> Postman | 12.17.3 |
+| <img src='Logos/postman.png' width='32' height='32'> Postman | 12.18.0 |
 | <img src='Logos/powerphotos.png' width='32' height='32'> PowerPhotos | 3.4.1 |
 | <img src='Logos/powershell.png' width='32' height='32'> PowerShell | 7.5.4 |
 | <img src='Logos/pppc_utility.png' width='32' height='32'> PPPC Utility | 2.0.0 |
@@ -1750,7 +1740,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/unicodechecker.png' width='32' height='32'> UnicodeChecker | 1.25.1 |
 | <img src='Logos/unifi_identity_endpoint.png' width='32' height='32'> UniFi Identity Endpoint | 4.0.3 |
 | <img src='Logos/unite.png' width='32' height='32'> Unite | 6.6 |
-| <img src='Logos/unity_hub.png' width='32' height='32'> Unity Hub | 3.19.2 |
+| <img src='Logos/unity_hub.png' width='32' height='32'> Unity Hub | 3.19.3 |
 | <img src='Logos/unnaturalscrollwheels.png' width='32' height='32'> UnnaturalScrollWheels | 1.4.0 |
 | <img src='Logos/updf.png' width='32' height='32'> UPDF | 2.5.4 |
 | <img src='Logos/upscayl.png' width='32' height='32'> Upscayl | 2.15.0 |
