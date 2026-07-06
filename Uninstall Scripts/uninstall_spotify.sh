@@ -135,5 +135,13 @@ elif [ -f "$HOME/Library/Saved Application State/com.spotify.client.savedState" 
     rm -f "$HOME/Library/Saved Application State/com.spotify.client.savedState" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/WebKit/com.spotify.client
+echo "Removing $HOME/Library/WebKit/com.spotify.client..."
+if [ -d "$HOME/Library/WebKit/com.spotify.client" ]; then
+    rm -rf "$HOME/Library/WebKit/com.spotify.client" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.spotify.client" ]; then
+    rm -f "$HOME/Library/WebKit/com.spotify.client" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0
