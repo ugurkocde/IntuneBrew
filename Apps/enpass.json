@@ -1,14 +1,14 @@
 {
   "name": "Enpass",
   "description": "Password and credentials manager",
-  "version": "6.12.3.2597",
-  "url": "https://dl.enpass.io/stable/mac/package/6.12.3.2597/Enpass.pkg",
+  "version": "6.12.4.2629",
+  "url": "https://dl.enpass.io/stable/mac/package/6.12.4.2629/Enpass.pkg",
   "vendor_url": "https://dl.enpass.io/stable/mac/package/6.11.20.2229/Enpass.pkg",
   "bundleId": "in.sinew.Enpass-Desktop",
   "homepage": "https://www.enpass.io/",
   "fileName": "Enpass.pkg",
   "type": "pkg",
-  "sha": "c17b6665ba84cb66d0d0547de8eeb3047ab937602d021262dcebe4fa5f507b63",
+  "sha": "63488dda6eed92a3e58f40b6aac2151e659ecb26672c51518b195805ef4bacc1",
   "category": "Security",
   "publisher": "Sinew Software Systems Pvt. Ltd.",
   "previous_version": "6.12.3.2597"
