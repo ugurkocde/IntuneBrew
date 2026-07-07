@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-07-06",
+  "last_updated": "2026-07-07",
   "total_cves": 3220,
   "summary": {
     "critical": 407,
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2026-14241",
       "published_date": "2026-06-30",
-      "last_modified_date": "2026-07-01",
+      "last_modified_date": "2026-07-06",
       "description": "Memory safety bugs present in Firefox 152.0.3. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 152.0.4.",
       "base_score": 9.8,
       "severity": "CRITICAL",
