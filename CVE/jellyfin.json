@@ -1,7 +1,7 @@
 {
   "app_name": "Jellyfin",
   "app_key": "jellyfin",
-  "last_updated": "2026-07-08",
+  "last_updated": "2026-07-09",
   "total_cves": 19,
   "summary": {
     "critical": 4,
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2023-27161",
       "published_date": "2023-03-10",
-      "last_modified_date": "2026-07-05",
+      "last_modified_date": "2026-07-09",
       "description": "Jellyfin up to v10.7.7 was discovered to contain a Server-Side Request Forgery (SSRF) via the component /Repositories. This vulnerability allows attackers to access network resources and sensitive information via a crafted POST request.",
       "base_score": 7.5,
       "severity": "HIGH",

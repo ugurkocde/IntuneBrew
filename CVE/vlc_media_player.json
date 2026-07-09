@@ -1,7 +1,7 @@
 {
   "app_name": "Vlc Media Player",
   "app_key": "vlc_media_player",
-  "last_updated": "2026-07-08",
+  "last_updated": "2026-07-09",
   "total_cves": 113,
   "summary": {
     "critical": 6,
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2020-26664",
       "published_date": "2021-01-08",
-      "last_modified_date": "2026-07-05",
+      "last_modified_date": "2026-07-09",
       "description": "A vulnerability in EbmlTypeDispatcher::send in VideoLAN VLC media player 3.0.11 allows attackers to trigger a heap-based buffer overflow via a crafted .mkv file.",
       "base_score": 7.8,
       "severity": "HIGH",
