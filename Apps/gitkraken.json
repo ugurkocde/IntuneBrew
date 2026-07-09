@@ -9,7 +9,7 @@
   "fileName": "gitkraken_12.3.0.pkg",
   "type": "app",
   "sha": "2e3ec1f38093551cb836b0e3efaf4be4451e63a8c245ebfaf8a8b6b483e40c16",
-  "previous_version": "12.2.1",
+  "previous_version": "12.3.0",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:18:52Z",
     "qa_result": "Installation successful and verified",

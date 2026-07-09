@@ -1,14 +1,14 @@
 {
   "name": "Cursor",
   "description": "Write, edit, and chat about your code with AI",
-  "version": "3.10.17",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/cursor_3.10.17.pkg",
+  "version": "3.10.20",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/cursor_3.10.20.pkg",
   "vendor_url": "https://downloads.cursor.com/production/d8673fb56ba50fda33ad78382000b519bb8acb7e/darwin/arm64/Cursor-darwin-arm64.zip",
   "bundleId": "com.todesktop.230313mzl4w4u92",
   "homepage": "https://www.cursor.com/",
-  "fileName": "cursor_3.10.17.pkg",
+  "fileName": "cursor_3.10.20.pkg",
   "type": "app",
-  "sha": "8c33ceaac456f55af3758f1f38fc800beab44313cecb57eeb44971836392ac0f",
+  "sha": "79e61bc75d7848d40e717da97b314dcdfa98e3840bd6f34f80595150dff5d722",
   "changelog": "https://www.cursor.com/changelog",
   "previous_version": "3.10.17",
   "qa_info": {
