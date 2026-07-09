@@ -6,7 +6,6 @@
   "url": "https://intunebrew.blob.core.windows.net/pkg/fastfetch_2.65.2_arm64.pkg",
   "fileName": "fastfetch_2.65.2_arm64.pkg",
   "bundledDependencies": [
-    "lua",
     "yyjson"
   ],
   "binaryPath": "/usr/local/bin/fastfetch"
