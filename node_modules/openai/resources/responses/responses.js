@@ -101,7 +101,7 @@ class Responses extends resource_1.APIResource {
      * @example
      * ```ts
      * const compactedResponse = await client.responses.compact({
-     *   model: 'gpt-5.4',
+     *   model: 'gpt-5.6-sol',
      * });
      * ```
      */

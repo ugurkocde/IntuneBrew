@@ -97,7 +97,7 @@ export class Responses extends APIResource {
      * @example
      * ```ts
      * const compactedResponse = await client.responses.compact({
-     *   model: 'gpt-5.4',
+     *   model: 'gpt-5.6-sol',
      * });
      * ```
      */

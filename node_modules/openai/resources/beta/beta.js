@@ -10,12 +10,15 @@ const RealtimeAPI = tslib_1.__importStar(require("./realtime/realtime.js"));
 const realtime_1 = require("./realtime/realtime.js");
 const ChatKitAPI = tslib_1.__importStar(require("./chatkit/chatkit.js"));
 const chatkit_1 = require("./chatkit/chatkit.js");
+const ResponsesAPI = tslib_1.__importStar(require("./responses/responses.js"));
+const responses_1 = require("./responses/responses.js");
 const ThreadsAPI = tslib_1.__importStar(require("./threads/threads.js"));
 const threads_1 = require("./threads/threads.js");
 class Beta extends resource_1.APIResource {
     constructor() {
         super(...arguments);
         this.realtime = new RealtimeAPI.Realtime(this._client);
+        this.responses = new ResponsesAPI.Responses(this._client);
         this.chatkit = new ChatKitAPI.ChatKit(this._client);
         this.assistants = new AssistantsAPI.Assistants(this._client);
         this.threads = new ThreadsAPI.Threads(this._client);
@@ -23,6 +26,7 @@ class Beta extends resource_1.APIResource {
 }
 exports.Beta = Beta;
 Beta.Realtime = realtime_1.Realtime;
+Beta.Responses = responses_1.Responses;
 Beta.ChatKit = chatkit_1.ChatKit;
 Beta.Assistants = assistants_1.Assistants;
 Beta.Threads = threads_1.Threads;

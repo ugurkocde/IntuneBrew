@@ -1,5 +1,5 @@
 import { spawn } from 'node:child_process';
-import { Readable } from 'node:stream';
+import { pipeline, Readable } from 'node:stream';
 import { platform, versions } from 'node:process';
 import { checkFileSupport } from "../internal/uploads.mjs";
 const DEFAULT_SAMPLE_RATE = 24000;
@@ -29,15 +29,28 @@ async function nodejsPlayAudio(stream) {
     return new Promise((resolve, reject) => {
         try {
             const ffplay = spawn('ffplay', ['-autoexit', '-nodisp', '-i', 'pipe:0']);
+            let source;
             if (isResponse(stream)) {
-                stream.body.pipe(ffplay.stdin);
+                const body = stream.body;
+                if ('pipe' in body && typeof body.pipe === 'function') {
+                    source = body;
+                }
+                else {
+                    source = Readable.fromWeb(body);
+                }
             }
             else if (isFile(stream)) {
-                Readable.from(stream.stream()).pipe(ffplay.stdin);
+                source = Readable.from(stream.stream());
             }
             else {
-                stream.pipe(ffplay.stdin);
+                source = stream;
             }
+            pipeline(source, ffplay.stdin, (error) => {
+                if (error) {
+                    ffplay.kill();
+                    reject(error);
+                }
+            });
             ffplay.on('close', (code) => {
                 if (code !== 0) {
                     reject(new Error(`ffplay process exited with code ${code}`));
