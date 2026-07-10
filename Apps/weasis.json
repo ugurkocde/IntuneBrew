@@ -1,14 +1,14 @@
 {
   "name": "Weasis",
   "description": "Free DICOM viewer for displaying and analyzing medical images",
-  "version": "4.7.0",
-  "url": "https://github.com/nroduit/Weasis/releases/download/v4.7.0/Weasis-4.7.0-aarch64.pkg",
+  "version": "4.7.1",
+  "url": "https://github.com/nroduit/Weasis/releases/download/v4.7.1/Weasis-4.7.1-aarch64.pkg",
   "vendor_url": "https://github.com/nroduit/Weasis/releases/download/v4.6.6/Weasis-4.6.6-aarch64.pkg",
   "bundleId": "org.weasis.launcher",
   "homepage": "https://weasis.org/en/index.html",
-  "fileName": "Weasis-4.7.0-aarch64.pkg",
+  "fileName": "Weasis-4.7.1-aarch64.pkg",
   "type": "pkg",
-  "sha": "622d02e10fbc3664dafb82f0f35ae9834cd00b547d837738d2a7ff10d6e13af5",
+  "sha": "4dc9c9fc0b4a017c11d2aa1f063b54a4f6e9fefd058e96e8a145a01e6ab84888",
   "category": "Utilities",
   "publisher": "Weasis Project",
   "previous_version": "4.7.0"

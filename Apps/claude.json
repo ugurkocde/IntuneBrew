@@ -1,14 +1,14 @@
 {
   "name": "Claude",
   "description": "Anthropic's official Claude AI desktop app",
-  "version": "1.19367.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/claude_1.19367.0.pkg",
+  "version": "1.20186.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/claude_1.20186.0.pkg",
   "vendor_url": "https://downloads.claude.ai/releases/darwin/universal/1.2581.0/Claude-f103981571883c6ef0522635cf396089a3ae0e0f.zip",
   "bundleId": "com.anthropic.claudefordesktop",
   "homepage": "https://claude.ai/download",
-  "fileName": "claude_1.19367.0.pkg",
+  "fileName": "claude_1.20186.0.pkg",
   "type": "app",
-  "sha": "a3e516cba5e68a9e9cc87afcebfa0cfd3525ecfe1666d243d3d3bc8b58738191",
+  "sha": "e0ec4f436e036c1057a212b5706d42ccdecb085d9107c2953394573eaf63aacf",
   "changelog": "https://docs.anthropic.com/en/release-notes/claude-apps",
   "previous_version": "1.19367.0",
   "qa_info": {

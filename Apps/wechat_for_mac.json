@@ -1,14 +1,14 @@
 {
   "name": "WeChat for Mac",
   "description": "Free messaging and calling application",
-  "version": "4.1.11.52",
-  "url": "https://dldir1.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.11.52_41747.dmg",
+  "version": "4.1.11.53",
+  "url": "https://dldir1.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.11.53_41748.dmg",
   "vendor_url": "https://dldir1.qq.com/weixin/Universal/Mac/xWeChatMac_universal_4.1.8.106_37335.dmg",
   "bundleId": "com.tencent.xinWeChat",
   "homepage": "https://mac.weixin.qq.com/",
-  "fileName": "xWeChatMac_universal_4.1.11.52_41747.dmg",
-  "sha": "56bcbc597c69e7d4c7f0d768f65847ec8aae4205e943590a162b0b87d2c68e31",
+  "fileName": "xWeChatMac_universal_4.1.11.53_41748.dmg",
+  "sha": "ea80413fca0ea09eb4241e333a8f09862d33c6c967e6ab66244fd474e6ab4115",
   "category": "Communication",
   "publisher": "Tencent Technology (Shenzhen) Co., Ltd.",
-  "previous_version": "4.1.11.51"
+  "previous_version": "4.1.11.52"
 }

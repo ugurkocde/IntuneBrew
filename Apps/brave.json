@@ -1,13 +1,13 @@
 {
   "name": "Brave",
   "description": "Web browser focusing on privacy",
-  "version": "1.92.138.0",
-  "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/192.138/Brave-Browser-arm64.dmg",
+  "version": "1.92.139.0",
+  "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/192.139/Brave-Browser-arm64.dmg",
   "vendor_url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/189.132/Brave-Browser-arm64.dmg",
   "bundleId": "com.brave.Browser",
   "homepage": "https://brave.com/",
   "fileName": "Brave-Browser-arm64.dmg",
-  "sha": "2fdeecb87b03b6d77c82da1721a890d47f96cce5be3d847fe4e5d6df546942ae",
+  "sha": "77ba16752824ea8336cc33ecb5cc671b4b7041f7fc1c9be8a305af56b2e3b82d",
   "changelog": "https://brave.com/latest/",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:06:14Z",
@@ -21,5 +21,5 @@
   },
   "category": "Browsers",
   "publisher": "Brave Software, Inc.",
-  "previous_version": "1.92.134.0"
+  "previous_version": "1.92.138.0"
 }

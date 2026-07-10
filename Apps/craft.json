@@ -1,13 +1,13 @@
 {
   "name": "Craft",
   "description": "Native document editor",
-  "version": "3.5.0",
+  "version": "3.5.1",
   "url": "https://res.craft.do/native/sparkle/Craft.dmg",
   "vendor_url": "https://res.craft.do/native/sparkle/Craft.dmg",
   "bundleId": "com.lukilabs.lukiapp",
   "homepage": "https://www.craft.do/",
   "fileName": "Craft.dmg",
-  "sha": "b75f5867fa457870de9578bda1fc7e5e33b7a59b97e0255bfc2049c2a5bcb3ca",
+  "sha": "ba6bfcbaea8e7564063c60bc5ffa1cad208cee3883c7677719b9f7e339cd4165",
   "category": "Productivity",
   "publisher": "Craft Technologies, Inc.",
   "previous_version": "3.5.0"
