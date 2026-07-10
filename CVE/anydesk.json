@@ -1,7 +1,7 @@
 {
   "app_name": "Anydesk",
   "app_key": "anydesk",
-  "last_updated": "2026-07-09",
+  "last_updated": "2026-07-10",
   "total_cves": 17,
   "summary": {
     "critical": 3,

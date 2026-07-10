@@ -1,11 +1,11 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-07-09",
-  "total_cves": 1010,
+  "last_updated": "2026-07-10",
+  "total_cves": 1011,
   "summary": {
     "critical": 18,
-    "high": 625,
+    "high": 626,
     "medium": 343,
     "low": 24,
     "kev_count": 18
@@ -661,6 +661,27 @@
       "kev_ransomware_use": null,
       "vendor": "microsoft",
       "product": "edge"
+    },
+    {
+      "cve_id": "CVE-2026-58525",
+      "published_date": "2026-07-08",
+      "last_modified_date": "2026-07-09",
+      "description": "Improper access control in Microsoft Edge (Chromium-based) allows an unauthorized attacker to bypass a security feature over a network.",
+      "base_score": 8.2,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:L/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "150.0.4078.50",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "150.0.4078.50",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "microsoft",
+      "product": "edge_chromium"
     },
     {
       "cve_id": "CVE-2026-56645",
