@@ -1,15 +1,15 @@
 {
   "name": "Gitfox",
   "description": "Git client",
-  "version": "4.6.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/gitfox_4.6.0.pkg",
+  "version": "4.6.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/gitfox_4.6.1.pkg",
   "vendor_url": "https://update.gitfox.app/builds/retail/11032/Gitfox.11032.zip",
   "bundleId": "com.bytieful.Gitfox-retail",
   "homepage": "https://www.gitfox.app/",
-  "fileName": "gitfox_4.6.0.pkg",
+  "fileName": "gitfox_4.6.1.pkg",
   "type": "app",
-  "sha": "7faeb20b90a1e256ab3913c2b098f3904596af8ea036403f7dc3e1ee1bdadee3",
+  "sha": "5fce27264d51e93bd0926558208b81ef75d4a5288a1487adfa48360d1806e81d",
   "category": "Developer Tools",
   "publisher": "GitFox",
-  "previous_version": "4.5.3"
+  "previous_version": "4.6.0"
 }

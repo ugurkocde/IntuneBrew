@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1273-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -532,69 +532,42 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-10 00:53 UTC*
+*Last checked: 2026-07-11 00:47 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Signal | 8.17.0 | 8.18.0 |
-| Figma | 126.6.12 | 126.6.14 |
-| Postman | 12.18.3 | 12.18.4 |
-| Vivaldi | 8.0.4033.57 | 8.1.4087.48 |
+| Superlist | 1.56.0 | 1.56.1 |
+| superwhisper | 2.16.2 | 2.16.3 |
+| Arc | 1.153.1 | 1.155.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Claude | 1.19367.0 | 1.20186.0 |
-| AltTab | 11.4.2 | 11.4.3 |
-| WhatsApp | 26.27.15 | 26.27.19 |
-| CleanMyMac | 5.5.4 | 5.5.5 |
-| BetterTouchTool | 6.609 | 6.629 |
+| Cursor | 3.10.20 | 3.11.13 |
+| WhatsApp | 26.27.19 | 26.27.21 |
+| DaisyDisk | 4.34.1 | 4.34.2 |
+| CleanMyMac | 5.5.5 | 5.5.6 |
 | Dash | 8.1.1 | 23.1.7 |
-| Superhuman | 1041.0.15 | 1041.0.16 |
-| Android SDK Platform-Tools | 37.0.0 | 37.0.1 |
 | Dash | 8.1.1 | 23.1.7 |
-| Gitfox | 4.5.3 | 4.6.0 |
-| Positron | 2026.07.0-365 | 2026.07.1-5 |
-| Setapp | 3.53.6 | 3.53.11 |
-| Tuple | 3.1.0 | 3.1.1 |
-| Dia | 1.38.0 | 1.39.2 |
-| Fathom | 3.3.2 | 3.3.3 |
-| Reqable | 3.2.4 | 3.2.6 |
-| ChatWise | 26.7.1 | 26.7.2 |
-| WeChat for Mac | 4.1.11.52 | 4.1.11.53 |
-| Miro | 0.11.154 | 0.11.157 |
-| Webex | 46.6.1.35236 | 46.6.1.35355 |
-| Brave | 1.92.138.0 | 1.92.139.0 |
-| Dropbox | 258.4.3749 | 260.4.2926 |
-| ChatGPT | 1.2026.160 | 1.2026.183 |
-| Elgato Wave Link | 3.2.1 | 3.2.2 |
-| draw.io Desktop | 30.2.6 | 30.3.6 |
-| Keeper Password Manager | 18.4.0 | 18.4.1 |
-| Raycast | 1.104.21 | 1.104.22 |
-| Zed | 1.10.0 | 1.10.1 |
-| Microsoft Edge | 150.0.4078.50 | 150.0.4078.65 |
-| Opera | 133.0.5932.24 | 133.0.5932.34 |
-| Badgeify | 1.13.3 | 1.13.4 |
-| Craft | 3.5.0 | 3.5.1 |
-| Lark | 7.70.12 | 7.71.13 |
-| Capacities | 1.66.7 | 1.67.3 |
-| Deezer | 7.1.270 | 7.1.280 |
-| Opera GX | 133.0.5932.18 | 133.0.5932.39 |
-| Waterfox | 6.6.16 | 6.6.16.1 |
+| Gitfox | 4.6.0 | 4.6.1 |
+| RewriteBar | 2.29.0 | 2.30.0 |
+| Mozilla Firefox Developer Edition | 153.0b10 | 153.0b11 |
+| Reqable | 3.2.6 | 3.2.7 |
+| Clop | 3.2.3 | 3.3.0 |
+| Rocket.Chat | 4.15.2 | 4.15.3 |
+| WeChat for Mac | 4.1.11.53 | 4.1.11.54 |
+| Grammarly Desktop | 1.173.1.0 | 1.173.2.0 |
+| Webex | 46.6.1.35355 | 46.7.0.35381 |
+| Santa | 2026.5 | 2026.6 |
+| Zed | 1.10.1 | 1.10.2 |
+| Warp | 0.2026.07.01.09.21.stable | 0.2026.07.08.17.54.stable |
+| Beekeeper Studio | 5.9.1 | 5.9.2 |
+| ocenaudio | 3.19.5 | 3.20.0 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| BitBox | 4.51.2 | 4.51.3 |
-| Granola | 7.386.3 | 7.394.2 |
-| JASP | 0.98.0.0 | 0.98.1.0 |
-| Mendeley Reference Manager | 2.145.0 | 2.146.1 |
-| Nextcloud Talk Desktop | 2.2.0 | 2.2.1 |
-| WebCatalog | 77.0.7 | 77.1.0 |
-| Zwift | 1.1.16 | 1.1.17 |
-| FineTune | 1.8.0 | 1.9.0 |
-| macshot | 4.1.2 | 4.2.0 |
-| Parsec | 150-103a | 150-104a |
-| eM Client | 10.4.5600 | 10.4.5608 |
-| Weasis | 4.7.0 | 4.7.1 |
-| NoMachine | 9.7.3 | 9.8.2 |
-| Splashtop Streamer | 3.8.4.1 | 3.8.4.2 |
+| PDFsam Basic | 6.0.1 | 6.0.4 |
+| Session | 1.18.0 | 1.18.1 |
+| macshot | 4.2.0 | 4.2.1 |
+| UniFi Identity Endpoint | 4.0.3 | 4.1.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -695,7 +668,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/applite.png' width='32' height='32'> Applite | 1.3.1 |
 | <img src='Logos/apptivate.png' width='32' height='32'> Apptivate | 2.2.1 |
 | <img src='Logos/aptible_toolbelt.png' width='32' height='32'> Aptible Toolbelt | 0.26.8 |
-| <img src='Logos/arc.png' width='32' height='32'> Arc | 1.153.1 |
+| <img src='Logos/arc.png' width='32' height='32'> Arc | 1.155.1 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.5 |
 | <img src='Logos/archi.png' width='32' height='32'> Archi | 5.7.0 |
 | <img src='Logos/arduino_ide.png' width='32' height='32'> Arduino IDE | 2.3.10 |
@@ -734,7 +707,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/bdash.png' width='32' height='32'> Bdash | 1.35.0 |
 | <img src='Logos/beardedspice.png' width='32' height='32'> BeardedSpice | 2.2.3 |
 | <img src='Logos/beaver_notes.png' width='32' height='32'> Beaver Notes | 4.4.0 |
-| <img src='Logos/beekeeper_studio.png' width='32' height='32'> Beekeeper Studio | 5.9.1 |
+| <img src='Logos/beekeeper_studio.png' width='32' height='32'> Beekeeper Studio | 5.9.2 |
 | <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.2.972 |
 | <img src='Logos/berkeley_open_infrastructure_for_network_computing.png' width='32' height='32'> Berkeley Open Infrastructure for Network Computing | 8.2.11 |
 | <img src='Logos/betaflightconfigurator.png' width='32' height='32'> Betaflight-Configurator | 10.10.0 |
@@ -836,7 +809,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/claude.png' width='32' height='32'> Claude | 1.20186.0 |
 | ❌ Claude Code | 2.1.197 |
 | <img src='Logos/cleanclip.png' width='32' height='32'> CleanClip | 2.4.7 |
-| <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.5.5 |
+| <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.5.6 |
 | <img src='Logos/cleanmymac_x_chinese.png' width='32' height='32'> CleanMyMac X Chinese | 4.15.14 |
 | <img src='Logos/cleanshot.png' width='32' height='32'> CleanShot | 4.8.8 |
 | <img src='Logos/cleartext.png' width='32' height='32'> Cleartext | 2.45 |
@@ -848,7 +821,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/clipy.png' width='32' height='32'> Clipy | 1.3.0 |
 | <img src='Logos/clocker.png' width='32' height='32'> Clocker | 26.13 |
 | <img src='Logos/clockify.png' width='32' height='32'> Clockify | 2.12.5 |
-| <img src='Logos/clop.png' width='32' height='32'> Clop | 3.2.3 |
+| <img src='Logos/clop.png' width='32' height='32'> Clop | 3.3.0 |
 | <img src='Logos/cloudcompare.png' width='32' height='32'> CloudCompare | 2.13.2 |
 | <img src='Logos/cloudflare_warp.png' width='32' height='32'> Cloudflare WARP | 2026.6.822.0 |
 | <img src='Logos/cloudytabs.png' width='32' height='32'> CloudyTabs | 2.0 |
@@ -884,12 +857,12 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/cryptomator.png' width='32' height='32'> Cryptomator | 1.19.3 |
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
 | <img src='Logos/curio.png' width='32' height='32'> Curio | 32.0.4 |
-| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 3.10.20 |
+| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 3.11.13 |
 | <img src='Logos/cursorsense.png' width='32' height='32'> CursorSense | 2.4.3 |
 | <img src='Logos/cursr.png' width='32' height='32'> Cursr | 1.7.3 |
 | <img src='Logos/customshortcuts.png' width='32' height='32'> CustomShortcuts | 1.3 |
 | <img src='Logos/cyberduck.png' width='32' height='32'> Cyberduck | 9.5.2 |
-| <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.34.1 |
+| <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.34.2 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.11.0 |
 | <img src='Logos/darkmodebuddy.png' width='32' height='32'> DarkModeBuddy | 1.2 |
 | <img src='Logos/darktable.png' width='32' height='32'> darktable | 5.6.0 |
@@ -1076,7 +1049,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/git_credential_manager.png' width='32' height='32'> Git Credential Manager | 2.8.0 |
 | <img src='Logos/gitbutler.png' width='32' height='32'> GitButler | 0.21.0 |
 | <img src='Logos/gitfinder.png' width='32' height='32'> GitFinder | 1.7.11 |
-| <img src='Logos/gitfox.png' width='32' height='32'> Gitfox | 4.6.0 |
+| <img src='Logos/gitfox.png' width='32' height='32'> Gitfox | 4.6.1 |
 | <img src='Logos/github_copilot_for_xcode.png' width='32' height='32'> GitHub Copilot for Xcode | 0.50.0 |
 | <img src='Logos/github_desktop.png' width='32' height='32'> GitHub Desktop | 3.6.2-57f0b637 |
 | <img src='Logos/gitify.png' width='32' height='32'> Gitify | 6.20.0 |
@@ -1098,7 +1071,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/gpg_suite.png' width='32' height='32'> GPG Suite | 2023.3 |
 | <img src='Logos/gpodder.png' width='32' height='32'> gPodder | 3.11.5 |
 | <img src='Logos/gpt_fdisk.png' width='32' height='32'> GPT fdisk | 1.0.10 |
-| <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.173.1.0 |
+| <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.173.2.0 |
 | <img src='Logos/grandperspective.png' width='32' height='32'> GrandPerspective | 3.7.2 |
 | <img src='Logos/granola.png' width='32' height='32'> Granola | 7.394.2 |
 | <img src='Logos/graphicconverter.png' width='32' height='32'> GraphicConverter | 12.5.2 |
@@ -1258,7 +1231,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/macpass.png' width='32' height='32'> MacPass | 0.8.1 |
 | <img src='Logos/macpilot.png' width='32' height='32'> MacPilot | 17.5 |
 | <img src='Logos/macs_fan_control.png' width='32' height='32'> Macs Fan Control | 1.5.21 |
-| <img src='Logos/macshot.png' width='32' height='32'> macshot | 4.2.0 |
+| <img src='Logos/macshot.png' width='32' height='32'> macshot | 4.2.1 |
 | <img src='Logos/macsyzones.png' width='32' height='32'> MacsyZones | 3.0.4 |
 | <img src='Logos/mactex.png' width='32' height='32'> MacTeX | 2026.0324 |
 | <img src='Logos/mactracker.png' width='32' height='32'> Mactracker | 8.2.3 |
@@ -1339,7 +1312,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/mouseless.png' width='32' height='32'> mouseless | 1.0.0 |
 | <img src='Logos/movist_pro.png' width='32' height='32'> Movist Pro | 2.15.5 |
 | <img src='Logos/mozilla_firefox.png' width='32' height='32'> Mozilla Firefox | 152.0.5 |
-| <img src='Logos/mozilla_firefox_developer_edition.png' width='32' height='32'> Mozilla Firefox Developer Edition | 153.0b10 |
+| <img src='Logos/mozilla_firefox_developer_edition.png' width='32' height='32'> Mozilla Firefox Developer Edition | 153.0b11 |
 | <img src='Logos/mozilla_firefox_esr.png' width='32' height='32'> Mozilla Firefox ESR | 140.12.0 |
 | <img src='Logos/mozilla_thunderbird.png' width='32' height='32'> Mozilla Thunderbird | 152.0.1 |
 | <img src='Logos/mqttx.png' width='32' height='32'> MQTTX | 1.13.0 |
@@ -1399,7 +1372,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/nvidia_geforce_now.png' width='32' height='32'> NVIDIA GeForce NOW | 2.0.86.124 |
 | <img src='Logos/obs.png' width='32' height='32'> OBS | 32.1.2 |
 | <img src='Logos/obsidian.png' width='32' height='32'> Obsidian | 1.12.7 |
-| <img src='Logos/ocenaudio.png' width='32' height='32'> ocenaudio | 3.19.5 |
+| <img src='Logos/ocenaudio.png' width='32' height='32'> ocenaudio | 3.20.0 |
 | <img src='Logos/ok_json.png' width='32' height='32'> OK JSON | 2.10.2 |
 | <img src='Logos/oka_unarchiver.png' width='32' height='32'> Oka Unarchiver | 2.1.6 |
 | <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.108.0 |
@@ -1457,7 +1430,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/path_finder.png' width='32' height='32'> Path Finder | 26.1.6 |
 | <img src='Logos/pdf_expert.png' width='32' height='32'> PDF Expert | 3.11.3 |
 | <img src='Logos/pdf_pals.png' width='32' height='32'> PDF Pals | 1.9.0 |
-| <img src='Logos/pdfsam_basic.png' width='32' height='32'> PDFsam Basic | 6.0.1 |
+| <img src='Logos/pdfsam_basic.png' width='32' height='32'> PDFsam Basic | 6.0.4 |
 | <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.4.3 |
 | <img src='Logos/pencil.png' width='32' height='32'> Pencil | 3.1.1 |
 | <img src='Logos/perimeter_81.png' width='32' height='32'> Perimeter 81 | 12.9.0.11237 |
@@ -1554,7 +1527,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/remote_buddy.png' width='32' height='32'> Remote Buddy | 2.7.3 |
 | <img src='Logos/remote_desktop_manager.png' width='32' height='32'> Remote Desktop Manager | 2026.2.2.1 |
 | <img src='Logos/remote_help.png' width='32' height='32'> Remote Help | 1.0.2509231 |
-| <img src='Logos/reqable.png' width='32' height='32'> Reqable | 3.2.6 |
+| <img src='Logos/reqable.png' width='32' height='32'> Reqable | 3.2.7 |
 | <img src='Logos/requestly.png' width='32' height='32'> Requestly | 26.6.29 |
 | <img src='Logos/resilio_sync.png' width='32' height='32'> Resilio Sync | 3.1.2.1076 |
 | <img src='Logos/responsively.png' width='32' height='32'> Responsively | 1.18.0 |
@@ -1562,7 +1535,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/retroarch.png' width='32' height='32'> RetroArch | 1.22.2 |
 | <img src='Logos/retrobatch.png' width='32' height='32'> Retrobatch | 2.3.1 |
 | <img src='Logos/rewind.png' width='32' height='32'> Rewind | 1.5310 |
-| <img src='Logos/rewritebar.png' width='32' height='32'> RewriteBar | 2.29.0 |
+| <img src='Logos/rewritebar.png' width='32' height='32'> RewriteBar | 2.30.0 |
 | <img src='Logos/rhinoceros.png' width='32' height='32'> Rhinoceros | 8.20.25157.13002 |
 | <img src='Logos/rightfont.png' width='32' height='32'> RightFont | 10.1 |
 | <img src='Logos/ringcentral.png' width='32' height='32'> RingCentral | 26.2.10 |
@@ -1573,7 +1546,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/roboform.png' width='32' height='32'> RoboForm | 9.9.4 |
 | <img src='Logos/rocket.png' width='32' height='32'> Rocket | 1.9.5 |
 | <img src='Logos/rocket_typist.png' width='32' height='32'> Rocket Typist | 3.3.1 |
-| <img src='Logos/rocketchat.png' width='32' height='32'> Rocket.Chat | 4.15.2 |
+| <img src='Logos/rocketchat.png' width='32' height='32'> Rocket.Chat | 4.15.3 |
 | <img src='Logos/rocketman_choices_packager.png' width='32' height='32'> Rocketman Choices Packager | 1.0.0 |
 | <img src='Logos/rode_central.png' width='32' height='32'> Rode Central | 2.0.111 |
 | <img src='Logos/rode_connect.png' width='32' height='32'> Rode Connect | 1.3.47 |
@@ -1590,7 +1563,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/safe_exam_browser.png' width='32' height='32'> Safe Exam Browser | 3.6.1 |
 | <img src='Logos/salesforce_cli.png' width='32' height='32'> Salesforce CLI | 2.142.7 |
 | <img src='Logos/sanesidebuttons.png' width='32' height='32'> SaneSideButtons | 1.4.1 |
-| <img src='Logos/santa.png' width='32' height='32'> Santa | 2026.5 |
+| <img src='Logos/santa.png' width='32' height='32'> Santa | 2026.6 |
 | <img src='Logos/sbarex_qlmarkdown.png' width='32' height='32'> sbarex QLMarkdown | 1.5.2 |
 | <img src='Logos/sc_menu.png' width='32' height='32'> SC Menu | 2.1 |
 | <img src='Logos/scratch.png' width='32' height='32'> Scratch | 3.32.0 |
@@ -1611,7 +1584,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/sensei.png' width='32' height='32'> Sensei | 2.1.1 |
 | <img src='Logos/sentinel.png' width='32' height='32'> Sentinel | 0.41.0 |
 | <img src='Logos/sequel_ace.png' width='32' height='32'> Sequel Ace | 5.3.0 |
-| <img src='Logos/session.png' width='32' height='32'> Session | 1.18.0 |
+| <img src='Logos/session.png' width='32' height='32'> Session | 1.18.1 |
 | <img src='Logos/session_manager_plugin_for_the_aws_cli.png' width='32' height='32'> Session Manager Plugin for the AWS CLI | 1.2.835.0 |
 | <img src='Logos/setapp.png' width='32' height='32'> Setapp | 3.53.11 |
 | <img src='Logos/sf_symbols.png' width='32' height='32'> SF Symbols | 8.0 |
@@ -1697,8 +1670,8 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/superduper.png' width='32' height='32'> SuperDuper! | 3.11 |
 | <img src='Logos/superhuman.png' width='32' height='32'> Superhuman | 1041.0.16 |
 | <img src='Logos/superkey.png' width='32' height='32'> Superkey | 1.66 |
-| <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.56.0 |
-| <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 2.16.2 |
+| <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.56.1 |
+| <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 2.16.3 |
 | <img src='Logos/support_app.png' width='32' height='32'> Support App | 3.0.3 |
 | <img src='Logos/support_companion.png' width='32' height='32'> Support Companion | 2.3.1.81039 |
 | <img src='Logos/surfshark.png' width='32' height='32'> Surfshark | 4.28.1 |
@@ -1790,7 +1763,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/unclutter.png' width='32' height='32'> Unclutter | 2.2.18d |
 | <img src='Logos/ungoogled_chromium.png' width='32' height='32'> Ungoogled Chromium | 150.0.7871.46-1.1 |
 | <img src='Logos/unicodechecker.png' width='32' height='32'> UnicodeChecker | 1.25.1 |
-| <img src='Logos/unifi_identity_endpoint.png' width='32' height='32'> UniFi Identity Endpoint | 4.0.3 |
+| <img src='Logos/unifi_identity_endpoint.png' width='32' height='32'> UniFi Identity Endpoint | 4.1.0 |
 | <img src='Logos/unite.png' width='32' height='32'> Unite | 6.6 |
 | <img src='Logos/unity_hub.png' width='32' height='32'> Unity Hub | 3.19.4 |
 | <img src='Logos/unnaturalscrollwheels.png' width='32' height='32'> UnnaturalScrollWheels | 1.4.0 |
@@ -1822,7 +1795,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/vyprvpn.png' width='32' height='32'> VyprVPN | 6.0.4.11438 |
 | <img src='Logos/vysor.png' width='32' height='32'> Vysor | 5.0.7 |
 | ❌ Wacom Tablet | 6.4.13-4 |
-| <img src='Logos/warp.png' width='32' height='32'> Warp | 0.2026.07.01.09.21.stable |
+| <img src='Logos/warp.png' width='32' height='32'> Warp | 0.2026.07.08.17.54.stable |
 | <img src='Logos/waterfox.png' width='32' height='32'> Waterfox | 6.6.16.1 |
 | <img src='Logos/wave_terminal.png' width='32' height='32'> Wave Terminal | 0.14.5 |
 | <img src='Logos/wavebox.png' width='32' height='32'> Wavebox | 150.2.121.2 |
@@ -1830,14 +1803,14 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/wealthfolio.png' width='32' height='32'> Wealthfolio | 3.6.1 |
 | <img src='Logos/weasis.png' width='32' height='32'> Weasis | 4.7.1 |
 | <img src='Logos/webcatalog.png' width='32' height='32'> WebCatalog | 77.1.0 |
-| <img src='Logos/webex.png' width='32' height='32'> Webex | 46.6.1.35355 |
+| <img src='Logos/webex.png' width='32' height='32'> Webex | 46.7.0.35381 |
 | <img src='Logos/webex_teams.png' width='32' height='32'> Webex Teams | 45.6.1.32593 |
 | <img src='Logos/webstorm.png' width='32' height='32'> WebStorm | 2026.1.4 |
-| <img src='Logos/wechat_for_mac.png' width='32' height='32'> WeChat for Mac | 4.1.11.53 |
+| <img src='Logos/wechat_for_mac.png' width='32' height='32'> WeChat for Mac | 4.1.11.54 |
 | <img src='Logos/weektodo.png' width='32' height='32'> WeekToDo | 2.2.0 |
 | <img src='Logos/wezterm.png' width='32' height='32'> WezTerm | 20240203-110809 |
 | <img src='Logos/whatroute.png' width='32' height='32'> WhatRoute | 2.7.2 |
-| <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 26.27.19 |
+| <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 26.27.21 |
 | <img src='Logos/whatsize.png' width='32' height='32'> WhatSize | 8.2.4 |
 | <img src='Logos/whimsical.png' width='32' height='32'> Whimsical | 0.5.2 |
 | <img src='Logos/whisky.png' width='32' height='32'> Whisky | 2.3.5 |
@@ -1877,7 +1850,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/yubikey_manager.png' width='32' height='32'> Yubikey Manager | 1.2.5 |
 | <img src='Logos/yworks_yed.png' width='32' height='32'> yWorks yEd | 3.25.1 |
 | <img src='Logos/zappy.png' width='32' height='32'> Zappy | 4.9.9 |
-| <img src='Logos/zed.png' width='32' height='32'> Zed | 1.10.1 |
+| <img src='Logos/zed.png' width='32' height='32'> Zed | 1.10.2 |
 | <img src='Logos/zed_attack_proxy.png' width='32' height='32'> Zed Attack Proxy | 2.17.0 |
 | <img src='Logos/zen_browser.png' width='32' height='32'> Zen Browser | 1.12.3b |
 | ❌ Zenmap | 7.99 |

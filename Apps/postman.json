@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "de5d3f5aa02c6c59f6fd49ae5991db07bcce1c783dc85a0c09d8aeffcd2c8f17",
   "changelog": "https://www.postman.com/release-notes/postman-app/",
-  "previous_version": "12.18.3",
+  "previous_version": "12.18.4",
   "category": "Developer Tools",
   "publisher": "Postman, Inc."
 }
