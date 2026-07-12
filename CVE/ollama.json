@@ -1,7 +1,7 @@
 {
   "app_name": "Ollama",
   "app_key": "ollama",
-  "last_updated": "2026-07-11",
+  "last_updated": "2026-07-12",
   "total_cves": 24,
   "summary": {
     "critical": 4,
