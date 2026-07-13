@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1273-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -534,26 +534,24 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-12 00:49 UTC*
+*Last checked: 2026-07-13 00:45 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
-| Claude | 1.20186.0 | 1.20186.1 |
 | Dash | 8.1.1 | 23.1.7 |
+| RemNote | 1.26.30 | 1.26.32 |
 | Dash | 8.1.1 | 23.1.7 |
-| Netron | 9.1.4 | 9.1.5 |
-| Apifox | 2.8.37 | 2.8.38 |
-| Downie | 4.12.9 | 4.12.10 |
-| DataGrip | 2026.1.3 | 2026.1.4 |
-| macFUSE | 5.2.0 | 5.3.3 |
-| Apidog | 2.8.37 | 2.8.38 |
-| Jitsi Meet | 2026.6.0 | 2026.7.0 |
-| LinearMouse | 0.11.2 | 0.11.3 |
+| RewriteBar | 2.30.0 | 2.30.1 |
+| LookAway | 2.2.5 | 2.2.6 |
+| ChatGPT | 1.2026.183 | 26.707.51957 |
+| Stats | 3.0.7 | 3.0.8 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Unity Hub | 3.19.4 | 3.19.5 |
+| Bitfocus Companion | 4.3.4 | 5.0.0 |
+| OnlySwitch | 2.6.9 | 2.6.10 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -711,7 +709,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/biscuit.png' width='32' height='32'> Biscuit | 2.1.1 |
 | <img src='Logos/bitbar.png' width='32' height='32'> BitBar | 1.10.1 |
 | <img src='Logos/bitbox.png' width='32' height='32'> BitBox | 4.51.3 |
-| <img src='Logos/bitfocus_companion.png' width='32' height='32'> Bitfocus Companion | 4.3.4 |
+| <img src='Logos/bitfocus_companion.png' width='32' height='32'> Bitfocus Companion | 5.0.0 |
 | <img src='Logos/bitrix24.png' width='32' height='32'> Bitrix24 | 23.0.32.91 |
 | <img src='Logos/bitwarden.png' width='32' height='32'> Bitwarden | 2026.6.1 |
 | <img src='Logos/bitwig_studio.png' width='32' height='32'> Bitwig Studio | 6.0.11 |
@@ -775,7 +773,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/chalk.png' width='32' height='32'> Chalk | 1.7.5 |
 | <img src='Logos/charles.png' width='32' height='32'> Charles | 5.2 |
 | <img src='Logos/charmstone.png' width='32' height='32'> Charmstone | 1.44 |
-| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 1.2026.183 |
+| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 26.707.51957 |
 | <img src='Logos/chatgpt_atlas.png' width='32' height='32'> ChatGPT Atlas | 1.2026.126.0 |
 | <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 26.7.2 |
 | <img src='Logos/chatwork.png' width='32' height='32'> ChatWork | 2.23.0 |
@@ -1192,7 +1190,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/logitech_g_hub.png' width='32' height='32'> Logitech G HUB | 2026.3.880543 |
 | <img src='Logos/logitech_options.png' width='32' height='32'> Logitech Options+ | 2.1.854976 |
 | <img src='Logos/logseq.png' width='32' height='32'> Logseq | 0.10.15 |
-| <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 2.2.5 |
+| <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 2.2.6 |
 | <img src='Logos/loom.png' width='32' height='32'> Loom | 0.360.0 |
 | <img src='Logos/loop.png' width='32' height='32'> Loop | 1.4.2 |
 | <img src='Logos/loopback.png' width='32' height='32'> Loopback | 2.4.10 |
@@ -1374,7 +1372,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/onedrive.png' width='32' height='32'> OneDrive | 26.106.0603.0003 |
 | <img src='Logos/onionshare.png' width='32' height='32'> OnionShare | 2.6.4 |
 | <img src='Logos/onlyoffice.png' width='32' height='32'> ONLYOFFICE | 9.4.0 |
-| <img src='Logos/onlyswitch.png' width='32' height='32'> OnlySwitch | 2.6.9 |
+| <img src='Logos/onlyswitch.png' width='32' height='32'> OnlySwitch | 2.6.10 |
 | <img src='Logos/onyx.png' width='32' height='32'> OnyX | 5.0.1 |
 | <img src='Logos/opal_composer.png' width='32' height='32'> Opal Composer | 2.0.0 |
 | <img src='Logos/openaudible.png' width='32' height='32'> OpenAudible | 4.8.7 |
@@ -1509,7 +1507,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/reflect_notes.png' width='32' height='32'> Reflect Notes | 3.3.6 |
 | <img src='Logos/reflector.png' width='32' height='32'> Reflector | 4.1.2 |
 | <img src='Logos/reminders_menubar.png' width='32' height='32'> Reminders MenuBar | 2.1.1 |
-| <img src='Logos/remnote.png' width='32' height='32'> RemNote | 1.26.30 |
+| <img src='Logos/remnote.png' width='32' height='32'> RemNote | 1.26.32 |
 | <img src='Logos/remote_buddy.png' width='32' height='32'> Remote Buddy | 2.7.3 |
 | <img src='Logos/remote_desktop_manager.png' width='32' height='32'> Remote Desktop Manager | 2026.2.2.1 |
 | <img src='Logos/remote_help.png' width='32' height='32'> Remote Help | 1.0.2509231 |
@@ -1521,7 +1519,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/retroarch.png' width='32' height='32'> RetroArch | 1.22.2 |
 | <img src='Logos/retrobatch.png' width='32' height='32'> Retrobatch | 2.3.1 |
 | <img src='Logos/rewind.png' width='32' height='32'> Rewind | 1.5310 |
-| <img src='Logos/rewritebar.png' width='32' height='32'> RewriteBar | 2.30.0 |
+| <img src='Logos/rewritebar.png' width='32' height='32'> RewriteBar | 2.30.1 |
 | <img src='Logos/rhinoceros.png' width='32' height='32'> Rhinoceros | 8.20.25157.13002 |
 | <img src='Logos/rightfont.png' width='32' height='32'> RightFont | 10.1 |
 | <img src='Logos/ringcentral.png' width='32' height='32'> RingCentral | 26.2.10 |
@@ -1637,7 +1635,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/standard_notes.png' width='32' height='32'> Standard Notes | 3.201.21 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 10.0.0 |
 | <img src='Logos/staruml.png' width='32' height='32'> StarUML | 6.3.4 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 3.0.7 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 3.0.8 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 6.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.8 |
 | <img src='Logos/stellarium.png' width='32' height='32'> Stellarium | 26.2 |
