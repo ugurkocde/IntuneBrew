@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-07-12",
+  "last_updated": "2026-07-13",
   "total_cves": 1011,
   "summary": {
     "critical": 18,
@@ -13601,7 +13601,7 @@
     {
       "cve_id": "CVE-2026-45489",
       "published_date": "2026-07-03",
-      "last_modified_date": "2026-07-07",
+      "last_modified_date": "2026-07-12",
       "description": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
       "base_score": 6.5,
       "severity": "MEDIUM",
