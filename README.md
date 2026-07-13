@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1273-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1274-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -535,23 +535,21 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-13 00:45 UTC*
+*Last checked: 2026-07-13 04:18 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Dash | 8.1.1 | 23.1.7 |
-| RemNote | 1.26.30 | 1.26.32 |
 | Dash | 8.1.1 | 23.1.7 |
-| RewriteBar | 2.30.0 | 2.30.1 |
-| LookAway | 2.2.5 | 2.2.6 |
-| ChatGPT | 1.2026.183 | 26.707.51957 |
-| Stats | 3.0.7 | 3.0.8 |
+| Pritunl | 1.3.4655.98 | 1.3.4686.95 |
+| WhatRoute | 2.7.2 | 2.8.0 |
+| CotEditor | 7.0.6 | 7.0.7 |
+| Zed | 1.10.2 | 1.10.3 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Bitfocus Companion | 4.3.4 | 5.0.0 |
-| OnlySwitch | 2.6.9 | 2.6.10 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -833,7 +831,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/copyclip.png' width='32' height='32'> CopyClip | 3.993 |
 | <img src='Logos/copyq.png' width='32' height='32'> CopyQ | 16.0.0 |
 | <img src='Logos/cork.png' width='32' height='32'> Cork | 1.7.6 |
-| <img src='Logos/coteditor.png' width='32' height='32'> CotEditor | 7.0.6 |
+| <img src='Logos/coteditor.png' width='32' height='32'> CotEditor | 7.0.7 |
 | <img src='Logos/craft.png' width='32' height='32'> Craft | 3.5.1 |
 | <img src='Logos/crashplan.png' width='32' height='32'> CrashPlan | 12.0.0 |
 | <img src='Logos/crossover.png' width='32' height='32'> CrossOver | 26.2.0 |
@@ -996,6 +994,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/floorp_browser.png' width='32' height='32'> Floorp browser | 12.15.3 |
 | <img src='Logos/flowvision.png' width='32' height='32'> FlowVision | 1.7.4 |
 | <img src='Logos/fluid.png' width='32' height='32'> Fluid | 2.1.2 |
+| ❌ FluidVoice | 1.6.2 |
 | <img src='Logos/flycut.png' width='32' height='32'> Flycut | 1.9.6 |
 | <img src='Logos/folx.png' width='32' height='32'> Folx | 5.34 |
 | <img src='Logos/fontbase.png' width='32' height='32'> FontBase | 2026.5.17 |
@@ -1454,7 +1453,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/pppc_utility.png' width='32' height='32'> PPPC Utility | 2.0.0 |
 | <img src='Logos/preform.png' width='32' height='32'> PreForm | 3.48.0 |
 | <img src='Logos/principle.png' width='32' height='32'> Principle | 6.43 |
-| <img src='Logos/pritunl.png' width='32' height='32'> Pritunl | 1.3.4655.98 |
+| <img src='Logos/pritunl.png' width='32' height='32'> Pritunl | 1.3.4686.95 |
 | <img src='Logos/private_internet_access.png' width='32' height='32'> Private Internet Access | 3.7.2-08420 |
 | <img src='Logos/privileges.png' width='32' height='32'> Privileges | 2.5.3 |
 | <img src='Logos/prizmo.png' width='32' height='32'> Prizmo | 4.7.1 |
@@ -1793,7 +1792,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/wechat_for_mac.png' width='32' height='32'> WeChat for Mac | 4.1.11.54 |
 | <img src='Logos/weektodo.png' width='32' height='32'> WeekToDo | 2.2.0 |
 | <img src='Logos/wezterm.png' width='32' height='32'> WezTerm | 20240203-110809 |
-| <img src='Logos/whatroute.png' width='32' height='32'> WhatRoute | 2.7.2 |
+| <img src='Logos/whatroute.png' width='32' height='32'> WhatRoute | 2.8.0 |
 | <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 26.27.21 |
 | <img src='Logos/whatsize.png' width='32' height='32'> WhatSize | 8.2.4 |
 | <img src='Logos/whimsical.png' width='32' height='32'> Whimsical | 0.5.2 |
@@ -1834,7 +1833,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/yubikey_manager.png' width='32' height='32'> Yubikey Manager | 1.2.5 |
 | <img src='Logos/yworks_yed.png' width='32' height='32'> yWorks yEd | 3.25.1 |
 | <img src='Logos/zappy.png' width='32' height='32'> Zappy | 4.9.9 |
-| <img src='Logos/zed.png' width='32' height='32'> Zed | 1.10.2 |
+| <img src='Logos/zed.png' width='32' height='32'> Zed | 1.10.3 |
 | <img src='Logos/zed_attack_proxy.png' width='32' height='32'> Zed Attack Proxy | 2.17.0 |
 | <img src='Logos/zen_browser.png' width='32' height='32'> Zen Browser | 1.12.3b |
 | ❌ Zenmap | 7.99 |
