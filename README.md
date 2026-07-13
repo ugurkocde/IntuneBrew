@@ -994,7 +994,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/floorp_browser.png' width='32' height='32'> Floorp browser | 12.15.3 |
 | <img src='Logos/flowvision.png' width='32' height='32'> FlowVision | 1.7.4 |
 | <img src='Logos/fluid.png' width='32' height='32'> Fluid | 2.1.2 |
-| ❌ FluidVoice | 1.6.2 |
+| <img src='Logos/fluidvoice.png' width='32' height='32'> FluidVoice | 1.6.2 |
 | <img src='Logos/flycut.png' width='32' height='32'> Flycut | 1.9.6 |
 | <img src='Logos/folx.png' width='32' height='32'> Folx | 5.34 |
 | <img src='Logos/fontbase.png' width='32' height='32'> FontBase | 2026.5.17 |
@@ -1847,7 +1847,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
-
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:
