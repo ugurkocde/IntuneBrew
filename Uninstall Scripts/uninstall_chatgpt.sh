@@ -17,9 +17,9 @@ fi
 echo "Stopping ChatGPT if running..."
 pkill -f "ChatGPT" 2>/dev/null || true
 
-# Kill application with bundle ID com.openai.chat if running
-echo "Stopping application with bundle ID com.openai.chat if running..."
-killall -9 "com.openai.chat" 2>/dev/null || true
+# Kill application with bundle ID com.openai.codex if running
+echo "Stopping application with bundle ID com.openai.codex if running..."
+killall -9 "com.openai.codex" 2>/dev/null || true
 
 # Remove /Applications/ChatGPT.app
 echo "Removing /Applications/ChatGPT.app..."
@@ -29,116 +29,76 @@ elif [ -f "/Applications/ChatGPT.app" ]; then
     rm -f "/Applications/ChatGPT.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Scripts/com.openai.chat.Widgets
-echo "Removing $HOME/Library/Application Scripts/com.openai.chat.Widgets..."
-if [ -d "$HOME/Library/Application Scripts/com.openai.chat.Widgets" ]; then
-    rm -rf "$HOME/Library/Application Scripts/com.openai.chat.Widgets" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/com.openai.chat.Widgets" ]; then
-    rm -f "$HOME/Library/Application Scripts/com.openai.chat.Widgets" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/Codex
+echo "Removing $HOME/Library/Application Support/Codex..."
+if [ -d "$HOME/Library/Application Support/Codex" ]; then
+    rm -rf "$HOME/Library/Application Support/Codex" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Codex" ]; then
+    rm -f "$HOME/Library/Application Support/Codex" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Scripts/group.com.openai.chat
-echo "Removing $HOME/Library/Application Scripts/group.com.openai.chat..."
-if [ -d "$HOME/Library/Application Scripts/group.com.openai.chat" ]; then
-    rm -rf "$HOME/Library/Application Scripts/group.com.openai.chat" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/group.com.openai.chat" ]; then
-    rm -f "$HOME/Library/Application Scripts/group.com.openai.chat" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/ChatGPT
-echo "Removing $HOME/Library/Application Support/ChatGPT..."
-if [ -d "$HOME/Library/Application Support/ChatGPT" ]; then
-    rm -rf "$HOME/Library/Application Support/ChatGPT" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/ChatGPT" ]; then
-    rm -f "$HOME/Library/Application Support/ChatGPT" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.openai.codex
+echo "Removing $HOME/Library/Caches/com.openai.codex..."
+if [ -d "$HOME/Library/Caches/com.openai.codex" ]; then
+    rm -rf "$HOME/Library/Caches/com.openai.codex" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.openai.codex" ]; then
+    rm -f "$HOME/Library/Caches/com.openai.codex" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.openai.chat
-echo "Removing $HOME/Library/Application Support/com.openai.chat..."
-if [ -d "$HOME/Library/Application Support/com.openai.chat" ]; then
-    rm -rf "$HOME/Library/Application Support/com.openai.chat" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.openai.chat" ]; then
-    rm -f "$HOME/Library/Application Support/com.openai.chat" 2>/dev/null || true
+# Remove $HOME/Library/HTTPStorages/com.openai.codex
+echo "Removing $HOME/Library/HTTPStorages/com.openai.codex..."
+if [ -d "$HOME/Library/HTTPStorages/com.openai.codex" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.openai.codex" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.openai.codex" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.openai.codex" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.openai.chat
-echo "Removing $HOME/Library/Caches/com.openai.chat..."
-if [ -d "$HOME/Library/Caches/com.openai.chat" ]; then
-    rm -rf "$HOME/Library/Caches/com.openai.chat" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.openai.chat" ]; then
-    rm -f "$HOME/Library/Caches/com.openai.chat" 2>/dev/null || true
+# Remove $HOME/Library/HTTPStorages/com.openai.codex.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/com.openai.codex.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/com.openai.codex.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.openai.codex.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.openai.codex.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.openai.codex.binarycookies" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.openai.chat.Widgets
-echo "Removing $HOME/Library/Containers/com.openai.chat.Widgets..."
-if [ -d "$HOME/Library/Containers/com.openai.chat.Widgets" ]; then
-    rm -rf "$HOME/Library/Containers/com.openai.chat.Widgets" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.openai.chat.Widgets" ]; then
-    rm -f "$HOME/Library/Containers/com.openai.chat.Widgets" 2>/dev/null || true
+# Remove $HOME/Library/Logs/com.openai.codex
+echo "Removing $HOME/Library/Logs/com.openai.codex..."
+if [ -d "$HOME/Library/Logs/com.openai.codex" ]; then
+    rm -rf "$HOME/Library/Logs/com.openai.codex" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/com.openai.codex" ]; then
+    rm -f "$HOME/Library/Logs/com.openai.codex" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Group Containers/group.com.openai.chat
-echo "Removing $HOME/Library/Group Containers/group.com.openai.chat..."
-if [ -d "$HOME/Library/Group Containers/group.com.openai.chat" ]; then
-    rm -rf "$HOME/Library/Group Containers/group.com.openai.chat" 2>/dev/null || true
-elif [ -f "$HOME/Library/Group Containers/group.com.openai.chat" ]; then
-    rm -f "$HOME/Library/Group Containers/group.com.openai.chat" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.openai.codex.plist
+echo "Removing $HOME/Library/Preferences/com.openai.codex.plist..."
+if [ -d "$HOME/Library/Preferences/com.openai.codex.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.openai.codex.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.openai.codex.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.openai.codex.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/HTTPStorages/ChatGPTHelper.binarycookies
-echo "Removing $HOME/Library/HTTPStorages/ChatGPTHelper.binarycookies..."
-if [ -d "$HOME/Library/HTTPStorages/ChatGPTHelper.binarycookies" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/ChatGPTHelper.binarycookies" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/ChatGPTHelper.binarycookies" ]; then
-    rm -f "$HOME/Library/HTTPStorages/ChatGPTHelper.binarycookies" 2>/dev/null || true
+# Remove $HOME/Library/Saved Application State/com.openai.codex.savedState
+echo "Removing $HOME/Library/Saved Application State/com.openai.codex.savedState..."
+if [ -d "$HOME/Library/Saved Application State/com.openai.codex.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/com.openai.codex.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/com.openai.codex.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/com.openai.codex.savedState" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/HTTPStorages/com.openai.chat
-echo "Removing $HOME/Library/HTTPStorages/com.openai.chat..."
-if [ -d "$HOME/Library/HTTPStorages/com.openai.chat" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/com.openai.chat" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/com.openai.chat" ]; then
-    rm -f "$HOME/Library/HTTPStorages/com.openai.chat" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/HTTPStorages/com.openai.chat.binarycookies
-echo "Removing $HOME/Library/HTTPStorages/com.openai.chat.binarycookies..."
-if [ -d "$HOME/Library/HTTPStorages/com.openai.chat.binarycookies" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/com.openai.chat.binarycookies" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/com.openai.chat.binarycookies" ]; then
-    rm -f "$HOME/Library/HTTPStorages/com.openai.chat.binarycookies" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Preferences/com.openai.chat.*.plist
-echo "Removing $HOME/Library/Preferences/com.openai.chat.*.plist..."
-if [ -d "$HOME/Library/Preferences/com.openai.chat.*.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.openai.chat.*.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.openai.chat.*.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.openai.chat.*.plist" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Preferences/com.openai.chat.plist
-echo "Removing $HOME/Library/Preferences/com.openai.chat.plist..."
-if [ -d "$HOME/Library/Preferences/com.openai.chat.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.openai.chat.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.openai.chat.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.openai.chat.plist" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Saved Application State/com.openai.chat.savedState
-echo "Removing $HOME/Library/Saved Application State/com.openai.chat.savedState..."
-if [ -d "$HOME/Library/Saved Application State/com.openai.chat.savedState" ]; then
-    rm -rf "$HOME/Library/Saved Application State/com.openai.chat.savedState" 2>/dev/null || true
-elif [ -f "$HOME/Library/Saved Application State/com.openai.chat.savedState" ]; then
-    rm -f "$HOME/Library/Saved Application State/com.openai.chat.savedState" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/WebKit/com.openai.chat
-echo "Removing $HOME/Library/WebKit/com.openai.chat..."
-if [ -d "$HOME/Library/WebKit/com.openai.chat" ]; then
-    rm -rf "$HOME/Library/WebKit/com.openai.chat" 2>/dev/null || true
-elif [ -f "$HOME/Library/WebKit/com.openai.chat" ]; then
-    rm -f "$HOME/Library/WebKit/com.openai.chat" 2>/dev/null || true
+# Remove $HOME/.codex
+echo "Removing $HOME/.codex..."
+if [ -d "$HOME/.codex" ]; then
+    rm -rf "$HOME/.codex" 2>/dev/null || true
+elif [ -f "$HOME/.codex" ]; then
+    rm -f "$HOME/.codex" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
