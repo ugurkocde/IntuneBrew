@@ -1,7 +1,7 @@
 {
   "app_name": "Gimp",
   "app_key": "gimp",
-  "last_updated": "2026-07-13",
+  "last_updated": "2026-07-14",
   "total_cves": 83,
   "summary": {
     "critical": 1,
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2026-2050",
       "published_date": "2026-06-24",
-      "last_modified_date": "2026-06-30",
+      "last_modified_date": "2026-07-13",
       "description": "GIMP HDR File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of HDR files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28266.",
       "base_score": 7.8,
       "severity": "HIGH",

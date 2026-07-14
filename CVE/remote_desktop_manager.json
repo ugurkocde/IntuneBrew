@@ -1,7 +1,7 @@
 {
   "app_name": "Remote Desktop Manager",
   "app_key": "remote_desktop_manager",
-  "last_updated": "2026-07-13",
+  "last_updated": "2026-07-14",
   "total_cves": 53,
   "summary": {
     "critical": 6,
