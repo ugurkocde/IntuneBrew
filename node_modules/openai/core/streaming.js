@@ -92,14 +92,46 @@ class Stream {
         let consumed = false;
         async function* iterLines() {
             const lineDecoder = new line_1.LineDecoder();
-            const iter = (0, shims_2.ReadableStreamToAsyncIterable)(readableStream);
-            for await (const chunk of iter) {
-                for (const line of lineDecoder.decode(chunk)) {
+            const reader = readableStream.getReader();
+            let closed = false;
+            let cancelPromise;
+            const cancel = () => {
+                cancelPromise ?? (cancelPromise = reader.cancel());
+                cancelPromise.catch(() => { });
+            };
+            controller.signal.addEventListener('abort', cancel, { once: true });
+            try {
+                if (controller.signal.aborted) {
+                    cancel();
+                    return;
+                }
+                while (true) {
+                    const { value: chunk, done } = await reader.read();
+                    if (done) {
+                        closed = true;
+                        break;
+                    }
+                    if (controller.signal.aborted)
+                        return;
+                    for (const line of lineDecoder.decode(chunk)) {
+                        if (controller.signal.aborted)
+                            return;
+                        yield line;
+                    }
+                }
+                if (controller.signal.aborted)
+                    return;
+                for (const line of lineDecoder.flush()) {
+                    if (controller.signal.aborted)
+                        return;
                     yield line;
                 }
             }
-            for (const line of lineDecoder.flush()) {
-                yield line;
+            finally {
+                controller.signal.removeEventListener('abort', cancel);
+                if (!closed)
+                    cancel();
+                reader.releaseLock();
             }
         }
         async function* iterator() {
@@ -119,7 +151,7 @@ class Stream {
             }
             catch (e) {
                 // If the user calls `stream.controller.abort()`, we should exit without throwing.
-                if ((0, errors_1.isAbortError)(e))
+                if (controller.signal.aborted || (0, errors_1.isAbortError)(e))
                     return;
                 throw e;
             }

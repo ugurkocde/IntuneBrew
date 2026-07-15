@@ -4,11 +4,12 @@ exports = module.exports = function (...args) {
   return new exports.default(...args)
 }
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.BedrockOpenAI = exports.AzureOpenAI = exports.SubjectTokenProviderError = exports.OAuthError = exports.InvalidWebhookSignatureError = exports.UnprocessableEntityError = exports.PermissionDeniedError = exports.InternalServerError = exports.AuthenticationError = exports.BadRequestError = exports.RateLimitError = exports.ConflictError = exports.NotFoundError = exports.APIUserAbortError = exports.APIConnectionTimeoutError = exports.APIConnectionError = exports.APIError = exports.OpenAIError = exports.PagePromise = exports.OpenAI = exports.APIPromise = exports.toFile = exports.default = void 0;
+exports.BedrockOpenAI = exports.AzureOpenAI = exports.SubjectTokenProviderError = exports.OAuthError = exports.InvalidWebhookSignatureError = exports.UnprocessableEntityError = exports.PermissionDeniedError = exports.InternalServerError = exports.AuthenticationError = exports.BadRequestError = exports.RateLimitError = exports.ConflictError = exports.NotFoundError = exports.APIUserAbortError = exports.APIConnectionTimeoutError = exports.APIConnectionError = exports.APIError = exports.OpenAIError = exports.PagePromise = exports.OpenAI = exports.APIPromise = exports.toStreamingFile = exports.toFile = exports.default = void 0;
 var client_1 = require("./client.js");
 Object.defineProperty(exports, "default", { enumerable: true, get: function () { return client_1.OpenAI; } });
 var uploads_1 = require("./core/uploads.js");
 Object.defineProperty(exports, "toFile", { enumerable: true, get: function () { return uploads_1.toFile; } });
+Object.defineProperty(exports, "toStreamingFile", { enumerable: true, get: function () { return uploads_1.toStreamingFile; } });
 var api_promise_1 = require("./core/api-promise.js");
 Object.defineProperty(exports, "APIPromise", { enumerable: true, get: function () { return api_promise_1.APIPromise; } });
 var client_2 = require("./client.js");

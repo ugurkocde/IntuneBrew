@@ -1,5 +1,5 @@
 export { OpenAI as default } from "./client.js";
-export { type Uploadable, toFile } from "./core/uploads.js";
+export { type Uploadable, toFile, toStreamingFile } from "./core/uploads.js";
 export { APIPromise } from "./core/api-promise.js";
 export { OpenAI, type ClientOptions } from "./client.js";
 export { PagePromise } from "./core/pagination.js";

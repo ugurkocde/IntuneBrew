@@ -7,6 +7,7 @@ import {
   type ResponseStreamEvent,
 } from '../../resources/responses/responses';
 import { RequestOptions } from '../../internal/request-options';
+import { type ReadableStream } from '../../internal/shim-types';
 import { APIUserAbortError, OpenAIError } from '../../error';
 import OpenAI from '../../index';
 import { type BaseEvents, EventStream } from '../EventStream';
@@ -27,7 +28,9 @@ export type ResponseStreamByIdParams = {
    */
   response_id: string;
   /**
-   * If provided, the stream will start after the event with the given sequence number.
+   * If provided, events with a sequence number less than or equal to this value
+   * will not be emitted. The helper still replays them internally to build a
+   * complete snapshot for later events and `finalResponse()`.
    */
   starting_after?: number;
   /**
@@ -87,6 +90,12 @@ export class ResponseStream<ParsedT = null>
         headers: { ...options?.headers, 'X-Stainless-Helper-Method': 'stream' },
       }),
     );
+    return runner;
+  }
+
+  static fromReadableStream(stream: ReadableStream): ResponseStream<null> {
+    const runner = new ResponseStream(null);
+    runner._run(() => runner._fromReadableStream(stream));
     return runner;
   }
 
@@ -175,6 +184,8 @@ export class ResponseStream<ParsedT = null>
     let stream: Stream<ResponseStreamEvent> | undefined;
     let starting_after: number | null = null;
     if ('response_id' in params) {
+      // Keep the full replay so that `accumulateResponse()` sees `response.created` and can build
+      // complete snapshots before locally filtering events at `starting_after`.
       stream = await client.responses.retrieve(
         params.response_id,
         { stream: true },
@@ -191,6 +202,23 @@ export class ResponseStream<ParsedT = null>
     this._connected();
     for await (const event of stream) {
       this.#addEvent(event, starting_after);
+    }
+    if (stream.controller.signal?.aborted) {
+      throw new APIUserAbortError();
+    }
+    return this.#endRequest();
+  }
+
+  protected async _fromReadableStream(
+    readableStream: ReadableStream,
+    options?: RequestOptions,
+  ): Promise<ParsedResponse<ParsedT>> {
+    this._listenForAbort(options?.signal);
+    this.#beginRequest();
+    this._connected();
+    const stream = Stream.fromReadableStream<ResponseStreamEvent>(readableStream, this.controller);
+    for await (const event of stream) {
+      this.#addEvent(event, null);
     }
     if (stream.controller.signal?.aborted) {
       throw new APIUserAbortError();

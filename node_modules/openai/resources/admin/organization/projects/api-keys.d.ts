@@ -74,6 +74,10 @@ export interface ProjectAPIKey {
     object: 'organization.project.api_key';
     owner: ProjectAPIKey.Owner;
     /**
+     * Whether the API key's owner currently has effective access to the project.
+     */
+    owner_project_access: 'active' | 'inactive';
+    /**
      * The redacted value of the API key
      */
     redacted_value: string;
@@ -154,6 +158,14 @@ export interface APIKeyRetrieveParams {
     project_id: string;
 }
 export interface APIKeyListParams extends ConversationCursorPageParams {
+    /**
+     * Filter API keys by whether the owner currently has effective access to the
+     * project. Use `active` for owners with access, `inactive` for owners without
+     * access, or `any` for all enabled project API keys. If omitted, the endpoint
+     * applies its existing membership-based visibility rules, which may exclude some
+     * enabled keys.
+     */
+    owner_project_access?: 'active' | 'inactive' | 'any';
 }
 export interface APIKeyDeleteParams {
     /**

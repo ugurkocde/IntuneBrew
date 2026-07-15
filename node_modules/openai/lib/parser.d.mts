@@ -1,7 +1,7 @@
-import { ChatCompletion, ChatCompletionCreateParams, ChatCompletionCreateParamsBase, ChatCompletionFunctionTool, ChatCompletionMessage, ChatCompletionMessageFunctionToolCall, ChatCompletionStreamingToolRunnerParams, ChatCompletionStreamParams, ChatCompletionToolRunnerParams, ParsedChatCompletion } from "../resources/chat/completions.mjs";
+import { ChatCompletion, ChatCompletionCreateParams, ChatCompletionCreateParamsBase, ChatCompletionFunctionTool, ChatCompletionMessage, ChatCompletionMessageFunctionToolCall, ChatCompletionStreamingToolRunnerParams, ChatCompletionStreamingToolRunnerParamsWithContext, ChatCompletionStreamParams, ChatCompletionToolRunnerParams, ChatCompletionToolRunnerParamsWithContext, ParsedChatCompletion } from "../resources/chat/completions.mjs";
 import { type ResponseFormatTextJSONSchemaConfig } from "../resources/responses/responses.mjs";
 import { ResponseFormatJSONSchema } from "../resources/shared.mjs";
-type AnyChatCompletionCreateParams = ChatCompletionCreateParams | ChatCompletionToolRunnerParams<any> | ChatCompletionStreamingToolRunnerParams<any> | ChatCompletionStreamParams;
+type AnyChatCompletionCreateParams = ChatCompletionCreateParams | ChatCompletionToolRunnerParams<any> | ChatCompletionToolRunnerParamsWithContext<any, any> | ChatCompletionStreamingToolRunnerParams<any> | ChatCompletionStreamingToolRunnerParamsWithContext<any, any> | ChatCompletionStreamParams;
 type Unpacked<T> = T extends (infer U)[] ? U : T;
 type ToolCall = Unpacked<ChatCompletionCreateParamsBase['tools']>;
 export declare function isChatCompletionFunctionTool(tool: ToolCall): tool is ChatCompletionFunctionTool;
