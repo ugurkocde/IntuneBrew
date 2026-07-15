@@ -1,14 +1,14 @@
 {
   "name": "Meta",
   "description": "Tag editor for digital music",
-  "version": "2.3.9",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/meta_2.3.9.pkg",
+  "version": "2.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/meta_2.4.pkg",
   "vendor_url": "https://www.nightbirdsevolve.com/meta/updates/bin/Meta%202.3.9.zip",
   "bundleId": "com.nightbirdsevolve.Meta",
   "homepage": "https://www.nightbirdsevolve.com/meta/",
-  "fileName": "meta_2.3.9.pkg",
+  "fileName": "meta_2.4.pkg",
   "type": "app",
-  "sha": "17867043282abc82dc0fb1d284a0f092bd250a9bf8d134915539a34c0aa6a6cb",
+  "sha": "6ae782f965fad4ad092666e3045bd72bceb036d5e1aa9c86fe588d71b271e510",
   "category": "Media",
   "publisher": "NightBirdsEvolve",
   "previous_version": "2.3.9"

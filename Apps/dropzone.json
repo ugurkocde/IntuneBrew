@@ -1,14 +1,14 @@
 {
   "name": "Dropzone",
   "description": "Productivity app",
-  "version": "4.80.75",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/dropzone_4.80.75.pkg",
+  "version": "4.80.76",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/dropzone_4.80.76.pkg",
   "vendor_url": "https://aptonic.com/releases/Dropzone-4.80.75.zip",
   "bundleId": "com.aptonic.Dropzone4",
   "homepage": "https://aptonic.com/",
-  "fileName": "dropzone_4.80.75.pkg",
+  "fileName": "dropzone_4.80.76.pkg",
   "type": "app",
-  "sha": "5cbd8be78715c3bd188e0d31e2cb03aa5a8bd957fc9480aeee000e7e27dcff76",
+  "sha": "6b9f9b66e3f4fb9b358b11371e3a149a79d38f625a074a2dd3ee01c79d651b8d",
   "category": "Productivity",
   "publisher": "Aptonic",
   "previous_version": "4.80.75"

@@ -1,13 +1,13 @@
 {
   "name": "Logseq",
   "description": "Privacy-first, open-source platform for knowledge sharing and management",
-  "version": "0.10.15",
-  "url": "https://github.com/logseq/logseq/releases/download/0.10.15/logseq-darwin-arm64-0.10.15.dmg",
+  "version": "2.0.1",
+  "url": "https://github.com/logseq/logseq/releases/download/2.0.1/logseq-darwin-arm64-2.0.1.dmg",
   "vendor_url": "https://github.com/logseq/logseq/releases/download/0.10.15/logseq-darwin-arm64-0.10.15.dmg",
   "bundleId": "com.electron.logseq",
   "homepage": "https://github.com/logseq/logseq",
-  "fileName": "logseq-darwin-arm64-0.10.15.dmg",
-  "sha": "a0b83e5bdc2b8bb639cec5747cedcc0f0a8cd840ca6fa0d44242dc05312d27cb",
+  "fileName": "logseq-darwin-arm64-2.0.1.dmg",
+  "sha": "b76af25384f8aaa0ba322f8b5523aea712d9750d9f3e79cac55dc783796439cd",
   "category": "Productivity",
   "publisher": "Logseq",
   "previous_version": "0.10.15"

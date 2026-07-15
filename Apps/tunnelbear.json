@@ -1,15 +1,15 @@
 {
   "name": "TunnelBear",
   "description": "VPN client for secure internet access and private browsing",
-  "version": "5.9.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/tunnelbear_5.9.2.pkg",
+  "version": "5.10.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tunnelbear_5.10.0.pkg",
   "vendor_url": "https://tunnelbear.s3.amazonaws.com/downloads/mac/TunnelBear-5.9.0.zip",
   "bundleId": "com.tunnelbear.mac.TunnelBear",
   "homepage": "https://www.tunnelbear.com/",
-  "fileName": "tunnelbear_5.9.2.pkg",
+  "fileName": "tunnelbear_5.10.0.pkg",
   "type": "app",
   "previous_version": "5.9.2",
-  "sha": "36693826118229713f7ea5954c65794e3a348b09341a0d95f2bd843992403948",
+  "sha": "11ae30e619e8019b811bf64ee3b79fb3d60a406f3ef62c62d7d69a790fe6236f",
   "category": "Security",
   "publisher": "TunnelBear, Inc."
 }

@@ -1,13 +1,13 @@
 {
   "name": "Franz",
   "description": "Messaging app for WhatsApp, Facebook Messenger, Slack, Telegram and more",
-  "version": "6.4.1",
-  "url": "https://github.com/meetfranz/franz-6/releases/download/v6.4.1/Franz-arm64.dmg",
+  "version": "6.5.1",
+  "url": "https://github.com/meetfranz/franz-6/releases/download/v6.5.1/Franz-arm64.dmg",
   "vendor_url": "https://github.com/meetfranz/franz/releases/download/v5.11.0/franz-5.11.0-arm64.dmg",
   "bundleId": "com.meetfranz.franz",
   "homepage": "https://meetfranz.com/",
   "fileName": "Franz-arm64.dmg",
-  "sha": "473baf26b35990815e499e73726626207f8d3ef9fa50766d7eb7280899a07368",
+  "sha": "c45445ba7ceb531eba17851d0dabffad5d6af310367c3e8edbb80cd519c94788",
   "category": "Communication",
   "publisher": "Franz Technologies GmbH",
   "previous_version": "6.4.1"
