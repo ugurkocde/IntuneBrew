@@ -992,6 +992,7 @@
     "systhist": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/systhist.json",
     "tabby": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/tabby.json",
     "tableau_desktop": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/tableau_desktop.json",
+    "tableau_prep": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/tableau_prep.json",
     "tableau_public": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/tableau_public.json",
     "tableau_reader": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/tableau_reader.json",
     "tableplus": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/tableplus.json",

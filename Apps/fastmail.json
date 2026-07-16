@@ -11,6 +11,6 @@
   "sha": "ddcbc97497f71ebdf58aacfae9cd8610ec1af4774a984f7bf0561e74ac358b4c",
   "category": "Communication",
   "publisher": "Fastmail Pty Ltd",
-  "previous_version": "1.5.0",
+  "previous_version": "1.5.1",
   "homebrew_cask": "fastmail"
 }
