@@ -1,5 +1,6 @@
 import importlib.util
 import json
+import re
 import tempfile
 import unittest
 from pathlib import Path
@@ -106,6 +107,29 @@ class CollectAppInfoTests(unittest.TestCase):
             )
 
             self.assertEqual(resolved, str(app_path))
+
+
+class CatalogConsistencyTests(unittest.TestCase):
+    def test_supported_catalog_matches_non_deprecated_apps(self):
+        apps = {
+            path.stem: json.loads(path.read_text(encoding="utf-8"))
+            for path in (ROOT / "Apps").glob("*.json")
+        }
+        supported = json.loads(
+            (ROOT / "supported_apps.json").read_text(encoding="utf-8")
+        )
+        expected = {
+            name
+            for name, app_data in apps.items()
+            if not app_data.get("deprecated")
+        }
+
+        self.assertEqual(set(supported), expected)
+
+        readme = (ROOT / "README.md").read_text(encoding="utf-8")
+        badge = re.search(r"Apps_Available-(\d+)-", readme)
+        self.assertIsNotNone(badge)
+        self.assertEqual(int(badge.group(1)), len(expected))
 
 
 if __name__ == "__main__":
