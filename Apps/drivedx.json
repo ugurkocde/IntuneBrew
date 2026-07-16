@@ -22,5 +22,6 @@
     "installed_version": "1.12.1"
   },
   "category": "Utilities",
-  "publisher": "Binary Fruit"
+  "publisher": "Binary Fruit",
+  "homebrew_cask": "drivedx"
 }

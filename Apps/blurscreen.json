@@ -6,6 +6,7 @@
   "vendor_url": "https://www.blurscreen.app/assets/BlurScreen-v2.pkg",
   "bundleId": "com.blurscreen",
   "homepage": "https://www.blurscreen.app/",
+  "homebrew_cask": "blurscreen",
   "fileName": "blurscreen_1.0.pkg",
   "type": "pkg_in_pkg",
   "qa_info": {

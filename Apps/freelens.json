@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/freelensapp/freelens/releases/download/v1.8.1/Freelens-1.8.1-macos-arm64.dmg",
   "bundleId": "app.freelens.Freelens",
   "homepage": "https://freelens.app/",
+  "homebrew_cask": "freelens",
   "fileName": "Freelens-1.10.3-macos-arm64.dmg",
   "sha": "ae33e11d5db858da1f64ae2c4f7ca3835786780bcb2af02e55fe756f08900419",
   "qa_info": {

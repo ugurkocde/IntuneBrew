@@ -11,5 +11,6 @@
   "sha": "0f85f37115ade71d38f3a7be6b8dce47496d10b39c47cb34b5320e34d8bf21b5",
   "category": "Utilities",
   "publisher": "Native Instruments",
-  "previous_version": "3.25.1"
+  "previous_version": "3.25.1",
+  "homebrew_cask": "native-access"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://res.craft.do/native/sparkle/Craft.dmg",
   "bundleId": "com.lukilabs.lukiapp",
   "homepage": "https://www.craft.do/",
+  "homebrew_cask": "craft",
   "fileName": "Craft.dmg",
   "sha": "ba6bfcbaea8e7564063c60bc5ffa1cad208cee3883c7677719b9f7e339cd4165",
   "category": "Productivity",

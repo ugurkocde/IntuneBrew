@@ -11,5 +11,6 @@
   "sha": "5c4e48058a8d9d2fe0b1cba18e813f83cf728e19f8986bba15c2c79da223cbd9",
   "category": "Utilities",
   "publisher": "Jamf",
-  "previous_version": "2.0.0"
+  "previous_version": "2.0.0",
+  "homebrew_cask": "pppc-utility"
 }

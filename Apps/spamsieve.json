@@ -6,9 +6,10 @@
   "vendor_url": "https://c-command.com/downloads/SpamSieve-3.3.dmg",
   "bundleId": "com.c-command.SpamSieve",
   "homepage": "https://c-command.com/spamsieve/",
+  "homebrew_cask": "spamsieve",
   "fileName": "SpamSieve-3.3.1.dmg",
   "sha": "a3f6a5d1b0ca309d39210a4717554e96d7ccd55fa37b667f90ced2a8b9517b2c",
   "category": "Security",
   "publisher": "C-Command Software",
-  "previous_version": "3.3"
+  "previous_version": "3.3.1"
 }

@@ -21,5 +21,6 @@
     "installed_version": "0.9.6"
   },
   "category": "Media",
-  "publisher": "Overcast, LLC"
+  "publisher": "Overcast, LLC",
+  "homebrew_cask": "forecast"
 }

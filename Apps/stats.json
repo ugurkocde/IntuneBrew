@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/exelban/stats/releases/download/v2.12.9/Stats.dmg",
   "bundleId": "eu.exelban.Stats",
   "homepage": "https://github.com/exelban/stats",
+  "homebrew_cask": "stats",
   "fileName": "Stats.dmg",
   "sha": "b42a3dfe0f8f8a20eef174c5a993b2ec6f1034c5fb6accb875d6d39999d20bd6",
   "changelog": "https://github.com/exelban/stats/releases",

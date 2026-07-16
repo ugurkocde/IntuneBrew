@@ -6,6 +6,7 @@
   "vendor_url": "https://zappy.zapier.com/releases/zappy-4.9.5.dmg",
   "bundleId": "com.blackbeltlabs.Zappy",
   "homepage": "https://zapier.com/zappy",
+  "homebrew_cask": "zappy",
   "fileName": "zappy-4.9.9.dmg",
   "sha": "e7b323657c331f58fe740370ad8274d52c50296dfe78017572adc594f515403a",
   "category": "Productivity",

@@ -6,6 +6,7 @@
   "vendor_url": "https://www.arqbackup.com/download/arqbackup/Arq7.39.1.pkg",
   "bundleId": "com.haystacksoftware.Arq",
   "homepage": "https://www.arqbackup.com/",
+  "homebrew_cask": "arq",
   "fileName": "Arq7.46.1.pkg",
   "type": "pkg",
   "sha": "8729f2ab7a5761d779c59c4fcbbd66ed85dfe281aae16373c6ee3240c0b47a6a",

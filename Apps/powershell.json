@@ -11,5 +11,8 @@
   "changelog": "https://github.com/PowerShell/PowerShell/releases",
   "category": "Developer Tools",
   "publisher": "Microsoft Corporation",
-  "previous_version": "7.5.4"
+  "previous_version": "7.5.4",
+  "homebrew_cask": "powershell",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://www.charlesproxy.com/assets/release/5.0.3/charles-proxy-5.0.3.dmg",
   "bundleId": "com.xk72.Charles",
   "homepage": "https://www.charlesproxy.com/",
+  "homebrew_cask": "charles",
   "fileName": "charles-proxy-5.2.dmg",
   "sha": "da0661a82a103c22ec86f667b1580fb8c4cceaac01e5c4c814f8bb379fa6684a",
   "category": "Developer Tools",

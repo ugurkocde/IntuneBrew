@@ -6,6 +6,7 @@
   "vendor_url": "https://magicquit.com/apps/MagicQuit_1.4.dmg",
   "bundleId": "com.MagicQuit",
   "homepage": "https://magicquit.com/",
+  "homebrew_cask": "magicquit",
   "fileName": "MagicQuit_1.4.dmg",
   "sha": "2deebd8efc69f06ae51cbc17eecfa15310a8a6a46a800645b285d2be360fd922",
   "category": "Utilities",

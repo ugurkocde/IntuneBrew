@@ -11,5 +11,6 @@
   "sha": "7300a8dcf0de9a80d43455d5034113e5451ed5ba9666f9cc3d5100070de4e019",
   "category": "Utilities",
   "publisher": "Low Tech Guys",
-  "previous_version": "1.3"
+  "previous_version": "1.3",
+  "homebrew_cask": "music-decoy"
 }

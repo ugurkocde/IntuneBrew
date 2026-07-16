@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/usebruno/bruno/releases/download/v3.2.2/bruno_3.2.2_arm64_mac.dmg",
   "bundleId": "com.usebruno.app",
   "homepage": "https://www.usebruno.com/",
+  "homebrew_cask": "bruno",
   "fileName": "bruno_3.5.2_arm64_mac.dmg",
   "sha": "8e8e52be8d255b35f0161f514e94d2aae2f5071ee94e0ad7bc9fd2373a430930",
   "changelog": "https://github.com/usebruno/bruno/releases",

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/martpie/museeks/releases/download/0.23.4/Museeks_0.23.4_universal.dmg",
   "bundleId": "com.electron.museeks",
   "homepage": "https://museeks.io/",
+  "homebrew_cask": "museeks",
   "fileName": "Museeks_0.23.4_universal.dmg",
   "sha": "ff8b3053fefdabb99c54868e74b4857087ac501bf91a026df60776bded2befb7",
   "category": "Media",

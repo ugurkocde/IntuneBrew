@@ -6,6 +6,7 @@
   "vendor_url": "https://www.mothersruin.com/software/downloads/Archaeology.dmg",
   "bundleId": "com.mothersruin.Archaeology",
   "homepage": "https://www.mothersruin.com/software/Archaeology/",
+  "homebrew_cask": "archaeology",
   "fileName": "Archaeology.dmg",
   "sha": "c9f8f5a0054f01b4453418e07c8c1a9baeac88e1bb2313059c7c3dcc620acc5e",
   "qa_info": {

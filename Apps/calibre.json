@@ -6,6 +6,7 @@
   "vendor_url": "https://download.calibre-ebook.com/9.7.0/calibre-9.7.0.dmg",
   "bundleId": "net.kovidgoyal.calibre",
   "homepage": "https://calibre-ebook.com/",
+  "homebrew_cask": "calibre",
   "fileName": "calibre-9.11.0.dmg",
   "sha": "300c1acf1f8b941e265d0f8c39fc608c3cfea865a31702e084643d536b78c951",
   "changelog": "https://calibre-ebook.com/whats-new",

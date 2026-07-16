@@ -11,5 +11,6 @@
   "sha": "06d779d39153853ab213629f47b2048b9068ccc66fa539240f3e4ef271023c3c",
   "category": "Productivity",
   "publisher": "Apptorium",
-  "previous_version": "1.6.2"
+  "previous_version": "1.6.2",
+  "homebrew_cask": "sidenotes"
 }

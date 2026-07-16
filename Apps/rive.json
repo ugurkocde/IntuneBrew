@@ -6,6 +6,7 @@
   "vendor_url": "https://releases.rive.app/macos/0.8.4602/Rive.dmg",
   "bundleId": "app.rive.editor",
   "homepage": "https://rive.app/",
+  "homebrew_cask": "rive",
   "fileName": "Rive.dmg",
   "sha": "c5d4ee7488cc2eaccc7a3d545b5fb98b4899b22885475e65bd1acd1585612cf0",
   "category": "Design",

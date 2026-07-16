@@ -6,6 +6,7 @@
   "vendor_url": "https://d20adtppz83p9s.cloudfront.net/OSX_ARM64/5.3.4/AWS_VPN_Client_ARM64.pkg",
   "bundleId": "com.amazon.awsvpnclient",
   "homepage": "https://aws.amazon.com/vpn/",
+  "homebrew_cask": "aws-vpn-client",
   "fileName": "aws_client_vpn_5.4.1.pkg",
   "type": "pkg_in_pkg",
   "qa_info": {

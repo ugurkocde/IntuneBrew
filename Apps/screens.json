@@ -11,5 +11,8 @@
   "previous_version": "4.12.16",
   "sha": "2be4e729c9962a22e2c82a3f271ad54e9638876fe6b9a6cfc2e7d2bee8a14977",
   "category": "Productivity",
-  "publisher": "Edovia"
+  "publisher": "Edovia",
+  "homebrew_cask": "screens",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

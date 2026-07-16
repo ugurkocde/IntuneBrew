@@ -6,6 +6,7 @@
   "vendor_url": "https://githubcopilotide.z13.web.core.windows.net/0.47.0/GitHubCopilotForXcode.dmg",
   "bundleId": "com.github.CopilotForXcode",
   "homepage": "https://github.com/github/CopilotForXcode",
+  "homebrew_cask": "github-copilot-for-xcode",
   "fileName": "GitHubCopilotForXcode.dmg",
   "sha": "50a2ce3556d044137dd9fbc1d95a918768aeb035f267d5a4b973b40b116a6b50",
   "category": "Developer Tools",

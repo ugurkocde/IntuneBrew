@@ -6,6 +6,7 @@
   "vendor_url": "https://api.badgeify.app/release/download/darwin/universal/1.13.1",
   "bundleId": "studio.techflow.badgeify",
   "homepage": "https://badgeify.app/",
+  "homebrew_cask": "badgeify",
   "fileName": "Badgeify-1.14.0.dmg",
   "sha": "54edec479637c89bb1bde509e93d78cb41252d389535847c723305bd6aa2fa11",
   "changelog": "https://badgeify.app/changelog",
@@ -20,5 +21,5 @@
   },
   "category": "Utilities",
   "publisher": "Badgeify",
-  "previous_version": "1.13.4"
+  "previous_version": "1.14.0"
 }

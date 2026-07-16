@@ -6,6 +6,7 @@
   "vendor_url": "https://d1fqctmfkpkkcg.cloudfront.net/gifox/020900.01.dmg",
   "bundleId": "com.gifox.gifox2",
   "homepage": "https://gifox.io/",
+  "homebrew_cask": "gifox",
   "fileName": "021000.00.dmg",
   "sha": "569da6cd7d344a9e7f2f4ddebbcbcd83a3dc41d86330197d34fa7ade19529346",
   "changelog": "https://gifox.io/changelog/",

@@ -10,5 +10,8 @@
   "sha": "eebe6373c896a02d102607566dfa0626ab8541b7816779c3bce5524bf10e65fb",
   "category": "Utilities",
   "publisher": "DjVuLibre",
-  "previous_version": "4.12"
+  "previous_version": "4.12",
+  "homebrew_cask": "djview",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

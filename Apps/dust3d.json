@@ -10,5 +10,8 @@
   "sha": "d224bdb3a948ed40ae84a4c923607afff5f54a636fbde27622b98e7dde222022",
   "category": "Design",
   "publisher": "Dust3D",
-  "previous_version": "1.1.6"
+  "previous_version": "1.1.6",
+  "homebrew_cask": "dust3d",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

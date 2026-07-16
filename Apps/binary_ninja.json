@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.binary.ninja/installers/binaryninja_free_macosx.dmg",
   "bundleId": "com.vector35.binaryninja",
   "homepage": "https://binary.ninja/",
+  "homebrew_cask": "binary-ninja-free",
   "fileName": "binaryninja_free_macosx.dmg",
   "sha": "6d86c18aeb2ca44978be0395cd4fab9f4258f795752fbd1644dfad5f989d45fb",
   "qa_info": {

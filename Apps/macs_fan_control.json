@@ -11,5 +11,6 @@
   "sha": "492df4b12a432ca0d3b00f17cb541f1182b7e9fb42127ca2200f564d0387afba",
   "previous_version": "1.5.21",
   "category": "Utilities",
-  "publisher": "CrystalIDEA srl"
+  "publisher": "CrystalIDEA srl",
+  "homebrew_cask": "macs-fan-control"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.localwp.com/releases-stable/10.0.0+6907/local-10.0.0-mac-arm64.dmg",
   "bundleId": "com.getflywheel.lightning.local",
   "homepage": "https://localwp.com/",
+  "homebrew_cask": "local",
   "fileName": "local-10.1.1-mac-arm64.dmg",
   "sha": "fda954e9384d87344c11c7b40556250ea6c5c6b1cd0d6715b41798185f58c185",
   "category": "Developer Tools",

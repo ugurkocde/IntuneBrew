@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/ente-io/ente/releases/download/auth-v4.4.17/ente-auth-v4.4.17.dmg",
   "bundleId": "io.ente.auth.mac",
   "homepage": "https://ente.io/auth/",
+  "homebrew_cask": "ente-auth",
   "fileName": "ente-auth-v4.4.24.dmg",
   "sha": "8770d318a3813b09dcb88b01a82b13c50401ea0ad3a466ccc7ebeb6e86352cb3",
   "qa_info": {

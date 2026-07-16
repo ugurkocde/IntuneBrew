@@ -6,6 +6,7 @@
   "vendor_url": "https://inputsource.pro/stable/Input%20Source%20Pro%202.9.0.dmg",
   "bundleId": "com.runjuu.Input-Source-Pro",
   "homepage": "https://inputsource.pro/",
+  "homebrew_cask": "input-source-pro",
   "fileName": "Input Source Pro 2.11.0.dmg",
   "sha": "036f77e2142fa3602d3acffe823bc8272c3e2a5cdb7a0350ddf5fc944903294b",
   "category": "Utilities",

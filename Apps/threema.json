@@ -6,6 +6,7 @@
   "vendor_url": "https://releases.threema.ch/web-electron/v1/release/Threema-Latest.dmg",
   "bundleId": "ch.threema.threema",
   "homepage": "https://threema.ch/",
+  "homebrew_cask": "threema",
   "fileName": "Threema-Latest.dmg",
   "sha": "1ef99f4043ed1b24d9e182bce4fbc142952e97ca37a2842f49e809035615bf48",
   "category": "Communication",

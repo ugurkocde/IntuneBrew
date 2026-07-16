@@ -6,6 +6,7 @@
   "vendor_url": "https://fireball.studio/media/uploads/files/OneSwitchOfficial-429.dmg",
   "bundleId": "studio.fireball.OneSwitch",
   "homepage": "https://fireball.studio/oneswitch",
+  "homebrew_cask": "one-switch",
   "fileName": "OneSwitchOfficial-440.dmg",
   "sha": "1dd2dea29298ff6731539613bf30e2521cb1f10e4e9d562409abf90c3dfbc9b6",
   "category": "Utilities",

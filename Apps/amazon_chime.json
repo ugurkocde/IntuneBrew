@@ -6,6 +6,7 @@
   "vendor_url": "https://clients.chime.aws/mac-nme/AmazonChime-5.23.22488.dmg",
   "bundleId": "com.amazon.Amazon-Chime",
   "homepage": "https://chime.aws/",
+  "homebrew_cask": "amazon-chime",
   "fileName": "AmazonChime-5.23.22533.dmg",
   "sha": "6db57a44e3db098f46f4ecfb5aa04e0a6e5e8f5fabd609a6fa15d3d89081f234",
   "changelog": "https://docs.aws.amazon.com/chime/latest/ag/desktop-app.html#desktop-app-changelog",

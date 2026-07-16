@@ -6,6 +6,7 @@
   "vendor_url": "https://files2.freedownloadmanager.org/6/latest/fdm.dmg",
   "bundleId": "org.freedownloadmanager.fdm6",
   "homepage": "https://www.freedownloadmanager.org/",
+  "homebrew_cask": "free-download-manager",
   "fileName": "fdm.dmg",
   "sha": "11cc8447b39b781b90f564ce2907c40ce01834a1ea59c1d7d62f4e0eb97b873d",
   "category": "Utilities",

@@ -12,5 +12,6 @@
   "changelog": "https://jumpshare.com/release-notes",
   "previous_version": "3.5.1",
   "category": "Productivity",
-  "publisher": "Jumpshare, Inc."
+  "publisher": "Jumpshare, Inc.",
+  "homebrew_cask": "jumpshare"
 }

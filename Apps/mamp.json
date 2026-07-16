@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.mamp.info/MAMP-PRO/macOS/MAMP-PRO/MAMP-MAMP-PRO-7.4-Apple-chip.pkg",
   "bundleId": "de.appsolute.installer.(mamp|mampacticon|mampendinstall|mamppro).pkg",
   "homepage": "https://www.mamp.info/",
+  "homebrew_cask": "mamp",
   "fileName": "MAMP-MAMP-PRO-7.4-Apple-chip.pkg",
   "type": "pkg",
   "sha": "ffbd16a23f5054d0bc6dba3647fb4014e6311562a0179ea1a6edb92a44fe06a7",

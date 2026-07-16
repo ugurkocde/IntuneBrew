@@ -6,6 +6,7 @@
   "vendor_url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Windows_App_11.3.5_installer.pkg",
   "bundleId": "com.microsoft.rdc.macos",
   "homepage": "https://aka.ms/WindowsApp",
+  "homebrew_cask": "windows-app",
   "fileName": "Windows_App_11.3.7_installer.pkg",
   "sha": "58730d430561292786599d7c9c136a766c28c03a90cd74429b2ea266e7693a90",
   "changelog": "https://learn.microsoft.com/en-us/windows-app/whats-new?tabs=macos",

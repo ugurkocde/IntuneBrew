@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/IntelliScape/caffeine/releases/download/1.1.4/Caffeine.dmg",
   "bundleId": "net.domzilla.caffeine",
   "homepage": "https://www.caffeine-app.net/",
+  "homebrew_cask": "domzilla-caffeine",
   "fileName": "Caffeine.dmg",
   "sha": "1ad34c3299a0c866873c4feb432c3e11186375adb6f43c5f481ae9d46d06d723",
   "type": "app",

@@ -12,5 +12,6 @@
   "changelog": "https://www.postman.com/release-notes/postman-app/",
   "previous_version": "12.19.3",
   "category": "Developer Tools",
-  "publisher": "Postman, Inc."
+  "publisher": "Postman, Inc.",
+  "homebrew_cask": "postman"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/MarkEdit-app/MarkEdit/releases/download/v1.31.1/MarkEdit-1.31.1.dmg",
   "bundleId": "app.cyan.markedit",
   "homepage": "https://github.com/MarkEdit-app/MarkEdit",
+  "homebrew_cask": "markedit",
   "fileName": "MarkEdit-1.33.1.dmg",
   "sha": "e915b8c4b8d624a3e2258a9531c3a2d2a65f0829c2d62e6db13d306ea3984467",
   "category": "Productivity",

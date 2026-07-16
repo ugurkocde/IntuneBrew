@@ -10,5 +10,8 @@
   "sha": "2360bc716dbe49bc95c2f11ce4c1cdd1ad50f6adc5af7896a9fead229a0d6bb3",
   "category": "Productivity",
   "publisher": "Hovancik",
-  "previous_version": "1.21.0"
+  "previous_version": "1.21.0",
+  "homebrew_cask": "stretchly",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://sf16-sg.larksuitecdn.com/obj/lark-version-sg/1395b7ea/Lark-darwin_arm64-7.65.9-signed.dmg",
   "bundleId": "com.electron.lark.helper",
   "homepage": "https://www.larksuite.com/",
+  "homebrew_cask": "lark",
   "fileName": "Lark-darwin_arm64-7.71.13-signed.dmg",
   "sha": "72b4a6ff48ed858e453c6bd05b6ddd4d4802b95f3c9bca6c1e1cfb8d79b09420",
   "category": "Productivity",

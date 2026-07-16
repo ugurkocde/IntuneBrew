@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/MonitorControl/MonitorControl/releases/download/v4.3.3/MonitorControl.4.3.3.dmg",
   "bundleId": "app.monitorcontrol.MonitorControl",
   "homepage": "https://github.com/MonitorControl/MonitorControl",
+  "homebrew_cask": "monitorcontrol",
   "fileName": "MonitorControl.4.3.3.dmg",
   "sha": "9b2c7769da14dc5618aece8b1514a25edc12b286ae8e343f3d880017f5ee9368",
   "category": "Utilities",

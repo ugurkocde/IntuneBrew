@@ -10,5 +10,8 @@
   "sha": "815222856b39a60af60fa07b75d478ce5f3c6a037a76bab989f7f2f7fbbaba06",
   "category": "Utilities",
   "publisher": "ZipZapMac",
-  "previous_version": "2.5"
+  "previous_version": "2.5",
+  "homebrew_cask": "go2shell",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: unmaintained"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://e3.boxcdn.net/desktop/releases/mac/BoxDrive-2.51.230.pkg",
   "bundleId": "com.box.desktop",
   "homepage": "https://www.box.com/drive",
+  "homebrew_cask": "box-drive",
   "fileName": "BoxDrive-2.52.312.pkg",
   "type": "pkg",
   "sha": "395b7e97827be38ceb2d0d4cf2a0073701c5d7ad84cc9355f727160c8cad04bf",

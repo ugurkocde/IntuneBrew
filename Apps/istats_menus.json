@@ -11,5 +11,6 @@
   "sha": "dbe79b9e559fe4c9affb2a738843c53bca18fddddbe586200f850f8cdb3701b7",
   "category": "Utilities",
   "publisher": "Bjango",
-  "previous_version": "7.30"
+  "previous_version": "7.30",
+  "homebrew_cask": "istat-menus"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://edgedl.me.gvt1.com/android/studio/install/2025.3.3.7/android-studio-panda3-patch1-mac_arm.dmg",
   "bundleId": "com.google.android.studio",
   "homepage": "https://developer.android.com/studio/",
+  "homebrew_cask": "android-studio",
   "fileName": "android-studio-quail2-mac_arm.dmg",
   "sha": "76206134aab3bbb096666a994f97b67ac8fa688a35c1e2c5d137a306909b3cd5",
   "changelog": "https://developer.android.com/studio/releases",

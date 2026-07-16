@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.eviware.com/soapuios/5.9.1/SoapUI-arm64-5.9.1.dmg",
   "bundleId": "com.smartbear.soapui",
   "homepage": "https://www.soapui.org/",
+  "homebrew_cask": "soapui",
   "fileName": "SoapUI-arm64-5.9.1.dmg",
   "sha": "8fd400d40bebfa0260d2f7a8ccead22742a08b6c0b33ef321def7b2f19022969",
   "category": "Developer Tools",

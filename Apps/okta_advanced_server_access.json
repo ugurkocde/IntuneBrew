@@ -6,6 +6,7 @@
   "vendor_url": "https://dist.scaleft.com/repos/macos/stable/all/macos-client/v1.103.2/ScaleFT-1.103.2.pkg",
   "bundleId": "com.scaleft.ScaleFT",
   "homepage": "https://help.okta.com/asa/en-us/Content/Topics/Adv_Server_Access/docs/sft-osx.htm",
+  "homebrew_cask": "okta-advanced-server-access",
   "fileName": "okta_advanced_server_access_1.108.0.pkg",
   "type": "pkg_in_pkg",
   "sha": "44f11bf04d924adcd259bae82c18924374b254cc3441774a0bb2cd4317be2cc9",

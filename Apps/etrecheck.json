@@ -11,5 +11,6 @@
   "sha": "b5b8f52f9eb56d5ce50e81f1c535e7c0be471cf5899090b9684cabbb51a0dd7d",
   "category": "Utilities",
   "publisher": "EtreCheck",
-  "previous_version": "6.8.14"
+  "previous_version": "6.8.14",
+  "homebrew_cask": "etrecheckpro"
 }

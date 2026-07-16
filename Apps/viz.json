@@ -11,5 +11,6 @@
   "sha": "54becbd3e970b726e08905dd84e3870aa5efffc166cd7aa1e67deac3cb92ec30",
   "previous_version": "2.3.3",
   "category": "Utilities",
-  "publisher": "Itsalin"
+  "publisher": "Itsalin",
+  "homebrew_cask": "viz"
 }

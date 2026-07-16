@@ -6,6 +6,7 @@
   "vendor_url": "https://devutils.com/archives/DevUtils-1.17.0.dmg",
   "bundleId": "tonyapp.devutils",
   "homepage": "https://devutils.com/",
+  "homebrew_cask": "devutils",
   "fileName": "DevUtils-1.17.0.dmg",
   "sha": "2e14de0f2b5f6c3a4611b808d05a3ae1408d3c1c0caa9b1dd7d887c9f33d717e",
   "changelog": "https://devutils.com/changelog",

@@ -6,6 +6,7 @@
   "vendor_url": "https://app.ringcentral.com/download/RingCentral-arm64.pkg",
   "bundleId": "com.ringcentral.glip",
   "homepage": "https://www.ringcentral.com/download.html",
+  "homebrew_cask": "ringcentral",
   "fileName": "RingCentral-arm64.pkg",
   "type": "pkg",
   "sha": "03f62c67f083057635f777e3dc14abba77e01cc47bc761c6c900304668dfb887",

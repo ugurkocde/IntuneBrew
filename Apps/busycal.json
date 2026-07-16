@@ -21,5 +21,6 @@
     "installed_version": "2025.2.1"
   },
   "category": "Productivity",
-  "publisher": "BusyMac"
+  "publisher": "BusyMac",
+  "homebrew_cask": "busycal"
 }

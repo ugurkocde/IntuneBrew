@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.6.5/Beekeeper-Studio-5.6.5-arm64.dmg",
   "bundleId": "io.beekeeperstudio.desktop",
   "homepage": "https://www.beekeeperstudio.io/",
+  "homebrew_cask": "beekeeper-studio",
   "fileName": "Beekeeper-Studio-5.9.2-arm64.dmg",
   "sha": "b737b2f7782847e5cf073cc148edbe18356316ecf10c82f49d2145f8c4046cc8",
   "category": "Developer Tools",

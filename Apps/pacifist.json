@@ -6,6 +6,7 @@
   "vendor_url": "https://www.charlessoft.com/pacifist_download/Pacifist_4.1.4.dmg",
   "bundleId": "com.charlessoft.pacifist",
   "homepage": "https://www.charlessoft.com/",
+  "homebrew_cask": "pacifist",
   "fileName": "Pacifist_4.1.4.dmg",
   "sha": "d76e51f10a98460809c7f5711e7f44742a7cc7ed7372d7f1f4c14a8e41c249ea",
   "category": "Utilities",

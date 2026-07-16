@@ -6,6 +6,7 @@
   "vendor_url": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20248.4.3576.arm64.dmg",
   "bundleId": "com.getdropbox.dropbox",
   "homepage": "https://www.dropbox.com/",
+  "homebrew_cask": "dropbox",
   "fileName": "Dropbox 260.4.2926.arm64.dmg",
   "sha": "03b5507c71436f3a88657f70dc926059b76b8aa57495690e1fad70105f0f9b75",
   "changelog": "https://www.dropbox.com/release_notes",

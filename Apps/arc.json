@@ -21,5 +21,6 @@
     "installed_version": "1.95.0"
   },
   "category": "Browsers",
-  "publisher": "The Browser Company, LLC"
+  "publisher": "The Browser Company, LLC",
+  "homebrew_cask": "arc"
 }

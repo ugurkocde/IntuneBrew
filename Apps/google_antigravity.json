@@ -11,5 +11,6 @@
   "sha": "5c9c1822d6343a40b9de6b405f9f718d7bd99510544fda4134bd75398120ce93",
   "category": "Developer Tools",
   "publisher": "Google LLC",
-  "previous_version": "2.3.0"
+  "previous_version": "2.3.0",
+  "homebrew_cask": "antigravity"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://duetdownload.com/Mac/3_x/duet-dd-3-20-3-0.dmg",
   "bundleId": "com.kairos.duetMac",
   "homepage": "https://www.duetdisplay.com/",
+  "homebrew_cask": "duet",
   "fileName": "duet-dd-3-20-3-0.dmg",
   "sha": "2edcc20b4238f1490579595956c1e18dfd441d0e6abbb69c9cba788640e80ab9",
   "category": "Utilities",

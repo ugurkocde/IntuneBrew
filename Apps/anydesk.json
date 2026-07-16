@@ -6,6 +6,7 @@
   "vendor_url": "https://download.anydesk.com/anydesk.dmg",
   "bundleId": "com.philandro.anydesk",
   "homepage": "https://anydesk.com/",
+  "homebrew_cask": "anydesk",
   "fileName": "anydesk.dmg",
   "sha": "e810298bc5d5f13f938788ce7a342a7cdd12cff105ec734752d5c2f4ee5e8022",
   "changelog": "https://anydesk.com/en/changelog/mac-os",

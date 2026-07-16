@@ -6,6 +6,7 @@
   "vendor_url": "https://www.titanium-software.fr/download/26/CalHash.dmg",
   "bundleId": "com.titanium.CalHash",
   "homepage": "https://www.titanium-software.fr/en/calhash.html",
+  "homebrew_cask": "calhash",
   "fileName": "CalHash.dmg",
   "sha": "f2734aa20a997f2f6e8be46f2853a0a652e9d352b4f108ba69f130a7d82e344e",
   "category": "Utilities",

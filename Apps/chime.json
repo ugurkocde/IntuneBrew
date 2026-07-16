@@ -11,5 +11,6 @@
   "sha": "3ddc9cd807a0012fb38c90a95b09a4996ea591e60bbc32733ac7b98212f7355b",
   "category": "Developer Tools",
   "publisher": "Chime HQ",
-  "previous_version": "2.2.5"
+  "previous_version": "2.2.5",
+  "homebrew_cask": "chime"
 }

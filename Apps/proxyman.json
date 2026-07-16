@@ -6,6 +6,7 @@
   "vendor_url": "https://download.proxyman.com/60800/Proxyman_6.8.0.dmg",
   "bundleId": "com.proxyman.NSProxy",
   "homepage": "https://proxyman.com/",
+  "homebrew_cask": "proxyman",
   "fileName": "Proxyman_6.12.0.dmg",
   "sha": "9e79bbdde99bcee53d43545e333440f5283ee2bfedfa359a8665500a9f910c22",
   "category": "Developer Tools",

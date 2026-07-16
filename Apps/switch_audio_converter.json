@@ -11,5 +11,6 @@
   "category": "Utilities",
   "publisher": "NCH Software",
   "previous_version": "14.08",
-  "sha": "e58d35346567b36bd350f685804dcf97a81d9935d00d651c6c310881017527fe"
+  "sha": "e58d35346567b36bd350f685804dcf97a81d9935d00d651c6c310881017527fe",
+  "homebrew_cask": "switch"
 }

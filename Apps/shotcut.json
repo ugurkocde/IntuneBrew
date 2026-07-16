@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/mltframework/shotcut/releases/download/v26.2.26/shotcut-macos-26.2.26.dmg",
   "bundleId": "com.meltytech.Shotcut",
   "homepage": "https://www.shotcut.org/",
+  "homebrew_cask": "shotcut",
   "fileName": "shotcut-macos-26.6.25.dmg",
   "sha": "630dcb251915f0ceaf9344b5fd4213cfda162ccef2ae00215bdf4de79d3e5c69",
   "category": "Media",

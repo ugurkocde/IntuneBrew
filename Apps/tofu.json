@@ -6,6 +6,7 @@
   "vendor_url": "https://amarsagoo.info/tofu/Tofu.dmg",
   "bundleId": "com.asagoo.tofu",
   "homepage": "https://amarsagoo.info/tofu/",
+  "homebrew_cask": "tofu",
   "fileName": "Tofu.dmg",
   "category": "Media",
   "publisher": "Amar Sagoo",

@@ -6,6 +6,7 @@
   "vendor_url": "https://d3l6g06uqih57x.cloudfront.net/Captomac/webstore/Capto.dmg",
   "bundleId": "com.globaldelight.Capto",
   "homepage": "https://www.globaldelight.com/capto/",
+  "homebrew_cask": "capto",
   "fileName": "Capto.dmg",
   "sha": "4b5f7c4cead5ddbfd4a28f7e9f0a954f941a52fe974af08495b15076a58e9d90",
   "category": "Media",

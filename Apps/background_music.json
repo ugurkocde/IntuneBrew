@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/kyleneideck/BackgroundMusic/releases/download/v0.4.3/BackgroundMusic-0.4.3.pkg",
   "bundleId": "com.bearisdriving.BGM.App",
   "homepage": "https://github.com/kyleneideck/BackgroundMusic",
+  "homebrew_cask": "background-music",
   "fileName": "BackgroundMusic-0.5.0.pkg",
   "type": "pkg",
   "sha": "c7742b48ac2e9ea955fea66e5c13bb56be5f1487e0b12bad93820984bccb69ef",

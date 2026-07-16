@@ -6,6 +6,7 @@
   "vendor_url": "https://www.synaptics.com/sites/default/files/exe_files/2026-04/DisplayLink%20Manager%20Graphics%20Connectivity16.0-EXE.pkg",
   "bundleId": "com.displaylink.DisplayLinkUserAgent",
   "homepage": "https://www.synaptics.com/products/displaylink-graphics",
+  "homebrew_cask": "displaylink",
   "fileName": "DisplayLink Manager Graphics Connectivity16.1-EXE.pkg",
   "type": "pkg",
   "sha": "bf680330dc3887bf75ed4cb1dfa02d84e4ffc857bd7094061b0b62c9a4d7a18f",

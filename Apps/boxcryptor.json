@@ -23,5 +23,6 @@
   "publisher": "Boxcryptor GmbH",
   "previous_version": "3.13.680",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: discontinued"
+  "deprecation_reason": "disabled in Homebrew: discontinued",
+  "homebrew_cask": "boxcryptor"
 }

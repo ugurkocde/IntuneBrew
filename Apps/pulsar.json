@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/pulsar-edit/pulsar/releases/download/v1.131.3/Silicon.Mac.Pulsar-1.131.3-arm64.dmg",
   "bundleId": "dev.pulsar-edit.pulsar",
   "homepage": "https://pulsar-edit.dev/",
+  "homebrew_cask": "pulsar",
   "fileName": "Silicon.Mac.Pulsar-1.132.1-arm64.dmg",
   "sha": "a8e89b56872b40a1f23dadd547c13a74463b0271cf2ac9fb44306c4342756ce6",
   "category": "Developer Tools",

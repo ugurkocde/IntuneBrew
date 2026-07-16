@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/4ian/GDevelop/releases/download/v5.6.266/GDevelop-5-5.6.266-universal.dmg",
   "bundleId": "com.gdevelop",
   "homepage": "https://gdevelop.io/",
+  "homebrew_cask": "gdevelop",
   "fileName": "GDevelop-5-5.6.273-universal.dmg",
   "sha": "f3aa271bb6a96278db5e2719073ca6dcce2de09116ab70c3cd39f6febc4b68fa",
   "category": "Developer Tools",

@@ -12,5 +12,6 @@
   "changelog": "https://macos.telegram.org/changelog",
   "previous_version": "12.9",
   "category": "Communication",
-  "publisher": "Telegram Messenger LLP"
+  "publisher": "Telegram Messenger LLP",
+  "homebrew_cask": "telegram"
 }

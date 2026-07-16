@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/meetfranz/franz/releases/download/v5.11.0/franz-5.11.0-arm64.dmg",
   "bundleId": "com.meetfranz.franz",
   "homepage": "https://meetfranz.com/",
+  "homebrew_cask": "franz",
   "fileName": "Franz-arm64.dmg",
   "sha": "c45445ba7ceb531eba17851d0dabffad5d6af310367c3e8edbb80cd519c94788",
   "category": "Communication",

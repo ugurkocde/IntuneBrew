@@ -11,5 +11,6 @@
   "sha": "7839b31f2f73b3638112368be75512a67642634704fea6154eb1ee54582279dc",
   "category": "Developer Tools",
   "publisher": "Peter Borg Apps",
-  "previous_version": "14.4.9"
+  "previous_version": "14.4.9",
+  "homebrew_cask": "smultron"
 }

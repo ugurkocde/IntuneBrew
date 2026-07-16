@@ -6,6 +6,7 @@
   "vendor_url": "https://existential.audio/downloads/BlackHole64ch-0.6.1.pkg",
   "bundleId": "audio.existential.BlackHole64ch",
   "homepage": "https://existential.audio/blackhole/",
+  "homebrew_cask": "blackhole-64ch",
   "fileName": "BlackHole64ch-0.7.1.pkg",
   "type": "pkg",
   "category": "Utilities",

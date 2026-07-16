@@ -11,5 +11,6 @@
   "sha": "34de842bd3ae79379a93b93c12932cec7541fca4abd440ffc09e890469d8d966",
   "category": "Media",
   "publisher": "Plex, Inc.",
-  "previous_version": "1.71.1.346"
+  "previous_version": "1.71.1.346",
+  "homebrew_cask": "plex-htpc"
 }

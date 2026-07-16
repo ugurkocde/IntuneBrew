@@ -22,5 +22,6 @@
     "installed_version": "125.4.8"
   },
   "category": "Design",
-  "publisher": "Figma, Inc."
+  "publisher": "Figma, Inc.",
+  "homebrew_cask": "figma"
 }

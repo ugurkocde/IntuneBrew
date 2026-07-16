@@ -11,5 +11,6 @@
   "sha": "b9703eae62b9e739a260eddaae36a271addf633a5aa0de51e4152a4664cfdedd",
   "previous_version": "2.1.854976",
   "category": "Utilities",
-  "publisher": "Logitech International S.A."
+  "publisher": "Logitech International S.A.",
+  "homebrew_cask": "logi-options+"
 }

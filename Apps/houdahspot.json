@@ -11,5 +11,6 @@
   "sha": "588d1faed0be87f550fdeb2445427396b2650862f7d899e952d577d272557ad1",
   "category": "Utilities",
   "publisher": "Houdah Software",
-  "previous_version": "6.8.2"
+  "previous_version": "6.8.2",
+  "homebrew_cask": "houdahspot"
 }

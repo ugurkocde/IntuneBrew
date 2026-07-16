@@ -6,6 +6,7 @@
   "vendor_url": "https://ardownload2.adobe.com/pub/adobe/reader/mac/AcrobatDC/2600121431/AcroRdrDC_2600121431_MUI.dmg",
   "bundleId": "com.adobe.Acrobat.Pro",
   "homepage": "https://www.adobe.com/acrobat/pdf-reader.html",
+  "homebrew_cask": "adobe-acrobat-pro",
   "fileName": "adobe_acrobat_pro_dc_26.001.21691.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html",

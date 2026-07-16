@@ -6,6 +6,7 @@
   "vendor_url": "https://mirror.ctan.org/systems/mac/mactex/mactex-20260324.pkg",
   "bundleId": "org.tug.mactex.gui2024",
   "homepage": "https://www.tug.org/mactex/",
+  "homebrew_cask": "mactex",
   "fileName": "mactex-20260324.pkg",
   "sha": "e30af0640f51979a95b9f54084456d1e16749b79e12e65bdebd630fb2795ff1e",
   "changelog": "https://www.tug.org/mactex/changelog.html",

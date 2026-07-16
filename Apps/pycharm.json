@@ -6,6 +6,7 @@
   "vendor_url": "https://download.jetbrains.com/python/pycharm-professional-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.pycharm",
   "homepage": "https://www.jetbrains.com/pycharm/",
+  "homebrew_cask": "pycharm",
   "fileName": "pycharm-professional-2026.1.4-aarch64.dmg",
   "sha": "ab14a0a7caf84b42978c20932280221191429f7b8113fd2958b2c0ead77416ad",
   "category": "Developer Tools",

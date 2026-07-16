@@ -11,5 +11,8 @@
   "previous_version": "2.2.1",
   "sha": "f9170df54d751de5d7ffc2aec4b82b9fc97fdc28c7eb37c33f91b4013ee978b5",
   "category": "Utilities",
-  "publisher": "Apptivate"
+  "publisher": "Apptivate",
+  "homebrew_cask": "apptivate",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: no_longer_meets_criteria"
 }

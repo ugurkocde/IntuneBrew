@@ -21,5 +21,6 @@
     "installed_version": "5.12.4"
   },
   "category": "Utilities",
-  "publisher": "Rogue Amoeba"
+  "publisher": "Rogue Amoeba",
+  "homebrew_cask": "airfoil"
 }

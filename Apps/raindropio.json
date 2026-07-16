@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/raindropio/desktop/releases/download/v5.7.6/Raindrop-arm64.dmg",
   "bundleId": "io.raindrop.macapp",
   "homepage": "https://raindrop.io/",
+  "homebrew_cask": "raindropio",
   "fileName": "Raindrop-arm64.dmg",
   "sha": "9982188c9b00c015c34e4cd05d9b3e660f19da75c421515e6bc9073664454a5f",
   "category": "Productivity",

@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.eggerapps.at/postico/postico-9804.dmg",
   "bundleId": "at.eggerapps.Postico",
   "homepage": "https://eggerapps.at/postico2/",
+  "homebrew_cask": "postico",
   "fileName": "postico-9804.dmg",
   "sha": "347fe06cff1be1dca930f34b5b13242b455f8e22bc85cfa6f34f89ae483df11e",
   "category": "Developer Tools",

@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.46-macos-arm64.dmg",
   "bundleId": "com.oracle.workbench.MySQLWorkbench",
   "homepage": "https://www.mysql.com/products/workbench/",
+  "homebrew_cask": "mysqlworkbench",
   "fileName": "mysql-workbench-community-8.0.47-macos-arm64.dmg",
   "sha": "90b177034b3e2c64b822f44920cb11996ec1323f4c49e2fa0224748103fb4844",
   "category": "Developer Tools",

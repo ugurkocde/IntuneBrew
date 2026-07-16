@@ -6,6 +6,7 @@
   "vendor_url": "https://nosql-workbench.s3.amazonaws.com/NoSQL%20Workbench-mac-arm64-3.20.2.dmg",
   "bundleId": "com.dynamodb.workbench",
   "homepage": "https://docs.aws.amazon.com/amazondynamodb/latest/developerguide/workbench.html",
+  "homebrew_cask": "nosql-workbench",
   "fileName": "NoSQL Workbench-mac-arm64-3.20.2.dmg",
   "sha": "53a19e6bcf7f71763d15de89016ad4b5fed0e157c45c33f36e30907073118e21",
   "category": "Developer Tools",

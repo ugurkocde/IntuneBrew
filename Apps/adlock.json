@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.adlock.com/mac/AdLock_Installer.dmg",
   "bundleId": "com.hankuper.adlock.desktop",
   "homepage": "https://adlock.com/",
+  "homebrew_cask": "adlock",
   "fileName": "AdLock_Installer.dmg",
   "sha": "48c3ba813adfa179833e97f6110f32d690fdda47f5eebd741d1daf7fa7b20908",
   "category": "Security",

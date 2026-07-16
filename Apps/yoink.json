@@ -11,5 +11,6 @@
   "sha": "987e5b2eff626bbefae593e1f987af492694115ac636e0cddd1ae8f2df1288f5",
   "category": "Utilities",
   "publisher": "Eternal Storms Software",
-  "previous_version": "3.7.5"
+  "previous_version": "3.7.5",
+  "homebrew_cask": "yoink"
 }

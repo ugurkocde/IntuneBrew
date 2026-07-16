@@ -6,6 +6,7 @@
   "vendor_url": "https://dlcf.reaper.fm/7.x/reaper769_universal.dmg",
   "bundleId": "com.cockos.reaper",
   "homepage": "https://www.reaper.fm/",
+  "homebrew_cask": "reaper",
   "fileName": "reaper777_universal.dmg",
   "sha": "7a16ad199b4a41643cd73f8fe60289afb112574f4f8d2e3a8e44ddb0384fea9e",
   "category": "Media",

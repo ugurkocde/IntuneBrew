@@ -12,5 +12,6 @@
   "changelog": "https://github.com/mitmproxy/mitmproxy/releases",
   "previous_version": "12.2.3",
   "category": "Developer Tools",
-  "publisher": "mitmproxy"
+  "publisher": "mitmproxy",
+  "homebrew_cask": "mitmproxy"
 }

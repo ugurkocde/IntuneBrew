@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.google.com/adwords_editor/Google_AdWords_Editor.dmg",
   "bundleId": "com.google.googleadseditorlauncher",
   "homepage": "https://ads.google.com/home/tools/ads-editor/",
+  "homebrew_cask": "google-ads-editor",
   "fileName": "Google_AdWords_Editor.dmg",
   "sha": "45ac4647819a6664c5b069faa24bf8fefc48cde3b9633463262aa2c2597e5a58",
   "changelog": "https://support.google.com/google-ads/answer/2485631",

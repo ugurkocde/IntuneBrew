@@ -6,6 +6,7 @@
   "vendor_url": "https://www.telestream.net/download-files/screenflow/10-5/ScreenFlow-10.5.2.dmg",
   "bundleId": "net.telestream.screenflow.globallibrary",
   "homepage": "https://www.telestream.net/screenflow/",
+  "homebrew_cask": "screenflow",
   "fileName": "ScreenFlow-10.5.2.dmg",
   "sha": "00bb03b77cffcdee8d1ed12011c2e303bb9117021deee611a402090116d84263",
   "category": "Media",

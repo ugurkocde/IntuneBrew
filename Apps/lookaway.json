@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/mysticalbits/lookaway-releases/releases/download/2.0.1/LookAway.dmg",
   "bundleId": "com.mysticalbits.lookaway",
   "homepage": "https://lookaway.app/",
+  "homebrew_cask": "lookaway",
   "fileName": "LookAway.dmg",
   "sha": "1f6074e330f1aff6f68da531b45ad1db3ca5c73c974a6fd22825d3705e0eed87",
   "changelog": "https://github.com/mysticalbits/lookaway-releases/releases",

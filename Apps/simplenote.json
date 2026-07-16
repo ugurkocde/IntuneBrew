@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/Automattic/simplenote-electron/releases/download/v2.24.0/Simplenote-macOS-2.24.0.dmg",
   "bundleId": "com.automattic.simplenote",
   "homepage": "https://github.com/Automattic/simplenote-electron",
+  "homebrew_cask": "simplenote",
   "fileName": "Simplenote-macOS-2.27.1.dmg",
   "sha": "6ff36e3488ea2fb1e8c4bb20f6646a76c3caeb91b7d90c7d31ec421383e68903",
   "category": "Productivity",

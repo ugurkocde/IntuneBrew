@@ -6,6 +6,7 @@
   "vendor_url": "https://download.zotero.org/client/release/9.0/Zotero-9.0.dmg",
   "bundleId": "org.zotero.zotero",
   "homepage": "https://www.zotero.org/",
+  "homebrew_cask": "zotero",
   "fileName": "Zotero-9.0.6.dmg",
   "sha": "7a9edba6b4a611f4f800ff3f159e67a62b403ceedd56bfdafc063f23e51c8db7",
   "category": "Productivity",

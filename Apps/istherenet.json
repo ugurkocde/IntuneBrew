@@ -6,6 +6,7 @@
   "vendor_url": "https://files.lowtechguys.com/releases/IsThereNet-1.7.1.dmg",
   "bundleId": "com.lowtechguys.IsThereNet",
   "homepage": "https://lowtechguys.com/istherenet/",
+  "homebrew_cask": "istherenet",
   "fileName": "IsThereNet-1.7.1.dmg",
   "sha": "dd2febaa9a8991e252153b4114921746947cb2c5b5a673ec4e285427837ceb4c",
   "category": "Utilities",

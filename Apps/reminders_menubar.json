@@ -11,5 +11,6 @@
   "sha": "251dd20c9e9e5ed0df6644b4e47286cf7095114369e0d5095cd813514f850c1b",
   "category": "Productivity",
   "publisher": "DamascenoRafael",
-  "previous_version": "2.1.1"
+  "previous_version": "2.1.1",
+  "homebrew_cask": "reminders-menubar"
 }

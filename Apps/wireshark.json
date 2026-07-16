@@ -11,5 +11,8 @@
   "changelog": "https://www.wireshark.org/news/",
   "previous_version": "4.4.7",
   "category": "Developer Tools",
-  "publisher": "The Wireshark Foundation"
+  "publisher": "The Wireshark Foundation",
+  "homebrew_cask": "wireshark",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

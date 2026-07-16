@@ -11,5 +11,8 @@
   "previous_version": "2.6.5",
   "sha": "9864c1f131170d1dda1849ff1872b18618954561804cc8fc588019533ee9112f",
   "category": "Design",
-  "publisher": "Serif (Europe) Ltd."
+  "publisher": "Serif (Europe) Ltd.",
+  "homebrew_cask": "affinity-designer",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: discontinued"
 }

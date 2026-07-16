@@ -12,5 +12,6 @@
   "changelog": "https://www.sublimetext.com/docs/4.0/changes.html",
   "previous_version": "4200",
   "category": "Developer Tools",
-  "publisher": "Sublime HQ Pty Ltd"
+  "publisher": "Sublime HQ Pty Ltd",
+  "homebrew_cask": "sublime-text"
 }

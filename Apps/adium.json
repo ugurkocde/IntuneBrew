@@ -6,6 +6,7 @@
   "vendor_url": "https://adiumx.cachefly.net/Adium_1.5.10.4.dmg",
   "bundleId": "com.adiumX.adiumX",
   "homepage": "https://www.adium.im/",
+  "homebrew_cask": "adium",
   "fileName": "Adium_1.5.10.4.dmg",
   "sha": "31fa3fd32b86dd3381b60e0d5aafbc2a9452036f0fb4963bffbc2a6c64a9458b",
   "category": "Communication",

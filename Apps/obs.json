@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn-fastly.obsproject.com/downloads/obs-studio-32.1.1-macos-apple.dmg",
   "bundleId": "com.obsproject.obs-studio",
   "homepage": "https://obsproject.com/",
+  "homebrew_cask": "obs",
   "fileName": "obs-studio-32.1.2-macos-apple.dmg",
   "sha": "2aeb3aaa99544fefd557f10ac6550e73df71540dd57528b2a1e6f39a55ebacfb",
   "changelog": "https://github.com/obsproject/obs-studio/releases",

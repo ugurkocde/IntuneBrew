@@ -6,6 +6,7 @@
   "vendor_url": "https://wassets.insta360.com/common/da87dfa499b745129aa20d51113aab71/Insta360LinkController_2.2.1(build24)_20260202_115048_signed_1770004724733.pkg",
   "bundleId": "com.insta360.webcam",
   "homepage": "https://www.insta360.com/",
+  "homebrew_cask": "insta360-link-controller",
   "fileName": "Insta360LinkController_2.2.4(build14).pkg",
   "type": "pkg",
   "sha": "04a247dce00ac46a14bfd9051e768dd0c5c21d20890f41d0705067ac389438a6",

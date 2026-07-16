@@ -12,5 +12,6 @@
   "changelog": "https://pdfexpert.com/pem3/changelog",
   "previous_version": "3.11.4",
   "category": "Productivity",
-  "publisher": "Readdle Inc."
+  "publisher": "Readdle Inc.",
+  "homebrew_cask": "pdf-expert"
 }

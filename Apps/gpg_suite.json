@@ -6,6 +6,7 @@
   "vendor_url": "https://releases.gpgtools.org/GPG_Suite-2023.3.dmg",
   "bundleId": "org.gpgtools.gpgmail",
   "homepage": "https://gpgtools.org/",
+  "homebrew_cask": "gpg-suite",
   "fileName": "gpg_suite_2023.3.pkg",
   "type": "pkg_in_dmg",
   "sha": "ab1ea62077b62033c4d73c1940f619f890df68ddc4cebea3032b6e841ddc2fea",

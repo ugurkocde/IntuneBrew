@@ -22,5 +22,6 @@
     "installed_version": "5.0.9"
   },
   "category": "Utilities",
-  "publisher": "MacPaw"
+  "publisher": "MacPaw",
+  "homebrew_cask": "cleanmymac"
 }

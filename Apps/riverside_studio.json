@@ -6,6 +6,7 @@
   "vendor_url": "https://assets.riverside.fm/mac-desktop-app/current-release/RiversideStudio.dmg",
   "bundleId": "fm.riverside.studio",
   "homepage": "https://riverside.fm/",
+  "homebrew_cask": "riverside-studio",
   "fileName": "RiversideStudio.dmg",
   "sha": "00f14b330bcc66f4e05f9771f07b1f0e3e8487d17c7a8d2d382e098493955dc1",
   "category": "Media",

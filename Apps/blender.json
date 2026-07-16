@@ -6,6 +6,7 @@
   "vendor_url": "https://download.blender.org/release/Blender5.1/blender-5.1.1-macos-arm64.dmg",
   "bundleId": "org.blenderfoundation.blender",
   "homepage": "https://www.blender.org/",
+  "homebrew_cask": "blender",
   "fileName": "blender-5.2.0-macos-arm64.dmg",
   "sha": "ed4d8390166dec5ea0a2813a03db6221f206ce016442be7f59f41d760972568a",
   "changelog": "https://www.blender.org/download/releases/",

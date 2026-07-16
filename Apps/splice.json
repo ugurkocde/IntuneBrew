@@ -11,5 +11,6 @@
   "sha": "3ba77f5bb40c1f9179f01fd7660f02ff20fd99171982a3086267adcd61a401ab",
   "previous_version": "5.4.11",
   "category": "Media",
-  "publisher": "Splice, Inc."
+  "publisher": "Splice, Inc.",
+  "homebrew_cask": "splice"
 }

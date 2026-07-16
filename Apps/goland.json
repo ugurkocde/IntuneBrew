@@ -6,6 +6,7 @@
   "vendor_url": "https://download.jetbrains.com/go/goland-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.goland",
   "homepage": "https://www.jetbrains.com/go/",
+  "homebrew_cask": "goland",
   "fileName": "goland-2026.1.4-aarch64.dmg",
   "sha": "cbb98491ed33d0cbd0b3e90cb6b9ababb11e02d2546e0a3ab0666b381d0cada3",
   "qa_info": {

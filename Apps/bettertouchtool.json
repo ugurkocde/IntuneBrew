@@ -21,5 +21,6 @@
     "installed_version": "5.396"
   },
   "category": "Utilities",
-  "publisher": "folivora labs GmbH"
+  "publisher": "folivora labs GmbH",
+  "homebrew_cask": "bettertouchtool"
 }

@@ -6,9 +6,10 @@
   "vendor_url": "https://download-installer.cdn.mozilla.net/pub/devedition/releases/150.0b9/mac/en-US/Firefox%20150.0b9.dmg",
   "bundleId": "org.mozilla.firefoxdeveloperedition",
   "homepage": "https://www.mozilla.org/firefox/developer/",
+  "homebrew_cask": "firefox@developer-edition",
   "fileName": "Firefox 153.0b13.dmg",
   "sha": "6d30d4c74a97ed2e0fea2956006a1e0d589a856061291eb8bbde95378cc806fd",
   "category": "Browsers",
   "publisher": "Mozilla Foundation",
-  "previous_version": "153.0b12"
+  "previous_version": "153.0b13"
 }

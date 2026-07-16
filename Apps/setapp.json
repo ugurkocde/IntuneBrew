@@ -11,5 +11,6 @@
   "sha": "e2c656aee3b021f31830fe7ce78251746beb30f3774ea0b47eaad530abddc1c0",
   "category": "Productivity",
   "publisher": "MacPaw",
-  "previous_version": "3.53.11"
+  "previous_version": "3.53.11",
+  "homebrew_cask": "setapp"
 }

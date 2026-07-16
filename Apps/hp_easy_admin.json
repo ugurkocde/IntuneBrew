@@ -12,5 +12,6 @@
   "changelog": "https://support.hp.com/us-en/document/ish_5023611-5023632-16",
   "previous_version": "2.16.0",
   "category": "Utilities",
-  "publisher": "HP Inc."
+  "publisher": "HP Inc.",
+  "homebrew_cask": "hp-easy-admin"
 }

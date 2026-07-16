@@ -11,5 +11,6 @@
   "sha": "1eacfd17fccdc2c141547222c948dd9efef3ceca211a0bed55ab17b111b09d80",
   "category": "Communication",
   "publisher": "Dialpad, Inc.",
-  "previous_version": "2606.1.2"
+  "previous_version": "2606.1.2",
+  "homebrew_cask": "dialpad"
 }

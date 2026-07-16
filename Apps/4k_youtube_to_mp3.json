@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.4kdownload.com/app/4kyoutubetomp3_26.1.0_arm64.dmg",
   "bundleId": "com.openmedia.4kyoutubetomp3",
   "homepage": "https://www.4kdownload.com/products/youtubetomp3/1",
+  "homebrew_cask": "4k-youtube-to-mp3",
   "fileName": "4kyoutubetomp3_26.2.0_arm64.dmg",
   "sha": "97899624241ed522080b255ad95bd6bbdd867ccde4de227850f31710b7232b4a",
   "category": "Media",

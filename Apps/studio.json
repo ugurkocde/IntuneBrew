@@ -6,6 +6,7 @@
   "vendor_url": "https://studio.download.bricklink.info/Studio2.0/Archive/2.26.3_1/Studio+2.0.pkg",
   "bundleId": "com.bricklink.pkg.Studio2.0",
   "homepage": "https://www.bricklink.com/v3/studio/download.page",
+  "homebrew_cask": "bricklink-studio",
   "fileName": "Studio+2.0.pkg",
   "type": "pkg",
   "sha": "e270f66d0f09948ca8d3c2fb48d1b28ba71ef2d089d4195924a52c7eb88c0b78",

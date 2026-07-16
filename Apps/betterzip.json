@@ -21,5 +21,6 @@
     "installed_version": "5.3.4"
   },
   "category": "Utilities",
-  "publisher": "MacItBetter"
+  "publisher": "MacItBetter",
+  "homebrew_cask": "betterzip"
 }

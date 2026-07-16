@@ -6,6 +6,7 @@
   "vendor_url": "https://download.nektony.com/download/funter/Funter.dmg?build=366",
   "bundleId": "com.nektony.Funter-SIII",
   "homepage": "https://nektony.com/products/funter",
+  "homebrew_cask": "funter",
   "fileName": "Funter.dmg",
   "sha": "8f160d43fb50191b4e1bc9fe74a6c979a1be14faff9b8c2ce564506e75e8844f",
   "category": "Utilities",

@@ -21,5 +21,6 @@
     "installed_version": "1.8.92"
   },
   "category": "Productivity",
-  "publisher": "Godspeed"
+  "publisher": "Godspeed",
+  "homebrew_cask": "godspeed"
 }

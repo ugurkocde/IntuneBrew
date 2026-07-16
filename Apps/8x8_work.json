@@ -6,6 +6,7 @@
   "vendor_url": "https://work-desktop-assets.8x8.com/prod-publish/ga/work-arm64-dmg-v8.32.2-10.dmg",
   "bundleId": "com.electron.8x8---virtual-office",
   "homepage": "https://www.8x8.com/products/apps",
+  "homebrew_cask": "8x8-work",
   "fileName": "work-arm64-dmg-v8.35.2-6.dmg",
   "sha": "24be6f8e2b864f4ca7b9acd661e81a4171278d86b8105f8ada0cc3221b28e87b",
   "category": "Communication",

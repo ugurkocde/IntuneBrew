@@ -6,6 +6,7 @@
   "vendor_url": "https://devimages-cdn.apple.com/design/resources/download/Icon-Composer-1.2.dmg",
   "bundleId": "com.apple.IconComposer",
   "homepage": "https://developer.apple.com/icon-composer/",
+  "homebrew_cask": "icon-composer",
   "fileName": "Icon-Composer-1.2.dmg",
   "sha": "dce4d78a615e543832fb2cdca3b28a31355cf21d57b6b4ab96f5b278ed7d5af6",
   "category": "Developer Tools",

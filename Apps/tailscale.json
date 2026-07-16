@@ -12,5 +12,8 @@
   "changelog": "https://tailscale.com/changelog",
   "previous_version": "1.84.1",
   "category": "Security",
-  "publisher": "Tailscale, Inc."
+  "publisher": "Tailscale, Inc.",
+  "homebrew_cask": "tailscale",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

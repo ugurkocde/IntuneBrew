@@ -6,6 +6,7 @@
   "vendor_url": "https://manytricks.com/download/_do_not_hotlink_/butler449.dmg",
   "bundleId": "com.manytricks.Butler",
   "homepage": "https://manytricks.com/butler/",
+  "homebrew_cask": "butler",
   "fileName": "butler449.dmg",
   "sha": "fe01992fa005bc4162f7b38d9d8521b713a48f4e43fc3ebf7e787f570803fab1",
   "category": "Productivity",

@@ -11,5 +11,6 @@
   "sha": "0c67c94ddabb25173cf67d0046705c05237f84454c1c6903175b1d8d87a9a7c8",
   "category": "Productivity",
   "publisher": "Abhishek Banthia",
-  "previous_version": "26.13"
+  "previous_version": "26.13",
+  "homebrew_cask": "clocker"
 }

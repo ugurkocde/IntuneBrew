@@ -6,6 +6,7 @@
   "vendor_url": "https://www.torproject.org/dist/torbrowser/15.0.9/tor-browser-macos-15.0.9.dmg",
   "bundleId": "org.torproject.torbrowser",
   "homepage": "https://www.torproject.org/",
+  "homebrew_cask": "tor-browser",
   "fileName": "tor-browser-macos-15.0.18.dmg",
   "sha": "bf3410e7c39bbf6fa85979bca95964f74063d1bc3f2a765b59065efce5f5dbc4",
   "category": "Browsers",

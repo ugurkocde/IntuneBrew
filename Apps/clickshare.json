@@ -11,5 +11,6 @@
   "sha": "67be3d6c3e986d746fded40d8bf6dc5834169c2890fc575533b45d591479c2a4",
   "category": "Communication",
   "publisher": "Barco NV",
-  "previous_version": "4.50.0"
+  "previous_version": "4.50.0",
+  "homebrew_cask": "clickshare"
 }

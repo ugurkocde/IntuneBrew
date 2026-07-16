@@ -11,5 +11,6 @@
   "sha": "894dadbed7a6cf492ead0d504a9ab6abc419c24d8575f7aad4afd33abfe360e1",
   "category": "Developer Tools",
   "publisher": "MiniSim",
-  "previous_version": "0.10.0"
+  "previous_version": "0.10.0",
+  "homebrew_cask": "minisim"
 }

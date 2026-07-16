@@ -6,6 +6,7 @@
   "vendor_url": "https://desktime.com/storage/updates/electro-builder-auto-updater/stable/DeskTime-6.1.4-arm64.dmg",
   "bundleId": "com.desktime.DeskTime",
   "homepage": "https://desktime.com/",
+  "homebrew_cask": "desktime",
   "fileName": "DeskTime-6.2.1-arm64.dmg",
   "sha": "2ae730a79aa604272875bbf2476c05b6157a1e1803223263d15a58550456dc42",
   "category": "Productivity",

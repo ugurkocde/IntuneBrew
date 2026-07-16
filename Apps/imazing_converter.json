@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.imazing.com/mac/iMazing-Converter/2.0.12.574/iMazing_Converter_2.0.12.574.dmg",
   "bundleId": "com.DigiDNA.iMazingHEICConverterMac",
   "homepage": "https://imazing.com/converter",
+  "homebrew_cask": "imazing-converter",
   "fileName": "iMazing_Converter_2.0.14.586.dmg",
   "sha": "351acae944926f6fcc0888e34c0c1b44765e64ae57223c2440e607ec813f1961",
   "category": "Utilities",

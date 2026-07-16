@@ -11,5 +11,6 @@
   "sha": "333823bda00d85c690b9cef5a0e1669d2c8acf491b58cc75ebf5d5d606c45925",
   "category": "Design",
   "publisher": "Vellum",
-  "previous_version": "4.1.3"
+  "previous_version": "4.1.4",
+  "homebrew_cask": "vellum"
 }

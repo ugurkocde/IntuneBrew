@@ -11,5 +11,6 @@
   "sha": "7b4b757b687d4079397de061165ae57875e75b77422f92acc66aa6723ab67d6e",
   "category": "Utilities",
   "publisher": "NSSurge",
-  "previous_version": "6.6.0"
+  "previous_version": "6.6.0",
+  "homebrew_cask": "surge"
 }

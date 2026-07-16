@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/defold/defold/releases/download/1.12.3/Defold-arm64-macos.dmg",
   "bundleId": "com.defold.editor",
   "homepage": "https://defold.com/",
+  "homebrew_cask": "defold",
   "fileName": "Defold-arm64-macos.dmg",
   "sha": "93482525de859fe237bf185fb97a42ac698f3f3b78ca40bc98759df2df314fe6",
   "category": "Developer Tools",

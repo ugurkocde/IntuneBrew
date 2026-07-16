@@ -11,5 +11,6 @@
   "sha": "83b9173933b1a71635bea06e386761a9acb81aba62071b98c8ad25c45046229c",
   "previous_version": "2026.173",
   "category": "Developer Tools",
-  "publisher": "Hankinsoft Development, Ltd."
+  "publisher": "Hankinsoft Development, Ltd.",
+  "homebrew_cask": "sqlpro-for-mysql"
 }

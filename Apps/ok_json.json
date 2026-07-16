@@ -11,5 +11,6 @@
   "sha": "4e4cfdc910fd8ab95973f9e5d83e0f4f39fbda0e21c148dbe3ce78df188fd86a",
   "category": "Developer Tools",
   "publisher": "OK JSON",
-  "previous_version": "2.10.2"
+  "previous_version": "2.10.2",
+  "homebrew_cask": "ok-json"
 }

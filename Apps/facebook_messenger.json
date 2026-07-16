@@ -21,5 +21,6 @@
   "publisher": "Meta Platforms, Inc.",
   "previous_version": "525.0.0.34.106",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: discontinued"
+  "deprecation_reason": "disabled in Homebrew: discontinued",
+  "homebrew_cask": "messenger"
 }

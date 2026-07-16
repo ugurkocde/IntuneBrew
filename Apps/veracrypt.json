@@ -6,6 +6,7 @@
   "vendor_url": "https://launchpad.net/veracrypt/trunk/1.26.24/+download/VeraCrypt_1.26.24.dmg",
   "bundleId": "com.idrix.pkg.veracrypt",
   "homepage": "https://www.veracrypt.fr/",
+  "homebrew_cask": "veracrypt",
   "fileName": "VeraCrypt_1.26.29.dmg",
   "sha": "a316c2dcb7f42eb3b0fcccbd305ae1c2abc46df6d79e9e5bf0544719d7774ed4",
   "category": "Security",

@@ -6,6 +6,7 @@
   "vendor_url": "https://statics.teams.cdn.office.net/production-osx/26072.605.4546.510/MicrosoftTeams.pkg",
   "bundleId": "com.microsoft.autoupdate2",
   "homepage": "https://www.microsoft.com/en/microsoft-teams/group-chat-software/",
+  "homebrew_cask": "microsoft-teams",
   "fileName": "MicrosoftTeams.pkg",
   "sha": "ea55e7b683cf606f1642597f35441068dd553db1cafa827927c3f7a04e57b980",
   "changelog": "https://learn.microsoft.com/en-us/officeupdates/teams-app-versioning",

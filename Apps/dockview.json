@@ -11,5 +11,6 @@
   "sha": "f884f8d2dd53fa751778db31f4e4664a7b1eb6500bc9f9ec39216bd1a342e276",
   "category": "Utilities",
   "publisher": "Noteify",
-  "previous_version": "1.7.5"
+  "previous_version": "1.7.5",
+  "homebrew_cask": "dockview"
 }

@@ -11,5 +11,8 @@
   "sha": "280fb7f8bd69f512946b1a5acc63a4f4fb66aed464afc2a03a3e4355150cc8ac",
   "category": "Media",
   "publisher": "digiKam Team",
-  "previous_version": "9.1.0"
+  "previous_version": "9.1.0",
+  "homebrew_cask": "digikam",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

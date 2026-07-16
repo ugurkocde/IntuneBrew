@@ -6,6 +6,7 @@
   "vendor_url": "https://dl3.xmind.net/Xmind-for-macOS-26.02.04171-202602092224.dmg",
   "bundleId": "net.xmind.vana.app",
   "homepage": "https://www.xmind.net/",
+  "homebrew_cask": "xmind",
   "fileName": "Xmind-for-macOS-26.04.01341-202607130058.dmg",
   "sha": "221912b1ff67aaf56fbf0d9c91c1d2a061151f20f1e242d0b953e8afcd050934",
   "changelog": "https://xmind.app/desktop/release-notes/",

@@ -6,6 +6,7 @@
   "vendor_url": "https://download.geany.org/geany-2.1_osx_arm64.dmg",
   "bundleId": "org.geany.geany",
   "homepage": "https://www.geany.org/",
+  "homebrew_cask": "geany",
   "fileName": "geany-2.1_osx_arm64.dmg",
   "sha": "13d6f0977c784193ffc1bad05e1a8b77f14f2a71f37ab158c788d33cb6203f80",
   "changelog": "https://www.geany.org/documentation/releasenotes/",

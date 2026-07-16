@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/quicksilver/Quicksilver/releases/download/v2.5.9/Quicksilver.2.5.9.dmg",
   "bundleId": "com.blacktree.Quicksilver",
   "homepage": "https://qsapp.com/",
+  "homebrew_cask": "quicksilver",
   "fileName": "Quicksilver.2.6.0.dmg",
   "sha": "47d4fdfb128109e213ee21c272a100fa0408d389932c47f66b0440b5a0d32c8c",
   "category": "Productivity",

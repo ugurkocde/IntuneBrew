@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/LUMESCA/calibrite-profiler-releases/releases/download/v3.0.4/calibrite-PROFILER-3.0.4.dmg",
   "bundleId": "com.calibrite.profiler",
   "homepage": "https://calibrite.com/calibrite-profiler/",
+  "homebrew_cask": "calibrite-profiler",
   "fileName": "calibrite-PROFILER-3.1.0.dmg",
   "sha": "a35392f3d43562ab03f2e0a20f8befe6d4329fd2c8fb4d27279efda92125db60",
   "category": "Design",

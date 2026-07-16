@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.lemon.garden/retcon/retcon-1.5.3.dmg",
   "bundleId": "garden.lemon.Retcon",
   "homepage": "https://retcon.app/",
+  "homebrew_cask": "retcon",
   "fileName": "retcon-1.6.2.dmg",
   "sha": "bc662d787bbe1101428fcf4241a82c20579ef7ed778f24480609090e89842050",
   "category": "Developer Tools",

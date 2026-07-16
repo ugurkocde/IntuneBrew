@@ -6,9 +6,10 @@
   "vendor_url": "https://roam-electron-deploy.s3.amazonaws.com/Roam+Research-0.0.36-arm64.dmg",
   "bundleId": "com.roam-research.desktop-app",
   "homepage": "https://roamresearch.com/",
+  "homebrew_cask": "roam-research",
   "fileName": "Roam+Research-0.0.38-arm64.dmg",
   "sha": "32b84c73888498760a7bb4504e141ac25e6d7f26d954d62e468642335cde7bf9",
   "category": "Productivity",
   "publisher": "Roam Research, Inc.",
-  "previous_version": "0.0.37"
+  "previous_version": "0.0.38"
 }

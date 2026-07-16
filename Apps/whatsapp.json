@@ -12,5 +12,6 @@
   "changelog": "https://web.whatsapp.com/desktop/windows/release-notes",
   "previous_version": "26.28.15",
   "category": "Communication",
-  "publisher": "WhatsApp LLC"
+  "publisher": "WhatsApp LLC",
+  "homebrew_cask": "whatsapp"
 }

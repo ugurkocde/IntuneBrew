@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/mifi/lossless-cut/releases/download/v3.68.0/LosslessCut-mac-arm64.dmg",
   "bundleId": "no.mifi.losslesscut",
   "homepage": "https://github.com/mifi/lossless-cut",
+  "homebrew_cask": "losslesscut",
   "fileName": "LosslessCut-mac-arm64.dmg",
   "sha": "c7801b482df3be0384acc8171d5a7d16cce70d1588871e344b155aaca39fa58b",
   "category": "Media",

@@ -11,5 +11,6 @@
   "sha": "270c5ef996d532b46759e8fa53b046810fe40325e0ba5768fd123b84f5590950",
   "previous_version": "13.4",
   "category": "Developer Tools",
-  "publisher": "Panic Inc."
+  "publisher": "Panic Inc.",
+  "homebrew_cask": "nova"
 }

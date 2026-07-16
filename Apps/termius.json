@@ -6,6 +6,7 @@
   "vendor_url": "https://autoupdate.termius.com/mac-arm64/Termius.dmg",
   "bundleId": "com.termius-dmg.mac",
   "homepage": "https://www.termius.com/",
+  "homebrew_cask": "termius",
   "fileName": "Termius.dmg",
   "sha": "555e4ddc733e102786f73627c4527de0b2898b0b228897c000d6e708d8ff9df5",
   "changelog": "https://support.termius.com/hc/en-us/articles/4404036107673-Windows-Linux-Mac",

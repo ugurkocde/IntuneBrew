@@ -6,6 +6,7 @@
   "vendor_url": "https://static.remixdesign.app/launchos/LaunchOS-1.5.6-200.dmg",
   "bundleId": "app.remixdesign.LaunchOS",
   "homepage": "https://launchosapp.com/",
+  "homebrew_cask": "launchos",
   "fileName": "LaunchOS-2.2.0-405.dmg",
   "sha": "9b7582816b3c3b0e15073ad669008229b404ec1f0478f4ebdf782a8c5dc66291",
   "category": "Utilities",

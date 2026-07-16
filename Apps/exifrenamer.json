@@ -6,6 +6,7 @@
   "vendor_url": "https://www.qdev.de/downloads/files/ExifRenamer.dmg",
   "bundleId": "de.qdev.ExifRenamer",
   "homepage": "https://www.qdev.de/?location=mac/exifrenamer&forcelang=en",
+  "homebrew_cask": "exifrenamer",
   "fileName": "ExifRenamer.dmg",
   "sha": "b49a84bb74c02065561d55a38002d4db62495dcbead41ac4b528e5ead12ece2c",
   "category": "Utilities",

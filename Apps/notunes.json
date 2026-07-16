@@ -11,5 +11,6 @@
   "sha": "12cf9b88ba4257914471430cd0f41811f475d46084caf00b3a6736065060a791",
   "previous_version": "3.5",
   "category": "Utilities",
-  "publisher": "tombonez"
+  "publisher": "tombonez",
+  "homebrew_cask": "notunes"
 }

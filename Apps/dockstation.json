@@ -10,5 +10,8 @@
   "sha": "3449009fcd2fc8476381d4de62b2086999281ede81f903dfb63715c3383491c7",
   "category": "Developer Tools",
   "publisher": "DockStation",
-  "previous_version": "1.5.1"
+  "previous_version": "1.5.1",
+  "homebrew_cask": "dockstation",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://proton.me/download/drive/macos/2.10.3/ProtonDrive-2.10.3.dmg",
   "bundleId": "ch.protonmail.drive",
   "homepage": "https://proton.me/drive",
+  "homebrew_cask": "proton-drive",
   "fileName": "ProtonDrive-3.0.0.dmg",
   "sha": "b8c2b8b86b9c526c02c327bd27d25b279ce60ed96154f4ed304402f2e911647f",
   "category": "Productivity",

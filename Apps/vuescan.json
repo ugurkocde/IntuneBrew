@@ -6,6 +6,7 @@
   "vendor_url": "https://www.hamrick.com/files/vuea6498.dmg",
   "bundleId": "com.hamrick.vuescan",
   "homepage": "https://www.hamrick.com/",
+  "homebrew_cask": "vuescan",
   "fileName": "vuea6498.dmg",
   "sha": "aef66a312f8a3e8557f9980654f916aba352842ec9cf5e6531d56d771f25a02f",
   "category": "Utilities",

@@ -6,6 +6,7 @@
   "vendor_url": "https://file-assets.apifox.com/download/2.8.24/Apifox-macOS-arm64-2.8.24.dmg",
   "bundleId": "cn.apifox.app",
   "homepage": "https://www.apifox.com/",
+  "homebrew_cask": "apifox",
   "fileName": "Apifox-macOS-arm64-2.8.38.dmg",
   "sha": "016f2f9f473f761a7121eccffa87e87f53141d410f89d96356d20c269f8761ab",
   "qa_info": {

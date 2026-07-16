@@ -6,6 +6,7 @@
   "vendor_url": "https://support.loupedeck.com/hubfs/Knowledge%20Base/LD%20Software%20Downloads/6.2.4/LoupedeckInstaller_6.2.4.228.dmg",
   "bundleId": "com.loupedeck.Loupedeck2",
   "homepage": "https://loupedeck.com/",
+  "homebrew_cask": "loupedeck",
   "fileName": "LoupedeckInstaller_6.3.0.340.dmg",
   "sha": "d90366dfa8f29d9b32faf09d0d5702772dbde382af43bc9c42fdabdf03dc78bc",
   "category": "Design",

@@ -6,6 +6,7 @@
   "vendor_url": "https://download.jetbrains.com/datagrip/datagrip-2026.1.2-aarch64.dmg",
   "bundleId": "com.jetbrains.datagrip",
   "homepage": "https://www.jetbrains.com/datagrip/",
+  "homebrew_cask": "datagrip",
   "fileName": "datagrip-2026.1.4-aarch64.dmg",
   "sha": "02c3d9b78fe4bb9e792674aa9c38c27c0de1bd976749354bb1e78e753617a1ab",
   "changelog": "https://www.jetbrains.com/datagrip/whatsnew/",

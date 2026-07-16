@@ -11,5 +11,6 @@
   "sha": "26d710090745a69b3a4d477b89972851fd45aef7d9d3b28233d9167f6dab5b2b",
   "category": "Productivity",
   "publisher": "Clockify",
-  "previous_version": "2.12.5"
+  "previous_version": "2.12.5",
+  "homebrew_cask": "clockify"
 }

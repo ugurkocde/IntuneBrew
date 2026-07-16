@@ -6,6 +6,7 @@
   "vendor_url": "https://slobs-cdn.streamlabs.com/Streamlabs+Desktop-1.20.7-arm64.dmg",
   "bundleId": "com.streamlabs.slobs",
   "homepage": "https://streamlabs.com/",
+  "homebrew_cask": "streamlabs",
   "fileName": "Streamlabs+Desktop-1.21.6-arm64.dmg",
   "sha": "60be6614cf6e32d065cb04b63e29e54f7af25539604296ca17eb3b7b48d2c569",
   "category": "Media",

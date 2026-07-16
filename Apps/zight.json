@@ -11,5 +11,6 @@
   "sha": "05c159bff8a998c2cda4ffab04adb3233fd818eae4228b978af1e143d6063e4c",
   "category": "Communication",
   "publisher": "Zight, Inc.",
-  "previous_version": "8.7.2"
+  "previous_version": "8.7.2",
+  "homebrew_cask": "zight"
 }

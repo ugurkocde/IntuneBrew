@@ -11,5 +11,6 @@
   "previous_version": "5.33.0.6168",
   "sha": "5c5fc1aff5ac9ec25089d7e5dfe46f308e15de940f5af03c0125729f092357c9",
   "category": "Utilities",
-  "publisher": "Amazon Web Services, Inc."
+  "publisher": "Amazon Web Services, Inc.",
+  "homebrew_cask": "amazon-workspaces"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://binaries.webex.com/webex-macos-apple-silicon/Webex.dmg",
   "bundleId": "Cisco-Systems.Spark",
   "homepage": "https://www.webex.com/",
+  "homebrew_cask": "webex",
   "fileName": "Webex.dmg",
   "sha": "e74ba43f1f6df3aeaca6cb013ebb84a9080e185447c65a768e5bbac9a1f72a6e",
   "category": "Communication",

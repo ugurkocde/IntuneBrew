@@ -6,6 +6,7 @@
   "vendor_url": "https://installer.tresorit.com/Tresorit.dmg",
   "bundleId": "com.tresorit.mac",
   "homepage": "https://tresorit.com/",
+  "homebrew_cask": "tresorit",
   "fileName": "Tresorit.dmg",
   "sha": "2155bc41d5c173a606a7f86186741b5a7d2f2858330ba4749fa7018cfc82f6ff",
   "category": "Productivity",

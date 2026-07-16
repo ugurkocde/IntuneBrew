@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.sourceforge.net/bibdesk/BibDesk/BibDesk-1.9.11/BibDesk-1.9.11.dmg",
   "bundleId": "edu.ucsd.cs.mmccrack.bibdesk",
   "homepage": "https://bibdesk.sourceforge.io/",
+  "homebrew_cask": "bibdesk",
   "fileName": "BibDesk-1.9.12.dmg",
   "sha": "a32e553d5214e2b87d941bb8678b00fb9958c80ac271d9dd7cd7c24cc0e9caa3",
   "category": "Productivity",

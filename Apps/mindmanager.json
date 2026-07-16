@@ -6,6 +6,7 @@
   "vendor_url": "https://download.mindjet.com/MindManager_Mac_25.2.105.dmg",
   "bundleId": "com.mindjet.mindmanager.24",
   "homepage": "https://www.mindjet.com/mindmanager/",
+  "homebrew_cask": "mindjet-mindmanager",
   "fileName": "MindManager_Mac_25.2.105.dmg",
   "sha": "99034e012d02e6ffd0f92a08e7b351afbe1940d9f8d6a858cec4d6f7a9568d47",
   "category": "Productivity",

@@ -11,5 +11,6 @@
   "sha": "6af3841ca4caa425f0950d6a77abbb89c3e500e2526a3e34d454cbca9fbb4ef6",
   "category": "Design",
   "publisher": "Whimsical, Inc.",
-  "previous_version": "0.5.3"
+  "previous_version": "0.5.4",
+  "homebrew_cask": "whimsical"
 }

@@ -21,5 +21,8 @@
   },
   "previous_version": "1.19.5",
   "category": "Developer Tools",
-  "publisher": "Amazon Web Services, Inc."
+  "publisher": "Amazon Web Services, Inc.",
+  "homebrew_cask": "amazon-q",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

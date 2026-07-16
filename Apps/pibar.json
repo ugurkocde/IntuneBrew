@@ -11,5 +11,6 @@
   "sha": "8ca38827f4f88ed03d9b956eb7c9cd4bc51f12fd6a49c3a6038ca935389b2a25",
   "category": "Utilities",
   "publisher": "amiantos",
-  "previous_version": "1.2.1"
+  "previous_version": "1.2.1",
+  "homebrew_cask": "pibar"
 }

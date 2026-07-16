@@ -6,6 +6,7 @@
   "vendor_url": "https://rectangleapp.com/pro/downloads/Rectangle%20Pro%203.75.dmg",
   "bundleId": "com.knollsoft.Hookshot",
   "homepage": "https://rectangleapp.com/pro",
+  "homebrew_cask": "rectangle-pro",
   "fileName": "Rectangle Pro 3.80.dmg",
   "sha": "ef6a88451ed577ccda0ebd338feebcf48b0f64cbe6e99e3d7220b3c47c06e083",
   "category": "Productivity",

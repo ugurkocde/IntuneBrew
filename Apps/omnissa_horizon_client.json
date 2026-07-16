@@ -6,6 +6,7 @@
   "vendor_url": "https://download3.omnissa.com/software/CART26FQ2_MAC_2506/Omnissa-Horizon-Client-2506-8.16.0-16536825094.dmg",
   "bundleId": "com.omnissa.horizonapp",
   "homepage": "https://www.omnissa.com/",
+  "homebrew_cask": "omnissa-horizon-client",
   "fileName": "omnissa_horizon_client_2506-8.16.0-16536825094.pkg",
   "type": "pkg_in_dmg",
   "sha": "2bc83e6ff968bd1a34b68e84bd6506bda9d9ee893dccafa9a20dbdfd9afb8997",

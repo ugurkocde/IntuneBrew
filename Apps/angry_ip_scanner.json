@@ -21,5 +21,8 @@
     "installed_version": "File Doesn't Exist, Will Create: /Applications/Angry IP Scanner.app/Contents/Info.plist"
   },
   "category": "Utilities",
-  "publisher": "Angry IP Software"
+  "publisher": "Angry IP Software",
+  "homebrew_cask": "angry-ip-scanner",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

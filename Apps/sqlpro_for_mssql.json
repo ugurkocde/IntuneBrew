@@ -11,5 +11,6 @@
   "sha": "fed34c335b83f1b80cf7ff516ef32a25e4a12606b0d859702258c7f6a39849d0",
   "previous_version": "2026.173",
   "category": "Developer Tools",
-  "publisher": "The SQLPro Team"
+  "publisher": "The SQLPro Team",
+  "homebrew_cask": "sqlpro-for-mssql"
 }

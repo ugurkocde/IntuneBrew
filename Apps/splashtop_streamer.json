@@ -6,6 +6,7 @@
   "vendor_url": "https://d17kmd0va0f0mp.cloudfront.net/mac/Splashtop_Streamer_Mac_INSTALLER_v3.8.2.0.dmg",
   "bundleId": "com.splashtop.Splashtop-Streamer",
   "homepage": "https://www.splashtop.com/downloads",
+  "homebrew_cask": "splashtop-streamer",
   "fileName": "splashtop_streamer_3.8.4.2.pkg",
   "type": "pkg_in_dmg",
   "sha": "8da4d77e6343b61338f8bdb20e39a613ef21a36da02a03aadda9f9af212843b9",

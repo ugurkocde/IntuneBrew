@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2026.4.0/jitsi-meet.dmg",
   "bundleId": "org.jitsi.jitsi-meet",
   "homepage": "https://github.com/jitsi/jitsi-meet-electron/",
+  "homebrew_cask": "jitsi-meet",
   "fileName": "jitsi-meet.dmg",
   "sha": "b52316e73317effeb324f8a085dace1827ba6fd9440f4d0e32d46aef21589690",
   "category": "Communication",

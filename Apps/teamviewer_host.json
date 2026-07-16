@@ -6,6 +6,7 @@
   "vendor_url": "https://download.teamviewer.com/download/version_15x/TeamViewerHost.dmg",
   "bundleId": "com.teamviewer.TeamViewerHost",
   "homepage": "https://www.teamviewer.com/",
+  "homebrew_cask": "teamviewer-host",
   "fileName": "TeamViewerHost.dmg",
   "sha": "fdb19920cd01c13999f1559b71275873e1f394ca9ce3bc2fb81cace631246c76",
   "category": "Utilities",

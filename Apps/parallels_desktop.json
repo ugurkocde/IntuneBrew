@@ -6,6 +6,7 @@
   "vendor_url": "https://download.parallels.com/desktop/v26/26.3.0-57392/ParallelsDesktop-26.3.0-57392.dmg",
   "bundleId": "com.parallels.desktop.console",
   "homepage": "https://www.parallels.com/products/desktop/",
+  "homebrew_cask": "parallels",
   "fileName": "ParallelsDesktop-26.4.0-57513.dmg",
   "sha": "424ba5fa1661d09ee0f3e0fe4fb44b99faed2b68bdd3ec25b2b7e6e6d35a62e8",
   "changelog": "https://kb.parallels.com/en/129060",

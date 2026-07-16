@@ -6,6 +6,7 @@
   "vendor_url": "https://updates.getpixelsnap.com/v2/PixelSnap-2-2.6.2.dmg",
   "bundleId": "pl.maketheweb.pixelsnap2",
   "homepage": "https://getpixelsnap.com/",
+  "homebrew_cask": "pixelsnap",
   "fileName": "PixelSnap-2-2.6.3.dmg",
   "sha": "6c113c1c50df61ead1763472c209a900e3cdd898fa5fc65bc547032fe536514e",
   "category": "Design",

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/northpolesec/santa/releases/download/2026.3/santa-2026.3.dmg",
   "bundleId": "com.google.santa",
   "homepage": "https://github.com/google/santa",
+  "homebrew_cask": "santa",
   "fileName": "santa-2026.6.dmg",
   "sha": "7a0bc3a01bd9b3f1fdd5e870aff79eeda88f62e55e1b28200b5d1cda5710e081",
   "changelog": "https://github.com/google/santa/releases",

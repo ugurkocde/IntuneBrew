@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.zoom.us/prod/7.0.0.77593/arm64/zoomusInstallerFull.pkg",
   "bundleId": "us.zoom.pkg.videomeeting",
   "homepage": "https://www.zoom.us/",
+  "homebrew_cask": "zoom",
   "fileName": "zoomusInstallerFull.pkg",
   "sha": "1d17b20e4b50f8488733ce7b920bf3403f2d487b52158ac07efd5849354508bc",
   "changelog": "https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061222",

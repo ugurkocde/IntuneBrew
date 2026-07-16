@@ -11,5 +11,6 @@
   "sha": "c28c8c9f1b5db6d85113f01cf7f8c988026a6f53fca1f7ec6098e38b8247d0a9",
   "category": "Utilities",
   "publisher": "TRex",
-  "previous_version": "2.0.0"
+  "previous_version": "2.0.0",
+  "homebrew_cask": "trex"
 }

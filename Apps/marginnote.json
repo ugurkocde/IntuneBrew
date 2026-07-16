@@ -6,6 +6,7 @@
   "vendor_url": "https://dist.marginnote.cn/MarginNote4.3.2.dmg",
   "bundleId": "com.marginnote.marginnote3.mac",
   "homepage": "https://www.marginnote.com/",
+  "homebrew_cask": "marginnote",
   "fileName": "MarginNote4.4.3.dmg",
   "sha": "1b85d7ecda4e63128f17d35640b00c3aff2cc6b69dfc4d0155a95b826b9bd1b9",
   "category": "Productivity",

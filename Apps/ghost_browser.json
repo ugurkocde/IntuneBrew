@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.ghostbrowser.com/GhostBrowser-2.4.1.2_arm64.dmg",
   "bundleId": "com.ghostbrowser.gb1",
   "homepage": "https://ghostbrowser.com/",
+  "homebrew_cask": "ghost-browser",
   "fileName": "GhostBrowser-2.4.1.2_arm64.dmg",
   "sha": "20795a29d22017b475f3696ff5c4dae71ce3329802328f7c9aa8f761bd42030f",
   "category": "Browsers",

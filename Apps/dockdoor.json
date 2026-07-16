@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/ejbills/DockDoor/releases/download/1.34.1/DockDoor.dmg",
   "bundleId": "com.ejbills.DockDoor",
   "homepage": "https://dockdoor.net/",
+  "homebrew_cask": "dockdoor",
   "fileName": "DockDoor.dmg",
   "sha": "3ec497dff5b77976f00a1f607e9e79bf2ec4c97d8d6fcb5358d8c0130e96ab16",
   "qa_info": {

@@ -6,6 +6,7 @@
   "vendor_url": "https://anytype-release.fra1.cdn.digitaloceanspaces.com/Anytype-0.54.11-mac-arm64.dmg",
   "bundleId": "com.anytype.anytype",
   "homepage": "https://anytype.io/",
+  "homebrew_cask": "anytype",
   "fileName": "Anytype-0.55.5-mac-arm64.dmg",
   "sha": "edfea4e1984e0056f15101158de73176081fcceaf3c5429f7c262b620cca869c",
   "category": "Productivity",

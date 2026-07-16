@@ -11,5 +11,6 @@
   "sha": "b9f55c73808495ba6f636d707d08c9e5b2351e7ea17b3198b8597eb26a421406",
   "category": "Productivity",
   "publisher": "gitify-app",
-  "previous_version": "6.20.0"
+  "previous_version": "6.20.0",
+  "homebrew_cask": "gitify"
 }

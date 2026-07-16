@@ -6,6 +6,7 @@
   "vendor_url": "https://hejki.org/download/ssheditor/SSHConfigEditor-112.dmg",
   "bundleId": "org.hejki.osx.sshce",
   "homepage": "https://www.hejki.org/ssheditor/",
+  "homebrew_cask": "ssh-config-editor",
   "fileName": "SSHConfigEditor-112.dmg",
   "sha": "cf73dcea2b6b52185ef4438f3b0911d96b11cc03896a0d60524e18d481932fd7",
   "category": "Developer Tools",

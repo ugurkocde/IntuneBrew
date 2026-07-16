@@ -21,5 +21,6 @@
     "installed_version": "8.1.1"
   },
   "category": "Design",
-  "publisher": "Flying Meat"
+  "publisher": "Flying Meat",
+  "homebrew_cask": "acorn"
 }

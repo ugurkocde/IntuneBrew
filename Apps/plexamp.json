@@ -6,6 +6,7 @@
   "vendor_url": "https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp-4.13.1-arm64.dmg",
   "bundleId": "tv.plex.plexamp",
   "homepage": "https://plexamp.com/",
+  "homebrew_cask": "plexamp",
   "fileName": "Plexamp-4.13.2-arm64.dmg",
   "sha": "96f0b8537797460153d7cebf8944ddcbde4161a845c34fc814ee647b986bab7c",
   "category": "Media",

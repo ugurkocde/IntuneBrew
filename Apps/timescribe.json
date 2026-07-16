@@ -11,5 +11,6 @@
   "sha": "d03ef3f74a0c2dbb41dda872761ad074f9d73e80c93362fd7a0ecfa1bb01db3d",
   "category": "Productivity",
   "publisher": "TimeScribe",
-  "previous_version": "1.15.0"
+  "previous_version": "1.15.0",
+  "homebrew_cask": "timescribe"
 }

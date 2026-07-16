@@ -6,6 +6,7 @@
   "vendor_url": "https://hazeover.com/HazeOver.dmg",
   "bundleId": "com.pointum.hazeover",
   "homepage": "https://hazeover.com/",
+  "homebrew_cask": "hazeover",
   "fileName": "HazeOver.dmg",
   "sha": "ce741e46fecbd2e4c4db1878c1199a165c3ee86091fc6b382f409c98d4be7e87",
   "changelog": "https://hazeover.com/notes.html",

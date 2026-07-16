@@ -11,5 +11,8 @@
   "sha": "b4a948df2bad0fa92a492174e905e3b8d8ea51b993c304f74ecca73069bfb578",
   "category": "Utilities",
   "publisher": "EVKey",
-  "previous_version": "3.3.10"
+  "previous_version": "3.3.10",
+  "homebrew_cask": "evkey",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://release.lightburnsoftware.com/LightBurn/Release/LightBurn-v2.0.05/LightBurn.V2.0.05.dmg",
   "bundleId": "com.LightBurnSoftware.LightBurn",
   "homepage": "https://lightburnsoftware.com/",
+  "homebrew_cask": "lightburn",
   "fileName": "LightBurn.V2.1.03.dmg",
   "sha": "18bf0b4882cd40704593cc60c04e76b0407213826b7c5923e15a602d306a674c",
   "category": "Design",

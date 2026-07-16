@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/oracle/visualvm/releases/download/2.2.1/VisualVM_221.dmg",
   "bundleId": "io.visualvm.VisualVM",
   "homepage": "https://visualvm.github.io/",
+  "homebrew_cask": "visualvm",
   "fileName": "VisualVM_221.dmg",
   "sha": "f9e254e4264ea992d9d6087327949b5fc4c8f10c83c6623693d22450f1b7572d",
   "category": "Developer Tools",

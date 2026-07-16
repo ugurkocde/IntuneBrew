@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/rsyncOSX/RsyncUI/releases/download/v2.9.3/RsyncUI.2.9.3.dmg",
   "bundleId": "no.blogspot.RsyncUI",
   "homepage": "https://github.com/rsyncOSX/RsyncUI",
+  "homebrew_cask": "rsyncui",
   "fileName": "RsyncUI.3.0.2.dmg",
   "sha": "21f40b2c389be6530a53a2a6a2b981f6c76a73d84492cbe2909519f9bdb885b4",
   "category": "Utilities",

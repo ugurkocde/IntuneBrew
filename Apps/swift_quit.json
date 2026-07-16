@@ -11,5 +11,6 @@
   "sha": "963659ca9d83ce5ad3850214b0397cc52eae233ad9746e655bca524efd1dfaea",
   "category": "Utilities",
   "publisher": "onebadidea",
-  "previous_version": "1.5"
+  "previous_version": "1.5",
+  "homebrew_cask": "swift-quit"
 }

@@ -11,5 +11,6 @@
   "sha": "774eb99d812664a5eb224c6808da1647ef6e6e5e6abae2db6012eaa528e15847",
   "previous_version": "2.0.111",
   "category": "Media",
-  "publisher": "RØDE Microphones Pty Ltd"
+  "publisher": "RØDE Microphones Pty Ltd",
+  "homebrew_cask": "rode-central"
 }

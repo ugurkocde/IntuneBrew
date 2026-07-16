@@ -11,5 +11,6 @@
   "publisher": "The Archi Team",
   "previous_version": "5.7.0",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: the developer intentionally makes distribution difficult for package managers"
+  "deprecation_reason": "disabled in Homebrew: the developer intentionally makes distribution difficult for package managers",
+  "homebrew_cask": "archi"
 }

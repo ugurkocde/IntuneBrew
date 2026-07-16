@@ -11,5 +11,6 @@
   "sha": "db554160e666db1456ddc5cbcff7ffee3b39687986138a8c360c8d5c85a57e49",
   "previous_version": "5.4.3",
   "category": "Productivity",
-  "publisher": "Red Sweater Software"
+  "publisher": "Red Sweater Software",
+  "homebrew_cask": "marsedit"
 }

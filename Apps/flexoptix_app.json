@@ -6,6 +6,7 @@
   "vendor_url": "https://flexbox.reconfigure.me/download/electron/mac/arm64/FLEXOPTIX%20App-5.61.0-latest-arm64.dmg",
   "bundleId": "com.nicola.FLEXOPTIX",
   "homepage": "https://www.flexoptix.net/en/flexoptix-app/#",
+  "homebrew_cask": "flexoptix",
   "fileName": "FLEXOPTIX App-5.65.1-latest-arm64.dmg",
   "sha": "415ee5dc9c0e2ea22f885ec587006ba59f4eda0e959668fdf10577270b246dce",
   "category": "Utilities",

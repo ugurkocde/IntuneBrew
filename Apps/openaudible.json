@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/openaudible/openaudible/releases/download/v4.8/OpenAudible_4.8.dmg",
   "bundleId": "org.openaudible.OpenAudible",
   "homepage": "https://openaudible.org/",
+  "homebrew_cask": "openaudible",
   "fileName": "OpenAudible_4.8.7.dmg",
   "sha": "0fd35949777c55b01d50c412b97dd11e90d9719ace79ec3ae221742a1c2c8522",
   "category": "Media",

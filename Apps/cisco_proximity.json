@@ -12,5 +12,6 @@
   "publisher": "Cisco Systems, Inc.",
   "previous_version": "4.0.0",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: discontinued"
+  "deprecation_reason": "disabled in Homebrew: discontinued",
+  "homebrew_cask": "cisco-proximity"
 }

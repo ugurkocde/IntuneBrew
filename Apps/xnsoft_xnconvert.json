@@ -6,6 +6,7 @@
   "vendor_url": "https://download.xnview.com/old_versions/XnConvert/XnConvert-1.106.0-mac.dmg",
   "bundleId": "com.gilles-caulier.xnconvert",
   "homepage": "https://www.xnview.com/en/xnconvert/",
+  "homebrew_cask": "xnconvert",
   "fileName": "XnConvert-1.112.0-mac.dmg",
   "sha": "65162b95a9e8a85c1aa63cea5dd0d4cd2cc94524fc2503ab8855d49cc1ec11e3",
   "category": "Media",

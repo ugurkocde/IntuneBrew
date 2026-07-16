@@ -6,6 +6,7 @@
   "vendor_url": "https://electroncash.org/downloads/4.4.3/mac/Electron-Cash-4.4.3-macosx.dmg",
   "bundleId": "org.electroncash.ElectronCash",
   "homepage": "https://electroncash.org/",
+  "homebrew_cask": "electron-cash",
   "fileName": "Electron-Cash-4.4.5-macosx.dmg",
   "sha": "ea4e48d345b6466df90e4e007f7d564dd4df14857e020b401b8c8668e2a907e6",
   "category": "Utilities",

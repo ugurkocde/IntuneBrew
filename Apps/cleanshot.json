@@ -6,6 +6,7 @@
   "vendor_url": "https://updates.getcleanshot.com/v3/CleanShot-X-4.8.8.dmg",
   "bundleId": "pl.maketheweb.cleanshotx",
   "homepage": "https://getcleanshot.com/",
+  "homebrew_cask": "cleanshot",
   "fileName": "CleanShot-X-4.8.9.dmg",
   "sha": "1e0c50acc3ea41a11864bf11dc722034a58c6b17c455900eb631e3280c60bace",
   "qa_info": {

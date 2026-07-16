@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/XQuartz/XQuartz/releases/download/XQuartz-2.8.5/XQuartz-2.8.5.pkg",
   "bundleId": "org.xquartz.X11",
   "homepage": "https://www.xquartz.org/",
+  "homebrew_cask": "xquartz",
   "fileName": "XQuartz-2.8.6.pkg",
   "type": "pkg",
   "sha": "9ac35a505095bfbd3009c3b4772f0c6421e2f79c4210ab908459270d1c447909",

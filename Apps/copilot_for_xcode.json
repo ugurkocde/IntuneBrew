@@ -21,5 +21,6 @@
     "installed_version": "0.35.8"
   },
   "category": "Developer Tools",
-  "publisher": "intitni"
+  "publisher": "intitni",
+  "homebrew_cask": "copilot-for-xcode"
 }

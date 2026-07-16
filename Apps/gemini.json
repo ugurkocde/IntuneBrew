@@ -21,5 +21,6 @@
     "installed_version": "2.9.11"
   },
   "category": "Utilities",
-  "publisher": "MacPaw"
+  "publisher": "MacPaw",
+  "homebrew_cask": "gemini"
 }

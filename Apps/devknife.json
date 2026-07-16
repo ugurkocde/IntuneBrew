@@ -6,9 +6,10 @@
   "vendor_url": "https://files.solotuna.com/devknife/DevKnife-1.12.1.dmg",
   "bundleId": "com.solotuna.devknife",
   "homepage": "https://devknife.app/",
+  "homebrew_cask": "devknife",
   "fileName": "DevKnife-1.16.0.dmg",
   "sha": "ce91719791e25e191822126840a7638930c76cc528bc7bc6396eb8c030d79c3a",
   "category": "Developer Tools",
   "publisher": "DevKnife",
-  "previous_version": "1.15.4"
+  "previous_version": "1.16.0"
 }

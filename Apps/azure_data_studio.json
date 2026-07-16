@@ -22,5 +22,8 @@
     "installed_version": "1.51.1"
   },
   "category": "Developer Tools",
-  "publisher": "Microsoft Corporation"
+  "publisher": "Microsoft Corporation",
+  "homebrew_cask": "azure-data-studio",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: discontinued"
 }

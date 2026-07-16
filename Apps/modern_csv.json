@@ -6,6 +6,7 @@
   "vendor_url": "https://www.moderncsv.com/release/ModernCSV-Mac-v2.4.1.dmg",
   "bundleId": "net.galliumdigital.Modern-CSV",
   "homepage": "https://www.moderncsv.com/",
+  "homebrew_cask": "modern-csv",
   "fileName": "ModernCSV-Mac-v2.4.3.1.dmg",
   "sha": "68ed7da50dafb4b8dd35ddf63624cdafd6fef6bd68ba3cd963a95d9482bffa95",
   "category": "Productivity",

@@ -6,6 +6,7 @@
   "vendor_url": "https://download.owncloud.com/desktop/ownCloud/stable/6.0.3.18040/mac/ownCloud-6.0.3.18040-arm64.pkg",
   "bundleId": "com.owncCloud.finderPlugin",
   "homepage": "https://owncloud.com/",
+  "homebrew_cask": "owncloud",
   "fileName": "ownCloud-7.1.0.19041-arm64.pkg",
   "type": "pkg",
   "sha": "459d1ab3d18a5fc12cfcfe02cf3069e3b8db3ceea7a41d1173ee37497be02dda",

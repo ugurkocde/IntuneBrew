@@ -11,5 +11,6 @@
   "sha": "e6cc5dc1bb709da5e3010dece137d5e867f7547dabdb4c2972176f691300d9ca",
   "category": "Utilities",
   "publisher": "iOSPIRIT",
-  "previous_version": "2.7.3"
+  "previous_version": "2.7.3",
+  "homebrew_cask": "remote-buddy"
 }

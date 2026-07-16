@@ -6,6 +6,7 @@
   "vendor_url": "https://updates.tryshift.com/v9.6.4/stable/shift-v9.6.4.1231-stable-arm64.dmg",
   "bundleId": "com.rdbrck.shift",
   "homepage": "https://shift.com/",
+  "homebrew_cask": "shift",
   "fileName": "shift-v9.6.7.1268-stable-arm64.dmg",
   "sha": "8a70d9e5a86511d5ac025e582faf18a506f38117c48fa4c337de3f5b3c97a40a",
   "category": "Productivity",

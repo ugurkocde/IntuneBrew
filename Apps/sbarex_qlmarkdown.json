@@ -11,5 +11,6 @@
   "sha": "53577d40bd5528e308a7436a4ea754bb9c591216ece9fb8fa7427d63dc42d3be",
   "category": "Developer Tools",
   "publisher": "sbarex",
-  "previous_version": "1.5.2"
+  "previous_version": "1.5.2",
+  "homebrew_cask": "qlmarkdown"
 }

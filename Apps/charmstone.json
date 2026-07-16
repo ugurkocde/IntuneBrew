@@ -6,6 +6,7 @@
   "vendor_url": "https://charmstone.app/downloads/Charmstone1.44.dmg",
   "bundleId": "com.knollsoft.Charmstone",
   "homepage": "https://charmstone.app/",
+  "homebrew_cask": "charmstone",
   "fileName": "Charmstone1.44.dmg",
   "sha": "04b9a560a395abd4d731c7d4ffa4b091e595d3892cd93289b08f8248f5e459de",
   "category": "Productivity",

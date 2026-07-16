@@ -6,6 +6,7 @@
   "vendor_url": "https://proton.me/download/mail/macos/1.12.1/ProtonMail-desktop.dmg",
   "bundleId": "ch.protonmail.desktop",
   "homepage": "https://proton.me/mail",
+  "homebrew_cask": "proton-mail",
   "fileName": "ProtonMail-desktop.dmg",
   "sha": "0b4511866c5c6d07cff2e31ef2746e531e5fd092f404cbefad615f5c709547dd",
   "category": "Communication",

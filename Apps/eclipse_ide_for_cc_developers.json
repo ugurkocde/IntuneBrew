@@ -6,6 +6,7 @@
   "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-cpp-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
   "bundleId": "epp.package.cpp",
   "homepage": "https://eclipse.org/",
+  "homebrew_cask": "eclipse-cpp",
   "fileName": "Eclipse-IDE-for-C/C++-Developers-4.40.dmg",
   "sha": "443a26d0644855604e7102690d97c96b5dfe7ead93cd1858be3e203ab8a96e18",
   "category": "Developer Tools",

@@ -6,6 +6,7 @@
   "vendor_url": "https://download.studio3t.com/studio-3t/mac-aarch64/2026.7.0/Studio-3T.dmg",
   "bundleId": "com.install4j.0526-4458-1435-8154.837",
   "homepage": "https://studio3t.com/",
+  "homebrew_cask": "studio-3t",
   "fileName": "Studio-3T.dmg",
   "sha": "a88fcf7822cfd0e6cc112edb4d8b42b28a069a23f5705802bc5584df13506e71",
   "category": "Developer Tools",

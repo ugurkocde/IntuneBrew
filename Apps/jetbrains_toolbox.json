@@ -6,10 +6,11 @@
   "vendor_url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.4.2.80952-arm64.dmg",
   "bundleId": "com.jetbrains.toolbox",
   "homepage": "https://www.jetbrains.com/toolbox-app/",
+  "homebrew_cask": "jetbrains-toolbox",
   "fileName": "jetbrains-toolbox-3.6.2.85969-arm64.dmg",
   "sha": "7ac7ff01f4431a8595d392966fb09f241450be472cddb1b9fc895d713b8d64e0",
   "changelog": "https://www.jetbrains.com/toolbox-app/whatsnew/",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
-  "previous_version": "3.6.1"
+  "previous_version": "3.6.2"
 }

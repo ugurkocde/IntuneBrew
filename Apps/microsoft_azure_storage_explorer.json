@@ -12,5 +12,6 @@
   "changelog": "https://learn.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes",
   "previous_version": "1.44.0",
   "category": "Developer Tools",
-  "publisher": "Microsoft Corporation"
+  "publisher": "Microsoft Corporation",
+  "homebrew_cask": "microsoft-azure-storage-explorer"
 }

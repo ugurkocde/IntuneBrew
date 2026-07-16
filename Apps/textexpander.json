@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.textexpander.com/mac/842.9/TextExpander_8.4.2.dmg",
   "bundleId": "com.smileonmymac.textexpander",
   "homepage": "https://textexpander.com/",
+  "homebrew_cask": "textexpander",
   "fileName": "TextExpander_8.4.5.dmg",
   "sha": "75815e541629f25cf1aa35ccf257f9c593d8def1d20335ecb1b3b3e1e9da6ef5",
   "category": "Productivity",

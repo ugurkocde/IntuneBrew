@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/mountain-loop/yaak/releases/download/v2026.3.1/Yaak_2026.3.1_aarch64.dmg",
   "bundleId": "app.yaak.desktop",
   "homepage": "https://yaak.app/",
+  "homebrew_cask": "yaak",
   "fileName": "Yaak_2026.4.0_aarch64.dmg",
   "sha": "d2a05e7782919589564284868312bf040a4cb3d437aa78cb83258985fe65bb02",
   "category": "Developer Tools",

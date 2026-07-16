@@ -11,5 +11,6 @@
   "publisher": "Limitless AI",
   "previous_version": "2.961.1",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: discontinued"
+  "deprecation_reason": "disabled in Homebrew: discontinued",
+  "homebrew_cask": "limitless"
 }

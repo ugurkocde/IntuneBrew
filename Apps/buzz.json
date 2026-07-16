@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/chidiwilliams/buzz/releases/download/v1.2.0/Buzz-1.2.0-mac-arm64.dmg",
   "bundleId": "com.chidiwilliams.buzz",
   "homepage": "https://github.com/chidiwilliams/buzz",
+  "homebrew_cask": "buzz",
   "fileName": "Buzz-1.4.4-mac-ARM64.dmg",
   "sha": "956d74ec3db341e04867a4dd727ed22fa8ec629762e505624dcce85a78eb94f8",
   "category": "Productivity",

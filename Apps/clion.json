@@ -6,6 +6,7 @@
   "vendor_url": "https://download.jetbrains.com/cpp/CLion-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.CLion",
   "homepage": "https://www.jetbrains.com/clion/",
+  "homebrew_cask": "clion",
   "fileName": "CLion-2026.1.4-aarch64.dmg",
   "sha": "8b7b2d5fb77246048e264153303f7f864c3a7b698636a9f5dd2ed7fef27ae914",
   "changelog": "https://www.jetbrains.com/clion/whatsnew/",

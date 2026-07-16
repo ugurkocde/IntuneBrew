@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.okaapps.com/resource/download/OkaUnarchiver.dmg",
   "bundleId": "com.nicola.Oka-Unarchiver",
   "homepage": "https://okaapps.com/product/1441507725",
+  "homebrew_cask": "oka-unarchiver",
   "fileName": "OkaUnarchiver.dmg",
   "sha": "21bbc2cb96988e67b2f70c7e3ab409d3ed8eb62bb322a234296ac13620984cde",
   "category": "Utilities",

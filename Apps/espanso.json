@@ -21,5 +21,6 @@
     "installed_version": "2.2.1"
   },
   "category": "Productivity",
-  "publisher": "Espanso"
+  "publisher": "Espanso",
+  "homebrew_cask": "espanso"
 }

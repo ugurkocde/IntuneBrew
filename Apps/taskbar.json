@@ -11,5 +11,6 @@
   "sha": "4344e9d2948fc709d36af13c46b35d375923396b6aeb236e3eca6ec45ee74e10",
   "previous_version": "1.6.1",
   "category": "Utilities",
-  "publisher": "Lawand"
+  "publisher": "Lawand",
+  "homebrew_cask": "taskbar"
 }

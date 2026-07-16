@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/TuringSoftware/CrystalFetch/releases/download/v2.2.0/CrystalFetch.dmg",
   "bundleId": "llc.turing.CrystalFetch",
   "homepage": "https://github.com/TuringSoftware/CrystalFetch",
+  "homebrew_cask": "crystalfetch",
   "fileName": "CrystalFetch.dmg",
   "sha": "6e428a419bc5deded21da0c9eafae4507fd5b2fb6e2c8cf8b59f97522f01deee",
   "changelog": "https://github.com/TuringSoftware/CrystalFetch/releases",

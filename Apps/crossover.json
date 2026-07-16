@@ -11,5 +11,6 @@
   "previous_version": "26.2.0",
   "sha": "cf31229c8d7af037a0b76586dd56b679b105ac898479f582ca44d1f2c1ba675f",
   "category": "Utilities",
-  "publisher": "CodeWeavers, Inc."
+  "publisher": "CodeWeavers, Inc.",
+  "homebrew_cask": "crossover"
 }

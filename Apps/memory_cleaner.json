@@ -6,6 +6,7 @@
   "vendor_url": "https://download.nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg?build=260",
   "bundleId": "com.nektony.Memory-Cleaner-SII",
   "homepage": "https://nektony.com/memory-cleaner",
+  "homebrew_cask": "memory-cleaner",
   "fileName": "memory-cleaner.dmg",
   "sha": "6b1097ccc760723e1c521a851ceef68b92c4a5647e1e1d5426f644f02d7517f3",
   "category": "Utilities",

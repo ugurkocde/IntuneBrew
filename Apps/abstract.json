@@ -21,5 +21,6 @@
     "installed_version": "98.6.1"
   },
   "category": "Design",
-  "publisher": "Abstract, Inc."
+  "publisher": "Abstract, Inc.",
+  "homebrew_cask": "abstract"
 }

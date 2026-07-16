@@ -11,5 +11,8 @@
   "category": "Utilities",
   "publisher": "Debookee",
   "previous_version": "8.2.0",
-  "sha": "88332fc358d3e4ba918f3761fdf418b13ec3b0542280da4e7d724f671374a105"
+  "sha": "88332fc358d3e4ba918f3761fdf418b13ec3b0542280da4e7d724f671374a105",
+  "homebrew_cask": "debookee",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: no_longer_available"
 }

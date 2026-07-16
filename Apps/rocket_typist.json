@@ -6,6 +6,7 @@
   "vendor_url": "https://witt-software.com/downloads/rockettypist/Rocket%20Typist.dmg",
   "bundleId": "com.witt-software.Rocket-Typist-2",
   "homepage": "https://witt-software.com/rockettypist/",
+  "homebrew_cask": "rocket-typist",
   "fileName": "Rocket Typist.dmg",
   "sha": "3acf0ebd95cd9bde88c032bdff6801c78f1d579c9714b12e6d0c848fbdd18f80",
   "category": "Productivity",

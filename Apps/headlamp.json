@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/headlamp-k8s/headlamp/releases/download/v0.41.0/Headlamp-0.41.0-mac-arm64.dmg",
   "bundleId": "com.kinvolk.headlamp",
   "homepage": "https://headlamp.dev/",
+  "homebrew_cask": "headlamp",
   "fileName": "Headlamp-0.43.0-mac-arm64.dmg",
   "sha": "377fed2953a4594ba9e1aaded9d7dac4736455233a1b87da663c1c728bfc0566",
   "category": "Developer Tools",

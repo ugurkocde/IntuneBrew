@@ -11,5 +11,8 @@
   "sha": "94544baeb466b53dcea7dc206e8c0a051094864abe850f4bfa213bcb0da36773",
   "category": "Other",
   "publisher": "OpenRCT2 Project",
-  "previous_version": "0.5.3"
+  "previous_version": "0.5.3",
+  "homebrew_cask": "openrct2",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

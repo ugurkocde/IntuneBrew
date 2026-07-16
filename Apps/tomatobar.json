@@ -11,5 +11,8 @@
   "sha": "de39ad96642cf2f8a2d7732ac23ba37d2ec1ca98814ee072139869e4d9daed77",
   "category": "Productivity",
   "publisher": "ivoronin",
-  "previous_version": "3.6.1"
+  "previous_version": "3.6.1",
+  "homebrew_cask": "tomatobar",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

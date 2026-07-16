@@ -11,5 +11,6 @@
   "sha": "25adcac800debfab757d3f1a6e6dda4fe085bc0414b49d8662cf6c120fbfaa2c",
   "category": "Utilities",
   "publisher": "Eclectic Light Co.",
-  "previous_version": "1.22"
+  "previous_version": "1.22",
+  "homebrew_cask": "systhist"
 }

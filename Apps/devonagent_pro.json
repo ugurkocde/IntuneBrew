@@ -11,5 +11,6 @@
   "sha": "1f071c6a029004a6db3980286fa997265cdf0426c943630018b96df9e2681466",
   "category": "Productivity",
   "publisher": "DEVONtechnologies",
-  "previous_version": "3.11.11"
+  "previous_version": "3.11.11",
+  "homebrew_cask": "devonagent"
 }

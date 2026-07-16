@@ -11,5 +11,6 @@
   "sha": "94261fe868379960f3952fdbd9cd98ab1a1211313dd84fb17ce450f544640ec3",
   "category": "Design",
   "publisher": "Serif (Europe) Ltd",
-  "previous_version": "3.2.2"
+  "previous_version": "3.2.3",
+  "homebrew_cask": "affinity"
 }

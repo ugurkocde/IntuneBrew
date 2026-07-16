@@ -6,6 +6,7 @@
   "vendor_url": "https://releases.chatwise.app/26.4.5/ChatWise-26.4.5-arm64.dmg",
   "bundleId": "app.chatwise",
   "homepage": "https://chatwise.app/",
+  "homebrew_cask": "chatwise",
   "fileName": "ChatWise-26.7.2-arm64.dmg",
   "sha": "a859dbeb87ad17d90ebf6418dfc36bfd774a7cdc8541018ff9ed07c91ab99ab2",
   "qa_info": {

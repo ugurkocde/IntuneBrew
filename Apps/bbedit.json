@@ -6,6 +6,7 @@
   "vendor_url": "https://s3.amazonaws.com/BBSW-download/BBEdit_15.5.5.dmg",
   "bundleId": "com.barebones.bbedit",
   "homepage": "https://www.barebones.com/products/bbedit/",
+  "homebrew_cask": "bbedit",
   "fileName": "BBEdit_16.0.2.dmg",
   "sha": "f63367b675245752bd6c74072bef840288444d04fc582f9a382112daa61b8874",
   "changelog": "https://www.barebones.com/company/news.html",
@@ -21,5 +22,5 @@
   },
   "category": "Developer Tools",
   "publisher": "Bare Bones Software, Inc.",
-  "previous_version": "16.0.1"
+  "previous_version": "16.0.2"
 }

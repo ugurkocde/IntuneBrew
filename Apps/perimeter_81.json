@@ -6,6 +6,7 @@
   "vendor_url": "https://static.perimeter81.com/agents/mac/Harmony_SASE_12.7.0.8565.pkg",
   "bundleId": "com.safervpn.osx.smb",
   "homepage": "https://perimeter81.com/",
+  "homebrew_cask": "perimeter81",
   "fileName": "Harmony_SASE_12.9.0.11237.pkg",
   "type": "pkg",
   "sha": "168fbead8e354ba6f1b11a273ac4ac4a328f0cbde5bc8e8c0c0eb5ec846ac6cd",

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/SAP/macOS-enterprise-privileges/releases/download/2.5.2/Privileges_2.5.2.pkg",
   "bundleId": "corp.sap.privileges",
   "homepage": "https://github.com/SAP/macOS-enterprise-privileges",
+  "homebrew_cask": "privileges",
   "fileName": "Privileges_2.5.3.pkg",
   "sha": "5948b4b809d05796ff09d4f064a72f049a3f895af194c146d3937f005d34401d",
   "changelog": "https://github.com/SAP/macOS-enterprise-privileges/releases",

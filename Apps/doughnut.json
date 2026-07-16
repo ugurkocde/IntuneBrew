@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/dyerc/Doughnut/releases/download/v2.0.1/Doughnut-2.0.1.dmg",
   "bundleId": "com.cdyer.doughnut",
   "homepage": "https://github.com/dyerc/Doughnut/",
+  "homebrew_cask": "doughnut",
   "fileName": "Doughnut-2.0.1.dmg",
   "sha": "56e2a41087ee9793b667feaa1bef2e96e20cee6ff7cd8bee4a9acbd1ca1e8aeb",
   "changelog": "https://github.com/dyerc/Doughnut/releases",

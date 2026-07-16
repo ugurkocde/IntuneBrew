@@ -6,6 +6,7 @@
   "vendor_url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-1.42.6.dmg",
   "bundleId": "video.fathom.electron",
   "homepage": "https://fathom.video/",
+  "homebrew_cask": "fathom",
   "fileName": "Fathom-darwin-arm64-3.4.0.dmg",
   "sha": "37aa9a28c2b834e4b334f985d28e91abe9116f77ebe61489271c657055839169",
   "qa_info": {
@@ -20,5 +21,5 @@
   },
   "category": "Productivity",
   "publisher": "Fathom, Inc.",
-  "previous_version": "3.3.3"
+  "previous_version": "3.4.0"
 }

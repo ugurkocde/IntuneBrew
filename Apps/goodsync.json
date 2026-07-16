@@ -6,6 +6,7 @@
   "vendor_url": "https://www.goodsync.com/download/goodsync-vsub-mac.dmg",
   "bundleId": "com.sibersystems.goodsyncmac2000",
   "homepage": "https://www.goodsync.com/",
+  "homebrew_cask": "goodsync",
   "fileName": "goodsync-vsub-mac.dmg",
   "sha": "3f78ec0cbbc4c3d62b108b2700fa27c3843e5d4878ade817ffbbca90792dfe65",
   "category": "Productivity",

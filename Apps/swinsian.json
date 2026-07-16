@@ -11,5 +11,6 @@
   "previous_version": "3.0.8",
   "sha": "3cf57d70d5d254b9a06ec071497f8b41551c9f9b3c6cc62ab66fdb6b6f652bc1",
   "category": "Media",
-  "publisher": "Swinsian"
+  "publisher": "Swinsian",
+  "homebrew_cask": "swinsian"
 }

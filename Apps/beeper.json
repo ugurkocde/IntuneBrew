@@ -9,7 +9,7 @@
   "fileName": "beeper_4.2.985.pkg",
   "type": "app",
   "sha": "2c71c1dd36473f8720d16b8424ff0d1cafce16a7ba769faec50539d6d4c919d2",
-  "previous_version": "4.2.972",
+  "previous_version": "4.2.985",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:21:44Z",
     "qa_result": "Installation successful and verified",
@@ -21,5 +21,6 @@
     "installed_version": "4.0.693"
   },
   "category": "Communication",
-  "publisher": "Beeper"
+  "publisher": "Beeper",
+  "homebrew_cask": "beeper"
 }

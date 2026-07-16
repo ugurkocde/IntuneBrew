@@ -6,6 +6,7 @@
   "vendor_url": "https://download.screamingfrog.co.uk/products/seo-spider/ScreamingFrogSEOSpider-23.3-aarch64.dmg",
   "bundleId": "com.screamingfrog.ScreamingFrogSEOSpider",
   "homepage": "https://www.screamingfrog.co.uk/seo-spider/",
+  "homebrew_cask": "screaming-frog-seo-spider",
   "fileName": "ScreamingFrogSEOSpider-24.3-aarch64.dmg",
   "sha": "6487d07b0f16782a85f8080cfbef56a59df8dec9372940f2504b0d95df32fc7b",
   "category": "Utilities",

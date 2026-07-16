@@ -11,5 +11,6 @@
   "sha": "a997643c83e04d90b2f2ae5943383293e3dc68f32a864f13e93e372b64ed5913",
   "category": "Utilities",
   "publisher": "FreeFileSync",
-  "previous_version": "14.10"
+  "previous_version": "14.10",
+  "homebrew_cask": "freefilesync"
 }

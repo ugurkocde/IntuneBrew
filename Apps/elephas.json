@@ -6,6 +6,7 @@
   "vendor_url": "https://assets.elephas.app/Elephas_6009.dmg",
   "bundleId": "com.kamban.elephas",
   "homepage": "https://elephas.app/",
+  "homebrew_cask": "elephas",
   "fileName": "Elephas_11.8002.dmg",
   "sha": "11fb08367487301269c7e4a2197dace2e74260a107139debdbd198d724128f00",
   "changelog": "https://elephas.app/changelog",

@@ -6,6 +6,7 @@
   "vendor_url": "https://novabench.com/files/novabench.dmg",
   "bundleId": "com.novabench.client",
   "homepage": "https://novabench.com/",
+  "homebrew_cask": "novabench",
   "fileName": "novabench.dmg",
   "sha": "aeb20e4fe5e544870adbeed20037c8fc99dc5d970496c7e5270e816347610c08",
   "category": "Utilities",

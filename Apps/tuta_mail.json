@@ -6,6 +6,7 @@
   "vendor_url": "https://app.tuta.com/desktop/tutanota-desktop-mac.dmg",
   "bundleId": "de.tutao.tutanota",
   "homepage": "https://tuta.com/",
+  "homebrew_cask": "tuta-mail",
   "fileName": "tutanota-desktop-mac.dmg",
   "sha": "7f957fccdc20ead233eb2d6c13b31409e794833809339e18dc16bfd3b1818c2c",
   "category": "Communication",

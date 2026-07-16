@@ -11,5 +11,6 @@
   "previous_version": "3.15.1",
   "sha": "f2e82cf9ddf6e31a14f7a639e341bfdaefdbcd8119da0f5f3b751f7367dcb098",
   "category": "Utilities",
-  "publisher": "Soma Zone"
+  "publisher": "Soma Zone",
+  "homebrew_cask": "backuploupe"
 }

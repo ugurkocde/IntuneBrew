@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.cloudflare.steamstatic.com/client/installer/steam.dmg",
   "bundleId": "com.valvesoftware.steam.ipctool",
   "homepage": "https://store.steampowered.com/about/",
+  "homebrew_cask": "steam",
   "fileName": "steam.dmg",
   "sha": "e1abfbaaa7be3e0f48a0e0d4c313233e05861b1d26af32830ddc838be88f2691",
   "changelog": "https://store.steampowered.com/news/",

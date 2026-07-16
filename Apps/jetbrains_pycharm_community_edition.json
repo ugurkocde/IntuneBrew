@@ -11,5 +11,8 @@
   "changelog": "https://www.jetbrains.com/pycharm/whatsnew/",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
-  "previous_version": "2025.2.5"
+  "previous_version": "2025.2.5",
+  "homebrew_cask": "pycharm-ce",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: discontinued"
 }

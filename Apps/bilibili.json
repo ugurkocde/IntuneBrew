@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.hdslb.com/mobile/fixed/pc_electron_mac/bili_mac.dmg",
   "bundleId": "com.bilibili.bilibiliPC",
   "homepage": "https://app.bilibili.com/",
+  "homebrew_cask": "bilibili",
   "fileName": "bili_mac.dmg",
   "sha": "7e5f76bee1c6463921c6a366988456564d5836554f6a67eacc5407a8853e0602",
   "category": "Media",

@@ -21,5 +21,6 @@
     "installed_version": "1.12.2"
   },
   "category": "Security",
-  "publisher": "ts1"
+  "publisher": "ts1",
+  "homebrew_cask": "bleunlock"
 }

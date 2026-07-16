@@ -11,5 +11,6 @@
   "previous_version": "3.2.4",
   "sha": "218140631be441f78bc28a10e20b496d9cf7ab71b0be6fd97c3aa261ffb622ea",
   "category": "Utilities",
-  "publisher": "TripMode"
+  "publisher": "TripMode",
+  "homebrew_cask": "tripmode"
 }

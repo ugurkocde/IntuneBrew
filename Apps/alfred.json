@@ -22,5 +22,6 @@
     "installed_version": "5.6.2"
   },
   "category": "Productivity",
-  "publisher": "Running with Crayons Ltd."
+  "publisher": "Running with Crayons Ltd.",
+  "homebrew_cask": "alfred"
 }

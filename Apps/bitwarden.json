@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/bitwarden/clients/releases/download/desktop-v2026.3.1/Bitwarden-2026.3.1-universal.dmg",
   "bundleId": "com.bitwarden.desktop",
   "homepage": "https://bitwarden.com/",
+  "homebrew_cask": "bitwarden",
   "fileName": "Bitwarden-2026.6.1-universal.dmg",
   "sha": "4de3349474fd0e4fa0dc5b0510d3855b705b8df743f785585167bdac52edfbc8",
   "changelog": "https://github.com/bitwarden/clients/releases",

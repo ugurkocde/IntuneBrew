@@ -11,5 +11,8 @@
   "sha": "f7d2db904839bf5ceaea1c6ea83d6a7af267c5b710f8f306bffedd323341d216",
   "category": "Browsers",
   "publisher": "The Chromium Authors",
-  "previous_version": "latest"
+  "previous_version": "latest",
+  "homebrew_cask": "chromium",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

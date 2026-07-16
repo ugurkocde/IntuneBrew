@@ -6,6 +6,7 @@
   "vendor_url": "https://www.calmlywriter.com/releases/Calmly%20Writer-2.0.66-arm64.dmg",
   "bundleId": "com.calmlywriter.CalmlyWriter",
   "homepage": "https://calmlywriter.com/",
+  "homebrew_cask": "calmly-writer",
   "fileName": "Calmly Writer-2.0.66-arm64.dmg",
   "sha": "68d4901681e4eb908ed34db32ae529bf93cccf1c52e0313482eaa91132006428",
   "changelog": "https://calmlywriter.com/blog/",

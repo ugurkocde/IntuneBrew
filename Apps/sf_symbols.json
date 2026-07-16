@@ -6,6 +6,7 @@
   "vendor_url": "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-7.dmg",
   "bundleId": "com.apple.pkg.SFSymbols",
   "homepage": "https://developer.apple.com/sf-symbols/",
+  "homebrew_cask": "sf-symbols",
   "fileName": "SF-Symbols-8.dmg",
   "sha": "5869365aef0a2a6b9d273a0d15a23dec98686c60c25c6abc088676e94470b1d0",
   "category": "Developer Tools",

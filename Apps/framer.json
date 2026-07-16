@@ -11,5 +11,6 @@
   "sha": "b1b2f11a9b0406b382cb0ad7a02436816a3eecfa60a6fb42f832d4c7e85a51e4",
   "category": "Design",
   "publisher": "Framer B.V.",
-  "previous_version": "2026.24.3"
+  "previous_version": "2026.24.3",
+  "homebrew_cask": "framer"
 }

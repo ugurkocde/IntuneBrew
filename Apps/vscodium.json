@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/VSCodium/vscodium/releases/download/1.112.01907/VSCodium-darwin-arm64-1.112.01907.zip",
   "bundleId": "com.vscodium",
   "homepage": "https://github.com/VSCodium/vscodium",
+  "homebrew_cask": "vscodium",
   "fileName": "VSCodium-darwin-arm64-1.126.04524.zip",
   "sha": "f21ee52629eb5e39c055daea70118b7a6055c639aecf3dad05e1997a9ad83ac0",
   "changelog": "https://github.com/VSCodium/vscodium/releases",

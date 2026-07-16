@@ -11,5 +11,6 @@
   "previous_version": "8.2.11",
   "sha": "e0524549ef8579da0d5383a2bfbc5f4ae56d1f4d59108a655a57ca6e6af5e554",
   "category": "Utilities",
-  "publisher": "University of California, Berkeley"
+  "publisher": "University of California, Berkeley",
+  "homebrew_cask": "boinc"
 }

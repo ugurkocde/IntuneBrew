@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.npass.app/mac/arm/NordPass.dmg",
   "bundleId": "com.nordsec.nordpass",
   "homepage": "https://nordpass.com/",
+  "homebrew_cask": "nordpass",
   "fileName": "NordPass.dmg",
   "sha": "86154a964f531c832fa5683670118217939fb592f5953f384e54606b12bb8665",
   "category": "Security",

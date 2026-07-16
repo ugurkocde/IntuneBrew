@@ -11,5 +11,6 @@
   "sha": "2b318cf77df93efedb35f25757f9052c210528e4108df84d75b836689eee53c8",
   "previous_version": "0.31",
   "category": "Utilities",
-  "publisher": "Sergii Tatarenkov"
+  "publisher": "Sergii Tatarenkov",
+  "homebrew_cask": "keyclu"
 }

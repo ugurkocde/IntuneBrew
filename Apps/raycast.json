@@ -6,10 +6,11 @@
   "vendor_url": "https://releases.raycast.com/releases/1.104.12/download?build=arm",
   "bundleId": "com.raycast.macos",
   "homepage": "https://raycast.com/",
+  "homebrew_cask": "raycast",
   "fileName": "Raycast-1.104.23.dmg",
   "sha": "fdaa2d6f2719998f0548e2f351299130c7f3c2c37fdafd3ca0d7b88ad798da81",
   "changelog": "https://raycast.com/changelog",
   "category": "Productivity",
   "publisher": "Raycast",
-  "previous_version": "1.104.22"
+  "previous_version": "1.104.23"
 }

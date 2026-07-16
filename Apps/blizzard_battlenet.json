@@ -21,5 +21,6 @@
     "bundle_id_status": "mismatch"
   },
   "category": "Other",
-  "publisher": "Blizzard Entertainment, Inc."
+  "publisher": "Blizzard Entertainment, Inc.",
+  "homebrew_cask": "battle-net"
 }

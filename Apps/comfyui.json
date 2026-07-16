@@ -11,5 +11,8 @@
   "sha": "241560fda975d2a3f561957ab35342b1cd5ec7cab275e6b0d099eadbc3dee5bf",
   "category": "Media",
   "publisher": "ComfyUI",
-  "previous_version": "0.9.4"
+  "previous_version": "0.9.4",
+  "homebrew_cask": "comfyui",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

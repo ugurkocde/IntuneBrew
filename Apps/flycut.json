@@ -21,5 +21,6 @@
     "installed_version": "1.9.6"
   },
   "category": "Developer Tools",
-  "publisher": "TermiT"
+  "publisher": "TermiT",
+  "homebrew_cask": "flycut"
 }

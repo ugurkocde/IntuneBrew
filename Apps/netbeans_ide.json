@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29-arm64.pkg",
   "bundleId": "org.apache.netbeans",
   "homepage": "https://netbeans.apache.org/",
+  "homebrew_cask": "netbeans",
   "fileName": "Apache-NetBeans-30-zulu-25-arm64.pkg",
   "sha": "d7af84ab960540e8a0769e28b400ceac6cb87bd9d2626487db3a08d0cb52f929",
   "changelog": "https://netbeans.apache.org/download/index.html#release-notes",

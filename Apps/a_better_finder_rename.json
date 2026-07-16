@@ -6,6 +6,7 @@
   "vendor_url": "https://www.publicspace.net/download/ABFRX12.dmg",
   "bundleId": "net.publicspace.abfr12",
   "homepage": "https://www.publicspace.net/ABetterFinderRename/",
+  "homebrew_cask": "a-better-finder-rename",
   "fileName": "ABFRX12.dmg",
   "sha": "1c72dff82b1bea26057bea37b0e0116dbdf0148a896d78c28cc9132cbc5fc05d",
   "qa_info": {

@@ -6,6 +6,7 @@
   "vendor_url": "https://www.expressvpn.works/clients/mac/expressvpn-macos-universal-14.0.1.12858_release.zip",
   "bundleId": "com.expressvpn.ExpressVPN",
   "homepage": "https://www.expressvpn.works/",
+  "homebrew_cask": "expressvpn",
   "fileName": "expressvpn-macos-universal-14.2.0.13656_release.zip",
   "type": "pkg",
   "sha": "17d4f67c581ac4cb184ce3bc9fec51bb16f6da88f6ced87589fed266ae0468d6",

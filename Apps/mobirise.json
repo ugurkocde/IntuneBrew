@@ -6,6 +6,7 @@
   "vendor_url": "https://download.mobirise.com/MobiriseSetup-m.dmg",
   "bundleId": "com.mobirise.Mobirise",
   "homepage": "https://mobirise.com/",
+  "homebrew_cask": "mobirise",
   "fileName": "MobiriseSetup-m.dmg",
   "category": "Design",
   "publisher": "Mobirise",

@@ -21,5 +21,6 @@
     "installed_version": "6.4.0"
   },
   "category": "Utilities",
-  "publisher": "Primate Labs, Inc."
+  "publisher": "Primate Labs, Inc.",
+  "homebrew_cask": "geekbench"
 }

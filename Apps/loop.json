@@ -11,5 +11,6 @@
   "sha": "c3ff974be00dcb59f4a28676c569c2bade5192060c0913d7977dece1afcb33c8",
   "previous_version": "1.4.2",
   "category": "Utilities",
-  "publisher": "MrKai77"
+  "publisher": "MrKai77",
+  "homebrew_cask": "loop"
 }

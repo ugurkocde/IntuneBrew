@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/MuhammedKalkan/OpenLens/releases/download/v6.5.2-366/OpenLens-6.5.2-366-arm64.dmg",
   "bundleId": "app.k8slens.OpenLens",
   "homepage": "https://github.com/MuhammedKalkan/OpenLens/",
+  "homebrew_cask": "openlens",
   "fileName": "OpenLens-6.5.2-366-arm64.dmg",
   "sha": "2c53fa3ccf383e10c8a711ba23a6277800415173ba45ef12597b656c9d818e29",
   "category": "Developer Tools",

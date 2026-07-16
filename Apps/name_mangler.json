@@ -6,6 +6,7 @@
   "vendor_url": "https://manytricks.com/download/_do_not_hotlink_/namemangler393.dmg",
   "bundleId": "com.manytricks.NameMangler",
   "homepage": "https://manytricks.com/namemangler/",
+  "homebrew_cask": "name-mangler",
   "fileName": "namemangler393.dmg",
   "sha": "97cb71af1145bb5b7bec59d7350f3542c554db2569508fb159785ee370578b5f",
   "category": "Utilities",

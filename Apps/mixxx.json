@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.mixxx.org/releases/2.5.6/mixxx-2.5.6-macosarm.dmg",
   "bundleId": "org.mixxx.mixxx",
   "homepage": "https://www.mixxx.org/",
+  "homebrew_cask": "mixxx",
   "fileName": "mixxx-2.5.6-macosarm.dmg",
   "sha": "f724cd8b0048a60963f11694acbffb2438a89c1cf732117559ac3031f8486e27",
   "category": "Media",

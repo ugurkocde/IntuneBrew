@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.tableau.com/esdalt/2026.1.0/TableauReader-2026-1-0-arm64.pkg",
   "bundleId": "com.tableausoftware.tableaureader",
   "homepage": "https://www.tableau.com/products/reader",
+  "homebrew_cask": "tableau-reader",
   "fileName": "TableauReader-2026-2-0-arm64.pkg",
   "type": "pkg",
   "sha": "29c51e60a80a9c74ff98cf1f2477ceaa0f3376af4199e46788e347be80fbfda7",

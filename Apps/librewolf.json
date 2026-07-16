@@ -10,5 +10,8 @@
   "sha": "4a3b7d9a45a2ede23f5790c6fec6e9924b03bcc0aba3201fad240b37d3f47628",
   "category": "Browsers",
   "publisher": "LibreWolf Project",
-  "previous_version": "152.0.5"
+  "previous_version": "152.0.5",
+  "homebrew_cask": "librewolf",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

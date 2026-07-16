@@ -11,5 +11,6 @@
   "sha": "44f41d60ef505131cd5898e544c825f4ad8d4db7f4e9725c91980465752e0511",
   "previous_version": "7.1.1",
   "category": "Productivity",
-  "publisher": "Ranchero Software"
+  "publisher": "Ranchero Software",
+  "homebrew_cask": "netnewswire"
 }

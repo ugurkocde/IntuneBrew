@@ -6,6 +6,7 @@
   "vendor_url": "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup-arm64.dmg",
   "bundleId": "com.unity3d.unityhub",
   "homepage": "https://unity3d.com/get-unity/download",
+  "homebrew_cask": "unity-hub",
   "fileName": "UnityHubSetup-3.19.5-arm64.dmg",
   "sha": "da6773add1f638d8bd00615a47661408d1de4a3c94e7efb5a37f1e7131e63272",
   "category": "Developer Tools",

@@ -22,5 +22,6 @@
     "installed_version": "2025.2.1"
   },
   "category": "Productivity",
-  "publisher": "BusyMac, LLC"
+  "publisher": "BusyMac, LLC",
+  "homebrew_cask": "busycontacts"
 }

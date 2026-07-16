@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.waveterm.dev/releases-w2/Wave-darwin-arm64-0.14.4.dmg",
   "bundleId": "dev.commandline.waveterm",
   "homepage": "https://www.waveterm.dev/",
+  "homebrew_cask": "wave",
   "fileName": "Wave-darwin-arm64-0.14.5.dmg",
   "sha": "8d72ae31bd2c3a81356d55ec86e70ea284a65bde117b52834529da3e2e40ff39",
   "category": "Developer Tools",

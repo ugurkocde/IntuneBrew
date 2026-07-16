@@ -6,6 +6,7 @@
   "vendor_url": "https://dbeaver.io/files/26.0.2/dbeaver-ce-26.0.2-macos-aarch64.dmg",
   "bundleId": "org.jkiss.dbeaver.core.product",
   "homepage": "https://dbeaver.io/",
+  "homebrew_cask": "dbeaver-community",
   "fileName": "dbeaver-ce-26.1.2-macos-aarch64.dmg",
   "sha": "7fc200acea315b133b1f85c4858e0320504fd81513079cd1e9c058fa193fe1be",
   "qa_info": {

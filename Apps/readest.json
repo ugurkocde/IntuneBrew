@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/readest/readest/releases/download/v0.10.6/Readest_0.10.6_universal.dmg",
   "bundleId": "com.bilingify.readest",
   "homepage": "https://readest.com/",
+  "homebrew_cask": "readest",
   "fileName": "Readest_0.11.18_universal.dmg",
   "sha": "227a47a3b54ea3a7e02381c718f141f8d8dcaac4006803851d27a9043e29e3e8",
   "category": "Media",

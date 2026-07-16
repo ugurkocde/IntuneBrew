@@ -6,6 +6,7 @@
   "vendor_url": "https://oneclient.sfx.ms/Mac/Installers/26.040.0301.0001/universal/OneDrive.pkg",
   "bundleId": "com.microsoft.OneDrive",
   "homepage": "https://www.microsoft.com/en-us/microsoft-365/onedrive/online-cloud-storage",
+  "homebrew_cask": "onedrive",
   "fileName": "OneDrive.pkg",
   "sha": "f2fceb86f97304d57ae1b5cb2e02b3a1addedc6c68e0bc95e8b67e362b95992f",
   "changelog": "https://support.microsoft.com/en-us/office/onedrive-release-notes-845dcf18-f921-435e-bf28-4e24b95e5fc0",

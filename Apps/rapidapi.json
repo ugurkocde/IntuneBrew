@@ -11,5 +11,6 @@
   "sha": "dd8172419dfcea20716036ae30009f52ec89e4be72e67c3a9b28b21be7a5eecc",
   "category": "Developer Tools",
   "publisher": "Panic",
-  "previous_version": "4.5.5"
+  "previous_version": "4.5.5",
+  "homebrew_cask": "rapidapi"
 }

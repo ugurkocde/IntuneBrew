@@ -6,10 +6,11 @@
   "vendor_url": "https://zed.dev/api/releases/stable/0.231.2/Zed-aarch64.dmg",
   "bundleId": "dev.zed.Zed",
   "homepage": "https://zed.dev/",
+  "homebrew_cask": "zed",
   "fileName": "Zed-aarch64.dmg",
   "sha": "0a4957f81595056a80088a2f9f52e9d16e8d0e94bc0cc0f2b2d1d40615bb8d35",
   "changelog": "https://zed.dev/releases/stable",
   "category": "Developer Tools",
   "publisher": "Zed",
-  "previous_version": "1.10.3"
+  "previous_version": "1.11.3"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/Caldis/Mos/releases/download/4.0.2/Mos.Versions.4.0.2-20260308.2.zip",
   "bundleId": "com.caldis.Mos",
   "homepage": "https://mos.caldis.me/",
+  "homebrew_cask": "mos",
   "fileName": "Mos.Versions.4.2.1-20260531.1.zip",
   "sha": "2ea69e96f092e44dada93a55bda1cddab3329c527bbd5f06e00dfb78e953960a",
   "category": "Utilities",

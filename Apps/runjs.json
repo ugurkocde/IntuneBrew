@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/lukehaas/RunJS/releases/download/v3.2.2/RunJS-3.2.2-universal.dmg",
   "bundleId": "me.lukehaas.runjs",
   "homepage": "https://runjs.app/",
+  "homebrew_cask": "runjs",
   "fileName": "RunJS-4.1.0-universal.dmg",
   "sha": "e39fc1b495121f5808ddc50b570d933f1493066ecb247bfe94ce81a9ff082a07",
   "category": "Developer Tools",

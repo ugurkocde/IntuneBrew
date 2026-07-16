@@ -10,5 +10,8 @@
   "type": "pkg",
   "previous_version": "1.0.3",
   "category": "Productivity",
-  "publisher": "The Rime Project"
+  "publisher": "The Rime Project",
+  "homebrew_cask": "squirrel",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

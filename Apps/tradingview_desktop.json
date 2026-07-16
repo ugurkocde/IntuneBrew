@@ -6,6 +6,7 @@
   "vendor_url": "https://tvd-packages.tradingview.com/stable/2.14.0/darwin/TradingView.dmg",
   "bundleId": "com.tradingview.tradingviewapp.desktop",
   "homepage": "https://www.tradingview.com/desktop/",
+  "homebrew_cask": "tradingview",
   "fileName": "TradingView.dmg",
   "sha": "e3b0cf508cc7fbe5b7853b6b766184f3443b28b7f4c60069acd77934fd1a02bb",
   "category": "Productivity",

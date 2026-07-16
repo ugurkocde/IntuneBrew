@@ -6,6 +6,7 @@
   "vendor_url": "https://f005.backblazeb2.com/file/clipbook/ClipBook-1.34.0-arm64.dmg",
   "bundleId": "com.ikryanov.clipbook",
   "homepage": "https://clipbook.app/",
+  "homebrew_cask": "clipbook",
   "fileName": "ClipBook-1.36.0-arm64.dmg",
   "sha": "d59ad57f6bb8026c026e392e996eea2523fc8c9180e6a48be4981a491764d767",
   "category": "Productivity",

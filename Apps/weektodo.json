@@ -10,5 +10,8 @@
   "sha": "2b5c2c9ed1a16776fc7121d37f4ccaf40a82d94987906f5b2e75e428acda2167",
   "category": "Productivity",
   "publisher": "WeekToDo",
-  "previous_version": "2.2.0"
+  "previous_version": "2.2.0",
+  "homebrew_cask": "weektodo",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

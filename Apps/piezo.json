@@ -11,5 +11,6 @@
   "sha": "6d430891a93cb2dabeff76e6dc38a86a79e1b4243ef5c34e967e49c8bb137519",
   "category": "Media",
   "publisher": "Rogue Amoeba",
-  "previous_version": "1.9.9"
+  "previous_version": "1.9.9",
+  "homebrew_cask": "piezo"
 }

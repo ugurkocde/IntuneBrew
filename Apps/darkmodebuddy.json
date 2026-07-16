@@ -6,6 +6,7 @@
   "vendor_url": "https://su.darkmodebuddy.app/DarkModeBuddy_v1.2-13.dmg",
   "bundleId": "com.nicola.DarkModeBuddy",
   "homepage": "https://github.com/insidegui/DarkModeBuddy",
+  "homebrew_cask": "darkmodebuddy",
   "fileName": "DarkModeBuddy_v1.2-13.dmg",
   "sha": "4a13606fa242795353b8256b0a9d0c6a1624aea47b1d2f67b55b2e52ef1a6d77",
   "category": "Utilities",

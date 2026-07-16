@@ -6,6 +6,7 @@
   "vendor_url": "https://manytricks.com/download/_do_not_hotlink_/moom442.dmg",
   "bundleId": "com.manytricks.Moom",
   "homepage": "https://manytricks.com/moom/",
+  "homebrew_cask": "moom",
   "fileName": "moom451.dmg",
   "sha": "79ffff597f140b4126afad309c923742588ef1580050b83e24c6ebcbe44247d9",
   "category": "Utilities",

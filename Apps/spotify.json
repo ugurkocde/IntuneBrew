@@ -6,6 +6,7 @@
   "vendor_url": "https://download.scdn.co/SpotifyARM64.dmg",
   "bundleId": "com.spotify.client",
   "homepage": "https://www.spotify.com/",
+  "homebrew_cask": "spotify",
   "fileName": "SpotifyARM64.dmg",
   "sha": "7ae3f0ef753d5564a9a4716807c24f1ea385168a7ae92d1b6dc55a26dcbf818e",
   "changelog": "https://support.spotify.com/us/article/desktop-app-changelog/",

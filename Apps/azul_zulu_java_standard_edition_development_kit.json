@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.azul.com/zulu/bin/zulu26.28.59-ca-jdk26.0.0-macosx_aarch64.dmg",
   "bundleId": "com.azulsystems.zulu.23",
   "homepage": "https://www.azul.com/downloads/",
+  "homebrew_cask": "zulu",
   "fileName": "zulu26.30.11-ca-jdk26.0.1-macosx_aarch64.dmg",
   "sha": "c19bfb839d0de68d76fb5435c4f6684349b1e80e3bf7242e51834d43b7533c5d",
   "changelog": "https://docs.azul.com/core/release-notes",

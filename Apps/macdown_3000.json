@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/schuyler/macdown3000/releases/download/v3000.0.6/MacDown-3000.0.6.dmg",
   "bundleId": null,
   "homepage": "https://macdown.app/",
+  "homebrew_cask": "macdown-3000",
   "fileName": "MacDown-3000.0.7.dmg",
   "sha": "62296564c5b6604b93c9a11849ec441572beadbde2e499dcc232e1d1ddd01c98",
   "category": "Developer Tools",

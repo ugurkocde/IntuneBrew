@@ -11,5 +11,6 @@
   "sha": "f032fd5cae0c233f3b979326b8f8b7439b5145cde5bb096be0ecc1828553ab33",
   "previous_version": "1.1.1",
   "category": "Developer Tools",
-  "publisher": "Hammerspoon"
+  "publisher": "Hammerspoon",
+  "homebrew_cask": "hammerspoon"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.fellow.app/desktop/5.3.1/darwin/stable/universal/Fellow-5.3.1-universal.dmg",
   "bundleId": "com.electron.fellow",
   "homepage": "https://fellow.app/",
+  "homebrew_cask": "fellow",
   "fileName": "Fellow-5.4.5-universal.dmg",
   "sha": "2ee86ad75ca1936763218942c7dc9710e550eb3b4ca196c8a9156ae06771d425",
   "category": "Productivity",

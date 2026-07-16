@@ -6,6 +6,7 @@
   "vendor_url": "https://klokki.com/download/Klokki.dmg",
   "bundleId": "com.klokki-launcher",
   "homepage": "https://klokki.com/",
+  "homebrew_cask": "klokki",
   "fileName": "Klokki.dmg",
   "sha": "da70cfbca4248d40c84269a5230ab5d5045c71a7dfca8f445418c5a82a5d0032",
   "changelog": "https://klokki.com/changelog",

@@ -22,5 +22,6 @@
     "installed_version": "5.0.2"
   },
   "category": "Utilities",
-  "publisher": "DEVONtechnologies"
+  "publisher": "DEVONtechnologies",
+  "homebrew_cask": "easyfind"
 }

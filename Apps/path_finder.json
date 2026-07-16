@@ -6,6 +6,7 @@
   "vendor_url": "https://get.cocoatech.com/PathFinder.dmg",
   "bundleId": "com.cocoatech.PathFinder",
   "homepage": "https://www.cocoatech.io/",
+  "homebrew_cask": "path-finder",
   "fileName": "PathFinder.dmg",
   "sha": "cbf63826d19d765741db070464d3b471ab5b93b34338432e67dd5cbe147a73e3",
   "category": "Utilities",

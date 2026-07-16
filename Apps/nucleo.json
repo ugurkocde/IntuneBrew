@@ -11,5 +11,6 @@
   "sha": "dcb59fefbce846ecc804864f1fa865ad7cda550c4f983985e8038274d746f531",
   "previous_version": "4.2.0",
   "category": "Design",
-  "publisher": "Nucleo"
+  "publisher": "Nucleo",
+  "homebrew_cask": "nucleo"
 }

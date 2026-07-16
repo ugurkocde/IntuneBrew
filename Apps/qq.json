@@ -6,6 +6,7 @@
   "vendor_url": "https://dldir1v6.qq.com/qqfile/qq/QQNT/Mac/QQ_6.9.91_260319_01.dmg",
   "bundleId": "com.tencent.qq",
   "homepage": "https://im.qq.com/macqq/index.shtml",
+  "homebrew_cask": "qq",
   "fileName": "QQ_6.9.96_260528_01.dmg",
   "sha": "70c8163177cab4be192c1ae31a144ea4230d007b4521d9d945fca2f57b6c2232",
   "category": "Communication",

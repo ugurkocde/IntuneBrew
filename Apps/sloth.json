@@ -11,5 +11,6 @@
   "sha": "311052fca85df0a6dc2e55c49964122d7a5243e5d6d189eb4e4ab50b2f8924dd",
   "category": "Developer Tools",
   "publisher": "Sveinbjorn Thordarson",
-  "previous_version": "3.6"
+  "previous_version": "3.6",
+  "homebrew_cask": "sloth"
 }

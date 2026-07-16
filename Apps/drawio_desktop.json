@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/jgraph/drawio-desktop/releases/download/v29.6.6/draw.io-arm64-29.6.6.dmg",
   "bundleId": "com.jgraph.drawio.desktop",
   "homepage": "https://www.diagrams.net/",
+  "homebrew_cask": "drawio",
   "fileName": "draw.io-arm64-30.3.11.dmg",
   "sha": "fdf6e3297f2388247f56fc8515e04b022a207b7dbe2ab72344d9f25bffe096e5",
   "changelog": "https://github.com/jgraph/drawio-desktop/releases",

@@ -6,6 +6,7 @@
   "vendor_url": "https://desktop.miro.com/platforms/darwin-arm64/Install-Miro.dmg",
   "bundleId": "com.electron.realtimeboard",
   "homepage": "https://miro.com/",
+  "homebrew_cask": "miro",
   "fileName": "Install-Miro.dmg",
   "sha": "47932f93585bf3090944501e70e0b2785e6fb132546d6deccb570be0a35271e0",
   "changelog": "https://help.miro.com/hc/en-us/articles/360017572854-Desktop-app-release-notes",

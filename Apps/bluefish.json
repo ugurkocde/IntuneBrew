@@ -10,5 +10,8 @@
   "sha": "23bd0a0009e9213c535ecb8e1c08832e0bdd356b55c512e269f4c17b57411b06",
   "category": "Developer Tools",
   "publisher": "Bluefish Team",
-  "previous_version": "2.4.1"
+  "previous_version": "2.4.1",
+  "homebrew_cask": "bluefish",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

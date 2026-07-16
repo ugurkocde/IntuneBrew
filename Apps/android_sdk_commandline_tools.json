@@ -11,5 +11,6 @@
   "category": "Developer Tools",
   "publisher": "Google LLC",
   "previous_version": "14742923",
-  "sha": "ed304c5ede3718541e4f978e4ae870a4d853db74af6c16d920588d48523b9dee"
+  "sha": "ed304c5ede3718541e4f978e4ae870a4d853db74af6c16d920588d48523b9dee",
+  "homebrew_cask": "android-commandlinetools"
 }

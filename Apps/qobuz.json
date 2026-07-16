@@ -6,6 +6,7 @@
   "vendor_url": "https://desktop.qobuz.com/releases/darwin/arm64/bigsur/8.1.0-b019/Qobuz.dmg",
   "bundleId": "com.qobuz.QobuzDesktop",
   "homepage": "https://www.qobuz.com/applications",
+  "homebrew_cask": "qobuz",
   "fileName": "Qobuz.dmg",
   "sha": "a33b008770682ac90c1faa2f6b4a0886ca632f6043c5819389ad5bb5de259e19",
   "category": "Media",

@@ -11,5 +11,6 @@
   "sha": "9afa7936f6c438a717944300f89f5e8b2f295d72499754d13ee8ef3d9a2de41c",
   "category": "Utilities",
   "publisher": "DEVONtechnologies",
-  "previous_version": "2.8.3"
+  "previous_version": "2.8.3",
+  "homebrew_cask": "wordservice"
 }

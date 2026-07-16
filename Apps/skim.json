@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.sourceforge.net/skim-app/Skim/Skim-1.7.14/Skim-1.7.14.dmg",
   "bundleId": "net.sourceforge.skim-app.skim",
   "homepage": "https://skim-app.sourceforge.io/",
+  "homebrew_cask": "skim",
   "fileName": "Skim-1.7.15.dmg",
   "sha": "804b2785f7c22e79d75fe9bbd0b2b2663ec1d765eb103fb0cb75fc3864dbeb73",
   "category": "Productivity",

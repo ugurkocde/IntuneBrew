@@ -6,6 +6,7 @@
   "vendor_url": "https://files.certum.eu/software/SimplySignDesktop/OSX/2.10.22-9.4.4.0/SimplySignDesktop-2.10.22-9.4.4_prod.dmg",
   "bundleId": "pl.assecods.pkg.SimplySignDesktop-proCertumSmartSign",
   "homepage": "https://support.certum.eu/en/software/procertum-smartsign/",
+  "homebrew_cask": "simplysign",
   "fileName": "simplysign_desktop_2.10.22-9.4.4.0.pkg",
   "type": "pkg_in_dmg",
   "sha": "0c9f89e8a2cc2a41efceb18d589ac6f06166ab99b264113f18ad50a48d772ada",

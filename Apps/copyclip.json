@@ -21,5 +21,6 @@
     "installed_version": "2.9.99.2"
   },
   "category": "Utilities",
-  "publisher": "FIPLAB Ltd"
+  "publisher": "FIPLAB Ltd",
+  "homebrew_cask": "copyclip"
 }

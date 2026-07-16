@@ -6,6 +6,7 @@
   "vendor_url": "https://download.bome.com/BomeNet1.6.0_macOS.dmg",
   "bundleId": "com.bome.network",
   "homepage": "https://www.bome.com/products/bomenet",
+  "homebrew_cask": "bome-network",
   "fileName": "BomeNet1.6.0_macOS.dmg",
   "sha": "24f99bdf3356bf1218c65b315ca63085d8d41cd21f73a67c374cd73acf02d959",
   "qa_info": {

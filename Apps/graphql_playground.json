@@ -10,5 +10,8 @@
   "sha": "43d54be598ec83dddcaee789e8434c547d0ff1a49ffc2d95fb798996293b7f13",
   "category": "Developer Tools",
   "publisher": "Prisma",
-  "previous_version": "1.8.10"
+  "previous_version": "1.8.10",
+  "homebrew_cask": "graphql-playground",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

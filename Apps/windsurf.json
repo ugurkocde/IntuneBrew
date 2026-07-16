@@ -11,5 +11,8 @@
   "changelog": "https://www.codeium.com/windsurf/changelog",
   "category": "Developer Tools",
   "publisher": "Codeium",
-  "previous_version": "2.3.15"
+  "previous_version": "2.3.15",
+  "homebrew_cask": "windsurf",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

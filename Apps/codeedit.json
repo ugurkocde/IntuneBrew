@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/CodeEditApp/CodeEdit/releases/download/v0.3.6/CodeEdit.dmg",
   "bundleId": "app.codeedit.CodeEdit",
   "homepage": "https://www.codeedit.app/",
+  "homebrew_cask": "codeedit",
   "fileName": "CodeEdit.dmg",
   "sha": "fa5478f80d591c15f08f5e7a93662b5baf33012718768bf0ae800b44ac4eeac9",
   "changelog": "https://github.com/CodeEditApp/CodeEdit/releases",

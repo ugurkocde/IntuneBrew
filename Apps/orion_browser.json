@@ -11,5 +11,6 @@
   "previous_version": "1.1.1",
   "sha": "f756c4cf3ad33ab16317f63c4fa45aaca2de4c8f2030e2100824e282aa425d47",
   "category": "Browsers",
-  "publisher": "Kagi, Inc."
+  "publisher": "Kagi, Inc.",
+  "homebrew_cask": "orion"
 }

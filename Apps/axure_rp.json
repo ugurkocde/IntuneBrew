@@ -6,6 +6,7 @@
   "vendor_url": "https://axure.cachefly.net/versions/11-0/AxureRP-Setup-4137.dmg",
   "bundleId": "com.axure.AxureRP",
   "homepage": "https://www.axure.com/",
+  "homebrew_cask": "axure-rp",
   "fileName": "AxureRP-Setup-4137.dmg",
   "sha": "fc9a4b3e46b835bab9f4450a382f8fea0e4e4bd2dd2602886f36da38ff9571b4",
   "category": "Design",

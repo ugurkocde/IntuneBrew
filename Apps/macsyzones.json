@@ -11,5 +11,6 @@
   "sha": "294966cc55af0b920fe904352a6a2a1b06bd3ff46e873dfbbc639c52dd1832cf",
   "category": "Utilities",
   "publisher": "MacsyZones",
-  "previous_version": "3.0.4"
+  "previous_version": "3.0.4",
+  "homebrew_cask": "macsyzones"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/packagesdev/packages/releases/download/v1.2.10/Packages.dmg",
   "bundleId": "fr.whitebox.Packages",
   "homepage": "http://s.sudre.free.fr/Software/Packages/about.html",
+  "homebrew_cask": "packages",
   "fileName": "Packages.dmg",
   "sha": "c7d599842562b18f8dfb6e9f76fc915dde7716a263c967aaf1fe11e17d283ded",
   "category": "Developer Tools",

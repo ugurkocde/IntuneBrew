@@ -6,6 +6,7 @@
   "vendor_url": "https://releases.hashicorp.com/vagrant/2.4.9/vagrant_2.4.9_darwin_arm64.dmg",
   "bundleId": "com.vagrant.vagrant",
   "homepage": "https://www.vagrantup.com/",
+  "homebrew_cask": "vagrant",
   "fileName": "vagrant_2.4.9.pkg",
   "type": "pkg_in_dmg",
   "sha": "d98cb357048154f813d83ee077f87438ac2b26ffbd6db77f5dd6eff2996d6b44",

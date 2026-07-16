@@ -12,5 +12,6 @@
   "changelog": "https://github.com/keybase/client/releases",
   "previous_version": "6.6.3",
   "category": "Security",
-  "publisher": "Keybase, Inc."
+  "publisher": "Keybase, Inc.",
+  "homebrew_cask": "keybase"
 }

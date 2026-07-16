@@ -6,6 +6,7 @@
   "vendor_url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/189.132/Brave-Browser-arm64.dmg",
   "bundleId": "com.brave.Browser",
   "homepage": "https://brave.com/",
+  "homebrew_cask": "brave-browser",
   "fileName": "Brave-Browser-arm64.dmg",
   "sha": "a87ec4d93e4d9867cb59e344c53b873fdef6e00d8ac76dea57243e645c5c9bbc",
   "changelog": "https://brave.com/latest/",
@@ -21,5 +22,5 @@
   },
   "category": "Browsers",
   "publisher": "Brave Software, Inc.",
-  "previous_version": "1.92.139.0"
+  "previous_version": "1.92.140.0"
 }

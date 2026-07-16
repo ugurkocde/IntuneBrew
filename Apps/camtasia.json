@@ -6,6 +6,7 @@
   "vendor_url": "https://download.techsmith.com/camtasiamac/releases/2607/Camtasia.dmg",
   "bundleId": "com.techsmith.camtasia2023",
   "homepage": "https://www.techsmith.com/video-editor.html",
+  "homebrew_cask": "camtasia",
   "fileName": "Camtasia.dmg",
   "sha": "52cb131102b2734f3906ee1e1eb01939a3c1e6bc0ed9b4dbce6530e52e268766",
   "changelog": "https://support.techsmith.com/hc/en-us/articles/115006443267",

@@ -6,6 +6,7 @@
   "vendor_url": "https://capacities-desktop-app.fra1.cdn.digitaloceanspaces.com/Capacities-1.59.1-arm64.dmg",
   "bundleId": "io.capacities.app",
   "homepage": "https://capacities.io/",
+  "homebrew_cask": "capacities",
   "fileName": "Capacities-1.67.3-arm64.dmg",
   "sha": "2e780398a6c64207490bae46f42f7a655239ade80ff561ed31f5a3bda6253047",
   "category": "Productivity",

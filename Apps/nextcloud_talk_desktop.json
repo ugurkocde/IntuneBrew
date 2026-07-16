@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/nextcloud-releases/talk-desktop/releases/download/v2.1.2/Nextcloud.Talk-macos-universal.dmg",
   "bundleId": "com.nextcloud.talk.mac",
   "homepage": "https://nextcloud.com/talk/",
+  "homebrew_cask": "nextcloud-talk",
   "fileName": "Nextcloud.Talk-macos-universal.dmg",
   "sha": "4e42c0c9d91e74b6e2eafa9dde4bd03645675c64877c5eb14c11773c23a027a2",
   "category": "Communication",

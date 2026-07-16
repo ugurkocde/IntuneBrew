@@ -6,6 +6,7 @@
   "vendor_url": "https://download.sweetscape.com/010EditorMacARM64Installer16.0.4.dmg",
   "bundleId": "com.SweetScape.010Editor",
   "homepage": "https://www.sweetscape.com/",
+  "homebrew_cask": "010-editor",
   "fileName": "010EditorMacARM64Installer16.0.4.dmg",
   "sha": "fb253925d3cd4b605f8992ec04bcb20be89e54da9b2166daded7819532035ad9",
   "category": "Developer Tools",

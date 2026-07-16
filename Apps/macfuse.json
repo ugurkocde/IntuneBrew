@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/macfuse/macfuse/releases/download/macfuse-5.1.3/macfuse-5.1.3.dmg",
   "bundleId": "io.macfuse.installer.components.core",
   "homepage": "https://macfuse.github.io/",
+  "homebrew_cask": "macfuse",
   "fileName": "macfuse-5.3.3.dmg",
   "sha": "7a0b7b66c0e7f8932707d1215dc9cf486e178d097ae0a2dcdf17d8530566aa15",
   "changelog": "https://github.com/macfuse/macfuse/releases",

@@ -6,6 +6,7 @@
   "vendor_url": "https://api.k8slens.dev/binaries/Lens-2026.3.251250-latest-arm64.dmg",
   "bundleId": "com.electron.kontena-lens",
   "homepage": "https://k8slens.dev/",
+  "homebrew_cask": "lens",
   "fileName": "Lens-2026.6.260931-latest-arm64.dmg",
   "sha": "b30b9266baf85485e42acc819e838b202cbeb8b6c03a1a295453547aa548abdc",
   "category": "Developer Tools",

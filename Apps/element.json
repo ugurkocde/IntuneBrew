@@ -11,5 +11,6 @@
   "previous_version": "1.12.23",
   "sha": "bdb404036dd3f4cdbd9266a0a04fdebba1872c67997cd30aafdc3c12680a14f8",
   "category": "Communication",
-  "publisher": "Element"
+  "publisher": "Element",
+  "homebrew_cask": "element"
 }

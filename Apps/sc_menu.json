@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/boberito/sc_menu/releases/download/2.1/SC_Menu.dmg",
   "bundleId": "de.sccm.SCMenu",
   "homepage": "https://github.com/boberito/sc_menu",
+  "homebrew_cask": "sc-menu",
   "fileName": "SC_Menu.dmg",
   "sha": "13318245268a2ecc10a64d2fea561807e9f5bef69bf3e66b85ab44ef3157bbda",
   "category": "Security",

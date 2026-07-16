@@ -6,6 +6,7 @@
   "vendor_url": "https://www.expandrive.com/api/download/expandrive?platform=macos",
   "bundleId": "com.expandrive.ExpanDrive",
   "homepage": "https://www.expandrive.com/apps/expandrive/",
+  "homebrew_cask": "expandrive",
   "fileName": "ExpanDrive-2026.06.11.862.dmg",
   "sha": "784542f735b8916b2cc5db13da9e83dab6684a01bb68447ab84e65be75df6c8b",
   "category": "Utilities",

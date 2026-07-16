@@ -11,5 +11,6 @@
   "previous_version": "0.21.0",
   "sha": "7b833c27e5f3ab72876347d0aaa94c9309e0e185982be3be51cbc0f277a7c905",
   "category": "Developer Tools",
-  "publisher": "GitButler"
+  "publisher": "GitButler",
+  "homebrew_cask": "gitbutler"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://www.cardpresso.com/downloads/cardpresso_releases/for_mac_osx/cardPresso1.7.130.dmg",
   "bundleId": "com.cardpresso.cardPresso",
   "homepage": "https://www.cardpresso.com/",
+  "homebrew_cask": "cardpresso",
   "fileName": "cardPresso1.7.140.zip",
   "sha": "5e8ca104db9a16aa8ae446d9e882b74e9feaf07ff29da5418e526ec46e9045d1",
   "category": "Design",

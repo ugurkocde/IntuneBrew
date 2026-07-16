@@ -21,5 +21,6 @@
     "installed_version": "2.0.8"
   },
   "category": "Utilities",
-  "publisher": "Pascal"
+  "publisher": "Pascal",
+  "homebrew_cask": "free-ruler"
 }

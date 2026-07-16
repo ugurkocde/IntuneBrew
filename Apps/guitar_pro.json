@@ -11,5 +11,8 @@
   "sha": "98976878310411b0ade0bf1aca5e222b978d27c1b08d1033570f9ae289862bc1",
   "category": "Media",
   "publisher": "Arobas Music",
-  "previous_version": "8.1.4-43"
+  "previous_version": "8.1.4-43",
+  "homebrew_cask": "guitar-pro",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: has a download url that requires authentication"
 }

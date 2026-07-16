@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/sonic-visualiser/sonic-visualiser/releases/download/sv_v5.2.1/Sonic.Visualiser.5.2.1.dmg",
   "bundleId": "org.sonicvisualiser.SonicVisualiser",
   "homepage": "https://www.sonicvisualiser.org/",
+  "homebrew_cask": "sonic-visualiser",
   "fileName": "Sonic.Visualiser.5.2.1.dmg",
   "sha": "bb86819411875cc8128fc49c3899a3c419fba6ff8286ad145bdec02c4bd212f0",
   "category": "Media",

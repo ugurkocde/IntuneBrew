@@ -11,5 +11,6 @@
   "previous_version": "260713.0.0",
   "sha": "5d7091fa252c15bbe53633c6f5384a72dce8e3f0f931c790c1c8b212e4a82057",
   "category": "Productivity",
-  "publisher": "Amie"
+  "publisher": "Amie",
+  "homebrew_cask": "amie"
 }

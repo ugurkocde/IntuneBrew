@@ -6,6 +6,7 @@
   "vendor_url": "https://dzglif4kkvz04.cloudfront.net/mac-2.0/packages/Production/PureVPN.pkg",
   "bundleId": "com.purevpn.mac.installer",
   "homepage": "https://www.purevpn.com/",
+  "homebrew_cask": "purevpn",
   "fileName": "PureVPN.pkg",
   "type": "pkg",
   "sha": "2b894524f6f9e23b275079dd606680823effeb22e7adf784e9ba8a1d4eabf31b",

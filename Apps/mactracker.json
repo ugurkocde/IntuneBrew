@@ -11,5 +11,6 @@
   "sha": "58fc51ab53318bb8053baaac67488fddaa4893e66a6b318597688e9693bc8d00",
   "category": "Utilities",
   "publisher": "Mactracker",
-  "previous_version": "8.2.3"
+  "previous_version": "8.2.3",
+  "homebrew_cask": "mactracker"
 }

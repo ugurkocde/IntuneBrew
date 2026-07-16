@@ -21,5 +21,6 @@
     "installed_version": "4.2.11"
   },
   "category": "Developer Tools",
-  "publisher": "Atlassian Pty Ltd"
+  "publisher": "Atlassian Pty Ltd",
+  "homebrew_cask": "sourcetree"
 }

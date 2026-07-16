@@ -12,5 +12,6 @@
   "changelog": "https://seense.com/menubarstats/changelog/",
   "previous_version": "3.9",
   "category": "Utilities",
-  "publisher": "Seense"
+  "publisher": "Seense",
+  "homebrew_cask": "menubar-stats"
 }

@@ -21,5 +21,8 @@
   },
   "category": "Developer Tools",
   "publisher": "The Alacritty Project",
-  "previous_version": "0.17.0"
+  "previous_version": "0.17.0",
+  "homebrew_cask": "alacritty",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/actualbudget/actual/releases/download/v26.4.0/Actual-mac-arm64.dmg",
   "bundleId": "com.actualbudget.actual",
   "homepage": "https://actualbudget.org/",
+  "homebrew_cask": "actual",
   "fileName": "Actual-mac-arm64.dmg",
   "sha": "7e9b5be9d3d1a78de6a7a625717dd0e31ccfb2f79f9718f761726925dac44ece",
   "category": "Productivity",

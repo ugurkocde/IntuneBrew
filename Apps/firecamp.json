@@ -6,6 +6,7 @@
   "vendor_url": "https://firecamp.ams3.digitaloceanspaces.com/versions/mac/Firecamp-2.6.1.dmg",
   "bundleId": "com.firecamp.app",
   "homepage": "https://firecamp.io/",
+  "homebrew_cask": "firecamp",
   "fileName": "Firecamp-2.6.1.dmg",
   "sha": "8b7df7244da0e577a7a5793822af6144548a65024e6b1f8166513ec2435ccb08",
   "category": "Developer Tools",

@@ -6,6 +6,7 @@
   "vendor_url": "https://tapbots.net/pastebot2/Pastebot.dmg",
   "bundleId": "com.tapbots.Pastebot2Mac",
   "homepage": "https://tapbots.com/pastebot/",
+  "homebrew_cask": "pastebot",
   "fileName": "Pastebot.dmg",
   "sha": "822de3c00786e6a92f4a50104bae47ef189e19bb3db9f2932ebbea7251288535",
   "category": "Productivity",

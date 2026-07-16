@@ -11,5 +11,6 @@
   "sha": "38ac9fb6e56a932f75e4a401fb8d6332dd9bad9762d9d6d183d0550620cf07ec",
   "previous_version": "0.12.11",
   "category": "Design",
-  "publisher": "Spline"
+  "publisher": "Spline",
+  "homebrew_cask": "spline"
 }

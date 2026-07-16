@@ -6,6 +6,7 @@
   "vendor_url": "https://www.seventhstring.com/xscribe/downmo/transcribe-arm-9.50.1.dmg",
   "bundleId": "com.seventhstring.transcribe",
   "homepage": "https://www.seventhstring.com/xscribe/overview.html",
+  "homebrew_cask": "transcribe",
   "fileName": "transcribe-arm-9.60.0.dmg",
   "sha": "7df16d1ee038bfb95c2257472d5c4c788badf4581c75df48334e0ce22aa41b34",
   "category": "Media",

@@ -11,5 +11,6 @@
   "sha": "101c3980034ac956d61e2ddeff9d6431342bdeefe243cc88fd6c8a4c9ccf2492",
   "category": "Productivity",
   "publisher": "Dictionaries.io",
-  "previous_version": "2.9"
+  "previous_version": "2.9",
+  "homebrew_cask": "dictionaries"
 }

@@ -11,5 +11,8 @@
   "previous_version": "2.6.5",
   "sha": "d75ec3e056174afa1488320f293bc7e33ca8bc8d0f36cb215704fe993f3af138",
   "category": "Design",
-  "publisher": "Serif (Europe) Ltd."
+  "publisher": "Serif (Europe) Ltd.",
+  "homebrew_cask": "affinity-publisher",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: discontinued"
 }

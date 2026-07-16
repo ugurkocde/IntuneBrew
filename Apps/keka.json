@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/aonez/Keka/releases/download/v1.6.1/Keka-1.6.1.dmg",
   "bundleId": "com.aone.keka",
   "homepage": "https://www.keka.io/",
+  "homebrew_cask": "keka",
   "fileName": "Keka-1.6.7.dmg",
   "sha": "0fa0995fc3e58ba3e438ba53aba03636eb226c64002757d21250934116e19f7e",
   "changelog": "https://github.com/aonez/Keka/releases",

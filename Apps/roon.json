@@ -6,6 +6,7 @@
   "vendor_url": "https://download.roonlabs.net/builds/Roon.dmg",
   "bundleId": "com.roonlabs.Roon",
   "homepage": "https://roonlabs.com/",
+  "homebrew_cask": "roon",
   "fileName": "Roon.dmg",
   "sha": "0b97964daa6c8099ce79d9bf922410b9b6dcfbbd76c994b8f55fd610b20a98fe",
   "category": "Media",

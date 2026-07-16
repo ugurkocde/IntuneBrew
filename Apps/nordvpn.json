@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.nordcdn.com/apps/macos/generic/NordVPN-OpenVPN/10.0.3/NordVPN.pkg",
   "bundleId": "com.nordvpn.macos",
   "homepage": "https://nordvpn.com/",
+  "homebrew_cask": "nordvpn",
   "fileName": "nordvpn_10.6.1.pkg",
   "type": "pkg_in_pkg",
   "sha": "13e030c602d73d55b52d6d501e072192425edf2a46c2f4b96f557cb223754510",

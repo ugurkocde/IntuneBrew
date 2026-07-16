@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/rlxone/Equinox/releases/download/v6.0/Equinox-Installer.dmg",
   "bundleId": "com.rlxone.equinox",
   "homepage": "https://equinoxmac.com/",
+  "homebrew_cask": "equinox",
   "fileName": "Equinox-Installer.dmg",
   "sha": "1271dfb05af237d5f31d18c67b8755c3d57a8683257ea2eef5bddcd9bbd24261",
   "category": "Design",

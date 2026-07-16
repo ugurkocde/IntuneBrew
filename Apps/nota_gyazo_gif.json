@@ -6,6 +6,7 @@
   "vendor_url": "https://files.gyazo.com/setup/Gyazo-10.8.0.pkg",
   "bundleId": "com.gyazo.mac",
   "homepage": "https://gyazo.com/",
+  "homebrew_cask": "gyazo",
   "fileName": "nota_gyazo_gif_10.12.0.pkg",
   "type": "pkg_in_pkg",
   "changelog": "https://support.gyazo.com/hc/en-us/articles/204411615-Release-Notes",

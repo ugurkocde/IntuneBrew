@@ -6,6 +6,7 @@
   "vendor_url": "https://software.charliemonroe.net/trial/permute/v3/Permute_3_4012.dmg",
   "bundleId": "com.charliemonroe.Permute-3",
   "homepage": "https://software.charliemonroe.net/permute/",
+  "homebrew_cask": "permute",
   "fileName": "Permute_4_4137.dmg",
   "sha": "c2f2ed63d372a1dbc6dbe3041b18c6fd88a4a92a6452187cf9b81a0156fa214f",
   "category": "Media",

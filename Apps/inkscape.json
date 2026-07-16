@@ -6,6 +6,7 @@
   "vendor_url": "https://media.inkscape.org/dl/resources/file/Inkscape-1.4.3_arm64.dmg",
   "bundleId": "org.inkscape.Inkscape",
   "homepage": "https://inkscape.org/",
+  "homebrew_cask": "inkscape",
   "fileName": "Inkscape-1.4.4_arm64.dmg",
   "sha": "eacca94ab01e59467cdd5452a2867c3734450f9a4cfb3346956cc9b07f34f3f1",
   "changelog": "https://inkscape.org/release/",

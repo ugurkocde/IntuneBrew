@@ -11,5 +11,8 @@
   "sha": "651d1660346d76ad0b7b30a6ad710cc62946a6ca89e257547db445cd3b093231",
   "category": "Communication",
   "publisher": "Wire Swiss GmbH",
-  "previous_version": "3.42.5489"
+  "previous_version": "3.42.5489",
+  "homebrew_cask": "wire",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

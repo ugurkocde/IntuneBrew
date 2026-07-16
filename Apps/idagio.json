@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.idagio.com/IDAGIO-1.15.0.dmg",
   "bundleId": "com.idagio.desktop",
   "homepage": "https://www.idagio.com/",
+  "homebrew_cask": "idagio",
   "fileName": "IDAGIO-1.15.0.dmg",
   "sha": "f5b8d8985c3f93765a96c1f85bdab54c84113cc3da22ee9e2b286b31d52115e2",
   "category": "Media",

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.12.1/floorp-macOS-universal.dmg",
   "bundleId": "org.nicola.floorp",
   "homepage": "https://floorp.app/",
+  "homebrew_cask": "floorp",
   "fileName": "floorp-macOS-universal.dmg",
   "sha": "677706d66f978c17715e29090ad5b2d397dcffd1ee21139a13a9e982110e3a81",
   "category": "Browsers",

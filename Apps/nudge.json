@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/macadmins/nudge/releases/download/v2.1.2.81856/Nudge-2.1.2.81856.pkg",
   "bundleId": "com.github.macadmins.Nudge",
   "homepage": "https://github.com/macadmins/nudge",
+  "homebrew_cask": "nudge",
   "fileName": "nudge_2.1.2.81856.pkg",
   "type": "pkg_in_pkg",
   "sha": "b613f2def897345bbcd1ab0d21d6a6e5cc7b38a461251baa94ab60e1cd1c00ab",

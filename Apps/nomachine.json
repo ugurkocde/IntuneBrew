@@ -6,6 +6,7 @@
   "vendor_url": "https://download.nomachine.com/download/9.4/MacOSX/nomachine_9.4.14_1.dmg",
   "bundleId": "com.nomachine.nxdock",
   "homepage": "https://www.nomachine.com/",
+  "homebrew_cask": "nomachine",
   "fileName": "nomachine_9.8.2.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://www.nomachine.com/changelog",

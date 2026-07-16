@@ -6,10 +6,11 @@
   "vendor_url": "https://download-mac.grammarly.com/versions/1.161.1.0/Grammarly.dmg",
   "bundleId": "com.grammarly.ProjectLlama",
   "homepage": "https://www.grammarly.com/desktop",
+  "homebrew_cask": "grammarly-desktop",
   "fileName": "Grammarly.dmg",
   "sha": "bc43b9388da66272aac240892798e6e35a1d0230e9846622e57a74b2e24d3cc2",
   "changelog": "https://www.grammarly.com/desktop/release-notes",
   "category": "Productivity",
   "publisher": "Grammarly, Inc.",
-  "previous_version": "1.174.1.0"
+  "previous_version": "1.175.0.0"
 }

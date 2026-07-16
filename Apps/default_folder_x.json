@@ -6,6 +6,7 @@
   "vendor_url": "https://www.stclairsoft.com/download/DefaultFolderX-6.2.7.dmg",
   "bundleId": "com.stclairsoft.DefaultFolderX",
   "homepage": "https://www.stclairsoft.com/DefaultFolderX/",
+  "homebrew_cask": "default-folder-x",
   "fileName": "DefaultFolderX-6.2.8.dmg",
   "sha": "042ca1f9921537155d92caedb06059fd5bd9121d334c4da1a381f8dd23071101",
   "category": "Utilities",

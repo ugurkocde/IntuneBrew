@@ -11,5 +11,6 @@
   "sha": "d0cedce44603cde3bd80dda82c380bc7d429a8f9ccc0f80e5018b5857b5827eb",
   "previous_version": "2026.85",
   "category": "Developer Tools",
-  "publisher": "Hankin Software"
+  "publisher": "Hankin Software",
+  "homebrew_cask": "sqlpro-for-sqlite"
 }

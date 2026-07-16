@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/balena-io/etcher/releases/download/v2.1.4/balenaEtcher-2.1.4-arm64.dmg",
   "bundleId": "io.balena.etcher",
   "homepage": "https://balena.io/etcher",
+  "homebrew_cask": "balenaetcher",
   "fileName": "balenaEtcher-2.1.6-arm64.dmg",
   "sha": "ecf71fb5e74803ea8d7d16c54378a6a8d964e9808594b867c088222a8cfe3d2b",
   "changelog": "https://github.com/balena-io/etcher/releases",

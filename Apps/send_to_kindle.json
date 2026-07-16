@@ -13,5 +13,6 @@
   "publisher": "Amazon.com, Inc.",
   "previous_version": "1.1.1.259",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: unreachable"
+  "deprecation_reason": "disabled in Homebrew: unreachable",
+  "homebrew_cask": "send-to-kindle"
 }

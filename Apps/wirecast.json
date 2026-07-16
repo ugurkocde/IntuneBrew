@@ -6,6 +6,7 @@
   "vendor_url": "https://www.telestream.net/download-files/wirecast/16-5/Wirecast-16.5.1.dmg",
   "bundleId": "net.telestream.wirecast",
   "homepage": "https://www.telestream.net/wirecast/",
+  "homebrew_cask": "wirecast",
   "fileName": "Wirecast-16.5.3.dmg",
   "sha": "cb20cb458b6cb23d71adadd2372b618b80d46c434c0bc408cb4c017e72383170",
   "category": "Media",

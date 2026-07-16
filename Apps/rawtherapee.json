@@ -10,5 +10,6 @@
   "type": "app",
   "category": "Media",
   "publisher": "RawTherapee Team",
-  "previous_version": "5.12"
+  "previous_version": "5.12",
+  "homebrew_cask": "rawtherapee"
 }

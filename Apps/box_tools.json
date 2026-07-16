@@ -6,6 +6,7 @@
   "vendor_url": "https://e3.boxcdn.net/box-installers/boxedit/mac/currentrelease/BoxToolsInstaller.dmg",
   "bundleId": "box.com.Box-Edit",
   "homepage": "https://www.box.com/resources/downloads",
+  "homebrew_cask": "box-tools",
   "fileName": "BoxToolsInstaller.dmg",
   "sha": "02ad64452fad4e7d2a298c6eafbe5d8b31989a8a7c79b742f62e1de672a97ae8",
   "category": "Productivity",

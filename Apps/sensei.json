@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.cindori.com/apps/sensei/updates/2.0.2-127/Sensei.dmg",
   "bundleId": "org.cindori.SenseiTool",
   "homepage": "https://cindori.com/sensei",
+  "homebrew_cask": "sensei",
   "fileName": "Sensei.dmg",
   "sha": "f8540c66cb7cad0596892a4d60fc4ff9eab4fcd87769bd0df6514c6f93fa1b6e",
   "category": "Utilities",

@@ -11,5 +11,6 @@
   "sha": "3fffea4b6ed28b678ec729f44267b258856e2d44ded3f0a3f27a712afe36f6db",
   "previous_version": "1.5.3",
   "category": "Productivity",
-  "publisher": "Homerow"
+  "publisher": "Homerow",
+  "homebrew_cask": "homerow"
 }

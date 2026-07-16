@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/chris2511/xca/releases/download/RELEASE.2.9.0/xca-2.9.0-Darwin.dmg",
   "bundleId": "de.hohnstaedt.xca",
   "homepage": "https://hohnstaedt.de/xca/",
+  "homebrew_cask": "xca",
   "fileName": "xca-2.9.0-Darwin.dmg",
   "sha": "90df40a56bb57bbf46158b4db1c9fddd8a2d7cc48477b5522b457ec4e12cd45a",
   "category": "Security",

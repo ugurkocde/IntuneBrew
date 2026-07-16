@@ -6,6 +6,7 @@
   "vendor_url": "https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/packages/CapCut_3_3_0_1159_capcutpc_0_creatortool.dmg",
   "bundleId": "com.lemon.lvoverseas",
   "homepage": "https://www.capcut.com/",
+  "homebrew_cask": "capcut",
   "fileName": "CapCut_3_3_0_1159_capcutpc_0_creatortool.dmg",
   "sha": "26c253719a61eae679a2923121a83d0a39b98d920a5c57f3e00d66224986c867",
   "changelog": "https://www.capcut.com/resource/download-capcut-for-mac",

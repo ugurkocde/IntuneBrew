@@ -6,6 +6,7 @@
   "vendor_url": "https://launcher.mojang.com/download/Minecraft.dmg",
   "bundleId": "com.mojang.minecraftlauncher",
   "homepage": "https://minecraft.net/",
+  "homebrew_cask": "minecraft",
   "fileName": "Minecraft.dmg",
   "sha": "82c59d9b3285017e2d6d1b035f539415c1feb50d7875a4f034cc29af27327b48",
   "category": "Other",

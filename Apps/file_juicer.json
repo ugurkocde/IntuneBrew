@@ -11,5 +11,6 @@
   "sha": "b572a6686ee8bb230ae653ecffde170f4273ee4f0e263e0971dc5c4339fea432",
   "category": "Utilities",
   "publisher": "Echo One",
-  "previous_version": "4.115"
+  "previous_version": "4.115",
+  "homebrew_cask": "file-juicer"
 }

@@ -11,5 +11,6 @@
   "sha": "aa8005529d820b8d6c9193db4875c78be25c08e77b0a601a16c114e73d2e8f4c",
   "previous_version": "1.56.1",
   "category": "Productivity",
-  "publisher": "Superlist"
+  "publisher": "Superlist",
+  "homebrew_cask": "superlist"
 }

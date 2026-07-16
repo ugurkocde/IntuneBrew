@@ -6,6 +6,7 @@
   "vendor_url": "https://mega.nz/MEGAsyncSetupArm64.dmg",
   "bundleId": "mega.mac",
   "homepage": "https://mega.nz/sync",
+  "homebrew_cask": "megasync",
   "fileName": "MEGAsyncSetupArm64.dmg",
   "sha": "1588c68f49b85763e95a54f33886736feffda0962d0d01033f37230d19bb54c9",
   "category": "Utilities",

@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.enpass.io/stable/mac/package/6.11.20.2229/Enpass.pkg",
   "bundleId": "in.sinew.Enpass-Desktop",
   "homepage": "https://www.enpass.io/",
+  "homebrew_cask": "enpass",
   "fileName": "Enpass.pkg",
   "type": "pkg",
   "sha": "63488dda6eed92a3e58f40b6aac2151e659ecb26672c51518b195805ef4bacc1",

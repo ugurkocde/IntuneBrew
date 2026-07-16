@@ -6,6 +6,7 @@
   "vendor_url": "https://download.airsquirrels.com/AirParrot3/Mac/AirParrot-3.1.7.dmg",
   "bundleId": "com.squirrels.AirParrot-3",
   "homepage": "https://www.airsquirrels.com/airparrot/",
+  "homebrew_cask": "airparrot",
   "fileName": "AirParrot-3.1.7.dmg",
   "sha": "acb42bb53c1dfde1fec6835fd8fd89a278b215a97f1e08545e45780cebb19409",
   "qa_info": {

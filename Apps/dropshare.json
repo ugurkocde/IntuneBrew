@@ -22,5 +22,6 @@
     "installed_version": "6.3"
   },
   "category": "Utilities",
-  "publisher": "Dropshare"
+  "publisher": "Dropshare",
+  "homebrew_cask": "dropshare"
 }

@@ -11,5 +11,6 @@
   "sha": "85b8727914da0691e70ac16d27489e7b0754f4a31ae640125521d6ea89235834",
   "category": "Utilities",
   "publisher": "Noteify",
-  "previous_version": "2.860"
+  "previous_version": "2.860",
+  "homebrew_cask": "activedock"
 }

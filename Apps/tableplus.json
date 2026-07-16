@@ -6,9 +6,10 @@
   "vendor_url": "https://files.tableplus.com/macos/662/TablePlus.dmg",
   "bundleId": "com.tinyapp.TablePlus",
   "homepage": "https://tableplus.com/",
+  "homebrew_cask": "tableplus",
   "fileName": "TablePlus.dmg",
   "sha": "6cf9e32a98c370ef3d0a8e3b893ae0be5b2648c0a2903ada8dd744e65130de4a",
   "category": "Developer Tools",
   "publisher": "TablePlus",
-  "previous_version": "26.7.2"
+  "previous_version": "26.7.6"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/tisfeng/Easydict/releases/download/2.18.1/Easydict.dmg",
   "bundleId": "com.izual.Easydict",
   "homepage": "https://github.com/tisfeng/Easydict/",
+  "homebrew_cask": "easydict",
   "fileName": "Easydict.dmg",
   "sha": "23410f4cb087fce56c23c271832a99f05020965899e2293fff22835f798c00ef",
   "qa_info": {

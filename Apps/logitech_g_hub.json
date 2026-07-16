@@ -11,5 +11,6 @@
   "sha": "ef81204eec4a13cbbcd87c13e486963870ab733b84b2dd677d79795685f6e59f",
   "previous_version": "2026.4.919028",
   "category": "Utilities",
-  "publisher": "Logitech International S.A."
+  "publisher": "Logitech International S.A.",
+  "homebrew_cask": "logitech-g-hub"
 }

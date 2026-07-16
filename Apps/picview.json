@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/Ruben2776/PicView/releases/download/4.2.0/PicView-4.2.0-macOS-arm64.dmg",
   "bundleId": "com.ruben2776.picview",
   "homepage": "https://picview.org/",
+  "homebrew_cask": "picview",
   "fileName": "PicView-4.2.0-macOS-arm64.dmg",
   "sha": "50032ae50d097a6bd1b0d57d2be15dc1448a03fade07193f0be981849b821b95",
   "category": "Media",

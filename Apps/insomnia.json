@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/Kong/insomnia/releases/download/core%4012.5.0/Insomnia.Core-12.5.0.dmg",
   "bundleId": "com.insomnia.app",
   "homepage": "https://insomnia.rest/",
+  "homebrew_cask": "insomnia",
   "fileName": "Insomnia.Core-13.0.2.dmg",
   "sha": "4af7e5a14c241b28a2c16370bb6cb0b53c4a9fb00c4814a95e413a2c67a584d7",
   "changelog": "https://github.com/Kong/insomnia/releases",

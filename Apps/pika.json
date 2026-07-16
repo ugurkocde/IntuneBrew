@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/superhighfives/pika/releases/download/1.6.0/Pika-1.6.0.dmg",
   "bundleId": "com.superhighfives.Pika",
   "homepage": "https://superhighfives.com/pika",
+  "homebrew_cask": "pika",
   "fileName": "Pika-1.7.0.dmg",
   "sha": "2d6372c676d5cd5c4bc6600eee12a8cf090e25d7d7f805c381f6ba247f307571",
   "category": "Utilities",

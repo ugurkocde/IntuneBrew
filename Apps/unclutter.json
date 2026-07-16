@@ -11,5 +11,6 @@
   "sha": "755af86e1b58e0d2974c048b51c7a32f89ecfdb5d838caa99522e914b190b9e9",
   "category": "Utilities",
   "publisher": "Unclutter",
-  "previous_version": "2.2.18d"
+  "previous_version": "2.2.18d",
+  "homebrew_cask": "unclutter"
 }

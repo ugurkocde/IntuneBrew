@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/Zettlr/Zettlr/releases/download/v4.3.1/Zettlr-4.3.1-arm64.dmg",
   "bundleId": "com.zettlr.app",
   "homepage": "https://www.zettlr.com/",
+  "homebrew_cask": "zettlr",
   "fileName": "Zettlr-4.6.0-arm64.dmg",
   "sha": "c0ff76d9e869eee312d7c131764fe73322344f85127ed2e5fada1076cb88cf32",
   "category": "Productivity",

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/sw33tLie/macshot/releases/download/v4.1.0/MacShot.dmg",
   "bundleId": "com.sw33tlie.macshot.macshot",
   "homepage": "https://github.com/sw33tLie/macshot",
+  "homebrew_cask": "macshot",
   "fileName": "MacShot.dmg",
   "sha": "13a2001d975d42a90c57fb9a3fdb54ffc1c26259fde07e48b86fce9e49a2e66d",
   "category": "Utilities",

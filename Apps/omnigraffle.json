@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.omnigroup.com/software/macOS/12/OmniGraffle-7.25.2.dmg",
   "bundleId": "com.omnigroup.OmniGraffle7",
   "homepage": "https://www.omnigroup.com/omnigraffle/",
+  "homebrew_cask": "omnigraffle",
   "fileName": "OmniGraffle-7.25.3.dmg",
   "sha": "97c9b8a264ec380a4955c1c8a3cf583010003881dd1b0cf46f712d73ef33480b",
   "category": "Design",

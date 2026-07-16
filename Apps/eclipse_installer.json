@@ -6,6 +6,7 @@
   "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2026-03/R/eclipse-inst-jre-mac-aarch64.dmg&r=1",
   "bundleId": "org.eclipse.oomph.setup.installer.product.with-jre.restricted",
   "homepage": "https://eclipse.org/",
+  "homebrew_cask": "eclipse-installer",
   "fileName": "Eclipse-Installer-4.40.dmg",
   "sha": "d24c597d2153367c19263376a62206e595dcc5ccd6c7067d163881b13b7b93a4",
   "category": "Developer Tools",

@@ -6,6 +6,7 @@
   "vendor_url": "https://global.download.synology.com/download/Utility/SynologyDriveClient/4.0.2-17889/Mac/Installer/synology-drive-client-17889.dmg",
   "bundleId": "com.synology.CloudStation",
   "homepage": "https://www.synology.com/",
+  "homebrew_cask": "synology-drive",
   "fileName": "synology-drive-client-17892.dmg",
   "sha": "f99240eebd31621a6eeb5e08d66a882c27d837ff1875d1308168259a6a5f07ea",
   "changelog": "https://www.synology.com/en-us/releaseNote/SynologyDriveClient",

@@ -6,6 +6,7 @@
   "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-modeling-2026-03-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
   "bundleId": "org.eclipse.epp.package.modeling.product",
   "homepage": "https://eclipse.org/",
+  "homebrew_cask": "eclipse-modeling",
   "fileName": "Eclipse-Modeling-Tools-4.40.dmg",
   "sha": "71dee6967ac6795527cdcbb216e8c9285a9f29827ebc522f7a8f59e75182010a",
   "category": "Developer Tools",

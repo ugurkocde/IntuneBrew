@@ -11,5 +11,6 @@
   "previous_version": "6.0.6",
   "sha": "baa69b586986d1265abc95d7ceee8e49e1ea26a3387b6a992ef83cda38f63695",
   "category": "Utilities",
-  "publisher": "Rogue Amoeba"
+  "publisher": "Rogue Amoeba",
+  "homebrew_cask": "soundsource"
 }

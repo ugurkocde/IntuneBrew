@@ -11,5 +11,6 @@
   "category": "Developer Tools",
   "publisher": "HashiCorp, Inc.",
   "previous_version": "0.41.0",
-  "sha": "1ce9485f96ad51520cf19a74ce4ed4a4edc3ffc988fd537a26a4bd937662bf65"
+  "sha": "1ce9485f96ad51520cf19a74ce4ed4a4edc3ffc988fd537a26a4bd937662bf65",
+  "homebrew_cask": "sentinel"
 }

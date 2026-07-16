@@ -12,5 +12,6 @@
   "changelog": "https://www.notion.so/help/calendar-changelog",
   "previous_version": "1.138.0",
   "category": "Productivity",
-  "publisher": "Notion Labs, Inc."
+  "publisher": "Notion Labs, Inc.",
+  "homebrew_cask": "notion-calendar"
 }

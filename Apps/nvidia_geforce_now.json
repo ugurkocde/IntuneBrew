@@ -6,6 +6,7 @@
   "vendor_url": "https://download.nvidia.com/gfnpc/GeForceNOW-release.dmg",
   "bundleId": "com.nvidia.gfnpc.mall",
   "homepage": "https://www.nvidia.com/en-us/geforce-now/download/",
+  "homebrew_cask": "nvidia-geforce-now",
   "fileName": "GeForceNOW-release.dmg",
   "sha": "0e92430573e1af40eab9c51748687a00d295ec80dcd856bf4c1965df861bfd5a",
   "category": "Media",

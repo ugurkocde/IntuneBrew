@@ -6,10 +6,11 @@
   "vendor_url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Word_16.108.26041219_Installer.pkg",
   "bundleId": "com.microsoft.package.Microsoft_Word.app",
   "homepage": "https://www.microsoft.com/en-US/microsoft-365/word",
+  "homebrew_cask": "microsoft-word",
   "fileName": "Microsoft_Word_16.111.26071325_Installer.pkg",
   "type": "pkg",
   "sha": "dfad5bd77687ef19721a0099a8dc4cec48979b938cadbe731b7d05185c1826df",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
-  "previous_version": "16.110.26070318"
+  "previous_version": "16.111.26071325"
 }

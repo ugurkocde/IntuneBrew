@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/arduino/arduino-ide/releases/download/2.3.8/arduino-ide_2.3.8_macOS_ARM64.dmg",
   "bundleId": "cc.arduino.IDE2",
   "homepage": "https://www.arduino.cc/en/software",
+  "homebrew_cask": "arduino-ide",
   "fileName": "arduino-ide_2.3.10_macOS_ARM64.dmg",
   "sha": "8811860dc8782b6cd6bb0076e9215255849f404b1b9e6f38069fdc4f5c43648e",
   "qa_info": {

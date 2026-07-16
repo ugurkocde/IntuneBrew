@@ -6,6 +6,7 @@
   "vendor_url": "https://download1.rstudio.org/electron/macos/RStudio-2026.01.2-418.dmg",
   "bundleId": "com.rstudio.desktop",
   "homepage": "https://posit.co/products/open-source/rstudio/",
+  "homebrew_cask": "rstudio",
   "fileName": "RStudio-2026.07.0-139.dmg",
   "sha": "992a4b29eebf02891d98dbc15bc38a6ef3c25b22833424bd42e61c0e334a6134",
   "changelog": "https://docs.posit.co/ide/news/",

@@ -6,6 +6,7 @@
   "vendor_url": "https://officecdn.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/CompanyPortal_5.2602.0-Upgrade.pkg",
   "bundleId": "com.microsoft.CompanyPortalMac",
   "homepage": "https://docs.microsoft.com/en-us/mem/intune/user-help/enroll-your-device-in-intune-macos-cp",
+  "homebrew_cask": "intune-company-portal",
   "fileName": "CompanyPortal_5.2606.0-Upgrade.pkg",
   "sha": "8bdc0084c29bc5898b638be1b07feb4c5c714bb90ee9bc061df3d0b19d0e3d0c",
   "changelog": "https://docs.microsoft.com/en-us/mem/intune/user-help/enroll-your-device-in-intune-macos-cp",

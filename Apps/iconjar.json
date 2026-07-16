@@ -11,5 +11,6 @@
   "previous_version": "2.11.4",
   "sha": "1c76b2e4887af40b8798881e94af8172e2a28227d6241e53dd8acc788a40edfb",
   "category": "Design",
-  "publisher": "IconJar"
+  "publisher": "IconJar",
+  "homebrew_cask": "iconjar"
 }

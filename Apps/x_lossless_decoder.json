@@ -10,5 +10,8 @@
   "sha": "0032a5470ea4e32a11a35b8077ebf4986102891f8eb82743094f2c6621ad8aeb",
   "category": "Media",
   "publisher": "TMKK",
-  "previous_version": "20250302"
+  "previous_version": "20250302",
+  "homebrew_cask": "xld",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

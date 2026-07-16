@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/torakiki/pdfsam/releases/download/v6.0.0/pdfsam-basic-6.0.0-macos-arm64.dmg",
   "bundleId": "org.pdfsam.modules",
   "homepage": "https://pdfsam.org/",
+  "homebrew_cask": "pdfsam-basic",
   "fileName": "pdfsam-basic-6.0.4-macos-arm64.dmg",
   "sha": "e42b053ccfc7172dc23bfb615eb9328d78585e61cbc43c16b6ca13734099046e",
   "category": "Utilities",

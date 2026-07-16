@@ -6,6 +6,7 @@
   "vendor_url": "https://www.visualdatatools.com/DataGraph/DataGraph.dmg",
   "bundleId": "com.visualdatatools.datagraph",
   "homepage": "https://www.visualdatatools.com/DataGraph/",
+  "homebrew_cask": "datagraph",
   "fileName": "DataGraph.dmg",
   "sha": "874c67c8dac62efe3e5a7d9a4972c4bdffc50b85ddb209d2171b963f1b6dc98e",
   "category": "Utilities",

@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.omnigroup.com/software/macOS/15/OmniOutliner-6.1.dmg",
   "bundleId": "com.omnigroup.OmniOutliner5",
   "homepage": "https://www.omnigroup.com/omnioutliner/",
+  "homebrew_cask": "omnioutliner",
   "fileName": "OmniOutliner-6.2.dmg",
   "sha": "69bd2ffeb7f611cb893c5c3f1787ce7ae5037c93520715cb875dba913799f337",
   "category": "Productivity",

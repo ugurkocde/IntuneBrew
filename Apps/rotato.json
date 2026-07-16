@@ -6,6 +6,7 @@
   "vendor_url": "https://download.rota.to/Rotato-154.dmg",
   "bundleId": "com.mortenjust.Rendermock",
   "homepage": "https://rotato.app/",
+  "homebrew_cask": "rotato",
   "fileName": "Rotato-154.dmg",
   "sha": "f8a9b0c1cae6398b5b0973bcabe1ce8e840539b29df987adb92443c67662a3bc",
   "changelog": "https://rotato.app/releases",

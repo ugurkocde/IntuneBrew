@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.strem.io/stremio-shell-macos/v5.1.18/Stremio_arm64.dmg",
   "bundleId": "com.smartcodeltd.stremio",
   "homepage": "https://www.strem.io/",
+  "homebrew_cask": "stremio",
   "fileName": "Stremio_arm64.dmg",
   "sha": "6bf4cfdab52c373f2610636c10ec19059c1e1659764ce2d3c2a07e1f3cdce483",
   "category": "Media",

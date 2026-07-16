@@ -11,5 +11,8 @@
   "changelog": "https://todoist.com/changelog",
   "previous_version": "9.17.0",
   "category": "Productivity",
-  "publisher": "Doist Ltd."
+  "publisher": "Doist Ltd.",
+  "homebrew_cask": "todoist",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

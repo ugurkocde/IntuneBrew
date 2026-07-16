@@ -11,5 +11,6 @@
   "publisher": "Media Atelier",
   "previous_version": "1.6.4",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: discontinued"
+  "deprecation_reason": "disabled in Homebrew: discontinued",
+  "homebrew_cask": "cheatsheet"
 }

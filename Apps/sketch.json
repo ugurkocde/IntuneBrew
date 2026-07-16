@@ -12,5 +12,6 @@
   "changelog": "https://www.sketch.com/updates/",
   "previous_version": "2026.2.1",
   "category": "Design",
-  "publisher": "Bohemian Coding"
+  "publisher": "Bohemian Coding",
+  "homebrew_cask": "sketch"
 }

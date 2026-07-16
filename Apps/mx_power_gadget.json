@@ -11,5 +11,6 @@
   "sha": "f4e777ee8d1ead42922a9f55c6dccbeed3a3f209fb1270ca870e91eb48508560",
   "category": "Utilities",
   "publisher": "Seense",
-  "previous_version": "1.6.4"
+  "previous_version": "1.6.4",
+  "homebrew_cask": "mx-power-gadget"
 }

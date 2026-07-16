@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/BlueWallet/BlueWallet/releases/download/v7.2.6/BlueWallet.7.2.6.dmg",
   "bundleId": "io.bluewallet.bluewallet",
   "homepage": "https://bluewallet.io/",
+  "homebrew_cask": "bluewallet",
   "fileName": "BlueWallet.7.2.6.dmg",
   "sha": "38299c0800d1bf19656638ccf64266fa1d2e614f2845918fe544c0c1b3935328",
   "category": "Security",

@@ -6,6 +6,7 @@
   "vendor_url": "https://www.advancedrenamer.com/down/macos/arm/AdvancedRenamer_4_20.dmg",
   "bundleId": "com.HulubuluSoftware.AdvancedRenamer",
   "homepage": "https://www.advancedrenamer.com/",
+  "homebrew_cask": "advanced-renamer",
   "fileName": "AdvancedRenamer_4_23.dmg",
   "sha": "2dac93ad40a4a825b7ef22d6ec099fc8f1edd38520af44521e883c36842fb2da",
   "qa_info": {

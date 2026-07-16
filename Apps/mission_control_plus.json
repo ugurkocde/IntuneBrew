@@ -11,5 +11,6 @@
   "sha": "847b126c2aa2a28fbd198bab56487667d5efeab95287bce29796f1f8214466af",
   "category": "Productivity",
   "publisher": "Fadel",
-  "previous_version": "1.24"
+  "previous_version": "1.24",
+  "homebrew_cask": "mission-control-plus"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://www.titanium-software.fr/download/26/OnyX.dmg",
   "bundleId": "com.titanium.OnyX",
   "homepage": "https://www.titanium-software.fr/en/onyx.html",
+  "homebrew_cask": "onyx",
   "fileName": "OnyX.dmg",
   "sha": "39bf6b6344c3ac1e792e4166352488fa0b091c26a795e5aaaa537b3f91789ae0",
   "changelog": "https://www.titanium-software.fr/en/onyx/changelog.html",

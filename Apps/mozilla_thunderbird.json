@@ -6,6 +6,7 @@
   "vendor_url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/149.0.2/mac/en-US/Thunderbird%20149.0.2.dmg",
   "bundleId": "org.mozilla.thunderbird",
   "homepage": "https://www.thunderbird.net/en-US/",
+  "homebrew_cask": "thunderbird",
   "fileName": "Thunderbird 152.0.1.dmg",
   "sha": "2ddb04427a7153e2c25f2f118ba42d5904f73b8e8b7599a0761a30c774fc00c6",
   "category": "Communication",

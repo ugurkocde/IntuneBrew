@@ -6,10 +6,11 @@
   "vendor_url": "https://github.com/rxhanson/Rectangle/releases/download/v0.95/Rectangle0.95.dmg",
   "bundleId": "com.knollsoft.Rectangle",
   "homepage": "https://rectangleapp.com/",
+  "homebrew_cask": "rectangle",
   "fileName": "Rectangle0.98.dmg",
   "sha": "ce2613d4f171300141d1d41e22bab17726b26d51ff26c684eac357bd7b9aad86",
   "changelog": "https://github.com/rxhanson/Rectangle/releases",
   "category": "Utilities",
   "publisher": "Rectangle",
-  "previous_version": "0.97"
+  "previous_version": "0.98"
 }

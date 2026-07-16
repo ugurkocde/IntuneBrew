@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/quarto-dev/quarto-cli/releases/download/v1.9.37/quarto-1.9.37-macos.pkg",
   "bundleId": "org.rstudio.quarto",
   "homepage": "https://www.quarto.org/",
+  "homebrew_cask": "quarto",
   "fileName": "quarto-1.9.38-macos.pkg",
   "type": "pkg",
   "sha": "de056ec2407c1b79832bc8fd6181ad6077fde433728285b2a0ae62710d853b84",

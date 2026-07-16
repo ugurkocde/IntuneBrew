@@ -6,6 +6,7 @@
   "vendor_url": "https://pierre.chachatelier.fr/chalk/downloads/Chalk-1_7_5.dmg",
   "bundleId": "fr.chachatelier.pierre.Chalk",
   "homepage": "https://www.chachatelier.fr/chalk/",
+  "homebrew_cask": "chalk",
   "fileName": "Chalk-1_7_5.dmg",
   "sha": "8906a8ffe54a3481fda6f73dbd850fbb7453cc6c78c7b396d30f9c44f24a8bec",
   "category": "Utilities",

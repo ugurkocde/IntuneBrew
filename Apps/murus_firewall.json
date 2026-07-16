@@ -10,5 +10,6 @@
   "type": "app",
   "category": "Security",
   "publisher": "Murus Firewall",
-  "previous_version": "2.7"
+  "previous_version": "2.7",
+  "homebrew_cask": "murus"
 }

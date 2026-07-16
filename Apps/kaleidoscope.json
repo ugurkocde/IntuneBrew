@@ -11,5 +11,6 @@
   "previous_version": "6.7",
   "sha": "f0d9bf38650a582c52536f05ed8c7a3cd792a9e5e1dafafc5ce2f72057b810c9",
   "category": "Developer Tools",
-  "publisher": "Black Pixel"
+  "publisher": "Black Pixel",
+  "homebrew_cask": "kaleidoscope"
 }

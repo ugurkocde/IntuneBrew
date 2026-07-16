@@ -11,5 +11,6 @@
   "sha": "47074ee4184231a16ecfa44c029da6d4f48ee5be921f4b98a103c39007262d12",
   "category": "Utilities",
   "publisher": "Jizoh",
-  "previous_version": "8.6.0"
+  "previous_version": "8.6.0",
+  "homebrew_cask": "simpledemviewer"
 }

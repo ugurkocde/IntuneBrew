@@ -11,5 +11,6 @@
   "sha": "78aab76c8ca784b534293a641fcc92779a098928a6fee3906694257174b41027",
   "category": "Design",
   "publisher": "Zeplin Ltd",
-  "previous_version": "10.32.0"
+  "previous_version": "10.32.0",
+  "homebrew_cask": "zeplin"
 }

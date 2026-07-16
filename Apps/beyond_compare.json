@@ -21,5 +21,6 @@
     "installed_version": "5.0.7.30840"
   },
   "category": "Utilities",
-  "publisher": "Scooter Software, Inc."
+  "publisher": "Scooter Software, Inc.",
+  "homebrew_cask": "beyond-compare"
 }

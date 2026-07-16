@@ -6,6 +6,7 @@
   "vendor_url": "https://www.tenable.com/downloads/api/v1/public/pages/nessus-agents/downloads/27832/download?i_agree_to_tenable_license_agreement=true",
   "bundleId": "com.tenablesecurity.NessusAgent",
   "homepage": "https://www.tenable.com/",
+  "homebrew_cask": "tenable-nessus-agent",
   "fileName": "NessusAgent.dmg",
   "sha": "04e9b1d5da670b477550d4fd06d552d004775d38ae0ac35b712be28635e12547",
   "category": "Security",

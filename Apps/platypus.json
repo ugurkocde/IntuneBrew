@@ -11,5 +11,8 @@
   "sha": "bc88aaf58eee77303fc574106540d38848b9e1a55627ef9ceb6963a2a2f26425",
   "previous_version": "5.5.0",
   "category": "Developer Tools",
-  "publisher": "Sveinbjorn Thordarson"
+  "publisher": "Sveinbjorn Thordarson",
+  "homebrew_cask": "platypus",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.electronic.us/products/cloudmounter/mac/download/cloudmounter.dmg",
   "bundleId": "com.eltima.cloudmounter-setapp",
   "homepage": "https://mac.eltima.com/mount-cloud-drive.html",
+  "homebrew_cask": "cloudmounter",
   "fileName": "cloudmounter.dmg",
   "sha": "65a63c7361e0ad6a602af105c1fb3a2cb42fe1e6ad5cb5d220855ab619e2cd08",
   "category": "Utilities",

@@ -10,5 +10,8 @@
   "sha": "dfbf339a2ef78e2346ad2a874a9961f5b725c2a8d8b32c33bc7751348488792b",
   "category": "Utilities",
   "publisher": "Double Commander Team",
-  "previous_version": "1.1.32"
+  "previous_version": "1.1.32",
+  "homebrew_cask": "double-commander",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

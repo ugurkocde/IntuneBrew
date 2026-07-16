@@ -11,5 +11,6 @@
   "sha": "42bbab5b78dc3e5c1815c49cdde2487530a18e700fa84f125477dbec3122834f",
   "category": "Utilities",
   "publisher": "PingPlotter, LLC",
-  "previous_version": "5.27.10"
+  "previous_version": "5.27.10",
+  "homebrew_cask": "pingplotter"
 }

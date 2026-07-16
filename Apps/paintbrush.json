@@ -11,5 +11,6 @@
   "sha": "5ec9a25f5e02f4843a51ba336e80e97c543822010f06d22957774df6ce189596",
   "previous_version": "2.6.0",
   "category": "Design",
-  "publisher": "The Paintbrush Team"
+  "publisher": "The Paintbrush Team",
+  "homebrew_cask": "paintbrush"
 }

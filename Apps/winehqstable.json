@@ -12,5 +12,8 @@
   "changelog": "https://www.winehq.org/news/",
   "previous_version": "11.0",
   "category": "Utilities",
-  "publisher": "WineHQ"
+  "publisher": "WineHQ",
+  "homebrew_cask": "wine-stable",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

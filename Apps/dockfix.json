@@ -6,6 +6,7 @@
   "vendor_url": "https://www.dockfix.app/downloads/DockFix.dmg",
   "bundleId": "dk.FIrstForm.DockFix",
   "homepage": "https://www.dockfix.app/",
+  "homebrew_cask": "dockfix",
   "fileName": "DockFix.dmg",
   "sha": "f9a4c515bc13191731054c8d65fc2f1fa0b1bac1820fe8cb31d1b624b319bb2f",
   "category": "Utilities",

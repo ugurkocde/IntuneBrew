@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/ungoogled-software/ungoogled-chromium-macos/releases/download/146.0.7680.177-1.1/ungoogled-chromium_146.0.7680.177-1.1_arm64-macos.dmg",
   "bundleId": "org.chromium.Chromium",
   "homepage": "https://ungoogled-software.github.io/",
+  "homebrew_cask": "ungoogled-chromium",
   "fileName": "ungoogled-chromium_150.0.7871.46-1.1_arm64-macos.dmg",
   "sha": "fe7548ad436e37bba7231f864551d88f77f6697fce1c7b6942fab8129e8a079a",
   "category": "Browsers",

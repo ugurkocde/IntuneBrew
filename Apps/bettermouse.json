@@ -21,5 +21,6 @@
     "installed_version": "1.6"
   },
   "category": "Utilities",
-  "publisher": "BetterMouse"
+  "publisher": "BetterMouse",
+  "homebrew_cask": "bettermouse"
 }

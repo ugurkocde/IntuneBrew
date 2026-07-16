@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.airy-youtube-downloader.com/products/airy/mac/download/airy.dmg",
   "bundleId": "com.eltima.Airy",
   "homepage": "https://www.airy-youtube-downloader.com/mac/",
+  "homebrew_cask": "airy",
   "fileName": "airy.dmg",
   "sha": "0fe4730fa9c2ebf7744e12e1ad5ccef554ace9d7542b8a59bf98228522e1287b",
   "changelog": "https://www.airy-youtube-downloader.com/mac/whats-new/",

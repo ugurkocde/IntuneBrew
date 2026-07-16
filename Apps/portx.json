@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.netsarang.net/0ac7ea20/PortX-2.2.15-arm64.dmg",
   "bundleId": "com.netsarang.portx",
   "homepage": "https://portx.online/",
+  "homebrew_cask": "portx",
   "fileName": "PortX-2.3.0-arm64.dmg",
   "sha": "fe0080499e07837efcadc1d11fce231d7383d7083add87e2ceb17f991a8cc7fe",
   "category": "Utilities",

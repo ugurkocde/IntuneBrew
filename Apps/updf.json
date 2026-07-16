@@ -6,9 +6,10 @@
   "vendor_url": "https://download.updf.com/updf/basic/mac/apple/updf-mac-full.dmg",
   "bundleId": "com.superace.updf.mac",
   "homepage": "https://updf.com/",
+  "homebrew_cask": "updf",
   "fileName": "updf-mac-full.dmg",
   "sha": "e26f3f9cf03703f17a37412f8eb514ff1fdc6b00990ba21e72a90a5e1f4f3bc7",
   "category": "Productivity",
   "publisher": "UPDF",
-  "previous_version": "2.5.4"
+  "previous_version": "2.5.5"
 }

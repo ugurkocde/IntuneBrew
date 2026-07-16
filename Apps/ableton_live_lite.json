@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn-downloads.ableton.com/channels/12.3.7/ableton_live_lite_12.3.7_universal.dmg",
   "bundleId": "com.ableton.live",
   "homepage": "https://www.ableton.com/en/products/live-lite/",
+  "homebrew_cask": "ableton-live-lite",
   "fileName": "ableton_live_lite_12.4.3_universal.dmg",
   "sha": "c925f47fd58a29b0aeb146cec483a20b3f8cf93eba7b28060e9966d899670e86",
   "category": "Media",

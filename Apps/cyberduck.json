@@ -22,5 +22,6 @@
     "installed_version": "9.1.4"
   },
   "category": "Utilities",
-  "publisher": "iterate GmbH"
+  "publisher": "iterate GmbH",
+  "homebrew_cask": "cyberduck"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/typemytype/drawbot/releases/download/3.132/DrawBot.dmg",
   "bundleId": "com.drawbot",
   "homepage": "https://www.drawbot.com/",
+  "homebrew_cask": "drawbot",
   "fileName": "DrawBot.dmg",
   "sha": "e7e39a6b4d2345ed7e81d84914c7681bcc7ee9601a5f4d09e6f3dfce64d1903d",
   "changelog": "https://github.com/typemytype/drawbot/releases",

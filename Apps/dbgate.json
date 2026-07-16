@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/dbgate/dbgate/releases/download/v7.1.8/dbgate-7.1.8-mac_universal.dmg",
   "bundleId": "org.dbgate",
   "homepage": "https://dbgate.org/",
+  "homebrew_cask": "dbgate",
   "fileName": "dbgate-7.2.1-mac_universal.dmg",
   "sha": "96e934bd645ce31dd031800faae4d68925bd16a4ded48b019bda8ea0e7873a9b",
   "changelog": "https://github.com/dbgate/dbgate/releases",

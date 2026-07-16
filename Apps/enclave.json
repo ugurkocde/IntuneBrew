@@ -6,6 +6,7 @@
   "vendor_url": "https://release.enclave.io/enclave_osx-installer-x64-stable-2025.6.2.pkg",
   "bundleId": "com.enclave.Enclave",
   "homepage": "https://enclave.io/",
+  "homebrew_cask": "enclave",
   "fileName": "enclave_osx-installer-x64-stable-2026.6.3.pkg",
   "type": "pkg",
   "sha": "2b306c42f574e60284ad03992960d8c4491f2619034de4a381bd9532029bd652",

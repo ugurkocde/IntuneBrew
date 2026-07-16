@@ -11,5 +11,6 @@
   "previous_version": "4.3.3",
   "sha": "9ea0410a29d7040263708ebdac66e95a5ea8db2eb9bc4ce72d36cdba319ab351",
   "category": "Utilities",
-  "publisher": "coconut-flavour"
+  "publisher": "coconut-flavour",
+  "homebrew_cask": "coconutbattery"
 }

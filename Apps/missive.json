@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.missiveapp.com/11.12.4/Missive-11.12.4.dmg",
   "bundleId": "com.missiveapp.osx",
   "homepage": "https://missiveapp.com/",
+  "homebrew_cask": "missive",
   "fileName": "Missive-11.29.0.dmg",
   "sha": "e748080e964ebf611fb2d4c4029b22bd3e3ae5939484e451d64ee06613370481",
   "category": "Communication",

@@ -6,6 +6,7 @@
   "vendor_url": "https://www.digiexam.com/hubfs/client/Digiexam_Mac_universal.dmg",
   "bundleId": "se.digiexam.DigiExam",
   "homepage": "https://www.digiexam.com/",
+  "homebrew_cask": "digiexam",
   "fileName": "Digiexam_Mac_universal.dmg",
   "sha": "437f17b856a350b15cf5c058bc712eb22707b33f39806c5932e371aef388cbad",
   "category": "Security",

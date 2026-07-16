@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.sourceforge.net/dosbox/dosbox/0.74-3/DOSBox-0.74-3-3.dmg",
   "bundleId": "com.dosbox.dosbox",
   "homepage": "https://www.dosbox.com/",
+  "homebrew_cask": "dosbox",
   "fileName": "DOSBox-0.74-3-3.dmg",
   "sha": "83493d149318cb7bfe5d68d98d1cd10b003db2f0519374bf06de285dc0bb2768",
   "qa_info": {

@@ -6,6 +6,7 @@
   "vendor_url": "https://www.deepl.com/macos/download/26.4/14340455/DeepL.dmg",
   "bundleId": "com.linguee.DeepLCopyTranslator",
   "homepage": "https://www.deepl.com/",
+  "homebrew_cask": "deepl",
   "fileName": "DeepL.dmg",
   "sha": "e5507b544654795fc06d6a73090b3c15421913f6acba0bcbf81f6066bb50917c",
   "changelog": "https://www.deepl.com/changelog.html",

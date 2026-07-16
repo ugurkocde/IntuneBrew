@@ -6,6 +6,7 @@
   "vendor_url": "https://swupdate.sparklabs.com/download/mac/release/viscosity/Viscosity%201.12.1.dmg",
   "bundleId": "com.sparklabs.ViscosityHelper",
   "homepage": "https://www.sparklabs.com/viscosity/",
+  "homebrew_cask": "viscosity",
   "fileName": "Viscosity 1.13.dmg",
   "sha": "cf5f458ffaf0b8df9cd386d9630418171a939425985572a936ffca02a1e0cc0e",
   "category": "Security",

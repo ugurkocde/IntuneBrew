@@ -1,15 +1,16 @@
 {
   "name": "Tower",
   "description": "Git client focusing on power and productivity",
-  "version": "16.0.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/tower_16.0.2.pkg",
+  "version": "17.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tower_17.0.pkg",
   "vendor_url": "https://www.git-tower.com/apps/tower3-mac/524-2420f6bb/Tower-15.1-524.zip",
   "bundleId": "com.fournova.Tower",
   "homepage": "https://www.git-tower.com/",
-  "fileName": "tower_16.0.2.pkg",
+  "fileName": "tower_17.0.pkg",
   "type": "app",
   "previous_version": "16.0.2",
-  "sha": "a273eab92b37468a31c163827b66c71ef0b5b1f520a34e77272323f75c4fddd4",
+  "sha": "babeb90a929533eab41122c5c87a52e640621568d6d25b1bcbaf2f71e78ebfb6",
   "category": "Developer Tools",
-  "publisher": "Absolutist Ltd."
+  "publisher": "Absolutist Ltd.",
+  "homebrew_cask": "tower"
 }

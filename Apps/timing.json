@@ -6,6 +6,7 @@
   "vendor_url": "https://updates.timingapp.com/download/Timing-2026.2.dmg",
   "bundleId": "info.eurocomp.Timing2",
   "homepage": "https://timingapp.com/",
+  "homebrew_cask": "timing",
   "fileName": "Timing-2026.4.1.dmg",
   "sha": "43f74cd2010b89e4864be9a845528455ddb936bdafc905131af6474b0adcad79",
   "category": "Productivity",

@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.google.com/drive-file-stream/5-percent/GoogleDrive.dmg",
   "bundleId": "com.google.drivefs",
   "homepage": "https://www.google.com/drive/",
+  "homebrew_cask": "google-drive",
   "fileName": "google_drive_128.0.0.pkg",
   "type": "pkg_in_dmg",
   "sha": "3a7079c01586677cd7713c367cac1eed9d8bdd428fe4f672651783314875147b",

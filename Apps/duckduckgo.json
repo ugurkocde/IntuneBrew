@@ -6,6 +6,7 @@
   "vendor_url": "https://staticcdn.duckduckgo.com/macos-desktop-browser/duckduckgo-1.184.1.674.dmg",
   "bundleId": "com.duckduckgo.macos.browser",
   "homepage": "https://duckduckgo.com/",
+  "homebrew_cask": "duckduckgo",
   "fileName": "duckduckgo-1.198.0.759.dmg",
   "sha": "e37b38f720468b884951c9c6d063f5734b133aabe29c7820b5bc18dd99fb202b",
   "changelog": "https://github.com/duckduckgo/macos-browser/releases",

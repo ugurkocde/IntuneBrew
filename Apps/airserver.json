@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.airserver.com/mac/AirServer-7.2.7.dmg",
   "bundleId": "com.pratikkumar.airserver-mac.AirServer",
   "homepage": "https://www.airserver.com/",
+  "homebrew_cask": "airserver",
   "fileName": "AirServer-7.3.3.dmg",
   "sha": "e8a6ecd95e5ce8fa1ec92e6107c737e7c3c3ef5eaff6f32cadf1ffa7515faeb0",
   "category": "Utilities",

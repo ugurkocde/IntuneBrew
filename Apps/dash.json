@@ -11,5 +11,6 @@
   "previous_version": "23.1.7",
   "sha": "40208e470cf8282d781c77d19689d3eeffea786f5c54097006bb87f92f2fe055",
   "category": "Developer Tools",
-  "publisher": "Kapeli"
+  "publisher": "Kapeli",
+  "homebrew_cask": "dash-dash"
 }

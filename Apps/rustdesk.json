@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/rustdesk/rustdesk/releases/download/1.4.6/rustdesk-1.4.6-aarch64.dmg",
   "bundleId": "com.carriez.rustdesk",
   "homepage": "https://rustdesk.com/",
+  "homebrew_cask": "rustdesk",
   "fileName": "rustdesk-1.4.9-aarch64.dmg",
   "sha": "f7935597b247d42c8f2a2ed71176a9f5868018cd9e1a33b8096418a668c8caf0",
   "category": "Utilities",

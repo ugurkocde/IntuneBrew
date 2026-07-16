@@ -6,6 +6,7 @@
   "vendor_url": "https://sweetpproductions.com/products/colorwell/ColorWell.dmg",
   "bundleId": "com.sweetpproductions.ColorWell",
   "homepage": "https://colorwell.sweetpproductions.com/",
+  "homebrew_cask": "colorwell",
   "fileName": "ColorWell.dmg",
   "sha": "e58b9dc0f203e2748cba6d5defa4e183289e3ed48db58de62a6224c29ecf4967",
   "category": "Design",

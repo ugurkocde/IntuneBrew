@@ -11,5 +11,8 @@
   "category": "Developer Tools",
   "publisher": "OpenAI",
   "previous_version": "26.623.141536",
-  "sha": "6eca51da02b3c9dd211c22f0a772289ed7fc92b74955d2acec98d8c3279bac98"
+  "sha": "6eca51da02b3c9dd211c22f0a772289ed7fc92b74955d2acec98d8c3279bac98",
+  "homebrew_cask": "codex-app",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: discontinued"
 }

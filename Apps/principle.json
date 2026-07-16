@@ -12,5 +12,6 @@
   "changelog": "https://principleformac.com/changeLog.html",
   "previous_version": "6.43",
   "category": "Design",
-  "publisher": "Principle"
+  "publisher": "Principle",
+  "homebrew_cask": "principle"
 }

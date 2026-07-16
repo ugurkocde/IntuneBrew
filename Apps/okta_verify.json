@@ -6,6 +6,7 @@
   "vendor_url": "https://okta.okta.com/artifacts/OKTA_VERIFY_MACOS/9.59.0/OktaVerify-9.59.0-6053-5038b2d.pkg",
   "bundleId": "com.okta.mobile",
   "homepage": "https://help.okta.com/eu/en-us/content/topics/end-user/ov-overview-macos.htm",
+  "homebrew_cask": "okta-verify",
   "fileName": "OktaVerify-9.65.2-6267-e16ccd4.pkg",
   "type": "pkg",
   "sha": "d81ccc36deb3af3b9ba9334859c1523f697a30dc943fe0efa28d85eaff91f31f",

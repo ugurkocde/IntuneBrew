@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.electronic.us/products/folx/mac/download/downloader_mac.dmg",
   "bundleId": "com.eltima.Folx3",
   "homepage": "https://mac.eltima.com/download-manager.html",
+  "homebrew_cask": "folx",
   "fileName": "downloader_mac.dmg",
   "sha": "5533458b2d767aeb043b2676ad710f6d9236de8d1a9dc02994114c30cf6f02be",
   "category": "Utilities",

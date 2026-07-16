@@ -6,6 +6,7 @@
   "vendor_url": "https://edge.elgato.com/egc/macos/sd/Stream_Deck_7.4.1.22720.pkg",
   "bundleId": "com.elgato.StreamDeck",
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
+  "homebrew_cask": "elgato-stream-deck",
   "fileName": "Stream_Deck_7.5.0.22885.pkg",
   "sha": "f72bb32e71540d96804c85c831e6f72ac4d86a111793f6ebb5afc15fa5b50b5a",
   "changelog": "https://help.elgato.com/hc/en-us/sections/5162671529357-Elgato-Stream-Deck-Software-Release-Notes",

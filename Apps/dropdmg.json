@@ -6,6 +6,7 @@
   "vendor_url": "https://c-command.com/downloads/DropDMG-3.7.1.dmg",
   "bundleId": "com.c-command.DropDMG",
   "homepage": "https://c-command.com/dropdmg/",
+  "homebrew_cask": "dropdmg",
   "fileName": "DropDMG-3.7.1.dmg",
   "sha": "de2f4a0ea35a9efe054c810fa1326308a5ed93599f0a51d8e6a830c351ab5e8b",
   "changelog": "https://c-command.com/dropdmg/help/change-log",

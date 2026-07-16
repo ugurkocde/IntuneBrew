@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn-updates.orbstack.dev/arm64/OrbStack_v2.0.5_19905_arm64.dmg",
   "bundleId": "dev.kdrag0n.MacVirt",
   "homepage": "https://orbstack.dev/",
+  "homebrew_cask": "orbstack",
   "fileName": "OrbStack_v2.2.1_20628_arm64.dmg",
   "sha": "5bc1719c3c987c4c60c65be9fdd65b4730990e1697ec1cb1c33e6bba31bf92b5",
   "changelog": "https://docs.orbstack.dev/changelog",

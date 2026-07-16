@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.22.0/Rancher.Desktop-1.22.0.aarch64.dmg",
   "bundleId": "io.rancherdesktop.app",
   "homepage": "https://rancherdesktop.io/",
+  "homebrew_cask": "rancher",
   "fileName": "Rancher.Desktop-1.23.1.aarch64.dmg",
   "sha": "4b4a3a06923d14b703da99d519268b8972d00104db4b8564d49faec64dcaee50",
   "changelog": "https://github.com/rancher-sandbox/rancher-desktop/releases",

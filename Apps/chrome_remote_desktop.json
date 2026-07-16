@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.google.com/chrome-remote-desktop/chromeremotedesktop.dmg",
   "bundleId": "com.google.chromeremotedesktop.me2me-host",
   "homepage": "https://chrome.google.com/webstore/detail/chrome-remote-desktop/inomeogfingihgjfjlpeplalcfajhgai",
+  "homebrew_cask": "chrome-remote-desktop-host",
   "fileName": "chrome_remote_desktop_151.0.7922.13.pkg",
   "type": "pkg_in_dmg",
   "changelog": "https://support.google.com/chrome/a/answer/7679408",
@@ -22,5 +23,5 @@
   },
   "category": "Utilities",
   "publisher": "Google LLC",
-  "previous_version": "149.0.7827.18"
+  "previous_version": "151.0.7922.13"
 }

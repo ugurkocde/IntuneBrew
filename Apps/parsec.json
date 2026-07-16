@@ -6,6 +6,7 @@
   "vendor_url": "https://builds.parsec.app/package/parsec-macos.pkg",
   "bundleId": "tv.parsec.www",
   "homepage": "https://parsec.app/",
+  "homebrew_cask": "parsec",
   "fileName": "parsec-macos.pkg",
   "type": "pkg",
   "sha": "30aa280287255b8ecc38456a4edf5da1960b19f08ae4c8bd86e6a10a2ec92940",

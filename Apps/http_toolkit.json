@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.25.1/HttpToolkit-1.25.1-arm64.dmg",
   "bundleId": "tech.httptoolkit.desktop",
   "homepage": "https://httptoolkit.tech/",
+  "homebrew_cask": "http-toolkit",
   "fileName": "HttpToolkit-1.26.1-arm64.dmg",
   "sha": "f7c2f5360ce12e6de1df3d9dbc0888634fc9e4a3db5a7d2f80548155a82863b4",
   "category": "Developer Tools",

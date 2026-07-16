@@ -11,5 +11,6 @@
   "sha": "7db31964350b8c7b0a114a06ef83af40491ce76c08e255b5e82aa573366f6cfa",
   "previous_version": "2.16.4",
   "category": "Productivity",
-  "publisher": "Superwhisper"
+  "publisher": "Superwhisper",
+  "homebrew_cask": "superwhisper"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg",
   "bundleId": "com.ocenaudio",
   "homepage": "https://www.ocenaudio.com/en",
+  "homebrew_cask": "ocenaudio",
   "fileName": "ocenaudio_universal.dmg",
   "sha": "b92682248c0c093eee49e682d0ddbd18edfbbc17342bc9dd7d29ac60c9b33718",
   "category": "Media",

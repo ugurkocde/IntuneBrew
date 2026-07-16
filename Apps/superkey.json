@@ -6,6 +6,7 @@
   "vendor_url": "https://superkey.app/downloads/Superkey1.60.dmg",
   "bundleId": "com.knollsoft.Superkey",
   "homepage": "https://superkey.app/",
+  "homebrew_cask": "superkey",
   "fileName": "Superkey1.66.dmg",
   "sha": "cf2e19a2ed79cf2230efa5a6b1baf19da4278e5e3b834c62043fec65790cc918",
   "category": "Utilities",

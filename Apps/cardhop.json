@@ -11,5 +11,6 @@
   "sha": "0b7875295c1516184494e82a27aa0848a18429449b581771b8cc0eb44bb7c947",
   "category": "Productivity",
   "publisher": "Flexibits",
-  "previous_version": "2.4.8"
+  "previous_version": "2.4.8",
+  "homebrew_cask": "cardhop"
 }

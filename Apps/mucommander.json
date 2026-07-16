@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/mucommander/mucommander/releases/download/1.6.0-1/muCommander-1.6.0-1-aarch64.dmg",
   "bundleId": "com.mucommander.muCommander",
   "homepage": "https://www.mucommander.com/",
+  "homebrew_cask": "mucommander",
   "fileName": "muCommander-1.6.2-1-aarch64.dmg",
   "sha": "212a290fbf48040a6f4fff04b7a050ff81527e3ecb81bcde7155d52dca2103c0",
   "category": "Utilities",

@@ -6,6 +6,7 @@
   "vendor_url": "https://file-assets.apidog.com/download/2.8.24/legacy-Apidog-macOS-arm64-2.8.24.dmg",
   "bundleId": "com.apidog.app",
   "homepage": "https://apidog.com/",
+  "homebrew_cask": "apidog",
   "fileName": "legacy-Apidog-macOS-arm64-2.8.38.dmg",
   "sha": "e72f4050401e19a1c7bccbb434170b9867067f4088bc885d32873028a315d09e",
   "changelog": "https://apidog.com/blog/",

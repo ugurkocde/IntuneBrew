@@ -11,5 +11,6 @@
   "sha": "b911822090f77583903c71084275a065a14338865ba5534afc46567872b4224c",
   "previous_version": "0.10.5",
   "category": "Utilities",
-  "publisher": "KeyCastr"
+  "publisher": "KeyCastr",
+  "homebrew_cask": "keycastr"
 }

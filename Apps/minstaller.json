@@ -11,5 +11,6 @@
   "sha": "fb5db4c66cbd955b707ddd7ba5ff6b82fe4ee65d26d2efd49ef7340cbd793116",
   "category": "Utilities",
   "publisher": "MotionVFX",
-  "previous_version": "3.2.5"
+  "previous_version": "3.2.5",
+  "homebrew_cask": "minstaller"
 }

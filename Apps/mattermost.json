@@ -11,5 +11,6 @@
   "sha": "69e46349d006265fe04df805885bcafe7fa779a07698aa01d66c5e506acc3aab",
   "previous_version": "6.2.2",
   "category": "Communication",
-  "publisher": "Mattermost, Inc."
+  "publisher": "Mattermost, Inc.",
+  "homebrew_cask": "mattermost"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://multitouch.app/downloads/multitouch1.43.dmg",
   "bundleId": "com.brassmonkery.Multitouch",
   "homepage": "https://multitouch.app/",
+  "homebrew_cask": "multitouch",
   "fileName": "multitouch1.48.dmg",
   "sha": "11c8ed3adaa03fcd7d7de67119e22749a88cb1bec1b607d63321b312e22a2b78",
   "category": "Utilities",

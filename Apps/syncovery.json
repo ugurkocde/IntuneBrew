@@ -6,6 +6,7 @@
   "vendor_url": "https://www.syncovery.com/release/SyncoveryMac11.14.4-Apple.dmg",
   "bundleId": "com.superflexible.Syncovery",
   "homepage": "https://www.syncovery.com/",
+  "homebrew_cask": "syncovery",
   "fileName": "SyncoveryMac11.15.16-Apple.dmg",
   "category": "Utilities",
   "publisher": "Syncovery",

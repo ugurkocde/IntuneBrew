@@ -6,6 +6,7 @@
   "vendor_url": "https://d1riogbqt3a9uw.cloudfront.net/mellel_66510.dmg",
   "bundleId": "com.redlex.mellel6",
   "homepage": "https://www.mellel.com/",
+  "homebrew_cask": "mellel",
   "fileName": "mellel_67002.dmg",
   "sha": "f8833dc531d5d028fe0fed2aef033a61f4330dd75b0a931825b0f3ce9a6e727f",
   "category": "Productivity",

@@ -12,5 +12,8 @@
   "changelog": "https://github.com/ollama/ollama/releases",
   "previous_version": "0.9.2",
   "category": "Developer Tools",
-  "publisher": "Ollama"
+  "publisher": "Ollama",
+  "homebrew_cask": "ollama",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

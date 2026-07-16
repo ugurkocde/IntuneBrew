@@ -11,5 +11,6 @@
   "previous_version": "2.4.10",
   "sha": "51c5c6dc034269059452ac8889d178da4891d37fdd2eda9734e19c418c00e7b2",
   "category": "Utilities",
-  "publisher": "Rogue Amoeba"
+  "publisher": "Rogue Amoeba",
+  "homebrew_cask": "loopback"
 }

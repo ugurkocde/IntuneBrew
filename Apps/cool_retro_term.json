@@ -10,5 +10,8 @@
   "sha": "605610df37b6ed92fac14d5e34a83350148e989b10ad9550d3403187fb974e48",
   "category": "Developer Tools",
   "publisher": "Swordfish90",
-  "previous_version": "1.2.0"
+  "previous_version": "1.2.0",
+  "homebrew_cask": "cool-retro-term",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

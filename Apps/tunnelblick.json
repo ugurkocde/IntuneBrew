@@ -6,6 +6,7 @@
   "vendor_url": "https://tunnelblick.net/iprelease/Tunnelblick_8.0.1_build_6301.dmg",
   "bundleId": "net.tunnelblick.tunnelblick",
   "homepage": "https://www.tunnelblick.net/",
+  "homebrew_cask": "tunnelblick",
   "fileName": "Tunnelblick_8.0.3_build_6303.dmg",
   "sha": "20c73f78697e4f4baf1c443dff7c494bd9746c9def92b0d5fdb0c1d689d241d7",
   "category": "Security",

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/cryptomator/cryptomator/releases/download/1.19.2/Cryptomator-1.19.2-arm64.dmg",
   "bundleId": "org.cryptomator",
   "homepage": "https://cryptomator.org/",
+  "homebrew_cask": "cryptomator",
   "fileName": "Cryptomator-1.19.3-arm64.dmg",
   "sha": "0bfe8c6aeb97acf638810e3e576016db510bc7bf71366dc00f3c7eea9a314f23",
   "qa_info": {

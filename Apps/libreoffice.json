@@ -6,6 +6,7 @@
   "vendor_url": "https://download.documentfoundation.org/libreoffice/stable/26.2.2/mac/aarch64/LibreOffice_26.2.2_MacOS_aarch64.dmg",
   "bundleId": "org.libreoffice.script",
   "homepage": "https://www.libreoffice.org/",
+  "homebrew_cask": "libreoffice",
   "fileName": "LibreOffice_26.2.4_MacOS_aarch64.dmg",
   "sha": "64e0ad05564554eeee639d49b08b20908a38d4722ec95f1620d05c99bcbe9fb1",
   "changelog": "https://www.libreoffice.org/download/release-notes/",

@@ -6,6 +6,7 @@
   "vendor_url": "https://handbrake.fr/rotation.php?file=HandBrake-1.11.1.dmg&update=true",
   "bundleId": "fr.handbrake.HandBrake",
   "homepage": "https://handbrake.fr/",
+  "homebrew_cask": "handbrake-app",
   "fileName": "HandBrake-1.11.2.dmg",
   "sha": "4afe27aaa77a7bbb0dcda1a335d96a5f53649f2649fb84de6982ffecc35de9d7",
   "category": "Media",

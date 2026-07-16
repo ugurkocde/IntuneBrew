@@ -12,5 +12,6 @@
   "publisher": "TechSmith Corporation",
   "previous_version": "1.3.31",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: no_longer_available"
+  "deprecation_reason": "disabled in Homebrew: no_longer_available",
+  "homebrew_cask": "techsmith-capture"
 }

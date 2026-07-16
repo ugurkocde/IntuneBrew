@@ -21,5 +21,6 @@
     "installed_version": "11.1.0"
   },
   "category": "Developer Tools",
-  "publisher": "Axosoft, Inc."
+  "publisher": "Axosoft, Inc.",
+  "homebrew_cask": "gitkraken"
 }

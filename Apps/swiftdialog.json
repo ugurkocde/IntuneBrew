@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/swiftDialog/swiftDialog/releases/download/v3.0.1/dialog-3.0.1-4955.pkg",
   "bundleId": "au.csiro.dialogcli",
   "homepage": "https://swiftdialog.app/",
+  "homebrew_cask": "swiftdialog",
   "fileName": "dialog-3.1.0-4994.pkg",
   "type": "pkg",
   "sha": "462921537425146b00b936448e518578b58d5177c039a609532cfea349c3e166",

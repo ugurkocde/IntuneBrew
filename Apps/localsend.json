@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/localsend/localsend/releases/download/v1.17.0/LocalSend-1.17.0.dmg",
   "bundleId": "org.localsend.localsendApp",
   "homepage": "https://localsend.org/",
+  "homebrew_cask": "localsend",
   "fileName": "LocalSend-1.17.0.dmg",
   "sha": "fdf1a42ee13eb9fdd6ae94dc5883981e8a09599e758bde23f6e677c4fab5c93c",
   "category": "Utilities",

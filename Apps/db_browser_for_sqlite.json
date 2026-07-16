@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/sqlitebrowser/sqlitebrowser/releases/download/v3.13.1/DB.Browser.for.SQLite-v3.13.1.dmg",
   "bundleId": "net.sourceforge.sqlitebrowser",
   "homepage": "https://sqlitebrowser.org/",
+  "homebrew_cask": "db-browser-for-sqlite",
   "fileName": "DB.Browser.for.SQLite-v3.13.1.dmg",
   "sha": "a641cfbfcc2ce609f07de44a35134dab53485ecc18e6d9afa297b514d74bd75e",
   "changelog": "https://sqlitebrowser.org/blog/",

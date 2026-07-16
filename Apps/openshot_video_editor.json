@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/OpenShot/openshot-qt/releases/download/v3.5.1/OpenShot-v3.5.1-x86_64.dmg",
   "bundleId": "org.openshot.OpenShot",
   "homepage": "https://openshot.org/",
+  "homebrew_cask": "openshot-video-editor",
   "fileName": "OpenShot-v3.5.1-x86_64.dmg",
   "sha": "c9207253e5ad962ec6d5adb36b9f269add43394394b5f9493e222d07c23256d1",
   "category": "Media",

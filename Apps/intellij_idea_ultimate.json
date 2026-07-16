@@ -6,6 +6,7 @@
   "vendor_url": "https://download.jetbrains.com/idea/ideaIU-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.intellij",
   "homepage": "https://www.jetbrains.com/idea/",
+  "homebrew_cask": "intellij-idea",
   "fileName": "ideaIU-2026.1.4-aarch64.dmg",
   "sha": "5c804affe2f16b3f5d5fe2f197b1d7b25f99dd9ec60734ae0f136cb1bff8036b",
   "category": "Developer Tools",

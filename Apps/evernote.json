@@ -6,6 +6,7 @@
   "vendor_url": "https://mac.desktop.evernote.com/builds/Evernote-10.105.4-mac-ddl-stage-20240910164757-a2e60a8d876a07eded5d212fa56ba45214114ad0.dmg",
   "bundleId": "com.evernote.Evernote",
   "homepage": "https://evernote.com/",
+  "homebrew_cask": "evernote",
   "fileName": "Evernote-10.105.4-mac-ddl-stage-20240910164757-a2e60a8d876a07eded5d212fa56ba45214114ad0.dmg",
   "sha": "98d1f6d52718a0b05222b7cdce14a3755ece619edf0a1b8557af75afbfe2cd73",
   "changelog": "https://evernote.com/release-notes",

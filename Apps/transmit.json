@@ -11,5 +11,6 @@
   "sha": "aefdcce3871c5d4ce15205cbdd64ddd5f7eb73a876662ee974cbf9c23fb169ca",
   "previous_version": "5.11.6",
   "category": "Utilities",
-  "publisher": "Panic, Inc."
+  "publisher": "Panic, Inc.",
+  "homebrew_cask": "transmit"
 }

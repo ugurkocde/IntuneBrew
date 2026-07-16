@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/adoptium/temurin26-binaries/releases/download/jdk-26%2B35/OpenJDK26U-jdk_aarch64_mac_hotspot_26_35.pkg",
   "bundleId": "net.temurin.23.jdk",
   "homepage": "https://adoptium.net/",
+  "homebrew_cask": "temurin",
   "fileName": "OpenJDK26U-jdk_aarch64_mac_hotspot_26.0.1_8.pkg",
   "sha": "cbca2c87323aa7aaa6d8d5bfb6424dfaabc7abc7369d33a26edc78ec891ededa",
   "changelog": "https://adoptium.net/de/temurin/releases/?os=mac&version=23",

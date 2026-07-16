@@ -6,6 +6,7 @@
   "vendor_url": "https://macrelease.matthewpalmer.net/distribution/appcasts/Rocket-88.dmg",
   "bundleId": "net.matthewpalmer.Rocket",
   "homepage": "https://matthewpalmer.net/rocket/",
+  "homebrew_cask": "rocket",
   "fileName": "Rocket-88.dmg",
   "sha": "a6050156f5cf583fdd8d7f2714967d0d06f9547f91ef9d3ba094f076e0a58c34",
   "category": "Utilities",

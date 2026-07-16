@@ -6,6 +6,7 @@
   "vendor_url": "https://su.airbuddy.app/kCRSAmcjBc/AirBuddy_v2.7.4-650.dmg",
   "bundleId": "codes.rambo.AirBuddy",
   "homepage": "https://airbuddy.app/",
+  "homebrew_cask": "airbuddy",
   "fileName": "AirBuddy_v2.8.1-660.dmg",
   "sha": "61e3b5ce63d1345e3a126b91a75e3627d491bd6cc7ada5abd7e56eaad849cec4",
   "qa_info": {

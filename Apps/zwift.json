@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.zwift.com/app/ZwiftOSX.dmg",
   "bundleId": "com.zwift.ZwiftLauncher",
   "homepage": "https://www.zwift.com/",
+  "homebrew_cask": "zwift",
   "fileName": "ZwiftOSX.dmg",
   "sha": "ac459afcd8ac5627aa788fb331a23fdd1ea5c132519b4888a2f5a091d9feefa9",
   "category": "Other",

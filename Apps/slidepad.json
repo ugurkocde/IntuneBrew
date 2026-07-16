@@ -11,5 +11,6 @@
   "sha": "7d4a3dc404d096e200b4322353a1267ecd5ae63f0e5e00b4e9d8cce9331274cb",
   "category": "Utilities",
   "publisher": "Slidepad",
-  "previous_version": "1.6.2"
+  "previous_version": "1.6.2",
+  "homebrew_cask": "slidepad"
 }

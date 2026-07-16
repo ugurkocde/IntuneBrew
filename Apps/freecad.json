@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.0/FreeCAD_1.1.0-macOS-arm64-py311.dmg",
   "bundleId": "org.freecad.FreeCAD",
   "homepage": "https://www.freecad.org/",
+  "homebrew_cask": "freecad",
   "fileName": "FreeCAD_1.1.1-macOS-arm64-py311.dmg",
   "sha": "fbcab489c3d37057c2283e298ef2d50c4930cc988fb331ea7df3ad75879e3949",
   "changelog": "https://github.com/FreeCAD/FreeCAD/releases",

@@ -11,5 +11,6 @@
   "sha": "c802d8a6634ee40996b280686df78cbfa381bc0944768373e4bf0c81f89a2d50",
   "category": "Utilities",
   "publisher": "root3nl",
-  "previous_version": "3.0.3"
+  "previous_version": "3.0.3",
+  "homebrew_cask": "support"
 }

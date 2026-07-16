@@ -6,6 +6,7 @@
   "vendor_url": "https://download.crashplan.com/installs/agent/cloud/11.9.1/19/install/CrashPlan_11.9.1_19_Mac.dmg",
   "bundleId": "com.crashplan.desktop",
   "homepage": "https://www.crashplan.com/",
+  "homebrew_cask": "crashplan",
   "fileName": "crashplan_12.0.0.pkg",
   "type": "pkg_in_dmg",
   "sha": "1b1df29a8bb34c841e400fb940c182e2ab68cf74907cb1de6c38a14b7c1f7c03",

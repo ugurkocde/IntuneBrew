@@ -11,5 +11,6 @@
   "sha": "8c724862fd169fe0a6c22b920c2411cac0be2ab2e6436ef441bc4ad7e80a21b1",
   "category": "Productivity",
   "publisher": "Standard Notes",
-  "previous_version": "3.201.21"
+  "previous_version": "3.201.21",
+  "homebrew_cask": "standard-notes"
 }

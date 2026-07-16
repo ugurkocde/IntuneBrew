@@ -11,5 +11,6 @@
   "sha": "e5bcdce12eb9d6f341889d7d1ff25050db20c74d5365816b4a4309000325dcd5",
   "category": "Developer Tools",
   "publisher": "Ji4n1ng",
-  "previous_version": "2.3.9"
+  "previous_version": "2.3.9",
+  "homebrew_cask": "openinterminal"
 }

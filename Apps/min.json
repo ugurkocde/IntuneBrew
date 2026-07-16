@@ -11,5 +11,8 @@
   "previous_version": "1.35.6",
   "sha": "2b132bbf3b267a1e26bb42d588193bec10c80b718b0b25c36a8eccd4672ee300",
   "category": "Browsers",
-  "publisher": "Min"
+  "publisher": "Min",
+  "homebrew_cask": "min",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

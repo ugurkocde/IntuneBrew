@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn-dist.emclient.com/dist/v10.4.5326_Mac/setup.pkg",
   "bundleId": "com.emclient.mail.client",
   "homepage": "https://www.emclient.com/",
+  "homebrew_cask": "emclient",
   "fileName": "setup.pkg",
   "type": "pkg",
   "sha": "646bcf6b01a2d3735356ff90c726e257616ddc1c9fd8f791f6f590e803fe2506",

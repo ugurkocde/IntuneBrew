@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/tom-james-watson/breaktimer-app/releases/download/v2.0.3/BreakTimer.dmg",
   "bundleId": "com.tomjwatson.breaktimer",
   "homepage": "https://breaktimer.app/",
+  "homebrew_cask": "breaktimer",
   "fileName": "BreakTimer.dmg",
   "sha": "2b5d3d3a8b9b85c5f41b4eb4384a341ecf6d7d2c0b377619e051a97ceb9ebfdd",
   "changelog": "https://github.com/tom-james-watson/breaktimer-app/releases",

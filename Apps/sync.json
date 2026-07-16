@@ -6,6 +6,7 @@
   "vendor_url": "https://www10.sync.com/download/apple/Sync-2.2.57.dmg",
   "bundleId": "com.sync.desktop",
   "homepage": "https://www.sync.com/",
+  "homebrew_cask": "sync",
   "fileName": "Sync-2.2.60.dmg",
   "sha": "4140c5fd9c6fb748329b43986113bafe71b6073bd844590167ab8c7d1651a1cf",
   "changelog": "https://www.sync.com/blog/",

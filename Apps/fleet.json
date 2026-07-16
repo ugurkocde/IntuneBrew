@@ -10,5 +10,8 @@
   "sha": "09e0d68820830e3ef43161f1d3d39a5ff3075ae90b0bfaa48b9b33a6bcf5d4ae",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
-  "previous_version": "1.48.261"
+  "previous_version": "1.48.261",
+  "homebrew_cask": "fleet",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: no_longer_available"
 }

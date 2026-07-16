@@ -6,6 +6,7 @@
   "vendor_url": "https://download.airsquirrels.com/Reflector4/Mac/Reflector-4.1.2.dmg",
   "bundleId": "com.squirrels.Reflector-4",
   "homepage": "https://www.airsquirrels.com/reflector/",
+  "homebrew_cask": "reflector",
   "fileName": "Reflector-4.1.2.dmg",
   "sha": "343c74569d8e6f5a0c33c76cd2fc6b7c4eb98db568e633d40c6f177b36294ce3",
   "category": "Utilities",

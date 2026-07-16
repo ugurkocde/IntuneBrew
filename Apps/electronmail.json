@@ -10,5 +10,8 @@
   "sha": "577d968b4a0253d74b7f3ab183739db1e8882d7ef03e2046373ecab86d2f9596",
   "category": "Communication",
   "publisher": "vladimiry",
-  "previous_version": "5.3.8"
+  "previous_version": "5.3.8",
+  "homebrew_cask": "electronmail",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

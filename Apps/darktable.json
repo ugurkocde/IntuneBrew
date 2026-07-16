@@ -10,5 +10,8 @@
   "sha": "49aec447e891ab481e436b4c0231fc3c8d0001aad220762ae8e765d3bda5d102",
   "category": "Media",
   "publisher": "darktable",
-  "previous_version": "5.6.0"
+  "previous_version": "5.6.0",
+  "homebrew_cask": "darktable",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

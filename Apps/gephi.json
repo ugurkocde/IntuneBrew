@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/gephi/gephi/releases/download/v0.10.1/gephi-0.10.1-macos-aarch64.dmg",
   "bundleId": "org.gephi",
   "homepage": "https://gephi.org/",
+  "homebrew_cask": "gephi",
   "fileName": "gephi-0.11.2-macos-aarch64.dmg",
   "sha": "c5ab54d387386f568b400c03d6918a7a99232de828e29f6eb36c79d86f435fa8",
   "qa_info": {

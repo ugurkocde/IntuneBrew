@@ -21,5 +21,6 @@
     "installed_version": "1.6.3"
   },
   "category": "Media",
-  "publisher": "FlowVision"
+  "publisher": "FlowVision",
+  "homebrew_cask": "flowvision"
 }

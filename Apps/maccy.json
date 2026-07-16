@@ -12,5 +12,6 @@
   "changelog": "https://github.com/p0deje/Maccy/releases",
   "previous_version": "2.6.1",
   "category": "Utilities",
-  "publisher": "Maccy"
+  "publisher": "Maccy",
+  "homebrew_cask": "maccy"
 }

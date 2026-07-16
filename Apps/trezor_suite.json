@@ -6,6 +6,7 @@
   "vendor_url": "https://data.trezor.io/suite/releases/desktop/latest/Trezor-Suite-26.3.3-mac-arm64.dmg",
   "bundleId": "io.trezor.TrezorSuite",
   "homepage": "https://suite.trezor.io/",
+  "homebrew_cask": "trezor-suite",
   "fileName": "Trezor-Suite-26.6.1-mac-arm64.dmg",
   "sha": "9876f1f0608a7fa7b280173a90166409a85caa3848f652cb2c71305c63ec9b7e",
   "category": "Security",

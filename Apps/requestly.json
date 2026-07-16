@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/requestly/requestly-desktop-app/releases/download/v26.3.3/Requestly-26.3.3-arm64.dmg",
   "bundleId": "io.requestly.beta",
   "homepage": "https://requestly.com/",
+  "homebrew_cask": "requestly",
   "fileName": "Requestly-26.6.29-arm64.dmg",
   "sha": "e8eebb6db725b079306973f74a453c2b707924d8a44c641b3a531eac83758bfc",
   "category": "Developer Tools",

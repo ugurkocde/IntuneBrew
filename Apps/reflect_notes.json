@@ -11,5 +11,6 @@
   "sha": "7a1d7d2394efcd22d643d0c14338df0b3b1636abc3e6d0b5340908d7434fd9f7",
   "category": "Productivity",
   "publisher": "Reflect",
-  "previous_version": "3.3.6"
+  "previous_version": "3.3.6",
+  "homebrew_cask": "reflect"
 }

@@ -11,5 +11,6 @@
   "sha": "c81643fce92520ca975a71c8ba7e1fab24f4a9bd21fea398ce53d64b7a975f7e",
   "category": "Communication",
   "publisher": "Notion Labs, Inc.",
-  "previous_version": "0.0.45"
+  "previous_version": "0.0.45",
+  "homebrew_cask": "notion-mail"
 }

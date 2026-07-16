@@ -6,6 +6,7 @@
   "vendor_url": "https://download.mural.co/mac-app/Mural-3.0.4.dmg",
   "bundleId": "co.mural.macOS",
   "homepage": "https://mural.co/",
+  "homebrew_cask": "mural",
   "fileName": "Mural-3.0.4.dmg",
   "sha": "7f92a2eb91e5824d6a5cd3eee8619cab2edb4fdce0da5a2bed7cf85a0a4846c9",
   "category": "Design",

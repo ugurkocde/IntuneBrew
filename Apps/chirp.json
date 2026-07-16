@@ -12,5 +12,6 @@
   "publisher": "DanPlanet",
   "previous_version": "20250801",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: cannot be reliably fetched due to Cloudflare protections"
+  "deprecation_reason": "disabled in Homebrew: cannot be reliably fetched due to Cloudflare protections",
+  "homebrew_cask": "chirp"
 }

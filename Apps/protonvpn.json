@@ -6,6 +6,7 @@
   "vendor_url": "https://vpn.protondownload.com/download/macos/6.4.0/ProtonVPN_mac_v6.4.0.dmg",
   "bundleId": "ch.protonvpn.mac",
   "homepage": "https://protonvpn.com/",
+  "homebrew_cask": "protonvpn",
   "fileName": "ProtonVPN_mac_v6.5.1.dmg",
   "sha": "d50a49f14c50b0ef8ad68a89fc9685d5699ba2d4f92cb4c34317291b425435f8",
   "changelog": "https://protonvpn.com/blog/macos-app-changelog/",

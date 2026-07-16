@@ -11,5 +11,6 @@
   "sha": "d4e580b4ca9802bec03ecaddbe733a7c15d5d001993ca052d8229530c1d15fe5",
   "previous_version": "3.2.0",
   "category": "Utilities",
-  "publisher": "artginzburg"
+  "publisher": "artginzburg",
+  "homebrew_cask": "middleclick"
 }

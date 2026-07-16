@@ -11,5 +11,8 @@
   "sha": "9b0bb2c027cb10be58e556c038abe6bf8ef7008f177678029f17fea52fbac8fc",
   "category": "Developer Tools",
   "publisher": "GitHub, Inc.",
-  "previous_version": "43.1.1"
+  "previous_version": "43.1.1",
+  "homebrew_cask": "electron",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

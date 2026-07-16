@@ -6,6 +6,7 @@
   "vendor_url": "https://sweetpproductions.com/products/hides/Hides.dmg",
   "bundleId": "com.sweetpproductions.Hides",
   "homepage": "https://hides.sweetpproductions.com/",
+  "homebrew_cask": "hides",
   "fileName": "Hides.dmg",
   "sha": "f38fbf0663cb9dde4a7e0ebcf208a300d78738ad2003ce5c96f5a0ba185cd6ca",
   "category": "Utilities",

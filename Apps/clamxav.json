@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.clamxav.com/ClamXAVdownloads/ClamXAV_3.10_11436_Installer.pkg",
   "bundleId": "uk.co.canimaansoftware.clamxav",
   "homepage": "https://www.clamxav.com/",
+  "homebrew_cask": "clamxav",
   "fileName": "ClamXAV_3.10.2_11619_Installer.pkg",
   "type": "pkg",
   "sha": "efabbcb563129646de6f03211fc426f09111a264cd7c34d7b7a2207c606afd84",

@@ -6,6 +6,7 @@
   "vendor_url": "https://dcdn.typefaceapp.com/Typeface-4.2.3-4845/Typeface-4.2.3-4845.dmg",
   "bundleId": "com.criminalbird.typeface.standalone",
   "homepage": "https://typefaceapp.com/",
+  "homebrew_cask": "typeface",
   "fileName": "Typeface-4.4.0-5132.dmg",
   "sha": "3f85feea17d881e36b668f4c69d180daa7947ece680ffef147133010be2bc287",
   "category": "Design",

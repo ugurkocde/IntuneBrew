@@ -11,5 +11,6 @@
   "sha": "d4b8ca67e60cc24419a63709af95845b4c7052755dab2fed7b9b669a17c0d399",
   "category": "Utilities",
   "publisher": "SmoothScroll",
-  "previous_version": "1.7.6"
+  "previous_version": "1.7.6",
+  "homebrew_cask": "smoothscroll"
 }

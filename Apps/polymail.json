@@ -6,6 +6,7 @@
   "vendor_url": "https://sparkle-updater.polymail.io/macos-arm64/builds/Polymail-v2.4.3003.dmg",
   "bundleId": "io.polymail.osx",
   "homepage": "https://polymail.io/",
+  "homebrew_cask": "polymail",
   "fileName": "Polymail-v2.4.3005.dmg",
   "sha": "3c3053489bbd64a76773b46783eb018bf43d75eace3cf1731b9eaaf462aeb643",
   "category": "Productivity",

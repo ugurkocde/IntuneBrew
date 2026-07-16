@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/PrajwalSD/Dockside/releases/download/v2.6.0/Dockside.dmg",
   "bundleId": "com.hachipoo.Dockside",
   "homepage": "https://hachipoo.com/dockside-app",
+  "homebrew_cask": "dockside",
   "fileName": "Dockside.dmg",
   "sha": "d83f359af3fc85971269d13db3fe706c23ee7fa706a66e298256340d33b16123",
   "qa_info": {

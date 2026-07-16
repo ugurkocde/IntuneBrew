@@ -6,6 +6,7 @@
   "vendor_url": "https://www.ergonis.com/downloads/products/typinator/Typinator100-Install.dmg",
   "bundleId": "com.macility.typinator2",
   "homepage": "https://www.ergonis.com/products/typinator/",
+  "homebrew_cask": "typinator",
   "fileName": "Typinator_101.dmg",
   "sha": "223b0ef7d877274ba0133aaf1bf836ff06a3122e0683c82f790446a6d038fd77",
   "category": "Productivity",

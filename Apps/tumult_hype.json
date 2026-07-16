@@ -6,6 +6,7 @@
   "vendor_url": "https://tumult.com/hype/download/Hype-778.dmg",
   "bundleId": "com.tumult.Hype4",
   "homepage": "https://tumult.com/hype/",
+  "homebrew_cask": "hype",
   "fileName": "Hype-780.dmg",
   "sha": "06ebcae431416dabfcd10bdc7a8906f6c96a3ab6b2d43eae212fab79eaec6a5e",
   "category": "Design",

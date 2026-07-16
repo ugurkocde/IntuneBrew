@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/YACReader/yacreader/releases/download/9.16.3/YACReader-9.16.3.26010361.MacOSX-U.Qt6.dmg",
   "bundleId": "com.yacreader.YACReader",
   "homepage": "https://www.yacreader.com/",
+  "homebrew_cask": "yacreader",
   "fileName": "YACReader-10.1.0.260703260.MacOSX-U.Qt6.dmg",
   "sha": "ae1b1886987b6f7e3af84cf9c155f69804f801cb6b51f0383708257e230ae71f",
   "category": "Media",

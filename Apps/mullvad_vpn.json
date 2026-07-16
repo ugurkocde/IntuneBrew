@@ -6,6 +6,7 @@
   "vendor_url": "https://cdn.mullvad.net/app/desktop/releases/2026.1/MullvadVPN-2026.1.pkg",
   "bundleId": "net.mullvad.vpn",
   "homepage": "https://mullvad.net/",
+  "homebrew_cask": "mullvad-vpn",
   "fileName": "MullvadVPN-2026.3.pkg",
   "type": "pkg",
   "sha": "662dc67e42eaa915b594c0e68d3e84927f72f784d5a07c9a84e996ca358bf62c",

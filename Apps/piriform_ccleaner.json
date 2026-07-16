@@ -6,6 +6,7 @@
   "vendor_url": "https://download.ccleaner.com/mac/CCMacSetup209.dmg",
   "bundleId": "com.piriform.pkg.CCleaner",
   "homepage": "https://www.ccleaner.com/ccleaner-mac",
+  "homebrew_cask": "ccleaner",
   "fileName": "CCMacSetup211.dmg",
   "sha": "1a641d1d54fe1db5925a3cf15fd25367a92bffc206057f82b83c34ca4850fc7c",
   "category": "Utilities",

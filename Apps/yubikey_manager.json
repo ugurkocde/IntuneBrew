@@ -11,5 +11,8 @@
   "changelog": "https://developers.yubico.com/yubikey-manager-qt/Releases/",
   "category": "Security",
   "publisher": "Yubico",
-  "previous_version": "1.2.5"
+  "previous_version": "1.2.5",
+  "homebrew_cask": "yubico-yubikey-manager",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: discontinued"
 }

@@ -6,6 +6,7 @@
   "vendor_url": "https://mediaarea.net/download/binary/mediainfo-gui/26.05/MediaInfo_GUI_26.05_Mac.dmg",
   "bundleId": "net.mediaarea.mediainfo.mac",
   "homepage": "https://mediaarea.net/en/MediaInfo",
+  "homebrew_cask": "mediainfo",
   "fileName": "MediaInfo_GUI_26.05_Mac.dmg",
   "sha": "3aa0b8953a7608a937c65fd86b62fec833c0ed7936a8c9db4082811f1ba31ac0",
   "category": "Utilities",

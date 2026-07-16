@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/Clipy/Clipy/releases/download/1.2.1/Clipy_1.2.1.dmg",
   "bundleId": "com.clipy-app.Clipy",
   "homepage": "https://clipy-app.com/",
+  "homebrew_cask": "clipy",
   "fileName": "Clipy_1.3.0.dmg",
   "sha": "80e67266f220d4e63cccfc185a5f3f800eadafa123e25e5f9791351ad13cb593",
   "changelog": "https://github.com/Clipy/Clipy/releases",

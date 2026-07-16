@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/transmission/transmission/releases/download/4.1.1/Transmission-4.1.1.dmg",
   "bundleId": "org.m0k.transmission",
   "homepage": "https://transmissionbt.com/",
+  "homebrew_cask": "transmission",
   "fileName": "Transmission-4.1.3.dmg",
   "sha": "d622736c19990262f2ab12183e1acaa5b0dad5777ddc7db0a187c06e035a7e1a",
   "changelog": "https://github.com/transmission/transmission/releases/",

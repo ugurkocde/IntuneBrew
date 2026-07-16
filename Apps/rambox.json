@@ -11,5 +11,6 @@
   "sha": "43edcdc742fa8b435169ac4e5c8a9f699e6ce60d6af5ce610dbe8b2f4c7adc33",
   "category": "Productivity",
   "publisher": "Rambox Technologies GmbH",
-  "previous_version": "2.7.0"
+  "previous_version": "2.7.0",
+  "homebrew_cask": "rambox"
 }

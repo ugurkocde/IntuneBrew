@@ -11,5 +11,6 @@
   "sha": "86d10ba9073a5bb5e137e5aeb90afafe1eb851b2ee967595db64d05c2a3fd2ad",
   "category": "Utilities",
   "publisher": "ianyh",
-  "previous_version": "0.24.3"
+  "previous_version": "0.24.3",
+  "homebrew_cask": "amethyst"
 }

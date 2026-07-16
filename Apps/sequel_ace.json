@@ -11,5 +11,6 @@
   "sha": "29f7ac75df10bb31213c04556448c1fecd24249fe0bbf9318595331f22712d7c",
   "previous_version": "5.3.0",
   "category": "Developer Tools",
-  "publisher": "Sequel Ace"
+  "publisher": "Sequel Ace",
+  "homebrew_cask": "sequel-ace"
 }

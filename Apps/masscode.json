@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/massCodeIO/massCode/releases/download/v5.1.1/massCode-5.1.1-arm64.dmg",
   "bundleId": "io.masscode.app",
   "homepage": "https://masscode.io/",
+  "homebrew_cask": "masscode",
   "fileName": "massCode-5.8.0-arm64.dmg",
   "sha": "f699b7b4d66f0c649591e86983a9675a7af4504e6166f09b8925d781829346a1",
   "category": "Developer Tools",

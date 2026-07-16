@@ -11,5 +11,6 @@
   "previous_version": "10.1",
   "sha": "6b23e20402b2e871cc233268c4e16725117d539c7028b87a6d5bbdc2ead8c532",
   "category": "Design",
-  "publisher": "RightFont, Inc."
+  "publisher": "RightFont, Inc.",
+  "homebrew_cask": "rightfont"
 }

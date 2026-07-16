@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/ninxsoft/Mist/releases/download/v0.30/Mist.0.30.pkg",
   "bundleId": "com.ninxsoft.pkg.mist",
   "homepage": "https://github.com/ninxsoft/Mist",
+  "homebrew_cask": "mist",
   "fileName": "Mist.0.40.pkg",
   "type": "pkg",
   "sha": "12715f8906ac9d0ede6f0665e703c323bdfcc99e54c8fae3a4ad8c516374483f",

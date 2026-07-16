@@ -6,6 +6,7 @@
   "vendor_url": "https://s3.amazonaws.com/Noodlesoft/Hazel-6.1.2.dmg",
   "bundleId": "com.noodlesoft.Hazel",
   "homepage": "https://www.noodlesoft.com/",
+  "homebrew_cask": "hazel",
   "fileName": "Hazel-6.1.2.dmg",
   "sha": "5f169b65ef2527901119187559c40fd17d693d8db723b738f3b8dbe3ab9f5726",
   "category": "Utilities",

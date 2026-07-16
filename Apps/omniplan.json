@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.omnigroup.com/software/macOS/12/OmniPlan-4.10.2.dmg",
   "bundleId": "com.omnigroup.OmniPlan4",
   "homepage": "https://www.omnigroup.com/omniplan/",
+  "homebrew_cask": "omniplan",
   "fileName": "OmniPlan-4.10.3.dmg",
   "sha": "f1b09446978790b0bab8fe7993019f7bee54c2d1faebdc1a385a0794eca0e8d3",
   "category": "Productivity",

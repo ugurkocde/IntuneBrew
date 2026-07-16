@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/pipheroapp/downloads/releases/download/v1.2.0/PiPHero-1.2.0-mac-arm64.dmg",
   "bundleId": "com.piphero.app",
   "homepage": "https://piphero.app/",
+  "homebrew_cask": "piphero",
   "fileName": "PiPHero-1.2.0-mac-arm64.dmg",
   "sha": "0ace00722786d40520f959a4aa08562b4e55cdcfccf138ca0101fd3341d59541",
   "category": "Utilities",

@@ -11,5 +11,6 @@
   "sha": "5ceb6724819be514d2563d508aeb5a74f986af8f6a3fc27f883c1b97d37e0890",
   "previous_version": "2125",
   "category": "Developer Tools",
-  "publisher": "Sublime HQ Pty Ltd"
+  "publisher": "Sublime HQ Pty Ltd",
+  "homebrew_cask": "sublime-merge"
 }

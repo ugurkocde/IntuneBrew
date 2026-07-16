@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.omnigroup.com/software/macOS/14/OmniFocus-4.8.9.dmg",
   "bundleId": "com.omnigroup.OmniFocus4",
   "homepage": "https://www.omnigroup.com/omnifocus/",
+  "homebrew_cask": "omnifocus",
   "fileName": "OmniFocus-4.8.12.dmg",
   "sha": "c9ecedc38019a8950502db397ac9e844ba1af6c76d2ee64232759d3863c07716",
   "category": "Productivity",

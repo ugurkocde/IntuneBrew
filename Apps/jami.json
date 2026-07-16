@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.jami.net/mac_osx/jami2026032615.dmg",
   "bundleId": "net.jami.jami",
   "homepage": "https://jami.net/",
+  "homebrew_cask": "jami",
   "fileName": "jami2026070716.dmg",
   "sha": "e083afa75a83dd3a0661f56a5444be970ce61bacb0f524ec7740be85261582c5",
   "category": "Communication",

@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/SoftFever/OrcaSlicer/releases/download/v2.3.2/OrcaSlicer_Mac_universal_V2.3.2.dmg",
   "bundleId": "com.softfever3d.orca-slicer",
   "homepage": "https://github.com/SoftFever/OrcaSlicer",
+  "homebrew_cask": "orcaslicer",
   "fileName": "OrcaSlicer_Mac_universal_V2.4.2.dmg",
   "sha": "e15e7bb1b66214ec6e96b169b388004179c4f5f705effcdaf8c80d4992ee0366",
   "category": "Utilities",

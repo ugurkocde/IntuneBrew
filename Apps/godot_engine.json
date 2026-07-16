@@ -22,5 +22,6 @@
     "installed_version": "4.4.1"
   },
   "category": "Developer Tools",
-  "publisher": "Godot Engine"
+  "publisher": "Godot Engine",
+  "homebrew_cask": "godot"
 }

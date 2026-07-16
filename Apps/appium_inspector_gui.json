@@ -11,5 +11,8 @@
   "sha": "cf69ac7511c235560b4ed313c310b2a35e9577bd708a93702227fa40e3b6f274",
   "category": "Developer Tools",
   "publisher": "Appium",
-  "previous_version": "2026.5.1"
+  "previous_version": "2026.5.1",
+  "homebrew_cask": "appium-inspector",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

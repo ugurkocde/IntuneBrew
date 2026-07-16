@@ -6,6 +6,7 @@
   "vendor_url": "https://radiosilenceapp.com/downloads/Radio_Silence_3.4.pkg",
   "bundleId": "com.radiosilenceapp.client",
   "homepage": "https://radiosilenceapp.com/",
+  "homebrew_cask": "radio-silence",
   "fileName": "Radio_Silence_3.4.pkg",
   "type": "pkg",
   "sha": "5c21f1da03100e6b024f244fe453f7f6a844ab1137acbc755577ed39e707352c",

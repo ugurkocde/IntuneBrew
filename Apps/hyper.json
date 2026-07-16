@@ -12,5 +12,6 @@
   "changelog": "https://github.com/vercel/hyper/releases",
   "previous_version": "3.4.1",
   "category": "Developer Tools",
-  "publisher": "Vercel"
+  "publisher": "Vercel",
+  "homebrew_cask": "hyper"
 }

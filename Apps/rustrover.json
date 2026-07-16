@@ -6,6 +6,7 @@
   "vendor_url": "https://download.jetbrains.com/rustrover/RustRover-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.rustrover",
   "homepage": "https://www.jetbrains.com/rust/",
+  "homebrew_cask": "rustrover",
   "fileName": "RustRover-2026.1.4-aarch64.dmg",
   "sha": "1e5cb8341bfd9a0fd1326c4233a9bdc39792fc243bc9cc69ed5d95419c321901",
   "category": "Developer Tools",

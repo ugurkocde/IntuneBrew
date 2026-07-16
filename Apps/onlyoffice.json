@@ -11,5 +11,6 @@
   "sha": "a757a6187cffe40843b02009cf44e070397502b2b40138ce895d456886eb23d9",
   "category": "Productivity",
   "publisher": "ONLYOFFICE",
-  "previous_version": "9.4.0"
+  "previous_version": "9.4.0",
+  "homebrew_cask": "onlyoffice"
 }

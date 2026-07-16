@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/AppFlowy-IO/AppFlowy/releases/download/0.11.7/Appflowy-0.11.7-macos-arm64.zip",
   "bundleId": "io.appflowy.AppFlowy",
   "homepage": "https://www.appflowy.io/",
+  "homebrew_cask": "appflowy",
   "fileName": "Appflowy-0.12.5-macos-arm64.zip",
   "sha": "bfadf3436f76d060cd5d9804361af24ba4b9acb42a00d367e8e4f668b87fef08",
   "category": "Productivity",

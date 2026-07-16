@@ -11,5 +11,6 @@
   "sha": "e4dd6d88620b648b421a2f1700c47c72ec03abb6d3483fc35357a97939304582",
   "category": "Productivity",
   "publisher": "WorkFlowy, Inc.",
-  "previous_version": "4.3.2607080959"
+  "previous_version": "4.3.2607151451",
+  "homebrew_cask": "workflowy"
 }

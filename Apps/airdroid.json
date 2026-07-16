@@ -6,6 +6,7 @@
   "vendor_url": "https://dl.airdroid.com/AirDroid_Desktop_Client_3.7.3.1.dmg",
   "bundleId": "com.sandstudio.airdroid",
   "homepage": "https://www.airdroid.com/",
+  "homebrew_cask": "airdroid",
   "fileName": "AirDroid_Desktop_Client_3.7.3.1.dmg",
   "sha": "f0d8199dedc6daa3a93ca672d5e1c8d33554b07bc7371ba4538802926ea1acba",
   "category": "Utilities",

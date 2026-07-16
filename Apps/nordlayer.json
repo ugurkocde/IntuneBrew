@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.nordlayer.com/mac/latest/NordLayer_v3.9.1.pkg",
   "bundleId": "com.nordvpn.macos.teams",
   "homepage": "https://nordlayer.com/",
+  "homebrew_cask": "nordlayer",
   "fileName": "nordlayer_3.10.0.pkg",
   "type": "pkg_in_pkg",
   "sha": "84597fb3c1a446edbfb454eb9a489470eaeb7826e10f9a66784af379e97a2ea5",

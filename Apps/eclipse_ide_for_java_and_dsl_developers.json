@@ -6,6 +6,7 @@
   "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-dsl-2026-03-R-macosx-cocoa-aarch64.dmg&r=1",
   "bundleId": "org.eclipse.eclipse",
   "homepage": "https://eclipse.org/",
+  "homebrew_cask": "eclipse-dsl",
   "fileName": "Eclipse-IDE-for-Java-and-DSL-Developers-4.40.dmg",
   "sha": "cfbb7b15020a501ca193a9a14fc5823e6b761d66283074324072b7010e47bcd8",
   "category": "Developer Tools",

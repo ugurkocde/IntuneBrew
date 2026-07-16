@@ -6,6 +6,7 @@
   "vendor_url": "https://downloads.econtechnologies.com/CS4_Download.dmg",
   "bundleId": "com.econtechnologies.pkg.ChronoSyncApplication",
   "homepage": "https://www.econtechnologies.com/",
+  "homebrew_cask": "chronosync",
   "fileName": "CS4_Download.dmg",
   "sha": "6577d43107076b9d3ff42109673d00663bbc0ec180c6ebd8edf47e7c6a2eaebf",
   "category": "Utilities",

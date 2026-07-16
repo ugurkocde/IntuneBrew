@@ -20,5 +20,8 @@
   },
   "category": "Media",
   "publisher": "FreeTube",
-  "previous_version": "0.24.1"
+  "previous_version": "0.24.1",
+  "homebrew_cask": "freetube",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

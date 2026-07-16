@@ -22,5 +22,6 @@
     "installed_version": "4.4.1"
   },
   "category": "Developer Tools",
-  "publisher": "Unknown"
+  "publisher": "Unknown",
+  "homebrew_cask": "coderunner"
 }

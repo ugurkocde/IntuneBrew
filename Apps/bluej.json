@@ -6,6 +6,7 @@
   "vendor_url": "https://github.com/k-pet-group/BlueJ-Greenfoot/releases/download/BLUEJ-RELEASE-5.5.0/BlueJ-mac-aarch64-5.5.0.dmg",
   "bundleId": "org.bluej.BlueJ",
   "homepage": "https://www.bluej.org/",
+  "homebrew_cask": "bluej",
   "fileName": "BlueJ-mac-aarch64-6.0.0.dmg",
   "sha": "2151ec9e1ce8d49e80c58267e5691aa71ac638997d338ecf2ea1f134da12d542",
   "category": "Developer Tools",

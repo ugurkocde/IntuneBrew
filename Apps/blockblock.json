@@ -11,5 +11,6 @@
   "sha": "0d620f2ec376331778da7fc77820c3cbfa7f36eaf46ebecd3afb617351fabadb",
   "category": "Security",
   "publisher": "Objective-See",
-  "previous_version": "2.5.0"
+  "previous_version": "2.5.0",
+  "homebrew_cask": "blockblock"
 }

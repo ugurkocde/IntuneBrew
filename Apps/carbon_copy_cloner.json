@@ -8,8 +8,9 @@
   "homepage": "https://bombich.com/",
   "fileName": "carbon_copy_cloner_7.1.6.pkg",
   "type": "app",
-  "previous_version": "7.1.5",
+  "previous_version": "7.1.6",
   "sha": "0d6723eb670d380acea2161350249f8823b88615e30a36b5bf1dba737f5e9812",
   "category": "Utilities",
-  "publisher": "Bombich Software"
+  "publisher": "Bombich Software",
+  "homebrew_cask": "carbon-copy-cloner"
 }

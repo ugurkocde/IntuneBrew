@@ -11,5 +11,6 @@
   "sha": "e5d955d6ad1480feff15cf9f875fe9763456c5b0aa5c769ee9b6afc51da51205",
   "category": "Media",
   "publisher": "TIDAL Ltd.",
-  "previous_version": "2.43.0"
+  "previous_version": "2.43.0",
+  "homebrew_cask": "tidal"
 }

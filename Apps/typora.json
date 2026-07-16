@@ -6,6 +6,7 @@
   "vendor_url": "https://download.typora.io/mac/Typora-1.13.4.dmg",
   "bundleId": "abnerworks.Typora",
   "homepage": "https://typora.io/",
+  "homebrew_cask": "typora",
   "fileName": "Typora-1.13.8.dmg",
   "sha": "bea6c1d7c8ab138634674e4c96c077e7a0db140da725d9b8294e446789d81ac7",
   "category": "Productivity",

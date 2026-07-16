@@ -22,5 +22,8 @@
     "installed_version": "42.2"
   },
   "category": "Utilities",
-  "publisher": "f.lux Software LLC"
+  "publisher": "f.lux Software LLC",
+  "homebrew_cask": "flux",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

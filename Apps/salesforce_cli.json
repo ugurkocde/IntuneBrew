@@ -11,5 +11,8 @@
   "sha": "b88421083db749ba554170909872b2478621cc0dacdd145bf112e7003efe6cac",
   "category": "Developer Tools",
   "publisher": "Salesforce, Inc.",
-  "previous_version": "2.142.7"
+  "previous_version": "2.142.7",
+  "homebrew_cask": "salesforce-cli",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
 }

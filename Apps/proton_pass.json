@@ -6,6 +6,7 @@
   "vendor_url": "https://proton.me/download/pass/macos/ProtonPass_1.36.0.dmg",
   "bundleId": "me.proton.pass.electron",
   "homepage": "https://proton.me/pass",
+  "homebrew_cask": "proton-pass",
   "fileName": "ProtonPass_1.38.1.dmg",
   "sha": "94473fb4ff38414f960d3a8b6d47b974c99804b5da65983cc265d236000e9fb8",
   "category": "Security",

@@ -11,5 +11,6 @@
   "sha": "3aaa8a0ef6e0e1b804716f083625136f13eb21deae3ae3402ba6aa3dfbb5d71c",
   "category": "Utilities",
   "publisher": "Wins",
-  "previous_version": "3.4"
+  "previous_version": "3.4",
+  "homebrew_cask": "wins"
 }

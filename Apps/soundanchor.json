@@ -6,9 +6,10 @@
   "vendor_url": "https://cdn.kopiro.me/soundanchor/soundanchor-1.6.2.dmg",
   "bundleId": "com.nicola.SoundAnchor",
   "homepage": "https://apps.kopiro.me/soundanchor/",
+  "homebrew_cask": "soundanchor",
   "fileName": "soundanchor-1.8.2.dmg",
   "sha": "338eaf6838880e8a9676040b8a37eadec0f8b1e4c18937836b8a05abac2118eb",
   "category": "Utilities",
   "publisher": "Kopiro",
-  "previous_version": "1.8.1"
+  "previous_version": "1.8.2"
 }

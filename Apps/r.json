@@ -6,6 +6,7 @@
   "vendor_url": "https://cloud.r-project.org/bin/macosx/sonoma-arm64/base/R-4.6.0-arm64.pkg",
   "bundleId": "org.r-project*",
   "homepage": "https://www.r-project.org/",
+  "homebrew_cask": "r-app",
   "fileName": "R-4.6.1-arm64.pkg",
   "type": "pkg",
   "sha": "67f6eea4ced4ce48f0a0d4fa3a1cac43d1859a05a88993ee3dff7c52e7edbc4b",

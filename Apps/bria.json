@@ -6,6 +6,7 @@
   "vendor_url": "https://counterpath.s3.amazonaws.com/downloads/Bria_6.8.6_129508.dmg",
   "bundleId": "com.CounterPath_Corporation.Bria",
   "homepage": "https://www.counterpath.com/bria-solo/",
+  "homebrew_cask": "bria",
   "fileName": "Bria_6.8.7.1_130598.dmg",
   "sha": "6d4151a3faed52d43f7b40842c19b082ecabc85e21118208daf5dc219191ca0d",
   "category": "Communication",
