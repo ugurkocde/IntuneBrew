@@ -1697,7 +1697,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/systhist.png' width='32' height='32'> SystHist | 1.22 |
 | <img src='Logos/tabby.png' width='32' height='32'> Tabby | 1.0.234 |
 | <img src='Logos/tableau_desktop.png' width='32' height='32'> Tableau Desktop | 2026.2.0 |
-| ❌ Tableau Prep | 2026.2.0 |
+| <img src='Logos/tableau_prep.png' width='32' height='32'> Tableau Prep | 2026.2.0 |
 | <img src='Logos/tableau_public.png' width='32' height='32'> Tableau Public | 2026.2.0 |
 | <img src='Logos/tableau_reader.png' width='32' height='32'> Tableau Reader | 2026.2.0 |
 | <img src='Logos/tableplus.png' width='32' height='32'> TablePlus | 26.7.6 |
@@ -1869,7 +1869,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
-
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:
