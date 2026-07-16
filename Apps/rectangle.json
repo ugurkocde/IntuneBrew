@@ -1,15 +1,15 @@
 {
   "name": "Rectangle",
   "description": "Move and resize windows using keyboard shortcuts or snap areas",
-  "version": "0.97",
-  "url": "https://github.com/rxhanson/Rectangle/releases/download/v0.97/Rectangle0.97.dmg",
+  "version": "0.98",
+  "url": "https://github.com/rxhanson/Rectangle/releases/download/v0.98/Rectangle0.98.dmg",
   "vendor_url": "https://github.com/rxhanson/Rectangle/releases/download/v0.95/Rectangle0.95.dmg",
   "bundleId": "com.knollsoft.Rectangle",
   "homepage": "https://rectangleapp.com/",
-  "fileName": "Rectangle0.97.dmg",
-  "sha": "65b02d4b4d0bf59eabce225db9e3f3d5242ad9ef421fb92f515f6de9c80ec2c3",
+  "fileName": "Rectangle0.98.dmg",
+  "sha": "ce2613d4f171300141d1d41e22bab17726b26d51ff26c684eac357bd7b9aad86",
   "changelog": "https://github.com/rxhanson/Rectangle/releases",
   "category": "Utilities",
   "publisher": "Rectangle",
-  "previous_version": "0.96"
+  "previous_version": "0.97"
 }

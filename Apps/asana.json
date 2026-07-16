@@ -9,7 +9,7 @@
   "fileName": "asana_2.7.2.pkg",
   "type": "app",
   "sha": "a94dcd44fcbddb51ef676e23a75e7e8db5bcc9c3d0441f310bcd4c722f0f1ec5",
-  "previous_version": "2.7.1",
+  "previous_version": "2.7.2",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:33:56Z",
     "qa_result": "Installation successful and verified",

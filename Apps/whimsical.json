@@ -1,15 +1,15 @@
 {
   "name": "Whimsical",
   "description": "Collaboration and diagramming tool",
-  "version": "0.5.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/whimsical_0.5.3.pkg",
+  "version": "0.5.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/whimsical_0.5.4.pkg",
   "vendor_url": "https://download.todesktop.com/2402209z4j37b73/Whimsical%200.4.7%20-%20Build%202603038bdrbb7wz-arm64-mac.zip",
   "bundleId": "com.whimsical.desktop",
   "homepage": "https://whimsical.com/",
-  "fileName": "whimsical_0.5.3.pkg",
+  "fileName": "whimsical_0.5.4.pkg",
   "type": "app",
-  "sha": "ddd13c9c777d81374276d93fe8c196a17d372b9e56378e5a298c22bf6195f30a",
+  "sha": "6af3841ca4caa425f0950d6a77abbb89c3e500e2526a3e34d454cbca9fbb4ef6",
   "category": "Design",
   "publisher": "Whimsical, Inc.",
-  "previous_version": "0.5.2"
+  "previous_version": "0.5.3"
 }
