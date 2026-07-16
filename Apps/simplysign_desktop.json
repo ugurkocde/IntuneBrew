@@ -1,0 +1,15 @@
+{
+  "name": "SimplySign Desktop",
+  "description": "Emulates a physical crypto card/reader for proCertum SmartSign",
+  "version": "2.10.22-9.4.4.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/simplysign_desktop_2.10.22-9.4.4.0.pkg",
+  "vendor_url": "https://files.certum.eu/software/SimplySignDesktop/OSX/2.10.22-9.4.4.0/SimplySignDesktop-2.10.22-9.4.4_prod.dmg",
+  "bundleId": "pl.assecods.pkg.SimplySignDesktop-proCertumSmartSign",
+  "homepage": "https://support.certum.eu/en/software/procertum-smartsign/",
+  "fileName": "simplysign_desktop_2.10.22-9.4.4.0.pkg",
+  "type": "pkg_in_dmg",
+  "sha": "0c9f89e8a2cc2a41efceb18d589ac6f06166ab99b264113f18ad50a48d772ada",
+  "category": "Security",
+  "publisher": "Certum",
+  "previous_version": "2.10.22-9.4.4.0"
+}

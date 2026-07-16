@@ -1,15 +1,15 @@
 {
   "name": "Element",
   "description": "Matrix collaboration client",
-  "version": "1.12.22",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/element_1.12.22.pkg",
+  "version": "1.12.23",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/element_1.12.23.pkg",
   "vendor_url": "https://packages.element.io/desktop/update/macos/Element-1.12.15-universal-mac.zip",
   "bundleId": "im.riot.app",
   "homepage": "https://element.io/get-started",
-  "fileName": "element_1.12.22.pkg",
+  "fileName": "element_1.12.23.pkg",
   "type": "app",
-  "previous_version": "1.12.22",
-  "sha": "5e2eb6a150e167b6e345aefdf769a8ad3e85b156677e7431653fee2be1cb58ed",
+  "previous_version": "1.12.23",
+  "sha": "bdb404036dd3f4cdbd9266a0a04fdebba1872c67997cd30aafdc3c12680a14f8",
   "category": "Communication",
   "publisher": "Element"
 }

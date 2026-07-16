@@ -1,15 +1,15 @@
 {
   "name": "Mist",
   "description": "Utility that automatically downloads firmwares and installers",
-  "version": "0.30",
-  "url": "https://github.com/ninxsoft/Mist/releases/download/v0.30/Mist.0.30.pkg",
+  "version": "0.40",
+  "url": "https://github.com/ninxsoft/Mist/releases/download/v0.40/Mist.0.40.pkg",
   "vendor_url": "https://github.com/ninxsoft/Mist/releases/download/v0.30/Mist.0.30.pkg",
   "bundleId": "com.ninxsoft.pkg.mist",
   "homepage": "https://github.com/ninxsoft/Mist",
-  "fileName": "Mist.0.30.pkg",
+  "fileName": "Mist.0.40.pkg",
   "type": "pkg",
-  "sha": "a764f92e23f5a0a1776c5f08c7dbfe99e98ff5ed9feb12da10410cc09e9abefb",
+  "sha": "12715f8906ac9d0ede6f0665e703c323bdfcc99e54c8fae3a4ad8c516374483f",
   "category": "Utilities",
   "publisher": "ninxsoft",
-  "previous_version": "0.30"
+  "previous_version": "0.40"
 }

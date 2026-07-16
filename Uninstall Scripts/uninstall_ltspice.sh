@@ -41,12 +41,12 @@ elif [ -f "$HOME/Library/Application Support/LTspice" ]; then
     rm -f "$HOME/Library/Application Support/LTspice" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.analog.LTspice.App.plist
-echo "Removing $HOME/Library/Preferences/com.analog.LTspice.App.plist..."
-if [ -d "$HOME/Library/Preferences/com.analog.LTspice.App.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.analog.LTspice.App.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.analog.LTspice.App.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.analog.LTspice.App.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.analog.ltspice.plist
+echo "Removing $HOME/Library/Preferences/com.analog.ltspice.plist..."
+if [ -d "$HOME/Library/Preferences/com.analog.ltspice.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.analog.ltspice.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.analog.ltspice.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.analog.ltspice.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.analog.LTspice.App.savedState

@@ -1230,6 +1230,8 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/brainfm.json",
     "https://formulae.brew.sh/api/cask/macdown-3000.json",
     "https://formulae.brew.sh/api/cask/viber.json",
+    "https://formulae.brew.sh/api/cask/adobe-creative-cloud.json",
+    "https://formulae.brew.sh/api/cask/fluidvoice.json",
 ]
 
 # PKG in DMG URLs
@@ -1256,6 +1258,7 @@ pkg_in_dmg_urls = [
     "https://formulae.brew.sh/api/cask/google-drive.json",
     "https://formulae.brew.sh/api/cask/omnissa-horizon-client.json",
     "https://formulae.brew.sh/api/cask/vagrant.json",
+    "https://formulae.brew.sh/api/cask/simplysign.json",
 ]
 
 # PKG in PKG URLs (some are ZIP files containing PKG that contains inner PKGs)

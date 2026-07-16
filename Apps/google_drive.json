@@ -1,16 +1,16 @@
 {
   "name": "Google Drive",
   "description": "Client for the Google Drive storage service",
-  "version": "127.0.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/google_drive_127.0.1.pkg",
+  "version": "128.0.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/google_drive_128.0.0.pkg",
   "vendor_url": "https://dl.google.com/drive-file-stream/5-percent/GoogleDrive.dmg",
   "bundleId": "com.google.drivefs",
   "homepage": "https://www.google.com/drive/",
-  "fileName": "google_drive_127.0.1.pkg",
+  "fileName": "google_drive_128.0.0.pkg",
   "type": "pkg_in_dmg",
-  "sha": "af0941a3926904299bb8296b6de5f08d01f6b18a3b91407c9790d72a0a86bd3e",
+  "sha": "3a7079c01586677cd7713c367cac1eed9d8bdd428fe4f672651783314875147b",
   "changelog": "https://support.google.com/drive/answer/2375082",
   "category": "Productivity",
   "publisher": "Google LLC",
-  "previous_version": "127.0.1"
+  "previous_version": "128.0.0"
 }

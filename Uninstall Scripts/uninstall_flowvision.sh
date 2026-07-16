@@ -25,6 +25,14 @@ elif [ -f "/Applications/FlowVision.app" ]; then
     rm -f "/Applications/FlowVision.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/netdcy.flowvision.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/netdcy.flowvision.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/netdcy.flowvision.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/netdcy.flowvision.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/netdcy.flowvision.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/netdcy.flowvision.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/FlowVision
 echo "Removing $HOME/Library/Application Support/FlowVision..."
 if [ -d "$HOME/Library/Application Support/FlowVision" ]; then

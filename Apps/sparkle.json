@@ -1,15 +1,15 @@
 {
   "name": "Sparkle",
   "description": "Software update framework for Cocoa developers",
-  "version": "2.9.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/sparkle_2.9.3.pkg",
+  "version": "2.9.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sparkle_2.9.4.pkg",
   "vendor_url": "https://github.com/sparkle-project/Sparkle/releases/download/2.9.1/Sparkle-2.9.1.tar.xz",
   "bundleId": "org.sparkle-project.SparkleTestApp",
   "homepage": "https://sparkle-project.org/",
-  "fileName": "sparkle_2.9.3.pkg",
+  "fileName": "sparkle_2.9.4.pkg",
   "type": "app",
-  "sha": "5212c0a5a5cf687853e1288c99cbdc1a7821a8b2f9e0a4d88b7e59c589b0b91b",
+  "sha": "380da05be2e515646f1e20c0df7c75314cf81df75504058ff66f93c4a8518634",
   "category": "Developer Tools",
   "publisher": "The Sparkle Project",
-  "previous_version": "2.9.3"
+  "previous_version": "2.9.4"
 }

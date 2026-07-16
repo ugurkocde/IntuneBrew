@@ -1,14 +1,14 @@
 {
   "name": "Unity Hub",
   "description": "Management tool for Unity",
-  "version": "3.19.2",
-  "url": "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup-arm64.dmg",
+  "version": "3.19.5",
+  "url": "https://public-cdn.cloud.unity3d.com/hub/prod/3.19.5/UnityHubSetup-3.19.5-arm64.dmg",
   "vendor_url": "https://public-cdn.cloud.unity3d.com/hub/prod/UnityHubSetup-arm64.dmg",
   "bundleId": "com.unity3d.unityhub",
   "homepage": "https://unity3d.com/get-unity/download",
-  "fileName": "UnityHubSetup-arm64.dmg",
-  "sha": "fbea49e196b8381f0a347871a65538f2de55aba86112a6bda9070130ec1a222e",
+  "fileName": "UnityHubSetup-3.19.5-arm64.dmg",
+  "sha": "da6773add1f638d8bd00615a47661408d1de4a3c94e7efb5a37f1e7131e63272",
   "category": "Developer Tools",
   "publisher": "Unity Technologies",
-  "previous_version": "3.19.2"
+  "previous_version": "3.19.5"
 }

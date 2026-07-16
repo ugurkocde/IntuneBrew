@@ -1,15 +1,15 @@
 {
   "name": "Amazon Workspaces",
   "description": "Cloud native persistent desktop virtualization",
-  "version": "5.32.0.6080",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/amazon_workspaces_5.32.0.6080.pkg",
+  "version": "5.33.0.6168",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/amazon_workspaces_5.33.0.6168.pkg",
   "vendor_url": "https://d2td7dqidlhjx7.cloudfront.net/prod/global/osx/WorkSpaces_AllProducts_6030.zip",
   "bundleId": "com.amazon.workspaces",
   "homepage": "https://clients.amazonworkspaces.com/",
-  "fileName": "amazon_workspaces_5.32.0.6080.pkg",
+  "fileName": "amazon_workspaces_5.33.0.6168.pkg",
   "type": "app",
-  "previous_version": "5.32.0.6080",
-  "sha": "6b4cebbf3a07fa6eeb1fc96ae961d95a9a9b3726b972111bc0f8344e2f337931",
+  "previous_version": "5.33.0.6168",
+  "sha": "5c5fc1aff5ac9ec25089d7e5dfe46f308e15de940f5af03c0125729f092357c9",
   "category": "Utilities",
   "publisher": "Amazon Web Services, Inc."
 }

@@ -1,14 +1,14 @@
 {
   "name": "Wazuh Agent",
   "description": "Endpoint security agent for the Wazuh open source security platform. Requires the WAZUH_MANAGER address to be configured after installation, for example via a post-install script.",
-  "version": "4.14.5",
-  "url": "https://packages.wazuh.com/4.x/macos/wazuh-agent-4.14.5-1.arm64.pkg",
-  "vendor_url": "https://packages.wazuh.com/4.x/macos/wazuh-agent-4.14.5-1.arm64.pkg",
+  "version": "4.14.6",
+  "url": "https://packages.wazuh.com/4.x/macos/wazuh-agent-4.14.6-1.arm64.pkg",
+  "vendor_url": "https://packages.wazuh.com/4.x/macos/wazuh-agent-4.14.6-1.arm64.pkg",
   "bundleId": "com.wazuh.pkg.wazuh-agent",
   "homepage": "https://wazuh.com/",
-  "fileName": "wazuh-agent-4.14.5-1.arm64.pkg",
+  "fileName": "wazuh-agent-4.14.6-1.arm64.pkg",
   "type": "pkg",
-  "sha": "eedf9edfce4aacc6a30365dfc50adde0bdbf664c230969846dc3f12aeb1de943",
+  "sha": "f4a984c94f5120c2a48bebf677824f9c774021454d203f8c38a20affdf9dd8e8",
   "category": "Security",
   "publisher": "Wazuh, Inc."
 }

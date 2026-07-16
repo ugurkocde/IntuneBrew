@@ -1,15 +1,15 @@
 {
   "name": "PureVPN",
   "description": "VPN client",
-  "version": "9.43.0",
+  "version": "9.44.0",
   "url": "https://dzglif4kkvz04.cloudfront.net/mac-2.0/packages/Production/PureVPN.pkg",
   "vendor_url": "https://dzglif4kkvz04.cloudfront.net/mac-2.0/packages/Production/PureVPN.pkg",
   "bundleId": "com.purevpn.mac.installer",
   "homepage": "https://www.purevpn.com/",
   "fileName": "PureVPN.pkg",
   "type": "pkg",
-  "sha": "ff2fb1b7bea48eb45a4bfd0e2f5e707416ee98db9f135f64425146673844da59",
+  "sha": "2b894524f6f9e23b275079dd606680823effeb22e7adf784e9ba8a1d4eabf31b",
   "category": "Security",
   "publisher": "PureVPN",
-  "previous_version": "9.43.0"
+  "previous_version": "9.44.0"
 }

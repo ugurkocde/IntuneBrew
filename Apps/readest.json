@@ -1,14 +1,14 @@
 {
   "name": "Readest",
   "description": "Ebook reader",
-  "version": "0.11.17",
-  "url": "https://github.com/readest/readest/releases/download/v0.11.17/Readest_0.11.17_universal.dmg",
+  "version": "0.11.18",
+  "url": "https://github.com/readest/readest/releases/download/v0.11.18/Readest_0.11.18_universal.dmg",
   "vendor_url": "https://github.com/readest/readest/releases/download/v0.10.6/Readest_0.10.6_universal.dmg",
   "bundleId": "com.bilingify.readest",
   "homepage": "https://readest.com/",
-  "fileName": "Readest_0.11.17_universal.dmg",
-  "sha": "cf4e420e2192c69dc6dce8143d13337b38c98c64a630ced1a6c8db9835b056a7",
+  "fileName": "Readest_0.11.18_universal.dmg",
+  "sha": "227a47a3b54ea3a7e02381c718f141f8d8dcaac4006803851d27a9043e29e3e8",
   "category": "Media",
   "publisher": "Readest",
-  "previous_version": "0.11.17"
+  "previous_version": "0.11.18"
 }

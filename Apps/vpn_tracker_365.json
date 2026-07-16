@@ -1,15 +1,15 @@
 {
   "name": "VPN Tracker 365",
   "description": "VPN client: IPsec, L2TP, OpenVPN, PPTP, SSTP, SonicWALL/AnyConnect/Fortinet SSL",
-  "version": "26.4",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/vpn_tracker_365_26.4.pkg",
+  "version": "26.5",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/vpn_tracker_365_26.5.pkg",
   "vendor_url": "https://download.equinux.com/files/other/VPN%20Tracker%20365%20-%2026.2.209.zip",
   "bundleId": "com.equinux.VPNTracker365",
   "homepage": "https://vpntracker.com/",
-  "fileName": "vpn_tracker_365_26.4.pkg",
+  "fileName": "vpn_tracker_365_26.5.pkg",
   "type": "app",
-  "sha": "cc8abc75f7f10a767ff2e66e2588d4537c2193e433497ebb202f55103b602660",
+  "sha": "6762d51002cbad3deced2b79e1cb8cbea4916d2a40ad1d7d6c1fc6c83f6bbb6f",
   "category": "Security",
   "publisher": "iphion GmbH",
-  "previous_version": "26.4"
+  "previous_version": "26.5"
 }
