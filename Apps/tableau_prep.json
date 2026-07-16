@@ -9,5 +9,7 @@
   "homebrew_cask": "tableau-prep",
   "fileName": "tableau_prep_2026.2.0.pkg",
   "type": "pkg_in_dmg",
-  "sha": "50c463e0c24bc871054525577962a1d70bc4a79c414ed7a17c0e64f10ade445f"
+  "sha": "50c463e0c24bc871054525577962a1d70bc4a79c414ed7a17c0e64f10ade445f",
+  "category": "Productivity",
+  "publisher": "Tableau Software, LLC"
 }
