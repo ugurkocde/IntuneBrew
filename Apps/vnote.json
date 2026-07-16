@@ -1,8 +1,8 @@
 {
   "name": "VNote",
   "description": "Note-taking platform",
-  "version": "4.1.0",
-  "url": "https://github.com/vnotex/vnote/releases/download/v4.1.0/VNote-4.1.0-mac-universal.zip",
+  "version": "4.1.1",
+  "url": "https://github.com/vnotex/vnote/releases/download/v4.1.1/VNote-4.1.1-mac-universal.zip",
   "vendor_url": "https://github.com/vnotex/vnote/releases/download/v3.20.1/VNote-3.20.1-mac-universal.zip",
   "bundleId": "com.vnotex.vnote",
   "homepage": "https://vnotex.github.io/vnote/",
@@ -10,6 +10,6 @@
   "type": "app",
   "category": "Productivity",
   "publisher": "VNotex",
-  "previous_version": "4.1.0",
-  "sha": "6a8351768f7451427f58fe672183f78d56adb73544ca0a5577a2c9358530c90f"
+  "previous_version": "4.1.1",
+  "sha": "3696ce3bbd04e78c72d8a0c8213485c80b94ba63838b781062d106c76f9b8a24"
 }

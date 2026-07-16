@@ -1,5 +1,6 @@
 import { ResponseTextConfig, type ParsedResponse, type ResponseCreateParamsBase, type ResponseStreamEvent } from "../../resources/responses/responses.js";
 import { RequestOptions } from "../../internal/request-options.js";
+import { type ReadableStream } from "../../internal/shim-types.js";
 import OpenAI from "../../index.js";
 import { type BaseEvents, EventStream } from "../EventStream.js";
 import { type ResponseFunctionCallArgumentsDeltaEvent, type ResponseTextDeltaEvent } from "./EventTypes.js";
@@ -14,7 +15,9 @@ export type ResponseStreamByIdParams = {
      */
     response_id: string;
     /**
-     * If provided, the stream will start after the event with the given sequence number.
+     * If provided, events with a sequence number less than or equal to this value
+     * will not be emitted. The helper still replays them internally to build a
+     * complete snapshot for later events and `finalResponse()`.
      */
     starting_after?: number;
     /**
@@ -47,7 +50,9 @@ export declare class ResponseStream<ParsedT = null> extends EventStream<Response
     #private;
     constructor(params: ResponseStreamingParams | null);
     static createResponse<ParsedT>(client: OpenAI, params: ResponseStreamParams, options?: RequestOptions): ResponseStream<ParsedT>;
+    static fromReadableStream(stream: ReadableStream): ResponseStream<null>;
     protected _createOrRetrieveResponse(client: OpenAI, params: ResponseStreamParams, options?: RequestOptions): Promise<ParsedResponse<ParsedT>>;
+    protected _fromReadableStream(readableStream: ReadableStream, options?: RequestOptions): Promise<ParsedResponse<ParsedT>>;
     [Symbol.asyncIterator](this: ResponseStream<ParsedT>): AsyncIterator<ResponseStreamEvent>;
     /**
      * @returns a promise that resolves with the final Response, or rejects

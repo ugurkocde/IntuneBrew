@@ -1,15 +1,15 @@
 {
   "name": "Superlist",
   "description": "Collaborative to-do list app",
-  "version": "1.56.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/superlist_1.56.0.pkg",
+  "version": "1.56.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/superlist_1.56.1.pkg",
   "vendor_url": "https://storage.googleapis.com/superlist-appcast/beta/updates/Superlist-1.52.1.zip",
   "bundleId": "com.superlist.superlist.app",
   "homepage": "https://www.superlist.com/",
-  "fileName": "superlist_1.56.0.pkg",
+  "fileName": "superlist_1.56.1.pkg",
   "type": "app",
-  "sha": "d87a769aee856b96a3db34c6473b38f6183697e0526c2d0733c6cc80b092e7d4",
-  "previous_version": "1.56.0",
+  "sha": "aa8005529d820b8d6c9193db4875c78be25c08e77b0a601a16c114e73d2e8f4c",
+  "previous_version": "1.56.1",
   "category": "Productivity",
   "publisher": "Superlist"
 }

@@ -49,6 +49,25 @@ export interface ComputerScreenshotContent {
      * to `computer_screenshot`.
      */
     type: 'computer_screenshot';
+    /**
+     * Marks the exact end of a reusable prompt prefix. The breakpoint inherits its TTL
+     * from the request's `prompt_cache_options.ttl`; the boundary is not rounded to a
+     * token block.
+     */
+    prompt_cache_breakpoint?: ComputerScreenshotContent.PromptCacheBreakpoint;
+}
+export declare namespace ComputerScreenshotContent {
+    /**
+     * Marks the exact end of a reusable prompt prefix. The breakpoint inherits its TTL
+     * from the request's `prompt_cache_options.ttl`; the boundary is not rounded to a
+     * token block.
+     */
+    interface PromptCacheBreakpoint {
+        /**
+         * The breakpoint mode. Always `explicit`.
+         */
+        mode: 'explicit';
+    }
 }
 export interface Conversation {
     /**

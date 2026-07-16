@@ -33,15 +33,28 @@ async function nodejsPlayAudio(stream) {
     return new Promise((resolve, reject) => {
         try {
             const ffplay = (0, node_child_process_1.spawn)('ffplay', ['-autoexit', '-nodisp', '-i', 'pipe:0']);
+            let source;
             if (isResponse(stream)) {
-                stream.body.pipe(ffplay.stdin);
+                const body = stream.body;
+                if ('pipe' in body && typeof body.pipe === 'function') {
+                    source = body;
+                }
+                else {
+                    source = node_stream_1.Readable.fromWeb(body);
+                }
             }
             else if (isFile(stream)) {
-                node_stream_1.Readable.from(stream.stream()).pipe(ffplay.stdin);
+                source = node_stream_1.Readable.from(stream.stream());
             }
             else {
-                stream.pipe(ffplay.stdin);
+                source = stream;
             }
+            (0, node_stream_1.pipeline)(source, ffplay.stdin, (error) => {
+                if (error) {
+                    ffplay.kill();
+                    reject(error);
+                }
+            });
             ffplay.on('close', (code) => {
                 if (code !== 0) {
                     reject(new Error(`ffplay process exited with code ${code}`));

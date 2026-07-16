@@ -1,11 +1,11 @@
 {
   "app_name": "Ollama",
   "app_key": "ollama",
-  "last_updated": "2026-07-06",
-  "total_cves": 24,
+  "last_updated": "2026-07-16",
+  "total_cves": 25,
   "summary": {
     "critical": 4,
-    "high": 16,
+    "high": 17,
     "medium": 3,
     "low": 1,
     "kev_count": 0
@@ -96,6 +96,27 @@
       "product": "ollama"
     },
     {
+      "cve_id": "CVE-2026-15685",
+      "published_date": "2026-07-13",
+      "last_modified_date": "2026-07-14",
+      "description": "Ollama downloadBlob Improper Validation of Array Index Denial-of-Service Vulnerability. This vulnerability allows remote attackers to create a denial-of-service condition on affected installations of Ollama. Authentication is not required to exploit this vulnerability.\n\nThe specific flaw exists within the downloadBlob function. The issue results from the lack of proper validation of user-supplied data, which can result in a memory access past the end of an allocated array. An attacker can leverage this vulnerability to create a denial-of-service condition on the system. Was ZDI-CAN-27277.",
+      "base_score": 7.5,
+      "severity": "HIGH",
+      "cvss_version": "3.0",
+      "cvss_vector": "CVSS:3.0/AV:N/AC:L/PR:N/UI:N/S:U/C:N/I:N/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "ollama",
+      "product": "ollama"
+    },
+    {
       "cve_id": "CVE-2026-5757",
       "published_date": "2026-06-26",
       "last_modified_date": "2026-06-29",
@@ -161,7 +182,7 @@
     {
       "cve_id": "CVE-2025-15514",
       "published_date": "2026-01-12",
-      "last_modified_date": "2026-06-30",
+      "last_modified_date": "2026-07-15",
       "description": "Ollama 0.11.5-rc0 through current version 0.13.5 contain a null pointer dereference vulnerability in the multi-modal model image processing functionality. When processing base64-encoded image data via the /api/chat endpoint, the application fails to validate that the decoded data represents valid media before passing it to the mtmd_helper_bitmap_init_from_buf function. This function can return NULL for malformed input, but the code does not check this return value before dereferencing the pointer in subsequent operations. A remote attacker can exploit this by sending specially crafted base64 image data that decodes to invalid media, causing a segmentation fault and crashing the runner process. This results in a denial of service condition where the model becomes unavailable to all users until the service is restarted.",
       "base_score": 7.5,
       "severity": "HIGH",

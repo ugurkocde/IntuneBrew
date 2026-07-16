@@ -5,7 +5,6 @@
   "homepage": "https://junegunn.github.io/fzf/",
   "url": "https://intunebrew.blob.core.windows.net/pkg/fzf_0.74.0_arm64.pkg",
   "fileName": "fzf_0.74.0_arm64.pkg",
-  "sha": "2db66e1b850c512b61314eeaa6a6420f83d29b926570a76465b9710fb857f91e",
   "bundledDependencies": [],
   "binaryPath": "/usr/local/bin/fzf"
 }

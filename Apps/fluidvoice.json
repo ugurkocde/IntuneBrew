@@ -1,0 +1,14 @@
+{
+  "name": "FluidVoice",
+  "description": "Offline voice-to-text dictation app with AI enhancement",
+  "version": "1.6.4",
+  "url": "https://github.com/altic-dev/FluidVoice/releases/download/v1.6.4/Fluid-oss-1.6.4.dmg",
+  "vendor_url": "https://github.com/altic-dev/FluidVoice/releases/download/v1.6.2/Fluid-oss-1.6.2.dmg",
+  "bundleId": "com.FluidApp.app",
+  "homepage": "https://altic.dev/fluid",
+  "fileName": "Fluid-oss-1.6.4.dmg",
+  "sha": "52b51a336058f44639ad36ce254dd7ee02334e8870decf2ed12a4f6fb608c633",
+  "category": "Productivity",
+  "publisher": "Altic",
+  "previous_version": "1.6.4"
+}

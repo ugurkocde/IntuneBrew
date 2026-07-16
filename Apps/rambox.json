@@ -1,15 +1,15 @@
 {
   "name": "Rambox",
   "description": "Workspace simplifier - to organize your workspace and boost your productivity",
-  "version": "2.6.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/rambox_2.6.3.pkg",
+  "version": "2.7.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/rambox_2.7.0.pkg",
   "vendor_url": "https://github.com/ramboxapp/download/releases/download/v2.6.2/Rambox-2.6.2-mac.zip",
   "bundleId": "com.grupovrs.ramboxce.helper",
   "homepage": "https://rambox.app/",
-  "fileName": "rambox_2.6.3.pkg",
+  "fileName": "rambox_2.7.0.pkg",
   "type": "app",
-  "sha": "531e0569367fd22d75dcf21b511683ea61309cc54c2825331d85a8b2eddb9f5b",
+  "sha": "43edcdc742fa8b435169ac4e5c8a9f699e6ce60d6af5ce610dbe8b2f4c7adc33",
   "category": "Productivity",
   "publisher": "Rambox Technologies GmbH",
-  "previous_version": "2.6.3"
+  "previous_version": "2.7.0"
 }

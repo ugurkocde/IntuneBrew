@@ -1,14 +1,14 @@
 {
   "name": "Adobe DNG Converter",
   "description": "DNG file converter",
-  "version": "18.4",
-  "url": "https://download.adobe.com/pub/adobe/dng/mac/DNGConverter_18_4.dmg",
+  "version": "18.4.1",
+  "url": "https://download.adobe.com/pub/adobe/dng/mac/DNGConverter_18_4_1.dmg",
   "vendor_url": "https://download.adobe.com/pub/adobe/dng/mac/DNGConverter_18_2_2.dmg",
   "bundleId": "com.adobe.DNGConverter",
   "homepage": "https://helpx.adobe.com/camera-raw/using/adobe-dng-converter.html",
-  "fileName": "DNGConverter_18_4.dmg",
-  "sha": "7b130777f98c71af1d37b179c10d212e4b0448e90f4dee4768609fec73024492",
+  "fileName": "DNGConverter_18_4_1.dmg",
+  "sha": "7f8cc02a903774e83ac3ba65e07eb16808be4d06b332884a665a2d1e1500b2bf",
   "category": "Utilities",
   "publisher": "Adobe Inc.",
-  "previous_version": "18.4"
+  "previous_version": "18.4.1"
 }

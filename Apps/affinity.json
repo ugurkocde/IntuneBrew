@@ -1,14 +1,14 @@
 {
   "name": "Affinity",
   "description": "Image editing and design software",
-  "version": "3.2.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/affinity_3.2.2.pkg",
+  "version": "3.2.3",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/affinity_3.2.3.pkg",
   "vendor_url": "https://affinity-update.s3.amazonaws.com/mac2/retail/Affinity%20Affinity%20Store%204351.zip",
   "bundleId": "ptujec.LaunchBar.action.AffinityRecentDocuments",
   "homepage": "https://www.affinity.studio/",
-  "fileName": "affinity_3.2.2.pkg",
+  "fileName": "affinity_3.2.3.pkg",
   "type": "app",
-  "sha": "ee47248c1419c55e2bbb023145ae36494742b541f7477f28ae3ecda740e82627",
+  "sha": "94261fe868379960f3952fdbd9cd98ab1a1211313dd84fb17ce450f544640ec3",
   "category": "Design",
   "publisher": "Serif (Europe) Ltd",
   "previous_version": "3.2.2"

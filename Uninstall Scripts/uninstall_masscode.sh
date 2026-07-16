@@ -25,12 +25,28 @@ elif [ -f "/Applications/massCode.app" ]; then
     rm -f "/Applications/massCode.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/massCode
-echo "Removing $HOME/Library/Application Support/massCode..."
-if [ -d "$HOME/Library/Application Support/massCode" ]; then
-    rm -rf "$HOME/Library/Application Support/massCode" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/massCode" ]; then
-    rm -f "$HOME/Library/Application Support/massCode" 2>/dev/null || true
+# Remove $HOME/.massCode
+echo "Removing $HOME/.massCode..."
+if [ -d "$HOME/.massCode" ]; then
+    rm -rf "$HOME/.massCode" 2>/dev/null || true
+elif [ -f "$HOME/.massCode" ]; then
+    rm -f "$HOME/.massCode" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.masscode.app.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.masscode.app.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.masscode.app.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.masscode.app.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.masscode.app.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.masscode.app.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/masscode
+echo "Removing $HOME/Library/Application Support/masscode..."
+if [ -d "$HOME/Library/Application Support/masscode" ]; then
+    rm -rf "$HOME/Library/Application Support/masscode" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/masscode" ]; then
+    rm -f "$HOME/Library/Application Support/masscode" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/io.masscode.app.plist

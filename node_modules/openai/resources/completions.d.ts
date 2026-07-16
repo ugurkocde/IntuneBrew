@@ -145,6 +145,10 @@ export declare namespace CompletionUsage {
          */
         audio_tokens?: number;
         /**
+         * The unadjusted number of prompt tokens written to cache.
+         */
+        cache_write_tokens?: number;
+        /**
          * Cached tokens present in the prompt.
          */
         cached_tokens?: number;

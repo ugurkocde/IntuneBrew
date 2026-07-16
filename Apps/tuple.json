@@ -1,15 +1,15 @@
 {
   "name": "Tuple",
   "description": "Remote pair programming app",
-  "version": "3.1.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/tuple_3.1.0.pkg",
+  "version": "3.1.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tuple_3.1.2.pkg",
   "vendor_url": "https://d32ifkf9k9ezcg.cloudfront.net/production/sparkle/tuple-2.4.1-2026-03-24-530848911.zip",
   "bundleId": "app.tuple.app",
   "homepage": "https://tuple.app/",
-  "fileName": "tuple_3.1.0.pkg",
+  "fileName": "tuple_3.1.2.pkg",
   "type": "app",
-  "sha": "d148e651c054f60fe4bcaf93dd9b1ee844824d7c7d77c90c3cde65e7a2cdad2c",
+  "sha": "9ee6eb3cccee69c1a1dcc9bb0446d3fc53156f5033323e9f9d1a3a53c83dd83a",
   "category": "Developer Tools",
   "publisher": "Tuple",
-  "previous_version": "3.1.0"
+  "previous_version": "3.1.2"
 }

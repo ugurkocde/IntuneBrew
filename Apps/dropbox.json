@@ -1,13 +1,13 @@
 {
   "name": "Dropbox",
   "description": "Client for the Dropbox cloud storage service",
-  "version": "258.4.3749",
-  "url": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20258.4.3749.arm64.dmg",
+  "version": "260.4.2926",
+  "url": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20260.4.2926.arm64.dmg",
   "vendor_url": "https://edge.dropboxstatic.com/dbx-releng/client/Dropbox%20248.4.3576.arm64.dmg",
   "bundleId": "com.getdropbox.dropbox",
   "homepage": "https://www.dropbox.com/",
-  "fileName": "Dropbox 258.4.3749.arm64.dmg",
-  "sha": "ea96c12c0a0a7ea37070e5a69d92d415945bc490beaf43f348e33384efc6f0eb",
+  "fileName": "Dropbox 260.4.2926.arm64.dmg",
+  "sha": "03b5507c71436f3a88657f70dc926059b76b8aa57495690e1fad70105f0f9b75",
   "changelog": "https://www.dropbox.com/release_notes",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:23:28Z",
@@ -21,5 +21,5 @@
   },
   "category": "Productivity",
   "publisher": "Dropbox, Inc.",
-  "previous_version": "258.4.3749"
+  "previous_version": "260.4.2926"
 }

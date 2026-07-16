@@ -1,0 +1,86 @@
+name: Pull Request Validation
+
+on:
+  pull_request:
+
+permissions:
+  contents: read
+
+jobs:
+  repository-integrity:
+    name: Repository integrity
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Reject case-insensitive path collisions
+        shell: python
+        run: |
+          import subprocess
+          import sys
+          import unicodedata
+
+          output = subprocess.check_output(["git", "ls-files", "-z"])
+          paths = output.decode("utf-8", errors="surrogateescape").split("\0")
+          paths = [path for path in paths if path]
+
+          seen = {}
+          collisions = []
+          for path in paths:
+              key = unicodedata.normalize("NFC", path).casefold()
+              previous = seen.get(key)
+              if previous is not None and previous != path:
+                  collisions.append((previous, path))
+              else:
+                  seen[key] = path
+
+          if collisions:
+              for first, second in collisions:
+                  print(f"::error::Case-insensitive path collision: {first} <-> {second}")
+              sys.exit(1)
+
+          print(f"Validated {len(paths)} tracked paths with no case-insensitive collisions.")
+
+      - name: Validate tracked JSON files
+        shell: python
+        run: |
+          import json
+          import pathlib
+          import subprocess
+
+          output = subprocess.check_output(["git", "ls-files", "-z", "*.json"])
+          paths = output.decode("utf-8", errors="surrogateescape").split("\0")
+          paths = [
+              pathlib.Path(path)
+              for path in paths
+              if path and not path.startswith("node_modules/")
+          ]
+
+          for path in paths:
+              with path.open(encoding="utf-8") as file:
+                  json.load(file)
+
+          print(f"Validated {len(paths)} tracked JSON files.")
+
+      - name: Validate Python syntax
+        shell: python
+        run: |
+          import pathlib
+          import subprocess
+
+          output = subprocess.check_output(["git", "ls-files", "-z", "*.py"])
+          paths = output.decode("utf-8", errors="surrogateescape").split("\0")
+          paths = [
+              pathlib.Path(path)
+              for path in paths
+              if path and not path.startswith("node_modules/")
+          ]
+
+          for path in paths:
+              source = path.read_text(encoding="utf-8")
+              compile(source, str(path), "exec")
+
+          print(f"Validated {len(paths)} tracked Python files.")

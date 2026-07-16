@@ -1,14 +1,14 @@
 {
   "name": "Bitfocus Companion",
   "description": "Streamdeck extension and emulation software",
-  "version": "4.3.4",
-  "url": "https://cf-pub.bitfocus.io/companion/companion/companion-mac-arm64-4.3.4-9244-stable-c14e5e3334.dmg",
+  "version": "5.0.1",
+  "url": "https://cf-pub.bitfocus.io/companion/companion/companion-mac-arm64-5.0.1-9649-stable-6acd549dd5.dmg",
   "vendor_url": "https://s4.bitfocus.io/builds/companion/companion-mac-arm64-4.2.6+8823-stable-4ecdfe70ba.dmg",
   "bundleId": "companion.bitfocus.no",
   "homepage": "https://bitfocus.io/companion",
-  "fileName": "companion-mac-arm64-4.3.4-9244-stable-c14e5e3334.dmg",
-  "sha": "4673efbbdb0383c3cdee981f5832bd823ab55c1fc0b2a8e1fbdc5bdd27eeab66",
+  "fileName": "companion-mac-arm64-5.0.1-9649-stable-6acd549dd5.dmg",
+  "sha": "c06f0f966076d71c5df79393f497ac3dc1461c65ce5560e9e7725d478c03ca28",
   "category": "Utilities",
   "publisher": "Bitfocus",
-  "previous_version": "4.3.4"
+  "previous_version": "5.0.1"
 }
