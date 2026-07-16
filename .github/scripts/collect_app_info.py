@@ -1435,31 +1435,88 @@ def find_bundle_id(json_string):
 
 class CaskUnavailableError(Exception):
     """Raised when a Homebrew cask is deprecated or disabled upstream."""
-    def __init__(self, display_name, reason):
-        super().__init__(f"{display_name}: {reason}")
+    def __init__(self, reason, display_name=None, cask_token=None):
+        identifier = display_name or cask_token or "unknown cask"
+        super().__init__(f"{identifier}: {reason}")
         self.display_name = display_name
+        self.cask_token = cask_token
         self.reason = reason
 
-def mark_app_deprecated(apps_folder, display_name, reason):
+def get_cask_token(json_url):
+    """Extract the Homebrew cask token from an API URL."""
+    filename = os.path.basename(urlparse(json_url).path)
+    return filename[:-5] if filename.endswith(".json") else filename
+
+
+def find_app_file(apps_folder, display_name=None, cask_token=None):
+    """Resolve an app JSON by stored cask provenance, display name, or cask token."""
+    candidates = []
+    if display_name:
+        candidates.append(sanitize_filename(display_name))
+    if cask_token:
+        candidates.extend(
+            [
+                cask_token.replace("@", "_").replace("-", "_"),
+                sanitize_filename(cask_token),
+            ]
+        )
+
+    for candidate_name in dict.fromkeys(candidates):
+        candidate = os.path.join(apps_folder, f"{candidate_name}.json")
+        if os.path.exists(candidate):
+            return candidate
+
+    if cask_token:
+        for filename in os.listdir(apps_folder):
+            if not filename.endswith(".json"):
+                continue
+            candidate = os.path.join(apps_folder, filename)
+            try:
+                with open(candidate, "r") as f:
+                    app_data = json.load(f)
+            except (OSError, ValueError):
+                continue
+            if app_data.get("homebrew_cask") == cask_token:
+                return candidate
+
+    return None
+
+
+def mark_app_deprecated(apps_folder, display_name, reason, cask_token=None):
     """Flag an existing app JSON as deprecated so it is excluded from supported_apps.json."""
-    file_path = os.path.join(apps_folder, f"{sanitize_filename(display_name)}.json")
-    if not os.path.exists(file_path):
-        print(f"Cask for {display_name} is unavailable ({reason}) and has no local JSON file, skipping")
-        return
+    file_path = find_app_file(apps_folder, display_name=display_name, cask_token=cask_token)
+    identifier = display_name or cask_token or "unknown cask"
+    if not file_path:
+        print(f"Cask for {identifier} is unavailable ({reason}) and has no local JSON file, skipping")
+        return False
     with open(file_path, "r") as f:
         app_data = json.load(f)
-    if app_data.get("deprecated") and app_data.get("deprecation_reason") == reason:
-        print(f"{display_name} is already flagged as deprecated")
-        return
+    already_deprecated = app_data.get("deprecated") and app_data.get("deprecation_reason") == reason
+    if cask_token:
+        app_data["homebrew_cask"] = cask_token
     app_data["deprecated"] = True
     app_data["deprecation_reason"] = reason
     with open(file_path, "w") as f:
         json.dump(app_data, f, indent=2)
-    print(f"Flagged {display_name} as deprecated: {reason}")
+    if already_deprecated:
+        print(f"{identifier} is already flagged as deprecated")
+    else:
+        print(f"Flagged {identifier} as deprecated: {reason}")
+    return True
+
 
 def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, is_pkg_in_pkg=False, is_pkg=False):
+    cask_token = get_cask_token(json_url)
     response = requests.get(json_url)
-    response.raise_for_status()
+    try:
+        response.raise_for_status()
+    except requests.HTTPError as error:
+        if response.status_code == 404:
+            raise CaskUnavailableError(
+                "cask removed from Homebrew",
+                cask_token=cask_token,
+            ) from error
+        raise
     data = response.json()
 
     # A deprecated or disabled cask means the vendor discontinued the app or
@@ -1468,7 +1525,11 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
     if data.get("deprecated") or data.get("disabled"):
         status = "disabled" if data.get("disabled") else "deprecated"
         reason = data.get("disable_reason") or data.get("deprecation_reason") or "no reason given"
-        raise CaskUnavailableError(data["name"][0], f"{status} in Homebrew: {reason}")
+        raise CaskUnavailableError(
+            f"{status} in Homebrew: {reason}",
+            display_name=data["name"][0],
+            cask_token=cask_token,
+        )
 
     json_string = json.dumps(data)
 
@@ -1499,6 +1560,7 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         "vendor_url": vendor_url,
         "bundleId": bundle_id,
         "homepage": data["homepage"],
+        "homebrew_cask": cask_token,
         # Direct PKG apps must never fall back to a .dmg filename: the uploader derives
         # the Intune app type from the file extension, so a PKG served from an
         # extensionless URL would be deployed as a DMG and fail to mount (Issue #107)
@@ -1737,6 +1799,7 @@ def main():
                     # Always update version and url
                     existing_data["version"] = new_version
                     existing_data["url"] = app_info["url"]
+                    existing_data["homebrew_cask"] = app_info["homebrew_cask"]
                     
                     # For repackaged apps (type "app", "pkg_in_dmg", or "pkg_in_pkg"),
                     # preserve the fileName field from the existing JSON file
@@ -1768,7 +1831,7 @@ def main():
             apps_info.append(app_info)
             print(f"Saved app information for {display_name} to {file_path}")
         except CaskUnavailableError as e:
-            mark_app_deprecated(apps_folder, e.display_name, e.reason)
+            mark_app_deprecated(apps_folder, e.display_name, e.reason, e.cask_token)
         except Exception as e:
             print(f"Error processing special app {url}: {str(e)}")
             print(f"Full error details: ", e)
@@ -1841,7 +1904,7 @@ def main():
             apps_info.append(app_info)
             print(f"Saved app information for {display_name} to {file_path}")
         except CaskUnavailableError as e:
-            mark_app_deprecated(apps_folder, e.display_name, e.reason)
+            mark_app_deprecated(apps_folder, e.display_name, e.reason, e.cask_token)
         except Exception as e:
             print(f"Error processing {url}: {str(e)}")
 
@@ -1889,7 +1952,7 @@ def main():
             apps_info.append(app_info)
             print(f"Saved app information for {display_name} to {file_path}")
         except CaskUnavailableError as e:
-            mark_app_deprecated(apps_folder, e.display_name, e.reason)
+            mark_app_deprecated(apps_folder, e.display_name, e.reason, e.cask_token)
         except Exception as e:
             print(f"Error processing PKG in PKG app {url}: {str(e)}")
 
@@ -1964,7 +2027,7 @@ def main():
             apps_info.append(app_info)
             print(f"Saved app information for {display_name} to {file_path}")
         except CaskUnavailableError as e:
-            mark_app_deprecated(apps_folder, e.display_name, e.reason)
+            mark_app_deprecated(apps_folder, e.display_name, e.reason, e.cask_token)
         except Exception as e:
             print(f"Error processing direct PKG app {url}: {str(e)}")
 
@@ -2011,7 +2074,7 @@ def main():
             apps_info.append(app_info)
             print(f"Saved app information for {display_name} to {file_path}")
         except CaskUnavailableError as e:
-            mark_app_deprecated(apps_folder, e.display_name, e.reason)
+            mark_app_deprecated(apps_folder, e.display_name, e.reason, e.cask_token)
         except Exception as e:
             print(f"Error processing PKG in DMG app {url}: {str(e)}")
 
