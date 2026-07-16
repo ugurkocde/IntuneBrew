@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.mimestream.Mimestream*" ]; then
     rm -f "$HOME/Library/Application Scripts/com.mimestream.Mimestream*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.com.mimestream.Mimestream
+echo "Removing $HOME/Library/Application Scripts/group.com.mimestream.Mimestream..."
+if [ -d "$HOME/Library/Application Scripts/group.com.mimestream.Mimestream" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.com.mimestream.Mimestream" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.com.mimestream.Mimestream" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.com.mimestream.Mimestream" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.mimestream.Mimestream
 echo "Removing $HOME/Library/Caches/com.mimestream.Mimestream..."
 if [ -d "$HOME/Library/Caches/com.mimestream.Mimestream" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Containers/com.mimestream.Mimestream*" ]; then
     rm -rf "$HOME/Library/Containers/com.mimestream.Mimestream*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.mimestream.Mimestream*" ]; then
     rm -f "$HOME/Library/Containers/com.mimestream.Mimestream*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/group.com.mimestream.Mimestream
+echo "Removing $HOME/Library/Group Containers/group.com.mimestream.Mimestream..."
+if [ -d "$HOME/Library/Group Containers/group.com.mimestream.Mimestream" ]; then
+    rm -rf "$HOME/Library/Group Containers/group.com.mimestream.Mimestream" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/group.com.mimestream.Mimestream" ]; then
+    rm -f "$HOME/Library/Group Containers/group.com.mimestream.Mimestream" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.mimestream.Mimestream.plist
