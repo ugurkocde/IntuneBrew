@@ -10,5 +10,7 @@
   "sha": "c9c0c28449e106d5b4598842701072f9201a3c6a53ccfb21295a7773f6fcc439",
   "category": "Communication",
   "publisher": "Cisco Systems, Inc.",
-  "previous_version": "4.0.0"
+  "previous_version": "4.0.0",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: discontinued"
 }

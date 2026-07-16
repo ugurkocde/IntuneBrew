@@ -16,6 +16,11 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v7
 
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
       - name: Reject case-insensitive path collisions
         shell: python
         run: |
@@ -84,3 +89,11 @@ jobs:
               compile(source, str(path), "exec")
 
           print(f"Validated {len(paths)} tracked Python files.")
+
+      - name: Install test dependencies
+        env:
+          PIP_DISABLE_PIP_VERSION_CHECK: "1"
+        run: python -m pip install requests==2.34.2
+
+      - name: Run catalog unit tests
+        run: python -m unittest discover -s tests -p "test_*.py"

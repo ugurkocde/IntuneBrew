@@ -10,5 +10,8 @@
   "type": "app",
   "category": "Developer Tools",
   "publisher": "VMware, Inc.",
-  "previous_version": "13.6.3"
+  "previous_version": "13.6.3",
+  "homebrew_cask": "vmware-fusion",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

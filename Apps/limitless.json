@@ -9,5 +9,7 @@
   "fileName": "Limitless.dmg",
   "category": "Productivity",
   "publisher": "Limitless AI",
-  "previous_version": "2.961.1"
+  "previous_version": "2.961.1",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: discontinued"
 }

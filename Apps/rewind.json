@@ -9,5 +9,7 @@
   "fileName": "Rewind.dmg",
   "category": "Productivity",
   "publisher": "Rewind AI, Inc.",
-  "previous_version": "1.5310"
+  "previous_version": "1.5310",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: unmaintained"
 }

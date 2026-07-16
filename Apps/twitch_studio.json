@@ -9,5 +9,8 @@
   "fileName": "twitchstudio.dmg",
   "category": "Media",
   "publisher": "Twitch Interactive, Inc.",
-  "previous_version": "0.114.8"
+  "previous_version": "0.114.8",
+  "homebrew_cask": "twitch-studio",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

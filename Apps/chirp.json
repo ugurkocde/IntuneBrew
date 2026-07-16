@@ -10,5 +10,7 @@
   "type": "app",
   "category": "Utilities",
   "publisher": "DanPlanet",
-  "previous_version": "20250801"
+  "previous_version": "20250801",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: cannot be reliably fetched due to Cloudflare protections"
 }
