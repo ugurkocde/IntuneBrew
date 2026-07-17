@@ -1,7 +1,7 @@
 {
   "app_name": "Gimp",
   "app_key": "gimp",
-  "last_updated": "2026-07-16",
+  "last_updated": "2026-07-17",
   "total_cves": 83,
   "summary": {
     "critical": 1,
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2026-58384",
       "published_date": "2026-07-07",
-      "last_modified_date": "2026-07-10",
+      "last_modified_date": "2026-07-16",
       "description": "A flaw was found in GIMP's PSD parser. An integer overflow in read_RLE_channel() can cause an undersized heap allocation for the RLE row-length table, after which subsequent per-row writes corrupt heap memory. This could lead to memory corruption, potentially resulting in denial of service or arbitrary code execution.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2026-58380",
       "published_date": "2026-07-06",
-      "last_modified_date": "2026-07-10",
+      "last_modified_date": "2026-07-16",
       "description": "A flaw was found in GIMP's PNM file format parser. When parsing a specially crafted PNM file, the pnmscanner_gettoken() function writes a null terminator one byte past the end of a stack-allocated buffer due to an off-by-one error in the loop boundary check. This could lead to memory corruption, potentially resulting in denial of service or arbitrary code execution.",
       "base_score": 7.3,
       "severity": "HIGH",
