@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1137-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -541,36 +541,21 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-16 22:04 UTC*
+*Last checked: 2026-07-17 00:46 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
+| Arc | 1.155.1 | 1.156.0 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Claude | 1.21459.3 | 1.22209.0 |
-| Cursor | 3.11.25 | 3.12.10 |
 | Dash | 8.1.1 | 23.1.7 |
 | Dash | 8.1.1 | 23.1.7 |
-| BrowserStack Local Testing | 3.7.6 | 3.7.7 |
-| Surge | 6.6.0 | 6.7.0 |
-| VPN Tracker 365 | 26.5 | 26.6 |
-| JetBrains PhpStorm | 2026.1.4 | 2026.2 |
-| DataGrip | 2026.1.4 | 2026.2 |
-| Discord | 0.0.400 | 0.0.401 |
-| draw.io Desktop | 30.3.11 | 30.3.13 |
-| Goland | 2026.1.4 | 2026.2 |
-| WebStorm | 2026.1.4 | 2026.2 |
-| CLion | 2026.1.4 | 2026.2 |
-| Epic Games Launcher | 20.1.0 | 20.1.4 |
-| IntelliJ IDEA Ultimate | 2026.1.4 | 2026.2 |
+| Dockside | 2.9.21 | 2.9.22 |
+| Floorp browser | 12.15.3 | 12.16.2 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| GDevelop | 5.6.273 | 5.6.274 |
-| Granola | 7.394.3 | 7.427.2 |
-| massCode | 5.8.0 | 5.9.0 |
-| Egnyte | 1.18.1 | 1.19.0 |
-| kiro | 0.12.333 | 1.0.138 |
-| Okta Advanced Server Access | 1.108.0 | 1.109.0 |
+| Loom | 0.361.0 | 0.361.3 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -671,7 +656,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/applite.png' width='32' height='32'> Applite | 1.3.1 |
 | <img src='Logos/apptivate.png' width='32' height='32'> Apptivate | 2.2.1 |
 | <img src='Logos/aptible_toolbelt.png' width='32' height='32'> Aptible Toolbelt | 0.26.8 |
-| <img src='Logos/arc.png' width='32' height='32'> Arc | 1.155.1 |
+| <img src='Logos/arc.png' width='32' height='32'> Arc | 1.156.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.5 |
 | <img src='Logos/archi.png' width='32' height='32'> Archi | 5.7.0 |
 | <img src='Logos/arduino_ide.png' width='32' height='32'> Arduino IDE | 2.3.10 |
@@ -914,7 +899,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.39.4 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.82.0 |
 | <img src='Logos/dockfix.png' width='32' height='32'> DockFix | 4.2.1 |
-| <img src='Logos/dockside.png' width='32' height='32'> Dockside | 2.9.21 |
+| <img src='Logos/dockside.png' width='32' height='32'> Dockside | 2.9.22 |
 | <img src='Logos/dockstation.png' width='32' height='32'> DockStation | 1.5.1 |
 | <img src='Logos/dockview.png' width='32' height='32'> DockView | 1.7.5 |
 | <img src='Logos/dorico.png' width='32' height='32'> Dorico | 6.2.30 |
@@ -1012,7 +997,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/flameshot.png' width='32' height='32'> Flameshot | 14.0.0 |
 | <img src='Logos/fleet.png' width='32' height='32'> Fleet | 1.48.261 |
 | <img src='Logos/flexoptix_app.png' width='32' height='32'> FLEXOPTIX App | 5.65.1-latest |
-| <img src='Logos/floorp_browser.png' width='32' height='32'> Floorp browser | 12.15.3 |
+| <img src='Logos/floorp_browser.png' width='32' height='32'> Floorp browser | 12.16.2 |
 | <img src='Logos/flowvision.png' width='32' height='32'> FlowVision | 1.7.4 |
 | <img src='Logos/fluid.png' width='32' height='32'> Fluid | 2.1.2 |
 | <img src='Logos/fluidvoice.png' width='32' height='32'> FluidVoice | 1.6.4 |
@@ -1211,7 +1196,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/logitech_options.png' width='32' height='32'> Logitech Options+ | 2.1.854976 |
 | <img src='Logos/logseq.png' width='32' height='32'> Logseq | 2.0.1 |
 | <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 2.2.6 |
-| <img src='Logos/loom.png' width='32' height='32'> Loom | 0.361.0 |
+| <img src='Logos/loom.png' width='32' height='32'> Loom | 0.361.3 |
 | <img src='Logos/loop.png' width='32' height='32'> Loop | 1.4.2 |
 | <img src='Logos/loopback.png' width='32' height='32'> Loopback | 2.4.10 |
 | <img src='Logos/losslesscut.png' width='32' height='32'> LosslessCut | 3.69.0 |
@@ -1869,6 +1854,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
+
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:

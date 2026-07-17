@@ -11,5 +11,6 @@
   "type": "pkg_in_dmg",
   "sha": "50c463e0c24bc871054525577962a1d70bc4a79c414ed7a17c0e64f10ade445f",
   "category": "Productivity",
-  "publisher": "Tableau Software, LLC"
+  "publisher": "Tableau Software, LLC",
+  "previous_version": "2026.2.0"
 }
