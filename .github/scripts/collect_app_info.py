@@ -1369,6 +1369,7 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/microsoft-365-copilot.json",
     "https://formulae.brew.sh/api/cask/vnc-server.json",
     "https://formulae.brew.sh/api/cask/mamp.json",
+    "https://formulae.brew.sh/api/cask/dotnet-sdk.json",
 ]
 
 # Custom scraper scripts to run
