@@ -23,6 +23,10 @@ launchctl unload -w /Library/LaunchAgents/com.jetbrains.toolbox.plist 2>/dev/nul
 launchctl unload -w /Library/LaunchDaemons/com.jetbrains.toolbox.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.jetbrains.toolbox.plist 2>/dev/null || true
 
+# Kill application with bundle ID com.jetbrains.toolbox if running
+echo "Stopping application with bundle ID com.jetbrains.toolbox if running..."
+killall -9 "com.jetbrains.toolbox" 2>/dev/null || true
+
 # Remove /Applications/JetBrains Toolbox.app
 echo "Removing /Applications/JetBrains Toolbox.app..."
 if [ -d "/Applications/JetBrains Toolbox.app" ]; then
