@@ -9,5 +9,7 @@
   "homebrew_cask": "dotnet-sdk",
   "fileName": "dotnet-sdk-10.0.302-osx-arm64.pkg",
   "type": "pkg",
-  "sha": "32240e6d439b281ae8622795c7c34db76030c4ff8d57d2ec394b5b6f012f6cf7"
+  "sha": "32240e6d439b281ae8622795c7c34db76030c4ff8d57d2ec394b5b6f012f6cf7",
+  "category": "Developer Tools",
+  "publisher": "Microsoft Corporation"
 }

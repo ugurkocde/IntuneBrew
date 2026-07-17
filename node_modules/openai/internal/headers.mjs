@@ -1,6 +1,7 @@
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 import { isReadonlyArray } from "./utils/values.mjs";
 const brand_privateNullableHeaders = /* @__PURE__ */ Symbol('brand.privateNullableHeaders');
+const httpTokenHeaderName = /^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$/;
 function* iterateHeaders(headers) {
     if (!headers)
         return;
@@ -49,17 +50,20 @@ export const buildHeaders = (newHeaders) => {
     for (const headers of newHeaders) {
         const seenHeaders = new Set();
         for (const [name, value] of iterateHeaders(headers)) {
+            if (!httpTokenHeaderName.test(name)) {
+                throw new TypeError(`Header name must be a valid HTTP token ["${name}"]`);
+            }
             const lowerName = name.toLowerCase();
             if (!seenHeaders.has(lowerName)) {
-                targetHeaders.delete(name);
+                targetHeaders.delete(lowerName);
                 seenHeaders.add(lowerName);
             }
             if (value === null) {
-                targetHeaders.delete(name);
+                targetHeaders.delete(lowerName);
                 nullHeaders.add(lowerName);
             }
             else {
-                targetHeaders.append(name, value);
+                targetHeaders.append(lowerName, value);
                 nullHeaders.delete(lowerName);
             }
         }
