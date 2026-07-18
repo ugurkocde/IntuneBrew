@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1139-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1141-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -545,26 +545,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-18 17:37 UTC*
+*Last checked: 2026-07-18 18:13 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Caffeine | 1.6.4 | 1.1.4 |
 | Dash | 8.1.1 | 23.1.7 |
 | Dash | 8.1.1 | 23.1.7 |
-| Fathom | 3.4.0 | 3.5.0 |
-| Clop | 3.3.0 | 3.3.1 |
-| Pika | 1.7.0 | 1.8.0 |
-| ChatWise | 26.7.2 | 26.7.3 |
-| ChatGPT | 26.715.21425 | 26.715.31925 |
-| draw.io Desktop | 30.3.13 | 30.3.14 |
-| kitty | 0.47.4 | 0.48.0 |
-| Dataflare | 3.1.3 | 3.1.4 |
-| Caffeine | 1.6.4 | 1.1.4 |
-| massCode | 5.9.0 | 5.9.1 |
-| Microsoft Outlook | 16.109.26053122 | 16.111.26071325 |
+| Wireshark | 4.4.7 | 4.6.7 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -1196,6 +1186,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/linear.png' width='32' height='32'> Linear | 1.28.13 |
 | <img src='Logos/linearmouse.png' width='32' height='32'> LinearMouse | 0.11.3 |
 | <img src='Logos/lingon_x.png' width='32' height='32'> Lingon X | 9.6.6 |
+| ❌ Linphone | 6.2.0 |
 | <img src='Logos/little_snitch.png' width='32' height='32'> Little Snitch | 6.4.1 |
 | <img src='Logos/lm_studio.png' width='32' height='32'> LM Studio | 0.4.19 |
 | <img src='Logos/lorain.png' width='32' height='32'> lo-rain | 1.5.2 |
@@ -1825,7 +1816,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/winzip.png' width='32' height='32'> WinZip | 12.0.7282 |
 | <img src='Logos/wire.png' width='32' height='32'> Wire | 3.42.5489 |
 | <img src='Logos/wirecast.png' width='32' height='32'> Wirecast | 16.5.3 |
-| <img src='Logos/wireshark.png' width='32' height='32'> Wireshark | 4.4.7 |
+| <img src='Logos/wireshark.png' width='32' height='32'> Wireshark | 4.6.7 |
 | <img src='Logos/witch.png' width='32' height='32'> Witch | 4.7.0 |
 | <img src='Logos/wondershare_filmora.png' width='32' height='32'> Wondershare Filmora | 13.0.25 |
 | <img src='Logos/wordservice.png' width='32' height='32'> WordService | 2.8.3 |
@@ -1865,6 +1856,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
+
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:

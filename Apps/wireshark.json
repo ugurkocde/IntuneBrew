@@ -1,18 +1,17 @@
 {
   "name": "Wireshark",
   "description": "Network protocol analyzer",
-  "version": "4.4.7",
-  "url": "https://2.na.dl.wireshark.org/osx/all-versions/Wireshark%204.4.7%20Arm%2064.dmg",
+  "version": "4.6.7",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/wireshark_4.6.7.pkg",
   "vendor_url": "https://2.na.dl.wireshark.org/osx/all-versions/Wireshark%204.4.7%20Arm%2064.dmg",
   "bundleId": "org.wireshark.Wireshark",
   "homepage": "https://www.wireshark.org/",
-  "fileName": "Wireshark%204.4.7%20Arm%2064.dmg",
-  "sha": "af1189f35774c2cf86578c4c143a79824c43070c59f7b01acff27469a40a847a",
+  "homebrew_cask": "wireshark",
+  "fileName": "wireshark_4.6.7.pkg",
+  "type": "pkg_in_dmg",
+  "sha": "6952d667047b0955c70a5cadabc2eed74e3ff278cd4056c410bed76e6d727d90",
   "changelog": "https://www.wireshark.org/news/",
-  "previous_version": "4.4.7",
   "category": "Developer Tools",
   "publisher": "The Wireshark Foundation",
-  "homebrew_cask": "wireshark",
-  "deprecated": true,
-  "deprecation_reason": "cask removed from Homebrew"
+  "previous_version": "4.4.7"
 }
