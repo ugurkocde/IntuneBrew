@@ -4,7 +4,7 @@
   "version": "6.2.0",
   "url": "https://download.linphone.org/releases/macosx/app/Linphone-6.2.0-mac.dmg",
   "vendor_url": "https://download.linphone.org/releases/macosx/app/Linphone-6.2.0-mac.dmg",
-  "bundleId": null,
+  "bundleId": "org.linphone.phone",
   "homepage": "https://www.linphone.org/",
   "homebrew_cask": "linphone",
   "fileName": "Linphone-6.2.0-mac.dmg",
