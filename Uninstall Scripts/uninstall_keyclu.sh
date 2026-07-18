@@ -29,6 +29,14 @@ elif [ -f "/Applications/KeyClu.app" ]; then
     rm -f "/Applications/KeyClu.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/KeyClu
+echo "Removing $HOME/Library/Application Support/KeyClu..."
+if [ -d "$HOME/Library/Application Support/KeyClu" ]; then
+    rm -rf "$HOME/Library/Application Support/KeyClu" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/KeyClu" ]; then
+    rm -f "$HOME/Library/Application Support/KeyClu" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.0804Team.KeyClu
 echo "Removing $HOME/Library/Caches/com.0804Team.KeyClu..."
 if [ -d "$HOME/Library/Caches/com.0804Team.KeyClu" ]; then
@@ -75,6 +83,14 @@ if [ -d "$HOME/Library/Saved Application State/com.0804Team.KeyClu.savedState" ]
     rm -rf "$HOME/Library/Saved Application State/com.0804Team.KeyClu.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.0804Team.KeyClu.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.0804Team.KeyClu.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.0804Team.KeyClu
+echo "Removing $HOME/Library/WebKit/com.0804Team.KeyClu..."
+if [ -d "$HOME/Library/WebKit/com.0804Team.KeyClu" ]; then
+    rm -rf "$HOME/Library/WebKit/com.0804Team.KeyClu" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.0804Team.KeyClu" ]; then
+    rm -f "$HOME/Library/WebKit/com.0804Team.KeyClu" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
