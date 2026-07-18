@@ -1,14 +1,14 @@
 {
   "name": "Free Download Manager",
   "description": "Download accelerator and organiser",
-  "version": "6.34.2",
+  "version": "6.34.3",
   "url": "https://files2.freedownloadmanager.org/6/latest/fdm.dmg",
   "vendor_url": "https://files2.freedownloadmanager.org/6/latest/fdm.dmg",
   "bundleId": "org.freedownloadmanager.fdm6",
   "homepage": "https://www.freedownloadmanager.org/",
   "homebrew_cask": "free-download-manager",
   "fileName": "fdm.dmg",
-  "sha": "11cc8447b39b781b90f564ce2907c40ce01834a1ea59c1d7d62f4e0eb97b873d",
+  "sha": "279e2445e65cd864e0f536e95a08a499bdb550a4a8801992335a8fd3cd277d32",
   "category": "Utilities",
   "publisher": "Free Download Manager",
   "previous_version": "6.34.2"

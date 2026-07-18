@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "d2f4ff82ea60b68abb966701c108505da775a58ae832efe8038e5f185939ea99",
   "changelog": "https://www.postman.com/release-notes/postman-app/",
-  "previous_version": "12.19.3",
+  "previous_version": "12.19.6",
   "category": "Developer Tools",
   "publisher": "Postman, Inc.",
   "homebrew_cask": "postman"
