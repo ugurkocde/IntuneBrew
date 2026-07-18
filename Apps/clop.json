@@ -1,14 +1,14 @@
 {
   "name": "Clop",
   "description": "Image, video and clipboard optimiser",
-  "version": "3.3.0",
-  "url": "https://files.lowtechguys.com/releases/Clop-3.3.0.dmg",
+  "version": "3.3.1",
+  "url": "https://files.lowtechguys.com/releases/Clop-3.3.1.dmg",
   "vendor_url": "https://files.lowtechguys.com/releases/Clop-2.11.6.dmg",
   "bundleId": "com.lowtechguys.Clop",
   "homepage": "https://lowtechguys.com/clop/",
   "homebrew_cask": "clop",
-  "fileName": "Clop-3.3.0.dmg",
-  "sha": "9f41fb5499bdd3957bb3f5e18b36aa05b31c2ed38f3890fcf65681c722a86f49",
+  "fileName": "Clop-3.3.1.dmg",
+  "sha": "1317f30abbd45d44d106a418944d5b2a90ac49535164f9b71864a5ce46532caf",
   "qa_info": {
     "qa_timestamp": "2025-05-13T07:19:24Z",
     "qa_result": "Installation successful and verified",

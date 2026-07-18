@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1138-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1139-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -544,37 +544,27 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-18 00:44 UTC*
+*Last checked: 2026-07-18 17:37 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| MacWhisper | 14.2 | 14.3 |
-| Microsoft Visual Studio Code | 1.129.0 | 1.129.1 |
-| Vivaldi | 8.1.4087.53 | 8.1.4087.55 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Cursor | 3.12.10 | 3.12.17 |
-| WhatsApp | 26.28.15 | 26.28.22 |
-| KeyClu | 0.31 | 0.32 |
 | Dash | 8.1.1 | 23.1.7 |
 | Dash | 8.1.1 | 23.1.7 |
-| EtreCheck | 6.8.14 | 6.8.15 |
-| Netron | 9.1.5 | 9.1.7 |
-| Studio 3T | 2026.11.0 | 2026.12.0 |
-| Apifox | 2.8.38 | 2.8.39 |
-| Brave | 1.92.140.0 | 1.92.141.0 |
-| Microsoft Edge | 150.0.4078.80 | 150.0.4078.83 |
-| Apidog | 2.8.38 | 2.8.39 |
-| Filen | 3.0.50 | 3.0.52 |
+| Fathom | 3.4.0 | 3.5.0 |
+| Clop | 3.3.0 | 3.3.1 |
+| Pika | 1.7.0 | 1.8.0 |
+| ChatWise | 26.7.2 | 26.7.3 |
+| ChatGPT | 26.715.21425 | 26.715.31925 |
+| draw.io Desktop | 30.3.13 | 30.3.14 |
+| kitty | 0.47.4 | 0.48.0 |
+| Dataflare | 3.1.3 | 3.1.4 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Douyin | 8.1.1 | 8.2.0 |
-| 4K YouTube to MP3 | 26.2.0 | 26.2.1 |
-| AdLock | 2.1.7.3 | 2.1.8.8 |
-| Free Download Manager | 6.34.2 | 6.34.3 |
-| Granola | 7.427.2 | 7.427.3 |
-| Pitch | 2.136.0 | 2.136.1 |
-| Dymo Connect | 1.6.0.41 | 1.6.1.4 |
+| massCode | 5.9.0 | 5.9.1 |
+| Microsoft Outlook | 16.109.26053122 | 16.111.26071325 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -797,9 +787,9 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/chalk.png' width='32' height='32'> Chalk | 1.7.5 |
 | <img src='Logos/charles.png' width='32' height='32'> Charles | 5.2 |
 | <img src='Logos/charmstone.png' width='32' height='32'> Charmstone | 1.44 |
-| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 26.715.21425 |
+| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 26.715.31925 |
 | <img src='Logos/chatgpt_atlas.png' width='32' height='32'> ChatGPT Atlas | 1.2026.126.0 |
-| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 26.7.2 |
+| <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 26.7.3 |
 | <img src='Logos/chatwork.png' width='32' height='32'> ChatWork | 2.23.1 |
 | <img src='Logos/cheatsheet.png' width='32' height='32'> CheatSheet | 1.6.4 |
 | <img src='Logos/cheetah3d.png' width='32' height='32'> Cheetah3D | 8.1.3 |
@@ -829,7 +819,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/clipy.png' width='32' height='32'> Clipy | 1.3.0 |
 | <img src='Logos/clocker.png' width='32' height='32'> Clocker | 26.13 |
 | <img src='Logos/clockify.png' width='32' height='32'> Clockify | 2.12.5 |
-| <img src='Logos/clop.png' width='32' height='32'> Clop | 3.3.0 |
+| <img src='Logos/clop.png' width='32' height='32'> Clop | 3.3.1 |
 | <img src='Logos/cloudcompare.png' width='32' height='32'> CloudCompare | 2.13.2 |
 | <img src='Logos/cloudflare_warp.png' width='32' height='32'> Cloudflare WARP | 2026.6.822.0 |
 | <img src='Logos/cloudytabs.png' width='32' height='32'> CloudyTabs | 2.0 |
@@ -875,7 +865,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/darkmodebuddy.png' width='32' height='32'> DarkModeBuddy | 1.2 |
 | <img src='Logos/darktable.png' width='32' height='32'> darktable | 5.6.0 |
 | <img src='Logos/dash.png' width='32' height='32'> Dash | 23.1.7 |
-| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 3.1.3 |
+| <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 3.1.4 |
 | <img src='Logos/datagraph.png' width='32' height='32'> DataGraph | 5.5 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2026.2 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2026.1.2 |
@@ -928,7 +918,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/doughnut.png' width='32' height='32'> Doughnut | 2.0.1 |
 | <img src='Logos/douyin.png' width='32' height='32'> Douyin | 8.2.0 |
 | <img src='Logos/downie.png' width='32' height='32'> Downie | 4.12.10 |
-| <img src='Logos/drawio_desktop.png' width='32' height='32'> draw.io Desktop | 30.3.13 |
+| <img src='Logos/drawio_desktop.png' width='32' height='32'> draw.io Desktop | 30.3.14 |
 | <img src='Logos/drawbot.png' width='32' height='32'> DrawBot | 3.132 |
 | <img src='Logos/drivedx.png' width='32' height='32'> DriveDX | 1.12.1 |
 | <img src='Logos/dropbox.png' width='32' height='32'> Dropbox | 260.4.2926 |
@@ -1001,7 +991,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/farrago.png' width='32' height='32'> Farrago | 2.1.5 |
 | <img src='Logos/fastmail.png' width='32' height='32'> Fastmail | 1.5.1 |
 | <img src='Logos/fastscripts.png' width='32' height='32'> FastScripts | 3.3.8 |
-| <img src='Logos/fathom.png' width='32' height='32'> Fathom | 3.4.0 |
+| <img src='Logos/fathom.png' width='32' height='32'> Fathom | 3.5.0 |
 | <img src='Logos/fellow.png' width='32' height='32'> Fellow | 5.4.5 |
 | <img src='Logos/ferdium.png' width='32' height='32'> Ferdium | 7.1.2 |
 | <img src='Logos/fig.png' width='32' height='32'> fig | 2.19.0 |
@@ -1180,7 +1170,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/keystore_explorer.png' width='32' height='32'> KeyStore Explorer | 5.6.1 |
 | <img src='Logos/kicad.png' width='32' height='32'> KiCad | 10.0.4 |
 | <img src='Logos/kiro.png' width='32' height='32'> kiro | 1.0.165 |
-| <img src='Logos/kitty.png' width='32' height='32'> kitty | 0.47.4 |
+| <img src='Logos/kitty.png' width='32' height='32'> kitty | 0.48.0 |
 | <img src='Logos/klokki.png' width='32' height='32'> Klokki | 1.3.7 |
 | <img src='Logos/knockknock.png' width='32' height='32'> KnockKnock | 4.0.3 |
 | <img src='Logos/kobo.png' width='32' height='32'> Kobo | latest |
@@ -1256,7 +1246,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.33.1 |
 | <img src='Logos/marsedit.png' width='32' height='32'> MarsEdit | 5.4.3 |
 | <img src='Logos/marta_file_manager.png' width='32' height='32'> Marta File Manager | 0.8.2 |
-| <img src='Logos/masscode.png' width='32' height='32'> massCode | 5.9.0 |
+| <img src='Logos/masscode.png' width='32' height='32'> massCode | 5.9.1 |
 | <img src='Logos/mattermost.png' width='32' height='32'> Mattermost | 6.2.2 |
 | <img src='Logos/mediainfo.png' width='32' height='32'> MediaInfo | 26.05 |
 | <img src='Logos/medis.png' width='32' height='32'> Medis | 2.16.1 |
@@ -1284,7 +1274,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/microsoft_office.png' width='32' height='32'> Microsoft Office | 16.111.26071325 |
 | <img src='Logos/microsoft_office_businesspro.png' width='32' height='32'> Microsoft Office BusinessPro | 16.111.26071325 |
 | <img src='Logos/microsoft_onenote.png' width='32' height='32'> Microsoft OneNote | 16.111.26071325 |
-| <img src='Logos/microsoft_outlook.png' width='32' height='32'> Microsoft Outlook | 16.109.26053122 |
+| <img src='Logos/microsoft_outlook.png' width='32' height='32'> Microsoft Outlook | 16.111.26071325 |
 | <img src='Logos/microsoft_powerpoint.png' width='32' height='32'> Microsoft PowerPoint | 16.111.26071325 |
 | <img src='Logos/microsoft_teams.png' width='32' height='32'> Microsoft Teams | 26163.407.4839.8659 |
 | <img src='Logos/microsoft_visual_studio_code.png' width='32' height='32'> Microsoft Visual Studio Code | 1.129.1 |
@@ -1452,7 +1442,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/pibar.png' width='32' height='32'> PiBar | 1.2.1 |
 | <img src='Logos/picview.png' width='32' height='32'> PicView | 4.2.0 |
 | <img src='Logos/piezo.png' width='32' height='32'> Piezo | 1.9.9 |
-| <img src='Logos/pika.png' width='32' height='32'> Pika | 1.7.0 |
+| <img src='Logos/pika.png' width='32' height='32'> Pika | 1.8.0 |
 | <img src='Logos/pingplotter.png' width='32' height='32'> PingPlotter | 5.27.10 |
 | <img src='Logos/piphero.png' width='32' height='32'> PiPHero | 1.2.0 |
 | <img src='Logos/piriform_ccleaner.png' width='32' height='32'> Piriform CCleaner | 2.11.194 |
@@ -1683,6 +1673,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 2.16.4 |
 | <img src='Logos/support_app.png' width='32' height='32'> Support App | 3.0.3 |
 | <img src='Logos/support_companion.png' width='32' height='32'> Support Companion | 2.3.1.81039 |
+| ❌ Supremo | 4.12.0.2999 |
 | <img src='Logos/surfshark.png' width='32' height='32'> Surfshark | 4.28.1 |
 | <img src='Logos/surge.png' width='32' height='32'> Surge | 6.7.0 |
 | <img src='Logos/suspicious_package.png' width='32' height='32'> Suspicious Package | 4.6.2 |

@@ -1,0 +1,12 @@
+{
+  "name": "Supremo",
+  "description": "Remote desktop software",
+  "version": "4.12.0.2999",
+  "url": "https://assets.nanosystems.com/AutoUpdateS/macOS/standard/stable/Supremo_4.12.0.2999.dmg",
+  "vendor_url": "https://assets.nanosystems.com/AutoUpdateS/macOS/standard/stable/Supremo_4.12.0.2999.dmg",
+  "bundleId": null,
+  "homepage": "https://www.supremocontrol.com/",
+  "homebrew_cask": "supremo",
+  "fileName": "Supremo_4.12.0.2999.dmg",
+  "sha": "458a2263b9164f7cfddfd7df16379d9a38c3109ac65421dfae54290a1abed61a"
+}
