@@ -29,6 +29,14 @@ elif [ -f "/Applications/ChatGPT.app" ]; then
     rm -f "/Applications/ChatGPT.app" 2>/dev/null || true
 fi
 
+# Remove /Library/Application Support/CodexComputerUseAuthorizationPlugin
+echo "Removing /Library/Application Support/CodexComputerUseAuthorizationPlugin..."
+if [ -d "/Library/Application Support/CodexComputerUseAuthorizationPlugin" ]; then
+    rm -rf "/Library/Application Support/CodexComputerUseAuthorizationPlugin" 2>/dev/null || true
+elif [ -f "/Library/Application Support/CodexComputerUseAuthorizationPlugin" ]; then
+    rm -f "/Library/Application Support/CodexComputerUseAuthorizationPlugin" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Codex
 echo "Removing $HOME/Library/Application Support/Codex..."
 if [ -d "$HOME/Library/Application Support/Codex" ]; then
@@ -45,12 +53,52 @@ elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.
     rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.openai.codex
+echo "Removing $HOME/Library/Application Support/com.openai.codex..."
+if [ -d "$HOME/Library/Application Support/com.openai.codex" ]; then
+    rm -rf "$HOME/Library/Application Support/com.openai.codex" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.openai.codex" ]; then
+    rm -f "$HOME/Library/Application Support/com.openai.codex" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/OpenAI/Codex
+echo "Removing $HOME/Library/Application Support/OpenAI/Codex..."
+if [ -d "$HOME/Library/Application Support/OpenAI/Codex" ]; then
+    rm -rf "$HOME/Library/Application Support/OpenAI/Codex" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/OpenAI/Codex" ]; then
+    rm -f "$HOME/Library/Application Support/OpenAI/Codex" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/Codex
+echo "Removing $HOME/Library/Caches/Codex..."
+if [ -d "$HOME/Library/Caches/Codex" ]; then
+    rm -rf "$HOME/Library/Caches/Codex" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/Codex" ]; then
+    rm -f "$HOME/Library/Caches/Codex" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.openai.codex
 echo "Removing $HOME/Library/Caches/com.openai.codex..."
 if [ -d "$HOME/Library/Caches/com.openai.codex" ]; then
     rm -rf "$HOME/Library/Caches/com.openai.codex" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.openai.codex" ]; then
     rm -f "$HOME/Library/Caches/com.openai.codex" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.openai.sky.CUAService
+echo "Removing $HOME/Library/Caches/com.openai.sky.CUAService..."
+if [ -d "$HOME/Library/Caches/com.openai.sky.CUAService" ]; then
+    rm -rf "$HOME/Library/Caches/com.openai.sky.CUAService" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.openai.sky.CUAService" ]; then
+    rm -f "$HOME/Library/Caches/com.openai.sky.CUAService" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/*.com.openai.sky.CUAService
+echo "Removing $HOME/Library/Group Containers/*.com.openai.sky.CUAService..."
+if [ -d "$HOME/Library/Group Containers/*.com.openai.sky.CUAService" ]; then
+    rm -rf "$HOME/Library/Group Containers/*.com.openai.sky.CUAService" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/*.com.openai.sky.CUAService" ]; then
+    rm -f "$HOME/Library/Group Containers/*.com.openai.sky.CUAService" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.openai.codex
@@ -69,6 +117,22 @@ elif [ -f "$HOME/Library/HTTPStorages/com.openai.codex.binarycookies" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.openai.codex.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.openai.sky.CUAService
+echo "Removing $HOME/Library/HTTPStorages/com.openai.sky.CUAService..."
+if [ -d "$HOME/Library/HTTPStorages/com.openai.sky.CUAService" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.openai.sky.CUAService" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.openai.sky.CUAService" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.openai.sky.CUAService" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.openai.sky.CUAService.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/com.openai.sky.CUAService.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/com.openai.sky.CUAService.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.openai.sky.CUAService.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.openai.sky.CUAService.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.openai.sky.CUAService.binarycookies" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/com.openai.codex
 echo "Removing $HOME/Library/Logs/com.openai.codex..."
 if [ -d "$HOME/Library/Logs/com.openai.codex" ]; then
@@ -83,6 +147,22 @@ if [ -d "$HOME/Library/Preferences/com.openai.codex.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.openai.codex.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.openai.codex.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.openai.codex.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.openai.sky.CUAService.cli.plist
+echo "Removing $HOME/Library/Preferences/com.openai.sky.CUAService.cli.plist..."
+if [ -d "$HOME/Library/Preferences/com.openai.sky.CUAService.cli.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.openai.sky.CUAService.cli.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.openai.sky.CUAService.cli.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.openai.sky.CUAService.cli.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.openai.sky.CUAService.plist
+echo "Removing $HOME/Library/Preferences/com.openai.sky.CUAService.plist..."
+if [ -d "$HOME/Library/Preferences/com.openai.sky.CUAService.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.openai.sky.CUAService.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.openai.sky.CUAService.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.openai.sky.CUAService.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.openai.codex.savedState

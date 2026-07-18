@@ -25,6 +25,14 @@ elif [ -f "/Applications/GeForceNOW.app" ]; then
     rm -f "/Applications/GeForceNOW.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/CrashReporter/GeForceNOWContainer_*.plist
+echo "Removing $HOME/Library/Application Support/CrashReporter/GeForceNOWContainer_*.plist..."
+if [ -d "$HOME/Library/Application Support/CrashReporter/GeForceNOWContainer_*.plist" ]; then
+    rm -rf "$HOME/Library/Application Support/CrashReporter/GeForceNOWContainer_*.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/CrashReporter/GeForceNOWContainer_*.plist" ]; then
+    rm -f "$HOME/Library/Application Support/CrashReporter/GeForceNOWContainer_*.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/NVIDIA Corporation/MessageBus_GFN_session*.conf
 echo "Removing $HOME/Library/Application Support/NVIDIA Corporation/MessageBus_GFN_session*.conf..."
 if [ -d "$HOME/Library/Application Support/NVIDIA Corporation/MessageBus_GFN_session*.conf" ]; then
@@ -73,6 +81,14 @@ elif [ -f "$HOME/Library/HTTPStorages/com.nvidia.gfnpc.mall" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.nvidia.gfnpc.mall" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/DiagnosticReports/GeForceNOWContainer*.crash
+echo "Removing $HOME/Library/Logs/DiagnosticReports/GeForceNOWContainer*.crash..."
+if [ -d "$HOME/Library/Logs/DiagnosticReports/GeForceNOWContainer*.crash" ]; then
+    rm -rf "$HOME/Library/Logs/DiagnosticReports/GeForceNOWContainer*.crash" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/DiagnosticReports/GeForceNOWContainer*.crash" ]; then
+    rm -f "$HOME/Library/Logs/DiagnosticReports/GeForceNOWContainer*.crash" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.nvidia.gfnpc.mall.helper.plist
 echo "Removing $HOME/Library/Preferences/com.nvidia.gfnpc.mall.helper.plist..."
 if [ -d "$HOME/Library/Preferences/com.nvidia.gfnpc.mall.helper.plist" ]; then
@@ -89,12 +105,36 @@ elif [ -f "$HOME/Library/Preferences/com.nvidia.gfnpc.mall.helper.renderer.plist
     rm -f "$HOME/Library/Preferences/com.nvidia.gfnpc.mall.helper.renderer.plist" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.nvidia.nvcontainer.plist
+echo "Removing $HOME/Library/Preferences/com.nvidia.nvcontainer.plist..."
+if [ -d "$HOME/Library/Preferences/com.nvidia.nvcontainer.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.nvidia.nvcontainer.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.nvidia.nvcontainer.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.nvidia.nvcontainer.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/com.nvidia.gfnpc.mall.savedState
 echo "Removing $HOME/Library/Saved Application State/com.nvidia.gfnpc.mall.savedState..."
 if [ -d "$HOME/Library/Saved Application State/com.nvidia.gfnpc.mall.savedState" ]; then
     rm -rf "$HOME/Library/Saved Application State/com.nvidia.gfnpc.mall.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.nvidia.gfnpc.mall.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.nvidia.gfnpc.mall.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/NVIDIA
+echo "Removing $HOME/Library/Application Support/NVIDIA..."
+if [ -d "$HOME/Library/Application Support/NVIDIA" ]; then
+    rm -rf "$HOME/Library/Application Support/NVIDIA" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/NVIDIA" ]; then
+    rm -f "$HOME/Library/Application Support/NVIDIA" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/NVIDIA
+echo "Removing $HOME/Library/Caches/NVIDIA..."
+if [ -d "$HOME/Library/Caches/NVIDIA" ]; then
+    rm -rf "$HOME/Library/Caches/NVIDIA" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/NVIDIA" ]; then
+    rm -f "$HOME/Library/Caches/NVIDIA" 2>/dev/null || true
 fi
 
 # Remove $HOME/Movies/NVIDIA
