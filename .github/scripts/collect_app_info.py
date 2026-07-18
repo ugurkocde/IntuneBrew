@@ -1232,6 +1232,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/viber.json",
     "https://formulae.brew.sh/api/cask/adobe-creative-cloud.json",
     "https://formulae.brew.sh/api/cask/fluidvoice.json",
+    "https://formulae.brew.sh/api/cask/supremo.json",
 ]
 
 # PKG in DMG URLs
