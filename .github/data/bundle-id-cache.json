@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-07-18T18:23:33.378Z",
+  "last_full_scan": "2026-07-18T23:23:44.639Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9315,6 +9315,19 @@
         "github_search"
       ],
       "name": "Linphone"
+    },
+    "winbox": {
+      "last_checked": "2026-07-18T23:23:44.537Z",
+      "bundle_id": "com.mikrotik.winbox",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "github_search",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search"
+      ],
+      "name": "WinBox"
     }
   }
 }

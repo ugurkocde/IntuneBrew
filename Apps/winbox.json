@@ -4,7 +4,7 @@
   "version": "4.2",
   "url": "https://download.mikrotik.com/routeros/winbox/4.2/WinBox.dmg",
   "vendor_url": "https://download.mikrotik.com/routeros/winbox/4.2/WinBox.dmg",
-  "bundleId": null,
+  "bundleId": "com.mikrotik.winbox",
   "homepage": "https://mikrotik.com/",
   "homebrew_cask": "winbox",
   "fileName": "WinBox.dmg",
