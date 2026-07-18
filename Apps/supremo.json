@@ -8,5 +8,7 @@
   "homepage": "https://www.supremocontrol.com/",
   "homebrew_cask": "supremo",
   "fileName": "Supremo_4.12.0.2999.dmg",
-  "sha": "458a2263b9164f7cfddfd7df16379d9a38c3109ac65421dfae54290a1abed61a"
+  "sha": "458a2263b9164f7cfddfd7df16379d9a38c3109ac65421dfae54290a1abed61a",
+  "category": "Utilities",
+  "publisher": "Supremo"
 }
