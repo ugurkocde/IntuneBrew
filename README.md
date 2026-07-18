@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1141-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1142-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -546,15 +546,19 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-18 18:13 UTC*
+*Last checked: 2026-07-18 23:11 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
+| Caffeine | 1.6.4 | 1.1.4 |
 | Dash | 8.1.1 | 23.1.7 |
 | Dash | 8.1.1 | 23.1.7 |
-| Wireshark | 4.4.7 | 4.6.7 |
+| Netron | 9.1.7 | 9.1.8 |
+| REAPER | 7.77 | 7.78 |
+| Caffeine | 1.6.4 | 1.1.4 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -1332,7 +1336,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/netbeans_ide.png' width='32' height='32'> NetBeans IDE | 30 |
 | <img src='Logos/netiquette.png' width='32' height='32'> Netiquette | 2.3.0 |
 | <img src='Logos/netnewswire.png' width='32' height='32'> NetNewsWire | 7.1.1 |
-| <img src='Logos/netron.png' width='32' height='32'> Netron | 9.1.7 |
+| <img src='Logos/netron.png' width='32' height='32'> Netron | 9.1.8 |
 | <img src='Logos/netspot.png' width='32' height='32'> NetSpot | 5.1.4971 |
 | <img src='Logos/nextcloud.png' width='32' height='32'> Nextcloud | 33.0.7 |
 | <img src='Logos/nextcloud_talk_desktop.png' width='32' height='32'> Nextcloud Talk Desktop | 2.2.1 |
@@ -1503,7 +1507,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/readest.png' width='32' height='32'> Readest | 0.11.18 |
 | <img src='Logos/real_vnc_server.png' width='32' height='32'> Real VNC Server | 7.17.0 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.15.1 |
-| <img src='Logos/reaper.png' width='32' height='32'> REAPER | 7.77 |
+| <img src='Logos/reaper.png' width='32' height='32'> REAPER | 7.78 |
 | <img src='Logos/recents.png' width='32' height='32'> Recents | 2.5.0 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 0.98 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.80 |
@@ -1808,6 +1812,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/whisky.png' width='32' height='32'> Whisky | 2.3.5 |
 | <img src='Logos/whispering.png' width='32' height='32'> Whispering | 7.11.0 |
 | <img src='Logos/wifiman_desktop.png' width='32' height='32'> WiFiman Desktop | 1.2.8 |
+| ❌ WinBox | 4.2 |
 | <img src='Logos/windowkeys.png' width='32' height='32'> WindowKeys | 3.0.1 |
 | <img src='Logos/windows_app.png' width='32' height='32'> Windows App | 11.3.7 |
 | <img src='Logos/windsurf.png' width='32' height='32'> Windsurf | 2.3.15 |

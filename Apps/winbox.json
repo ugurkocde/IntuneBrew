@@ -1,0 +1,12 @@
+{
+  "name": "WinBox",
+  "description": "Administration tool for MikroTik RouterOS",
+  "version": "4.2",
+  "url": "https://download.mikrotik.com/routeros/winbox/4.2/WinBox.dmg",
+  "vendor_url": "https://download.mikrotik.com/routeros/winbox/4.2/WinBox.dmg",
+  "bundleId": null,
+  "homepage": "https://mikrotik.com/",
+  "homebrew_cask": "winbox",
+  "fileName": "WinBox.dmg",
+  "sha": "ac405d90b87dfbb833765438b88fd2742016c169c6dad0503d64dd19c1137ec2"
+}
