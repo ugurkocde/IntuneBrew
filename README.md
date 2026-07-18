@@ -1673,7 +1673,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 2.16.4 |
 | <img src='Logos/support_app.png' width='32' height='32'> Support App | 3.0.3 |
 | <img src='Logos/support_companion.png' width='32' height='32'> Support Companion | 2.3.1.81039 |
-| ❌ Supremo | 4.12.0.2999 |
+| <img src='Logos/supremo.png' width='32' height='32'> Supremo | 4.12.0.2999 |
 | <img src='Logos/surfshark.png' width='32' height='32'> Surfshark | 4.28.1 |
 | <img src='Logos/surge.png' width='32' height='32'> Surge | 6.7.0 |
 | <img src='Logos/suspicious_package.png' width='32' height='32'> Suspicious Package | 4.6.2 |
@@ -1865,7 +1865,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
-
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:
