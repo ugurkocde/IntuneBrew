@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-07-18T01:00:03.531Z",
+  "last_full_scan": "2026-07-18T17:50:53.294Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8976,15 +8976,16 @@
       "name": "Music Decoy"
     },
     "morgen": {
-      "last_checked": "2026-04-19T14:31:07.055Z",
-      "bundle_id": null,
-      "status": "unknown",
+      "last_checked": "2026-07-18T17:48:52.790Z",
+      "bundle_id": "com.todesktop.210203cqcj00tw1",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
       "methods_tried": [
         "mac_app_store",
         "pkg_inspection",
         "github_search",
-        "openai_improved",
-        "openai_alternative"
+        "openai_improved"
       ],
       "name": "Morgen"
     },
@@ -9288,6 +9289,19 @@
       "status": "verified",
       "source": "file",
       "name": ".NET SDK"
+    },
+    "supremo": {
+      "last_checked": "2026-07-18T17:50:53.291Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved",
+        "openai_alternative"
+      ],
+      "name": "Supremo"
     }
   }
 }

@@ -4,7 +4,7 @@
   "version": "4.0.6",
   "url": "https://download.todesktop.com/210203cqcj00tw1/Morgen%204.0.6%20-%20Build%20260519by9gmr661-arm64.dmg",
   "vendor_url": "https://download.todesktop.com/210203cqcj00tw1/Morgen%204.0.4%20-%20Build%202602193oszs1hv7-arm64.dmg",
-  "bundleId": null,
+  "bundleId": "com.todesktop.210203cqcj00tw1",
   "homepage": "https://morgen.so/",
   "homebrew_cask": "morgen",
   "fileName": "Morgen 4.0.6 - Build 260519by9gmr661-arm64.dmg",
