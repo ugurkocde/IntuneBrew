@@ -10,5 +10,6 @@
   "fileName": "WinBox.dmg",
   "sha": "ac405d90b87dfbb833765438b88fd2742016c169c6dad0503d64dd19c1137ec2",
   "category": "Utilities",
-  "publisher": "MikroTik"
+  "publisher": "MikroTik",
+  "previous_version": "4.2"
 }

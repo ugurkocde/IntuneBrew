@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1142-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -547,17 +547,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-18 23:11 UTC*
+*Last checked: 2026-07-19 00:47 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
 | Dash | 8.1.1 | 23.1.7 |
 | Dash | 8.1.1 | 23.1.7 |
-| Netron | 9.1.7 | 9.1.8 |
-| REAPER | 7.77 | 7.78 |
 | Caffeine | 1.6.4 | 1.1.4 |
 ## ✨ Features
 
@@ -1861,6 +1860,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
+
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:
