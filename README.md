@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1142-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -548,16 +548,26 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-19 00:47 UTC*
+*Last checked: 2026-07-20 00:47 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
+| Claude | 1.22209.0 | 1.22209.3 |
 | Dash | 8.1.1 | 23.1.7 |
 | Dash | 8.1.1 | 23.1.7 |
+| Dockside | 2.9.22 | 2.9.23 |
+| Readest | 0.11.18 | 0.11.20 |
+| DBeaver Community Edition | 26.1.2 | 26.1.3 |
+| Stats | 3.0.8 | 3.0.9 |
+| BoltAI 2 | 2.13.7 | 2.14.0 |
 | Caffeine | 1.6.4 | 1.1.4 |
+| WebCatalog | 77.3.4 | 77.4.0 |
+| ChatGPT Atlas | 1.2026.126.0 | 1.2026.189.0 |
+| cmux | 0.64.19 | 0.64.20 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -734,7 +744,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/bluewallet.png' width='32' height='32'> BlueWallet | 7.2.6 |
 | <img src='Logos/blurscreen.png' width='32' height='32'> BlurScreen | 1.0 |
 | <img src='Logos/boltai.png' width='32' height='32'> BoltAI | 1.36.5 |
-| <img src='Logos/boltai_2.png' width='32' height='32'> BoltAI 2 | 2.13.7 |
+| <img src='Logos/boltai_2.png' width='32' height='32'> BoltAI 2 | 2.14.0 |
 | <img src='Logos/bome_network.png' width='32' height='32'> Bome Network | 1.6.0 |
 | <img src='Logos/boom_3d.png' width='32' height='32'> Boom 3D | 2.3.0 |
 | <img src='Logos/boop.png' width='32' height='32'> Boop | 1.4.0 |
@@ -781,7 +791,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/charles.png' width='32' height='32'> Charles | 5.2 |
 | <img src='Logos/charmstone.png' width='32' height='32'> Charmstone | 1.44 |
 | <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 26.715.31925 |
-| <img src='Logos/chatgpt_atlas.png' width='32' height='32'> ChatGPT Atlas | 1.2026.126.0 |
+| <img src='Logos/chatgpt_atlas.png' width='32' height='32'> ChatGPT Atlas | 1.2026.189.0 |
 | <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 26.7.3 |
 | <img src='Logos/chatwork.png' width='32' height='32'> ChatWork | 2.23.1 |
 | <img src='Logos/cheatsheet.png' width='32' height='32'> CheatSheet | 1.6.4 |
@@ -797,7 +807,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/cisco_proximity.png' width='32' height='32'> Cisco Proximity | 4.0.0 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 26.03.11.41 |
 | <img src='Logos/clamxav.png' width='32' height='32'> ClamXAV | 3.10.2 |
-| <img src='Logos/claude.png' width='32' height='32'> Claude | 1.22209.0 |
+| <img src='Logos/claude.png' width='32' height='32'> Claude | 1.22209.3 |
 | ❌ Claude Code | 2.1.205 |
 | <img src='Logos/cleanclip.png' width='32' height='32'> CleanClip | 2.4.7 |
 | <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.5.6 |
@@ -816,7 +826,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/cloudcompare.png' width='32' height='32'> CloudCompare | 2.13.2 |
 | <img src='Logos/cloudflare_warp.png' width='32' height='32'> Cloudflare WARP | 2026.6.822.0 |
 | <img src='Logos/cloudytabs.png' width='32' height='32'> CloudyTabs | 2.0 |
-| <img src='Logos/cmux.png' width='32' height='32'> cmux | 0.64.19 |
+| <img src='Logos/cmux.png' width='32' height='32'> cmux | 0.64.20 |
 | <img src='Logos/cncnet_classic_command__conquer.png' width='32' height='32'> CnCNet: Classic Command & Conquer | 2.1 |
 | <img src='Logos/coconutbattery.png' width='32' height='32'> coconutBattery | 4.3.3 |
 | <img src='Logos/codeedit.png' width='32' height='32'> CodeEdit | 0.3.6 |
@@ -863,7 +873,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2026.2 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2026.1.2 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 26.1.2 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 26.1.3 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 7.2.1 |
 | <img src='Logos/debookee.png' width='32' height='32'> Debookee | 8.2.0 |
 | <img src='Logos/deckset.png' width='32' height='32'> Deckset | 2.0.51 |
@@ -902,7 +912,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.39.4 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.82.0 |
 | <img src='Logos/dockfix.png' width='32' height='32'> DockFix | 4.2.1 |
-| <img src='Logos/dockside.png' width='32' height='32'> Dockside | 2.9.22 |
+| <img src='Logos/dockside.png' width='32' height='32'> Dockside | 2.9.23 |
 | <img src='Logos/dockstation.png' width='32' height='32'> DockStation | 1.5.1 |
 | <img src='Logos/dockview.png' width='32' height='32'> DockView | 1.7.5 |
 | <img src='Logos/dorico.png' width='32' height='32'> Dorico | 6.2.30 |
@@ -1503,7 +1513,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/rawtherapee.png' width='32' height='32'> RawTherapee | 5.12 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 1.104.23 |
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.11.0 |
-| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.11.18 |
+| <img src='Logos/readest.png' width='32' height='32'> Readest | 0.11.20 |
 | <img src='Logos/real_vnc_server.png' width='32' height='32'> Real VNC Server | 7.17.0 |
 | <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.15.1 |
 | <img src='Logos/reaper.png' width='32' height='32'> REAPER | 7.78 |
@@ -1644,7 +1654,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/standard_notes.png' width='32' height='32'> Standard Notes | 3.201.21 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 10.0.0 |
 | <img src='Logos/staruml.png' width='32' height='32'> StarUML | 6.3.4 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 3.0.8 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 3.0.9 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 6.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.8 |
 | <img src='Logos/stellarium.png' width='32' height='32'> Stellarium | 26.2 |
@@ -1797,7 +1807,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | ❌ Wazuh Agent | 4.14.6 |
 | <img src='Logos/wealthfolio.png' width='32' height='32'> Wealthfolio | 3.6.2 |
 | <img src='Logos/weasis.png' width='32' height='32'> Weasis | 4.7.1 |
-| <img src='Logos/webcatalog.png' width='32' height='32'> WebCatalog | 77.3.4 |
+| <img src='Logos/webcatalog.png' width='32' height='32'> WebCatalog | 77.4.0 |
 | <img src='Logos/webex.png' width='32' height='32'> Webex | 46.7.0.35381 |
 | <img src='Logos/webex_teams.png' width='32' height='32'> Webex Teams | 45.6.1.32593 |
 | <img src='Logos/webstorm.png' width='32' height='32'> WebStorm | 2026.2 |

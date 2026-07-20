@@ -1,14 +1,14 @@
 {
   "name": "BoltAI 2",
   "description": "AI chat client",
-  "version": "2.13.7",
-  "url": "https://updates.boltai.com/dmg/BoltAI-2.13.7.dmg",
+  "version": "2.14.0",
+  "url": "https://updates.boltai.com/dmg/BoltAI-2.14.0.dmg",
   "vendor_url": "https://updates.boltai.com/dmg/BoltAI-2.9.2.dmg",
   "bundleId": "co.podzim.boltai-mobile",
   "homepage": "https://boltai.com/",
   "homebrew_cask": "boltai",
-  "fileName": "BoltAI-2.13.7.dmg",
-  "sha": "60eaa14d5fb67def5a8279370f97e0320474a469ca9223a584a6f8d8d89808ad",
+  "fileName": "BoltAI-2.14.0.dmg",
+  "sha": "f5f4275b21a67685dcf12b7cd0cb6411c93aa844ce071a21ee28e6b189a7c8d7",
   "category": "Productivity",
   "publisher": "Bolt AI",
   "previous_version": "2.13.7"
