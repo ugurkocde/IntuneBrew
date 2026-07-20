@@ -17,6 +17,12 @@ fi
 echo "Stopping ChatGPT Atlas if running..."
 pkill -f "ChatGPT Atlas" 2>/dev/null || true
 
+# Unload service com.openai.atlas.update-helper
+echo "Unloading service com.openai.atlas.update-helper..."
+launchctl unload -w /Library/LaunchAgents/com.openai.atlas.update-helper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.openai.atlas.update-helper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.openai.atlas.update-helper.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.openai.atlas if running
 echo "Stopping application with bundle ID com.openai.atlas if running..."
 killall -9 "com.openai.atlas" 2>/dev/null || true
