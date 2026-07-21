@@ -25,6 +25,30 @@ elif [ -f "/Applications/DuckDuckGo.app" ]; then
     rm -f "/Applications/DuckDuckGo.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/HKE973VLUW.com.duckduckgo.macos.browser*
+echo "Removing $HOME/Library/Application Scripts/HKE973VLUW.com.duckduckgo.macos.browser*..."
+if [ -d "$HOME/Library/Application Scripts/HKE973VLUW.com.duckduckgo.macos.browser*" ]; then
+    rm -rf "$HOME/Library/Application Scripts/HKE973VLUW.com.duckduckgo.macos.browser*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/HKE973VLUW.com.duckduckgo.macos.browser*" ]; then
+    rm -f "$HOME/Library/Application Scripts/HKE973VLUW.com.duckduckgo.macos.browser*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.duckduckgo.macos.browser
+echo "Removing $HOME/Library/Application Support/com.duckduckgo.macos.browser..."
+if [ -d "$HOME/Library/Application Support/com.duckduckgo.macos.browser" ]; then
+    rm -rf "$HOME/Library/Application Support/com.duckduckgo.macos.browser" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.duckduckgo.macos.browser" ]; then
+    rm -f "$HOME/Library/Application Support/com.duckduckgo.macos.browser" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/DuckDuckGo
+echo "Removing $HOME/Library/Application Support/DuckDuckGo..."
+if [ -d "$HOME/Library/Application Support/DuckDuckGo" ]; then
+    rm -rf "$HOME/Library/Application Support/DuckDuckGo" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/DuckDuckGo" ]; then
+    rm -f "$HOME/Library/Application Support/DuckDuckGo" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.duckduckgo.macos.browser
 echo "Removing $HOME/Library/Caches/com.duckduckgo.macos.browser..."
 if [ -d "$HOME/Library/Caches/com.duckduckgo.macos.browser" ]; then
@@ -39,6 +63,14 @@ if [ -d "$HOME/Library/Containers/com.duckduckgo.macos.browser" ]; then
     rm -rf "$HOME/Library/Containers/com.duckduckgo.macos.browser" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.duckduckgo.macos.browser" ]; then
     rm -f "$HOME/Library/Containers/com.duckduckgo.macos.browser" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/HKE973VLUW.com.duckduckgo.macos.browser*
+echo "Removing $HOME/Library/Group Containers/HKE973VLUW.com.duckduckgo.macos.browser*..."
+if [ -d "$HOME/Library/Group Containers/HKE973VLUW.com.duckduckgo.macos.browser*" ]; then
+    rm -rf "$HOME/Library/Group Containers/HKE973VLUW.com.duckduckgo.macos.browser*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/HKE973VLUW.com.duckduckgo.macos.browser*" ]; then
+    rm -f "$HOME/Library/Group Containers/HKE973VLUW.com.duckduckgo.macos.browser*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.duckduckgo.macos.browser

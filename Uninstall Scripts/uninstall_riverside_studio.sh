@@ -17,6 +17,12 @@ fi
 echo "Stopping Riverside Studio if running..."
 pkill -f "Riverside Studio" 2>/dev/null || true
 
+# Unload service RVS-Riverside.fm.Riverside-Helper
+echo "Unloading service RVS-Riverside.fm.Riverside-Helper..."
+launchctl unload -w /Library/LaunchAgents/RVS-Riverside.fm.Riverside-Helper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/RVS-Riverside.fm.Riverside-Helper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/RVS-Riverside.fm.Riverside-Helper.plist 2>/dev/null || true
+
 # Remove /Applications/Riverside Studio.app
 echo "Removing /Applications/Riverside Studio.app..."
 if [ -d "/Applications/Riverside Studio.app" ]; then

@@ -49,6 +49,22 @@ elif [ -f "$HOME/Library/Application Support/ai.krisp.krispMac" ]; then
     rm -f "$HOME/Library/Application Support/ai.krisp.krispMac" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ai.krisp.krispmac.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ai.krisp.krispmac.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ai.krisp.krispmac.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ai.krisp.krispmac.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ai.krisp.krispmac.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ai.krisp.krispmac.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/krisp
+echo "Removing $HOME/Library/Application Support/krisp..."
+if [ -d "$HOME/Library/Application Support/krisp" ]; then
+    rm -rf "$HOME/Library/Application Support/krisp" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/krisp" ]; then
+    rm -f "$HOME/Library/Application Support/krisp" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/ai.krisp.krispMac
 echo "Removing $HOME/Library/Caches/ai.krisp.krispMac..."
 if [ -d "$HOME/Library/Caches/ai.krisp.krispMac" ]; then
@@ -79,6 +95,14 @@ if [ -d "$HOME/Library/LaunchAgents/ai.krisp.krispMac.cameraAssistant.plist" ]; 
     rm -rf "$HOME/Library/LaunchAgents/ai.krisp.krispMac.cameraAssistant.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/LaunchAgents/ai.krisp.krispMac.cameraAssistant.plist" ]; then
     rm -f "$HOME/Library/LaunchAgents/ai.krisp.krispMac.cameraAssistant.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/LaunchAgents/krisp.plist
+echo "Removing $HOME/Library/LaunchAgents/krisp.plist..."
+if [ -d "$HOME/Library/LaunchAgents/krisp.plist" ]; then
+    rm -rf "$HOME/Library/LaunchAgents/krisp.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/LaunchAgents/krisp.plist" ]; then
+    rm -f "$HOME/Library/LaunchAgents/krisp.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/ai.krisp.krispMac.plist

@@ -17,6 +17,24 @@ fi
 echo "Stopping Grammarly Desktop if running..."
 pkill -f "Grammarly Desktop" 2>/dev/null || true
 
+# Unload service com.grammarly.ProjectLlama.LoginHelper
+echo "Unloading service com.grammarly.ProjectLlama.LoginHelper..."
+launchctl unload -w /Library/LaunchAgents/com.grammarly.ProjectLlama.LoginHelper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.grammarly.ProjectLlama.LoginHelper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.grammarly.ProjectLlama.LoginHelper.plist 2>/dev/null || true
+
+# Unload service com.grammarly.ProjectLlama.Shepherd
+echo "Unloading service com.grammarly.ProjectLlama.Shepherd..."
+launchctl unload -w /Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.grammarly.ProjectLlama.Shepherd.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist 2>/dev/null || true
+
+# Unload service com.grammarly.ProjectLlama.Uninstaller
+echo "Unloading service com.grammarly.ProjectLlama.Uninstaller..."
+launchctl unload -w /Library/LaunchAgents/com.grammarly.ProjectLlama.Uninstaller.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.grammarly.ProjectLlama.Uninstaller.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.grammarly.ProjectLlama.Uninstaller.plist 2>/dev/null || true
+
 # Remove /Applications/Grammarly Installer.app
 echo "Removing /Applications/Grammarly Installer.app..."
 if [ -d "/Applications/Grammarly Installer.app" ]; then
