@@ -1,14 +1,14 @@
 {
   "name": "Jami",
   "description": "Decentralised instant messenger and softphone",
-  "version": "2.40",
-  "url": "https://dl.jami.net/mac_osx/jami2026070716.dmg",
+  "version": "2.41",
+  "url": "https://dl.jami.net/mac_osx/jami2026072011.dmg",
   "vendor_url": "https://dl.jami.net/mac_osx/jami2026032615.dmg",
   "bundleId": "net.jami.jami",
   "homepage": "https://jami.net/",
   "homebrew_cask": "jami",
-  "fileName": "jami2026070716.dmg",
-  "sha": "e083afa75a83dd3a0661f56a5444be970ce61bacb0f524ec7740be85261582c5",
+  "fileName": "jami2026072011.dmg",
+  "sha": "5ecb4257d78b6a955df972624871563e9a78486a4be12989184dcbc9f0796b6a",
   "category": "Communication",
   "publisher": "Savoir-faire Linux",
   "previous_version": "2.40"

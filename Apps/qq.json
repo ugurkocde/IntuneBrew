@@ -1,14 +1,14 @@
 {
   "name": "QQ",
   "description": "Instant messaging tool",
-  "version": "6.9.96",
-  "url": "https://qqdl.gtimg.cn/qqfile/QQNT/9.9.31/release/045f4292/QQ_6.9.96_260528_01.dmg",
+  "version": "6.9.98",
+  "url": "https://qqdl.gtimg.cn/qqfile/QQNT/9.9.32/release/7ee184e7/QQ_6.9.98_260710_01.dmg",
   "vendor_url": "https://dldir1v6.qq.com/qqfile/qq/QQNT/Mac/QQ_6.9.91_260319_01.dmg",
   "bundleId": "com.tencent.qq",
   "homepage": "https://im.qq.com/macqq/index.shtml",
   "homebrew_cask": "qq",
-  "fileName": "QQ_6.9.96_260528_01.dmg",
-  "sha": "70c8163177cab4be192c1ae31a144ea4230d007b4521d9d945fca2f57b6c2232",
+  "fileName": "QQ_6.9.98_260710_01.dmg",
+  "sha": "a4390ae3a90ee4ac5c19c0da429b4a920907e17604554ad48711ef2174f56dee",
   "category": "Communication",
   "publisher": "Tencent Technology (Shenzhen) Co., Ltd.",
   "previous_version": "6.9.96"

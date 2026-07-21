@@ -1,14 +1,14 @@
 {
   "name": "QSpace Pro",
   "description": "Better Finder alternative",
-  "version": "6.2.2",
-  "url": "https://cdn.awehunt.com/qs/rel/QSpace%20Pro_V6.2.2.dmg",
+  "version": "6.3.2",
+  "url": "https://cdn.awehunt.com/qs/rel/QSpace%20Pro_V6.3.2.dmg",
   "vendor_url": "https://cdn.awehunt.com/qs/rel/QSpace%20Pro_V6.1.4.dmg",
   "bundleId": "com.jinghaoshe.qspace.pro",
   "homepage": "https://qspace.awehunt.com/",
   "homebrew_cask": "qspace-pro",
-  "fileName": "QSpace Pro_V6.2.2.dmg",
-  "sha": "bb7943dea8e6b668d69067de07f984c80553a6f821a3c8bc961e1fd7d1971cf9",
+  "fileName": "QSpace Pro_V6.3.2.dmg",
+  "sha": "542dc46e729db2c0ad0ff1507d990220c78111a87535f240bd38f7c99c739bdd",
   "category": "Utilities",
   "publisher": "AweHunt",
   "previous_version": "6.2.2"
