@@ -1,14 +1,14 @@
 {
   "name": "RubyMine",
   "description": "Ruby on Rails IDE",
-  "version": "2026.1.4",
-  "url": "https://download.jetbrains.com/ruby/RubyMine-2026.1.4-aarch64.dmg",
+  "version": "2026.2",
+  "url": "https://download.jetbrains.com/ruby/RubyMine-2026.2-aarch64.dmg",
   "vendor_url": "https://download.jetbrains.com/ruby/RubyMine-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.rubymine",
   "homepage": "https://www.jetbrains.com/ruby/",
   "homebrew_cask": "rubymine",
-  "fileName": "RubyMine-2026.1.4-aarch64.dmg",
-  "sha": "e30127c1c3d1b70a74c3178f50c88ba30eac3318abc2775131d9892fc2c187d9",
+  "fileName": "RubyMine-2026.2-aarch64.dmg",
+  "sha": "ae0b243cc28bb603e97526db10d25c13883be55cea7963cbcf1a17ab3967ebb9",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
   "previous_version": "2026.1.4"

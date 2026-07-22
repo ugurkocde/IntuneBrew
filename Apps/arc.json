@@ -9,7 +9,7 @@
   "fileName": "arc_1.156.2.pkg",
   "type": "app",
   "sha": "5c0dfa54c0cb43186b379b67a30a141f061a613c127ba7cfa3d441d5b6d643f7",
-  "previous_version": "1.156.0",
+  "previous_version": "1.156.2",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:19:57Z",
     "qa_result": "Installation successful and verified",
