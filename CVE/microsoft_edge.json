@@ -1,12 +1,12 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-07-21",
-  "total_cves": 1013,
+  "last_updated": "2026-07-22",
+  "total_cves": 1014,
   "summary": {
     "critical": 18,
     "high": 628,
-    "medium": 343,
+    "medium": 344,
     "low": 24,
     "kev_count": 18
   },
@@ -13618,6 +13618,27 @@
       "kev_ransomware_use": null,
       "vendor": "microsoft",
       "product": "edge"
+    },
+    {
+      "cve_id": "CVE-2026-57980",
+      "published_date": "2026-07-17",
+      "last_modified_date": "2026-07-21",
+      "description": "Authentication bypass using an alternate path or channel in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform tampering over a network.",
+      "base_score": 5.4,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:L/I:L/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "150.0.4078.80",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "150.0.4078.80",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "microsoft",
+      "product": "edge_chromium"
     },
     {
       "cve_id": "CVE-2026-45488",

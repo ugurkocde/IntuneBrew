@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-07-21",
+  "last_updated": "2026-07-22",
   "total_cves": 3223,
   "summary": {
     "critical": 407,
@@ -38570,8 +38570,8 @@
     {
       "cve_id": "CVE-2026-15718",
       "published_date": "2026-07-14",
-      "last_modified_date": "2026-07-14",
-      "description": "We are aware that exploit code for this is public however we are not aware of any attacks in the wild abusing this flaw. This vulnerability was fixed in Firefox 152.0.6.",
+      "last_modified_date": "2026-07-21",
+      "description": "We are aware that exploit code for this is public however we are not aware of any attacks in the wild abusing this flaw. This vulnerability was fixed in Firefox 152.0.6 and Firefox ESR 140.13.",
       "base_score": 4.3,
       "severity": "MEDIUM",
       "cvss_version": "3.1",
@@ -38591,8 +38591,8 @@
     {
       "cve_id": "CVE-2026-15719",
       "published_date": "2026-07-14",
-      "last_modified_date": "2026-07-14",
-      "description": "We are aware that exploit code for this is public however we are not aware of any attacks in the wild abusing this flaw. This vulnerability was fixed in Firefox 152.0.6.",
+      "last_modified_date": "2026-07-21",
+      "description": "We are aware that exploit code for this is public however we are not aware of any attacks in the wild abusing this flaw. This vulnerability was fixed in Firefox 152.0.6, Firefox ESR 115.38, and Firefox ESR 140.13.",
       "base_score": 5.4,
       "severity": "MEDIUM",
       "cvss_version": "3.1",
