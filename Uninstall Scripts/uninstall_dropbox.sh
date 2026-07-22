@@ -23,6 +23,18 @@ launchctl unload -w /Library/LaunchAgents/com.dropbox.DropboxMacUpdate.agent.pli
 launchctl unload -w /Library/LaunchDaemons/com.dropbox.DropboxMacUpdate.agent.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.dropbox.DropboxMacUpdate.agent.plist 2>/dev/null || true
 
+# Unload service com.dropbox.dropboxmacupdate.xpcservice
+echo "Unloading service com.dropbox.dropboxmacupdate.xpcservice..."
+launchctl unload -w /Library/LaunchAgents/com.dropbox.dropboxmacupdate.xpcservice.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.dropbox.dropboxmacupdate.xpcservice.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.dropbox.dropboxmacupdate.xpcservice.plist 2>/dev/null || true
+
+# Unload service com.dropbox.DropboxUpdater.wake
+echo "Unloading service com.dropbox.DropboxUpdater.wake..."
+launchctl unload -w /Library/LaunchAgents/com.dropbox.DropboxUpdater.wake.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.dropbox.DropboxUpdater.wake.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.dropbox.DropboxUpdater.wake.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.getdropbox.dropbox if running
 echo "Stopping application with bundle ID com.getdropbox.dropbox if running..."
 killall -9 "com.getdropbox.dropbox" 2>/dev/null || true
