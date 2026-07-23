@@ -17,6 +17,12 @@ fi
 echo "Stopping Jamie if running..."
 pkill -f "Jamie" 2>/dev/null || true
 
+# Unload service Jamie
+echo "Unloading service Jamie..."
+launchctl unload -w /Library/LaunchAgents/Jamie.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/Jamie.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/Jamie.plist 2>/dev/null || true
+
 # Remove /Applications/Jamie.app
 echo "Removing /Applications/Jamie.app..."
 if [ -d "/Applications/Jamie.app" ]; then
@@ -25,12 +31,52 @@ elif [ -f "/Applications/Jamie.app" ]; then
     rm -f "/Applications/Jamie.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.jamie.app
+echo "Removing $HOME/Library/Application Support/com.jamie.app..."
+if [ -d "$HOME/Library/Application Support/com.jamie.app" ]; then
+    rm -rf "$HOME/Library/Application Support/com.jamie.app" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.jamie.app" ]; then
+    rm -f "$HOME/Library/Application Support/com.jamie.app" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/jamie
 echo "Removing $HOME/Library/Application Support/jamie..."
 if [ -d "$HOME/Library/Application Support/jamie" ]; then
     rm -rf "$HOME/Library/Application Support/jamie" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/jamie" ]; then
     rm -f "$HOME/Library/Application Support/jamie" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.jamie.app
+echo "Removing $HOME/Library/Caches/com.jamie.app..."
+if [ -d "$HOME/Library/Caches/com.jamie.app" ]; then
+    rm -rf "$HOME/Library/Caches/com.jamie.app" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.jamie.app" ]; then
+    rm -f "$HOME/Library/Caches/com.jamie.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.jamie.app.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/com.jamie.app.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/com.jamie.app.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.jamie.app.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.jamie.app.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.jamie.app.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/LaunchAgents/Jamie.plist
+echo "Removing $HOME/Library/LaunchAgents/Jamie.plist..."
+if [ -d "$HOME/Library/LaunchAgents/Jamie.plist" ]; then
+    rm -rf "$HOME/Library/LaunchAgents/Jamie.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/LaunchAgents/Jamie.plist" ]; then
+    rm -f "$HOME/Library/LaunchAgents/Jamie.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.jamie.app
+echo "Removing $HOME/Library/WebKit/com.jamie.app..."
+if [ -d "$HOME/Library/WebKit/com.jamie.app" ]; then
+    rm -rf "$HOME/Library/WebKit/com.jamie.app" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.jamie.app" ]; then
+    rm -f "$HOME/Library/WebKit/com.jamie.app" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Scripts/*.qlvideo" ]; then
     rm -f "$HOME/Library/Application Scripts/*.qlvideo" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.apple.uk.org.marginal.qlvideo.previewer
+echo "Removing $HOME/Library/Application Scripts/com.apple.uk.org.marginal.qlvideo.previewer..."
+if [ -d "$HOME/Library/Application Scripts/com.apple.uk.org.marginal.qlvideo.previewer" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.apple.uk.org.marginal.qlvideo.previewer" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.apple.uk.org.marginal.qlvideo.previewer" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.apple.uk.org.marginal.qlvideo.previewer" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/com.apple.uk.org.marginal.qlvideo.thumbnailer
 echo "Removing $HOME/Library/Application Scripts/com.apple.uk.org.marginal.qlvideo.thumbnailer..."
 if [ -d "$HOME/Library/Application Scripts/com.apple.uk.org.marginal.qlvideo.thumbnailer" ]; then
@@ -41,12 +49,52 @@ elif [ -f "$HOME/Library/Application Scripts/com.apple.uk.org.marginal.qlvideo.t
     rm -f "$HOME/Library/Application Scripts/com.apple.uk.org.marginal.qlvideo.thumbnailer" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/uk.org.marginal.qlvideo.formatreader
+echo "Removing $HOME/Library/Application Scripts/uk.org.marginal.qlvideo.formatreader..."
+if [ -d "$HOME/Library/Application Scripts/uk.org.marginal.qlvideo.formatreader" ]; then
+    rm -rf "$HOME/Library/Application Scripts/uk.org.marginal.qlvideo.formatreader" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/uk.org.marginal.qlvideo.formatreader" ]; then
+    rm -f "$HOME/Library/Application Scripts/uk.org.marginal.qlvideo.formatreader" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/uk.org.marginal.qlvideo.videodecoder
+echo "Removing $HOME/Library/Application Scripts/uk.org.marginal.qlvideo.videodecoder..."
+if [ -d "$HOME/Library/Application Scripts/uk.org.marginal.qlvideo.videodecoder" ]; then
+    rm -rf "$HOME/Library/Application Scripts/uk.org.marginal.qlvideo.videodecoder" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/uk.org.marginal.qlvideo.videodecoder" ]; then
+    rm -f "$HOME/Library/Application Scripts/uk.org.marginal.qlvideo.videodecoder" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.previewer
+echo "Removing $HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.previewer..."
+if [ -d "$HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.previewer" ]; then
+    rm -rf "$HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.previewer" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.previewer" ]; then
+    rm -f "$HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.previewer" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.thumbnailer
 echo "Removing $HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.thumbnailer..."
 if [ -d "$HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.thumbnailer" ]; then
     rm -rf "$HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.thumbnailer" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.thumbnailer" ]; then
     rm -f "$HOME/Library/Containers/com.apple.uk.org.marginal.qlvideo.thumbnailer" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/uk.org.marginal.qlvideo.formatreader
+echo "Removing $HOME/Library/Containers/uk.org.marginal.qlvideo.formatreader..."
+if [ -d "$HOME/Library/Containers/uk.org.marginal.qlvideo.formatreader" ]; then
+    rm -rf "$HOME/Library/Containers/uk.org.marginal.qlvideo.formatreader" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/uk.org.marginal.qlvideo.formatreader" ]; then
+    rm -f "$HOME/Library/Containers/uk.org.marginal.qlvideo.formatreader" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/uk.org.marginal.qlvideo.videodecoder
+echo "Removing $HOME/Library/Containers/uk.org.marginal.qlvideo.videodecoder..."
+if [ -d "$HOME/Library/Containers/uk.org.marginal.qlvideo.videodecoder" ]; then
+    rm -rf "$HOME/Library/Containers/uk.org.marginal.qlvideo.videodecoder" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/uk.org.marginal.qlvideo.videodecoder" ]; then
+    rm -f "$HOME/Library/Containers/uk.org.marginal.qlvideo.videodecoder" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Group Containers/*.qlvideo

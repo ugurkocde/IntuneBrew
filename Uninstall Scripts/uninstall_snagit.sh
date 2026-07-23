@@ -17,12 +17,40 @@ fi
 echo "Stopping Snagit if running..."
 pkill -f "Snagit" 2>/dev/null || true
 
+# Kill application with bundle ID com.TechSmith.Snagit if running
+echo "Stopping application with bundle ID com.TechSmith.Snagit if running..."
+killall -9 "com.TechSmith.Snagit" 2>/dev/null || true
+
 # Remove /Applications/Snagit.app
 echo "Removing /Applications/Snagit.app..."
 if [ -d "/Applications/Snagit.app" ]; then
     rm -rf "/Applications/Snagit.app" 2>/dev/null || true
 elif [ -f "/Applications/Snagit.app" ]; then
     rm -f "/Applications/Snagit.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/7TQL462TU8.com.techsmith.snagit
+echo "Removing $HOME/Library/Application Scripts/7TQL462TU8.com.techsmith.snagit..."
+if [ -d "$HOME/Library/Application Scripts/7TQL462TU8.com.techsmith.snagit" ]; then
+    rm -rf "$HOME/Library/Application Scripts/7TQL462TU8.com.techsmith.snagit" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/7TQL462TU8.com.techsmith.snagit" ]; then
+    rm -f "$HOME/Library/Application Scripts/7TQL462TU8.com.techsmith.snagit" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.techsmith.snagit.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.techsmith.snagit.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.techsmith.snagit.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.techsmith.snagit.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.techsmith.snagit.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.techsmith.snagit.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Snagit
+echo "Removing $HOME/Library/Application Support/Snagit..."
+if [ -d "$HOME/Library/Application Support/Snagit" ]; then
+    rm -rf "$HOME/Library/Application Support/Snagit" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Snagit" ]; then
+    rm -f "$HOME/Library/Application Support/Snagit" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.TechSmith.Snagit*
@@ -39,6 +67,14 @@ if [ -d "$HOME/Library/Group Containers/*.com.techsmith.snagit" ]; then
     rm -rf "$HOME/Library/Group Containers/*.com.techsmith.snagit" 2>/dev/null || true
 elif [ -f "$HOME/Library/Group Containers/*.com.techsmith.snagit" ]; then
     rm -f "$HOME/Library/Group Containers/*.com.techsmith.snagit" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.TechSmith.Snagit*
+echo "Removing $HOME/Library/HTTPStorages/com.TechSmith.Snagit*..."
+if [ -d "$HOME/Library/HTTPStorages/com.TechSmith.Snagit*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.TechSmith.Snagit*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.TechSmith.Snagit*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.TechSmith.Snagit*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.TechSmith.Snagit*.plist

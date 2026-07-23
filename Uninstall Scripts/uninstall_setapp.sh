@@ -17,6 +17,30 @@ fi
 echo "Stopping Setapp if running..."
 pkill -f "Setapp" 2>/dev/null || true
 
+# Unload service com.setapp.DesktopClient.SetappAgent
+echo "Unloading service com.setapp.DesktopClient.SetappAgent..."
+launchctl unload -w /Library/LaunchAgents/com.setapp.DesktopClient.SetappAgent.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.setapp.DesktopClient.SetappAgent.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.setapp.DesktopClient.SetappAgent.plist 2>/dev/null || true
+
+# Unload service com.setapp.DesktopClient.SetappAssistant
+echo "Unloading service com.setapp.DesktopClient.SetappAssistant..."
+launchctl unload -w /Library/LaunchAgents/com.setapp.DesktopClient.SetappAssistant.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.setapp.DesktopClient.SetappAssistant.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.setapp.DesktopClient.SetappAssistant.plist 2>/dev/null || true
+
+# Unload service com.setapp.DesktopClient.SetappLauncher
+echo "Unloading service com.setapp.DesktopClient.SetappLauncher..."
+launchctl unload -w /Library/LaunchAgents/com.setapp.DesktopClient.SetappLauncher.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.setapp.DesktopClient.SetappLauncher.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.setapp.DesktopClient.SetappLauncher.plist 2>/dev/null || true
+
+# Unload service com.setapp.DesktopClient.SetappUpdater
+echo "Unloading service com.setapp.DesktopClient.SetappUpdater..."
+launchctl unload -w /Library/LaunchAgents/com.setapp.DesktopClient.SetappUpdater.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.setapp.DesktopClient.SetappUpdater.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.setapp.DesktopClient.SetappUpdater.plist 2>/dev/null || true
+
 # Remove /Applications/Setapp.app
 echo "Removing /Applications/Setapp.app..."
 if [ -d "/Applications/Setapp.app" ]; then
@@ -31,6 +55,14 @@ if [ -d "$HOME/Library/Application Scripts/com.setapp.DesktopClient.SetappAgent.
     rm -rf "$HOME/Library/Application Scripts/com.setapp.DesktopClient.SetappAgent.FinderSyncExt" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/com.setapp.DesktopClient.SetappAgent.FinderSyncExt" ]; then
     rm -f "$HOME/Library/Application Scripts/com.setapp.DesktopClient.SetappAgent.FinderSyncExt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Setapp*
+echo "Removing $HOME/Library/Application Support/Setapp*..."
+if [ -d "$HOME/Library/Application Support/Setapp*" ]; then
+    rm -rf "$HOME/Library/Application Support/Setapp*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Setapp*" ]; then
+    rm -f "$HOME/Library/Application Support/Setapp*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.setapp.DesktopClient
@@ -49,12 +81,44 @@ elif [ -f "$HOME/Library/Caches/com.setapp.DesktopClient.SetappAgent" ]; then
     rm -f "$HOME/Library/Caches/com.setapp.DesktopClient.SetappAgent" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/com.setapp.DesktopClient.SetappAgent.FinderSyncExt
+echo "Removing $HOME/Library/Containers/com.setapp.DesktopClient.SetappAgent.FinderSyncExt..."
+if [ -d "$HOME/Library/Containers/com.setapp.DesktopClient.SetappAgent.FinderSyncExt" ]; then
+    rm -rf "$HOME/Library/Containers/com.setapp.DesktopClient.SetappAgent.FinderSyncExt" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.setapp.DesktopClient.SetappAgent.FinderSyncExt" ]; then
+    rm -f "$HOME/Library/Containers/com.setapp.DesktopClient.SetappAgent.FinderSyncExt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.setapp.DesktopClient*
+echo "Removing $HOME/Library/HTTPStorages/com.setapp.DesktopClient*..."
+if [ -d "$HOME/Library/HTTPStorages/com.setapp.DesktopClient*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.setapp.DesktopClient*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.setapp.DesktopClient*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.setapp.DesktopClient*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/LaunchAgents/com.setapp.DesktopClient.*plist
+echo "Removing $HOME/Library/LaunchAgents/com.setapp.DesktopClient.*plist..."
+if [ -d "$HOME/Library/LaunchAgents/com.setapp.DesktopClient.*plist" ]; then
+    rm -rf "$HOME/Library/LaunchAgents/com.setapp.DesktopClient.*plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/LaunchAgents/com.setapp.DesktopClient.*plist" ]; then
+    rm -f "$HOME/Library/LaunchAgents/com.setapp.DesktopClient.*plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/Setapp
 echo "Removing $HOME/Library/Logs/Setapp..."
 if [ -d "$HOME/Library/Logs/Setapp" ]; then
     rm -rf "$HOME/Library/Logs/Setapp" 2>/dev/null || true
 elif [ -f "$HOME/Library/Logs/Setapp" ]; then
     rm -f "$HOME/Library/Logs/Setapp" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.setapp.DesktopClient.plist
+echo "Removing $HOME/Library/Preferences/com.setapp.DesktopClient.plist..."
+if [ -d "$HOME/Library/Preferences/com.setapp.DesktopClient.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.setapp.DesktopClient.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.setapp.DesktopClient.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.setapp.DesktopClient.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.setapp.DesktopClient.SetappAgent.plist

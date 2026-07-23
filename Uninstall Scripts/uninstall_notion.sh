@@ -17,6 +17,10 @@ fi
 echo "Stopping Notion if running..."
 pkill -f "Notion" 2>/dev/null || true
 
+# Kill application with bundle ID notion.id if running
+echo "Stopping application with bundle ID notion.id if running..."
+killall -9 "notion.id" 2>/dev/null || true
+
 # Remove /Applications/Notion.app
 echo "Removing /Applications/Notion.app..."
 if [ -d "/Applications/Notion.app" ]; then

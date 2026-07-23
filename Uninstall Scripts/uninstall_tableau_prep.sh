@@ -25,12 +25,12 @@ elif [ -f "$HOME/Documents/My Tableau Prep Repository" ]; then
     rm -f "$HOME/Documents/My Tableau Prep Repository" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/Tableau Prep Builder 2026.2.0
-echo "Removing $HOME/Library/Application Support/Tableau Prep Builder 2026.2.0..."
-if [ -d "$HOME/Library/Application Support/Tableau Prep Builder 2026.2.0" ]; then
-    rm -rf "$HOME/Library/Application Support/Tableau Prep Builder 2026.2.0" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/Tableau Prep Builder 2026.2.0" ]; then
-    rm -f "$HOME/Library/Application Support/Tableau Prep Builder 2026.2.0" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/Tableau Prep Builder 2026.2.1
+echo "Removing $HOME/Library/Application Support/Tableau Prep Builder 2026.2.1..."
+if [ -d "$HOME/Library/Application Support/Tableau Prep Builder 2026.2.1" ]; then
+    rm -rf "$HOME/Library/Application Support/Tableau Prep Builder 2026.2.1" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Tableau Prep Builder 2026.2.1" ]; then
+    rm -f "$HOME/Library/Application Support/Tableau Prep Builder 2026.2.1" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.tableau.caching
