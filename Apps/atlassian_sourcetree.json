@@ -1,14 +1,14 @@
 {
   "name": "Atlassian SourceTree",
   "description": "Graphical client for Git version control",
-  "version": "4.2.18",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/atlassian_sourcetree_4.2.18.pkg",
+  "version": "4.2.19",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/atlassian_sourcetree_4.2.19.pkg",
   "vendor_url": "https://product-downloads.atlassian.com/software/sourcetree/beta/Sourcetree_4.2.17b27_310.zip",
   "bundleId": "com.torusknot.SourceTreeNotMAS",
   "homepage": "https://www.sourcetreeapp.com/",
-  "fileName": "atlassian_sourcetree_4.2.18.pkg",
+  "fileName": "atlassian_sourcetree_4.2.19.pkg",
   "type": "app",
-  "sha": "a2ad444ca09a0487e0229339d3839ae5256d4b068afb658243733d30aa5f1f57",
+  "sha": "b2d7a1e56ea095fe811591b89aa81068a7e5ac226fc68d424307b95ee6f5642d",
   "previous_version": "4.2.18",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:34:15Z",

@@ -1,16 +1,16 @@
 {
   "name": "NAPS2",
   "description": "Document scanning application",
-  "version": "8.3.1",
-  "url": "https://github.com/cyanfish/naps2/releases/download/v8.3.1/naps2-8.3.1-mac-arm64.pkg",
+  "version": "8.3.2",
+  "url": "https://github.com/cyanfish/naps2/releases/download/v8.3.2/naps2-8.3.2-mac-arm64.pkg",
   "vendor_url": "https://github.com/cyanfish/naps2/releases/download/v8.2.1/naps2-8.2.1-mac-arm64.pkg",
   "bundleId": "com.naps2.desktop",
   "homepage": "https://www.naps2.com/",
   "homebrew_cask": "naps2",
-  "fileName": "naps2-8.3.1-mac-arm64.pkg",
+  "fileName": "naps2-8.3.2-mac-arm64.pkg",
   "type": "pkg",
-  "sha": "a68d4c53059a6bd381975f8d647a2f0082877fb4124b02d461bf6a0b3b494a67",
+  "sha": "9af9cc4aa8afd2230a6a1302e14ba4f4ec9a06d53e4266e4c8ff1dfe9ae75f7d",
   "category": "Productivity",
   "publisher": "NAPS2",
-  "previous_version": "8.2.1"
+  "previous_version": "8.3.1"
 }

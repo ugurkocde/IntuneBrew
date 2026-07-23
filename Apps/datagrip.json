@@ -1,14 +1,14 @@
 {
   "name": "DataGrip",
   "description": "Databases and SQL IDE",
-  "version": "2026.2",
-  "url": "https://download.jetbrains.com/datagrip/datagrip-2026.2-aarch64.dmg",
+  "version": "2026.2.1",
+  "url": "https://download.jetbrains.com/datagrip/datagrip-2026.2.1-aarch64.dmg",
   "vendor_url": "https://download.jetbrains.com/datagrip/datagrip-2026.1.2-aarch64.dmg",
   "bundleId": "com.jetbrains.datagrip",
   "homepage": "https://www.jetbrains.com/datagrip/",
   "homebrew_cask": "datagrip",
-  "fileName": "datagrip-2026.2-aarch64.dmg",
-  "sha": "27ee55d4937a26ceb25170134a7d09efbc0cd95e150591d122eca2d28da994e1",
+  "fileName": "datagrip-2026.2.1-aarch64.dmg",
+  "sha": "d6c32a80d3d20064c4dea8d3dc36e9e4c289ea60a27f52c78f28e79388b10d46",
   "changelog": "https://www.jetbrains.com/datagrip/whatsnew/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:25:00Z",

@@ -1,14 +1,14 @@
 {
   "name": "JetBrains Rider",
   "description": ".NET IDE",
-  "version": "2026.1.4",
-  "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2026.1.4-aarch64.dmg",
+  "version": "2026.2",
+  "url": "https://download.jetbrains.com/rider/JetBrains.Rider-2026.2-aarch64.dmg",
   "vendor_url": "https://download.jetbrains.com/rider/JetBrains.Rider-2026.1.0.1-aarch64.dmg",
   "bundleId": "com.jetbrains.rider",
   "homepage": "https://www.jetbrains.com/rider/",
   "homebrew_cask": "rider",
-  "fileName": "JetBrains.Rider-2026.1.4-aarch64.dmg",
-  "sha": "71fc13db604dd63cca673ad91cc42a60524f1ae470b5afecaa83893a9f8f7c11",
+  "fileName": "JetBrains.Rider-2026.2-aarch64.dmg",
+  "sha": "63e8574d332a1c71a6e6926143cc9ea6666603392217bca53b1ae839af411ba4",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
   "previous_version": "2026.1.4"

@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "b040738a45ce0e2ee70b51fd697e1ccf58b825d7d695ce0989207ee907327739",
   "changelog": "https://flexibits.com/fantastical/changelog",
-  "previous_version": "4.1.16",
+  "previous_version": "4.1.17",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:58:20Z",
     "qa_result": "Installation successful and verified",
