@@ -1,7 +1,7 @@
 {
   "app_name": "Adobe Acrobat Reader",
   "app_key": "adobe_acrobat_reader",
-  "last_updated": "2026-07-23",
+  "last_updated": "2026-07-24",
   "total_cves": 2233,
   "summary": {
     "critical": 423,
@@ -9443,7 +9443,7 @@
     {
       "cve_id": "CVE-2026-47915",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9464,7 +9464,7 @@
     {
       "cve_id": "CVE-2026-47916",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9485,7 +9485,7 @@
     {
       "cve_id": "CVE-2026-47917",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9506,7 +9506,7 @@
     {
       "cve_id": "CVE-2026-47918",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9527,7 +9527,7 @@
     {
       "cve_id": "CVE-2026-47919",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9548,7 +9548,7 @@
     {
       "cve_id": "CVE-2026-47920",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9569,7 +9569,7 @@
     {
       "cve_id": "CVE-2026-47921",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9590,7 +9590,7 @@
     {
       "cve_id": "CVE-2026-47937",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-29",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by an Uncontrolled Search Path Element vulnerability that could result in arbitrary code execution in the context of the current user. An attacker with high privileges could exploit this vulnerability to execute arbitrary code. Exploitation of this issue requires user interaction in that a victim must open a malicious file. Scope is changed.",
       "base_score": 7.7,
       "severity": "HIGH",
@@ -9611,7 +9611,7 @@
     {
       "cve_id": "CVE-2026-47952",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Heap-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9632,7 +9632,7 @@
     {
       "cve_id": "CVE-2026-47955",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9653,7 +9653,7 @@
     {
       "cve_id": "CVE-2026-47911",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by an out-of-bounds write vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9674,7 +9674,7 @@
     {
       "cve_id": "CVE-2026-47912",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9695,7 +9695,7 @@
     {
       "cve_id": "CVE-2026-47913",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9716,7 +9716,7 @@
     {
       "cve_id": "CVE-2026-47914",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -9737,7 +9737,7 @@
     {
       "cve_id": "CVE-2026-47959",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Stack-based Buffer Overflow vulnerability that could result in arbitrary code execution in the context of the current user. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -35168,7 +35168,7 @@
     {
       "cve_id": "CVE-2026-47923",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to disclose sensitive information. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -35189,7 +35189,7 @@
     {
       "cve_id": "CVE-2026-47924",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by a Use After Free vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to disclose sensitive information. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -35210,7 +35210,7 @@
     {
       "cve_id": "CVE-2026-47925",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by an Integer Overflow or Wraparound vulnerability that could result in an application denial-of-service. An attacker could exploit this vulnerability to crash the application, leading to a denial-of-service condition. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -35231,7 +35231,7 @@
     {
       "cve_id": "CVE-2026-47926",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to disclose sensitive information. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -35252,7 +35252,7 @@
     {
       "cve_id": "CVE-2026-47961",
       "published_date": "2026-06-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Acrobat Reader versions 24.001.30365, 26.001.21651 and earlier are affected by an out-of-bounds read vulnerability that could lead to disclosure of sensitive memory. An attacker could leverage this vulnerability to disclose sensitive information. Exploitation of this issue requires user interaction in that a victim must open a malicious file.",
       "base_score": 5.5,
       "severity": "MEDIUM",

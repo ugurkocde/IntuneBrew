@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-07-23",
+  "last_updated": "2026-07-24",
   "total_cves": 3231,
   "summary": {
     "critical": 413,
@@ -413,8 +413,8 @@
     {
       "cve_id": "CVE-2026-16411",
       "published_date": "2026-07-21",
-      "last_modified_date": "2026-07-22",
-      "description": "Memory safety bugs present in Thunderbird 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 153 and Thunderbird 153.",
+      "last_modified_date": "2026-07-24",
+      "description": "Memory safety bugs present in Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 153 and Thunderbird 153.",
       "base_score": 9.8,
       "severity": "CRITICAL",
       "cvss_version": "3.1",
@@ -434,8 +434,8 @@
     {
       "cve_id": "CVE-2026-16412",
       "published_date": "2026-07-21",
-      "last_modified_date": "2026-07-22",
-      "description": "Memory safety bugs present in Thunderbird ESR 140.12 and Thunderbird 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 153, Firefox ESR 140.13, Thunderbird 153, and Thunderbird 140.13.",
+      "last_modified_date": "2026-07-24",
+      "description": "Memory safety bugs present in Firefox ESR 140.12 and Firefox 152. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 153, Firefox ESR 140.13, Thunderbird 153, and Thunderbird 140.13.",
       "base_score": 9.8,
       "severity": "CRITICAL",
       "cvss_version": "3.1",
@@ -9464,7 +9464,7 @@
     {
       "cve_id": "CVE-2026-8962",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -9485,7 +9485,7 @@
     {
       "cve_id": "CVE-2026-8963",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Spoofing issue in the Web Speech component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9506,7 +9506,7 @@
     {
       "cve_id": "CVE-2026-8964",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Spoofing issue in the Popup Blocker component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9527,7 +9527,7 @@
     {
       "cve_id": "CVE-2026-8965",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Information disclosure in the DOM: Security component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9548,7 +9548,7 @@
     {
       "cve_id": "CVE-2026-8966",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Information disclosure in the IP Protection component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9569,7 +9569,7 @@
     {
       "cve_id": "CVE-2026-8967",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Information disclosure in the Graphics: WebGPU component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9590,7 +9590,7 @@
     {
       "cve_id": "CVE-2026-8968",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Denial-of-service due to invalid pointer in the Audio/Video: Web Codecs component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -9611,7 +9611,7 @@
     {
       "cve_id": "CVE-2026-8969",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Mitigation bypass in the DOM: Security component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -9632,7 +9632,7 @@
     {
       "cve_id": "CVE-2026-8970",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Privilege escalation in the Security component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -9653,7 +9653,7 @@
     {
       "cve_id": "CVE-2026-8972",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Privilege escalation in the WebRTC: Audio/Video component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -9674,7 +9674,7 @@
     {
       "cve_id": "CVE-2026-8973",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-07-15",
+      "last_modified_date": "2026-07-23",
       "description": "Memory safety bugs present in Firefox 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -9695,7 +9695,7 @@
     {
       "cve_id": "CVE-2026-8974",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Memory safety bugs present in Firefox ESR 140.10 and Firefox 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -9716,7 +9716,7 @@
     {
       "cve_id": "CVE-2026-8975",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-07-15",
+      "last_modified_date": "2026-07-23",
       "description": "Memory safety bugs present in Firefox ESR 115.35, Firefox ESR 140.10 and Firefox 150. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 151, Firefox ESR 115.36, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -39305,7 +39305,7 @@
     {
       "cve_id": "CVE-2026-9078",
       "published_date": "2026-05-25",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Firefox for iOS displayed specially crafted right-to-left (RTL) and internationalized domain names (IDNs) incorrectly in link preview UI surfaces. A crafted RTL hostname could visually reorder portions of the displayed domain, causing attacker-controlled sites to appear as trusted origins. This vulnerability was fixed in Firefox for iOS 151.1.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -39347,7 +39347,7 @@
     {
       "cve_id": "CVE-2026-8961",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Spoofing issue in the Form Autofill component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -39368,7 +39368,7 @@
     {
       "cve_id": "CVE-2026-8971",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Same-origin policy bypass in the Networking: JAR component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -39389,7 +39389,7 @@
     {
       "cve_id": "CVE-2026-8706",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-07-23",
       "description": "Firefox for iOS hosted Reader mode on an unauthenticated local web server, allowing another application on the same device to request arbitrary URLs and receive the response rendered with the signed-in user's cookies. This vulnerability was fixed in Firefox for iOS 151.0.",
       "base_score": 6.5,
       "severity": "MEDIUM",
