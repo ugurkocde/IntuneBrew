@@ -25,6 +25,12 @@ elif [ -f "/Applications/BetterZip.app" ]; then
     rm -f "/Applications/BetterZip.app" 2>/dev/null || true
 fi
 
+# Remove binary /Applications/BetterZip.app/BetterZip.app/Contents/Resources/betterzip
+echo "Removing binary /Applications/BetterZip.app/BetterZip.app/Contents/Resources/betterzip..."
+if [ -f "/Applications/BetterZip.app/BetterZip.app/Contents/Resources/betterzip" ]; then
+    rm -f "/Applications/BetterZip.app/BetterZip.app/Contents/Resources/betterzip" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip
 echo "Removing $HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip..."
 if [ -d "$HOME/Library/Application Scripts/79RR9LPM2N.group.com.macitbetter.betterzip" ]; then

@@ -17,6 +17,10 @@ fi
 echo "Stopping Pastebot if running..."
 pkill -f "Pastebot" 2>/dev/null || true
 
+# Kill application with bundle ID com.tapbots.Pastebot2Mac if running
+echo "Stopping application with bundle ID com.tapbots.Pastebot2Mac if running..."
+killall -9 "com.tapbots.Pastebot2Mac" 2>/dev/null || true
+
 # Remove /Applications/Pastebot.app
 echo "Removing /Applications/Pastebot.app..."
 if [ -d "/Applications/Pastebot.app" ]; then
@@ -25,12 +29,44 @@ elif [ -f "/Applications/Pastebot.app" ]; then
     rm -f "/Applications/Pastebot.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.tapbots.Pastebot2Mac
-echo "Removing $HOME/Library/Containers/com.tapbots.Pastebot2Mac..."
-if [ -d "$HOME/Library/Containers/com.tapbots.Pastebot2Mac" ]; then
-    rm -rf "$HOME/Library/Containers/com.tapbots.Pastebot2Mac" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.tapbots.Pastebot2Mac" ]; then
-    rm -f "$HOME/Library/Containers/com.tapbots.Pastebot2Mac" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/9JTH7AWHE6.com.tapbots.Pastebot2Mac
+echo "Removing $HOME/Library/Application Scripts/9JTH7AWHE6.com.tapbots.Pastebot2Mac..."
+if [ -d "$HOME/Library/Application Scripts/9JTH7AWHE6.com.tapbots.Pastebot2Mac" ]; then
+    rm -rf "$HOME/Library/Application Scripts/9JTH7AWHE6.com.tapbots.Pastebot2Mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/9JTH7AWHE6.com.tapbots.Pastebot2Mac" ]; then
+    rm -f "$HOME/Library/Application Scripts/9JTH7AWHE6.com.tapbots.Pastebot2Mac" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.tapbots.Pastebot2Mac*
+echo "Removing $HOME/Library/Application Scripts/com.tapbots.Pastebot2Mac*..."
+if [ -d "$HOME/Library/Application Scripts/com.tapbots.Pastebot2Mac*" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.tapbots.Pastebot2Mac*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.tapbots.Pastebot2Mac*" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.tapbots.Pastebot2Mac*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tapbots.pastebot2mac.launchhelper.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tapbots.pastebot2mac.launchhelper.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tapbots.pastebot2mac.launchhelper.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tapbots.pastebot2mac.launchhelper.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tapbots.pastebot2mac.launchhelper.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tapbots.pastebot2mac.launchhelper.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.tapbots.Pastebot2Mac*
+echo "Removing $HOME/Library/Containers/com.tapbots.Pastebot2Mac*..."
+if [ -d "$HOME/Library/Containers/com.tapbots.Pastebot2Mac*" ]; then
+    rm -rf "$HOME/Library/Containers/com.tapbots.Pastebot2Mac*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.tapbots.Pastebot2Mac*" ]; then
+    rm -f "$HOME/Library/Containers/com.tapbots.Pastebot2Mac*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/9JTH7AWHE6.com.tapbots.Pastebot2Mac
+echo "Removing $HOME/Library/Group Containers/9JTH7AWHE6.com.tapbots.Pastebot2Mac..."
+if [ -d "$HOME/Library/Group Containers/9JTH7AWHE6.com.tapbots.Pastebot2Mac" ]; then
+    rm -rf "$HOME/Library/Group Containers/9JTH7AWHE6.com.tapbots.Pastebot2Mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/9JTH7AWHE6.com.tapbots.Pastebot2Mac" ]; then
+    rm -f "$HOME/Library/Group Containers/9JTH7AWHE6.com.tapbots.Pastebot2Mac" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.tapbots.Pastebot2Mac.plist
