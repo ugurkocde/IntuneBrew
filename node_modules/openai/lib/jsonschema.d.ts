@@ -31,6 +31,7 @@ export type JSONSchemaVersion = string;
  */
 export type JSONSchemaDefinition = JSONSchema | boolean;
 export interface JSONSchema {
+    $schema?: JSONSchemaVersion | undefined;
     $id?: string | undefined;
     $comment?: string | undefined;
     /**
@@ -53,6 +54,8 @@ export interface JSONSchema {
     maxLength?: number | undefined;
     minLength?: number | undefined;
     pattern?: string | undefined;
+    contentEncoding?: string | undefined;
+    contentMediaType?: string | undefined;
     /**
      * @see https://tools.ietf.org/html/draft-handrews-json-schema-validation-01#section-6.4
      */

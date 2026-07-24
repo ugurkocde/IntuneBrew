@@ -9,6 +9,7 @@ export { Organization } from "./organization.mjs";
 export { Projects, } from "./projects/index.mjs";
 export { Roles, } from "./roles.mjs";
 export { SpendAlerts, } from "./spend-alerts.mjs";
+export { SpendLimit, } from "./spend-limit.mjs";
 export { Usage, } from "./usage.mjs";
 export { Users, } from "./users/index.mjs";
 //# sourceMappingURL=index.mjs.map

@@ -1,7 +1,7 @@
 "use strict";
 // File generated from our OpenAPI spec by Stainless. See CONTRIBUTING.md for details.
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.Users = exports.Usage = exports.SpendAlerts = exports.Roles = exports.Projects = exports.Organization = exports.Invites = exports.Groups = exports.DataRetention = exports.Certificates = exports.AuditLogs = exports.AdminAPIKeys = void 0;
+exports.Users = exports.Usage = exports.SpendLimit = exports.SpendAlerts = exports.Roles = exports.Projects = exports.Organization = exports.Invites = exports.Groups = exports.DataRetention = exports.Certificates = exports.AuditLogs = exports.AdminAPIKeys = void 0;
 var admin_api_keys_1 = require("./admin-api-keys.js");
 Object.defineProperty(exports, "AdminAPIKeys", { enumerable: true, get: function () { return admin_api_keys_1.AdminAPIKeys; } });
 var audit_logs_1 = require("./audit-logs.js");
@@ -22,6 +22,8 @@ var roles_1 = require("./roles.js");
 Object.defineProperty(exports, "Roles", { enumerable: true, get: function () { return roles_1.Roles; } });
 var spend_alerts_1 = require("./spend-alerts.js");
 Object.defineProperty(exports, "SpendAlerts", { enumerable: true, get: function () { return spend_alerts_1.SpendAlerts; } });
+var spend_limit_1 = require("./spend-limit.js");
+Object.defineProperty(exports, "SpendLimit", { enumerable: true, get: function () { return spend_limit_1.SpendLimit; } });
 var usage_1 = require("./usage.js");
 Object.defineProperty(exports, "Usage", { enumerable: true, get: function () { return usage_1.Usage; } });
 var index_3 = require("./users/index.js");
