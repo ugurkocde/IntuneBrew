@@ -1,16 +1,16 @@
 {
   "name": "PingPlotter",
   "description": "Network monitoring tool",
-  "version": "5.27.11",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/pingplotter_5.27.11.pkg",
+  "version": "5.27.12",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/pingplotter_5.27.12.pkg",
   "vendor_url": "https://www.pingplotter.com/downloads/pingplotter_osx.zip",
   "bundleId": "com.pingman.pingplotter.mac",
   "homepage": "https://www.pingplotter.com/",
-  "fileName": "pingplotter_5.27.11.pkg",
+  "fileName": "pingplotter_5.27.12.pkg",
   "type": "app",
-  "sha": "a58de3bfde3302bdb02b3e51fc93e0e26eee16d491d84f65897835ef8839151c",
+  "sha": "77c5f7c48eef5682607ef2b3dfc8cd9b2e99dfbe6c299dc66f03cd73b53a1111",
   "category": "Utilities",
   "publisher": "PingPlotter, LLC",
-  "previous_version": "5.27.10",
+  "previous_version": "5.27.11",
   "homebrew_cask": "pingplotter"
 }

@@ -9,7 +9,7 @@
   "fileName": "vivaldi_8.1.4087.56.pkg",
   "type": "app",
   "sha": "bb039704c6c48f0578e4a54b80cc64af66e31476d8e2c658f0a0521ed8f26b94",
-  "previous_version": "8.1.4087.55",
+  "previous_version": "8.1.4087.56",
   "category": "Browsers",
   "publisher": "Vivaldi Technologies",
   "homebrew_cask": "vivaldi"

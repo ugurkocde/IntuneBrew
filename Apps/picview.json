@@ -1,14 +1,14 @@
 {
   "name": "PicView",
   "description": "Picture viewer",
-  "version": "5.0.0",
-  "url": "https://github.com/Ruben2776/PicView/releases/download/5.0.0/PicView-5.0.0-macOS-arm64.dmg",
+  "version": "5.0.1",
+  "url": "https://github.com/Ruben2776/PicView/releases/download/5.0.1/PicView-5.0.1-macOS-arm64.dmg",
   "vendor_url": "https://github.com/Ruben2776/PicView/releases/download/4.2.0/PicView-4.2.0-macOS-arm64.dmg",
   "bundleId": "com.ruben2776.picview",
   "homepage": "https://picview.org/",
   "homebrew_cask": "picview",
-  "fileName": "PicView-5.0.0-macOS-arm64.dmg",
-  "sha": "b09c47db6094eb4b145df2bf417f9f4c5fb0baee6d30e5b81545a9139b87fc9a",
+  "fileName": "PicView-5.0.1-macOS-arm64.dmg",
+  "sha": "41652d998f08b715b9d529537d752a30752e47f548e5ea144f727dd7d7507da3",
   "category": "Media",
   "publisher": "PicView",
   "previous_version": "5.0.0"

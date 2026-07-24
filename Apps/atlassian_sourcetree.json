@@ -9,7 +9,7 @@
   "fileName": "atlassian_sourcetree_4.2.19.pkg",
   "type": "app",
   "sha": "b2d7a1e56ea095fe811591b89aa81068a7e5ac226fc68d424307b95ee6f5642d",
-  "previous_version": "4.2.18",
+  "previous_version": "4.2.19",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:34:15Z",
     "qa_result": "Installation successful and verified",

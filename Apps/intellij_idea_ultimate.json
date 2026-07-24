@@ -1,14 +1,14 @@
 {
   "name": "IntelliJ IDEA Ultimate",
   "description": "Java IDE by JetBrains",
-  "version": "2026.2",
-  "url": "https://download.jetbrains.com/idea/ideaIU-2026.2-aarch64.dmg",
+  "version": "2026.2.0.1",
+  "url": "https://download.jetbrains.com/idea/ideaIU-2026.2.0.1-aarch64.dmg",
   "vendor_url": "https://download.jetbrains.com/idea/ideaIU-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.intellij",
   "homepage": "https://www.jetbrains.com/idea/",
   "homebrew_cask": "intellij-idea",
-  "fileName": "ideaIU-2026.2-aarch64.dmg",
-  "sha": "33e27fa97958112b2dd6dfdfbaacd3ae8599ec9fa81322c8ad37806f0a79215b",
+  "fileName": "ideaIU-2026.2.0.1-aarch64.dmg",
+  "sha": "bcddb055a33957d1f95e7ae3bfd308293d0f812250aab9399164163aa118399f",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
   "previous_version": "2026.2"

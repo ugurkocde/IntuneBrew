@@ -1,14 +1,14 @@
 {
   "name": "CLion",
   "description": "C and C++ IDE",
-  "version": "2026.2",
-  "url": "https://download.jetbrains.com/cpp/CLion-2026.2-aarch64.dmg",
+  "version": "2026.2.0.1",
+  "url": "https://download.jetbrains.com/cpp/CLion-2026.2.0.1-aarch64.dmg",
   "vendor_url": "https://download.jetbrains.com/cpp/CLion-2026.1-aarch64.dmg",
   "bundleId": "com.jetbrains.CLion",
   "homepage": "https://www.jetbrains.com/clion/",
   "homebrew_cask": "clion",
-  "fileName": "CLion-2026.2-aarch64.dmg",
-  "sha": "090796d71ba0e00c78170c20189c6126dd604676b0b823da03a459b2b430e544",
+  "fileName": "CLion-2026.2.0.1-aarch64.dmg",
+  "sha": "9e4909f34adcd5b0291013194f4663650727864cc01b78b5a7d1a1414038813e",
   "changelog": "https://www.jetbrains.com/clion/whatsnew/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:48:18Z",
