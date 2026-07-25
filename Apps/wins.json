@@ -2,7 +2,7 @@
   "name": "Wins",
   "description": "Window manager",
   "version": "3.4",
-  "url": "https://winswebsite.s3.us-east-005.backblazeb2.com/Wins.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/wins_3.4.pkg",
   "vendor_url": "https://winswebsite.s3.us-east-005.backblazeb2.com/Wins.zip",
   "bundleId": "cools.wins.main",
   "homepage": "https://wins.cool/",

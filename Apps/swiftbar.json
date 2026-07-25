@@ -2,7 +2,7 @@
   "name": "SwiftBar",
   "description": "Menu bar customization tool",
   "version": "2.0.1",
-  "url": "https://github.com/swiftbar/SwiftBar/releases/download/v2.0.1/SwiftBar.v2.0.1.b536.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/swiftbar_2.0.1.pkg",
   "vendor_url": "https://github.com/swiftbar/SwiftBar/releases/download/v2.0.1/SwiftBar.v2.0.1.b536.zip",
   "bundleId": "com.ameba.SwiftBar",
   "homepage": "https://swiftbar.app/",

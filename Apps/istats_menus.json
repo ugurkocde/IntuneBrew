@@ -2,7 +2,7 @@
   "name": "iStats Menus",
   "description": "System monitoring app",
   "version": "7.30",
-  "url": "https://cdn.istatmenus.app/files/istatmenus7/versions/iStatMenus7.30.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/istats_menus_7.30.pkg",
   "vendor_url": "https://cdn.istatmenus.app/files/istatmenus6/istatmenus6.73.1.zip",
   "bundleId": "com.bjango.istatmenus",
   "homepage": "https://bjango.com/mac/istatmenus/",

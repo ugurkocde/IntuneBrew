@@ -2,7 +2,7 @@
   "name": "Framer",
   "description": "Tool that helps teams design every part of the product experience",
   "version": "2026.24.3",
-  "url": "https://updates.framer.com/electron/darwin/arm64/Framer-2026.24.3.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/framer_2026.24.3.pkg",
   "vendor_url": "https://updates.framer.com/electron/darwin/arm64/Framer-2026.12.6.zip",
   "bundleId": "com.framer.electron",
   "homepage": "https://www.framer.com/",

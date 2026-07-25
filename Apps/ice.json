@@ -2,7 +2,7 @@
   "name": "Ice",
   "description": "Menu bar manager",
   "version": "0.11.12",
-  "url": "https://github.com/jordanbaird/ice-releases/releases/download/0.11.12/Ice.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/ice_0.11.12.pkg",
   "vendor_url": "https://github.com/jordanbaird/Ice/releases/download/0.11.13-dev.2/Ice.zip",
   "bundleId": "com.jordanbaird.Ice",
   "homepage": "https://icemenubar.app/",

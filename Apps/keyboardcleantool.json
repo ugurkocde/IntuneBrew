@@ -2,7 +2,7 @@
   "name": "KeyboardCleanTool",
   "description": "Blocks all Keyboard and TouchBar input",
   "version": "7",
-  "url": "https://folivora.ai/releases/KeyboardCleanTool.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/keyboardcleantool_7.pkg",
   "vendor_url": "https://folivora.ai/releases/KeyboardCleanTool.zip",
   "bundleId": "com.foggyhillsoftware.keyboardcleantool",
   "homepage": "https://folivora.ai/keyboardcleantool",

@@ -2,7 +2,7 @@
   "name": "Itsycal",
   "description": "Menu bar calendar",
   "version": "0.15.12",
-  "url": "https://itsycal.s3.amazonaws.com/Itsycal-0.15.12.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/itsycal_0.15.12.pkg",
   "vendor_url": "https://itsycal.s3.amazonaws.com/Itsycal-0.15.12.zip",
   "bundleId": "com.mowglii.ItsycalApp",
   "homepage": "https://www.mowglii.com/itsycal/",

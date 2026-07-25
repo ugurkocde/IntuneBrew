@@ -2,7 +2,7 @@
   "name": "LaunchControl",
   "description": "Create, manage and debug system and user services",
   "version": "2.10.5",
-  "url": "https://www.soma-zone.com/download/files/LaunchControl-2.10.5.tar.xz",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/launchcontrol_2.10.5.pkg",
   "vendor_url": "https://www.soma-zone.com/download/files/LaunchControl-2.10.3.tar.xz",
   "bundleId": "com.soma-zone.LaunchControl.Helper",
   "homepage": "https://www.soma-zone.com/LaunchControl/",

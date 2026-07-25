@@ -2,7 +2,7 @@
   "name": "PingPlotter",
   "description": "Network monitoring tool",
   "version": "5.27.12",
-  "url": "https://www.pingplotter.com/downloads/pingplotter_osx.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/pingplotter_5.27.12.pkg",
   "vendor_url": "https://www.pingplotter.com/downloads/pingplotter_osx.zip",
   "bundleId": "com.pingman.pingplotter.mac",
   "homepage": "https://www.pingplotter.com/",

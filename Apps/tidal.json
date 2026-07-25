@@ -2,7 +2,7 @@
   "name": "TIDAL",
   "description": "Music streaming service with high fidelity sound and hi-def video quality",
   "version": "2.43.0",
-  "url": "https://download.tidal.com/desktop/mac/TIDAL.arm64.2.43.0.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tidal_2.43.0.pkg",
   "vendor_url": "https://download.tidal.com/desktop/mac/TIDAL.arm64.2.41.3.zip",
   "bundleId": "com.tidal.desktop",
   "homepage": "https://tidal.com/",

@@ -2,7 +2,7 @@
   "name": "DEVONthink",
   "description": "Collect, organise, edit and annotate documents",
   "version": "4.3.2",
-  "url": "https://download.devontechnologies.com/download/devonthink/4.3.2/DEVONthink.app.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/devonthink_4.3.2.pkg",
   "vendor_url": "https://download.devontechnologies.com/download/devonthink/4.2.2/DEVONthink.app.zip",
   "bundleId": "com.devon-technologies.think",
   "homepage": "https://www.devontechnologies.com/apps/devonthink",

@@ -2,7 +2,7 @@
   "name": "Sproutcube Shortcat",
   "description": "App that enables mouse-free UI interaction",
   "version": "0.12.2",
-  "url": "https://files.shortcat.app/releases/v0.12.2/Shortcat.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sproutcube_shortcat_0.12.2.pkg",
   "vendor_url": "https://files.shortcat.app/releases/v0.12.2/Shortcat.zip",
   "bundleId": "com.sproutcube.Shortcat",
   "homepage": "https://shortcat.app/",

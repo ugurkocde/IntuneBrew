@@ -2,7 +2,7 @@
   "name": "WhatRoute",
   "description": "Network diagnostic utility",
   "version": "2.8.0",
-  "url": "https://www.whatroute.net/software/whatroute-2.8.0.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/whatroute_2.8.0.pkg",
   "vendor_url": "https://www.whatroute.net/software/whatroute-2.7.2.zip",
   "bundleId": "net.whatroute.whatroute2",
   "homepage": "https://www.whatroute.net/",

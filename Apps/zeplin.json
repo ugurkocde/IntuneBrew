@@ -2,7 +2,7 @@
   "name": "Zeplin",
   "description": "Share, organise and collaborate on designs",
   "version": "10.32.0",
-  "url": "https://pkg.zeplin.io/macos/latest/zeplin-darwin-universal.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/zeplin_10.32.0.pkg",
   "vendor_url": "https://pkg.zeplin.io/macos/latest/zeplin-darwin-universal.zip",
   "bundleId": "io.zeplin.osx",
   "homepage": "https://zeplin.io/",

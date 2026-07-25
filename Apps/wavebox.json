@@ -2,7 +2,7 @@
   "name": "Wavebox",
   "description": "Web browser",
   "version": "150.2.131.2",
-  "url": "https://download.wavebox.app/stable/macarm64/Wavebox_150.2.131.2.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/wavebox_150.2.131.2.pkg",
   "vendor_url": "https://download.wavebox.app/stable/macarm64/Wavebox_10.147.44.2.zip",
   "bundleId": "io.wavebox.wavebox",
   "homepage": "https://wavebox.io/",

@@ -2,7 +2,7 @@
   "name": "Affinity",
   "description": "Image editing and design software",
   "version": "3.2.3",
-  "url": "https://affinity-update.s3.amazonaws.com/mac2/retail/Affinity%20Affinity%20Store%204646.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/affinity_3.2.3.pkg",
   "vendor_url": "https://affinity-update.s3.amazonaws.com/mac2/retail/Affinity%20Affinity%20Store%204351.zip",
   "bundleId": "ptujec.LaunchBar.action.AffinityRecentDocuments",
   "homepage": "https://www.affinity.studio/",

@@ -2,7 +2,7 @@
   "name": "Jumpshare",
   "description": "File sharing, screen recording, and screenshot capture app",
   "version": "3.5.1",
-  "url": "https://d21hi1or3tbtjm.cloudfront.net/desktop/mac/updates/Jumpshare-3.5.1.tar.bz2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/jumpshare_3.5.1.pkg",
   "vendor_url": "https://d21hi1or3tbtjm.cloudfront.net/desktop/mac/updates/Jumpshare-3.4.22.tar.bz2",
   "bundleId": "com.jumpshare.Jumpshare",
   "homepage": "https://jumpshare.com/",

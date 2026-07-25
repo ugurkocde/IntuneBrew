@@ -2,7 +2,7 @@
   "name": "FlowVision",
   "description": "Waterfall-style image viewer",
   "version": "1.7.5",
-  "url": "https://github.com/netdcy/FlowVision/releases/download/1.7.5/FlowVision.1.7.5.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/flowvision_1.7.5.pkg",
   "vendor_url": "https://github.com/netdcy/FlowVision/releases/download/1.7.0/FlowVision.1.7.0.zip",
   "bundleId": "netdcy.FlowVision",
   "homepage": "https://flowvision.app/",

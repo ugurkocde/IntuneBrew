@@ -2,7 +2,7 @@
   "name": "sipgate",
   "description": "Softphone for making telephone calls over the internet",
   "version": "2.42.0",
-  "url": "https://s3-eu-central-1.amazonaws.com/desktop.download.sipgate.com/sipgate-2.42.0.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sipgate_2.42.0.pkg",
   "vendor_url": "https://s3-eu-central-1.amazonaws.com/desktop.download.sipgate.com/sipgate-2.39.3.zip",
   "bundleId": "de.sipgate.sipgate",
   "homepage": "https://www.sipgate.de/app",

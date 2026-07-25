@@ -2,7 +2,7 @@
   "name": "SystHist",
   "description": "Lists full system and security update installation history",
   "version": "1.22",
-  "url": "https://eclecticlight.co/wp-content/uploads/2026/06/systhist122.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/systhist_1.22.pkg",
   "vendor_url": "https://eclecticlight.co/wp-content/uploads/2025/06/systhist121.zip",
   "bundleId": "co.eclecticlight.SystHist",
   "homepage": "https://eclecticlight.co/lockrattler-systhist/",

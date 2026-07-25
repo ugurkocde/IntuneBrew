@@ -2,7 +2,7 @@
   "name": "BatFi",
   "description": "App for managing battery charging",
   "version": "3.1.1",
-  "url": "https://files.micropixels.software/batfi/BatFi-latest.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/batfi_3.1.1.pkg",
   "vendor_url": "https://files.micropixels.software/batfi/BatFi-latest.zip",
   "bundleId": "software.micropixels.BatFi",
   "homepage": "https://micropixels.software/batfi",

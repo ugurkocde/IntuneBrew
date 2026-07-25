@@ -2,7 +2,7 @@
   "name": "FreeMacSoft AppCleaner",
   "description": "Application uninstaller",
   "version": "3.6.8",
-  "url": "https://www.freemacsoft.net/downloads/AppCleaner_3.6.8.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/freemacsoft_appcleaner_3.6.8.pkg",
   "vendor_url": "https://www.freemacsoft.net/downloads/AppCleaner_3.6.8.zip",
   "bundleId": "net.freemacsoft.AppCleaner",
   "homepage": "https://freemacsoft.net/appcleaner/",

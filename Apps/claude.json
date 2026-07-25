@@ -2,7 +2,7 @@
   "name": "Claude",
   "description": "Anthropic's official Claude AI desktop app",
   "version": "1.24012.9",
-  "url": "https://downloads.claude.ai/releases/darwin/universal/1.24012.9/Claude-03c61d06f8e01a4db2273b9514e225f21d2ba62e.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/claude_1.24012.9.pkg",
   "vendor_url": "https://downloads.claude.ai/releases/darwin/universal/1.2581.0/Claude-f103981571883c6ef0522635cf396089a3ae0e0f.zip",
   "bundleId": "com.anthropic.claudefordesktop",
   "homepage": "https://claude.ai/download",

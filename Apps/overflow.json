@@ -2,7 +2,7 @@
   "name": "Overflow",
   "description": "Visual application launcher",
   "version": "3.2.1",
-  "url": "https://stunt.s3.amazonaws.com/overflow_3.2.1.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/overflow_3.2.1.pkg",
   "vendor_url": "https://stunt.s3.amazonaws.com/overflow_3.2.1.zip",
   "bundleId": "io.overflow.mac.app",
   "homepage": "https://stuntsoftware.com/overflow/",

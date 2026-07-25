@@ -2,7 +2,7 @@
   "name": "Dia",
   "description": "Web browser",
   "version": "1.41.1",
-  "url": "https://releases.diabrowser.com/release/Dia-1.41.1-84131.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/dia_1.41.1.pkg",
   "vendor_url": "https://releases.diabrowser.com/release/Dia-1.27.2-79242.zip",
   "bundleId": "company.thebrowser.dia",
   "homepage": "https://www.diabrowser.com/",

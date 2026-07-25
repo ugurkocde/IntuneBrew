@@ -2,7 +2,7 @@
   "name": "Plex HTPC",
   "description": "Home Theater PC media player",
   "version": "1.71.1.346",
-  "url": "https://downloads.plex.tv/htpc/1.71.1.346-f62ce923/macos/PlexHTPC-1.71.1.346-f62ce923-universal.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/plex_htpc_1.71.1.346.pkg",
   "vendor_url": "https://downloads.plex.tv/htpc/1.71.1.346-f62ce923/macos/PlexHTPC-1.71.1.346-f62ce923-universal.zip",
   "bundleId": "tv.plex.htpc",
   "homepage": "https://www.plex.tv/",

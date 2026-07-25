@@ -2,7 +2,7 @@
   "name": "TeX Live Utility",
   "description": "Graphical user interface for TeX Live Manager",
   "version": "1.57",
-  "url": "https://github.com/amaxwell/tlutility/releases/download/1.57/TeX.Live.Utility.app-1.57.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/tex_live_utility_1.57.pkg",
   "vendor_url": "https://github.com/amaxwell/tlutility/releases/download/1.55/TeX.Live.Utility.app-1.55.zip",
   "bundleId": "com.googlecode.mactlmgr.tlu",
   "homepage": "https://github.com/amaxwell/tlutility",

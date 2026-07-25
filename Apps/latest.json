@@ -2,7 +2,7 @@
   "name": "Latest",
   "description": "Utility that shows the latest app updates",
   "version": "0.11",
-  "url": "https://max.codes/latest/0.11.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/latest_0.11.pkg",
   "vendor_url": "https://max.codes/latest/0.11.zip",
   "bundleId": "com.max-langer.Latest",
   "homepage": "https://max.codes/latest",

@@ -2,7 +2,7 @@
   "name": "Cork",
   "description": "GUI companion app for Homebrew",
   "version": "1.7.6",
-  "url": "https://corkmac.app/RLS/1.7.6/Cork.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/cork_1.7.6.pkg",
   "vendor_url": "https://corkmac.app/RLS/1.7.4/Cork.zip",
   "bundleId": "eu.davidbures.cork",
   "homepage": "https://corkmac.app/",

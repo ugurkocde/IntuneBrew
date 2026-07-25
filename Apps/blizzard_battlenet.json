@@ -2,7 +2,7 @@
   "name": "Blizzard Battle.net",
   "description": "Online gaming platform",
   "version": "1.19.3.3219",
-  "url": "https://www.battle.net/download/getInstallerForGame?os=mac&locale=enUS&version=LIVE&gameProgram=BATTLENET_APP",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/blizzard_battlenet_1.19.3.3219.pkg",
   "vendor_url": "https://www.battle.net/download/getInstallerForGame?os=mac&locale=enUS&version=LIVE&gameProgram=BATTLENET_APP",
   "bundleId": "net.battle.app",
   "homepage": "https://www.battle.net/",

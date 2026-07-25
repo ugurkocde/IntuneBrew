@@ -2,7 +2,7 @@
   "name": "Keyboard Maestro",
   "description": "Automation software",
   "version": "11.1",
-  "url": "https://files.stairways.com/keyboardmaestro-1110.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/keyboard_maestro_11.1.pkg",
   "vendor_url": "https://files.stairways.com/keyboardmaestro-1104.zip",
   "bundleId": "com.stairways.keyboardmaestro.editor",
   "homepage": "https://www.keyboardmaestro.com/main/",

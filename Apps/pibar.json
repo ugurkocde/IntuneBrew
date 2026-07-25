@@ -2,7 +2,7 @@
   "name": "PiBar",
   "description": "Pi-hole(s) management in the menu bar",
   "version": "1.2.1",
-  "url": "https://amiantos.s3.amazonaws.com/PiBar-1.2.1.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/pibar_1.2.1.pkg",
   "vendor_url": "https://amiantos.s3.amazonaws.com/PiBar-1.1.2.zip",
   "bundleId": "com.nicola.Pi-bar",
   "homepage": "https://github.com/amiantos/pibar",

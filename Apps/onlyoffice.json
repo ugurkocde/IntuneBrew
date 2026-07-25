@@ -2,7 +2,7 @@
   "name": "ONLYOFFICE",
   "description": "Document editor",
   "version": "9.4.0",
-  "url": "https://github.com/ONLYOFFICE/DesktopEditors/releases/download/v9.4.0/ONLYOFFICE-arm.dmg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/onlyoffice_9.4.0.pkg",
   "vendor_url": "https://download.onlyoffice.com/install/desktop/editors/mac/arm/updates/ONLYOFFICE-arm-9.3.1.zip",
   "bundleId": "asc.onlyoffice.editors-helper-renderer",
   "homepage": "https://www.onlyoffice.com/",

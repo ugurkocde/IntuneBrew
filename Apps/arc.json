@@ -2,7 +2,7 @@
   "name": "Arc",
   "description": "Chromium based browser",
   "version": "1.157.1",
-  "url": "https://releases.arc.net/release/Arc-1.157.1-84133.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/arc_1.157.1.pkg",
   "vendor_url": "https://releases.arc.net/release/Arc-1.142.1-78710.zip",
   "bundleId": "company.thebrowser.Browser",
   "homepage": "https://arc.net/",

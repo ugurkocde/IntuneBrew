@@ -2,7 +2,7 @@
   "name": "Battery Buddy",
   "description": "Replacement of the default battery indicator in the menu bar",
   "version": "1.0.4",
-  "url": "https://batterybuddy.app/releases/Battery%20Buddy.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/battery_buddy_1.0.4.pkg",
   "vendor_url": "https://batterybuddy.app/releases/Battery%20Buddy.zip",
   "bundleId": "com.NeilSardesai.Battery-Buddy",
   "homepage": "https://batterybuddy.app/",

@@ -2,7 +2,7 @@
   "name": "Splice",
   "description": "Cloud-based music creation and collaboration platform",
   "version": "5.4.12",
-  "url": "https://desktop.splice.com/conveyor/stable/splice-5.4.12-mac-aarch64.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/splice_5.4.12.pkg",
   "vendor_url": "https://desktop.splice.com/conveyor/stable/splice-5.4.9-mac-aarch64.zip",
   "bundleId": "com.splice.Splice",
   "homepage": "https://splice.com/",
