@@ -1213,6 +1213,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/supremo.json",
     "https://formulae.brew.sh/api/cask/linphone.json",
     "https://formulae.brew.sh/api/cask/winbox.json",
+    "https://formulae.brew.sh/api/cask/multiviewer-for-f1.json",
 ]
 
 # PKG in DMG URLs
@@ -1352,7 +1353,6 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/mamp.json",
     "https://formulae.brew.sh/api/cask/dotnet-sdk.json",
     "https://formulae.brew.sh/api/cask/tailscale-app.json",
-    "https://formulae.brew.sh/api/cask/multiviewer-for-f1.json",
 ]
 
 # Custom scraper scripts to run
