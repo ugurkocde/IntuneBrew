@@ -1326,7 +1326,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/multi.png' width='32' height='32'> Multi | 3.0.2 |
 | <img src='Logos/multipass.png' width='32' height='32'> Multipass | 1.16.3 |
 | <img src='Logos/multitouch.png' width='32' height='32'> Multitouch | 1.48 |
-| ❌ MultiViewer | 2.8.2 |
+| <img src='Logos/multiviewer.png' width='32' height='32'> MultiViewer | 2.8.2 |
 | <img src='Logos/multiviewer_for_f1.png' width='32' height='32'> MultiViewer for F1 | 1.43.2 |
 | <img src='Logos/mural.png' width='32' height='32'> MURAL | 3.0.4 |
 | <img src='Logos/murus_firewall.png' width='32' height='32'> Murus Firewall | 2.7 |
@@ -1872,7 +1872,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
-
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:
