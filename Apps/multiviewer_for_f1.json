@@ -11,8 +11,6 @@
   "previous_version": "1.43.2",
   "category": "Media",
   "publisher": "MultiViewer",
-  "homebrew_cask": "multiviewer-for-f1",
-  "deprecated": true,
-  "deprecation_reason": "cask removed from Homebrew",
+  "homebrew_cask": "multiviewer",
   "type": "dmg"
 }

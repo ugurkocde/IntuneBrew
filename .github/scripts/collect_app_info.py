@@ -247,7 +247,6 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/paste.json",
     "https://formulae.brew.sh/api/cask/popclip.json",
     "https://formulae.brew.sh/api/cask/rightfont.json",
-    "https://formulae.brew.sh/api/cask/screens.json",
     "https://formulae.brew.sh/api/cask/soundsource.json",
     "https://formulae.brew.sh/api/cask/swinsian.json",
     "https://formulae.brew.sh/api/cask/the-unarchiver.json",
@@ -1213,7 +1212,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/supremo.json",
     "https://formulae.brew.sh/api/cask/linphone.json",
     "https://formulae.brew.sh/api/cask/winbox.json",
-    "https://formulae.brew.sh/api/cask/multiviewer-for-f1.json",
+    "https://formulae.brew.sh/api/cask/multiviewer.json",
 ]
 
 # PKG in DMG URLs
