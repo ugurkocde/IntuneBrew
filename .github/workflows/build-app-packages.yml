@@ -18,6 +18,11 @@ jobs:
   build:
     runs-on: macos-latest
 
+    # Pushing uses secrets.PAT; these are for commenting on resolved requests.
+    permissions:
+      contents: write
+      issues: write
+
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
@@ -37,28 +42,117 @@ jobs:
       - name: Make scrapers executable
         run: chmod +x .github/scripts/scrapers/*.sh
 
+      # A push that only appends cask URLs (an approved app request) needs just
+      # that app packaged. Processing all of them costs about 13 minutes of
+      # Azure lookups for apps that are already built. The nightly schedule and
+      # manual runs still cover everything.
+      - name: Determine build scope
+        id: scope
+        env:
+          GH_TOKEN: ${{ github.token }}
+          EVENT_NAME: ${{ github.event_name }}
+          BEFORE_SHA: ${{ github.event.before }}
+        run: |
+          full_build() {
+            echo "Full build: $1"
+            echo "scope=all" >> "$GITHUB_OUTPUT"
+            exit 0
+          }
+
+          [ "$EVENT_NAME" = "push" ] || full_build "triggered by $EVENT_NAME"
+
+          case "$BEFORE_SHA" in
+            ""|0000000000000000000000000000000000000000)
+              full_build "no usable base commit" ;;
+          esac
+
+          # The checkout is shallow, so compare through the API rather than git.
+          patch=$(gh api "repos/$GITHUB_REPOSITORY/compare/$BEFORE_SHA...$GITHUB_SHA" \
+            --jq '.files[] | select(.filename == ".github/scripts/collect_app_info.py") | .patch' 2>/dev/null) \
+            || full_build "could not read the diff"
+
+          [ -n "$patch" ] || full_build "collect_app_info.py not in this push"
+
+          changed=$(printf '%s\n' "$patch" | grep -E '^[+-]' | grep -vE '^(\+\+\+|---)' || true)
+
+          # Anything other than a list entry means the collector logic itself
+          # changed, and every app has to be re-collected.
+          other=$(printf '%s\n' "$changed" \
+            | grep -vE '^[+-][[:space:]]*"https://formulae\.brew\.sh/api/cask/[^"]+\.json",?[[:space:]]*$' || true)
+          if [ -n "$other" ]; then
+            echo "Changes beyond list entries:"
+            printf '%s\n' "$other" | head -20
+            full_build "collect_app_info.py changed beyond cask list entries"
+          fi
+
+          tokens=$(printf '%s\n' "$changed" | grep -E '^\+' \
+            | grep -oE 'cask/[^"]+\.json' | sed 's|cask/||; s|\.json||' | sort -u | tr '\n' ' ')
+
+          [ -n "$tokens" ] || full_build "no casks were added"
+
+          echo "Scoped build for: $tokens"
+          echo "scope=partial" >> "$GITHUB_OUTPUT"
+          echo "tokens=$tokens" >> "$GITHUB_OUTPUT"
+
       - name: Collect app information
         run: python .github/scripts/collect_app_info.py
 
       - name: Find apps needing packaging
         id: find-apps
+        env:
+          BUILD_SCOPE: ${{ steps.scope.outputs.scope }}
+          SCOPE_TOKENS: ${{ steps.scope.outputs.tokens }}
         run: |
           echo "Finding apps that need special packaging..."
-          apps_to_build=()
+          all_apps=()
+          scoped_apps=()
+          scoped_files_seen=0
+
           for file in Apps/*.json; do
-            if [ -f "$file" ]; then
-              if [ "$(jq -r '.deprecated // false' "$file")" = "true" ]; then
-                echo "Skipping deprecated app: $(basename "$file" .json)"
-                continue
-              fi
-              type=$(jq -r '.type // empty' "$file")
-              if [ "$type" = "app" ] || [ "$type" = "pkg_in_dmg" ] || [ "$type" = "pkg_in_pkg" ] || [ "$type" = "pkg" ]; then
-                app_name=$(basename "$file" .json)
-                url=$(jq -r '.url' "$file")
-                apps_to_build+=("$app_name:$url")
-              fi
+            [ -f "$file" ] || continue
+
+            cask=$(jq -r '.homebrew_cask // empty' "$file")
+            in_scope=false
+            if [ -n "$cask" ] && [[ " $SCOPE_TOKENS " == *" $cask "* ]]; then
+              in_scope=true
+              scoped_files_seen=$((scoped_files_seen + 1))
             fi
+
+            if [ "$(jq -r '.deprecated // false' "$file")" = "true" ]; then
+              echo "Skipping deprecated app: $(basename "$file" .json)"
+              continue
+            fi
+
+            # Only these types are repackaged. A plain dmg is served straight
+            # from the vendor URL and never enters the build list.
+            type=$(jq -r '.type // empty' "$file")
+            case "$type" in
+              app|pkg_in_dmg|pkg_in_pkg|pkg) ;;
+              *) continue ;;
+            esac
+
+            entry="$(basename "$file" .json):$(jq -r '.url' "$file")"
+            all_apps+=("$entry")
+            [ "$in_scope" = true ] && scoped_apps+=("$entry")
           done
+
+          apps_to_build=("${all_apps[@]}")
+          if [ "$BUILD_SCOPE" = "partial" ]; then
+            if [ ${#scoped_apps[@]} -gt 0 ]; then
+              apps_to_build=("${scoped_apps[@]}")
+              echo "Scoped build: packaging ${#scoped_apps[@]} of ${#all_apps[@]} apps, skipping the rest"
+            elif [ "$scoped_files_seen" -gt 0 ]; then
+              # The added apps exist but need no repackaging, so there is
+              # genuinely nothing to build.
+              apps_to_build=()
+              echo "Scoped build: added apps need no packaging, nothing to build"
+            else
+              # The added cask produced no app file at all, usually a display
+              # name collision. Build everything rather than silently skipping.
+              echo "No app file matched the added casks ($SCOPE_TOKENS), falling back to a full build"
+            fi
+          fi
+
           echo "APPS_TO_BUILD=${apps_to_build[*]}" >> $GITHUB_ENV
           echo "Found apps: ${apps_to_build[*]}"
 
@@ -892,3 +986,57 @@ jobs:
 
           echo "Push failed after $MAX_RETRIES attempts"
           exit 1
+
+      # Apps are only downloadable once the steps above have published them, so
+      # this is the first point at which a requester can be told their app is live.
+      - name: Resolve pending app requests
+        id: pending
+        run: python .github/scripts/pending_requests.py resolve
+
+      - name: Notify requesters
+        if: steps.pending.outputs.notify_count != '0'
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const fs = require('fs');
+            const notifications = JSON.parse(fs.readFileSync('pending-notifications.json', 'utf8'));
+
+            for (const item of notifications) {
+              let body = `## Now live\n\n`;
+              body += `The app you requested has been packaged and is available in the catalog.\n\n`;
+              body += `| App | Version |\n|-----|---------|\n`;
+              for (const app of item.apps) {
+                body += `| ${app.name} | \`${app.version}\` |\n`;
+              }
+              body += `\nIt will appear in IntuneBrew on the next run, and updates are `;
+              body += `picked up automatically from Homebrew from here on.`;
+
+              try {
+                await github.rest.issues.createComment({
+                  owner: context.repo.owner,
+                  repo: context.repo.repo,
+                  issue_number: item.issue,
+                  body: body
+                });
+                console.log(`Commented on #${item.issue}`);
+              } catch (e) {
+                // A deleted or locked issue must not fail the build.
+                console.log(`Could not comment on #${item.issue}: ${e.message}`);
+              }
+            }
+
+      - name: Commit resolved requests
+        if: steps.pending.outputs.notify_count != '0'
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .github/pending-requests.json
+
+          if git diff --staged --quiet; then
+            echo "No pending request changes to commit"
+            exit 0
+          fi
+
+          git commit -m "Clear resolved app requests [skip ci]"
+          git pull --rebase origin main || git rebase --abort || true
+          git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git || echo "Push failed, entries will resolve on the next run"

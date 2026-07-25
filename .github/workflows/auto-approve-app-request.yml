@@ -57,12 +57,19 @@ jobs:
           COMMENT_BODY: ""
         run: python .github/scripts/add_new_app.py
 
+      - name: Record pending request
+        if: steps.add-app.outputs.app_added == 'true'
+        env:
+          ISSUE_NUMBER: ${{ github.event.issue.number }}
+          APPS_JSON: ${{ steps.add-app.outputs.apps_json }}
+        run: python .github/scripts/pending_requests.py record
+
       - name: Commit changes
         if: steps.add-app.outputs.app_added == 'true'
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add .github/scripts/collect_app_info.py
+          git add .github/scripts/collect_app_info.py .github/pending-requests.json
           git commit -m "Add ${{ steps.add-app.outputs.commit_message }}"
           git push
 
@@ -71,20 +78,24 @@ jobs:
       - name: Comment success
         if: steps.add-app.outputs.app_added == 'true'
         uses: actions/github-script@v7
+        env:
+          APPS_JSON: ${{ steps.add-app.outputs.apps_json }}
+          FALLBACK_NAME: ${{ steps.add-app.outputs.app_name }}
+          FALLBACK_CASK: ${{ steps.add-app.outputs.cask_name }}
+          FALLBACK_TYPE: ${{ steps.add-app.outputs.app_type }}
         with:
           script: |
-            const appsJson = `${{ steps.add-app.outputs.apps_json }}`;
             const commentId = ${{ steps.progress.outputs.comment_id }};
 
             let apps = [];
             try {
-              apps = JSON.parse(appsJson);
+              apps = JSON.parse(process.env.APPS_JSON);
             } catch (e) {
               // Fallback for single app
               apps = [{
-                name: '${{ steps.add-app.outputs.app_name }}',
-                cask: '${{ steps.add-app.outputs.cask_name }}',
-                type: '${{ steps.add-app.outputs.app_type }}'
+                name: process.env.FALLBACK_NAME,
+                cask: process.env.FALLBACK_CASK,
+                type: process.env.FALLBACK_TYPE
               }];
             }
 
@@ -95,18 +106,37 @@ jobs:
             body += `- [x] Committing changes\n`;
             body += `- [x] Triggering build workflow\n\n`;
 
-            body += `| App Name | Cask | Type |\n|----------|------|------|\n`;
-            let hasPkg = false;
+            body += `### What was matched\n\n`;
+            body += `| App Name | Cask | Type | Match |\n|----------|------|------|-------|\n`;
             for (const app of apps) {
-              body += `| ${app.name} | \`${app.cask}\` | \`${app.type}\` |\n`;
-              if (app.type === 'pkg') hasPkg = true;
+              // No score means the cask was named explicitly, not searched for.
+              const match = app.score == null ? 'exact request' : `${Math.round(app.score * 100)}%`;
+              body += `| ${app.name} | \`${app.cask}\` | \`${app.type}\` | ${match} |\n`;
             }
 
-            if (hasPkg) {
-              body += `\n> **Note:** If the build fails for PKG apps, they may be PKG-in-PKG. Move them from \`pkg_urls\` to \`pkg_in_pkg_urls\` in \`collect_app_info.py\`.\n`;
+            const withUrl = apps.filter(a => a.url);
+            if (withUrl.length > 0) {
+              body += `\n<details>\n<summary>Source download URLs</summary>\n\n`;
+              for (const app of withUrl) {
+                body += `- **${app.name}**: ${app.url}\n`;
+              }
+              body += `\n</details>\n`;
             }
 
-            body += `\nThe build has been triggered. Track progress: [Actions](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/workflows/build-app-packages.yml)`;
+            if (apps.some(a => a.type === 'pkg')) {
+              body += `\n<details>\n<summary>Maintainer note for PKG apps</summary>\n\n`;
+              body += `If the build fails for a PKG app it may be PKG-in-PKG. Move it from `;
+              body += `\`pkg_urls\` to \`pkg_in_pkg_urls\` in \`collect_app_info.py\`. This cannot be `;
+              body += `detected from the package alone, since ordinary distribution packages `;
+              body += `contain component packages too.\n\n</details>\n`;
+            }
+
+            body += `\n### What happens next\n\n`;
+            body += `The build has been triggered. The app is normally downloadable from the `;
+            body += `catalog about 20 minutes from now, and fully enriched (icon, category, `;
+            body += `bundle ID, uninstall script) within 30 minutes.\n\n`;
+            body += `This issue will be updated automatically once the app is live. `;
+            body += `[Track the build](https://github.com/${context.repo.owner}/${context.repo.repo}/actions/workflows/build-app-packages.yml)`;
 
             await github.rest.issues.updateComment({
               owner: context.repo.owner,
@@ -116,7 +146,9 @@ jobs:
             });
 
       - name: Close issue
-        if: steps.add-app.outputs.app_added == 'true'
+        if: |
+          steps.add-app.outputs.app_added == 'true' &&
+          steps.add-app.outputs.needs_review != 'true'
         uses: actions/github-script@v7
         with:
           script: |
@@ -128,8 +160,137 @@ jobs:
               labels: [...context.payload.issue.labels.map(l => l.name), 'approved']
             });
 
+      - name: Comment needs review
+        if: steps.add-app.outputs.needs_review == 'true'
+        uses: actions/github-script@v7
+        env:
+          REVIEW_JSON: ${{ steps.add-app.outputs.review_json }}
+        with:
+          script: |
+            const review = JSON.parse(process.env.REVIEW_JSON || '[]');
+            const addedSome = '${{ steps.add-app.outputs.app_added }}' === 'true';
+            const commentId = ${{ steps.progress.outputs.comment_id || 0 }};
+
+            let body = `## Needs Review\n\n`;
+            body += addedSome
+              ? `Some apps were added, but these could not be matched confidently:\n\n`
+              : `No Homebrew cask matched this request confidently enough to add automatically.\n\n`;
+
+            for (const item of review) {
+              body += `**${item.name}**\n\n`;
+              if (item.candidates.length === 0) {
+                body += `No Homebrew cask found.\n\n`;
+                continue;
+              }
+              body += item.reason === 'ambiguous'
+                ? `Several casks match equally well, so the choice is not automatic:\n\n`
+                : `Closest candidates, none confident enough to add automatically:\n\n`;
+              body += `| Cask | Name | Match |\n|------|------|-------|\n`;
+              for (const c of item.candidates) {
+                body += `| \`${c.cask}\` | ${c.name} | ${Math.round(c.score * 100)}% |\n`;
+              }
+              body += `\n`;
+            }
+
+            body += `A maintainer can approve the correct one with:\n\n`;
+            body += `\`\`\`\n/approve <cask-name>\n\`\`\`\n\n`;
+            body += `If the app is not on Homebrew, it cannot be added automatically.`;
+
+            if (commentId && !addedSome) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: commentId,
+                body: body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: body
+              });
+            }
+
+            await github.rest.issues.removeLabel({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              name: 'auto-approved'
+            }).catch(() => {});
+
+            await github.rest.issues.addLabels({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              labels: ['needs-review']
+            });
+
+      - name: Comment duplicate
+        if: steps.add-app.outputs.all_duplicates == 'true'
+        uses: actions/github-script@v7
+        env:
+          DUPLICATE_APPS: ${{ steps.add-app.outputs.duplicate_apps }}
+        with:
+          script: |
+            const duplicates = (process.env.DUPLICATE_APPS || '')
+              .split(',').map(s => s.trim()).filter(Boolean);
+            const commentId = ${{ steps.progress.outputs.comment_id || 0 }};
+
+            let body = `## Already in IntuneBrew\n\n`;
+            body += `No changes were needed. `;
+            body += duplicates.length > 1
+              ? `The requested apps are already in the catalog:\n\n`
+              : `The requested app is already in the catalog:\n\n`;
+            for (const cask of duplicates) {
+              body += `- \`${cask}\`\n`;
+            }
+            body += `\n[Browse the full list of supported apps](https://github.com/${context.repo.owner}/${context.repo.repo}/blob/main/supported_apps.json)\n\n`;
+            body += `Closing this issue as a duplicate.`;
+
+            if (commentId) {
+              await github.rest.issues.updateComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                comment_id: commentId,
+                body: body
+              });
+            } else {
+              await github.rest.issues.createComment({
+                owner: context.repo.owner,
+                repo: context.repo.repo,
+                issue_number: context.issue.number,
+                body: body
+              });
+            }
+
+            await github.rest.issues.removeLabel({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              name: 'auto-approved'
+            }).catch(() => {});
+
+            const { data: issue } = await github.rest.issues.get({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number
+            });
+
+            await github.rest.issues.update({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              state: 'closed',
+              labels: [...issue.labels.map(l => l.name), 'duplicate']
+            });
+
       - name: Comment failure
-        if: failure() || steps.add-app.outputs.app_added == 'false'
+        if: |
+          steps.add-app.outputs.all_duplicates != 'true' &&
+          (failure() ||
+           (steps.add-app.outputs.app_added == 'false' &&
+            steps.add-app.outputs.needs_review != 'true'))
         uses: actions/github-script@v7
         with:
           script: |

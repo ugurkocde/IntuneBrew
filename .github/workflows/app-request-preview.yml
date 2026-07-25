@@ -16,9 +16,17 @@ on:
 
 jobs:
   preview-app:
-    # Run for: new app request issues, /check comments, or manual dispatch
+    # Run for: new app request issues, /check comments, or manual dispatch.
+    # Both 'app-request' (applied by the request form) and 'app request' exist as
+    # labels, so match either. Issues already labelled 'auto-approved' are handled
+    # end to end by auto-approve-app-request.yml - previewing them too would race
+    # that workflow and post contradictory comments.
     if: |
-      (github.event_name == 'issues' && (contains(join(github.event.issue.labels.*.name, ','), 'app request') || contains(join(github.event.issue.labels.*.name, ','), 'feature request'))) ||
+      (github.event_name == 'issues' &&
+        !contains(join(github.event.issue.labels.*.name, ','), 'auto-approved') &&
+        (contains(join(github.event.issue.labels.*.name, ','), 'app-request') ||
+         contains(join(github.event.issue.labels.*.name, ','), 'app request') ||
+         contains(join(github.event.issue.labels.*.name, ','), 'feature request'))) ||
       (github.event_name == 'issue_comment' && (contains(github.event.comment.body, '/check') || contains(github.event.comment.body, '/review'))) ||
       (github.event_name == 'workflow_dispatch')
     runs-on: ubuntu-latest

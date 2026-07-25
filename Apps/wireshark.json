@@ -6,7 +6,7 @@
   "vendor_url": "https://2.na.dl.wireshark.org/osx/all-versions/Wireshark%204.4.7%20Arm%2064.dmg",
   "bundleId": "org.wireshark.Wireshark",
   "homepage": "https://www.wireshark.org/",
-  "homebrew_cask": "wireshark",
+  "homebrew_cask": "wireshark-app",
   "fileName": "wireshark_4.6.7.pkg",
   "type": "pkg_in_dmg",
   "sha": "6952d667047b0955c70a5cadabc2eed74e3ff278cd4056c410bed76e6d727d90",

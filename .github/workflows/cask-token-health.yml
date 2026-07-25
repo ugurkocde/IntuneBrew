@@ -1,0 +1,73 @@
+name: Check Homebrew Cask Token Health
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "0 7 * * 1" # Mondays at 07:00 UTC
+
+permissions:
+  contents: read
+  issues: write
+
+env:
+  ISSUE_TITLE: Renamed or retired Homebrew casks in app catalog
+
+jobs:
+  check-tokens:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v7
+
+      - name: Set up Python
+        uses: actions/setup-python@v6
+        with:
+          python-version: "3.x"
+
+      - name: Install dependencies
+        run: python -m pip install --disable-pip-version-check requests==2.34.2
+
+      - name: Check cask tokens
+        id: check
+        run: python .github/scripts/check_cask_tokens.py
+
+      - name: Find existing report issue
+        id: issue
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          number=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open \
+            --search "\"$ISSUE_TITLE\" in:title" --json number,title \
+            --jq ".[] | select(.title == \"$ISSUE_TITLE\") | .number" | head -1)
+          echo "number=$number" >> "$GITHUB_OUTPUT"
+
+      - name: Create or update report issue
+        if: steps.check.outputs.missing_count != '0'
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ steps.issue.outputs.number }}
+        run: |
+          if [ -n "$ISSUE_NUMBER" ]; then
+            gh issue edit "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" --body-file cask-token-report.md
+            echo "Updated issue #$ISSUE_NUMBER"
+          else
+            gh issue create --repo "$GITHUB_REPOSITORY" --title "$ISSUE_TITLE" --body-file cask-token-report.md
+          fi
+
+      - name: Close report issue when every token resolves
+        if: steps.check.outputs.missing_count == '0' && steps.issue.outputs.number != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          ISSUE_NUMBER: ${{ steps.issue.outputs.number }}
+        run: |
+          gh issue close "$ISSUE_NUMBER" --repo "$GITHUB_REPOSITORY" \
+            --comment "Every referenced Homebrew cask resolves again."
+
+      - name: Upload report artifact
+        if: always()
+        uses: actions/upload-artifact@v7
+        with:
+          name: cask-token-report
+          path: cask-token-report.md
+          if-no-files-found: ignore

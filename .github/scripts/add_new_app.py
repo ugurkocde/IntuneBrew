@@ -20,6 +20,15 @@ from difflib import SequenceMatcher
 # Cache for the Homebrew cask list
 _cask_list_cache = None
 
+# A fuzzy title match is only auto-added when it scores at least this high.
+# Anything above SEARCH_THRESHOLD but below it is surfaced as a suggestion for a
+# human to confirm with "/approve <cask>", because a weak match silently commits
+# the wrong app to the catalog.
+AUTO_ADD_THRESHOLD = 0.85
+
+# Minimum score for a cask to be offered as a candidate at all.
+SEARCH_THRESHOLD = 0.5
+
 def set_output(name, value):
     """Set GitHub Actions output."""
     output_file = os.environ.get('GITHUB_OUTPUT')
@@ -71,6 +80,22 @@ def normalize_name(name):
 def similarity_score(s1, s2):
     """Calculate similarity between two strings."""
     return SequenceMatcher(None, s1.lower(), s2.lower()).ratio()
+
+def is_ambiguous(results):
+    """True when more than one cask ties for the best score.
+
+    On a tie the winner is decided by Homebrew's list order rather than by
+    relevance, so picking results[0] would be arbitrary. Requests like
+    ".NET SDK" tie across dotnet-sdk, dotnet-sdk@8 and dotnet-sdk@9.
+    """
+    return len(results) > 1 and results[1][2] == results[0][2]
+
+def cask_display_name(cask_data, fallback):
+    """Get the human-readable name of a cask, falling back to its token."""
+    name = cask_data.get('name', fallback)
+    if isinstance(name, list):
+        name = name[0] if name else fallback
+    return name or fallback
 
 def search_homebrew_casks(search_term):
     """
@@ -129,7 +154,7 @@ def search_homebrew_casks(search_term):
 
         best_score = max(scores) if scores else 0
 
-        if best_score >= 0.5:  # Minimum threshold
+        if best_score >= SEARCH_THRESHOLD:
             results.append((token, cask, best_score))
 
     # Sort by score descending
@@ -327,6 +352,14 @@ def main():
     # Determine which casks to add
     casks_to_process = []
 
+    # Title searches that produced no match, or only a match too weak to trust.
+    # These are reported for human confirmation instead of being guessed at.
+    low_confidence = []
+
+    # Fuzzy match score per cask, so the approval comment can show how the app
+    # was resolved. Explicit /approve and URL requests have no score.
+    match_scores = {}
+
     # First, check if specific casks are mentioned in the /approve command
     specific_casks = extract_casks_from_comment(comment_body)
     if specific_casks:
@@ -344,18 +377,52 @@ def main():
             print(f"App names from title: {app_names}")
             for app_name in app_names:
                 results = search_homebrew_casks(app_name)
-                if results:
-                    best_token, _, best_score = results[0]
-                    if best_score >= 0.5:
-                        print(f"  Found: {best_token} (score: {best_score:.2f})")
-                        if best_token not in casks_to_process:
-                            casks_to_process.append(best_token)
-                    else:
-                        print(f"  Low score for {app_name}: {best_token} ({best_score:.2f})")
+                best_score = results[0][2] if results else 0
+
+                ambiguous = is_ambiguous(results)
+
+                if best_score >= AUTO_ADD_THRESHOLD and not ambiguous:
+                    best_token = results[0][0]
+                    print(f"  Found: {best_token} (score: {best_score:.2f})")
+                    match_scores[best_token] = round(best_score, 2)
+                    if best_token not in casks_to_process:
+                        casks_to_process.append(best_token)
+                    continue
+
+                # Too weak or too ambiguous to auto-add. Offer the top candidates
+                # so a maintainer can confirm the right one with /approve <cask>.
+                reason = 'ambiguous' if ambiguous else 'low confidence'
+                print(f"  {reason.capitalize()} for {app_name}: best {best_score:.2f}")
+                low_confidence.append({
+                    'name': app_name,
+                    'reason': reason,
+                    'candidates': [
+                        {
+                            'cask': token,
+                            'name': cask_display_name(cask, token),
+                            'score': round(score, 2)
+                        }
+                        for token, cask, score in results[:3]
+                    ]
+                })
 
     if not casks_to_process:
+        if low_confidence:
+            # Nothing was confident enough to add. Not a pipeline error - the
+            # request just needs a human to pick the right cask.
+            set_output('app_added', 'false')
+            set_output('needs_review', 'true')
+            set_output('review_json', json.dumps(low_confidence))
+            names = ', '.join(item['name'] for item in low_confidence)
+            print(f"No confident match for: {names}. Flagging for review.")
+            sys.exit(0)
+
         set_failed("Could not find any apps to add. Please specify cask names: /approve cask1, cask2")
         sys.exit(1)
+
+    if low_confidence:
+        set_output('needs_review', 'true')
+        set_output('review_json', json.dumps(low_confidence))
 
     # Process each cask
     added_apps = []
@@ -377,9 +444,7 @@ def main():
             continue
 
         # Get app name
-        app_name = homebrew_data.get('name', [cask_name])
-        if isinstance(app_name, list):
-            app_name = app_name[0] if app_name else cask_name
+        app_name = cask_display_name(homebrew_data, cask_name)
 
         # Determine app type
         list_name, app_type = determine_app_type(homebrew_data)
@@ -393,6 +458,8 @@ def main():
             added_apps.append({
                 'cask': cask_name,
                 'name': app_name,
+                'url': homebrew_data.get('url', ''),
+                'score': match_scores.get(cask_name),
                 'type': app_type,
                 'list': list_name
             })
@@ -428,9 +495,21 @@ def main():
 
         print(f"\nSuccessfully added {len(added_apps)} app(s)")
     else:
+        if skipped_apps and not failed_apps:
+            # Every requested app is already in the catalog. That is a valid
+            # outcome of the request, not a pipeline error, so exit cleanly and
+            # let the workflow report it as informational.
+            skipped_list = ', '.join(a['cask'] for a in skipped_apps)
+            set_output('app_added', 'false')
+            set_output('all_duplicates', 'true')
+            set_output('duplicate_apps', skipped_list)
+            print(f"All requested apps already exist: {skipped_list}")
+            sys.exit(0)
+
         if skipped_apps:
             skipped_list = ', '.join(a['cask'] for a in skipped_apps)
-            set_failed(f"All apps already exist: {skipped_list}")
+            failed_list = ', '.join(f"{a['cask']} ({a['reason']})" for a in failed_apps)
+            set_failed(f"Already exist: {skipped_list}. Failed to add: {failed_list}")
         elif failed_apps:
             failed_list = ', '.join(f"{a['cask']} ({a['reason']})" for a in failed_apps)
             set_failed(f"Failed to add apps: {failed_list}")
