@@ -9,7 +9,7 @@
   "fileName": "betterzip_6.0.1.pkg",
   "type": "app",
   "sha": "13e4b40f1af2c379dce215211db0f0372dd12dcf9308e4dd2439617a1f5deeb6",
-  "previous_version": "6.0",
+  "previous_version": "6.0.1",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:23:43Z",
     "qa_result": "Installation successful and verified",

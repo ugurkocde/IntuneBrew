@@ -9,7 +9,7 @@
   "fileName": "espanso_2.2.1.pkg",
   "type": "app",
   "sha": "aaf81d7573db785e5447b867e0f2f1d6f061ea9fa1756fda02f21b0402407669",
-  "previous_version": "2.3.0",
+  "previous_version": "2.4.0",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:57:13Z",
     "qa_result": "Installation successful and verified",
