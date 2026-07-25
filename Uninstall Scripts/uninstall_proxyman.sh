@@ -161,5 +161,13 @@ elif [ -f "$HOME/Library/WebKit/com.proxyman.NSProxy" ]; then
     rm -f "$HOME/Library/WebKit/com.proxyman.NSProxy" 2>/dev/null || true
 fi
 
+# Remove /Users/Shared/Proxyman
+echo "Removing /Users/Shared/Proxyman..."
+if [ -d "/Users/Shared/Proxyman" ]; then
+    rm -rf "/Users/Shared/Proxyman" 2>/dev/null || true
+elif [ -f "/Users/Shared/Proxyman" ]; then
+    rm -f "/Users/Shared/Proxyman" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0
