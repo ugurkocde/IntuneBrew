@@ -2,7 +2,7 @@
   "name": "Native Access",
   "description": "Administration tool for Native Instruments products",
   "version": "3.25.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/native_access_3.25.2.pkg",
+  "url": "https://na-update.native-instruments.com/arm64/Native-Access-arm64-mac-latest.zip",
   "vendor_url": "https://na-update.native-instruments.com/arm64/Native-Access-arm64-mac-latest.zip",
   "bundleId": "com.native-instruments.nativeaccess2",
   "homepage": "https://www.native-instruments.com/en/specials/native-access-2/",

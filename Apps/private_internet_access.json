@@ -2,7 +2,7 @@
   "name": "Private Internet Access",
   "description": "VPN client",
   "version": "3.7.2-08420",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/private_internet_access_3.7.2-08420.pkg",
+  "url": "https://installers.privateinternetaccess.com/download/pia-macos-3.7.2-08420.zip",
   "vendor_url": "https://installers.privateinternetaccess.com/download/pia-macos-3.7.2-08420.zip",
   "bundleId": "com.privateinternetaccess.vpn",
   "homepage": "https://www.privateinternetaccess.com/",

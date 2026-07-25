@@ -2,7 +2,7 @@
   "name": "Vellum",
   "description": "Ebook creation software",
   "version": "4.1.4",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/vellum_4.1.4.pkg",
+  "url": "https://180g.s3.amazonaws.com/downloads/Vellum-41400.zip",
   "vendor_url": "https://180g.s3.amazonaws.com/downloads/Vellum-41100.zip",
   "bundleId": "com.180g.Vellum",
   "homepage": "https://vellum.pub/",

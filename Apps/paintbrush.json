@@ -2,7 +2,7 @@
   "name": "Paintbrush",
   "description": "Image editor",
   "version": "2.6.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/paintbrush_2.6.0.pkg",
+  "url": "https://downloads.sourceforge.net/paintbrush/Paintbrush%202.x/Paintbrush%202.6.0/Paintbrush-2.6.0.zip",
   "vendor_url": "https://downloads.sourceforge.net/paintbrush/Paintbrush%202.x/Paintbrush%202.6.0/Paintbrush-2.6.0.zip",
   "bundleId": "com.soggywaffles.paintbrush",
   "homepage": "https://paintbrush.sourceforge.io/",

@@ -2,7 +2,7 @@
   "name": "Mission Control Plus",
   "description": "Manage your windows in Mission Control",
   "version": "1.24",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/mission_control_plus_1.24.pkg",
+  "url": "https://github.com/ronyfadel/MissionControlPlusReleases/releases/download/v1.24/Mission.Control.Plus.tgz",
   "vendor_url": "https://github.com/ronyfadel/MissionControlPlusReleases/releases/download/v1.24/Mission.Control.Plus.tgz",
   "bundleId": "com.nuebling.Mission-Control-Plus",
   "homepage": "https://fadel.io/MissionControlPlus",

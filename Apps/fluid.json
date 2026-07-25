@@ -2,7 +2,7 @@
   "name": "Fluid",
   "description": "Tool to turn a website into a desktop app",
   "version": "2.1.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/fluid_2.1.2.pkg",
+  "url": "https://fluidapp.com/dist/Fluid_2.1.2.zip",
   "vendor_url": "https://fluidapp.com/dist/Fluid_2.1.2.zip",
   "bundleId": "com.fluidapp.Fluid2",
   "homepage": "https://fluidapp.com/",

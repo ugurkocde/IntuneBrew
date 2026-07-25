@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1143-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1150-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -556,23 +556,23 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-25 18:52 UTC*
+*Last checked: 2026-07-25 19:07 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
+| HEY | 1.2.17 | 1.3.3 |
 | Caffeine | 1.6.4 | 1.1.4 |
+| Ollama | 0.9.2 | 0.32.3 |
 | Dash | 8.1.1 | 23.1.7 |
-| Superhuman | 1041.0.24 | 1041.0.25 |
 | Dash | 8.1.1 | 23.1.7 |
-| Rive | 0.8.5273 | 0.8.5275 |
-| WeChat for Mac | 4.1.12.27 | 4.1.12.28 |
-| Pastebot | 2.4.8 | 3.0 |
-| Krisp | 3.14.4 | 3.14.6 |
-| FreeCAD | 1.1.2 | 1.1.3 |
-| Apidog | 2.8.39 | 2.8.40 |
+| Highlight | 1.2.131 | 1.3.282 |
+| Todoist | 9.17.0 | 9.29.1 |
+| Zen Browser | 1.12.3b | 1.21.9b |
 | Caffeine | 1.6.4 | 1.1.4 |
+| Squirrel | 1.0.3 | 1.1.2 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -1096,12 +1096,12 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/helium.png' width='32' height='32'> Helium | 1.0.0 |
 | <img src='Logos/hepta.png' width='32' height='32'> Hepta | 1.100.0 |
 | <img src='Logos/hex_fiend.png' width='32' height='32'> Hex Fiend | 2.18.1 |
-| <img src='Logos/hey.png' width='32' height='32'> HEY | 1.2.17 |
+| <img src='Logos/hey.png' width='32' height='32'> HEY | 1.3.3 |
 | <img src='Logos/heynote.png' width='32' height='32'> Heynote | 2.9.1 |
 | <img src='Logos/hidden_bar.png' width='32' height='32'> Hidden Bar | 1.10 |
 | <img src='Logos/hides.png' width='32' height='32'> Hides | 7.3 |
 | <img src='Logos/hidock.png' width='32' height='32'> HiDock | 1.4 |
-| <img src='Logos/highlight.png' width='32' height='32'> Highlight | 1.2.131 |
+| <img src='Logos/highlight.png' width='32' height='32'> Highlight | 1.3.282 |
 | <img src='Logos/hma_vpn.png' width='32' height='32'> HMA! VPN | latest |
 | <img src='Logos/home_assistant.png' width='32' height='32'> Home Assistant | 2026.7.1 |
 | <img src='Logos/homerow.png' width='32' height='32'> Homerow | 1.5.3 |
@@ -1385,7 +1385,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/oka_unarchiver.png' width='32' height='32'> Oka Unarchiver | 2.1.6 |
 | <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.109.0 |
 | <img src='Logos/okta_verify.png' width='32' height='32'> Okta Verify | 9.67.1 |
-| <img src='Logos/ollama.png' width='32' height='32'> Ollama | 0.9.2 |
+| <img src='Logos/ollama.png' width='32' height='32'> Ollama | 0.32.3 |
 | <img src='Logos/omnidisksweeper.png' width='32' height='32'> OmniDiskSweeper | 1.16 |
 | <img src='Logos/omnifocus.png' width='32' height='32'> OmniFocus | 4.8.12 |
 | <img src='Logos/omnigraffle.png' width='32' height='32'> OmniGraffle | 7.25.3 |
@@ -1654,7 +1654,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/sqlpro_for_sqlite.png' width='32' height='32'> SQLPro for SQLite | 2026.85 |
 | <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2026.87 |
 | <img src='Logos/squash.png' width='32' height='32'> squash | 3.3.0 |
-| <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.0.3 |
+| <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.1.2 |
 | <img src='Logos/ssh_config_editor.png' width='32' height='32'> SSH Config Editor | 2.6.11 |
 | <img src='Logos/standard_notes.png' width='32' height='32'> Standard Notes | 3.201.21 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 10.0.0 |
@@ -1735,7 +1735,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/timer.png' width='32' height='32'> Timer | 9.0.3 |
 | <img src='Logos/timescribe.png' width='32' height='32'> TimeScribe | 1.15.0 |
 | <img src='Logos/timing.png' width='32' height='32'> Timing | 2026.4.1 |
-| <img src='Logos/todoist.png' width='32' height='32'> Todoist | 9.17.0 |
+| <img src='Logos/todoist.png' width='32' height='32'> Todoist | 9.29.1 |
 | <img src='Logos/tofu.png' width='32' height='32'> Tofu | 3.1 |
 | <img src='Logos/tomatobar.png' width='32' height='32'> TomatoBar | 3.6.1 |
 | <img src='Logos/topaz_gigapixel_ai.png' width='32' height='32'> Topaz Gigapixel AI | 8.4.4 |
@@ -1863,7 +1863,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/zappy.png' width='32' height='32'> Zappy | 4.9.9 |
 | <img src='Logos/zed.png' width='32' height='32'> Zed | 1.12.0 |
 | <img src='Logos/zed_attack_proxy.png' width='32' height='32'> Zed Attack Proxy | 2.17.0 |
-| <img src='Logos/zen_browser.png' width='32' height='32'> Zen Browser | 1.12.3b |
+| <img src='Logos/zen_browser.png' width='32' height='32'> Zen Browser | 1.21.9b |
 | ❌ Zenmap | 7.99 |
 | <img src='Logos/zeplin.png' width='32' height='32'> Zeplin | 10.32.0 |
 | <img src='Logos/zettlr.png' width='32' height='32'> Zettlr | 4.6.0 |

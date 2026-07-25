@@ -2,7 +2,7 @@
   "name": "LocationSimulator",
   "description": "Application to spoof your iOS, iPadOS or iPhoneSimulator device location",
   "version": "0.2.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/locationsimulator_0.2.2.pkg",
+  "url": "https://github.com/Schlaubischlump/LocationSimulator/releases/download/v0.2.2/LocationSimulator.app.zip",
   "vendor_url": "https://github.com/Schlaubischlump/LocationSimulator/releases/download/v0.2.2/LocationSimulator.app.zip",
   "bundleId": "com.schlaubi.LocationSimulator",
   "homepage": "https://github.com/Schlaubischlump/LocationSimulator",

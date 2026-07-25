@@ -2,7 +2,7 @@
   "name": "Fission",
   "description": "Audio editor",
   "version": "2.9.4",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/fission_2.9.4.pkg",
+  "url": "https://cdn.rogueamoeba.com/fission/download/Fission.zip",
   "vendor_url": "https://cdn.rogueamoeba.com/fission/download/Fission.zip",
   "bundleId": "com.rogueamoeba.Fission",
   "homepage": "https://rogueamoeba.com/fission/",

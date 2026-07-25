@@ -1,15 +1,16 @@
 {
   "name": "Squirrel",
   "description": "Rime input method engine",
-  "version": "1.0.3",
-  "url": "https://github.com/rime/squirrel/releases/download/1.0.3/Squirrel-1.0.3.pkg",
+  "version": "1.1.2",
+  "url": "https://github.com/rime/squirrel/releases/download/1.1.2/Squirrel-1.1.2.pkg",
   "vendor_url": "https://github.com/rime/squirrel/releases/download/1.0.3/Squirrel-1.0.3.pkg",
   "bundleId": "com.googlecode.rimeime.inputmethod.Squirrel",
   "homepage": "https://rime.im/",
-  "fileName": "Squirrel-1.0.3.pkg",
+  "homebrew_cask": "squirrel-app",
+  "fileName": "Squirrel-1.1.2.pkg",
   "type": "pkg",
-  "previous_version": "1.0.3",
+  "sha": "614746013212937623d5bbab9901e9c43d1ec937aa32307d6b6092a05e308287",
   "category": "Productivity",
   "publisher": "The Rime Project",
-  "homebrew_cask": "squirrel-app"
+  "previous_version": "1.0.3"
 }

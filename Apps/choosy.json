@@ -2,7 +2,7 @@
   "name": "Choosy",
   "description": "Open links in any browser",
   "version": "2.5.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/choosy_2.5.2.pkg",
+  "url": "https://downloads.choosy.app/choosy_2.5.2.zip",
   "vendor_url": "https://downloads.choosy.app/choosy_2.5.2.zip",
   "bundleId": "com.choosyosx.Choosy",
   "homepage": "https://choosy.app/",

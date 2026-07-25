@@ -2,7 +2,7 @@
   "name": "Gitfox",
   "description": "Git client",
   "version": "4.6.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/gitfox_4.6.2.pkg",
+  "url": "https://update.gitfox.app/builds/retail/11797/Gitfox.11797.zip",
   "vendor_url": "https://update.gitfox.app/builds/retail/11032/Gitfox.11032.zip",
   "bundleId": "com.bytieful.Gitfox-retail",
   "homepage": "https://www.gitfox.app/",

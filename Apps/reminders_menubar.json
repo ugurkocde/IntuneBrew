@@ -2,7 +2,7 @@
   "name": "Reminders MenuBar",
   "description": "Simple menu bar app to view and interact with reminders",
   "version": "2.1.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/reminders_menubar_2.1.1.pkg",
+  "url": "https://github.com/DamascenoRafael/reminders-menubar/releases/download/v2.1.1/reminders-menubar.zip",
   "vendor_url": "https://github.com/DamascenoRafael/reminders-menubar/releases/download/v1.25.0/reminders-menubar.zip",
   "bundleId": "br.com.damascenorafael.reminders-menubar",
   "homepage": "https://github.com/DamascenoRafael/reminders-menubar",

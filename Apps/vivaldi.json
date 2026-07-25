@@ -2,7 +2,7 @@
   "name": "Vivaldi",
   "description": "Web browser with built-in email client focusing on customization and control",
   "version": "8.1.4087.58",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/vivaldi_8.1.4087.58.pkg",
+  "url": "https://downloads.vivaldi.com/stable-auto/Vivaldi.8.1.4087.58.universal.tar.xz",
   "vendor_url": "https://downloads.vivaldi.com/stable-auto/Vivaldi.7.9.3970.50.universal.tar.xz",
   "bundleId": "com.vivaldi.Vivaldi",
   "homepage": "https://vivaldi.com/",

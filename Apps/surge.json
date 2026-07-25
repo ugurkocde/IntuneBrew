@@ -2,7 +2,7 @@
   "name": "Surge",
   "description": "Network toolbox",
   "version": "6.7.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/surge_6.7.0.pkg",
+  "url": "https://dl.nssurge.com/mac/v6/Surge-6.7.0-11730-0a67faa98116f98471bc09b946def542.zip",
   "vendor_url": "https://dl.nssurge.com/mac/v6/Surge-6.5.0-10960-4b553c3553fbbe2a57301cdff9ffcf8e.zip",
   "bundleId": "com.nssurge.surge-mac.helper",
   "homepage": "https://nssurge.com/",

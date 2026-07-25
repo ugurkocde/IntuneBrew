@@ -2,7 +2,7 @@
   "name": "Element",
   "description": "Matrix collaboration client",
   "version": "1.12.24",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/element_1.12.24.pkg",
+  "url": "https://packages.element.io/desktop/update/macos/Element-1.12.24-universal-mac.zip",
   "vendor_url": "https://packages.element.io/desktop/update/macos/Element-1.12.15-universal-mac.zip",
   "bundleId": "im.riot.app",
   "homepage": "https://element.io/get-started",

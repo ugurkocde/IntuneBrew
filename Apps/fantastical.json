@@ -2,7 +2,7 @@
   "name": "Fantastical",
   "description": "Calendar software",
   "version": "4.1.17",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/fantastical_4.1.17.pkg",
+  "url": "https://cdn.flexibits.com/Fantastical_4.1.17.zip",
   "vendor_url": "https://cdn.flexibits.com/Fantastical_4.1.11.zip",
   "bundleId": "com.flexibits.fantastical2.mac",
   "homepage": "https://flexibits.com/fantastical",

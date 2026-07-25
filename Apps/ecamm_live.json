@@ -2,7 +2,7 @@
   "name": "Ecamm Live",
   "description": "Live streaming & video production studio",
   "version": "4.5.9",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/ecamm_live_4.5.9.pkg",
+  "url": "https://downloads.ecamm.com/EcammLive.zip",
   "vendor_url": "https://downloads.ecamm.com/EcammLive.zip",
   "bundleId": "com.ecamm.EcammLive",
   "homepage": "https://www.ecamm.com/",

@@ -2,7 +2,7 @@
   "name": "Support App",
   "description": "Menu bar app for user and help desk support",
   "version": "3.0.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/support_app_3.0.3.pkg",
+  "url": "https://github.com/root3nl/SupportApp/releases/download/v3.0.3/Support.3.0.3.zip",
   "vendor_url": "https://github.com/root3nl/SupportApp/releases/download/v3.0.3/Support.3.0.3.zip",
   "bundleId": "nl.root3.support",
   "homepage": "https://github.com/root3nl/SupportApp",

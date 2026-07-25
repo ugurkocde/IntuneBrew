@@ -2,7 +2,7 @@
   "name": "MacPacker",
   "description": "Archive manager",
   "version": "0.18.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/macpacker_0.18.0.pkg",
+  "url": "https://macpacker-releases.s3.amazonaws.com/MacPacker_v0.18.0.zip",
   "vendor_url": "https://macpacker-releases.s3.amazonaws.com/MacPacker_v0.14.1.zip",
   "bundleId": "com.sarensx.MacPacker",
   "homepage": "https://macpacker.app/",

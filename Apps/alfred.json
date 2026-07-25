@@ -2,7 +2,7 @@
   "name": "Alfred",
   "description": "Application launcher and productivity software",
   "version": "5.7.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/alfred_5.7.3.pkg",
+  "url": "https://cachefly.alfredapp.com/Alfred_5.7.3_2320.tar.gz",
   "vendor_url": "https://cachefly.alfredapp.com/Alfred_5.7.3_2320.tar.gz",
   "bundleId": "com.runningwithcrayons.Alfred",
   "homepage": "https://www.alfredapp.com/",
