@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-07-25T19:18:00.375Z",
+  "last_full_scan": "2026-07-25T19:22:22.208Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9328,6 +9328,17 @@
         "github_search"
       ],
       "name": "WinBox"
+    },
+    "multiviewer": {
+      "last_checked": "2026-07-25T19:22:22.095Z",
+      "bundle_id": "io.optimizedapps.srtmultiviewer",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "mac_app_store",
+      "methods_tried": [
+        "mac_app_store"
+      ],
+      "name": "MultiViewer"
     }
   }
 }
