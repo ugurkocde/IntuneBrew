@@ -1374,6 +1374,7 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/vnc-server.json",
     "https://formulae.brew.sh/api/cask/mamp.json",
     "https://formulae.brew.sh/api/cask/dotnet-sdk.json",
+    "https://formulae.brew.sh/api/cask/tailscale-app.json",
 ]
 
 # Custom scraper scripts to run
