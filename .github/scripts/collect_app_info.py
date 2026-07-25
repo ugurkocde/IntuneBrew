@@ -552,7 +552,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/mixxx.json",
     "https://formulae.brew.sh/api/cask/mobirise.json",
     "https://formulae.brew.sh/api/cask/thunderbird.json",
-    "https://formulae.brew.sh/api/cask/multiviewer-for-f1.json",
     "https://formulae.brew.sh/api/cask/nitro-pdf-pro.json",
     "https://formulae.brew.sh/api/cask/nordpass.json",
     "https://formulae.brew.sh/api/cask/novabench.json",
@@ -1353,6 +1352,7 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/mamp.json",
     "https://formulae.brew.sh/api/cask/dotnet-sdk.json",
     "https://formulae.brew.sh/api/cask/tailscale-app.json",
+    "https://formulae.brew.sh/api/cask/multiviewer-for-f1.json",
 ]
 
 # Custom scraper scripts to run

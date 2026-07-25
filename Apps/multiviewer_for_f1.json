@@ -13,5 +13,6 @@
   "publisher": "MultiViewer",
   "homebrew_cask": "multiviewer-for-f1",
   "deprecated": true,
-  "deprecation_reason": "cask removed from Homebrew"
+  "deprecation_reason": "cask removed from Homebrew",
+  "type": "pkg"
 }
