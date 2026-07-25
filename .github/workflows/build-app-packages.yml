@@ -936,6 +936,42 @@ jobs:
             echo "All $total_apps_processed apps processed successfully!" >> $GITHUB_STEP_SUMMARY
           fi
 
+      # The collector rewrites every app's url to the vendor URL, and Process
+      # apps restores the Azure URL only for the apps it packaged. On a scoped
+      # build the unprocessed apps would therefore be committed pointing at
+      # vendor URLs while their sha still describes the Azure package. Revert
+      # everything the scoped build did not process; the nightly full run
+      # refreshes those apps correctly.
+      - name: Revert out-of-scope changes
+        if: steps.scope.outputs.scope == 'partial'
+        env:
+          SCOPE_TOKENS: ${{ steps.scope.outputs.tokens }}
+        run: |
+          reverted=0
+          while IFS= read -r f; do
+            [ -n "$f" ] || continue
+            cask=$(jq -r '.homebrew_cask // empty' "$f" 2>/dev/null || true)
+            if [ -z "$cask" ] || [[ " $SCOPE_TOKENS " != *" $cask "* ]]; then
+              git checkout -- "$f"
+              reverted=$((reverted + 1))
+            fi
+          done < <(git diff --name-only -- 'Apps/*.json')
+
+          while IFS= read -r f; do
+            [ -n "$f" ] || continue
+            cask=$(jq -r '.homebrew_cask // empty' "$f" 2>/dev/null || true)
+            if [ -z "$cask" ] || [[ " $SCOPE_TOKENS " != *" $cask "* ]]; then
+              rm -f "$f"
+              reverted=$((reverted + 1))
+            fi
+          done < <(git ls-files --others --exclude-standard -- 'Apps/*.json')
+
+          # README is regenerated from the collector's full refresh; keep it
+          # consistent with the reverted JSONs rather than a day ahead of them.
+          git checkout -- README.md 2>/dev/null || true
+
+          echo "Reverted $reverted out-of-scope app files"
+
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
