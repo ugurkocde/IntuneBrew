@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1143-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -555,30 +555,24 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-25 07:30 UTC*
+*Last checked: 2026-07-25 18:52 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| Arc | 1.157.0 | 1.157.1 |
 | Caffeine | 1.6.4 | 1.1.4 |
 | Dash | 8.1.1 | 23.1.7 |
+| Superhuman | 1041.0.24 | 1041.0.25 |
 | Dash | 8.1.1 | 23.1.7 |
-| Google Antigravity | 2.3.1 | 2.4.2 |
-| Dia | 1.41.0 | 1.41.1 |
-| Yaak | 2026.4.0 | 2026.5.0 |
-| Miro | 0.11.162 | 0.11.164 |
-| CapCut | 3.3.0.1159 | 9.1.0.4369 |
-| OBS | 32.2.0 | 32.2.1 |
-| FreeCAD | 1.1.1 | 1.1.2 |
-| Google Ads Editor | 2.12 | 2.13 |
-| ClickUp | 3.5.230 | 3.5.262 |
-| ocenaudio | 3.20.0 | 3.20.1 |
+| Rive | 0.8.5273 | 0.8.5275 |
+| WeChat for Mac | 4.1.12.27 | 4.1.12.28 |
+| Pastebot | 2.4.8 | 3.0 |
+| Krisp | 3.14.4 | 3.14.6 |
+| FreeCAD | 1.1.2 | 1.1.3 |
+| Apidog | 2.8.39 | 2.8.40 |
 | Caffeine | 1.6.4 | 1.1.4 |
-| Granola | 7.441.4 | 7.441.6 |
-| Claude Code | 2.1.211 | 2.1.212 |
-| Tailscale | 1.84.1 | 1.98.9 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -670,7 +664,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/anydo.png' width='32' height='32'> Any.do | 5.0.68 |
 | <img src='Logos/anydesk.png' width='32' height='32'> AnyDesk | 9.7.1 |
 | <img src='Logos/anytype.png' width='32' height='32'> Anytype | 0.56.0 |
-| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.8.39 |
+| <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.8.40 |
 | <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.8.39 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.2 |
 | <img src='Logos/appflowy.png' width='32' height='32'> AppFlowy | 0.13.0 |
@@ -1037,7 +1031,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/franz.png' width='32' height='32'> Franz | 6.5.1 |
 | <img src='Logos/free_download_manager.png' width='32' height='32'> Free Download Manager | 6.34.3 |
 | <img src='Logos/free_ruler.png' width='32' height='32'> Free Ruler | 2.0.19 |
-| <img src='Logos/freecad.png' width='32' height='32'> FreeCAD | 1.1.2 |
+| <img src='Logos/freecad.png' width='32' height='32'> FreeCAD | 1.1.3 |
 | <img src='Logos/freefilesync.png' width='32' height='32'> FreeFileSync | 14.10 |
 | <img src='Logos/freelens.png' width='32' height='32'> Freelens | 1.10.3 |
 | <img src='Logos/freemacsoft_appcleaner.png' width='32' height='32'> FreeMacSoft AppCleaner | 3.6.8 |
@@ -1189,7 +1183,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/knockknock.png' width='32' height='32'> KnockKnock | 4.0.3 |
 | <img src='Logos/kobo.png' width='32' height='32'> Kobo | latest |
 | <img src='Logos/kodi.png' width='32' height='32'> Kodi | 21.3-Omega |
-| <img src='Logos/krisp.png' width='32' height='32'> Krisp | 3.14.4 |
+| <img src='Logos/krisp.png' width='32' height='32'> Krisp | 3.14.6 |
 | <img src='Logos/krita.png' width='32' height='32'> Krita | 5.3.2.1 |
 | <img src='Logos/langgraph_studio.png' width='32' height='32'> LangGraph Studio | 0.0.37 |
 | <img src='Logos/lapce.png' width='32' height='32'> Lapce | 0.4.6 |
@@ -1440,7 +1434,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/parallels_desktop.png' width='32' height='32'> Parallels Desktop | 26.4.0-57513 |
 | <img src='Logos/parsec.png' width='32' height='32'> Parsec | 150-104a |
 | <img src='Logos/paste.png' width='32' height='32'> Paste | 6.6.3 |
-| <img src='Logos/pastebot.png' width='32' height='32'> Pastebot | 2.4.8 |
+| <img src='Logos/pastebot.png' width='32' height='32'> Pastebot | 3.0 |
 | <img src='Logos/path_finder.png' width='32' height='32'> Path Finder | 26.1.7 |
 | <img src='Logos/pdf_expert.png' width='32' height='32'> PDF Expert | 3.11.4 |
 | <img src='Logos/pdf_pals.png' width='32' height='32'> PDF Pals | 1.9.0 |
@@ -1553,7 +1547,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/rhinoceros.png' width='32' height='32'> Rhinoceros | 8.20.25157.13002 |
 | <img src='Logos/rightfont.png' width='32' height='32'> RightFont | 10.1 |
 | <img src='Logos/ringcentral.png' width='32' height='32'> RingCentral | 26.2.30 |
-| <img src='Logos/rive.png' width='32' height='32'> Rive | 0.8.5273 |
+| <img src='Logos/rive.png' width='32' height='32'> Rive | 0.8.5275 |
 | <img src='Logos/riverside_studio.png' width='32' height='32'> Riverside Studio | 1.27.2 |
 | <img src='Logos/rize.png' width='32' height='32'> Rize | 3.0.15 |
 | <img src='Logos/roam_research.png' width='32' height='32'> Roam Research | 0.0.38 |
@@ -1682,7 +1676,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/sunsama.png' width='32' height='32'> Sunsama | 3.4.11 |
 | <img src='Logos/supercollider.png' width='32' height='32'> SuperCollider | 3.14.1 |
 | <img src='Logos/superduper.png' width='32' height='32'> SuperDuper! | 3.11 |
-| <img src='Logos/superhuman.png' width='32' height='32'> Superhuman | 1041.0.24 |
+| <img src='Logos/superhuman.png' width='32' height='32'> Superhuman | 1041.0.25 |
 | <img src='Logos/superkey.png' width='32' height='32'> Superkey | 1.66 |
 | <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.56.3 |
 | <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 2.16.6 |
@@ -1822,7 +1816,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/webex.png' width='32' height='32'> Webex | 46.7.0.35472 |
 | <img src='Logos/webex_teams.png' width='32' height='32'> Webex Teams | 45.6.1.32593 |
 | <img src='Logos/webstorm.png' width='32' height='32'> WebStorm | 2026.2.0.1 |
-| <img src='Logos/wechat_for_mac.png' width='32' height='32'> WeChat for Mac | 4.1.12.27 |
+| <img src='Logos/wechat_for_mac.png' width='32' height='32'> WeChat for Mac | 4.1.12.28 |
 | <img src='Logos/weektodo.png' width='32' height='32'> WeekToDo | 2.2.0 |
 | <img src='Logos/wezterm.png' width='32' height='32'> WezTerm | 20240203-110809 |
 | <img src='Logos/whatroute.png' width='32' height='32'> WhatRoute | 2.8.0 |

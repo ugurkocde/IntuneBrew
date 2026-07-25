@@ -1,14 +1,14 @@
 {
   "name": "FreeCAD",
   "description": "3D parametric modeller",
-  "version": "1.1.2",
-  "url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.2/FreeCAD_1.1.2-macOS-arm64-py311.dmg",
+  "version": "1.1.3",
+  "url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.3/FreeCAD_1.1.3-macOS-arm64-py311.dmg",
   "vendor_url": "https://github.com/FreeCAD/FreeCAD/releases/download/1.1.0/FreeCAD_1.1.0-macOS-arm64-py311.dmg",
   "bundleId": "org.freecad.FreeCAD",
   "homepage": "https://www.freecad.org/",
   "homebrew_cask": "freecad",
-  "fileName": "FreeCAD_1.1.2-macOS-arm64-py311.dmg",
-  "sha": "eb99a27bf4c84f2d40b8bff0ff3a7059ea597234af9d0b7c3ac1a391d8f5947a",
+  "fileName": "FreeCAD_1.1.3-macOS-arm64-py311.dmg",
+  "sha": "f5c0ece7cd7c932466d6effadc0fc6e179b0538a9d9a6a77a6769eae3af2667c",
   "changelog": "https://github.com/FreeCAD/FreeCAD/releases",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:12:37Z",
@@ -22,5 +22,5 @@
   },
   "category": "Design",
   "publisher": "FreeCAD",
-  "previous_version": "1.1.1"
+  "previous_version": "1.1.2"
 }

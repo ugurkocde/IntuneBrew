@@ -1,14 +1,14 @@
 {
   "name": "Pastebot",
   "description": "Workflow application to improve productivity",
-  "version": "2.4.8",
-  "url": "https://tapbots.net/pastebot2/Pastebot.dmg",
+  "version": "3.0",
+  "url": "https://tapbots.net/pastebot3/Pastebot.30000.dmg",
   "vendor_url": "https://tapbots.net/pastebot2/Pastebot.dmg",
   "bundleId": "com.tapbots.Pastebot2Mac",
   "homepage": "https://tapbots.com/pastebot/",
   "homebrew_cask": "pastebot",
-  "fileName": "Pastebot.dmg",
-  "sha": "3cd01fee94994cebce198ea81e48dce9b1aef86986836d17fc86f91fa9f047cc",
+  "fileName": "Pastebot.30000.dmg",
+  "sha": "22fd4d29482c0c04012ecbbdd918ca60b372d79dd7caabb2eb4671e9ddd69862",
   "category": "Productivity",
   "publisher": "Tapbots",
   "previous_version": "2.4.8"
