@@ -49,13 +49,5 @@ elif [ -f "$HOME/Library/Group Containers/22MMUN2RN5.lv" ]; then
     rm -f "$HOME/Library/Group Containers/22MMUN2RN5.lv" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Group Containers/22MMUN2RN5.ve
-echo "Removing $HOME/Library/Group Containers/22MMUN2RN5.ve..."
-if [ -d "$HOME/Library/Group Containers/22MMUN2RN5.ve" ]; then
-    rm -rf "$HOME/Library/Group Containers/22MMUN2RN5.ve" 2>/dev/null || true
-elif [ -f "$HOME/Library/Group Containers/22MMUN2RN5.ve" ]; then
-    rm -f "$HOME/Library/Group Containers/22MMUN2RN5.ve" 2>/dev/null || true
-fi
-
 echo "Uninstallation complete!"
 exit 0
