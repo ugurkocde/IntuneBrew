@@ -646,6 +646,8 @@
     "multi": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/multi.json",
     "multipass": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/multipass.json",
     "multitouch": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/multitouch.json",
+    "multiviewer": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/multiviewer.json",
+    "multiviewer_for_f1": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/multiviewer_for_f1.json",
     "mural": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/mural.json",
     "murus_firewall": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/murus_firewall.json",
     "museeks": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/museeks.json",
