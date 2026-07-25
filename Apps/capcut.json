@@ -1,14 +1,14 @@
 {
   "name": "CapCut",
   "description": "Video editing and image design platform",
-  "version": "3.3.0.1159",
-  "url": "https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/packages/CapCut_3_3_0_1159_capcutpc_0_creatortool.dmg",
+  "version": "9.1.0.4369",
+  "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_1_0_4369_capcutpc_0_creatortool.dmg",
   "vendor_url": "https://lf16-capcut.faceulv.com/obj/capcutpc-packages-us/packages/CapCut_3_3_0_1159_capcutpc_0_creatortool.dmg",
   "bundleId": "com.lemon.lvoverseas",
   "homepage": "https://www.capcut.com/",
   "homebrew_cask": "capcut",
-  "fileName": "CapCut_3_3_0_1159_capcutpc_0_creatortool.dmg",
-  "sha": "26c253719a61eae679a2923121a83d0a39b98d920a5c57f3e00d66224986c867",
+  "fileName": "CapCut_9_1_0_4369_capcutpc_0_creatortool.dmg",
+  "sha": "95a8b1cc9ecbcbe368b3e788c2acfb911a8969eb15936e9dc6cdd9d7eb720148",
   "changelog": "https://www.capcut.com/resource/download-capcut-for-mac",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:25:40Z",

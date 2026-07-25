@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "71399cc32d437dac524742c5d09795801f1c65a043b723cf34c3f1ff4c876333",
   "changelog": "https://www.cursor.com/changelog",
-  "previous_version": "3.12.30",
+  "previous_version": "3.13.10",
   "qa_info": {
     "qa_timestamp": "2025-05-14T06:44:56Z",
     "qa_result": "Installation successful and verified",

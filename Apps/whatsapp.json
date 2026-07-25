@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "18c0a1ac8874a7b527d73b604bd6edf4d677a4e48095ab2b70398399841fdc8d",
   "changelog": "https://web.whatsapp.com/desktop/windows/release-notes",
-  "previous_version": "26.29.20",
+  "previous_version": "26.29.22",
   "category": "Communication",
   "publisher": "WhatsApp LLC",
   "homebrew_cask": "whatsapp"

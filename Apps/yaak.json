@@ -1,14 +1,14 @@
 {
   "name": "Yaak",
   "description": "REST, GraphQL and gRPC client",
-  "version": "2026.4.0",
-  "url": "https://github.com/mountain-loop/yaak/releases/download/v2026.4.0/Yaak_2026.4.0_aarch64.dmg",
+  "version": "2026.5.0",
+  "url": "https://github.com/mountain-loop/yaak/releases/download/v2026.5.0/Yaak_2026.5.0_aarch64.dmg",
   "vendor_url": "https://github.com/mountain-loop/yaak/releases/download/v2026.3.1/Yaak_2026.3.1_aarch64.dmg",
   "bundleId": "app.yaak.desktop",
   "homepage": "https://yaak.app/",
   "homebrew_cask": "yaak",
-  "fileName": "Yaak_2026.4.0_aarch64.dmg",
-  "sha": "d2a05e7782919589564284868312bf040a4cb3d437aa78cb83258985fe65bb02",
+  "fileName": "Yaak_2026.5.0_aarch64.dmg",
+  "sha": "c191f08eb7796475a6fadbe22b0b38bffb2fc211aa5a591d4061d7a0dc4e427a",
   "category": "Developer Tools",
   "publisher": "Yaak",
   "previous_version": "2026.4.0"

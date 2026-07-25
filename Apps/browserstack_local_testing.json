@@ -11,6 +11,6 @@
   "sha": "252270d581c761f9e8075f4dcf9a66d27051dbac4415583153b3dc5c7fd53ff3",
   "category": "Developer Tools",
   "publisher": "BrowserStack",
-  "previous_version": "3.7.7",
+  "previous_version": "3.7.8",
   "homebrew_cask": "browserstacklocal"
 }
