@@ -2,7 +2,7 @@
   "name": "f.lux",
   "description": "Screen colour temperature controller",
   "version": "42.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/flux_42.2.pkg",
+  "url": "https://justgetflux.com/mac/Flux42.2.zip",
   "vendor_url": "https://justgetflux.com/mac/Flux42.2.zip",
   "bundleId": "org.herf.Flux",
   "homepage": "https://justgetflux.com/",

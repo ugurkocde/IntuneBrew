@@ -2,7 +2,7 @@
   "name": "Ollama",
   "description": "Get up and running with large language models locally",
   "version": "0.32.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/ollama_0.32.3.pkg",
+  "url": "https://github.com/ollama/ollama/releases/download/v0.32.3/Ollama-darwin.zip",
   "vendor_url": "https://github.com/ollama/ollama/releases/download/v0.20.7/Ollama-darwin.zip",
   "bundleId": "com.electron.ollama",
   "homepage": "https://ollama.ai/",
@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "3956fc6ac7d7cce7b9a3a8bb2acb0f7d343f890c10704b55436f68cca684b44b",
   "changelog": "https://github.com/ollama/ollama/releases",
-  "previous_version": "0.9.2",
+  "previous_version": "0.32.3",
   "category": "Developer Tools",
   "publisher": "Ollama",
   "homebrew_cask": "ollama-app"
