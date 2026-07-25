@@ -12,7 +12,5 @@
   "previous_version": "1.12.1b",
   "category": "Browsers",
   "publisher": "Unknown",
-  "homebrew_cask": "zen-browser",
-  "deprecated": true,
-  "deprecation_reason": "cask removed from Homebrew"
+  "homebrew_cask": "zen"
 }

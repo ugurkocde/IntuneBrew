@@ -1,0 +1,123 @@
+name: Reclassify App Packaging
+
+on:
+  issue_comment:
+    types: [created]
+
+# Queue moves so two comments cannot rewrite the list at once
+concurrency:
+  group: reclassify-app
+  cancel-in-progress: false
+
+jobs:
+  reclassify:
+    if: |
+      github.event.issue.pull_request == null &&
+      startsWith(github.event.comment.body, '/reclassify')
+    runs-on: ubuntu-latest
+
+    permissions:
+      contents: write
+      issues: write
+
+    steps:
+      - name: Check user permission
+        uses: actions/github-script@v7
+        with:
+          script: |
+            const commenter = context.payload.comment.user.login;
+            if (commenter.toLowerCase() !== context.repo.owner.toLowerCase()) {
+              core.setFailed(`Only the repository owner can reclassify apps. User: ${commenter}`);
+            }
+
+      - name: Add reaction
+        uses: actions/github-script@v7
+        with:
+          script: |
+            await github.rest.reactions.createForIssueComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              comment_id: context.payload.comment.id,
+              content: 'eyes'
+            });
+
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.x"
+
+      # Parsed in an env var rather than inline, so comment text cannot be
+      # interpolated into the shell.
+      - name: Parse command
+        id: parse
+        env:
+          COMMENT_BODY: ${{ github.event.comment.body }}
+        run: |
+          read -r _ cask list _ <<< "$(printf '%s' "$COMMENT_BODY" | head -1)"
+          echo "cask=${cask//[^a-zA-Z0-9@._-]/}" >> "$GITHUB_OUTPUT"
+          echo "list=${list//[^a-z_]/}" >> "$GITHUB_OUTPUT"
+
+      - name: Reclassify
+        id: move
+        env:
+          CASK_NAME: ${{ steps.parse.outputs.cask }}
+          TARGET_LIST: ${{ steps.parse.outputs.list }}
+        run: python .github/scripts/reclassify_app.py
+
+      - name: Commit change
+        if: steps.move.outputs.moved == 'true'
+        env:
+          CASK: ${{ steps.move.outputs.cask }}
+          TO_LIST: ${{ steps.move.outputs.to_list }}
+        run: |
+          git config --local user.email "action@github.com"
+          git config --local user.name "GitHub Action"
+          git add .github/scripts/collect_app_info.py Apps/
+          if git diff --staged --quiet; then
+            echo "Nothing to commit"
+            exit 0
+          fi
+          git commit -m "Reclassify $CASK as $TO_LIST"
+          git push
+
+      - name: Report result
+        if: always()
+        uses: actions/github-script@v7
+        env:
+          MOVED: ${{ steps.move.outputs.moved }}
+          REASON: ${{ steps.move.outputs.reason }}
+          CASK: ${{ steps.move.outputs.cask }}
+          FROM_LIST: ${{ steps.move.outputs.from_list }}
+          TO_LIST: ${{ steps.move.outputs.to_list }}
+          NEW_TYPE: ${{ steps.move.outputs.new_type }}
+          APP_FILE: ${{ steps.move.outputs.app_file }}
+        with:
+          script: |
+            const e = process.env;
+            let body;
+
+            if (e.MOVED === 'true') {
+              body = `## Reclassified\n\n`;
+              body += `\`${e.CASK}\` moved from \`${e.FROM_LIST}\` to \`${e.TO_LIST}\`.\n\n`;
+              body += `| Field | Value |\n|-------|-------|\n`;
+              body += `| New type | \`${e.NEW_TYPE}\` |\n`;
+              if (e.APP_FILE) body += `| Catalog file | \`${e.APP_FILE}\` |\n`;
+              body += `\nThe next build will repackage it with the new type.`;
+            } else {
+              body = `## Not reclassified\n\n${e.REASON || 'Unknown error'}\n\n`;
+              body += `Usage: \`/reclassify <cask> <list>\` where list is one of `;
+              body += `\`app_urls\`, \`homebrew_cask_urls\`, \`pkg_in_dmg_urls\`, `;
+              body += `\`pkg_in_pkg_urls\`, \`pkg_urls\`.`;
+            }
+
+            await github.rest.issues.createComment({
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              issue_number: context.issue.number,
+              body: body
+            });

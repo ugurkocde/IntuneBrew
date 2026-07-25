@@ -23,7 +23,5 @@
   },
   "category": "Utilities",
   "publisher": "f.lux Software LLC",
-  "homebrew_cask": "flux",
-  "deprecated": true,
-  "deprecation_reason": "cask removed from Homebrew"
+  "homebrew_cask": "flux-app"
 }

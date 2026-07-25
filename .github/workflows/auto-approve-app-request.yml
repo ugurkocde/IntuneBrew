@@ -125,10 +125,10 @@ jobs:
 
             if (apps.some(a => a.type === 'pkg')) {
               body += `\n<details>\n<summary>Maintainer note for PKG apps</summary>\n\n`;
-              body += `If the build fails for a PKG app it may be PKG-in-PKG. Move it from `;
-              body += `\`pkg_urls\` to \`pkg_in_pkg_urls\` in \`collect_app_info.py\`. This cannot be `;
-              body += `detected from the package alone, since ordinary distribution packages `;
-              body += `contain component packages too.\n\n</details>\n`;
+              body += `If this app turns out to be PKG-in-PKG, comment `;
+              body += `\`/reclassify <cask> pkg_in_pkg_urls\` and it will be moved and retyped `;
+              body += `automatically. It cannot be detected up front, since ordinary `;
+              body += `distribution packages contain component packages too.\n\n</details>\n`;
             }
 
             body += `\n### What happens next\n\n`;

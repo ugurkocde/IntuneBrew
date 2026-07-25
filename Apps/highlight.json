@@ -11,7 +11,5 @@
   "previous_version": "1.2.131",
   "category": "Productivity",
   "publisher": "Highlight AI",
-  "homebrew_cask": "highlight",
-  "deprecated": true,
-  "deprecation_reason": "cask removed from Homebrew"
+  "homebrew_cask": "highlight-ai"
 }
