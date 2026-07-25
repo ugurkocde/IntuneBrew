@@ -8,5 +8,7 @@
   "homepage": "https://multiviewer.app/",
   "homebrew_cask": "multiviewer",
   "fileName": "MultiViewer.for.F1-2.8.2-arm64.dmg",
-  "sha": "d8b133857da75ffa3759771fafc54a28855e7b448fe85a81f2864314cee9d46f"
+  "sha": "d8b133857da75ffa3759771fafc54a28855e7b448fe85a81f2864314cee9d46f",
+  "category": "Media",
+  "publisher": "MultiViewer"
 }
