@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1152-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -560,15 +560,19 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-07-25 19:59 UTC*
+*Last checked: 2026-07-26 00:49 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
 | Caffeine | 1.6.4 | 1.1.4 |
+| Ollama | 0.32.3 | 0.32.4 |
 | Dash | 8.1.1 | 23.1.7 |
+| Hepta | 1.100.0 | 1.100.1 |
 | Dash | 8.1.1 | 23.1.7 |
+| Franz | 6.5.1 | 6.5.2 |
 | Caffeine | 1.6.4 | 1.1.4 |
 ## ✨ Features
 
@@ -1025,7 +1029,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/forklift.png' width='32' height='32'> ForkLift | 4.7.2 |
 | <img src='Logos/foxit_pdf_editor.png' width='32' height='32'> Foxit PDF Editor | 14.0.5.69339 |
 | <img src='Logos/framer.png' width='32' height='32'> Framer | 2026.24.3 |
-| <img src='Logos/franz.png' width='32' height='32'> Franz | 6.5.1 |
+| <img src='Logos/franz.png' width='32' height='32'> Franz | 6.5.2 |
 | <img src='Logos/free_download_manager.png' width='32' height='32'> Free Download Manager | 6.34.3 |
 | <img src='Logos/free_ruler.png' width='32' height='32'> Free Ruler | 2.0.19 |
 | <img src='Logos/freecad.png' width='32' height='32'> FreeCAD | 1.1.3 |
@@ -1091,7 +1095,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/hazeover.png' width='32' height='32'> HazeOver | 1.9.7 |
 | <img src='Logos/headlamp.png' width='32' height='32'> Headlamp | 0.43.0 |
 | <img src='Logos/helium.png' width='32' height='32'> Helium | 1.0.0 |
-| <img src='Logos/hepta.png' width='32' height='32'> Hepta | 1.100.0 |
+| <img src='Logos/hepta.png' width='32' height='32'> Hepta | 1.100.1 |
 | <img src='Logos/hex_fiend.png' width='32' height='32'> Hex Fiend | 2.18.1 |
 | <img src='Logos/hey.png' width='32' height='32'> HEY | 1.3.3 |
 | <img src='Logos/heynote.png' width='32' height='32'> Heynote | 2.9.1 |
@@ -1383,7 +1387,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/oka_unarchiver.png' width='32' height='32'> Oka Unarchiver | 2.1.6 |
 | <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.109.0 |
 | <img src='Logos/okta_verify.png' width='32' height='32'> Okta Verify | 9.67.1 |
-| <img src='Logos/ollama.png' width='32' height='32'> Ollama | 0.32.3 |
+| <img src='Logos/ollama.png' width='32' height='32'> Ollama | 0.32.4 |
 | <img src='Logos/omnidisksweeper.png' width='32' height='32'> OmniDiskSweeper | 1.16 |
 | <img src='Logos/omnifocus.png' width='32' height='32'> OmniFocus | 4.8.12 |
 | <img src='Logos/omnigraffle.png' width='32' height='32'> OmniGraffle | 7.25.3 |
