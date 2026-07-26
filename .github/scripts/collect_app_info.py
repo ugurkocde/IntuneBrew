@@ -1262,6 +1262,7 @@ pkg_in_pkg_urls = [
     "https://formulae.brew.sh/api/cask/philips-hue-sync.json",
     "https://formulae.brew.sh/api/cask/nordvpn.json",
     "https://formulae.brew.sh/api/cask/gyazo.json"
+    "https://formulae.brew.sh/api/cask/tailscale-app.json",
 ]
 
 # PKG
@@ -1351,7 +1352,6 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/vnc-server.json",
     "https://formulae.brew.sh/api/cask/mamp.json",
     "https://formulae.brew.sh/api/cask/dotnet-sdk.json",
-    "https://formulae.brew.sh/api/cask/tailscale-app.json",
 ]
 
 # Custom scraper scripts to run
