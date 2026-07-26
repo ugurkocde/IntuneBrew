@@ -103,6 +103,12 @@ Version 0.3.7: Fix Parse Errors
  Required for accounts that do not have access to the Default scope tag.
  Example: IntuneBrew -Upload firefox -ScopeTagIds "1","2"
 
+.PARAMETER NonInteractive
+ Runs the script without ever prompting for input. Any condition that would normally ask a question is treated as the safe answer.
+ For hash problems (missing SHA256 hash in the app manifest or a hash mismatch) this means the app fails instead of continuing unverified.
+ Use this for scheduled tasks, CI pipelines and other unattended runs so the script fails fast instead of waiting forever on a prompt.
+ Example: IntuneBrew -UpdateAll -ConfigFile clientSecret.json -NonInteractive
+
 #>
 param(
     [Parameter(Mandatory = $false)]
@@ -151,7 +157,10 @@ param(
     [string]$LocalJsonDirectory,
 
     [Parameter(Mandatory = $false)]
-    [string[]]$ScopeTagIds
+    [string[]]$ScopeTagIds,
+
+    [Parameter(Mandatory = $false)]
+    [switch]$NonInteractive
 )
 
 Write-Host "
@@ -1661,7 +1670,14 @@ function Get-AppFile($url, $fileName, $expectedHash) {
         Write-Host "   • The file may have been modified or corrupted" -ForegroundColor Yellow
         Write-Host "   • This typically happens with direct PKG downloads" -ForegroundColor Gray
         
-        $continueWithoutHash = Read-Host "`nDo you want to continue without hash verification? (y/n)"
+        if ($NonInteractive) {
+            Write-Host "`nNonInteractive mode is enabled, so no prompt is shown and the safe answer is used." -ForegroundColor Red
+            Write-Host "   • Failing this app because no SHA256 hash is available to verify: $sanitizedFileName" -ForegroundColor Red
+            $continueWithoutHash = 'n'
+        }
+        else {
+            $continueWithoutHash = Read-Host "`nDo you want to continue without hash verification? (y/n)"
+        }
         if ($continueWithoutHash.ToLower() -eq 'y') {
             Write-Host "`n⚠️ Proceeding without hash verification - USE AT YOUR OWN RISK" -ForegroundColor Yellow
             return $outputPath
@@ -1699,7 +1715,14 @@ function Get-AppFile($url, $fileName, $expectedHash) {
         Write-Host "   • The file was updated on the server but the hash wasn't updated in the JSON"
         Write-Host "   • You're downloading a different architecture version (ARM64 vs Intel)"
         
-        $continueAnyway = Read-Host "`nDo you want to continue anyway? (y/n)"
+        if ($NonInteractive) {
+            Write-Host "`nNonInteractive mode is enabled, so no prompt is shown and the safe answer is used." -ForegroundColor Red
+            Write-Host "   • Failing this app because the SHA256 hash does not match the expected value: $sanitizedFileName" -ForegroundColor Red
+            $continueAnyway = 'n'
+        }
+        else {
+            $continueAnyway = Read-Host "`nDo you want to continue anyway? (y/n)"
+        }
         if ($continueAnyway.ToLower() -eq 'y') {
             Write-Host "`n⚠️ Proceeding with unverified file - USE AT YOUR OWN RISK" -ForegroundColor Yellow
             return $outputPath
