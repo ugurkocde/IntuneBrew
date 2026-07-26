@@ -1364,24 +1364,51 @@ custom_scrapers = [
     ".github/scripts/scrapers/wazuh_agent.sh"
 ]
 
+# 30s connect, 120s between reads: a hung vendor server must not stall the nightly run
+DOWNLOAD_TIMEOUT = (30, 120)
+# Runaway guard only; no catalog artifact comes close to this size
+MAX_DOWNLOAD_BYTES = 10 * 1024 * 1024 * 1024
+# No DMG, PKG (xar), ZIP or tarball can start with these bytes
+HTML_PREFIXES = (b"<!doctype", b"<html")
+
 def calculate_file_hash(url):
     """Download a file and calculate its SHA256 hash."""
     print(f"📥 Downloading file from {url} to calculate hash...")
-    
+
     # Create a temporary file
     with tempfile.NamedTemporaryFile(delete=False) as temp_file:
         try:
             # Download the file in chunks
-            response = requests.get(url, stream=True)
+            response = requests.get(url, stream=True, timeout=DOWNLOAD_TIMEOUT)
             response.raise_for_status()
-            
+
             # Write the file in chunks
+            bytes_written = 0
+            first_chunk = True
             for chunk in response.iter_content(chunk_size=8192):
-                if chunk:
-                    temp_file.write(chunk)
-            
+                if not chunk:
+                    continue
+
+                if first_chunk:
+                    first_chunk = False
+                    prefix = chunk[:64].lstrip().lower()
+                    if prefix.startswith(HTML_PREFIXES):
+                        print(f"Refusing to hash HTML page served as a binary: {url}")
+                        return None
+
+                bytes_written += len(chunk)
+                if bytes_written > MAX_DOWNLOAD_BYTES:
+                    print(f"Download exceeded size cap of {MAX_DOWNLOAD_BYTES} bytes, aborting: {url}")
+                    return None
+
+                temp_file.write(chunk)
+
             temp_file.flush()
-            
+
+            if bytes_written == 0:
+                print(f"Empty response body, refusing to hash: {url}")
+                return None
+
             # Calculate SHA256 hash
             sha256_hash = hashlib.sha256()
             with open(temp_file.name, 'rb') as f:

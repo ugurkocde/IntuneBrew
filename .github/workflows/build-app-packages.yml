@@ -377,7 +377,7 @@ jobs:
               # Check if URL is a ZIP file
               if [[ "$url" == *".zip" ]]; then
                 echo "URL is a ZIP file, downloading and extracting first..."
-                curl -L -o "${download_path}.zip" "$url"
+                curl -f -L -o "${download_path}.zip" "$url"
                 if [ $? -ne 0 ]; then
                   echo "Failed to download ZIP file"
                   FAILED_APPS+=("$app_name")
@@ -406,7 +406,7 @@ jobs:
                 rm -rf "$zip_extract_dir" "${download_path}.zip"
               else
                 # Direct PKG download
-                curl -L -o "$outer_pkg_path" "$url"
+                curl -f -L -o "$outer_pkg_path" "$url"
               fi
 
               if [ $? -eq 0 ] && [ -f "$outer_pkg_path" ]; then
@@ -538,7 +538,7 @@ jobs:
               download_path="$HOME/Desktop/${app_name}"
               
               # Download DMG
-              curl -L -o "${download_path}.dmg" "$url"
+              curl -f -L -o "${download_path}.dmg" "$url"
               if [ $? -eq 0 ]; then
                 echo "✅ DMG download successful"
                 ls -lh "${download_path}.dmg"
@@ -653,7 +653,7 @@ jobs:
               download_path="$HOME/Desktop/${app_name}"
               if [[ "$url" == *".zip" ]]; then
                 # Download file first
-                if ! curl -L -o "${download_path}.download" "$url"; then
+                if ! curl -f -L -o "${download_path}.download" "$url"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download from $url")
@@ -725,7 +725,7 @@ jobs:
                 fi
               elif [[ "$url" == *".tar.xz" ]]; then
                 echo "📦 Processing tar.xz archive for $app_name..."
-                if ! curl -L -o "${download_path}.tar.xz" "$url"; then
+                if ! curl -f -L -o "${download_path}.tar.xz" "$url"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download tar.xz from $url")
@@ -744,7 +744,7 @@ jobs:
               elif [[ "$url" == *".tar.bz2" ]] || [[ "$url" == *".tbz" ]]; then
                 echo "📦 Processing tar.bz2/tbz archive for $app_name..."
                 if [[ "$url" == *".tar.bz2" ]]; then
-                  if ! curl -L -o "${download_path}.tar.bz2" "$url"; then
+                  if ! curl -f -L -o "${download_path}.tar.bz2" "$url"; then
                     echo "❌ Failed to download $app_name from $url"
                     FAILED_APPS+=("$app_name")
                     ERROR_LOG+=("$app_name: Failed to download tar.bz2 from $url")
@@ -752,7 +752,7 @@ jobs:
                   fi
                   archive_path="${download_path}.tar.bz2"
                 else
-                  if ! curl -L -o "${download_path}.tbz" "$url"; then
+                  if ! curl -f -L -o "${download_path}.tbz" "$url"; then
                     echo "❌ Failed to download $app_name from $url"
                     FAILED_APPS+=("$app_name")
                     ERROR_LOG+=("$app_name: Failed to download tbz from $url")
@@ -797,7 +797,7 @@ jobs:
                 ls -R "${app_name}_extracted"
               elif [[ "$url" == *".tar.gz" ]]; then
                 echo "📦 Processing tar.gz archive for $app_name..."
-                if ! curl -L -o "${download_path}.tar.gz" "$url"; then
+                if ! curl -f -L -o "${download_path}.tar.gz" "$url"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download tar.gz from $url")
@@ -820,7 +820,7 @@ jobs:
                 ls -R "${app_name}_extracted"
               else
                 # Download file first and detect type
-                if ! curl -L -o "${download_path}.download" "$url"; then
+                if ! curl -f -L -o "${download_path}.download" "$url"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download from $url")
