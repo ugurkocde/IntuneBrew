@@ -586,6 +586,8 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 ## 🚀 Getting Started
 
+> **Architecture:** IntuneBrew targets Apple silicon (arm64) Macs. Download URLs come from each Homebrew cask's default definition, which is the Apple silicon build; where a vendor ships a universal binary, that is what you get. Intel-specific builds are not selected, so deploy to Intel devices only after verifying the specific app yourself.
+
 ### 📱 Supported Applications
 
 | Application | Latest Version |
