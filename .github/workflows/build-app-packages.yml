@@ -216,6 +216,67 @@ jobs:
           AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
         run: |
           WORKSPACE_DIR=$(pwd)
+
+          # bundleId drives Intune app detection, so it is read back from the
+          # artifact that was actually built instead of trusting the cask
+          # heuristic. The helpers print the id on stdout and every diagnostic
+          # on stderr, and they always exit 0: bundle id verification must never
+          # fail an app, packaging is what counts.
+          extract_bundle_id_from_plist() {
+            local plist="$1"
+            local bundle_id=""
+            # plutil is resolved through PATH, PlistBuddy only exists at an
+            # absolute path outside it.
+            if [ -f "$plist" ]; then
+              bundle_id=$(plutil -extract CFBundleIdentifier raw -o - "$plist" 2>/dev/null) || bundle_id=""
+            fi
+            if [ -z "$bundle_id" ]; then
+              echo "Could not read CFBundleIdentifier from $plist, bundleId left unchanged" >&2
+              return 0
+            fi
+            echo "$bundle_id"
+            return 0
+          }
+
+          extract_bundle_id_from_pkg() {
+            local pkg_path="$1"
+            local expand_dir=""
+            local plist=""
+            if ! expand_dir=$(mktemp -d 2>/dev/null); then
+              echo "Could not create a temporary directory to inspect $pkg_path, bundleId left unchanged" >&2
+              return 0
+            fi
+            # --expand-full also unpacks Payload, so .app bundles end up as real
+            # directories. Packages without an .app payload (system extensions,
+            # drivers) legitimately yield nothing here.
+            if pkgutil --expand-full "$pkg_path" "$expand_dir/payload" >/dev/null 2>&1; then
+              # Shortest path wins so a nested helper bundle inside Frameworks
+              # cannot shadow the top level app.
+              plist=$(find "$expand_dir/payload" -type f -path "*.app/Contents/Info.plist" -print 2>/dev/null | awk '{ print length, $0 }' | sort -n | head -1 | cut -d" " -f2-)
+              if [ -n "$plist" ]; then
+                extract_bundle_id_from_plist "$plist"
+              else
+                echo "No .app payload inside $pkg_path, bundleId left unchanged" >&2
+              fi
+            else
+              echo "Could not expand $pkg_path, bundleId left unchanged" >&2
+            fi
+            rm -rf "$expand_dir"
+            return 0
+          }
+
+          log_bundle_id_change() {
+            local json_path="$1"
+            local new_id="$2"
+            local current_id=""
+            [ -n "$new_id" ] || return 0
+            current_id=$(jq -r '.bundleId // empty' "$json_path" 2>/dev/null) || current_id=""
+            if [ "$current_id" != "$new_id" ]; then
+              echo "bundleId changed in $json_path: ${current_id:-none} -> $new_id"
+            fi
+            return 0
+          }
+
           ERROR_LOG=()  # Track errors for summary
           FAILED_APPS=()  # Track which apps failed
           SUCCESSFUL_APPS=()  # Track successful apps
@@ -408,6 +469,9 @@ jobs:
                     fi
                   fi
                   
+                  extracted_bundle_id=$(extract_bundle_id_from_pkg "${app_name}_${version}.pkg")
+                  log_bundle_id_change "$WORKSPACE_DIR/Apps/${app_name}.json" "$extracted_bundle_id"
+
                   # Calculate SHA256 hash
                   echo "🔐 Calculating SHA256 hash..."
                   file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
@@ -427,7 +491,7 @@ jobs:
                     # Update JSON with Azure URL and SHA256
                     echo "📝 Updating JSON file with new Azure URL and SHA256..."
                     azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-                    jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                    jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
                     
                     if [ $? -eq 0 ]; then
                       echo "✅ JSON file updated successfully"
@@ -526,6 +590,9 @@ jobs:
                 # Copy PKG file with version in filename
                 echo "📋 Copying PKG file to ${app_name}_${version}.pkg"
                 cp "$pkg_file" "${app_name}_${version}.pkg"
+
+                extracted_bundle_id=$(extract_bundle_id_from_pkg "${app_name}_${version}.pkg")
+                log_bundle_id_change "$WORKSPACE_DIR/Apps/${app_name}.json" "$extracted_bundle_id"
                 
                 # Calculate SHA256 hash
                 echo "🔐 Calculating SHA256 hash..."
@@ -546,7 +613,7 @@ jobs:
                   # Update JSON with Azure URL and SHA256
                   echo "📝 Updating JSON file with new Azure URL and SHA256..."
                   azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-                  jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                  jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
                   
                   if [ $? -eq 0 ]; then
                     echo "✅ JSON file updated successfully"
@@ -821,6 +888,9 @@ jobs:
                   # Copy PKG file with version in filename
                   echo "📋 Copying PKG file to ${app_name}_${version}.pkg"
                   cp "$pkg_file" "${app_name}_${version}.pkg"
+
+                  extracted_bundle_id=$(extract_bundle_id_from_pkg "${app_name}_${version}.pkg")
+                  log_bundle_id_change "$WORKSPACE_DIR/Apps/${app_name}.json" "$extracted_bundle_id"
                   
                   # Calculate SHA256 hash
                   echo "🔐 Calculating SHA256 hash..."
@@ -841,7 +911,7 @@ jobs:
                     # Update JSON with Azure URL and SHA256
                     echo "📝 Updating JSON file with new Azure URL and SHA256..."
                     azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-                    jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                    jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
                     
                     if [ $? -eq 0 ]; then
                       echo "✅ JSON file updated successfully"
@@ -851,11 +921,20 @@ jobs:
                     fi
                   else
                     echo "❌ Failed to upload to Azure"
+                    cd "$WORKSPACE_DIR"
+                    rm -rf "${app_name}_extracted"
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Azure upload failed for ${app_name}_${version}.pkg")
+                    continue
                   fi
-                  
-                  # Clean up and continue to next app
+
+                  # Clean up and continue to next app. This path bypasses the
+                  # shared success counter at the end of the loop, so it counts
+                  # itself.
                   cd "$WORKSPACE_DIR"
                   rm -rf "${app_name}_extracted"
+                  SUCCESSFUL_APPS+=("$app_name")
+                  echo "✅ Completed processing $app_name"
                   continue
                 else
                   echo "❌ No .app or .pkg file found for $app_name"
@@ -870,6 +949,9 @@ jobs:
               fi
               echo "✅ Found .app file: $app_file"
               
+              extracted_bundle_id=$(extract_bundle_id_from_plist "$app_file/Contents/Info.plist")
+              log_bundle_id_change "$WORKSPACE_DIR/Apps/${app_name}.json" "$extracted_bundle_id"
+
               # Build PKG with version in filename
               echo "Building PKG for $app_name version $version..."
               if ! pkgbuild --install-location /Applications --component "$app_file" "${app_name}_${version}.pkg" 2>/dev/null; then
@@ -916,7 +998,7 @@ jobs:
 
               # Update the JSON file with Azure URL, filename and SHA256
               azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-              jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+              jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
               
               # Cleanup
               sudo rm -rf "${app_name}_extracted"
