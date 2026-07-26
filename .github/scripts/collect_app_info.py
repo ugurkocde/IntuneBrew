@@ -1821,7 +1821,15 @@ def main():
                     else:
                         # For non-repackaged apps, update fileName to match the URL
                         existing_data["fileName"] = get_filename_from_url(app_info["url"], app_name=display_name, version=new_version)
-                    
+
+                    # Ownership: the list an app is processed from owns its type and
+                    # vendor_url, otherwise a stale value survives every run forever.
+                    # These assignments must stay below the fileName block, which
+                    # branches on the previous type and would change fileName handling
+                    # if it saw the refreshed value.
+                    existing_data["type"] = "app"
+                    existing_data["vendor_url"] = app_info["vendor_url"]
+
                     # Calculate new hash if version changed
                     if version_changed:
                         print(f"🔍 Version changed, calculating new SHA256 hash for {display_name}...")
@@ -1892,9 +1900,13 @@ def main():
                     new_sha = app_info.get("sha")
                     previous_version = existing_data.get("version")
                     
-                    # Preserve all existing data except version, url, sha, and previous_version
+                    # Preserve all existing data except version, url, sha, and previous_version.
+                    # type, homebrew_cask and vendor_url are owned by the list being
+                    # processed: these casks are vendor-served DMGs, so the fresh app_info
+                    # carries no type key at all and a stale repackaging type is dropped.
                     for key in existing_data:
-                        if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason"]:
+                        if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason",
+                                       "type", "homebrew_cask", "vendor_url"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url, sha and previous_version
@@ -1941,9 +1953,12 @@ def main():
                     new_url = app_info["url"]
                     previous_version = existing_data.get("version")
                     
-                    # Preserve all existing data except version, url and previous_version
+                    # Preserve all existing data except version, url and previous_version.
+                    # type, homebrew_cask and vendor_url are owned by the list being
+                    # processed, so the fresh "pkg_in_pkg" values win over whatever is on disk.
                     for key in existing_data:
-                        if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason"]:
+                        if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason",
+                                       "type", "homebrew_cask", "vendor_url"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version
@@ -2014,9 +2029,12 @@ def main():
                     new_sha = app_info.get("sha")
                     previous_version = existing_data.get("version")
                     
-                    # Preserve all existing data except version, url, sha and previous_version
+                    # Preserve all existing data except version, url, sha and previous_version.
+                    # type, homebrew_cask and vendor_url are owned by the list being
+                    # processed, so the fresh "pkg" values win over whatever is on disk.
                     for key in existing_data:
-                        if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason"]:
+                        if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason",
+                                       "type", "homebrew_cask", "vendor_url"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url, sha and previous_version
@@ -2065,9 +2083,12 @@ def main():
                     new_url = app_info["url"]
                     previous_version = existing_data.get("version")
                     
-                    # Preserve all existing data except version, url and previous_version
+                    # Preserve all existing data except version, url and previous_version.
+                    # type, homebrew_cask and vendor_url are owned by the list being
+                    # processed, so the fresh "pkg_in_dmg" values win over whatever is on disk.
                     for key in existing_data:
-                        if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason"]:
+                        if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason",
+                                       "type", "homebrew_cask", "vendor_url"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version
