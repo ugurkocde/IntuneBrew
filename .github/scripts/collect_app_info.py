@@ -1260,7 +1260,7 @@ pkg_in_pkg_urls = [
     "https://formulae.brew.sh/api/cask/sony-ps-remote-play.json",
     "https://formulae.brew.sh/api/cask/philips-hue-sync.json",
     "https://formulae.brew.sh/api/cask/nordvpn.json",
-    "https://formulae.brew.sh/api/cask/gyazo.json"
+    "https://formulae.brew.sh/api/cask/gyazo.json",
     "https://formulae.brew.sh/api/cask/tailscale-app.json",
 ]
 
