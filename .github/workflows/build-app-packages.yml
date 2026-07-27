@@ -408,13 +408,18 @@ jobs:
                 # Update only URL and version without downloading
                 azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
                 current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg filename "${app_name}_${version}.pkg" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .version = $version | .previous_version = $prev_version | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
-                echo "✅ JSON file updated (SHA preserved)"
+                if jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg filename "${app_name}_${version}.pkg" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .version = $version | .previous_version = $prev_version | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"; then
+                  echo "✅ JSON file updated (SHA preserved)"
+                else
+                  echo "Failed to update JSON file for $app_name, it keeps its previous contents"
+                fi
               else
                 echo "⚠️ SHA missing in JSON file, downloading to calculate..."
                 # Download the file to calculate SHA256
                 temp_pkg="${app_name}_${version}_temp.pkg"
-                az storage blob download --container-name pkg --name "${app_name}_${version}.pkg" --file "$temp_pkg" --no-progress
+                # A failed download must not abort the step: the -f test below is
+                # what decides, and it owns the "could not download" arm.
+                az storage blob download --container-name pkg --name "${app_name}_${version}.pkg" --file "$temp_pkg" --no-progress || true
                 
                 if [ -f "$temp_pkg" ]; then
                   # Calculate SHA256 hash
@@ -426,14 +431,20 @@ jobs:
                   # Update JSON with SHA
                   azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
                   current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                  jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg sha "$file_hash" --arg filename "${app_name}_${version}.pkg" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .version = $version | .previous_version = $prev_version | .sha = $sha | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
-                  echo "✅ JSON file updated with SHA256"
+                  if jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg sha "$file_hash" --arg filename "${app_name}_${version}.pkg" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .version = $version | .previous_version = $prev_version | .sha = $sha | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"; then
+                    echo "✅ JSON file updated with SHA256"
+                  else
+                    echo "Failed to update JSON file for $app_name, it keeps its previous contents"
+                  fi
                 else
                   echo "❌ Could not download file to calculate SHA256"
                   azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
                   current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                  jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg filename "${app_name}_${version}.pkg" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .version = $version | .previous_version = $prev_version | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
-                  echo "⚠️ JSON file updated without SHA256"
+                  if jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg filename "${app_name}_${version}.pkg" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .version = $version | .previous_version = $prev_version | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"; then
+                    echo "⚠️ JSON file updated without SHA256"
+                  else
+                    echo "Failed to update JSON file for $app_name, it keeps its previous contents"
+                  fi
                 fi
               fi
               
@@ -448,11 +459,13 @@ jobs:
               download_path="$HOME/Desktop/${app_name}"
               outer_pkg_path="${download_path}.pkg"
 
-              # Check if URL is a ZIP file
+              # Check if URL is a ZIP file. Both branches record whether the
+              # outer package actually materialized, because the shared test
+              # below can no longer read $? across them under errexit.
+              outer_pkg_ready=false
               if [[ "$url" == *".zip" ]]; then
                 echo "URL is a ZIP file, downloading and extracting first..."
-                curl -f -L -o "${download_path}.zip" "$url"
-                if [ $? -ne 0 ]; then
+                if ! curl -f -L -o "${download_path}.zip" "$url"; then
                   echo "Failed to download ZIP file"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download ZIP from $url")
@@ -463,7 +476,9 @@ jobs:
                 zip_extract_dir="${download_path}_zip_extracted"
                 rm -rf "$zip_extract_dir"
                 mkdir -p "$zip_extract_dir"
-                unzip -q "${download_path}.zip" -d "$zip_extract_dir"
+                # A corrupt archive must not abort the step: the found_pkg test
+                # below owns that failure and reports it per app.
+                unzip -q "${download_path}.zip" -d "$zip_extract_dir" || true
 
                 # Find the PKG file inside the ZIP
                 found_pkg=$(find "$zip_extract_dir" -name "*.pkg" -type f -print -quit)
@@ -476,14 +491,18 @@ jobs:
                 fi
 
                 echo "Found PKG inside ZIP: $found_pkg"
-                cp "$found_pkg" "$outer_pkg_path"
+                if cp "$found_pkg" "$outer_pkg_path"; then
+                  outer_pkg_ready=true
+                fi
                 rm -rf "$zip_extract_dir" "${download_path}.zip"
               else
                 # Direct PKG download
-                curl -f -L -o "$outer_pkg_path" "$url"
+                if curl -f -L -o "$outer_pkg_path" "$url"; then
+                  outer_pkg_ready=true
+                fi
               fi
 
-              if [ $? -eq 0 ] && [ -f "$outer_pkg_path" ]; then
+              if [ "$outer_pkg_ready" = true ] && [ -f "$outer_pkg_path" ]; then
                 echo "PKG download/extraction successful"
                 ls -lh "$outer_pkg_path"
 
@@ -514,7 +533,9 @@ jobs:
                     
                     # Copy inner PKG file with version in filename
                     echo "📋 Copying inner PKG file to ${app_name}_${version}.pkg"
-                    cp "$inner_pkg" "${app_name}_${version}.pkg"
+                    # A failed copy leaves no package to upload, which the Azure
+                    # upload arm below already reports for this app.
+                    cp "$inner_pkg" "${app_name}_${version}.pkg" || true
                   else
                     # Check if there's a .pkg directory (flat package)
                     inner_pkg_dir=$(find "$temp_dir" -name "*.pkg" -type d -print -quit)
@@ -523,9 +544,7 @@ jobs:
                       echo "📦 Flattening package to ${app_name}_${version}.pkg"
                       
                       # Use pkgutil to flatten the package
-                      pkgutil --flatten "$inner_pkg_dir" "${app_name}_${version}.pkg"
-                      
-                      if [ $? -ne 0 ]; then
+                      if ! pkgutil --flatten "$inner_pkg_dir" "${app_name}_${version}.pkg"; then
                         echo "❌ Failed to flatten package"
                         rm -rf "$temp_dir"
                         rm -f "${download_path}.pkg"
@@ -553,13 +572,11 @@ jobs:
 
                   # Upload to Azure
                   echo "☁️ Uploading to Azure Blob Storage..."
-                  az storage blob upload \
+                  if az storage blob upload \
                     --container-name pkg \
                     --file "${app_name}_${version}.pkg" \
                     --name "${app_name}_${version}.pkg" \
-                    --overwrite true
-                  
-                  if [ $? -eq 0 ]; then
+                    --overwrite true; then
                     echo "✅ Upload successful"
 
                     # Only reached with the new blob confirmed in the container.
@@ -568,9 +585,7 @@ jobs:
                     # Update JSON with Azure URL and SHA256
                     echo "📝 Updating JSON file with new Azure URL and SHA256..."
                     azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-                    jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
-
-                    if [ $? -eq 0 ]; then
+                    if jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"; then
                       echo "✅ JSON file updated successfully"
                       echo "🔗 New URL: $azure_url"
                     else
@@ -615,8 +630,7 @@ jobs:
               download_path="$HOME/Desktop/${app_name}"
               
               # Download DMG
-              curl -f -L -o "${download_path}.dmg" "$url"
-              if [ $? -eq 0 ]; then
+              if curl -f -L -o "${download_path}.dmg" "$url"; then
                 echo "✅ DMG download successful"
                 ls -lh "${download_path}.dmg"
               else
@@ -666,7 +680,9 @@ jobs:
                 
                 # Copy PKG file with version in filename
                 echo "📋 Copying PKG file to ${app_name}_${version}.pkg"
-                cp "$pkg_file" "${app_name}_${version}.pkg"
+                # A failed copy leaves no package to upload, which the Azure
+                # upload arm below already reports for this app.
+                cp "$pkg_file" "${app_name}_${version}.pkg" || true
 
                 extracted_bundle_id=$(extract_bundle_id_from_pkg "${app_name}_${version}.pkg")
                 log_bundle_id_change "$WORKSPACE_DIR/Apps/${app_name}.json" "$extracted_bundle_id"
@@ -678,13 +694,11 @@ jobs:
 
                 # Upload to Azure
                 echo "☁️ Uploading to Azure Blob Storage..."
-                az storage blob upload \
+                if az storage blob upload \
                   --container-name pkg \
                   --file "${app_name}_${version}.pkg" \
                   --name "${app_name}_${version}.pkg" \
-                  --overwrite true
-                
-                if [ $? -eq 0 ]; then
+                  --overwrite true; then
                   echo "✅ Upload successful"
 
                   # Only reached with the new blob confirmed in the container.
@@ -693,9 +707,7 @@ jobs:
                   # Update JSON with Azure URL and SHA256
                   echo "📝 Updating JSON file with new Azure URL and SHA256..."
                   azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-                  jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
-                  
-                  if [ $? -eq 0 ]; then
+                  if jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"; then
                     echo "✅ JSON file updated successfully"
                     echo "🔗 New URL: $azure_url"
                   else
@@ -816,7 +828,9 @@ jobs:
                 echo "📂 Creating extraction directory..."
                 mkdir -p "${app_name}_extracted"
                 echo "🔓 Extracting tar.xz archive..."
-                tar -xf "${download_path}.tar.xz" -C "${app_name}_extracted"
+                # A corrupt archive must not abort the step: the .app/.pkg
+                # search below owns that failure and reports it per app.
+                tar -xf "${download_path}.tar.xz" -C "${app_name}_extracted" || true
                 echo "🗑️ Cleaning up downloaded archive..."
                 rm "${download_path}.tar.xz"
                 echo "📁 Extracted contents:"
@@ -850,7 +864,9 @@ jobs:
                 fi
                 mkdir -p "${app_name}_extracted"
                 echo "🔓 Extracting bzip2 compressed archive..."
-                tar -xjf "$archive_path" -C "${app_name}_extracted"
+                # A corrupt archive must not abort the step: the .app/.pkg
+                # search below owns that failure and reports it per app.
+                tar -xjf "$archive_path" -C "${app_name}_extracted" || true
                 echo "🗑️ Cleaning up downloaded archive..."
                 rm "$archive_path"
                 
@@ -866,10 +882,13 @@ jobs:
                   fi
                   mkdir -p "${app_name}_nested_extracted"
                   echo "🔓 Extracting nested tar archive..."
-                  tar -xf "$tar_file" -C "${app_name}_nested_extracted"
+                  # Neither the nested extraction nor the copy back may abort the
+                  # step: an empty nested directory makes the glob unmatched and
+                  # cp fail, and the .app/.pkg search below owns that failure.
+                  tar -xf "$tar_file" -C "${app_name}_nested_extracted" || true
                   # Move contents from nested extraction to main extraction directory
                   echo "📦 Moving nested contents to main extraction directory..."
-                  cp -R "${app_name}_nested_extracted/"* "${app_name}_extracted/"
+                  cp -R "${app_name}_nested_extracted/"* "${app_name}_extracted/" || true
                   rm -rf "${app_name}_nested_extracted"
                 fi
                 
@@ -893,7 +912,9 @@ jobs:
                 fi
                 mkdir -p "${app_name}_extracted"
                 echo "🔓 Extracting tar.gz archive..."
-                tar -xzf "${download_path}.tar.gz" -C "${app_name}_extracted"
+                # A corrupt archive must not abort the step: the .app/.pkg
+                # search below owns that failure and reports it per app.
+                tar -xzf "${download_path}.tar.gz" -C "${app_name}_extracted" || true
                 echo "🗑️ Cleaning up downloaded archive..."
                 rm "${download_path}.tar.gz"
                 echo "📁 Extracted contents:"
@@ -967,7 +988,9 @@ jobs:
                   
                   # Copy PKG file with version in filename
                   echo "📋 Copying PKG file to ${app_name}_${version}.pkg"
-                  cp "$pkg_file" "${app_name}_${version}.pkg"
+                  # A failed copy leaves no package to upload, which the Azure
+                  # upload arm below already reports for this app.
+                  cp "$pkg_file" "${app_name}_${version}.pkg" || true
 
                   extracted_bundle_id=$(extract_bundle_id_from_pkg "${app_name}_${version}.pkg")
                   log_bundle_id_change "$WORKSPACE_DIR/Apps/${app_name}.json" "$extracted_bundle_id"
@@ -979,13 +1002,11 @@ jobs:
 
                   # Upload to Azure
                   echo "☁️ Uploading to Azure Blob Storage..."
-                  az storage blob upload \
+                  if az storage blob upload \
                     --container-name pkg \
                     --file "${app_name}_${version}.pkg" \
                     --name "${app_name}_${version}.pkg" \
-                    --overwrite true
-                  
-                  if [ $? -eq 0 ]; then
+                    --overwrite true; then
                     echo "✅ Upload successful"
 
                     # Only reached with the new blob confirmed in the container.
@@ -996,9 +1017,7 @@ jobs:
                     # Update JSON with Azure URL and SHA256
                     echo "📝 Updating JSON file with new Azure URL and SHA256..."
                     azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-                    jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
-                    
-                    if [ $? -eq 0 ]; then
+                    if jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"; then
                       echo "✅ JSON file updated successfully"
                       echo "🔗 New URL: $azure_url"
                     else
@@ -1075,8 +1094,13 @@ jobs:
 
               # Update the JSON file with Azure URL, filename and SHA256
               azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-              jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
-              
+              # The package is already uploaded at this point, so a failed
+              # rewrite must leave the JSON alone and let the loop continue
+              # rather than take the remaining apps down with it.
+              # Braces keep the negation on the whole list: "!" alone would bind
+              # to jq and turn mv into the failure branch.
+              { jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"; } || echo "❌ Failed to update JSON file"
+
               # Cleanup
               sudo rm -rf "${app_name}_extracted"
             fi
