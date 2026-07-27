@@ -277,6 +277,37 @@ jobs:
             return 0
           }
 
+          # Superseded packages of one app are removed from the pkg container so
+          # old versions do not accumulate there forever. Constraints:
+          #   - callers must invoke this only after the new blob upload was
+          #     confirmed successful, never on a failure path and never in the
+          #     "already exists in Azure" shortcut, otherwise a transient Azure
+          #     failure would delete the last working package and leave the
+          #     catalog pointing at nothing.
+          #   - the blob list is passed in rather than read from the loop, so
+          #     the caller decides which listing is authoritative.
+          #   - a failed delete is logged and ignored: a leftover blob costs
+          #     storage, a non-zero return here would fail the whole step under
+          #     errexit and lose an app that was already uploaded.
+          delete_superseded_blobs() {
+            local cleanup_app="$1"
+            local cleanup_version="$2"
+            local cleanup_blobs="$3"
+            local blob_name=""
+            [ -n "$cleanup_blobs" ] || return 0
+            echo "Cleaning up older versions of $cleanup_app..."
+            # Here-string instead of a pipe: the loop stays in this shell, so no
+            # subshell can swallow the exit status of the function.
+            while IFS= read -r blob_name; do
+              if [ -n "$blob_name" ] && [ "$blob_name" != "${cleanup_app}_${cleanup_version}.pkg" ]; then
+                echo "Deleting old version: $blob_name"
+                az storage blob delete --container-name pkg --name "$blob_name" \
+                  || echo "Could not delete $blob_name, leaving it in the container"
+              fi
+            done <<< "$cleanup_blobs"
+            return 0
+          }
+
           ERROR_LOG=()  # Track errors for summary
           FAILED_APPS=()  # Track which apps failed
           SUCCESSFUL_APPS=()  # Track successful apps
@@ -530,12 +561,15 @@ jobs:
                   
                   if [ $? -eq 0 ]; then
                     echo "✅ Upload successful"
-                    
+
+                    # Only reached with the new blob confirmed in the container.
+                    delete_superseded_blobs "$app_name" "$version" "$existing_versions"
+
                     # Update JSON with Azure URL and SHA256
                     echo "📝 Updating JSON file with new Azure URL and SHA256..."
                     azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
                     jq --arg url "$azure_url" --arg filename "${app_name}_${version}.pkg" --arg sha "$file_hash" --arg bundleid "$extracted_bundle_id" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .fileName = $filename | .sha = $sha | (if $bundleid == "" then . else .bundleId = $bundleid end)' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
-                    
+
                     if [ $? -eq 0 ]; then
                       echo "✅ JSON file updated successfully"
                       echo "🔗 New URL: $azure_url"
@@ -652,7 +686,10 @@ jobs:
                 
                 if [ $? -eq 0 ]; then
                   echo "✅ Upload successful"
-                  
+
+                  # Only reached with the new blob confirmed in the container.
+                  delete_superseded_blobs "$app_name" "$version" "$existing_versions"
+
                   # Update JSON with Azure URL and SHA256
                   echo "📝 Updating JSON file with new Azure URL and SHA256..."
                   azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
@@ -950,7 +987,12 @@ jobs:
                   
                   if [ $? -eq 0 ]; then
                     echo "✅ Upload successful"
-                    
+
+                    # Only reached with the new blob confirmed in the container.
+                    # $existing_versions is the same loop-local listing the .app
+                    # path uses; this fallback runs in the same iteration.
+                    delete_superseded_blobs "$app_name" "$version" "$existing_versions"
+
                     # Update JSON with Azure URL and SHA256
                     echo "📝 Updating JSON file with new Azure URL and SHA256..."
                     azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
@@ -1029,15 +1071,7 @@ jobs:
               fi
 
               # Delete older versions of this app from Azure storage
-              if [ ! -z "$existing_versions" ]; then
-                echo "Cleaning up older versions of $app_name..."
-                echo "$existing_versions" | while read -r blob_name; do
-                  if [ ! -z "$blob_name" ] && [ "$blob_name" != "${app_name}_${version}.pkg" ]; then
-                    echo "Deleting old version: $blob_name"
-                    az storage blob delete --container-name pkg --name "$blob_name"
-                  fi
-                done
-              fi
+              delete_superseded_blobs "$app_name" "$version" "$existing_versions"
 
               # Update the JSON file with Azure URL, filename and SHA256
               azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
