@@ -9,6 +9,7 @@ import subprocess
 from datetime import datetime
 import hashlib
 import tempfile
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse, unquote
 
 
@@ -1574,19 +1575,95 @@ def mark_app_deprecated(apps_folder, display_name, reason, cask_token=None):
     return True
 
 
-def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, is_pkg_in_pkg=False, is_pkg=False):
-    cask_token = get_cask_token(json_url)
-    response = requests.get(json_url)
+# Cask JSON is a few kilobytes: 10s to connect, 30s to read is generous, and a
+# stalled endpoint must not hold a worker for the whole run.
+CASK_TIMEOUT = (10, 30)
+# The connection pool must be at least as large as the worker count, otherwise
+# threads queue on the pool instead of on the network.
+CASK_WORKERS = 16
+
+
+class TimeoutSession(requests.Session):
+    """requests.Session has no default timeout, so every cask fetch would hang forever."""
+
+    def request(self, method, url, **kwargs):
+        kwargs.setdefault("timeout", CASK_TIMEOUT)
+        return super().request(method, url, **kwargs)
+
+
+def build_cask_session():
+    """Connection-reusing session for the Homebrew API. No retries: the nightly run
+    reruns anyway, and a retrying adapter multiplies the stall of a dead endpoint."""
+    session = TimeoutSession()
+    adapter = requests.adapters.HTTPAdapter(
+        pool_connections=CASK_WORKERS,
+        pool_maxsize=CASK_WORKERS,
+        max_retries=0,
+    )
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    return session
+
+
+cask_session = build_cask_session()
+
+# url -> parsed cask JSON, or the exception raised while fetching it. Filled by
+# prefetch_cask_data and read by get_homebrew_app_info.
+cask_cache = {}
+
+
+def fetch_cask_data(json_url):
+    """Fetch one cask JSON. Raises CaskUnavailableError when Homebrew no longer serves it."""
+    response = cask_session.get(json_url)
     try:
         response.raise_for_status()
     except requests.HTTPError as error:
         if response.status_code == 404:
             raise CaskUnavailableError(
                 "cask removed from Homebrew",
-                cask_token=cask_token,
+                cask_token=get_cask_token(json_url),
             ) from error
         raise
-    data = response.json()
+    return response.json()
+
+
+def prefetch_cask_data(json_urls):
+    """Fetch every cask JSON once, in parallel.
+
+    Network only: nothing here touches the Apps folder, so the write ordering the
+    catalog depends on stays with the sequential loops in main(). A failure is stored
+    and re-raised when its URL is consumed, which keeps the per-app error flow
+    (notably 404 -> CaskUnavailableError -> mark_app_deprecated) unchanged.
+    """
+    unique_urls = list(dict.fromkeys(json_urls))
+    cask_cache.clear()
+    print(f"\nPrefetching {len(unique_urls)} cask documents with {CASK_WORKERS} workers...")
+
+    with ThreadPoolExecutor(max_workers=CASK_WORKERS) as executor:
+        futures = {executor.submit(fetch_cask_data, url): url for url in unique_urls}
+        for completed, future in enumerate(as_completed(futures), start=1):
+            url = futures[future]
+            try:
+                cask_cache[url] = future.result()
+            except Exception as error:
+                cask_cache[url] = error
+            if completed % 100 == 0:
+                print(f"Prefetched {completed}/{len(unique_urls)} cask documents")
+
+    print(f"Prefetched {len(cask_cache)}/{len(unique_urls)} cask documents")
+    return cask_cache
+
+
+def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, is_pkg_in_pkg=False, is_pkg=False):
+    cask_token = get_cask_token(json_url)
+    if json_url in cask_cache:
+        cached = cask_cache[json_url]
+        if isinstance(cached, Exception):
+            raise cached
+        data = cached
+    else:
+        # Defensive: a URL the prefetch never saw is still fetched here.
+        data = fetch_cask_data(json_url)
 
     # A deprecated or disabled cask means the vendor discontinued the app or
     # its download can no longer be fetched reliably. Its URL will rot, so it
@@ -1834,6 +1911,10 @@ def main():
     
     supported_apps = []
     apps_info = []
+
+    prefetch_cask_data(
+        app_urls + homebrew_cask_urls + pkg_in_pkg_urls + pkg_urls + pkg_in_dmg_urls
+    )
 
     # Process apps that need special packaging
     for url in app_urls:
