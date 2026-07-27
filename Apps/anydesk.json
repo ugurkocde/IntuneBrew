@@ -1,14 +1,14 @@
 {
   "name": "AnyDesk",
   "description": "Allows connection to a computer remotely",
-  "version": "9.7.1",
+  "version": "9.7.3",
   "url": "https://download.anydesk.com/anydesk.dmg",
   "vendor_url": "https://download.anydesk.com/anydesk.dmg",
   "bundleId": "com.philandro.anydesk",
   "homepage": "https://anydesk.com/",
   "homebrew_cask": "anydesk",
   "fileName": "anydesk.dmg",
-  "sha": "e810298bc5d5f13f938788ce7a342a7cdd12cff105ec734752d5c2f4ee5e8022",
+  "sha": "5acabf230057c457456f7a6eb4746cbc524c09d6d415639783845521f0fc3acc",
   "changelog": "https://anydesk.com/en/changelog/mac-os",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:31:56Z",

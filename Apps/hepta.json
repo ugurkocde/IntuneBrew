@@ -11,6 +11,6 @@
   "sha": "bbdd157bd836d5b699555338976e4f0def6b3d35ce2294d3ec56d58b6f723cd4",
   "category": "Productivity",
   "publisher": "Heptabase",
-  "previous_version": "1.100.0",
+  "previous_version": "1.100.1",
   "homebrew_cask": "heptabase"
 }
