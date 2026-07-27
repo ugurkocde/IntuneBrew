@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1151-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1150-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
