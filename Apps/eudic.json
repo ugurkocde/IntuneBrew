@@ -8,6 +8,7 @@
   "homepage": "https://www.eudic.net/v4/en/app/eudic",
   "homebrew_cask": "eudic",
   "fileName": "eudicmac.dmg",
+  "sha": "2846c0f440811152e4dc102a65616b451fc37a92d97372d16b2634e9ea718c8f",
   "category": "Productivity",
   "publisher": "Eudic",
   "previous_version": "latest"

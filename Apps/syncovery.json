@@ -8,6 +8,7 @@
   "homepage": "https://www.syncovery.com/",
   "homebrew_cask": "syncovery",
   "fileName": "SyncoveryMac11.15.16-Apple.dmg",
+  "sha": "0a5a000216756f830348b881fdacd4f51e96bdac1f4a0e3f5a17c190e7593d0d",
   "category": "Utilities",
   "publisher": "Syncovery",
   "previous_version": "11.15.16"

@@ -8,6 +8,7 @@
   "homepage": "https://www.hopperapp.com/",
   "homebrew_cask": "hopper-disassembler",
   "fileName": "Hopper-6.4.3-demo.dmg",
+  "sha": "26e83abbc2e10cfe7b778541a1067a98669237d09d120f2cb432d1bc820291fc",
   "category": "Developer Tools",
   "publisher": "Hopper Team",
   "previous_version": "6.4.3"

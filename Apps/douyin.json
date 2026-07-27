@@ -8,6 +8,7 @@
   "homepage": "https://www.douyin.com/",
   "homebrew_cask": "douyin",
   "fileName": "douyin-v8.2.0-darwin-universal.dmg",
+  "sha": "8cf7394bc6cbce8e765028eb24249608dab94f25bddc82d6ca8ac4705bc0d0a7",
   "category": "Media",
   "publisher": "ByteDance Ltd.",
   "previous_version": "8.2.0"

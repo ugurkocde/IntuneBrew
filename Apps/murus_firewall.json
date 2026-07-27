@@ -8,6 +8,7 @@
   "homepage": "https://www.murusfirewall.com/",
   "fileName": "murus-2.7.zip",
   "type": "app",
+  "sha": "e226ec090e678e2c2f7b8ccb49e32990b59e54fcf268eaa2bce443ecca902a4b",
   "category": "Security",
   "publisher": "Murus Firewall",
   "previous_version": "2.7",
