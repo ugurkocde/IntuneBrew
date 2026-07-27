@@ -29,12 +29,12 @@ elif [ -f "/Applications/IsThereNet.app" ]; then
     rm -f "/Applications/IsThereNet.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/.config/istherenet/
-echo "Removing $HOME/.config/istherenet/..."
-if [ -d "$HOME/.config/istherenet/" ]; then
-    rm -rf "$HOME/.config/istherenet/" 2>/dev/null || true
-elif [ -f "$HOME/.config/istherenet/" ]; then
-    rm -f "$HOME/.config/istherenet/" 2>/dev/null || true
+# Remove $HOME/.config/istherenet
+echo "Removing $HOME/.config/istherenet..."
+if [ -d "$HOME/.config/istherenet" ]; then
+    rm -rf "$HOME/.config/istherenet" 2>/dev/null || true
+elif [ -f "$HOME/.config/istherenet" ]; then
+    rm -f "$HOME/.config/istherenet" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Scripts/com.lowtechguys.IsThereNet

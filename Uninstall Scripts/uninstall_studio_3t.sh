@@ -25,12 +25,12 @@ elif [ -f "/Applications/Studio 3T.app" ]; then
     rm -f "/Applications/Studio 3T.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/.3T/studio-3t/
-echo "Removing $HOME/.3T/studio-3t/..."
-if [ -d "$HOME/.3T/studio-3t/" ]; then
-    rm -rf "$HOME/.3T/studio-3t/" 2>/dev/null || true
-elif [ -f "$HOME/.3T/studio-3t/" ]; then
-    rm -f "$HOME/.3T/studio-3t/" 2>/dev/null || true
+# Remove $HOME/.3T/studio-3t
+echo "Removing $HOME/.3T/studio-3t..."
+if [ -d "$HOME/.3T/studio-3t" ]; then
+    rm -rf "$HOME/.3T/studio-3t" 2>/dev/null || true
+elif [ -f "$HOME/.3T/studio-3t" ]; then
+    rm -f "$HOME/.3T/studio-3t" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/3t.enterprise.mongochef.plist

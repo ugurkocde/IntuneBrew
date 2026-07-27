@@ -33,28 +33,28 @@ elif [ -f "/Library/Logs/DiagnosticReports/jellyfin*.diag" ]; then
     rm -f "/Library/Logs/DiagnosticReports/jellyfin*.diag" 2>/dev/null || true
 fi
 
-# Remove $HOME/.cache/jellyfin/
-echo "Removing $HOME/.cache/jellyfin/..."
-if [ -d "$HOME/.cache/jellyfin/" ]; then
-    rm -rf "$HOME/.cache/jellyfin/" 2>/dev/null || true
-elif [ -f "$HOME/.cache/jellyfin/" ]; then
-    rm -f "$HOME/.cache/jellyfin/" 2>/dev/null || true
+# Remove $HOME/.cache/jellyfin
+echo "Removing $HOME/.cache/jellyfin..."
+if [ -d "$HOME/.cache/jellyfin" ]; then
+    rm -rf "$HOME/.cache/jellyfin" 2>/dev/null || true
+elif [ -f "$HOME/.cache/jellyfin" ]; then
+    rm -f "$HOME/.cache/jellyfin" 2>/dev/null || true
 fi
 
-# Remove $HOME/.config/jellyfin/
-echo "Removing $HOME/.config/jellyfin/..."
-if [ -d "$HOME/.config/jellyfin/" ]; then
-    rm -rf "$HOME/.config/jellyfin/" 2>/dev/null || true
-elif [ -f "$HOME/.config/jellyfin/" ]; then
-    rm -f "$HOME/.config/jellyfin/" 2>/dev/null || true
+# Remove $HOME/.config/jellyfin
+echo "Removing $HOME/.config/jellyfin..."
+if [ -d "$HOME/.config/jellyfin" ]; then
+    rm -rf "$HOME/.config/jellyfin" 2>/dev/null || true
+elif [ -f "$HOME/.config/jellyfin" ]; then
+    rm -f "$HOME/.config/jellyfin" 2>/dev/null || true
 fi
 
-# Remove $HOME/.local/share/jellyfin/
-echo "Removing $HOME/.local/share/jellyfin/..."
-if [ -d "$HOME/.local/share/jellyfin/" ]; then
-    rm -rf "$HOME/.local/share/jellyfin/" 2>/dev/null || true
-elif [ -f "$HOME/.local/share/jellyfin/" ]; then
-    rm -f "$HOME/.local/share/jellyfin/" 2>/dev/null || true
+# Remove $HOME/.local/share/jellyfin
+echo "Removing $HOME/.local/share/jellyfin..."
+if [ -d "$HOME/.local/share/jellyfin" ]; then
+    rm -rf "$HOME/.local/share/jellyfin" 2>/dev/null || true
+elif [ -f "$HOME/.local/share/jellyfin" ]; then
+    rm -f "$HOME/.local/share/jellyfin" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/jellyfin
