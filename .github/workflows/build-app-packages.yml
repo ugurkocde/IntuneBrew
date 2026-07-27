@@ -123,11 +123,13 @@ jobs:
               continue
             fi
 
-            # Only these types are repackaged. A plain dmg is served straight
-            # from the vendor URL and never enters the build list.
+            # Only these types are repackaged. A plain dmg and a plain pkg are
+            # both served straight from the vendor URL, so neither enters the
+            # build list. "Process apps" skips a pkg anyway through its own type
+            # guard, and queuing one only added log noise.
             type=$(jq -r '.type // empty' "$file")
             case "$type" in
-              app|pkg_in_dmg|pkg_in_pkg|pkg) ;;
+              app|pkg_in_dmg|pkg_in_pkg) ;;
               *) continue ;;
             esac
 
