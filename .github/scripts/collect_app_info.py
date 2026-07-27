@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 import requests
 import re
 import fileinput
@@ -1493,12 +1494,71 @@ def find_app_file(apps_folder, display_name=None, cask_token=None):
     return None
 
 
+# Two casks whose display names sanitize to the same filename resolve to one
+# Apps/*.json and would take turns overwriting it on every run. Collisions are
+# collected here instead of being written, and fail the run at the end of main().
+filename_collisions = []
+
+
+def claim_app_file(file_path, cask_token):
+    """Return True when cask_token may write file_path, else record the collision."""
+    if not cask_token or not os.path.exists(file_path):
+        return True
+
+    try:
+        with open(file_path, "r") as f:
+            existing_data = json.load(f)
+    except (OSError, ValueError):
+        # An unreadable file carries no ownership claim, so writing it is the
+        # same repair as writing a missing one.
+        return True
+
+    existing_cask = existing_data.get("homebrew_cask") or ""
+    if not existing_cask or existing_cask == cask_token:
+        return True
+
+    filename_collisions.append(
+        {
+            "file_path": file_path,
+            "existing_cask": existing_cask,
+            "incoming_cask": cask_token,
+        }
+    )
+    print(
+        f"Filename collision: cask '{cask_token}' resolves to {file_path}, "
+        f"which belongs to cask '{existing_cask}'. Not writing."
+    )
+    return False
+
+
+def report_filename_collisions():
+    """Print every recorded collision. Returns True when any were recorded."""
+    if not filename_collisions:
+        return False
+
+    print("\n" + "=" * 72)
+    print(f"FILENAME COLLISIONS DETECTED: {len(filename_collisions)}")
+    print("=" * 72)
+    print("Two casks map to one Apps JSON file. Nothing was written for the")
+    print("casks below. Resolve by renaming one file and setting its")
+    print("homebrew_cask, or by dropping one cask from the URL lists.")
+    for collision in filename_collisions:
+        print("")
+        print(f"  File          : {collision['file_path']}")
+        print(f"  Owned by cask : {collision['existing_cask']}")
+        print(f"  Blocked cask  : {collision['incoming_cask']}")
+    print("=" * 72 + "\n")
+    return True
+
+
 def mark_app_deprecated(apps_folder, display_name, reason, cask_token=None):
     """Flag an existing app JSON as deprecated so it is excluded from supported_apps.json."""
     file_path = find_app_file(apps_folder, display_name=display_name, cask_token=cask_token)
     identifier = display_name or cask_token or "unknown cask"
     if not file_path:
         print(f"Cask for {identifier} is unavailable ({reason}) and has no local JSON file, skipping")
+        return False
+    if not claim_app_file(file_path, cask_token):
         return False
     with open(file_path, "r") as f:
         app_data = json.load(f)
@@ -1790,6 +1850,9 @@ def main():
             file_path = os.path.join(apps_folder, file_name)
             print(f"📝 Attempting to write to: {os.path.abspath(file_path)}")
 
+            if not claim_app_file(file_path, app_info.get("homebrew_cask")):
+                continue
+
             # For existing files, update version, url, and recalculate SHA if version changed
             if os.path.exists(file_path):
                 print(f"Found existing file for {display_name}")
@@ -1863,6 +1926,9 @@ def main():
             supported_apps.append(display_name)
             file_name = f"{sanitize_filename(display_name)}.json"
             file_path = os.path.join(apps_folder, file_name)
+
+            if not claim_app_file(file_path, app_info.get("homebrew_cask")):
+                continue
 
             # Check if we need to calculate hash
             needs_hash = True
@@ -1944,6 +2010,9 @@ def main():
             file_name = f"{sanitize_filename(display_name)}.json"
             file_path = os.path.join(apps_folder, file_name)
 
+            if not claim_app_file(file_path, app_info.get("homebrew_cask")):
+                continue
+
             # For existing files, only update version, url and previous_version
             if os.path.exists(file_path):
                 with open(file_path, "r") as f:
@@ -1994,6 +2063,9 @@ def main():
             supported_apps.append(display_name)
             file_name = f"{sanitize_filename(display_name)}.json"
             file_path = os.path.join(apps_folder, file_name)
+
+            if not claim_app_file(file_path, app_info.get("homebrew_cask")):
+                continue
 
             # Check if we need to calculate hash for PKG apps
             needs_hash = True
@@ -2073,6 +2145,9 @@ def main():
             supported_apps.append(display_name)
             file_name = f"{sanitize_filename(display_name)}.json"
             file_path = os.path.join(apps_folder, file_name)
+
+            if not claim_app_file(file_path, app_info.get("homebrew_cask")):
+                continue
 
             # For existing files, only update version, url and previous_version
             if os.path.exists(file_path):
@@ -2154,6 +2229,11 @@ def main():
     # Update the README with both the apps table and latest changes
     update_readme_apps(supported_apps)
     update_readme_with_latest_changes(apps_info)
+
+    # A collision is catalog corruption in the making and needs a human decision,
+    # so the run must go red before anything is committed.
+    if report_filename_collisions():
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

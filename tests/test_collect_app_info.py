@@ -1,5 +1,8 @@
+import contextlib
 import importlib.util
+import io
 import json
+import os
 import re
 import tempfile
 import unittest
@@ -107,6 +110,240 @@ class CollectAppInfoTests(unittest.TestCase):
             )
 
             self.assertEqual(resolved, str(app_path))
+
+
+CASK_INFO = {
+    "https://formulae.brew.sh/api/cask/tailscale.json": {
+        "name": "Tailscale",
+        "description": "Mesh VPN",
+        "version": "1.80.0",
+        "url": "https://example.com/tailscale-1.80.0.dmg",
+        "vendor_url": "https://example.com/tailscale-1.80.0.dmg",
+        "bundleId": "io.tailscale.ipn.macos",
+        "homepage": "https://tailscale.com/",
+        "homebrew_cask": "tailscale",
+        "fileName": "tailscale-1.80.0.dmg",
+    },
+    "https://formulae.brew.sh/api/cask/tailscale-app.json": {
+        "name": "Tailscale",
+        "description": "Mesh VPN",
+        "version": "1.82.0",
+        "url": "https://example.com/tailscale-app-1.82.0.dmg",
+        "vendor_url": "https://example.com/tailscale-app-1.82.0.dmg",
+        "bundleId": "io.tailscale.ipn.macsys",
+        "homepage": "https://tailscale.com/",
+        "homebrew_cask": "tailscale-app",
+        "fileName": "tailscale-app-1.82.0.dmg",
+    },
+}
+
+
+def fake_get_homebrew_app_info(json_url, **kwargs):
+    return dict(CASK_INFO[json_url])
+
+
+@contextlib.contextmanager
+def run_collector(work_dir, cask_urls):
+    """Run main() against a scratch Apps folder with no network and no README writes."""
+    previous_dir = os.getcwd()
+    os.chdir(work_dir)
+    output = io.StringIO()
+    try:
+        with contextlib.ExitStack() as stack:
+            stack.enter_context(patch.object(collect_app_info, "app_urls", []))
+            stack.enter_context(patch.object(collect_app_info, "homebrew_cask_urls", cask_urls))
+            stack.enter_context(patch.object(collect_app_info, "pkg_in_pkg_urls", []))
+            stack.enter_context(patch.object(collect_app_info, "pkg_urls", []))
+            stack.enter_context(patch.object(collect_app_info, "pkg_in_dmg_urls", []))
+            stack.enter_context(patch.object(collect_app_info, "custom_scrapers", []))
+            stack.enter_context(
+                patch.object(collect_app_info, "get_homebrew_app_info", fake_get_homebrew_app_info)
+            )
+            stack.enter_context(
+                patch.object(collect_app_info, "calculate_file_hash", Mock(return_value="0" * 64))
+            )
+            stack.enter_context(patch.object(collect_app_info, "update_readme_apps", Mock()))
+            stack.enter_context(
+                patch.object(collect_app_info, "update_readme_with_latest_changes", Mock())
+            )
+            stack.enter_context(contextlib.redirect_stdout(output))
+            yield output
+    finally:
+        os.chdir(previous_dir)
+
+
+class FilenameCollisionTests(unittest.TestCase):
+    def setUp(self):
+        del collect_app_info.filename_collisions[:]
+
+    def tearDown(self):
+        del collect_app_info.filename_collisions[:]
+
+    def write_app(self, directory, name, data):
+        path = Path(directory) / name
+        path.write_text(json.dumps(data), encoding="utf-8")
+        return path
+
+    def test_missing_file_is_claimable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = os.path.join(directory, "tailscale.json")
+
+            self.assertTrue(collect_app_info.claim_app_file(path, "tailscale"))
+            self.assertEqual(collect_app_info.filename_collisions, [])
+
+    def test_matching_cask_is_claimable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = self.write_app(
+                directory, "tailscale.json", {"name": "Tailscale", "homebrew_cask": "tailscale"}
+            )
+
+            self.assertTrue(collect_app_info.claim_app_file(str(path), "tailscale"))
+            self.assertEqual(collect_app_info.filename_collisions, [])
+
+    def test_absent_or_empty_cask_is_claimable(self):
+        with tempfile.TemporaryDirectory() as directory:
+            missing_key = self.write_app(directory, "no_key.json", {"name": "Tailscale"})
+            empty_value = self.write_app(
+                directory, "empty.json", {"name": "Tailscale", "homebrew_cask": ""}
+            )
+
+            self.assertTrue(collect_app_info.claim_app_file(str(missing_key), "tailscale"))
+            self.assertTrue(collect_app_info.claim_app_file(str(empty_value), "tailscale"))
+            self.assertEqual(collect_app_info.filename_collisions, [])
+
+    def test_foreign_cask_is_refused_and_recorded(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = self.write_app(
+                directory, "tailscale.json", {"name": "Tailscale", "homebrew_cask": "tailscale"}
+            )
+
+            self.assertFalse(collect_app_info.claim_app_file(str(path), "tailscale-app"))
+            self.assertEqual(
+                collect_app_info.filename_collisions,
+                [
+                    {
+                        "file_path": str(path),
+                        "existing_cask": "tailscale",
+                        "incoming_cask": "tailscale-app",
+                    }
+                ],
+            )
+
+    def test_deprecated_target_is_guarded_like_any_other_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = self.write_app(
+                directory,
+                "tailscale.json",
+                {"name": "Tailscale", "homebrew_cask": "tailscale", "deprecated": True},
+            )
+
+            self.assertFalse(collect_app_info.claim_app_file(str(path), "tailscale-app"))
+            self.assertEqual(len(collect_app_info.filename_collisions), 1)
+
+    def test_mark_app_deprecated_refuses_foreign_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            path = self.write_app(
+                directory, "tailscale.json", {"name": "Tailscale", "homebrew_cask": "tailscale"}
+            )
+            before = path.read_bytes()
+
+            changed = collect_app_info.mark_app_deprecated(
+                directory,
+                display_name="Tailscale",
+                reason="cask removed from Homebrew",
+                cask_token="tailscale-app",
+            )
+
+            self.assertFalse(changed)
+            self.assertEqual(path.read_bytes(), before)
+            self.assertEqual(len(collect_app_info.filename_collisions), 1)
+
+    def test_second_cask_does_not_overwrite_first_writer(self):
+        with tempfile.TemporaryDirectory() as directory:
+            os.makedirs(os.path.join(directory, "Apps"))
+            app_path = Path(directory) / "Apps" / "tailscale.json"
+
+            with run_collector(
+                directory,
+                [
+                    "https://formulae.brew.sh/api/cask/tailscale.json",
+                    "https://formulae.brew.sh/api/cask/tailscale-app.json",
+                ],
+            ) as output:
+                with self.assertRaises(SystemExit) as context:
+                    collect_app_info.main()
+
+            self.assertEqual(context.exception.code, 1)
+            app_data = json.loads(app_path.read_text(encoding="utf-8"))
+            self.assertEqual(app_data["homebrew_cask"], "tailscale")
+            self.assertEqual(app_data["version"], "1.80.0")
+            self.assertEqual(
+                collect_app_info.filename_collisions,
+                [
+                    {
+                        "file_path": os.path.join("Apps", "tailscale.json"),
+                        "existing_cask": "tailscale",
+                        "incoming_cask": "tailscale-app",
+                    }
+                ],
+            )
+            self.assertIn("FILENAME COLLISIONS DETECTED: 1", output.getvalue())
+
+    def test_refused_write_leaves_file_byte_identical(self):
+        with tempfile.TemporaryDirectory() as directory:
+            os.makedirs(os.path.join(directory, "Apps"))
+            app_path = Path(directory) / "Apps" / "tailscale.json"
+
+            with run_collector(directory, ["https://formulae.brew.sh/api/cask/tailscale.json"]):
+                collect_app_info.main()
+
+            first_write = app_path.read_bytes()
+            self.assertEqual(collect_app_info.filename_collisions, [])
+
+            with run_collector(directory, ["https://formulae.brew.sh/api/cask/tailscale-app.json"]):
+                with self.assertRaises(SystemExit) as context:
+                    collect_app_info.main()
+
+            self.assertEqual(context.exception.code, 1)
+            self.assertEqual(app_path.read_bytes(), first_write)
+            self.assertEqual(len(collect_app_info.filename_collisions), 1)
+
+    def test_owning_cask_still_updates_its_file(self):
+        with tempfile.TemporaryDirectory() as directory:
+            os.makedirs(os.path.join(directory, "Apps"))
+            app_path = Path(directory) / "Apps" / "tailscale.json"
+            url = "https://formulae.brew.sh/api/cask/tailscale.json"
+
+            with run_collector(directory, [url]):
+                collect_app_info.main()
+
+            bumped = dict(CASK_INFO[url], version="1.81.0")
+            with patch.dict(CASK_INFO, {url: bumped}):
+                with run_collector(directory, [url]):
+                    collect_app_info.main()
+
+            app_data = json.loads(app_path.read_text(encoding="utf-8"))
+            self.assertEqual(app_data["version"], "1.81.0")
+            self.assertEqual(app_data["previous_version"], "1.80.0")
+            self.assertEqual(app_data["homebrew_cask"], "tailscale")
+            self.assertEqual(collect_app_info.filename_collisions, [])
+
+    def test_file_without_stored_cask_is_updated_normally(self):
+        with tempfile.TemporaryDirectory() as directory:
+            os.makedirs(os.path.join(directory, "Apps"))
+            app_path = self.write_app(
+                os.path.join(directory, "Apps"),
+                "tailscale.json",
+                {"name": "Tailscale", "version": "1.0.0", "homebrew_cask": ""},
+            )
+
+            with run_collector(directory, ["https://formulae.brew.sh/api/cask/tailscale-app.json"]):
+                collect_app_info.main()
+
+            app_data = json.loads(app_path.read_text(encoding="utf-8"))
+            self.assertEqual(app_data["homebrew_cask"], "tailscale-app")
+            self.assertEqual(app_data["version"], "1.82.0")
+            self.assertEqual(collect_app_info.filename_collisions, [])
 
 
 class CatalogConsistencyTests(unittest.TestCase):
