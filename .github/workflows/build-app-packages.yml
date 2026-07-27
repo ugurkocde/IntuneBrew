@@ -323,7 +323,50 @@ jobs:
             existing_versions=$(az storage blob list --container-name pkg --prefix "${app_name}_" --query "[].name" -o tsv)
             
             # Check if the exact version already exists
+            reuse_existing_blob=false
             if echo "$existing_versions" | grep -q "^${app_name}_${version}.pkg$"; then
+              reuse_existing_blob=true
+            fi
+
+            # The blob name carries the version only, and collect_app_info.py
+            # strips the build component of casks using "version,build" syntax.
+            # A build-only bump therefore leaves ${app_name}_${version}.pkg
+            # unchanged while the vendor artifact behind it moves, and reusing
+            # the blob would serve the superseded package forever. The two
+            # vendor artifacts are compared explicitly to catch that.
+            #
+            # Where each side comes from at this point in the run:
+            #   $url             the .url the collector refreshed with this run's
+            #                    vendor artifact, carried here through
+            #                    APPS_TO_BUILD by "Find apps needing packaging".
+            #   HEAD .vendor_url the vendor artifact the blob in Azure was built
+            #                    from, stashed by the run that built it and
+            #                    committed at the end of that run. The working
+            #                    tree copy cannot serve as that memory: the
+            #                    collector overwrites both url and vendor_url
+            #                    with the fresh artifact for every repackaged
+            #                    type, and nothing is committed before this step.
+            built_from_url=""
+            if [ "$reuse_existing_blob" = true ]; then
+              # cwd moves around inside this loop, so the repo is addressed
+              # explicitly. A file that is new or unreadable in HEAD yields an
+              # empty value, which keeps the pre-existing behavior.
+              built_from_url=$(git -C "$WORKSPACE_DIR" show "HEAD:Apps/${app_name}.json" 2>/dev/null | jq -r '.vendor_url // empty' 2>/dev/null) || built_from_url=""
+
+              # Both sides must be vendor URLs. An app the collector skipped this
+              # run still carries the Azure URL in .url, and comparing that
+              # against a vendor URL would repackage every night for nothing.
+              case "$url" in
+                *intunebrew.blob.core.windows.net*) built_from_url="" ;;
+              esac
+
+              if [ -n "$built_from_url" ] && [ -n "$url" ] && [ "$built_from_url" != "$url" ]; then
+                echo "Rebuilding ${app_name}_${version}.pkg: vendor artifact changed from $built_from_url to $url"
+                reuse_existing_blob=false
+              fi
+            fi
+
+            if [ "$reuse_existing_blob" = true ]; then
               echo "Package ${app_name}_${version}.pkg already exists in Azure storage."
               
               # Check if SHA already exists in JSON
