@@ -1,4 +1,5 @@
 import contextlib
+import hashlib
 import importlib.util
 import io
 import json
@@ -492,6 +493,122 @@ class PrefetchTests(unittest.TestCase):
             # The later list owns the type, which only holds if both loops saw the cask.
             self.assertEqual(app_data["type"], "pkg")
             self.assertEqual(collect_app_info.filename_collisions, [])
+
+
+def download_response(body=b"", status_code=200):
+    """Build a fake streaming response for one calculate_file_hash attempt."""
+    response = Mock(status_code=status_code)
+    if status_code >= 400:
+        response.raise_for_status.side_effect = collect_app_info.requests.HTTPError(
+            f"{status_code} Client Error", response=response
+        )
+    else:
+        response.raise_for_status.return_value = None
+    response.iter_content.return_value = iter([body] if body else [])
+    return response
+
+
+class CalculateFileHashTests(unittest.TestCase):
+    """The agent cascade mirrors ATTEMPTS in check_download_urls.py."""
+
+    def test_agents_stay_in_sync_with_the_url_health_checker(self):
+        spec = importlib.util.spec_from_file_location(
+            "check_download_urls", ROOT / ".github/scripts/check_download_urls.py"
+        )
+        health_check = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(health_check)
+
+        sibling_agents = []
+        for attempt in health_check.ATTEMPTS:
+            if attempt["user_agent"] not in sibling_agents:
+                sibling_agents.append(attempt["user_agent"])
+
+        self.assertEqual(list(collect_app_info.DOWNLOAD_USER_AGENTS), sibling_agents)
+
+    def test_request_carries_a_user_agent_header(self):
+        payload = b"payload bytes"
+        get = Mock(return_value=download_response(payload))
+
+        with patch.object(collect_app_info.requests, "get", get):
+            digest = collect_app_info.calculate_file_hash("https://example.test/app.dmg")
+
+        self.assertEqual(digest, hashlib.sha256(payload).hexdigest())
+        get.assert_called_once()
+        headers = get.call_args.kwargs["headers"]
+        self.assertEqual(
+            headers["User-Agent"], collect_app_info.DOWNLOAD_USER_AGENTS[0]
+        )
+
+    def test_rejected_agent_falls_through_to_the_next_one(self):
+        payload = b"the real installer"
+        responses = [
+            download_response(status_code=403),
+            download_response(payload),
+        ]
+        get = Mock(side_effect=responses)
+
+        with patch.object(collect_app_info.requests, "get", get):
+            digest = collect_app_info.calculate_file_hash("https://example.test/app.dmg")
+
+        # The rejection is retried, not swallowed, and the digest is the real file's.
+        self.assertEqual(digest, hashlib.sha256(payload).hexdigest())
+        self.assertEqual(get.call_count, 2)
+        used_agents = [call.kwargs["headers"]["User-Agent"] for call in get.call_args_list]
+        self.assertEqual(used_agents, list(collect_app_info.DOWNLOAD_USER_AGENTS[:2]))
+
+    def test_every_agent_rejected_yields_no_hash(self):
+        get = Mock(side_effect=lambda *a, **kw: download_response(status_code=403))
+
+        with patch.object(collect_app_info.requests, "get", get):
+            digest = collect_app_info.calculate_file_hash("https://example.test/app.dmg")
+
+        self.assertIsNone(digest)
+        self.assertEqual(get.call_count, len(collect_app_info.DOWNLOAD_USER_AGENTS))
+
+    def test_html_from_one_agent_falls_through_but_never_gets_hashed(self):
+        payload = b"the real installer"
+        get = Mock(
+            side_effect=[
+                download_response(b"<!DOCTYPE html><html>blocked</html>"),
+                download_response(payload),
+            ]
+        )
+
+        with patch.object(collect_app_info.requests, "get", get):
+            digest = collect_app_info.calculate_file_hash("https://example.test/app.dmg")
+
+        self.assertEqual(digest, hashlib.sha256(payload).hexdigest())
+
+    def test_html_from_every_agent_is_refused(self):
+        get = Mock(
+            side_effect=lambda *a, **kw: download_response(b"<html>blocked</html>")
+        )
+
+        with patch.object(collect_app_info.requests, "get", get):
+            digest = collect_app_info.calculate_file_hash("https://example.test/app.dmg")
+
+        self.assertIsNone(digest)
+
+    def test_empty_body_is_refused_after_every_agent(self):
+        get = Mock(side_effect=lambda *a, **kw: download_response(b""))
+
+        with patch.object(collect_app_info.requests, "get", get):
+            digest = collect_app_info.calculate_file_hash("https://example.test/app.dmg")
+
+        self.assertIsNone(digest)
+        self.assertEqual(get.call_count, len(collect_app_info.DOWNLOAD_USER_AGENTS))
+
+    def test_oversized_body_aborts_without_trying_more_agents(self):
+        get = Mock(side_effect=lambda *a, **kw: download_response(b"x" * 64))
+
+        with patch.object(collect_app_info, "MAX_DOWNLOAD_BYTES", 8):
+            with patch.object(collect_app_info.requests, "get", get):
+                digest = collect_app_info.calculate_file_hash(
+                    "https://example.test/app.dmg"
+                )
+
+        self.assertIsNone(digest)
+        self.assertEqual(get.call_count, 1)
 
 
 class CatalogConsistencyTests(unittest.TestCase):

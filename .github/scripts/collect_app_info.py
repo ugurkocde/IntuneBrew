@@ -1370,6 +1370,82 @@ DOWNLOAD_TIMEOUT = (30, 120)
 MAX_DOWNLOAD_BYTES = 10 * 1024 * 1024 * 1024
 # No DMG, PKG (xar), ZIP or tarball can start with these bytes
 HTML_PREFIXES = (b"<!doctype", b"<html")
+# Different CDNs block different clients, so a single agent leaves apps
+# permanently unhashable: existential.audio answers 406 to the default
+# python-requests agent, douyin.com 444, frdic.com 429, mobirise/syncovery/
+# amarsagoo 403, and hopperapp.com serves only a browser agent. Try them in
+# order and give up only when every attempt fails.
+#
+# Keep this list in sync with ATTEMPTS in check_download_urls.py, the sibling
+# script that probes these same URLs; the agent strings are deliberately
+# identical so both scripts look the same to a vendor allowlist. This is
+# duplicated rather than imported because collect_app_info.py is loaded by
+# path (tests use importlib) and .github/scripts is not always on sys.path.
+DOWNLOAD_USER_AGENTS = (
+    "IntuneBrew-URL-Health-Check/1.0",
+    "curl/8.4.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+)
+
+
+class _OversizedDownload(Exception):
+    """Raised when a body passes MAX_DOWNLOAD_BYTES, to stop the agent cascade."""
+
+
+def _stream_to_temp_file(url, user_agent, temp_file):
+    """Download url into temp_file with one agent. Returns the byte count, or None.
+
+    None means this attempt is unusable (HTTP error, HTML page, empty body) and
+    the caller should fall through to the next agent, exactly as check_url does
+    in check_download_urls.py. Raises _OversizedDownload when the size cap trips,
+    because another agent would only re-download the same oversized file.
+    """
+    temp_file.seek(0)
+    temp_file.truncate()
+
+    response = requests.get(
+        url,
+        stream=True,
+        timeout=DOWNLOAD_TIMEOUT,
+        headers={"User-Agent": user_agent},
+    )
+    # An abandoned attempt leaves a half-read stream behind, so release it the
+    # way check_url does in check_download_urls.py before the next agent runs.
+    try:
+        response.raise_for_status()
+
+        bytes_written = 0
+        first_chunk = True
+        for chunk in response.iter_content(chunk_size=8192):
+            if not chunk:
+                continue
+
+            if first_chunk:
+                first_chunk = False
+                prefix = chunk[:64].lstrip().lower()
+                if prefix.startswith(HTML_PREFIXES):
+                    print(f"Refusing to hash HTML page served as a binary: {url}")
+                    return None
+
+            bytes_written += len(chunk)
+            if bytes_written > MAX_DOWNLOAD_BYTES:
+                raise _OversizedDownload(
+                    f"Download exceeded size cap of {MAX_DOWNLOAD_BYTES} bytes, aborting: {url}"
+                )
+
+            temp_file.write(chunk)
+
+        temp_file.flush()
+
+        if bytes_written == 0:
+            print(f"Empty response body, refusing to hash: {url}")
+            return None
+
+        return bytes_written
+    finally:
+        response.close()
+
 
 def calculate_file_hash(url):
     """Download a file and calculate its SHA256 hash."""
@@ -1378,47 +1454,26 @@ def calculate_file_hash(url):
     # Create a temporary file
     with tempfile.NamedTemporaryFile(delete=False) as temp_file:
         try:
-            # Download the file in chunks
-            response = requests.get(url, stream=True, timeout=DOWNLOAD_TIMEOUT)
-            response.raise_for_status()
-
-            # Write the file in chunks
-            bytes_written = 0
-            first_chunk = True
-            for chunk in response.iter_content(chunk_size=8192):
-                if not chunk:
+            for user_agent in DOWNLOAD_USER_AGENTS:
+                try:
+                    if _stream_to_temp_file(url, user_agent, temp_file) is None:
+                        continue
+                except _OversizedDownload as e:
+                    print(str(e))
+                    return None
+                except Exception as e:
+                    print(f"❌ Error calculating hash: {str(e)}")
                     continue
 
-                if first_chunk:
-                    first_chunk = False
-                    prefix = chunk[:64].lstrip().lower()
-                    if prefix.startswith(HTML_PREFIXES):
-                        print(f"Refusing to hash HTML page served as a binary: {url}")
-                        return None
+                # Calculate SHA256 hash
+                sha256_hash = hashlib.sha256()
+                with open(temp_file.name, 'rb') as f:
+                    for chunk in iter(lambda: f.read(4096), b''):
+                        sha256_hash.update(chunk)
 
-                bytes_written += len(chunk)
-                if bytes_written > MAX_DOWNLOAD_BYTES:
-                    print(f"Download exceeded size cap of {MAX_DOWNLOAD_BYTES} bytes, aborting: {url}")
-                    return None
+                return sha256_hash.hexdigest()
 
-                temp_file.write(chunk)
-
-            temp_file.flush()
-
-            if bytes_written == 0:
-                print(f"Empty response body, refusing to hash: {url}")
-                return None
-
-            # Calculate SHA256 hash
-            sha256_hash = hashlib.sha256()
-            with open(temp_file.name, 'rb') as f:
-                for chunk in iter(lambda: f.read(4096), b''):
-                    sha256_hash.update(chunk)
-            
-            return sha256_hash.hexdigest()
-        
-        except Exception as e:
-            print(f"❌ Error calculating hash: {str(e)}")
+            print(f"❌ No user agent could download a hashable file: {url}")
             return None
         finally:
             # Clean up the temporary file
