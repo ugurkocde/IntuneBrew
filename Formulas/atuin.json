@@ -1,10 +1,11 @@
 {
   "name": "atuin",
   "description": "Improved shell history for zsh, bash, fish and nushell",
-  "version": "18.17.1",
+  "version": "18.18.0",
   "homepage": "https://atuin.sh/",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/atuin_18.17.1_arm64.pkg",
-  "fileName": "atuin_18.17.1_arm64.pkg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/atuin_18.18.0_arm64.pkg",
+  "fileName": "atuin_18.18.0_arm64.pkg",
+  "sha": "40cd76ea2805f50a76d57b6733c2c3d59066a0ce62c164fcdd5898c4188efc0e",
   "bundledDependencies": [],
   "binaryPath": "/usr/local/bin/atuin"
 }
