@@ -1,14 +1,14 @@
 {
   "name": "Garmin Express",
   "description": "Update maps and software, sync with Garmin Connect and register your device",
-  "version": "7.29.1",
+  "version": "7.29.2",
   "url": "https://download.garmin.com/omt/express/GarminExpress.dmg",
   "vendor_url": "https://download.garmin.com/omt/express/GarminExpress.dmg",
   "bundleId": "com.garmin.renu.client",
   "homepage": "https://www.garmin.com/en-US/software/express",
   "homebrew_cask": "garmin-express",
   "fileName": "GarminExpress.dmg",
-  "sha": "c40587718f913acdc0f1443429179de5fab6c02b8797381cc240a1e3f5b0f7ac",
+  "sha": "46b91b4be1f27a96ec48d0efbeb3edd11de0da8220e485f0aa1db98579f272b4",
   "category": "Utilities",
   "publisher": "Garmin Ltd.",
   "previous_version": "7.29.1"

@@ -1,14 +1,14 @@
 {
   "name": "BetterZip",
   "description": "Utility to create and modify archives",
-  "version": "6.0.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/betterzip_6.0.1.pkg",
+  "version": "6.0.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/betterzip_6.0.2.pkg",
   "vendor_url": "https://macitbetter.com/dl/BetterZip-5.4.2.zip",
   "bundleId": "com.macitbetter.betterzip",
   "homepage": "https://macitbetter.com/",
-  "fileName": "betterzip_6.0.1.pkg",
+  "fileName": "betterzip_6.0.2.pkg",
   "type": "app",
-  "sha": "13e4b40f1af2c379dce215211db0f0372dd12dcf9308e4dd2439617a1f5deeb6",
+  "sha": "ccffe0581ebc9d8cc2dc97331f065e091b8c3c8e80c1ad663e25978e8f5ae9f1",
   "previous_version": "6.0.1",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:23:43Z",

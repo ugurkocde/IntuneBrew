@@ -1,14 +1,14 @@
 {
   "name": "EagleFiler",
   "description": "Organise files, archive e-mails, save Web pages and notes, search everything",
-  "version": "1.9.20",
-  "url": "https://c-command.com/downloads/EagleFiler-1.9.20.dmg",
+  "version": "1.9.21",
+  "url": "https://c-command.com/downloads/EagleFiler-1.9.21.dmg",
   "vendor_url": "https://c-command.com/downloads/EagleFiler-1.9.20.dmg",
   "bundleId": "com.c-command.EagleFiler",
   "homepage": "https://c-command.com/eaglefiler/",
   "homebrew_cask": "eaglefiler",
-  "fileName": "EagleFiler-1.9.20.dmg",
-  "sha": "a994f5eecd004dfa822dc3cad1db7f3f1a14561a6415b2576fe72f47cabeb25f",
+  "fileName": "EagleFiler-1.9.21.dmg",
+  "sha": "4a2b7b010eed6729a27a6c451b3c6c9100266ac9eda19357d03f059618e2b434",
   "category": "Productivity",
   "publisher": "C-Command Software",
   "previous_version": "1.9.20"
