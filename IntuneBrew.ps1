@@ -1352,6 +1352,31 @@ if ($LocalJsonDirectory -and (Test-Path $LocalJsonDirectory)) {
     }
 }
 
+# For -UpdateAll we only care about apps the tenant already has. Rather than walking the
+# entire IntuneBrew catalogue (1000+ GitHub fetches plus a Graph lookup per app), ask Intune
+# once for the macOS PKG/DMG apps it actually contains. Returns the distinct set of display
+# names, or $null if the enumeration failed so the caller can fall back to a full scan.
+function Get-TenantMacAppNames {
+    $names = New-Object 'System.Collections.Generic.HashSet[string]'
+    $uri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp'))&`$select=id,displayName&`$top=100"
+    try {
+        while (-not [string]::IsNullOrEmpty($uri)) {
+            $response = Invoke-MgGraphRequest -Uri $uri -Method Get
+            foreach ($app in $response.value) {
+                if (-not [string]::IsNullOrWhiteSpace($app.displayName)) {
+                    [void]$names.Add($app.displayName)
+                }
+            }
+            $uri = $response.'@odata.nextLink'
+        }
+    }
+    catch {
+        Write-Host "Warning: Could not enumerate existing Intune apps ($_)." -ForegroundColor Yellow
+        return $null
+    }
+    return , $names
+}
+
 try {
     # Fetch the supported apps JSON
     $supportedApps = Invoke-RestMethod -Uri $supportedAppsUrl -Method Get
@@ -1403,8 +1428,59 @@ try {
     }
     elseif ($UpdateAll) {
         Write-Host "`nChecking existing Intune applications for available updates..." -ForegroundColor Cyan
-        $githubJsonUrls = $supportedApps.PSObject.Properties.Value
-        Write-Host "(Note: Only applications already in Intune will be checked for updates)" -ForegroundColor Yellow
+
+        $tenantAppNames = Get-TenantMacAppNames
+
+        if ($null -eq $tenantAppNames) {
+            # Enumeration failed (transient Graph error) — fall back to the full catalogue
+            # scan so we never silently skip updates.
+            Write-Host "(Falling back to full catalogue scan)" -ForegroundColor Yellow
+            $githubJsonUrls = $supportedApps.PSObject.Properties.Value
+        }
+        elseif ($tenantAppNames.Count -eq 0) {
+            Write-Host "No IntuneBrew-managed macOS apps found in Intune. Nothing to update." -ForegroundColor Yellow
+            $githubJsonUrls = @()
+        }
+        else {
+            # Build a normalized index of the catalogue (compact key -> JSON url), then map each
+            # existing Intune app back to its catalogue entry. This limits the version check to
+            # just the apps the tenant actually has, instead of the whole catalogue.
+            $catalogIndex = @{}
+            foreach ($prop in $supportedApps.PSObject.Properties) {
+                $compactKey = $prop.Name.ToLower() -replace '[^0-9\p{L}]', ''
+                if (-not [string]::IsNullOrEmpty($compactKey) -and -not $catalogIndex.ContainsKey($compactKey)) {
+                    $catalogIndex[$compactKey] = $prop.Value
+                }
+            }
+
+            $matchedUrls = New-Object 'System.Collections.Generic.List[string]'
+            $seenUrls = New-Object 'System.Collections.Generic.HashSet[string]'
+            $prefix = if ($null -ne $AppNamePrefix) { $AppNamePrefix.Trim() } else { '' }
+            $suffix = if ($null -ne $AppNameSuffix) { $AppNameSuffix.Trim() } else { '' }
+
+            foreach ($displayName in $tenantAppNames) {
+                # Strip the configured prefix/suffix so custom-named apps still resolve to the
+                # right catalogue entry (mirrors Get-FormattedAppName).
+                $baseName = $displayName
+                if ($prefix -and $baseName.StartsWith($prefix)) {
+                    $baseName = $baseName.Substring($prefix.Length)
+                }
+                if ($suffix -and $baseName.EndsWith($suffix)) {
+                    $baseName = $baseName.Substring(0, $baseName.Length - $suffix.Length)
+                }
+
+                $compactName = $baseName.Trim().ToLower() -replace '[^0-9\p{L}]', ''
+                if ($catalogIndex.ContainsKey($compactName)) {
+                    $url = $catalogIndex[$compactName]
+                    if ($seenUrls.Add($url)) {
+                        [void]$matchedUrls.Add($url)
+                    }
+                }
+            }
+
+            $githubJsonUrls = $matchedUrls.ToArray()
+            Write-Host "Found $($tenantAppNames.Count) macOS app(s) in Intune; $($githubJsonUrls.Count) match the IntuneBrew catalogue and will be checked for updates." -ForegroundColor Yellow
+        }
     }
     else {
         # Allow user to select which apps to process
