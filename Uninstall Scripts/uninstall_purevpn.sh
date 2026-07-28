@@ -21,6 +21,14 @@ pkill -f "PureVPN" 2>/dev/null || true
 echo "Stopping application with bundle ID com.purevpn.app.mac if running..."
 killall -9 "com.purevpn.app.mac" 2>/dev/null || true
 
+# Remove $HOME/Library/Application Scripts/4H849Z7V2K.com.purevpn.app.mac
+echo "Removing $HOME/Library/Application Scripts/4H849Z7V2K.com.purevpn.app.mac..."
+if [ -d "$HOME/Library/Application Scripts/4H849Z7V2K.com.purevpn.app.mac" ]; then
+    rm -rf "$HOME/Library/Application Scripts/4H849Z7V2K.com.purevpn.app.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/4H849Z7V2K.com.purevpn.app.mac" ]; then
+    rm -f "$HOME/Library/Application Scripts/4H849Z7V2K.com.purevpn.app.mac" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.purevpn.app.mac
 echo "Removing $HOME/Library/Application Support/com.purevpn.app.mac..."
 if [ -d "$HOME/Library/Application Support/com.purevpn.app.mac" ]; then
@@ -35,6 +43,14 @@ if [ -d "$HOME/Library/Caches/com.purevpn.app.mac" ]; then
     rm -rf "$HOME/Library/Caches/com.purevpn.app.mac" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.purevpn.app.mac" ]; then
     rm -f "$HOME/Library/Caches/com.purevpn.app.mac" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/4H849Z7V2K.com.purevpn.app.mac
+echo "Removing $HOME/Library/Group Containers/4H849Z7V2K.com.purevpn.app.mac..."
+if [ -d "$HOME/Library/Group Containers/4H849Z7V2K.com.purevpn.app.mac" ]; then
+    rm -rf "$HOME/Library/Group Containers/4H849Z7V2K.com.purevpn.app.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/4H849Z7V2K.com.purevpn.app.mac" ]; then
+    rm -f "$HOME/Library/Group Containers/4H849Z7V2K.com.purevpn.app.mac" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.purevpn.app.mac
@@ -59,6 +75,14 @@ if [ -d "$HOME/Library/Preferences/com.purevpn.app.mac.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.purevpn.app.mac.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.purevpn.app.mac.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.purevpn.app.mac.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/group.com.purevpn.app.mac.firebase.plist
+echo "Removing $HOME/Library/Preferences/group.com.purevpn.app.mac.firebase.plist..."
+if [ -d "$HOME/Library/Preferences/group.com.purevpn.app.mac.firebase.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/group.com.purevpn.app.mac.firebase.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/group.com.purevpn.app.mac.firebase.plist" ]; then
+    rm -f "$HOME/Library/Preferences/group.com.purevpn.app.mac.firebase.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.purevpn.app.mac.savedState

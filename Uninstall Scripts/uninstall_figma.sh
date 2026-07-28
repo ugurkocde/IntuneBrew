@@ -17,6 +17,10 @@ fi
 echo "Stopping Figma if running..."
 pkill -f "Figma" 2>/dev/null || true
 
+# Kill application with bundle ID com.figma.agent if running
+echo "Stopping application with bundle ID com.figma.agent if running..."
+killall -9 "com.figma.agent" 2>/dev/null || true
+
 # Remove /Applications/Figma.app
 echo "Removing /Applications/Figma.app..."
 if [ -d "/Applications/Figma.app" ]; then

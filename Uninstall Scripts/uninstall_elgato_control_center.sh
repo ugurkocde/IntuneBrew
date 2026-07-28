@@ -37,12 +37,28 @@ elif [ -f "$HOME/Library/Application Scripts/com.corsair.ControlCenterLauncher" 
     rm -f "$HOME/Library/Application Scripts/com.corsair.ControlCenterLauncher" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.corsair.controlcenter.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.corsair.controlcenter.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.corsair.controlcenter.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.corsair.controlcenter.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.corsair.controlcenter.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.corsair.controlcenter.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.corsair.ControlCenter
 echo "Removing $HOME/Library/Application Support/com.corsair.ControlCenter..."
 if [ -d "$HOME/Library/Application Support/com.corsair.ControlCenter" ]; then
     rm -rf "$HOME/Library/Application Support/com.corsair.ControlCenter" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/com.corsair.ControlCenter" ]; then
     rm -f "$HOME/Library/Application Support/com.corsair.ControlCenter" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Elgato Control Center
+echo "Removing $HOME/Library/Application Support/Elgato Control Center..."
+if [ -d "$HOME/Library/Application Support/Elgato Control Center" ]; then
+    rm -rf "$HOME/Library/Application Support/Elgato Control Center" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Elgato Control Center" ]; then
+    rm -f "$HOME/Library/Application Support/Elgato Control Center" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.corsair.ControlCenter
@@ -67,6 +83,14 @@ if [ -d "$HOME/Library/Containers/com.corsair.ControlCenterLauncher" ]; then
     rm -rf "$HOME/Library/Containers/com.corsair.ControlCenterLauncher" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.corsair.ControlCenterLauncher" ]; then
     rm -f "$HOME/Library/Containers/com.corsair.ControlCenterLauncher" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.corsair.ControlCenter
+echo "Removing $HOME/Library/HTTPStorages/com.corsair.ControlCenter..."
+if [ -d "$HOME/Library/HTTPStorages/com.corsair.ControlCenter" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.corsair.ControlCenter" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.corsair.ControlCenter" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.corsair.ControlCenter" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.corsair.ControlCenter.plist
