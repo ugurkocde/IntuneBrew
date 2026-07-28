@@ -4,7 +4,7 @@
   "version": "4.12.0.2999",
   "url": "https://assets.nanosystems.com/AutoUpdateS/macOS/standard/stable/Supremo_4.12.0.2999.dmg",
   "vendor_url": "https://assets.nanosystems.com/AutoUpdateS/macOS/standard/stable/Supremo_4.12.0.2999.dmg",
-  "bundleId": null,
+  "bundleId": "Supremo",
   "homepage": "https://www.supremocontrol.com/",
   "homebrew_cask": "supremo",
   "fileName": "Supremo_4.12.0.2999.dmg",
