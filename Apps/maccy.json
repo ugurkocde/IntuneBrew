@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "5af5969ded5ffc121d35f0b2bd8e4049a3bef0bddac5ecf099738c9f532e694c",
   "changelog": "https://github.com/p0deje/Maccy/releases",
-  "previous_version": "2.6.1",
+  "previous_version": "2.7.0",
   "category": "Utilities",
   "publisher": "Maccy",
   "homebrew_cask": "maccy"

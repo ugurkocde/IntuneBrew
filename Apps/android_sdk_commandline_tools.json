@@ -10,7 +10,7 @@
   "type": "app",
   "category": "Developer Tools",
   "publisher": "Google LLC",
-  "previous_version": "14742923",
+  "previous_version": "15859902",
   "sha": "835b62a26162b229b441d1f6d4680383815a270809eb33522c0d480fa5002c4e",
   "homebrew_cask": "android-commandlinetools"
 }
