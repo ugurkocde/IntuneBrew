@@ -47,6 +47,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.nordvpn.macos.teams" ]; then
     rm -f "$HOME/Library/Application Scripts/com.nordvpn.macos.teams" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.com.nordlayer.macos
+echo "Removing $HOME/Library/Application Scripts/group.com.nordlayer.macos..."
+if [ -d "$HOME/Library/Application Scripts/group.com.nordlayer.macos" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.com.nordlayer.macos" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.com.nordlayer.macos" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.com.nordlayer.macos" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nordvpn.macos.teams.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nordvpn.macos.teams.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nordvpn.macos.teams.sfl*" ]; then
@@ -77,6 +85,14 @@ if [ -d "$HOME/Library/Containers/com.nordvpn.macos.teams" ]; then
     rm -rf "$HOME/Library/Containers/com.nordvpn.macos.teams" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.nordvpn.macos.teams" ]; then
     rm -f "$HOME/Library/Containers/com.nordvpn.macos.teams" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/group.com.nordlayer.macos
+echo "Removing $HOME/Library/Group Containers/group.com.nordlayer.macos..."
+if [ -d "$HOME/Library/Group Containers/group.com.nordlayer.macos" ]; then
+    rm -rf "$HOME/Library/Group Containers/group.com.nordlayer.macos" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/group.com.nordlayer.macos" ]; then
+    rm -f "$HOME/Library/Group Containers/group.com.nordlayer.macos" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.nordvpn.macos.teams

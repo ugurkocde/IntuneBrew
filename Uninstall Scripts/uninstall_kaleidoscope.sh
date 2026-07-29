@@ -17,9 +17,9 @@ fi
 echo "Stopping Kaleidoscope if running..."
 pkill -f "Kaleidoscope" 2>/dev/null || true
 
-# Kill application with bundle ID app.kaleidoscope.v6 if running
-echo "Stopping application with bundle ID app.kaleidoscope.v6 if running..."
-killall -9 "app.kaleidoscope.v6" 2>/dev/null || true
+# Kill application with bundle ID app.kaleidoscope.v7 if running
+echo "Stopping application with bundle ID app.kaleidoscope.v7 if running..."
+killall -9 "app.kaleidoscope.v7" 2>/dev/null || true
 
 # Remove /Applications/Kaleidoscope.app
 echo "Removing /Applications/Kaleidoscope.app..."

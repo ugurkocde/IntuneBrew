@@ -29,6 +29,38 @@ elif [ -f "/Applications/WhatsApp.app" ]; then
     rm -f "/Applications/WhatsApp.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.net.whatsapp.family
+echo "Removing $HOME/Library/Application Scripts/group.net.whatsapp.family..."
+if [ -d "$HOME/Library/Application Scripts/group.net.whatsapp.family" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.net.whatsapp.family" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.net.whatsapp.family" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.net.whatsapp.family" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.private
+echo "Removing $HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.private..."
+if [ -d "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.private" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.private" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.private" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.private" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.shared
+echo "Removing $HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.shared..."
+if [ -d "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.shared" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.shared" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsApp.shared" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/group.net.whatsapp.WhatsAppSMB.shared
+echo "Removing $HOME/Library/Application Scripts/group.net.whatsapp.WhatsAppSMB.shared..."
+if [ -d "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsAppSMB.shared" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsAppSMB.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsAppSMB.shared" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.net.whatsapp.WhatsAppSMB.shared" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/net.whatsapp.WhatsApp*
 echo "Removing $HOME/Library/Application Scripts/net.whatsapp.WhatsApp*..."
 if [ -d "$HOME/Library/Application Scripts/net.whatsapp.WhatsApp*" ]; then
