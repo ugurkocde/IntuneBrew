@@ -1835,11 +1835,14 @@ def main():
             if os.path.exists(file_path):
                 with open(file_path, "r") as f:
                     existing_data = json.load(f)
-                    # Only calculate hash if:
-                    # 1. No sha exists, or
-                    # 2. Version has changed
+                    # Reuse the stored hash only while both the version and the
+                    # download URL are unchanged. Casks using version,build
+                    # syntax strip the build number above, so a build-only bump
+                    # leaves the version equal while the URL (and the file
+                    # behind it) changes.
                     if ("sha" in existing_data and
-                        existing_data.get("version") == app_info["version"]):
+                        existing_data.get("version") == app_info["version"] and
+                        existing_data.get("url") == app_info["url"]):
                         needs_hash = False
                         app_info["sha"] = existing_data["sha"]
                         print(f"ℹ️ Using existing hash for {display_name}")
@@ -1956,11 +1959,12 @@ def main():
             if os.path.exists(file_path):
                 with open(file_path, "r") as f:
                     existing_data = json.load(f)
-                    # Only calculate hash if:
-                    # 1. No sha exists, or
-                    # 2. Version has changed
+                    # Reuse the stored hash only while both the version and the
+                    # download URL are unchanged, so build-only bumps behind an
+                    # equal version string still refresh the hash.
                     if ("sha" in existing_data and
-                        existing_data.get("version") == app_info["version"]):
+                        existing_data.get("version") == app_info["version"] and
+                        existing_data.get("url") == app_info["url"]):
                         needs_hash = False
                         app_info["sha"] = existing_data["sha"]
                         print(f"ℹ️ Using existing hash for {display_name}")

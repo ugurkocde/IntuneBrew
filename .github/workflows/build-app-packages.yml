@@ -210,6 +210,7 @@ jobs:
           EOF
 
       - name: Process apps
+        id: process-apps
         if: env.APPS_TO_BUILD != ''
         env:
           AZURE_STORAGE_CONNECTION_STRING: ${{ secrets.AZURE_STORAGE_CONNECTION_STRING }}
@@ -393,12 +394,16 @@ jobs:
                         echo "❌ Failed to flatten package"
                         rm -rf "$temp_dir"
                         rm -f "${download_path}.pkg"
+                        FAILED_APPS+=("$app_name")
+                        ERROR_LOG+=("$app_name: Failed to flatten inner PKG from $url")
                         continue
                       fi
                     else
                       echo "❌ No inner PKG found"
                       rm -rf "$temp_dir"
                       rm -f "${download_path}.pkg"
+                      FAILED_APPS+=("$app_name")
+                      ERROR_LOG+=("$app_name: No inner PKG found after expanding $url")
                       continue
                     fi
                   fi
@@ -432,6 +437,11 @@ jobs:
                     fi
                   else
                     echo "❌ Failed to upload to Azure"
+                    rm -f "${download_path}.pkg"
+                    rm -rf "$temp_dir"
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Azure upload failed for ${app_name}_${version}.pkg")
+                    continue
                   fi
                 else
                   echo "❌ Failed to extract PKG for $app_name"
@@ -441,7 +451,7 @@ jobs:
                   ERROR_LOG+=("$app_name: Failed to extract pkg_in_pkg from $url")
                   continue
                 fi
-                
+
                 # Cleanup
                 echo "🧹 Cleaning up..."
                 echo "🗑️ Removing temporary files..."
@@ -450,6 +460,10 @@ jobs:
                 echo "✨ Cleanup complete"
               else
                 echo "❌ Failed to download PKG"
+                rm -f "$outer_pkg_path"
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: Failed to download outer PKG from $url")
+                continue
               fi
               
             elif [ "$app_type" = "pkg_in_dmg" ]; then
@@ -466,6 +480,9 @@ jobs:
                 ls -lh "${download_path}.dmg"
               else
                 echo "❌ Failed to download DMG"
+                rm -f "${download_path}.dmg"
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: Failed to download DMG from $url")
                 continue
               fi
               
@@ -490,13 +507,18 @@ jobs:
                 echo "❌ Failed to mount DMG"
                 rm -f "${download_path}.dmg"
                 rm -rf "${download_path}_mount"
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: Could not mount DMG from $url")
                 continue
               fi
               
               # Find PKG file
               echo "🔍 Searching for PKG file..."
               pkg_file=$(find "${download_path}_mount" -name "*.pkg" -print -quit)
-              
+
+              # The DMG must be unmounted whether this succeeds or not, so
+              # failures set a flag here and are recorded after the cleanup.
+              pkg_in_dmg_error=""
               if [ -n "$pkg_file" ]; then
                 echo "✅ Found PKG file: $pkg_file"
                 echo "📦 Package size: $(ls -lh "$pkg_file" | awk '{print $5}')"
@@ -534,13 +556,15 @@ jobs:
                   fi
                 else
                   echo "❌ Failed to upload to Azure"
+                  pkg_in_dmg_error="Azure upload failed for ${app_name}_${version}.pkg"
                 fi
               else
                 echo "❌ No PKG file found in DMG for $app_name"
                 echo "📁 Contents of mount point:"
                 ls -R "${download_path}_mount"
+                pkg_in_dmg_error="No PKG found inside DMG from $url"
               fi
-              
+
               # Cleanup
               echo "🧹 Cleaning up..."
               echo "💿 Unmounting DMG..."
@@ -549,6 +573,12 @@ jobs:
               rm -f "${download_path}.dmg"
               rm -rf "${download_path}_mount"
               echo "✨ Cleanup complete"
+
+              if [ -n "$pkg_in_dmg_error" ]; then
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: $pkg_in_dmg_error")
+                continue
+              fi
 
             else
               # Download app
@@ -833,6 +863,8 @@ jobs:
                   ls -R "${app_name}_extracted"
                   cd "$WORKSPACE_DIR"
                   rm -rf "${app_name}_extracted"
+                  FAILED_APPS+=("$app_name")
+                  ERROR_LOG+=("$app_name: No .app or .pkg found inside archive from $url")
                   continue
                 fi
               fi
@@ -853,13 +885,23 @@ jobs:
               file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
               echo "📝 SHA256: $file_hash"
 
-              # Upload to Azure with version in filename
+              # Upload to Azure with version in filename. The old versions are
+              # only deleted and the JSON only rewritten after a confirmed
+              # upload, otherwise a transient Azure failure would remove the
+              # last working package and leave the catalog pointing at nothing.
               echo "Uploading $app_name version $version to Azure Blob Storage..."
-              az storage blob upload \
+              if ! az storage blob upload \
                 --container-name pkg \
                 --file "${app_name}_${version}.pkg" \
                 --name "${app_name}_${version}.pkg" \
-                --overwrite true
+                --overwrite true; then
+                echo "❌ Failed to upload ${app_name}_${version}.pkg to Azure"
+                sudo rm -rf "${app_name}_extracted"
+                rm -f "${app_name}_${version}.pkg"
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: Azure upload failed for ${app_name}_${version}.pkg")
+                continue
+              fi
 
               # Delete older versions of this app from Azure storage
               if [ ! -z "$existing_versions" ]; then
@@ -935,6 +977,29 @@ jobs:
             echo "" >> $GITHUB_STEP_SUMMARY
             echo "All $total_apps_processed apps processed successfully!" >> $GITHUB_STEP_SUMMARY
           fi
+
+          # Persist the failure list so a later step can maintain the
+          # packaging-failures tracking issue. Absolute path: the loop above
+          # cds into $HOME/Desktop for downloads and does not always return.
+          echo "failed_count=${#FAILED_APPS[@]}" >> "$GITHUB_OUTPUT"
+          {
+            echo "Automated packaging report from $(date -u +%Y-%m-%d)."
+            echo ""
+            echo "Processed $total_apps_processed apps, ${#FAILED_APPS[@]} failed."
+            echo ""
+            if [ ${#ERROR_LOG[@]} -gt 0 ]; then
+              echo "These apps could not be repackaged, so their catalog entries keep"
+              echo "the previous package until a build succeeds. Failures listed here"
+              echo "repeat night after night until the underlying cause is fixed or"
+              echo "the app is deprecated."
+              echo ""
+              echo "| App | Error |"
+              echo "| --- | --- |"
+              for error in "${ERROR_LOG[@]}"; do
+                echo "| ${error%%:*} | ${error#*: } |"
+              done
+            fi
+          } > "$WORKSPACE_DIR/packaging-failures.md"
 
       # The collector rewrites every app's url to the vendor URL, and Process
       # apps restores the Azure URL only for the apps it packaged. On a scoped
@@ -1022,6 +1087,35 @@ jobs:
 
           echo "Push failed after $MAX_RETRIES attempts"
           exit 1
+
+      # Keep one tracking issue in sync with the packaging failures of full
+      # builds. Scoped builds only process the apps a push added, so their
+      # zero-failure result says nothing about the rest of the catalog and
+      # must not close the issue.
+      - name: Report packaging failures
+        if: |
+          steps.scope.outputs.scope != 'partial' &&
+          steps.process-apps.outputs.failed_count != ''
+        env:
+          GH_TOKEN: ${{ github.token }}
+          FAILED_COUNT: ${{ steps.process-apps.outputs.failed_count }}
+          ISSUE_TITLE: Packaging failures in app build
+        run: |
+          number=$(gh issue list --repo "$GITHUB_REPOSITORY" --state open \
+            --search "\"$ISSUE_TITLE\" in:title" --json number,title \
+            --jq ".[] | select(.title == \"$ISSUE_TITLE\") | .number" | head -1)
+
+          if [ "$FAILED_COUNT" != "0" ]; then
+            if [ -n "$number" ]; then
+              gh issue edit "$number" --repo "$GITHUB_REPOSITORY" --body-file packaging-failures.md
+              echo "Updated issue #$number"
+            else
+              gh issue create --repo "$GITHUB_REPOSITORY" --title "$ISSUE_TITLE" --body-file packaging-failures.md
+            fi
+          elif [ -n "$number" ]; then
+            gh issue close "$number" --repo "$GITHUB_REPOSITORY" \
+              --comment "Every app packaged successfully in the latest full build."
+          fi
 
       # Apps are only downloadable once the steps above have published them, so
       # this is the first point at which a requester can be told their app is live.
