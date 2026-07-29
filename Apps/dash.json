@@ -4,7 +4,7 @@
   "version": "8.1.1",
   "url": "https://intunebrew.blob.core.windows.net/pkg/dash_8.1.1.pkg",
   "vendor_url": "https://kapeli.com/downloads/v8/Dash.zip",
-  "bundleId": null,
+  "bundleId": "com.kapeli.dash",
   "homepage": "https://kapeli.com/dash",
   "homebrew_cask": "dash",
   "fileName": "dash_8.1.1.pkg",
