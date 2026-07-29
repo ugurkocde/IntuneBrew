@@ -9,6 +9,7 @@
   "homebrew_cask": "blackhole-64ch",
   "fileName": "BlackHole64ch-0.7.1.pkg",
   "type": "pkg",
+  "sha": "586b614cffb8b84ac39b2b926b69d5416ab9a4d64c63217b71ce2f5f5d7aabd1",
   "category": "Utilities",
   "publisher": "Existential Audio",
   "previous_version": "0.7.1"

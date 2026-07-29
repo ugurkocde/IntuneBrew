@@ -12,5 +12,7 @@
   "category": "Media",
   "publisher": "MultiViewer",
   "homebrew_cask": "multiviewer",
-  "type": "dmg"
+  "type": "dmg",
+  "deprecated": true,
+  "deprecation_reason": "superseded by Apps/multiviewer.json after the cask renamed to multiviewer"
 }

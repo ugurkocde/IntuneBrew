@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1153-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1151-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -605,6 +605,8 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 - 📈 Real-time progress monitoring
 
 ## 🚀 Getting Started
+
+> **Architecture:** IntuneBrew targets Apple silicon (arm64) Macs. Download URLs come from each Homebrew cask's default definition, which is the Apple silicon build; where a vendor ships a universal binary, that is what you get. Intel-specific builds are not selected, so deploy to Intel devices only after verifying the specific app yourself.
 
 ### 📱 Supported Applications
 

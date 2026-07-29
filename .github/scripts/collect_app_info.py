@@ -1,5 +1,6 @@
 import json
 import os
+import sys
 import requests
 import re
 import fileinput
@@ -8,6 +9,7 @@ import subprocess
 from datetime import datetime
 import hashlib
 import tempfile
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse, unquote
 
 
@@ -310,7 +312,6 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/combine-pdfs.json",
     "https://formulae.brew.sh/api/cask/compositor.json",
     "https://formulae.brew.sh/api/cask/crossover.json",
-    "https://formulae.brew.sh/api/cask/dash-dash.json",
     "https://formulae.brew.sh/api/cask/devkinsta.json",
     "https://formulae.brew.sh/api/cask/devonagent.json",
     "https://formulae.brew.sh/api/cask/elan.json",
@@ -932,7 +933,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/bluej.json",
     "https://formulae.brew.sh/api/cask/boost-note.json",
     "https://formulae.brew.sh/api/cask/bria.json",
-    "https://formulae.brew.sh/api/cask/caffeine.json",
     "https://formulae.brew.sh/api/cask/cerebro.json",
     "https://formulae.brew.sh/api/cask/chronosync.json",
     "https://formulae.brew.sh/api/cask/cleanmymac-zh.json",
@@ -1262,7 +1262,8 @@ pkg_in_pkg_urls = [
     "https://formulae.brew.sh/api/cask/sony-ps-remote-play.json",
     "https://formulae.brew.sh/api/cask/philips-hue-sync.json",
     "https://formulae.brew.sh/api/cask/nordvpn.json",
-    "https://formulae.brew.sh/api/cask/gyazo.json"
+    "https://formulae.brew.sh/api/cask/gyazo.json",
+    "https://formulae.brew.sh/api/cask/tailscale-app.json",
 ]
 
 # PKG
@@ -1352,7 +1353,6 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/vnc-server.json",
     "https://formulae.brew.sh/api/cask/mamp.json",
     "https://formulae.brew.sh/api/cask/dotnet-sdk.json",
-    "https://formulae.brew.sh/api/cask/tailscale-app.json",
 ]
 
 # Custom scraper scripts to run
@@ -1365,34 +1365,116 @@ custom_scrapers = [
     ".github/scripts/scrapers/wazuh_agent.sh"
 ]
 
+# 30s connect, 120s between reads: a hung vendor server must not stall the nightly run
+DOWNLOAD_TIMEOUT = (30, 120)
+# Runaway guard only; no catalog artifact comes close to this size
+MAX_DOWNLOAD_BYTES = 10 * 1024 * 1024 * 1024
+# No DMG, PKG (xar), ZIP or tarball can start with these bytes
+HTML_PREFIXES = (b"<!doctype", b"<html")
+# Different CDNs block different clients, so a single agent leaves apps
+# permanently unhashable: existential.audio answers 406 to the default
+# python-requests agent, douyin.com 444, frdic.com 429, mobirise/syncovery/
+# amarsagoo 403, and hopperapp.com serves only a browser agent. Try them in
+# order and give up only when every attempt fails.
+#
+# Keep this list in sync with ATTEMPTS in check_download_urls.py, the sibling
+# script that probes these same URLs; the agent strings are deliberately
+# identical so both scripts look the same to a vendor allowlist. This is
+# duplicated rather than imported because collect_app_info.py is loaded by
+# path (tests use importlib) and .github/scripts is not always on sys.path.
+DOWNLOAD_USER_AGENTS = (
+    "IntuneBrew-URL-Health-Check/1.0",
+    "curl/8.4.0",
+    "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 "
+    "(KHTML, like Gecko) Chrome/126.0 Safari/537.36",
+)
+
+
+class _OversizedDownload(Exception):
+    """Raised when a body passes MAX_DOWNLOAD_BYTES, to stop the agent cascade."""
+
+
+def _stream_to_temp_file(url, user_agent, temp_file):
+    """Download url into temp_file with one agent. Returns the byte count, or None.
+
+    None means this attempt is unusable (HTTP error, HTML page, empty body) and
+    the caller should fall through to the next agent, exactly as check_url does
+    in check_download_urls.py. Raises _OversizedDownload when the size cap trips,
+    because another agent would only re-download the same oversized file.
+    """
+    temp_file.seek(0)
+    temp_file.truncate()
+
+    response = requests.get(
+        url,
+        stream=True,
+        timeout=DOWNLOAD_TIMEOUT,
+        headers={"User-Agent": user_agent},
+    )
+    # An abandoned attempt leaves a half-read stream behind, so release it the
+    # way check_url does in check_download_urls.py before the next agent runs.
+    try:
+        response.raise_for_status()
+
+        bytes_written = 0
+        first_chunk = True
+        for chunk in response.iter_content(chunk_size=8192):
+            if not chunk:
+                continue
+
+            if first_chunk:
+                first_chunk = False
+                prefix = chunk[:64].lstrip().lower()
+                if prefix.startswith(HTML_PREFIXES):
+                    print(f"Refusing to hash HTML page served as a binary: {url}")
+                    return None
+
+            bytes_written += len(chunk)
+            if bytes_written > MAX_DOWNLOAD_BYTES:
+                raise _OversizedDownload(
+                    f"Download exceeded size cap of {MAX_DOWNLOAD_BYTES} bytes, aborting: {url}"
+                )
+
+            temp_file.write(chunk)
+
+        temp_file.flush()
+
+        if bytes_written == 0:
+            print(f"Empty response body, refusing to hash: {url}")
+            return None
+
+        return bytes_written
+    finally:
+        response.close()
+
+
 def calculate_file_hash(url):
     """Download a file and calculate its SHA256 hash."""
     print(f"📥 Downloading file from {url} to calculate hash...")
-    
+
     # Create a temporary file
     with tempfile.NamedTemporaryFile(delete=False) as temp_file:
         try:
-            # Download the file in chunks
-            response = requests.get(url, stream=True)
-            response.raise_for_status()
-            
-            # Write the file in chunks
-            for chunk in response.iter_content(chunk_size=8192):
-                if chunk:
-                    temp_file.write(chunk)
-            
-            temp_file.flush()
-            
-            # Calculate SHA256 hash
-            sha256_hash = hashlib.sha256()
-            with open(temp_file.name, 'rb') as f:
-                for chunk in iter(lambda: f.read(4096), b''):
-                    sha256_hash.update(chunk)
-            
-            return sha256_hash.hexdigest()
-        
-        except Exception as e:
-            print(f"❌ Error calculating hash: {str(e)}")
+            for user_agent in DOWNLOAD_USER_AGENTS:
+                try:
+                    if _stream_to_temp_file(url, user_agent, temp_file) is None:
+                        continue
+                except _OversizedDownload as e:
+                    print(str(e))
+                    return None
+                except Exception as e:
+                    print(f"❌ Error calculating hash: {str(e)}")
+                    continue
+
+                # Calculate SHA256 hash
+                sha256_hash = hashlib.sha256()
+                with open(temp_file.name, 'rb') as f:
+                    for chunk in iter(lambda: f.read(4096), b''):
+                        sha256_hash.update(chunk)
+
+                return sha256_hash.hexdigest()
+
+            print(f"❌ No user agent could download a hashable file: {url}")
             return None
         finally:
             # Clean up the temporary file
@@ -1467,12 +1549,71 @@ def find_app_file(apps_folder, display_name=None, cask_token=None):
     return None
 
 
+# Two casks whose display names sanitize to the same filename resolve to one
+# Apps/*.json and would take turns overwriting it on every run. Collisions are
+# collected here instead of being written, and fail the run at the end of main().
+filename_collisions = []
+
+
+def claim_app_file(file_path, cask_token):
+    """Return True when cask_token may write file_path, else record the collision."""
+    if not cask_token or not os.path.exists(file_path):
+        return True
+
+    try:
+        with open(file_path, "r") as f:
+            existing_data = json.load(f)
+    except (OSError, ValueError):
+        # An unreadable file carries no ownership claim, so writing it is the
+        # same repair as writing a missing one.
+        return True
+
+    existing_cask = existing_data.get("homebrew_cask") or ""
+    if not existing_cask or existing_cask == cask_token:
+        return True
+
+    filename_collisions.append(
+        {
+            "file_path": file_path,
+            "existing_cask": existing_cask,
+            "incoming_cask": cask_token,
+        }
+    )
+    print(
+        f"Filename collision: cask '{cask_token}' resolves to {file_path}, "
+        f"which belongs to cask '{existing_cask}'. Not writing."
+    )
+    return False
+
+
+def report_filename_collisions():
+    """Print every recorded collision. Returns True when any were recorded."""
+    if not filename_collisions:
+        return False
+
+    print("\n" + "=" * 72)
+    print(f"FILENAME COLLISIONS DETECTED: {len(filename_collisions)}")
+    print("=" * 72)
+    print("Two casks map to one Apps JSON file. Nothing was written for the")
+    print("casks below. Resolve by renaming one file and setting its")
+    print("homebrew_cask, or by dropping one cask from the URL lists.")
+    for collision in filename_collisions:
+        print("")
+        print(f"  File          : {collision['file_path']}")
+        print(f"  Owned by cask : {collision['existing_cask']}")
+        print(f"  Blocked cask  : {collision['incoming_cask']}")
+    print("=" * 72 + "\n")
+    return True
+
+
 def mark_app_deprecated(apps_folder, display_name, reason, cask_token=None):
     """Flag an existing app JSON as deprecated so it is excluded from supported_apps.json."""
     file_path = find_app_file(apps_folder, display_name=display_name, cask_token=cask_token)
     identifier = display_name or cask_token or "unknown cask"
     if not file_path:
         print(f"Cask for {identifier} is unavailable ({reason}) and has no local JSON file, skipping")
+        return False
+    if not claim_app_file(file_path, cask_token):
         return False
     with open(file_path, "r") as f:
         app_data = json.load(f)
@@ -1490,19 +1631,95 @@ def mark_app_deprecated(apps_folder, display_name, reason, cask_token=None):
     return True
 
 
-def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, is_pkg_in_pkg=False, is_pkg=False):
-    cask_token = get_cask_token(json_url)
-    response = requests.get(json_url)
+# Cask JSON is a few kilobytes: 10s to connect, 30s to read is generous, and a
+# stalled endpoint must not hold a worker for the whole run.
+CASK_TIMEOUT = (10, 30)
+# The connection pool must be at least as large as the worker count, otherwise
+# threads queue on the pool instead of on the network.
+CASK_WORKERS = 16
+
+
+class TimeoutSession(requests.Session):
+    """requests.Session has no default timeout, so every cask fetch would hang forever."""
+
+    def request(self, method, url, **kwargs):
+        kwargs.setdefault("timeout", CASK_TIMEOUT)
+        return super().request(method, url, **kwargs)
+
+
+def build_cask_session():
+    """Connection-reusing session for the Homebrew API. No retries: the nightly run
+    reruns anyway, and a retrying adapter multiplies the stall of a dead endpoint."""
+    session = TimeoutSession()
+    adapter = requests.adapters.HTTPAdapter(
+        pool_connections=CASK_WORKERS,
+        pool_maxsize=CASK_WORKERS,
+        max_retries=0,
+    )
+    session.mount("https://", adapter)
+    session.mount("http://", adapter)
+    return session
+
+
+cask_session = build_cask_session()
+
+# url -> parsed cask JSON, or the exception raised while fetching it. Filled by
+# prefetch_cask_data and read by get_homebrew_app_info.
+cask_cache = {}
+
+
+def fetch_cask_data(json_url):
+    """Fetch one cask JSON. Raises CaskUnavailableError when Homebrew no longer serves it."""
+    response = cask_session.get(json_url)
     try:
         response.raise_for_status()
     except requests.HTTPError as error:
         if response.status_code == 404:
             raise CaskUnavailableError(
                 "cask removed from Homebrew",
-                cask_token=cask_token,
+                cask_token=get_cask_token(json_url),
             ) from error
         raise
-    data = response.json()
+    return response.json()
+
+
+def prefetch_cask_data(json_urls):
+    """Fetch every cask JSON once, in parallel.
+
+    Network only: nothing here touches the Apps folder, so the write ordering the
+    catalog depends on stays with the sequential loops in main(). A failure is stored
+    and re-raised when its URL is consumed, which keeps the per-app error flow
+    (notably 404 -> CaskUnavailableError -> mark_app_deprecated) unchanged.
+    """
+    unique_urls = list(dict.fromkeys(json_urls))
+    cask_cache.clear()
+    print(f"\nPrefetching {len(unique_urls)} cask documents with {CASK_WORKERS} workers...")
+
+    with ThreadPoolExecutor(max_workers=CASK_WORKERS) as executor:
+        futures = {executor.submit(fetch_cask_data, url): url for url in unique_urls}
+        for completed, future in enumerate(as_completed(futures), start=1):
+            url = futures[future]
+            try:
+                cask_cache[url] = future.result()
+            except Exception as error:
+                cask_cache[url] = error
+            if completed % 100 == 0:
+                print(f"Prefetched {completed}/{len(unique_urls)} cask documents")
+
+    print(f"Prefetched {len(cask_cache)}/{len(unique_urls)} cask documents")
+    return cask_cache
+
+
+def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, is_pkg_in_pkg=False, is_pkg=False):
+    cask_token = get_cask_token(json_url)
+    if json_url in cask_cache:
+        cached = cask_cache[json_url]
+        if isinstance(cached, Exception):
+            raise cached
+        data = cached
+    else:
+        # Defensive: a URL the prefetch never saw is still fetched here.
+        data = fetch_cask_data(json_url)
 
     # A deprecated or disabled cask means the vendor discontinued the app or
     # its download can no longer be fetched reliably. Its URL will rot, so it
@@ -1751,6 +1968,10 @@ def main():
     supported_apps = []
     apps_info = []
 
+    prefetch_cask_data(
+        app_urls + homebrew_cask_urls + pkg_in_pkg_urls + pkg_urls + pkg_in_dmg_urls
+    )
+
     # Process apps that need special packaging
     for url in app_urls:
         try:
@@ -1763,6 +1984,9 @@ def main():
             print(f"🔍 Sanitized filename: {file_name}")
             file_path = os.path.join(apps_folder, file_name)
             print(f"📝 Attempting to write to: {os.path.abspath(file_path)}")
+
+            if not claim_app_file(file_path, app_info.get("homebrew_cask")):
+                continue
 
             # For existing files, update version, url, and recalculate SHA if version changed
             if os.path.exists(file_path):
@@ -1795,7 +2019,15 @@ def main():
                     else:
                         # For non-repackaged apps, update fileName to match the URL
                         existing_data["fileName"] = get_filename_from_url(app_info["url"], app_name=display_name, version=new_version)
-                    
+
+                    # Ownership: the list an app is processed from owns its type and
+                    # vendor_url, otherwise a stale value survives every run forever.
+                    # These assignments must stay below the fileName block, which
+                    # branches on the previous type and would change fileName handling
+                    # if it saw the refreshed value.
+                    existing_data["type"] = "app"
+                    existing_data["vendor_url"] = app_info["vendor_url"]
+
                     # Calculate new hash if version changed
                     if version_changed:
                         print(f"🔍 Version changed, calculating new SHA256 hash for {display_name}...")
@@ -1829,6 +2061,9 @@ def main():
             supported_apps.append(display_name)
             file_name = f"{sanitize_filename(display_name)}.json"
             file_path = os.path.join(apps_folder, file_name)
+
+            if not claim_app_file(file_path, app_info.get("homebrew_cask")):
+                continue
 
             # Check if we need to calculate hash
             needs_hash = True
@@ -1866,9 +2101,13 @@ def main():
                     new_sha = app_info.get("sha")
                     previous_version = existing_data.get("version")
                     
-                    # Preserve all existing data except version, url, sha, and previous_version
+                    # Preserve all existing data except version, url, sha, and previous_version.
+                    # type, homebrew_cask and vendor_url are owned by the list being
+                    # processed: these casks are vendor-served DMGs, so the fresh app_info
+                    # carries no type key at all and a stale repackaging type is dropped.
                     for key in existing_data:
-                        if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason"]:
+                        if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason",
+                                       "type", "homebrew_cask", "vendor_url"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url, sha and previous_version
@@ -1906,6 +2145,9 @@ def main():
             file_name = f"{sanitize_filename(display_name)}.json"
             file_path = os.path.join(apps_folder, file_name)
 
+            if not claim_app_file(file_path, app_info.get("homebrew_cask")):
+                continue
+
             # For existing files, only update version, url and previous_version
             if os.path.exists(file_path):
                 with open(file_path, "r") as f:
@@ -1915,9 +2157,12 @@ def main():
                     new_url = app_info["url"]
                     previous_version = existing_data.get("version")
                     
-                    # Preserve all existing data except version, url and previous_version
+                    # Preserve all existing data except version, url and previous_version.
+                    # type, homebrew_cask and vendor_url are owned by the list being
+                    # processed, so the fresh "pkg_in_pkg" values win over whatever is on disk.
                     for key in existing_data:
-                        if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason"]:
+                        if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason",
+                                       "type", "homebrew_cask", "vendor_url"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version
@@ -1954,6 +2199,9 @@ def main():
             file_name = f"{sanitize_filename(display_name)}.json"
             file_path = os.path.join(apps_folder, file_name)
 
+            if not claim_app_file(file_path, app_info.get("homebrew_cask")):
+                continue
+
             # Check if we need to calculate hash for PKG apps
             needs_hash = True
             if os.path.exists(file_path):
@@ -1988,9 +2236,12 @@ def main():
                     new_sha = app_info.get("sha")
                     previous_version = existing_data.get("version")
                     
-                    # Preserve all existing data except version, url, sha and previous_version
+                    # Preserve all existing data except version, url, sha and previous_version.
+                    # type, homebrew_cask and vendor_url are owned by the list being
+                    # processed, so the fresh "pkg" values win over whatever is on disk.
                     for key in existing_data:
-                        if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason"]:
+                        if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason",
+                                       "type", "homebrew_cask", "vendor_url"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url, sha and previous_version
@@ -2030,6 +2281,9 @@ def main():
             file_name = f"{sanitize_filename(display_name)}.json"
             file_path = os.path.join(apps_folder, file_name)
 
+            if not claim_app_file(file_path, app_info.get("homebrew_cask")):
+                continue
+
             # For existing files, only update version, url and previous_version
             if os.path.exists(file_path):
                 with open(file_path, "r") as f:
@@ -2039,9 +2293,12 @@ def main():
                     new_url = app_info["url"]
                     previous_version = existing_data.get("version")
                     
-                    # Preserve all existing data except version, url and previous_version
+                    # Preserve all existing data except version, url and previous_version.
+                    # type, homebrew_cask and vendor_url are owned by the list being
+                    # processed, so the fresh "pkg_in_dmg" values win over whatever is on disk.
                     for key in existing_data:
-                        if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason"]:
+                        if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason",
+                                       "type", "homebrew_cask", "vendor_url"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version
@@ -2107,6 +2364,11 @@ def main():
     # Update the README with both the apps table and latest changes
     update_readme_apps(supported_apps)
     update_readme_with_latest_changes(apps_info)
+
+    # A collision is catalog corruption in the making and needs a human decision,
+    # so the run must go red before anything is committed.
+    if report_filename_collisions():
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()

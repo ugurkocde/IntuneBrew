@@ -9,6 +9,7 @@
   "homebrew_cask": "blackhole-2ch",
   "fileName": "BlackHole2ch-0.7.1.pkg",
   "type": "pkg",
+  "sha": "57b540f27a3e29c37e310e01bee0fdfab76733087e47f997ef9dccf851400dcf",
   "category": "Utilities",
   "publisher": "Existential Audio",
   "previous_version": "0.7.1"

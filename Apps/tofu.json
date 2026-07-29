@@ -8,6 +8,7 @@
   "homepage": "https://amarsagoo.info/tofu/",
   "homebrew_cask": "tofu",
   "fileName": "Tofu.dmg",
+  "sha": "65f7d43e3bb2a4f1981c6dca4f3595982446a19caa2cc29b5ad2bcb2d050e68e",
   "category": "Media",
   "publisher": "Amar Sagoo",
   "previous_version": "3.1"

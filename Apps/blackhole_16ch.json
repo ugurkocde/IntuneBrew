@@ -9,6 +9,7 @@
   "homebrew_cask": "blackhole-16ch",
   "fileName": "BlackHole16ch-0.7.1.pkg",
   "type": "pkg",
+  "sha": "57254e2f76cd40db7f3f715238b1a2cb2bd08819d38abf4087f2944f71a3641a",
   "category": "Utilities",
   "publisher": "Existential Audio",
   "previous_version": "0.7.1"
