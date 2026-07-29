@@ -3,7 +3,7 @@
   "description": "Assign keys, and then decorate and label them",
   "version": "7.5.1.22901",
   "url": "https://edge.elgato.com/egc/macos/sd/Stream_Deck_7.5.1.22901.pkg",
-  "vendor_url": "https://edge.elgato.com/egc/macos/sd/Stream_Deck_7.4.1.22720.pkg",
+  "vendor_url": "https://edge.elgato.com/egc/macos/sd/Stream_Deck_7.5.1.22901.pkg",
   "bundleId": "com.elgato.StreamDeck",
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
   "homebrew_cask": "elgato-stream-deck",

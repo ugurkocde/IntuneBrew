@@ -3,7 +3,7 @@
   "description": "Drag-and-drop Git history editor",
   "version": "1.6.2",
   "url": "https://downloads.lemon.garden/retcon/retcon-1.6.2.dmg",
-  "vendor_url": "https://downloads.lemon.garden/retcon/retcon-1.5.3.dmg",
+  "vendor_url": "https://downloads.lemon.garden/retcon/retcon-1.6.2.dmg",
   "bundleId": "garden.lemon.Retcon",
   "homepage": "https://retcon.app/",
   "homebrew_cask": "retcon",

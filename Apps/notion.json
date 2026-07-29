@@ -3,7 +3,7 @@
   "description": "App to write, plan, collaborate, and get organised",
   "version": "7.28.0",
   "url": "https://desktop-release.notion-static.com/Notion-7.28.0-arm64.dmg",
-  "vendor_url": "https://desktop-release.notion-static.com/Notion-7.10.0-arm64.dmg",
+  "vendor_url": "https://desktop-release.notion-static.com/Notion-7.28.0-arm64.dmg",
   "bundleId": "notion.id",
   "homepage": "https://www.notion.so/",
   "homebrew_cask": "notion",

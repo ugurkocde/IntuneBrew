@@ -3,7 +3,7 @@
   "description": "Catalogue of hi-res music for streaming and download",
   "version": "8.2.0",
   "url": "https://desktop.qobuz.com/releases/darwin/arm64/bigsur/8.2.0-b033/Qobuz.dmg",
-  "vendor_url": "https://desktop.qobuz.com/releases/darwin/arm64/bigsur/8.1.0-b019/Qobuz.dmg",
+  "vendor_url": "https://desktop.qobuz.com/releases/darwin/arm64/bigsur/8.2.0-b033/Qobuz.dmg",
   "bundleId": "com.qobuz.QobuzDesktop",
   "homepage": "https://www.qobuz.com/applications",
   "homebrew_cask": "qobuz",

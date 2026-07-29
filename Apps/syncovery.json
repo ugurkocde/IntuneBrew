@@ -3,11 +3,12 @@
   "description": "File synchronisation and backup software",
   "version": "11.16.0",
   "url": "https://www.syncovery.com/release/SyncoveryMac11.16.0-Apple.dmg",
-  "vendor_url": "https://www.syncovery.com/release/SyncoveryMac11.14.4-Apple.dmg",
+  "vendor_url": "https://www.syncovery.com/release/SyncoveryMac11.16.0-Apple.dmg",
   "bundleId": "com.superflexible.Syncovery",
   "homepage": "https://www.syncovery.com/",
   "homebrew_cask": "syncovery",
   "fileName": "SyncoveryMac11.16.0-Apple.dmg",
+  "sha": "c2b8937bba2cd44426dddb3ae45270194e1a86d88f763ed33d350818e4169fca",
   "category": "Utilities",
   "publisher": "Syncovery",
   "previous_version": "11.16.0"

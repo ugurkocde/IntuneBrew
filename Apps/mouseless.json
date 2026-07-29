@@ -3,7 +3,7 @@
   "description": "Mouse control with the keyboard",
   "version": "1.0.0",
   "url": "https://github.com/croian/mouseless/releases/download/v1.0.0/mouseless-installer_v1.0.0.dmg",
-  "vendor_url": "https://github.com/croian/mouseless/releases/download/v0.4.3/mouseless-installer_v0.4.3.dmg",
+  "vendor_url": "https://github.com/croian/mouseless/releases/download/v1.0.0/mouseless-installer_v1.0.0.dmg",
   "bundleId": "net.sonuscape.mouseless",
   "homepage": "https://mouseless.click/",
   "homebrew_cask": "mouseless",

@@ -3,7 +3,7 @@
   "description": "Per-application volume mixer, equalizer, and audio router",
   "version": "1.9.0",
   "url": "https://github.com/ronitsingh10/FineTune/releases/download/v1.9.0/FineTune.dmg",
-  "vendor_url": "https://github.com/ronitsingh10/FineTune/releases/download/v1.5.0/FineTune.dmg",
+  "vendor_url": "https://github.com/ronitsingh10/FineTune/releases/download/v1.9.0/FineTune.dmg",
   "bundleId": "org.tordini.flavio.finetune",
   "homepage": "https://github.com/ronitsingh10/FineTune",
   "homebrew_cask": "finetune",

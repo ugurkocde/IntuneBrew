@@ -3,7 +3,7 @@
   "description": "OpenAI's official browser with ChatGPT built in",
   "version": "1.2026.189.1",
   "url": "https://persistent.oaistatic.com/atlas/public/ChatGPT_Atlas_Desktop_public_1.2026.189.1_20260724200710000.dmg",
-  "vendor_url": "https://persistent.oaistatic.com/atlas/public/ChatGPT_Atlas_Desktop_public_1.2026.84.2_20260408151909000.dmg",
+  "vendor_url": "https://persistent.oaistatic.com/atlas/public/ChatGPT_Atlas_Desktop_public_1.2026.189.1_20260724200710000.dmg",
   "bundleId": "com.openai.atlas",
   "homepage": "https://chatgpt.com/atlas",
   "homebrew_cask": "chatgpt-atlas",

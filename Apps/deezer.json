@@ -3,7 +3,7 @@
   "description": "Music player",
   "version": "7.1.280",
   "url": "https://www.deezer.com/desktop/download/artifact-darwin-x64-7.1.280",
-  "vendor_url": "https://www.deezer.com/desktop/download/artifact-darwin-x64-7.1.150",
+  "vendor_url": "https://www.deezer.com/desktop/download/artifact-darwin-x64-7.1.280",
   "bundleId": "com.deezer.deezer-desktop",
   "homepage": "https://www.deezer.com/download",
   "homebrew_cask": "deezer",

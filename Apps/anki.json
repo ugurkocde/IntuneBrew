@@ -3,7 +3,7 @@
   "description": "Memory training application",
   "version": "26.05",
   "url": "https://github.com/ankitects/anki/releases/download/26.05/anki-26.05-mac-apple.dmg",
-  "vendor_url": "https://github.com/ankitects/anki/releases/download/25.09/anki-launcher-25.09-mac.dmg",
+  "vendor_url": "https://github.com/ankitects/anki/releases/download/26.05/anki-26.05-mac-apple.dmg",
   "bundleId": "net.ankiweb.dtop",
   "homepage": "https://apps.ankiweb.net/",
   "homebrew_cask": "anki",

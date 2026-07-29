@@ -3,7 +3,7 @@
   "description": "Web browser focusing on privacy",
   "version": "1.92.144.0",
   "url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/192.144/Brave-Browser-arm64.dmg",
-  "vendor_url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/189.132/Brave-Browser-arm64.dmg",
+  "vendor_url": "https://updates-cdn.bravesoftware.com/sparkle/Brave-Browser/stable-arm64/192.144/Brave-Browser-arm64.dmg",
   "bundleId": "com.brave.Browser",
   "homepage": "https://brave.com/",
   "homebrew_cask": "brave-browser",

@@ -3,7 +3,7 @@
   "description": "Audio utility",
   "version": "0.5.0",
   "url": "https://github.com/kyleneideck/BackgroundMusic/releases/download/v0.5.0/BackgroundMusic-0.5.0.pkg",
-  "vendor_url": "https://github.com/kyleneideck/BackgroundMusic/releases/download/v0.4.3/BackgroundMusic-0.4.3.pkg",
+  "vendor_url": "https://github.com/kyleneideck/BackgroundMusic/releases/download/v0.5.0/BackgroundMusic-0.5.0.pkg",
   "bundleId": "com.bearisdriving.BGM.App",
   "homepage": "https://github.com/kyleneideck/BackgroundMusic",
   "homebrew_cask": "background-music",

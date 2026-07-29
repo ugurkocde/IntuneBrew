@@ -3,7 +3,7 @@
   "description": "AI chat client",
   "version": "2.14.0",
   "url": "https://updates.boltai.com/dmg/BoltAI-2.14.0.dmg",
-  "vendor_url": "https://updates.boltai.com/dmg/BoltAI-2.9.2.dmg",
+  "vendor_url": "https://updates.boltai.com/dmg/BoltAI-2.14.0.dmg",
   "bundleId": "co.podzim.boltai-mobile",
   "homepage": "https://boltai.com/",
   "homebrew_cask": "boltai",

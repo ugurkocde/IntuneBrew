@@ -3,7 +3,7 @@
   "description": "Delete junk, unnecessary files and folders, and speed up your computer",
   "version": "4.0.4",
   "url": "https://nektony.com/download/mac-cleaner-pro/dmg/mac-cleaner-pro.dmg?build=606",
-  "vendor_url": "https://nektony.com/download/mac-cleaner-pro/dmg/mac-cleaner-pro.dmg?build=585",
+  "vendor_url": "https://nektony.com/download/mac-cleaner-pro/dmg/mac-cleaner-pro.dmg?build=606",
   "bundleId": "com.nektony.MacCleaner-PRO",
   "homepage": "https://nektony.com/mac-cleaner-pro",
   "homebrew_cask": "maccleaner-pro",

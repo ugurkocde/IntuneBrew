@@ -3,7 +3,7 @@
   "description": "Bitcoin thin client",
   "version": "4.8.0",
   "url": "https://download.electrum.org/4.8.0/electrum-4.8.0.dmg",
-  "vendor_url": "https://download.electrum.org/4.7.2/electrum-4.7.2.dmg",
+  "vendor_url": "https://download.electrum.org/4.8.0/electrum-4.8.0.dmg",
   "bundleId": "org.electrum.electrum",
   "homepage": "https://electrum.org/",
   "homebrew_cask": "electrum",

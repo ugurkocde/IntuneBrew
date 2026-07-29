@@ -3,7 +3,7 @@
   "description": "Control your Sonos system",
   "version": "90.0-77070",
   "url": "https://update-software.sonos.com/software/rT0797IawE/Sonos_90.0-77070.dmg",
-  "vendor_url": "https://update-software.sonos.com/software/ZethjbGivZ/Sonos_90.0-67171.dmg",
+  "vendor_url": "https://update-software.sonos.com/software/rT0797IawE/Sonos_90.0-77070.dmg",
   "bundleId": "com.sonos.macController2",
   "homepage": "https://www.sonos.com/",
   "homebrew_cask": "sonos",

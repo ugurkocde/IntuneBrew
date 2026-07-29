@@ -3,7 +3,7 @@
   "description": "GPU-based terminal emulator",
   "version": "0.48.1",
   "url": "https://github.com/kovidgoyal/kitty/releases/download/v0.48.1/kitty-0.48.1.dmg",
-  "vendor_url": "https://github.com/kovidgoyal/kitty/releases/download/v0.46.2/kitty-0.46.2.dmg",
+  "vendor_url": "https://github.com/kovidgoyal/kitty/releases/download/v0.48.1/kitty-0.48.1.dmg",
   "bundleId": "net.kovidgoyal.kitty",
   "homepage": "https://github.com/kovidgoyal/kitty",
   "homebrew_cask": "kitty",

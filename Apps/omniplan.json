@@ -3,7 +3,7 @@
   "description": "Project planning and management software",
   "version": "4.10.3",
   "url": "https://downloads.omnigroup.com/software/macOS/12/OmniPlan-4.10.3.dmg",
-  "vendor_url": "https://downloads.omnigroup.com/software/macOS/12/OmniPlan-4.10.2.dmg",
+  "vendor_url": "https://downloads.omnigroup.com/software/macOS/12/OmniPlan-4.10.3.dmg",
   "bundleId": "com.omnigroup.OmniPlan4",
   "homepage": "https://www.omnigroup.com/omniplan/",
   "homebrew_cask": "omniplan",

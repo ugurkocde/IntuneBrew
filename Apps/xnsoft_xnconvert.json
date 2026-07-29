@@ -3,7 +3,7 @@
   "description": "Image-converter and resiser tool",
   "version": "1.112.0",
   "url": "https://download.xnview.com/old_versions/XnConvert/XnConvert-1.112.0-mac.dmg",
-  "vendor_url": "https://download.xnview.com/old_versions/XnConvert/XnConvert-1.106.0-mac.dmg",
+  "vendor_url": "https://download.xnview.com/old_versions/XnConvert/XnConvert-1.112.0-mac.dmg",
   "bundleId": "com.gilles-caulier.xnconvert",
   "homepage": "https://www.xnview.com/en/xnconvert/",
   "homebrew_cask": "xnconvert",

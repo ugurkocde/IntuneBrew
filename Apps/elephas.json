@@ -3,7 +3,7 @@
   "description": "Personal AI Writing Assistant",
   "version": "11.8002",
   "url": "https://assets.elephas.app/Elephas_11.8002.dmg",
-  "vendor_url": "https://assets.elephas.app/Elephas_6009.dmg",
+  "vendor_url": "https://assets.elephas.app/Elephas_11.8002.dmg",
   "bundleId": "com.kamban.elephas",
   "homepage": "https://elephas.app/",
   "homebrew_cask": "elephas",

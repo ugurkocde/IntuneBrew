@@ -3,7 +3,7 @@
   "description": "Break time reminder app",
   "version": "2.3.0",
   "url": "https://github.com/mysticalbits/lookaway-releases/releases/download/2.3.0/LookAway.dmg",
-  "vendor_url": "https://github.com/mysticalbits/lookaway-releases/releases/download/2.0.1/LookAway.dmg",
+  "vendor_url": "https://github.com/mysticalbits/lookaway-releases/releases/download/2.3.0/LookAway.dmg",
   "bundleId": "com.mysticalbits.lookaway",
   "homepage": "https://lookaway.app/",
   "homebrew_cask": "lookaway",

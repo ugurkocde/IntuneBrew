@@ -3,7 +3,7 @@
   "description": "Native GUI tool for relational databases",
   "version": "26.8.6",
   "url": "https://files.tableplus.com/macos/752/TablePlus.dmg",
-  "vendor_url": "https://files.tableplus.com/macos/662/TablePlus.dmg",
+  "vendor_url": "https://files.tableplus.com/macos/752/TablePlus.dmg",
   "bundleId": "com.tinyapp.TablePlus",
   "homepage": "https://tableplus.com/",
   "homebrew_cask": "tableplus",

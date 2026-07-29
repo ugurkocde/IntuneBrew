@@ -3,7 +3,7 @@
   "description": "Tool to run web apps like desktop apps",
   "version": "77.8.0",
   "url": "https://cdn-2.webcatalog.io/webcatalog/WebCatalog-77.8.0-universal.dmg",
-  "vendor_url": "https://cdn-2.webcatalog.io/webcatalog/WebCatalog-74.0.2-universal.dmg",
+  "vendor_url": "https://cdn-2.webcatalog.io/webcatalog/WebCatalog-77.8.0-universal.dmg",
   "bundleId": "com.webcatalog.jordan",
   "homepage": "https://webcatalog.io/",
   "homebrew_cask": "webcatalog",

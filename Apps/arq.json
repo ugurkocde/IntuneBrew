@@ -3,7 +3,7 @@
   "description": "Multi-cloud backup application",
   "version": "7.47",
   "url": "https://www.arqbackup.com/download/arqbackup/Arq7.47.pkg",
-  "vendor_url": "https://www.arqbackup.com/download/arqbackup/Arq7.39.1.pkg",
+  "vendor_url": "https://www.arqbackup.com/download/arqbackup/Arq7.47.pkg",
   "bundleId": "com.haystacksoftware.Arq",
   "homepage": "https://www.arqbackup.com/",
   "homebrew_cask": "arq",

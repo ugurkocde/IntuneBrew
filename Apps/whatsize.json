@@ -3,7 +3,7 @@
   "description": "File system utility used to view and reclaim disk space",
   "version": "8.2.7",
   "url": "https://www.whatsizemac.com/software/whatsize8/whatsize_8.2.7.pkg",
-  "vendor_url": "https://www.whatsizemac.com/software/whatsize8/whatsize_8.2.4.pkg",
+  "vendor_url": "https://www.whatsizemac.com/software/whatsize8/whatsize_8.2.7.pkg",
   "bundleId": "com.id-design.v7.whatsize",
   "homepage": "https://www.whatsizemac.com/",
   "homebrew_cask": "whatsize",

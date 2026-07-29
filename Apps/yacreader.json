@@ -3,7 +3,7 @@
   "description": "Comic reader",
   "version": "10.1.0.260703260",
   "url": "https://github.com/YACReader/yacreader/releases/download/10.1.0/YACReader-10.1.0.260703260.MacOSX-U.Qt6.dmg",
-  "vendor_url": "https://github.com/YACReader/yacreader/releases/download/9.16.3/YACReader-9.16.3.26010361.MacOSX-U.Qt6.dmg",
+  "vendor_url": "https://github.com/YACReader/yacreader/releases/download/10.1.0/YACReader-10.1.0.260703260.MacOSX-U.Qt6.dmg",
   "bundleId": "com.yacreader.YACReader",
   "homepage": "https://www.yacreader.com/",
   "homebrew_cask": "yacreader",

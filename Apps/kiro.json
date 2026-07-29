@@ -3,7 +3,7 @@
   "description": "Agent-centric IDE with spec-driven development",
   "version": "1.0.242",
   "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.0.242/kiro-ide-1.0.242-stable-darwin-arm64.dmg",
-  "vendor_url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/0.11.131/kiro-ide-0.11.131-stable-darwin-arm64.dmg",
+  "vendor_url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.0.242/kiro-ide-1.0.242-stable-darwin-arm64.dmg",
   "bundleId": "com.kiro.kantoku",
   "homepage": "https://kiro.dev/",
   "homebrew_cask": "kiro",

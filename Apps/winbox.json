@@ -3,7 +3,7 @@
   "description": "Administration tool for MikroTik RouterOS",
   "version": "4.3",
   "url": "https://download.mikrotik.com/routeros/winbox/4.3/WinBox.dmg",
-  "vendor_url": "https://download.mikrotik.com/routeros/winbox/4.2/WinBox.dmg",
+  "vendor_url": "https://download.mikrotik.com/routeros/winbox/4.3/WinBox.dmg",
   "bundleId": "com.mikrotik.winbox",
   "homepage": "https://mikrotik.com/",
   "homebrew_cask": "winbox",

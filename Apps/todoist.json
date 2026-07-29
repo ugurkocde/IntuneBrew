@@ -3,7 +3,7 @@
   "description": "To-do list",
   "version": "9.29.1",
   "url": "https://electron-dl.todoist.com/mac/Todoist-darwin-9.29.1-arm64-latest.dmg",
-  "vendor_url": "https://electron-dl.todoist.com/mac/Todoist-darwin-9.17.0-arm64-latest.dmg",
+  "vendor_url": "https://electron-dl.todoist.com/mac/Todoist-darwin-9.29.1-arm64-latest.dmg",
   "bundleId": "com.todoist.mac.Todoist",
   "homepage": "https://todoist.com/home",
   "homebrew_cask": "todoist-app",

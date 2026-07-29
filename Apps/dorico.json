@@ -3,7 +3,7 @@
   "description": "Scoring software",
   "version": "6.2.30",
   "url": "https://download.steinberg.net/automated_updates/sda_downloads/2cba044b-898a-41f8-9ab3-ae084c669d98/Dorico_6.2.30_Installer_mac.dmg",
-  "vendor_url": "https://download.steinberg.net/automated_updates/sda_downloads/aa79cebc-bdea-4359-98f9-c27535dc1b16/Dorico_6.2.10_Installer_mac.dmg",
+  "vendor_url": "https://download.steinberg.net/automated_updates/sda_downloads/2cba044b-898a-41f8-9ab3-ae084c669d98/Dorico_6.2.30_Installer_mac.dmg",
   "bundleId": "com.steinberg.dorico",
   "homepage": "https://www.steinberg.net/dorico/",
   "homebrew_cask": "dorico",

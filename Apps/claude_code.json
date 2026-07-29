@@ -3,7 +3,7 @@
   "description": "Terminal-based AI coding assistant",
   "version": "2.1.212",
   "url": "https://downloads.claude.ai/claude-code-releases/2.1.212/darwin-arm64/claude",
-  "vendor_url": "https://storage.googleapis.com/claude-code-dist-86c565f3-f756-42ad-8dfa-d59b1c096819/claude-code-releases/2.1.92/darwin-arm64/claude",
+  "vendor_url": "https://downloads.claude.ai/claude-code-releases/2.1.212/darwin-arm64/claude",
   "bundleId": "com.orange.claudecodelauncher",
   "homepage": "https://www.anthropic.com/claude-code",
   "homebrew_cask": "claude-code",

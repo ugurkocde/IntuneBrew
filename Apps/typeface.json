@@ -3,7 +3,7 @@
   "description": "Font manager application",
   "version": "4.4.0",
   "url": "https://dcdn.typefaceapp.com/Typeface-4.4.0-5132/Typeface-4.4.0-5132.dmg",
-  "vendor_url": "https://dcdn.typefaceapp.com/Typeface-4.2.3-4845/Typeface-4.2.3-4845.dmg",
+  "vendor_url": "https://dcdn.typefaceapp.com/Typeface-4.4.0-5132/Typeface-4.4.0-5132.dmg",
   "bundleId": "com.criminalbird.typeface.standalone",
   "homepage": "https://typefaceapp.com/",
   "homebrew_cask": "typeface",

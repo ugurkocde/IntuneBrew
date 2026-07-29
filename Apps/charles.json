@@ -3,7 +3,7 @@
   "description": "Web debugging Proxy application",
   "version": "5.2",
   "url": "https://www.charlesproxy.com/assets/release/5.2/charles-proxy-5.2.dmg",
-  "vendor_url": "https://www.charlesproxy.com/assets/release/5.0.3/charles-proxy-5.0.3.dmg",
+  "vendor_url": "https://www.charlesproxy.com/assets/release/5.2/charles-proxy-5.2.dmg",
   "bundleId": "com.xk72.Charles",
   "homepage": "https://www.charlesproxy.com/",
   "homebrew_cask": "charles",

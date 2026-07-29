@@ -3,7 +3,7 @@
   "description": "Cross platform SQL editor and database management app",
   "version": "5.9.2",
   "url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.9.2/Beekeeper-Studio-5.9.2-arm64.dmg",
-  "vendor_url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.6.5/Beekeeper-Studio-5.6.5-arm64.dmg",
+  "vendor_url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v5.9.2/Beekeeper-Studio-5.9.2-arm64.dmg",
   "bundleId": "io.beekeeperstudio.desktop",
   "homepage": "https://www.beekeeperstudio.io/",
   "homebrew_cask": "beekeeper-studio",

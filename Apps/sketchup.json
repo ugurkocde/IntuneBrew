@@ -3,7 +3,7 @@
   "description": "3D modeling software used to create and manipulate 3D models",
   "version": "2026.2.242.76",
   "url": "https://download.sketchup.com/SketchUp-2026-2-242-76.dmg",
-  "vendor_url": "https://download.sketchup.com/SketchUp-2026-1-253-80.dmg",
+  "vendor_url": "https://download.sketchup.com/SketchUp-2026-2-242-76.dmg",
   "bundleId": "com.sketchup.SketchUp.2025",
   "homepage": "https://www.sketchup.com/",
   "homebrew_cask": "sketchup",

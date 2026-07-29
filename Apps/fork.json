@@ -3,7 +3,7 @@
   "description": "GIT client",
   "version": "2.66.7",
   "url": "https://cdn.fork.dev/mac/Fork-2.66.7.dmg",
-  "vendor_url": "https://cdn.fork.dev/mac/Fork-2.63.2.dmg",
+  "vendor_url": "https://cdn.fork.dev/mac/Fork-2.66.7.dmg",
   "bundleId": "com.DanPristupov.Fork",
   "homepage": "https://fork.dev/",
   "homebrew_cask": "fork",

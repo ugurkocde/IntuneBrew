@@ -3,7 +3,7 @@
   "description": "iPhone management application",
   "version": "3.6.1",
   "url": "https://downloads.imazing.com/mac/iMazing/3.6.1.24294/iMazing_3.6.1.24294.dmg",
-  "vendor_url": "https://downloads.imazing.com/mac/iMazing/3.5.2.24017/iMazing_3.5.2.24017.dmg",
+  "vendor_url": "https://downloads.imazing.com/mac/iMazing/3.6.1.24294/iMazing_3.6.1.24294.dmg",
   "bundleId": "com.DigiDNA.iMazing3Mac",
   "homepage": "https://imazing.com/",
   "homebrew_cask": "imazing",

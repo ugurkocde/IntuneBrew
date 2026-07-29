@@ -3,7 +3,7 @@
   "description": "Web browser focusing on security",
   "version": "15.0.19",
   "url": "https://www.torproject.org/dist/torbrowser/15.0.19/tor-browser-macos-15.0.19.dmg",
-  "vendor_url": "https://www.torproject.org/dist/torbrowser/15.0.9/tor-browser-macos-15.0.9.dmg",
+  "vendor_url": "https://www.torproject.org/dist/torbrowser/15.0.19/tor-browser-macos-15.0.19.dmg",
   "bundleId": "org.torproject.torbrowser",
   "homepage": "https://www.torproject.org/",
   "homebrew_cask": "tor-browser",

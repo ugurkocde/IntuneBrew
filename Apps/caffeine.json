@@ -1,14 +1,14 @@
 {
   "name": "Caffeine",
   "description": "Utility that prevents the system from going to sleep",
-  "version": "1.1.4",
-  "url": "https://github.com/IntelliScape/caffeine/releases/download/1.1.4/Caffeine.dmg",
-  "vendor_url": "https://github.com/IntelliScape/caffeine/releases/download/1.1.4/Caffeine.dmg",
+  "version": "1.6.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/caffeine_1.6.4.pkg",
+  "vendor_url": "https://dr-caffeine-mac.s3.amazonaws.com/Caffeine_1.6.4.zip",
   "bundleId": "net.domzilla.caffeine",
   "homepage": "https://www.caffeine-app.net/",
   "homebrew_cask": "domzilla-caffeine",
-  "fileName": "Caffeine.dmg",
-  "sha": "1ad34c3299a0c866873c4feb432c3e11186375adb6f43c5f481ae9d46d06d723",
+  "fileName": "caffeine_1.6.4.pkg",
+  "sha": "bedde9db92fd98edbce9bbe954d607050d0d2cde76b1a751c6dca8df13229e41",
   "type": "app",
   "changelog": "https://www.caffeine-app.net/",
   "qa_info": {
@@ -23,5 +23,5 @@
   },
   "category": "Utilities",
   "publisher": "Lighthead Software",
-  "previous_version": "1.6.4"
+  "previous_version": "1.1.4"
 }

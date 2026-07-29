@@ -3,7 +3,7 @@
   "description": "Screen capturing tool",
   "version": "4.8.10",
   "url": "https://updates.getcleanshot.com/v3/CleanShot-X-4.8.10.dmg",
-  "vendor_url": "https://updates.getcleanshot.com/v3/CleanShot-X-4.8.8.dmg",
+  "vendor_url": "https://updates.getcleanshot.com/v3/CleanShot-X-4.8.10.dmg",
   "bundleId": "pl.maketheweb.cleanshotx",
   "homepage": "https://getcleanshot.com/",
   "homebrew_cask": "cleanshot",

@@ -3,7 +3,7 @@
   "description": "3D CAD software",
   "version": "26.121.0.11316",
   "url": "https://download.shapr3d.com/mac/Shapr3D-26.121.0.11316.dmg",
-  "vendor_url": "https://download.shapr3d.com/mac/Shapr3D-26.50.0.10685.dmg",
+  "vendor_url": "https://download.shapr3d.com/mac/Shapr3D-26.121.0.11316.dmg",
   "bundleId": "com.shapr3d.shapr",
   "homepage": "https://www.shapr3d.com/",
   "homebrew_cask": "shapr3d",

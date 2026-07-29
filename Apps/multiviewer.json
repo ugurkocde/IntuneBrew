@@ -3,7 +3,7 @@
   "description": "Unofficial desktop client for F1 TV",
   "version": "2.8.3",
   "url": "https://releases.multiviewer.app/download/490007175/MultiViewer.for.F1-2.8.3-arm64.dmg",
-  "vendor_url": "https://releases.multiviewer.app/download/488387454/MultiViewer.for.F1-2.8.2-arm64.dmg",
+  "vendor_url": "https://releases.multiviewer.app/download/490007175/MultiViewer.for.F1-2.8.3-arm64.dmg",
   "bundleId": "io.optimizedapps.srtmultiviewer",
   "homepage": "https://multiviewer.app/",
   "homebrew_cask": "multiviewer",

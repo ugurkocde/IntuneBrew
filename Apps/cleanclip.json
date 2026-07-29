@@ -3,7 +3,7 @@
   "description": "Clipboard manager",
   "version": "2.4.7",
   "url": "https://cleanclip.cc/releases/download/v2.4.7/CleanClip.dmg",
-  "vendor_url": "https://cleanclip.cc/releases/download/v2.4.6/CleanClip.dmg",
+  "vendor_url": "https://cleanclip.cc/releases/download/v2.4.7/CleanClip.dmg",
   "bundleId": "com.antiless.cleanclip.mac",
   "homepage": "https://cleanclip.cc/",
   "homebrew_cask": "cleanclip",

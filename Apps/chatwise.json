@@ -3,7 +3,7 @@
   "description": "AI chatbot for many LLMs",
   "version": "26.7.5",
   "url": "https://releases.chatwise.app/26.7.5/ChatWise-26.7.5-arm64.dmg",
-  "vendor_url": "https://releases.chatwise.app/26.4.5/ChatWise-26.4.5-arm64.dmg",
+  "vendor_url": "https://releases.chatwise.app/26.7.5/ChatWise-26.7.5-arm64.dmg",
   "bundleId": "app.chatwise",
   "homepage": "https://chatwise.app/",
   "homebrew_cask": "chatwise",
@@ -21,5 +21,5 @@
   },
   "category": "Productivity",
   "publisher": "ChatWise",
-  "previous_version": "26.7.4"
+  "previous_version": "26.7.5"
 }

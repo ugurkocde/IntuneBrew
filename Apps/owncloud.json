@@ -3,7 +3,7 @@
   "description": "Desktop syncing client for ownCloud",
   "version": "7.1.0.19041",
   "url": "https://download.owncloud.com/desktop/ownCloud/stable/7.1.0.19041/mac/ownCloud-7.1.0.19041-arm64.pkg",
-  "vendor_url": "https://download.owncloud.com/desktop/ownCloud/stable/6.0.3.18040/mac/ownCloud-6.0.3.18040-arm64.pkg",
+  "vendor_url": "https://download.owncloud.com/desktop/ownCloud/stable/7.1.0.19041/mac/ownCloud-7.1.0.19041-arm64.pkg",
   "bundleId": "com.owncCloud.finderPlugin",
   "homepage": "https://owncloud.com/",
   "homebrew_cask": "owncloud",

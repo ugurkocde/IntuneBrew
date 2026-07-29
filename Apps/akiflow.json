@@ -3,7 +3,7 @@
   "description": "Time blocking and productivity platform",
   "version": "2.78.16",
   "url": "https://download.akiflow.com/builds/Akiflow-2.78.16-d29d46e9-universal.dmg",
-  "vendor_url": "https://download.akiflow.com/builds/Akiflow-2.71.7-851fb05d-universal.dmg",
+  "vendor_url": "https://download.akiflow.com/builds/Akiflow-2.78.16-d29d46e9-universal.dmg",
   "bundleId": "com.akiflow.akiflow",
   "homepage": "https://akiflow.com/",
   "homebrew_cask": "akiflow",

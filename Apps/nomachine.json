@@ -3,7 +3,7 @@
   "description": "Remote desktop software",
   "version": "9.8.2",
   "url": "https://intunebrew.blob.core.windows.net/pkg/nomachine_9.8.2.pkg",
-  "vendor_url": "https://download.nomachine.com/download/9.4/MacOSX/nomachine_9.4.14_1.dmg",
+  "vendor_url": "https://download.nomachine.com/download/9.8/MacOSX/nomachine_9.8.2_1.dmg",
   "bundleId": "com.nomachine.nxdock",
   "homepage": "https://www.nomachine.com/",
   "homebrew_cask": "nomachine",

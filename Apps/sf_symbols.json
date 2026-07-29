@@ -3,7 +3,7 @@
   "description": "Tool that provides consistent, highly configurable symbols for apps",
   "version": "8.0",
   "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-8.dmg",
-  "vendor_url": "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-7.dmg",
+  "vendor_url": "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-8.dmg",
   "bundleId": "com.apple.pkg.SFSymbols",
   "homepage": "https://developer.apple.com/sf-symbols/",
   "homebrew_cask": "sf-symbols",
