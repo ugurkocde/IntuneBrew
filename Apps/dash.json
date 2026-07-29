@@ -10,5 +10,7 @@
   "fileName": "dash_8.1.1.pkg",
   "type": "app",
   "previous_version": "8.1.1",
-  "sha": "b6baf32a5119914dfbba8f26733d6ce0c58f0005b11f035c32768d9c5b43e255"
+  "sha": "b6baf32a5119914dfbba8f26733d6ce0c58f0005b11f035c32768d9c5b43e255",
+  "category": "Developer Tools",
+  "publisher": "Kapeli"
 }
