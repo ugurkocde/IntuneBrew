@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1151-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1150-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -580,7 +580,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | Dash | 8.1.1 | 23.1.7 |
 | Google Antigravity | 2.4.2 | 2.4.3 |
 | MacPacker | 0.18.0 | 0.18.1 |
-| Codex | 26.623.141536 | 0.146.0 |
 | ChatWise | 26.7.4 | 26.7.5 |
 | Headlamp | 0.43.0 | 0.44.0 |
 | Canva | 1.123.0 | 1.123.1 |
@@ -855,7 +854,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/coconutbattery.png' width='32' height='32'> coconutBattery | 4.3.3 |
 | <img src='Logos/codeedit.png' width='32' height='32'> CodeEdit | 0.3.6 |
 | <img src='Logos/coderunner.png' width='32' height='32'> CodeRunner | 4.5 |
-| <img src='Logos/codex.png' width='32' height='32'> Codex | 0.146.0 |
 | <img src='Logos/coherence_x.png' width='32' height='32'> Coherence X | 5.1.3 |
 | <img src='Logos/colorsnapper_2.png' width='32' height='32'> ColorSnapper 2 | 1.7.1 |
 | <img src='Logos/colorwell.png' width='32' height='32'> ColorWell | 8.1.5 |

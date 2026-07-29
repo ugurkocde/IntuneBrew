@@ -1,8 +1,8 @@
 {
   "name": "Codex",
   "description": "OpenAI's Codex desktop app for managing coding agents",
-  "version": "0.146.0",
-  "url": "https://github.com/openai/codex/releases/download/rust-v0.146.0/codex-aarch64-apple-darwin.tar.gz",
+  "version": "26.623.141536",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/codex_26.623.141536.pkg",
   "vendor_url": "https://persistent.oaistatic.com/codex-app-prod/Codex-darwin-arm64-26.623.81905.zip",
   "bundleId": "com.openai.codex",
   "homepage": "https://openai.com/codex",
@@ -11,6 +11,8 @@
   "category": "Developer Tools",
   "publisher": "OpenAI",
   "previous_version": "26.623.141536",
-  "sha": "2750132d300e64f1dbffb95e3d913fd9c9dc7812bc8e1bce5c61357248b7929e",
-  "homebrew_cask": "codex"
+  "sha": "6eca51da02b3c9dd211c22f0a772289ed7fc92b74955d2acec98d8c3279bac98",
+  "homebrew_cask": "codex-app",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: discontinued"
 }
