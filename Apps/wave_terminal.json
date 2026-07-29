@@ -3,7 +3,7 @@
   "description": "Terminal emulator",
   "version": "0.14.5",
   "url": "https://dl.waveterm.dev/releases-w2/Wave-darwin-arm64-0.14.5.dmg",
-  "vendor_url": "https://dl.waveterm.dev/releases-w2/Wave-darwin-arm64-0.14.4.dmg",
+  "vendor_url": "https://dl.waveterm.dev/releases-w2/Wave-darwin-arm64-0.14.5.dmg",
   "bundleId": "dev.commandline.waveterm",
   "homepage": "https://www.waveterm.dev/",
   "homebrew_cask": "wave",

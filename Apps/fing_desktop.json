@@ -3,7 +3,7 @@
   "description": "Network scanner",
   "version": "4.0.3",
   "url": "https://get.fing.com/fing-desktop-releases/mac/Fing-4.0.3-mac.zip",
-  "vendor_url": "https://get.fing.com/fing-desktop-releases/mac/Fing-3.10.1.dmg",
+  "vendor_url": "https://get.fing.com/fing-desktop-releases/mac/Fing-4.0.3-mac.zip",
   "bundleId": "com.fing.service",
   "homepage": "https://www.fing.com/products/fing-desktop",
   "homebrew_cask": "fing",

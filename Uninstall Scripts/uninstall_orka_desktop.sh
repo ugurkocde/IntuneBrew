@@ -33,12 +33,12 @@ elif [ -f "$HOME/.local/state/orka" ]; then
     rm -f "$HOME/.local/state/orka" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.macstadium.OrkaDesktop/
-echo "Removing $HOME/Library/Caches/com.macstadium.OrkaDesktop/..."
-if [ -d "$HOME/Library/Caches/com.macstadium.OrkaDesktop/" ]; then
-    rm -rf "$HOME/Library/Caches/com.macstadium.OrkaDesktop/" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.macstadium.OrkaDesktop/" ]; then
-    rm -f "$HOME/Library/Caches/com.macstadium.OrkaDesktop/" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.macstadium.OrkaDesktop
+echo "Removing $HOME/Library/Caches/com.macstadium.OrkaDesktop..."
+if [ -d "$HOME/Library/Caches/com.macstadium.OrkaDesktop" ]; then
+    rm -rf "$HOME/Library/Caches/com.macstadium.OrkaDesktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.macstadium.OrkaDesktop" ]; then
+    rm -f "$HOME/Library/Caches/com.macstadium.OrkaDesktop" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.macstadium.OrkaDesktop

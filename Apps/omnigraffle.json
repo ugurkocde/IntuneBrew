@@ -3,7 +3,7 @@
   "description": "Visual communication software",
   "version": "7.25.3",
   "url": "https://downloads.omnigroup.com/software/macOS/12/OmniGraffle-7.25.3.dmg",
-  "vendor_url": "https://downloads.omnigroup.com/software/macOS/12/OmniGraffle-7.25.2.dmg",
+  "vendor_url": "https://downloads.omnigroup.com/software/macOS/12/OmniGraffle-7.25.3.dmg",
   "bundleId": "com.omnigroup.OmniGraffle7",
   "homepage": "https://www.omnigroup.com/omnigraffle/",
   "homebrew_cask": "omnigraffle",

@@ -3,7 +3,7 @@
   "description": "Secure video conferencing app",
   "version": "2026.7.0",
   "url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2026.7.0/jitsi-meet.dmg",
-  "vendor_url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2026.4.0/jitsi-meet.dmg",
+  "vendor_url": "https://github.com/jitsi/jitsi-meet-electron/releases/download/v2026.7.0/jitsi-meet.dmg",
   "bundleId": "org.jitsi.jitsi-meet",
   "homepage": "https://github.com/jitsi/jitsi-meet-electron/",
   "homebrew_cask": "jitsi-meet",

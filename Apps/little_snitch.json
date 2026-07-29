@@ -3,7 +3,7 @@
   "description": "Host-based application firewall",
   "version": "6.4.1",
   "url": "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-6.4.1.dmg",
-  "vendor_url": "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-6.3.3.dmg",
+  "vendor_url": "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-6.4.1.dmg",
   "bundleId": "at.obdev.littlesnitch",
   "homepage": "https://www.obdev.at/products/littlesnitch/index.html",
   "homebrew_cask": "little-snitch",

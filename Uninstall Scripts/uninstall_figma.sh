@@ -17,12 +17,24 @@ fi
 echo "Stopping Figma if running..."
 pkill -f "Figma" 2>/dev/null || true
 
+# Kill application with bundle ID com.figma.agent if running
+echo "Stopping application with bundle ID com.figma.agent if running..."
+killall -9 "com.figma.agent" 2>/dev/null || true
+
 # Remove /Applications/Figma.app
 echo "Removing /Applications/Figma.app..."
 if [ -d "/Applications/Figma.app" ]; then
     rm -rf "/Applications/Figma.app" 2>/dev/null || true
 elif [ -f "/Applications/Figma.app" ]; then
     rm -f "/Applications/Figma.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.figma.desktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.figma.desktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.figma.desktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.figma.desktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.figma.desktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.figma.desktop.sfl*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Figma
@@ -55,6 +67,14 @@ if [ -d "$HOME/Library/Caches/com.figma.Desktop" ]; then
     rm -rf "$HOME/Library/Caches/com.figma.Desktop" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.figma.Desktop" ]; then
     rm -f "$HOME/Library/Caches/com.figma.Desktop" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.figma.agent
+echo "Removing $HOME/Library/HTTPStorages/com.figma.agent..."
+if [ -d "$HOME/Library/HTTPStorages/com.figma.agent" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.figma.agent" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.figma.agent" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.figma.agent" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.figma.Desktop.plist

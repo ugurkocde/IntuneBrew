@@ -25,12 +25,6 @@ elif [ -f "/Applications/DataGrip.app" ]; then
     rm -f "/Applications/DataGrip.app" 2>/dev/null || true
 fi
 
-# Remove binary /Applications/DataGrip.app/DataGrip.app/Contents/MacOS/datagrip
-echo "Removing binary /Applications/DataGrip.app/DataGrip.app/Contents/MacOS/datagrip..."
-if [ -f "/Applications/DataGrip.app/DataGrip.app/Contents/MacOS/datagrip" ]; then
-    rm -f "/Applications/DataGrip.app/DataGrip.app/Contents/MacOS/datagrip" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Application Support/JetBrains/DataGrip*
 echo "Removing $HOME/Library/Application Support/JetBrains/DataGrip*..."
 if [ -d "$HOME/Library/Application Support/JetBrains/DataGrip*" ]; then

@@ -3,7 +3,7 @@
   "description": "SEO site audit tool",
   "version": "24.3",
   "url": "https://download.screamingfrog.co.uk/products/seo-spider/ScreamingFrogSEOSpider-24.3-aarch64.dmg",
-  "vendor_url": "https://download.screamingfrog.co.uk/products/seo-spider/ScreamingFrogSEOSpider-23.3-aarch64.dmg",
+  "vendor_url": "https://download.screamingfrog.co.uk/products/seo-spider/ScreamingFrogSEOSpider-24.3-aarch64.dmg",
   "bundleId": "com.screamingfrog.ScreamingFrogSEOSpider",
   "homepage": "https://www.screamingfrog.co.uk/seo-spider/",
   "homebrew_cask": "screaming-frog-seo-spider",

@@ -1,16 +1,16 @@
 {
   "name": "TeamViewer",
   "description": "Remote access and connectivity software focused on security",
-  "version": "15.79.4",
-  "url": "https://dl.teamviewer.com/download/version_15x/update/15.79.4/TeamViewer.pkg",
-  "vendor_url": "https://dl.teamviewer.com/download/version_15x/update/15.76.5/TeamViewer.pkg",
+  "version": "15.80.4",
+  "url": "https://dl.teamviewer.com/download/version_15x/update/15.80.4/TeamViewer.pkg",
+  "vendor_url": "https://dl.teamviewer.com/download/version_15x/update/15.80.4/TeamViewer.pkg",
   "bundleId": "com.teamviewer.TeamViewer",
   "homepage": "https://www.teamviewer.com/",
   "homebrew_cask": "teamviewer",
   "fileName": "TeamViewer.pkg",
   "type": "pkg",
-  "sha": "beff41a4941da37479bc8c7b6fed0e8a4fee08eb7773f1c868f7af9e063f16ab",
+  "sha": "22ffe2bb09d4067a6c2b5396cb86366b3f3babbec9e3178f26392bc7c527ff06",
   "category": "Security",
   "publisher": "TeamViewer GmbH",
-  "previous_version": "15.79.4"
+  "previous_version": "15.80.4"
 }

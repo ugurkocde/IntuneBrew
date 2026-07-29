@@ -3,7 +3,7 @@
   "description": "Mind mapping and brainstorming tool",
   "version": "26.04.01341-202607130058",
   "url": "https://dl3.xmind.net/Xmind-for-macOS-26.04.01341-202607130058.dmg",
-  "vendor_url": "https://dl3.xmind.net/Xmind-for-macOS-26.02.04171-202602092224.dmg",
+  "vendor_url": "https://dl3.xmind.net/Xmind-for-macOS-26.04.01341-202607130058.dmg",
   "bundleId": "net.xmind.vana.app",
   "homepage": "https://www.xmind.net/",
   "homebrew_cask": "xmind",

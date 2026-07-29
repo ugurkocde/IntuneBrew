@@ -17,6 +17,12 @@ fi
 echo "Stopping Discord if running..."
 pkill -f "Discord" 2>/dev/null || true
 
+# Unload service com.discord.discord.ShipIt
+echo "Unloading service com.discord.discord.ShipIt..."
+launchctl unload -w /Library/LaunchAgents/com.discord.discord.ShipIt.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.discord.discord.ShipIt.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.discord.discord.ShipIt.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.hnc.Discord if running
 echo "Stopping application with bundle ID com.hnc.Discord if running..."
 killall -9 "com.hnc.Discord" 2>/dev/null || true
@@ -99,6 +105,14 @@ if [ -d "$HOME/Library/HTTPStorages/com.hnc.Discord.binarycookies" ]; then
     rm -rf "$HOME/Library/HTTPStorages/com.hnc.Discord.binarycookies" 2>/dev/null || true
 elif [ -f "$HOME/Library/HTTPStorages/com.hnc.Discord.binarycookies" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.hnc.Discord.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/ByHost/com.discord.discord.ShipIt.*.plist
+echo "Removing $HOME/Library/Preferences/ByHost/com.discord.discord.ShipIt.*.plist..."
+if [ -d "$HOME/Library/Preferences/ByHost/com.discord.discord.ShipIt.*.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/ByHost/com.discord.discord.ShipIt.*.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/ByHost/com.discord.discord.ShipIt.*.plist" ]; then
+    rm -f "$HOME/Library/Preferences/ByHost/com.discord.discord.ShipIt.*.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.hnc.Discord.helper.plist

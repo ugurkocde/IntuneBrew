@@ -25,12 +25,12 @@ elif [ -f "/Applications/RetroArch.app" ]; then
     rm -f "/Applications/RetroArch.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Documents/RetroArch/
-echo "Removing $HOME/Documents/RetroArch/..."
-if [ -d "$HOME/Documents/RetroArch/" ]; then
-    rm -rf "$HOME/Documents/RetroArch/" 2>/dev/null || true
-elif [ -f "$HOME/Documents/RetroArch/" ]; then
-    rm -f "$HOME/Documents/RetroArch/" 2>/dev/null || true
+# Remove $HOME/Documents/RetroArch
+echo "Removing $HOME/Documents/RetroArch..."
+if [ -d "$HOME/Documents/RetroArch" ]; then
+    rm -rf "$HOME/Documents/RetroArch" 2>/dev/null || true
+elif [ -f "$HOME/Documents/RetroArch" ]; then
+    rm -f "$HOME/Documents/RetroArch" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/RetroArch

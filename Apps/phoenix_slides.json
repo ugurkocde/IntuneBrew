@@ -3,7 +3,7 @@
   "description": "Full-screen slideshow program",
   "version": "1.6.2",
   "url": "https://github.com/gobbledegook/creevey/releases/download/v1.6.2/phoenix-slides-162.dmg",
-  "vendor_url": "https://github.com/gobbledegook/creevey/releases/download/v1.5.9/phoenix-slides-159.dmg",
+  "vendor_url": "https://github.com/gobbledegook/creevey/releases/download/v1.6.2/phoenix-slides-162.dmg",
   "bundleId": "net.blyt.phoenixslides",
   "homepage": "https://blyt.net/phxslides/",
   "homebrew_cask": "phoenix-slides",

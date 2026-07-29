@@ -3,7 +3,7 @@
   "description": "Process monitor",
   "version": "1.14.0",
   "url": "https://process-spy.app/archive/ProcessSpy_1.14.0.dmg",
-  "vendor_url": "https://process-spy.app/archive/ProcessSpy_1.11.3.dmg",
+  "vendor_url": "https://process-spy.app/archive/ProcessSpy_1.14.0.dmg",
   "bundleId": "com.itone.ProcessSpy",
   "homepage": "https://process-spy.app/",
   "homebrew_cask": "processspy",

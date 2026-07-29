@@ -3,7 +3,7 @@
   "description": "Card software tool for professional card production",
   "version": "1.7.140",
   "url": "https://www.cardpressodownloads.com/downloads/cardpresso_releases/for_mac_osx/cardPresso1.7.140.zip",
-  "vendor_url": "https://www.cardpresso.com/downloads/cardpresso_releases/for_mac_osx/cardPresso1.7.130.dmg",
+  "vendor_url": "https://www.cardpressodownloads.com/downloads/cardpresso_releases/for_mac_osx/cardPresso1.7.140.zip",
   "bundleId": "com.cardpresso.cardPresso",
   "homepage": "https://www.cardpresso.com/",
   "homebrew_cask": "cardpresso",

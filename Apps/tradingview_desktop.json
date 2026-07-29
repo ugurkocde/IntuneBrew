@@ -3,7 +3,7 @@
   "description": "Charting and social-networking for investment traders",
   "version": "3.3.0",
   "url": "https://tvd-packages.tradingview.com/stable/3.3.0/darwin/TradingView.dmg",
-  "vendor_url": "https://tvd-packages.tradingview.com/stable/2.14.0/darwin/TradingView.dmg",
+  "vendor_url": "https://tvd-packages.tradingview.com/stable/3.3.0/darwin/TradingView.dmg",
   "bundleId": "com.tradingview.tradingviewapp.desktop",
   "homepage": "https://www.tradingview.com/desktop/",
   "homebrew_cask": "tradingview",

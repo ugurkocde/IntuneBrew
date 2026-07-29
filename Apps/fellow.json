@@ -3,7 +3,7 @@
   "description": "Collaborative meeting agendas, notes, and action items",
   "version": "5.7.0",
   "url": "https://cdn.fellow.app/desktop/5.7.0/darwin/stable/universal/Fellow-5.7.0-universal.dmg",
-  "vendor_url": "https://cdn.fellow.app/desktop/5.3.1/darwin/stable/universal/Fellow-5.3.1-universal.dmg",
+  "vendor_url": "https://cdn.fellow.app/desktop/5.7.0/darwin/stable/universal/Fellow-5.7.0-universal.dmg",
   "bundleId": "com.electron.fellow",
   "homepage": "https://fellow.app/",
   "homebrew_cask": "fellow",

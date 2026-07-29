@@ -3,7 +3,7 @@
   "description": "Relational database and rapid application development platform",
   "version": "26.0.1.51",
   "url": "https://downloads.claris.com/esd/fmp_26.0.1.51.dmg",
-  "vendor_url": "https://downloads.claris.com/esd/fmp_22.0.6.601.dmg",
+  "vendor_url": "https://downloads.claris.com/esd/fmp_26.0.1.51.dmg",
   "bundleId": "com.filemaker.client.pro12",
   "homepage": "https://www.claris.com/filemaker/",
   "homebrew_cask": "filemaker-pro",

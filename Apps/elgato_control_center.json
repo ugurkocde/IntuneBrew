@@ -1,16 +1,16 @@
 {
   "name": "Elgato Control Center",
   "description": "Control your Elgato key lights",
-  "version": "1.8.2",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/elgato_control_center_1.8.2.pkg",
-  "vendor_url": "https://edge.elgato.com/egc/macos/eccm/1.8.2/ElgatoControlCenter-1.8.2.20643.zip",
+  "version": "1.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/elgato_control_center_1.9.pkg",
+  "vendor_url": "https://edge.elgato.com/egc/macos/eccm/1.9/ElgatoControlCenter-1.9.20829.app.zip",
   "bundleId": "com.corsair.ControlCenter",
   "homepage": "https://www.elgato.com/ww/en/s/downloads",
-  "fileName": "elgato_control_center_1.8.2.pkg",
+  "fileName": "elgato_control_center_1.9.pkg",
   "type": "app",
-  "sha": "2b3c86b5a8a80c3112706f2fd0c5e361a8e4655cb14f944ec34b8bc78477be9f",
+  "sha": "d96478568c0a399d183e75d4c4652aed7f10e057ad1aeceabfc704acd742a755",
   "category": "Utilities",
   "publisher": "Elgato",
-  "previous_version": "1.8.2",
+  "previous_version": "1.9",
   "homebrew_cask": "elgato-control-center"
 }

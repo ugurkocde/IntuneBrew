@@ -3,7 +3,7 @@
   "description": "Design tool that creates functional graphics",
   "version": "0.8.5275",
   "url": "https://releases.rive.app/macos/0.8.5275/Rive.dmg",
-  "vendor_url": "https://releases.rive.app/macos/0.8.4602/Rive.dmg",
+  "vendor_url": "https://releases.rive.app/macos/0.8.5275/Rive.dmg",
   "bundleId": "app.rive.editor",
   "homepage": "https://rive.app/",
   "homebrew_cask": "rive",

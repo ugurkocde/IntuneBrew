@@ -3,7 +3,7 @@
   "description": "Install and update your Eclipse Development Environment",
   "version": "4.40",
   "url": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2026-06/R/eclipse-inst-jre-mac-aarch64.dmg&r=1",
-  "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2026-03/R/eclipse-inst-jre-mac-aarch64.dmg&r=1",
+  "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2026-06/R/eclipse-inst-jre-mac-aarch64.dmg&r=1",
   "bundleId": "org.eclipse.oomph.setup.installer.product.with-jre.restricted",
   "homepage": "https://eclipse.org/",
   "homebrew_cask": "eclipse-installer",

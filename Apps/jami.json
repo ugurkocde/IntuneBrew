@@ -3,7 +3,7 @@
   "description": "Decentralised instant messenger and softphone",
   "version": "2.41",
   "url": "https://dl.jami.net/mac_osx/jami2026072011.dmg",
-  "vendor_url": "https://dl.jami.net/mac_osx/jami2026032615.dmg",
+  "vendor_url": "https://dl.jami.net/mac_osx/jami2026072011.dmg",
   "bundleId": "net.jami.jami",
   "homepage": "https://jami.net/",
   "homebrew_cask": "jami",

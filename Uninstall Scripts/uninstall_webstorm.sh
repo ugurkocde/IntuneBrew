@@ -25,18 +25,12 @@ elif [ -f "/Applications/WebStorm.app" ]; then
     rm -f "/Applications/WebStorm.app" 2>/dev/null || true
 fi
 
-# Remove binary /Applications/WebStorm.app/WebStorm.app/Contents/MacOS/webstorm
-echo "Removing binary /Applications/WebStorm.app/WebStorm.app/Contents/MacOS/webstorm..."
-if [ -f "/Applications/WebStorm.app/WebStorm.app/Contents/MacOS/webstorm" ]; then
-    rm -f "/Applications/WebStorm.app/WebStorm.app/Contents/MacOS/webstorm" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Application Support/JetBrains/WebStorm2025.1
-echo "Removing $HOME/Library/Application Support/JetBrains/WebStorm2025.1..."
-if [ -d "$HOME/Library/Application Support/JetBrains/WebStorm2025.1" ]; then
-    rm -rf "$HOME/Library/Application Support/JetBrains/WebStorm2025.1" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/JetBrains/WebStorm2025.1" ]; then
-    rm -f "$HOME/Library/Application Support/JetBrains/WebStorm2025.1" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/JetBrains/WebStorm2026.2
+echo "Removing $HOME/Library/Application Support/JetBrains/WebStorm2026.2..."
+if [ -d "$HOME/Library/Application Support/JetBrains/WebStorm2026.2" ]; then
+    rm -rf "$HOME/Library/Application Support/JetBrains/WebStorm2026.2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/JetBrains/WebStorm2026.2" ]; then
+    rm -f "$HOME/Library/Application Support/JetBrains/WebStorm2026.2" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.apple.nsurlsessiond/Downloads/com.jetbrains.WebStorm
@@ -47,20 +41,20 @@ elif [ -f "$HOME/Library/Caches/com.apple.nsurlsessiond/Downloads/com.jetbrains.
     rm -f "$HOME/Library/Caches/com.apple.nsurlsessiond/Downloads/com.jetbrains.WebStorm" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/JetBrains/WebStorm2025.1
-echo "Removing $HOME/Library/Caches/JetBrains/WebStorm2025.1..."
-if [ -d "$HOME/Library/Caches/JetBrains/WebStorm2025.1" ]; then
-    rm -rf "$HOME/Library/Caches/JetBrains/WebStorm2025.1" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/JetBrains/WebStorm2025.1" ]; then
-    rm -f "$HOME/Library/Caches/JetBrains/WebStorm2025.1" 2>/dev/null || true
+# Remove $HOME/Library/Caches/JetBrains/WebStorm2026.2
+echo "Removing $HOME/Library/Caches/JetBrains/WebStorm2026.2..."
+if [ -d "$HOME/Library/Caches/JetBrains/WebStorm2026.2" ]; then
+    rm -rf "$HOME/Library/Caches/JetBrains/WebStorm2026.2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/JetBrains/WebStorm2026.2" ]; then
+    rm -f "$HOME/Library/Caches/JetBrains/WebStorm2026.2" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Logs/JetBrains/WebStorm2025.1
-echo "Removing $HOME/Library/Logs/JetBrains/WebStorm2025.1..."
-if [ -d "$HOME/Library/Logs/JetBrains/WebStorm2025.1" ]; then
-    rm -rf "$HOME/Library/Logs/JetBrains/WebStorm2025.1" 2>/dev/null || true
-elif [ -f "$HOME/Library/Logs/JetBrains/WebStorm2025.1" ]; then
-    rm -f "$HOME/Library/Logs/JetBrains/WebStorm2025.1" 2>/dev/null || true
+# Remove $HOME/Library/Logs/JetBrains/WebStorm2026.2
+echo "Removing $HOME/Library/Logs/JetBrains/WebStorm2026.2..."
+if [ -d "$HOME/Library/Logs/JetBrains/WebStorm2026.2" ]; then
+    rm -rf "$HOME/Library/Logs/JetBrains/WebStorm2026.2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/JetBrains/WebStorm2026.2" ]; then
+    rm -f "$HOME/Library/Logs/JetBrains/WebStorm2026.2" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.jetbrains.WebStorm.plist
@@ -79,12 +73,12 @@ elif [ -f "$HOME/Library/Preferences/jetbrains.webstorm.*.plist" ]; then
     rm -f "$HOME/Library/Preferences/jetbrains.webstorm.*.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/WebStorm2025.1
-echo "Removing $HOME/Library/Preferences/WebStorm2025.1..."
-if [ -d "$HOME/Library/Preferences/WebStorm2025.1" ]; then
-    rm -rf "$HOME/Library/Preferences/WebStorm2025.1" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/WebStorm2025.1" ]; then
-    rm -f "$HOME/Library/Preferences/WebStorm2025.1" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/WebStorm2026.2
+echo "Removing $HOME/Library/Preferences/WebStorm2026.2..."
+if [ -d "$HOME/Library/Preferences/WebStorm2026.2" ]; then
+    rm -rf "$HOME/Library/Preferences/WebStorm2026.2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/WebStorm2026.2" ]; then
+    rm -f "$HOME/Library/Preferences/WebStorm2026.2" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/webstorm.plist

@@ -3,7 +3,7 @@
   "description": "Stand alone ad blocker",
   "version": "2.19.0.2258",
   "url": "https://static.adguard.com/mac/release/AdGuard-2.19.0.2258.dmg",
-  "vendor_url": "https://static.adguard.com/mac/release/AdGuard-2.18.0.2089.dmg",
+  "vendor_url": "https://static.adguard.com/mac/release/AdGuard-2.19.0.2258.dmg",
   "bundleId": "com.adguard.mac.adguard",
   "homepage": "https://adguard.com/",
   "homebrew_cask": "adguard",

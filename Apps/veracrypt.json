@@ -3,7 +3,7 @@
   "description": "Disk encryption software focusing on security based on TrueCrypt",
   "version": "1.26.29",
   "url": "https://launchpad.net/veracrypt/trunk/1.26.29/+download/VeraCrypt_1.26.29.dmg",
-  "vendor_url": "https://launchpad.net/veracrypt/trunk/1.26.24/+download/VeraCrypt_1.26.24.dmg",
+  "vendor_url": "https://launchpad.net/veracrypt/trunk/1.26.29/+download/VeraCrypt_1.26.29.dmg",
   "bundleId": "com.idrix.pkg.veracrypt",
   "homepage": "https://www.veracrypt.fr/",
   "homebrew_cask": "veracrypt",

@@ -3,7 +3,7 @@
   "description": "Ruby on Rails IDE",
   "version": "2026.2",
   "url": "https://download.jetbrains.com/ruby/RubyMine-2026.2-aarch64.dmg",
-  "vendor_url": "https://download.jetbrains.com/ruby/RubyMine-2026.1-aarch64.dmg",
+  "vendor_url": "https://download.jetbrains.com/ruby/RubyMine-2026.2-aarch64.dmg",
   "bundleId": "com.jetbrains.rubymine",
   "homepage": "https://www.jetbrains.com/ruby/",
   "homebrew_cask": "rubymine",

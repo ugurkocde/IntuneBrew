@@ -35,6 +35,38 @@ elif [ -f "/Applications/Bartender 6.app" ]; then
     rm -f "/Applications/Bartender 6.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/24J875RH8J.com.surteesstudios.Bartender
+echo "Removing $HOME/Library/Application Scripts/24J875RH8J.com.surteesstudios.Bartender..."
+if [ -d "$HOME/Library/Application Scripts/24J875RH8J.com.surteesstudios.Bartender" ]; then
+    rm -rf "$HOME/Library/Application Scripts/24J875RH8J.com.surteesstudios.Bartender" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/24J875RH8J.com.surteesstudios.Bartender" ]; then
+    rm -f "$HOME/Library/Application Scripts/24J875RH8J.com.surteesstudios.Bartender" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Bartender 6
+echo "Removing $HOME/Library/Application Support/Bartender 6..."
+if [ -d "$HOME/Library/Application Support/Bartender 6" ]; then
+    rm -rf "$HOME/Library/Application Support/Bartender 6" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Bartender 6" ]; then
+    rm -f "$HOME/Library/Application Support/Bartender 6" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.surteesstudios.bartender.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.surteesstudios.bartender.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.surteesstudios.bartender.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.surteesstudios.bartender.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.surteesstudios.bartender.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.surteesstudios.bartender.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.surteesstudios.Bartender.revenuecat
+echo "Removing $HOME/Library/Application Support/com.surteesstudios.Bartender.revenuecat..."
+if [ -d "$HOME/Library/Application Support/com.surteesstudios.Bartender.revenuecat" ]; then
+    rm -rf "$HOME/Library/Application Support/com.surteesstudios.Bartender.revenuecat" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.surteesstudios.Bartender.revenuecat" ]; then
+    rm -f "$HOME/Library/Application Support/com.surteesstudios.Bartender.revenuecat" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.surteesstudios.Bartender
 echo "Removing $HOME/Library/Caches/com.surteesstudios.Bartender..."
 if [ -d "$HOME/Library/Caches/com.surteesstudios.Bartender" ]; then
@@ -43,12 +75,36 @@ elif [ -f "$HOME/Library/Caches/com.surteesstudios.Bartender" ]; then
     rm -f "$HOME/Library/Caches/com.surteesstudios.Bartender" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.surteesstudios.Bartender.revenuecat
+echo "Removing $HOME/Library/Caches/com.surteesstudios.Bartender.revenuecat..."
+if [ -d "$HOME/Library/Caches/com.surteesstudios.Bartender.revenuecat" ]; then
+    rm -rf "$HOME/Library/Caches/com.surteesstudios.Bartender.revenuecat" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.surteesstudios.Bartender.revenuecat" ]; then
+    rm -f "$HOME/Library/Caches/com.surteesstudios.Bartender.revenuecat" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Cookies/com.surteesstudios.Bartender.binarycookies
 echo "Removing $HOME/Library/Cookies/com.surteesstudios.Bartender.binarycookies..."
 if [ -d "$HOME/Library/Cookies/com.surteesstudios.Bartender.binarycookies" ]; then
     rm -rf "$HOME/Library/Cookies/com.surteesstudios.Bartender.binarycookies" 2>/dev/null || true
 elif [ -f "$HOME/Library/Cookies/com.surteesstudios.Bartender.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/com.surteesstudios.Bartender.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/24J875RH8J.com.surteesstudios.Bartender
+echo "Removing $HOME/Library/Group Containers/24J875RH8J.com.surteesstudios.Bartender..."
+if [ -d "$HOME/Library/Group Containers/24J875RH8J.com.surteesstudios.Bartender" ]; then
+    rm -rf "$HOME/Library/Group Containers/24J875RH8J.com.surteesstudios.Bartender" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/24J875RH8J.com.surteesstudios.Bartender" ]; then
+    rm -f "$HOME/Library/Group Containers/24J875RH8J.com.surteesstudios.Bartender" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.surteesstudios.Bartender
+echo "Removing $HOME/Library/HTTPStorages/com.surteesstudios.Bartender..."
+if [ -d "$HOME/Library/HTTPStorages/com.surteesstudios.Bartender" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.surteesstudios.Bartender" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.surteesstudios.Bartender" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.surteesstudios.Bartender" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.surteesstudios.Bartender.plist

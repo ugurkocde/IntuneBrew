@@ -3,7 +3,7 @@
   "description": "3D printer and slicing GUI",
   "version": "5.13.0",
   "url": "https://github.com/Ultimaker/Cura/releases/download/5.13.0/UltiMaker-Cura-5.13.0-macos-ARM64.dmg",
-  "vendor_url": "https://github.com/Ultimaker/Cura/releases/download/5.12.1/UltiMaker-Cura-5.12.1-macos-ARM64.dmg",
+  "vendor_url": "https://github.com/Ultimaker/Cura/releases/download/5.13.0/UltiMaker-Cura-5.13.0-macos-ARM64.dmg",
   "bundleId": "nl.ultimaker.cura.dmg",
   "homepage": "https://ultimaker.com/software/ultimaker-cura",
   "homebrew_cask": "ultimaker-cura",

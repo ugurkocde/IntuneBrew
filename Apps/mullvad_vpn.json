@@ -3,7 +3,7 @@
   "description": "VPN client",
   "version": "2026.3",
   "url": "https://cdn.mullvad.net/app/desktop/releases/2026.3/MullvadVPN-2026.3.pkg",
-  "vendor_url": "https://cdn.mullvad.net/app/desktop/releases/2026.1/MullvadVPN-2026.1.pkg",
+  "vendor_url": "https://cdn.mullvad.net/app/desktop/releases/2026.3/MullvadVPN-2026.3.pkg",
   "bundleId": "net.mullvad.vpn",
   "homepage": "https://mullvad.net/",
   "homebrew_cask": "mullvad-vpn",

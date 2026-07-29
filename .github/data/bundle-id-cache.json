@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-07-25T19:22:22.208Z",
+  "last_full_scan": "2026-07-29T17:08:46.950Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -64,10 +64,10 @@
       "name": "Adobe Acrobat Pro DC"
     },
     "adobe_acrobat_reader": {
-      "last_checked": "2026-01-15T09:45:30.695Z",
-      "bundle_id": "com.adobe.Reader",
+      "last_checked": "2026-07-29T17:06:28.990Z",
+      "bundle_id": "com.adobe.ARMDCHelper",
       "status": "verified",
-      "source": "api",
+      "source": "file",
       "name": "Adobe Acrobat Reader"
     },
     "adobe_creative_cloud": {
@@ -222,10 +222,10 @@
       "name": "Amazon Q"
     },
     "amazon_workspaces": {
-      "last_checked": "2026-01-15T09:59:18.564Z",
-      "bundle_id": "com.amazon.workspaces",
+      "last_checked": "2026-07-29T17:06:28.991Z",
+      "bundle_id": "com.amazon.workspaces.updater",
       "status": "verified",
-      "source": "api",
+      "source": "file",
       "name": "Amazon Workspaces"
     },
     "android_studio": {
@@ -408,8 +408,8 @@
       "name": "Avidemux"
     },
     "aws_client_vpn": {
-      "last_checked": "2026-01-17T08:37:42.048Z",
-      "bundle_id": "com.amazon.awsvpnclient",
+      "last_checked": "2026-07-29T17:06:28.992Z",
+      "bundle_id": "com.amazonaws.acvc.osx",
       "status": "verified",
       "source": "file",
       "name": "AWS Client VPN"
@@ -502,8 +502,8 @@
       "name": "Beekeeper Studio"
     },
     "beeper": {
-      "last_checked": "2026-01-17T08:37:42.052Z",
-      "bundle_id": "im.beeper",
+      "last_checked": "2026-07-29T17:06:28.992Z",
+      "bundle_id": "com.automattic.beeper.desktop",
       "status": "verified",
       "source": "file",
       "name": "Beeper"
@@ -857,8 +857,8 @@
       "name": "Claude"
     },
     "cleanmymac": {
-      "last_checked": "2026-01-17T08:37:42.064Z",
-      "bundle_id": "com.macpaw.CleanMyMac5.HealthMonitor",
+      "last_checked": "2026-07-29T17:06:28.994Z",
+      "bundle_id": "com.macpaw.CleanMyMac5",
       "status": "verified",
       "source": "file",
       "name": "CleanMyMac"
@@ -907,8 +907,8 @@
       "name": "Cloudflare WARP"
     },
     "coconutbattery": {
-      "last_checked": "2026-01-17T08:37:42.065Z",
-      "bundle_id": "com.coconut-flavour.coconutBattery-Menu",
+      "last_checked": "2026-07-29T17:06:28.994Z",
+      "bundle_id": "com.coconut-flavour.coconutBattery",
       "status": "verified",
       "source": "file",
       "name": "coconutBattery"
@@ -972,11 +972,10 @@
       "name": "Copilot for Xcode"
     },
     "copyclip": {
-      "last_checked": "2026-01-15T13:30:58.570Z",
-      "bundle_id": "com.fiplab.clipboard",
-      "previous_bundle_id": "com.fiplab.copyclip2",
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-07-29T17:06:28.996Z",
+      "bundle_id": "com.fiplab.copyclip2",
+      "status": "verified",
+      "source": "file",
       "name": "CopyClip"
     },
     "copyq": {
@@ -1061,11 +1060,17 @@
       "name": "Dangerzone"
     },
     "dash": {
-      "last_checked": "2026-01-15T13:40:35.111Z",
+      "last_checked": "2026-07-29T17:08:46.832Z",
       "bundle_id": "com.kapeli.dash",
       "previous_bundle_id": null,
       "status": "updated",
-      "source": "api",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
       "name": "Dash"
     },
     "dataflare": {
@@ -1287,11 +1292,10 @@
       "name": "DropDMG"
     },
     "dropshare": {
-      "last_checked": "2026-01-15T14:09:01.256Z",
-      "bundle_id": "net.mkswap.Dropshare",
-      "previous_bundle_id": "net.mkswap.Dropshare5",
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-07-29T17:08:46.934Z",
+      "bundle_id": "net.mkswap.Dropshare5",
+      "status": "verified",
+      "source": "file",
       "name": "Dropshare"
     },
     "dropzone": {
@@ -1630,10 +1634,10 @@
       "name": "BeardedSpice"
     },
     "berkeley_open_infrastructure_for_network_computing": {
-      "last_checked": "2026-01-15T15:59:57.387Z",
-      "bundle_id": "edu.berkeley.boinc",
+      "last_checked": "2026-07-29T17:06:28.992Z",
+      "bundle_id": "edu.berkeley.boinc.Installer",
       "status": "verified",
-      "source": "api",
+      "source": "file",
       "name": "Berkeley Open Infrastructure for Network Computing"
     },
     "bibdesk": {
@@ -2471,11 +2475,10 @@
       "name": "Geekbench AI"
     },
     "gemini": {
-      "last_checked": "2026-01-15T18:01:27.135Z",
-      "bundle_id": "com.macpaw.site.Gemini",
-      "previous_bundle_id": "com.macpaw.site.Gemini2",
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-07-29T17:08:46.936Z",
+      "bundle_id": "com.macpaw.site.Gemini2",
+      "status": "verified",
+      "source": "file",
       "name": "Gemini"
     },
     "gephi": {
@@ -2789,11 +2792,10 @@
       "name": "Bitrix24"
     },
     "blockblock": {
-      "last_checked": "2026-01-15T21:53:04.914Z",
-      "bundle_id": "com.objective-see.blockblock",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-07-29T17:06:28.993Z",
+      "bundle_id": "com.objective-see.blockblock.installer",
+      "status": "verified",
+      "source": "file",
       "name": "BlockBlock"
     },
     "bluewallet": {
@@ -2936,8 +2938,8 @@
       "name": "Chime"
     },
     "chipmunk_log_analyzer__viewer": {
-      "last_checked": "2026-01-17T08:37:42.063Z",
-      "bundle_id": "org.nicola.chipmunk",
+      "last_checked": "2026-07-29T17:06:28.994Z",
+      "bundle_id": "com.esrlabs.chipmunk",
       "status": "verified",
       "source": "file",
       "name": "Chipmunk Log Analyzer & Viewer"
@@ -3472,11 +3474,10 @@
       "name": "Granola"
     },
     "graphicconverter": {
-      "last_checked": "2026-01-16T13:44:34.437Z",
-      "bundle_id": "com.lemkesoft.graphicconverter",
-      "previous_bundle_id": "de.lemkesoft.graphicconverter",
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-07-29T17:08:46.936Z",
+      "bundle_id": "com.lemkesoft.graphicconverter12",
+      "status": "verified",
+      "source": "file",
       "name": "GraphicConverter"
     },
     "graphiql_app": {
@@ -3569,8 +3570,8 @@
       "name": "Helium"
     },
     "hepta": {
-      "last_checked": "2026-01-17T08:37:42.097Z",
-      "bundle_id": "app.hepta.desktop",
+      "last_checked": "2026-07-29T17:08:46.937Z",
+      "bundle_id": "app.projectmeta.projectmeta",
       "status": "verified",
       "source": "file",
       "name": "Hepta"
@@ -4019,11 +4020,10 @@
       "name": "Jumpshare"
     },
     "kaleidoscope": {
-      "last_checked": "2026-01-17T01:04:35.411Z",
-      "bundle_id": "com.blackpixel.kaleidoscope",
-      "previous_bundle_id": "app.kaleidoscope.uninstall_ksdiff",
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-07-29T17:08:46.938Z",
+      "bundle_id": "app.kaleidoscope.v4",
+      "status": "verified",
+      "source": "file",
       "name": "Kaleidoscope"
     },
     "kap": {
@@ -4230,8 +4230,8 @@
       "name": "LaunchBar"
     },
     "launchcontrol": {
-      "last_checked": "2026-01-17T08:37:42.120Z",
-      "bundle_id": "com.soma-zone.LaunchControl.Helper",
+      "last_checked": "2026-07-29T17:08:46.939Z",
+      "bundle_id": "com.soma-zone.LaunchControl",
       "status": "verified",
       "source": "file",
       "name": "LaunchControl"
@@ -4349,8 +4349,8 @@
       "name": "Logitech G HUB"
     },
     "logitech_options": {
-      "last_checked": "2026-01-17T08:37:42.122Z",
-      "bundle_id": "com.logitech.Logi-Options",
+      "last_checked": "2026-07-29T17:08:46.939Z",
+      "bundle_id": "com.logi.optionsplus.installer",
       "status": "verified",
       "source": "file",
       "name": "Logitech Options+"
@@ -4538,8 +4538,8 @@
       "name": "Macs Fan Control"
     },
     "macsyzones": {
-      "last_checked": "2026-01-17T08:37:42.126Z",
-      "bundle_id": "com.macsyzones.MacsyZones",
+      "last_checked": "2026-07-29T17:08:46.939Z",
+      "bundle_id": "MeowingCat.MacsyZones",
       "status": "verified",
       "source": "file",
       "name": "MacsyZones"
@@ -4692,8 +4692,8 @@
       "name": "Mellel"
     },
     "melodics": {
-      "last_checked": "2026-01-17T08:37:42.129Z",
-      "bundle_id": "com.melodics.Melodics",
+      "last_checked": "2026-07-29T17:08:46.940Z",
+      "bundle_id": "com.melodics.melodics",
       "status": "verified",
       "source": "file",
       "name": "Melodics"
@@ -5672,8 +5672,8 @@
       "name": "OpenToonz"
     },
     "openvpn_connect_client": {
-      "last_checked": "2026-01-17T08:37:42.148Z",
-      "bundle_id": "org.openvpn.client.app",
+      "last_checked": "2026-07-29T17:08:46.942Z",
+      "bundle_id": "org.openvpn.client.app.helper",
       "status": "verified",
       "source": "file",
       "name": "OpenVPN Connect client"
@@ -5938,8 +5938,8 @@
       "name": "PhotoStickies"
     },
     "pibar": {
-      "last_checked": "2026-01-17T08:37:42.152Z",
-      "bundle_id": "com.nicola.Pi-bar",
+      "last_checked": "2026-07-29T17:08:46.943Z",
+      "bundle_id": "net.amiantos.PiBar",
       "status": "verified",
       "source": "file",
       "name": "PiBar"
@@ -6085,8 +6085,8 @@
       "name": "portx"
     },
     "positron": {
-      "last_checked": "2026-01-17T08:37:42.155Z",
-      "bundle_id": "com.rstudio.positron",
+      "last_checked": "2026-07-29T17:08:46.943Z",
+      "bundle_id": "co.posit.positron",
       "status": "verified",
       "source": "file",
       "name": "Positron"
@@ -6141,8 +6141,8 @@
       "name": "Principle"
     },
     "pritunl": {
-      "last_checked": "2026-01-17T08:37:42.155Z",
-      "bundle_id": "com.pritunl.pkg.Pritunl",
+      "last_checked": "2026-07-29T17:08:46.944Z",
+      "bundle_id": "com.electron.pritunl",
       "status": "verified",
       "source": "file",
       "name": "Pritunl"
@@ -6190,8 +6190,8 @@
       "name": "ProNotes"
     },
     "propresenter": {
-      "last_checked": "2026-01-17T08:37:42.156Z",
-      "bundle_id": "com.renewedvision.ProPresenter21",
+      "last_checked": "2026-07-29T17:08:46.944Z",
+      "bundle_id": "com.renewedvision.propresenter",
       "status": "verified",
       "source": "file",
       "name": "ProPresenter"
@@ -6358,8 +6358,8 @@
       "name": "Raindrop.io"
     },
     "rambox": {
-      "last_checked": "2026-01-17T08:37:42.160Z",
-      "bundle_id": "com.grupovrs.ramboxce.helper",
+      "last_checked": "2026-07-29T17:08:46.944Z",
+      "bundle_id": "com.rambox",
       "status": "verified",
       "source": "file",
       "name": "Rambox"
@@ -6939,8 +6939,8 @@
       "name": "Session Manager Plugin for the AWS CLI"
     },
     "setapp": {
-      "last_checked": "2026-01-17T08:37:42.171Z",
-      "bundle_id": "com.setapp.DesktopClient.SetappAgent",
+      "last_checked": "2026-07-29T17:08:46.945Z",
+      "bundle_id": "com.setapp.DesktopClient",
       "status": "verified",
       "source": "file",
       "name": "Setapp"
@@ -7492,8 +7492,8 @@
       "name": "SuperDuper!"
     },
     "superhuman": {
-      "last_checked": "2026-01-17T08:37:42.180Z",
-      "bundle_id": "com.superhuman.mail",
+      "last_checked": "2026-07-29T17:08:46.947Z",
+      "bundle_id": "com.superhuman.electron",
       "status": "verified",
       "source": "file",
       "name": "Superhuman"
@@ -7506,8 +7506,8 @@
       "name": "Superkey"
     },
     "superlist": {
-      "last_checked": "2026-01-17T08:37:42.180Z",
-      "bundle_id": "com.superlist.superlist.app",
+      "last_checked": "2026-07-29T17:08:46.947Z",
+      "bundle_id": "com.superlist.superlist",
       "status": "verified",
       "source": "file",
       "name": "Superlist"
@@ -7534,8 +7534,8 @@
       "name": "Surfshark"
     },
     "surge": {
-      "last_checked": "2026-01-17T08:37:42.180Z",
-      "bundle_id": "com.nssurge.surge-mac.helper",
+      "last_checked": "2026-07-29T17:08:46.947Z",
+      "bundle_id": "com.nssurge.surge-mac",
       "status": "verified",
       "source": "file",
       "name": "Surge"
@@ -7646,8 +7646,8 @@
       "name": "SystHist"
     },
     "tabby": {
-      "last_checked": "2026-01-17T08:37:42.182Z",
-      "bundle_id": "org.tabby.helper",
+      "last_checked": "2026-07-29T17:08:46.947Z",
+      "bundle_id": "org.tabby",
       "status": "verified",
       "source": "file",
       "name": "Tabby"
@@ -7702,8 +7702,8 @@
       "name": "Taccy"
     },
     "tailscale": {
-      "last_checked": "2026-01-17T08:37:42.183Z",
-      "bundle_id": "com.tailscale.ipn.macsys",
+      "last_checked": "2026-07-29T17:08:46.947Z",
+      "bundle_id": "org.sparkle-project.Sparkle.Updater",
       "status": "verified",
       "source": "file",
       "name": "Tailscale"
@@ -7863,8 +7863,8 @@
       "name": "Timer"
     },
     "timescribe": {
-      "last_checked": "2026-01-17T08:38:03.484Z",
-      "bundle_id": "com.apple.TimeScribe",
+      "last_checked": "2026-07-29T17:08:46.948Z",
+      "bundle_id": "de.amplussoftware.timescribe",
       "status": "verified",
       "source": "file",
       "name": "TimeScribe"
@@ -7933,8 +7933,8 @@
       "name": "Tor Browser"
     },
     "tower": {
-      "last_checked": "2026-01-17T08:38:03.485Z",
-      "bundle_id": "com.fournova.Tower",
+      "last_checked": "2026-07-29T17:08:46.948Z",
+      "bundle_id": "com.fournova.Tower3",
       "status": "verified",
       "source": "file",
       "name": "Tower"
@@ -8185,8 +8185,8 @@
       "name": "Vanilla"
     },
     "vellum": {
-      "last_checked": "2026-01-17T08:38:03.490Z",
-      "bundle_id": "com.180g.Vellum",
+      "last_checked": "2026-07-29T17:08:46.948Z",
+      "bundle_id": "co.180g.Vellum",
       "status": "verified",
       "source": "file",
       "name": "Vellum"
@@ -8297,8 +8297,8 @@
       "name": "VOX"
     },
     "vpn_tracker_365": {
-      "last_checked": "2026-01-17T08:38:03.492Z",
-      "bundle_id": "com.equinux.VPNTracker365",
+      "last_checked": "2026-07-29T17:08:46.949Z",
+      "bundle_id": "com.vpntracker.365mac",
       "status": "verified",
       "source": "file",
       "name": "VPN Tracker 365"
@@ -8353,8 +8353,8 @@
       "name": "Wave Terminal"
     },
     "wavebox": {
-      "last_checked": "2026-01-17T08:38:03.493Z",
-      "bundle_id": "io.wavebox.wavebox",
+      "last_checked": "2026-07-29T17:08:46.949Z",
+      "bundle_id": "com.bookry.wavebox",
       "status": "verified",
       "source": "file",
       "name": "Wavebox"
@@ -8780,8 +8780,8 @@
       "name": "BoltAI 2"
     },
     "wacom_tablet": {
-      "last_checked": "2026-01-21T21:53:55.628Z",
-      "bundle_id": "com.wacom.TabletInstaller",
+      "last_checked": "2026-07-29T17:08:46.949Z",
+      "bundle_id": "com.wacom.IOManager",
       "status": "verified",
       "source": "file",
       "name": "Wacom Tablet"
@@ -9018,16 +9018,10 @@
       "name": "cardPresso"
     },
     "affinity": {
-      "last_checked": "2026-04-28T17:05:59.927Z",
-      "bundle_id": "ptujec.LaunchBar.action.AffinityRecentDocuments",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "github_search",
-      "methods_tried": [
-        "mac_app_store",
-        "pkg_inspection",
-        "github_search"
-      ],
+      "last_checked": "2026-07-29T17:06:28.991Z",
+      "bundle_id": "com.canva.affinity",
+      "status": "verified",
+      "source": "file",
       "name": "Affinity"
     },
     "lastpass": {
@@ -9100,18 +9094,10 @@
       "name": "Zenmap"
     },
     "sipgate": {
-      "last_checked": "2026-05-26T09:31:47.757Z",
-      "bundle_id": "de.sipgate.sipgate",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "openai_alternative",
-      "methods_tried": [
-        "mac_app_store",
-        "pkg_inspection",
-        "github_search",
-        "openai_improved",
-        "openai_alternative"
-      ],
+      "last_checked": "2026-07-29T17:08:46.946Z",
+      "bundle_id": "com.sipgate.desktop",
+      "status": "verified",
+      "source": "file",
       "name": "sipgate"
     },
     "support_app": {
@@ -9272,15 +9258,10 @@
       "name": "FluidVoice"
     },
     "tableau_prep": {
-      "last_checked": "2026-07-16T22:19:19.292Z",
-      "bundle_id": "com.tableausoftware.autosave",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "pkg_inspection",
-      "methods_tried": [
-        "mac_app_store",
-        "pkg_inspection"
-      ],
+      "last_checked": "2026-07-29T17:08:46.947Z",
+      "bundle_id": "com.tableausoftware.tableauprep",
+      "status": "verified",
+      "source": "file",
       "name": "Tableau Prep"
     },
     "net_sdk": {

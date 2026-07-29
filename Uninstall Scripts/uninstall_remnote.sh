@@ -25,12 +25,28 @@ elif [ -f "/Applications/RemNote.app" ]; then
     rm -f "/Applications/RemNote.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.remnote.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.remnote.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.remnote.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.remnote.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.remnote.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.remnote.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/RemNote
 echo "Removing $HOME/Library/Application Support/RemNote..."
 if [ -d "$HOME/Library/Application Support/RemNote" ]; then
     rm -rf "$HOME/Library/Application Support/RemNote" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/RemNote" ]; then
     rm -f "$HOME/Library/Application Support/RemNote" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/RemNote
+echo "Removing $HOME/Library/Logs/RemNote..."
+if [ -d "$HOME/Library/Logs/RemNote" ]; then
+    rm -rf "$HOME/Library/Logs/RemNote" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/RemNote" ]; then
+    rm -f "$HOME/Library/Logs/RemNote" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/io.remnote.plist

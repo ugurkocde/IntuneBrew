@@ -3,7 +3,7 @@
   "description": "Tools and runtimes for building model-based applications",
   "version": "4.40",
   "url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-06/R/eclipse-modeling-2026-06-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
-  "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-03/R/eclipse-modeling-2026-03-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
+  "vendor_url": "https://www.eclipse.org/downloads/download.php?file=/technology/epp/downloads/release/2026-06/R/eclipse-modeling-2026-06-R-macosx-cocoa-aarch64.dmg&mirror_id=1",
   "bundleId": "org.eclipse.epp.package.modeling.product",
   "homepage": "https://eclipse.org/",
   "homebrew_cask": "eclipse-modeling",

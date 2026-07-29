@@ -1,14 +1,14 @@
 {
   "name": "Discord",
   "description": "Voice and text chat software",
-  "version": "0.0.402",
-  "url": "https://dl.discordapp.net/apps/osx/0.0.402/Discord.dmg",
-  "vendor_url": "https://dl.discordapp.net/apps/osx/0.0.385/Discord.dmg",
+  "version": "0.0.403",
+  "url": "https://dl.discordapp.net/apps/osx/0.0.403/Discord.dmg",
+  "vendor_url": "https://dl.discordapp.net/apps/osx/0.0.403/Discord.dmg",
   "bundleId": "com.hnc.Discord",
   "homepage": "https://discord.com/",
   "homebrew_cask": "discord",
   "fileName": "Discord.dmg",
-  "sha": "568293a1f65fab2244b5acdac282b88b6f00efd87defd76cc77185d1b9caba64",
+  "sha": "212fc6f6686cdd6723f640bfcbc9a35a27a0991d6ca6a9a132580c3018c45801",
   "changelog": "https://discord.com/tags/changelog",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:26:31Z",
@@ -22,5 +22,5 @@
   },
   "category": "Communication",
   "publisher": "Discord, Inc.",
-  "previous_version": "0.0.402"
+  "previous_version": "0.0.403"
 }

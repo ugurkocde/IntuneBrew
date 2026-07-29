@@ -3,7 +3,7 @@
   "description": "Font manager",
   "version": "2026.5.23",
   "url": "https://releases.fontba.se/mac/FontBase-2026.5.23.dmg",
-  "vendor_url": "https://releases.fontba.se/mac/FontBase-2026.3.0.dmg",
+  "vendor_url": "https://releases.fontba.se/mac/FontBase-2026.5.23.dmg",
   "bundleId": "com.dominiklevitsky.fontbase",
   "homepage": "https://fontba.se/",
   "homebrew_cask": "fontbase",

@@ -25,12 +25,12 @@ elif [ -f "/Applications/DevKnife.app" ]; then
     rm -f "/Applications/DevKnife.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.solotuna.devknife/
-echo "Removing $HOME/Library/Application Support/com.solotuna.devknife/..."
-if [ -d "$HOME/Library/Application Support/com.solotuna.devknife/" ]; then
-    rm -rf "$HOME/Library/Application Support/com.solotuna.devknife/" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.solotuna.devknife/" ]; then
-    rm -f "$HOME/Library/Application Support/com.solotuna.devknife/" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.solotuna.devknife
+echo "Removing $HOME/Library/Application Support/com.solotuna.devknife..."
+if [ -d "$HOME/Library/Application Support/com.solotuna.devknife" ]; then
+    rm -rf "$HOME/Library/Application Support/com.solotuna.devknife" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.solotuna.devknife" ]; then
+    rm -f "$HOME/Library/Application Support/com.solotuna.devknife" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.solotuna.devknife.plist

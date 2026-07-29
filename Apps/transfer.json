@@ -3,7 +3,7 @@
   "description": "Standalone TFTP, FTP, and SFTP server",
   "version": "2.4.3",
   "url": "https://www.intuitibits.com/downloads/Transfer_2.4.3.dmg",
-  "vendor_url": "https://www.intuitibits.com/downloads/Transfer_2.4.2.dmg",
+  "vendor_url": "https://www.intuitibits.com/downloads/Transfer_2.4.3.dmg",
   "bundleId": "com.adriangranados.Transfer",
   "homepage": "https://www.intuitibits.com/products/transfer/",
   "homebrew_cask": "transfer",

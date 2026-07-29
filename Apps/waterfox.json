@@ -3,7 +3,7 @@
   "description": "Web browser",
   "version": "6.6.17",
   "url": "https://cdn1.waterfox.net/waterfox/releases/6.6.17/Darwin_x86_64-aarch64/Waterfox%206.6.17.dmg",
-  "vendor_url": "https://cdn1.waterfox.net/waterfox/releases/6.6.11/Darwin_x86_64-aarch64/Waterfox%206.6.11.dmg",
+  "vendor_url": "https://cdn1.waterfox.net/waterfox/releases/6.6.17/Darwin_x86_64-aarch64/Waterfox%206.6.17.dmg",
   "bundleId": "org.waterfoxproject.waterfox",
   "homepage": "https://www.waterfox.net/",
   "homebrew_cask": "waterfox",

@@ -14,5 +14,5 @@
   "previous_version": "0.3",
   "homebrew_cask": "nocturnal",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: unmaintained"
+  "deprecation_reason": "cask removed from Homebrew"
 }

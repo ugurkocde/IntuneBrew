@@ -3,7 +3,7 @@
   "description": "Add more gestures for Trackpad and Magic Mouse",
   "version": "1.48",
   "url": "https://multitouch.app/downloads/multitouch1.48.dmg",
-  "vendor_url": "https://multitouch.app/downloads/multitouch1.43.dmg",
+  "vendor_url": "https://multitouch.app/downloads/multitouch1.48.dmg",
   "bundleId": "com.brassmonkery.Multitouch",
   "homepage": "https://multitouch.app/",
   "homebrew_cask": "multitouch",

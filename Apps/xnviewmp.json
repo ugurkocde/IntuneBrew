@@ -3,7 +3,7 @@
   "description": "Photo viewer, image manager, image resiser and more",
   "version": "1.11.5",
   "url": "https://download.xnview.com/old_versions/XnView_MP/XnView_MP-1.11.5-mac.dmg",
-  "vendor_url": "https://download.xnview.com/XnViewMP-mac.dmg",
+  "vendor_url": "https://download.xnview.com/old_versions/XnView_MP/XnView_MP-1.11.5-mac.dmg",
   "bundleId": "com.gilles-caulier.xnviewmp",
   "homepage": "https://www.xnview.com/en/xnviewmp/",
   "homebrew_cask": "xnviewmp",

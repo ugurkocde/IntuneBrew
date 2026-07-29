@@ -3,7 +3,7 @@
   "description": "Development environment, tooling platform and application framework",
   "version": "30",
   "url": "https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb30-zulu25/Apache-NetBeans-30-zulu-25-arm64.pkg",
-  "vendor_url": "https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/v29-build1/Apache-NetBeans-29-arm64.pkg",
+  "vendor_url": "https://github.com/Friends-of-Apache-NetBeans/netbeans-installers/releases/download/nb30-zulu25/Apache-NetBeans-30-zulu-25-arm64.pkg",
   "bundleId": "org.apache.netbeans",
   "homepage": "https://netbeans.apache.org/",
   "homebrew_cask": "netbeans",

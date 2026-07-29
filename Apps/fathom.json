@@ -3,7 +3,7 @@
   "description": "Record and transcribe video conferences",
   "version": "3.5.0",
   "url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-3.5.0.dmg",
-  "vendor_url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-1.42.6.dmg",
+  "vendor_url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-3.5.0.dmg",
   "bundleId": "video.fathom.electron",
   "homepage": "https://fathom.video/",
   "homebrew_cask": "fathom",

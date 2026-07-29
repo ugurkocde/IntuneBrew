@@ -25,12 +25,28 @@ elif [ -f "/Applications/WorkFlowy.app" ]; then
     rm -f "/Applications/WorkFlowy.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.workflowy.desktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.workflowy.desktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.workflowy.desktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.workflowy.desktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.workflowy.desktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.workflowy.desktop.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/WorkFlowy
 echo "Removing $HOME/Library/Application Support/WorkFlowy..."
 if [ -d "$HOME/Library/Application Support/WorkFlowy" ]; then
     rm -rf "$HOME/Library/Application Support/WorkFlowy" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/WorkFlowy" ]; then
     rm -f "$HOME/Library/Application Support/WorkFlowy" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/WorkFlowy
+echo "Removing $HOME/Library/Logs/WorkFlowy..."
+if [ -d "$HOME/Library/Logs/WorkFlowy" ]; then
+    rm -rf "$HOME/Library/Logs/WorkFlowy" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/WorkFlowy" ]; then
+    rm -f "$HOME/Library/Logs/WorkFlowy" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.workflowy.desktop.plist

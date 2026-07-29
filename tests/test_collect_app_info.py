@@ -612,6 +612,18 @@ class CalculateFileHashTests(unittest.TestCase):
 
 
 class CatalogConsistencyTests(unittest.TestCase):
+    def test_codex_uses_desktop_cask_instead_of_cli_cask(self):
+        desktop_url = "https://formulae.brew.sh/api/cask/codex-app.json"
+        cli_url = "https://formulae.brew.sh/api/cask/codex.json"
+
+        self.assertIn(desktop_url, collect_app_info.app_urls)
+        self.assertNotIn(cli_url, collect_app_info.app_urls)
+
+        codex = json.loads(
+            (ROOT / "Apps" / "codex.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(codex["homebrew_cask"], "codex-app")
+
     def test_supported_catalog_matches_non_deprecated_apps(self):
         apps = {
             path.stem: json.loads(path.read_text(encoding="utf-8"))

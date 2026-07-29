@@ -1,16 +1,16 @@
 {
   "name": "Android SDK Command-line Tools",
   "description": "Command-line tools for building and debugging Android apps",
-  "version": "14742923",
-  "url": "https://dl.google.com/android/repository/commandlinetools-mac-14742923_latest.zip",
-  "vendor_url": "https://dl.google.com/android/repository/commandlinetools-mac-14742923_latest.zip",
+  "version": "15859902",
+  "url": "https://dl.google.com/android/repository/commandlinetools-mac_arm64-15859902_latest.zip",
+  "vendor_url": "https://dl.google.com/android/repository/commandlinetools-mac_arm64-15859902_latest.zip",
   "bundleId": "com.google.android.commandlinetools",
   "homepage": "https://developer.android.com/studio",
   "fileName": "commandlinetools-mac-13114758_latest.zip",
   "type": "app",
   "category": "Developer Tools",
   "publisher": "Google LLC",
-  "previous_version": "14742923",
-  "sha": "ed304c5ede3718541e4f978e4ae870a4d853db74af6c16d920588d48523b9dee",
+  "previous_version": "15859902",
+  "sha": "835b62a26162b229b441d1f6d4680383815a270809eb33522c0d480fa5002c4e",
   "homebrew_cask": "android-commandlinetools"
 }

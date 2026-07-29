@@ -25,12 +25,6 @@ elif [ -f "/Applications/DataSpell.app" ]; then
     rm -f "/Applications/DataSpell.app" 2>/dev/null || true
 fi
 
-# Remove binary /Applications/DataSpell.app/DataSpell.app/Contents/MacOS/dataspell
-echo "Removing binary /Applications/DataSpell.app/DataSpell.app/Contents/MacOS/dataspell..."
-if [ -f "/Applications/DataSpell.app/DataSpell.app/Contents/MacOS/dataspell" ]; then
-    rm -f "/Applications/DataSpell.app/DataSpell.app/Contents/MacOS/dataspell" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Application Support/DataSpell*
 echo "Removing $HOME/Library/Application Support/DataSpell*..."
 if [ -d "$HOME/Library/Application Support/DataSpell*" ]; then

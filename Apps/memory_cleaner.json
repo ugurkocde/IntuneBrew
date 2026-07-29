@@ -3,7 +3,7 @@
   "description": "Free up RAM manually and automatically",
   "version": "5.5.3",
   "url": "https://download.nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg?build=271",
-  "vendor_url": "https://download.nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg?build=260",
+  "vendor_url": "https://download.nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg?build=271",
   "bundleId": "com.nektony.Memory-Cleaner-SII",
   "homepage": "https://nektony.com/memory-cleaner",
   "homebrew_cask": "memory-cleaner",

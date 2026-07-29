@@ -3,7 +3,7 @@
   "description": "Convert potentially dangerous PDFs or Office documents into safe PDFs",
   "version": "0.11.0",
   "url": "https://github.com/freedomofpress/dangerzone/releases/download/v0.11.0/Dangerzone-0.11.0-arm64.dmg",
-  "vendor_url": "https://github.com/freedomofpress/dangerzone/releases/download/v0.10.0/Dangerzone-0.10.0-arm64.dmg",
+  "vendor_url": "https://github.com/freedomofpress/dangerzone/releases/download/v0.11.0/Dangerzone-0.11.0-arm64.dmg",
   "bundleId": "media.firstlook.dangerzone",
   "homepage": "https://dangerzone.rocks/",
   "homebrew_cask": "dangerzone",

@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/bilibili" ]; then
     rm -f "$HOME/Library/Application Support/bilibili" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bilibili.bilibilipc.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bilibili.bilibilipc.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bilibili.bilibilipc.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bilibili.bilibilipc.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bilibili.bilibilipc.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bilibili.bilibilipc.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/bilibili
 echo "Removing $HOME/Library/Logs/bilibili..."
 if [ -d "$HOME/Library/Logs/bilibili" ]; then

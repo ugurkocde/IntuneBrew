@@ -3,7 +3,7 @@
   "description": "SQL powered operating system instrumentation and analytics",
   "version": "5.23.1",
   "url": "https://github.com/osquery/osquery/releases/download/5.23.1/osquery-5.23.1.pkg",
-  "vendor_url": "https://github.com/osquery/osquery/releases/download/5.22.1/osquery-5.22.1.pkg",
+  "vendor_url": "https://github.com/osquery/osquery/releases/download/5.23.1/osquery-5.23.1.pkg",
   "bundleId": "com.facebook.osquery",
   "homepage": "https://osquery.io/",
   "homebrew_cask": "osquery",

@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/ActiveDock 2" ]; then
     rm -f "$HOME/Library/Application Support/ActiveDock 2" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sergey-gerasimenko.activedock-2.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sergey-gerasimenko.activedock-2.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sergey-gerasimenko.activedock-2.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sergey-gerasimenko.activedock-2.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sergey-gerasimenko.activedock-2.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sergey-gerasimenko.activedock-2.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.sergey-gerasimenko.ActiveDock-2
 echo "Removing $HOME/Library/Application Support/com.sergey-gerasimenko.ActiveDock-2..."
 if [ -d "$HOME/Library/Application Support/com.sergey-gerasimenko.ActiveDock-2" ]; then

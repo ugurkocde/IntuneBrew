@@ -3,7 +3,7 @@
   "description": "Video, audio and image converter",
   "version": "20.2",
   "url": "https://www.shutterencoder.com/Shutter%20Encoder%2020.2%20Apple%20Silicon.pkg",
-  "vendor_url": "https://www.shutterencoder.com/Shutter%20Encoder%2020.0%20Apple%20Silicon.pkg",
+  "vendor_url": "https://www.shutterencoder.com/Shutter%20Encoder%2020.2%20Apple%20Silicon.pkg",
   "bundleId": "com.paulpacifico.shutterencoder",
   "homepage": "https://www.shutterencoder.com/",
   "homebrew_cask": "shutter-encoder",

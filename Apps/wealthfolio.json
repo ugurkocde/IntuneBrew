@@ -3,7 +3,7 @@
   "description": "Investment portfolio tracker",
   "version": "3.6.2",
   "url": "https://github.com/afadil/wealthfolio/releases/download/v3.6.2/Wealthfolio_3.6.2_aarch64.dmg",
-  "vendor_url": "https://github.com/afadil/wealthfolio/releases/download/v3.2.1/Wealthfolio_3.2.1_aarch64.dmg",
+  "vendor_url": "https://github.com/afadil/wealthfolio/releases/download/v3.6.2/Wealthfolio_3.6.2_aarch64.dmg",
   "bundleId": "app.wealthfolio.desktop",
   "homepage": "https://wealthfolio.app/",
   "homebrew_cask": "wealthfolio",

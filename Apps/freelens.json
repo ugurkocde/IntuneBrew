@@ -3,7 +3,7 @@
   "description": "Kubernetes IDE",
   "version": "1.10.3",
   "url": "https://github.com/freelensapp/freelens/releases/download/v1.10.3/Freelens-1.10.3-macos-arm64.dmg",
-  "vendor_url": "https://github.com/freelensapp/freelens/releases/download/v1.8.1/Freelens-1.8.1-macos-arm64.dmg",
+  "vendor_url": "https://github.com/freelensapp/freelens/releases/download/v1.10.3/Freelens-1.10.3-macos-arm64.dmg",
   "bundleId": "app.freelens.Freelens",
   "homepage": "https://freelens.app/",
   "homebrew_cask": "freelens",

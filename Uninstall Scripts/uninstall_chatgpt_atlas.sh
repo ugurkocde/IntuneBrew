@@ -83,6 +83,14 @@ elif [ -f "$HOME/Library/HTTPStorages/com.openai.atlas.binarycookies" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.openai.atlas.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/LaunchAgents/com.openai.atlas.update-helper.plist
+echo "Removing $HOME/Library/LaunchAgents/com.openai.atlas.update-helper.plist..."
+if [ -d "$HOME/Library/LaunchAgents/com.openai.atlas.update-helper.plist" ]; then
+    rm -rf "$HOME/Library/LaunchAgents/com.openai.atlas.update-helper.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/LaunchAgents/com.openai.atlas.update-helper.plist" ]; then
+    rm -f "$HOME/Library/LaunchAgents/com.openai.atlas.update-helper.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/DiagnosticReports/ChatGPT Atlas (Service)*.ips
 echo "Removing $HOME/Library/Logs/DiagnosticReports/ChatGPT Atlas (Service)*.ips..."
 if [ -d "$HOME/Library/Logs/DiagnosticReports/ChatGPT Atlas (Service)*.ips" ]; then
