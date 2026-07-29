@@ -4,7 +4,7 @@
   "version": "3000.0.7",
   "url": "https://github.com/schuyler/macdown3000/releases/download/v3000.0.7/MacDown-3000.0.7.dmg",
   "vendor_url": "https://github.com/schuyler/macdown3000/releases/download/v3000.0.7/MacDown-3000.0.7.dmg",
-  "bundleId": null,
+  "bundleId": "app.macdown.macdown3000",
   "homepage": "https://macdown.app/",
   "homebrew_cask": "macdown-3000",
   "fileName": "MacDown-3000.0.7.dmg",
