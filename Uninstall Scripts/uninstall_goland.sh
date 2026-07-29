@@ -25,12 +25,6 @@ elif [ -f "/Applications/GoLand.app" ]; then
     rm -f "/Applications/GoLand.app" 2>/dev/null || true
 fi
 
-# Remove binary /Applications/Goland.app/GoLand.app/Contents/MacOS/goland
-echo "Removing binary /Applications/Goland.app/GoLand.app/Contents/MacOS/goland..."
-if [ -f "/Applications/Goland.app/GoLand.app/Contents/MacOS/goland" ]; then
-    rm -f "/Applications/Goland.app/GoLand.app/Contents/MacOS/goland" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Application Support/JetBrains/GoLand
 echo "Removing $HOME/Library/Application Support/JetBrains/GoLand..."
 if [ -d "$HOME/Library/Application Support/JetBrains/GoLand" ]; then
@@ -39,28 +33,28 @@ elif [ -f "$HOME/Library/Application Support/JetBrains/GoLand" ]; then
     rm -f "$HOME/Library/Application Support/JetBrains/GoLand" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/JetBrains/GoLand2025.1
-echo "Removing $HOME/Library/Application Support/JetBrains/GoLand2025.1..."
-if [ -d "$HOME/Library/Application Support/JetBrains/GoLand2025.1" ]; then
-    rm -rf "$HOME/Library/Application Support/JetBrains/GoLand2025.1" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/JetBrains/GoLand2025.1" ]; then
-    rm -f "$HOME/Library/Application Support/JetBrains/GoLand2025.1" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/JetBrains/GoLand2026.2
+echo "Removing $HOME/Library/Application Support/JetBrains/GoLand2026.2..."
+if [ -d "$HOME/Library/Application Support/JetBrains/GoLand2026.2" ]; then
+    rm -rf "$HOME/Library/Application Support/JetBrains/GoLand2026.2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/JetBrains/GoLand2026.2" ]; then
+    rm -f "$HOME/Library/Application Support/JetBrains/GoLand2026.2" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/JetBrains/GoLand2025.1
-echo "Removing $HOME/Library/Caches/JetBrains/GoLand2025.1..."
-if [ -d "$HOME/Library/Caches/JetBrains/GoLand2025.1" ]; then
-    rm -rf "$HOME/Library/Caches/JetBrains/GoLand2025.1" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/JetBrains/GoLand2025.1" ]; then
-    rm -f "$HOME/Library/Caches/JetBrains/GoLand2025.1" 2>/dev/null || true
+# Remove $HOME/Library/Caches/JetBrains/GoLand2026.2
+echo "Removing $HOME/Library/Caches/JetBrains/GoLand2026.2..."
+if [ -d "$HOME/Library/Caches/JetBrains/GoLand2026.2" ]; then
+    rm -rf "$HOME/Library/Caches/JetBrains/GoLand2026.2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/JetBrains/GoLand2026.2" ]; then
+    rm -f "$HOME/Library/Caches/JetBrains/GoLand2026.2" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Logs/JetBrains/GoLand2025.1
-echo "Removing $HOME/Library/Logs/JetBrains/GoLand2025.1..."
-if [ -d "$HOME/Library/Logs/JetBrains/GoLand2025.1" ]; then
-    rm -rf "$HOME/Library/Logs/JetBrains/GoLand2025.1" 2>/dev/null || true
-elif [ -f "$HOME/Library/Logs/JetBrains/GoLand2025.1" ]; then
-    rm -f "$HOME/Library/Logs/JetBrains/GoLand2025.1" 2>/dev/null || true
+# Remove $HOME/Library/Logs/JetBrains/GoLand2026.2
+echo "Removing $HOME/Library/Logs/JetBrains/GoLand2026.2..."
+if [ -d "$HOME/Library/Logs/JetBrains/GoLand2026.2" ]; then
+    rm -rf "$HOME/Library/Logs/JetBrains/GoLand2026.2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/JetBrains/GoLand2026.2" ]; then
+    rm -f "$HOME/Library/Logs/JetBrains/GoLand2026.2" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.jetbrains.goland.plist
@@ -71,12 +65,12 @@ elif [ -f "$HOME/Library/Preferences/com.jetbrains.goland.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.jetbrains.goland.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/GoLand2025.1
-echo "Removing $HOME/Library/Preferences/GoLand2025.1..."
-if [ -d "$HOME/Library/Preferences/GoLand2025.1" ]; then
-    rm -rf "$HOME/Library/Preferences/GoLand2025.1" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/GoLand2025.1" ]; then
-    rm -f "$HOME/Library/Preferences/GoLand2025.1" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/GoLand2026.2
+echo "Removing $HOME/Library/Preferences/GoLand2026.2..."
+if [ -d "$HOME/Library/Preferences/GoLand2026.2" ]; then
+    rm -rf "$HOME/Library/Preferences/GoLand2026.2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/GoLand2026.2" ]; then
+    rm -f "$HOME/Library/Preferences/GoLand2026.2" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.jetbrains.goland.SavedState

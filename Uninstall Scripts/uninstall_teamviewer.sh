@@ -73,6 +73,14 @@ killall -9 "com.teamviewer.TeamViewer" 2>/dev/null || true
 echo "Stopping application with bundle ID com.teamviewer.TeamViewerUninstaller if running..."
 killall -9 "com.teamviewer.TeamViewerUninstaller" 2>/dev/null || true
 
+# Remove /Library/Application Support/TeamViewer
+echo "Removing /Library/Application Support/TeamViewer..."
+if [ -d "/Library/Application Support/TeamViewer" ]; then
+    rm -rf "/Library/Application Support/TeamViewer" 2>/dev/null || true
+elif [ -f "/Library/Application Support/TeamViewer" ]; then
+    rm -f "/Library/Application Support/TeamViewer" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/TeamViewer
 echo "Removing $HOME/Library/Application Support/TeamViewer..."
 if [ -d "$HOME/Library/Application Support/TeamViewer" ]; then

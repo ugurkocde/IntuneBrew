@@ -57,6 +57,14 @@ elif [ -f "$HOME/Library/Caches/com.rightfontapp.RightFont*" ]; then
     rm -f "$HOME/Library/Caches/com.rightfontapp.RightFont*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.rightfontapp.RightFont5
+echo "Removing $HOME/Library/HTTPStorages/com.rightfontapp.RightFont5..."
+if [ -d "$HOME/Library/HTTPStorages/com.rightfontapp.RightFont5" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.rightfontapp.RightFont5" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.rightfontapp.RightFont5" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.rightfontapp.RightFont5" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/RightFont*
 echo "Removing $HOME/Library/Logs/RightFont*..."
 if [ -d "$HOME/Library/Logs/RightFont*" ]; then
