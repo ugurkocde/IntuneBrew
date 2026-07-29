@@ -1,14 +1,14 @@
 {
   "name": "OmniOutliner",
   "description": "Note taking application and information organiser",
-  "version": "6.2",
-  "url": "https://downloads.omnigroup.com/software/macOS/15/OmniOutliner-6.2.dmg",
+  "version": "6.2.1",
+  "url": "https://downloads.omnigroup.com/software/macOS/15/OmniOutliner-6.2.1.dmg",
   "vendor_url": "https://downloads.omnigroup.com/software/macOS/15/OmniOutliner-6.1.dmg",
   "bundleId": "com.omnigroup.OmniOutliner5",
   "homepage": "https://www.omnigroup.com/omnioutliner/",
   "homebrew_cask": "omnioutliner",
-  "fileName": "OmniOutliner-6.2.dmg",
-  "sha": "69bd2ffeb7f611cb893c5c3f1787ce7ae5037c93520715cb875dba913799f337",
+  "fileName": "OmniOutliner-6.2.1.dmg",
+  "sha": "7c1ffddfc9cf0a1124c966f3c2351bae68872a10dd432588683607ed0c6b97d0",
   "category": "Productivity",
   "publisher": "The Omni Group",
   "previous_version": "6.2"

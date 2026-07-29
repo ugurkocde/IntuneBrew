@@ -1,14 +1,14 @@
 {
   "name": "WebCatalog",
   "description": "Tool to run web apps like desktop apps",
-  "version": "77.7.0",
-  "url": "https://cdn-2.webcatalog.io/webcatalog/WebCatalog-77.7.0-universal.dmg",
+  "version": "77.8.0",
+  "url": "https://cdn-2.webcatalog.io/webcatalog/WebCatalog-77.8.0-universal.dmg",
   "vendor_url": "https://cdn-2.webcatalog.io/webcatalog/WebCatalog-74.0.2-universal.dmg",
   "bundleId": "com.webcatalog.jordan",
   "homepage": "https://webcatalog.io/",
   "homebrew_cask": "webcatalog",
-  "fileName": "WebCatalog-77.7.0-universal.dmg",
-  "sha": "e6cddb9246d62adfe7f03d38a58750c05dd671d190ea554e4cb6ac238459180c",
+  "fileName": "WebCatalog-77.8.0-universal.dmg",
+  "sha": "8851efab3e945df4f3a5a39b254987cb9217390753f27e2eaaf65c7dacc82d23",
   "category": "Productivity",
   "publisher": "WebCatalog",
   "previous_version": "77.7.0"

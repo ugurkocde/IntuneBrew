@@ -14,5 +14,5 @@
   "previous_version": "1.2.5",
   "homebrew_cask": "yubico-yubikey-manager",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: discontinued"
+  "deprecation_reason": "cask removed from Homebrew"
 }
