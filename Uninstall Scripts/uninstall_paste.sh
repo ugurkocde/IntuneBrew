@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Caches/com.wiheads.paste-direct" ]; then
     rm -f "$HOME/Library/Caches/com.wiheads.paste-direct" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Group Containers/group.com.wiheads.paste
+echo "Removing $HOME/Library/Group Containers/group.com.wiheads.paste..."
+if [ -d "$HOME/Library/Group Containers/group.com.wiheads.paste" ]; then
+    rm -rf "$HOME/Library/Group Containers/group.com.wiheads.paste" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/group.com.wiheads.paste" ]; then
+    rm -f "$HOME/Library/Group Containers/group.com.wiheads.paste" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.wiheads.paste-direct
 echo "Removing $HOME/Library/HTTPStorages/com.wiheads.paste-direct..."
 if [ -d "$HOME/Library/HTTPStorages/com.wiheads.paste-direct" ]; then

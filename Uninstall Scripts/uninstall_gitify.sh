@@ -73,6 +73,14 @@ elif [ -f "$HOME/Library/HTTPStorages/com.electron.gitify" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.electron.gitify" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/gitify
+echo "Removing $HOME/Library/Logs/gitify..."
+if [ -d "$HOME/Library/Logs/gitify" ]; then
+    rm -rf "$HOME/Library/Logs/gitify" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/gitify" ]; then
+    rm -f "$HOME/Library/Logs/gitify" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.electron.gitify*.plist
 echo "Removing $HOME/Library/Preferences/com.electron.gitify*.plist..."
 if [ -d "$HOME/Library/Preferences/com.electron.gitify*.plist" ]; then

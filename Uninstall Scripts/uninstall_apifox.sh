@@ -25,12 +25,28 @@ elif [ -f "/Applications/Apifox.app" ]; then
     rm -f "/Applications/Apifox.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/.apifox-ai-agent-debugger
+echo "Removing $HOME/.apifox-ai-agent-debugger..."
+if [ -d "$HOME/.apifox-ai-agent-debugger" ]; then
+    rm -rf "$HOME/.apifox-ai-agent-debugger" 2>/dev/null || true
+elif [ -f "$HOME/.apifox-ai-agent-debugger" ]; then
+    rm -f "$HOME/.apifox-ai-agent-debugger" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/apifox
 echo "Removing $HOME/Library/Application Support/apifox..."
 if [ -d "$HOME/Library/Application Support/apifox" ]; then
     rm -rf "$HOME/Library/Application Support/apifox" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/apifox" ]; then
     rm -f "$HOME/Library/Application Support/apifox" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/cn.apifox.app.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/cn.apifox.app.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/cn.apifox.app.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/cn.apifox.app.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/cn.apifox.app.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/cn.apifox.app.sfl*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/cn.apifox.app.plist

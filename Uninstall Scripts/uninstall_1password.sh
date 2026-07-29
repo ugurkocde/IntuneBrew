@@ -17,6 +17,18 @@ fi
 echo "Stopping 1Password if running..."
 pkill -f "1Password" 2>/dev/null || true
 
+# Unload service 2BUA8C4S2C.com.1password.browser-helper
+echo "Unloading service 2BUA8C4S2C.com.1password.browser-helper..."
+launchctl unload -w /Library/LaunchAgents/2BUA8C4S2C.com.1password.browser-helper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/2BUA8C4S2C.com.1password.browser-helper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/2BUA8C4S2C.com.1password.browser-helper.plist 2>/dev/null || true
+
+# Unload service com.1password.1password-launcher
+echo "Unloading service com.1password.1password-launcher..."
+launchctl unload -w /Library/LaunchAgents/com.1password.1password-launcher.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.1password.1password-launcher.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.1password.1password-launcher.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.1password.1password if running
 echo "Stopping application with bundle ID com.1password.1password if running..."
 killall -9 "com.1password.1password" 2>/dev/null || true

@@ -25,6 +25,14 @@ elif [ -f "/Applications/Reqable.app" ]; then
     rm -f "/Applications/Reqable.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.reqable.macosx
+echo "Removing $HOME/Library/Application Support/com.reqable.macosx..."
+if [ -d "$HOME/Library/Application Support/com.reqable.macosx" ]; then
+    rm -rf "$HOME/Library/Application Support/com.reqable.macosx" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.reqable.macosx" ]; then
+    rm -f "$HOME/Library/Application Support/com.reqable.macosx" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/Reqable
 echo "Removing $HOME/Library/Caches/Reqable..."
 if [ -d "$HOME/Library/Caches/Reqable" ]; then

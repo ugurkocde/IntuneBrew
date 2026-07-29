@@ -25,12 +25,68 @@ elif [ -f "/Applications/ExpanDrive.app" ]; then
     rm -f "/Applications/ExpanDrive.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/CH86M498V4.com.expandrive
+echo "Removing $HOME/Library/Application Scripts/CH86M498V4.com.expandrive..."
+if [ -d "$HOME/Library/Application Scripts/CH86M498V4.com.expandrive" ]; then
+    rm -rf "$HOME/Library/Application Scripts/CH86M498V4.com.expandrive" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/CH86M498V4.com.expandrive" ]; then
+    rm -f "$HOME/Library/Application Scripts/CH86M498V4.com.expandrive" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.expandrive.ExpanDrive.FileProvider
+echo "Removing $HOME/Library/Application Scripts/com.expandrive.ExpanDrive.FileProvider..."
+if [ -d "$HOME/Library/Application Scripts/com.expandrive.ExpanDrive.FileProvider" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.expandrive.ExpanDrive.FileProvider" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.expandrive.ExpanDrive.FileProvider" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.expandrive.ExpanDrive.FileProvider" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.expandrive.expandrive.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.expandrive.expandrive.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.expandrive.expandrive.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.expandrive.expandrive.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.expandrive.expandrive.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.expandrive.expandrive.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/ExpanDrive
 echo "Removing $HOME/Library/Application Support/ExpanDrive..."
 if [ -d "$HOME/Library/Application Support/ExpanDrive" ]; then
     rm -rf "$HOME/Library/Application Support/ExpanDrive" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/ExpanDrive" ]; then
     rm -f "$HOME/Library/Application Support/ExpanDrive" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.expandrive.ExpanDrive.FileProvider
+echo "Removing $HOME/Library/Containers/com.expandrive.ExpanDrive.FileProvider..."
+if [ -d "$HOME/Library/Containers/com.expandrive.ExpanDrive.FileProvider" ]; then
+    rm -rf "$HOME/Library/Containers/com.expandrive.ExpanDrive.FileProvider" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.expandrive.ExpanDrive.FileProvider" ]; then
+    rm -f "$HOME/Library/Containers/com.expandrive.ExpanDrive.FileProvider" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/CH86M498V4.com.expandrive
+echo "Removing $HOME/Library/Group Containers/CH86M498V4.com.expandrive..."
+if [ -d "$HOME/Library/Group Containers/CH86M498V4.com.expandrive" ]; then
+    rm -rf "$HOME/Library/Group Containers/CH86M498V4.com.expandrive" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/CH86M498V4.com.expandrive" ]; then
+    rm -f "$HOME/Library/Group Containers/CH86M498V4.com.expandrive" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.expandrive.ExpanDrive
+echo "Removing $HOME/Library/HTTPStorages/com.expandrive.ExpanDrive..."
+if [ -d "$HOME/Library/HTTPStorages/com.expandrive.ExpanDrive" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.expandrive.ExpanDrive" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.expandrive.ExpanDrive" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.expandrive.ExpanDrive" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/ExpanDrive
+echo "Removing $HOME/Library/Logs/ExpanDrive..."
+if [ -d "$HOME/Library/Logs/ExpanDrive" ]; then
+    rm -rf "$HOME/Library/Logs/ExpanDrive" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/ExpanDrive" ]; then
+    rm -f "$HOME/Library/Logs/ExpanDrive" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.expandrive.exfs.plist

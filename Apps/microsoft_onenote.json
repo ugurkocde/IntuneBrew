@@ -1,16 +1,16 @@
 {
   "name": "Microsoft OneNote",
   "description": "Digital note taking app",
-  "version": "16.111.26071913",
-  "url": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_OneNote_16.111.26071913_Updater.pkg",
+  "version": "16.111.26072617",
+  "url": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_OneNote_16.111.26072617_Updater.pkg",
   "vendor_url": "https://officecdnmac.microsoft.com/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_OneNote_16.108.26041219_Updater.pkg",
   "bundleId": "com.microsoft.package.Microsoft_OneNote.app",
   "homepage": "https://www.microsoft.com/en-us/microsoft-365/onenote/digital-note-taking-app",
   "homebrew_cask": "microsoft-onenote",
-  "fileName": "Microsoft_OneNote_16.111.26071913_Updater.pkg",
+  "fileName": "Microsoft_OneNote_16.111.26072617_Updater.pkg",
   "type": "pkg",
-  "sha": "44a94cdc49279c5c56ac56867ad8d4ede088a21113fe6978ad9a4bdbf8b3ee34",
+  "sha": "8fba92e6be59b6a4a373d9a432501ed7b4e5ef5c592eaea38a5e8bc312266344",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
-  "previous_version": "16.111.26071913"
+  "previous_version": "16.111.26072617"
 }

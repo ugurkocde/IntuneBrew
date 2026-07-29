@@ -65,6 +65,14 @@ elif [ -f "$HOME/Library/Caches/Smart Code ltd" ]; then
     rm -f "$HOME/Library/Caches/Smart Code ltd" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/DiagnosticReports/Stremio-*.ips
+echo "Removing $HOME/Library/Logs/DiagnosticReports/Stremio-*.ips..."
+if [ -d "$HOME/Library/Logs/DiagnosticReports/Stremio-*.ips" ]; then
+    rm -rf "$HOME/Library/Logs/DiagnosticReports/Stremio-*.ips" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/DiagnosticReports/Stremio-*.ips" ]; then
+    rm -f "$HOME/Library/Logs/DiagnosticReports/Stremio-*.ips" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.smartcodeltd.stremio.plist
 echo "Removing $HOME/Library/Preferences/com.smartcodeltd.stremio.plist..."
 if [ -d "$HOME/Library/Preferences/com.smartcodeltd.stremio.plist" ]; then

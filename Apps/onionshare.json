@@ -1,15 +1,15 @@
 {
   "name": "OnionShare",
   "description": "Securely and anonymously share files, host websites, and chat with friends",
-  "version": "2.6.4",
-  "url": "https://onionshare.org/dist/2.6.4/OnionShare-2.6.4.dmg",
+  "version": "2.6.5",
+  "url": "https://onionshare.org/dist/2.6.5/OnionShare-2.6.5.dmg",
   "vendor_url": "https://onionshare.org/dist/2.6.3/OnionShare-2.6.3.dmg",
   "bundleId": "org.onionshare.onionshare",
   "homepage": "https://onionshare.org/",
   "homebrew_cask": "onionshare",
-  "fileName": "OnionShare-2.6.4.dmg",
-  "sha": "2c034b3bbe8128a7c033dbd69ebaf4a8ea2a5988e83dc65d3fa787f7fdf308f5",
+  "fileName": "OnionShare-2.6.5.dmg",
+  "sha": "4426a52c9668799b4b1fa3823936e378f93ba01688b7e881bfdcf529e1b5c633",
   "category": "Security",
   "publisher": "The OnionShare Project",
-  "previous_version": "2.6.4"
+  "previous_version": "2.6.5"
 }

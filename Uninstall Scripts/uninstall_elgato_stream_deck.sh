@@ -23,6 +23,12 @@ launchctl unload -w /Library/LaunchAgents/com.elgato.StreamDeck*.plist 2>/dev/nu
 launchctl unload -w /Library/LaunchDaemons/com.elgato.StreamDeck*.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.elgato.StreamDeck*.plist 2>/dev/null || true
 
+# Unload service com.elgato.StreamDeck.trampoline
+echo "Unloading service com.elgato.StreamDeck.trampoline..."
+launchctl unload -w /Library/LaunchAgents/com.elgato.StreamDeck.trampoline.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.elgato.StreamDeck.trampoline.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.elgato.StreamDeck.trampoline.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.elgato.StreamDeck if running
 echo "Stopping application with bundle ID com.elgato.StreamDeck if running..."
 killall -9 "com.elgato.StreamDeck" 2>/dev/null || true

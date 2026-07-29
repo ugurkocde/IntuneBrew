@@ -51,6 +51,14 @@ elif [ -f "/Applications/{'target': 'Grammarly Desktop.app'}" ]; then
     rm -f "/Applications/{'target': 'Grammarly Desktop.app'}" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.grammarly.projectllama.loginhelper.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.grammarly.projectllama.loginhelper.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.grammarly.projectllama.loginhelper.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.grammarly.projectllama.loginhelper.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.grammarly.projectllama.loginhelper.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.grammarly.projectllama.loginhelper.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.grammarly.ProjectLlama
 echo "Removing $HOME/Library/Application Support/com.grammarly.ProjectLlama..."
 if [ -d "$HOME/Library/Application Support/com.grammarly.ProjectLlama" ]; then
@@ -97,6 +105,14 @@ if [ -d "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist" ]
     rm -rf "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist" ]; then
     rm -f "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Shepherd.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Uninstaller.plist
+echo "Removing $HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Uninstaller.plist..."
+if [ -d "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Uninstaller.plist" ]; then
+    rm -rf "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Uninstaller.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Uninstaller.plist" ]; then
+    rm -f "$HOME/Library/LaunchAgents/com.grammarly.ProjectLlama.Uninstaller.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.grammarly.ProjectLlama.plist

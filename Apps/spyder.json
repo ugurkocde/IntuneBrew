@@ -1,15 +1,15 @@
 {
   "name": "Spyder",
   "description": "Scientific Python IDE",
-  "version": "6.1.5",
-  "url": "https://github.com/spyder-ide/spyder/releases/download/v6.1.5/Spyder-macOS-arm64.pkg",
+  "version": "6.1.6",
+  "url": "https://github.com/spyder-ide/spyder/releases/download/v6.1.6/Spyder-macOS-arm64.pkg",
   "vendor_url": "https://github.com/spyder-ide/spyder/releases/download/v6.1.4/Spyder-macOS-arm64.pkg",
   "bundleId": "org.spyder-ide.Spyder",
   "homepage": "https://www.spyder-ide.org/",
   "homebrew_cask": "spyder",
   "fileName": "Spyder-macOS-arm64.pkg",
   "type": "pkg",
-  "sha": "6f25ce49c5421ab15a61081ab0036c251cdb9d061b0d53740092efc620e8a5f5",
+  "sha": "e6a24becbd68a72a044918d53cecfda0a2c1091be7f871040a1ec9fd5501db55",
   "category": "Developer Tools",
   "publisher": "Spyder Development Team",
   "previous_version": "6.1.5"

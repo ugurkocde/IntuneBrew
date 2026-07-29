@@ -25,6 +25,14 @@ elif [ -f "/Applications/TablePlus.app" ]; then
     rm -f "/Applications/TablePlus.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tinyapp.tableplus.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tinyapp.tableplus.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tinyapp.tableplus.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tinyapp.tableplus.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tinyapp.tableplus.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tinyapp.tableplus.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.tinyapp.TablePlus
 echo "Removing $HOME/Library/Application Support/com.tinyapp.TablePlus..."
 if [ -d "$HOME/Library/Application Support/com.tinyapp.TablePlus" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Cookies/com.tinyapp.TablePlus.binarycookies" ]; then
     rm -rf "$HOME/Library/Cookies/com.tinyapp.TablePlus.binarycookies" 2>/dev/null || true
 elif [ -f "$HOME/Library/Cookies/com.tinyapp.TablePlus.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/com.tinyapp.TablePlus.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.tinyapp.TablePlus
+echo "Removing $HOME/Library/HTTPStorages/com.tinyapp.TablePlus..."
+if [ -d "$HOME/Library/HTTPStorages/com.tinyapp.TablePlus" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.tinyapp.TablePlus" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.tinyapp.TablePlus" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.tinyapp.TablePlus" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.tinyapp.TablePlus.plist

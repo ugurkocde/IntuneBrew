@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6.Thumbna
     rm -f "$HOME/Library/Application Scripts/com.omnigroup.OmniOutliner6.Thumbnails" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.omnigroup.omnioutliner*.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.omnigroup.omnioutliner*.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.omnigroup.omnioutliner*.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.omnigroup.omnioutliner*.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.omnigroup.omnioutliner*.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.omnigroup.omnioutliner*.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.omnigroup.OmniOutliner6
 echo "Removing $HOME/Library/Containers/com.omnigroup.OmniOutliner6..."
 if [ -d "$HOME/Library/Containers/com.omnigroup.OmniOutliner6" ]; then

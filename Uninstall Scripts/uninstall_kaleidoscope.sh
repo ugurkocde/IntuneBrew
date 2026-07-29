@@ -17,9 +17,9 @@ fi
 echo "Stopping Kaleidoscope if running..."
 pkill -f "Kaleidoscope" 2>/dev/null || true
 
-# Kill application with bundle ID app.kaleidoscope.v6 if running
-echo "Stopping application with bundle ID app.kaleidoscope.v6 if running..."
-killall -9 "app.kaleidoscope.v6" 2>/dev/null || true
+# Kill application with bundle ID app.kaleidoscope.v7 if running
+echo "Stopping application with bundle ID app.kaleidoscope.v7 if running..."
+killall -9 "app.kaleidoscope.v7" 2>/dev/null || true
 
 # Remove /Applications/Kaleidoscope.app
 echo "Removing /Applications/Kaleidoscope.app..."
@@ -27,6 +27,22 @@ if [ -d "/Applications/Kaleidoscope.app" ]; then
     rm -rf "/Applications/Kaleidoscope.app" 2>/dev/null || true
 elif [ -f "/Applications/Kaleidoscope.app" ]; then
     rm -f "/Applications/Kaleidoscope.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/app.kaleidoscope.v*.KaleidoscopePrism
+echo "Removing $HOME/Library/Application Scripts/app.kaleidoscope.v*.KaleidoscopePrism..."
+if [ -d "$HOME/Library/Application Scripts/app.kaleidoscope.v*.KaleidoscopePrism" ]; then
+    rm -rf "$HOME/Library/Application Scripts/app.kaleidoscope.v*.KaleidoscopePrism" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/app.kaleidoscope.v*.KaleidoscopePrism" ]; then
+    rm -f "$HOME/Library/Application Scripts/app.kaleidoscope.v*.KaleidoscopePrism" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/app.kaleidoscope.v*.KSShareExtension
+echo "Removing $HOME/Library/Application Scripts/app.kaleidoscope.v*.KSShareExtension..."
+if [ -d "$HOME/Library/Application Scripts/app.kaleidoscope.v*.KSShareExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/app.kaleidoscope.v*.KSShareExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/app.kaleidoscope.v*.KSShareExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/app.kaleidoscope.v*.KSShareExtension" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/app.kaleidoscope.v*
@@ -75,6 +91,30 @@ if [ -d "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.blackpixe
     rm -rf "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.blackpixel.kaleidoscope" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.blackpixel.kaleidoscope" ]; then
     rm -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.blackpixel.kaleidoscope" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/app.kaleidoscope.v*.KaleidoscopePrism
+echo "Removing $HOME/Library/Containers/app.kaleidoscope.v*.KaleidoscopePrism..."
+if [ -d "$HOME/Library/Containers/app.kaleidoscope.v*.KaleidoscopePrism" ]; then
+    rm -rf "$HOME/Library/Containers/app.kaleidoscope.v*.KaleidoscopePrism" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/app.kaleidoscope.v*.KaleidoscopePrism" ]; then
+    rm -f "$HOME/Library/Containers/app.kaleidoscope.v*.KaleidoscopePrism" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/app.kaleidoscope.v*.KSShareExtension
+echo "Removing $HOME/Library/Containers/app.kaleidoscope.v*.KSShareExtension..."
+if [ -d "$HOME/Library/Containers/app.kaleidoscope.v*.KSShareExtension" ]; then
+    rm -rf "$HOME/Library/Containers/app.kaleidoscope.v*.KSShareExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/app.kaleidoscope.v*.KSShareExtension" ]; then
+    rm -f "$HOME/Library/Containers/app.kaleidoscope.v*.KSShareExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/app.kaleidoscope.v*
+echo "Removing $HOME/Library/HTTPStorages/app.kaleidoscope.v*..."
+if [ -d "$HOME/Library/HTTPStorages/app.kaleidoscope.v*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/app.kaleidoscope.v*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/app.kaleidoscope.v*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/app.kaleidoscope.v*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/app.kaleidoscope.v*.plist

@@ -35,12 +35,28 @@ elif [ -f "/usr/local/bin//Applications/Nextcloud.app/Contents/MacOS/nextcloudcm
     rm -f "/usr/local/bin//Applications/Nextcloud.app/Contents/MacOS/nextcloudcmd" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.nextcloud.desktopclient.FileProviderExt
+echo "Removing $HOME/Library/Application Scripts/com.nextcloud.desktopclient.FileProviderExt..."
+if [ -d "$HOME/Library/Application Scripts/com.nextcloud.desktopclient.FileProviderExt" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.nextcloud.desktopclient.FileProviderExt" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.nextcloud.desktopclient.FileProviderExt" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.nextcloud.desktopclient.FileProviderExt" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/com.nextcloud.desktopclient.FinderSyncExt
 echo "Removing $HOME/Library/Application Scripts/com.nextcloud.desktopclient.FinderSyncExt..."
 if [ -d "$HOME/Library/Application Scripts/com.nextcloud.desktopclient.FinderSyncExt" ]; then
     rm -rf "$HOME/Library/Application Scripts/com.nextcloud.desktopclient.FinderSyncExt" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/com.nextcloud.desktopclient.FinderSyncExt" ]; then
     rm -f "$HOME/Library/Application Scripts/com.nextcloud.desktopclient.FinderSyncExt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/NKUJUXUJ3B.com.nextcloud.desktopclient
+echo "Removing $HOME/Library/Application Scripts/NKUJUXUJ3B.com.nextcloud.desktopclient..."
+if [ -d "$HOME/Library/Application Scripts/NKUJUXUJ3B.com.nextcloud.desktopclient" ]; then
+    rm -rf "$HOME/Library/Application Scripts/NKUJUXUJ3B.com.nextcloud.desktopclient" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/NKUJUXUJ3B.com.nextcloud.desktopclient" ]; then
+    rm -f "$HOME/Library/Application Scripts/NKUJUXUJ3B.com.nextcloud.desktopclient" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Nextcloud
@@ -59,6 +75,14 @@ elif [ -f "$HOME/Library/Caches/Nextcloud" ]; then
     rm -f "$HOME/Library/Caches/Nextcloud" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/com.nextcloud.desktopclient.FileProviderExt
+echo "Removing $HOME/Library/Containers/com.nextcloud.desktopclient.FileProviderExt..."
+if [ -d "$HOME/Library/Containers/com.nextcloud.desktopclient.FileProviderExt" ]; then
+    rm -rf "$HOME/Library/Containers/com.nextcloud.desktopclient.FileProviderExt" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.nextcloud.desktopclient.FileProviderExt" ]; then
+    rm -f "$HOME/Library/Containers/com.nextcloud.desktopclient.FileProviderExt" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.nextcloud.desktopclient.FinderSyncExt
 echo "Removing $HOME/Library/Containers/com.nextcloud.desktopclient.FinderSyncExt..."
 if [ -d "$HOME/Library/Containers/com.nextcloud.desktopclient.FinderSyncExt" ]; then
@@ -73,6 +97,14 @@ if [ -d "$HOME/Library/Group Containers/com.nextcloud.desktopclient" ]; then
     rm -rf "$HOME/Library/Group Containers/com.nextcloud.desktopclient" 2>/dev/null || true
 elif [ -f "$HOME/Library/Group Containers/com.nextcloud.desktopclient" ]; then
     rm -f "$HOME/Library/Group Containers/com.nextcloud.desktopclient" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/NKUJUXUJ3B.com.nextcloud.desktopclient
+echo "Removing $HOME/Library/Group Containers/NKUJUXUJ3B.com.nextcloud.desktopclient..."
+if [ -d "$HOME/Library/Group Containers/NKUJUXUJ3B.com.nextcloud.desktopclient" ]; then
+    rm -rf "$HOME/Library/Group Containers/NKUJUXUJ3B.com.nextcloud.desktopclient" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/NKUJUXUJ3B.com.nextcloud.desktopclient" ]; then
+    rm -f "$HOME/Library/Group Containers/NKUJUXUJ3B.com.nextcloud.desktopclient" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.nextcloud.desktopclient.plist
