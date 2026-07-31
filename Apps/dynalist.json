@@ -13,5 +13,5 @@
   "previous_version": "1.0.6",
   "homebrew_cask": "dynalist",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: unmaintained"
+  "deprecation_reason": "cask removed from Homebrew"
 }
