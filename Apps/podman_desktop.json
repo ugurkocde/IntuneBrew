@@ -1,16 +1,16 @@
 {
   "name": "Podman Desktop",
   "description": "Browse, manage, inspect containers and images",
-  "version": "1.29.0",
-  "url": "https://github.com/containers/podman-desktop/releases/download/v1.29.0/podman-desktop-1.29.0-arm64.dmg",
-  "vendor_url": "https://github.com/containers/podman-desktop/releases/download/v1.29.0/podman-desktop-1.29.0-arm64.dmg",
+  "version": "1.29.1",
+  "url": "https://github.com/containers/podman-desktop/releases/download/v1.29.1/podman-desktop-1.29.1-arm64.dmg",
+  "vendor_url": "https://github.com/containers/podman-desktop/releases/download/v1.29.1/podman-desktop-1.29.1-arm64.dmg",
   "bundleId": "io.podmandesktop.PodmanDesktop",
   "homepage": "https://podman-desktop.io/",
   "homebrew_cask": "podman-desktop",
-  "fileName": "podman-desktop-1.29.0-arm64.dmg",
-  "sha": "e3df690297c24ae7a8555eedbf7e84cbc89fa1466366ec56b6b479b43bfa2d01",
+  "fileName": "podman-desktop-1.29.1-arm64.dmg",
+  "sha": "8521dbfe1b22e5f9d9c46f613f0b576263494c7e8a8ab60cd8347e46aae3930b",
   "changelog": "https://github.com/containers/podman-desktop/releases",
   "category": "Developer Tools",
   "publisher": "Red Hat, Inc.",
-  "previous_version": "1.28.3"
+  "previous_version": "1.29.0"
 }

@@ -1,14 +1,14 @@
 {
   "name": "ChatWise",
   "description": "AI chatbot for many LLMs",
-  "version": "26.7.6",
-  "url": "https://releases.chatwise.app/26.7.6/ChatWise-26.7.6-arm64.dmg",
-  "vendor_url": "https://releases.chatwise.app/26.7.6/ChatWise-26.7.6-arm64.dmg",
+  "version": "26.7.8",
+  "url": "https://releases.chatwise.app/26.7.8/ChatWise-26.7.8-arm64.dmg",
+  "vendor_url": "https://releases.chatwise.app/26.7.8/ChatWise-26.7.8-arm64.dmg",
   "bundleId": "app.chatwise",
   "homepage": "https://chatwise.app/",
   "homebrew_cask": "chatwise",
-  "fileName": "ChatWise-26.7.6-arm64.dmg",
-  "sha": "7c6da6f58cde391de3b2708de34225cb1d6a7890ee01b1deaea46b74b1bb3139",
+  "fileName": "ChatWise-26.7.8-arm64.dmg",
+  "sha": "ef3e8c0e8685c690bd692bd1d0449f40aa10bb1051af534f00a381271a447d64",
   "qa_info": {
     "qa_timestamp": "2025-05-14T06:43:14Z",
     "qa_result": "Installation successful and verified",
@@ -21,5 +21,5 @@
   },
   "category": "Productivity",
   "publisher": "ChatWise",
-  "previous_version": "26.7.5"
+  "previous_version": "26.7.6"
 }

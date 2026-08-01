@@ -9,7 +9,7 @@
   "fileName": "bartender_6.6.2.pkg",
   "type": "app",
   "sha": "50e24aa65bf4eae7c43b07f033c8ffd95bced3ccafc74e676102a19e359234f2",
-  "previous_version": "6.6.1",
+  "previous_version": "6.6.2",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:21:19Z",
     "qa_result": "Installation successful and verified",
