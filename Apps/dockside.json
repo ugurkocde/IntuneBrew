@@ -1,14 +1,14 @@
 {
   "name": "Dockside",
   "description": "Dock utility",
-  "version": "2.9.25",
-  "url": "https://github.com/PrajwalSD/Dockside/releases/download/v2.9.25/Dockside.dmg",
-  "vendor_url": "https://github.com/PrajwalSD/Dockside/releases/download/v2.9.25/Dockside.dmg",
+  "version": "2.9.26",
+  "url": "https://github.com/PrajwalSD/Dockside/releases/download/v2.9.26/Dockside.dmg",
+  "vendor_url": "https://github.com/PrajwalSD/Dockside/releases/download/v2.9.26/Dockside.dmg",
   "bundleId": "com.hachipoo.Dockside",
   "homepage": "https://hachipoo.com/dockside-app",
   "homebrew_cask": "dockside",
   "fileName": "Dockside.dmg",
-  "sha": "f59355a70301dfffa913e4bd847c3edb782d88c640109c84ecdf9fa61172f0df",
+  "sha": "f74c281b18ac859b93837df8e60508b529374d508dc7ac2f8f5af35f9f51bafc",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:27:11Z",
     "qa_result": "Installation successful and verified",
@@ -21,5 +21,5 @@
   },
   "category": "Utilities",
   "publisher": "Hachipoo",
-  "previous_version": "2.9.24"
+  "previous_version": "2.9.25"
 }

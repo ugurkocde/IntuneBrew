@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1151-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1152-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -570,24 +570,23 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-08-02 00:45 UTC*
+*Last checked: 2026-08-03 00:45 UTC*
 
 | Application | Previous Version | New Version |
 |-------------|-----------------|-------------|
-| RemNote | 1.27.14 | 1.27.16 |
-| Dockside | 2.9.24 | 2.9.25 |
-| DockDoor | 1.39.4 | 1.39.5 |
-| UnnaturalScrollWheels | 1.4.0 | 1.4.2 |
-| Anki | 26.05 | 26.08 |
-| ChatGPT | 26.727.40816 | 26.727.51351 |
-| OnyX | 5.0.1 | 5.0.2 |
-| BoltAI 2 | 2.14.2 | 2.14.3 |
-| Franz | 6.5.2 | 6.5.3 |
-| Safe Exam Browser | 3.6.1 | 3.7 |
-| Shotcut | 26.7.30 | 26.8.1 |
-| Zappy | 4.9.9 | 5.0.0 |
+| Bome Network | 1.6.0 | 1.7.0 |
+| Dockside | 2.9.25 | 2.9.26 |
+| DBeaver Community Edition | 26.1.3 | 26.1.4 |
+| Stats | 3.0.9 | 3.0.10 |
+| Zed | 1.13.1 | 1.13.2 |
+| BoltAI 2 | 2.14.3 | 2.14.4 |
+| SuperDuper! | 3.11 | 4.0.1 |
+| LinearMouse | 0.11.3 | 0.11.4 |
+| ocenaudio | 3.20.1 | 3.20.2 |
+| Actual | 26.7.0 | 26.8.0 |
 ## ✨ Features
 
 - 🚀 Automated app uploads to Microsoft Intune
@@ -629,7 +628,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/acronis_true_image.png' width='32' height='32'> Acronis True Image | 29.2 |
 | <img src='Logos/activedock.png' width='32' height='32'> ActiveDock | 2.881 |
 | <img src='Logos/activitywatch.png' width='32' height='32'> ActivityWatch | 0.13.2 |
-| <img src='Logos/actual.png' width='32' height='32'> Actual | 26.7.0 |
+| <img src='Logos/actual.png' width='32' height='32'> Actual | 26.8.0 |
 | <img src='Logos/adguard.png' width='32' height='32'> AdGuard | 2.19.0.2258 |
 | <img src='Logos/adium.png' width='32' height='32'> Adium | 1.5.10.4 |
 | <img src='Logos/adlock.png' width='32' height='32'> AdLock | 2.1.9.1 |
@@ -766,8 +765,8 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/bluewallet.png' width='32' height='32'> BlueWallet | 7.2.6 |
 | <img src='Logos/blurscreen.png' width='32' height='32'> BlurScreen | 1.0 |
 | <img src='Logos/boltai.png' width='32' height='32'> BoltAI | 1.36.5 |
-| <img src='Logos/boltai_2.png' width='32' height='32'> BoltAI 2 | 2.14.3 |
-| <img src='Logos/bome_network.png' width='32' height='32'> Bome Network | 1.6.0 |
+| <img src='Logos/boltai_2.png' width='32' height='32'> BoltAI 2 | 2.14.4 |
+| <img src='Logos/bome_network.png' width='32' height='32'> Bome Network | 1.7.0 |
 | <img src='Logos/boom_3d.png' width='32' height='32'> Boom 3D | 2.3.0 |
 | <img src='Logos/boop.png' width='32' height='32'> Boop | 1.4.0 |
 | <img src='Logos/boostnotenext.png' width='32' height='32'> Boostnote.Next | 0.23.1 |
@@ -895,7 +894,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2026.2.2 |
 | <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2026.1.2 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
-| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 26.1.3 |
+| <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 26.1.4 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 7.2.3 |
 | <img src='Logos/debookee.png' width='32' height='32'> Debookee | 8.2.0 |
 | <img src='Logos/deckset.png' width='32' height='32'> Deckset | 2.0.51 |
@@ -934,7 +933,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.39.5 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.84.0 |
 | <img src='Logos/dockfix.png' width='32' height='32'> DockFix | 4.2.1 |
-| <img src='Logos/dockside.png' width='32' height='32'> Dockside | 2.9.25 |
+| <img src='Logos/dockside.png' width='32' height='32'> Dockside | 2.9.26 |
 | <img src='Logos/dockstation.png' width='32' height='32'> DockStation | 1.5.1 |
 | <img src='Logos/dockview.png' width='32' height='32'> DockView | 1.7.5 |
 | <img src='Logos/dorico.png' width='32' height='32'> Dorico | 6.2.30 |
@@ -1219,7 +1218,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/lightburn.png' width='32' height='32'> LightBurn | 2.1.03 |
 | <img src='Logos/limitless.png' width='32' height='32'> Limitless | 2.961.1 |
 | <img src='Logos/linear.png' width='32' height='32'> Linear | 1.28.13 |
-| <img src='Logos/linearmouse.png' width='32' height='32'> LinearMouse | 0.11.3 |
+| <img src='Logos/linearmouse.png' width='32' height='32'> LinearMouse | 0.11.4 |
 | <img src='Logos/lingon_x.png' width='32' height='32'> Lingon X | 9.6.6 |
 | ❌ Linphone | 6.2.0 |
 | <img src='Logos/little_snitch.png' width='32' height='32'> Little Snitch | 6.4.1 |
@@ -1398,7 +1397,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/nvidia_geforce_now.png' width='32' height='32'> NVIDIA GeForce NOW | 2.0.87.131 |
 | <img src='Logos/obs.png' width='32' height='32'> OBS | 32.2.1 |
 | <img src='Logos/obsidian.png' width='32' height='32'> Obsidian | 1.13.4 |
-| <img src='Logos/ocenaudio.png' width='32' height='32'> ocenaudio | 3.20.1 |
+| <img src='Logos/ocenaudio.png' width='32' height='32'> ocenaudio | 3.20.2 |
 | <img src='Logos/ok_json.png' width='32' height='32'> OK JSON | 2.10.2 |
 | <img src='Logos/oka_unarchiver.png' width='32' height='32'> Oka Unarchiver | 2.1.6 |
 | <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.109.0 |
@@ -1677,7 +1676,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/standard_notes.png' width='32' height='32'> Standard Notes | 3.201.21 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 10.0.0 |
 | <img src='Logos/staruml.png' width='32' height='32'> StarUML | 6.3.4 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 3.0.9 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 3.0.10 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 6.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.7.8 |
 | <img src='Logos/stellarium.png' width='32' height='32'> Stellarium | 26.2 |
@@ -1693,7 +1692,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/sublime_text.png' width='32' height='32'> Sublime Text | 4200 |
 | <img src='Logos/sunsama.png' width='32' height='32'> Sunsama | 3.4.11 |
 | <img src='Logos/supercollider.png' width='32' height='32'> SuperCollider | 3.14.1 |
-| <img src='Logos/superduper.png' width='32' height='32'> SuperDuper! | 3.11 |
+| <img src='Logos/superduper.png' width='32' height='32'> SuperDuper! | 4.0.1 |
 | <img src='Logos/superhuman.png' width='32' height='32'> Superhuman | 1041.0.26 |
 | <img src='Logos/superkey.png' width='32' height='32'> Superkey | 1.66 |
 | <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.56.3 |
@@ -1879,7 +1878,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/yubikey_manager.png' width='32' height='32'> Yubikey Manager | 1.2.5 |
 | <img src='Logos/yworks_yed.png' width='32' height='32'> yWorks yEd | 3.25.1 |
 | <img src='Logos/zappy.png' width='32' height='32'> Zappy | 5.0.0 |
-| <img src='Logos/zed.png' width='32' height='32'> Zed | 1.13.1 |
+| <img src='Logos/zed.png' width='32' height='32'> Zed | 1.13.2 |
 | <img src='Logos/zed_attack_proxy.png' width='32' height='32'> Zed Attack Proxy | 2.17.0 |
 | <img src='Logos/zen_browser.png' width='32' height='32'> Zen Browser | 1.21.10b |
 | ❌ Zenmap | 7.99 |
