@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-08-04T00:41:19.540Z",
+  "last_full_scan": "2026-08-04T00:59:02.989Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8654,8 +8654,8 @@
       "name": "Yippy"
     },
     "yoink": {
-      "last_checked": "2026-01-17T08:38:03.498Z",
-      "bundle_id": "at.EternalStorms.Yoink",
+      "last_checked": "2026-08-04T00:59:02.988Z",
+      "bundle_id": "at.EternalStorms.Yoink-demo",
       "status": "verified",
       "source": "file",
       "name": "Yoink"
