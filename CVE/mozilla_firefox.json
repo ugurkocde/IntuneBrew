@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-08-03",
+  "last_updated": "2026-08-04",
   "total_cves": 3284,
   "summary": {
     "critical": 445,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2024-9680",
       "published_date": "2024-10-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-04",
       "description": "An attacker was able to achieve code execution in the content process by exploiting a use-after-free in Animation timelines. We have had reports of this vulnerability being exploited in the wild. This vulnerability affects Firefox < 131.0.2, Firefox ESR < 128.3.1, Firefox ESR < 115.16.1, Thunderbird < 131.0.1, Thunderbird < 128.3.1, and Thunderbird < 115.16.0.",
       "base_score": 9.8,
       "severity": "CRITICAL",
