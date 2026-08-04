@@ -27,12 +27,28 @@ launchctl unload -w ~/Library/LaunchAgents/N4RA379GBW.com.busymac.busycal3.alarm
 echo "Stopping application with bundle ID N4RA379GBW.com.busymac.busycal3.alarm if running..."
 killall -9 "N4RA379GBW.com.busymac.busycal3.alarm" 2>/dev/null || true
 
-# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*
-echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*..."
-if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*" ]; then
-    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*" ]; then
-    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal2026.sfl*" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/com.busymac.busycal3*
+echo "Removing $HOME/Library/Application Scripts/com.busymac.busycal3*..."
+if [ -d "$HOME/Library/Application Scripts/com.busymac.busycal3*" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.busymac.busycal3*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.busymac.busycal3*" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.busymac.busycal3*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/N4RA379GBW.com.busymac.busycal3
+echo "Removing $HOME/Library/Application Scripts/N4RA379GBW.com.busymac.busycal3..."
+if [ -d "$HOME/Library/Application Scripts/N4RA379GBW.com.busymac.busycal3" ]; then
+    rm -rf "$HOME/Library/Application Scripts/N4RA379GBW.com.busymac.busycal3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/N4RA379GBW.com.busymac.busycal3" ]; then
+    rm -f "$HOME/Library/Application Scripts/N4RA379GBW.com.busymac.busycal3" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal3.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal3.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal3.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal3.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal3.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.busymac.busycal3.sfl*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Containers/com.busymac.busycal3

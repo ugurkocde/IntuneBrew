@@ -25,12 +25,28 @@ elif [ -f "/Applications/ExifCleaner.app" ]; then
     rm -f "/Applications/ExifCleaner.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.exifcleaner.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.exifcleaner.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.exifcleaner.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.exifcleaner.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.exifcleaner.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.exifcleaner.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/ExifCleaner
 echo "Removing $HOME/Library/Application Support/ExifCleaner..."
 if [ -d "$HOME/Library/Application Support/ExifCleaner" ]; then
     rm -rf "$HOME/Library/Application Support/ExifCleaner" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/ExifCleaner" ]; then
     rm -f "$HOME/Library/Application Support/ExifCleaner" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.exifcleaner.plist
+echo "Removing $HOME/Library/Preferences/com.exifcleaner.plist..."
+if [ -d "$HOME/Library/Preferences/com.exifcleaner.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.exifcleaner.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.exifcleaner.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.exifcleaner.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.exifcleaner.savedState

@@ -33,12 +33,60 @@ elif [ -f "$HOME/Library/Application Scripts/com.peterborgapps.Smultron14" ]; th
     rm -f "$HOME/Library/Application Scripts/com.peterborgapps.Smultron14" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/HT76L9L9RG.com.peterborgapps.Smultron
+echo "Removing $HOME/Library/Application Scripts/HT76L9L9RG.com.peterborgapps.Smultron..."
+if [ -d "$HOME/Library/Application Scripts/HT76L9L9RG.com.peterborgapps.Smultron" ]; then
+    rm -rf "$HOME/Library/Application Scripts/HT76L9L9RG.com.peterborgapps.Smultron" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/HT76L9L9RG.com.peterborgapps.Smultron" ]; then
+    rm -f "$HOME/Library/Application Scripts/HT76L9L9RG.com.peterborgapps.Smultron" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.peterborgapps.smultron14.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.peterborgapps.smultron14.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.peterborgapps.smultron14.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.peterborgapps.smultron14.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.peterborgapps.smultron14.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.peterborgapps.smultron14.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.peterborgapps.Smultron14
+echo "Removing $HOME/Library/Caches/com.peterborgapps.Smultron14..."
+if [ -d "$HOME/Library/Caches/com.peterborgapps.Smultron14" ]; then
+    rm -rf "$HOME/Library/Caches/com.peterborgapps.Smultron14" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.peterborgapps.Smultron14" ]; then
+    rm -f "$HOME/Library/Caches/com.peterborgapps.Smultron14" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.peterborgapps.Smultron14
 echo "Removing $HOME/Library/Containers/com.peterborgapps.Smultron14..."
 if [ -d "$HOME/Library/Containers/com.peterborgapps.Smultron14" ]; then
     rm -rf "$HOME/Library/Containers/com.peterborgapps.Smultron14" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.peterborgapps.Smultron14" ]; then
     rm -f "$HOME/Library/Containers/com.peterborgapps.Smultron14" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/HT76L9L9RG.com.peterborgapps.Smultron
+echo "Removing $HOME/Library/Group Containers/HT76L9L9RG.com.peterborgapps.Smultron..."
+if [ -d "$HOME/Library/Group Containers/HT76L9L9RG.com.peterborgapps.Smultron" ]; then
+    rm -rf "$HOME/Library/Group Containers/HT76L9L9RG.com.peterborgapps.Smultron" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/HT76L9L9RG.com.peterborgapps.Smultron" ]; then
+    rm -f "$HOME/Library/Group Containers/HT76L9L9RG.com.peterborgapps.Smultron" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.peterborgapps.Smultron14
+echo "Removing $HOME/Library/HTTPStorages/com.peterborgapps.Smultron14..."
+if [ -d "$HOME/Library/HTTPStorages/com.peterborgapps.Smultron14" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.peterborgapps.Smultron14" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.peterborgapps.Smultron14" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.peterborgapps.Smultron14" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.peterborgapps.Smultron14.plist
+echo "Removing $HOME/Library/Preferences/com.peterborgapps.Smultron14.plist..."
+if [ -d "$HOME/Library/Preferences/com.peterborgapps.Smultron14.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.peterborgapps.Smultron14.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.peterborgapps.Smultron14.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.peterborgapps.Smultron14.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

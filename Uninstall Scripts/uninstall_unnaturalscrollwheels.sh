@@ -45,5 +45,13 @@ elif [ -f "$HOME/Library/Containers/com.theron.UnnaturalScrollWheels" ]; then
     rm -f "$HOME/Library/Containers/com.theron.UnnaturalScrollWheels" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.theron.UnnaturalScrollWheels.plist
+echo "Removing $HOME/Library/Preferences/com.theron.UnnaturalScrollWheels.plist..."
+if [ -d "$HOME/Library/Preferences/com.theron.UnnaturalScrollWheels.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.theron.UnnaturalScrollWheels.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.theron.UnnaturalScrollWheels.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.theron.UnnaturalScrollWheels.plist" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

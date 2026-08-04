@@ -25,12 +25,36 @@ elif [ -f "/Applications/Safe Exam Browser.app" ]; then
     rm -f "/Applications/Safe Exam Browser.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/org.safeexambrowser.SafeExamBrowser
+echo "Removing $HOME/Library/Caches/org.safeexambrowser.SafeExamBrowser..."
+if [ -d "$HOME/Library/Caches/org.safeexambrowser.SafeExamBrowser" ]; then
+    rm -rf "$HOME/Library/Caches/org.safeexambrowser.SafeExamBrowser" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/org.safeexambrowser.SafeExamBrowser" ]; then
+    rm -f "$HOME/Library/Caches/org.safeexambrowser.SafeExamBrowser" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/Safe Exam Browser
+echo "Removing $HOME/Library/Logs/Safe Exam Browser..."
+if [ -d "$HOME/Library/Logs/Safe Exam Browser" ]; then
+    rm -rf "$HOME/Library/Logs/Safe Exam Browser" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Safe Exam Browser" ]; then
+    rm -f "$HOME/Library/Logs/Safe Exam Browser" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/org.safeexambrowser.SafeExamBrowser.plist
 echo "Removing $HOME/Library/Preferences/org.safeexambrowser.SafeExamBrowser.plist..."
 if [ -d "$HOME/Library/Preferences/org.safeexambrowser.SafeExamBrowser.plist" ]; then
     rm -rf "$HOME/Library/Preferences/org.safeexambrowser.SafeExamBrowser.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/org.safeexambrowser.SafeExamBrowser.plist" ]; then
     rm -f "$HOME/Library/Preferences/org.safeexambrowser.SafeExamBrowser.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/org.safeexambrowser.SafeExamBrowser
+echo "Removing $HOME/Library/WebKit/org.safeexambrowser.SafeExamBrowser..."
+if [ -d "$HOME/Library/WebKit/org.safeexambrowser.SafeExamBrowser" ]; then
+    rm -rf "$HOME/Library/WebKit/org.safeexambrowser.SafeExamBrowser" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/org.safeexambrowser.SafeExamBrowser" ]; then
+    rm -f "$HOME/Library/WebKit/org.safeexambrowser.SafeExamBrowser" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

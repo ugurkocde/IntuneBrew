@@ -25,6 +25,14 @@ elif [ -f "/Applications/OnyX.app" ]; then
     rm -f "/Applications/OnyX.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.apple.helpd/Generated/com.titanium.OnyX.help*
+echo "Removing $HOME/Library/Caches/com.apple.helpd/Generated/com.titanium.OnyX.help*..."
+if [ -d "$HOME/Library/Caches/com.apple.helpd/Generated/com.titanium.OnyX.help*" ]; then
+    rm -rf "$HOME/Library/Caches/com.apple.helpd/Generated/com.titanium.OnyX.help*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.apple.helpd/Generated/com.titanium.OnyX.help*" ]; then
+    rm -f "$HOME/Library/Caches/com.apple.helpd/Generated/com.titanium.OnyX.help*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.titanium.OnyX.help*
 echo "Removing $HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.titanium.OnyX.help*..."
 if [ -d "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.titanium.OnyX.help*" ]; then

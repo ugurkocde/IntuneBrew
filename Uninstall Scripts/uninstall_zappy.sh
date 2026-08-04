@@ -29,6 +29,14 @@ elif [ -f "/Applications/Zappy.app" ]; then
     rm -f "/Applications/Zappy.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/6LS97Q5E79.ZappyShared
+echo "Removing $HOME/Library/Application Scripts/6LS97Q5E79.ZappyShared..."
+if [ -d "$HOME/Library/Application Scripts/6LS97Q5E79.ZappyShared" ]; then
+    rm -rf "$HOME/Library/Application Scripts/6LS97Q5E79.ZappyShared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/6LS97Q5E79.ZappyShared" ]; then
+    rm -f "$HOME/Library/Application Scripts/6LS97Q5E79.ZappyShared" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.blackbeltlabs.Zappy
 echo "Removing $HOME/Library/Application Support/com.blackbeltlabs.Zappy..."
 if [ -d "$HOME/Library/Application Support/com.blackbeltlabs.Zappy" ]; then
@@ -43,6 +51,22 @@ if [ -d "$HOME/Library/Caches/com.blackbeltlabs.Zappy" ]; then
     rm -rf "$HOME/Library/Caches/com.blackbeltlabs.Zappy" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.blackbeltlabs.Zappy" ]; then
     rm -f "$HOME/Library/Caches/com.blackbeltlabs.Zappy" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/6LS97Q5E79.ZappyShared
+echo "Removing $HOME/Library/Group Containers/6LS97Q5E79.ZappyShared..."
+if [ -d "$HOME/Library/Group Containers/6LS97Q5E79.ZappyShared" ]; then
+    rm -rf "$HOME/Library/Group Containers/6LS97Q5E79.ZappyShared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/6LS97Q5E79.ZappyShared" ]; then
+    rm -f "$HOME/Library/Group Containers/6LS97Q5E79.ZappyShared" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.blackbeltlabs.Zappy
+echo "Removing $HOME/Library/HTTPStorages/com.blackbeltlabs.Zappy..."
+if [ -d "$HOME/Library/HTTPStorages/com.blackbeltlabs.Zappy" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.blackbeltlabs.Zappy" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.blackbeltlabs.Zappy" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.blackbeltlabs.Zappy" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.blackbeltlabs.Zappy.plist

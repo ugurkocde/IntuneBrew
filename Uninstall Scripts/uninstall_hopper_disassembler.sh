@@ -17,6 +17,12 @@ fi
 echo "Stopping Hopper Disassembler if running..."
 pkill -f "Hopper Disassembler" 2>/dev/null || true
 
+# Unload service com.cryptic-apps.ExternalAPI
+echo "Unloading service com.cryptic-apps.ExternalAPI..."
+launchctl unload -w /Library/LaunchAgents/com.cryptic-apps.ExternalAPI.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.cryptic-apps.ExternalAPI.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.cryptic-apps.ExternalAPI.plist 2>/dev/null || true
+
 # Remove /Applications/Hopper Disassembler.app
 echo "Removing /Applications/Hopper Disassembler.app..."
 if [ -d "/Applications/Hopper Disassembler.app" ]; then

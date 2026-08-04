@@ -51,6 +51,14 @@ elif [ -f "$HOME/Library/Application Scripts/eu.exelban.Stats.Widgets" ]; then
     rm -f "$HOME/Library/Application Scripts/eu.exelban.Stats.Widgets" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/RP2S87B72W.eu.exelban.Stats.widgets
+echo "Removing $HOME/Library/Application Scripts/RP2S87B72W.eu.exelban.Stats.widgets..."
+if [ -d "$HOME/Library/Application Scripts/RP2S87B72W.eu.exelban.Stats.widgets" ]; then
+    rm -rf "$HOME/Library/Application Scripts/RP2S87B72W.eu.exelban.Stats.widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/RP2S87B72W.eu.exelban.Stats.widgets" ]; then
+    rm -f "$HOME/Library/Application Scripts/RP2S87B72W.eu.exelban.Stats.widgets" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Stats
 echo "Removing $HOME/Library/Application Support/Stats..."
 if [ -d "$HOME/Library/Application Support/Stats" ]; then
@@ -97,6 +105,14 @@ if [ -d "$HOME/Library/Group Containers/eu.exelban.Stats.widgets" ]; then
     rm -rf "$HOME/Library/Group Containers/eu.exelban.Stats.widgets" 2>/dev/null || true
 elif [ -f "$HOME/Library/Group Containers/eu.exelban.Stats.widgets" ]; then
     rm -f "$HOME/Library/Group Containers/eu.exelban.Stats.widgets" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/RP2S87B72W.eu.exelban.Stats.widgets
+echo "Removing $HOME/Library/Group Containers/RP2S87B72W.eu.exelban.Stats.widgets..."
+if [ -d "$HOME/Library/Group Containers/RP2S87B72W.eu.exelban.Stats.widgets" ]; then
+    rm -rf "$HOME/Library/Group Containers/RP2S87B72W.eu.exelban.Stats.widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/RP2S87B72W.eu.exelban.Stats.widgets" ]; then
+    rm -f "$HOME/Library/Group Containers/RP2S87B72W.eu.exelban.Stats.widgets" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/eu.exelban.Stats

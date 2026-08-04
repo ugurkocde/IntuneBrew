@@ -25,6 +25,54 @@ elif [ -f "/Applications/Dockside.app" ]; then
     rm -f "/Applications/Dockside.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/8T2DC9NRXS.group.com.hachipoo.Dockside
+echo "Removing $HOME/Library/Application Scripts/8T2DC9NRXS.group.com.hachipoo.Dockside..."
+if [ -d "$HOME/Library/Application Scripts/8T2DC9NRXS.group.com.hachipoo.Dockside" ]; then
+    rm -rf "$HOME/Library/Application Scripts/8T2DC9NRXS.group.com.hachipoo.Dockside" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/8T2DC9NRXS.group.com.hachipoo.Dockside" ]; then
+    rm -f "$HOME/Library/Application Scripts/8T2DC9NRXS.group.com.hachipoo.Dockside" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.hachipoo.Dockside.Dockside*
+echo "Removing $HOME/Library/Application Scripts/com.hachipoo.Dockside.Dockside*..."
+if [ -d "$HOME/Library/Application Scripts/com.hachipoo.Dockside.Dockside*" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.hachipoo.Dockside.Dockside*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.hachipoo.Dockside.Dockside*" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.hachipoo.Dockside.Dockside*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.hachipoo.Dockside
+echo "Removing $HOME/Library/Caches/com.hachipoo.Dockside..."
+if [ -d "$HOME/Library/Caches/com.hachipoo.Dockside" ]; then
+    rm -rf "$HOME/Library/Caches/com.hachipoo.Dockside" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.hachipoo.Dockside" ]; then
+    rm -f "$HOME/Library/Caches/com.hachipoo.Dockside" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.hachipoo.Dockside.Dockside*
+echo "Removing $HOME/Library/Containers/com.hachipoo.Dockside.Dockside*..."
+if [ -d "$HOME/Library/Containers/com.hachipoo.Dockside.Dockside*" ]; then
+    rm -rf "$HOME/Library/Containers/com.hachipoo.Dockside.Dockside*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.hachipoo.Dockside.Dockside*" ]; then
+    rm -f "$HOME/Library/Containers/com.hachipoo.Dockside.Dockside*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/8T2DC9NRXS.group.com.hachipoo.Dockside
+echo "Removing $HOME/Library/Group Containers/8T2DC9NRXS.group.com.hachipoo.Dockside..."
+if [ -d "$HOME/Library/Group Containers/8T2DC9NRXS.group.com.hachipoo.Dockside" ]; then
+    rm -rf "$HOME/Library/Group Containers/8T2DC9NRXS.group.com.hachipoo.Dockside" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/8T2DC9NRXS.group.com.hachipoo.Dockside" ]; then
+    rm -f "$HOME/Library/Group Containers/8T2DC9NRXS.group.com.hachipoo.Dockside" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.hachipoo.Dockside
+echo "Removing $HOME/Library/HTTPStorages/com.hachipoo.Dockside..."
+if [ -d "$HOME/Library/HTTPStorages/com.hachipoo.Dockside" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.hachipoo.Dockside" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.hachipoo.Dockside" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.hachipoo.Dockside" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.hachipoo.Dockside.plist
 echo "Removing $HOME/Library/Preferences/com.hachipoo.Dockside.plist..."
 if [ -d "$HOME/Library/Preferences/com.hachipoo.Dockside.plist" ]; then
