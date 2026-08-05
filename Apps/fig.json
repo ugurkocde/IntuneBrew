@@ -13,5 +13,5 @@
   "previous_version": "2.19.0",
   "homebrew_cask": "fig",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: discontinued"
+  "deprecation_reason": "cask removed from Homebrew"
 }

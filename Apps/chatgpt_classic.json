@@ -1,0 +1,12 @@
+{
+  "name": "ChatGPT Classic",
+  "description": "OpenAI's previous ChatGPT desktop app",
+  "version": "1.2026.184",
+  "url": "https://persistent.oaistatic.com/classic/public/ChatGPT_Classic.dmg",
+  "vendor_url": "https://persistent.oaistatic.com/classic/public/ChatGPT_Classic.dmg",
+  "bundleId": "com.openai.chat",
+  "homepage": "https://chatgpt.com/",
+  "homebrew_cask": "chatgpt-classic",
+  "fileName": "ChatGPT_Classic.dmg",
+  "sha": "a94117fb34627229baafe3e8b7b45467c5aee7861b4cd795a5be8d547b1ff7b4"
+}
