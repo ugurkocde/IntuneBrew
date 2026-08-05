@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-08-05T00:38:10.175Z",
+  "last_full_scan": "2026-08-05T00:59:58.640Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9314,6 +9314,13 @@
         "mac_app_store"
       ],
       "name": "MultiViewer"
+    },
+    "chatgpt_classic": {
+      "last_checked": "2026-08-05T00:59:58.620Z",
+      "bundle_id": "com.openai.chat",
+      "status": "verified",
+      "source": "file",
+      "name": "ChatGPT Classic"
     }
   }
 }
