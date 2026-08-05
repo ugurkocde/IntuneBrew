@@ -53,6 +53,12 @@ launchctl unload -w /Library/LaunchAgents/com.adobe.ccxprocess.plist 2>/dev/null
 launchctl unload -w /Library/LaunchDaemons/com.adobe.ccxprocess.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.adobe.ccxprocess.plist 2>/dev/null || true
 
+# Unload service com.adobe.CCXProcess.*
+echo "Unloading service com.adobe.CCXProcess.*..."
+launchctl unload -w /Library/LaunchAgents/com.adobe.CCXProcess.*.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.adobe.CCXProcess.*.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.adobe.CCXProcess.*.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.adobe.acc.AdobeCreativeCloud if running
 echo "Stopping application with bundle ID com.adobe.acc.AdobeCreativeCloud if running..."
 killall -9 "com.adobe.acc.AdobeCreativeCloud" 2>/dev/null || true
