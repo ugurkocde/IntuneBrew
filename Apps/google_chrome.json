@@ -1,15 +1,15 @@
 {
   "name": "Google Chrome",
   "description": "Web browser",
-  "version": "151.0.7922.72",
+  "version": "151.0.7922.76",
   "url": "https://dl.google.com/dl/chrome/mac/universal/stable/gcem/GoogleChrome.pkg",
   "vendor_url": "https://dl.google.com/dl/chrome/mac/universal/stable/gcem/GoogleChrome.pkg",
   "bundleId": "com.google.Chrome",
   "homepage": "https://www.google.com/chrome/",
-  "fileName": "GoogleChrome-151.0.7922.72.pkg",
+  "fileName": "GoogleChrome-151.0.7922.76.pkg",
   "type": "pkg",
-  "sha": "a6bb247ae585a192d57a0ae6e13bcd3c6f814c7c18140f393b6e29862c83bd27",
   "changelog": "https://chromereleases.googleblog.com/",
   "category": "Browsers",
-  "publisher": "Google LLC"
+  "publisher": "Google LLC",
+  "sha": "20f5013c9702178a1d832dc694a91ab61d2f46487c53f10adb18f8ad07a7e16d"
 }

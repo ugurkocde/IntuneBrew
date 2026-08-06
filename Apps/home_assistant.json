@@ -9,7 +9,7 @@
   "fileName": "home_assistant_2026.7.3.pkg",
   "type": "app",
   "sha": "8bade113d76aa6134b4693153ed806e2585b2c60bddab111e837ddc90637fad7",
-  "previous_version": "2026.7.1",
+  "previous_version": "2026.7.3",
   "category": "Utilities",
   "publisher": "Nabu Casa, Inc.",
   "homebrew_cask": "home-assistant"
