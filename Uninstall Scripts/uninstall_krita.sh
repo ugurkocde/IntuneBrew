@@ -25,12 +25,44 @@ elif [ -f "/Applications/krita.app" ]; then
     rm -f "/Applications/krita.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/krita
-echo "Removing $HOME/Library/Application Support/krita..."
-if [ -d "$HOME/Library/Application Support/krita" ]; then
-    rm -rf "$HOME/Library/Application Support/krita" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/krita" ]; then
-    rm -f "$HOME/Library/Application Support/krita" 2>/dev/null || true
+# Remove /Applications/{'target': 'Krita.app'}
+echo "Removing /Applications/{'target': 'Krita.app'}..."
+if [ -d "/Applications/{'target': 'Krita.app'}" ]; then
+    rm -rf "/Applications/{'target': 'Krita.app'}" 2>/dev/null || true
+elif [ -f "/Applications/{'target': 'Krita.app'}" ]; then
+    rm -f "/Applications/{'target': 'Krita.app'}" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/org.krita.*
+echo "Removing $HOME/Library/Application Scripts/org.krita.*..."
+if [ -d "$HOME/Library/Application Scripts/org.krita.*" ]; then
+    rm -rf "$HOME/Library/Application Scripts/org.krita.*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/org.krita.*" ]; then
+    rm -f "$HOME/Library/Application Scripts/org.krita.*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/krita*
+echo "Removing $HOME/Library/Application Support/krita*..."
+if [ -d "$HOME/Library/Application Support/krita*" ]; then
+    rm -rf "$HOME/Library/Application Support/krita*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/krita*" ]; then
+    rm -f "$HOME/Library/Application Support/krita*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/krita
+echo "Removing $HOME/Library/Caches/krita..."
+if [ -d "$HOME/Library/Caches/krita" ]; then
+    rm -rf "$HOME/Library/Caches/krita" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/krita" ]; then
+    rm -f "$HOME/Library/Caches/krita" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/org.krita.*
+echo "Removing $HOME/Library/Containers/org.krita.*..."
+if [ -d "$HOME/Library/Containers/org.krita.*" ]; then
+    rm -rf "$HOME/Library/Containers/org.krita.*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/org.krita.*" ]; then
+    rm -f "$HOME/Library/Containers/org.krita.*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/kritadisplayrc

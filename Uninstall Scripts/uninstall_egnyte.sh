@@ -17,6 +17,18 @@ fi
 echo "Stopping Egnyte if running..."
 pkill -f "Egnyte" 2>/dev/null || true
 
+# Unload service com.egnyte.DesktopLaunchHelper
+echo "Unloading service com.egnyte.DesktopLaunchHelper..."
+launchctl unload -w /Library/LaunchAgents/com.egnyte.DesktopLaunchHelper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.egnyte.DesktopLaunchHelper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.egnyte.DesktopLaunchHelper.plist 2>/dev/null || true
+
+# Unload service FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker
+echo "Unloading service FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker..."
+launchctl unload -w /Library/LaunchAgents/FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker.plist 2>/dev/null || true
+
 # Remove /Applications/Egnyte.app
 echo "Removing /Applications/Egnyte.app..."
 if [ -d "/Applications/Egnyte.app" ]; then
@@ -57,6 +69,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.egnyte.DesktopApp.FinderHelper.
     rm -f "$HOME/Library/Application Scripts/com.egnyte.DesktopApp.FinderHelper.FinderSync" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.egnyte.DesktopLaunchHelper
+echo "Removing $HOME/Library/Application Scripts/com.egnyte.DesktopLaunchHelper..."
+if [ -d "$HOME/Library/Application Scripts/com.egnyte.DesktopLaunchHelper" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.egnyte.DesktopLaunchHelper" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.egnyte.DesktopLaunchHelper" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.egnyte.DesktopLaunchHelper" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/FELUD555VC.group.com.egnyte.DesktopApp
 echo "Removing $HOME/Library/Application Scripts/FELUD555VC.group.com.egnyte.DesktopApp..."
 if [ -d "$HOME/Library/Application Scripts/FELUD555VC.group.com.egnyte.DesktopApp" ]; then
@@ -71,6 +91,22 @@ if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LS
     rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.egnyte.desktopapp.sfl*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.egnyte.desktopapp.sfl*" ]; then
     rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.egnyte.desktopapp.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.egnyte.desktoplaunchhelper.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.egnyte.desktoplaunchhelper.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.egnyte.desktoplaunchhelper.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.egnyte.desktoplaunchhelper.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.egnyte.desktoplaunchhelper.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.egnyte.desktoplaunchhelper.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/felud555vc.group.com.egnyte.desktopapp.xpcbroker.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/felud555vc.group.com.egnyte.desktopapp.xpcbroker.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/felud555vc.group.com.egnyte.desktopapp.xpcbroker.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/felud555vc.group.com.egnyte.desktopapp.xpcbroker.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/felud555vc.group.com.egnyte.desktopapp.xpcbroker.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/felud555vc.group.com.egnyte.desktopapp.xpcbroker.sfl*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/FileProvider/com.egnyte.DesktopApp.FileProvider
@@ -135,6 +171,22 @@ if [ -d "$HOME/Library/Containers/com.egnyte.DesktopApp.FinderHelper.FinderSync"
     rm -rf "$HOME/Library/Containers/com.egnyte.DesktopApp.FinderHelper.FinderSync" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.egnyte.DesktopApp.FinderHelper.FinderSync" ]; then
     rm -f "$HOME/Library/Containers/com.egnyte.DesktopApp.FinderHelper.FinderSync" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.egnyte.DesktopLaunchHelper
+echo "Removing $HOME/Library/Containers/com.egnyte.DesktopLaunchHelper..."
+if [ -d "$HOME/Library/Containers/com.egnyte.DesktopLaunchHelper" ]; then
+    rm -rf "$HOME/Library/Containers/com.egnyte.DesktopLaunchHelper" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.egnyte.DesktopLaunchHelper" ]; then
+    rm -f "$HOME/Library/Containers/com.egnyte.DesktopLaunchHelper" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker
+echo "Removing $HOME/Library/Containers/FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker..."
+if [ -d "$HOME/Library/Containers/FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker" ]; then
+    rm -rf "$HOME/Library/Containers/FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker" ]; then
+    rm -f "$HOME/Library/Containers/FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Group Containers/FELUD555VC.group.com.egnyte.DesktopApp

@@ -17,6 +17,12 @@ fi
 echo "Stopping Tresorit if running..."
 pkill -f "Tresorit" 2>/dev/null || true
 
+# Unload service com.tresorit.mac.ExtensionHelper
+echo "Unloading service com.tresorit.mac.ExtensionHelper..."
+launchctl unload -w /Library/LaunchAgents/com.tresorit.mac.ExtensionHelper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.tresorit.mac.ExtensionHelper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.tresorit.mac.ExtensionHelper.plist 2>/dev/null || true
+
 # Remove /Applications/Tresorit.app
 echo "Removing /Applications/Tresorit.app..."
 if [ -d "/Applications/Tresorit.app" ]; then

@@ -33,12 +33,28 @@ elif [ -f "$HOME/Library/Application Support/Binance" ]; then
     rm -f "$HOME/Library/Application Support/Binance" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.binance.binancedesktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.binance.binancedesktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.binance.binancedesktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.binance.binancedesktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.binance.binancedesktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.binance.binancedesktop.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/Binance
 echo "Removing $HOME/Library/Logs/Binance..."
 if [ -d "$HOME/Library/Logs/Binance" ]; then
     rm -rf "$HOME/Library/Logs/Binance" 2>/dev/null || true
 elif [ -f "$HOME/Library/Logs/Binance" ]; then
     rm -f "$HOME/Library/Logs/Binance" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.binance.BinanceDesktop.plist
+echo "Removing $HOME/Library/Preferences/com.binance.BinanceDesktop.plist..."
+if [ -d "$HOME/Library/Preferences/com.binance.BinanceDesktop.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.binance.BinanceDesktop.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.binance.BinanceDesktop.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.binance.BinanceDesktop.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.binance.BinanceDesktop.savedState
