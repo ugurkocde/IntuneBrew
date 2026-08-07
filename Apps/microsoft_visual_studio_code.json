@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "7d9300228e6a0e573e3a0499058922cedf32e440a9f74f614e9ec07601e372c2",
   "changelog": "https://code.visualstudio.com/updates/",
-  "previous_version": "1.131.0",
+  "previous_version": "1.132.0",
   "category": "Developer Tools",
   "publisher": "Microsoft Corporation",
   "homebrew_cask": "visual-studio-code"
