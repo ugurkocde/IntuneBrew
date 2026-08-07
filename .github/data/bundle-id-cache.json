@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-08-07T01:18:56.711Z",
+  "last_full_scan": "2026-08-07T01:37:35.036Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -7044,8 +7044,8 @@
       "name": "Simple Comic"
     },
     "simpledemviewer": {
-      "last_checked": "2026-01-17T10:34:29.127Z",
-      "bundle_id": "jp.jizoh.simpledemviewer",
+      "last_checked": "2026-08-07T01:37:35.031Z",
+      "bundle_id": "jp.jizoh.SDVr8",
       "status": "verified",
       "source": "file",
       "name": "SimpleDEMViewer"
