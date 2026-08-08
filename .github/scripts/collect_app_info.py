@@ -1215,6 +1215,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/winbox.json",
     "https://formulae.brew.sh/api/cask/multiviewer.json",
     "https://formulae.brew.sh/api/cask/chatgpt-classic.json",
+    "https://formulae.brew.sh/api/cask/macusb.json",
 ]
 
 # PKG in DMG URLs
