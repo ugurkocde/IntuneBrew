@@ -17,6 +17,12 @@ fi
 echo "Stopping Proton Drive if running..."
 pkill -f "Proton Drive" 2>/dev/null || true
 
+# Unload service ch.protonmail.drive.agent
+echo "Unloading service ch.protonmail.drive.agent..."
+launchctl unload -w /Library/LaunchAgents/ch.protonmail.drive.agent.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/ch.protonmail.drive.agent.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/ch.protonmail.drive.agent.plist 2>/dev/null || true
+
 # Remove /Applications/Proton Drive.app
 echo "Removing /Applications/Proton Drive.app..."
 if [ -d "/Applications/Proton Drive.app" ]; then

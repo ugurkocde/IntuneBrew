@@ -47,6 +47,12 @@ launchctl unload -w /Library/LaunchAgents/com.citrix.devicetrust.launchagent.pli
 launchctl unload -w /Library/LaunchDaemons/com.citrix.devicetrust.launchagent.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.citrix.devicetrust.launchagent.plist 2>/dev/null || true
 
+# Unload service com.citrix.PluginBroker
+echo "Unloading service com.citrix.PluginBroker..."
+launchctl unload -w /Library/LaunchAgents/com.citrix.PluginBroker.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.citrix.PluginBroker.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.citrix.PluginBroker.plist 2>/dev/null || true
+
 # Unload service com.citrix.ReceiverHelper
 echo "Unloading service com.citrix.ReceiverHelper..."
 launchctl unload -w /Library/LaunchAgents/com.citrix.ReceiverHelper.plist 2>/dev/null || true
@@ -98,6 +104,14 @@ killall -9 "com.citrix.receiver.nomas" 2>/dev/null || true
 # Kill application with bundle ID com.citrix.ReceiverHelper if running
 echo "Stopping application with bundle ID com.citrix.ReceiverHelper if running..."
 killall -9 "com.citrix.ReceiverHelper" 2>/dev/null || true
+
+# Remove /Library/Logs/Citrix Workspace
+echo "Removing /Library/Logs/Citrix Workspace..."
+if [ -d "/Library/Logs/Citrix Workspace" ]; then
+    rm -rf "/Library/Logs/Citrix Workspace" 2>/dev/null || true
+elif [ -f "/Library/Logs/Citrix Workspace" ]; then
+    rm -f "/Library/Logs/Citrix Workspace" 2>/dev/null || true
+fi
 
 # Remove $HOME/Library/Application Support/Citrix Receiver
 echo "Removing $HOME/Library/Application Support/Citrix Receiver..."

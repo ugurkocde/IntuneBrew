@@ -17,12 +17,12 @@ fi
 echo "Stopping ChatWork if running..."
 pkill -f "ChatWork" 2>/dev/null || true
 
-# Remove /Applications/ChatWork.app
-echo "Removing /Applications/ChatWork.app..."
-if [ -d "/Applications/ChatWork.app" ]; then
-    rm -rf "/Applications/ChatWork.app" 2>/dev/null || true
-elif [ -f "/Applications/ChatWork.app" ]; then
-    rm -f "/Applications/ChatWork.app" 2>/dev/null || true
+# Remove /Applications/Chatwork.app
+echo "Removing /Applications/Chatwork.app..."
+if [ -d "/Applications/Chatwork.app" ]; then
+    rm -rf "/Applications/Chatwork.app" 2>/dev/null || true
+elif [ -f "/Applications/Chatwork.app" ]; then
+    rm -f "/Applications/Chatwork.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Chatwork

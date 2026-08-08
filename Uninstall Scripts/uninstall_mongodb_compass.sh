@@ -17,6 +17,10 @@ fi
 echo "Stopping MongoDB Compass if running..."
 pkill -f "MongoDB Compass" 2>/dev/null || true
 
+# Kill application with bundle ID com.mongodb.compass if running
+echo "Stopping application with bundle ID com.mongodb.compass if running..."
+killall -9 "com.mongodb.compass" 2>/dev/null || true
+
 # Remove /Applications/MongoDB Compass.app
 echo "Removing /Applications/MongoDB Compass.app..."
 if [ -d "/Applications/MongoDB Compass.app" ]; then
