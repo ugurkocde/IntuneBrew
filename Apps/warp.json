@@ -1,9 +1,9 @@
 {
   "name": "Warp",
   "description": "Rust-based terminal",
-  "version": "0.2026.07.29.09.05.stable",
-  "url": "https://releases.warp.dev/stable/v0.2026.07.29.09.05.stable/Warp.dmg",
-  "vendor_url": "https://releases.warp.dev/stable/v0.2026.07.29.09.05.stable/Warp.dmg",
+  "version": "0.2026.08.05.09.03.stable",
+  "url": "https://releases.warp.dev/stable/v0.2026.08.05.09.03.stable/Warp.dmg",
+  "vendor_url": "https://releases.warp.dev/stable/v0.2026.08.05.09.03.stable/Warp.dmg",
   "bundleId": "dev.warp.Warp-Stable",
   "homepage": "https://www.warp.dev/",
   "homebrew_cask": "warp",

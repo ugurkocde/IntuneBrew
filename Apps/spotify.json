@@ -1,7 +1,7 @@
 {
   "name": "Spotify",
   "description": "Music streaming service",
-  "version": "1.2.95.452",
+  "version": "1.2.95.453",
   "url": "https://download.scdn.co/SpotifyARM64.dmg",
   "vendor_url": "https://download.scdn.co/SpotifyARM64.dmg",
   "bundleId": "com.spotify.client",
