@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-08-10",
+  "last_updated": "2026-08-11",
   "total_cves": 1033,
   "summary": {
     "critical": 18,
@@ -2009,7 +2009,7 @@
     {
       "cve_id": "CVE-2024-26192",
       "published_date": "2024-02-23",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
       "base_score": 8.2,
       "severity": "HIGH",
@@ -2051,7 +2051,7 @@
     {
       "cve_id": "CVE-2024-21399",
       "published_date": "2024-02-02",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -2219,7 +2219,7 @@
     {
       "cve_id": "CVE-2023-36741",
       "published_date": "2023-08-26",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -2240,7 +2240,7 @@
     {
       "cve_id": "CVE-2023-36787",
       "published_date": "2023-08-21",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -15197,7 +15197,7 @@
     {
       "cve_id": "CVE-2024-38221",
       "published_date": "2024-09-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -15218,7 +15218,7 @@
     {
       "cve_id": "CVE-2024-43489",
       "published_date": "2024-09-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -15239,7 +15239,7 @@
     {
       "cve_id": "CVE-2024-43496",
       "published_date": "2024-09-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Remote Code Execution Vulnerability",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -15260,7 +15260,7 @@
     {
       "cve_id": "CVE-2024-38222",
       "published_date": "2024-09-12",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -15680,7 +15680,7 @@
     {
       "cve_id": "CVE-2024-26196",
       "published_date": "2024-03-21",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge for Android (Chromium-based) Information Disclosure Vulnerability",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -15743,7 +15743,7 @@
     {
       "cve_id": "CVE-2024-21423",
       "published_date": "2024-02-23",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
       "base_score": 4.8,
       "severity": "MEDIUM",
@@ -15764,7 +15764,7 @@
     {
       "cve_id": "CVE-2024-26188",
       "published_date": "2024-02-23",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -16163,7 +16163,7 @@
     {
       "cve_id": "CVE-2023-38157",
       "published_date": "2023-08-07",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Security Feature Bypass Vulnerability",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -16919,7 +16919,7 @@
     {
       "cve_id": "CVE-2021-38669",
       "published_date": "2021-09-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Tampering Vulnerability",
       "base_score": 6.4,
       "severity": "MEDIUM",
@@ -17024,7 +17024,7 @@
     {
       "cve_id": "CVE-2021-26436",
       "published_date": "2021-09-02",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -17045,7 +17045,7 @@
     {
       "cve_id": "CVE-2021-26439",
       "published_date": "2021-09-02",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge for Android Information Disclosure Vulnerability",
       "base_score": 4.6,
       "severity": "MEDIUM",
@@ -17066,7 +17066,7 @@
     {
       "cve_id": "CVE-2021-36930",
       "published_date": "2021-09-02",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -17087,7 +17087,7 @@
     {
       "cve_id": "CVE-2021-38641",
       "published_date": "2021-09-02",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge for Android Spoofing Vulnerability",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -17108,7 +17108,7 @@
     {
       "cve_id": "CVE-2021-38642",
       "published_date": "2021-09-02",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge for iOS Spoofing Vulnerability",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -17129,7 +17129,7 @@
     {
       "cve_id": "CVE-2021-36928",
       "published_date": "2021-08-26",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
       "base_score": 6.0,
       "severity": "MEDIUM",
@@ -17150,7 +17150,7 @@
     {
       "cve_id": "CVE-2021-36929",
       "published_date": "2021-08-26",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -17171,7 +17171,7 @@
     {
       "cve_id": "CVE-2021-36931",
       "published_date": "2021-08-26",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
       "base_score": 4.4,
       "severity": "MEDIUM",
@@ -21308,7 +21308,7 @@
     {
       "cve_id": "CVE-2023-38158",
       "published_date": "2023-08-21",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-10",
       "description": "Microsoft Edge (Chromium-based) Information Disclosure Vulnerability",
       "base_score": 3.1,
       "severity": "LOW",

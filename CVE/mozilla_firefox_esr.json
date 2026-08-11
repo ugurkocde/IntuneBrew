@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox Esr",
   "app_key": "mozilla_firefox_esr",
-  "last_updated": "2026-08-10",
+  "last_updated": "2026-08-11",
   "total_cves": 3298,
   "summary": {
     "critical": 447,
@@ -875,7 +875,7 @@
     {
       "cve_id": "CVE-2026-16389",
       "published_date": "2026-07-21",
-      "last_modified_date": "2026-07-24",
+      "last_modified_date": "2026-08-10",
       "description": "Incorrect boundary conditions, integer overflow in the Libraries component in NSS. This vulnerability was fixed in Firefox 153 and Thunderbird 153.",
       "base_score": 9.8,
       "severity": "CRITICAL",
