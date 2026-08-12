@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-08-11",
+  "last_updated": "2026-08-12",
   "total_cves": 3285,
   "summary": {
     "critical": 446,
@@ -1463,7 +1463,7 @@
     {
       "cve_id": "CVE-2026-8091",
       "published_date": "2026-05-07",
-      "last_modified_date": "2026-07-22",
+      "last_modified_date": "2026-08-11",
       "description": "Incorrect boundary conditions in the Audio/Video: Playback component. This vulnerability was fixed in Firefox 150, Thunderbird 150, Firefox ESR 140.10.1, Thunderbird 140.10.1, and Firefox ESR 115.35.2.",
       "base_score": 9.8,
       "severity": "CRITICAL",
