@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-08-13",
+  "last_updated": "2026-08-14",
   "total_cves": 1033,
   "summary": {
     "critical": 18,
@@ -371,7 +371,7 @@
     {
       "cve_id": "CVE-2016-3351",
       "published_date": "2016-09-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-14",
       "description": "Microsoft Internet Explorer 9 through 11 and Microsoft Edge allow remote attackers to obtain sensitive information via a crafted web site, aka \"Microsoft Browser Information Disclosure Vulnerability.\"",
       "base_score": 6.5,
       "severity": "MEDIUM",
