@@ -483,6 +483,7 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/thaw.json",
     "https://formulae.brew.sh/api/cask/codex.json",
     "https://formulae.brew.sh/api/cask/copilot-cli.json",
+    "https://formulae.brew.sh/api/cask/ddpm.json",
 ]
 
 # DMG
