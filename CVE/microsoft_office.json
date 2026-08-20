@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Office",
   "app_key": "microsoft_office",
-  "last_updated": "2026-08-19",
+  "last_updated": "2026-08-20",
   "total_cves": 1289,
   "summary": {
     "critical": 12,
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2023-21715",
       "published_date": "2023-02-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Publisher Security Feature Bypass Vulnerability",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2021-42292",
       "published_date": "2021-11-10",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Excel Security Feature Bypass Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2021-27059",
       "published_date": "2021-03-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Office Remote Code Execution Vulnerability",
       "base_score": 7.6,
       "severity": "HIGH",
@@ -896,7 +896,7 @@
     {
       "cve_id": "CVE-2023-21716",
       "published_date": "2023-02-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Word Remote Code Execution Vulnerability",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -917,8 +917,8 @@
     {
       "cve_id": "CVE-2020-0901",
       "published_date": "2020-05-21",
-      "last_modified_date": "2026-06-17",
-      "description": "A remote code execution vulnerability exists in Microsoft Excel software when the software fails to properly handle objects in memory, aka 'Microsoft Excel Remote Code Execution Vulnerability'.",
+      "last_modified_date": "2026-08-19",
+      "description": "A remote code execution vulnerability exists in Microsoft Excel software when the software fails to properly handle objects in memory. An attacker who successfully exploited the vulnerability could run arbitrary code in the context of the current user. If the current user is logged on with administrative user rights, an attacker could take control of the affected system. An attacker could then install programs; view, change, or delete data; or create new accounts with full user rights. Users whose accounts are configured to have fewer user rights on the system could be less impacted than users who operate with administrative user rights.\nExploitation of the vulnerability requires that a user open a specially crafted file with an affected version of Microsoft Excel. In an email attack scenario, an attacker could exploit the vulnerability by sending the specially crafted file to the user and convincing the user to open the file. In a web-based attack scenario, an attacker could host a website (or leverage a compromised website that accepts or hosts user-provided content) containing a specially crafted file designed to exploit the vulnerability. An attacker would have no way to force users to visit the website. Instead, an attacker would have to convince users to click a link, typically by way of an enticement in an email or instant message, and then convince them to open the specially crafted file.\nThe security update addresses the vulnerability by correcting how Microsoft Excel handles objects in memory.",
       "base_score": 9.8,
       "severity": "CRITICAL",
       "cvss_version": "3.1",
@@ -10514,7 +10514,7 @@
     {
       "cve_id": "CVE-2021-40442",
       "published_date": "2021-11-10",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Excel Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -10535,7 +10535,7 @@
     {
       "cve_id": "CVE-2021-42296",
       "published_date": "2021-11-10",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Word Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11291,7 +11291,7 @@
     {
       "cve_id": "CVE-2021-24108",
       "published_date": "2021-03-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Office Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11312,7 +11312,7 @@
     {
       "cve_id": "CVE-2021-27053",
       "published_date": "2021-03-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Excel Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11333,7 +11333,7 @@
     {
       "cve_id": "CVE-2021-27054",
       "published_date": "2021-03-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Excel Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11354,7 +11354,7 @@
     {
       "cve_id": "CVE-2021-27055",
       "published_date": "2021-03-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Visio Security Feature Bypass Vulnerability",
       "base_score": 7.0,
       "severity": "HIGH",
@@ -11375,7 +11375,7 @@
     {
       "cve_id": "CVE-2021-27056",
       "published_date": "2021-03-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft PowerPoint Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11396,7 +11396,7 @@
     {
       "cve_id": "CVE-2021-27057",
       "published_date": "2021-03-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Office Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -11417,7 +11417,7 @@
     {
       "cve_id": "CVE-2021-27058",
       "published_date": "2021-03-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Office ClickToRun Remote Code Execution Vulnerability",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -23807,7 +23807,7 @@
     {
       "cve_id": "CVE-2023-21714",
       "published_date": "2023-02-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Office Information Disclosure Vulnerability",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -24143,7 +24143,7 @@
     {
       "cve_id": "CVE-2021-41368",
       "published_date": "2021-11-10",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-08-19",
       "description": "Microsoft Access Remote Code Execution Vulnerability",
       "base_score": 6.1,
       "severity": "MEDIUM",
