@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox Esr",
   "app_key": "mozilla_firefox_esr",
-  "last_updated": "2026-08-21",
+  "last_updated": "2026-08-22",
   "total_cves": 3309,
   "summary": {
     "critical": 459,
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2026-74936",
       "published_date": "2026-08-18",
-      "last_modified_date": "2026-08-20",
+      "last_modified_date": "2026-08-21",
       "description": "Use-after-free in the JavaScript: WebAssembly component. This vulnerability was fixed in Firefox 154, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153.1.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -371,7 +371,7 @@
     {
       "cve_id": "CVE-2026-74940",
       "published_date": "2026-08-18",
-      "last_modified_date": "2026-08-20",
+      "last_modified_date": "2026-08-21",
       "description": "Use-after-free in the Graphics: Text component. This vulnerability was fixed in Firefox 154, Firefox ESR 115.39, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153.1.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -392,7 +392,7 @@
     {
       "cve_id": "CVE-2026-74943",
       "published_date": "2026-08-18",
-      "last_modified_date": "2026-08-20",
+      "last_modified_date": "2026-08-21",
       "description": "Use-after-free in the Graphics: ImageLib component. This vulnerability was fixed in Firefox 154, Firefox ESR 115.39, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153.1.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -413,7 +413,7 @@
     {
       "cve_id": "CVE-2026-74944",
       "published_date": "2026-08-18",
-      "last_modified_date": "2026-08-20",
+      "last_modified_date": "2026-08-21",
       "description": "Use-after-free in the DOM: Core & HTML component. This vulnerability was fixed in Firefox 154, Firefox ESR 140.14, Firefox ESR 153.1, Thunderbird 154, Thunderbird 140.14, and Thunderbird 153.1.",
       "base_score": 9.8,
       "severity": "CRITICAL",

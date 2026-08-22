@@ -1,7 +1,7 @@
 {
   "app_name": "Gimp",
   "app_key": "gimp",
-  "last_updated": "2026-08-21",
+  "last_updated": "2026-08-22",
   "total_cves": 91,
   "summary": {
     "critical": 1,
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2026-59087",
       "published_date": "2026-08-10",
-      "last_modified_date": "2026-08-19",
+      "last_modified_date": "2026-08-21",
       "description": "A flaw was found in the GIMP image manipulation program, specifically within its Seattle Filmworks file loader. A remote attacker could exploit this vulnerability by tricking a user into opening a specially crafted Seattle Filmworks file. This could lead to a heap overflow, allowing the attacker to write several kilobytes of controlled data beyond the intended memory buffer. Such an overflow can result in memory corruption, potentially leading to arbitrary code execution or a denial of service.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2026-59090",
       "published_date": "2026-08-10",
-      "last_modified_date": "2026-08-19",
+      "last_modified_date": "2026-08-21",
       "description": "A flaw was found in GIMP's PSD file format plugin. This vulnerability, an unsigned integer underflow in the `block_rem` variable, occurs when a user opens a specially crafted `.psd` image file. The underflow leads to parser confusion, enabling an attacker to inject arbitrary data as layer resource blocks. This can ultimately result in arbitrary code execution, allowing the attacker to run malicious code on the victim's system.",
       "base_score": 8.4,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2026-59091",
       "published_date": "2026-08-10",
-      "last_modified_date": "2026-08-19",
+      "last_modified_date": "2026-08-21",
       "description": "A flaw was found in GIMP's file format plugins, including those for PSD and PAA files. A remote attacker could exploit these vulnerabilities by tricking a user into opening a specially crafted image file. This could lead to unexpected application behavior or other potential security impacts without requiring further user interaction.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2026-2050",
       "published_date": "2026-06-24",
-      "last_modified_date": "2026-08-20",
+      "last_modified_date": "2026-08-22",
       "description": "GIMP HDR File Parsing Heap-based Buffer Overflow Remote Code Execution Vulnerability. This vulnerability allows remote attackers to execute arbitrary code on affected installations of GIMP. User interaction is required to exploit this vulnerability in that the target must visit a malicious page or open a malicious file.\n\nThe specific flaw exists within the parsing of HDR files. The issue results from the lack of proper validation of the length of user-supplied data prior to copying it to a heap-based buffer. An attacker can leverage this vulnerability to execute code in the context of the current process. Was ZDI-CAN-28266.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1190,7 +1190,7 @@
     {
       "cve_id": "CVE-2026-59088",
       "published_date": "2026-08-10",
-      "last_modified_date": "2026-08-19",
+      "last_modified_date": "2026-08-21",
       "description": "A flaw was found in GIMP. A signed integer overflow vulnerability exists in the `file-fli` plugin when processing FLI image files. This occurs due to an incorrect calculation during memory allocation for image buffers, where the multiplication of image width and height can exceed the maximum integer value. A remote attacker could exploit this by tricking a user into opening a specially crafted FLI file, leading to the application crashing and resulting in a denial of service.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1253,7 +1253,7 @@
     {
       "cve_id": "CVE-2026-59089",
       "published_date": "2026-07-06",
-      "last_modified_date": "2026-07-10",
+      "last_modified_date": "2026-08-21",
       "description": "A flaw was found in GIMP. The PlayStation TIM loader, responsible for handling PlayStation image files, incorrectly calculates the size of the Color Look-Up Table (CLUT) due to an integer overflow. This occurs when multiplying num_colors and num_cluts, both 16-bit unsigned short integers, resulting in a value exceeding the maximum integer limit. An attacker could exploit this by providing a specially crafted image file, leading to undefined behavior and causing the GIMP plug-in to abort, effectively resulting in a denial of service.",
       "base_score": 5.5,
       "severity": "MEDIUM",
