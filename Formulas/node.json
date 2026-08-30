@@ -1,10 +1,11 @@
 {
   "name": "node",
   "description": "Open-source, cross-platform JavaScript runtime environment",
-  "version": "26.7.0",
+  "version": "26.8.1",
   "homepage": "https://nodejs.org/",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/node_26.7.0_arm64.pkg",
-  "fileName": "node_26.7.0_arm64.pkg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/node_26.8.1_arm64.pkg",
+  "fileName": "node_26.8.1_arm64.pkg",
+  "sha": "a0745446430796381ad484d621cd118651115051ced45e6b0f39aec7ad5c5381",
   "bundledDependencies": [
     "ada-url",
     "brotli",
