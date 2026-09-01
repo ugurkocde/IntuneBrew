@@ -1250,6 +1250,7 @@ pkg_in_dmg_urls = [
     "https://formulae.brew.sh/api/cask/simplysign.json",
     "https://formulae.brew.sh/api/cask/tableau-prep.json",
     "https://formulae.brew.sh/api/cask/wireshark-app.json",
+    "https://formulae.brew.sh/api/cask/sharefile.json",
 ]
 
 # PKG in PKG URLs (some are ZIP files containing PKG that contains inner PKGs)
