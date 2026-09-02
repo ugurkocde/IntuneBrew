@@ -1,7 +1,7 @@
 {
   "app_name": "Teamviewer",
   "app_key": "teamviewer",
-  "last_updated": "2026-09-01",
+  "last_updated": "2026-09-02",
   "total_cves": 17,
   "summary": {
     "critical": 1,
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2026-16444",
       "published_date": "2026-08-26",
-      "last_modified_date": "2026-08-27",
+      "last_modified_date": "2026-09-01",
       "description": "Improper\nneutralization of path traversal sequences in TeamViewer Desktop Clients prior\nVersion 15.81.5 allows an authenticated remote session participant to write files\nto unintended locations on the local file system via file transfer or virtual\nfile clipboard mechanisms. An attacker can leverage this behavior to achieve\narbitrary file write and potentially execute code with the privileges of the\naffected user.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2026-19042",
       "published_date": "2026-08-26",
-      "last_modified_date": "2026-08-26",
+      "last_modified_date": "2026-09-01",
       "description": "A command injection vulnerability in TeamViewer Full\nClient and Host for Linux prior to version 15.81.5 allows a remote attacker to\nexecute arbitrary commands in the context of the current user via a specially\ncrafted URL sent through the out-of-session chat feature. Exploitation requires\nuser interaction by clicking the malicious link.",
       "base_score": 8.8,
       "severity": "HIGH",

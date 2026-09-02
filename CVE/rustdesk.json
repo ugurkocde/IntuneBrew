@@ -1,16 +1,37 @@
 {
   "app_name": "Rustdesk",
   "app_key": "rustdesk",
-  "last_updated": "2026-09-01",
-  "total_cves": 10,
+  "last_updated": "2026-09-02",
+  "total_cves": 11,
   "summary": {
-    "critical": 4,
+    "critical": 5,
     "high": 5,
     "medium": 1,
     "low": 0,
     "kev_count": 0
   },
   "vulnerabilities": [
+    {
+      "cve_id": "CVE-2026-76840",
+      "published_date": "2026-08-24",
+      "last_modified_date": "2026-08-24",
+      "description": "RustDesk's Windows clipboard redirection copies a peer-supplied length into a fixed-size caller buffer without an upper bound check. When an OLE paste consumer such as explorer.exe calls IStream::Read with a buffer of cb bytes, CliprdrStream_Read in libs/clipboard/src/windows/wf_cliprdr.c requests that many bytes of a remote file through cliprdr_send_request_filecontents and then executes CopyMemory(pv, clipboard->req_fdata, clipboard->req_fsize), where req_fsize is taken verbatim from the peer's CLIPRDR FileContentsResponse by wf_cliprdr_server_file_contents_response (req_fsize = fileContentsResponse->cbRequested) and is never clamped to cb anywhere in the chain. The function's only length comparison, req_fsize < cb, handles the short-read case and is evaluated after the copy has already occurred. A malicious or compromised peer that answers a small file-contents read with an oversized response therefore writes attacker-chosen data past the end of the paste consumer's heap buffer when the local user pastes clipboard file contents offered by the remote side. The file is a fork of FreeRDP's client/Windows/wf_cliprdr.c, where the same defect is CVE-2026-68579, fixed in FreeRDP 3.30.0.",
+      "base_score": 9.6,
+      "severity": "CRITICAL",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:L/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": null,
+      "affected_version_end_type": null,
+      "fixed_version": null,
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "rustdesk",
+      "product": "rustdesk"
+    },
     {
       "cve_id": "CVE-2026-30783",
       "published_date": "2026-03-05",
