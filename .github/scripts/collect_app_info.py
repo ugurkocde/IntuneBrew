@@ -1223,6 +1223,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/cmtrace-open.json",
     "https://formulae.brew.sh/api/cask/prusaslicer.json",
     "https://formulae.brew.sh/api/cask/openwork.json",
+    "https://formulae.brew.sh/api/cask/openwebstart.json",
 ]
 
 # PKG in DMG URLs

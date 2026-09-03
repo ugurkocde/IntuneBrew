@@ -68,5 +68,12 @@
       "openwork"
     ],
     "recorded_at": "2026-09-01T20:32:17.190371+00:00"
+  },
+  {
+    "issue": 278,
+    "casks": [
+      "openwebstart"
+    ],
+    "recorded_at": "2026-09-03T08:49:08.901057+00:00"
   }
 ]
