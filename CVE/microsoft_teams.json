@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Teams",
   "app_key": "microsoft_teams",
-  "last_updated": "2026-09-03",
+  "last_updated": "2026-09-04",
   "total_cves": 29,
   "summary": {
     "critical": 3,
