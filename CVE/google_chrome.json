@@ -1,14 +1,14 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-09-04",
-  "total_cves": 6265,
+  "last_updated": "2026-09-05",
+  "total_cves": 6266,
   "summary": {
     "critical": 414,
-    "high": 3077,
+    "high": 3078,
     "medium": 2657,
     "low": 117,
-    "kev_count": 75
+    "kev_count": 76
   },
   "vulnerabilities": [
     {
@@ -322,6 +322,27 @@
       "is_kev": true,
       "kev_date_added": "2024-09-17",
       "kev_due_date": "2024-10-08",
+      "kev_ransomware_use": "Unknown",
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
+      "cve_id": "CVE-2026-85046",
+      "published_date": "2026-09-03",
+      "last_modified_date": "2026-09-05",
+      "description": "Type confusion in V8 in Google Chrome prior to 152.0.7977.82 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "152.0.7977.82",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "152.0.7977.82",
+      "is_kev": true,
+      "kev_date_added": "2026-09-04",
+      "kev_due_date": "2026-09-18",
       "kev_ransomware_use": "Unknown",
       "vendor": "google",
       "product": "chrome"
