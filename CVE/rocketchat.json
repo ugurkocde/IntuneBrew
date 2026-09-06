@@ -1,7 +1,7 @@
 {
   "app_name": "Rocketchat",
   "app_key": "rocketchat",
-  "last_updated": "2026-09-05",
+  "last_updated": "2026-09-06",
   "total_cves": 63,
   "summary": {
     "critical": 11,
