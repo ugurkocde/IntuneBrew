@@ -75,5 +75,12 @@
       "openwebstart"
     ],
     "recorded_at": "2026-09-03T08:49:08.901057+00:00"
+  },
+  {
+    "issue": 280,
+    "casks": [
+      "google-chrome"
+    ],
+    "recorded_at": "2026-09-09T09:54:55.198920+00:00"
   }
 ]
