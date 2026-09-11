@@ -1,7 +1,7 @@
 {
   "app_name": "Rocketchat",
   "app_key": "rocketchat",
-  "last_updated": "2026-09-10",
+  "last_updated": "2026-09-11",
   "total_cves": 63,
   "summary": {
     "critical": 11,
@@ -518,7 +518,7 @@
     {
       "cve_id": "CVE-2026-75575",
       "published_date": "2026-08-25",
-      "last_modified_date": "2026-08-25",
+      "last_modified_date": "2026-09-10",
       "description": "Rocket.Chat exposes the sendForgotPasswordEmail Meteor method without a DDP rate limit, so an unauthenticated caller may invoke it as often as it likes. The method is reachable over DDP and over the HTTP route POST /api/v1/method.callAnon/sendForgotPasswordEmail, and it triggers a password reset message for any address that matches an account. With no DDPRateLimiter rule registered for it, a caller can drive an unbounded volume of reset mail at a chosen address from the deployment's own mail sender, and can probe addresses at scale: the method answers true for an address with no account and for a successful send, but false when the address belongs to an account that authenticates through an external provider and Accounts_AllowPasswordChangeForOAuthUsers is off, so repeated calls distinguish that class of account. Later versions register a rule permitting ten calls per minute per client address.",
       "base_score": 5.3,
       "severity": "MEDIUM",
