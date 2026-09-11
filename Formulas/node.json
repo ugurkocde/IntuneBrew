@@ -5,7 +5,6 @@
   "homepage": "https://nodejs.org/",
   "url": "https://intunebrew.blob.core.windows.net/pkg/node_26.8.2_arm64.pkg",
   "fileName": "node_26.8.2_arm64.pkg",
-  "sha": "fd1c1e0fe65187c323155eea7a2c49de996f0a4603ee4c9e935bc1a03aeb218d",
   "bundledDependencies": [
     "ada-url",
     "brotli",
