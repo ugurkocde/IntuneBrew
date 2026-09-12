@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-09-11",
+  "last_updated": "2026-09-12",
   "total_cves": 1043,
   "summary": {
     "critical": 18,
@@ -665,7 +665,7 @@
     {
       "cve_id": "CVE-2026-72984",
       "published_date": "2026-08-28",
-      "last_modified_date": "2026-09-01",
+      "last_modified_date": "2026-09-11",
       "description": "Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -13748,7 +13748,7 @@
     {
       "cve_id": "CVE-2026-58616",
       "published_date": "2026-08-28",
-      "last_modified_date": "2026-08-31",
+      "last_modified_date": "2026-09-11",
       "description": "Concurrent execution using shared resource with improper synchronization ('race condition') in Copilot Chat (Microsoft Edge) allows an authorized attacker to disclose information over a network.",
       "base_score": 4.4,
       "severity": "MEDIUM",
@@ -13769,7 +13769,7 @@
     {
       "cve_id": "CVE-2026-62904",
       "published_date": "2026-08-28",
-      "last_modified_date": "2026-08-31",
+      "last_modified_date": "2026-09-11",
       "description": "Incorrect authorization in Microsoft Edge (Chromium-based) allows an unauthorized attacker to disclose information over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -13790,7 +13790,7 @@
     {
       "cve_id": "CVE-2026-66323",
       "published_date": "2026-08-28",
-      "last_modified_date": "2026-08-31",
+      "last_modified_date": "2026-09-11",
       "description": "Improper neutralization of parameter/argument delimiters in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -13811,7 +13811,7 @@
     {
       "cve_id": "CVE-2026-66324",
       "published_date": "2026-08-28",
-      "last_modified_date": "2026-08-31",
+      "last_modified_date": "2026-09-11",
       "description": "External control of file name or path in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -13832,7 +13832,7 @@
     {
       "cve_id": "CVE-2026-66798",
       "published_date": "2026-08-28",
-      "last_modified_date": "2026-09-01",
+      "last_modified_date": "2026-09-11",
       "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
       "base_score": 4.3,
       "severity": "MEDIUM",
