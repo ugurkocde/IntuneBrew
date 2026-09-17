@@ -1,7 +1,7 @@
 {
   "app_name": "Mattermost",
   "app_key": "mattermost",
-  "last_updated": "2026-09-16",
+  "last_updated": "2026-09-17",
   "total_cves": 78,
   "summary": {
     "critical": 1,
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2026-12985",
       "published_date": "2026-09-14",
-      "last_modified_date": "2026-09-15",
+      "last_modified_date": "2026-09-16",
       "description": "Mattermost versions 11.9.x <= 11.9.0, 11.8.x <= 11.8.4, 11.7.x <= 11.7.7 Mattermost failed to validate Dynamic Client Registration redirect URIs by URL component (matching glob patterns against the raw URI string instead) which allows a remote unauthenticated attacker to register an OAuth client with an attacker-controlled callback host that bypasses the configured redirect URI allowlist via a crafted redirect URI that places an allowlisted host/path suffix inside the query string.. Mattermost Advisory ID: MMSA-2026-00700",
       "base_score": 6.8,
       "severity": "MEDIUM",
