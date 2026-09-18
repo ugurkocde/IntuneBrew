@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Office",
   "app_key": "microsoft_office",
-  "last_updated": "2026-09-17",
+  "last_updated": "2026-09-18",
   "total_cves": 1395,
   "summary": {
     "critical": 14,
@@ -854,7 +854,7 @@
     {
       "cve_id": "CVE-2026-78509",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Outlook allows an unauthorized attacker to execute code over a network.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -875,7 +875,7 @@
     {
       "cve_id": "CVE-2026-78510",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -1274,7 +1274,7 @@
     {
       "cve_id": "CVE-2026-69632",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Use after free in Microsoft Office allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1295,7 +1295,7 @@
     {
       "cve_id": "CVE-2026-69671",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1316,7 +1316,7 @@
     {
       "cve_id": "CVE-2026-69678",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Use after free in Microsoft Office PowerPoint allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1337,7 +1337,7 @@
     {
       "cve_id": "CVE-2026-69686",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Stack-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1358,7 +1358,7 @@
     {
       "cve_id": "CVE-2026-69722",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Stack-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1400,7 +1400,7 @@
     {
       "cve_id": "CVE-2026-69759",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Stack-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1442,7 +1442,7 @@
     {
       "cve_id": "CVE-2026-69767",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Use after free in Microsoft Office PowerPoint allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1484,7 +1484,7 @@
     {
       "cve_id": "CVE-2026-69797",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Use after free in Microsoft Office PowerPoint allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1505,7 +1505,7 @@
     {
       "cve_id": "CVE-2026-72972",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1526,7 +1526,7 @@
     {
       "cve_id": "CVE-2026-72973",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1547,7 +1547,7 @@
     {
       "cve_id": "CVE-2026-77898",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to execute code over a network.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -1568,7 +1568,7 @@
     {
       "cve_id": "CVE-2026-77901",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Null pointer dereference in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1589,7 +1589,7 @@
     {
       "cve_id": "CVE-2026-78504",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Stack-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1610,7 +1610,7 @@
     {
       "cve_id": "CVE-2026-78505",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1631,7 +1631,7 @@
     {
       "cve_id": "CVE-2026-78507",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1652,7 +1652,7 @@
     {
       "cve_id": "CVE-2026-78511",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1673,7 +1673,7 @@
     {
       "cve_id": "CVE-2026-78512",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Numeric truncation error in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1694,7 +1694,7 @@
     {
       "cve_id": "CVE-2026-78514",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Use after free in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1715,7 +1715,7 @@
     {
       "cve_id": "CVE-2026-78517",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1736,7 +1736,7 @@
     {
       "cve_id": "CVE-2026-78518",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1778,7 +1778,7 @@
     {
       "cve_id": "CVE-2026-78521",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1799,7 +1799,7 @@
     {
       "cve_id": "CVE-2026-78524",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds write in Microsoft Office allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1820,7 +1820,7 @@
     {
       "cve_id": "CVE-2026-78525",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Use after free in Microsoft Office Outlook allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1841,7 +1841,7 @@
     {
       "cve_id": "CVE-2026-78526",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1862,7 +1862,7 @@
     {
       "cve_id": "CVE-2026-80080",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Double free in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1904,7 +1904,7 @@
     {
       "cve_id": "CVE-2026-80085",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1946,7 +1946,7 @@
     {
       "cve_id": "CVE-2026-81386",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1967,7 +1967,7 @@
     {
       "cve_id": "CVE-2026-81388",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Stack-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1988,7 +1988,7 @@
     {
       "cve_id": "CVE-2026-81389",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.0,
       "severity": "HIGH",
@@ -2009,7 +2009,7 @@
     {
       "cve_id": "CVE-2026-81396",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Stack-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2030,7 +2030,7 @@
     {
       "cve_id": "CVE-2026-81397",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2051,7 +2051,7 @@
     {
       "cve_id": "CVE-2026-81398",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2072,7 +2072,7 @@
     {
       "cve_id": "CVE-2026-81947",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2093,7 +2093,7 @@
     {
       "cve_id": "CVE-2026-81948",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2114,7 +2114,7 @@
     {
       "cve_id": "CVE-2026-81949",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Integer overflow or wraparound in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2135,7 +2135,7 @@
     {
       "cve_id": "CVE-2026-81950",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Double free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2156,7 +2156,7 @@
     {
       "cve_id": "CVE-2026-81951",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2177,7 +2177,7 @@
     {
       "cve_id": "CVE-2026-81952",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Word allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -2198,7 +2198,7 @@
     {
       "cve_id": "CVE-2026-81953",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Stack-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2219,7 +2219,7 @@
     {
       "cve_id": "CVE-2026-81954",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2240,7 +2240,7 @@
     {
       "cve_id": "CVE-2026-81956",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2261,7 +2261,7 @@
     {
       "cve_id": "CVE-2026-81957",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2282,7 +2282,7 @@
     {
       "cve_id": "CVE-2026-81959",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -2303,7 +2303,7 @@
     {
       "cve_id": "CVE-2026-81960",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -23282,7 +23282,7 @@
     {
       "cve_id": "CVE-2026-69626",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Buffer over-read in Microsoft Office allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23303,7 +23303,7 @@
     {
       "cve_id": "CVE-2026-69719",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-08",
+      "last_modified_date": "2026-09-17",
       "description": "Buffer over-read in Microsoft Office Word allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23324,7 +23324,7 @@
     {
       "cve_id": "CVE-2026-69734",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-08",
+      "last_modified_date": "2026-09-17",
       "description": "Integer overflow or wraparound in Microsoft Office Word allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23345,7 +23345,7 @@
     {
       "cve_id": "CVE-2026-69739",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23366,7 +23366,7 @@
     {
       "cve_id": "CVE-2026-72938",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Access of resource using incompatible type ('type confusion') in Microsoft Office PowerPoint allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23408,7 +23408,7 @@
     {
       "cve_id": "CVE-2026-72974",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Buffer over-read in Microsoft Office Excel allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23429,7 +23429,7 @@
     {
       "cve_id": "CVE-2026-72975",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office PowerPoint allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23450,7 +23450,7 @@
     {
       "cve_id": "CVE-2026-72976",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-08",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Word allows an authorized attacker to disclose information locally.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -23471,7 +23471,7 @@
     {
       "cve_id": "CVE-2026-72977",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office PowerPoint allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23513,7 +23513,7 @@
     {
       "cve_id": "CVE-2026-78502",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-08",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Word allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23534,7 +23534,7 @@
     {
       "cve_id": "CVE-2026-78503",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-08",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Word allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23555,7 +23555,7 @@
     {
       "cve_id": "CVE-2026-78506",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-08",
+      "last_modified_date": "2026-09-17",
       "description": "Improper null termination in Microsoft Office Word allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -23576,7 +23576,7 @@
     {
       "cve_id": "CVE-2026-78513",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office PowerPoint allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -23597,7 +23597,7 @@
     {
       "cve_id": "CVE-2026-78515",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23618,7 +23618,7 @@
     {
       "cve_id": "CVE-2026-78520",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Outlook allows an unauthorized attacker to execute code over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23681,7 +23681,7 @@
     {
       "cve_id": "CVE-2026-80076",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23702,7 +23702,7 @@
     {
       "cve_id": "CVE-2026-80078",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23744,7 +23744,7 @@
     {
       "cve_id": "CVE-2026-80082",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-10",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23786,7 +23786,7 @@
     {
       "cve_id": "CVE-2026-80086",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-10",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office PowerPoint allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23807,7 +23807,7 @@
     {
       "cve_id": "CVE-2026-80087",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-10",
+      "last_modified_date": "2026-09-17",
       "description": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23828,7 +23828,7 @@
     {
       "cve_id": "CVE-2026-80088",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-08",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Word allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23849,7 +23849,7 @@
     {
       "cve_id": "CVE-2026-80089",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-10",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23870,7 +23870,7 @@
     {
       "cve_id": "CVE-2026-80090",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-08",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Word allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23891,7 +23891,7 @@
     {
       "cve_id": "CVE-2026-80091",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-10",
+      "last_modified_date": "2026-09-17",
       "description": "Use of uninitialized resource in Microsoft Office allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -23912,7 +23912,7 @@
     {
       "cve_id": "CVE-2026-81387",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Exposure of sensitive system information to an unauthorized control sphere in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -23933,7 +23933,7 @@
     {
       "cve_id": "CVE-2026-81390",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -23954,7 +23954,7 @@
     {
       "cve_id": "CVE-2026-81391",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Use of uninitialized resource in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -23975,7 +23975,7 @@
     {
       "cve_id": "CVE-2026-81392",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -23996,7 +23996,7 @@
     {
       "cve_id": "CVE-2026-81393",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -24017,7 +24017,7 @@
     {
       "cve_id": "CVE-2026-81394",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Exposure of sensitive system information to an unauthorized control sphere in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -24038,7 +24038,7 @@
     {
       "cve_id": "CVE-2026-81395",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -24059,7 +24059,7 @@
     {
       "cve_id": "CVE-2026-81399",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Buffer over-read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -24080,7 +24080,7 @@
     {
       "cve_id": "CVE-2026-81400",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -24101,7 +24101,7 @@
     {
       "cve_id": "CVE-2026-81401",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Access of resource using incompatible type ('type confusion') in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -24122,7 +24122,7 @@
     {
       "cve_id": "CVE-2026-81958",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Use of uninitialized resource in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -24185,7 +24185,7 @@
     {
       "cve_id": "CVE-2026-85875",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-09",
+      "last_modified_date": "2026-09-17",
       "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
