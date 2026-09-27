@@ -8,8 +8,8 @@
   "homepage": "https://install.bankid.com/",
   "homebrew_cask": "bankid",
   "fileName": "BankID_installation_7_17_0.pkg",
-  "type": "pkg",
   "sha": "066680f7c97deca66e319262def3c54ca0fbd9bf4f628dd1c90cb1ad4f3889fd",
+  "type": "pkg",
   "category": "Security",
   "publisher": "BankID AB",
   "previous_version": "7.17.0"

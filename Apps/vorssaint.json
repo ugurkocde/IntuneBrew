@@ -1,0 +1,12 @@
+{
+  "name": "Vorssaint",
+  "description": "Menu bar toolkit with keep-awake, system monitor and volume mixer",
+  "version": "3.3.5",
+  "url": "https://github.com/vorssaint/vorssaint-utils/releases/download/v3.3.5/Vorssaint-3.3.5.dmg",
+  "vendor_url": "https://github.com/vorssaint/vorssaint-utils/releases/download/v3.3.5/Vorssaint-3.3.5.dmg",
+  "bundleId": "com.vorssaint.utils",
+  "homepage": "https://github.com/vorssaint/vorssaint-utils",
+  "homebrew_cask": "vorssaint",
+  "fileName": "Vorssaint-3.3.5.dmg",
+  "sha": "d0c42081fbdaef21c6239fec654c88759654e37ecd50c93b74736bcadfec9294"
+}

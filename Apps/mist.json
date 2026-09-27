@@ -8,8 +8,8 @@
   "homepage": "https://github.com/ninxsoft/Mist",
   "homebrew_cask": "mist",
   "fileName": "Mist.0.40.pkg",
-  "type": "pkg",
   "sha": "12715f8906ac9d0ede6f0665e703c323bdfcc99e54c8fae3a4ad8c516374483f",
+  "type": "pkg",
   "category": "Utilities",
   "publisher": "ninxsoft",
   "previous_version": "0.40"

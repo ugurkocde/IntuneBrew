@@ -1,18 +1,16 @@
 {
   "name": "Aptible Toolbelt",
   "description": "Command-line tool for Aptible Deploy, an audit-ready App Deployment Platform",
-  "version": "0.26.8",
-  "url": "https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/gh-89/pkg/aptible-toolbelt-0.26.8%2B20260608224702-mac-os-x.10.15.7-1.pkg",
-  "vendor_url": "https://omnibus-aptible-toolbelt.s3.amazonaws.com/aptible/omnibus-aptible-toolbelt/master/gh-74/pkg/aptible-toolbelt-0.26.5%2B20260312232223-mac-os-x.10.15.7-1.pkg",
+  "version": "1.0.2",
+  "url": "https://omnibus-aptible-toolbelt.s3.amazonaws.com/release/aptible-cli-go/aptible-cli-go_1.0.2_darwin_arm64.pkg",
+  "vendor_url": "https://omnibus-aptible-toolbelt.s3.amazonaws.com/release/aptible-cli-go/aptible-cli-go_1.0.2_darwin_arm64.pkg",
   "bundleId": "com.aptible.toolbelt",
   "homepage": "https://www.aptible.com/docs/reference/aptible-cli/overview",
-  "fileName": "aptible-toolbelt-0.26.8+20260608224702-mac-os-x.10.15.7-1.pkg",
+  "homebrew_cask": "aptible",
+  "fileName": "aptible-cli-go_1.0.2_darwin_arm64.pkg",
+  "sha": "21a5a567d162512d7357da525ae96f17187b565a25040835b6a2d3f8866fdd6f",
   "type": "pkg",
-  "sha": "0abe0783430ea31172064535eb9a79bd3ecbab1f4a4aacb59f257eee251ef554",
   "category": "Developer Tools",
   "publisher": "Aptible, Inc.",
-  "previous_version": "0.26.8",
-  "homebrew_cask": "aptible",
-  "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
+  "previous_version": "0.26.8"
 }

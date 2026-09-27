@@ -1,14 +1,14 @@
 {
   "name": "Nektony App Cleaner & Uninstaller",
   "description": "Uninstaller and cleaning assistant",
-  "version": "9.2.4",
-  "url": "https://download.nektony.com/download/app-cleaner-uninstaller/app-cleaner-uninstaller.dmg?build=2188",
-  "vendor_url": "https://download.nektony.com/download/app-cleaner-uninstaller/app-cleaner-uninstaller.dmg?build=2188",
+  "version": "10.0.1",
+  "url": "https://download.nektony.com/download/app-cleaner-uninstaller/app-cleaner-uninstaller.dmg?build=2336",
+  "vendor_url": "https://download.nektony.com/download/app-cleaner-uninstaller/app-cleaner-uninstaller.dmg?build=2336",
   "bundleId": "com.nektony.App-Cleaner-Pro",
   "homepage": "https://nektony.com/mac-app-cleaner",
   "homebrew_cask": "app-cleaner",
   "fileName": "app-cleaner-uninstaller.dmg",
-  "sha": "9f6c68974304f1f24bcc6255a25175e1ad693b6f64b25f56549eae55d3b15af2",
+  "sha": "d5decfb9f6bedbaab54a65565bd2a35f1ee5185d8560b95ab4b85b93e69f1783",
   "category": "Utilities",
   "publisher": "Nektony Ltd.",
   "previous_version": "9.2.4"

@@ -1,18 +1,16 @@
 {
   "name": "Captin",
   "description": "Tool to show caps lock status",
-  "version": "1.3.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/captin_1.3.1.pkg",
+  "version": "2.0.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/captin_2.0.1.pkg",
   "vendor_url": "https://raw.githubusercontent.com/cool8jay/public/master/captin/Captin.zip",
   "bundleId": "com.100hps.captin",
   "homepage": "https://github.com/cool8jay/public",
-  "fileName": "captin_1.3.1.pkg",
+  "fileName": "captin_2.0.1.pkg",
   "type": "app",
-  "sha": "de78390c6dbac9b2fa0a74dd6f43da94579b0c0fc98e2495cc0d255197823416",
+  "sha": "1661739d17733c53091447f6c5466294ddf3fe899d480c799745086252bd8263",
   "category": "Utilities",
   "publisher": "cool8jay",
   "previous_version": "1.3.1",
-  "homebrew_cask": "captin",
-  "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: discontinued"
+  "homebrew_cask": "captin"
 }

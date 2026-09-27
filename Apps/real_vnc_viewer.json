@@ -12,5 +12,7 @@
   "changelog": "https://help.realvnc.com/hc/en-us/articles/360002253138-Release-Notes",
   "category": "Security",
   "publisher": "RealVNC Limited",
-  "previous_version": "7.15.1"
+  "previous_version": "7.15.1",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

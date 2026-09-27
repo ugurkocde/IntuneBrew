@@ -13,5 +13,5 @@
   "previous_version": "1.3",
   "homebrew_cask": "disk-inventory-x",
   "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
+  "deprecation_reason": "disabled in Homebrew: fails_gatekeeper_check"
 }

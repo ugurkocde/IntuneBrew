@@ -1,14 +1,14 @@
 {
   "name": "ChronoSync",
   "description": "Synchronisation and backup tool",
-  "version": "12.0.2",
+  "version": "12.0.3",
   "url": "https://downloads.econtechnologies.com/CS4_Download.dmg",
   "vendor_url": "https://downloads.econtechnologies.com/CS4_Download.dmg",
   "bundleId": "com.econtechnologies.pkg.ChronoSyncApplication",
   "homepage": "https://www.econtechnologies.com/",
   "homebrew_cask": "chronosync",
   "fileName": "CS4_Download.dmg",
-  "sha": "6577d43107076b9d3ff42109673d00663bbc0ec180c6ebd8edf47e7c6a2eaebf",
+  "sha": "0ed528e67a967de397557affc24d3c132a8321e26b83139c31d8e7cec403d9c2",
   "category": "Utilities",
   "publisher": "Econ Technologies",
   "previous_version": "12.0.2"

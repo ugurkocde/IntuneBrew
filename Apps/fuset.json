@@ -8,8 +8,8 @@
   "homepage": "https://www.fuse-t.org/",
   "homebrew_cask": "fuse-t",
   "fileName": "fuse-t-macos-installer-1.2.7.pkg",
-  "type": "pkg",
   "sha": "6a29c747e61a86a405a189efc3de42812d73147135f93a1bb0624c1e7b90e654",
+  "type": "pkg",
   "category": "Utilities",
   "publisher": "The FUSE Project",
   "previous_version": "1.2.7"

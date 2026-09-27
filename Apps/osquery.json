@@ -8,8 +8,8 @@
   "homepage": "https://osquery.io/",
   "homebrew_cask": "osquery",
   "fileName": "osquery-5.23.1.pkg",
-  "type": "pkg",
   "sha": "9f40cea0358759ab2ee871c577055657e3cc2c7cbe5c1247f764245941178aa6",
+  "type": "pkg",
   "category": "Security",
   "publisher": "Facebook, Inc.",
   "previous_version": "5.23.1"

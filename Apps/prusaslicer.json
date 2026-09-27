@@ -1,0 +1,12 @@
+{
+  "name": "PrusaSlicer",
+  "description": "G-code generator for 3D printers (RepRap, Makerbot, Ultimaker etc.)",
+  "version": "2.9.6",
+  "url": "https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.9.6/PrusaSlicer-2.9.6.dmg",
+  "vendor_url": "https://github.com/prusa3d/PrusaSlicer/releases/download/version_2.9.6/PrusaSlicer-2.9.6.dmg",
+  "bundleId": null,
+  "homepage": "https://www.prusa3d.com/slic3r-prusa-edition/",
+  "homebrew_cask": "prusaslicer",
+  "fileName": "PrusaSlicer-2.9.6.dmg",
+  "sha": "94fd7b8a9f87c9631e1c71739b15b184fc5f4c0ceabd69072f1c78f229a4fe40"
+}

@@ -1,14 +1,14 @@
 {
   "name": "Riverside Studio",
   "description": "Podcast and video recorder",
-  "version": "1.29.0",
+  "version": "1.32.1",
   "url": "https://assets.riverside.fm/mac-desktop-app/current-release/RiversideStudio.dmg",
   "vendor_url": "https://assets.riverside.fm/mac-desktop-app/current-release/RiversideStudio.dmg",
   "bundleId": "fm.riverside.studio",
   "homepage": "https://riverside.fm/",
   "homebrew_cask": "riverside-studio",
   "fileName": "RiversideStudio.dmg",
-  "sha": "929ca4e957b595ebe34c143fc834b9e9bd2e8fc2437a3d9db3286dec41647cbc",
+  "sha": "ec0ec67c430ec76015d822ad1d0cd661c4f61d9f6c5cf2ab7ba0272bf2aca44e",
   "category": "Media",
   "publisher": "Riverside.fm",
   "previous_version": "1.29.0"

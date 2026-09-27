@@ -8,8 +8,8 @@
   "homepage": "https://www.quarto.org/",
   "homebrew_cask": "quarto",
   "fileName": "quarto-1.10.18-macos.pkg",
-  "type": "pkg",
   "sha": "c57119e22012a4de14de0addf6da51db455082fcc2524a6dcba9696e7577cf4d",
+  "type": "pkg",
   "category": "Developer Tools",
   "publisher": "Posit, Inc.",
   "previous_version": "1.10.18"

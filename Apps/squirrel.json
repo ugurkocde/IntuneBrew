@@ -8,8 +8,8 @@
   "homepage": "https://rime.im/",
   "homebrew_cask": "squirrel-app",
   "fileName": "Squirrel-1.1.2.pkg",
-  "type": "pkg",
   "sha": "614746013212937623d5bbab9901e9c43d1ec937aa32307d6b6092a05e308287",
+  "type": "pkg",
   "category": "Productivity",
   "publisher": "The Rime Project",
   "previous_version": "1.1.2"

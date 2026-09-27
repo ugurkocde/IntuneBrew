@@ -1,14 +1,14 @@
 {
   "name": "Sensei",
   "description": "Monitors the computer system and optimises its performance",
-  "version": "2.1.1",
-  "url": "https://cdn.cindori.com/apps/sensei/updates/2.1.1-138/Sensei.dmg",
-  "vendor_url": "https://cdn.cindori.com/apps/sensei/updates/2.1.1-138/Sensei.dmg",
+  "version": "2.1.3",
+  "url": "https://cdn.cindori.com/apps/sensei/updates/2.1.3-141/Sensei.dmg",
+  "vendor_url": "https://cdn.cindori.com/apps/sensei/updates/2.1.3-141/Sensei.dmg",
   "bundleId": "org.cindori.SenseiTool",
   "homepage": "https://cindori.com/sensei",
   "homebrew_cask": "sensei",
   "fileName": "Sensei.dmg",
-  "sha": "f8540c66cb7cad0596892a4d60fc4ff9eab4fcd87769bd0df6514c6f93fa1b6e",
+  "sha": "837b64711684aac349aaf6c242dbed32e1527f387aa74e19c68e7ea2625d6180",
   "category": "Utilities",
   "publisher": "Cindori",
   "previous_version": "2.1.1"

@@ -1,15 +1,15 @@
 {
   "name": "Applite",
   "description": "User-friendly GUI app for Homebrew",
-  "version": "1.4.0",
-  "url": "https://github.com/milanvarady/Applite/releases/download/v1.4.0/Applite.dmg",
-  "vendor_url": "https://github.com/milanvarady/Applite/releases/download/v1.4.0/Applite.dmg",
+  "version": "1.4.2",
+  "url": "https://github.com/milanvarady/Applite/releases/download/v1.4.2/Applite.dmg",
+  "vendor_url": "https://github.com/milanvarady/Applite/releases/download/v1.4.2/Applite.dmg",
   "bundleId": "dev.aerolite.Applite",
   "homepage": "https://aerolite.dev/applite",
   "homebrew_cask": "applite",
   "fileName": "Applite.dmg",
-  "sha": "5344b3c868a80eb9b4ce6734f35c18e13b1c4ed1559038ddec8e271257abdeab",
+  "sha": "94955981298a61ae2d3094c04e2089eefa70d2ceb0099ef2ce0c9ab0af4e6306",
   "category": "Developer Tools",
   "publisher": "Aerolite",
-  "previous_version": "1.3.1"
+  "previous_version": "1.4.0"
 }

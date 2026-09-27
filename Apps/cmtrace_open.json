@@ -1,0 +1,12 @@
+{
+  "name": "CMTrace Open",
+  "description": "Log viewer for ConfigMgr, Intune, and Windows diagnostic logs",
+  "version": "1.6.0",
+  "url": "https://github.com/adamgell/cmtraceopen/releases/download/v1.6.0/CMTrace.Open_1.6.0_aarch64.dmg",
+  "vendor_url": "https://github.com/adamgell/cmtraceopen/releases/download/v1.6.0/CMTrace.Open_1.6.0_aarch64.dmg",
+  "bundleId": null,
+  "homepage": "https://cmtraceopen.com/",
+  "homebrew_cask": "cmtrace-open",
+  "fileName": "CMTrace.Open_1.6.0_aarch64.dmg",
+  "sha": "e0a5b55d64bf5d0c5aa2e62fad4aced7ee95865f89683a3cbd8fe4a8bcbe1ac1"
+}

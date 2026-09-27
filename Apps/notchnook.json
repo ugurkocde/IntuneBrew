@@ -12,5 +12,7 @@
   "category": "Utilities",
   "publisher": "lo.cafe",
   "previous_version": "1.6.2",
-  "homebrew_cask": "notchnook"
+  "homebrew_cask": "notchnook",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: unreachable"
 }

@@ -14,5 +14,5 @@
   "publisher": "mjolnirapp",
   "homebrew_cask": "appgrid",
   "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
+  "deprecation_reason": "disabled in Homebrew: fails_gatekeeper_check"
 }

@@ -8,8 +8,8 @@
   "homepage": "https://www.insta360.com/",
   "homebrew_cask": "insta360-link-controller",
   "fileName": "Insta360LinkController_2.2.4(build14).pkg",
-  "type": "pkg",
   "sha": "04a247dce00ac46a14bfd9051e768dd0c5c21d20890f41d0705067ac389438a6",
+  "type": "pkg",
   "category": "Utilities",
   "publisher": "Insta360",
   "previous_version": "2.2.4"

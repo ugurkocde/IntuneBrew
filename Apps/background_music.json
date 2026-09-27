@@ -8,8 +8,8 @@
   "homepage": "https://github.com/kyleneideck/BackgroundMusic",
   "homebrew_cask": "background-music",
   "fileName": "BackgroundMusic-0.5.0.pkg",
-  "type": "pkg",
   "sha": "c7742b48ac2e9ea955fea66e5c13bb56be5f1487e0b12bad93820984bccb69ef",
+  "type": "pkg",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:35:46Z",
     "qa_result": "Installation successful and verified",

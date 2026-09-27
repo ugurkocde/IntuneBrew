@@ -1,14 +1,14 @@
 {
   "name": "Audio Hijack",
   "description": "Records audio from any application",
-  "version": "4.5.9",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/audio_hijack_4.5.9.pkg",
+  "version": "4.6.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/audio_hijack_4.6.0.pkg",
   "vendor_url": "https://cdn.rogueamoeba.com/audiohijack/download/AudioHijack.zip",
   "bundleId": "com.rogueamoeba.audiohijack",
   "homepage": "https://rogueamoeba.com/audiohijack/",
-  "fileName": "audio_hijack_4.5.9.pkg",
+  "fileName": "audio_hijack_4.6.0.pkg",
   "type": "app",
-  "sha": "e9d37f0333adb53d99458024888945aa7649bf780f12e1bfa50fe1d58a00db61",
+  "sha": "791bbcfbf4e7e0226ad7b55b69f4661fd6498de467209d3f11ebb6f0e73b1232",
   "previous_version": "4.5.9",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:34:29Z",

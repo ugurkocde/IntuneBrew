@@ -1,0 +1,12 @@
+{
+  "name": "OpenWebStart",
+  "description": "Tool to run Java Web Start-based applications after the release of Java 11",
+  "version": "1.14.0",
+  "url": "https://github.com/karakun/OpenWebStart/releases/download/v1.14.0/OpenWebStart_macos-aarch64_1_14_0.dmg",
+  "vendor_url": "https://github.com/karakun/OpenWebStart/releases/download/v1.14.0/OpenWebStart_macos-aarch64_1_14_0.dmg",
+  "bundleId": null,
+  "homepage": "https://openwebstart.com/",
+  "homebrew_cask": "openwebstart",
+  "fileName": "OpenWebStart_macos-aarch64_1_14_0.dmg",
+  "sha": "f085f2fce8099119ac15b9db92b8fd6d07ef1e13062a3b2db299429f82c2d2b8"
+}

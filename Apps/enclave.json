@@ -8,8 +8,8 @@
   "homepage": "https://enclave.io/",
   "homebrew_cask": "enclave",
   "fileName": "enclave_osx-installer-x64-stable-2026.6.3.pkg",
-  "type": "pkg",
   "sha": "2b306c42f574e60284ad03992960d8c4491f2619034de4a381bd9532029bd652",
+  "type": "pkg",
   "category": "Security",
   "publisher": "Enclave",
   "previous_version": "2026.6.3"

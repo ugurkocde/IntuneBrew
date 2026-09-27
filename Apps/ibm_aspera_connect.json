@@ -8,8 +8,8 @@
   "homepage": "https://www.ibm.com/aspera/connect/",
   "homebrew_cask": "ibm-aspera-connect",
   "fileName": "ibm-aspera-connect_4.2.13.820_macOS_arm64.pkg",
-  "type": "pkg",
   "sha": "58b42f814c95168e149491d330acb286920fcc19c581e958168305b78c8aa478",
+  "type": "pkg",
   "category": "Utilities",
   "publisher": "IBM Corporation",
   "previous_version": "4.2.13.820"

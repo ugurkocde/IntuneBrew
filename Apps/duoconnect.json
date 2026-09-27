@@ -8,8 +8,8 @@
   "homepage": "https://guide.duo.com/duoconnect",
   "homebrew_cask": "duo-connect",
   "fileName": "DuoConnect-2.0.9.pkg",
-  "type": "pkg",
   "sha": "12e8dd11775db5094ee2c9577ba3c11fb4c2fc4a3c696260ce2957a8d22e0b29",
+  "type": "pkg",
   "category": "Security",
   "publisher": "Duo Security, LLC",
   "previous_version": "2.0.9"

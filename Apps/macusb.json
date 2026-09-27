@@ -1,0 +1,12 @@
+{
+  "name": "macUSB",
+  "description": "Tool to create bootable USB installers",
+  "version": "2.5",
+  "url": "https://github.com/Kruszoneq/macUSB/releases/download/v2.5/macUSB.2.5.dmg",
+  "vendor_url": "https://github.com/Kruszoneq/macUSB/releases/download/v2.5/macUSB.2.5.dmg",
+  "bundleId": "com.kruszoneq.macUSB",
+  "homepage": "https://www.macusb.app/",
+  "homebrew_cask": "macusb",
+  "fileName": "macUSB.2.5.dmg",
+  "sha": "aec02175ed1eb56d1966349c3fae663265f8bafbd2bfe328eb46a2b0bac6731c"
+}

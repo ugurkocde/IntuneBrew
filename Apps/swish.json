@@ -1,14 +1,14 @@
 {
   "name": "Swish",
   "description": "Control windows and applications right from your trackpad",
-  "version": "1.13.2",
-  "url": "https://github.com/chrenn/swish-dl/releases/download/1.13.2/Swish.dmg",
-  "vendor_url": "https://github.com/chrenn/swish-dl/releases/download/1.13.2/Swish.dmg",
+  "version": "1.13.3",
+  "url": "https://github.com/chrenn/swish-dl/releases/download/1.13.3/Swish.dmg",
+  "vendor_url": "https://github.com/chrenn/swish-dl/releases/download/1.13.3/Swish.dmg",
   "bundleId": "co.highlyopinionated.swish",
   "homepage": "https://highlyopinionated.co/swish/",
   "homebrew_cask": "swish",
   "fileName": "Swish.dmg",
-  "sha": "1db6ddcbc950f71d869114cee5dc069485e682d1be7bce494dee2fc3cb04f333",
+  "sha": "8e968454db7617b6a293f3e0e551c214c5aa86f443bc669b3e1316114a18d52c",
   "category": "Productivity",
   "publisher": "Highly Opinionated",
   "previous_version": "1.13.2"

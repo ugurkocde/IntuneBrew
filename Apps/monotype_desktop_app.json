@@ -1,0 +1,13 @@
+{
+  "name": "Monotype Desktop App",
+  "description": "Font finder and organiser",
+  "version": "7.7.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/monotype_desktop_app_7.7.0.pkg",
+  "vendor_url": "https://monotypeapp.monotype.com/release/770/mac/arm/MTFInstallerMacOsArm.zip",
+  "bundleId": "com.monotype.monotype-fonts",
+  "homepage": "https://support.monotype.com/en/articles/7860542-monotype-desktop-app",
+  "homebrew_cask": "monotype",
+  "fileName": "monotype_desktop_app_7.7.0.pkg",
+  "type": "app",
+  "sha": "0b0268a0629a6fc020b538a831f6e0b78e18bb1dcd4dbace8c3f4603085584fe"
+}

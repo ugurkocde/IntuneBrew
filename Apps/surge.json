@@ -1,16 +1,16 @@
 {
   "name": "Surge",
   "description": "Network toolbox",
-  "version": "6.8.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/surge_6.8.0.pkg",
-  "vendor_url": "https://dl.nssurge.com/mac/v6/Surge-6.8.0-11990-f036c2c1b04dd8ce81d8aec114ccfdcf.zip",
+  "version": "6.9.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/surge_6.9.1.pkg",
+  "vendor_url": "https://dl.nssurge.com/mac/v6/Surge-6.9.1-12290-fb384eba25d82267269116bf821f4643.zip",
   "bundleId": "com.nssurge.surge-mac",
   "homepage": "https://nssurge.com/",
-  "fileName": "surge_6.8.0.pkg",
+  "fileName": "surge_6.9.1.pkg",
   "type": "app",
-  "sha": "8871601d24506a383f7ca3b74b2f0d79cac1a791811914b8e8383ddf63417db5",
+  "sha": "8f687c49ae2bf98b15441044be6c4b62d9a52cdad964ddcdeb1d6a56aa1f5139",
   "category": "Utilities",
   "publisher": "NSSurge",
-  "previous_version": "6.7.0",
+  "previous_version": "6.8.0",
   "homebrew_cask": "surge"
 }

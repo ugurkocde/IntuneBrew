@@ -14,5 +14,5 @@
   "previous_version": "3.8.9.3",
   "homebrew_cask": "displaycal",
   "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
+  "deprecation_reason": "disabled in Homebrew: fails_gatekeeper_check"
 }

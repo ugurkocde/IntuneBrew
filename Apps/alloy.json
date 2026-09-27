@@ -14,5 +14,5 @@
   "publisher": "Alloy Tools",
   "homebrew_cask": "alloy",
   "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
+  "deprecation_reason": "disabled in Homebrew: fails_gatekeeper_check"
 }

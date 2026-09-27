@@ -8,7 +8,7 @@
   "homepage": "https://www.acronis.com/products/true-image/",
   "homebrew_cask": "acronis-true-image",
   "fileName": "AcronisTrueImage_42065.dmg",
-  "sha": "c9ceaac10458342db211f91a18c776f9cba24f75a6828c72e425f0afecf632c2",
+  "sha": "0bee00e25cf777d2ff059fadae300699dc062adbc0b995819da17897104afffa",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:15:49Z",
     "qa_result": "Installation successful and verified",

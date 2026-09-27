@@ -1,14 +1,14 @@
 {
   "name": "NetSpot",
   "description": "WiFi site survey software and WiFi scanner",
-  "version": "5.1.4971",
+  "version": "6.0.6016",
   "url": "https://cdn.netspotapp.com/download/NetSpot.dmg",
   "vendor_url": "https://cdn.netspotapp.com/download/NetSpot.dmg",
   "bundleId": "com.etwok.netspotwifi",
   "homepage": "https://www.netspotapp.com/",
   "homebrew_cask": "netspot",
   "fileName": "NetSpot.dmg",
-  "sha": "50ebaa80d45a0f06a4f63106d46b0b1a1a2254692c7c1bf98d2ec9125d38ef89",
+  "sha": "45b2c98a30921d0adc6fd4a4df4c6c3dc9f60e4019a5e73e0f6cf23e0e9cb1bb",
   "category": "Utilities",
   "publisher": "NetSpot",
   "previous_version": "5.1.4971"

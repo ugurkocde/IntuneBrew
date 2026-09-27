@@ -14,5 +14,5 @@
   "previous_version": "4.2.8",
   "homebrew_cask": "cellprofiler",
   "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
+  "deprecation_reason": "disabled in Homebrew: fails_gatekeeper_check"
 }

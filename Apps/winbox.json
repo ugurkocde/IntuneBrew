@@ -1,14 +1,14 @@
 {
   "name": "WinBox",
   "description": "Administration tool for MikroTik RouterOS",
-  "version": "4.3",
-  "url": "https://download.mikrotik.com/routeros/winbox/4.3/WinBox.dmg",
-  "vendor_url": "https://download.mikrotik.com/routeros/winbox/4.3/WinBox.dmg",
+  "version": "4.4",
+  "url": "https://download.mikrotik.com/routeros/winbox/4.4/WinBox.dmg",
+  "vendor_url": "https://download.mikrotik.com/routeros/winbox/4.4/WinBox.dmg",
   "bundleId": "com.mikrotik.winbox",
   "homepage": "https://mikrotik.com/",
   "homebrew_cask": "winbox",
   "fileName": "WinBox.dmg",
-  "sha": "5681d03e32133858b3dc541c78c1bae38cb3355b5fd98326ac725e0bd8bab570",
+  "sha": "bff070fb410191d551c9988d47796ff7d245d276a981b14a90ca6f8698be4a18",
   "category": "Utilities",
   "publisher": "MikroTik",
   "previous_version": "4.3"

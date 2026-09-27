@@ -13,5 +13,5 @@
   "previous_version": "4.12",
   "homebrew_cask": "djview",
   "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
+  "deprecation_reason": "disabled in Homebrew: fails_gatekeeper_check"
 }

@@ -9,7 +9,7 @@
   "fileName": "panic_nova_14.1.pkg",
   "type": "app",
   "sha": "449cb9c716c198fda352dd89bef479c6cfb55d621ed13606411580b03eea6bc8",
-  "previous_version": "14",
+  "previous_version": "14.1",
   "category": "Developer Tools",
   "publisher": "Panic Inc.",
   "homebrew_cask": "nova"

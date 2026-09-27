@@ -1,14 +1,14 @@
 {
   "name": "CapCut",
   "description": "Video editing and image design platform",
-  "version": "9.2.0.4444",
-  "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_2_0_4444_capcutpc_0_creatortool.dmg",
-  "vendor_url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_2_0_4444_capcutpc_0_creatortool.dmg",
+  "version": "9.5.0.4590",
+  "url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_5_0_4590_capcutpc_0_creatortool.dmg",
+  "vendor_url": "https://sf16-web-tos-buz.capcutstatic.com/obj/capcut-web-buz-sg/packages/CapCut_9_5_0_4590_capcutpc_0_creatortool.dmg",
   "bundleId": "com.lemon.lvoverseas",
   "homepage": "https://www.capcut.com/",
   "homebrew_cask": "capcut",
-  "fileName": "CapCut_9_2_0_4444_capcutpc_0_creatortool.dmg",
-  "sha": "5abd96d2d022088e655958c8c526b91632783bb887e270482caeba222f50d14e",
+  "fileName": "CapCut_9_5_0_4590_capcutpc_0_creatortool.dmg",
+  "sha": "93306fb16c46298c2c89e34017b5e1b5b6f4b4e330d676f01737a4fe5927e71f",
   "changelog": "https://www.capcut.com/resource/download-capcut-for-mac",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:25:40Z",
@@ -22,5 +22,5 @@
   },
   "category": "Media",
   "publisher": "ByteDance Pte. Ltd.",
-  "previous_version": "9.1.0.4369"
+  "previous_version": "9.2.0.4444"
 }

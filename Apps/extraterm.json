@@ -13,5 +13,5 @@
   "previous_version": "0.81.4",
   "homebrew_cask": "extraterm",
   "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: fails_gatekeeper_check"
+  "deprecation_reason": "disabled in Homebrew: fails_gatekeeper_check"
 }

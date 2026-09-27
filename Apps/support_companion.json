@@ -8,8 +8,8 @@
   "homepage": "https://github.com/macadmins/SupportCompanion",
   "homebrew_cask": "supportcompanion",
   "fileName": "SupportCompanion-2.3.1.81039.pkg",
-  "type": "pkg",
   "sha": "596e5adad68b823bfe740bdeeb72be1e213e3207c40108c4b8bda49c93301a69",
+  "type": "pkg",
   "category": "Utilities",
   "publisher": "macadmins",
   "previous_version": "2.3.1.81039"
