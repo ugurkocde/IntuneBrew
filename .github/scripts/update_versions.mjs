@@ -79,14 +79,18 @@ async function main() {
   }
   const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
   await synchronize(supabase, apps, async updates => {
-    const response = await fetch(process.env.NOTIFICATIONS_API_URL || 'https://intunebrew.com/api/notifications/send', {
-      method:'POST', headers:{'Content-Type':'application/json', Authorization:`Bearer ${process.env.NOTIFICATIONS_API_KEY}`},
+    const response = await fetch(process.env.NOTIFICATIONS_API_URL || 'https://www.intunebrew.com/api/notifications/send', {
+      method:'POST', redirect:'error', headers:{'Content-Type':'application/json', Authorization:`Bearer ${process.env.NOTIFICATIONS_API_KEY}`},
       body:JSON.stringify({updates}), signal:AbortSignal.timeout(330_000)
     });
     const data = await response.json();
     if (!response.ok || data.success === false || data.results?.some(result => result.success === false) ||
         (data.webhookResults && data.webhookResults.sent < data.webhookResults.total)) {
-      throw new Error(`Notification delivery failed (${response.status}); pending updates retained for retry`);
+      const reasons = [...new Set((data.results || []).filter(result => result.success === false)
+        .map(result => String(result.error || 'recipient delivery failed')
+          .replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, '[recipient]')
+          .replace(/https?:\/\/\S+/g, '[URL]').slice(0, 200)))];
+      throw new Error(`Notification delivery failed (${response.status}); pending updates retained for retry${reasons.length ? ': ' + reasons.join('; ') : ''}`);
     }
   });
 }

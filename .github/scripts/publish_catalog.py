@@ -120,7 +120,8 @@ def publish(scope="all"):
             section += f"| {update['appName']} | {update['previousVersion']} | {update['newVersion']} |\n"
         if failed:
             section += f"\n{len(failed)} app updates could not be published. See [catalog sync status](catalog-sync.json).\n"
-        readme.write_text(re.sub(r"## 🔄 Latest Updates.*?(?=## ✨ Features)", section + "\n", readme.read_text(), flags=re.S))
+        readme_text = re.sub(r"Apps_Available-\d+-", f"Apps_Available-{len(apps)}-", readme.read_text())
+        readme.write_text(re.sub(r"## 🔄 Latest Updates.*?(?=## ✨ Features)", section + "\n", readme_text, flags=re.S))
     summary = f"Catalog published: {len(apps)} apps, {len(updates)} new versions, {len(failed)} retained failures.\n"
     summary += "\n".join(f"- {item['app']}: {item['stage']} (previous entry retained or new entry omitted)" for item in failed)
     Path("catalog-sync-report.md").write_text(summary + "\n")

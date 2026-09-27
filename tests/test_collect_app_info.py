@@ -644,7 +644,12 @@ class CatalogConsistencyTests(unittest.TestCase):
         )
         self.assertEqual(codex["homebrew_cask"], "codex-app")
 
-    def test_supported_catalog_matches_non_deprecated_apps(self):
+    def test_supported_catalog_matches_publishable_apps(self):
+        publisher_spec = importlib.util.spec_from_file_location(
+            "publish_catalog", ROOT / ".github/scripts/publish_catalog.py"
+        )
+        publisher = importlib.util.module_from_spec(publisher_spec)
+        publisher_spec.loader.exec_module(publisher)
         apps = {
             path.stem: json.loads(path.read_text(encoding="utf-8"))
             for path in (ROOT / "Apps").glob("*.json")
@@ -655,7 +660,7 @@ class CatalogConsistencyTests(unittest.TestCase):
         expected = {
             name
             for name, app_data in apps.items()
-            if not app_data.get("deprecated")
+            if not app_data.get("deprecated") and publisher.valid_package(app_data)
         }
 
         self.assertEqual(set(supported), expected)
