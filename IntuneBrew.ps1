@@ -510,7 +510,10 @@ if (-not $authenticated) {
 
 # Check and display the current permissions
 $context = Get-MgContext
-if ($ConfigFile -and $context.TenantId -ne $configFromFile.tenantId) {
+$expectedTenant = [guid]::Empty
+$actualTenant = [guid]::Empty
+if ($ConfigFile -and (-not [guid]::TryParse([string]$configFromFile.tenantId, [ref]$expectedTenant) -or
+    -not [guid]::TryParse([string]$context.TenantId, [ref]$actualTenant) -or $expectedTenant -ne $actualTenant)) {
     throw 'The authenticated tenant does not match the requested configuration.'
 }
 $currentPermissions = $context.Scopes
