@@ -407,6 +407,17 @@ class PrefetchTests(unittest.TestCase):
         collect_app_info.cask_cache.clear()
         del collect_app_info.filename_collisions[:]
 
+    def test_rstudio_preserves_embedded_build_version(self):
+        url = "https://formulae.brew.sh/api/cask/rstudio.json"
+        collect_app_info.cask_cache[url] = {
+            "token": "rstudio", "name": ["RStudio"], "desc": "R IDE",
+            "version": "2026.09.0,174", "url": "https://example.test/RStudio.dmg",
+            "homepage": "https://posit.co/", "sha256": "a" * 64,
+            "artifacts": [{"uninstall": [{"quit": "com.rstudio.desktop"}]}],
+        }
+        result = collect_app_info.get_homebrew_app_info(url)
+        self.assertEqual(result["version"], "2026.09.0+174")
+
     def test_direct_download_uses_homebrew_checksum(self):
         url = "https://formulae.brew.sh/api/cask/tailscale.json"
         collect_app_info.cask_cache[url] = dict(TAILSCALE_PAYLOAD, sha256="A" * 64)

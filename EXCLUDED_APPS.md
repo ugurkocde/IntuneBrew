@@ -9,6 +9,10 @@ The following apps are intentionally excluded from collection, packaging, and th
 | RawTherapee | Disk image requires explicit license acceptance. |
 | Autodesk Fusion 360 | Public download is a bootstrap app, not the required deployable installer. |
 | Send to Kindle | Vendor download returns HTTP 403. |
+| Avast Secure Browser | Vendor installer returns HTTP 404. |
+| Contexts | Vendor installer fails TLS validation. |
+| jamovi | Vendor installer redirects to an HTML error page. |
+| Postbox | Vendor installer host cannot be reached. |
 
 Re-enabling an app requires resolving its blocker, restoring its collector URL, clearing its exclusion flags, and validating its package before publication. No license agreement is accepted automatically.
 
