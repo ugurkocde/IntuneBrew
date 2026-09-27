@@ -116,3 +116,22 @@ jobs:
         run: bash tests/test_nested_dmg.sh
       - name: Test CLI installer layouts
         run: bash tests/test_cli_package.sh
+
+  powershell-tests:
+    name: PowerShell regression tests (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [ubuntu-latest, windows-latest, macos-latest]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Run isolated PowerShell regression tests
+        shell: pwsh
+        run: |
+          $ErrorActionPreference = 'Stop'
+          Get-ChildItem tests/*.Tests.ps1 | ForEach-Object {
+            & pwsh -NoProfile -File $_.FullName
+            if ($LASTEXITCODE -ne 0) { throw "Test failed: $($_.Name)" }
+          }

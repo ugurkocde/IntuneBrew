@@ -90,6 +90,11 @@ Version 0.3.7: Fix Parse Errors
  Upload multiple apps by their numbers. Accepts comma-separated numbers and ranges.
  Example: IntuneBrew -BulkUpload "1,3,5-10"
 
+.PARAMETER IgnoreVersionDetection
+ Set Intune's Ignore app version detection option for created or updated PKG/DMG apps.
+ Unlike -IgnoreAppVersion, this does not suppress catalog update comparisons.
+ Omit the parameter to preserve the detection setting on existing apps. Use -IgnoreVersionDetection:$false to turn it off.
+
 .PARAMETER IgnoreAppVersion
  Ignores app version checking during upload/update. Useful for apps with auto-update.
  Example: IntuneBrew -Upload office -IgnoreAppVersion
@@ -152,6 +157,9 @@ param(
     
     [Parameter(Mandatory = $false)]
     [switch]$IgnoreAppVersion,
+
+    [Parameter(Mandatory = $false)]
+    [switch]$IgnoreVersionDetection,
     
     [Parameter(Mandatory = $false)]
     [string]$LocalJsonDirectory,
@@ -236,6 +244,14 @@ $requiredPermissions = @(
     "DeviceManagementApps.ReadWrite.All", # Read and write access to apps in Intune
     "Group.Read.All" # Read group names for assignment
 )
+
+# Only an explicit parameter changes an existing Intune detection setting.
+function Set-IntuneVersionDetection {
+    param([hashtable]$Payload, [System.Collections.IDictionary]$Options)
+    if ($Options.ContainsKey('IgnoreVersionDetection')) {
+        $Payload['ignoreVersionDetection'] = [bool]$Options['IgnoreVersionDetection']
+    }
+}
 
 # Helper function to format the application name with prefix and suffix.
 # Defined before any executing code so the -LocalFile flow can use it (PR #127).
@@ -1146,6 +1162,8 @@ if ($LocalFile) {
         $app["roleScopeTagIds"] = @($ScopeTagIds)
     }
     
+    Set-IntuneVersionDetection -Payload $app -Options $PSBoundParameters
+
     $createAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps"
     $newApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($app | ConvertTo-Json -Depth 10)
     Write-Host "✅ App created successfully (ID: $($newApp.id))" -ForegroundColor Green
@@ -1217,6 +1235,7 @@ if ($LocalFile) {
         "@odata.type"           = "#microsoft.graph.$appType"
         committedContentVersion = $contentVersion.id
     }
+    Set-IntuneVersionDetection -Payload $updateData -Options $PSBoundParameters
     Invoke-MgGraphRequest -Method PATCH -Uri $updateAppUri -Body ($updateData | ConvertTo-Json)
     
     # Add logo if one was selected
@@ -2433,6 +2452,8 @@ foreach ($app in $appsToUpload) {
             $newAppPayload["roleScopeTagIds"] = @($ScopeTagIds)
         }
 
+        Set-IntuneVersionDetection -Payload $newAppPayload -Options $PSBoundParameters
+
         $createAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps"
         $newApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($newAppPayload | ConvertTo-Json -Depth 10)
         Write-Host "✅ App created successfully (ID: $($newApp.id))" -ForegroundColor Green
@@ -2588,6 +2609,7 @@ foreach ($app in $appsToUpload) {
         Write-Host "⚠️ Warning: Pre-install and post-install scripts are only supported for PKG apps. Scripts will be ignored for $appDisplayName." -ForegroundColor Yellow
     }
 
+    Set-IntuneVersionDetection -Payload $updateData -Options $PSBoundParameters
     Invoke-MgGraphRequest -Method PATCH -Uri $updateAppUri -Body ($updateData | ConvertTo-Json)
 
     # Apply assignments if the flag is set and assignments were successfully fetched
