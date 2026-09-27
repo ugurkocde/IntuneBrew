@@ -481,7 +481,6 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/sipgate.json",
     "https://formulae.brew.sh/api/cask/support.json",
     "https://formulae.brew.sh/api/cask/thaw.json",
-    "https://formulae.brew.sh/api/cask/codex.json",
     "https://formulae.brew.sh/api/cask/copilot-cli.json",
     "https://formulae.brew.sh/api/cask/ddpm.json",
     "https://formulae.brew.sh/api/cask/monotype.json",
@@ -1565,6 +1564,7 @@ def find_app_file(apps_folder, display_name=None, cask_token=None):
 # Apps/*.json and would take turns overwriting it on every run. Collisions are
 # collected here instead of being written, and fail the run at the end of main().
 filename_collisions = []
+collection_failures = []
 
 
 def claim_app_file(file_path, cask_token):
@@ -1971,6 +1971,8 @@ def update_readme_with_latest_changes(apps_info):
     print("Could not find the Features section in README.md")
 
 def main():
+    filename_collisions.clear()
+    collection_failures.clear()
     apps_folder = "Apps"
     os.makedirs(apps_folder, exist_ok=True)
     print(f"\n📁 Apps folder absolute path: {os.path.abspath(apps_folder)}")
@@ -2048,7 +2050,7 @@ def main():
                             existing_data["sha"] = file_hash
                             print(f"✅ New SHA256 hash calculated: {file_hash}")
                         else:
-                            print(f"⚠️ Could not calculate SHA256 hash for {display_name}")
+                            raise RuntimeError(f"Could not verify download hash for {display_name}")
                     
                     # Update app_info with all existing data
                     app_info = existing_data
@@ -2062,6 +2064,7 @@ def main():
         except CaskUnavailableError as e:
             mark_app_deprecated(apps_folder, e.display_name, e.reason, e.cask_token)
         except Exception as e:
+            collection_failures.append({"cask": get_cask_token(url), "stage": "collection"})
             print(f"Error processing special app {url}: {str(e)}")
             print(f"Full error details: ", e)
 
@@ -2101,7 +2104,7 @@ def main():
                     app_info["sha"] = file_hash
                     print(f"✅ SHA256 hash calculated: {file_hash}")
                 else:
-                    print(f"⚠️ Could not calculate SHA256 hash for {display_name}")
+                    raise RuntimeError(f"Could not verify download hash for {display_name}")
 
             # For existing files, preserve existing data and update necessary fields
             if os.path.exists(file_path):
@@ -2145,6 +2148,7 @@ def main():
         except CaskUnavailableError as e:
             mark_app_deprecated(apps_folder, e.display_name, e.reason, e.cask_token)
         except Exception as e:
+            collection_failures.append({"cask": get_cask_token(url), "stage": "collection"})
             print(f"Error processing {url}: {str(e)}")
 
     # Process pkg_in_pkg apps
@@ -2199,6 +2203,7 @@ def main():
         except CaskUnavailableError as e:
             mark_app_deprecated(apps_folder, e.display_name, e.reason, e.cask_token)
         except Exception as e:
+            collection_failures.append({"cask": get_cask_token(url), "stage": "collection"})
             print(f"Error processing PKG in PKG app {url}: {str(e)}")
 
     # Process direct pkg apps
@@ -2236,7 +2241,7 @@ def main():
                     app_info["sha"] = file_hash
                     print(f"✅ SHA256 hash calculated: {file_hash}")
                 else:
-                    print(f"⚠️ Could not calculate SHA256 hash for {display_name}")
+                    raise RuntimeError(f"Could not verify download hash for {display_name}")
 
             # For existing files, preserve existing data and update necessary fields
             if os.path.exists(file_path):
@@ -2281,6 +2286,7 @@ def main():
         except CaskUnavailableError as e:
             mark_app_deprecated(apps_folder, e.display_name, e.reason, e.cask_token)
         except Exception as e:
+            collection_failures.append({"cask": get_cask_token(url), "stage": "collection"})
             print(f"Error processing direct PKG app {url}: {str(e)}")
 
     # Process pkg_in_dmg apps
@@ -2334,6 +2340,7 @@ def main():
         except CaskUnavailableError as e:
             mark_app_deprecated(apps_folder, e.display_name, e.reason, e.cask_token)
         except Exception as e:
+            collection_failures.append({"cask": get_cask_token(url), "stage": "collection"})
             print(f"Error processing PKG in DMG app {url}: {str(e)}")
 
     # Run custom scrapers and update apps_info accordingly
@@ -2347,6 +2354,7 @@ def main():
                     app_data = json.load(f)
                     supported_apps.append(app_data['name'])
         except Exception as e:
+            collection_failures.append({"file": os.path.basename(scraper).replace(".sh", ".json"), "stage": "scraper"})
             print(f"Error running scraper {scraper}: {str(e)}")
 
     # After custom scrapers run, calculate hashes for direct downloads
@@ -2379,7 +2387,14 @@ def main():
 
     # A collision is catalog corruption in the making and needs a human decision,
     # so the run must go red before anything is committed.
-    if report_filename_collisions():
+    collisions = report_filename_collisions()
+    report_path = os.environ.get("CATALOG_COLLECTION_REPORT")
+    if report_path:
+        Path(report_path).write_text(json.dumps({
+            "failures": collection_failures,
+            "collisions": filename_collisions,
+        }, indent=2) + "\n")
+    if collisions and os.environ.get("CATALOG_ALLOW_PARTIAL") != "1":
         sys.exit(1)
 
 if __name__ == "__main__":

@@ -12,7 +12,7 @@ on:
 # Cancel old builds when a new one starts (new build includes all apps)
 concurrency:
   group: build-app-packages
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
@@ -95,6 +95,9 @@ jobs:
           echo "tokens=$tokens" >> "$GITHUB_OUTPUT"
 
       - name: Collect app information
+        env:
+          CATALOG_ALLOW_PARTIAL: "1"
+          CATALOG_COLLECTION_REPORT: collection-report.json
         run: python .github/scripts/collect_app_info.py
 
       - name: Find apps needing packaging
@@ -1166,6 +1169,7 @@ jobs:
           # Persist the failure list so a later step can maintain the
           # packaging-failures tracking issue. Absolute path: the loop above
           # cds into $HOME/Desktop for downloads and does not always return.
+          printf '%s\n' "${FAILED_APPS[@]}" > "$WORKSPACE_DIR/packaging-failed-apps.txt"
           echo "failed_count=${#FAILED_APPS[@]}" >> "$GITHUB_OUTPUT"
           {
             echo "Automated packaging report from $(date -u +%Y-%m-%d)."
@@ -1222,11 +1226,27 @@ jobs:
 
           echo "Reverted $reverted out-of-scope app files"
 
+      - name: Validate and publish the catalog snapshot
+        env:
+          BUILD_SCOPE: ${{ steps.scope.outputs.scope }}
+        run: python .github/scripts/publish_catalog.py
+
+      - name: Upload collection and publication diagnostics
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: catalog-sync-${{ github.run_id }}
+          path: |
+            collection-report.json
+            packaging-failed-apps.txt
+            catalog-sync-report.md
+          if-no-files-found: ignore
+
       - name: Commit and push changes
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add Apps/*.json supported_apps.json README.md
+          git add Apps/*.json supported_apps.json README.md catalog-sync.json latest-updates.json
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
