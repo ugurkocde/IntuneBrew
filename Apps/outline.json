@@ -8,5 +8,7 @@
   "homepage": "https://getoutline.com/",
   "homebrew_cask": "getoutline",
   "fileName": "Outline 1.10.0 - Build 260918efgmywp4a-arm64.dmg",
-  "sha": "76e8c55b6edac1b0f316d71a62203a8388de1b9adafce7bbc6871109757e12d6"
+  "sha": "76e8c55b6edac1b0f316d71a62203a8388de1b9adafce7bbc6871109757e12d6",
+  "category": "Productivity",
+  "publisher": "Outline"
 }

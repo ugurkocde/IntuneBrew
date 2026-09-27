@@ -8,5 +8,7 @@
   "homepage": "https://opencode.ai/",
   "homebrew_cask": "opencode-desktop",
   "fileName": "opencode-desktop-mac-arm64.dmg",
-  "sha": "ebee79c17b6c5f8deb1bda9fc3fa06dfd7c1202f64567a17d023a739e86ce278"
+  "sha": "ebee79c17b6c5f8deb1bda9fc3fa06dfd7c1202f64567a17d023a739e86ce278",
+  "category": "Developer Tools",
+  "publisher": "OpenCode"
 }
