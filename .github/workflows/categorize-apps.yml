@@ -8,6 +8,7 @@ on:
   push:
     paths:
       - 'Apps/**/*.json'
+      - '.github/workflows/categorize-apps.yml'
   # Allow manual triggering
   workflow_dispatch:
     inputs:
@@ -25,14 +26,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: '22'
 
       - name: Install dependencies
-        run: npm install openai
+        run: npm ci
 
       - name: Categorize apps
         id: categorize
@@ -59,10 +62,11 @@ jobs:
           rm output.log
 
       - name: Commit changes
+        if: github.ref == 'refs/heads/main'
         run: |
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
-          git add -A
+          git add Apps/*.json
 
           if git diff --staged --quiet; then
             echo "No changes to commit"
