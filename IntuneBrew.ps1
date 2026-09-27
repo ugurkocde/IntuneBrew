@@ -171,6 +171,8 @@ param(
     [switch]$NonInteractive
 )
 
+if ($NonInteractive) { $ErrorActionPreference = "Stop" }
+
 Write-Host "
 ___       _                    ____                    
 |_ _|_ __ | |_ _   _ _ __   ___| __ ) _ __ _____      __
@@ -315,7 +317,7 @@ function Connect-WithCertificate {
     }
     
     try {
-        Connect-MgGraph -ClientId $appId -TenantId $config.tenantId -CertificateThumbprint $config.certificateThumbprint -NoWelcome -ErrorAction Stop
+        Connect-MgGraph -ClientId $appId -TenantId $config.tenantId -CertificateThumbprint $config.certificateThumbprint -NoWelcome -ContextScope Process -ErrorAction Stop
         Write-Host "Successfully connected to Microsoft Graph using certificate-based authentication." -ForegroundColor Green
         return $true
     }
@@ -349,7 +351,7 @@ function Connect-WithClientSecret {
     try {
         $SecureClientSecret = ConvertTo-SecureString -String $config.clientSecret -AsPlainText -Force
         $ClientSecretCredential = New-Object -TypeName System.Management.Automation.PSCredential -ArgumentList $appId, $SecureClientSecret
-        Connect-MgGraph -TenantId $config.tenantId -ClientSecretCredential $ClientSecretCredential -NoWelcome -ErrorAction Stop
+        Connect-MgGraph -TenantId $config.tenantId -ClientSecretCredential $ClientSecretCredential -NoWelcome -ContextScope Process -ErrorAction Stop
         Write-Host "Successfully connected to Microsoft Graph using client secret authentication." -ForegroundColor Green
         return $true
     }
@@ -363,7 +365,7 @@ function Connect-WithClientSecret {
 function Connect-Interactive {
     try {
         $permissionsList = $requiredPermissions -join ','
-        Connect-MgGraph -Scopes $permissionsList -NoWelcome -ErrorAction Stop
+        Connect-MgGraph -Scopes $permissionsList -NoWelcome -ContextScope Process -ErrorAction Stop
         Write-Host "Successfully connected to Microsoft Graph using interactive sign-in." -ForegroundColor Green
         return $true
     }
@@ -418,7 +420,7 @@ $authChoice = $null
 # Attempt non-interactive authentication when a config file with authMethod is supplied
 if ($ConfigFile) {
     if (-not (Test-AuthConfig $ConfigFile)) {
-        exit
+        if ($NonInteractive) { exit 1 }; exit
     }
 
     try {
@@ -426,7 +428,7 @@ if ($ConfigFile) {
     }
     catch {
         Write-Host "Error: Unable to read or parse configuration file at '$ConfigFile'." -ForegroundColor Red
-        exit
+        if ($NonInteractive) { exit 1 }; exit
     }
 
     # Infer the auth method from the config file contents when authMethod is not set,
@@ -451,11 +453,13 @@ if ($ConfigFile) {
             }
             default {
                 Write-Host "Error: Unsupported authMethod '$effectiveAuthMethod'. Supported values are 'Certificate' and 'ClientSecret'." -ForegroundColor Red
-                exit
+                if ($NonInteractive) { exit 1 }; exit
             }
         }
     }
 }
+
+if (-not $authChoice -and $NonInteractive) { throw "NonInteractive authentication requires a valid -ConfigFile." }
 
 if (-not $authChoice) {
     # Display authentication options
@@ -478,7 +482,7 @@ if (-not $authChoice) {
                     $authenticated = Connect-WithCertificate $configPath
                 } else {
                     Write-Host "Failed to authenticate. Exiting script." -ForegroundColor Red
-                    exit
+                    if ($NonInteractive) { exit 1 }; exit
                 }
             }
         }
@@ -494,18 +498,21 @@ if (-not $authChoice) {
         }
         default {
             Write-Host "Invalid choice. Please select 1, 2, or 3." -ForegroundColor Red
-            exit
+            if ($NonInteractive) { exit 1 }; exit
         }
     }
 }
 
 if (-not $authenticated) {
     Write-Host "Authentication failed. Exiting script." -ForegroundColor Red
-    exit
+    if ($NonInteractive) { exit 1 }; exit
 }
 
 # Check and display the current permissions
 $context = Get-MgContext
+if ($ConfigFile -and $context.TenantId -ne $configFromFile.tenantId) {
+    throw 'The authenticated tenant does not match the requested configuration.'
+}
 $currentPermissions = $context.Scopes
 
 # Validate required permissions
@@ -520,7 +527,7 @@ if ($missingPermissions.Count -gt 0) {
         $continueWithoutPermissions = Read-Host "Do you want to continue anyway? Some functionality may be limited (y/n)"
         if ($continueWithoutPermissions -ne "y") {
             Write-Host "Exiting script. Please sign in with an account that has the required permissions." -ForegroundColor Yellow
-            exit
+            if ($NonInteractive) { exit 1 }; exit
         }
         Write-Host "Continuing with limited permissions. Some features may not work correctly." -ForegroundColor Yellow
     }
@@ -529,7 +536,7 @@ if ($missingPermissions.Count -gt 0) {
         Write-Host "WARNING: The following permissions are missing:" -ForegroundColor Red
         $missingPermissions | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
         Write-Host "Please ensure these permissions are granted to the app registration for full functionality." -ForegroundColor Yellow
-        exit
+        if ($NonInteractive) { exit 1 }; exit
     }
 }
 else {
@@ -1075,14 +1082,14 @@ if ($LocalFile) {
     
     if (-not $localFilePath) {
         Write-Host "No file selected. Exiting..." -ForegroundColor Yellow
-        exit
+        if ($NonInteractive) { exit 1 }; exit
     }
 
     # Validate file extension
     $fileExtension = [System.IO.Path]::GetExtension($localFilePath).ToLower()
     if ($fileExtension -notin @('.pkg', '.dmg')) {
         Write-Host "Invalid file type. Only .pkg and .dmg files are supported." -ForegroundColor Red
-        exit
+        if ($NonInteractive) { exit 1 }; exit
     }
 
     # Get app details from user
@@ -1426,6 +1433,7 @@ try {
             }
             else {
                 Write-Host "Warning: '$appName' is not a supported application" -ForegroundColor Yellow
+                if ($NonInteractive) { throw "Unsupported app: $appName" }
             }
         }
     }
@@ -1480,12 +1488,12 @@ try {
 
     if ($githubJsonUrls.Count -eq 0) {
         Write-Host "No valid applications selected. Exiting..." -ForegroundColor Red
-        exit
+        if ($NonInteractive) { exit 1 }; exit
     }
 }
 catch {
     Write-Host "Error fetching supported apps list: $_" -ForegroundColor Red
-    exit
+    if ($NonInteractive) { exit 1 }; exit
 }
 
 # Core Functions
@@ -1809,6 +1817,20 @@ function Format-TimeSpanForSummary {
     }
 }
 
+# Graph may return an empty page with a nextLink; always follow it.
+function Get-IntuneAppCollection {
+    param([string]$Filter)
+    $uri = 'https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?$filter=' + [Uri]::EscapeDataString($Filter)
+    $items = @()
+    while ($uri) {
+        if (-not $uri.StartsWith('https://graph.microsoft.com/beta/')) { throw 'Unexpected Graph paging URL.' }
+        $page = Invoke-MgGraphRequest -Uri $uri -Method Get
+        $items += @($page.value)
+        $uri = $page.'@odata.nextLink'
+    }
+    return @{ value = $items }
+}
+
 # Retrieves and compares app versions between Intune and GitHub
 function Get-IntuneApp {
     $intuneApps = @()
@@ -1824,6 +1846,7 @@ function Get-IntuneApp {
         
         # Check if the URL is valid
         if (-not (Test-ValidUrl $jsonUrl)) {
+            if ($NonInteractive) { throw "App metadata is unavailable." }
             continue
         }
 
@@ -1831,6 +1854,7 @@ function Get-IntuneApp {
         $appInfo = Get-GitHubAppInfo $jsonUrl
         if ($null -eq $appInfo) {
             Write-Host "[$currentApp/$totalApps] Failed to fetch app info for $jsonUrl. Skipping." -ForegroundColor Yellow
+            if ($NonInteractive) { throw "App metadata is unavailable." }
             continue
         }
 
@@ -1839,10 +1863,11 @@ function Get-IntuneApp {
         # We'll modify the output format but keep the check logic the same
         
         # Fetch Intune app info
-        $intuneQueryUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp')) and displayName eq '$formattedAppName'"
+        $escapedAppName = $formattedAppName.Replace("'", "''")
+        $intuneFilter = "(isof('microsoft.graph.macOSDmgApp') or isof('microsoft.graph.macOSPkgApp')) and displayName eq '$escapedAppName'"
 
         try {
-            $response = Invoke-MgGraphRequest -Uri $intuneQueryUri -Method Get
+            $response = Get-IntuneAppCollection -Filter $intuneFilter
             if ($response.value.Count -gt 0) {
                 # Find the latest version among potentially multiple entries
                 $latestAppEntry = $response.value | Sort-Object -Property @{Expression = { Convert-VersionToSortable $_.primaryBundleVersion } } -Descending | Select-Object -First 1
@@ -1914,8 +1939,8 @@ function Get-IntuneApp {
             else {
                 # Before treating the app as missing, check whether it is managed through
                 # Apple VPP, so a duplicate PKG/DMG entry is not offered next to it (Issue #204)
-                $vppQueryUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps?`$filter=(isof('microsoft.graph.macOsVppApp')) and displayName eq '$formattedAppName'"
-                $vppResponse = Invoke-MgGraphRequest -Uri $vppQueryUri -Method Get
+                $vppFilter = "(isof('microsoft.graph.macOsVppApp')) and displayName eq '$escapedAppName'"
+                $vppResponse = Get-IntuneAppCollection -Filter $vppFilter
 
                 if ($vppResponse.value.Count -gt 0) {
                     Write-Host "[$currentApp/$totalApps] 🍎 $formattedAppName" -NoNewline -ForegroundColor Cyan
@@ -1944,6 +1969,7 @@ function Get-IntuneApp {
         }
         catch {
             Write-Host "`nError fetching Intune app info for '$formattedAppName': $_" -ForegroundColor Red
+            if ($NonInteractive) { throw }
         }
     }
 
@@ -2333,12 +2359,14 @@ foreach ($app in $appsToUpload) {
 
     if (-not $jsonUrl) {
         Write-Host "`n❌ Could not find JSON URL for $($app.Name). Skipping." -ForegroundColor Red
+        if ($NonInteractive) { throw "App metadata is unavailable." }
         continue
     }
 
     $appInfo = Get-GitHubAppInfo -jsonUrl $jsonUrl
     if ($null -eq $appInfo) {
         Write-Host "`n❌ Failed to fetch app info for $jsonUrl. Skipping." -ForegroundColor Red
+        if ($NonInteractive) { throw "App metadata is unavailable." }
         continue
     }
 
@@ -2408,6 +2436,7 @@ foreach ($app in $appsToUpload) {
     }
     else {
         Write-Host "❌ Unsupported file type: $fileExtension. Only .dmg and .pkg files are supported." -ForegroundColor Red
+        if ($NonInteractive) { throw "Unsupported installer type." }
         continue
     }
 
@@ -2539,6 +2568,7 @@ foreach ($app in $appsToUpload) {
                 Write-Host "Warning: Could not remove incomplete app entry (ID: $intuneAppId). Please delete it manually in the Intune portal. Error: $_" -ForegroundColor Yellow
             }
         }
+        if ($NonInteractive) { throw "Application upload failed." }
         continue
     }
 
