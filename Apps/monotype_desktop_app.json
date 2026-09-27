@@ -9,5 +9,7 @@
   "homebrew_cask": "monotype",
   "fileName": "monotype_desktop_app_7.7.0.pkg",
   "type": "app",
-  "sha": "0b0268a0629a6fc020b538a831f6e0b78e18bb1dcd4dbace8c3f4603085584fe"
+  "sha": "0b0268a0629a6fc020b538a831f6e0b78e18bb1dcd4dbace8c3f4603085584fe",
+  "category": "Design",
+  "publisher": "Monotype"
 }

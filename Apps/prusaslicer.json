@@ -8,5 +8,7 @@
   "homepage": "https://www.prusa3d.com/slic3r-prusa-edition/",
   "homebrew_cask": "prusaslicer",
   "fileName": "PrusaSlicer-2.9.6.dmg",
-  "sha": "94fd7b8a9f87c9631e1c71739b15b184fc5f4c0ceabd69072f1c78f229a4fe40"
+  "sha": "94fd7b8a9f87c9631e1c71739b15b184fc5f4c0ceabd69072f1c78f229a4fe40",
+  "category": "Utilities",
+  "publisher": "Prusa Research"
 }
