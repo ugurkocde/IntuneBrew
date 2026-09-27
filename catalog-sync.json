@@ -1,10 +1,19 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-09-27T15:08:39.028253Z",
-  "lastFullSyncAt": "2026-09-27T15:08:39.028253Z",
+  "lastPublishedAt": "2026-09-27T16:06:40.719806Z",
+  "lastFullSyncAt": "2026-09-27T16:06:40.719806Z",
   "lastSuccessfulSyncAt": "2026-09-27T15:08:39.028253Z",
-  "status": "healthy",
-  "failedApps": [],
-  "appCount": 1156,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/36327598168"
+  "status": "degraded",
+  "failedApps": [
+    {
+      "app": "rambox",
+      "stage": "collection"
+    },
+    {
+      "app": "superlist",
+      "stage": "collection"
+    }
+  ],
+  "appCount": 1155,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/36330982213"
 }
