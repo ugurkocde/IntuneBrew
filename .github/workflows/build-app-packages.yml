@@ -795,7 +795,7 @@ jobs:
                   echo "📦 File is a valid zip archive"
                   mv "${download_path}.download" "${download_path}.zip"
                   # Extract zip while excluding __MACOSX directory
-                  if unzip -q -d "${app_name}_extracted" "${download_path}.zip" 2>/dev/null; then
+                  if bash "$WORKSPACE_DIR/.github/scripts/extract_vendor_zip.sh" "${download_path}.zip" "${app_name}_extracted"; then
                     echo "✅ Zip extraction successful"
                   else
                     echo "❌ Failed to extract zip file"
@@ -809,7 +809,7 @@ jobs:
                 else
                   echo "⚠️ Unknown file type, attempting zip extraction anyway..."
                   mv "${download_path}.download" "${download_path}.zip"
-                  if unzip -q -d "${app_name}_extracted" "${download_path}.zip" 2>/dev/null; then
+                  if bash "$WORKSPACE_DIR/.github/scripts/extract_vendor_zip.sh" "${download_path}.zip" "${app_name}_extracted"; then
                     echo "✅ Zip extraction successful"
                   else
                     echo "❌ Failed to extract file"
@@ -966,7 +966,7 @@ jobs:
                   # Default to zip extraction
                   echo "📦 Attempting zip extraction for file type: $FILE_TYPE"
                   mv "${download_path}.download" "${download_path}.zip"
-                  if unzip -q -d "${app_name}_extracted" "${download_path}.zip" 2>/dev/null; then
+                  if bash "$WORKSPACE_DIR/.github/scripts/extract_vendor_zip.sh" "${download_path}.zip" "${app_name}_extracted"; then
                     echo "✅ Zip extraction successful"
                   else
                     echo "❌ Failed to extract file"
