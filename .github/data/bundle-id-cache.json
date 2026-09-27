@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-09-27T14:15:55.309Z",
+  "last_full_scan": "2026-09-27T14:18:47.240Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -798,10 +798,10 @@
       "name": "Charles"
     },
     "chatgpt": {
-      "last_checked": "2026-01-15T13:14:43.968Z",
-      "bundle_id": "com.openai.chat",
+      "last_checked": "2026-09-27T14:18:47.219Z",
+      "bundle_id": "com.openai.codex",
       "status": "verified",
-      "source": "api",
+      "source": "file",
       "name": "ChatGPT"
     },
     "chatwise": {
@@ -9411,6 +9411,27 @@
       "status": "verified",
       "source": "file",
       "name": "GitHub Copilot CLI"
+    },
+    "aircall_workspace": {
+      "last_checked": "2026-09-27T14:18:47.216Z",
+      "bundle_id": "io.aircall.workspace",
+      "status": "verified",
+      "source": "file",
+      "name": "Aircall Workspace"
+    },
+    "opencode": {
+      "last_checked": "2026-09-27T14:18:47.231Z",
+      "bundle_id": "ai.opencode.desktop",
+      "status": "verified",
+      "source": "file",
+      "name": "OpenCode"
+    },
+    "outline": {
+      "last_checked": "2026-09-27T14:18:47.231Z",
+      "bundle_id": "com.generaloutline.outline",
+      "status": "verified",
+      "source": "file",
+      "name": "Outline"
     }
   }
 }
