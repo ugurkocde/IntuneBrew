@@ -987,6 +987,15 @@ jobs:
                 continue
               fi
 
+              cli_identifier=$(jq -r '.bundleId // empty' "$WORKSPACE_DIR/Apps/${app_name}.json")
+              [ -n "$cli_identifier" ] || cli_identifier="com.intunebrew.${app_name}"
+              if ! bash "$WORKSPACE_DIR/.github/scripts/package_cli.sh" "$app_name" "${app_name}_extracted" "$version" "$cli_identifier"; then
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: CLI archive layout does not match the supported installer")
+                rm -rf "${app_name}_extracted"
+                continue
+              fi
+
               # First try to find .app file recursively, excluding __MACOSX directory
               echo "🔍 Searching for .app file recursively..."
               app_file=$(find "${app_name}_extracted" -type d -name "*.app" ! -path "*/__MACOSX/*" -print -quit)

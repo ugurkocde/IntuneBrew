@@ -114,3 +114,5 @@ jobs:
       - uses: actions/checkout@v4
       - name: Test nested vendor disk images
         run: bash tests/test_nested_dmg.sh
+      - name: Test CLI installer layouts
+        run: bash tests/test_cli_package.sh
