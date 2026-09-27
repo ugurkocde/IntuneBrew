@@ -4,7 +4,13 @@ APP_BUNDLE_ID="${APP_BUNDLE_ID:-com.microsoft.Outlook}"
 PROCESS_NAME="${PROCESS_NAME:-Microsoft Outlook}"
 QUIT_TIMEOUT="${QUIT_TIMEOUT:-30}"
 
-app_is_running() { /usr/bin/pgrep -x "$PROCESS_NAME" >/dev/null 2>&1; }
+literal_process_pattern() { printf '%s' "$PROCESS_NAME" | /usr/bin/sed 's/[][\\.^$*+?(){}|]/\\&/g'; }
+app_is_running() {
+    local status=0
+    /usr/bin/pgrep -x "$(literal_process_pattern)" >/dev/null 2>&1 || status=$?
+    # Only a definite no-match (1) allows installation; lookup errors defer it.
+    [[ "$status" != 1 ]]
+}
 console_uid() { /usr/bin/stat -f %u /dev/console; }
 request_quit() {
     /bin/launchctl asuser "$1" /usr/bin/sudo -u "#$1" /usr/bin/osascript <<APPLESCRIPT

@@ -1,6 +1,9 @@
 #!/bin/bash
 set -eu
 source "$(dirname "$0")/../scripts/close-app-before-install.sh"
+PROCESS_NAME='Example (Beta) [1].app'
+[[ "$(literal_process_pattern)" == 'Example \(Beta\) \[1\]\.app' ]] || { echo 'Process regex was not escaped' >&2; exit 1; }
+PROCESS_NAME='Microsoft Outlook'
 app_is_running() { return 1; }
 main
 APP_BUNDLE_ID='invalid"identifier'
