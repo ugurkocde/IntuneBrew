@@ -1758,12 +1758,6 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
 
     url = data["url"]
 
-    # Special URL handling for apps with non-working Homebrew URLs
-    app_name = data["name"][0].lower()
-    if app_name == "warp":
-        # Warp's Homebrew URL returns HTML, use direct DMG URL instead
-        url = f"https://releases.warp.dev/stable/v{version}/Warp.dmg"
-
     vendor_url = url
 
     app_info = {
@@ -1780,6 +1774,12 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         # extensionless URL would be deployed as a DMG and fail to mount (Issue #107)
         "fileName": get_filename_from_url(url, app_name=data["name"][0], version=version, default_ext=".pkg" if is_pkg else ".dmg")
     }
+
+    # Homebrew's checksum describes this exact URL, not our repackaged output.
+    checksum = data.get("sha256", "")
+    if (not needs_packaging and not is_pkg_in_dmg and not is_pkg_in_pkg
+            and isinstance(checksum, str) and re.fullmatch(r"[a-fA-F0-9]{64}", checksum)):
+        app_info["sha"] = checksum.lower()
 
     if needs_packaging:
         app_info["type"] = "app"
@@ -2042,16 +2042,10 @@ def main():
                     existing_data["type"] = "app"
                     existing_data["vendor_url"] = app_info["vendor_url"]
 
-                    # Calculate new hash if version changed
-                    if version_changed:
-                        print(f"🔍 Version changed, calculating new SHA256 hash for {display_name}...")
-                        file_hash = calculate_file_hash(app_info["url"])
-                        if file_hash:
-                            existing_data["sha"] = file_hash
-                            print(f"✅ New SHA256 hash calculated: {file_hash}")
-                        else:
-                            raise RuntimeError(f"Could not verify download hash for {display_name}")
-                    
+                    # Packaging calculates the SHA of the final PKG. Hashing the
+                    # vendor archive here downloads it twice and temporarily pairs
+                    # an archive hash with a PKG filename.
+
                     # Update app_info with all existing data
                     app_info = existing_data
 
@@ -2080,22 +2074,9 @@ def main():
             if not claim_app_file(file_path, app_info.get("homebrew_cask")):
                 continue
 
-            # Check if we need to calculate hash
-            needs_hash = True
-            if os.path.exists(file_path):
-                with open(file_path, "r") as f:
-                    existing_data = json.load(f)
-                    # Reuse the stored hash only while both the version and the
-                    # download URL are unchanged. Casks using version,build
-                    # syntax strip the build number above, so a build-only bump
-                    # leaves the version equal while the URL (and the file
-                    # behind it) changes.
-                    if ("sha" in existing_data and
-                        existing_data.get("version") == app_info["version"] and
-                        existing_data.get("url") == app_info["url"]):
-                        needs_hash = False
-                        app_info["sha"] = existing_data["sha"]
-                        print(f"ℹ️ Using existing hash for {display_name}")
+            # Use Homebrew's verified checksum when available. Mutable/no_check
+            # downloads must be hashed again, even if version and URL are equal.
+            needs_hash = "sha" not in app_info
 
             if needs_hash:
                 print(f"🔍 Calculating SHA256 hash for {display_name}...")
@@ -2219,20 +2200,9 @@ def main():
             if not claim_app_file(file_path, app_info.get("homebrew_cask")):
                 continue
 
-            # Check if we need to calculate hash for PKG apps
-            needs_hash = True
-            if os.path.exists(file_path):
-                with open(file_path, "r") as f:
-                    existing_data = json.load(f)
-                    # Reuse the stored hash only while both the version and the
-                    # download URL are unchanged, so build-only bumps behind an
-                    # equal version string still refresh the hash.
-                    if ("sha" in existing_data and
-                        existing_data.get("version") == app_info["version"] and
-                        existing_data.get("url") == app_info["url"]):
-                        needs_hash = False
-                        app_info["sha"] = existing_data["sha"]
-                        print(f"ℹ️ Using existing hash for {display_name}")
+            # Use Homebrew's verified checksum when available. Mutable/no_check
+            # downloads must be hashed again, even if version and URL are equal.
+            needs_hash = "sha" not in app_info
 
             if needs_hash:
                 print(f"🔍 Calculating SHA256 hash for {display_name}...")
