@@ -12,5 +12,7 @@
   "category": "Media",
   "publisher": "RawTherapee Team",
   "previous_version": "5.12",
-  "homebrew_cask": "rawtherapee"
+  "homebrew_cask": "rawtherapee",
+  "deprecated": true,
+  "deprecation_reason": "Excluded: disk image requires explicit license acceptance."
 }

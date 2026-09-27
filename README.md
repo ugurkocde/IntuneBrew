@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1158-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1157-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -606,6 +606,8 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 5 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
+
+See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection and packaging.
 
 - 🚀 Automated app uploads to Microsoft Intune
 - 📦 Supports both .dmg and .pkg files
