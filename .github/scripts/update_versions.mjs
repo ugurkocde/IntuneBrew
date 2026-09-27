@@ -79,8 +79,8 @@ async function main() {
   }
   const supabase = createClient(process.env.SUPABASE_URL, process.env.SUPABASE_KEY);
   await synchronize(supabase, apps, async updates => {
-    const response = await fetch(process.env.NOTIFICATIONS_API_URL || 'https://intunebrew.com/api/notifications/send', {
-      method:'POST', headers:{'Content-Type':'application/json', Authorization:`Bearer ${process.env.NOTIFICATIONS_API_KEY}`},
+    const response = await fetch(process.env.NOTIFICATIONS_API_URL || 'https://www.intunebrew.com/api/notifications/send', {
+      method:'POST', redirect:'error', headers:{'Content-Type':'application/json', Authorization:`Bearer ${process.env.NOTIFICATIONS_API_KEY}`},
       body:JSON.stringify({updates}), signal:AbortSignal.timeout(330_000)
     });
     const data = await response.json();
