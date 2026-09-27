@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-09-27T11:58:52.893Z",
+  "last_full_scan": "2026-09-27T12:18:37.471Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9397,6 +9397,20 @@
       "status": "verified",
       "source": "file",
       "name": "Vorssaint"
+    },
+    "ddpm": {
+      "last_checked": "2026-09-27T12:18:37.452Z",
+      "bundle_id": "Qisda.DDPM",
+      "status": "verified",
+      "source": "file",
+      "name": "DDPM"
+    },
+    "github_copilot_cli": {
+      "last_checked": "2026-09-27T12:18:37.455Z",
+      "bundle_id": "com.intunebrew.github_copilot_cli",
+      "status": "verified",
+      "source": "file",
+      "name": "GitHub Copilot CLI"
     }
   }
 }
