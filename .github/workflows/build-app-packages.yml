@@ -96,6 +96,7 @@ jobs:
 
       - name: Collect app information
         env:
+          GH_TOKEN: ${{ github.token }}
           CATALOG_ALLOW_PARTIAL: "1"
           CATALOG_COLLECTION_REPORT: collection-report.json
         run: python .github/scripts/collect_app_info.py
@@ -470,7 +471,7 @@ jobs:
               outer_pkg_ready=false
               if [[ "$url" == *".zip" ]]; then
                 echo "URL is a ZIP file, downloading and extracting first..."
-                if ! curl -f -L -o "${download_path}.zip" "$url"; then
+                if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.zip" "$url"; then
                   echo "Failed to download ZIP file"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download ZIP from $url")
@@ -502,7 +503,7 @@ jobs:
                 rm -rf "$zip_extract_dir" "${download_path}.zip"
               else
                 # Direct PKG download
-                if curl -f -L -o "$outer_pkg_path" "$url"; then
+                if curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "$outer_pkg_path" "$url"; then
                   outer_pkg_ready=true
                 fi
               fi
@@ -635,7 +636,7 @@ jobs:
               download_path="$HOME/Desktop/${app_name}"
               
               # Download DMG
-              if curl -f -L -o "${download_path}.dmg" "$url"; then
+              if curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.dmg" "$url"; then
                 echo "✅ DMG download successful"
                 ls -lh "${download_path}.dmg"
               else
@@ -750,7 +751,7 @@ jobs:
               download_path="$HOME/Desktop/${app_name}"
               if [[ "$url" == *".zip" ]]; then
                 # Download file first
-                if ! curl -f -L -o "${download_path}.download" "$url"; then
+                if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.download" "$url"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download from $url")
@@ -822,7 +823,7 @@ jobs:
                 fi
               elif [[ "$url" == *".tar.xz" ]]; then
                 echo "📦 Processing tar.xz archive for $app_name..."
-                if ! curl -f -L -o "${download_path}.tar.xz" "$url"; then
+                if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.tar.xz" "$url"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download tar.xz from $url")
@@ -843,7 +844,7 @@ jobs:
               elif [[ "$url" == *".tar.bz2" ]] || [[ "$url" == *".tbz" ]]; then
                 echo "📦 Processing tar.bz2/tbz archive for $app_name..."
                 if [[ "$url" == *".tar.bz2" ]]; then
-                  if ! curl -f -L -o "${download_path}.tar.bz2" "$url"; then
+                  if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.tar.bz2" "$url"; then
                     echo "❌ Failed to download $app_name from $url"
                     FAILED_APPS+=("$app_name")
                     ERROR_LOG+=("$app_name: Failed to download tar.bz2 from $url")
@@ -851,7 +852,7 @@ jobs:
                   fi
                   archive_path="${download_path}.tar.bz2"
                 else
-                  if ! curl -f -L -o "${download_path}.tbz" "$url"; then
+                  if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.tbz" "$url"; then
                     echo "❌ Failed to download $app_name from $url"
                     FAILED_APPS+=("$app_name")
                     ERROR_LOG+=("$app_name: Failed to download tbz from $url")
@@ -901,7 +902,7 @@ jobs:
                 ls -R "${app_name}_extracted"
               elif [[ "$url" == *".tar.gz" ]]; then
                 echo "📦 Processing tar.gz archive for $app_name..."
-                if ! curl -f -L -o "${download_path}.tar.gz" "$url"; then
+                if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.tar.gz" "$url"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download tar.gz from $url")
@@ -926,7 +927,7 @@ jobs:
                 ls -R "${app_name}_extracted"
               else
                 # Download file first and detect type
-                if ! curl -f -L -o "${download_path}.download" "$url"; then
+                if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.download" "$url"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download from $url")
@@ -979,6 +980,28 @@ jobs:
                 fi
               fi
               
+              if ! bash "$WORKSPACE_DIR/.github/scripts/extract_nested_dmg.sh" "${app_name}_extracted"; then
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: Failed to extract nested DMG from $url")
+                rm -rf "${app_name}_extracted"
+                continue
+              fi
+
+              cli_identifier=$(jq -r '.bundleId // empty' "$WORKSPACE_DIR/Apps/${app_name}.json")
+              [ -n "$cli_identifier" ] || cli_identifier="com.intunebrew.${app_name}"
+              if ! bash "$WORKSPACE_DIR/.github/scripts/package_cli.sh" "$app_name" "${app_name}_extracted" "$version" "$cli_identifier"; then
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: CLI archive layout does not match the supported installer")
+                rm -rf "${app_name}_extracted"
+                continue
+              fi
+
+              if [ -f "${app_name}_extracted/${app_name}_${version}.pkg" ]; then
+                jq --arg identifier "$cli_identifier" '.bundleId = $identifier' \
+                  "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json
+                mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+              fi
+
               # First try to find .app file recursively, excluding __MACOSX directory
               echo "🔍 Searching for .app file recursively..."
               app_file=$(find "${app_name}_extracted" -type d -name "*.app" ! -path "*/__MACOSX/*" -print -quit)
