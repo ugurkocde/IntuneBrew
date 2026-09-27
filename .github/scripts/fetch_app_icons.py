@@ -117,7 +117,8 @@ def fetch_from_app_bundle(download_url, app_name):
 
 def save_icon(image, app_name):
     """Resize and save icon as PNG."""
-    if image.mode == 'P':
+    # Expand PNG transparency keys before resampling, or edge pixels lose alpha.
+    if image.mode == 'P' or (image.mode == 'RGB' and 'transparency' in image.info):
         image = image.convert('RGBA')
     elif image.mode not in ('RGBA', 'RGB'):
         image = image.convert('RGBA')

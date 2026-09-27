@@ -13,6 +13,7 @@ The following apps are intentionally excluded from collection, packaging, and th
 | Contexts | Vendor installer fails TLS validation. |
 | jamovi | Vendor installer redirects to an HTML error page. |
 | Postbox | Vendor installer host cannot be reached. |
+| Real VNC Viewer, CHIRP, Dynalist, fig, Nocturnal, Yubikey Manager | Homebrew casks were removed; historical records remain deprecated. |
 
 Re-enabling an app requires resolving its blocker, restoring its collector URL, clearing its exclusion flags, and validating its package before publication. No license agreement is accepted automatically.
 

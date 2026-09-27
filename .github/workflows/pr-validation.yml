@@ -93,7 +93,7 @@ jobs:
       - name: Install test dependencies
         env:
           PIP_DISABLE_PIP_VERSION_CHECK: "1"
-        run: python -m pip install requests==2.34.2
+        run: python -m pip install requests==2.34.2 Pillow==12.1.1
 
       - name: Run catalog unit tests
         run: python -m unittest discover -s tests -p "test_*.py"
