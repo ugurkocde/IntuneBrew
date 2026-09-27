@@ -996,6 +996,12 @@ jobs:
                 continue
               fi
 
+              if [ -f "${app_name}_extracted/${app_name}_${version}.pkg" ]; then
+                jq --arg identifier "$cli_identifier" '.bundleId = $identifier' \
+                  "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json
+                mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+              fi
+
               # First try to find .app file recursively, excluding __MACOSX directory
               echo "🔍 Searching for .app file recursively..."
               app_file=$(find "${app_name}_extracted" -type d -name "*.app" ! -path "*/__MACOSX/*" -print -quit)
