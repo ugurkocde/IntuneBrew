@@ -1812,6 +1812,8 @@ def update_readme_apps(apps_list):
         with open(app_json, 'r') as f:
             try:
                 data = json.load(f)
+                if data.get('deprecated'):
+                    continue
                 display_name = data['name']
                 # Convert display name to filename format
                 logo_name = sanitize_filename(display_name)
