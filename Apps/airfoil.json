@@ -9,7 +9,7 @@
   "fileName": "airfoil_5.13.0.pkg",
   "type": "app",
   "sha": "b48a7c575c3db5ca90dd635376ed51aac0e8f0924df681e43660e4f39003c754",
-  "previous_version": "5.12.6",
+  "previous_version": "5.13.0",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:29:48Z",
     "qa_result": "Installation successful and verified",

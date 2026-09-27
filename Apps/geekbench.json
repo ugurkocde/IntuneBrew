@@ -9,7 +9,7 @@
   "fileName": "geekbench_7.0.0.pkg",
   "type": "app",
   "sha": "0467b104ceb6e7c12dbfaab6b5222e97d01a3311dca53cfe659e28ba2f373952",
-  "previous_version": "6.7.1",
+  "previous_version": "7.0.0",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:16:13Z",
     "qa_result": "Installation successful and verified",

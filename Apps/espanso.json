@@ -1,15 +1,14 @@
 {
   "name": "Espanso",
   "description": "Cross-platform Text Expander written in Rust",
-  "version": "2.4.0",
-  "url": "https://github.com/espanso/espanso/releases/download/v2.4.0/Espanso-Mac-Universal.dmg",
-  "vendor_url": "https://github.com/espanso/espanso/releases/download/v2.4.0/Espanso-Mac-Universal.dmg",
+  "version": "2.4.1",
+  "url": "https://github.com/espanso/espanso/releases/download/v2.4.1/Espanso-Mac-Universal.dmg",
+  "vendor_url": "https://github.com/espanso/espanso/releases/download/v2.4.1/Espanso-Mac-Universal.dmg",
   "bundleId": "com.federicoterzi.espanso",
   "homepage": "https://espanso.org/",
-  "fileName": "espanso_2.2.1.pkg",
-  "type": "app",
-  "sha": "aaf81d7573db785e5447b867e0f2f1d6f061ea9fa1756fda02f21b0402407669",
-  "previous_version": "2.4.0",
+  "homebrew_cask": "espanso",
+  "fileName": "Espanso-Mac-Universal.dmg",
+  "sha": "e6aee2d9446d7625e57dafc6613add21fc7c9f709ba42f08b5ada844c6f7110a",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:57:13Z",
     "qa_result": "Installation successful and verified",
@@ -22,5 +21,5 @@
   },
   "category": "Productivity",
   "publisher": "Espanso",
-  "homebrew_cask": "espanso"
+  "previous_version": "2.4.0"
 }

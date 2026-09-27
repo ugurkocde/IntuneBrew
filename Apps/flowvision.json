@@ -9,7 +9,7 @@
   "fileName": "flowvision_1.7.6.pkg",
   "type": "app",
   "sha": "0bda514c7f21286f41f93f241565e7a9ad80ea86c832054b9767450bf2b88376",
-  "previous_version": "1.7.5",
+  "previous_version": "1.7.6",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:11:12Z",
     "qa_result": "Installation successful and verified",

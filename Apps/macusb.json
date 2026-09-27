@@ -10,5 +10,6 @@
   "fileName": "macUSB.2.5.dmg",
   "sha": "aec02175ed1eb56d1966349c3fae663265f8bafbd2bfe328eb46a2b0bac6731c",
   "category": "Utilities",
-  "publisher": "Unknown"
+  "publisher": "Unknown",
+  "previous_version": "2.5"
 }

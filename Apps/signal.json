@@ -9,7 +9,7 @@
   "fileName": "signal_8.28.0.pkg",
   "type": "app",
   "sha": "2884d84f35c1aba882d2ca7cbd4211d6d69d62ca5fb5c6e250d9d8b879488aad",
-  "previous_version": "8.22.0",
+  "previous_version": "8.28.0",
   "category": "Communication",
   "publisher": "Signal Foundation",
   "homebrew_cask": "signal"

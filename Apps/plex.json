@@ -9,7 +9,7 @@
   "fileName": "plex_1.115.0.426.pkg",
   "type": "app",
   "sha": "d53d912284fcf0bb79c2b8ea71f8df9ce2b4573f2838bc216006c9d96cb0275c",
-  "previous_version": "1.112.0.359",
+  "previous_version": "1.115.0.426",
   "category": "Media",
   "publisher": "Plex, Inc.",
   "homebrew_cask": "plex"

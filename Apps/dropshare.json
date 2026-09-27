@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "ca5629b4faef1e0311a3a7d3a57c1f66dde5d628af9326ebe419469df6b8e778",
   "changelog": "https://dropshare.app/changelog/",
-  "previous_version": "6.14",
+  "previous_version": "6.15",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:23:44Z",
     "qa_result": "Installation successful and verified",

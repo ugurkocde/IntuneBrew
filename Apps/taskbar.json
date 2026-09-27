@@ -9,7 +9,7 @@
   "fileName": "taskbar_1.6.3.pkg",
   "type": "app",
   "sha": "742f0c63e1626f982647e182a7a6e749c9301c9f143f6b22b0d3cd9fdfb7af41",
-  "previous_version": "1.6.1",
+  "previous_version": "1.6.3",
   "category": "Utilities",
   "publisher": "Lawand",
   "homebrew_cask": "taskbar"

@@ -9,7 +9,7 @@
   "fileName": "bettermouse_1.7.pkg",
   "type": "app",
   "sha": "16bbe0bd73e5cc7a350b424ac3ec72b6fcda42d44763e2e1523d3a4448de503d",
-  "previous_version": "1.6",
+  "previous_version": "1.7",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:23:28Z",
     "qa_result": "Installation successful and verified",

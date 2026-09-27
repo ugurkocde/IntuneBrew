@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "9ce0cf0ff329815c4b2b3ff19556e8d366b9e7e61407183e69664932f706f85e",
   "changelog": "https://macpaw.com/support/cleanmymac/knowledgebase/cleanmymac-x-release-notes",
-  "previous_version": "5.5.7",
+  "previous_version": "5.7.0",
   "qa_info": {
     "qa_timestamp": "2025-05-14T06:44:22Z",
     "qa_result": "Installation successful and verified",

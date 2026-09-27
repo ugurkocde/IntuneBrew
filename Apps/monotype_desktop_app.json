@@ -11,5 +11,6 @@
   "type": "app",
   "sha": "0b0268a0629a6fc020b538a831f6e0b78e18bb1dcd4dbace8c3f4603085584fe",
   "category": "Design",
-  "publisher": "Monotype"
+  "publisher": "Monotype",
+  "previous_version": "7.7.0"
 }

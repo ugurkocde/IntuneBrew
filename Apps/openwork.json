@@ -10,5 +10,6 @@
   "fileName": "openwork-mac-arm64-0.18.54.dmg",
   "sha": "d86ad6cd8db181f43cfb53a294078cf543f91c15a3cd630fc1c83d3097cd9ce8",
   "category": "Developer Tools",
-  "publisher": "OpenWork Labs"
+  "publisher": "OpenWork Labs",
+  "previous_version": "0.18.54"
 }

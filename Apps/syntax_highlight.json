@@ -11,6 +11,6 @@
   "sha": "f26148ec10f44fb0d6a9b85643fb9e79a818a75ccdb5f81fd6a74fd4b4130433",
   "category": "Developer Tools",
   "publisher": "sbarex",
-  "previous_version": "2.1.30",
+  "previous_version": "2.1.32",
   "homebrew_cask": "syntax-highlight"
 }

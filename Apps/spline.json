@@ -9,7 +9,7 @@
   "fileName": "spline_0.20.49.pkg",
   "type": "app",
   "sha": "3e83a1f36fbc97bd97ba39bc53cdd406ef346fbc600359b260bc4a3ea20c7e85",
-  "previous_version": "0.12.11",
+  "previous_version": "0.20.49",
   "category": "Design",
   "publisher": "Spline",
   "homebrew_cask": "spline"

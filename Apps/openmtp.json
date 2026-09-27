@@ -9,7 +9,7 @@
   "fileName": "openmtp_3.3.0.pkg",
   "type": "app",
   "sha": "1265a83ec5aac194bf896cb20e95a95e74da9ce06cff36d03bb5ecca496c8653",
-  "previous_version": "3.2.25",
+  "previous_version": "3.3.0",
   "category": "Utilities",
   "publisher": "Ganeshr Vel",
   "homebrew_cask": "openmtp"

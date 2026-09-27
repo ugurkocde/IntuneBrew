@@ -1,72 +1,12 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-09-27T11:36:03.332953Z",
-  "lastFullSyncAt": "2026-09-27T11:36:03.332953Z",
+  "lastPublishedAt": "2026-09-27T12:17:35.320654Z",
+  "lastFullSyncAt": "2026-09-27T12:17:35.320654Z",
   "lastSuccessfulSyncAt": null,
   "status": "degraded",
   "failedApps": [
     {
-      "app": "1password_cli",
-      "stage": "package validation"
-    },
-    {
-      "app": "alcove",
-      "stage": "package validation"
-    },
-    {
-      "app": "android_sdk_commandline_tools",
-      "stage": "package validation"
-    },
-    {
-      "app": "android_sdk_platformtools",
-      "stage": "package validation"
-    },
-    {
       "app": "autodesk_fusion_360",
-      "stage": "package validation"
-    },
-    {
-      "app": "camunda_modeler",
-      "stage": "packaging"
-    },
-    {
-      "app": "cask:neovim",
-      "stage": "collection"
-    },
-    {
-      "app": "cask:vim",
-      "stage": "collection"
-    },
-    {
-      "app": "ddpm",
-      "stage": "packaging"
-    },
-    {
-      "app": "dialpad",
-      "stage": "package validation"
-    },
-    {
-      "app": "espanso",
-      "stage": "package validation"
-    },
-    {
-      "app": "filebot",
-      "stage": "package validation"
-    },
-    {
-      "app": "github_copilot_cli",
-      "stage": "packaging"
-    },
-    {
-      "app": "google_antigravity",
-      "stage": "package validation"
-    },
-    {
-      "app": "houdahspot",
-      "stage": "package validation"
-    },
-    {
-      "app": "keybase",
       "stage": "package validation"
     },
     {
@@ -78,58 +18,18 @@
       "stage": "package validation"
     },
     {
-      "app": "ok_json",
-      "stage": "packaging"
-    },
-    {
       "app": "rawtherapee",
       "stage": "package validation"
-    },
-    {
-      "app": "rhinoceros",
-      "stage": "package validation"
-    },
-    {
-      "app": "screenflick",
-      "stage": "packaging"
     },
     {
       "app": "send_to_kindle",
       "stage": "collection"
     },
     {
-      "app": "sentinel",
-      "stage": "package validation"
-    },
-    {
-      "app": "sqlpro_for_mssql",
-      "stage": "packaging"
-    },
-    {
-      "app": "sqlpro_for_mysql",
-      "stage": "packaging"
-    },
-    {
-      "app": "sqlpro_for_postgres",
-      "stage": "packaging"
-    },
-    {
-      "app": "sqlpro_for_sqlite",
-      "stage": "packaging"
-    },
-    {
-      "app": "sqlpro_studio",
-      "stage": "packaging"
-    },
-    {
       "app": "switch_audio_converter",
       "stage": "package validation"
-    },
-    {
-      "app": "wazuh_agent",
-      "stage": "scraper"
     }
   ],
-  "appCount": 1143,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/36310823053"
+  "appCount": 1157,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/36317434783"
 }

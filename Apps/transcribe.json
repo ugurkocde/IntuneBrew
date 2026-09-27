@@ -1,15 +1,15 @@
 {
   "name": "Transcribe!",
   "description": "Transcribes recorded music",
-  "version": "9.60.7",
-  "url": "https://www.seventhstring.com/xscribe/downmo/transcribe-arm-9.60.7.dmg",
-  "vendor_url": "https://www.seventhstring.com/xscribe/downmo/transcribe-arm-9.60.7.dmg",
+  "version": "9.70.0",
+  "url": "https://www.seventhstring.com/xscribe/downmo/transcribe-arm-9.70.0.dmg",
+  "vendor_url": "https://www.seventhstring.com/xscribe/downmo/transcribe-arm-9.70.0.dmg",
   "bundleId": "com.seventhstring.transcribe",
   "homepage": "https://www.seventhstring.com/xscribe/overview.html",
   "homebrew_cask": "transcribe",
-  "fileName": "transcribe-arm-9.60.7.dmg",
-  "sha": "e3c8ded09f3152bce8e2d552922079ae2f11dc4649a7a402747559903b4c0e40",
+  "fileName": "transcribe-arm-9.70.0.dmg",
+  "sha": "d7f75f2d1fcc065e4348f4072afd6024aae5f30825344b9ea2bd63279541d7c3",
   "category": "Media",
   "publisher": "Seventh String Software",
-  "previous_version": "9.60.3"
+  "previous_version": "9.60.7"
 }

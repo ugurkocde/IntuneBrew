@@ -9,7 +9,7 @@
   "fileName": "keyclu_0.33.pkg",
   "type": "app",
   "sha": "ba73f436b5398bfa11204ab2713aa5a829e415abcbc365218604ba27f78bd9d4",
-  "previous_version": "0.32",
+  "previous_version": "0.33",
   "category": "Utilities",
   "publisher": "Sergii Tatarenkov",
   "homebrew_cask": "keyclu"

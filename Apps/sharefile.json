@@ -11,5 +11,6 @@
   "type": "pkg_in_dmg",
   "sha": "c132bf6fae32ad6bb6f40c96f2ba6d473c5cbadfc97dfbf0b3fd952908e20aff",
   "category": "Productivity",
-  "publisher": "Progress Software Corporation"
+  "publisher": "Progress Software Corporation",
+  "previous_version": "26.08.06"
 }

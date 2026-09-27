@@ -9,7 +9,7 @@
   "fileName": "audio_hijack_4.6.0.pkg",
   "type": "app",
   "sha": "791bbcfbf4e7e0226ad7b55b69f4661fd6498de467209d3f11ebb6f0e73b1232",
-  "previous_version": "4.5.9",
+  "previous_version": "4.6.0",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:34:29Z",
     "qa_result": "Installation successful and verified",

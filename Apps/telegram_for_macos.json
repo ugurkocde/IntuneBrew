@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "251346bc301213d488ed80742d95d26c0198a38346b4b5aaa728a7c378c20743",
   "changelog": "https://macos.telegram.org/changelog",
-  "previous_version": "12.9",
+  "previous_version": "12.10",
   "category": "Communication",
   "publisher": "Telegram Messenger LLP",
   "homebrew_cask": "telegram"

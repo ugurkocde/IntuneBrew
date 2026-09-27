@@ -9,7 +9,7 @@
   "fileName": "freemacsoft_appcleaner_3.7.pkg",
   "type": "app",
   "sha": "cff9a6893b16fa16ad91aa2a4e99b6860689200d15cd4fda6ea8b59bc905a1f8",
-  "previous_version": "3.6.8",
+  "previous_version": "3.7",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:15:14Z",
     "qa_result": "Installation successful and verified",

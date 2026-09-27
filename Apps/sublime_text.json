@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "30596f4c16d7fd462290ec6a22dfcd2fcf810c402d9ca084b3db726c992b1825",
   "changelog": "https://www.sublimetext.com/docs/4.0/changes.html",
-  "previous_version": "4200",
+  "previous_version": "4215",
   "category": "Developer Tools",
   "publisher": "Sublime HQ Pty Ltd",
   "homebrew_cask": "sublime-text"

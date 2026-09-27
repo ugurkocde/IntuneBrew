@@ -11,6 +11,6 @@
   "sha": "544a1c9119567ab9529952dba253419bb1a3124c54474f5ed03b7032ca56aa3a",
   "category": "Productivity",
   "publisher": "The Mailspring Team",
-  "previous_version": "1.23.0",
+  "previous_version": "1.25.0",
   "homebrew_cask": "mailspring"
 }

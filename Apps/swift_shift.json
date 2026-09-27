@@ -9,7 +9,7 @@
   "fileName": "swift_shift_1.5.0.pkg",
   "type": "app",
   "sha": "d8442ac664016f5d8f48786ff4a877ba3c7ab8209622331c3041be5530ca04a8",
-  "previous_version": "1.3.2",
+  "previous_version": "1.5.0",
   "category": "Utilities",
   "publisher": "Swift Shift",
   "homebrew_cask": "swift-shift"

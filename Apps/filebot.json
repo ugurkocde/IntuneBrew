@@ -1,16 +1,16 @@
 {
   "name": "FileBot",
   "description": "Tool for organising and renaming movies, TV shows, anime or music",
-  "version": "5.2.3",
-  "url": "https://get.filebot.net/filebot/FileBot_5.2.3/FileBot_5.2.3_arm64.pkg",
-  "vendor_url": "https://get.filebot.net/filebot/FileBot_5.2.3/FileBot_5.2.3_arm64.pkg",
+  "version": "5.3.0",
+  "url": "https://get.filebot.net/filebot/FileBot_5.3.0/FileBot_5.3.0_arm64.pkg",
+  "vendor_url": "https://get.filebot.net/filebot/FileBot_5.3.0/FileBot_5.3.0_arm64.pkg",
   "bundleId": "net.filebot.FileBot",
   "homepage": "https://www.filebot.net/",
-  "fileName": "filebot_5.2.0.pkg",
-  "type": "app",
-  "sha": "1f590c7f70122c5c4614989571323dc7956e77ee9463bb91f3fba538a82846fb",
+  "homebrew_cask": "filebot",
+  "fileName": "FileBot_5.3.0_arm64.pkg",
+  "sha": "165ad8a6938197f0903637d35d1d09ad6f251d76c1c39ac25f621ba346e75768",
+  "type": "pkg",
   "category": "Media",
   "publisher": "FileBot",
-  "previous_version": "5.2.3",
-  "homebrew_cask": "filebot"
+  "previous_version": "5.3.0"
 }

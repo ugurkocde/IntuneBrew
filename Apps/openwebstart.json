@@ -10,5 +10,6 @@
   "fileName": "OpenWebStart_macos-aarch64_1_14_0.dmg",
   "sha": "f085f2fce8099119ac15b9db92b8fd6d07ef1e13062a3b2db299429f82c2d2b8",
   "category": "Developer Tools",
-  "publisher": "The OpenWebStart Team"
+  "publisher": "The OpenWebStart Team",
+  "previous_version": "1.14.0"
 }

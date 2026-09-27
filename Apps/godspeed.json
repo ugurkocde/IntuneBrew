@@ -9,7 +9,7 @@
   "fileName": "godspeed_1.9.22.pkg",
   "type": "app",
   "sha": "cb4c3fd528f09bbe85ca62abab8c2cc1aba8cb0f2cec3e805e853178db2af0ce",
-  "previous_version": "1.9.19",
+  "previous_version": "1.9.22",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:19:31Z",
     "qa_result": "Installation successful and verified",

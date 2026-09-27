@@ -10,5 +10,6 @@
   "fileName": "Vorssaint-3.3.5.dmg",
   "sha": "d0c42081fbdaef21c6239fec654c88759654e37ecd50c93b74736bcadfec9294",
   "category": "Utilities",
-  "publisher": "Vorssaint"
+  "publisher": "Vorssaint",
+  "previous_version": "3.3.5"
 }

@@ -9,7 +9,7 @@
   "fileName": "mac_mouse_fix_3.1.0.pkg",
   "type": "app",
   "sha": "7d8e3478d8f349b37bfdd603d86f67d383766fb121857cdc0cf96dbd720fead9",
-  "previous_version": "3.0.8",
+  "previous_version": "3.1.0",
   "category": "Utilities",
   "publisher": "Mac Mouse Fix",
   "homebrew_cask": "mac-mouse-fix"

@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "52e994bce3052a57506d2b3fceaa0d6097eb67ab168d30e57293753a99109a58",
   "changelog": "https://seense.com/menubarstats/changelog/",
-  "previous_version": "3.9",
+  "previous_version": "3.9.916",
   "category": "Utilities",
   "publisher": "Seense",
   "homebrew_cask": "menubar-stats"

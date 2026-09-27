@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "b7e81b621ba366904c5216d32eefb381e0abe43a5b6aa0fc2f3c11de422cadab",
   "changelog": "https://www.sketch.com/updates/",
-  "previous_version": "2026.2.1",
+  "previous_version": "2026.3.1",
   "category": "Design",
   "publisher": "Bohemian Coding",
   "homebrew_cask": "sketch"

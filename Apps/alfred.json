@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "3132a7ca51528c913914f8d293cb9f8860fed6fa56fdb5c98ec068376c3592d4",
   "changelog": "https://www.alfredapp.com/changelog/",
-  "previous_version": "5.7.3",
+  "previous_version": "5.8.1",
   "qa_info": {
     "qa_timestamp": "2025-05-13T07:13:09Z",
     "qa_result": "Installation successful and verified",

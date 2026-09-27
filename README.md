@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1144-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1157-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -577,625 +577,32 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-09-27T11:36:03.332953Z*
+*Last checked: 2026-09-27T12:17:35.320654Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| 1password | 8.12.30 | 8.12.36 |
-| 4k youtube to mp3 | 26.2.1 | 26.3.3 |
-| 8x8 work | 8.36.2-3 | 8.37.2-1 |
-| a better finder rename | 12.31 | 12.35 |
-| ableton live lite | 12.4.3 | 12.4.6 |
-| ableton live suite | 12.4.3 | 12.4.6 |
-| acorn | 8.6.1 | 8.6.3 |
-| activedock | 2.881 | 2.883 |
-| actual | 26.8.1 | 26.9.0 |
-| adlock | 2.1.9.2 | 2.1.9.7 |
-| adobe acrobat pro dc | 26.001.21771 | 26.002.21931 |
-| adobe creative cloud | 6.10.0.252.3 | 6.10.0.252.41 |
-| adobe dng converter | 18.5 | 18.6 |
-| advanced renamer | 4.24 | 4.25 |
-| affinity | 3.2.3 | 3.3.0 |
-| airbuddy | 2.8.1 | 3.0.2 |
-| airfoil | 5.12.6 | 5.13.0 |
-| airparrot | 3.1.7 | 3.1.8 |
-| airtable | 1.6.6 | 1.7.1 |
-| airtame | 4.15.0 | 4.16.0 |
-| akiflow | 2.80.3 | 2.81.8 |
-| aldente | 1.38.1 | 1.39.4 |
-| alfred | 5.7.3 | 5.8.1 |
-| altair graphql client | 8.5.7 | 8.5.9 |
-| altserver | 1.7.2 | 1.8.1 |
-| alttab | 11.4.4 | 11.8.0 |
-| amadeus pro | 2.8.14 | 3.0.3 |
-| amie | 260722.1.0 | 260909.0.0 |
-| android ndk | 29 | 30 |
-| android studio | 2026.1.3.7 | 2026.1.4.8 |
-| anki | 26.08.1 | 26.09.3 |
-| another redis desktop manager | 1.7.2 | 1.7.4 |
-| antinote | 1.1.7 | 2.1.3 |
-| anydesk | 9.7.3 | 9.8.0 |
-| anytype | 0.56.1 | 0.57.0 |
-| apidog | 2.8.41 | 2.8.48 |
-| apifox | 2.8.41 | 2.8.48 |
-| apparency | 3.3 | 3.4 |
-| appflowy | 0.13.0 | 0.14.5 |
-| appgate sdp client for macos | 6.6.0 | 6.7.3 |
-| applite | 1.4.0 | 1.4.2 |
-| aptible toolbelt | 0.26.8 | 1.0.2 |
-| arc | 1.159.0 | 1.166.0 |
-| archaeology | 1.6 | 1.7 |
-| arq | 7.47.3 | 7.48 |
-| asana | 2.8.0 | 2.9.1 |
-| audacity | 3.7.8 | 4.0.0 |
-| audio hijack | 4.5.9 | 4.6.0 |
-| aws client vpn | 6.0.0 | 6.1.1 |
-| aws corretto jdk | 21.0.12.8.1 | 21.0.12.12.1 |
-| axure rp | 11.0.0.4137 | 11.0.0.4150 |
-| azul zulu java standard edition development kit | 26.0.2 | 27.0.0 |
-| backblaze | 10.0.2.1048 | 10.0.3.1076 |
-| badgeify | 1.14.4 | 1.14.6 |
-| bambu studio | 02.07.01.62 | 02.08.02.61 |
-| bartender | 6.6.2 | 7.0.4 |
-| batfi | 3.1.1 | 4.0.1 |
-| bbedit | 16.0.2 | 16.0.3 |
-| bdash | 1.35.1 | 1.35.2 |
-| beekeeper studio | 5.9.3 | 6.1.2 |
-| beeper | 4.3.20 | 4.3.152 |
-| betterdisplay | 4.3.5 | 5.0.6 |
-| bettermouse | 1.6 | 1.7 |
-| bettertouchtool | 6.681 | 6.861 |
-| betterzip | 6.0.4 | 6.0.6 |
-| beyond compare | 5.2.5.32528 | 5.2.6.32774 |
-| bezel | 4.7.0 | 5.1.0 |
-| bibdesk | 1.9.12 | 1.9.13 |
-| bilibili | 1.18.0 | 1.19.0 |
-| binance | 2.4.1 | 2.5.2 |
-| binary ninja | 5.3.9757 | 6.0.10601 |
-| biscuit | 2.1.1 | 2.1.2 |
-| bitbox | 4.51.3 | 4.52.0 |
-| bitfocus companion | 5.0.3 | 5.0.6 |
-| bitwarden | 2026.7.0 | 2026.9.0 |
-| bitwig studio | 6.0.11 | 6.1.1 |
-| blender | 5.2.0 | 5.2.2 |
-| blip | 1.1.16 | 1.2.2 |
-| blockblock | 2.5.0 | 2.5.2 |
-| bluej | 6.0.0 | 6.0.1 |
-| boltai 2 | 2.14.4 | 2.17.1 |
-| boom 3d | 2.3.0 | 2.3.2 |
-| box drive | 2.53.219 | 2.54.172 |
-| brainfm | 0.0.295 | 0.0.327 |
-| brave | 1.93.134.0 | 1.96.59.0 |
-| bria | 6.8.7.1 | 6.8.8 |
-| bruno | 4.0.0 | 4.2.0 |
-| bunch | 1.4.17 | 1.4.19 |
-| busycal | 2026.3.1 | 2026.3.3 |
-| busycontacts | 2026.3.1 | 2026.3.3 |
-| buzz | 1.4.4 | 1.4.5 |
-| calhash | 1.5.7 | 1.5.8 |
-| calibre | 9.13.0 | 9.15.0 |
-| calibrite profiler | 3.1.0 | 3.1.2 |
-| camtasia | 2026.1.4 | 2026.2.3 |
-| canva | 1.123.1 | 1.126.0 |
-| capacities | 1.67.19 | 1.71.12 |
-| capcut | 9.2.0.4444 | 9.5.0.4590 |
-| captin | 1.3.1 | 2.0.1 |
-| carbon copy cloner | 7.1.6 | 7.2.1 |
-| cardhop | 2.4.8 | 2.5 |
-| chatgpt | 26.803.41515 | 26.924.22138 |
-| chatwise | 26.7.8 | 26.9.1 |
-| chatwork | 2.24.0 | 2.25.3 |
-| chipmunk log analyzer  viewer | 4.1.0 | 4.3.0 |
-| chrome remote desktop | 151.0.7922.13 | 154.0.8037.11 |
-| chronosync | 12.0.2 | 12.0.3 |
-| cisco jabber | 20260122074039 | 20260917083054 |
-| citrix workspace | 26.07.0.71 | 26.09.0.17 |
-| clamxav | 3.10.2 | 3.11.1 |
-| claude | 1.26832.0 | 2.9939.2 |
-| claude code | 2.1.220 | 2.1.274 |
-| cleanmymac | 5.5.7 | 5.7.0 |
-| cleanshot | 4.8.10 | 5.0.1 |
-| clickshare | 4.50.0 | 4.51.1 |
-| clickup | 3.5.262 | 3.5.343 |
-| clion | 2026.2.1 | 2026.2.3 |
-| clipbook | 1.36.0 | 2.2.3 |
-| clockify | 2.12.5 | 2.12.6 |
-| clop | 3.3.3 | 3.4.3 |
-| cloudflare warp | 2026.6.880.0 | 2026.7.1376.0 |
-| cmux | 0.64.22 | 0.64.25 |
-| coconutbattery | 4.3.3 | 4.4.0 |
-| coherence x | 5.1.3 | 5.1.4 |
-| commander one | 3.17.1 | 3.18 |
-| connect fonts | 28.1.6 | 28.1.8 |
-| cork | 1.7.6 | 2.0.3 |
-| coteditor | 7.0.8 | 7.1.0 |
-| craft | 3.5.3 | 3.6.8 |
-| cursor | 3.15.6 | 3.22.7 |
-| cursorsense | 2.4.3 | 2.5 |
-| cursr | 1.7.3 | 1.7.4 |
-| cyberduck | 9.5.3 | 9.5.4 |
-| dataflare | 3.1.9 | 3.2.2 |
-| datagrip | 2026.2.3 | 2026.2.5 |
-| dbeaver community edition | 26.1.4 | 26.2.1 |
-| dbgate | 7.2.4 | 7.3.1 |
-| deezer | 7.1.300 | 7.1.340 |
-| default folder x | 6.2.8 | 6.3 |
-| defold | 1.13.0 | 1.13.1 |
-| desktime | 6.2.1 | 6.3.0 |
-| devknife | 1.16.0 | 1.18.1 |
-| devonthink | 4.3.2 | 4.4 |
-| dia | 1.43.1 | 1.50.1 |
-| dictionaries | 2.9 | 3.0 |
-| digiexam | 26.1.24 | 26.3.17 |
-| dingtalk | 8.0.2 | 9.0.1 |
-| discord | 0.0.406 | 0.0.413 |
-| displaperture | 2.3 | 3.0 |
-| displaylink usb graphics software | 16.2 | 17.0 |
-| dockdoor | 1.39.5 | 1.40.1 |
-| docker desktop | 4.85.0 | 4.92.0 |
-| dockfix | 4.2.1 | 5.3.0-beta |
-| dockside | 2.9.26 | 2.9.33 |
-| douyin | 8.3.0 | 8.5.1 |
-| downie | 4.12.12 | 4.13.1 |
-| drawio desktop | 31.1.8 | 31.5.3 |
-| dropbox | 264.4.3385 | 270.4.3312 |
-| dropshare | 6.14 | 6.15 |
-| duckduckgo | 1.201.0 | 1.208.0 |
-| easydict | 2.21.0 | 2.22.0 |
-| ecamm live | 4.5.9 | 4.5.13 |
-| eclipse for rcp and rap developers | 4.40 | 4.41 |
-| eclipse ide for cc developers | 4.40 | 4.41 |
-| eclipse ide for eclipse committers | 4.40 | 4.41 |
-| eclipse ide for java and dsl developers | 4.40 | 4.41 |
-| eclipse ide for java developers | 4.40 | 4.41 |
-| eclipse ide for java ee developers | 4.40 | 4.41 |
-| eclipse ide for php developers | 4.40 | 4.41 |
-| eclipse installer | 4.40 | 4.41 |
-| eclipse modeling tools | 4.40 | 4.41 |
-| eclipse temurin java development kit | 26.0.2 | 27 |
-| egnyte | 1.19.1 | 1.20.1 |
-| electron cash | 4.4.5 | 4.4.6 |
-| electrum | 4.8.0 | 4.8.2 |
-| element | 1.12.25 | 1.12.29 |
-| elephas | 11.8002 | 12.0001 |
-| elgato camera hub | 2.3.0.7286 | 2.3.0.7295 |
-| elgato stream deck | 7.5.1.22901 | 7.6.0.23012 |
-| em client | 10.4.5647 | 10.4.5674 |
-| enpass | 6.12.5.2673 | 6.12.6.2759 |
-| ente | 1.7.27 | 1.7.29 |
-| epic games launcher | 20.1.4 | 20.3.3 |
-| equinox | 6.0 | 7.0 |
-| etcher | 2.1.6 | 2.1.7 |
-| expandrive | 2026.08.06.880 | 2026.09.24.890 |
-| expressvpn | 14.2.0.13656 | 14.3.1.15429 |
-| fantastical | 4.1.17 | 4.2.1 |
-| farrago | 2.1.5 | 2.2.0 |
-| fastmail | 1.5.1 | 1.8.0 |
-| fathom | 3.5.0 | 3.8.1 |
-| fellow | 5.7.2 | 5.7.9 |
-| ferdium | 7.1.2 | 7.2.3 |
-| figma | 126.7.10 | 126.8.18 |
-| filemaker pro | 26.0.1.51 | 26.0.3.307 |
-| fission | 2.9.4 | 2.9.5 |
-| flexoptix app | 5.66.0-latest | 5.68.0-latest |
-| floorp browser | 12.16.4 | 12.18.1 |
-| flowvision | 1.7.5 | 1.7.6 |
-| fluidvoice | 1.6.7 | 1.6.9 |
-| fontbase | 2026.5.23 | 2026.6.0 |
-| fork | 2.66.7 | 2.70.2 |
-| forklift | 4.7.3 | 4.7.5 |
-| foxit pdf editor | 14.0.5.69339 | 14.0.8.69494 |
-| framer | 2026.31.2 | 2026.34.0 |
-| franz | 6.5.3 | 6.9.0 |
-| free download manager | 6.34.4 | 6.35 |
-| freefilesync | 14.10 | 14.12 |
-| freemacsoft appcleaner | 3.6.8 | 3.7 |
-| fsnotes | 7.3.1 | 7.3.4 |
-| gdevelop | 5.6.277 | 5.6.282 |
-| geekbench | 6.7.1 | 7.0.0 |
-| gephi | 0.11.2 | 0.11.3 |
-| gimp | 3.2.4 | 3.2.6 |
-| gitbutler | 0.22.0 | 0.22.3 |
-| gitfox | 4.6.2 | 5.1.0 |
-| github copilot for xcode | 0.50.0 | 0.51.0 |
-| github desktop | 3.6.3-931da4a1 | 3.6.6-8b85519e |
-| gitify | 7.2.0 | 7.8.0 |
-| gitkraken | 12.4.0 | 12.5.0 |
-| glyphs | 3.5 | 3.5.1 |
-| godot engine | 4.7.1 | 4.7.2 |
-| godspeed | 1.9.19 | 1.9.22 |
-| gog galaxy | 2.1.8.32 | 2.1.10.56 |
-| goland | 2026.2.0.1 | 2026.2.3 |
-| goodsync | 12.11.5 | 12.11.8 |
-| google chrome | 151.0.7922.109 | 154.0.8037.58 |
-| google drive | 129.0.1 | 131.0.2 |
-| google earth pro | 7.3.7.1155 | 7.3.7.1327 |
-| goose | 1.45.0 | 1.52.0 |
-| grammarly desktop | 1.181.2.0 | 1.195.0.0 |
-| grandperspective | 3.7.2 | 3.8.1 |
-| granola | 7.469.1 | 7.595.2 |
-| graphicconverter | 12.5.2 | 12.5.4 |
-| graphpad prism | 11.0.2 | 11.1.0 |
-| hazeover | 1.9.7 | 1.9.8 |
-| headlamp | 0.44.0 | 0.45.0 |
-| hepta | 1.102.0 | 1.112.0 |
-| hey | 1.3.3 | 1.3.7 |
-| hidden bar | 1.10 | 1.11.1 |
-| hides | 7.3 | 7.4 |
-| highlight | 1.3.282 | 1.3.284 |
-| home assistant | 2026.7.3 | 2026.9.2 |
-| hopper disassembler | 6.5.0 | 6.6.0 |
-| hoppscotch | 26.7.0-0 | 26.8.2-0 |
-| http toolkit | 1.27.0 | 1.27.2 |
-| imazing | 3.6.2 | 3.6.5 |
-| imazing converter | 2.0.14 | 2.0.15 |
-| imazing profile editor | 2.2.1 | 2.3.0 |
-| input source pro | 2.11.0 | 2.12.0 |
-| insomnia | 13.1.0 | 13.3.0 |
-| insta360 studio | 5.9.10 | 6.0.5 |
-| integrity | 12.12.1 | 12.13.0 |
-| intellij idea ultimate | 2026.2.0.1 | 2026.2.3 |
-| istats menus | 7.30 | 7.50.1 |
-| iterm2 | 3.6.11 | 3.7.3 |
-| itsycal | 0.15.12 | 0.15.14 |
-| jabra direct | 8.1.14601 | 8.2.23201 |
-| jami | 2.41 | 2.42 |
-| jamie | 5.7.10 | 5.7.21 |
-| jamovi | 28.1.0.0 | 28.3.0.0 |
-| jellyfin | 10.11.11 | 12.1 |
-| jetbrains phpstorm | 2026.2.0.1 | 2026.2.3 |
-| jetbrains rider | 2026.2.0.2 | 2026.2.2 |
-| jetbrains toolbox | 3.6.4 | 3.8.1 |
-| joplin | 3.6.15 | 3.7.21 |
-| jumpshare | 3.5.1 | 3.5.4 |
-| karabiner elements | 16.1.0 | 16.3.0 |
-| kdenlive | 26.04.3 | 26.08.1 |
-| keeper password manager | 18.5.0 | 18.6.2 |
-| keka | 1.6.7 | 1.6.8 |
-| keyboardcleantool | 7 | 8.3 |
-| keycastr | 0.10.5 | 0.11.1 |
-| keyclu | 0.32 | 0.33 |
-| keystore explorer | 5.6.1 | 5.7.0 |
-| kicad | 10.0.5 | 10.0.6 |
-| kiro | 1.0.288 | 1.1.70 |
-| kitty | 0.48.2 | 0.49.1 |
-| knockknock | 4.0.3 | 4.1.0 |
-| krisp | 3.14.6 | 3.16.8 |
-| krita | 5.3.3 | 5.3.4 |
-| lark | 7.73.11 | 8.0.3 |
-| launchcontrol | 2.10.5 | 2.11 |
-| launchos | 2.2.1 | 2.4.0 |
-| lens | 2026.6.260931 | 2026.9.181013 |
-| libreoffice | 26.2.5 | 26.8.0 |
-| librewolf | 152.0.6 | 156.0.1 |
-| lightburn | 2.1.03 | 2.1.04 |
-| linphone | 6.2.0 | 6.2.3 |
-| little snitch | 6.4.1 | 6.5 |
-| lm studio | 0.4.20 | 0.4.25 |
-| local | 10.1.1 | 10.1.2 |
-| localsend | 1.17.0 | 1.18.2 |
-| logitech g hub | 2026.4.919028 | 2026.6.974819 |
-| logitech options | 2.5.926888 | 2.7.970334 |
-| lookaway | 2.4.0 | 2.4.9 |
-| loom | 0.367.1 | 0.378.0 |
-| loopback | 2.4.10 | 2.5.0 |
-| loupdeck | 6.3.0.340 | 6.4.1.364 |
-| mac mouse fix | 3.0.8 | 3.1.0 |
-| maccy | 2.7.0 | 2.7.1 |
-| macfuse | 5.3.3 | 5.4.0 |
-| macpacker | 0.19.0 | 0.22.0 |
-| macpass | 0.8.1 | 0.8.2 |
-| macpilot | 17.5 | 18.0.1 |
-| macshot | 4.2.1 | 4.3.0 |
-| macsyzones | 3.0.4 | 3.1.1 |
-| mactracker | 8.2.3 | 8.2.5 |
-| macwhisper | 14.6 | 15.2.1 |
-| mailspring | 1.23.0 | 1.25.0 |
-| malwarebytes for mac | 5.25.2.4106 | 5.27.1.4191 |
-| marginnote | 4.4.5 | 4.4.6 |
-| markedit | 1.33.1 | 1.36.0 |
-| marsedit | 5.4.4 | 5.4.5 |
-| masscode | 5.10.0 | 5.12.0 |
-| mattermost | 6.2.2 | 6.3.0 |
-| megasync | 6.5.1.0 | 6.6.2.0 |
-| melodics | 5.0.993 | 5.0.1393 |
-| mendeley reference manager | 2.148.0 | 2.149.0 |
-| menubar stats | 3.9 | 3.9.916 |
-| merlin project | 9.2.0 | 9.2.1 |
-| meta | 2.5.1 | 2.5.9 |
-| microsoft 365 copilot | 1.2607.2701 | 1.2608.0301 |
-| microsoft auto update | 4.84.26071119 | 4.85.26091737 |
-| microsoft azure storage explorer | 1.45.0 | 1.46.0 |
-| microsoft build of openjdk | 25.0.4 | 25.0.4.1 |
-| microsoft edge | 151.0.4129.72 | 154.0.4258.37 |
-| microsoft excel | 16.111.26080215 | 16.113.26092012 |
-| microsoft office | 16.111.26080215 | 16.113.26092012 |
-| microsoft office businesspro | 16.111.26080215 | 16.113.26092012 |
-| microsoft onenote | 16.111.26080215 | 16.113.26092012 |
-| microsoft outlook | 16.111.26071325 | 16.113.26091740 |
-| microsoft powerpoint | 16.111.26080215 | 16.113.26092012 |
-| microsoft teams | 26198.202.4929.7171 | 26225.1708.5124.9749 |
-| microsoft visual studio code | 1.132.0 | 1.139.1 |
-| microsoft word | 16.111.26080215 | 16.113.26092012 |
-| middleclick | 3.2.0 | 3.3.0 |
-| milanote | 3.18.119 | 3.18.131 |
-| mimestream | 1.10.6 | 1.10.8 |
-| mission control plus | 1.24 | 1.27 |
-| missive | 11.29.0 | 11.33.0 |
-| mockoon | 9.8.0 | 9.9.0 |
-| modern csv | 2.4.3.1 | 2.4.4 |
-| mongodb compass | 1.49.14 | 1.51.0 |
-| monitorcontrol | 4.3.3 | 4.4.0 |
-| moom | 4.5.1 | 4.6.0 |
-| mountain duck | 5.3.1 | 5.3.2 |
-| movist pro | 2.17.2 | 2.19.0 |
-| mozilla firefox | 153.0.3 | 156.0.1 |
-| mozilla firefox developer edition | 154.0b8 | 157.0b5 |
-| mozilla firefox esr | 140.13.0 | 140.16.0 |
-| mozilla thunderbird | 153.0.2 | 156.0.1 |
-| mqttx | 1.13.0 | 1.13.1 |
-| mullvad browser | 15.0.19 | 15.0.23 |
-| mullvad vpn | 2026.3 | 2026.5 |
-| multipass | 1.16.3 | 1.16.4 |
-| multiviewer | 2.8.3 | 2.9.0 |
-| musescore | 4.7.4.260706075 | 4.7.5.260831071 |
-| native access | 3.25.2 | 3.26.0 |
-| nektony app cleaner  uninstaller | 9.2.4 | 10.0.1 |
-| neofinder | 9.2.1 | 9.3 |
-| net sdk | 10.0.302 | 10.0.401 |
-| netnewswire | 7.1.2 | 7.1.4 |
-| netron | 9.2.1 | 9.3.0 |
-| netspot | 5.1.4971 | 6.0.6016 |
-| nextcloud | 34.0.1 | 34.0.4 |
-| nextcloud talk desktop | 2.2.3 | 2.3.2 |
-| nordlayer | 3.11.0 | 3.12.1 |
-| nordpass | 7.9.4 | 7.11.7 |
-| nordvpn | 10.8.1 | 10.11.0 |
-| nota gyazo gif | 10.12.0 | 11.2.0 |
-| notesnook | 3.4.5 | 3.4.8 |
-| notion | 7.29.0 | 7.35.1 |
-| novabench | 6.1.2 | 6.2.0 |
-| nvidia geforce now | 2.0.87.131 | 2.0.88.129 |
-| obs | 32.2.1 | 32.2.2 |
-| obsidian | 1.13.4 | 1.13.7 |
-| ocenaudio | 3.20.2 | 3.21.0 |
-| okta advanced server access | 1.109.0 | 1.114.0 |
-| okta verify | 9.67.1 | 9.69.0 |
-| ollama | 0.32.6 | 0.34.4 |
-| omnifocus | 4.8.13 | 4.9.2 |
-| omnigraffle | 7.25.3 | 7.26 |
-| omnioutliner | 6.2.1 | 6.3 |
-| omniplan | 4.10.3 | 4.11 |
-| omnissa horizon client | 2506-8.16.0-16536825094 | 2606-8.19.0-32216012208 |
-| onedrive | 26.119.0622.0003 | 26.153.0809.0004 |
-| onlyswitch | 2.7.2 | 2.7.6 |
-| onyx | 5.0.2 | 5.1.0 |
-| openaudible | 4.8.7 | 4.8.8 |
-| opencloud desktop | 3.0.3 | 4.0.0 |
-| openmtp | 3.2.25 | 3.3.0 |
-| openshot video editor | 3.5.1 | 4.0.0 |
-| opera | 134.0.5954.46 | 136.0.6008.52 |
-| opera gx | 134.0.5954.44 | 136.0.6008.67 |
-| oracle virtualbox | 7.2.14 | 7.2.20 |
-| orion browser | 1.1.1 | 1.1.2 |
-| owncloud | 7.1.0.19041 | 7.1.1.19543 |
-| pale moon | 34.3.2 | 35.0.1 |
-| parallels desktop | 26.4.1-57516 | 27.0.2-58673 |
-| paste | 6.6.6 | 7.0.0 |
-| pastebot | 3.0 | 3.1.1 |
-| path finder | 26.1.7 | 26.1.9 |
-| pdf expert | 3.12 | 3.13.3 |
-| perimeter 81 | 12.10.1.12081 | 12.11.0.12314 |
-| permute | 4.0.6 | 4.0.11 |
-| pgadmin4 | 9.17 | 9.18 |
-| picview | 5.0.2 | 5.1.3 |
-| piezo | 1.9.9 | 1.9.10 |
-| pingplotter | 5.27.12 | 5.27.13 |
-| pitch | 2.139.0 | 2.146.0 |
-| plex | 1.112.0.359 | 1.115.0.426 |
-| plex media server | 1.43.3.10861 | 1.43.4.10903 |
-| plexamp | 4.13.2 | 4.50.19 |
-| podman desktop | 1.29.1 | 1.29.3 |
-| polymail | 2.4.3005 | 2.4.3006 |
-| popclip | 2026.7.1 | 2026.8.1 |
-| positron | 2026.08.0-331 | 2026.09.1-2 |
-| postman | 12.22.8 | 12.29.5 |
-| powerphotos | 3.4.3 | 3.4.7 |
-| preform | 3.48.0 | 3.63.1 |
-| pritunl | 1.3.4696.56 | 1.4.4752.50 |
-| privileges | 2.5.3 | 2.6.0 |
-| processing | 4.5.6 | 4.5.7 |
-| processspy | 1.14.0 | 1.15.2 |
-| proton drive | 3.0.2 | 3.0.3 |
-| proton mail | 1.13.4 | 1.14.0 |
-| proton mail bridge | 3.25.0 | 3.27.0 |
-| proton pass | 1.38.1 | 1.41.1 |
-| proxyman | 6.14.0 | 26.0.0 |
-| ps remote play | 9.0.0 | 9.5.0 |
-| purevpn | 9.45.0 | 9.47.0 |
-| pycharm | 2026.2.0.1 | 2026.2.3 |
-| qgis | 4.2.1 | 4.2.2 |
-| qq | 6.9.99 | 7.0.0 |
-| rambox | 2.7.0 | 2.7.1 |
-| raspberry pi imager | 2.0.10 | 2.0.11.1 |
-| raycast | 1.104.24 | 2.5.2.0 |
-| readest | 0.11.20 | 0.12.10 |
-| real vnc server | 7.17.0 | 7.18.0 |
-| reaper | 7.78 | 7.80 |
-| rectangle | 0.98 | 2.0.1 |
-| rectangle pro | 3.82 | 3.91 |
-| reminders menubar | 2.1.1 | 2.2.0 |
-| remnote | 1.27.19 | 1.28.32 |
-| remote desktop manager | 2026.2.4.4 | 2026.3.0.5 |
-| remotehelp | 1.0.2509231 | 1.0.2606021 |
-| reqable | 3.2.17 | 3.2.23 |
-| retcon | 1.6.2 | 1.6.3 |
-| retrobatch | 2.3.1 | 2.4.1 |
-| rewritebar | 2.31.0 | 2.35.0 |
-| rightfont | 10.1.1 | 10.2 |
-| ringcentral | 26.2.30 | 26.3.20 |
-| rive | 0.8.5390 | 0.9.19 |
-| riverside studio | 1.29.0 | 1.32.1 |
-| rize | 3.0.26 | 3.0.45 |
-| rocketchat | 4.15.6 | 4.17.3 |
-| roon | 2.71 | 2.73 |
-| rotato | 154 | 154.11 |
-| royal tsx | 6.4.3.1000 | 6.4.5.1000 |
-| rstudio | 2026.07.1 | 2026.09.0 |
-| rsyncui | 3.0.3 | 3.0.5 |
-| rubymine | 2026.2 | 2026.2.3 |
-| rustrover | 2026.2.1 | 2026.2.3 |
-| sabnzbd | 5.0.4 | 5.1.3 |
-| safe exam browser | 3.7 | 3.7.1 |
-| santa | 2026.7 | 2026.8 |
-| sbarex qlmarkdown | 1.5.2 | 1.5.5 |
-| scratch | 3.32.0 | 3.32.1 |
-| secretive | 3.0.4 | 4.0.0 |
-| sensei | 2.1.1 | 2.1.3 |
-| sequel ace | 5.3.1 | 6.0.1 |
-| setapp | 3.54.2 | 3.56.1 |
-| sf symbols | 8.0 | 27.0 |
-| shapr3d | 26.141.0.11474 | 26.170.0.11783 |
-| shift | 9.6.7.1268 | 9.6.9.1283 |
-| shottr | 1.9.1 | 1.9.2 |
-| shutter encoder | 20.2 | 20.3 |
-| sidenotes | 1.6.3 | 1.6.6 |
-| signal | 8.22.0 | 8.28.0 |
-| silentknight | 2.14 | 3.02 |
-| silhouette studio | 5.0.414.001 | 5.0.539.001 |
-| simplysign desktop | 2.10.22-9.4.4.0 | 2.10.24-9.4.5.0 |
-| sipgate | 2.42.0 | 2.44.3 |
-| sketch | 2026.2.1 | 2026.3.1 |
-| skim | 1.7.15 | 1.7.17 |
-| slab | 1.7.2 | 1.8.0 |
-| slack | 4.51.180 | 4.52.162 |
-| smultron | 14.4.9 | 14.5 |
-| snagit | 2026.3.1 | 2026.3.3 |
-| sonos s2 | 90.0-77070 | 90.0-79210 |
-| sound control | 3.3.3 | 3.4.0 |
-| soundanchor | 1.8.2 | 1.8.3 |
-| soundsource | 6.1.1 | 6.1.4 |
-| spamsieve | 3.3.1 | 3.3.2 |
-| splashtop business | 3.8.4.0 | 3.8.6.0 |
-| splashtop streamer | 3.8.4.2 | 3.8.6.0 |
-| splice | 5.4.12 | 5.4.13 |
-| spline | 0.12.11 | 0.20.49 |
-| spotify | 1.2.95.453 | 1.3.1.234 |
-| spyder | 6.1.6 | 6.1.7 |
-| ssh config editor | 2.6.11 | 2.6.12 |
-| standard notes | 3.201.21 | 3.202.0 |
-| stats | 3.0.10 | 3.0.17 |
-| steermouse | 5.7.8 | 5.8 |
-| studio | 2.26.7 | 2.26.8 |
-| studio 3t | 2026.12.0 | 2026.13.1 |
-| sublime merge | 2125 | 2132 |
-| sublime text | 4200 | 4215 |
-| sunsama | 3.4.11 | 3.4.12 |
-| superduper | 4.0.1 | 4.0.8 |
-| superhuman | 1041.0.29 | 1041.0.62 |
-| superlist | 1.56.4 | 1.57.6 |
-| superwhisper | 2.17.2 | 2.18.4 |
-| supremo | 4.12.0.2999 | 4.12.0.3004 |
-| surfshark | 4.28.1 | 4.30.1 |
-| surge | 6.8.0 | 6.9.1 |
-| suspicious package | 4.7 | 4.8 |
-| swift shift | 1.3.2 | 1.5.0 |
-| swiftbar | 2.0.1 | 2.1.1 |
-| swish | 1.13.2 | 1.13.3 |
-| sync | 2.2.61 | 2.2.64 |
-| syncmate | 8.10.575 | 8.11.604 |
-| syncovery | 11.16.0 | 12.7.4 |
-| synology drive | 4.0.3 | 4.2.0 |
-| syntax highlight | 2.1.30 | 2.1.32 |
-| tabby | 1.0.235 | 1.0.237 |
-| tableau desktop | 2026.2.1 | 2026.2.3 |
-| tableau prep | 2026.2.1 | 2026.2.3 |
-| tableau public | 2026.2.1 | 2026.2.3 |
-| tableau reader | 2026.2.1 | 2026.2.3 |
-| tableplus | 26.8.6 | 26.10.22 |
-| tabtab | 2.1.2 | 2.2 |
-| tailscale | 1.102.2 | 1.102.4 |
-| taskade | 4.6.14 | 4.7.0 |
-| taskbar | 1.6.1 | 1.6.3 |
-| teamviewer | 15.80.4 | 15.81.6 |
-| telegram for macos | 12.9 | 12.10 |
-| tenable nessus agent | 11.2.2 | 11.2.3 |
-| termius | 9.42.2 | 10.1.0 |
-| textexpander | 8.4.6 | 8.4.8 |
-| thaw | 1.2.0 | 2.0.1 |
-| ticktick | 8.0.75 | 8.2.30 |
-| tidal | 2.43.0 | 2.43.2 |
-| timescribe | 1.15.0 | 1.17.1 |
-| timing | 2026.4.1 | 2026.5 |
-| tor browser | 15.0.19 | 15.0.23 |
-| tower | 17.1 | 17.3 |
-| tradingview desktop | 3.3.0 | 3.4.1 |
-| transcribe | 9.60.3 | 9.60.7 |
-| transfer | 2.4.3 | 2.4.4 |
-| tresorit | 3.5.3492.4840 | 3.5.3528.4860 |
-| trezor suite | 26.7.4 | 26.9.2 |
-| tunnelblick | 8.0.3 | 9.0.1 |
-| tuple | 3.1.3 | 3.3.5 |
-| tuta mail | 356.260807.0 | 360.260922.0 |
-| twingate | 2026.182.26057 | 2026.259.28406 |
-| typeface | 4.4.1 | 4.5.0 |
-| typora | 1.14.9 | 1.14.10 |
-| ubar | 4.2.3 | 4.2.5 |
-| ungoogled chromium | 150.0.7871.46-1.1 | 152.0.7977.82-1.1 |
-| unifi identity endpoint | 4.1.1 | 4.2.1 |
-| unity hub | 3.20.0 | 3.21.3 |
-| updf | 2.5.5 | 2.5.7 |
-| vanilla | 2.2 | 3.0 |
-| vellum | 4.1.4 | 4.1.5 |
-| viber | 1.0.0.93 | 1.0.0.107 |
-| vimr | 0.65.0 | 0.66.1 |
-| visual paradigm | 18.0 | 18.1 |
-| visualvm | 2.2.1 | 2.2.2 |
-| vivaldi | 8.1.4087.62 | 8.2.4133.76 |
-| vlc media player | 3.0.23 | 3.0.24 |
-| vpn tracker 365 | 26.7 | 26.8 |
-| vscodium | 1.126.04524 | 1.135.06055 |
-| vuescan | 9.8.56 | 9.8.59 |
-| wacom tablet | 6.4.13-4 | 6.4.14-2 |
-| warp | 0.2026.08.05.09.03.stable | 0.2026.09.16.08.27.stable |
-| waterfox | 6.6.17 | 6.7.4 |
-| wavebox | 151.2.148.2 | 154.3.5.2 |
-| wealthfolio | 3.6.2 | 3.9.0 |
-| weasis | 4.7.2 | 4.7.3 |
-| webcatalog | 77.8.0 | 80.2.1 |
-| webex | 46.8.0.33593 | 46.9.0.35800 |
-| webstorm | 2026.2.1 | 2026.2.3 |
-| wechat for mac | 4.1.12.29 | 4.1.15.22 |
-| whatroute | 2.8.0 | 2.8.1 |
-| whatsapp | 26.31.27 | 26.38.20 |
-| whatsize | 8.2.7 | 8.2.9 |
-| whimsical | 2026.10.1 | 2026.12.2 |
-| wifiman desktop | 1.2.8 | 1.3.0 |
-| winbox | 4.3 | 4.4 |
-| windows app | 11.3.8 | 11.4.2 |
-| wins | 3.4 | 3.6 |
-| wirecast | 16.5.3 | 16.5.4 |
-| wireshark | 4.6.7 | 4.6.9 |
-| workflowy | 4.3.2608061204 | 4.3.2609230951 |
-| workspaces | 2.1.5 | 2.3 |
-| xmind | 26.05.01105-202607290707 | 26.05.01107-202609082317 |
-| xnsoft xnconvert | 1.115.0 | 1.116.0 |
-| xnviewmp | 1.11.5 | 1.11.7 |
-| yaak | 2026.5.0 | 2026.8.1 |
-| yacreader | 10.1.0.260703260 | 10.3.1.260922387 |
-| zed | 1.14.2 | 1.21.0 |
-| zen browser | 1.21.12b | 1.22.3b |
-| zeplin | 10.32.0 | 10.33.1 |
-| zettlr | 4.7.0 | 4.8.0 |
-| zight | 8.7.2 | 8.7.3 |
-| zoom | 7.1.5.84650 | 7.2.1.88329 |
-| zotero | 9.0.6 | 10.0.4 |
-| zulip | 5.12.4 | 5.13.2 |
-| zwift | 1.1.17 | 1.1.18 |
+| 1password cli | 2.38.1 | 2.39.0 |
+| camunda modeler | 5.49.0 | 5.51.1 |
+| dialpad | 2607.1.1 | 2609.3.0 |
+| espanso | 2.4.0 | 2.4.1 |
+| filebot | 5.2.3 | 5.3.0 |
+| google antigravity | 2.6.0 | 2.17.0 |
+| houdahspot | 6.8.2 | 6.8.4 |
+| ok json | 2.10.2 | 3.1 |
+| screenflick | 3.3.2 | 3.3.3 |
+| sqlpro for mssql | 2026.173 | 2026.238 |
+| sqlpro for mysql | 2026.173 | 2026.238 |
+| sqlpro for postgres | 2026.87 | 2026.238 |
+| sqlpro for sqlite | 2026.85 | 2026.247 |
+| sqlpro studio | 2026.87 | 2026.238 |
+| stats | 3.0.17 | 3.0.18 |
+| transcribe | 9.60.7 | 9.70.0 |
+| wazuh agent | 4.14.7 | 4.14.8 |
 
-31 app updates could not be published. See [catalog sync status](catalog-sync.json).
+6 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
@@ -1222,7 +629,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | ❌ .NET SDK | 10.0.401 |
 | <img src='Logos/010_editor.png' width='32' height='32'> 010 Editor | 16.0.4 |
 | <img src='Logos/1password.png' width='32' height='32'> 1Password | 8.12.36 |
-| <img src='Logos/1password_cli.png' width='32' height='32'> 1Password CLI | 2.38.1 |
+| <img src='Logos/1password_cli.png' width='32' height='32'> 1Password CLI | 2.39.0 |
 | <img src='Logos/4k_slideshow_maker.png' width='32' height='32'> 4K Slideshow Maker | 2.0.1 |
 | <img src='Logos/4k_stogram.png' width='32' height='32'> 4K Stogram | 4.9.0 |
 | <img src='Logos/4k_video_downloader.png' width='32' height='32'> 4K Video Downloader | 4.33.5 |
@@ -1403,7 +810,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/calibrite_profiler.png' width='32' height='32'> calibrite PROFILER | 3.1.2 |
 | <img src='Logos/calmly_writer.png' width='32' height='32'> Calmly Writer | 2.0.66 |
 | <img src='Logos/camtasia.png' width='32' height='32'> Camtasia | 2026.2.3 |
-| <img src='Logos/camunda_modeler.png' width='32' height='32'> Camunda Modeler | 5.49.0 |
+| <img src='Logos/camunda_modeler.png' width='32' height='32'> Camunda Modeler | 5.51.1 |
 | <img src='Logos/canva.png' width='32' height='32'> Canva | 1.126.0 |
 | <img src='Logos/capacities.png' width='32' height='32'> Capacities | 1.71.12 |
 | <img src='Logos/capcut.png' width='32' height='32'> CapCut | 9.5.0.4590 |
@@ -1508,6 +915,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
 | <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 26.2.1 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 7.3.1 |
+| ❌ DDPM | 2.3.0.2004 |
 | <img src='Logos/debookee.png' width='32' height='32'> Debookee | 8.2.0 |
 | <img src='Logos/deckset.png' width='32' height='32'> Deckset | 2.0.51 |
 | <img src='Logos/deepgit.png' width='32' height='32'> DeepGit | 26.1.003 |
@@ -1527,7 +935,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/devtoys.png' width='32' height='32'> DevToys | 2.0.9.0 |
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
 | <img src='Logos/dia.png' width='32' height='32'> Dia | 1.50.1 |
-| <img src='Logos/dialpad.png' width='32' height='32'> Dialpad | 2607.1.1 |
+| <img src='Logos/dialpad.png' width='32' height='32'> Dialpad | 2609.3.0 |
 | <img src='Logos/dictionaries.png' width='32' height='32'> Dictionaries | 3.0 |
 | <img src='Logos/diffmerge.png' width='32' height='32'> DiffMerge | 4.2.1.1013 |
 | <img src='Logos/diffusion_bee.png' width='32' height='32'> Diffusion Bee | 2.5.3 |
@@ -1609,7 +1017,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/envkey.png' width='32' height='32'> EnvKey | 1.5.10 |
 | <img src='Logos/epic_games_launcher.png' width='32' height='32'> Epic Games Launcher | 20.3.3 |
 | <img src='Logos/equinox.png' width='32' height='32'> Equinox | 7.0 |
-| <img src='Logos/espanso.png' width='32' height='32'> Espanso | 2.4.0 |
+| <img src='Logos/espanso.png' width='32' height='32'> Espanso | 2.4.1 |
 | <img src='Logos/etcher.png' width='32' height='32'> Etcher | 2.1.7 |
 | <img src='Logos/etrecheck.png' width='32' height='32'> EtreCheck | 6.8.16 |
 | <img src='Logos/eudic.png' width='32' height='32'> Eudic | latest |
@@ -1633,7 +1041,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/fig.png' width='32' height='32'> fig | 2.19.0 |
 | <img src='Logos/figma.png' width='32' height='32'> Figma | 126.8.18 |
 | <img src='Logos/file_juicer.png' width='32' height='32'> File Juicer | 4.115 |
-| <img src='Logos/filebot.png' width='32' height='32'> FileBot | 5.2.3 |
+| <img src='Logos/filebot.png' width='32' height='32'> FileBot | 5.3.0 |
 | <img src='Logos/filemaker_pro.png' width='32' height='32'> FileMaker Pro | 26.0.3.307 |
 | <img src='Logos/filen.png' width='32' height='32'> Filen | 3.0.53 |
 | <img src='Logos/finetune.png' width='32' height='32'> FineTune | 1.9.0 |
@@ -1685,6 +1093,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/gitbutler.png' width='32' height='32'> GitButler | 0.22.3 |
 | <img src='Logos/gitfinder.png' width='32' height='32'> GitFinder | 1.7.11 |
 | <img src='Logos/gitfox.png' width='32' height='32'> Gitfox | 5.1.0 |
+| ❌ GitHub Copilot CLI | 1.0.88 |
 | <img src='Logos/github_copilot_for_xcode.png' width='32' height='32'> GitHub Copilot for Xcode | 0.51.0 |
 | <img src='Logos/github_desktop.png' width='32' height='32'> GitHub Desktop | 3.6.6-8b85519e |
 | <img src='Logos/gitify.png' width='32' height='32'> Gitify | 7.8.0 |
@@ -1697,7 +1106,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/goland.png' width='32' height='32'> Goland | 2026.2.3 |
 | <img src='Logos/goodsync.png' width='32' height='32'> GoodSync | 12.11.8 |
 | <img src='Logos/google_ads_editor.png' width='32' height='32'> Google Ads Editor | 2.13 |
-| <img src='Logos/google_antigravity.png' width='32' height='32'> Google Antigravity | 2.6.0 |
+| <img src='Logos/google_antigravity.png' width='32' height='32'> Google Antigravity | 2.17.0 |
 | <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 154.0.8037.58 |
 | <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 131.0.2 |
 | <img src='Logos/google_earth_pro.png' width='32' height='32'> Google Earth Pro | 7.3.7.1327 |
@@ -1736,7 +1145,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | ❌ Hopper Disassembler | 6.6.0 |
 | <img src='Logos/hoppscotch.png' width='32' height='32'> Hoppscotch | 26.8.2-0 |
 | <img src='Logos/hot.png' width='32' height='32'> Hot | 1.9.4 |
-| <img src='Logos/houdahspot.png' width='32' height='32'> HoudahSpot | 6.8.2 |
+| <img src='Logos/houdahspot.png' width='32' height='32'> HoudahSpot | 6.8.4 |
 | <img src='Logos/hp_easy_admin.png' width='32' height='32'> HP Easy Admin | 2.16.0 |
 | <img src='Logos/http_toolkit.png' width='32' height='32'> HTTP Toolkit | 1.27.2 |
 | <img src='Logos/huggingchat.png' width='32' height='32'> HuggingChat | 0.7.0 |
@@ -2012,7 +1421,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/obs.png' width='32' height='32'> OBS | 32.2.2 |
 | <img src='Logos/obsidian.png' width='32' height='32'> Obsidian | 1.13.7 |
 | <img src='Logos/ocenaudio.png' width='32' height='32'> ocenaudio | 3.21.0 |
-| <img src='Logos/ok_json.png' width='32' height='32'> OK JSON | 2.10.2 |
+| <img src='Logos/ok_json.png' width='32' height='32'> OK JSON | 3.1 |
 | <img src='Logos/oka_unarchiver.png' width='32' height='32'> Oka Unarchiver | 2.1.6 |
 | <img src='Logos/okta_advanced_server_access.png' width='32' height='32'> Okta Advanced Server Access | 1.114.0 |
 | <img src='Logos/okta_verify.png' width='32' height='32'> Okta Verify | 9.69.0 |
@@ -2149,7 +1558,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/rapidapi.png' width='32' height='32'> RapidAPI | 4.5.5 |
 | <img src='Logos/rapidweaver.png' width='32' height='32'> RapidWeaver | 9.6.8 |
 | <img src='Logos/raspberry_pi_imager.png' width='32' height='32'> Raspberry Pi Imager | 2.0.11.1 |
-| <img src='Logos/rawtherapee.png' width='32' height='32'> RawTherapee | 5.12 |
+| <img src='Logos/rawtherapee.png' width='32' height='32'> RawTherapee | 5.13 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 2.5.2.0 |
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.11.0 |
 | <img src='Logos/readest.png' width='32' height='32'> Readest | 0.12.10 |
@@ -2211,7 +1620,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/scratch.png' width='32' height='32'> Scratch | 3.32.1 |
 | <img src='Logos/screaming_frog_seo_spider.png' width='32' height='32'> Screaming Frog SEO Spider | 24.3 |
 | <img src='Logos/screen_studio.png' width='32' height='32'> Screen Studio | 3.7.5-4595 |
-| <img src='Logos/screenflick.png' width='32' height='32'> Screenflick | 3.3.2 |
+| <img src='Logos/screenflick.png' width='32' height='32'> Screenflick | 3.3.3 |
 | <img src='Logos/screenflow.png' width='32' height='32'> ScreenFlow | 10.5.2 |
 | <img src='Logos/screenfocus.png' width='32' height='32'> ScreenFocus | 1.1.1 |
 | <img src='Logos/screens.png' width='32' height='32'> Screens | 4.12.16 |
@@ -2283,18 +1692,18 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/sproutcube_shortcat.png' width='32' height='32'> Sproutcube Shortcat | 0.12.2 |
 | <img src='Logos/spyder.png' width='32' height='32'> Spyder | 6.1.7 |
 | <img src='Logos/sqlectron.png' width='32' height='32'> Sqlectron | 1.39.0 |
-| <img src='Logos/sqlpro_for_mssql.png' width='32' height='32'> SQLPro for MSSQL | 2026.173 |
-| <img src='Logos/sqlpro_for_mysql.png' width='32' height='32'> SQLPro for MySQL | 2026.173 |
-| <img src='Logos/sqlpro_for_postgres.png' width='32' height='32'> SQLPro for Postgres | 2026.87 |
-| <img src='Logos/sqlpro_for_sqlite.png' width='32' height='32'> SQLPro for SQLite | 2026.85 |
-| <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2026.87 |
+| <img src='Logos/sqlpro_for_mssql.png' width='32' height='32'> SQLPro for MSSQL | 2026.238 |
+| <img src='Logos/sqlpro_for_mysql.png' width='32' height='32'> SQLPro for MySQL | 2026.238 |
+| <img src='Logos/sqlpro_for_postgres.png' width='32' height='32'> SQLPro for Postgres | 2026.238 |
+| <img src='Logos/sqlpro_for_sqlite.png' width='32' height='32'> SQLPro for SQLite | 2026.247 |
+| <img src='Logos/sqlpro_studio.png' width='32' height='32'> SQLPro Studio | 2026.238 |
 | <img src='Logos/squash.png' width='32' height='32'> squash | 3.3.0 |
 | <img src='Logos/squirrel.png' width='32' height='32'> Squirrel | 1.1.2 |
 | <img src='Logos/ssh_config_editor.png' width='32' height='32'> SSH Config Editor | 2.6.12 |
 | <img src='Logos/standard_notes.png' width='32' height='32'> Standard Notes | 3.202.0 |
 | <img src='Logos/starface.png' width='32' height='32'> Starface | 10.0.0 |
 | <img src='Logos/staruml.png' width='32' height='32'> StarUML | 6.3.4 |
-| <img src='Logos/stats.png' width='32' height='32'> Stats | 3.0.17 |
+| <img src='Logos/stats.png' width='32' height='32'> Stats | 3.0.18 |
 | <img src='Logos/steam.png' width='32' height='32'> Steam | 6.0 |
 | <img src='Logos/steermouse.png' width='32' height='32'> SteerMouse | 5.8 |
 | <img src='Logos/stellarium.png' width='32' height='32'> Stellarium | 26.2 |
@@ -2382,7 +1791,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/tower.png' width='32' height='32'> Tower | 17.3 |
 | <img src='Logos/tradingview_desktop.png' width='32' height='32'> TradingView Desktop | 3.4.1 |
 | <img src='Logos/trae.png' width='32' height='32'> Trae | 2.3.61406 |
-| <img src='Logos/transcribe.png' width='32' height='32'> Transcribe! | 9.60.7 |
+| <img src='Logos/transcribe.png' width='32' height='32'> Transcribe! | 9.70.0 |
 | <img src='Logos/transfer.png' width='32' height='32'> Transfer | 2.4.4 |
 | <img src='Logos/transmission.png' width='32' height='32'> Transmission | 4.1.3 |
 | <img src='Logos/transmit.png' width='32' height='32'> Transmit | 5.11.6 |
@@ -2445,7 +1854,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/waterfox.png' width='32' height='32'> Waterfox | 6.7.4 |
 | <img src='Logos/wave_terminal.png' width='32' height='32'> Wave Terminal | 0.14.5 |
 | <img src='Logos/wavebox.png' width='32' height='32'> Wavebox | 154.3.5.2 |
-| ❌ Wazuh Agent | 4.14.7 |
+| ❌ Wazuh Agent | 4.14.8 |
 | <img src='Logos/wealthfolio.png' width='32' height='32'> Wealthfolio | 3.9.0 |
 | <img src='Logos/weasis.png' width='32' height='32'> Weasis | 4.7.3 |
 | <img src='Logos/webcatalog.png' width='32' height='32'> WebCatalog | 80.2.1 |
@@ -2511,6 +1920,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
+
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:

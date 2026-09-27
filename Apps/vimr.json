@@ -9,7 +9,7 @@
   "fileName": "vimr_0.66.1.pkg",
   "type": "app",
   "sha": "33a031a9a780b6b1ba59135507336bf5bb2b55d26a95c696a8d2c70cd776b7c6",
-  "previous_version": "0.65.0",
+  "previous_version": "0.66.1",
   "category": "Developer Tools",
   "publisher": "qvacua",
   "homebrew_cask": "vimr"

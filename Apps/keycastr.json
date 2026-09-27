@@ -9,7 +9,7 @@
   "fileName": "keycastr_0.11.1.pkg",
   "type": "app",
   "sha": "b4908386687d596c4a71d6470d3b0e3f4eb5326ec01ea1d54bc0f7d1735c39bf",
-  "previous_version": "0.10.5",
+  "previous_version": "0.11.1",
   "category": "Utilities",
   "publisher": "KeyCastr",
   "homebrew_cask": "keycastr"

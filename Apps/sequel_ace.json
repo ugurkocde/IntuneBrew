@@ -9,7 +9,7 @@
   "fileName": "sequel_ace_6.0.1.pkg",
   "type": "app",
   "sha": "3fec3847551880b34af1714d72551a0792b95d6717d638399eed689ca259dcf8",
-  "previous_version": "5.3.1",
+  "previous_version": "6.0.1",
   "category": "Developer Tools",
   "publisher": "Sequel Ace",
   "homebrew_cask": "sequel-ace"

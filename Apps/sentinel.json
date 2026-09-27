@@ -2,15 +2,15 @@
   "name": "Sentinel",
   "description": "Language and framework for policy as code",
   "version": "0.41.0",
-  "url": "https://releases.hashicorp.com/sentinel/0.41.0/sentinel_0.41.0_darwin_arm64.zip",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/sentinel_0.41.0.pkg",
   "vendor_url": "https://releases.hashicorp.com/sentinel/0.41.0/sentinel_0.41.0_darwin_arm64.zip",
   "bundleId": "com.getsentinel.sentinel",
   "homepage": "https://docs.hashicorp.com/sentinel",
-  "fileName": "sentinel_0.40.0_darwin_arm64.zip",
+  "fileName": "sentinel_0.41.0.pkg",
   "type": "app",
   "category": "Developer Tools",
   "publisher": "HashiCorp, Inc.",
   "previous_version": "0.41.0",
-  "sha": "1ce9485f96ad51520cf19a74ce4ed4a4edc3ffc988fd537a26a4bd937662bf65",
+  "sha": "b1d706a7c55755fae2b0f30715dc2f136bee4ac77fd4fc4f5127fe15b851ec56",
   "homebrew_cask": "sentinel"
 }

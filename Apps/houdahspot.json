@@ -1,16 +1,15 @@
 {
   "name": "HoudahSpot",
   "description": "File searching application",
-  "version": "6.8.2",
-  "url": "https://dl.houdah.com/houdahSpot/updates/cast_assets/156b5d02-8e40-4b77-bcda-d1c6e91c16ad/HoudahSpot_6.8.2.dmg",
-  "vendor_url": "https://dl.houdah.com/houdahSpot/updates/cast_assets/156b5d02-8e40-4b77-bcda-d1c6e91c16ad/HoudahSpot_6.8.2.dmg",
+  "version": "6.8.4",
+  "url": "https://dl.houdah.com/houdahSpot/updates/cast_assets/a0b1d3c4-dff8-4f7d-b39e-4caed1924756/HoudahSpot_6.8.4.dmg",
+  "vendor_url": "https://dl.houdah.com/houdahSpot/updates/cast_assets/a0b1d3c4-dff8-4f7d-b39e-4caed1924756/HoudahSpot_6.8.4.dmg",
   "bundleId": "com.houdah.HoudahSpot",
   "homepage": "https://www.houdah.com/houdahSpot/",
-  "fileName": "houdahspot_6.6.1.pkg",
-  "type": "app",
-  "sha": "588d1faed0be87f550fdeb2445427396b2650862f7d899e952d577d272557ad1",
+  "homebrew_cask": "houdahspot",
+  "fileName": "HoudahSpot_6.8.4.dmg",
+  "sha": "2dfda1d96451680781fa5dff8c8869efe0bab076f6b3c573404d0bca03dcb047",
   "category": "Utilities",
   "publisher": "Houdah Software",
-  "previous_version": "6.8.2",
-  "homebrew_cask": "houdahspot"
+  "previous_version": "6.8.2"
 }

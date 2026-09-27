@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "cd98a2845a89d142b91847847492bf97fa0f9dff42259ddd3c1dc9f97c1e26ec",
   "changelog": "https://www.busymac.com/busycontacts/releasenotes.html",
-  "previous_version": "2026.3.1",
+  "previous_version": "2026.3.3",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:45:36Z",
     "qa_result": "Installation successful and verified",

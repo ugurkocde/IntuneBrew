@@ -11,6 +11,6 @@
   "sha": "10aca834416ee1f9a697bdde2db41a93882ef42fdff9b234d0153aca7393dace",
   "category": "Developer Tools",
   "publisher": "GitFox",
-  "previous_version": "4.6.2",
+  "previous_version": "5.1.0",
   "homebrew_cask": "gitfox"
 }
