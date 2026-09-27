@@ -1581,11 +1581,25 @@ function Get-LocalAppFile {
         if ((Get-FileHash -LiteralPath $destination -Algorithm SHA256).Hash -ne $ExpectedHash) {
             throw 'Local installer SHA256 does not match the manifest.'
         }
+        if (-not $script:LocalInstallerDirectories) { $script:LocalInstallerDirectories = @{} }
+        $script:LocalInstallerDirectories[$destination] = $directory
         return $destination
     }
     catch {
         Remove-Item -LiteralPath $directory -Recurse -Force
         throw
+    }
+}
+
+# Only remove temporary directories created and registered by Get-LocalAppFile.
+function Remove-LocalAppFile {
+    param([string]$Path)
+    if ($Path -and $script:LocalInstallerDirectories -and $script:LocalInstallerDirectories.ContainsKey($Path)) {
+        $directory = $script:LocalInstallerDirectories[$Path]
+        if (Test-Path -LiteralPath $directory) {
+            Remove-Item -LiteralPath $directory -Recurse -Force -ErrorAction Stop
+        }
+        $script:LocalInstallerDirectories.Remove($Path)
     }
 }
 
@@ -2432,8 +2446,11 @@ foreach ($app in $appsToUpload) {
 
     $startTime = Get-Date # Record start time for this app's update
 
+    $localInstallerCopy = $null
+    try {
     Write-Host "⬇️  Downloading application..." -ForegroundColor Yellow
     $appFilePath = Get-AppFile -url $appInfo.url -fileName $appInfo.fileName -expectedHash $appInfo.sha -localManifestDirectory $appInfo.localManifestDirectory
+    if ($appInfo.localManifestDirectory) { $localInstallerCopy = $appFilePath }
     
     # Check if the downloaded file has a proper name and extension
     $fileExtension = [System.IO.Path]::GetExtension($appFilePath)
@@ -2756,6 +2773,11 @@ foreach ($app in $appsToUpload) {
     Write-Host "🔗 Intune Portal URL: https://intune.microsoft.com/#view/Microsoft_Intune_Apps/SettingsMenu/~/0/appId/$($intuneAppId)" -ForegroundColor Cyan
 
     Write-Host "" -ForegroundColor Cyan
+    }
+    finally {
+        try { Remove-LocalAppFile -Path $localInstallerCopy }
+        catch { Write-Warning "Could not remove the temporary local installer: $_" }
+    }
 }
 
 # Display summary if any apps were processed

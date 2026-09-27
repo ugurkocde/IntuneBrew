@@ -4,7 +4,7 @@ $tokens = $null
 $errors = $null
 $ast = [System.Management.Automation.Language.Parser]::ParseFile($source, [ref]$tokens, [ref]$errors)
 if ($errors.Count) { throw ($errors | Out-String) }
-foreach ($name in @('Resolve-LocalManifestPath', 'Get-LocalAppFile', 'Get-AppFile', 'Get-GitHubAppInfo')) {
+foreach ($name in @('Resolve-LocalManifestPath', 'Remove-LocalAppFile', 'Get-LocalAppFile', 'Get-AppFile', 'Get-GitHubAppInfo')) {
     $definition = $ast.Find({ param($node) $node -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq $name }, $true)
     Invoke-Expression $definition.Extent.Text
 }
@@ -23,7 +23,12 @@ try {
     foreach ($location in @($uri, 'file://./Installer%20with%20spaces.pkg')) {
         $copy = Get-LocalAppFile -FileUri $location -FileName 'app.pkg' -ExpectedHash $sha -BaseDirectory $root
         if ($copy -eq $installer -or (Get-FileHash $copy).Hash -ne $sha) { throw 'Copy verification failed.' }
-        Remove-Item (Split-Path $copy) -Recurse -Force
+        [System.IO.File]::WriteAllText("$copy.bin", 'encrypted fixture')
+        Remove-LocalAppFile -Path $copy
+        Remove-LocalAppFile -Path $copy
+        if (Test-Path (Split-Path $copy)) { throw 'Temporary directory was not cleaned.' }
+        Remove-LocalAppFile -Path $installer
+        if (-not (Test-Path $installer)) { throw 'Cleanup removed an unowned installer.' }
     }
     Assert-Throws { Get-LocalAppFile -FileUri $uri -FileName '../app.pkg' -ExpectedHash $sha }
     Assert-Throws { Get-LocalAppFile -FileUri $uri -FileName 'app.pkg' -ExpectedHash ('0' * 64) }
