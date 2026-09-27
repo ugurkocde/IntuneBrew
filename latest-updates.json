@@ -1,124 +1,40 @@
 {
-  "lastChecked": "2026-09-27T13:29:18.146372Z",
+  "lastChecked": "2026-09-27T15:08:39.028253Z",
   "updates": [
     {
-      "appName": "1password cli",
-      "previousVersion": "2.38.1",
-      "newVersion": "2.39.0",
+      "appName": "dockside",
+      "previousVersion": "2.9.33",
+      "newVersion": "2.9.34",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/1password_cli.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dockside.png"
     },
     {
-      "appName": "camunda modeler",
-      "previousVersion": "5.49.0",
-      "newVersion": "5.51.1",
+      "appName": "masscode",
+      "previousVersion": "5.12.0",
+      "newVersion": "6.0.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/camunda_modeler.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/masscode.png"
     },
     {
-      "appName": "dialpad",
-      "previousVersion": "2607.1.1",
-      "newVersion": "2609.3.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dialpad.png"
+      "appName": "rectangle",
+      "previousVersion": "2.0.1",
+      "newVersion": "2.0.2",
+      "changelog": "https://github.com/rxhanson/Rectangle/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rectangle.png"
     },
     {
-      "appName": "espanso",
-      "previousVersion": "2.4.0",
-      "newVersion": "2.4.1",
+      "appName": "vorssaint",
+      "previousVersion": "3.3.5",
+      "newVersion": "3.4.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/espanso.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/vorssaint.png"
     },
     {
-      "appName": "filebot",
-      "previousVersion": "5.2.3",
-      "newVersion": "5.3.0",
+      "appName": "wealthfolio",
+      "previousVersion": "3.9.0",
+      "newVersion": "3.9.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/filebot.png"
-    },
-    {
-      "appName": "google antigravity",
-      "previousVersion": "2.6.0",
-      "newVersion": "2.17.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/google_antigravity.png"
-    },
-    {
-      "appName": "houdahspot",
-      "previousVersion": "6.8.2",
-      "newVersion": "6.8.4",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/houdahspot.png"
-    },
-    {
-      "appName": "ok json",
-      "previousVersion": "2.10.2",
-      "newVersion": "3.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/ok_json.png"
-    },
-    {
-      "appName": "screenflick",
-      "previousVersion": "3.3.2",
-      "newVersion": "3.3.3",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/screenflick.png"
-    },
-    {
-      "appName": "sqlpro for mssql",
-      "previousVersion": "2026.173",
-      "newVersion": "2026.238",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sqlpro_for_mssql.png"
-    },
-    {
-      "appName": "sqlpro for mysql",
-      "previousVersion": "2026.173",
-      "newVersion": "2026.238",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sqlpro_for_mysql.png"
-    },
-    {
-      "appName": "sqlpro for postgres",
-      "previousVersion": "2026.87",
-      "newVersion": "2026.238",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sqlpro_for_postgres.png"
-    },
-    {
-      "appName": "sqlpro for sqlite",
-      "previousVersion": "2026.85",
-      "newVersion": "2026.247",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sqlpro_for_sqlite.png"
-    },
-    {
-      "appName": "sqlpro studio",
-      "previousVersion": "2026.87",
-      "newVersion": "2026.238",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sqlpro_studio.png"
-    },
-    {
-      "appName": "stats",
-      "previousVersion": "3.0.17",
-      "newVersion": "3.0.18",
-      "changelog": "https://github.com/exelban/stats/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/stats.png"
-    },
-    {
-      "appName": "transcribe",
-      "previousVersion": "9.60.7",
-      "newVersion": "9.70.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/transcribe.png"
-    },
-    {
-      "appName": "wazuh agent",
-      "previousVersion": "4.14.7",
-      "newVersion": "4.14.8",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/wazuh_agent.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/wealthfolio.png"
     }
   ]
 }

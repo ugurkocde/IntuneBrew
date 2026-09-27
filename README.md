@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1155-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1156-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -580,29 +580,18 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-09-27T13:29:18.146372Z*
+*Last checked: 2026-09-27T15:08:39.028253Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| 1password cli | 2.38.1 | 2.39.0 |
-| camunda modeler | 5.49.0 | 5.51.1 |
-| dialpad | 2607.1.1 | 2609.3.0 |
-| espanso | 2.4.0 | 2.4.1 |
-| filebot | 5.2.3 | 5.3.0 |
-| google antigravity | 2.6.0 | 2.17.0 |
-| houdahspot | 6.8.2 | 6.8.4 |
-| ok json | 2.10.2 | 3.1 |
-| screenflick | 3.3.2 | 3.3.3 |
-| sqlpro for mssql | 2026.173 | 2026.238 |
-| sqlpro for mysql | 2026.173 | 2026.238 |
-| sqlpro for postgres | 2026.87 | 2026.238 |
-| sqlpro for sqlite | 2026.85 | 2026.247 |
-| sqlpro studio | 2026.87 | 2026.238 |
-| stats | 3.0.17 | 3.0.18 |
-| transcribe | 9.60.7 | 9.70.0 |
-| wazuh agent | 4.14.7 | 4.14.8 |
+| dockside | 2.9.33 | 2.9.34 |
+| masscode | 5.12.0 | 6.0.0 |
+| rectangle | 2.0.1 | 2.0.2 |
+| vorssaint | 3.3.5 | 3.4.0 |
+| wealthfolio | 3.9.0 | 3.9.1 |
 
 ## ✨ Features
 
@@ -660,6 +649,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/affinity.png' width='32' height='32'> Affinity | 3.3.0 |
 | <img src='Logos/airbuddy.png' width='32' height='32'> AirBuddy | 3.0.2 |
 | <img src='Logos/aircall.png' width='32' height='32'> Aircall | 3.1.66 |
+| ❌ Aircall Workspace | 1.18.1 |
 | <img src='Logos/airdroid.png' width='32' height='32'> AirDroid | 3.7.3.1 |
 | <img src='Logos/airfoil.png' width='32' height='32'> Airfoil | 5.13.0 |
 | <img src='Logos/airparrot.png' width='32' height='32'> AirParrot | 3.1.8 |
@@ -904,7 +894,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.40.1 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.92.0 |
 | <img src='Logos/dockfix.png' width='32' height='32'> DockFix | 5.3.0-beta |
-| <img src='Logos/dockside.png' width='32' height='32'> Dockside | 2.9.33 |
+| <img src='Logos/dockside.png' width='32' height='32'> Dockside | 2.9.34 |
 | <img src='Logos/dockview.png' width='32' height='32'> DockView | 1.7.5 |
 | <img src='Logos/dorico.png' width='32' height='32'> Dorico | 6.2.30 |
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
@@ -1204,7 +1194,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.36.0 |
 | <img src='Logos/marsedit.png' width='32' height='32'> MarsEdit | 5.4.5 |
 | <img src='Logos/marta_file_manager.png' width='32' height='32'> Marta File Manager | 0.8.2 |
-| <img src='Logos/masscode.png' width='32' height='32'> massCode | 5.12.0 |
+| <img src='Logos/masscode.png' width='32' height='32'> massCode | 6.0.0 |
 | <img src='Logos/mattermost.png' width='32' height='32'> Mattermost | 6.3.0 |
 | <img src='Logos/mediainfo.png' width='32' height='32'> MediaInfo | 26.05 |
 | <img src='Logos/medis.png' width='32' height='32'> Medis | 2.16.1 |
@@ -1346,6 +1336,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/openaudible.png' width='32' height='32'> OpenAudible | 4.8.8 |
 | <img src='Logos/openboard.png' width='32' height='32'> OpenBoard | 1.7.7 |
 | <img src='Logos/opencloud_desktop.png' width='32' height='32'> OpenCloud Desktop | 4.0.0 |
+| ❌ OpenCode | 1.18.32 |
 | <img src='Logos/openinterminal.png' width='32' height='32'> OpenInTerminal | 2.3.9 |
 | <img src='Logos/openlens.png' width='32' height='32'> OpenLens | 6.5.2-366 |
 | <img src='Logos/openmtp.png' width='32' height='32'> OpenMTP | 3.3.0 |
@@ -1364,6 +1355,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/orka_cli.png' width='32' height='32'> Orka CLI | 2.4.0 |
 | <img src='Logos/orka_desktop.png' width='32' height='32'> Orka Desktop | 3.1.0 |
 | <img src='Logos/osquery.png' width='32' height='32'> osquery | 5.23.1 |
+| ❌ Outline | 1.10.0 |
 | <img src='Logos/outset.png' width='32' height='32'> outset | 4.2.0.21973 |
 | <img src='Logos/overflow.png' width='32' height='32'> Overflow | 3.2.1 |
 | <img src='Logos/oversight.png' width='32' height='32'> OverSight | 2.4.0 |
@@ -1460,7 +1452,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/real_vnc_server.png' width='32' height='32'> Real VNC Server | 7.18.0 |
 | <img src='Logos/reaper.png' width='32' height='32'> REAPER | 7.80 |
 | <img src='Logos/recents.png' width='32' height='32'> Recents | 2.5.0 |
-| <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 2.0.1 |
+| <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 2.0.2 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.91 |
 | <img src='Logos/recut.png' width='32' height='32'> Recut | 4.4.8 |
 | <img src='Logos/redis_insight.png' width='32' height='32'> Redis Insight | 3.8.0 |
@@ -1496,7 +1488,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/roon.png' width='32' height='32'> Roon | 2.73 |
 | <img src='Logos/rotato.png' width='32' height='32'> Rotato | 154.11 |
 | <img src='Logos/royal_tsx.png' width='32' height='32'> Royal TSX | 6.4.5.1000 |
-| <img src='Logos/rstudio.png' width='32' height='32'> RStudio | 2026.09.0 |
+| <img src='Logos/rstudio.png' width='32' height='32'> RStudio | 2026.09.0+174 |
 | <img src='Logos/rsyncui.png' width='32' height='32'> RsyncUI | 3.0.5 |
 | <img src='Logos/rubymine.png' width='32' height='32'> RubyMine | 2026.2.3 |
 | <img src='Logos/runjs.png' width='32' height='32'> RunJS | 4.1.0 |
@@ -1716,7 +1708,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 8.2.4133.76 |
 | <img src='Logos/viz.png' width='32' height='32'> Viz | 2.3.3 |
 | <img src='Logos/vlc_media_player.png' width='32' height='32'> VLC media player | 3.0.24 |
-| <img src='Logos/vorssaint.png' width='32' height='32'> Vorssaint | 3.3.5 |
+| <img src='Logos/vorssaint.png' width='32' height='32'> Vorssaint | 3.4.0 |
 | <img src='Logos/vox.png' width='32' height='32'> VOX | 3.7.7 |
 | <img src='Logos/vpn_tracker_365.png' width='32' height='32'> VPN Tracker 365 | 26.8 |
 | <img src='Logos/vscodium.png' width='32' height='32'> VSCodium | 1.135.06055 |
@@ -1729,7 +1721,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/wave_terminal.png' width='32' height='32'> Wave Terminal | 0.14.5 |
 | <img src='Logos/wavebox.png' width='32' height='32'> Wavebox | 154.3.5.2 |
 | ❌ Wazuh Agent | 4.14.8 |
-| <img src='Logos/wealthfolio.png' width='32' height='32'> Wealthfolio | 3.9.0 |
+| <img src='Logos/wealthfolio.png' width='32' height='32'> Wealthfolio | 3.9.1 |
 | <img src='Logos/weasis.png' width='32' height='32'> Weasis | 4.7.3 |
 | <img src='Logos/webcatalog.png' width='32' height='32'> WebCatalog | 80.2.1 |
 | <img src='Logos/webex.png' width='32' height='32'> Webex | 46.9.0.35800 |
