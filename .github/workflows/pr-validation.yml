@@ -97,3 +97,11 @@ jobs:
 
       - name: Run catalog unit tests
         run: python -m unittest discover -s tests -p "test_*.py"
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Test version synchronization
+        run: node --test tests/*.test.mjs
