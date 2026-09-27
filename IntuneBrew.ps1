@@ -218,7 +218,7 @@ function New-LocalUploadInfo {
 function Test-LocalUploadArguments {
     param([System.Collections.IDictionary]$Options)
     foreach ($parameterName in @('LocalFilePath', 'LocalFileConfig', 'LocalFileAppName', 'LocalFileVersion', 'LocalFileBundleID')) {
-        if ($Options.Contains($parameterName) -and [string]::IsNullOrWhiteSpace([string]$Options[$parameterName])) {
+        if ($Options.ContainsKey($parameterName) -and [string]::IsNullOrWhiteSpace([string]$Options[$parameterName])) {
             throw "$parameterName cannot be empty."
         }
     }

@@ -36,3 +36,12 @@ foreach ($key in @('LocalFilePath', 'LocalFileConfig', 'LocalFileAppName', 'Loca
     try { Test-LocalUploadArguments -Options @{ $key = '  ' } } catch { $threw = $true }
     if (-not $threw) { throw "Explicit blank $key was accepted." }
 }
+
+function Test-BoundLocalArguments {
+    param([string]$LocalFilePath)
+    Test-LocalUploadArguments -Options $PSBoundParameters
+}
+Test-BoundLocalArguments -LocalFilePath 'valid.pkg'
+$threw = $false
+try { Test-BoundLocalArguments -LocalFilePath '' } catch { $threw = $true }
+if (-not $threw) { throw 'Blank input in real PSBoundParameters was accepted.' }
