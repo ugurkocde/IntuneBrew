@@ -1172,11 +1172,29 @@ function Is-NewerVersion($githubVersion, $intuneVersion) {
         if ($ghVersionParts.Length -gt 1 -and $itVersionParts.Length -gt 1) {
             $ghBuild = [int]$ghVersionParts[1]
             $itBuild = [int]$itVersionParts[1]
-            return $ghBuild -gt $itBuild
+            if ($ghBuild -ne $itBuild) { return $ghBuild -gt $itBuild }
         }
 
-        # If versions are exactly equal
-        return $githubVersion -ne $intuneVersion
+        # A release sorts after its prereleases. Formatting differences alone
+        # (such as 1.2 versus 1.2.0) do not make an update newer.
+        $ghPre = if ($githubVersion -match '-([^+]+)') { $matches[1] } else { '' }
+        $itPre = if ($intuneVersion -match '-([^+]+)') { $matches[1] } else { '' }
+        if ($ghPre -and -not $itPre) { return $false }
+        if ($itPre -and -not $ghPre) { return $true }
+        if ($ghPre -and $itPre) {
+            $left = $ghPre -split '\.'
+            $right = $itPre -split '\.'
+            for ($i = 0; $i -lt [Math]::Min($left.Count, $right.Count); $i++) {
+                $leftNumeric = $left[$i] -match '^\d+$'
+                $rightNumeric = $right[$i] -match '^\d+$'
+                if ($leftNumeric -and $rightNumeric) { $comparison = Compare-VersionSegments $left[$i] $right[$i] }
+                elseif ($leftNumeric -ne $rightNumeric) { $comparison = if ($leftNumeric) { -1 } else { 1 } }
+                else { $comparison = [string]::CompareOrdinal($left[$i], $right[$i]) }
+                if ($comparison -ne 0) { return $comparison -gt 0 }
+            }
+            return $left.Count -gt $right.Count
+        }
+        return $false
     }
     catch {
         # silence spammy log message for not installed apps
