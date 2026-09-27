@@ -50,6 +50,10 @@ Version 0.3.7: Fix Parse Errors
  Allows uploading a local PKG or DMG file to Intune. Will prompt for file selection and app details.
  Example: IntuneBrew -LocalFile
 
+.PARAMETER LocalFilePath
+ Select a local PKG/DMG without dialogs. Supply -LocalFileConfig or -LocalFileAppName, -LocalFileVersion, and -LocalFileBundleID.
+ Supports -UseExistingIntuneApp through the normal deployment path. The original file is preserved.
+
 .PARAMETER CopyAssignments
  When used with -UpdateAll or when updating apps interactively, this switch indicates that assignments from the existing app version should be copied to the new version. If omitted, assignments will not be copied automatically (interactive mode will still prompt).
  Example: IntuneBrew -UpdateAll -CopyAssignments
@@ -126,6 +130,12 @@ param(
     
     [Parameter(Mandatory = $false)]
     [switch]$LocalFile,
+
+    [string]$LocalFilePath,
+    [string]$LocalFileConfig,
+    [string]$LocalFileAppName,
+    [string]$LocalFileVersion,
+    [string]$LocalFileBundleID,
     
     [Parameter(Mandatory = $false)]
     [switch]$CopyAssignments,
@@ -177,6 +187,45 @@ param(
 )
 
 if ($NonInteractive) { $ErrorActionPreference = "Stop" }
+function New-LocalUploadInfo {
+    param([string]$Path, [string]$MetadataPath, [string]$Name, [string]$Version, [string]$BundleId, [switch]$AllowNetworkPaths)
+    $item = Get-Item -LiteralPath $Path -ErrorAction Stop
+    if ($item.PSIsContainer -or $item.Extension.ToLowerInvariant() -notin @('.pkg', '.dmg')) {
+        throw 'LocalFilePath must identify a PKG or DMG installer.'
+    }
+    $uri = [Uri]::new($item.FullName, [UriKind]::Absolute)
+    if ($uri.Host -and $uri.Host -ne 'localhost' -and -not $AllowNetworkPaths) { throw 'Network installers require -AllowNetworkPaths.' }
+    $metadata = @{}
+    if ($MetadataPath) { $metadata = Get-Content -LiteralPath $MetadataPath -Raw -ErrorAction Stop | ConvertFrom-Json -AsHashtable }
+    if ($Name) { $metadata.name = $Name }
+    if ($Version) { $metadata.version = $Version }
+    if ($BundleId) { $metadata.bundleId = $BundleId }
+    foreach ($field in @('name', 'version', 'bundleId')) {
+        if ($metadata[$field] -isnot [string] -or [string]::IsNullOrWhiteSpace($metadata[$field])) {
+            throw "Local upload metadata requires $field (configuration or explicit parameter)."
+        }
+    }
+    $hash = (Get-FileHash -LiteralPath $item.FullName -Algorithm SHA256 -ErrorAction Stop).Hash.ToLowerInvariant()
+    if ($metadata.sha -and $metadata.sha -ne $hash) { throw 'Local installer SHA256 does not match its configuration.' }
+    return @{
+        name = $metadata.name.Trim(); version = $metadata.version.Trim(); bundleId = $metadata.bundleId.Trim()
+        description = $(if ($metadata.description) { $metadata.description } else { $metadata.name })
+        homepage = $metadata.homepage; fileName = $item.Name; url = $uri.AbsoluteUri; sha = $hash
+        localManifestDirectory = $item.DirectoryName
+    }
+}
+
+$script:ExplicitLocalAppInfo = $null
+if ($LocalFilePath) {
+    if ($LocalFile -or $Upload -or $UpdateAll -or $BulkUpload -or $Search -or $LocalJsonDirectory) {
+        throw 'LocalFilePath cannot be combined with another app selection mode.'
+    }
+    $script:ExplicitLocalAppInfo = New-LocalUploadInfo -Path $LocalFilePath -MetadataPath $LocalFileConfig -Name $LocalFileAppName -Version $LocalFileVersion -BundleId $LocalFileBundleID -AllowNetworkPaths:$AllowNetworkPaths
+    $Upload = @('intunebrew_local_upload')
+}
+elseif ($LocalFileConfig -or $LocalFileAppName -or $LocalFileVersion -or $LocalFileBundleID) {
+    throw 'Local upload metadata parameters require -LocalFilePath.'
+}
 
 Write-Host "
 ___       _                    ____                    
@@ -1399,6 +1448,10 @@ try {
     # Fetch the supported apps JSON
     $supportedApps = Invoke-RestMethod -Uri $supportedAppsUrl -Method Get
     
+    if ($script:ExplicitLocalAppInfo) {
+        $supportedApps | Add-Member -MemberType NoteProperty -Name 'intunebrew_local_upload' -Value 'local-upload://selected' -Force
+    }
+
     # Merge local apps with supported apps. A local JSON definition always wins,
     # so it can both add new apps and override existing catalog entries (Issue #115).
     foreach ($localApp in $localJsonOverrides.Keys) {
@@ -1619,6 +1672,10 @@ function Get-GitHubAppInfo {
     param(
         [string]$jsonUrl
     )
+
+    if ($jsonUrl -eq 'local-upload://selected' -and $script:ExplicitLocalAppInfo) {
+        return $script:ExplicitLocalAppInfo
+    }
 
     if ([string]::IsNullOrEmpty($jsonUrl)) {
         Write-Host "Error: Empty or null JSON URL provided." -ForegroundColor Red
@@ -1866,6 +1923,8 @@ function Test-ValidUrl {
     param (
         [string]$url
     )
+
+    if ($url -eq 'local-upload://selected' -and $script:ExplicitLocalAppInfo) { return $true }
 
     if ($url -like "file://*") {
         try {
