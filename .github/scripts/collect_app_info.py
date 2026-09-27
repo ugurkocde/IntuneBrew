@@ -373,7 +373,6 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/minisim.json",
     "https://formulae.brew.sh/api/cask/minstaller.json",
     "https://formulae.brew.sh/api/cask/mission-control-plus.json",
-    "https://formulae.brew.sh/api/cask/murus.json",
     "https://formulae.brew.sh/api/cask/mx-power-gadget.json",
     "https://formulae.brew.sh/api/cask/namechanger.json",
     "https://formulae.brew.sh/api/cask/native-access.json",
@@ -397,7 +396,6 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/qlmarkdown.json",
     "https://formulae.brew.sh/api/cask/rapidapi.json",
     "https://formulae.brew.sh/api/cask/rapidweaver.json",
-    "https://formulae.brew.sh/api/cask/rawtherapee.json",
     "https://formulae.brew.sh/api/cask/reminders-menubar.json",
     "https://formulae.brew.sh/api/cask/remote-buddy.json",
     "https://formulae.brew.sh/api/cask/retrobatch.json",
@@ -428,7 +426,6 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/surge.json",
     "https://formulae.brew.sh/api/cask/swift-quit.json",
     "https://formulae.brew.sh/api/cask/swiftbar.json",
-    "https://formulae.brew.sh/api/cask/switch.json",
     "https://formulae.brew.sh/api/cask/syncmate.json",
     "https://formulae.brew.sh/api/cask/syntax-highlight.json",
     "https://formulae.brew.sh/api/cask/systhist.json",
@@ -1226,7 +1223,6 @@ homebrew_cask_urls = [
 pkg_in_dmg_urls = [
     "https://formulae.brew.sh/api/cask/jabra-direct.json",
     "https://formulae.brew.sh/api/cask/tableau.json",
-    "https://formulae.brew.sh/api/cask/autodesk-fusion.json",
     "https://formulae.brew.sh/api/cask/nomachine.json",
     "https://formulae.brew.sh/api/cask/adobe-acrobat-reader.json",
     "https://formulae.brew.sh/api/cask/adobe-acrobat-pro.json",
@@ -1342,7 +1338,6 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/rocketman-choices-packager.json",
     "https://formulae.brew.sh/api/cask/salesforce-cli.json",
     "https://formulae.brew.sh/api/cask/securesafe.json",
-    "https://formulae.brew.sh/api/cask/send-to-kindle.json",
     "https://formulae.brew.sh/api/cask/shutter-encoder.json",
     "https://formulae.brew.sh/api/cask/spyder.json",
     "https://formulae.brew.sh/api/cask/supportcompanion.json",
@@ -1817,6 +1812,8 @@ def update_readme_apps(apps_list):
         with open(app_json, 'r') as f:
             try:
                 data = json.load(f)
+                if data.get('deprecated'):
+                    continue
                 display_name = data['name']
                 # Convert display name to filename format
                 logo_name = sanitize_filename(display_name)

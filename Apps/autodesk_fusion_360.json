@@ -22,5 +22,7 @@
   },
   "category": "Design",
   "publisher": "Autodesk, Inc.",
-  "previous_version": "latest"
+  "previous_version": "latest",
+  "deprecated": true,
+  "deprecation_reason": "Excluded: public download contains a bootstrap app instead of the required deployable installer."
 }

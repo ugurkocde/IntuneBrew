@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1158-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1157-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -607,6 +607,8 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 ## ✨ Features
 
+See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection and packaging.
+
 - 🚀 Automated app uploads to Microsoft Intune
 - 📦 Supports both .dmg and .pkg files
 - 🔄 Automatic version checking and updates
@@ -721,7 +723,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/audio_hijack.png' width='32' height='32'> Audio Hijack | 4.6.0 |
 | <img src='Logos/audirvana.png' width='32' height='32'> Audirvana | 3.5.50 |
 | <img src='Logos/aurora_hdr.png' width='32' height='32'> Aurora HDR | 1.0.2 |
-| <img src='Logos/autodesk_fusion_360.png' width='32' height='32'> Autodesk Fusion 360 | latest |
 | <img src='Logos/avast_secure_browser.png' width='32' height='32'> Avast Secure Browser | 139.0.6697.68 |
 | <img src='Logos/avidemux.png' width='32' height='32'> Avidemux | 2.8.1 |
 | <img src='Logos/aws_client_vpn.png' width='32' height='32'> AWS Client VPN | 6.1.1 |
@@ -1373,7 +1374,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/multiviewer.png' width='32' height='32'> MultiViewer | 2.9.0 |
 | <img src='Logos/multiviewer_for_f1.png' width='32' height='32'> MultiViewer for F1 | 1.43.2 |
 | <img src='Logos/mural.png' width='32' height='32'> MURAL | 3.0.4 |
-| <img src='Logos/murus_firewall.png' width='32' height='32'> Murus Firewall | 2.7 |
 | <img src='Logos/museeks.png' width='32' height='32'> Museeks | 0.23.4 |
 | <img src='Logos/musescore.png' width='32' height='32'> MuseScore | 4.7.5.260831071 |
 | <img src='Logos/music_decoy.png' width='32' height='32'> Music Decoy | 1.3 |
@@ -1559,7 +1559,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/rapidapi.png' width='32' height='32'> RapidAPI | 4.5.5 |
 | <img src='Logos/rapidweaver.png' width='32' height='32'> RapidWeaver | 9.6.8 |
 | <img src='Logos/raspberry_pi_imager.png' width='32' height='32'> Raspberry Pi Imager | 2.0.11.1 |
-| <img src='Logos/rawtherapee.png' width='32' height='32'> RawTherapee | 5.13 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 2.5.2.0 |
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.11.0 |
 | <img src='Logos/readest.png' width='32' height='32'> Readest | 0.12.10 |
@@ -1632,7 +1631,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/securesafe.png' width='32' height='32'> SecureSafe | 2.25.0 |
 | <img src='Logos/selfcontrol.png' width='32' height='32'> SelfControl | 4.0.2 |
 | <img src='Logos/sempliva_tiles.png' width='32' height='32'> Sempliva Tiles | 1.3.2 |
-| <img src='Logos/send_to_kindle.png' width='32' height='32'> Send to Kindle | 1.1.1.259 |
 | <img src='Logos/sensei.png' width='32' height='32'> Sensei | 2.1.3 |
 | <img src='Logos/sentinel.png' width='32' height='32'> Sentinel | 0.41.0 |
 | <img src='Logos/sequel_ace.png' width='32' height='32'> Sequel Ace | 6.0.1 |
@@ -1738,7 +1736,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | <img src='Logos/swifty.png' width='32' height='32'> Swifty | 0.6.13 |
 | <img src='Logos/swinsian.png' width='32' height='32'> Swinsian | 3.0.8 |
 | <img src='Logos/swish.png' width='32' height='32'> Swish | 1.13.3 |
-| <img src='Logos/switch_audio_converter.png' width='32' height='32'> Switch Audio Converter | 14.08 |
 | <img src='Logos/sync.png' width='32' height='32'> Sync | 2.2.64 |
 | <img src='Logos/syncmate.png' width='32' height='32'> SyncMate | 8.11.604 |
 | <img src='Logos/syncovery.png' width='32' height='32'> Syncovery | 12.7.4 |
