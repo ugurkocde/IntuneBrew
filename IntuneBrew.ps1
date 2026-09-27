@@ -215,6 +215,16 @@ function New-LocalUploadInfo {
     }
 }
 
+function Test-LocalUploadArguments {
+    param([System.Collections.IDictionary]$Options)
+    foreach ($parameterName in @('LocalFilePath', 'LocalFileConfig', 'LocalFileAppName', 'LocalFileVersion', 'LocalFileBundleID')) {
+        if ($Options.Contains($parameterName) -and [string]::IsNullOrWhiteSpace([string]$Options[$parameterName])) {
+            throw "$parameterName cannot be empty."
+        }
+    }
+}
+Test-LocalUploadArguments -Options $PSBoundParameters
+
 $script:ExplicitLocalAppInfo = $null
 if ($LocalFilePath) {
     if ($LocalFile -or $Upload -or $UpdateAll -or $BulkUpload -or $Search -or $LocalJsonDirectory) {
@@ -2214,7 +2224,7 @@ function Test-NewerVersion($githubVersion, $intuneVersion) {
         if ($ghVersionParts.Length -gt 1 -and $itVersionParts.Length -gt 1) {
             $ghBuild = [int]$ghVersionParts[1]
             $itBuild = [int]$itVersionParts[1]
-            return $ghBuild -gt $itBuild
+            if ($ghBuild -ne $itBuild) { return $ghBuild -gt $itBuild }
         }
 
         # A release sorts after its prereleases. Formatting differences alone

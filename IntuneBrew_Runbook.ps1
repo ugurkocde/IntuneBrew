@@ -1172,7 +1172,7 @@ function Is-NewerVersion($githubVersion, $intuneVersion) {
         if ($ghVersionParts.Length -gt 1 -and $itVersionParts.Length -gt 1) {
             $ghBuild = [int]$ghVersionParts[1]
             $itBuild = [int]$itVersionParts[1]
-            return $ghBuild -gt $itBuild
+            if ($ghBuild -ne $itBuild) { return $ghBuild -gt $itBuild }
         }
 
         # A release sorts after its prereleases. Formatting differences alone

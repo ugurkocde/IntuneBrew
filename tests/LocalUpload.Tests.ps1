@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 $tokens = $null; $errors = $null
 $ast = [System.Management.Automation.Language.Parser]::ParseFile((Join-Path $PSScriptRoot '../IntuneBrew.ps1'), [ref]$tokens, [ref]$errors)
 if ($errors.Count) { throw ($errors | Out-String) }
-foreach ($name in @('New-LocalUploadInfo', 'Get-GitHubAppInfo', 'Test-ValidUrl')) {
+foreach ($name in @('Test-LocalUploadArguments', 'New-LocalUploadInfo', 'Get-GitHubAppInfo', 'Test-ValidUrl')) {
     $function = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $name }, $true)
     Invoke-Expression $function.Extent.Text
 }
@@ -29,3 +29,10 @@ try {
     Write-Host 'Explicit local upload metadata tests passed.'
 }
 finally { Remove-Item $root -Recurse -Force }
+
+Test-LocalUploadArguments -Options @{}
+foreach ($key in @('LocalFilePath', 'LocalFileConfig', 'LocalFileAppName', 'LocalFileVersion', 'LocalFileBundleID')) {
+    $threw = $false
+    try { Test-LocalUploadArguments -Options @{ $key = '  ' } } catch { $threw = $true }
+    if (-not $threw) { throw "Explicit blank $key was accepted." }
+}
