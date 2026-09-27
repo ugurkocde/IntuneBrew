@@ -1,0 +1,31 @@
+name: Catalog Freshness
+on:
+  schedule:
+    - cron: '0 8 * * *'
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  freshness:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Check the last published full scan
+        shell: python
+        run: |
+          import json, os
+          from datetime import datetime, timezone, timedelta
+          from pathlib import Path
+          state = json.loads(Path('catalog-sync.json').read_text())
+          checked = datetime.fromisoformat(state['lastFullSyncAt'].replace('Z', '+00:00'))
+          age = datetime.now(timezone.utc) - checked
+          if age > timedelta(hours=48) or age < timedelta(minutes=-5):
+              raise SystemExit('Catalog full scan is stale or has an invalid timestamp')
+          failed = state.get('failedApps', [])
+          with open(os.environ['GITHUB_STEP_SUMMARY'], 'a') as output:
+              output.write(f"Last full scan: {checked.isoformat()}. Apps awaiting retry: {len(failed)}.\n")
+              for app in failed:
+                  output.write(f"- {app['app']}: {app['stage']}\n")
+          if failed:
+              print(f'::warning::{len(failed)} apps retain an older package; see the job summary')
