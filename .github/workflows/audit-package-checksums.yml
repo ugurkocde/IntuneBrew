@@ -4,6 +4,7 @@ on:
   workflow_dispatch:
   pull_request:
     paths:
+      - 'Apps/*.json'
       - '.github/scripts/reuse_cached_package.py'
       - '.github/scripts/audit_package_checksums.py'
       - '.github/workflows/audit-package-checksums.yml'

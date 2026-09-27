@@ -534,6 +534,9 @@ jobs:
                   if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
                     FAILED_APPS+=("$app_name")
                     ERROR_LOG+=("$app_name: Generated artifact is not a valid PKG archive")
+                    rm -f "${app_name}_${version}.pkg"
+                    rm -f "${download_path}.pkg"
+                    rm -rf "$temp_dir"
                     continue
                   fi
                   file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
@@ -995,6 +998,9 @@ jobs:
                   if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
                     FAILED_APPS+=("$app_name")
                     ERROR_LOG+=("$app_name: Generated artifact is not a valid PKG archive")
+                    rm -f "${app_name}_${version}.pkg"
+                    sudo rm -rf "${app_name}_extracted"
+                    cd "$WORKSPACE_DIR"
                     continue
                   fi
                   file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
@@ -1071,6 +1077,9 @@ jobs:
               if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
                 FAILED_APPS+=("$app_name")
                 ERROR_LOG+=("$app_name: Generated artifact is not a valid PKG archive")
+                rm -f "${app_name}_${version}.pkg"
+                sudo rm -rf "${app_name}_extracted"
+                cd "$WORKSPACE_DIR"
                 continue
               fi
               file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
