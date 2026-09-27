@@ -52,3 +52,30 @@ if ($appsToUpload.Count -ne 1 -or $appsToUpload[0].FormattedName -ne 'Allowed') 
     if ($LASTEXITCODE -ne 0) { throw 'Allowed updates were blocked with the held app.' }
 }
 finally { Remove-Item $fixture -Force }
+
+$range = @{ affected_version_start = '2'; affected_version_start_type = 'including'; fixed_version = '2' }
+if ($null -ne (Test-CveVersionAffected '2' $range)) { throw 'An empty range was accepted.' }
+$range = @{ affected_version_start = '2'; affected_version_start_type = 'including'; affected_version_end = '2'; affected_version_end_type = 'including' }
+if ((Test-CveVersionAffected '2' $range) -ne $true) { throw 'A single-version inclusive range was rejected.' }
+# Pin the assessed manifest even when catalog metadata changes before upload.
+foreach ($name in @('Get-FormattedAppName', 'Convert-VersionToSortable', 'Test-NewerVersion', 'Get-IntuneApp')) {
+    $function = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $name }, $true)
+    Invoke-Expression $function.Extent.Text
+}
+$script:manifestFixture = @{ name = 'Fixture'; version = '2'; url = 'https://example.invalid/two.pkg'; sha = ('a' * 64) }
+$script:metadataReads = 0
+function Test-ValidUrl { return $true }
+function Get-GitHubAppInfo { $script:metadataReads++; return $script:manifestFixture }
+function Get-IntuneAppCollection { return @{ value = @(@{ id = 'fixture'; primaryBundleVersion = '1' }) } }
+function Get-AppCveInfo { return @{ vulnerabilities = @() } }
+$githubJsonUrls = @('https://example.invalid/fixture.json')
+$SecurityHoldLevel = 'High'
+$app = @(Get-IntuneApp)[0]
+$script:manifestFixture.version = '3'
+$script:manifestFixture.url = 'https://example.invalid/three.pkg'
+$uploadStart = $source.IndexOf('    # Upload exactly the metadata/version')
+$uploadEnd = $source.IndexOf('    # Check if this is an update', $uploadStart)
+Invoke-Expression $source.Substring($uploadStart, $uploadEnd - $uploadStart)
+if ($appInfo.version -ne '2' -or $appInfo.url -ne 'https://example.invalid/two.pkg' -or $script:metadataReads -ne 1) {
+    throw 'Upload did not retain the assessed manifest.'
+}

@@ -1952,7 +1952,11 @@ function Test-CveVersionAffected {
     if ($start -and $Vulnerability.affected_version_start_type -notin @('including', 'excluding')) { return $null }
     if ($end -and $Vulnerability.affected_version_end_type -notin @('including', 'excluding')) { return $null }
     $upper = if ($end) { $end } else { $fixed }
-    if ($start -and $upper -and (Compare-VersionSegments $start $upper) -gt 0) { return $null }
+    if ($start -and $upper) {
+        $rangeOrder = Compare-VersionSegments $start $upper
+        if ($rangeOrder -gt 0 -or ($rangeOrder -eq 0 -and
+            (-not $end -or $Vulnerability.affected_version_start_type -ne 'including' -or $Vulnerability.affected_version_end_type -ne 'including'))) { return $null }
+    }
     if ($start) {
         $comparison = Compare-VersionSegments $Version $start
         if ($comparison -lt 0 -or ($comparison -eq 0 -and $Vulnerability.affected_version_start_type -eq 'excluding')) { return $false }
@@ -2080,6 +2084,7 @@ function Get-IntuneApp {
                 }
                 
                 $intuneApps += [PSCustomObject]@{
+                    Manifest      = $appInfo.Clone()
                     Name          = $originalAppName
                     FormattedName = $formattedAppName
                     IntuneVersion = $intuneVersion
@@ -2098,6 +2103,7 @@ function Get-IntuneApp {
                     Write-Host "[$currentApp/$totalApps] 🍎 $formattedAppName" -NoNewline -ForegroundColor Cyan
                     Write-Host ": Managed via Apple VPP - skipping" -ForegroundColor Cyan
                     $intuneApps += [PSCustomObject]@{
+                        Manifest      = $appInfo.Clone()
                         Name          = $originalAppName
                         FormattedName = $formattedAppName
                         IntuneVersion = 'Managed via VPP'
@@ -2110,6 +2116,7 @@ function Get-IntuneApp {
                     Write-Host "[$currentApp/$totalApps] ➕ $formattedAppName" -NoNewline -ForegroundColor Yellow
                     Write-Host ": Not in Intune (Latest: $($appInfo.version))" -ForegroundColor Yellow
                     $intuneApps += [PSCustomObject]@{
+                        Manifest      = $appInfo.Clone()
                         Name          = $originalAppName
                         FormattedName = $formattedAppName
                         IntuneVersion = 'Not in Intune'
@@ -2514,24 +2521,9 @@ $existingAssignments = $null # Initialize variable to store assignments for upda
 $updateSummaries = @() # Initialize array to store update summary details
 
 foreach ($app in $appsToUpload) {
-    # Find the corresponding JSON URL for this app
-    $jsonUrl = $githubJsonUrls | Where-Object {
-        $appInfo = Get-GitHubAppInfo -jsonUrl $_
-        $appInfo -and $appInfo.name -eq $app.Name
-    } | Select-Object -First 1
-
-    if (-not $jsonUrl) {
-        Write-Host "`n❌ Could not find JSON URL for $($app.Name). Skipping." -ForegroundColor Red
-        if ($NonInteractive) { throw "App metadata is unavailable." }
-        continue
-    }
-
-    $appInfo = Get-GitHubAppInfo -jsonUrl $jsonUrl
-    if ($null -eq $appInfo) {
-        Write-Host "`n❌ Failed to fetch app info for $jsonUrl. Skipping." -ForegroundColor Red
-        if ($NonInteractive) { throw "App metadata is unavailable." }
-        continue
-    }
+    # Upload exactly the metadata/version whose security impact was assessed.
+    $appInfo = $app.Manifest
+    if ($null -eq $appInfo) { throw "The selected app has no assessed manifest." }
 
     # Check if this is an update and fetch existing assignments
     $existingAssignments = $null # Reset for each app
