@@ -9,7 +9,7 @@
   "fileName": "sqlpro_for_mssql_2026.238.pkg",
   "type": "app",
   "sha": "aa1d5130d8af4f23b0ae38363f4f88264c282c4e00ed869a12cd116dcf155f4b",
-  "previous_version": "2026.173",
+  "previous_version": "2026.238",
   "category": "Developer Tools",
   "publisher": "The SQLPro Team",
   "homebrew_cask": "sqlpro-for-mssql"

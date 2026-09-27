@@ -1,16 +1,12 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-09-27T12:17:35.320654Z",
-  "lastFullSyncAt": "2026-09-27T12:17:35.320654Z",
+  "lastPublishedAt": "2026-09-27T12:39:55.012252Z",
+  "lastFullSyncAt": "2026-09-27T12:39:55.012252Z",
   "lastSuccessfulSyncAt": null,
   "status": "degraded",
   "failedApps": [
     {
       "app": "autodesk_fusion_360",
-      "stage": "package validation"
-    },
-    {
-      "app": "lifesize",
       "stage": "package validation"
     },
     {
@@ -30,6 +26,6 @@
       "stage": "package validation"
     }
   ],
-  "appCount": 1157,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/36317434783"
+  "appCount": 1158,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/36318912292"
 }

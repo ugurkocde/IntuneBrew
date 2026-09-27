@@ -11,5 +11,6 @@
   "type": "app",
   "sha": "1f2c03a44f0046b5b2790579c456744dc0af725856a2f2bf7bbbf4b20819d0d6",
   "category": "Utilities",
-  "publisher": "Dell Technologies"
+  "publisher": "Dell Technologies",
+  "previous_version": "2.3.0.2004"
 }
