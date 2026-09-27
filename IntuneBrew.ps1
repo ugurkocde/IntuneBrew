@@ -94,6 +94,8 @@ Version 0.3.7: Fix Parse Errors
  Set Intune's Ignore app version detection option for created or updated PKG/DMG apps.
  Unlike -IgnoreAppVersion, this does not suppress catalog update comparisons.
  Omit the parameter to preserve the detection setting on existing apps. Use -IgnoreVersionDetection:$false to turn it off.
+.PARAMETER AllowNetworkPaths
+ Allow network file URIs in explicitly selected local JSON manifests. Local installers always require a SHA256 hash.
 
 .PARAMETER IgnoreAppVersion
  Ignores app version checking during upload/update. Useful for apps with auto-update.
@@ -163,6 +165,9 @@ param(
     
     [Parameter(Mandatory = $false)]
     [string]$LocalJsonDirectory,
+
+    [Parameter(Mandatory = $false)]
+    [switch]$AllowNetworkPaths,
 
     [Parameter(Mandatory = $false)]
     [string[]]$ScopeTagIds,
@@ -1518,6 +1523,72 @@ function Get-AppCveInfo {
     }
 }
 
+# Resolve only manifests explicitly discovered through -LocalJsonDirectory.
+function Resolve-LocalManifestPath {
+    param([string]$JsonUrl)
+    if (-not $LocalJsonDirectory -or -not $JsonUrl.StartsWith('file://')) {
+        throw 'Local manifests require -LocalJsonDirectory.'
+    }
+    $path = [System.IO.Path]::GetFullPath($JsonUrl.Substring(7))
+    if ($path -notin @($localJsonOverrides.Values)) {
+        throw 'The local manifest was not selected through -LocalJsonDirectory.'
+    }
+    return $path
+}
+
+function Get-LocalAppFile {
+    param(
+        [string]$FileUri,
+        [string]$FileName,
+        [string]$ExpectedHash,
+        [string]$BaseDirectory,
+        [switch]$AllowNetworkPaths
+    )
+    if ($ExpectedHash -notmatch '^[a-fA-F0-9]{64}$') {
+        throw 'A valid SHA256 is required for local installers.'
+    }
+    if ([string]::IsNullOrWhiteSpace($FileName) -or $FileName -match '[/\\]' -or
+        [System.IO.Path]::GetExtension($FileName).ToLowerInvariant() -notin @('.pkg', '.dmg')) {
+        throw 'The local installer filename must be a PKG or DMG basename.'
+    }
+    if ($FileUri.StartsWith('file://./')) {
+        $relative = [Uri]::UnescapeDataString($FileUri.Substring(9))
+        if (($relative -split '[/\\]') -contains '..' -or [System.IO.Path]::IsPathRooted($relative)) {
+            throw 'Relative installer paths cannot escape the manifest directory.'
+        }
+        $source = Join-Path $BaseDirectory $relative
+    }
+    else {
+        $uri = $null
+        if (-not [Uri]::TryCreate($FileUri, [UriKind]::Absolute, [ref]$uri) -or
+            -not $uri.IsFile -or $uri.Query -or $uri.Fragment) {
+            throw 'Expected an absolute file:// URI without a query or fragment.'
+        }
+        if ($uri.Host -and $uri.Host -ne 'localhost' -and -not $AllowNetworkPaths) {
+            throw 'Network file URIs require -AllowNetworkPaths.'
+        }
+        $source = $uri.LocalPath
+    }
+    $item = Get-Item -LiteralPath $source -ErrorAction Stop
+    if ($item.PSIsContainer -or $item.Extension.ToLowerInvariant() -notin @('.pkg', '.dmg')) {
+        throw 'The local source must be a PKG or DMG file.'
+    }
+    $directory = Join-Path ([System.IO.Path]::GetTempPath()) ('IntuneBrew-' + [Guid]::NewGuid())
+    [System.IO.Directory]::CreateDirectory($directory) | Out-Null
+    $destination = Join-Path $directory $FileName
+    try {
+        Copy-Item -LiteralPath $item.FullName -Destination $destination -ErrorAction Stop
+        if ((Get-FileHash -LiteralPath $destination -Algorithm SHA256).Hash -ne $ExpectedHash) {
+            throw 'Local installer SHA256 does not match the manifest.'
+        }
+        return $destination
+    }
+    catch {
+        Remove-Item -LiteralPath $directory -Recurse -Force
+        throw
+    }
+}
+
 # Fetches app information from GitHub JSON file or local file
 function Get-GitHubAppInfo {
     param(
@@ -1529,10 +1600,11 @@ function Get-GitHubAppInfo {
         return $null
     }
 
+    $localPath = $null
     try {
         # Check if it's a local file
         if ($jsonUrl.StartsWith("file://")) {
-            $localPath = $jsonUrl.Replace("file://", "")
+            $localPath = Resolve-LocalManifestPath -JsonUrl $jsonUrl
             if (Test-Path $localPath) {
                 Write-Host "  Loading from local file: $localPath" -ForegroundColor Gray
                 $response = Get-Content $localPath -Raw | ConvertFrom-Json
@@ -1555,6 +1627,7 @@ function Get-GitHubAppInfo {
             homepage    = $response.homepage
             fileName    = $response.fileName
             sha         = $response.sha
+            localManifestDirectory = if ($localPath) { Split-Path -Parent $localPath } else { $null }
         }
     }
     catch {
@@ -1565,7 +1638,13 @@ function Get-GitHubAppInfo {
 }
 
 # Downloads app installer file with progress indication
-function Get-AppFile($url, $fileName, $expectedHash) {
+function Get-AppFile($url, $fileName, $expectedHash, $localManifestDirectory) {
+    if ($url -like 'file://*') {
+        if (-not $localManifestDirectory) {
+            throw 'Local installer access is allowed only from a selected local manifest.'
+        }
+        return Get-LocalAppFile -FileUri $url -FileName $fileName -ExpectedHash $expectedHash -BaseDirectory $localManifestDirectory -AllowNetworkPaths:$AllowNetworkPaths
+    }
     # Sanitize the filename - remove query parameters if present
     $sanitizedFileName = $fileName -replace '\?.*$', ''
     $outputPath = Join-Path $PWD $sanitizedFileName
@@ -1763,14 +1842,12 @@ function Test-ValidUrl {
         [string]$url
     )
 
-    # Local JSON definitions supplied via -LocalJsonDirectory use file:// URLs (Issue #115)
     if ($url -like "file://*") {
-        $localPath = $url.Substring(7)
-        if (Test-Path $localPath) {
-            return $true
+        try {
+            $localPath = Resolve-LocalManifestPath -JsonUrl $url
+            return (Test-Path -LiteralPath $localPath -PathType Leaf)
         }
-        Write-Host "Local JSON file not found: $localPath" -ForegroundColor Red
-        return $false
+        catch { return $false }
     }
 
     if ($url -match "^$([regex]::Escape($gitHubRespositoryRawUrl))/main/Apps/.*\.json$") {
@@ -2356,7 +2433,7 @@ foreach ($app in $appsToUpload) {
     $startTime = Get-Date # Record start time for this app's update
 
     Write-Host "⬇️  Downloading application..." -ForegroundColor Yellow
-    $appFilePath = Get-AppFile -url $appInfo.url -fileName $appInfo.fileName -expectedHash $appInfo.sha
+    $appFilePath = Get-AppFile -url $appInfo.url -fileName $appInfo.fileName -expectedHash $appInfo.sha -localManifestDirectory $appInfo.localManifestDirectory
     
     # Check if the downloaded file has a proper name and extension
     $fileExtension = [System.IO.Path]::GetExtension($appFilePath)
