@@ -997,7 +997,7 @@ jobs:
               fi
 
               if [ -f "${app_name}_extracted/${app_name}_${version}.pkg" ]; then
-                jq --arg identifier "$cli_identifier" '.bundleId = $identifier' \
+                jq --arg identifier "$cli_identifier" '.bundleId = $identifier | .packageIdentifier = $identifier' \
                   "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json
                 mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
               fi
@@ -1269,52 +1269,7 @@ jobs:
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add Apps/*.json supported_apps.json README.md catalog-sync.json latest-updates.json
-
-          if git diff --staged --quiet; then
-            echo "No changes to commit"
-            exit 0
-          fi
-
-          git commit -m "Update app information and supported apps list"
-
-          MAX_RETRIES=5
-          RETRY_COUNT=0
-          RETRY_DELAY=5
-
-          while [ $RETRY_COUNT -lt $MAX_RETRIES ]; do
-            echo "Attempt $((RETRY_COUNT + 1)) of $MAX_RETRIES"
-
-            # Clean up any failed rebase state
-            git rebase --abort 2>/dev/null || true
-
-            # Stash any unstaged changes before rebasing to avoid conflicts
-            git stash --include-untracked || true
-
-            if git pull --rebase origin main; then
-              # Restore stashed changes after successful rebase
-              git stash pop || true
-
-              if git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git; then
-                echo "Push successful"
-                exit 0
-              fi
-            else
-              # Abort failed rebase and restore stashed changes
-              git rebase --abort 2>/dev/null || true
-              git stash pop || true
-            fi
-
-            RETRY_COUNT=$((RETRY_COUNT + 1))
-            if [ $RETRY_COUNT -lt $MAX_RETRIES ]; then
-              echo "Push failed, retrying in ${RETRY_DELAY} seconds..."
-              sleep $RETRY_DELAY
-              RETRY_DELAY=$((RETRY_DELAY * 2))
-            fi
-          done
-
-          echo "Push failed after $MAX_RETRIES attempts"
-          exit 1
+          python .github/scripts/commit_catalog.py
 
       # Keep one tracking issue in sync with the packaging failures of full
       # builds. Scoped builds only process the apps a push added, so their
@@ -1351,6 +1306,10 @@ jobs:
         id: pending
         run: python .github/scripts/pending_requests.py resolve
 
+      - name: Commit resolved requests
+        if: steps.pending.outputs.notify_count != '0'
+        run: python .github/scripts/commit_catalog.py --pending
+
       - name: Notify requesters
         if: steps.pending.outputs.notify_count != '0'
         uses: actions/github-script@v7
@@ -1382,19 +1341,3 @@ jobs:
                 console.log(`Could not comment on #${item.issue}: ${e.message}`);
               }
             }
-
-      - name: Commit resolved requests
-        if: steps.pending.outputs.notify_count != '0'
-        run: |
-          git config --local user.email "action@github.com"
-          git config --local user.name "GitHub Action"
-          git add .github/pending-requests.json
-
-          if git diff --staged --quiet; then
-            echo "No pending request changes to commit"
-            exit 0
-          fi
-
-          git commit -m "Clear resolved app requests [skip ci]"
-          git pull --rebase origin main || git rebase --abort || true
-          git push https://${{ secrets.PAT }}@github.com/${{ github.repository }}.git || echo "Push failed, entries will resolve on the next run"
