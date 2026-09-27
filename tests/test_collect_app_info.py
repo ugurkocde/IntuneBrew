@@ -407,6 +407,26 @@ class PrefetchTests(unittest.TestCase):
         collect_app_info.cask_cache.clear()
         del collect_app_info.filename_collisions[:]
 
+    def test_direct_download_uses_homebrew_checksum(self):
+        url = "https://formulae.brew.sh/api/cask/tailscale.json"
+        collect_app_info.cask_cache[url] = dict(TAILSCALE_PAYLOAD, sha256="A" * 64)
+        self.assertEqual(collect_app_info.get_homebrew_app_info(url)["sha"], "a" * 64)
+
+    def test_vendor_checksum_is_not_used_for_repackaged_output(self):
+        url = "https://formulae.brew.sh/api/cask/tailscale.json"
+        collect_app_info.cask_cache[url] = dict(TAILSCALE_PAYLOAD, sha256="a" * 64)
+        self.assertNotIn("sha", collect_app_info.get_homebrew_app_info(url, needs_packaging=True))
+
+    def test_no_check_requires_download_hash(self):
+        url = "https://formulae.brew.sh/api/cask/tailscale.json"
+        collect_app_info.cask_cache[url] = dict(TAILSCALE_PAYLOAD, sha256="no_check")
+        self.assertNotIn("sha", collect_app_info.get_homebrew_app_info(url))
+
+    def test_warp_keeps_the_url_that_homebrew_checksum_describes(self):
+        url = "https://formulae.brew.sh/api/cask/warp.json"
+        collect_app_info.cask_cache[url] = dict(TAILSCALE_PAYLOAD, name=["Warp"], url="https://app.warp.dev/download?version=1&package=dmg")
+        self.assertEqual(collect_app_info.get_homebrew_app_info(url)["url"], collect_app_info.cask_cache[url]["url"])
+
     def test_prefetch_stores_payload_or_exception_per_url(self):
         good_url = "https://formulae.brew.sh/api/cask/tailscale.json"
         missing_url = "https://formulae.brew.sh/api/cask/removed-app.json"
