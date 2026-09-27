@@ -410,6 +410,8 @@ jobs:
               if ! python "$WORKSPACE_DIR/.github/scripts/reuse_cached_package.py" "$WORKSPACE_DIR/Apps/${app_name}.json" "$azure_url"; then
                 FAILED_APPS+=("$app_name")
                 ERROR_LOG+=("$app_name: Cached package checksum could not be verified")
+              else
+                SUCCESSFUL_APPS+=("$app_name")
               fi
 
               continue
