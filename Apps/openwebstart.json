@@ -4,7 +4,7 @@
   "version": "1.14.0",
   "url": "https://github.com/karakun/OpenWebStart/releases/download/v1.14.0/OpenWebStart_macos-aarch64_1_14_0.dmg",
   "vendor_url": "https://github.com/karakun/OpenWebStart/releases/download/v1.14.0/OpenWebStart_macos-aarch64_1_14_0.dmg",
-  "bundleId": null,
+  "bundleId": "com.OpenWebStart",
   "homepage": "https://openwebstart.com/",
   "homebrew_cask": "openwebstart",
   "fileName": "OpenWebStart_macos-aarch64_1_14_0.dmg",
