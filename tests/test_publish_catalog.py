@@ -40,10 +40,12 @@ class PublicationTests(unittest.TestCase):
         publisher.publish()
         self.assertEqual(json.loads(Path('Apps/broken.json').read_text())['version'], '1')
     def test_invalid_new_package_is_omitted(self):
+        Path('README.md').write_text('Apps_Available-4-blue\n')
         self.write('new', '2', type='app', url='https://vendor.test/app.zip')
         state, _ = publisher.publish()
         self.assertFalse(Path('Apps/new.json').exists())
         self.assertEqual(state['appCount'], 3)
+        self.assertIn('Apps_Available-3-blue', Path('README.md').read_text())
     def test_scoped_run_does_not_refresh_full_scan(self):
         Path('catalog-sync.json').write_text(json.dumps({'lastFullSyncAt':'2026-01-01T00:00:00Z','status':'degraded','failedApps':[]}))
         state, _ = publisher.publish('partial')

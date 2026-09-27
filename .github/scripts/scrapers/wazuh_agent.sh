@@ -5,7 +5,11 @@
 # latest GitHub release and the package from the official Wazuh repository.
 
 # Get the latest release tag from GitHub (e.g. v4.14.1)
-VERSION=$(curl -s "https://api.github.com/repos/wazuh/wazuh/releases/latest" | python3 -c "import json,sys; print(json.load(sys.stdin).get('tag_name','').lstrip('v'))")
+if [ -n "${GH_TOKEN:-}" ]; then
+    VERSION=$(gh api repos/wazuh/wazuh/releases/latest --jq '.tag_name | ltrimstr("v")') || exit 1
+else
+    VERSION=$(curl --fail --silent --show-error --retry 3 "https://api.github.com/repos/wazuh/wazuh/releases/latest" | python3 -c "import json,sys; print(json.load(sys.stdin).get('tag_name','').lstrip('v'))") || exit 1
+fi
 
 if [ -z "$VERSION" ]; then
     echo "Error: Could not determine latest Wazuh version from GitHub API" >&2

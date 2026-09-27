@@ -105,3 +105,12 @@ jobs:
 
       - name: Test version synchronization
         run: node --test tests/*.test.mjs
+
+  macos-package-extraction:
+    name: macOS package extraction
+    runs-on: macos-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@v4
+      - name: Test nested vendor disk images
+        run: bash tests/test_nested_dmg.sh
