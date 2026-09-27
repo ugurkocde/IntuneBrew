@@ -9,7 +9,7 @@ on:
   schedule:
     - cron: "0 0 * * *" # Run at midnight UTC every day
 
-# Cancel old builds when a new one starts (new build includes all apps)
+# Let each publication finish; a new run must not cancel catalog recovery.
 concurrency:
   group: build-app-packages
   cancel-in-progress: false

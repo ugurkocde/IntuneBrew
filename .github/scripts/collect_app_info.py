@@ -2379,14 +2379,15 @@ def main():
                         json.dump(app_data, f, indent=2)
                     print(f"✅ SHA256 hash added for {app_data['name']}: {file_hash}")
                 else:
+                    collection_failures.append({"file": os.path.basename(json_file), "stage": "download verification"})
                     print(f"⚠️ Could not calculate SHA256 hash for {app_data['name']}")
 
     # Update the README with both the apps table and latest changes
     update_readme_apps(supported_apps)
     update_readme_with_latest_changes(apps_info)
 
-    # A collision is catalog corruption in the making and needs a human decision,
-    # so the run must go red before anything is committed.
+    # Standalone collection is strict; the workflow can isolate failures only
+    # because its publication step restores all affected catalog entries.
     collisions = report_filename_collisions()
     report_path = os.environ.get("CATALOG_COLLECTION_REPORT")
     if report_path:
