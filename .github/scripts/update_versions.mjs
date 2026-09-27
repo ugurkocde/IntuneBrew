@@ -32,10 +32,14 @@ export async function synchronize(supabase, apps, notify) {
   const updated = await readAllVersions(supabase);
   const pending = updated.filter(row => row.notification_sent_at === null)
     .sort((a,b) => a.id.localeCompare(b.id));
-  // Keep stable, small batches to bound API duration and permit granular retries.
-  for (let start = 0; start < pending.length; start += 10) {
-    const batch = pending.slice(start, start + 10);
-    await notify(batch.map(row => ({appName:row.app_name, version:row.version, changelog:row.changelog || ''})));
+  // One digest per publication, not one email per small app batch. The API's
+  // recipient delivery ledger skips successful recipients on retry.
+  if (pending.length) {
+    await notify(pending.map(row => ({appName:row.app_name, version:row.version, changelog:row.changelog || ''})));
+  }
+  // Bound database filter URLs while acknowledging the delivered digest.
+  for (let start = 0; start < pending.length; start += 100) {
+    const batch = pending.slice(start, start + 100);
     const { error } = await supabase.from('app_versions')
       .update({notification_sent_at:new Date().toISOString()}).in('id', batch.map(row => row.id));
     if (error) throw error;
@@ -77,7 +81,7 @@ async function main() {
   await synchronize(supabase, apps, async updates => {
     const response = await fetch(process.env.NOTIFICATIONS_API_URL || 'https://intunebrew.com/api/notifications/send', {
       method:'POST', headers:{'Content-Type':'application/json', Authorization:`Bearer ${process.env.NOTIFICATIONS_API_KEY}`},
-      body:JSON.stringify({updates}), signal:AbortSignal.timeout(120_000)
+      body:JSON.stringify({updates}), signal:AbortSignal.timeout(330_000)
     });
     const data = await response.json();
     if (!response.ok || data.success === false || data.results?.some(result => result.success === false) ||

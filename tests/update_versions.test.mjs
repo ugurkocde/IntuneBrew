@@ -26,3 +26,16 @@ test('notification failure keeps a pending version for the next run', async () =
   assert.equal(rows.length,2);
   assert.ok(rows[1].notification_sent_at);
 });
+
+test('catch-up updates are sent in one digest, with bounded database acknowledgements', async () => {
+  const rows=Array.from({length:225},(_,i)=>({id:String(i).padStart(3,'0'),app_name:`app${i}`,version:'2',created_at:'2026-09-27',notification_sent_at:null}));
+  const acknowledgements=[];
+  const client={from:()=>({
+    select:()=>({order:()=>({range:async(a,b)=>({data:structuredClone(rows.slice(a,b+1)),error:null})})}),
+    update:values=>({eq:async()=>({error:null}),in:async(_,ids)=>{acknowledgements.push(ids.length);rows.filter(r=>ids.includes(r.id)).forEach(r=>Object.assign(r,values));return {error:null}}})
+  })};
+  const calls=[];
+  await synchronize(client,rows.map(r=>({app_name:r.app_name,version:r.version})),async updates=>{calls.push(updates.length)});
+  assert.deepEqual(calls,[225]);
+  assert.deepEqual(acknowledgements,[100,100,25]);
+});
