@@ -2,6 +2,7 @@ import json
 import os
 import sys
 import requests
+from urllib3.util.retry import Retry
 import re
 import fileinput
 from pathlib import Path
@@ -1647,13 +1648,19 @@ class TimeoutSession(requests.Session):
 
 
 def build_cask_session():
-    """Connection-reusing session for the Homebrew API. No retries: the nightly run
-    reruns anyway, and a retrying adapter multiplies the stall of a dead endpoint."""
+    """Retry brief HTTP outages without multiplying connection/read timeouts."""
     session = TimeoutSession()
     adapter = requests.adapters.HTTPAdapter(
         pool_connections=CASK_WORKERS,
         pool_maxsize=CASK_WORKERS,
-        max_retries=0,
+        max_retries=Retry(
+            total=2, connect=0, read=0, other=0, status=2,
+            allowed_methods=frozenset({"GET"}),
+            status_forcelist=(429, 500, 502, 503, 504),
+            backoff_factor=0.5,
+            respect_retry_after_header=False,
+            raise_on_status=False,
+        ),
     )
     session.mount("https://", adapter)
     session.mount("http://", adapter)
