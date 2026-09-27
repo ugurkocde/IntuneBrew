@@ -110,6 +110,15 @@ Version 0.3.7: Fix Parse Errors
  Required for accounts that do not have access to the Default scope tag.
  Example: IntuneBrew -Upload firefox -ScopeTagIds "1","2"
 
+.PARAMETER SecurityHoldLevel
+ Optional policy to hold updates that introduce a new assessable CVE at the selected severity or any newly introduced KEV. Default None disables holds.
+
+.PARAMETER IgnoreSecurityHold
+ Override configured security holds for this run. Unknown ranges never trigger a hold.
+
+.PARAMETER ShowAllCves
+ Display every product CVE, including records outside the current and target versions.
+
 .PARAMETER NonInteractive
  Runs the script without ever prompting for input. Any condition that would normally ask a question is treated as the safe answer.
  For hash problems (missing SHA256 hash in the app manifest or a hash mismatch) this means the app fails instead of continuing unverified.
@@ -173,7 +182,12 @@ param(
     [string[]]$ScopeTagIds,
 
     [Parameter(Mandatory = $false)]
-    [switch]$NonInteractive
+    [switch]$NonInteractive,
+
+    [ValidateSet('None', 'Medium', 'High', 'Critical')]
+    [string]$SecurityHoldLevel = 'None',
+    [switch]$IgnoreSecurityHold,
+    [switch]$ShowAllCves
 )
 
 if ($NonInteractive) { $ErrorActionPreference = "Stop" }
@@ -1925,6 +1939,76 @@ function Get-IntuneAppCollection {
     return @{ value = $items }
 }
 
+# Return null when the supplied range cannot be compared reliably.
+function Test-CveVersionAffected {
+    param([string]$Version, $Vulnerability)
+    $start = [string]$Vulnerability.affected_version_start
+    $end = [string]$Vulnerability.affected_version_end
+    $fixed = [string]$Vulnerability.fixed_version
+    if (-not ($start -or $end -or $fixed) -or $Version -notmatch '^\d+(\.\d+)*$') { return $null }
+    foreach ($bound in @($start, $end, $fixed)) {
+        if ($bound -and $bound -notmatch '^\d+(\.\d+)*$') { return $null }
+    }
+    if ($start -and $Vulnerability.affected_version_start_type -notin @('including', 'excluding')) { return $null }
+    if ($end -and $Vulnerability.affected_version_end_type -notin @('including', 'excluding')) { return $null }
+    $upper = if ($end) { $end } else { $fixed }
+    if ($start -and $upper -and (Compare-VersionSegments $start $upper) -gt 0) { return $null }
+    if ($start) {
+        $comparison = Compare-VersionSegments $Version $start
+        if ($comparison -lt 0 -or ($comparison -eq 0 -and $Vulnerability.affected_version_start_type -eq 'excluding')) { return $false }
+    }
+    if ($upper) {
+        $comparison = Compare-VersionSegments $Version $upper
+        $exclusive = -not $end -or $Vulnerability.affected_version_end_type -eq 'excluding'
+        if ($comparison -gt 0 -or ($comparison -eq 0 -and $exclusive)) { return $false }
+    }
+    return $true
+}
+
+function Get-CveUpdateImpact {
+    param([string]$CurrentVersion, [string]$TargetVersion, [object[]]$Vulnerabilities,
+        [ValidateSet('None', 'Medium', 'High', 'Critical')][string]$HoldLevel = 'None', [switch]$IgnoreHold)
+    $severityRanks = @{ LOW = 1; MEDIUM = 2; HIGH = 3; CRITICAL = 4 }
+    $records = @($Vulnerabilities | Where-Object { $null -ne $_ } | ForEach-Object {
+        $current = Test-CveVersionAffected -Version $CurrentVersion -Vulnerability $_
+        $target = Test-CveVersionAffected -Version $TargetVersion -Vulnerability $_
+        $classification = if ($null -eq $current -or $null -eq $target) { 'Indeterminate' }
+            elseif ($current -and -not $target) { 'Fixed' }
+            elseif ($current -and $target) { 'Persists' }
+            elseif (-not $current -and $target) { 'Introduced' }
+            else { 'NotRelevant' }
+        $hold = $classification -eq 'Introduced' -and $HoldLevel -ne 'None' -and -not $IgnoreHold -and
+            ($_.is_kev -eq $true -or $severityRanks[[string]$_.severity] -ge $severityRanks[$HoldLevel])
+        [PSCustomObject]@{ Classification = $classification; Vulnerability = $_; Hold = [bool]$hold }
+    })
+    return [PSCustomObject]@{ Records = $records; Held = [bool]@($records | Where-Object Hold).Count }
+}
+
+function Write-CveUpdateImpact {
+    param($Impact, [switch]$ShowAll)
+    $counts = @{}
+    foreach ($kind in @('Fixed', 'Persists', 'Introduced', 'Indeterminate')) {
+        $counts[$kind] = @($Impact.Records | Where-Object Classification -eq $kind).Count
+    }
+    Write-Host "   Security impact: fixes $($counts.Fixed), persists $($counts.Persists), introduces $($counts.Introduced), indeterminate $($counts.Indeterminate)."
+    if ($Impact.Held) { Write-Host '   HELD: the update introduces a vulnerability covered by the configured hold policy.' -ForegroundColor Red }
+    else { Write-Host '   Update allowed by the configured hold policy.' }
+    $lowerUnknown = 0
+    foreach ($record in $Impact.Records) {
+        $vulnerability = $record.Vulnerability
+        if (-not $ShowAll -and $record.Classification -eq 'NotRelevant') { continue }
+        if (-not $ShowAll -and $record.Classification -eq 'Indeterminate' -and
+            $vulnerability.severity -notin @('CRITICAL', 'HIGH') -and $vulnerability.is_kev -ne $true) {
+            $lowerUnknown++
+            continue
+        }
+        $label = if ($record.Classification -eq 'Indeterminate') { 'unable to confirm exposure, review manually' } else { $record.Classification }
+        $kev = if ($vulnerability.is_kev -eq $true) { ', KEV' } else { '' }
+        Write-Host "     $($vulnerability.cve_id): $($vulnerability.severity)$kev, $label"
+    }
+    if ($lowerUnknown) { Write-Host "     $lowerUnknown lower-severity CVEs: unable to confirm exposure (details hidden)." }
+}
+
 # Retrieves and compares app versions between Intune and GitHub
 function Get-IntuneApp {
     $intuneApps = @()
@@ -1952,6 +2036,7 @@ function Get-IntuneApp {
             continue
         }
 
+        $securityImpact = $null
         $originalAppName = $appInfo.name
         $formattedAppName = Get-FormattedAppName -BaseName $originalAppName -Prefix $AppNamePrefix -Suffix $AppNameSuffix
         # We'll modify the output format but keep the check logic the same
@@ -1982,39 +2067,11 @@ function Get-IntuneApp {
                     # Use originalAppName for consistency if appKey is derived from the name
                     $appKey = [System.IO.Path]::GetFileNameWithoutExtension($jsonUrl.Split('/')[-1]) # This uses the JSON filename, which is fine
                     
-                    # Check for CVE information
                     $cveInfo = Get-AppCveInfo -appKey $appKey
-                    if ($cveInfo -and $cveInfo.vulnerabilities -and $cveInfo.vulnerabilities.Count -gt 0) {
-                        Write-Host "   🛡️  Security Vulnerabilities:" -ForegroundColor Yellow
-                        
-                        # Sort vulnerabilities by base score (highest first)
-                        $sortedVulns = $cveInfo.vulnerabilities | Sort-Object -Property base_score -Descending
-                        
-                        # Display each vulnerability with appropriate color
-                        foreach ($vuln in $sortedVulns | Select-Object -First 2) {
-                            $severityColor = switch ($vuln.severity) {
-                                "CRITICAL" { "Red" }
-                                "HIGH" { "DarkRed" }
-                                "MEDIUM" { "Yellow" }
-                                "LOW" { "Gray" }
-                                default { "White" }
-                            }
-                            Write-Host "     • " -NoNewline
-                            Write-Host "$($vuln.cve_id)" -NoNewline -ForegroundColor $severityColor
-                            Write-Host " (Score: $($vuln.base_score)) - " -NoNewline
-                            Write-Host "$($vuln.severity)" -ForegroundColor $severityColor
-                        }
-                        
-                        # If there are more than 2 vulnerabilities, show a count of the remaining ones
-                        if ($cveInfo.vulnerabilities.Count -gt 2) {
-                            $remainingCount = $cveInfo.vulnerabilities.Count - 2
-                            Write-Host "     • $remainingCount more vulnerabilities found. Check CVE/$appKey.json for details." -ForegroundColor Gray
-                        }
-                    }
-                    else {
-                        # No CVEs found
-                        Write-Host "   ℹ️ No CVEs found" -ForegroundColor Gray
-                    }
+                    $securityImpact = Get-CveUpdateImpact -CurrentVersion $intuneVersion -TargetVersion $githubVersion -Vulnerabilities @($cveInfo.vulnerabilities) -HoldLevel $SecurityHoldLevel -IgnoreHold:$IgnoreSecurityHold
+                    Write-CveUpdateImpact -Impact $securityImpact -ShowAll:$ShowAllCves
+                    if (-not $cveInfo) { Write-Host '   CVE data unavailable; exposure could not be confirmed. No automatic hold applied.' -ForegroundColor Yellow }
+
                 }
                 else {
                     # Improved output for up-to-date apps
@@ -2027,6 +2084,7 @@ function Get-IntuneApp {
                     FormattedName = $formattedAppName
                     IntuneVersion = $intuneVersion
                     IntuneAppId   = $intuneAppId # Add the ID here
+                    SecurityHeld  = [bool]$securityImpact.Held
                     GitHubVersion = $githubVersion
                 }
             }
@@ -2228,6 +2286,17 @@ $appsToUpload = $intuneAppVersions | Where-Object {
         # For normal operation, include both new and updatable apps
         $_.IntuneVersion -eq 'Not in Intune' -or (Test-NewerVersion $_.GitHubVersion $_.IntuneVersion)
     }
+}
+
+$heldApps = @($appsToUpload | Where-Object SecurityHeld)
+foreach ($held in $heldApps) {
+    Write-Host "HELD: $($held.FormattedName) ($($held.IntuneVersion) -> $($held.GitHubVersion)). Review the CVEs or use -IgnoreSecurityHold to override." -ForegroundColor Red
+}
+$appsToUpload = @($appsToUpload | Where-Object { -not $_.SecurityHeld })
+if (-not $appsToUpload.Count -and $heldApps.Count) {
+    Disconnect-MgGraph > $null 2>&1
+    Write-Host "$($heldApps.Count) app updates held by security policy." -ForegroundColor Red
+    exit 2
 }
 
 if ($appsToUpload.Count -eq 0) {
@@ -2829,6 +2898,11 @@ if ($updateSummaries.Count -gt 0) {
     Write-Host "---------------------------------------------------" -ForegroundColor Yellow
 }
 
+if ($heldApps.Count) {
+    Disconnect-MgGraph > $null 2>&1
+    Write-Host "$($heldApps.Count) app updates held by security policy; other selected updates completed." -ForegroundColor Yellow
+    exit 2
+}
 Write-Host "`n🎉 All operations completed successfully!" -ForegroundColor Green
 Disconnect-MgGraph > $null 2>&1
 Write-Host "Disconnected from Microsoft Graph." -ForegroundColor Green
