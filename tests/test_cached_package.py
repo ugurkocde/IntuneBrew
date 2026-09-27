@@ -35,10 +35,15 @@ class CachedPackageTests(unittest.TestCase):
     def test_known_package_hash_is_reused_instead_of_collector_hash(self):
         previous = {'version': '2', 'url': URL, 'fileName': 'app_2.pkg', 'sha': 'b' * 64}
         current = {**previous, 'url': 'https://vendor.invalid/app.zip', 'sha': 'a' * 64}
-        session = Mock()
+        session = session_for()
         result = MODULE.update_cached_package(current, previous, URL, session)
         self.assertEqual(result['sha'], 'b' * 64)
-        session.get.assert_not_called()
+        session.get.assert_called_once_with(URL, headers={"Range": "bytes=0-27"}, stream=True, timeout=(20, 120))
+
+    def test_known_checksum_cannot_hide_invalid_archive(self):
+        previous = {"version": "2", "url": URL, "fileName": "app_2.pkg", "sha": "b" * 64}
+        with self.assertRaises(ValueError):
+            MODULE.update_cached_package(previous, previous, URL, session_for(b"AppleDouble metadata" * 4))
 
     def test_failed_prior_publication_or_changed_version_downloads_package(self):
         previous = {'version': '1', 'url': URL.replace('_2', '_1'), 'fileName': 'app_1.pkg', 'sha': 'b' * 64}

@@ -12,6 +12,7 @@ The following apps are intentionally excluded from collection, packaging, and th
 | Avast Secure Browser | Vendor installer returns HTTP 404. |
 | Contexts | Vendor installer fails TLS validation. |
 | jamovi | Vendor installer redirects to an HTML error page. |
+| BusyContacts | Published artifact contains AppleDouble metadata instead of a macOS installer. |
 | Postbox | Vendor installer host cannot be reached. |
 | Real VNC Viewer, CHIRP, Dynalist, fig, Nocturnal, Yubikey Manager | Homebrew casks were removed; historical records remain deprecated. |
 

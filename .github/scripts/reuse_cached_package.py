@@ -19,7 +19,17 @@ def update_cached_package(manifest, previous, package_url, session=requests):
     trusted = (previous.get('url') == package_url and previous.get('fileName') == filename
                and previous.get('version') == manifest.get('version')
                and isinstance(checksum, str) and re.fullmatch(r'[a-fA-F0-9]{64}', checksum))
-    if not trusted:
+    if trusted:
+        with session.get(package_url, headers={"Range": "bytes=0-27"}, stream=True, timeout=(20, 120)) as response:
+            response.raise_for_status()
+            prefix = b""
+            for chunk in response.iter_content(28):
+                prefix += chunk
+                if len(prefix) >= 28:
+                    break
+            if len(prefix) < 28 or not prefix.startswith(b"xar!"):
+                raise ValueError("Cached artifact is not a PKG archive.")
+    else:
         digest = hashlib.sha256()
         first = True
         size = 0

@@ -445,7 +445,7 @@ jobs:
                 unzip -q "${download_path}.zip" -d "$zip_extract_dir" || true
 
                 # Find the PKG file inside the ZIP
-                found_pkg=$(find "$zip_extract_dir" -name "*.pkg" -type f -print -quit)
+                found_pkg=$(find "$zip_extract_dir" -name "*.pkg" ! -name "._*" ! -path "*/__MACOSX/*" -type f -print -quit)
                 if [ -z "$found_pkg" ]; then
                   echo "No PKG file found inside ZIP"
                   rm -rf "$zip_extract_dir" "${download_path}.zip"
@@ -488,7 +488,7 @@ jobs:
                   
                   # Find inner PKG (file or directory)
                   echo "🔍 Searching for inner PKG..."
-                  inner_pkg=$(find "$temp_dir" -name "*.pkg" -type f -print -quit)
+                  inner_pkg=$(find "$temp_dir" -name "*.pkg" ! -name "._*" ! -path "*/__MACOSX/*" -type f -print -quit)
                   
                   if [ -n "$inner_pkg" ]; then
                     # Found a .pkg file
@@ -502,7 +502,7 @@ jobs:
                     cp "$inner_pkg" "${app_name}_${version}.pkg" || true
                   else
                     # Check if there's a .pkg directory (flat package)
-                    inner_pkg_dir=$(find "$temp_dir" -name "*.pkg" -type d -print -quit)
+                    inner_pkg_dir=$(find "$temp_dir" -name "*.pkg" ! -name "._*" ! -path "*/__MACOSX/*" -type d -print -quit)
                     if [ -n "$inner_pkg_dir" ]; then
                       echo "✅ Found flat package directory: $inner_pkg_dir"
                       echo "📦 Flattening package to ${app_name}_${version}.pkg"
@@ -531,6 +531,11 @@ jobs:
 
                   # Calculate SHA256 hash
                   echo "🔐 Calculating SHA256 hash..."
+                  if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Generated artifact is not a valid PKG archive")
+                    continue
+                  fi
                   file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
                   echo "📝 SHA256: $file_hash"
 
@@ -633,7 +638,7 @@ jobs:
               
               # Find PKG file
               echo "🔍 Searching for PKG file..."
-              pkg_file=$(find "${download_path}_mount" -name "*.pkg" -print -quit)
+              pkg_file=$(find "${download_path}_mount" -name "*.pkg" ! -name "._*" ! -path "*/__MACOSX/*" -print -quit)
 
               # The DMG must be unmounted whether this succeeds or not, so
               # failures set a flag here and are recorded after the cleanup.
@@ -653,6 +658,11 @@ jobs:
                 
                 # Calculate SHA256 hash
                 echo "🔐 Calculating SHA256 hash..."
+                if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
+                  FAILED_APPS+=("$app_name")
+                  ERROR_LOG+=("$app_name: Generated artifact is not a valid PKG archive")
+                  continue
+                fi
                 file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
                 echo "📝 SHA256: $file_hash"
 
@@ -966,7 +976,7 @@ jobs:
               
               if [ -z "$app_file" ]; then
                 echo "❌ No .app file found, searching for .pkg file..."
-                pkg_file=$(find "${app_name}_extracted" -type f -name "*.pkg" ! -path "*/__MACOSX/*" -print -quit)
+                pkg_file=$(find "${app_name}_extracted" -type f -name "*.pkg" ! -name "._*" ! -path "*/__MACOSX/*" -print -quit)
                 
                 if [ -n "$pkg_file" ]; then
                   echo "✅ Found .pkg file: $pkg_file"
@@ -983,6 +993,11 @@ jobs:
                   
                   # Calculate SHA256 hash
                   echo "🔐 Calculating SHA256 hash..."
+                  if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Generated artifact is not a valid PKG archive")
+                    continue
+                  fi
                   file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
                   echo "📝 SHA256: $file_hash"
 
@@ -1054,6 +1069,11 @@ jobs:
               
               # Calculate SHA256 hash
               echo "🔐 Calculating SHA256 hash..."
+              if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: Generated artifact is not a valid PKG archive")
+                continue
+              fi
               file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
               echo "📝 SHA256: $file_hash"
 

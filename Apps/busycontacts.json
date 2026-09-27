@@ -23,5 +23,7 @@
   },
   "category": "Productivity",
   "publisher": "BusyMac, LLC",
-  "homebrew_cask": "busycontacts"
+  "homebrew_cask": "busycontacts",
+  "deprecated": true,
+  "deprecation_reason": "Published artifact is AppleDouble metadata, not a macOS installer."
 }

@@ -191,7 +191,6 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/blip.json",
     "https://formulae.brew.sh/api/cask/boop.json",
     "https://formulae.brew.sh/api/cask/busycal.json",
-    "https://formulae.brew.sh/api/cask/busycontacts.json",
     "https://formulae.brew.sh/api/cask/beeper.json",
     "https://formulae.brew.sh/api/cask/airfoil.json",
     "https://formulae.brew.sh/api/cask/angry-ip-scanner.json",
