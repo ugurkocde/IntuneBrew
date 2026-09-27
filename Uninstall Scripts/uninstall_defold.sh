@@ -17,6 +17,10 @@ fi
 echo "Stopping Defold if running..."
 pkill -f "Defold" 2>/dev/null || true
 
+# Kill application with bundle ID com.defold.editor if running
+echo "Stopping application with bundle ID com.defold.editor if running..."
+killall -9 "com.defold.editor" 2>/dev/null || true
+
 # Remove /Applications/Defold.app
 echo "Removing /Applications/Defold.app..."
 if [ -d "/Applications/Defold.app" ]; then

@@ -17,6 +17,10 @@ fi
 echo "Stopping XnViewMP if running..."
 pkill -f "XnViewMP" 2>/dev/null || true
 
+# Kill application with bundle ID com.xnview.XnView if running
+echo "Stopping application with bundle ID com.xnview.XnView if running..."
+killall -9 "com.xnview.XnView" 2>/dev/null || true
+
 # Remove /Applications/XnViewMP.app
 echo "Removing /Applications/XnViewMP.app..."
 if [ -d "/Applications/XnViewMP.app" ]; then

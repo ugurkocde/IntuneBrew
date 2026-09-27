@@ -17,6 +17,16 @@ fi
 echo "Stopping Connect Fonts if running..."
 pkill -f "Connect Fonts" 2>/dev/null || true
 
+# Unload service com.extensis.FMCore
+echo "Unloading service com.extensis.FMCore..."
+launchctl unload -w /Library/LaunchAgents/com.extensis.FMCore.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.extensis.FMCore.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.extensis.FMCore.plist 2>/dev/null || true
+
+# Kill application with bundle ID com.extensis.SuitcaseFusion if running
+echo "Stopping application with bundle ID com.extensis.SuitcaseFusion if running..."
+killall -9 "com.extensis.SuitcaseFusion" 2>/dev/null || true
+
 # Remove /Applications/Connect Fonts.app
 echo "Removing /Applications/Connect Fonts.app..."
 if [ -d "/Applications/Connect Fonts.app" ]; then

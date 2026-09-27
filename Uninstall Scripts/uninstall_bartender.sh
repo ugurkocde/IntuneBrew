@@ -27,12 +27,12 @@ launchctl unload -w ~/Library/LaunchAgents/com.surteesstudios.Bartender.Bartende
 echo "Stopping application with bundle ID com.surteesstudios.Bartender if running..."
 killall -9 "com.surteesstudios.Bartender" 2>/dev/null || true
 
-# Remove /Applications/Bartender 6.app
-echo "Removing /Applications/Bartender 6.app..."
-if [ -d "/Applications/Bartender 6.app" ]; then
-    rm -rf "/Applications/Bartender 6.app" 2>/dev/null || true
-elif [ -f "/Applications/Bartender 6.app" ]; then
-    rm -f "/Applications/Bartender 6.app" 2>/dev/null || true
+# Remove /Applications/Bartender 7.app
+echo "Removing /Applications/Bartender 7.app..."
+if [ -d "/Applications/Bartender 7.app" ]; then
+    rm -rf "/Applications/Bartender 7.app" 2>/dev/null || true
+elif [ -f "/Applications/Bartender 7.app" ]; then
+    rm -f "/Applications/Bartender 7.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Scripts/24J875RH8J.com.surteesstudios.Bartender
@@ -43,12 +43,12 @@ elif [ -f "$HOME/Library/Application Scripts/24J875RH8J.com.surteesstudios.Barte
     rm -f "$HOME/Library/Application Scripts/24J875RH8J.com.surteesstudios.Bartender" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/Bartender 6
-echo "Removing $HOME/Library/Application Support/Bartender 6..."
-if [ -d "$HOME/Library/Application Support/Bartender 6" ]; then
-    rm -rf "$HOME/Library/Application Support/Bartender 6" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/Bartender 6" ]; then
-    rm -f "$HOME/Library/Application Support/Bartender 6" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/Bartender 7
+echo "Removing $HOME/Library/Application Support/Bartender 7..."
+if [ -d "$HOME/Library/Application Support/Bartender 7" ]; then
+    rm -rf "$HOME/Library/Application Support/Bartender 7" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Bartender 7" ]; then
+    rm -f "$HOME/Library/Application Support/Bartender 7" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.surteesstudios.bartender.sfl*

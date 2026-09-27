@@ -65,6 +65,14 @@ elif [ -f "$HOME/Library/Preferences/io.gitlab.librewolf-community.librewolf.pli
     rm -f "$HOME/Library/Preferences/io.gitlab.librewolf-community.librewolf.plist" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/net.librewolf.librewolf.plist
+echo "Removing $HOME/Library/Preferences/net.librewolf.librewolf.plist..."
+if [ -d "$HOME/Library/Preferences/net.librewolf.librewolf.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/net.librewolf.librewolf.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/net.librewolf.librewolf.plist" ]; then
+    rm -f "$HOME/Library/Preferences/net.librewolf.librewolf.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/io.gitlab.librewolf-community.librewolf.savedState
 echo "Removing $HOME/Library/Saved Application State/io.gitlab.librewolf-community.librewolf.savedState..."
 if [ -d "$HOME/Library/Saved Application State/io.gitlab.librewolf-community.librewolf.savedState" ]; then

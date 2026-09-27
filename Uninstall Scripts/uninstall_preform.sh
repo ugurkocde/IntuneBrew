@@ -17,6 +17,10 @@ fi
 echo "Stopping PreForm if running..."
 pkill -f "PreForm" 2>/dev/null || true
 
+# Kill application with bundle ID com.formlabs.PreForm if running
+echo "Stopping application with bundle ID com.formlabs.PreForm if running..."
+killall -9 "com.formlabs.PreForm" 2>/dev/null || true
+
 # Remove /Applications/PreForm.app
 echo "Removing /Applications/PreForm.app..."
 if [ -d "/Applications/PreForm.app" ]; then

@@ -17,6 +17,10 @@ fi
 echo "Stopping Movist Pro if running..."
 pkill -f "Movist Pro" 2>/dev/null || true
 
+# Kill application with bundle ID com.movist.MovistPro if running
+echo "Stopping application with bundle ID com.movist.MovistPro if running..."
+killall -9 "com.movist.MovistPro" 2>/dev/null || true
+
 # Remove /Applications/Movist Pro.app
 echo "Removing /Applications/Movist Pro.app..."
 if [ -d "/Applications/Movist Pro.app" ]; then

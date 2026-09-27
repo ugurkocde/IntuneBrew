@@ -25,6 +25,14 @@ elif [ -f "/Applications/TickTick.app" ]; then
     rm -f "/Applications/TickTick.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/75TY9UT8AY.com.TickTick.task.mac
+echo "Removing $HOME/Library/Application Scripts/75TY9UT8AY.com.TickTick.task.mac..."
+if [ -d "$HOME/Library/Application Scripts/75TY9UT8AY.com.TickTick.task.mac" ]; then
+    rm -rf "$HOME/Library/Application Scripts/75TY9UT8AY.com.TickTick.task.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/75TY9UT8AY.com.TickTick.task.mac" ]; then
+    rm -f "$HOME/Library/Application Scripts/75TY9UT8AY.com.TickTick.task.mac" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/com.TickTick.task.mac.*
 echo "Removing $HOME/Library/Application Scripts/com.TickTick.task.mac.*..."
 if [ -d "$HOME/Library/Application Scripts/com.TickTick.task.mac.*" ]; then
@@ -33,12 +41,28 @@ elif [ -f "$HOME/Library/Application Scripts/com.TickTick.task.mac.*" ]; then
     rm -f "$HOME/Library/Application Scripts/com.TickTick.task.mac.*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/bugsnag-shared-com.TickTick.task.mac
+echo "Removing $HOME/Library/Application Support/bugsnag-shared-com.TickTick.task.mac..."
+if [ -d "$HOME/Library/Application Support/bugsnag-shared-com.TickTick.task.mac" ]; then
+    rm -rf "$HOME/Library/Application Support/bugsnag-shared-com.TickTick.task.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/bugsnag-shared-com.TickTick.task.mac" ]; then
+    rm -f "$HOME/Library/Application Support/bugsnag-shared-com.TickTick.task.mac" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.TickTick.task.mac
 echo "Removing $HOME/Library/Application Support/com.TickTick.task.mac..."
 if [ -d "$HOME/Library/Application Support/com.TickTick.task.mac" ]; then
     rm -rf "$HOME/Library/Application Support/com.TickTick.task.mac" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/com.TickTick.task.mac" ]; then
     rm -f "$HOME/Library/Application Support/com.TickTick.task.mac" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/bugsnag-shared-com.TickTick.task.mac
+echo "Removing $HOME/Library/Caches/bugsnag-shared-com.TickTick.task.mac..."
+if [ -d "$HOME/Library/Caches/bugsnag-shared-com.TickTick.task.mac" ]; then
+    rm -rf "$HOME/Library/Caches/bugsnag-shared-com.TickTick.task.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/bugsnag-shared-com.TickTick.task.mac" ]; then
+    rm -f "$HOME/Library/Caches/bugsnag-shared-com.TickTick.task.mac" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.TickTick.task.mac
@@ -71,6 +95,14 @@ if [ -d "$HOME/Library/Group Containers/75TY9UT8AY.com.TickTick.task.mac" ]; the
     rm -rf "$HOME/Library/Group Containers/75TY9UT8AY.com.TickTick.task.mac" 2>/dev/null || true
 elif [ -f "$HOME/Library/Group Containers/75TY9UT8AY.com.TickTick.task.mac" ]; then
     rm -f "$HOME/Library/Group Containers/75TY9UT8AY.com.TickTick.task.mac" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.TickTick.task.mac*
+echo "Removing $HOME/Library/HTTPStorages/com.TickTick.task.mac*..."
+if [ -d "$HOME/Library/HTTPStorages/com.TickTick.task.mac*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.TickTick.task.mac*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.TickTick.task.mac*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.TickTick.task.mac*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.TickTick.task.mac.plist

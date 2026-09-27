@@ -17,30 +17,6 @@ fi
 echo "Stopping Windows App if running..."
 pkill -f "Windows App" 2>/dev/null || true
 
-# Unload service com.microsoft.autoupdate.helper
-echo "Unloading service com.microsoft.autoupdate.helper..."
-launchctl unload -w /Library/LaunchAgents/com.microsoft.autoupdate.helper.plist 2>/dev/null || true
-launchctl unload -w /Library/LaunchDaemons/com.microsoft.autoupdate.helper.plist 2>/dev/null || true
-launchctl unload -w ~/Library/LaunchAgents/com.microsoft.autoupdate.helper.plist 2>/dev/null || true
-
-# Unload service com.microsoft.update.agent
-echo "Unloading service com.microsoft.update.agent..."
-launchctl unload -w /Library/LaunchAgents/com.microsoft.update.agent.plist 2>/dev/null || true
-launchctl unload -w /Library/LaunchDaemons/com.microsoft.update.agent.plist 2>/dev/null || true
-launchctl unload -w ~/Library/LaunchAgents/com.microsoft.update.agent.plist 2>/dev/null || true
-
-# Kill application with bundle ID com.microsoft.autoupdate.fba if running
-echo "Stopping application with bundle ID com.microsoft.autoupdate.fba if running..."
-killall -9 "com.microsoft.autoupdate.fba" 2>/dev/null || true
-
-# Kill application with bundle ID com.microsoft.autoupdate2 if running
-echo "Stopping application with bundle ID com.microsoft.autoupdate2 if running..."
-killall -9 "com.microsoft.autoupdate2" 2>/dev/null || true
-
-# Kill application with bundle ID com.microsoft.errorreporting if running
-echo "Stopping application with bundle ID com.microsoft.errorreporting if running..."
-killall -9 "com.microsoft.errorreporting" 2>/dev/null || true
-
 # Remove $HOME/Library/Application Scripts/com.microsoft.rdc.macos
 echo "Removing $HOME/Library/Application Scripts/com.microsoft.rdc.macos..."
 if [ -d "$HOME/Library/Application Scripts/com.microsoft.rdc.macos" ]; then

@@ -17,11 +17,31 @@ fi
 echo "Stopping Sensei if running..."
 pkill -f "Sensei" 2>/dev/null || true
 
+# Unload service org.cindori.SenseiMonitor
+echo "Unloading service org.cindori.SenseiMonitor..."
+launchctl unload -w /Library/LaunchAgents/org.cindori.SenseiMonitor.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/org.cindori.SenseiMonitor.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/org.cindori.SenseiMonitor.plist 2>/dev/null || true
+
+# Unload service org.cindori.SenseiMonitor.agent
+echo "Unloading service org.cindori.SenseiMonitor.agent..."
+launchctl unload -w /Library/LaunchAgents/org.cindori.SenseiMonitor.agent.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/org.cindori.SenseiMonitor.agent.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/org.cindori.SenseiMonitor.agent.plist 2>/dev/null || true
+
 # Unload service org.cindori.SenseiTool
 echo "Unloading service org.cindori.SenseiTool..."
 launchctl unload -w /Library/LaunchAgents/org.cindori.SenseiTool.plist 2>/dev/null || true
 launchctl unload -w /Library/LaunchDaemons/org.cindori.SenseiTool.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/org.cindori.SenseiTool.plist 2>/dev/null || true
+
+# Kill application with bundle ID org.cindori.Sensei if running
+echo "Stopping application with bundle ID org.cindori.Sensei if running..."
+killall -9 "org.cindori.Sensei" 2>/dev/null || true
+
+# Kill application with bundle ID org.cindori.SenseiMonitor if running
+echo "Stopping application with bundle ID org.cindori.SenseiMonitor if running..."
+killall -9 "org.cindori.SenseiMonitor" 2>/dev/null || true
 
 # Remove /Applications/Sensei.app
 echo "Removing /Applications/Sensei.app..."
@@ -133,6 +153,14 @@ if [ -d "$HOME/Library/Preferences/org.cindori.Sensei.plist" ]; then
     rm -rf "$HOME/Library/Preferences/org.cindori.Sensei.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/org.cindori.Sensei.plist" ]; then
     rm -f "$HOME/Library/Preferences/org.cindori.Sensei.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/org.cindori.SenseiMonitor.plist
+echo "Removing $HOME/Library/Preferences/org.cindori.SenseiMonitor.plist..."
+if [ -d "$HOME/Library/Preferences/org.cindori.SenseiMonitor.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/org.cindori.SenseiMonitor.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.cindori.SenseiMonitor.plist" ]; then
+    rm -f "$HOME/Library/Preferences/org.cindori.SenseiMonitor.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/org.cindori.Sensei.savedState

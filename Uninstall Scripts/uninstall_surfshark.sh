@@ -17,6 +17,12 @@ fi
 echo "Stopping Surfshark if running..."
 pkill -f "Surfshark" 2>/dev/null || true
 
+# Unload service com.surfshark.vpnclient.macos.direct.launchAgent
+echo "Unloading service com.surfshark.vpnclient.macos.direct.launchAgent..."
+launchctl unload -w /Library/LaunchAgents/com.surfshark.vpnclient.macos.direct.launchAgent.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.surfshark.vpnclient.macos.direct.launchAgent.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.surfshark.vpnclient.macos.direct.launchAgent.plist 2>/dev/null || true
+
 # Remove /Applications/Surfshark.app
 echo "Removing /Applications/Surfshark.app..."
 if [ -d "/Applications/Surfshark.app" ]; then

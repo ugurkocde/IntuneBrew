@@ -17,6 +17,10 @@ fi
 echo "Stopping CapCut if running..."
 pkill -f "CapCut" 2>/dev/null || true
 
+# Kill application with bundle ID com.lemon.lvoverseas if running
+echo "Stopping application with bundle ID com.lemon.lvoverseas if running..."
+killall -9 "com.lemon.lvoverseas" 2>/dev/null || true
+
 # Remove /Applications/CapCut.app
 echo "Removing /Applications/CapCut.app..."
 if [ -d "/Applications/CapCut.app" ]; then

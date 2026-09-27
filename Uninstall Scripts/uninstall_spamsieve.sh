@@ -17,12 +17,24 @@ fi
 echo "Stopping SpamSieve if running..."
 pkill -f "SpamSieve" 2>/dev/null || true
 
+# Kill application with bundle ID com.c-command.SpamSieve if running
+echo "Stopping application with bundle ID com.c-command.SpamSieve if running..."
+killall -9 "com.c-command.SpamSieve" 2>/dev/null || true
+
 # Remove /Applications/SpamSieve.app
 echo "Removing /Applications/SpamSieve.app..."
 if [ -d "/Applications/SpamSieve.app" ]; then
     rm -rf "/Applications/SpamSieve.app" 2>/dev/null || true
 elif [ -f "/Applications/SpamSieve.app" ]; then
     rm -f "/Applications/SpamSieve.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.c-command.SpamSieve.MailAppExtension
+echo "Removing $HOME/Library/Application Scripts/com.c-command.SpamSieve.MailAppExtension..."
+if [ -d "$HOME/Library/Application Scripts/com.c-command.SpamSieve.MailAppExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.c-command.SpamSieve.MailAppExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.c-command.SpamSieve.MailAppExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.c-command.SpamSieve.MailAppExtension" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/SpamSieve
@@ -47,6 +59,14 @@ if [ -d "$HOME/Library/Caches/com.c-command.SpamSieve" ]; then
     rm -rf "$HOME/Library/Caches/com.c-command.SpamSieve" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.c-command.SpamSieve" ]; then
     rm -f "$HOME/Library/Caches/com.c-command.SpamSieve" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.c-command.SpamSieve.MailAppExtension
+echo "Removing $HOME/Library/Containers/com.c-command.SpamSieve.MailAppExtension..."
+if [ -d "$HOME/Library/Containers/com.c-command.SpamSieve.MailAppExtension" ]; then
+    rm -rf "$HOME/Library/Containers/com.c-command.SpamSieve.MailAppExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.c-command.SpamSieve.MailAppExtension" ]; then
+    rm -f "$HOME/Library/Containers/com.c-command.SpamSieve.MailAppExtension" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.c-command.SpamSieve

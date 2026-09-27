@@ -29,6 +29,18 @@ launchctl unload -w /Library/LaunchAgents/FELUD555VC.group.com.egnyte.DesktopApp
 launchctl unload -w /Library/LaunchDaemons/FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/FELUD555VC.group.com.egnyte.DesktopApp.XPCBroker.plist 2>/dev/null || true
 
+# Kill application with bundle ID com.egnyte.DesktopApp if running
+echo "Stopping application with bundle ID com.egnyte.DesktopApp if running..."
+killall -9 "com.egnyte.DesktopApp" 2>/dev/null || true
+
+# Kill application with bundle ID com.egnyte.DesktopApp.FinderHelper if running
+echo "Stopping application with bundle ID com.egnyte.DesktopApp.FinderHelper if running..."
+killall -9 "com.egnyte.DesktopApp.FinderHelper" 2>/dev/null || true
+
+# Kill application with bundle ID com.egnyte.UpgradeChecker if running
+echo "Stopping application with bundle ID com.egnyte.UpgradeChecker if running..."
+killall -9 "com.egnyte.UpgradeChecker" 2>/dev/null || true
+
 # Remove /Applications/Egnyte.app
 echo "Removing /Applications/Egnyte.app..."
 if [ -d "/Applications/Egnyte.app" ]; then

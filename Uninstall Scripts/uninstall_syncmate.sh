@@ -17,6 +17,20 @@ fi
 echo "Stopping SyncMate if running..."
 pkill -f "SyncMate" 2>/dev/null || true
 
+# Unload service com.eltima.SyncMate.com.eltima.SyncMateService
+echo "Unloading service com.eltima.SyncMate.com.eltima.SyncMateService..."
+launchctl unload -w /Library/LaunchAgents/com.eltima.SyncMate.com.eltima.SyncMateService.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.eltima.SyncMate.com.eltima.SyncMateService.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.eltima.SyncMate.com.eltima.SyncMateService.plist 2>/dev/null || true
+
+# Kill application with bundle ID com.eltima.SyncMate if running
+echo "Stopping application with bundle ID com.eltima.SyncMate if running..."
+killall -9 "com.eltima.SyncMate" 2>/dev/null || true
+
+# Kill application with bundle ID com.eltima.SyncMate.com.eltima.SyncMateService if running
+echo "Stopping application with bundle ID com.eltima.SyncMate.com.eltima.SyncMateService if running..."
+killall -9 "com.eltima.SyncMate.com.eltima.SyncMateService" 2>/dev/null || true
+
 # Remove /Applications/SyncMate.app
 echo "Removing /Applications/SyncMate.app..."
 if [ -d "/Applications/SyncMate.app" ]; then

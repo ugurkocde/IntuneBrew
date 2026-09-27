@@ -17,6 +17,12 @@ fi
 echo "Stopping Spline if running..."
 pkill -f "Spline" 2>/dev/null || true
 
+# Unload service com.design.spline.ShipIt
+echo "Unloading service com.design.spline.ShipIt..."
+launchctl unload -w /Library/LaunchAgents/com.design.spline.ShipIt.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.design.spline.ShipIt.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.design.spline.ShipIt.plist 2>/dev/null || true
+
 # Remove /Applications/Spline.app
 echo "Removing /Applications/Spline.app..."
 if [ -d "/Applications/Spline.app" ]; then

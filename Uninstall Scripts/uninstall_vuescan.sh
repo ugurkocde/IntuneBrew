@@ -17,12 +17,24 @@ fi
 echo "Stopping VueScan if running..."
 pkill -f "VueScan" 2>/dev/null || true
 
+# Kill application with bundle ID com.hamrick.vuescan if running
+echo "Stopping application with bundle ID com.hamrick.vuescan if running..."
+killall -9 "com.hamrick.vuescan" 2>/dev/null || true
+
 # Remove /Applications/VueScan.app
 echo "Removing /Applications/VueScan.app..."
 if [ -d "/Applications/VueScan.app" ]; then
     rm -rf "/Applications/VueScan.app" 2>/dev/null || true
 elif [ -f "/Applications/VueScan.app" ]; then
     rm -f "/Applications/VueScan.app" 2>/dev/null || true
+fi
+
+# Remove /Users/Shared/.vuescanrc
+echo "Removing /Users/Shared/.vuescanrc..."
+if [ -d "/Users/Shared/.vuescanrc" ]; then
+    rm -rf "/Users/Shared/.vuescanrc" 2>/dev/null || true
+elif [ -f "/Users/Shared/.vuescanrc" ]; then
+    rm -f "/Users/Shared/.vuescanrc" 2>/dev/null || true
 fi
 
 # Remove $HOME/.vuescanrc
@@ -39,6 +51,22 @@ if [ -d "$HOME/Library/Preferences/com.hamrick.vuescan.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.hamrick.vuescan.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.hamrick.vuescan.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.hamrick.vuescan.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/vuescan.log
+echo "Removing $HOME/Library/Preferences/vuescan.log..."
+if [ -d "$HOME/Library/Preferences/vuescan.log" ]; then
+    rm -rf "$HOME/Library/Preferences/vuescan.log" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/vuescan.log" ]; then
+    rm -f "$HOME/Library/Preferences/vuescan.log" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/vuescan_trouble.vid
+echo "Removing $HOME/Library/Preferences/vuescan_trouble.vid..."
+if [ -d "$HOME/Library/Preferences/vuescan_trouble.vid" ]; then
+    rm -rf "$HOME/Library/Preferences/vuescan_trouble.vid" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/vuescan_trouble.vid" ]; then
+    rm -f "$HOME/Library/Preferences/vuescan_trouble.vid" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.hamrick.vuescan.savedState

@@ -17,6 +17,10 @@ fi
 echo "Stopping SideNotes if running..."
 pkill -f "SideNotes" 2>/dev/null || true
 
+# Kill application with bundle ID com.apptorium.SideNotes-paddle if running
+echo "Stopping application with bundle ID com.apptorium.SideNotes-paddle if running..."
+killall -9 "com.apptorium.SideNotes-paddle" 2>/dev/null || true
+
 # Remove /Applications/SideNotes.app
 echo "Removing /Applications/SideNotes.app..."
 if [ -d "/Applications/SideNotes.app" ]; then
@@ -39,6 +43,14 @@ if [ -d "$HOME/Library/Application Scripts/com.apptorium.SideNotes-paddle*.Share
     rm -rf "$HOME/Library/Application Scripts/com.apptorium.SideNotes-paddle*.ShareExtension--Paddle-" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/com.apptorium.SideNotes-paddle*.ShareExtension--Paddle-" ]; then
     rm -f "$HOME/Library/Application Scripts/com.apptorium.SideNotes-paddle*.ShareExtension--Paddle-" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.apptorium.SideNotes-paddle.Widgets
+echo "Removing $HOME/Library/Application Scripts/com.apptorium.SideNotes-paddle.Widgets..."
+if [ -d "$HOME/Library/Application Scripts/com.apptorium.SideNotes-paddle.Widgets" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.apptorium.SideNotes-paddle.Widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.apptorium.SideNotes-paddle.Widgets" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.apptorium.SideNotes-paddle.Widgets" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Scripts/com.apptorium.SideNotes.ShareExtension
@@ -79,6 +91,14 @@ if [ -d "$HOME/Library/Containers/com.apptorium.SideNotes-paddle.ShareExtension-
     rm -rf "$HOME/Library/Containers/com.apptorium.SideNotes-paddle.ShareExtension--Paddle-" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.apptorium.SideNotes-paddle.ShareExtension--Paddle-" ]; then
     rm -f "$HOME/Library/Containers/com.apptorium.SideNotes-paddle.ShareExtension--Paddle-" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.apptorium.SideNotes-paddle.Widgets
+echo "Removing $HOME/Library/Containers/com.apptorium.SideNotes-paddle.Widgets..."
+if [ -d "$HOME/Library/Containers/com.apptorium.SideNotes-paddle.Widgets" ]; then
+    rm -rf "$HOME/Library/Containers/com.apptorium.SideNotes-paddle.Widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.apptorium.SideNotes-paddle.Widgets" ]; then
+    rm -f "$HOME/Library/Containers/com.apptorium.SideNotes-paddle.Widgets" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.apptorium.SideNotes-paddle*

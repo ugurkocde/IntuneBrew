@@ -17,6 +17,10 @@ fi
 echo "Stopping PDF Expert if running..."
 pkill -f "PDF Expert" 2>/dev/null || true
 
+# Kill application with bundle ID com.readdle.PDFExpert-Mac if running
+echo "Stopping application with bundle ID com.readdle.PDFExpert-Mac if running..."
+killall -9 "com.readdle.PDFExpert-Mac" 2>/dev/null || true
+
 # Remove /Applications/PDF Expert.app
 echo "Removing /Applications/PDF Expert.app..."
 if [ -d "/Applications/PDF Expert.app" ]; then

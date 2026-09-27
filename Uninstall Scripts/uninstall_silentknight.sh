@@ -17,12 +17,12 @@ fi
 echo "Stopping SilentKnight if running..."
 pkill -f "SilentKnight" 2>/dev/null || true
 
-# Remove /Applications/silentknight214/SilentKnight.app
-echo "Removing /Applications/silentknight214/SilentKnight.app..."
-if [ -d "/Applications/silentknight214/SilentKnight.app" ]; then
-    rm -rf "/Applications/silentknight214/SilentKnight.app" 2>/dev/null || true
-elif [ -f "/Applications/silentknight214/SilentKnight.app" ]; then
-    rm -f "/Applications/silentknight214/SilentKnight.app" 2>/dev/null || true
+# Remove /Applications/sk302/SilentKnight3.app
+echo "Removing /Applications/sk302/SilentKnight3.app..."
+if [ -d "/Applications/sk302/SilentKnight3.app" ]; then
+    rm -rf "/Applications/sk302/SilentKnight3.app" 2>/dev/null || true
+elif [ -f "/Applications/sk302/SilentKnight3.app" ]; then
+    rm -f "/Applications/sk302/SilentKnight3.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.eclecticlight.silentknight.sfl*
@@ -41,12 +41,36 @@ elif [ -f "$HOME/Library/Caches/co.eclecticlight.SilentKnight" ]; then
     rm -f "$HOME/Library/Caches/co.eclecticlight.SilentKnight" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/co.eclecticlight.SilentKnight3
+echo "Removing $HOME/Library/Caches/co.eclecticlight.SilentKnight3..."
+if [ -d "$HOME/Library/Caches/co.eclecticlight.SilentKnight3" ]; then
+    rm -rf "$HOME/Library/Caches/co.eclecticlight.SilentKnight3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/co.eclecticlight.SilentKnight3" ]; then
+    rm -f "$HOME/Library/Caches/co.eclecticlight.SilentKnight3" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight
 echo "Removing $HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight..."
 if [ -d "$HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight" ]; then
     rm -rf "$HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight" 2>/dev/null || true
 elif [ -f "$HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight" ]; then
     rm -f "$HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight3
+echo "Removing $HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight3..."
+if [ -d "$HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight3" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight3" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight3" ]; then
+    rm -f "$HOME/Library/HTTPStorages/co.eclecticlight.SilentKnight3" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/co.eclecticlight.SilentKnight3.plist
+echo "Removing $HOME/Library/Preferences/co.eclecticlight.SilentKnight3.plist..."
+if [ -d "$HOME/Library/Preferences/co.eclecticlight.SilentKnight3.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/co.eclecticlight.SilentKnight3.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/co.eclecticlight.SilentKnight3.plist" ]; then
+    rm -f "$HOME/Library/Preferences/co.eclecticlight.SilentKnight3.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/co.eclecticlight.SilentKnight.plist

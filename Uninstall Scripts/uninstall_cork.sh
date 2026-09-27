@@ -17,6 +17,10 @@ fi
 echo "Stopping Cork if running..."
 pkill -f "Cork" 2>/dev/null || true
 
+# Kill application with bundle ID eu.davidbures.cork if running
+echo "Stopping application with bundle ID eu.davidbures.cork if running..."
+killall -9 "eu.davidbures.cork" 2>/dev/null || true
+
 # Remove /Applications/Cork.app
 echo "Removing /Applications/Cork.app..."
 if [ -d "/Applications/Cork.app" ]; then
@@ -33,12 +37,28 @@ elif [ -f "$HOME/Documents/Cork" ]; then
     rm -f "$HOME/Documents/Cork" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/Cork
+echo "Removing $HOME/Library/Application Support/Cork..."
+if [ -d "$HOME/Library/Application Support/Cork" ]; then
+    rm -rf "$HOME/Library/Application Support/Cork" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Cork" ]; then
+    rm -f "$HOME/Library/Application Support/Cork" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.davidbures.cork
 echo "Removing $HOME/Library/Caches/com.davidbures.cork..."
 if [ -d "$HOME/Library/Caches/com.davidbures.cork" ]; then
     rm -rf "$HOME/Library/Caches/com.davidbures.cork" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.davidbures.cork" ]; then
     rm -f "$HOME/Library/Caches/com.davidbures.cork" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/eu.davidbures.cork
+echo "Removing $HOME/Library/Caches/eu.davidbures.cork..."
+if [ -d "$HOME/Library/Caches/eu.davidbures.cork" ]; then
+    rm -rf "$HOME/Library/Caches/eu.davidbures.cork" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/eu.davidbures.cork" ]; then
+    rm -f "$HOME/Library/Caches/eu.davidbures.cork" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.davidbures.cork
@@ -49,12 +69,28 @@ elif [ -f "$HOME/Library/HTTPStorages/com.davidbures.cork" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.davidbures.cork" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/eu.davidbures.cork
+echo "Removing $HOME/Library/HTTPStorages/eu.davidbures.cork..."
+if [ -d "$HOME/Library/HTTPStorages/eu.davidbures.cork" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/eu.davidbures.cork" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/eu.davidbures.cork" ]; then
+    rm -f "$HOME/Library/HTTPStorages/eu.davidbures.cork" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.davidbures.cork.plist
 echo "Removing $HOME/Library/Preferences/com.davidbures.cork.plist..."
 if [ -d "$HOME/Library/Preferences/com.davidbures.cork.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.davidbures.cork.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.davidbures.cork.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.davidbures.cork.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/eu.davidbures.cork.plist
+echo "Removing $HOME/Library/Preferences/eu.davidbures.cork.plist..."
+if [ -d "$HOME/Library/Preferences/eu.davidbures.cork.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/eu.davidbures.cork.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/eu.davidbures.cork.plist" ]; then
+    rm -f "$HOME/Library/Preferences/eu.davidbures.cork.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.davidbures.cork.savedState

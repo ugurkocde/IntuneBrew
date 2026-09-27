@@ -17,6 +17,12 @@ fi
 echo "Stopping NordPass if running..."
 pkill -f "NordPass" 2>/dev/null || true
 
+# Unload service com.nordsec.nordpass.ShipIt
+echo "Unloading service com.nordsec.nordpass.ShipIt..."
+launchctl unload -w /Library/LaunchAgents/com.nordsec.nordpass.ShipIt.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.nordsec.nordpass.ShipIt.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.nordsec.nordpass.ShipIt.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.nordsec.nordpass if running
 echo "Stopping application with bundle ID com.nordsec.nordpass if running..."
 killall -9 "com.nordsec.nordpass" 2>/dev/null || true
@@ -45,6 +51,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.nordsec.nordpass.safari.extensi
     rm -f "$HOME/Library/Application Scripts/com.nordsec.nordpass.safari.extension" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nordsec.nordpass.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nordsec.nordpass.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nordsec.nordpass.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nordsec.nordpass.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nordsec.nordpass.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nordsec.nordpass.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/NordPass
 echo "Removing $HOME/Library/Application Support/NordPass..."
 if [ -d "$HOME/Library/Application Support/NordPass" ]; then
@@ -53,12 +67,44 @@ elif [ -f "$HOME/Library/Application Support/NordPass" ]; then
     rm -f "$HOME/Library/Application Support/NordPass" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.nordsec.nordpass*
+echo "Removing $HOME/Library/Caches/com.nordsec.nordpass*..."
+if [ -d "$HOME/Library/Caches/com.nordsec.nordpass*" ]; then
+    rm -rf "$HOME/Library/Caches/com.nordsec.nordpass*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.nordsec.nordpass*" ]; then
+    rm -f "$HOME/Library/Caches/com.nordsec.nordpass*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/nordpass-updater
+echo "Removing $HOME/Library/Caches/nordpass-updater..."
+if [ -d "$HOME/Library/Caches/nordpass-updater" ]; then
+    rm -rf "$HOME/Library/Caches/nordpass-updater" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/nordpass-updater" ]; then
+    rm -f "$HOME/Library/Caches/nordpass-updater" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.nordsec.nordpass.safari.extension
 echo "Removing $HOME/Library/Containers/com.nordsec.nordpass.safari.extension..."
 if [ -d "$HOME/Library/Containers/com.nordsec.nordpass.safari.extension" ]; then
     rm -rf "$HOME/Library/Containers/com.nordsec.nordpass.safari.extension" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.nordsec.nordpass.safari.extension" ]; then
     rm -f "$HOME/Library/Containers/com.nordsec.nordpass.safari.extension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.nordsec.nordpass
+echo "Removing $HOME/Library/HTTPStorages/com.nordsec.nordpass..."
+if [ -d "$HOME/Library/HTTPStorages/com.nordsec.nordpass" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.nordsec.nordpass" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.nordsec.nordpass" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.nordsec.nordpass" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/ByHost/com.nordsec.nordpass.ShipIt.*.plist
+echo "Removing $HOME/Library/Preferences/ByHost/com.nordsec.nordpass.ShipIt.*.plist..."
+if [ -d "$HOME/Library/Preferences/ByHost/com.nordsec.nordpass.ShipIt.*.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/ByHost/com.nordsec.nordpass.ShipIt.*.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/ByHost/com.nordsec.nordpass.ShipIt.*.plist" ]; then
+    rm -f "$HOME/Library/Preferences/ByHost/com.nordsec.nordpass.ShipIt.*.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.nordsec.nordpass.plist

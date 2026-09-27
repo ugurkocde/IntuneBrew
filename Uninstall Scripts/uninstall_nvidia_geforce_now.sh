@@ -17,6 +17,10 @@ fi
 echo "Stopping NVIDIA GeForce NOW if running..."
 pkill -f "NVIDIA GeForce NOW" 2>/dev/null || true
 
+# Kill application with bundle ID com.nvidia.gfnpc.mall if running
+echo "Stopping application with bundle ID com.nvidia.gfnpc.mall if running..."
+killall -9 "com.nvidia.gfnpc.mall" 2>/dev/null || true
+
 # Remove /Applications/GeForceNOW.app
 echo "Removing /Applications/GeForceNOW.app..."
 if [ -d "/Applications/GeForceNOW.app" ]; then

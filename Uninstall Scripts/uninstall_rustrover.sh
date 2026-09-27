@@ -17,6 +17,10 @@ fi
 echo "Stopping RustRover if running..."
 pkill -f "RustRover" 2>/dev/null || true
 
+# Kill application with bundle ID com.jetbrains.rustrover if running
+echo "Stopping application with bundle ID com.jetbrains.rustrover if running..."
+killall -9 "com.jetbrains.rustrover" 2>/dev/null || true
+
 # Remove /Applications/RustRover.app
 echo "Removing /Applications/RustRover.app..."
 if [ -d "/Applications/RustRover.app" ]; then

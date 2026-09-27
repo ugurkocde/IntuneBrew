@@ -31,6 +31,14 @@ if [ -f "/Applications/Syntax Highlight.app/Syntax Highlight.app/Contents/Resour
     rm -f "/Applications/Syntax Highlight.app/Syntax Highlight.app/Contents/Resources/syntax_highlight_cli" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.org.sbarex.syntaxhighlight
+echo "Removing $HOME/Library/Application Scripts/group.org.sbarex.syntaxhighlight..."
+if [ -d "$HOME/Library/Application Scripts/group.org.sbarex.syntaxhighlight" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.org.sbarex.syntaxhighlight" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.org.sbarex.syntaxhighlight" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.org.sbarex.syntaxhighlight" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight
 echo "Removing $HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight..."
 if [ -d "$HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight" ]; then
@@ -45,6 +53,14 @@ if [ -d "$HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight.
     rm -rf "$HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight.QuicklookExtension" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight.QuicklookExtension" ]; then
     rm -f "$HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight.QuicklookExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand
+echo "Removing $HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand..."
+if [ -d "$HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand" ]; then
+    rm -rf "$HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand" ]; then
+    rm -f "$HOME/Library/Application Scripts/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Syntax Highlight
@@ -77,6 +93,22 @@ if [ -d "$HOME/Library/Containers/org.sbarex.SourceCodeSyntaxHighlight.Quicklook
     rm -rf "$HOME/Library/Containers/org.sbarex.SourceCodeSyntaxHighlight.QuicklookExtension" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/org.sbarex.SourceCodeSyntaxHighlight.QuicklookExtension" ]; then
     rm -f "$HOME/Library/Containers/org.sbarex.SourceCodeSyntaxHighlight.QuicklookExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand
+echo "Removing $HOME/Library/Containers/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand..."
+if [ -d "$HOME/Library/Containers/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand" ]; then
+    rm -rf "$HOME/Library/Containers/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand" ]; then
+    rm -f "$HOME/Library/Containers/org.sbarex.SourceCodeSyntaxHighlight.ShortcutCommand" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/group.org.sbarex.syntaxhighlight
+echo "Removing $HOME/Library/Group Containers/group.org.sbarex.syntaxhighlight..."
+if [ -d "$HOME/Library/Group Containers/group.org.sbarex.syntaxhighlight" ]; then
+    rm -rf "$HOME/Library/Group Containers/group.org.sbarex.syntaxhighlight" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/group.org.sbarex.syntaxhighlight" ]; then
+    rm -f "$HOME/Library/Group Containers/group.org.sbarex.syntaxhighlight" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/org.sbarex.SourceCodeSyntaxHighlight.plist

@@ -17,6 +17,10 @@ fi
 echo "Stopping Granola if running..."
 pkill -f "Granola" 2>/dev/null || true
 
+# Kill application with bundle ID com.granola.app if running
+echo "Stopping application with bundle ID com.granola.app if running..."
+killall -9 "com.granola.app" 2>/dev/null || true
+
 # Remove /Applications/Granola.app
 echo "Removing /Applications/Granola.app..."
 if [ -d "/Applications/Granola.app" ]; then

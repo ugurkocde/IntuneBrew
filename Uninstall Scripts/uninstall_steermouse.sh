@@ -17,6 +17,12 @@ fi
 echo "Stopping SteerMouse if running..."
 pkill -f "SteerMouse" 2>/dev/null || true
 
+# Unload service jp.plentycom.boa.SteerMouse
+echo "Unloading service jp.plentycom.boa.SteerMouse..."
+launchctl unload -w /Library/LaunchAgents/jp.plentycom.boa.SteerMouse.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/jp.plentycom.boa.SteerMouse.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/jp.plentycom.boa.SteerMouse.plist 2>/dev/null || true
+
 # Remove /Applications/SteerMouse.app
 echo "Removing /Applications/SteerMouse.app..."
 if [ -d "/Applications/SteerMouse.app" ]; then

@@ -17,6 +17,10 @@ fi
 echo "Stopping Scribus if running..."
 pkill -f "Scribus" 2>/dev/null || true
 
+# Kill application with bundle ID net.scribus if running
+echo "Stopping application with bundle ID net.scribus if running..."
+killall -9 "net.scribus" 2>/dev/null || true
+
 # Remove /Applications/Scribus.app
 echo "Removing /Applications/Scribus.app..."
 if [ -d "/Applications/Scribus.app" ]; then

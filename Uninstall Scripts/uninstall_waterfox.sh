@@ -17,6 +17,10 @@ fi
 echo "Stopping Waterfox if running..."
 pkill -f "Waterfox" 2>/dev/null || true
 
+# Kill application with bundle ID net.waterfox.waterfox if running
+echo "Stopping application with bundle ID net.waterfox.waterfox if running..."
+killall -9 "net.waterfox.waterfox" 2>/dev/null || true
+
 # Remove /Applications/Waterfox.app
 echo "Removing /Applications/Waterfox.app..."
 if [ -d "/Applications/Waterfox.app" ]; then

@@ -17,6 +17,16 @@ fi
 echo "Stopping cmux if running..."
 pkill -f "cmux" 2>/dev/null || true
 
+# Unload service application.com.cmuxterm.cua.*
+echo "Unloading service application.com.cmuxterm.cua.*..."
+launchctl unload -w /Library/LaunchAgents/application.com.cmuxterm.cua.*.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/application.com.cmuxterm.cua.*.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/application.com.cmuxterm.cua.*.plist 2>/dev/null || true
+
+# Kill application with bundle ID com.cmuxterm.app if running
+echo "Stopping application with bundle ID com.cmuxterm.app if running..."
+killall -9 "com.cmuxterm.app" 2>/dev/null || true
+
 # Remove /Applications/cmux.app
 echo "Removing /Applications/cmux.app..."
 if [ -d "/Applications/cmux.app" ]; then
@@ -29,6 +39,14 @@ fi
 echo "Removing binary /Applications/cmux.app/cmux.app/Contents/Resources/bin/cmux..."
 if [ -f "/Applications/cmux.app/cmux.app/Contents/Resources/bin/cmux" ]; then
     rm -f "/Applications/cmux.app/cmux.app/Contents/Resources/bin/cmux" 2>/dev/null || true
+fi
+
+# Remove $HOME/.cmuxterm
+echo "Removing $HOME/.cmuxterm..."
+if [ -d "$HOME/.cmuxterm" ]; then
+    rm -rf "$HOME/.cmuxterm" 2>/dev/null || true
+elif [ -f "$HOME/.cmuxterm" ]; then
+    rm -f "$HOME/.cmuxterm" 2>/dev/null || true
 fi
 
 # Remove $HOME/.config/cmux
@@ -93,6 +111,14 @@ if [ -d "$HOME/Library/HTTPStorages/com.cmuxterm.app.binarycookies" ]; then
     rm -rf "$HOME/Library/HTTPStorages/com.cmuxterm.app.binarycookies" 2>/dev/null || true
 elif [ -f "$HOME/Library/HTTPStorages/com.cmuxterm.app.binarycookies" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.cmuxterm.app.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/cmux-focus.log
+echo "Removing $HOME/Library/Logs/cmux-focus.log..."
+if [ -d "$HOME/Library/Logs/cmux-focus.log" ]; then
+    rm -rf "$HOME/Library/Logs/cmux-focus.log" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/cmux-focus.log" ]; then
+    rm -f "$HOME/Library/Logs/cmux-focus.log" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Logs/cmux-update.log

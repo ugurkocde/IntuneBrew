@@ -17,6 +17,10 @@ fi
 echo "Stopping Postman if running..."
 pkill -f "Postman" 2>/dev/null || true
 
+# Kill application with bundle ID com.postmanlabs.mac if running
+echo "Stopping application with bundle ID com.postmanlabs.mac if running..."
+killall -9 "com.postmanlabs.mac" 2>/dev/null || true
+
 # Remove /Applications/Postman.app
 echo "Removing /Applications/Postman.app..."
 if [ -d "/Applications/Postman.app" ]; then

@@ -17,6 +17,12 @@ fi
 echo "Stopping KeyClu if running..."
 pkill -f "KeyClu" 2>/dev/null || true
 
+# Unload service com.0804Team.KeyCluXPCService
+echo "Unloading service com.0804Team.KeyCluXPCService..."
+launchctl unload -w /Library/LaunchAgents/com.0804Team.KeyCluXPCService.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.0804Team.KeyCluXPCService.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.0804Team.KeyCluXPCService.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.0804Team.KeyClu if running
 echo "Stopping application with bundle ID com.0804Team.KeyClu if running..."
 killall -9 "com.0804Team.KeyClu" 2>/dev/null || true

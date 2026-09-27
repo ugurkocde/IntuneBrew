@@ -17,12 +17,32 @@ fi
 echo "Stopping Default Folder X if running..."
 pkill -f "Default Folder X" 2>/dev/null || true
 
+# Kill application with bundle ID com.stclairsoft.DefaultFolderX* if running
+echo "Stopping application with bundle ID com.stclairsoft.DefaultFolderX* if running..."
+killall -9 "com.stclairsoft.DefaultFolderX*" 2>/dev/null || true
+
 # Remove /Applications/Default Folder X.app
 echo "Removing /Applications/Default Folder X.app..."
 if [ -d "/Applications/Default Folder X.app" ]; then
     rm -rf "/Applications/Default Folder X.app" 2>/dev/null || true
 elif [ -f "/Applications/Default Folder X.app" ]; then
     rm -f "/Applications/Default Folder X.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension
+echo "Removing $HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension..."
+if [ -d "$HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.MenuButtonExtension
+echo "Removing $HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.MenuButtonExtension..."
+if [ -d "$HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.MenuButtonExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.MenuButtonExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.MenuButtonExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.stclairsoft.DefaultFolderX6.MenuButtonExtension" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/.com.stclairsoft
@@ -49,12 +69,52 @@ elif [ -f "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" ];
     rm -f "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6
+echo "Removing $HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6..."
+if [ -d "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" ]; then
+    rm -rf "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" ]; then
+    rm -f "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.stclairsoft.DefaultFolderX6
 echo "Removing $HOME/Library/Caches/com.stclairsoft.DefaultFolderX6..."
 if [ -d "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" ]; then
     rm -rf "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" ]; then
     rm -f "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.stclairsoft.DefaultFolderX6
+echo "Removing $HOME/Library/Caches/com.stclairsoft.DefaultFolderX6..."
+if [ -d "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" ]; then
+    rm -rf "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" ]; then
+    rm -f "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension
+echo "Removing $HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension..."
+if [ -d "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension" ]; then
+    rm -rf "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension" ]; then
+    rm -f "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.DrawerButtonExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.MenuButtonExtension
+echo "Removing $HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.MenuButtonExtension..."
+if [ -d "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.MenuButtonExtension" ]; then
+    rm -rf "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.MenuButtonExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.MenuButtonExtension" ]; then
+    rm -f "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.MenuButtonExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist
+echo "Removing $HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist..."
+if [ -d "$HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist

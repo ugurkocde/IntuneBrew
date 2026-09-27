@@ -17,6 +17,10 @@ fi
 echo "Stopping NetSpot if running..."
 pkill -f "NetSpot" 2>/dev/null || true
 
+# Kill application with bundle ID com.etwok.netspotwifi if running
+echo "Stopping application with bundle ID com.etwok.netspotwifi if running..."
+killall -9 "com.etwok.netspotwifi" 2>/dev/null || true
+
 # Remove /Applications/NetSpot.app
 echo "Removing /Applications/NetSpot.app..."
 if [ -d "/Applications/NetSpot.app" ]; then

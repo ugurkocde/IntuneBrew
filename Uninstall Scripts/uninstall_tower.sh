@@ -17,6 +17,10 @@ fi
 echo "Stopping Tower if running..."
 pkill -f "Tower" 2>/dev/null || true
 
+# Kill application with bundle ID com.fournova.Tower3 if running
+echo "Stopping application with bundle ID com.fournova.Tower3 if running..."
+killall -9 "com.fournova.Tower3" 2>/dev/null || true
+
 # Remove /Applications/Tower.app
 echo "Removing /Applications/Tower.app..."
 if [ -d "/Applications/Tower.app" ]; then

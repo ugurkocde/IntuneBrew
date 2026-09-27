@@ -17,6 +17,10 @@ fi
 echo "Stopping PowerPhotos if running..."
 pkill -f "PowerPhotos" 2>/dev/null || true
 
+# Kill application with bundle ID com.fatcatsoftware.PowerPhotos if running
+echo "Stopping application with bundle ID com.fatcatsoftware.PowerPhotos if running..."
+killall -9 "com.fatcatsoftware.PowerPhotos" 2>/dev/null || true
+
 # Remove /Applications/PowerPhotos.app
 echo "Removing /Applications/PowerPhotos.app..."
 if [ -d "/Applications/PowerPhotos.app" ]; then

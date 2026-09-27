@@ -17,6 +17,10 @@ fi
 echo "Stopping Studio 3T if running..."
 pkill -f "Studio 3T" 2>/dev/null || true
 
+# Kill application with bundle ID com.install4j.0526-4458-1435-8154.837 if running
+echo "Stopping application with bundle ID com.install4j.0526-4458-1435-8154.837 if running..."
+killall -9 "com.install4j.0526-4458-1435-8154.837" 2>/dev/null || true
+
 # Remove /Applications/Studio 3T.app
 echo "Removing /Applications/Studio 3T.app..."
 if [ -d "/Applications/Studio 3T.app" ]; then

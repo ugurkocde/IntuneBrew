@@ -17,6 +17,10 @@ fi
 echo "Stopping YACReader if running..."
 pkill -f "YACReader" 2>/dev/null || true
 
+# Kill application with bundle ID com.yacreader.YACReader if running
+echo "Stopping application with bundle ID com.yacreader.YACReader if running..."
+killall -9 "com.yacreader.YACReader" 2>/dev/null || true
+
 # Remove /Applications/YACReader.app
 echo "Removing /Applications/YACReader.app..."
 if [ -d "/Applications/YACReader.app" ]; then
@@ -39,6 +43,14 @@ if [ -d "$HOME/Library/Application Support/YACReader" ]; then
     rm -rf "$HOME/Library/Application Support/YACReader" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/YACReader" ]; then
     rm -f "$HOME/Library/Application Support/YACReader" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/YACReader
+echo "Removing $HOME/Library/Caches/YACReader..."
+if [ -d "$HOME/Library/Caches/YACReader" ]; then
+    rm -rf "$HOME/Library/Caches/YACReader" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/YACReader" ]; then
+    rm -f "$HOME/Library/Caches/YACReader" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.yacreader.YACReader.plist

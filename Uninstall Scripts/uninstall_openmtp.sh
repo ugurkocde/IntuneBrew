@@ -33,6 +33,14 @@ elif [ -f "$HOME/.io.ganeshrvel" ]; then
     rm -f "$HOME/.io.ganeshrvel" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ganeshrvel.openmtp.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ganeshrvel.openmtp.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ganeshrvel.openmtp.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ganeshrvel.openmtp.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ganeshrvel.openmtp.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ganeshrvel.openmtp.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/io.ganeshrvel.openmtp
 echo "Removing $HOME/Library/Application Support/io.ganeshrvel.openmtp..."
 if [ -d "$HOME/Library/Application Support/io.ganeshrvel.openmtp" ]; then

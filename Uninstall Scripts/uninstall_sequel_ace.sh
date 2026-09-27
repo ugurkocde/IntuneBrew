@@ -17,6 +17,10 @@ fi
 echo "Stopping Sequel Ace if running..."
 pkill -f "Sequel Ace" 2>/dev/null || true
 
+# Kill application with bundle ID com.sequel-ace.sequel-ace if running
+echo "Stopping application with bundle ID com.sequel-ace.sequel-ace if running..."
+killall -9 "com.sequel-ace.sequel-ace" 2>/dev/null || true
+
 # Remove /Applications/Sequel Ace.app
 echo "Removing /Applications/Sequel Ace.app..."
 if [ -d "/Applications/Sequel Ace.app" ]; then
@@ -25,36 +29,36 @@ elif [ -f "/Applications/Sequel Ace.app" ]; then
     rm -f "/Applications/Sequel Ace.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/Sequel Ace
-echo "Removing $HOME/Library/Application Support/Sequel Ace..."
-if [ -d "$HOME/Library/Application Support/Sequel Ace" ]; then
-    rm -rf "$HOME/Library/Application Support/Sequel Ace" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/Sequel Ace" ]; then
-    rm -f "$HOME/Library/Application Support/Sequel Ace" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/com.sequel-ace.sequel-ace
+echo "Removing $HOME/Library/Application Scripts/com.sequel-ace.sequel-ace..."
+if [ -d "$HOME/Library/Application Scripts/com.sequel-ace.sequel-ace" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.sequel-ace.sequel-ace" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.sequel-ace.sequel-ace" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.sequel-ace.sequel-ace" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.sequelace.SequelAce
-echo "Removing $HOME/Library/Caches/com.sequelace.SequelAce..."
-if [ -d "$HOME/Library/Caches/com.sequelace.SequelAce" ]; then
-    rm -rf "$HOME/Library/Caches/com.sequelace.SequelAce" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.sequelace.SequelAce" ]; then
-    rm -f "$HOME/Library/Caches/com.sequelace.SequelAce" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/NKQ4HJ66PX.sequel-ace
+echo "Removing $HOME/Library/Application Scripts/NKQ4HJ66PX.sequel-ace..."
+if [ -d "$HOME/Library/Application Scripts/NKQ4HJ66PX.sequel-ace" ]; then
+    rm -rf "$HOME/Library/Application Scripts/NKQ4HJ66PX.sequel-ace" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/NKQ4HJ66PX.sequel-ace" ]; then
+    rm -f "$HOME/Library/Application Scripts/NKQ4HJ66PX.sequel-ace" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.sequelace.SequelAce.plist
-echo "Removing $HOME/Library/Preferences/com.sequelace.SequelAce.plist..."
-if [ -d "$HOME/Library/Preferences/com.sequelace.SequelAce.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.sequelace.SequelAce.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.sequelace.SequelAce.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.sequelace.SequelAce.plist" 2>/dev/null || true
+# Remove $HOME/Library/Containers/com.sequel-ace.sequel-ace
+echo "Removing $HOME/Library/Containers/com.sequel-ace.sequel-ace..."
+if [ -d "$HOME/Library/Containers/com.sequel-ace.sequel-ace" ]; then
+    rm -rf "$HOME/Library/Containers/com.sequel-ace.sequel-ace" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.sequel-ace.sequel-ace" ]; then
+    rm -f "$HOME/Library/Containers/com.sequel-ace.sequel-ace" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Saved Application State/com.sequelace.SequelAce.savedState
-echo "Removing $HOME/Library/Saved Application State/com.sequelace.SequelAce.savedState..."
-if [ -d "$HOME/Library/Saved Application State/com.sequelace.SequelAce.savedState" ]; then
-    rm -rf "$HOME/Library/Saved Application State/com.sequelace.SequelAce.savedState" 2>/dev/null || true
-elif [ -f "$HOME/Library/Saved Application State/com.sequelace.SequelAce.savedState" ]; then
-    rm -f "$HOME/Library/Saved Application State/com.sequelace.SequelAce.savedState" 2>/dev/null || true
+# Remove $HOME/Library/Group Containers/NKQ4HJ66PX.sequel-ace
+echo "Removing $HOME/Library/Group Containers/NKQ4HJ66PX.sequel-ace..."
+if [ -d "$HOME/Library/Group Containers/NKQ4HJ66PX.sequel-ace" ]; then
+    rm -rf "$HOME/Library/Group Containers/NKQ4HJ66PX.sequel-ace" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/NKQ4HJ66PX.sequel-ace" ]; then
+    rm -f "$HOME/Library/Group Containers/NKQ4HJ66PX.sequel-ace" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

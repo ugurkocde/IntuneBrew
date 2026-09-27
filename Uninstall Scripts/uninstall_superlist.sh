@@ -17,6 +17,10 @@ fi
 echo "Stopping Superlist if running..."
 pkill -f "Superlist" 2>/dev/null || true
 
+# Kill application with bundle ID com.superlist.superlist if running
+echo "Stopping application with bundle ID com.superlist.superlist if running..."
+killall -9 "com.superlist.superlist" 2>/dev/null || true
+
 # Remove /Applications/Superlist.app
 echo "Removing /Applications/Superlist.app..."
 if [ -d "/Applications/Superlist.app" ]; then
@@ -39,6 +43,14 @@ if [ -d "$HOME/Library/Caches/com.superlist.superlist*" ]; then
     rm -rf "$HOME/Library/Caches/com.superlist.superlist*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.superlist.superlist*" ]; then
     rm -f "$HOME/Library/Caches/com.superlist.superlist*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/superlist_sounds
+echo "Removing $HOME/Library/Caches/superlist_sounds..."
+if [ -d "$HOME/Library/Caches/superlist_sounds" ]; then
+    rm -rf "$HOME/Library/Caches/superlist_sounds" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/superlist_sounds" ]; then
+    rm -f "$HOME/Library/Caches/superlist_sounds" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.superlist.superlist*

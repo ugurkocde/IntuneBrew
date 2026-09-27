@@ -23,13 +23,13 @@ launchctl unload -w /Library/LaunchAgents/com.flexibits.fantastical*.mac.launche
 launchctl unload -w /Library/LaunchDaemons/com.flexibits.fantastical*.mac.launcher.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.flexibits.fantastical*.mac.launcher.plist 2>/dev/null || true
 
-# Kill application with bundle ID *.com.flexibits.fantastical*.mac.helper if running
-echo "Stopping application with bundle ID *.com.flexibits.fantastical*.mac.helper if running..."
-killall -9 "*.com.flexibits.fantastical*.mac.helper" 2>/dev/null || true
+# Kill application with bundle ID 85C27NK92C.com.flexibits.fantastical2.mac.helper if running
+echo "Stopping application with bundle ID 85C27NK92C.com.flexibits.fantastical2.mac.helper if running..."
+killall -9 "85C27NK92C.com.flexibits.fantastical2.mac.helper" 2>/dev/null || true
 
-# Kill application with bundle ID com.flexibits.fantastical*.mac if running
-echo "Stopping application with bundle ID com.flexibits.fantastical*.mac if running..."
-killall -9 "com.flexibits.fantastical*.mac" 2>/dev/null || true
+# Kill application with bundle ID com.flexibits.fantastical2.mac if running
+echo "Stopping application with bundle ID com.flexibits.fantastical2.mac if running..."
+killall -9 "com.flexibits.fantastical2.mac" 2>/dev/null || true
 
 # Remove /Applications/Fantastical.app
 echo "Removing /Applications/Fantastical.app..."

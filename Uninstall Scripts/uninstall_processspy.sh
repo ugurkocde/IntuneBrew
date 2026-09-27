@@ -17,6 +17,10 @@ fi
 echo "Stopping ProcessSpy if running..."
 pkill -f "ProcessSpy" 2>/dev/null || true
 
+# Kill application with bundle ID com.itone.ProcessSpy if running
+echo "Stopping application with bundle ID com.itone.ProcessSpy if running..."
+killall -9 "com.itone.ProcessSpy" 2>/dev/null || true
+
 # Remove /Applications/ProcessSpy.app
 echo "Removing /Applications/ProcessSpy.app..."
 if [ -d "/Applications/ProcessSpy.app" ]; then

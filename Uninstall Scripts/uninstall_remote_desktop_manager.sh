@@ -17,6 +17,10 @@ fi
 echo "Stopping Remote Desktop Manager if running..."
 pkill -f "Remote Desktop Manager" 2>/dev/null || true
 
+# Kill application with bundle ID com.devolutions.remotedesktopmanager if running
+echo "Stopping application with bundle ID com.devolutions.remotedesktopmanager if running..."
+killall -9 "com.devolutions.remotedesktopmanager" 2>/dev/null || true
+
 # Remove /Applications/Remote Desktop Manager.app
 echo "Removing /Applications/Remote Desktop Manager.app..."
 if [ -d "/Applications/Remote Desktop Manager.app" ]; then

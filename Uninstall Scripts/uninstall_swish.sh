@@ -17,6 +17,10 @@ fi
 echo "Stopping Swish if running..."
 pkill -f "Swish" 2>/dev/null || true
 
+# Kill application with bundle ID co.highlyopinionated.swish if running
+echo "Stopping application with bundle ID co.highlyopinionated.swish if running..."
+killall -9 "co.highlyopinionated.swish" 2>/dev/null || true
+
 # Remove /Applications/Swish.app
 echo "Removing /Applications/Swish.app..."
 if [ -d "/Applications/Swish.app" ]; then

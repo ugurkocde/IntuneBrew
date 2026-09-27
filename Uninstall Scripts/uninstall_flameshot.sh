@@ -21,20 +21,36 @@ pkill -f "Flameshot" 2>/dev/null || true
 echo "Stopping application with bundle ID org.flameshot.flameshot if running..."
 killall -9 "org.flameshot.flameshot" 2>/dev/null || true
 
-# Remove /Applications/flameshot.app
-echo "Removing /Applications/flameshot.app..."
-if [ -d "/Applications/flameshot.app" ]; then
-    rm -rf "/Applications/flameshot.app" 2>/dev/null || true
-elif [ -f "/Applications/flameshot.app" ]; then
-    rm -f "/Applications/flameshot.app" 2>/dev/null || true
+# Remove /Applications/Flameshot.app
+echo "Removing /Applications/Flameshot.app..."
+if [ -d "/Applications/Flameshot.app" ]; then
+    rm -rf "/Applications/Flameshot.app" 2>/dev/null || true
+elif [ -f "/Applications/Flameshot.app" ]; then
+    rm -f "/Applications/Flameshot.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/.config/flameshot/flameshot.ini
-echo "Removing $HOME/.config/flameshot/flameshot.ini..."
-if [ -d "$HOME/.config/flameshot/flameshot.ini" ]; then
-    rm -rf "$HOME/.config/flameshot/flameshot.ini" 2>/dev/null || true
-elif [ -f "$HOME/.config/flameshot/flameshot.ini" ]; then
-    rm -f "$HOME/.config/flameshot/flameshot.ini" 2>/dev/null || true
+# Remove $HOME/.cache/flameshot
+echo "Removing $HOME/.cache/flameshot..."
+if [ -d "$HOME/.cache/flameshot" ]; then
+    rm -rf "$HOME/.cache/flameshot" 2>/dev/null || true
+elif [ -f "$HOME/.cache/flameshot" ]; then
+    rm -f "$HOME/.cache/flameshot" 2>/dev/null || true
+fi
+
+# Remove $HOME/.config/flameshot
+echo "Removing $HOME/.config/flameshot..."
+if [ -d "$HOME/.config/flameshot" ]; then
+    rm -rf "$HOME/.config/flameshot" 2>/dev/null || true
+elif [ -f "$HOME/.config/flameshot" ]; then
+    rm -f "$HOME/.config/flameshot" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/flameshot
+echo "Removing $HOME/Library/Caches/flameshot..."
+if [ -d "$HOME/Library/Caches/flameshot" ]; then
+    rm -rf "$HOME/Library/Caches/flameshot" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/flameshot" ]; then
+    rm -f "$HOME/Library/Caches/flameshot" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

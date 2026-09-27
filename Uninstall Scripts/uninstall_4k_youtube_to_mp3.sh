@@ -17,6 +17,10 @@ fi
 echo "Stopping 4K YouTube to MP3 if running..."
 pkill -f "4K YouTube to MP3" 2>/dev/null || true
 
+# Kill application with bundle ID com.openmedia.4kyoutubetomp3 if running
+echo "Stopping application with bundle ID com.openmedia.4kyoutubetomp3 if running..."
+killall -9 "com.openmedia.4kyoutubetomp3" 2>/dev/null || true
+
 # Remove /Applications/4K YouTube to MP3.app
 echo "Removing /Applications/4K YouTube to MP3.app..."
 if [ -d "/Applications/4K YouTube to MP3.app" ]; then

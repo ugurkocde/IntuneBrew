@@ -25,12 +25,28 @@ elif [ -f "/Applications/AirBuddy.app" ]; then
     rm -f "/Applications/AirBuddy.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/*.group.codes.rambo.AirBuddy
+echo "Removing $HOME/Library/Application Scripts/*.group.codes.rambo.AirBuddy..."
+if [ -d "$HOME/Library/Application Scripts/*.group.codes.rambo.AirBuddy" ]; then
+    rm -rf "$HOME/Library/Application Scripts/*.group.codes.rambo.AirBuddy" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/*.group.codes.rambo.AirBuddy" ]; then
+    rm -f "$HOME/Library/Application Scripts/*.group.codes.rambo.AirBuddy" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/codes.rambo.AirBuddy*
 echo "Removing $HOME/Library/Application Scripts/codes.rambo.AirBuddy*..."
 if [ -d "$HOME/Library/Application Scripts/codes.rambo.AirBuddy*" ]; then
     rm -rf "$HOME/Library/Application Scripts/codes.rambo.AirBuddy*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/codes.rambo.AirBuddy*" ]; then
     rm -f "$HOME/Library/Application Scripts/codes.rambo.AirBuddy*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/codes.rambo.airbuddyhelper.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/codes.rambo.airbuddyhelper.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/codes.rambo.airbuddyhelper.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/codes.rambo.airbuddyhelper.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/codes.rambo.airbuddyhelper.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/codes.rambo.airbuddyhelper.sfl*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/codes.rambo.AirBuddy
@@ -65,6 +81,14 @@ elif [ -f "$HOME/Library/Group Containers/*.group.codes.rambo.AirBuddy" ]; then
     rm -f "$HOME/Library/Group Containers/*.group.codes.rambo.AirBuddy" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/codes.rambo.AirBuddy
+echo "Removing $HOME/Library/HTTPStorages/codes.rambo.AirBuddy..."
+if [ -d "$HOME/Library/HTTPStorages/codes.rambo.AirBuddy" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/codes.rambo.AirBuddy" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/codes.rambo.AirBuddy" ]; then
+    rm -f "$HOME/Library/HTTPStorages/codes.rambo.AirBuddy" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/codes.rambo.AirBuddy.binarycookies
 echo "Removing $HOME/Library/HTTPStorages/codes.rambo.AirBuddy.binarycookies..."
 if [ -d "$HOME/Library/HTTPStorages/codes.rambo.AirBuddy.binarycookies" ]; then
@@ -79,6 +103,14 @@ if [ -d "$HOME/Library/LaunchAgents/codes.rambo.AirBuddyHelper.plist" ]; then
     rm -rf "$HOME/Library/LaunchAgents/codes.rambo.AirBuddyHelper.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/LaunchAgents/codes.rambo.AirBuddyHelper.plist" ]; then
     rm -f "$HOME/Library/LaunchAgents/codes.rambo.AirBuddyHelper.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/codes.rambo.AirBuddy.BluetoothClassicService.plist
+echo "Removing $HOME/Library/Preferences/codes.rambo.AirBuddy.BluetoothClassicService.plist..."
+if [ -d "$HOME/Library/Preferences/codes.rambo.AirBuddy.BluetoothClassicService.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/codes.rambo.AirBuddy.BluetoothClassicService.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/codes.rambo.AirBuddy.BluetoothClassicService.plist" ]; then
+    rm -f "$HOME/Library/Preferences/codes.rambo.AirBuddy.BluetoothClassicService.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/codes.rambo.AirBuddy.plist
@@ -103,6 +135,14 @@ if [ -d "$HOME/Library/SyncedPreferences/com.apple.kvs/ChangeTokens/NoEncryption
     rm -rf "$HOME/Library/SyncedPreferences/com.apple.kvs/ChangeTokens/NoEncryption/AirBuddy" 2>/dev/null || true
 elif [ -f "$HOME/Library/SyncedPreferences/com.apple.kvs/ChangeTokens/NoEncryption/AirBuddy" ]; then
     rm -f "$HOME/Library/SyncedPreferences/com.apple.kvs/ChangeTokens/NoEncryption/AirBuddy" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/codes.rambo.AirBuddy
+echo "Removing $HOME/Library/WebKit/codes.rambo.AirBuddy..."
+if [ -d "$HOME/Library/WebKit/codes.rambo.AirBuddy" ]; then
+    rm -rf "$HOME/Library/WebKit/codes.rambo.AirBuddy" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/codes.rambo.AirBuddy" ]; then
+    rm -f "$HOME/Library/WebKit/codes.rambo.AirBuddy" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

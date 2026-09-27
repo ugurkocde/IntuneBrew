@@ -17,6 +17,10 @@ fi
 echo "Stopping REAPER if running..."
 pkill -f "REAPER" 2>/dev/null || true
 
+# Kill application with bundle ID com.cockos.reaper if running
+echo "Stopping application with bundle ID com.cockos.reaper if running..."
+killall -9 "com.cockos.reaper" 2>/dev/null || true
+
 # Remove /Applications/REAPER.app
 echo "Removing /Applications/REAPER.app..."
 if [ -d "/Applications/REAPER.app" ]; then

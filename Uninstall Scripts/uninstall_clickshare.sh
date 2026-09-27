@@ -17,6 +17,34 @@ fi
 echo "Stopping ClickShare if running..."
 pkill -f "ClickShare" 2>/dev/null || true
 
+# Unload service com.barco.clickshare.agent
+echo "Unloading service com.barco.clickshare.agent..."
+launchctl unload -w /Library/LaunchAgents/com.barco.clickshare.agent.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.barco.clickshare.agent.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.barco.clickshare.agent.plist 2>/dev/null || true
+
+# Unload service com.barco.clickshare.autorun
+echo "Unloading service com.barco.clickshare.autorun..."
+launchctl unload -w /Library/LaunchAgents/com.barco.clickshare.autorun.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.barco.clickshare.autorun.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.barco.clickshare.autorun.plist 2>/dev/null || true
+
+# Unload service com.barco.clickshare.user.agent
+echo "Unloading service com.barco.clickshare.user.agent..."
+launchctl unload -w /Library/LaunchAgents/com.barco.clickshare.user.agent.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.barco.clickshare.user.agent.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.barco.clickshare.user.agent.plist 2>/dev/null || true
+
+# Unload service com.barco.clickshare.user.autorun
+echo "Unloading service com.barco.clickshare.user.autorun..."
+launchctl unload -w /Library/LaunchAgents/com.barco.clickshare.user.autorun.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.barco.clickshare.user.autorun.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.barco.clickshare.user.autorun.plist 2>/dev/null || true
+
+# Kill application with bundle ID com.barco.clickshare if running
+echo "Stopping application with bundle ID com.barco.clickshare if running..."
+killall -9 "com.barco.clickshare" 2>/dev/null || true
+
 # Kill application with bundle ID com.barco.clickshare.updater if running
 echo "Stopping application with bundle ID com.barco.clickshare.updater if running..."
 killall -9 "com.barco.clickshare.updater" 2>/dev/null || true
@@ -29,12 +57,52 @@ elif [ -f "/Applications/ClickShare.app" ]; then
     rm -f "/Applications/ClickShare.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/.clickshare
+echo "Removing $HOME/.clickshare..."
+if [ -d "$HOME/.clickshare" ]; then
+    rm -rf "$HOME/.clickshare" 2>/dev/null || true
+elif [ -f "$HOME/.clickshare" ]; then
+    rm -f "$HOME/.clickshare" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/ClickShare
 echo "Removing $HOME/Library/Application Support/ClickShare..."
 if [ -d "$HOME/Library/Application Support/ClickShare" ]; then
     rm -rf "$HOME/Library/Application Support/ClickShare" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/ClickShare" ]; then
     rm -f "$HOME/Library/Application Support/ClickShare" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.barco.clickshare.updater*
+echo "Removing $HOME/Library/Caches/com.barco.clickshare.updater*..."
+if [ -d "$HOME/Library/Caches/com.barco.clickshare.updater*" ]; then
+    rm -rf "$HOME/Library/Caches/com.barco.clickshare.updater*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.barco.clickshare.updater*" ]; then
+    rm -f "$HOME/Library/Caches/com.barco.clickshare.updater*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.barco.clickshare.updater
+echo "Removing $HOME/Library/HTTPStorages/com.barco.clickshare.updater..."
+if [ -d "$HOME/Library/HTTPStorages/com.barco.clickshare.updater" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.barco.clickshare.updater" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.barco.clickshare.updater" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.barco.clickshare.updater" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/LaunchAgents/com.barco.clickshare.agent.plist
+echo "Removing $HOME/Library/LaunchAgents/com.barco.clickshare.agent.plist..."
+if [ -d "$HOME/Library/LaunchAgents/com.barco.clickshare.agent.plist" ]; then
+    rm -rf "$HOME/Library/LaunchAgents/com.barco.clickshare.agent.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/LaunchAgents/com.barco.clickshare.agent.plist" ]; then
+    rm -f "$HOME/Library/LaunchAgents/com.barco.clickshare.agent.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/LaunchAgents/com.barco.clickshare.autorun.plist
+echo "Removing $HOME/Library/LaunchAgents/com.barco.clickshare.autorun.plist..."
+if [ -d "$HOME/Library/LaunchAgents/com.barco.clickshare.autorun.plist" ]; then
+    rm -rf "$HOME/Library/LaunchAgents/com.barco.clickshare.autorun.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/LaunchAgents/com.barco.clickshare.autorun.plist" ]; then
+    rm -f "$HOME/Library/LaunchAgents/com.barco.clickshare.autorun.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.barco.clickshare*.plist

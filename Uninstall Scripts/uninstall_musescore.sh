@@ -17,6 +17,10 @@ fi
 echo "Stopping MuseScore if running..."
 pkill -f "MuseScore" 2>/dev/null || true
 
+# Kill application with bundle ID org.musescore.MuseScore if running
+echo "Stopping application with bundle ID org.musescore.MuseScore if running..."
+killall -9 "org.musescore.MuseScore" 2>/dev/null || true
+
 # Remove /Applications/MuseScore 4.app
 echo "Removing /Applications/MuseScore 4.app..."
 if [ -d "/Applications/MuseScore 4.app" ]; then

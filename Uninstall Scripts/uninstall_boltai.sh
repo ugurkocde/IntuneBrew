@@ -17,12 +17,12 @@ fi
 echo "Stopping BoltAI if running..."
 pkill -f "BoltAI" 2>/dev/null || true
 
-# Remove /Applications/BoltAI 2.app
-echo "Removing /Applications/BoltAI 2.app..."
-if [ -d "/Applications/BoltAI 2.app" ]; then
-    rm -rf "/Applications/BoltAI 2.app" 2>/dev/null || true
-elif [ -f "/Applications/BoltAI 2.app" ]; then
-    rm -f "/Applications/BoltAI 2.app" 2>/dev/null || true
+# Remove /Applications/BoltAI.app
+echo "Removing /Applications/BoltAI.app..."
+if [ -d "/Applications/BoltAI.app" ]; then
+    rm -rf "/Applications/BoltAI.app" 2>/dev/null || true
+elif [ -f "/Applications/BoltAI.app" ]; then
+    rm -f "/Applications/BoltAI.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Scripts/co.podzim.boltai-mobile

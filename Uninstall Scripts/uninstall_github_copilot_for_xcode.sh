@@ -17,6 +17,12 @@ fi
 echo "Stopping GitHub Copilot for Xcode if running..."
 pkill -f "GitHub Copilot for Xcode" 2>/dev/null || true
 
+# Unload service com.github.CopilotForXcode.CommunicationBridge
+echo "Unloading service com.github.CopilotForXcode.CommunicationBridge..."
+launchctl unload -w /Library/LaunchAgents/com.github.CopilotForXcode.CommunicationBridge.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.github.CopilotForXcode.CommunicationBridge.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.github.CopilotForXcode.CommunicationBridge.plist 2>/dev/null || true
+
 # Remove /Applications/GitHub Copilot for Xcode.app
 echo "Removing /Applications/GitHub Copilot for Xcode.app..."
 if [ -d "/Applications/GitHub Copilot for Xcode.app" ]; then

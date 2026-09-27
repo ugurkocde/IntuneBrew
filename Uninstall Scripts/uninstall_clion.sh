@@ -17,6 +17,10 @@ fi
 echo "Stopping CLion if running..."
 pkill -f "CLion" 2>/dev/null || true
 
+# Kill application with bundle ID com.jetbrains.CLion if running
+echo "Stopping application with bundle ID com.jetbrains.CLion if running..."
+killall -9 "com.jetbrains.CLion" 2>/dev/null || true
+
 # Remove /Applications/CLion.app
 echo "Removing /Applications/CLion.app..."
 if [ -d "/Applications/CLion.app" ]; then

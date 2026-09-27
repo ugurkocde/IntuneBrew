@@ -17,44 +17,40 @@ fi
 echo "Stopping Geekbench if running..."
 pkill -f "Geekbench" 2>/dev/null || true
 
-# Remove /Applications/Geekbench 6.app
-echo "Removing /Applications/Geekbench 6.app..."
-if [ -d "/Applications/Geekbench 6.app" ]; then
-    rm -rf "/Applications/Geekbench 6.app" 2>/dev/null || true
-elif [ -f "/Applications/Geekbench 6.app" ]; then
-    rm -f "/Applications/Geekbench 6.app" 2>/dev/null || true
+# Kill application with bundle ID com.primatelabs.parkdale if running
+echo "Stopping application with bundle ID com.primatelabs.parkdale if running..."
+killall -9 "com.primatelabs.parkdale" 2>/dev/null || true
+
+# Remove /Applications/Geekbench 7.app
+echo "Removing /Applications/Geekbench 7.app..."
+if [ -d "/Applications/Geekbench 7.app" ]; then
+    rm -rf "/Applications/Geekbench 7.app" 2>/dev/null || true
+elif [ -f "/Applications/Geekbench 7.app" ]; then
+    rm -f "/Applications/Geekbench 7.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.primatelabs.Geekbench6
-echo "Removing $HOME/Library/Caches/com.primatelabs.Geekbench6..."
-if [ -d "$HOME/Library/Caches/com.primatelabs.Geekbench6" ]; then
-    rm -rf "$HOME/Library/Caches/com.primatelabs.Geekbench6" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.primatelabs.Geekbench6" ]; then
-    rm -f "$HOME/Library/Caches/com.primatelabs.Geekbench6" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.primatelabs.parkdale.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.primatelabs.parkdale.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.primatelabs.parkdale.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.primatelabs.parkdale.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.primatelabs.parkdale.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.primatelabs.parkdale.sfl*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/HTTPStorages/com.primatelabs.Geekbench6
-echo "Removing $HOME/Library/HTTPStorages/com.primatelabs.Geekbench6..."
-if [ -d "$HOME/Library/HTTPStorages/com.primatelabs.Geekbench6" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/com.primatelabs.Geekbench6" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/com.primatelabs.Geekbench6" ]; then
-    rm -f "$HOME/Library/HTTPStorages/com.primatelabs.Geekbench6" 2>/dev/null || true
+# Remove $HOME/Library/HTTPStorages/com.primatelabs.parkdale
+echo "Removing $HOME/Library/HTTPStorages/com.primatelabs.parkdale..."
+if [ -d "$HOME/Library/HTTPStorages/com.primatelabs.parkdale" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.primatelabs.parkdale" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.primatelabs.parkdale" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.primatelabs.parkdale" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.primatelabs.Geekbench6.plist
-echo "Removing $HOME/Library/Preferences/com.primatelabs.Geekbench6.plist..."
-if [ -d "$HOME/Library/Preferences/com.primatelabs.Geekbench6.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.primatelabs.Geekbench6.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.primatelabs.Geekbench6.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.primatelabs.Geekbench6.plist" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Saved Application State/com.primeatelabs.Geekbench6.savedState
-echo "Removing $HOME/Library/Saved Application State/com.primeatelabs.Geekbench6.savedState..."
-if [ -d "$HOME/Library/Saved Application State/com.primeatelabs.Geekbench6.savedState" ]; then
-    rm -rf "$HOME/Library/Saved Application State/com.primeatelabs.Geekbench6.savedState" 2>/dev/null || true
-elif [ -f "$HOME/Library/Saved Application State/com.primeatelabs.Geekbench6.savedState" ]; then
-    rm -f "$HOME/Library/Saved Application State/com.primeatelabs.Geekbench6.savedState" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.primatelabs.parkdale.plist
+echo "Removing $HOME/Library/Preferences/com.primatelabs.parkdale.plist..."
+if [ -d "$HOME/Library/Preferences/com.primatelabs.parkdale.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.primatelabs.parkdale.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.primatelabs.parkdale.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.primatelabs.parkdale.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

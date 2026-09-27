@@ -17,6 +17,10 @@ fi
 echo "Stopping Zettlr if running..."
 pkill -f "Zettlr" 2>/dev/null || true
 
+# Kill application with bundle ID com.zettlr.app if running
+echo "Stopping application with bundle ID com.zettlr.app if running..."
+killall -9 "com.zettlr.app" 2>/dev/null || true
+
 # Remove /Applications/Zettlr.app
 echo "Removing /Applications/Zettlr.app..."
 if [ -d "/Applications/Zettlr.app" ]; then

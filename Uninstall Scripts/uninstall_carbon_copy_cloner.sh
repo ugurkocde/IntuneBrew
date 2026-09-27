@@ -57,6 +57,14 @@ elif [ -f "$HOME/Library/Caches/com.bombich.ccc" ]; then
     rm -f "$HOME/Library/Caches/com.bombich.ccc" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.bombich.ccc
+echo "Removing $HOME/Library/HTTPStorages/com.bombich.ccc..."
+if [ -d "$HOME/Library/HTTPStorages/com.bombich.ccc" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.bombich.ccc" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.bombich.ccc" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.bombich.ccc" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.bombich.ccc.plist
 echo "Removing $HOME/Library/Preferences/com.bombich.ccc.plist..."
 if [ -d "$HOME/Library/Preferences/com.bombich.ccc.plist" ]; then

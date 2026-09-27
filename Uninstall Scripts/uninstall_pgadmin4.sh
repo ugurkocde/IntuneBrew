@@ -17,6 +17,10 @@ fi
 echo "Stopping pgAdmin4 if running..."
 pkill -f "pgAdmin4" 2>/dev/null || true
 
+# Kill application with bundle ID org.pgadmin.pgadmin4 if running
+echo "Stopping application with bundle ID org.pgadmin.pgadmin4 if running..."
+killall -9 "org.pgadmin.pgadmin4" 2>/dev/null || true
+
 # Remove /Applications/pgAdmin 4.app
 echo "Removing /Applications/pgAdmin 4.app..."
 if [ -d "/Applications/pgAdmin 4.app" ]; then

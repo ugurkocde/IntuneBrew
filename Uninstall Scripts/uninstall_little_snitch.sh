@@ -17,6 +17,10 @@ fi
 echo "Stopping Little Snitch if running..."
 pkill -f "Little Snitch" 2>/dev/null || true
 
+# Kill application with bundle ID at.obdev.littlesnitch if running
+echo "Stopping application with bundle ID at.obdev.littlesnitch if running..."
+killall -9 "at.obdev.littlesnitch" 2>/dev/null || true
+
 # Remove /Applications/Little Snitch.app
 echo "Removing /Applications/Little Snitch.app..."
 if [ -d "/Applications/Little Snitch.app" ]; then

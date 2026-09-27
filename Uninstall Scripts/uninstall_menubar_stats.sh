@@ -17,6 +17,10 @@ fi
 echo "Stopping MenuBar Stats if running..."
 pkill -f "MenuBar Stats" 2>/dev/null || true
 
+# Kill application with bundle ID com.fabriceleyne.menubarstats if running
+echo "Stopping application with bundle ID com.fabriceleyne.menubarstats if running..."
+killall -9 "com.fabriceleyne.menubarstats" 2>/dev/null || true
+
 # Remove /Applications/MenuBar Stats.app
 echo "Removing /Applications/MenuBar Stats.app..."
 if [ -d "/Applications/MenuBar Stats.app" ]; then

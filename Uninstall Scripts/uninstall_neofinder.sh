@@ -17,6 +17,10 @@ fi
 echo "Stopping NeoFinder if running..."
 pkill -f "NeoFinder" 2>/dev/null || true
 
+# Kill application with bundle ID de.wfs-apps.neofinder if running
+echo "Stopping application with bundle ID de.wfs-apps.neofinder if running..."
+killall -9 "de.wfs-apps.neofinder" 2>/dev/null || true
+
 # Remove /Applications/NeoFinder.app
 echo "Removing /Applications/NeoFinder.app..."
 if [ -d "/Applications/NeoFinder.app" ]; then
@@ -55,6 +59,14 @@ if [ -d "$HOME/Library/Caches/de.wfs-apps.neofinder.quicklaunch.cache" ]; then
     rm -rf "$HOME/Library/Caches/de.wfs-apps.neofinder.quicklaunch.cache" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/de.wfs-apps.neofinder.quicklaunch.cache" ]; then
     rm -f "$HOME/Library/Caches/de.wfs-apps.neofinder.quicklaunch.cache" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/de.wfs-apps.neofinder.plist
+echo "Removing $HOME/Library/Preferences/de.wfs-apps.neofinder.plist..."
+if [ -d "$HOME/Library/Preferences/de.wfs-apps.neofinder.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/de.wfs-apps.neofinder.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/de.wfs-apps.neofinder.plist" ]; then
+    rm -f "$HOME/Library/Preferences/de.wfs-apps.neofinder.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/de.wfs-apps.neofinder.plist

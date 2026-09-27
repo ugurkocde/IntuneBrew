@@ -17,12 +17,24 @@ fi
 echo "Stopping Advanced Renamer if running..."
 pkill -f "Advanced Renamer" 2>/dev/null || true
 
+# Kill application with bundle ID com.HulubuluSoftware.AdvancedRenamer if running
+echo "Stopping application with bundle ID com.HulubuluSoftware.AdvancedRenamer if running..."
+killall -9 "com.HulubuluSoftware.AdvancedRenamer" 2>/dev/null || true
+
 # Remove /Applications/Advanced Renamer.app
 echo "Removing /Applications/Advanced Renamer.app..."
 if [ -d "/Applications/Advanced Renamer.app" ]; then
     rm -rf "/Applications/Advanced Renamer.app" 2>/dev/null || true
 elif [ -f "/Applications/Advanced Renamer.app" ]; then
     rm -f "/Applications/Advanced Renamer.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Advanced Renamer
+echo "Removing $HOME/Library/Application Support/Advanced Renamer..."
+if [ -d "$HOME/Library/Application Support/Advanced Renamer" ]; then
+    rm -rf "$HOME/Library/Application Support/Advanced Renamer" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Advanced Renamer" ]; then
+    rm -f "$HOME/Library/Application Support/Advanced Renamer" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.HulubuluSoftware.AdvancedRenamer

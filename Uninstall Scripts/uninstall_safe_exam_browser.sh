@@ -17,6 +17,10 @@ fi
 echo "Stopping Safe Exam Browser if running..."
 pkill -f "Safe Exam Browser" 2>/dev/null || true
 
+# Kill application with bundle ID org.safeexambrowser.SafeExamBrowser if running
+echo "Stopping application with bundle ID org.safeexambrowser.SafeExamBrowser if running..."
+killall -9 "org.safeexambrowser.SafeExamBrowser" 2>/dev/null || true
+
 # Remove /Applications/Safe Exam Browser.app
 echo "Removing /Applications/Safe Exam Browser.app..."
 if [ -d "/Applications/Safe Exam Browser.app" ]; then

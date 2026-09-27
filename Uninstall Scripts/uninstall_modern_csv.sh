@@ -17,6 +17,10 @@ fi
 echo "Stopping Modern CSV if running..."
 pkill -f "Modern CSV" 2>/dev/null || true
 
+# Kill application with bundle ID net.galliumdigital.Modern-CSV if running
+echo "Stopping application with bundle ID net.galliumdigital.Modern-CSV if running..."
+killall -9 "net.galliumdigital.Modern-CSV" 2>/dev/null || true
+
 # Remove /Applications/Modern CSV.app
 echo "Removing /Applications/Modern CSV.app..."
 if [ -d "/Applications/Modern CSV.app" ]; then

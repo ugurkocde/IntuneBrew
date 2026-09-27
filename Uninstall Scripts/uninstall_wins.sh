@@ -17,6 +17,12 @@ fi
 echo "Stopping Wins if running..."
 pkill -f "Wins" 2>/dev/null || true
 
+# Unload service cool.wins.WinsHelper
+echo "Unloading service cool.wins.WinsHelper..."
+launchctl unload -w /Library/LaunchAgents/cool.wins.WinsHelper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/cool.wins.WinsHelper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/cool.wins.WinsHelper.plist 2>/dev/null || true
+
 # Remove /Applications/Wins.app
 echo "Removing /Applications/Wins.app..."
 if [ -d "/Applications/Wins.app" ]; then

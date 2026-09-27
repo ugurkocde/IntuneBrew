@@ -21,14 +21,6 @@ pkill -f "DingTalk" 2>/dev/null || true
 echo "Stopping application with bundle ID com.alibaba.DingTalkMac if running..."
 killall -9 "com.alibaba.DingTalkMac" 2>/dev/null || true
 
-# Remove /Applications/DingTalk.app
-echo "Removing /Applications/DingTalk.app..."
-if [ -d "/Applications/DingTalk.app" ]; then
-    rm -rf "/Applications/DingTalk.app" 2>/dev/null || true
-elif [ -f "/Applications/DingTalk.app" ]; then
-    rm -f "/Applications/DingTalk.app" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Application Support/DingTalkMac
 echo "Removing $HOME/Library/Application Support/DingTalkMac..."
 if [ -d "$HOME/Library/Application Support/DingTalkMac" ]; then

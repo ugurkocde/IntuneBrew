@@ -25,6 +25,46 @@ elif [ -f "/Applications/Bezel.app" ]; then
     rm -f "/Applications/Bezel.app" 2>/dev/null || true
 fi
 
+# Remove /Library/Preferences/com.apple.BezelServices.plist
+echo "Removing /Library/Preferences/com.apple.BezelServices.plist..."
+if [ -d "/Library/Preferences/com.apple.BezelServices.plist" ]; then
+    rm -rf "/Library/Preferences/com.apple.BezelServices.plist" 2>/dev/null || true
+elif [ -f "/Library/Preferences/com.apple.BezelServices.plist" ]; then
+    rm -f "/Library/Preferences/com.apple.BezelServices.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.nonstrict.BezelAppleTVHelper
+echo "Removing $HOME/Library/Application Scripts/com.nonstrict.BezelAppleTVHelper..."
+if [ -d "$HOME/Library/Application Scripts/com.nonstrict.BezelAppleTVHelper" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.nonstrict.BezelAppleTVHelper" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.nonstrict.BezelAppleTVHelper" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.nonstrict.BezelAppleTVHelper" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.nonstrict.BezelDALService
+echo "Removing $HOME/Library/Application Scripts/com.nonstrict.BezelDALService..."
+if [ -d "$HOME/Library/Application Scripts/com.nonstrict.BezelDALService" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.nonstrict.BezelDALService" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.nonstrict.BezelDALService" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.nonstrict.BezelDALService" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nonstrict.bezel-direct.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nonstrict.bezel-direct.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nonstrict.bezel-direct.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nonstrict.bezel-direct.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nonstrict.bezel-direct.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nonstrict.bezel-direct.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.nonstrict.Bezel-direct
+echo "Removing $HOME/Library/Application Support/com.nonstrict.Bezel-direct..."
+if [ -d "$HOME/Library/Application Support/com.nonstrict.Bezel-direct" ]; then
+    rm -rf "$HOME/Library/Application Support/com.nonstrict.Bezel-direct" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.nonstrict.Bezel-direct" ]; then
+    rm -f "$HOME/Library/Application Support/com.nonstrict.Bezel-direct" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.nonstrict.Bezel-direct
 echo "Removing $HOME/Library/Caches/com.nonstrict.Bezel-direct..."
 if [ -d "$HOME/Library/Caches/com.nonstrict.Bezel-direct" ]; then
@@ -33,12 +73,36 @@ elif [ -f "$HOME/Library/Caches/com.nonstrict.Bezel-direct" ]; then
     rm -f "$HOME/Library/Caches/com.nonstrict.Bezel-direct" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/com.nonstrict.BezelAppleTVHelper
+echo "Removing $HOME/Library/Containers/com.nonstrict.BezelAppleTVHelper..."
+if [ -d "$HOME/Library/Containers/com.nonstrict.BezelAppleTVHelper" ]; then
+    rm -rf "$HOME/Library/Containers/com.nonstrict.BezelAppleTVHelper" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.nonstrict.BezelAppleTVHelper" ]; then
+    rm -f "$HOME/Library/Containers/com.nonstrict.BezelAppleTVHelper" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.nonstrict.BezelDALService
+echo "Removing $HOME/Library/Containers/com.nonstrict.BezelDALService..."
+if [ -d "$HOME/Library/Containers/com.nonstrict.BezelDALService" ]; then
+    rm -rf "$HOME/Library/Containers/com.nonstrict.BezelDALService" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.nonstrict.BezelDALService" ]; then
+    rm -f "$HOME/Library/Containers/com.nonstrict.BezelDALService" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.nonstrict.Bezel-direct
 echo "Removing $HOME/Library/HTTPStorages/com.nonstrict.Bezel-direct..."
 if [ -d "$HOME/Library/HTTPStorages/com.nonstrict.Bezel-direct" ]; then
     rm -rf "$HOME/Library/HTTPStorages/com.nonstrict.Bezel-direct" 2>/dev/null || true
 elif [ -f "$HOME/Library/HTTPStorages/com.nonstrict.Bezel-direct" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.nonstrict.Bezel-direct" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.apple.BezelServices.plist
+echo "Removing $HOME/Library/Preferences/com.apple.BezelServices.plist..."
+if [ -d "$HOME/Library/Preferences/com.apple.BezelServices.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.apple.BezelServices.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.apple.BezelServices.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.apple.BezelServices.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.nonstrict.Bezel-direct.plist

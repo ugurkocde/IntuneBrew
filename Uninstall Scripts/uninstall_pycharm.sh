@@ -17,6 +17,10 @@ fi
 echo "Stopping PyCharm if running..."
 pkill -f "PyCharm" 2>/dev/null || true
 
+# Kill application with bundle ID com.jetbrains.pycharm if running
+echo "Stopping application with bundle ID com.jetbrains.pycharm if running..."
+killall -9 "com.jetbrains.pycharm" 2>/dev/null || true
+
 # Remove /Applications/PyCharm.app
 echo "Removing /Applications/PyCharm.app..."
 if [ -d "/Applications/PyCharm.app" ]; then

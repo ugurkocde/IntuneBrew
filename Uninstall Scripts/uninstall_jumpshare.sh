@@ -17,12 +17,30 @@ fi
 echo "Stopping Jumpshare if running..."
 pkill -f "Jumpshare" 2>/dev/null || true
 
+# Unload service com.jumpshare.JumpshareLoginHelper
+echo "Unloading service com.jumpshare.JumpshareLoginHelper..."
+launchctl unload -w /Library/LaunchAgents/com.jumpshare.JumpshareLoginHelper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.jumpshare.JumpshareLoginHelper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.jumpshare.JumpshareLoginHelper.plist 2>/dev/null || true
+
+# Kill application with bundle ID com.jumpshare.Jumpshare if running
+echo "Stopping application with bundle ID com.jumpshare.Jumpshare if running..."
+killall -9 "com.jumpshare.Jumpshare" 2>/dev/null || true
+
 # Remove /Applications/Jumpshare.app
 echo "Removing /Applications/Jumpshare.app..."
 if [ -d "/Applications/Jumpshare.app" ]; then
     rm -rf "/Applications/Jumpshare.app" 2>/dev/null || true
 elif [ -f "/Applications/Jumpshare.app" ]; then
     rm -f "/Applications/Jumpshare.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/697K87ALT7.com.jumpshare.Jumpshare
+echo "Removing $HOME/Library/Application Scripts/697K87ALT7.com.jumpshare.Jumpshare..."
+if [ -d "$HOME/Library/Application Scripts/697K87ALT7.com.jumpshare.Jumpshare" ]; then
+    rm -rf "$HOME/Library/Application Scripts/697K87ALT7.com.jumpshare.Jumpshare" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/697K87ALT7.com.jumpshare.Jumpshare" ]; then
+    rm -f "$HOME/Library/Application Scripts/697K87ALT7.com.jumpshare.Jumpshare" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Scripts/com.jumpshare.JumpshareLoginHelper
@@ -55,6 +73,14 @@ if [ -d "$HOME/Library/Cookies/com.jumpshare.Jumpshare.binarycookies" ]; then
     rm -rf "$HOME/Library/Cookies/com.jumpshare.Jumpshare.binarycookies" 2>/dev/null || true
 elif [ -f "$HOME/Library/Cookies/com.jumpshare.Jumpshare.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/com.jumpshare.Jumpshare.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/697K87ALT7.com.jumpshare.Jumpshare
+echo "Removing $HOME/Library/Group Containers/697K87ALT7.com.jumpshare.Jumpshare..."
+if [ -d "$HOME/Library/Group Containers/697K87ALT7.com.jumpshare.Jumpshare" ]; then
+    rm -rf "$HOME/Library/Group Containers/697K87ALT7.com.jumpshare.Jumpshare" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/697K87ALT7.com.jumpshare.Jumpshare" ]; then
+    rm -f "$HOME/Library/Group Containers/697K87ALT7.com.jumpshare.Jumpshare" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.jumpshare.Jumpshare.plist

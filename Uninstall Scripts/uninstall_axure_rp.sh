@@ -17,6 +17,10 @@ fi
 echo "Stopping Axure RP if running..."
 pkill -f "Axure RP" 2>/dev/null || true
 
+# Kill application with bundle ID com.axure.AxureRP11 if running
+echo "Stopping application with bundle ID com.axure.AxureRP11 if running..."
+killall -9 "com.axure.AxureRP11" 2>/dev/null || true
+
 # Remove /Applications/Axure RP 11.app
 echo "Removing /Applications/Axure RP 11.app..."
 if [ -d "/Applications/Axure RP 11.app" ]; then

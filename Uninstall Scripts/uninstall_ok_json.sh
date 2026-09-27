@@ -41,5 +41,13 @@ elif [ -f "$HOME/Library/Group Containers/group.net.shinystone.OKJSON" ]; then
     rm -f "$HOME/Library/Group Containers/group.net.shinystone.OKJSON" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Group Containers/S8MRM84X6F.group.net.shinystone.OKJSON
+echo "Removing $HOME/Library/Group Containers/S8MRM84X6F.group.net.shinystone.OKJSON..."
+if [ -d "$HOME/Library/Group Containers/S8MRM84X6F.group.net.shinystone.OKJSON" ]; then
+    rm -rf "$HOME/Library/Group Containers/S8MRM84X6F.group.net.shinystone.OKJSON" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/S8MRM84X6F.group.net.shinystone.OKJSON" ]; then
+    rm -f "$HOME/Library/Group Containers/S8MRM84X6F.group.net.shinystone.OKJSON" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

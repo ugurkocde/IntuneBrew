@@ -17,6 +17,10 @@ fi
 echo "Stopping FluidVoice if running..."
 pkill -f "FluidVoice" 2>/dev/null || true
 
+# Kill application with bundle ID com.FluidApp.app if running
+echo "Stopping application with bundle ID com.FluidApp.app if running..."
+killall -9 "com.FluidApp.app" 2>/dev/null || true
+
 # Remove /Applications/FluidVoice.app
 echo "Removing /Applications/FluidVoice.app..."
 if [ -d "/Applications/FluidVoice.app" ]; then

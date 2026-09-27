@@ -17,6 +17,10 @@ fi
 echo "Stopping Workspaces if running..."
 pkill -f "Workspaces" 2>/dev/null || true
 
+# Kill application with bundle ID com.apptorium.Workspaces2-paddle if running
+echo "Stopping application with bundle ID com.apptorium.Workspaces2-paddle if running..."
+killall -9 "com.apptorium.Workspaces2-paddle" 2>/dev/null || true
+
 # Remove /Applications/Workspaces.app
 echo "Removing /Applications/Workspaces.app..."
 if [ -d "/Applications/Workspaces.app" ]; then

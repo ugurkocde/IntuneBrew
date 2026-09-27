@@ -17,6 +17,10 @@ fi
 echo "Stopping Wirecast if running..."
 pkill -f "Wirecast" 2>/dev/null || true
 
+# Kill application with bundle ID net.telestream.wirecast if running
+echo "Stopping application with bundle ID net.telestream.wirecast if running..."
+killall -9 "net.telestream.wirecast" 2>/dev/null || true
+
 # Remove /Applications/Wirecast.app
 echo "Removing /Applications/Wirecast.app..."
 if [ -d "/Applications/Wirecast.app" ]; then

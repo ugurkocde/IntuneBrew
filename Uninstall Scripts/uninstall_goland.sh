@@ -17,6 +17,10 @@ fi
 echo "Stopping Goland if running..."
 pkill -f "Goland" 2>/dev/null || true
 
+# Kill application with bundle ID com.jetbrains.goland if running
+echo "Stopping application with bundle ID com.jetbrains.goland if running..."
+killall -9 "com.jetbrains.goland" 2>/dev/null || true
+
 # Remove /Applications/GoLand.app
 echo "Removing /Applications/GoLand.app..."
 if [ -d "/Applications/GoLand.app" ]; then

@@ -17,6 +17,10 @@ fi
 echo "Stopping ocenaudio if running..."
 pkill -f "ocenaudio" 2>/dev/null || true
 
+# Kill application with bundle ID com.ocenaudio if running
+echo "Stopping application with bundle ID com.ocenaudio if running..."
+killall -9 "com.ocenaudio" 2>/dev/null || true
+
 # Remove /Applications/ocenaudio.app
 echo "Removing /Applications/ocenaudio.app..."
 if [ -d "/Applications/ocenaudio.app" ]; then

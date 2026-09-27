@@ -17,6 +17,10 @@ fi
 echo "Stopping Melodics if running..."
 pkill -f "Melodics" 2>/dev/null || true
 
+# Kill application with bundle ID com.melodics.melodics if running
+echo "Stopping application with bundle ID com.melodics.melodics if running..."
+killall -9 "com.melodics.melodics" 2>/dev/null || true
+
 # Remove /Applications/Melodics.app
 echo "Removing /Applications/Melodics.app..."
 if [ -d "/Applications/Melodics.app" ]; then

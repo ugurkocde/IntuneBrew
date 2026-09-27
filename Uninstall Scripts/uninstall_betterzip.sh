@@ -17,6 +17,10 @@ fi
 echo "Stopping BetterZip if running..."
 pkill -f "BetterZip" 2>/dev/null || true
 
+# Kill application with bundle ID com.macitbetter.betterzip if running
+echo "Stopping application with bundle ID com.macitbetter.betterzip if running..."
+killall -9 "com.macitbetter.betterzip" 2>/dev/null || true
+
 # Remove /Applications/BetterZip.app
 echo "Removing /Applications/BetterZip.app..."
 if [ -d "/Applications/BetterZip.app" ]; then

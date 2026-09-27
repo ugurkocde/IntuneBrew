@@ -17,18 +17,16 @@ fi
 echo "Stopping calibre if running..."
 pkill -f "calibre" 2>/dev/null || true
 
+# Kill application with bundle ID net.kovidgoyal.calibre if running
+echo "Stopping application with bundle ID net.kovidgoyal.calibre if running..."
+killall -9 "net.kovidgoyal.calibre" 2>/dev/null || true
+
 # Remove /Applications/calibre.app
 echo "Removing /Applications/calibre.app..."
 if [ -d "/Applications/calibre.app" ]; then
     rm -rf "/Applications/calibre.app" 2>/dev/null || true
 elif [ -f "/Applications/calibre.app" ]; then
     rm -f "/Applications/calibre.app" 2>/dev/null || true
-fi
-
-# Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre
-echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre..."
-if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/calibre" ]; then
-    rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/calibre" 2>/dev/null || true
 fi
 
 # Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre-complete
@@ -143,6 +141,12 @@ fi
 echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/ebook-edit..."
 if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-edit" ]; then
     rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-edit" 2>/dev/null || true
+fi
+
+# Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre
+echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre..."
+if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/calibre" ]; then
+    rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/calibre" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/calibre-ebook.com

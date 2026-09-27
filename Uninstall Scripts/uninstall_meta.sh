@@ -17,6 +17,10 @@ fi
 echo "Stopping Meta if running..."
 pkill -f "Meta" 2>/dev/null || true
 
+# Kill application with bundle ID com.nightbirdsevolve.Meta if running
+echo "Stopping application with bundle ID com.nightbirdsevolve.Meta if running..."
+killall -9 "com.nightbirdsevolve.Meta" 2>/dev/null || true
+
 # Remove /Applications/Meta.app
 echo "Removing /Applications/Meta.app..."
 if [ -d "/Applications/Meta.app" ]; then

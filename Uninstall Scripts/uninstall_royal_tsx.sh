@@ -17,6 +17,10 @@ fi
 echo "Stopping Royal TSX if running..."
 pkill -f "Royal TSX" 2>/dev/null || true
 
+# Kill application with bundle ID com.lemonmojo.RoyalTSX.App if running
+echo "Stopping application with bundle ID com.lemonmojo.RoyalTSX.App if running..."
+killall -9 "com.lemonmojo.RoyalTSX.App" 2>/dev/null || true
+
 # Remove /Applications/Royal TSX.app
 echo "Removing /Applications/Royal TSX.app..."
 if [ -d "/Applications/Royal TSX.app" ]; then

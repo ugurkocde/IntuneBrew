@@ -17,6 +17,10 @@ fi
 echo "Stopping DataGrip if running..."
 pkill -f "DataGrip" 2>/dev/null || true
 
+# Kill application with bundle ID com.jetbrains.datagrip if running
+echo "Stopping application with bundle ID com.jetbrains.datagrip if running..."
+killall -9 "com.jetbrains.datagrip" 2>/dev/null || true
+
 # Remove /Applications/DataGrip.app
 echo "Removing /Applications/DataGrip.app..."
 if [ -d "/Applications/DataGrip.app" ]; then

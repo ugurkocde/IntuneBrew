@@ -17,6 +17,10 @@ fi
 echo "Stopping OBS if running..."
 pkill -f "OBS" 2>/dev/null || true
 
+# Kill application with bundle ID com.obsproject.obs-studio if running
+echo "Stopping application with bundle ID com.obsproject.obs-studio if running..."
+killall -9 "com.obsproject.obs-studio" 2>/dev/null || true
+
 # Remove /Applications/OBS.app
 echo "Removing /Applications/OBS.app..."
 if [ -d "/Applications/OBS.app" ]; then

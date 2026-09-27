@@ -17,6 +17,10 @@ fi
 echo "Stopping MacWhisper if running..."
 pkill -f "MacWhisper" 2>/dev/null || true
 
+# Kill application with bundle ID com.goodsnooze.MacWhisper if running
+echo "Stopping application with bundle ID com.goodsnooze.MacWhisper if running..."
+killall -9 "com.goodsnooze.MacWhisper" 2>/dev/null || true
+
 # Remove /Applications/MacWhisper.app
 echo "Removing /Applications/MacWhisper.app..."
 if [ -d "/Applications/MacWhisper.app" ]; then

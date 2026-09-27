@@ -17,6 +17,10 @@ fi
 echo "Stopping Opera if running..."
 pkill -f "Opera" 2>/dev/null || true
 
+# Kill application with bundle ID com.operasoftware.Opera if running
+echo "Stopping application with bundle ID com.operasoftware.Opera if running..."
+killall -9 "com.operasoftware.Opera" 2>/dev/null || true
+
 # Remove /Applications/Opera.app
 echo "Removing /Applications/Opera.app..."
 if [ -d "/Applications/Opera.app" ]; then

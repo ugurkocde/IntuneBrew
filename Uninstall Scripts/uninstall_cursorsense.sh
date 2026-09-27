@@ -17,6 +17,12 @@ fi
 echo "Stopping CursorSense if running..."
 pkill -f "CursorSense" 2>/dev/null || true
 
+# Unload service jp.plentycom.CursorSense.boa
+echo "Unloading service jp.plentycom.CursorSense.boa..."
+launchctl unload -w /Library/LaunchAgents/jp.plentycom.CursorSense.boa.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/jp.plentycom.CursorSense.boa.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/jp.plentycom.CursorSense.boa.plist 2>/dev/null || true
+
 # Remove /Applications/CursorSense.app
 echo "Removing /Applications/CursorSense.app..."
 if [ -d "/Applications/CursorSense.app" ]; then
@@ -25,12 +31,28 @@ elif [ -f "/Applications/CursorSense.app" ]; then
     rm -f "/Applications/CursorSense.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/jp.plentycom.cursorsense.boa.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/jp.plentycom.cursorsense.boa.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/jp.plentycom.cursorsense.boa.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/jp.plentycom.cursorsense.boa.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/jp.plentycom.cursorsense.boa.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/jp.plentycom.cursorsense.boa.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/SteerMouse & CursorSense
 echo "Removing $HOME/Library/Application Support/SteerMouse & CursorSense..."
 if [ -d "$HOME/Library/Application Support/SteerMouse & CursorSense" ]; then
     rm -rf "$HOME/Library/Application Support/SteerMouse & CursorSense" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/SteerMouse & CursorSense" ]; then
     rm -f "$HOME/Library/Application Support/SteerMouse & CursorSense" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/jp.plentycom.CursorSense.app
+echo "Removing $HOME/Library/Caches/jp.plentycom.CursorSense.app..."
+if [ -d "$HOME/Library/Caches/jp.plentycom.CursorSense.app" ]; then
+    rm -rf "$HOME/Library/Caches/jp.plentycom.CursorSense.app" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/jp.plentycom.CursorSense.app" ]; then
+    rm -f "$HOME/Library/Caches/jp.plentycom.CursorSense.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/jp.plentycom.CursorSense.app

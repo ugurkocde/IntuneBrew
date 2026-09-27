@@ -17,6 +17,10 @@ fi
 echo "Stopping iTerm2 if running..."
 pkill -f "iTerm2" 2>/dev/null || true
 
+# Kill application with bundle ID com.googlecode.iterm2 if running
+echo "Stopping application with bundle ID com.googlecode.iterm2 if running..."
+killall -9 "com.googlecode.iterm2" 2>/dev/null || true
+
 # Remove /Applications/iTerm.app
 echo "Removing /Applications/iTerm.app..."
 if [ -d "/Applications/iTerm.app" ]; then

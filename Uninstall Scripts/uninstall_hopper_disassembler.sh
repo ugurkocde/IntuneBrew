@@ -23,6 +23,10 @@ launchctl unload -w /Library/LaunchAgents/com.cryptic-apps.ExternalAPI.plist 2>/
 launchctl unload -w /Library/LaunchDaemons/com.cryptic-apps.ExternalAPI.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.cryptic-apps.ExternalAPI.plist 2>/dev/null || true
 
+# Kill application with bundle ID com.cryptic-apps.hopper-web-4 if running
+echo "Stopping application with bundle ID com.cryptic-apps.hopper-web-4 if running..."
+killall -9 "com.cryptic-apps.hopper-web-4" 2>/dev/null || true
+
 # Remove /Applications/Hopper Disassembler.app
 echo "Removing /Applications/Hopper Disassembler.app..."
 if [ -d "/Applications/Hopper Disassembler.app" ]; then

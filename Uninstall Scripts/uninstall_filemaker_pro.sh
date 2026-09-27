@@ -17,6 +17,10 @@ fi
 echo "Stopping FileMaker Pro if running..."
 pkill -f "FileMaker Pro" 2>/dev/null || true
 
+# Kill application with bundle ID com.filemaker.client.pro12 if running
+echo "Stopping application with bundle ID com.filemaker.client.pro12 if running..."
+killall -9 "com.filemaker.client.pro12" 2>/dev/null || true
+
 # Remove /Applications/FileMaker Pro.app
 echo "Removing /Applications/FileMaker Pro.app..."
 if [ -d "/Applications/FileMaker Pro.app" ]; then

@@ -37,6 +37,14 @@ elif [ -f "$HOME/Library/Application Support/Caches/ferdium-updater" ]; then
     rm -f "$HOME/Library/Application Support/Caches/ferdium-updater" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.ferdium.ferdium-app.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.ferdium.ferdium-app.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.ferdium.ferdium-app.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.ferdium.ferdium-app.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.ferdium.ferdium-app.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.ferdium.ferdium-app.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Ferdium
 echo "Removing $HOME/Library/Application Support/Ferdium..."
 if [ -d "$HOME/Library/Application Support/Ferdium" ]; then
@@ -101,12 +109,28 @@ elif [ -f "$HOME/Library/Preferences/com.ferdium.ferdium-app.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.ferdium.ferdium-app.plist" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/org.ferdium.ferdium-app.plist
+echo "Removing $HOME/Library/Preferences/org.ferdium.ferdium-app.plist..."
+if [ -d "$HOME/Library/Preferences/org.ferdium.ferdium-app.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/org.ferdium.ferdium-app.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.ferdium.ferdium-app.plist" ]; then
+    rm -f "$HOME/Library/Preferences/org.ferdium.ferdium-app.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/com.ferdium.ferdium-app.savedState
 echo "Removing $HOME/Library/Saved Application State/com.ferdium.ferdium-app.savedState..."
 if [ -d "$HOME/Library/Saved Application State/com.ferdium.ferdium-app.savedState" ]; then
     rm -rf "$HOME/Library/Saved Application State/com.ferdium.ferdium-app.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.ferdium.ferdium-app.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.ferdium.ferdium-app.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Saved Application State/org.ferdium.ferdium-app.savedState
+echo "Removing $HOME/Library/Saved Application State/org.ferdium.ferdium-app.savedState..."
+if [ -d "$HOME/Library/Saved Application State/org.ferdium.ferdium-app.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/org.ferdium.ferdium-app.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/org.ferdium.ferdium-app.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/org.ferdium.ferdium-app.savedState" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

@@ -35,12 +35,28 @@ elif [ -f "/Applications/coconutBattery.app" ]; then
     rm -f "/Applications/coconutBattery.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/R5SC3K86L5.com.coconut-flavour.coconutBattery
+echo "Removing $HOME/Library/Application Scripts/R5SC3K86L5.com.coconut-flavour.coconutBattery..."
+if [ -d "$HOME/Library/Application Scripts/R5SC3K86L5.com.coconut-flavour.coconutBattery" ]; then
+    rm -rf "$HOME/Library/Application Scripts/R5SC3K86L5.com.coconut-flavour.coconutBattery" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/R5SC3K86L5.com.coconut-flavour.coconutBattery" ]; then
+    rm -f "$HOME/Library/Application Scripts/R5SC3K86L5.com.coconut-flavour.coconutBattery" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/coconutBattery
 echo "Removing $HOME/Library/Application Support/coconutBattery..."
 if [ -d "$HOME/Library/Application Support/coconutBattery" ]; then
     rm -rf "$HOME/Library/Application Support/coconutBattery" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/coconutBattery" ]; then
     rm -f "$HOME/Library/Application Support/coconutBattery" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.coconut-flavour.coconutbattery.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.coconut-flavour.coconutbattery.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.coconut-flavour.coconutbattery.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.coconut-flavour.coconutbattery.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.coconut-flavour.coconutbattery.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.coconut-flavour.coconutbattery.sfl*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.coconut-flavour.coconutBattery*
@@ -81,6 +97,14 @@ if [ -d "$HOME/Library/Saved Application State/com.coconut-flavour.coconutBatter
     rm -rf "$HOME/Library/Saved Application State/com.coconut-flavour.coconutBattery.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.coconut-flavour.coconutBattery.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.coconut-flavour.coconutBattery.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.coconut-flavour.coconutBattery
+echo "Removing $HOME/Library/WebKit/com.coconut-flavour.coconutBattery..."
+if [ -d "$HOME/Library/WebKit/com.coconut-flavour.coconutBattery" ]; then
+    rm -rf "$HOME/Library/WebKit/com.coconut-flavour.coconutBattery" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.coconut-flavour.coconutBattery" ]; then
+    rm -f "$HOME/Library/WebKit/com.coconut-flavour.coconutBattery" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

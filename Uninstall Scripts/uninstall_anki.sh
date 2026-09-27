@@ -17,6 +17,10 @@ fi
 echo "Stopping Anki if running..."
 pkill -f "Anki" 2>/dev/null || true
 
+# Kill application with bundle ID net.ankiweb.anki if running
+echo "Stopping application with bundle ID net.ankiweb.anki if running..."
+killall -9 "net.ankiweb.anki" 2>/dev/null || true
+
 # Remove /Applications/Anki.app
 echo "Removing /Applications/Anki.app..."
 if [ -d "/Applications/Anki.app" ]; then

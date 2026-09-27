@@ -17,6 +17,10 @@ fi
 echo "Stopping Downie if running..."
 pkill -f "Downie" 2>/dev/null || true
 
+# Kill application with bundle ID com.charliemonroe.Downie-4 if running
+echo "Stopping application with bundle ID com.charliemonroe.Downie-4 if running..."
+killall -9 "com.charliemonroe.Downie-4" 2>/dev/null || true
+
 # Remove /Applications/Downie 4.app
 echo "Removing /Applications/Downie 4.app..."
 if [ -d "/Applications/Downie 4.app" ]; then

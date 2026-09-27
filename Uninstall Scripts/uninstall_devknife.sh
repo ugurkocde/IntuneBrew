@@ -17,6 +17,10 @@ fi
 echo "Stopping DevKnife if running..."
 pkill -f "DevKnife" 2>/dev/null || true
 
+# Kill application with bundle ID com.solotuna.devknife if running
+echo "Stopping application with bundle ID com.solotuna.devknife if running..."
+killall -9 "com.solotuna.devknife" 2>/dev/null || true
+
 # Remove /Applications/DevKnife.app
 echo "Removing /Applications/DevKnife.app..."
 if [ -d "/Applications/DevKnife.app" ]; then
@@ -31,6 +35,14 @@ if [ -d "$HOME/Library/Application Support/com.solotuna.devknife" ]; then
     rm -rf "$HOME/Library/Application Support/com.solotuna.devknife" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/com.solotuna.devknife" ]; then
     rm -f "$HOME/Library/Application Support/com.solotuna.devknife" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/DevKnife
+echo "Removing $HOME/Library/Application Support/DevKnife..."
+if [ -d "$HOME/Library/Application Support/DevKnife" ]; then
+    rm -rf "$HOME/Library/Application Support/DevKnife" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/DevKnife" ]; then
+    rm -f "$HOME/Library/Application Support/DevKnife" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.solotuna.devknife.plist

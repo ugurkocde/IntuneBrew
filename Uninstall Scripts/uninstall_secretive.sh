@@ -17,6 +17,10 @@ fi
 echo "Stopping Secretive if running..."
 pkill -f "Secretive" 2>/dev/null || true
 
+# Kill application with bundle ID com.maxgoedjen.Secretive.Host if running
+echo "Stopping application with bundle ID com.maxgoedjen.Secretive.Host if running..."
+killall -9 "com.maxgoedjen.Secretive.Host" 2>/dev/null || true
+
 # Remove /Applications/Secretive.app
 echo "Removing /Applications/Secretive.app..."
 if [ -d "/Applications/Secretive.app" ]; then

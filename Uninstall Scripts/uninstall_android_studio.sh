@@ -17,6 +17,10 @@ fi
 echo "Stopping Android Studio if running..."
 pkill -f "Android Studio" 2>/dev/null || true
 
+# Kill application with bundle ID com.google.android.studio if running
+echo "Stopping application with bundle ID com.google.android.studio if running..."
+killall -9 "com.google.android.studio" 2>/dev/null || true
+
 # Remove /Applications/Android Studio.app
 echo "Removing /Applications/Android Studio.app..."
 if [ -d "/Applications/Android Studio.app" ]; then

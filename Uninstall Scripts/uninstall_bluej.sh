@@ -17,6 +17,10 @@ fi
 echo "Stopping BlueJ if running..."
 pkill -f "BlueJ" 2>/dev/null || true
 
+# Kill application with bundle ID org.bluej.BlueJ if running
+echo "Stopping application with bundle ID org.bluej.BlueJ if running..."
+killall -9 "org.bluej.BlueJ" 2>/dev/null || true
+
 # Remove /Applications/BlueJ.app
 echo "Removing /Applications/BlueJ.app..."
 if [ -d "/Applications/BlueJ.app" ]; then

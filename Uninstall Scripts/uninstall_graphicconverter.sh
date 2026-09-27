@@ -17,6 +17,10 @@ fi
 echo "Stopping GraphicConverter if running..."
 pkill -f "GraphicConverter" 2>/dev/null || true
 
+# Kill application with bundle ID com.lemkesoft.graphicconverter* if running
+echo "Stopping application with bundle ID com.lemkesoft.graphicconverter* if running..."
+killall -9 "com.lemkesoft.graphicconverter*" 2>/dev/null || true
+
 # Remove /Applications/GraphicConverter 12.app
 echo "Removing /Applications/GraphicConverter 12.app..."
 if [ -d "/Applications/GraphicConverter 12.app" ]; then

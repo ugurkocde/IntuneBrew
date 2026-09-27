@@ -17,12 +17,12 @@ fi
 echo "Stopping Yaak if running..."
 pkill -f "Yaak" 2>/dev/null || true
 
-# Remove /Applications/yaak.app
-echo "Removing /Applications/yaak.app..."
-if [ -d "/Applications/yaak.app" ]; then
-    rm -rf "/Applications/yaak.app" 2>/dev/null || true
-elif [ -f "/Applications/yaak.app" ]; then
-    rm -f "/Applications/yaak.app" 2>/dev/null || true
+# Remove /Applications/Yaak.app
+echo "Removing /Applications/Yaak.app..."
+if [ -d "/Applications/Yaak.app" ]; then
+    rm -rf "/Applications/Yaak.app" 2>/dev/null || true
+elif [ -f "/Applications/Yaak.app" ]; then
+    rm -f "/Applications/Yaak.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/app.yaak.desktop

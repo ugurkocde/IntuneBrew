@@ -17,6 +17,10 @@ fi
 echo "Stopping Pale Moon if running..."
 pkill -f "Pale Moon" 2>/dev/null || true
 
+# Kill application with bundle ID org.mozilla.pale moon if running
+echo "Stopping application with bundle ID org.mozilla.pale moon if running..."
+killall -9 "org.mozilla.pale moon" 2>/dev/null || true
+
 # Remove /Applications/Pale Moon.app
 echo "Removing /Applications/Pale Moon.app..."
 if [ -d "/Applications/Pale Moon.app" ]; then
@@ -47,6 +51,14 @@ if [ -d "$HOME/Library/Preferences/org.mozilla.pale moon.plist" ]; then
     rm -rf "$HOME/Library/Preferences/org.mozilla.pale moon.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/org.mozilla.pale moon.plist" ]; then
     rm -f "$HOME/Library/Preferences/org.mozilla.pale moon.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Saved Application State/org.mozilla.pale moon.savedState
+echo "Removing $HOME/Library/Saved Application State/org.mozilla.pale moon.savedState..."
+if [ -d "$HOME/Library/Saved Application State/org.mozilla.pale moon.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/org.mozilla.pale moon.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/org.mozilla.pale moon.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/org.mozilla.pale moon.savedState" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/org.mozilla.white star.savedState

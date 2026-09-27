@@ -17,12 +17,16 @@ fi
 echo "Stopping Audacity if running..."
 pkill -f "Audacity" 2>/dev/null || true
 
-# Remove /Applications/Audacity.app
-echo "Removing /Applications/Audacity.app..."
-if [ -d "/Applications/Audacity.app" ]; then
-    rm -rf "/Applications/Audacity.app" 2>/dev/null || true
-elif [ -f "/Applications/Audacity.app" ]; then
-    rm -f "/Applications/Audacity.app" 2>/dev/null || true
+# Kill application with bundle ID org.audacityteam.audacity4 if running
+echo "Stopping application with bundle ID org.audacityteam.audacity4 if running..."
+killall -9 "org.audacityteam.audacity4" 2>/dev/null || true
+
+# Remove /Applications/Audacity 4.app
+echo "Removing /Applications/Audacity 4.app..."
+if [ -d "/Applications/Audacity 4.app" ]; then
+    rm -rf "/Applications/Audacity 4.app" 2>/dev/null || true
+elif [ -f "/Applications/Audacity 4.app" ]; then
+    rm -f "/Applications/Audacity 4.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/audacity
@@ -31,6 +35,22 @@ if [ -d "$HOME/Library/Application Support/audacity" ]; then
     rm -rf "$HOME/Library/Application Support/audacity" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/audacity" ]; then
     rm -f "$HOME/Library/Application Support/audacity" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/Audacity
+echo "Removing $HOME/Library/Caches/Audacity..."
+if [ -d "$HOME/Library/Caches/Audacity" ]; then
+    rm -rf "$HOME/Library/Caches/Audacity" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/Audacity" ]; then
+    rm -f "$HOME/Library/Caches/Audacity" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/org.audacityteam.Audacity4.plist
+echo "Removing $HOME/Library/Preferences/org.audacityteam.Audacity4.plist..."
+if [ -d "$HOME/Library/Preferences/org.audacityteam.Audacity4.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/org.audacityteam.Audacity4.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.audacityteam.Audacity4.plist" ]; then
+    rm -f "$HOME/Library/Preferences/org.audacityteam.Audacity4.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/org.audacityteam.audacity.plist
@@ -47,6 +67,14 @@ if [ -d "$HOME/Library/Saved Application State/org.audacityteam.audacity.savedSt
     rm -rf "$HOME/Library/Saved Application State/org.audacityteam.audacity.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/org.audacityteam.audacity.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/org.audacityteam.audacity.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Documents/Audacity4
+echo "Removing $HOME/Documents/Audacity4..."
+if [ -d "$HOME/Documents/Audacity4" ]; then
+    rm -rf "$HOME/Documents/Audacity4" 2>/dev/null || true
+elif [ -f "$HOME/Documents/Audacity4" ]; then
+    rm -f "$HOME/Documents/Audacity4" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

@@ -23,6 +23,10 @@ launchctl unload -w /Library/LaunchAgents/com.microsoft.EdgeUpdater.wake.plist 2
 launchctl unload -w /Library/LaunchDaemons/com.microsoft.EdgeUpdater.wake.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.microsoft.EdgeUpdater.wake.plist 2>/dev/null || true
 
+# Kill application with bundle ID com.microsoft.edgemac if running
+echo "Stopping application with bundle ID com.microsoft.edgemac if running..."
+killall -9 "com.microsoft.edgemac" 2>/dev/null || true
+
 # Remove /Applications/Microsoft Edge.app
 echo "Removing /Applications/Microsoft Edge.app..."
 if [ -d "/Applications/Microsoft Edge.app" ]; then

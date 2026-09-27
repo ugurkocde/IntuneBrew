@@ -17,12 +17,26 @@ fi
 echo "Stopping Mountain Duck if running..."
 pkill -f "Mountain Duck" 2>/dev/null || true
 
+# Unload service io.mountainduck.loginitem
+echo "Unloading service io.mountainduck.loginitem..."
+launchctl unload -w /Library/LaunchAgents/io.mountainduck.loginitem.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/io.mountainduck.loginitem.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/io.mountainduck.loginitem.plist 2>/dev/null || true
+
 # Remove /Applications/Mountain Duck.app
 echo "Removing /Applications/Mountain Duck.app..."
 if [ -d "/Applications/Mountain Duck.app" ]; then
     rm -rf "/Applications/Mountain Duck.app" 2>/dev/null || true
 elif [ -f "/Applications/Mountain Duck.app" ]; then
     rm -f "/Applications/Mountain Duck.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/io.mountainduck.fileprovider
+echo "Removing $HOME/Library/Application Scripts/io.mountainduck.fileprovider..."
+if [ -d "$HOME/Library/Application Scripts/io.mountainduck.fileprovider" ]; then
+    rm -rf "$HOME/Library/Application Scripts/io.mountainduck.fileprovider" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/io.mountainduck.fileprovider" ]; then
+    rm -f "$HOME/Library/Application Scripts/io.mountainduck.fileprovider" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Scripts/io.mountainduck.findersync
@@ -33,12 +47,36 @@ elif [ -f "$HOME/Library/Application Scripts/io.mountainduck.findersync" ]; then
     rm -f "$HOME/Library/Application Scripts/io.mountainduck.findersync" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/io.mountainduck.loginitem
+echo "Removing $HOME/Library/Application Scripts/io.mountainduck.loginitem..."
+if [ -d "$HOME/Library/Application Scripts/io.mountainduck.loginitem" ]; then
+    rm -rf "$HOME/Library/Application Scripts/io.mountainduck.loginitem" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/io.mountainduck.loginitem" ]; then
+    rm -f "$HOME/Library/Application Scripts/io.mountainduck.loginitem" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Mountain Duck
+echo "Removing $HOME/Library/Application Support/Mountain Duck..."
+if [ -d "$HOME/Library/Application Support/Mountain Duck" ]; then
+    rm -rf "$HOME/Library/Application Support/Mountain Duck" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Mountain Duck" ]; then
+    rm -f "$HOME/Library/Application Support/Mountain Duck" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/io.mountainduck
 echo "Removing $HOME/Library/Caches/io.mountainduck..."
 if [ -d "$HOME/Library/Caches/io.mountainduck" ]; then
     rm -rf "$HOME/Library/Caches/io.mountainduck" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/io.mountainduck" ]; then
     rm -f "$HOME/Library/Caches/io.mountainduck" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/io.mountainduck.fileprovider
+echo "Removing $HOME/Library/Containers/io.mountainduck.fileprovider..."
+if [ -d "$HOME/Library/Containers/io.mountainduck.fileprovider" ]; then
+    rm -rf "$HOME/Library/Containers/io.mountainduck.fileprovider" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/io.mountainduck.fileprovider" ]; then
+    rm -f "$HOME/Library/Containers/io.mountainduck.fileprovider" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Containers/io.mountainduck.findersync
@@ -49,12 +87,36 @@ elif [ -f "$HOME/Library/Containers/io.mountainduck.findersync" ]; then
     rm -f "$HOME/Library/Containers/io.mountainduck.findersync" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/io.mountainduck.loginitem
+echo "Removing $HOME/Library/Containers/io.mountainduck.loginitem..."
+if [ -d "$HOME/Library/Containers/io.mountainduck.loginitem" ]; then
+    rm -rf "$HOME/Library/Containers/io.mountainduck.loginitem" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/io.mountainduck.loginitem" ]; then
+    rm -f "$HOME/Library/Containers/io.mountainduck.loginitem" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Group Containers/G69SCX94XU.duck
 echo "Removing $HOME/Library/Group Containers/G69SCX94XU.duck..."
 if [ -d "$HOME/Library/Group Containers/G69SCX94XU.duck" ]; then
     rm -rf "$HOME/Library/Group Containers/G69SCX94XU.duck" 2>/dev/null || true
 elif [ -f "$HOME/Library/Group Containers/G69SCX94XU.duck" ]; then
     rm -f "$HOME/Library/Group Containers/G69SCX94XU.duck" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/io.mountainduck
+echo "Removing $HOME/Library/HTTPStorages/io.mountainduck..."
+if [ -d "$HOME/Library/HTTPStorages/io.mountainduck" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/io.mountainduck" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/io.mountainduck" ]; then
+    rm -f "$HOME/Library/HTTPStorages/io.mountainduck" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/Mountain Duck
+echo "Removing $HOME/Library/Logs/Mountain Duck..."
+if [ -d "$HOME/Library/Logs/Mountain Duck" ]; then
+    rm -rf "$HOME/Library/Logs/Mountain Duck" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Mountain Duck" ]; then
+    rm -f "$HOME/Library/Logs/Mountain Duck" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/G69SCX94XU.duck.plist

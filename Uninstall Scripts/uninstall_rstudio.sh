@@ -17,6 +17,10 @@ fi
 echo "Stopping RStudio if running..."
 pkill -f "RStudio" 2>/dev/null || true
 
+# Kill application with bundle ID com.rstudio.desktop if running
+echo "Stopping application with bundle ID com.rstudio.desktop if running..."
+killall -9 "com.rstudio.desktop" 2>/dev/null || true
+
 # Remove /Applications/RStudio.app
 echo "Removing /Applications/RStudio.app..."
 if [ -d "/Applications/RStudio.app" ]; then

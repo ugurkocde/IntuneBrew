@@ -17,6 +17,10 @@ fi
 echo "Stopping Glyphs if running..."
 pkill -f "Glyphs" 2>/dev/null || true
 
+# Kill application with bundle ID com.GeorgSeifert.Glyphs3 if running
+echo "Stopping application with bundle ID com.GeorgSeifert.Glyphs3 if running..."
+killall -9 "com.GeorgSeifert.Glyphs3" 2>/dev/null || true
+
 # Remove /Applications/Glyphs 3.app
 echo "Removing /Applications/Glyphs 3.app..."
 if [ -d "/Applications/Glyphs 3.app" ]; then

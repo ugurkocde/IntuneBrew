@@ -29,6 +29,12 @@ launchctl unload -w /Library/LaunchAgents/com.cloudflare.1dot1dot1dot1.macos.war
 launchctl unload -w /Library/LaunchDaemons/com.cloudflare.1dot1dot1dot1.macos.warp.daemon.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.cloudflare.1dot1dot1dot1.macos.warp.daemon.plist 2>/dev/null || true
 
+# Unload service com.cloudflare.warp.updater
+echo "Unloading service com.cloudflare.warp.updater..."
+launchctl unload -w /Library/LaunchAgents/com.cloudflare.warp.updater.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.cloudflare.warp.updater.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.cloudflare.warp.updater.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.cloudflare.1dot1dot1dot1.macos if running
 echo "Stopping application with bundle ID com.cloudflare.1dot1dot1dot1.macos if running..."
 killall -9 "com.cloudflare.1dot1dot1dot1.macos" 2>/dev/null || true

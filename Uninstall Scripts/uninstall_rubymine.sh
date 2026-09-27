@@ -17,6 +17,10 @@ fi
 echo "Stopping RubyMine if running..."
 pkill -f "RubyMine" 2>/dev/null || true
 
+# Kill application with bundle ID com.jetbrains.rubymine if running
+echo "Stopping application with bundle ID com.jetbrains.rubymine if running..."
+killall -9 "com.jetbrains.rubymine" 2>/dev/null || true
+
 # Remove /Applications/RubyMine.app
 echo "Removing /Applications/RubyMine.app..."
 if [ -d "/Applications/RubyMine.app" ]; then
@@ -47,6 +51,14 @@ if [ -d "$HOME/Library/Logs/RubyMine2026.2" ]; then
     rm -rf "$HOME/Library/Logs/RubyMine2026.2" 2>/dev/null || true
 elif [ -f "$HOME/Library/Logs/RubyMine2026.2" ]; then
     rm -f "$HOME/Library/Logs/RubyMine2026.2" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.jetbrains.rubymine.plist
+echo "Removing $HOME/Library/Preferences/com.jetbrains.rubymine.plist..."
+if [ -d "$HOME/Library/Preferences/com.jetbrains.rubymine.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.jetbrains.rubymine.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.jetbrains.rubymine.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.jetbrains.rubymine.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/RubyMine2026.2

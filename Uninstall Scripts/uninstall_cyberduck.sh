@@ -17,6 +17,10 @@ fi
 echo "Stopping Cyberduck if running..."
 pkill -f "Cyberduck" 2>/dev/null || true
 
+# Kill application with bundle ID ch.sudo.cyberduck if running
+echo "Stopping application with bundle ID ch.sudo.cyberduck if running..."
+killall -9 "ch.sudo.cyberduck" 2>/dev/null || true
+
 # Remove /Applications/Cyberduck.app
 echo "Removing /Applications/Cyberduck.app..."
 if [ -d "/Applications/Cyberduck.app" ]; then

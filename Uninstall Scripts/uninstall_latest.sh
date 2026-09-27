@@ -49,6 +49,14 @@ elif [ -f "$HOME/Library/HTTPStorages/com.max-langer.Latest" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.max-langer.Latest" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.max-langer.Latest.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/com.max-langer.Latest.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/com.max-langer.Latest.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.max-langer.Latest.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.max-langer.Latest.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.max-langer.Latest.binarycookies" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.max-langer.Latest.plist
 echo "Removing $HOME/Library/Preferences/com.max-langer.Latest.plist..."
 if [ -d "$HOME/Library/Preferences/com.max-langer.Latest.plist" ]; then
@@ -63,6 +71,14 @@ if [ -d "$HOME/Library/Saved Application State/com.max-langer.Latest.savedState"
     rm -rf "$HOME/Library/Saved Application State/com.max-langer.Latest.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.max-langer.Latest.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.max-langer.Latest.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.max-langer.Latest
+echo "Removing $HOME/Library/WebKit/com.max-langer.Latest..."
+if [ -d "$HOME/Library/WebKit/com.max-langer.Latest" ]; then
+    rm -rf "$HOME/Library/WebKit/com.max-langer.Latest" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.max-langer.Latest" ]; then
+    rm -f "$HOME/Library/WebKit/com.max-langer.Latest" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

@@ -25,44 +25,44 @@ elif [ -f "/Applications/ClipBook.app" ]; then
     rm -f "/Applications/ClipBook.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/ClipBook
-echo "Removing $HOME/Library/Application Support/ClipBook..."
-if [ -d "$HOME/Library/Application Support/ClipBook" ]; then
-    rm -rf "$HOME/Library/Application Support/ClipBook" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/ClipBook" ]; then
-    rm -f "$HOME/Library/Application Support/ClipBook" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/ClipBook*
+echo "Removing $HOME/Library/Application Support/ClipBook*..."
+if [ -d "$HOME/Library/Application Support/ClipBook*" ]; then
+    rm -rf "$HOME/Library/Application Support/ClipBook*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/ClipBook*" ]; then
+    rm -f "$HOME/Library/Application Support/ClipBook*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/ClipBook
-echo "Removing $HOME/Library/Caches/ClipBook..."
-if [ -d "$HOME/Library/Caches/ClipBook" ]; then
-    rm -rf "$HOME/Library/Caches/ClipBook" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/ClipBook" ]; then
-    rm -f "$HOME/Library/Caches/ClipBook" 2>/dev/null || true
+# Remove $HOME/Library/Caches/ClipBook*
+echo "Removing $HOME/Library/Caches/ClipBook*..."
+if [ -d "$HOME/Library/Caches/ClipBook*" ]; then
+    rm -rf "$HOME/Library/Caches/ClipBook*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/ClipBook*" ]; then
+    rm -f "$HOME/Library/Caches/ClipBook*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/HTTPStorages/com.ikryanov.clipbook
-echo "Removing $HOME/Library/HTTPStorages/com.ikryanov.clipbook..."
-if [ -d "$HOME/Library/HTTPStorages/com.ikryanov.clipbook" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/com.ikryanov.clipbook" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/com.ikryanov.clipbook" ]; then
-    rm -f "$HOME/Library/HTTPStorages/com.ikryanov.clipbook" 2>/dev/null || true
+# Remove $HOME/Library/HTTPStorages/com.ikryanov.clipbook*
+echo "Removing $HOME/Library/HTTPStorages/com.ikryanov.clipbook*..."
+if [ -d "$HOME/Library/HTTPStorages/com.ikryanov.clipbook*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.ikryanov.clipbook*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.ikryanov.clipbook*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.ikryanov.clipbook*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.ikryanov.clipbook.plist
-echo "Removing $HOME/Library/Preferences/com.ikryanov.clipbook.plist..."
-if [ -d "$HOME/Library/Preferences/com.ikryanov.clipbook.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.ikryanov.clipbook.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.ikryanov.clipbook.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.ikryanov.clipbook.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.ikryanov.clipbook*.plist
+echo "Removing $HOME/Library/Preferences/com.ikryanov.clipbook*.plist..."
+if [ -d "$HOME/Library/Preferences/com.ikryanov.clipbook*.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.ikryanov.clipbook*.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.ikryanov.clipbook*.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.ikryanov.clipbook*.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Saved Application State/com.ikryanov.clipbook.savedState
-echo "Removing $HOME/Library/Saved Application State/com.ikryanov.clipbook.savedState..."
-if [ -d "$HOME/Library/Saved Application State/com.ikryanov.clipbook.savedState" ]; then
-    rm -rf "$HOME/Library/Saved Application State/com.ikryanov.clipbook.savedState" 2>/dev/null || true
-elif [ -f "$HOME/Library/Saved Application State/com.ikryanov.clipbook.savedState" ]; then
-    rm -f "$HOME/Library/Saved Application State/com.ikryanov.clipbook.savedState" 2>/dev/null || true
+# Remove $HOME/Library/Saved Application State/com.ikryanov.clipbook*.savedState
+echo "Removing $HOME/Library/Saved Application State/com.ikryanov.clipbook*.savedState..."
+if [ -d "$HOME/Library/Saved Application State/com.ikryanov.clipbook*.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/com.ikryanov.clipbook*.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/com.ikryanov.clipbook*.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/com.ikryanov.clipbook*.savedState" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

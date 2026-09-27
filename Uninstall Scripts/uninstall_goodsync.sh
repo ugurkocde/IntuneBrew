@@ -17,6 +17,10 @@ fi
 echo "Stopping GoodSync if running..."
 pkill -f "GoodSync" 2>/dev/null || true
 
+# Kill application with bundle ID com.sibersystems.goodsyncmac2000 if running
+echo "Stopping application with bundle ID com.sibersystems.goodsyncmac2000 if running..."
+killall -9 "com.sibersystems.goodsyncmac2000" 2>/dev/null || true
+
 # Remove /Applications/GoodSync.app
 echo "Removing /Applications/GoodSync.app..."
 if [ -d "/Applications/GoodSync.app" ]; then

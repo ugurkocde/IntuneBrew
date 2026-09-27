@@ -17,6 +17,10 @@ fi
 echo "Stopping MacPilot if running..."
 pkill -f "MacPilot" 2>/dev/null || true
 
+# Kill application with bundle ID com.koingosw.MacPilot if running
+echo "Stopping application with bundle ID com.koingosw.MacPilot if running..."
+killall -9 "com.koingosw.MacPilot" 2>/dev/null || true
+
 # Remove /Applications/MacPilot.app
 echo "Removing /Applications/MacPilot.app..."
 if [ -d "/Applications/MacPilot.app" ]; then

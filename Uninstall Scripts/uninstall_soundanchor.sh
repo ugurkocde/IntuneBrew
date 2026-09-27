@@ -17,12 +17,24 @@ fi
 echo "Stopping SoundAnchor if running..."
 pkill -f "SoundAnchor" 2>/dev/null || true
 
-# Remove /Applications/SoundAnchor.app
-echo "Removing /Applications/SoundAnchor.app..."
-if [ -d "/Applications/SoundAnchor.app" ]; then
-    rm -rf "/Applications/SoundAnchor.app" 2>/dev/null || true
-elif [ -f "/Applications/SoundAnchor.app" ]; then
-    rm -f "/Applications/SoundAnchor.app" 2>/dev/null || true
+# Kill application with bundle ID me.kopiro.soundanchor if running
+echo "Stopping application with bundle ID me.kopiro.soundanchor if running..."
+killall -9 "me.kopiro.soundanchor" 2>/dev/null || true
+
+# Remove /Applications/soundanchor.app
+echo "Removing /Applications/soundanchor.app..."
+if [ -d "/Applications/soundanchor.app" ]; then
+    rm -rf "/Applications/soundanchor.app" 2>/dev/null || true
+elif [ -f "/Applications/soundanchor.app" ]; then
+    rm -f "/Applications/soundanchor.app" 2>/dev/null || true
+fi
+
+# Remove /Applications/{'target': 'SoundAnchor.app'}
+echo "Removing /Applications/{'target': 'SoundAnchor.app'}..."
+if [ -d "/Applications/{'target': 'SoundAnchor.app'}" ]; then
+    rm -rf "/Applications/{'target': 'SoundAnchor.app'}" 2>/dev/null || true
+elif [ -f "/Applications/{'target': 'SoundAnchor.app'}" ]; then
+    rm -f "/Applications/{'target': 'SoundAnchor.app'}" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

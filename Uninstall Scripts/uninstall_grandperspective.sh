@@ -17,6 +17,10 @@ fi
 echo "Stopping GrandPerspective if running..."
 pkill -f "GrandPerspective" 2>/dev/null || true
 
+# Kill application with bundle ID net.sourceforge.grandperspectiv if running
+echo "Stopping application with bundle ID net.sourceforge.grandperspectiv if running..."
+killall -9 "net.sourceforge.grandperspectiv" 2>/dev/null || true
+
 # Remove /Applications/GrandPerspective.app
 echo "Removing /Applications/GrandPerspective.app..."
 if [ -d "/Applications/GrandPerspective.app" ]; then

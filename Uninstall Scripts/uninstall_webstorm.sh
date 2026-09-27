@@ -17,6 +17,10 @@ fi
 echo "Stopping WebStorm if running..."
 pkill -f "WebStorm" 2>/dev/null || true
 
+# Kill application with bundle ID com.jetbrains.WebStorm if running
+echo "Stopping application with bundle ID com.jetbrains.WebStorm if running..."
+killall -9 "com.jetbrains.WebStorm" 2>/dev/null || true
+
 # Remove /Applications/WebStorm.app
 echo "Removing /Applications/WebStorm.app..."
 if [ -d "/Applications/WebStorm.app" ]; then

@@ -17,6 +17,10 @@ fi
 echo "Stopping Timing if running..."
 pkill -f "Timing" 2>/dev/null || true
 
+# Kill application with bundle ID info.eurocomp.TimingHelper if running
+echo "Stopping application with bundle ID info.eurocomp.TimingHelper if running..."
+killall -9 "info.eurocomp.TimingHelper" 2>/dev/null || true
+
 # Remove /Applications/Timing.app
 echo "Removing /Applications/Timing.app..."
 if [ -d "/Applications/Timing.app" ]; then

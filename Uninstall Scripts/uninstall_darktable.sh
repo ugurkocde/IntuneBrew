@@ -17,6 +17,10 @@ fi
 echo "Stopping darktable if running..."
 pkill -f "darktable" 2>/dev/null || true
 
+# Kill application with bundle ID org.darktable if running
+echo "Stopping application with bundle ID org.darktable if running..."
+killall -9 "org.darktable" 2>/dev/null || true
+
 # Remove /Applications/darktable.app
 echo "Removing /Applications/darktable.app..."
 if [ -d "/Applications/darktable.app" ]; then

@@ -29,12 +29,68 @@ elif [ -f "/Applications/BetterTouchTool.app" ]; then
     rm -f "/Applications/BetterTouchTool.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets
+echo "Removing $HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets..."
+if [ -d "$HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BTTFinderContextMenu
+echo "Removing $HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BTTFinderContextMenu..."
+if [ -d "$HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BTTFinderContextMenu" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BTTFinderContextMenu" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BTTFinderContextMenu" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.hegenberg.BetterTouchTool.BTTFinderContextMenu" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/BetterTouchTool
 echo "Removing $HOME/Library/Application Support/BetterTouchTool..."
 if [ -d "$HOME/Library/Application Support/BetterTouchTool" ]; then
     rm -rf "$HOME/Library/Application Support/BetterTouchTool" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/BetterTouchTool" ]; then
     rm -f "$HOME/Library/Application Support/BetterTouchTool" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hegenberg.bettertouchtool.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hegenberg.bettertouchtool.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hegenberg.bettertouchtool.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hegenberg.bettertouchtool.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hegenberg.bettertouchtool.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hegenberg.bettertouchtool.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.hegenberg.BetterTouchTool
+echo "Removing $HOME/Library/Caches/com.hegenberg.BetterTouchTool..."
+if [ -d "$HOME/Library/Caches/com.hegenberg.BetterTouchTool" ]; then
+    rm -rf "$HOME/Library/Caches/com.hegenberg.BetterTouchTool" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.hegenberg.BetterTouchTool" ]; then
+    rm -f "$HOME/Library/Caches/com.hegenberg.BetterTouchTool" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets
+echo "Removing $HOME/Library/Containers/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets..."
+if [ -d "$HOME/Library/Containers/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets" ]; then
+    rm -rf "$HOME/Library/Containers/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets" ]; then
+    rm -f "$HOME/Library/Containers/com.hegenberg.BetterTouchTool.BetterTouchTool-Widgets" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.hegenberg.BetterTouchTool.BTTFinderContextMenu
+echo "Removing $HOME/Library/Containers/com.hegenberg.BetterTouchTool.BTTFinderContextMenu..."
+if [ -d "$HOME/Library/Containers/com.hegenberg.BetterTouchTool.BTTFinderContextMenu" ]; then
+    rm -rf "$HOME/Library/Containers/com.hegenberg.BetterTouchTool.BTTFinderContextMenu" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.hegenberg.BetterTouchTool.BTTFinderContextMenu" ]; then
+    rm -f "$HOME/Library/Containers/com.hegenberg.BetterTouchTool.BTTFinderContextMenu" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.hegenberg.BetterTouchTool
+echo "Removing $HOME/Library/HTTPStorages/com.hegenberg.BetterTouchTool..."
+if [ -d "$HOME/Library/HTTPStorages/com.hegenberg.BetterTouchTool" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.hegenberg.BetterTouchTool" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.hegenberg.BetterTouchTool" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.hegenberg.BetterTouchTool" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.hegenberg.BetterTouchTool.plist

@@ -17,12 +17,16 @@ fi
 echo "Stopping Amadeus Pro if running..."
 pkill -f "Amadeus Pro" 2>/dev/null || true
 
-# Remove /Applications/Amadeus Pro.app
-echo "Removing /Applications/Amadeus Pro.app..."
-if [ -d "/Applications/Amadeus Pro.app" ]; then
-    rm -rf "/Applications/Amadeus Pro.app" 2>/dev/null || true
-elif [ -f "/Applications/Amadeus Pro.app" ]; then
-    rm -f "/Applications/Amadeus Pro.app" 2>/dev/null || true
+# Kill application with bundle ID com.HairerSoft.AmadeusPro3 if running
+echo "Stopping application with bundle ID com.HairerSoft.AmadeusPro3 if running..."
+killall -9 "com.HairerSoft.AmadeusPro3" 2>/dev/null || true
+
+# Remove /Applications/Amadeus Pro 3.app
+echo "Removing /Applications/Amadeus Pro 3.app..."
+if [ -d "/Applications/Amadeus Pro 3.app" ]; then
+    rm -rf "/Applications/Amadeus Pro 3.app" 2>/dev/null || true
+elif [ -f "/Applications/Amadeus Pro 3.app" ]; then
+    rm -f "/Applications/Amadeus Pro 3.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Amadeus Pro

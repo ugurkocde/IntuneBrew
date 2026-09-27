@@ -25,6 +25,12 @@ elif [ -f "/Applications/RawTherapee.app" ]; then
     rm -f "/Applications/RawTherapee.app" 2>/dev/null || true
 fi
 
+# Remove binary /Applications/RawTherapee.app/RawTherapee.app/Contents/MacOS/rawtherapee-cli
+echo "Removing binary /Applications/RawTherapee.app/RawTherapee.app/Contents/MacOS/rawtherapee-cli..."
+if [ -f "/Applications/RawTherapee.app/RawTherapee.app/Contents/MacOS/rawtherapee-cli" ]; then
+    rm -f "/Applications/RawTherapee.app/RawTherapee.app/Contents/MacOS/rawtherapee-cli" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/RawTherapee
 echo "Removing $HOME/Library/Application Support/RawTherapee..."
 if [ -d "$HOME/Library/Application Support/RawTherapee" ]; then
