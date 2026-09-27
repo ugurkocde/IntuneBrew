@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1155-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -582,9 +582,10 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-09-27T16:06:40.719806Z*
+*Last checked: 2026-09-27T16:37:30.540210Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
@@ -593,8 +594,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | rectangle | 2.0.1 | 2.0.2 |
 | vorssaint | 3.3.5 | 3.4.0 |
 | wealthfolio | 3.9.0 | 3.9.1 |
-
-2 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
