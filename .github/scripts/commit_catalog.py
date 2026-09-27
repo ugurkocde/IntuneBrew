@@ -5,6 +5,7 @@ import pathlib
 import subprocess
 import tempfile
 import time
+import sys
 
 MISSING = object()
 PATHS = ['Apps/*.json', 'supported_apps.json', 'README.md', 'catalog-sync.json', 'latest-updates.json']
@@ -39,9 +40,18 @@ def merge_content(path, base, generated, current):
         return current
     if current == base or generated == current:
         return generated
+    if path == '.github/pending-requests.json':
+        def requests_by_issue(value):
+            return {str(entry['issue']): entry for entry in json.loads(value or b'[]')}
+        result = merge_json(requests_by_issue(base), requests_by_issue(generated), requests_by_issue(current), path)
+        return (json.dumps(list(result.values()), indent=2) + '\n').encode()
     if path.endswith('.json'):
         decode = lambda value: json.loads(value) if value is not None else MISSING
         result = merge_json(decode(base), decode(generated), decode(current), path)
+        if path.startswith('Apps/') and isinstance(result, dict):
+            built = decode(generated)
+            if isinstance(built, dict) and built.get('type') == 'cli' and result.get('bundleId') != built.get('bundleId'):
+                raise ValueError(f'Concurrent CLI package identifier change in {path}. Rebuild the package.')
         return None if result is MISSING else (json.dumps(result, indent=2, ensure_ascii=False) + '\n').encode()
     if None in (base, generated, current):
         raise ValueError(f'Concurrent addition/removal of {path}. Run a fresh build.')
@@ -55,10 +65,11 @@ def merge_content(path, base, generated, current):
         return result.stdout
 
 
-def main():
+def main(pending=False):
+    selected_paths = ['.github/pending-requests.json'] if pending else PATHS
     base_ref = git('rev-parse', 'HEAD').stdout.decode().strip()
-    changed = git('diff', '--name-only', '-z', 'HEAD', '--', *PATHS).stdout
-    untracked = git('ls-files', '--others', '--exclude-standard', '-z', '--', *PATHS).stdout
+    changed = git('diff', '--name-only', '-z', 'HEAD', '--', *selected_paths).stdout
+    untracked = git('ls-files', '--others', '--exclude-standard', '-z', '--', *selected_paths).stdout
     paths = sorted(set(p.decode() for p in (changed + untracked).split(b'\0') if p))
     if not paths:
         print('No catalog changes to publish.')
@@ -83,7 +94,7 @@ def main():
                 if git('diff', '--staged', '--quiet', cwd=worktree, check=False).returncode == 0:
                     print('Catalog changes are already published.')
                     return
-                git('commit', '-m', 'Update app information and supported apps list', cwd=worktree)
+                git('commit', '-m', 'Clear resolved app requests [skip ci]' if pending else 'Update app information and supported apps list', cwd=worktree)
                 result = git('push', 'origin', 'HEAD:refs/heads/main', cwd=worktree, check=False)
                 if result.returncode == 0:
                     print('Catalog snapshot published with concurrent metadata preserved.')
@@ -98,4 +109,4 @@ def main():
 
 
 if __name__ == '__main__':
-    main()
+    main(pending='--pending' in sys.argv)
