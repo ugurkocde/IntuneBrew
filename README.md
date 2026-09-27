@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1156-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1155-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -791,7 +791,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/bruno.png' width='32' height='32'> Bruno | 4.2.0 |
 | <img src='Logos/bunch.png' width='32' height='32'> Bunch | 1.4.19 |
 | <img src='Logos/busycal.png' width='32' height='32'> BusyCal | 2026.3.3 |
-| <img src='Logos/busycontacts.png' width='32' height='32'> BusyContacts | 2026.3.3 |
 | <img src='Logos/butler.png' width='32' height='32'> Butler | 4.4.9 |
 | <img src='Logos/buttercup.png' width='32' height='32'> Buttercup | 2.28.1 |
 | <img src='Logos/buzz.png' width='32' height='32'> Buzz | 1.4.5 |

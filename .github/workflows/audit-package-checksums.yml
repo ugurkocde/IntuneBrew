@@ -1,0 +1,34 @@
+name: Audit Published Package Checksums
+
+on:
+  workflow_dispatch:
+  pull_request:
+    paths:
+      - 'Apps/*.json'
+      - '.github/scripts/reuse_cached_package.py'
+      - '.github/scripts/audit_package_checksums.py'
+      - '.github/workflows/audit-package-checksums.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  audit:
+    name: Published PKG integrity
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v6
+        with:
+          python-version: '3.x'
+      - run: python -m pip install requests==2.34.2
+      - name: Verify every published package against its manifest
+        run: python .github/scripts/audit_package_checksums.py
+      - name: Save verification results
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: package-checksum-audit
+          path: package-checksum-audit.json
+          if-no-files-found: warn

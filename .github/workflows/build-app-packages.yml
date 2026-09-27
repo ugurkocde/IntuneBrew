@@ -406,54 +406,12 @@ jobs:
             if [ "$reuse_existing_blob" = true ]; then
               echo "Package ${app_name}_${version}.pkg already exists in Azure storage."
               
-              # Check if SHA already exists in JSON
-              existing_sha=$(jq -r '.sha // empty' "$WORKSPACE_DIR/Apps/${app_name}.json")
-              
-              if [ -n "$existing_sha" ]; then
-                echo "✅ SHA already exists in JSON file: $existing_sha"
-                # Update only URL and version without downloading
-                azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-                current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                if jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg filename "${app_name}_${version}.pkg" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .version = $version | .previous_version = $prev_version | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"; then
-                  echo "✅ JSON file updated (SHA preserved)"
-                else
-                  echo "Failed to update JSON file for $app_name, it keeps its previous contents"
-                fi
-              else
-                echo "⚠️ SHA missing in JSON file, downloading to calculate..."
-                # Download the file to calculate SHA256
-                temp_pkg="${app_name}_${version}_temp.pkg"
-                # A failed download must not abort the step: the -f test below is
-                # what decides, and it owns the "could not download" arm.
-                az storage blob download --container-name pkg --name "${app_name}_${version}.pkg" --file "$temp_pkg" --no-progress || true
-                
-                if [ -f "$temp_pkg" ]; then
-                  # Calculate SHA256 hash
-                  echo "🔐 Calculating SHA256 hash..."
-                  file_hash=$(shasum -a 256 "$temp_pkg" | awk '{print $1}')
-                  echo "📝 SHA256: $file_hash"
-                  rm -f "$temp_pkg"
-                  
-                  # Update JSON with SHA
-                  azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-                  current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                  if jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg sha "$file_hash" --arg filename "${app_name}_${version}.pkg" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .version = $version | .previous_version = $prev_version | .sha = $sha | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"; then
-                    echo "✅ JSON file updated with SHA256"
-                  else
-                    echo "Failed to update JSON file for $app_name, it keeps its previous contents"
-                  fi
-                else
-                  echo "❌ Could not download file to calculate SHA256"
-                  azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
-                  current_version=$(jq -r '.version' "$WORKSPACE_DIR/Apps/${app_name}.json")
-                  if jq --arg url "$azure_url" --arg version "$version" --arg prev_version "$current_version" --arg filename "${app_name}_${version}.pkg" '(if has("vendor_url") then .vendor_url else .url end) as $vurl | .url = $url | .vendor_url = $vurl | .version = $version | .previous_version = $prev_version | .fileName = $filename' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json && mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"; then
-                    echo "⚠️ JSON file updated without SHA256"
-                  else
-                    echo "Failed to update JSON file for $app_name, it keeps its previous contents"
-                  fi
-                fi
+              azure_url="https://intunebrew.blob.core.windows.net/pkg/${app_name}_${version}.pkg"
+              if ! python "$WORKSPACE_DIR/.github/scripts/reuse_cached_package.py" "$WORKSPACE_DIR/Apps/${app_name}.json" "$azure_url"; then
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: Cached package checksum could not be verified")
               fi
-              
+
               continue
             fi
             
@@ -487,7 +445,7 @@ jobs:
                 unzip -q "${download_path}.zip" -d "$zip_extract_dir" || true
 
                 # Find the PKG file inside the ZIP
-                found_pkg=$(find "$zip_extract_dir" -name "*.pkg" -type f -print -quit)
+                found_pkg=$(find "$zip_extract_dir" -name "*.pkg" ! -name "._*" ! -path "*/__MACOSX/*" -type f -print -quit)
                 if [ -z "$found_pkg" ]; then
                   echo "No PKG file found inside ZIP"
                   rm -rf "$zip_extract_dir" "${download_path}.zip"
@@ -530,7 +488,7 @@ jobs:
                   
                   # Find inner PKG (file or directory)
                   echo "🔍 Searching for inner PKG..."
-                  inner_pkg=$(find "$temp_dir" -name "*.pkg" -type f -print -quit)
+                  inner_pkg=$(find "$temp_dir" -name "*.pkg" ! -name "._*" ! -path "*/__MACOSX/*" -type f -print -quit)
                   
                   if [ -n "$inner_pkg" ]; then
                     # Found a .pkg file
@@ -544,7 +502,7 @@ jobs:
                     cp "$inner_pkg" "${app_name}_${version}.pkg" || true
                   else
                     # Check if there's a .pkg directory (flat package)
-                    inner_pkg_dir=$(find "$temp_dir" -name "*.pkg" -type d -print -quit)
+                    inner_pkg_dir=$(find "$temp_dir" -name "*.pkg" ! -name "._*" ! -path "*/__MACOSX/*" -type d -print -quit)
                     if [ -n "$inner_pkg_dir" ]; then
                       echo "✅ Found flat package directory: $inner_pkg_dir"
                       echo "📦 Flattening package to ${app_name}_${version}.pkg"
@@ -573,6 +531,14 @@ jobs:
 
                   # Calculate SHA256 hash
                   echo "🔐 Calculating SHA256 hash..."
+                  if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Generated artifact is not a valid PKG archive")
+                    rm -f "${app_name}_${version}.pkg"
+                    rm -f "${download_path}.pkg"
+                    rm -rf "$temp_dir"
+                    continue
+                  fi
                   file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
                   echo "📝 SHA256: $file_hash"
 
@@ -675,7 +641,7 @@ jobs:
               
               # Find PKG file
               echo "🔍 Searching for PKG file..."
-              pkg_file=$(find "${download_path}_mount" -name "*.pkg" -print -quit)
+              pkg_file=$(find "${download_path}_mount" -name "*.pkg" ! -name "._*" ! -path "*/__MACOSX/*" -print -quit)
 
               # The DMG must be unmounted whether this succeeds or not, so
               # failures set a flag here and are recorded after the cleanup.
@@ -695,6 +661,9 @@ jobs:
                 
                 # Calculate SHA256 hash
                 echo "🔐 Calculating SHA256 hash..."
+                if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
+                  pkg_in_dmg_error="Generated artifact is not a valid PKG archive"
+                else
                 file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
                 echo "📝 SHA256: $file_hash"
 
@@ -722,6 +691,7 @@ jobs:
                 else
                   echo "❌ Failed to upload to Azure"
                   pkg_in_dmg_error="Azure upload failed for ${app_name}_${version}.pkg"
+                fi
                 fi
               else
                 echo "❌ No PKG file found in DMG for $app_name"
@@ -1008,7 +978,7 @@ jobs:
               
               if [ -z "$app_file" ]; then
                 echo "❌ No .app file found, searching for .pkg file..."
-                pkg_file=$(find "${app_name}_extracted" -type f -name "*.pkg" ! -path "*/__MACOSX/*" -print -quit)
+                pkg_file=$(find "${app_name}_extracted" -type f -name "*.pkg" ! -name "._*" ! -path "*/__MACOSX/*" -print -quit)
                 
                 if [ -n "$pkg_file" ]; then
                   echo "✅ Found .pkg file: $pkg_file"
@@ -1025,6 +995,14 @@ jobs:
                   
                   # Calculate SHA256 hash
                   echo "🔐 Calculating SHA256 hash..."
+                  if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Generated artifact is not a valid PKG archive")
+                    rm -f "${app_name}_${version}.pkg"
+                    sudo rm -rf "${app_name}_extracted"
+                    cd "$WORKSPACE_DIR"
+                    continue
+                  fi
                   file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
                   echo "📝 SHA256: $file_hash"
 
@@ -1096,6 +1074,14 @@ jobs:
               
               # Calculate SHA256 hash
               echo "🔐 Calculating SHA256 hash..."
+              if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: Generated artifact is not a valid PKG archive")
+                rm -f "${app_name}_${version}.pkg"
+                sudo rm -rf "${app_name}_extracted"
+                cd "$WORKSPACE_DIR"
+                continue
+              fi
               file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
               echo "📝 SHA256: $file_hash"
 
