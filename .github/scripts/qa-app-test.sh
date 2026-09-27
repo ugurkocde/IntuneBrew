@@ -54,6 +54,11 @@ test_app() {
 
     # Read app details from JSON
     APP_JSON=$(cat "$APP_JSON_PATH")
+    if [ "$(echo "$APP_JSON" | jq -r '.deprecated // false')" = "true" ]; then
+        echo "Skipping excluded app: $APP_JSON_PATH"
+        SKIPPED_INSTALLS+=("$APP_JSON_PATH - Excluded")
+        return 0
+    fi
     APP_NAME=$(echo "$APP_JSON" | jq -r '.name')
     APP_URL=$(echo "$APP_JSON" | jq -r '.url')
     APP_VERSION=$(echo "$APP_JSON" | jq -r '.version')
@@ -233,23 +238,13 @@ test_app() {
         # -noautoopen: Don't automatically open the mounted volume
         # -quiet: Suppress unnecessary output
         # -nobrowse: Don't show in Finder
-        hdiutil attach -mountpoint "$MOUNT_POINT" app_package.dmg -noverify -noautoopen -quiet -nobrowse
+        hdiutil attach -mountpoint "$MOUNT_POINT" app_package.dmg -readonly -noautoopen -quiet -nobrowse < /dev/null
 
         if [ $? -ne 0 ]; then
             echo "❌ Failed to mount DMG file"
 
-            # Try an alternative approach with yes command to auto-accept license agreements
-            echo "Trying alternative mounting approach..."
-            yes | hdiutil attach -mountpoint "$MOUNT_POINT" app_package.dmg -nobrowse
-
-            if [ $? -ne 0 ]; then
-                echo "❌ Both mounting approaches failed"
-                QA_INFO=$(echo "$QA_INFO" | jq '.install_status = "failed" | .qa_result = "Failed to mount DMG"')
-                FAILED_INSTALLS+=("$APP_NAME - Failed to mount DMG")
-            else
-                echo "✅ Alternative mounting approach succeeded"
-                DMG_MOUNTED=true
-            fi
+            QA_INFO=$(echo "$QA_INFO" | jq '.install_status = "failed" | .qa_result = "Failed to mount DMG; license acceptance is not automated"')
+            FAILED_INSTALLS+=("$APP_NAME - Failed to mount DMG")
         else
             DMG_MOUNTED=true
         fi

@@ -11,5 +11,7 @@
   "sha": "7682056e8bac1b8b10cfab78001aeabc588b0027918d5c409503e7a947d5e1fe",
   "category": "Productivity",
   "publisher": "jamovi Foundation",
-  "previous_version": "28.3.0.0"
+  "previous_version": "28.3.0.0",
+  "deprecated": true,
+  "deprecation_reason": "Excluded: Vendor installer redirects to an HTML error page."
 }

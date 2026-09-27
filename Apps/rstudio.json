@@ -1,7 +1,7 @@
 {
   "name": "RStudio",
   "description": "Data science software focusing on R and Python",
-  "version": "2026.09.0",
+  "version": "2026.09.0+174",
   "url": "https://download1.rstudio.org/electron/macos/RStudio-2026.09.0-174.dmg",
   "vendor_url": "https://download1.rstudio.org/electron/macos/RStudio-2026.09.0-174.dmg",
   "bundleId": "com.rstudio.desktop",

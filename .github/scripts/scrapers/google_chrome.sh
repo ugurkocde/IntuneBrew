@@ -23,23 +23,8 @@ if [ "$HTTP_STATUS" != "200" ]; then
     exit 1
 fi
 
-# Preserve the existing SHA only when both the version and the URL are unchanged.
-# The PKG lives at an evergreen URL, so the hash is tied to the version scraped
-# at publish time.
-EXISTING_SHA=""
-if [ -f "Apps/google_chrome.json" ]; then
-    EXISTING_VERSION=$(python3 -c "import json; print(json.load(open('Apps/google_chrome.json')).get('version',''))")
-    EXISTING_URL=$(python3 -c "import json; print(json.load(open('Apps/google_chrome.json')).get('url',''))")
-    if [ "$EXISTING_VERSION" = "$VERSION" ] && [ "$EXISTING_URL" = "$DOWNLOAD_URL" ]; then
-        EXISTING_SHA=$(python3 -c "import json; print(json.load(open('Apps/google_chrome.json')).get('sha',''))")
-    fi
-fi
-
-SHA_LINE=""
-if [ -n "$EXISTING_SHA" ]; then
-    SHA_LINE="
-  \"sha\": \"$EXISTING_SHA\","
-fi
+# The enterprise URL is mutable independently of the Homebrew release record.
+# Leave SHA absent so the collector verifies its bytes on every scan (#274).
 
 cat > "Apps/google_chrome.json" << EOF
 {
@@ -51,7 +36,7 @@ cat > "Apps/google_chrome.json" << EOF
   "bundleId": "com.google.Chrome",
   "homepage": "https://www.google.com/chrome/",
   "fileName": "GoogleChrome-$VERSION.pkg",
-  "type": "pkg",$SHA_LINE
+  "type": "pkg",
   "changelog": "https://chromereleases.googleblog.com/",
   "category": "Browsers",
   "publisher": "Google LLC"

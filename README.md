@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1157-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1155-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -711,7 +711,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/audio_hijack.png' width='32' height='32'> Audio Hijack | 4.6.0 |
 | <img src='Logos/audirvana.png' width='32' height='32'> Audirvana | 3.5.50 |
 | <img src='Logos/aurora_hdr.png' width='32' height='32'> Aurora HDR | 1.0.2 |
-| <img src='Logos/avast_secure_browser.png' width='32' height='32'> Avast Secure Browser | 139.0.6697.68 |
 | <img src='Logos/aws_client_vpn.png' width='32' height='32'> AWS Client VPN | 6.1.1 |
 | <img src='Logos/aws_corretto_jdk.png' width='32' height='32'> AWS Corretto JDK | 21.0.12.12.1 |
 | <img src='Logos/axure_rp.png' width='32' height='32'> Axure RP | 11.0.0.4150 |
@@ -849,7 +848,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/compositor.png' width='32' height='32'> Compositor | 1.28.0 |
 | <img src='Logos/connect_fonts.png' width='32' height='32'> Connect Fonts | 28.1.8 |
 | <img src='Logos/connectmenow.png' width='32' height='32'> ConnectMeNow | 4.0.18 |
-| <img src='Logos/contexts.png' width='32' height='32'> Contexts | 3.9.0 |
 | <img src='Logos/copilot_for_xcode.png' width='32' height='32'> Copilot for Xcode | 0.38.0 |
 | <img src='Logos/copyclip.png' width='32' height='32'> CopyClip | 3.993 |
 | <img src='Logos/cork.png' width='32' height='32'> Cork | 2.0.3 |
@@ -1109,7 +1107,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/jabra_direct.png' width='32' height='32'> Jabra Direct | 8.2.23201 |
 | <img src='Logos/jami.png' width='32' height='32'> Jami | 2.42 |
 | <img src='Logos/jamie.png' width='32' height='32'> Jamie | 5.7.21 |
-| <img src='Logos/jamovi.png' width='32' height='32'> jamovi | 28.3.0.0 |
 | <img src='Logos/jasp.png' width='32' height='32'> JASP | 0.98.1.0 |
 | <img src='Logos/jellyfin.png' width='32' height='32'> Jellyfin | 12.1 |
 | <img src='Logos/jetbrains_phpstorm.png' width='32' height='32'> JetBrains PhpStorm | 2026.2.3 |
@@ -1415,7 +1412,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/popsql.png' width='32' height='32'> PopSQL | 1.0.135 |
 | <img src='Logos/portx.png' width='32' height='32'> portx | 2.3.0 |
 | <img src='Logos/positron.png' width='32' height='32'> Positron | 2026.09.1-2 |
-| <img src='Logos/postbox.png' width='32' height='32'> Postbox | 7.0.65 |
 | <img src='Logos/postico.png' width='32' height='32'> Postico | 2.3.3 |
 | <img src='Logos/postman.png' width='32' height='32'> Postman | 12.29.5 |
 | <img src='Logos/powerphotos.png' width='32' height='32'> PowerPhotos | 3.4.7 |

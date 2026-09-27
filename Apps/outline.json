@@ -1,0 +1,12 @@
+{
+  "name": "Outline",
+  "description": "Knowledge management tool",
+  "version": "1.10.0",
+  "url": "https://download.todesktop.com/2211128hgkdcltv/Outline%201.10.0%20-%20Build%20260918efgmywp4a-arm64.dmg",
+  "vendor_url": "https://download.todesktop.com/2211128hgkdcltv/Outline%201.10.0%20-%20Build%20260918efgmywp4a-arm64.dmg",
+  "bundleId": "com.generaloutline.outline",
+  "homepage": "https://getoutline.com/",
+  "homebrew_cask": "getoutline",
+  "fileName": "Outline 1.10.0 - Build 260918efgmywp4a-arm64.dmg",
+  "sha": "76e8c55b6edac1b0f316d71a62203a8388de1b9adafce7bbc6871109757e12d6"
+}

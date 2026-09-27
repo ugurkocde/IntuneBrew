@@ -63,6 +63,7 @@ preserve_filename_apps = [
 
 # zip, tar etc
 app_urls = [
+    "https://formulae.brew.sh/api/cask/chatgpt.json",
     "https://formulae.brew.sh/api/cask/signal.json",
     "https://formulae.brew.sh/api/cask/medis.json",
     "https://formulae.brew.sh/api/cask/sourcetree.json",
@@ -474,6 +475,8 @@ app_urls = [
 
 # DMG
 homebrew_cask_urls = [
+    "https://formulae.brew.sh/api/cask/opencode-desktop.json",
+    "https://formulae.brew.sh/api/cask/getoutline.json",
     "https://formulae.brew.sh/api/cask/ok-json.json",
     "https://formulae.brew.sh/api/cask/keybase.json",
     "https://formulae.brew.sh/api/cask/houdahspot.json",
@@ -676,7 +679,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/anki.json",
     "https://formulae.brew.sh/api/cask/netbeans.json",
     "https://formulae.brew.sh/api/cask/audacity.json",
-    "https://formulae.brew.sh/api/cask/chatgpt.json",
     "https://formulae.brew.sh/api/cask/citrix-workspace.json",
     "https://formulae.brew.sh/api/cask/datagrip.json",
     "https://formulae.brew.sh/api/cask/discord.json",
@@ -804,7 +806,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/beekeeper-studio.json",
     "https://formulae.brew.sh/api/cask/charles.json",
     "https://formulae.brew.sh/api/cask/cheatsheet.json",
-    "https://formulae.brew.sh/api/cask/contexts.json",
     "https://formulae.brew.sh/api/cask/craft.json",
     "https://formulae.brew.sh/api/cask/curio.json",
     "https://formulae.brew.sh/api/cask/disk-drill.json",
@@ -891,7 +892,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/omnidisksweeper.json",
     "https://formulae.brew.sh/api/cask/opera-gx.json",
     "https://formulae.brew.sh/api/cask/polymail.json",
-    "https://formulae.brew.sh/api/cask/postbox.json",
     "https://formulae.brew.sh/api/cask/protopie.json",
     "https://formulae.brew.sh/api/cask/pycharm.json",
     "https://formulae.brew.sh/api/cask/qobuz.json",
@@ -980,7 +980,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/anytype.json",
     "https://formulae.brew.sh/api/cask/app-cleaner.json",
     "https://formulae.brew.sh/api/cask/archi.json",
-    "https://formulae.brew.sh/api/cask/avast-secure-browser.json",
     "https://formulae.brew.sh/api/cask/axure-rp.json",
     "https://formulae.brew.sh/api/cask/beaver-notes.json",
     "https://formulae.brew.sh/api/cask/betaflight-configurator.json",
@@ -1049,7 +1048,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/intellidock.json",
     "https://formulae.brew.sh/api/cask/invesalius.json",
     "https://formulae.brew.sh/api/cask/jami.json",
-    "https://formulae.brew.sh/api/cask/jamovi.json",
     "https://formulae.brew.sh/api/cask/jasp.json",
     "https://formulae.brew.sh/api/cask/jiggler.json",
     "https://formulae.brew.sh/api/cask/kdenlive.json",
@@ -1363,6 +1361,7 @@ pkg_urls = [
 
 # Custom scraper scripts to run
 custom_scrapers = [
+    ".github/scripts/scrapers/aircall_workspace.sh",
     ".github/scripts/scrapers/remotehelp.sh",
     ".github/scripts/scrapers/starface.sh",
     # Chrome uses the enterprise PKG so Keystone is registered and self-updates work (Issue #203)
@@ -1746,7 +1745,10 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
 
     # Clean up version string by removing anything after the comma or underscore
     version = data["version"]
-    if ',' in version:
+    if cask_token == "rstudio" and ',' in version:
+        # RStudio embeds the build in both CFBundle version fields (issue #275).
+        version = version.replace(',', '+', 1)
+    elif ',' in version:
         version = version.split(',')[0]
     if '_' in version:
         version = version.split('_')[0]
