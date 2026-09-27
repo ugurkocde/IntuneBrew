@@ -659,10 +659,8 @@ jobs:
                 # Calculate SHA256 hash
                 echo "🔐 Calculating SHA256 hash..."
                 if ! xar -tf "${app_name}_${version}.pkg" >/dev/null 2>&1; then
-                  FAILED_APPS+=("$app_name")
-                  ERROR_LOG+=("$app_name: Generated artifact is not a valid PKG archive")
-                  continue
-                fi
+                  pkg_in_dmg_error="Generated artifact is not a valid PKG archive"
+                else
                 file_hash=$(shasum -a 256 "${app_name}_${version}.pkg" | awk '{print $1}')
                 echo "📝 SHA256: $file_hash"
 
@@ -690,6 +688,7 @@ jobs:
                 else
                   echo "❌ Failed to upload to Azure"
                   pkg_in_dmg_error="Azure upload failed for ${app_name}_${version}.pkg"
+                fi
                 fi
               else
                 echo "❌ No PKG file found in DMG for $app_name"

@@ -116,6 +116,8 @@ jobs:
         run: bash tests/test_nested_dmg.sh
       - name: Test graceful app shutdown policy
         run: sudo bash tests/test_close_app.sh
+      - name: Reject installer metadata sidecars
+        run: bash tests/test_pkg_archive.sh
       - name: Test CLI installer layouts
         run: bash tests/test_cli_package.sh
 
