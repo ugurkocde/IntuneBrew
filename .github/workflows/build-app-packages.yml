@@ -471,7 +471,7 @@ jobs:
               outer_pkg_ready=false
               if [[ "$url" == *".zip" ]]; then
                 echo "URL is a ZIP file, downloading and extracting first..."
-                if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.zip" "$url"; then
+                if ! bash "$WORKSPACE_DIR/.github/scripts/download_vendor.sh" "$url" "${download_path}.zip"; then
                   echo "Failed to download ZIP file"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download ZIP from $url")
@@ -503,7 +503,7 @@ jobs:
                 rm -rf "$zip_extract_dir" "${download_path}.zip"
               else
                 # Direct PKG download
-                if curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "$outer_pkg_path" "$url"; then
+                if bash "$WORKSPACE_DIR/.github/scripts/download_vendor.sh" "$url" "$outer_pkg_path"; then
                   outer_pkg_ready=true
                 fi
               fi
@@ -636,7 +636,7 @@ jobs:
               download_path="$HOME/Desktop/${app_name}"
               
               # Download DMG
-              if curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.dmg" "$url"; then
+              if bash "$WORKSPACE_DIR/.github/scripts/download_vendor.sh" "$url" "${download_path}.dmg"; then
                 echo "✅ DMG download successful"
                 ls -lh "${download_path}.dmg"
               else
@@ -751,7 +751,7 @@ jobs:
               download_path="$HOME/Desktop/${app_name}"
               if [[ "$url" == *".zip" ]]; then
                 # Download file first
-                if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.download" "$url"; then
+                if ! bash "$WORKSPACE_DIR/.github/scripts/download_vendor.sh" "$url" "${download_path}.download"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download from $url")
@@ -823,7 +823,7 @@ jobs:
                 fi
               elif [[ "$url" == *".tar.xz" ]]; then
                 echo "📦 Processing tar.xz archive for $app_name..."
-                if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.tar.xz" "$url"; then
+                if ! bash "$WORKSPACE_DIR/.github/scripts/download_vendor.sh" "$url" "${download_path}.tar.xz"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download tar.xz from $url")
@@ -844,7 +844,7 @@ jobs:
               elif [[ "$url" == *".tar.bz2" ]] || [[ "$url" == *".tbz" ]]; then
                 echo "📦 Processing tar.bz2/tbz archive for $app_name..."
                 if [[ "$url" == *".tar.bz2" ]]; then
-                  if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.tar.bz2" "$url"; then
+                  if ! bash "$WORKSPACE_DIR/.github/scripts/download_vendor.sh" "$url" "${download_path}.tar.bz2"; then
                     echo "❌ Failed to download $app_name from $url"
                     FAILED_APPS+=("$app_name")
                     ERROR_LOG+=("$app_name: Failed to download tar.bz2 from $url")
@@ -852,7 +852,7 @@ jobs:
                   fi
                   archive_path="${download_path}.tar.bz2"
                 else
-                  if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.tbz" "$url"; then
+                  if ! bash "$WORKSPACE_DIR/.github/scripts/download_vendor.sh" "$url" "${download_path}.tbz"; then
                     echo "❌ Failed to download $app_name from $url"
                     FAILED_APPS+=("$app_name")
                     ERROR_LOG+=("$app_name: Failed to download tbz from $url")
@@ -902,7 +902,7 @@ jobs:
                 ls -R "${app_name}_extracted"
               elif [[ "$url" == *".tar.gz" ]]; then
                 echo "📦 Processing tar.gz archive for $app_name..."
-                if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.tar.gz" "$url"; then
+                if ! bash "$WORKSPACE_DIR/.github/scripts/download_vendor.sh" "$url" "${download_path}.tar.gz"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download tar.gz from $url")
@@ -927,7 +927,7 @@ jobs:
                 ls -R "${app_name}_extracted"
               else
                 # Download file first and detect type
-                if ! curl -f -L --retry 3 --connect-timeout 30 --max-time 600 --user-agent "Mozilla/5.0" -o "${download_path}.download" "$url"; then
+                if ! bash "$WORKSPACE_DIR/.github/scripts/download_vendor.sh" "$url" "${download_path}.download"; then
                   echo "❌ Failed to download $app_name from $url"
                   FAILED_APPS+=("$app_name")
                   ERROR_LOG+=("$app_name: Failed to download from $url")
