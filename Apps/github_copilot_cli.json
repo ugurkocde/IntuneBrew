@@ -9,5 +9,7 @@
   "homebrew_cask": "copilot-cli",
   "fileName": "github_copilot_cli_1.0.88.pkg",
   "type": "app",
-  "sha": "f728d996cc5916e2f5120e2357a0749afe7e3f674be9e8a7b302ed236b807599"
+  "sha": "f728d996cc5916e2f5120e2357a0749afe7e3f674be9e8a7b302ed236b807599",
+  "category": "Developer Tools",
+  "publisher": "GitHub, Inc."
 }
