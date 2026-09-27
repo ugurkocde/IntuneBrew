@@ -67,7 +67,7 @@ class PublicationMergeTests(unittest.TestCase):
 
     def test_cli_package_identifier_cannot_change_after_build(self):
         with self.assertRaisesRegex(ValueError, 'CLI package identifier'):
-            MODULE.merge_content('Apps/tool.json', b'{"type":"cli","bundleId":"old","version":"1"}', b'{"type":"cli","bundleId":"old","version":"2"}', b'{"type":"cli","bundleId":"new","version":"1"}')
+            MODULE.merge_content('Apps/tool.json', b'{"type":"app","bundleId":"old","version":"1"}', b'{"type":"app","packageIdentifier":"old","bundleId":"old","version":"2"}', b'{"type":"app","bundleId":"new","version":"1"}')
 
     def test_pending_resolution_preserves_newly_approved_requests(self):
         import json

@@ -50,7 +50,7 @@ def merge_content(path, base, generated, current):
         result = merge_json(decode(base), decode(generated), decode(current), path)
         if path.startswith('Apps/') and isinstance(result, dict):
             built = decode(generated)
-            if isinstance(built, dict) and built.get('type') == 'cli' and result.get('bundleId') != built.get('bundleId'):
+            if isinstance(built, dict) and built.get('packageIdentifier') and result.get('bundleId') != built['packageIdentifier']:
                 raise ValueError(f'Concurrent CLI package identifier change in {path}. Rebuild the package.')
         return None if result is MISSING else (json.dumps(result, indent=2, ensure_ascii=False) + '\n').encode()
     if None in (base, generated, current):
