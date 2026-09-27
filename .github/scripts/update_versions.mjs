@@ -86,7 +86,11 @@ async function main() {
     const data = await response.json();
     if (!response.ok || data.success === false || data.results?.some(result => result.success === false) ||
         (data.webhookResults && data.webhookResults.sent < data.webhookResults.total)) {
-      throw new Error(`Notification delivery failed (${response.status}); pending updates retained for retry`);
+      const reasons = [...new Set((data.results || []).filter(result => result.success === false)
+        .map(result => String(result.error || 'recipient delivery failed')
+          .replace(/[A-Z0-9._%+-]+@[A-Z0-9.-]+\.[A-Z]{2,}/gi, '[recipient]')
+          .replace(/https?:\/\/\S+/g, '[URL]').slice(0, 200)))];
+      throw new Error(`Notification delivery failed (${response.status}); pending updates retained for retry${reasons.length ? ': ' + reasons.join('; ') : ''}`);
     }
   });
 }
