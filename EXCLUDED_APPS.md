@@ -1,9 +1,10 @@
 # Excluded applications
 
-The following apps are intentionally excluded from collection, packaging, and the supported catalog. Their historical metadata is retained with the existing `deprecated` flag; this does not mean the vendor discontinued them.
+The following apps are intentionally excluded from collection, packaging, and the supported catalog. Where historical metadata exists, it is retained with the existing `deprecated` flag; this does not mean the vendor discontinued them.
 
 | Application | Reason |
 |---|---|
+| FileZilla | Explicitly excluded. The submitted download URL expires and is unsuitable for unattended daily synchronization. |
 | Murus Firewall | Disk image requires explicit vendor license acceptance. |
 | Switch Audio Converter | Disk image requires explicit vendor license acceptance. |
 | RawTherapee | Disk image requires explicit license acceptance. |
