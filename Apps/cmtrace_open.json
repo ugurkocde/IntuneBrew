@@ -4,7 +4,7 @@
   "version": "1.6.0",
   "url": "https://github.com/adamgell/cmtraceopen/releases/download/v1.6.0/CMTrace.Open_1.6.0_aarch64.dmg",
   "vendor_url": "https://github.com/adamgell/cmtraceopen/releases/download/v1.6.0/CMTrace.Open_1.6.0_aarch64.dmg",
-  "bundleId": null,
+  "bundleId": "com.cmtrace.open",
   "homepage": "https://cmtraceopen.com/",
   "homebrew_cask": "cmtrace-open",
   "fileName": "CMTrace.Open_1.6.0_aarch64.dmg",

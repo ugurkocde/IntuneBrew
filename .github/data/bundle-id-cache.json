@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-09-27T02:13:43.258Z",
+  "last_full_scan": "2026-09-27T11:46:47.913Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -1509,11 +1509,10 @@
       "name": "AltServer"
     },
     "amadeus_pro": {
-      "last_checked": "2026-01-15T15:47:37.101Z",
-      "bundle_id": "com.HairerSoft.AmadeusPro",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-09-27T11:37:48.560Z",
+      "bundle_id": "com.HairerSoft.AmadeusPro3",
+      "status": "verified",
+      "source": "file",
       "name": "Amadeus Pro"
     },
     "amie": {
@@ -2461,8 +2460,8 @@
       "name": "Geany"
     },
     "geekbench": {
-      "last_checked": "2026-01-17T08:37:42.091Z",
-      "bundle_id": "com.primatelabs.Geekbench6",
+      "last_checked": "2026-09-27T11:38:55.449Z",
+      "bundle_id": "com.primatelabs.parkdale",
       "status": "verified",
       "source": "file",
       "name": "Geekbench"
@@ -3905,10 +3904,10 @@
       "name": "Itsycal"
     },
     "jabra_direct": {
-      "last_checked": "2026-01-17T00:53:05.253Z",
-      "bundle_id": "com.jabra.directonline",
+      "last_checked": "2026-09-27T11:38:55.450Z",
+      "bundle_id": "com.jabra.JabraFirmwareUpdate",
       "status": "verified",
-      "source": "api",
+      "source": "file",
       "name": "Jabra Direct"
     },
     "jami": {
@@ -4104,8 +4103,8 @@
       "name": "Keyboard Maestro"
     },
     "keyboardcleantool": {
-      "last_checked": "2026-01-17T08:37:42.118Z",
-      "bundle_id": "com.foggyhillsoftware.keyboardcleantool",
+      "last_checked": "2026-09-27T11:38:55.451Z",
+      "bundle_id": "com.hegenberg.KeyboardCleanTool",
       "status": "verified",
       "source": "file",
       "name": "KeyboardCleanTool"
@@ -4342,8 +4341,8 @@
       "name": "LocationSimulator"
     },
     "logitech_g_hub": {
-      "last_checked": "2026-01-17T08:37:42.122Z",
-      "bundle_id": "com.logi.ghub",
+      "last_checked": "2026-09-27T11:38:55.451Z",
+      "bundle_id": "com.logi.ghub.installer",
       "status": "verified",
       "source": "file",
       "name": "Logitech G HUB"
@@ -4475,8 +4474,8 @@
       "name": "LÖVE"
     },
     "mac_mouse_fix": {
-      "last_checked": "2026-01-17T08:37:42.124Z",
-      "bundle_id": "com.nuebling.mac-mouse-fix.helper",
+      "last_checked": "2026-09-27T11:38:55.452Z",
+      "bundle_id": "com.nuebling.mac-mouse-fix",
       "status": "verified",
       "source": "file",
       "name": "Mac Mouse Fix"
@@ -4741,8 +4740,8 @@
       "name": "MenubarX"
     },
     "merlin_project": {
-      "last_checked": "2026-01-17T08:37:42.129Z",
-      "bundle_id": "com.projectwizards.Merlin3",
+      "last_checked": "2026-09-27T11:38:55.452Z",
+      "bundle_id": "net.projectwizards.merlinproject",
       "status": "verified",
       "source": "file",
       "name": "Merlin Project"
@@ -4923,8 +4922,8 @@
       "name": "Miro"
     },
     "mission_control_plus": {
-      "last_checked": "2026-01-17T08:37:42.133Z",
-      "bundle_id": "com.nuebling.Mission-Control-Plus",
+      "last_checked": "2026-09-27T11:38:55.453Z",
+      "bundle_id": "io.fadel.MissionControlPlus",
       "status": "verified",
       "source": "file",
       "name": "Mission Control Plus"
@@ -5546,8 +5545,8 @@
       "name": "OmniPlan"
     },
     "omnissa_horizon_client": {
-      "last_checked": "2026-01-17T08:37:42.146Z",
-      "bundle_id": "com.omnissa.horizonapp",
+      "last_checked": "2026-09-27T11:38:55.454Z",
+      "bundle_id": "org.cef.html5videoplayer",
       "status": "verified",
       "source": "file",
       "name": "Omnissa Horizon Client"
@@ -6596,8 +6595,8 @@
       "name": "Rhinoceros"
     },
     "rightfont": {
-      "last_checked": "2026-01-17T08:37:42.167Z",
-      "bundle_id": "com.rightfontapp.RightFont",
+      "last_checked": "2026-09-27T11:40:11.316Z",
+      "bundle_id": "com.rightfontapp.RightFont5",
       "status": "verified",
       "source": "file",
       "name": "RightFont"
@@ -6869,8 +6868,8 @@
       "name": "Scroll Reverser"
     },
     "secretive": {
-      "last_checked": "2026-01-17T08:37:42.170Z",
-      "bundle_id": "com.maxgoedjen.Secretive.SecretAgent",
+      "last_checked": "2026-09-27T11:40:11.317Z",
+      "bundle_id": "com.maxgoedjen.Secretive.Host",
       "status": "verified",
       "source": "file",
       "name": "Secretive"
@@ -7023,8 +7022,8 @@
       "name": "Signal"
     },
     "silentknight": {
-      "last_checked": "2026-01-17T08:37:42.173Z",
-      "bundle_id": "co.eclecticlight.SilentKnight",
+      "last_checked": "2026-09-27T11:40:11.317Z",
+      "bundle_id": "co.eclecticlight.SilentKnight3",
       "status": "verified",
       "source": "file",
       "name": "SilentKnight"
@@ -7149,8 +7148,8 @@
       "name": "SmoothScroll"
     },
     "smultron": {
-      "last_checked": "2026-01-17T08:37:42.174Z",
-      "bundle_id": "com.peterborgapps.Smultron12",
+      "last_checked": "2026-09-27T11:40:11.317Z",
+      "bundle_id": "com.peterborgapps.Smultron14",
       "status": "verified",
       "source": "file",
       "name": "Smultron"
@@ -7352,8 +7351,8 @@
       "name": "SSH Config Editor"
     },
     "standard_notes": {
-      "last_checked": "2026-01-17T08:37:42.178Z",
-      "bundle_id": "org.standardnotes.standardnotes.helper",
+      "last_checked": "2026-09-27T11:40:11.318Z",
+      "bundle_id": "org.standardnotes.standardnotes",
       "status": "verified",
       "source": "file",
       "name": "Standard Notes"
@@ -7611,8 +7610,8 @@
       "name": "Sync"
     },
     "syncmate": {
-      "last_checked": "2026-01-17T08:37:42.181Z",
-      "bundle_id": "com.eltima.SyncMate.com.eltima.SyncMateService",
+      "last_checked": "2026-09-27T11:40:11.318Z",
+      "bundle_id": "com.eltima.SyncMate",
       "status": "verified",
       "source": "file",
       "name": "SyncMate"
@@ -8549,8 +8548,8 @@
       "name": "WorkFlowy"
     },
     "workspaces": {
-      "last_checked": "2026-01-17T08:38:03.497Z",
-      "bundle_id": "com.apptorium.Workspaces",
+      "last_checked": "2026-09-27T11:40:11.321Z",
+      "bundle_id": "com.apptorium.Workspaces2-paddle",
       "status": "verified",
       "source": "file",
       "name": "Workspaces"
@@ -9231,8 +9230,8 @@
       "name": "Vagrant"
     },
     "simplysign_desktop": {
-      "last_checked": "2026-07-03T12:18:05.839Z",
-      "bundle_id": "pl.assecods.pkg.SimplySignDesktop-proCertumSmartSign",
+      "last_checked": "2026-09-27T11:40:11.317Z",
+      "bundle_id": "pl.unizeto.pcja.SmartSign",
       "status": "verified",
       "source": "file",
       "name": "SimplySign Desktop"
@@ -9321,6 +9320,83 @@
       "status": "verified",
       "source": "file",
       "name": "ChatGPT Classic"
+    },
+    "cmtrace_open": {
+      "last_checked": "2026-09-27T11:38:55.346Z",
+      "bundle_id": "com.cmtrace.open",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_alternative",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved",
+        "openai_alternative"
+      ],
+      "name": "CMTrace Open"
+    },
+    "macusb": {
+      "last_checked": "2026-09-27T11:38:55.452Z",
+      "bundle_id": "com.kruszoneq.macUSB",
+      "status": "verified",
+      "source": "file",
+      "name": "macUSB"
+    },
+    "monotype_desktop_app": {
+      "last_checked": "2026-09-27T11:38:55.453Z",
+      "bundle_id": "com.monotype.monotype-fonts",
+      "status": "verified",
+      "source": "file",
+      "name": "Monotype Desktop App"
+    },
+    "openwebstart": {
+      "last_checked": "2026-09-27T11:39:43.121Z",
+      "bundle_id": "com.OpenWebStart",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved"
+      ],
+      "name": "OpenWebStart"
+    },
+    "openwork": {
+      "last_checked": "2026-09-27T11:39:43.222Z",
+      "bundle_id": "com.differentai.openwork",
+      "status": "verified",
+      "source": "file",
+      "name": "OpenWork"
+    },
+    "prusaslicer": {
+      "last_checked": "2026-09-27T11:40:11.315Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved",
+        "openai_alternative"
+      ],
+      "name": "PrusaSlicer"
+    },
+    "sharefile": {
+      "last_checked": "2026-09-27T11:40:11.317Z",
+      "bundle_id": "com.sharefile.desktop.widget",
+      "status": "verified",
+      "source": "file",
+      "name": "ShareFile"
+    },
+    "vorssaint": {
+      "last_checked": "2026-09-27T11:40:11.320Z",
+      "bundle_id": "com.vorssaint.utils",
+      "status": "verified",
+      "source": "file",
+      "name": "Vorssaint"
     }
   }
 }
