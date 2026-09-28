@@ -14,5 +14,5 @@
   "previous_version": "4.0.4",
   "homebrew_cask": "topaz-photo-ai",
   "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: discontinued"
+  "deprecation_reason": "disabled in Homebrew: discontinued"
 }

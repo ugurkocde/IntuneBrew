@@ -14,5 +14,5 @@
   "previous_version": "7.1.5",
   "homebrew_cask": "topaz-video-ai",
   "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: discontinued"
+  "deprecation_reason": "disabled in Homebrew: discontinued"
 }

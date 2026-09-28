@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1155-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1154-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -583,17 +583,17 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-09-27T16:37:30.540210Z*
+*Last checked: 2026-09-28T01:05:32.148062Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| dockside | 2.9.33 | 2.9.34 |
-| masscode | 5.12.0 | 6.0.0 |
-| rectangle | 2.0.1 | 2.0.2 |
-| vorssaint | 3.3.5 | 3.4.0 |
-| wealthfolio | 3.9.0 | 3.9.1 |
+| bettertouchtool | 6.861 | 6.864 |
+| easydict | 2.22.0 | 2.23.0 |
+| onlyswitch | 2.7.6 | 2.8.0 |
+| proxyman | 26.0.0 | 26.0.1 |
 
 ## ✨ Features
 
@@ -728,7 +728,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/berkeley_open_infrastructure_for_network_computing.png' width='32' height='32'> Berkeley Open Infrastructure for Network Computing | 8.2.11 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 5.0.6 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.7 |
-| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.861 |
+| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.864 |
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 6.0.6 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.2.6.32774 |
 | <img src='Logos/bezel.png' width='32' height='32'> Bezel | 5.1.0 |
@@ -915,7 +915,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/duoconnect.png' width='32' height='32'> DuoConnect | 2.0.9 |
 | <img src='Logos/dymo_connect.png' width='32' height='32'> Dymo Connect | 1.6.1.4 |
 | <img src='Logos/eaglefiler.png' width='32' height='32'> EagleFiler | 1.9.21 |
-| <img src='Logos/easydict.png' width='32' height='32'> Easydict | 2.22.0 |
+| <img src='Logos/easydict.png' width='32' height='32'> Easydict | 2.23.0 |
 | <img src='Logos/easyfind.png' width='32' height='32'> EasyFind | 5.0.2 |
 | <img src='Logos/ecamm_live.png' width='32' height='32'> Ecamm Live | 4.5.13 |
 | <img src='Logos/eclipse_for_rcp_and_rap_developers.png' width='32' height='32'> Eclipse for RCP and RAP Developers | 4.41 |
@@ -1331,7 +1331,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/onedrive.png' width='32' height='32'> OneDrive | 26.153.0809.0004 |
 | <img src='Logos/onionshare.png' width='32' height='32'> OnionShare | 2.6.5 |
 | <img src='Logos/onlyoffice.png' width='32' height='32'> ONLYOFFICE | 9.4.0 |
-| <img src='Logos/onlyswitch.png' width='32' height='32'> OnlySwitch | 2.7.6 |
+| <img src='Logos/onlyswitch.png' width='32' height='32'> OnlySwitch | 2.8.0 |
 | <img src='Logos/onyx.png' width='32' height='32'> OnyX | 5.1.0 |
 | <img src='Logos/opal_composer.png' width='32' height='32'> Opal Composer | 2.0.0 |
 | <img src='Logos/openaudible.png' width='32' height='32'> OpenAudible | 4.8.8 |
@@ -1425,7 +1425,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/proton_pass.png' width='32' height='32'> Proton Pass | 1.41.1 |
 | <img src='Logos/protonvpn.png' width='32' height='32'> ProtonVPN | 6.5.1 |
 | <img src='Logos/protopie.png' width='32' height='32'> ProtoPie | 9.0.0 |
-| <img src='Logos/proxyman.png' width='32' height='32'> Proxyman | 26.0.0 |
+| <img src='Logos/proxyman.png' width='32' height='32'> Proxyman | 26.0.1 |
 | <img src='Logos/prusaslicer.png' width='32' height='32'> PrusaSlicer | 2.9.6 |
 | <img src='Logos/ps_remote_play.png' width='32' height='32'> PS Remote Play | 9.5.0 |
 | <img src='Logos/pulsar.png' width='32' height='32'> Pulsar | 1.132.1 |
@@ -1549,7 +1549,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/slidepad.png' width='32' height='32'> Slidepad | 1.6.2 |
 | <img src='Logos/sloth.png' width='32' height='32'> Sloth | 3.6 |
 | <img src='Logos/smartbear_soapui.png' width='32' height='32'> SmartBear SoapUI | 5.9.1 |
-| <img src='Logos/smartsheet.png' width='32' height='32'> Smartsheet | 1.0.54 |
 | <img src='Logos/smartsvn.png' width='32' height='32'> SmartSVN | 14.5.1 |
 | <img src='Logos/smoothscroll.png' width='32' height='32'> SmoothScroll | 1.7.6 |
 | <img src='Logos/smultron.png' width='32' height='32'> Smultron | 14.5 |

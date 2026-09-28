@@ -1,40 +1,33 @@
 {
-  "lastChecked": "2026-09-27T16:37:30.540210Z",
+  "lastChecked": "2026-09-28T01:05:32.148062Z",
   "updates": [
     {
-      "appName": "dockside",
-      "previousVersion": "2.9.33",
-      "newVersion": "2.9.34",
+      "appName": "bettertouchtool",
+      "previousVersion": "6.861",
+      "newVersion": "6.864",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dockside.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bettertouchtool.png"
     },
     {
-      "appName": "masscode",
-      "previousVersion": "5.12.0",
-      "newVersion": "6.0.0",
+      "appName": "easydict",
+      "previousVersion": "2.22.0",
+      "newVersion": "2.23.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/masscode.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/easydict.png"
     },
     {
-      "appName": "rectangle",
-      "previousVersion": "2.0.1",
-      "newVersion": "2.0.2",
-      "changelog": "https://github.com/rxhanson/Rectangle/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rectangle.png"
+      "appName": "onlyswitch",
+      "previousVersion": "2.7.6",
+      "newVersion": "2.8.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/onlyswitch.png"
     },
     {
-      "appName": "vorssaint",
-      "previousVersion": "3.3.5",
-      "newVersion": "3.4.0",
+      "appName": "proxyman",
+      "previousVersion": "26.0.0",
+      "newVersion": "26.0.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/vorssaint.png"
-    },
-    {
-      "appName": "wealthfolio",
-      "previousVersion": "3.9.0",
-      "newVersion": "3.9.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/wealthfolio.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/proxyman.png"
     }
   ]
 }
