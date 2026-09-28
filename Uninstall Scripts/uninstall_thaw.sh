@@ -33,6 +33,30 @@ elif [ -f "/Applications/Thaw.app" ]; then
     rm -f "/Applications/Thaw.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/*.com.stonerl.Thaw
+echo "Removing $HOME/Library/Application Scripts/*.com.stonerl.Thaw..."
+if [ -d "$HOME/Library/Application Scripts/*.com.stonerl.Thaw" ]; then
+    rm -rf "$HOME/Library/Application Scripts/*.com.stonerl.Thaw" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/*.com.stonerl.Thaw" ]; then
+    rm -f "$HOME/Library/Application Scripts/*.com.stonerl.Thaw" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.stonerl.Thaw.ThawControls
+echo "Removing $HOME/Library/Application Scripts/com.stonerl.Thaw.ThawControls..."
+if [ -d "$HOME/Library/Application Scripts/com.stonerl.Thaw.ThawControls" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.stonerl.Thaw.ThawControls" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.stonerl.Thaw.ThawControls" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.stonerl.Thaw.ThawControls" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Thaw
+echo "Removing $HOME/Library/Application Support/Thaw..."
+if [ -d "$HOME/Library/Application Support/Thaw" ]; then
+    rm -rf "$HOME/Library/Application Support/Thaw" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Thaw" ]; then
+    rm -f "$HOME/Library/Application Support/Thaw" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.stonerl.Thaw
 echo "Removing $HOME/Library/Caches/com.stonerl.Thaw..."
 if [ -d "$HOME/Library/Caches/com.stonerl.Thaw" ]; then
@@ -41,12 +65,36 @@ elif [ -f "$HOME/Library/Caches/com.stonerl.Thaw" ]; then
     rm -f "$HOME/Library/Caches/com.stonerl.Thaw" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/com.stonerl.Thaw.ThawControls
+echo "Removing $HOME/Library/Containers/com.stonerl.Thaw.ThawControls..."
+if [ -d "$HOME/Library/Containers/com.stonerl.Thaw.ThawControls" ]; then
+    rm -rf "$HOME/Library/Containers/com.stonerl.Thaw.ThawControls" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.stonerl.Thaw.ThawControls" ]; then
+    rm -f "$HOME/Library/Containers/com.stonerl.Thaw.ThawControls" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/*.com.stonerl.Thaw
+echo "Removing $HOME/Library/Group Containers/*.com.stonerl.Thaw..."
+if [ -d "$HOME/Library/Group Containers/*.com.stonerl.Thaw" ]; then
+    rm -rf "$HOME/Library/Group Containers/*.com.stonerl.Thaw" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/*.com.stonerl.Thaw" ]; then
+    rm -f "$HOME/Library/Group Containers/*.com.stonerl.Thaw" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.stonerl.Thaw
 echo "Removing $HOME/Library/HTTPStorages/com.stonerl.Thaw..."
 if [ -d "$HOME/Library/HTTPStorages/com.stonerl.Thaw" ]; then
     rm -rf "$HOME/Library/HTTPStorages/com.stonerl.Thaw" 2>/dev/null || true
 elif [ -f "$HOME/Library/HTTPStorages/com.stonerl.Thaw" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.stonerl.Thaw" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/Thaw
+echo "Removing $HOME/Library/Logs/Thaw..."
+if [ -d "$HOME/Library/Logs/Thaw" ]; then
+    rm -rf "$HOME/Library/Logs/Thaw" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Thaw" ]; then
+    rm -f "$HOME/Library/Logs/Thaw" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.stonerl.Thaw.plist

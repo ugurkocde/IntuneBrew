@@ -25,14 +25,6 @@ elif [ -f "/Applications/Bezel.app" ]; then
     rm -f "/Applications/Bezel.app" 2>/dev/null || true
 fi
 
-# Remove /Library/Preferences/com.apple.BezelServices.plist
-echo "Removing /Library/Preferences/com.apple.BezelServices.plist..."
-if [ -d "/Library/Preferences/com.apple.BezelServices.plist" ]; then
-    rm -rf "/Library/Preferences/com.apple.BezelServices.plist" 2>/dev/null || true
-elif [ -f "/Library/Preferences/com.apple.BezelServices.plist" ]; then
-    rm -f "/Library/Preferences/com.apple.BezelServices.plist" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Application Scripts/com.nonstrict.BezelAppleTVHelper
 echo "Removing $HOME/Library/Application Scripts/com.nonstrict.BezelAppleTVHelper..."
 if [ -d "$HOME/Library/Application Scripts/com.nonstrict.BezelAppleTVHelper" ]; then
@@ -95,14 +87,6 @@ if [ -d "$HOME/Library/HTTPStorages/com.nonstrict.Bezel-direct" ]; then
     rm -rf "$HOME/Library/HTTPStorages/com.nonstrict.Bezel-direct" 2>/dev/null || true
 elif [ -f "$HOME/Library/HTTPStorages/com.nonstrict.Bezel-direct" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.nonstrict.Bezel-direct" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Preferences/com.apple.BezelServices.plist
-echo "Removing $HOME/Library/Preferences/com.apple.BezelServices.plist..."
-if [ -d "$HOME/Library/Preferences/com.apple.BezelServices.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.apple.BezelServices.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.apple.BezelServices.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.apple.BezelServices.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.nonstrict.Bezel-direct.plist
