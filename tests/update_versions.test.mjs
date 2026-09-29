@@ -39,3 +39,14 @@ test('catch-up updates are sent in one digest, with bounded database acknowledge
   assert.deepEqual(calls,[225]);
   assert.deepEqual(acknowledgements,[100,100,25]);
 });
+
+test('a run with no new versions still calls the API so vulnerability alerts are scanned', async () => {
+  const rows=[{id:'a',app_name:'app',version:'1',created_at:'2026-01-01',notification_sent_at:'2026-01-01'}];
+  const client={from:()=>({
+    select:()=>({order:()=>({range:async(a,b)=>({data:structuredClone(rows.slice(a,b+1)),error:null})})}),
+    update:values=>({eq:async(_,id)=>{Object.assign(rows.find(r=>r.id===id),values);return {error:null}},in:async()=>({error:null})})
+  })};
+  const calls=[];
+  await synchronize(client,[{app_name:'app',version:'1'}],async updates=>{calls.push(updates)});
+  assert.deepEqual(calls,[[]]);
+});
