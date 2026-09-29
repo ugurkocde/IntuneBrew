@@ -1,7 +1,7 @@
 {
   "name": "Free Download Manager",
   "description": "Download accelerator and organiser",
-  "version": "6.35",
+  "version": "6.35.1",
   "url": "https://files2.freedownloadmanager.org/6/latest/fdm.dmg",
   "vendor_url": "https://files2.freedownloadmanager.org/6/latest/fdm.dmg",
   "bundleId": "org.freedownloadmanager.fdm6",

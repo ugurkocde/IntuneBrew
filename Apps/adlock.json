@@ -1,14 +1,14 @@
 {
   "name": "AdLock",
   "description": "Proxy-based ad blocking tool",
-  "version": "2.1.9.7",
+  "version": "2.1.9.8",
   "url": "https://downloads.adlock.com/mac/AdLock_Installer.dmg",
   "vendor_url": "https://downloads.adlock.com/mac/AdLock_Installer.dmg",
   "bundleId": "com.hankuper.adlock.desktop",
   "homepage": "https://adlock.com/",
   "homebrew_cask": "adlock",
   "fileName": "AdLock_Installer.dmg",
-  "sha": "dec52a47ac40ec7870c7c6ebc626be57a6ce7fc80f5c226040b31d129e31a957",
+  "sha": "1006089fbfeaa11dbbe17c753b0370ccdff9578dbcf94ecd3cbb35f5dea257e6",
   "category": "Security",
   "publisher": "AdLock",
   "previous_version": "2.1.9.7"
