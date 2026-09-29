@@ -33,10 +33,10 @@ export async function synchronize(supabase, apps, notify) {
   const pending = updated.filter(row => row.notification_sent_at === null)
     .sort((a,b) => a.id.localeCompare(b.id));
   // One digest per publication, not one email per small app batch. The API's
-  // recipient delivery ledger skips successful recipients on retry.
-  if (pending.length) {
-    await notify(pending.map(row => ({appName:row.app_name, version:row.version, changelog:row.changelog || ''})));
-  }
+  // recipient delivery ledger skips successful recipients on retry. Call it
+  // even with nothing pending: the same request runs the daily known exploited
+  // vulnerability scan, which must not depend on a new app version shipping.
+  await notify(pending.map(row => ({appName:row.app_name, version:row.version, changelog:row.changelog || ''})));
   // Bound database filter URLs while acknowledging the delivered digest.
   for (let start = 0; start < pending.length; start += 100) {
     const batch = pending.slice(start, start + 100);
