@@ -17,6 +17,10 @@ fi
 echo "Stopping Deckset if running..."
 pkill -f "Deckset" 2>/dev/null || true
 
+# Kill application with bundle ID com.unsignedinteger.Deckset-Paddle if running
+echo "Stopping application with bundle ID com.unsignedinteger.Deckset-Paddle if running..."
+killall -9 "com.unsignedinteger.Deckset-Paddle" 2>/dev/null || true
+
 # Remove /Applications/Deckset.app
 echo "Removing /Applications/Deckset.app..."
 if [ -d "/Applications/Deckset.app" ]; then
