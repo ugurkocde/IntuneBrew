@@ -17,6 +17,10 @@ fi
 echo "Stopping MarsEdit if running..."
 pkill -f "MarsEdit" 2>/dev/null || true
 
+# Kill application with bundle ID com.red-sweater.marsedit5 if running
+echo "Stopping application with bundle ID com.red-sweater.marsedit5 if running..."
+killall -9 "com.red-sweater.marsedit5" 2>/dev/null || true
+
 # Remove /Applications/MarsEdit.app
 echo "Removing /Applications/MarsEdit.app..."
 if [ -d "/Applications/MarsEdit.app" ]; then
