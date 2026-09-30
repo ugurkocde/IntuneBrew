@@ -1209,6 +1209,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/openwork.json",
     "https://formulae.brew.sh/api/cask/openwebstart.json",
     "https://formulae.brew.sh/api/cask/google-chrome.json",
+    "https://formulae.brew.sh/api/cask/paseo.json",
 ]
 
 # PKG in DMG URLs
