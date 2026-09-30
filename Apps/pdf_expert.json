@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "f88c1c4f8d1bc655cc75819e2ad368c6cb6dce5a681ac0ec759ad2c017fa36be",
   "changelog": "https://pdfexpert.com/pem3/changelog",
-  "previous_version": "3.13.3",
+  "previous_version": "3.13.4",
   "category": "Productivity",
   "publisher": "Readdle Inc.",
   "homebrew_cask": "pdf-expert"

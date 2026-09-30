@@ -8,7 +8,7 @@
   "homepage": "https://www.teamviewer.com/",
   "homebrew_cask": "teamviewer-host",
   "fileName": "TeamViewerHost.dmg",
-  "sha": "05809ac5b54fb3be17d8e9c411a9fdd19157ee4d58c5c5081974ed8e9ec113fd",
+  "sha": "d9dd99d3dc829fd34a62b7e8635bbf6ec979c42bfd3e8342b1bac0e1e833a3e8",
   "category": "Utilities",
   "publisher": "TeamViewer GmbH",
   "previous_version": "15"
