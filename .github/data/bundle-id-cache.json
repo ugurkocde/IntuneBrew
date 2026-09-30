@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-09-29T01:18:21.943Z",
+  "last_full_scan": "2026-09-30T00:43:30.483Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9192,15 +9192,16 @@
       "name": "ClickShare"
     },
     "hopper_disassembler": {
-      "last_checked": "2026-07-01T22:35:58.677Z",
-      "bundle_id": null,
-      "status": "unknown",
+      "last_checked": "2026-09-30T00:43:30.367Z",
+      "bundle_id": "com.cryptic-apps.hopper-web-4",
+      "previous_bundle_id": null,
+      "status": "updated",
+      "source": "openai_improved",
       "methods_tried": [
         "mac_app_store",
         "pkg_inspection",
         "github_search",
-        "openai_improved",
-        "openai_alternative"
+        "openai_improved"
       ],
       "name": "Hopper Disassembler"
     },

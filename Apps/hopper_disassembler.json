@@ -4,7 +4,7 @@
   "version": "6.6.0",
   "url": "https://www.hopperapp.com/downloader/public/Hopper-6.6.0-demo.dmg",
   "vendor_url": "https://www.hopperapp.com/downloader/public/Hopper-6.6.0-demo.dmg",
-  "bundleId": null,
+  "bundleId": "com.cryptic-apps.hopper-web-4",
   "homepage": "https://www.hopperapp.com/",
   "homebrew_cask": "hopper-disassembler",
   "fileName": "Hopper-6.6.0-demo.dmg",
