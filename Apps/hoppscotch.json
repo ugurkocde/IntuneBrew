@@ -1,14 +1,14 @@
 {
   "name": "Hoppscotch",
   "description": "Open source API development ecosystem",
-  "version": "26.8.2-0",
-  "url": "https://github.com/hoppscotch/releases/releases/download/v26.8.2-0/Hoppscotch_mac_aarch64.dmg",
-  "vendor_url": "https://github.com/hoppscotch/releases/releases/download/v26.8.2-0/Hoppscotch_mac_aarch64.dmg",
+  "version": "26.9.0-0",
+  "url": "https://github.com/hoppscotch/releases/releases/download/v26.9.0-0/Hoppscotch_mac_aarch64.dmg",
+  "vendor_url": "https://github.com/hoppscotch/releases/releases/download/v26.9.0-0/Hoppscotch_mac_aarch64.dmg",
   "bundleId": "io.hoppscotch.desktop",
   "homepage": "https://hoppscotch.com/",
   "homebrew_cask": "hoppscotch",
   "fileName": "Hoppscotch_mac_aarch64.dmg",
-  "sha": "f307364a41e5becb3d93e6a007f24a7c5fed0073f12d569bea67885ec9447aab",
+  "sha": "a4aebe60186464bc25740177e1260c2e3323af83a5f5bed62325ae23ef653a1b",
   "category": "Developer Tools",
   "publisher": "Hoppscotch",
   "previous_version": "26.8.2-0"

@@ -1,10 +1,15 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-09-30T01:11:33.159140Z",
-  "lastFullSyncAt": "2026-09-30T01:11:33.159140Z",
+  "lastPublishedAt": "2026-10-01T01:29:14.346968Z",
+  "lastFullSyncAt": "2026-10-01T01:29:14.346968Z",
   "lastSuccessfulSyncAt": "2026-09-30T01:11:33.159140Z",
-  "status": "healthy",
-  "failedApps": [],
-  "appCount": 1154,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/36651845934"
+  "status": "degraded",
+  "failedApps": [
+    {
+      "app": "macwhisper",
+      "stage": "packaging"
+    }
+  ],
+  "appCount": 1155,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/36798231630"
 }

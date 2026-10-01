@@ -1,0 +1,12 @@
+{
+  "name": "Paseo",
+  "description": "Self-hosted daemon for AI coding agents",
+  "version": "0.10.2",
+  "url": "https://github.com/getpaseo/paseo/releases/download/v0.10.2/Paseo-0.10.2-arm64.dmg",
+  "vendor_url": "https://github.com/getpaseo/paseo/releases/download/v0.10.2/Paseo-0.10.2-arm64.dmg",
+  "bundleId": "sh.paseo.desktop",
+  "homepage": "https://paseo.sh/",
+  "homebrew_cask": "paseo",
+  "fileName": "Paseo-0.10.2-arm64.dmg",
+  "sha": "02904ffbfd6abed29010ddbc3005ed8c07cb093020e6f4d9c2fa917b8c1cacb4"
+}

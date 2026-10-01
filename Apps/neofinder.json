@@ -9,7 +9,7 @@
   "fileName": "neofinder_9.3.1.pkg",
   "type": "app",
   "sha": "370101d5a93f58fc299f394d31188ee38265e3c3bbee3bd7313f6579cad09f22",
-  "previous_version": "9.3",
+  "previous_version": "9.3.1",
   "category": "Media",
   "publisher": "Dirk Krause",
   "homebrew_cask": "neofinder"
