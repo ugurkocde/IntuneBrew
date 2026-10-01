@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-10-01T00:47:42.068Z",
+  "last_full_scan": "2026-10-01T01:30:38.712Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9433,6 +9433,13 @@
       "status": "verified",
       "source": "file",
       "name": "Outline"
+    },
+    "paseo": {
+      "last_checked": "2026-10-01T01:30:38.704Z",
+      "bundle_id": "sh.paseo.desktop",
+      "status": "verified",
+      "source": "file",
+      "name": "Paseo"
     }
   }
 }
