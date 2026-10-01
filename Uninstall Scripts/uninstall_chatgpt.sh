@@ -37,6 +37,14 @@ elif [ -f "/Library/Application Support/CodexComputerUseAuthorizationPlugin" ]; 
     rm -f "/Library/Application Support/CodexComputerUseAuthorizationPlugin" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/*.com.openai.sky.CUAService
+echo "Removing $HOME/Library/Application Scripts/*.com.openai.sky.CUAService..."
+if [ -d "$HOME/Library/Application Scripts/*.com.openai.sky.CUAService" ]; then
+    rm -rf "$HOME/Library/Application Scripts/*.com.openai.sky.CUAService" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/*.com.openai.sky.CUAService" ]; then
+    rm -f "$HOME/Library/Application Scripts/*.com.openai.sky.CUAService" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Codex
 echo "Removing $HOME/Library/Application Support/Codex..."
 if [ -d "$HOME/Library/Application Support/Codex" ]; then

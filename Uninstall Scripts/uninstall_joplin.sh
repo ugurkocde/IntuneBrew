@@ -25,6 +25,14 @@ elif [ -f "/Applications/Joplin.app" ]; then
     rm -f "/Applications/Joplin.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/.config/joplin-desktop
+echo "Removing $HOME/.config/joplin-desktop..."
+if [ -d "$HOME/.config/joplin-desktop" ]; then
+    rm -rf "$HOME/.config/joplin-desktop" 2>/dev/null || true
+elif [ -f "$HOME/.config/joplin-desktop" ]; then
+    rm -f "$HOME/.config/joplin-desktop" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Joplin
 echo "Removing $HOME/Library/Application Support/Joplin..."
 if [ -d "$HOME/Library/Application Support/Joplin" ]; then

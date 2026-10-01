@@ -41,6 +41,14 @@ elif [ -f "/Applications/AnyDesk.app" ]; then
     rm -f "/Applications/AnyDesk.app" 2>/dev/null || true
 fi
 
+# Remove /etc/anydesk
+echo "Removing /etc/anydesk..."
+if [ -d "/etc/anydesk" ]; then
+    rm -rf "/etc/anydesk" 2>/dev/null || true
+elif [ -f "/etc/anydesk" ]; then
+    rm -f "/etc/anydesk" 2>/dev/null || true
+fi
+
 # Remove $HOME/.anydesk
 echo "Removing $HOME/.anydesk..."
 if [ -d "$HOME/.anydesk" ]; then

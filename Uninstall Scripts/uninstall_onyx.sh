@@ -41,6 +41,22 @@ elif [ -f "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSD
     rm -f "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.titanium.OnyX.help*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.titanium.OnyX
+echo "Removing $HOME/Library/Caches/com.titanium.OnyX..."
+if [ -d "$HOME/Library/Caches/com.titanium.OnyX" ]; then
+    rm -rf "$HOME/Library/Caches/com.titanium.OnyX" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.titanium.OnyX" ]; then
+    rm -f "$HOME/Library/Caches/com.titanium.OnyX" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.titanium.OnyX
+echo "Removing $HOME/Library/HTTPStorages/com.titanium.OnyX..."
+if [ -d "$HOME/Library/HTTPStorages/com.titanium.OnyX" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.titanium.OnyX" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.titanium.OnyX" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.titanium.OnyX" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/OnyX.log
 echo "Removing $HOME/Library/Logs/OnyX.log..."
 if [ -d "$HOME/Library/Logs/OnyX.log" ]; then

@@ -31,6 +31,14 @@ if [ -f "/Applications/Archaeology.app/Archaeology.app/Contents/MacOS/trowel" ];
     rm -f "/Applications/Archaeology.app/Archaeology.app/Contents/MacOS/trowel" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore
+echo "Removing $HOME/Library/Application Scripts/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore..."
+if [ -d "$HOME/Library/Application Scripts/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore" ]; then
+    rm -rf "$HOME/Library/Application Scripts/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore" ]; then
+    rm -f "$HOME/Library/Application Scripts/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/com.mothersruin.Archaeology
 echo "Removing $HOME/Library/Application Scripts/com.mothersruin.Archaeology..."
 if [ -d "$HOME/Library/Application Scripts/com.mothersruin.Archaeology" ]; then
@@ -53,6 +61,14 @@ if [ -d "$HOME/Library/Containers/com.mothersruin.Archaeology" ]; then
     rm -rf "$HOME/Library/Containers/com.mothersruin.Archaeology" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.mothersruin.Archaeology" ]; then
     rm -f "$HOME/Library/Containers/com.mothersruin.Archaeology" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore
+echo "Removing $HOME/Library/Group Containers/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore..."
+if [ -d "$HOME/Library/Group Containers/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore" ]; then
+    rm -rf "$HOME/Library/Group Containers/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore" ]; then
+    rm -f "$HOME/Library/Group Containers/*.com.mothersruin.MRSFoundation.ASN1AnnotationStore" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

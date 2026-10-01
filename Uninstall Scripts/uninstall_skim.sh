@@ -43,6 +43,22 @@ if [ -f "/Applications/Skim.app/Skim.app/Contents/SharedSupport/skimpdf" ]; then
     rm -f "/Applications/Skim.app/Skim.app/Contents/SharedSupport/skimpdf" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-preview
+echo "Removing $HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-preview..."
+if [ -d "$HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-preview" ]; then
+    rm -rf "$HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-preview" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-preview" ]; then
+    rm -f "$HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-preview" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-thumbnails
+echo "Removing $HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-thumbnails..."
+if [ -d "$HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-thumbnails" ]; then
+    rm -rf "$HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-thumbnails" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-thumbnails" ]; then
+    rm -f "$HOME/Library/Application Scripts/net.sourceforge.skim-app.skim.quicklook-thumbnails" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.sourceforge.skim-app.skim.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.sourceforge.skim-app.skim.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.sourceforge.skim-app.skim.sfl*" ]; then
@@ -65,6 +81,22 @@ if [ -d "$HOME/Library/Caches/net.sourceforge.skim-app.skim" ]; then
     rm -rf "$HOME/Library/Caches/net.sourceforge.skim-app.skim" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/net.sourceforge.skim-app.skim" ]; then
     rm -f "$HOME/Library/Caches/net.sourceforge.skim-app.skim" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-preview
+echo "Removing $HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-preview..."
+if [ -d "$HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-preview" ]; then
+    rm -rf "$HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-preview" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-preview" ]; then
+    rm -f "$HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-preview" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-thumbnails
+echo "Removing $HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-thumbnails..."
+if [ -d "$HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-thumbnails" ]; then
+    rm -rf "$HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-thumbnails" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-thumbnails" ]; then
+    rm -f "$HOME/Library/Containers/net.sourceforge.skim-app.skim.quicklook-thumbnails" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Cookies/net.sourceforge.skim-app.skim.binarycookies

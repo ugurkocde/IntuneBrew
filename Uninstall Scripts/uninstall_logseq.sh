@@ -25,6 +25,14 @@ elif [ -f "/Applications/Logseq.app" ]; then
     rm -f "/Applications/Logseq.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/.logseq
+echo "Removing $HOME/.logseq..."
+if [ -d "$HOME/.logseq" ]; then
+    rm -rf "$HOME/.logseq" 2>/dev/null || true
+elif [ -f "$HOME/.logseq" ]; then
+    rm -f "$HOME/.logseq" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Logseq
 echo "Removing $HOME/Library/Application Support/Logseq..."
 if [ -d "$HOME/Library/Application Support/Logseq" ]; then
@@ -55,6 +63,14 @@ if [ -d "$HOME/Library/Saved Application State/com.electron.logseq.savedState" ]
     rm -rf "$HOME/Library/Saved Application State/com.electron.logseq.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.electron.logseq.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.electron.logseq.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/logseq
+echo "Removing $HOME/logseq..."
+if [ -d "$HOME/logseq" ]; then
+    rm -rf "$HOME/logseq" 2>/dev/null || true
+elif [ -f "$HOME/logseq" ]; then
+    rm -f "$HOME/logseq" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

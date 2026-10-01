@@ -29,6 +29,14 @@ elif [ -f "/Applications/Cyberduck.app" ]; then
     rm -f "/Applications/Cyberduck.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/G69SCX94XU.duck
+echo "Removing $HOME/Library/Application Scripts/G69SCX94XU.duck..."
+if [ -d "$HOME/Library/Application Scripts/G69SCX94XU.duck" ]; then
+    rm -rf "$HOME/Library/Application Scripts/G69SCX94XU.duck" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/G69SCX94XU.duck" ]; then
+    rm -f "$HOME/Library/Application Scripts/G69SCX94XU.duck" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Cyberduck
 echo "Removing $HOME/Library/Application Support/Cyberduck..."
 if [ -d "$HOME/Library/Application Support/Cyberduck" ]; then
