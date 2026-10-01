@@ -45,12 +45,28 @@ elif [ -f "$HOME/.orbstack" ]; then
     rm -f "$HOME/.orbstack" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/*.dev.orbstack
+echo "Removing $HOME/Library/Application Scripts/*.dev.orbstack..."
+if [ -d "$HOME/Library/Application Scripts/*.dev.orbstack" ]; then
+    rm -rf "$HOME/Library/Application Scripts/*.dev.orbstack" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/*.dev.orbstack" ]; then
+    rm -f "$HOME/Library/Application Scripts/*.dev.orbstack" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/dev.kdrag0n.MacVirt
 echo "Removing $HOME/Library/Caches/dev.kdrag0n.MacVirt..."
 if [ -d "$HOME/Library/Caches/dev.kdrag0n.MacVirt" ]; then
     rm -rf "$HOME/Library/Caches/dev.kdrag0n.MacVirt" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/dev.kdrag0n.MacVirt" ]; then
     rm -f "$HOME/Library/Caches/dev.kdrag0n.MacVirt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/SentryCrash/OrbStack
+echo "Removing $HOME/Library/Caches/SentryCrash/OrbStack..."
+if [ -d "$HOME/Library/Caches/SentryCrash/OrbStack" ]; then
+    rm -rf "$HOME/Library/Caches/SentryCrash/OrbStack" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/SentryCrash/OrbStack" ]; then
+    rm -f "$HOME/Library/Caches/SentryCrash/OrbStack" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Group Containers/*.dev.orbstack
