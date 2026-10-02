@@ -10,5 +10,6 @@
   "fileName": "Paseo-0.10.2-arm64.dmg",
   "sha": "02904ffbfd6abed29010ddbc3005ed8c07cb093020e6f4d9c2fa917b8c1cacb4",
   "category": "Developer Tools",
-  "publisher": "Paseo"
+  "publisher": "Paseo",
+  "previous_version": "0.10.2"
 }

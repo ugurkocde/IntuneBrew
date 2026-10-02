@@ -9,7 +9,7 @@
   "fileName": "vivaldi_8.2.4133.80.pkg",
   "type": "app",
   "sha": "8816fd93458ba79e8695cb060e2664f79b8aa7bf2dfffd20c93d0a814c75c771",
-  "previous_version": "8.2.4133.76",
+  "previous_version": "8.2.4133.80",
   "category": "Browsers",
   "publisher": "Vivaldi Technologies",
   "homebrew_cask": "vivaldi"

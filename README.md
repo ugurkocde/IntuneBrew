@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1155-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -587,102 +587,72 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-10-01T01:29:14.346968Z*
+*Last checked: 2026-10-02T01:24:57.486190Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| audacity | 4.0.0 | 4.0.1 |
-| beeper | 4.3.152 | 4.3.160 |
-| bettertouchtool | 6.869 | 6.876 |
-| brave | 1.96.59.0 | 1.96.60.0 |
-| bruno | 4.2.0 | 4.2.1 |
-| chatgpt | 26.924.51851 | 26.928.21956 |
-| claude | 2.9939.4 | 2.16120.0 |
-| claude code | 2.1.277 | 2.1.285 |
-| clop | 3.4.3 | 3.4.5 |
-| dataflare | 3.2.2 | 3.2.3 |
-| datagrip | 2026.2.5 | 2026.2.6 |
-| defold | 1.13.1 | 1.13.2 |
-| devonthink | 4.4 | 4.4.1 |
-| dockdoor | 1.40.1 | 1.40.2 |
-| dorico | 6.2.30 | 6.2.31 |
-| downie | 4.13.1 | 4.13.2 |
-| dropbox | 270.4.3312 | 272.4.3798 |
-| element | 1.12.29 | 1.12.30 |
-| expandrive | 2026.09.25.895 | 2026.09.30.898 |
-| floorp browser | 12.18.1 | 12.19.0 |
-| forklift | 4.7.5 | 4.7.6 |
-| framer | 2026.34.0 | 2026.39.0 |
-| gdevelop | 5.6.282 | 5.6.283 |
-| github copilot cli | 1.0.89 | 1.0.90 |
-| google chrome | 154.0.8037.58 | 154.0.8037.93 |
-| grammarly desktop | 1.196.0.0 | 1.197.0.0 |
-| home assistant | 2026.9.2 | 2026.9.3 |
-| hoppscotch | 26.8.2-0 | 26.9.0-0 |
-| insta360 studio | 6.0.5 | 6.0.6 |
-| jabra direct | 8.2.23201 | 8.3.26701 |
-| kiro | 1.1.70 | 1.2.4 |
-| lark | 8.0.3 | 8.1.22 |
-| librewolf | 156.0.1 | 157.0 |
-| logitech options | 2.7.970334 | 2.8.981479 |
-| lookaway | 2.4.9 | 2.4.10 |
-| loom | 0.378.0 | 0.379.1 |
-| marsedit | 5.4.5 | 5.4.6 |
-| microsoft 365 copilot | 1.2608.0301 | 1.2609.2301 |
-| microsoft edge | 154.0.4258.37 | 154.0.4258.48 |
-| microsoft excel | 16.113.26092012 | 16.113.26092714 |
-| microsoft office | 16.113.26092012 | 16.113.26092714 |
-| microsoft office businesspro | 16.113.26092012 | 16.113.26092714 |
-| microsoft onenote | 16.113.26092012 | 16.113.26092714 |
-| microsoft powerpoint | 16.113.26092012 | 16.113.26092714 |
-| microsoft teams | 26225.1708.5124.9749 | 26246.1709.5146.8945 |
-| microsoft visual studio code | 1.139.1 | 1.140.0 |
-| microsoft word | 16.113.26092012 | 16.113.26092714 |
-| mozilla firefox | 156.0.1 | 157.0 |
-| mozilla firefox developer edition | 158.0b1 | 158.0b2 |
-| mozilla firefox esr | 140.16.0 | 140.17.0 |
-| mozilla thunderbird | 156.0.1 | 157.0 |
-| mullvad browser | 15.0.23 | 15.0.24 |
-| netnewswire | 7.1.4 | 7.1.5 |
-| notion | 7.36.0 | 7.36.1 |
-| okta advanced server access | 1.114.0 | 1.115.0 |
-| okta verify | 9.69.0 | 9.71.0 |
-| ollama | 0.34.4 | 0.35.0 |
-| openaudible | 4.8.8 | 4.9 |
-| opera | 136.0.6008.52 | 136.0.6008.80 |
-| opera gx | 136.0.6008.67 | 136.0.6008.76 |
-| postico | 2.3.3 | 2.3.4 |
-| postman | 12.30.0 | 12.30.4 |
-| raycast | 2.5.3.0 | 2.6.0.0 |
-| rectangle pro | 3.91 | 3.92 |
-| remnote | 1.28.32 | 1.28.37 |
-| remote desktop manager | 2026.3.0.5 | 2026.3.1.2 |
-| rive | 0.9.21 | 0.9.46 |
-| roon | 2.73 | 2.73.1 |
-| sbarex qlmarkdown | 1.5.5 | 1.5.6 |
-| standard notes | 3.202.0 | 3.202.7 |
-| stats | 3.0.18 | 3.0.19 |
-| studio | 2.26.8 | 2.26.9 |
-| synology drive | 4.2.0 | 4.0.3 |
-| teamviewer | 15.81.6 | 15.82.6 |
-| termius | 10.1.0 | 10.1.3 |
-| tor browser | 15.0.23 | 15.0.24 |
-| transcribe | 9.70.0 | 9.70.1 |
-| tuta mail | 360.260922.0 | 361.260929.0 |
-| unity hub | 3.21.3 | 3.22.0 |
-| vivaldi | 8.2.4133.76 | 8.2.4133.80 |
-| warp | 0.2026.09.16.08.27.stable | 0.2026.09.23.14.34.stable |
-| waterfox | 6.7.4 | 6.7.5 |
-| whatsapp | 26.39.15 | 26.39.17 |
-| windows app | 11.4.2 | 11.4.3 |
-| workflowy | 4.3.2609230951 | 4.3.2609291146 |
-| zed | 1.21.0 | 1.22.0 |
-| zoom | 7.2.1.88329 | 7.2.2.88465 |
-| zotero | 10.0.4 | 10.0.5 |
-
-1 app updates could not be published. See [catalog sync status](catalog-sync.json).
+| 1password | 8.12.36 | 8.12.38 |
+| advanced renamer | 4.25 | 4.26 |
+| aircall workspace | 1.18.8 | 1.18.10 |
+| android studio | 2026.1.4.8 | 2026.2.1.8 |
+| appflowy | 0.14.5 | 0.14.6 |
+| arc | 1.166.0 | 1.167.0 |
+| batfi | 4.0.1 | 4.0.2 |
+| bettertouchtool | 6.876 | 6.877 |
+| bitfocus companion | 5.0.6 | 5.0.7 |
+| bitwarden | 2026.9.0 | 2026.9.1 |
+| chatgpt | 26.928.21956 | 26.928.40906 |
+| chatwork | 2.25.3 | 2.25.4 |
+| claude | 2.16120.0 | 2.19675.0 |
+| cleanmymac | 5.7.0 | 5.7.1 |
+| clion | 2026.2.3 | 2026.2.3.1 |
+| clipbook | 2.2.3 | 2.3.0 |
+| cursor | 3.22.12 | 3.23.12 |
+| dia | 1.50.1 | 1.51.0 |
+| eaglefiler | 1.9.21 | 1.9.22 |
+| enpass | 6.12.6.2759 | 6.12.7.2787 |
+| expandrive | 2026.09.30.898 | 2026.10.01.900 |
+| fantastical | 4.2.1 | 4.2.2 |
+| fellow | 5.7.9 | 5.7.13 |
+| figma | 126.8.18 | 126.9.11 |
+| github copilot cli | 1.0.90 | 1.0.91 |
+| google antigravity | 2.18.1 | 2.19.1 |
+| jetbrains rider | 2026.2.3 | 2026.2.3.1 |
+| keeper password manager | 18.6.2 | 18.6.4 |
+| kitty | 0.49.1 | 0.49.2 |
+| krisp | 3.17.4 | 3.17.6 |
+| logitech g hub | 2026.6.974819 | 2026.6.981214 |
+| loom | 0.379.1 | 0.379.4 |
+| macpacker | 0.22.0 | 1.0.0 |
+| mactracker | 8.2.5 | 8.3 |
+| macwhisper | 15.2.1 | 15.3 |
+| melodics | 5.0.1455 | 5.0.1491 |
+| microsoft edge | 154.0.4258.48 | 154.0.4258.53 |
+| mozilla thunderbird | 157.0 | 157.0.1 |
+| naps2 | 8.3.2 | 8.4.0 |
+| onlyswitch | 2.8.0 | 2.8.1 |
+| opencode | 1.18.33 | 1.18.34 |
+| paste | 7.0.0 | 7.0.1 |
+| postman | 12.30.4 | 12.30.5 |
+| rocketchat | 4.17.3 | 4.17.4 |
+| screen studio | 3.7.5-4595 | 4.0.1-4897 |
+| signal | 8.28.0 | 8.29.0 |
+| spotify | 1.3.1.234 | 1.3.3.264 |
+| sunsama | 3.4.12 | 3.4.13 |
+| superduper | 4.0.8 | 4.0.9 |
+| superhuman | 1041.0.63 | 1041.0.64 |
+| todoist | 9.30.0 | 9.31.0 |
+| transmit | 5.11.6 | 5.11.7 |
+| trezor suite | 26.9.2 | 26.9.3 |
+| tuple | 3.3.6 | 3.3.7 |
+| unity hub | 3.22.0 | 3.22.1 |
+| viscosity | 1.13.1 | 1.13.2 |
+| warp | 0.2026.09.23.14.34.stable | 0.2026.09.30.08.29.stable |
+| whatsapp | 26.39.17 | 26.39.19 |
+| xnviewmp | 1.11.7 | 1.12.1 |
 
 ## ✨ Features
 
@@ -710,7 +680,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 |-------------|----------------|
 | ❌ .NET SDK | 10.0.401 |
 | <img src='Logos/010_editor.png' width='32' height='32'> 010 Editor | 16.0.4 |
-| <img src='Logos/1password.png' width='32' height='32'> 1Password | 8.12.36 |
+| <img src='Logos/1password.png' width='32' height='32'> 1Password | 8.12.38 |
 | <img src='Logos/1password_cli.png' width='32' height='32'> 1Password CLI | 2.39.0 |
 | <img src='Logos/4k_slideshow_maker.png' width='32' height='32'> 4K Slideshow Maker | 2.0.1 |
 | <img src='Logos/4k_stogram.png' width='32' height='32'> 4K Stogram | 4.9.0 |
@@ -736,14 +706,11 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/adobe_creative_cloud.png' width='32' height='32'> Adobe Creative Cloud | 6.10.0.252.41 |
 | <img src='Logos/adobe_digital_editions.png' width='32' height='32'> Adobe Digital Editions | 4.5.12 |
 | <img src='Logos/adobe_dng_converter.png' width='32' height='32'> Adobe DNG Converter | 18.7 |
-| <img src='Logos/advanced_renamer.png' width='32' height='32'> Advanced Renamer | 4.25 |
+| <img src='Logos/advanced_renamer.png' width='32' height='32'> Advanced Renamer | 4.26 |
 | <img src='Logos/affinity.png' width='32' height='32'> Affinity | 3.3.0 |
-| <img src='Logos/affinity_designer_2.png' width='32' height='32'> Affinity Designer 2 | 2.6.5 |
-| <img src='Logos/affinity_photo_2.png' width='32' height='32'> Affinity Photo 2 | 2.6.5 |
-| <img src='Logos/affinity_publisher_2.png' width='32' height='32'> Affinity Publisher 2 | 2.6.5 |
 | <img src='Logos/airbuddy.png' width='32' height='32'> AirBuddy | 3.0.2 |
 | <img src='Logos/aircall.png' width='32' height='32'> Aircall | 3.1.66 |
-| <img src='Logos/aircall_workspace.png' width='32' height='32'> Aircall Workspace | 1.18.8 |
+| <img src='Logos/aircall_workspace.png' width='32' height='32'> Aircall Workspace | 1.18.10 |
 | <img src='Logos/airdroid.png' width='32' height='32'> AirDroid | 3.7.3.1 |
 | <img src='Logos/airfoil.png' width='32' height='32'> Airfoil | 5.13.0 |
 | <img src='Logos/airparrot.png' width='32' height='32'> AirParrot | 3.1.9 |
@@ -752,11 +719,9 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/airtame.png' width='32' height='32'> Airtame | 4.16.0 |
 | <img src='Logos/airy.png' width='32' height='32'> Airy | 3.29.2 |
 | <img src='Logos/akiflow.png' width='32' height='32'> Akiflow | 2.81.8 |
-| <img src='Logos/alacritty.png' width='32' height='32'> Alacritty | 0.17.0 |
 | <img src='Logos/alcove.png' width='32' height='32'> Alcove | 1.7.7 |
 | <img src='Logos/aldente.png' width='32' height='32'> AlDente | 1.39.4 |
 | <img src='Logos/alfred.png' width='32' height='32'> Alfred | 5.8.1 |
-| <img src='Logos/alloy.png' width='32' height='32'> Alloy | 6.2.0 |
 | <img src='Logos/altair_graphql_client.png' width='32' height='32'> Altair GraphQL Client | 8.5.9 |
 | <img src='Logos/altserver.png' width='32' height='32'> AltServer | 1.8.1 |
 | <img src='Logos/alttab.png' width='32' height='32'> AltTab | 11.8.0 |
@@ -764,7 +729,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/amadine.png' width='32' height='32'> Amadine | 1.8.4 |
 | <img src='Logos/amazon_chime.png' width='32' height='32'> Amazon Chime | 5.23.22533 |
 | <img src='Logos/amazon_music.png' width='32' height='32'> Amazon Music | 9.5.2.2478 |
-| <img src='Logos/amazon_q.png' width='32' height='32'> Amazon Q | 1.19.6 |
 | <img src='Logos/amazon_workspaces.png' width='32' height='32'> Amazon Workspaces | 5.33.0.6168 |
 | <img src='Logos/amethyst.png' width='32' height='32'> Amethyst | 0.24.3 |
 | <img src='Logos/amie.png' width='32' height='32'> Amie | 260909.0.0 |
@@ -772,8 +736,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/android_ndk.png' width='32' height='32'> Android NDK | 30 |
 | <img src='Logos/android_sdk_commandline_tools.png' width='32' height='32'> Android SDK Command-line Tools | 15859902 |
 | <img src='Logos/android_sdk_platformtools.png' width='32' height='32'> Android SDK Platform-Tools | 37.0.1 |
-| <img src='Logos/android_studio.png' width='32' height='32'> Android Studio | 2026.1.4.8 |
-| <img src='Logos/angry_ip_scanner.png' width='32' height='32'> Angry IP Scanner | 3.9.3 |
+| <img src='Logos/android_studio.png' width='32' height='32'> Android Studio | 2026.2.1.8 |
 | <img src='Logos/anki.png' width='32' height='32'> Anki | 26.09.3 |
 | <img src='Logos/another_redis_desktop_manager.png' width='32' height='32'> Another Redis Desktop Manager | 1.7.4 |
 | <img src='Logos/antinote.png' width='32' height='32'> Antinote | 2.1.3 |
@@ -783,16 +746,12 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/apidog.png' width='32' height='32'> Apidog | 2.8.49 |
 | <img src='Logos/apifox.png' width='32' height='32'> Apifox | 2.8.49 |
 | <img src='Logos/apparency.png' width='32' height='32'> Apparency | 3.4 |
-| <img src='Logos/appflowy.png' width='32' height='32'> AppFlowy | 0.14.5 |
+| <img src='Logos/appflowy.png' width='32' height='32'> AppFlowy | 0.14.6 |
 | <img src='Logos/appgate_sdp_client_for_macos.png' width='32' height='32'> AppGate SDP Client for macOS | 6.7.3 |
-| <img src='Logos/appgrid.png' width='32' height='32'> AppGrid | 1.0.4 |
-| <img src='Logos/appium_inspector_gui.png' width='32' height='32'> Appium Inspector GUI | 2026.5.1 |
 | <img src='Logos/applite.png' width='32' height='32'> Applite | 1.4.2 |
-| <img src='Logos/apptivate.png' width='32' height='32'> Apptivate | 2.2.1 |
 | <img src='Logos/aptible_toolbelt.png' width='32' height='32'> Aptible Toolbelt | 1.0.2 |
-| <img src='Logos/arc.png' width='32' height='32'> Arc | 1.166.0 |
+| <img src='Logos/arc.png' width='32' height='32'> Arc | 1.167.0 |
 | <img src='Logos/archaeology.png' width='32' height='32'> Archaeology | 1.7 |
-| <img src='Logos/archi.png' width='32' height='32'> Archi | 5.7.0 |
 | <img src='Logos/arduino_ide.png' width='32' height='32'> Arduino IDE | 2.3.10 |
 | <img src='Logos/arq.png' width='32' height='32'> Arq | 7.49 |
 | <img src='Logos/asana.png' width='32' height='32'> Asana | 2.9.1 |
@@ -803,17 +762,12 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/audio_hijack.png' width='32' height='32'> Audio Hijack | 4.6.0 |
 | <img src='Logos/audirvana.png' width='32' height='32'> Audirvana | 3.5.50 |
 | <img src='Logos/aurora_hdr.png' width='32' height='32'> Aurora HDR | 1.0.2 |
-| <img src='Logos/autodesk_fusion_360.png' width='32' height='32'> Autodesk Fusion 360 | latest |
-| <img src='Logos/avast_secure_browser.png' width='32' height='32'> Avast Secure Browser | 139.0.6697.68 |
-| <img src='Logos/avidemux.png' width='32' height='32'> Avidemux | 2.8.1 |
 | <img src='Logos/aws_client_vpn.png' width='32' height='32'> AWS Client VPN | 6.2.0 |
 | <img src='Logos/aws_corretto_jdk.png' width='32' height='32'> AWS Corretto JDK | 21.0.12.12.1 |
 | <img src='Logos/axure_rp.png' width='32' height='32'> Axure RP | 11.0.0.4150 |
 | <img src='Logos/azul_zulu_java_standard_edition_development_kit.png' width='32' height='32'> Azul Zulu Java Standard Edition Development Kit | 27.0.0 |
-| <img src='Logos/azure_data_studio.png' width='32' height='32'> Azure Data Studio | 1.52.0 |
 | <img src='Logos/backblaze.png' width='32' height='32'> Backblaze | 10.0.3.1076 |
 | <img src='Logos/background_music.png' width='32' height='32'> Background Music | 0.5.0 |
-| <img src='Logos/backlog.png' width='32' height='32'> Backlog | 1.8.0 |
 | <img src='Logos/backuploupe.png' width='32' height='32'> BackupLoupe | 3.15.1 |
 | <img src='Logos/badgeify.png' width='32' height='32'> Badgeify | 1.14.6 |
 | <img src='Logos/balsamiq_wireframes.png' width='32' height='32'> Balsamiq Wireframes | 4.8.6 |
@@ -822,20 +776,18 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/bartender.png' width='32' height='32'> Bartender | 7.0.4 |
 | <img src='Logos/basecamp.png' width='32' height='32'> Basecamp | 5.2.0 |
 | <img src='Logos/basictex.png' width='32' height='32'> BasicTeX | 2026.0301 |
-| <img src='Logos/batfi.png' width='32' height='32'> BatFi | 4.0.1 |
+| <img src='Logos/batfi.png' width='32' height='32'> BatFi | 4.0.2 |
 | <img src='Logos/battery.png' width='32' height='32'> Battery | 1.4.0 |
 | <img src='Logos/battery_buddy.png' width='32' height='32'> Battery Buddy | 1.0.4 |
 | <img src='Logos/bbedit.png' width='32' height='32'> BBEdit | 16.0.3 |
 | <img src='Logos/bdash.png' width='32' height='32'> Bdash | 1.35.2 |
-| <img src='Logos/beardedspice.png' width='32' height='32'> BeardedSpice | 2.2.3 |
 | <img src='Logos/beaver_notes.png' width='32' height='32'> Beaver Notes | 4.4.0 |
 | <img src='Logos/beekeeper_studio.png' width='32' height='32'> Beekeeper Studio | 6.1.4 |
 | <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.3.160 |
 | <img src='Logos/berkeley_open_infrastructure_for_network_computing.png' width='32' height='32'> Berkeley Open Infrastructure for Network Computing | 8.2.11 |
-| <img src='Logos/betaflightconfigurator.png' width='32' height='32'> Betaflight-Configurator | 10.10.0 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 5.0.6 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.7 |
-| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.876 |
+| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.877 |
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 6.0.6 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.2.6.32774 |
 | <img src='Logos/bezel.png' width='32' height='32'> Bezel | 5.2.0 |
@@ -845,11 +797,10 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/binary_ninja.png' width='32' height='32'> Binary Ninja | 6.0.10601 |
 | <img src='Logos/birdfont.png' width='32' height='32'> BirdFont | 6.15.1 |
 | <img src='Logos/biscuit.png' width='32' height='32'> Biscuit | 2.1.2 |
-| <img src='Logos/bitbar.png' width='32' height='32'> BitBar | 1.10.1 |
 | <img src='Logos/bitbox.png' width='32' height='32'> BitBox | 4.52.0 |
-| <img src='Logos/bitfocus_companion.png' width='32' height='32'> Bitfocus Companion | 5.0.6 |
+| <img src='Logos/bitfocus_companion.png' width='32' height='32'> Bitfocus Companion | 5.0.7 |
 | <img src='Logos/bitrix24.png' width='32' height='32'> Bitrix24 | 23.0.32.91 |
-| <img src='Logos/bitwarden.png' width='32' height='32'> Bitwarden | 2026.9.0 |
+| <img src='Logos/bitwarden.png' width='32' height='32'> Bitwarden | 2026.9.1 |
 | <img src='Logos/bitwig_studio.png' width='32' height='32'> Bitwig Studio | 6.1.3 |
 | <img src='Logos/blackhole_16ch.png' width='32' height='32'> BlackHole 16ch | 0.7.1 |
 | <img src='Logos/blackhole_2ch.png' width='32' height='32'> BlackHole 2ch | 0.7.1 |
@@ -859,8 +810,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/blip.png' width='32' height='32'> blip | 1.2.3 |
 | <img src='Logos/blizzard_battlenet.png' width='32' height='32'> Blizzard Battle.net | 1.19.3.3219 |
 | <img src='Logos/blockblock.png' width='32' height='32'> BlockBlock | 2.5.2 |
-| <img src='Logos/bluebubbles.png' width='32' height='32'> BlueBubbles | 1.9.9 |
-| <img src='Logos/bluefish.png' width='32' height='32'> Bluefish | 2.4.1 |
 | <img src='Logos/bluej.png' width='32' height='32'> BlueJ | 6.0.1 |
 | <img src='Logos/bluewallet.png' width='32' height='32'> BlueWallet | 7.2.6 |
 | <img src='Logos/blurscreen.png' width='32' height='32'> BlurScreen | 1.0 |
@@ -869,11 +818,8 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/bome_network.png' width='32' height='32'> Bome Network | 1.7.0 |
 | <img src='Logos/boom_3d.png' width='32' height='32'> Boom 3D | 2.3.2 |
 | <img src='Logos/boop.png' width='32' height='32'> Boop | 1.4.0 |
-| <img src='Logos/boostnotenext.png' width='32' height='32'> Boostnote.Next | 0.23.1 |
 | <img src='Logos/box_drive.png' width='32' height='32'> Box Drive | 2.54.172 |
 | <img src='Logos/box_tools.png' width='32' height='32'> Box Tools | 4.32 |
-| <img src='Logos/boxcryptor.png' width='32' height='32'> Boxcryptor | 3.13.680 |
-| <img src='Logos/brackets.png' width='32' height='32'> Brackets | 2.2.0 |
 | ❌ Brain.fm | 0.0.327 |
 | <img src='Logos/brave.png' width='32' height='32'> Brave | 1.96.60.0 |
 | <img src='Logos/breaktimer.png' width='32' height='32'> BreakTimer | 2.0.3 |
@@ -882,9 +828,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/bruno.png' width='32' height='32'> Bruno | 4.2.1 |
 | <img src='Logos/bunch.png' width='32' height='32'> Bunch | 1.4.19 |
 | <img src='Logos/busycal.png' width='32' height='32'> BusyCal | 2026.3.3 |
-| <img src='Logos/busycontacts.png' width='32' height='32'> BusyContacts | 2026.3.3 |
 | <img src='Logos/butler.png' width='32' height='32'> Butler | 4.4.9 |
-| <img src='Logos/buttercup.png' width='32' height='32'> Buttercup | 2.28.1 |
 | <img src='Logos/buzz.png' width='32' height='32'> Buzz | 1.4.5 |
 | <img src='Logos/cacher.png' width='32' height='32'> Cacher | 2.47.9 |
 | <img src='Logos/caffeine.png' width='32' height='32'> Caffeine | 1.6.4 |
@@ -899,47 +843,38 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/capcut.png' width='32' height='32'> CapCut | 9.5.0.4590 |
 | <img src='Logos/captain.png' width='32' height='32'> Captain | 10.5.0 |
 | <img src='Logos/captin.png' width='32' height='32'> Captin | 2.0.1 |
-| <img src='Logos/caption.png' width='32' height='32'> Caption | 2.0.1 |
 | <img src='Logos/capto.png' width='32' height='32'> Capto | 2.1.6 |
 | <img src='Logos/carbon_copy_cloner.png' width='32' height='32'> Carbon Copy Cloner | 7.2.1 |
 | <img src='Logos/cardhop.png' width='32' height='32'> Cardhop | 2.5 |
 | ❌ cardPresso | 1.7.140 |
 | <img src='Logos/castr.png' width='32' height='32'> castr | 3.1.0 |
 | <img src='Logos/catch.png' width='32' height='32'> Catch | 2.3 |
-| <img src='Logos/cellprofiler.png' width='32' height='32'> CellProfiler | 4.2.8 |
-| <img src='Logos/cerebro.png' width='32' height='32'> Cerebro | 0.11.0 |
 | <img src='Logos/chalk.png' width='32' height='32'> Chalk | 1.7.5 |
 | <img src='Logos/charles.png' width='32' height='32'> Charles | 5.2.1 |
 | <img src='Logos/charmstone.png' width='32' height='32'> Charmstone | 1.44 |
-| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 26.928.21956 |
-| <img src='Logos/chatgpt_atlas.png' width='32' height='32'> ChatGPT Atlas | 1.2026.189.1 |
+| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 26.928.40906 |
 | <img src='Logos/chatgpt_classic.png' width='32' height='32'> ChatGPT Classic | 1.2026.184 |
 | <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 26.9.1 |
-| <img src='Logos/chatwork.png' width='32' height='32'> ChatWork | 2.25.3 |
-| <img src='Logos/cheatsheet.png' width='32' height='32'> CheatSheet | 1.6.4 |
+| <img src='Logos/chatwork.png' width='32' height='32'> ChatWork | 2.25.4 |
 | <img src='Logos/cheetah3d.png' width='32' height='32'> Cheetah3D | 8.1.3 |
 | <img src='Logos/chime.png' width='32' height='32'> Chime | 2.2.5 |
 | <img src='Logos/chipmunk_log_analyzer__viewer.png' width='32' height='32'> Chipmunk Log Analyzer & Viewer | 4.3.0 |
-| <img src='Logos/chirp.png' width='32' height='32'> CHIRP | 20250801 |
 | <img src='Logos/choosy.png' width='32' height='32'> Choosy | 2.5.2 |
 | <img src='Logos/chrome_remote_desktop.png' width='32' height='32'> Chrome Remote Desktop | 154.0.8037.11 |
-| <img src='Logos/chromium.png' width='32' height='32'> Chromium | latest |
 | <img src='Logos/chronosync.png' width='32' height='32'> ChronoSync | 12.0.3 |
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20260917083054 |
-| <img src='Logos/cisco_proximity.png' width='32' height='32'> Cisco Proximity | 4.0.0 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 26.09.0.17 |
 | <img src='Logos/clamxav.png' width='32' height='32'> ClamXAV | 3.11.1 |
-| <img src='Logos/claude.png' width='32' height='32'> Claude | 2.16120.0 |
+| <img src='Logos/claude.png' width='32' height='32'> Claude | 2.19675.0 |
 | ❌ Claude Code | 2.1.285 |
 | <img src='Logos/cleanclip.png' width='32' height='32'> CleanClip | 2.4.7 |
-| <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.7.0 |
+| <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.7.1 |
 | <img src='Logos/cleanmymac_x_chinese.png' width='32' height='32'> CleanMyMac X Chinese | 4.15.14 |
 | <img src='Logos/cleanshot.png' width='32' height='32'> CleanShot | 5.0.1 |
-| <img src='Logos/cleartext.png' width='32' height='32'> Cleartext | 2.45 |
 | <img src='Logos/clickshare.png' width='32' height='32'> ClickShare | 4.51.1 |
 | <img src='Logos/clickup.png' width='32' height='32'> ClickUp | 3.5.343 |
-| <img src='Logos/clion.png' width='32' height='32'> CLion | 2026.2.3 |
-| <img src='Logos/clipbook.png' width='32' height='32'> ClipBook | 2.2.3 |
+| <img src='Logos/clion.png' width='32' height='32'> CLion | 2026.2.3.1 |
+| <img src='Logos/clipbook.png' width='32' height='32'> ClipBook | 2.3.0 |
 | <img src='Logos/clipgrab.png' width='32' height='32'> ClipGrab | 3.9.16 |
 | <img src='Logos/clipy.png' width='32' height='32'> Clipy | 1.3.0 |
 | <img src='Logos/clocker.png' width='32' height='32'> Clocker | 26.13 |
@@ -947,41 +882,33 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/clop.png' width='32' height='32'> Clop | 3.4.5 |
 | <img src='Logos/cloudcompare.png' width='32' height='32'> CloudCompare | 2.13.2 |
 | <img src='Logos/cloudflare_warp.png' width='32' height='32'> Cloudflare WARP | 2026.7.1376.0 |
-| <img src='Logos/cloudytabs.png' width='32' height='32'> CloudyTabs | 2.0 |
 | <img src='Logos/cmtrace_open.png' width='32' height='32'> CMTrace Open | 1.6.0 |
 | <img src='Logos/cmux.png' width='32' height='32'> cmux | 0.64.25 |
 | <img src='Logos/cncnet_classic_command__conquer.png' width='32' height='32'> CnCNet: Classic Command & Conquer | 2.1 |
 | <img src='Logos/coconutbattery.png' width='32' height='32'> coconutBattery | 4.4.0 |
 | <img src='Logos/codeedit.png' width='32' height='32'> CodeEdit | 0.3.6 |
 | <img src='Logos/coderunner.png' width='32' height='32'> CodeRunner | 4.5 |
-| <img src='Logos/codex.png' width='32' height='32'> Codex | 26.623.141536 |
 | <img src='Logos/coherence_x.png' width='32' height='32'> Coherence X | 5.1.4 |
 | <img src='Logos/colorsnapper_2.png' width='32' height='32'> ColorSnapper 2 | 1.7.1 |
 | <img src='Logos/colorwell.png' width='32' height='32'> ColorWell | 8.1.5 |
 | <img src='Logos/colour_contrast_analyser.png' width='32' height='32'> Colour Contrast Analyser | 3.5.5 |
 | <img src='Logos/combine_pdfs.png' width='32' height='32'> Combine PDFs | 5.6.1 |
-| <img src='Logos/comfyui.png' width='32' height='32'> ComfyUI | 0.9.4 |
 | <img src='Logos/commander_one.png' width='32' height='32'> Commander One | 3.18 |
 | <img src='Logos/company_portal.png' width='32' height='32'> Company Portal | 5.2606.0 |
 | <img src='Logos/compositor.png' width='32' height='32'> Compositor | 1.28.0 |
 | <img src='Logos/connect_fonts.png' width='32' height='32'> Connect Fonts | 28.1.8 |
 | <img src='Logos/connectmenow.png' width='32' height='32'> ConnectMeNow | 4.0.18 |
-| <img src='Logos/contexts.png' width='32' height='32'> Contexts | 3.9.0 |
-| <img src='Logos/cool_retro_term.png' width='32' height='32'> Cool Retro Term | 1.2.0 |
-| <img src='Logos/coolterm.png' width='32' height='32'> CoolTerm | 2.4.0.3.0.1425 |
 | <img src='Logos/copilot_for_xcode.png' width='32' height='32'> Copilot for Xcode | 0.38.0 |
 | <img src='Logos/copyclip.png' width='32' height='32'> CopyClip | 3.993 |
-| <img src='Logos/copyq.png' width='32' height='32'> CopyQ | 16.0.0 |
 | <img src='Logos/cork.png' width='32' height='32'> Cork | 2.0.3 |
 | <img src='Logos/coteditor.png' width='32' height='32'> CotEditor | 7.1.0 |
 | <img src='Logos/craft.png' width='32' height='32'> Craft | 3.6.8 |
 | <img src='Logos/crashplan.png' width='32' height='32'> CrashPlan | 12.0.0 |
 | <img src='Logos/crossover.png' width='32' height='32'> CrossOver | 26.3.0 |
-| <img src='Logos/crypter.png' width='32' height='32'> Crypter | 5.0.0 |
 | <img src='Logos/cryptomator.png' width='32' height='32'> Cryptomator | 1.19.3 |
 | <img src='Logos/crystalfetch.png' width='32' height='32'> Crystalfetch | 2.2.0 |
 | <img src='Logos/curio.png' width='32' height='32'> Curio | 32.0.4 |
-| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 3.22.12 |
+| <img src='Logos/cursor.png' width='32' height='32'> Cursor | 3.23.12 |
 | <img src='Logos/cursorsense.png' width='32' height='32'> CursorSense | 2.5 |
 | <img src='Logos/cursr.png' width='32' height='32'> Cursr | 1.7.4 |
 | <img src='Logos/customshortcuts.png' width='32' height='32'> CustomShortcuts | 1.3 |
@@ -989,21 +916,17 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/daisydisk.png' width='32' height='32'> DaisyDisk | 4.34.2 |
 | <img src='Logos/dangerzone.png' width='32' height='32'> Dangerzone | 0.11.0 |
 | <img src='Logos/darkmodebuddy.png' width='32' height='32'> DarkModeBuddy | 1.2 |
-| <img src='Logos/darktable.png' width='32' height='32'> darktable | 5.6.0 |
 | <img src='Logos/dash.png' width='32' height='32'> Dash | 8.1.1 |
 | <img src='Logos/dataflare.png' width='32' height='32'> Dataflare | 3.2.3 |
 | <img src='Logos/datagraph.png' width='32' height='32'> DataGraph | 5.5 |
 | <img src='Logos/datagrip.png' width='32' height='32'> DataGrip | 2026.2.6 |
-| <img src='Logos/dataspell.png' width='32' height='32'> DataSpell | 2026.1.2 |
 | <img src='Logos/db_browser_for_sqlite.png' width='32' height='32'> DB Browser for SQLite | 3.13.1 |
 | <img src='Logos/dbeaver_community_edition.png' width='32' height='32'> DBeaver Community Edition | 26.2.1 |
 | <img src='Logos/dbgate.png' width='32' height='32'> DbGate | 7.3.1 |
 | <img src='Logos/ddpm.png' width='32' height='32'> DDPM | 2.3.0.2004 |
-| <img src='Logos/debookee.png' width='32' height='32'> Debookee | 8.2.0 |
 | <img src='Logos/deckset.png' width='32' height='32'> Deckset | 2.1.0 |
 | <img src='Logos/deepgit.png' width='32' height='32'> DeepGit | 26.1.003 |
 | <img src='Logos/deepl.png' width='32' height='32'> DeepL | 26.6.14916780 |
-| <img src='Logos/deepnest.png' width='32' height='32'> Deepnest | 1.0.5 |
 | <img src='Logos/deezer.png' width='32' height='32'> Deezer | 7.1.340 |
 | <img src='Logos/default_folder_x.png' width='32' height='32'> Default Folder X | 6.3.1 |
 | <img src='Logos/defold.png' width='32' height='32'> Defold | 1.13.2 |
@@ -1017,31 +940,24 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/devonthink.png' width='32' height='32'> DEVONthink | 4.4.1 |
 | <img src='Logos/devtoys.png' width='32' height='32'> DevToys | 2.0.9.0 |
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
-| <img src='Logos/dia.png' width='32' height='32'> Dia | 1.50.1 |
+| <img src='Logos/dia.png' width='32' height='32'> Dia | 1.51.0 |
 | <img src='Logos/dialpad.png' width='32' height='32'> Dialpad | 2609.3.0 |
 | <img src='Logos/dictionaries.png' width='32' height='32'> Dictionaries | 3.0 |
-| <img src='Logos/diffmerge.png' width='32' height='32'> DiffMerge | 4.2.1.1013 |
 | <img src='Logos/diffusion_bee.png' width='32' height='32'> Diffusion Bee | 2.5.3 |
 | <img src='Logos/digiexam.png' width='32' height='32'> digiexam | 26.3.17 |
-| <img src='Logos/digikam.png' width='32' height='32'> digiKam | 9.1.0 |
 | <img src='Logos/dingtalk.png' width='32' height='32'> DingTalk | 9.0.1 |
 | <img src='Logos/discord.png' width='32' height='32'> Discord | 0.0.414 |
 | <img src='Logos/disk_drill.png' width='32' height='32'> Disk Drill | 6.3.2326 |
-| <img src='Logos/disk_inventory_x.png' width='32' height='32'> Disk Inventory X | 1.3 |
 | <img src='Logos/displaperture.png' width='32' height='32'> Displaperture | 3.0 |
-| <img src='Logos/displaycal.png' width='32' height='32'> DisplayCAL | 3.8.9.3 |
 | <img src='Logos/displaylink_usb_graphics_software.png' width='32' height='32'> DisplayLink USB Graphics Software | 17.0 |
 | <img src='Logos/ditto.png' width='32' height='32'> Ditto | 1.11.10 |
-| <img src='Logos/djview.png' width='32' height='32'> DjView | 4.12 |
 | <img src='Logos/dockdoor.png' width='32' height='32'> DockDoor | 1.40.2 |
 | <img src='Logos/docker_desktop.png' width='32' height='32'> Docker Desktop | 4.93.0 |
 | <img src='Logos/dockfix.png' width='32' height='32'> DockFix | 5.3.0-beta |
 | <img src='Logos/dockside.png' width='32' height='32'> Dockside | 2.9.34 |
-| <img src='Logos/dockstation.png' width='32' height='32'> DockStation | 1.5.1 |
 | <img src='Logos/dockview.png' width='32' height='32'> DockView | 1.7.5 |
 | <img src='Logos/dorico.png' width='32' height='32'> Dorico | 6.2.31 |
 | <img src='Logos/dosbox.png' width='32' height='32'> DOSBox | 0.74-3 |
-| <img src='Logos/double_commander.png' width='32' height='32'> Double Commander | 1.1.32 |
 | <img src='Logos/doughnut.png' width='32' height='32'> Doughnut | 2.0.1 |
 | <img src='Logos/douyin.png' width='32' height='32'> Douyin | 8.5.1 |
 | <img src='Logos/downie.png' width='32' height='32'> Downie | 4.13.2 |
@@ -1056,11 +972,8 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/duckduckgo.png' width='32' height='32'> DuckDuckGo | 1.209.0 |
 | <img src='Logos/duet.png' width='32' height='32'> Duet | 3.20.3.0 |
 | <img src='Logos/duoconnect.png' width='32' height='32'> DuoConnect | 2.0.9 |
-| <img src='Logos/dupeguru.png' width='32' height='32'> dupeGuru | 4.3.1 |
-| <img src='Logos/dust3d.png' width='32' height='32'> Dust3D | 1.1.6 |
 | <img src='Logos/dymo_connect.png' width='32' height='32'> Dymo Connect | 1.6.1.4 |
-| <img src='Logos/dynalist.png' width='32' height='32'> Dynalist | 1.0.6 |
-| <img src='Logos/eaglefiler.png' width='32' height='32'> EagleFiler | 1.9.21 |
+| <img src='Logos/eaglefiler.png' width='32' height='32'> EagleFiler | 1.9.22 |
 | <img src='Logos/easydict.png' width='32' height='32'> Easydict | 2.23.0 |
 | <img src='Logos/easyfind.png' width='32' height='32'> EasyFind | 5.0.2 |
 | <img src='Logos/ecamm_live.png' width='32' height='32'> Ecamm Live | 4.5.13 |
@@ -1077,11 +990,8 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/edrawmax.png' width='32' height='32'> EdrawMax | 14.5.2 |
 | <img src='Logos/egnyte.png' width='32' height='32'> Egnyte | 1.20.1 |
 | <img src='Logos/elan.png' width='32' height='32'> ELAN | 7.1 |
-| <img src='Logos/electric_sheep.png' width='32' height='32'> Electric Sheep | 3.0.2 |
-| <img src='Logos/electron.png' width='32' height='32'> Electron | 43.1.1 |
 | <img src='Logos/electron_cash.png' width='32' height='32'> Electron Cash | 4.4.6 |
 | <img src='Logos/electron_fiddle.png' width='32' height='32'> Electron Fiddle | 0.39.0 |
-| <img src='Logos/electronmail.png' width='32' height='32'> ElectronMail | 5.3.8 |
 | <img src='Logos/electrum.png' width='32' height='32'> Electrum | 4.8.2 |
 | <img src='Logos/element.png' width='32' height='32'> Element | 1.12.30 |
 | <img src='Logos/elephas.png' width='32' height='32'> Elephas | 12.0001 |
@@ -1094,7 +1004,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/eltima_cloudmounter.png' width='32' height='32'> Eltima CloudMounter | 4.18 |
 | <img src='Logos/em_client.png' width='32' height='32'> eM Client | 10.4.5674 |
 | <img src='Logos/enclave.png' width='32' height='32'> Enclave | 2026.6.3 |
-| <img src='Logos/enpass.png' width='32' height='32'> Enpass | 6.12.6.2759 |
+| <img src='Logos/enpass.png' width='32' height='32'> Enpass | 6.12.7.2787 |
 | <img src='Logos/ente.png' width='32' height='32'> Ente | 1.7.29 |
 | <img src='Logos/ente_auth.png' width='32' height='32'> Ente Auth | 4.4.25 |
 | <img src='Logos/envkey.png' width='32' height='32'> EnvKey | 1.5.10 |
@@ -1105,24 +1015,18 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/etrecheck.png' width='32' height='32'> EtreCheck | 6.8.16 |
 | <img src='Logos/eudic.png' width='32' height='32'> Eudic | latest |
 | <img src='Logos/evernote.png' width='32' height='32'> Evernote | 10.105.4 |
-| <img src='Logos/evkey.png' width='32' height='32'> EVKey | 3.3.10 |
-| <img src='Logos/exifcleaner.png' width='32' height='32'> ExifCleaner | 3.6.0 |
 | <img src='Logos/exifrenamer.png' width='32' height='32'> ExifRenamer | 2.4.0 |
-| <img src='Logos/expandrive.png' width='32' height='32'> ExpanDrive | 2026.09.30.898 |
+| <img src='Logos/expandrive.png' width='32' height='32'> ExpanDrive | 2026.10.01.900 |
 | <img src='Logos/expressvpn.png' width='32' height='32'> ExpressVPN | 14.3.1.15429 |
-| <img src='Logos/extraterm.png' width='32' height='32'> Extraterm | 0.81.4 |
 | <img src='Logos/flux.png' width='32' height='32'> f.lux | 42.2 |
-| <img src='Logos/facebook_messenger.png' width='32' height='32'> Facebook Messenger | 525.0.0.34.106 |
-| <img src='Logos/fantastical.png' width='32' height='32'> Fantastical | 4.2.1 |
-| <img src='Logos/far2l.png' width='32' height='32'> far2l | 2.8.0 |
+| <img src='Logos/fantastical.png' width='32' height='32'> Fantastical | 4.2.2 |
 | <img src='Logos/farrago.png' width='32' height='32'> Farrago | 2.2.0 |
 | <img src='Logos/fastmail.png' width='32' height='32'> Fastmail | 1.8.0 |
 | <img src='Logos/fastscripts.png' width='32' height='32'> FastScripts | 3.3.8 |
 | <img src='Logos/fathom.png' width='32' height='32'> Fathom | 3.8.1 |
-| <img src='Logos/fellow.png' width='32' height='32'> Fellow | 5.7.9 |
+| <img src='Logos/fellow.png' width='32' height='32'> Fellow | 5.7.13 |
 | <img src='Logos/ferdium.png' width='32' height='32'> Ferdium | 7.2.3 |
-| <img src='Logos/fig.png' width='32' height='32'> fig | 2.19.0 |
-| <img src='Logos/figma.png' width='32' height='32'> Figma | 126.8.18 |
+| <img src='Logos/figma.png' width='32' height='32'> Figma | 126.9.11 |
 | <img src='Logos/file_juicer.png' width='32' height='32'> File Juicer | 4.115 |
 | <img src='Logos/filebot.png' width='32' height='32'> FileBot | 5.3.0 |
 | <img src='Logos/filemaker_pro.png' width='32' height='32'> FileMaker Pro | 26.0.3.307 |
@@ -1131,8 +1035,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/fing_desktop.png' width='32' height='32'> Fing Desktop | 4.0.3 |
 | <img src='Logos/firecamp.png' width='32' height='32'> Firecamp | 2.6.1 |
 | <img src='Logos/fission.png' width='32' height='32'> Fission | 2.9.5 |
-| <img src='Logos/flameshot.png' width='32' height='32'> Flameshot | 14.0.0 |
-| <img src='Logos/fleet.png' width='32' height='32'> Fleet | 1.48.261 |
 | <img src='Logos/flexoptix_app.png' width='32' height='32'> FLEXOPTIX App | 5.68.0-latest |
 | <img src='Logos/floorp_browser.png' width='32' height='32'> Floorp browser | 12.19.0 |
 | <img src='Logos/flowvision.png' width='32' height='32'> FlowVision | 1.7.6 |
@@ -1154,7 +1056,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/freefilesync.png' width='32' height='32'> FreeFileSync | 14.12 |
 | <img src='Logos/freelens.png' width='32' height='32'> Freelens | 1.10.3 |
 | <img src='Logos/freemacsoft_appcleaner.png' width='32' height='32'> FreeMacSoft AppCleaner | 3.7 |
-| <img src='Logos/freetube.png' width='32' height='32'> FreeTube | 0.24.1 |
 | <img src='Logos/front.png' width='32' height='32'> Front | 3.77.0 |
 | <img src='Logos/fsmonitor.png' width='32' height='32'> FSMonitor | 2.0 |
 | <img src='Logos/fsnotes.png' width='32' height='32'> FSNotes | 7.3.4 |
@@ -1176,44 +1077,38 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/gitbutler.png' width='32' height='32'> GitButler | 0.22.3 |
 | <img src='Logos/gitfinder.png' width='32' height='32'> GitFinder | 1.7.11 |
 | <img src='Logos/gitfox.png' width='32' height='32'> Gitfox | 5.1.0 |
-| ❌ GitHub Copilot CLI | 1.0.90 |
+| ❌ GitHub Copilot CLI | 1.0.91 |
 | <img src='Logos/github_copilot_for_xcode.png' width='32' height='32'> GitHub Copilot for Xcode | 0.51.0 |
 | <img src='Logos/github_desktop.png' width='32' height='32'> GitHub Desktop | 3.6.6-8b85519e |
 | <img src='Logos/gitify.png' width='32' height='32'> Gitify | 7.8.0 |
 | <img src='Logos/gitkraken.png' width='32' height='32'> GitKraken | 12.5.0 |
 | <img src='Logos/glyphs.png' width='32' height='32'> Glyphs | 3.5.1 |
-| <img src='Logos/go2shell.png' width='32' height='32'> Go2Shell | 2.5 |
 | <img src='Logos/godot_engine.png' width='32' height='32'> Godot Engine | 4.7.2 |
 | <img src='Logos/godspeed.png' width='32' height='32'> Godspeed | 1.9.22 |
 | <img src='Logos/gog_galaxy.png' width='32' height='32'> GOG Galaxy | 2.1.10.56 |
 | <img src='Logos/goland.png' width='32' height='32'> Goland | 2026.2.3 |
 | <img src='Logos/goodsync.png' width='32' height='32'> GoodSync | 12.11.8 |
 | <img src='Logos/google_ads_editor.png' width='32' height='32'> Google Ads Editor | 2.13 |
-| <img src='Logos/google_antigravity.png' width='32' height='32'> Google Antigravity | 2.18.1 |
+| <img src='Logos/google_antigravity.png' width='32' height='32'> Google Antigravity | 2.19.1 |
 | <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 154.0.8037.93 |
 | <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 132.0.0 |
 | <img src='Logos/google_earth_pro.png' width='32' height='32'> Google Earth Pro | 7.3.7.1327 |
 | <img src='Logos/google_web_designer.png' width='32' height='32'> Google Web Designer | 14.0.1.0 |
 | <img src='Logos/goose.png' width='32' height='32'> Goose | 1.52.0 |
 | <img src='Logos/gpg_suite.png' width='32' height='32'> GPG Suite | 2023.3 |
-| <img src='Logos/gpodder.png' width='32' height='32'> gPodder | 3.11.5 |
-| <img src='Logos/gpt_fdisk.png' width='32' height='32'> GPT fdisk | 1.0.10 |
 | <img src='Logos/grammarly_desktop.png' width='32' height='32'> Grammarly Desktop | 1.197.0.0 |
 | <img src='Logos/grandperspective.png' width='32' height='32'> GrandPerspective | 3.8.1 |
 | <img src='Logos/granola.png' width='32' height='32'> Granola | 7.595.3 |
 | <img src='Logos/graphicconverter.png' width='32' height='32'> GraphicConverter | 12.5.4 |
 | <img src='Logos/graphiql_app.png' width='32' height='32'> GraphiQL App | 0.7.2 |
 | <img src='Logos/graphpad_prism.png' width='32' height='32'> GraphPad Prism | 11.1.0 |
-| <img src='Logos/graphql_playground.png' width='32' height='32'> GraphQL Playground | 1.8.10 |
 | <img src='Logos/grids.png' width='32' height='32'> Grids | 8.5.8 |
 | <img src='Logos/guilded.png' width='32' height='32'> Guilded | 1.0.9329126 |
-| <img src='Logos/guitar_pro.png' width='32' height='32'> Guitar Pro | 8.1.4-43 |
 | <img src='Logos/hammerspoon.png' width='32' height='32'> Hammerspoon | 1.1.1 |
 | <img src='Logos/handbrake.png' width='32' height='32'> HandBrake | 1.11.2 |
 | <img src='Logos/hazel.png' width='32' height='32'> Hazel | 6.1.2 |
 | <img src='Logos/hazeover.png' width='32' height='32'> HazeOver | 1.9.8 |
 | <img src='Logos/headlamp.png' width='32' height='32'> Headlamp | 0.45.0 |
-| <img src='Logos/helium.png' width='32' height='32'> Helium | 1.0.0 |
 | <img src='Logos/hepta.png' width='32' height='32'> Hepta | 1.112.0 |
 | <img src='Logos/hex_fiend.png' width='32' height='32'> Hex Fiend | 2.18.1 |
 | <img src='Logos/hey.png' width='32' height='32'> HEY | 1.3.7 |
@@ -1231,7 +1126,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/houdahspot.png' width='32' height='32'> HoudahSpot | 6.8.4 |
 | <img src='Logos/hp_easy_admin.png' width='32' height='32'> HP Easy Admin | 2.16.0 |
 | <img src='Logos/http_toolkit.png' width='32' height='32'> HTTP Toolkit | 1.27.2 |
-| <img src='Logos/huggingchat.png' width='32' height='32'> HuggingChat | 0.7.0 |
 | <img src='Logos/huly.png' width='32' height='32'> Huly | 0.7.426 |
 | <img src='Logos/hyper.png' width='32' height='32'> Hyper | 3.4.1 |
 | <img src='Logos/hyperkey.png' width='32' height='32'> Hyperkey | 1.56 |
@@ -1243,12 +1137,10 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/idagio.png' width='32' height='32'> IDAGIO | 1.15.0 |
 | <img src='Logos/iexplorer.png' width='32' height='32'> iExplorer | 4.6.0 |
 | <img src='Logos/iina.png' width='32' height='32'> IINA | 1.4.4 |
-| <img src='Logos/imagej.png' width='32' height='32'> ImageJ | 1.54 |
 | <img src='Logos/imageoptim.png' width='32' height='32'> ImageOptim | 1.9.3 |
 | <img src='Logos/imazing.png' width='32' height='32'> iMazing | 3.6.5 |
 | <img src='Logos/imazing_converter.png' width='32' height='32'> iMazing Converter | 2.0.15 |
 | <img src='Logos/imazing_profile_editor.png' width='32' height='32'> iMazing Profile Editor | 2.3.0 |
-| <img src='Logos/imhex.png' width='32' height='32'> ImHex | 1.38.1 |
 | <img src='Logos/inkscape.png' width='32' height='32'> Inkscape | 1.4.4 |
 | <img src='Logos/input_source_pro.png' width='32' height='32'> Input Source Pro | 2.12.0 |
 | <img src='Logos/insomnia.png' width='32' height='32'> Insomnia | 13.3.0 |
@@ -1256,9 +1148,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/insta360_studio.png' width='32' height='32'> Insta360 Studio | 6.0.6 |
 | <img src='Logos/integrity.png' width='32' height='32'> Integrity | 12.13.0 |
 | <img src='Logos/intellidock.png' width='32' height='32'> IntelliDock | 1.0 |
-| <img src='Logos/intellij_idea_community_edition.png' width='32' height='32'> IntelliJ IDEA Community Edition | 2025.2.5 |
 | <img src='Logos/intellij_idea_ultimate.png' width='32' height='32'> IntelliJ IDEA Ultimate | 2026.2.3 |
-| <img src='Logos/invesalius.png' width='32' height='32'> InVesalius | 3.1.99998 |
 | <img src='Logos/iris.png' width='32' height='32'> Iris | 1.2.2 |
 | <img src='Logos/istats_menus.png' width='32' height='32'> iStats Menus | 7.50.1 |
 | <img src='Logos/istherenet.png' width='32' height='32'> IsThereNet | 1.7.1 |
@@ -1267,12 +1157,10 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/jabra_direct.png' width='32' height='32'> Jabra Direct | 8.3.26701 |
 | <img src='Logos/jami.png' width='32' height='32'> Jami | 2.42 |
 | <img src='Logos/jamie.png' width='32' height='32'> Jamie | 5.7.21 |
-| <img src='Logos/jamovi.png' width='32' height='32'> jamovi | 28.3.0.0 |
 | <img src='Logos/jasp.png' width='32' height='32'> JASP | 0.98.1.0 |
 | <img src='Logos/jellyfin.png' width='32' height='32'> Jellyfin | 12.1 |
 | <img src='Logos/jetbrains_phpstorm.png' width='32' height='32'> JetBrains PhpStorm | 2026.2.3 |
-| <img src='Logos/jetbrains_pycharm_community_edition.png' width='32' height='32'> Jetbrains PyCharm Community Edition | 2025.2.5 |
-| <img src='Logos/jetbrains_rider.png' width='32' height='32'> JetBrains Rider | 2026.2.3 |
+| <img src='Logos/jetbrains_rider.png' width='32' height='32'> JetBrains Rider | 2026.2.3.1 |
 | <img src='Logos/jetbrains_toolbox.png' width='32' height='32'> JetBrains Toolbox | 3.8.1 |
 | <img src='Logos/jiggler.png' width='32' height='32'> Jiggler | 1.10 |
 | <img src='Logos/jitsi_meet.png' width='32' height='32'> Jitsi Meet | 2026.8.0 |
@@ -1285,7 +1173,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/karabiner_elements.png' width='32' height='32'> Karabiner Elements | 16.3.0 |
 | <img src='Logos/kdenlive.png' width='32' height='32'> Kdenlive | 26.08.1 |
 | <img src='Logos/keepassxc.png' width='32' height='32'> KeePassXC | 2.7.12 |
-| <img src='Logos/keeper_password_manager.png' width='32' height='32'> Keeper Password Manager | 18.6.2 |
+| <img src='Logos/keeper_password_manager.png' width='32' height='32'> Keeper Password Manager | 18.6.4 |
 | <img src='Logos/keepingyouawake.png' width='32' height='32'> KeepingYouAwake | 1.6.8 |
 | <img src='Logos/keeweb.png' width='32' height='32'> KeeWeb | 1.18.7 |
 | <img src='Logos/keka.png' width='32' height='32'> Keka | 1.6.8 |
@@ -1298,14 +1186,13 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/keystore_explorer.png' width='32' height='32'> KeyStore Explorer | 5.7.0 |
 | <img src='Logos/kicad.png' width='32' height='32'> KiCad | 10.0.6 |
 | <img src='Logos/kiro.png' width='32' height='32'> kiro | 1.2.4 |
-| <img src='Logos/kitty.png' width='32' height='32'> kitty | 0.49.1 |
+| <img src='Logos/kitty.png' width='32' height='32'> kitty | 0.49.2 |
 | <img src='Logos/klokki.png' width='32' height='32'> Klokki | 1.3.7 |
 | <img src='Logos/knockknock.png' width='32' height='32'> KnockKnock | 4.1.0 |
 | <img src='Logos/kobo.png' width='32' height='32'> Kobo | latest |
 | <img src='Logos/kodi.png' width='32' height='32'> Kodi | 21.3-Omega |
-| <img src='Logos/krisp.png' width='32' height='32'> Krisp | 3.17.4 |
+| <img src='Logos/krisp.png' width='32' height='32'> Krisp | 3.17.6 |
 | <img src='Logos/krita.png' width='32' height='32'> Krita | 5.3.4 |
-| <img src='Logos/langgraph_studio.png' width='32' height='32'> LangGraph Studio | 0.0.37 |
 | <img src='Logos/lapce.png' width='32' height='32'> Lapce | 0.4.6 |
 | <img src='Logos/lark.png' width='32' height='32'> Lark | 8.1.22 |
 | <img src='Logos/last_window_quits.png' width='32' height='32'> Last Window Quits | 1.1.4 |
@@ -1315,27 +1202,24 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/launchcontrol.png' width='32' height='32'> LaunchControl | 2.12 |
 | <img src='Logos/launchos.png' width='32' height='32'> LaunchOS | 2.4.0 |
 | <img src='Logos/lens.png' width='32' height='32'> Lens | 2026.9.181013 |
-| <img src='Logos/librecad.png' width='32' height='32'> LibreCAD | 2.2.1.5 |
 | <img src='Logos/libreoffice.png' width='32' height='32'> LibreOffice | 26.8.0 |
 | <img src='Logos/librewolf.png' width='32' height='32'> LibreWolf | 157.0 |
 | <img src='Logos/lifesize.png' width='32' height='32'> lifesize | 3.0.20 |
 | <img src='Logos/lightburn.png' width='32' height='32'> LightBurn | 2.1.04 |
-| <img src='Logos/limitless.png' width='32' height='32'> Limitless | 2.961.1 |
 | <img src='Logos/linear.png' width='32' height='32'> Linear | 1.28.13 |
 | <img src='Logos/linearmouse.png' width='32' height='32'> LinearMouse | 0.11.4 |
 | <img src='Logos/lingon_x.png' width='32' height='32'> Lingon X | 9.6.6 |
 | ❌ Linphone | 6.2.3 |
 | <img src='Logos/little_snitch.png' width='32' height='32'> Little Snitch | 6.5 |
 | <img src='Logos/lm_studio.png' width='32' height='32'> LM Studio | 0.4.25 |
-| <img src='Logos/lorain.png' width='32' height='32'> lo-rain | 1.5.2 |
 | <img src='Logos/local.png' width='32' height='32'> Local | 10.1.2 |
 | <img src='Logos/localsend.png' width='32' height='32'> LocalSend | 1.18.2 |
 | <img src='Logos/locationsimulator.png' width='32' height='32'> LocationSimulator | 0.2.2 |
-| <img src='Logos/logitech_g_hub.png' width='32' height='32'> Logitech G HUB | 2026.6.974819 |
+| <img src='Logos/logitech_g_hub.png' width='32' height='32'> Logitech G HUB | 2026.6.981214 |
 | <img src='Logos/logitech_options.png' width='32' height='32'> Logitech Options+ | 2.8.981479 |
 | <img src='Logos/logseq.png' width='32' height='32'> Logseq | 2.0.1 |
 | <img src='Logos/lookaway.png' width='32' height='32'> LookAway | 2.4.10 |
-| <img src='Logos/loom.png' width='32' height='32'> Loom | 0.379.1 |
+| <img src='Logos/loom.png' width='32' height='32'> Loom | 0.379.4 |
 | <img src='Logos/loop.png' width='32' height='32'> Loop | 1.4.2 |
 | <img src='Logos/loopback.png' width='32' height='32'> Loopback | 2.5.0 |
 | <img src='Logos/losslesscut.png' width='32' height='32'> LosslessCut | 3.69.0 |
@@ -1345,31 +1229,25 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/lulu.png' width='32' height='32'> LuLu | 4.5.1 |
 | <img src='Logos/lunacy.png' width='32' height='32'> Lunacy | 14.1 |
 | <img src='Logos/lunar.png' width='32' height='32'> Lunar | 6.11.0 |
-| <img src='Logos/lunasea.png' width='32' height='32'> LunaSea | 11.0.0 |
 | <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.29 |
-| <img src='Logos/lyx.png' width='32' height='32'> LyX | 2.5.1 |
-| <img src='Logos/löve.png' width='32' height='32'> LÖVE | 11.5 |
 | <img src='Logos/mac_mouse_fix.png' width='32' height='32'> Mac Mouse Fix | 3.1.0 |
 | <img src='Logos/maccy.png' width='32' height='32'> Maccy | 2.7.1 |
-| <img src='Logos/macdown.png' width='32' height='32'> MacDown | 0.7.2 |
 | <img src='Logos/macdown_3000.png' width='32' height='32'> MacDown 3000 | 3000.0.7 |
 | <img src='Logos/macfuse.png' width='32' height='32'> macFUSE | 5.4.0 |
-| <img src='Logos/macjournal.png' width='32' height='32'> MacJournal | 7.4 |
-| <img src='Logos/macpacker.png' width='32' height='32'> MacPacker | 0.22.0 |
+| <img src='Logos/macpacker.png' width='32' height='32'> MacPacker | 1.0.0 |
 | <img src='Logos/macpass.png' width='32' height='32'> MacPass | 0.8.2 |
 | <img src='Logos/macpilot.png' width='32' height='32'> MacPilot | 18.0.1 |
 | <img src='Logos/macs_fan_control.png' width='32' height='32'> Macs Fan Control | 1.5.21 |
 | <img src='Logos/macshot.png' width='32' height='32'> macshot | 4.3.0 |
 | <img src='Logos/macsyzones.png' width='32' height='32'> MacsyZones | 3.1.1 |
 | <img src='Logos/mactex.png' width='32' height='32'> MacTeX | 2026.0324 |
-| <img src='Logos/mactracker.png' width='32' height='32'> Mactracker | 8.2.5 |
+| <img src='Logos/mactracker.png' width='32' height='32'> Mactracker | 8.3 |
 | <img src='Logos/macusb.png' width='32' height='32'> macUSB | 2.5 |
-| <img src='Logos/macwhisper.png' width='32' height='32'> MacWhisper | 15.2.1 |
+| <img src='Logos/macwhisper.png' width='32' height='32'> MacWhisper | 15.3 |
 | <img src='Logos/maestral.png' width='32' height='32'> Maestral | 1.9.5 |
 | <img src='Logos/magicquit.png' width='32' height='32'> MagicQuit | 1.4 |
 | <img src='Logos/mailmate.png' width='32' height='32'> MailMate | 5673 |
 | <img src='Logos/mailspring.png' width='32' height='32'> Mailspring | 1.25.0 |
-| <img src='Logos/makemkv.png' width='32' height='32'> MakeMKV | 1.18.4 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.27.1.4191 |
 | <img src='Logos/mamp.png' width='32' height='32'> MAMP | 7.4 |
 | <img src='Logos/marginnote.png' width='32' height='32'> MarginNote | 4.4.6 |
@@ -1385,7 +1263,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/megasync.png' width='32' height='32'> MEGAsync | 6.6.2.0 |
 | <img src='Logos/meld_for_macos.png' width='32' height='32'> Meld for macOS | 3.22.3+105 |
 | <img src='Logos/mellel.png' width='32' height='32'> Mellel | 6.7.1 |
-| <img src='Logos/melodics.png' width='32' height='32'> Melodics | 5.0.1455 |
+| <img src='Logos/melodics.png' width='32' height='32'> Melodics | 5.0.1491 |
 | <img src='Logos/mem.png' width='32' height='32'> Mem | 0.43.0 |
 | <img src='Logos/memory_cleaner.png' width='32' height='32'> Memory Cleaner | 5.5.3 |
 | <img src='Logos/memory_tracker_by_timely.png' width='32' height='32'> Memory Tracker by Timely | 2023.11 |
@@ -1399,7 +1277,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/microsoft_auto_update.png' width='32' height='32'> Microsoft Auto Update | 4.85.26091737 |
 | <img src='Logos/microsoft_azure_storage_explorer.png' width='32' height='32'> Microsoft Azure Storage Explorer | 1.46.0 |
 | <img src='Logos/microsoft_build_of_openjdk.png' width='32' height='32'> Microsoft Build of OpenJDK | 25.0.4.1 |
-| <img src='Logos/microsoft_edge.png' width='32' height='32'> Microsoft Edge | 154.0.4258.48 |
+| <img src='Logos/microsoft_edge.png' width='32' height='32'> Microsoft Edge | 154.0.4258.53 |
 | <img src='Logos/microsoft_excel.png' width='32' height='32'> Microsoft Excel | 16.113.26092714 |
 | <img src='Logos/microsoft_office.png' width='32' height='32'> Microsoft Office | 16.113.26092714 |
 | <img src='Logos/microsoft_office_businesspro.png' width='32' height='32'> Microsoft Office BusinessPro | 16.113.26092714 |
@@ -1413,7 +1291,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/middleclick.png' width='32' height='32'> MiddleClick | 3.3.0 |
 | <img src='Logos/milanote.png' width='32' height='32'> Milanote | 3.18.132 |
 | <img src='Logos/mimestream.png' width='32' height='32'> Mimestream | 1.10.8 |
-| <img src='Logos/min.png' width='32' height='32'> Min | 1.35.6 |
 | <img src='Logos/mindmac.png' width='32' height='32'> MindMac | 1.9.28 |
 | <img src='Logos/mindmanager.png' width='32' height='32'> Mindmanager | 25.2.105 |
 | <img src='Logos/minecraft.png' width='32' height='32'> Minecraft | 2.1.3 |
@@ -1444,7 +1321,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/mozilla_firefox.png' width='32' height='32'> Mozilla Firefox | 157.0 |
 | <img src='Logos/mozilla_firefox_developer_edition.png' width='32' height='32'> Mozilla Firefox Developer Edition | 158.0b2 |
 | <img src='Logos/mozilla_firefox_esr.png' width='32' height='32'> Mozilla Firefox ESR | 140.17.0 |
-| <img src='Logos/mozilla_thunderbird.png' width='32' height='32'> Mozilla Thunderbird | 157.0 |
+| <img src='Logos/mozilla_thunderbird.png' width='32' height='32'> Mozilla Thunderbird | 157.0.1 |
 | <img src='Logos/mqttx.png' width='32' height='32'> MQTTX | 1.13.1 |
 | <img src='Logos/mucommander.png' width='32' height='32'> muCommander | 1.6.2-1 |
 | <img src='Logos/mullvad_browser.png' width='32' height='32'> Mullvad Browser | 15.0.24 |
@@ -1453,18 +1330,15 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/multipass.png' width='32' height='32'> Multipass | 1.16.4 |
 | <img src='Logos/multitouch.png' width='32' height='32'> Multitouch | 1.48 |
 | <img src='Logos/multiviewer.png' width='32' height='32'> MultiViewer | 2.9.0 |
-| <img src='Logos/multiviewer_for_f1.png' width='32' height='32'> MultiViewer for F1 | 1.43.2 |
 | <img src='Logos/mural.png' width='32' height='32'> MURAL | 3.0.4 |
-| <img src='Logos/murus_firewall.png' width='32' height='32'> Murus Firewall | 2.7 |
 | <img src='Logos/museeks.png' width='32' height='32'> Museeks | 0.23.4 |
 | <img src='Logos/musescore.png' width='32' height='32'> MuseScore | 4.7.5.260831071 |
 | <img src='Logos/music_decoy.png' width='32' height='32'> Music Decoy | 1.3 |
 | <img src='Logos/mx_power_gadget.png' width='32' height='32'> Mx Power Gadget | 1.6.4 |
 | <img src='Logos/mysql_workbench.png' width='32' height='32'> MySQL Workbench | 8.0.47 |
-| <img src='Logos/nagstamon.png' width='32' height='32'> Nagstamon | 3.18.2 |
 | <img src='Logos/name_mangler.png' width='32' height='32'> Name Mangler | 3.9.3 |
 | <img src='Logos/namechanger.png' width='32' height='32'> NameChanger | 3.4.4 |
-| <img src='Logos/naps2.png' width='32' height='32'> NAPS2 | 8.3.2 |
+| <img src='Logos/naps2.png' width='32' height='32'> NAPS2 | 8.4.0 |
 | <img src='Logos/native_access.png' width='32' height='32'> Native Access | 3.26.0 |
 | <img src='Logos/nektony_app_cleaner__uninstaller.png' width='32' height='32'> Nektony App Cleaner & Uninstaller | 10.0.1 |
 | <img src='Logos/nektony_maccleaner_pro.png' width='32' height='32'> Nektony MacCleaner Pro | 4.0.4 |
@@ -1479,7 +1353,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/nextcloud_talk_desktop.png' width='32' height='32'> Nextcloud Talk Desktop | 2.3.2 |
 | <img src='Logos/nightfall.png' width='32' height='32'> Nightfall | 3.1.0 |
 | <img src='Logos/nitro_pdf_pro.png' width='32' height='32'> Nitro PDF Pro | 26.0 |
-| <img src='Logos/nocturnal.png' width='32' height='32'> Nocturnal | 0.3 |
 | <img src='Logos/nomachine.png' width='32' height='32'> NoMachine | 9.8.2 |
 | <img src='Logos/nordlayer.png' width='32' height='32'> NordLayer | 3.12.1 |
 | <img src='Logos/nordlocker.png' width='32' height='32'> NordLocker | 4.26.1 |
@@ -1487,12 +1360,10 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/nordvpn.png' width='32' height='32'> NordVPN | 10.12.0 |
 | <img src='Logos/nosql_workbench.png' width='32' height='32'> NoSQL Workbench | 3.20.3 |
 | <img src='Logos/nota_gyazo_gif.png' width='32' height='32'> Nota Gyazo GIF | 11.2.0 |
-| <img src='Logos/notchnook.png' width='32' height='32'> NotchNook | 1.6.2 |
 | <img src='Logos/notesnook.png' width='32' height='32'> Notesnook | 3.4.8 |
 | <img src='Logos/notesollama.png' width='32' height='32'> NotesOllama | 0.2.6 |
 | <img src='Logos/notion.png' width='32' height='32'> Notion | 7.36.1 |
 | <img src='Logos/notion_calendar.png' width='32' height='32'> Notion Calendar | 1.139.0 |
-| <img src='Logos/notion_enhanced.png' width='32' height='32'> Notion Enhanced | 2.0.18-1 |
 | <img src='Logos/notion_mail.png' width='32' height='32'> Notion Mail | 0.0.45 |
 | <img src='Logos/notunes.png' width='32' height='32'> noTunes | 3.5 |
 | <img src='Logos/noun_project.png' width='32' height='32'> Noun Project | 2.3 |
@@ -1519,20 +1390,18 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/onedrive.png' width='32' height='32'> OneDrive | 26.153.0809.0004 |
 | <img src='Logos/onionshare.png' width='32' height='32'> OnionShare | 2.6.5 |
 | <img src='Logos/onlyoffice.png' width='32' height='32'> ONLYOFFICE | 9.4.0 |
-| <img src='Logos/onlyswitch.png' width='32' height='32'> OnlySwitch | 2.8.0 |
+| <img src='Logos/onlyswitch.png' width='32' height='32'> OnlySwitch | 2.8.1 |
 | <img src='Logos/onyx.png' width='32' height='32'> OnyX | 5.1.0 |
 | <img src='Logos/opal_composer.png' width='32' height='32'> Opal Composer | 2.0.0 |
 | <img src='Logos/openaudible.png' width='32' height='32'> OpenAudible | 4.9 |
 | <img src='Logos/openboard.png' width='32' height='32'> OpenBoard | 1.7.7 |
 | <img src='Logos/opencloud_desktop.png' width='32' height='32'> OpenCloud Desktop | 4.0.0 |
-| <img src='Logos/opencode.png' width='32' height='32'> OpenCode | 1.18.33 |
+| <img src='Logos/opencode.png' width='32' height='32'> OpenCode | 1.18.34 |
 | <img src='Logos/openinterminal.png' width='32' height='32'> OpenInTerminal | 2.3.9 |
 | <img src='Logos/openlens.png' width='32' height='32'> OpenLens | 6.5.2-366 |
 | <img src='Logos/openmtp.png' width='32' height='32'> OpenMTP | 3.3.0 |
-| <img src='Logos/openrct2.png' width='32' height='32'> OpenRCT2 | 0.5.3 |
 | <img src='Logos/openrefine.png' width='32' height='32'> OpenRefine | 3.10.1 |
 | <img src='Logos/openshot_video_editor.png' width='32' height='32'> OpenShot Video Editor | 4.0.1 |
-| <img src='Logos/opentoonz.png' width='32' height='32'> OpenToonz | 1.8.0 |
 | <img src='Logos/openvpn_connect_client.png' width='32' height='32'> OpenVPN Connect client | 3.8.2 |
 | <img src='Logos/openwebstart.png' width='32' height='32'> OpenWebStart | 1.14.0 |
 | <img src='Logos/openwork.png' width='32' height='32'> OpenWork | 0.18.54 |
@@ -1561,14 +1430,13 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/parallels_desktop.png' width='32' height='32'> Parallels Desktop | 27.0.2-58673 |
 | <img src='Logos/parsec.png' width='32' height='32'> Parsec | 150-104a |
 | <img src='Logos/paseo.png' width='32' height='32'> Paseo | 0.10.2 |
-| <img src='Logos/paste.png' width='32' height='32'> Paste | 7.0.0 |
+| <img src='Logos/paste.png' width='32' height='32'> Paste | 7.0.1 |
 | <img src='Logos/pastebot.png' width='32' height='32'> Pastebot | 3.1.1 |
 | <img src='Logos/path_finder.png' width='32' height='32'> Path Finder | 26.1.9 |
 | <img src='Logos/pdf_expert.png' width='32' height='32'> PDF Expert | 3.13.4 |
 | <img src='Logos/pdf_pals.png' width='32' height='32'> PDF Pals | 1.9.0 |
 | <img src='Logos/pdfsam_basic.png' width='32' height='32'> PDFsam Basic | 6.0.5 |
 | <img src='Logos/pearcleaner.png' width='32' height='32'> Pearcleaner | 5.4.3 |
-| <img src='Logos/pencil.png' width='32' height='32'> Pencil | 3.1.1 |
 | <img src='Logos/perimeter_81.png' width='32' height='32'> Perimeter 81 | 12.11.0.12314 |
 | <img src='Logos/permute.png' width='32' height='32'> Permute | 4.0.11 |
 | <img src='Logos/pgadmin4.png' width='32' height='32'> pgAdmin4 | 9.18 |
@@ -1585,7 +1453,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/piriform_ccleaner.png' width='32' height='32'> Piriform CCleaner | 2.11.194 |
 | <img src='Logos/pitch.png' width='32' height='32'> Pitch | 2.147.0 |
 | <img src='Logos/pixelsnap.png' width='32' height='32'> PixelSnap | 2.6.4 |
-| <img src='Logos/platypus.png' width='32' height='32'> Platypus | 5.5.0 |
 | <img src='Logos/plex.png' width='32' height='32'> Plex | 1.115.0.426 |
 | <img src='Logos/plex_htpc.png' width='32' height='32'> Plex HTPC | 1.71.1.346 |
 | <img src='Logos/plex_media_server.png' width='32' height='32'> Plex Media Server | 1.43.4.10903 |
@@ -1598,11 +1465,9 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/popsql.png' width='32' height='32'> PopSQL | 1.0.135 |
 | <img src='Logos/portx.png' width='32' height='32'> portx | 2.3.0 |
 | <img src='Logos/positron.png' width='32' height='32'> Positron | 2026.09.1-2 |
-| <img src='Logos/postbox.png' width='32' height='32'> Postbox | 7.0.65 |
 | <img src='Logos/postico.png' width='32' height='32'> Postico | 2.3.4 |
-| <img src='Logos/postman.png' width='32' height='32'> Postman | 12.30.4 |
+| <img src='Logos/postman.png' width='32' height='32'> Postman | 12.30.5 |
 | <img src='Logos/powerphotos.png' width='32' height='32'> PowerPhotos | 3.4.8 |
-| <img src='Logos/powershell.png' width='32' height='32'> PowerShell | 7.5.4 |
 | <img src='Logos/pppc_utility.png' width='32' height='32'> PPPC Utility | 2.0.0 |
 | <img src='Logos/preform.png' width='32' height='32'> PreForm | 3.63.1 |
 | <img src='Logos/principle.png' width='32' height='32'> Principle | 6.43 |
@@ -1626,7 +1491,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/pulsar.png' width='32' height='32'> Pulsar | 1.132.1 |
 | <img src='Logos/purevpn.png' width='32' height='32'> PureVPN | 9.47.0 |
 | <img src='Logos/pycharm.png' width='32' height='32'> PyCharm | 2026.2.3 |
-| <img src='Logos/qbittorrent.png' width='32' height='32'> qBittorrent | 5.2.3 |
 | <img src='Logos/qgis.png' width='32' height='32'> QGIS | 4.2.3 |
 | <img src='Logos/qlab.png' width='32' height='32'> QLab | 5.6.3 |
 | <img src='Logos/qobuz.png' width='32' height='32'> Qobuz | 8.2.0 |
@@ -1635,7 +1499,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/quarto.png' width='32' height='32'> quarto | 1.10.18 |
 | <img src='Logos/quicklook_video.png' width='32' height='32'> QuickLook Video | 3.05 |
 | <img src='Logos/quicksilver.png' width='32' height='32'> Quicksilver | 2.6.0 |
-| <img src='Logos/qview.png' width='32' height='32'> qView | 7.1 |
 | <img src='Logos/r.png' width='32' height='32'> R | 4.6.1 |
 | <img src='Logos/radio_silence.png' width='32' height='32'> Radio Silence | 3.4 |
 | <img src='Logos/raindropio.png' width='32' height='32'> Raindrop.io | 5.7.9 |
@@ -1644,19 +1507,16 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/rapidapi.png' width='32' height='32'> RapidAPI | 4.5.5 |
 | <img src='Logos/rapidweaver.png' width='32' height='32'> RapidWeaver | 9.6.8 |
 | <img src='Logos/raspberry_pi_imager.png' width='32' height='32'> Raspberry Pi Imager | 2.0.11.1 |
-| <img src='Logos/rawtherapee.png' width='32' height='32'> RawTherapee | 5.12 |
 | <img src='Logos/raycast.png' width='32' height='32'> Raycast | 2.6.0.0 |
 | <img src='Logos/reactotron.png' width='32' height='32'> Reactotron | 3.11.0 |
 | <img src='Logos/readest.png' width='32' height='32'> Readest | 0.12.10 |
 | <img src='Logos/real_vnc_server.png' width='32' height='32'> Real VNC Server | 7.18.0 |
-| <img src='Logos/real_vnc_viewer.png' width='32' height='32'> Real VNC Viewer | 7.15.1 |
 | <img src='Logos/reaper.png' width='32' height='32'> REAPER | 7.81 |
 | <img src='Logos/recents.png' width='32' height='32'> Recents | 2.5.0 |
 | <img src='Logos/rectangle.png' width='32' height='32'> Rectangle | 2.0.2 |
 | <img src='Logos/rectangle_pro.png' width='32' height='32'> Rectangle Pro | 3.92 |
 | <img src='Logos/recut.png' width='32' height='32'> Recut | 4.4.8 |
 | <img src='Logos/redis_insight.png' width='32' height='32'> Redis Insight | 3.8.0 |
-| <img src='Logos/redispro.png' width='32' height='32'> redis-pro | 3.1.0 |
 | <img src='Logos/reflect_notes.png' width='32' height='32'> Reflect Notes | 3.3.6 |
 | <img src='Logos/reflector.png' width='32' height='32'> Reflector | 4.1.2 |
 | <img src='Logos/reminders_menubar.png' width='32' height='32'> Reminders MenuBar | 2.2.0 |
@@ -1671,7 +1531,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/retcon.png' width='32' height='32'> Retcon | 1.6.3 |
 | <img src='Logos/retroarch.png' width='32' height='32'> RetroArch | 1.22.2 |
 | <img src='Logos/retrobatch.png' width='32' height='32'> Retrobatch | 2.4.1 |
-| <img src='Logos/rewind.png' width='32' height='32'> Rewind | 1.5310 |
 | <img src='Logos/rewritebar.png' width='32' height='32'> RewriteBar | 2.35.0 |
 | <img src='Logos/rhinoceros.png' width='32' height='32'> Rhinoceros | 8.20.25157.13002 |
 | <img src='Logos/rightfont.png' width='32' height='32'> RightFont | 10.2.1 |
@@ -1683,7 +1542,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/roboform.png' width='32' height='32'> RoboForm | 9.9.5 |
 | <img src='Logos/rocket.png' width='32' height='32'> Rocket | 1.9.5 |
 | <img src='Logos/rocket_typist.png' width='32' height='32'> Rocket Typist | 3.3.1 |
-| <img src='Logos/rocketchat.png' width='32' height='32'> Rocket.Chat | 4.17.3 |
+| <img src='Logos/rocketchat.png' width='32' height='32'> Rocket.Chat | 4.17.4 |
 | <img src='Logos/rocketman_choices_packager.png' width='32' height='32'> Rocketman Choices Packager | 1.0.0 |
 | <img src='Logos/rode_central.png' width='32' height='32'> Rode Central | 2.0.111 |
 | <img src='Logos/rode_connect.png' width='32' height='32'> Rode Connect | 1.3.47 |
@@ -1698,18 +1557,16 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/rustrover.png' width='32' height='32'> RustRover | 2026.2.3 |
 | <img src='Logos/sabnzbd.png' width='32' height='32'> SABnzbd | 5.1.3 |
 | <img src='Logos/safe_exam_browser.png' width='32' height='32'> Safe Exam Browser | 3.7.1 |
-| <img src='Logos/salesforce_cli.png' width='32' height='32'> Salesforce CLI | 2.143.6 |
 | <img src='Logos/sanesidebuttons.png' width='32' height='32'> SaneSideButtons | 1.4.1 |
 | <img src='Logos/santa.png' width='32' height='32'> Santa | 2026.8 |
 | <img src='Logos/sbarex_qlmarkdown.png' width='32' height='32'> sbarex QLMarkdown | 1.5.6 |
 | <img src='Logos/sc_menu.png' width='32' height='32'> SC Menu | 2.1 |
 | <img src='Logos/scratch.png' width='32' height='32'> Scratch | 3.32.1 |
 | <img src='Logos/screaming_frog_seo_spider.png' width='32' height='32'> Screaming Frog SEO Spider | 24.3 |
-| <img src='Logos/screen_studio.png' width='32' height='32'> Screen Studio | 3.7.5-4595 |
+| <img src='Logos/screen_studio.png' width='32' height='32'> Screen Studio | 4.0.1-4897 |
 | <img src='Logos/screenflick.png' width='32' height='32'> Screenflick | 3.3.3 |
 | <img src='Logos/screenflow.png' width='32' height='32'> ScreenFlow | 10.5.2 |
 | <img src='Logos/screenfocus.png' width='32' height='32'> ScreenFocus | 1.1.1 |
-| <img src='Logos/screens.png' width='32' height='32'> Screens | 4.12.16 |
 | <img src='Logos/scribus.png' width='32' height='32'> Scribus | 1.6.6 |
 | <img src='Logos/scrivener.png' width='32' height='32'> Scrivener | 3.5.2 |
 | <img src='Logos/scroll_reverser.png' width='32' height='32'> Scroll Reverser | 1.9 |
@@ -1717,7 +1574,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/securesafe.png' width='32' height='32'> SecureSafe | 2.25.0 |
 | <img src='Logos/selfcontrol.png' width='32' height='32'> SelfControl | 4.0.2 |
 | <img src='Logos/sempliva_tiles.png' width='32' height='32'> Sempliva Tiles | 1.3.2 |
-| <img src='Logos/send_to_kindle.png' width='32' height='32'> Send to Kindle | 1.1.1.259 |
 | <img src='Logos/sensei.png' width='32' height='32'> Sensei | 2.1.3 |
 | <img src='Logos/sentinel.png' width='32' height='32'> Sentinel | 0.41.0 |
 | <img src='Logos/sequel_ace.png' width='32' height='32'> Sequel Ace | 6.0.1 |
@@ -1735,7 +1591,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/shutter_encoder.png' width='32' height='32'> Shutter Encoder | 20.4 |
 | <img src='Logos/sidenotes.png' width='32' height='32'> SideNotes | 1.6.6 |
 | <img src='Logos/sigmaos.png' width='32' height='32'> SigmaOS | 1.19.0.4 |
-| <img src='Logos/signal.png' width='32' height='32'> Signal | 8.28.0 |
+| <img src='Logos/signal.png' width='32' height='32'> Signal | 8.29.0 |
 | <img src='Logos/silentknight.png' width='32' height='32'> SilentKnight | 3.02 |
 | <img src='Logos/silhouette_studio.png' width='32' height='32'> Silhouette Studio | 5.0.539.001 |
 | <img src='Logos/siliconmotion_instantview.png' width='32' height='32'> SiliconMotion InstantView | 3.24 |
@@ -1748,13 +1604,11 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/sketch.png' width='32' height='32'> Sketch | 2026.3.1 |
 | <img src='Logos/sketchup.png' width='32' height='32'> SketchUp | 2026.2.242.76 |
 | <img src='Logos/skim.png' width='32' height='32'> Skim | 1.7.17 |
-| <img src='Logos/skype.png' width='32' height='32'> Skype | 8.150.0.125 |
 | <img src='Logos/slab.png' width='32' height='32'> Slab | 1.8.0 |
 | <img src='Logos/slack.png' width='32' height='32'> Slack | 4.52.171 |
 | <img src='Logos/slidepad.png' width='32' height='32'> Slidepad | 1.6.2 |
 | <img src='Logos/sloth.png' width='32' height='32'> Sloth | 3.6 |
 | <img src='Logos/smartbear_soapui.png' width='32' height='32'> SmartBear SoapUI | 5.9.1 |
-| <img src='Logos/smartsheet.png' width='32' height='32'> Smartsheet | 1.0.54 |
 | <img src='Logos/smartsvn.png' width='32' height='32'> SmartSVN | 14.5.1 |
 | <img src='Logos/smoothscroll.png' width='32' height='32'> SmoothScroll | 1.7.6 |
 | <img src='Logos/smultron.png' width='32' height='32'> Smultron | 14.5 |
@@ -1768,13 +1622,12 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/soundanchor.png' width='32' height='32'> SoundAnchor | 1.8.3 |
 | <img src='Logos/soundsource.png' width='32' height='32'> SoundSource | 6.1.4 |
 | <img src='Logos/spamsieve.png' width='32' height='32'> SpamSieve | 3.3.2 |
-| <img src='Logos/sparkle.png' width='32' height='32'> Sparkle | 2.9.4 |
 | <img src='Logos/spitfire_audio.png' width='32' height='32'> Spitfire Audio | 3.4.17 |
 | <img src='Logos/splashtop_business.png' width='32' height='32'> Splashtop Business | 3.8.6.0 |
 | <img src='Logos/splashtop_streamer.png' width='32' height='32'> Splashtop Streamer | 3.8.6.0 |
 | <img src='Logos/splice.png' width='32' height='32'> Splice | 5.4.13 |
 | <img src='Logos/spline.png' width='32' height='32'> Spline | 0.20.49 |
-| <img src='Logos/spotify.png' width='32' height='32'> Spotify | 1.3.1.234 |
+| <img src='Logos/spotify.png' width='32' height='32'> Spotify | 1.3.3.264 |
 | <img src='Logos/sproutcube_shortcat.png' width='32' height='32'> Sproutcube Shortcat | 0.12.2 |
 | <img src='Logos/spyder.png' width='32' height='32'> Spyder | 6.1.7 |
 | <img src='Logos/sqlectron.png' width='32' height='32'> Sqlectron | 1.39.0 |
@@ -1797,16 +1650,15 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/stoplight_studio.png' width='32' height='32'> Stoplight Studio | 2.10.0 |
 | <img src='Logos/streamlabs_desktop.png' width='32' height='32'> Streamlabs Desktop | 1.21.6 |
 | <img src='Logos/stremio.png' width='32' height='32'> Stremio | 5.1.26 |
-| <img src='Logos/stretchly.png' width='32' height='32'> Stretchly | 1.21.0 |
 | <img src='Logos/studio.png' width='32' height='32'> Studio | 2.26.9 |
 | <img src='Logos/studio_3t.png' width='32' height='32'> Studio 3T | 2026.14.0 |
 | <img src='Logos/subethaedit.png' width='32' height='32'> SubEthaEdit | 5.2.4 |
 | <img src='Logos/sublime_merge.png' width='32' height='32'> Sublime Merge | 2132 |
 | <img src='Logos/sublime_text.png' width='32' height='32'> Sublime Text | 4215 |
-| <img src='Logos/sunsama.png' width='32' height='32'> Sunsama | 3.4.12 |
+| <img src='Logos/sunsama.png' width='32' height='32'> Sunsama | 3.4.13 |
 | <img src='Logos/supercollider.png' width='32' height='32'> SuperCollider | 3.14.1 |
-| <img src='Logos/superduper.png' width='32' height='32'> SuperDuper! | 4.0.8 |
-| <img src='Logos/superhuman.png' width='32' height='32'> Superhuman | 1041.0.63 |
+| <img src='Logos/superduper.png' width='32' height='32'> SuperDuper! | 4.0.9 |
+| <img src='Logos/superhuman.png' width='32' height='32'> Superhuman | 1041.0.64 |
 | <img src='Logos/superkey.png' width='32' height='32'> Superkey | 1.66 |
 | <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.57.6 |
 | <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 2.18.5 |
@@ -1823,7 +1675,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/swifty.png' width='32' height='32'> Swifty | 0.6.13 |
 | <img src='Logos/swinsian.png' width='32' height='32'> Swinsian | 3.0.8 |
 | <img src='Logos/swish.png' width='32' height='32'> Swish | 1.13.3 |
-| <img src='Logos/switch_audio_converter.png' width='32' height='32'> Switch Audio Converter | 14.08 |
 | <img src='Logos/sync.png' width='32' height='32'> Sync | 2.2.64 |
 | <img src='Logos/syncmate.png' width='32' height='32'> SyncMate | 8.11.604 |
 | <img src='Logos/syncovery.png' width='32' height='32'> Syncovery | 12.7.4 |
@@ -1846,7 +1697,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/teamviewer.png' width='32' height='32'> TeamViewer | 15.82.6 |
 | <img src='Logos/teamviewer_host.png' width='32' height='32'> TeamViewer Host | 15 |
 | <img src='Logos/teamviewer_quicksupport.png' width='32' height='32'> TeamViewer QuickSupport | 15 |
-| <img src='Logos/techsmith_capture.png' width='32' height='32'> TechSmith Capture | 1.3.31 |
 | <img src='Logos/telegram_for_macos.png' width='32' height='32'> Telegram for macOS | 12.10 |
 | <img src='Logos/tenable_nessus_agent.png' width='32' height='32'> Tenable Nessus Agent | 11.2.3 |
 | <img src='Logos/termius.png' width='32' height='32'> Termius | 10.1.3 |
@@ -1862,15 +1712,10 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/ticktick.png' width='32' height='32'> TickTick | 8.2.30 |
 | <img src='Logos/tidal.png' width='32' height='32'> TIDAL | 2.43.2 |
 | <img src='Logos/tigervnc.png' width='32' height='32'> TigerVNC | 1.15.0 |
-| <img src='Logos/timer.png' width='32' height='32'> Timer | 9.0.3 |
 | <img src='Logos/timescribe.png' width='32' height='32'> TimeScribe | 1.17.1 |
 | <img src='Logos/timing.png' width='32' height='32'> Timing | 2026.5 |
-| <img src='Logos/todoist.png' width='32' height='32'> Todoist | 9.30.0 |
+| <img src='Logos/todoist.png' width='32' height='32'> Todoist | 9.31.0 |
 | <img src='Logos/tofu.png' width='32' height='32'> Tofu | 3.1 |
-| <img src='Logos/tomatobar.png' width='32' height='32'> TomatoBar | 3.6.1 |
-| <img src='Logos/topaz_gigapixel_ai.png' width='32' height='32'> Topaz Gigapixel AI | 8.4.4 |
-| <img src='Logos/topaz_photo_ai.png' width='32' height='32'> Topaz Photo AI | 4.0.4 |
-| <img src='Logos/topaz_video_ai.png' width='32' height='32'> Topaz Video AI | 7.1.5 |
 | <img src='Logos/topnotch.png' width='32' height='32'> TopNotch | 1.3.2 |
 | <img src='Logos/tor_browser.png' width='32' height='32'> Tor Browser | 15.0.24 |
 | ❌ Toshiba ColorMFP Drivers | 7.119.4.0 |
@@ -1880,20 +1725,18 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/transcribe.png' width='32' height='32'> Transcribe! | 9.70.1 |
 | <img src='Logos/transfer.png' width='32' height='32'> Transfer | 2.4.4 |
 | <img src='Logos/transmission.png' width='32' height='32'> Transmission | 4.1.3 |
-| <img src='Logos/transmit.png' width='32' height='32'> Transmit | 5.11.6 |
+| <img src='Logos/transmit.png' width='32' height='32'> Transmit | 5.11.7 |
 | <img src='Logos/transnomino.png' width='32' height='32'> Transnomino | 10.1.0 |
 | <img src='Logos/tresorit.png' width='32' height='32'> Tresorit | 3.5.3528.4860 |
 | <img src='Logos/trex.png' width='32' height='32'> TRex | 2.0.0 |
-| <img src='Logos/trezor_suite.png' width='32' height='32'> TREZOR Suite | 26.9.2 |
-| <img src='Logos/tribler.png' width='32' height='32'> Tribler | 8.4.3 |
+| <img src='Logos/trezor_suite.png' width='32' height='32'> TREZOR Suite | 26.9.3 |
 | <img src='Logos/tripmode.png' width='32' height='32'> TripMode | 3.2.4 |
 | <img src='Logos/tumult_hype.png' width='32' height='32'> Tumult Hype | 4.1.21 |
 | <img src='Logos/tunnelbear.png' width='32' height='32'> TunnelBear | 5.10.0 |
 | <img src='Logos/tunnelblick.png' width='32' height='32'> Tunnelblick | 9.0.1 |
-| <img src='Logos/tuple.png' width='32' height='32'> Tuple | 3.3.6 |
+| <img src='Logos/tuple.png' width='32' height='32'> Tuple | 3.3.7 |
 | <img src='Logos/tuta_mail.png' width='32' height='32'> Tuta Mail | 361.260929.0 |
 | <img src='Logos/twingate.png' width='32' height='32'> Twingate | 2026.259.28406 |
-| <img src='Logos/twitch_studio.png' width='32' height='32'> Twitch Studio | 0.114.8 |
 | <img src='Logos/typeface.png' width='32' height='32'> Typeface | 4.5.0 |
 | <img src='Logos/typinator.png' width='32' height='32'> Typinator | 10.2 |
 | <img src='Logos/typora.png' width='32' height='32'> Typora | 1.14.10 |
@@ -1905,7 +1748,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/unicodechecker.png' width='32' height='32'> UnicodeChecker | 1.25.1 |
 | <img src='Logos/unifi_identity_endpoint.png' width='32' height='32'> UniFi Identity Endpoint | 4.2.1 |
 | <img src='Logos/unite.png' width='32' height='32'> Unite | 6.6 |
-| <img src='Logos/unity_hub.png' width='32' height='32'> Unity Hub | 3.22.0 |
+| <img src='Logos/unity_hub.png' width='32' height='32'> Unity Hub | 3.22.1 |
 | <img src='Logos/unnaturalscrollwheels.png' width='32' height='32'> UnnaturalScrollWheels | 1.4.2 |
 | <img src='Logos/updf.png' width='32' height='32'> UPDF | 2.5.7 |
 | <img src='Logos/upscayl.png' width='32' height='32'> Upscayl | 2.15.0 |
@@ -1915,19 +1758,16 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/vellum.png' width='32' height='32'> Vellum | 4.1.5 |
 | <img src='Logos/veracrypt.png' width='32' height='32'> VeraCrypt | 1.26.29 |
 | <img src='Logos/versions.png' width='32' height='32'> Versions | 2.4.5 |
-| <img src='Logos/via.png' width='32' height='32'> VIA | 3.0.0 |
 | <img src='Logos/viber.png' width='32' height='32'> Viber | 1.0.0.107 |
 | <img src='Logos/vimcal.png' width='32' height='32'> Vimcal | 1.0.48 |
 | <img src='Logos/vimr.png' width='32' height='32'> VimR | 0.66.1 |
 | <img src='Logos/virtualbuddy.png' width='32' height='32'> VirtualBuddy | 2.1 |
-| <img src='Logos/viscosity.png' width='32' height='32'> Viscosity | 1.13.1 |
+| <img src='Logos/viscosity.png' width='32' height='32'> Viscosity | 1.13.2 |
 | <img src='Logos/visual_paradigm.png' width='32' height='32'> Visual Paradigm | 18.1 |
 | <img src='Logos/visualvm.png' width='32' height='32'> VisualVM | 2.2.2 |
 | <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 8.2.4133.80 |
 | <img src='Logos/viz.png' width='32' height='32'> Viz | 2.3.3 |
 | <img src='Logos/vlc_media_player.png' width='32' height='32'> VLC media player | 3.0.24 |
-| <img src='Logos/vmware_fusion.png' width='32' height='32'> VMware Fusion | 13.6.3 |
-| <img src='Logos/vnote.png' width='32' height='32'> VNote | 4.1.1 |
 | <img src='Logos/vorssaint.png' width='32' height='32'> Vorssaint | 3.4.0 |
 | <img src='Logos/vox.png' width='32' height='32'> VOX | 3.7.7 |
 | <img src='Logos/vpn_tracker_365.png' width='32' height='32'> VPN Tracker 365 | 26.8 |
@@ -1936,7 +1776,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/vyprvpn.png' width='32' height='32'> VyprVPN | 6.0.4.11438 |
 | <img src='Logos/vysor.png' width='32' height='32'> Vysor | 5.0.7 |
 | ❌ Wacom Tablet | 6.4.14-2 |
-| <img src='Logos/warp.png' width='32' height='32'> Warp | 0.2026.09.23.14.34.stable |
+| <img src='Logos/warp.png' width='32' height='32'> Warp | 0.2026.09.30.08.29.stable |
 | <img src='Logos/waterfox.png' width='32' height='32'> Waterfox | 6.7.5 |
 | <img src='Logos/wave_terminal.png' width='32' height='32'> Wave Terminal | 0.14.5 |
 | <img src='Logos/wavebox.png' width='32' height='32'> Wavebox | 154.3.5.2 |
@@ -1948,23 +1788,18 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/webex_teams.png' width='32' height='32'> Webex Teams | 45.6.1.32593 |
 | <img src='Logos/webstorm.png' width='32' height='32'> WebStorm | 2026.2.3 |
 | <img src='Logos/wechat_for_mac.png' width='32' height='32'> WeChat for Mac | 4.1.15.22 |
-| <img src='Logos/weektodo.png' width='32' height='32'> WeekToDo | 2.2.0 |
 | <img src='Logos/wezterm.png' width='32' height='32'> WezTerm | 20240203-110809 |
 | <img src='Logos/whatroute.png' width='32' height='32'> WhatRoute | 2.8.1 |
-| <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 26.39.17 |
+| <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 26.39.19 |
 | <img src='Logos/whatsize.png' width='32' height='32'> WhatSize | 8.2.9 |
 | <img src='Logos/whimsical.png' width='32' height='32'> Whimsical | 2026.12.2 |
-| <img src='Logos/whisky.png' width='32' height='32'> Whisky | 2.3.5 |
 | <img src='Logos/whispering.png' width='32' height='32'> Whispering | 7.11.0 |
 | <img src='Logos/wifiman_desktop.png' width='32' height='32'> WiFiman Desktop | 1.3.0 |
 | <img src='Logos/winbox.png' width='32' height='32'> WinBox | 4.4 |
 | <img src='Logos/windowkeys.png' width='32' height='32'> WindowKeys | 3.0.1 |
 | <img src='Logos/windows_app.png' width='32' height='32'> Windows App | 11.4.3 |
-| <img src='Logos/windsurf.png' width='32' height='32'> Windsurf | 2.3.15 |
-| <img src='Logos/winehqstable.png' width='32' height='32'> WineHQ-stable | 11.0 |
 | <img src='Logos/wins.png' width='32' height='32'> Wins | 3.6 |
 | <img src='Logos/winzip.png' width='32' height='32'> WinZip | 12.0.7282 |
-| <img src='Logos/wire.png' width='32' height='32'> Wire | 3.42.5489 |
 | <img src='Logos/wirecast.png' width='32' height='32'> Wirecast | 16.5.4 |
 | <img src='Logos/wireshark.png' width='32' height='32'> Wireshark | 4.6.9 |
 | <img src='Logos/witch.png' width='32' height='32'> Witch | 4.7.0 |
@@ -1972,7 +1807,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/wordservice.png' width='32' height='32'> WordService | 2.8.3 |
 | <img src='Logos/workflowy.png' width='32' height='32'> WorkFlowy | 4.3.2609291146 |
 | <img src='Logos/workspaces.png' width='32' height='32'> Workspaces | 2.3 |
-| <img src='Logos/x_lossless_decoder.png' width='32' height='32'> X Lossless Decoder | 20250302 |
 | <img src='Logos/xattred.png' width='32' height='32'> xattred | 1.7 |
 | <img src='Logos/xca.png' width='32' height='32'> XCA | 2.9.0 |
 | <img src='Logos/xmenu.png' width='32' height='32'> XMenu | 1.9.11 |
@@ -1980,22 +1814,18 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/xmplify.png' width='32' height='32'> Xmplify | 1.11.11 |
 | <img src='Logos/xnapper.png' width='32' height='32'> Xnapper | 1.17.1 |
 | <img src='Logos/xnsoft_xnconvert.png' width='32' height='32'> XnSoft XnConvert | 1.116.0 |
-| <img src='Logos/xnviewmp.png' width='32' height='32'> XnViewMP | 1.11.7 |
+| <img src='Logos/xnviewmp.png' width='32' height='32'> XnViewMP | 1.12.1 |
 | <img src='Logos/xquartz.png' width='32' height='32'> XQuartz | 2.8.6 |
 | <img src='Logos/xtool_studio.png' width='32' height='32'> xTool Studio | 1.2.11 |
 | <img src='Logos/yaak.png' width='32' height='32'> Yaak | 2026.8.1 |
 | <img src='Logos/yacreader.png' width='32' height='32'> YACReader | 10.3.2.260928407 |
 | <img src='Logos/yattee.png' width='32' height='32'> Yattee | 1.5.1 |
-| <img src='Logos/yippy.png' width='32' height='32'> Yippy | 2.8.1 |
 | <img src='Logos/yoink.png' width='32' height='32'> Yoink | 3.7.6 |
 | <img src='Logos/yubico_authenticator.png' width='32' height='32'> Yubico Authenticator | 7.4.1 |
-| <img src='Logos/yubikey_manager.png' width='32' height='32'> Yubikey Manager | 1.2.5 |
 | <img src='Logos/yworks_yed.png' width='32' height='32'> yWorks yEd | 3.25.1 |
 | <img src='Logos/zappy.png' width='32' height='32'> Zappy | 5.0.1 |
 | <img src='Logos/zed.png' width='32' height='32'> Zed | 1.22.0 |
-| <img src='Logos/zed_attack_proxy.png' width='32' height='32'> Zed Attack Proxy | 2.17.0 |
 | <img src='Logos/zen_browser.png' width='32' height='32'> Zen Browser | 1.22.3b |
-| ❌ Zenmap | 7.99 |
 | <img src='Logos/zeplin.png' width='32' height='32'> Zeplin | 10.33.1 |
 | <img src='Logos/zettlr.png' width='32' height='32'> Zettlr | 4.8.0 |
 | <img src='Logos/zight.png' width='32' height='32'> Zight | 8.7.3 |
@@ -2006,6 +1836,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 
 > [!NOTE]
 > Missing an app? Feel free to [request additional app support](https://github.com/ugurkocde/IntuneBrew/issues/new?labels=app-request) by creating an issue!
+
 ## 🔧 Configuration
 
 First decide which authentication method you would like to use. There are currently the following methods implemented:
