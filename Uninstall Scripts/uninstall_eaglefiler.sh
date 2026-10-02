@@ -17,6 +17,10 @@ fi
 echo "Stopping EagleFiler if running..."
 pkill -f "EagleFiler" 2>/dev/null || true
 
+# Kill application with bundle ID com.apple.helpviewer if running
+echo "Stopping application with bundle ID com.apple.helpviewer if running..."
+killall -9 "com.apple.helpviewer" 2>/dev/null || true
+
 # Remove /Applications/EagleFiler.app
 echo "Removing /Applications/EagleFiler.app..."
 if [ -d "/Applications/EagleFiler.app" ]; then
