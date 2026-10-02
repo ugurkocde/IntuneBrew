@@ -17,6 +17,10 @@ fi
 echo "Stopping TeX Live Utility if running..."
 pkill -f "TeX Live Utility" 2>/dev/null || true
 
+# Kill application with bundle ID com.googlecode.mactlmgr.tlu if running
+echo "Stopping application with bundle ID com.googlecode.mactlmgr.tlu if running..."
+killall -9 "com.googlecode.mactlmgr.tlu" 2>/dev/null || true
+
 # Remove /Applications/TeX Live Utility.app
 echo "Removing /Applications/TeX Live Utility.app..."
 if [ -d "/Applications/TeX Live Utility.app" ]; then
