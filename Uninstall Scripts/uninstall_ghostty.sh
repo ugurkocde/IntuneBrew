@@ -17,6 +17,10 @@ fi
 echo "Stopping Ghostty if running..."
 pkill -f "Ghostty" 2>/dev/null || true
 
+# Kill application with bundle ID com.mitchellh.ghostty if running
+echo "Stopping application with bundle ID com.mitchellh.ghostty if running..."
+killall -9 "com.mitchellh.ghostty" 2>/dev/null || true
+
 # Remove /Applications/Ghostty.app
 echo "Removing /Applications/Ghostty.app..."
 if [ -d "/Applications/Ghostty.app" ]; then

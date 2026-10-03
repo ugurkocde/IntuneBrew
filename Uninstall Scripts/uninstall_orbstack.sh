@@ -17,6 +17,10 @@ fi
 echo "Stopping OrbStack if running..."
 pkill -f "OrbStack" 2>/dev/null || true
 
+# Kill application with bundle ID dev.kdrag0n.MacVirt if running
+echo "Stopping application with bundle ID dev.kdrag0n.MacVirt if running..."
+killall -9 "dev.kdrag0n.MacVirt" 2>/dev/null || true
+
 # Remove /Applications/OrbStack.app
 echo "Removing /Applications/OrbStack.app..."
 if [ -d "/Applications/OrbStack.app" ]; then
