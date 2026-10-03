@@ -9,7 +9,7 @@
   "fileName": "transmit_5.11.7.pkg",
   "type": "app",
   "sha": "8caa962ef2f8b37eaf7ab4b268dfcc2a5121e5abbf50420b018903347d9c2fab",
-  "previous_version": "5.11.6",
+  "previous_version": "5.11.7",
   "category": "Utilities",
   "publisher": "Panic, Inc.",
   "homebrew_cask": "transmit"
