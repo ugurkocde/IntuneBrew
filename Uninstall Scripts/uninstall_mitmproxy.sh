@@ -17,20 +17,20 @@ fi
 echo "Stopping mitmproxy if running..."
 pkill -f "mitmproxy" 2>/dev/null || true
 
-# Remove /usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy
-echo "Removing /usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy..."
-if [ -d "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy" ]; then
-    rm -rf "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy" 2>/dev/null || true
-elif [ -f "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy" ]; then
-    rm -f "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy" 2>/dev/null || true
-fi
-
 # Remove /usr/local/bin/mitmproxy.app/Contents/MacOS/mitmdump
 echo "Removing /usr/local/bin/mitmproxy.app/Contents/MacOS/mitmdump..."
 if [ -d "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmdump" ]; then
     rm -rf "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmdump" 2>/dev/null || true
 elif [ -f "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmdump" ]; then
     rm -f "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmdump" 2>/dev/null || true
+fi
+
+# Remove /usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy
+echo "Removing /usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy..."
+if [ -d "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy" ]; then
+    rm -rf "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy" 2>/dev/null || true
+elif [ -f "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy" ]; then
+    rm -f "/usr/local/bin/mitmproxy.app/Contents/MacOS/mitmproxy" 2>/dev/null || true
 fi
 
 # Remove /usr/local/bin/mitmproxy.app/Contents/MacOS/mitmweb
