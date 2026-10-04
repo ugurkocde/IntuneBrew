@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-10-04T01:16:18.829Z",
+  "last_full_scan": "2026-10-04T01:48:37.853Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -2554,11 +2554,10 @@
       "name": "GitKraken"
     },
     "glyphs": {
-      "last_checked": "2026-01-15T18:11:46.710Z",
-      "bundle_id": "com.GeorgSeifert.Glyphs3",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-10-04T01:48:37.837Z",
+      "bundle_id": "com.GeorgSeifert.Glyphs4",
+      "status": "verified",
+      "source": "file",
       "name": "Glyphs"
     },
     "go2shell": {
