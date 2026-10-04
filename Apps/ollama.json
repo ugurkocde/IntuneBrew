@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "cb455528ea7784f7faebabb4d6da4e180a97964bfc8d51304fb02f6a259d60c7",
   "changelog": "https://github.com/ollama/ollama/releases",
-  "previous_version": "0.35.0",
+  "previous_version": "0.35.1",
   "category": "Developer Tools",
   "publisher": "Ollama",
   "homebrew_cask": "ollama-app"

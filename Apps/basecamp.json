@@ -9,7 +9,7 @@
   "fileName": "basecamp_5.2.1.pkg",
   "type": "app",
   "sha": "8d3b10fb23283d404853d533aac03778a782feef9fef93886f3b1eb3be46d7f2",
-  "previous_version": "5.2.0",
+  "previous_version": "5.2.1",
   "qa_info": {
     "qa_timestamp": "2025-05-19T08:02:58Z",
     "qa_result": "Installation successful and verified",

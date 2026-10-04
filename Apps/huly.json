@@ -12,5 +12,7 @@
   "previous_version": "0.7.426",
   "category": "Productivity",
   "publisher": "Huly",
-  "homebrew_cask": "huly"
+  "homebrew_cask": "huly",
+  "deprecated": true,
+  "deprecation_reason": "disabled in Homebrew: no_longer_available"
 }

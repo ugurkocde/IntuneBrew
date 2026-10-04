@@ -1,9 +1,9 @@
 {
   "name": "ocenaudio",
   "description": "Audio editor",
-  "version": "3.21.0",
-  "url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg",
-  "vendor_url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg",
+  "version": "3.21.4",
+  "url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg?",
+  "vendor_url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg?",
   "bundleId": "com.ocenaudio",
   "homepage": "https://www.ocenaudio.com/en",
   "homebrew_cask": "ocenaudio",

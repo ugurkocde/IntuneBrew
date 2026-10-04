@@ -9,7 +9,7 @@
   "fileName": "tex_live_utility_1.58.pkg",
   "type": "app",
   "sha": "c97200ae3e61955c632fdb80bdf9bdb4f916b369da4bafbd42b6a9eefd81c94c",
-  "previous_version": "1.57",
+  "previous_version": "1.58",
   "category": "Utilities",
   "publisher": "Adam Maxwell",
   "homebrew_cask": "tex-live-utility"
