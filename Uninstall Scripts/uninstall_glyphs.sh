@@ -17,32 +17,32 @@ fi
 echo "Stopping Glyphs if running..."
 pkill -f "Glyphs" 2>/dev/null || true
 
-# Kill application with bundle ID com.GeorgSeifert.Glyphs3 if running
-echo "Stopping application with bundle ID com.GeorgSeifert.Glyphs3 if running..."
-killall -9 "com.GeorgSeifert.Glyphs3" 2>/dev/null || true
+# Kill application with bundle ID com.GeorgSeifert.Glyphs* if running
+echo "Stopping application with bundle ID com.GeorgSeifert.Glyphs* if running..."
+killall -9 "com.GeorgSeifert.Glyphs*" 2>/dev/null || true
 
-# Remove /Applications/Glyphs 3.app
-echo "Removing /Applications/Glyphs 3.app..."
-if [ -d "/Applications/Glyphs 3.app" ]; then
-    rm -rf "/Applications/Glyphs 3.app" 2>/dev/null || true
-elif [ -f "/Applications/Glyphs 3.app" ]; then
-    rm -f "/Applications/Glyphs 3.app" 2>/dev/null || true
+# Remove /Applications/Glyphs 4.app
+echo "Removing /Applications/Glyphs 4.app..."
+if [ -d "/Applications/Glyphs 4.app" ]; then
+    rm -rf "/Applications/Glyphs 4.app" 2>/dev/null || true
+elif [ -f "/Applications/Glyphs 4.app" ]; then
+    rm -f "/Applications/Glyphs 4.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs3.sfl*
-echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs3.sfl*..."
-if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs3.sfl*" ]; then
-    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs3.sfl*" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs3.sfl*" ]; then
-    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs3.sfl*" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs4.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs4.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs4.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs4.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs4.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs4.sfl*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.GeorgSeifert.Glyphs3
-echo "Removing $HOME/Library/Application Support/com.GeorgSeifert.Glyphs3..."
-if [ -d "$HOME/Library/Application Support/com.GeorgSeifert.Glyphs3" ]; then
-    rm -rf "$HOME/Library/Application Support/com.GeorgSeifert.Glyphs3" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.GeorgSeifert.Glyphs3" ]; then
-    rm -f "$HOME/Library/Application Support/com.GeorgSeifert.Glyphs3" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.GeorgSeifert.Glyphs4
+echo "Removing $HOME/Library/Application Support/com.GeorgSeifert.Glyphs4..."
+if [ -d "$HOME/Library/Application Support/com.GeorgSeifert.Glyphs4" ]; then
+    rm -rf "$HOME/Library/Application Support/com.GeorgSeifert.Glyphs4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.GeorgSeifert.Glyphs4" ]; then
+    rm -f "$HOME/Library/Application Support/com.GeorgSeifert.Glyphs4" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Glyphs
@@ -53,20 +53,20 @@ elif [ -f "$HOME/Library/Application Support/Glyphs" ]; then
     rm -f "$HOME/Library/Application Support/Glyphs" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs3.help*
-echo "Removing $HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs3.help*..."
-if [ -d "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs3.help*" ]; then
-    rm -rf "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs3.help*" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs3.help*" ]; then
-    rm -f "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs3.help*" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*
+echo "Removing $HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*..."
+if [ -d "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*" ]; then
+    rm -rf "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*" ]; then
+    rm -f "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.GeorgSeifert.Glyphs3.plist
-echo "Removing $HOME/Library/Preferences/com.GeorgSeifert.Glyphs3.plist..."
-if [ -d "$HOME/Library/Preferences/com.GeorgSeifert.Glyphs3.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.GeorgSeifert.Glyphs3.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.GeorgSeifert.Glyphs3.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.GeorgSeifert.Glyphs3.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.GeorgSeifert.Glyphs4.plist
+echo "Removing $HOME/Library/Preferences/com.GeorgSeifert.Glyphs4.plist..."
+if [ -d "$HOME/Library/Preferences/com.GeorgSeifert.Glyphs4.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.GeorgSeifert.Glyphs4.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.GeorgSeifert.Glyphs4.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.GeorgSeifert.Glyphs4.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

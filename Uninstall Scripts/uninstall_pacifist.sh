@@ -17,6 +17,10 @@ fi
 echo "Stopping Pacifist if running..."
 pkill -f "Pacifist" 2>/dev/null || true
 
+# Kill application with bundle ID com.charlessoft.pacifist if running
+echo "Stopping application with bundle ID com.charlessoft.pacifist if running..."
+killall -9 "com.charlessoft.pacifist" 2>/dev/null || true
+
 # Remove /Applications/Pacifist.app
 echo "Removing /Applications/Pacifist.app..."
 if [ -d "/Applications/Pacifist.app" ]; then
