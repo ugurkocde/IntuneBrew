@@ -2104,10 +2104,11 @@ IntuneBrew uses a chain of GitHub Actions workflows to automate app management. 
 App Request Approved
         |
         v
-[1] Auto-Approve App Request
+[1] Approve App Request / Auto-Approve App Request
     - Validates the app from Homebrew
     - Adds app URL to collect_app_info.py
     - Commits and pushes changes
+    - Records the pending request and keeps its issue open
         |
         v
 [2] Build App Packages
@@ -2117,6 +2118,7 @@ App Request Approved
     - Updates Apps/*.json with version info
     - Generates supported_apps.json
     - Updates README app count badge
+    - Notifies the requester and closes fully fulfilled issues
         |
         +------------------+
         |                  |
@@ -2137,11 +2139,19 @@ App Request Approved
 
 | Workflow | Trigger | What It Does |
 |----------|---------|--------------|
-| **Auto-Approve App Request** | `/.approve` comment or `auto-approved` label | Validates and adds new apps to the supported list |
+| **Approve / Auto-Approve App Request** | Owner's `/approve` comment or `auto-approved` label | Validates and queues new apps, tracking them until publication |
 | **Build App Packages** | Push to `collect_app_info.py`, daily schedule, or manual | Downloads apps, creates PKG files, uploads to Azure |
 | **Fetch App Icons** | After Build App Packages completes | Downloads missing app logos from Brandfetch |
 | **Update Version Database** | After Build App Packages completes | Updates Supabase with version info, sends notifications |
 | **Generate Uninstall Scripts** | After Update Version Database completes | Creates PowerShell uninstall scripts for Intune |
+
+Approval jobs share a queue so simultaneous requests are retained. Build jobs
+also queue rather than replacing pending builds. Requests with partial validation
+failures stay open with `needs-review`; a successful build only closes a fully
+fulfilled request. Completion comments are retried after API failures and are
+deduplicated if a comment succeeded but acknowledgement did not. After three
+days without publication, a request receives a review notice and remains tracked
+for eventual recovery.
 
 ### Other Workflows
 

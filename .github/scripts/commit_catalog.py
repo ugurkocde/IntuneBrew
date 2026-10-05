@@ -65,8 +65,9 @@ def merge_content(path, base, generated, current):
         return result.stdout
 
 
-def main(pending=False):
-    selected_paths = ['.github/pending-requests.json'] if pending else PATHS
+def main(pending=False, approval=False):
+    selected_paths = (['.github/scripts/collect_app_info.py', '.github/pending-requests.json'] if approval
+                      else ['.github/pending-requests.json'] if pending else PATHS)
     base_ref = git('rev-parse', 'HEAD').stdout.decode().strip()
     changed = git('diff', '--name-only', '-z', 'HEAD', '--', *selected_paths).stdout
     untracked = git('ls-files', '--others', '--exclude-standard', '-z', '--', *selected_paths).stdout
@@ -94,7 +95,10 @@ def main(pending=False):
                 if git('diff', '--staged', '--quiet', cwd=worktree, check=False).returncode == 0:
                     print('Catalog changes are already published.')
                     return
-                git('commit', '-m', 'Clear resolved app requests [skip ci]' if pending else 'Update app information and supported apps list', cwd=worktree)
+                message = ('Record approved app request' if approval else
+                           'Acknowledge app request notifications [skip ci]' if pending else
+                           'Update app information and supported apps list')
+                git('commit', '-m', message, cwd=worktree)
                 result = git('push', 'origin', 'HEAD:refs/heads/main', cwd=worktree, check=False)
                 if result.returncode == 0:
                     print('Catalog snapshot published with concurrent metadata preserved.')
@@ -109,4 +113,4 @@ def main(pending=False):
 
 
 if __name__ == '__main__':
-    main(pending='--pending' in sys.argv)
+    main(pending='--pending' in sys.argv, approval='--approval' in sys.argv)

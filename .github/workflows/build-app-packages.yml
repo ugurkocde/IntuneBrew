@@ -12,6 +12,7 @@ on:
 # Let each publication finish; a new run must not cancel catalog recovery.
 concurrency:
   group: build-app-packages
+  queue: max
   cancel-in-progress: false
 
 jobs:
@@ -1211,31 +1212,7 @@ jobs:
         if: steps.scope.outputs.scope == 'partial'
         env:
           SCOPE_TOKENS: ${{ steps.scope.outputs.tokens }}
-        run: |
-          reverted=0
-          while IFS= read -r f; do
-            [ -n "$f" ] || continue
-            cask=$(jq -r '.homebrew_cask // empty' "$f" 2>/dev/null || true)
-            if [ -z "$cask" ] || [[ " $SCOPE_TOKENS " != *" $cask "* ]]; then
-              git checkout -- "$f"
-              reverted=$((reverted + 1))
-            fi
-          done < <(git diff --name-only -- 'Apps/*.json')
-
-          while IFS= read -r f; do
-            [ -n "$f" ] || continue
-            cask=$(jq -r '.homebrew_cask // empty' "$f" 2>/dev/null || true)
-            if [ -z "$cask" ] || [[ " $SCOPE_TOKENS " != *" $cask "* ]]; then
-              rm -f "$f"
-              reverted=$((reverted + 1))
-            fi
-          done < <(git ls-files --others --exclude-standard -- 'Apps/*.json')
-
-          # README is regenerated from the collector's full refresh; keep it
-          # consistent with the reverted JSONs rather than a day ahead of them.
-          git checkout -- README.md 2>/dev/null || true
-
-          echo "Reverted $reverted out-of-scope app files"
+        run: python .github/scripts/revert_out_of_scope.py
 
       - name: Validate and publish the catalog snapshot
         env:
@@ -1294,38 +1271,26 @@ jobs:
         id: pending
         run: python .github/scripts/pending_requests.py resolve
 
-      - name: Commit resolved requests
-        if: steps.pending.outputs.notify_count != '0'
-        run: python .github/scripts/commit_catalog.py --pending
-
       - name: Notify requesters
         if: steps.pending.outputs.notify_count != '0'
         uses: actions/github-script@v7
         with:
           script: |
             const fs = require('fs');
+            const { notifyRequests } = require('./.github/scripts/notify_app_requests.cjs');
             const notifications = JSON.parse(fs.readFileSync('pending-notifications.json', 'utf8'));
+            const delivered = await notifyRequests({
+              github,
+              owner: context.repo.owner,
+              repo: context.repo.repo,
+              notifications
+            });
+            fs.writeFileSync('delivered-request-notifications.json', JSON.stringify(delivered));
 
-            for (const item of notifications) {
-              let body = `## Now live\n\n`;
-              body += `The app you requested has been packaged and is available in the catalog.\n\n`;
-              body += `| App | Version |\n|-----|---------|\n`;
-              for (const app of item.apps) {
-                body += `| ${app.name} | \`${app.version}\` |\n`;
-              }
-              body += `\nIt will appear in IntuneBrew on the next run, and updates are `;
-              body += `picked up automatically from Homebrew from here on.`;
+      - name: Acknowledge delivered request notifications
+        if: steps.pending.outputs.notify_count != '0'
+        run: python .github/scripts/pending_requests.py acknowledge
 
-              try {
-                await github.rest.issues.createComment({
-                  owner: context.repo.owner,
-                  repo: context.repo.repo,
-                  issue_number: item.issue,
-                  body: body
-                });
-                console.log(`Commented on #${item.issue}`);
-              } catch (e) {
-                // A deleted or locked issue must not fail the build.
-                console.log(`Could not comment on #${item.issue}: ${e.message}`);
-              }
-            }
+      - name: Commit acknowledged requests
+        if: steps.pending.outputs.notify_count != '0'
+        run: python .github/scripts/commit_catalog.py --pending

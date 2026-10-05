@@ -179,11 +179,11 @@ def extract_casks_from_urls(issue_body):
     """Extract all cask names from Homebrew URLs in the issue body."""
     casks = []
     # Homebrew API URLs
-    for match in re.finditer(r'formulae\.brew\.sh/api/cask/([^/\s.]+)\.json', issue_body):
+    for match in re.finditer(r'formulae\.brew\.sh/api/cask/([a-z0-9+_.@-]+)\.json', issue_body):
         if match.group(1) not in casks:
             casks.append(match.group(1))
     # Homebrew cask page URLs
-    for match in re.finditer(r'formulae\.brew\.sh/cask/([^/\s\)]+)', issue_body):
+    for match in re.finditer(r'formulae\.brew\.sh/cask/([a-z0-9+_.@-]+)', issue_body):
         if match.group(1) not in casks:
             casks.append(match.group(1))
     # brew install commands
@@ -420,16 +420,15 @@ def main():
         set_failed("Could not find any apps to add. Please specify cask names: /approve cask1, cask2")
         sys.exit(1)
 
-    if low_confidence:
-        set_output('needs_review', 'true')
-        set_output('review_json', json.dumps(low_confidence))
-
     # Process each cask
     added_apps = []
     skipped_apps = []
     failed_apps = []
 
     for cask_name in casks_to_process:
+        if not re.fullmatch(r'[a-z0-9][a-z0-9+_.-]*(?:@[a-z0-9][a-z0-9+_.-]*)?', cask_name):
+            failed_apps.append({'cask': cask_name, 'reason': 'invalid cask token'})
+            continue
         # Check if already exists
         if check_app_exists(cask_name, content):
             print(f"Skipping {cask_name}: already exists")
@@ -441,6 +440,10 @@ def main():
         if not homebrew_data:
             print(f"Failed {cask_name}: not found on Homebrew")
             failed_apps.append({'cask': cask_name, 'reason': 'not found on Homebrew'})
+            continue
+
+        if homebrew_data.get('disabled') or homebrew_data.get('deprecated'):
+            failed_apps.append({'cask': cask_name, 'reason': 'disabled or deprecated in Homebrew'})
             continue
 
         # Get app name
@@ -466,6 +469,26 @@ def main():
         else:
             print(f"Failed to add {cask_name}: {error}")
             failed_apps.append({'cask': cask_name, 'reason': error})
+
+    if skipped_apps:
+        from pending_requests import catalog_entries
+        published = catalog_entries()
+        for app in skipped_apps:
+            if app['cask'] not in published:
+                failed_apps.append({
+                    'cask': app['cask'],
+                    'reason': 'registered for collection but publication is not confirmed; inspect the build'
+                })
+
+    # Partial validation failures are unresolved requests, even when another
+    # app was successfully added. Both approval workflows surface this output.
+    review = low_confidence + [
+        {'name': app['cask'], 'reason': app['reason'], 'candidates': []}
+        for app in failed_apps
+    ]
+    if review:
+        set_output('needs_review', 'true')
+        set_output('review_json', json.dumps(review))
 
     # Write the updated file if any apps were added
     if added_apps:
@@ -495,7 +518,10 @@ def main():
 
         print(f"\nSuccessfully added {len(added_apps)} app(s)")
     else:
-        if skipped_apps and not failed_apps:
+        if low_confidence and not failed_apps:
+            set_output('app_added', 'false')
+            sys.exit(0)
+        if skipped_apps and not failed_apps and not low_confidence:
             # Every requested app is already in the catalog. That is a valid
             # outcome of the request, not a pipeline error, so exit cleanly and
             # let the workflow report it as informational.

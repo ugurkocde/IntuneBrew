@@ -73,3 +73,47 @@ class PublicationMergeTests(unittest.TestCase):
         import json
         result = MODULE.merge_content('.github/pending-requests.json', b'[{"issue":1}]', b'[]', b'[{"issue":1},{"issue":2}]')
         self.assertEqual(json.loads(result), [{'issue': 2}])
+
+    def test_approval_publication_preserves_a_concurrent_catalog_commit(self):
+        import json
+        import os
+        import subprocess
+        import tempfile
+        with tempfile.TemporaryDirectory() as directory:
+            root = pathlib.Path(directory)
+            def run(*args, cwd=root):
+                return subprocess.check_output(['git', *args], cwd=cwd, stderr=subprocess.DEVNULL)
+            run('init', '--bare', 'remote.git')
+            run('clone', str(root / 'remote.git'), 'approval')
+            checkout = root / 'approval'
+            run('checkout', '-b', 'main', cwd=checkout)
+            run('config', 'user.name', 'Test', cwd=checkout)
+            run('config', 'user.email', 'test@example.invalid', cwd=checkout)
+            (checkout / '.github/scripts').mkdir(parents=True)
+            collector = checkout / '.github/scripts/collect_app_info.py'
+            collector.write_text('urls = [\n]\n')
+            state = checkout / '.github/pending-requests.json'
+            state.write_text('[]')
+            (checkout / 'Apps').mkdir()
+            (checkout / 'Apps/existing.json').write_text('{"version":"1"}')
+            run('add', '.', cwd=checkout)
+            run('commit', '-m', 'base', cwd=checkout)
+            run('push', '-u', 'origin', 'main', cwd=checkout)
+            run('clone', '--branch', 'main', str(root / 'remote.git'), 'builder')
+            builder = root / 'builder'
+            run('config', 'user.name', 'Test', cwd=builder)
+            run('config', 'user.email', 'test@example.invalid', cwd=builder)
+            (builder / 'Apps/existing.json').write_text('{"version":"2"}')
+            run('commit', '-am', 'catalog publication', cwd=builder)
+            run('push', cwd=builder)
+            collector.write_text('urls = [\n    "requested",\n]\n')
+            state.write_text('[{"issue":42,"casks":["requested"]}]')
+            previous = pathlib.Path.cwd()
+            try:
+                os.chdir(checkout)
+                MODULE.main(approval=True)
+            finally:
+                os.chdir(previous)
+            self.assertIn(b'requested', run('--git-dir', str(root / 'remote.git'), 'show', 'main:.github/scripts/collect_app_info.py'))
+            self.assertEqual(json.loads(run('--git-dir', str(root / 'remote.git'), 'show', 'main:.github/pending-requests.json')), [{'issue':42,'casks':['requested']}])
+            self.assertEqual(json.loads(run('--git-dir', str(root / 'remote.git'), 'show', 'main:Apps/existing.json')), {'version':'2'})
