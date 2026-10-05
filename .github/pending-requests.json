@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "issue": 309,
+    "casks": [
+      "logi-options+"
+    ],
+    "recorded_at": "2026-10-05T20:02:16.955746+00:00",
+    "needs_review": false
+  }
+]
