@@ -1,41 +1,25 @@
 #!/usr/bin/env python3
-"""Track app requests from approval until the app is actually live.
+"""Track approvals until publication and acknowledged notification delivery.
 
-An approved request is committed to collect_app_info.py within seconds, but the
-app is not downloadable until the build workflow has packaged it roughly twenty
-minutes later. Nothing connected those two events, so the requester had to poll
-the Actions tab to find out whether their app had landed.
-
-This script maintains .github/pending-requests.json as the hand-off between the
-two workflows:
-
-  record   auto-approve-app-request.yml writes the issue number and the casks
-           it just added.
-  resolve  build-app-packages.yml checks which of those casks are now in the
-           catalog, emits pending-notifications.json for the workflow to
-           comment with, and drops the resolved entries.
-
-Exit code is always 0. A missing, empty or corrupt state file is treated as "no
-pending requests" so that a bad file can never fail a build.
+resolve emits repeatable notifications without removing durable request state.
+acknowledge applies only successful deliveries for the same request revision.
+A stale request stays tracked after its maintainer-review notice, so a later
+successful build can still notify the requester that their app is live.
 """
-
 import datetime
+import hashlib
 import json
 import os
 import sys
 
 STATE_FILE = ".github/pending-requests.json"
 NOTIFICATIONS_FILE = "pending-notifications.json"
+DELIVERIES_FILE = "delivered-request-notifications.json"
 APPS_FOLDER = "Apps"
-
-# Entries older than this are dropped. A request that has not resolved in three
-# days is not going to, usually because the build failed for that app, and we
-# would rather forget it than comment on it weeks later.
 MAX_AGE_DAYS = 3
 
 
 def set_output(name, value):
-    """Set a GitHub Actions output."""
     output_file = os.environ.get("GITHUB_OUTPUT")
     if output_file:
         with open(output_file, "a") as f:
@@ -44,19 +28,18 @@ def set_output(name, value):
 
 
 def load_state():
-    """Read the pending request list, tolerating a missing or damaged file."""
     if not os.path.exists(STATE_FILE):
         return []
-    try:
-        with open(STATE_FILE) as f:
-            data = json.load(f)
-    except (json.JSONDecodeError, OSError) as e:
-        print(f"Warning: could not read {STATE_FILE} ({e}), starting empty")
-        return []
-    if not isinstance(data, list):
-        print(f"Warning: {STATE_FILE} is not a list, starting empty")
-        return []
-    return [entry for entry in data if isinstance(entry, dict) and entry.get("issue")]
+    with open(STATE_FILE) as f:
+        data = json.load(f)
+    if not isinstance(data, list) or any(
+        not isinstance(entry, dict) or not isinstance(entry.get("issue"), int)
+        or not isinstance(entry.get("casks"), list)
+        or not all(isinstance(cask, str) for cask in entry["casks"])
+        for entry in data
+    ):
+        raise ValueError(f"Invalid request state in {STATE_FILE}; refusing to overwrite it")
+    return data
 
 
 def save_state(entries):
@@ -68,119 +51,109 @@ def save_state(entries):
 
 def parse_timestamp(value):
     try:
-        return datetime.datetime.fromisoformat(value)
-    except (TypeError, ValueError):
+        timestamp = datetime.datetime.fromisoformat(value.replace("Z", "+00:00"))
+        return timestamp.replace(tzinfo=datetime.timezone.utc) if timestamp.tzinfo is None else timestamp
+    except (AttributeError, TypeError, ValueError):
         return None
 
 
 def record():
-    """Store the casks an approved issue is waiting on."""
-    issue = os.environ.get("ISSUE_NUMBER", "").strip()
-    if not issue:
-        print("No ISSUE_NUMBER given, nothing to record")
-        return
-
-    try:
-        apps = json.loads(os.environ.get("APPS_JSON", "[]"))
-    except json.JSONDecodeError:
-        print("APPS_JSON is not valid JSON, nothing to record")
-        return
-
+    issue = int(os.environ["ISSUE_NUMBER"])
+    apps = json.loads(os.environ["APPS_JSON"])
     casks = [a["cask"] for a in apps if isinstance(a, dict) and a.get("cask")]
     if not casks:
-        print("No casks in APPS_JSON, nothing to record")
-        return
-
-    entries = [e for e in load_state() if str(e.get("issue")) != str(issue)]
+        raise ValueError("No casks in APPS_JSON")
+    entries = load_state()
+    existing = next((entry for entry in entries if entry["issue"] == issue), {})
+    # Re-approval of another app on the same issue must preserve earlier work.
+    casks = sorted(set(existing.get("casks", []) + casks))
+    entries = [entry for entry in entries if entry["issue"] != issue]
     entries.append({
-        "issue": int(issue),
+        "issue": issue,
         "casks": casks,
-        "recorded_at": datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "recorded_at": existing.get("recorded_at") or datetime.datetime.now(datetime.timezone.utc).isoformat(),
+        "needs_review": os.environ.get("NEEDS_REVIEW") == "true",
     })
     save_state(entries)
     print(f"Recorded issue #{issue} waiting on: {', '.join(casks)}")
 
 
 def catalog_entries():
-    """Map homebrew cask token to the published app, for live apps only."""
+    # The index is produced after package validation. An app file alone does
+    # not prove the app was included in the published catalog.
+    from publish_catalog import valid_package
     live = {}
-    if not os.path.isdir(APPS_FOLDER):
+    if not os.path.isdir(APPS_FOLDER) or not os.path.exists("supported_apps.json"):
         return live
-
+    with open("supported_apps.json") as f:
+        published = json.load(f)
     for filename in sorted(os.listdir(APPS_FOLDER)):
-        if not filename.endswith(".json"):
+        if not filename.endswith(".json") or filename[:-5] not in published:
             continue
         try:
             with open(os.path.join(APPS_FOLDER, filename)) as f:
                 data = json.load(f)
         except (json.JSONDecodeError, OSError):
             continue
-
-        cask = data.get("homebrew_cask")
-        version = data.get("version", "")
-        # 0.0.0 is the placeholder the build writes before it has packaged the
-        # app, so it means "known about" rather than "downloadable".
-        if not cask or not version or version == "0.0.0" or data.get("deprecated"):
+        cask, version = data.get("homebrew_cask"), data.get("version")
+        if not cask or not version or version == "0.0.0" or data.get("deprecated") or not valid_package(data):
             continue
-
-        live[cask] = {
-            "name": data.get("name", cask),
-            "version": version,
-            "file": f"{APPS_FOLDER}/{filename}",
-        }
+        live[cask] = {"name": data.get("name", cask), "version": version, "file": f"{APPS_FOLDER}/{filename}"}
     return live
 
 
+def notification(entry, kind, **details):
+    revision = {"issue": entry["issue"], "casks": sorted(entry["casks"]),
+                "recorded_at": entry.get("recorded_at"), "needs_review": bool(entry.get("needs_review"))}
+    key = hashlib.sha256(json.dumps({**revision, "kind": kind}, sort_keys=True).encode()).hexdigest()
+    return {**revision, "kind": kind, "marker": f"<!-- intunebrew-request:{key} -->", **details}
+
+
 def resolve():
-    """Emit notifications for requests whose apps are now all live."""
     entries = load_state()
-    if not entries:
-        set_output("notify_count", "0")
-        print("No pending requests")
-        return
-
-    live = catalog_entries()
+    live = catalog_entries() if entries else {}
     now = datetime.datetime.now(datetime.timezone.utc)
-
     notifications = []
-    remaining = []
-
     for entry in entries:
-        casks = entry.get("casks", [])
-        resolved = [live[c] for c in casks if c in live]
-
-        if len(resolved) == len(casks) and casks:
-            notifications.append({"issue": entry["issue"], "apps": resolved})
-            print(f"Issue #{entry['issue']} is now live: {', '.join(casks)}")
-            continue
-
-        recorded_at = parse_timestamp(entry.get("recorded_at"))
-        if recorded_at and (now - recorded_at).days >= MAX_AGE_DAYS:
-            missing = [c for c in casks if c not in live]
-            print(f"Dropping stale issue #{entry['issue']}, never resolved: {', '.join(missing)}")
-            continue
-
-        remaining.append(entry)
-
-    save_state(remaining)
+        casks = entry["casks"]
+        missing = [cask for cask in casks if cask not in live]
+        if casks and not missing:
+            notifications.append(notification(entry, "live", apps=[live[cask] for cask in casks]))
+        else:
+            recorded = parse_timestamp(entry.get("recorded_at"))
+            if recorded and (now - recorded).days >= MAX_AGE_DAYS and not entry.get("review_notified_at"):
+                notifications.append(notification(entry, "needs-review", missing=missing))
     with open(NOTIFICATIONS_FILE, "w") as f:
         json.dump(notifications, f, indent=2)
+    set_output("notify_count", len(notifications))
+    print(f"{len(notifications)} to notify; durable request state retained until acknowledgement")
 
-    set_output("notify_count", str(len(notifications)))
-    print(f"{len(notifications)} to notify, {len(remaining)} still pending")
+
+def acknowledge():
+    with open(DELIVERIES_FILE) as f:
+        deliveries = json.load(f)
+    entries = load_state()
+    remaining = []
+    for entry in entries:
+        receipt = next((delivery for delivery in deliveries
+                        if delivery.get("kind") in ("live", "needs-review")
+                        and delivery.get("marker") == notification(entry, delivery["kind"])["marker"]), None)
+        if receipt and receipt["kind"] == "live":
+            continue
+        if receipt:
+            entry = {**entry, "review_notified_at": datetime.datetime.now(datetime.timezone.utc).isoformat()}
+        remaining.append(entry)
+    if remaining != entries:
+        save_state(remaining)
 
 
 def main():
     command = sys.argv[1] if len(sys.argv) > 1 else ""
-    if command == "record":
-        record()
-    elif command == "resolve":
-        resolve()
-    else:
-        print("Usage: pending_requests.py [record|resolve]", file=sys.stderr)
-        # Still exit 0: a usage slip must not fail a build.
-    return 0
+    handlers = {"record": record, "resolve": resolve, "acknowledge": acknowledge}
+    if command not in handlers:
+        raise ValueError("Usage: pending_requests.py [record|resolve|acknowledge]")
+    handlers[command]()
 
 
 if __name__ == "__main__":
-    sys.exit(main())
+    main()
