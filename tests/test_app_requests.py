@@ -122,7 +122,7 @@ class AppRequestTests(unittest.TestCase):
         self.assertNotIn('all_duplicates', outputs)
         self.record(['logi-options+'])
         self.assertEqual(self.notifications(), [])
-        self.publish('logi-options+', packaging_recipe='logi-options-silent-v1')
+        self.publish('logi-options+', packaging_recipe='logi-options-silent-v1', type='app', fileName='logi_1.pkg', url='https://intunebrew.blob.core.windows.net/pkg/logi_1.pkg', sha='a'*64)
         self.assertEqual(self.notifications()[0]['kind'], 'live')
 
     def test_formula_completion_requires_its_published_package_recipe(self):
@@ -130,6 +130,10 @@ class AppRequestTests(unittest.TestCase):
         self.publish('azure-cli', homebrew_cask=None, homebrew_formula='azure-cli')
         self.assertEqual(self.notifications(), [])
         self.publish('azure-cli', homebrew_cask=None, homebrew_formula='azure-cli', packaging_recipe='azure-cli-universal-v1')
+        self.assertEqual(self.notifications(), [])
+        self.publish('azure-cli', homebrew_cask=None, homebrew_formula='azure-cli', packaging_recipe='azure-cli-universal-v1', type='pkg')
+        self.assertEqual(self.notifications(), [])
+        self.publish('azure-cli', homebrew_cask=None, homebrew_formula='azure-cli', packaging_recipe='azure-cli-universal-v1', type='app', fileName='azure_1.pkg', url='https://intunebrew.blob.core.windows.net/pkg/azure_1.pkg', sha='a'*64)
         self.assertEqual(self.notifications()[0]['apps'][0]['name'], 'azure-cli')
 
     def test_registered_but_unpublished_cask_is_not_closed_as_a_live_duplicate(self):

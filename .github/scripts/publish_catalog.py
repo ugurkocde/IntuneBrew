@@ -6,7 +6,7 @@ import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import unquote, urlparse
-from request_sources import source_token
+from request_sources import source_token, fulfilled_recipe
 
 REPACKAGED = {"app", "pkg_in_dmg", "pkg_in_pkg"}
 
@@ -79,7 +79,7 @@ def publish(scope="all"):
             excluded.append(path.stem)
             continue
         apps[path.stem] = f"https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/{path.name}"
-        if path.stem == 'azure_cli' and data.get('packaging_recipe') == 'azure-cli-universal-v1':
+        if path.stem == 'azure_cli' and fulfilled_recipe(data) and data.get('packaging_recipe') == 'azure-cli-universal-v1':
             alias = Path('Formulas/azure-cli.json')
             alias.parent.mkdir(exist_ok=True)
             alias.write_text(json.dumps(data, indent=2) + '\n')

@@ -13,4 +13,4 @@ def required_recipe(token):
 
 def fulfilled_recipe(data):
     expected = required_recipe(source_token(data))
-    return not expected or data.get("packaging_recipe") == expected
+    return not expected or (data.get("packaging_recipe") == expected and data.get("type") == "app")

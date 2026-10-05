@@ -5,6 +5,7 @@ app_file=$1
 version=$2
 output=$3
 test -f "$app_file/Contents/MacOS/logioptionsplus_installer"
+codesign --verify --deep --strict -R '=anchor apple generic and certificate leaf[subject.OU] = "QED4VVPZWA"' "$app_file"
 test "$(plutil -extract CFBundleIdentifier raw -o - "$app_file/Contents/Info.plist")" = com.logi.optionsplus.installer
 test "$(plutil -extract CFBundleVersion raw -o - "$app_file/Contents/Info.plist")" = "$version"
 stage=$(mktemp -d)
