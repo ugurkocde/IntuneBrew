@@ -73,7 +73,18 @@ jobs:
           git config --local user.name "GitHub Action"
           python .github/scripts/commit_catalog.py --approval
 
-      # Build is auto-triggered by push to main (collect_app_info.py change)
+      - name: Rebuild existing requested packages
+        if: steps.add-app.outputs.rebuild_tokens != ''
+        uses: actions/github-script@v7
+        env:
+          REBUILD_TOKENS: ${{ steps.add-app.outputs.rebuild_tokens }}
+        with:
+          script: |
+            await github.rest.actions.createWorkflowDispatch({
+              owner: context.repo.owner, repo: context.repo.repo,
+              workflow_id: 'build-app-packages.yml', ref: 'main',
+              inputs: { casks: process.env.REBUILD_TOKENS }
+            });
 
       - name: Comment success
         if: steps.add-app.outputs.app_added == 'true'

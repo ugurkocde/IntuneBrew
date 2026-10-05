@@ -8,7 +8,7 @@ import time
 import sys
 
 MISSING = object()
-PATHS = ['Apps/*.json', 'supported_apps.json', 'README.md', 'catalog-sync.json', 'latest-updates.json']
+PATHS = ['Apps/*.json', 'Formulas/azure-cli.json', 'supported_apps.json', 'README.md', 'catalog-sync.json', 'latest-updates.json']
 
 
 def git(*args, cwd=None, check=True):

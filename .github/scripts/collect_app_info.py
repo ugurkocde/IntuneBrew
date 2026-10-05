@@ -12,6 +12,7 @@ import hashlib
 import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse, unquote
+from request_sources import source_token, FORMULA_RECIPES
 
 
 def get_filename_from_url(url, app_name=None, version=None, default_ext=".dmg"):
@@ -1543,7 +1544,7 @@ def find_app_file(apps_folder, display_name=None, cask_token=None):
                     app_data = json.load(f)
             except (OSError, ValueError):
                 continue
-            if app_data.get("homebrew_cask") == cask_token:
+            if source_token(app_data) == cask_token:
                 return candidate
 
     return None
@@ -1569,7 +1570,7 @@ def claim_app_file(file_path, cask_token):
         # same repair as writing a missing one.
         return True
 
-    existing_cask = existing_data.get("homebrew_cask") or ""
+    existing_cask = source_token(existing_data) or ""
     if not existing_cask or existing_cask == cask_token:
         return True
 
@@ -1620,7 +1621,8 @@ def mark_app_deprecated(apps_folder, display_name, reason, cask_token=None):
         app_data = json.load(f)
     already_deprecated = app_data.get("deprecated") and app_data.get("deprecation_reason") == reason
     if cask_token:
-        app_data["homebrew_cask"] = cask_token
+        source_key = 'homebrew_formula' if app_data.get('homebrew_formula') == cask_token else 'homebrew_cask'
+        app_data[source_key] = cask_token
     app_data["deprecated"] = True
     app_data["deprecation_reason"] = reason
     with open(file_path, "w") as f:
@@ -1728,6 +1730,13 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         # Defensive: a URL the prefetch never saw is still fetched here.
         data = fetch_cask_data(json_url)
 
+    is_formula = '/api/formula/' in json_url
+    if is_formula:
+        if cask_token not in FORMULA_RECIPES:
+            raise ValueError(f'No packaging recipe for formula {cask_token}')
+        data = {**data, 'name': ['Azure CLI'], 'version': data['versions']['stable'],
+                'url': data['urls']['stable']['url']}
+
     # A deprecated or disabled cask means the vendor discontinued the app or
     # its download can no longer be fetched reliably. Its URL will rot, so it
     # must not be offered for upload.
@@ -1766,7 +1775,7 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         "vendor_url": vendor_url,
         "bundleId": bundle_id,
         "homepage": data["homepage"],
-        "homebrew_cask": cask_token,
+        ("homebrew_formula" if is_formula else "homebrew_cask"): cask_token,
         # Direct PKG apps must never fall back to a .dmg filename: the uploader derives
         # the Intune app type from the file extension, so a PKG served from an
         # extensionless URL would be deployed as a DMG and fail to mount (Issue #107)
@@ -1787,6 +1796,10 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         app_info["type"] = "pkg_in_pkg"
     elif is_pkg:
         app_info["type"] = "pkg"
+
+    if is_formula:
+        # The package receipt belongs to IntuneBrew; the software publisher does not.
+        app_info["publisher"] = "Microsoft"
 
     return app_info
 
@@ -1999,7 +2012,7 @@ def main():
             file_path = os.path.join(apps_folder, file_name)
             print(f"📝 Attempting to write to: {os.path.abspath(file_path)}")
 
-            if not claim_app_file(file_path, app_info.get("homebrew_cask")):
+            if not claim_app_file(file_path, source_token(app_info)):
                 continue
 
             # For existing files, update version, url, and recalculate SHA if version changed
@@ -2022,7 +2035,10 @@ def main():
                     # Always update version and url
                     existing_data["version"] = new_version
                     existing_data["url"] = app_info["url"]
-                    existing_data["homebrew_cask"] = app_info["homebrew_cask"]
+                    source_key = 'homebrew_formula' if app_info.get('homebrew_formula') else 'homebrew_cask'
+                    existing_data[source_key] = app_info[source_key]
+                    if source_key == 'homebrew_formula':
+                        existing_data.pop('homebrew_cask', None)
                     
                     # For repackaged apps (type "app", "pkg_in_dmg", or "pkg_in_pkg"),
                     # preserve the fileName field from the existing JSON file

@@ -2153,6 +2153,15 @@ deduplicated if a comment succeeded but acknowledgement did not. After three
 days without publication, a request receives a review notice and remains tracked
 for eventual recovery.
 
+Azure CLI requests use a supported formula recipe that bundles Python and all
+dependencies for Apple Silicon and Intel Macs. Its app-catalog package is also
+published through the existing formula manifest for compatibility. Other formulas
+need their own validated packaging recipe before the app request flow accepts them.
+Logi Options+ packages run Logitech's silent installer and verify the installed
+app instead of copying the installer into Applications. Re-approving an existing
+entry built with an older recipe records the request and dispatches a scoped
+rebuild; it remains open until the corrected package is published.
+
 ### Other Workflows
 
 | Workflow | Schedule | Purpose |

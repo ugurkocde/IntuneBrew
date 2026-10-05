@@ -3,6 +3,7 @@ import json
 import os
 from pathlib import Path
 import subprocess
+from request_sources import source_token
 
 
 def git_paths(*args):
@@ -19,7 +20,7 @@ def revert(tokens):
     for paths, existing in [(tracked, True), (untracked, False)]:
         for filename in paths:
             try:
-                cask = json.loads(Path(filename).read_text()).get('homebrew_cask')
+                cask = source_token(json.loads(Path(filename).read_text()))
             except (OSError, ValueError):
                 cask = None
             if cask not in tokens:

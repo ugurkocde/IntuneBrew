@@ -5,6 +5,7 @@ on:
   schedule:
     - cron: '0 2 * * *'  # Daily at 2 AM UTC
   push:
+    branches: [main]
     paths:
       - '.github/data/formulas.txt'
 
@@ -39,6 +40,11 @@ jobs:
           FORMULAS: ${{ steps.formulas.outputs.formulas }}
         run: |
           for formula in $FORMULAS; do
+            # Azure CLI is published by the app pipeline with its complete
+            # Python runtime. Preserve its backwards-compatible formula alias.
+            if [ "$formula" = azure-cli ]; then
+              continue
+            fi
             echo "=== Processing $formula ==="
 
             # 1. Get formula info from Homebrew API

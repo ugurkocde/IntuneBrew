@@ -6,6 +6,9 @@ extracted_dir=$2
 version=$3
 identifier=$4
 case "$app_name" in
+  azure_cli)
+    python "$(dirname "$0")/package_azure_cli.py" "$version" "$extracted_dir/${app_name}_${version}.pkg"
+    exit 0 ;;
   1password_cli) source_dir=.; binaries=(op) ;;
   github_copilot_cli) source_dir=.; binaries=(copilot) ;;
   sentinel) source_dir=.; binaries=(sentinel) ;;

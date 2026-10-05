@@ -186,6 +186,26 @@ def extract_uninstall_paths(app_data):
     
     return uninstall_paths
 
+def get_local_uninstall_paths(app_name, local_app_data):
+    """Use installed recipe payloads and canonical source tokens for cleanup."""
+    if local_app_data.get("homebrew_formula") == "azure-cli" and local_app_data.get("packaging_recipe") == "azure-cli-universal-v1":
+        return ["/usr/local/bin/az", "/usr/local/lib/intunebrew/azure_cli", "PKGUTIL:com.intunebrew.azure_cli"]
+    token = local_app_data.get("homebrew_cask") or local_app_data.get("token") or local_app_data.get("brew_token")
+    brew_data = get_brew_app_info(app_name, token)
+    if not brew_data:
+        return None
+    paths = extract_uninstall_paths(brew_data)
+    if token == "logi-options+" and local_app_data.get("packaging_recipe") == "logi-options-silent-v1":
+        paths.extend([
+            "/Applications/logioptionsplus.app",
+            "/Applications/Utilities/Logi Options+ Driver Installer.bundle",
+            "/Library/Application Support/Logi",
+            "/Library/Application Support/Logitech.localized/LogiOptionsPlus",
+            "/usr/local/lib/intunebrew/logitech_options",
+            "PKGUTIL:com.intunebrew.logitech_options",
+        ])
+    return list(dict.fromkeys(paths))
+
 def generate_uninstall_script(app_name, uninstall_paths):
     """Generate a shell script to uninstall the application"""
     script_content = f"""#!/bin/bash
@@ -450,21 +470,17 @@ def main():
                 if isinstance(app_name, list):
                     app_name = app_name[0]
                 
-                # Check if token is available in the local JSON file
-                token = local_app_data.get("token") or local_app_data.get("brew_token")
-                
                 print(f"Processing {app_name} from {app_file}")
                 
                 # Get application data from brew.sh
-                brew_app_data = get_brew_app_info(app_name, token)
+                uninstall_paths = get_local_uninstall_paths(app_name, local_app_data)
                 
-                if not brew_app_data:
+                if uninstall_paths is None:
                     print(f"Warning: Could not fetch brew.sh data for {app_name}")
                     error_count += 1
                     continue
                 
                 # Extract paths to remove during uninstallation
-                uninstall_paths = extract_uninstall_paths(brew_app_data)
                 
                 if not uninstall_paths:
                     print(f"Warning: No uninstall paths found for {app_name}")
@@ -544,21 +560,17 @@ def process_all_apps(apps_dir_path='Apps'):
             if isinstance(app_name, list):
                 app_name = app_name[0]
             
-            # Check if token is available in the local JSON file
-            token = local_app_data.get("token") or local_app_data.get("brew_token")
-            
             print(f"Processing {app_name} from {app_file}")
             
             # Get application data from brew.sh
-            brew_app_data = get_brew_app_info(app_name, token)
+            uninstall_paths = get_local_uninstall_paths(app_name, local_app_data)
             
-            if not brew_app_data:
+            if uninstall_paths is None:
                 print(f"Warning: Could not fetch brew.sh data for {app_name}")
                 error_count += 1
                 continue
             
             # Extract paths to remove during uninstallation
-            uninstall_paths = extract_uninstall_paths(brew_app_data)
             
             if not uninstall_paths:
                 print(f"Warning: No uninstall paths found for {app_name}")

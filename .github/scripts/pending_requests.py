@@ -11,6 +11,7 @@ import hashlib
 import json
 import os
 import sys
+from request_sources import fulfilled_recipe, source_token
 
 STATE_FILE = ".github/pending-requests.json"
 NOTIFICATIONS_FILE = "pending-notifications.json"
@@ -95,8 +96,8 @@ def catalog_entries():
                 data = json.load(f)
         except (json.JSONDecodeError, OSError):
             continue
-        cask, version = data.get("homebrew_cask"), data.get("version")
-        if not cask or not version or version == "0.0.0" or data.get("deprecated") or not valid_package(data):
+        cask, version = source_token(data), data.get("version")
+        if not cask or not version or version == "0.0.0" or data.get("deprecated") or not valid_package(data) or not fulfilled_recipe(data):
             continue
         live[cask] = {"name": data.get("name", cask), "version": version, "file": f"{APPS_FOLDER}/{filename}"}
     return live

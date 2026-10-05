@@ -6,6 +6,7 @@ import subprocess
 from datetime import datetime, timezone
 from pathlib import Path
 from urllib.parse import unquote, urlparse
+from request_sources import source_token, fulfilled_recipe
 
 REPACKAGED = {"app", "pkg_in_dmg", "pkg_in_pkg"}
 
@@ -51,7 +52,7 @@ def publish(scope="all"):
         failures[Path(item["file_path"]).name] = "identity collision"
         failed_casks.update([item["existing_cask"], item["incoming_cask"]])
     for path in Path("Apps").glob("*.json"):
-        if load(path, {}).get("homebrew_cask") in failed_casks:
+        if source_token(load(path, {})) in failed_casks:
             failures[path.name] = "collection"
     packaging = Path("packaging-failed-apps.txt")
     if packaging.exists():
@@ -78,6 +79,10 @@ def publish(scope="all"):
             excluded.append(path.stem)
             continue
         apps[path.stem] = f"https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/{path.name}"
+        if path.stem == 'azure_cli' and fulfilled_recipe(data) and data.get('packaging_recipe') == 'azure-cli-universal-v1':
+            alias = Path('Formulas/azure-cli.json')
+            alias.parent.mkdir(exist_ok=True)
+            alias.write_text(json.dumps(data, indent=2) + '\n')
         old_bytes = original(path)
         old = json.loads(old_bytes) if old_bytes else {}
         if old.get("version") and data.get("version") != old["version"]:
@@ -88,7 +93,7 @@ def publish(scope="all"):
         raise RuntimeError("Refusing to publish an empty catalog")
     # A failed request with no existing file must still appear in the report.
     for token in failed_casks:
-        if not any(load(p, {}).get("homebrew_cask") == token for p in Path("Apps").glob("*.json")):
+        if not any(source_token(load(p, {})) == token for p in Path("Apps").glob("*.json")):
             failures[f"cask:{token}"] = "collection"
     if len(failures) >= len(apps):
         raise RuntimeError("Collection failed for most of the catalog; keeping the published snapshot")

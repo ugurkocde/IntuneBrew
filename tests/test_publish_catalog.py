@@ -3,14 +3,34 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 import unittest
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / '.github/scripts'))
 spec = importlib.util.spec_from_file_location('publish_catalog', Path(__file__).resolve().parents[1] / '.github/scripts/publish_catalog.py')
 publisher = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(publisher)
 
 class PublicationTests(unittest.TestCase):
+    def test_formula_alias_uses_the_complete_published_app_package(self):
+        data = dict(name='Azure CLI', version='2.90.0', homebrew_formula='azure-cli',
+                    packaging_recipe='azure-cli-universal-v1', type='app',
+                    fileName='azure_cli_2.90.0.pkg',
+                    url='https://intunebrew.blob.core.windows.net/pkg/azure_cli_2.90.0.pkg', sha='a'*64)
+        Path('Apps/azure_cli.json').write_text(json.dumps(data))
+        publisher.publish()
+        self.assertEqual(publisher.source_token(data), 'azure-cli')
+        self.assertNotIn('homebrew_cask', data)
+        self.assertEqual(json.loads(Path('Formulas/azure-cli.json').read_text()), json.loads(Path('Apps/azure_cli.json').read_text()))
+
+    def test_formula_recipe_without_packaged_type_cannot_replace_legacy_alias(self):
+        Path('Formulas').mkdir()
+        Path('Formulas/azure-cli.json').write_text('{"previous":true}')
+        Path('Apps/azure_cli.json').write_text(json.dumps(dict(name='Azure CLI', version='2.90.0', homebrew_formula='azure-cli', packaging_recipe='azure-cli-universal-v1')))
+        publisher.publish()
+        self.assertEqual(json.loads(Path('Formulas/azure-cli.json').read_text()), {'previous':True})
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.previous = os.getcwd()

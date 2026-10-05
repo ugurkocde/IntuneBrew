@@ -6,6 +6,10 @@ on:
 permissions:
   contents: read
 
+concurrency:
+  group: pr-validation-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
 jobs:
   repository-integrity:
     name: Repository integrity
@@ -120,6 +124,27 @@ jobs:
         run: bash tests/test_pkg_archive.sh
       - name: Test CLI installer layouts
         run: bash tests/test_cli_package.sh
+      - name: Test Logi Options+ silent installer package
+        run: bash tests/test_logi_package.sh
+
+  azure-package:
+    name: Requested app installation (${{ matrix.os }})
+    strategy:
+      fail-fast: false
+      matrix:
+        os: [macos-latest, macos-15-intel]
+    runs-on: ${{ matrix.os }}
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.13'
+      - run: python -m pip install uv==0.12.23
+      - run: bash tests/test_azure_package.sh
+        env:
+          INSTALL_PACKAGE: '1'
+      - run: bash tests/test_logi_vendor_install.sh
 
   powershell-tests:
     name: PowerShell regression tests (${{ matrix.os }})
