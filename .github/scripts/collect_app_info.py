@@ -1797,6 +1797,10 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
     elif is_pkg:
         app_info["type"] = "pkg"
 
+    if is_formula:
+        # The package receipt belongs to IntuneBrew; the software publisher does not.
+        app_info["publisher"] = "Microsoft"
+
     return app_info
 
 def sanitize_filename(name):

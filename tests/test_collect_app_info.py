@@ -61,6 +61,7 @@ class CollectAppInfoTests(unittest.TestCase):
         self.assertEqual(data['name'], 'Azure CLI')
         self.assertEqual(data['version'], '2.90.0')
         self.assertEqual(data['type'], 'app')
+        self.assertEqual(data['publisher'], 'Microsoft')
 
     def setUp(self):
         collect_app_info.cask_cache.clear()
