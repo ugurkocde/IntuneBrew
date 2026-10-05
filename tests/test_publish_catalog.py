@@ -11,6 +11,14 @@ publisher = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(publisher)
 
 class PublicationTests(unittest.TestCase):
+    def test_formula_alias_uses_the_complete_published_app_package(self):
+        self.write('azure_cli', '2.90.0', homebrew_formula='azure-cli',
+                   packaging_recipe='azure-cli-universal-v1', type='app',
+                   fileName='azure_cli_2.90.0.pkg',
+                   url='https://intunebrew.blob.core.windows.net/pkg/azure_cli_2.90.0.pkg', sha='a'*64)
+        publisher.publish()
+        self.assertEqual(json.loads(Path('Formulas/azure-cli.json').read_text()), json.loads(Path('Apps/azure_cli.json').read_text()))
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory()
         self.previous = os.getcwd()

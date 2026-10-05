@@ -102,6 +102,36 @@ class AppRequestTests(unittest.TestCase):
         self.assertEqual(approval.extract_casks_from_urls('https://formulae.brew.sh/api/cask/example.app.json'), ['example.app'])
         self.assertEqual(approval.extract_casks_from_comment('/approve dotnet-sdk@8'), ['dotnet-sdk@8'])
 
+    def test_supported_formula_is_added_to_the_app_packaging_list(self):
+        Path('.github/scripts/collect_app_info.py').write_text('app_urls = [\n]\n')
+        status, outputs = self.approve(['azure-cli'], {'azure-cli': {'name': 'azure-cli', 'versions': {'stable': '2.90.0'}}})
+        self.assertEqual(status, 0)
+        self.assertEqual(json.loads(outputs['apps_json'])[0]['name'], 'Azure CLI')
+        self.assertIn('/api/formula/azure-cli.json', Path('.github/scripts/collect_app_info.py').read_text())
+        for url in ['https://formulae.brew.sh/formula/azure-cli', 'https://formulae.brew.sh/api/formula/azure-cli.json']:
+            self.assertEqual(approval.extract_casks_from_urls(url), ['azure-cli'])
+        self.assertEqual(approval.extract_casks_from_urls('https://formulae.brew.sh/formula/node'), [])
+
+    def test_installer_only_logi_entry_is_rebuilt_and_not_reported_as_fulfilled(self):
+        Path('.github/scripts/collect_app_info.py').write_text('app_urls = [\n "https://formulae.brew.sh/api/cask/logi-options+.json",\n]\n')
+        self.publish('logi-options+')
+        status, outputs = self.approve(['logi-options+'], {})
+        self.assertEqual(status, 0)
+        self.assertEqual(outputs['app_added'], 'true')
+        self.assertEqual(outputs['rebuild_tokens'], 'logi-options+')
+        self.assertNotIn('all_duplicates', outputs)
+        self.record(['logi-options+'])
+        self.assertEqual(self.notifications(), [])
+        self.publish('logi-options+', packaging_recipe='logi-options-silent-v1')
+        self.assertEqual(self.notifications()[0]['kind'], 'live')
+
+    def test_formula_completion_requires_its_published_package_recipe(self):
+        self.record(['azure-cli'])
+        self.publish('azure-cli', homebrew_cask=None, homebrew_formula='azure-cli')
+        self.assertEqual(self.notifications(), [])
+        self.publish('azure-cli', homebrew_cask=None, homebrew_formula='azure-cli', packaging_recipe='azure-cli-universal-v1')
+        self.assertEqual(self.notifications()[0]['apps'][0]['name'], 'azure-cli')
+
     def test_registered_but_unpublished_cask_is_not_closed_as_a_live_duplicate(self):
         Path('.github/scripts/collect_app_info.py').write_text(
             'homebrew_cask_urls = [\n    "https://formulae.brew.sh/api/cask/requested.json",\n]\n'

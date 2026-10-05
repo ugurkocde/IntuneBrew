@@ -16,6 +16,7 @@ import sys
 import json
 import requests
 from difflib import SequenceMatcher
+from request_sources import FORMULA_RECIPES, required_recipe
 
 # Cache for the Homebrew cask list
 _cask_list_cache = None
@@ -186,6 +187,11 @@ def extract_casks_from_urls(issue_body):
     for match in re.finditer(r'formulae\.brew\.sh/cask/([a-z0-9+_.@-]+)', issue_body):
         if match.group(1) not in casks:
             casks.append(match.group(1))
+    # Formula support is explicit: only recipes that bundle their dependencies
+    # can be fulfilled as macOS apps.
+    for match in re.finditer(r'formulae\.brew\.sh/(?:api/)?formula/([a-z0-9+_.@-]+?)(?:\.json)?(?:[\s#?]|$)', issue_body):
+        if match.group(1) in FORMULA_RECIPES and match.group(1) not in casks:
+            casks.append(match.group(1))
     # brew install commands
     for match in re.finditer(r'brew\s+install\s+(?:--cask\s+)?([^\s\n]+)', issue_body):
         if match.group(1) not in casks:
@@ -224,7 +230,8 @@ def extract_app_names_from_title(issue_title):
 
 def fetch_homebrew_info(cask_name):
     """Fetch app information from Homebrew API."""
-    url = f"https://formulae.brew.sh/api/cask/{cask_name}.json"
+    source = 'formula' if cask_name in FORMULA_RECIPES else 'cask'
+    url = f"https://formulae.brew.sh/api/{source}/{cask_name}.json"
     print(f"Fetching Homebrew info for: {cask_name}")
 
     try:
@@ -289,12 +296,13 @@ def determine_app_type(homebrew_data):
 
 def check_app_exists(cask_name, script_content):
     """Check if the app already exists in any of the lists."""
-    pattern = rf'formulae\.brew\.sh/api/cask/{re.escape(cask_name)}\.json'
+    pattern = rf'formulae\.brew\.sh/api/(?:cask|formula)/{re.escape(cask_name)}\.json'
     return bool(re.search(pattern, script_content))
 
 def add_url_to_list(script_path, list_name, cask_name, lines):
     """Add the Homebrew URL to the appropriate list. Modifies lines in place."""
-    url_to_add = f'    "https://formulae.brew.sh/api/cask/{cask_name}.json",\n'
+    source = 'formula' if cask_name in FORMULA_RECIPES else 'cask'
+    url_to_add = f'    "https://formulae.brew.sh/api/{source}/{cask_name}.json",\n'
 
     list_start_pattern = rf'^{re.escape(list_name)}\s*=\s*\['
     list_start_line = -1
@@ -424,6 +432,7 @@ def main():
     added_apps = []
     skipped_apps = []
     failed_apps = []
+    rebuild_tokens = []
 
     for cask_name in casks_to_process:
         if not re.fullmatch(r'[a-z0-9][a-z0-9+_.-]*(?:@[a-z0-9][a-z0-9+_.-]*)?', cask_name):
@@ -431,6 +440,14 @@ def main():
             continue
         # Check if already exists
         if check_app_exists(cask_name, content):
+            # A supported custom recipe can repair an existing installer-only
+            # entry. It is fulfilled only after the new recipe is published.
+            if required_recipe(cask_name):
+                from pending_requests import catalog_entries
+                if cask_name not in catalog_entries():
+                    rebuild_tokens.append(cask_name)
+                    added_apps.append({'cask': cask_name, 'name': 'Azure CLI' if cask_name == 'azure-cli' else 'Logitech Options+', 'type': 'app', 'list': 'app_urls'})
+                    continue
             print(f"Skipping {cask_name}: already exists")
             skipped_apps.append({'cask': cask_name, 'reason': 'already exists'})
             continue
@@ -447,10 +464,10 @@ def main():
             continue
 
         # Get app name
-        app_name = cask_display_name(homebrew_data, cask_name)
+        app_name = 'Azure CLI' if cask_name == 'azure-cli' else cask_display_name(homebrew_data, cask_name)
 
         # Determine app type
-        list_name, app_type = determine_app_type(homebrew_data)
+        list_name, app_type = ('app_urls', 'app') if cask_name in FORMULA_RECIPES else determine_app_type(homebrew_data)
         print(f"Adding {cask_name} ({app_name}) to {list_name} as {app_type}")
 
         # Add to list
@@ -509,6 +526,8 @@ def main():
         set_output('apps_json', json.dumps(added_apps))
         set_output('commit_message', commit_msg)
         set_output('added_count', str(len(added_apps)))
+        if rebuild_tokens:
+            set_output('rebuild_tokens', ' '.join(rebuild_tokens))
 
         # For single app compatibility
         if len(added_apps) == 1:

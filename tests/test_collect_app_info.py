@@ -46,6 +46,20 @@ class CountingSession:
 
 
 class CollectAppInfoTests(unittest.TestCase):
+    def test_azure_formula_maps_to_dependency_complete_app_source(self):
+        url = 'https://formulae.brew.sh/api/formula/azure-cli.json'
+        collect_app_info.cask_cache[url] = {
+            'name': 'azure-cli', 'versions': {'stable': '2.90.0'},
+            'urls': {'stable': {'url': 'https://github.com/Azure/azure-cli/archive/refs/tags/azure-cli-2.90.0.tar.gz'}},
+            'homepage': 'https://learn.microsoft.com/cli/azure/', 'desc': 'Azure CLI',
+        }
+        data = collect_app_info.get_homebrew_app_info(url, needs_packaging=True)
+        self.assertEqual(data['homebrew_formula'], 'azure-cli')
+        self.assertNotIn('homebrew_cask', data)
+        self.assertEqual(data['name'], 'Azure CLI')
+        self.assertEqual(data['version'], '2.90.0')
+        self.assertEqual(data['type'], 'app')
+
     def setUp(self):
         collect_app_info.cask_cache.clear()
 

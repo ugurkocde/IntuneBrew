@@ -2,6 +2,11 @@ name: Build App Packages and Collect App Information
 
 on:
   workflow_dispatch:
+    inputs:
+      casks:
+        description: 'Optional space-separated source tokens for a scoped rebuild'
+        required: false
+        type: string
   push:
     branches: [main]
     paths:
@@ -38,7 +43,7 @@ jobs:
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
-          pip install requests
+          pip install requests uv==0.12.23
 
       - name: Make scrapers executable
         run: chmod +x .github/scripts/scrapers/*.sh
@@ -53,6 +58,7 @@ jobs:
           GH_TOKEN: ${{ github.token }}
           EVENT_NAME: ${{ github.event_name }}
           BEFORE_SHA: ${{ github.event.before }}
+          REQUESTED_TOKENS: ${{ inputs.casks }}
         run: |
           full_build() {
             echo "Full build: $1"
@@ -60,6 +66,17 @@ jobs:
             exit 0
           }
 
+          if [ "$EVENT_NAME" = "workflow_dispatch" ] && [ -n "$REQUESTED_TOKENS" ]; then
+            python - <<'PY'
+          import os, re
+          tokens = os.environ['REQUESTED_TOKENS'].split()
+          if not tokens or any(not re.fullmatch(r'[a-z0-9][a-z0-9+_.@-]*', token) for token in tokens):
+              raise ValueError('Invalid source tokens')
+          PY
+            echo "scope=partial" >> "$GITHUB_OUTPUT"
+            echo "tokens=$REQUESTED_TOKENS" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
           [ "$EVENT_NAME" = "push" ] || full_build "triggered by $EVENT_NAME"
 
           case "$BEFORE_SHA" in
@@ -79,7 +96,7 @@ jobs:
           # Anything other than a list entry means the collector logic itself
           # changed, and every app has to be re-collected.
           other=$(printf '%s\n' "$changed" \
-            | grep -vE '^[+-][[:space:]]*"https://formulae\.brew\.sh/api/cask/[^"]+\.json",?[[:space:]]*$' || true)
+            | grep -vE '^[+-][[:space:]]*"https://formulae\.brew\.sh/api/(cask|formula)/[^"]+\.json",?[[:space:]]*$' || true)
           if [ -n "$other" ]; then
             echo "Changes beyond list entries:"
             printf '%s\n' "$other" | head -20
@@ -87,7 +104,7 @@ jobs:
           fi
 
           tokens=$(printf '%s\n' "$changed" | grep -E '^\+' \
-            | grep -oE 'cask/[^"]+\.json' | sed 's|cask/||; s|\.json||' | sort -u | tr '\n' ' ')
+            | grep -oE '(cask|formula)/[^"]+\.json' | sed -E 's|(cask|formula)/||; s|\.json||' | sort -u | tr '\n' ' ')
 
           [ -n "$tokens" ] || full_build "no casks were added"
 
@@ -116,7 +133,7 @@ jobs:
           for file in Apps/*.json; do
             [ -f "$file" ] || continue
 
-            cask=$(jq -r '.homebrew_cask // empty' "$file")
+            cask=$(jq -r '.homebrew_cask // .homebrew_formula // empty' "$file")
             in_scope=false
             if [ -n "$cask" ] && [[ " $SCOPE_TOKENS " == *" $cask "* ]]; then
               in_scope=true
@@ -364,6 +381,17 @@ jobs:
             reuse_existing_blob=false
             if echo "$existing_versions" | grep -q "^${app_name}_${version}.pkg$"; then
               reuse_existing_blob=true
+            fi
+
+            # Recipe changes at the same vendor version require a new package.
+            expected_recipe=""
+            case "$app_name" in
+              logitech_options) expected_recipe=logi-options-silent-v1 ;;
+              azure_cli) expected_recipe=azure-cli-universal-v1 ;;
+            esac
+            if [ -n "$expected_recipe" ]; then
+              previous_recipe=$(git -C "$WORKSPACE_DIR" show "HEAD:Apps/${app_name}.json" 2>/dev/null | jq -r '.packaging_recipe // empty') || previous_recipe=""
+              [ "$previous_recipe" = "$expected_recipe" ] || reuse_existing_blob=false
             fi
 
             # The blob name carries the version only, and collect_app_info.py
@@ -973,6 +1001,10 @@ jobs:
                 jq --arg identifier "$cli_identifier" '.bundleId = $identifier | .packageIdentifier = $identifier' \
                   "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json
                 mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                if [ "$app_name" = azure_cli ]; then
+                  jq '.packaging_recipe = "azure-cli-universal-v1" | .binaryPath = "/usr/local/bin/az" | .architectures = ["arm64", "x86_64"]' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json
+                  mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                fi
               fi
 
               # First try to find .app file recursively, excluding __MACOSX directory
@@ -1063,16 +1095,30 @@ jobs:
               echo "✅ Found .app file: $app_file"
               
               extracted_bundle_id=$(extract_bundle_id_from_plist "$app_file/Contents/Info.plist")
+              if [ "$app_name" = logitech_options ]; then
+                extracted_bundle_id=com.logi.optionsplus
+              fi
               log_bundle_id_change "$WORKSPACE_DIR/Apps/${app_name}.json" "$extracted_bundle_id"
 
               # Build PKG with version in filename
               echo "Building PKG for $app_name version $version..."
-              if ! pkgbuild --install-location /Applications --component "$app_file" "${app_name}_${version}.pkg" 2>/dev/null; then
+              build_app_package() {
+                if [ "$app_name" = logitech_options ]; then
+                  bash "$WORKSPACE_DIR/.github/scripts/package_logi_options.sh" "$app_file" "$version" "${app_name}_${version}.pkg"
+                else
+                  pkgbuild --install-location /Applications --component "$app_file" "${app_name}_${version}.pkg"
+                fi
+              }
+              if ! build_app_package; then
                 echo "❌ Failed to build PKG for $app_name"
                 rm -rf "${app_name}_extracted"
                 FAILED_APPS+=("$app_name")
                 ERROR_LOG+=("$app_name: Failed to build PKG from .app file")
                 continue
+              fi
+              if [ "$app_name" = logitech_options ]; then
+                jq '.packaging_recipe = "logi-options-silent-v1"' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json
+                mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
               fi
               
               # Calculate SHA256 hash
