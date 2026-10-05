@@ -17,6 +17,10 @@ fi
 echo "Stopping Stellarium if running..."
 pkill -f "Stellarium" 2>/dev/null || true
 
+# Kill application with bundle ID org.stellarium.Stellarium if running
+echo "Stopping application with bundle ID org.stellarium.Stellarium if running..."
+killall -9 "org.stellarium.Stellarium" 2>/dev/null || true
+
 # Remove /Applications/Stellarium.app
 echo "Removing /Applications/Stellarium.app..."
 if [ -d "/Applications/Stellarium.app" ]; then
