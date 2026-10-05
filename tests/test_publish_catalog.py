@@ -3,9 +3,11 @@ import json
 import os
 from pathlib import Path
 import subprocess
+import sys
 import tempfile
 import unittest
 
+sys.path.insert(0, str(Path(__file__).resolve().parents[1] / '.github/scripts'))
 spec = importlib.util.spec_from_file_location('publish_catalog', Path(__file__).resolve().parents[1] / '.github/scripts/publish_catalog.py')
 publisher = importlib.util.module_from_spec(spec)
 spec.loader.exec_module(publisher)

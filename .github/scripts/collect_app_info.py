@@ -1621,7 +1621,8 @@ def mark_app_deprecated(apps_folder, display_name, reason, cask_token=None):
         app_data = json.load(f)
     already_deprecated = app_data.get("deprecated") and app_data.get("deprecation_reason") == reason
     if cask_token:
-        app_data["homebrew_cask"] = cask_token
+        source_key = 'homebrew_formula' if app_data.get('homebrew_formula') == cask_token else 'homebrew_cask'
+        app_data[source_key] = cask_token
     app_data["deprecated"] = True
     app_data["deprecation_reason"] = reason
     with open(file_path, "w") as f:
@@ -2032,6 +2033,8 @@ def main():
                     existing_data["url"] = app_info["url"]
                     source_key = 'homebrew_formula' if app_info.get('homebrew_formula') else 'homebrew_cask'
                     existing_data[source_key] = app_info[source_key]
+                    if source_key == 'homebrew_formula':
+                        existing_data.pop('homebrew_cask', None)
                     
                     # For repackaged apps (type "app", "pkg_in_dmg", or "pkg_in_pkg"),
                     # preserve the fileName field from the existing JSON file

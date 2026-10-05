@@ -5,6 +5,7 @@ import io
 import json
 import os
 import re
+import sys
 import tempfile
 import unittest
 from pathlib import Path
@@ -12,6 +13,7 @@ from unittest.mock import Mock, patch
 
 
 ROOT = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(ROOT / '.github/scripts'))
 SPEC = importlib.util.spec_from_file_location(
     "collect_app_info",
     ROOT / ".github/scripts/collect_app_info.py",

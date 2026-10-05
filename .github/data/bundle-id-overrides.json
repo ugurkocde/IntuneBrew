@@ -1,6 +1,8 @@
 {
   "description": "Manual bundle ID overrides for apps that cannot be auto-detected. Add apps here with their correct bundle IDs.",
   "overrides": {
+    "azure_cli": "com.intunebrew.azure_cli",
+    "logitech_options": "com.logi.optionsplus",
     "abstract": "com.elasticprojects.Abstract",
     "linear": "com.linear"
   }
