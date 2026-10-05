@@ -8,7 +8,7 @@
   "homepage": "https://defold.com/",
   "homebrew_cask": "defold",
   "fileName": "Defold-arm64-macos.dmg",
-  "sha": "86a83e1ef0634362e7add6227ee8fce336d5a73b28b63d6f84c71fe7e6220434",
+  "sha": "bfe56db929e02be3de876c8bcd5de33c5c922eb737a860b553334b0635649c05",
   "category": "Developer Tools",
   "publisher": "Defold Foundation",
   "previous_version": "1.13.2"

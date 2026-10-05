@@ -1,15 +1,15 @@
 {
   "name": "MultiViewer",
   "description": "Unofficial desktop client for F1 TV",
-  "version": "2.9.1",
-  "url": "https://releases.multiviewer.app/download/607409974/MultiViewer.for.F1-2.9.1-arm64.dmg",
-  "vendor_url": "https://releases.multiviewer.app/download/607409974/MultiViewer.for.F1-2.9.1-arm64.dmg",
+  "version": "2.9.2",
+  "url": "https://releases.multiviewer.app/download/608657660/MultiViewer.for.F1-2.9.2-arm64.dmg",
+  "vendor_url": "https://releases.multiviewer.app/download/608657660/MultiViewer.for.F1-2.9.2-arm64.dmg",
   "bundleId": "io.optimizedapps.srtmultiviewer",
   "homepage": "https://multiviewer.app/",
   "homebrew_cask": "multiviewer",
-  "fileName": "MultiViewer.for.F1-2.9.1-arm64.dmg",
-  "sha": "eb604745f1281c7a0d17bac2764d15a5aa3ea01377672cf032040be529cadeda",
+  "fileName": "MultiViewer.for.F1-2.9.2-arm64.dmg",
+  "sha": "be3ba15b2551411818cc019f6dca6d07fe2d9de549e97ada998414477aaf5232",
   "category": "Media",
   "publisher": "MultiViewer",
-  "previous_version": "2.9.0"
+  "previous_version": "2.9.1"
 }

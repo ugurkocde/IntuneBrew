@@ -1,145 +1,124 @@
 {
-  "lastChecked": "2026-10-04T01:47:34.253586Z",
+  "lastChecked": "2026-10-05T01:10:24.190055Z",
   "updates": [
     {
-      "appName": "anytype",
-      "previousVersion": "0.57.0",
-      "newVersion": "0.57.4",
+      "appName": "advanced renamer",
+      "previousVersion": "4.26",
+      "newVersion": "4.27",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/anytype.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/advanced_renamer.png"
     },
     {
-      "appName": "arc",
-      "previousVersion": "1.167.0",
-      "newVersion": "1.167.1",
+      "appName": "busycal",
+      "previousVersion": "2026.3.3",
+      "newVersion": "2026.4.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/arc.png"
-    },
-    {
-      "appName": "batfi",
-      "previousVersion": "4.0.2",
-      "newVersion": "4.0.3",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/batfi.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/busycal.png"
     },
     {
       "appName": "chatgpt",
-      "previousVersion": "26.930.21537",
-      "newVersion": "26.930.41038",
+      "previousVersion": "26.930.41038",
+      "newVersion": "26.930.51102",
       "changelog": "https://help.openai.com/en/articles/9703738-macos-app-release-notes",
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/chatgpt.png"
     },
     {
-      "appName": "clop",
-      "previousVersion": "3.4.5",
-      "newVersion": "3.4.6",
+      "appName": "dbeaver community edition",
+      "previousVersion": "26.2.1",
+      "newVersion": "26.2.2",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/clop.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dbeaver_community_edition.png"
     },
     {
-      "appName": "coteditor",
-      "previousVersion": "7.1.0",
-      "newVersion": "7.1.1",
+      "appName": "devknife",
+      "previousVersion": "1.18.1",
+      "newVersion": "1.19.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/coteditor.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/devknife.png"
     },
     {
-      "appName": "dia",
-      "previousVersion": "1.51.0",
-      "newVersion": "1.51.1",
+      "appName": "dockdoor",
+      "previousVersion": "1.40.4",
+      "newVersion": "1.40.7",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dia.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dockdoor.png"
     },
     {
-      "appName": "glyphs",
-      "previousVersion": "3.5.1",
-      "newVersion": "4.2",
+      "appName": "fsnotes",
+      "previousVersion": "7.3.4",
+      "newVersion": "7.3.5",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/glyphs.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/fsnotes.png"
     },
     {
-      "appName": "iina",
-      "previousVersion": "1.4.4",
-      "newVersion": "1.5.0",
-      "changelog": "https://github.com/iina/iina/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/iina.png"
+      "appName": "gitify",
+      "previousVersion": "7.8.0",
+      "newVersion": "7.9.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/gitify.png"
     },
     {
-      "appName": "linearmouse",
-      "previousVersion": "0.11.4",
-      "newVersion": "0.12.0",
+      "appName": "input source pro",
+      "previousVersion": "2.12.0",
+      "newVersion": "2.13.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/linearmouse.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/input_source_pro.png"
+    },
+    {
+      "appName": "moonlight",
+      "previousVersion": "6.1.0",
+      "newVersion": "6.2.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/moonlight.png"
     },
     {
       "appName": "multiviewer",
-      "previousVersion": "2.9.0",
-      "newVersion": "2.9.1",
+      "previousVersion": "2.9.1",
+      "newVersion": "2.9.2",
       "changelog": null,
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/multiviewer.png"
     },
     {
-      "appName": "naps2",
-      "previousVersion": "8.4.0",
-      "newVersion": "8.4.1",
+      "appName": "readest",
+      "previousVersion": "0.12.10",
+      "newVersion": "0.12.12",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/naps2.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/readest.png"
     },
     {
-      "appName": "ocenaudio",
-      "previousVersion": "3.21.0",
-      "newVersion": "3.21.4",
+      "appName": "reaper",
+      "previousVersion": "7.81",
+      "newVersion": "7.82",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/ocenaudio.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/reaper.png"
     },
     {
-      "appName": "openaudible",
-      "previousVersion": "4.9",
-      "newVersion": "5.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/openaudible.png"
-    },
-    {
-      "appName": "openwork",
-      "previousVersion": "0.18.54",
-      "newVersion": "0.18.56",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/openwork.png"
-    },
-    {
-      "appName": "pacifist",
-      "previousVersion": "4.1.4",
-      "newVersion": "4.1.5",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/pacifist.png"
-    },
-    {
-      "appName": "riverside studio",
-      "previousVersion": "1.32.1",
-      "newVersion": "1.33.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/riverside_studio.png"
+      "appName": "stats",
+      "previousVersion": "3.0.19",
+      "newVersion": "3.0.20",
+      "changelog": "https://github.com/exelban/stats/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/stats.png"
     },
     {
       "appName": "syncovery",
-      "previousVersion": "12.7.4",
-      "newVersion": "12.8.9",
+      "previousVersion": "12.8.9",
+      "newVersion": "12.8.10",
       "changelog": null,
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/syncovery.png"
     },
     {
-      "appName": "webcatalog",
-      "previousVersion": "80.2.1",
-      "newVersion": "81.0.1",
+      "appName": "vivaldi",
+      "previousVersion": "8.2.4133.80",
+      "newVersion": "8.2.4133.83",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/webcatalog.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/vivaldi.png"
     },
     {
-      "appName": "zen browser",
-      "previousVersion": "1.22.3b",
-      "newVersion": "1.23b",
-      "changelog": "https://zen-browser.app/release-notes/",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/zen_browser.png"
+      "appName": "webcatalog",
+      "previousVersion": "81.0.1",
+      "newVersion": "81.1.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/webcatalog.png"
     }
   ]
 }
