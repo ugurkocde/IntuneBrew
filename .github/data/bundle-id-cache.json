@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-10-06T01:12:12.789Z",
+  "last_full_scan": "2026-10-06T21:59:27.449Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9439,6 +9439,20 @@
       "status": "verified",
       "source": "file",
       "name": "Paseo"
+    },
+    "azure_cli": {
+      "last_checked": "2026-10-06T21:59:27.429Z",
+      "bundle_id": "com.intunebrew.azure_cli",
+      "status": "verified",
+      "source": "file",
+      "name": "Azure CLI"
+    },
+    "fontagent": {
+      "last_checked": "2026-10-06T21:59:27.437Z",
+      "bundle_id": "com.insidersoftware.v9.fontagent",
+      "status": "verified",
+      "source": "file",
+      "name": "FontAgent"
     }
   }
 }
