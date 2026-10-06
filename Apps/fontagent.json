@@ -11,5 +11,6 @@
   "fileName": "fontagent_10.2.9.pkg",
   "type": "pkg_in_dmg",
   "publisher": "Insider Software",
-  "custom_source": "fontagent"
+  "custom_source": "fontagent",
+  "category": "Design"
 }
