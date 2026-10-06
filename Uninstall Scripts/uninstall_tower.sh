@@ -29,10 +29,10 @@ elif [ -f "/Applications/Tower.app" ]; then
     rm -f "/Applications/Tower.app" 2>/dev/null || true
 fi
 
-# Remove binary /Applications/Tower.app/Tower.app/Contents/MacOS/gittower
-echo "Removing binary /Applications/Tower.app/Tower.app/Contents/MacOS/gittower..."
-if [ -f "/Applications/Tower.app/Tower.app/Contents/MacOS/gittower" ]; then
-    rm -f "/Applications/Tower.app/Tower.app/Contents/MacOS/gittower" 2>/dev/null || true
+# Remove binary /Applications/Tower.app/Tower.app/Contents/Helpers/gittower
+echo "Removing binary /Applications/Tower.app/Tower.app/Contents/Helpers/gittower..."
+if [ -f "/Applications/Tower.app/Tower.app/Contents/Helpers/gittower" ]; then
+    rm -f "/Applications/Tower.app/Tower.app/Contents/Helpers/gittower" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.fournova.tower*.sfl*
