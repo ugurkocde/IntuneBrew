@@ -1,14 +1,14 @@
 {
   "name": "Viber",
   "description": "Calling and messaging application focusing on security",
-  "version": "1.0.0.107",
+  "version": "1.0.0.110",
   "url": "https://download.viber.com/desktop/mac/online/Viber.dmg",
   "vendor_url": "https://download.viber.com/desktop/mac/online/Viber.dmg",
   "bundleId": "com.viber.osx",
   "homepage": "https://www.viber.com/",
   "homebrew_cask": "viber",
   "fileName": "Viber.dmg",
-  "sha": "bd9c8dbdeedb29f888d78e0ec0bedf1af2b9374065324e340075ee250dc09010",
+  "sha": "f85785bce4a094bae83ad744c1276d3b1e3b363e2239b31ca9db17dd487364b6",
   "category": "Communication",
   "publisher": "Viber Media, Inc.",
   "previous_version": "1.0.0.107"

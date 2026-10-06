@@ -12,6 +12,6 @@
   "sha": "9957881ba180f18776b902fcc0764540b3ddfc45bc309ad138d8c846febad25a",
   "category": "Developer Tools",
   "publisher": "GitHub, Inc.",
-  "previous_version": "1.0.91",
+  "previous_version": "1.0.92",
   "packageIdentifier": "com.intunebrew.github_copilot_cli"
 }

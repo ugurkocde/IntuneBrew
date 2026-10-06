@@ -1,0 +1,15 @@
+{
+  "name": "FontAgent",
+  "description": "Font management and activation for macOS",
+  "version": "10.2.9",
+  "previous_version": "10.2.9",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/fontagent_10.2.9.pkg",
+  "vendor_url": "https://store.insidersoftware.com/_downloads/FontAgent.dmg",
+  "sha": "b53afb003a458499f2f1c7c3438370e51c3cc2dfd0c71b86e6e7e622141d74c0",
+  "bundleId": "com.insidersoftware.v9.fontagent",
+  "homepage": "https://www.insidersoftware.com/fontagent-trial/",
+  "fileName": "fontagent_10.2.9.pkg",
+  "type": "pkg_in_dmg",
+  "publisher": "Insider Software",
+  "custom_source": "fontagent"
+}
