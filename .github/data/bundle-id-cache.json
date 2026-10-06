@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-10-06T00:41:10.850Z",
+  "last_full_scan": "2026-10-06T01:12:12.789Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -4347,8 +4347,8 @@
       "name": "Logitech G HUB"
     },
     "logitech_options": {
-      "last_checked": "2026-07-29T17:08:46.939Z",
-      "bundle_id": "com.logi.optionsplus.installer",
+      "last_checked": "2026-10-06T01:12:12.779Z",
+      "bundle_id": "com.logi.optionsplus",
       "status": "verified",
       "source": "file",
       "name": "Logitech Options+"
