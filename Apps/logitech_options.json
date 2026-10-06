@@ -4,13 +4,14 @@
   "version": "2.8.981479",
   "url": "https://intunebrew.blob.core.windows.net/pkg/logitech_options_2.8.981479.pkg",
   "vendor_url": "https://download01.logi.com/web/ftp/pub/techsupport/optionsplus/logioptionsplus_installer.zip",
-  "bundleId": "com.logi.optionsplus.installer",
+  "bundleId": "com.logi.optionsplus",
   "homepage": "https://www.logitech.com/en-us/software/logi-options-plus.html",
   "fileName": "logitech_options_2.8.981479.pkg",
   "type": "app",
-  "sha": "4f69f586f5d693fa214d83acee30d77732dad78ceace5c359e1b6eca29435d91",
+  "sha": "3b826d31976cb7a8505a95153df31be0ccd65a8a66af41fa0cb8bc2ebcc536f1",
   "previous_version": "2.8.981479",
   "category": "Utilities",
   "publisher": "Logitech International S.A.",
-  "homebrew_cask": "logi-options+"
+  "homebrew_cask": "logi-options+",
+  "packaging_recipe": "logi-options-silent-v1"
 }

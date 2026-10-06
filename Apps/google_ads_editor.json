@@ -8,7 +8,7 @@
   "homepage": "https://ads.google.com/home/tools/ads-editor/",
   "homebrew_cask": "google-ads-editor",
   "fileName": "Google_AdWords_Editor.dmg",
-  "sha": "3fc9a35f0c5efda1bfd4d76cd9f9d1663c7b21d19c81e5347d1d59a30a5d03c4",
+  "sha": "3436adff4571d29a7711d2cb7c7b3586e232b376b97384fd6b71aa8c7df61f34",
   "changelog": "https://support.google.com/google-ads/answer/2485631",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:20:20Z",
