@@ -133,7 +133,7 @@ jobs:
           for file in Apps/*.json; do
             [ -f "$file" ] || continue
 
-            cask=$(jq -r '.homebrew_cask // .homebrew_formula // empty' "$file")
+            cask=$(jq -r '.homebrew_cask // .homebrew_formula // .custom_source // empty' "$file")
             in_scope=false
             if [ -n "$cask" ] && [[ " $SCOPE_TOKENS " == *" $cask "* ]]; then
               in_scope=true

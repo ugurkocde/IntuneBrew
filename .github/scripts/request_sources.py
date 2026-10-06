@@ -4,7 +4,7 @@ CASK_RECIPES = {"logi-options+": "logi-options-silent-v1"}
 
 
 def source_token(data):
-    return data.get("homebrew_cask") or data.get("homebrew_formula")
+    return data.get("homebrew_cask") or data.get("homebrew_formula") or data.get("custom_source")
 
 
 def required_recipe(token):
