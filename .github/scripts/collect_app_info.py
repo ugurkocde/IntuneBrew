@@ -470,6 +470,7 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/copilot-cli.json",
     "https://formulae.brew.sh/api/cask/ddpm.json",
     "https://formulae.brew.sh/api/cask/monotype.json",
+    "https://formulae.brew.sh/api/formula/azure-cli.json",
 ]
 
 # DMG
@@ -1357,6 +1358,7 @@ pkg_urls = [
 
 # Custom scraper scripts to run
 custom_scrapers = [
+    ".github/scripts/scrapers/fontagent.sh",
     ".github/scripts/scrapers/aircall_workspace.sh",
     ".github/scripts/scrapers/remotehelp.sh",
     ".github/scripts/scrapers/starface.sh",
