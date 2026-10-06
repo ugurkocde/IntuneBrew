@@ -17,20 +17,28 @@ fi
 echo "Stopping MultiViewer for F1 if running..."
 pkill -f "MultiViewer for F1" 2>/dev/null || true
 
-# Remove /Applications/MultiViewer for F1.app
-echo "Removing /Applications/MultiViewer for F1.app..."
-if [ -d "/Applications/MultiViewer for F1.app" ]; then
-    rm -rf "/Applications/MultiViewer for F1.app" 2>/dev/null || true
-elif [ -f "/Applications/MultiViewer for F1.app" ]; then
-    rm -f "/Applications/MultiViewer for F1.app" 2>/dev/null || true
+# Remove /Applications/MultiViewer.app
+echo "Removing /Applications/MultiViewer.app..."
+if [ -d "/Applications/MultiViewer.app" ]; then
+    rm -rf "/Applications/MultiViewer.app" 2>/dev/null || true
+elif [ -f "/Applications/MultiViewer.app" ]; then
+    rm -f "/Applications/MultiViewer.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/MultiViewer for F1
-echo "Removing $HOME/Library/Application Support/MultiViewer for F1..."
-if [ -d "$HOME/Library/Application Support/MultiViewer for F1" ]; then
-    rm -rf "$HOME/Library/Application Support/MultiViewer for F1" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/MultiViewer for F1" ]; then
-    rm -f "$HOME/Library/Application Support/MultiViewer for F1" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.multiviewer-for-f1.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.multiviewer-for-f1.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.multiviewer-for-f1.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.multiviewer-for-f1.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.multiviewer-for-f1.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.multiviewer-for-f1.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/MultiViewer
+echo "Removing $HOME/Library/Application Support/MultiViewer..."
+if [ -d "$HOME/Library/Application Support/MultiViewer" ]; then
+    rm -rf "$HOME/Library/Application Support/MultiViewer" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/MultiViewer" ]; then
+    rm -f "$HOME/Library/Application Support/MultiViewer" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.electron.multiviewer-for-f1

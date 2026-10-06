@@ -17,12 +17,80 @@ fi
 echo "Stopping Codex if running..."
 pkill -f "Codex" 2>/dev/null || true
 
-# Remove /usr/local/bin/bin/codex
-echo "Removing /usr/local/bin/bin/codex..."
-if [ -d "/usr/local/bin/bin/codex" ]; then
-    rm -rf "/usr/local/bin/bin/codex" 2>/dev/null || true
-elif [ -f "/usr/local/bin/bin/codex" ]; then
-    rm -f "/usr/local/bin/bin/codex" 2>/dev/null || true
+# Kill application with bundle ID com.openai.codex if running
+echo "Stopping application with bundle ID com.openai.codex if running..."
+killall -9 "com.openai.codex" 2>/dev/null || true
+
+# Remove /Applications/Codex.app
+echo "Removing /Applications/Codex.app..."
+if [ -d "/Applications/Codex.app" ]; then
+    rm -rf "/Applications/Codex.app" 2>/dev/null || true
+elif [ -f "/Applications/Codex.app" ]; then
+    rm -f "/Applications/Codex.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Codex
+echo "Removing $HOME/Library/Application Support/Codex..."
+if [ -d "$HOME/Library/Application Support/Codex" ]; then
+    rm -rf "$HOME/Library/Application Support/Codex" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Codex" ]; then
+    rm -f "$HOME/Library/Application Support/Codex" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.openai.codex.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.openai.codex
+echo "Removing $HOME/Library/Caches/com.openai.codex..."
+if [ -d "$HOME/Library/Caches/com.openai.codex" ]; then
+    rm -rf "$HOME/Library/Caches/com.openai.codex" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.openai.codex" ]; then
+    rm -f "$HOME/Library/Caches/com.openai.codex" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.openai.codex
+echo "Removing $HOME/Library/HTTPStorages/com.openai.codex..."
+if [ -d "$HOME/Library/HTTPStorages/com.openai.codex" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.openai.codex" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.openai.codex" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.openai.codex" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.openai.codex.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/com.openai.codex.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/com.openai.codex.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.openai.codex.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.openai.codex.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.openai.codex.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/com.openai.codex
+echo "Removing $HOME/Library/Logs/com.openai.codex..."
+if [ -d "$HOME/Library/Logs/com.openai.codex" ]; then
+    rm -rf "$HOME/Library/Logs/com.openai.codex" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/com.openai.codex" ]; then
+    rm -f "$HOME/Library/Logs/com.openai.codex" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.openai.codex.plist
+echo "Removing $HOME/Library/Preferences/com.openai.codex.plist..."
+if [ -d "$HOME/Library/Preferences/com.openai.codex.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.openai.codex.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.openai.codex.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.openai.codex.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Saved Application State/com.openai.codex.savedState
+echo "Removing $HOME/Library/Saved Application State/com.openai.codex.savedState..."
+if [ -d "$HOME/Library/Saved Application State/com.openai.codex.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/com.openai.codex.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/com.openai.codex.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/com.openai.codex.savedState" 2>/dev/null || true
 fi
 
 # Remove $HOME/.codex

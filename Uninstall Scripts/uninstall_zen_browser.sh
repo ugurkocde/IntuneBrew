@@ -17,6 +17,10 @@ fi
 echo "Stopping Zen Browser if running..."
 pkill -f "Zen Browser" 2>/dev/null || true
 
+# Kill application with bundle ID app.zen-browser.zen if running
+echo "Stopping application with bundle ID app.zen-browser.zen if running..."
+killall -9 "app.zen-browser.zen" 2>/dev/null || true
+
 # Remove /Applications/Zen.app
 echo "Removing /Applications/Zen.app..."
 if [ -d "/Applications/Zen.app" ]; then

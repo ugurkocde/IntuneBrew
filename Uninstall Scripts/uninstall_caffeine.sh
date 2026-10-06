@@ -17,9 +17,9 @@ fi
 echo "Stopping Caffeine if running..."
 pkill -f "Caffeine" 2>/dev/null || true
 
-# Kill application with bundle ID com.intelliscapesolutions.caffeine if running
-echo "Stopping application with bundle ID com.intelliscapesolutions.caffeine if running..."
-killall -9 "com.intelliscapesolutions.caffeine" 2>/dev/null || true
+# Kill application with bundle ID net.domzilla.caffeine if running
+echo "Stopping application with bundle ID net.domzilla.caffeine if running..."
+killall -9 "net.domzilla.caffeine" 2>/dev/null || true
 
 # Remove /Applications/Caffeine.app
 echo "Removing /Applications/Caffeine.app..."
@@ -29,36 +29,20 @@ elif [ -f "/Applications/Caffeine.app" ]; then
     rm -f "/Applications/Caffeine.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.intelliscapesolutions.caffeine
-echo "Removing $HOME/Library/Application Support/com.intelliscapesolutions.caffeine..."
-if [ -d "$HOME/Library/Application Support/com.intelliscapesolutions.caffeine" ]; then
-    rm -rf "$HOME/Library/Application Support/com.intelliscapesolutions.caffeine" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.intelliscapesolutions.caffeine" ]; then
-    rm -f "$HOME/Library/Application Support/com.intelliscapesolutions.caffeine" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/net.domzilla.caffeine
+echo "Removing $HOME/Library/Application Scripts/net.domzilla.caffeine..."
+if [ -d "$HOME/Library/Application Scripts/net.domzilla.caffeine" ]; then
+    rm -rf "$HOME/Library/Application Scripts/net.domzilla.caffeine" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/net.domzilla.caffeine" ]; then
+    rm -f "$HOME/Library/Application Scripts/net.domzilla.caffeine" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.intelliscapesolutions.caffeine
-echo "Removing $HOME/Library/Caches/com.intelliscapesolutions.caffeine..."
-if [ -d "$HOME/Library/Caches/com.intelliscapesolutions.caffeine" ]; then
-    rm -rf "$HOME/Library/Caches/com.intelliscapesolutions.caffeine" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.intelliscapesolutions.caffeine" ]; then
-    rm -f "$HOME/Library/Caches/com.intelliscapesolutions.caffeine" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/HTTPStorages/com.intelliscapesolutions.caffeine.binarycookies
-echo "Removing $HOME/Library/HTTPStorages/com.intelliscapesolutions.caffeine.binarycookies..."
-if [ -d "$HOME/Library/HTTPStorages/com.intelliscapesolutions.caffeine.binarycookies" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/com.intelliscapesolutions.caffeine.binarycookies" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/com.intelliscapesolutions.caffeine.binarycookies" ]; then
-    rm -f "$HOME/Library/HTTPStorages/com.intelliscapesolutions.caffeine.binarycookies" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Preferences/com.intelliscapesolutions.caffeine.plist
-echo "Removing $HOME/Library/Preferences/com.intelliscapesolutions.caffeine.plist..."
-if [ -d "$HOME/Library/Preferences/com.intelliscapesolutions.caffeine.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.intelliscapesolutions.caffeine.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.intelliscapesolutions.caffeine.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.intelliscapesolutions.caffeine.plist" 2>/dev/null || true
+# Remove $HOME/Library/Containers/net.domzilla.caffeine
+echo "Removing $HOME/Library/Containers/net.domzilla.caffeine..."
+if [ -d "$HOME/Library/Containers/net.domzilla.caffeine" ]; then
+    rm -rf "$HOME/Library/Containers/net.domzilla.caffeine" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/net.domzilla.caffeine" ]; then
+    rm -f "$HOME/Library/Containers/net.domzilla.caffeine" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

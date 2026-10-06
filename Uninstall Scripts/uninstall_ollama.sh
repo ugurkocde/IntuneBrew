@@ -17,6 +17,16 @@ fi
 echo "Stopping Ollama if running..."
 pkill -f "Ollama" 2>/dev/null || true
 
+# Unload service com.ollama.ollama
+echo "Unloading service com.ollama.ollama..."
+launchctl unload -w /Library/LaunchAgents/com.ollama.ollama.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.ollama.ollama.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.ollama.ollama.plist 2>/dev/null || true
+
+# Kill application with bundle ID com.electron.ollama if running
+echo "Stopping application with bundle ID com.electron.ollama if running..."
+killall -9 "com.electron.ollama" 2>/dev/null || true
+
 # Remove /Applications/Ollama.app
 echo "Removing /Applications/Ollama.app..."
 if [ -d "/Applications/Ollama.app" ]; then
@@ -47,6 +57,14 @@ elif [ -f "$HOME/Library/Application Support/Ollama" ]; then
     rm -f "$HOME/Library/Application Support/Ollama" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.electron.ollama
+echo "Removing $HOME/Library/Caches/com.electron.ollama..."
+if [ -d "$HOME/Library/Caches/com.electron.ollama" ]; then
+    rm -rf "$HOME/Library/Caches/com.electron.ollama" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.electron.ollama" ]; then
+    rm -f "$HOME/Library/Caches/com.electron.ollama" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.electron.ollama.plist
 echo "Removing $HOME/Library/Preferences/com.electron.ollama.plist..."
 if [ -d "$HOME/Library/Preferences/com.electron.ollama.plist" ]; then
@@ -61,6 +79,14 @@ if [ -d "$HOME/Library/Saved Application State/com.electron.ollama.savedState" ]
     rm -rf "$HOME/Library/Saved Application State/com.electron.ollama.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.electron.ollama.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.electron.ollama.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Webkit/com.electron.ollama
+echo "Removing $HOME/Library/Webkit/com.electron.ollama..."
+if [ -d "$HOME/Library/Webkit/com.electron.ollama" ]; then
+    rm -rf "$HOME/Library/Webkit/com.electron.ollama" 2>/dev/null || true
+elif [ -f "$HOME/Library/Webkit/com.electron.ollama" ]; then
+    rm -f "$HOME/Library/Webkit/com.electron.ollama" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

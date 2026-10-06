@@ -415,14 +415,6 @@ elif [ -f "/Users/Shared/Adobe" ]; then
     rm -f "/Users/Shared/Adobe" 2>/dev/null || true
 fi
 
-# Remove $HOME/Creative Cloud Files
-echo "Removing $HOME/Creative Cloud Files..."
-if [ -d "$HOME/Creative Cloud Files" ]; then
-    rm -rf "$HOME/Creative Cloud Files" 2>/dev/null || true
-elif [ -f "$HOME/Creative Cloud Files" ]; then
-    rm -f "$HOME/Creative Cloud Files" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/*/Adobe
 echo "Removing $HOME/Library/*/Adobe..."
 if [ -d "$HOME/Library/*/Adobe" ]; then

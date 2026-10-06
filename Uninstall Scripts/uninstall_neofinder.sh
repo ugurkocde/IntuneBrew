@@ -69,14 +69,6 @@ elif [ -f "$HOME/Library/Preferences/de.wfs-apps.neofinder.plist" ]; then
     rm -f "$HOME/Library/Preferences/de.wfs-apps.neofinder.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/de.wfs-apps.neofinder.plist
-echo "Removing $HOME/Library/Preferences/de.wfs-apps.neofinder.plist..."
-if [ -d "$HOME/Library/Preferences/de.wfs-apps.neofinder.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/de.wfs-apps.neofinder.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/de.wfs-apps.neofinder.plist" ]; then
-    rm -f "$HOME/Library/Preferences/de.wfs-apps.neofinder.plist" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Preferences/de.wfs-apps.neofinder.statusBar.plist
 echo "Removing $HOME/Library/Preferences/de.wfs-apps.neofinder.statusBar.plist..."
 if [ -d "$HOME/Library/Preferences/de.wfs-apps.neofinder.statusBar.plist" ]; then

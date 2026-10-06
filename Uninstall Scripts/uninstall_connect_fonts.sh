@@ -107,13 +107,5 @@ elif [ -f "$HOME/Library/WebKit/com.extensis.SuitcaseFusion" ]; then
     rm -f "$HOME/Library/WebKit/com.extensis.SuitcaseFusion" 2>/dev/null || true
 fi
 
-# Remove $HOME/Documents/Extensis Connect Assets
-echo "Removing $HOME/Documents/Extensis Connect Assets..."
-if [ -d "$HOME/Documents/Extensis Connect Assets" ]; then
-    rm -rf "$HOME/Documents/Extensis Connect Assets" 2>/dev/null || true
-elif [ -f "$HOME/Documents/Extensis Connect Assets" ]; then
-    rm -f "$HOME/Documents/Extensis Connect Assets" 2>/dev/null || true
-fi
-
 echo "Uninstallation complete!"
 exit 0

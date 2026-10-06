@@ -69,22 +69,6 @@ elif [ -f "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" ];
     rm -f "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6
-echo "Removing $HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6..."
-if [ -d "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" ]; then
-    rm -rf "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" ]; then
-    rm -f "$HOME/Library/Application Support/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Caches/com.stclairsoft.DefaultFolderX6
-echo "Removing $HOME/Library/Caches/com.stclairsoft.DefaultFolderX6..."
-if [ -d "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" ]; then
-    rm -rf "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" ]; then
-    rm -f "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Caches/com.stclairsoft.DefaultFolderX6
 echo "Removing $HOME/Library/Caches/com.stclairsoft.DefaultFolderX6..."
 if [ -d "$HOME/Library/Caches/com.stclairsoft.DefaultFolderX6" ]; then
@@ -107,14 +91,6 @@ if [ -d "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.MenuButtonExte
     rm -rf "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.MenuButtonExtension" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.MenuButtonExtension" ]; then
     rm -f "$HOME/Library/Containers/com.stclairsoft.DefaultFolderX6.MenuButtonExtension" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist
-echo "Removing $HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist..."
-if [ -d "$HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.stclairsoft.DefaultFolderX6.plist

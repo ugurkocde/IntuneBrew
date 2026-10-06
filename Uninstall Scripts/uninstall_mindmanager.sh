@@ -17,10 +17,6 @@ fi
 echo "Stopping Mindmanager if running..."
 pkill -f "Mindmanager" 2>/dev/null || true
 
-# Kill application with bundle ID com.mindjet.mindmanager.25 if running
-echo "Stopping application with bundle ID com.mindjet.mindmanager.25 if running..."
-killall -9 "com.mindjet.mindmanager.25" 2>/dev/null || true
-
 # Remove /Applications/MindManager.app
 echo "Removing /Applications/MindManager.app..."
 if [ -d "/Applications/MindManager.app" ]; then
@@ -37,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/Mindjet" ]; then
     rm -f "$HOME/Library/Application Support/Mindjet" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/MindManager
+echo "Removing $HOME/Library/Application Support/MindManager..."
+if [ -d "$HOME/Library/Application Support/MindManager" ]; then
+    rm -rf "$HOME/Library/Application Support/MindManager" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/MindManager" ]; then
+    rm -f "$HOME/Library/Application Support/MindManager" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.mindjet.mindmanager.*
 echo "Removing $HOME/Library/Caches/com.mindjet.mindmanager.*..."
 if [ -d "$HOME/Library/Caches/com.mindjet.mindmanager.*" ]; then
@@ -45,12 +49,36 @@ elif [ -f "$HOME/Library/Caches/com.mindjet.mindmanager.*" ]; then
     rm -f "$HOME/Library/Caches/com.mindjet.mindmanager.*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.mindjet.mindmanager.*.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/com.mindjet.mindmanager.*.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/com.mindjet.mindmanager.*.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.mindjet.mindmanager.*.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.mindjet.mindmanager.*.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.mindjet.mindmanager.*.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist
+echo "Removing $HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist..."
+if [ -d "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist" ]; then
+    rm -f "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.mindjet.mindmanager.*.plist
 echo "Removing $HOME/Library/Preferences/com.mindjet.mindmanager.*.plist..."
 if [ -d "$HOME/Library/Preferences/com.mindjet.mindmanager.*.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.mindjet.mindmanager.*.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.mindjet.mindmanager.*.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.mindjet.mindmanager.*.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.mindjet.mindmanager.*
+echo "Removing $HOME/Library/WebKit/com.mindjet.mindmanager.*..."
+if [ -d "$HOME/Library/WebKit/com.mindjet.mindmanager.*" ]; then
+    rm -rf "$HOME/Library/WebKit/com.mindjet.mindmanager.*" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.mindjet.mindmanager.*" ]; then
+    rm -f "$HOME/Library/WebKit/com.mindjet.mindmanager.*" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

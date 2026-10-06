@@ -17,10 +17,6 @@ fi
 echo "Stopping Outline if running..."
 pkill -f "Outline" 2>/dev/null || true
 
-# Kill application with bundle ID com.gorillized.outlinemac.standalone if running
-echo "Stopping application with bundle ID com.gorillized.outlinemac.standalone if running..."
-killall -9 "com.gorillized.outlinemac.standalone" 2>/dev/null || true
-
 # Remove /Applications/Outline.app
 echo "Removing /Applications/Outline.app..."
 if [ -d "/Applications/Outline.app" ]; then
@@ -29,44 +25,12 @@ elif [ -f "/Applications/Outline.app" ]; then
     rm -f "/Applications/Outline.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Scripts/6WN928JT76.com.gorillized
-echo "Removing $HOME/Library/Application Scripts/6WN928JT76.com.gorillized..."
-if [ -d "$HOME/Library/Application Scripts/6WN928JT76.com.gorillized" ]; then
-    rm -rf "$HOME/Library/Application Scripts/6WN928JT76.com.gorillized" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/6WN928JT76.com.gorillized" ]; then
-    rm -f "$HOME/Library/Application Scripts/6WN928JT76.com.gorillized" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.extension
-echo "Removing $HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.extension..."
-if [ -d "$HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.extension" ]; then
-    rm -rf "$HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.extension" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.extension" ]; then
-    rm -f "$HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.extension" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.widget
-echo "Removing $HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.widget..."
-if [ -d "$HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.widget" ]; then
-    rm -rf "$HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.widget" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.widget" ]; then
-    rm -f "$HOME/Library/Application Scripts/com.gorillized.outlinemac.standalone.widget" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.gorillized.outlinemac.standalone.sfl*
-echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.gorillized.outlinemac.standalone.sfl*..."
-if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.gorillized.outlinemac.standalone.sfl*" ]; then
-    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.gorillized.outlinemac.standalone.sfl*" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.gorillized.outlinemac.standalone.sfl*" ]; then
-    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.gorillized.outlinemac.standalone.sfl*" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Application Support/com.gorillized.outlinemac.standalone
-echo "Removing $HOME/Library/Application Support/com.gorillized.outlinemac.standalone..."
-if [ -d "$HOME/Library/Application Support/com.gorillized.outlinemac.standalone" ]; then
-    rm -rf "$HOME/Library/Application Support/com.gorillized.outlinemac.standalone" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.gorillized.outlinemac.standalone" ]; then
-    rm -f "$HOME/Library/Application Support/com.gorillized.outlinemac.standalone" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.generaloutline.outline.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.generaloutline.outline.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.generaloutline.outline.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.generaloutline.outline.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.generaloutline.outline.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.generaloutline.outline.sfl*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Outline
@@ -77,60 +41,28 @@ elif [ -f "$HOME/Library/Application Support/Outline" ]; then
     rm -f "$HOME/Library/Application Support/Outline" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.gorillized.outlinemac.standalone
-echo "Removing $HOME/Library/Caches/com.gorillized.outlinemac.standalone..."
-if [ -d "$HOME/Library/Caches/com.gorillized.outlinemac.standalone" ]; then
-    rm -rf "$HOME/Library/Caches/com.gorillized.outlinemac.standalone" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.gorillized.outlinemac.standalone" ]; then
-    rm -f "$HOME/Library/Caches/com.gorillized.outlinemac.standalone" 2>/dev/null || true
+# Remove $HOME/Library/Logs/Outline
+echo "Removing $HOME/Library/Logs/Outline..."
+if [ -d "$HOME/Library/Logs/Outline" ]; then
+    rm -rf "$HOME/Library/Logs/Outline" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Outline" ]; then
+    rm -f "$HOME/Library/Logs/Outline" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.gorillized.outlinemac.standalone.extension
-echo "Removing $HOME/Library/Containers/com.gorillized.outlinemac.standalone.extension..."
-if [ -d "$HOME/Library/Containers/com.gorillized.outlinemac.standalone.extension" ]; then
-    rm -rf "$HOME/Library/Containers/com.gorillized.outlinemac.standalone.extension" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.gorillized.outlinemac.standalone.extension" ]; then
-    rm -f "$HOME/Library/Containers/com.gorillized.outlinemac.standalone.extension" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.generaloutline.outline.plist
+echo "Removing $HOME/Library/Preferences/com.generaloutline.outline.plist..."
+if [ -d "$HOME/Library/Preferences/com.generaloutline.outline.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.generaloutline.outline.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.generaloutline.outline.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.generaloutline.outline.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.gorillized.outlinemac.standalone.widget
-echo "Removing $HOME/Library/Containers/com.gorillized.outlinemac.standalone.widget..."
-if [ -d "$HOME/Library/Containers/com.gorillized.outlinemac.standalone.widget" ]; then
-    rm -rf "$HOME/Library/Containers/com.gorillized.outlinemac.standalone.widget" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.gorillized.outlinemac.standalone.widget" ]; then
-    rm -f "$HOME/Library/Containers/com.gorillized.outlinemac.standalone.widget" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Group Containers/6WN928JT76.com.gorillized
-echo "Removing $HOME/Library/Group Containers/6WN928JT76.com.gorillized..."
-if [ -d "$HOME/Library/Group Containers/6WN928JT76.com.gorillized" ]; then
-    rm -rf "$HOME/Library/Group Containers/6WN928JT76.com.gorillized" 2>/dev/null || true
-elif [ -f "$HOME/Library/Group Containers/6WN928JT76.com.gorillized" ]; then
-    rm -f "$HOME/Library/Group Containers/6WN928JT76.com.gorillized" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/HTTPStorages/com.gorillized.outlinemac.standalone
-echo "Removing $HOME/Library/HTTPStorages/com.gorillized.outlinemac.standalone..."
-if [ -d "$HOME/Library/HTTPStorages/com.gorillized.outlinemac.standalone" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/com.gorillized.outlinemac.standalone" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/com.gorillized.outlinemac.standalone" ]; then
-    rm -f "$HOME/Library/HTTPStorages/com.gorillized.outlinemac.standalone" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Outline
-echo "Removing $HOME/Library/Outline..."
-if [ -d "$HOME/Library/Outline" ]; then
-    rm -rf "$HOME/Library/Outline" 2>/dev/null || true
-elif [ -f "$HOME/Library/Outline" ]; then
-    rm -f "$HOME/Library/Outline" 2>/dev/null || true
-fi
-
-# Remove $HOME/Library/Preferences/com.gorillized.outlinemac.standalone.plist
-echo "Removing $HOME/Library/Preferences/com.gorillized.outlinemac.standalone.plist..."
-if [ -d "$HOME/Library/Preferences/com.gorillized.outlinemac.standalone.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.gorillized.outlinemac.standalone.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.gorillized.outlinemac.standalone.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.gorillized.outlinemac.standalone.plist" 2>/dev/null || true
+# Remove $HOME/Library/Saved Application State/com.generaloutline.outline.savedState
+echo "Removing $HOME/Library/Saved Application State/com.generaloutline.outline.savedState..."
+if [ -d "$HOME/Library/Saved Application State/com.generaloutline.outline.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/com.generaloutline.outline.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/com.generaloutline.outline.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/com.generaloutline.outline.savedState" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
