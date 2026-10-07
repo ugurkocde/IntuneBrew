@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1154-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -595,64 +595,14 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-10-07T21:24:16.476334Z*
+*Last checked: 2026-10-07T21:58:45.583814Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| a better finder rename | 12.35 | 12.36 |
-| activedock | 2.883 | 2.884 |
-| betterdisplay | 5.0.6 | 5.1.1 |
-| bluewallet | 7.2.6 | 8.0.2 |
-| boltai 2 | 2.17.2 | 2.17.3 |
-| brave | 1.96.61.0 | 1.97.56.0 |
-| camunda modeler | 5.51.1 | 5.52.0 |
-| chatgpt | 26.930.61225 | 26.1002.52244 |
-| claude | 2.26454.0 | 2.26454.2 |
-| clockify | 2.12.6 | 2.12.10 |
-| cloudflare warp | 2026.7.1376.0 | 2026.8.2100.0 |
-| drawio desktop | 31.7.0 | 32.3.0 |
-| fellow | 5.7.13 | 5.7.14 |
-| git credential manager | 2.9.1 | 3.0.1 |
-| github copilot cli | 1.0.92 | 1.0.93 |
-| google antigravity | 2.19.1 | 2.21.0 |
-| grammarly desktop | 1.198.2.0 | 1.199.0.0 |
-| hepta | 1.112.1 | 1.112.2 |
-| imazing profile editor | 2.3.0 | 2.3.1 |
-| logseq | 2.0.1 | 2.0.2 |
-| microsoft teams | 26246.1709.5146.8945 | 26261.303.5165.1465 |
-| microsoft visual studio code | 1.140.0 | 1.141.0 |
-| milanote | 3.18.133 | 3.18.134 |
-| mozilla firefox developer edition | 158.0b4 | 158.0b5 |
-| notion | 7.37.0 | 7.37.1 |
-| openwork | 0.18.56 | 0.18.57 |
-| opera | 136.0.6008.80 | 137.0.6036.39 |
-| parallels desktop | 27.0.2-58673 | 27.0.3-58680 |
-| paseo | 0.10.3 | 0.11.0 |
-| postman | 12.31.2 | 12.31.3 |
-| proton pass | 1.41.1 | 1.42.0 |
-| qspace pro | 7.0.2 | 7.0.4 |
-| raycast | 2.6.3.0 | 2.7.1.0 |
-| rectangle pro | 3.92 | 3.94 |
-| rive | 0.9.104 | 0.9.157 |
-| riverside studio | 1.33.0 | 1.33.1 |
-| roon | 2.73.1 | 2.73.2 |
-| rotato | 154.11 | 159.1 |
-| screen studio | 4.0.3-4923 | 4.0.4-4926 |
-| sequel ace | 6.0.1 | 6.0.2 |
-| signal | 8.29.0 | 8.30.0 |
-| snagit | 2026.3.3 | 2026.4.0 |
-| superhuman | 1041.0.68 | 1041.0.69 |
-| tabby | 1.0.237 | 1.0.238 |
-| tresorit | 3.5.3528.4860 | 3.5.3569.4870 |
-| vivaldi | 8.2.4133.83 | 8.2.4133.84 |
-| wacom tablet | 6.4.14-2 | 6.4.15-1 |
-| wavebox | 154.3.5.2 | 155.3.12.2 |
-| zen browser | 1.23b | 1.23.1b |
-| zotero | 10.0.5 | 10.0.6 |
-
-1 app updates could not be published. See [catalog sync status](catalog-sync.json).
+| zed | 1.22.0 | 1.23.2 |
 
 ## ✨ Features
 
@@ -1823,7 +1773,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/yubico_authenticator.png' width='32' height='32'> Yubico Authenticator | 7.4.1 |
 | <img src='Logos/yworks_yed.png' width='32' height='32'> yWorks yEd | 3.25.1 |
 | <img src='Logos/zappy.png' width='32' height='32'> Zappy | 5.0.1 |
-| <img src='Logos/zed.png' width='32' height='32'> Zed | 1.22.0 |
+| <img src='Logos/zed.png' width='32' height='32'> Zed | 1.23.2 |
 | <img src='Logos/zen_browser.png' width='32' height='32'> Zen Browser | 1.23.1b |
 | <img src='Logos/zeplin.png' width='32' height='32'> Zeplin | 10.33.1 |
 | <img src='Logos/zettlr.png' width='32' height='32'> Zettlr | 4.8.0 |
