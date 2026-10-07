@@ -1,7 +1,7 @@
 {
   "app_name": "Anydesk",
   "app_key": "anydesk",
-  "last_updated": "2026-10-06",
+  "last_updated": "2026-10-07",
   "total_cves": 19,
   "summary": {
     "critical": 3,
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2016-20094",
       "published_date": "2026-06-19",
-      "last_modified_date": "2026-09-29",
+      "last_modified_date": "2026-10-06",
       "description": "AnyDesk 2.5.0 contains an unquoted service path vulnerability that allows local users to execute arbitrary code with SYSTEM privileges by exploiting the service installation. Attackers can insert malicious executables in the system root path that execute with elevated privileges during application startup or system reboot.",
       "base_score": 7.8,
       "severity": "HIGH",
