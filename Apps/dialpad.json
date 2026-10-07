@@ -9,7 +9,7 @@
   "homebrew_cask": "dialpad",
   "fileName": "dialpad.pkg",
   "type": "pkg",
-  "sha": "f7941332b821c9a1c2623d170334a4e0fa64e3ff48f190ee8ccaaec6d15c74f9",
+  "sha": "60e97dd3aaa92213bc2562a8cd4976dbe7bce7ba2df29fbd2ee793c179526742",
   "category": "Communication",
   "publisher": "Dialpad, Inc.",
   "previous_version": "2609.3.0"
