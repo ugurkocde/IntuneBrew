@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1154-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1153-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -1217,7 +1217,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/mem.png' width='32' height='32'> Mem | 0.43.0 |
 | <img src='Logos/memory_cleaner.png' width='32' height='32'> Memory Cleaner | 5.5.3 |
 | <img src='Logos/memory_tracker_by_timely.png' width='32' height='32'> Memory Tracker by Timely | 2023.11 |
-| <img src='Logos/mendeley_reference_manager.png' width='32' height='32'> Mendeley Reference Manager | 2.149.0 |
 | <img src='Logos/menubar_stats.png' width='32' height='32'> MenuBar Stats | 3.9.916 |
 | <img src='Logos/menubarx.png' width='32' height='32'> MenubarX | 1.7.6 |
 | <img src='Logos/merlin_project.png' width='32' height='32'> Merlin Project | 9.2.1 |

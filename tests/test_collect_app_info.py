@@ -672,6 +672,20 @@ class CatalogConsistencyTests(unittest.TestCase):
         )
         self.assertEqual(codex["homebrew_cask"], "codex-app")
 
+    def test_mendeley_is_excluded_from_collection_with_history_retained(self):
+        """Keep an explicitly excluded app out of future collection runs."""
+        source = "https://formulae.brew.sh/api/cask/mendeley-reference-manager.json"
+        for list_name in (
+            "app_urls", "homebrew_cask_urls", "pkg_urls",
+            "pkg_in_pkg_urls", "pkg_in_dmg_urls",
+        ):
+            with self.subTest(source_list=list_name):
+                self.assertNotIn(source, getattr(collect_app_info, list_name))
+        historical = json.loads((ROOT / "Apps/mendeley_reference_manager.json").read_text())
+        self.assertTrue(historical["deprecated"])
+        self.assertEqual(historical["homebrew_cask"], "mendeley-reference-manager")
+        self.assertTrue(historical["deprecation_reason"].startswith("Excluded by request:"))
+
     def test_supported_catalog_matches_publishable_apps(self):
         publisher_spec = importlib.util.spec_from_file_location(
             "publish_catalog", ROOT / ".github/scripts/publish_catalog.py"

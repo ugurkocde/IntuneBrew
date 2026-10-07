@@ -1067,7 +1067,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/megasync.json",
     "https://formulae.brew.sh/api/cask/mellel.json",
     "https://formulae.brew.sh/api/cask/memory-cleaner.json",
-    "https://formulae.brew.sh/api/cask/mendeley-reference-manager.json",
     "https://formulae.brew.sh/api/cask/menubarx.json",
     "https://formulae.brew.sh/api/cask/mindmac.json",
     "https://formulae.brew.sh/api/cask/modern-csv.json",
