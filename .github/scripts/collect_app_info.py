@@ -213,7 +213,6 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/logitech-g-hub.json",
     "https://formulae.brew.sh/api/cask/jumpshare.json",
     "https://formulae.brew.sh/api/cask/keyclu.json",
-    "https://formulae.brew.sh/api/formula/antigen.json",
     "https://formulae.brew.sh/api/cask/nucleo.json",
     "https://formulae.brew.sh/api/cask/spline.json",
     "https://formulae.brew.sh/api/cask/mac-mouse-fix.json",
