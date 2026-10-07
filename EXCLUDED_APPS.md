@@ -4,6 +4,7 @@ The following apps are intentionally excluded from collection, packaging, and th
 
 | Application | Reason |
 |---|---|
+| Antigen | Deprecated Homebrew formula with no supported IntuneBrew packaging recipe; never published as a catalog app. Historical logo is retained. |
 | FileZilla | Explicitly excluded. The submitted download URL expires and is unsuitable for unattended daily synchronization. |
 | Murus Firewall | Disk image requires explicit vendor license acceptance. |
 | Switch Audio Converter | Disk image requires explicit vendor license acceptance. |

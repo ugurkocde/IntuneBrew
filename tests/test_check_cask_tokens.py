@@ -18,6 +18,12 @@ SPEC = importlib.util.spec_from_file_location(
 check_cask_tokens = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(check_cask_tokens)
 
+RECIPE_SPEC = importlib.util.spec_from_file_location(
+    "request_sources", ROOT / ".github/scripts/request_sources.py"
+)
+request_sources = importlib.util.module_from_spec(RECIPE_SPEC)
+RECIPE_SPEC.loader.exec_module(request_sources)
+
 
 class CaskTokenHealthTests(unittest.TestCase):
     def run_check(self, index, deprecated=False):
@@ -89,6 +95,32 @@ class CaskTokenHealthTests(unittest.TestCase):
         }
         self.assertEqual(set(check_cask_tokens.referenced_tokens(source)), expected)
         self.assertNotIn("azure-cli", expected)  # A formula, not a cask.
+
+    def test_configured_formulas_have_supported_packaging_recipes(self):
+        """Reject formula sources the collector cannot turn into catalog apps."""
+        list_names = {
+            "app_urls", "homebrew_cask_urls", "pkg_urls",
+            "pkg_in_pkg_urls", "pkg_in_dmg_urls",
+        }
+        found = set()
+        formulas = set()
+        source = ROOT / check_cask_tokens.SCRIPT_FILE
+        for node in ast.parse(source.read_text()).body:
+            if isinstance(node, ast.Assign):
+                for target in node.targets:
+                    if isinstance(target, ast.Name) and target.id in list_names:
+                        found.add(target.id)
+                        for url in ast.literal_eval(node.value):
+                            path = urlparse(url).path
+                            if path.startswith("/api/formula/"):
+                                formulas.add(path.rsplit("/", 1)[1].removesuffix(".json"))
+        self.assertEqual(found, list_names)
+        for token in formulas:
+            with self.subTest(formula=token):
+                self.assertIn(token, request_sources.FORMULA_RECIPES)
+        self.assertNotIn("antigen", formulas)
+        self.assertIn("azure-cli", formulas)
+        self.assertEqual(request_sources.FORMULA_RECIPES["azure-cli"], "azure-cli-universal-v1")
 
     def test_retired_swifty_source_is_removed_but_history_is_retained(self):
         tokens = check_cask_tokens.referenced_tokens(ROOT / check_cask_tokens.SCRIPT_FILE)
