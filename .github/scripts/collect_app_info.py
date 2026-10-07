@@ -1145,7 +1145,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/ssh-config-editor.json",
     "https://formulae.brew.sh/api/cask/staruml.json",
     "https://formulae.brew.sh/api/cask/supercollider.json",
-    "https://formulae.brew.sh/api/cask/swifty.json",
     "https://formulae.brew.sh/api/cask/swish.json",
     "https://formulae.brew.sh/api/cask/taskade.json",
     "https://formulae.brew.sh/api/cask/techsmith-capture.json",

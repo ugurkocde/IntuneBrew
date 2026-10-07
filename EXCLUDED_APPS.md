@@ -15,7 +15,7 @@ The following apps are intentionally excluded from collection, packaging, and th
 | jamovi | Vendor installer redirects to an HTML error page. |
 | BusyContacts | Published artifact contains AppleDouble metadata instead of a macOS installer. |
 | Postbox | Vendor installer host cannot be reached. |
-| Real VNC Viewer, CHIRP, Dynalist, fig, Nocturnal, Yubikey Manager | Homebrew casks were removed; historical records remain deprecated. |
+| Real VNC Viewer, CHIRP, Dynalist, fig, Nocturnal, Yubikey Manager, Swifty | Homebrew casks were removed; historical records remain deprecated. |
 
 Re-enabling an app requires resolving its blocker, restoring its collector URL, clearing its exclusion flags, and validating its package before publication. No license agreement is accepted automatically.
 
