@@ -12,9 +12,11 @@ check costs a single request regardless of catalog size. For every missing
 token the closest surviving cask is suggested, since the usual cause is a
 rename such as tailscale -> tailscale-app.
 
-Exit code is always 0. The number of missing tokens is exposed through the
-GITHUB_OUTPUT variable "missing_count" and the report is written to
-cask-token-report.md in the working directory.
+Exit code is 1 when the cask index is unavailable or invalid, so the workflow
+cannot publish a false recovery or replace an issue with an incomplete report.
+On a completed check, the number of missing tokens is exposed through the
+GITHUB_OUTPUT variable "missing_count". The report is written to
+cask-token-report.md in the working directory in either case.
 """
 
 import datetime
@@ -116,12 +118,22 @@ def main():
     print(f"Catalog references {len(tokens)} Homebrew casks")
 
     index = fetch_cask_index()
-    if index is None:
-        # Treat an unreachable index as "nothing to report" rather than
-        # flagging every token as missing and opening an alarming issue.
-        write_report(["Could not reach the Homebrew cask index, check skipped."])
-        set_output("missing_count", "0")
-        return 0
+    if (
+        not isinstance(index, list)
+        or not index
+        or any(
+            not isinstance(cask, dict)
+            or not isinstance(cask.get("token"), str)
+            or not cask["token"]
+            for cask in index
+        )
+    ):
+        # No count is trustworthy without a complete, usable index. A failed
+        # step skips the workflow's issue mutations, while its always() step
+        # still uploads the diagnostic report.
+        write_report(["Homebrew cask index unavailable or invalid, check skipped."])
+        print("Cannot check cask tokens without a valid Homebrew index.", file=sys.stderr)
+        return 1
 
     available = {cask.get("token", "") for cask in index}
     available.discard("")
