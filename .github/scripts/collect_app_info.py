@@ -1683,9 +1683,20 @@ def fetch_cask_data(json_url):
         response.raise_for_status()
     except requests.HTTPError as error:
         if response.status_code == 404:
+            token = get_cask_token(json_url)
+            if '/api/formula/' in json_url and token in FORMULA_RECIPES:
+                # Registered recipes can survive a formula-to-cask migration.
+                # Keep their formula identity and bundled-runtime packaging;
+                # the cask archive alone may require Homebrew dependencies.
+                migrated = cask_session.get(json_url.replace('/api/formula/', '/api/cask/'))
+                migrated.raise_for_status()
+                data = migrated.json()
+                if not isinstance(data, dict) or data.get('token') != token:
+                    raise ValueError(f"Unexpected cask identity for migrated formula {token}")
+                return data
             raise CaskUnavailableError(
                 "cask removed from Homebrew",
-                cask_token=get_cask_token(json_url),
+                cask_token=token,
             ) from error
         raise
     return response.json()
@@ -1733,8 +1744,9 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
     if is_formula:
         if cask_token not in FORMULA_RECIPES:
             raise ValueError(f'No packaging recipe for formula {cask_token}')
-        data = {**data, 'name': ['Azure CLI'], 'version': data['versions']['stable'],
-                'url': data['urls']['stable']['url']}
+        data = {**data, 'name': ['Azure CLI'],
+                'version': data.get('versions', {}).get('stable') or data['version'],
+                'url': data.get('urls', {}).get('stable', {}).get('url') or data['url']}
 
     # A deprecated or disabled cask means the vendor discontinued the app or
     # its download can no longer be fetched reliably. Its URL will rot, so it

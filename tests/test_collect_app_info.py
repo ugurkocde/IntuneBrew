@@ -192,7 +192,7 @@ def fake_get_homebrew_app_info(json_url, **kwargs):
 
 
 @contextlib.contextmanager
-def run_collector(work_dir, cask_urls, session=None):
+def run_collector(work_dir, cask_urls, session=None, app_urls=None):
     """Run main() against a scratch Apps folder with no network and no README writes.
 
     Without a session the prefetch is stubbed out and app info comes from CASK_INFO.
@@ -203,7 +203,7 @@ def run_collector(work_dir, cask_urls, session=None):
     output = io.StringIO()
     try:
         with contextlib.ExitStack() as stack:
-            stack.enter_context(patch.object(collect_app_info, "app_urls", []))
+            stack.enter_context(patch.object(collect_app_info, "app_urls", app_urls or []))
             stack.enter_context(patch.object(collect_app_info, "homebrew_cask_urls", cask_urls))
             stack.enter_context(patch.object(collect_app_info, "pkg_in_pkg_urls", []))
             stack.enter_context(patch.object(collect_app_info, "pkg_urls", []))
@@ -230,6 +230,76 @@ def run_collector(work_dir, cask_urls, session=None):
             yield output
     finally:
         os.chdir(previous_dir)
+
+
+class FormulaMigrationTests(unittest.TestCase):
+    formula_url = "https://formulae.brew.sh/api/formula/azure-cli.json"
+    cask_url = "https://formulae.brew.sh/api/cask/azure-cli.json"
+    cask_payload = {
+        "token": "azure-cli", "name": ["Azure CLI"], "version": "2.91.0",
+        "url": "https://github.com/Azure/azure-cli/releases/download/azure-cli-2.91.0/azure-cli-2.91.0-macos-arm64.tar.gz",
+        "desc": "Microsoft Azure CLI 2.0", "homepage": "https://docs.microsoft.com/cli/azure/overview",
+        "deprecated": False, "disabled": False,
+    }
+
+    def existing_app(self):
+        return {
+            "name": "Azure CLI", "version": "2.90.0", "homebrew_formula": "azure-cli",
+            "type": "app", "packaging_recipe": "azure-cli-universal-v1",
+            "fileName": "azure_cli_2.90.0.pkg", "sha": "a" * 64,
+            "url": "https://intunebrew.blob.core.windows.net/pkg/azure_cli_2.90.0.pkg",
+        }
+
+    def run_migration(self, existing, fallback):
+        session = CountingSession({self.formula_url: cask_response(status_code=404), self.cask_url: fallback})
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory) / "Apps"
+            folder.mkdir()
+            path = folder / "azure_cli.json"
+            path.write_text(json.dumps(existing))
+            with run_collector(directory, [], session=session, app_urls=[self.formula_url]):
+                collect_app_info.main()
+            result = json.loads(path.read_text())
+        self.assertEqual(session.requested, [self.formula_url, self.cask_url])
+        return result
+
+    def test_migrated_formula_recovers_without_changing_package_identity(self):
+        existing = dict(self.existing_app(), deprecated=True, deprecation_reason="cask removed from Homebrew")
+        result = self.run_migration(existing, cask_response(self.cask_payload))
+        self.assertNotIn("deprecated", result)
+        self.assertNotIn("deprecation_reason", result)
+        self.assertEqual(result["homebrew_formula"], "azure-cli")
+        self.assertNotIn("homebrew_cask", result)
+        self.assertEqual(result["version"], "2.91.0")
+        self.assertEqual(result["previous_version"], "2.90.0")
+        self.assertEqual(result["vendor_url"], self.cask_payload["url"])
+        self.assertEqual(result["type"], "app")
+        self.assertEqual(result["packaging_recipe"], "azure-cli-universal-v1")
+        self.assertEqual(collect_app_info.collection_failures, [])
+
+    def test_unavailable_fallback_records_failure_without_deprecating(self):
+        for status in [404, 503]:
+            with self.subTest(status=status):
+                existing = self.existing_app()
+                result = self.run_migration(existing, cask_response(status_code=status))
+                self.assertEqual(result, existing)
+                self.assertEqual(collect_app_info.collection_failures, [{"cask": "azure-cli", "stage": "collection"}])
+
+    def test_upstream_deprecation_is_still_respected_after_migration(self):
+        for flag, reason in [("deprecated", "deprecation_reason"), ("disabled", "disable_reason")]:
+            with self.subTest(flag=flag):
+                payload = dict(self.cask_payload, **{flag: True, reason: "discontinued"})
+                result = self.run_migration(self.existing_app(), cask_response(payload))
+                self.assertTrue(result["deprecated"])
+                self.assertEqual(result["deprecation_reason"], f"{flag} in Homebrew: discontinued")
+                self.assertEqual(result["homebrew_formula"], "azure-cli")
+                self.assertNotIn("homebrew_cask", result)
+
+    def test_mismatched_fallback_identity_preserves_the_existing_app(self):
+        existing = self.existing_app()
+        result = self.run_migration(existing, cask_response(dict(self.cask_payload, token="other-app")))
+        self.assertEqual(result, existing)
+        self.assertEqual(collect_app_info.collection_failures, [{"cask": "azure-cli", "stage": "collection"}])
 
 
 class FilenameCollisionTests(unittest.TestCase):
