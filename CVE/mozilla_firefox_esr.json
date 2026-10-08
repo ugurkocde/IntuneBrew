@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox Esr",
   "app_key": "mozilla_firefox_esr",
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "total_cves": 3461,
   "summary": {
     "critical": 500,
@@ -4298,7 +4298,7 @@
     {
       "cve_id": "CVE-2025-14321",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "Use-after-free in the WebRTC: Signaling component. This vulnerability was fixed in Firefox 146, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -4319,7 +4319,7 @@
     {
       "cve_id": "CVE-2025-14324",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "JIT miscompilation in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox 146, Firefox ESR 115.31, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -4340,7 +4340,7 @@
     {
       "cve_id": "CVE-2025-14326",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "Use-after-free in the Audio/Video: GMP component. This vulnerability was fixed in Firefox 146 and Thunderbird 146.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -4361,7 +4361,7 @@
     {
       "cve_id": "CVE-2025-14330",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "JIT miscompilation in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox 146, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -15659,7 +15659,7 @@
     {
       "cve_id": "CVE-2025-14322",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "Sandbox escape due to incorrect boundary conditions in the Graphics: CanvasWebGL component. This vulnerability was fixed in Firefox 146, Firefox ESR 115.31, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.",
       "base_score": 8.0,
       "severity": "HIGH",
@@ -15680,7 +15680,7 @@
     {
       "cve_id": "CVE-2025-14323",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "Privilege escalation in the DOM: Notifications component. This vulnerability was fixed in Firefox 146, Firefox ESR 115.31, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -15701,7 +15701,7 @@
     {
       "cve_id": "CVE-2025-14325",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "JIT miscompilation in the JavaScript Engine: JIT component. This vulnerability was fixed in Firefox 146, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -15722,7 +15722,7 @@
     {
       "cve_id": "CVE-2025-14327",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "Spoofing issue in the Downloads Panel component. This vulnerability was fixed in Firefox 146, Thunderbird 146, Firefox ESR 140.7, and Thunderbird 140.7.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -15743,7 +15743,7 @@
     {
       "cve_id": "CVE-2025-14328",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "Privilege escalation in the Netmonitor component. This vulnerability was fixed in Firefox 146, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -15764,7 +15764,7 @@
     {
       "cve_id": "CVE-2025-14329",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "Privilege escalation in the Netmonitor component. This vulnerability was fixed in Firefox 146, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -15785,7 +15785,7 @@
     {
       "cve_id": "CVE-2025-14332",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "Memory safety bugs present in Firefox 145 and Thunderbird 145. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 146 and Thunderbird 146.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -15806,7 +15806,7 @@
     {
       "cve_id": "CVE-2025-14333",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "Memory safety bugs present in Firefox ESR 140.5, Thunderbird ESR 140.5, Firefox 145 and Thunderbird 145. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability was fixed in Firefox 146, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -45206,7 +45206,7 @@
     {
       "cve_id": "CVE-2025-14331",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-10-05",
+      "last_modified_date": "2026-10-07",
       "description": "Same-origin policy bypass in the Request Handling component. This vulnerability was fixed in Firefox 146, Firefox ESR 115.31, Firefox ESR 140.6, Thunderbird 146, and Thunderbird 140.6.",
       "base_score": 6.5,
       "severity": "MEDIUM",

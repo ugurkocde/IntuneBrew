@@ -1,7 +1,7 @@
 {
   "app_name": "Anydesk",
   "app_key": "anydesk",
-  "last_updated": "2026-10-07",
+  "last_updated": "2026-10-08",
   "total_cves": 19,
   "summary": {
     "critical": 3,
@@ -98,7 +98,7 @@
     {
       "cve_id": "CVE-2019-25261",
       "published_date": "2026-02-03",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-07",
       "description": "AnyDesk 5.4.0 contains an unquoted service path vulnerability in its Windows service configuration that allows local attackers to potentially inject malicious executables. Attackers can exploit the unquoted binary path to place malicious files in service executable locations, potentially gaining elevated system privileges.",
       "base_score": 7.8,
       "severity": "HIGH",
