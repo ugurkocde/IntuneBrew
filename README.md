@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1152-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1153-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -598,20 +598,18 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-10-08T01:05:11.778835Z*
+*Last checked: 2026-10-08T04:34:24.622975Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| dialpad | 2609.3.0 | 2609.4.0 |
-| figma | 126.9.11 | 126.9.13 |
-| hey | 1.3.7 | 1.3.8 |
-| paseo | 0.11.0 | 0.11.1 |
-| rambox | 3.0.0 | 3.1.0 |
-| riverside studio | 1.33.1 | 1.33.2 |
-| superlist | 1.57.6 | 1.58.0 |
-| vellum | 4.1.5 | 4.1.6 |
+| azure cli | 2.90.0 | 2.91.0 |
+| beekeeper studio | 6.1.5 | 6.1.6 |
+| google antigravity | 2.21.0 | 2.21.1 |
+| remnote | 1.28.37 | 1.28.42 |
+| tailscale | 1.102.4 | 1.104.1 |
 
 ## ✨ Features
 
@@ -724,6 +722,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/aws_corretto_jdk.png' width='32' height='32'> AWS Corretto JDK | 21.0.12.12.1 |
 | <img src='Logos/axure_rp.png' width='32' height='32'> Axure RP | 11.0.0.4150 |
 | <img src='Logos/azul_zulu_java_standard_edition_development_kit.png' width='32' height='32'> Azul Zulu Java Standard Edition Development Kit | 27.0.0 |
+| ❌ Azure CLI | 2.91.0 |
 | <img src='Logos/backblaze.png' width='32' height='32'> Backblaze | 10.0.3.1076 |
 | <img src='Logos/background_music.png' width='32' height='32'> Background Music | 0.5.0 |
 | <img src='Logos/backuploupe.png' width='32' height='32'> BackupLoupe | 3.15.1 |
@@ -740,7 +739,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/bbedit.png' width='32' height='32'> BBEdit | 16.0.3 |
 | <img src='Logos/bdash.png' width='32' height='32'> Bdash | 1.35.2 |
 | <img src='Logos/beaver_notes.png' width='32' height='32'> Beaver Notes | 4.4.0 |
-| <img src='Logos/beekeeper_studio.png' width='32' height='32'> Beekeeper Studio | 6.1.5 |
+| <img src='Logos/beekeeper_studio.png' width='32' height='32'> Beekeeper Studio | 6.1.6 |
 | <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.3.176 |
 | <img src='Logos/berkeley_open_infrastructure_for_network_computing.png' width='32' height='32'> Berkeley Open Infrastructure for Network Computing | 8.2.11 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 5.1.1 |
@@ -1048,7 +1047,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/goland.png' width='32' height='32'> Goland | 2026.2.3 |
 | <img src='Logos/goodsync.png' width='32' height='32'> GoodSync | 12.11.9 |
 | <img src='Logos/google_ads_editor.png' width='32' height='32'> Google Ads Editor | 2.13 |
-| <img src='Logos/google_antigravity.png' width='32' height='32'> Google Antigravity | 2.21.0 |
+| <img src='Logos/google_antigravity.png' width='32' height='32'> Google Antigravity | 2.21.1 |
 | <img src='Logos/google_chrome.png' width='32' height='32'> Google Chrome | 155.0.8059.40 |
 | <img src='Logos/google_drive.png' width='32' height='32'> Google Drive | 132.0.0 |
 | <img src='Logos/google_earth_pro.png' width='32' height='32'> Google Earth Pro | 7.3.7.1327 |
@@ -1477,7 +1476,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/reflect_notes.png' width='32' height='32'> Reflect Notes | 3.3.6 |
 | <img src='Logos/reflector.png' width='32' height='32'> Reflector | 4.1.2 |
 | <img src='Logos/reminders_menubar.png' width='32' height='32'> Reminders MenuBar | 2.2.0 |
-| <img src='Logos/remnote.png' width='32' height='32'> RemNote | 1.28.37 |
+| <img src='Logos/remnote.png' width='32' height='32'> RemNote | 1.28.42 |
 | <img src='Logos/remote_buddy.png' width='32' height='32'> Remote Buddy | 2.7.3 |
 | <img src='Logos/remote_desktop_manager.png' width='32' height='32'> Remote Desktop Manager | 2026.3.1.2 |
 | <img src='Logos/remote_help.png' width='32' height='32'> Remote Help | 1.0.2606021 |
@@ -1646,7 +1645,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/tabtab.png' width='32' height='32'> TabTab | 2.2 |
 | <img src='Logos/tabula.png' width='32' height='32'> Tabula | 1.2.1 |
 | <img src='Logos/taccy.png' width='32' height='32'> Taccy | 1.15 |
-| <img src='Logos/tailscale.png' width='32' height='32'> Tailscale | 1.102.4 |
+| <img src='Logos/tailscale.png' width='32' height='32'> Tailscale | 1.104.1 |
 | <img src='Logos/taskade.png' width='32' height='32'> Taskade | 4.7.0 |
 | <img src='Logos/taskbar.png' width='32' height='32'> Taskbar | 1.6.3 |
 | <img src='Logos/teacode.png' width='32' height='32'> TeaCode | 1.1.3 |
