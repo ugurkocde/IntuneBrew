@@ -1,12 +1,61 @@
 {
-  "lastChecked": "2026-10-07T22:35:53.188681Z",
+  "lastChecked": "2026-10-08T01:05:11.778835Z",
   "updates": [
     {
-      "appName": "zed",
-      "previousVersion": "1.22.0",
-      "newVersion": "1.23.2",
-      "changelog": "https://zed.dev/releases/stable",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/zed.png"
+      "appName": "dialpad",
+      "previousVersion": "2609.3.0",
+      "newVersion": "2609.4.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dialpad.png"
+    },
+    {
+      "appName": "figma",
+      "previousVersion": "126.9.11",
+      "newVersion": "126.9.13",
+      "changelog": "https://help.figma.com/hc/en-us/articles/360038511533-Release-Notes",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/figma.png"
+    },
+    {
+      "appName": "hey",
+      "previousVersion": "1.3.7",
+      "newVersion": "1.3.8",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/hey.png"
+    },
+    {
+      "appName": "paseo",
+      "previousVersion": "0.11.0",
+      "newVersion": "0.11.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/paseo.png"
+    },
+    {
+      "appName": "rambox",
+      "previousVersion": "3.0.0",
+      "newVersion": "3.1.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rambox.png"
+    },
+    {
+      "appName": "riverside studio",
+      "previousVersion": "1.33.1",
+      "newVersion": "1.33.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/riverside_studio.png"
+    },
+    {
+      "appName": "superlist",
+      "previousVersion": "1.57.6",
+      "newVersion": "1.58.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/superlist.png"
+    },
+    {
+      "appName": "vellum",
+      "previousVersion": "4.1.5",
+      "newVersion": "4.1.6",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/vellum.png"
     }
   ]
 }

@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1153-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1152-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -597,13 +597,21 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-10-07T22:35:53.188681Z*
+*Last checked: 2026-10-08T01:05:11.778835Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| zed | 1.22.0 | 1.23.2 |
+| dialpad | 2609.3.0 | 2609.4.0 |
+| figma | 126.9.11 | 126.9.13 |
+| hey | 1.3.7 | 1.3.8 |
+| paseo | 0.11.0 | 0.11.1 |
+| rambox | 3.0.0 | 3.1.0 |
+| riverside studio | 1.33.1 | 1.33.2 |
+| superlist | 1.57.6 | 1.58.0 |
+| vellum | 4.1.5 | 4.1.6 |
 
 ## ✨ Features
 
@@ -716,7 +724,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/aws_corretto_jdk.png' width='32' height='32'> AWS Corretto JDK | 21.0.12.12.1 |
 | <img src='Logos/axure_rp.png' width='32' height='32'> Axure RP | 11.0.0.4150 |
 | <img src='Logos/azul_zulu_java_standard_edition_development_kit.png' width='32' height='32'> Azul Zulu Java Standard Edition Development Kit | 27.0.0 |
-| ❌ Azure CLI | 2.90.0 |
 | <img src='Logos/backblaze.png' width='32' height='32'> Backblaze | 10.0.3.1076 |
 | <img src='Logos/background_music.png' width='32' height='32'> Background Music | 0.5.0 |
 | <img src='Logos/backuploupe.png' width='32' height='32'> BackupLoupe | 3.15.1 |
@@ -892,7 +899,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/devtoys.png' width='32' height='32'> DevToys | 2.0.9.0 |
 | <img src='Logos/devutils.png' width='32' height='32'> DevUtils | 1.17.0 |
 | <img src='Logos/dia.png' width='32' height='32'> Dia | 1.51.1 |
-| <img src='Logos/dialpad.png' width='32' height='32'> Dialpad | 2609.3.0 |
+| <img src='Logos/dialpad.png' width='32' height='32'> Dialpad | 2609.4.0 |
 | <img src='Logos/dictionaries.png' width='32' height='32'> Dictionaries | 3.0 |
 | <img src='Logos/diffusion_bee.png' width='32' height='32'> Diffusion Bee | 2.5.3 |
 | <img src='Logos/digiexam.png' width='32' height='32'> digiexam | 26.3.17 |
@@ -977,7 +984,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/fathom.png' width='32' height='32'> Fathom | 3.8.2 |
 | <img src='Logos/fellow.png' width='32' height='32'> Fellow | 5.7.14 |
 | <img src='Logos/ferdium.png' width='32' height='32'> Ferdium | 7.2.3 |
-| <img src='Logos/figma.png' width='32' height='32'> Figma | 126.9.11 |
+| <img src='Logos/figma.png' width='32' height='32'> Figma | 126.9.13 |
 | <img src='Logos/file_juicer.png' width='32' height='32'> File Juicer | 4.115 |
 | <img src='Logos/filebot.png' width='32' height='32'> FileBot | 5.3.0 |
 | <img src='Logos/filemaker_pro.png' width='32' height='32'> FileMaker Pro | 26.0.3.307 |
@@ -1063,7 +1070,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/headlamp.png' width='32' height='32'> Headlamp | 0.45.0 |
 | <img src='Logos/hepta.png' width='32' height='32'> Hepta | 1.112.2 |
 | <img src='Logos/hex_fiend.png' width='32' height='32'> Hex Fiend | 2.18.1 |
-| <img src='Logos/hey.png' width='32' height='32'> HEY | 1.3.7 |
+| <img src='Logos/hey.png' width='32' height='32'> HEY | 1.3.8 |
 | <img src='Logos/heynote.png' width='32' height='32'> Heynote | 2.9.1 |
 | <img src='Logos/hidden_bar.png' width='32' height='32'> Hidden Bar | 1.11.1 |
 | <img src='Logos/hides.png' width='32' height='32'> Hides | 7.4 |
@@ -1379,7 +1386,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/parallels_client.png' width='32' height='32'> Parallels Client | 19.4.3 |
 | <img src='Logos/parallels_desktop.png' width='32' height='32'> Parallels Desktop | 27.0.3-58680 |
 | <img src='Logos/parsec.png' width='32' height='32'> Parsec | 150-104a |
-| <img src='Logos/paseo.png' width='32' height='32'> Paseo | 0.11.0 |
+| <img src='Logos/paseo.png' width='32' height='32'> Paseo | 0.11.1 |
 | <img src='Logos/paste.png' width='32' height='32'> Paste | 7.0.1 |
 | <img src='Logos/pastebot.png' width='32' height='32'> Pastebot | 3.1.1 |
 | <img src='Logos/path_finder.png' width='32' height='32'> Path Finder | 26.1.9 |
@@ -1452,7 +1459,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/r.png' width='32' height='32'> R | 4.6.1 |
 | <img src='Logos/radio_silence.png' width='32' height='32'> Radio Silence | 3.4 |
 | <img src='Logos/raindropio.png' width='32' height='32'> Raindrop.io | 5.7.9 |
-| <img src='Logos/rambox.png' width='32' height='32'> Rambox | 3.0.0 |
+| <img src='Logos/rambox.png' width='32' height='32'> Rambox | 3.1.0 |
 | <img src='Logos/rancher_desktop.png' width='32' height='32'> Rancher Desktop | 1.24.0 |
 | <img src='Logos/rapidapi.png' width='32' height='32'> RapidAPI | 4.5.5 |
 | <img src='Logos/rapidweaver.png' width='32' height='32'> RapidWeaver | 9.6.8 |
@@ -1486,7 +1493,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/rightfont.png' width='32' height='32'> RightFont | 10.2.1 |
 | <img src='Logos/ringcentral.png' width='32' height='32'> RingCentral | 26.3.20 |
 | <img src='Logos/rive.png' width='32' height='32'> Rive | 0.9.157 |
-| <img src='Logos/riverside_studio.png' width='32' height='32'> Riverside Studio | 1.33.1 |
+| <img src='Logos/riverside_studio.png' width='32' height='32'> Riverside Studio | 1.33.2 |
 | <img src='Logos/rize.png' width='32' height='32'> Rize | 3.0.45 |
 | <img src='Logos/roam_research.png' width='32' height='32'> Roam Research | 0.0.39 |
 | <img src='Logos/roboform.png' width='32' height='32'> RoboForm | 9.9.5 |
@@ -1610,7 +1617,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/superduper.png' width='32' height='32'> SuperDuper! | 4.0.9 |
 | <img src='Logos/superhuman.png' width='32' height='32'> Superhuman | 1041.0.69 |
 | <img src='Logos/superkey.png' width='32' height='32'> Superkey | 1.66 |
-| <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.57.6 |
+| <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.58.0 |
 | <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 2.19.2 |
 | <img src='Logos/support_app.png' width='32' height='32'> Support App | 3.0.5 |
 | <img src='Logos/support_companion.png' width='32' height='32'> Support Companion | 3.0.0.81153 |
@@ -1704,7 +1711,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/utm.png' width='32' height='32'> UTM | 4.7.5 |
 | ❌ Vagrant | 2.4.9 |
 | <img src='Logos/vanilla.png' width='32' height='32'> Vanilla | 3.0 |
-| <img src='Logos/vellum.png' width='32' height='32'> Vellum | 4.1.5 |
+| <img src='Logos/vellum.png' width='32' height='32'> Vellum | 4.1.6 |
 | <img src='Logos/veracrypt.png' width='32' height='32'> VeraCrypt | 1.26.29 |
 | <img src='Logos/versions.png' width='32' height='32'> Versions | 2.4.5 |
 | <img src='Logos/viber.png' width='32' height='32'> Viber | 1.0.0.110 |
