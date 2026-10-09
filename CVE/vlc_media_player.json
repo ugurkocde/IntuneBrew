@@ -1,7 +1,7 @@
 {
   "app_name": "Vlc Media Player",
   "app_key": "vlc_media_player",
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-09",
   "total_cves": 113,
   "summary": {
     "critical": 6,
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2019-13962",
       "published_date": "2019-07-18",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-08",
       "description": "lavc_CopyPicture in modules/codec/avcodec/video.c in VideoLAN VLC media player through 3.0.7 has a heap-based buffer over-read because it does not properly validate the width and height.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2020-26664",
       "published_date": "2021-01-08",
-      "last_modified_date": "2026-07-09",
+      "last_modified_date": "2026-10-08",
       "description": "A vulnerability in EbmlTypeDispatcher::send in VideoLAN VLC media player 3.0.11 allows attackers to trigger a heap-based buffer overflow via a crafted .mkv file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2019-19721",
       "published_date": "2020-05-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-08",
       "description": "An off-by-one error in the DecodeBlock function in codec/sdl_image.c in VideoLAN VLC media player before 3.0.9 allows remote attackers to cause a denial of service (memory corruption) via a crafted image file. NOTE: this may be related to the SDL_Image product.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -686,7 +686,7 @@
     {
       "cve_id": "CVE-2019-5459",
       "published_date": "2019-07-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-08",
       "description": "An Integer underflow in VLC Media Player versions < 3.0.7 leads to an out-of-band read.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -707,7 +707,7 @@
     {
       "cve_id": "CVE-2019-13602",
       "published_date": "2019-07-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-08",
       "description": "An Integer Underflow in MP4_EIA608_Convert() in modules/demux/mp4/mp4.c in VideoLAN VLC media player through 3.0.7.1 allows remote attackers to cause a denial of service (heap-based buffer overflow and crash) or possibly have unspecified other impact via a crafted .mp4 file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1673,7 +1673,7 @@
     {
       "cve_id": "CVE-2019-5460",
       "published_date": "2019-07-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-08",
       "description": "Double Free in VLC versions <= 3.0.6 leads to a crash.",
       "base_score": 5.5,
       "severity": "MEDIUM",

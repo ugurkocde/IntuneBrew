@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-10-08",
+  "last_updated": "2026-10-09",
   "total_cves": 1049,
   "summary": {
     "critical": 18,
@@ -20447,7 +20447,7 @@
     {
       "cve_id": "CVE-2017-8529",
       "published_date": "2017-06-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-08",
       "description": "Internet Explorer in Microsoft Windows 7 SP1, Windows Server 2008 R2 SP1, Windows 8.1 and Windows RT 8.1, and Windows Server 2012 and R2 allow an attacker to detect specific files on the user's computer when affected Microsoft scripting engines do not properly handle objects in memory, aka \"Microsoft Browser Information Disclosure Vulnerability\".",
       "base_score": 6.5,
       "severity": "MEDIUM",
