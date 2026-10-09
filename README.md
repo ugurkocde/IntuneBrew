@@ -667,8 +667,6 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | wechat for mac | 4.1.15.22 | 4.1.15.53 |
 | whatsapp | 26.40.16 | 26.40.20 |
 
-1 app updates could not be published. See [catalog sync status](catalog-sync.json).
-
 ## ✨ Features
 
 See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection and packaging.
