@@ -25,12 +25,12 @@ elif [ -f "/Applications/Versions.app" ]; then
     rm -f "/Applications/Versions.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.versionsapp.v2
-echo "Removing $HOME/Library/Application Support/com.versionsapp.v2..."
-if [ -d "$HOME/Library/Application Support/com.versionsapp.v2" ]; then
-    rm -rf "$HOME/Library/Application Support/com.versionsapp.v2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.versionsapp.v2" ]; then
-    rm -f "$HOME/Library/Application Support/com.versionsapp.v2" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.versionsapp.v3
+echo "Removing $HOME/Library/Application Support/com.versionsapp.v3..."
+if [ -d "$HOME/Library/Application Support/com.versionsapp.v3" ]; then
+    rm -rf "$HOME/Library/Application Support/com.versionsapp.v3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.versionsapp.v3" ]; then
+    rm -f "$HOME/Library/Application Support/com.versionsapp.v3" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Versions
@@ -41,36 +41,36 @@ elif [ -f "$HOME/Library/Application Support/Versions" ]; then
     rm -f "$HOME/Library/Application Support/Versions" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.versionsapp.v2
-echo "Removing $HOME/Library/Caches/com.versionsapp.v2..."
-if [ -d "$HOME/Library/Caches/com.versionsapp.v2" ]; then
-    rm -rf "$HOME/Library/Caches/com.versionsapp.v2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.versionsapp.v2" ]; then
-    rm -f "$HOME/Library/Caches/com.versionsapp.v2" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.versionsapp.v3
+echo "Removing $HOME/Library/Caches/com.versionsapp.v3..."
+if [ -d "$HOME/Library/Caches/com.versionsapp.v3" ]; then
+    rm -rf "$HOME/Library/Caches/com.versionsapp.v3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.versionsapp.v3" ]; then
+    rm -f "$HOME/Library/Caches/com.versionsapp.v3" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/HTTPStorages/com.versionsapp.v2
-echo "Removing $HOME/Library/HTTPStorages/com.versionsapp.v2..."
-if [ -d "$HOME/Library/HTTPStorages/com.versionsapp.v2" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/com.versionsapp.v2" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/com.versionsapp.v2" ]; then
-    rm -f "$HOME/Library/HTTPStorages/com.versionsapp.v2" 2>/dev/null || true
+# Remove $HOME/Library/HTTPStorages/com.versionsapp.v3
+echo "Removing $HOME/Library/HTTPStorages/com.versionsapp.v3..."
+if [ -d "$HOME/Library/HTTPStorages/com.versionsapp.v3" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.versionsapp.v3" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.versionsapp.v3" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.versionsapp.v3" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.versionsapp.v2.plist
-echo "Removing $HOME/Library/Preferences/com.versionsapp.v2.plist..."
-if [ -d "$HOME/Library/Preferences/com.versionsapp.v2.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.versionsapp.v2.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.versionsapp.v2.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.versionsapp.v2.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.versionsapp.v3.plist
+echo "Removing $HOME/Library/Preferences/com.versionsapp.v3.plist..."
+if [ -d "$HOME/Library/Preferences/com.versionsapp.v3.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.versionsapp.v3.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.versionsapp.v3.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.versionsapp.v3.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/WebKit/com.versionsapp.v2
-echo "Removing $HOME/Library/WebKit/com.versionsapp.v2..."
-if [ -d "$HOME/Library/WebKit/com.versionsapp.v2" ]; then
-    rm -rf "$HOME/Library/WebKit/com.versionsapp.v2" 2>/dev/null || true
-elif [ -f "$HOME/Library/WebKit/com.versionsapp.v2" ]; then
-    rm -f "$HOME/Library/WebKit/com.versionsapp.v2" 2>/dev/null || true
+# Remove $HOME/Library/WebKit/com.versionsapp.v3
+echo "Removing $HOME/Library/WebKit/com.versionsapp.v3..."
+if [ -d "$HOME/Library/WebKit/com.versionsapp.v3" ]; then
+    rm -rf "$HOME/Library/WebKit/com.versionsapp.v3" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.versionsapp.v3" ]; then
+    rm -f "$HOME/Library/WebKit/com.versionsapp.v3" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
