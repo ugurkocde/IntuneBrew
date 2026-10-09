@@ -1,14 +1,14 @@
 {
   "name": "Proton Mail Bridge",
   "description": "Bridges Proton Mail to email clients supporting IMAP and SMTP protocols",
-  "version": "3.27.0",
-  "url": "https://github.com/ProtonMail/proton-bridge/releases/download/v3.27.0/Bridge-Installer.dmg",
-  "vendor_url": "https://github.com/ProtonMail/proton-bridge/releases/download/v3.27.0/Bridge-Installer.dmg",
+  "version": "3.27.1",
+  "url": "https://github.com/ProtonMail/proton-bridge/releases/download/v3.27.1/Bridge-Installer.dmg",
+  "vendor_url": "https://github.com/ProtonMail/proton-bridge/releases/download/v3.27.1/Bridge-Installer.dmg",
   "bundleId": "com.protonmail.bridge",
   "homepage": "https://proton.me/mail/bridge",
   "homebrew_cask": "proton-mail-bridge",
   "fileName": "Bridge-Installer.dmg",
-  "sha": "44152e90108ae4280aafec86604b7871697bd514633c2afb911038f9ab50fe3e",
+  "sha": "91ef13aad7c6ddac00527e850350583ff88138b07fe46e72bbf0318a217bad4b",
   "category": "Productivity",
   "publisher": "Proton AG",
   "previous_version": "3.27.0"

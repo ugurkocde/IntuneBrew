@@ -8,7 +8,7 @@
   "homepage": "https://anydesk.com/",
   "homebrew_cask": "anydesk",
   "fileName": "anydesk.dmg",
-  "sha": "6c1637f89b34cfbfbb4d0d02c3fe81428acd8defcea9b0ac20ff65fdcc041449",
+  "sha": "b2ce747fc441e4d4331c26c0d0b562b22090d6fd08fa86db6d086dc8b5197db1",
   "changelog": "https://anydesk.com/en/changelog/mac-os",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:31:56Z",
