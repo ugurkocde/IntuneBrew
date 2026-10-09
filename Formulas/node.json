@@ -1,10 +1,11 @@
 {
   "name": "node",
   "description": "Open-source, cross-platform JavaScript runtime environment",
-  "version": "26.10.0",
+  "version": "26.11.0",
   "homepage": "https://nodejs.org/",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/node_26.10.0_arm64.pkg",
-  "fileName": "node_26.10.0_arm64.pkg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/node_26.11.0_arm64.pkg",
+  "fileName": "node_26.11.0_arm64.pkg",
+  "sha": "0f783600ef4376db134f1e20d5e5f94cb192106812a9c92e23c7b5008686df48",
   "bundledDependencies": [
     "abseil",
     "ada-url",
@@ -18,7 +19,7 @@
     "llhttp",
     "merve",
     "nbytes",
-    "openssl@3",
+    "openssl@4",
     "simdjson",
     "simdutf",
     "sqlite",
