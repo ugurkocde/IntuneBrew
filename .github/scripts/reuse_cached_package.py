@@ -6,14 +6,30 @@ import json
 import pathlib
 import re
 import subprocess
+import time
 
 import requests
 
 
-def update_cached_package(manifest, previous, package_url, session=requests):
+def update_cached_package(manifest, previous, package_url, session=requests, sleep=time.sleep):
     filename = package_url.rsplit('/', 1)[-1]
     if not package_url.startswith('https://intunebrew.blob.core.windows.net/pkg/') or not filename.endswith('.pkg'):
         raise ValueError('Expected an IntuneBrew package URL.')
+    for attempt in range(1, 4):
+        try:
+            return _verify_cached_package(manifest, previous, package_url, filename, session)
+        except requests.exceptions.SSLError:
+            # Certificate and hostname failures must never be retried.
+            raise
+        except (requests.exceptions.ConnectionError, requests.exceptions.Timeout,
+                requests.exceptions.ChunkedEncodingError) as error:
+            if attempt == 3:
+                raise
+            print(f'Transient error verifying {filename} (attempt {attempt}/3): {type(error).__name__}')
+            sleep(attempt)
+
+
+def _verify_cached_package(manifest, previous, package_url, filename, session):
     # Only a checksum already published for this exact package is reusable.
     checksum = previous.get('sha', '')
     trusted = (previous.get('url') == package_url and previous.get('fileName') == filename
