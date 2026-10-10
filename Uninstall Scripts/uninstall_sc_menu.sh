@@ -17,6 +17,10 @@ fi
 echo "Stopping SC Menu if running..."
 pkill -f "SC Menu" 2>/dev/null || true
 
+# Kill application with bundle ID com.ttinc.sc-menu if running
+echo "Stopping application with bundle ID com.ttinc.sc-menu if running..."
+killall -9 "com.ttinc.sc-menu" 2>/dev/null || true
+
 # Remove /Applications/SC Menu.app
 echo "Removing /Applications/SC Menu.app..."
 if [ -d "/Applications/SC Menu.app" ]; then
