@@ -1,16 +1,16 @@
 {
   "name": "Versions",
   "description": "Subversion client",
-  "version": "3.0.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/versions_3.0.0.pkg",
-  "vendor_url": "https://updates.versionsapp.com/v3/prod/Versions-3.0.0-3000.zip",
+  "version": "3.0.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/versions_3.0.1.pkg",
+  "vendor_url": "https://updates.versionsapp.com/v3/prod/Versions-3.0.1-3001.zip",
   "bundleId": "com.versionsapp.v3",
   "homepage": "https://versionsapp.com/",
-  "fileName": "versions_3.0.0.pkg",
+  "fileName": "versions_3.0.1.pkg",
   "type": "app",
-  "sha": "6ab07e47fc46da7d76cabc3f72cdd0ba124792b799531264354d638a18330880",
+  "sha": "9ca3af169428a5ad4a7414c8e5950960a73758754a603c919850e274aa2fdee0",
   "category": "Developer Tools",
   "publisher": "Versions",
-  "previous_version": "2.4.5",
+  "previous_version": "3.0.0",
   "homebrew_cask": "versions"
 }

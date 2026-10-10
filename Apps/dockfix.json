@@ -1,14 +1,14 @@
 {
   "name": "DockFix",
   "description": "Dock replacement",
-  "version": "5.3.0-beta",
+  "version": "5.3.0",
   "url": "https://www.dockfix.app/downloads/DockFix.dmg",
   "vendor_url": "https://www.dockfix.app/downloads/DockFix.dmg",
   "bundleId": "dk.FIrstForm.DockFix",
   "homepage": "https://www.dockfix.app/",
   "homebrew_cask": "dockfix",
   "fileName": "DockFix.dmg",
-  "sha": "14124d330a1904f7944950d9f0e51981052cfa68453295cce659f78845578afe",
+  "sha": "61d8aac767b9c12e252a18593c6681a7b32f9b7fc2d87f46461eb77984ca31ed",
   "category": "Utilities",
   "publisher": "DockFix",
   "previous_version": "5.3.0-beta"
