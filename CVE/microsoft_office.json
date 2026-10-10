@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Office",
   "app_key": "microsoft_office",
-  "last_updated": "2026-10-09",
+  "last_updated": "2026-10-10",
   "total_cves": 1396,
   "summary": {
     "critical": 13,
@@ -17507,7 +17507,7 @@
     {
       "cve_id": "CVE-2015-2466",
       "published_date": "2015-08-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-09",
       "description": "Microsoft Office 2007 SP3, 2010 SP2, 2013 SP1, and 2013 RT SP1 allows remote attackers to execute arbitrary code via a crafted template, aka \"Microsoft Office Remote Code Execution Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -17528,7 +17528,7 @@
     {
       "cve_id": "CVE-2015-2467",
       "published_date": "2015-08-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-09",
       "description": "Microsoft Office 2007 SP3 allows remote attackers to execute arbitrary code via a crafted document, aka \"Microsoft Office Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",
@@ -18263,7 +18263,7 @@
     {
       "cve_id": "CVE-2012-2524",
       "published_date": "2012-08-15",
-      "last_modified_date": "2026-06-16",
+      "last_modified_date": "2026-10-09",
       "description": "Microsoft Office 2007 SP2 and SP3 and 2010 SP1 allows remote attackers to execute arbitrary code or cause a denial of service (memory corruption) via a crafted Computer Graphics Metafile (CGM) file, aka \"CGM File Format Memory Corruption Vulnerability.\"",
       "base_score": 9.3,
       "severity": "HIGH",

@@ -1,7 +1,7 @@
 {
   "app_name": "Opera",
   "app_key": "opera",
-  "last_updated": "2026-10-09",
+  "last_updated": "2026-10-10",
   "total_cves": 304,
   "summary": {
     "critical": 0,
@@ -2849,7 +2849,7 @@
     {
       "cve_id": "CVE-2011-3389",
       "published_date": "2011-09-06",
-      "last_modified_date": "2026-06-16",
+      "last_modified_date": "2026-10-09",
       "description": "The SSL protocol, as used in certain configurations in Microsoft Windows and Microsoft Internet Explorer, Mozilla Firefox, Google Chrome, Opera, and other products, encrypts data by using CBC mode with chained initialization vectors, which allows man-in-the-middle attackers to obtain plaintext HTTP headers via a blockwise chosen-boundary attack (BCBA) on an HTTPS session, in conjunction with JavaScript code that uses (1) the HTML5 WebSocket API, (2) the Java URLConnection API, or (3) the Silverlight WebClient API, aka a \"BEAST\" attack.",
       "base_score": 4.3,
       "severity": "MEDIUM",
