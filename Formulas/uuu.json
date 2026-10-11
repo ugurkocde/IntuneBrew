@@ -7,7 +7,7 @@
   "fileName": "uuu_1.5.243_arm64.pkg",
   "bundledDependencies": [
     "libusb",
-    "openssl@3",
+    "openssl@4",
     "tinyxml2",
     "zstd"
   ],
