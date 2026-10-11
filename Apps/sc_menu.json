@@ -1,14 +1,14 @@
 {
   "name": "SC Menu",
   "description": "Simple smartcard menu item",
-  "version": "2.1",
-  "url": "https://github.com/boberito/sc_menu/releases/download/2.1/SC_Menu.dmg",
-  "vendor_url": "https://github.com/boberito/sc_menu/releases/download/2.1/SC_Menu.dmg",
+  "version": "2.1.1",
+  "url": "https://github.com/boberito/sc_menu/releases/download/2.1.1/SC_Menu.dmg",
+  "vendor_url": "https://github.com/boberito/sc_menu/releases/download/2.1.1/SC_Menu.dmg",
   "bundleId": "de.sccm.SCMenu",
   "homepage": "https://github.com/boberito/sc_menu",
   "homebrew_cask": "sc-menu",
   "fileName": "SC_Menu.dmg",
-  "sha": "13318245268a2ecc10a64d2fea561807e9f5bef69bf3e66b85ab44ef3157bbda",
+  "sha": "e8ce8777d1b3d157f60b48dc5e6022e719e067e68e9a4d7d852792f7166f5cab",
   "category": "Security",
   "publisher": "boberito",
   "previous_version": "2.1"
