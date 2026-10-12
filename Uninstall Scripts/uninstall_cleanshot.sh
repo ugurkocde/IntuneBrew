@@ -29,6 +29,14 @@ elif [ -f "/Applications/CleanShot X.app" ]; then
     rm -f "/Applications/CleanShot X.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/pl.maketheweb.cleanshotx.*
+echo "Removing $HOME/Library/Application Scripts/pl.maketheweb.cleanshotx.*..."
+if [ -d "$HOME/Library/Application Scripts/pl.maketheweb.cleanshotx.*" ]; then
+    rm -rf "$HOME/Library/Application Scripts/pl.maketheweb.cleanshotx.*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/pl.maketheweb.cleanshotx.*" ]; then
+    rm -f "$HOME/Library/Application Scripts/pl.maketheweb.cleanshotx.*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/CleanShot
 echo "Removing $HOME/Library/Application Support/CleanShot..."
 if [ -d "$HOME/Library/Application Support/CleanShot" ]; then
@@ -53,6 +61,22 @@ elif [ -f "$HOME/Library/Caches/SentryCrash/CleanShot X" ]; then
     rm -f "$HOME/Library/Caches/SentryCrash/CleanShot X" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/pl.maketheweb.cleanshotx.*
+echo "Removing $HOME/Library/Containers/pl.maketheweb.cleanshotx.*..."
+if [ -d "$HOME/Library/Containers/pl.maketheweb.cleanshotx.*" ]; then
+    rm -rf "$HOME/Library/Containers/pl.maketheweb.cleanshotx.*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/pl.maketheweb.cleanshotx.*" ]; then
+    rm -f "$HOME/Library/Containers/pl.maketheweb.cleanshotx.*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/pl.maketheweb.cleanshotx
+echo "Removing $HOME/Library/HTTPStorages/pl.maketheweb.cleanshotx..."
+if [ -d "$HOME/Library/HTTPStorages/pl.maketheweb.cleanshotx" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/pl.maketheweb.cleanshotx" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/pl.maketheweb.cleanshotx" ]; then
+    rm -f "$HOME/Library/HTTPStorages/pl.maketheweb.cleanshotx" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.getcleanshot.app.plist
 echo "Removing $HOME/Library/Preferences/com.getcleanshot.app.plist..."
 if [ -d "$HOME/Library/Preferences/com.getcleanshot.app.plist" ]; then
@@ -67,6 +91,14 @@ if [ -d "$HOME/Library/Preferences/pl.maketheweb.cleanshotx.plist" ]; then
     rm -rf "$HOME/Library/Preferences/pl.maketheweb.cleanshotx.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/pl.maketheweb.cleanshotx.plist" ]; then
     rm -f "$HOME/Library/Preferences/pl.maketheweb.cleanshotx.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/pl.maketheweb.cleanshotx
+echo "Removing $HOME/Library/WebKit/pl.maketheweb.cleanshotx..."
+if [ -d "$HOME/Library/WebKit/pl.maketheweb.cleanshotx" ]; then
+    rm -rf "$HOME/Library/WebKit/pl.maketheweb.cleanshotx" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/pl.maketheweb.cleanshotx" ]; then
+    rm -f "$HOME/Library/WebKit/pl.maketheweb.cleanshotx" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

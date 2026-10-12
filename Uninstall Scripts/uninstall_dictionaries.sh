@@ -25,12 +25,36 @@ elif [ -f "/Applications/Dictionaries.app" ]; then
     rm -f "/Applications/Dictionaries.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/io.dictionaries.Dictionaries.Helper
+echo "Removing $HOME/Library/Application Scripts/io.dictionaries.Dictionaries.Helper..."
+if [ -d "$HOME/Library/Application Scripts/io.dictionaries.Dictionaries.Helper" ]; then
+    rm -rf "$HOME/Library/Application Scripts/io.dictionaries.Dictionaries.Helper" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/io.dictionaries.Dictionaries.Helper" ]; then
+    rm -f "$HOME/Library/Application Scripts/io.dictionaries.Dictionaries.Helper" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/io.dictionaries.Dictionaries
+echo "Removing $HOME/Library/Application Support/io.dictionaries.Dictionaries..."
+if [ -d "$HOME/Library/Application Support/io.dictionaries.Dictionaries" ]; then
+    rm -rf "$HOME/Library/Application Support/io.dictionaries.Dictionaries" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/io.dictionaries.Dictionaries" ]; then
+    rm -f "$HOME/Library/Application Support/io.dictionaries.Dictionaries" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/io.dictionaries.Dictionaries
 echo "Removing $HOME/Library/Containers/io.dictionaries.Dictionaries..."
 if [ -d "$HOME/Library/Containers/io.dictionaries.Dictionaries" ]; then
     rm -rf "$HOME/Library/Containers/io.dictionaries.Dictionaries" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/io.dictionaries.Dictionaries" ]; then
     rm -f "$HOME/Library/Containers/io.dictionaries.Dictionaries" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/io.dictionaries.Dictionaries
+echo "Removing $HOME/Library/HTTPStorages/io.dictionaries.Dictionaries..."
+if [ -d "$HOME/Library/HTTPStorages/io.dictionaries.Dictionaries" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/io.dictionaries.Dictionaries" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/io.dictionaries.Dictionaries" ]; then
+    rm -f "$HOME/Library/HTTPStorages/io.dictionaries.Dictionaries" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/io.dictionaries.Dictionaries.plist

@@ -45,12 +45,28 @@ elif [ -f "$HOME/Library/Application Scripts/com.raycast.macos.BrowserExtension"
     rm -f "$HOME/Library/Application Scripts/com.raycast.macos.BrowserExtension" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/SY64MV22J9.com.raycast.macos.shared
+echo "Removing $HOME/Library/Application Scripts/SY64MV22J9.com.raycast.macos.shared..."
+if [ -d "$HOME/Library/Application Scripts/SY64MV22J9.com.raycast.macos.shared" ]; then
+    rm -rf "$HOME/Library/Application Scripts/SY64MV22J9.com.raycast.macos.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/SY64MV22J9.com.raycast.macos.shared" ]; then
+    rm -f "$HOME/Library/Application Scripts/SY64MV22J9.com.raycast.macos.shared" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.raycast.macos
 echo "Removing $HOME/Library/Application Support/com.raycast.macos..."
 if [ -d "$HOME/Library/Application Support/com.raycast.macos" ]; then
     rm -rf "$HOME/Library/Application Support/com.raycast.macos" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/com.raycast.macos" ]; then
     rm -f "$HOME/Library/Application Support/com.raycast.macos" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.raycast.shared
+echo "Removing $HOME/Library/Application Support/com.raycast.shared..."
+if [ -d "$HOME/Library/Application Support/com.raycast.shared" ]; then
+    rm -rf "$HOME/Library/Application Support/com.raycast.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.raycast.shared" ]; then
+    rm -f "$HOME/Library/Application Support/com.raycast.shared" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.raycast.macos
@@ -85,12 +101,28 @@ elif [ -f "$HOME/Library/Cookies/com.raycast.macos.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/com.raycast.macos.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Group Containers/SY64MV22J9.com.raycast.macos.shared
+echo "Removing $HOME/Library/Group Containers/SY64MV22J9.com.raycast.macos.shared..."
+if [ -d "$HOME/Library/Group Containers/SY64MV22J9.com.raycast.macos.shared" ]; then
+    rm -rf "$HOME/Library/Group Containers/SY64MV22J9.com.raycast.macos.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/SY64MV22J9.com.raycast.macos.shared" ]; then
+    rm -f "$HOME/Library/Group Containers/SY64MV22J9.com.raycast.macos.shared" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.raycast.macos
 echo "Removing $HOME/Library/HTTPStorages/com.raycast.macos..."
 if [ -d "$HOME/Library/HTTPStorages/com.raycast.macos" ]; then
     rm -rf "$HOME/Library/HTTPStorages/com.raycast.macos" 2>/dev/null || true
 elif [ -f "$HOME/Library/HTTPStorages/com.raycast.macos" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.raycast.macos" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/com.raycast.macos
+echo "Removing $HOME/Library/Logs/com.raycast.macos..."
+if [ -d "$HOME/Library/Logs/com.raycast.macos" ]; then
+    rm -rf "$HOME/Library/Logs/com.raycast.macos" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/com.raycast.macos" ]; then
+    rm -f "$HOME/Library/Logs/com.raycast.macos" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.raycast.macos.plist

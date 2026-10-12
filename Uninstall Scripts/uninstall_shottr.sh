@@ -17,6 +17,10 @@ fi
 echo "Stopping Shottr if running..."
 pkill -f "Shottr" 2>/dev/null || true
 
+# Kill application with bundle ID cc.ffitch.shottr if running
+echo "Stopping application with bundle ID cc.ffitch.shottr if running..."
+killall -9 "cc.ffitch.shottr" 2>/dev/null || true
+
 # Remove /Applications/Shottr.app
 echo "Removing /Applications/Shottr.app..."
 if [ -d "/Applications/Shottr.app" ]; then
