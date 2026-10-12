@@ -1,15 +1,15 @@
 {
   "name": "massCode",
   "description": "Code snippets manager for developers",
-  "version": "6.2.0",
-  "url": "https://github.com/massCodeIO/massCode/releases/download/v6.2.0/massCode-6.2.0-arm64.dmg",
-  "vendor_url": "https://github.com/massCodeIO/massCode/releases/download/v6.2.0/massCode-6.2.0-arm64.dmg",
+  "version": "6.2.1",
+  "url": "https://github.com/massCodeIO/massCode/releases/download/v6.2.1/massCode-6.2.1-arm64.dmg",
+  "vendor_url": "https://github.com/massCodeIO/massCode/releases/download/v6.2.1/massCode-6.2.1-arm64.dmg",
   "bundleId": "io.masscode.app",
   "homepage": "https://masscode.io/",
   "homebrew_cask": "masscode",
-  "fileName": "massCode-6.2.0-arm64.dmg",
-  "sha": "9933de2b49f45d9685988efe0ed029b231593b84350c10cdae3c66f6161dd6ac",
+  "fileName": "massCode-6.2.1-arm64.dmg",
+  "sha": "a8f2584adac3dcad446bfb1fc1fbde2b9b39dae388fb066776e09f6ba30063cd",
   "category": "Developer Tools",
   "publisher": "MassCode",
-  "previous_version": "6.1.0"
+  "previous_version": "6.2.0"
 }
