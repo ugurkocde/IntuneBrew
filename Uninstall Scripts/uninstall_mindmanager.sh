@@ -17,6 +17,10 @@ fi
 echo "Stopping Mindmanager if running..."
 pkill -f "Mindmanager" 2>/dev/null || true
 
+# Kill application with bundle ID com.mindjet.mindmanager.25 if running
+echo "Stopping application with bundle ID com.mindjet.mindmanager.25 if running..."
+killall -9 "com.mindjet.mindmanager.25" 2>/dev/null || true
+
 # Remove /Applications/MindManager.app
 echo "Removing /Applications/MindManager.app..."
 if [ -d "/Applications/MindManager.app" ]; then
@@ -57,12 +61,12 @@ elif [ -f "$HOME/Library/HTTPStorages/com.mindjet.mindmanager.*.binarycookies" ]
     rm -f "$HOME/Library/HTTPStorages/com.mindjet.mindmanager.*.binarycookies" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist
-echo "Removing $HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist..."
-if [ -d "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist" ]; then
-    rm -f "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.6B4DD3EE-2BFA-5A1C-A64F-50799C342D41.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.plist
+echo "Removing $HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.plist..."
+if [ -d "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.plist" ]; then
+    rm -f "$HOME/Library/Preferences/ByHost/com.mindjet.mindmanager.*.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.mindjet.mindmanager.*.plist

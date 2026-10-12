@@ -47,6 +47,14 @@ elif [ -f "$HOME/Library/Caches/com.daisydiskapp.DaisyDiskStandAlone" ]; then
     rm -f "$HOME/Library/Caches/com.daisydiskapp.DaisyDiskStandAlone" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.daisydiskapp.DaisyDiskStandAlone
+echo "Removing $HOME/Library/HTTPStorages/com.daisydiskapp.DaisyDiskStandAlone..."
+if [ -d "$HOME/Library/HTTPStorages/com.daisydiskapp.DaisyDiskStandAlone" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.daisydiskapp.DaisyDiskStandAlone" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.daisydiskapp.DaisyDiskStandAlone" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.daisydiskapp.DaisyDiskStandAlone" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.daisydiskapp.DaisyDiskStandAlone.plist
 echo "Removing $HOME/Library/Preferences/com.daisydiskapp.DaisyDiskStandAlone.plist..."
 if [ -d "$HOME/Library/Preferences/com.daisydiskapp.DaisyDiskStandAlone.plist" ]; then

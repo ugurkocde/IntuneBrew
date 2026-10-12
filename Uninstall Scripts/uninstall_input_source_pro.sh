@@ -41,12 +41,28 @@ elif [ -f "$HOME/Library/Caches/com.runjuu.Input-Source-Pro" ]; then
     rm -f "$HOME/Library/Caches/com.runjuu.Input-Source-Pro" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.runjuu.Input-Source-Pro
+echo "Removing $HOME/Library/HTTPStorages/com.runjuu.Input-Source-Pro..."
+if [ -d "$HOME/Library/HTTPStorages/com.runjuu.Input-Source-Pro" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.runjuu.Input-Source-Pro" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.runjuu.Input-Source-Pro" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.runjuu.Input-Source-Pro" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.runjuu.Input-Source-Pro.plist
 echo "Removing $HOME/Library/Preferences/com.runjuu.Input-Source-Pro.plist..."
 if [ -d "$HOME/Library/Preferences/com.runjuu.Input-Source-Pro.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.runjuu.Input-Source-Pro.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.runjuu.Input-Source-Pro.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.runjuu.Input-Source-Pro.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.runjuu.Input-Source-Pro
+echo "Removing $HOME/Library/WebKit/com.runjuu.Input-Source-Pro..."
+if [ -d "$HOME/Library/WebKit/com.runjuu.Input-Source-Pro" ]; then
+    rm -rf "$HOME/Library/WebKit/com.runjuu.Input-Source-Pro" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.runjuu.Input-Source-Pro" ]; then
+    rm -f "$HOME/Library/WebKit/com.runjuu.Input-Source-Pro" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
