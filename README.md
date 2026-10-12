@@ -626,6 +626,8 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | stats | 3.0.20 | 3.0.21 |
 | tabtab | 2.2 | 2.2.1 |
 
+1 app updates could not be published. See [catalog sync status](catalog-sync.json).
+
 ## ✨ Features
 
 See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection and packaging.
