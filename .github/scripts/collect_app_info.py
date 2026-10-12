@@ -492,7 +492,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/advanced-renamer.json",
     "https://formulae.brew.sh/api/cask/phoenix-slides.json",
     "https://formulae.brew.sh/api/cask/maestral.json",
-    "https://formulae.brew.sh/api/cask/mindjet-mindmanager.json",
+    "https://formulae.brew.sh/api/cask/mindmanager.json",
     "https://formulae.brew.sh/api/cask/retcon.json",
     "https://formulae.brew.sh/api/cask/sketchup.json",
     "https://formulae.brew.sh/api/cask/gephi.json",
