@@ -11,6 +11,6 @@
   "sha": "bd7bba346736fb40b340e9b2bcea3f0fd8bfab342f84b25b4db094a253f58dae",
   "category": "Developer Tools",
   "publisher": "Altair Labs",
-  "previous_version": "8.5.9",
+  "previous_version": "8.5.11",
   "homebrew_cask": "altair-graphql-client"
 }
