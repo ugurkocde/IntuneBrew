@@ -104,7 +104,7 @@ jobs:
           fi
 
           tokens=$(printf '%s\n' "$changed" | grep -E '^\+' \
-            | grep -oE '(cask|formula)/[^"]+\.json' | sed -E 's|(cask|formula)/||; s|\.json||' | sort -u | tr '\n' ' ')
+            | grep -oE '(cask|formula)/[^"]+\.json' | sed -E 's@(cask|formula)/@@; s@\.json@@' | sort -u | tr '\n' ' ')
 
           [ -n "$tokens" ] || full_build "no casks were added"
 
