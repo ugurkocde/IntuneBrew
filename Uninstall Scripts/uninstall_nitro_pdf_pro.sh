@@ -17,6 +17,10 @@ fi
 echo "Stopping Nitro PDF Pro if running..."
 pkill -f "Nitro PDF Pro" 2>/dev/null || true
 
+# Kill application with bundle ID com.gonitro.NitroPDFPro if running
+echo "Stopping application with bundle ID com.gonitro.NitroPDFPro if running..."
+killall -9 "com.gonitro.NitroPDFPro" 2>/dev/null || true
+
 # Remove /Applications/Nitro PDF Pro.app
 echo "Removing /Applications/Nitro PDF Pro.app..."
 if [ -d "/Applications/Nitro PDF Pro.app" ]; then

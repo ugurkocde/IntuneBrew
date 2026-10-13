@@ -17,6 +17,10 @@ fi
 echo "Stopping UnicodeChecker if running..."
 pkill -f "UnicodeChecker" 2>/dev/null || true
 
+# Kill application with bundle ID net.earthlingsoft.UnicodeChecker if running
+echo "Stopping application with bundle ID net.earthlingsoft.UnicodeChecker if running..."
+killall -9 "net.earthlingsoft.UnicodeChecker" 2>/dev/null || true
+
 # Remove /Applications/UnicodeChecker.app
 echo "Removing /Applications/UnicodeChecker.app..."
 if [ -d "/Applications/UnicodeChecker.app" ]; then

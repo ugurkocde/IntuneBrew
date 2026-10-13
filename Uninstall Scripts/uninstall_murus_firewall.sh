@@ -23,6 +23,10 @@ launchctl unload -w /Library/LaunchAgents/it.murus.murusfirewallrules.plist 2>/d
 launchctl unload -w /Library/LaunchDaemons/it.murus.murusfirewallrules.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/it.murus.murusfirewallrules.plist 2>/dev/null || true
 
+# Kill application with bundle ID it.murus.Murus-Menulet if running
+echo "Stopping application with bundle ID it.murus.Murus-Menulet if running..."
+killall -9 "it.murus.Murus-Menulet" 2>/dev/null || true
+
 # Remove /Applications/Murus.app
 echo "Removing /Applications/Murus.app..."
 if [ -d "/Applications/Murus.app" ]; then
