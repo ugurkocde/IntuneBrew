@@ -9,7 +9,7 @@
   "fileName": "alttab_11.9.1.pkg",
   "type": "app",
   "sha": "9e1c45212184d61d31af8929a812142ff86f7d7d0d6c71ae4e05c8ffeee8c49d",
-  "previous_version": "11.9.0",
+  "previous_version": "11.9.1",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:30:14Z",
     "qa_result": "Installation successful and verified",
