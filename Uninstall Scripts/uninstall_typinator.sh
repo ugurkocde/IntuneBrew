@@ -17,6 +17,10 @@ fi
 echo "Stopping Typinator if running..."
 pkill -f "Typinator" 2>/dev/null || true
 
+# Kill application with bundle ID com.macility.typinator2 if running
+echo "Stopping application with bundle ID com.macility.typinator2 if running..."
+killall -9 "com.macility.typinator2" 2>/dev/null || true
+
 # Remove /Applications/Typinator.app
 echo "Removing /Applications/Typinator.app..."
 if [ -d "/Applications/Typinator.app" ]; then
@@ -33,12 +37,36 @@ elif [ -f "$HOME/Desktop/Typinator Tutorial.rtfd" ]; then
     rm -f "$HOME/Desktop/Typinator Tutorial.rtfd" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macility.typinator2.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macility.typinator2.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macility.typinator2.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macility.typinator2.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macility.typinator2.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.macility.typinator2.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Typinator
 echo "Removing $HOME/Library/Application Support/Typinator..."
 if [ -d "$HOME/Library/Application Support/Typinator" ]; then
     rm -rf "$HOME/Library/Application Support/Typinator" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/Typinator" ]; then
     rm -f "$HOME/Library/Application Support/Typinator" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.macility.typinator2
+echo "Removing $HOME/Library/Caches/com.macility.typinator2..."
+if [ -d "$HOME/Library/Caches/com.macility.typinator2" ]; then
+    rm -rf "$HOME/Library/Caches/com.macility.typinator2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.macility.typinator2" ]; then
+    rm -f "$HOME/Library/Caches/com.macility.typinator2" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.macility.typinator2
+echo "Removing $HOME/Library/HTTPStorages/com.macility.typinator2..."
+if [ -d "$HOME/Library/HTTPStorages/com.macility.typinator2" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.macility.typinator2" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.macility.typinator2" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.macility.typinator2" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.macility.typinator2.plist

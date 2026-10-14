@@ -17,6 +17,10 @@ fi
 echo "Stopping JASP if running..."
 pkill -f "JASP" 2>/dev/null || true
 
+# Kill application with bundle ID org.jaspstats.jasp if running
+echo "Stopping application with bundle ID org.jaspstats.jasp if running..."
+killall -9 "org.jaspstats.jasp" 2>/dev/null || true
+
 # Remove /Applications/JASP.app
 echo "Removing /Applications/JASP.app..."
 if [ -d "/Applications/JASP.app" ]; then
