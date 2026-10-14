@@ -14,5 +14,5 @@
   "publisher": "Morten Just",
   "homebrew_cask": "cleartext",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: discontinued"
+  "deprecation_reason": "cask removed from Homebrew"
 }
