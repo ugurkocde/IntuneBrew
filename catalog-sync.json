@@ -1,10 +1,15 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-14T01:09:44.796357Z",
-  "lastFullSyncAt": "2026-10-14T01:09:44.796357Z",
+  "lastPublishedAt": "2026-10-15T01:14:31.080999Z",
+  "lastFullSyncAt": "2026-10-15T01:14:31.080999Z",
   "lastSuccessfulSyncAt": "2026-10-14T01:09:44.796357Z",
-  "status": "healthy",
-  "failedApps": [],
+  "status": "degraded",
+  "failedApps": [
+    {
+      "app": "logitech_options",
+      "stage": "packaging"
+    }
+  ],
   "appCount": 1153,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/38491150664"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/38661026621"
 }
