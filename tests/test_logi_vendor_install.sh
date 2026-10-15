@@ -12,12 +12,7 @@ bash "$root/.github/scripts/download_vendor.sh" "$url" "$stage/vendor.zip"
 bash "$root/.github/scripts/extract_vendor_zip.sh" "$stage/vendor.zip" "$stage/source"
 app=$(find "$stage/source" -type d -name '*.app' ! -path '*/__MACOSX/*' -print -quit)
 codesign --verify --deep --strict "$app"
-bootstrap_version=$(plutil -extract CFBundleVersion raw -o - "$app/Contents/Info.plist")
-if [ "$bootstrap_version" != "$version" ]; then
-  bash "$root/tests/diagnose_logi_bootstrap.sh" "$app" "$version" "$stage/vendor.zip"
-  echo 'Bootstrap diagnostic completed; preserving the existing requested-version package gate'
-fi
 bash "$root/.github/scripts/package_logi_options.sh" "$app" "$version" "$stage/logi.pkg"
-sudo installer -pkg "$stage/logi.pkg" -target /
+bash "$root/tests/verify_logi_install.sh" "$stage/logi.pkg" "$version" "$stage/vendor.zip"
 test "$(plutil -extract CFBundleIdentifier raw -o - /Applications/logioptionsplus.app/Contents/Info.plist)" = com.logi.optionsplus
 echo 'Real Logi Options+ installed successfully through the PKG postinstall'
