@@ -1729,6 +1729,37 @@ def prefetch_cask_data(json_urls):
     return cask_cache
 
 
+def get_warp_release_url(data):
+    """Use the versioned public artifact, not Warp's Homebrew-only endpoint."""
+    version = data["version"]
+    checksum = data.get("sha256")
+    if not isinstance(version, str) or not re.fullmatch(
+        r"0\.\d{4}\.\d{2}\.\d{2}\.\d{2}\.\d{2}\.stable(?:_\d+)?", version
+    ) or not isinstance(checksum, str) or not re.fullmatch(r"[a-fA-F0-9]{64}", checksum):
+        raise ValueError("Warp release version or checksum is invalid")
+    # The suffix is part of the artifact version even though the catalog's
+    # display version omits it. This is Warp's own brew redirect target.
+    url = f"https://releases.warp.dev/stable/v{version}/Warp.dmg"
+    for user_agent in DOWNLOAD_USER_AGENTS:
+        try:
+            response = requests.get(
+                url, headers={"Range": "bytes=0-0", "User-Agent": user_agent},
+                timeout=30, stream=True,
+            )
+            try:
+                content_type = response.headers.get("content-type", "").split(";")[0].strip().lower()
+                if 200 <= response.status_code < 300 and content_type in {
+                    "application/octet-stream", "application/x-apple-diskimage",
+                }:
+                    return url
+            finally:
+                response.close()
+        except requests.RequestException:
+            continue
+    # A fetch failure must leave the previous catalog entry intact.
+    raise ValueError("Warp versioned release is unavailable; catalog update refused")
+
+
 def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, is_pkg_in_pkg=False, is_pkg=False):
     cask_token = get_cask_token(json_url)
     if json_url in cask_cache:
@@ -1774,7 +1805,7 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
     if '_' in version:
         version = version.split('_')[0]
 
-    url = data["url"]
+    url = get_warp_release_url(data) if cask_token == "warp" else data["url"]
 
     vendor_url = url
 
