@@ -1,7 +1,7 @@
 {
   "app_name": "Gimp",
   "app_key": "gimp",
-  "last_updated": "2026-10-14",
+  "last_updated": "2026-10-15",
   "total_cves": 110,
   "summary": {
     "critical": 1,
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2026-78465",
       "published_date": "2026-08-24",
-      "last_modified_date": "2026-09-01",
+      "last_modified_date": "2026-10-14",
       "description": "A flaw was found in the file-pcx plugin in GIMP, affecting 32-bit builds only. When processing a PCX image file, the plugin calculates memory allocation sizes based on the image dimensions and the number of color planes. If a crafted file sets the number of planes to 4 alongside sufficiently large dimensions, the calculation exceeds the 32-bit integer limit and overflows, resulting in an undersized heap-based buffer allocation. This integer overflow issue results in a heap-based buffer overflow when the plugin subsequently writes image data into the undersized buffer, causing memory corruption, potentially leading to arbitrary code execution or a denial of service.",
       "base_score": 7.0,
       "severity": "HIGH",

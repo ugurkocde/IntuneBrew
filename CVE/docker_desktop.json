@@ -1,7 +1,7 @@
 {
   "app_name": "Docker Desktop",
   "app_key": "docker_desktop",
-  "last_updated": "2026-10-14",
+  "last_updated": "2026-10-15",
   "total_cves": 31,
   "summary": {
     "critical": 2,
@@ -140,7 +140,7 @@
     {
       "cve_id": "CVE-2025-13743",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Docker Desktop diagnostics bundles were found to include expired Hub PATs in log output due to error object serialization. This poses a risk of leaking sensitive information in exported diagnostics, especially when access denied errors occurred.",
       "base_score": 7.5,
       "severity": "HIGH",

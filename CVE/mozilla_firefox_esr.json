@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox Esr",
   "app_key": "mozilla_firefox_esr",
-  "last_updated": "2026-10-14",
+  "last_updated": "2026-10-15",
   "total_cves": 3481,
   "summary": {
     "critical": 507,
@@ -2639,7 +2639,7 @@
     {
       "cve_id": "CVE-2026-8948",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-07-15",
+      "last_modified_date": "2026-10-14",
       "description": "Same-origin policy bypass in the DOM: Networking component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 9.1,
       "severity": "CRITICAL",
@@ -2660,7 +2660,7 @@
     {
       "cve_id": "CVE-2026-8950",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Same-origin policy bypass in the Networking: HTTP component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 9.3,
       "severity": "CRITICAL",
@@ -2681,7 +2681,7 @@
     {
       "cve_id": "CVE-2026-8953",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Sandbox escape due to use-after-free in the Disability Access APIs component. This vulnerability was fixed in Firefox 151, Firefox ESR 115.36, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -2702,7 +2702,7 @@
     {
       "cve_id": "CVE-2026-8956",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Integer overflow in the Networking: JAR component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -2723,7 +2723,7 @@
     {
       "cve_id": "CVE-2026-8959",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Sandbox escape due to incorrect boundary conditions in the Widget: Win32 component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -13958,7 +13958,7 @@
     {
       "cve_id": "CVE-2026-8945",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-07-15",
+      "last_modified_date": "2026-10-14",
       "description": "Sandbox escape in Firefox and Firefox Focus for Android. This vulnerability was fixed in Firefox 151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -13979,7 +13979,7 @@
     {
       "cve_id": "CVE-2026-8946",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-07-15",
+      "last_modified_date": "2026-10-14",
       "description": "Incorrect boundary conditions in the Audio/Video: Web Codecs component. This vulnerability was fixed in Firefox 151, Firefox ESR 115.36, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -14000,7 +14000,7 @@
     {
       "cve_id": "CVE-2026-8947",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-07-15",
+      "last_modified_date": "2026-10-14",
       "description": "Use-after-free in the DOM: Bindings (WebIDL) component. This vulnerability was fixed in Firefox 151, Firefox ESR 115.36, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -14021,7 +14021,7 @@
     {
       "cve_id": "CVE-2026-8949",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Integer overflow in the Widget: Win32 component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -14042,7 +14042,7 @@
     {
       "cve_id": "CVE-2026-8952",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Privilege escalation in the Application Update component. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -14063,7 +14063,7 @@
     {
       "cve_id": "CVE-2026-8954",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Incorrect boundary conditions, integer overflow in the Audio/Video component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -14084,7 +14084,7 @@
     {
       "cve_id": "CVE-2026-8955",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Privilege escalation in the DOM: Workers component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -14105,7 +14105,7 @@
     {
       "cve_id": "CVE-2026-8957",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Privilege escalation in the Enterprise Policies component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -14126,7 +14126,7 @@
     {
       "cve_id": "CVE-2026-8958",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Information disclosure, sandbox escape in the Security: Process Sandboxing component. This vulnerability was fixed in Firefox 151, Firefox ESR 140.11, Thunderbird 151, and Thunderbird 140.11.",
       "base_score": 8.6,
       "severity": "HIGH",
@@ -14147,7 +14147,7 @@
     {
       "cve_id": "CVE-2026-8960",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Spoofing issue in WebExtensions. This vulnerability was fixed in Firefox 151 and Thunderbird 151.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -44933,7 +44933,7 @@
     {
       "cve_id": "CVE-2026-8951",
       "published_date": "2026-05-19",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Spoofing issue in the Toolbar component in Firefox for Android. This vulnerability was fixed in Firefox 151.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -59171,7 +59171,7 @@
     {
       "cve_id": "CVE-2015-7575",
       "published_date": "2016-01-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-14",
       "description": "Mozilla Network Security Services (NSS) before 3.20.2, as used in Mozilla Firefox before 43.0.2 and Firefox ESR 38.x before 38.5.2, does not reject MD5 signatures in Server Key Exchange messages in TLS 1.2 Handshake Protocol traffic, which makes it easier for man-in-the-middle attackers to spoof servers by triggering a collision.",
       "base_score": 5.9,
       "severity": "MEDIUM",
