@@ -17,6 +17,10 @@ fi
 echo "Stopping Tumult Hype if running..."
 pkill -f "Tumult Hype" 2>/dev/null || true
 
+# Kill application with bundle ID com.tumult.Hype4 if running
+echo "Stopping application with bundle ID com.tumult.Hype4 if running..."
+killall -9 "com.tumult.Hype4" 2>/dev/null || true
+
 # Remove /Applications/Hype4.app
 echo "Removing /Applications/Hype4.app..."
 if [ -d "/Applications/Hype4.app" ]; then
