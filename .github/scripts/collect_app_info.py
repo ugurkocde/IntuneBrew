@@ -1751,7 +1751,9 @@ def get_warp_release_url(data):
                 if 200 <= response.status_code < 300 and content_type in {
                     "application/octet-stream", "application/x-apple-diskimage",
                 }:
-                    return url
+                    probe = next((chunk for chunk in response.iter_content(chunk_size=1) if chunk), b"")
+                    if probe:
+                        return url
             finally:
                 response.close()
         except requests.RequestException:

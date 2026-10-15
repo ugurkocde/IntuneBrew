@@ -23,7 +23,9 @@ def cask():
 
 
 def response(status=206, content_type='application/octet-stream'):
-    return Mock(status_code=status, headers={'content-type': content_type})
+    reply = Mock(status_code=status, headers={'content-type': content_type})
+    reply.iter_content.return_value = [b'x']
+    return reply
 
 
 class WarpReleaseTests(unittest.TestCase):
@@ -67,6 +69,36 @@ class WarpReleaseTests(unittest.TestCase):
         with patch.object(COLLECTOR.requests, 'get', side_effect=COLLECTOR.requests.Timeout):
             with self.assertRaisesRegex(ValueError, 'catalog update refused'):
                 COLLECTOR.get_warp_release_url(cask())
+
+    def test_empty_or_interrupted_body_cannot_publish(self):
+        for interrupted in [False, True]:
+            with self.subTest(interrupted=interrupted):
+                replies = [response() for _ in COLLECTOR.DOWNLOAD_USER_AGENTS]
+                for reply in replies:
+                    if interrupted:
+                        reply.iter_content.side_effect = COLLECTOR.requests.exceptions.ChunkedEncodingError('interrupted')
+                    else:
+                        reply.iter_content.return_value = []
+                with patch.object(COLLECTOR.requests, 'get', side_effect=replies):
+                    with self.assertRaisesRegex(ValueError, 'catalog update refused'):
+                        COLLECTOR.get_warp_release_url(cask())
+                for reply in replies:
+                    reply.close.assert_called_once()
+
+    def test_probe_skips_empty_chunks_and_reads_only_one_byte(self):
+        reply = response()
+        consumed = []
+        def chunks():
+            yield b''
+            consumed.append('byte')
+            yield b'x'
+            raise AssertionError('Probe consumed the rest of the file')
+        reply.iter_content.side_effect = lambda chunk_size: chunks()
+        with patch.object(COLLECTOR.requests, 'get', return_value=reply):
+            self.assertEqual(COLLECTOR.get_warp_release_url(cask()), URL)
+        reply.iter_content.assert_called_once_with(chunk_size=1)
+        self.assertEqual(consumed, ['byte'])
+        reply.close.assert_called_once()
 
     def test_unexpected_version_or_checksum_never_requests_an_artifact(self):
         for field, value in [('version', '../preview'), ('version', 'latest'),

@@ -528,6 +528,7 @@ class PrefetchTests(unittest.TestCase):
             url=f"https://app.warp.dev/download/brew?version=v{version}&package=dmg",
         )
         reply = Mock(status_code=206, headers={"content-type": "application/octet-stream"})
+        reply.iter_content.return_value = [b'x']
         with patch.object(collect_app_info.requests, "get", return_value=reply):
             result = collect_app_info.get_homebrew_app_info(url)
         self.assertEqual(result["url"], f"https://releases.warp.dev/stable/v{version}/Warp.dmg")
