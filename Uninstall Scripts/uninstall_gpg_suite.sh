@@ -77,10 +77,6 @@ launchctl unload -w /Library/LaunchAgents/org.gpgtools.updater.plist 2>/dev/null
 launchctl unload -w /Library/LaunchDaemons/org.gpgtools.updater.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/org.gpgtools.updater.plist 2>/dev/null || true
 
-# Kill application with bundle ID com.apple.mail if running
-echo "Stopping application with bundle ID com.apple.mail if running..."
-killall -9 "com.apple.mail" 2>/dev/null || true
-
 # Kill application with bundle ID org.gpgtools.gpgkeychain if running
 echo "Stopping application with bundle ID org.gpgtools.gpgkeychain if running..."
 killall -9 "org.gpgtools.gpgkeychain" 2>/dev/null || true

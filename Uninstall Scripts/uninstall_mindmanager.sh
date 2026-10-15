@@ -17,9 +17,9 @@ fi
 echo "Stopping Mindmanager if running..."
 pkill -f "Mindmanager" 2>/dev/null || true
 
-# Kill application with bundle ID com.mindjet.mindmanager.25 if running
-echo "Stopping application with bundle ID com.mindjet.mindmanager.25 if running..."
-killall -9 "com.mindjet.mindmanager.25" 2>/dev/null || true
+# Kill application with bundle ID com.mindjet.mindmanager.26 if running
+echo "Stopping application with bundle ID com.mindjet.mindmanager.26 if running..."
+killall -9 "com.mindjet.mindmanager.26" 2>/dev/null || true
 
 # Remove /Applications/MindManager.app
 echo "Removing /Applications/MindManager.app..."
