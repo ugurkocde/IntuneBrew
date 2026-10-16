@@ -2,6 +2,11 @@ name: Check Download URL Health
 
 on:
   workflow_dispatch:
+    inputs:
+      report_only:
+        description: "Run the full check and upload its report without changing the tracking issue"
+        type: boolean
+        default: false
   schedule:
     - cron: "0 6 * * 1,4" # Mondays and Thursdays at 06:00 UTC
 
@@ -34,6 +39,7 @@ jobs:
 
       - name: Find existing report issue
         id: issue
+        if: ${{ !inputs.report_only }}
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
@@ -43,7 +49,7 @@ jobs:
           echo "number=$number" >> "$GITHUB_OUTPUT"
 
       - name: Create or update report issue
-        if: steps.check.outputs.broken_count != '0'
+        if: ${{ !inputs.report_only && steps.check.outputs.broken_count != '0' }}
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ steps.issue.outputs.number }}
@@ -56,7 +62,7 @@ jobs:
           fi
 
       - name: Close report issue when everything is healthy
-        if: steps.check.outputs.broken_count == '0' && steps.issue.outputs.number != ''
+        if: ${{ !inputs.report_only && steps.check.outputs.broken_count == '0' && steps.issue.outputs.number != '' }}
         env:
           GH_TOKEN: ${{ github.token }}
           ISSUE_NUMBER: ${{ steps.issue.outputs.number }}
