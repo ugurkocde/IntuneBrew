@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-15T01:14:31.080999Z",
-  "lastFullSyncAt": "2026-10-15T01:14:31.080999Z",
+  "lastPublishedAt": "2026-10-16T08:52:42.983787Z",
+  "lastFullSyncAt": "2026-10-16T01:08:26.166990Z",
   "lastSuccessfulSyncAt": "2026-10-14T01:09:44.796357Z",
   "status": "degraded",
   "failedApps": [
@@ -11,5 +11,5 @@
     }
   ],
   "appCount": 1153,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/38661026621"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/38875675240"
 }

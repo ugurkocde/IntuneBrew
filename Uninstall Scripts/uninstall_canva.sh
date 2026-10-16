@@ -49,6 +49,14 @@ elif [ -f "$HOME/Library/Caches/com.canva.CanvaDesktop.ShipIt" ]; then
     rm -f "$HOME/Library/Caches/com.canva.CanvaDesktop.ShipIt" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.canva.CanvaDesktop
+echo "Removing $HOME/Library/HTTPStorages/com.canva.CanvaDesktop..."
+if [ -d "$HOME/Library/HTTPStorages/com.canva.CanvaDesktop" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.canva.CanvaDesktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.canva.CanvaDesktop" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.canva.CanvaDesktop" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/LaunchAgents/com.canva.availability-check-agent.plist
 echo "Removing $HOME/Library/LaunchAgents/com.canva.availability-check-agent.plist..."
 if [ -d "$HOME/Library/LaunchAgents/com.canva.availability-check-agent.plist" ]; then

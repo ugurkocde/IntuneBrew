@@ -33,12 +33,28 @@ elif [ -f "$HOME/Library/Application Scripts/org.localsend.localsendApp" ]; then
     rm -f "$HOME/Library/Application Scripts/org.localsend.localsendApp" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/org.localsend.localsendApp.ShareExtension
+echo "Removing $HOME/Library/Application Scripts/org.localsend.localsendApp.ShareExtension..."
+if [ -d "$HOME/Library/Application Scripts/org.localsend.localsendApp.ShareExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/org.localsend.localsendApp.ShareExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/org.localsend.localsendApp.ShareExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/org.localsend.localsendApp.ShareExtension" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/org.localsend.localsendApp
 echo "Removing $HOME/Library/Containers/org.localsend.localsendApp..."
 if [ -d "$HOME/Library/Containers/org.localsend.localsendApp" ]; then
     rm -rf "$HOME/Library/Containers/org.localsend.localsendApp" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/org.localsend.localsendApp" ]; then
     rm -f "$HOME/Library/Containers/org.localsend.localsendApp" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/org.localsend.localsendApp.ShareExtension
+echo "Removing $HOME/Library/Containers/org.localsend.localsendApp.ShareExtension..."
+if [ -d "$HOME/Library/Containers/org.localsend.localsendApp.ShareExtension" ]; then
+    rm -rf "$HOME/Library/Containers/org.localsend.localsendApp.ShareExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/org.localsend.localsendApp.ShareExtension" ]; then
+    rm -f "$HOME/Library/Containers/org.localsend.localsendApp.ShareExtension" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/org.localsend.localsendApp.plist

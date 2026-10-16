@@ -13,6 +13,6 @@ bash "$root/.github/scripts/extract_vendor_zip.sh" "$stage/vendor.zip" "$stage/s
 app=$(find "$stage/source" -type d -name '*.app' ! -path '*/__MACOSX/*' -print -quit)
 codesign --verify --deep --strict "$app"
 bash "$root/.github/scripts/package_logi_options.sh" "$app" "$version" "$stage/logi.pkg"
-sudo installer -pkg "$stage/logi.pkg" -target /
+bash "$root/tests/verify_logi_install.sh" "$stage/logi.pkg" "$version" "$stage/vendor.zip"
 test "$(plutil -extract CFBundleIdentifier raw -o - /Applications/logioptionsplus.app/Contents/Info.plist)" = com.logi.optionsplus
 echo 'Real Logi Options+ installed successfully through the PKG postinstall'
