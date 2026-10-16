@@ -613,61 +613,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| aircall workspace | 1.18.16 | 1.18.18 |
-| arc | 1.168.0 | 1.169.0 |
-| badgeify | 1.14.6 | 1.15.0 |
-| beeper | 4.3.176 | 4.3.209 |
-| bezel | 5.3.0 | 5.4.0 |
-| claude | 2.37337.1 | 2.42304.0 |
-| cleanmymac | 5.7.1 | 5.7.2 |
-| devonthink | 4.4.1 | 4.4.2 |
-| dia | 1.52.0 | 1.53.0 |
-| dockdoor | 1.40.7 | 1.41.0 |
-| downie | 4.13.2 | 4.13.3 |
-| granola | 7.645.2 | 7.663.2 |
-| iterm2 | 3.7.4 | 3.7.5 |
-| jamie | 5.7.21 | 5.7.26 |
-| kaleidoscope | 7.0.1 | 7.0.2 |
-| kiro | 1.3.0 | 1.3.11 |
-| local | 10.1.2 | 10.2.0 |
-| loom | 0.379.4 | 0.380.6 |
-| mactracker | 8.3 | 8.3.1 |
-| masscode | 6.2.1 | 6.3.1 |
-| mattermost | 6.3.0 | 6.3.1 |
-| melodics | 5.0.1553 | 5.0.1613 |
-| microsoft visual studio code | 1.141.2 | 1.142.0 |
-| milanote | 3.18.138 | 3.18.139 |
-| movist pro | 2.19.0 | 2.21.0 |
-| nordvpn | 10.12.0 | 10.13.1 |
-| notion | 7.37.1 | 7.38.1 |
-| novabench | 6.2.0 | 6.2.1 |
-| ollama | 0.40.4 | 0.40.5 |
-| opera gx | 136.0.6008.111 | 137.0.6036.65 |
-| parsec | 150-104a | 150-105c |
-| paseo | 0.11.2 | 0.11.4 |
-| pdf pals | 1.9.0 | 1.11.1 |
-| permute | 4.0.11 | 4.1 |
-| podman desktop | 1.29.3 | 1.30.5 |
-| postman | 12.32.2 | 12.32.3 |
-| preform | 3.64.0 | 3.64.1 |
-| private internet access | 3.7.2-08420 | 3.8-08539 |
-| remnote | 1.28.46 | 1.28.48 |
-| rive | 0.9.240 | 0.9.272 |
-| safe exam browser | 3.7.1 | 3.7.1.1 |
-| signal | 8.30.0 | 8.31.0 |
-| sunsama | 3.4.14 | 3.4.15 |
-| superwhisper | 2.19.3 | 3.0.0 |
-| thaw | 2.0.1 | 2.1.0 |
-| tumult hype | 4.1.21 | 4.1.22 |
-| tunnelblick | 9.0.1 | 10.0 |
-| typeface | 4.5.0 | 4.5.1 |
-| ubar | 4.2.5 | 4.2.6 |
-| vellum | 4.1.6 | 4.1.7 |
-| wazuh agent | 4.14.8 | 4.14.9 |
-| whimsical | 2026.12.2 | 2026.14.1 |
-| yaak | 2026.8.1 | 2026.9.0 |
-
-1 app updates could not be published. See [catalog sync status](catalog-sync.json).
+| logitech options | 2.8.981479 | 2.9.994631 |
 
 ## ✨ Features
 
