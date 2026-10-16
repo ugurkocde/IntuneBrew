@@ -2,6 +2,11 @@
 import hashlib
 import importlib.util
 import pathlib
+import signal
+import socket
+import threading
+import time
+from types import SimpleNamespace
 import sys
 import unittest
 from unittest.mock import Mock, patch
@@ -31,8 +36,14 @@ def response(status=200, content_type='application/octet-stream'):
 
 
 class WarpReleaseTests(unittest.TestCase):
+    def setUp(self):
+        self.previous_handler = signal.getsignal(signal.SIGALRM)
+        self.assertEqual(signal.getitimer(signal.ITIMER_REAL), (0.0, 0.0))
+
     def tearDown(self):
         COLLECTOR.cask_cache.clear()
+        self.assertEqual(signal.getitimer(signal.ITIMER_REAL), (0.0, 0.0))
+        self.assertEqual(signal.getsignal(signal.SIGALRM), self.previous_handler)
 
     def test_catalog_uses_full_artifact_version_and_upstream_checksum(self):
         COLLECTOR.cask_cache[SOURCE] = cask()
@@ -159,6 +170,128 @@ class WarpReleaseTests(unittest.TestCase):
         COLLECTOR.cask_cache[source] = data
         with patch.object(COLLECTOR.requests, 'get') as get:
             self.assertEqual(COLLECTOR.get_homebrew_app_info(source)['url'], data['url'])
+        get.assert_not_called()
+
+
+@unittest.skipUnless(hasattr(signal, 'setitimer'), 'Unix interval timer required')
+class WarpDeadlineTests(unittest.TestCase):
+    def setUp(self):
+        self.assertEqual(signal.getitimer(signal.ITIMER_REAL), (0.0, 0.0))
+        self.original = signal.getsignal(signal.SIGALRM)
+        self.sentinel = lambda signum, frame: None
+        signal.signal(signal.SIGALRM, self.sentinel)
+
+    def tearDown(self):
+        try:
+            self.assertEqual(signal.getitimer(signal.ITIMER_REAL), (0.0, 0.0))
+            self.assertEqual(signal.getsignal(signal.SIGALRM), self.sentinel)
+        finally:
+            signal.setitimer(signal.ITIMER_REAL, 0)
+            signal.signal(signal.SIGALRM, self.original)
+
+    def test_deadline_interrupts_real_trickling_read_and_closes_socket(self):
+        stop, disconnected = threading.Event(), threading.Event()
+        listener = socket.socket()
+        listener.bind(('127.0.0.1', 0))
+        listener.listen(1)
+        listener.settimeout(3)
+        address = listener.getsockname()
+        connections, errors = [], []
+        def serve():
+            try:
+                connection, _ = listener.accept()
+                connections.append(1)
+                with connection:
+                    connection.settimeout(3)
+                    connection.recv(65536)
+                    connection.sendall(b'HTTP/1.1 200 OK\r\nContent-Type: application/octet-stream\r\nContent-Length: 100000000\r\n\r\n')
+                    while not stop.wait(0.1):
+                        try:
+                            connection.sendall(b'x')
+                        except (BrokenPipeError, ConnectionResetError):
+                            disconnected.set()
+                            break
+            except Exception as error:
+                errors.append(error)
+        baseline = set(threading.enumerate())
+        worker = threading.Thread(target=serve)
+        worker.start()
+        real_get = COLLECTOR.requests.get
+        def local_get(url, **kwargs):
+            return real_get('http://127.0.0.1:' + str(address[1]) + '/Warp.dmg', **kwargs)
+        started = time.monotonic()
+        try:
+            with patch.object(COLLECTOR, 'WARP_DOWNLOAD_DEADLINE', 0.8):
+                with patch.object(COLLECTOR.requests, 'get', side_effect=local_get) as get:
+                    with self.assertRaisesRegex(ValueError, 'deadline; catalog update refused'):
+                        COLLECTOR.get_warp_release_url(cask())
+            self.assertLess(time.monotonic() - started, 4)
+            get.assert_called_once()
+            self.assertTrue(disconnected.wait(2), 'Timed-out response socket was not closed')
+            self.assertEqual(connections, [1])
+            self.assertEqual(errors, [])
+        finally:
+            stop.set()
+            listener.close()
+            worker.join(timeout=4)
+        self.assertFalse(worker.is_alive())
+        self.assertEqual(set(threading.enumerate()), baseline)
+
+    def test_one_budget_covers_all_client_attempts(self):
+        denied, blocked = response(403), response()
+        def blocked_chunks(chunk_size):
+            time.sleep(10)
+            yield PAYLOAD
+        blocked.iter_content.side_effect = blocked_chunks
+        def get_reply(*args, **kwargs):
+            if get.call_count == 1:
+                time.sleep(0.4)
+                return denied
+            return blocked
+        started = time.monotonic()
+        with patch.object(COLLECTOR, 'WARP_DOWNLOAD_DEADLINE', 0.8):
+            with patch.object(COLLECTOR.requests, 'get', side_effect=get_reply) as get:
+                with self.assertRaisesRegex(ValueError, 'deadline; catalog update refused'):
+                    COLLECTOR.get_warp_release_url(cask())
+        self.assertEqual(get.call_count, 2)
+        self.assertLess(time.monotonic() - started, 3)
+        denied.close.assert_called_once()
+        blocked.close.assert_called_once()
+
+    def test_non_main_thread_refuses_without_network_or_signal_changes(self):
+        errors = []
+        def run():
+            try:
+                COLLECTOR.get_warp_release_url(cask())
+            except Exception as error:
+                errors.append(error)
+        with patch.object(COLLECTOR.requests, 'get') as get:
+            worker = threading.Thread(target=run)
+            worker.start()
+            worker.join(timeout=2)
+        self.assertFalse(worker.is_alive())
+        self.assertEqual(len(errors), 1)
+        self.assertIsInstance(errors[0], ValueError)
+        self.assertRegex(str(errors[0]), 'deadline is unavailable; catalog update refused')
+        get.assert_not_called()
+
+    def test_prearmed_timer_is_untouched(self):
+        signal.setitimer(signal.ITIMER_REAL, 50)
+        try:
+            with patch.object(COLLECTOR.requests, 'get') as get:
+                with self.assertRaisesRegex(ValueError, 'timer is occupied; catalog update refused'):
+                    COLLECTOR.get_warp_release_url(cask())
+            get.assert_not_called()
+            self.assertGreater(signal.getitimer(signal.ITIMER_REAL)[0], 45)
+            self.assertEqual(signal.getsignal(signal.SIGALRM), self.sentinel)
+        finally:
+            signal.setitimer(signal.ITIMER_REAL, 0)
+
+    def test_unsupported_timer_refuses_before_network(self):
+        with patch.object(COLLECTOR, 'signal', SimpleNamespace()):
+            with patch.object(COLLECTOR.requests, 'get') as get:
+                with self.assertRaisesRegex(ValueError, 'deadline is unavailable; catalog update refused'):
+                    COLLECTOR.get_warp_release_url(cask())
         get.assert_not_called()
 
 

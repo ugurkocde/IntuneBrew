@@ -1,6 +1,8 @@
 import json
 import os
 import sys
+import signal
+import threading
 import requests
 from urllib3.util.retry import Retry
 import re
@@ -1368,6 +1370,8 @@ custom_scrapers = [
 # 30s connect, 120s between reads: a hung vendor server must not stall the nightly run
 DOWNLOAD_TIMEOUT = (30, 120)
 WARP_MAX_DOWNLOAD_BYTES = 1024 * 1024 * 1024
+# Whole Warp verification budget, including every user-agent attempt.
+WARP_DOWNLOAD_DEADLINE = 15 * 60
 # Runaway guard only; no catalog artifact comes close to this size
 MAX_DOWNLOAD_BYTES = 10 * 1024 * 1024 * 1024
 # No DMG, PKG (xar), ZIP or tarball can start with these bytes
@@ -1730,6 +1734,15 @@ def prefetch_cask_data(json_urls):
     return cask_cache
 
 
+class _WarpDownloadDeadline(Exception):
+    """Interrupt reads without urllib3 treating the deadline as an OSError."""
+
+
+def _warp_deadline_alarm(signum, frame):
+    """Abort verification even while a streamed read is blocked."""
+    raise _WarpDownloadDeadline()
+
+
 def get_warp_release_url(data):
     """Return the public Warp artifact only after its full checksum matches."""
     version = data["version"]
@@ -1741,6 +1754,27 @@ def get_warp_release_url(data):
     # The suffix is part of the artifact version even though the catalog's
     # display version omits it. This is Warp's own brew redirect target.
     url = f"https://releases.warp.dev/stable/v{version}/Warp.dmg"
+    if (threading.current_thread() is not threading.main_thread() or
+            not all(hasattr(signal, name) for name in (
+                "SIGALRM", "ITIMER_REAL", "setitimer", "getitimer"))):
+        raise ValueError("Warp download deadline is unavailable; catalog update refused")
+    if any(signal.getitimer(signal.ITIMER_REAL)):
+        raise ValueError("Warp download deadline timer is occupied; catalog update refused")
+    previous = signal.signal(signal.SIGALRM, _warp_deadline_alarm)
+    try:
+        signal.setitimer(signal.ITIMER_REAL, WARP_DOWNLOAD_DEADLINE)
+        return _verify_warp_artifact(url, checksum)
+    except _WarpDownloadDeadline:
+        raise ValueError("Warp download exceeded deadline; catalog update refused") from None
+    finally:
+        try:
+            signal.setitimer(signal.ITIMER_REAL, 0)
+        finally:
+            signal.signal(signal.SIGALRM, previous if previous is not None else signal.SIG_DFL)
+
+
+def _verify_warp_artifact(url, checksum):
+    """Hash the complete artifact while the caller's deadline is armed."""
     for user_agent in DOWNLOAD_USER_AGENTS:
         try:
             response = requests.get(
