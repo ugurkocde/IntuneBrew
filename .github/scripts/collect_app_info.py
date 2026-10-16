@@ -1,6 +1,8 @@
 import json
 import os
 import sys
+import signal
+import threading
 import requests
 from urllib3.util.retry import Retry
 import re
@@ -1367,6 +1369,9 @@ custom_scrapers = [
 
 # 30s connect, 120s between reads: a hung vendor server must not stall the nightly run
 DOWNLOAD_TIMEOUT = (30, 120)
+WARP_MAX_DOWNLOAD_BYTES = 1024 * 1024 * 1024
+# Whole Warp verification budget, including every user-agent attempt.
+WARP_DOWNLOAD_DEADLINE = 15 * 60
 # Runaway guard only; no catalog artifact comes close to this size
 MAX_DOWNLOAD_BYTES = 10 * 1024 * 1024 * 1024
 # No DMG, PKG (xar), ZIP or tarball can start with these bytes
@@ -1729,6 +1734,81 @@ def prefetch_cask_data(json_urls):
     return cask_cache
 
 
+class _WarpDownloadDeadline(Exception):
+    """Interrupt reads without urllib3 treating the deadline as an OSError."""
+
+
+def _warp_deadline_alarm(signum, frame):
+    """Abort verification even while a streamed read is blocked."""
+    raise _WarpDownloadDeadline()
+
+
+def get_warp_release_url(data):
+    """Return the public Warp artifact only after its full checksum matches."""
+    version = data["version"]
+    checksum = data.get("sha256")
+    if not isinstance(version, str) or not re.fullmatch(
+        r"0\.\d{4}\.\d{2}\.\d{2}\.\d{2}\.\d{2}\.stable(?:_\d+)?", version
+    ) or not isinstance(checksum, str) or not re.fullmatch(r"[a-fA-F0-9]{64}", checksum):
+        raise ValueError("Warp release version or checksum is invalid")
+    # The suffix is part of the artifact version even though the catalog's
+    # display version omits it. This is Warp's own brew redirect target.
+    url = f"https://releases.warp.dev/stable/v{version}/Warp.dmg"
+    if (threading.current_thread() is not threading.main_thread() or
+            not all(hasattr(signal, name) for name in (
+                "SIGALRM", "ITIMER_REAL", "setitimer", "getitimer"))):
+        raise ValueError("Warp download deadline is unavailable; catalog update refused")
+    if any(signal.getitimer(signal.ITIMER_REAL)):
+        raise ValueError("Warp download deadline timer is occupied; catalog update refused")
+    previous = signal.signal(signal.SIGALRM, _warp_deadline_alarm)
+    try:
+        signal.setitimer(signal.ITIMER_REAL, WARP_DOWNLOAD_DEADLINE)
+        return _verify_warp_artifact(url, checksum)
+    except _WarpDownloadDeadline:
+        raise ValueError("Warp download exceeded deadline; catalog update refused") from None
+    finally:
+        try:
+            signal.setitimer(signal.ITIMER_REAL, 0)
+        finally:
+            signal.signal(signal.SIGALRM, previous if previous is not None else signal.SIG_DFL)
+
+
+def _verify_warp_artifact(url, checksum):
+    """Hash the complete artifact while the caller's deadline is armed."""
+    for user_agent in DOWNLOAD_USER_AGENTS:
+        try:
+            response = requests.get(
+                url, headers={"User-Agent": user_agent},
+                timeout=DOWNLOAD_TIMEOUT, stream=True,
+            )
+            try:
+                content_type = response.headers.get("content-type", "").split(";")[0].strip().lower()
+                if response.status_code == 200 and content_type in {
+                    "application/octet-stream", "application/x-apple-diskimage",
+                }:
+                    length = response.headers.get("content-length")
+                    if length is not None and int(length) > WARP_MAX_DOWNLOAD_BYTES:
+                        raise ValueError("Warp artifact exceeds size limit; catalog update refused")
+                    digest = hashlib.sha256()
+                    size = 0
+                    for chunk in response.iter_content(chunk_size=1024 * 1024):
+                        if not chunk:
+                            continue
+                        size += len(chunk)
+                        if size > WARP_MAX_DOWNLOAD_BYTES:
+                            raise ValueError("Warp artifact exceeds size limit; catalog update refused")
+                        digest.update(chunk)
+                    if not size or digest.hexdigest() != checksum.lower():
+                        raise ValueError("Warp artifact checksum mismatch; catalog update refused")
+                    return url
+            finally:
+                response.close()
+        except requests.RequestException:
+            continue
+    # A fetch failure must leave the previous catalog entry intact.
+    raise ValueError("Warp versioned release is unavailable; catalog update refused")
+
+
 def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, is_pkg_in_pkg=False, is_pkg=False):
     cask_token = get_cask_token(json_url)
     if json_url in cask_cache:
@@ -1774,7 +1854,7 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
     if '_' in version:
         version = version.split('_')[0]
 
-    url = data["url"]
+    url = get_warp_release_url(data) if cask_token == "warp" else data["url"]
 
     vendor_url = url
 

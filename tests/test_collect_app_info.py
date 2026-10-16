@@ -520,10 +520,46 @@ class PrefetchTests(unittest.TestCase):
         collect_app_info.cask_cache[url] = dict(TAILSCALE_PAYLOAD, sha256="no_check")
         self.assertNotIn("sha", collect_app_info.get_homebrew_app_info(url))
 
-    def test_warp_keeps_the_url_that_homebrew_checksum_describes(self):
+    def test_warp_uses_versioned_artifact_without_changing_homebrew_checksum(self):
         url = "https://formulae.brew.sh/api/cask/warp.json"
-        collect_app_info.cask_cache[url] = dict(TAILSCALE_PAYLOAD, name=["Warp"], url="https://app.warp.dev/download?version=1&package=dmg")
-        self.assertEqual(collect_app_info.get_homebrew_app_info(url)["url"], collect_app_info.cask_cache[url]["url"])
+        version = "0.2026.09.30.08.29.stable_01"
+        collect_app_info.cask_cache[url] = dict(
+            TAILSCALE_PAYLOAD, name=["Warp"], version=version, sha256=hashlib.sha256(b"warp fixture").hexdigest(),
+            url=f"https://app.warp.dev/download/brew?version=v{version}&package=dmg",
+        )
+        reply = Mock(status_code=200, headers={"content-type": "application/octet-stream"})
+        reply.iter_content.return_value = [b"warp fixture"]
+        with patch.object(collect_app_info.requests, "get", return_value=reply):
+            result = collect_app_info.get_homebrew_app_info(url)
+        self.assertEqual(result["url"], f"https://releases.warp.dev/stable/v{version}/Warp.dmg")
+        self.assertEqual(result["sha"], collect_app_info.cask_cache[url]["sha256"])
+        reply.close.assert_called_once()
+
+    def test_warp_verification_failure_preserves_existing_catalog_and_records_failure(self):
+        for deadline in [False, True]:
+            with self.subTest(deadline=deadline):
+                url = "https://formulae.brew.sh/api/cask/warp.json"
+                payload = dict(TAILSCALE_PAYLOAD, name=["Warp"],
+                    version="0.2026.09.30.08.29.stable_01", sha256=hashlib.sha256(b"complete").hexdigest())
+                session = CountingSession({url: cask_response(payload)})
+                reply = Mock(status_code=200, headers={"content-type": "application/octet-stream"})
+                reply.iter_content.return_value = [b"truncated"]
+                if deadline:
+                    reply.iter_content.side_effect = collect_app_info._WarpDownloadDeadline
+                with tempfile.TemporaryDirectory() as directory:
+                    folder = Path(directory) / "Apps"
+                    folder.mkdir()
+                    path = folder / "warp.json"
+                    original = b'{"name":"Warp","version":"old","homebrew_cask":"warp"}\n'
+                    path.write_bytes(original)
+                    with run_collector(directory, [url], session=session):
+                        with patch.object(collect_app_info.requests, "get", return_value=reply) as get:
+                            collect_app_info.main()
+                    self.assertEqual(path.read_bytes(), original)
+                self.assertEqual(collect_app_info.collection_failures, [{"cask": "warp", "stage": "collection"}])
+                get.assert_called_once()
+                reply.close.assert_called_once()
+
 
     def test_prefetch_stores_payload_or_exception_per_url(self):
         good_url = "https://formulae.brew.sh/api/cask/tailscale.json"
