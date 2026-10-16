@@ -614,33 +614,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| bitwarden | 2026.9.1 | 2026.10.0 |
-| busycal | 2026.4.1 | 2026.4.2 |
-| carbon copy cloner | 7.2.1 | 7.2.2 |
-| chatgpt | 26.1007.71326 | 26.1013.31256 |
-| chrome remote desktop | 154.0.8037.11 | 155.0.8059.19 |
-| cmux | 0.65.1 | 0.65.2 |
-| cursor | 3.24.18 | 3.25.6 |
-| dockside | 2.9.34 | 2.9.35 |
-| google chrome | 155.0.8059.80 | 155.0.8059.85 |
-| headlamp | 0.45.0 | 0.46.0 |
-| iterm2 | 3.7.5 | 3.7.6 |
-| microsoft edge | 155.0.4283.45 | 155.0.4283.60 |
-| multiviewer | 2.10.0 | 2.11.0 |
-| nosql workbench | 3.20.3 | 3.20.4 |
-| notion | 7.38.1 | 7.39.0 |
-| onionshare | 2.6.5 | 2.7 |
-| openaudible | 5.0.1 | 5.0.2 |
-| opencode | 2.0.29 | 2.0.30 |
-| pika | 2.0.0 | 2.0.1 |
-| postman | 12.32.3 | 12.32.4 |
-| spotify | 1.3.4.258 | 1.3.5.3058 |
-| superwhisper | 3.0.0 | 3.0.1 |
-| ungoogled chromium | 154.0.8037.97-1.1 | 155.0.8059.39-1.1 |
-| utm | 4.7.5 | 5.0.7 |
-| warp | 0.2026.09.30.08.29.stable | 0.2026.10.14.08.27.stable |
-
-1 app updates could not be published. See [catalog sync status](catalog-sync.json).
+| onlyoffice | 9.4.0 | 10.0.0 |
 
 ## ✨ Features
 
