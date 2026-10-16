@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-10-16T10:46:14.862Z",
+  "last_full_scan": "2026-10-16T12:11:13.063Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -5572,8 +5572,8 @@
       "name": "OnionShare"
     },
     "onlyoffice": {
-      "last_checked": "2026-01-17T08:37:42.146Z",
-      "bundle_id": "asc.onlyoffice.editors-helper-renderer",
+      "last_checked": "2026-10-16T12:11:13.051Z",
+      "bundle_id": "asc.onlyoffice.ONLYOFFICE",
       "status": "verified",
       "source": "file",
       "name": "ONLYOFFICE"
