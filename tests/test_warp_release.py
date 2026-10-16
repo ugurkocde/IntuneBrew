@@ -1,4 +1,5 @@
 """Keep Warp downloads usable by ordinary clients and pinned to the cask build."""
+import hashlib
 import importlib.util
 import pathlib
 import sys
@@ -12,7 +13,8 @@ COLLECTOR = importlib.util.module_from_spec(SPEC)
 SPEC.loader.exec_module(COLLECTOR)
 SOURCE = 'https://formulae.brew.sh/api/cask/warp.json'
 VERSION = '0.2026.09.30.08.29.stable_01'
-SHA = 'a' * 64
+PAYLOAD = b'warp-dmg-fixture' * 5
+SHA = hashlib.sha256(PAYLOAD).hexdigest()
 URL = f'https://releases.warp.dev/stable/v{VERSION}/Warp.dmg'
 
 
@@ -22,9 +24,9 @@ def cask():
             'url': f'https://app.warp.dev/download/brew?version=v{VERSION}&package=dmg'}
 
 
-def response(status=206, content_type='application/octet-stream'):
+def response(status=200, content_type='application/octet-stream'):
     reply = Mock(status_code=status, headers={'content-type': content_type})
-    reply.iter_content.return_value = [b'x']
+    reply.iter_content.return_value = [PAYLOAD]
     return reply
 
 
@@ -42,13 +44,14 @@ class WarpReleaseTests(unittest.TestCase):
         self.assertEqual(result['version'], VERSION.split('_')[0])
         self.assertEqual(result['sha'], SHA)
         self.assertTrue(result['fileName'].endswith('.dmg'))
-        get.assert_called_once_with(URL, headers={'Range': 'bytes=0-0',
-            'User-Agent': COLLECTOR.DOWNLOAD_USER_AGENTS[0]}, timeout=30, stream=True)
+        get.assert_called_once_with(URL, headers={'User-Agent': COLLECTOR.DOWNLOAD_USER_AGENTS[0]},
+            timeout=COLLECTOR.DOWNLOAD_TIMEOUT, stream=True)
         reply.close.assert_called_once()
 
     def test_html_errors_missing_types_and_http_errors_cannot_publish(self):
         for status, kind in [(200, 'text/html'), (200, ''), (404, 'application/octet-stream'),
-                             (403, 'application/octet-stream'), (200, 'application/json')]:
+                             (403, 'application/octet-stream'), (206, 'application/octet-stream'),
+                             (200, 'application/json')]:
             with self.subTest(status=status, kind=kind):
                 replies = [response(status, kind) for _ in COLLECTOR.DOWNLOAD_USER_AGENTS]
                 with patch.object(COLLECTOR.requests, 'get', side_effect=replies):
@@ -70,34 +73,70 @@ class WarpReleaseTests(unittest.TestCase):
             with self.assertRaisesRegex(ValueError, 'catalog update refused'):
                 COLLECTOR.get_warp_release_url(cask())
 
-    def test_empty_or_interrupted_body_cannot_publish(self):
-        for interrupted in [False, True]:
-            with self.subTest(interrupted=interrupted):
-                replies = [response() for _ in COLLECTOR.DOWNLOAD_USER_AGENTS]
-                for reply in replies:
-                    if interrupted:
-                        reply.iter_content.side_effect = COLLECTOR.requests.exceptions.ChunkedEncodingError('interrupted')
-                    else:
-                        reply.iter_content.return_value = []
-                with patch.object(COLLECTOR.requests, 'get', side_effect=replies):
-                    with self.assertRaisesRegex(ValueError, 'catalog update refused'):
-                        COLLECTOR.get_warp_release_url(cask())
-                for reply in replies:
-                    reply.close.assert_called_once()
+    def test_persistent_interrupted_body_cannot_publish(self):
+        replies = [response() for _ in COLLECTOR.DOWNLOAD_USER_AGENTS]
+        for reply in replies:
+            reply.iter_content.side_effect = COLLECTOR.requests.exceptions.ChunkedEncodingError('interrupted')
+        with patch.object(COLLECTOR.requests, 'get', side_effect=replies):
+            with self.assertRaisesRegex(ValueError, 'catalog update refused'):
+                COLLECTOR.get_warp_release_url(cask())
+        for reply in replies:
+            reply.close.assert_called_once()
 
-    def test_probe_skips_empty_chunks_and_reads_only_one_byte(self):
+    def test_complete_body_with_empty_chunks_and_uppercase_checksum(self):
         reply = response()
-        consumed = []
-        def chunks():
-            yield b''
-            consumed.append('byte')
-            yield b'x'
-            raise AssertionError('Probe consumed the rest of the file')
-        reply.iter_content.side_effect = lambda chunk_size: chunks()
+        reply.iter_content.return_value = [b'', PAYLOAD[:9], b'', PAYLOAD[9:]]
+        data = cask()
+        data['sha256'] = SHA.upper()
+        COLLECTOR.cask_cache[SOURCE] = data
         with patch.object(COLLECTOR.requests, 'get', return_value=reply):
+            result = COLLECTOR.get_homebrew_app_info(SOURCE)
+        self.assertEqual(result['url'], URL)
+        self.assertEqual(result['sha'], SHA)
+        reply.iter_content.assert_called_once_with(chunk_size=1024 * 1024)
+        reply.close.assert_called_once()
+
+    def test_wrong_empty_or_truncated_body_fails_without_another_download(self):
+        for body in [b'wrong artifact', b'', PAYLOAD[:-1]]:
+            with self.subTest(body=body):
+                reply = response()
+                reply.iter_content.return_value = [body]
+                with patch.object(COLLECTOR.requests, 'get', return_value=reply) as get:
+                    with self.assertRaisesRegex(ValueError, 'checksum mismatch; catalog update refused'):
+                        COLLECTOR.get_warp_release_url(cask())
+                get.assert_called_once()
+                reply.close.assert_called_once()
+
+    def test_late_network_failure_can_fall_back_to_complete_body(self):
+        interrupted, complete = response(), response()
+        def chunks():
+            yield PAYLOAD[:9]
+            raise COLLECTOR.requests.exceptions.ChunkedEncodingError('interrupted')
+        interrupted.iter_content.side_effect = lambda chunk_size: chunks()
+        with patch.object(COLLECTOR.requests, 'get', side_effect=[interrupted, complete]) as get:
             self.assertEqual(COLLECTOR.get_warp_release_url(cask()), URL)
-        reply.iter_content.assert_called_once_with(chunk_size=1)
-        self.assertEqual(consumed, ['byte'])
+        self.assertEqual(get.call_count, 2)
+        interrupted.close.assert_called_once()
+        complete.close.assert_called_once()
+
+    def test_size_header_rejected_before_body_without_retry(self):
+        reply = response()
+        reply.headers['content-length'] = str(COLLECTOR.WARP_MAX_DOWNLOAD_BYTES + 1)
+        with patch.object(COLLECTOR.requests, 'get', return_value=reply) as get:
+            with self.assertRaisesRegex(ValueError, 'size limit; catalog update refused'):
+                COLLECTOR.get_warp_release_url(cask())
+        get.assert_called_once()
+        reply.iter_content.assert_not_called()
+        reply.close.assert_called_once()
+
+    def test_streamed_size_limit_without_length_header_fails_without_retry(self):
+        reply = response()
+        reply.iter_content.return_value = [PAYLOAD[:9], PAYLOAD[9:]]
+        with patch.object(COLLECTOR, 'WARP_MAX_DOWNLOAD_BYTES', 10):
+            with patch.object(COLLECTOR.requests, 'get', return_value=reply) as get:
+                with self.assertRaisesRegex(ValueError, 'size limit; catalog update refused'):
+                    COLLECTOR.get_warp_release_url(cask())
+        get.assert_called_once()
         reply.close.assert_called_once()
 
     def test_unexpected_version_or_checksum_never_requests_an_artifact(self):

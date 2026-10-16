@@ -1367,6 +1367,7 @@ custom_scrapers = [
 
 # 30s connect, 120s between reads: a hung vendor server must not stall the nightly run
 DOWNLOAD_TIMEOUT = (30, 120)
+WARP_MAX_DOWNLOAD_BYTES = 1024 * 1024 * 1024
 # Runaway guard only; no catalog artifact comes close to this size
 MAX_DOWNLOAD_BYTES = 10 * 1024 * 1024 * 1024
 # No DMG, PKG (xar), ZIP or tarball can start with these bytes
@@ -1730,7 +1731,7 @@ def prefetch_cask_data(json_urls):
 
 
 def get_warp_release_url(data):
-    """Use the versioned public artifact, not Warp's Homebrew-only endpoint."""
+    """Return the public Warp artifact only after its full checksum matches."""
     version = data["version"]
     checksum = data.get("sha256")
     if not isinstance(version, str) or not re.fullmatch(
@@ -1743,17 +1744,29 @@ def get_warp_release_url(data):
     for user_agent in DOWNLOAD_USER_AGENTS:
         try:
             response = requests.get(
-                url, headers={"Range": "bytes=0-0", "User-Agent": user_agent},
-                timeout=30, stream=True,
+                url, headers={"User-Agent": user_agent},
+                timeout=DOWNLOAD_TIMEOUT, stream=True,
             )
             try:
                 content_type = response.headers.get("content-type", "").split(";")[0].strip().lower()
-                if 200 <= response.status_code < 300 and content_type in {
+                if response.status_code == 200 and content_type in {
                     "application/octet-stream", "application/x-apple-diskimage",
                 }:
-                    probe = next((chunk for chunk in response.iter_content(chunk_size=1) if chunk), b"")
-                    if probe:
-                        return url
+                    length = response.headers.get("content-length")
+                    if length is not None and int(length) > WARP_MAX_DOWNLOAD_BYTES:
+                        raise ValueError("Warp artifact exceeds size limit; catalog update refused")
+                    digest = hashlib.sha256()
+                    size = 0
+                    for chunk in response.iter_content(chunk_size=1024 * 1024):
+                        if not chunk:
+                            continue
+                        size += len(chunk)
+                        if size > WARP_MAX_DOWNLOAD_BYTES:
+                            raise ValueError("Warp artifact exceeds size limit; catalog update refused")
+                        digest.update(chunk)
+                    if not size or digest.hexdigest() != checksum.lower():
+                        raise ValueError("Warp artifact checksum mismatch; catalog update refused")
+                    return url
             finally:
                 response.close()
         except requests.RequestException:
