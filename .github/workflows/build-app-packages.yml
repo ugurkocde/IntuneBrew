@@ -947,7 +947,16 @@ jobs:
                 fi
                 
                 # Handle based on actual file type
-                if [[ "$FILE_TYPE" == "gzip compressed" ]]; then
+                if bash "$WORKSPACE_DIR/.github/scripts/is_udif_dmg.sh" "${download_path}.download"; then
+                  echo "📦 File is a UDIF disk image"
+                  # Reuse the read-only nested DMG extractor below. The source
+                  # may be named .download and UDZO reports as zlib compressed.
+                  if ! mkdir -p "${app_name}_extracted" || ! mv "${download_path}.download" "${app_name}_extracted/vendor.dmg"; then
+                    FAILED_APPS+=("$app_name")
+                    ERROR_LOG+=("$app_name: Failed to stage vendor DMG from $url")
+                    continue
+                  fi
+                elif [[ "$FILE_TYPE" == "gzip compressed" ]]; then
                   echo "📦 File is gzip compressed"
                   mv "${download_path}.download" "${download_path}.tar.gz"
                   mkdir -p "${app_name}_extracted"
