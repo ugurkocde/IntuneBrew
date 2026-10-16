@@ -17,6 +17,10 @@ fi
 echo "Stopping NoSQL Workbench if running..."
 pkill -f "NoSQL Workbench" 2>/dev/null || true
 
+# Kill application with bundle ID com.dynamodb.workbench if running
+echo "Stopping application with bundle ID com.dynamodb.workbench if running..."
+killall -9 "com.dynamodb.workbench" 2>/dev/null || true
+
 # Remove /Applications/NoSQL Workbench.app
 echo "Removing /Applications/NoSQL Workbench.app..."
 if [ -d "/Applications/NoSQL Workbench.app" ]; then
