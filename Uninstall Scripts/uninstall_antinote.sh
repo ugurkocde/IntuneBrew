@@ -41,5 +41,13 @@ elif [ -f "$HOME/Library/Containers/com.chabomakers.Antinote" ]; then
     rm -f "$HOME/Library/Containers/com.chabomakers.Antinote" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.chabomakers.Antinote.plist
+echo "Removing $HOME/Library/Preferences/com.chabomakers.Antinote.plist..."
+if [ -d "$HOME/Library/Preferences/com.chabomakers.Antinote.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.chabomakers.Antinote.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.chabomakers.Antinote.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.chabomakers.Antinote.plist" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0
