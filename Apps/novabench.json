@@ -1,7 +1,7 @@
 {
   "name": "Novabench",
   "description": "Benchmark tool to quickly test and compare the computer's performance",
-  "version": "6.2.0",
+  "version": "6.2.1",
   "url": "https://novabench.com/files/novabench.dmg",
   "vendor_url": "https://novabench.com/files/novabench.dmg",
   "bundleId": "com.novabench.client",
