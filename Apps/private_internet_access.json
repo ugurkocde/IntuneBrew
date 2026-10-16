@@ -11,6 +11,6 @@
   "sha": "f06d80a101c0231558e717d65c348a828bbc1edbf9de928ef4d6cf3f0f25db6d",
   "category": "Security",
   "publisher": "Private Internet Access",
-  "previous_version": "3.7.2-08420",
+  "previous_version": "3.8-08539",
   "homebrew_cask": "private-internet-access"
 }

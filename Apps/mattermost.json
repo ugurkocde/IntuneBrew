@@ -9,7 +9,7 @@
   "fileName": "mattermost_6.3.1.pkg",
   "type": "app",
   "sha": "0ffc65cbb574028a852699c080e62f5b01c630c7ba271eef6b7dfb52285eaefa",
-  "previous_version": "6.3.0",
+  "previous_version": "6.3.1",
   "category": "Communication",
   "publisher": "Mattermost, Inc.",
   "homebrew_cask": "mattermost"

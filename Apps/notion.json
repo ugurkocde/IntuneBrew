@@ -1,16 +1,16 @@
 {
   "name": "Notion",
   "description": "App to write, plan, collaborate, and get organised",
-  "version": "7.38.1",
-  "url": "https://desktop-release.notion-static.com/Notion-7.38.1-arm64.dmg",
-  "vendor_url": "https://desktop-release.notion-static.com/Notion-7.38.1-arm64.dmg",
+  "version": "7.39.0",
+  "url": "https://desktop-release.notion-static.com/Notion-7.39.0-arm64.dmg",
+  "vendor_url": "https://desktop-release.notion-static.com/Notion-7.39.0-arm64.dmg",
   "bundleId": "notion.id",
   "homepage": "https://www.notion.so/",
   "homebrew_cask": "notion",
-  "fileName": "Notion-7.38.1-arm64.dmg",
-  "sha": "199a6f0d6efe3e3cced08d7147940d0a1b5939a097c5efe9b2ace71d46828d26",
+  "fileName": "Notion-7.39.0-arm64.dmg",
+  "sha": "0e22c2f5d950f5430834bb0eb4e1ad9a90ddea85433d2d9428e6a9fb2809f9e8",
   "changelog": "https://www.notion.so/desktop-release-notes",
   "category": "Productivity",
   "publisher": "Notion Labs, Inc.",
-  "previous_version": "7.37.1"
+  "previous_version": "7.38.1"
 }

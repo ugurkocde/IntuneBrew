@@ -1,15 +1,15 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-16T08:52:42.983787Z",
-  "lastFullSyncAt": "2026-10-16T01:08:26.166990Z",
+  "lastPublishedAt": "2026-10-16T10:45:09.611263Z",
+  "lastFullSyncAt": "2026-10-16T10:45:09.611263Z",
   "lastSuccessfulSyncAt": "2026-10-14T01:09:44.796357Z",
   "status": "degraded",
   "failedApps": [
     {
-      "app": "logitech_options",
+      "app": "onlyoffice",
       "stage": "packaging"
     }
   ],
   "appCount": 1153,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/38875675240"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/38886586226"
 }
