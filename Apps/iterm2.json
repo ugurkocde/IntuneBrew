@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "ffc751ca983cf9948b458edac9288179a86fe1631db13be9a46d02dee8823785",
   "changelog": "https://iterm2.com/downloads/stable/changelog.txt",
-  "previous_version": "3.7.5",
+  "previous_version": "3.7.6",
   "category": "Developer Tools",
   "publisher": "The iTerm2 Project",
   "homebrew_cask": "iterm2"
