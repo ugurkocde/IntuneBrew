@@ -49,6 +49,14 @@ elif [ -f "$HOME/Library/Preferences/com.electron.lark.helper.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.electron.lark.helper.plist" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.larksuite.larkApp.plist
+echo "Removing $HOME/Library/Preferences/com.larksuite.larkApp.plist..."
+if [ -d "$HOME/Library/Preferences/com.larksuite.larkApp.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.larksuite.larkApp.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.larksuite.larkApp.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.larksuite.larkApp.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/com.electron.lark.savedState
 echo "Removing $HOME/Library/Saved Application State/com.electron.lark.savedState..."
 if [ -d "$HOME/Library/Saved Application State/com.electron.lark.savedState" ]; then

@@ -37,12 +37,36 @@ elif [ -f "$HOME/Library/Application Scripts/com.superhighfives.Pika-LaunchAtLog
     rm -f "$HOME/Library/Application Scripts/com.superhighfives.Pika-LaunchAtLoginHelper" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/Pika
+echo "Removing $HOME/Library/Application Support/Pika..."
+if [ -d "$HOME/Library/Application Support/Pika" ]; then
+    rm -rf "$HOME/Library/Application Support/Pika" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Pika" ]; then
+    rm -f "$HOME/Library/Application Support/Pika" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.superhighfives.Pika
+echo "Removing $HOME/Library/Caches/com.superhighfives.Pika..."
+if [ -d "$HOME/Library/Caches/com.superhighfives.Pika" ]; then
+    rm -rf "$HOME/Library/Caches/com.superhighfives.Pika" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.superhighfives.Pika" ]; then
+    rm -f "$HOME/Library/Caches/com.superhighfives.Pika" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.superhighfives.Pika-LaunchAtLoginHelper
 echo "Removing $HOME/Library/Containers/com.superhighfives.Pika-LaunchAtLoginHelper..."
 if [ -d "$HOME/Library/Containers/com.superhighfives.Pika-LaunchAtLoginHelper" ]; then
     rm -rf "$HOME/Library/Containers/com.superhighfives.Pika-LaunchAtLoginHelper" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.superhighfives.Pika-LaunchAtLoginHelper" ]; then
     rm -f "$HOME/Library/Containers/com.superhighfives.Pika-LaunchAtLoginHelper" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.superhighfives.Pika
+echo "Removing $HOME/Library/HTTPStorages/com.superhighfives.Pika..."
+if [ -d "$HOME/Library/HTTPStorages/com.superhighfives.Pika" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.superhighfives.Pika" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.superhighfives.Pika" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.superhighfives.Pika" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.superhighfives.Pika.plist
