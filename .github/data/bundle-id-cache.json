@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-10-16T12:11:13.063Z",
+  "last_full_scan": "2026-10-17T00:36:52.088Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9265,8 +9265,8 @@
       "name": ".NET SDK"
     },
     "supremo": {
-      "last_checked": "2026-07-18T17:50:53.291Z",
-      "bundle_id": null,
+      "last_checked": "2026-10-17T00:36:52.084Z",
+      "bundle_id": "Supremo",
       "status": "unknown",
       "methods_tried": [
         "mac_app_store",
