@@ -25,6 +25,14 @@ elif [ -f "/Applications/Nextcloud Talk.app" ]; then
     rm -f "/Applications/Nextcloud Talk.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nextcloud.talk.mac.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nextcloud.talk.mac.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nextcloud.talk.mac.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nextcloud.talk.mac.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nextcloud.talk.mac.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nextcloud.talk.mac.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Nextcloud Talk
 echo "Removing $HOME/Library/Application Support/Nextcloud Talk..."
 if [ -d "$HOME/Library/Application Support/Nextcloud Talk" ]; then

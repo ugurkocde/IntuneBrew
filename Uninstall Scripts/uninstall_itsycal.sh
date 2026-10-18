@@ -29,6 +29,14 @@ elif [ -f "/Applications/Itsycal.app" ]; then
     rm -f "/Applications/Itsycal.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.mowglii.ItsycalApp
+echo "Removing $HOME/Library/Application Support/com.mowglii.ItsycalApp..."
+if [ -d "$HOME/Library/Application Support/com.mowglii.ItsycalApp" ]; then
+    rm -rf "$HOME/Library/Application Support/com.mowglii.ItsycalApp" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.mowglii.ItsycalApp" ]; then
+    rm -f "$HOME/Library/Application Support/com.mowglii.ItsycalApp" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.mowglii.ItsycalApp
 echo "Removing $HOME/Library/HTTPStorages/com.mowglii.ItsycalApp..."
 if [ -d "$HOME/Library/HTTPStorages/com.mowglii.ItsycalApp" ]; then

@@ -25,6 +25,14 @@ elif [ -f "/Applications/Superhuman.app" ]; then
     rm -f "/Applications/Superhuman.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superhuman.electron.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superhuman.electron.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superhuman.electron.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superhuman.electron.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superhuman.electron.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superhuman.electron.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Superhuman
 echo "Removing $HOME/Library/Application Support/Superhuman..."
 if [ -d "$HOME/Library/Application Support/Superhuman" ]; then

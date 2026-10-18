@@ -49,6 +49,14 @@ elif [ -f "$HOME/Library/Application Support/Tunnelblick" ]; then
     rm -f "$HOME/Library/Application Support/Tunnelblick" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.apple.helpd/Generated/Tunnelblick Help*
+echo "Removing $HOME/Library/Caches/com.apple.helpd/Generated/Tunnelblick Help*..."
+if [ -d "$HOME/Library/Caches/com.apple.helpd/Generated/Tunnelblick Help*" ]; then
+    rm -rf "$HOME/Library/Caches/com.apple.helpd/Generated/Tunnelblick Help*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.apple.helpd/Generated/Tunnelblick Help*" ]; then
+    rm -f "$HOME/Library/Caches/com.apple.helpd/Generated/Tunnelblick Help*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/Tunnelblick*
 echo "Removing $HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/Tunnelblick*..."
 if [ -d "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/Tunnelblick*" ]; then

@@ -25,12 +25,28 @@ elif [ -f "/Applications/Goose.app" ]; then
     rm -f "/Applications/Goose.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.goose.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.goose.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.goose.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.goose.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.goose.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.goose.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Goose
 echo "Removing $HOME/Library/Application Support/Goose..."
 if [ -d "$HOME/Library/Application Support/Goose" ]; then
     rm -rf "$HOME/Library/Application Support/Goose" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/Goose" ]; then
     rm -f "$HOME/Library/Application Support/Goose" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.electron.goose.plist
+echo "Removing $HOME/Library/Preferences/com.electron.goose.plist..."
+if [ -d "$HOME/Library/Preferences/com.electron.goose.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.electron.goose.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.electron.goose.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.electron.goose.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

@@ -17,6 +17,10 @@ fi
 echo "Stopping Mellel if running..."
 pkill -f "Mellel" 2>/dev/null || true
 
+# Kill application with bundle ID com.redlex.mellel.mac if running
+echo "Stopping application with bundle ID com.redlex.mellel.mac if running..."
+killall -9 "com.redlex.mellel.mac" 2>/dev/null || true
+
 # Remove /Applications/Mellel 6.app
 echo "Removing /Applications/Mellel 6.app..."
 if [ -d "/Applications/Mellel 6.app" ]; then
@@ -41,12 +45,28 @@ elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.
     rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.redlex.mellel6.sfl*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.redlex.mellel.mac.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.redlex.mellel.mac.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.redlex.mellel.mac.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.redlex.mellel.mac.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.redlex.mellel.mac.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.redlex.mellel.mac.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.redlex.mellel6
 echo "Removing $HOME/Library/Application Support/com.redlex.mellel6..."
 if [ -d "$HOME/Library/Application Support/com.redlex.mellel6" ]; then
     rm -rf "$HOME/Library/Application Support/com.redlex.mellel6" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/com.redlex.mellel6" ]; then
     rm -f "$HOME/Library/Application Support/com.redlex.mellel6" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.redlex.mellel.mac
+echo "Removing $HOME/Library/Application Support/com.redlex.mellel.mac..."
+if [ -d "$HOME/Library/Application Support/com.redlex.mellel.mac" ]; then
+    rm -rf "$HOME/Library/Application Support/com.redlex.mellel.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.redlex.mellel.mac" ]; then
+    rm -f "$HOME/Library/Application Support/com.redlex.mellel.mac" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Mellel 6
@@ -65,6 +85,14 @@ elif [ -f "$HOME/Library/Caches/com.redlex.mellel6" ]; then
     rm -f "$HOME/Library/Caches/com.redlex.mellel6" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.redlex.mellel.mac
+echo "Removing $HOME/Library/Caches/com.redlex.mellel.mac..."
+if [ -d "$HOME/Library/Caches/com.redlex.mellel.mac" ]; then
+    rm -rf "$HOME/Library/Caches/com.redlex.mellel.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.redlex.mellel.mac" ]; then
+    rm -f "$HOME/Library/Caches/com.redlex.mellel.mac" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.redlex.mellel6
 echo "Removing $HOME/Library/HTTPStorages/com.redlex.mellel6..."
 if [ -d "$HOME/Library/HTTPStorages/com.redlex.mellel6" ]; then
@@ -81,12 +109,28 @@ elif [ -f "$HOME/Library/HTTPStorages/com.redlex.mellel6.binarycookies" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.redlex.mellel6.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.redlex.mellel.mac
+echo "Removing $HOME/Library/HTTPStorages/com.redlex.mellel.mac..."
+if [ -d "$HOME/Library/HTTPStorages/com.redlex.mellel.mac" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.redlex.mellel.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.redlex.mellel.mac" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.redlex.mellel.mac" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.redlex.mellel6.plist
 echo "Removing $HOME/Library/Preferences/com.redlex.mellel6.plist..."
 if [ -d "$HOME/Library/Preferences/com.redlex.mellel6.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.redlex.mellel6.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.redlex.mellel6.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.redlex.mellel6.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.redlex.mellel.mac.plist
+echo "Removing $HOME/Library/Preferences/com.redlex.mellel.mac.plist..."
+if [ -d "$HOME/Library/Preferences/com.redlex.mellel.mac.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.redlex.mellel.mac.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.redlex.mellel.mac.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.redlex.mellel.mac.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.redlex.mellel6.savedState

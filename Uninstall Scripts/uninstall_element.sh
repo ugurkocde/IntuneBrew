@@ -25,6 +25,14 @@ elif [ -f "/Applications/Element.app" ]; then
     rm -f "/Applications/Element.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/im.riot.app.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/im.riot.app.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/im.riot.app.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/im.riot.app.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/im.riot.app.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/im.riot.app.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Element
 echo "Removing $HOME/Library/Application Support/Element..."
 if [ -d "$HOME/Library/Application Support/Element" ]; then

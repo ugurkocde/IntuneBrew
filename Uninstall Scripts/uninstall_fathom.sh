@@ -33,6 +33,14 @@ elif [ -f "/Applications/Fathom.app" ]; then
     rm -f "/Applications/Fathom.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/video.fathom.electron.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/video.fathom.electron.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/video.fathom.electron.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/video.fathom.electron.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/video.fathom.electron.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/video.fathom.electron.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Fathom
 echo "Removing $HOME/Library/Application Support/Fathom..."
 if [ -d "$HOME/Library/Application Support/Fathom" ]; then
@@ -41,12 +49,36 @@ elif [ -f "$HOME/Library/Application Support/Fathom" ]; then
     rm -f "$HOME/Library/Application Support/Fathom" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/video.fathom.electron*
+echo "Removing $HOME/Library/Caches/video.fathom.electron*..."
+if [ -d "$HOME/Library/Caches/video.fathom.electron*" ]; then
+    rm -rf "$HOME/Library/Caches/video.fathom.electron*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/video.fathom.electron*" ]; then
+    rm -f "$HOME/Library/Caches/video.fathom.electron*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/video.fathom.electron
+echo "Removing $HOME/Library/HTTPStorages/video.fathom.electron..."
+if [ -d "$HOME/Library/HTTPStorages/video.fathom.electron" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/video.fathom.electron" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/video.fathom.electron" ]; then
+    rm -f "$HOME/Library/HTTPStorages/video.fathom.electron" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/Fathom
 echo "Removing $HOME/Library/Logs/Fathom..."
 if [ -d "$HOME/Library/Logs/Fathom" ]; then
     rm -rf "$HOME/Library/Logs/Fathom" 2>/dev/null || true
 elif [ -f "$HOME/Library/Logs/Fathom" ]; then
     rm -f "$HOME/Library/Logs/Fathom" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/video.fathom.electron.plist
+echo "Removing $HOME/Library/Preferences/video.fathom.electron.plist..."
+if [ -d "$HOME/Library/Preferences/video.fathom.electron.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/video.fathom.electron.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/video.fathom.electron.plist" ]; then
+    rm -f "$HOME/Library/Preferences/video.fathom.electron.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

@@ -53,6 +53,14 @@ elif [ -f "$HOME/Library/Application Scripts/SY64MV22J9.com.raycast.macos.shared
     rm -f "$HOME/Library/Application Scripts/SY64MV22J9.com.raycast.macos.shared" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/.com.raycast.macos.backups
+echo "Removing $HOME/Library/Application Support/.com.raycast.macos.backups..."
+if [ -d "$HOME/Library/Application Support/.com.raycast.macos.backups" ]; then
+    rm -rf "$HOME/Library/Application Support/.com.raycast.macos.backups" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/.com.raycast.macos.backups" ]; then
+    rm -f "$HOME/Library/Application Support/.com.raycast.macos.backups" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.raycast.macos
 echo "Removing $HOME/Library/Application Support/com.raycast.macos..."
 if [ -d "$HOME/Library/Application Support/com.raycast.macos" ]; then

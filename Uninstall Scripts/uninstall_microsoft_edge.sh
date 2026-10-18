@@ -43,6 +43,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.microsoft.edgemac.wdgExtension"
     rm -f "$HOME/Library/Application Scripts/com.microsoft.edgemac.wdgExtension" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.edgemac.widgets
+echo "Removing $HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.edgemac.widgets..."
+if [ -d "$HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.edgemac.widgets" ]; then
+    rm -rf "$HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.edgemac.widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.edgemac.widgets" ]; then
+    rm -f "$HOME/Library/Application Scripts/UBF8T346G9.com.microsoft.edgemac.widgets" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Microsoft Edge
 echo "Removing $HOME/Library/Application Support/Microsoft Edge..."
 if [ -d "$HOME/Library/Application Support/Microsoft Edge" ]; then
@@ -89,6 +97,14 @@ if [ -d "$HOME/Library/Containers/com.microsoft.edgemac.wdgExtension" ]; then
     rm -rf "$HOME/Library/Containers/com.microsoft.edgemac.wdgExtension" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.microsoft.edgemac.wdgExtension" ]; then
     rm -f "$HOME/Library/Containers/com.microsoft.edgemac.wdgExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/UBF8T346G9.com.microsoft.edgemac.widgets
+echo "Removing $HOME/Library/Group Containers/UBF8T346G9.com.microsoft.edgemac.widgets..."
+if [ -d "$HOME/Library/Group Containers/UBF8T346G9.com.microsoft.edgemac.widgets" ]; then
+    rm -rf "$HOME/Library/Group Containers/UBF8T346G9.com.microsoft.edgemac.widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/UBF8T346G9.com.microsoft.edgemac.widgets" ]; then
+    rm -f "$HOME/Library/Group Containers/UBF8T346G9.com.microsoft.edgemac.widgets" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.microsoft.edgemac

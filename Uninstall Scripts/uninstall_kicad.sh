@@ -55,6 +55,14 @@ elif [ -f "$HOME/Library/Application Support/kicad" ]; then
     rm -f "$HOME/Library/Application Support/kicad" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/KiCad
+echo "Removing $HOME/Library/Caches/KiCad..."
+if [ -d "$HOME/Library/Caches/KiCad" ]; then
+    rm -rf "$HOME/Library/Caches/KiCad" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/KiCad" ]; then
+    rm -f "$HOME/Library/Caches/KiCad" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/kicad
 echo "Removing $HOME/Library/Preferences/kicad..."
 if [ -d "$HOME/Library/Preferences/kicad" ]; then
@@ -71,12 +79,28 @@ elif [ -f "$HOME/Library/Preferences/org.kicad-pcb.*" ]; then
     rm -f "$HOME/Library/Preferences/org.kicad-pcb.*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/org.kicad.*
+echo "Removing $HOME/Library/Preferences/org.kicad.*..."
+if [ -d "$HOME/Library/Preferences/org.kicad.*" ]; then
+    rm -rf "$HOME/Library/Preferences/org.kicad.*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.kicad.*" ]; then
+    rm -f "$HOME/Library/Preferences/org.kicad.*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/org.kicad-pcb.*
 echo "Removing $HOME/Library/Saved Application State/org.kicad-pcb.*..."
 if [ -d "$HOME/Library/Saved Application State/org.kicad-pcb.*" ]; then
     rm -rf "$HOME/Library/Saved Application State/org.kicad-pcb.*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/org.kicad-pcb.*" ]; then
     rm -f "$HOME/Library/Saved Application State/org.kicad-pcb.*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Saved Application State/org.kicad.*
+echo "Removing $HOME/Library/Saved Application State/org.kicad.*..."
+if [ -d "$HOME/Library/Saved Application State/org.kicad.*" ]; then
+    rm -rf "$HOME/Library/Saved Application State/org.kicad.*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/org.kicad.*" ]; then
+    rm -f "$HOME/Library/Saved Application State/org.kicad.*" 2>/dev/null || true
 fi
 
 # Remove /Library/Application Support/kicad

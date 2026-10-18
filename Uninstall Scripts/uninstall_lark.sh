@@ -41,6 +41,22 @@ elif [ -f "$HOME/Library/Caches/com.electron.lark.helper" ]; then
     rm -f "$HOME/Library/Caches/com.electron.lark.helper" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.larksuite.larkApp.helper
+echo "Removing $HOME/Library/Caches/com.larksuite.larkApp.helper..."
+if [ -d "$HOME/Library/Caches/com.larksuite.larkApp.helper" ]; then
+    rm -rf "$HOME/Library/Caches/com.larksuite.larkApp.helper" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.larksuite.larkApp.helper" ]; then
+    rm -f "$HOME/Library/Caches/com.larksuite.larkApp.helper" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.larksuite.larkApp.helper
+echo "Removing $HOME/Library/HTTPStorages/com.larksuite.larkApp.helper..."
+if [ -d "$HOME/Library/HTTPStorages/com.larksuite.larkApp.helper" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.larksuite.larkApp.helper" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.larksuite.larkApp.helper" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.larksuite.larkApp.helper" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.electron.lark.helper.plist
 echo "Removing $HOME/Library/Preferences/com.electron.lark.helper.plist..."
 if [ -d "$HOME/Library/Preferences/com.electron.lark.helper.plist" ]; then
