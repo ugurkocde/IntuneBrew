@@ -14,5 +14,5 @@
   "previous_version": "1.6.2",
   "homebrew_cask": "notchnook",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: unreachable"
+  "deprecation_reason": "cask removed from Homebrew"
 }
