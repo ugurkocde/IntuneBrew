@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1153-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -611,27 +611,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-10-19T01:07:28.617677Z*
+*Last checked: 2026-10-19T09:22:26.707474Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| adguard | 2.19.0.2258 | 2.20.0.2626 |
-| bettertouchtool | 6.944 | 6.951 |
-| boltai 2 | 2.18.0 | 2.18.1 |
-| clop | 3.5.1 | 3.6.1 |
-| dbeaver community edition | 26.2.2 | 26.2.3 |
-| dockside | 2.9.35 | 2.9.36 |
-| drawio desktop | 32.4.1 | 32.5.5 |
-| lulu | 4.5.1 | 4.5.2 |
-| lunar | 6.11.1 | 6.11.2 |
-| markedit | 1.36.0 | 1.37.0 |
-| openaudible | 5.0.2 | 5.0.3 |
-| proxyman | 26.1.0 | 26.2.0 |
-| standard notes | 3.202.7 | 3.202.10 |
-| stats | 3.0.21 | 3.0.22 |
-| virtualbuddy | 2.1 | 2.2 |
+| bettertouchtool | 6.951 | 6.953 |
+| binance | 2.5.2 | 2.6.0 |
+| claude | 2.42304.0 | 2.42304.2 |
+| ente auth | 4.4.25 | 4.4.26 |
+| flexoptix app | 5.68.0-latest | 5.69.0-latest |
+| paseo | 0.11.4 | 0.12.0 |
+| postman | 12.32.4 | 12.33.0 |
 
 ## ✨ Features
 
@@ -766,13 +759,13 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/berkeley_open_infrastructure_for_network_computing.png' width='32' height='32'> Berkeley Open Infrastructure for Network Computing | 8.2.11 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 5.1.1 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.7 |
-| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.951 |
+| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.953 |
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 6.0.6 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.2.6.32774 |
 | <img src='Logos/bezel.png' width='32' height='32'> Bezel | 5.4.0 |
 | <img src='Logos/bibdesk.png' width='32' height='32'> BibDesk | 1.9.13 |
 | <img src='Logos/bilibili.png' width='32' height='32'> Bilibili | 1.19.0 |
-| <img src='Logos/binance.png' width='32' height='32'> Binance | 2.5.2 |
+| <img src='Logos/binance.png' width='32' height='32'> Binance | 2.6.0 |
 | <img src='Logos/binary_ninja.png' width='32' height='32'> Binary Ninja | 6.0.10601 |
 | <img src='Logos/birdfont.png' width='32' height='32'> BirdFont | 6.15.1 |
 | <img src='Logos/biscuit.png' width='32' height='32'> Biscuit | 2.1.2 |
@@ -844,7 +837,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20260917083054 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 26.09.0.17 |
 | <img src='Logos/clamxav.png' width='32' height='32'> ClamXAV | 3.11.1 |
-| <img src='Logos/claude.png' width='32' height='32'> Claude | 2.42304.0 |
+| <img src='Logos/claude.png' width='32' height='32'> Claude | 2.42304.2 |
 | ❌ Claude Code | 2.1.292 |
 | <img src='Logos/cleanclip.png' width='32' height='32'> CleanClip | 2.4.7 |
 | <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.7.2 |
@@ -985,7 +978,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/enclave.png' width='32' height='32'> Enclave | 2026.6.3 |
 | <img src='Logos/enpass.png' width='32' height='32'> Enpass | 6.12.7.2787 |
 | <img src='Logos/ente.png' width='32' height='32'> Ente | 1.7.30 |
-| <img src='Logos/ente_auth.png' width='32' height='32'> Ente Auth | 4.4.25 |
+| <img src='Logos/ente_auth.png' width='32' height='32'> Ente Auth | 4.4.26 |
 | <img src='Logos/envkey.png' width='32' height='32'> EnvKey | 1.5.10 |
 | <img src='Logos/epic_games_launcher.png' width='32' height='32'> Epic Games Launcher | 20.3.3 |
 | <img src='Logos/equinox.png' width='32' height='32'> Equinox | 7.0 |
@@ -1014,7 +1007,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/fing_desktop.png' width='32' height='32'> Fing Desktop | 4.0.3 |
 | <img src='Logos/firecamp.png' width='32' height='32'> Firecamp | 2.6.1 |
 | <img src='Logos/fission.png' width='32' height='32'> Fission | 2.9.5 |
-| <img src='Logos/flexoptix_app.png' width='32' height='32'> FLEXOPTIX App | 5.68.0-latest |
+| <img src='Logos/flexoptix_app.png' width='32' height='32'> FLEXOPTIX App | 5.69.0-latest |
 | <img src='Logos/floorp_browser.png' width='32' height='32'> Floorp browser | 12.20.2 |
 | <img src='Logos/flowvision.png' width='32' height='32'> FlowVision | 1.7.6 |
 | <img src='Logos/fluid.png' width='32' height='32'> Fluid | 2.1.2 |
@@ -1407,7 +1400,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/parallels_client.png' width='32' height='32'> Parallels Client | 19.4.3 |
 | <img src='Logos/parallels_desktop.png' width='32' height='32'> Parallels Desktop | 27.0.3-58680 |
 | <img src='Logos/parsec.png' width='32' height='32'> Parsec | 150-105c |
-| <img src='Logos/paseo.png' width='32' height='32'> Paseo | 0.11.4 |
+| <img src='Logos/paseo.png' width='32' height='32'> Paseo | 0.12.0 |
 | <img src='Logos/paste.png' width='32' height='32'> Paste | 7.0.3 |
 | <img src='Logos/pastebot.png' width='32' height='32'> Pastebot | 3.1.1 |
 | <img src='Logos/path_finder.png' width='32' height='32'> Path Finder | 26.1.9 |
@@ -1444,7 +1437,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/portx.png' width='32' height='32'> portx | 2.3.0 |
 | <img src='Logos/positron.png' width='32' height='32'> Positron | 2026.10.0-297 |
 | <img src='Logos/postico.png' width='32' height='32'> Postico | 2.3.4 |
-| <img src='Logos/postman.png' width='32' height='32'> Postman | 12.32.4 |
+| <img src='Logos/postman.png' width='32' height='32'> Postman | 12.33.0 |
 | <img src='Logos/powerphotos.png' width='32' height='32'> PowerPhotos | 3.4.8 |
 | <img src='Logos/pppc_utility.png' width='32' height='32'> PPPC Utility | 2.0.0 |
 | <img src='Logos/preform.png' width='32' height='32'> PreForm | 3.64.1 |
