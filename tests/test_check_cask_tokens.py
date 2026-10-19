@@ -129,6 +129,18 @@ class CaskTokenHealthTests(unittest.TestCase):
         self.assertTrue(historical["deprecated"])
         self.assertEqual(historical["homebrew_cask"], "swifty")
 
+    def test_retired_sources_are_removed_but_deprecated_history_is_retained(self):
+        """Retired sources stay absent while their historical identities remain."""
+        tokens = check_cask_tokens.referenced_tokens(ROOT / check_cask_tokens.SCRIPT_FILE)
+        for token, version in (("cleartext", "2.45"), ("debookee", "8.2.0"), ("notchnook", "1.6.2")):
+            with self.subTest(token=token):
+                self.assertNotIn(token, tokens)
+                historical = json.loads((ROOT / "Apps" / f"{token}.json").read_text())
+                self.assertTrue(historical["deprecated"])
+                self.assertEqual(historical["homebrew_cask"], token)
+                self.assertEqual(historical["version"], version)
+                self.assertEqual(historical["deprecation_reason"], "cask removed from Homebrew")
+
 
 if __name__ == "__main__":
     unittest.main()

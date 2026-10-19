@@ -766,6 +766,33 @@ class CalculateFileHashTests(unittest.TestCase):
 
 
 class CatalogConsistencyTests(unittest.TestCase):
+    def test_retired_history_survives_collection_and_publication(self):
+        """Collection preserves retired files and publication excludes them."""
+        publisher_spec = importlib.util.spec_from_file_location(
+            "publish_retired_catalog", ROOT / ".github/scripts/publish_catalog.py"
+        )
+        publisher = importlib.util.module_from_spec(publisher_spec)
+        publisher_spec.loader.exec_module(publisher)
+        retired = ("cleartext", "debookee", "notchnook")
+        before = {token: (ROOT / "Apps" / f"{token}.json").read_bytes() for token in retired}
+        with tempfile.TemporaryDirectory() as directory:
+            apps = Path(directory) / "Apps"
+            apps.mkdir()
+            for token, content in before.items():
+                (apps / f"{token}.json").write_bytes(content)
+            (apps / "healthy.json").write_text(json.dumps({
+                "name": "Healthy", "version": "1.0", "homebrew_cask": "healthy",
+            }))
+            with run_collector(directory, []):
+                collect_app_info.main()
+                publisher.publish()
+            supported = json.loads((Path(directory) / "supported_apps.json").read_text())
+            self.assertEqual(set(supported), {"healthy"})
+            for token in retired:
+                with self.subTest(token=token):
+                    self.assertEqual((apps / f"{token}.json").read_bytes(), before[token])
+                    self.assertNotIn(token, supported)
+
     def test_codex_uses_desktop_cask_instead_of_cli_cask(self):
         desktop_url = "https://formulae.brew.sh/api/cask/codex-app.json"
         cli_url = "https://formulae.brew.sh/api/cask/codex.json"
