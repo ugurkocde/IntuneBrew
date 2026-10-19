@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-10-18",
+  "last_updated": "2026-10-19",
   "total_cves": 7003,
   "summary": {
     "critical": 520,
@@ -18893,7 +18893,7 @@
     {
       "cve_id": "CVE-2026-76017",
       "published_date": "2026-08-20",
-      "last_modified_date": "2026-08-25",
+      "last_modified_date": "2026-10-18",
       "description": "Use after free in Chromoting in Google Chrome prior to 151.0.7922.173 allowed a remote attacker to execute arbitrary code outside the sandbox via crafted network traffic. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -18914,7 +18914,7 @@
     {
       "cve_id": "CVE-2026-76018",
       "published_date": "2026-08-20",
-      "last_modified_date": "2026-08-25",
+      "last_modified_date": "2026-10-18",
       "description": "Privilege elevation in Import in Google Chrome prior to 151.0.7922.173 allowed a remote attacker leveraging social engineering to potentially execute arbitrary code outside the sandbox via a crafted file. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -18935,7 +18935,7 @@
     {
       "cve_id": "CVE-2026-76019",
       "published_date": "2026-08-20",
-      "last_modified_date": "2026-08-25",
+      "last_modified_date": "2026-10-18",
       "description": "Incorrect authorization in Workers in Google Chrome prior to 151.0.7922.173 allowed a remote attacker who had compromised the renderer process and leveraged social engineering to bypass web origin policy via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -18956,7 +18956,7 @@
     {
       "cve_id": "CVE-2026-76020",
       "published_date": "2026-08-20",
-      "last_modified_date": "2026-08-25",
+      "last_modified_date": "2026-10-18",
       "description": "Race condition in V8 in Google Chrome prior to 151.0.7922.173 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -18977,7 +18977,7 @@
     {
       "cve_id": "CVE-2026-76021",
       "published_date": "2026-08-20",
-      "last_modified_date": "2026-08-25",
+      "last_modified_date": "2026-10-18",
       "description": "Use after free in DOM in Google Chrome prior to 151.0.7922.173 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -18998,7 +18998,7 @@
     {
       "cve_id": "CVE-2026-76022",
       "published_date": "2026-08-20",
-      "last_modified_date": "2026-08-25",
+      "last_modified_date": "2026-10-18",
       "description": "Buffer overflow in Network in Google Chrome prior to 151.0.7922.173 allowed a remote attacker to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -19019,7 +19019,7 @@
     {
       "cve_id": "CVE-2026-76023",
       "published_date": "2026-08-20",
-      "last_modified_date": "2026-08-25",
+      "last_modified_date": "2026-10-18",
       "description": "Improper resource control in Linux Toolkit Theming in Google Chrome prior to 151.0.7922.173 allowed a remote attacker who had compromised the renderer process to execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",

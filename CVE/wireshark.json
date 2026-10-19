@@ -1,7 +1,7 @@
 {
   "app_name": "Wireshark",
   "app_key": "wireshark",
-  "last_updated": "2026-10-18",
+  "last_updated": "2026-10-19",
   "total_cves": 795,
   "summary": {
     "critical": 1,
@@ -7175,7 +7175,7 @@
     {
       "cve_id": "CVE-2025-13674",
       "published_date": "2025-11-26",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-18",
       "description": "BPv7 dissector crash in Wireshark 4.6.0 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",

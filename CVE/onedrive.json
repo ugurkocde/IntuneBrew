@@ -1,7 +1,7 @@
 {
   "app_name": "Onedrive",
   "app_key": "onedrive",
-  "last_updated": "2026-10-18",
+  "last_updated": "2026-10-19",
   "total_cves": 15,
   "summary": {
     "critical": 1,
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2025-60722",
       "published_date": "2025-11-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-18",
       "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in OneDrive for Android allows an authorized attacker to elevate privileges over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
