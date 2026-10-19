@@ -25,6 +25,14 @@ elif [ -f "/Applications/Standard Notes.app" ]; then
     rm -f "/Applications/Standard Notes.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.standardnotes.standardnotes.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.standardnotes.standardnotes.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.standardnotes.standardnotes.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.standardnotes.standardnotes.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.standardnotes.standardnotes.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.standardnotes.standardnotes.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Standard Notes
 echo "Removing $HOME/Library/Application Support/Standard Notes..."
 if [ -d "$HOME/Library/Application Support/Standard Notes" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Caches/org.standardnotes.standardnotes.ShipIt" ]; then
     rm -rf "$HOME/Library/Caches/org.standardnotes.standardnotes.ShipIt" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/org.standardnotes.standardnotes.ShipIt" ]; then
     rm -f "$HOME/Library/Caches/org.standardnotes.standardnotes.ShipIt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/Standard Notes
+echo "Removing $HOME/Library/Logs/Standard Notes..."
+if [ -d "$HOME/Library/Logs/Standard Notes" ]; then
+    rm -rf "$HOME/Library/Logs/Standard Notes" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Standard Notes" ]; then
+    rm -f "$HOME/Library/Logs/Standard Notes" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/org.standardnotes.standardnotes.helper.plist

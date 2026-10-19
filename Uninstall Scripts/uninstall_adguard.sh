@@ -149,5 +149,13 @@ elif [ -f "/Library/Logs/com.adguard.mac.adguard" ]; then
     rm -f "/Library/Logs/com.adguard.mac.adguard" 2>/dev/null || true
 fi
 
+# Remove /Library/Preferences/com.adguard.mac.adguard.helper.plist
+echo "Removing /Library/Preferences/com.adguard.mac.adguard.helper.plist..."
+if [ -d "/Library/Preferences/com.adguard.mac.adguard.helper.plist" ]; then
+    rm -rf "/Library/Preferences/com.adguard.mac.adguard.helper.plist" 2>/dev/null || true
+elif [ -f "/Library/Preferences/com.adguard.mac.adguard.helper.plist" ]; then
+    rm -f "/Library/Preferences/com.adguard.mac.adguard.helper.plist" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

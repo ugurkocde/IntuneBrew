@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Scripts/co.podzim.boltai-mobile" ]; then
     rm -f "$HOME/Library/Application Scripts/co.podzim.boltai-mobile" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/BoltAI
+echo "Removing $HOME/Library/Application Support/BoltAI..."
+if [ -d "$HOME/Library/Application Support/BoltAI" ]; then
+    rm -rf "$HOME/Library/Application Support/BoltAI" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/BoltAI" ]; then
+    rm -f "$HOME/Library/Application Support/BoltAI" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/co.podzim.boltai-mobile
 echo "Removing $HOME/Library/Containers/co.podzim.boltai-mobile..."
 if [ -d "$HOME/Library/Containers/co.podzim.boltai-mobile" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Saved Application State/co.podzim.boltai-mobile.savedStat
     rm -rf "$HOME/Library/Saved Application State/co.podzim.boltai-mobile.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/co.podzim.boltai-mobile.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/co.podzim.boltai-mobile.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/.boltai
+echo "Removing $HOME/.boltai..."
+if [ -d "$HOME/.boltai" ]; then
+    rm -rf "$HOME/.boltai" 2>/dev/null || true
+elif [ -f "$HOME/.boltai" ]; then
+    rm -f "$HOME/.boltai" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

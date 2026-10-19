@@ -25,6 +25,14 @@ elif [ -f "/Applications/Clop.app" ]; then
     rm -f "/Applications/Clop.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/.clop-debug-logs
+echo "Removing $HOME/.clop-debug-logs..."
+if [ -d "$HOME/.clop-debug-logs" ]; then
+    rm -rf "$HOME/.clop-debug-logs" 2>/dev/null || true
+elif [ -f "$HOME/.clop-debug-logs" ]; then
+    rm -f "$HOME/.clop-debug-logs" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/com.lowtechguys.Clop
 echo "Removing $HOME/Library/Application Scripts/com.lowtechguys.Clop..."
 if [ -d "$HOME/Library/Application Scripts/com.lowtechguys.Clop" ]; then
@@ -55,6 +63,14 @@ if [ -d "$HOME/Library/Caches/Clop" ]; then
     rm -rf "$HOME/Library/Caches/Clop" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/Clop" ]; then
     rm -f "$HOME/Library/Caches/Clop" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.lowtechguys.Clop
+echo "Removing $HOME/Library/Caches/com.lowtechguys.Clop..."
+if [ -d "$HOME/Library/Caches/com.lowtechguys.Clop" ]; then
+    rm -rf "$HOME/Library/Caches/com.lowtechguys.Clop" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.lowtechguys.Clop" ]; then
+    rm -f "$HOME/Library/Caches/com.lowtechguys.Clop" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Containers/com.lowtechguys.Clop.FinderOptimiser

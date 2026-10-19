@@ -25,12 +25,20 @@ elif [ -f "/Applications/OpenAudible.app" ]; then
     rm -f "/Applications/OpenAudible.app" 2>/dev/null || true
 fi
 
-# Remove /Library/OpenAudible
-echo "Removing /Library/OpenAudible..."
-if [ -d "/Library/OpenAudible" ]; then
-    rm -rf "/Library/OpenAudible" 2>/dev/null || true
-elif [ -f "/Library/OpenAudible" ]; then
-    rm -f "/Library/OpenAudible" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/org.openaudible.openaudible.plist
+echo "Removing $HOME/Library/Preferences/org.openaudible.openaudible.plist..."
+if [ -d "$HOME/Library/Preferences/org.openaudible.openaudible.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/org.openaudible.openaudible.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.openaudible.openaudible.plist" ]; then
+    rm -f "$HOME/Library/Preferences/org.openaudible.openaudible.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/OpenAudible
+echo "Removing $HOME/Library/OpenAudible..."
+if [ -d "$HOME/Library/OpenAudible" ]; then
+    rm -rf "$HOME/Library/OpenAudible" 2>/dev/null || true
+elif [ -f "$HOME/Library/OpenAudible" ]; then
+    rm -f "$HOME/Library/OpenAudible" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

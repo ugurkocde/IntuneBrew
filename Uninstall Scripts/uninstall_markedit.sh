@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Scripts/app.cyan.markedit*" ]; then
     rm -f "$HOME/Library/Application Scripts/app.cyan.markedit*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.app.cyan.markedit
+echo "Removing $HOME/Library/Application Scripts/group.app.cyan.markedit..."
+if [ -d "$HOME/Library/Application Scripts/group.app.cyan.markedit" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.app.cyan.markedit" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.app.cyan.markedit" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.app.cyan.markedit" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.cyan.markedit.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.cyan.markedit.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.cyan.markedit.sfl*" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Containers/app.cyan.markedit*" ]; then
     rm -rf "$HOME/Library/Containers/app.cyan.markedit*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/app.cyan.markedit*" ]; then
     rm -f "$HOME/Library/Containers/app.cyan.markedit*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/group.app.cyan.markedit
+echo "Removing $HOME/Library/Group Containers/group.app.cyan.markedit..."
+if [ -d "$HOME/Library/Group Containers/group.app.cyan.markedit" ]; then
+    rm -rf "$HOME/Library/Group Containers/group.app.cyan.markedit" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/group.app.cyan.markedit" ]; then
+    rm -f "$HOME/Library/Group Containers/group.app.cyan.markedit" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/app.cyan.markedit.savedState
