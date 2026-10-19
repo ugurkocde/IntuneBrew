@@ -1,0 +1,12 @@
+{
+  "name": "Langdock",
+  "description": "Platform for AI Adoption",
+  "version": "1.0.11",
+  "url": "https://desktop.langdock.com/global/stable/Langdock-1.0.11.dmg",
+  "vendor_url": "https://desktop.langdock.com/global/stable/Langdock-1.0.11.dmg",
+  "bundleId": null,
+  "homepage": "https://langdock.com/products/desktop",
+  "homebrew_cask": "langdock",
+  "fileName": "Langdock-1.0.11.dmg",
+  "sha": "f768131e3db3de1dc1b12238288a62602913765a3d5464c356febcff858672ce"
+}
