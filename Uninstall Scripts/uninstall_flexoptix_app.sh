@@ -25,6 +25,14 @@ elif [ -f "/Applications/FLEXOPTIX App.app" ]; then
     rm -f "/Applications/FLEXOPTIX App.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.flexoptix.flexoptix.app.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.flexoptix.flexoptix.app.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.flexoptix.flexoptix.app.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.flexoptix.flexoptix.app.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.flexoptix.flexoptix.app.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.flexoptix.flexoptix.app.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/flexoptix-app
 echo "Removing $HOME/Library/Application Support/flexoptix-app..."
 if [ -d "$HOME/Library/Application Support/flexoptix-app" ]; then
