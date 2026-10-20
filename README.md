@@ -1982,6 +1982,22 @@ The `-ConfigFile` parameter enables non-interactive authentication, which is per
 > - Scheduled tasks without user interaction
 > - Avoiding interactive authentication prompts
 
+### Preview Updates Without Deploying
+
+Use `-DryRun` with `-UpdateAll` to list available updates for apps already in Intune, including their current and target versions:
+
+```powershell
+./IntuneBrew.ps1 -UpdateAll -PreserveAssignments -ConfigFile ./certificate.json -DryRun
+```
+
+Run the local script version containing the `-DryRun` parameter. This compares Intune versions against the IntuneBrew catalog; it does not refresh the catalog or scan Homebrew for new releases.
+
+- Authentication and read-only catalog and Intune metadata requests are still required.
+- No installers are downloaded, no apps are uploaded or updated, and no assignments are changed, even with `-PreserveAssignments`.
+- Apps not in Intune and apps managed through Apple VPP are excluded from the update plan.
+- Security holds remain in effect and are displayed separately. A completed dry run exits with code `2` if any updates are held, otherwise `0`.
+- `-DryRun` requires `-UpdateAll` and cannot be combined with `-Upload`, `-BulkUpload`, `-LocalFile`, `-LocalFilePath`, or `-Search`.
+
 ### Copy Assignments
 
 Using the `-CopyAssignments` switch with `IntuneBrew.ps1` or creating a `CopyAssignments` Variable with Boolean Value `true` in your Azure Automation indicates that assignments from the existing app version should be copied to the new version.

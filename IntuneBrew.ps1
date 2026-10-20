@@ -46,6 +46,11 @@ Version 0.3.7: Fix Parse Errors
  Updates all applications that have a newer version available in Intune.
  Example: IntuneBrew -UpdateAll
 
+.PARAMETER DryRun
+ Check available updates with -UpdateAll without downloading installers, uploading apps, or changing assignments.
+ Authentication and catalog/Intune metadata reads are still required. Security holds remain in effect.
+ Example: IntuneBrew -UpdateAll -PreserveAssignments -ConfigFile ./certificate.json -DryRun
+
 .PARAMETER LocalFile
  Allows uploading a local PKG or DMG file to Intune. Will prompt for file selection and app details.
  Example: IntuneBrew -LocalFile
@@ -138,6 +143,9 @@ param(
     [switch]$UpdateAll,
     
     [Parameter(Mandatory = $false)]
+    [switch]$DryRun,
+
+    [Parameter(Mandatory = $false)]
     [switch]$LocalFile,
 
     [string]$LocalFilePath,
@@ -199,6 +207,10 @@ param(
     [switch]$IgnoreSecurityHold,
     [switch]$ShowAllCves
 )
+
+if ($DryRun -and (-not $UpdateAll -or $Upload -or $BulkUpload -or $LocalFile -or $LocalFilePath -or $Search)) {
+    throw 'DryRun requires -UpdateAll and cannot be combined with another app selection mode.'
+}
 
 if ($NonInteractive) { $ErrorActionPreference = "Stop" }
 function New-LocalUploadInfo {
@@ -2387,6 +2399,17 @@ foreach ($held in $heldApps) {
     Write-Host "HELD: $($held.FormattedName) ($($held.IntuneVersion) -> $($held.GitHubVersion)). Review the CVEs or use -IgnoreSecurityHold to override." -ForegroundColor Red
 }
 $appsToUpload = @($appsToUpload | Where-Object { -not $_.SecurityHeld })
+if ($DryRun) {
+    Write-Host "`nDry run: $($appsToUpload.Count) available update(s), $($heldApps.Count) held by security policy." -ForegroundColor Cyan
+    foreach ($app in $appsToUpload) {
+        Write-Host "  $($app.FormattedName): $($app.IntuneVersion) -> $($app.GitHubVersion)" -ForegroundColor Yellow
+    }
+    Write-Host 'No installers downloaded, apps uploaded, or assignments changed.' -ForegroundColor Green
+    Disconnect-MgGraph > $null 2>&1
+    if ($heldApps.Count) { exit 2 }
+    exit 0
+}
+
 if (-not $appsToUpload.Count -and $heldApps.Count) {
     Disconnect-MgGraph > $null 2>&1
     Write-Host "$($heldApps.Count) app updates held by security policy." -ForegroundColor Red
