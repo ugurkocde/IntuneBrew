@@ -2109,7 +2109,7 @@ function Get-IntuneApp {
         
         # Check if the URL is valid
         if (-not (Test-ValidUrl $jsonUrl)) {
-            if ($NonInteractive) { throw "App metadata is unavailable." }
+            if ($NonInteractive -or $DryRun) { throw "App metadata is unavailable for '$jsonUrl'." }
             continue
         }
 
@@ -2117,7 +2117,7 @@ function Get-IntuneApp {
         $appInfo = Get-GitHubAppInfo $jsonUrl
         if ($null -eq $appInfo) {
             Write-Host "[$currentApp/$totalApps] Failed to fetch app info for $jsonUrl. Skipping." -ForegroundColor Yellow
-            if ($NonInteractive) { throw "App metadata is unavailable." }
+            if ($NonInteractive -or $DryRun) { throw "App metadata is unavailable for '$jsonUrl'." }
             continue
         }
 
@@ -2209,7 +2209,7 @@ function Get-IntuneApp {
         }
         catch {
             Write-Host "`nError fetching Intune app info for '$formattedAppName': $_" -ForegroundColor Red
-            if ($NonInteractive) { throw }
+            if ($NonInteractive -or $DryRun) { throw }
         }
     }
 

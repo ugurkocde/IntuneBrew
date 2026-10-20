@@ -5,7 +5,9 @@ $ast = [System.Management.Automation.Language.Parser]::ParseFile($sourcePath, [r
 if ($errors.Count) { throw ($errors | Out-String) }
 if ('DryRun' -notin $ast.ParamBlock.Parameters.Name.VariablePath.UserPath) { throw 'DryRun parameter is missing.' }
 $functions = foreach ($name in @('Compare-VersionSegments', 'Test-NewerVersion')) {
-    $ast.Find({ param($node) $node -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq $name }, $true).Extent.Text
+    $definition = $ast.Find({ param($node) $node -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq $name }, $true)
+    if (-not $definition) { throw "Required function not found: $name" }
+    $definition.Extent.Text
 }
 $guard = $ast.EndBlock.Statements | Where-Object { $_.Extent.Text.StartsWith('if ($DryRun -and') } | Select-Object -First 1
 if (-not $guard) { throw 'DryRun selection validation is missing.' }
@@ -54,8 +56,37 @@ throw 'DryRun did not exit before deployment'
     foreach ($expected in @($case.Summary, $case.Expected, 'No installers downloaded', 'DISCONNECTED')) {
         if ($expected -and -not $output.Contains($expected)) { throw "Missing '$expected':`n$output" }
     }
-    foreach ($excluded in @('Current:', 'Absent:', 'VPP:', 'Unexpected', 'did not exit')) {
+    foreach ($excluded in @('  Current:', '  Absent:', '  VPP:', 'Unexpected', 'did not exit')) {
         if ($output.Contains($excluded)) { throw "Unexpected '$excluded':`n$output" }
     }
 }
-Write-Host 'Dry-run selection, version filtering, security holds, and deployment isolation passed.'
+$lookup = $ast.Find({ param($node) $node -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq 'Get-IntuneApp' }, $true)
+if (-not $lookup) { throw 'Required function not found: Get-IntuneApp' }
+foreach ($scenario in @('invalid-url', 'metadata', 'graph', 'vpp')) {
+    $command = @"
+`$ErrorActionPreference = 'Stop'
+`$UpdateAll = `$true; `$DryRun = `$true; `$NonInteractive = `$false
+`$githubJsonUrls = @('https://example.test/fixture.json')
+function Test-ValidUrl { '$scenario' -ne 'invalid-url' }
+function Get-GitHubAppInfo {
+    if ('$scenario' -eq 'metadata') { return `$null }
+    return @{ name = 'Fixture'; version = '2.0' }
+}
+function Get-FormattedAppName { param(`$BaseName) `$BaseName }
+function Get-IntuneAppCollection {
+    param(`$Filter)
+    if ('$scenario' -eq 'vpp' -and `$Filter -notmatch 'macOsVppApp') { return @{ value = @() } }
+    throw 'Simulated Graph lookup failure'
+}
+function Disconnect-MgGraph { }
+$($lookup.Extent.Text)
+$tail
+"@
+    $encoded = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($command))
+    $output = (& pwsh -NoProfile -NonInteractive -OutputFormat Text -EncodedCommand $encoded 2>&1 | Out-String)
+    if ($LASTEXITCODE -eq 0) { throw "DryRun reported success after $scenario lookup failure:`n$output" }
+    if ($output.Contains('0 available update(s)')) { throw "DryRun reported a clean scan after $scenario failure." }
+    $expected = if ($scenario -in @('invalid-url', 'metadata')) { 'https://example.test/fixture.json' } else { 'Simulated Graph lookup failure' }
+    if (-not $output.Contains($expected)) { throw "Lookup error context missing for ${scenario}:`n$output" }
+}
+Write-Host 'Dry-run selection, filtering, holds, deployment isolation, and lookup failure handling passed.'
