@@ -89,4 +89,53 @@ $tail
     $expected = if ($scenario -in @('invalid-url', 'metadata')) { 'https://example.test/fixture.json' } else { 'Simulated Graph lookup failure' }
     if (-not $output.Contains($expected)) { throw "Lookup error context missing for ${scenario}:`n$output" }
 }
-Write-Host 'Dry-run selection, filtering, holds, deployment isolation, and lookup failure handling passed.'
+$authStart = $source.IndexOf('$authenticated = $false')
+$authEnd = $source.IndexOf('# Authentication END', $authStart)
+if ($authStart -lt 0 -or $authEnd -lt 0) { throw 'Authentication test boundary not found.' }
+$authSetup = $source.Substring($authStart, $authEnd - $authStart)
+$catalogSetup = $ast.EndBlock.Statements | Where-Object {
+    $_ -is [System.Management.Automation.Language.TryStatementAst] -and $_.Extent.Text.Contains('$supportedApps = Invoke-RestMethod')
+} | Select-Object -First 1
+if (-not $catalogSetup) { throw 'Catalog setup test boundary not found.' }
+foreach ($scenario in @('invalid-config', 'config-read', 'auth-method', 'auth-failure', 'invalid-choice', 'file-picker', 'app-permissions', 'interactive-permissions', 'catalog-fetch', 'empty-catalog')) {
+    foreach ($dryRunMode in @($true, $false)) {
+        $setup = if ($scenario -in @('catalog-fetch', 'empty-catalog')) { $catalogSetup.Extent.Text } else { $authSetup }
+        $modeLiteral = if ($dryRunMode) { '$true' } else { '$false' }
+        $command = @"
+`$ErrorActionPreference = 'Continue'
+`$DryRun = $modeLiteral; `$NonInteractive = `$false; `$UpdateAll = `$true
+`$ConfigFile = if ('$scenario' -in @('invalid-choice', 'file-picker', 'interactive-permissions')) { `$null } else { 'mock-config.json' }
+`$requiredPermissions = @('DeviceManagementApps.ReadWrite.All')
+`$githubJsonUrls = @(); `$localJsonOverrides = @{}
+function Test-AuthConfig { '$scenario' -ne 'invalid-config' }
+function Get-Content {
+    if ('$scenario' -eq 'config-read') { throw 'Simulated configuration read failure' }
+    if ('$scenario' -eq 'auth-method') { return '{"authMethod":"Unsupported"}' }
+    return '{"authMethod":"Certificate","tenantId":"11111111-1111-1111-1111-111111111111"}'
+}
+function Connect-WithCertificate { '$scenario' -ne 'auth-failure' }
+function Connect-Interactive { `$true }
+function Show-FilePickerDialog { `$null }
+function Read-Host {
+    param(`$Prompt)
+    if ('$scenario' -eq 'file-picker') { return '1' }
+    if ('$scenario' -eq 'interactive-permissions' -and `$Prompt -like '*choice*') { return '3' }
+    return 'n'
+}
+function Get-MgContext { [pscustomobject]@{ TenantId = '11111111-1111-1111-1111-111111111111'; Scopes = @() } }
+function Invoke-RestMethod {
+    if ('$scenario' -eq 'catalog-fetch') { throw 'Simulated catalog fetch failure' }
+    return [pscustomobject]@{}
+}
+$setup
+Write-Host 'SETUP_COMPLETED'
+"@
+        $encoded = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($command))
+        $output = (& pwsh -NoProfile -NonInteractive -OutputFormat Text -EncodedCommand $encoded 2>&1 | Out-String)
+        $expectedCode = if ($dryRunMode) { 1 } else { 0 }
+        if ($LASTEXITCODE -ne $expectedCode -or $output.Contains('SETUP_COMPLETED')) {
+            throw "Incorrect setup failure exit for $scenario (DryRun=$dryRunMode): $LASTEXITCODE, expected $expectedCode`n$output"
+        }
+    }
+}
+Write-Host 'Dry-run selection, filtering, holds, deployment isolation, lookup failures, and setup failure exits passed.'

@@ -510,7 +510,7 @@ $authChoice = $null
 # Attempt non-interactive authentication when a config file with authMethod is supplied
 if ($ConfigFile) {
     if (-not (Test-AuthConfig $ConfigFile)) {
-        if ($NonInteractive) { exit 1 }; exit
+        if ($NonInteractive -or $DryRun) { exit 1 }; exit
     }
 
     try {
@@ -518,7 +518,7 @@ if ($ConfigFile) {
     }
     catch {
         Write-Host "Error: Unable to read or parse configuration file at '$ConfigFile'." -ForegroundColor Red
-        if ($NonInteractive) { exit 1 }; exit
+        if ($NonInteractive -or $DryRun) { exit 1 }; exit
     }
 
     # Infer the auth method from the config file contents when authMethod is not set,
@@ -543,7 +543,7 @@ if ($ConfigFile) {
             }
             default {
                 Write-Host "Error: Unsupported authMethod '$effectiveAuthMethod'. Supported values are 'Certificate' and 'ClientSecret'." -ForegroundColor Red
-                if ($NonInteractive) { exit 1 }; exit
+                if ($NonInteractive -or $DryRun) { exit 1 }; exit
             }
         }
     }
@@ -572,7 +572,7 @@ if (-not $authChoice) {
                     $authenticated = Connect-WithCertificate $configPath
                 } else {
                     Write-Host "Failed to authenticate. Exiting script." -ForegroundColor Red
-                    if ($NonInteractive) { exit 1 }; exit
+                    if ($NonInteractive -or $DryRun) { exit 1 }; exit
                 }
             }
         }
@@ -588,14 +588,14 @@ if (-not $authChoice) {
         }
         default {
             Write-Host "Invalid choice. Please select 1, 2, or 3." -ForegroundColor Red
-            if ($NonInteractive) { exit 1 }; exit
+            if ($NonInteractive -or $DryRun) { exit 1 }; exit
         }
     }
 }
 
 if (-not $authenticated) {
     Write-Host "Authentication failed. Exiting script." -ForegroundColor Red
-    if ($NonInteractive) { exit 1 }; exit
+    if ($NonInteractive -or $DryRun) { exit 1 }; exit
 }
 
 # Check and display the current permissions
@@ -620,7 +620,7 @@ if ($missingPermissions.Count -gt 0) {
         $continueWithoutPermissions = Read-Host "Do you want to continue anyway? Some functionality may be limited (y/n)"
         if ($continueWithoutPermissions -ne "y") {
             Write-Host "Exiting script. Please sign in with an account that has the required permissions." -ForegroundColor Yellow
-            if ($NonInteractive) { exit 1 }; exit
+            if ($NonInteractive -or $DryRun) { exit 1 }; exit
         }
         Write-Host "Continuing with limited permissions. Some features may not work correctly." -ForegroundColor Yellow
     }
@@ -629,7 +629,7 @@ if ($missingPermissions.Count -gt 0) {
         Write-Host "WARNING: The following permissions are missing:" -ForegroundColor Red
         $missingPermissions | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
         Write-Host "Please ensure these permissions are granted to the app registration for full functionality." -ForegroundColor Yellow
-        if ($NonInteractive) { exit 1 }; exit
+        if ($NonInteractive -or $DryRun) { exit 1 }; exit
     }
 }
 else {
@@ -1585,12 +1585,12 @@ try {
 
     if ($githubJsonUrls.Count -eq 0) {
         Write-Host "No valid applications selected. Exiting..." -ForegroundColor Red
-        if ($NonInteractive) { exit 1 }; exit
+        if ($NonInteractive -or $DryRun) { exit 1 }; exit
     }
 }
 catch {
     Write-Host "Error fetching supported apps list: $_" -ForegroundColor Red
-    if ($NonInteractive) { exit 1 }; exit
+    if ($NonInteractive -or $DryRun) { exit 1 }; exit
 }
 
 # Core Functions
