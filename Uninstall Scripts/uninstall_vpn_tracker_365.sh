@@ -33,12 +33,36 @@ elif [ -f "$HOME/Library/Application Support/VPN Tracker 365" ]; then
     rm -f "$HOME/Library/Application Support/VPN Tracker 365" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.vpntracker.365mac
+echo "Removing $HOME/Library/Caches/com.vpntracker.365mac..."
+if [ -d "$HOME/Library/Caches/com.vpntracker.365mac" ]; then
+    rm -rf "$HOME/Library/Caches/com.vpntracker.365mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.vpntracker.365mac" ]; then
+    rm -f "$HOME/Library/Caches/com.vpntracker.365mac" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.vpntracker.365mac
+echo "Removing $HOME/Library/HTTPStorages/com.vpntracker.365mac..."
+if [ -d "$HOME/Library/HTTPStorages/com.vpntracker.365mac" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.vpntracker.365mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.vpntracker.365mac" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.vpntracker.365mac" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.equinux.VPNTracker365.plist
 echo "Removing $HOME/Library/Preferences/com.equinux.VPNTracker365.plist..."
 if [ -d "$HOME/Library/Preferences/com.equinux.VPNTracker365.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.equinux.VPNTracker365.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.equinux.VPNTracker365.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.equinux.VPNTracker365.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.vpntracker.365mac.plist
+echo "Removing $HOME/Library/Preferences/com.vpntracker.365mac.plist..."
+if [ -d "$HOME/Library/Preferences/com.vpntracker.365mac.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.vpntracker.365mac.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.vpntracker.365mac.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.vpntracker.365mac.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

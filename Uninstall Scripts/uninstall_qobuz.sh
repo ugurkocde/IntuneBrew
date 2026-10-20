@@ -17,6 +17,10 @@ fi
 echo "Stopping Qobuz if running..."
 pkill -f "Qobuz" 2>/dev/null || true
 
+# Kill application with bundle ID com.qobuz.desktop if running
+echo "Stopping application with bundle ID com.qobuz.desktop if running..."
+killall -9 "com.qobuz.desktop" 2>/dev/null || true
+
 # Remove /Applications/Qobuz.app
 echo "Removing /Applications/Qobuz.app..."
 if [ -d "/Applications/Qobuz.app" ]; then
