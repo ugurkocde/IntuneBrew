@@ -212,7 +212,7 @@ if ($DryRun -and (-not $UpdateAll -or $Upload -or $BulkUpload -or $LocalFile -or
     throw 'DryRun requires -UpdateAll and cannot be combined with another app selection mode.'
 }
 
-if ($NonInteractive) { $ErrorActionPreference = "Stop" }
+if ($NonInteractive -or $DryRun) { $ErrorActionPreference = "Stop" }
 function New-LocalUploadInfo {
     param([string]$Path, [string]$MetadataPath, [string]$Name, [string]$Version, [string]$BundleId, [switch]$AllowNetworkPaths)
     $item = Get-Item -LiteralPath $Path -ErrorAction Stop

@@ -62,10 +62,15 @@ throw 'DryRun did not exit before deployment'
 }
 $lookup = $ast.Find({ param($node) $node -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq 'Get-IntuneApp' }, $true)
 if (-not $lookup) { throw 'Required function not found: Get-IntuneApp' }
-foreach ($scenario in @('invalid-url', 'metadata', 'graph', 'vpp')) {
+$failurePolicy = $ast.EndBlock.Statements | Where-Object {
+    $_ -is [System.Management.Automation.Language.IfStatementAst] -and $_.Extent.Text.Contains('$ErrorActionPreference = "Stop"')
+} | Select-Object -First 1
+if (-not $failurePolicy) { throw 'Error handling policy not found.' }
+foreach ($scenario in @('invalid-url', 'metadata', 'graph', 'vpp', 'graph-nonterminating')) {
     $command = @"
-`$ErrorActionPreference = 'Stop'
+`$ErrorActionPreference = 'Continue'
 `$UpdateAll = `$true; `$DryRun = `$true; `$NonInteractive = `$false
+$($failurePolicy.Extent.Text)
 `$githubJsonUrls = @('https://example.test/fixture.json')
 function Test-ValidUrl { '$scenario' -ne 'invalid-url' }
 function Get-GitHubAppInfo {
@@ -76,6 +81,10 @@ function Get-FormattedAppName { param(`$BaseName) `$BaseName }
 function Get-IntuneAppCollection {
     param(`$Filter)
     if ('$scenario' -eq 'vpp' -and `$Filter -notmatch 'macOsVppApp') { return @{ value = @() } }
+    if ('$scenario' -eq 'graph-nonterminating') {
+        Write-Error 'Simulated Graph lookup failure'
+        return @{ value = @() }
+    }
     throw 'Simulated Graph lookup failure'
 }
 function Disconnect-MgGraph { }

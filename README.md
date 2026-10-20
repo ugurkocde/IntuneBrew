@@ -1996,6 +1996,7 @@ Run the local script version containing the `-DryRun` parameter. This compares I
 - No installers are downloaded, no apps are uploaded or updated, and no assignments are changed, even with `-PreserveAssignments`.
 - Apps not in Intune and apps managed through Apple VPP are excluded from the update plan.
 - Security holds remain in effect and are displayed separately. A completed dry run exits with code `2` if any updates are held, otherwise `0`.
+- Setup or lookup failures abort the dry run with exit code `1`, rather than reporting an incomplete check as successful.
 - `-DryRun` requires `-UpdateAll` and cannot be combined with `-Upload`, `-BulkUpload`, `-LocalFile`, `-LocalFilePath`, or `-Search`.
 
 ### Copy Assignments
