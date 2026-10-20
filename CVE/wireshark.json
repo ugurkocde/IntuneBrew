@@ -1,7 +1,7 @@
 {
   "app_name": "Wireshark",
   "app_key": "wireshark",
-  "last_updated": "2026-10-19",
+  "last_updated": "2026-10-20",
   "total_cves": 795,
   "summary": {
     "critical": 1,
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2025-13499",
       "published_date": "2025-11-21",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-19",
       "description": "Kafka dissector crash in Wireshark 4.6.0 and 4.4.0 to 4.4.10 allows denial of service",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -7196,7 +7196,7 @@
     {
       "cve_id": "CVE-2025-11626",
       "published_date": "2025-10-10",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-19",
       "description": "MONGO dissector infinite loop in Wireshark 4.4.0 to 4.4.9 and 4.2.0 to 4.2.13 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
