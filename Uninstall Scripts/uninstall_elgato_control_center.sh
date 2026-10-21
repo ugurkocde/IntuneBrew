@@ -21,12 +21,12 @@ pkill -f "Elgato Control Center" 2>/dev/null || true
 echo "Stopping application with bundle ID com.corsair.ControlCenter if running..."
 killall -9 "com.corsair.ControlCenter" 2>/dev/null || true
 
-# Remove /Applications/Elgato Control Center.app
-echo "Removing /Applications/Elgato Control Center.app..."
-if [ -d "/Applications/Elgato Control Center.app" ]; then
-    rm -rf "/Applications/Elgato Control Center.app" 2>/dev/null || true
-elif [ -f "/Applications/Elgato Control Center.app" ]; then
-    rm -f "/Applications/Elgato Control Center.app" 2>/dev/null || true
+# Remove /Applications/ControlCenter.app
+echo "Removing /Applications/ControlCenter.app..."
+if [ -d "/Applications/ControlCenter.app" ]; then
+    rm -rf "/Applications/ControlCenter.app" 2>/dev/null || true
+elif [ -f "/Applications/ControlCenter.app" ]; then
+    rm -f "/Applications/ControlCenter.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Scripts/com.corsair.ControlCenterLauncher

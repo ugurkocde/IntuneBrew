@@ -17,12 +17,12 @@ fi
 echo "Stopping Tableau Desktop if running..."
 pkill -f "Tableau Desktop" 2>/dev/null || true
 
-# Remove /Library/Preferences/com.tableau.Tableau-2026.2.plist
-echo "Removing /Library/Preferences/com.tableau.Tableau-2026.2.plist..."
-if [ -d "/Library/Preferences/com.tableau.Tableau-2026.2.plist" ]; then
-    rm -rf "/Library/Preferences/com.tableau.Tableau-2026.2.plist" 2>/dev/null || true
-elif [ -f "/Library/Preferences/com.tableau.Tableau-2026.2.plist" ]; then
-    rm -f "/Library/Preferences/com.tableau.Tableau-2026.2.plist" 2>/dev/null || true
+# Remove /Library/Preferences/com.tableau.Tableau-2026.3.plist
+echo "Removing /Library/Preferences/com.tableau.Tableau-2026.3.plist..."
+if [ -d "/Library/Preferences/com.tableau.Tableau-2026.3.plist" ]; then
+    rm -rf "/Library/Preferences/com.tableau.Tableau-2026.3.plist" 2>/dev/null || true
+elif [ -f "/Library/Preferences/com.tableau.Tableau-2026.3.plist" ]; then
+    rm -f "/Library/Preferences/com.tableau.Tableau-2026.3.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Documents/My Tableau Repository
@@ -57,12 +57,12 @@ elif [ -f "$HOME/Library/Preferences/com.tableau.Registration.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.tableau.Registration.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.tableau.Tableau-2026.2.plist
-echo "Removing $HOME/Library/Preferences/com.tableau.Tableau-2026.2.plist..."
-if [ -d "$HOME/Library/Preferences/com.tableau.Tableau-2026.2.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.tableau.Tableau-2026.2.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.tableau.Tableau-2026.2.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.tableau.Tableau-2026.2.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.tableau.Tableau-2026.3.plist
+echo "Removing $HOME/Library/Preferences/com.tableau.Tableau-2026.3.plist..."
+if [ -d "$HOME/Library/Preferences/com.tableau.Tableau-2026.3.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.tableau.Tableau-2026.3.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.tableau.Tableau-2026.3.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.tableau.Tableau-2026.3.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.tableausoftware.tableaudesktop.savedState

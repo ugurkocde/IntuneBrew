@@ -17,6 +17,10 @@ fi
 echo "Stopping LightBurn if running..."
 pkill -f "LightBurn" 2>/dev/null || true
 
+# Kill application with bundle ID com.LightBurnSoftware.LightBurn if running
+echo "Stopping application with bundle ID com.LightBurnSoftware.LightBurn if running..."
+killall -9 "com.LightBurnSoftware.LightBurn" 2>/dev/null || true
+
 # Remove /Applications/LightBurn.app
 echo "Removing /Applications/LightBurn.app..."
 if [ -d "/Applications/LightBurn.app" ]; then
