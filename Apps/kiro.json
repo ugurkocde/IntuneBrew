@@ -1,15 +1,15 @@
 {
   "name": "kiro",
   "description": "Agent-centric IDE with spec-driven development",
-  "version": "1.4.10",
-  "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.4.10/kiro-ide-1.4.10-stable-darwin-arm64.dmg",
-  "vendor_url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.4.10/kiro-ide-1.4.10-stable-darwin-arm64.dmg",
+  "version": "1.4.13",
+  "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.4.13/kiro-ide-1.4.13-stable-darwin-arm64.dmg",
+  "vendor_url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.4.13/kiro-ide-1.4.13-stable-darwin-arm64.dmg",
   "bundleId": "com.kiro.kantoku",
   "homepage": "https://kiro.dev/",
   "homebrew_cask": "kiro",
-  "fileName": "kiro-ide-1.4.10-stable-darwin-arm64.dmg",
-  "sha": "c129fbcaf7949ed5b8b7afae920aab095efca173af6d537e18a412953b6d4759",
+  "fileName": "kiro-ide-1.4.13-stable-darwin-arm64.dmg",
+  "sha": "6a093f73452e6cd6a859ea85d4ba20300bb2624b0a66930d586cf4428d2bbd00",
   "category": "Developer Tools",
   "publisher": "Kiro",
-  "previous_version": "1.4.0"
+  "previous_version": "1.4.10"
 }

@@ -8,9 +8,9 @@
   "homepage": "https://miro.com/",
   "homebrew_cask": "miro",
   "fileName": "Install-Miro.dmg",
-  "sha": "95195cf42e1080f6a7cd010ed6fee219923363bf66a6fc6c4dcdcf0974983ab4",
+  "sha": "aa32f8a86c172989666fba53c34ee20a9b82874fd0519538b3bc3ac64cbbd77e",
   "changelog": "https://help.miro.com/hc/en-us/articles/360017572854-Desktop-app-release-notes",
   "category": "Productivity",
   "publisher": "Miro",
-  "previous_version": "0.11.187"
+  "previous_version": "0.11.192"
 }

@@ -11,6 +11,6 @@
   "sha": "0873cd5c8be358552ed6734bb9a034f797490fbdeadeee8b36258505c410cab8",
   "category": "Utilities",
   "publisher": "Elgato",
-  "previous_version": "1.9",
+  "previous_version": "1.9.1",
   "homebrew_cask": "elgato-control-center"
 }

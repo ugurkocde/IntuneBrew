@@ -11,6 +11,6 @@
   "sha": "b7d7e27816c87555a7ab6344f7e08f79fcdd5c111f99b101fa825471c5467a4f",
   "category": "Communication",
   "publisher": "sipgate GmbH",
-  "previous_version": "2.44.10",
+  "previous_version": "2.44.12",
   "homebrew_cask": "sipgate"
 }

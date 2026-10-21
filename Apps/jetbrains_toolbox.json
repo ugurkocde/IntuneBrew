@@ -1,7 +1,7 @@
 {
   "name": "JetBrains Toolbox",
   "description": "JetBrains tools manager",
-  "version": "3.9",
+  "version": "3.9.0.88839",
   "url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.9.0.88839-arm64.dmg",
   "vendor_url": "https://download.jetbrains.com/toolbox/jetbrains-toolbox-3.9.0.88839-arm64.dmg",
   "bundleId": "com.jetbrains.toolbox",
