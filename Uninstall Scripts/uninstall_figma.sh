@@ -17,6 +17,12 @@ fi
 echo "Stopping Figma if running..."
 pkill -f "Figma" 2>/dev/null || true
 
+# Unload service com.figma.Desktop.ShipIt
+echo "Unloading service com.figma.Desktop.ShipIt..."
+launchctl unload -w /Library/LaunchAgents/com.figma.Desktop.ShipIt.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.figma.Desktop.ShipIt.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.figma.Desktop.ShipIt.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.figma.agent if running
 echo "Stopping application with bundle ID com.figma.agent if running..."
 killall -9 "com.figma.agent" 2>/dev/null || true
@@ -75,6 +81,22 @@ if [ -d "$HOME/Library/HTTPStorages/com.figma.agent" ]; then
     rm -rf "$HOME/Library/HTTPStorages/com.figma.agent" 2>/dev/null || true
 elif [ -f "$HOME/Library/HTTPStorages/com.figma.agent" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.figma.agent" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.figma.Desktop
+echo "Removing $HOME/Library/HTTPStorages/com.figma.Desktop..."
+if [ -d "$HOME/Library/HTTPStorages/com.figma.Desktop" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.figma.Desktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.figma.Desktop" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.figma.Desktop" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/ByHost/com.figma.Desktop.ShipIt.*.plist
+echo "Removing $HOME/Library/Preferences/ByHost/com.figma.Desktop.ShipIt.*.plist..."
+if [ -d "$HOME/Library/Preferences/ByHost/com.figma.Desktop.ShipIt.*.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/ByHost/com.figma.Desktop.ShipIt.*.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/ByHost/com.figma.Desktop.ShipIt.*.plist" ]; then
+    rm -f "$HOME/Library/Preferences/ByHost/com.figma.Desktop.ShipIt.*.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.figma.Desktop.plist

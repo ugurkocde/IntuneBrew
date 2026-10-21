@@ -25,6 +25,14 @@ elif [ -f "/Applications/Missive.app" ]; then
     rm -f "/Applications/Missive.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.missiveapp.osx.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.missiveapp.osx.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.missiveapp.osx.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.missiveapp.osx.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.missiveapp.osx.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.missiveapp.osx.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Missive
 echo "Removing $HOME/Library/Application Support/Missive..."
 if [ -d "$HOME/Library/Application Support/Missive" ]; then

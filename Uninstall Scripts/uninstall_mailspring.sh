@@ -25,6 +25,14 @@ elif [ -f "/Applications/Mailspring.app" ]; then
     rm -f "/Applications/Mailspring.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mailspring.mailspring.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mailspring.mailspring.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mailspring.mailspring.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mailspring.mailspring.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mailspring.mailspring.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mailspring.mailspring.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Mailspring
 echo "Removing $HOME/Library/Application Support/Mailspring..."
 if [ -d "$HOME/Library/Application Support/Mailspring" ]; then
@@ -39,6 +47,14 @@ if [ -d "$HOME/Library/Caches/com.mailspring.*" ]; then
     rm -rf "$HOME/Library/Caches/com.mailspring.*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.mailspring.*" ]; then
     rm -f "$HOME/Library/Caches/com.mailspring.*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.mailspring.mailspring
+echo "Removing $HOME/Library/HTTPStorages/com.mailspring.mailspring..."
+if [ -d "$HOME/Library/HTTPStorages/com.mailspring.mailspring" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.mailspring.mailspring" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.mailspring.mailspring" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.mailspring.mailspring" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Logs/Mailspring
