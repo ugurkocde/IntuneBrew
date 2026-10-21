@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-10-21T00:35:13.986Z",
+  "last_full_scan": "2026-10-21T01:20:30.669Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -1060,17 +1060,10 @@
       "name": "Dangerzone"
     },
     "dash": {
-      "last_checked": "2026-07-29T17:08:46.832Z",
-      "bundle_id": "com.kapeli.dash",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "openai_improved",
-      "methods_tried": [
-        "mac_app_store",
-        "pkg_inspection",
-        "github_search",
-        "openai_improved"
-      ],
+      "last_checked": "2026-10-21T01:20:30.652Z",
+      "bundle_id": "com.kapeli.dashdoc",
+      "status": "verified",
+      "source": "file",
       "name": "Dash"
     },
     "dataflare": {
@@ -3186,11 +3179,10 @@
       "name": "Electrum"
     },
     "etrecheck": {
-      "last_checked": "2026-01-16T01:14:46.561Z",
-      "bundle_id": "com.etresoft.EtreCheckMAS",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-10-21T01:20:30.654Z",
+      "bundle_id": "com.etresoft.EtreCheck4",
+      "status": "verified",
+      "source": "file",
       "name": "EtreCheck"
     },
     "exifcleaner": {
@@ -3997,10 +3989,10 @@
       "name": "Joplin"
     },
     "jump_desktop": {
-      "last_checked": "2026-01-17T01:03:08.539Z",
-      "bundle_id": "com.p5sys.jump.connect",
+      "last_checked": "2026-10-21T01:20:30.657Z",
+      "bundle_id": "com.p5sys.jump.mac.viewer.web",
       "status": "verified",
-      "source": "api",
+      "source": "file",
       "name": "Jump Desktop"
     },
     "jumpcut": {
