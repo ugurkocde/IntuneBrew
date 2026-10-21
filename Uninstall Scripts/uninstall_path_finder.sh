@@ -25,12 +25,36 @@ elif [ -f "/Applications/Path Finder.app" ]; then
     rm -f "/Applications/Path Finder.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.cocoatech.pathfinder.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.cocoatech.pathfinder.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.cocoatech.pathfinder.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.cocoatech.pathfinder.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.cocoatech.pathfinder.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.cocoatech.pathfinder.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Path Finder
 echo "Removing $HOME/Library/Application Support/Path Finder..."
 if [ -d "$HOME/Library/Application Support/Path Finder" ]; then
     rm -rf "$HOME/Library/Application Support/Path Finder" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/Path Finder" ]; then
     rm -f "$HOME/Library/Application Support/Path Finder" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.cocoatech.PathFinder
+echo "Removing $HOME/Library/Caches/com.cocoatech.PathFinder..."
+if [ -d "$HOME/Library/Caches/com.cocoatech.PathFinder" ]; then
+    rm -rf "$HOME/Library/Caches/com.cocoatech.PathFinder" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.cocoatech.PathFinder" ]; then
+    rm -f "$HOME/Library/Caches/com.cocoatech.PathFinder" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.cocoatech.PathFinder
+echo "Removing $HOME/Library/HTTPStorages/com.cocoatech.PathFinder..."
+if [ -d "$HOME/Library/HTTPStorages/com.cocoatech.PathFinder" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.cocoatech.PathFinder" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.cocoatech.PathFinder" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.cocoatech.PathFinder" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.cocoatech.PathFinder.plist

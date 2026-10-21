@@ -37,6 +37,14 @@ elif [ -f "$HOME/Library/Application Scripts/*.io.tailscale.ipn.macsys" ]; then
     rm -f "$HOME/Library/Application Scripts/*.io.tailscale.ipn.macsys" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.W5364U7YZB.io.tailscale.shared
+echo "Removing $HOME/Library/Application Scripts/group.W5364U7YZB.io.tailscale.shared..."
+if [ -d "$HOME/Library/Application Scripts/group.W5364U7YZB.io.tailscale.shared" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.W5364U7YZB.io.tailscale.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.W5364U7YZB.io.tailscale.shared" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.W5364U7YZB.io.tailscale.shared" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/io.tailscale.ipn.macsys
 echo "Removing $HOME/Library/Application Scripts/io.tailscale.ipn.macsys..."
 if [ -d "$HOME/Library/Application Scripts/io.tailscale.ipn.macsys" ]; then
@@ -59,6 +67,14 @@ if [ -d "$HOME/Library/Application Scripts/io.tailscale.ipn.macsys.share-extensi
     rm -rf "$HOME/Library/Application Scripts/io.tailscale.ipn.macsys.share-extension" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/io.tailscale.ipn.macsys.share-extension" ]; then
     rm -f "$HOME/Library/Application Scripts/io.tailscale.ipn.macsys.share-extension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/io.tailscale.ipn.macsys.widgets
+echo "Removing $HOME/Library/Application Scripts/io.tailscale.ipn.macsys.widgets..."
+if [ -d "$HOME/Library/Application Scripts/io.tailscale.ipn.macsys.widgets" ]; then
+    rm -rf "$HOME/Library/Application Scripts/io.tailscale.ipn.macsys.widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/io.tailscale.ipn.macsys.widgets" ]; then
+    rm -f "$HOME/Library/Application Scripts/io.tailscale.ipn.macsys.widgets" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/io.tailscale.ipn.macsys
@@ -101,6 +117,14 @@ elif [ -f "$HOME/Library/Containers/io.tailscale.ipn.macsys.share-extension" ]; 
     rm -f "$HOME/Library/Containers/io.tailscale.ipn.macsys.share-extension" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/io.tailscale.ipn.macsys.widgets,
+echo "Removing $HOME/Library/Containers/io.tailscale.ipn.macsys.widgets,..."
+if [ -d "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets," ]; then
+    rm -rf "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets," 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets," ]; then
+    rm -f "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets," 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/Tailscale
 echo "Removing $HOME/Library/Containers/Tailscale..."
 if [ -d "$HOME/Library/Containers/Tailscale" ]; then
@@ -115,6 +139,14 @@ if [ -d "$HOME/Library/Group Containers/*.io.tailscale.ipn.macsys" ]; then
     rm -rf "$HOME/Library/Group Containers/*.io.tailscale.ipn.macsys" 2>/dev/null || true
 elif [ -f "$HOME/Library/Group Containers/*.io.tailscale.ipn.macsys" ]; then
     rm -f "$HOME/Library/Group Containers/*.io.tailscale.ipn.macsys" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/group.W5364U7YZB.io.tailscale.shared
+echo "Removing $HOME/Library/Group Containers/group.W5364U7YZB.io.tailscale.shared..."
+if [ -d "$HOME/Library/Group Containers/group.W5364U7YZB.io.tailscale.shared" ]; then
+    rm -rf "$HOME/Library/Group Containers/group.W5364U7YZB.io.tailscale.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/group.W5364U7YZB.io.tailscale.shared" ]; then
+    rm -f "$HOME/Library/Group Containers/group.W5364U7YZB.io.tailscale.shared" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/io.tailscale.ipn.macsys
