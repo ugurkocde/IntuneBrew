@@ -494,6 +494,84 @@ class PrefetchTests(unittest.TestCase):
         collect_app_info.cask_cache.clear()
         del collect_app_info.filename_collisions[:]
 
+    @staticmethod
+    def toolbox_payload(version="3.9,3.9.0.88839"):
+        return {
+            "token": "jetbrains-toolbox", "name": ["JetBrains Toolbox"],
+            "desc": "Tools manager", "version": version,
+            "url": "https://example.test/jetbrains-toolbox-3.9.0.88839-arm64.dmg",
+            "homepage": "https://example.test/", "sha256": "a" * 64,
+            "artifacts": [{"uninstall": [{"quit": "com.jetbrains.toolbox"}]}],
+        }
+
+    def test_toolbox_uses_bundle_version_without_changing_installer_identity(self):
+        url = "https://formulae.brew.sh/api/cask/jetbrains-toolbox.json"
+        payload = self.toolbox_payload()
+        collect_app_info.cask_cache[url] = payload
+        result = collect_app_info.get_homebrew_app_info(url)
+        self.assertEqual(result["version"], "3.9.0.88839")
+        self.assertEqual(result["sha"], payload["sha256"])
+        self.assertEqual(result["url"], payload["url"])
+        self.assertEqual(result["vendor_url"], payload["url"])
+        self.assertEqual(result["fileName"], "jetbrains-toolbox-3.9.0.88839-arm64.dmg")
+        self.assertEqual(result["bundleId"], "com.jetbrains.toolbox")
+
+    def test_toolbox_malformed_tuple_preserves_existing_entry_and_records_failure(self):
+        url = "https://formulae.brew.sh/api/cask/jetbrains-toolbox.json"
+        for version in ["3.9", "3.9,", "3.9,abc", "3.9,4.0.0.1",
+                        "3.9,3.9.0.1,x", "3.9,3.9.0.1_bad"]:
+            with self.subTest(version=version), tempfile.TemporaryDirectory() as directory:
+                payload = self.toolbox_payload(version)
+                collect_app_info.cask_cache[url] = payload
+                with self.assertRaisesRegex(ValueError, "Unexpected JetBrains Toolbox version tuple"):
+                    collect_app_info.get_homebrew_app_info(url)
+                folder = Path(directory) / "Apps"
+                folder.mkdir()
+                path = folder / "jetbrains_toolbox.json"
+                existing = dict(payload, version="3.8.1.88030", sha="b" * 64)
+                original = json.dumps(existing).encode()
+                path.write_bytes(original)
+                session = CountingSession({url: cask_response(payload)})
+                with run_collector(directory, [url], session=session):
+                    collect_app_info.main()
+                self.assertEqual(path.read_bytes(), original)
+                self.assertEqual(collect_app_info.collection_failures,
+                                 [{"cask": "jetbrains-toolbox", "stage": "collection"}])
+
+    def test_toolbox_collection_updates_detection_version_and_preserves_metadata(self):
+        url = "https://formulae.brew.sh/api/cask/jetbrains-toolbox.json"
+        payload = self.toolbox_payload()
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory) / "Apps"
+            folder.mkdir()
+            path = folder / "jetbrains_toolbox.json"
+            path.write_text(json.dumps({
+                "name": "JetBrains Toolbox", "version": "3.9", "sha": "a" * 64,
+                "url": payload["url"], "homebrew_cask": "jetbrains-toolbox",
+                "publisher": "Example Publisher", "category": "Developer Tools",
+            }))
+            session = CountingSession({url: cask_response(payload)})
+            with run_collector(directory, [url], session=session):
+                collect_app_info.main()
+            result = json.loads(path.read_text())
+        self.assertEqual(result["version"], "3.9.0.88839")
+        self.assertEqual(result["previous_version"], "3.9")
+        self.assertEqual(result["sha"], "a" * 64)
+        self.assertEqual(result["url"], payload["url"])
+        self.assertEqual(result["publisher"], "Example Publisher")
+        self.assertEqual(result["category"], "Developer Tools")
+        self.assertEqual(collect_app_info.collection_failures, [])
+
+    def test_other_cask_version_components_keep_existing_meaning(self):
+        for token, version, expected in [
+                ("clion", "2026.2.3.1,262.10968.176", "2026.2.3.1"),
+                ("alfred", "5.8.1,2349", "5.8.1"),
+                ("sample", "1.2.3_4", "1.2.3")]:
+            with self.subTest(token=token):
+                url = f"https://formulae.brew.sh/api/cask/{token}.json"
+                collect_app_info.cask_cache[url] = dict(self.toolbox_payload(version), token=token)
+                self.assertEqual(collect_app_info.get_homebrew_app_info(url)["version"], expected)
+
     def test_rstudio_preserves_embedded_build_version(self):
         url = "https://formulae.brew.sh/api/cask/rstudio.json"
         collect_app_info.cask_cache[url] = {

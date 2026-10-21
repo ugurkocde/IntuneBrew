@@ -1842,11 +1842,19 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
 
     bundle_id = find_bundle_id(json_string)
 
-    # Clean up version string by removing anything after the comma or underscore
+    # Most casks use a release version followed by a separate build identifier.
     version = data["version"]
     if cask_token == "rstudio" and ',' in version:
         # RStudio embeds the build in both CFBundle version fields (issue #275).
         version = version.replace(',', '+', 1)
+    elif cask_token == "jetbrains-toolbox":
+        # Toolbox's second component is its full CFBundleShortVersionString
+        # (issue #341), not a separate build identifier like other IDE casks.
+        parts = version.split(',')
+        if (len(parts) != 2 or not re.fullmatch(r"[0-9]+(?:\.[0-9]+){1,3}", parts[1])
+                or not (parts[1] == parts[0] or parts[1].startswith(parts[0] + '.'))):
+            raise ValueError("Unexpected JetBrains Toolbox version tuple")
+        version = parts[1]
     elif ',' in version:
         version = version.split(',')[0]
     if '_' in version:
