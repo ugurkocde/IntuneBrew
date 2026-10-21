@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-10-21T01:20:30.669Z",
+  "last_full_scan": "2026-10-21T10:21:54.168Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -601,11 +601,10 @@
       "name": "blip"
     },
     "blizzard_battlenet": {
-      "last_checked": "2026-01-15T11:35:19.629Z",
-      "bundle_id": "net.battle.app",
-      "previous_bundle_id": "com.blizzard.social",
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-10-21T10:21:54.152Z",
+      "bundle_id": "net.battle.bootstrapper",
+      "status": "verified",
+      "source": "file",
       "name": "Blizzard Battle.net"
     },
     "bluefish": {
