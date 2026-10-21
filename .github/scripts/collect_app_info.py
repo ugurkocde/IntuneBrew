@@ -1,5 +1,7 @@
 import json
 import os
+import plistlib
+import shutil
 import sys
 import signal
 import threading
@@ -1486,6 +1488,105 @@ def calculate_file_hash(url):
             except Exception as e:
                 print(f"Warning: Could not delete temporary file: {str(e)}")
 
+def _bundle_version_in(mount_point, bundle_id):
+    """Return CFBundleShortVersionString of bundle_id at the top of a mounted DMG."""
+    candidates = []
+    # Symlinks are skipped so the usual Applications link cannot match an app
+    # that happens to be installed on the runner.
+    for entry in sorted(Path(mount_point).iterdir()):
+        if entry.is_symlink():
+            continue
+        if entry.suffix == ".app":
+            candidates.append(entry)
+        elif entry.is_dir():
+            candidates.extend(child for child in sorted(entry.iterdir())
+                              if child.suffix == ".app" and not child.is_symlink())
+    for app in candidates:
+        try:
+            with open(app / "Contents" / "Info.plist", "rb") as f:
+                info = plistlib.load(f)
+        except Exception:
+            continue
+        if info.get("CFBundleIdentifier") == bundle_id:
+            version = str(info.get("CFBundleShortVersionString", "")).strip()
+            return version or None
+    return None
+
+
+def read_dmg_bundle_version(url, bundle_id):
+    """Download the DMG at url and return the version its bundle_id app reports.
+
+    None means the version could not be read (download, mount or lookup
+    failed). That never blocks an update, only a confirmed mismatch does.
+    """
+    print(f"📥 Downloading {url} to verify the app version...")
+    work = tempfile.mkdtemp(prefix="intunebrew_dmg_")
+    mount_point = os.path.join(work, "mount")
+    try:
+        dmg_path = os.path.join(work, "app.dmg")
+        with open(dmg_path, "wb") as dmg:
+            for user_agent in DOWNLOAD_USER_AGENTS:
+                try:
+                    if _stream_to_temp_file(url, user_agent, dmg) is not None:
+                        break
+                except _OversizedDownload as e:
+                    print(str(e))
+                    return None
+                except Exception as e:
+                    print(f"Download for version check failed: {e}")
+            else:
+                return None
+
+        # The answers on stdin accept a license agreement instead of hanging.
+        result = subprocess.run(
+            ["hdiutil", "attach", dmg_path, "-readonly", "-nobrowse", "-noautoopen",
+             "-noverify", "-mountpoint", mount_point],
+            input=b"y\n" * 10, capture_output=True, timeout=300,
+        )
+        if result.returncode != 0:
+            print(f"Could not mount DMG for version check: {result.stderr.decode(errors='replace').strip()}")
+            return None
+        return _bundle_version_in(mount_point, bundle_id)
+    except Exception as e:
+        print(f"Version check failed: {e}")
+        return None
+    finally:
+        # Checked even after a timeout, which can leave the image attached.
+        if os.path.ismount(mount_point):
+            try:
+                subprocess.run(["hdiutil", "detach", mount_point, "-force"],
+                               capture_output=True, timeout=120)
+            except Exception:
+                pass
+        shutil.rmtree(work, ignore_errors=True)
+
+
+def verify_dmg_bundle_version(app_info, existing_version):
+    """Refuse a DMG whose app reports a different version than the catalog entry.
+
+    Intune compares the version inside the mounted DMG with the version it was
+    given and fails the install on any difference (issues #275 and #341). Only
+    new versions are checked, and only where hdiutil exists, so a run without
+    updates downloads nothing extra.
+    """
+    version = app_info.get("version")
+    bundle_id = app_info.get("bundleId")
+    if (version == existing_version or not bundle_id
+            or not str(app_info.get("fileName", "")).lower().endswith(".dmg")
+            or shutil.which("hdiutil") is None):
+        return
+    found = read_dmg_bundle_version(app_info["url"], bundle_id)
+    if found is None:
+        print(f"⚠️ Could not read the app version inside the DMG for {app_info.get('name')}, not verified")
+    elif found != version:
+        raise RuntimeError(
+            f"{app_info.get('name')} reports version {found} inside the DMG but the catalog "
+            f"would publish {version}; Intune rejects that mismatch, so the update is held back"
+        )
+    else:
+        print(f"✅ DMG app version verified: {found}")
+
+
 def find_bundle_id(json_string):
     regex_patterns = {
         'pkgutil': r'(?s)"pkgutil"\s*:\s*(?:\[\s*"([^"]+)"(?:,\s*"([^"]+)")?\s*\]|\s*"([^"]+)")',
@@ -1847,10 +1948,16 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
     if cask_token == "rstudio" and ',' in version:
         # RStudio embeds the build in both CFBundle version fields (issue #275).
         version = version.replace(',', '+', 1)
+    elif cask_token == "jetbrains-toolbox" and ',' in version:
+        # Toolbox reports the full build after the comma as its version (issue #341).
+        version = version.split(',', 1)[1]
     elif ',' in version:
         version = version.split(',')[0]
     if '_' in version:
         version = version.split('_')[0]
+    if cask_token == "gifox":
+        # Homebrew adds a +0 suffix that the app does not report (issue #341).
+        version = version.split('+', 1)[0]
 
     url = get_warp_release_url(data) if cask_token == "warp" else data["url"]
 
@@ -2193,6 +2300,7 @@ def main():
                     raise RuntimeError(f"Could not verify download hash for {display_name}")
 
             # For existing files, preserve existing data and update necessary fields
+            previous_version = None
             if os.path.exists(file_path):
                 with open(file_path, "r") as f:
                     existing_data = json.load(f)
@@ -2225,6 +2333,8 @@ def main():
                     if new_sha:
                         app_info["sha"] = new_sha
                     app_info["previous_version"] = previous_version
+
+            verify_dmg_bundle_version(app_info, previous_version)
 
             with open(file_path, "w") as f:
                 json.dump(app_info, f, indent=2)

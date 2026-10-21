@@ -222,6 +222,9 @@ def run_collector(work_dir, cask_urls, session=None, app_urls=None):
             stack.enter_context(
                 patch.object(collect_app_info, "calculate_file_hash", Mock(return_value="0" * 64))
             )
+            stack.enter_context(
+                patch.object(collect_app_info, "read_dmg_bundle_version", Mock(return_value=None))
+            )
             stack.enter_context(patch.object(collect_app_info, "update_readme_apps", Mock()))
             stack.enter_context(
                 patch.object(collect_app_info, "update_readme_with_latest_changes", Mock())
@@ -504,6 +507,22 @@ class PrefetchTests(unittest.TestCase):
         }
         result = collect_app_info.get_homebrew_app_info(url)
         self.assertEqual(result["version"], "2026.09.0+174")
+
+    def test_jetbrains_toolbox_uses_full_build_version(self):
+        url = "https://formulae.brew.sh/api/cask/jetbrains-toolbox.json"
+        collect_app_info.cask_cache[url] = dict(
+            TAILSCALE_PAYLOAD, token="jetbrains-toolbox", name=["JetBrains Toolbox"],
+            version="3.9,3.9.0.88839", sha256="a" * 64,
+        )
+        result = collect_app_info.get_homebrew_app_info(url)
+        self.assertEqual(result["version"], "3.9.0.88839")
+
+    def test_gifox_drops_build_suffix_the_app_does_not_report(self):
+        url = "https://formulae.brew.sh/api/cask/gifox.json"
+        collect_app_info.cask_cache[url] = dict(
+            TAILSCALE_PAYLOAD, token="gifox", name=["Gifox"], version="2.10.0+0,021000.00", sha256="a" * 64,
+        )
+        self.assertEqual(collect_app_info.get_homebrew_app_info(url)["version"], "2.10.0")
 
     def test_direct_download_uses_homebrew_checksum(self):
         url = "https://formulae.brew.sh/api/cask/tailscale.json"
@@ -844,6 +863,72 @@ class CatalogConsistencyTests(unittest.TestCase):
         badge = re.search(r"Apps_Available-(\d+)-", readme)
         self.assertIsNotNone(badge)
         self.assertEqual(int(badge.group(1)), len(expected))
+
+
+class DmgVersionVerificationTests(unittest.TestCase):
+    APP = {"name": "Tailscale", "version": "1.80.0", "bundleId": "io.tailscale.ipn.macos",
+           "url": "https://example.com/tailscale-1.80.0.dmg", "fileName": "tailscale-1.80.0.dmg"}
+
+    def verify(self, found, app=None, existing="1.79.0", hdiutil="/usr/bin/hdiutil"):
+        reader = Mock(return_value=found)
+        with patch.object(collect_app_info.shutil, "which", return_value=hdiutil), \
+                patch.object(collect_app_info, "read_dmg_bundle_version", reader), \
+                contextlib.redirect_stdout(io.StringIO()):
+            collect_app_info.verify_dmg_bundle_version(dict(app or self.APP), existing)
+        return reader
+
+    def test_matching_version_passes(self):
+        self.verify("1.80.0").assert_called_once_with(self.APP["url"], self.APP["bundleId"])
+
+    def test_mismatched_version_is_refused(self):
+        with self.assertRaisesRegex(RuntimeError, "3.9.0.88839"):
+            self.verify("3.9.0.88839")
+
+    def test_unreadable_version_does_not_block(self):
+        self.verify(None).assert_called_once()
+
+    def test_unchanged_version_downloads_nothing(self):
+        self.verify("other", existing="1.80.0").assert_not_called()
+
+    def test_runner_without_hdiutil_downloads_nothing(self):
+        self.verify("other", hdiutil=None).assert_not_called()
+
+    def test_non_dmg_downloads_nothing(self):
+        self.verify("other", app=dict(self.APP, fileName="tailscale.zip")).assert_not_called()
+
+    def test_bundle_lookup_ignores_symlinked_applications_folder(self):
+        def app(root, name, bundle_id, version):
+            contents = root / name / "Contents"
+            contents.mkdir(parents=True)
+            with open(contents / "Info.plist", "wb") as f:
+                collect_app_info.plistlib.dump(
+                    {"CFBundleIdentifier": bundle_id, "CFBundleShortVersionString": version}, f)
+
+        with tempfile.TemporaryDirectory() as directory:
+            root = Path(directory)
+            mount, installed = root / "mount", root / "installed"
+            mount.mkdir()
+            installed.mkdir()
+            app(installed, "Tailscale.app", "io.tailscale.ipn.macos", "0.1")
+            (mount / "Applications").symlink_to(installed)
+            self.assertIsNone(collect_app_info._bundle_version_in(mount, "io.tailscale.ipn.macos"))
+            app(mount / "Tailscale", "Tailscale.app", "io.tailscale.ipn.macos", "1.80.0")
+            self.assertEqual(collect_app_info._bundle_version_in(mount, "io.tailscale.ipn.macos"), "1.80.0")
+
+    def test_mismatch_keeps_existing_entry_and_records_failure(self):
+        url = "https://formulae.brew.sh/api/cask/tailscale.json"
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory) / "Apps"
+            folder.mkdir()
+            path = folder / "tailscale.json"
+            original = b'{"name":"Tailscale","version":"1.79.0","homebrew_cask":"tailscale"}\n'
+            path.write_bytes(original)
+            with run_collector(directory, [url]):
+                with patch.object(collect_app_info.shutil, "which", return_value="/usr/bin/hdiutil"), \
+                        patch.object(collect_app_info, "read_dmg_bundle_version", Mock(return_value="1.80.0.1")):
+                    collect_app_info.main()
+            self.assertEqual(path.read_bytes(), original)
+        self.assertEqual(collect_app_info.collection_failures, [{"cask": "tailscale", "stage": "collection"}])
 
 
 if __name__ == "__main__":
