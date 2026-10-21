@@ -9,7 +9,7 @@
   "fileName": "bartender_7.1.0.pkg",
   "type": "app",
   "sha": "1ea14bdbc72046837947017d3bdd88b73d8888c040beb43357b5151b47dbc02f",
-  "previous_version": "7.0.5",
+  "previous_version": "7.1.0",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:21:19Z",
     "qa_result": "Installation successful and verified",

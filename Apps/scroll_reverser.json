@@ -1,16 +1,16 @@
 {
   "name": "Scroll Reverser",
   "description": "Tool to reverse the direction of scrolling",
-  "version": "2.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/scroll_reverser_2.0.pkg",
-  "vendor_url": "https://pilotmoon.com/downloads/ScrollReverser-2.0.zip",
+  "version": "2.0.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/scroll_reverser_2.0.2.pkg",
+  "vendor_url": "https://pilotmoon.com/downloads/ScrollReverser-2.0.2.zip",
   "bundleId": "com.pilotmoon.scroll-reverser",
   "homepage": "https://pilotmoon.com/scrollreverser/",
-  "fileName": "scroll_reverser_2.0.pkg",
+  "fileName": "scroll_reverser_2.0.2.pkg",
   "type": "app",
-  "sha": "3288603c182f07db4bd444567c55bf6b9eadb2425b7ac8d45d4392a0905bbcb9",
+  "sha": "3cd62831486bf4244a974e09a3f4aede79b8a114fdbe41dc6dc476dffeccdff3",
   "category": "Utilities",
   "publisher": "Pilot Moon",
-  "previous_version": "1.9",
+  "previous_version": "2.0",
   "homebrew_cask": "scroll-reverser"
 }

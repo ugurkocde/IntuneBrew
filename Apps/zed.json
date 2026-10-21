@@ -1,16 +1,16 @@
 {
   "name": "Zed",
   "description": "Multiplayer code editor",
-  "version": "1.24.3",
-  "url": "https://github.com/zed-industries/zed/releases/download/v1.24.3/Zed-aarch64.dmg",
-  "vendor_url": "https://github.com/zed-industries/zed/releases/download/v1.24.3/Zed-aarch64.dmg",
+  "version": "1.24.4",
+  "url": "https://github.com/zed-industries/zed/releases/download/v1.24.4/Zed-aarch64.dmg",
+  "vendor_url": "https://github.com/zed-industries/zed/releases/download/v1.24.4/Zed-aarch64.dmg",
   "bundleId": "dev.zed.Zed",
   "homepage": "https://zed.dev/",
   "homebrew_cask": "zed",
   "fileName": "Zed-aarch64.dmg",
-  "sha": "fa4028fa85d1f1b7c9f9fd2ab43f272f6e7a634470f88b6b936fe4a557fcf34d",
+  "sha": "fda9ce886dbb4860fb366c647d4c6407bed95a288b45dd43cc59732ef21d8670",
   "changelog": "https://zed.dev/releases/stable",
   "category": "Developer Tools",
   "publisher": "Zed",
-  "previous_version": "1.24.2"
+  "previous_version": "1.24.3"
 }
