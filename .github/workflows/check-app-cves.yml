@@ -80,7 +80,10 @@ jobs:
           WORK_CONTEXT = threading.local()
           CONTROL = None  # seconds between requests
           MAX_RETRIES = 3
-          PAGE_SIZES = (500, 200, 100)
+          PAGE_SIZES = (500, 200, 100, 50)
+          FIRST_PAGE_SIZE = 100
+          PAGE_BYTE_TARGET = 1_200_000
+          BODY_PAGE_ATTEMPTS = 5
           RETRY_DELAY = 5  # seconds
 
           # CVE directory
@@ -337,6 +340,8 @@ jobs:
                   self.lock = threading.Lock()
                   self.attempts = []
                   self.app_times = {}
+                  self.query_times = {}
+                  self.query_spans = {}
                   self.cooldown_seconds = 0.0
                   self.stopped = False
                   self.first_failure = None
@@ -385,6 +390,7 @@ jobs:
                   with self.lock:
                       rows = list(self.attempts)
                       app_times = dict(self.app_times)
+                      query_times = dict(self.query_times)
                       cooldown = self.cooldown_seconds
                   durations = sorted(r['elapsedSeconds'] for r in rows)
                   outcomes = {}
@@ -399,6 +405,7 @@ jobs:
                              'latencyP90':percentile(.9), 'latencyMax':max(durations, default=0),
                              'pacerWaitSeconds':round(sum(r['pacerWaitSeconds'] for r in rows), 3),
                              'globalCooldownSeconds':round(cooldown, 3), 'appWallSeconds':app_times,
+                             'queryWallSeconds':query_times,
                              'slowestAttempts':sorted(rows, key=lambda r:r['elapsedSeconds'], reverse=True)[:10]}
                   with LOG_LOCK:
                       print('CVE_METRICS ' + json.dumps(summary, sort_keys=True), flush=True)
@@ -434,49 +441,67 @@ jobs:
                       return fallback
 
 
-          def nvd_request(url: str, params: Dict = None) -> Dict:
-              """Return a complete validated page, with every attempt globally paced."""
+
+          def nvd_request(url: str, params: Dict = None) -> Tuple[Dict, int]:
+              """Fetch a complete page, bounding body recovery separately from other failures."""
               headers = {'apiKey': NVD_API_KEY} if NVD_API_KEY else {}
               reason = "NVD request failed"
-              for attempt in range(MAX_RETRIES):
+              page_request = (params or {}).get('resultsPerPage') in PAGE_SIZES
+              budget = BODY_PAGE_ATTEMPTS if page_request else MAX_RETRIES
+              non_body_failures = 0
+              for attempt in range(budget):
                   waited = CONTROL.acquire()
                   began = time.monotonic()
                   requested_size = (params or {}).get('resultsPerPage')
-                  outcome = 'unknown'
-                  exception_type = None
-                  response_bytes = None
+                  outcome, exception_type = 'unknown', None
+                  response_bytes, headers_seconds, max_body_gap = 0, None, 0.0
+                  last_chunk = None
+                  reading_body = False
+                  body_failure = False
                   try:
-                      response = requests.get(url, params=params, headers=headers, timeout=(10, 60))
-                      outcome = str(response.status_code)
-                      response_bytes = len(getattr(response, 'content', b''))
-                      if response.status_code == 200:
-                          try:
-                              data = response.json()
-                          except (ValueError, TypeError):
-                              outcome = 'bad_json'
-                              reason = 'NVD response was not valid JSON'
+                      with requests.get(url, params=params, headers=headers, timeout=(10, 60), stream=True) as response:
+                          headers_seconds = round(time.monotonic()-began, 3)
+                          outcome = str(response.status_code)
+                          if response.status_code == 200:
+                              chunks = []
+                              last_chunk = time.monotonic()
+                              reading_body = True
+                              for chunk in response.iter_content(chunk_size=64*1024):
+                                  now = time.monotonic()
+                                  max_body_gap = max(max_body_gap, now-last_chunk)
+                                  last_chunk = now
+                                  if chunk:
+                                      chunks.append(chunk)
+                                      response_bytes += len(chunk)
+                              reading_body = False
+                              try:
+                                  data = json.loads(b''.join(chunks))
+                              except (ValueError, TypeError):
+                                  outcome = 'bad_json'
+                                  reason = 'NVD response was not valid JSON'
+                              else:
+                                  if not isinstance(data, dict) or type(data.get('totalResults')) is not int or data['totalResults'] < 0 or not isinstance(data.get('vulnerabilities'), list):
+                                      raise NvdUnavailable("Malformed NVD response")
+                                  if 'startIndex' in data and type(data['startIndex']) is not int:
+                                      raise NvdUnavailable("Malformed NVD page offset")
+                                  return data, response_bytes
                           else:
-                              if not isinstance(data, dict) or type(data.get('totalResults')) is not int or data['totalResults'] < 0 or not isinstance(data.get('vulnerabilities'), list):
-                                  raise NvdUnavailable("Malformed NVD response")
-                              if 'startIndex' in data and type(data['startIndex']) is not int:
-                                  raise NvdUnavailable("Malformed NVD page offset")
-                              return data
-                      else:
-                          reason = f"NVD API returned HTTP {response.status_code}"
-                          if response.status_code in {403, 429, 503}:
-                              CONTROL.cooldown(retry_after_seconds(response, RETRY_DELAY * (attempt + 1)))
-                          if response.status_code not in {403, 429} and response.status_code < 500:
-                              raise NvdUnavailable(reason)
+                              reason = f"NVD API returned HTTP {response.status_code}"
+                              if response.status_code in {403, 429, 503}:
+                                  CONTROL.cooldown(retry_after_seconds(response, RETRY_DELAY * (attempt + 1)))
+                              if response.status_code not in {403, 429} and response.status_code < 500:
+                                  raise NvdUnavailable(reason)
                   except NvdUnavailable:
                       raise
                   except requests.exceptions.RequestException as exc:
+                      if reading_body and last_chunk is not None:
+                          max_body_gap = max(max_body_gap, time.monotonic()-last_chunk)
                       outcome = exception_outcome(exc)
                       exception_type = type(exc).__name__
                       reason = 'NVD provider transport failed (' + outcome + ')'
-                      # Retry a stalled body at the same offset with a smaller response.
-                      # Params belong to this app's sequential product loop, never another worker.
-                      if (attempt < MAX_RETRIES - 1 and requested_size in PAGE_SIZES and
-                              (outcome == 'body_read_timeout' or exception_type in {'ReadTimeout', 'ChunkedEncodingError', 'ContentDecodingError'})):
+                      body_failure = (outcome == 'body_read_timeout' or exception_type in {
+                          'ReadTimeout', 'ChunkedEncodingError', 'ContentDecodingError'})
+                      if page_request and body_failure and attempt < budget-1:
                           smaller = next((size for size in PAGE_SIZES if size < requested_size), requested_size)
                           if smaller < requested_size:
                               params['resultsPerPage'] = smaller
@@ -487,10 +512,15 @@ jobs:
                                       'startIndex':(params or {}).get('startIndex', 0), 'attempt':attempt+1,
                                       'requestedSize':requested_size,
                                       'outcome':outcome, 'exceptionType':exception_type, 'responseBytes':response_bytes,
+                                      'headersSeconds':headers_seconds, 'maxBodyGapSeconds':round(max_body_gap, 3),
                                       'elapsedSeconds':round(time.monotonic()-began, 3),
                                       'pacerWaitSeconds':round(waited, 3)})
-                  log(f"{reason}, attempt {attempt + 1}/{MAX_RETRIES}")
-                  if attempt < MAX_RETRIES - 1:
+                  if not body_failure:
+                      non_body_failures += 1
+                  log(f"{reason}, attempt {attempt + 1}/{budget}")
+                  if non_body_failures >= MAX_RETRIES:
+                      break
+                  if attempt < budget-1:
                       CONTROL.pause(RETRY_DELAY * (attempt + 1))
               raise NvdUnavailable(reason + "; previous data is preserved")
 
@@ -602,155 +632,170 @@ jobs:
               # Default to including if no explicit exclusion
               return True
 
-          def fetch_cves_for_app(app_key: str, vendor: str, product: str, alt_products: List[str]) -> List[Dict]:
-              """Fetch CVEs for an app using its CPE vendor:product."""
+          def fetch_product_records(vendor: str, prod: str) -> List[Dict]:
+              """Fetch and validate one fresh complete product, in provider order."""
               all_cves = []
               seen_cve_ids = set()
+              # Build CPE match string for virtualMatchString (pattern matching)
+              cpe_match = f"cpe:2.3:a:{vendor}:{prod}"
 
-              products_to_check = [product] + alt_products
+              log(f"  Querying NVD for CPE pattern: {cpe_match}")
 
-              for prod in products_to_check:
-                  # Build CPE match string for virtualMatchString (pattern matching)
-                  cpe_match = f"cpe:2.3:a:{vendor}:{prod}"
+              url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 
-                  log(f"  Querying NVD for CPE pattern: {cpe_match}")
+              # Paginate through all results
+              start_index = 0
+              results_per_page = FIRST_PAGE_SIZE
+              total_results = None
+              product_cve_ids = set()
 
-                  url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
+              while True:
+                  params = {
+                      'virtualMatchString': cpe_match,
+                      'resultsPerPage': results_per_page,
+                      'startIndex': start_index,
+                  }
 
-                  # Paginate through all results
-                  start_index = 0
-                  results_per_page = PAGE_SIZES[0]
-                  total_results = None
-                  product_cve_ids = set()
+                  data, response_bytes = nvd_request(url, params)
+                  vulnerabilities = data['vulnerabilities']
+                  results_per_page = page_size_for(response_bytes / len(vulnerabilities) if vulnerabilities else 0, params['resultsPerPage'])
+                  if len(vulnerabilities) > params['resultsPerPage']:
+                      raise NvdUnavailable("Oversized NVD page")
+                  if total_results is None:
+                      total_results = data['totalResults']
+                      log(f"  Found {total_results} total CVEs for {vendor}:{prod}")
+                  if data['totalResults'] != total_results or data.get('startIndex', start_index) != start_index:
+                      raise NvdUnavailable("NVD pagination changed during collection")
+                  if len(vulnerabilities) > total_results - start_index or (not vulnerabilities and start_index < total_results):
+                      raise NvdUnavailable("Incomplete NVD page")
+                  if not vulnerabilities:
+                      break
+                  page_ids = []
+                  for vuln in vulnerabilities:
+                      cve = vuln.get('cve') if isinstance(vuln, dict) else None
+                      if not isinstance(cve, dict) or not isinstance(cve.get('id'), str) or not re.fullmatch(r'CVE-[0-9]{4}-[0-9]{4,}', cve['id']):
+                          raise NvdUnavailable("Malformed NVD vulnerability")
+                      page_ids.append(cve['id'])
+                  if len(set(page_ids)) != len(page_ids) or product_cve_ids.intersection(page_ids):
+                      raise NvdUnavailable("Repeated NVD page entries")
+                  product_cve_ids.update(page_ids)
 
-                  while True:
-                      params = {
-                          'virtualMatchString': cpe_match,
-                          'resultsPerPage': results_per_page,
-                          'startIndex': start_index,
+                  # Process CVEs from this page
+                  for vuln in vulnerabilities:
+                      cve = vuln.get('cve', {})
+                      cve_id = cve.get('id', '')
+
+                      # Skip duplicates
+                      if cve_id in seen_cve_ids:
+                          continue
+
+                      # Check if relevant to macOS
+                      if not is_macos_relevant(cve, vendor, prod):
+                          continue
+
+                      seen_cve_ids.add(cve_id)
+
+                      # Extract description
+                      description = ""
+                      for desc in cve.get('descriptions', []):
+                          if desc.get('lang') == 'en':
+                              description = desc.get('value', '')
+                              break
+
+                      # Extract dates
+                      published = cve.get('published', '')
+                      last_modified = cve.get('lastModified', '')
+                      published_date = published.split('T')[0] if published else None
+                      last_modified_date = last_modified.split('T')[0] if last_modified else None
+
+                      # Extract CVSS metrics
+                      metrics = cve.get('metrics', {})
+                      base_score = None
+                      severity = None
+                      cvss_version = None
+                      cvss_vector = None
+
+                      # Try CVSS 3.1 first, then 3.0, then 2.0
+                      for version_key, version_name in [('cvssMetricV31', '3.1'), ('cvssMetricV30', '3.0'), ('cvssMetricV2', '2.0')]:
+                          if version_key in metrics and metrics[version_key]:
+                              cvss_data = metrics[version_key][0].get('cvssData', {})
+                              base_score = cvss_data.get('baseScore')
+                              severity = cvss_data.get('baseSeverity')
+                              cvss_version = version_name
+                              cvss_vector = cvss_data.get('vectorString')
+
+                              # For CVSS 2.0, severity might be in a different location
+                              if not severity and version_key == 'cvssMetricV2':
+                                  severity = metrics[version_key][0].get('baseSeverity')
+                              break
+
+                      # Extract version information
+                      configurations = cve.get('configurations', [])
+                      version_info = {}
+                      for config in configurations:
+                          version_info = extract_version_info(config)
+                          if any(version_info.values()):
+                              break
+
+                      # Extract fixed version
+                      fixed_version = extract_fixed_version(description, version_info)
+
+                      # Check KEV status
+                      kev_info = is_kev(cve_id)
+
+                      # Build CVE record
+                      cve_record = {
+                          'cve_id': cve_id,
+                          'published_date': published_date,
+                          'last_modified_date': last_modified_date,
+                          'description': description,
+                          'base_score': base_score,
+                          'severity': severity,
+                          'cvss_version': cvss_version,
+                          'cvss_vector': cvss_vector,
+                          'affected_version_start': version_info.get('affected_version_start'),
+                          'affected_version_start_type': version_info.get('affected_version_start_type'),
+                          'affected_version_end': version_info.get('affected_version_end'),
+                          'affected_version_end_type': version_info.get('affected_version_end_type'),
+                          'fixed_version': fixed_version,
+                          'is_kev': kev_info is not None,
+                          'kev_date_added': kev_info.get('date_added') if kev_info else None,
+                          'kev_due_date': kev_info.get('due_date') if kev_info else None,
+                          'kev_ransomware_use': kev_info.get('known_ransomware_use') if kev_info else None,
+                          'vendor': vendor,
+                          'product': prod,
                       }
 
-                      data = nvd_request(url, params)
-                      # Carry 200 forward after a shrink; 100 is only a final retry size.
-                      results_per_page = max(PAGE_SIZES[1], params['resultsPerPage'])
-                      vulnerabilities = data['vulnerabilities']
-                      if len(vulnerabilities) > params['resultsPerPage']:
-                          raise NvdUnavailable("Oversized NVD page")
-                      if total_results is None:
-                          total_results = data['totalResults']
-                          log(f"  Found {total_results} total CVEs for {vendor}:{prod}")
-                      if data['totalResults'] != total_results or data.get('startIndex', start_index) != start_index:
-                          raise NvdUnavailable("NVD pagination changed during collection")
-                      if len(vulnerabilities) > total_results - start_index or (not vulnerabilities and start_index < total_results):
-                          raise NvdUnavailable("Incomplete NVD page")
-                      if not vulnerabilities:
-                          break
-                      page_ids = []
-                      for vuln in vulnerabilities:
-                          cve = vuln.get('cve') if isinstance(vuln, dict) else None
-                          if not isinstance(cve, dict) or not isinstance(cve.get('id'), str) or not re.fullmatch(r'CVE-[0-9]{4}-[0-9]{4,}', cve['id']):
-                              raise NvdUnavailable("Malformed NVD vulnerability")
-                          page_ids.append(cve['id'])
-                      if len(set(page_ids)) != len(page_ids) or product_cve_ids.intersection(page_ids):
-                          raise NvdUnavailable("Repeated NVD page entries")
-                      product_cve_ids.update(page_ids)
+                      all_cves.append(cve_record)
 
-                      # Process CVEs from this page
-                      for vuln in vulnerabilities:
-                          cve = vuln.get('cve', {})
-                          cve_id = cve.get('id', '')
+                  # Move to next page
+                  start_index += len(vulnerabilities)
+                  if start_index >= total_results:
+                      break
 
-                          # Skip duplicates
-                          if cve_id in seen_cve_ids:
-                              continue
-
-                          # Check if relevant to macOS
-                          if not is_macos_relevant(cve, vendor, prod):
-                              continue
-
-                          seen_cve_ids.add(cve_id)
-
-                          # Extract description
-                          description = ""
-                          for desc in cve.get('descriptions', []):
-                              if desc.get('lang') == 'en':
-                                  description = desc.get('value', '')
-                                  break
-
-                          # Extract dates
-                          published = cve.get('published', '')
-                          last_modified = cve.get('lastModified', '')
-                          published_date = published.split('T')[0] if published else None
-                          last_modified_date = last_modified.split('T')[0] if last_modified else None
-
-                          # Extract CVSS metrics
-                          metrics = cve.get('metrics', {})
-                          base_score = None
-                          severity = None
-                          cvss_version = None
-                          cvss_vector = None
-
-                          # Try CVSS 3.1 first, then 3.0, then 2.0
-                          for version_key, version_name in [('cvssMetricV31', '3.1'), ('cvssMetricV30', '3.0'), ('cvssMetricV2', '2.0')]:
-                              if version_key in metrics and metrics[version_key]:
-                                  cvss_data = metrics[version_key][0].get('cvssData', {})
-                                  base_score = cvss_data.get('baseScore')
-                                  severity = cvss_data.get('baseSeverity')
-                                  cvss_version = version_name
-                                  cvss_vector = cvss_data.get('vectorString')
-
-                                  # For CVSS 2.0, severity might be in a different location
-                                  if not severity and version_key == 'cvssMetricV2':
-                                      severity = metrics[version_key][0].get('baseSeverity')
-                                  break
-
-                          # Extract version information
-                          configurations = cve.get('configurations', [])
-                          version_info = {}
-                          for config in configurations:
-                              version_info = extract_version_info(config)
-                              if any(version_info.values()):
-                                  break
-
-                          # Extract fixed version
-                          fixed_version = extract_fixed_version(description, version_info)
-
-                          # Check KEV status
-                          kev_info = is_kev(cve_id)
-
-                          # Build CVE record
-                          cve_record = {
-                              'cve_id': cve_id,
-                              'published_date': published_date,
-                              'last_modified_date': last_modified_date,
-                              'description': description,
-                              'base_score': base_score,
-                              'severity': severity,
-                              'cvss_version': cvss_version,
-                              'cvss_vector': cvss_vector,
-                              'affected_version_start': version_info.get('affected_version_start'),
-                              'affected_version_start_type': version_info.get('affected_version_start_type'),
-                              'affected_version_end': version_info.get('affected_version_end'),
-                              'affected_version_end_type': version_info.get('affected_version_end_type'),
-                              'fixed_version': fixed_version,
-                              'is_kev': kev_info is not None,
-                              'kev_date_added': kev_info.get('date_added') if kev_info else None,
-                              'kev_due_date': kev_info.get('due_date') if kev_info else None,
-                              'kev_ransomware_use': kev_info.get('known_ransomware_use') if kev_info else None,
-                              'vendor': vendor,
-                              'product': prod,
-                          }
-
-                          all_cves.append(cve_record)
-
-                      # Move to next page
-                      start_index += len(vulnerabilities)
-                      if start_index >= total_results:
-                          break
-
-                      log(f"    Fetched {start_index}/{total_results} CVEs...")
+                  log(f"    Fetched {start_index}/{total_results} CVEs...")
 
               return all_cves
+
+
+          def page_size_for(bytes_per_cve, current):
+              """Choose a bounded page count from the last successful decompressed size."""
+              if bytes_per_cve <= 0:
+                  return current
+              return next((size for size in PAGE_SIZES if size*bytes_per_cve <= PAGE_BYTE_TARGET), PAGE_SIZES[-1])
+
+          def merge_product_records(groups):
+              records, seen = [], set()
+              for group in groups:
+                  for record in group:
+                      if record['cve_id'] not in seen:
+                          seen.add(record['cve_id'])
+                          records.append(record)
+              return records
+
+          def fetch_cves_for_app(app_key: str, vendor: str, product: str, alt_products: List[str]) -> List[Dict]:
+              """Serial reference path; preserve each app's product precedence."""
+              return merge_product_records(fetch_product_records(vendor, prod) for prod in [product]+alt_products)
 
           def sort_cves(cves: List[Dict]) -> List[Dict]:
               """Sort CVEs by severity and date (most critical/recent first)."""
@@ -802,47 +847,65 @@ jobs:
           # MAIN EXECUTION
           # =============================================================================
 
-          def app_weight(app_key):
-              try:
-                  data = json.loads((CVE_DIR / f'{app_key}.json').read_text())
-                  value = data.get('total_cves', 0)
-                  return value if type(value) is int and value >= 0 else 0
-              except (OSError, ValueError, TypeError, AttributeError):
-                  return 0
+
+          def query_weights(apps):
+              """Use previous product counts only to schedule work, never as CVE data."""
+              weights = {}
+              for key in apps:
+                  try:
+                      data = json.loads((CVE_DIR / f'{key}.json').read_text())
+                      counts = {}
+                      for record in data.get('vulnerabilities', []):
+                          query = (record['vendor'], record['product'])
+                          counts[query] = counts.get(query, 0)+1
+                      for query, count in counts.items():
+                          weights[query] = max(weights.get(query, 0), count)
+                  except (OSError, ValueError, TypeError, AttributeError, KeyError):
+                      continue
+              return weights
 
 
-          def process_app(app_key, mapping):
-              WORK_CONTEXT.app = app_key
+
+          def process_query(query, first_app):
+              WORK_CONTEXT.app = first_app
               began = time.monotonic()
-              log('Starting complete CVE collection')
+              label = ':'.join(query)
+              log('Starting complete product collection: ' + label)
               try:
-                  vendor, product, alternatives = mapping
-                  return sort_cves(fetch_cves_for_app(app_key, vendor, product, alternatives)), None
+                  return fetch_product_records(*query), None, False
               except Exception as exc:
                   error = str(exc) if isinstance(exc, NvdUnavailable) else type(exc).__name__
-                  with CONTROL.lock:
-                      if isinstance(exc, ScanStopped):
-                          CONTROL.stopped_apps.add(app_key)
-                      else:
+                  stopped = isinstance(exc, ScanStopped)
+                  if not stopped:
+                      with CONTROL.lock:
                           CONTROL.stopped = True
                           if CONTROL.first_failure is None:
-                              CONTROL.first_failure = (app_key, error)
-                  return None, error
+                              CONTROL.first_failure = (first_app, error)
+                  return None, error, stopped
               finally:
+                  ended = time.monotonic()
                   with CONTROL.lock:
-                      CONTROL.app_times[app_key] = round(time.monotonic()-began, 3)
-                  log('Finished CVE collection')
+                      CONTROL.query_times[label] = round(ended-began, 3)
+                      CONTROL.query_spans[query] = (began, ended)
+                  log('Finished product collection: ' + label)
                   WORK_CONTEXT.app = None
 
 
+
           def collect_apps(apps):
-              indexed = list(enumerate(apps.items()))
-              ordered = sorted(indexed, key=lambda row:(-app_weight(row[1][0]), row[0]))
+              # Exactly one fresh task per query, even when several apps share it.
+              queries, app_queries = {}, {}
+              for key, (vendor, product, alternatives) in apps.items():
+                  app_queries[key] = list(dict.fromkeys((vendor, prod) for prod in [product]+alternatives))
+                  for query in app_queries[key]:
+                      queries.setdefault(query, key)
+              weights = query_weights(apps)
+              ordered = sorted(queries, key=lambda query:-weights.get(query, 0))
               executor = ThreadPoolExecutor(max_workers=NVD_WORKERS)
               futures = {}
               try:
-                  for index, (key, mapping) in ordered:
-                      futures[key] = executor.submit(process_app, key, mapping)
+                  for query in ordered:
+                      futures[query] = executor.submit(process_query, query, queries[query])
                   remaining = max(0.0, CONTROL.hard_deadline - time.monotonic())
                   done, unfinished = wait(list(futures.values()), timeout=remaining)
                   if unfinished:
@@ -850,12 +913,27 @@ jobs:
                           CONTROL.stopped = True
                       for future in unfinished:
                           future.cancel()
-                      log('SCAN INCOMPLETE: deadline; unfinished apps: ' + ', '.join(k for k,f in futures.items() if f in unfinished))
+                      names = [key for key in apps if any(futures[q] in unfinished for q in app_queries[key])]
+                      log('SCAN INCOMPLETE: deadline; unfinished apps: ' + ', '.join(names))
                       CONTROL.report()
                       sys.stdout.flush()
                       sys.stderr.flush()
                       os._exit(1)
-                  return {key:futures[key].result() for key in apps}
+                  results = {}
+                  for key, required in app_queries.items():
+                      values = [futures[q].result() for q in required]
+                      failures = [value for value in values if value[1] is not None and not value[2]]
+                      stopped = [value for value in values if value[1] is not None and value[2]]
+                      if failures:
+                          results[key] = (None, failures[0][1])
+                      elif stopped:
+                          CONTROL.stopped_apps.add(key)
+                          results[key] = (None, stopped[0][1])
+                      else:
+                          results[key] = (sort_cves(merge_product_records(value[0] for value in values)), None)
+                      spans = [CONTROL.query_spans[q] for q in required if q in CONTROL.query_spans]
+                      CONTROL.app_times[key] = round(max(end for start,end in spans)-min(start for start,end in spans), 3) if spans else 0
+                  return results
               finally:
                   executor.shutdown(wait=False, cancel_futures=True)
 
