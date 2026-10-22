@@ -16,6 +16,10 @@ on:
   schedule:
     - cron: "0 6 * * *" # Run daily at 6 AM UTC
 
+concurrency:
+  group: check-app-cves
+  cancel-in-progress: false
+
 permissions:
   contents: write
 
@@ -53,6 +57,9 @@ jobs:
           import pathlib
           import tempfile
           import re
+          import threading
+          from concurrent.futures import ThreadPoolExecutor, wait
+          from email.utils import parsedate_to_datetime
           from datetime import datetime, timedelta
           from typing import Optional, Dict, List, Any, Tuple
 
@@ -64,8 +71,14 @@ jobs:
           SPECIFIC_APP = os.environ.get('SPECIFIC_APP', '').strip()
           FULL_SYNC = os.environ.get('FULL_SYNC', 'false').lower() == 'true'
 
-          # Rate limiting: 50 requests per 30 seconds with API key
-          REQUEST_DELAY = 0.7  # seconds between requests
+          # One global start slot for every attempt, including retries.
+          REQUEST_DELAY = 6.1
+          NVD_WORKERS = 4
+          SCAN_START_SECONDS = 45 * 60
+          SCAN_HARD_SECONDS = 48 * 60
+          LOG_LOCK = threading.Lock()
+          WORK_CONTEXT = threading.local()
+          CONTROL = None  # seconds between requests
           MAX_RETRIES = 3
           RETRY_DELAY = 5  # seconds
 
@@ -300,34 +313,164 @@ jobs:
           # NVD API FUNCTIONS
           # =============================================================================
 
+          def log(message):
+              app = getattr(WORK_CONTEXT, 'app', None)
+              with LOG_LOCK:
+                  print(f"[{app}] {message}" if app else str(message), flush=True)
+
+
+          class RuntimeControl:
+              """Share attempt pacing, cooldown, deadlines and sanitized measurements."""
+              def __init__(self, spacing, start_seconds, hard_seconds, clock=None, sleeper=None):
+                  self.clock = clock or time.monotonic
+                  self.sleep = sleeper or time.sleep
+                  self.started = self.clock()
+                  self.start_deadline = self.started + start_seconds
+                  self.hard_deadline = self.started + hard_seconds
+                  self.spacing = spacing
+                  self.next_start = self.started
+                  self.cooldown_until = self.started
+                  self.lock = threading.Lock()
+                  self.attempts = []
+                  self.app_times = {}
+                  self.cooldown_seconds = 0.0
+                  self.stopped = False
+
+              def acquire(self):
+                  began = self.clock()
+                  while True:
+                      with self.lock:
+                          now = self.clock()
+                          if self.stopped or now >= self.start_deadline:
+                              raise NvdUnavailable("scan start deadline exceeded; previous data is preserved")
+                          allowed = max(self.next_start, self.cooldown_until)
+                          if now >= allowed:
+                              self.next_start = now + self.spacing
+                              return now - began
+                          delay = min(allowed - now, self.start_deadline - now)
+                      self.sleep(delay)
+
+              def pause(self, seconds):
+                  with self.lock:
+                      remaining = self.start_deadline - self.clock()
+                  if remaining <= 0 or seconds >= remaining:
+                      raise NvdUnavailable("scan start deadline exceeded; previous data is preserved")
+                  self.sleep(seconds)
+
+              def cooldown(self, seconds):
+                  seconds = max(0.0, min(120.0, seconds))
+                  with self.lock:
+                      now = self.clock()
+                      prior = max(now, self.cooldown_until)
+                      self.cooldown_until = max(prior, now + seconds)
+                      self.cooldown_seconds += self.cooldown_until - prior
+
+              def record(self, row):
+                  with self.lock:
+                      self.attempts.append(row)
+                  with LOG_LOCK:
+                      print('NVD_ATTEMPT ' + json.dumps(row, sort_keys=True), flush=True)
+
+              def report(self):
+                  with self.lock:
+                      rows = list(self.attempts)
+                      app_times = dict(self.app_times)
+                      cooldown = self.cooldown_seconds
+                  durations = sorted(r['elapsedSeconds'] for r in rows)
+                  outcomes = {}
+                  for row in rows:
+                      outcomes[row['outcome']] = outcomes.get(row['outcome'], 0) + 1
+                  def percentile(fraction):
+                      return durations[min(len(durations)-1, int((len(durations)-1)*fraction))] if durations else 0
+                  summary = {'attempts':len(rows), 'outcomes':outcomes, 'latencyP50':percentile(.5),
+                             'latencyP90':percentile(.9), 'latencyMax':max(durations, default=0),
+                             'pacerWaitSeconds':round(sum(r['pacerWaitSeconds'] for r in rows), 3),
+                             'globalCooldownSeconds':round(cooldown, 3), 'appWallSeconds':app_times,
+                             'slowestAttempts':sorted(rows, key=lambda r:r['elapsedSeconds'], reverse=True)[:10]}
+                  with LOG_LOCK:
+                      print('CVE_METRICS ' + json.dumps(summary, sort_keys=True), flush=True)
+                  return summary
+
+
+          def exception_outcome(exc):
+              if isinstance(exc, requests.exceptions.Timeout):
+                  return 'timeout'
+              pending = [exc]
+              for _ in range(8):
+                  if not pending:
+                      break
+                  value = pending.pop()
+                  if type(value).__name__ == 'ReadTimeoutError':
+                      return 'body_read_timeout'
+                  if isinstance(value, BaseException):
+                      pending.extend(arg for arg in value.args if isinstance(arg, BaseException))
+                      if value.__cause__ is not None:
+                          pending.append(value.__cause__)
+              return 'connection_error'
+
+
+          def retry_after_seconds(response, fallback):
+              value = getattr(response, 'headers', {}).get('Retry-After', '')
+              try:
+                  return min(120.0, max(fallback, float(value)))
+              except (ValueError, TypeError):
+                  try:
+                      delay = parsedate_to_datetime(value).timestamp() - time.time()
+                      return min(120.0, max(fallback, delay))
+                  except (ValueError, TypeError, OverflowError):
+                      return fallback
+
+
           def nvd_request(url: str, params: Dict = None) -> Dict:
-              """Return a validated page or fail; unavailability never means zero CVEs."""
+              """Return a complete validated page, with every attempt globally paced."""
               headers = {'apiKey': NVD_API_KEY} if NVD_API_KEY else {}
               reason = "NVD request failed"
               for attempt in range(MAX_RETRIES):
+                  waited = CONTROL.acquire()
+                  began = time.monotonic()
+                  outcome = 'unknown'
+                  exception_type = None
+                  response_bytes = None
                   try:
-                      time.sleep(REQUEST_DELAY)
-                      response = requests.get(url, params=params, headers=headers, timeout=60)
+                      response = requests.get(url, params=params, headers=headers, timeout=(10, 60))
+                      outcome = str(response.status_code)
+                      response_bytes = len(getattr(response, 'content', b''))
                       if response.status_code == 200:
-                          data = response.json()
-                          if not isinstance(data, dict) or type(data.get('totalResults')) is not int or data['totalResults'] < 0 or not isinstance(data.get('vulnerabilities'), list):
-                              raise NvdUnavailable("Malformed NVD response")
-                          if 'startIndex' in data and type(data['startIndex']) is not int:
-                              raise NvdUnavailable("Malformed NVD page offset")
-                          return data
-                      reason = f"NVD API returned HTTP {response.status_code}"
-                      if response.status_code not in {403, 429} and response.status_code < 500:
-                          raise NvdUnavailable(reason)
+                          try:
+                              data = response.json()
+                          except (ValueError, TypeError):
+                              outcome = 'bad_json'
+                              reason = 'NVD response was not valid JSON'
+                          else:
+                              if not isinstance(data, dict) or type(data.get('totalResults')) is not int or data['totalResults'] < 0 or not isinstance(data.get('vulnerabilities'), list):
+                                  raise NvdUnavailable("Malformed NVD response")
+                              if 'startIndex' in data and type(data['startIndex']) is not int:
+                                  raise NvdUnavailable("Malformed NVD page offset")
+                              return data
+                      else:
+                          reason = f"NVD API returned HTTP {response.status_code}"
+                          if response.status_code in {403, 429, 503}:
+                              CONTROL.cooldown(retry_after_seconds(response, RETRY_DELAY * (attempt + 1)))
+                          if response.status_code not in {403, 429} and response.status_code < 500:
+                              raise NvdUnavailable(reason)
                   except NvdUnavailable:
                       raise
-                  except requests.exceptions.Timeout:
-                      reason = "NVD request timed out"
-                  except (requests.exceptions.RequestException, ValueError, TypeError):
-                      reason = "NVD response could not be read"
-                  print(f"{reason}, attempt {attempt + 1}/{MAX_RETRIES}")
+                  except requests.exceptions.RequestException as exc:
+                      outcome = exception_outcome(exc)
+                      exception_type = type(exc).__name__
+                      reason = 'NVD provider transport failed (' + outcome + ')'
+                  finally:
+                      CONTROL.record({'app':getattr(WORK_CONTEXT, 'app', ''),
+                                      'product':(params or {}).get('virtualMatchString', ''),
+                                      'startIndex':(params or {}).get('startIndex', 0), 'attempt':attempt+1,
+                                      'outcome':outcome, 'exceptionType':exception_type, 'responseBytes':response_bytes,
+                                      'elapsedSeconds':round(time.monotonic()-began, 3),
+                                      'pacerWaitSeconds':round(waited, 3)})
+                  log(f"{reason}, attempt {attempt + 1}/{MAX_RETRIES}")
                   if attempt < MAX_RETRIES - 1:
-                      time.sleep(RETRY_DELAY * (attempt + 1))
+                      CONTROL.pause(RETRY_DELAY * (attempt + 1))
               raise NvdUnavailable(reason + "; previous data is preserved")
+
 
           def extract_version_info(config: Dict) -> Dict[str, Any]:
               """Extract version range information from CVE configuration."""
@@ -447,7 +590,7 @@ jobs:
                   # Build CPE match string for virtualMatchString (pattern matching)
                   cpe_match = f"cpe:2.3:a:{vendor}:{prod}"
 
-                  print(f"  Querying NVD for CPE pattern: {cpe_match}")
+                  log(f"  Querying NVD for CPE pattern: {cpe_match}")
 
                   url = "https://services.nvd.nist.gov/rest/json/cves/2.0"
 
@@ -468,7 +611,7 @@ jobs:
                       vulnerabilities = data['vulnerabilities']
                       if total_results is None:
                           total_results = data['totalResults']
-                          print(f"  Found {total_results} total CVEs for {vendor}:{prod}")
+                          log(f"  Found {total_results} total CVEs for {vendor}:{prod}")
                       if data['totalResults'] != total_results or data.get('startIndex', start_index) != start_index:
                           raise NvdUnavailable("NVD pagination changed during collection")
                       if len(vulnerabilities) > total_results - start_index or (not vulnerabilities and start_index < total_results):
@@ -578,7 +721,7 @@ jobs:
                       if start_index >= total_results:
                           break
 
-                      print(f"    Fetched {start_index}/{total_results} CVEs...")
+                      log(f"    Fetched {start_index}/{total_results} CVEs...")
 
               return all_cves
 
@@ -632,96 +775,101 @@ jobs:
           # MAIN EXECUTION
           # =============================================================================
 
+          def app_weight(app_key):
+              try:
+                  data = json.loads((CVE_DIR / f'{app_key}.json').read_text())
+                  value = data.get('total_cves', 0)
+                  return value if type(value) is int and value >= 0 else 0
+              except (OSError, ValueError, TypeError, AttributeError):
+                  return 0
+
+
+          def process_app(app_key, mapping):
+              WORK_CONTEXT.app = app_key
+              began = time.monotonic()
+              log('Starting complete CVE collection')
+              try:
+                  vendor, product, alternatives = mapping
+                  return sort_cves(fetch_cves_for_app(app_key, vendor, product, alternatives)), None
+              except Exception as exc:
+                  error = str(exc) if isinstance(exc, NvdUnavailable) else type(exc).__name__
+                  return None, error
+              finally:
+                  with CONTROL.lock:
+                      CONTROL.app_times[app_key] = round(time.monotonic()-began, 3)
+                  log('Finished CVE collection')
+                  WORK_CONTEXT.app = None
+
+
+          def collect_apps(apps):
+              indexed = list(enumerate(apps.items()))
+              ordered = sorted(indexed, key=lambda row:(-app_weight(row[1][0]), row[0]))
+              executor = ThreadPoolExecutor(max_workers=NVD_WORKERS)
+              futures = {}
+              try:
+                  for index, (key, mapping) in ordered:
+                      futures[key] = executor.submit(process_app, key, mapping)
+                  remaining = max(0.0, CONTROL.hard_deadline - time.monotonic())
+                  done, unfinished = wait(list(futures.values()), timeout=remaining)
+                  if unfinished:
+                      with CONTROL.lock:
+                          CONTROL.stopped = True
+                      for future in unfinished:
+                          future.cancel()
+                      log('SCAN INCOMPLETE: deadline; unfinished apps: ' + ', '.join(k for k,f in futures.items() if f in unfinished))
+                      CONTROL.report()
+                      sys.stdout.flush()
+                      sys.stderr.flush()
+                      os._exit(1)
+                  return {key:futures[key].result() for key in apps}
+              finally:
+                  executor.shutdown(wait=False, cancel_futures=True)
+
+
           def main():
+              global CONTROL
               if not NVD_API_KEY:
                   print("ERROR: NVD_API_KEY is required. Add it as a repository secret.")
-                  print("Get an API key at: https://nvd.nist.gov/developers/request-an-api-key")
-                  sys.exit(1)
-
-              print("=" * 60)
-              print("IntuneBrew CVE Scanner")
-              print("=" * 60)
-              print(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}")
-              print(f"Full sync: {FULL_SYNC}")
-              print(f"Specific app: {SPECIFIC_APP or 'All apps'}")
-              print(f"Apps configured: {len(CPE_MAPPINGS)}")
-              print("=" * 60)
-
-              # Pre-fetch KEV catalog
-              fetch_kev_catalog()
-
-              # Determine which apps to process
-              apps_to_process = {}
-              if SPECIFIC_APP:
-                  if SPECIFIC_APP in CPE_MAPPINGS:
-                      apps_to_process[SPECIFIC_APP] = CPE_MAPPINGS[SPECIFIC_APP]
-                  else:
-                      print(f"ERROR: App '{SPECIFIC_APP}' not found in CPE mappings")
-                      print(f"Available apps: {', '.join(sorted(CPE_MAPPINGS.keys()))}")
-                      sys.exit(1)
-              else:
-                  apps_to_process = CPE_MAPPINGS
-
-              # Process each app
-              total_apps = len(apps_to_process)
-              processed = 0
-              errors = []
-
-              for app_key, (vendor, product, alt_products) in apps_to_process.items():
-                  processed += 1
-                  app_name = ' '.join(word.capitalize() for word in app_key.split('_'))
-
-                  print(f"\n[{processed}/{total_apps}] Processing: {app_name}")
-                  print(f"  Vendor: {vendor}, Product: {product}")
-
-                  try:
-                      cves = fetch_cves_for_app(app_key, vendor, product, alt_products)
-
-                      if cves:
-                          # Sort CVEs
-                          sorted_cves = sort_cves(cves)
-
-                          # Save to JSON
-                          save_cve_json(app_key, app_name, sorted_cves)
-
-                          # Print summary
-                          kev_count = sum(1 for c in cves if c.get('is_kev'))
-                          critical = sum(1 for c in cves if (c.get('severity') or '').upper() == 'CRITICAL')
-                          high = sum(1 for c in cves if (c.get('severity') or '').upper() == 'HIGH')
-
-                          print(f"  Total: {len(cves)} CVEs (Critical: {critical}, High: {high}, KEV: {kev_count})")
-                      else:
-                          # Save empty file to indicate we checked
-                          save_cve_json(app_key, app_name, [])
-                          print(f"  No CVEs found")
-
-                  except Exception as e:
-                      print(f"  ERROR: {e}")
-                      errors.append((app_key, str(e)))
-                      import traceback
-                      traceback.print_exc()
-
-              # Print summary
-              print("\n" + "=" * 60)
-              print("SCAN COMPLETE")
-              print("=" * 60)
-              print(f"Apps processed: {processed}")
-              print(f"Errors: {len(errors)}")
-
-              if errors:
-                  print("\nErrors encountered:")
-                  for app_key, error in errors:
-                      print(f"  - {app_key}: {error}")
-
-              if errors:
                   raise SystemExit(1)
-              print("\nDone!")
+              CONTROL = RuntimeControl(REQUEST_DELAY, SCAN_START_SECONDS, SCAN_HARD_SECONDS)
+              try:
+                  print("=" * 60)
+                  print("IntuneBrew CVE Scanner")
+                  print(f"Date: {datetime.now().strftime('%Y-%m-%d %H:%M:%S UTC')}")
+                  print(f"Full sync: {FULL_SYNC}")
+                  print(f"Specific app: {SPECIFIC_APP or 'All apps'}")
+                  print(f"Apps configured: {len(CPE_MAPPINGS)}")
+                  fetch_kev_catalog()
+                  if SPECIFIC_APP:
+                      if SPECIFIC_APP not in CPE_MAPPINGS:
+                          log(f"ERROR: Unknown app {SPECIFIC_APP!r}. Available apps: " + ", ".join(sorted(CPE_MAPPINGS)))
+                          raise SystemExit(1)
+                      apps = {SPECIFIC_APP:CPE_MAPPINGS[SPECIFIC_APP]}
+                  else:
+                      apps = CPE_MAPPINGS
+                  results = collect_apps(apps)
+                  errors = [(key, result[1]) for key, result in results.items() if result[1] is not None]
+                  print("SCAN COMPLETE")
+                  print(f"Apps processed: {len(results)}")
+                  print(f"Errors: {len(errors)}")
+                  if errors:
+                      for key, error in errors:
+                          log(f"ERROR: {key}: {error}")
+                      raise SystemExit(1)
+                  # Keep the entire previous workspace unchanged unless every app finished.
+                  for key, (cves, error) in results.items():
+                      name = ' '.join(word.capitalize() for word in key.split('_'))
+                      save_cve_json(key, name, cves)
+                  print("Done!")
+              finally:
+                  CONTROL.report()
+
 
           if __name__ == '__main__':
               main()
           PYTHON_SCRIPT
 
-          python -u check_cves.py
+          timeout --kill-after=30s 52m python -u check_cves.py
 
       - name: Commit and push CVE files
         run: |
