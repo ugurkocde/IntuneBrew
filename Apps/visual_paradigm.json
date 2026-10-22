@@ -11,5 +11,7 @@
   "sha": "069b0e7a7b53942c4f4022ac42044080a8fd582c6a613fa34999573d7b0d20ea",
   "category": "Developer Tools",
   "publisher": "Visual Paradigm International Ltd.",
-  "previous_version": "18.1"
+  "previous_version": "18.1",
+  "deprecated": true,
+  "deprecation_reason": "Excluded: Homebrew-pinned vendor build 20260914 was deleted (HTTP 404); no catalog-supported source for the current vendor build."
 }

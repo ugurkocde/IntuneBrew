@@ -5,6 +5,7 @@ The following apps are intentionally excluded from collection, packaging, and th
 | Application | Reason |
 |---|---|
 | Mendeley Reference Manager | Explicitly excluded after persistent HTTP 403 from GitHub-hosted download checks. The vendor file remains valid locally; historical metadata is retained. |
+| Visual Paradigm | Homebrew-pinned vendor build was deleted (HTTP 404); current vendor builds have no supported catalog source. Historical metadata is retained. |
 | Antigen | Deprecated Homebrew formula with no supported IntuneBrew packaging recipe; never published as a catalog app. Historical logo is retained. |
 | FileZilla | Explicitly excluded. The submitted download URL expires and is unsuitable for unattended daily synchronization. |
 | Murus Firewall | Disk image requires explicit vendor license acceptance. |

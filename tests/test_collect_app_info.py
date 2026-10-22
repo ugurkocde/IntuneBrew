@@ -838,6 +838,19 @@ class CatalogConsistencyTests(unittest.TestCase):
         self.assertEqual(historical["homebrew_cask"], "mendeley-reference-manager")
         self.assertTrue(historical["deprecation_reason"].startswith("Excluded by request:"))
 
+    def test_visual_paradigm_is_excluded_from_collection_with_history_retained(self):
+        source = "https://formulae.brew.sh/api/cask/visual-paradigm.json"
+        for list_name in (
+            "app_urls", "homebrew_cask_urls", "pkg_urls",
+            "pkg_in_pkg_urls", "pkg_in_dmg_urls",
+        ):
+            with self.subTest(source_list=list_name):
+                self.assertNotIn(source, getattr(collect_app_info, list_name))
+        historical = json.loads((ROOT / "Apps/visual_paradigm.json").read_text())
+        self.assertTrue(historical["deprecated"])
+        self.assertEqual(historical["homebrew_cask"], "visual-paradigm")
+        self.assertTrue(historical["deprecation_reason"].startswith("Excluded:"))
+
     def test_supported_catalog_matches_publishable_apps(self):
         publisher_spec = importlib.util.spec_from_file_location(
             "publish_catalog", ROOT / ".github/scripts/publish_catalog.py"
