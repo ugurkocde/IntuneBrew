@@ -56,6 +56,7 @@ jobs:
           import time
           import pathlib
           import tempfile
+          import hashlib
           import re
           import threading
           from concurrent.futures import ThreadPoolExecutor, wait
@@ -67,6 +68,7 @@ jobs:
           # CONFIGURATION
           # =============================================================================
 
+          PUBLICATION_PATH = pathlib.Path(os.environ['RUNNER_TEMP']) / 'cve-publication.json'
           NVD_API_KEY = os.environ.get('NVD_API_KEY')
           SPECIFIC_APP = os.environ.get('SPECIFIC_APP', '').strip()
           FULL_SYNC = os.environ.get('FULL_SYNC', 'false').lower() == 'true'
@@ -344,6 +346,7 @@ jobs:
                   self.query_spans = {}
                   self.cooldown_seconds = 0.0
                   self.stopped = False
+                  self.kev_failure = False
                   self.first_failure = None
                   self.stopped_apps = set()
 
@@ -665,7 +668,7 @@ jobs:
                       total_results = data['totalResults']
                       log(f"  Found {total_results} total CVEs for {vendor}:{prod}")
                   if data['totalResults'] != total_results or data.get('startIndex', start_index) != start_index:
-                      raise NvdUnavailable("NVD pagination changed during collection")
+                      raise NvdUnavailable(f"NVD pagination changed during collection; total {total_results} to {data['totalResults']}; offset {start_index} to {data.get('startIndex', start_index)}")
                   if len(vulnerabilities) > total_results - start_index or (not vulnerabilities and start_index < total_results):
                       raise NvdUnavailable("Incomplete NVD page")
                   if not vulnerabilities:
@@ -878,7 +881,8 @@ jobs:
                   stopped = isinstance(exc, ScanStopped)
                   if not stopped:
                       with CONTROL.lock:
-                          CONTROL.stopped = True
+                          if isinstance(exc, KevUnavailable):
+                              CONTROL.kev_failure = True
                           if CONTROL.first_failure is None:
                               CONTROL.first_failure = (first_app, error)
                   return None, error, stopped
@@ -938,8 +942,56 @@ jobs:
                   executor.shutdown(wait=False, cancel_futures=True)
 
 
+          def publication_allowed(selected, failed, kev_failure):
+              return selected > 0 and failed < selected and 10 * failed <= selected and not kev_failure
+
+
+          def publish_validated_apps(apps, results):
+              validated = [(key, cves) for key, (cves, error) in results.items() if error is None]
+              stale = [{'app_key':key, 'reason':re.sub(r'[^A-Za-z0-9 (),;:._=-]', '_', error)[:240]}
+                       for key, (cves, error) in results.items() if error is not None]
+              if PUBLICATION_PATH.resolve().is_relative_to(CVE_DIR.resolve()) or not all(isinstance(key, str) and re.fullmatch(r'[a-z0-9_]+', key) for key in apps):
+                  raise SystemExit(1)
+              if set(results) != set(apps) or not publication_allowed(len(apps), len(stale), CONTROL.kev_failure or kev_failed):
+                  raise SystemExit(1)
+              # The manifest authorizes downstream writes, so publish it only after every save succeeds.
+              records = []
+              for key, cves in validated:
+                  name = ' '.join(word.capitalize() for word in key.split('_'))
+                  save_cve_json(key, name, cves)
+                  payload = (CVE_DIR / f'{key}.json').read_bytes()
+                  records.append({'app_key':key, 'sha256':hashlib.sha256(payload).hexdigest(), 'total_cves':len(cves)})
+              manifest = {'schema':1, 'run_id':int(os.environ['GITHUB_RUN_ID']),
+                          'run_attempt':int(os.environ['GITHUB_RUN_ATTEMPT']), 'selected_count':len(apps),
+                          'selected_apps':sorted(apps), 'failure_limit_percent':10, 'kev_entries':len(kev_cache),
+                          'validated':sorted(records, key=lambda row:row['app_key']), 'stale':stale}
+              temporary = None
+              try:
+                  with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=PUBLICATION_PATH.parent,
+                                                   prefix='.cve-publication.', suffix='.tmp', delete=False) as handle:
+                      temporary = pathlib.Path(handle.name)
+                      json.dump(manifest, handle, sort_keys=True)
+                  os.replace(temporary, PUBLICATION_PATH)
+              finally:
+                  if temporary is not None:
+                      temporary.unlink(missing_ok=True)
+              print('PUBLICATION_MANIFEST ' + json.dumps(manifest, sort_keys=True))
+              if stale:
+                  print('::warning::CVE data preserved for stale apps: ' + ', '.join(row['app_key'] for row in stale))
+              summary = os.environ.get('GITHUB_STEP_SUMMARY')
+              if summary:
+                  with open(summary, 'a', encoding='utf-8') as handle:
+                      handle.write(f"## CVE publication\n\nValidated: {len(validated)}; stale: {len(stale)} of {len(apps)}.\n\n")
+                      if stale:
+                          handle.write('| Stale app | Reason (previous data preserved) |\n| --- | --- |\n')
+                          for row in stale:
+                              handle.write(f"| {row['app_key']} | {row['reason']} |\n")
+              return manifest
+
+
           def main():
               global CONTROL
+              PUBLICATION_PATH.unlink(missing_ok=True)
               if not NVD_API_KEY:
                   print("ERROR: NVD_API_KEY is required. Add it as a repository secret.")
                   raise SystemExit(1)
@@ -967,17 +1019,9 @@ jobs:
                   stopped = [key for key, error in errors if key in CONTROL.stopped_apps]
                   print(f"Errors: {len(failures)}")
                   print(f"Stopped apps: {len(stopped)}")
-                  if errors:
-                      for key, error in failures:
-                          log(f"ERROR: {key}: {error}")
-                      if stopped:
-                          origin = CONTROL.first_failure[0] if CONTROL.first_failure else 'an earlier failure'
-                          log(f"SCAN STOPPED after {origin}; not completed: " + ", ".join(stopped))
-                      raise SystemExit(1)
-                  # Keep the entire previous workspace unchanged unless every app finished.
-                  for key, (cves, error) in results.items():
-                      name = ' '.join(word.capitalize() for word in key.split('_'))
-                      save_cve_json(key, name, cves)
+                  for key, error in errors:
+                      log(f"ERROR: {key}: {error}")
+                  publish_validated_apps(apps, results)
                   print("Done!")
               finally:
                   CONTROL.report()
@@ -991,7 +1035,7 @@ jobs:
 
       - name: Commit and push CVE files
         run: |
-          if [[ -n $(git status --porcelain) ]]; then
+          if [[ -n $(git status --porcelain -- CVE/) ]]; then
             git config --global user.name 'GitHub Action'
             git config --global user.email 'action@github.com'
             git add CVE/
@@ -1023,4 +1067,4 @@ jobs:
           fi
 
           pip install supabase
-          python .github/scripts/sync_cves_to_supabase.py --cve-dir ./CVE --apps-dir ./Apps
+          python .github/scripts/sync_cves_to_supabase.py --cve-dir ./CVE --apps-dir ./Apps --manifest "$RUNNER_TEMP/cve-publication.json"

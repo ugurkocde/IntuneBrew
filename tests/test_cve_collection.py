@@ -3,6 +3,7 @@ import ast
 import contextlib
 import datetime
 import io
+import hashlib
 import json
 import os
 import re
@@ -87,7 +88,14 @@ class CollectionTests(unittest.TestCase):
     def setUp(self):
         temporary = tempfile.TemporaryDirectory()
         self.addCleanup(temporary.cleanup)
-        self.directory = Path(temporary.name)
+        self.root = Path(temporary.name)
+        self.directory = self.root / "CVE"
+        self.directory.mkdir()
+        self.manifest = self.root / "cve-publication.json"
+        self.summary = self.root / "summary.md"
+        environment = mock.patch.dict(os.environ, {"GITHUB_RUN_ID":"123", "GITHUB_RUN_ATTEMPT":"1", "GITHUB_STEP_SUMMARY":str(self.summary), "RUNNER_TEMP":str(self.root)})
+        environment.start()
+        self.addCleanup(environment.stop)
         self.previous = b'{"fixture": "previous data stays intact"}\n'
         self.file = self.directory / 'fixture_app.json'
         self.file.write_bytes(self.previous)
@@ -100,7 +108,7 @@ class CollectionTests(unittest.TestCase):
         self.ns = {k: getattr(typing, k) for k in ['Dict', 'List', 'Optional', 'Any', 'Tuple']}
         self.ns.update({'os': os, 're': re, 'sys': sys, 'json': json, 'pathlib': __import__('pathlib'),
                         'tempfile': tempfile, 'datetime': datetime.datetime, 'timedelta': datetime.timedelta,
-                        'time': time, 'requests': requests,
+                        'time': time, 'requests': requests, 'hashlib':hashlib, 'PUBLICATION_PATH':self.manifest,
                         'NVD_API_KEY': 'FAKE_TEST_KEY', 'SPECIFIC_APP': '', 'FULL_SYNC': False,
                         'CVE_DIR': self.directory, 'CPE_MAPPINGS': {'fixture_app': ('fake_vendor', 'fake_product', [])},
                         'MAX_RETRIES': 3, 'PAGE_SIZES': (500, 200, 100, 50), 'FIRST_PAGE_SIZE': 100,
@@ -271,6 +279,8 @@ class CollectionTests(unittest.TestCase):
         self.assertIn('          timeout --kill-after=30s 52m python -u check_cves.py', text)
         self.assertIn('  group: check-app-cves\n  cancel-in-progress: false', text)
         self.assertIn('    timeout-minutes: 60', text)
+        self.assertIn('--manifest \"$RUNNER_TEMP/cve-publication.json\"', sync)
+        self.assertIn('git status --porcelain -- CVE/', text)
 
 
     def test_parallel_output_matches_serial_with_alternates_and_pages(self):
@@ -294,13 +304,39 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual(serial, {key:(self.directory / f'{key}.json').read_bytes() for key in mappings})
         self.assertEqual(sum(kind == 'kev' for kind, _ in self.calls), 2)
 
-    def test_failed_app_prevents_all_file_changes(self):
-        self.ns['CPE_MAPPINGS']['other'] = ('vendor', 'other', [])
-        other = self.directory / 'other.json'
-        other.write_bytes(self.previous)
-        self.nvd = [page(), Response(404)]
-        self.assert_failed_and_preserved()
-        self.assertEqual(other.read_bytes(), self.previous)
+    def install_partial_fixture(self, count=10, failed=('fixture_app',)):
+        keys = ['fixture_app']+[f'app_{i}' for i in range(1, count)]
+        self.ns['CPE_MAPPINGS'] = {key:('vendor', key, []) for key in keys}
+        for key in keys:
+            (self.directory / f'{key}.json').write_bytes(self.previous)
+        def transport(url, **kw):
+            if url.endswith('/kev'):
+                return Response(data={'vulnerabilities':[{'cveID':'CVE-2099-0001'}]})
+            params = kw['params'];key = params['virtualMatchString'].split(':')[4]
+            self.calls.append(('nvd', params['startIndex']))
+            if key in failed:
+                return page(2, ['CVE-2099-0001']) if params['startIndex']==0 else page(3, ['CVE-2099-0002'], 1)
+            return page()
+        self.ns['requests'].get = transport
+        return keys
+
+    def test_partial_drift_preserves_failed_file_and_publishes_complete_apps(self):
+        keys = self.install_partial_fixture()
+        self.run_main()
+        manifest = json.loads(self.manifest.read_text())
+        self.assertEqual(self.file.read_bytes(), self.previous)
+        self.assertEqual([x['app_key'] for x in manifest['stale']], ['fixture_app'])
+        self.assertEqual(len(manifest['validated']), 9)
+        for row in manifest['validated']:
+            path = self.directory / (row['app_key']+'.json')
+            self.assertEqual(hashlib.sha256(path.read_bytes()).hexdigest(), row['sha256'])
+            self.assertEqual(json.loads(path.read_text())['total_cves'], 0)
+        self.assertEqual(set(manifest['selected_apps']), set(keys))
+        self.assertFalse(self.manifest.is_relative_to(self.directory))
+        self.assertNotIn('FAKE_TEST_KEY', self.manifest.read_text())
+        self.assertIn('fixture_app', self.summary.read_text())
+        self.assertFalse(self.ns['CONTROL'].stopped)
+
 
     def test_global_spacing_including_retry_and_rolling_window(self):
         now = [0.0]
@@ -373,6 +409,7 @@ class CollectionTests(unittest.TestCase):
                     self.ns['collect_apps'](self.ns['CPE_MAPPINGS'])
             self.assertTrue(entered.is_set())
             self.assertTrue(any('SCAN INCOMPLETE' in line for line in output))
+            self.assertFalse(self.manifest.exists())
             self.assertTrue(any('CVE_METRICS' in line for line in output))
             self.assertEqual(self.file.read_bytes(), self.previous)
         finally:
@@ -435,23 +472,16 @@ class CollectionTests(unittest.TestCase):
         self.assertIn('fixture_app', diagnostic[0])
         self.assertEqual(self.calls, [('kev', None)])
 
-    def test_first_failure_stops_queued_requests_and_keeps_original_cause(self):
-        self.ns['CPE_MAPPINGS']['queued_app'] = ('vendor', 'queued', [])
-        other = self.directory / 'queued_app.json'
-        other.write_bytes(self.previous)
-        self.nvd = [Response(404)]
+    def test_failed_query_does_not_stop_later_app_requests(self):
+        self.install_partial_fixture()
         output = []
-        self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
-        self.assert_failed_and_preserved()
-        self.assertEqual(other.read_bytes(), self.previous)
-        self.assertEqual(sum(name == 'nvd' for name, _ in self.calls), 1)
-        control = self.ns['CONTROL']
-        self.assertTrue(control.stopped)
-        self.assertEqual(control.first_failure[0], 'fixture_app')
-        self.assertIn('HTTP 404', control.first_failure[1])
-        self.assertEqual(control.stopped_apps, {'queued_app'})
-        self.assertEqual(sum('ERROR:' in line for line in output), 1)
-        self.assertTrue(any('SCAN STOPPED after fixture_app' in line and 'queued_app' in line for line in output))
+        self.ns['print'] = lambda *args, **kw:output.append(' '.join(map(str,args)))
+        self.run_main()
+        self.assertEqual(sum(kind=='nvd' for kind,start in self.calls), 11)
+        self.assertEqual(self.ns['CONTROL'].first_failure[0], 'fixture_app')
+        self.assertFalse(self.ns['CONTROL'].stopped)
+        self.assertTrue(any(line.startswith('::warning::') and 'fixture_app' in line for line in output))
+
 
     def test_waiter_observes_stop_and_pause_does_not_sleep(self):
         now = [0.0]
@@ -477,42 +507,18 @@ class CollectionTests(unittest.TestCase):
         self.assertNotIsInstance(expired.exception, self.ns['ScanStopped'])
         self.assertIn('deadline exceeded', str(expired.exception))
 
-    def test_inflight_requests_finish_but_no_followup_pages_start(self):
-        self.ns.update(NVD_WORKERS=3, CPE_MAPPINGS={key: ('vendor', key, []) for key in ['first', 'second', 'third']})
-        for key in self.ns['CPE_MAPPINGS']:
-            (self.directory / f'{key}.json').write_bytes(self.previous)
-        barrier = threading.Barrier(3)
-        failed = threading.Event()
-        calls = []
-        calls_lock = threading.Lock()
-        original = self.ns['process_query']
-        def process(key, mapping):
-            result = original(key, mapping)
-            if key[1] == 'first':
-                failed.set()
-            return result
-        def transport(url, **kw):
-            if url.endswith('/kev'):
-                return Response(data={'vulnerabilities': [{'cveID': 'CVE-2099-0001'}]})
-            params = kw['params']
-            product = params['virtualMatchString'].split(':')[4]
-            with calls_lock:
-                calls.append((product, params['startIndex']))
-            self.assertEqual(params['startIndex'], 0)
-            barrier.wait(timeout=10)
-            if product == 'first':
-                return Response(404)
-            self.assertTrue(failed.wait(10))
-            return page(2, ['CVE-2099-0001'])
-        self.ns['process_query'] = process
-        self.ns['requests'].get = transport
-        self.assert_failed_and_preserved()
-        self.assertEqual(len(calls), 3)
-        self.assertEqual(len(self.ns['CONTROL'].attempts), 3)
-        self.assertEqual(self.ns['CONTROL'].first_failure[0], 'first')
-        self.assertEqual(self.ns['CONTROL'].stopped_apps, {'second', 'third'})
-        for key in self.ns['CPE_MAPPINGS']:
-            self.assertEqual((self.directory / f'{key}.json').read_bytes(), self.previous)
+    def test_unrelated_inflight_products_finish_all_pages_after_one_failure(self):
+        self.install_partial_fixture()
+        self.ns['NVD_WORKERS'] = 4
+        original = self.ns['fetch_product_records']
+        def product(vendor, name):
+            if name=='fixture_app':raise self.ns['NvdUnavailable']('NVD HTTP 404')
+            return original(vendor, name)
+        self.ns['fetch_product_records'] = product
+        self.run_main()
+        self.assertEqual(len(json.loads(self.manifest.read_text())['validated']), 9)
+        self.assertFalse(self.ns['CONTROL'].stopped)
+
 
     def test_production_constants_are_bounded(self):
         source = collector_source()
@@ -566,17 +572,18 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual(self.ns['CONTROL'].report()['requestedSizes'], {'100': 1, '50': 1, '500': 2})
         self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
 
-    def test_five_body_failures_are_bounded_and_stop_queued_apps(self):
-        self.ns['CPE_MAPPINGS']['queued_app'] = ('vendor', 'queued', [])
-        other = self.directory / 'queued_app.json'
-        other.write_bytes(self.previous)
-        self.nvd = [NetworkError(ReadTimeoutError()) for _ in range(5)]
-        self.assert_failed_and_preserved()
-        self.assertEqual(self.sizes, [100, 50, 50, 50, 50])
-        self.assertEqual([start for name, start in self.calls if name == 'nvd'], [0, 0, 0, 0, 0])
-        self.assertEqual(other.read_bytes(), self.previous)
-        self.assertEqual(self.ns['CONTROL'].first_failure[0], 'fixture_app')
-        self.assertIn('body_read_timeout', self.ns['CONTROL'].first_failure[1])
+    def test_five_body_failures_are_bounded_but_other_apps_publish(self):
+        self.install_partial_fixture()
+        original_get = self.get
+        self.nvd = [NetworkError(ReadTimeoutError()) for _ in range(5)]+[page() for _ in range(9)]
+        self.ns['requests'].get = original_get
+        self.kev = [Response(data={'vulnerabilities':[{'cveID':'CVE-2099-0001'}]})]
+        self.run_main()
+        self.assertEqual(self.sizes[:5], [100,50,50,50,50])
+        self.assertEqual(len(self.sizes),14)
+        self.assertEqual(self.file.read_bytes(),self.previous)
+        self.assertEqual(len(json.loads(self.manifest.read_text())['validated']),9)
+
 
     def test_byte_sized_followup_and_alternate_restarts_100(self):
         self.ns['CPE_MAPPINGS']['fixture_app'] = ('fake_vendor', 'fake_product', ['fake_alternate'])
@@ -610,16 +617,16 @@ class CollectionTests(unittest.TestCase):
         self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
         self.assertEqual(json.loads(self.file.read_text())['total_cves'], 0)
 
-    def test_content_decoding_exhaustion_stops_queued_work_and_keeps_files(self):
-        self.ns['CPE_MAPPINGS']['queued_app'] = ('vendor', 'queued', [])
-        other = self.directory / 'queued_app.json'
-        other.write_bytes(self.previous)
-        self.nvd = [ContentDecodingError() for _ in range(5)]
-        self.assert_failed_and_preserved()
-        self.assertEqual(self.sizes, [100, 50, 50, 50, 50])
-        self.assertEqual(other.read_bytes(), self.previous)
-        self.assertEqual(self.ns['CONTROL'].first_failure[0], 'fixture_app')
-        self.assertEqual(self.ns['CONTROL'].stopped_apps, {'queued_app'})
+    def test_content_decoding_exhaustion_preserves_only_failed_app(self):
+        self.install_partial_fixture()
+        self.nvd = [ContentDecodingError() for _ in range(5)]+[page() for _ in range(9)]
+        self.ns['requests'].get = self.get
+        self.kev = [Response(data={'vulnerabilities':[{'cveID':'CVE-2099-0001'}]})]
+        self.run_main()
+        self.assertEqual(self.file.read_bytes(),self.previous)
+        self.assertEqual(len(json.loads(self.manifest.read_text())['validated']),9)
+        self.assertEqual(self.ns['CONTROL'].stopped_apps,set())
+
 
     def test_shrink_keeps_oversize_drift_offset_and_repeat_guards(self):
         for defect in ['oversized', 'total', 'offset', 'repeated']:
@@ -640,7 +647,7 @@ class CollectionTests(unittest.TestCase):
                 self.assert_failed_and_preserved()
                 expected = {'oversized': 'Oversized NVD page', 'total': 'NVD pagination changed during collection',
                             'offset': 'NVD pagination changed during collection', 'repeated': 'Repeated NVD page entries'}
-                self.assertEqual(self.ns['CONTROL'].first_failure[1], expected[defect])
+                self.assertTrue(self.ns['CONTROL'].first_failure[1].startswith(expected[defect]))
 
     def test_shrinking_retry_uses_global_pacer(self):
         now, starts = [0.0], []
@@ -695,19 +702,17 @@ class CollectionTests(unittest.TestCase):
             self.assertEqual(data['vulnerabilities'][0]['product'], expected)
         self.assertEqual(sum(kind == 'kev' for kind, _ in self.calls), 1)
 
-    def test_shared_failure_is_original_for_both_apps_and_preserves_files(self):
-        self.ns['CPE_MAPPINGS'] = {'fixture_app': ('vendor', 'shared', []),
-                                   'second': ('vendor', 'shared', []),
-                                   'queued': ('vendor', 'queued', [])}
-        for key in ['second', 'queued']:
-            (self.directory/f'{key}.json').write_bytes(self.previous)
-        self.nvd = [Response(404)]
-        self.assert_failed_and_preserved()
-        self.assertEqual(sum(kind == 'nvd' for kind, _ in self.calls), 1)
-        self.assertEqual(self.ns['CONTROL'].first_failure[0], 'fixture_app')
-        self.assertEqual(self.ns['CONTROL'].stopped_apps, {'queued'})
-        for key in self.ns['CPE_MAPPINGS']:
-            self.assertEqual((self.directory/f'{key}.json').read_bytes(), self.previous)
+    def test_shared_failure_preserves_dependents_and_allows_other_apps(self):
+        self.install_partial_fixture(count=20)
+        self.ns['CPE_MAPPINGS']['app_1'] = ('vendor','fixture_app',[])
+        self.run_main()
+        manifest=json.loads(self.manifest.read_text())
+        self.assertEqual({r['app_key'] for r in manifest['stale']},{'fixture_app','app_1'})
+        self.assertEqual(len(manifest['validated']),18)
+        for key in ['fixture_app','app_1']:
+            self.assertEqual((self.directory/f'{key}.json').read_bytes(),self.previous)
+        self.assertEqual(len({r['reason'] for r in manifest['stale']}),1)
+
 
     def test_byte_size_selection_is_bounded(self):
         choose = self.ns['page_size_for']
@@ -832,6 +837,67 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual(self.sizes, [100]*3)
         self.assertTrue(all(row['headersSeconds'] is None for row in self.ns['CONTROL'].attempts))
         self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
+
+    def test_more_than_ten_percent_fails_before_any_save(self):
+        keys=self.install_partial_fixture(failed=('fixture_app','app_1'))
+        self.assert_failed_and_preserved()
+        self.assertFalse(self.manifest.exists())
+        for key in keys:self.assertEqual((self.directory/f'{key}.json').read_bytes(),self.previous)
+
+    def test_exact_failure_threshold_and_zero_success_boundary(self):
+        allowed=self.ns['publication_allowed']
+        self.assertTrue(allowed(126,12,False));self.assertFalse(allowed(126,13,False))
+        self.assertTrue(allowed(10,1,False));self.assertFalse(allowed(10,2,False))
+        self.assertFalse(allowed(1,1,False));self.assertFalse(allowed(0,0,False))
+        self.assertFalse(allowed(126,0,True))
+
+    def test_late_kev_failure_blocks_all_publication(self):
+        self.install_partial_fixture()
+        original=self.ns['fetch_product_records']
+        def fetch(vendor,product):
+            if product=='fixture_app':raise self.ns['KevUnavailable']('provider failed')
+            return original(vendor,product)
+        self.ns['fetch_product_records']=fetch
+        self.assert_failed_and_preserved()
+        self.assertTrue(self.ns['CONTROL'].kev_failure)
+        self.assertFalse(self.manifest.exists())
+
+    def test_save_failure_leaves_no_authorizing_manifest(self):
+        self.install_partial_fixture(failed=())
+        original=self.ns['save_cve_json'];count=[0]
+        def save(*args):
+            count[0]+=1
+            if count[0]==2:raise OSError('fixture disk failure')
+            return original(*args)
+        self.ns['save_cve_json']=save
+        with self.assertRaises(OSError):self.run_main()
+        self.assertFalse(self.manifest.exists())
+
+    def test_unexpected_exception_is_sanitized_per_app(self):
+        self.install_partial_fixture()
+        original=self.ns['fetch_product_records']
+        def fetch(vendor,product):
+            if product=='fixture_app':raise TypeError('FAKE_TEST_KEY')
+            return original(vendor,product)
+        self.ns['fetch_product_records']=fetch
+        self.run_main()
+        manifest=json.loads(self.manifest.read_text())
+        self.assertEqual(manifest['stale'],[{'app_key':'fixture_app','reason':'TypeError'}])
+
+    def test_start_deadline_failure_is_per_app_with_same_threshold(self):
+        for count in [10,9]:
+            with self.subTest(count=count):
+                self.install_partial_fixture(count=count)
+                original=self.ns['fetch_product_records']
+                def fetch(vendor,product):
+                    if product=='fixture_app':raise self.ns['NvdUnavailable']('scan start deadline exceeded; previous data is preserved')
+                    return []
+                self.ns['fetch_product_records']=fetch
+                if count==10:self.run_main();self.assertTrue(self.manifest.exists())
+                else:
+                    with self.assertRaises(SystemExit):self.run_main()
+                    self.assertFalse(self.manifest.exists())
+                self.ns['fetch_product_records']=original
 
 
 if __name__ == '__main__':
