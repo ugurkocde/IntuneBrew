@@ -11,6 +11,10 @@ import sys
 import tempfile
 import types
 import typing
+import threading
+import time
+from concurrent.futures import ThreadPoolExecutor, wait
+from email.utils import parsedate_to_datetime
 import unittest
 from unittest import mock
 
@@ -66,10 +70,14 @@ class CollectionTests(unittest.TestCase):
         self.ns = {k: getattr(typing, k) for k in ['Dict', 'List', 'Optional', 'Any', 'Tuple']}
         self.ns.update({'os': os, 're': re, 'sys': sys, 'json': json, 'pathlib': __import__('pathlib'),
                         'tempfile': tempfile, 'datetime': datetime.datetime, 'timedelta': datetime.timedelta,
-                        'time': types.SimpleNamespace(sleep=lambda _: None), 'requests': requests,
+                        'time': time, 'requests': requests,
                         'NVD_API_KEY': 'FAKE_TEST_KEY', 'SPECIFIC_APP': '', 'FULL_SYNC': False,
                         'CVE_DIR': self.directory, 'CPE_MAPPINGS': {'fixture_app': ('fake_vendor', 'fake_product', [])},
-                        'MAX_RETRIES': 3, 'REQUEST_DELAY': 0.7, 'RETRY_DELAY': 5,
+                        'MAX_RETRIES': 3, 'REQUEST_DELAY': 0, 'RETRY_DELAY': 0,
+                        'NVD_WORKERS': 1, 'SCAN_START_SECONDS': 2700, 'SCAN_HARD_SECONDS': 2880,
+                        'threading': threading, 'ThreadPoolExecutor': ThreadPoolExecutor, 'wait': wait,
+                        'parsedate_to_datetime': parsedate_to_datetime,
+                        'LOG_LOCK': threading.Lock(), 'WORK_CONTEXT': threading.local(), 'CONTROL': None,
                         'KEV_CATALOG_URL': 'https://example.test/kev', 'kev_cache': {},
                         'kev_loaded': False, 'kev_failed': False, 'print': lambda *a, **k: None})
         nodes = [n for n in ast.parse(collector_source()).body if isinstance(n, (ast.FunctionDef, ast.ClassDef))]
@@ -227,7 +235,160 @@ class CollectionTests(unittest.TestCase):
         sync = text.split('      - name: Sync CVE data to Supabase', 1)[1]
         self.assertIn('        if: ${{ success() }}', sync)
         self.assertNotIn('always()', sync)
-        self.assertIn('          python -u check_cves.py', text)
+        self.assertIn('          timeout --kill-after=30s 52m python -u check_cves.py', text)
+        self.assertIn('  group: check-app-cves\n  cancel-in-progress: false', text)
+        self.assertIn('    timeout-minutes: 60', text)
+
+
+    def test_parallel_output_matches_serial_with_alternates_and_pages(self):
+        mappings = {f'app_{i}': ('vendor', f'product_{i}', ['shared'] if i % 2 else []) for i in range(6)}
+        self.ns['CPE_MAPPINGS'] = mappings
+        lock = threading.Lock()
+        def router(url, **kw):
+            with lock:
+                self.calls.append(('kev' if url.endswith('/kev') else 'nvd', None))
+            if url.endswith('/kev'):
+                return Response(data={'vulnerabilities':[{'cveID':'CVE-2099-0001'}]})
+            params = kw['params']
+            start = params['startIndex']
+            return page(2, [f'CVE-2099-{start+1:04d}'], start)
+        self.ns['requests'].get = router
+        self.ns['NVD_WORKERS'] = 1
+        self.run_main()
+        serial = {key:(self.directory / f'{key}.json').read_bytes() for key in mappings}
+        self.ns.update(NVD_WORKERS=4, kev_loaded=False, kev_failed=False, kev_cache={})
+        self.run_main()
+        self.assertEqual(serial, {key:(self.directory / f'{key}.json').read_bytes() for key in mappings})
+        self.assertEqual(sum(kind == 'kev' for kind, _ in self.calls), 2)
+
+    def test_failed_app_prevents_all_file_changes(self):
+        self.ns['CPE_MAPPINGS']['other'] = ('vendor', 'other', [])
+        other = self.directory / 'other.json'
+        other.write_bytes(self.previous)
+        self.nvd = [page(), Response(404)]
+        self.assert_failed_and_preserved()
+        self.assertEqual(other.read_bytes(), self.previous)
+
+    def test_global_spacing_including_retry_and_rolling_window(self):
+        now = [0.0]
+        clock_lock = threading.Lock()
+        def clock():
+            with clock_lock: return now[0]
+        def sleep(delay):
+            with clock_lock: now[0] += delay
+        control = self.ns['RuntimeControl'](6.1, 1000, 1100, clock, sleep)
+        starts = []
+        def acquire():
+            control.acquire()
+            with control.lock: starts.append(control.next_start - 6.1)
+        with ThreadPoolExecutor(4) as pool:
+            list(pool.map(lambda _: acquire(), range(12)))
+        starts.sort()
+        self.assertTrue(all(b-a >= 6.1-1e-8 for a,b in zip(starts, starts[1:])))
+        self.assertTrue(all(sum(t <= x < t+30 for x in starts) <= 5 for t in starts))
+        self.assertTrue(control.lock.acquire(blocking=False))
+        control.lock.release()
+
+    def test_waiter_rechecks_global_cooldown_outside_lock(self):
+        now = [0.0]
+        control = None
+        sleeps = []
+        def sleep(delay):
+            self.assertTrue(control.lock.acquire(blocking=False))
+            control.lock.release()
+            sleeps.append(delay)
+            if len(sleeps) == 1: control.cooldown(25)
+            now[0] += delay
+        control = self.ns['RuntimeControl'](6.1, 100, 110, lambda:now[0], sleep)
+        control.acquire()
+        control.acquire()
+        self.assertGreaterEqual(now[0], 25)
+        self.assertGreater(len(sleeps), 1)
+
+    def test_start_deadline_prevents_provider_attempt(self):
+        control = self.ns['RuntimeControl'](6.1, 0, 10)
+        self.ns['CONTROL'] = control
+        with self.assertRaises(self.ns['NvdUnavailable']):
+            self.ns['nvd_request']('https://example.test/nvd')
+        self.assertEqual(self.calls, [])
+        self.assertEqual(self.file.read_bytes(), self.previous)
+
+    def test_hard_deadline_reports_and_exits_without_join(self):
+        entered, release = threading.Event(), threading.Event()
+        def blocked(*args):
+            entered.set()
+            release.wait(2)
+            return [], None
+        self.ns['CONTROL'] = self.ns['RuntimeControl'](0, 10, .03)
+        self.ns['process_app'] = blocked
+        output = []
+        self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str,args)))
+        class DeadlineExit(BaseException): pass
+        try:
+            with mock.patch.object(os, '_exit', side_effect=DeadlineExit):
+                with self.assertRaises(DeadlineExit):
+                    self.ns['collect_apps'](self.ns['CPE_MAPPINGS'])
+            self.assertTrue(entered.is_set())
+            self.assertTrue(any('SCAN INCOMPLETE' in line for line in output))
+            self.assertTrue(any('CVE_METRICS' in line for line in output))
+            self.assertEqual(self.file.read_bytes(), self.previous)
+        finally:
+            release.set()
+
+    def test_largest_previous_app_submitted_first_stable_ties(self):
+        mappings = {key:('vendor', key, []) for key in ['small', 'big', 'equal']}
+        for key, weight in [('small', 1), ('big', 50), ('equal', 50)]:
+            (self.directory / f'{key}.json').write_text(json.dumps({'total_cves':weight}))
+        observed = []
+        def process(key, mapping):
+            observed.append(key)
+            return [], None
+        self.ns['process_app'] = process
+        self.ns['CONTROL'] = self.ns['RuntimeControl'](0, 10, 20)
+        results = self.ns['collect_apps'](mappings)
+        self.assertEqual(observed, ['big', 'equal', 'small'])
+        self.assertEqual(list(results), list(mappings))
+
+    def test_body_read_timeout_classified_without_exception_text_or_key(self):
+        class ReadTimeoutError(Exception): pass
+        self.nvd = [NetworkError(ReadTimeoutError('FAKE_TEST_KEY')) , page()]
+        output = []
+        self.ns['print'] = lambda *args, **kw:output.append(' '.join(map(str,args)))
+        self.run_main()
+        rows = self.ns['CONTROL'].attempts
+        self.assertEqual([row['outcome'] for row in rows], ['body_read_timeout', '200'])
+        self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
+
+    def test_retry_starts_use_shared_pacer_and_timeout_tuple(self):
+        starts, moments = [], [0.0]
+        def fake_get(url, **kw):
+            starts.append(moments[0])
+            self.assertEqual(kw['timeout'], (10, 60))
+            return Response(429) if len(starts) == 1 else page()
+        control = self.ns['RuntimeControl'](6.1, 100, 110, lambda:moments[0], lambda n:moments.__setitem__(0,moments[0]+n))
+        self.ns.update(CONTROL=control)
+        self.ns['requests'].get = fake_get
+        self.ns['nvd_request']('https://example.test/nvd')
+        self.assertEqual(len(starts), 2)
+        self.assertGreaterEqual(starts[1]-starts[0], 6.1)
+
+    def test_retry_after_numeric_date_and_invalid_values(self):
+        response = Response(429)
+        response.headers = {'Retry-After':'500'}
+        self.assertEqual(self.ns['retry_after_seconds'](response, 5), 120)
+        response.headers = {'Retry-After':'Wed, 21 Oct 2099 07:28:00 GMT'}
+        self.assertEqual(self.ns['retry_after_seconds'](response, 5), 120)
+        response.headers = {'Retry-After':'invalid'}
+        self.assertEqual(self.ns['retry_after_seconds'](response, 5), 5)
+
+    def test_production_constants_are_bounded(self):
+        source = collector_source()
+        constants = {node.targets[0].id:node.value for node in ast.parse(source).body
+                     if isinstance(node, ast.Assign) and isinstance(node.targets[0], ast.Name)}
+        self.assertEqual(ast.literal_eval(constants['REQUEST_DELAY']), 6.1)
+        self.assertEqual(ast.literal_eval(constants['NVD_WORKERS']), 4)
+        self.assertIn('SCAN_START_SECONDS = 45 * 60', source)
+        self.assertIn('SCAN_HARD_SECONDS = 48 * 60', source)
 
 
 if __name__ == '__main__':
