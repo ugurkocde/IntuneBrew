@@ -259,6 +259,9 @@ jobs:
           class NvdUnavailable(RuntimeError):
               """A complete NVD response could not be obtained."""
 
+          class ScanStopped(NvdUnavailable):
+              """Another app failed; no further provider work can be published."""
+
           class KevUnavailable(RuntimeError):
               """KEV classifications must not be replaced with unknown data."""
 
@@ -335,13 +338,17 @@ jobs:
                   self.app_times = {}
                   self.cooldown_seconds = 0.0
                   self.stopped = False
+                  self.first_failure = None
+                  self.stopped_apps = set()
 
               def acquire(self):
                   began = self.clock()
                   while True:
                       with self.lock:
                           now = self.clock()
-                          if self.stopped or now >= self.start_deadline:
+                          if self.stopped:
+                              raise ScanStopped("scan stopped after earlier app failure; previous data is preserved")
+                          if now >= self.start_deadline:
                               raise NvdUnavailable("scan start deadline exceeded; previous data is preserved")
                           allowed = max(self.next_start, self.cooldown_until)
                           if now >= allowed:
@@ -352,6 +359,8 @@ jobs:
 
               def pause(self, seconds):
                   with self.lock:
+                      if self.stopped:
+                          raise ScanStopped("scan stopped after earlier app failure; previous data is preserved")
                       remaining = self.start_deadline - self.clock()
                   if remaining <= 0 or seconds >= remaining:
                       raise NvdUnavailable("scan start deadline exceeded; previous data is preserved")
@@ -793,6 +802,13 @@ jobs:
                   return sort_cves(fetch_cves_for_app(app_key, vendor, product, alternatives)), None
               except Exception as exc:
                   error = str(exc) if isinstance(exc, NvdUnavailable) else type(exc).__name__
+                  with CONTROL.lock:
+                      if isinstance(exc, ScanStopped):
+                          CONTROL.stopped_apps.add(app_key)
+                      else:
+                          CONTROL.stopped = True
+                          if CONTROL.first_failure is None:
+                              CONTROL.first_failure = (app_key, error)
                   return None, error
               finally:
                   with CONTROL.lock:
@@ -851,10 +867,16 @@ jobs:
                   errors = [(key, result[1]) for key, result in results.items() if result[1] is not None]
                   print("SCAN COMPLETE")
                   print(f"Apps processed: {len(results)}")
-                  print(f"Errors: {len(errors)}")
+                  failures = [(key, error) for key, error in errors if key not in CONTROL.stopped_apps]
+                  stopped = [key for key, error in errors if key in CONTROL.stopped_apps]
+                  print(f"Errors: {len(failures)}")
+                  print(f"Stopped apps: {len(stopped)}")
                   if errors:
-                      for key, error in errors:
+                      for key, error in failures:
                           log(f"ERROR: {key}: {error}")
+                      if stopped:
+                          origin = CONTROL.first_failure[0] if CONTROL.first_failure else 'an earlier failure'
+                          log(f"SCAN STOPPED after {origin}; not completed: " + ", ".join(stopped))
                       raise SystemExit(1)
                   # Keep the entire previous workspace unchanged unless every app finished.
                   for key, (cves, error) in results.items():

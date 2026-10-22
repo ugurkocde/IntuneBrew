@@ -402,6 +402,85 @@ class CollectionTests(unittest.TestCase):
         self.assertIn('fixture_app', diagnostic[0])
         self.assertEqual(self.calls, [('kev', None)])
 
+    def test_first_failure_stops_queued_requests_and_keeps_original_cause(self):
+        self.ns['CPE_MAPPINGS']['queued_app'] = ('vendor', 'queued', [])
+        other = self.directory / 'queued_app.json'
+        other.write_bytes(self.previous)
+        self.nvd = [Response(404)]
+        output = []
+        self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
+        self.assert_failed_and_preserved()
+        self.assertEqual(other.read_bytes(), self.previous)
+        self.assertEqual(sum(name == 'nvd' for name, _ in self.calls), 1)
+        control = self.ns['CONTROL']
+        self.assertTrue(control.stopped)
+        self.assertEqual(control.first_failure[0], 'fixture_app')
+        self.assertIn('HTTP 404', control.first_failure[1])
+        self.assertEqual(control.stopped_apps, {'queued_app'})
+        self.assertEqual(sum('ERROR:' in line for line in output), 1)
+        self.assertTrue(any('SCAN STOPPED after fixture_app' in line and 'queued_app' in line for line in output))
+
+    def test_waiter_observes_stop_and_pause_does_not_sleep(self):
+        now = [0.0]
+        sleeps = []
+        control = None
+        def sleep(delay):
+            sleeps.append(delay)
+            with control.lock:
+                control.stopped = True
+            now[0] += delay
+        control = self.ns['RuntimeControl'](6.1, 100, 110, lambda: now[0], sleep)
+        control.acquire()
+        with self.assertRaises(self.ns['ScanStopped']) as stopped:
+            control.acquire()
+        self.assertIn('stopped after earlier app failure', str(stopped.exception))
+        before = list(sleeps)
+        with self.assertRaises(self.ns['ScanStopped']):
+            control.pause(5)
+        self.assertEqual(sleeps, before)
+        deadline = self.ns['RuntimeControl'](6.1, 0, 10)
+        with self.assertRaises(self.ns['NvdUnavailable']) as expired:
+            deadline.acquire()
+        self.assertNotIsInstance(expired.exception, self.ns['ScanStopped'])
+        self.assertIn('deadline exceeded', str(expired.exception))
+
+    def test_inflight_requests_finish_but_no_followup_pages_start(self):
+        self.ns.update(NVD_WORKERS=3, CPE_MAPPINGS={key: ('vendor', key, []) for key in ['first', 'second', 'third']})
+        for key in self.ns['CPE_MAPPINGS']:
+            (self.directory / f'{key}.json').write_bytes(self.previous)
+        barrier = threading.Barrier(3)
+        failed = threading.Event()
+        calls = []
+        calls_lock = threading.Lock()
+        original = self.ns['process_app']
+        def process(key, mapping):
+            result = original(key, mapping)
+            if key == 'first':
+                failed.set()
+            return result
+        def transport(url, **kw):
+            if url.endswith('/kev'):
+                return Response(data={'vulnerabilities': [{'cveID': 'CVE-2099-0001'}]})
+            params = kw['params']
+            product = params['virtualMatchString'].split(':')[4]
+            with calls_lock:
+                calls.append((product, params['startIndex']))
+            self.assertEqual(params['startIndex'], 0)
+            barrier.wait(timeout=10)
+            if product == 'first':
+                return Response(404)
+            self.assertTrue(failed.wait(10))
+            return page(2, ['CVE-2099-0001'])
+        self.ns['process_app'] = process
+        self.ns['requests'].get = transport
+        self.assert_failed_and_preserved()
+        self.assertEqual(len(calls), 3)
+        self.assertEqual(len(self.ns['CONTROL'].attempts), 3)
+        self.assertEqual(self.ns['CONTROL'].first_failure[0], 'first')
+        self.assertEqual(self.ns['CONTROL'].stopped_apps, {'second', 'third'})
+        for key in self.ns['CPE_MAPPINGS']:
+            self.assertEqual((self.directory / f'{key}.json').read_bytes(), self.previous)
+
     def test_production_constants_are_bounded(self):
         source = collector_source()
         constants = {node.targets[0].id:node.value for node in ast.parse(source).body
