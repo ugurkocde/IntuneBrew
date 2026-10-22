@@ -17,20 +17,12 @@ fi
 echo "Stopping AppFlowy if running..."
 pkill -f "AppFlowy" 2>/dev/null || true
 
-# Remove /Applications/AppFlowy-arm64.app
-echo "Removing /Applications/AppFlowy-arm64.app..."
-if [ -d "/Applications/AppFlowy-arm64.app" ]; then
-    rm -rf "/Applications/AppFlowy-arm64.app" 2>/dev/null || true
-elif [ -f "/Applications/AppFlowy-arm64.app" ]; then
-    rm -f "/Applications/AppFlowy-arm64.app" 2>/dev/null || true
-fi
-
-# Remove /Applications/{'target': 'AppFlowy.app'}
-echo "Removing /Applications/{'target': 'AppFlowy.app'}..."
-if [ -d "/Applications/{'target': 'AppFlowy.app'}" ]; then
-    rm -rf "/Applications/{'target': 'AppFlowy.app'}" 2>/dev/null || true
-elif [ -f "/Applications/{'target': 'AppFlowy.app'}" ]; then
-    rm -f "/Applications/{'target': 'AppFlowy.app'}" 2>/dev/null || true
+# Remove /Applications/AppFlowy.app
+echo "Removing /Applications/AppFlowy.app..."
+if [ -d "/Applications/AppFlowy.app" ]; then
+    rm -rf "/Applications/AppFlowy.app" 2>/dev/null || true
+elif [ -f "/Applications/AppFlowy.app" ]; then
+    rm -f "/Applications/AppFlowy.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Scripts/com.appflowy.macos
@@ -41,12 +33,28 @@ elif [ -f "$HOME/Library/Application Scripts/com.appflowy.macos" ]; then
     rm -f "$HOME/Library/Application Scripts/com.appflowy.macos" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.appflowy.appflowy.flutter
+echo "Removing $HOME/Library/Application Support/com.appflowy.appflowy.flutter..."
+if [ -d "$HOME/Library/Application Support/com.appflowy.appflowy.flutter" ]; then
+    rm -rf "$HOME/Library/Application Support/com.appflowy.appflowy.flutter" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.appflowy.appflowy.flutter" ]; then
+    rm -f "$HOME/Library/Application Support/com.appflowy.appflowy.flutter" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.appflowy.macos
 echo "Removing $HOME/Library/Containers/com.appflowy.macos..."
 if [ -d "$HOME/Library/Containers/com.appflowy.macos" ]; then
     rm -rf "$HOME/Library/Containers/com.appflowy.macos" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.appflowy.macos" ]; then
     rm -f "$HOME/Library/Containers/com.appflowy.macos" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.appflowy.appflowy.flutter.plist
+echo "Removing $HOME/Library/Preferences/com.appflowy.appflowy.flutter.plist..."
+if [ -d "$HOME/Library/Preferences/com.appflowy.appflowy.flutter.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.appflowy.appflowy.flutter.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.appflowy.appflowy.flutter.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.appflowy.appflowy.flutter.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
