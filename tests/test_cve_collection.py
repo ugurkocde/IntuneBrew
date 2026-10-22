@@ -48,6 +48,10 @@ class ChunkedEncodingError(NetworkError):
     pass
 
 
+class ContentDecodingError(NetworkError):
+    pass
+
+
 class ReadTimeoutError(Exception):
     pass
 
@@ -571,7 +575,7 @@ class CollectionTests(unittest.TestCase):
         self.assertEqual(json.loads(self.file.read_text())['total_cves'], 451)
 
     def test_only_body_transport_failures_shrink_page_size(self):
-        cases = [(ReadTimeout(), 200), (ChunkedEncodingError(), 200), (ConnectTimeout(), 500),
+        cases = [(ReadTimeout(), 200), (ChunkedEncodingError(), 200), (ContentDecodingError(), 200), (ConnectTimeout(), 500),
                  (NetworkError(), 500), (Response(429), 500), (Response(503), 500),
                  (Response(500), 500), (Response(data=ValueError('FAKE_TEST_KEY')), 500)]
         for first, expected in cases:
@@ -580,6 +584,29 @@ class CollectionTests(unittest.TestCase):
                 self.sizes.clear()
                 self.run_main()
                 self.assertEqual(self.sizes, [500, expected])
+
+    def test_content_decoding_failures_shrink_and_recover_without_leaking_details(self):
+        self.nvd = [ContentDecodingError('FAKE_TEST_KEY'), ContentDecodingError('FAKE_TEST_KEY'), page()]
+        output = []
+        self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
+        self.run_main()
+        self.assertEqual(self.sizes, [500, 200, 100])
+        self.assertEqual([start for name, start in self.calls if name == 'nvd'], [0, 0, 0])
+        self.assertEqual([row['exceptionType'] for row in self.ns['CONTROL'].attempts],
+                         ['ContentDecodingError', 'ContentDecodingError', None])
+        self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
+        self.assertEqual(json.loads(self.file.read_text())['total_cves'], 0)
+
+    def test_content_decoding_exhaustion_stops_queued_work_and_keeps_files(self):
+        self.ns['CPE_MAPPINGS']['queued_app'] = ('vendor', 'queued', [])
+        other = self.directory / 'queued_app.json'
+        other.write_bytes(self.previous)
+        self.nvd = [ContentDecodingError() for _ in range(3)]
+        self.assert_failed_and_preserved()
+        self.assertEqual(self.sizes, [500, 200, 100])
+        self.assertEqual(other.read_bytes(), self.previous)
+        self.assertEqual(self.ns['CONTROL'].first_failure[0], 'fixture_app')
+        self.assertEqual(self.ns['CONTROL'].stopped_apps, {'queued_app'})
 
     def test_shrink_keeps_oversize_drift_offset_and_repeat_guards(self):
         for defect in ['oversized', 'total', 'offset', 'repeated']:
