@@ -499,7 +499,7 @@ jobs:
                       outcome = exception_outcome(exc)
                       exception_type = type(exc).__name__
                       reason = 'NVD provider transport failed (' + outcome + ')'
-                      body_failure = (outcome == 'body_read_timeout' or exception_type in {
+                      body_failure = (reading_body or outcome == 'body_read_timeout' or exception_type in {
                           'ReadTimeout', 'ChunkedEncodingError', 'ContentDecodingError'})
                       if page_request and body_failure and attempt < budget-1:
                           smaller = next((size for size in PAGE_SIZES if size < requested_size), requested_size)

@@ -798,6 +798,41 @@ class CollectionTests(unittest.TestCase):
         self.run_main()
         self.assertEqual(expected, {key: (self.directory/f'{key}.json').read_bytes() for key in mappings})
 
+    def test_real_tls_errors_during_body_use_five_paced_attempts(self):
+        import requests as real_requests
+        from urllib3.exceptions import SSLError as TLSBodyError
+        self.ns['requests'].exceptions = real_requests.exceptions
+        closed, output = [], []
+        self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
+        responses = []
+        for _ in range(4):
+            response = real_requests.Response()
+            response.status_code = 200
+            def stream(*args, **kw):
+                yield b'{'  # Real Requests wraps this body-phase TLS exception.
+                raise TLSBodyError('FAKE_TEST_KEY bad record MAC')
+            response.raw = types.SimpleNamespace(stream=stream, close=lambda: closed.append(True),
+                                                 release_conn=lambda: None)
+            responses.append(response)
+        self.nvd = responses + [page()]
+        self.run_main()
+        self.assertEqual(self.sizes, [100, 50, 50, 50, 50])
+        self.assertEqual([r['exceptionType'] for r in self.ns['CONTROL'].attempts], ['SSLError']*4+[None])
+        self.assertEqual(closed, [True]*4)
+        self.assertEqual(json.loads(self.file.read_text())['total_cves'], 0)
+        self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
+
+    def test_real_tls_errors_before_headers_keep_three_attempt_limit(self):
+        import requests as real_requests
+        self.ns['requests'].exceptions = real_requests.exceptions
+        self.nvd = [real_requests.exceptions.SSLError('FAKE_TEST_KEY certificate failure') for _ in range(3)]
+        output = []
+        self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
+        self.assert_failed_and_preserved()
+        self.assertEqual(self.sizes, [100]*3)
+        self.assertTrue(all(row['headersSeconds'] is None for row in self.ns['CONTROL'].attempts))
+        self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
+
 
 if __name__ == '__main__':
     unittest.main()
