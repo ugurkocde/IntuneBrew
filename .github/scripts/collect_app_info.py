@@ -15,7 +15,7 @@ from datetime import datetime
 import hashlib
 import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from urllib.parse import urlparse, unquote
+from urllib.parse import urlparse, unquote, parse_qs, urlencode
 from request_sources import source_token, FORMULA_RECIPES
 
 
@@ -1853,18 +1853,23 @@ def get_warp_release_url(data):
     # The suffix is part of the artifact version even though the catalog's
     # display version omits it. This is Warp's own brew redirect target.
     url = f"https://releases.warp.dev/stable/v{version}/Warp.dmg"
+    return _verified_release_url(url, checksum, "Warp", _verify_warp_artifact)
+
+
+def _verified_release_url(url, checksum, label, verifier):
+    """Bound a complete artifact verification, including blocked reads."""
     if (threading.current_thread() is not threading.main_thread() or
             not all(hasattr(signal, name) for name in (
                 "SIGALRM", "ITIMER_REAL", "setitimer", "getitimer"))):
-        raise ValueError("Warp download deadline is unavailable; catalog update refused")
+        raise ValueError(f"{label} download deadline is unavailable; catalog update refused")
     if any(signal.getitimer(signal.ITIMER_REAL)):
-        raise ValueError("Warp download deadline timer is occupied; catalog update refused")
+        raise ValueError(f"{label} download deadline timer is occupied; catalog update refused")
     previous = signal.signal(signal.SIGALRM, _warp_deadline_alarm)
     try:
         signal.setitimer(signal.ITIMER_REAL, WARP_DOWNLOAD_DEADLINE)
-        return _verify_warp_artifact(url, checksum)
+        return verifier(url, checksum)
     except _WarpDownloadDeadline:
-        raise ValueError("Warp download exceeded deadline; catalog update refused") from None
+        raise ValueError(f"{label} download exceeded deadline; catalog update refused") from None
     finally:
         try:
             signal.setitimer(signal.ITIMER_REAL, 0)
@@ -1873,6 +1878,10 @@ def get_warp_release_url(data):
 
 
 def _verify_warp_artifact(url, checksum):
+    return _verify_published_artifact(url, checksum, "Warp")
+
+
+def _verify_published_artifact(url, checksum, label, require_https=False):
     """Hash the complete artifact while the caller's deadline is armed."""
     for user_agent in DOWNLOAD_USER_AGENTS:
         try:
@@ -1881,31 +1890,72 @@ def _verify_warp_artifact(url, checksum):
                 timeout=DOWNLOAD_TIMEOUT, stream=True,
             )
             try:
+                if require_https and urlparse(response.url).scheme != "https":
+                    raise ValueError("Eclipse mirror must use HTTPS; catalog update refused")
                 content_type = response.headers.get("content-type", "").split(";")[0].strip().lower()
                 if response.status_code == 200 and content_type in {
                     "application/octet-stream", "application/x-apple-diskimage",
                 }:
                     length = response.headers.get("content-length")
                     if length is not None and int(length) > WARP_MAX_DOWNLOAD_BYTES:
-                        raise ValueError("Warp artifact exceeds size limit; catalog update refused")
+                        raise ValueError(f"{label} artifact exceeds size limit; catalog update refused")
                     digest = hashlib.sha256()
                     size = 0
+                    first_chunk = True
                     for chunk in response.iter_content(chunk_size=1024 * 1024):
                         if not chunk:
                             continue
+                        if first_chunk:
+                            first_chunk = False
+                            if require_https and chunk[:64].lstrip().lower().startswith(HTML_PREFIXES):
+                                raise ValueError("Eclipse mirror returned HTML; catalog update refused")
                         size += len(chunk)
                         if size > WARP_MAX_DOWNLOAD_BYTES:
-                            raise ValueError("Warp artifact exceeds size limit; catalog update refused")
+                            raise ValueError(f"{label} artifact exceeds size limit; catalog update refused")
                         digest.update(chunk)
                     if not size or digest.hexdigest() != checksum.lower():
-                        raise ValueError("Warp artifact checksum mismatch; catalog update refused")
+                        raise ValueError(f"{label} artifact checksum mismatch; catalog update refused")
                     return url
             finally:
                 response.close()
         except requests.RequestException:
             continue
     # A fetch failure must leave the previous catalog entry intact.
-    raise ValueError("Warp versioned release is unavailable; catalog update refused")
+    raise ValueError(f"{label} versioned release is unavailable; catalog update refused")
+
+
+def get_eclipse_release_url(data):
+    """Replace a forced primary mirror only for the exact cask artifact."""
+    parsed = urlparse(data["url"])
+    query = parse_qs(parsed.query, keep_blank_values=True)
+    raw_version = data.get("version")
+    version = raw_version.split(",") if isinstance(raw_version, str) else []
+    checksum = data.get("sha256")
+    file = query.get("file", [""])[0]
+    match = re.fullmatch(
+        r"/technology/epp/downloads/release/(\d{4}-\d{2})/R/"
+        r"eclipse-[a-z]+-\1-R-macosx-cocoa-(aarch64|x86_64)\.dmg", file
+    )
+    if (parsed.scheme != "https" or parsed.netloc != "www.eclipse.org"
+            or parsed.path != "/downloads/download.php" or parsed.fragment
+            or set(query) != {"file", "mirror_id"}
+            or len(query["file"]) != 1 or query["mirror_id"] != ["1"]
+            or not match or len(version) != 2 or version[1] != match.group(1)
+            or not isinstance(checksum, str) or not re.fullmatch(r"[a-fA-F0-9]{64}", checksum)):
+        raise ValueError("Eclipse release URL or checksum is invalid; catalog update refused")
+    url = "https://www.eclipse.org/downloads/download.php?" + urlencode({"file": file, "r": "1"}, safe="/")
+    return _verified_release_url(
+        url, checksum, "Eclipse",
+        lambda target, expected: _verify_published_artifact(target, expected, "Eclipse", require_https=True),
+    )
+
+
+def get_published_download_url(data, cask_token):
+    if cask_token == "warp":
+        return get_warp_release_url(data)
+    if cask_token.startswith("eclipse-") and "mirror_id" in parse_qs(urlparse(data["url"]).query, keep_blank_values=True):
+        return get_eclipse_release_url(data)
+    return data["url"]
 
 
 def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, is_pkg_in_pkg=False, is_pkg=False):
@@ -1959,7 +2009,7 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         # Homebrew adds a +0 suffix that the app does not report (issue #341).
         version = version.split('+', 1)[0]
 
-    url = get_warp_release_url(data) if cask_token == "warp" else data["url"]
+    url = get_published_download_url(data, cask_token)
 
     vendor_url = url
 
