@@ -1161,7 +1161,6 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/vanilla.json",
     "https://formulae.brew.sh/api/cask/via.json",
     "https://formulae.brew.sh/api/cask/virtualbuddy.json",
-    "https://formulae.brew.sh/api/cask/visual-paradigm.json",
     "https://formulae.brew.sh/api/cask/vuescan.json",
     "https://formulae.brew.sh/api/cask/vyprvpn.json",
     "https://formulae.brew.sh/api/cask/wealthfolio.json",

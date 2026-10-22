@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1154-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1153-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -1748,7 +1748,6 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/vimr.png' width='32' height='32'> VimR | 0.67.0 |
 | <img src='Logos/virtualbuddy.png' width='32' height='32'> VirtualBuddy | 2.2.1 |
 | <img src='Logos/viscosity.png' width='32' height='32'> Viscosity | 1.13.2 |
-| <img src='Logos/visual_paradigm.png' width='32' height='32'> Visual Paradigm | 18.1 |
 | <img src='Logos/visualvm.png' width='32' height='32'> VisualVM | 2.2.2 |
 | <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 8.2.4133.89 |
 | <img src='Logos/viz.png' width='32' height='32'> Viz | 2.3.3 |
