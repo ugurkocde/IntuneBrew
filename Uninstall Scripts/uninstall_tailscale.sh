@@ -117,12 +117,12 @@ elif [ -f "$HOME/Library/Containers/io.tailscale.ipn.macsys.share-extension" ]; 
     rm -f "$HOME/Library/Containers/io.tailscale.ipn.macsys.share-extension" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/io.tailscale.ipn.macsys.widgets,
-echo "Removing $HOME/Library/Containers/io.tailscale.ipn.macsys.widgets,..."
-if [ -d "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets," ]; then
-    rm -rf "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets," 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets," ]; then
-    rm -f "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets," 2>/dev/null || true
+# Remove $HOME/Library/Containers/io.tailscale.ipn.macsys.widgets
+echo "Removing $HOME/Library/Containers/io.tailscale.ipn.macsys.widgets..."
+if [ -d "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets" ]; then
+    rm -rf "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets" ]; then
+    rm -f "$HOME/Library/Containers/io.tailscale.ipn.macsys.widgets" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Containers/Tailscale

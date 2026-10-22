@@ -17,6 +17,18 @@ fi
 echo "Stopping DeepL if running..."
 pkill -f "DeepL" 2>/dev/null || true
 
+# Unload service com.linguee.DeepLLauncher
+echo "Unloading service com.linguee.DeepLLauncher..."
+launchctl unload -w /Library/LaunchAgents/com.linguee.DeepLLauncher.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.linguee.DeepLLauncher.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.linguee.DeepLLauncher.plist 2>/dev/null || true
+
+# Unload service com.linguee.DeepLUninstall
+echo "Unloading service com.linguee.DeepLUninstall..."
+launchctl unload -w /Library/LaunchAgents/com.linguee.DeepLUninstall.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.linguee.DeepLUninstall.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.linguee.DeepLUninstall.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.linguee.DeepLCopyTranslator if running
 echo "Stopping application with bundle ID com.linguee.DeepLCopyTranslator if running..."
 killall -9 "com.linguee.DeepLCopyTranslator" 2>/dev/null || true

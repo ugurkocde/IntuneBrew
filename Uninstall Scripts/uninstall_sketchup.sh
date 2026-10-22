@@ -17,92 +17,92 @@ fi
 echo "Stopping SketchUp if running..."
 pkill -f "SketchUp" 2>/dev/null || true
 
-# Remove $HOME/Library/Application Scripts/com.sketchup.LayOut.2026.LayOutThumbnailExtension
-echo "Removing $HOME/Library/Application Scripts/com.sketchup.LayOut.2026.LayOutThumbnailExtension..."
-if [ -d "$HOME/Library/Application Scripts/com.sketchup.LayOut.2026.LayOutThumbnailExtension" ]; then
-    rm -rf "$HOME/Library/Application Scripts/com.sketchup.LayOut.2026.LayOutThumbnailExtension" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/com.sketchup.LayOut.2026.LayOutThumbnailExtension" ]; then
-    rm -f "$HOME/Library/Application Scripts/com.sketchup.LayOut.2026.LayOutThumbnailExtension" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/com.sketchup.LayOut.2027.LayOutThumbnailExtension
+echo "Removing $HOME/Library/Application Scripts/com.sketchup.LayOut.2027.LayOutThumbnailExtension..."
+if [ -d "$HOME/Library/Application Scripts/com.sketchup.LayOut.2027.LayOutThumbnailExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.sketchup.LayOut.2027.LayOutThumbnailExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.sketchup.LayOut.2027.LayOutThumbnailExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.sketchup.LayOut.2027.LayOutThumbnailExtension" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Scripts/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension
-echo "Removing $HOME/Library/Application Scripts/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension..."
-if [ -d "$HOME/Library/Application Scripts/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension" ]; then
-    rm -rf "$HOME/Library/Application Scripts/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension" ]; then
-    rm -f "$HOME/Library/Application Scripts/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension
+echo "Removing $HOME/Library/Application Scripts/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension..."
+if [ -d "$HOME/Library/Application Scripts/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/SketchUp 2026
-echo "Removing $HOME/Library/Application Support/SketchUp 2026..."
-if [ -d "$HOME/Library/Application Support/SketchUp 2026" ]; then
-    rm -rf "$HOME/Library/Application Support/SketchUp 2026" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/SketchUp 2026" ]; then
-    rm -f "$HOME/Library/Application Support/SketchUp 2026" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/SketchUp 2027
+echo "Removing $HOME/Library/Application Support/SketchUp 2027..."
+if [ -d "$HOME/Library/Application Support/SketchUp 2027" ]; then
+    rm -rf "$HOME/Library/Application Support/SketchUp 2027" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/SketchUp 2027" ]; then
+    rm -f "$HOME/Library/Application Support/SketchUp 2027" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.sketchup.LayOut.2026
-echo "Removing $HOME/Library/Caches/com.sketchup.LayOut.2026..."
-if [ -d "$HOME/Library/Caches/com.sketchup.LayOut.2026" ]; then
-    rm -rf "$HOME/Library/Caches/com.sketchup.LayOut.2026" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.sketchup.LayOut.2026" ]; then
-    rm -f "$HOME/Library/Caches/com.sketchup.LayOut.2026" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.sketchup.LayOut.2027
+echo "Removing $HOME/Library/Caches/com.sketchup.LayOut.2027..."
+if [ -d "$HOME/Library/Caches/com.sketchup.LayOut.2027" ]; then
+    rm -rf "$HOME/Library/Caches/com.sketchup.LayOut.2027" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.sketchup.LayOut.2027" ]; then
+    rm -f "$HOME/Library/Caches/com.sketchup.LayOut.2027" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.sketchup.SketchUp.2026
-echo "Removing $HOME/Library/Caches/com.sketchup.SketchUp.2026..."
-if [ -d "$HOME/Library/Caches/com.sketchup.SketchUp.2026" ]; then
-    rm -rf "$HOME/Library/Caches/com.sketchup.SketchUp.2026" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.sketchup.SketchUp.2026" ]; then
-    rm -f "$HOME/Library/Caches/com.sketchup.SketchUp.2026" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.sketchup.SketchUp.2027
+echo "Removing $HOME/Library/Caches/com.sketchup.SketchUp.2027..."
+if [ -d "$HOME/Library/Caches/com.sketchup.SketchUp.2027" ]; then
+    rm -rf "$HOME/Library/Caches/com.sketchup.SketchUp.2027" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.sketchup.SketchUp.2027" ]; then
+    rm -f "$HOME/Library/Caches/com.sketchup.SketchUp.2027" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.sketchup.StyleBuilder.2026
-echo "Removing $HOME/Library/Caches/com.sketchup.StyleBuilder.2026..."
-if [ -d "$HOME/Library/Caches/com.sketchup.StyleBuilder.2026" ]; then
-    rm -rf "$HOME/Library/Caches/com.sketchup.StyleBuilder.2026" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.sketchup.StyleBuilder.2026" ]; then
-    rm -f "$HOME/Library/Caches/com.sketchup.StyleBuilder.2026" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.sketchup.StyleBuilder.2027
+echo "Removing $HOME/Library/Caches/com.sketchup.StyleBuilder.2027..."
+if [ -d "$HOME/Library/Caches/com.sketchup.StyleBuilder.2027" ]; then
+    rm -rf "$HOME/Library/Caches/com.sketchup.StyleBuilder.2027" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.sketchup.StyleBuilder.2027" ]; then
+    rm -f "$HOME/Library/Caches/com.sketchup.StyleBuilder.2027" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.sketchup.LayOut.2026.LayOutThumbnailExtension
-echo "Removing $HOME/Library/Containers/com.sketchup.LayOut.2026.LayOutThumbnailExtension..."
-if [ -d "$HOME/Library/Containers/com.sketchup.LayOut.2026.LayOutThumbnailExtension" ]; then
-    rm -rf "$HOME/Library/Containers/com.sketchup.LayOut.2026.LayOutThumbnailExtension" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.sketchup.LayOut.2026.LayOutThumbnailExtension" ]; then
-    rm -f "$HOME/Library/Containers/com.sketchup.LayOut.2026.LayOutThumbnailExtension" 2>/dev/null || true
+# Remove $HOME/Library/Containers/com.sketchup.LayOut.2027.LayOutThumbnailExtension
+echo "Removing $HOME/Library/Containers/com.sketchup.LayOut.2027.LayOutThumbnailExtension..."
+if [ -d "$HOME/Library/Containers/com.sketchup.LayOut.2027.LayOutThumbnailExtension" ]; then
+    rm -rf "$HOME/Library/Containers/com.sketchup.LayOut.2027.LayOutThumbnailExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.sketchup.LayOut.2027.LayOutThumbnailExtension" ]; then
+    rm -f "$HOME/Library/Containers/com.sketchup.LayOut.2027.LayOutThumbnailExtension" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension
-echo "Removing $HOME/Library/Containers/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension..."
-if [ -d "$HOME/Library/Containers/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension" ]; then
-    rm -rf "$HOME/Library/Containers/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension" ]; then
-    rm -f "$HOME/Library/Containers/com.sketchup.SketchUp.2026.SketchUpThumbnailExtension" 2>/dev/null || true
+# Remove $HOME/Library/Containers/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension
+echo "Removing $HOME/Library/Containers/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension..."
+if [ -d "$HOME/Library/Containers/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension" ]; then
+    rm -rf "$HOME/Library/Containers/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension" ]; then
+    rm -f "$HOME/Library/Containers/com.sketchup.SketchUp.2027.SketchUpThumbnailExtension" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.sketchup.LayOut.2026.plist
-echo "Removing $HOME/Library/Preferences/com.sketchup.LayOut.2026.plist..."
-if [ -d "$HOME/Library/Preferences/com.sketchup.LayOut.2026.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.sketchup.LayOut.2026.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.sketchup.LayOut.2026.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.sketchup.LayOut.2026.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.sketchup.LayOut.2027.plist
+echo "Removing $HOME/Library/Preferences/com.sketchup.LayOut.2027.plist..."
+if [ -d "$HOME/Library/Preferences/com.sketchup.LayOut.2027.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.sketchup.LayOut.2027.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.sketchup.LayOut.2027.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.sketchup.LayOut.2027.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.sketchup.SketchUp.2026.plist
-echo "Removing $HOME/Library/Preferences/com.sketchup.SketchUp.2026.plist..."
-if [ -d "$HOME/Library/Preferences/com.sketchup.SketchUp.2026.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.sketchup.SketchUp.2026.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.sketchup.SketchUp.2026.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.sketchup.SketchUp.2026.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.sketchup.SketchUp.2027.plist
+echo "Removing $HOME/Library/Preferences/com.sketchup.SketchUp.2027.plist..."
+if [ -d "$HOME/Library/Preferences/com.sketchup.SketchUp.2027.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.sketchup.SketchUp.2027.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.sketchup.SketchUp.2027.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.sketchup.SketchUp.2027.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.sketchup.StyleBuilder.2026.plist
-echo "Removing $HOME/Library/Preferences/com.sketchup.StyleBuilder.2026.plist..."
-if [ -d "$HOME/Library/Preferences/com.sketchup.StyleBuilder.2026.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.sketchup.StyleBuilder.2026.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.sketchup.StyleBuilder.2026.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.sketchup.StyleBuilder.2026.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.sketchup.StyleBuilder.2027.plist
+echo "Removing $HOME/Library/Preferences/com.sketchup.StyleBuilder.2027.plist..."
+if [ -d "$HOME/Library/Preferences/com.sketchup.StyleBuilder.2027.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.sketchup.StyleBuilder.2027.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.sketchup.StyleBuilder.2027.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.sketchup.StyleBuilder.2027.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/Trimble.SketchUp-Helper.(Renderer).plist
