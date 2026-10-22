@@ -61,6 +61,15 @@ class Response:
         self.status_code = status
         self.data = data
 
+    def __enter__(self):
+        return self
+
+    def __exit__(self, *args):
+        return False
+
+    def iter_content(self, chunk_size):
+        yield b'{' if isinstance(self.data, Exception) else json.dumps(self.data).encode()
+
     def json(self):
         if isinstance(self.data, Exception):
             raise self.data
@@ -94,7 +103,8 @@ class CollectionTests(unittest.TestCase):
                         'time': time, 'requests': requests,
                         'NVD_API_KEY': 'FAKE_TEST_KEY', 'SPECIFIC_APP': '', 'FULL_SYNC': False,
                         'CVE_DIR': self.directory, 'CPE_MAPPINGS': {'fixture_app': ('fake_vendor', 'fake_product', [])},
-                        'MAX_RETRIES': 3, 'PAGE_SIZES': (500, 200, 100), 'REQUEST_DELAY': 0, 'RETRY_DELAY': 0,
+                        'MAX_RETRIES': 3, 'PAGE_SIZES': (500, 200, 100, 50), 'FIRST_PAGE_SIZE': 100,
+                        'PAGE_BYTE_TARGET': 1_200_000, 'BODY_PAGE_ATTEMPTS': 5, 'REQUEST_DELAY': 0, 'RETRY_DELAY': 0,
                         'NVD_WORKERS': 1, 'SCAN_START_SECONDS': 2700, 'SCAN_HARD_SECONDS': 2880,
                         'threading': threading, 'ThreadPoolExecutor': ThreadPoolExecutor, 'wait': wait,
                         'parsedate_to_datetime': parsedate_to_datetime,
@@ -351,9 +361,9 @@ class CollectionTests(unittest.TestCase):
         def blocked(*args):
             entered.set()
             release.wait(2)
-            return [], None
+            return [], None, False
         self.ns['CONTROL'] = self.ns['RuntimeControl'](0, 10, .03)
-        self.ns['process_app'] = blocked
+        self.ns['process_query'] = blocked
         output = []
         self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str,args)))
         class DeadlineExit(BaseException): pass
@@ -371,12 +381,12 @@ class CollectionTests(unittest.TestCase):
     def test_largest_previous_app_submitted_first_stable_ties(self):
         mappings = {key:('vendor', key, []) for key in ['small', 'big', 'equal']}
         for key, weight in [('small', 1), ('big', 50), ('equal', 50)]:
-            (self.directory / f'{key}.json').write_text(json.dumps({'total_cves':weight}))
+            (self.directory / f'{key}.json').write_text(json.dumps({'vulnerabilities':[{'vendor':'vendor', 'product':key} for _ in range(weight)]}))
         observed = []
         def process(key, mapping):
-            observed.append(key)
-            return [], None
-        self.ns['process_app'] = process
+            observed.append(key[1])
+            return [], None, False
+        self.ns['process_query'] = process
         self.ns['CONTROL'] = self.ns['RuntimeControl'](0, 10, 20)
         results = self.ns['collect_apps'](mappings)
         self.assertEqual(observed, ['big', 'equal', 'small'])
@@ -475,10 +485,10 @@ class CollectionTests(unittest.TestCase):
         failed = threading.Event()
         calls = []
         calls_lock = threading.Lock()
-        original = self.ns['process_app']
+        original = self.ns['process_query']
         def process(key, mapping):
             result = original(key, mapping)
-            if key == 'first':
+            if key[1] == 'first':
                 failed.set()
             return result
         def transport(url, **kw):
@@ -494,7 +504,7 @@ class CollectionTests(unittest.TestCase):
                 return Response(404)
             self.assertTrue(failed.wait(10))
             return page(2, ['CVE-2099-0001'])
-        self.ns['process_app'] = process
+        self.ns['process_query'] = process
         self.ns['requests'].get = transport
         self.assert_failed_and_preserved()
         self.assertEqual(len(calls), 3)
@@ -510,8 +520,11 @@ class CollectionTests(unittest.TestCase):
                      if isinstance(node, ast.Assign) and isinstance(node.targets[0], ast.Name)}
         self.assertEqual(ast.literal_eval(constants['REQUEST_DELAY']), 6.1)
         self.assertEqual(ast.literal_eval(constants['NVD_WORKERS']), 4)
-        self.assertEqual(ast.literal_eval(constants['PAGE_SIZES']), (500, 200, 100))
+        self.assertEqual(ast.literal_eval(constants['PAGE_SIZES']), (500, 200, 100, 50))
         self.assertEqual(ast.literal_eval(constants['MAX_RETRIES']), 3)
+        self.assertEqual(ast.literal_eval(constants['BODY_PAGE_ATTEMPTS']), 5)
+        self.assertEqual(ast.literal_eval(constants['FIRST_PAGE_SIZE']), 100)
+        self.assertEqual(ast.literal_eval(constants['PAGE_BYTE_TARGET']), 1_200_000)
         self.assertIn('timeout=(10, 60)', source)
         self.assertIn('SCAN_START_SECONDS = 45 * 60', source)
         self.assertIn('SCAN_HARD_SECONDS = 48 * 60', source)
@@ -546,51 +559,51 @@ class CollectionTests(unittest.TestCase):
         output = []
         self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
         self.run_main()
-        self.assertEqual(observed, [('fake_product', 0, 500), ('fake_product', 0, 200),
-                                    ('fake_product', 200, 200), ('fake_product', 400, 200), ('fake_product', 600, 200)])
+        self.assertEqual(observed, [('fake_product', 0, 100), ('fake_product', 0, 50),
+                                    ('fake_product', 50, 500), ('fake_product', 550, 500)])
         self.assertEqual(self.file.read_bytes(), serial)
-        self.assertEqual([r['requestedSize'] for r in self.ns['CONTROL'].attempts], [500, 200, 200, 200, 200])
-        self.assertEqual(self.ns['CONTROL'].report()['requestedSizes'], {'500': 1, '200': 4})
+        self.assertEqual([r['requestedSize'] for r in self.ns['CONTROL'].attempts], [100, 50, 500, 500])
+        self.assertEqual(self.ns['CONTROL'].report()['requestedSizes'], {'100': 1, '50': 1, '500': 2})
         self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
 
-    def test_three_body_failures_are_bounded_and_stop_queued_apps(self):
+    def test_five_body_failures_are_bounded_and_stop_queued_apps(self):
         self.ns['CPE_MAPPINGS']['queued_app'] = ('vendor', 'queued', [])
         other = self.directory / 'queued_app.json'
         other.write_bytes(self.previous)
-        self.nvd = [NetworkError(ReadTimeoutError()) for _ in range(3)]
+        self.nvd = [NetworkError(ReadTimeoutError()) for _ in range(5)]
         self.assert_failed_and_preserved()
-        self.assertEqual(self.sizes, [500, 200, 100])
-        self.assertEqual([start for name, start in self.calls if name == 'nvd'], [0, 0, 0])
+        self.assertEqual(self.sizes, [100, 50, 50, 50, 50])
+        self.assertEqual([start for name, start in self.calls if name == 'nvd'], [0, 0, 0, 0, 0])
         self.assertEqual(other.read_bytes(), self.previous)
         self.assertEqual(self.ns['CONTROL'].first_failure[0], 'fixture_app')
         self.assertIn('body_read_timeout', self.ns['CONTROL'].first_failure[1])
 
-    def test_last_attempt_100_does_not_persist_and_alternate_resets_500(self):
+    def test_byte_sized_followup_and_alternate_restarts_100(self):
         self.ns['CPE_MAPPINGS']['fixture_app'] = ('fake_vendor', 'fake_product', ['fake_alternate'])
         observed = self.sized_provider(total=451, on_call=lambda params, count: ReadTimeout() if count <= 2 else None)
         self.run_main()
-        self.assertEqual(observed, [('fake_product', 0, 500), ('fake_product', 0, 200),
-                                    ('fake_product', 0, 100), ('fake_product', 100, 200),
-                                    ('fake_product', 300, 200), ('fake_alternate', 0, 500)])
+        self.assertEqual(observed, [('fake_product', 0, 100), ('fake_product', 0, 50),
+                                    ('fake_product', 0, 50), ('fake_product', 50, 500),
+                                    ('fake_alternate', 0, 100), ('fake_alternate', 100, 500)])
         self.assertEqual(json.loads(self.file.read_text())['total_cves'], 451)
 
     def test_only_body_transport_failures_shrink_page_size(self):
-        cases = [(ReadTimeout(), 200), (ChunkedEncodingError(), 200), (ContentDecodingError(), 200), (ConnectTimeout(), 500),
-                 (NetworkError(), 500), (Response(429), 500), (Response(503), 500),
-                 (Response(500), 500), (Response(data=ValueError('FAKE_TEST_KEY')), 500)]
+        cases = [(ReadTimeout(), 50), (ChunkedEncodingError(), 50), (ContentDecodingError(), 50), (ConnectTimeout(), 100),
+                 (NetworkError(), 100), (Response(429), 100), (Response(503), 100),
+                 (Response(500), 100), (Response(data=ValueError('FAKE_TEST_KEY')), 100)]
         for first, expected in cases:
             with self.subTest(first=type(first).__name__, expected=expected):
                 self.nvd = [first, page()]
                 self.sizes.clear()
                 self.run_main()
-                self.assertEqual(self.sizes, [500, expected])
+                self.assertEqual(self.sizes, [100, expected])
 
     def test_content_decoding_failures_shrink_and_recover_without_leaking_details(self):
         self.nvd = [ContentDecodingError('FAKE_TEST_KEY'), ContentDecodingError('FAKE_TEST_KEY'), page()]
         output = []
         self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
         self.run_main()
-        self.assertEqual(self.sizes, [500, 200, 100])
+        self.assertEqual(self.sizes, [100, 50, 50])
         self.assertEqual([start for name, start in self.calls if name == 'nvd'], [0, 0, 0])
         self.assertEqual([row['exceptionType'] for row in self.ns['CONTROL'].attempts],
                          ['ContentDecodingError', 'ContentDecodingError', None])
@@ -601,9 +614,9 @@ class CollectionTests(unittest.TestCase):
         self.ns['CPE_MAPPINGS']['queued_app'] = ('vendor', 'queued', [])
         other = self.directory / 'queued_app.json'
         other.write_bytes(self.previous)
-        self.nvd = [ContentDecodingError() for _ in range(3)]
+        self.nvd = [ContentDecodingError() for _ in range(5)]
         self.assert_failed_and_preserved()
-        self.assertEqual(self.sizes, [500, 200, 100])
+        self.assertEqual(self.sizes, [100, 50, 50, 50, 50])
         self.assertEqual(other.read_bytes(), self.previous)
         self.assertEqual(self.ns['CONTROL'].first_failure[0], 'fixture_app')
         self.assertEqual(self.ns['CONTROL'].stopped_apps, {'queued_app'})
@@ -617,7 +630,7 @@ class CollectionTests(unittest.TestCase):
                         return ReadTimeout()
                     start = params['startIndex']
                     if defect == 'oversized' and count == 2:
-                        return page(650, [f'CVE-2099-{i+1:04d}' for i in range(201)])
+                        return page(650, [f'CVE-2099-{i+1:04d}' for i in range(51)])
                     if defect == 'offset' and count == 2:
                         return page(650, ['CVE-2099-0001'], 1)
                     if count == 3:
@@ -660,6 +673,165 @@ class CollectionTests(unittest.TestCase):
                     self.ns['nvd_request']('https://example.test/nvd', {'resultsPerPage': 500, 'startIndex': 0})
                 self.assertEqual(calls, [500])
                 self.assertEqual(self.file.read_bytes(), self.previous)
+
+
+    def test_shared_query_fetched_once_and_product_precedence_preserved(self):
+        self.ns['CPE_MAPPINGS'] = {'first': ('vendor', 'shared', ['alternate']),
+                                   'second': ('vendor', 'alternate', ['shared'])}
+        calls = []
+        def provider(url, **kw):
+            if url.endswith('/kev'):
+                return self.get(url, **kw)
+            product = kw['params']['virtualMatchString'].split(':')[4]
+            calls.append(product)
+            return page(1, ['CVE-2099-0001'])
+        self.ns['requests'].get = provider
+        self.ns['NVD_WORKERS'] = 4
+        self.run_main()
+        self.assertCountEqual(calls, ['shared', 'alternate'])
+        for app, expected in [('first', 'shared'), ('second', 'alternate')]:
+            data = json.loads((self.directory/f'{app}.json').read_text())
+            self.assertEqual(data['total_cves'], 1)
+            self.assertEqual(data['vulnerabilities'][0]['product'], expected)
+        self.assertEqual(sum(kind == 'kev' for kind, _ in self.calls), 1)
+
+    def test_shared_failure_is_original_for_both_apps_and_preserves_files(self):
+        self.ns['CPE_MAPPINGS'] = {'fixture_app': ('vendor', 'shared', []),
+                                   'second': ('vendor', 'shared', []),
+                                   'queued': ('vendor', 'queued', [])}
+        for key in ['second', 'queued']:
+            (self.directory/f'{key}.json').write_bytes(self.previous)
+        self.nvd = [Response(404)]
+        self.assert_failed_and_preserved()
+        self.assertEqual(sum(kind == 'nvd' for kind, _ in self.calls), 1)
+        self.assertEqual(self.ns['CONTROL'].first_failure[0], 'fixture_app')
+        self.assertEqual(self.ns['CONTROL'].stopped_apps, {'queued'})
+        for key in self.ns['CPE_MAPPINGS']:
+            self.assertEqual((self.directory/f'{key}.json').read_bytes(), self.previous)
+
+    def test_byte_size_selection_is_bounded(self):
+        choose = self.ns['page_size_for']
+        for measured, expected in [(1000, 500), (5000, 200), (10000, 100), (20000, 50), (100000, 50)]:
+            self.assertEqual(choose(measured, 100), expected)
+        self.assertEqual(choose(0, 200), 200)
+
+    def test_four_body_failures_then_success_within_five_attempts(self):
+        self.nvd = [ChunkedEncodingError() for _ in range(4)]+[page()]
+        self.run_main()
+        self.assertEqual(self.sizes, [100, 50, 50, 50, 50])
+        self.assertEqual(json.loads(self.file.read_text())['total_cves'], 0)
+
+    def test_three_nonbody_failures_end_page_even_with_body_budget(self):
+        self.nvd = [ConnectTimeout(), Response(503), Response(data=ValueError())]
+        self.assert_failed_and_preserved()
+        self.assertEqual(self.sizes, [100]*3)
+        self.assertEqual(len(self.ns['CONTROL'].attempts), 3)
+
+    def test_stream_diagnostics_and_closing_after_midbody_failure(self):
+        closed, clock, observed = [], [0.0], []
+        class Stream(Response):
+            def __exit__(self, *args):
+                closed.append(True)
+            def iter_content(self, chunk_size):
+                clock[0] += 2
+                yield b'{'
+                clock[0] += 5
+                raise ChunkedEncodingError('FAKE_TEST_KEY response text')
+        responses = [Stream(), page()]
+        def provider(url, **kw):
+            self.assertTrue(kw['stream'])
+            clock[0] += 3
+            return responses.pop(0)
+        self.ns['requests'].get = provider
+        self.ns['print'] = lambda *args, **kw: observed.append(' '.join(map(str,args)))
+        self.ns['CONTROL'] = self.ns['RuntimeControl'](0, 100, 110, lambda: clock[0], lambda n: None)
+        with mock.patch.object(time, 'monotonic', side_effect=lambda: clock[0]):
+            self.ns['nvd_request']('https://example.test/nvd', {'resultsPerPage':100, 'startIndex':0})
+        rows = self.ns['CONTROL'].attempts
+        self.assertEqual(rows[0]['headersSeconds'], 3)
+        self.assertEqual(rows[0]['maxBodyGapSeconds'], 5)
+        self.assertEqual(rows[0]['responseBytes'], 1)
+        self.assertEqual(closed, [True])
+        self.assertNotIn('FAKE_TEST_KEY', '\n'.join(observed))
+        self.assertNotIn('https://', '\n'.join(observed))
+
+    def test_real_requests_body_exception_wrapping_and_recovery(self):
+        import requests as real_requests
+        from urllib3.exceptions import ReadTimeoutError as RealReadTimeout, ProtocolError, DecodeError
+        for failure, expected in [(RealReadTimeout(None, None, 'FAKE_TEST_KEY'), 'ConnectionError'),
+                                  (ProtocolError('FAKE_TEST_KEY'), 'ChunkedEncodingError'),
+                                  (DecodeError('FAKE_TEST_KEY'), 'ContentDecodingError')]:
+            with self.subTest(expected=expected):
+                output, closed = [], []
+                self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
+                self.ns['requests'].exceptions = real_requests.exceptions
+                response = real_requests.Response()
+                response.status_code = 200
+                def stream(*args, **kw):
+                    yield b'{'  # A partial body must never reach the parser/publication.
+                    raise failure
+                response.raw = types.SimpleNamespace(stream=stream, close=lambda: closed.append(True),
+                                                     release_conn=lambda: None)
+                self.nvd = [response, page()]
+                self.run_main()
+                self.assertEqual(self.ns['CONTROL'].attempts[0]['exceptionType'], expected)
+                self.assertEqual(self.sizes[-2:], [100, 50])
+                self.assertEqual(closed, [True])
+                self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
+
+    def test_query_cache_output_matches_independent_serial_app_path(self):
+        mappings = {'first': ('vendor', 'shared', ['alternate']),
+                    'second': ('vendor', 'alternate', ['shared'])}
+        self.ns['CPE_MAPPINGS'] = mappings
+        def provider(url, **kw):
+            if url.endswith('/kev'):
+                return Response(data={'vulnerabilities': [{'cveID': 'CVE-2099-0001'}]})
+            return page(1, ['CVE-2099-0001'])
+        self.ns['requests'].get = provider
+        self.ns['CONTROL'] = self.ns['RuntimeControl'](0, 100, 110)
+        self.ns['fetch_kev_catalog']()
+        for key, mapping in mappings.items():
+            records = self.ns['sort_cves'](self.ns['fetch_cves_for_app'](key, *mapping))
+            self.ns['save_cve_json'](key, key.capitalize(), records)
+        expected = {key: (self.directory/f'{key}.json').read_bytes() for key in mappings}
+        self.ns['NVD_WORKERS'] = 4
+        self.run_main()
+        self.assertEqual(expected, {key: (self.directory/f'{key}.json').read_bytes() for key in mappings})
+
+    def test_real_tls_errors_during_body_use_five_paced_attempts(self):
+        import requests as real_requests
+        from urllib3.exceptions import SSLError as TLSBodyError
+        self.ns['requests'].exceptions = real_requests.exceptions
+        closed, output = [], []
+        self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
+        responses = []
+        for _ in range(4):
+            response = real_requests.Response()
+            response.status_code = 200
+            def stream(*args, **kw):
+                yield b'{'  # Real Requests wraps this body-phase TLS exception.
+                raise TLSBodyError('FAKE_TEST_KEY bad record MAC')
+            response.raw = types.SimpleNamespace(stream=stream, close=lambda: closed.append(True),
+                                                 release_conn=lambda: None)
+            responses.append(response)
+        self.nvd = responses + [page()]
+        self.run_main()
+        self.assertEqual(self.sizes, [100, 50, 50, 50, 50])
+        self.assertEqual([r['exceptionType'] for r in self.ns['CONTROL'].attempts], ['SSLError']*4+[None])
+        self.assertEqual(closed, [True]*4)
+        self.assertEqual(json.loads(self.file.read_text())['total_cves'], 0)
+        self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
+
+    def test_real_tls_errors_before_headers_keep_three_attempt_limit(self):
+        import requests as real_requests
+        self.ns['requests'].exceptions = real_requests.exceptions
+        self.nvd = [real_requests.exceptions.SSLError('FAKE_TEST_KEY certificate failure') for _ in range(3)]
+        output = []
+        self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
+        self.assert_failed_and_preserved()
+        self.assertEqual(self.sizes, [100]*3)
+        self.assertTrue(all(row['headersSeconds'] is None for row in self.ns['CONTROL'].attempts))
+        self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
 
 
 if __name__ == '__main__':
