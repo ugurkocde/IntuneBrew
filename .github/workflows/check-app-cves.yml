@@ -80,6 +80,7 @@ jobs:
           WORK_CONTEXT = threading.local()
           CONTROL = None  # seconds between requests
           MAX_RETRIES = 3
+          PAGE_SIZES = (500, 200, 100)
           RETRY_DELAY = 5  # seconds
 
           # CVE directory
@@ -387,11 +388,14 @@ jobs:
                       cooldown = self.cooldown_seconds
                   durations = sorted(r['elapsedSeconds'] for r in rows)
                   outcomes = {}
+                  requested_sizes = {}
                   for row in rows:
                       outcomes[row['outcome']] = outcomes.get(row['outcome'], 0) + 1
+                      size = str(row['requestedSize'])
+                      requested_sizes[size] = requested_sizes.get(size, 0) + 1
                   def percentile(fraction):
                       return durations[min(len(durations)-1, int((len(durations)-1)*fraction))] if durations else 0
-                  summary = {'attempts':len(rows), 'outcomes':outcomes, 'latencyP50':percentile(.5),
+                  summary = {'attempts':len(rows), 'outcomes':outcomes, 'requestedSizes':requested_sizes, 'latencyP50':percentile(.5),
                              'latencyP90':percentile(.9), 'latencyMax':max(durations, default=0),
                              'pacerWaitSeconds':round(sum(r['pacerWaitSeconds'] for r in rows), 3),
                              'globalCooldownSeconds':round(cooldown, 3), 'appWallSeconds':app_times,
@@ -437,6 +441,7 @@ jobs:
               for attempt in range(MAX_RETRIES):
                   waited = CONTROL.acquire()
                   began = time.monotonic()
+                  requested_size = (params or {}).get('resultsPerPage')
                   outcome = 'unknown'
                   exception_type = None
                   response_bytes = None
@@ -468,10 +473,19 @@ jobs:
                       outcome = exception_outcome(exc)
                       exception_type = type(exc).__name__
                       reason = 'NVD provider transport failed (' + outcome + ')'
+                      # Retry a stalled body at the same offset with a smaller response.
+                      # Params belong to this app's sequential product loop, never another worker.
+                      if (attempt < MAX_RETRIES - 1 and requested_size in PAGE_SIZES and
+                              (outcome == 'body_read_timeout' or exception_type in {'ReadTimeout', 'ChunkedEncodingError'})):
+                          smaller = next((size for size in PAGE_SIZES if size < requested_size), requested_size)
+                          if smaller < requested_size:
+                              params['resultsPerPage'] = smaller
+                              log(f"reducing page size to {smaller} at startIndex {params.get('startIndex', 0)}")
                   finally:
                       CONTROL.record({'app':getattr(WORK_CONTEXT, 'app', ''),
                                       'product':(params or {}).get('virtualMatchString', ''),
                                       'startIndex':(params or {}).get('startIndex', 0), 'attempt':attempt+1,
+                                      'requestedSize':requested_size,
                                       'outcome':outcome, 'exceptionType':exception_type, 'responseBytes':response_bytes,
                                       'elapsedSeconds':round(time.monotonic()-began, 3),
                                       'pacerWaitSeconds':round(waited, 3)})
@@ -605,7 +619,7 @@ jobs:
 
                   # Paginate through all results
                   start_index = 0
-                  results_per_page = 500
+                  results_per_page = PAGE_SIZES[0]
                   total_results = None
                   product_cve_ids = set()
 
@@ -617,7 +631,11 @@ jobs:
                       }
 
                       data = nvd_request(url, params)
+                      # Carry 200 forward after a shrink; 100 is only a final retry size.
+                      results_per_page = max(PAGE_SIZES[1], params['resultsPerPage'])
                       vulnerabilities = data['vulnerabilities']
+                      if len(vulnerabilities) > params['resultsPerPage']:
+                          raise NvdUnavailable("Oversized NVD page")
                       if total_results is None:
                           total_results = data['totalResults']
                           log(f"  Found {total_results} total CVEs for {vendor}:{prod}")
