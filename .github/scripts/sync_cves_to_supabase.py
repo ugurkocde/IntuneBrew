@@ -10,13 +10,14 @@ Required environment variables:
 - SUPABASE_SERVICE_ROLE_KEY: Service role key for write access
 
 Usage:
-    python sync_cves_to_supabase.py [--cve-dir ./CVE] [--apps-dir ./Apps]
+    python sync_cves_to_supabase.py --manifest PATH [--cve-dir ./CVE] [--apps-dir ./Apps]
 """
 
 import os
 import sys
 import json
 import argparse
+import hashlib
 import re
 from datetime import datetime
 from pathlib import Path
@@ -110,47 +111,77 @@ def load_app_versions(apps_dir: str) -> Dict[str, str]:
     return versions
 
 
-def load_cve_files(cve_dir: str) -> Dict[str, Dict[str, Any]]:
-    """Load all CVE JSON files from the specified directory."""
-    cve_data = {}
-    cve_path = Path(cve_dir)
+def strict_json(payload):
+    def unique(pairs):
+        value = {}
+        for key, item in pairs:
+            if key in value:
+                raise ValueError('Duplicate JSON key')
+            value[key] = item
+        return value
+    def invalid_number(value):
+        raise ValueError('Non-finite JSON number')
+    return json.loads(payload, object_pairs_hook=unique, parse_constant=invalid_number)
 
-    if not cve_path.exists():
-        print(f"Warning: CVE directory '{cve_dir}' does not exist")
-        return cve_data
 
-    json_files = list(cve_path.glob("*.json"))
-    print(f"Found {len(json_files)} CVE JSON files")
-
-    for json_file in json_files:
-        try:
-            with open(json_file, 'r', encoding='utf-8') as f:
-                data = json.load(f)
-
-                # Use app_key from file if available, otherwise derive from filename
-                app_key = data.get('app_key', json_file.stem)
-                app_name = data.get('app_name', app_key)
-
-                # CVEs are in 'vulnerabilities' key in the existing format
-                vulnerabilities = data.get('vulnerabilities', data.get('cves', []))
-
-                cve_data[app_key] = {
-                    'app_name': app_name,
-                    'app_key': app_key,
-                    'summary': data.get('summary', {}),
-                    'last_updated': data.get('last_updated'),
-                    'cves': vulnerabilities
-                }
-
-                if vulnerabilities:
-                    print(f"  Loaded {len(vulnerabilities)} CVEs for {app_name}")
-
-        except json.JSONDecodeError as e:
-            print(f"Error parsing {json_file}: {e}")
-        except Exception as e:
-            print(f"Error loading {json_file}: {e}")
-
-    return cve_data
+def load_manifest_cves(cve_dir, manifest_path):
+    """Authorize exact complete files before creating a database client; no broad fallback."""
+    path = Path(manifest_path)
+    if path.is_symlink() or not path.is_file():
+        raise ValueError('Publication manifest must be a regular file')
+    manifest = strict_json(path.read_bytes())
+    fields = {'schema', 'run_id', 'run_attempt', 'selected_count', 'selected_apps',
+              'failure_limit_percent', 'kev_entries', 'validated', 'stale'}
+    if not isinstance(manifest, dict) or set(manifest) != fields:
+        raise ValueError('Publication manifest shape differs')
+    for key in ['schema', 'run_id', 'run_attempt', 'selected_count', 'failure_limit_percent', 'kev_entries']:
+        if type(manifest[key]) is not int or manifest[key] <= 0:
+            raise ValueError('Publication manifest counts differ')
+    if manifest['schema'] != 1 or manifest['failure_limit_percent'] != 10:
+        raise ValueError('Publication policy differs')
+    if str(manifest['run_id']) != os.environ.get('GITHUB_RUN_ID') or str(manifest['run_attempt']) != os.environ.get('GITHUB_RUN_ATTEMPT'):
+        raise ValueError('Publication run identity differs')
+    validated, stale, selected = (manifest[key] for key in ['validated', 'stale', 'selected_apps'])
+    if not all(isinstance(rows, list) for rows in [validated, stale, selected]) or not validated:
+        raise ValueError('Publication app lists are missing or empty')
+    def valid_key(value):
+        return isinstance(value, str) and re.fullmatch(r'[a-z0-9_]+', value) is not None
+    if not all(valid_key(key) for key in selected) or len(selected) != len(set(selected)) or len(selected) != manifest['selected_count']:
+        raise ValueError('Selected app identities differ')
+    authorized = {}
+    for row in validated:
+        if not isinstance(row, dict) or set(row) != {'app_key', 'sha256', 'total_cves'} or not valid_key(row['app_key']):
+            raise ValueError('Validated app identity differs')
+        if row['app_key'] in authorized or not isinstance(row['sha256'], str) or re.fullmatch(r'[0-9a-f]{64}', row['sha256']) is None or type(row['total_cves']) is not int or row['total_cves'] < 0:
+            raise ValueError('Validated app binding differs')
+        authorized[row['app_key']] = row
+    stale_keys = []
+    for row in stale:
+        if not isinstance(row, dict) or set(row) != {'app_key', 'reason'} or not valid_key(row['app_key']) or not isinstance(row['reason'], str):
+            raise ValueError('Stale app identity differs')
+        stale_keys.append(row['app_key'])
+    if len(stale_keys) != len(set(stale_keys)) or set(authorized).intersection(stale_keys) or set(authorized).union(stale_keys) != set(selected) or 10 * len(stale_keys) > len(selected):
+        raise ValueError('Publication coverage or failure threshold differs')
+    directory = Path(cve_dir)
+    if directory.is_symlink() or not directory.is_dir():
+        raise ValueError('CVE directory must be regular')
+    result = {}
+    for key, row in authorized.items():
+        file = directory / (key + '.json')
+        if file.is_symlink() or not file.is_file():
+            raise ValueError('Validated CVE file is missing or not regular')
+        payload = file.read_bytes()
+        if hashlib.sha256(payload).hexdigest() != row['sha256']:
+            raise ValueError('Validated CVE file hash differs')
+        data = strict_json(payload)
+        if not isinstance(data, dict) or data.get('app_key') != key or not isinstance(data.get('vulnerabilities'), list) or type(data.get('total_cves')) is not int or data['total_cves'] != row['total_cves'] or data['total_cves'] != len(data['vulnerabilities']) or not all(isinstance(cve, dict) for cve in data['vulnerabilities']):
+            raise ValueError('Validated CVE file contents differ')
+        result[key] = {'app_name':data.get('app_name', key), 'app_key':key, 'summary':data.get('summary', {}),
+                       'last_updated':data.get('last_updated'), 'cves':data['vulnerabilities']}
+    print(f"Found {len(result)} CVE JSON files")
+    print('Manifest validated apps: ' + ', '.join(result))
+    print('Manifest stale apps preserved: ' + ', '.join(stale_keys))
+    return result
 
 
 # =============================================================================
@@ -244,6 +275,7 @@ def sync_to_supabase(
     }
 
     for app_key, app_data in cve_data.items():
+        print('SYNC_APP ' + app_key)
         app_name = app_data['app_name']
         cves = app_data['cves']
 
@@ -310,6 +342,8 @@ def sync_to_supabase(
             supabase.table('cve_entries').delete().eq('app_key', app_key).execute()
         except Exception as e:
             print(f"  Error deleting old CVE entries: {e}")
+            stats['errors'] += 1
+            continue
 
         # Insert new CVE entries in batches
         if cves:
@@ -372,8 +406,16 @@ def main():
     parser = argparse.ArgumentParser(description='Sync CVE data to Supabase')
     parser.add_argument('--cve-dir', default='./CVE', help='Directory containing CVE JSON files')
     parser.add_argument('--apps-dir', default='./Apps', help='Directory containing app JSON files with versions')
+    parser.add_argument('--manifest', required=True, help='Exact validated publication manifest from this run')
     parser.add_argument('--batch-size', type=int, default=500, help='Batch size for database inserts')
     args = parser.parse_args()
+
+    # Fail closed before any database client or mutation, including after a commit rebase.
+    try:
+        cve_data = load_manifest_cves(args.cve_dir, args.manifest)
+    except (OSError, ValueError, TypeError, KeyError) as exc:
+        print('Error: publication manifest validation failed (' + type(exc).__name__ + ')')
+        raise SystemExit(1)
 
     # Get Supabase credentials from environment
     supabase_url = os.environ.get('SUPABASE_URL')
@@ -404,14 +446,6 @@ def main():
     print(f"\nLoading app versions from: {args.apps_dir}")
     app_versions = load_app_versions(args.apps_dir)
 
-    # Load CVE data
-    print(f"\nLoading CVE data from: {args.cve_dir}")
-    cve_data = load_cve_files(args.cve_dir)
-
-    if not cve_data:
-        print("No CVE data found to sync")
-        sys.exit(0)
-
     print(f"\nFound CVE data for {len(cve_data)} applications")
 
     # Sync to Supabase
@@ -428,7 +462,7 @@ def main():
     print(f"Errors: {stats['errors']}")
     print("=" * 60)
 
-    if stats['errors'] > 0:
+    if stats['errors'] > 0 or stats['apps_synced'] != len(cve_data):
         sys.exit(1)
 
 
