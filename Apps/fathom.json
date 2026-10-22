@@ -1,14 +1,14 @@
 {
   "name": "Fathom",
   "description": "Record and transcribe video conferences",
-  "version": "3.10.2",
-  "url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-3.10.2.dmg",
-  "vendor_url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-3.10.2.dmg",
+  "version": "3.10.3",
+  "url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-3.10.3.dmg",
+  "vendor_url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-3.10.3.dmg",
   "bundleId": "video.fathom.electron",
   "homepage": "https://fathom.video/",
   "homebrew_cask": "fathom",
-  "fileName": "Fathom-darwin-arm64-3.10.2.dmg",
-  "sha": "c84429b0befc00395f10b482538b19bd9f48765562f0b042b514a4c721499f52",
+  "fileName": "Fathom-darwin-arm64-3.10.3.dmg",
+  "sha": "7fc5b31347306b988f21cc29009114a223dc8a24eb862d7fc3f9bd27b742e936",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:58:34Z",
     "qa_result": "Installation successful and verified",
@@ -21,5 +21,5 @@
   },
   "category": "Productivity",
   "publisher": "Fathom, Inc.",
-  "previous_version": "3.10.1"
+  "previous_version": "3.10.2"
 }

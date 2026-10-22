@@ -1,15 +1,27 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-21T10:20:43.952539Z",
-  "lastFullSyncAt": "2026-10-21T10:20:43.952539Z",
+  "lastPublishedAt": "2026-10-22T01:20:37.443013Z",
+  "lastFullSyncAt": "2026-10-22T01:20:37.443013Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
+    {
+      "app": "grammarly_desktop",
+      "stage": "collection"
+    },
+    {
+      "app": "jasp",
+      "stage": "collection"
+    },
+    {
+      "app": "mozilla_firefox_developer_edition",
+      "stage": "collection"
+    },
     {
       "app": "xmind",
       "stage": "collection"
     }
   ],
   "appCount": 1154,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/39579482384"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/39700928141"
 }

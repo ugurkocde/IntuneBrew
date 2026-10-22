@@ -1,14 +1,14 @@
 {
   "name": "Roon",
   "description": "Music player",
-  "version": "2.73.2",
+  "version": "2.74",
   "url": "https://download.roonlabs.net/builds/Roon.dmg",
   "vendor_url": "https://download.roonlabs.net/builds/Roon.dmg",
   "bundleId": "com.roonlabs.Roon",
   "homepage": "https://roonlabs.com/",
   "homebrew_cask": "roon",
   "fileName": "Roon.dmg",
-  "sha": "e5ba1213fca9a8ca9e0b2aae0f6406fa8fae75587cf897ad69949192f867a7a7",
+  "sha": "ffa194bf19aafc1dd9cf379ff9c3e3abdcf6ceb6a9ade0b2425668f362adedb1",
   "category": "Media",
   "publisher": "Roon Labs, LLC",
   "previous_version": "2.73.2"
