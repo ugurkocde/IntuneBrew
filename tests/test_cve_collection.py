@@ -36,6 +36,26 @@ class RequestTimeout(NetworkError):
     pass
 
 
+class ReadTimeout(RequestTimeout):
+    pass
+
+
+class ConnectTimeout(RequestTimeout):
+    pass
+
+
+class ChunkedEncodingError(NetworkError):
+    pass
+
+
+class ContentDecodingError(NetworkError):
+    pass
+
+
+class ReadTimeoutError(Exception):
+    pass
+
+
 class Response:
     def __init__(self, status=200, data=None):
         self.status_code = status
@@ -65,6 +85,7 @@ class CollectionTests(unittest.TestCase):
         self.kev = [Response(data={'vulnerabilities': [{'cveID': 'CVE-2099-0001'}]})]
         self.nvd = [page()]
         self.calls = []
+        self.sizes = []
         requests = types.SimpleNamespace(get=self.get, exceptions=types.SimpleNamespace(
             RequestException=NetworkError, Timeout=RequestTimeout))
         self.ns = {k: getattr(typing, k) for k in ['Dict', 'List', 'Optional', 'Any', 'Tuple']}
@@ -73,7 +94,7 @@ class CollectionTests(unittest.TestCase):
                         'time': time, 'requests': requests,
                         'NVD_API_KEY': 'FAKE_TEST_KEY', 'SPECIFIC_APP': '', 'FULL_SYNC': False,
                         'CVE_DIR': self.directory, 'CPE_MAPPINGS': {'fixture_app': ('fake_vendor', 'fake_product', [])},
-                        'MAX_RETRIES': 3, 'REQUEST_DELAY': 0, 'RETRY_DELAY': 0,
+                        'MAX_RETRIES': 3, 'PAGE_SIZES': (500, 200, 100), 'REQUEST_DELAY': 0, 'RETRY_DELAY': 0,
                         'NVD_WORKERS': 1, 'SCAN_START_SECONDS': 2700, 'SCAN_HARD_SECONDS': 2880,
                         'threading': threading, 'ThreadPoolExecutor': ThreadPoolExecutor, 'wait': wait,
                         'parsedate_to_datetime': parsedate_to_datetime,
@@ -86,6 +107,8 @@ class CollectionTests(unittest.TestCase):
     def get(self, url, **kwargs):
         name = 'kev' if url.endswith('/kev') else 'nvd'
         self.calls.append((name, (kwargs.get('params') or {}).get('startIndex')))
+        if name == 'nvd':
+            self.sizes.append(kwargs['params']['resultsPerPage'])
         sequence = self.kev if name == 'kev' else self.nvd
         if not sequence:
             raise AssertionError('Unexpected additional provider request')
@@ -487,8 +510,156 @@ class CollectionTests(unittest.TestCase):
                      if isinstance(node, ast.Assign) and isinstance(node.targets[0], ast.Name)}
         self.assertEqual(ast.literal_eval(constants['REQUEST_DELAY']), 6.1)
         self.assertEqual(ast.literal_eval(constants['NVD_WORKERS']), 4)
+        self.assertEqual(ast.literal_eval(constants['PAGE_SIZES']), (500, 200, 100))
+        self.assertEqual(ast.literal_eval(constants['MAX_RETRIES']), 3)
+        self.assertIn('timeout=(10, 60)', source)
         self.assertIn('SCAN_START_SECONDS = 45 * 60', source)
         self.assertIn('SCAN_HARD_SECONDS = 48 * 60', source)
+
+    def sized_provider(self, total=650, on_call=None):
+        """Serve complete, ordered fake pages while recording immutable request sizes."""
+        observed = []
+        def transport(url, **kwargs):
+            if url.endswith('/kev'):
+                return self.get(url, **kwargs)
+            params = kwargs['params']
+            product = params['virtualMatchString'].split(':')[4]
+            start, size = params['startIndex'], params['resultsPerPage']
+            observed.append((product, start, size))
+            self.calls.append(('nvd', start))
+            self.sizes.append(size)
+            result = on_call(params, len(observed)) if on_call else None
+            if isinstance(result, Exception):
+                raise result
+            return result or page(total, [f'CVE-2099-{i+1:04d}' for i in range(start, min(start+size, total))], start)
+        self.ns['requests'].get = transport
+        return observed
+
+    def test_stalled_body_shrinks_same_offset_and_matches_complete_output(self):
+        self.sized_provider()
+        self.run_main()
+        serial = self.file.read_bytes()
+        self.ns.update(kev_loaded=False, kev_failed=False, kev_cache={})
+        self.kev = [Response(data={'vulnerabilities': [{'cveID': 'CVE-2099-0001'}]})]
+        observed = self.sized_provider(on_call=lambda params, count:
+                                       NetworkError(ReadTimeoutError('FAKE_TEST_KEY')) if count == 1 else None)
+        output = []
+        self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
+        self.run_main()
+        self.assertEqual(observed, [('fake_product', 0, 500), ('fake_product', 0, 200),
+                                    ('fake_product', 200, 200), ('fake_product', 400, 200), ('fake_product', 600, 200)])
+        self.assertEqual(self.file.read_bytes(), serial)
+        self.assertEqual([r['requestedSize'] for r in self.ns['CONTROL'].attempts], [500, 200, 200, 200, 200])
+        self.assertEqual(self.ns['CONTROL'].report()['requestedSizes'], {'500': 1, '200': 4})
+        self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
+
+    def test_three_body_failures_are_bounded_and_stop_queued_apps(self):
+        self.ns['CPE_MAPPINGS']['queued_app'] = ('vendor', 'queued', [])
+        other = self.directory / 'queued_app.json'
+        other.write_bytes(self.previous)
+        self.nvd = [NetworkError(ReadTimeoutError()) for _ in range(3)]
+        self.assert_failed_and_preserved()
+        self.assertEqual(self.sizes, [500, 200, 100])
+        self.assertEqual([start for name, start in self.calls if name == 'nvd'], [0, 0, 0])
+        self.assertEqual(other.read_bytes(), self.previous)
+        self.assertEqual(self.ns['CONTROL'].first_failure[0], 'fixture_app')
+        self.assertIn('body_read_timeout', self.ns['CONTROL'].first_failure[1])
+
+    def test_last_attempt_100_does_not_persist_and_alternate_resets_500(self):
+        self.ns['CPE_MAPPINGS']['fixture_app'] = ('fake_vendor', 'fake_product', ['fake_alternate'])
+        observed = self.sized_provider(total=451, on_call=lambda params, count: ReadTimeout() if count <= 2 else None)
+        self.run_main()
+        self.assertEqual(observed, [('fake_product', 0, 500), ('fake_product', 0, 200),
+                                    ('fake_product', 0, 100), ('fake_product', 100, 200),
+                                    ('fake_product', 300, 200), ('fake_alternate', 0, 500)])
+        self.assertEqual(json.loads(self.file.read_text())['total_cves'], 451)
+
+    def test_only_body_transport_failures_shrink_page_size(self):
+        cases = [(ReadTimeout(), 200), (ChunkedEncodingError(), 200), (ContentDecodingError(), 200), (ConnectTimeout(), 500),
+                 (NetworkError(), 500), (Response(429), 500), (Response(503), 500),
+                 (Response(500), 500), (Response(data=ValueError('FAKE_TEST_KEY')), 500)]
+        for first, expected in cases:
+            with self.subTest(first=type(first).__name__, expected=expected):
+                self.nvd = [first, page()]
+                self.sizes.clear()
+                self.run_main()
+                self.assertEqual(self.sizes, [500, expected])
+
+    def test_content_decoding_failures_shrink_and_recover_without_leaking_details(self):
+        self.nvd = [ContentDecodingError('FAKE_TEST_KEY'), ContentDecodingError('FAKE_TEST_KEY'), page()]
+        output = []
+        self.ns['print'] = lambda *args, **kw: output.append(' '.join(map(str, args)))
+        self.run_main()
+        self.assertEqual(self.sizes, [500, 200, 100])
+        self.assertEqual([start for name, start in self.calls if name == 'nvd'], [0, 0, 0])
+        self.assertEqual([row['exceptionType'] for row in self.ns['CONTROL'].attempts],
+                         ['ContentDecodingError', 'ContentDecodingError', None])
+        self.assertNotIn('FAKE_TEST_KEY', '\n'.join(output))
+        self.assertEqual(json.loads(self.file.read_text())['total_cves'], 0)
+
+    def test_content_decoding_exhaustion_stops_queued_work_and_keeps_files(self):
+        self.ns['CPE_MAPPINGS']['queued_app'] = ('vendor', 'queued', [])
+        other = self.directory / 'queued_app.json'
+        other.write_bytes(self.previous)
+        self.nvd = [ContentDecodingError() for _ in range(3)]
+        self.assert_failed_and_preserved()
+        self.assertEqual(self.sizes, [500, 200, 100])
+        self.assertEqual(other.read_bytes(), self.previous)
+        self.assertEqual(self.ns['CONTROL'].first_failure[0], 'fixture_app')
+        self.assertEqual(self.ns['CONTROL'].stopped_apps, {'queued_app'})
+
+    def test_shrink_keeps_oversize_drift_offset_and_repeat_guards(self):
+        for defect in ['oversized', 'total', 'offset', 'repeated']:
+            with self.subTest(defect=defect):
+                self.file.write_bytes(self.previous)
+                def reply(params, count):
+                    if count == 1:
+                        return ReadTimeout()
+                    start = params['startIndex']
+                    if defect == 'oversized' and count == 2:
+                        return page(650, [f'CVE-2099-{i+1:04d}' for i in range(201)])
+                    if defect == 'offset' and count == 2:
+                        return page(650, ['CVE-2099-0001'], 1)
+                    if count == 3:
+                        return page(651 if defect == 'total' else 650,
+                                    ['CVE-2099-0001'] if defect == 'repeated' else ['CVE-2099-0201'], start)
+                self.sized_provider(on_call=reply)
+                self.assert_failed_and_preserved()
+                expected = {'oversized': 'Oversized NVD page', 'total': 'NVD pagination changed during collection',
+                            'offset': 'NVD pagination changed during collection', 'repeated': 'Repeated NVD page entries'}
+                self.assertEqual(self.ns['CONTROL'].first_failure[1], expected[defect])
+
+    def test_shrinking_retry_uses_global_pacer(self):
+        now, starts = [0.0], []
+        self.ns['CONTROL'] = self.ns['RuntimeControl'](6.1, 100, 110, lambda: now[0], lambda n: now.__setitem__(0, now[0]+n))
+        def transport(url, **kwargs):
+            starts.append((now[0], kwargs['params']['resultsPerPage']))
+            if len(starts) == 1:
+                raise ReadTimeout()
+            return page()
+        self.ns['requests'].get = transport
+        self.ns['nvd_request']('https://example.test/nvd', {'resultsPerPage': 500, 'startIndex': 1000})
+        self.assertEqual([size for _, size in starts], [500, 200])
+        self.assertGreaterEqual(starts[1][0]-starts[0][0], 6.1)
+
+    def test_shrink_retry_cannot_escape_stop_or_start_deadline(self):
+        for stopped in [True, False]:
+            with self.subTest(stopped=stopped):
+                now, calls = [0.0], []
+                control = self.ns['RuntimeControl'](6.1, 5, 15, lambda: now[0], lambda n: now.__setitem__(0, now[0]+n))
+                self.ns['CONTROL'] = control
+                def transport(url, **kwargs):
+                    calls.append(kwargs['params']['resultsPerPage'])
+                    if stopped:
+                        with control.lock:
+                            control.stopped = True
+                    raise ReadTimeout()
+                self.ns['requests'].get = transport
+                expected = self.ns['ScanStopped'] if stopped else self.ns['NvdUnavailable']
+                with self.assertRaises(expected):
+                    self.ns['nvd_request']('https://example.test/nvd', {'resultsPerPage': 500, 'startIndex': 0})
+                self.assertEqual(calls, [500])
+                self.assertEqual(self.file.read_bytes(), self.previous)
 
 
 if __name__ == '__main__':
