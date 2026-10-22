@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/Blender" ]; then
     rm -f "$HOME/Library/Application Support/Blender" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/Blender
+echo "Removing $HOME/Library/Caches/Blender..."
+if [ -d "$HOME/Library/Caches/Blender" ]; then
+    rm -rf "$HOME/Library/Caches/Blender" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/Blender" ]; then
+    rm -f "$HOME/Library/Caches/Blender" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/org.blenderfoundation.blender.savedState
 echo "Removing $HOME/Library/Saved Application State/org.blenderfoundation.blender.savedState..."
 if [ -d "$HOME/Library/Saved Application State/org.blenderfoundation.blender.savedState" ]; then

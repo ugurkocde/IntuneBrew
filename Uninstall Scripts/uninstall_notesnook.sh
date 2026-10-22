@@ -25,6 +25,14 @@ elif [ -f "/Applications/Notesnook.app" ]; then
     rm -f "/Applications/Notesnook.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.streetwriters.notesnook.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.streetwriters.notesnook.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.streetwriters.notesnook.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.streetwriters.notesnook.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.streetwriters.notesnook.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.streetwriters.notesnook.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Notesnook
 echo "Removing $HOME/Library/Application Support/Notesnook..."
 if [ -d "$HOME/Library/Application Support/Notesnook" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Preferences/com.streetwriters.notesnook.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.streetwriters.notesnook.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.streetwriters.notesnook.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.streetwriters.notesnook.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/org.streetwriters.notesnook.plist
+echo "Removing $HOME/Library/Preferences/org.streetwriters.notesnook.plist..."
+if [ -d "$HOME/Library/Preferences/org.streetwriters.notesnook.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/org.streetwriters.notesnook.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.streetwriters.notesnook.plist" ]; then
+    rm -f "$HOME/Library/Preferences/org.streetwriters.notesnook.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
