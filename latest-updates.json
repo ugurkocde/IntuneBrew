@@ -1,383 +1,103 @@
 {
-  "lastChecked": "2026-10-22T01:20:37.443013Z",
+  "lastChecked": "2026-10-22T07:50:15.118756Z",
   "updates": [
     {
-      "appName": "acorn",
-      "previousVersion": "8.7",
-      "newVersion": "8.7.1",
+      "appName": "1password cli",
+      "previousVersion": "2.41.0",
+      "newVersion": "2.41.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/acorn.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/1password_cli.png"
     },
     {
-      "appName": "adguard",
-      "previousVersion": "2.20.1.2627",
-      "newVersion": "2.20.2.2629",
+      "appName": "appflowy",
+      "previousVersion": "0.14.7",
+      "newVersion": "0.14.10",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/adguard.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/appflowy.png"
     },
     {
-      "appName": "altserver",
-      "previousVersion": "1.8.1",
-      "newVersion": "1.8.2",
+      "appName": "bdash",
+      "previousVersion": "1.35.2",
+      "newVersion": "1.35.3",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/altserver.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bdash.png"
     },
     {
-      "appName": "aptible toolbelt",
-      "previousVersion": "1.0.4",
-      "newVersion": "1.0.5",
+      "appName": "chatgpt",
+      "previousVersion": "26.1016.51333",
+      "newVersion": "26.1016.61520",
+      "changelog": "https://help.openai.com/en/articles/9703738-macos-app-release-notes",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/chatgpt.png"
+    },
+    {
+      "appName": "claude code",
+      "previousVersion": "2.1.304",
+      "newVersion": "2.1.306",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/aptible_toolbelt.png"
-    },
-    {
-      "appName": "asana",
-      "previousVersion": "2.10.2",
-      "newVersion": "2.10.3",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/asana.png"
-    },
-    {
-      "appName": "beeper",
-      "previousVersion": "4.3.209",
-      "newVersion": "4.3.229",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/beeper.png"
-    },
-    {
-      "appName": "bitfocus companion",
-      "previousVersion": "5.1.0",
-      "newVersion": "5.1.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bitfocus_companion.png"
-    },
-    {
-      "appName": "canva",
-      "previousVersion": "1.126.1",
-      "newVersion": "1.126.2",
-      "changelog": "https://www.canva.com/help/canva-desktop-app/",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/canva.png"
-    },
-    {
-      "appName": "claude",
-      "previousVersion": "3.1623.0",
-      "newVersion": "3.1623.1",
-      "changelog": "https://docs.anthropic.com/en/release-notes/claude-apps",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/claude.png"
-    },
-    {
-      "appName": "clipbook",
-      "previousVersion": "2.4.0",
-      "newVersion": "2.5.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/clipbook.png"
-    },
-    {
-      "appName": "cmtrace open",
-      "previousVersion": "1.6.0",
-      "newVersion": "1.6.3",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/cmtrace_open.png"
-    },
-    {
-      "appName": "cursor",
-      "previousVersion": "3.26.13",
-      "newVersion": "3.26.16",
-      "changelog": "https://www.cursor.com/changelog",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/cursor.png"
-    },
-    {
-      "appName": "deepl",
-      "previousVersion": "26.6.14916780",
-      "newVersion": "26.10.12962491689",
-      "changelog": "https://www.deepl.com/changelog.html",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/deepl.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/claude_code.png"
     },
     {
       "appName": "docker desktop",
-      "previousVersion": "4.96.0",
-      "newVersion": "4.96.1",
+      "previousVersion": "4.96.1",
+      "newVersion": "4.96.2",
       "changelog": "https://docs.docker.com/desktop/release-notes/",
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/docker_desktop.png"
     },
     {
-      "appName": "etcher",
-      "previousVersion": "2.1.7",
-      "newVersion": "2.1.8",
-      "changelog": "https://github.com/balena-io/etcher/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/etcher.png"
-    },
-    {
-      "appName": "fathom",
-      "previousVersion": "3.10.2",
-      "newVersion": "3.10.3",
+      "appName": "milanote",
+      "previousVersion": "3.18.140",
+      "newVersion": "3.18.141",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/fathom.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/milanote.png"
     },
     {
-      "appName": "funter",
-      "previousVersion": "7.1.2",
-      "newVersion": "7.1.3",
+      "appName": "mitmproxy",
+      "previousVersion": "12.2.3",
+      "newVersion": "12.3.0",
+      "changelog": "https://github.com/mitmproxy/mitmproxy/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/mitmproxy.png"
+    },
+    {
+      "appName": "outline",
+      "previousVersion": "1.10.0",
+      "newVersion": "1.11.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/funter.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/outline.png"
     },
     {
-      "appName": "gdevelop",
-      "previousVersion": "5.6.284",
-      "newVersion": "5.6.285",
+      "appName": "remnote",
+      "previousVersion": "1.28.50",
+      "newVersion": "1.28.53",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/gdevelop.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/remnote.png"
     },
     {
-      "appName": "github copilot cli",
-      "previousVersion": "1.0.101",
-      "newVersion": "1.0.102",
+      "appName": "rive",
+      "previousVersion": "0.9.335",
+      "newVersion": "0.9.349",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/github_copilot_cli.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rive.png"
     },
     {
-      "appName": "google antigravity",
-      "previousVersion": "2.24.0",
-      "newVersion": "2.25.0",
+      "appName": "rocketchat",
+      "previousVersion": "4.18.3",
+      "newVersion": "4.18.4",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/google_antigravity.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rocketchat.png"
     },
     {
-      "appName": "granola",
-      "previousVersion": "7.668.0",
-      "newVersion": "7.668.2",
+      "appName": "rode connect",
+      "previousVersion": "1.3.47",
+      "newVersion": "1.3.48",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/granola.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rode_connect.png"
     },
     {
-      "appName": "jitsi meet",
-      "previousVersion": "2026.8.0",
-      "newVersion": "2026.10.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/jitsi_meet.png"
-    },
-    {
-      "appName": "keepassxc",
-      "previousVersion": "2.7.12",
-      "newVersion": "2.8.0",
-      "changelog": "https://github.com/keepassxreboot/keepassxc/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/keepassxc.png"
-    },
-    {
-      "appName": "lark",
-      "previousVersion": "8.2.16",
-      "newVersion": "8.3.14",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/lark.png"
-    },
-    {
-      "appName": "loom",
-      "previousVersion": "0.380.6",
-      "newVersion": "0.381.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/loom.png"
-    },
-    {
-      "appName": "macwhisper",
-      "previousVersion": "15.7",
-      "newVersion": "15.7.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/macwhisper.png"
-    },
-    {
-      "appName": "memory cleaner",
-      "previousVersion": "5.5.3",
-      "newVersion": "5.5.4",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/memory_cleaner.png"
-    },
-    {
-      "appName": "microsoft visual studio code",
-      "previousVersion": "1.142.0",
-      "newVersion": "1.143.0",
-      "changelog": "https://code.visualstudio.com/updates/",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_visual_studio_code.png"
-    },
-    {
-      "appName": "miro",
-      "previousVersion": "0.11.192",
-      "newVersion": "0.11.194",
-      "changelog": "https://help.miro.com/hc/en-us/articles/360017572854-Desktop-app-release-notes",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/miro.png"
-    },
-    {
-      "appName": "monotype desktop app",
-      "previousVersion": "7.8.0",
-      "newVersion": "7.8.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/monotype_desktop_app.png"
-    },
-    {
-      "appName": "mullvad browser",
-      "previousVersion": "15.0.25",
-      "newVersion": "15.0.26",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/mullvad_browser.png"
-    },
-    {
-      "appName": "nektony app cleaner  uninstaller",
-      "previousVersion": "10.0.1",
-      "newVersion": "10.0.2",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/nektony_app_cleaner__uninstaller.png"
-    },
-    {
-      "appName": "nektony maccleaner pro",
-      "previousVersion": "4.0.4",
-      "newVersion": "4.0.5",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/nektony_maccleaner_pro.png"
-    },
-    {
-      "appName": "ollama",
-      "previousVersion": "0.40.7",
-      "newVersion": "0.40.8",
-      "changelog": "https://github.com/ollama/ollama/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/ollama.png"
-    },
-    {
-      "appName": "osquery",
-      "previousVersion": "5.23.1",
-      "newVersion": "5.24.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/osquery.png"
-    },
-    {
-      "appName": "paste",
-      "previousVersion": "7.0.3",
-      "newVersion": "7.0.4",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/paste.png"
-    },
-    {
-      "appName": "rambox",
-      "previousVersion": "3.1.1",
-      "newVersion": "3.1.2",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rambox.png"
-    },
-    {
-      "appName": "reqable",
-      "previousVersion": "3.3.3",
-      "newVersion": "3.3.4",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/reqable.png"
-    },
-    {
-      "appName": "roon",
-      "previousVersion": "2.73.2",
-      "newVersion": "2.74",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/roon.png"
-    },
-    {
-      "appName": "screen studio",
-      "previousVersion": "4.0.4-4926",
-      "newVersion": "4.1.0-5005",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/screen_studio.png"
-    },
-    {
-      "appName": "session manager plugin for the aws cli",
-      "previousVersion": "1.2.835.0",
-      "newVersion": "1.2.896.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/session_manager_plugin_for_the_aws_cli.png"
-    },
-    {
-      "appName": "sipgate",
-      "previousVersion": "2.44.12",
-      "newVersion": "2.45.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sipgate.png"
-    },
-    {
-      "appName": "sketchup",
-      "previousVersion": "2026.2.242.76",
-      "newVersion": "2027.0.264.170",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sketchup.png"
-    },
-    {
-      "appName": "tabtab",
-      "previousVersion": "2.2.1",
-      "newVersion": "2.2.2",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tabtab.png"
-    },
-    {
-      "appName": "tor browser",
-      "previousVersion": "15.0.25",
-      "newVersion": "15.0.26",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tor_browser.png"
-    },
-    {
-      "appName": "trezor suite",
-      "previousVersion": "26.9.3",
-      "newVersion": "26.10.2",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/trezor_suite.png"
-    },
-    {
-      "appName": "tuple",
-      "previousVersion": "3.3.10",
-      "newVersion": "3.3.11",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tuple.png"
-    },
-    {
-      "appName": "tuta mail",
-      "previousVersion": "361.261006.0",
-      "newVersion": "362.261020.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tuta_mail.png"
-    },
-    {
-      "appName": "vorssaint",
-      "previousVersion": "3.4.1",
-      "newVersion": "3.4.2",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/vorssaint.png"
-    },
-    {
-      "appName": "wavebox",
-      "previousVersion": "155.3.18.2",
-      "newVersion": "156.3.20.2",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/wavebox.png"
-    },
-    {
-      "appName": "whatsapp",
-      "previousVersion": "26.41.28",
-      "newVersion": "26.42.19",
-      "changelog": "https://web.whatsapp.com/desktop/windows/release-notes",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/whatsapp.png"
-    },
-    {
-      "appName": "workflowy",
-      "previousVersion": "4.3.2610141901",
-      "newVersion": "4.3.2610201242",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/workflowy.png"
-    },
-    {
-      "appName": "zed",
-      "previousVersion": "1.24.4",
-      "newVersion": "1.25.2",
-      "changelog": "https://zed.dev/releases/stable",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/zed.png"
-    },
-    {
-      "appName": "zen browser",
-      "previousVersion": "1.23.3b",
-      "newVersion": "1.23.4b",
-      "changelog": "https://zen-browser.app/release-notes/",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/zen_browser.png"
+      "appName": "spotify",
+      "previousVersion": "1.3.5.3058",
+      "newVersion": "1.3.6.1921",
+      "changelog": "https://support.spotify.com/us/article/desktop-app-changelog/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/spotify.png"
     }
   ]
 }

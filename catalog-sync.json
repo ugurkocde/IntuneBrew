@@ -1,10 +1,14 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-22T01:20:37.443013Z",
-  "lastFullSyncAt": "2026-10-22T01:20:37.443013Z",
+  "lastPublishedAt": "2026-10-22T07:50:15.118756Z",
+  "lastFullSyncAt": "2026-10-22T07:50:15.118756Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
+    {
+      "app": "cursorsense",
+      "stage": "collection"
+    },
     {
       "app": "grammarly_desktop",
       "stage": "collection"
@@ -23,5 +27,5 @@
     }
   ],
   "appCount": 1154,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/39700928141"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/39739724835"
 }

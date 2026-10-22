@@ -1,14 +1,14 @@
 {
   "name": "Docker Desktop",
   "description": "App to build and share containerised applications and microservices",
-  "version": "4.96.1",
-  "url": "https://desktop.docker.com/mac/main/arm64/244132/Docker.dmg",
-  "vendor_url": "https://desktop.docker.com/mac/main/arm64/244132/Docker.dmg",
+  "version": "4.96.2",
+  "url": "https://desktop.docker.com/mac/main/arm64/244353/Docker.dmg",
+  "vendor_url": "https://desktop.docker.com/mac/main/arm64/244353/Docker.dmg",
   "bundleId": "com.docker.docker",
   "homepage": "https://www.docker.com/products/docker-desktop",
   "homebrew_cask": "docker-desktop",
   "fileName": "Docker.dmg",
-  "sha": "7f99f0bfd921f141f4dc7a146617b56666a4156f4bc5b0d19f2671c8290c3ff0",
+  "sha": "8a254f21b9b59c5d5c51c5d1b92fa97ee51d95ae7087b2be12587b424bdb4e25",
   "changelog": "https://docs.docker.com/desktop/release-notes/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:26:41Z",
@@ -22,5 +22,5 @@
   },
   "category": "Developer Tools",
   "publisher": "Docker, Inc.",
-  "previous_version": "4.96.0"
+  "previous_version": "4.96.1"
 }
