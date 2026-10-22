@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-10-22T07:20:25.620Z",
+  "last_full_scan": "2026-10-22T07:51:32.809Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -6669,8 +6669,8 @@
       "name": "Rode Central"
     },
     "rode_connect": {
-      "last_checked": "2026-01-17T08:37:42.168Z",
-      "bundle_id": "com.rodeconnect.installer",
+      "last_checked": "2026-10-22T07:51:32.804Z",
+      "bundle_id": "com.rode.rodeconnect",
       "status": "verified",
       "source": "file",
       "name": "Rode Connect"
