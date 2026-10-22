@@ -9,8 +9,8 @@
   "fileName": "rode_connect_1.3.48.pkg",
   "type": "app",
   "sha": "ccf83870fa6474fd2bb8062cfdd975060c75a7eca54bc4d8e5feebcba3caad2d",
-  "previous_version": "1.3.47",
+  "previous_version": "1.3.48",
   "category": "Media",
-  "publisher": "RØDE Microphones",
+  "publisher": "R\u00d8DE Microphones",
   "homebrew_cask": "rode-connect"
 }

@@ -1,17 +1,17 @@
 {
   "name": "ChatGPT",
   "description": "OpenAI's official ChatGPT desktop app",
-  "version": "26.1016.61520",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/chatgpt_26.1016.61520.pkg",
-  "vendor_url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1016.61520.zip",
+  "version": "26.1016.62342",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/chatgpt_26.1016.62342.pkg",
+  "vendor_url": "https://persistent.oaistatic.com/codex-app-prod/ChatGPT-darwin-arm64-26.1016.62342.zip",
   "bundleId": "com.openai.codex",
   "homepage": "https://chatgpt.com/",
   "homebrew_cask": "chatgpt",
-  "fileName": "chatgpt_26.1016.61520.pkg",
-  "sha": "475e4840e99e546566a43c143a7904d2bebe1f7148cb3648529b52e6885202d6",
+  "fileName": "chatgpt_26.1016.62342.pkg",
+  "sha": "a35f534127ed26507451ca538a3d3bc503887aba137aa00faf8050045145250c",
   "changelog": "https://help.openai.com/en/articles/9703738-macos-app-release-notes",
   "category": "Productivity",
   "publisher": "OpenAI",
-  "previous_version": "26.1016.51333",
+  "previous_version": "26.1016.61520",
   "type": "app"
 }

@@ -1,16 +1,16 @@
 {
   "name": "Bdash",
   "description": "Simple SQL Client for lightweight data analysis",
-  "version": "1.35.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/bdash_1.35.3.pkg",
-  "vendor_url": "https://github.com/bdash-app/bdash/releases/download/v1.35.3/Bdash-1.35.3-universal-mac.zip",
+  "version": "1.35.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/bdash_1.35.4.pkg",
+  "vendor_url": "https://github.com/bdash-app/bdash/releases/download/v1.35.4/Bdash-1.35.4-universal-mac.zip",
   "bundleId": "io.bdash",
   "homepage": "https://github.com/bdash-app/bdash",
-  "fileName": "bdash_1.35.3.pkg",
+  "fileName": "bdash_1.35.4.pkg",
   "type": "app",
-  "sha": "bcad0439174016d21dbc8494201d5999f1effac5bb377294ef583180f68abf10",
+  "sha": "863318fa2ce1fdcd3f562c704b1a2c74984975188e25afd8a3e2ad697d976a93",
   "category": "Developer Tools",
   "publisher": "bdash-app",
-  "previous_version": "1.35.2",
+  "previous_version": "1.35.3",
   "homebrew_cask": "bdash"
 }

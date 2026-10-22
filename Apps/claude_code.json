@@ -1,15 +1,15 @@
 {
   "name": "Claude Code",
   "description": "Terminal-based AI coding assistant",
-  "version": "2.1.306",
-  "url": "https://downloads.claude.ai/claude-code-releases/2.1.306/darwin-arm64/claude",
-  "vendor_url": "https://downloads.claude.ai/claude-code-releases/2.1.306/darwin-arm64/claude",
+  "version": "2.1.308",
+  "url": "https://downloads.claude.ai/claude-code-releases/2.1.308/darwin-arm64/claude",
+  "vendor_url": "https://downloads.claude.ai/claude-code-releases/2.1.308/darwin-arm64/claude",
   "bundleId": "com.orange.claudecodelauncher",
   "homepage": "https://www.anthropic.com/claude-code",
   "homebrew_cask": "claude-code",
-  "fileName": "Claude-Code-2.1.306.dmg",
-  "sha": "b5d795b7760032d79954b55a9cd1876dcf3a8dc9608fd6bb9f618593f69fd44b",
+  "fileName": "Claude-Code-2.1.308.dmg",
+  "sha": "ca923c86ac84b30574a82331a05b6e066c27477a926ceaffe46a845a33e4dd37",
   "category": "Developer Tools",
   "publisher": "Anthropic",
-  "previous_version": "2.1.304"
+  "previous_version": "2.1.306"
 }
