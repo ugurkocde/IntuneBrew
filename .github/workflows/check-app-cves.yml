@@ -51,6 +51,8 @@ jobs:
           import json
           import time
           import pathlib
+          import tempfile
+          import re
           from datetime import datetime, timedelta
           from typing import Optional, Dict, List, Any, Tuple
 
@@ -238,38 +240,56 @@ jobs:
 
           KEV_CATALOG_URL = "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
           kev_cache: Dict[str, Dict] = {}
+          kev_loaded = False
+          kev_failed = False
+
+          class NvdUnavailable(RuntimeError):
+              """A complete NVD response could not be obtained."""
+
+          class KevUnavailable(RuntimeError):
+              """KEV classifications must not be replaced with unknown data."""
 
           def fetch_kev_catalog() -> Dict[str, Dict]:
-              """Fetch and cache the CISA KEV catalog."""
-              global kev_cache
-              if kev_cache:
+              """Load KEV once, with bounded retries, before any CVE file is changed."""
+              global kev_cache, kev_loaded, kev_failed
+              if kev_loaded:
                   return kev_cache
-
+              if kev_failed:
+                  raise KevUnavailable("CISA KEV catalog is unavailable")
               print("Fetching CISA KEV catalog...")
-              try:
-                  response = requests.get(KEV_CATALOG_URL, timeout=30)
-                  if response.status_code == 200:
+              for attempt in range(MAX_RETRIES):
+                  try:
+                      response = requests.get(KEV_CATALOG_URL, timeout=30)
+                      if response.status_code != 200:
+                          raise ValueError("Unsuccessful KEV response")
                       data = response.json()
-                      vulnerabilities = data.get('vulnerabilities', [])
+                      vulnerabilities = data.get('vulnerabilities') if isinstance(data, dict) else None
+                      if not isinstance(vulnerabilities, list) or not vulnerabilities:
+                          raise ValueError("Empty or malformed KEV catalog")
+                      catalog = {}
                       for vuln in vulnerabilities:
-                          cve_id = vuln.get('cveID', '').upper()
-                          if cve_id:
-                              kev_cache[cve_id] = {
-                                  'vendor': vuln.get('vendorProject'),
-                                  'product': vuln.get('product'),
-                                  'vulnerability_name': vuln.get('vulnerabilityName'),
-                                  'date_added': vuln.get('dateAdded'),
-                                  'due_date': vuln.get('dueDate'),
-                                  'known_ransomware_use': vuln.get('knownRansomwareCampaignUse', 'Unknown'),
-                                  'notes': vuln.get('notes'),
-                              }
+                          if not isinstance(vuln, dict) or not isinstance(vuln.get('cveID'), str) or not re.fullmatch(r'CVE-[0-9]{4}-[0-9]{4,}', vuln['cveID'], re.IGNORECASE):
+                              raise ValueError("Malformed KEV entry")
+                          cve_id = vuln['cveID'].upper()
+                          catalog[cve_id] = {
+                              'vendor': vuln.get('vendorProject'),
+                              'product': vuln.get('product'),
+                              'vulnerability_name': vuln.get('vulnerabilityName'),
+                              'date_added': vuln.get('dateAdded'),
+                              'due_date': vuln.get('dueDate'),
+                              'known_ransomware_use': vuln.get('knownRansomwareCampaignUse', 'Unknown'),
+                              'notes': vuln.get('notes'),
+                          }
+                      kev_cache = catalog
+                      kev_loaded = True
                       print(f"Loaded {len(kev_cache)} KEV entries")
-                  else:
-                      print(f"Failed to fetch KEV catalog: {response.status_code}")
-              except Exception as e:
-                  print(f"Error fetching KEV catalog: {e}")
-
-              return kev_cache
+                      return kev_cache
+                  except (requests.exceptions.RequestException, ValueError, TypeError):
+                      print(f"KEV catalog unavailable, attempt {attempt + 1}/{MAX_RETRIES}")
+                      if attempt < MAX_RETRIES - 1:
+                          time.sleep(RETRY_DELAY * (attempt + 1))
+              kev_failed = True
+              raise KevUnavailable("CISA KEV catalog could not be verified; previous data is preserved")
 
           def is_kev(cve_id: str) -> Optional[Dict]:
               """Check if a CVE is in the KEV catalog."""
@@ -280,38 +300,34 @@ jobs:
           # NVD API FUNCTIONS
           # =============================================================================
 
-          def nvd_request(url: str, params: Dict = None) -> Optional[Dict]:
-              """Make a rate-limited request to NVD API with retries."""
-              headers = {}
-              if NVD_API_KEY:
-                  headers['apiKey'] = NVD_API_KEY
-
+          def nvd_request(url: str, params: Dict = None) -> Dict:
+              """Return a validated page or fail; unavailability never means zero CVEs."""
+              headers = {'apiKey': NVD_API_KEY} if NVD_API_KEY else {}
+              reason = "NVD request failed"
               for attempt in range(MAX_RETRIES):
                   try:
                       time.sleep(REQUEST_DELAY)
                       response = requests.get(url, params=params, headers=headers, timeout=60)
-
                       if response.status_code == 200:
-                          return response.json()
-                      elif response.status_code == 403:
-                          print(f"Rate limited, waiting {RETRY_DELAY * (attempt + 1)} seconds...")
-                          time.sleep(RETRY_DELAY * (attempt + 1))
-                      elif response.status_code == 404:
-                          return None
-                      else:
-                          print(f"NVD API error {response.status_code}: {response.text[:200]}")
-                          if attempt < MAX_RETRIES - 1:
-                              time.sleep(RETRY_DELAY)
+                          data = response.json()
+                          if not isinstance(data, dict) or type(data.get('totalResults')) is not int or data['totalResults'] < 0 or not isinstance(data.get('vulnerabilities'), list):
+                              raise NvdUnavailable("Malformed NVD response")
+                          if 'startIndex' in data and type(data['startIndex']) is not int:
+                              raise NvdUnavailable("Malformed NVD page offset")
+                          return data
+                      reason = f"NVD API returned HTTP {response.status_code}"
+                      if response.status_code not in {403, 429} and response.status_code < 500:
+                          raise NvdUnavailable(reason)
+                  except NvdUnavailable:
+                      raise
                   except requests.exceptions.Timeout:
-                      print(f"Request timeout, attempt {attempt + 1}/{MAX_RETRIES}")
-                      if attempt < MAX_RETRIES - 1:
-                          time.sleep(RETRY_DELAY)
-                  except Exception as e:
-                      print(f"Request error: {e}")
-                      if attempt < MAX_RETRIES - 1:
-                          time.sleep(RETRY_DELAY)
-
-              return None
+                      reason = "NVD request timed out"
+                  except (requests.exceptions.RequestException, ValueError, TypeError):
+                      reason = "NVD response could not be read"
+                  print(f"{reason}, attempt {attempt + 1}/{MAX_RETRIES}")
+                  if attempt < MAX_RETRIES - 1:
+                      time.sleep(RETRY_DELAY * (attempt + 1))
+              raise NvdUnavailable(reason + "; previous data is preserved")
 
           def extract_version_info(config: Dict) -> Dict[str, Any]:
               """Extract version range information from CVE configuration."""
@@ -439,6 +455,7 @@ jobs:
                   start_index = 0
                   results_per_page = 500
                   total_results = None
+                  product_cve_ids = set()
 
                   while True:
                       params = {
@@ -448,17 +465,25 @@ jobs:
                       }
 
                       data = nvd_request(url, params)
-                      if not data:
-                          break
-
-                      vulnerabilities = data.get('vulnerabilities', [])
-
+                      vulnerabilities = data['vulnerabilities']
                       if total_results is None:
-                          total_results = data.get('totalResults', 0)
+                          total_results = data['totalResults']
                           print(f"  Found {total_results} total CVEs for {vendor}:{prod}")
-
+                      if data['totalResults'] != total_results or data.get('startIndex', start_index) != start_index:
+                          raise NvdUnavailable("NVD pagination changed during collection")
+                      if len(vulnerabilities) > total_results - start_index or (not vulnerabilities and start_index < total_results):
+                          raise NvdUnavailable("Incomplete NVD page")
                       if not vulnerabilities:
                           break
+                      page_ids = []
+                      for vuln in vulnerabilities:
+                          cve = vuln.get('cve') if isinstance(vuln, dict) else None
+                          if not isinstance(cve, dict) or not isinstance(cve.get('id'), str) or not re.fullmatch(r'CVE-[0-9]{4}-[0-9]{4,}', cve['id']):
+                              raise NvdUnavailable("Malformed NVD vulnerability")
+                          page_ids.append(cve['id'])
+                      if len(set(page_ids)) != len(page_ids) or product_cve_ids.intersection(page_ids):
+                          raise NvdUnavailable("Repeated NVD page entries")
+                      product_cve_ids.update(page_ids)
 
                       # Process CVEs from this page
                       for vuln in vulnerabilities:
@@ -549,7 +574,7 @@ jobs:
                           all_cves.append(cve_record)
 
                       # Move to next page
-                      start_index += results_per_page
+                      start_index += len(vulnerabilities)
                       if start_index >= total_results:
                           break
 
@@ -580,18 +605,26 @@ jobs:
                   'last_updated': datetime.now().strftime('%Y-%m-%d'),
                   'total_cves': len(cves),
                   'summary': {
-                      'critical': sum(1 for c in cves if c.get('severity', '').upper() == 'CRITICAL'),
-                      'high': sum(1 for c in cves if c.get('severity', '').upper() == 'HIGH'),
-                      'medium': sum(1 for c in cves if c.get('severity', '').upper() == 'MEDIUM'),
-                      'low': sum(1 for c in cves if c.get('severity', '').upper() == 'LOW'),
+                      'critical': sum(1 for c in cves if (c.get('severity') or '').upper() == 'CRITICAL'),
+                      'high': sum(1 for c in cves if (c.get('severity') or '').upper() == 'HIGH'),
+                      'medium': sum(1 for c in cves if (c.get('severity') or '').upper() == 'MEDIUM'),
+                      'low': sum(1 for c in cves if (c.get('severity') or '').upper() == 'LOW'),
                       'kev_count': sum(1 for c in cves if c.get('is_kev')),
                   },
                   'vulnerabilities': cves,
               }
 
               file_path = CVE_DIR / f"{app_key}.json"
-              with open(file_path, 'w') as f:
-                  json.dump(output, f, indent=2, default=str)
+              temporary = None
+              try:
+                  with tempfile.NamedTemporaryFile(mode='w', encoding='utf-8', dir=CVE_DIR,
+                                                   prefix=f'.{app_key}.', suffix='.tmp', delete=False) as f:
+                      temporary = pathlib.Path(f.name)
+                      json.dump(output, f, indent=2, default=str)
+                  os.replace(temporary, file_path)
+              finally:
+                  if temporary is not None:
+                      temporary.unlink(missing_ok=True)
 
               print(f"  Saved {len(cves)} CVEs to {file_path}")
 
@@ -653,8 +686,8 @@ jobs:
 
                           # Print summary
                           kev_count = sum(1 for c in cves if c.get('is_kev'))
-                          critical = sum(1 for c in cves if c.get('severity', '').upper() == 'CRITICAL')
-                          high = sum(1 for c in cves if c.get('severity', '').upper() == 'HIGH')
+                          critical = sum(1 for c in cves if (c.get('severity') or '').upper() == 'CRITICAL')
+                          high = sum(1 for c in cves if (c.get('severity') or '').upper() == 'HIGH')
 
                           print(f"  Total: {len(cves)} CVEs (Critical: {critical}, High: {high}, KEV: {kev_count})")
                       else:
@@ -680,13 +713,15 @@ jobs:
                   for app_key, error in errors:
                       print(f"  - {app_key}: {error}")
 
+              if errors:
+                  raise SystemExit(1)
               print("\nDone!")
 
           if __name__ == '__main__':
               main()
           PYTHON_SCRIPT
 
-          python check_cves.py
+          python -u check_cves.py
 
       - name: Commit and push CVE files
         run: |
@@ -710,7 +745,7 @@ jobs:
           fi
 
       - name: Sync CVE data to Supabase
-        if: always()
+        if: ${{ success() }}
         env:
           SUPABASE_URL: ${{ secrets.SUPABASE_URL }}
           SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
