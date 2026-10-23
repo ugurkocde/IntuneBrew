@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-22T21:48:11.860293Z",
-  "lastFullSyncAt": "2026-10-22T21:48:11.860293Z",
+  "lastPublishedAt": "2026-10-23T01:06:49.332792Z",
+  "lastFullSyncAt": "2026-10-23T01:06:49.332792Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -11,6 +11,10 @@
     },
     {
       "app": "cursorsense",
+      "stage": "collection"
+    },
+    {
+      "app": "goodsync",
       "stage": "collection"
     },
     {
@@ -35,5 +39,5 @@
     }
   ],
   "appCount": 1153,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/39854470210"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/39879440990"
 }
