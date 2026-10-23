@@ -46,6 +46,11 @@ Version 0.3.7: Fix Parse Errors
  Updates all applications that have a newer version available in Intune.
  Example: IntuneBrew -UpdateAll
 
+.PARAMETER DryRun
+ Check available updates with -UpdateAll without downloading installers, uploading apps, or changing assignments.
+ Authentication and catalog/Intune metadata reads are still required. Security holds remain in effect.
+ Example: IntuneBrew -UpdateAll -PreserveAssignments -ConfigFile ./certificate.json -DryRun
+
 .PARAMETER LocalFile
  Allows uploading a local PKG or DMG file to Intune. Will prompt for file selection and app details.
  Example: IntuneBrew -LocalFile
@@ -138,6 +143,9 @@ param(
     [switch]$UpdateAll,
     
     [Parameter(Mandatory = $false)]
+    [switch]$DryRun,
+
+    [Parameter(Mandatory = $false)]
     [switch]$LocalFile,
 
     [string]$LocalFilePath,
@@ -200,7 +208,11 @@ param(
     [switch]$ShowAllCves
 )
 
-if ($NonInteractive) { $ErrorActionPreference = "Stop" }
+if ($DryRun -and (-not $UpdateAll -or $Upload -or $BulkUpload -or $LocalFile -or $LocalFilePath -or $Search)) {
+    throw 'DryRun requires -UpdateAll and cannot be combined with another app selection mode.'
+}
+
+if ($NonInteractive -or $DryRun) { $ErrorActionPreference = "Stop" }
 function New-LocalUploadInfo {
     param([string]$Path, [string]$MetadataPath, [string]$Name, [string]$Version, [string]$BundleId, [switch]$AllowNetworkPaths)
     $item = Get-Item -LiteralPath $Path -ErrorAction Stop
@@ -498,7 +510,7 @@ $authChoice = $null
 # Attempt non-interactive authentication when a config file with authMethod is supplied
 if ($ConfigFile) {
     if (-not (Test-AuthConfig $ConfigFile)) {
-        if ($NonInteractive) { exit 1 }; exit
+        if ($NonInteractive -or $DryRun) { exit 1 }; exit
     }
 
     try {
@@ -506,7 +518,7 @@ if ($ConfigFile) {
     }
     catch {
         Write-Host "Error: Unable to read or parse configuration file at '$ConfigFile'." -ForegroundColor Red
-        if ($NonInteractive) { exit 1 }; exit
+        if ($NonInteractive -or $DryRun) { exit 1 }; exit
     }
 
     # Infer the auth method from the config file contents when authMethod is not set,
@@ -531,7 +543,7 @@ if ($ConfigFile) {
             }
             default {
                 Write-Host "Error: Unsupported authMethod '$effectiveAuthMethod'. Supported values are 'Certificate' and 'ClientSecret'." -ForegroundColor Red
-                if ($NonInteractive) { exit 1 }; exit
+                if ($NonInteractive -or $DryRun) { exit 1 }; exit
             }
         }
     }
@@ -560,7 +572,7 @@ if (-not $authChoice) {
                     $authenticated = Connect-WithCertificate $configPath
                 } else {
                     Write-Host "Failed to authenticate. Exiting script." -ForegroundColor Red
-                    if ($NonInteractive) { exit 1 }; exit
+                    if ($NonInteractive -or $DryRun) { exit 1 }; exit
                 }
             }
         }
@@ -576,14 +588,14 @@ if (-not $authChoice) {
         }
         default {
             Write-Host "Invalid choice. Please select 1, 2, or 3." -ForegroundColor Red
-            if ($NonInteractive) { exit 1 }; exit
+            if ($NonInteractive -or $DryRun) { exit 1 }; exit
         }
     }
 }
 
 if (-not $authenticated) {
     Write-Host "Authentication failed. Exiting script." -ForegroundColor Red
-    if ($NonInteractive) { exit 1 }; exit
+    if ($NonInteractive -or $DryRun) { exit 1 }; exit
 }
 
 # Check and display the current permissions
@@ -608,7 +620,7 @@ if ($missingPermissions.Count -gt 0) {
         $continueWithoutPermissions = Read-Host "Do you want to continue anyway? Some functionality may be limited (y/n)"
         if ($continueWithoutPermissions -ne "y") {
             Write-Host "Exiting script. Please sign in with an account that has the required permissions." -ForegroundColor Yellow
-            if ($NonInteractive) { exit 1 }; exit
+            if ($NonInteractive -or $DryRun) { exit 1 }; exit
         }
         Write-Host "Continuing with limited permissions. Some features may not work correctly." -ForegroundColor Yellow
     }
@@ -617,7 +629,7 @@ if ($missingPermissions.Count -gt 0) {
         Write-Host "WARNING: The following permissions are missing:" -ForegroundColor Red
         $missingPermissions | ForEach-Object { Write-Host "  - $_" -ForegroundColor Yellow }
         Write-Host "Please ensure these permissions are granted to the app registration for full functionality." -ForegroundColor Yellow
-        if ($NonInteractive) { exit 1 }; exit
+        if ($NonInteractive -or $DryRun) { exit 1 }; exit
     }
 }
 else {
@@ -1573,12 +1585,12 @@ try {
 
     if ($githubJsonUrls.Count -eq 0) {
         Write-Host "No valid applications selected. Exiting..." -ForegroundColor Red
-        if ($NonInteractive) { exit 1 }; exit
+        if ($NonInteractive -or $DryRun) { exit 1 }; exit
     }
 }
 catch {
     Write-Host "Error fetching supported apps list: $_" -ForegroundColor Red
-    if ($NonInteractive) { exit 1 }; exit
+    if ($NonInteractive -or $DryRun) { exit 1 }; exit
 }
 
 # Core Functions
@@ -2097,7 +2109,7 @@ function Get-IntuneApp {
         
         # Check if the URL is valid
         if (-not (Test-ValidUrl $jsonUrl)) {
-            if ($NonInteractive) { throw "App metadata is unavailable." }
+            if ($NonInteractive -or $DryRun) { throw "App metadata is unavailable for '$jsonUrl'." }
             continue
         }
 
@@ -2105,7 +2117,7 @@ function Get-IntuneApp {
         $appInfo = Get-GitHubAppInfo $jsonUrl
         if ($null -eq $appInfo) {
             Write-Host "[$currentApp/$totalApps] Failed to fetch app info for $jsonUrl. Skipping." -ForegroundColor Yellow
-            if ($NonInteractive) { throw "App metadata is unavailable." }
+            if ($NonInteractive -or $DryRun) { throw "App metadata is unavailable for '$jsonUrl'." }
             continue
         }
 
@@ -2197,7 +2209,7 @@ function Get-IntuneApp {
         }
         catch {
             Write-Host "`nError fetching Intune app info for '$formattedAppName': $_" -ForegroundColor Red
-            if ($NonInteractive) { throw }
+            if ($NonInteractive -or $DryRun) { throw }
         }
     }
 
@@ -2387,6 +2399,17 @@ foreach ($held in $heldApps) {
     Write-Host "HELD: $($held.FormattedName) ($($held.IntuneVersion) -> $($held.GitHubVersion)). Review the CVEs or use -IgnoreSecurityHold to override." -ForegroundColor Red
 }
 $appsToUpload = @($appsToUpload | Where-Object { -not $_.SecurityHeld })
+if ($DryRun) {
+    Write-Host "`nDry run: $($appsToUpload.Count) available update(s), $($heldApps.Count) held by security policy." -ForegroundColor Cyan
+    foreach ($app in $appsToUpload) {
+        Write-Host "  $($app.FormattedName): $($app.IntuneVersion) -> $($app.GitHubVersion)" -ForegroundColor Yellow
+    }
+    Write-Host 'No installers downloaded, apps uploaded, or assignments changed.' -ForegroundColor Green
+    Disconnect-MgGraph > $null 2>&1
+    if ($heldApps.Count) { exit 2 }
+    exit 0
+}
+
 if (-not $appsToUpload.Count -and $heldApps.Count) {
     Disconnect-MgGraph > $null 2>&1
     Write-Host "$($heldApps.Count) app updates held by security policy." -ForegroundColor Red
