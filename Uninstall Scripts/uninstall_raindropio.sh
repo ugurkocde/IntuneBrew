@@ -57,6 +57,14 @@ elif [ -f "$HOME/Library/Cookies/io.raindrop.mac.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/io.raindrop.mac.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/io.raindrop.macapp
+echo "Removing $HOME/Library/HTTPStorages/io.raindrop.macapp..."
+if [ -d "$HOME/Library/HTTPStorages/io.raindrop.macapp" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/io.raindrop.macapp" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/io.raindrop.macapp" ]; then
+    rm -f "$HOME/Library/HTTPStorages/io.raindrop.macapp" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/io.raindrop.mac.helper.plist
 echo "Removing $HOME/Library/Preferences/io.raindrop.mac.helper.plist..."
 if [ -d "$HOME/Library/Preferences/io.raindrop.mac.helper.plist" ]; then
