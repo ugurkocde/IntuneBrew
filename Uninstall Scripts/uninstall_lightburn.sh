@@ -53,5 +53,13 @@ elif [ -f "$HOME/Library/Saved Application State/com.LightBurnSoftware.LightBurn
     rm -f "$HOME/Library/Saved Application State/com.LightBurnSoftware.LightBurn.savedState" 2>/dev/null || true
 fi
 
+# Remove $HOME/.LightBurn
+echo "Removing $HOME/.LightBurn..."
+if [ -d "$HOME/.LightBurn" ]; then
+    rm -rf "$HOME/.LightBurn" 2>/dev/null || true
+elif [ -f "$HOME/.LightBurn" ]; then
+    rm -f "$HOME/.LightBurn" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

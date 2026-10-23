@@ -25,6 +25,14 @@ elif [ -f "/Applications/App Cleaner 10.app" ]; then
     rm -f "/Applications/App Cleaner 10.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII
+echo "Removing $HOME/Library/Application Scripts/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII..."
+if [ -d "$HOME/Library/Application Scripts/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII" ]; then
+    rm -rf "$HOME/Library/Application Scripts/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII" ]; then
+    rm -f "$HOME/Library/Application Scripts/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/com.nektony.App-Cleaner-Pro
 echo "Removing $HOME/Library/Application Scripts/com.nektony.App-Cleaner-Pro..."
 if [ -d "$HOME/Library/Application Scripts/com.nektony.App-Cleaner-Pro" ]; then
@@ -41,12 +49,28 @@ elif [ -f "$HOME/Library/Application Support/com.nektony.App-Cleaner-Pro" ]; the
     rm -f "$HOME/Library/Application Support/com.nektony.App-Cleaner-Pro" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.nektony.App-Cleaner-SIII
+echo "Removing $HOME/Library/Application Support/com.nektony.App-Cleaner-SIII..."
+if [ -d "$HOME/Library/Application Support/com.nektony.App-Cleaner-SIII" ]; then
+    rm -rf "$HOME/Library/Application Support/com.nektony.App-Cleaner-SIII" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.nektony.App-Cleaner-SIII" ]; then
+    rm -f "$HOME/Library/Application Support/com.nektony.App-Cleaner-SIII" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.nektony.App-Cleaner-Pro
 echo "Removing $HOME/Library/Caches/com.nektony.App-Cleaner-Pro..."
 if [ -d "$HOME/Library/Caches/com.nektony.App-Cleaner-Pro" ]; then
     rm -rf "$HOME/Library/Caches/com.nektony.App-Cleaner-Pro" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.nektony.App-Cleaner-Pro" ]; then
     rm -f "$HOME/Library/Caches/com.nektony.App-Cleaner-Pro" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.nektony.App-Cleaner-SIII
+echo "Removing $HOME/Library/Caches/com.nektony.App-Cleaner-SIII..."
+if [ -d "$HOME/Library/Caches/com.nektony.App-Cleaner-SIII" ]; then
+    rm -rf "$HOME/Library/Caches/com.nektony.App-Cleaner-SIII" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.nektony.App-Cleaner-SIII" ]; then
+    rm -f "$HOME/Library/Caches/com.nektony.App-Cleaner-SIII" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Containers/com.nektony.StartupDiskFull
@@ -57,12 +81,36 @@ elif [ -f "$HOME/Library/Containers/com.nektony.StartupDiskFull" ]; then
     rm -f "$HOME/Library/Containers/com.nektony.StartupDiskFull" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Group Containers/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII
+echo "Removing $HOME/Library/Group Containers/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII..."
+if [ -d "$HOME/Library/Group Containers/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII" ]; then
+    rm -rf "$HOME/Library/Group Containers/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII" ]; then
+    rm -f "$HOME/Library/Group Containers/8DKG4XB37M.group.com.nektony.App-Cleaner-SIII" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.nektony.App-Cleaner-SIII
+echo "Removing $HOME/Library/HTTPStorages/com.nektony.App-Cleaner-SIII..."
+if [ -d "$HOME/Library/HTTPStorages/com.nektony.App-Cleaner-SIII" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.nektony.App-Cleaner-SIII" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.nektony.App-Cleaner-SIII" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.nektony.App-Cleaner-SIII" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.nektony.App-Cleaner-Pro.plist
 echo "Removing $HOME/Library/Preferences/com.nektony.App-Cleaner-Pro.plist..."
 if [ -d "$HOME/Library/Preferences/com.nektony.App-Cleaner-Pro.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.nektony.App-Cleaner-Pro.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.nektony.App-Cleaner-Pro.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.nektony.App-Cleaner-Pro.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.nektony.App-Cleaner-SIII.plist
+echo "Removing $HOME/Library/Preferences/com.nektony.App-Cleaner-SIII.plist..."
+if [ -d "$HOME/Library/Preferences/com.nektony.App-Cleaner-SIII.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.nektony.App-Cleaner-SIII.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.nektony.App-Cleaner-SIII.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.nektony.App-Cleaner-SIII.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.nektony.App-Cleaner-Pro.savedState

@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/dangerzone" ]; then
     rm -f "$HOME/Library/Application Support/dangerzone" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/dangerzone
+echo "Removing $HOME/Library/Caches/dangerzone..."
+if [ -d "$HOME/Library/Caches/dangerzone" ]; then
+    rm -rf "$HOME/Library/Caches/dangerzone" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/dangerzone" ]; then
+    rm -f "$HOME/Library/Caches/dangerzone" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/press.freedom.dangerzone.savedState
 echo "Removing $HOME/Library/Saved Application State/press.freedom.dangerzone.savedState..."
 if [ -d "$HOME/Library/Saved Application State/press.freedom.dangerzone.savedState" ]; then

@@ -25,6 +25,14 @@ elif [ -f "/Applications/Jitsi Meet.app" ]; then
     rm -f "/Applications/Jitsi Meet.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.jitsi.jitsi-meet.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.jitsi.jitsi-meet.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.jitsi.jitsi-meet.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.jitsi.jitsi-meet.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.jitsi.jitsi-meet.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.jitsi.jitsi-meet.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Jitsi Meet
 echo "Removing $HOME/Library/Application Support/Jitsi Meet..."
 if [ -d "$HOME/Library/Application Support/Jitsi Meet" ]; then
@@ -39,6 +47,14 @@ if [ -d "$HOME/Library/Logs/Jitsi Meet" ]; then
     rm -rf "$HOME/Library/Logs/Jitsi Meet" 2>/dev/null || true
 elif [ -f "$HOME/Library/Logs/Jitsi Meet" ]; then
     rm -f "$HOME/Library/Logs/Jitsi Meet" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/org.jitsi.jitsi-meet.plist
+echo "Removing $HOME/Library/Preferences/org.jitsi.jitsi-meet.plist..."
+if [ -d "$HOME/Library/Preferences/org.jitsi.jitsi-meet.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/org.jitsi.jitsi-meet.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.jitsi.jitsi-meet.plist" ]; then
+    rm -f "$HOME/Library/Preferences/org.jitsi.jitsi-meet.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

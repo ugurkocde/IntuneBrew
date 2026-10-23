@@ -39,12 +39,36 @@ elif [ -f "$HOME/Library/Application Scripts/com.surfshark.vpnclient.macos*" ]; 
     rm -f "$HOME/Library/Application Scripts/com.surfshark.vpnclient.macos*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/YHUG37CKN8.com.surfshark.vpn.direct
+echo "Removing $HOME/Library/Application Scripts/YHUG37CKN8.com.surfshark.vpn.direct..."
+if [ -d "$HOME/Library/Application Scripts/YHUG37CKN8.com.surfshark.vpn.direct" ]; then
+    rm -rf "$HOME/Library/Application Scripts/YHUG37CKN8.com.surfshark.vpn.direct" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/YHUG37CKN8.com.surfshark.vpn.direct" ]; then
+    rm -f "$HOME/Library/Application Scripts/YHUG37CKN8.com.surfshark.vpn.direct" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.surfshark.vpnclient.macos.direct
+echo "Removing $HOME/Library/Application Support/com.surfshark.vpnclient.macos.direct..."
+if [ -d "$HOME/Library/Application Support/com.surfshark.vpnclient.macos.direct" ]; then
+    rm -rf "$HOME/Library/Application Support/com.surfshark.vpnclient.macos.direct" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.surfshark.vpnclient.macos.direct" ]; then
+    rm -f "$HOME/Library/Application Support/com.surfshark.vpnclient.macos.direct" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/CrashReporter/Surfshark.OpenVPN_*.plist
 echo "Removing $HOME/Library/Application Support/CrashReporter/Surfshark.OpenVPN_*.plist..."
 if [ -d "$HOME/Library/Application Support/CrashReporter/Surfshark.OpenVPN_*.plist" ]; then
     rm -rf "$HOME/Library/Application Support/CrashReporter/Surfshark.OpenVPN_*.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/CrashReporter/Surfshark.OpenVPN_*.plist" ]; then
     rm -f "$HOME/Library/Application Support/CrashReporter/Surfshark.OpenVPN_*.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.surfshark.vpnclient.macos.direct
+echo "Removing $HOME/Library/Caches/com.surfshark.vpnclient.macos.direct..."
+if [ -d "$HOME/Library/Caches/com.surfshark.vpnclient.macos.direct" ]; then
+    rm -rf "$HOME/Library/Caches/com.surfshark.vpnclient.macos.direct" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.surfshark.vpnclient.macos.direct" ]; then
+    rm -f "$HOME/Library/Caches/com.surfshark.vpnclient.macos.direct" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Containers/com.surfshark.vpnclient.macos*
@@ -61,6 +85,30 @@ if [ -d "$HOME/Library/Group Containers/YHUG37CKN8.com.surfshark.vpn" ]; then
     rm -rf "$HOME/Library/Group Containers/YHUG37CKN8.com.surfshark.vpn" 2>/dev/null || true
 elif [ -f "$HOME/Library/Group Containers/YHUG37CKN8.com.surfshark.vpn" ]; then
     rm -f "$HOME/Library/Group Containers/YHUG37CKN8.com.surfshark.vpn" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/YHUG37CKN8.com.surfshark.vpn.direct
+echo "Removing $HOME/Library/Group Containers/YHUG37CKN8.com.surfshark.vpn.direct..."
+if [ -d "$HOME/Library/Group Containers/YHUG37CKN8.com.surfshark.vpn.direct" ]; then
+    rm -rf "$HOME/Library/Group Containers/YHUG37CKN8.com.surfshark.vpn.direct" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/YHUG37CKN8.com.surfshark.vpn.direct" ]; then
+    rm -f "$HOME/Library/Group Containers/YHUG37CKN8.com.surfshark.vpn.direct" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.surfshark.vpnclient.macos.direct*
+echo "Removing $HOME/Library/HTTPStorages/com.surfshark.vpnclient.macos.direct*..."
+if [ -d "$HOME/Library/HTTPStorages/com.surfshark.vpnclient.macos.direct*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.surfshark.vpnclient.macos.direct*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.surfshark.vpnclient.macos.direct*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.surfshark.vpnclient.macos.direct*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.surfshark.vpnclient.macos.direct.plist
+echo "Removing $HOME/Library/Preferences/com.surfshark.vpnclient.macos.direct.plist..."
+if [ -d "$HOME/Library/Preferences/com.surfshark.vpnclient.macos.direct.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.surfshark.vpnclient.macos.direct.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.surfshark.vpnclient.macos.direct.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.surfshark.vpnclient.macos.direct.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.surfshark.vpnclient.macos.savedState

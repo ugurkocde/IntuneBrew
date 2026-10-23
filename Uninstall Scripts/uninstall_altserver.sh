@@ -37,6 +37,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.rileytestut.AltServer-LaunchAtL
     rm -f "$HOME/Library/Application Scripts/com.rileytestut.AltServer-LaunchAtLoginHelper" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rileytestut.altserver.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rileytestut.altserver.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rileytestut.altserver.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rileytestut.altserver.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rileytestut.altserver.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rileytestut.altserver.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.rileytestut.AltServer
 echo "Removing $HOME/Library/Application Support/com.rileytestut.AltServer..."
 if [ -d "$HOME/Library/Application Support/com.rileytestut.AltServer" ]; then

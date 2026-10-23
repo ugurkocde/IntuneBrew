@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Caches/ClipBook*" ]; then
     rm -f "$HOME/Library/Caches/ClipBook*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.ikryanov.clipbook*
+echo "Removing $HOME/Library/Caches/com.ikryanov.clipbook*..."
+if [ -d "$HOME/Library/Caches/com.ikryanov.clipbook*" ]; then
+    rm -rf "$HOME/Library/Caches/com.ikryanov.clipbook*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.ikryanov.clipbook*" ]; then
+    rm -f "$HOME/Library/Caches/com.ikryanov.clipbook*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.ikryanov.clipbook*
 echo "Removing $HOME/Library/HTTPStorages/com.ikryanov.clipbook*..."
 if [ -d "$HOME/Library/HTTPStorages/com.ikryanov.clipbook*" ]; then

@@ -59,6 +59,14 @@ elif [ -f "$HOME/Library/Logs/JetBrains/Toolbox" ]; then
     rm -f "$HOME/Library/Logs/JetBrains/Toolbox" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.jetbrains.toolbox.plist
+echo "Removing $HOME/Library/Preferences/com.jetbrains.toolbox.plist..."
+if [ -d "$HOME/Library/Preferences/com.jetbrains.toolbox.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.jetbrains.toolbox.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.jetbrains.toolbox.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.jetbrains.toolbox.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.jetbrains.toolbox.renderer.plist
 echo "Removing $HOME/Library/Preferences/com.jetbrains.toolbox.renderer.plist..."
 if [ -d "$HOME/Library/Preferences/com.jetbrains.toolbox.renderer.plist" ]; then

@@ -25,6 +25,14 @@ elif [ -f "/Applications/Acorn.app" ]; then
     rm -f "/Applications/Acorn.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.flyingmeat.Acorn8.Acornappex
+echo "Removing $HOME/Library/Application Scripts/com.flyingmeat.Acorn8.Acornappex..."
+if [ -d "$HOME/Library/Application Scripts/com.flyingmeat.Acorn8.Acornappex" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.flyingmeat.Acorn8.Acornappex" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.flyingmeat.Acorn8.Acornappex" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.flyingmeat.Acorn8.Acornappex" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Acorn
 echo "Removing $HOME/Library/Application Support/Acorn..."
 if [ -d "$HOME/Library/Application Support/Acorn" ]; then
@@ -33,12 +41,36 @@ elif [ -f "$HOME/Library/Application Support/Acorn" ]; then
     rm -f "$HOME/Library/Application Support/Acorn" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.flyingmeat.acorn8.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.flyingmeat.acorn8.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.flyingmeat.acorn8.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.flyingmeat.acorn8.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.flyingmeat.acorn8.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.flyingmeat.acorn8.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.flyingmeat.Acorn8
 echo "Removing $HOME/Library/Caches/com.flyingmeat.Acorn8..."
 if [ -d "$HOME/Library/Caches/com.flyingmeat.Acorn8" ]; then
     rm -rf "$HOME/Library/Caches/com.flyingmeat.Acorn8" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.flyingmeat.Acorn8" ]; then
     rm -f "$HOME/Library/Caches/com.flyingmeat.Acorn8" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.flyingmeat.Acorn8.Acornappex
+echo "Removing $HOME/Library/Containers/com.flyingmeat.Acorn8.Acornappex..."
+if [ -d "$HOME/Library/Containers/com.flyingmeat.Acorn8.Acornappex" ]; then
+    rm -rf "$HOME/Library/Containers/com.flyingmeat.Acorn8.Acornappex" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.flyingmeat.Acorn8.Acornappex" ]; then
+    rm -f "$HOME/Library/Containers/com.flyingmeat.Acorn8.Acornappex" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.flyingmeat.Acorn8
+echo "Removing $HOME/Library/HTTPStorages/com.flyingmeat.Acorn8..."
+if [ -d "$HOME/Library/HTTPStorages/com.flyingmeat.Acorn8" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.flyingmeat.Acorn8" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.flyingmeat.Acorn8" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.flyingmeat.Acorn8" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.flyingmeat.Acorn8.plist

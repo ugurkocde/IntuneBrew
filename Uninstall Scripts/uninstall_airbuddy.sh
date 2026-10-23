@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Application Scripts/codes.rambo.AirBuddy*" ]; then
     rm -f "$HOME/Library/Application Scripts/codes.rambo.AirBuddy*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/AirBuddy
+echo "Removing $HOME/Library/Application Support/AirBuddy..."
+if [ -d "$HOME/Library/Application Support/AirBuddy" ]; then
+    rm -rf "$HOME/Library/Application Support/AirBuddy" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/AirBuddy" ]; then
+    rm -f "$HOME/Library/Application Support/AirBuddy" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/codes.rambo.airbuddyhelper.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/codes.rambo.airbuddyhelper.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/codes.rambo.airbuddyhelper.sfl*" ]; then

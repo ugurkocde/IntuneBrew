@@ -25,6 +25,14 @@ elif [ -f "/Applications/Rambox.app" ]; then
     rm -f "/Applications/Rambox.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rambox.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rambox.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rambox.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rambox.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rambox.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rambox.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/CrashReporter/Rambox Helper_*.plist
 echo "Removing $HOME/Library/Application Support/CrashReporter/Rambox Helper_*.plist..."
 if [ -d "$HOME/Library/Application Support/CrashReporter/Rambox Helper_*.plist" ]; then
@@ -103,6 +111,14 @@ if [ -d "$HOME/Library/Preferences/com.grupovrs.ramboxce.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.grupovrs.ramboxce.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.grupovrs.ramboxce.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.grupovrs.ramboxce.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.rambox.plist
+echo "Removing $HOME/Library/Preferences/com.rambox.plist..."
+if [ -d "$HOME/Library/Preferences/com.rambox.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.rambox.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.rambox.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.rambox.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.saenzramiro.rambox.helper.plist

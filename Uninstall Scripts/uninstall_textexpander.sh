@@ -17,6 +17,10 @@ fi
 echo "Stopping TextExpander if running..."
 pkill -f "TextExpander" 2>/dev/null || true
 
+# Kill application with bundle ID com.smileonmymac.textexpander if running
+echo "Stopping application with bundle ID com.smileonmymac.textexpander if running..."
+killall -9 "com.smileonmymac.textexpander" 2>/dev/null || true
+
 # Remove /Applications/TextExpander.app
 echo "Removing /Applications/TextExpander.app..."
 if [ -d "/Applications/TextExpander.app" ]; then

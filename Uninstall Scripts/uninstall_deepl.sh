@@ -49,12 +49,52 @@ elif [ -f "/Applications/DeepL.app" ]; then
     rm -f "/Applications/DeepL.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt
+echo "Removing $HOME/Library/Application Scripts/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt..."
+if [ -d "$HOME/Library/Application Scripts/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/group.com.linguee.DeepL
+echo "Removing $HOME/Library/Application Scripts/group.com.linguee.DeepL..."
+if [ -d "$HOME/Library/Application Scripts/group.com.linguee.DeepL" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.com.linguee.DeepL" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.com.linguee.DeepL" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.com.linguee.DeepL" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/DeepL
+echo "Removing $HOME/Library/Application Support/DeepL..."
+if [ -d "$HOME/Library/Application Support/DeepL" ]; then
+    rm -rf "$HOME/Library/Application Support/DeepL" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/DeepL" ]; then
+    rm -f "$HOME/Library/Application Support/DeepL" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.linguee.DeepLCopyTranslator*
 echo "Removing $HOME/Library/Caches/com.linguee.DeepLCopyTranslator*..."
 if [ -d "$HOME/Library/Caches/com.linguee.DeepLCopyTranslator*" ]; then
     rm -rf "$HOME/Library/Caches/com.linguee.DeepLCopyTranslator*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.linguee.DeepLCopyTranslator*" ]; then
     rm -f "$HOME/Library/Caches/com.linguee.DeepLCopyTranslator*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.linguee.DeepLUninstall
+echo "Removing $HOME/Library/Caches/com.linguee.DeepLUninstall..."
+if [ -d "$HOME/Library/Caches/com.linguee.DeepLUninstall" ]; then
+    rm -rf "$HOME/Library/Caches/com.linguee.DeepLUninstall" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.linguee.DeepLUninstall" ]; then
+    rm -f "$HOME/Library/Caches/com.linguee.DeepLUninstall" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt
+echo "Removing $HOME/Library/Containers/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt..."
+if [ -d "$HOME/Library/Containers/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt" ]; then
+    rm -rf "$HOME/Library/Containers/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt" ]; then
+    rm -f "$HOME/Library/Containers/com.linguee.DeepLCopyTranslator.DeepLTranslatorFinderExt" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Group Containers/*.com.linguee.DeepL
@@ -65,12 +105,44 @@ elif [ -f "$HOME/Library/Group Containers/*.com.linguee.DeepL" ]; then
     rm -f "$HOME/Library/Group Containers/*.com.linguee.DeepL" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.linguee.DeepLCopyTranslator*
+echo "Removing $HOME/Library/HTTPStorages/com.linguee.DeepLCopyTranslator*..."
+if [ -d "$HOME/Library/HTTPStorages/com.linguee.DeepLCopyTranslator*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.linguee.DeepLCopyTranslator*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.linguee.DeepLCopyTranslator*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.linguee.DeepLCopyTranslator*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.linguee.DeepLUninstall*
+echo "Removing $HOME/Library/HTTPStorages/com.linguee.DeepLUninstall*..."
+if [ -d "$HOME/Library/HTTPStorages/com.linguee.DeepLUninstall*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.linguee.DeepLUninstall*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.linguee.DeepLUninstall*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.linguee.DeepLUninstall*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.linguee.DeepLCopyTranslator.plist
 echo "Removing $HOME/Library/Preferences/com.linguee.DeepLCopyTranslator.plist..."
 if [ -d "$HOME/Library/Preferences/com.linguee.DeepLCopyTranslator.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.linguee.DeepLCopyTranslator.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.linguee.DeepLCopyTranslator.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.linguee.DeepLCopyTranslator.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.linguee.DeepLUninstall.plist
+echo "Removing $HOME/Library/Preferences/com.linguee.DeepLUninstall.plist..."
+if [ -d "$HOME/Library/Preferences/com.linguee.DeepLUninstall.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.linguee.DeepLUninstall.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.linguee.DeepLUninstall.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.linguee.DeepLUninstall.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.linguee.DeepLCopyTranslator
+echo "Removing $HOME/Library/WebKit/com.linguee.DeepLCopyTranslator..."
+if [ -d "$HOME/Library/WebKit/com.linguee.DeepLCopyTranslator" ]; then
+    rm -rf "$HOME/Library/WebKit/com.linguee.DeepLCopyTranslator" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.linguee.DeepLCopyTranslator" ]; then
+    rm -f "$HOME/Library/WebKit/com.linguee.DeepLCopyTranslator" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

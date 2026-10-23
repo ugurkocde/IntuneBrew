@@ -41,12 +41,28 @@ elif [ -f "$HOME/Library/Application Support/RewriteBar" ]; then
     rm -f "$HOME/Library/Application Support/RewriteBar" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.m91michel.rewritebar
+echo "Removing $HOME/Library/Caches/com.m91michel.rewritebar..."
+if [ -d "$HOME/Library/Caches/com.m91michel.rewritebar" ]; then
+    rm -rf "$HOME/Library/Caches/com.m91michel.rewritebar" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.m91michel.rewritebar" ]; then
+    rm -f "$HOME/Library/Caches/com.m91michel.rewritebar" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/RewriteBar
 echo "Removing $HOME/Library/Caches/RewriteBar..."
 if [ -d "$HOME/Library/Caches/RewriteBar" ]; then
     rm -rf "$HOME/Library/Caches/RewriteBar" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/RewriteBar" ]; then
     rm -f "$HOME/Library/Caches/RewriteBar" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.m91michel.rewritebar
+echo "Removing $HOME/Library/HTTPStorages/com.m91michel.rewritebar..."
+if [ -d "$HOME/Library/HTTPStorages/com.m91michel.rewritebar" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.m91michel.rewritebar" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.m91michel.rewritebar" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.m91michel.rewritebar" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/RewriteBar

@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/Asana" ]; then
     rm -f "$HOME/Library/Application Support/Asana" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.asana.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.asana.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.asana.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.asana.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.asana.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.asana.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.electron.asana
 echo "Removing $HOME/Library/Caches/com.electron.asana..."
 if [ -d "$HOME/Library/Caches/com.electron.asana" ]; then
@@ -47,6 +55,22 @@ if [ -d "$HOME/Library/Caches/com.electron.asana.ShipIt" ]; then
     rm -rf "$HOME/Library/Caches/com.electron.asana.ShipIt" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.electron.asana.ShipIt" ]; then
     rm -f "$HOME/Library/Caches/com.electron.asana.ShipIt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.electron.asana
+echo "Removing $HOME/Library/HTTPStorages/com.electron.asana..."
+if [ -d "$HOME/Library/HTTPStorages/com.electron.asana" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.electron.asana" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.electron.asana" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.electron.asana" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/Asana
+echo "Removing $HOME/Library/Logs/Asana..."
+if [ -d "$HOME/Library/Logs/Asana" ]; then
+    rm -rf "$HOME/Library/Logs/Asana" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Asana" ]; then
+    rm -f "$HOME/Library/Logs/Asana" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.electron.asana.plist

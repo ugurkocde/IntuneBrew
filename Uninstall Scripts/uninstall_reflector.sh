@@ -33,12 +33,28 @@ elif [ -f "$HOME/Library/Application Support/Logs/Reflector*.log*" ]; then
     rm -f "$HOME/Library/Application Support/Logs/Reflector*.log*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/Reflector 4
+echo "Removing $HOME/Library/Application Support/Reflector 4..."
+if [ -d "$HOME/Library/Application Support/Reflector 4" ]; then
+    rm -rf "$HOME/Library/Application Support/Reflector 4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Reflector 4" ]; then
+    rm -f "$HOME/Library/Application Support/Reflector 4" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.squirrels.Reflector-*
 echo "Removing $HOME/Library/Caches/com.squirrels.Reflector-*..."
 if [ -d "$HOME/Library/Caches/com.squirrels.Reflector-*" ]; then
     rm -rf "$HOME/Library/Caches/com.squirrels.Reflector-*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.squirrels.Reflector-*" ]; then
     rm -f "$HOME/Library/Caches/com.squirrels.Reflector-*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.squirrels.Reflector-*
+echo "Removing $HOME/Library/HTTPStorages/com.squirrels.Reflector-*..."
+if [ -d "$HOME/Library/HTTPStorages/com.squirrels.Reflector-*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.squirrels.Reflector-*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.squirrels.Reflector-*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.squirrels.Reflector-*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.squirrels.Reflector-*.plist

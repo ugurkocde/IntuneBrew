@@ -33,6 +33,14 @@ elif [ -f "$HOME/Documents/JumpDesktop" ]; then
     rm -f "$HOME/Documents/JumpDesktop" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/Jump Desktop
+echo "Removing $HOME/Library/Application Support/Jump Desktop..."
+if [ -d "$HOME/Library/Application Support/Jump Desktop" ]; then
+    rm -rf "$HOME/Library/Application Support/Jump Desktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Jump Desktop" ]; then
+    rm -f "$HOME/Library/Application Support/Jump Desktop" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.p5sys.jump.mac.viewer.web
 echo "Removing $HOME/Library/Caches/com.p5sys.jump.mac.viewer.web..."
 if [ -d "$HOME/Library/Caches/com.p5sys.jump.mac.viewer.web" ]; then
@@ -47,6 +55,30 @@ if [ -d "$HOME/Library/Cookies/com.p5sys.jump.mac.viewer.web.binarycookies" ]; t
     rm -rf "$HOME/Library/Cookies/com.p5sys.jump.mac.viewer.web.binarycookies" 2>/dev/null || true
 elif [ -f "$HOME/Library/Cookies/com.p5sys.jump.mac.viewer.web.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/com.p5sys.jump.mac.viewer.web.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.p5sys.jump.mac.viewer.web
+echo "Removing $HOME/Library/HTTPStorages/com.p5sys.jump.mac.viewer.web..."
+if [ -d "$HOME/Library/HTTPStorages/com.p5sys.jump.mac.viewer.web" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.p5sys.jump.mac.viewer.web" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.p5sys.jump.mac.viewer.web" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.p5sys.jump.mac.viewer.web" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/Jump Desktop
+echo "Removing $HOME/Library/Logs/Jump Desktop..."
+if [ -d "$HOME/Library/Logs/Jump Desktop" ]; then
+    rm -rf "$HOME/Library/Logs/Jump Desktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Jump Desktop" ]; then
+    rm -f "$HOME/Library/Logs/Jump Desktop" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.p5sys.jump.mac.viewer.web.plist
+echo "Removing $HOME/Library/Preferences/com.p5sys.jump.mac.viewer.web.plist..."
+if [ -d "$HOME/Library/Preferences/com.p5sys.jump.mac.viewer.web.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.p5sys.jump.mac.viewer.web.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.p5sys.jump.mac.viewer.web.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.p5sys.jump.mac.viewer.web.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

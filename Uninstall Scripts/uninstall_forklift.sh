@@ -45,6 +45,14 @@ elif [ -f "/Applications/ForkLift.app" ]; then
     rm -f "/Applications/ForkLift.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/J3CP9BBBN6.com.binarynights.ForkLift
+echo "Removing $HOME/Library/Application Scripts/J3CP9BBBN6.com.binarynights.ForkLift..."
+if [ -d "$HOME/Library/Application Scripts/J3CP9BBBN6.com.binarynights.ForkLift" ]; then
+    rm -rf "$HOME/Library/Application Scripts/J3CP9BBBN6.com.binarynights.ForkLift" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/J3CP9BBBN6.com.binarynights.ForkLift" ]; then
+    rm -f "$HOME/Library/Application Scripts/J3CP9BBBN6.com.binarynights.ForkLift" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/ForkLift
 echo "Removing $HOME/Library/Application Support/ForkLift..."
 if [ -d "$HOME/Library/Application Support/ForkLift" ]; then
@@ -67,6 +75,14 @@ if [ -d "$HOME/Library/Cookies/com.binarynights.ForkLift-4.binarycookies" ]; the
     rm -rf "$HOME/Library/Cookies/com.binarynights.ForkLift-4.binarycookies" 2>/dev/null || true
 elif [ -f "$HOME/Library/Cookies/com.binarynights.ForkLift-4.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/com.binarynights.ForkLift-4.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/J3CP9BBBN6.com.binarynights.ForkLift
+echo "Removing $HOME/Library/Group Containers/J3CP9BBBN6.com.binarynights.ForkLift..."
+if [ -d "$HOME/Library/Group Containers/J3CP9BBBN6.com.binarynights.ForkLift" ]; then
+    rm -rf "$HOME/Library/Group Containers/J3CP9BBBN6.com.binarynights.ForkLift" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/J3CP9BBBN6.com.binarynights.ForkLift" ]; then
+    rm -f "$HOME/Library/Group Containers/J3CP9BBBN6.com.binarynights.ForkLift" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.binarynights.ForkLift-4
@@ -99,6 +115,14 @@ if [ -d "$HOME/Library/Preferences/com.binarynights.ForkLift-4.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.binarynights.ForkLift-4.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.binarynights.ForkLift-4.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.binarynights.ForkLift-4.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.binarynights.ForkLift.plist
+echo "Removing $HOME/Library/Preferences/com.binarynights.ForkLift.plist..."
+if [ -d "$HOME/Library/Preferences/com.binarynights.ForkLift.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.binarynights.ForkLift.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.binarynights.ForkLift.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.binarynights.ForkLift.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.binarynights.ForkLiftMini.plist

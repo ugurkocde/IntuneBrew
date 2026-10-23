@@ -109,5 +109,13 @@ elif [ -f "$HOME/Library/Saved Application State/com.postmanlabs.mac.savedState"
     rm -f "$HOME/Library/Saved Application State/com.postmanlabs.mac.savedState" 2>/dev/null || true
 fi
 
+# Remove $HOME/.postman
+echo "Removing $HOME/.postman..."
+if [ -d "$HOME/.postman" ]; then
+    rm -rf "$HOME/.postman" 2>/dev/null || true
+elif [ -f "$HOME/.postman" ]; then
+    rm -f "$HOME/.postman" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

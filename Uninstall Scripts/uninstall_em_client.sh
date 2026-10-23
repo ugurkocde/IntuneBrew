@@ -17,12 +17,28 @@ fi
 echo "Stopping eM Client if running..."
 pkill -f "eM Client" 2>/dev/null || true
 
+# Remove $HOME/Library/Application Scripts/com.emclient.mail.client.share
+echo "Removing $HOME/Library/Application Scripts/com.emclient.mail.client.share..."
+if [ -d "$HOME/Library/Application Scripts/com.emclient.mail.client.share" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.emclient.mail.client.share" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.emclient.mail.client.share" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.emclient.mail.client.share" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.emclient.mail.client
 echo "Removing $HOME/Library/Caches/com.emclient.mail.client..."
 if [ -d "$HOME/Library/Caches/com.emclient.mail.client" ]; then
     rm -rf "$HOME/Library/Caches/com.emclient.mail.client" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.emclient.mail.client" ]; then
     rm -f "$HOME/Library/Caches/com.emclient.mail.client" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.emclient.mail.client.share
+echo "Removing $HOME/Library/Containers/com.emclient.mail.client.share..."
+if [ -d "$HOME/Library/Containers/com.emclient.mail.client.share" ]; then
+    rm -rf "$HOME/Library/Containers/com.emclient.mail.client.share" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.emclient.mail.client.share" ]; then
+    rm -f "$HOME/Library/Containers/com.emclient.mail.client.share" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.emclient.mail.*.plist

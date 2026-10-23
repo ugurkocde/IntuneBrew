@@ -49,6 +49,14 @@ elif [ -f "$HOME/Library/HTTPStorages/com.fastmail.mac.Fastmail" ]; then
     rm -f "$HOME/Library/HTTPStorages/com.fastmail.mac.Fastmail" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/Fastmail
+echo "Removing $HOME/Library/Logs/Fastmail..."
+if [ -d "$HOME/Library/Logs/Fastmail" ]; then
+    rm -rf "$HOME/Library/Logs/Fastmail" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Fastmail" ]; then
+    rm -f "$HOME/Library/Logs/Fastmail" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.fastmail.mac.Fastmail.plist
 echo "Removing $HOME/Library/Preferences/com.fastmail.mac.Fastmail.plist..."
 if [ -d "$HOME/Library/Preferences/com.fastmail.mac.Fastmail.plist" ]; then

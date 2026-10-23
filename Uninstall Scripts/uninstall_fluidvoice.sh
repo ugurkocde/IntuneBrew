@@ -29,6 +29,14 @@ elif [ -f "/Applications/FluidVoice.app" ]; then
     rm -f "/Applications/FluidVoice.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.FluidApp.app
+echo "Removing $HOME/Library/Application Support/com.FluidApp.app..."
+if [ -d "$HOME/Library/Application Support/com.FluidApp.app" ]; then
+    rm -rf "$HOME/Library/Application Support/com.FluidApp.app" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.FluidApp.app" ]; then
+    rm -f "$HOME/Library/Application Support/com.FluidApp.app" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/FluidAudio
 echo "Removing $HOME/Library/Application Support/FluidAudio..."
 if [ -d "$HOME/Library/Application Support/FluidAudio" ]; then
@@ -59,6 +67,14 @@ if [ -d "$HOME/Library/Caches/FluidAudio" ]; then
     rm -rf "$HOME/Library/Caches/FluidAudio" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/FluidAudio" ]; then
     rm -f "$HOME/Library/Caches/FluidAudio" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.FluidApp.app
+echo "Removing $HOME/Library/HTTPStorages/com.FluidApp.app..."
+if [ -d "$HOME/Library/HTTPStorages/com.FluidApp.app" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.FluidApp.app" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.FluidApp.app" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.FluidApp.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Logs/Fluid

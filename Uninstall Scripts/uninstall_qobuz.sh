@@ -29,12 +29,28 @@ elif [ -f "/Applications/Qobuz.app" ]; then
     rm -f "/Applications/Qobuz.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.desktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.desktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.desktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.desktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.desktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.desktop.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.qobuzdesktop.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.qobuzdesktop.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.qobuzdesktop.sfl*" ]; then
     rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.qobuzdesktop.sfl*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.qobuzdesktop.sfl*" ]; then
     rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.qobuz.qobuzdesktop.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Qobuz
+echo "Removing $HOME/Library/Application Support/Qobuz..."
+if [ -d "$HOME/Library/Application Support/Qobuz" ]; then
+    rm -rf "$HOME/Library/Application Support/Qobuz" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Qobuz" ]; then
+    rm -f "$HOME/Library/Application Support/Qobuz" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/QobuzDesktop
@@ -67,6 +83,14 @@ if [ -d "$HOME/Library/Logs/QobuzDesktop" ]; then
     rm -rf "$HOME/Library/Logs/QobuzDesktop" 2>/dev/null || true
 elif [ -f "$HOME/Library/Logs/QobuzDesktop" ]; then
     rm -f "$HOME/Library/Logs/QobuzDesktop" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.qobuz.desktop.plist
+echo "Removing $HOME/Library/Preferences/com.qobuz.desktop.plist..."
+if [ -d "$HOME/Library/Preferences/com.qobuz.desktop.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.qobuz.desktop.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.qobuz.desktop.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.qobuz.desktop.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.qobuz.QobuzDesktop.plist

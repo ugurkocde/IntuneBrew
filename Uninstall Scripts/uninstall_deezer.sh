@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/Caches/deezer-desktop-updater" ]; t
     rm -f "$HOME/Library/Application Support/Caches/deezer-desktop-updater" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.deezer.deezer-desktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.deezer.deezer-desktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.deezer.deezer-desktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.deezer.deezer-desktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.deezer.deezer-desktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.deezer.deezer-desktop.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Deezer
 echo "Removing $HOME/Library/Application Support/Deezer..."
 if [ -d "$HOME/Library/Application Support/Deezer" ]; then

@@ -49,6 +49,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.nektony.Funter-SIII*" ]; then
     rm -f "$HOME/Library/Application Scripts/com.nektony.Funter-SIII*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.funter-siii.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.funter-siii.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.funter-siii.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.funter-siii.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.funter-siii.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.funter-siii.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.nektony.Funter-SIII
 echo "Removing $HOME/Library/Application Support/com.nektony.Funter-SIII..."
 if [ -d "$HOME/Library/Application Support/com.nektony.Funter-SIII" ]; then

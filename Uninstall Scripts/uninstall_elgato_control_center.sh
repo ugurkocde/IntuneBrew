@@ -53,6 +53,14 @@ elif [ -f "$HOME/Library/Application Support/com.corsair.ControlCenter" ]; then
     rm -f "$HOME/Library/Application Support/com.corsair.ControlCenter" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.elgato.controlcenter-mac
+echo "Removing $HOME/Library/Application Support/com.elgato.controlcenter-mac..."
+if [ -d "$HOME/Library/Application Support/com.elgato.controlcenter-mac" ]; then
+    rm -rf "$HOME/Library/Application Support/com.elgato.controlcenter-mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.elgato.controlcenter-mac" ]; then
+    rm -f "$HOME/Library/Application Support/com.elgato.controlcenter-mac" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Elgato Control Center
 echo "Removing $HOME/Library/Application Support/Elgato Control Center..."
 if [ -d "$HOME/Library/Application Support/Elgato Control Center" ]; then

@@ -69,5 +69,13 @@ elif [ -f "$HOME/Library/Saved Application State/org.jasp-stats.jasp.savedState"
     rm -f "$HOME/Library/Saved Application State/org.jasp-stats.jasp.savedState" 2>/dev/null || true
 fi
 
+# Remove $HOME/Documents/JASP_Sandbox
+echo "Removing $HOME/Documents/JASP_Sandbox..."
+if [ -d "$HOME/Documents/JASP_Sandbox" ]; then
+    rm -rf "$HOME/Documents/JASP_Sandbox" 2>/dev/null || true
+elif [ -f "$HOME/Documents/JASP_Sandbox" ]; then
+    rm -f "$HOME/Documents/JASP_Sandbox" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

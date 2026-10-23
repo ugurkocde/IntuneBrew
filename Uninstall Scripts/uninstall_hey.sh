@@ -25,12 +25,28 @@ elif [ -f "/Applications/HEY.app" ]; then
     rm -f "/Applications/HEY.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hey.app.desktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hey.app.desktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hey.app.desktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hey.app.desktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hey.app.desktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hey.app.desktop.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/HEY
 echo "Removing $HOME/Library/Application Support/HEY..."
 if [ -d "$HOME/Library/Application Support/HEY" ]; then
     rm -rf "$HOME/Library/Application Support/HEY" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/HEY" ]; then
     rm -f "$HOME/Library/Application Support/HEY" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/HEY
+echo "Removing $HOME/Library/Logs/HEY..."
+if [ -d "$HOME/Library/Logs/HEY" ]; then
+    rm -rf "$HOME/Library/Logs/HEY" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/HEY" ]; then
+    rm -f "$HOME/Library/Logs/HEY" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.hey.app.desktop.plist

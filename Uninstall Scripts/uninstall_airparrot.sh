@@ -29,6 +29,38 @@ elif [ -f "/Applications/AirParrot 3.app" ]; then
     rm -f "/Applications/AirParrot 3.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/AirParrot 3
+echo "Removing $HOME/Library/Application Support/AirParrot 3..."
+if [ -d "$HOME/Library/Application Support/AirParrot 3" ]; then
+    rm -rf "$HOME/Library/Application Support/AirParrot 3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/AirParrot 3" ]; then
+    rm -f "$HOME/Library/Application Support/AirParrot 3" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.squirrels.airparrot-3.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.squirrels.airparrot-3.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.squirrels.airparrot-3.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.squirrels.airparrot-3.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.squirrels.airparrot-3.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.squirrels.airparrot-3.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.squirrels.AirParrot-3
+echo "Removing $HOME/Library/Caches/com.squirrels.AirParrot-3..."
+if [ -d "$HOME/Library/Caches/com.squirrels.AirParrot-3" ]; then
+    rm -rf "$HOME/Library/Caches/com.squirrels.AirParrot-3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.squirrels.AirParrot-3" ]; then
+    rm -f "$HOME/Library/Caches/com.squirrels.AirParrot-3" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.squirrels.AirParrot-3*
+echo "Removing $HOME/Library/HTTPStorages/com.squirrels.AirParrot-3*..."
+if [ -d "$HOME/Library/HTTPStorages/com.squirrels.AirParrot-3*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.squirrels.AirParrot-3*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.squirrels.AirParrot-3*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.squirrels.AirParrot-3*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.squirrels.AirParrot-*.plist
 echo "Removing $HOME/Library/Preferences/com.squirrels.AirParrot-*.plist..."
 if [ -d "$HOME/Library/Preferences/com.squirrels.AirParrot-*.plist" ]; then

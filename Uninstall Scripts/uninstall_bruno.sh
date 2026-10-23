@@ -33,6 +33,22 @@ elif [ -f "$HOME/Library/Application Support/bruno" ]; then
     rm -f "$HOME/Library/Application Support/bruno" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.usebruno.app.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.usebruno.app.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.usebruno.app.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.usebruno.app.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.usebruno.app.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.usebruno.app.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/bruno
+echo "Removing $HOME/Library/Logs/bruno..."
+if [ -d "$HOME/Library/Logs/bruno" ]; then
+    rm -rf "$HOME/Library/Logs/bruno" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/bruno" ]; then
+    rm -f "$HOME/Library/Logs/bruno" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.usebruno.app.plist
 echo "Removing $HOME/Library/Preferences/com.usebruno.app.plist..."
 if [ -d "$HOME/Library/Preferences/com.usebruno.app.plist" ]; then
@@ -47,6 +63,14 @@ if [ -d "$HOME/Library/Saved Application State/com.usebruno.app.savedState" ]; t
     rm -rf "$HOME/Library/Saved Application State/com.usebruno.app.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.usebruno.app.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.usebruno.app.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Documents/bruno
+echo "Removing $HOME/Documents/bruno..."
+if [ -d "$HOME/Documents/bruno" ]; then
+    rm -rf "$HOME/Documents/bruno" 2>/dev/null || true
+elif [ -f "$HOME/Documents/bruno" ]; then
+    rm -f "$HOME/Documents/bruno" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

@@ -25,60 +25,68 @@ elif [ -f "/Applications/HoudahSpot.app" ]; then
     rm -f "/Applications/HoudahSpot.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Scripts/com.houdah.HoudahSpot6.FinderExtension
-echo "Removing $HOME/Library/Application Scripts/com.houdah.HoudahSpot6.FinderExtension..."
-if [ -d "$HOME/Library/Application Scripts/com.houdah.HoudahSpot6.FinderExtension" ]; then
-    rm -rf "$HOME/Library/Application Scripts/com.houdah.HoudahSpot6.FinderExtension" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/com.houdah.HoudahSpot6.FinderExtension" ]; then
-    rm -f "$HOME/Library/Application Scripts/com.houdah.HoudahSpot6.FinderExtension" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/com.houdah.HoudahSpot4.FinderExtension
+echo "Removing $HOME/Library/Application Scripts/com.houdah.HoudahSpot4.FinderExtension..."
+if [ -d "$HOME/Library/Application Scripts/com.houdah.HoudahSpot4.FinderExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.houdah.HoudahSpot4.FinderExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.houdah.HoudahSpot4.FinderExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.houdah.HoudahSpot4.FinderExtension" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Scripts/com.houdah.HoudahSpot6.HoudahSpotQuickAction
-echo "Removing $HOME/Library/Application Scripts/com.houdah.HoudahSpot6.HoudahSpotQuickAction..."
-if [ -d "$HOME/Library/Application Scripts/com.houdah.HoudahSpot6.HoudahSpotQuickAction" ]; then
-    rm -rf "$HOME/Library/Application Scripts/com.houdah.HoudahSpot6.HoudahSpotQuickAction" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Scripts/com.houdah.HoudahSpot6.HoudahSpotQuickAction" ]; then
-    rm -f "$HOME/Library/Application Scripts/com.houdah.HoudahSpot6.HoudahSpotQuickAction" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/com.houdah.HoudahSpot4.HoudahSpotQuickAction
+echo "Removing $HOME/Library/Application Scripts/com.houdah.HoudahSpot4.HoudahSpotQuickAction..."
+if [ -d "$HOME/Library/Application Scripts/com.houdah.HoudahSpot4.HoudahSpotQuickAction" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.houdah.HoudahSpot4.HoudahSpotQuickAction" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.houdah.HoudahSpot4.HoudahSpotQuickAction" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.houdah.HoudahSpot4.HoudahSpotQuickAction" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.houdah.HoudahSpot6
-echo "Removing $HOME/Library/Application Support/com.houdah.HoudahSpot6..."
-if [ -d "$HOME/Library/Application Support/com.houdah.HoudahSpot6" ]; then
-    rm -rf "$HOME/Library/Application Support/com.houdah.HoudahSpot6" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.houdah.HoudahSpot6" ]; then
-    rm -f "$HOME/Library/Application Support/com.houdah.HoudahSpot6" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.houdah.houdahspot4.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.houdah.houdahspot4.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.houdah.houdahspot4.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.houdah.houdahspot4.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.houdah.houdahspot4.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.houdah.houdahspot4.sfl*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.houdah.HoudahSpot6
-echo "Removing $HOME/Library/Caches/com.houdah.HoudahSpot6..."
-if [ -d "$HOME/Library/Caches/com.houdah.HoudahSpot6" ]; then
-    rm -rf "$HOME/Library/Caches/com.houdah.HoudahSpot6" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.houdah.HoudahSpot6" ]; then
-    rm -f "$HOME/Library/Caches/com.houdah.HoudahSpot6" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.houdah.HoudahSpot4
+echo "Removing $HOME/Library/Application Support/com.houdah.HoudahSpot4..."
+if [ -d "$HOME/Library/Application Support/com.houdah.HoudahSpot4" ]; then
+    rm -rf "$HOME/Library/Application Support/com.houdah.HoudahSpot4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.houdah.HoudahSpot4" ]; then
+    rm -f "$HOME/Library/Application Support/com.houdah.HoudahSpot4" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.houdah.HoudahSpot6.FinderExtension
-echo "Removing $HOME/Library/Containers/com.houdah.HoudahSpot6.FinderExtension..."
-if [ -d "$HOME/Library/Containers/com.houdah.HoudahSpot6.FinderExtension" ]; then
-    rm -rf "$HOME/Library/Containers/com.houdah.HoudahSpot6.FinderExtension" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.houdah.HoudahSpot6.FinderExtension" ]; then
-    rm -f "$HOME/Library/Containers/com.houdah.HoudahSpot6.FinderExtension" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.houdah.HoudahSpot4
+echo "Removing $HOME/Library/Caches/com.houdah.HoudahSpot4..."
+if [ -d "$HOME/Library/Caches/com.houdah.HoudahSpot4" ]; then
+    rm -rf "$HOME/Library/Caches/com.houdah.HoudahSpot4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.houdah.HoudahSpot4" ]; then
+    rm -f "$HOME/Library/Caches/com.houdah.HoudahSpot4" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Containers/com.houdah.HoudahSpot6.HoudahSpotQuickAction
-echo "Removing $HOME/Library/Containers/com.houdah.HoudahSpot6.HoudahSpotQuickAction..."
-if [ -d "$HOME/Library/Containers/com.houdah.HoudahSpot6.HoudahSpotQuickAction" ]; then
-    rm -rf "$HOME/Library/Containers/com.houdah.HoudahSpot6.HoudahSpotQuickAction" 2>/dev/null || true
-elif [ -f "$HOME/Library/Containers/com.houdah.HoudahSpot6.HoudahSpotQuickAction" ]; then
-    rm -f "$HOME/Library/Containers/com.houdah.HoudahSpot6.HoudahSpotQuickAction" 2>/dev/null || true
+# Remove $HOME/Library/Containers/com.houdah.HoudahSpot4.FinderExtension
+echo "Removing $HOME/Library/Containers/com.houdah.HoudahSpot4.FinderExtension..."
+if [ -d "$HOME/Library/Containers/com.houdah.HoudahSpot4.FinderExtension" ]; then
+    rm -rf "$HOME/Library/Containers/com.houdah.HoudahSpot4.FinderExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.houdah.HoudahSpot4.FinderExtension" ]; then
+    rm -f "$HOME/Library/Containers/com.houdah.HoudahSpot4.FinderExtension" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/HTTPStorages/com.houdah.HoudahSpot6
-echo "Removing $HOME/Library/HTTPStorages/com.houdah.HoudahSpot6..."
-if [ -d "$HOME/Library/HTTPStorages/com.houdah.HoudahSpot6" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/com.houdah.HoudahSpot6" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/com.houdah.HoudahSpot6" ]; then
-    rm -f "$HOME/Library/HTTPStorages/com.houdah.HoudahSpot6" 2>/dev/null || true
+# Remove $HOME/Library/Containers/com.houdah.HoudahSpot4.HoudahSpotQuickAction
+echo "Removing $HOME/Library/Containers/com.houdah.HoudahSpot4.HoudahSpotQuickAction..."
+if [ -d "$HOME/Library/Containers/com.houdah.HoudahSpot4.HoudahSpotQuickAction" ]; then
+    rm -rf "$HOME/Library/Containers/com.houdah.HoudahSpot4.HoudahSpotQuickAction" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.houdah.HoudahSpot4.HoudahSpotQuickAction" ]; then
+    rm -f "$HOME/Library/Containers/com.houdah.HoudahSpot4.HoudahSpotQuickAction" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.houdah.HoudahSpot4
+echo "Removing $HOME/Library/HTTPStorages/com.houdah.HoudahSpot4..."
+if [ -d "$HOME/Library/HTTPStorages/com.houdah.HoudahSpot4" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.houdah.HoudahSpot4" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.houdah.HoudahSpot4" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.houdah.HoudahSpot4" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Mail/Bundles/HoudahSpotMailPlugin.mailbundle
@@ -89,12 +97,12 @@ elif [ -f "$HOME/Library/Mail/Bundles/HoudahSpotMailPlugin.mailbundle" ]; then
     rm -f "$HOME/Library/Mail/Bundles/HoudahSpotMailPlugin.mailbundle" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.houdah.HoudahSpot6.plist
-echo "Removing $HOME/Library/Preferences/com.houdah.HoudahSpot6.plist..."
-if [ -d "$HOME/Library/Preferences/com.houdah.HoudahSpot6.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.houdah.HoudahSpot6.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.houdah.HoudahSpot6.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.houdah.HoudahSpot6.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.houdah.HoudahSpot4.plist
+echo "Removing $HOME/Library/Preferences/com.houdah.HoudahSpot4.plist..."
+if [ -d "$HOME/Library/Preferences/com.houdah.HoudahSpot4.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.houdah.HoudahSpot4.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.houdah.HoudahSpot4.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.houdah.HoudahSpot4.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

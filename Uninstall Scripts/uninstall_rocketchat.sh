@@ -25,6 +25,14 @@ elif [ -f "/Applications/Rocket.Chat.app" ]; then
     rm -f "/Applications/Rocket.Chat.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/chat.rocket.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/chat.rocket.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/chat.rocket.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/chat.rocket.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/chat.rocket.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/chat.rocket.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Rocket.Chat
 echo "Removing $HOME/Library/Application Support/Rocket.Chat..."
 if [ -d "$HOME/Library/Application Support/Rocket.Chat" ]; then
@@ -55,6 +63,14 @@ if [ -d "$HOME/Library/Caches/chat.rocket.ShipIt" ]; then
     rm -rf "$HOME/Library/Caches/chat.rocket.ShipIt" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/chat.rocket.ShipIt" ]; then
     rm -f "$HOME/Library/Caches/chat.rocket.ShipIt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/Rocket.Chat
+echo "Removing $HOME/Library/Logs/Rocket.Chat..."
+if [ -d "$HOME/Library/Logs/Rocket.Chat" ]; then
+    rm -rf "$HOME/Library/Logs/Rocket.Chat" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Rocket.Chat" ]; then
+    rm -f "$HOME/Library/Logs/Rocket.Chat" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/chat.rocket.electron.helper.plist

@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Application Support/EcammLive" ]; then
     rm -f "$HOME/Library/Application Support/EcammLive" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.ecamm.EcammLive
+echo "Removing $HOME/Library/Caches/com.ecamm.EcammLive..."
+if [ -d "$HOME/Library/Caches/com.ecamm.EcammLive" ]; then
+    rm -rf "$HOME/Library/Caches/com.ecamm.EcammLive" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.ecamm.EcammLive" ]; then
+    rm -f "$HOME/Library/Caches/com.ecamm.EcammLive" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.ecamm.EcammLive
 echo "Removing $HOME/Library/HTTPStorages/com.ecamm.EcammLive..."
 if [ -d "$HOME/Library/HTTPStorages/com.ecamm.EcammLive" ]; then

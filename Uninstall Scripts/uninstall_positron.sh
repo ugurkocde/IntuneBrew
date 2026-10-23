@@ -33,12 +33,28 @@ elif [ -f "$HOME/.positron" ]; then
     rm -f "$HOME/.positron" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.posit.positron.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.posit.positron.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.posit.positron.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.posit.positron.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.posit.positron.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.posit.positron.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Positron
 echo "Removing $HOME/Library/Application Support/Positron..."
 if [ -d "$HOME/Library/Application Support/Positron" ]; then
     rm -rf "$HOME/Library/Application Support/Positron" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/Positron" ]; then
     rm -f "$HOME/Library/Application Support/Positron" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/co.posit.positron.plist
+echo "Removing $HOME/Library/Preferences/co.posit.positron.plist..."
+if [ -d "$HOME/Library/Preferences/co.posit.positron.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/co.posit.positron.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/co.posit.positron.plist" ]; then
+    rm -f "$HOME/Library/Preferences/co.posit.positron.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.rstudio.positron.plist

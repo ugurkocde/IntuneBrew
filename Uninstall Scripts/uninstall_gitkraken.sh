@@ -37,6 +37,14 @@ elif [ -f "$HOME/.gitkraken" ]; then
     rm -f "$HOME/.gitkraken" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.axosoft.gitkraken.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.axosoft.gitkraken.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.axosoft.gitkraken.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.axosoft.gitkraken.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.axosoft.gitkraken.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.axosoft.gitkraken.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.axosoft.gitkraken.ShipIt
 echo "Removing $HOME/Library/Application Support/com.axosoft.gitkraken.ShipIt..."
 if [ -d "$HOME/Library/Application Support/com.axosoft.gitkraken.ShipIt" ]; then

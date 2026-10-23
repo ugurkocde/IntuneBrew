@@ -25,6 +25,22 @@ elif [ -f "/Applications/Roam Research.app" ]; then
     rm -f "/Applications/Roam Research.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.roam-research.desktop-app.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.roam-research.desktop-app.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.roam-research.desktop-app.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.roam-research.desktop-app.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.roam-research.desktop-app.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.roam-research.desktop-app.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Roam Research
+echo "Removing $HOME/Library/Application Support/Roam Research..."
+if [ -d "$HOME/Library/Application Support/Roam Research" ]; then
+    rm -rf "$HOME/Library/Application Support/Roam Research" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Roam Research" ]; then
+    rm -f "$HOME/Library/Application Support/Roam Research" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.roam-research.desktop-app.plist
 echo "Removing $HOME/Library/Preferences/com.roam-research.desktop-app.plist..."
 if [ -d "$HOME/Library/Preferences/com.roam-research.desktop-app.plist" ]; then

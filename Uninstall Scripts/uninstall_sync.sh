@@ -45,6 +45,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.sync.desktop.findersync" ]; the
     rm -f "$HOME/Library/Application Scripts/com.sync.desktop.findersync" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/com.sync.desktop.findersync
+echo "Removing $HOME/Library/Containers/com.sync.desktop.findersync..."
+if [ -d "$HOME/Library/Containers/com.sync.desktop.findersync" ]; then
+    rm -rf "$HOME/Library/Containers/com.sync.desktop.findersync" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.sync.desktop.findersync" ]; then
+    rm -f "$HOME/Library/Containers/com.sync.desktop.findersync" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Group Containers/com.sync.desktop
 echo "Removing $HOME/Library/Group Containers/com.sync.desktop..."
 if [ -d "$HOME/Library/Group Containers/com.sync.desktop" ]; then

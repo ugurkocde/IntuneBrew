@@ -37,5 +37,13 @@ elif [ -f "$HOME/Library/Application Support/Binary Ninja" ]; then
     rm -f "$HOME/Library/Application Support/Binary Ninja" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.vector35.Binary Ninja.plist
+echo "Removing $HOME/Library/Preferences/com.vector35.Binary Ninja.plist..."
+if [ -d "$HOME/Library/Preferences/com.vector35.Binary Ninja.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.vector35.Binary Ninja.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.vector35.Binary Ninja.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.vector35.Binary Ninja.plist" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

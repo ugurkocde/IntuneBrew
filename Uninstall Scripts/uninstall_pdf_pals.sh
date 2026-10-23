@@ -25,6 +25,14 @@ elif [ -f "/Applications/PDF Pals.app" ]; then
     rm -f "/Applications/PDF Pals.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/6D5N473QP3.co.podzim.PDFPals
+echo "Removing $HOME/Library/Application Scripts/6D5N473QP3.co.podzim.PDFPals..."
+if [ -d "$HOME/Library/Application Scripts/6D5N473QP3.co.podzim.PDFPals" ]; then
+    rm -rf "$HOME/Library/Application Scripts/6D5N473QP3.co.podzim.PDFPals" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/6D5N473QP3.co.podzim.PDFPals" ]; then
+    rm -f "$HOME/Library/Application Scripts/6D5N473QP3.co.podzim.PDFPals" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/co.podzim.PDFPals
 echo "Removing $HOME/Library/Application Scripts/co.podzim.PDFPals..."
 if [ -d "$HOME/Library/Application Scripts/co.podzim.PDFPals" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Containers/co.podzim.PDFPals" ]; then
     rm -rf "$HOME/Library/Containers/co.podzim.PDFPals" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/co.podzim.PDFPals" ]; then
     rm -f "$HOME/Library/Containers/co.podzim.PDFPals" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/6D5N473QP3.co.podzim.PDFPals
+echo "Removing $HOME/Library/Group Containers/6D5N473QP3.co.podzim.PDFPals..."
+if [ -d "$HOME/Library/Group Containers/6D5N473QP3.co.podzim.PDFPals" ]; then
+    rm -rf "$HOME/Library/Group Containers/6D5N473QP3.co.podzim.PDFPals" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/6D5N473QP3.co.podzim.PDFPals" ]; then
+    rm -f "$HOME/Library/Group Containers/6D5N473QP3.co.podzim.PDFPals" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/co.podzim.PDFPals
