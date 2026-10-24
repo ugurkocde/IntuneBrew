@@ -22,5 +22,7 @@
   },
   "category": "Browsers",
   "publisher": "The Browser Company, LLC",
-  "homebrew_cask": "arc"
+  "homebrew_cask": "arc",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: discontinued"
 }
