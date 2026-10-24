@@ -5,7 +5,6 @@
   "homepage": "https://atuin.sh/",
   "url": "https://intunebrew.blob.core.windows.net/pkg/atuin_18.24.2_arm64.pkg",
   "fileName": "atuin_18.24.2_arm64.pkg",
-  "sha": "ecec1122337ea724d801a74c41485ead70bd98b8f87bf90c12ce2e5cc1e160e3",
   "bundledDependencies": [],
   "binaryPath": "/usr/local/bin/atuin"
 }
