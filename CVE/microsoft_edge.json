@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-10-23",
+  "last_updated": "2026-10-24",
   "total_cves": 1049,
   "summary": {
     "critical": 18,
@@ -812,7 +812,7 @@
     {
       "cve_id": "CVE-2026-65802",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-07",
+      "last_modified_date": "2026-10-23",
       "description": "External control of file name or path in Microsoft Edge for Android allows an unauthorized attacker to disclose information over a network.",
       "base_score": 7.4,
       "severity": "HIGH",
@@ -833,7 +833,7 @@
     {
       "cve_id": "CVE-2026-66315",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -854,7 +854,7 @@
     {
       "cve_id": "CVE-2026-66318",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Origin validation error in Microsoft Edge (Chromium-based) allows an unauthorized attacker to disclose information over a network.",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -875,7 +875,7 @@
     {
       "cve_id": "CVE-2026-66321",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
       "base_score": 7.4,
       "severity": "HIGH",
@@ -896,7 +896,7 @@
     {
       "cve_id": "CVE-2026-66322",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Origin validation error in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -917,7 +917,7 @@
     {
       "cve_id": "CVE-2026-66310",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-09-17",
+      "last_modified_date": "2026-10-23",
       "description": "External control of file name or path in Microsoft Edge for Android allows an unauthorized attacker to disclose information locally.",
       "base_score": 7.7,
       "severity": "HIGH",
@@ -14021,7 +14021,7 @@
     {
       "cve_id": "CVE-2026-70339",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-08-17",
+      "last_modified_date": "2026-10-23",
       "description": "Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -14042,7 +14042,7 @@
     {
       "cve_id": "CVE-2026-65804",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Improper control of generation of code ('code injection') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -14063,7 +14063,7 @@
     {
       "cve_id": "CVE-2026-66311",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Missing authorization in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform tampering locally.",
       "base_score": 6.2,
       "severity": "MEDIUM",
@@ -14084,7 +14084,7 @@
     {
       "cve_id": "CVE-2026-66312",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Buffer over-read in Microsoft Edge (Chromium-based) allows an authorized attacker to execute code over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -14105,7 +14105,7 @@
     {
       "cve_id": "CVE-2026-66313",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Origin validation error in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform tampering locally.",
       "base_score": 6.8,
       "severity": "MEDIUM",
@@ -14126,7 +14126,7 @@
     {
       "cve_id": "CVE-2026-66314",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Time-of-check time-of-use (toctou) race condition in Microsoft Edge (Chromium-based) allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -14147,7 +14147,7 @@
     {
       "cve_id": "CVE-2026-66316",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Origin validation error in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -14168,7 +14168,7 @@
     {
       "cve_id": "CVE-2026-66317",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Origin validation error in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform tampering over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -14189,7 +14189,7 @@
     {
       "cve_id": "CVE-2026-66325",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Server-side request forgery (ssrf) in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -14210,7 +14210,7 @@
     {
       "cve_id": "CVE-2026-66326",
       "published_date": "2026-08-04",
-      "last_modified_date": "2026-08-06",
+      "last_modified_date": "2026-10-23",
       "description": "Missing authorization in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
