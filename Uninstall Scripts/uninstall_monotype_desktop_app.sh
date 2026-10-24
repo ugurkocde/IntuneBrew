@@ -101,5 +101,29 @@ elif [ -f "$HOME/Library/Saved Application State/com.monotype.*.savedState" ]; t
     rm -f "$HOME/Library/Saved Application State/com.monotype.*.savedState" 2>/dev/null || true
 fi
 
+# Remove /Library/Application Support/Monotype Fonts
+echo "Removing /Library/Application Support/Monotype Fonts..."
+if [ -d "/Library/Application Support/Monotype Fonts" ]; then
+    rm -rf "/Library/Application Support/Monotype Fonts" 2>/dev/null || true
+elif [ -f "/Library/Application Support/Monotype Fonts" ]; then
+    rm -f "/Library/Application Support/Monotype Fonts" 2>/dev/null || true
+fi
+
+# Remove /Library/Logs/Monotype Fonts
+echo "Removing /Library/Logs/Monotype Fonts..."
+if [ -d "/Library/Logs/Monotype Fonts" ]; then
+    rm -rf "/Library/Logs/Monotype Fonts" 2>/dev/null || true
+elif [ -f "/Library/Logs/Monotype Fonts" ]; then
+    rm -f "/Library/Logs/Monotype Fonts" 2>/dev/null || true
+fi
+
+# Remove /Library/Preferences/com.monotype.fonts.plist
+echo "Removing /Library/Preferences/com.monotype.fonts.plist..."
+if [ -d "/Library/Preferences/com.monotype.fonts.plist" ]; then
+    rm -rf "/Library/Preferences/com.monotype.fonts.plist" 2>/dev/null || true
+elif [ -f "/Library/Preferences/com.monotype.fonts.plist" ]; then
+    rm -f "/Library/Preferences/com.monotype.fonts.plist" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

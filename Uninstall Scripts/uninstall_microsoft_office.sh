@@ -161,6 +161,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.microsoft.Word" ]; then
     rm -f "$HOME/Library/Application Scripts/com.microsoft.Word" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/UBF8T346G9.OneDriveStandaloneSuite
+echo "Removing $HOME/Library/Application Scripts/UBF8T346G9.OneDriveStandaloneSuite..."
+if [ -d "$HOME/Library/Application Scripts/UBF8T346G9.OneDriveStandaloneSuite" ]; then
+    rm -rf "$HOME/Library/Application Scripts/UBF8T346G9.OneDriveStandaloneSuite" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/UBF8T346G9.OneDriveStandaloneSuite" ]; then
+    rm -f "$HOME/Library/Application Scripts/UBF8T346G9.OneDriveStandaloneSuite" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.excel.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.excel.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.excel.sfl*" ]; then
@@ -257,6 +265,22 @@ elif [ -f "$HOME/Library/Containers/com.microsoft.Office365ServiceV2" ]; then
     rm -f "$HOME/Library/Containers/com.microsoft.Office365ServiceV2" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/com.microsoft.OneDrive.FileProvider
+echo "Removing $HOME/Library/Containers/com.microsoft.OneDrive.FileProvider..."
+if [ -d "$HOME/Library/Containers/com.microsoft.OneDrive.FileProvider" ]; then
+    rm -rf "$HOME/Library/Containers/com.microsoft.OneDrive.FileProvider" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.microsoft.OneDrive.FileProvider" ]; then
+    rm -f "$HOME/Library/Containers/com.microsoft.OneDrive.FileProvider" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.microsoft.OneDrive.FinderSync
+echo "Removing $HOME/Library/Containers/com.microsoft.OneDrive.FinderSync..."
+if [ -d "$HOME/Library/Containers/com.microsoft.OneDrive.FinderSync" ]; then
+    rm -rf "$HOME/Library/Containers/com.microsoft.OneDrive.FinderSync" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.microsoft.OneDrive.FinderSync" ]; then
+    rm -f "$HOME/Library/Containers/com.microsoft.OneDrive.FinderSync" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.microsoft.onenote.mac
 echo "Removing $HOME/Library/Containers/com.microsoft.onenote.mac..."
 if [ -d "$HOME/Library/Containers/com.microsoft.onenote.mac" ]; then
@@ -345,6 +369,14 @@ elif [ -f "$HOME/Library/Group Containers/UBF8T346G9.OfficeOsfWebHost" ]; then
     rm -f "$HOME/Library/Group Containers/UBF8T346G9.OfficeOsfWebHost" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite
+echo "Removing $HOME/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite..."
+if [ -d "$HOME/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite" ]; then
+    rm -rf "$HOME/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite" ]; then
+    rm -f "$HOME/Library/Group Containers/UBF8T346G9.OneDriveStandaloneSuite" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.microsoft.OneDriveStandaloneUpdater
 echo "Removing $HOME/Library/HTTPStorages/com.microsoft.OneDriveStandaloneUpdater..."
 if [ -d "$HOME/Library/HTTPStorages/com.microsoft.OneDriveStandaloneUpdater" ]; then
@@ -361,12 +393,36 @@ elif [ -f "$HOME/Library/HTTPStorages/com.microsoft.OneDriveStandaloneUpdater.bi
     rm -f "$HOME/Library/HTTPStorages/com.microsoft.OneDriveStandaloneUpdater.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/OneDrive
+echo "Removing $HOME/Library/Logs/OneDrive..."
+if [ -d "$HOME/Library/Logs/OneDrive" ]; then
+    rm -rf "$HOME/Library/Logs/OneDrive" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/OneDrive" ]; then
+    rm -f "$HOME/Library/Logs/OneDrive" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.microsoft.Excel.plist
 echo "Removing $HOME/Library/Preferences/com.microsoft.Excel.plist..."
 if [ -d "$HOME/Library/Preferences/com.microsoft.Excel.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.microsoft.Excel.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.microsoft.Excel.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.microsoft.Excel.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.microsoft.OneDriveStandaloneUpdater.plist
+echo "Removing $HOME/Library/Preferences/com.microsoft.OneDriveStandaloneUpdater.plist..."
+if [ -d "$HOME/Library/Preferences/com.microsoft.OneDriveStandaloneUpdater.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.microsoft.OneDriveStandaloneUpdater.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.microsoft.OneDriveStandaloneUpdater.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.microsoft.OneDriveStandaloneUpdater.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.microsoft.OneDriveUpdater.plist
+echo "Removing $HOME/Library/Preferences/com.microsoft.OneDriveUpdater.plist..."
+if [ -d "$HOME/Library/Preferences/com.microsoft.OneDriveUpdater.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.microsoft.OneDriveUpdater.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.microsoft.OneDriveUpdater.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.microsoft.OneDriveUpdater.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.microsoft.Outlook.plist

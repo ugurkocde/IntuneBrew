@@ -25,6 +25,30 @@ elif [ -f "/Applications/Xmind.app" ]; then
     rm -f "/Applications/Xmind.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.xmind.vana.app.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.xmind.vana.app.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.xmind.vana.app.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.xmind.vana.app.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.xmind.vana.app.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.xmind.vana.app.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Xmind
+echo "Removing $HOME/Library/Application Support/Xmind..."
+if [ -d "$HOME/Library/Application Support/Xmind" ]; then
+    rm -rf "$HOME/Library/Application Support/Xmind" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Xmind" ]; then
+    rm -f "$HOME/Library/Application Support/Xmind" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/net.xmind.vana.app.plist
+echo "Removing $HOME/Library/Preferences/net.xmind.vana.app.plist..."
+if [ -d "$HOME/Library/Preferences/net.xmind.vana.app.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/net.xmind.vana.app.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/net.xmind.vana.app.plist" ]; then
+    rm -f "$HOME/Library/Preferences/net.xmind.vana.app.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/org.xmind.cathy.application.savedState
 echo "Removing $HOME/Library/Saved Application State/org.xmind.cathy.application.savedState..."
 if [ -d "$HOME/Library/Saved Application State/org.xmind.cathy.application.savedState" ]; then

@@ -41,6 +41,22 @@ elif [ -f "$HOME/Library/Application Scripts/com.nektony.Memory-Cleaner-SII*.lau
     rm -f "$HOME/Library/Application Scripts/com.nektony.Memory-Cleaner-SII*.launcher" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.memory-cleaner-siii.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.memory-cleaner-siii.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.memory-cleaner-siii.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.memory-cleaner-siii.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.memory-cleaner-siii.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.nektony.memory-cleaner-siii.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.nektony.Memory-Cleaner-SII*
+echo "Removing $HOME/Library/Application Support/com.nektony.Memory-Cleaner-SII*..."
+if [ -d "$HOME/Library/Application Support/com.nektony.Memory-Cleaner-SII*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.nektony.Memory-Cleaner-SII*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.nektony.Memory-Cleaner-SII*" ]; then
+    rm -f "$HOME/Library/Application Support/com.nektony.Memory-Cleaner-SII*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Memory Cleaner
 echo "Removing $HOME/Library/Application Support/Memory Cleaner..."
 if [ -d "$HOME/Library/Application Support/Memory Cleaner" ]; then

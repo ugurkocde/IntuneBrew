@@ -41,6 +41,14 @@ elif [ -f "/Applications/WhatRoute.app" ]; then
     rm -f "/Applications/WhatRoute.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.whatroute.whatroute2.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.whatroute.whatroute2.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.whatroute.whatroute2.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.whatroute.whatroute2.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.whatroute.whatroute2.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.whatroute.whatroute2.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/net.whatroute.whatroute2
 echo "Removing $HOME/Library/Caches/net.whatroute.whatroute2..."
 if [ -d "$HOME/Library/Caches/net.whatroute.whatroute2" ]; then

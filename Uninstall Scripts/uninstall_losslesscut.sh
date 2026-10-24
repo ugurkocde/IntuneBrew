@@ -25,6 +25,14 @@ elif [ -f "/Applications/LosslessCut.app" ]; then
     rm -f "/Applications/LosslessCut.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/no.mifi.losslesscut-mac.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/no.mifi.losslesscut-mac.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/no.mifi.losslesscut-mac.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/no.mifi.losslesscut-mac.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/no.mifi.losslesscut-mac.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/no.mifi.losslesscut-mac.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/LosslessCut
 echo "Removing $HOME/Library/Application Support/LosslessCut..."
 if [ -d "$HOME/Library/Application Support/LosslessCut" ]; then
@@ -39,6 +47,14 @@ if [ -d "$HOME/Library/Logs/LosslessCut" ]; then
     rm -rf "$HOME/Library/Logs/LosslessCut" 2>/dev/null || true
 elif [ -f "$HOME/Library/Logs/LosslessCut" ]; then
     rm -f "$HOME/Library/Logs/LosslessCut" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/no.mifi.losslesscut-mac.plist
+echo "Removing $HOME/Library/Preferences/no.mifi.losslesscut-mac.plist..."
+if [ -d "$HOME/Library/Preferences/no.mifi.losslesscut-mac.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/no.mifi.losslesscut-mac.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/no.mifi.losslesscut-mac.plist" ]; then
+    rm -f "$HOME/Library/Preferences/no.mifi.losslesscut-mac.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

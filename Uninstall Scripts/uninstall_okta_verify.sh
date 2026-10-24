@@ -35,12 +35,28 @@ launchctl unload -w /Library/LaunchAgents/com.okta.deviceaccess.servicedaemon.pl
 launchctl unload -w /Library/LaunchDaemons/com.okta.deviceaccess.servicedaemon.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.okta.deviceaccess.servicedaemon.plist 2>/dev/null || true
 
+# Remove $HOME/Library/Application Scripts/com.okta.mobile.auth-service-extension
+echo "Removing $HOME/Library/Application Scripts/com.okta.mobile.auth-service-extension..."
+if [ -d "$HOME/Library/Application Scripts/com.okta.mobile.auth-service-extension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.okta.mobile.auth-service-extension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.okta.mobile.auth-service-extension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.okta.mobile.auth-service-extension" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.okta.mobile
 echo "Removing $HOME/Library/Containers/com.okta.mobile..."
 if [ -d "$HOME/Library/Containers/com.okta.mobile" ]; then
     rm -rf "$HOME/Library/Containers/com.okta.mobile" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.okta.mobile" ]; then
     rm -f "$HOME/Library/Containers/com.okta.mobile" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.okta.mobile.auth-service-extension
+echo "Removing $HOME/Library/Containers/com.okta.mobile.auth-service-extension..."
+if [ -d "$HOME/Library/Containers/com.okta.mobile.auth-service-extension" ]; then
+    rm -rf "$HOME/Library/Containers/com.okta.mobile.auth-service-extension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.okta.mobile.auth-service-extension" ]; then
+    rm -f "$HOME/Library/Containers/com.okta.mobile.auth-service-extension" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/B7F62B65BN.group.okta.verify.shared.plist

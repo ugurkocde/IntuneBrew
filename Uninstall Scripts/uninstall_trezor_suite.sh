@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/@trezor/suite-desktop" ]; then
     rm -f "$HOME/Library/Application Support/@trezor/suite-desktop" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.trezor.trezorsuite.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.trezor.trezorsuite.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.trezor.trezorsuite.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.trezor.trezorsuite.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.trezor.trezorsuite.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.trezor.trezorsuite.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/io.trezor.TrezorSuite.plist
 echo "Removing $HOME/Library/Preferences/io.trezor.TrezorSuite.plist..."
 if [ -d "$HOME/Library/Preferences/io.trezor.TrezorSuite.plist" ]; then

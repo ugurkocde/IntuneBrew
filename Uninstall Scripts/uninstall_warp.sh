@@ -33,12 +33,36 @@ elif [ -f "$HOME/.warp" ]; then
     rm -f "$HOME/.warp" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/2BBY89MBSN.dev.warp
+echo "Removing $HOME/Library/Application Scripts/2BBY89MBSN.dev.warp..."
+if [ -d "$HOME/Library/Application Scripts/2BBY89MBSN.dev.warp" ]; then
+    rm -rf "$HOME/Library/Application Scripts/2BBY89MBSN.dev.warp" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/2BBY89MBSN.dev.warp" ]; then
+    rm -f "$HOME/Library/Application Scripts/2BBY89MBSN.dev.warp" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/dev.warp.Warp-Stable
 echo "Removing $HOME/Library/Application Support/dev.warp.Warp-Stable..."
 if [ -d "$HOME/Library/Application Support/dev.warp.Warp-Stable" ]; then
     rm -rf "$HOME/Library/Application Support/dev.warp.Warp-Stable" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/dev.warp.Warp-Stable" ]; then
     rm -f "$HOME/Library/Application Support/dev.warp.Warp-Stable" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/dev.warp.Warp-Stable
+echo "Removing $HOME/Library/Caches/dev.warp.Warp-Stable..."
+if [ -d "$HOME/Library/Caches/dev.warp.Warp-Stable" ]; then
+    rm -rf "$HOME/Library/Caches/dev.warp.Warp-Stable" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/dev.warp.Warp-Stable" ]; then
+    rm -f "$HOME/Library/Caches/dev.warp.Warp-Stable" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/2BBY89MBSN.dev.warp
+echo "Removing $HOME/Library/Group Containers/2BBY89MBSN.dev.warp..."
+if [ -d "$HOME/Library/Group Containers/2BBY89MBSN.dev.warp" ]; then
+    rm -rf "$HOME/Library/Group Containers/2BBY89MBSN.dev.warp" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/2BBY89MBSN.dev.warp" ]; then
+    rm -f "$HOME/Library/Group Containers/2BBY89MBSN.dev.warp" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Logs/warp.log*

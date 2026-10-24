@@ -45,12 +45,28 @@ elif [ -f "$HOME/Library/Application Support/Lunar" ]; then
     rm -f "$HOME/Library/Application Support/Lunar" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/fyi.lunar.Lunar
+echo "Removing $HOME/Library/Caches/fyi.lunar.Lunar..."
+if [ -d "$HOME/Library/Caches/fyi.lunar.Lunar" ]; then
+    rm -rf "$HOME/Library/Caches/fyi.lunar.Lunar" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/fyi.lunar.Lunar" ]; then
+    rm -f "$HOME/Library/Caches/fyi.lunar.Lunar" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/Lunar
 echo "Removing $HOME/Library/Caches/Lunar..."
 if [ -d "$HOME/Library/Caches/Lunar" ]; then
     rm -rf "$HOME/Library/Caches/Lunar" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/Lunar" ]; then
     rm -f "$HOME/Library/Caches/Lunar" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/fyi.lunar.Lunar*
+echo "Removing $HOME/Library/HTTPStorages/fyi.lunar.Lunar*..."
+if [ -d "$HOME/Library/HTTPStorages/fyi.lunar.Lunar*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/fyi.lunar.Lunar*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/fyi.lunar.Lunar*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/fyi.lunar.Lunar*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/fyi.lunar.Lunar.plist

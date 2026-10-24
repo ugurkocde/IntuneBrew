@@ -43,12 +43,44 @@ elif [ -f "$HOME/Library/Application Scripts/app.tuple.app-LaunchAtLoginHelper" 
     rm -f "$HOME/Library/Application Scripts/app.tuple.app-LaunchAtLoginHelper" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/app.tuple.log
+echo "Removing $HOME/Library/Application Scripts/app.tuple.log..."
+if [ -d "$HOME/Library/Application Scripts/app.tuple.log" ]; then
+    rm -rf "$HOME/Library/Application Scripts/app.tuple.log" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/app.tuple.log" ]; then
+    rm -f "$HOME/Library/Application Scripts/app.tuple.log" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/app.tuple.webcam-capturer
+echo "Removing $HOME/Library/Application Scripts/app.tuple.webcam-capturer..."
+if [ -d "$HOME/Library/Application Scripts/app.tuple.webcam-capturer" ]; then
+    rm -rf "$HOME/Library/Application Scripts/app.tuple.webcam-capturer" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/app.tuple.webcam-capturer" ]; then
+    rm -f "$HOME/Library/Application Scripts/app.tuple.webcam-capturer" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/DQYU7DR9Q7.app.tuple.app
+echo "Removing $HOME/Library/Application Scripts/DQYU7DR9Q7.app.tuple.app..."
+if [ -d "$HOME/Library/Application Scripts/DQYU7DR9Q7.app.tuple.app" ]; then
+    rm -rf "$HOME/Library/Application Scripts/DQYU7DR9Q7.app.tuple.app" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/DQYU7DR9Q7.app.tuple.app" ]; then
+    rm -f "$HOME/Library/Application Scripts/DQYU7DR9Q7.app.tuple.app" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/app.tuple.app
 echo "Removing $HOME/Library/Application Support/app.tuple.app..."
 if [ -d "$HOME/Library/Application Support/app.tuple.app" ]; then
     rm -rf "$HOME/Library/Application Support/app.tuple.app" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/app.tuple.app" ]; then
     rm -f "$HOME/Library/Application Support/app.tuple.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Tuple
+echo "Removing $HOME/Library/Application Support/Tuple..."
+if [ -d "$HOME/Library/Application Support/Tuple" ]; then
+    rm -rf "$HOME/Library/Application Support/Tuple" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Tuple" ]; then
+    rm -f "$HOME/Library/Application Support/Tuple" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/app.tuple.app
@@ -83,12 +115,52 @@ elif [ -f "$HOME/Library/Containers/app.tuple.app-LaunchAtLoginHelper" ]; then
     rm -f "$HOME/Library/Containers/app.tuple.app-LaunchAtLoginHelper" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/app.tuple.log
+echo "Removing $HOME/Library/Containers/app.tuple.log..."
+if [ -d "$HOME/Library/Containers/app.tuple.log" ]; then
+    rm -rf "$HOME/Library/Containers/app.tuple.log" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/app.tuple.log" ]; then
+    rm -f "$HOME/Library/Containers/app.tuple.log" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/app.tuple.webcam-capturer
+echo "Removing $HOME/Library/Containers/app.tuple.webcam-capturer..."
+if [ -d "$HOME/Library/Containers/app.tuple.webcam-capturer" ]; then
+    rm -rf "$HOME/Library/Containers/app.tuple.webcam-capturer" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/app.tuple.webcam-capturer" ]; then
+    rm -f "$HOME/Library/Containers/app.tuple.webcam-capturer" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/DQYU7DR9Q7.app.tuple.app
+echo "Removing $HOME/Library/Group Containers/DQYU7DR9Q7.app.tuple.app..."
+if [ -d "$HOME/Library/Group Containers/DQYU7DR9Q7.app.tuple.app" ]; then
+    rm -rf "$HOME/Library/Group Containers/DQYU7DR9Q7.app.tuple.app" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/DQYU7DR9Q7.app.tuple.app" ]; then
+    rm -f "$HOME/Library/Group Containers/DQYU7DR9Q7.app.tuple.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/app.tuple.app
+echo "Removing $HOME/Library/HTTPStorages/app.tuple.app..."
+if [ -d "$HOME/Library/HTTPStorages/app.tuple.app" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/app.tuple.app" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/app.tuple.app" ]; then
+    rm -f "$HOME/Library/HTTPStorages/app.tuple.app" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/app.tuple.app.plist
 echo "Removing $HOME/Library/Preferences/app.tuple.app.plist..."
 if [ -d "$HOME/Library/Preferences/app.tuple.app.plist" ]; then
     rm -rf "$HOME/Library/Preferences/app.tuple.app.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/app.tuple.app.plist" ]; then
     rm -f "$HOME/Library/Preferences/app.tuple.app.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/app.tuple.app.web.plist
+echo "Removing $HOME/Library/Preferences/app.tuple.app.web.plist..."
+if [ -d "$HOME/Library/Preferences/app.tuple.app.web.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/app.tuple.app.web.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/app.tuple.app.web.plist" ]; then
+    rm -f "$HOME/Library/Preferences/app.tuple.app.web.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/WebKit/app.tuple.app

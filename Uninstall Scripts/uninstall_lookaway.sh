@@ -29,6 +29,14 @@ elif [ -f "/Applications/LookAway.app" ]; then
     rm -f "/Applications/LookAway.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/D35B5Y6JX8.com.mysticalbits.lookaway.shared
+echo "Removing $HOME/Library/Application Scripts/D35B5Y6JX8.com.mysticalbits.lookaway.shared..."
+if [ -d "$HOME/Library/Application Scripts/D35B5Y6JX8.com.mysticalbits.lookaway.shared" ]; then
+    rm -rf "$HOME/Library/Application Scripts/D35B5Y6JX8.com.mysticalbits.lookaway.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/D35B5Y6JX8.com.mysticalbits.lookaway.shared" ]; then
+    rm -f "$HOME/Library/Application Scripts/D35B5Y6JX8.com.mysticalbits.lookaway.shared" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mysticalbits.lookaway.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mysticalbits.lookaway.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mysticalbits.lookaway.sfl*" ]; then
@@ -45,12 +53,36 @@ elif [ -f "$HOME/Library/Application Support/LookAway" ]; then
     rm -f "$HOME/Library/Application Support/LookAway" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.mysticalbits.lookaway
+echo "Removing $HOME/Library/Caches/com.mysticalbits.lookaway..."
+if [ -d "$HOME/Library/Caches/com.mysticalbits.lookaway" ]; then
+    rm -rf "$HOME/Library/Caches/com.mysticalbits.lookaway" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.mysticalbits.lookaway" ]; then
+    rm -f "$HOME/Library/Caches/com.mysticalbits.lookaway" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/SentryCrash/LookAway
 echo "Removing $HOME/Library/Caches/SentryCrash/LookAway..."
 if [ -d "$HOME/Library/Caches/SentryCrash/LookAway" ]; then
     rm -rf "$HOME/Library/Caches/SentryCrash/LookAway" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/SentryCrash/LookAway" ]; then
     rm -f "$HOME/Library/Caches/SentryCrash/LookAway" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/D35B5Y6JX8.com.mysticalbits.lookaway.shared
+echo "Removing $HOME/Library/Group Containers/D35B5Y6JX8.com.mysticalbits.lookaway.shared..."
+if [ -d "$HOME/Library/Group Containers/D35B5Y6JX8.com.mysticalbits.lookaway.shared" ]; then
+    rm -rf "$HOME/Library/Group Containers/D35B5Y6JX8.com.mysticalbits.lookaway.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/D35B5Y6JX8.com.mysticalbits.lookaway.shared" ]; then
+    rm -f "$HOME/Library/Group Containers/D35B5Y6JX8.com.mysticalbits.lookaway.shared" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.mysticalbits.lookaway*
+echo "Removing $HOME/Library/HTTPStorages/com.mysticalbits.lookaway*..."
+if [ -d "$HOME/Library/HTTPStorages/com.mysticalbits.lookaway*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.mysticalbits.lookaway*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.mysticalbits.lookaway*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.mysticalbits.lookaway*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.mysticalbits.lookaway.plist

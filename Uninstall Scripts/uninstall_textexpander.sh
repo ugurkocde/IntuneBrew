@@ -29,6 +29,14 @@ elif [ -f "/Applications/TextExpander.app" ]; then
     rm -f "/Applications/TextExpander.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.smileonmymac.textexpander.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.smileonmymac.textexpander.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.smileonmymac.textexpander.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.smileonmymac.textexpander.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.smileonmymac.textexpander.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.smileonmymac.textexpander.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Google/Chrome/NativeMessagingHosts/com.smileonmymac.textexpander.json
 echo "Removing $HOME/Library/Application Support/Google/Chrome/NativeMessagingHosts/com.smileonmymac.textexpander.json..."
 if [ -d "$HOME/Library/Application Support/Google/Chrome/NativeMessagingHosts/com.smileonmymac.textexpander.json" ]; then

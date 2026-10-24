@@ -25,6 +25,22 @@ elif [ -f "/Applications/Versions.app" ]; then
     rm -f "/Applications/Versions.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/4G35KLFD64.com.versionsapp.shared
+echo "Removing $HOME/Library/Application Scripts/4G35KLFD64.com.versionsapp.shared..."
+if [ -d "$HOME/Library/Application Scripts/4G35KLFD64.com.versionsapp.shared" ]; then
+    rm -rf "$HOME/Library/Application Scripts/4G35KLFD64.com.versionsapp.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/4G35KLFD64.com.versionsapp.shared" ]; then
+    rm -f "$HOME/Library/Application Scripts/4G35KLFD64.com.versionsapp.shared" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.versionsapp.v3.finder
+echo "Removing $HOME/Library/Application Scripts/com.versionsapp.v3.finder..."
+if [ -d "$HOME/Library/Application Scripts/com.versionsapp.v3.finder" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.versionsapp.v3.finder" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.versionsapp.v3.finder" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.versionsapp.v3.finder" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.versionsapp.v3
 echo "Removing $HOME/Library/Application Support/com.versionsapp.v3..."
 if [ -d "$HOME/Library/Application Support/com.versionsapp.v3" ]; then
@@ -47,6 +63,22 @@ if [ -d "$HOME/Library/Caches/com.versionsapp.v3" ]; then
     rm -rf "$HOME/Library/Caches/com.versionsapp.v3" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.versionsapp.v3" ]; then
     rm -f "$HOME/Library/Caches/com.versionsapp.v3" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.versionsapp.v3.finder
+echo "Removing $HOME/Library/Containers/com.versionsapp.v3.finder..."
+if [ -d "$HOME/Library/Containers/com.versionsapp.v3.finder" ]; then
+    rm -rf "$HOME/Library/Containers/com.versionsapp.v3.finder" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.versionsapp.v3.finder" ]; then
+    rm -f "$HOME/Library/Containers/com.versionsapp.v3.finder" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/4G35KLFD64.com.versionsapp.shared
+echo "Removing $HOME/Library/Group Containers/4G35KLFD64.com.versionsapp.shared..."
+if [ -d "$HOME/Library/Group Containers/4G35KLFD64.com.versionsapp.shared" ]; then
+    rm -rf "$HOME/Library/Group Containers/4G35KLFD64.com.versionsapp.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/4G35KLFD64.com.versionsapp.shared" ]; then
+    rm -f "$HOME/Library/Group Containers/4G35KLFD64.com.versionsapp.shared" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.versionsapp.v3

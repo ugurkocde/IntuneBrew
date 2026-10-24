@@ -53,6 +53,22 @@ elif [ -f "$HOME/Library/Cookies/co.highlyopinionated.swish.binarycookies" ]; th
     rm -f "$HOME/Library/Cookies/co.highlyopinionated.swish.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/co.highlyopinionated.swish
+echo "Removing $HOME/Library/HTTPStorages/co.highlyopinionated.swish..."
+if [ -d "$HOME/Library/HTTPStorages/co.highlyopinionated.swish" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/co.highlyopinionated.swish" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/co.highlyopinionated.swish" ]; then
+    rm -f "$HOME/Library/HTTPStorages/co.highlyopinionated.swish" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/co.highlyopinionated.swish.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/co.highlyopinionated.swish.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/co.highlyopinionated.swish.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/co.highlyopinionated.swish.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/co.highlyopinionated.swish.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/co.highlyopinionated.swish.binarycookies" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/co.highlyopinionated.swish.plist
 echo "Removing $HOME/Library/Preferences/co.highlyopinionated.swish.plist..."
 if [ -d "$HOME/Library/Preferences/co.highlyopinionated.swish.plist" ]; then

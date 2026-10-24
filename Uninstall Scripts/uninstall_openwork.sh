@@ -29,6 +29,14 @@ elif [ -f "/Applications/OpenWork.app" ]; then
     rm -f "/Applications/OpenWork.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/@openwork
+echo "Removing $HOME/Library/Application Support/@openwork..."
+if [ -d "$HOME/Library/Application Support/@openwork" ]; then
+    rm -rf "$HOME/Library/Application Support/@openwork" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/@openwork" ]; then
+    rm -f "$HOME/Library/Application Support/@openwork" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.differentai.openwork.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.differentai.openwork.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.differentai.openwork.sfl*" ]; then

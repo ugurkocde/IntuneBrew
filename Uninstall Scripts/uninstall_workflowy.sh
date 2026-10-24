@@ -65,5 +65,13 @@ elif [ -f "$HOME/Library/Saved Application State/com.workflowy.desktop.savedStat
     rm -f "$HOME/Library/Saved Application State/com.workflowy.desktop.savedState" 2>/dev/null || true
 fi
 
+# Remove $HOME/.workflowy
+echo "Removing $HOME/.workflowy..."
+if [ -d "$HOME/.workflowy" ]; then
+    rm -rf "$HOME/.workflowy" 2>/dev/null || true
+elif [ -f "$HOME/.workflowy" ]; then
+    rm -f "$HOME/.workflowy" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

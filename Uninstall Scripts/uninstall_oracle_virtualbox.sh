@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.
     rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.virtualbox.app.virtualbox*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/LaunchAgents/org.virtualbox.vboxwebsrv.plist
+echo "Removing $HOME/Library/LaunchAgents/org.virtualbox.vboxwebsrv.plist..."
+if [ -d "$HOME/Library/LaunchAgents/org.virtualbox.vboxwebsrv.plist" ]; then
+    rm -rf "$HOME/Library/LaunchAgents/org.virtualbox.vboxwebsrv.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/LaunchAgents/org.virtualbox.vboxwebsrv.plist" ]; then
+    rm -f "$HOME/Library/LaunchAgents/org.virtualbox.vboxwebsrv.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/org.virtualbox.app.VirtualBox*
 echo "Removing $HOME/Library/Preferences/org.virtualbox.app.VirtualBox*..."
 if [ -d "$HOME/Library/Preferences/org.virtualbox.app.VirtualBox*" ]; then

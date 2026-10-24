@@ -29,12 +29,36 @@ elif [ -f "/Applications/MacWhisper.app" ]; then
     rm -f "/Applications/MacWhisper.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share
+echo "Removing $HOME/Library/Application Scripts/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share..."
+if [ -d "$HOME/Library/Application Scripts/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share" ]; then
+    rm -rf "$HOME/Library/Application Scripts/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share" ]; then
+    rm -f "$HOME/Library/Application Scripts/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/com.goodsnooze.MacWhisper
 echo "Removing $HOME/Library/Application Scripts/com.goodsnooze.MacWhisper..."
 if [ -d "$HOME/Library/Application Scripts/com.goodsnooze.MacWhisper" ]; then
     rm -rf "$HOME/Library/Application Scripts/com.goodsnooze.MacWhisper" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/com.goodsnooze.MacWhisper" ]; then
     rm -f "$HOME/Library/Application Scripts/com.goodsnooze.MacWhisper" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.goodsnooze.MacWhisper.ShareExtension
+echo "Removing $HOME/Library/Application Scripts/com.goodsnooze.MacWhisper.ShareExtension..."
+if [ -d "$HOME/Library/Application Scripts/com.goodsnooze.MacWhisper.ShareExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.goodsnooze.MacWhisper.ShareExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.goodsnooze.MacWhisper.ShareExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.goodsnooze.MacWhisper.ShareExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.goodsnooze.MacWhisper
+echo "Removing $HOME/Library/Application Support/com.goodsnooze.MacWhisper..."
+if [ -d "$HOME/Library/Application Support/com.goodsnooze.MacWhisper" ]; then
+    rm -rf "$HOME/Library/Application Support/com.goodsnooze.MacWhisper" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.goodsnooze.MacWhisper" ]; then
+    rm -f "$HOME/Library/Application Support/com.goodsnooze.MacWhisper" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/MacWhisper
@@ -59,6 +83,22 @@ if [ -d "$HOME/Library/Containers/com.goodsnooze.MacWhisper" ]; then
     rm -rf "$HOME/Library/Containers/com.goodsnooze.MacWhisper" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.goodsnooze.MacWhisper" ]; then
     rm -f "$HOME/Library/Containers/com.goodsnooze.MacWhisper" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.goodsnooze.MacWhisper.ShareExtension
+echo "Removing $HOME/Library/Containers/com.goodsnooze.MacWhisper.ShareExtension..."
+if [ -d "$HOME/Library/Containers/com.goodsnooze.MacWhisper.ShareExtension" ]; then
+    rm -rf "$HOME/Library/Containers/com.goodsnooze.MacWhisper.ShareExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.goodsnooze.MacWhisper.ShareExtension" ]; then
+    rm -f "$HOME/Library/Containers/com.goodsnooze.MacWhisper.ShareExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share
+echo "Removing $HOME/Library/Group Containers/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share..."
+if [ -d "$HOME/Library/Group Containers/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share" ]; then
+    rm -rf "$HOME/Library/Group Containers/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share" ]; then
+    rm -f "$HOME/Library/Group Containers/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.goodsnooze.MacWhisper
