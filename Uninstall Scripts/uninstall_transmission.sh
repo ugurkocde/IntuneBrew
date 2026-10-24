@@ -17,6 +17,10 @@ fi
 echo "Stopping Transmission if running..."
 pkill -f "Transmission" 2>/dev/null || true
 
+# Kill application with bundle ID org.m0k.transmission if running
+echo "Stopping application with bundle ID org.m0k.transmission if running..."
+killall -9 "org.m0k.transmission" 2>/dev/null || true
+
 # Remove /Applications/Transmission.app
 echo "Removing /Applications/Transmission.app..."
 if [ -d "/Applications/Transmission.app" ]; then
