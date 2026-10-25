@@ -9,7 +9,7 @@
   "fileName": "goose_1.56.0.pkg",
   "type": "app",
   "sha": "65457b2f8cccd18bd0692dd6914c214c09d69aa00e09aa456617e2bf594dd73e",
-  "previous_version": "1.55.0",
+  "previous_version": "1.56.0",
   "category": "Developer Tools",
   "publisher": "Block, Inc.",
   "homebrew_cask": "block-goose"
