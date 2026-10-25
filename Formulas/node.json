@@ -11,7 +11,7 @@
     "brotli",
     "c-ares",
     "hdrhistogram_c",
-    "icu4c@78",
+    "icu4c@79",
     "libffi",
     "libnghttp2",
     "libuv",
