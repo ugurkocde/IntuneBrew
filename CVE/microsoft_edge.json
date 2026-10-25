@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-10-24",
+  "last_updated": "2026-10-25",
   "total_cves": 1049,
   "summary": {
     "critical": 18,
@@ -938,7 +938,7 @@
     {
       "cve_id": "CVE-2026-57989",
       "published_date": "2026-07-26",
-      "last_modified_date": "2026-08-03",
+      "last_modified_date": "2026-10-24",
       "description": "Origin validation error in Microsoft Edge (Chromium-based) allows an unauthorized attacker to disclose information over a network.",
       "base_score": 7.4,
       "severity": "HIGH",
@@ -959,7 +959,7 @@
     {
       "cve_id": "CVE-2026-57990",
       "published_date": "2026-07-26",
-      "last_modified_date": "2026-08-03",
+      "last_modified_date": "2026-10-24",
       "description": "Files or directories accessible to external parties in Microsoft Edge (Chromium-based) allows an unauthorized attacker to disclose information over a network.",
       "base_score": 7.4,
       "severity": "HIGH",
@@ -980,7 +980,7 @@
     {
       "cve_id": "CVE-2026-58596",
       "published_date": "2026-07-12",
-      "last_modified_date": "2026-07-14",
+      "last_modified_date": "2026-10-24",
       "description": "Untrusted pointer dereference in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -14021,7 +14021,7 @@
     {
       "cve_id": "CVE-2026-70339",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-10-23",
+      "last_modified_date": "2026-10-24",
       "description": "Access of resource using incompatible type ('type confusion') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -14231,7 +14231,7 @@
     {
       "cve_id": "CVE-2026-62828",
       "published_date": "2026-07-28",
-      "last_modified_date": "2026-08-05",
+      "last_modified_date": "2026-10-24",
       "description": "Improper input validation in Microsoft Edge for Android allows an unauthorized attacker to perform tampering over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -14252,7 +14252,7 @@
     {
       "cve_id": "CVE-2026-57978",
       "published_date": "2026-07-26",
-      "last_modified_date": "2026-08-03",
+      "last_modified_date": "2026-10-24",
       "description": "Origin validation error in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -14273,7 +14273,7 @@
     {
       "cve_id": "CVE-2026-57980",
       "published_date": "2026-07-17",
-      "last_modified_date": "2026-07-21",
+      "last_modified_date": "2026-10-24",
       "description": "Authentication bypass using an alternate path or channel in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform tampering over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",

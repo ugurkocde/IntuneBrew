@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Visual Studio Code",
   "app_key": "microsoft_visual_studio_code",
-  "last_updated": "2026-10-24",
+  "last_updated": "2026-10-25",
   "total_cves": 91,
   "summary": {
     "critical": 2,
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2026-54981",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-10-23",
+      "last_modified_date": "2026-10-24",
       "description": "Inclusion of functionality from untrusted control sphere in Visual Studio Code - Python extension allows an unauthorized attacker to bypass a security feature locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -245,7 +245,7 @@
     {
       "cve_id": "CVE-2026-58650",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-10-23",
+      "last_modified_date": "2026-10-24",
       "description": "Authorization bypass through user-controlled key in Visual Studio Code allows an unauthorized attacker to bypass a security feature locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2026-59113",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-10-23",
+      "last_modified_date": "2026-10-24",
       "description": "Missing authorization in Visual Studio Code allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -287,7 +287,7 @@
     {
       "cve_id": "CVE-2026-65675",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-10-23",
+      "last_modified_date": "2026-10-24",
       "description": "No cwe for this issue in Visual Studio Code CoPilot Chat Extension allows an unauthorized attacker to bypass a security feature over a network.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -308,7 +308,7 @@
     {
       "cve_id": "CVE-2026-69278",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-10-23",
+      "last_modified_date": "2026-10-24",
       "description": "Incorrect authorization in Visual Studio Code allows an unauthorized attacker to bypass a security feature locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -329,7 +329,7 @@
     {
       "cve_id": "CVE-2026-69306",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-10-23",
+      "last_modified_date": "2026-10-24",
       "description": "Not failing securely ('failing open') in Visual Studio Code allows an unauthorized attacker to bypass a security feature over a network.",
       "base_score": 8.2,
       "severity": "HIGH",
@@ -350,7 +350,7 @@
     {
       "cve_id": "CVE-2026-69320",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-10-23",
+      "last_modified_date": "2026-10-24",
       "description": "Improper neutralization of special elements used in an os command ('os command injection') in Visual Studio Code allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -371,7 +371,7 @@
     {
       "cve_id": "CVE-2026-70335",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-10-23",
+      "last_modified_date": "2026-10-24",
       "description": "Improper neutralization of special elements used in an os command ('os command injection') in GitHub Copilot and Visual Studio Code allows an unauthorized attacker to elevate privileges locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -392,7 +392,7 @@
     {
       "cve_id": "CVE-2026-70336",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-10-23",
+      "last_modified_date": "2026-10-24",
       "description": "Improper control of generation of code ('code injection') in Visual Studio Code allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -413,7 +413,7 @@
     {
       "cve_id": "CVE-2026-50520",
       "published_date": "2026-07-14",
-      "last_modified_date": "2026-07-16",
+      "last_modified_date": "2026-10-24",
       "description": "Improper neutralization of special elements used in a command ('command injection') in Visual Studio Code allows an unauthorized attacker to execute code locally.",
       "base_score": 8.4,
       "severity": "HIGH",
@@ -434,7 +434,7 @@
     {
       "cve_id": "CVE-2026-57101",
       "published_date": "2026-07-14",
-      "last_modified_date": "2026-07-16",
+      "last_modified_date": "2026-10-24",
       "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Visual Studio Code allows an unauthorized attacker to bypass a security feature locally.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -455,7 +455,7 @@
     {
       "cve_id": "CVE-2026-57102",
       "published_date": "2026-07-14",
-      "last_modified_date": "2026-07-16",
+      "last_modified_date": "2026-10-24",
       "description": "Inclusion of functionality from untrusted control sphere in Visual Studio Code allows an unauthorized attacker to bypass a security feature over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1652,7 +1652,7 @@
     {
       "cve_id": "CVE-2026-45496",
       "published_date": "2026-07-14",
-      "last_modified_date": "2026-07-16",
+      "last_modified_date": "2026-10-24",
       "description": "Improper limitation of a pathname to a restricted directory ('path traversal') in Visual Studio Code allows an unauthorized attacker to bypass a security feature locally.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1673,7 +1673,7 @@
     {
       "cve_id": "CVE-2026-47282",
       "published_date": "2026-07-14",
-      "last_modified_date": "2026-07-16",
+      "last_modified_date": "2026-10-24",
       "description": "Insufficiently protected credentials in GitHub Copilot and Visual Studio Code allows an unauthorized attacker to disclose information over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",

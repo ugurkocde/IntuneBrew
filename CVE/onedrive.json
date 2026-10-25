@@ -1,7 +1,7 @@
 {
   "app_name": "Onedrive",
   "app_key": "onedrive",
-  "last_updated": "2026-10-24",
+  "last_updated": "2026-10-25",
   "total_cves": 15,
   "summary": {
     "critical": 1,
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2026-65680",
       "published_date": "2026-08-11",
-      "last_modified_date": "2026-10-23",
+      "last_modified_date": "2026-10-24",
       "description": "Improper link resolution before file access ('link following') in Microsoft OneDrive allows an authorized attacker to elevate privileges locally.",
       "base_score": 6.7,
       "severity": "MEDIUM",

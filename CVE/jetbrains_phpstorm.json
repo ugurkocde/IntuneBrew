@@ -1,7 +1,7 @@
 {
   "app_name": "Jetbrains Phpstorm",
   "app_key": "jetbrains_phpstorm",
-  "last_updated": "2026-10-24",
+  "last_updated": "2026-10-25",
   "total_cves": 6,
   "summary": {
     "critical": 2,
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2026-64808",
       "published_date": "2026-07-23",
-      "last_modified_date": "2026-07-28",
+      "last_modified_date": "2026-10-24",
       "description": "In JetBrains PhpStorm before 2026.2 arbitrary code execution was possible before granting project trust via project tooling",
       "base_score": 8.4,
       "severity": "HIGH",
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2026-64809",
       "published_date": "2026-07-23",
-      "last_modified_date": "2026-07-28",
+      "last_modified_date": "2026-10-24",
       "description": "In JetBrains PhpStorm before 2026.2 arbitrary code execution was possible before granting project trust via the configured interpreter",
       "base_score": 8.4,
       "severity": "HIGH",
