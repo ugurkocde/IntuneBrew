@@ -13,5 +13,5 @@
   "changelog": "https://openvpn.net/connect-docs/macos-release-notes.html",
   "category": "Security",
   "publisher": "OpenVPN Technologies, Inc.",
-  "previous_version": "3.8.2"
+  "previous_version": "3.9.0"
 }

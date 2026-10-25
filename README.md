@@ -647,7 +647,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | todoist | 9.31.0 | 9.32.0 |
 | transmission | 4.1.3 | 4.1.4 |
 
-12 app updates could not be published. See [catalog sync status](catalog-sync.json).
+11 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
