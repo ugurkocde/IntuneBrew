@@ -29,6 +29,14 @@ elif [ -f "/Applications/PreForm.app" ]; then
     rm -f "/Applications/PreForm.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.formlabs.PreForm
+echo "Removing $HOME/Library/HTTPStorages/com.formlabs.PreForm..."
+if [ -d "$HOME/Library/HTTPStorages/com.formlabs.PreForm" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.formlabs.PreForm" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.formlabs.PreForm" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.formlabs.PreForm" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.formlabs.PreForm.plist
 echo "Removing $HOME/Library/Preferences/com.formlabs.PreForm.plist..."
 if [ -d "$HOME/Library/Preferences/com.formlabs.PreForm.plist" ]; then

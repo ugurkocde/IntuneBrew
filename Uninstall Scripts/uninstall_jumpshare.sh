@@ -51,6 +51,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.jumpshare.JumpshareLoginHelper"
     rm -f "$HOME/Library/Application Scripts/com.jumpshare.JumpshareLoginHelper" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jumpshare.jumpshareloginhelper.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jumpshare.jumpshareloginhelper.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jumpshare.jumpshareloginhelper.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jumpshare.jumpshareloginhelper.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jumpshare.jumpshareloginhelper.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jumpshare.jumpshareloginhelper.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.jumpshare.Jumpshare
 echo "Removing $HOME/Library/Application Support/com.jumpshare.Jumpshare..."
 if [ -d "$HOME/Library/Application Support/com.jumpshare.Jumpshare" ]; then

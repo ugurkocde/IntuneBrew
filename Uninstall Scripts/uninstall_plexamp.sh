@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Application Support/Plexamp" ]; then
     rm -f "$HOME/Library/Application Support/Plexamp" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/tv.plex.plexamp
+echo "Removing $HOME/Library/Application Support/tv.plex.plexamp..."
+if [ -d "$HOME/Library/Application Support/tv.plex.plexamp" ]; then
+    rm -rf "$HOME/Library/Application Support/tv.plex.plexamp" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/tv.plex.plexamp" ]; then
+    rm -f "$HOME/Library/Application Support/tv.plex.plexamp" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/Plexamp
 echo "Removing $HOME/Library/Caches/Plexamp..."
 if [ -d "$HOME/Library/Caches/Plexamp" ]; then
@@ -79,6 +87,14 @@ if [ -d "$HOME/Library/Saved Application State/tv.plex.plexamp.savedState" ]; th
     rm -rf "$HOME/Library/Saved Application State/tv.plex.plexamp.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/tv.plex.plexamp.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/tv.plex.plexamp.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/tv.plex.plexamp
+echo "Removing $HOME/Library/WebKit/tv.plex.plexamp..."
+if [ -d "$HOME/Library/WebKit/tv.plex.plexamp" ]; then
+    rm -rf "$HOME/Library/WebKit/tv.plex.plexamp" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/tv.plex.plexamp" ]; then
+    rm -f "$HOME/Library/WebKit/tv.plex.plexamp" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

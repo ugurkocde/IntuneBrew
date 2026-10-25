@@ -205,5 +205,13 @@ elif [ -f "$HOME/Library/Saved Application State/net.kovidgoyal.calibre.savedSta
     rm -f "$HOME/Library/Saved Application State/net.kovidgoyal.calibre.savedState" 2>/dev/null || true
 fi
 
+# Remove /Library/Caches/calibre-singleinstance-*.lock
+echo "Removing /Library/Caches/calibre-singleinstance-*.lock..."
+if [ -d "/Library/Caches/calibre-singleinstance-*.lock" ]; then
+    rm -rf "/Library/Caches/calibre-singleinstance-*.lock" 2>/dev/null || true
+elif [ -f "/Library/Caches/calibre-singleinstance-*.lock" ]; then
+    rm -f "/Library/Caches/calibre-singleinstance-*.lock" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

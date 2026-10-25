@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/Brain.fm" ]; then
     rm -f "$HOME/Library/Application Support/Brain.fm" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.brain.fm.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.brain.fm.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.brain.fm.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.brain.fm.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.brain.fm.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.brain.fm.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.electron.brain.fm
 echo "Removing $HOME/Library/Caches/com.electron.brain.fm..."
 if [ -d "$HOME/Library/Caches/com.electron.brain.fm" ]; then

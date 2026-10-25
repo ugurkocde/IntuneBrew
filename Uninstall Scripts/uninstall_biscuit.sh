@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/biscuit" ]; then
     rm -f "$HOME/Library/Application Support/biscuit" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.eatbiscult.biscult.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.eatbiscult.biscult.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.eatbiscult.biscult.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.eatbiscult.biscult.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.eatbiscult.biscult.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.eatbiscult.biscult.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/Biscuit
 echo "Removing $HOME/Library/Logs/Biscuit..."
 if [ -d "$HOME/Library/Logs/Biscuit" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Preferences/com.eatbiscuit.biscuit.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.eatbiscuit.biscuit.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.eatbiscuit.biscuit.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.eatbiscuit.biscuit.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.eatbiscult.biscult.plist
+echo "Removing $HOME/Library/Preferences/com.eatbiscult.biscult.plist..."
+if [ -d "$HOME/Library/Preferences/com.eatbiscult.biscult.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.eatbiscult.biscult.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.eatbiscult.biscult.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.eatbiscult.biscult.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.eatbiscult.biscult.savedState

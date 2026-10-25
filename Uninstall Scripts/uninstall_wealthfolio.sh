@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Caches/com.teymz.wealthfolio" ]; then
     rm -f "$HOME/Library/Caches/com.teymz.wealthfolio" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/com.teymz.wealthfolio
+echo "Removing $HOME/Library/Logs/com.teymz.wealthfolio..."
+if [ -d "$HOME/Library/Logs/com.teymz.wealthfolio" ]; then
+    rm -rf "$HOME/Library/Logs/com.teymz.wealthfolio" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/com.teymz.wealthfolio" ]; then
+    rm -f "$HOME/Library/Logs/com.teymz.wealthfolio" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/WebKit/com.teymz.wealthfolio
 echo "Removing $HOME/Library/WebKit/com.teymz.wealthfolio..."
 if [ -d "$HOME/Library/WebKit/com.teymz.wealthfolio" ]; then

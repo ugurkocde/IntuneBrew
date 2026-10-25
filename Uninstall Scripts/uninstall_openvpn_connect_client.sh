@@ -23,6 +23,12 @@ launchctl unload -w /Library/LaunchAgents/org.openvpn.client.plist 2>/dev/null |
 launchctl unload -w /Library/LaunchDaemons/org.openvpn.client.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/org.openvpn.client.plist 2>/dev/null || true
 
+# Unload service org.openvpn.client.app.ovpnuseragent
+echo "Unloading service org.openvpn.client.app.ovpnuseragent..."
+launchctl unload -w /Library/LaunchAgents/org.openvpn.client.app.ovpnuseragent.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/org.openvpn.client.app.ovpnuseragent.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/org.openvpn.client.app.ovpnuseragent.plist 2>/dev/null || true
+
 # Unload service org.openvpn.helper
 echo "Unloading service org.openvpn.helper..."
 launchctl unload -w /Library/LaunchAgents/org.openvpn.helper.plist 2>/dev/null || true

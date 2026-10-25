@@ -25,6 +25,14 @@ elif [ -f "/Applications/TIDAL.app" ]; then
     rm -f "/Applications/TIDAL.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tidal.desktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tidal.desktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tidal.desktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tidal.desktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tidal.desktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.tidal.desktop.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/TIDAL
 echo "Removing $HOME/Library/Application Support/TIDAL..."
 if [ -d "$HOME/Library/Application Support/TIDAL" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Caches/com.tidal.desktop.ShipIt" ]; then
     rm -rf "$HOME/Library/Caches/com.tidal.desktop.ShipIt" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.tidal.desktop.ShipIt" ]; then
     rm -f "$HOME/Library/Caches/com.tidal.desktop.ShipIt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.tidal.desktop
+echo "Removing $HOME/Library/HTTPStorages/com.tidal.desktop..."
+if [ -d "$HOME/Library/HTTPStorages/com.tidal.desktop" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.tidal.desktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.tidal.desktop" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.tidal.desktop" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Logs/TIDAL
