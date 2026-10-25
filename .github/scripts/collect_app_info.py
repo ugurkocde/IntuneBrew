@@ -1219,7 +1219,6 @@ pkg_in_dmg_urls = [
     "https://formulae.brew.sh/api/cask/nomachine.json",
     "https://formulae.brew.sh/api/cask/adobe-acrobat-reader.json",
     "https://formulae.brew.sh/api/cask/adobe-acrobat-pro.json",
-    "https://formulae.brew.sh/api/cask/openvpn-connect.json",
     "https://formulae.brew.sh/api/cask/chrome-remote-desktop-host.json",
     "https://formulae.brew.sh/api/cask/crashplan.json",
     "https://formulae.brew.sh/api/cask/appgate-sdp-client.json",
@@ -1266,6 +1265,7 @@ pkg_in_pkg_urls = [
 
 # PKG
 pkg_urls = [
+    "https://formulae.brew.sh/api/cask/openvpn-connect.json",
     "https://formulae.brew.sh/api/cask/filebot.json",
     "https://formulae.brew.sh/api/cask/dialpad.json",
     "https://formulae.brew.sh/api/cask/mist.json",

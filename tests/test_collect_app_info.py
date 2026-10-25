@@ -235,6 +235,57 @@ def run_collector(work_dir, cask_urls, session=None, app_urls=None):
         os.chdir(previous_dir)
 
 
+class OpenVpnPkgMigrationTests(unittest.TestCase):
+    source = "https://formulae.brew.sh/api/cask/openvpn-connect.json"
+    vendor = "https://packages.openvpn.net/connect/v3/OpenVPN_Connect_3_9_0(6050)_arm64_Installer_signed.pkg"
+    checksum = "7b8b5696b0cae8dec7b1371bf8c505b764188162437bc5cd53e622b35c74b027"
+
+    def test_openvpn_is_collected_only_as_a_direct_pkg(self):
+        self.assertIn(self.source, collect_app_info.pkg_urls)
+        for sources in [collect_app_info.app_urls, collect_app_info.homebrew_cask_urls,
+                        collect_app_info.pkg_in_dmg_urls, collect_app_info.pkg_in_pkg_urls]:
+            self.assertNotIn(self.source, sources)
+
+    def test_existing_repackaged_catalog_migrates_to_verified_vendor_pkg(self):
+        existing = {
+            "name": "OpenVPN Connect client", "version": "3.8.2",
+            "url": "https://intunebrew.blob.core.windows.net/pkg/openvpn_connect_client_3.8.2.pkg",
+            "vendor_url": "https://swupdate.openvpn.net/downloads/connect/openvpn-connect-3.8.2.6009_signed.dmg",
+            "fileName": "openvpn_connect_client_3.8.2.pkg", "type": "pkg_in_dmg",
+            "sha": "f0adffa3a3ad380d9fa2dbda4dae2592428b2b64e564e7c6f5b02278da62a817",
+            "bundleId": "org.openvpn.client.app.helper", "category": "Security",
+            "publisher": "OpenVPN Technologies, Inc.", "homebrew_cask": "openvpn-connect",
+        }
+        payload = {"token": "openvpn-connect", "name": [existing["name"]],
+                   "version": "3.9.0,6050", "url": self.vendor, "sha256": self.checksum,
+                   "desc": "OpenVPN client", "homepage": "https://openvpn.net/"}
+        session = CountingSession({self.source: cask_response(payload)})
+        with tempfile.TemporaryDirectory() as directory:
+            folder = Path(directory) / "Apps"
+            folder.mkdir()
+            path = folder / "openvpn_connect_client.json"
+            path.write_text(json.dumps(existing))
+            with run_collector(directory, [], session=session):
+                with patch.object(collect_app_info, "pkg_urls", [self.source]):
+                    collect_app_info.main()
+            result = json.loads(path.read_text())
+        self.assertEqual(session.requested, [self.source])
+        self.assertEqual(result["type"], "pkg")
+        self.assertEqual(result["url"], self.vendor)
+        self.assertEqual(result["vendor_url"], self.vendor)
+        self.assertEqual(result["sha"], self.checksum)
+        self.assertNotEqual(result["sha"], existing["sha"])
+        self.assertNotEqual(result["sha"], "0" * 64)
+        self.assertEqual(result["fileName"], self.vendor.rsplit("/", 1)[1])
+        self.assertEqual(result["version"], "3.9.0")
+        self.assertEqual(result["previous_version"], "3.8.2")
+        for key in ["bundleId", "category", "publisher", "homebrew_cask"]:
+            self.assertEqual(result[key], existing[key])
+        self.assertEqual(collect_app_info.collection_failures, [])
+        from publish_catalog import valid_package
+        self.assertTrue(valid_package(result))
+
+
 class FormulaMigrationTests(unittest.TestCase):
     formula_url = "https://formulae.brew.sh/api/formula/azure-cli.json"
     cask_url = "https://formulae.brew.sh/api/cask/azure-cli.json"
