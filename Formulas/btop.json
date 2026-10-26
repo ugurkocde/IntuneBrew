@@ -1,10 +1,11 @@
 {
   "name": "btop",
   "description": "Resource monitor. C++ version and continuation of bashtop and bpytop",
-  "version": "1.4.7",
+  "version": "1.4.8",
   "homepage": "https://github.com/aristocratos/btop",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/btop_1.4.7_arm64.pkg",
-  "fileName": "btop_1.4.7_arm64.pkg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/btop_1.4.8_arm64.pkg",
+  "fileName": "btop_1.4.8_arm64.pkg",
+  "sha": "15e560a705a5a1fdbf7277bb9aaf47061ed22277d92febad5dc25881d52ab523",
   "bundledDependencies": [],
   "binaryPath": "/usr/local/bin/btop"
 }
