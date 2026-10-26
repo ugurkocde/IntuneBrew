@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Teams",
   "app_key": "microsoft_teams",
-  "last_updated": "2026-10-25",
+  "last_updated": "2026-10-26",
   "total_cves": 31,
   "summary": {
     "critical": 3,
@@ -77,7 +77,7 @@
     {
       "cve_id": "CVE-2026-33823",
       "published_date": "2026-05-07",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Improper authorization in Microsoft Teams allows an authorized attacker to disclose information over a network.",
       "base_score": 9.6,
       "severity": "CRITICAL",

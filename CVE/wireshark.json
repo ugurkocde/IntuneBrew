@@ -1,7 +1,7 @@
 {
   "app_name": "Wireshark",
   "app_key": "wireshark",
-  "last_updated": "2026-10-25",
+  "last_updated": "2026-10-26",
   "total_cves": 795,
   "summary": {
     "critical": 1,
@@ -161,7 +161,7 @@
     {
       "cve_id": "CVE-2026-15167",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-09",
+      "last_modified_date": "2026-10-25",
       "description": "DBS Etherwatch file parser crash in Wireshark 4.6.0 to 4.6.6 and 4.4.0 to 4.4.16 allows denial of service",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -203,7 +203,7 @@
     {
       "cve_id": "CVE-2026-5405",
       "published_date": "2026-05-01",
-      "last_modified_date": "2026-07-15",
+      "last_modified_date": "2026-10-26",
       "description": "RDP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -245,7 +245,7 @@
     {
       "cve_id": "CVE-2026-5402",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-07-15",
+      "last_modified_date": "2026-10-26",
       "description": "TLS protocol dissector heap overflow in Wireshark 4.6.0 to 4.6.4 allows denial of service and possible code execution",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -5936,7 +5936,7 @@
     {
       "cve_id": "CVE-2026-15163",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-09",
+      "last_modified_date": "2026-10-25",
       "description": "Multiple protocol dissector infinite loops in Wireshark 4.6.0 to 4.6.6 and 4.4.0 to 4.4.16 allow denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -5957,7 +5957,7 @@
     {
       "cve_id": "CVE-2026-15164",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-10",
+      "last_modified_date": "2026-10-25",
       "description": "Crash in ciscodump 4.6.0 to 4.6.6 and 4.4.0 to 4.4.16 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -5978,7 +5978,7 @@
     {
       "cve_id": "CVE-2026-15165",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-10",
+      "last_modified_date": "2026-10-25",
       "description": "TLS ECH decryptor crash in Wireshark 4.6.0 to 4.6.6 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -5999,7 +5999,7 @@
     {
       "cve_id": "CVE-2026-15166",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-09",
+      "last_modified_date": "2026-10-25",
       "description": "IEEE 802.11 protocol dissector crash in Wireshark 4.6.0 to 4.6.6 and 4.4.0 to 4.4.16 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6020,7 +6020,7 @@
     {
       "cve_id": "CVE-2026-15169",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-09",
+      "last_modified_date": "2026-10-25",
       "description": "UMTS FP protocol dissector crash in Wireshark 4.6.0 to 4.6.6 and 4.4.0 to 4.4.16 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6041,7 +6041,7 @@
     {
       "cve_id": "CVE-2026-15170",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-09",
+      "last_modified_date": "2026-10-25",
       "description": "Z39.50 protocol dissector crash in Wireshark 4.6.0 to 4.6.6 and 4.4.0 to 4.4.16 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6062,7 +6062,7 @@
     {
       "cve_id": "CVE-2026-15171",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-09",
+      "last_modified_date": "2026-10-25",
       "description": "SSH protocol dissector crash in Wireshark 4.6.0 to 4.6.6 and 4.4.0 to 4.4.16 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6083,7 +6083,7 @@
     {
       "cve_id": "CVE-2026-15172",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-09",
+      "last_modified_date": "2026-10-25",
       "description": "FMP/NOTIFY protocol dissector crash in Wireshark 4.6.0 to 4.6.6 and 4.4.0 to 4.4.16 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6104,7 +6104,7 @@
     {
       "cve_id": "CVE-2026-15173",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-09",
+      "last_modified_date": "2026-10-25",
       "description": "pcapng file parser crash in Wireshark 4.6.0 to 4.6.6 allows denial of service",
       "base_score": 4.7,
       "severity": "MEDIUM",
@@ -6125,7 +6125,7 @@
     {
       "cve_id": "CVE-2026-15174",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-09",
+      "last_modified_date": "2026-10-25",
       "description": "Catapult DCT2000 protocol dissector crash in Wireshark 4.6.0 to 4.6.6 and 4.4.0 to 4.4.16 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6230,7 +6230,7 @@
     {
       "cve_id": "CVE-2026-7375",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-25",
       "description": "UDS protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6314,7 +6314,7 @@
     {
       "cve_id": "CVE-2026-5299",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "ICMPv6 PvD protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6461,7 +6461,7 @@
     {
       "cve_id": "CVE-2026-5654",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "AMR-NB codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6524,7 +6524,7 @@
     {
       "cve_id": "CVE-2026-6519",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "MBIM protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6545,7 +6545,7 @@
     {
       "cve_id": "CVE-2026-6520",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "OpenFlow v6 protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6587,7 +6587,7 @@
     {
       "cve_id": "CVE-2026-6522",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "RPKI-Router protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6629,7 +6629,7 @@
     {
       "cve_id": "CVE-2026-6524",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "MySQL protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6650,7 +6650,7 @@
     {
       "cve_id": "CVE-2026-6526",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "RTSP protocol dissector crash in Wireshark 4.6.0 to 4.6.4",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6692,7 +6692,7 @@
     {
       "cve_id": "CVE-2026-6528",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "TLS protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6734,7 +6734,7 @@
     {
       "cve_id": "CVE-2026-6530",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "DCP-ETSI protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6797,7 +6797,7 @@
     {
       "cve_id": "CVE-2026-6533",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Dissection engine LZ77 decompression crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6902,7 +6902,7 @@
     {
       "cve_id": "CVE-2026-6538",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-25",
       "description": "BEEP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6965,7 +6965,7 @@
     {
       "cve_id": "CVE-2026-6870",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-25",
       "description": "GSM RP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -15344,7 +15344,7 @@
     {
       "cve_id": "CVE-2026-15168",
       "published_date": "2026-07-08",
-      "last_modified_date": "2026-07-09",
+      "last_modified_date": "2026-10-25",
       "description": "BLF file parser in Wireshark 4.6.0 to 4.6.6 and 4.4.0 to 4.4.16 allows possible information disclosure",
       "base_score": 2.5,
       "severity": "LOW",

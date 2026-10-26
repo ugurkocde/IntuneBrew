@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Office",
   "app_key": "microsoft_office",
-  "last_updated": "2026-10-25",
+  "last_updated": "2026-10-26",
   "total_cves": 1560,
   "summary": {
     "critical": 20,
@@ -7847,7 +7847,7 @@
     {
       "cve_id": "CVE-2026-40359",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -7868,7 +7868,7 @@
     {
       "cve_id": "CVE-2026-40360",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out-of-bounds read in Microsoft Office Excel allows an unauthorized attacker to disclose information locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -8078,7 +8078,7 @@
     {
       "cve_id": "CVE-2026-42831",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -8183,7 +8183,7 @@
     {
       "cve_id": "CVE-2026-32197",
       "published_date": "2026-04-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-25",
       "description": "Use after free in Microsoft Office Excel allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
