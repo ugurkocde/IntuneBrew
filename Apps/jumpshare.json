@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "1b4b7cc5ebea56094c5b55672c072617a6b09e8566c936b902385357b5ebf19a",
   "changelog": "https://jumpshare.com/release-notes",
-  "previous_version": "3.5.4",
+  "previous_version": "3.6.0",
   "category": "Productivity",
   "publisher": "Jumpshare, Inc.",
   "homebrew_cask": "jumpshare"
