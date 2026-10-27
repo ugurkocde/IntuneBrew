@@ -1,12 +1,12 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-10-26",
-  "total_cves": 7352,
+  "last_updated": "2026-10-27",
+  "total_cves": 7362,
   "summary": {
-    "critical": 549,
-    "high": 3586,
-    "medium": 3058,
+    "critical": 550,
+    "high": 3591,
+    "medium": 3062,
     "low": 159,
     "kev_count": 77
   },
@@ -1759,6 +1759,27 @@
       "published_date": "2026-10-20",
       "last_modified_date": "2026-10-22",
       "description": "Memory corruption in CSS in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Critical)",
+      "base_score": 9.6,
+      "severity": "CRITICAL",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:C/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "156.0.8078.47",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "156.0.8078.47",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
+      "cve_id": "CVE-2026-113078",
+      "published_date": "2026-10-20",
+      "last_modified_date": "2026-10-26",
+      "description": "Improper input validation in Compositing in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code outside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 9.6,
       "severity": "CRITICAL",
       "cvss_version": "3.1",
@@ -8372,7 +8393,7 @@
     {
       "cve_id": "CVE-2026-12440",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in DigitalCredentials in Google Chrome on Windows prior to 149.0.7827.155 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -8393,7 +8414,7 @@
     {
       "cve_id": "CVE-2026-12027",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-23",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Headless in Google Chrome prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -9737,7 +9758,7 @@
     {
       "cve_id": "CVE-2026-8511",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in UI in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -9758,7 +9779,7 @@
     {
       "cve_id": "CVE-2026-8580",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Mojo in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -9779,7 +9800,7 @@
     {
       "cve_id": "CVE-2026-7908",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Fullscreen in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -9800,7 +9821,7 @@
     {
       "cve_id": "CVE-2026-7910",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Views in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -9842,7 +9863,7 @@
     {
       "cve_id": "CVE-2026-6919",
       "published_date": "2026-04-23",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in DevTools in Google Chrome prior to 147.0.7727.117 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -9863,7 +9884,7 @@
     {
       "cve_id": "CVE-2026-6920",
       "published_date": "2026-04-23",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in GPU in Google Chrome on Android prior to 147.0.7727.117 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -9884,7 +9905,7 @@
     {
       "cve_id": "CVE-2026-6296",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in ANGLE in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -9947,7 +9968,7 @@
     {
       "cve_id": "CVE-2026-5288",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in WebView in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -9968,7 +9989,7 @@
     {
       "cve_id": "CVE-2026-5289",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Navigation in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -9989,7 +10010,7 @@
     {
       "cve_id": "CVE-2026-5290",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Compositing in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 9.6,
       "severity": "CRITICAL",
@@ -14208,10 +14229,94 @@
       "product": "chrome"
     },
     {
+      "cve_id": "CVE-2026-113076",
+      "published_date": "2026-10-20",
+      "last_modified_date": "2026-10-26",
+      "description": "Use after free in Toolbar in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "156.0.8078.47",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "156.0.8078.47",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
+      "cve_id": "CVE-2026-113079",
+      "published_date": "2026-10-20",
+      "last_modified_date": "2026-10-26",
+      "description": "Use after free in SiteIsolation in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "156.0.8078.47",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "156.0.8078.47",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
+      "cve_id": "CVE-2026-113080",
+      "published_date": "2026-10-20",
+      "last_modified_date": "2026-10-26",
+      "description": "Use after free in WebAppInstalls in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "156.0.8078.47",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "156.0.8078.47",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
       "cve_id": "CVE-2026-113081",
       "published_date": "2026-10-20",
       "last_modified_date": "2026-10-22",
       "description": "Use after free in Compositing in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "156.0.8078.47",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "156.0.8078.47",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
+      "cve_id": "CVE-2026-113083",
+      "published_date": "2026-10-20",
+      "last_modified_date": "2026-10-26",
+      "description": "Memory corruption in Actor in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 8.8,
       "severity": "HIGH",
       "cvss_version": "3.1",
@@ -16476,6 +16581,27 @@
       "product": "chrome"
     },
     {
+      "cve_id": "CVE-2026-113220",
+      "published_date": "2026-10-20",
+      "last_modified_date": "2026-10-26",
+      "description": "Memory corruption in Extensions in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+      "base_score": 8.8,
+      "severity": "HIGH",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "156.0.8078.47",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "156.0.8078.47",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
       "cve_id": "CVE-2026-113221",
       "published_date": "2026-10-20",
       "last_modified_date": "2026-10-22",
@@ -18431,7 +18557,7 @@
     {
       "cve_id": "CVE-2026-113344",
       "published_date": "2026-10-20",
-      "last_modified_date": "2026-10-21",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Performance in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to execute arbitrary code inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -18439,9 +18565,9 @@
       "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:H/A:H",
       "affected_version_start": null,
       "affected_version_start_type": null,
-      "affected_version_end": "156.0.8087.47",
+      "affected_version_end": "156.0.8078.47",
       "affected_version_end_type": "excluding",
-      "fixed_version": "156.0.8087.47",
+      "fixed_version": "156.0.8078.47",
       "is_kev": false,
       "kev_date_added": null,
       "kev_due_date": null,
@@ -31598,7 +31724,7 @@
     {
       "cve_id": "CVE-2026-12437",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in WebShare in Google Chrome on Windows prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -31619,7 +31745,7 @@
     {
       "cve_id": "CVE-2026-12438",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in WebView in Google Chrome on Android prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -31640,7 +31766,7 @@
     {
       "cve_id": "CVE-2026-12439",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Digital Credentials in Google Chrome prior to 149.0.7827.155 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -31682,7 +31808,7 @@
     {
       "cve_id": "CVE-2026-12442",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Passwords in Google Chrome on Android prior to 149.0.7827.155 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -31703,7 +31829,7 @@
     {
       "cve_id": "CVE-2026-12443",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Web Authentication in Google Chrome prior to 149.0.7827.155 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -31724,7 +31850,7 @@
     {
       "cve_id": "CVE-2026-12445",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Extensions in Google Chrome prior to 149.0.7827.155 allowed an attacker who convinced a user to install a malicious extension to potentially exploit heap corruption via a crafted Chrome Extension. (Chromium security severity: High)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -31745,7 +31871,7 @@
     {
       "cve_id": "CVE-2026-12447",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in WebRTC in Google Chrome prior to 149.0.7827.155 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -31766,7 +31892,7 @@
     {
       "cve_id": "CVE-2026-12448",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in WebView in Google Chrome on Android prior to 149.0.7827.155 allowed a remote attacker to perform privilege escalation via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -31787,7 +31913,7 @@
     {
       "cve_id": "CVE-2026-12449",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Chromoting in Google Chrome on Windows prior to 149.0.7827.155 allowed a local attacker to perform OS-level privilege escalation via a malicious file. (Chromium security severity: High)",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -31808,7 +31934,7 @@
     {
       "cve_id": "CVE-2026-12451",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in DigitalCredentials in Google Chrome prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -31829,7 +31955,7 @@
     {
       "cve_id": "CVE-2026-12452",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Downloads in Google Chrome on Android prior to 149.0.7827.155 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -31850,7 +31976,7 @@
     {
       "cve_id": "CVE-2026-12454",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Race in Safe Browsing in Google Chrome on Mac prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -31871,7 +31997,7 @@
     {
       "cve_id": "CVE-2026-12455",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Tab Strip in Google Chrome prior to 149.0.7827.155 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -31892,7 +32018,7 @@
     {
       "cve_id": "CVE-2026-12462",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Media in Google Chrome prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -31913,7 +32039,7 @@
     {
       "cve_id": "CVE-2026-12464",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Browser in Google Chrome prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -31934,7 +32060,7 @@
     {
       "cve_id": "CVE-2026-12465",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Object lifecycle issue in Metrics in Google Chrome prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -31976,7 +32102,7 @@
     {
       "cve_id": "CVE-2026-12467",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Extensions in Google Chrome prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -31997,7 +32123,7 @@
     {
       "cve_id": "CVE-2026-12468",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Race in Updater in Google Chrome on Mac prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32018,7 +32144,7 @@
     {
       "cve_id": "CVE-2026-12007",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Core in Google Chrome on Windows prior to 149.0.7827.115 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -32060,7 +32186,7 @@
     {
       "cve_id": "CVE-2026-12009",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Accessibility in Google Chrome on Mac prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32081,7 +32207,7 @@
     {
       "cve_id": "CVE-2026-12010",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in GPU in Google Chrome on Android prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32102,7 +32228,7 @@
     {
       "cve_id": "CVE-2026-12011",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in WebMIDI in Google Chrome on Windows prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32123,7 +32249,7 @@
     {
       "cve_id": "CVE-2026-12012",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-23",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Network in Google Chrome prior to 149.0.7827.115 allowed an attacker in a privileged network position to potentially exploit heap corruption via malicious network traffic. (Chromium security severity: High)",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -32144,7 +32270,7 @@
     {
       "cve_id": "CVE-2026-12014",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-23",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Cast in Google Chrome prior to 149.0.7827.115 allowed an attacker on the local network segment to potentially perform a sandbox escape via malicious network traffic. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32165,7 +32291,7 @@
     {
       "cve_id": "CVE-2026-12016",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-23",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in DevTools in Google Chrome prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32207,7 +32333,7 @@
     {
       "cve_id": "CVE-2026-12019",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in Codecs in Google Chrome on Linux and ChromeOS prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32228,7 +32354,7 @@
     {
       "cve_id": "CVE-2026-12020",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Autofill in Google Chrome on Mac prior to 149.0.7827.115 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -32249,7 +32375,7 @@
     {
       "cve_id": "CVE-2026-12022",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Race in Safe Browsing in Google Chrome on Mac prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a malicious file. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32270,7 +32396,7 @@
     {
       "cve_id": "CVE-2026-12023",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in GPU in Google Chrome on Mac prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32312,7 +32438,7 @@
     {
       "cve_id": "CVE-2026-12029",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Video in Google Chrome on Windows prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32333,7 +32459,7 @@
     {
       "cve_id": "CVE-2026-12030",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds write in GPU in Google Chrome on Android prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32354,7 +32480,7 @@
     {
       "cve_id": "CVE-2026-12031",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Views in Google Chrome on Windows prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32375,7 +32501,7 @@
     {
       "cve_id": "CVE-2026-12034",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Linux Toolkit Theming in Google Chrome on Linux prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a malicious file. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -32396,7 +32522,7 @@
     {
       "cve_id": "CVE-2026-12035",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Views in Google Chrome on Windows prior to 149.0.7827.115 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -39767,7 +39893,7 @@
     {
       "cve_id": "CVE-2026-8509",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in WebML in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -39788,7 +39914,7 @@
     {
       "cve_id": "CVE-2026-8510",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in Skia in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -39809,7 +39935,7 @@
     {
       "cve_id": "CVE-2026-8512",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in FileSystem in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -39830,7 +39956,7 @@
     {
       "cve_id": "CVE-2026-8513",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Input in Google Chrome on Android prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -39851,7 +39977,7 @@
     {
       "cve_id": "CVE-2026-8514",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Aura in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -39872,7 +39998,7 @@
     {
       "cve_id": "CVE-2026-8515",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in HID in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who convinced a user to engage in specific UI gestures to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -39893,7 +40019,7 @@
     {
       "cve_id": "CVE-2026-8517",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Object lifecycle issue in WebShare in Google Chrome on Mac prior to 148.0.7778.168 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -39914,7 +40040,7 @@
     {
       "cve_id": "CVE-2026-8518",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Blink in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -39935,7 +40061,7 @@
     {
       "cve_id": "CVE-2026-8519",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in ANGLE in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -39956,7 +40082,7 @@
     {
       "cve_id": "CVE-2026-8520",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Race in Payments in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -39977,7 +40103,7 @@
     {
       "cve_id": "CVE-2026-8521",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Tab Groups in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code via malicious network traffic. (Chromium security severity: Critical)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -39998,7 +40124,7 @@
     {
       "cve_id": "CVE-2026-8522",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Downloads in Google Chrome on Mac prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40019,7 +40145,7 @@
     {
       "cve_id": "CVE-2026-8523",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Mojo in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40040,7 +40166,7 @@
     {
       "cve_id": "CVE-2026-8524",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds write in WebAudio in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40061,7 +40187,7 @@
     {
       "cve_id": "CVE-2026-8525",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in ANGLE in Google Chrome on Mac prior to 148.0.7778.168 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40082,7 +40208,7 @@
     {
       "cve_id": "CVE-2026-8526",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds write in WebRTC in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40103,7 +40229,7 @@
     {
       "cve_id": "CVE-2026-8527",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Downloads in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40145,7 +40271,7 @@
     {
       "cve_id": "CVE-2026-8530",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Network in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40166,7 +40292,7 @@
     {
       "cve_id": "CVE-2026-8531",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in WebML in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40187,7 +40313,7 @@
     {
       "cve_id": "CVE-2026-8532",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in XML in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40208,7 +40334,7 @@
     {
       "cve_id": "CVE-2026-8533",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Accessibility in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40229,7 +40355,7 @@
     {
       "cve_id": "CVE-2026-8534",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in GPU in Google Chrome on Linux and ChromeOS prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40250,7 +40376,7 @@
     {
       "cve_id": "CVE-2026-8540",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Type Confusion in V8 in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40271,7 +40397,7 @@
     {
       "cve_id": "CVE-2026-8542",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Core in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40292,7 +40418,7 @@
     {
       "cve_id": "CVE-2026-8544",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Media in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40313,7 +40439,7 @@
     {
       "cve_id": "CVE-2026-8547",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in Passwords in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to perform privilege escalation via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -40334,7 +40460,7 @@
     {
       "cve_id": "CVE-2026-8548",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds write in Media in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40355,7 +40481,7 @@
     {
       "cve_id": "CVE-2026-8549",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Media in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40376,7 +40502,7 @@
     {
       "cve_id": "CVE-2026-8551",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Downloads in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40397,7 +40523,7 @@
     {
       "cve_id": "CVE-2026-8555",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in GTK in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40418,7 +40544,7 @@
     {
       "cve_id": "CVE-2026-8557",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Accessibility in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to perform privilege escalation via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -40439,7 +40565,7 @@
     {
       "cve_id": "CVE-2026-8558",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds write in Fonts in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40460,7 +40586,7 @@
     {
       "cve_id": "CVE-2026-8569",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds write in Codecs in Google Chrome on Mac prior to 148.0.7778.168 allowed a remote attacker to potentially perform a sandbox escape via a crafted video file. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40481,7 +40607,7 @@
     {
       "cve_id": "CVE-2026-8571",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in GPU in Google Chrome on Android prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40502,7 +40628,7 @@
     {
       "cve_id": "CVE-2026-8573",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in Codecs in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker to potentially perform a sandbox escape via a crafted video file. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40523,7 +40649,7 @@
     {
       "cve_id": "CVE-2026-8574",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Core in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40544,7 +40670,7 @@
     {
       "cve_id": "CVE-2026-8575",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in UI in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40565,7 +40691,7 @@
     {
       "cve_id": "CVE-2026-8577",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in Fonts in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40607,7 +40733,7 @@
     {
       "cve_id": "CVE-2026-8585",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Media in Google Chrome on iOS prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -40628,7 +40754,7 @@
     {
       "cve_id": "CVE-2026-8587",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Extensions in Google Chrome on Mac prior to 148.0.7778.168 allowed an attacker who convinced a user to install a malicious extension to execute arbitrary code via a crafted Chrome Extension. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40649,7 +40775,7 @@
     {
       "cve_id": "CVE-2026-7896",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in Blink in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to potentially exploit heap corruption via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40670,7 +40796,7 @@
     {
       "cve_id": "CVE-2026-7897",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Mobile in Google Chrome on iOS prior to 148.0.7778.96 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -40691,7 +40817,7 @@
     {
       "cve_id": "CVE-2026-7898",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Chromoting in Google Chrome on Linux prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code via malicious network traffic. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40712,7 +40838,7 @@
     {
       "cve_id": "CVE-2026-7899",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read and write in V8 in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40733,7 +40859,7 @@
     {
       "cve_id": "CVE-2026-7900",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in ANGLE in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40754,7 +40880,7 @@
     {
       "cve_id": "CVE-2026-7901",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in ANGLE in Google Chrome on Mac prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40775,7 +40901,7 @@
     {
       "cve_id": "CVE-2026-7902",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds memory access in V8 in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40817,7 +40943,7 @@
     {
       "cve_id": "CVE-2026-7905",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Media in Google Chrome on Android prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40838,7 +40964,7 @@
     {
       "cve_id": "CVE-2026-7906",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in SVG in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40859,7 +40985,7 @@
     {
       "cve_id": "CVE-2026-7907",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in DOM in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -40880,7 +41006,7 @@
     {
       "cve_id": "CVE-2026-7911",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Aura in Google Chrome on Windows prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40901,7 +41027,7 @@
     {
       "cve_id": "CVE-2026-7913",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in DevTools in Google Chrome on Android prior to 148.0.7778.96 allowed a local attacker to perform privilege escalation via a malicious file. (Chromium security severity: High)",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -40922,7 +41048,7 @@
     {
       "cve_id": "CVE-2026-7914",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Type Confusion in Accessibility in Google Chrome on Windows prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40943,7 +41069,7 @@
     {
       "cve_id": "CVE-2026-7916",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient data validation in InterestGroups in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40964,7 +41090,7 @@
     {
       "cve_id": "CVE-2026-7917",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Fullscreen in Google Chrome on Windows prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -40985,7 +41111,7 @@
     {
       "cve_id": "CVE-2026-7918",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in GPU in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41006,7 +41132,7 @@
     {
       "cve_id": "CVE-2026-7919",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Aura in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41027,7 +41153,7 @@
     {
       "cve_id": "CVE-2026-7920",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Skia in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41048,7 +41174,7 @@
     {
       "cve_id": "CVE-2026-7921",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Passwords in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41069,7 +41195,7 @@
     {
       "cve_id": "CVE-2026-7922",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in ServiceWorker in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41090,7 +41216,7 @@
     {
       "cve_id": "CVE-2026-7923",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds write in Skia in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41174,7 +41300,7 @@
     {
       "cve_id": "CVE-2026-7928",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in WebRTC in Google Chrome on Windows prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41195,7 +41321,7 @@
     {
       "cve_id": "CVE-2026-7929",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in MediaRecording in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -41216,7 +41342,7 @@
     {
       "cve_id": "CVE-2026-7938",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in CSS in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41258,7 +41384,7 @@
     {
       "cve_id": "CVE-2026-7948",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Race in Chromoting in Google Chrome on Windows prior to 148.0.7778.96 allowed a local attacker to perform privilege escalation via a malicious file. (Chromium security severity: Medium)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -41279,7 +41405,7 @@
     {
       "cve_id": "CVE-2026-7951",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds write in WebRTC in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41300,7 +41426,7 @@
     {
       "cve_id": "CVE-2026-7956",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Navigation in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41321,7 +41447,7 @@
     {
       "cve_id": "CVE-2026-7957",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds write in Media in Google Chrome on Mac, iOS prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41342,7 +41468,7 @@
     {
       "cve_id": "CVE-2026-7963",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in ServiceWorker in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41363,7 +41489,7 @@
     {
       "cve_id": "CVE-2026-7967",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Navigation in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41384,7 +41510,7 @@
     {
       "cve_id": "CVE-2026-7970",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in TopChrome in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41405,7 +41531,7 @@
     {
       "cve_id": "CVE-2026-7973",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in Dawn in Google Chrome on Windows prior to 148.0.7778.96 allowed a remote attacker to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41426,7 +41552,7 @@
     {
       "cve_id": "CVE-2026-7974",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Blink in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41447,7 +41573,7 @@
     {
       "cve_id": "CVE-2026-7975",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in DevTools in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41468,7 +41594,7 @@
     {
       "cve_id": "CVE-2026-7976",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Views in Google Chrome prior to 148.0.7778.96 allowed an attacker who convinced a user to install a malicious extension to execute arbitrary code via a crafted Chrome Extension. (Chromium security severity: Medium)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -41489,7 +41615,7 @@
     {
       "cve_id": "CVE-2026-7978",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Companion in Google Chrome on Mac prior to 148.0.7778.96 allowed a remote attacker to perform OS-level privilege escalation via malicious network traffic. (Chromium security severity: Medium)",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -41510,7 +41636,7 @@
     {
       "cve_id": "CVE-2026-7980",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in WebAudio in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41531,7 +41657,7 @@
     {
       "cve_id": "CVE-2026-7981",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in Codecs in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to obtain potentially sensitive information from process memory via a malicious file. (Chromium security severity: Medium)",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -41552,7 +41678,7 @@
     {
       "cve_id": "CVE-2026-7984",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in ReadingMode in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41573,7 +41699,7 @@
     {
       "cve_id": "CVE-2026-7985",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in GPU in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41594,7 +41720,7 @@
     {
       "cve_id": "CVE-2026-7987",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in WebRTC in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41615,7 +41741,7 @@
     {
       "cve_id": "CVE-2026-7988",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Type Confusion in WebRTC in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41636,7 +41762,7 @@
     {
       "cve_id": "CVE-2026-7990",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Updater in Google Chrome on Windows prior to 148.0.7778.96 allowed a local attacker to perform OS-level privilege escalation via a malicious file. (Chromium security severity: Medium)",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -41657,7 +41783,7 @@
     {
       "cve_id": "CVE-2026-7991",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in UI in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41678,7 +41804,7 @@
     {
       "cve_id": "CVE-2026-7992",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in UI in Google Chrome on Linux, ChromeOS prior to 148.0.7778.96 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41699,7 +41825,7 @@
     {
       "cve_id": "CVE-2026-7994",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Chromoting in Google Chrome on Windows prior to 148.0.7778.96 allowed a local attacker to perform OS-level privilege escalation via a malicious file. (Chromium security severity: Medium)",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -41720,7 +41846,7 @@
     {
       "cve_id": "CVE-2026-7995",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in AdFilter in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41741,7 +41867,7 @@
     {
       "cve_id": "CVE-2026-7997",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Updater in Google Chrome on Mac prior to 148.0.7778.96 allowed a local attacker to perform OS-level privilege escalation via a malicious file. (Chromium security severity: Low)",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -41762,7 +41888,7 @@
     {
       "cve_id": "CVE-2026-8000",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in ChromeDriver in Google Chrome on Windows prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -41783,7 +41909,7 @@
     {
       "cve_id": "CVE-2026-8001",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use After Free in Printing in Google Chrome on Linux, Mac, ChromeOS prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -41804,7 +41930,7 @@
     {
       "cve_id": "CVE-2026-8002",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Audio in Google Chrome on Mac prior to 148.0.7778.96 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42434,7 +42560,7 @@
     {
       "cve_id": "CVE-2026-6921",
       "published_date": "2026-04-23",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Race in GPU in Google Chrome on Windows prior to 147.0.7727.117 allowed a remote attacker to potentially perform a sandbox escape via a crafted video file. (Chromium security severity: Medium)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -42455,7 +42581,7 @@
     {
       "cve_id": "CVE-2026-6297",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Proxy in Google Chrome prior to 147.0.7727.101 allowed an attacker in a privileged network position to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -42518,7 +42644,7 @@
     {
       "cve_id": "CVE-2026-6301",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Type Confusion in Turbofan in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42539,7 +42665,7 @@
     {
       "cve_id": "CVE-2026-6302",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Video in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42560,7 +42686,7 @@
     {
       "cve_id": "CVE-2026-6303",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42602,7 +42728,7 @@
     {
       "cve_id": "CVE-2026-6305",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in PDFium in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted PDF file. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42623,7 +42749,7 @@
     {
       "cve_id": "CVE-2026-6306",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in PDFium in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted PDF file. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42665,7 +42791,7 @@
     {
       "cve_id": "CVE-2026-6308",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in Media in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -42686,7 +42812,7 @@
     {
       "cve_id": "CVE-2026-6309",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Viz in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -42728,7 +42854,7 @@
     {
       "cve_id": "CVE-2026-6311",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Uninitialized Use in Accessibility in Google Chrome on Windows prior to 147.0.7727.101 allowed a remote attacker who had compromised the renderer process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -42749,7 +42875,7 @@
     {
       "cve_id": "CVE-2026-6314",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds write in GPU in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who had compromised the GPU process to potentially perform a sandbox escape via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -42770,7 +42896,7 @@
     {
       "cve_id": "CVE-2026-6315",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Permissions in Google Chrome on Android prior to 147.0.7727.101 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42791,7 +42917,7 @@
     {
       "cve_id": "CVE-2026-6316",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Forms in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42812,7 +42938,7 @@
     {
       "cve_id": "CVE-2026-6317",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Cast in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42833,7 +42959,7 @@
     {
       "cve_id": "CVE-2026-6318",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Codecs in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42854,7 +42980,7 @@
     {
       "cve_id": "CVE-2026-6319",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Payments in Google Chrome on Android prior to 147.0.7727.101 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -42875,7 +43001,7 @@
     {
       "cve_id": "CVE-2026-6358",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in XR in Google Chrome on Android prior to 147.0.7727.101 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42896,7 +43022,7 @@
     {
       "cve_id": "CVE-2026-6359",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Video in Google Chrome on Windows prior to 147.0.7727.101 allowed a remote attacker who had compromised the renderer process to perform out of bounds memory access via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -42938,7 +43064,7 @@
     {
       "cve_id": "CVE-2026-6361",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in PDFium in Google Chrome on Windows prior to 147.0.7727.101 allowed a remote attacker who convinced a user to engage in specific UI gestures to execute arbitrary code inside a sandbox via a crafted PDF file. (Chromium security severity: High)",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -42959,7 +43085,7 @@
     {
       "cve_id": "CVE-2026-6363",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Type Confusion in V8 in Google Chrome prior to 147.0.7727.101 allowed a remote attacker to potentially perform out of bounds memory access via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -43505,7 +43631,7 @@
     {
       "cve_id": "CVE-2026-5272",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in GPU in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -43526,7 +43652,7 @@
     {
       "cve_id": "CVE-2026-5274",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in Codecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -43547,7 +43673,7 @@
     {
       "cve_id": "CVE-2026-5275",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in ANGLE in Google Chrome on Mac prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -43568,7 +43694,7 @@
     {
       "cve_id": "CVE-2026-5277",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in ANGLE in Google Chrome on Windows prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -43589,7 +43715,7 @@
     {
       "cve_id": "CVE-2026-5278",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Web MIDI in Google Chrome on Android prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -43610,7 +43736,7 @@
     {
       "cve_id": "CVE-2026-5279",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Object corruption in V8 in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -43631,7 +43757,7 @@
     {
       "cve_id": "CVE-2026-5280",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -43652,7 +43778,7 @@
     {
       "cve_id": "CVE-2026-5282",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.1,
       "severity": "HIGH",
@@ -43673,7 +43799,7 @@
     {
       "cve_id": "CVE-2026-5284",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker who had compromised the renderer process to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 7.5,
       "severity": "HIGH",
@@ -43694,7 +43820,7 @@
     {
       "cve_id": "CVE-2026-5285",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -43715,7 +43841,7 @@
     {
       "cve_id": "CVE-2026-5286",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Dawn in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -43736,7 +43862,7 @@
     {
       "cve_id": "CVE-2026-5287",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in PDF in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted PDF file. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -43757,7 +43883,7 @@
     {
       "cve_id": "CVE-2026-5292",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in WebCodecs in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -45248,7 +45374,7 @@
     {
       "cve_id": "CVE-2026-0628",
       "published_date": "2026-01-07",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in WebView tag in Google Chrome prior to 143.0.7499.192 allowed an attacker who convinced a user to install a malicious extension to inject scripts or HTML into a privileged page via a crafted Chrome Extension. (Chromium security severity: High)",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -87225,6 +87351,48 @@
       "product": "chrome"
     },
     {
+      "cve_id": "CVE-2026-113077",
+      "published_date": "2026-10-20",
+      "last_modified_date": "2026-10-26",
+      "description": "Memory corruption in Core in Google Chrome on on Mac prior to 156.0.8078.47 allowed a remote attacker to potentially read memory inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+      "base_score": 6.5,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "156.0.8078.47",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "156.0.8078.47",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
+      "cve_id": "CVE-2026-113082",
+      "published_date": "2026-10-20",
+      "last_modified_date": "2026-10-26",
+      "description": "Memory corruption in ANGLE in Google Chrome on on Windows prior to 156.0.8078.47 allowed a remote attacker to potentially read memory inside the sandbox via a crafted HTML page. (Chromium security severity: High)",
+      "base_score": 6.5,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "156.0.8078.47",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "156.0.8078.47",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
       "cve_id": "CVE-2026-113098",
       "published_date": "2026-10-20",
       "last_modified_date": "2026-10-21",
@@ -87519,10 +87687,52 @@
       "product": "chrome"
     },
     {
+      "cve_id": "CVE-2026-113209",
+      "published_date": "2026-10-20",
+      "last_modified_date": "2026-10-26",
+      "description": "Memory corruption in Navigation in Google Chrome on on iOS prior to 156.0.8078.47 allowed a remote attacker to potentially read memory inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
+      "base_score": 6.5,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "156.0.8078.47",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "156.0.8078.47",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
       "cve_id": "CVE-2026-113223",
       "published_date": "2026-10-20",
       "last_modified_date": "2026-10-22",
       "description": "Memory corruption in DevTools in Google Chrome prior to 156.0.8078.47 allowed a remote attacker to potentially read memory inside the sandbox via a crafted HTML page. (Chromium security severity: Low)",
+      "base_score": 6.5,
+      "severity": "MEDIUM",
+      "cvss_version": "3.1",
+      "cvss_vector": "CVSS:3.1/AV:N/AC:L/PR:N/UI:R/S:U/C:H/I:N/A:N",
+      "affected_version_start": null,
+      "affected_version_start_type": null,
+      "affected_version_end": "156.0.8078.47",
+      "affected_version_end_type": "excluding",
+      "fixed_version": "156.0.8078.47",
+      "is_kev": false,
+      "kev_date_added": null,
+      "kev_due_date": null,
+      "kev_ransomware_use": null,
+      "vendor": "google",
+      "product": "chrome"
+    },
+    {
+      "cve_id": "CVE-2026-113224",
+      "published_date": "2026-10-20",
+      "last_modified_date": "2026-10-26",
+      "description": "Memory corruption in WebAppInstalls in Google Chrome on on Android prior to 156.0.8078.47 allowed a remote attacker to potentially read memory inside the sandbox via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 6.5,
       "severity": "MEDIUM",
       "cvss_version": "3.1",
@@ -109676,7 +109886,7 @@
     {
       "cve_id": "CVE-2026-12444",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in Chromoting in Google Chrome on Windows prior to 149.0.7827.155 allowed a local attacker to obtain potentially sensitive information from process memory via a malicious file. (Chromium security severity: High)",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -109697,7 +109907,7 @@
     {
       "cve_id": "CVE-2026-12446",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Passwords in Google Chrome prior to 149.0.7827.155 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -109718,7 +109928,7 @@
     {
       "cve_id": "CVE-2026-12450",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Media in Google Chrome prior to 149.0.7827.155 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -109739,7 +109949,7 @@
     {
       "cve_id": "CVE-2026-12453",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Input in Google Chrome prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to bypass same origin policy via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -109760,7 +109970,7 @@
     {
       "cve_id": "CVE-2026-12456",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Extensions in Google Chrome prior to 149.0.7827.155 allowed an attacker who convinced a user to install a malicious extension to bypass same origin policy via a crafted Chrome Extension. (Chromium security severity: High)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -109781,7 +109991,7 @@
     {
       "cve_id": "CVE-2026-12457",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Extensions in Google Chrome prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -109802,7 +110012,7 @@
     {
       "cve_id": "CVE-2026-12459",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Serial in Google Chrome prior to 149.0.7827.155 allowed a remote attacker to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -109823,7 +110033,7 @@
     {
       "cve_id": "CVE-2026-12460",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in File System Access in Google Chrome prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted PDF file. (Chromium security severity: High)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -109844,7 +110054,7 @@
     {
       "cve_id": "CVE-2026-12461",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in WebRTC in Google Chrome on Windows prior to 149.0.7827.155 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -109865,7 +110075,7 @@
     {
       "cve_id": "CVE-2026-12463",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Views in Google Chrome on Linux prior to 149.0.7827.155 allowed a remote attacker who had compromised the renderer process to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.7,
       "severity": "MEDIUM",
@@ -109886,7 +110096,7 @@
     {
       "cve_id": "CVE-2026-12469",
       "published_date": "2026-06-17",
-      "last_modified_date": "2026-06-18",
+      "last_modified_date": "2026-10-26",
       "description": "Uninitialized Use in GPU in Google Chrome on Android prior to 149.0.7827.155 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -109907,7 +110117,7 @@
     {
       "cve_id": "CVE-2026-12015",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-23",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Autofill in Google Chrome prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -109928,7 +110138,7 @@
     {
       "cve_id": "CVE-2026-12024",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-23",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in DevTools in Google Chrome prior to 149.0.7827.115 allowed a remote attacker to bypass same origin policy via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -109949,7 +110159,7 @@
     {
       "cve_id": "CVE-2026-12025",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Network in Google Chrome prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -109991,7 +110201,7 @@
     {
       "cve_id": "CVE-2026-12033",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in VideoCapture in Google Chrome prior to 149.0.7827.115 allowed a remote attacker who had compromised the GPU process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -110012,7 +110222,7 @@
     {
       "cve_id": "CVE-2026-45173",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-22",
+      "last_modified_date": "2026-10-26",
       "description": "Idira Identity Browser Extension (Chrome, Firefox, and Edge builds) versions prior to 26.8.1 exhibit an origin validation flaw within its internal web-page verification routines. If an authenticated user navigates to a specially crafted webpage, this interaction could potentially allow a remote attacker to trigger unauthorized application interaction or execution parameters within the context of that authenticated browser session. CyberArk Security Bulletin: CA26-21",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -115094,7 +115304,7 @@
     {
       "cve_id": "CVE-2026-8516",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in DataTransfer in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who convinced a user to engage in specific UI gestures to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Critical)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -115115,7 +115325,7 @@
     {
       "cve_id": "CVE-2026-8528",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in SiteIsolation in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to bypass Site Isolation via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115136,7 +115346,7 @@
     {
       "cve_id": "CVE-2026-8535",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in Media in Google Chrome on Linux and ChromeOS prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted JPEG file. (Chromium security severity: High)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -115157,7 +115367,7 @@
     {
       "cve_id": "CVE-2026-8537",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in ViewTransitions in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115178,7 +115388,7 @@
     {
       "cve_id": "CVE-2026-8538",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in GPU in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to perform a denial of service via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -115199,7 +115409,7 @@
     {
       "cve_id": "CVE-2026-8539",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Script injection in SanitizerAPI in Google Chrome on Android prior to 148.0.7778.168 allowed a remote attacker to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -115220,7 +115430,7 @@
     {
       "cve_id": "CVE-2026-8541",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in UI in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -115241,7 +115451,7 @@
     {
       "cve_id": "CVE-2026-8543",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in FileSystem in Google Chrome on Mac prior to 148.0.7778.168 allowed a remote attacker who convinced a user to engage in specific UI gestures to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -115262,7 +115472,7 @@
     {
       "cve_id": "CVE-2026-8546",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in GPU in Google Chrome on Mac and Windows prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -115283,7 +115493,7 @@
     {
       "cve_id": "CVE-2026-8550",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in Google Lens in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -115304,7 +115514,7 @@
     {
       "cve_id": "CVE-2026-8552",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in GPU in Google Chrome on Android prior to 148.0.7778.168 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115346,7 +115556,7 @@
     {
       "cve_id": "CVE-2026-8560",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Heap buffer overflow in SwiftShader in Google Chrome on Mac and iOS prior to 148.0.7778.168 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115367,7 +115577,7 @@
     {
       "cve_id": "CVE-2026-8561",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Incorrect security UI in Fullscreen in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -115388,7 +115598,7 @@
     {
       "cve_id": "CVE-2026-8562",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Side-channel information leakage in Navigation in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115430,7 +115640,7 @@
     {
       "cve_id": "CVE-2026-8564",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Incorrect security UI in Downloads in Google Chrome on Android and Mac prior to 148.0.7778.168 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -115493,7 +115703,7 @@
     {
       "cve_id": "CVE-2026-8567",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in ANGLE in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115535,7 +115745,7 @@
     {
       "cve_id": "CVE-2026-8576",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in CORS in Google Chrome on Linux and ChromeOS prior to 148.0.7778.168 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115556,7 +115766,7 @@
     {
       "cve_id": "CVE-2026-8582",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Object lifecycle issue in Dawn in Google Chrome prior to 148.0.7778.168 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -115577,7 +115787,7 @@
     {
       "cve_id": "CVE-2026-8583",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in WebXR in Google Chrome on Android prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -115619,7 +115829,7 @@
     {
       "cve_id": "CVE-2026-8586",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Chromoting in Google Chrome prior to 148.0.7778.168 allowed a local attacker to bypass discretionary access control via a malicious file. (Chromium security severity: Medium)",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -115640,7 +115850,7 @@
     {
       "cve_id": "CVE-2026-7904",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in Fonts in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to perform an out of bounds memory read via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115661,7 +115871,7 @@
     {
       "cve_id": "CVE-2026-7912",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in GPU in Google Chrome on Android prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -115682,7 +115892,7 @@
     {
       "cve_id": "CVE-2026-7915",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient data validation in DevTools in Google Chrome on Android prior to 148.0.7778.96 allowed a remote attacker to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115703,7 +115913,7 @@
     {
       "cve_id": "CVE-2026-7924",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Uninitialized Use in Dawn in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -115724,7 +115934,7 @@
     {
       "cve_id": "CVE-2026-7931",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in iOS in Google Chrome on iOS prior to 148.0.7778.96 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -115766,7 +115976,7 @@
     {
       "cve_id": "CVE-2026-7933",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in WebCodecs in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to perform an out of bounds memory read via a crafted video file. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115787,7 +115997,7 @@
     {
       "cve_id": "CVE-2026-7934",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Popup Blocker in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -115808,7 +116018,7 @@
     {
       "cve_id": "CVE-2026-7935",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Speech in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -115850,7 +116060,7 @@
     {
       "cve_id": "CVE-2026-7941",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Mobile in Google Chrome on Android prior to 148.0.7778.96 allowed a local attacker to inject arbitrary scripts or HTML (UXSS) via a crafted Chrome Extension. (Chromium security severity: Medium)",
       "base_score": 4.4,
       "severity": "MEDIUM",
@@ -115871,7 +116081,7 @@
     {
       "cve_id": "CVE-2026-7942",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in ANGLE in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115913,7 +116123,7 @@
     {
       "cve_id": "CVE-2026-7946",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in WebUI in Google Chrome on Linux, Mac, Windows, ChromeOS prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -115934,7 +116144,7 @@
     {
       "cve_id": "CVE-2026-7947",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Network in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to perform UI spoofing via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -115976,7 +116186,7 @@
     {
       "cve_id": "CVE-2026-7952",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in Extensions in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass discretionary access control via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -115997,7 +116207,7 @@
     {
       "cve_id": "CVE-2026-7953",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Omnibox in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to inject arbitrary scripts or HTML (UXSS) via malicious network traffic. (Chromium security severity: Medium)",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -116018,7 +116228,7 @@
     {
       "cve_id": "CVE-2026-7955",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Uninitialized Use in GPU in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -116039,7 +116249,7 @@
     {
       "cve_id": "CVE-2026-7958",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in ServiceWorker in Google Chrome prior to 148.0.7778.96 allowed an attacker who convinced a user to install a malicious extension to inject arbitrary scripts or HTML (UXSS) via a crafted Chrome Extension. (Chromium security severity: Medium)",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -116060,7 +116270,7 @@
     {
       "cve_id": "CVE-2026-7960",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Race in Speech in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -116081,7 +116291,7 @@
     {
       "cve_id": "CVE-2026-7961",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Permissions in Google Chrome prior to 148.0.7778.96 allowed an attacker on the local network segment to leak cross-origin data via malicious network traffic. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -116123,7 +116333,7 @@
     {
       "cve_id": "CVE-2026-7964",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in FileSystem in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to perform arbitrary read/write via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -116144,7 +116354,7 @@
     {
       "cve_id": "CVE-2026-7969",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Integer overflow in Network in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass same origin policy via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -116165,7 +116375,7 @@
     {
       "cve_id": "CVE-2026-7971",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in ORB in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -116186,7 +116396,7 @@
     {
       "cve_id": "CVE-2026-7972",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Uninitialized Use in GPU in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -116207,7 +116417,7 @@
     {
       "cve_id": "CVE-2026-7977",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Canvas in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to bypass same origin policy via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -116228,7 +116438,7 @@
     {
       "cve_id": "CVE-2026-7979",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Media in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -116249,7 +116459,7 @@
     {
       "cve_id": "CVE-2026-7982",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Uninitialized Use in WebCodecs in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -116270,7 +116480,7 @@
     {
       "cve_id": "CVE-2026-7983",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in Dawn in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -116291,7 +116501,7 @@
     {
       "cve_id": "CVE-2026-7986",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in Autofill in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -116333,7 +116543,7 @@
     {
       "cve_id": "CVE-2026-7993",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Payments in Google Chrome on Android prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to spoof the contents of the Omnibox (URL bar) via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -116375,7 +116585,7 @@
     {
       "cve_id": "CVE-2026-7998",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Dialog in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -116396,7 +116606,7 @@
     {
       "cve_id": "CVE-2026-7999",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in V8 in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -116417,7 +116627,7 @@
     {
       "cve_id": "CVE-2026-8003",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in TabGroups in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to perform UI spoofing via malicious network traffic. (Chromium security severity: Low)",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -116438,7 +116648,7 @@
     {
       "cve_id": "CVE-2026-8004",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in DevTools in Google Chrome prior to 148.0.7778.96 allowed an attacker who convinced a user to install a malicious extension to leak cross-origin data via a crafted Chrome Extension. (Chromium security severity: Low)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -116459,7 +116669,7 @@
     {
       "cve_id": "CVE-2026-8005",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Cast in Google Chrome prior to 148.0.7778.96 allowed an attacker on the local network segment to bypass same origin policy via malicious network traffic. (Chromium security severity: Low)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -116480,7 +116690,7 @@
     {
       "cve_id": "CVE-2026-8006",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in DevTools in Google Chrome prior to 148.0.7778.96 allowed an attacker who convinced a user to install a malicious extension to perform UI spoofing via a crafted Chrome Extension. (Chromium security severity: Low)",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -116501,7 +116711,7 @@
     {
       "cve_id": "CVE-2026-8008",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in DevTools in Google Chrome prior to 148.0.7778.96 allowed an attacker who convinced a user to install a malicious extension to perform UI spoofing via a crafted Chrome Extension. (Chromium security severity: Low)",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -116522,7 +116732,7 @@
     {
       "cve_id": "CVE-2026-8009",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Cast in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass navigation restrictions via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -116543,7 +116753,7 @@
     {
       "cve_id": "CVE-2026-8010",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in SiteIsolation in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -116564,7 +116774,7 @@
     {
       "cve_id": "CVE-2026-8011",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in Search in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -116585,7 +116795,7 @@
     {
       "cve_id": "CVE-2026-8012",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in MHTML in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -116606,7 +116816,7 @@
     {
       "cve_id": "CVE-2026-8013",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in FedCM in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -116648,7 +116858,7 @@
     {
       "cve_id": "CVE-2026-8015",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Media in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to perform UI spoofing via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -116690,7 +116900,7 @@
     {
       "cve_id": "CVE-2026-8020",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Uninitialized Use in GPU in Google Chrome on Android prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 5.3,
       "severity": "MEDIUM",
@@ -116711,7 +116921,7 @@
     {
       "cve_id": "CVE-2026-8021",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Script injection in UI in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who convinced a user to engage in specific UI gestures to inject arbitrary scripts or HTML (UXSS) via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 4.2,
       "severity": "MEDIUM",
@@ -117488,7 +117698,7 @@
     {
       "cve_id": "CVE-2026-5273",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in CSS in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to execute arbitrary code inside a sandbox via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 6.3,
       "severity": "MEDIUM",
@@ -117509,7 +117719,7 @@
     {
       "cve_id": "CVE-2026-5276",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in WebUSB in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -117530,7 +117740,7 @@
     {
       "cve_id": "CVE-2026-5283",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in ANGLE in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -117551,7 +117761,7 @@
     {
       "cve_id": "CVE-2026-5291",
       "published_date": "2026-04-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in WebGL in Google Chrome prior to 146.0.7680.178 allowed a remote attacker to obtain potentially sensitive information from process memory via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -153209,7 +153419,7 @@
     {
       "cve_id": "CVE-2026-12032",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Passwords in Google Chrome on Android prior to 149.0.7827.115 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153524,7 +153734,7 @@
     {
       "cve_id": "CVE-2026-8536",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in ReadingMode in Google Chrome on Mac prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to bypass site Isolation via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153545,7 +153755,7 @@
     {
       "cve_id": "CVE-2026-8545",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Object corruption in Compositing in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153566,7 +153776,7 @@
     {
       "cve_id": "CVE-2026-8553",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Use after free in GPU in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153587,7 +153797,7 @@
     {
       "cve_id": "CVE-2026-8554",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Type Confusion in ANGLE in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to perform an out of bounds memory write via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153608,7 +153818,7 @@
     {
       "cve_id": "CVE-2026-8556",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in ANGLE in Google Chrome on Windows prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153650,7 +153860,7 @@
     {
       "cve_id": "CVE-2026-8578",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in GPU in Google Chrome on Linux prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153671,7 +153881,7 @@
     {
       "cve_id": "CVE-2026-8579",
       "published_date": "2026-05-14",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Skia in Google Chrome prior to 148.0.7778.168 allowed a remote attacker who had compromised the renderer process to perform an out of bounds memory write via a crafted print file. (Chromium security severity: Medium)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153692,7 +153902,7 @@
     {
       "cve_id": "CVE-2026-7909",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in ServiceWorker in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153734,7 +153944,7 @@
     {
       "cve_id": "CVE-2026-7944",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in Persistent Cache in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153755,7 +153965,7 @@
     {
       "cve_id": "CVE-2026-7945",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in COOP in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153776,7 +153986,7 @@
     {
       "cve_id": "CVE-2026-7949",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Out of bounds read in Skia in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted Chrome Extension. (Chromium security severity: Medium)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153818,7 +154028,7 @@
     {
       "cve_id": "CVE-2026-7959",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in Navigation in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153839,7 +154049,7 @@
     {
       "cve_id": "CVE-2026-7965",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in DevTools in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153860,7 +154070,7 @@
     {
       "cve_id": "CVE-2026-7966",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient validation of untrusted input in SiteIsolation in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who had compromised the renderer process to bypass site isolation via a crafted HTML page. (Chromium security severity: Medium)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153902,7 +154112,7 @@
     {
       "cve_id": "CVE-2026-8017",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Side-channel information leakage in Media in Google Chrome prior to 148.0.7778.96 allowed a remote attacker to leak cross-origin data via a crafted HTML page. (Chromium security severity: Low)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153923,7 +154133,7 @@
     {
       "cve_id": "CVE-2026-8022",
       "published_date": "2026-05-06",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Inappropriate implementation in MHTML in Google Chrome prior to 148.0.7778.96 allowed a remote attacker who convinced a user to engage in specific UI gestures to leak cross-origin data via a crafted MHTML page. (Chromium security severity: Low)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -153986,7 +154196,7 @@
     {
       "cve_id": "CVE-2026-6312",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in Passwords in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 3.1,
       "severity": "LOW",
@@ -154007,7 +154217,7 @@
     {
       "cve_id": "CVE-2026-6313",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Insufficient policy enforcement in CORS in Google Chrome prior to 147.0.7727.101 allowed a remote attacker who had compromised the renderer process to leak cross-origin data via a crafted HTML page. (Chromium security severity: High)",
       "base_score": 3.1,
       "severity": "LOW",

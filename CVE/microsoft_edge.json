@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-27",
   "total_cves": 1049,
   "summary": {
     "critical": 18,
@@ -14546,7 +14546,7 @@
     {
       "cve_id": "CVE-2026-45173",
       "published_date": "2026-06-11",
-      "last_modified_date": "2026-06-22",
+      "last_modified_date": "2026-10-26",
       "description": "Idira Identity Browser Extension (Chrome, Firefox, and Edge builds) versions prior to 26.8.1 exhibit an origin validation flaw within its internal web-page verification routines. If an authenticated user navigates to a specially crafted webpage, this interaction could potentially allow a remote attacker to trigger unauthorized application interaction or execution parameters within the context of that authenticated browser session. CyberArk Security Bulletin: CA26-21",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -14630,7 +14630,7 @@
     {
       "cve_id": "CVE-2026-42838",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Improper neutralization of special elements in output used by a downstream component ('injection') in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -14651,7 +14651,7 @@
     {
       "cve_id": "CVE-2026-42891",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "User interface (ui) misrepresentation of critical information in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -14672,7 +14672,7 @@
     {
       "cve_id": "CVE-2026-35429",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "User interface (ui) misrepresentation of critical information in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -14714,7 +14714,7 @@
     {
       "cve_id": "CVE-2026-33119",
       "published_date": "2026-04-10",
-      "last_modified_date": "2026-10-14",
+      "last_modified_date": "2026-10-26",
       "description": "User interface (ui) misrepresentation of critical information in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",

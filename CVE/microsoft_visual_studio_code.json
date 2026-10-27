@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Visual Studio Code",
   "app_key": "microsoft_visual_studio_code",
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-27",
   "total_cves": 91,
   "summary": {
     "critical": 2,
@@ -560,7 +560,7 @@
     {
       "cve_id": "CVE-2026-41109",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-08-10",
+      "last_modified_date": "2026-10-26",
       "description": "Improper neutralization of special elements in output used by a downstream component ('injection') in GitHub Copilot and Visual Studio allows an unauthorized attacker to bypass a security feature over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -581,7 +581,7 @@
     {
       "cve_id": "CVE-2026-41611",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Improper neutralization of script-related html tags in a web page (basic xss) in Visual Studio Code allows an unauthorized attacker to execute code locally.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -602,7 +602,7 @@
     {
       "cve_id": "CVE-2026-41613",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Session fixation in Visual Studio Code allows an unauthorized attacker to elevate privileges over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
@@ -1757,7 +1757,7 @@
     {
       "cve_id": "CVE-2026-41610",
       "published_date": "2026-05-12",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Improper neutralization of input during web page generation ('cross-site scripting') in Visual Studio Code allows an unauthorized attacker to bypass a security feature locally.",
       "base_score": 6.3,
       "severity": "MEDIUM",

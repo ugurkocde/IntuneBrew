@@ -1,7 +1,7 @@
 {
   "app_name": "Whatsapp",
   "app_key": "whatsapp",
-  "last_updated": "2026-10-26",
+  "last_updated": "2026-10-27",
   "total_cves": 44,
   "summary": {
     "critical": 15,
@@ -623,7 +623,7 @@
     {
       "cve_id": "CVE-2026-23863",
       "published_date": "2026-05-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "An attachment spoofing issue in WhatsApp for Windows prior to v2.3000.1032164386.258709 could have allowed maliciously formatted documents with embedded NUL bytes in the filename to be shown in the application as one type of file but run as an executable when opened. We have not seen evidence of exploitation in the wild.",
       "base_score": 6.5,
       "severity": "MEDIUM",
@@ -644,7 +644,7 @@
     {
       "cve_id": "CVE-2026-23866",
       "published_date": "2026-05-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-10-26",
       "description": "Incomplete validation of AI rich response messages for Instagram Reels in WhatsApp for iOS v2.25.8.0 to v2.26.15.72 and WhatsApp for Android v2.25.8.0 to v2.26.7.10 could have allowed a user to trigger processing of media content from an arbitrary URL on another user\u2019s device, including triggering OS-controlled custom URL scheme handlers. We have not seen evidence of exploitation in the wild.",
       "base_score": 4.3,
       "severity": "MEDIUM",
