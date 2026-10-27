@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-26T01:05:00.223466Z",
-  "lastFullSyncAt": "2026-10-26T01:05:00.223466Z",
+  "lastPublishedAt": "2026-10-27T01:18:37.928314Z",
+  "lastFullSyncAt": "2026-10-27T01:18:37.928314Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -26,11 +26,23 @@
       "stage": "collection"
     },
     {
+      "app": "megasync",
+      "stage": "collection"
+    },
+    {
       "app": "mozilla_firefox_developer_edition",
       "stage": "collection"
     },
     {
+      "app": "musescore",
+      "stage": "collection"
+    },
+    {
       "app": "numi",
+      "stage": "collection"
+    },
+    {
+      "app": "opera_gx",
       "stage": "collection"
     },
     {
@@ -39,6 +51,10 @@
     },
     {
       "app": "shapr3d",
+      "stage": "collection"
+    },
+    {
+      "app": "tunnelblick",
       "stage": "collection"
     },
     {
@@ -51,5 +67,5 @@
     }
   ],
   "appCount": 1152,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/40250496895"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/40427724853"
 }
