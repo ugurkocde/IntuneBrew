@@ -17,6 +17,10 @@ fi
 echo "Stopping blip if running..."
 pkill -f "blip" 2>/dev/null || true
 
+# Kill application with bundle ID net.blip.macos if running
+echo "Stopping application with bundle ID net.blip.macos if running..."
+killall -9 "net.blip.macos" 2>/dev/null || true
+
 # Remove /Applications/Blip.app
 echo "Removing /Applications/Blip.app..."
 if [ -d "/Applications/Blip.app" ]; then

@@ -43,6 +43,14 @@ elif [ -f "$HOME/Library/Application Scripts/mega.mac.MEGAShellExtFinder" ]; the
     rm -f "$HOME/Library/Application Scripts/mega.mac.MEGAShellExtFinder" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/T9RH74Y7L9.mega.mac
+echo "Removing $HOME/Library/Application Scripts/T9RH74Y7L9.mega.mac..."
+if [ -d "$HOME/Library/Application Scripts/T9RH74Y7L9.mega.mac" ]; then
+    rm -rf "$HOME/Library/Application Scripts/T9RH74Y7L9.mega.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/T9RH74Y7L9.mega.mac" ]; then
+    rm -f "$HOME/Library/Application Scripts/T9RH74Y7L9.mega.mac" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/mega.mac
 echo "Removing $HOME/Library/Caches/mega.mac..."
 if [ -d "$HOME/Library/Caches/mega.mac" ]; then
@@ -57,6 +65,22 @@ if [ -d "$HOME/Library/Containers/mega.mac.MEGAShellExtFinder" ]; then
     rm -rf "$HOME/Library/Containers/mega.mac.MEGAShellExtFinder" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/mega.mac.MEGAShellExtFinder" ]; then
     rm -f "$HOME/Library/Containers/mega.mac.MEGAShellExtFinder" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/T9RH74Y7L9.mega.mac
+echo "Removing $HOME/Library/Group Containers/T9RH74Y7L9.mega.mac..."
+if [ -d "$HOME/Library/Group Containers/T9RH74Y7L9.mega.mac" ]; then
+    rm -rf "$HOME/Library/Group Containers/T9RH74Y7L9.mega.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/T9RH74Y7L9.mega.mac" ]; then
+    rm -f "$HOME/Library/Group Containers/T9RH74Y7L9.mega.mac" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/mega.mac
+echo "Removing $HOME/Library/HTTPStorages/mega.mac..."
+if [ -d "$HOME/Library/HTTPStorages/mega.mac" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/mega.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/mega.mac" ]; then
+    rm -f "$HOME/Library/HTTPStorages/mega.mac" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/LaunchAgents/mega.mac.megaupdater.plist

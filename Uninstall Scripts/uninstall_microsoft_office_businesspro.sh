@@ -29,6 +29,12 @@ launchctl unload -w /Library/LaunchAgents/com.microsoft.office.licensingV2.helpe
 launchctl unload -w /Library/LaunchDaemons/com.microsoft.office.licensingV2.helper.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/com.microsoft.office.licensingV2.helper.plist 2>/dev/null || true
 
+# Unload service com.microsoft.office.licensingV3.helper
+echo "Unloading service com.microsoft.office.licensingV3.helper..."
+launchctl unload -w /Library/LaunchAgents/com.microsoft.office.licensingV3.helper.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.microsoft.office.licensingV3.helper.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.microsoft.office.licensingV3.helper.plist 2>/dev/null || true
+
 # Unload service com.microsoft.OneDriveStandaloneUpdater
 echo "Unloading service com.microsoft.OneDriveStandaloneUpdater..."
 launchctl unload -w /Library/LaunchAgents/com.microsoft.OneDriveStandaloneUpdater.plist 2>/dev/null || true
