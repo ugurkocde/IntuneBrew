@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Scripts/net.sonuscape.mouseless" ]; then
     rm -f "$HOME/Library/Application Scripts/net.sonuscape.mouseless" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/Mouseless
+echo "Removing $HOME/Library/Application Support/Mouseless..."
+if [ -d "$HOME/Library/Application Support/Mouseless" ]; then
+    rm -rf "$HOME/Library/Application Support/Mouseless" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Mouseless" ]; then
+    rm -f "$HOME/Library/Application Support/Mouseless" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/net.sonuscape.mouseless
 echo "Removing $HOME/Library/Containers/net.sonuscape.mouseless..."
 if [ -d "$HOME/Library/Containers/net.sonuscape.mouseless" ]; then
