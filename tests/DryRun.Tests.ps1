@@ -1,4 +1,22 @@
 $ErrorActionPreference = 'Stop'
+
+function Invoke-GeneratedScript {
+    param([Parameter(Mandatory)][string]$Command)
+    $path = Join-Path ([IO.Path]::GetTempPath()) "IntuneBrew-DryRunTest-$([guid]::NewGuid().ToString('N')).ps1"
+    $created = $false
+    try {
+        $stream = [IO.File]::Open($path, [IO.FileMode]::CreateNew, [IO.FileAccess]::Write, [IO.FileShare]::None)
+        $created = $true
+        $writer = [IO.StreamWriter]::new($stream, [Text.UTF8Encoding]::new($false))
+        try { $writer.Write($Command) } finally { $writer.Dispose() }
+        $output = (& pwsh -NoProfile -NonInteractive -OutputFormat Text -File $path 2>&1 | Out-String)
+        [pscustomobject]@{ Output = $output; ExitCode = $LASTEXITCODE }
+    }
+    finally {
+        if ($created) { Remove-Item -LiteralPath $path -Force }
+    }
+}
+
 $sourcePath = Join-Path $PSScriptRoot '../IntuneBrew.ps1'
 $tokens = $null; $errors = $null
 $ast = [System.Management.Automation.Language.Parser]::ParseFile($sourcePath, [ref]$tokens, [ref]$errors)
@@ -50,9 +68,9 @@ $($functions -join "`n")
 $tail
 throw 'DryRun did not exit before deployment'
 "@
-    $encoded = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($command))
-    $output = (& pwsh -NoProfile -NonInteractive -OutputFormat Text -EncodedCommand $encoded 2>&1 | Out-String)
-    if ($LASTEXITCODE -ne $case.ExitCode) { throw "Unexpected dry-run exit code: $LASTEXITCODE`n$output" }
+    $result = Invoke-GeneratedScript -Command $command
+    $output = $result.Output
+    if ($result.ExitCode -ne $case.ExitCode) { throw "Unexpected dry-run exit code: $($result.ExitCode)`n$output" }
     foreach ($expected in @($case.Summary, $case.Expected, 'No installers downloaded', 'DISCONNECTED')) {
         if ($expected -and -not $output.Contains($expected)) { throw "Missing '$expected':`n$output" }
     }
@@ -91,9 +109,9 @@ function Disconnect-MgGraph { }
 $($lookup.Extent.Text)
 $tail
 "@
-    $encoded = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($command))
-    $output = (& pwsh -NoProfile -NonInteractive -OutputFormat Text -EncodedCommand $encoded 2>&1 | Out-String)
-    if ($LASTEXITCODE -eq 0) { throw "DryRun reported success after $scenario lookup failure:`n$output" }
+    $result = Invoke-GeneratedScript -Command $command
+    $output = $result.Output
+    if ($result.ExitCode -eq 0) { throw "DryRun reported success after $scenario lookup failure:`n$output" }
     if ($output.Contains('0 available update(s)')) { throw "DryRun reported a clean scan after $scenario failure." }
     $expected = if ($scenario -in @('invalid-url', 'metadata')) { 'https://example.test/fixture.json' } else { 'Simulated Graph lookup failure' }
     if (-not $output.Contains($expected)) { throw "Lookup error context missing for ${scenario}:`n$output" }
@@ -139,11 +157,11 @@ function Invoke-RestMethod {
 $setup
 Write-Host 'SETUP_COMPLETED'
 "@
-        $encoded = [Convert]::ToBase64String([Text.Encoding]::Unicode.GetBytes($command))
-        $output = (& pwsh -NoProfile -NonInteractive -OutputFormat Text -EncodedCommand $encoded 2>&1 | Out-String)
+        $result = Invoke-GeneratedScript -Command $command
+        $output = $result.Output
         $expectedCode = if ($dryRunMode) { 1 } else { 0 }
-        if ($LASTEXITCODE -ne $expectedCode -or $output.Contains('SETUP_COMPLETED')) {
-            throw "Incorrect setup failure exit for $scenario (DryRun=$dryRunMode): $LASTEXITCODE, expected $expectedCode`n$output"
+        if ($result.ExitCode -ne $expectedCode -or $output.Contains('SETUP_COMPLETED')) {
+            throw "Incorrect setup failure exit for $scenario (DryRun=$dryRunMode): $($result.ExitCode), expected $expectedCode`n$output"
         }
     }
 }
