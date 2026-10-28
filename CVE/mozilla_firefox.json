@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox",
   "app_key": "mozilla_firefox",
-  "last_updated": "2026-10-27",
+  "last_updated": "2026-10-28",
   "total_cves": 3487,
   "summary": {
     "critical": 510,
@@ -11522,8 +11522,8 @@
     {
       "cve_id": "CVE-2026-100801",
       "published_date": "2026-09-29",
-      "last_modified_date": "2026-10-19",
-      "description": "Privilege escalation in the DLL Services component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 157, and Firefox ESR 140.17.",
+      "last_modified_date": "2026-10-27",
+      "description": "Privilege escalation in the DLL Services component. This vulnerability was fixed in Firefox ESR 153.4, Thunderbird 157, Thunderbird 140.17, Thunderbird 153.4, Firefox 159, Firefox ESR 153.6, Thunderbird 159, Thunderbird 153.6, Firefox 157, and Firefox ESR 140.17.",
       "base_score": 8.8,
       "severity": "HIGH",
       "cvss_version": "3.1",
