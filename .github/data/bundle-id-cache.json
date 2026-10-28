@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-10-28T00:27:53.161Z",
+  "last_full_scan": "2026-10-28T01:16:10.569Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -6662,8 +6662,8 @@
       "name": "Rocketman Choices Packager"
     },
     "rode_central": {
-      "last_checked": "2026-01-17T08:37:42.168Z",
-      "bundle_id": "com.rodecentral.installer",
+      "last_checked": "2026-10-28T01:16:10.565Z",
+      "bundle_id": "com.rode.rodecentral",
       "status": "verified",
       "source": "file",
       "name": "Rode Central"
