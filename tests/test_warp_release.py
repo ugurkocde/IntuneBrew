@@ -52,12 +52,58 @@ class WarpReleaseTests(unittest.TestCase):
             result = COLLECTOR.get_homebrew_app_info(SOURCE)
         self.assertEqual(result['url'], URL)
         self.assertEqual(result['vendor_url'], URL)
-        self.assertEqual(result['version'], VERSION.split('_')[0])
+        self.assertEqual(result['version'], '0.2026.09.30.08.29.01')
         self.assertEqual(result['sha'], SHA)
         self.assertTrue(result['fileName'].endswith('.dmg'))
         get.assert_called_once_with(URL, headers={'User-Agent': COLLECTOR.DOWNLOAD_USER_AGENTS[0]},
             timeout=COLLECTOR.DOWNLOAD_TIMEOUT, stream=True)
         reply.close.assert_called_once()
+
+    def test_catalog_version_matches_warp_bundle_build_suffix(self):
+        for release, expected in [
+            ('0.2026.10.14.08.27.stable_03', '0.2026.10.14.08.27.03'),
+            ('0.2026.10.21.08.25.stable_02', '0.2026.10.21.08.25.02'),
+            ('0.2026.10.21.08.25.stable_10', '0.2026.10.21.08.25.10'),
+        ]:
+            with self.subTest(release=release):
+                COLLECTOR.cask_cache[SOURCE] = dict(cask(), version=release)
+                with patch.object(COLLECTOR.requests, 'get', return_value=response()):
+                    result = COLLECTOR.get_homebrew_app_info(SOURCE)
+                self.assertEqual(result['version'], expected)
+                self.assertEqual(result['url'], f'https://releases.warp.dev/stable/v{release}/Warp.dmg')
+                self.assertEqual(result['vendor_url'], result['url'])
+                self.assertEqual(result['sha'], SHA)
+                self.assertEqual(result['fileName'], 'Warp.dmg')
+
+    def test_unproven_warp_versions_are_rejected_before_download(self):
+        for release in [
+            '0.2026.10.21.08.25.stable', '0.2026.10.21.08.25.stable_',
+            '0.2026.10.21.08.25.stable_01_02', '0.2026.10.21.08.25.preview_01',
+            '0.2026.10.21.08.25.stable_02 ', '0.2026.10.21.08.25.stable_02\n',
+            '0.2026.10.21.08.25.stable_٠٢', '0.２０２６.10.21.08.25.stable_02',
+        ]:
+            with self.subTest(release=release):
+                COLLECTOR.cask_cache[SOURCE] = dict(cask(), version=release)
+                with patch.object(COLLECTOR.requests, 'get') as get:
+                    with self.assertRaisesRegex(ValueError, 'Warp release version'):
+                        COLLECTOR.get_homebrew_app_info(SOURCE)
+                get.assert_not_called()
+
+    def test_other_casks_keep_generic_underscore_normalization(self):
+        source = 'https://formulae.brew.sh/api/cask/example-app.json'
+        COLLECTOR.cask_cache[source] = dict(cask(), name=['Example App'], version='1.2.3_04')
+        result = COLLECTOR.get_homebrew_app_info(source)
+        self.assertEqual(result['version'], '1.2.3')
+
+    def test_dmg_gate_accepts_bundle_version_and_rejects_stable_identifier(self):
+        app = {'name': 'Warp', 'version': '0.2026.10.21.08.25.02',
+               'bundleId': 'dev.warp.Warp-Stable', 'fileName': 'Warp.dmg', 'url': URL}
+        with patch.object(COLLECTOR.shutil, 'which', return_value='/usr/bin/hdiutil'), \
+                patch.object(COLLECTOR, 'read_dmg_bundle_version', return_value=app['version']):
+            COLLECTOR.verify_dmg_bundle_version(app, '0.2026.10.14.08.27.stable')
+            app['version'] = '0.2026.10.21.08.25.stable'
+            with self.assertRaisesRegex(RuntimeError, 'Intune rejects that mismatch'):
+                COLLECTOR.verify_dmg_bundle_version(app, '0.2026.10.14.08.27.stable')
 
     def test_html_errors_missing_types_and_http_errors_cannot_publish(self):
         for status, kind in [(200, 'text/html'), (200, ''), (404, 'application/octet-stream'),

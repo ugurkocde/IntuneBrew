@@ -2000,6 +2000,13 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
     elif cask_token == "jetbrains-toolbox" and ',' in version:
         # Toolbox reports the full build after the comma as its version (issue #341).
         version = version.split(',', 1)[1]
+    elif cask_token == "warp":
+        # Warp's bundle uses the build suffix as a dot segment, without "stable".
+        # Preserve leading zeros and refuse unproven release forms (issue #360).
+        match = re.fullmatch(r"(0\.[0-9]{4}(?:\.[0-9]{2}){4})\.stable_([0-9]+)", version)
+        if not match:
+            raise ValueError("Warp release version has no proven bundle mapping; catalog update refused")
+        version = f"{match.group(1)}.{match.group(2)}"
     elif ',' in version:
         version = version.split(',')[0]
     if '_' in version:
