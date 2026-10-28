@@ -39,6 +39,14 @@ elif [ -f "$HOME/Library/Application Scripts/ch.protonmail.drive*" ]; then
     rm -f "$HOME/Library/Application Scripts/ch.protonmail.drive*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ch.protonmail.drive.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ch.protonmail.drive.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ch.protonmail.drive.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ch.protonmail.drive.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ch.protonmail.drive.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/ch.protonmail.drive.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/FileProvider/ch.protonmail.drive.fileprovider
 echo "Removing $HOME/Library/Application Support/FileProvider/ch.protonmail.drive.fileprovider..."
 if [ -d "$HOME/Library/Application Support/FileProvider/ch.protonmail.drive.fileprovider" ]; then

@@ -61,6 +61,14 @@ elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.
     rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.blip.macos.sfl*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/net.blip.macos
+echo "Removing $HOME/Library/Caches/net.blip.macos..."
+if [ -d "$HOME/Library/Caches/net.blip.macos" ]; then
+    rm -rf "$HOME/Library/Caches/net.blip.macos" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/net.blip.macos" ]; then
+    rm -f "$HOME/Library/Caches/net.blip.macos" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/net.blip.macos.preview-provider
 echo "Removing $HOME/Library/Containers/net.blip.macos.preview-provider..."
 if [ -d "$HOME/Library/Containers/net.blip.macos.preview-provider" ]; then
