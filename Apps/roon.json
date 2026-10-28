@@ -8,7 +8,7 @@
   "homepage": "https://roonlabs.com/",
   "homebrew_cask": "roon",
   "fileName": "Roon.dmg",
-  "sha": "ffa194bf19aafc1dd9cf379ff9c3e3abdcf6ceb6a9ade0b2425668f362adedb1",
+  "sha": "ab9281ea0fa95e9cce3964a1f31dcbc7c745a8f6be7c55cc0c9033f3dd8006c6",
   "category": "Media",
   "publisher": "Roon Labs, LLC",
   "previous_version": "2.74"

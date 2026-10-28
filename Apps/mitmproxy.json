@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "6492470ba136aa3de35a16f11e4ca9d760d39691b9b198787813c8639e261562",
   "changelog": "https://github.com/mitmproxy/mitmproxy/releases",
-  "previous_version": "12.3.0",
+  "previous_version": "12.3.1",
   "category": "Developer Tools",
   "publisher": "mitmproxy",
   "homebrew_cask": "mitmproxy"

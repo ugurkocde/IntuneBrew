@@ -1,14 +1,14 @@
 {
   "name": "Ghostty",
   "description": "Terminal emulator that uses platform-native UI and GPU acceleration",
-  "version": "1.3.1",
-  "url": "https://release.files.ghostty.org/1.3.1/Ghostty.dmg",
-  "vendor_url": "https://release.files.ghostty.org/1.3.1/Ghostty.dmg",
+  "version": "1.4.0",
+  "url": "https://release.files.ghostty.org/1.4.0/Ghostty.dmg",
+  "vendor_url": "https://release.files.ghostty.org/1.4.0/Ghostty.dmg",
   "bundleId": "com.mitchellh.ghostty",
   "homepage": "https://ghostty.org/",
   "homebrew_cask": "ghostty",
   "fileName": "Ghostty.dmg",
-  "sha": "18cff2b0a6cee90eead9c7d3064e808a252a40baf214aa752c1ecb793b8f5f69",
+  "sha": "3a02075dbd24318d778426af41dee5507d53ecc4578ede96912ec9ce6d18d3e8",
   "changelog": "https://ghostty.org/docs/changelog",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:18:00Z",

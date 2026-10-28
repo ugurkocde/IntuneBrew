@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-27T01:18:37.928314Z",
-  "lastFullSyncAt": "2026-10-27T01:18:37.928314Z",
+  "lastPublishedAt": "2026-10-28T01:15:04.957524Z",
+  "lastFullSyncAt": "2026-10-28T01:15:04.957524Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -26,6 +26,10 @@
       "stage": "collection"
     },
     {
+      "app": "lens",
+      "stage": "collection"
+    },
+    {
       "app": "megasync",
       "stage": "collection"
     },
@@ -42,11 +46,23 @@
       "stage": "collection"
     },
     {
+      "app": "opera",
+      "stage": "collection"
+    },
+    {
       "app": "opera_gx",
       "stage": "collection"
     },
     {
+      "app": "pitch",
+      "stage": "collection"
+    },
+    {
       "app": "reaper",
+      "stage": "collection"
+    },
+    {
+      "app": "rocket_typist",
       "stage": "collection"
     },
     {
@@ -67,5 +83,5 @@
     }
   ],
   "appCount": 1152,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/40427724853"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/40609135218"
 }

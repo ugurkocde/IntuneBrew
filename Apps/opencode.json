@@ -1,14 +1,14 @@
 {
   "name": "OpenCode",
   "description": "AI coding agent desktop client",
-  "version": "2.1.4",
-  "url": "https://opencode.ai/files/bin/2.1.4/opencode-desktop-mac-arm64.dmg",
-  "vendor_url": "https://opencode.ai/files/bin/2.1.4/opencode-desktop-mac-arm64.dmg",
+  "version": "2.2.0",
+  "url": "https://opencode.ai/files/bin/2.2.0/opencode-desktop-mac-arm64.dmg",
+  "vendor_url": "https://opencode.ai/files/bin/2.2.0/opencode-desktop-mac-arm64.dmg",
   "bundleId": "ai.opencode.desktop",
   "homepage": "https://opencode.ai/",
   "homebrew_cask": "opencode-desktop",
   "fileName": "opencode-desktop-mac-arm64.dmg",
-  "sha": "1bf4030c8e15bf2dd30ffca4263b8586b052201ecc755d652ec465fcc44a0296",
+  "sha": "39fcc822102074d159aab7a6b18f791da8b5ea7fa6261d86f4dfc7a065f2d99d",
   "category": "Developer Tools",
   "publisher": "OpenCode",
   "previous_version": "2.1.4"
