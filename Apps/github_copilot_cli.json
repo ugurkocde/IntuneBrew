@@ -1,17 +1,17 @@
 {
   "name": "GitHub Copilot CLI",
   "description": "Brings the power of Copilot coding agent directly to your terminal",
-  "version": "1.0.104",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/github_copilot_cli_1.0.104.pkg",
-  "vendor_url": "https://github.com/github/copilot-cli/releases/download/v1.0.104/copilot-darwin-arm64.tar.gz",
+  "version": "1.0.105",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/github_copilot_cli_1.0.105.pkg",
+  "vendor_url": "https://github.com/github/copilot-cli/releases/download/v1.0.105/copilot-darwin-arm64.tar.gz",
   "bundleId": "com.intunebrew.github_copilot_cli",
   "homepage": "https://docs.github.com/en/copilot/concepts/agents/about-copilot-cli",
   "homebrew_cask": "copilot-cli",
-  "fileName": "github_copilot_cli_1.0.104.pkg",
+  "fileName": "github_copilot_cli_1.0.105.pkg",
   "type": "app",
-  "sha": "5c1ff5e0e0ab3777082e22680f4bbfb71256360c203f8125f8737517f60e5128",
+  "sha": "acc77db981fe780a8587f3eac2d3f75ebc6ee3b75b02dd2439c73fbf5bd8cce5",
   "category": "Developer Tools",
   "publisher": "GitHub, Inc.",
-  "previous_version": "1.0.103",
+  "previous_version": "1.0.104",
   "packageIdentifier": "com.intunebrew.github_copilot_cli"
 }

@@ -14,5 +14,5 @@
   "previous_version": "9.0.3",
   "homebrew_cask": "timer",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: unmaintained"
+  "deprecation_reason": "cask removed from Homebrew"
 }

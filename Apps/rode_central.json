@@ -1,6 +1,6 @@
 {
   "name": "Rode Central",
-  "description": "RØDE companion app",
+  "description": "R\u00d8DE companion app",
   "version": "2.2.0",
   "url": "https://intunebrew.blob.core.windows.net/pkg/rode_central_2.2.0.pkg",
   "vendor_url": "https://update.rode.com/central/RODE_Central_MACOS.zip",
@@ -9,8 +9,8 @@
   "fileName": "rode_central_2.2.0.pkg",
   "type": "app",
   "sha": "fc3d65d087fe72fbddb67326f53ab84510b03647de8fc8b4e951e52dbc6712f8",
-  "previous_version": "2.0.111",
+  "previous_version": "2.2.0",
   "category": "Media",
-  "publisher": "RØDE Microphones Pty Ltd",
+  "publisher": "R\u00d8DE Microphones Pty Ltd",
   "homebrew_cask": "rode-central"
 }

@@ -13,5 +13,5 @@
   "previous_version": "5.0.0",
   "homebrew_cask": "crypter",
   "deprecated": true,
-  "deprecation_reason": "disabled in Homebrew: unmaintained"
+  "deprecation_reason": "cask removed from Homebrew"
 }

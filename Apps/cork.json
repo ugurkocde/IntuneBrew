@@ -11,6 +11,6 @@
   "sha": "d3c2324377924e71faa951eb9c943917b05e1b58c2672d8a76e7e04b7c7a4458",
   "category": "Developer Tools",
   "publisher": "Cork",
-  "previous_version": "2.1.0",
+  "previous_version": "2.1.1",
   "homebrew_cask": "cork"
 }

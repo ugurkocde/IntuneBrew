@@ -1,12 +1,16 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-28T01:15:04.957524Z",
-  "lastFullSyncAt": "2026-10-28T01:15:04.957524Z",
+  "lastPublishedAt": "2026-10-28T10:33:53.843198Z",
+  "lastFullSyncAt": "2026-10-28T10:33:53.843198Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
     {
       "app": "brave",
+      "stage": "collection"
+    },
+    {
+      "app": "cmux",
       "stage": "collection"
     },
     {
@@ -62,10 +66,6 @@
       "stage": "collection"
     },
     {
-      "app": "rocket_typist",
-      "stage": "collection"
-    },
-    {
       "app": "shapr3d",
       "stage": "collection"
     },
@@ -74,14 +74,10 @@
       "stage": "collection"
     },
     {
-      "app": "warp",
-      "stage": "collection"
-    },
-    {
       "app": "xmind",
       "stage": "collection"
     }
   ],
   "appCount": 1152,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/40609135218"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/40668975419"
 }

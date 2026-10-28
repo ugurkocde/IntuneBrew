@@ -1,16 +1,16 @@
 {
   "name": "Microsoft Excel",
   "description": "Spreadsheet software",
-  "version": "16.114.26102345",
-  "url": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.114.26102345_Installer.pkg",
-  "vendor_url": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.114.26102345_Installer.pkg",
+  "version": "16.114.26102720",
+  "url": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.114.26102720_Installer.pkg",
+  "vendor_url": "https://res.public.onecdn.static.microsoft/mro1cdnstorage/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Excel_16.114.26102720_Installer.pkg",
   "bundleId": "com.microsoft.package.Microsoft_Excel.app",
   "homepage": "https://www.microsoft.com/en-US/microsoft-365/excel",
   "homebrew_cask": "microsoft-excel",
-  "fileName": "Microsoft_Excel_16.114.26102345_Installer.pkg",
-  "sha": "7061c51471ee53959191802b5f4fd523b9131610e7732be4160ac70ad948f73b",
+  "fileName": "Microsoft_Excel_16.114.26102720_Installer.pkg",
+  "sha": "2d1d9af69d0f1a6f62dc9a82b39537eef9eb3024eedd72342e2fdbdd47ec20cf",
   "type": "pkg",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
-  "previous_version": "16.114.26102031"
+  "previous_version": "16.114.26102345"
 }

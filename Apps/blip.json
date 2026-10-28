@@ -9,7 +9,7 @@
   "fileName": "blip_1.2.7.pkg",
   "type": "app",
   "sha": "8a4a8d3b7a9c42ba8e37f2d858e527a3a0d9892b95879342e43bb829798aea79",
-  "previous_version": "1.2.3",
+  "previous_version": "1.2.7",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:27:03Z",
     "qa_result": "Installation successful and verified",
