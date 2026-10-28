@@ -53,6 +53,14 @@ elif [ -f "$HOME/Library/Caches/Waterfox" ]; then
     rm -f "$HOME/Library/Caches/Waterfox" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/net.waterfox.waterfox.plist
+echo "Removing $HOME/Library/Preferences/net.waterfox.waterfox.plist..."
+if [ -d "$HOME/Library/Preferences/net.waterfox.waterfox.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/net.waterfox.waterfox.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/net.waterfox.waterfox.plist" ]; then
+    rm -f "$HOME/Library/Preferences/net.waterfox.waterfox.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/org.waterfoxproject.waterfox.plist
 echo "Removing $HOME/Library/Preferences/org.waterfoxproject.waterfox.plist..."
 if [ -d "$HOME/Library/Preferences/org.waterfoxproject.waterfox.plist" ]; then
