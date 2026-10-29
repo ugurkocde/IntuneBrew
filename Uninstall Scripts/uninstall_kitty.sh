@@ -25,14 +25,6 @@ elif [ -f "/Applications/kitty.app" ]; then
     rm -f "/Applications/kitty.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/.config/kitty
-echo "Removing $HOME/.config/kitty..."
-if [ -d "$HOME/.config/kitty" ]; then
-    rm -rf "$HOME/.config/kitty" 2>/dev/null || true
-elif [ -f "$HOME/.config/kitty" ]; then
-    rm -f "$HOME/.config/kitty" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Caches/kitty
 echo "Removing $HOME/Library/Caches/kitty..."
 if [ -d "$HOME/Library/Caches/kitty" ]; then

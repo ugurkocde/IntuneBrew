@@ -17,6 +17,10 @@ fi
 echo "Stopping 010 Editor if running..."
 pkill -f "010 Editor" 2>/dev/null || true
 
+# Kill application with bundle ID com.SweetScape.010Editor if running
+echo "Stopping application with bundle ID com.SweetScape.010Editor if running..."
+killall -9 "com.SweetScape.010Editor" 2>/dev/null || true
+
 # Remove /Applications/010 Editor.app
 echo "Removing /Applications/010 Editor.app..."
 if [ -d "/Applications/010 Editor.app" ]; then

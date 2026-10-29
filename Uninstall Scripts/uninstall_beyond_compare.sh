@@ -31,6 +31,14 @@ if [ -f "/Applications/Beyond Compare.app/Beyond Compare.app/Contents/MacOS/bcom
     rm -f "/Applications/Beyond Compare.app/Beyond Compare.app/Contents/MacOS/bcomp" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.ScooterSoftware.BeyondCompare.BCFinder
+echo "Removing $HOME/Library/Application Scripts/com.ScooterSoftware.BeyondCompare.BCFinder..."
+if [ -d "$HOME/Library/Application Scripts/com.ScooterSoftware.BeyondCompare.BCFinder" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.ScooterSoftware.BeyondCompare.BCFinder" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.ScooterSoftware.BeyondCompare.BCFinder" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.ScooterSoftware.BeyondCompare.BCFinder" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Beyond Compare*
 echo "Removing $HOME/Library/Application Support/Beyond Compare*..."
 if [ -d "$HOME/Library/Application Support/Beyond Compare*" ]; then
@@ -69,6 +77,14 @@ if [ -d "$HOME/Library/Containers/com.ScooterSoftware.BeyondCompare.BCFinder" ];
     rm -rf "$HOME/Library/Containers/com.ScooterSoftware.BeyondCompare.BCFinder" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.ScooterSoftware.BeyondCompare.BCFinder" ]; then
     rm -f "$HOME/Library/Containers/com.ScooterSoftware.BeyondCompare.BCFinder" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.ScooterSoftware.BeyondCompare
+echo "Removing $HOME/Library/HTTPStorages/com.ScooterSoftware.BeyondCompare..."
+if [ -d "$HOME/Library/HTTPStorages/com.ScooterSoftware.BeyondCompare" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.ScooterSoftware.BeyondCompare" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.ScooterSoftware.BeyondCompare" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.ScooterSoftware.BeyondCompare" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.ScooterSoftware.BeyondCompare.plist
