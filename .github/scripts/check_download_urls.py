@@ -17,6 +17,7 @@ import concurrent.futures
 import datetime
 import json
 import os
+import re
 import sys
 
 import requests
@@ -46,7 +47,10 @@ ATTEMPTS = [
 def check_url(url):
     """Return (verdict, detail). Verdict is 'ok' or a failure category."""
     verdict, detail = "request_failed", "no attempt succeeded"
-    for attempt in ATTEMPTS:
+    summaries = []
+    for index, attempt in enumerate(ATTEMPTS):
+        label = ("ib", "ib", "curl", "browser")[index]
+        prefix = f"{attempt['method']}/{label}"
         headers = {"User-Agent": attempt["user_agent"]}
         if attempt["method"] == "GET":
             headers["Range"] = "bytes=0-0"
@@ -62,20 +66,32 @@ def check_url(url):
             response.close()
         except requests.RequestException as e:
             verdict, detail = "request_failed", type(e).__name__
+            exception_name = (
+                detail if re.fullmatch(r"[A-Za-z][A-Za-z0-9_]{0,63}", detail)
+                else "RequestException"
+            )
+            summaries.append(f"{prefix}:{exception_name}")
             continue
+
+        content_type = response.headers.get("content-type", "")
+        media_type = content_type.split(";", 1)[0].strip().lower()
+        if not re.fullmatch(r"[a-z0-9.+/-]{1,100}", media_type):
+            media_type = "unknown"
+        summaries.append(f"{prefix}:{response.status_code} {media_type}")
 
         if response.status_code >= 400:
             verdict, detail = "http_error", f"HTTP {response.status_code}"
             continue
 
-        content_type = response.headers.get("content-type", "")
         if "text/html" in content_type:
-            verdict, detail = "html_page", f"returns an HTML page (final URL: {response.url})"
+            verdict, detail = "html_page", (
+                f"HTTP {response.status_code} returns an HTML page (final URL: {response.url})"
+            )
             continue
 
         return "ok", content_type
 
-    return verdict, detail
+    return verdict, f"{detail}; attempts: {'; '.join(summaries)}"
 
 
 def main():
