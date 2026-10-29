@@ -29,6 +29,14 @@ elif [ -f "/Applications/macUSB.app" ]; then
     rm -f "/Applications/macUSB.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.kruszoneq.macUSB
+echo "Removing $HOME/Library/Application Support/com.kruszoneq.macUSB..."
+if [ -d "$HOME/Library/Application Support/com.kruszoneq.macUSB" ]; then
+    rm -rf "$HOME/Library/Application Support/com.kruszoneq.macUSB" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.kruszoneq.macUSB" ]; then
+    rm -f "$HOME/Library/Application Support/com.kruszoneq.macUSB" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/macUSB
 echo "Removing $HOME/Library/Application Support/macUSB..."
 if [ -d "$HOME/Library/Application Support/macUSB" ]; then

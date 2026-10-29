@@ -25,6 +25,22 @@ elif [ -f "/Applications/Recut.app" ]; then
     rm -f "/Applications/Recut.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/co.tinywins.recut
+echo "Removing $HOME/Library/Application Support/co.tinywins.recut..."
+if [ -d "$HOME/Library/Application Support/co.tinywins.recut" ]; then
+    rm -rf "$HOME/Library/Application Support/co.tinywins.recut" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/co.tinywins.recut" ]; then
+    rm -f "$HOME/Library/Application Support/co.tinywins.recut" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.tinywins.recut.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.tinywins.recut.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.tinywins.recut.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.tinywins.recut.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.tinywins.recut.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.tinywins.recut.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Recut
 echo "Removing $HOME/Library/Application Support/Recut..."
 if [ -d "$HOME/Library/Application Support/Recut" ]; then
@@ -33,12 +49,28 @@ elif [ -f "$HOME/Library/Application Support/Recut" ]; then
     rm -f "$HOME/Library/Application Support/Recut" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/co.tinywins.recut
+echo "Removing $HOME/Library/Caches/co.tinywins.recut..."
+if [ -d "$HOME/Library/Caches/co.tinywins.recut" ]; then
+    rm -rf "$HOME/Library/Caches/co.tinywins.recut" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/co.tinywins.recut" ]; then
+    rm -f "$HOME/Library/Caches/co.tinywins.recut" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.tinywins.recut
 echo "Removing $HOME/Library/Caches/com.tinywins.recut..."
 if [ -d "$HOME/Library/Caches/com.tinywins.recut" ]; then
     rm -rf "$HOME/Library/Caches/com.tinywins.recut" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.tinywins.recut" ]; then
     rm -f "$HOME/Library/Caches/com.tinywins.recut" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/co.tinywins.recut
+echo "Removing $HOME/Library/Logs/co.tinywins.recut..."
+if [ -d "$HOME/Library/Logs/co.tinywins.recut" ]; then
+    rm -rf "$HOME/Library/Logs/co.tinywins.recut" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/co.tinywins.recut" ]; then
+    rm -f "$HOME/Library/Logs/co.tinywins.recut" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.tinywins.recut.plist
@@ -55,6 +87,14 @@ if [ -d "$HOME/Library/Saved Application State/com.tinywins.recut.savedState" ];
     rm -rf "$HOME/Library/Saved Application State/com.tinywins.recut.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.tinywins.recut.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.tinywins.recut.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Documents/Recut Projects
+echo "Removing $HOME/Documents/Recut Projects..."
+if [ -d "$HOME/Documents/Recut Projects" ]; then
+    rm -rf "$HOME/Documents/Recut Projects" 2>/dev/null || true
+elif [ -f "$HOME/Documents/Recut Projects" ]; then
+    rm -f "$HOME/Documents/Recut Projects" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

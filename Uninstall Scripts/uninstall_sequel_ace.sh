@@ -45,6 +45,14 @@ elif [ -f "$HOME/Library/Application Scripts/NKQ4HJ66PX.sequel-ace" ]; then
     rm -f "$HOME/Library/Application Scripts/NKQ4HJ66PX.sequel-ace" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sequel-ace.sequel-ace.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sequel-ace.sequel-ace.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sequel-ace.sequel-ace.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sequel-ace.sequel-ace.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sequel-ace.sequel-ace.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.sequel-ace.sequel-ace.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.sequel-ace.sequel-ace
 echo "Removing $HOME/Library/Containers/com.sequel-ace.sequel-ace..."
 if [ -d "$HOME/Library/Containers/com.sequel-ace.sequel-ace" ]; then

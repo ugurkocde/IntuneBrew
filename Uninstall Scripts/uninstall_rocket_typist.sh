@@ -25,6 +25,14 @@ elif [ -f "/Applications/Rocket Typist.app" ]; then
     rm -f "/Applications/Rocket Typist.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist
+echo "Removing $HOME/Library/Application Scripts/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist..."
+if [ -d "$HOME/Library/Application Scripts/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.witt-software.rocket-typist
 echo "Removing $HOME/Library/Application Support/com.witt-software.rocket-typist..."
 if [ -d "$HOME/Library/Application Support/com.witt-software.rocket-typist" ]; then
@@ -33,12 +41,12 @@ elif [ -f "$HOME/Library/Application Support/com.witt-software.rocket-typist" ];
     rm -f "$HOME/Library/Application Support/com.witt-software.rocket-typist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.witt-software.Rocket-Typist-3
-echo "Removing $HOME/Library/Application Support/com.witt-software.Rocket-Typist-3..."
-if [ -d "$HOME/Library/Application Support/com.witt-software.Rocket-Typist-3" ]; then
-    rm -rf "$HOME/Library/Application Support/com.witt-software.Rocket-Typist-3" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.witt-software.Rocket-Typist-3" ]; then
-    rm -f "$HOME/Library/Application Support/com.witt-software.Rocket-Typist-3" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.witt-software.Rocket-Typist-2
+echo "Removing $HOME/Library/Application Support/com.witt-software.Rocket-Typist-2..."
+if [ -d "$HOME/Library/Application Support/com.witt-software.Rocket-Typist-2" ]; then
+    rm -rf "$HOME/Library/Application Support/com.witt-software.Rocket-Typist-2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.witt-software.Rocket-Typist-2" ]; then
+    rm -f "$HOME/Library/Application Support/com.witt-software.Rocket-Typist-2" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Rocket Typist
@@ -57,36 +65,44 @@ elif [ -f "$HOME/Library/Caches/com.apple.helpd/Generated/com.witt-software.Rock
     rm -f "$HOME/Library/Caches/com.apple.helpd/Generated/com.witt-software.Rocket-Typist.help*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-3
-echo "Removing $HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-3..."
-if [ -d "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-3" ]; then
-    rm -rf "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-3" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-3" ]; then
-    rm -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-3" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-2
+echo "Removing $HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-2..."
+if [ -d "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-2" ]; then
+    rm -rf "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-2" ]; then
+    rm -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.witt-software.Rocket-Typist-2" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.witt-software.Rocket-Typist-3
-echo "Removing $HOME/Library/Caches/com.witt-software.Rocket-Typist-3..."
-if [ -d "$HOME/Library/Caches/com.witt-software.Rocket-Typist-3" ]; then
-    rm -rf "$HOME/Library/Caches/com.witt-software.Rocket-Typist-3" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.witt-software.Rocket-Typist-3" ]; then
-    rm -f "$HOME/Library/Caches/com.witt-software.Rocket-Typist-3" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.witt-software.Rocket-Typist-2
+echo "Removing $HOME/Library/Caches/com.witt-software.Rocket-Typist-2..."
+if [ -d "$HOME/Library/Caches/com.witt-software.Rocket-Typist-2" ]; then
+    rm -rf "$HOME/Library/Caches/com.witt-software.Rocket-Typist-2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.witt-software.Rocket-Typist-2" ]; then
+    rm -f "$HOME/Library/Caches/com.witt-software.Rocket-Typist-2" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-3
-echo "Removing $HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-3..."
-if [ -d "$HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-3" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-3" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-3" ]; then
-    rm -f "$HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-3" 2>/dev/null || true
+# Remove $HOME/Library/Containers/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist
+echo "Removing $HOME/Library/Containers/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist..."
+if [ -d "$HOME/Library/Containers/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist" ]; then
+    rm -rf "$HOME/Library/Containers/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist" ]; then
+    rm -f "$HOME/Library/Containers/com.witt-software.Rocket-Typist-2.Share-Text-With-Rocket-Typist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.witt-software.Rocket-Typist-3.plist
-echo "Removing $HOME/Library/Preferences/com.witt-software.Rocket-Typist-3.plist..."
-if [ -d "$HOME/Library/Preferences/com.witt-software.Rocket-Typist-3.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.witt-software.Rocket-Typist-3.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.witt-software.Rocket-Typist-3.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.witt-software.Rocket-Typist-3.plist" 2>/dev/null || true
+# Remove $HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-2*
+echo "Removing $HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-2*..."
+if [ -d "$HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-2*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-2*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-2*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.witt-software.Rocket-Typist-2*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.witt-software.Rocket-Typist-2.plist
+echo "Removing $HOME/Library/Preferences/com.witt-software.Rocket-Typist-2.plist..."
+if [ -d "$HOME/Library/Preferences/com.witt-software.Rocket-Typist-2.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.witt-software.Rocket-Typist-2.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.witt-software.Rocket-Typist-2.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.witt-software.Rocket-Typist-2.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

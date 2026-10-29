@@ -31,12 +31,60 @@ elif [ -f "/Applications/Tresorit.app" ]; then
     rm -f "/Applications/Tresorit.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/986R6FFN66.com.tresorit.mac
+echo "Removing $HOME/Library/Application Scripts/986R6FFN66.com.tresorit.mac..."
+if [ -d "$HOME/Library/Application Scripts/986R6FFN66.com.tresorit.mac" ]; then
+    rm -rf "$HOME/Library/Application Scripts/986R6FFN66.com.tresorit.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/986R6FFN66.com.tresorit.mac" ]; then
+    rm -f "$HOME/Library/Application Scripts/986R6FFN66.com.tresorit.mac" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.tresorit.mac.FileProvider
+echo "Removing $HOME/Library/Application Scripts/com.tresorit.mac.FileProvider..."
+if [ -d "$HOME/Library/Application Scripts/com.tresorit.mac.FileProvider" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.tresorit.mac.FileProvider" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.tresorit.mac.FileProvider" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.tresorit.mac.FileProvider" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.tresorit.mac.TresoritExtension*
+echo "Removing $HOME/Library/Application Scripts/com.tresorit.mac.TresoritExtension*..."
+if [ -d "$HOME/Library/Application Scripts/com.tresorit.mac.TresoritExtension*" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.tresorit.mac.TresoritExtension*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.tresorit.mac.TresoritExtension*" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.tresorit.mac.TresoritExtension*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Tresorit
 echo "Removing $HOME/Library/Application Support/Tresorit..."
 if [ -d "$HOME/Library/Application Support/Tresorit" ]; then
     rm -rf "$HOME/Library/Application Support/Tresorit" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/Tresorit" ]; then
     rm -f "$HOME/Library/Application Support/Tresorit" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.tresorit.mac.FileProvider
+echo "Removing $HOME/Library/Containers/com.tresorit.mac.FileProvider..."
+if [ -d "$HOME/Library/Containers/com.tresorit.mac.FileProvider" ]; then
+    rm -rf "$HOME/Library/Containers/com.tresorit.mac.FileProvider" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.tresorit.mac.FileProvider" ]; then
+    rm -f "$HOME/Library/Containers/com.tresorit.mac.FileProvider" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.tresorit.mac.TresoritExtension*
+echo "Removing $HOME/Library/Containers/com.tresorit.mac.TresoritExtension*..."
+if [ -d "$HOME/Library/Containers/com.tresorit.mac.TresoritExtension*" ]; then
+    rm -rf "$HOME/Library/Containers/com.tresorit.mac.TresoritExtension*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.tresorit.mac.TresoritExtension*" ]; then
+    rm -f "$HOME/Library/Containers/com.tresorit.mac.TresoritExtension*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/986R6FFN66.com.tresorit.mac
+echo "Removing $HOME/Library/Group Containers/986R6FFN66.com.tresorit.mac..."
+if [ -d "$HOME/Library/Group Containers/986R6FFN66.com.tresorit.mac" ]; then
+    rm -rf "$HOME/Library/Group Containers/986R6FFN66.com.tresorit.mac" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/986R6FFN66.com.tresorit.mac" ]; then
+    rm -f "$HOME/Library/Group Containers/986R6FFN66.com.tresorit.mac" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.tresorit.mac.plist

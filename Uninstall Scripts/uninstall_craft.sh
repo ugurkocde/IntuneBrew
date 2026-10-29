@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.lukilabs.lukiapp.Craft*" ]; the
     rm -f "$HOME/Library/Application Scripts/com.lukilabs.lukiapp.Craft*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.com.lukilabs.lukiapp.share
+echo "Removing $HOME/Library/Application Scripts/group.com.lukilabs.lukiapp.share..."
+if [ -d "$HOME/Library/Application Scripts/group.com.lukilabs.lukiapp.share" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.com.lukilabs.lukiapp.share" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.com.lukilabs.lukiapp.share" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.com.lukilabs.lukiapp.share" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.lukilabs.lukiapp.Craft*
 echo "Removing $HOME/Library/Containers/com.lukilabs.lukiapp.Craft*..."
 if [ -d "$HOME/Library/Containers/com.lukilabs.lukiapp.Craft*" ]; then
