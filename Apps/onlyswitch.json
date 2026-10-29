@@ -1,14 +1,14 @@
 {
   "name": "OnlySwitch",
   "description": "System and utility switches",
-  "version": "3.1.0",
-  "url": "https://github.com/jacklandrin/OnlySwitch/releases/download/release_3.1.0/OnlySwitch.dmg",
-  "vendor_url": "https://github.com/jacklandrin/OnlySwitch/releases/download/release_3.1.0/OnlySwitch.dmg",
+  "version": "3.2.0",
+  "url": "https://github.com/jacklandrin/OnlySwitch/releases/download/release_3.2.0/OnlySwitch.dmg",
+  "vendor_url": "https://github.com/jacklandrin/OnlySwitch/releases/download/release_3.2.0/OnlySwitch.dmg",
   "bundleId": "com.jacklandrin.OnlySwitch",
   "homepage": "https://github.com/jacklandrin/OnlySwitch",
   "homebrew_cask": "only-switch",
   "fileName": "OnlySwitch.dmg",
-  "sha": "362f80f9cfb5fca573df767afa92213b29b7e943700c42ffb37fef50a2e53205",
+  "sha": "821b45a66a1e6e5688a03a43bd0240763d1fc7e67b8414b1dbea179aaf75cf24",
   "category": "Utilities",
   "publisher": "jacklandrin",
   "previous_version": "3.1.0"

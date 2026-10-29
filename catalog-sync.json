@@ -1,10 +1,18 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-28T10:33:53.843198Z",
-  "lastFullSyncAt": "2026-10-28T10:33:53.843198Z",
+  "lastPublishedAt": "2026-10-29T01:12:21.348549Z",
+  "lastFullSyncAt": "2026-10-29T01:12:21.348549Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
+    {
+      "app": "8x8_work",
+      "stage": "collection"
+    },
+    {
+      "app": "android_studio",
+      "stage": "collection"
+    },
     {
       "app": "brave",
       "stage": "collection"
@@ -74,10 +82,18 @@
       "stage": "collection"
     },
     {
+      "app": "webex",
+      "stage": "collection"
+    },
+    {
+      "app": "wechat_for_mac",
+      "stage": "collection"
+    },
+    {
       "app": "xmind",
       "stage": "collection"
     }
   ],
   "appCount": 1152,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/40668975419"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/40794407982"
 }
