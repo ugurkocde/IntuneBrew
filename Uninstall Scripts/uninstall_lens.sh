@@ -25,6 +25,14 @@ elif [ -f "/Applications/Lens.app" ]; then
     rm -f "/Applications/Lens.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.kontena-lens.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.kontena-lens.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.kontena-lens.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.kontena-lens.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.kontena-lens.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.electron.kontena-lens.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Lens
 echo "Removing $HOME/Library/Application Support/Lens..."
 if [ -d "$HOME/Library/Application Support/Lens" ]; then
@@ -41,6 +49,14 @@ elif [ -f "$HOME/Library/Caches/Lens" ]; then
     rm -f "$HOME/Library/Caches/Lens" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/Lens
+echo "Removing $HOME/Library/Logs/Lens..."
+if [ -d "$HOME/Library/Logs/Lens" ]; then
+    rm -rf "$HOME/Library/Logs/Lens" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Lens" ]; then
+    rm -f "$HOME/Library/Logs/Lens" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.electron.kontena-lens.plist
 echo "Removing $HOME/Library/Preferences/com.electron.kontena-lens.plist..."
 if [ -d "$HOME/Library/Preferences/com.electron.kontena-lens.plist" ]; then
@@ -55,6 +71,14 @@ if [ -d "$HOME/Library/Saved Application State/com.electron.kontena-lens.savedSt
     rm -rf "$HOME/Library/Saved Application State/com.electron.kontena-lens.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.electron.kontena-lens.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.electron.kontena-lens.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/.k8slens
+echo "Removing $HOME/.k8slens..."
+if [ -d "$HOME/.k8slens" ]; then
+    rm -rf "$HOME/.k8slens" 2>/dev/null || true
+elif [ -f "$HOME/.k8slens" ]; then
+    rm -f "$HOME/.k8slens" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

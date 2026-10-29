@@ -69,6 +69,14 @@ elif [ -f "$HOME/Library/Cookies/com.nordvpn.macos.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/com.nordvpn.macos.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.nordvpn.macos
+echo "Removing $HOME/Library/HTTPStorages/com.nordvpn.macos..."
+if [ -d "$HOME/Library/HTTPStorages/com.nordvpn.macos" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.nordvpn.macos" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.nordvpn.macos" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.nordvpn.macos" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/NordVPN
 echo "Removing $HOME/Library/Logs/NordVPN..."
 if [ -d "$HOME/Library/Logs/NordVPN" ]; then
@@ -83,6 +91,14 @@ if [ -d "$HOME/Library/Preferences/com.nordvpn.macos.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.nordvpn.macos.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.nordvpn.macos.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.nordvpn.macos.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/group.com.nordvpn.macos.firebase.plist
+echo "Removing $HOME/Library/Preferences/group.com.nordvpn.macos.firebase.plist..."
+if [ -d "$HOME/Library/Preferences/group.com.nordvpn.macos.firebase.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/group.com.nordvpn.macos.firebase.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/group.com.nordvpn.macos.firebase.plist" ]; then
+    rm -f "$HOME/Library/Preferences/group.com.nordvpn.macos.firebase.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.nordvpn.macos.savedState

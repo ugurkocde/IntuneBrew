@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Caches/Chromium" ]; then
     rm -f "$HOME/Library/Caches/Chromium" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/io.ungoogled-software.ungoogled-chromium.plist
+echo "Removing $HOME/Library/Preferences/io.ungoogled-software.ungoogled-chromium.plist..."
+if [ -d "$HOME/Library/Preferences/io.ungoogled-software.ungoogled-chromium.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/io.ungoogled-software.ungoogled-chromium.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/io.ungoogled-software.ungoogled-chromium.plist" ]; then
+    rm -f "$HOME/Library/Preferences/io.ungoogled-software.ungoogled-chromium.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/org.chromium.Chromium.plist
 echo "Removing $HOME/Library/Preferences/org.chromium.Chromium.plist..."
 if [ -d "$HOME/Library/Preferences/org.chromium.Chromium.plist" ]; then

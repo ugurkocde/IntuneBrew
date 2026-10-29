@@ -25,6 +25,14 @@ elif [ -f "/Applications/ente.app" ]; then
     rm -f "/Applications/ente.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ente.bhari-frame.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ente.bhari-frame.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ente.bhari-frame.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ente.bhari-frame.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ente.bhari-frame.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.ente.bhari-frame.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/ente
 echo "Removing $HOME/Library/Application Support/ente..."
 if [ -d "$HOME/Library/Application Support/ente" ]; then

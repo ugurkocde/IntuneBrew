@@ -29,6 +29,30 @@ elif [ -f "/Applications/RStudio.app" ]; then
     rm -f "/Applications/RStudio.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rstudio.desktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rstudio.desktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rstudio.desktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rstudio.desktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rstudio.desktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.rstudio.desktop.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/RStudio
+echo "Removing $HOME/Library/Application Support/RStudio..."
+if [ -d "$HOME/Library/Application Support/RStudio" ]; then
+    rm -rf "$HOME/Library/Application Support/RStudio" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/RStudio" ]; then
+    rm -f "$HOME/Library/Application Support/RStudio" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.rstudio.desktop.plist
+echo "Removing $HOME/Library/Preferences/com.rstudio.desktop.plist..."
+if [ -d "$HOME/Library/Preferences/com.rstudio.desktop.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.rstudio.desktop.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.rstudio.desktop.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.rstudio.desktop.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/.rstudio-desktop
 echo "Removing $HOME/.rstudio-desktop..."
 if [ -d "$HOME/.rstudio-desktop" ]; then

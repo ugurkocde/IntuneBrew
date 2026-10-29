@@ -33,6 +33,14 @@ elif [ -f "$HOME/dbgate-data" ]; then
     rm -f "$HOME/dbgate-data" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.dbgate.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.dbgate.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.dbgate.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.dbgate.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.dbgate.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.dbgate.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/dbgate
 echo "Removing $HOME/Library/Application Support/dbgate..."
 if [ -d "$HOME/Library/Application Support/dbgate" ]; then
@@ -63,6 +71,14 @@ if [ -d "$HOME/Library/Saved Application State/org.dbgate.savedState" ]; then
     rm -rf "$HOME/Library/Saved Application State/org.dbgate.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/org.dbgate.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/org.dbgate.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/.dbgate
+echo "Removing $HOME/.dbgate..."
+if [ -d "$HOME/.dbgate" ]; then
+    rm -rf "$HOME/.dbgate" 2>/dev/null || true
+elif [ -f "$HOME/.dbgate" ]; then
+    rm -f "$HOME/.dbgate" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

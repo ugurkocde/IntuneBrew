@@ -25,6 +25,14 @@ elif [ -f "/Applications/Freelens.app" ]; then
     rm -f "/Applications/Freelens.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.freelens.freelens.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.freelens.freelens.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.freelens.freelens.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.freelens.freelens.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.freelens.freelens.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.freelens.freelens.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Freelens
 echo "Removing $HOME/Library/Application Support/Freelens..."
 if [ -d "$HOME/Library/Application Support/Freelens" ]; then
@@ -39,6 +47,14 @@ if [ -d "$HOME/Library/Logs/Freelens" ]; then
     rm -rf "$HOME/Library/Logs/Freelens" 2>/dev/null || true
 elif [ -f "$HOME/Library/Logs/Freelens" ]; then
     rm -f "$HOME/Library/Logs/Freelens" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/app.freelens.Freelens.plist
+echo "Removing $HOME/Library/Preferences/app.freelens.Freelens.plist..."
+if [ -d "$HOME/Library/Preferences/app.freelens.Freelens.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/app.freelens.Freelens.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/app.freelens.Freelens.plist" ]; then
+    rm -f "$HOME/Library/Preferences/app.freelens.Freelens.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
