@@ -33,6 +33,14 @@ elif [ -f "$HOME/.config/joplin-desktop" ]; then
     rm -f "$HOME/.config/joplin-desktop" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.cozic.joplin-desktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.cozic.joplin-desktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.cozic.joplin-desktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.cozic.joplin-desktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.cozic.joplin-desktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/net.cozic.joplin-desktop.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Joplin
 echo "Removing $HOME/Library/Application Support/Joplin..."
 if [ -d "$HOME/Library/Application Support/Joplin" ]; then

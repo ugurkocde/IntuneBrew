@@ -21,6 +21,22 @@ pkill -f "DingTalk" 2>/dev/null || true
 echo "Stopping application with bundle ID com.alibaba.DingTalkMac if running..."
 killall -9 "com.alibaba.DingTalkMac" 2>/dev/null || true
 
+# Remove $HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTFinderSyncExt
+echo "Removing $HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTFinderSyncExt..."
+if [ -d "$HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTFinderSyncExt" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTFinderSyncExt" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTFinderSyncExt" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTFinderSyncExt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTShareExtension
+echo "Removing $HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTShareExtension..."
+if [ -d "$HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTShareExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTShareExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTShareExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.alibaba.DingTalkMac.DTShareExtension" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/DingTalkMac
 echo "Removing $HOME/Library/Application Support/DingTalkMac..."
 if [ -d "$HOME/Library/Application Support/DingTalkMac" ]; then
@@ -51,6 +67,22 @@ if [ -d "$HOME/Library/Caches/DingTalk" ]; then
     rm -rf "$HOME/Library/Caches/DingTalk" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/DingTalk" ]; then
     rm -f "$HOME/Library/Caches/DingTalk" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.alibaba.DingTalkMac.DTFinderSyncExt
+echo "Removing $HOME/Library/Containers/com.alibaba.DingTalkMac.DTFinderSyncExt..."
+if [ -d "$HOME/Library/Containers/com.alibaba.DingTalkMac.DTFinderSyncExt" ]; then
+    rm -rf "$HOME/Library/Containers/com.alibaba.DingTalkMac.DTFinderSyncExt" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.alibaba.DingTalkMac.DTFinderSyncExt" ]; then
+    rm -f "$HOME/Library/Containers/com.alibaba.DingTalkMac.DTFinderSyncExt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.alibaba.DingTalkMac.DTShareExtension
+echo "Removing $HOME/Library/Containers/com.alibaba.DingTalkMac.DTShareExtension..."
+if [ -d "$HOME/Library/Containers/com.alibaba.DingTalkMac.DTShareExtension" ]; then
+    rm -rf "$HOME/Library/Containers/com.alibaba.DingTalkMac.DTShareExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.alibaba.DingTalkMac.DTShareExtension" ]; then
+    rm -f "$HOME/Library/Containers/com.alibaba.DingTalkMac.DTShareExtension" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.alibaba.DingTalk-Helper.plist
