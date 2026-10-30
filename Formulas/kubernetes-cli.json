@@ -5,7 +5,6 @@
   "homepage": "https://kubernetes.io/docs/reference/kubectl/",
   "url": "https://intunebrew.blob.core.windows.net/pkg/kubernetes-cli_1.37.2_arm64.pkg",
   "fileName": "kubernetes-cli_1.37.2_arm64.pkg",
-  "sha": "34fb9b76c4bc61f73a8705208383c37ca5990120f816b30235b3f68ad6229ebb",
   "bundledDependencies": [],
   "binaryPath": "/usr/local/bin/kubernetes-cli"
 }
