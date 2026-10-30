@@ -25,6 +25,14 @@ elif [ -f "/Applications/Home Assistant.app" ]; then
     rm -f "/Applications/Home Assistant.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.io.robbie.homeassistant
+echo "Removing $HOME/Library/Application Scripts/group.io.robbie.homeassistant..."
+if [ -d "$HOME/Library/Application Scripts/group.io.robbie.homeassistant" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.io.robbie.homeassistant" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.io.robbie.homeassistant" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.io.robbie.homeassistant" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/io.robbie.HomeAssistant
 echo "Removing $HOME/Library/Application Scripts/io.robbie.HomeAssistant..."
 if [ -d "$HOME/Library/Application Scripts/io.robbie.HomeAssistant" ]; then

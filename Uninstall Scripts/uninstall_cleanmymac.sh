@@ -81,12 +81,28 @@ elif [ -f "/Users/Shared/CleanMyMac_5" ]; then
     rm -f "/Users/Shared/CleanMyMac_5" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.macpaw.CleanMyMac5.FinderSyncExtension
+echo "Removing $HOME/Library/Application Scripts/com.macpaw.CleanMyMac5.FinderSyncExtension..."
+if [ -d "$HOME/Library/Application Scripts/com.macpaw.CleanMyMac5.FinderSyncExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.macpaw.CleanMyMac5.FinderSyncExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.macpaw.CleanMyMac5.FinderSyncExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.macpaw.CleanMyMac5.FinderSyncExtension" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac5
 echo "Removing $HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac5..."
 if [ -d "$HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac5" ]; then
     rm -rf "$HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac5" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac5" ]; then
     rm -f "$HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac5" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac4
+echo "Removing $HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac4..."
+if [ -d "$HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac4" ]; then
+    rm -rf "$HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac4" ]; then
+    rm -f "$HOME/Library/Application Scripts/S8EX82NJP6.com.macpaw.CleanMyMac4" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/CleanMyMac_5
@@ -105,12 +121,28 @@ elif [ -f "$HOME/Library/Caches/com.macpaw.CleanMyMac5" ]; then
     rm -f "$HOME/Library/Caches/com.macpaw.CleanMyMac5" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/com.macpaw.CleanMyMac5.FinderSyncExtension
+echo "Removing $HOME/Library/Containers/com.macpaw.CleanMyMac5.FinderSyncExtension..."
+if [ -d "$HOME/Library/Containers/com.macpaw.CleanMyMac5.FinderSyncExtension" ]; then
+    rm -rf "$HOME/Library/Containers/com.macpaw.CleanMyMac5.FinderSyncExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.macpaw.CleanMyMac5.FinderSyncExtension" ]; then
+    rm -f "$HOME/Library/Containers/com.macpaw.CleanMyMac5.FinderSyncExtension" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac5
 echo "Removing $HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac5..."
 if [ -d "$HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac5" ]; then
     rm -rf "$HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac5" 2>/dev/null || true
 elif [ -f "$HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac5" ]; then
     rm -f "$HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac5" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac4
+echo "Removing $HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac4..."
+if [ -d "$HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac4" ]; then
+    rm -rf "$HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac4" ]; then
+    rm -f "$HOME/Library/Group Containers/S8EX82NJP6.com.macpaw.CleanMyMac4" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.macpaw.CleanMyMac5

@@ -25,6 +25,14 @@ elif [ -f "/Applications/Insomnia.app" ]; then
     rm -f "/Applications/Insomnia.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.insomnia.app.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.insomnia.app.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.insomnia.app.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.insomnia.app.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.insomnia.app.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.insomnia.app.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Insomnia
 echo "Removing $HOME/Library/Application Support/Insomnia..."
 if [ -d "$HOME/Library/Application Support/Insomnia" ]; then
@@ -55,6 +63,22 @@ if [ -d "$HOME/Library/Cookies/com.insomnia.app.binarycookies" ]; then
     rm -rf "$HOME/Library/Cookies/com.insomnia.app.binarycookies" 2>/dev/null || true
 elif [ -f "$HOME/Library/Cookies/com.insomnia.app.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/com.insomnia.app.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.insomnia.app
+echo "Removing $HOME/Library/HTTPStorages/com.insomnia.app..."
+if [ -d "$HOME/Library/HTTPStorages/com.insomnia.app" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.insomnia.app" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.insomnia.app" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.insomnia.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/Insomnia
+echo "Removing $HOME/Library/Logs/Insomnia..."
+if [ -d "$HOME/Library/Logs/Insomnia" ]; then
+    rm -rf "$HOME/Library/Logs/Insomnia" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Insomnia" ]; then
+    rm -f "$HOME/Library/Logs/Insomnia" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/ByHost/com.insomnia.app.ShipIt.*.plist

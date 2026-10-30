@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/airtame-application" ]; then
     rm -f "$HOME/Library/Application Support/airtame-application" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.airtame.airtame-application.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.airtame.airtame-application.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.airtame.airtame-application.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.airtame.airtame-application.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.airtame.airtame-application.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.airtame.airtame-application.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/Airtame
 echo "Removing $HOME/Library/Logs/Airtame..."
 if [ -d "$HOME/Library/Logs/Airtame" ]; then

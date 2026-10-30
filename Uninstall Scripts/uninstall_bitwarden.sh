@@ -33,6 +33,22 @@ elif [ -f "/Applications/Bitwarden.app" ]; then
     rm -f "/Applications/Bitwarden.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.bitwarden.desktop.autofill-extension
+echo "Removing $HOME/Library/Application Scripts/com.bitwarden.desktop.autofill-extension..."
+if [ -d "$HOME/Library/Application Scripts/com.bitwarden.desktop.autofill-extension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.bitwarden.desktop.autofill-extension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.bitwarden.desktop.autofill-extension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.bitwarden.desktop.autofill-extension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/LTZ2PFU5D6.com.bitwarden.desktop
+echo "Removing $HOME/Library/Application Scripts/LTZ2PFU5D6.com.bitwarden.desktop..."
+if [ -d "$HOME/Library/Application Scripts/LTZ2PFU5D6.com.bitwarden.desktop" ]; then
+    rm -rf "$HOME/Library/Application Scripts/LTZ2PFU5D6.com.bitwarden.desktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/LTZ2PFU5D6.com.bitwarden.desktop" ]; then
+    rm -f "$HOME/Library/Application Scripts/LTZ2PFU5D6.com.bitwarden.desktop" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Bitwarden
 echo "Removing $HOME/Library/Application Support/Bitwarden..."
 if [ -d "$HOME/Library/Application Support/Bitwarden" ]; then
@@ -63,6 +79,22 @@ if [ -d "$HOME/Library/Caches/com.bitwarden.desktop.ShipIt" ]; then
     rm -rf "$HOME/Library/Caches/com.bitwarden.desktop.ShipIt" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.bitwarden.desktop.ShipIt" ]; then
     rm -f "$HOME/Library/Caches/com.bitwarden.desktop.ShipIt" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.bitwarden.desktop.autofill-extension
+echo "Removing $HOME/Library/Containers/com.bitwarden.desktop.autofill-extension..."
+if [ -d "$HOME/Library/Containers/com.bitwarden.desktop.autofill-extension" ]; then
+    rm -rf "$HOME/Library/Containers/com.bitwarden.desktop.autofill-extension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.bitwarden.desktop.autofill-extension" ]; then
+    rm -f "$HOME/Library/Containers/com.bitwarden.desktop.autofill-extension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/LTZ2PFU5D6.com.bitwarden.desktop
+echo "Removing $HOME/Library/Group Containers/LTZ2PFU5D6.com.bitwarden.desktop..."
+if [ -d "$HOME/Library/Group Containers/LTZ2PFU5D6.com.bitwarden.desktop" ]; then
+    rm -rf "$HOME/Library/Group Containers/LTZ2PFU5D6.com.bitwarden.desktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/LTZ2PFU5D6.com.bitwarden.desktop" ]; then
+    rm -f "$HOME/Library/Group Containers/LTZ2PFU5D6.com.bitwarden.desktop" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Logs/Bitwarden

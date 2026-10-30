@@ -37,6 +37,22 @@ elif [ -f "$HOME/Library/Application Scripts/org.zotero.SafariExtensionApp.Safar
     rm -f "$HOME/Library/Application Scripts/org.zotero.SafariExtensionApp.SafariExtension" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/org.zotero.zotero.SafariExtension
+echo "Removing $HOME/Library/Application Scripts/org.zotero.zotero.SafariExtension..."
+if [ -d "$HOME/Library/Application Scripts/org.zotero.zotero.SafariExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/org.zotero.zotero.SafariExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/org.zotero.zotero.SafariExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/org.zotero.zotero.SafariExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/org.zotero.zotero.SafariWebExtension
+echo "Removing $HOME/Library/Application Scripts/org.zotero.zotero.SafariWebExtension..."
+if [ -d "$HOME/Library/Application Scripts/org.zotero.zotero.SafariWebExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/org.zotero.zotero.SafariWebExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/org.zotero.zotero.SafariWebExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/org.zotero.zotero.SafariWebExtension" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Zotero
 echo "Removing $HOME/Library/Application Support/Zotero..."
 if [ -d "$HOME/Library/Application Support/Zotero" ]; then
@@ -59,6 +75,22 @@ if [ -d "$HOME/Library/Containers/org.zotero.SafariExtensionApp.SafariExtension"
     rm -rf "$HOME/Library/Containers/org.zotero.SafariExtensionApp.SafariExtension" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/org.zotero.SafariExtensionApp.SafariExtension" ]; then
     rm -f "$HOME/Library/Containers/org.zotero.SafariExtensionApp.SafariExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/org.zotero.zotero.SafariExtension
+echo "Removing $HOME/Library/Containers/org.zotero.zotero.SafariExtension..."
+if [ -d "$HOME/Library/Containers/org.zotero.zotero.SafariExtension" ]; then
+    rm -rf "$HOME/Library/Containers/org.zotero.zotero.SafariExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/org.zotero.zotero.SafariExtension" ]; then
+    rm -f "$HOME/Library/Containers/org.zotero.zotero.SafariExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/org.zotero.zotero.SafariWebExtension
+echo "Removing $HOME/Library/Containers/org.zotero.zotero.SafariWebExtension..."
+if [ -d "$HOME/Library/Containers/org.zotero.zotero.SafariWebExtension" ]; then
+    rm -rf "$HOME/Library/Containers/org.zotero.zotero.SafariWebExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/org.zotero.zotero.SafariWebExtension" ]; then
+    rm -f "$HOME/Library/Containers/org.zotero.zotero.SafariWebExtension" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/org.zotero.zotero.plist

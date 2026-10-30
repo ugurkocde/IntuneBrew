@@ -17,6 +17,12 @@ fi
 echo "Stopping Dropzone if running..."
 pkill -f "Dropzone" 2>/dev/null || true
 
+# Unload service com.aptonic.LaunchAtLogin
+echo "Unloading service com.aptonic.LaunchAtLogin..."
+launchctl unload -w /Library/LaunchAgents/com.aptonic.LaunchAtLogin.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.aptonic.LaunchAtLogin.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.aptonic.LaunchAtLogin.plist 2>/dev/null || true
+
 # Remove /Applications/Dropzone 4.app
 echo "Removing /Applications/Dropzone 4.app..."
 if [ -d "/Applications/Dropzone 4.app" ]; then

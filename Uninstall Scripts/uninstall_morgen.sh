@@ -25,6 +25,14 @@ elif [ -f "/Applications/Morgen.app" ]; then
     rm -f "/Applications/Morgen.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.todesktop.210203cqcj00tw1.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.todesktop.210203cqcj00tw1.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.todesktop.210203cqcj00tw1.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.todesktop.210203cqcj00tw1.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.todesktop.210203cqcj00tw1.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.todesktop.210203cqcj00tw1.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Morgen
 echo "Removing $HOME/Library/Application Support/Morgen..."
 if [ -d "$HOME/Library/Application Support/Morgen" ]; then
