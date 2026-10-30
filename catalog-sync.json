@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-29T01:12:21.348549Z",
-  "lastFullSyncAt": "2026-10-29T01:12:21.348549Z",
+  "lastPublishedAt": "2026-10-30T01:24:00.941399Z",
+  "lastFullSyncAt": "2026-10-30T01:24:00.941399Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -26,6 +26,10 @@
       "stage": "collection"
     },
     {
+      "app": "fontagent",
+      "stage": "scraper"
+    },
+    {
       "app": "goodsync",
       "stage": "collection"
     },
@@ -34,11 +38,23 @@
       "stage": "collection"
     },
     {
+      "app": "hopper_disassembler",
+      "stage": "collection"
+    },
+    {
       "app": "jasp",
       "stage": "collection"
     },
     {
       "app": "lens",
+      "stage": "collection"
+    },
+    {
+      "app": "libreoffice",
+      "stage": "collection"
+    },
+    {
+      "app": "lm_studio",
       "stage": "collection"
     },
     {
@@ -63,6 +79,10 @@
     },
     {
       "app": "opera_gx",
+      "stage": "collection"
+    },
+    {
+      "app": "parallels_desktop",
       "stage": "collection"
     },
     {
@@ -95,5 +115,5 @@
     }
   ],
   "appCount": 1152,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/40794407982"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/40980068479"
 }

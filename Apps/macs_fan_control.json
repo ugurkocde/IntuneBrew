@@ -9,7 +9,7 @@
   "fileName": "macs_fan_control_1.5.23.pkg",
   "type": "app",
   "sha": "467f1052541a0a1a7795b624340db731d5fbd5244f3e8e3f102c361686a546fd",
-  "previous_version": "1.5.22",
+  "previous_version": "1.5.23",
   "category": "Utilities",
   "publisher": "CrystalIDEA srl",
   "homebrew_cask": "macs-fan-control"

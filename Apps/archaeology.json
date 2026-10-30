@@ -1,14 +1,14 @@
 {
   "name": "Archaeology",
   "description": "Tool for digging into binary files",
-  "version": "1.7",
+  "version": "1.8",
   "url": "https://www.mothersruin.com/software/downloads/Archaeology.dmg",
   "vendor_url": "https://www.mothersruin.com/software/downloads/Archaeology.dmg",
   "bundleId": "com.mothersruin.Archaeology",
   "homepage": "https://www.mothersruin.com/software/Archaeology/",
   "homebrew_cask": "archaeology",
   "fileName": "Archaeology.dmg",
-  "sha": "9bdb9eea72849e740547a9e3711a02fd6f4e4d4c59a954e2dcea2090a2828d58",
+  "sha": "9a557eef2e991cac17315122db6595e6d028adc97f4d44fa842ac9228d1eb8ec",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:33:47Z",
     "qa_result": "Installation successful and verified",

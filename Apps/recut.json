@@ -1,15 +1,15 @@
 {
   "name": "Recut",
   "description": "Remove silence from videos and automatically generate a cut list",
-  "version": "4.5.0",
-  "url": "https://updates.getrecut.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTk1LCJwdXIiOiJibG9iX2lkIn19--9a27121e4922b32d9222a6daa09892f1676b5335/Recut_4.5.0_universal.dmg",
-  "vendor_url": "https://updates.getrecut.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MTk1LCJwdXIiOiJibG9iX2lkIn19--9a27121e4922b32d9222a6daa09892f1676b5335/Recut_4.5.0_universal.dmg",
+  "version": "4.5.1",
+  "url": "https://updates.getrecut.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjAxLCJwdXIiOiJibG9iX2lkIn19--8291121e8a216f767e8f0ec358b5b218169778b4/Recut_4.5.1_universal.dmg",
+  "vendor_url": "https://updates.getrecut.com/rails/active_storage/blobs/redirect/eyJfcmFpbHMiOnsiZGF0YSI6MjAxLCJwdXIiOiJibG9iX2lkIn19--8291121e8a216f767e8f0ec358b5b218169778b4/Recut_4.5.1_universal.dmg",
   "bundleId": "co.tinywins.recut",
   "homepage": "https://getrecut.com/",
   "homebrew_cask": "recut",
-  "fileName": "Recut_4.5.0_universal.dmg",
-  "sha": "ace7247c229f733cfe875b915e5ca09a80fa775efbc5675c952f15576c292f40",
+  "fileName": "Recut_4.5.1_universal.dmg",
+  "sha": "80fad7d3fec49ad2c47e0683c757cfb4a5694c55ddab6d834e29895164bf8178",
   "category": "Media",
   "publisher": "Recut, Inc.",
-  "previous_version": "4.4.8"
+  "previous_version": "4.5.0"
 }

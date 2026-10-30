@@ -11,6 +11,6 @@
   "sha": "f8db48a6550d49f93cc08878b6ffc2b53bbb9256883ce5b8924b6a85ea1025a5",
   "category": "Developer Tools",
   "publisher": "Bezel",
-  "previous_version": "5.4.0",
+  "previous_version": "5.4.1",
   "homebrew_cask": "bezel"
 }
