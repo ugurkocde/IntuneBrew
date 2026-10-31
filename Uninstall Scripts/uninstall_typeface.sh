@@ -37,12 +37,28 @@ elif [ -f "$HOME/Library/Application Scripts/com.criminalbird.typeface.standalon
     rm -f "$HOME/Library/Application Scripts/com.criminalbird.typeface.standalone" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.com.criminalbird.typeface
+echo "Removing $HOME/Library/Application Scripts/group.com.criminalbird.typeface..."
+if [ -d "$HOME/Library/Application Scripts/group.com.criminalbird.typeface" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.com.criminalbird.typeface" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.com.criminalbird.typeface" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.com.criminalbird.typeface" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.criminalbird.typeface.standalone
 echo "Removing $HOME/Library/Containers/com.criminalbird.typeface.standalone..."
 if [ -d "$HOME/Library/Containers/com.criminalbird.typeface.standalone" ]; then
     rm -rf "$HOME/Library/Containers/com.criminalbird.typeface.standalone" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.criminalbird.typeface.standalone" ]; then
     rm -f "$HOME/Library/Containers/com.criminalbird.typeface.standalone" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/group.com.criminalbird.typeface
+echo "Removing $HOME/Library/Group Containers/group.com.criminalbird.typeface..."
+if [ -d "$HOME/Library/Group Containers/group.com.criminalbird.typeface" ]; then
+    rm -rf "$HOME/Library/Group Containers/group.com.criminalbird.typeface" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/group.com.criminalbird.typeface" ]; then
+    rm -f "$HOME/Library/Group Containers/group.com.criminalbird.typeface" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.criminalbird.typeface.standalone.plist

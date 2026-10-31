@@ -45,6 +45,14 @@ elif [ -f "$HOME/Library/Caches/io.hoppscotch.desktop" ]; then
     rm -f "$HOME/Library/Caches/io.hoppscotch.desktop" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/io.hoppscotch.desktop
+echo "Removing $HOME/Library/Logs/io.hoppscotch.desktop..."
+if [ -d "$HOME/Library/Logs/io.hoppscotch.desktop" ]; then
+    rm -rf "$HOME/Library/Logs/io.hoppscotch.desktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/io.hoppscotch.desktop" ]; then
+    rm -f "$HOME/Library/Logs/io.hoppscotch.desktop" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/io.hoppscotch.desktop.savedState
 echo "Removing $HOME/Library/Saved Application State/io.hoppscotch.desktop.savedState..."
 if [ -d "$HOME/Library/Saved Application State/io.hoppscotch.desktop.savedState" ]; then

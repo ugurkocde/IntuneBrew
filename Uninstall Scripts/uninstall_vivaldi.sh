@@ -37,6 +37,14 @@ elif [ -f "/Library/Logs/DiagnosticReports/Vivaldi Helper (Renderer)_*.diag" ]; 
     rm -f "/Library/Logs/DiagnosticReports/Vivaldi Helper (Renderer)_*.diag" 2>/dev/null || true
 fi
 
+# Remove /Library/Logs/DiagnosticReports/Vivaldi Helper_*.diag
+echo "Removing /Library/Logs/DiagnosticReports/Vivaldi Helper_*.diag..."
+if [ -d "/Library/Logs/DiagnosticReports/Vivaldi Helper_*.diag" ]; then
+    rm -rf "/Library/Logs/DiagnosticReports/Vivaldi Helper_*.diag" 2>/dev/null || true
+elif [ -f "/Library/Logs/DiagnosticReports/Vivaldi Helper_*.diag" ]; then
+    rm -f "/Library/Logs/DiagnosticReports/Vivaldi Helper_*.diag" 2>/dev/null || true
+fi
+
 # Remove /Library/Logs/DiagnosticReports/Vivaldi_*.diag
 echo "Removing /Library/Logs/DiagnosticReports/Vivaldi_*.diag..."
 if [ -d "/Library/Logs/DiagnosticReports/Vivaldi_*.diag" ]; then
