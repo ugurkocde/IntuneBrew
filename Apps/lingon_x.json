@@ -12,5 +12,7 @@
   "category": "Utilities",
   "publisher": "Peter Borg Apps",
   "previous_version": "9.6.6",
-  "homebrew_cask": "lingon-x"
+  "homebrew_cask": "lingon-x",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-10-30T01:24:00.941399Z",
-  "lastFullSyncAt": "2026-10-30T01:24:00.941399Z",
+  "lastPublishedAt": "2026-10-31T01:02:25.777534Z",
+  "lastFullSyncAt": "2026-10-31T01:02:25.777534Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -26,6 +26,10 @@
       "stage": "collection"
     },
     {
+      "app": "expandrive",
+      "stage": "collection"
+    },
+    {
       "app": "fontagent",
       "stage": "scraper"
     },
@@ -42,7 +46,15 @@
       "stage": "collection"
     },
     {
+      "app": "hoppscotch",
+      "stage": "collection"
+    },
+    {
       "app": "jasp",
+      "stage": "collection"
+    },
+    {
+      "app": "keeper_password_manager",
       "stage": "collection"
     },
     {
@@ -114,6 +126,6 @@
       "stage": "collection"
     }
   ],
-  "appCount": 1152,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/40980068479"
+  "appCount": 1151,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/41149994421"
 }

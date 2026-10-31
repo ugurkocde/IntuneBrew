@@ -1,14 +1,14 @@
 {
   "name": "Cryptomator",
   "description": "Multi-platform client-side cloud file encryption tool",
-  "version": "1.19.5",
-  "url": "https://github.com/cryptomator/cryptomator/releases/download/1.19.5/Cryptomator-1.19.5-arm64.dmg",
-  "vendor_url": "https://github.com/cryptomator/cryptomator/releases/download/1.19.5/Cryptomator-1.19.5-arm64.dmg",
+  "version": "1.19.6",
+  "url": "https://github.com/cryptomator/cryptomator/releases/download/1.19.6/Cryptomator-1.19.6-arm64.dmg",
+  "vendor_url": "https://github.com/cryptomator/cryptomator/releases/download/1.19.6/Cryptomator-1.19.6-arm64.dmg",
   "bundleId": "org.cryptomator",
   "homepage": "https://cryptomator.org/",
   "homebrew_cask": "cryptomator",
-  "fileName": "Cryptomator-1.19.5-arm64.dmg",
-  "sha": "0df28420179f63a3a9b44c2212907c590b7cd92875970f54a16960db29de3beb",
+  "fileName": "Cryptomator-1.19.6-arm64.dmg",
+  "sha": "fdfc8ef50b10baca1078b7a9edf404e330363c8a3a40fda29f86dd5d3a0a0b02",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:27:25Z",
     "qa_result": "Installation successful and verified",
@@ -21,5 +21,5 @@
   },
   "category": "Security",
   "publisher": "The Cryptomator Project",
-  "previous_version": "1.19.4"
+  "previous_version": "1.19.5"
 }

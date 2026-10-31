@@ -2,14 +2,14 @@
   "name": "DingTalk",
   "description": "Teamwork app by Alibaba Group",
   "version": "9.0.5",
-  "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/mac_dmg/Release/DingTalk_v9.0.5-Installer_59529713_universal.dmg",
-  "vendor_url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/mac_dmg/Release/DingTalk_v9.0.5-Installer_59529713_universal.dmg",
+  "url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/mac_dmg/Release/DingTalk_v9.0.5-Installer_59563623_universal.dmg",
+  "vendor_url": "https://dtapp-pub.dingtalk.com/dingtalk-desktop/mac_dmg/Release/DingTalk_v9.0.5-Installer_59563623_universal.dmg",
   "bundleId": "com.alibaba.DingTalkMac",
   "homepage": "https://www.dingtalk.com/",
   "homebrew_cask": "dingtalk",
-  "fileName": "DingTalk_v9.0.5-Installer_59529713_universal.dmg",
-  "sha": "5f17b2143533dbbcccb189aa1b1c8f5c30e259102a7f5b96e2efc2087de59999",
+  "fileName": "DingTalk_v9.0.5-Installer_59563623_universal.dmg",
+  "sha": "8fc21f498c56952bd2fe6d035cfc97aa47c75de8ad020449b85f2fd97dafe22a",
   "category": "Communication",
   "publisher": "Alibaba Group",
-  "previous_version": "9.0.2"
+  "previous_version": "9.0.5"
 }
