@@ -41,6 +41,22 @@ elif [ -f "$HOME/Library/Application Support/Keeper Password Manager" ]; then
     rm -f "$HOME/Library/Application Support/Keeper Password Manager" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.keepersecurity.passwordmanager*
+echo "Removing $HOME/Library/Caches/com.keepersecurity.passwordmanager*..."
+if [ -d "$HOME/Library/Caches/com.keepersecurity.passwordmanager*" ]; then
+    rm -rf "$HOME/Library/Caches/com.keepersecurity.passwordmanager*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.keepersecurity.passwordmanager*" ]; then
+    rm -f "$HOME/Library/Caches/com.keepersecurity.passwordmanager*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.keepersecurity.passwordmanager
+echo "Removing $HOME/Library/HTTPStorages/com.keepersecurity.passwordmanager..."
+if [ -d "$HOME/Library/HTTPStorages/com.keepersecurity.passwordmanager" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.keepersecurity.passwordmanager" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.keepersecurity.passwordmanager" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.keepersecurity.passwordmanager" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.keepersecurity.passwordmanager.plist
 echo "Removing $HOME/Library/Preferences/com.keepersecurity.passwordmanager.plist..."
 if [ -d "$HOME/Library/Preferences/com.keepersecurity.passwordmanager.plist" ]; then

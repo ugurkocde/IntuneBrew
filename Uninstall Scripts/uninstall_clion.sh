@@ -17,6 +17,12 @@ fi
 echo "Stopping CLion if running..."
 pkill -f "CLion" 2>/dev/null || true
 
+# Unload service application.com.jetbrains.app.daemon.*
+echo "Unloading service application.com.jetbrains.app.daemon.*..."
+launchctl unload -w /Library/LaunchAgents/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.jetbrains.CLion if running
 echo "Stopping application with bundle ID com.jetbrains.CLion if running..."
 killall -9 "com.jetbrains.CLion" 2>/dev/null || true

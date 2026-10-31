@@ -17,6 +17,12 @@ fi
 echo "Stopping IntelliJ IDEA Ultimate if running..."
 pkill -f "IntelliJ IDEA Ultimate" 2>/dev/null || true
 
+# Unload service application.com.jetbrains.app.daemon.*
+echo "Unloading service application.com.jetbrains.app.daemon.*..."
+launchctl unload -w /Library/LaunchAgents/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.jetbrains.intellij if running
 echo "Stopping application with bundle ID com.jetbrains.intellij if running..."
 killall -9 "com.jetbrains.intellij" 2>/dev/null || true

@@ -17,6 +17,12 @@ fi
 echo "Stopping RustRover if running..."
 pkill -f "RustRover" 2>/dev/null || true
 
+# Unload service application.com.jetbrains.app.daemon.*
+echo "Unloading service application.com.jetbrains.app.daemon.*..."
+launchctl unload -w /Library/LaunchAgents/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.jetbrains.rustrover if running
 echo "Stopping application with bundle ID com.jetbrains.rustrover if running..."
 killall -9 "com.jetbrains.rustrover" 2>/dev/null || true

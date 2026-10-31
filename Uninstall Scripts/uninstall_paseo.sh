@@ -41,14 +41,6 @@ if [ -f "/Applications/Paseo.app/Paseo.app/Contents/Resources/bin/paseo" ]; then
     rm -f "/Applications/Paseo.app/Paseo.app/Contents/Resources/bin/paseo" 2>/dev/null || true
 fi
 
-# Remove $HOME/.paseo
-echo "Removing $HOME/.paseo..."
-if [ -d "$HOME/.paseo" ]; then
-    rm -rf "$HOME/.paseo" 2>/dev/null || true
-elif [ -f "$HOME/.paseo" ]; then
-    rm -f "$HOME/.paseo" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/sh.paseo.desktop.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/sh.paseo.desktop.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/sh.paseo.desktop.sfl*" ]; then

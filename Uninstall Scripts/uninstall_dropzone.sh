@@ -39,12 +39,36 @@ elif [ -f "$HOME/Library/Application Scripts/com.aptonic.Dropzone4" ]; then
     rm -f "$HOME/Library/Application Scripts/com.aptonic.Dropzone4" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS
+echo "Removing $HOME/Library/Application Scripts/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS..."
+if [ -d "$HOME/Library/Application Scripts/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/com.aptonic.LaunchAtLogin
 echo "Removing $HOME/Library/Application Scripts/com.aptonic.LaunchAtLogin..."
 if [ -d "$HOME/Library/Application Scripts/com.aptonic.LaunchAtLogin" ]; then
     rm -rf "$HOME/Library/Application Scripts/com.aptonic.LaunchAtLogin" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/com.aptonic.LaunchAtLogin" ]; then
     rm -f "$HOME/Library/Application Scripts/com.aptonic.LaunchAtLogin" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.aptonic.dropzone4.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.aptonic.dropzone4.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.aptonic.dropzone4.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.aptonic.dropzone4.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.aptonic.dropzone4.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.aptonic.dropzone4.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.aptonic.Dropzone4
+echo "Removing $HOME/Library/Application Support/com.aptonic.Dropzone4..."
+if [ -d "$HOME/Library/Application Support/com.aptonic.Dropzone4" ]; then
+    rm -rf "$HOME/Library/Application Support/com.aptonic.Dropzone4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.aptonic.Dropzone4" ]; then
+    rm -f "$HOME/Library/Application Support/com.aptonic.Dropzone4" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Dropzone 4
@@ -71,12 +95,28 @@ elif [ -f "$HOME/Library/Containers/com.aptonic.Dropzone4" ]; then
     rm -f "$HOME/Library/Containers/com.aptonic.Dropzone4" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS
+echo "Removing $HOME/Library/Containers/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS..."
+if [ -d "$HOME/Library/Containers/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS" ]; then
+    rm -rf "$HOME/Library/Containers/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS" ]; then
+    rm -f "$HOME/Library/Containers/com.aptonic.Dropzone4.Dropzone-Share-Extension-Non-MAS" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.aptonic.LaunchAtLogin
 echo "Removing $HOME/Library/Containers/com.aptonic.LaunchAtLogin..."
 if [ -d "$HOME/Library/Containers/com.aptonic.LaunchAtLogin" ]; then
     rm -rf "$HOME/Library/Containers/com.aptonic.LaunchAtLogin" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.aptonic.LaunchAtLogin" ]; then
     rm -f "$HOME/Library/Containers/com.aptonic.LaunchAtLogin" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.aptonic.Dropzone4*
+echo "Removing $HOME/Library/HTTPStorages/com.aptonic.Dropzone4*..."
+if [ -d "$HOME/Library/HTTPStorages/com.aptonic.Dropzone4*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.aptonic.Dropzone4*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.aptonic.Dropzone4*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.aptonic.Dropzone4*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.aptonic.Dropzone4.plist
@@ -93,6 +133,14 @@ if [ -d "$HOME/Library/Saved Application State/com.aptonic.Dropzone4.savedState"
     rm -rf "$HOME/Library/Saved Application State/com.aptonic.Dropzone4.savedState" 2>/dev/null || true
 elif [ -f "$HOME/Library/Saved Application State/com.aptonic.Dropzone4.savedState" ]; then
     rm -f "$HOME/Library/Saved Application State/com.aptonic.Dropzone4.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.aptonic.Dropzone4
+echo "Removing $HOME/Library/WebKit/com.aptonic.Dropzone4..."
+if [ -d "$HOME/Library/WebKit/com.aptonic.Dropzone4" ]; then
+    rm -rf "$HOME/Library/WebKit/com.aptonic.Dropzone4" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.aptonic.Dropzone4" ]; then
+    rm -f "$HOME/Library/WebKit/com.aptonic.Dropzone4" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

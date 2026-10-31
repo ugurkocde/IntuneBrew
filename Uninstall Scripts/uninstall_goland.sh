@@ -17,6 +17,12 @@ fi
 echo "Stopping Goland if running..."
 pkill -f "Goland" 2>/dev/null || true
 
+# Unload service application.com.jetbrains.app.daemon.*
+echo "Unloading service application.com.jetbrains.app.daemon.*..."
+launchctl unload -w /Library/LaunchAgents/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.jetbrains.goland if running
 echo "Stopping application with bundle ID com.jetbrains.goland if running..."
 killall -9 "com.jetbrains.goland" 2>/dev/null || true

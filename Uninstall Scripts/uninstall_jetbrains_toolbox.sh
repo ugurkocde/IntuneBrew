@@ -17,6 +17,12 @@ fi
 echo "Stopping JetBrains Toolbox if running..."
 pkill -f "JetBrains Toolbox" 2>/dev/null || true
 
+# Unload service application.com.jetbrains.app.daemon.*
+echo "Unloading service application.com.jetbrains.app.daemon.*..."
+launchctl unload -w /Library/LaunchAgents/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/application.com.jetbrains.app.daemon.*.plist 2>/dev/null || true
+
 # Unload service com.jetbrains.toolbox
 echo "Unloading service com.jetbrains.toolbox..."
 launchctl unload -w /Library/LaunchAgents/com.jetbrains.toolbox.plist 2>/dev/null || true

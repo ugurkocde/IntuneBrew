@@ -17,6 +17,10 @@ fi
 echo "Stopping Switch Audio Converter if running..."
 pkill -f "Switch Audio Converter" 2>/dev/null || true
 
+# Kill application with bundle ID com.nchsoftware.switch if running
+echo "Stopping application with bundle ID com.nchsoftware.switch if running..."
+killall -9 "com.nchsoftware.switch" 2>/dev/null || true
+
 # Remove /Applications/Switch.app
 echo "Removing /Applications/Switch.app..."
 if [ -d "/Applications/Switch.app" ]; then
