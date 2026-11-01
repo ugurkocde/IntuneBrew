@@ -59,6 +59,14 @@ elif [ -f "$HOME/Library/Logs/JetBrains/DataGrip*" ]; then
     rm -f "$HOME/Library/Logs/JetBrains/DataGrip*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.jetbrains.datagrip.plist
+echo "Removing $HOME/Library/Preferences/com.jetbrains.datagrip.plist..."
+if [ -d "$HOME/Library/Preferences/com.jetbrains.datagrip.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.jetbrains.datagrip.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.jetbrains.datagrip.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.jetbrains.datagrip.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/com.jetbrains.datagrip.savedState
 echo "Removing $HOME/Library/Saved Application State/com.jetbrains.datagrip.savedState..."
 if [ -d "$HOME/Library/Saved Application State/com.jetbrains.datagrip.savedState" ]; then

@@ -25,6 +25,14 @@ elif [ -f "/Applications/Microsoft Azure Storage Explorer.app" ]; then
     rm -f "/Applications/Microsoft Azure Storage Explorer.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.storageexplorer.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.storageexplorer.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.storageexplorer.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.storageexplorer.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.storageexplorer.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.microsoft.storageexplorer.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/StorageExplorer
 echo "Removing $HOME/Library/Application Support/StorageExplorer..."
 if [ -d "$HOME/Library/Application Support/StorageExplorer" ]; then

@@ -25,6 +25,14 @@ elif [ -f "/Applications/Zulip.app" ]; then
     rm -f "/Applications/Zulip.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.zulip.zulip-electron.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.zulip.zulip-electron.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.zulip.zulip-electron.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.zulip.zulip-electron.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.zulip.zulip-electron.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.zulip.zulip-electron.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Zulip
 echo "Removing $HOME/Library/Application Support/Zulip..."
 if [ -d "$HOME/Library/Application Support/Zulip" ]; then
