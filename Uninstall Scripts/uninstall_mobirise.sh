@@ -25,6 +25,14 @@ elif [ -f "/Applications/Mobirise.app" ]; then
     rm -f "/Applications/Mobirise.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mobirise.mobirise.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mobirise.mobirise.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mobirise.mobirise.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mobirise.mobirise.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mobirise.mobirise.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.mobirise.mobirise.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Mobirise
 echo "Removing $HOME/Library/Application Support/Mobirise..."
 if [ -d "$HOME/Library/Application Support/Mobirise" ]; then

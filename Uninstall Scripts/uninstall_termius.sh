@@ -33,6 +33,14 @@ elif [ -f "$HOME/.termius" ]; then
     rm -f "$HOME/.termius" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.termius-dmg.mac.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.termius-dmg.mac.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.termius-dmg.mac.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.termius-dmg.mac.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.termius-dmg.mac.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.termius-dmg.mac.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Termius
 echo "Removing $HOME/Library/Application Support/Termius..."
 if [ -d "$HOME/Library/Application Support/Termius" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Logs/Termius" ]; then
     rm -rf "$HOME/Library/Logs/Termius" 2>/dev/null || true
 elif [ -f "$HOME/Library/Logs/Termius" ]; then
     rm -f "$HOME/Library/Logs/Termius" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.termius-dmg.mac.plist
+echo "Removing $HOME/Library/Preferences/com.termius-dmg.mac.plist..."
+if [ -d "$HOME/Library/Preferences/com.termius-dmg.mac.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.termius-dmg.mac.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.termius-dmg.mac.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.termius-dmg.mac.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.termius-dmg.mac.savedState

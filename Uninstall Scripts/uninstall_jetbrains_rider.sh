@@ -53,6 +53,14 @@ elif [ -f "$HOME/Library/Logs/Rider2026.2" ]; then
     rm -f "$HOME/Library/Logs/Rider2026.2" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.jetbrains.rider.plist
+echo "Removing $HOME/Library/Preferences/com.jetbrains.rider.plist..."
+if [ -d "$HOME/Library/Preferences/com.jetbrains.rider.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.jetbrains.rider.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.jetbrains.rider.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.jetbrains.rider.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/jetbrains.rider.71e559ef.plist
 echo "Removing $HOME/Library/Preferences/jetbrains.rider.71e559ef.plist..."
 if [ -d "$HOME/Library/Preferences/jetbrains.rider.71e559ef.plist" ]; then

@@ -77,6 +77,14 @@ elif [ -f "$HOME/Library/Cookies/com.clipy-app.Clipy.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/com.clipy-app.Clipy.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.clipy-app.Clipy
+echo "Removing $HOME/Library/HTTPStorages/com.clipy-app.Clipy..."
+if [ -d "$HOME/Library/HTTPStorages/com.clipy-app.Clipy" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.clipy-app.Clipy" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.clipy-app.Clipy" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.clipy-app.Clipy" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.clipy-app.Clipy.plist
 echo "Removing $HOME/Library/Preferences/com.clipy-app.Clipy.plist..."
 if [ -d "$HOME/Library/Preferences/com.clipy-app.Clipy.plist" ]; then

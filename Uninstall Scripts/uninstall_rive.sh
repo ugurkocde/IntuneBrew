@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Scripts/app.rive.editor" ]; then
     rm -f "$HOME/Library/Application Scripts/app.rive.editor" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/NJ3JMFUNS9.app.rive.editor
+echo "Removing $HOME/Library/Application Scripts/NJ3JMFUNS9.app.rive.editor..."
+if [ -d "$HOME/Library/Application Scripts/NJ3JMFUNS9.app.rive.editor" ]; then
+    rm -rf "$HOME/Library/Application Scripts/NJ3JMFUNS9.app.rive.editor" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/NJ3JMFUNS9.app.rive.editor" ]; then
+    rm -f "$HOME/Library/Application Scripts/NJ3JMFUNS9.app.rive.editor" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/app.rive.editor
 echo "Removing $HOME/Library/Caches/app.rive.editor..."
 if [ -d "$HOME/Library/Caches/app.rive.editor" ]; then
@@ -47,6 +55,14 @@ if [ -d "$HOME/Library/Containers/app.rive.editor" ]; then
     rm -rf "$HOME/Library/Containers/app.rive.editor" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/app.rive.editor" ]; then
     rm -f "$HOME/Library/Containers/app.rive.editor" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/NJ3JMFUNS9.app.rive.editor
+echo "Removing $HOME/Library/Group Containers/NJ3JMFUNS9.app.rive.editor..."
+if [ -d "$HOME/Library/Group Containers/NJ3JMFUNS9.app.rive.editor" ]; then
+    rm -rf "$HOME/Library/Group Containers/NJ3JMFUNS9.app.rive.editor" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/NJ3JMFUNS9.app.rive.editor" ]; then
+    rm -f "$HOME/Library/Group Containers/NJ3JMFUNS9.app.rive.editor" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

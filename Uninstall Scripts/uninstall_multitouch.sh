@@ -29,6 +29,14 @@ elif [ -f "/Applications/Multitouch.app" ]; then
     rm -f "/Applications/Multitouch.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.brassmonkery.multitouch.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.brassmonkery.multitouch.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.brassmonkery.multitouch.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.brassmonkery.multitouch.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.brassmonkery.multitouch.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.brassmonkery.multitouch.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Multitouch
 echo "Removing $HOME/Library/Application Support/Multitouch..."
 if [ -d "$HOME/Library/Application Support/Multitouch" ]; then

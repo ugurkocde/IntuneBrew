@@ -219,5 +219,13 @@ elif [ -f "$HOME/Library/WebKit/us.zoom.xos" ]; then
     rm -f "$HOME/Library/WebKit/us.zoom.xos" 2>/dev/null || true
 fi
 
+# Remove /Library/Logs/zoomusinstall.log
+echo "Removing /Library/Logs/zoomusinstall.log..."
+if [ -d "/Library/Logs/zoomusinstall.log" ]; then
+    rm -rf "/Library/Logs/zoomusinstall.log" 2>/dev/null || true
+elif [ -f "/Library/Logs/zoomusinstall.log" ]; then
+    rm -f "/Library/Logs/zoomusinstall.log" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0
