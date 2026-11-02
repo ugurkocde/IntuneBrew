@@ -1,0 +1,13 @@
+{
+  "name": "WhatCable",
+  "description": "Menu bar app for USB-C cable diagnostics",
+  "version": "1.5.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/whatcable_1.5.0.pkg",
+  "vendor_url": "https://github.com/darrylmorley/whatcable/releases/download/v1.5.0/WhatCable.zip",
+  "bundleId": "uk.whatcable.whatcable",
+  "homepage": "https://github.com/darrylmorley/whatcable",
+  "homebrew_cask": "whatcable",
+  "fileName": "whatcable_1.5.0.pkg",
+  "type": "app",
+  "sha": "1731eb5e8a797fdc85b8258ecd1b38d9f62ceb2c8888f367632aaf4c89ffa773"
+}
