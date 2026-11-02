@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-02T00:58:19.032Z",
+  "last_full_scan": "2026-11-02T07:31:57.098Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9458,6 +9458,13 @@
         "openai_improved"
       ],
       "name": "Langdock"
+    },
+    "whatcable": {
+      "last_checked": "2026-11-02T07:31:57.097Z",
+      "bundle_id": "uk.whatcable.whatcable",
+      "status": "verified",
+      "source": "file",
+      "name": "WhatCable"
     }
   }
 }
