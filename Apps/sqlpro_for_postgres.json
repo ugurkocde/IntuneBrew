@@ -9,7 +9,7 @@
   "fileName": "sqlpro_for_postgres_2026.301.pkg",
   "type": "app",
   "sha": "2e3f76097ff9bef7defb0044db780881fdc2c6c8cab68962480b1f17b626f3b5",
-  "previous_version": "2026.238",
+  "previous_version": "2026.301",
   "category": "Developer Tools",
   "publisher": "Hankin Software",
   "homebrew_cask": "sqlpro-for-postgres"

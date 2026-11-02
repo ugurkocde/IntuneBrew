@@ -9,7 +9,7 @@
   "fileName": "sqlpro_for_mysql_2026.301.pkg",
   "type": "app",
   "sha": "2a26d3b7f84e151544ce420057e6748f28bfdf9b1c28c1897df01881bcbafa4c",
-  "previous_version": "2026.238",
+  "previous_version": "2026.301",
   "category": "Developer Tools",
   "publisher": "Hankinsoft Development, Ltd.",
   "homebrew_cask": "sqlpro-for-mysql"

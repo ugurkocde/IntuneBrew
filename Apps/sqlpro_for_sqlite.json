@@ -9,7 +9,7 @@
   "fileName": "sqlpro_for_sqlite_2026.301.2.pkg",
   "type": "app",
   "sha": "b5b46606b59e1cf822dbe133e9d2ba2694a585c70ea88273814a4934733045ba",
-  "previous_version": "2026.247",
+  "previous_version": "2026.301.2",
   "category": "Developer Tools",
   "publisher": "Hankin Software",
   "homebrew_cask": "sqlpro-for-sqlite"
