@@ -16,7 +16,7 @@ import hashlib
 import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse, unquote, parse_qs, urlencode
-from request_sources import source_token, FORMULA_RECIPES
+from request_sources import source_token, FORMULA_RECIPES, FORMULA_NAMES, FORMULA_PUBLISHERS
 
 
 def get_filename_from_url(url, app_name=None, version=None, default_ext=".dmg"):
@@ -468,6 +468,7 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/ddpm.json",
     "https://formulae.brew.sh/api/cask/monotype.json",
     "https://formulae.brew.sh/api/formula/azure-cli.json",
+    "https://formulae.brew.sh/api/formula/git-gui.json",
     "https://formulae.brew.sh/api/cask/whatcable.json",
 ]
 
@@ -1969,7 +1970,7 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
     if is_formula:
         if cask_token not in FORMULA_RECIPES:
             raise ValueError(f'No packaging recipe for formula {cask_token}')
-        data = {**data, 'name': ['Azure CLI'],
+        data = {**data, 'name': [FORMULA_NAMES[cask_token]],
                 'version': data.get('versions', {}).get('stable') or data['version'],
                 'url': data.get('urls', {}).get('stable', {}).get('url') or data['url']}
 
@@ -2048,7 +2049,7 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
 
     if is_formula:
         # The package receipt belongs to IntuneBrew; the software publisher does not.
-        app_info["publisher"] = "Microsoft"
+        app_info["publisher"] = FORMULA_PUBLISHERS[cask_token]
 
     return app_info
 

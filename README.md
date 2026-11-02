@@ -2206,6 +2206,19 @@ Azure CLI requests use a supported formula recipe that bundles Python and all
 dependencies for Apple Silicon and Intel Macs. Its app-catalog package is also
 published through the existing formula manifest for compatibility. Other formulas
 need their own validated packaging recipe before the app request flow accepts them.
+
+Git GUI uses the `git-gui-tcltk-v1` recipe. It bundles universal Tcl/Tk 9.1.0
+under `/usr/local/lib/intunebrew/git_gui` and provides `git-gui`, `git-citool`
+and `gitk` in `/usr/local/bin`; it does not create a Finder application. A working
+Git installation is required (Xcode Command Line Tools or another Git distribution).
+macOS 11 or newer and a logged-in graphical session are required. The package
+includes licenses, original source archives and the build recipe. Git GUI's own
+`--version` is separate from the containing Git release used for catalog updates.
+Uninstall requires this package's receipt and refuses to delete a command replaced
+by another installation. Otherwise it removes these commands, the bundled runtime
+and its package receipt.
+Installation refuses to replace existing commands from another Git distribution.
+
 Logi Options+ packages run Logitech's silent installer and verify the installed
 app instead of copying the installer into Applications. Re-approving an existing
 entry built with an older recipe records the request and dispatches a scoped

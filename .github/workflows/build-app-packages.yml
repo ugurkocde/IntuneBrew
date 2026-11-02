@@ -388,6 +388,7 @@ jobs:
             case "$app_name" in
               logitech_options) expected_recipe=logi-options-silent-v1 ;;
               azure_cli) expected_recipe=azure-cli-universal-v1 ;;
+              git_gui) expected_recipe=git-gui-tcltk-v1 ;;
             esac
             if [ -n "$expected_recipe" ]; then
               previous_recipe=$(git -C "$WORKSPACE_DIR" show "HEAD:Apps/${app_name}.json" 2>/dev/null | jq -r '.packaging_recipe // empty') || previous_recipe=""
@@ -1012,6 +1013,10 @@ jobs:
                 mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
                 if [ "$app_name" = azure_cli ]; then
                   jq '.packaging_recipe = "azure-cli-universal-v1" | .binaryPath = "/usr/local/bin/az" | .architectures = ["arm64", "x86_64"]' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json
+                  mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
+                fi
+                if [ "$app_name" = git_gui ]; then
+                  jq '.packaging_recipe = "git-gui-tcltk-v1" | .binaryPath = "/usr/local/bin/git-gui" | .architectures = ["arm64", "x86_64"]' "$WORKSPACE_DIR/Apps/${app_name}.json" > temp.json
                   mv temp.json "$WORKSPACE_DIR/Apps/${app_name}.json"
                 fi
               fi
