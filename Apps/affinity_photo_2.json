@@ -14,5 +14,5 @@
   "publisher": "Serif (Europe) Ltd.",
   "homebrew_cask": "affinity-photo",
   "deprecated": true,
-  "deprecation_reason": "deprecated in Homebrew: discontinued"
+  "deprecation_reason": "disabled in Homebrew: discontinued"
 }

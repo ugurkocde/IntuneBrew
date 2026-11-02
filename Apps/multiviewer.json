@@ -1,15 +1,15 @@
 {
   "name": "MultiViewer",
   "description": "Unofficial desktop client for F1 TV",
-  "version": "2.13.0",
-  "url": "https://releases.multiviewer.app/v/2.13.0/1/ajyeyNgFAxVt334Hkyux_U-Wp-lY4PEV/MultiViewer-2.13.0-arm64.dmg",
-  "vendor_url": "https://releases.multiviewer.app/v/2.13.0/1/ajyeyNgFAxVt334Hkyux_U-Wp-lY4PEV/MultiViewer-2.13.0-arm64.dmg",
+  "version": "2.13.1",
+  "url": "https://releases.multiviewer.app/v/2.13.1/1/AVF6s9vd3IKTf5k4DtYJlD8OKt95ju-G/MultiViewer-2.13.1-arm64.dmg",
+  "vendor_url": "https://releases.multiviewer.app/v/2.13.1/1/AVF6s9vd3IKTf5k4DtYJlD8OKt95ju-G/MultiViewer-2.13.1-arm64.dmg",
   "bundleId": "io.optimizedapps.srtmultiviewer",
   "homepage": "https://multiviewer.app/",
   "homebrew_cask": "multiviewer",
-  "fileName": "MultiViewer-2.13.0-arm64.dmg",
-  "sha": "510d9f4bf373547cced7357d8547ca632c7c33029e2d3732c7b0fccff79867a9",
+  "fileName": "MultiViewer-2.13.1-arm64.dmg",
+  "sha": "bbb11364e065fa21839367c95ef3323cc34a50bb77c82f9baf2ec61dbbfc8f99",
   "category": "Media",
   "publisher": "MultiViewer",
-  "previous_version": "2.12.0"
+  "previous_version": "2.13.0"
 }

@@ -11,6 +11,6 @@
   "sha": "8b6b3ca3175894df5c3ee39759977f858aeda9c5dea38715ff7fadf4c9a9d34c",
   "category": "Developer Tools",
   "publisher": "Lutz Roeder",
-  "previous_version": "9.3.3",
+  "previous_version": "9.3.4",
   "homebrew_cask": "netron"
 }
