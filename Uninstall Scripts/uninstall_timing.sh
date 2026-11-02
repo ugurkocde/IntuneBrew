@@ -29,6 +29,22 @@ elif [ -f "/Applications/Timing.app" ]; then
     rm -f "/Applications/Timing.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timing2.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timing2.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timing2.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timing2.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timing2.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timing2.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timinghelper.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timinghelper.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timinghelper.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timinghelper.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timinghelper.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/info.eurocomp.timinghelper.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/info.eurocomp.Timing2
 echo "Removing $HOME/Library/Application Support/info.eurocomp.Timing2..."
 if [ -d "$HOME/Library/Application Support/info.eurocomp.Timing2" ]; then
@@ -75,6 +91,30 @@ if [ -d "$HOME/Library/Caches/info.eurocomp.TimingHelper.InfoExtractorService" ]
     rm -rf "$HOME/Library/Caches/info.eurocomp.TimingHelper.InfoExtractorService" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/info.eurocomp.TimingHelper.InfoExtractorService" ]; then
     rm -f "$HOME/Library/Caches/info.eurocomp.TimingHelper.InfoExtractorService" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/info.eurocomp.Timing2
+echo "Removing $HOME/Library/HTTPStorages/info.eurocomp.Timing2..."
+if [ -d "$HOME/Library/HTTPStorages/info.eurocomp.Timing2" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/info.eurocomp.Timing2" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/info.eurocomp.Timing2" ]; then
+    rm -f "$HOME/Library/HTTPStorages/info.eurocomp.Timing2" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/info.eurocomp.TimingHelper
+echo "Removing $HOME/Library/HTTPStorages/info.eurocomp.TimingHelper..."
+if [ -d "$HOME/Library/HTTPStorages/info.eurocomp.TimingHelper" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/info.eurocomp.TimingHelper" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/info.eurocomp.TimingHelper" ]; then
+    rm -f "$HOME/Library/HTTPStorages/info.eurocomp.TimingHelper" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/info.eurocomp.Timing2.fallback.plist
+echo "Removing $HOME/Library/Preferences/info.eurocomp.Timing2.fallback.plist..."
+if [ -d "$HOME/Library/Preferences/info.eurocomp.Timing2.fallback.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/info.eurocomp.Timing2.fallback.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/info.eurocomp.Timing2.fallback.plist" ]; then
+    rm -f "$HOME/Library/Preferences/info.eurocomp.Timing2.fallback.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/info.eurocomp.Timing2.plist
