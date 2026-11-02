@@ -6,6 +6,7 @@ from pathlib import Path
 import subprocess
 import sys
 import tempfile
+import time
 
 
 def verify(payload):
@@ -69,9 +70,11 @@ def verify(payload):
         spy = repo / 'spy-bin'
         spy.mkdir()
         probe = repo / 'discovery.tcl'
-        probe.write_text('set result [open [lindex $argv 0] w]\n'
+        probe.write_text('set destination [lindex $argv 0]\n'
+                         'set temporary "$destination.[pid].tmp"\n'
+                         'set result [open $temporary w]\n'
                          'puts $result [file normalize [lindex [auto_execok gitk] 0]]\n'
-                         'close $result\n')
+                         'close $result\nfile rename -force $temporary $destination\n')
         discovery = repo / 'discovered-gitk'
         git = spy / 'git'
         git.write_text('#!/bin/sh\nset -eu\n'
@@ -86,10 +89,18 @@ def verify(payload):
                                    env=probe_env, start_new_session=True,
                                    stdout=subprocess.PIPE, stderr=subprocess.PIPE)
         try:
-            process.communicate(timeout=3)
-        except subprocess.TimeoutExpired:
-            # Terminate only this test's application/process group.
-            os.killpg(process.pid, signal.SIGTERM)
+            deadline = time.monotonic() + 30
+            while process.poll() is None and time.monotonic() < deadline:
+                if discovery.is_file() and discovery.stat().st_size > 0:
+                    break
+                time.sleep(0.2)
+        finally:
+            if process.poll() is None:
+                # Terminate only this test's application/process group.
+                try:
+                    os.killpg(process.pid, signal.SIGTERM)
+                except ProcessLookupError:
+                    pass
             process.communicate(timeout=10)
         assert discovery.is_file(), 'Public Git GUI wrapper never reached Git discovery'
         assert Path(discovery.read_text().strip()).resolve() == (base / 'bin/gitk').resolve(), discovery.read_text()
