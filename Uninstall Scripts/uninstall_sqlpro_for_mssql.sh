@@ -25,6 +25,14 @@ elif [ -f "/Applications/SQLPro for MSSQL.app" ]; then
     rm -f "/Applications/SQLPro for MSSQL.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.hankinsoft.osx.tinysqlstudio
+echo "Removing $HOME/Library/Application Scripts/com.hankinsoft.osx.tinysqlstudio..."
+if [ -d "$HOME/Library/Application Scripts/com.hankinsoft.osx.tinysqlstudio" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.hankinsoft.osx.tinysqlstudio" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.hankinsoft.osx.tinysqlstudio" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.hankinsoft.osx.tinysqlstudio" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.tinysqlstudio.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.tinysqlstudio.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.tinysqlstudio.sfl*" ]; then

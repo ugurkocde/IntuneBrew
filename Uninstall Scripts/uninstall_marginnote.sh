@@ -17,12 +17,12 @@ fi
 echo "Stopping MarginNote if running..."
 pkill -f "MarginNote" 2>/dev/null || true
 
-# Remove /Applications/MarginNote 4.app
-echo "Removing /Applications/MarginNote 4.app..."
-if [ -d "/Applications/MarginNote 4.app" ]; then
-    rm -rf "/Applications/MarginNote 4.app" 2>/dev/null || true
-elif [ -f "/Applications/MarginNote 4.app" ]; then
-    rm -f "/Applications/MarginNote 4.app" 2>/dev/null || true
+# Remove /Applications/MarginNote 5.app
+echo "Removing /Applications/MarginNote 5.app..."
+if [ -d "/Applications/MarginNote 5.app" ]; then
+    rm -rf "/Applications/MarginNote 5.app" 2>/dev/null || true
+elif [ -f "/Applications/MarginNote 5.app" ]; then
+    rm -f "/Applications/MarginNote 5.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/QReader.MarginStudyMac

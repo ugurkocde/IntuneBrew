@@ -25,6 +25,14 @@ elif [ -f "/Applications/SQLPro for Postgres.app" ]; then
     rm -f "/Applications/SQLPro for Postgres.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.hankinsoft.osx.SQLProPostgres
+echo "Removing $HOME/Library/Application Scripts/com.hankinsoft.osx.SQLProPostgres..."
+if [ -d "$HOME/Library/Application Scripts/com.hankinsoft.osx.SQLProPostgres" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.hankinsoft.osx.SQLProPostgres" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.hankinsoft.osx.SQLProPostgres" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.hankinsoft.osx.SQLProPostgres" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.sqlpropostgres.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.sqlpropostgres.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.sqlpropostgres.sfl*" ]; then

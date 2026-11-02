@@ -25,6 +25,14 @@ elif [ -f "/Applications/SQLPro for MySQL.app" ]; then
     rm -f "/Applications/SQLPro for MySQL.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.hankinsoft.osx.mysql
+echo "Removing $HOME/Library/Application Scripts/com.hankinsoft.osx.mysql..."
+if [ -d "$HOME/Library/Application Scripts/com.hankinsoft.osx.mysql" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.hankinsoft.osx.mysql" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.hankinsoft.osx.mysql" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.hankinsoft.osx.mysql" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.mysql.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.mysql.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.mysql.sfl*" ]; then
