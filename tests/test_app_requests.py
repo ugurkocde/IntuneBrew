@@ -112,6 +112,20 @@ class AppRequestTests(unittest.TestCase):
             self.assertEqual(approval.extract_casks_from_urls(url), ['azure-cli'])
         self.assertEqual(approval.extract_casks_from_urls('https://formulae.brew.sh/formula/node'), [])
 
+    def test_git_gui_formula_uses_its_own_name_and_waits_for_recipe_publication(self):
+        Path('.github/scripts/collect_app_info.py').write_text('app_urls = [\n]\n')
+        for url in ['https://formulae.brew.sh/formula/git-gui#default', 'https://formulae.brew.sh/api/formula/git-gui.json']:
+            self.assertEqual(approval.extract_casks_from_urls(url), ['git-gui'])
+        status, outputs = self.approve(['git-gui'], {'git-gui': {'name': 'git-gui', 'versions': {'stable': '2.56.0'}}})
+        self.assertEqual(status, 0)
+        self.assertEqual(json.loads(outputs['apps_json'])[0]['name'], 'Git GUI')
+        self.assertIn('/api/formula/git-gui.json', Path('.github/scripts/collect_app_info.py').read_text())
+        self.record(['git-gui'])
+        self.publish('git-gui', homebrew_cask=None, homebrew_formula='git-gui', type='app')
+        self.assertEqual(self.notifications(), [])
+        self.publish('git-gui', homebrew_cask=None, homebrew_formula='git-gui', packaging_recipe='git-gui-tcltk-v1', type='app', fileName='git_gui_1.pkg', url='https://intunebrew.blob.core.windows.net/pkg/git_gui_1.pkg', sha='a'*64)
+        self.assertEqual(len(self.notifications()), 1)
+
     def test_installer_only_logi_entry_is_rebuilt_and_not_reported_as_fulfilled(self):
         Path('.github/scripts/collect_app_info.py').write_text('app_urls = [\n "https://formulae.brew.sh/api/cask/logi-options+.json",\n]\n')
         self.publish('logi-options+')

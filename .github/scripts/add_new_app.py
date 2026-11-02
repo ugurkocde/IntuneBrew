@@ -16,7 +16,7 @@ import sys
 import json
 import requests
 from difflib import SequenceMatcher
-from request_sources import FORMULA_RECIPES, required_recipe
+from request_sources import FORMULA_RECIPES, FORMULA_NAMES, required_recipe
 
 # Cache for the Homebrew cask list
 _cask_list_cache = None
@@ -446,7 +446,7 @@ def main():
                 from pending_requests import catalog_entries
                 if cask_name not in catalog_entries():
                     rebuild_tokens.append(cask_name)
-                    added_apps.append({'cask': cask_name, 'name': 'Azure CLI' if cask_name == 'azure-cli' else 'Logitech Options+', 'type': 'app', 'list': 'app_urls'})
+                    added_apps.append({'cask': cask_name, 'name': FORMULA_NAMES.get(cask_name, 'Logitech Options+'), 'type': 'app', 'list': 'app_urls'})
                     continue
             print(f"Skipping {cask_name}: already exists")
             skipped_apps.append({'cask': cask_name, 'reason': 'already exists'})
@@ -464,7 +464,7 @@ def main():
             continue
 
         # Get app name
-        app_name = 'Azure CLI' if cask_name == 'azure-cli' else cask_display_name(homebrew_data, cask_name)
+        app_name = FORMULA_NAMES.get(cask_name) or cask_display_name(homebrew_data, cask_name)
 
         # Determine app type
         list_name, app_type = ('app_urls', 'app') if cask_name in FORMULA_RECIPES else determine_app_type(homebrew_data)

@@ -13,6 +13,13 @@ spec.loader.exec_module(uninstall)
 
 
 class RequestedAppEnrichmentTests(unittest.TestCase):
+    def test_git_gui_uninstall_removes_only_the_recipe_payload(self):
+        data = dict(homebrew_formula='git-gui', packaging_recipe='git-gui-tcltk-v1')
+        with patch.object(uninstall, 'get_brew_app_info', side_effect=AssertionError('No cask lookup for a formula recipe')):
+            paths = uninstall.get_local_uninstall_paths('Git GUI', data)
+        self.assertEqual(paths, ['/usr/local/bin/git-gui', '/usr/local/bin/git-citool', '/usr/local/bin/gitk', '/usr/local/lib/intunebrew/git_gui', 'PKGUTIL:com.intunebrew.git_gui'])
+        self.assertNotIn('/usr/bin/git', paths)
+
     def test_specific_apps_entrypoint_generates_both_uninstall_scripts(self):
         with tempfile.TemporaryDirectory() as directory:
             root = Path(directory)

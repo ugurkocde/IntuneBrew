@@ -63,6 +63,21 @@ class CollectAppInfoTests(unittest.TestCase):
         self.assertEqual(data['type'], 'app')
         self.assertEqual(data['publisher'], 'Microsoft')
 
+    def test_git_gui_formula_retains_its_source_name_and_publisher(self):
+        url = 'https://formulae.brew.sh/api/formula/git-gui.json'
+        collect_app_info.cask_cache[url] = {
+            'name': 'git-gui', 'versions': {'stable': '2.56.0'},
+            'urls': {'stable': {'url': 'https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.56.0.tar.xz'}},
+            'homepage': 'https://git-scm.com', 'desc': 'Tcl/Tk UI for Git',
+        }
+        data = collect_app_info.get_homebrew_app_info(url, needs_packaging=True)
+        self.assertEqual(data['homebrew_formula'], 'git-gui')
+        self.assertNotIn('homebrew_cask', data)
+        self.assertEqual(data['name'], 'Git GUI')
+        self.assertEqual(data['publisher'], 'Git project')
+        self.assertEqual(data['version'], '2.56.0')
+        self.assertEqual(data['type'], 'app')
+
     def setUp(self):
         collect_app_info.cask_cache.clear()
 

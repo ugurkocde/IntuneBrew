@@ -134,17 +134,20 @@ jobs:
       matrix:
         os: [macos-latest, macos-15-intel]
     runs-on: ${{ matrix.os }}
-    timeout-minutes: 15
+    timeout-minutes: 20
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
         with:
           python-version: '3.13'
-      - run: python -m pip install uv==0.12.23
+      - run: python -m pip install uv==0.12.23 requests==2.34.2
       - run: bash tests/test_azure_package.sh
         env:
           INSTALL_PACKAGE: '1'
       - run: bash tests/test_logi_vendor_install.sh
+      - run: bash tests/test_git_gui_package.sh
+        env:
+          INSTALL_PACKAGE: '1'
 
   powershell-tests:
     name: PowerShell regression tests (${{ matrix.os }})

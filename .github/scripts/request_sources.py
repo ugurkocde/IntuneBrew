@@ -1,5 +1,7 @@
 """Source identities and package recipes supported by app request fulfillment."""
-FORMULA_RECIPES = {"azure-cli": "azure-cli-universal-v1"}
+FORMULA_RECIPES = {"azure-cli": "azure-cli-universal-v1", "git-gui": "git-gui-tcltk-v1"}
+FORMULA_NAMES = {"azure-cli": "Azure CLI", "git-gui": "Git GUI"}
+FORMULA_PUBLISHERS = {"azure-cli": "Microsoft", "git-gui": "Git project"}
 CASK_RECIPES = {"logi-options+": "logi-options-silent-v1"}
 
 
