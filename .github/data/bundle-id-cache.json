@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-02T08:36:30.664Z",
+  "last_full_scan": "2026-11-02T16:10:55.463Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9465,6 +9465,13 @@
       "status": "verified",
       "source": "file",
       "name": "WhatCable"
+    },
+    "git_gui": {
+      "last_checked": "2026-11-02T16:10:55.448Z",
+      "bundle_id": "com.intunebrew.git_gui",
+      "status": "verified",
+      "source": "file",
+      "name": "Git GUI"
     }
   }
 }
