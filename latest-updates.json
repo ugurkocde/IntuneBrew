@@ -1,54 +1,124 @@
 {
-  "lastChecked": "2026-11-02T08:35:16.055692Z",
+  "lastChecked": "2026-11-02T16:09:29.053788Z",
   "updates": [
     {
-      "appName": "actual",
-      "previousVersion": "26.10.0",
-      "newVersion": "26.11.0",
+      "appName": "affinity",
+      "previousVersion": "3.3.1",
+      "newVersion": "3.3.3",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/actual.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/affinity.png"
     },
     {
-      "appName": "chatgpt",
-      "previousVersion": "26.1027.51404",
-      "newVersion": "26.1027.61615",
-      "changelog": "https://help.openai.com/en/articles/9703738-macos-app-release-notes",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/chatgpt.png"
+      "appName": "audacity",
+      "previousVersion": "4.0.1",
+      "newVersion": "4.0.2",
+      "changelog": "https://support.audacityteam.org/additional-resources/changelog",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/audacity.png"
     },
     {
-      "appName": "loom",
-      "previousVersion": "0.382.0",
-      "newVersion": "0.383.1",
+      "appName": "clipbook",
+      "previousVersion": "2.5.0",
+      "newVersion": "2.5.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/loom.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/clipbook.png"
     },
     {
-      "appName": "macdown 3000",
-      "previousVersion": "3000.0.7",
-      "newVersion": "3000.0.8",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/macdown_3000.png"
+      "appName": "dbgate",
+      "previousVersion": "7.3.3",
+      "newVersion": "7.3.4",
+      "changelog": "https://github.com/dbgate/dbgate/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dbgate.png"
     },
     {
-      "appName": "melodics",
-      "previousVersion": "5.0.1725",
-      "newVersion": "5.0.1765",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/melodics.png"
+      "appName": "duckduckgo",
+      "previousVersion": "1.213.0",
+      "newVersion": "1.214.0",
+      "changelog": "https://github.com/duckduckgo/macos-browser/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/duckduckgo.png"
     },
     {
-      "appName": "openshot video editor",
-      "previousVersion": "4.1.0",
-      "newVersion": "4.1.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/openshot_video_editor.png"
+      "appName": "eclipse temurin java development kit",
+      "previousVersion": "27",
+      "newVersion": "27.0.1.0.2",
+      "changelog": "https://adoptium.net/de/temurin/releases/?os=mac&version=23",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/eclipse_temurin_java_development_kit.png"
     },
     {
-      "appName": "rustdesk",
-      "previousVersion": "1.5.0",
-      "newVersion": "1.5.1",
+      "appName": "enpass",
+      "previousVersion": "6.12.7.2787",
+      "newVersion": "6.12.8.2837",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rustdesk.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/enpass.png"
+    },
+    {
+      "appName": "launchos",
+      "previousVersion": "2.4.1",
+      "newVersion": "2.5.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/launchos.png"
+    },
+    {
+      "appName": "marginnote",
+      "previousVersion": "4.4.6",
+      "newVersion": "5.0.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/marginnote.png"
+    },
+    {
+      "appName": "mattermost",
+      "previousVersion": "6.3.1",
+      "newVersion": "6.3.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/mattermost.png"
+    },
+    {
+      "appName": "nextcloud",
+      "previousVersion": "35.0.1",
+      "newVersion": "35.0.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/nextcloud.png"
+    },
+    {
+      "appName": "notesnook",
+      "previousVersion": "3.4.11",
+      "newVersion": "3.4.12",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/notesnook.png"
+    },
+    {
+      "appName": "quarto",
+      "previousVersion": "1.10.20",
+      "newVersion": "1.11.9",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/quarto.png"
+    },
+    {
+      "appName": "real vnc server",
+      "previousVersion": "7.18.0",
+      "newVersion": "7.18.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/real_vnc_server.png"
+    },
+    {
+      "appName": "scribus",
+      "previousVersion": "1.6.6",
+      "newVersion": "1.6.7",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/scribus.png"
+    },
+    {
+      "appName": "sipgate",
+      "previousVersion": "2.45.1",
+      "newVersion": "2.46.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sipgate.png"
+    },
+    {
+      "appName": "whatsapp",
+      "previousVersion": "26.43.27",
+      "newVersion": "26.44.12",
+      "changelog": "https://web.whatsapp.com/desktop/windows/release-notes",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/whatsapp.png"
     }
   ]
 }
