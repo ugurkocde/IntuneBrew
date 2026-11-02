@@ -9,5 +9,7 @@
   "homebrew_cask": "whatcable",
   "fileName": "whatcable_1.5.0.pkg",
   "type": "app",
-  "sha": "1731eb5e8a797fdc85b8258ecd1b38d9f62ceb2c8888f367632aaf4c89ffa773"
+  "sha": "1731eb5e8a797fdc85b8258ecd1b38d9f62ceb2c8888f367632aaf4c89ffa773",
+  "category": "Developer Tools",
+  "publisher": "Darryl Morley"
 }
