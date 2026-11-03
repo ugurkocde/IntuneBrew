@@ -25,6 +25,14 @@ elif [ -f "/Applications/SQLPro Studio.app" ]; then
     rm -f "/Applications/SQLPro Studio.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.hankinsoft.osx.sqlprostudio
+echo "Removing $HOME/Library/Application Scripts/com.hankinsoft.osx.sqlprostudio..."
+if [ -d "$HOME/Library/Application Scripts/com.hankinsoft.osx.sqlprostudio" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.hankinsoft.osx.sqlprostudio" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.hankinsoft.osx.sqlprostudio" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.hankinsoft.osx.sqlprostudio" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.sqlprostudio.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.sqlprostudio.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankinsoft.osx.sqlprostudio.sfl*" ]; then

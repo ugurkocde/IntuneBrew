@@ -37,6 +37,14 @@ elif [ -f "$HOME/Library/Application Support/Charmstone Pro" ]; then
     rm -f "$HOME/Library/Application Support/Charmstone Pro" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/Charmstone
+echo "Removing $HOME/Library/Application Support/Charmstone..."
+if [ -d "$HOME/Library/Application Support/Charmstone" ]; then
+    rm -rf "$HOME/Library/Application Support/Charmstone" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Charmstone" ]; then
+    rm -f "$HOME/Library/Application Support/Charmstone" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.knollsoft.charmstonepro.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.knollsoft.charmstonepro.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.knollsoft.charmstonepro.sfl*" ]; then

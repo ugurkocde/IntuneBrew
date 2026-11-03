@@ -29,6 +29,14 @@ elif [ -f "/Applications/PDF Expert.app" ]; then
     rm -f "/Applications/PDF Expert.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.readdle.PDFExpert-Mac.Widgets
+echo "Removing $HOME/Library/Application Scripts/com.readdle.PDFExpert-Mac.Widgets..."
+if [ -d "$HOME/Library/Application Scripts/com.readdle.PDFExpert-Mac.Widgets" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.readdle.PDFExpert-Mac.Widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.readdle.PDFExpert-Mac.Widgets" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.readdle.PDFExpert-Mac.Widgets" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.readdle.pdfexpert-mac.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.readdle.pdfexpert-mac.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.readdle.pdfexpert-mac.sfl*" ]; then
@@ -69,6 +77,14 @@ elif [ -f "$HOME/Library/Caches/com.readdle.PDFExpert-Mac" ]; then
     rm -f "$HOME/Library/Caches/com.readdle.PDFExpert-Mac" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Containers/com.readdle.PDFExpert-Mac.Widgets
+echo "Removing $HOME/Library/Containers/com.readdle.PDFExpert-Mac.Widgets..."
+if [ -d "$HOME/Library/Containers/com.readdle.PDFExpert-Mac.Widgets" ]; then
+    rm -rf "$HOME/Library/Containers/com.readdle.PDFExpert-Mac.Widgets" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.readdle.PDFExpert-Mac.Widgets" ]; then
+    rm -f "$HOME/Library/Containers/com.readdle.PDFExpert-Mac.Widgets" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/com.readdle.PDFExpert-Installer
 echo "Removing $HOME/Library/HTTPStorages/com.readdle.PDFExpert-Installer..."
 if [ -d "$HOME/Library/HTTPStorages/com.readdle.PDFExpert-Installer" ]; then
@@ -107,6 +123,22 @@ if [ -d "$HOME/Library/Preferences/com.readdle.PDFExpert-Mac.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.readdle.PDFExpert-Mac.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.readdle.PDFExpert-Mac.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.readdle.PDFExpert-Mac.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.appsflyer.remotecontrol.plist
+echo "Removing $HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.appsflyer.remotecontrol.plist..."
+if [ -d "$HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.appsflyer.remotecontrol.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.appsflyer.remotecontrol.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.appsflyer.remotecontrol.plist" ]; then
+    rm -f "$HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.appsflyer.remotecontrol.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.firebase.plist
+echo "Removing $HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.firebase.plist..."
+if [ -d "$HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.firebase.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.firebase.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.firebase.plist" ]; then
+    rm -f "$HOME/Library/Preferences/group.com.readdle.PDFExpert-Mac.firebase.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/SyncedPreferences/com.apple.kvs/ChangeTokens/NoEncryption/PDF Expert

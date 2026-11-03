@@ -25,12 +25,28 @@ elif [ -f "/Applications/MarginNote 5.app" ]; then
     rm -f "/Applications/MarginNote 5.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/QReader.MarginStudy.easy
+echo "Removing $HOME/Library/Application Scripts/QReader.MarginStudy.easy..."
+if [ -d "$HOME/Library/Application Scripts/QReader.MarginStudy.easy" ]; then
+    rm -rf "$HOME/Library/Application Scripts/QReader.MarginStudy.easy" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/QReader.MarginStudy.easy" ]; then
+    rm -f "$HOME/Library/Application Scripts/QReader.MarginStudy.easy" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/QReader.MarginStudyMac
 echo "Removing $HOME/Library/Application Support/QReader.MarginStudyMac..."
 if [ -d "$HOME/Library/Application Support/QReader.MarginStudyMac" ]; then
     rm -rf "$HOME/Library/Application Support/QReader.MarginStudyMac" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/QReader.MarginStudyMac" ]; then
     rm -f "$HOME/Library/Application Support/QReader.MarginStudyMac" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/QReader.MarginStudy.easy
+echo "Removing $HOME/Library/Containers/QReader.MarginStudy.easy..."
+if [ -d "$HOME/Library/Containers/QReader.MarginStudy.easy" ]; then
+    rm -rf "$HOME/Library/Containers/QReader.MarginStudy.easy" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/QReader.MarginStudy.easy" ]; then
+    rm -f "$HOME/Library/Containers/QReader.MarginStudy.easy" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Containers/QReader.MarginStudyMac

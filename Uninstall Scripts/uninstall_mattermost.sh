@@ -29,6 +29,14 @@ elif [ -f "/Applications/Mattermost.app" ]; then
     rm -f "/Applications/Mattermost.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/mattermost.desktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/mattermost.desktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/mattermost.desktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/mattermost.desktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/mattermost.desktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/mattermost.desktop.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Mattermost
 echo "Removing $HOME/Library/Application Support/Mattermost..."
 if [ -d "$HOME/Library/Application Support/Mattermost" ]; then

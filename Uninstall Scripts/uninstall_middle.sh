@@ -37,6 +37,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.knollsoft.MiddleLauncher" ]; th
     rm -f "$HOME/Library/Application Scripts/com.knollsoft.MiddleLauncher" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.knollsoft.middle.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.knollsoft.middle.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.knollsoft.middle.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.knollsoft.middle.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.knollsoft.middle.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.knollsoft.middle.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Middle
 echo "Removing $HOME/Library/Application Support/Middle..."
 if [ -d "$HOME/Library/Application Support/Middle" ]; then

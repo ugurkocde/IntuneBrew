@@ -37,6 +37,14 @@ elif [ -f "$HOME/Library/Application Support/Caches/nosql-workbench-updater" ]; 
     rm -f "$HOME/Library/Application Support/Caches/nosql-workbench-updater" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dynamodb.workbench.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dynamodb.workbench.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dynamodb.workbench.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dynamodb.workbench.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dynamodb.workbench.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dynamodb.workbench.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/NoSQL Workbench
 echo "Removing $HOME/Library/Application Support/NoSQL Workbench..."
 if [ -d "$HOME/Library/Application Support/NoSQL Workbench" ]; then

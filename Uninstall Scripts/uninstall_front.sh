@@ -25,12 +25,44 @@ elif [ -f "/Applications/Front.app" ]; then
     rm -f "/Applications/Front.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.frontapp.Front.ShareExtension
+echo "Removing $HOME/Library/Application Scripts/com.frontapp.Front.ShareExtension..."
+if [ -d "$HOME/Library/Application Scripts/com.frontapp.Front.ShareExtension" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.frontapp.Front.ShareExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.frontapp.Front.ShareExtension" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.frontapp.Front.ShareExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.frontapp.front.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.frontapp.front.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.frontapp.front.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.frontapp.front.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.frontapp.front.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.frontapp.front.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Front
 echo "Removing $HOME/Library/Application Support/Front..."
 if [ -d "$HOME/Library/Application Support/Front" ]; then
     rm -rf "$HOME/Library/Application Support/Front" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/Front" ]; then
     rm -f "$HOME/Library/Application Support/Front" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/Front
+echo "Removing $HOME/Library/Caches/Front..."
+if [ -d "$HOME/Library/Caches/Front" ]; then
+    rm -rf "$HOME/Library/Caches/Front" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/Front" ]; then
+    rm -f "$HOME/Library/Caches/Front" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.frontapp.Front.ShareExtension
+echo "Removing $HOME/Library/Containers/com.frontapp.Front.ShareExtension..."
+if [ -d "$HOME/Library/Containers/com.frontapp.Front.ShareExtension" ]; then
+    rm -rf "$HOME/Library/Containers/com.frontapp.Front.ShareExtension" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.frontapp.Front.ShareExtension" ]; then
+    rm -f "$HOME/Library/Containers/com.frontapp.Front.ShareExtension" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/FrontBoard

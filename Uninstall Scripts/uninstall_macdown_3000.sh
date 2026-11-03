@@ -31,6 +31,14 @@ if [ -f "/Applications/MacDown 3000.app/MacDown 3000.app/Contents/SharedSupport/
     rm -f "/Applications/MacDown 3000.app/MacDown 3000.app/Contents/SharedSupport/bin/macdown" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.macdown.macdown3000.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.macdown.macdown3000.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.macdown.macdown3000.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.macdown.macdown3000.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.macdown.macdown3000.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/app.macdown.macdown3000.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/MacDown 3000
 echo "Removing $HOME/Library/Application Support/MacDown 3000..."
 if [ -d "$HOME/Library/Application Support/MacDown 3000" ]; then

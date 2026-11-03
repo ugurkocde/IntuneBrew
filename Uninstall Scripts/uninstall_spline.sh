@@ -31,6 +31,30 @@ elif [ -f "/Applications/Spline.app" ]; then
     rm -f "/Applications/Spline.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.design.spline.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.design.spline.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.design.spline.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.design.spline.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.design.spline.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.design.spline.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/Spline
+echo "Removing $HOME/Library/Application Support/Spline..."
+if [ -d "$HOME/Library/Application Support/Spline" ]; then
+    rm -rf "$HOME/Library/Application Support/Spline" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Spline" ]; then
+    rm -f "$HOME/Library/Application Support/Spline" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/Spline
+echo "Removing $HOME/Library/Logs/Spline..."
+if [ -d "$HOME/Library/Logs/Spline" ]; then
+    rm -rf "$HOME/Library/Logs/Spline" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Spline" ]; then
+    rm -f "$HOME/Library/Logs/Spline" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.design.spline.plist
 echo "Removing $HOME/Library/Preferences/com.design.spline.plist..."
 if [ -d "$HOME/Library/Preferences/com.design.spline.plist" ]; then
