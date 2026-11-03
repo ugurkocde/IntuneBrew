@@ -1,7 +1,7 @@
 {
   "app_name": "Vlc Media Player",
   "app_key": "vlc_media_player",
-  "last_updated": "2026-11-02",
+  "last_updated": "2026-11-03",
   "total_cves": 113,
   "summary": {
     "critical": 6,
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2019-12874",
       "published_date": "2019-06-18",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "An issue was discovered in zlib_decompress_extra in modules/demux/mkv/util.cpp in VideoLAN VLC media player 3.x through 3.0.7. The Matroska demuxer, while parsing a malformed MKV file type, has a double free.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -497,7 +497,7 @@
     {
       "cve_id": "CVE-2019-14437",
       "published_date": "2019-08-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "The xiph_SplitHeaders function in modules/demux/xiph.h in VideoLAN VLC media player 3.0.7.1 does not check array bounds properly. As a result, a heap-based buffer over-read can be triggered via a crafted .ogg file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -518,7 +518,7 @@
     {
       "cve_id": "CVE-2019-14438",
       "published_date": "2019-08-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "A heap-based buffer over-read in xiph_PackHeaders() in modules/demux/xiph.h in VideoLAN VLC media player 3.0.7.1 allows remote attackers to trigger a heap-based buffer over-read via a crafted .ogg file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -539,7 +539,7 @@
     {
       "cve_id": "CVE-2019-14498",
       "published_date": "2019-08-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "A divide-by-zero error exists in the Control function of demux/caf.c in VideoLAN VLC media player 3.0.7.1. As a result, an FPE can be triggered via a crafted CAF file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -560,7 +560,7 @@
     {
       "cve_id": "CVE-2019-14535",
       "published_date": "2019-08-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "A divide-by-zero error exists in the SeekIndex function of demux/asf/asf.c in VideoLAN VLC media player 3.0.7.1. As a result, an FPE can be triggered via a crafted WMV file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -581,7 +581,7 @@
     {
       "cve_id": "CVE-2019-14533",
       "published_date": "2019-08-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "The Control function of demux/asf/asf.c in VideoLAN VLC media player 3.0.7.1 has a use-after-free.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -602,7 +602,7 @@
     {
       "cve_id": "CVE-2019-14776",
       "published_date": "2019-08-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "A heap-based buffer over-read exists in DemuxInit() in demux/asf/asf.c in VideoLAN VLC media player 3.0.7.1 via a crafted .mkv file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -623,7 +623,7 @@
     {
       "cve_id": "CVE-2019-14777",
       "published_date": "2019-08-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "The Control function of demux/mkv/mkv.cpp in VideoLAN VLC media player 3.0.7.1 has a use-after-free.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -644,7 +644,7 @@
     {
       "cve_id": "CVE-2019-14778",
       "published_date": "2019-08-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "The mkv::virtual_segment_c::seek method of demux/mkv/virtual_segment.cpp in VideoLAN VLC media player 3.0.7.1 has a use-after-free.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -665,7 +665,7 @@
     {
       "cve_id": "CVE-2019-14970",
       "published_date": "2019-08-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "A vulnerability in mkv::event_thread_t in VideoLAN VLC media player 3.0.7.1 allows remote attackers to trigger a heap-based buffer overflow via a crafted .mkv file.",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -1652,7 +1652,7 @@
     {
       "cve_id": "CVE-2019-14534",
       "published_date": "2019-08-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "In VideoLAN VLC media player 3.0.7.1, there is a NULL pointer dereference at the function SeekPercent of demux/asf/asf.c that will lead to a denial of service attack.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1715,7 +1715,7 @@
     {
       "cve_id": "CVE-2019-5439",
       "published_date": "2019-06-13",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-02",
       "description": "A Buffer Overflow in VLC Media Player < 3.0.7 causes a crash which can possibly be further developed into a remote code execution exploit.",
       "base_score": 6.5,
       "severity": "MEDIUM",
