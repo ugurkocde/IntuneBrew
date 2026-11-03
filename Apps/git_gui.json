@@ -18,5 +18,6 @@
     "x86_64"
   ],
   "sha": "29d30b3bede4c18deadb4c50a882f7344faaa9480d1edd03ddf8c80e0d1816a0",
-  "category": "Developer Tools"
+  "category": "Developer Tools",
+  "previous_version": "2.56.0"
 }

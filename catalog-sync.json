@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-02T16:09:29.053788Z",
-  "lastFullSyncAt": "2026-11-02T16:09:29.053788Z",
+  "lastPublishedAt": "2026-11-03T00:59:11.194079Z",
+  "lastFullSyncAt": "2026-11-03T00:59:11.194079Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -110,6 +110,10 @@
       "stage": "collection"
     },
     {
+      "app": "steermouse",
+      "stage": "collection"
+    },
+    {
       "app": "tunnelblick",
       "stage": "collection"
     },
@@ -127,5 +131,5 @@
     }
   ],
   "appCount": 1153,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/41472050399"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/41552643198"
 }
