@@ -1,14 +1,14 @@
 {
   "name": "TabTab",
   "description": "Window and tab manager",
-  "version": "2.2.3",
+  "version": "2.2.4",
   "url": "https://github.com/riccqi/TabTabApp/releases/download/prod/tabtab.dmg",
   "vendor_url": "https://github.com/riccqi/TabTabApp/releases/download/prod/tabtab.dmg",
   "bundleId": "riccqi.TabTab",
   "homepage": "https://tabtabapp.net/",
   "homebrew_cask": "tabtab",
   "fileName": "tabtab.dmg",
-  "sha": "5f6f818c957b4aefb0bad29d664374c825101a83709ef2f3b35e06c09779f594",
+  "sha": "02c751495a987c2de0888745e95ba2cdbd8f681ce5ce089e3a96e7694fdd96eb",
   "category": "Productivity",
   "publisher": "TabTab",
   "previous_version": "2.2.3"

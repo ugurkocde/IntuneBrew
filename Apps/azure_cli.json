@@ -1,13 +1,13 @@
 {
   "name": "Azure CLI",
   "description": "Microsoft Azure CLI 2.0",
-  "version": "2.91.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/azure_cli_2.91.0.pkg",
-  "vendor_url": "https://github.com/Azure/azure-cli/releases/download/azure-cli-2.91.0/azure-cli-2.91.0-macos-arm64.tar.gz",
+  "version": "2.92.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/azure_cli_2.92.0.pkg",
+  "vendor_url": "https://github.com/Azure/azure-cli/releases/download/azure-cli-2.92.0/azure-cli-2.92.0-macos-arm64.tar.gz",
   "bundleId": "com.intunebrew.azure_cli",
   "homepage": "https://docs.microsoft.com/cli/azure/overview",
   "homebrew_formula": "azure-cli",
-  "fileName": "azure_cli_2.91.0.pkg",
+  "fileName": "azure_cli_2.92.0.pkg",
   "type": "app",
   "publisher": "Microsoft",
   "packageIdentifier": "com.intunebrew.azure_cli",
@@ -17,7 +17,7 @@
     "arm64",
     "x86_64"
   ],
-  "sha": "3a8b99f841315825e3932b433c566948c5376f995a9dd7f32aab0eb0f028786f",
+  "sha": "43f27e06104d68b837fe7f69a0cee1f6a1c3bcecf09942a0b3205ec392678fca",
   "category": "Developer Tools",
   "previous_version": "2.91.0"
 }

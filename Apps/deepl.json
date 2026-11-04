@@ -1,14 +1,14 @@
 {
   "name": "DeepL",
   "description": "Trains AIs to understand and translate texts",
-  "version": "26.10.12962491689",
-  "url": "https://www.deepl.com/macos/download/26.10/12962491689/DeepL.dmg",
-  "vendor_url": "https://www.deepl.com/macos/download/26.10/12962491689/DeepL.dmg",
+  "version": "26.11.13023090762",
+  "url": "https://www.deepl.com/macos/download/26.11/13023090762/DeepL.dmg",
+  "vendor_url": "https://www.deepl.com/macos/download/26.11/13023090762/DeepL.dmg",
   "bundleId": "com.linguee.DeepLCopyTranslator",
   "homepage": "https://www.deepl.com/",
   "homebrew_cask": "deepl",
   "fileName": "DeepL.dmg",
-  "sha": "e87c1069b0ddef1c54b0aaf183483453da1efaf1dbb1b877be0bef224b74e079",
+  "sha": "85aacdd551fc4d876536f29322c1787c6089fec2bd132666bc3b76d5d043a88f",
   "changelog": "https://www.deepl.com/changelog.html",
   "qa_info": {
     "qa_timestamp": "2025-05-14T06:45:18Z",
