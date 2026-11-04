@@ -33,12 +33,28 @@ elif [ -f "$HOME/Library/Application Support/Gimp" ]; then
     rm -f "$HOME/Library/Application Support/Gimp" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/GIMP
+echo "Removing $HOME/Library/Caches/GIMP..."
+if [ -d "$HOME/Library/Caches/GIMP" ]; then
+    rm -rf "$HOME/Library/Caches/GIMP" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/GIMP" ]; then
+    rm -f "$HOME/Library/Caches/GIMP" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/org.gimp.gimp-3.2.plist
 echo "Removing $HOME/Library/Preferences/org.gimp.gimp-3.2.plist..."
 if [ -d "$HOME/Library/Preferences/org.gimp.gimp-3.2.plist" ]; then
     rm -rf "$HOME/Library/Preferences/org.gimp.gimp-3.2.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/org.gimp.gimp-3.2.plist" ]; then
     rm -f "$HOME/Library/Preferences/org.gimp.gimp-3.2.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/org.gimp.gimp.plist
+echo "Removing $HOME/Library/Preferences/org.gimp.gimp.plist..."
+if [ -d "$HOME/Library/Preferences/org.gimp.gimp.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/org.gimp.gimp.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.gimp.gimp.plist" ]; then
+    rm -f "$HOME/Library/Preferences/org.gimp.gimp.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/org.gimp.gimp-3.2.savedState

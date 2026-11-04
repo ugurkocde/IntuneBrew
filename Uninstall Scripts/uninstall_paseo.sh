@@ -113,5 +113,13 @@ elif [ -f "$HOME/Library/Preferences/sh.paseo.desktop.plist" ]; then
     rm -f "$HOME/Library/Preferences/sh.paseo.desktop.plist" 2>/dev/null || true
 fi
 
+# Remove $HOME/.paseo
+echo "Removing $HOME/.paseo..."
+if [ -d "$HOME/.paseo" ]; then
+    rm -rf "$HOME/.paseo" 2>/dev/null || true
+elif [ -f "$HOME/.paseo" ]; then
+    rm -f "$HOME/.paseo" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0
