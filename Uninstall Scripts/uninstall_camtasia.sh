@@ -17,6 +17,12 @@ fi
 echo "Stopping Camtasia if running..."
 pkill -f "Camtasia" 2>/dev/null || true
 
+# Unload service com.techsmith.CamtasiaConnector.Camtasia
+echo "Unloading service com.techsmith.CamtasiaConnector.Camtasia..."
+launchctl unload -w /Library/LaunchAgents/com.techsmith.CamtasiaConnector.Camtasia.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.techsmith.CamtasiaConnector.Camtasia.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.techsmith.CamtasiaConnector.Camtasia.plist 2>/dev/null || true
+
 # Unload service com.techsmith.TechSmithAgent
 echo "Unloading service com.techsmith.TechSmithAgent..."
 launchctl unload -w /Library/LaunchAgents/com.techsmith.TechSmithAgent.plist 2>/dev/null || true

@@ -17,6 +17,10 @@ fi
 echo "Stopping Screaming Frog SEO Spider if running..."
 pkill -f "Screaming Frog SEO Spider" 2>/dev/null || true
 
+# Kill application with bundle ID uk.co.screamingfrog.seo.spider if running
+echo "Stopping application with bundle ID uk.co.screamingfrog.seo.spider if running..."
+killall -9 "uk.co.screamingfrog.seo.spider" 2>/dev/null || true
+
 # Remove /Applications/Screaming Frog SEO Spider.app
 echo "Removing /Applications/Screaming Frog SEO Spider.app..."
 if [ -d "/Applications/Screaming Frog SEO Spider.app" ]; then

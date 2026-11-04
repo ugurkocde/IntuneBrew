@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Application Support/CodeRunner" ]; then
     rm -f "$HOME/Library/Application Support/CodeRunner" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.krill.coderunner.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.krill.coderunner.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.krill.coderunner.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.krill.coderunner.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.krill.coderunner.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.krill.coderunner.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Autosave Information/com.krill.CodeRunner.plist
 echo "Removing $HOME/Library/Autosave Information/com.krill.CodeRunner.plist..."
 if [ -d "$HOME/Library/Autosave Information/com.krill.CodeRunner.plist" ]; then
