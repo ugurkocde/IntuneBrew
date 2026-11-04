@@ -1,7 +1,7 @@
 {
   "app_name": "Mozilla Firefox Esr",
   "app_key": "mozilla_firefox_esr",
-  "last_updated": "2026-11-03",
+  "last_updated": "2026-11-04",
   "total_cves": 3500,
   "summary": {
     "critical": 511,
@@ -1568,7 +1568,7 @@
     {
       "cve_id": "CVE-2026-74985",
       "published_date": "2026-08-18",
-      "last_modified_date": "2026-08-25",
+      "last_modified_date": "2026-11-03",
       "description": "Privilege escalation in the Enterprise Policies component. This vulnerability was fixed in Firefox 154, Firefox ESR 153.1, Thunderbird 154, and Thunderbird 153.1.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -5873,7 +5873,7 @@
     {
       "cve_id": "CVE-2024-3863",
       "published_date": "2024-04-16",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-03",
       "description": "The executable file warning was not presented when downloading .xrm-ms files.  \n*Note: This issue only affected Windows operating systems. Other operating systems are unaffected.* This vulnerability affects Firefox < 125, Firefox ESR < 115.10, and Thunderbird < 115.10.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -18599,7 +18599,7 @@
     {
       "cve_id": "CVE-2024-5700",
       "published_date": "2024-06-11",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-03",
       "description": "Memory safety bugs present in Firefox 126, Firefox ESR 115.11, and Thunderbird 115.11. Some of these bugs showed evidence of memory corruption and we presume that with enough effort some of these could have been exploited to run arbitrary code. This vulnerability affects Firefox < 127, Firefox ESR < 115.12, and Thunderbird < 115.12.",
       "base_score": 7.0,
       "severity": "HIGH",
