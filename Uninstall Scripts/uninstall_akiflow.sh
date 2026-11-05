@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/Akiflow" ]; then
     rm -f "$HOME/Library/Application Support/Akiflow" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.akiflow.akiflow.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.akiflow.akiflow.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.akiflow.akiflow.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.akiflow.akiflow.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.akiflow.akiflow.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.akiflow.akiflow.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/Akiflow
 echo "Removing $HOME/Library/Preferences/Akiflow..."
 if [ -d "$HOME/Library/Preferences/Akiflow" ]; then
