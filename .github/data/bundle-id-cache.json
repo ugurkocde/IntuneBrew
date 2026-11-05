@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-05T01:11:25.912Z",
+  "last_full_scan": "2026-11-05T16:25:03.392Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9472,6 +9472,19 @@
       "status": "verified",
       "source": "file",
       "name": "Git GUI"
+    },
+    "phoenix_code": {
+      "last_checked": "2026-11-05T16:25:03.387Z",
+      "bundle_id": null,
+      "status": "unknown",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved",
+        "openai_alternative"
+      ],
+      "name": "Phoenix Code"
     }
   }
 }
