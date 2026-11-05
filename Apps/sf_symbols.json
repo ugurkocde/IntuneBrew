@@ -1,7 +1,7 @@
 {
   "name": "SF Symbols",
   "description": "Tool that provides consistent, highly configurable symbols for apps",
-  "version": "27.0",
+  "version": "27.2",
   "url": "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-27.dmg",
   "vendor_url": "https://devimages-cdn.apple.com/design/resources/download/SF-Symbols-27.dmg",
   "bundleId": "com.apple.pkg.SFSymbols",

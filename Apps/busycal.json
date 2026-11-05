@@ -9,7 +9,7 @@
   "fileName": "busycal_2026.4.5.pkg",
   "type": "app",
   "sha": "ae494f3939603fb6648e3a031d40bc5c85e7f1d4888e431857843a4e6e3ff17c",
-  "previous_version": "2026.4.4",
+  "previous_version": "2026.4.5",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:45:22Z",
     "qa_result": "Installation successful and verified",

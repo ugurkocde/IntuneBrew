@@ -1,16 +1,17 @@
 {
   "name": "Android SDK Platform-Tools",
   "description": "Android SDK component",
-  "version": "37.0.1",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/android_sdk_platformtools_37.0.1.pkg",
-  "vendor_url": "https://dl.google.com/android/repository/platform-tools_r37.0.1-darwin.zip",
+  "version": "37.0.2",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/android_sdk_platformtools_37.0.2.pkg",
+  "vendor_url": "https://dl.google.com/android/repository/platform-tools_r37.0.2-darwin.zip",
   "bundleId": "com.google.android.platform-tools",
   "homepage": "https://developer.android.com/tools/releases/platform-tools",
-  "fileName": "android_sdk_platformtools_37.0.1.pkg",
+  "fileName": "android_sdk_platformtools_37.0.2.pkg",
   "type": "app",
   "category": "Developer Tools",
   "publisher": "Google LLC",
   "previous_version": "37.0.1",
-  "sha": "af53283967d928cd2a5eb6dd21a581211d4656fbdf1ac5dfec3c9305a43d8e83",
-  "homebrew_cask": "android-platform-tools"
+  "sha": "1d6a453df63444034bea674a9b736d2f89b20a96a8df6dd32a917a98873baf8f",
+  "homebrew_cask": "android-platform-tools",
+  "packageIdentifier": "com.google.android.platform-tools"
 }

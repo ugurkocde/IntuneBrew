@@ -8,7 +8,7 @@
   "homepage": "https://adlock.com/",
   "homebrew_cask": "adlock",
   "fileName": "AdLock_Installer.dmg",
-  "sha": "59b0b8896c58bd0416d1a3bed47fad92933e124319fde49e54114ea8c7a082a8",
+  "sha": "f59acca251efa50d877d421012eb18ccc1c213b187aeed2930958eddb155acb7",
   "category": "Security",
   "publisher": "AdLock",
   "previous_version": "2.2.0.8"
