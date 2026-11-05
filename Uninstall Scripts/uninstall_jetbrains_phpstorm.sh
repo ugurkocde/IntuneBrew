@@ -43,28 +43,28 @@ elif [ -f "$HOME/Library/Application Support/JetBrains/consentOptions" ]; then
     rm -f "$HOME/Library/Application Support/JetBrains/consentOptions" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/JetBrains/PhpStorm2026.2
-echo "Removing $HOME/Library/Application Support/JetBrains/PhpStorm2026.2..."
-if [ -d "$HOME/Library/Application Support/JetBrains/PhpStorm2026.2" ]; then
-    rm -rf "$HOME/Library/Application Support/JetBrains/PhpStorm2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/JetBrains/PhpStorm2026.2" ]; then
-    rm -f "$HOME/Library/Application Support/JetBrains/PhpStorm2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/JetBrains/PhpStorm2026.3
+echo "Removing $HOME/Library/Application Support/JetBrains/PhpStorm2026.3..."
+if [ -d "$HOME/Library/Application Support/JetBrains/PhpStorm2026.3" ]; then
+    rm -rf "$HOME/Library/Application Support/JetBrains/PhpStorm2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/JetBrains/PhpStorm2026.3" ]; then
+    rm -f "$HOME/Library/Application Support/JetBrains/PhpStorm2026.3" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/JetBrains/PhpStorm2026.2
-echo "Removing $HOME/Library/Caches/JetBrains/PhpStorm2026.2..."
-if [ -d "$HOME/Library/Caches/JetBrains/PhpStorm2026.2" ]; then
-    rm -rf "$HOME/Library/Caches/JetBrains/PhpStorm2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/JetBrains/PhpStorm2026.2" ]; then
-    rm -f "$HOME/Library/Caches/JetBrains/PhpStorm2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Caches/JetBrains/PhpStorm2026.3
+echo "Removing $HOME/Library/Caches/JetBrains/PhpStorm2026.3..."
+if [ -d "$HOME/Library/Caches/JetBrains/PhpStorm2026.3" ]; then
+    rm -rf "$HOME/Library/Caches/JetBrains/PhpStorm2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/JetBrains/PhpStorm2026.3" ]; then
+    rm -f "$HOME/Library/Caches/JetBrains/PhpStorm2026.3" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Logs/JetBrains/PhpStorm2026.2
-echo "Removing $HOME/Library/Logs/JetBrains/PhpStorm2026.2..."
-if [ -d "$HOME/Library/Logs/JetBrains/PhpStorm2026.2" ]; then
-    rm -rf "$HOME/Library/Logs/JetBrains/PhpStorm2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Logs/JetBrains/PhpStorm2026.2" ]; then
-    rm -f "$HOME/Library/Logs/JetBrains/PhpStorm2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Logs/JetBrains/PhpStorm2026.3
+echo "Removing $HOME/Library/Logs/JetBrains/PhpStorm2026.3..."
+if [ -d "$HOME/Library/Logs/JetBrains/PhpStorm2026.3" ]; then
+    rm -rf "$HOME/Library/Logs/JetBrains/PhpStorm2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/JetBrains/PhpStorm2026.3" ]; then
+    rm -f "$HOME/Library/Logs/JetBrains/PhpStorm2026.3" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.jetbrains.PhpStorm.plist

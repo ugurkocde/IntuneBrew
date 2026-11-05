@@ -35,36 +35,36 @@ elif [ -f "/Applications/PyCharm.app" ]; then
     rm -f "/Applications/PyCharm.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/JetBrains/PyCharm2026.2
-echo "Removing $HOME/Library/Application Support/JetBrains/PyCharm2026.2..."
-if [ -d "$HOME/Library/Application Support/JetBrains/PyCharm2026.2" ]; then
-    rm -rf "$HOME/Library/Application Support/JetBrains/PyCharm2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/JetBrains/PyCharm2026.2" ]; then
-    rm -f "$HOME/Library/Application Support/JetBrains/PyCharm2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/JetBrains/PyCharm2026.3
+echo "Removing $HOME/Library/Application Support/JetBrains/PyCharm2026.3..."
+if [ -d "$HOME/Library/Application Support/JetBrains/PyCharm2026.3" ]; then
+    rm -rf "$HOME/Library/Application Support/JetBrains/PyCharm2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/JetBrains/PyCharm2026.3" ]; then
+    rm -f "$HOME/Library/Application Support/JetBrains/PyCharm2026.3" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/PyCharm2026.2
-echo "Removing $HOME/Library/Application Support/PyCharm2026.2..."
-if [ -d "$HOME/Library/Application Support/PyCharm2026.2" ]; then
-    rm -rf "$HOME/Library/Application Support/PyCharm2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/PyCharm2026.2" ]; then
-    rm -f "$HOME/Library/Application Support/PyCharm2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/PyCharm2026.3
+echo "Removing $HOME/Library/Application Support/PyCharm2026.3..."
+if [ -d "$HOME/Library/Application Support/PyCharm2026.3" ]; then
+    rm -rf "$HOME/Library/Application Support/PyCharm2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/PyCharm2026.3" ]; then
+    rm -f "$HOME/Library/Application Support/PyCharm2026.3" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/JetBrains/PyCharm2026.2
-echo "Removing $HOME/Library/Caches/JetBrains/PyCharm2026.2..."
-if [ -d "$HOME/Library/Caches/JetBrains/PyCharm2026.2" ]; then
-    rm -rf "$HOME/Library/Caches/JetBrains/PyCharm2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/JetBrains/PyCharm2026.2" ]; then
-    rm -f "$HOME/Library/Caches/JetBrains/PyCharm2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Caches/JetBrains/PyCharm2026.3
+echo "Removing $HOME/Library/Caches/JetBrains/PyCharm2026.3..."
+if [ -d "$HOME/Library/Caches/JetBrains/PyCharm2026.3" ]; then
+    rm -rf "$HOME/Library/Caches/JetBrains/PyCharm2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/JetBrains/PyCharm2026.3" ]; then
+    rm -f "$HOME/Library/Caches/JetBrains/PyCharm2026.3" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Logs/JetBrains/PyCharm2026.2
-echo "Removing $HOME/Library/Logs/JetBrains/PyCharm2026.2..."
-if [ -d "$HOME/Library/Logs/JetBrains/PyCharm2026.2" ]; then
-    rm -rf "$HOME/Library/Logs/JetBrains/PyCharm2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Logs/JetBrains/PyCharm2026.2" ]; then
-    rm -f "$HOME/Library/Logs/JetBrains/PyCharm2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Logs/JetBrains/PyCharm2026.3
+echo "Removing $HOME/Library/Logs/JetBrains/PyCharm2026.3..."
+if [ -d "$HOME/Library/Logs/JetBrains/PyCharm2026.3" ]; then
+    rm -rf "$HOME/Library/Logs/JetBrains/PyCharm2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/JetBrains/PyCharm2026.3" ]; then
+    rm -f "$HOME/Library/Logs/JetBrains/PyCharm2026.3" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.jetbrains.pycharm.plist
@@ -99,12 +99,12 @@ elif [ -f "$HOME/Library/Preferences/jetbrains.pycharm.*.plist" ]; then
     rm -f "$HOME/Library/Preferences/jetbrains.pycharm.*.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/PyCharm2026.2
-echo "Removing $HOME/Library/Preferences/PyCharm2026.2..."
-if [ -d "$HOME/Library/Preferences/PyCharm2026.2" ]; then
-    rm -rf "$HOME/Library/Preferences/PyCharm2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/PyCharm2026.2" ]; then
-    rm -f "$HOME/Library/Preferences/PyCharm2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/PyCharm2026.3
+echo "Removing $HOME/Library/Preferences/PyCharm2026.3..."
+if [ -d "$HOME/Library/Preferences/PyCharm2026.3" ]; then
+    rm -rf "$HOME/Library/Preferences/PyCharm2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/PyCharm2026.3" ]; then
+    rm -f "$HOME/Library/Preferences/PyCharm2026.3" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.jetbrains.pycharm.savedState
