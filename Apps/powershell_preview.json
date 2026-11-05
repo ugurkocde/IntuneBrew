@@ -9,5 +9,7 @@
   "homebrew_cask": "powershell@preview",
   "fileName": "powershell-7.7.0-rc.1-osx-arm64.pkg",
   "sha": "31b9ad434af07c8f65258dc288a4dab550d6f237df6697eae7e88475b389ad58",
-  "type": "pkg"
+  "type": "pkg",
+  "category": "Developer Tools",
+  "publisher": "Microsoft Corporation"
 }
