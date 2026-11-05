@@ -712,7 +712,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | webex | 46.10.0.36042 | 46.11.0.36194 |
 | zed | 1.26.2 | 1.27.0 |
 
-32 app updates could not be published. See [catalog sync status](catalog-sync.json).
+33 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
