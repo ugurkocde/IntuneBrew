@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-05T16:25:03.392Z",
+  "last_full_scan": "2026-11-05T17:32:05.286Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9485,6 +9485,13 @@
         "openai_alternative"
       ],
       "name": "Phoenix Code"
+    },
+    "powershell_preview": {
+      "last_checked": "2026-11-05T17:32:05.276Z",
+      "bundle_id": "com.microsoft.powershell-preview",
+      "status": "verified",
+      "source": "file",
+      "name": "PowerShell Preview"
     }
   }
 }
