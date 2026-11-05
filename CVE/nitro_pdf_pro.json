@@ -1,7 +1,7 @@
 {
   "app_name": "Nitro Pdf Pro",
   "app_key": "nitro_pdf_pro",
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-05",
   "total_cves": 25,
   "summary": {
     "critical": 0,
@@ -434,7 +434,7 @@
     {
       "cve_id": "CVE-2025-67825",
       "published_date": "2026-01-08",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-04",
       "description": "An issue was discovered in Nitro PDF Pro for Windows before 14.42.0.34. In certain cases, it displays signer information from a non-verified PDF field rather than from the verified certificate subject. This could allow a document to present inconsistent signer details. The display logic was updated to ensure signer information consistently reflects the verified certificate identity.",
       "base_score": 5.5,
       "severity": "MEDIUM",

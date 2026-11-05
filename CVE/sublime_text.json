@@ -1,7 +1,7 @@
 {
   "app_name": "Sublime Text",
   "app_key": "sublime_text",
-  "last_updated": "2026-11-04",
+  "last_updated": "2026-11-05",
   "total_cves": 3,
   "summary": {
     "critical": 1,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2025-65741",
       "published_date": "2025-12-09",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-04",
       "description": "Sublime Text 3 Build 3208 or prior for MacOS is vulnerable to Dylib Injection. An attacker could compile a .dylib file and force the execution of this library in the context of the Sublime Text application.",
       "base_score": 9.8,
       "severity": "CRITICAL",
