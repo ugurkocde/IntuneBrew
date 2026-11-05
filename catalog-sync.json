@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-05T17:30:51.465004Z",
-  "lastFullSyncAt": "2026-11-05T17:30:51.465004Z",
+  "lastPublishedAt": "2026-11-05T20:14:43.152977Z",
+  "lastFullSyncAt": "2026-11-05T20:14:43.152977Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -59,10 +59,6 @@
     },
     {
       "app": "keeper_password_manager",
-      "stage": "collection"
-    },
-    {
-      "app": "lens",
       "stage": "collection"
     },
     {
@@ -135,5 +131,5 @@
     }
   ],
   "appCount": 1155,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42070042056"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42097005889"
 }

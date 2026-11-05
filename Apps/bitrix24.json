@@ -1,7 +1,7 @@
 {
   "name": "Bitrix24",
   "description": "Business management platform",
-  "version": "23.0.32.91",
+  "version": "24.0.37.92",
   "url": "https://dl.bitrix24.com/b24/bitrix24_desktop_arm.dmg",
   "vendor_url": "https://dl.bitrix24.com/b24/bitrix24_desktop_arm.dmg",
   "bundleId": "com.bitrix24.Bitrix24",

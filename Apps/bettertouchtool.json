@@ -9,7 +9,7 @@
   "fileName": "bettertouchtool_6.1104.pkg",
   "type": "app",
   "sha": "ed477ebd87937a1473cd9bd3a4745cbbae46101f24c89b03532cbd1fe01d5d1c",
-  "previous_version": "6.1103",
+  "previous_version": "6.1104",
   "qa_info": {
     "qa_timestamp": "2025-05-19T06:53:16Z",
     "qa_result": "Installation successful and verified",

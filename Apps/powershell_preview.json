@@ -11,5 +11,6 @@
   "sha": "31b9ad434af07c8f65258dc288a4dab550d6f237df6697eae7e88475b389ad58",
   "type": "pkg",
   "category": "Developer Tools",
-  "publisher": "Microsoft Corporation"
+  "publisher": "Microsoft Corporation",
+  "previous_version": "7.7.0-rc.1"
 }
