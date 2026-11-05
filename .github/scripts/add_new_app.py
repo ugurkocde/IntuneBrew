@@ -16,7 +16,7 @@ import sys
 import json
 import requests
 from difflib import SequenceMatcher
-from request_sources import FORMULA_RECIPES, FORMULA_NAMES, required_recipe
+from request_sources import FORMULA_RECIPES, FORMULA_NAMES, required_recipe, CASK_NAMES
 
 # Cache for the Homebrew cask list
 _cask_list_cache = None
@@ -93,6 +93,9 @@ def is_ambiguous(results):
 
 def cask_display_name(cask_data, fallback):
     """Get the human-readable name of a cask, falling back to its token."""
+    override = CASK_NAMES.get(cask_data.get('token', fallback))
+    if override:
+        return override
     name = cask_data.get('name', fallback)
     if isinstance(name, list):
         name = name[0] if name else fallback
@@ -114,7 +117,7 @@ def search_homebrew_casks(search_term):
 
     for cask in casks:
         token = cask.get('token', '')
-        names = cask.get('name', [])
+        names = [CASK_NAMES[token]] if token in CASK_NAMES else cask.get('name', [])
         if isinstance(names, str):
             names = [names]
 
