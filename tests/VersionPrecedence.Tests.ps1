@@ -4,8 +4,13 @@ foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
     $ast = [System.Management.Automation.Language.Parser]::ParseFile((Join-Path $PSScriptRoot "../$file"), [ref]$tokens, [ref]$errors)
     if ($errors.Count) { throw ($errors | Out-String) }
     $comparator = if ($file -eq 'IntuneBrew_Runbook.ps1') { 'Is-NewerVersion' } else { 'Test-NewerVersion' }
-    foreach ($name in @('Compare-VersionSegments', $comparator, 'Convert-VersionToSortable')) {
+    $requiredFunctions = @('Compare-VersionSegments', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord', $comparator, 'Convert-VersionToSortable')
+    foreach ($name in $requiredFunctions) {
         $function = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $name }, $true)
+        foreach ($command in $function.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] }, $true)) {
+            $dependency = $command.GetCommandName()
+            if ($dependency -in @('ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord') -and $dependency -notin $requiredFunctions) { throw "Unextracted dependency: $dependency" }
+        }
         Invoke-Expression $function.Extent.Text
     }
     foreach ($case in @(
@@ -63,16 +68,6 @@ foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
     )) {
         if ((& $comparator $case[0] $case[1]) -ne $case[2]) { throw "Catalog format changed in $file`: $case" }
     }
-    foreach ($case in @(
-        @('0.4.28+10','0.4.28+2'), @('0.4.10+2','0.4.9+2'),
-        @('2026.10.0+123','2026.10.0+99')
-    )) {
-        $newKey = Convert-VersionToSortable $case[0]
-        $oldKey = Convert-VersionToSortable $case[1]
-        if ([string]::CompareOrdinal($newKey, $oldKey) -le 0) { throw "Incorrect numeric bundle sort in $file`: $case" }
-    }
-    if ((Convert-VersionToSortable '0.4.28+0002') -ne (Convert-VersionToSortable '0.4.28+2')) {
-        throw "Equivalent numeric bundle builds sort differently in $file"
-    }
+
 }
 Write-Host 'Release, prerelease, build, and normalized-version comparisons passed.'

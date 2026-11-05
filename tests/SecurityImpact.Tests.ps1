@@ -58,9 +58,14 @@ if ($null -ne (Test-CveVersionAffected '2' $range)) { throw 'An empty range was 
 $range = @{ affected_version_start = '2'; affected_version_start_type = 'including'; affected_version_end = '2'; affected_version_end_type = 'including' }
 if ((Test-CveVersionAffected '2' $range) -ne $true) { throw 'A single-version inclusive range was rejected.' }
 # Pin the assessed manifest even when catalog metadata changes before upload.
-foreach ($name in @('Get-FormattedAppName', 'Convert-VersionToSortable', 'Test-NewerVersion', 'Get-IntuneApp')) {
+$requiredFunctions = @('Get-FormattedAppName', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord', 'Convert-VersionToSortable', 'Test-NewerVersion', 'Get-IntuneApp')
+    foreach ($name in $requiredFunctions) {
     $function = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $name }, $true)
-    Invoke-Expression $function.Extent.Text
+    foreach ($command in $function.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] }, $true)) {
+            $dependency = $command.GetCommandName()
+            if ($dependency -in @('ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord') -and $dependency -notin $requiredFunctions) { throw "Unextracted dependency: $dependency" }
+        }
+        Invoke-Expression $function.Extent.Text
 }
 $script:manifestFixture = @{ name = 'Fixture'; version = '2'; url = 'https://example.invalid/two.pkg'; sha = ('a' * 64) }
 $script:metadataReads = 0
