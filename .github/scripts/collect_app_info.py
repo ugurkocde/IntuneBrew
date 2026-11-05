@@ -16,7 +16,7 @@ import hashlib
 import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse, unquote, parse_qs, urlencode
-from request_sources import source_token, FORMULA_RECIPES, FORMULA_NAMES, FORMULA_PUBLISHERS
+from request_sources import source_token, FORMULA_RECIPES, FORMULA_NAMES, FORMULA_PUBLISHERS, CASK_NAMES
 
 
 def get_filename_from_url(url, app_name=None, version=None, default_ext=".dmg"):
@@ -1621,6 +1621,7 @@ def get_cask_token(json_url):
 def find_app_file(apps_folder, display_name=None, cask_token=None):
     """Resolve an app JSON by stored cask provenance, display name, or cask token."""
     candidates = []
+    display_name = CASK_NAMES.get(cask_token, display_name)
     if display_name:
         candidates.append(sanitize_filename(display_name))
     if cask_token:
@@ -1975,6 +1976,9 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         data = {**data, 'name': [FORMULA_NAMES[cask_token]],
                 'version': data.get('versions', {}).get('stable') or data['version'],
                 'url': data.get('urls', {}).get('stable', {}).get('url') or data['url']}
+
+    if not is_formula and cask_token in CASK_NAMES:
+        data = {**data, 'name': [CASK_NAMES[cask_token]]}
 
     # A deprecated or disabled cask means the vendor discontinued the app or
     # its download can no longer be fetched reliably. Its URL will rot, so it

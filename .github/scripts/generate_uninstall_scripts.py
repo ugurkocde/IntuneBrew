@@ -193,6 +193,11 @@ def get_local_uninstall_paths(app_name, local_app_data):
     if local_app_data.get("homebrew_formula") == "git-gui" and local_app_data.get("packaging_recipe") == "git-gui-tcltk-v1":
         return ["/usr/local/bin/git-gui", "/usr/local/bin/git-citool", "/usr/local/bin/gitk", "/usr/local/lib/intunebrew/git_gui", "PKGUTIL:com.intunebrew.git_gui"]
     token = local_app_data.get("homebrew_cask") or local_app_data.get("token") or local_app_data.get("brew_token")
+    if token == "powershell@preview":
+        # Preview and stable share Homebrew zap paths; preserve user profiles and
+        # stable payloads. These paths belong to the verified preview package.
+        return ["/Applications/PowerShell-preview.app", "/usr/local/microsoft/powershell/7-preview",
+                "BINARY:/usr/local/bin/pwsh-preview", "PKGUTIL:com.microsoft.powershell-preview"]
     brew_data = get_brew_app_info(app_name, token)
     if not brew_data:
         return None
@@ -210,6 +215,45 @@ def get_local_uninstall_paths(app_name, local_app_data):
 
 def generate_uninstall_script(app_name, uninstall_paths):
     """Generate a shell script to uninstall the application"""
+    if app_name == "PowerShell Preview" and "PKGUTIL:com.microsoft.powershell-preview" in uninstall_paths:
+        return '''#!/bin/bash
+set -euo pipefail
+if [ "$EUID" -ne 0 ]; then
+  echo "Please run as root" >&2
+  exit 1
+fi
+# Never use shared PowerShell zap paths: stable installations share profiles.
+if ! /usr/sbin/pkgutil --pkg-info com.microsoft.powershell-preview >/dev/null 2>&1; then
+  echo "PowerShell Preview package is not installed; nothing removed."
+  exit 0
+fi
+command="/usr/local/bin/pwsh-preview"
+if [ -e "$command" ] || [ -L "$command" ]; then
+  if [ ! -L "$command" ]; then
+    echo "Refusing to remove a preview command owned by another installation" >&2
+    exit 1
+  fi
+  case "$(/usr/bin/readlink "$command")" in
+    /usr/local/microsoft/powershell/7-preview/pwsh|../microsoft/powershell/7-preview/pwsh) ;;
+    *) echo "Refusing to remove a preview command owned by another installation" >&2; exit 1 ;;
+  esac
+fi
+if [ -L /usr/local/microsoft/powershell/7-preview ] || [ -L /Applications/PowerShell-preview.app ]; then
+  echo "Refusing to remove a replaced preview payload" >&2
+  exit 1
+fi
+if [ -e /Applications/PowerShell-preview.app ]; then
+  bundle=$(/usr/libexec/PlistBuddy -c 'Print :CFBundleIdentifier' /Applications/PowerShell-preview.app/Contents/Info.plist)
+  if [ "$bundle" != com.microsoft.powershell-preview ]; then
+    echo "Refusing to remove an app owned by another installation" >&2
+    exit 1
+  fi
+fi
+/usr/bin/pkill -f '^/usr/local/microsoft/powershell/7-preview/pwsh( |$)' 2>/dev/null || true
+/bin/rm -f -- "$command"
+/bin/rm -rf -- /usr/local/microsoft/powershell/7-preview /Applications/PowerShell-preview.app
+/usr/sbin/pkgutil --forget com.microsoft.powershell-preview
+'''
     if app_name == "Git GUI" and "PKGUTIL:com.intunebrew.git_gui" in uninstall_paths:
         return '''#!/bin/bash
 set -euo pipefail
