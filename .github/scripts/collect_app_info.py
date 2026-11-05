@@ -2011,6 +2011,13 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
         if not match:
             raise ValueError("Warp release version has no proven bundle mapping; catalog update refused")
         version = f"{match.group(1)}.{match.group(2)}"
+    elif cask_token == "lens":
+        # Lens includes its channel in both bundle version fields. Only the
+        # verified arm64/latest release form has a proven bundle mapping.
+        if (not re.fullmatch(r"20[0-9]{2}\.(?:0[1-9]|1[0-2])\.[0-9]{6}", version)
+                or data["url"] != f"https://api.k8slens.dev/binaries/Lens-{version}-latest-arm64.dmg"):
+            raise ValueError("Lens release version or URL has no proven bundle mapping; catalog update refused")
+        version = f"{version}-latest"
     elif ',' in version:
         version = version.split(',')[0]
     if '_' in version:
