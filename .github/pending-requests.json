@@ -6,5 +6,13 @@
     ],
     "recorded_at": "2026-11-05T11:15:30.379994+00:00",
     "needs_review": false
+  },
+  {
+    "issue": 373,
+    "casks": [
+      "powershell@preview"
+    ],
+    "recorded_at": "2026-11-05T11:34:19.626112+00:00",
+    "needs_review": false
   }
 ]
