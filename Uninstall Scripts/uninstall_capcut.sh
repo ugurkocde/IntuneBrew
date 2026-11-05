@@ -53,5 +53,29 @@ elif [ -f "$HOME/Library/Group Containers/22MMUN2RN5.lv" ]; then
     rm -f "$HOME/Library/Group Containers/22MMUN2RN5.lv" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.lemon.lvoverseas
+echo "Removing $HOME/Library/HTTPStorages/com.lemon.lvoverseas..."
+if [ -d "$HOME/Library/HTTPStorages/com.lemon.lvoverseas" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.lemon.lvoverseas" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.lemon.lvoverseas" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.lemon.lvoverseas" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.capcut.CapCut.plist
+echo "Removing $HOME/Library/Preferences/com.capcut.CapCut.plist..."
+if [ -d "$HOME/Library/Preferences/com.capcut.CapCut.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.capcut.CapCut.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.capcut.CapCut.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.capcut.CapCut.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.lemon.lvoverseas.plist
+echo "Removing $HOME/Library/Preferences/com.lemon.lvoverseas.plist..."
+if [ -d "$HOME/Library/Preferences/com.lemon.lvoverseas.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.lemon.lvoverseas.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.lemon.lvoverseas.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.lemon.lvoverseas.plist" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

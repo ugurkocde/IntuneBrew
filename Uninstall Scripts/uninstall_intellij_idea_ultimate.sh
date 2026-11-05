@@ -35,28 +35,28 @@ elif [ -f "/Applications/IntelliJ IDEA.app" ]; then
     rm -f "/Applications/IntelliJ IDEA.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/JetBrains/IntelliJIdea2026.2
-echo "Removing $HOME/Library/Application Support/JetBrains/IntelliJIdea2026.2..."
-if [ -d "$HOME/Library/Application Support/JetBrains/IntelliJIdea2026.2" ]; then
-    rm -rf "$HOME/Library/Application Support/JetBrains/IntelliJIdea2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/JetBrains/IntelliJIdea2026.2" ]; then
-    rm -f "$HOME/Library/Application Support/JetBrains/IntelliJIdea2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/JetBrains/IntelliJIdea2026.3
+echo "Removing $HOME/Library/Application Support/JetBrains/IntelliJIdea2026.3..."
+if [ -d "$HOME/Library/Application Support/JetBrains/IntelliJIdea2026.3" ]; then
+    rm -rf "$HOME/Library/Application Support/JetBrains/IntelliJIdea2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/JetBrains/IntelliJIdea2026.3" ]; then
+    rm -f "$HOME/Library/Application Support/JetBrains/IntelliJIdea2026.3" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/JetBrains/IntelliJIdea2026.2
-echo "Removing $HOME/Library/Caches/JetBrains/IntelliJIdea2026.2..."
-if [ -d "$HOME/Library/Caches/JetBrains/IntelliJIdea2026.2" ]; then
-    rm -rf "$HOME/Library/Caches/JetBrains/IntelliJIdea2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/JetBrains/IntelliJIdea2026.2" ]; then
-    rm -f "$HOME/Library/Caches/JetBrains/IntelliJIdea2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Caches/JetBrains/IntelliJIdea2026.3
+echo "Removing $HOME/Library/Caches/JetBrains/IntelliJIdea2026.3..."
+if [ -d "$HOME/Library/Caches/JetBrains/IntelliJIdea2026.3" ]; then
+    rm -rf "$HOME/Library/Caches/JetBrains/IntelliJIdea2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/JetBrains/IntelliJIdea2026.3" ]; then
+    rm -f "$HOME/Library/Caches/JetBrains/IntelliJIdea2026.3" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Logs/JetBrains/IntelliJIdea2026.2
-echo "Removing $HOME/Library/Logs/JetBrains/IntelliJIdea2026.2..."
-if [ -d "$HOME/Library/Logs/JetBrains/IntelliJIdea2026.2" ]; then
-    rm -rf "$HOME/Library/Logs/JetBrains/IntelliJIdea2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Logs/JetBrains/IntelliJIdea2026.2" ]; then
-    rm -f "$HOME/Library/Logs/JetBrains/IntelliJIdea2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Logs/JetBrains/IntelliJIdea2026.3
+echo "Removing $HOME/Library/Logs/JetBrains/IntelliJIdea2026.3..."
+if [ -d "$HOME/Library/Logs/JetBrains/IntelliJIdea2026.3" ]; then
+    rm -rf "$HOME/Library/Logs/JetBrains/IntelliJIdea2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/JetBrains/IntelliJIdea2026.3" ]; then
+    rm -f "$HOME/Library/Logs/JetBrains/IntelliJIdea2026.3" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.jetbrains.intellij.plist
@@ -67,12 +67,12 @@ elif [ -f "$HOME/Library/Preferences/com.jetbrains.intellij.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.jetbrains.intellij.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/IntelliJIdea2026.2
-echo "Removing $HOME/Library/Preferences/IntelliJIdea2026.2..."
-if [ -d "$HOME/Library/Preferences/IntelliJIdea2026.2" ]; then
-    rm -rf "$HOME/Library/Preferences/IntelliJIdea2026.2" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/IntelliJIdea2026.2" ]; then
-    rm -f "$HOME/Library/Preferences/IntelliJIdea2026.2" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/IntelliJIdea2026.3
+echo "Removing $HOME/Library/Preferences/IntelliJIdea2026.3..."
+if [ -d "$HOME/Library/Preferences/IntelliJIdea2026.3" ]; then
+    rm -rf "$HOME/Library/Preferences/IntelliJIdea2026.3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/IntelliJIdea2026.3" ]; then
+    rm -f "$HOME/Library/Preferences/IntelliJIdea2026.3" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/jetbrains.idea.*.plist

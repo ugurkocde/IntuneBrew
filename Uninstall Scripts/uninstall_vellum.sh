@@ -33,12 +33,52 @@ elif [ -f "$HOME/Library/Application Scripts/co.180g.Vellum" ]; then
     rm -f "$HOME/Library/Application Scripts/co.180g.Vellum" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/co.180g.Vellum
+echo "Removing $HOME/Library/Application Support/co.180g.Vellum..."
+if [ -d "$HOME/Library/Application Support/co.180g.Vellum" ]; then
+    rm -rf "$HOME/Library/Application Support/co.180g.Vellum" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/co.180g.Vellum" ]; then
+    rm -f "$HOME/Library/Application Support/co.180g.Vellum" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.180g.vellum.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.180g.vellum.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.180g.vellum.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.180g.vellum.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.180g.vellum.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/co.180g.vellum.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/co.180g.Vellum
+echo "Removing $HOME/Library/Caches/co.180g.Vellum..."
+if [ -d "$HOME/Library/Caches/co.180g.Vellum" ]; then
+    rm -rf "$HOME/Library/Caches/co.180g.Vellum" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/co.180g.Vellum" ]; then
+    rm -f "$HOME/Library/Caches/co.180g.Vellum" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/co.180g.Vellum
 echo "Removing $HOME/Library/Containers/co.180g.Vellum..."
 if [ -d "$HOME/Library/Containers/co.180g.Vellum" ]; then
     rm -rf "$HOME/Library/Containers/co.180g.Vellum" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/co.180g.Vellum" ]; then
     rm -f "$HOME/Library/Containers/co.180g.Vellum" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/co.180g.Vellum
+echo "Removing $HOME/Library/HTTPStorages/co.180g.Vellum..."
+if [ -d "$HOME/Library/HTTPStorages/co.180g.Vellum" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/co.180g.Vellum" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/co.180g.Vellum" ]; then
+    rm -f "$HOME/Library/HTTPStorages/co.180g.Vellum" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/co.180g.Vellum.plist
+echo "Removing $HOME/Library/Preferences/co.180g.Vellum.plist..."
+if [ -d "$HOME/Library/Preferences/co.180g.Vellum.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/co.180g.Vellum.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/co.180g.Vellum.plist" ]; then
+    rm -f "$HOME/Library/Preferences/co.180g.Vellum.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

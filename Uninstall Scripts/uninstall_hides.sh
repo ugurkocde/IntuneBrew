@@ -25,6 +25,14 @@ elif [ -f "/Applications/Hides.app" ]; then
     rm -f "/Applications/Hides.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.sweetpproductions.Hides
+echo "Removing $HOME/Library/Application Scripts/com.sweetpproductions.Hides..."
+if [ -d "$HOME/Library/Application Scripts/com.sweetpproductions.Hides" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.sweetpproductions.Hides" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.sweetpproductions.Hides" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.sweetpproductions.Hides" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.sweetpproductions.Hides
 echo "Removing $HOME/Library/Containers/com.sweetpproductions.Hides..."
 if [ -d "$HOME/Library/Containers/com.sweetpproductions.Hides" ]; then
