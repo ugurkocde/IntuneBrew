@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "85fc09d8523217a035b5567c6970fdefdc970b2a184fc2e2faa07c5047b1a1c5",
   "changelog": "https://coderunnerapp.com/changelog",
-  "previous_version": "4.5",
+  "previous_version": "4.6",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:49:15Z",
     "qa_result": "Installation successful and verified",

@@ -1,14 +1,14 @@
 {
   "name": "Proton Mail",
   "description": "Client for Proton Mail and Proton Calendar",
-  "version": "1.15.1",
-  "url": "https://proton.me/download/mail/macos/1.15.1/ProtonMail-desktop.dmg",
-  "vendor_url": "https://proton.me/download/mail/macos/1.15.1/ProtonMail-desktop.dmg",
+  "version": "1.16.0",
+  "url": "https://proton.me/download/mail/macos/1.16.0/ProtonMail-desktop.dmg",
+  "vendor_url": "https://proton.me/download/mail/macos/1.16.0/ProtonMail-desktop.dmg",
   "bundleId": "ch.protonmail.desktop",
   "homepage": "https://proton.me/mail",
   "homebrew_cask": "proton-mail",
   "fileName": "ProtonMail-desktop.dmg",
-  "sha": "5fc2daf66300b58bba53f5f0a0524a1918ad085b5b79497944b783dc70ff40e7",
+  "sha": "c0ddad5c4557472965d5398a6fa4e0fb00e7ab7585b6b0fd107525d03c9d70f5",
   "category": "Communication",
   "publisher": "Proton AG",
   "previous_version": "1.15.1"

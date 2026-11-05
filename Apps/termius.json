@@ -1,7 +1,7 @@
 {
   "name": "Termius",
   "description": "SSH client",
-  "version": "10.3.0",
+  "version": "10.4.0",
   "url": "https://autoupdate.termius.com/mac-arm64/Termius.dmg",
   "vendor_url": "https://autoupdate.termius.com/mac-arm64/Termius.dmg",
   "bundleId": "com.termius-dmg.mac",

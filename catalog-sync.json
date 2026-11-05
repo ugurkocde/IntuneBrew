@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-04T01:07:34.922288Z",
-  "lastFullSyncAt": "2026-11-04T01:07:34.922288Z",
+  "lastPublishedAt": "2026-11-05T01:10:14.450348Z",
+  "lastFullSyncAt": "2026-11-05T01:10:14.450348Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -86,6 +86,10 @@
       "stage": "collection"
     },
     {
+      "app": "nvidia_geforce_now",
+      "stage": "collection"
+    },
+    {
       "app": "opera",
       "stage": "collection"
     },
@@ -118,10 +122,6 @@
       "stage": "collection"
     },
     {
-      "app": "webex",
-      "stage": "collection"
-    },
-    {
       "app": "wechat_for_mac",
       "stage": "collection"
     },
@@ -135,5 +135,5 @@
     }
   ],
   "appCount": 1153,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/41746593010"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/41941228304"
 }

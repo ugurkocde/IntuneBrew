@@ -1,14 +1,14 @@
 {
   "name": "Hides",
   "description": "App to hide all open apps except the current one",
-  "version": "7.4",
+  "version": "7.4.1",
   "url": "https://sweetpproductions.com/products/hides/Hides.dmg",
   "vendor_url": "https://sweetpproductions.com/products/hides/Hides.dmg",
   "bundleId": "com.sweetpproductions.Hides",
   "homepage": "https://hides.sweetpproductions.com/",
   "homebrew_cask": "hides",
   "fileName": "Hides.dmg",
-  "sha": "99324b93a5e88334d77a55fae78d2e4902e7c7f8a480537a9c906ba42d52c1c8",
+  "sha": "bfe833d9f1d36c134f5e78c0e7bb1e2750404a64dc96d27c020f6e6da686a4f4",
   "category": "Utilities",
   "publisher": "SweetP Productions",
   "previous_version": "7.4"

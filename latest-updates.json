@@ -1,383 +1,495 @@
 {
-  "lastChecked": "2026-11-04T01:07:34.922288Z",
+  "lastChecked": "2026-11-05T01:10:14.450348Z",
   "updates": [
     {
-      "appName": "1password",
-      "previousVersion": "8.12.42",
-      "newVersion": "8.12.44",
+      "appName": "010 editor",
+      "previousVersion": "17.0",
+      "newVersion": "17.0.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/1password.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/010_editor.png"
     },
     {
-      "appName": "adguard",
-      "previousVersion": "2.20.2.2629",
-      "newVersion": "2.20.3.2633",
+      "appName": "1password cli",
+      "previousVersion": "2.41.1",
+      "newVersion": "2.42.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/adguard.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/1password_cli.png"
     },
     {
-      "appName": "adobe acrobat pro dc",
-      "previousVersion": "26.002.22031",
-      "newVersion": "26.003.22075",
-      "changelog": "https://helpx.adobe.com/acrobat/release-note/release-notes-acrobat-reader.html",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/adobe_acrobat_pro_dc.png"
-    },
-    {
-      "appName": "anytype",
-      "previousVersion": "0.57.4",
-      "newVersion": "0.57.7",
+      "appName": "aircall workspace",
+      "previousVersion": "1.18.25",
+      "newVersion": "1.18.28",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/anytype.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/aircall_workspace.png"
     },
     {
-      "appName": "appflowy",
-      "previousVersion": "0.14.11",
-      "newVersion": "0.15.0",
+      "appName": "amadeus pro",
+      "previousVersion": "3.0.3",
+      "newVersion": "3.0.4",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/appflowy.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/amadeus_pro.png"
     },
     {
-      "appName": "asana",
-      "previousVersion": "2.10.5",
-      "newVersion": "2.10.6",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/asana.png"
-    },
-    {
-      "appName": "azure cli",
-      "previousVersion": "2.91.0",
-      "newVersion": "2.92.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/azure_cli.png"
-    },
-    {
-      "appName": "bbedit",
-      "previousVersion": "16.0.3",
-      "newVersion": "16.1",
-      "changelog": "https://www.barebones.com/company/news.html",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bbedit.png"
-    },
-    {
-      "appName": "beekeeper studio",
-      "previousVersion": "6.2.0",
-      "newVersion": "6.2.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/beekeeper_studio.png"
-    },
-    {
-      "appName": "beeper",
-      "previousVersion": "4.3.264",
-      "newVersion": "4.3.276",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/beeper.png"
+      "appName": "anki",
+      "previousVersion": "26.09.3",
+      "newVersion": "26.09.4",
+      "changelog": "https://github.com/ankitects/anki/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/anki.png"
     },
     {
       "appName": "bettertouchtool",
-      "previousVersion": "6.992",
-      "newVersion": "6.998",
+      "previousVersion": "6.998",
+      "newVersion": "6.1103",
       "changelog": null,
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bettertouchtool.png"
     },
     {
+      "appName": "biscuit",
+      "previousVersion": "2.2.3",
+      "newVersion": "2.2.4",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/biscuit.png"
+    },
+    {
+      "appName": "bitfocus companion",
+      "previousVersion": "5.1.1",
+      "newVersion": "5.1.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bitfocus_companion.png"
+    },
+    {
+      "appName": "boltai 2",
+      "previousVersion": "2.18.4",
+      "newVersion": "2.18.5",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/boltai_2.png"
+    },
+    {
+      "appName": "busycal",
+      "previousVersion": "2026.4.4",
+      "newVersion": "2026.4.5",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/busycal.png"
+    },
+    {
+      "appName": "camtasia",
+      "previousVersion": "2026.2.4",
+      "newVersion": "2026.2.5",
+      "changelog": "https://support.techsmith.com/hc/en-us/articles/115006443267",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/camtasia.png"
+    },
+    {
       "appName": "chatgpt",
-      "previousVersion": "26.1027.61615",
-      "newVersion": "26.1029.61003",
+      "previousVersion": "26.1029.61003",
+      "newVersion": "26.1029.70936",
       "changelog": "https://help.openai.com/en/articles/9703738-macos-app-release-notes",
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/chatgpt.png"
     },
     {
-      "appName": "claude",
-      "previousVersion": "4.4212.0",
-      "newVersion": "4.16336.0",
-      "changelog": "https://docs.anthropic.com/en/release-notes/claude-apps",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/claude.png"
+      "appName": "chrome remote desktop",
+      "previousVersion": "155.0.8059.19",
+      "newVersion": "157.0.8103.38",
+      "changelog": "https://support.google.com/chrome/a/answer/7679408",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/chrome_remote_desktop.png"
     },
     {
-      "appName": "claude code",
-      "previousVersion": "2.1.309",
-      "newVersion": "2.1.311",
+      "appName": "clop",
+      "previousVersion": "3.6.6",
+      "newVersion": "3.6.7",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/claude_code.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/clop.png"
     },
     {
-      "appName": "coderunner",
-      "previousVersion": "4.5",
-      "newVersion": "4.6",
-      "changelog": "https://coderunnerapp.com/changelog",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/coderunner.png"
+      "appName": "downie",
+      "previousVersion": "4.13.3",
+      "newVersion": "4.13.4",
+      "changelog": "https://software.charliemonroe.net/downie/version-history/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/downie.png"
     },
     {
-      "appName": "cursor",
-      "previousVersion": "3.27.22",
-      "newVersion": "3.28.7",
-      "changelog": "https://www.cursor.com/changelog",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/cursor.png"
+      "appName": "drawio desktop",
+      "previousVersion": "32.6.1",
+      "newVersion": "32.6.10",
+      "changelog": "https://github.com/jgraph/drawio-desktop/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/drawio_desktop.png"
     },
     {
-      "appName": "deepl",
-      "previousVersion": "26.10.12962491689",
-      "newVersion": "26.11.13023090762",
-      "changelog": "https://www.deepl.com/changelog.html",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/deepl.png"
-    },
-    {
-      "appName": "digiexam",
-      "previousVersion": "26.3.17",
-      "newVersion": "26.4.2",
+      "appName": "ecamm live",
+      "previousVersion": "4.6",
+      "newVersion": "4.6.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/digiexam.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/ecamm_live.png"
     },
     {
-      "appName": "docker desktop",
-      "previousVersion": "4.97.0",
-      "newVersion": "4.98.0",
-      "changelog": "https://docs.docker.com/desktop/release-notes/",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/docker_desktop.png"
-    },
-    {
-      "appName": "egnyte",
-      "previousVersion": "1.20.1",
-      "newVersion": "1.22.0",
+      "appName": "floorp browser",
+      "previousVersion": "12.21.0",
+      "newVersion": "12.21.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/egnyte.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/floorp_browser.png"
     },
     {
-      "appName": "elgato stream deck",
-      "previousVersion": "7.6.0.23012",
-      "newVersion": "7.6.1.23033",
-      "changelog": "https://help.elgato.com/hc/en-us/sections/5162671529357-Elgato-Stream-Deck-Software-Release-Notes",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/elgato_stream_deck.png"
-    },
-    {
-      "appName": "fsnotes",
-      "previousVersion": "7.5.0",
-      "newVersion": "7.5.1",
+      "appName": "gdevelop",
+      "previousVersion": "5.6.286",
+      "newVersion": "5.6.287",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/fsnotes.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/gdevelop.png"
     },
     {
-      "appName": "google chrome",
-      "previousVersion": "156.0.8078.80",
-      "newVersion": "157.0.8103.39",
-      "changelog": "https://chromereleases.googleblog.com/",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/google_chrome.png"
+      "appName": "gimp",
+      "previousVersion": "3.2.6",
+      "newVersion": "3.2.8",
+      "changelog": "https://www.gimp.org/release-notes/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/gimp.png"
     },
     {
-      "appName": "hepta",
-      "previousVersion": "1.115.0",
-      "newVersion": "1.116.0",
+      "appName": "gitbutler",
+      "previousVersion": "0.23.0",
+      "newVersion": "0.23.2",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/hepta.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/gitbutler.png"
     },
     {
-      "appName": "istats menus",
-      "previousVersion": "7.50.1",
-      "newVersion": "7.50.2",
+      "appName": "gitfox",
+      "previousVersion": "5.4.1",
+      "newVersion": "5.4.2",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/istats_menus.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/gitfox.png"
     },
     {
-      "appName": "jetbrains rider",
-      "previousVersion": "2026.2.4",
-      "newVersion": "2026.2.4.1",
+      "appName": "gitkraken",
+      "previousVersion": "12.6.1",
+      "newVersion": "12.6.2",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/jetbrains_rider.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/gitkraken.png"
     },
     {
-      "appName": "kiro",
-      "previousVersion": "1.4.62",
-      "newVersion": "1.4.86",
+      "appName": "google antigravity",
+      "previousVersion": "2.28.2",
+      "newVersion": "2.29.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/kiro.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/google_antigravity.png"
     },
     {
-      "appName": "kitty",
-      "previousVersion": "0.49.2",
-      "newVersion": "0.50.0",
-      "changelog": "https://github.com/kovidgoyal/kitty/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/kitty.png"
-    },
-    {
-      "appName": "langdock",
-      "previousVersion": "1.0.15",
-      "newVersion": "1.1.1",
+      "appName": "hides",
+      "previousVersion": "7.4",
+      "newVersion": "7.4.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/langdock.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/hides.png"
     },
     {
-      "appName": "lightburn",
-      "previousVersion": "2.2.00",
-      "newVersion": "2.2.01",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/lightburn.png"
+      "appName": "imazing profile editor",
+      "previousVersion": "2.3.1",
+      "newVersion": "2.3.2",
+      "changelog": "https://imazing.com/profile-editor/release-notes",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/imazing_profile_editor.png"
     },
     {
-      "appName": "mission control plus",
-      "previousVersion": "1.30",
-      "newVersion": "1.31",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/mission_control_plus.png"
+      "appName": "iterm2",
+      "previousVersion": "3.7.6",
+      "newVersion": "3.7.7",
+      "changelog": "https://iterm2.com/downloads/stable/changelog.txt",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/iterm2.png"
     },
     {
-      "appName": "motrix",
-      "previousVersion": "2.2.0",
-      "newVersion": "2.2.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/motrix.png"
+      "appName": "jabra direct",
+      "previousVersion": "8.3.26701",
+      "newVersion": "8.4.30601",
+      "changelog": "https://www.jabra.com/support/release-notes/release-note-jabra-direct",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/jabra_direct.png"
     },
     {
-      "appName": "mozilla firefox",
+      "appName": "librewolf",
       "previousVersion": "159.0",
       "newVersion": "159.0.1",
-      "changelog": "https://www.mozilla.org/en-US/firefox/releases/",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/mozilla_firefox.png"
-    },
-    {
-      "appName": "multiviewer",
-      "previousVersion": "2.13.1",
-      "newVersion": "2.14.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/multiviewer.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/librewolf.png"
     },
     {
-      "appName": "nota gyazo gif",
-      "previousVersion": "11.2.0",
-      "newVersion": "11.3.0",
-      "changelog": "https://support.gyazo.com/hc/en-us/articles/204411615-Release-Notes",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/nota_gyazo_gif.png"
-    },
-    {
-      "appName": "notion",
-      "previousVersion": "7.41.1",
-      "newVersion": "7.42.1",
-      "changelog": "https://www.notion.so/desktop-release-notes",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/notion.png"
-    },
-    {
-      "appName": "ollama",
-      "previousVersion": "0.40.13",
-      "newVersion": "0.40.14",
-      "changelog": "https://github.com/ollama/ollama/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/ollama.png"
-    },
-    {
-      "appName": "openaudible",
-      "previousVersion": "5.1.1",
-      "newVersion": "5.2",
+      "appName": "markedit",
+      "previousVersion": "1.37.0",
+      "newVersion": "1.37.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/openaudible.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/markedit.png"
     },
     {
-      "appName": "openwork",
-      "previousVersion": "0.18.63",
-      "newVersion": "0.18.64",
+      "appName": "melodics",
+      "previousVersion": "5.0.1765",
+      "newVersion": "5.0.1789",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/openwork.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/melodics.png"
     },
     {
-      "appName": "paseo",
-      "previousVersion": "0.14.0",
-      "newVersion": "0.15.0",
+      "appName": "microsoft excel",
+      "previousVersion": "16.114.26102720",
+      "newVersion": "16.114.26110224",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/paseo.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_excel.png"
     },
     {
-      "appName": "powerphotos",
-      "previousVersion": "3.4.8",
-      "newVersion": "3.4.9",
+      "appName": "microsoft office",
+      "previousVersion": "16.114.26102720",
+      "newVersion": "16.114.26110224",
+      "changelog": "https://learn.microsoft.com/en-us/officeupdates/release-notes-office-for-mac",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_office.png"
+    },
+    {
+      "appName": "microsoft office businesspro",
+      "previousVersion": "16.114.26102720",
+      "newVersion": "16.114.26110224",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/powerphotos.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_office_businesspro.png"
     },
     {
-      "appName": "remnote",
-      "previousVersion": "1.29.5",
-      "newVersion": "1.29.7",
+      "appName": "microsoft onenote",
+      "previousVersion": "16.114.26102720",
+      "newVersion": "16.114.26110224",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/remnote.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_onenote.png"
     },
     {
-      "appName": "rive",
-      "previousVersion": "0.9.479",
-      "newVersion": "0.9.517",
+      "appName": "microsoft outlook",
+      "previousVersion": "16.114.26101123",
+      "newVersion": "16.114.26102720",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rive.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_outlook.png"
     },
     {
-      "appName": "riverside studio",
-      "previousVersion": "1.33.2",
-      "newVersion": "1.34.0",
+      "appName": "microsoft powerpoint",
+      "previousVersion": "16.114.26102720",
+      "newVersion": "16.114.26110224",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/riverside_studio.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_powerpoint.png"
     },
     {
-      "appName": "rotato",
-      "previousVersion": "161",
-      "newVersion": "162",
-      "changelog": "https://rotato.app/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rotato.png"
+      "appName": "microsoft visual studio code",
+      "previousVersion": "1.144.1",
+      "newVersion": "1.145.0",
+      "changelog": "https://code.visualstudio.com/updates/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_visual_studio_code.png"
+    },
+    {
+      "appName": "microsoft word",
+      "previousVersion": "16.114.26102720",
+      "newVersion": "16.114.26110224",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_word.png"
+    },
+    {
+      "appName": "mqttx",
+      "previousVersion": "1.13.2",
+      "newVersion": "1.13.3",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/mqttx.png"
+    },
+    {
+      "appName": "multitouch",
+      "previousVersion": "2.0.2",
+      "newVersion": "2.0.3",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/multitouch.png"
+    },
+    {
+      "appName": "ocenaudio",
+      "previousVersion": "3.22.1",
+      "newVersion": "3.22.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/ocenaudio.png"
+    },
+    {
+      "appName": "osquery",
+      "previousVersion": "5.24.0",
+      "newVersion": "5.24.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/osquery.png"
+    },
+    {
+      "appName": "paste",
+      "previousVersion": "7.0.4",
+      "newVersion": "7.0.5",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/paste.png"
+    },
+    {
+      "appName": "pdfsam basic",
+      "previousVersion": "6.0.9",
+      "newVersion": "6.0.10",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/pdfsam_basic.png"
+    },
+    {
+      "appName": "proton mail",
+      "previousVersion": "1.15.1",
+      "newVersion": "1.16.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/proton_mail.png"
+    },
+    {
+      "appName": "prusaslicer",
+      "previousVersion": "2.9.6",
+      "newVersion": "2.9.7",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/prusaslicer.png"
+    },
+    {
+      "appName": "raycast",
+      "previousVersion": "2.10.1.0",
+      "newVersion": "2.11.1.0",
+      "changelog": "https://raycast.com/changelog",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/raycast.png"
+    },
+    {
+      "appName": "rectangle pro",
+      "previousVersion": "3.97",
+      "newVersion": "3.98",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rectangle_pro.png"
+    },
+    {
+      "appName": "recut",
+      "previousVersion": "4.5.2",
+      "newVersion": "4.5.4",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/recut.png"
+    },
+    {
+      "appName": "reqable",
+      "previousVersion": "3.3.9",
+      "newVersion": "3.3.10",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/reqable.png"
+    },
+    {
+      "appName": "roon",
+      "previousVersion": "2.74",
+      "newVersion": "2.74.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/roon.png"
     },
     {
       "appName": "screaming frog seo spider",
-      "previousVersion": "24.3",
-      "newVersion": "25.0",
+      "previousVersion": "25.0",
+      "newVersion": "25.1",
       "changelog": null,
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/screaming_frog_seo_spider.png"
     },
     {
-      "appName": "scroll reverser",
-      "previousVersion": "2.0.2",
-      "newVersion": "2.1.1",
+      "appName": "shutter encoder",
+      "previousVersion": "20.4",
+      "newVersion": "20.5",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/scroll_reverser.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/shutter_encoder.png"
     },
     {
-      "appName": "slack",
-      "previousVersion": "4.53.276",
-      "newVersion": "4.53.280",
-      "changelog": "https://slack.com/changelog",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/slack.png"
-    },
-    {
-      "appName": "tabtab",
-      "previousVersion": "2.2.3",
-      "newVersion": "2.2.4",
+      "appName": "skim",
+      "previousVersion": "1.7.17",
+      "newVersion": "1.7.19",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tabtab.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/skim.png"
     },
     {
-      "appName": "tailscale",
-      "previousVersion": "1.104.4",
-      "newVersion": "1.104.5",
-      "changelog": "https://tailscale.com/changelog",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tailscale.png"
+      "appName": "stats",
+      "previousVersion": "3.0.24",
+      "newVersion": "3.0.25",
+      "changelog": "https://github.com/exelban/stats/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/stats.png"
     },
     {
-      "appName": "ticktick",
-      "previousVersion": "8.2.41",
-      "newVersion": "8.2.50",
+      "appName": "termius",
+      "previousVersion": "10.3.0",
+      "newVersion": "10.4.0",
+      "changelog": "https://support.termius.com/hc/en-us/articles/4404036107673-Windows-Linux-Mac",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/termius.png"
+    },
+    {
+      "appName": "textexpander",
+      "previousVersion": "8.5",
+      "newVersion": "8.6",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/ticktick.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/textexpander.png"
     },
     {
-      "appName": "updf",
-      "previousVersion": "2.5.7",
-      "newVersion": "3.0.0",
+      "appName": "timescribe",
+      "previousVersion": "1.17.1",
+      "newVersion": "1.18.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/updf.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/timescribe.png"
     },
     {
-      "appName": "whatsapp",
-      "previousVersion": "26.44.12",
-      "newVersion": "26.44.15",
-      "changelog": "https://web.whatsapp.com/desktop/windows/release-notes",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/whatsapp.png"
-    },
-    {
-      "appName": "workflowy",
-      "previousVersion": "4.3.2610291305",
-      "newVersion": "4.3.2611021619",
+      "appName": "tresorit",
+      "previousVersion": "3.5.3591.4880",
+      "newVersion": "3.5.3603.4890",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/workflowy.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tresorit.png"
+    },
+    {
+      "appName": "tuple",
+      "previousVersion": "3.3.19",
+      "newVersion": "3.3.20",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tuple.png"
+    },
+    {
+      "appName": "tuta mail",
+      "previousVersion": "362.261023.2",
+      "newVersion": "365.261103.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tuta_mail.png"
+    },
+    {
+      "appName": "typeface",
+      "previousVersion": "4.5.2",
+      "newVersion": "4.5.3",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/typeface.png"
+    },
+    {
+      "appName": "ukelele",
+      "previousVersion": "3.7.0",
+      "newVersion": "3.7.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/ukelele.png"
+    },
+    {
+      "appName": "ungoogled chromium",
+      "previousVersion": "156.0.8078.47-1.1",
+      "newVersion": "156.0.8078.79-1.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/ungoogled_chromium.png"
+    },
+    {
+      "appName": "vellum",
+      "previousVersion": "4.1.7",
+      "newVersion": "4.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/vellum.png"
+    },
+    {
+      "appName": "warp",
+      "previousVersion": "0.2026.10.21.08.25.02",
+      "newVersion": "0.2026.11.03.17.08.00",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/warp.png"
+    },
+    {
+      "appName": "wavebox",
+      "previousVersion": "156.3.22.2",
+      "newVersion": "157.3.25.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/wavebox.png"
+    },
+    {
+      "appName": "webex",
+      "previousVersion": "46.10.0.36042",
+      "newVersion": "46.11.0.36194",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/webex.png"
+    },
+    {
+      "appName": "zed",
+      "previousVersion": "1.26.2",
+      "newVersion": "1.27.0",
+      "changelog": "https://zed.dev/releases/stable",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/zed.png"
     }
   ]
 }
