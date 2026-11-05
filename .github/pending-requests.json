@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "issue": 372,
+    "casks": [
+      "phoenix-code"
+    ],
+    "recorded_at": "2026-11-05T11:15:30.379994+00:00",
+    "needs_review": false
+  }
+]
