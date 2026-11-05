@@ -17,6 +17,10 @@ fi
 echo "Stopping PrusaSlicer if running..."
 pkill -f "PrusaSlicer" 2>/dev/null || true
 
+# Kill application with bundle ID com.prusa3d.slic3r/ if running
+echo "Stopping application with bundle ID com.prusa3d.slic3r/ if running..."
+killall -9 "com.prusa3d.slic3r/" 2>/dev/null || true
+
 # Remove /Applications/Original Prusa Drivers/PrusaSlicer.app
 echo "Removing /Applications/Original Prusa Drivers/PrusaSlicer.app..."
 if [ -d "/Applications/Original Prusa Drivers/PrusaSlicer.app" ]; then

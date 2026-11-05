@@ -17,6 +17,10 @@ fi
 echo "Stopping Scroll Reverser if running..."
 pkill -f "Scroll Reverser" 2>/dev/null || true
 
+# Kill application with bundle ID com.pilotmoon.scroll-reverser if running
+echo "Stopping application with bundle ID com.pilotmoon.scroll-reverser if running..."
+killall -9 "com.pilotmoon.scroll-reverser" 2>/dev/null || true
+
 # Remove /Applications/Scroll Reverser.app
 echo "Removing /Applications/Scroll Reverser.app..."
 if [ -d "/Applications/Scroll Reverser.app" ]; then

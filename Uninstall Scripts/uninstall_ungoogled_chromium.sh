@@ -17,6 +17,10 @@ fi
 echo "Stopping Ungoogled Chromium if running..."
 pkill -f "Ungoogled Chromium" 2>/dev/null || true
 
+# Kill application with bundle ID io.ungoogled-software.ungoogled-chromium if running
+echo "Stopping application with bundle ID io.ungoogled-software.ungoogled-chromium if running..."
+killall -9 "io.ungoogled-software.ungoogled-chromium" 2>/dev/null || true
+
 # Remove /Applications/Chromium.app
 echo "Removing /Applications/Chromium.app..."
 if [ -d "/Applications/Chromium.app" ]; then
