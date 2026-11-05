@@ -2333,7 +2333,9 @@ function Compare-VersionSegments {
 function Convert-VersionToSortable {
     param([string]$Version)
 
-    $segments = ($Version -replace '-.*$' -replace '\s*\(.*\)$', '') -split '[.,]'
+    # Numeric Apple bundle builds use +N (for example, LM Studio and RStudio).
+    $sortableVersion = $Version -replace '^([0-9]+(?:\.[0-9]+)+)\+([0-9]+)$', '$1,$2'
+    $segments = ($sortableVersion -replace '-.*$' -replace '\s*\(.*\)$', '') -split '[.,]'
     $padded = foreach ($segment in $segments) {
         $num = [int64]0
         if ([int64]::TryParse($segment.Trim(), [ref]$num)) { $num.ToString("D12") } else { $segment }
@@ -2358,6 +2360,25 @@ function Test-NewerVersion($githubVersion, $intuneVersion) {
     }
 
     try {
+        # Compare +N as an Apple bundle build only when both versions are plain
+        # numeric releases. Other metadata and prerelease rules stay unchanged.
+        $numericBundlePattern = '^([0-9]+(?:\.[0-9]+)+)(?:\+([0-9]+))?$'
+        $ghBundle = [regex]::Match($githubVersion, $numericBundlePattern)
+        $itBundle = [regex]::Match($intuneVersion, $numericBundlePattern)
+        if ($ghBundle.Success -and $itBundle.Success -and
+            ($ghBundle.Groups[2].Success -or $itBundle.Groups[2].Success)) {
+            $ghNumbers = $ghBundle.Groups[1].Value -split '\.'
+            $itNumbers = $itBundle.Groups[1].Value -split '\.'
+            for ($i = 0; $i -lt [Math]::Max($ghNumbers.Count, $itNumbers.Count); $i++) {
+                $ghNumber = [System.Numerics.BigInteger]::Parse($(if ($i -lt $ghNumbers.Count) { $ghNumbers[$i] } else { '0' }))
+                $itNumber = [System.Numerics.BigInteger]::Parse($(if ($i -lt $itNumbers.Count) { $itNumbers[$i] } else { '0' }))
+                if ($ghNumber -ne $itNumber) { return ($ghNumber -gt $itNumber) }
+            }
+            $ghBundleBuild = [System.Numerics.BigInteger]::Parse($(if ($ghBundle.Groups[2].Success) { $ghBundle.Groups[2].Value } else { '0' }))
+            $itBundleBuild = [System.Numerics.BigInteger]::Parse($(if ($itBundle.Groups[2].Success) { $itBundle.Groups[2].Value } else { '0' }))
+            return $ghBundleBuild -gt $itBundleBuild
+        }
+
         # Remove hyphens and everything after them for comparison
         $ghVersion = $githubVersion -replace '-.*$'
         $itVersion = $intuneVersion -replace '-.*$'
