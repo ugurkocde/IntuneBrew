@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1153-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1154-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -712,7 +712,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | webex | 46.10.0.36042 | 46.11.0.36194 |
 | zed | 1.26.2 | 1.27.0 |
 
-33 app updates could not be published. See [catalog sync status](catalog-sync.json).
+34 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 

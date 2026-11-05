@@ -1,0 +1,12 @@
+{
+  "name": "Phoenix Code",
+  "description": "Code editor",
+  "version": "5.5.11",
+  "url": "https://github.com/phcode-dev/phoenix-desktop/releases/download/prod-app-v5.5.11/Phoenix.Code_5.5.11_aarch64.dmg",
+  "vendor_url": "https://github.com/phcode-dev/phoenix-desktop/releases/download/prod-app-v5.5.11/Phoenix.Code_5.5.11_aarch64.dmg",
+  "bundleId": null,
+  "homepage": "https://phcode.io/",
+  "homebrew_cask": "phoenix-code",
+  "fileName": "Phoenix.Code_5.5.11_aarch64.dmg",
+  "sha": "911abf90c1d1972c54d4fa010af691e6c05354f942b495719392a2413129299e"
+}
