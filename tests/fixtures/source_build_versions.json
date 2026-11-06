@@ -1,0 +1,202 @@
+[
+  {
+    "case": "firefox@developer-edition",
+    "source": "160.0b5",
+    "short": "160.0",
+    "build": "16026.11.4",
+    "prior": "159.0b4",
+    "relation": null
+  },
+  {
+    "case": "steermouse",
+    "source": "5.8.2",
+    "short": "5.8.2(095C)",
+    "build": "5.8.2",
+    "prior": "5.8.1",
+    "relation": null
+  },
+  {
+    "case": "wechat",
+    "source": "4.2.0.17,270353",
+    "short": "4.2.0",
+    "build": "270353",
+    "prior": "4.1.15.55",
+    "relation": null
+  },
+  {
+    "case": "parallels",
+    "source": "27.1.0-58756",
+    "short": "27.1.0",
+    "build": "58756",
+    "prior": "27.0.3-58680",
+    "relation": null
+  },
+  {
+    "case": "xmind",
+    "source": "27.01.05087-202611032216",
+    "short": "27.01.05087",
+    "build": "2026110322160",
+    "prior": "26.05.01107-202609082317",
+    "relation": null
+  },
+  {
+    "case": "android-studio",
+    "source": "2026.2.2.9,rabbit2-patch1",
+    "short": "2026.2",
+    "build": "AI-262.10968.63.2622.16840690",
+    "prior": "2026.2.1.8",
+    "relation": null
+  },
+  {
+    "case": "brave-browser",
+    "source": "1.99.55.0",
+    "short": "157.1.99.55",
+    "build": "199.55",
+    "prior": "1.97.59.0",
+    "relation": null
+  },
+  {
+    "case": "capcut",
+    "source": "9.7.1.4778",
+    "short": "9.7.1",
+    "build": "9.7.1",
+    "prior": "9.5.0.4590",
+    "relation": null
+  },
+  {
+    "case": "hopper-disassembler",
+    "source": "6.6.1",
+    "short": "6.6.1-demo",
+    "build": "42.6316048",
+    "prior": "6.6.0",
+    "relation": null
+  },
+  {
+    "case": "keeper-password-manager",
+    "source": "18.7.0",
+    "short": "18.6.6",
+    "build": "17932200693002",
+    "prior": "18.6.5",
+    "relation": null
+  },
+  {
+    "case": "libreoffice",
+    "source": "26.8.2",
+    "short": "26.8.2.2",
+    "build": "26.8.2.2",
+    "prior": "26.8.1",
+    "relation": null
+  },
+  {
+    "case": "opera",
+    "source": "139.0.6053.38",
+    "short": "139.0",
+    "build": "139.0.6053.38",
+    "prior": "138.0.6044.24",
+    "relation": "SOURCE_BUILD_EXACT"
+  },
+  {
+    "case": "8x8-work",
+    "source": "8.38.4-1",
+    "short": "8.38.4",
+    "build": "8.38.4.1",
+    "prior": "8.37.2-1",
+    "relation": null
+  },
+  {
+    "case": "musescore",
+    "source": "4.7.6.261022093,4.7.6",
+    "short": "4.7.6",
+    "build": "261022093",
+    "prior": "4.7.5.260831071",
+    "relation": "SOURCE_SHORT_DOT_BUILD"
+  },
+  {
+    "case": "expandrive",
+    "source": "2026.11.05.914",
+    "short": "2026.11.05",
+    "build": "2026.11.05",
+    "prior": "2026.10.02.902",
+    "relation": null
+  },
+  {
+    "case": "hoppscotch",
+    "source": "26.10.1-0",
+    "short": "26.10.1",
+    "build": "26.10.1",
+    "prior": "26.9.0-0",
+    "relation": null
+  },
+  {
+    "case": "opera-gx",
+    "source": "139.0.6053.42",
+    "short": "139.0",
+    "build": "139.0.6053.42",
+    "prior": "137.0.6036.65",
+    "relation": "SOURCE_BUILD_EXACT"
+  },
+  {
+    "case": "reaper",
+    "source": "7.85",
+    "short": "7.85.0_19ce87au",
+    "build": "7.85.0_19ce87au",
+    "prior": "7.82",
+    "relation": null
+  },
+  {
+    "case": "cursorsense",
+    "source": "2.5.1",
+    "short": "2.5.1(2F17)",
+    "build": "2.5.1",
+    "prior": "2.5",
+    "relation": null
+  },
+  {
+    "case": "goodsync",
+    "source": "12.11.12",
+    "short": "12.11.12.2",
+    "build": "12.11.12.2",
+    "prior": "12.11.11",
+    "relation": null
+  },
+  {
+    "case": "megasync",
+    "source": "6.7.0.3",
+    "short": "6.7.0",
+    "build": null,
+    "prior": "6.6.2.0",
+    "relation": null
+  },
+  {
+    "case": "numi",
+    "source": "3.35.743",
+    "short": "3.35",
+    "build": "743",
+    "prior": "3.32.721",
+    "relation": "SOURCE_SHORT_DOT_BUILD"
+  },
+  {
+    "case": "shapr3d",
+    "source": "26.202.0.12281",
+    "short": "26.202.0",
+    "build": "12281",
+    "prior": "26.180.0.11926",
+    "relation": "SOURCE_SHORT_DOT_BUILD"
+  },
+  {
+    "case": "cmux",
+    "source": "0.65.2.2",
+    "short": "0.65.2",
+    "build": "113",
+    "prior": "0.65.2",
+    "relation": null
+  },
+  {
+    "case": "winbox",
+    "source": "4.5",
+    "short": "4.5.102000",
+    "build": "4.5.102000",
+    "prior": "4.4",
+    "relation": null
+  }
+]
