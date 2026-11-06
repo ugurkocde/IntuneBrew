@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1155-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -640,19 +640,22 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-11-06T09:18:33.117859Z*
+*Last checked: 2026-11-06T14:38:43.972151Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| musescore | 4.7.5.260831071 | 4.7.6 |
-| numi | 3.32.721 | 3.35 |
-| opera | 138.0.6044.24 | 139.0 |
-| opera gx | 137.0.6036.65 | 139.0 |
-| shapr3d | 26.180.0.11926 | 26.202.0 |
+| 8x8 work | 8.37.2-1 | 8.38.4 |
+| clickshare | 4.51.1 | 4.52.0 |
+| kicad | 10.0.7 | 10.0.8 |
+| kiro | 1.4.86 | 1.4.121 |
+| parallels desktop | 27.0.3-58680 | 27.1.0 |
+| vivaldi | 8.3.4191.26 | 8.3.4191.30 |
+| whatsapp | 26.44.15 | 26.44.21 |
 
-21 app updates could not be published. See [catalog sync status](catalog-sync.json).
+19 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
@@ -687,7 +690,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/4k_video_downloader.png' width='32' height='32'> 4K Video Downloader | 4.33.5 |
 | <img src='Logos/4k_video_to_mp3.png' width='32' height='32'> 4K Video to MP3 | 3.0.1 |
 | <img src='Logos/4k_youtube_to_mp3.png' width='32' height='32'> 4K YouTube to MP3 | 26.3.5 |
-| <img src='Logos/8x8_work.png' width='32' height='32'> 8x8_work | 8.37.2-1 |
+| <img src='Logos/8x8_work.png' width='32' height='32'> 8x8_work | 8.38.4 |
 | <img src='Logos/a_better_finder_rename.png' width='32' height='32'> A Better Finder Rename | 12.36 |
 | <img src='Logos/abbyy_finereader_pdf.png' width='32' height='32'> ABBYY FineReader PDF | 1402.19 |
 | <img src='Logos/ableton_live_lite.png' width='32' height='32'> Ableton Live Lite | 12.4.16 |
@@ -870,7 +873,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.7.3 |
 | <img src='Logos/cleanmymac_x_chinese.png' width='32' height='32'> CleanMyMac X Chinese | 4.15.14 |
 | <img src='Logos/cleanshot.png' width='32' height='32'> CleanShot | 5.0.2 |
-| <img src='Logos/clickshare.png' width='32' height='32'> ClickShare | 4.51.1 |
+| <img src='Logos/clickshare.png' width='32' height='32'> ClickShare | 4.52.0 |
 | <img src='Logos/clickup.png' width='32' height='32'> ClickUp | 3.5.402 |
 | <img src='Logos/clion.png' width='32' height='32'> CLion | 2026.3 |
 | <img src='Logos/clipbook.png' width='32' height='32'> ClipBook | 2.5.2 |
@@ -1184,8 +1187,8 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/keycastr.png' width='32' height='32'> KeyCastr | 0.11.1 |
 | <img src='Logos/keyclu.png' width='32' height='32'> KeyClu | 0.33 |
 | <img src='Logos/keystore_explorer.png' width='32' height='32'> KeyStore Explorer | 5.7.0 |
-| <img src='Logos/kicad.png' width='32' height='32'> KiCad | 10.0.7 |
-| <img src='Logos/kiro.png' width='32' height='32'> kiro | 1.4.86 |
+| <img src='Logos/kicad.png' width='32' height='32'> KiCad | 10.0.8 |
+| <img src='Logos/kiro.png' width='32' height='32'> kiro | 1.4.121 |
 | <img src='Logos/kitty.png' width='32' height='32'> kitty | 0.50.0 |
 | <img src='Logos/klokki.png' width='32' height='32'> Klokki | 1.3.7 |
 | <img src='Logos/knockknock.png' width='32' height='32'> KnockKnock | 4.1.0 |
@@ -1426,7 +1429,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/paletro.png' width='32' height='32'> Paletro | 1.11.0 |
 | <img src='Logos/panic_nova.png' width='32' height='32'> Panic Nova | 14.1 |
 | <img src='Logos/parallels_client.png' width='32' height='32'> Parallels Client | 19.4.3 |
-| <img src='Logos/parallels_desktop.png' width='32' height='32'> Parallels Desktop | 27.0.3-58680 |
+| <img src='Logos/parallels_desktop.png' width='32' height='32'> Parallels Desktop | 27.1.0 |
 | <img src='Logos/parsec.png' width='32' height='32'> Parsec | 150-105c |
 | <img src='Logos/paseo.png' width='32' height='32'> Paseo | 0.15.2 |
 | <img src='Logos/paste.png' width='32' height='32'> Paste | 7.0.5 |
@@ -1764,7 +1767,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/virtualbuddy.png' width='32' height='32'> VirtualBuddy | 2.2.1 |
 | <img src='Logos/viscosity.png' width='32' height='32'> Viscosity | 1.13.2 |
 | <img src='Logos/visualvm.png' width='32' height='32'> VisualVM | 2.2.2 |
-| <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 8.3.4191.26 |
+| <img src='Logos/vivaldi.png' width='32' height='32'> Vivaldi | 8.3.4191.30 |
 | <img src='Logos/viz.png' width='32' height='32'> Viz | 2.3.3 |
 | <img src='Logos/vlc_media_player.png' width='32' height='32'> VLC media player | 3.0.24 |
 | <img src='Logos/vorssaint.png' width='32' height='32'> Vorssaint | 3.4.3 |
@@ -1790,7 +1793,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/wezterm.png' width='32' height='32'> WezTerm | 20240203-110809 |
 | <img src='Logos/whatcable.png' width='32' height='32'> WhatCable | 1.5.0 |
 | <img src='Logos/whatroute.png' width='32' height='32'> WhatRoute | 2.8.2 |
-| <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 26.44.15 |
+| <img src='Logos/whatsapp.png' width='32' height='32'> WhatsApp | 26.44.21 |
 | <img src='Logos/whatsize.png' width='32' height='32'> WhatSize | 8.2.9 |
 | <img src='Logos/whimsical.png' width='32' height='32'> Whimsical | 2026.14.3 |
 | <img src='Logos/whispering.png' width='32' height='32'> Whispering | 7.11.0 |

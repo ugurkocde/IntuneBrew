@@ -1,40 +1,54 @@
 {
-  "lastChecked": "2026-11-06T09:18:33.117859Z",
+  "lastChecked": "2026-11-06T14:38:43.972151Z",
   "updates": [
     {
-      "appName": "musescore",
-      "previousVersion": "4.7.5.260831071",
-      "newVersion": "4.7.6",
+      "appName": "8x8 work",
+      "previousVersion": "8.37.2-1",
+      "newVersion": "8.38.4",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/musescore.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/8x8_work.png"
     },
     {
-      "appName": "numi",
-      "previousVersion": "3.32.721",
-      "newVersion": "3.35",
+      "appName": "clickshare",
+      "previousVersion": "4.51.1",
+      "newVersion": "4.52.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/numi.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/clickshare.png"
     },
     {
-      "appName": "opera",
-      "previousVersion": "138.0.6044.24",
-      "newVersion": "139.0",
-      "changelog": "https://blogs.opera.com/desktop/",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/opera.png"
+      "appName": "kicad",
+      "previousVersion": "10.0.7",
+      "newVersion": "10.0.8",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/kicad.png"
     },
     {
-      "appName": "opera gx",
-      "previousVersion": "137.0.6036.65",
-      "newVersion": "139.0",
+      "appName": "kiro",
+      "previousVersion": "1.4.86",
+      "newVersion": "1.4.121",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/opera_gx.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/kiro.png"
     },
     {
-      "appName": "shapr3d",
-      "previousVersion": "26.180.0.11926",
-      "newVersion": "26.202.0",
+      "appName": "parallels desktop",
+      "previousVersion": "27.0.3-58680",
+      "newVersion": "27.1.0",
+      "changelog": "https://kb.parallels.com/en/129060",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/parallels_desktop.png"
+    },
+    {
+      "appName": "vivaldi",
+      "previousVersion": "8.3.4191.26",
+      "newVersion": "8.3.4191.30",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/shapr3d.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/vivaldi.png"
+    },
+    {
+      "appName": "whatsapp",
+      "previousVersion": "26.44.15",
+      "newVersion": "26.44.21",
+      "changelog": "https://web.whatsapp.com/desktop/windows/release-notes",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/whatsapp.png"
     }
   ]
 }

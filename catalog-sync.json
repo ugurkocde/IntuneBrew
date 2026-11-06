@@ -1,14 +1,10 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-06T09:18:33.117859Z",
-  "lastFullSyncAt": "2026-11-06T09:18:33.117859Z",
+  "lastPublishedAt": "2026-11-06T14:38:43.972151Z",
+  "lastFullSyncAt": "2026-11-06T14:38:43.972151Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
-    {
-      "app": "8x8_work",
-      "stage": "collection"
-    },
     {
       "app": "android_studio",
       "stage": "collection"
@@ -66,10 +62,6 @@
       "stage": "collection"
     },
     {
-      "app": "parallels_desktop",
-      "stage": "collection"
-    },
-    {
       "app": "reaper",
       "stage": "collection"
     },
@@ -91,5 +83,5 @@
     }
   ],
   "appCount": 1155,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42189920496"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42213628075"
 }
