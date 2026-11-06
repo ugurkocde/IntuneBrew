@@ -1,7 +1,10 @@
+param([string]$ExtractedFunctionDirectory)
+
 $ErrorActionPreference = 'Stop'
 foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
     $tokens = $null; $errors = $null
-    $source = [IO.File]::ReadAllText((Join-Path $PSScriptRoot "../$file"), [Text.UTF8Encoding]::new($false))
+    $sourcePath = if ($ExtractedFunctionDirectory) { Join-Path $ExtractedFunctionDirectory $file } else { Join-Path $PSScriptRoot "../$file" }
+    $source = [IO.File]::ReadAllText($sourcePath, [Text.UTF8Encoding]::new($false))
     $ast = [System.Management.Automation.Language.Parser]::ParseInput($source, [ref]$tokens, [ref]$errors)
     if ($errors.Count) { throw ($errors | Out-String) }
     $updater = if ($file -eq 'IntuneBrew.ps1') { 'Test-NewerVersion' } else { 'Is-NewerVersion' }
@@ -21,13 +24,15 @@ foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
     $fallback = '$Apps | Sort-Object -Property @{Expression = { Convert-VersionToSortable $_.primaryBundleVersion } } -Descending | Select-Object -First 1'
     $selector = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq 'Select-LatestAppRecord' }, $true)
     if (-not $selector.Extent.Text.Contains($fallback)) { throw 'Legacy selection pipeline changed.' }
-    $lookupName = if ($file -eq 'IntuneBrew.ps1') { 'Get-IntuneApp' } else { 'Get-IntuneApps' }
-    $lookup = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $lookupName }, $true)
-    $calls = @($lookup.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] -and $n.GetCommandName() -eq 'Select-LatestAppRecord' }, $true))
-    $expectedCount = if ($file -eq 'IntuneBrew.ps1') { 1 } else { 2 }
-    if ($calls.Count -ne $expectedCount) { throw "Not all lookup paths use the selector in $file" }
-    $sortableCalls = @($ast.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] -and $n.GetCommandName() -eq 'Convert-VersionToSortable' }, $true))
-    if ($sortableCalls.Count -ne 1 -or $sortableCalls[0].Extent.StartOffset -lt $selector.Extent.StartOffset -or $sortableCalls[0].Extent.EndOffset -gt $selector.Extent.EndOffset) { throw 'Sortable keys used outside the legacy fallback.' }
+    if (-not $ExtractedFunctionDirectory) {
+        $lookupName = if ($file -eq 'IntuneBrew.ps1') { 'Get-IntuneApp' } else { 'Get-IntuneApps' }
+        $lookup = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $lookupName }, $true)
+        $calls = @($lookup.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] -and $n.GetCommandName() -eq 'Select-LatestAppRecord' }, $true))
+        $expectedCount = if ($file -eq 'IntuneBrew.ps1') { 1 } else { 2 }
+        if ($calls.Count -ne $expectedCount) { throw "Not all lookup paths use the selector in $file" }
+        $sortableCalls = @($ast.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] -and $n.GetCommandName() -eq 'Convert-VersionToSortable' }, $true))
+        if ($sortableCalls.Count -ne 1 -or $sortableCalls[0].Extent.StartOffset -lt $selector.Extent.StartOffset -or $sortableCalls[0].Extent.EndOffset -gt $selector.Extent.EndOffset) { throw 'Sortable keys used outside the legacy fallback.' }
+    }
 
     foreach ($custom in @($false, $true)) {
         foreach ($pair in @(
@@ -75,10 +80,29 @@ foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
 }
 Write-Host 'Numeric record selection, identity, caller wiring and legacy fallback checks passed.'
 
-# Exercise the Windows PowerShell runtime through the existing Windows CI job as well.
-if ($env:OS -eq 'Windows_NT' -and $PSVersionTable.PSEdition -ne 'Desktop') {
+# Windows PowerShell receives only extracted helpers, never the PowerShell 7 product scripts.
+if (-not $ExtractedFunctionDirectory -and $env:OS -eq 'Windows_NT' -and $PSVersionTable.PSEdition -ne 'Desktop') {
     $windowsPowerShell = Join-Path $env:SystemRoot 'System32/WindowsPowerShell/v1.0/powershell.exe'
     if (-not (Test-Path -LiteralPath $windowsPowerShell)) { throw 'Windows PowerShell runtime is missing.' }
-    & $windowsPowerShell -NoProfile -NonInteractive -File $PSCommandPath
-    if ($LASTEXITCODE -ne 0) { throw 'Windows PowerShell numeric selection regression failed.' }
+    $fixtureDirectory = Join-Path ([IO.Path]::GetTempPath()) ('IntuneBrew-NumericCompatibility-' + [guid]::NewGuid().ToString('N'))
+    if (Test-Path -LiteralPath $fixtureDirectory) { throw 'Compatibility fixture already exists.' }
+    $null = [IO.Directory]::CreateDirectory($fixtureDirectory)
+    try {
+        foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
+            $source = [IO.File]::ReadAllText((Join-Path $PSScriptRoot "../$file"), [Text.UTF8Encoding]::new($false))
+            $tokens = $null; $errors = $null
+            $ast = [System.Management.Automation.Language.Parser]::ParseInput($source, [ref]$tokens, [ref]$errors)
+            if ($errors.Count) { throw ($errors | Out-String) }
+            $updater = if ($file -eq 'IntuneBrew.ps1') { 'Test-NewerVersion' } else { 'Is-NewerVersion' }
+            $functions = foreach ($name in @('ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Convert-VersionToSortable', 'Select-LatestAppRecord', 'Compare-VersionSegments', $updater)) {
+                $definition = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $name }, $true)
+                if (-not $definition) { throw "Required function missing: $name" }
+                $definition.Extent.Text
+            }
+            [IO.File]::WriteAllText((Join-Path $fixtureDirectory $file), ($functions -join "`n"), [Text.UTF8Encoding]::new($false))
+        }
+        & $windowsPowerShell -NoProfile -NonInteractive -File $PSCommandPath -ExtractedFunctionDirectory $fixtureDirectory
+        if ($LASTEXITCODE -ne 0) { throw 'Windows PowerShell numeric selection regression failed.' }
+    }
+    finally { Remove-Item -LiteralPath $fixtureDirectory -Recurse -Force }
 }
