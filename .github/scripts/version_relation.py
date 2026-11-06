@@ -98,6 +98,25 @@ def relationship(raw, short):
     return None
 
 
+def build_relationship(raw, short, build):
+    """Bind numeric source components to the same bundle's short and build text."""
+    if (type(raw) is not str or type(short) is not str or type(build) is not str
+            or len(raw) > 256 or len(short) > 64 or len(build) > 64
+            or not build.isprintable()):
+        return None
+    numeric = _CANON + r"(?:\." + _CANON + r")*"
+    if not re.fullmatch(_CANON + r"(?:\." + _CANON + r")+", short):
+        return None
+    if re.fullmatch(numeric, raw) and build == raw and raw.startswith(short + "."):
+        return "SOURCE_BUILD_EXACT"
+    fields = raw.split(",")
+    if (len(fields) in {1, 2} and (len(fields) == 1 or fields[1] == short)
+            and re.fullmatch(numeric, fields[0]) and re.fullmatch(_CANON, build)
+            and fields[0] == short + "." + build):
+        return "SOURCE_SHORT_DOT_BUILD"
+    return None
+
+
 def parse_detection(value):
     if not isinstance(value, str) or len(value) > 256:
         return None
@@ -126,7 +145,8 @@ def reconcile(i):
     elif obs.short_version == i.legacy_version:
         relation = "EXACT"
     else:
-        relation = relationship(i.source_release, obs.short_version)
+        relation = (relationship(i.source_release, obs.short_version)
+                    or build_relationship(i.source_release, obs.short_version, obs.bundle_version))
     if relation is None:
         return Decision("HOLD", reason="RELATION_UNPROVEN")
     required = {"RENDER_PLUS": "plus_build", "RENDER_PAREN_BUILD": "decorated_text",
