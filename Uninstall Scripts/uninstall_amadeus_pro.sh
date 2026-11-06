@@ -29,6 +29,14 @@ elif [ -f "/Applications/Amadeus Pro 3.app" ]; then
     rm -f "/Applications/Amadeus Pro 3.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared
+echo "Removing $HOME/Library/Application Scripts/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared..."
+if [ -d "$HOME/Library/Application Scripts/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared" ]; then
+    rm -rf "$HOME/Library/Application Scripts/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared" ]; then
+    rm -f "$HOME/Library/Application Scripts/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Amadeus Pro
 echo "Removing $HOME/Library/Application Support/Amadeus Pro..."
 if [ -d "$HOME/Library/Application Support/Amadeus Pro" ]; then
@@ -37,36 +45,52 @@ elif [ -f "$HOME/Library/Application Support/Amadeus Pro" ]; then
     rm -f "$HOME/Library/Application Support/Amadeus Pro" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.HairerSoft.AmadeusPro
-echo "Removing $HOME/Library/Caches/com.HairerSoft.AmadeusPro..."
-if [ -d "$HOME/Library/Caches/com.HairerSoft.AmadeusPro" ]; then
-    rm -rf "$HOME/Library/Caches/com.HairerSoft.AmadeusPro" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.HairerSoft.AmadeusPro" ]; then
-    rm -f "$HOME/Library/Caches/com.HairerSoft.AmadeusPro" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hairersoft.amadeuspro*.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hairersoft.amadeuspro*.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hairersoft.amadeuspro*.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hairersoft.amadeuspro*.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hairersoft.amadeuspro*.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hairersoft.amadeuspro*.sfl*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro
-echo "Removing $HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro..."
-if [ -d "$HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro" ]; then
-    rm -f "$HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.HairerSoft.AmadeusPro*
+echo "Removing $HOME/Library/Caches/com.HairerSoft.AmadeusPro*..."
+if [ -d "$HOME/Library/Caches/com.HairerSoft.AmadeusPro*" ]; then
+    rm -rf "$HOME/Library/Caches/com.HairerSoft.AmadeusPro*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.HairerSoft.AmadeusPro*" ]; then
+    rm -f "$HOME/Library/Caches/com.HairerSoft.AmadeusPro*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.HairerSoft.AmadeusPro.plist
-echo "Removing $HOME/Library/Preferences/com.HairerSoft.AmadeusPro.plist..."
-if [ -d "$HOME/Library/Preferences/com.HairerSoft.AmadeusPro.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.HairerSoft.AmadeusPro.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.HairerSoft.AmadeusPro.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.HairerSoft.AmadeusPro.plist" 2>/dev/null || true
+# Remove $HOME/Library/Group Containers/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared
+echo "Removing $HOME/Library/Group Containers/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared..."
+if [ -d "$HOME/Library/Group Containers/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared" ]; then
+    rm -rf "$HOME/Library/Group Containers/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared" ]; then
+    rm -f "$HOME/Library/Group Containers/FWDH9W45C2.com.HairerSoft.AmadeusPro*.shared" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro.savedState
-echo "Removing $HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro.savedState..."
-if [ -d "$HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro.savedState" ]; then
-    rm -rf "$HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro.savedState" 2>/dev/null || true
-elif [ -f "$HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro.savedState" ]; then
-    rm -f "$HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro.savedState" 2>/dev/null || true
+# Remove $HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro*
+echo "Removing $HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro*..."
+if [ -d "$HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.HairerSoft.AmadeusPro*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.HairerSoft.AmadeusPro*.plist
+echo "Removing $HOME/Library/Preferences/com.HairerSoft.AmadeusPro*.plist..."
+if [ -d "$HOME/Library/Preferences/com.HairerSoft.AmadeusPro*.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.HairerSoft.AmadeusPro*.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.HairerSoft.AmadeusPro*.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.HairerSoft.AmadeusPro*.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro*.savedState
+echo "Removing $HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro*.savedState..."
+if [ -d "$HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro*.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro*.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro*.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/com.HairerSoft.AmadeusPro*.savedState" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

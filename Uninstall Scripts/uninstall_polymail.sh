@@ -25,6 +25,14 @@ elif [ -f "/Applications/Polymail.app" ]; then
     rm -f "/Applications/Polymail.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.polymail.osx.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.polymail.osx.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.polymail.osx.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.polymail.osx.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.polymail.osx.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.polymail.osx.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Polymail
 echo "Removing $HOME/Library/Application Support/Polymail..."
 if [ -d "$HOME/Library/Application Support/Polymail" ]; then

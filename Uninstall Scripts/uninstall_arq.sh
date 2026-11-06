@@ -71,6 +71,30 @@ elif [ -f "$HOME/Library/Arq *" ]; then
     rm -f "$HOME/Library/Arq *" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Arq
+echo "Removing $HOME/Library/Arq..."
+if [ -d "$HOME/Library/Arq" ]; then
+    rm -rf "$HOME/Library/Arq" 2>/dev/null || true
+elif [ -f "$HOME/Library/Arq" ]; then
+    rm -f "$HOME/Library/Arq" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.haystacksoftware.Arq*
+echo "Removing $HOME/Library/HTTPStorages/com.haystacksoftware.Arq*..."
+if [ -d "$HOME/Library/HTTPStorages/com.haystacksoftware.Arq*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.haystacksoftware.Arq*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.haystacksoftware.Arq*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.haystacksoftware.Arq*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/Arq*
+echo "Removing $HOME/Library/Logs/Arq*..."
+if [ -d "$HOME/Library/Logs/Arq*" ]; then
+    rm -rf "$HOME/Library/Logs/Arq*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Arq*" ]; then
+    rm -f "$HOME/Library/Logs/Arq*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.haystacksoftware.Arq.plist
 echo "Removing $HOME/Library/Preferences/com.haystacksoftware.Arq.plist..."
 if [ -d "$HOME/Library/Preferences/com.haystacksoftware.Arq.plist" ]; then
@@ -85,6 +109,14 @@ if [ -d "$HOME/Library/Preferences/com.haystacksoftware.ArqMonitor.plist" ]; the
     rm -rf "$HOME/Library/Preferences/com.haystacksoftware.ArqMonitor.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.haystacksoftware.ArqMonitor.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.haystacksoftware.ArqMonitor.plist" 2>/dev/null || true
+fi
+
+# Remove /Library/Logs/ArqAgent
+echo "Removing /Library/Logs/ArqAgent..."
+if [ -d "/Library/Logs/ArqAgent" ]; then
+    rm -rf "/Library/Logs/ArqAgent" 2>/dev/null || true
+elif [ -f "/Library/Logs/ArqAgent" ]; then
+    rm -f "/Library/Logs/ArqAgent" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

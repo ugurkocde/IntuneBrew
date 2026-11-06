@@ -17,6 +17,10 @@ fi
 echo "Stopping ProPresenter if running..."
 pkill -f "ProPresenter" 2>/dev/null || true
 
+# Kill application with bundle ID com.renewedvision.propresenter if running
+echo "Stopping application with bundle ID com.renewedvision.propresenter if running..."
+killall -9 "com.renewedvision.propresenter" 2>/dev/null || true
+
 # Remove /Applications/ProPresenter.app
 echo "Removing /Applications/ProPresenter.app..."
 if [ -d "/Applications/ProPresenter.app" ]; then
@@ -33,12 +37,12 @@ elif [ -f "/Library/Application Support/RenewedVision" ]; then
     rm -f "/Library/Application Support/RenewedVision" 2>/dev/null || true
 fi
 
-# Remove /Library/Caches/com.renewedvision.ProPresenter21
-echo "Removing /Library/Caches/com.renewedvision.ProPresenter21..."
-if [ -d "/Library/Caches/com.renewedvision.ProPresenter21" ]; then
-    rm -rf "/Library/Caches/com.renewedvision.ProPresenter21" 2>/dev/null || true
-elif [ -f "/Library/Caches/com.renewedvision.ProPresenter21" ]; then
-    rm -f "/Library/Caches/com.renewedvision.ProPresenter21" 2>/dev/null || true
+# Remove /Library/Caches/com.renewedvision.ProPresenter22
+echo "Removing /Library/Caches/com.renewedvision.ProPresenter22..."
+if [ -d "/Library/Caches/com.renewedvision.ProPresenter22" ]; then
+    rm -rf "/Library/Caches/com.renewedvision.ProPresenter22" 2>/dev/null || true
+elif [ -f "/Library/Caches/com.renewedvision.ProPresenter22" ]; then
+    rm -f "/Library/Caches/com.renewedvision.ProPresenter22" 2>/dev/null || true
 fi
 
 # Remove /Users/Shared/Renewed Vision Media
@@ -49,44 +53,44 @@ elif [ -f "/Users/Shared/Renewed Vision Media" ]; then
     rm -f "/Users/Shared/Renewed Vision Media" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/RenewedVision/ProPresenter21
-echo "Removing $HOME/Library/Application Support/RenewedVision/ProPresenter21..."
-if [ -d "$HOME/Library/Application Support/RenewedVision/ProPresenter21" ]; then
-    rm -rf "$HOME/Library/Application Support/RenewedVision/ProPresenter21" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/RenewedVision/ProPresenter21" ]; then
-    rm -f "$HOME/Library/Application Support/RenewedVision/ProPresenter21" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/RenewedVision/ProPresenter22
+echo "Removing $HOME/Library/Application Support/RenewedVision/ProPresenter22..."
+if [ -d "$HOME/Library/Application Support/RenewedVision/ProPresenter22" ]; then
+    rm -rf "$HOME/Library/Application Support/RenewedVision/ProPresenter22" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/RenewedVision/ProPresenter22" ]; then
+    rm -f "$HOME/Library/Application Support/RenewedVision/ProPresenter22" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.renewedvision.ProPresenter21
-echo "Removing $HOME/Library/Caches/com.renewedvision.ProPresenter21..."
-if [ -d "$HOME/Library/Caches/com.renewedvision.ProPresenter21" ]; then
-    rm -rf "$HOME/Library/Caches/com.renewedvision.ProPresenter21" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.renewedvision.ProPresenter21" ]; then
-    rm -f "$HOME/Library/Caches/com.renewedvision.ProPresenter21" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.renewedvision.ProPresenter22
+echo "Removing $HOME/Library/Caches/com.renewedvision.ProPresenter22..."
+if [ -d "$HOME/Library/Caches/com.renewedvision.ProPresenter22" ]; then
+    rm -rf "$HOME/Library/Caches/com.renewedvision.ProPresenter22" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.renewedvision.ProPresenter22" ]; then
+    rm -f "$HOME/Library/Caches/com.renewedvision.ProPresenter22" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/KSCrashReports/ProPresenter 21
-echo "Removing $HOME/Library/Caches/KSCrashReports/ProPresenter 21..."
-if [ -d "$HOME/Library/Caches/KSCrashReports/ProPresenter 21" ]; then
-    rm -rf "$HOME/Library/Caches/KSCrashReports/ProPresenter 21" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/KSCrashReports/ProPresenter 21" ]; then
-    rm -f "$HOME/Library/Caches/KSCrashReports/ProPresenter 21" 2>/dev/null || true
+# Remove $HOME/Library/Caches/KSCrashReports/ProPresenter 22
+echo "Removing $HOME/Library/Caches/KSCrashReports/ProPresenter 22..."
+if [ -d "$HOME/Library/Caches/KSCrashReports/ProPresenter 22" ]; then
+    rm -rf "$HOME/Library/Caches/KSCrashReports/ProPresenter 22" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/KSCrashReports/ProPresenter 22" ]; then
+    rm -f "$HOME/Library/Caches/KSCrashReports/ProPresenter 22" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/Sessions/ProPresenter 21
-echo "Removing $HOME/Library/Caches/Sessions/ProPresenter 21..."
-if [ -d "$HOME/Library/Caches/Sessions/ProPresenter 21" ]; then
-    rm -rf "$HOME/Library/Caches/Sessions/ProPresenter 21" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/Sessions/ProPresenter 21" ]; then
-    rm -f "$HOME/Library/Caches/Sessions/ProPresenter 21" 2>/dev/null || true
+# Remove $HOME/Library/Caches/Sessions/ProPresenter 22
+echo "Removing $HOME/Library/Caches/Sessions/ProPresenter 22..."
+if [ -d "$HOME/Library/Caches/Sessions/ProPresenter 22" ]; then
+    rm -rf "$HOME/Library/Caches/Sessions/ProPresenter 22" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/Sessions/ProPresenter 22" ]; then
+    rm -f "$HOME/Library/Caches/Sessions/ProPresenter 22" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.renewedvision.ProPresenter21.plist
-echo "Removing $HOME/Library/Preferences/com.renewedvision.ProPresenter21.plist..."
-if [ -d "$HOME/Library/Preferences/com.renewedvision.ProPresenter21.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.renewedvision.ProPresenter21.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.renewedvision.ProPresenter21.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.renewedvision.ProPresenter21.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist
+echo "Removing $HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist..."
+if [ -d "$HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/RenewedVision

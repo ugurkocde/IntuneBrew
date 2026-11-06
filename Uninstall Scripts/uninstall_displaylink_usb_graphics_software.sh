@@ -67,12 +67,28 @@ elif [ -f "$HOME/Library/Application Scripts/com.displaylink.DisplayLinkUserAgen
     rm -f "$HOME/Library/Application Scripts/com.displaylink.DisplayLinkUserAgent" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.displaylink.DisplayLinkXpcService
+echo "Removing $HOME/Library/Application Scripts/com.displaylink.DisplayLinkXpcService..."
+if [ -d "$HOME/Library/Application Scripts/com.displaylink.DisplayLinkXpcService" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.displaylink.DisplayLinkXpcService" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.displaylink.DisplayLinkXpcService" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.displaylink.DisplayLinkXpcService" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.displaylink.DisplayLinkUserAgent
 echo "Removing $HOME/Library/Containers/com.displaylink.DisplayLinkUserAgent..."
 if [ -d "$HOME/Library/Containers/com.displaylink.DisplayLinkUserAgent" ]; then
     rm -rf "$HOME/Library/Containers/com.displaylink.DisplayLinkUserAgent" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.displaylink.DisplayLinkUserAgent" ]; then
     rm -f "$HOME/Library/Containers/com.displaylink.DisplayLinkUserAgent" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.displaylink.DisplayLinkXpcService
+echo "Removing $HOME/Library/Containers/com.displaylink.DisplayLinkXpcService..."
+if [ -d "$HOME/Library/Containers/com.displaylink.DisplayLinkXpcService" ]; then
+    rm -rf "$HOME/Library/Containers/com.displaylink.DisplayLinkXpcService" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.displaylink.DisplayLinkXpcService" ]; then
+    rm -f "$HOME/Library/Containers/com.displaylink.DisplayLinkXpcService" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Group Containers/73YQY62QM3.com.displaylink.DisplayLinkShared
