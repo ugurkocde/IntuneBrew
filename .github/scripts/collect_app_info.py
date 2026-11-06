@@ -1,4 +1,7 @@
 import json
+import contextlib
+import io
+import stat
 import os
 import plistlib
 import shutil
@@ -17,6 +20,8 @@ import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse, unquote, parse_qs, urlencode
 from request_sources import source_token, FORMULA_RECIPES, FORMULA_NAMES, FORMULA_PUBLISHERS, CASK_NAMES
+from version_relation import (BundleObservation, InspectionRefusal, PriorEntry, ReconcileInput,
+                              CATALOG_CONSUMER_CAPABILITIES, plan, reconcile)
 
 
 def get_filename_from_url(url, app_name=None, version=None, default_ext=".dmg"):
@@ -1487,77 +1492,127 @@ def calculate_file_hash(url):
             except Exception as e:
                 print(f"Warning: Could not delete temporary file: {str(e)}")
 
-def _bundle_version_in(mount_point, bundle_id):
-    """Return CFBundleShortVersionString of bundle_id at the top of a mounted DMG."""
+def _mounted_bundle_metadata(mount_point, bundle_id):
+    """Read exactly one matching real app, never following a symlink out of a DMG."""
+    mount = Path(mount_point).resolve()
     candidates = []
-    # Symlinks are skipped so the usual Applications link cannot match an app
-    # that happens to be installed on the runner.
-    for entry in sorted(Path(mount_point).iterdir()):
-        if entry.is_symlink():
-            continue
-        if entry.suffix == ".app":
-            candidates.append(entry)
-        elif entry.is_dir():
-            candidates.extend(child for child in sorted(entry.iterdir())
-                              if child.suffix == ".app" and not child.is_symlink())
-    for app in candidates:
-        try:
-            with open(app / "Contents" / "Info.plist", "rb") as f:
-                info = plistlib.load(f)
-        except Exception:
-            continue
-        if info.get("CFBundleIdentifier") == bundle_id:
-            version = str(info.get("CFBundleShortVersionString", "")).strip()
-            return version or None
-    return None
+    try:
+        for entry in sorted(mount.iterdir()):
+            if entry.is_symlink():
+                continue
+            if entry.suffix == ".app":
+                candidates.append(entry)
+            elif entry.is_dir():
+                candidates.extend(child for child in sorted(entry.iterdir())
+                                  if child.suffix == ".app" and not child.is_symlink())
+        matches = []
+        for app in candidates:
+            contents, plist = app / "Contents", app / "Contents" / "Info.plist"
+            for component, directory in [(app, True), (contents, True), (plist, False)]:
+                if component.is_symlink():
+                    return InspectionRefusal("SYMLINK_COMPONENT", True)
+                try:
+                    component.resolve().relative_to(mount)
+                    mode = component.lstat().st_mode
+                except (OSError, ValueError):
+                    return InspectionRefusal("CANDIDATE_UNREADABLE", True)
+                if not (stat.S_ISDIR(mode) if directory else stat.S_ISREG(mode)):
+                    return InspectionRefusal("PLIST_INVALID", True)
+            if plist.stat().st_size > 1024 * 1024:
+                return InspectionRefusal("PLIST_INVALID", True)
+            try:
+                with plist.open("rb") as source:
+                    info = plistlib.load(source)
+            except Exception:
+                return InspectionRefusal("CANDIDATE_UNREADABLE", True)
+            if not isinstance(info, dict):
+                return InspectionRefusal("PLIST_INVALID", True)
+            if type(info.get("CFBundleIdentifier")) is str and info["CFBundleIdentifier"] == bundle_id:
+                matches.append(info)
+        if len(matches) > 1:
+            return InspectionRefusal("AMBIGUOUS", True)
+        if not matches:
+            return InspectionRefusal("NOT_FOUND", False)
+        info = matches[0]
+        def valid(value):
+            return type(value) is str and 0 < len(value) <= 64 and value.isprintable()
+        short = info.get("CFBundleShortVersionString")
+        if not valid(short):
+            return InspectionRefusal("SHORT_MALFORMED", True)
+        build = info.get("CFBundleVersion")
+        if "CFBundleVersion" in info and not valid(build):
+            return InspectionRefusal("BUILD_MALFORMED", True)
+        return short, build
+    except Exception:
+        return InspectionRefusal("CANDIDATE_UNREADABLE", True)
 
 
-def read_dmg_bundle_version(url, bundle_id):
-    """Download the DMG at url and return the version its bundle_id app reports.
-
-    None means the version could not be read (download, mount or lookup
-    failed). That never blocks an update, only a confirmed mismatch does.
-    """
-    print(f"📥 Downloading {url} to verify the app version...")
+def inspect_dmg_artifact(url, bundle_id, declared_sha256=None):
+    """Hash the one downloaded file before mounting; return bounded evidence only."""
     work = tempfile.mkdtemp(prefix="intunebrew_dmg_")
     mount_point = os.path.join(work, "mount")
+    digest = None
     try:
         dmg_path = os.path.join(work, "app.dmg")
         with open(dmg_path, "wb") as dmg:
             for user_agent in DOWNLOAD_USER_AGENTS:
                 try:
-                    if _stream_to_temp_file(url, user_agent, dmg) is not None:
+                    # The legacy stream helper can log signed URLs on refusals.
+                    with contextlib.redirect_stdout(io.StringIO()):
+                        downloaded = _stream_to_temp_file(url, user_agent, dmg)
+                    if downloaded is not None:
                         break
-                except _OversizedDownload as e:
-                    print(str(e))
-                    return None
-                except Exception as e:
-                    print(f"Download for version check failed: {e}")
+                except _OversizedDownload:
+                    return InspectionRefusal("DOWNLOAD_FAILED", False)
+                except Exception:
+                    continue
             else:
-                return None
-
-        # The answers on stdin accept a license agreement instead of hanging.
+                return InspectionRefusal("DOWNLOAD_FAILED", False)
+        sha = hashlib.sha256()
+        with open(dmg_path, "rb") as source:
+            for chunk in iter(lambda: source.read(1024 * 1024), b""):
+                sha.update(chunk)
+        digest = sha.hexdigest()
+        os.chmod(dmg_path, 0o400)
+        if declared_sha256 is not None and digest != declared_sha256:
+            return InspectionRefusal("CHECKSUM_MISMATCH", True, digest)
         result = subprocess.run(
             ["hdiutil", "attach", dmg_path, "-readonly", "-nobrowse", "-noautoopen",
              "-noverify", "-mountpoint", mount_point],
             input=b"y\n" * 10, capture_output=True, timeout=300,
         )
         if result.returncode != 0:
-            print(f"Could not mount DMG for version check: {result.stderr.decode(errors='replace').strip()}")
-            return None
-        return _bundle_version_in(mount_point, bundle_id)
-    except Exception as e:
-        print(f"Version check failed: {e}")
-        return None
+            return InspectionRefusal("MOUNT_FAILED", False, digest)
+        metadata = _mounted_bundle_metadata(mount_point, bundle_id)
+        if isinstance(metadata, InspectionRefusal):
+            return InspectionRefusal(metadata.code, metadata.integrity, digest)
+        return BundleObservation(digest, bundle_id, metadata[0], metadata[1])
+    except Exception:
+        return InspectionRefusal("INTERNAL_ERROR", False, digest)
     finally:
-        # Checked even after a timeout, which can leave the image attached.
-        if os.path.ismount(mount_point):
+        for _ in range(2):
+            if not os.path.ismount(mount_point):
+                break
             try:
                 subprocess.run(["hdiutil", "detach", mount_point, "-force"],
                                capture_output=True, timeout=120)
             except Exception:
                 pass
-        shutil.rmtree(work, ignore_errors=True)
+        if os.path.ismount(mount_point):
+            print("DMG inspection cleanup_incomplete")
+        else:
+            shutil.rmtree(work, ignore_errors=True)
+
+
+def _bundle_version_in(mount_point, bundle_id):
+    metadata = _mounted_bundle_metadata(mount_point, bundle_id)
+    return None if isinstance(metadata, InspectionRefusal) else metadata[0]
+
+
+def read_dmg_bundle_version(url, bundle_id):
+    """Compatibility reader; the new reconciliation uses the complete observation."""
+    observation = inspect_dmg_artifact(url, bundle_id)
+    return observation.short_version if isinstance(observation, BundleObservation) else None
 
 
 def verify_dmg_bundle_version(app_info, existing_version):
@@ -1584,6 +1639,52 @@ def verify_dmg_bundle_version(app_info, existing_version):
         )
     else:
         print(f"✅ DMG app version verified: {found}")
+
+
+
+class CatalogVersionHold(RuntimeError):
+    def __init__(self, code):
+        self.code = code
+        super().__init__("DMG release held: " + code)
+
+
+def reconcile_vendor_dmg(app_info, prior, raw_cask, cask):
+    """Apply the common rule at the vendor-DMG boundary, before any file write."""
+    prior = prior or {}
+    if (not isinstance(raw_cask, dict) or not isinstance(raw_cask.get("version"), str)
+            or app_info.get("homebrew_formula") or not app_info.get("bundleId")
+            or not str(app_info.get("fileName", "")).lower().endswith(".dmg")
+            or shutil.which("hdiutil") is None):
+        verify_dmg_bundle_version(app_info, prior.get("version"))
+        return
+    declared = raw_cask.get("sha256")
+    declared = declared.lower() if isinstance(declared, str) and re.fullmatch(r"[a-fA-F0-9]{64}", declared) else None
+    values = dict(source_release=raw_cask["version"], legacy_version=app_info["version"],
+                  declared_sha256=declared, url=app_info["url"], bundle_id=app_info["bundleId"],
+                  prior=PriorEntry(prior.get("version"), prior.get("sha"), prior.get("url")) if prior else None,
+                  consumer_caps=CATALOG_CONSUMER_CAPABILITIES)
+    decision = plan(ReconcileInput(**values))
+    observation = None
+    if decision.action == "INSPECT":
+        observation = inspect_dmg_artifact(app_info["url"], app_info["bundleId"], declared)
+        decision = reconcile(ReconcileInput(**values, observation=observation))
+    evidence = {"cask": cask, "action": decision.action, "reason": decision.reason,
+                "relation": decision.relation, "sourceRelease": raw_cask["version"][:256],
+                "declaredSha256": declared or "no_check",
+                "priorVersion": str(prior.get("version", ""))[:256], "verified": decision.verified}
+    if isinstance(observation, (BundleObservation, InspectionRefusal)):
+        evidence["artifactSha256"] = observation.artifact_sha256
+    if isinstance(observation, BundleObservation):
+        evidence.update(observedShort=observation.short_version, observedBuild=observation.bundle_version,
+                        artifactSha256=observation.artifact_sha256, inspector=observation.inspector)
+    if len(version_evidence) < 5000:
+        version_evidence.append(evidence)
+    if decision.action == "HOLD":
+        raise CatalogVersionHold(decision.reason)
+    if decision.version is not None:
+        app_info["version"] = decision.version
+    if decision.sha is not None:
+        app_info["sha"] = decision.sha
 
 
 def find_bundle_id(json_string):
@@ -1658,6 +1759,7 @@ def find_app_file(apps_folder, display_name=None, cask_token=None):
 # collected here instead of being written, and fail the run at the end of main().
 filename_collisions = []
 collection_failures = []
+version_evidence = []
 
 
 def claim_app_file(file_path, cask_token):
@@ -1968,6 +2070,7 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
     else:
         # Defensive: a URL the prefetch never saw is still fetched here.
         data = fetch_cask_data(json_url)
+        cask_cache[json_url] = data
 
     is_formula = '/api/formula/' in json_url
     if is_formula:
@@ -2249,6 +2352,7 @@ def update_readme_with_latest_changes(apps_info):
 def main():
     filename_collisions.clear()
     collection_failures.clear()
+    version_evidence.clear()
     apps_folder = "Apps"
     os.makedirs(apps_folder, exist_ok=True)
     print(f"\n📁 Apps folder absolute path: {os.path.abspath(apps_folder)}")
@@ -2353,21 +2457,9 @@ def main():
             if not claim_app_file(file_path, app_info.get("homebrew_cask")):
                 continue
 
-            # Use Homebrew's verified checksum when available. Mutable/no_check
-            # downloads must be hashed again, even if version and URL are equal.
-            needs_hash = "sha" not in app_info
-
-            if needs_hash:
-                print(f"🔍 Calculating SHA256 hash for {display_name}...")
-                file_hash = calculate_file_hash(app_info["url"])
-                if file_hash:
-                    app_info["sha"] = file_hash
-                    print(f"✅ SHA256 hash calculated: {file_hash}")
-                else:
-                    raise RuntimeError(f"Could not verify download hash for {display_name}")
-
             # For existing files, preserve existing data and update necessary fields
             previous_version = None
+            existing_data = None
             if os.path.exists(file_path):
                 with open(file_path, "r") as f:
                     existing_data = json.load(f)
@@ -2401,7 +2493,18 @@ def main():
                         app_info["sha"] = new_sha
                     app_info["previous_version"] = previous_version
 
-            verify_dmg_bundle_version(app_info, previous_version)
+            reconcile_vendor_dmg(app_info, existing_data, cask_cache.get(url), get_cask_token(url))
+
+            # The inspector supplies the digest of the mounted bytes. Legacy
+            # paths still hash mutable/no_check artifacts fresh, as before.
+            if "sha" not in app_info:
+                print(f"🔍 Calculating SHA256 hash for {display_name}...")
+                file_hash = calculate_file_hash(app_info["url"])
+                if file_hash:
+                    app_info["sha"] = file_hash
+                    print(f"✅ SHA256 hash calculated: {file_hash}")
+                else:
+                    raise RuntimeError(f"Could not verify download hash for {display_name}")
 
             with open(file_path, "w") as f:
                 json.dump(app_info, f, indent=2)
@@ -2411,7 +2514,10 @@ def main():
         except CaskUnavailableError as e:
             mark_app_deprecated(apps_folder, e.display_name, e.reason, e.cask_token)
         except Exception as e:
-            collection_failures.append({"cask": get_cask_token(url), "stage": "collection"})
+            failure = {"cask": get_cask_token(url), "stage": "collection"}
+            if isinstance(e, CatalogVersionHold):
+                failure["reason"] = e.code
+            collection_failures.append(failure)
             print(f"Error processing {url}: {str(e)}")
 
     # Process pkg_in_pkg apps
@@ -2646,6 +2752,7 @@ def main():
         Path(report_path).write_text(json.dumps({
             "failures": collection_failures,
             "collisions": filename_collisions,
+            "versionEvidence": version_evidence,
         }, indent=2) + "\n")
     if collisions and os.environ.get("CATALOG_ALLOW_PARTIAL") != "1":
         sys.exit(1)
