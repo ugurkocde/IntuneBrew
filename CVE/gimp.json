@@ -1,7 +1,7 @@
 {
   "app_name": "Gimp",
   "app_key": "gimp",
-  "last_updated": "2026-11-05",
+  "last_updated": "2026-11-06",
   "total_cves": 111,
   "summary": {
     "critical": 1,
@@ -350,7 +350,7 @@
     {
       "cve_id": "CVE-2026-66759",
       "published_date": "2026-07-27",
-      "last_modified_date": "2026-08-24",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in the file-icns plugin in GIMP. When applying a decompressed mask during ICNS image processing, the plugin reads from the mask data buffer without verifying if the cursor exceeds the allocated resource size. If a crafted file contains a truncated mask resource, the icns_decompress function continues reading past the bounds of the buffer. This out-of-bounds read vulnerability results in information disclosure of heap contents, where memory contents are leaked as alpha channel pixel values, or a crash leading to a denial of service if unmapped memory is accessed.",
       "base_score": 7.1,
       "severity": "HIGH",
@@ -392,7 +392,7 @@
     {
       "cve_id": "CVE-2026-58380",
       "published_date": "2026-07-06",
-      "last_modified_date": "2026-11-02",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP's PNM file format parser. When parsing a specially crafted PNM file, the pnmscanner_gettoken() function writes a null terminator one byte past the end of a stack-allocated buffer due to an off-by-one error in the loop boundary check. This could lead to memory corruption, potentially resulting in denial of service or arbitrary code execution.",
       "base_score": 7.3,
       "severity": "HIGH",
@@ -1442,7 +1442,7 @@
     {
       "cve_id": "CVE-2026-82324",
       "published_date": "2026-08-28",
-      "last_modified_date": "2026-08-31",
+      "last_modified_date": "2026-11-06",
       "description": "A flaw was found in the file-iff (IFF/ILBM) plugin in GIMP. When processing a specially crafted IFF/ILBM image file, the plugin does not properly validate the HAM row size and improperly handles cases where the number of color planes (nPlanes) is zero. This causes a row size mismatch that bypasses memory bounds checking, resulting in heap out-of-bounds reads. This issue can result in an application crash, leading to a denial of service or a limited information disclosure of heap memory contents.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1463,7 +1463,7 @@
     {
       "cve_id": "CVE-2026-82328",
       "published_date": "2026-08-28",
-      "last_modified_date": "2026-08-31",
+      "last_modified_date": "2026-11-06",
       "description": "A flaw was found in the file-ico plugin in GIMP. When processing a specially crafted ICO image file, the plugin does not properly validate the used_clrs (palette count) parameter. This incorrect validation leads to improper memory bounds checking, resulting in a heap out-of-bounds read. This issue can result in an application crash, leading to a denial of service or a limited information disclosure of heap memory contents.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1484,7 +1484,7 @@
     {
       "cve_id": "CVE-2026-82330",
       "published_date": "2026-08-28",
-      "last_modified_date": "2026-08-31",
+      "last_modified_date": "2026-11-06",
       "description": "A flaw was found in the file-pvr plugin in GIMP. When processing a specially crafted PVR image file, the VQ (compressed) decoder does not properly perform memory bounds checking. This missing validation results in a heap out-of-bounds read. This issue can result in an application crash, leading to a denial of service or a limited information disclosure of heap memory contents.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1505,7 +1505,7 @@
     {
       "cve_id": "CVE-2026-82343",
       "published_date": "2026-08-28",
-      "last_modified_date": "2026-09-01",
+      "last_modified_date": "2026-11-06",
       "description": "A flaw was found in the file-psd plugin in GIMP. When processing a specially crafted PSD image file, the plugin does not properly validate the channel-count parameter. This incorrect validation leads to improper memory bounds checking, resulting in both a heap out-of-bounds read and a stack out-of-bounds access. This issue can result in an application crash, leading to a denial of service or a limited information disclosure of memory contents.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1526,7 +1526,7 @@
     {
       "cve_id": "CVE-2026-79902",
       "published_date": "2026-08-26",
-      "last_modified_date": "2026-09-01",
+      "last_modified_date": "2026-11-06",
       "description": "A flaw was found in the Seattle FilmWorks plugin in GIMP. When processing a specially crafted SFW image file, the plugin allocates a Variable-Length Array (VLA) on the stack without integer overflow checks, causing an unbounded stack allocation. This issue leads to an application crash, resulting in a denial of service.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1547,7 +1547,7 @@
     {
       "cve_id": "CVE-2026-80101",
       "published_date": "2026-08-25",
-      "last_modified_date": "2026-09-02",
+      "last_modified_date": "2026-11-06",
       "description": "A flaw was found in the file-xwd plugin in GIMP. When processing a specially crafted XWD image file, the plugin validates the image width and bytes-per-line parameters independently rather than ensuring their combined values are consistent with the allocated buffer size. This incorrect validation leads to improper bounds checking, causing a heap out-of-bounds read. This issue can result in an application crash, leading to a denial of service or a limited information disclosure of heap memory contents into the produced image.",
       "base_score": 4.4,
       "severity": "MEDIUM",
@@ -1568,7 +1568,7 @@
     {
       "cve_id": "CVE-2026-78475",
       "published_date": "2026-08-24",
-      "last_modified_date": "2026-10-12",
+      "last_modified_date": "2026-11-06",
       "description": "A flaw was found in the file-pix (ESM) plugin in GIMP. When processing a specially crafted PIX image file, the plugin allocates a Variable-Length Array (VLA) on the stack without proper bounds checking, causing an unbounded stack allocation followed by a 21-byte stack over-read. This can result in a denial of service due to stack exhaustion and a limited information disclosure of stack memory contents into an intermediate file.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1589,7 +1589,7 @@
     {
       "cve_id": "CVE-2026-59088",
       "published_date": "2026-08-10",
-      "last_modified_date": "2026-08-21",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP. A signed integer overflow vulnerability exists in the `file-fli` plugin when processing FLI image files. This occurs due to an incorrect calculation during memory allocation for image buffers, where the multiplication of image width and height can exceed the maximum integer value. A remote attacker could exploit this by tricking a user into opening a specially crafted FLI file, leading to the application crashing and resulting in a denial of service.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1610,7 +1610,7 @@
     {
       "cve_id": "CVE-2026-6695",
       "published_date": "2026-08-03",
-      "last_modified_date": "2026-08-19",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP. A remote attacker could exploit this by tricking a user into opening a specially crafted PAA (Paint Shop Pro Array) image file. This vulnerability, a heap-based out-of-bounds write in the decode_lzss() function of the PAA file format plugin, allows data to be written beyond the intended memory buffer. This could lead to heap metadata corruption and potentially enable the attacker to execute arbitrary code on the affected system.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1631,7 +1631,7 @@
     {
       "cve_id": "CVE-2026-66757",
       "published_date": "2026-07-27",
-      "last_modified_date": "2026-08-10",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in the file-sgi plugin in GIMP. When processing an RLE-compressed SGI image, the plugin allocates memory for a row table. The image header dimensions (ysize and zsize) are read as 16-bit unsigned integers. If a crafted file sets both dimensions to their maximum value (65535), the multiplication ysize * zsize overflows the standard 32-bit int boundary before being passed to calloc. This integer overflow issue results in undefined behavior, aborting the plugin and causing a denial of service.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1652,7 +1652,7 @@
     {
       "cve_id": "CVE-2026-59089",
       "published_date": "2026-07-06",
-      "last_modified_date": "2026-08-21",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP. The PlayStation TIM loader, responsible for handling PlayStation image files, incorrectly calculates the size of the Color Look-Up Table (CLUT) due to an integer overflow. This occurs when multiplying num_colors and num_cluts, both 16-bit unsigned short integers, resulting in a value exceeding the maximum integer limit. An attacker could exploit this by providing a specially crafted image file, leading to undefined behavior and causing the GIMP plug-in to abort, effectively resulting in a denial of service.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1673,7 +1673,7 @@
     {
       "cve_id": "CVE-2026-58381",
       "published_date": "2026-07-02",
-      "last_modified_date": "2026-09-22",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP's PSP file format parser. A double-free condition occurs in the read_layer_block() function when processing a specially crafted PSP file. This could allow an attacker to cause memory corruption, potentially leading to denial of service or arbitrary code execution.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1694,7 +1694,7 @@
     {
       "cve_id": "CVE-2026-40915",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-10-26",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP. A remote attacker could exploit an integer overflow vulnerability in the FITS image loader by providing a specially crafted FITS file. This integer overflow leads to a zero-byte memory allocation, which is then subjected to a heap buffer overflow when processing pixel data. Successful exploitation could result in a denial of service (DoS) or potentially arbitrary code execution.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1715,7 +1715,7 @@
     {
       "cve_id": "CVE-2026-40916",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-10-26",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP. A stack buffer overflow vulnerability in the TIM image loader's 4BPP decoding path allows a local user to cause a Denial of Service (DoS). By opening a specially crafted TIM image file, the application crashes due to an unconditional overflow when writing to a variable-length array.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -1736,7 +1736,7 @@
     {
       "cve_id": "CVE-2026-40917",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-10-26",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP. This vulnerability, a heap buffer over-read in the `icns_slurp()` function, occurs when processing specially crafted ICNS image files. An attacker could provide a malicious ICNS file, potentially leading to application crashes or information disclosure on systems that process such files.",
       "base_score": 5.0,
       "severity": "MEDIUM",
@@ -1757,7 +1757,7 @@
     {
       "cve_id": "CVE-2026-40918",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-10-26",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP. Processing a specially crafted PVR image file with large dimensions can lead to a denial of service (DoS). This occurs due to a stack-based buffer overflow and an out-of-bounds read in the PVR image loader, causing the application to crash. Systems that process untrusted PVR image files are affected.",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -1778,7 +1778,7 @@
     {
       "cve_id": "CVE-2026-40919",
       "published_date": "2026-04-15",
-      "last_modified_date": "2026-10-26",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP. This vulnerability, a buffer overflow in the `file-seattle-filmworks` plugin, can be exploited when a user opens a specially crafted Seattle Filmworks file. A remote attacker could leverage this to cause a denial of service (DoS), leading to the plugin crashing and potentially impacting the stability of the GIMP application.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1799,7 +1799,7 @@
     {
       "cve_id": "CVE-2026-4887",
       "published_date": "2026-03-26",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP. This issue is a heap buffer over-read in GIMP PCX file loader due to an off-by-one error. A remote attacker could exploit this by convincing a user to open a specially crafted PCX image. Successful exploitation could lead to out-of-bounds memory disclosure and a possible application crash, resulting in a Denial of Service (DoS).",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -1820,7 +1820,7 @@
     {
       "cve_id": "CVE-2026-2272",
       "published_date": "2026-03-26",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP. An integer overflow vulnerability exists when processing ICO image files, specifically in the `ico_read_info` and `ico_read_icon` functions. This issue arises because a size calculation for image buffers can wrap around due to a 32-bit integer evaluation, allowing oversized image headers to bypass security checks. A remote attacker could exploit this by providing a specially crafted ICO file, leading to a buffer overflow and memory corruption, which may result in an application level denial of service.",
       "base_score": 4.3,
       "severity": "MEDIUM",
@@ -1841,7 +1841,7 @@
     {
       "cve_id": "CVE-2025-6035",
       "published_date": "2025-06-13",
-      "last_modified_date": "2026-06-30",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP. An integer overflow vulnerability exists in the GIMP \"Despeckle\"  plug-in. The issue occurs due to unchecked multiplication of image dimensions, such as width, height, and bytes-per-pixel (img_bpp), which can result in allocating insufficient memory and subsequently performing out-of-bounds writes. This issue could lead to heap corruption, a potential denial of service (DoS), or arbitrary code execution in certain scenarios.",
       "base_score": 6.1,
       "severity": "MEDIUM",
@@ -2324,7 +2324,7 @@
     {
       "cve_id": "CVE-2026-2271",
       "published_date": "2026-03-26",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-05",
       "description": "A flaw was found in GIMP's PSP (Paint Shop Pro) file parser. A remote attacker could exploit an integer overflow vulnerability in the read_creator_block() function by providing a specially crafted PSP image file. This vulnerability occurs when a 32-bit length value from the file is used for memory allocation without proper validation, leading to a heap overflow and an out-of-bounds write. Successful exploitation could result in an application level denial of service.",
       "base_score": 3.3,
       "severity": "LOW",
