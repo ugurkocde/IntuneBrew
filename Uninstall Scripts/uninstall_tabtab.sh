@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/HTTPStorages/riccqi.TabTab" ]; then
     rm -f "$HOME/Library/HTTPStorages/riccqi.TabTab" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/TabTab
+echo "Removing $HOME/Library/Logs/TabTab..."
+if [ -d "$HOME/Library/Logs/TabTab" ]; then
+    rm -rf "$HOME/Library/Logs/TabTab" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/TabTab" ]; then
+    rm -f "$HOME/Library/Logs/TabTab" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/riccqi.TabTab.plist
 echo "Removing $HOME/Library/Preferences/riccqi.TabTab.plist..."
 if [ -d "$HOME/Library/Preferences/riccqi.TabTab.plist" ]; then

@@ -49,6 +49,14 @@ elif [ -f "$HOME/Library/Caches/readest" ]; then
     rm -f "$HOME/Library/Caches/readest" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/com.bilingify.readest
+echo "Removing $HOME/Library/Logs/com.bilingify.readest..."
+if [ -d "$HOME/Library/Logs/com.bilingify.readest" ]; then
+    rm -rf "$HOME/Library/Logs/com.bilingify.readest" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/com.bilingify.readest" ]; then
+    rm -f "$HOME/Library/Logs/com.bilingify.readest" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.bilingify.readest.plist
 echo "Removing $HOME/Library/Preferences/com.bilingify.readest.plist..."
 if [ -d "$HOME/Library/Preferences/com.bilingify.readest.plist" ]; then
