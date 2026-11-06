@@ -57,6 +57,14 @@ elif [ -f "$HOME/.local/share/wezterm" ]; then
     rm -f "$HOME/.local/share/wezterm" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/wezterm
+echo "Removing $HOME/Library/Application Support/wezterm..."
+if [ -d "$HOME/Library/Application Support/wezterm" ]; then
+    rm -rf "$HOME/Library/Application Support/wezterm" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/wezterm" ]; then
+    rm -f "$HOME/Library/Application Support/wezterm" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/com.github.wez.wezterm.savedState
 echo "Removing $HOME/Library/Saved Application State/com.github.wez.wezterm.savedState..."
 if [ -d "$HOME/Library/Saved Application State/com.github.wez.wezterm.savedState" ]; then
