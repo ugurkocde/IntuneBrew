@@ -15,7 +15,8 @@ ROWS = json.loads((Path(__file__).parent / 'fixtures/source_build_versions.json'
 class BuildRelationshipTests(unittest.TestCase):
     def reconcile_case(self, raw='139.0.6053.38', short='139.0', build='139.0.6053.38', prior='138.0'):
         i = original.request(raw, short, prior)
-        return policy.reconcile(replace(i, observation=replace(i.observation, bundle_version=build)))
+        return policy.reconcile(replace(i, source_cask='fixture',
+                                        observation=replace(i.observation, bundle_version=build)))
 
     def test_measured_candidates_and_remaining_holds(self):
         for row in ROWS:
