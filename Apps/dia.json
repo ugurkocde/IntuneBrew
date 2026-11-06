@@ -11,6 +11,6 @@
   "sha": "3fd8c436420410fb9fe974ae57a628f55a0a4346958ffe1edb2dd553592ce87f",
   "category": "Browsers",
   "publisher": "Dia Browser",
-  "previous_version": "1.55.1",
+  "previous_version": "1.56.0",
   "homebrew_cask": "thebrowsercompany-dia"
 }

@@ -8,7 +8,6 @@
   "homepage": "https://www.airy-youtube-downloader.com/mac/",
   "homebrew_cask": "airy",
   "fileName": "airy.dmg",
-  "sha": "0fe4730fa9c2ebf7744e12e1ad5ccef554ace9d7542b8a59bf98228522e1287b",
   "changelog": "https://www.airy-youtube-downloader.com/mac/whats-new/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:30:02Z",
@@ -22,5 +21,6 @@
   },
   "category": "Media",
   "publisher": "Unknown",
-  "previous_version": "3.29.2"
+  "previous_version": "3.29.2",
+  "sha": "0fe4730fa9c2ebf7744e12e1ad5ccef554ace9d7542b8a59bf98228522e1287b"
 }

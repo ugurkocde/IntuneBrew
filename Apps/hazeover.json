@@ -8,9 +8,9 @@
   "homepage": "https://hazeover.com/",
   "homebrew_cask": "hazeover",
   "fileName": "HazeOver.dmg",
-  "sha": "35111d4fd2e338b60a819f59eea119d20d982dec751e1ca829eb626bc037988b",
   "changelog": "https://hazeover.com/notes.html",
   "category": "Utilities",
   "publisher": "HazeOver",
-  "previous_version": "1.9.9"
+  "previous_version": "1.9.9",
+  "sha": "35111d4fd2e338b60a819f59eea119d20d982dec751e1ca829eb626bc037988b"
 }

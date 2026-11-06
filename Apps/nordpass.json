@@ -8,8 +8,8 @@
   "homepage": "https://nordpass.com/",
   "homebrew_cask": "nordpass",
   "fileName": "NordPass.dmg",
-  "sha": "873072321a6e0c0f44c6b66bc7d2247b5d8fec4165ea0e06970dec4430006e5c",
   "category": "Security",
   "publisher": "Nord Security",
-  "previous_version": "7.12.15"
+  "previous_version": "7.12.15",
+  "sha": "873072321a6e0c0f44c6b66bc7d2247b5d8fec4165ea0e06970dec4430006e5c"
 }

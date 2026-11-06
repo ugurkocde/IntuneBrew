@@ -8,9 +8,9 @@
   "homepage": "https://www.termius.com/",
   "homebrew_cask": "termius",
   "fileName": "Termius.dmg",
-  "sha": "b6c7cf42ada620826c3ab296584e5582b44a8ba61fb7cc89d46b0ed9bdd19b1a",
   "changelog": "https://support.termius.com/hc/en-us/articles/4404036107673-Windows-Linux-Mac",
   "category": "Developer Tools",
   "publisher": "Termius",
-  "previous_version": "10.4.0"
+  "previous_version": "10.4.0",
+  "sha": "b6c7cf42ada620826c3ab296584e5582b44a8ba61fb7cc89d46b0ed9bdd19b1a"
 }

@@ -8,8 +8,8 @@
   "homepage": "https://www.globaldelight.com/capto/",
   "homebrew_cask": "capto",
   "fileName": "Capto.dmg",
-  "sha": "4b5f7c4cead5ddbfd4a28f7e9f0a954f941a52fe974af08495b15076a58e9d90",
   "category": "Media",
   "publisher": "Global Delight Technologies Pvt. Ltd.",
-  "previous_version": "2.1.6"
+  "previous_version": "2.1.6",
+  "sha": "4b5f7c4cead5ddbfd4a28f7e9f0a954f941a52fe974af08495b15076a58e9d90"
 }

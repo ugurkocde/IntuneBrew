@@ -8,8 +8,8 @@
   "homepage": "https://www.freedownloadmanager.org/",
   "homebrew_cask": "free-download-manager",
   "fileName": "fdm.dmg",
-  "sha": "1624ce5edc1fe5ad4a2c1a05022ed56a6842bcfb7083a9ded3844efd736d3868",
   "category": "Utilities",
   "publisher": "Free Download Manager",
-  "previous_version": "6.35.2"
+  "previous_version": "6.35.2",
+  "sha": "1624ce5edc1fe5ad4a2c1a05022ed56a6842bcfb7083a9ded3844efd736d3868"
 }

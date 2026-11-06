@@ -8,8 +8,8 @@
   "homepage": "https://www.zwift.com/",
   "homebrew_cask": "zwift",
   "fileName": "ZwiftOSX.dmg",
-  "sha": "58d460f005411593ffae541997283bcda8db8d4f656d52b37c4e3537b8404aa8",
   "category": "Other",
   "publisher": "Zwift, Inc.",
-  "previous_version": "1.2.0"
+  "previous_version": "1.2.0",
+  "sha": "58d460f005411593ffae541997283bcda8db8d4f656d52b37c4e3537b8404aa8"
 }

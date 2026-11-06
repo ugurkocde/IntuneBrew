@@ -8,8 +8,8 @@
   "homepage": "https://www.hamrick.com/",
   "homebrew_cask": "vuescan",
   "fileName": "vuea6498.dmg",
-  "sha": "119a6300d13ecb10c0829eb22ed06bfdce0bfaffee16fe46ac6acd0b3458e8ec",
   "category": "Utilities",
   "publisher": "Hamrick Software",
-  "previous_version": "9.8.59"
+  "previous_version": "9.8.59",
+  "sha": "60814e70fac76e45a227e063cc0dc756b2584583d900800c3fd3a90c824dc281"
 }

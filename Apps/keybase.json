@@ -8,9 +8,9 @@
   "homepage": "https://keybase.io/",
   "homebrew_cask": "keybase",
   "fileName": "Keybase-arm64.dmg",
-  "sha": "0a71652de53f04886251879bb51a548c9584d10aec759b228991b34548b7d738",
   "changelog": "https://github.com/keybase/client/releases",
   "category": "Security",
   "publisher": "Keybase, Inc.",
-  "previous_version": "6.6.3"
+  "previous_version": "6.6.3",
+  "sha": "0a71652de53f04886251879bb51a548c9584d10aec759b228991b34548b7d738"
 }

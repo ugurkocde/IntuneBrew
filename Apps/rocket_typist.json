@@ -8,8 +8,8 @@
   "homepage": "https://witt-software.com/rockettypist/",
   "homebrew_cask": "rocket-typist",
   "fileName": "Rocket Typist.dmg",
-  "sha": "07544827b7b1b63f49a1661f48a73abaa92e2173cbbd2e1d74167f7f626c5b73",
   "category": "Productivity",
   "publisher": "Witt Software",
-  "previous_version": "3.4.2"
+  "previous_version": "3.4.2",
+  "sha": "07544827b7b1b63f49a1661f48a73abaa92e2173cbbd2e1d74167f7f626c5b73"
 }

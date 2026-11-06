@@ -8,7 +8,6 @@
   "homepage": "https://amadine.com/",
   "homebrew_cask": "amadine",
   "fileName": "Amadine.dmg",
-  "sha": "dc322f4e3aa985426d4504945d8871a38cf0920cf7e2cf15cc3965b4493d2710",
   "changelog": "https://amadine.com/release-notes/",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:30:54Z",
@@ -22,5 +21,6 @@
   },
   "category": "Design",
   "publisher": "Nektony Ltd.",
-  "previous_version": "1.8.5"
+  "previous_version": "1.8.5",
+  "sha": "dc322f4e3aa985426d4504945d8871a38cf0920cf7e2cf15cc3965b4493d2710"
 }

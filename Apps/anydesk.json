@@ -8,7 +8,6 @@
   "homepage": "https://anydesk.com/",
   "homebrew_cask": "anydesk",
   "fileName": "anydesk.dmg",
-  "sha": "b2ce747fc441e4d4331c26c0d0b562b22090d6fd08fa86db6d086dc8b5197db1",
   "changelog": "https://anydesk.com/en/changelog/mac-os",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:31:56Z",
@@ -22,5 +21,6 @@
   },
   "category": "Productivity",
   "publisher": "AnyDesk Software GmbH",
-  "previous_version": "9.8.1"
+  "previous_version": "9.8.1",
+  "sha": "b2ce747fc441e4d4331c26c0d0b562b22090d6fd08fa86db6d086dc8b5197db1"
 }

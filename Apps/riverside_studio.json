@@ -8,8 +8,8 @@
   "homepage": "https://riverside.fm/",
   "homebrew_cask": "riverside-studio",
   "fileName": "RiversideStudio.dmg",
-  "sha": "6eff8427e243f2f168426764b7f3cb4c2b518f7672467d4bcce5ddcd8015443e",
   "category": "Media",
   "publisher": "Riverside.fm",
-  "previous_version": "1.34.0"
+  "previous_version": "1.34.0",
+  "sha": "6eff8427e243f2f168426764b7f3cb4c2b518f7672467d4bcce5ddcd8015443e"
 }

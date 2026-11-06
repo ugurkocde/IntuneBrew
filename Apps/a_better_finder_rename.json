@@ -8,7 +8,6 @@
   "homepage": "https://www.publicspace.net/ABetterFinderRename/",
   "homebrew_cask": "a-better-finder-rename",
   "fileName": "ABFRX12.dmg",
-  "sha": "5bcf670732acceecab4a5b1a03a7a35017a8b7f1de092edb5b455a5837e3bb72",
   "qa_info": {
     "qa_timestamp": "2025-05-12T08:52:11Z",
     "qa_result": "Installation successful and verified",
@@ -21,5 +20,6 @@
   },
   "category": "Utilities",
   "publisher": "publicspace.net",
-  "previous_version": "12.36"
+  "previous_version": "12.36",
+  "sha": "5bcf670732acceecab4a5b1a03a7a35017a8b7f1de092edb5b455a5837e3bb72"
 }

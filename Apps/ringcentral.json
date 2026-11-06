@@ -9,7 +9,7 @@
   "homebrew_cask": "ringcentral",
   "fileName": "RingCentral-arm64.pkg",
   "type": "pkg",
-  "sha": "b097bbf01f74fd2befebf323bce918bb23aa87fbf651008423931abba540ebdb",
+  "sha": "1b31116a591d1a99f55e83ffdc2060670d9b68f20ee16a19efb03b885fd612ab",
   "category": "Communication",
   "publisher": "RingCentral, Inc.",
   "previous_version": "26.3.20"

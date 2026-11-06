@@ -8,8 +8,8 @@
   "homepage": "https://www.kobo.com/desktop",
   "homebrew_cask": "kobo",
   "fileName": "kobosetup.dmg",
-  "sha": "a37fea6c84ba218a85e00dd141143df6dd01dfcd665453ec99b0c29e4f6ecd92",
   "category": "Media",
   "publisher": "Rakuten Kobo",
-  "previous_version": "latest"
+  "previous_version": "latest",
+  "sha": "a37fea6c84ba218a85e00dd141143df6dd01dfcd665453ec99b0c29e4f6ecd92"
 }

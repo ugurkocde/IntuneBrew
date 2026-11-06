@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-06T01:00:30.365224Z",
-  "lastFullSyncAt": "2026-11-06T01:00:30.365224Z",
+  "lastPublishedAt": "2026-11-06T07:31:32.166064Z",
+  "lastFullSyncAt": "2026-11-06T07:31:32.166064Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -42,10 +42,6 @@
       "stage": "collection"
     },
     {
-      "app": "grammarly_desktop",
-      "stage": "collection"
-    },
-    {
       "app": "hopper_disassembler",
       "stage": "collection"
     },
@@ -54,19 +50,11 @@
       "stage": "collection"
     },
     {
-      "app": "jasp",
-      "stage": "collection"
-    },
-    {
       "app": "keeper_password_manager",
       "stage": "collection"
     },
     {
       "app": "libreoffice",
-      "stage": "collection"
-    },
-    {
-      "app": "lm_studio",
       "stage": "collection"
     },
     {
@@ -98,10 +86,6 @@
       "stage": "collection"
     },
     {
-      "app": "pitch",
-      "stage": "collection"
-    },
-    {
       "app": "reaper",
       "stage": "collection"
     },
@@ -111,10 +95,6 @@
     },
     {
       "app": "steermouse",
-      "stage": "collection"
-    },
-    {
-      "app": "tunnelblick",
       "stage": "collection"
     },
     {
@@ -131,5 +111,5 @@
     }
   ],
   "appCount": 1155,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42136750725"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42177977200"
 }

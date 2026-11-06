@@ -8,8 +8,8 @@
   "homepage": "https://www.roboform.com/",
   "homebrew_cask": "roboform",
   "fileName": "roboform-mac-v9.dmg",
-  "sha": "f0104c3b6e5cb00f1c4826adba18ed61f40aedd234a4a5f6c595964da52065bb",
   "category": "Security",
   "publisher": "Siber Systems, Inc.",
-  "previous_version": "9.9.5"
+  "previous_version": "9.9.5",
+  "sha": "f0104c3b6e5cb00f1c4826adba18ed61f40aedd234a4a5f6c595964da52065bb"
 }

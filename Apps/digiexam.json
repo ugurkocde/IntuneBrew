@@ -8,8 +8,8 @@
   "homepage": "https://www.digiexam.com/",
   "homebrew_cask": "digiexam",
   "fileName": "Digiexam_Mac_universal.dmg",
-  "sha": "ead17070295e7bd361f083ac54d364bd7fb216cd5f0f793b24931057a0e0c14e",
   "category": "Security",
   "publisher": "Digiexam",
-  "previous_version": "26.4.7"
+  "previous_version": "26.4.7",
+  "sha": "ead17070295e7bd361f083ac54d364bd7fb216cd5f0f793b24931057a0e0c14e"
 }

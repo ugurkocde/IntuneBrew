@@ -8,7 +8,6 @@
   "homepage": "https://tryalcove.com/",
   "homebrew_cask": "alcove",
   "fileName": "Alcove.dmg",
-  "sha": "17c481ffa9af91fc76e2ba9995f96750538bf171e5eb2be602c07255f4d944e5",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:30:05Z",
     "qa_result": "Installation successful and verified",
@@ -21,5 +20,6 @@
   },
   "category": "Utilities",
   "publisher": "Try Alcove",
-  "previous_version": "1.7.7"
+  "previous_version": "1.7.7",
+  "sha": "17c481ffa9af91fc76e2ba9995f96750538bf171e5eb2be602c07255f4d944e5"
 }

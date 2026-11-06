@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "c1aebcc6fd8ba821cce39deb2c40f2bf3e738c0bb042829c799dfda002e86b3a",
   "changelog": "https://cyberduck.io/changelog/",
-  "previous_version": "9.5.4",
+  "previous_version": "9.6.0",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:24:25Z",
     "qa_result": "Installation successful and verified",

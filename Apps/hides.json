@@ -8,8 +8,8 @@
   "homepage": "https://hides.sweetpproductions.com/",
   "homebrew_cask": "hides",
   "fileName": "Hides.dmg",
-  "sha": "bfe833d9f1d36c134f5e78c0e7bb1e2750404a64dc96d27c020f6e6da686a4f4",
   "category": "Utilities",
   "publisher": "SweetP Productions",
-  "previous_version": "7.4.1"
+  "previous_version": "7.4.1",
+  "sha": "bfe833d9f1d36c134f5e78c0e7bb1e2750404a64dc96d27c020f6e6da686a4f4"
 }

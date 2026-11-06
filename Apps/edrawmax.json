@@ -8,7 +8,6 @@
   "homepage": "https://www.edrawsoft.com/",
   "homebrew_cask": "wondershare-edrawmax",
   "fileName": "edraw-max_full5380.zip",
-  "sha": "1171c6350a201de0ee0daedbb6c5106d5afb34b641b401f042dc475673a2da7f",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:10:20Z",
     "qa_result": "Installation successful and verified",
@@ -21,5 +20,6 @@
   },
   "category": "Design",
   "publisher": "EdrawSoft",
-  "previous_version": "14.5.2"
+  "previous_version": "14.5.2",
+  "sha": "1171c6350a201de0ee0daedbb6c5106d5afb34b641b401f042dc475673a2da7f"
 }

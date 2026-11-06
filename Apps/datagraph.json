@@ -8,8 +8,8 @@
   "homepage": "https://www.visualdatatools.com/DataGraph/",
   "homebrew_cask": "datagraph",
   "fileName": "DataGraph.dmg",
-  "sha": "780e900a245673570e191aa2f84d7ad860c83bb61adfd79de2a6d62826f8ac1f",
   "category": "Utilities",
   "publisher": "Visual Data Tools",
-  "previous_version": "5.5"
+  "previous_version": "5.5",
+  "sha": "780e900a245673570e191aa2f84d7ad860c83bb61adfd79de2a6d62826f8ac1f"
 }

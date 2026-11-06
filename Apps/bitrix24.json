@@ -8,8 +8,8 @@
   "homepage": "https://www.bitrix24.com/apps/mobile-and-desktop-apps.php#desktop_app",
   "homebrew_cask": "bitrix24",
   "fileName": "bitrix24_desktop_arm.dmg",
-  "sha": "425ddb64f1bbe517bf8d2e35f4787e380e99a6dd21d657156d09df659ab2b6eb",
   "category": "Productivity",
   "publisher": "Bitrix24",
-  "previous_version": "24.0.37.92"
+  "previous_version": "24.0.37.92",
+  "sha": "425ddb64f1bbe517bf8d2e35f4787e380e99a6dd21d657156d09df659ab2b6eb"
 }

@@ -8,8 +8,8 @@
   "homepage": "https://www.box.com/resources/downloads",
   "homebrew_cask": "box-tools",
   "fileName": "BoxToolsInstaller.dmg",
-  "sha": "7bb419fe65b27bce9dec60d2803f82b470cb0a9fe87621700dc760effab1a8a7",
   "category": "Productivity",
   "publisher": "Box, Inc.",
-  "previous_version": "4.32"
+  "previous_version": "4.32",
+  "sha": "7bb419fe65b27bce9dec60d2803f82b470cb0a9fe87621700dc760effab1a8a7"
 }

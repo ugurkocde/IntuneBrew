@@ -8,8 +8,8 @@
   "homepage": "https://www.viber.com/",
   "homebrew_cask": "viber",
   "fileName": "Viber.dmg",
-  "sha": "f85785bce4a094bae83ad744c1276d3b1e3b363e2239b31ca9db17dd487364b6",
   "category": "Communication",
   "publisher": "Viber Media, Inc.",
-  "previous_version": "1.0.0.110"
+  "previous_version": "1.0.0.110",
+  "sha": "f85785bce4a094bae83ad744c1276d3b1e3b363e2239b31ca9db17dd487364b6"
 }

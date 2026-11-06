@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "f72048c6764e98aabdcbc484de99668fc04057baa0f8a1c51c05aecf1ec01351",
   "changelog": "https://mountainduck.io/changelog/",
-  "previous_version": "5.3.2",
+  "previous_version": "5.4.0",
   "category": "Utilities",
   "publisher": "iterate GmbH",
   "homebrew_cask": "mountain-duck"

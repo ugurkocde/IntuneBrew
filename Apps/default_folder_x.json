@@ -8,8 +8,8 @@
   "homepage": "https://www.stclairsoft.com/DefaultFolderX/",
   "homebrew_cask": "default-folder-x",
   "fileName": "DefaultFolderX-6.3.3.dmg",
-  "sha": "2108e5e4c4614a15e807260c834633c0d003ac47f5ab64ebf3ee8223bf179f0d",
   "category": "Utilities",
   "publisher": "St. Clair Software",
-  "previous_version": "6.3.3"
+  "previous_version": "6.3.3",
+  "sha": "2108e5e4c4614a15e807260c834633c0d003ac47f5ab64ebf3ee8223bf179f0d"
 }
