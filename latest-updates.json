@@ -1,68 +1,173 @@
 {
-  "lastChecked": "2026-11-05T20:14:43.152977Z",
+  "lastChecked": "2026-11-06T01:00:30.365224Z",
   "updates": [
     {
-      "appName": "bitrix24",
-      "previousVersion": "23.0.32.91",
-      "newVersion": "24.0.37.92",
+      "appName": "arq",
+      "previousVersion": "7.50",
+      "newVersion": "7.51",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bitrix24.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/arq.png"
     },
     {
-      "appName": "jetbrains phpstorm",
-      "previousVersion": "2026.2.4",
-      "newVersion": "2026.3",
+      "appName": "bambu studio",
+      "previousVersion": "02.08.02.61",
+      "newVersion": "02.09.01.70",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/jetbrains_phpstorm.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bambu_studio.png"
     },
     {
-      "appName": "lens",
-      "previousVersion": "2026.10.121159",
-      "newVersion": "2026.10.261408-latest",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/lens.png"
+      "appName": "bitwarden",
+      "previousVersion": "2026.10.3",
+      "newVersion": "2026.10.4",
+      "changelog": "https://github.com/bitwarden/clients/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bitwarden.png"
     },
     {
-      "appName": "pycharm",
-      "previousVersion": "2026.2.4",
-      "newVersion": "2026.3",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/pycharm.png"
+      "appName": "chatgpt",
+      "previousVersion": "26.1029.70936",
+      "newVersion": "26.1103.31037",
+      "changelog": "https://help.openai.com/en/articles/9703738-macos-app-release-notes",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/chatgpt.png"
     },
     {
-      "appName": "retcon",
-      "previousVersion": "1.6.3",
-      "newVersion": "1.6.4",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/retcon.png"
+      "appName": "claude",
+      "previousVersion": "4.16336.0",
+      "newVersion": "4.23118.0",
+      "changelog": "https://docs.anthropic.com/en/release-notes/claude-apps",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/claude.png"
     },
     {
-      "appName": "signal",
-      "previousVersion": "8.33.0",
-      "newVersion": "8.34.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/signal.png"
+      "appName": "cyberduck",
+      "previousVersion": "9.5.4",
+      "newVersion": "9.6.0",
+      "changelog": "https://cyberduck.io/changelog/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/cyberduck.png"
     },
     {
-      "appName": "silhouette studio",
-      "previousVersion": "5.0.539.001",
-      "newVersion": "5.0.556.001",
+      "appName": "dia",
+      "previousVersion": "1.55.1",
+      "newVersion": "1.56.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/silhouette_studio.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dia.png"
     },
     {
-      "appName": "superwhisper",
-      "previousVersion": "3.1.0",
-      "newVersion": "3.2.0",
+      "appName": "dialpad",
+      "previousVersion": "2609.4.0",
+      "newVersion": "2609.5.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/superwhisper.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dialpad.png"
     },
     {
-      "appName": "telegram for macos",
-      "previousVersion": "13.1.0",
-      "newVersion": "13.2.0",
-      "changelog": "https://macos.telegram.org/changelog",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/telegram_for_macos.png"
+      "appName": "fastscripts",
+      "previousVersion": "3.3.8",
+      "newVersion": "3.3.9",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/fastscripts.png"
+    },
+    {
+      "appName": "granola",
+      "previousVersion": "7.726.2",
+      "newVersion": "7.749.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/granola.png"
+    },
+    {
+      "appName": "logitech g hub",
+      "previousVersion": "2026.7.992920",
+      "newVersion": "2026.7.1011216",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/logitech_g_hub.png"
+    },
+    {
+      "appName": "loom",
+      "previousVersion": "0.383.1",
+      "newVersion": "0.384.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/loom.png"
+    },
+    {
+      "appName": "microsoft edge",
+      "previousVersion": "156.0.4314.58",
+      "newVersion": "157.0.4341.42",
+      "changelog": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_edge.png"
+    },
+    {
+      "appName": "microsoft visual studio code",
+      "previousVersion": "1.145.0",
+      "newVersion": "1.145.1",
+      "changelog": "https://code.visualstudio.com/updates/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_visual_studio_code.png"
+    },
+    {
+      "appName": "mountain duck",
+      "previousVersion": "5.3.2",
+      "newVersion": "5.4.0",
+      "changelog": "https://mountainduck.io/changelog/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/mountain_duck.png"
+    },
+    {
+      "appName": "multitouch",
+      "previousVersion": "2.0.3",
+      "newVersion": "2.0.4",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/multitouch.png"
+    },
+    {
+      "appName": "notion",
+      "previousVersion": "7.42.1",
+      "newVersion": "7.42.3",
+      "changelog": "https://www.notion.so/desktop-release-notes",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/notion.png"
+    },
+    {
+      "appName": "okta advanced server access",
+      "previousVersion": "1.117.0",
+      "newVersion": "1.117.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/okta_advanced_server_access.png"
+    },
+    {
+      "appName": "polymail",
+      "previousVersion": "2.4.3006",
+      "newVersion": "2.4.3007",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/polymail.png"
+    },
+    {
+      "appName": "positron",
+      "previousVersion": "2026.10.2-3",
+      "newVersion": "2026.11.0-308",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/positron.png"
+    },
+    {
+      "appName": "rectangle pro",
+      "previousVersion": "3.98",
+      "newVersion": "3.99",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rectangle_pro.png"
+    },
+    {
+      "appName": "recut",
+      "previousVersion": "4.5.4",
+      "newVersion": "4.5.5",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/recut.png"
+    },
+    {
+      "appName": "sketchup",
+      "previousVersion": "2027.0.267.174",
+      "newVersion": "2027.0.277.186",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sketchup.png"
+    },
+    {
+      "appName": "vellum",
+      "previousVersion": "4.2",
+      "newVersion": "4.2.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/vellum.png"
     }
   ]
 }

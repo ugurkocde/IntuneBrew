@@ -1,14 +1,14 @@
 {
   "name": "Polymail",
   "description": "Email productivity application",
-  "version": "2.4.3006",
+  "version": "2.4.3007",
   "url": "https://builds.polymail.io/macos-arm/current",
   "vendor_url": "https://builds.polymail.io/macos-arm/current",
   "bundleId": "io.polymail.osx",
   "homepage": "https://polymail.io/",
   "homebrew_cask": "polymail",
-  "fileName": "Polymail-2.4.3006.dmg",
-  "sha": "620a1a5b0ed5923b86c7be1541df1566242a26c411eaf426b9cfcfa7ab46c539",
+  "fileName": "Polymail-2.4.3007.dmg",
+  "sha": "3765039b9a24547ad570d263030144fcf41f4cc6dfe75e183b98b1204d66fb42",
   "category": "Productivity",
   "publisher": "Polymail, Inc.",
   "previous_version": "2.4.3006"
