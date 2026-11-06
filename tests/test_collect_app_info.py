@@ -240,6 +240,10 @@ def run_collector(work_dir, cask_urls, session=None, app_urls=None):
             stack.enter_context(
                 patch.object(collect_app_info, "read_dmg_bundle_version", Mock(return_value=None))
             )
+            stack.enter_context(
+                patch.object(collect_app_info, "inspect_dmg_artifact", Mock(
+                    return_value=collect_app_info.InspectionRefusal("DOWNLOAD_FAILED", False)))
+            )
             stack.enter_context(patch.object(collect_app_info, "update_readme_apps", Mock()))
             stack.enter_context(
                 patch.object(collect_app_info, "update_readme_with_latest_changes", Mock())

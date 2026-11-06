@@ -59,6 +59,17 @@ class PublicationTests(unittest.TestCase):
         Path('packaging-failed-apps.txt').write_text('broken\n')
         publisher.publish()
         self.assertEqual(json.loads(Path('Apps/broken.json').read_text())['version'], '1')
+    def test_version_evidence_and_exact_text_refresh_do_not_offer_an_update(self):
+        self.write('healthy', '1', sha='c' * 64, url='https://example.invalid/refreshed.dmg')
+        Path('collection-report.json').write_text(json.dumps({
+            'failures': [], 'collisions': [],
+            'versionEvidence': [{'cask': 'healthy', 'action': 'REFRESH',
+                                 'relation': 'EXACT', 'observedShort': '1',
+                                 'artifactSha256': 'c' * 64, 'verified': True}]}))
+        state, feed = publisher.publish()
+        self.assertEqual(state['status'], 'healthy')
+        self.assertEqual(feed['updates'], [])
+        self.assertEqual(json.loads(Path('Apps/healthy.json').read_text())['sha'], 'c' * 64)
     def test_invalid_new_package_is_omitted(self):
         Path('README.md').write_text('Apps_Available-4-blue\n')
         self.write('new', '2', type='app', url='https://vendor.test/app.zip')
