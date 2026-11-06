@@ -22,9 +22,14 @@ $tokens = $null; $errors = $null
 $ast = [System.Management.Automation.Language.Parser]::ParseFile($sourcePath, [ref]$tokens, [ref]$errors)
 if ($errors.Count) { throw ($errors | Out-String) }
 if ('DryRun' -notin $ast.ParamBlock.Parameters.Name.VariablePath.UserPath) { throw 'DryRun parameter is missing.' }
-$functions = foreach ($name in @('Compare-VersionSegments', 'Test-NewerVersion')) {
+$requiredFunctions = @('Compare-VersionSegments', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord', 'Test-NewerVersion')
+$functions = foreach ($name in $requiredFunctions) {
     $definition = $ast.Find({ param($node) $node -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $node.Name -eq $name }, $true)
     if (-not $definition) { throw "Required function not found: $name" }
+    foreach ($command in $definition.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] }, $true)) {
+        $dependency = $command.GetCommandName()
+        if ($dependency -in @('ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord') -and $dependency -notin $requiredFunctions) { throw "Unextracted dependency: $dependency" }
+    }
     $definition.Extent.Text
 }
 $guard = $ast.EndBlock.Statements | Where-Object { $_.Extent.Text.StartsWith('if ($DryRun -and') } | Select-Object -First 1

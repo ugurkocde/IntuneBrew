@@ -2210,7 +2210,7 @@ function Get-IntuneApp {
             $response = Get-IntuneAppCollection -Filter $intuneFilter
             if ($response.value.Count -gt 0) {
                 # Find the latest version among potentially multiple entries
-                $latestAppEntry = $response.value | Sort-Object -Property @{Expression = { Convert-VersionToSortable $_.primaryBundleVersion } } -Descending | Select-Object -First 1
+                $latestAppEntry = Select-LatestAppRecord $response.value
                 
                 $intuneVersion = $latestAppEntry.primaryBundleVersion
                 $intuneAppId = $latestAppEntry.id # Get the ID of the latest version
@@ -2328,6 +2328,64 @@ function Compare-VersionSegments {
     return 0
 }
 
+# Parse only plain numeric releases and optional Apple bundle builds.
+function ConvertTo-NumericBundleVersion {
+    param([string]$Version)
+
+    $match = [regex]::Match($Version, '^([0-9]+(?:\.[0-9]+)+)(?:\+([0-9]+))?\z')
+    if (-not $match.Success) { return $null }
+    # Windows PowerShell may not have loaded the built-in numeric assembly yet.
+    if (-not ('System.Numerics.BigInteger' -as [type])) {
+        Add-Type -AssemblyName 'System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' -ErrorAction Stop
+    }
+    $release = [System.Numerics.BigInteger[]]@(
+        foreach ($part in ($match.Groups[1].Value -split '\.')) {
+            [System.Numerics.BigInteger]::Parse($part, [Globalization.NumberStyles]::None, [Globalization.CultureInfo]::InvariantCulture)
+        }
+    )
+    $build = [System.Numerics.BigInteger]::Zero
+    if ($match.Groups[2].Success) {
+        $build = [System.Numerics.BigInteger]::Parse($match.Groups[2].Value, [Globalization.NumberStyles]::None, [Globalization.CultureInfo]::InvariantCulture)
+    }
+    return [pscustomobject]@{ Release = $release; Build = $build; HasBuild = $match.Groups[2].Success }
+}
+
+# Both arguments are parsed by ConvertTo-NumericBundleVersion; policy opt-outs stay in the updater.
+function Compare-NumericBundleVersion {
+    param($Left, $Right)
+
+    for ($i = 0; $i -lt [Math]::Max($Left.Release.Count, $Right.Release.Count); $i++) {
+        $a = if ($i -lt $Left.Release.Count) { $Left.Release[$i] } else { [System.Numerics.BigInteger]::Zero }
+        $b = if ($i -lt $Right.Release.Count) { $Right.Release[$i] } else { [System.Numerics.BigInteger]::Zero }
+        $comparison = $a.CompareTo($b)
+        if ($comparison -ne 0) { return $comparison }
+    }
+    return $Left.Build.CompareTo($Right.Build)
+}
+
+# Keep other version formats on the existing lookup order. Numeric +N groups use the updater's exact order.
+function Select-LatestAppRecord {
+    param([object[]]$Apps)
+
+    if ($null -eq $Apps -or $Apps.Count -eq 0) { return $null }
+    $versions = [Collections.Generic.List[object]]::new()
+    $hasBuild = $false
+    foreach ($app in $Apps) {
+        $version = ConvertTo-NumericBundleVersion $app.primaryBundleVersion
+        if ($null -eq $version) { break }
+        $versions.Add($version)
+        $hasBuild = $hasBuild -or $version.HasBuild
+    }
+    if ($versions.Count -eq $Apps.Count -and $hasBuild) {
+        $best = 0
+        for ($i = 1; $i -lt $Apps.Count; $i++) {
+            if ((Compare-NumericBundleVersion $versions[$i] $versions[$best]) -gt 0) { $best = $i }
+        }
+        return $Apps[$best]
+    }
+    return ($Apps | Sort-Object -Property @{Expression = { Convert-VersionToSortable $_.primaryBundleVersion } } -Descending | Select-Object -First 1)
+}
+
 # Converts a version string into a zero-padded form so string sorting matches
 # numeric version ordering regardless of segment count (Issue #168)
 function Convert-VersionToSortable {
@@ -2358,6 +2416,14 @@ function Test-NewerVersion($githubVersion, $intuneVersion) {
     }
 
     try {
+        # Use one strict parser for the gate and exact release-then-build comparison.
+        $ghBundle = ConvertTo-NumericBundleVersion $githubVersion
+        $itBundle = ConvertTo-NumericBundleVersion $intuneVersion
+        if ($null -ne $ghBundle -and $null -ne $itBundle -and
+            ($ghBundle.HasBuild -or $itBundle.HasBuild)) {
+            return (Compare-NumericBundleVersion $ghBundle $itBundle) -gt 0
+        }
+
         # Remove hyphens and everything after them for comparison
         $ghVersion = $githubVersion -replace '-.*$'
         $itVersion = $intuneVersion -replace '-.*$'
