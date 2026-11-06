@@ -1,14 +1,14 @@
 {
   "name": "Numi",
   "description": "Calculator and converter application",
-  "version": "3.32.721",
-  "url": "https://s3.numi.app/updates/3.32.721/Numi.dmg",
-  "vendor_url": "https://s3.numi.app/updates/3.32.721/Numi.dmg",
+  "version": "3.35",
+  "url": "https://cdn.numi.app/updates/3.35.743/Numi.dmg",
+  "vendor_url": "https://cdn.numi.app/updates/3.35.743/Numi.dmg",
   "bundleId": "com.dmitrynikolaev.numi",
   "homepage": "https://numi.app/",
   "homebrew_cask": "numi",
   "fileName": "Numi.dmg",
-  "sha": "21b5f89ecacfab039295874d24b79a450c080d526bcdf31716a46a8b11dddb30",
+  "sha": "f6fb2d60ae58cfce066ec409c24d69a4fe13dca1faa61ed0e147e0631f74c264",
   "category": "Productivity",
   "publisher": "Numi",
   "previous_version": "3.32.721"

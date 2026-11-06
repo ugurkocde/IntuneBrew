@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1155-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -639,33 +639,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-11-06T07:31:32.166064Z*
+*Last checked: 2026-11-06T09:18:33.117859Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| acorn | 8.7.1 | 8.7.2 |
-| amethyst | 0.24.3 | 0.25.0 |
-| aws client vpn | 6.2.1 | 6.2.2 |
-| calibre | 9.17.0 | 9.18.0 |
-| ecamm live | 4.6.1 | 4.6.2 |
-| fathom | 3.12.0 | 3.13.0 |
-| github copilot cli | 1.0.105 | 1.0.106 |
-| grammarly desktop | 1.202.0.0 | 1.207.0 |
-| jasp | 0.98.8.0 | 0.99 |
-| lm studio | 0.4.26 | 0.4.28+2 |
-| melodics | 5.0.1789 | 5.0.1811 |
-| ollama | 0.40.14 | 0.40.15 |
-| pitch | 2.150.0 | 2.152.0-stable.3 |
-| propresenter | 21.4 | 22 |
-| rancher desktop | 1.24.0 | 1.25.0 |
-| readest | 0.12.16 | 0.12.20 |
-| tabtab | 2.2.4 | 2.2.5 |
-| tunnelblick | 10.0.1 | 10.0.2 (build 6590) |
-| warp | 0.2026.11.03.17.08.00 | 0.2026.11.04.08.17.01 |
+| musescore | 4.7.5.260831071 | 4.7.6 |
+| numi | 3.32.721 | 3.35 |
+| opera | 138.0.6044.24 | 139.0 |
+| opera gx | 137.0.6036.65 | 139.0 |
+| shapr3d | 26.180.0.11926 | 26.202.0 |
 
-26 app updates could not be published. See [catalog sync status](catalog-sync.json).
+21 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
@@ -1344,7 +1331,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/multiviewer.png' width='32' height='32'> MultiViewer | 2.14.0 |
 | <img src='Logos/mural.png' width='32' height='32'> MURAL | 3.0.4 |
 | <img src='Logos/museeks.png' width='32' height='32'> Museeks | 0.23.4 |
-| <img src='Logos/musescore.png' width='32' height='32'> MuseScore | 4.7.5.260831071 |
+| <img src='Logos/musescore.png' width='32' height='32'> MuseScore | 4.7.6 |
 | <img src='Logos/music_decoy.png' width='32' height='32'> Music Decoy | 1.3 |
 | <img src='Logos/mx_power_gadget.png' width='32' height='32'> Mx Power Gadget | 1.6.4 |
 | <img src='Logos/mysql_workbench.png' width='32' height='32'> MySQL Workbench | 8.0.47 |
@@ -1382,7 +1369,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/novabench.png' width='32' height='32'> Novabench | 6.2.1 |
 | <img src='Logos/nucleo.png' width='32' height='32'> Nucleo | 4.2.0 |
 | <img src='Logos/nudge.png' width='32' height='32'> Nudge | 2.1.4.81863 |
-| <img src='Logos/numi.png' width='32' height='32'> Numi | 3.32.721 |
+| <img src='Logos/numi.png' width='32' height='32'> Numi | 3.35 |
 | <img src='Logos/nvidia_geforce_now.png' width='32' height='32'> NVIDIA GeForce NOW | 2.0.90.126 |
 | <img src='Logos/obs.png' width='32' height='32'> OBS | 33.0.1 |
 | <img src='Logos/obsidian.png' width='32' height='32'> Obsidian | 1.15.0 |
@@ -1417,8 +1404,8 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/openvpn_connect_client.png' width='32' height='32'> OpenVPN Connect client | 3.9.1 |
 | <img src='Logos/openwebstart.png' width='32' height='32'> OpenWebStart | 1.14.0 |
 | <img src='Logos/openwork.png' width='32' height='32'> OpenWork | 0.18.65 |
-| <img src='Logos/opera.png' width='32' height='32'> Opera | 138.0.6044.24 |
-| <img src='Logos/opera_gx.png' width='32' height='32'> Opera GX | 137.0.6036.65 |
+| <img src='Logos/opera.png' width='32' height='32'> Opera | 139.0 |
+| <img src='Logos/opera_gx.png' width='32' height='32'> Opera GX | 139.0 |
 | <img src='Logos/optimus_player.png' width='32' height='32'> Optimus Player | 1.5 |
 | <img src='Logos/oracle_virtualbox.png' width='32' height='32'> Oracle VirtualBox | 7.2.22 |
 | <img src='Logos/orbstack.png' width='32' height='32'> OrbStack | 2.2.5 |
@@ -1595,7 +1582,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/session_manager_plugin_for_the_aws_cli.png' width='32' height='32'> Session Manager Plugin for the AWS CLI | 1.2.896.0 |
 | <img src='Logos/setapp.png' width='32' height='32'> Setapp | 3.58.0 |
 | <img src='Logos/sf_symbols.png' width='32' height='32'> SF Symbols | 27.2 |
-| <img src='Logos/shapr3d.png' width='32' height='32'> Shapr3D | 26.180.0.11926 |
+| <img src='Logos/shapr3d.png' width='32' height='32'> Shapr3D | 26.202.0 |
 | <img src='Logos/sharefile.png' width='32' height='32'> ShareFile | 26.10.05 |
 | <img src='Logos/shift.png' width='32' height='32'> Shift | 9.6.9.1283 |
 | <img src='Logos/shifty.png' width='32' height='32'> Shifty | 1.2 |

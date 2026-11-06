@@ -1,138 +1,40 @@
 {
-  "lastChecked": "2026-11-06T07:31:32.166064Z",
+  "lastChecked": "2026-11-06T09:18:33.117859Z",
   "updates": [
     {
-      "appName": "acorn",
-      "previousVersion": "8.7.1",
-      "newVersion": "8.7.2",
+      "appName": "musescore",
+      "previousVersion": "4.7.5.260831071",
+      "newVersion": "4.7.6",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/acorn.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/musescore.png"
     },
     {
-      "appName": "amethyst",
-      "previousVersion": "0.24.3",
-      "newVersion": "0.25.0",
+      "appName": "numi",
+      "previousVersion": "3.32.721",
+      "newVersion": "3.35",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/amethyst.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/numi.png"
     },
     {
-      "appName": "aws client vpn",
-      "previousVersion": "6.2.1",
-      "newVersion": "6.2.2",
+      "appName": "opera",
+      "previousVersion": "138.0.6044.24",
+      "newVersion": "139.0",
+      "changelog": "https://blogs.opera.com/desktop/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/opera.png"
+    },
+    {
+      "appName": "opera gx",
+      "previousVersion": "137.0.6036.65",
+      "newVersion": "139.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/aws_client_vpn.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/opera_gx.png"
     },
     {
-      "appName": "calibre",
-      "previousVersion": "9.17.0",
-      "newVersion": "9.18.0",
-      "changelog": "https://calibre-ebook.com/whats-new",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/calibre.png"
-    },
-    {
-      "appName": "ecamm live",
-      "previousVersion": "4.6.1",
-      "newVersion": "4.6.2",
+      "appName": "shapr3d",
+      "previousVersion": "26.180.0.11926",
+      "newVersion": "26.202.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/ecamm_live.png"
-    },
-    {
-      "appName": "fathom",
-      "previousVersion": "3.12.0",
-      "newVersion": "3.13.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/fathom.png"
-    },
-    {
-      "appName": "github copilot cli",
-      "previousVersion": "1.0.105",
-      "newVersion": "1.0.106",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/github_copilot_cli.png"
-    },
-    {
-      "appName": "grammarly desktop",
-      "previousVersion": "1.202.0.0",
-      "newVersion": "1.207.0",
-      "changelog": "https://www.grammarly.com/desktop/release-notes",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/grammarly_desktop.png"
-    },
-    {
-      "appName": "jasp",
-      "previousVersion": "0.98.8.0",
-      "newVersion": "0.99",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/jasp.png"
-    },
-    {
-      "appName": "lm studio",
-      "previousVersion": "0.4.26",
-      "newVersion": "0.4.28+2",
-      "changelog": "https://github.com/lmstudio-ai/Release/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/lm_studio.png"
-    },
-    {
-      "appName": "melodics",
-      "previousVersion": "5.0.1789",
-      "newVersion": "5.0.1811",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/melodics.png"
-    },
-    {
-      "appName": "ollama",
-      "previousVersion": "0.40.14",
-      "newVersion": "0.40.15",
-      "changelog": "https://github.com/ollama/ollama/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/ollama.png"
-    },
-    {
-      "appName": "pitch",
-      "previousVersion": "2.150.0",
-      "newVersion": "2.152.0-stable.3",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/pitch.png"
-    },
-    {
-      "appName": "propresenter",
-      "previousVersion": "21.4",
-      "newVersion": "22",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/propresenter.png"
-    },
-    {
-      "appName": "rancher desktop",
-      "previousVersion": "1.24.0",
-      "newVersion": "1.25.0",
-      "changelog": "https://github.com/rancher-sandbox/rancher-desktop/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rancher_desktop.png"
-    },
-    {
-      "appName": "readest",
-      "previousVersion": "0.12.16",
-      "newVersion": "0.12.20",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/readest.png"
-    },
-    {
-      "appName": "tabtab",
-      "previousVersion": "2.2.4",
-      "newVersion": "2.2.5",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tabtab.png"
-    },
-    {
-      "appName": "tunnelblick",
-      "previousVersion": "10.0.1",
-      "newVersion": "10.0.2 (build 6590)",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tunnelblick.png"
-    },
-    {
-      "appName": "warp",
-      "previousVersion": "0.2026.11.03.17.08.00",
-      "newVersion": "0.2026.11.04.08.17.01",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/warp.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/shapr3d.png"
     }
   ]
 }

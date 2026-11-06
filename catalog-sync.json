@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-06T07:31:32.166064Z",
-  "lastFullSyncAt": "2026-11-06T07:31:32.166064Z",
+  "lastPublishedAt": "2026-11-06T09:18:33.117859Z",
+  "lastFullSyncAt": "2026-11-06T09:18:33.117859Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -66,31 +66,11 @@
       "stage": "collection"
     },
     {
-      "app": "musescore",
-      "stage": "collection"
-    },
-    {
-      "app": "numi",
-      "stage": "collection"
-    },
-    {
-      "app": "opera",
-      "stage": "collection"
-    },
-    {
-      "app": "opera_gx",
-      "stage": "collection"
-    },
-    {
       "app": "parallels_desktop",
       "stage": "collection"
     },
     {
       "app": "reaper",
-      "stage": "collection"
-    },
-    {
-      "app": "shapr3d",
       "stage": "collection"
     },
     {
@@ -111,5 +91,5 @@
     }
   ],
   "appCount": 1155,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42177977200"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42189920496"
 }
