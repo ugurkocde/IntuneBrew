@@ -29,7 +29,7 @@
     "short": "27.1.0",
     "build": "58756",
     "prior": "27.0.3-58680",
-    "relation": null
+    "relation": "SOURCE_HYPHEN_BUILD"
   },
   {
     "case": "xmind",
@@ -101,7 +101,7 @@
     "short": "8.38.4",
     "build": "8.38.4.1",
     "prior": "8.37.2-1",
-    "relation": null
+    "relation": "SOURCE_HYPHEN_BUILD"
   },
   {
     "case": "musescore",

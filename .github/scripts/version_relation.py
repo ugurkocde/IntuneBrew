@@ -9,6 +9,11 @@ INSPECTOR_VERSION = "dmg-inspector/1"
 CATALOG_CONSUMER_CAPABILITIES = frozenset({"decorated_text", "plus_build"})
 _CORE = r"[0-9]+(?:\.[0-9]+)*"
 _CANON = r"(?:0|[1-9][0-9]*)"
+_BOUNDED_COMPONENT = r"(?:0|[1-9][0-9]{0,8})"
+_BOUNDED_TRIPLET = _BOUNDED_COMPONENT + r"(?:\." + _BOUNDED_COMPONENT + r"){2}"
+_PRERELEASE_CASK_PARTS = frozenset({"alpha", "beta", "dev", "developer", "canary", "nightly",
+                                    "preview", "rc", "unstable", "insider", "insiders",
+                                    "prerelease", "testing"})
 
 
 @dataclass(frozen=True)
@@ -44,6 +49,7 @@ class ReconcileInput:
     prior: PriorEntry = None
     observation: object = None
     consumer_caps: frozenset = CATALOG_CONSUMER_CAPABILITIES
+    source_cask: str = None
 
 
 @dataclass(frozen=True)
@@ -117,6 +123,26 @@ def build_relationship(raw, short, build):
     return None
 
 
+def hyphen_build_relationship(raw, short, build, cask):
+    """Bind a stable cask's triplet-build release to exact same-file bundle text.
+
+    The selected stable Homebrew cask is the accepted channel authority. Numeric
+    suffixes alone cannot exclude prereleases: 1.2.3-1 may pass this rule and a
+    later 1.2.3 final release would refresh, rather than offer another update.
+    Explicit prerelease/versioned casks do not gain that channel assumption.
+    """
+    if (type(raw) is not str or type(short) is not str or type(build) is not str
+            or type(cask) is not str or len(raw) > 256 or len(short) > 64
+            or len(build) > 64 or len(cask) > 128 or not build.isprintable()
+            or not re.fullmatch(r"[a-z0-9]+(?:-[a-z0-9]+)*", cask)
+            or _PRERELEASE_CASK_PARTS.intersection(cask.split("-"))):
+        return None
+    match = re.fullmatch(r"(" + _BOUNDED_TRIPLET + r")-([1-9][0-9]{0,17})", raw)
+    if match and short == match[1] and build in {match[2], short + "." + match[2]}:
+        return "SOURCE_HYPHEN_BUILD"
+    return None
+
+
 def parse_detection(value):
     if not isinstance(value, str) or len(value) > 256:
         return None
@@ -146,7 +172,9 @@ def reconcile(i):
         relation = "EXACT"
     else:
         relation = (relationship(i.source_release, obs.short_version)
-                    or build_relationship(i.source_release, obs.short_version, obs.bundle_version))
+                    or build_relationship(i.source_release, obs.short_version, obs.bundle_version)
+                    or hyphen_build_relationship(i.source_release, obs.short_version,
+                                                 obs.bundle_version, i.source_cask))
     if relation is None:
         return Decision("HOLD", reason="RELATION_UNPROVEN")
     required = {"RENDER_PLUS": "plus_build", "RENDER_PAREN_BUILD": "decorated_text",
@@ -159,6 +187,13 @@ def reconcile(i):
             action = "NOOP" if digest == i.prior.sha and i.url == i.prior.url else "REFRESH"
             return Decision(action, short, digest, relation, "EXACT_TEXT_UNCHANGED", True)
         new, old = parse_detection(short), parse_detection(i.prior.version)
+        if relation == "SOURCE_HYPHEN_BUILD" and old is None and type(i.prior.version) is str:
+            # Compare only the release core, whose strict advance wins under
+            # both prerelease and build interpretations of the old suffix.
+            prior = re.fullmatch(r"(" + _BOUNDED_TRIPLET + r")-(?:0|[1-9][0-9]{0,17})",
+                                 i.prior.version)
+            if prior:
+                old = tuple(int(part) for part in prior[1].split("."))
         if new is None or old is None:
             if relation not in {"EXACT", "BRANCH_EXACT"}:
                 return Decision("HOLD", relation=relation, reason="PRIOR_ORDER_UNKNOWN")

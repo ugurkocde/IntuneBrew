@@ -1662,7 +1662,7 @@ def reconcile_vendor_dmg(app_info, prior, raw_cask, cask):
     values = dict(source_release=raw_cask["version"], legacy_version=app_info["version"],
                   declared_sha256=declared, url=app_info["url"], bundle_id=app_info["bundleId"],
                   prior=PriorEntry(prior.get("version"), prior.get("sha"), prior.get("url")) if prior else None,
-                  consumer_caps=CATALOG_CONSUMER_CAPABILITIES)
+                  consumer_caps=CATALOG_CONSUMER_CAPABILITIES, source_cask=cask)
     decision = plan(ReconcileInput(**values))
     observation = None
     if decision.action == "INSPECT":

@@ -69,5 +69,27 @@ foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
         if ((& $comparator $case[0] $case[1]) -ne $case[2]) { throw "Catalog format changed in $file`: $case" }
     }
 
+    # A hyphen-to-short catalog migration only admits a strictly newer core.
+    foreach ($case in @(@('27.1.0','27.0.3-58680'), @('8.38.4','8.37.2-1'))) {
+        foreach ($apps in @(
+            @(@{ id='prior'; primaryBundleVersion=$case[1] }, @{ id='new'; primaryBundleVersion=$case[0] }),
+            @(@{ id='new'; primaryBundleVersion=$case[0] }, @{ id='prior'; primaryBundleVersion=$case[1] })
+        )) {
+            if ((Select-LatestAppRecord -Apps $apps).id -ne 'new') { throw "Hyphen migration selection changed in $file" }
+        }
+    }
+    # Existing equal-core PS behaviour differs from Website: do not permit
+    # equal-core hyphen migration in the producer on either consumer's behalf.
+    if (-not (& $comparator '27.1.0' '27.1.0-58756')) { throw "Equal-core PS contract changed in $file" }
+    if ($file -eq 'IntuneBrew.ps1') {
+        $function = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq 'Test-CveVersionAffected' }, $true)
+        if ($null -eq $function) { throw 'CVE comparison helper was not extracted' }
+        Invoke-Expression $function.Extent.Text
+        foreach ($case in @(@('27.1.0','27.1.0-58756'), @('8.38.4','8.38.4-1'))) {
+            $range = @{ fixed_version=$case[0] }
+            if ($null -ne (Test-CveVersionAffected $case[1] $range)) { throw 'Hyphen CVE value unexpectedly evaluable' }
+            if ((Test-CveVersionAffected $case[0] $range) -ne $false) { throw 'Plain catalog CVE fixed boundary not evaluable' }
+        }
+    }
 }
 Write-Host 'Release, prerelease, build, and normalized-version comparisons passed.'
