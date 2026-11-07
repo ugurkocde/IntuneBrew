@@ -4,9 +4,9 @@ import re
 
 
 INSPECTOR_VERSION = "dmg-inspector/1"
-# PR377 is distributed at 0d32caa and its fresh live-source checks passed;
-# Website 7027bfa also passed the recorded pair matrix before this producer.
-CATALOG_CONSUMER_CAPABILITIES = frozenset({"decorated_text", "plus_build"})
+# Numeric builds are distributed at 0d32caa; strict hex core ordering is
+# deployed and freshly verified in Website 5ef96c2, with Runbook CVE support.
+CATALOG_CONSUMER_CAPABILITIES = frozenset({"decorated_text", "plus_build", "paren_hex"})
 _CORE = r"[0-9]+(?:\.[0-9]+)*"
 _CANON = r"(?:0|[1-9][0-9]*)"
 _BOUNDED_COMPONENT = r"(?:0|[1-9][0-9]{0,8})"
@@ -143,6 +143,29 @@ def hyphen_build_relationship(raw, short, build, cask):
     return None
 
 
+def _paren_hex_core(value):
+    """Read only the bounded canonical core of a strict uppercase hex annotation."""
+    if type(value) is not str or len(value) > 64:
+        return None
+    core = _BOUNDED_COMPONENT + r"(?:\." + _BOUNDED_COMPONENT + r")+"
+    match = re.fullmatch(r"(" + core + r")\(([0-9A-F]{4})\)", value)
+    if match and re.search(r"[A-F]", match[2]):
+        return tuple(int(part) for part in match[1].split("."))
+    return None
+
+
+def paren_hex_build_relationship(raw, short, build):
+    """Bind every release character to both same-file bundle version fields."""
+    if (type(raw) is not str or type(short) is not str or type(build) is not str
+            or len(raw) > 256 or len(short) > 64 or len(build) > 64 or build != raw):
+        return None
+    core = _BOUNDED_COMPONENT + r"(?:\." + _BOUNDED_COMPONENT + r")+"
+    if (re.fullmatch(core, raw) and _paren_hex_core(short) is not None
+            and re.fullmatch(re.escape(raw) + r"\([0-9A-F]{4}\)", short)):
+        return "SOURCE_PAREN_HEX_BUILD"
+    return None
+
+
 def parse_detection(value):
     if not isinstance(value, str) or len(value) > 256:
         return None
@@ -183,11 +206,12 @@ def reconcile(i):
         relation = (relationship(i.source_release, obs.short_version)
                     or build_relationship(i.source_release, obs.short_version, obs.bundle_version)
                     or hyphen_build_relationship(i.source_release, obs.short_version,
-                                                 obs.bundle_version, i.source_cask))
+                                                 obs.bundle_version, i.source_cask)
+                    or paren_hex_build_relationship(i.source_release, obs.short_version, obs.bundle_version))
     if relation is None:
         return Decision("HOLD", reason="RELATION_UNPROVEN")
     required = {"RENDER_PLUS": "plus_build", "RENDER_PAREN_BUILD": "decorated_text",
-                "RENDER_CHANNEL": "decorated_text"}.get(relation)
+                "RENDER_CHANNEL": "decorated_text", "SOURCE_PAREN_HEX_BUILD": "paren_hex"}.get(relation)
     if required and required not in i.consumer_caps:
         return Decision("HOLD", relation=relation, reason="CONSUMER_CAPABILITY_PENDING")
     short, digest = obs.short_version, obs.artifact_sha256
@@ -196,6 +220,10 @@ def reconcile(i):
             action = "NOOP" if digest == i.prior.sha and i.url == i.prior.url else "REFRESH"
             return Decision(action, short, digest, relation, "EXACT_TEXT_UNCHANGED", True)
         new, old = parse_detection(short), parse_detection(i.prior.version)
+        if relation == "SOURCE_PAREN_HEX_BUILD":
+            new = _paren_hex_core(short)
+            if old is None:
+                old = _paren_hex_core(i.prior.version)
         if relation == "SOURCE_HYPHEN_BUILD" and old is None and type(i.prior.version) is str:
             # Compare only the release core, whose strict advance wins under
             # both prerelease and build interpretations of the old suffix.
