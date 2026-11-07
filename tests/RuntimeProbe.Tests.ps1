@@ -64,17 +64,17 @@ function Get-CveProbeMemorySnapshot {
 }
 function Invoke-CveDataRequest {
     param($Uri)
-    if ($Uri -cne 'https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE/google_chrome.json') { throw 'Unexpected transport route.' }
+    if ($Uri -cne 'https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE-Holds/google_chrome.json') { throw 'Unexpected transport route.' }
     return @{ StatusCode = 200; Content = '{"test":"fixture-only"}' }
 }
 $script:feedReason = 'assessed'; $script:feedRecords = 2; $script:feedCalls = 0
 function Get-RunbookCveAssessment {
     param($JsonUrl, $CurrentVersion, $TargetVersion)
     if ($JsonUrl -cne 'https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/google_chrome.json' -or $CurrentVersion -ne '0.0.0' -or $TargetVersion -ne '1.0.0') { throw 'Unexpected feed request.' }
-    $null = Invoke-CveDataRequest 'https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE/google_chrome.json'
+    $null = Invoke-CveDataRequest 'https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE-Holds/google_chrome.json'
     $script:feedCalls++
     $records = @(); for ($i = 0; $i -lt $script:feedRecords; $i++) { $records += 'fake' }
-    return [pscustomobject]@{ Reason = $script:feedReason; Impact = [pscustomobject]@{ Records = $records } }
+    return [pscustomobject]@{ Reason = $script:feedReason; SourceDigest = ('a' * 64); Impact = [pscustomobject]@{ Records = $records } }
 }
 $report = Get-CveProbeReport $revision $hash
 if ($report.Revision -cne $revision -or $report.RunbookSha256 -cne $hash -or $report.DecoratedIntroducedHoldsPassed -ne 3 -or
@@ -101,11 +101,11 @@ if ($script:CveProbeStage -ne 'feed') { throw 'Empty-record feed did not fail at
 Import-CveProbeFunctions $product
 function Invoke-CveDataRequest {
     param($Uri)
-    if ($Uri -cne 'https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE/google_chrome.json') { throw 'Unexpected real-chain route.' }
-    return @{ StatusCode = 200; Content = '{"vulnerabilities":[{"cve_id":"CVE-2026-12345","severity":"HIGH","affected_version_start":"1","affected_version_start_type":"including"}]}' }
+    if ($Uri -cne 'https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE-Holds/google_chrome.json') { throw 'Unexpected real-chain route.' }
+    return @{ StatusCode = 200; Content = ('{"schema_version":1,"app_key":"google_chrome","source_sha256":"' + ('a' * 64) + '","vulnerabilities":[{"cve_id":"CVE-2026-12345","severity":"HIGH","affected_version_start":"1","affected_version_start_type":"including"}]}') }
 }
 $script:sampleOrdinal = 0
 $chain = Get-CveProbeReport $revision $hash
-if (-not $chain.LiveFeedAssessed -or $chain.VulnerabilityRecords -ne 1 -or $chain.FeedBytes -le 0 -or
+if (-not $chain.LiveFeedAssessed -or $chain.SourceDigest -cne ('a' * 64) -or $chain.FeedFormat -cne 'compact-v1' -or $chain.VulnerabilityRecords -ne 1 -or $chain.FeedBytes -le 0 -or
     -not $chain.MeetsMemoryThreshold -or $chain.DecoratedIntroducedHoldsPassed -ne 3) { throw 'Actual assessment chain or byte instrumentation failed.' }
 Write-Host 'Runtime probe immutable-source, digest, strict UTF-8, helper isolation and actual report controls passed.'

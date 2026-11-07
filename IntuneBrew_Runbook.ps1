@@ -1189,7 +1189,7 @@ function Read-BoundedCveContent {
 # Kept separate so offline tests never need a network or Graph connection.
 function Invoke-CveDataRequest {
     param([string]$Uri)
-    if ($Uri -cnotmatch '^https://raw\.githubusercontent\.com/ugurkocde/IntuneBrew/main/CVE/[a-z0-9][a-z0-9._-]*\.json\z' -or
+    if ($Uri -cnotmatch '^https://raw\.githubusercontent\.com/ugurkocde/IntuneBrew/main/CVE-Holds/[a-z0-9][a-z0-9._-]*\.json\z' -or
         $Uri.Contains('..')) { throw 'Invalid CVE feed URL.' }
     $handler = $null; $client = $null; $deadline = $null; $response = $null; $stream = $null
     try {
@@ -1218,27 +1218,38 @@ function Get-RunbookCveAssessment {
     if ($SecurityHoldLevel -eq 'None') {
         return [pscustomobject]@{ Held = $false; WouldHold = $false; Reason = 'disabled'; Impact = $null }
     }
-    $impact = $null; $reason = 'data-error'; $wouldHold = $true
+    $impact = $null; $reason = 'data-error'; $wouldHold = $true; $sourceDigest = $null
     try {
         if ($JsonUrl -cnotmatch '^https://raw\.githubusercontent\.com/ugurkocde/IntuneBrew/main/Apps/([a-z0-9][a-z0-9._-]*)\.json\z') {
             throw 'Invalid CVE app key.'
         }
         $key = $Matches[1]
         if ($key.Contains('..')) { throw 'Invalid CVE app key.' }
-        $response = Invoke-CveDataRequest ('https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE/' + $key + '.json')
+        $response = Invoke-CveDataRequest ('https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE-Holds/' + $key + '.json')
         if ($response.StatusCode -eq 404) { $reason = 'unavailable'; $wouldHold = $false }
         elseif ($response.StatusCode -eq 200) {
             if ($response.Content -isnot [string] -or [Text.Encoding]::UTF8.GetByteCount($response.Content) -gt 16MB) {
                 throw 'Invalid CVE response body.'
             }
-            $dataset = ConvertTo-CveDataset ($response.Content | ConvertFrom-Json -ErrorAction Stop)
+            $compact = $response.Content | ConvertFrom-Json -ErrorAction Stop
+            if ($null -eq $compact -or $compact -isnot [pscustomobject]) { throw 'Malformed compact CVE dataset.' }
+            $keys = @($compact.PSObject.Properties.Name)
+            if ($keys.Count -ne 4 -or @($keys | Where-Object { $_ -cnotin @('schema_version', 'app_key', 'source_sha256', 'vulnerabilities') }).Count -ne 0 -or
+                ($compact.schema_version -isnot [int] -and $compact.schema_version -isnot [long]) -or $compact.schema_version -ne 1 -or
+                $compact.app_key -isnot [string] -or $compact.app_key -cne $key -or
+                $compact.source_sha256 -isnot [string] -or $compact.source_sha256 -cnotmatch '^[0-9a-f]{64}\z') {
+                throw 'Malformed compact CVE envelope.'
+            }
+            $sourceDigest = $compact.source_sha256
+            $dataset = ConvertTo-CveDataset $compact
+            $compact = $null; $response = $null
             $impact = Get-CveUpdateImpact -CurrentVersion $CurrentVersion -TargetVersion $TargetVersion `
                 -Vulnerabilities @($dataset.vulnerabilities) -HoldLevel $SecurityHoldLevel
             $wouldHold = $impact.Held; $reason = 'assessed'
         }
     }
     catch { $reason = 'data-error'; $wouldHold = $true }
-    return [pscustomobject]@{ Held = ($wouldHold -and -not $IgnoreSecurityHold); WouldHold = $wouldHold; Reason = $reason; Impact = $impact }
+    return [pscustomobject]@{ Held = ($wouldHold -and -not $IgnoreSecurityHold); WouldHold = $wouldHold; Reason = $reason; Impact = $impact; SourceDigest = $sourceDigest }
 }
 
 # Both display-name and bundle-ID discovery paths use this gate and retain the assessed manifest.

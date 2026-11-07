@@ -815,6 +815,66 @@ jobs:
 
               return sorted(cves, key=sort_key)
 
+          def hold_feed_bytes(payload, app_key):
+              """Project saved full-feed bytes without changing evaluator values or record order."""
+              fields = ('cve_id', 'severity', 'is_kev', 'affected_version_start',
+                        'affected_version_start_type', 'affected_version_end',
+                        'affected_version_end_type', 'fixed_version')
+              def checked_object(pairs):
+                  result, seen = {}, set()
+                  for key, value in pairs:
+                      lowered = key.lower()
+                      if (not key or not key.isascii() or lowered in seen or
+                              lowered.startswith('ps') or
+                              (lowered in fields and key not in fields)):
+                          raise ValueError('Ambiguous CVE JSON object key.')
+                      seen.add(lowered)
+                      result[key] = value
+                  return result
+              def invalid_constant(value):
+                  raise ValueError('Non-finite CVE JSON value.')
+              full = json.loads(payload.decode('utf-8'), object_pairs_hook=checked_object,
+                                parse_constant=invalid_constant)
+              if not isinstance(full, dict) or not isinstance(full.get('vulnerabilities'), list):
+                  raise ValueError('Malformed full CVE dataset.')
+              records = [{field: record[field] for field in fields if field in record}
+                         if isinstance(record, dict) else record for record in full['vulnerabilities']]
+              compact = {'schema_version': 1, 'app_key': app_key,
+                         'source_sha256': hashlib.sha256(payload).hexdigest(), 'vulnerabilities': records}
+              return (json.dumps(compact, sort_keys=True, ensure_ascii=True, allow_nan=False,
+                                 separators=(',', ':')) + '\n').encode('utf-8')
+
+
+          def save_hold_feed(app_key):
+              directory = CVE_DIR.parent / 'CVE-Holds'
+              directory.mkdir(exist_ok=True)
+              payload = hold_feed_bytes((CVE_DIR / f'{app_key}.json').read_bytes(), app_key)
+              temporary = None
+              try:
+                  with tempfile.NamedTemporaryFile(mode='wb', dir=directory,
+                                                   prefix=f'.{app_key}.', suffix='.tmp', delete=False) as handle:
+                      temporary = pathlib.Path(handle.name)
+                      handle.write(payload)
+                  os.replace(temporary, directory / f'{app_key}.json')
+              finally:
+                  if temporary is not None:
+                      temporary.unlink(missing_ok=True)
+
+
+          def verify_hold_feed_pairs():
+              """Run before staging and after rebases: skip-ci data commits still need this gate."""
+              directory = CVE_DIR.parent / 'CVE-Holds'
+              full = {path.stem: path for path in CVE_DIR.glob('*.json')}
+              compact = {path.stem: path for path in directory.glob('*.json')}
+              if not full or full.keys() != compact.keys():
+                  raise ValueError('Full and compact CVE file sets differ.')
+              for key, path in full.items():
+                  if not re.fullmatch(r'[a-z0-9][a-z0-9._-]*', key) or '..' in key:
+                      raise ValueError('Invalid CVE app key.')
+                  if compact[key].read_bytes() != hold_feed_bytes(path.read_bytes(), key):
+                      raise ValueError('Compact CVE provenance or content differs.')
+
+
           def save_cve_json(app_key: str, app_name: str, cves: List[Dict]):
               """Save CVEs to JSON file."""
               output = {
@@ -844,6 +904,7 @@ jobs:
                   if temporary is not None:
                       temporary.unlink(missing_ok=True)
 
+              save_hold_feed(app_key)
               print(f"  Saved {len(cves)} CVEs to {file_path}")
 
           # =============================================================================
@@ -1028,17 +1089,21 @@ jobs:
 
 
           if __name__ == '__main__':
-              main()
+              if sys.argv[1:] == ['--verify-hold-pairs']:
+                  verify_hold_feed_pairs()
+              else:
+                  main()
           PYTHON_SCRIPT
 
           timeout --kill-after=30s 52m python -u check_cves.py
 
       - name: Commit and push CVE files
         run: |
-          if [[ -n $(git status --porcelain -- CVE/) ]]; then
+          python check_cves.py --verify-hold-pairs
+          if [[ -n $(git status --porcelain -- CVE/ CVE-Holds/) ]]; then
             git config --global user.name 'GitHub Action'
             git config --global user.email 'action@github.com'
-            git add CVE/
+            git add CVE/ CVE-Holds/
             git commit -m "Update CVE data [skip ci]"
             for attempt in 1 2 3 4 5; do
               if git push; then
@@ -1047,6 +1112,7 @@ jobs:
               fi
               echo "Push rejected (attempt $attempt) - fetching and rebasing on origin/main..."
               git pull --rebase origin main
+              python check_cves.py --verify-hold-pairs
             done
             echo "Push failed after 5 attempts"
             exit 1
