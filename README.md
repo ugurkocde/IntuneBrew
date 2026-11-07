@@ -648,9 +648,10 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| pitch | 2.152.0-stable.3 | 2.152.0-stable.4 |
+| cursorsense | 2.5 | 2.5.1(2F17) |
+| steermouse | 5.8.1 | 5.8.2(095C) |
 
-20 app updates could not be published. See [catalog sync status](catalog-sync.json).
+18 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 

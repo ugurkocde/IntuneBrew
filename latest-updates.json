@@ -2,11 +2,18 @@
   "lastChecked": "2026-11-07T00:54:13.485912Z",
   "updates": [
     {
-      "appName": "pitch",
-      "previousVersion": "2.152.0-stable.3",
-      "newVersion": "2.152.0-stable.4",
+      "appName": "cursorsense",
+      "previousVersion": "2.5",
+      "newVersion": "2.5.1(2F17)",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/pitch.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/cursorsense.png"
+    },
+    {
+      "appName": "steermouse",
+      "previousVersion": "5.8.1",
+      "newVersion": "5.8.2(095C)",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/steermouse.png"
     }
   ]
 }
