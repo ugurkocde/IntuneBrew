@@ -2403,7 +2403,7 @@ function Compare-NumericBundleVersion {
     return $Left.Build.CompareTo($Right.Build)
 }
 
-# Keep other version formats on the existing lookup order. Numeric +N groups use the updater's exact order.
+# Numeric +N groups use exact updater order; canonical stable.N groups refine only legacy ties.
 function Select-LatestAppRecord {
     param([object[]]$Apps)
 
@@ -2423,7 +2423,20 @@ function Select-LatestAppRecord {
         }
         return $Apps[$best]
     }
-    return ($Apps | Sort-Object -Property @{Expression = { Convert-VersionToSortable $_.primaryBundleVersion } } -Descending | Select-Object -First 1)
+    $latest = $Apps | Sort-Object -Property @{Expression = { Convert-VersionToSortable $_.primaryBundleVersion } } -Descending | Select-Object -First 1
+    # Only a wholly canonical stable.N group may refine a legacy sortable-key tie.
+    $component = '(?:0|[1-9][0-9]{0,8})'
+    $stablePattern = '^' + $component + '\.' + $component + '\.' + $component + '-stable\.(' + $component + ')\z'
+    if ([string]$latest.primaryBundleVersion -cnotmatch $stablePattern) { return $latest }
+    $best = $latest; $bestOrdinal = [int]$Matches[1]
+    $latestKey = Convert-VersionToSortable $latest.primaryBundleVersion
+    foreach ($app in $Apps) {
+        if ((Convert-VersionToSortable $app.primaryBundleVersion) -cne $latestKey) { continue }
+        if ([string]$app.primaryBundleVersion -cnotmatch $stablePattern) { return $latest }
+        $ordinal = [int]$Matches[1]
+        if ($ordinal -gt $bestOrdinal) { $best = $app; $bestOrdinal = $ordinal }
+    }
+    return $best
 }
 
 # Converts a version string into a zero-padded form so string sorting matches
