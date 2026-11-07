@@ -49,6 +49,14 @@ elif [ -f "$HOME/Library/HTTPStorages/com.softfever3d.orcaslicer.binarycookies" 
     rm -f "$HOME/Library/HTTPStorages/com.softfever3d.orcaslicer.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.orcaslicer.OrcaSlicer.plist
+echo "Removing $HOME/Library/Preferences/com.orcaslicer.OrcaSlicer.plist..."
+if [ -d "$HOME/Library/Preferences/com.orcaslicer.OrcaSlicer.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.orcaslicer.OrcaSlicer.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.orcaslicer.OrcaSlicer.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.orcaslicer.OrcaSlicer.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.softfever3d.orca-slicer.plist
 echo "Removing $HOME/Library/Preferences/com.softfever3d.orca-slicer.plist..."
 if [ -d "$HOME/Library/Preferences/com.softfever3d.orca-slicer.plist" ]; then

@@ -53,12 +53,36 @@ elif [ -f "/Users/Shared/Renewed Vision Media" ]; then
     rm -f "/Users/Shared/Renewed Vision Media" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/bugsnag-shared-com.renewedvision.propresenter
+echo "Removing $HOME/Library/Application Support/bugsnag-shared-com.renewedvision.propresenter..."
+if [ -d "$HOME/Library/Application Support/bugsnag-shared-com.renewedvision.propresenter" ]; then
+    rm -rf "$HOME/Library/Application Support/bugsnag-shared-com.renewedvision.propresenter" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/bugsnag-shared-com.renewedvision.propresenter" ]; then
+    rm -f "$HOME/Library/Application Support/bugsnag-shared-com.renewedvision.propresenter" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/RenewedVision/ProPresenter22
 echo "Removing $HOME/Library/Application Support/RenewedVision/ProPresenter22..."
 if [ -d "$HOME/Library/Application Support/RenewedVision/ProPresenter22" ]; then
     rm -rf "$HOME/Library/Application Support/RenewedVision/ProPresenter22" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/RenewedVision/ProPresenter22" ]; then
     rm -f "$HOME/Library/Application Support/RenewedVision/ProPresenter22" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/bugsnag-shared-com.renewedvision.propresenter
+echo "Removing $HOME/Library/Caches/bugsnag-shared-com.renewedvision.propresenter..."
+if [ -d "$HOME/Library/Caches/bugsnag-shared-com.renewedvision.propresenter" ]; then
+    rm -rf "$HOME/Library/Caches/bugsnag-shared-com.renewedvision.propresenter" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/bugsnag-shared-com.renewedvision.propresenter" ]; then
+    rm -f "$HOME/Library/Caches/bugsnag-shared-com.renewedvision.propresenter" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.renewedvision.propresenter
+echo "Removing $HOME/Library/Caches/com.renewedvision.propresenter..."
+if [ -d "$HOME/Library/Caches/com.renewedvision.propresenter" ]; then
+    rm -rf "$HOME/Library/Caches/com.renewedvision.propresenter" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.renewedvision.propresenter" ]; then
+    rm -f "$HOME/Library/Caches/com.renewedvision.propresenter" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Caches/com.renewedvision.ProPresenter22
@@ -85,12 +109,28 @@ elif [ -f "$HOME/Library/Caches/Sessions/ProPresenter 22" ]; then
     rm -f "$HOME/Library/Caches/Sessions/ProPresenter 22" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.renewedvision.propresenter
+echo "Removing $HOME/Library/HTTPStorages/com.renewedvision.propresenter..."
+if [ -d "$HOME/Library/HTTPStorages/com.renewedvision.propresenter" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.renewedvision.propresenter" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.renewedvision.propresenter" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.renewedvision.propresenter" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist
 echo "Removing $HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist..."
 if [ -d "$HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.renewedvision.ProPresenter22.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.renewedvision.propresenter.plist
+echo "Removing $HOME/Library/Preferences/com.renewedvision.propresenter.plist..."
+if [ -d "$HOME/Library/Preferences/com.renewedvision.propresenter.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.renewedvision.propresenter.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.renewedvision.propresenter.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.renewedvision.propresenter.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/RenewedVision

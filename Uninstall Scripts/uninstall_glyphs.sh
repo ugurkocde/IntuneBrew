@@ -29,6 +29,14 @@ elif [ -f "/Applications/Glyphs 4.app" ]; then
     rm -f "/Applications/Glyphs 4.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/bugsnag-shared-com.GeorgSeifert.Glyphs4
+echo "Removing $HOME/Library/Application Support/bugsnag-shared-com.GeorgSeifert.Glyphs4..."
+if [ -d "$HOME/Library/Application Support/bugsnag-shared-com.GeorgSeifert.Glyphs4" ]; then
+    rm -rf "$HOME/Library/Application Support/bugsnag-shared-com.GeorgSeifert.Glyphs4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/bugsnag-shared-com.GeorgSeifert.Glyphs4" ]; then
+    rm -f "$HOME/Library/Application Support/bugsnag-shared-com.GeorgSeifert.Glyphs4" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs4.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs4.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.georgseifert.glyphs4.sfl*" ]; then
@@ -45,6 +53,14 @@ elif [ -f "$HOME/Library/Application Support/com.GeorgSeifert.Glyphs4" ]; then
     rm -f "$HOME/Library/Application Support/com.GeorgSeifert.Glyphs4" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/Glyphs 4
+echo "Removing $HOME/Library/Application Support/Glyphs 4..."
+if [ -d "$HOME/Library/Application Support/Glyphs 4" ]; then
+    rm -rf "$HOME/Library/Application Support/Glyphs 4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Glyphs 4" ]; then
+    rm -f "$HOME/Library/Application Support/Glyphs 4" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Glyphs
 echo "Removing $HOME/Library/Application Support/Glyphs..."
 if [ -d "$HOME/Library/Application Support/Glyphs" ]; then
@@ -53,12 +69,36 @@ elif [ -f "$HOME/Library/Application Support/Glyphs" ]; then
     rm -f "$HOME/Library/Application Support/Glyphs" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/bugsnag-shared-com.GeorgSeifert.Glyphs4
+echo "Removing $HOME/Library/Caches/bugsnag-shared-com.GeorgSeifert.Glyphs4..."
+if [ -d "$HOME/Library/Caches/bugsnag-shared-com.GeorgSeifert.Glyphs4" ]; then
+    rm -rf "$HOME/Library/Caches/bugsnag-shared-com.GeorgSeifert.Glyphs4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/bugsnag-shared-com.GeorgSeifert.Glyphs4" ]; then
+    rm -f "$HOME/Library/Caches/bugsnag-shared-com.GeorgSeifert.Glyphs4" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*
 echo "Removing $HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*..."
 if [ -d "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*" ]; then
     rm -rf "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*" ]; then
     rm -f "$HOME/Library/Caches/com.apple.helpd/SDMHelpData/Other/English/HelpSDMIndexFile/com.GeorgSeifert.Glyphs4.help*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.GeorgSeifert.Glyphs4
+echo "Removing $HOME/Library/Caches/com.GeorgSeifert.Glyphs4..."
+if [ -d "$HOME/Library/Caches/com.GeorgSeifert.Glyphs4" ]; then
+    rm -rf "$HOME/Library/Caches/com.GeorgSeifert.Glyphs4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.GeorgSeifert.Glyphs4" ]; then
+    rm -f "$HOME/Library/Caches/com.GeorgSeifert.Glyphs4" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.GeorgSeifert.Glyphs4
+echo "Removing $HOME/Library/HTTPStorages/com.GeorgSeifert.Glyphs4..."
+if [ -d "$HOME/Library/HTTPStorages/com.GeorgSeifert.Glyphs4" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.GeorgSeifert.Glyphs4" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.GeorgSeifert.Glyphs4" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.GeorgSeifert.Glyphs4" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.GeorgSeifert.Glyphs4.plist
