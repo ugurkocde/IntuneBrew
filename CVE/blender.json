@@ -1,7 +1,7 @@
 {
   "app_name": "Blender",
   "app_key": "blender",
-  "last_updated": "2026-11-06",
+  "last_updated": "2026-11-07",
   "total_cves": 40,
   "summary": {
     "critical": 0,
@@ -707,7 +707,7 @@
     {
       "cve_id": "CVE-2026-119720",
       "published_date": "2026-10-30",
-      "last_modified_date": "2026-11-03",
+      "last_modified_date": "2026-11-06",
       "description": "Blender before 4.5.15 and 5.x before 5.2.3 contains a heap out-of-bounds read vulnerability in read_file_dna() that reads a GLOB block field without validating its declared length. Attackers can supply a crafted .blend file with a truncated GLOB block that, when opened, triggers the out-of-bounds read and crashes Blender.",
       "base_score": 5.5,
       "severity": "MEDIUM",

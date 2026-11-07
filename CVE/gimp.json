@@ -1,7 +1,7 @@
 {
   "app_name": "Gimp",
   "app_key": "gimp",
-  "last_updated": "2026-11-06",
+  "last_updated": "2026-11-07",
   "total_cves": 111,
   "summary": {
     "critical": 1,
@@ -2303,7 +2303,7 @@
     {
       "cve_id": "CVE-2026-2239",
       "published_date": "2026-03-26",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-06",
       "description": "A flaw was found in GIMP. Heap-buffer-overflow vulnerability exists in the fread_pascal_string function when processing a specially crafted PSD (Photoshop Document) file. This occurs because the buffer allocated for a Pascal string is not properly null-terminated, leading to an out-of-bounds read when strlen() is subsequently called. Successfully exploiting this vulnerability can cause the application to crash, resulting in an application level Denial of Service.",
       "base_score": 2.8,
       "severity": "LOW",
