@@ -2,7 +2,7 @@ $ErrorActionPreference = 'Stop'
 $tokens = $null; $errors = $null
 $ast = [System.Management.Automation.Language.Parser]::ParseFile((Join-Path $PSScriptRoot '../IntuneBrew.ps1'), [ref]$tokens, [ref]$errors)
 if ($errors.Count) { throw ($errors | Out-String) }
-foreach ($name in @('Compare-VersionSegments', 'Test-CveVersionAffected', 'Get-CveUpdateImpact', 'Write-CveUpdateImpact')) {
+foreach ($name in @('Compare-VersionSegments', 'Get-CveComparableVersion', 'Test-CveVersionAffected', 'Get-CveUpdateImpact', 'Write-CveUpdateImpact')) {
     $function = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $name }, $true)
     Invoke-Expression $function.Extent.Text
 }

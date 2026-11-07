@@ -83,6 +83,31 @@ if ($null -eq $UseExistingIntuneApp) { $UseExistingIntuneApp = $false }
 $MaxAppsPerRun = Get-AutomationVariable -Name 'MaxAppsPerRun' -ErrorAction SilentlyContinue
 if ($null -eq $MaxAppsPerRun -or $MaxAppsPerRun -le 0) { $MaxAppsPerRun = 10 }
 
+# Validate unattended security settings before authentication or any Graph operation.
+function ConvertTo-RunbookSecurityConfig {
+    param($HoldLevel, $IgnoreHold)
+    if ($null -eq $HoldLevel) { $HoldLevel = 'None' }
+    if ($HoldLevel -isnot [string] -or $HoldLevel -notin @('None', 'Medium', 'High', 'Critical')) {
+        throw 'SecurityHoldLevel must be None, Medium, High or Critical.'
+    }
+    $levels = @{ none = 'None'; medium = 'Medium'; high = 'High'; critical = 'Critical' }
+    if ($null -eq $IgnoreHold) { $IgnoreHold = $false }
+    elseif ($IgnoreHold -is [string]) {
+        if ($IgnoreHold -ceq 'true') { $IgnoreHold = $true }
+        elseif ($IgnoreHold -ceq 'false') { $IgnoreHold = $false }
+        else { throw 'IgnoreSecurityHold must be a boolean or the string true or false.' }
+    }
+    elseif ($IgnoreHold -isnot [bool]) { throw 'IgnoreSecurityHold must be a boolean.' }
+    return [pscustomobject]@{ HoldLevel = $levels[$HoldLevel.ToLowerInvariant()]; IgnoreHold = $IgnoreHold }
+}
+
+$securityConfig = ConvertTo-RunbookSecurityConfig `
+    (Get-AutomationVariable -Name 'SecurityHoldLevel' -ErrorAction SilentlyContinue) `
+    (Get-AutomationVariable -Name 'IgnoreSecurityHold' -ErrorAction SilentlyContinue)
+$SecurityHoldLevel = $securityConfig.HoldLevel
+$IgnoreSecurityHold = $securityConfig.IgnoreHold
+if ($IgnoreSecurityHold) { Write-Log 'IgnoreSecurityHold is enabled for this run.' -Type 'Warning' }
+
 if ($CopyAssignments -eq $true) {
     Write-Log "Copy Assignments is set to true"
     $requiredPermissions += "Group.Read.All"
@@ -103,6 +128,7 @@ Write-Log "  - Authentication Method: $AuthenticationMethod"
 Write-Log "  - Copy Assignments: $CopyAssignments"
 Write-Log "  - Use Existing Intune App: $UseExistingIntuneApp"
 Write-Log "  - Max Apps Per Run: $MaxAppsPerRun"
+Write-Log "  - Security Hold Level: $SecurityHoldLevel"
 
 # Check if the AuthenticationMethod variable is empty
 if ([string]::IsNullOrWhiteSpace($AuthenticationMethod)) {
@@ -1060,6 +1086,189 @@ function Convert-VersionToSortable {
     return ($padded -join '.')
 }
 
+# Only proven release decorations map to the numeric CVE release; ranges remain numeric.
+function Get-CveComparableVersion {
+    param([string]$Version)
+    if ($Version -cmatch '^[0-9]+(?:\.[0-9]+)*\z') { return $Version }
+    $component = '(?:0|[1-9][0-9]{0,8})'
+    if ($Version -cmatch ('^(' + $component + '(?:\.' + $component + ')+)\(([0-9A-F]{4})\)\z')) {
+        $release = $Matches[1]; $build = $Matches[2]
+        if ($build -cmatch '[A-F]') { return $release }
+        return $null
+    }
+    if ($Version -cmatch ('^(' + $component + '\.' + $component + '\.' + $component + ')-stable\.' + $component + '\z')) {
+        return $Matches[1]
+    }
+    return $null
+}
+
+# Shared schema validation; missing datasets are handled by each caller's data source.
+function ConvertTo-CveDataset {
+    param($Dataset)
+    if (($Dataset -isnot [System.Collections.IDictionary] -and $Dataset -isnot [pscustomobject]) -or
+        $Dataset.vulnerabilities -isnot [array]) { throw 'Malformed CVE dataset.' }
+    foreach ($item in $Dataset.vulnerabilities) {
+        if (($item -isnot [System.Collections.IDictionary] -and $item -isnot [pscustomobject]) -or
+            $item.cve_id -isnot [string] -or [string]::IsNullOrWhiteSpace($item.cve_id)) {
+            throw 'Malformed CVE record.'
+        }
+        if ($null -ne $item.severity -and ($item.severity -isnot [string] -or
+            $item.severity -cnotin @('', 'LOW', 'MEDIUM', 'HIGH', 'CRITICAL'))) { throw 'Malformed CVE severity.' }
+        $hasKev = if ($item -is [System.Collections.IDictionary]) { $item.Contains('is_kev') }
+            else { $null -ne $item.PSObject.Properties['is_kev'] }
+        if ($hasKev -and $item.is_kev -isnot [bool]) { throw 'Malformed CVE KEV flag.' }
+    }
+    return $Dataset
+}
+
+function Test-CveVersionAffected {
+    param([string]$Version, $Vulnerability)
+    $Version = Get-CveComparableVersion $Version
+    $start = [string]$Vulnerability.affected_version_start
+    $end = [string]$Vulnerability.affected_version_end
+    $fixed = [string]$Vulnerability.fixed_version
+    if (-not ($start -or $end -or $fixed) -or [string]::IsNullOrEmpty($Version)) { return $null }
+    foreach ($bound in @($start, $end, $fixed)) {
+        if ($bound -and $bound -notmatch '^\d+(\.\d+)*$') { return $null }
+    }
+    if ($start -and $Vulnerability.affected_version_start_type -notin @('including', 'excluding')) { return $null }
+    if ($end -and $Vulnerability.affected_version_end_type -notin @('including', 'excluding')) { return $null }
+    $upper = if ($end) { $end } else { $fixed }
+    if ($start -and $upper) {
+        $rangeOrder = Compare-VersionSegments $start $upper
+        if ($rangeOrder -gt 0 -or ($rangeOrder -eq 0 -and
+            (-not $end -or $Vulnerability.affected_version_start_type -ne 'including' -or $Vulnerability.affected_version_end_type -ne 'including'))) { return $null }
+    }
+    if ($start) {
+        $comparison = Compare-VersionSegments $Version $start
+        if ($comparison -lt 0 -or ($comparison -eq 0 -and $Vulnerability.affected_version_start_type -eq 'excluding')) { return $false }
+    }
+    if ($upper) {
+        $comparison = Compare-VersionSegments $Version $upper
+        $exclusive = -not $end -or $Vulnerability.affected_version_end_type -eq 'excluding'
+        if ($comparison -gt 0 -or ($comparison -eq 0 -and $exclusive)) { return $false }
+    }
+    return $true
+}
+
+function Get-CveUpdateImpact {
+    param([string]$CurrentVersion, [string]$TargetVersion, [object[]]$Vulnerabilities,
+        [ValidateSet('None', 'Medium', 'High', 'Critical')][string]$HoldLevel = 'None', [switch]$IgnoreHold)
+    $severityRanks = @{ LOW = 1; MEDIUM = 2; HIGH = 3; CRITICAL = 4 }
+    $records = @($Vulnerabilities | Where-Object { $null -ne $_ } | ForEach-Object {
+        $current = Test-CveVersionAffected -Version $CurrentVersion -Vulnerability $_
+        $target = Test-CveVersionAffected -Version $TargetVersion -Vulnerability $_
+        $classification = if ($null -eq $current -or $null -eq $target) { 'Indeterminate' }
+            elseif ($current -and -not $target) { 'Fixed' }
+            elseif ($current -and $target) { 'Persists' }
+            elseif (-not $current -and $target) { 'Introduced' }
+            else { 'NotRelevant' }
+        $hold = $classification -eq 'Introduced' -and $HoldLevel -ne 'None' -and -not $IgnoreHold -and
+            ($_.is_kev -eq $true -or $severityRanks[[string]$_.severity] -ge $severityRanks[$HoldLevel])
+        [PSCustomObject]@{ Classification = $classification; Vulnerability = $_; Hold = [bool]$hold }
+    })
+    return [PSCustomObject]@{ Records = $records; Held = [bool]@($records | Where-Object Hold).Count }
+}
+
+# The stream reader is independently testable without making a network request.
+function Read-BoundedCveContent {
+    param([IO.Stream]$Stream, [Threading.CancellationToken]$CancellationToken)
+    $body = [IO.MemoryStream]::new()
+    try {
+        $buffer = [byte[]]::new(8192)
+        while (($count = $Stream.ReadAsync($buffer, 0, $buffer.Length, $CancellationToken).GetAwaiter().GetResult()) -gt 0) {
+            if ($body.Length + $count -gt 2MB) { throw 'CVE response exceeds size limit.' }
+            $body.Write($buffer, 0, $count)
+        }
+        return [Text.UTF8Encoding]::new($false, $true).GetString($body.ToArray())
+    }
+    finally { $body.Dispose() }
+}
+
+# Fixed public trust root, redirects disabled, and a bounded streaming read (2 MiB/20 seconds).
+# Kept separate so offline tests never need a network or Graph connection.
+function Invoke-CveDataRequest {
+    param([string]$Uri)
+    if ($Uri -cnotmatch '^https://raw\.githubusercontent\.com/ugurkocde/IntuneBrew/main/CVE/[a-z0-9][a-z0-9._-]*\.json\z' -or
+        $Uri.Contains('..')) { throw 'Invalid CVE feed URL.' }
+    $handler = $null; $client = $null; $deadline = $null; $response = $null; $stream = $null
+    try {
+        $handler = [Net.Http.HttpClientHandler]::new()
+        $handler.AllowAutoRedirect = $false
+        $client = [Net.Http.HttpClient]::new($handler)
+        $deadline = [Threading.CancellationTokenSource]::new()
+        $deadline.CancelAfter(20000)
+        $response = $client.GetAsync($Uri, [Net.Http.HttpCompletionOption]::ResponseHeadersRead, $deadline.Token).GetAwaiter().GetResult()
+        $status = [int]$response.StatusCode
+        if ($status -ne 200) { return [pscustomobject]@{ StatusCode = $status; Content = $null } }
+        $limit = 2MB
+        if ($response.Content.Headers.ContentLength -gt $limit) { throw 'CVE response exceeds size limit.' }
+        $stream = $response.Content.ReadAsStreamAsync().GetAwaiter().GetResult()
+        return [pscustomobject]@{ StatusCode = 200; Content = (Read-BoundedCveContent $stream $deadline.Token) }
+    }
+    finally {
+        foreach ($resource in @($stream, $response, $client, $handler, $deadline)) {
+            if ($null -ne $resource) { $resource.Dispose() }
+        }
+    }
+}
+
+function Get-RunbookCveAssessment {
+    param([string]$JsonUrl, [string]$CurrentVersion, [string]$TargetVersion)
+    if ($SecurityHoldLevel -eq 'None') {
+        return [pscustomobject]@{ Held = $false; WouldHold = $false; Reason = 'disabled'; Impact = $null }
+    }
+    $impact = $null; $reason = 'data-error'; $wouldHold = $true
+    try {
+        if ($JsonUrl -cnotmatch '^https://raw\.githubusercontent\.com/ugurkocde/IntuneBrew/main/Apps/([a-z0-9][a-z0-9._-]*)\.json\z') {
+            throw 'Invalid CVE app key.'
+        }
+        $key = $Matches[1]
+        if ($key.Contains('..')) { throw 'Invalid CVE app key.' }
+        $response = Invoke-CveDataRequest ('https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE/' + $key + '.json')
+        if ($response.StatusCode -eq 404) { $reason = 'unavailable'; $wouldHold = $false }
+        elseif ($response.StatusCode -eq 200) {
+            if ($response.Content -isnot [string] -or [Text.Encoding]::UTF8.GetByteCount($response.Content) -gt 2MB) {
+                throw 'Invalid CVE response body.'
+            }
+            $dataset = ConvertTo-CveDataset ($response.Content | ConvertFrom-Json -ErrorAction Stop)
+            $impact = Get-CveUpdateImpact -CurrentVersion $CurrentVersion -TargetVersion $TargetVersion `
+                -Vulnerabilities @($dataset.vulnerabilities) -HoldLevel $SecurityHoldLevel
+            $wouldHold = $impact.Held; $reason = 'assessed'
+        }
+    }
+    catch { $reason = 'data-error'; $wouldHold = $true }
+    return [pscustomobject]@{ Held = ($wouldHold -and -not $IgnoreSecurityHold); WouldHold = $wouldHold; Reason = $reason; Impact = $impact }
+}
+
+# Both display-name and bundle-ID discovery paths use this gate and retain the assessed manifest.
+function New-RunbookAppCandidate {
+    param([hashtable]$Manifest, [string]$JsonUrl, [string]$IntuneVersion, [string]$IntuneAppId)
+    $assessment = $null
+    if (Is-NewerVersion $Manifest.version $IntuneVersion) {
+        $assessment = Get-RunbookCveAssessment -JsonUrl $JsonUrl -CurrentVersion $IntuneVersion -TargetVersion $Manifest.version
+        if ($assessment.WouldHold) {
+            $ids = @($assessment.Impact.Records | Where-Object Hold | ForEach-Object { $_.Vulnerability.cve_id } |
+                Where-Object { $_ -cmatch '^CVE-[0-9]{4}-[0-9]{4,}\z' } | Select-Object -First 10)
+            $action = if ($assessment.Held) { 'Skipping held update' } else { 'Security hold explicitly overridden' }
+            Write-Log "$action for $($Manifest.name): $($assessment.Reason); $($ids -join ', ')" -Type 'Warning' | Out-Host
+        }
+        elseif ($assessment.Reason -eq 'unavailable') {
+            Write-Log "CVE data unavailable for $($Manifest.name) (404); exposure could not be confirmed. No automatic hold applied." -Type 'Warning' | Out-Host
+        }
+    }
+    return [pscustomobject]@{
+        Name = $Manifest.name
+        IntuneVersion = $IntuneVersion
+        IntuneAppId = $IntuneAppId
+        GitHubVersion = $Manifest.version
+        JsonUrl = $JsonUrl
+        Manifest = $Manifest.Clone()
+        SecurityHeld = [bool]$assessment.Held
+        SecurityReason = $assessment.Reason
+    }
+}
+
 # Cache of all macOS PKG/DMG apps in the tenant, used to match apps by bundle id
 # when the display name lookup finds nothing (e.g. renamed apps, Issue #217)
 $script:allMacOsAppsCache = $null
@@ -1128,12 +1337,8 @@ function Get-IntuneApps {
                     Write-Log "$appName is up to date (Version: $intuneVersion)"
                 }
 
-                $intuneApps += [PSCustomObject]@{
-                    Name          = $appName
-                    IntuneVersion = $intuneVersion
-                    IntuneAppId   = $intuneAppId # Add the ID here
-                    GitHubVersion = $githubVersion
-                }
+                $intuneApps += New-RunbookAppCandidate -Manifest $appInfo -JsonUrl $jsonUrl `
+                    -IntuneVersion $intuneVersion -IntuneAppId $intuneAppId
             }
             else {
                 # Fall back to matching by bundle id so apps that were renamed in Intune
@@ -1156,12 +1361,8 @@ function Get-IntuneApps {
                         Write-Log "$appName is up to date (Version: $intuneVersion)"
                     }
 
-                    $intuneApps += [PSCustomObject]@{
-                        Name          = $appName
-                        IntuneVersion = $intuneVersion
-                        IntuneAppId   = $latestAppEntry.id
-                        GitHubVersion = $githubVersion
-                    }
+                    $intuneApps += New-RunbookAppCandidate -Manifest $appInfo -JsonUrl $jsonUrl `
+                        -IntuneVersion $intuneVersion -IntuneAppId $latestAppEntry.id
                 }
                 else {
                     # Before treating the app as missing, check whether it is managed through
@@ -1311,9 +1512,11 @@ else {
 }
 
 # Filter apps that need to be uploaded (only updates, no new apps)
-$appsToUpload = $intuneAppVersions | Where-Object {
-    $_.IntuneVersion -ne 'Not in Intune' -and (Is-NewerVersion $_.GitHubVersion $_.IntuneVersion)
-}
+$heldApps = @($intuneAppVersions | Where-Object SecurityHeld)
+if ($heldApps.Count) { Write-Log "Skipping $($heldApps.Count) security-held update(s); they will be checked next run." -Type 'Warning' }
+$appsToUpload = @($intuneAppVersions | Where-Object {
+    -not $_.SecurityHeld -and $_.IntuneVersion -ne 'Not in Intune' -and (Is-NewerVersion $_.GitHubVersion $_.IntuneVersion)
+})
 
 if ($appsToUpload.Count -eq 0) {
     Write-Log "`nAll apps are up-to-date. No uploads necessary." -Type "Info"
@@ -1407,21 +1610,12 @@ foreach ($app in $appsToUpload) {
         Write-Log "Current version in Intune: $($app.IntuneVersion)"
         Write-Log "Available version: $($app.GitHubVersion)"
         
-        # Find the corresponding JSON URL for this app
-        $jsonUrl = $githubJsonUrls | Where-Object {
-            $appInfo = Get-GitHubAppInfo -jsonUrl $_
-            $appInfo -and $appInfo.name -eq $app.Name
-        } | Select-Object -First 1
-
-        if (-not $jsonUrl) {
-            Write-Log "Could not find JSON URL for $($app.Name). Skipping." -Type "Error"
-            continue
-        }
-
-        $appInfo = Get-GitHubAppInfo -jsonUrl $jsonUrl
-        if ($appInfo -eq $null) {
-            Write-Log "Failed to fetch app info for $jsonUrl. Skipping." -Type "Error"
-            continue
+        # Upload exactly the metadata/version assessed during discovery; never refetch by name.
+        $jsonUrl = $app.JsonUrl
+        $appInfo = $app.Manifest
+        if (-not $appInfo -or -not (Is-ValidUrl $jsonUrl) -or
+            $appInfo.version -cne $app.GitHubVersion -or $appInfo.name -cne $app.Name) {
+            throw 'The assessed manifest is missing or changed; upload refused.'
         }
 
         # Check if this is an update and fetch existing assignments

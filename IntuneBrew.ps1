@@ -1691,11 +1691,11 @@ function Get-AppCveInfo {
     
     try {
         $cveInfo = Get-Content $cvePath -Raw | ConvertFrom-Json
-        return $cveInfo
+        return (ConvertTo-CveDataset $cveInfo)
     }
     catch {
-        Write-Host "Error reading CVE info for $appKey : $_" -ForegroundColor Red
-        return $null
+        Write-Host "CVE data for $appKey could not be validated." -ForegroundColor Red
+        return [pscustomobject]@{ vulnerabilities = @(); DataError = $true }
     }
 }
 
@@ -2097,12 +2097,48 @@ function Get-IntuneAppCollection {
 }
 
 # Return null when the supplied range cannot be compared reliably.
+# Only proven release decorations map to the numeric CVE release; ranges remain numeric.
+function Get-CveComparableVersion {
+    param([string]$Version)
+    if ($Version -cmatch '^[0-9]+(?:\.[0-9]+)*\z') { return $Version }
+    $component = '(?:0|[1-9][0-9]{0,8})'
+    if ($Version -cmatch ('^(' + $component + '(?:\.' + $component + ')+)\(([0-9A-F]{4})\)\z')) {
+        $release = $Matches[1]; $build = $Matches[2]
+        if ($build -cmatch '[A-F]') { return $release }
+        return $null
+    }
+    if ($Version -cmatch ('^(' + $component + '\.' + $component + '\.' + $component + ')-stable\.' + $component + '\z')) {
+        return $Matches[1]
+    }
+    return $null
+}
+
+# Shared schema validation; missing datasets are handled by each caller's data source.
+function ConvertTo-CveDataset {
+    param($Dataset)
+    if (($Dataset -isnot [System.Collections.IDictionary] -and $Dataset -isnot [pscustomobject]) -or
+        $Dataset.vulnerabilities -isnot [array]) { throw 'Malformed CVE dataset.' }
+    foreach ($item in $Dataset.vulnerabilities) {
+        if (($item -isnot [System.Collections.IDictionary] -and $item -isnot [pscustomobject]) -or
+            $item.cve_id -isnot [string] -or [string]::IsNullOrWhiteSpace($item.cve_id)) {
+            throw 'Malformed CVE record.'
+        }
+        if ($null -ne $item.severity -and ($item.severity -isnot [string] -or
+            $item.severity -cnotin @('', 'LOW', 'MEDIUM', 'HIGH', 'CRITICAL'))) { throw 'Malformed CVE severity.' }
+        $hasKev = if ($item -is [System.Collections.IDictionary]) { $item.Contains('is_kev') }
+            else { $null -ne $item.PSObject.Properties['is_kev'] }
+        if ($hasKev -and $item.is_kev -isnot [bool]) { throw 'Malformed CVE KEV flag.' }
+    }
+    return $Dataset
+}
+
 function Test-CveVersionAffected {
     param([string]$Version, $Vulnerability)
+    $Version = Get-CveComparableVersion $Version
     $start = [string]$Vulnerability.affected_version_start
     $end = [string]$Vulnerability.affected_version_end
     $fixed = [string]$Vulnerability.fixed_version
-    if (-not ($start -or $end -or $fixed) -or $Version -notmatch '^\d+(\.\d+)*$') { return $null }
+    if (-not ($start -or $end -or $fixed) -or [string]::IsNullOrEmpty($Version)) { return $null }
     foreach ($bound in @($start, $end, $fixed)) {
         if ($bound -and $bound -notmatch '^\d+(\.\d+)*$') { return $null }
     }
@@ -2230,6 +2266,10 @@ function Get-IntuneApp {
                     
                     $cveInfo = Get-AppCveInfo -appKey $appKey
                     $securityImpact = Get-CveUpdateImpact -CurrentVersion $intuneVersion -TargetVersion $githubVersion -Vulnerabilities @($cveInfo.vulnerabilities) -HoldLevel $SecurityHoldLevel -IgnoreHold:$IgnoreSecurityHold
+                    if ($cveInfo.DataError -eq $true -and $SecurityHoldLevel -ne 'None') {
+                        $securityImpact.Held = -not $IgnoreSecurityHold
+                        Write-Host '   CVE data error: update held unless -IgnoreSecurityHold is explicitly selected.' -ForegroundColor Yellow
+                    }
                     Write-CveUpdateImpact -Impact $securityImpact -ShowAll:$ShowAllCves
                     if (-not $cveInfo) { Write-Host '   CVE data unavailable; exposure could not be confirmed. No automatic hold applied.' -ForegroundColor Yellow }
 
