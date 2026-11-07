@@ -108,7 +108,7 @@ function Get-CveProbeReport {
     # Exercise the actual network, schema and evaluator path on the largest current feed.
     # Versions are fake: no tenant app or assignment is read or changed.
     $assessment = Get-RunbookCveAssessment 'https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/google_chrome.json' '0.0.0' '1.0.0'
-    if ($assessment.Reason -ne 'assessed' -or $assessment.Impact.Records.Count -le 0 -or $script:CveProbeFeedBytes -le 0) { throw 'Live feed assessment failed.' }
+    if ($assessment.Reason -ne 'assessed' -or $assessment.SourceDigest -cnotmatch '^[0-9a-f]{64}\z' -or $assessment.Impact.Records.Count -le 0 -or $script:CveProbeFeedBytes -le 0) { throw 'Live feed assessment failed.' }
     $script:CveProbeStage = 'holds'
     $decorated = @(@('5.8.1', '5.8.2(095C)', '5.8.2'), @('2.5', '2.5.1(2F17)', '2.5.1'), @('2.151.0-stable.1', '2.152.0-stable.4', '2.152.0'))
     foreach ($pair in $decorated) {
@@ -133,7 +133,7 @@ function Get-CveProbeReport {
         WorkingSetGrowthMiBPerFeedMiB = [math]::Round($growth / $feedMiB, 2)
         FeedPeakCommitGrowthMiB = [math]::Round(($final.PeakCommitBytes - $baseline.PeakCommitBytes) / 1MB, 2)
         DocumentedCloudLimitMB = 400; AcceptancePeakLimitMiB = 300; MeetsMemoryThreshold = ($maximumPeak -le 300MB)
-        LiveFeedAssessed = $true; VulnerabilityRecords = $assessment.Impact.Records.Count
+        SourceDigest = $assessment.SourceDigest; FeedFormat = 'compact-v1'; LiveFeedAssessed = $true; VulnerabilityRecords = $assessment.Impact.Records.Count
         DecoratedIntroducedHoldsPassed = 3; GraphAuthenticationCalls = 0; TenantWrites = 0
     }
 }

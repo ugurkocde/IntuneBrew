@@ -96,15 +96,19 @@ finally { $stream.Dispose(); $cancelled.Dispose() }
 if (-not $threw) { throw 'CVE stream ignored cancellation.' }
 
 # Invalid routes must fail before constructing an HTTP client; all valid requests below are mocked.
-foreach ($uri in @('https://example.invalid/CVE/app.json', 'https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE/a..b.json')) {
+foreach ($uri in @('https://example.invalid/CVE/app.json', 'https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE-Holds/a..b.json')) {
     $threw = $false; try { $null = Invoke-CveDataRequest $uri } catch { $threw = $true }
     if (-not $threw) { throw 'Untrusted CVE route accepted.' }
 }
+function New-TestCompact($Records) {
+    return (@{ schema_version = 1; app_key = 'fixture'; source_sha256 = ('a' * 64); vulnerabilities = @($Records) } | ConvertTo-Json -Depth 8 -Compress)
+}
+$dataset = New-TestCompact (($dataset | ConvertFrom-Json).vulnerabilities)
 $script:requests = 0; $script:response = @{ StatusCode = 200; Content = $dataset }; $script:requestThrows = $false
 function Invoke-CveDataRequest {
     param($Uri)
     $script:requests++
-    if ($Uri -cnotmatch '^https://raw\.githubusercontent\.com/ugurkocde/IntuneBrew/main/CVE/fixture[a-z0-9_]*\.json\z') { throw 'Wrong feed trust root or key.' }
+    if ($Uri -cnotmatch '^https://raw\.githubusercontent\.com/ugurkocde/IntuneBrew/main/CVE-Holds/fixture[a-z0-9_]*\.json\z') { throw 'Wrong feed trust root or key.' }
     if ($script:requestThrows) { throw 'mock timeout' }
     return $script:response
 }
@@ -113,13 +117,24 @@ if ((Get-RunbookCveAssessment $url '1' '2').Held -or $script:requests -ne 0) { t
 $SecurityHoldLevel = 'High'
 if (-not (Get-RunbookCveAssessment $url '1' '2').Held) { throw 'Introduced target not held.' }
 
+# Compact envelope validation rejects boolean/string versions, extra keys, wrong identity and malformed digests.
+$baseEnvelope = $dataset | ConvertFrom-Json -AsHashtable
+foreach ($change in @(@{ schema_version = $true }, @{ schema_version = '1' }, @{ schema_version = 2 },
+        @{ app_key = 'other' }, @{ source_sha256 = ('A' * 64) }, @{ source_sha256 = 'short' }, @{ extra = 'field' })) {
+    $envelope = $baseEnvelope.Clone()
+    foreach ($key in $change.Keys) { $envelope[$key] = $change[$key] }
+    $script:response = @{ StatusCode = 200; Content = ($envelope | ConvertTo-Json -Depth 8 -Compress) }
+    $badEnvelope = Get-RunbookCveAssessment $url '1' '2'
+    if (-not $badEnvelope.Held -or $badEnvelope.Reason -ne 'data-error') { throw 'Malformed compact envelope failed open.' }
+}
+$script:response = @{ StatusCode = 200; Content = $dataset }
 # A valid large feed must reach the evaluator rather than become a data-error hold.
 $padding = 'x' * (2MB + 1)
-$largeIntroduced = @{ vulnerabilities = @(@{ cve_id = 'CVE-2026-12345'; severity = 'HIGH'; affected_version_start = '2'; affected_version_start_type = 'including' }); testPadding = $padding } | ConvertTo-Json -Depth 5 -Compress
+$largeIntroduced = $padding.Replace('x', ' ') + (New-TestCompact @(@{ cve_id = 'CVE-2026-12345'; severity = 'HIGH'; affected_version_start = '2'; affected_version_start_type = 'including' }))
 $script:response = @{ StatusCode = 200; Content = $largeIntroduced }
 $largeResult = Get-RunbookCveAssessment $url '1' '2'
 if (-not $largeResult.Held -or $largeResult.Reason -ne 'assessed' -or $largeResult.Impact.Records[0].Classification -ne 'Introduced') { throw 'Valid large introduced feed failed to reach evaluator.' }
-$script:response = @{ StatusCode = 200; Content = (@{ vulnerabilities = @(); testPadding = $padding } | ConvertTo-Json -Compress) }
+$script:response = @{ StatusCode = 200; Content = ($padding.Replace('x', ' ') + (New-TestCompact @())) }
 $largeResult = Get-RunbookCveAssessment $url '1' '2'
 if ($largeResult.Held -or $largeResult.Reason -ne 'assessed') { throw 'Valid large empty feed became a data-error hold.' }
 $script:response = @{ StatusCode = 200; Content = $dataset }
@@ -170,7 +185,7 @@ $invalidIds = @('CVE-2026-05773', 'CVE-2026-123', "CVE-2026-1234`n")
 $records = @(($validIds + $invalidIds) | ForEach-Object {
     @{ cve_id = $_; severity = 'HIGH'; affected_version_start = '2'; affected_version_start_type = 'including' }
 })
-$script:response = @{ StatusCode = 200; Content = (@{ vulnerabilities = $records } | ConvertTo-Json -Depth 5) }
+$script:response = @{ StatusCode = 200; Content = (New-TestCompact $records) }
 $script:messages = @()
 $loggedCandidate = New-RunbookAppCandidate -Manifest $script:manifest -JsonUrl $url -IntuneVersion '1' -IntuneAppId 'fake-app'
 if (-not $loggedCandidate.SecurityHeld) { throw 'Logging filter changed hold evaluation.' }
