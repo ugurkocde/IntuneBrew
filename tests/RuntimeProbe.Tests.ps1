@@ -92,8 +92,11 @@ if ($script:feedCalls -ne $before -or $script:CveProbeStage -ne 'metrics') { thr
 $script:sampleOrdinal = 0; $script:badBaseline = $false
 $script:feedReason = 'data-error'
 Assert-Refused { Get-CveProbeReport $revision $hash }
+if ($script:CveProbeStage -ne 'feed') { throw 'Data-error feed did not fail at the feed stage.' }
+$script:sampleOrdinal = 0
 $script:feedReason = 'assessed'; $script:feedRecords = 0
 Assert-Refused { Get-CveProbeReport $revision $hash }
+if ($script:CveProbeStage -ne 'feed') { throw 'Empty-record feed did not fail at the feed stage.' }
 # Exercise the actual imported assessment -> instrumented transport -> schema -> evaluator chain.
 Import-CveProbeFunctions $product
 function Invoke-CveDataRequest {
