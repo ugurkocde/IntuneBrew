@@ -16,12 +16,30 @@ function Get-ImpactSignature($Impact) {
     }
     return $result.ToString()
 }
+# Provenance describes published Git blob bytes. A Windows text checkout can use CRLF instead.
+function Get-TrackedCveBytes([string]$Path) {
+    $start = [Diagnostics.ProcessStartInfo]::new()
+    $start.FileName = 'git'; $start.WorkingDirectory = $root
+    $start.UseShellExecute = $false; $start.RedirectStandardOutput = $true; $start.RedirectStandardError = $true
+    foreach ($argument in @('cat-file', 'blob', ('HEAD:' + $Path))) { $start.ArgumentList.Add($argument) }
+    $process = [Diagnostics.Process]::new(); $process.StartInfo = $start
+    $buffer = [IO.MemoryStream]::new()
+    try {
+        if (-not $process.Start()) { throw 'Cannot read tracked CVE data.' }
+        $errorRead = $process.StandardError.ReadToEndAsync()
+        $process.StandardOutput.BaseStream.CopyTo($buffer)
+        $process.WaitForExit(); $null = $errorRead.GetAwaiter().GetResult()
+        if ($process.ExitCode -ne 0) { throw 'Tracked CVE data is unavailable.' }
+        return ,$buffer.ToArray()
+    }
+    finally { $buffer.Dispose(); $process.Dispose() }
+}
 $count = 0; $apps = 0
 foreach ($file in Get-ChildItem (Join-Path $root 'CVE/*.json')) {
-    $bytes = [IO.File]::ReadAllBytes($file.FullName)
+    $bytes = Get-TrackedCveBytes ('CVE/' + $file.Name)
     $full = ConvertTo-CveDataset ([Text.Encoding]::UTF8.GetString($bytes) | ConvertFrom-Json -ErrorAction Stop)
-    $compact = [IO.File]::ReadAllText((Join-Path $root ('CVE-Holds/' + $file.Name))) | ConvertFrom-Json -ErrorAction Stop
-    $digest = (Get-FileHash -LiteralPath $file.FullName -Algorithm SHA256).Hash.ToLowerInvariant()
+    $compact = [Text.Encoding]::UTF8.GetString((Get-TrackedCveBytes ('CVE-Holds/' + $file.Name))) | ConvertFrom-Json -ErrorAction Stop
+    $digest = [Convert]::ToHexString([Security.Cryptography.SHA256]::HashData($bytes)).ToLowerInvariant()
     if ($compact.source_sha256 -cne $digest -or $compact.app_key -cne $file.BaseName -or $compact.schema_version -ne 1) { throw 'Compact provenance drift.' }
     $small = ConvertTo-CveDataset $compact
     if ($small.vulnerabilities.Count -ne $full.vulnerabilities.Count) { throw 'Compaction dropped records.' }
