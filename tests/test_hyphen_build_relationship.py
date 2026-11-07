@@ -18,7 +18,7 @@ def request(raw='27.1.0-58756', short='27.1.0', build='58756', prior='27.0.3-586
 
 
 class HyphenBuildTests(unittest.TestCase):
-    def test_twenty_measured_rows_write_two_and_hold_eighteen(self):
+    def test_twenty_measured_rows_write_four_and_hold_sixteen(self):
         writes = []
         for row in ROWS:
             with self.subTest(case=row['case']):
@@ -29,7 +29,7 @@ class HyphenBuildTests(unittest.TestCase):
                     writes.append(row['case'])
                 else:
                     self.assertEqual((d.action, d.reason), ('HOLD', 'RELATION_UNPROVEN'))
-        self.assertEqual(set(writes), {'parallels', '8x8-work'})
+        self.assertEqual(set(writes), {'parallels', '8x8-work', 'steermouse', 'cursorsense'})
 
     def test_complete_binding_and_canonical_bounded_grammar(self):
         bad = [('1.2.3-' + n, '1.2.3', n) for n in ['0', '01', 'beta', '1' * 19]]

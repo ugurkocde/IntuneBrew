@@ -14,7 +14,7 @@ SHA = 'a' * 64
 BUNDLE = 'org.example.fixture'
 
 
-def request(raw='2.0,2', short='2.0+2', prior='1.0', caps=frozenset({'plus_build', 'decorated_text'})):
+def request(raw='2.0,2', short='2.0+2', prior='1.0', caps=policy.CATALOG_CONSUMER_CAPABILITIES):
     return policy.ReconcileInput(raw, policy.generic_legacy_truncate(raw), SHA,
                                  'https://example.invalid/app.dmg', BUNDLE,
                                  policy.PriorEntry(prior, 'b' * 64, 'https://example.invalid/old.dmg') if prior else None,
@@ -180,15 +180,15 @@ class StableOrdinalTests(unittest.TestCase):
         for row in rows:
             obs = integration.c.BundleObservation(integration.SHA, integration.BUNDLE, row['short'], row['build'])
             old, new, report = integration.CollectorIntegrationTests.run_case(self, obs, raw=row['source'], prior=row['prior'])
-            if row['case'] == 'pitch':
+            if row['case'] in {'pitch', 'steermouse', 'cursorsense'}:
                 self.assertEqual((json.loads(new)['version'], json.loads(new)['sha']), (row['short'], integration.SHA))
-                self.assertEqual(report['versionEvidence'][0]['relation'], 'RENDER_CHANNEL')
+                self.assertEqual(report['versionEvidence'][0]['relation'], 'RENDER_CHANNEL' if row['case'] == 'pitch' else 'SOURCE_PAREN_HEX_BUILD')
                 self.assertEqual(report['failures'], [])
             else:
                 self.assertEqual(old, new, row['case'])
                 self.assertEqual(report['failures'][0]['reason'], row['prior_reason'])
 
-    def test_recorded_hold_corpus_releases_only_pitch(self):
+    def test_recorded_hold_corpus_releases_pitch_and_proven_hex(self):
         rows = json.loads((Path(__file__).parent / 'fixtures/stable_ordinal_versions.json').read_text())
         self.assertEqual(len(rows), 19)
         self.assertEqual(len({r['case'] for r in rows}), 19)
@@ -197,12 +197,12 @@ class StableOrdinalTests(unittest.TestCase):
             i = request(row['source'], row['short'], row['prior'])
             i = replace(i, source_cask=row['case'], observation=replace(i.observation, bundle_version=row['build']))
             d = policy.reconcile(i)
-            if row['case'] == 'pitch':
+            if row['case'] in {'pitch', 'steermouse', 'cursorsense'}:
                 self.assertEqual((d.action, d.version, d.verified), ('WRITE', row['short'], True))
                 writes.append(row['case'])
             else:
                 self.assertEqual((d.action, d.reason), ('HOLD', row['prior_reason']), row['case'])
-        self.assertEqual(writes, ['pitch'])
+        self.assertEqual(set(writes), {'pitch', 'steermouse', 'cursorsense'})
 
 
 if __name__ == '__main__':

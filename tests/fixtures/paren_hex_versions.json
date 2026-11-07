@@ -1,0 +1,163 @@
+[
+  {
+    "case": "firefox@developer-edition",
+    "source": "160.0b5",
+    "short": "160.0",
+    "build": "16026.11.4",
+    "prior": "159.0b4",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "steermouse",
+    "source": "5.8.2",
+    "short": "5.8.2(095C)",
+    "build": "5.8.2",
+    "prior": "5.8.1",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "wechat",
+    "source": "4.2.0.17,270353",
+    "short": "4.2.0",
+    "build": "270353",
+    "prior": "4.1.15.55",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "xmind",
+    "source": "27.01.05087-202611032216",
+    "short": "27.01.05087",
+    "build": "2026110322160",
+    "prior": "26.05.01107-202609082317",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "android-studio",
+    "source": "2026.2.2.9,rabbit2-patch1",
+    "short": "2026.2",
+    "build": "AI-262.10968.63.2622.16840690",
+    "prior": "2026.2.1.8",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "brave-browser",
+    "source": "1.99.55.0",
+    "short": "157.1.99.55",
+    "build": "199.55",
+    "prior": "1.97.59.0",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "capcut",
+    "source": "9.7.1.4778",
+    "short": "9.7.1",
+    "build": "9.7.1",
+    "prior": "9.5.0.4590",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "hopper-disassembler",
+    "source": "6.6.2",
+    "short": "6.6.2-demo",
+    "build": "42.6316064",
+    "prior": "6.6.0",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "keeper-password-manager",
+    "source": "18.7.0",
+    "short": "18.6.6",
+    "build": "17932200693002",
+    "prior": "18.6.5",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "libreoffice",
+    "source": "26.8.2",
+    "short": "26.8.2.2",
+    "build": "26.8.2.2",
+    "prior": "26.8.1",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "expandrive",
+    "source": "2026.11.05.914",
+    "short": "2026.11.06",
+    "build": "2026.11.06",
+    "prior": "2026.10.02.902",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "hoppscotch",
+    "source": "26.10.1-0",
+    "short": "26.10.1",
+    "build": "26.10.1",
+    "prior": "26.9.0-0",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "reaper",
+    "source": "7.85",
+    "short": "7.85.0_19ce87au",
+    "build": "7.85.0_19ce87au",
+    "prior": "7.82",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "cursorsense",
+    "source": "2.5.1",
+    "short": "2.5.1(2F17)",
+    "build": "2.5.1",
+    "prior": "2.5",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "goodsync",
+    "source": "12.11.12",
+    "short": "12.11.12.2",
+    "build": "12.11.12.2",
+    "prior": "12.11.11",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "megasync",
+    "source": "6.7.0.3",
+    "short": "6.7.0",
+    "build": null,
+    "prior": "6.6.2.0",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "cmux",
+    "source": "0.65.2.2",
+    "short": "0.65.2",
+    "build": "113",
+    "prior": "0.65.2",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "winbox",
+    "source": "4.5",
+    "short": "4.5.102000",
+    "build": "4.5.102000",
+    "prior": "4.4",
+    "prior_reason": "RELATION_UNPROVEN"
+  },
+  {
+    "case": "pitch",
+    "source": "2.152.0,stable.4,8640929",
+    "short": "2.152.0-stable.4",
+    "build": "2.152.0-stable.4+ci8640929",
+    "prior": "2.152.0-stable.4",
+    "prior_reason": "EQUAL_ORDER_TEXT_DIFFERS",
+    "already_published": true
+  },
+  {
+    "case": "kdenlive",
+    "source": "26.08.3",
+    "short": "26.08",
+    "build": "26.08.3",
+    "prior": "26.08.2",
+    "prior_reason": "RELATION_UNPROVEN"
+  }
+]

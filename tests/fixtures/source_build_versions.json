@@ -13,7 +13,7 @@
     "short": "5.8.2(095C)",
     "build": "5.8.2",
     "prior": "5.8.1",
-    "relation": null
+    "relation": "SOURCE_PAREN_HEX_BUILD"
   },
   {
     "case": "wechat",
@@ -149,7 +149,7 @@
     "short": "2.5.1(2F17)",
     "build": "2.5.1",
     "prior": "2.5",
-    "relation": null
+    "relation": "SOURCE_PAREN_HEX_BUILD"
   },
   {
     "case": "goodsync",
