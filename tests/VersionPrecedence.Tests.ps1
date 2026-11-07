@@ -4,7 +4,7 @@ foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
     $ast = [System.Management.Automation.Language.Parser]::ParseFile((Join-Path $PSScriptRoot "../$file"), [ref]$tokens, [ref]$errors)
     if ($errors.Count) { throw ($errors | Out-String) }
     $comparator = if ($file -eq 'IntuneBrew_Runbook.ps1') { 'Is-NewerVersion' } else { 'Test-NewerVersion' }
-    $requiredFunctions = @('Compare-VersionSegments', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord', $comparator, 'Convert-VersionToSortable')
+    $requiredFunctions = @('Compare-VersionSegments', 'Get-CveComparableVersion', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord', $comparator, 'Convert-VersionToSortable')
     foreach ($name in $requiredFunctions) {
         $function = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $name }, $true)
         foreach ($command in $function.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] }, $true)) {
