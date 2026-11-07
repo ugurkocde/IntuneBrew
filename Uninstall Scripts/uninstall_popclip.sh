@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/com.pilotmoon.popclip" ]; then
     rm -f "$HOME/Library/Application Support/com.pilotmoon.popclip" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/CrashReporter/PopClip_*.plist
+echo "Removing $HOME/Library/Application Support/CrashReporter/PopClip_*.plist..."
+if [ -d "$HOME/Library/Application Support/CrashReporter/PopClip_*.plist" ]; then
+    rm -rf "$HOME/Library/Application Support/CrashReporter/PopClip_*.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/CrashReporter/PopClip_*.plist" ]; then
+    rm -f "$HOME/Library/Application Support/CrashReporter/PopClip_*.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/PopClip
 echo "Removing $HOME/Library/Application Support/PopClip..."
 if [ -d "$HOME/Library/Application Support/PopClip" ]; then
@@ -41,12 +49,28 @@ elif [ -f "$HOME/Library/Application Support/PopClip" ]; then
     rm -f "$HOME/Library/Application Support/PopClip" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/CloudKit/com.pilotmoon.popclip
+echo "Removing $HOME/Library/Caches/CloudKit/com.pilotmoon.popclip..."
+if [ -d "$HOME/Library/Caches/CloudKit/com.pilotmoon.popclip" ]; then
+    rm -rf "$HOME/Library/Caches/CloudKit/com.pilotmoon.popclip" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/CloudKit/com.pilotmoon.popclip" ]; then
+    rm -f "$HOME/Library/Caches/CloudKit/com.pilotmoon.popclip" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.pilotmoon.popclip
 echo "Removing $HOME/Library/Caches/com.pilotmoon.popclip..."
 if [ -d "$HOME/Library/Caches/com.pilotmoon.popclip" ]; then
     rm -rf "$HOME/Library/Caches/com.pilotmoon.popclip" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.pilotmoon.popclip" ]; then
     rm -f "$HOME/Library/Caches/com.pilotmoon.popclip" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.pilotmoon.popclip
+echo "Removing $HOME/Library/HTTPStorages/com.pilotmoon.popclip..."
+if [ -d "$HOME/Library/HTTPStorages/com.pilotmoon.popclip" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.pilotmoon.popclip" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.pilotmoon.popclip" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.pilotmoon.popclip" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.pilotmoon.popclip.plist
