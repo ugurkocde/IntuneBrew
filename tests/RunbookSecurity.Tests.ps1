@@ -79,12 +79,12 @@ foreach ($bad in @('{}', '[]', '{"vulnerabilities":{}}', '{"vulnerabilities":[nu
     if (-not $threw) { throw 'Malformed dataset accepted.' }
 }
 # Exercise the production stream reader at and beyond its cap, invalid UTF-8 and cancellation.
-foreach ($length in @(0, 8191, 8192, 2MB)) {
+foreach ($length in @(0, 8191, 8192, 16MB)) {
     $stream = [IO.MemoryStream]::new([byte[]]::new($length))
     try { if ((Read-BoundedCveContent $stream ([Threading.CancellationToken]::None)).Length -ne $length) { throw 'Stream was truncated.' } }
     finally { $stream.Dispose() }
 }
-foreach ($bytes in @([byte[]]::new(2MB + 1), [byte[]]@(0xff))) {
+foreach ($bytes in @([byte[]]::new(16MB + 1), [byte[]]@(0xff))) {
     $stream = [IO.MemoryStream]::new($bytes); $threw = $false
     try { $null = Read-BoundedCveContent $stream ([Threading.CancellationToken]::None) } catch { $threw = $true }
     finally { $stream.Dispose() }
@@ -112,10 +112,26 @@ $SecurityHoldLevel = 'None'; $IgnoreSecurityHold = $false; $url = 'https://raw.g
 if ((Get-RunbookCveAssessment $url '1' '2').Held -or $script:requests -ne 0) { throw 'Disabled policy fetched a feed or held an update.' }
 $SecurityHoldLevel = 'High'
 if (-not (Get-RunbookCveAssessment $url '1' '2').Held) { throw 'Introduced target not held.' }
+
+# A valid large feed must reach the evaluator rather than become a data-error hold.
+$padding = 'x' * (2MB + 1)
+$largeIntroduced = @{ vulnerabilities = @(@{ cve_id = 'CVE-2026-12345'; severity = 'HIGH'; affected_version_start = '2'; affected_version_start_type = 'including' }); testPadding = $padding } | ConvertTo-Json -Depth 5 -Compress
+$script:response = @{ StatusCode = 200; Content = $largeIntroduced }
+$largeResult = Get-RunbookCveAssessment $url '1' '2'
+if (-not $largeResult.Held -or $largeResult.Reason -ne 'assessed' -or $largeResult.Impact.Records[0].Classification -ne 'Introduced') { throw 'Valid large introduced feed failed to reach evaluator.' }
+$script:response = @{ StatusCode = 200; Content = (@{ vulnerabilities = @(); testPadding = $padding } | ConvertTo-Json -Compress) }
+$largeResult = Get-RunbookCveAssessment $url '1' '2'
+if ($largeResult.Held -or $largeResult.Reason -ne 'assessed') { throw 'Valid large empty feed became a data-error hold.' }
+$script:response = @{ StatusCode = 200; Content = $dataset }
+foreach ($name in @('Read-BoundedCveContent', 'Invoke-CveDataRequest', 'Get-RunbookCveAssessment')) {
+    $cveFunction = $asts['IntuneBrew_Runbook.ps1'].Find({ param($n) $n -is [Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $name }, $true)
+    if ($cveFunction.Extent.Text -match '(?<![0-9])2MB\b' -or $cveFunction.Extent.Text -notmatch '16MB') { throw 'Inconsistent Runbook CVE byte limit.' }
+}
+
 $script:response = @{ StatusCode = 404 }
 if ((Get-RunbookCveAssessment $url '1' '2').Held) { throw '404 changed CLI missing-data semantics.' }
 foreach ($response in @(@{ StatusCode = 429 }, @{ StatusCode = 500 }, @{ StatusCode = 302 }, @{ StatusCode = 200; Content = 'not json' },
-        @{ StatusCode = 200; Content = '{}' }, @{ StatusCode = 200; Content = ('x' * (2MB + 1)) })) {
+        @{ StatusCode = 200; Content = '{}' }, @{ StatusCode = 200; Content = ('x' * (16MB + 1)) })) {
     $script:response = $response
     $result = Get-RunbookCveAssessment $url '1' '2'
     if (-not $result.Held -or $result.Reason -ne 'data-error') { throw 'Unavailable or malformed feed failed open.' }
