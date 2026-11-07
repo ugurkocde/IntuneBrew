@@ -648,34 +648,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| beekeeper studio | 6.2.1 | 6.2.2 |
-| biscuit | 2.2.5 | 2.2.8 |
-| chatgpt | 26.1103.31037 | 26.1103.32239 |
-| cleanmymac | 5.7.3 | 5.7.4 |
-| figma | 126.10.13 | 126.11.7 |
-| github copilot cli | 1.0.106 | 1.0.107 |
-| hepta | 1.116.0 | 1.117.0 |
-| iina | 1.5.0 | 1.5.1 |
-| krisp | 3.19.1 | 3.19.6 |
-| langdock | 1.1.1 | 1.1.2 |
-| logitech options | 2.9.994631 | 2.9.1013853 |
-| microsoft azure storage explorer | 1.47.0 | 1.47.1 |
-| microsoft visual studio code | 1.145.1 | 1.145.2 |
-| multiviewer | 2.14.0 | 2.15.1 |
-| netron | 9.3.4 | 9.3.5 |
-| onlyswitch | 3.4.0 | 3.5.0 |
-| paseo | 0.15.2 | 0.15.3 |
-| recut | 4.5.5 | 4.5.6 |
-| setapp | 3.58.0 | 3.59.0 |
-| shapr3d | 26.202.0 | 26.203.0 |
-| spotify | 1.3.6.1921 | 1.3.8.620 |
-| superhuman | 1044.0.3 | 1044.0.4 |
-| superlist | 1.58.4 | 1.58.5 |
-| superwhisper | 3.2.0 | 3.2.1 |
-| tuta mail | 365.261103.0 | 366.261105.0 |
-| unity hub | 3.22.5 | 3.22.6 |
-| zen browser | 1.24b | 1.24.1b |
-| zotero | 10.0.7 | 10.0.8 |
+| pitch | 2.152.0-stable.3 | 2.152.0-stable.4 |
 
 20 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
