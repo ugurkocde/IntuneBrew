@@ -151,6 +151,15 @@ def parse_detection(value):
     return tuple(int(part) for part in match[1].split(".")) if match else None
 
 
+
+def _stable_ordinal(value):
+    """Order only canonical triplet stable ordinals, without widening detection parsing."""
+    if type(value) is not str:
+        return None
+    match = re.fullmatch(r"(" + _BOUNDED_TRIPLET + r")-stable\.(" + _BOUNDED_COMPONENT + r")", value)
+    return (tuple(int(part) for part in match[1].split(".")), int(match[2])) if match else None
+
+
 def reconcile(i):
     obs = i.observation
     if isinstance(obs, InspectionRefusal):
@@ -201,6 +210,13 @@ def reconcile(i):
         else:
             n = max(len(new), len(old))
             new, old = new + (0,) * (n - len(new)), old + (0,) * (n - len(old))
+            if new == old and relation == "RENDER_CHANNEL":
+                current_ordinal, prior_ordinal = _stable_ordinal(short), _stable_ordinal(i.prior.version)
+                if current_ordinal and prior_ordinal and current_ordinal[0] == prior_ordinal[0]:
+                    if current_ordinal[1] > prior_ordinal[1]:
+                        return Decision("WRITE", short, digest, relation, "PROVEN_DETECTION_TEXT", True)
+                    if current_ordinal[1] < prior_ordinal[1]:
+                        return Decision("HOLD", relation=relation, reason="DETECTION_REGRESSION")
             if new <= old:
                 reason = "DETECTION_REGRESSION" if new < old else "EQUAL_ORDER_TEXT_DIFFERS"
                 return Decision("HOLD", relation=relation, reason=reason)

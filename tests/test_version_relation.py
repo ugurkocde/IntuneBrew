@@ -1,5 +1,6 @@
 """Synthetic fixtures and recorded strings; none are live installation evidence."""
 import ast
+import json
 from dataclasses import fields, replace
 import sys
 from pathlib import Path
@@ -120,6 +121,88 @@ class DecisionTests(unittest.TestCase):
         self.assertEqual(imports, {'re', 'dataclasses'})
         self.assertEqual({f.name for f in fields(policy.Decision)}, {'action', 'version', 'sha', 'relation', 'reason', 'verified'})
         self.assertEqual(policy.reconcile(request()), policy.reconcile(request()))
+
+
+
+class StableOrdinalTests(unittest.TestCase):
+    def stable_request(self, prior='2.152.0-stable.3', ordinal='4', core='2.152.0'):
+        return request(core + ',stable.' + ordinal + ',8640929', core + '-stable.' + ordinal, prior)
+
+    def test_same_core_stable_ordinal_order_is_numeric_and_verified(self):
+        for old, new in [('3', '4'), ('9', '10'), ('0', '999999999')]:
+            i = self.stable_request('2.152.0-stable.' + old, new)
+            d = policy.reconcile(i)
+            self.assertEqual((d.action, d.version, d.sha, d.relation, d.verified),
+                             ('WRITE', i.observation.short_version, SHA, 'RENDER_CHANNEL', True))
+            reverse = policy.reconcile(self.stable_request('2.152.0-stable.' + new, old))
+            self.assertEqual((reverse.action, reverse.reason), ('HOLD', 'DETECTION_REGRESSION'))
+        self.assertEqual(policy.parse_detection('2.152.0-stable.4'), (2, 152, 0))
+
+    def test_same_text_refresh_noop_and_plan_are_unchanged(self):
+        i = self.stable_request('2.152.0-stable.4')
+        self.assertEqual(policy.reconcile(i).action, 'REFRESH')
+        same = replace(i, prior=policy.PriorEntry(i.prior.version, SHA, i.url))
+        self.assertEqual(policy.reconcile(same).action, 'NOOP')
+        self.assertEqual(policy.plan(same).reason, 'SAME_PINNED_ARTIFACT')
+        self.assertEqual(policy.plan(replace(same, declared_sha256=None)).action, 'INSPECT')
+
+    def test_noncanonical_or_other_priors_do_not_gain_ordinal_order(self):
+        equal = ['2.152.0-stable', '2.152.0', '2.152-stable.3', '02.152.0-stable.3',
+                 '2.152.0-stable.1000000000', '2.152.0+3', '2.152.0 (build 3)']
+        unknown = ['2.152.0-stable.03', '2.152.0-Stable.3', '2.152.0-beta.3', 'opaque']
+        for reason, priors in [('EQUAL_ORDER_TEXT_DIFFERS', equal), ('PRIOR_ORDER_UNKNOWN', unknown)]:
+            for prior in priors:
+                with self.subTest(prior=prior):
+                    d = policy.reconcile(self.stable_request(prior))
+                    self.assertEqual((d.action, d.reason), ('HOLD', reason))
+        for i, reason in [(self.stable_request(ordinal='04'), 'RELATION_UNPROVEN'),
+                          (self.stable_request(ordinal='1000000000'), 'EQUAL_ORDER_TEXT_DIFFERS'),
+                          (self.stable_request(core='2.152'), 'EQUAL_ORDER_TEXT_DIFFERS')]:
+            d = policy.reconcile(i)
+            self.assertEqual((d.action, d.reason), ('HOLD', reason))
+
+    def test_other_relations_core_order_and_guards_are_unchanged(self):
+        self.assertEqual(policy.reconcile(self.stable_request('2.151.0-stable.9')).action, 'WRITE')
+        self.assertEqual(policy.reconcile(self.stable_request('2.153.0-stable.1')).reason, 'DETECTION_REGRESSION')
+        self.assertEqual(policy.reconcile(self.stable_request(None)).action, 'WRITE')
+        i = self.stable_request()
+        self.assertEqual(policy.reconcile(replace(i, consumer_caps=frozenset())).reason, 'CONSUMER_CAPABILITY_PENDING')
+        for observation in [replace(i.observation, bundle_id='org.example.wrong'),
+                            replace(i.observation, artifact_sha256='b' * 64),
+                            replace(i.observation, inspector='other')]:
+            self.assertEqual(policy.reconcile(replace(i, observation=observation)).reason, 'OBSERVATION_INCONSISTENT')
+        for raw, short in [('2.152.0,4', '2.152.0+4'), ('2.152.0,4', '2.152.0 (build 4)')]:
+            self.assertEqual(policy.reconcile(request(raw, short, '2.152.0+3')).reason, 'EQUAL_ORDER_TEXT_DIFFERS')
+
+    def test_collector_preserves_other_hold_bytes_and_publishes_exact_pitch(self):
+        import test_dmg_reconciliation as integration
+        rows = json.loads((Path(__file__).parent / 'fixtures/stable_ordinal_versions.json').read_text())
+        for row in rows:
+            obs = integration.c.BundleObservation(integration.SHA, integration.BUNDLE, row['short'], row['build'])
+            old, new, report = integration.CollectorIntegrationTests.run_case(self, obs, raw=row['source'], prior=row['prior'])
+            if row['case'] == 'pitch':
+                self.assertEqual((json.loads(new)['version'], json.loads(new)['sha']), (row['short'], integration.SHA))
+                self.assertEqual(report['versionEvidence'][0]['relation'], 'RENDER_CHANNEL')
+                self.assertEqual(report['failures'], [])
+            else:
+                self.assertEqual(old, new, row['case'])
+                self.assertEqual(report['failures'][0]['reason'], row['prior_reason'])
+
+    def test_recorded_hold_corpus_releases_only_pitch(self):
+        rows = json.loads((Path(__file__).parent / 'fixtures/stable_ordinal_versions.json').read_text())
+        self.assertEqual(len(rows), 19)
+        self.assertEqual(len({r['case'] for r in rows}), 19)
+        writes = []
+        for row in rows:
+            i = request(row['source'], row['short'], row['prior'])
+            i = replace(i, source_cask=row['case'], observation=replace(i.observation, bundle_version=row['build']))
+            d = policy.reconcile(i)
+            if row['case'] == 'pitch':
+                self.assertEqual((d.action, d.version, d.verified), ('WRITE', row['short'], True))
+                writes.append(row['case'])
+            else:
+                self.assertEqual((d.action, d.reason), ('HOLD', row['prior_reason']), row['case'])
+        self.assertEqual(writes, ['pitch'])
 
 
 if __name__ == '__main__':
