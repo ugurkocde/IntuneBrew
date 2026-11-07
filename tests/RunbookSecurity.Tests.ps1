@@ -148,6 +148,22 @@ foreach ($mode in @($false, $true)) {
     $apps = @(Get-IntuneApps)
     if ($apps.Count -ne 1 -or -not $apps[0].SecurityHeld) { throw "Lookup path bypassed gate: bundle=$mode" }
 }
+# Logged CVE IDs use canonical sequence padding; malformed IDs never alter hold evaluation.
+$validIds = @('CVE-2014-0160', 'CVE-2026-10000', 'CVE-2026-1234567')
+$invalidIds = @('CVE-2026-05773', 'CVE-2026-123', "CVE-2026-1234`n")
+$records = @(($validIds + $invalidIds) | ForEach-Object {
+    @{ cve_id = $_; severity = 'HIGH'; affected_version_start = '2'; affected_version_start_type = 'including' }
+})
+$script:response = @{ StatusCode = 200; Content = (@{ vulnerabilities = $records } | ConvertTo-Json -Depth 5) }
+$script:messages = @()
+$loggedCandidate = New-RunbookAppCandidate -Manifest $script:manifest -JsonUrl $url -IntuneVersion '1' -IntuneAppId 'fake-app'
+if (-not $loggedCandidate.SecurityHeld) { throw 'Logging filter changed hold evaluation.' }
+$warning = @($script:messages | Where-Object Type -eq 'Warning').Message -join ' '
+$loggedIds = (($warning -split '; ', 2)[1]) -split ', '
+if ($loggedIds.Count -ne $validIds.Count) { throw 'Wrong number of canonical CVE IDs logged.' }
+foreach ($id in $validIds) { if ($loggedIds -cnotcontains $id) { throw "Canonical CVE ID missing from warning: $id" } }
+foreach ($id in $invalidIds) { if ($loggedIds -ccontains $id) { throw 'Malformed CVE ID reached the warning log.' } }
+$script:response = @{ StatusCode = 200; Content = $dataset }
 $SecurityHoldLevel = 'None'; $script:metadataReads = 0
 $app = @(Get-IntuneApps)[0]
 $script:manifest.version = '3'; $script:manifest.url = 'https://example.invalid/three.pkg'

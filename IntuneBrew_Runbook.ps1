@@ -1249,7 +1249,7 @@ function New-RunbookAppCandidate {
         $assessment = Get-RunbookCveAssessment -JsonUrl $JsonUrl -CurrentVersion $IntuneVersion -TargetVersion $Manifest.version
         if ($assessment.WouldHold) {
             $ids = @($assessment.Impact.Records | Where-Object Hold | ForEach-Object { $_.Vulnerability.cve_id } |
-                Where-Object { $_ -cmatch '^CVE-[0-9]{4}-[0-9]{4,}\z' } | Select-Object -First 10)
+                Where-Object { $_ -cmatch '^CVE-[0-9]{4}-(?:[0-9]{4}|[1-9][0-9]{4,})\z' } | Select-Object -First 10)
             $action = if ($assessment.Held) { 'Skipping held update' } else { 'Security hold explicitly overridden' }
             Write-Log "$action for $($Manifest.name): $($assessment.Reason); $($ids -join ', ')" -Type 'Warning' | Out-Host
         }
