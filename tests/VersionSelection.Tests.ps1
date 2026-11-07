@@ -31,7 +31,7 @@ foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
         $expectedCount = if ($file -eq 'IntuneBrew.ps1') { 1 } else { 2 }
         if ($calls.Count -ne $expectedCount) { throw "Not all lookup paths use the selector in $file" }
         $sortableCalls = @($ast.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] -and $n.GetCommandName() -eq 'Convert-VersionToSortable' }, $true))
-        if ($sortableCalls.Count -ne 1 -or $sortableCalls[0].Extent.StartOffset -lt $selector.Extent.StartOffset -or $sortableCalls[0].Extent.EndOffset -gt $selector.Extent.EndOffset) { throw 'Sortable keys used outside the legacy fallback.' }
+        if ($sortableCalls.Count -lt 1 -or @($sortableCalls | Where-Object { $_.Extent.StartOffset -lt $selector.Extent.StartOffset -or $_.Extent.EndOffset -gt $selector.Extent.EndOffset }).Count -ne 0) { throw 'Sortable keys used outside the selector.' }
     }
 
     foreach ($custom in @($false, $true)) {
@@ -63,6 +63,38 @@ foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
         $singleton = @{ id = 'fake-single'; primaryBundleVersion = '0.4.28+2' }
         if ($custom) { $singleton = [pscustomobject]$singleton }
         if (-not [object]::ReferenceEquals((Select-LatestAppRecord @($singleton)), $singleton)) { throw 'Singleton record identity changed.' }
+    }
+    # Same-core stable ordinals must select the same original app ID in every input order.
+    foreach ($custom in @($false, $true)) {
+        foreach ($versions in @(@('2.152.0-stable.3', '2.152.0-stable.4'), @('2.152.0-stable.9', '2.152.0-stable.10'), @('2.152.0-stable.0', '2.152.0-stable.999999999'))) {
+            $older = @{ id = 'fixture-older'; primaryBundleVersion = $versions[0] }
+            $newer = @{ id = 'fixture-newer'; primaryBundleVersion = $versions[1] }
+            if ($custom) { $older = [pscustomobject]$older; $newer = [pscustomobject]$newer }
+            foreach ($records in @(@($older, $newer), @($newer, $older))) {
+                if (-not [object]::ReferenceEquals((Select-LatestAppRecord $records), $newer)) { throw 'Stable ordinal selected the wrong app identity.' }
+            }
+            if (-not (& $updater $versions[1] $versions[0]) -or (& $updater $versions[0] $versions[1])) { throw 'Stable selector and updater disagree.' }
+        }
+        $records = @('2.152.0-stable.3','2.152.0-stable.10','2.152.0-stable.4' | ForEach-Object { @{ id = ('fixture-' + $_); primaryBundleVersion = $_ } })
+        if ($custom) { $records = @($records | ForEach-Object { [pscustomobject]$_ }) }
+        foreach ($indices in @(@(0,1,2),@(0,2,1),@(1,0,2),@(1,2,0),@(2,0,1),@(2,1,0))) {
+            if (-not [object]::ReferenceEquals((Select-LatestAppRecord @($records[$indices[0]],$records[$indices[1]],$records[$indices[2]])), $records[1])) { throw 'Stable ordinal depends on input order.' }
+        }
+        $lowerUnproven = @{ id = 'fixture-lower-core'; primaryBundleVersion = '2.151.0-Stable.999' }
+        if (-not [object]::ReferenceEquals((Select-LatestAppRecord (@($lowerUnproven) + $records)), $records[1])) { throw 'Lower non-tied group changed the winner.' }
+    }
+    # Any unsupported item in the winning tie keeps the exact legacy result, in either order.
+    foreach ($bad in @('2.152.0', '2.152.0-Stable.99','2.152.0-beta.99','2.152.0-stable.04','02.152.0-stable.99','2.152.0-stable.1000000000',"2.152.0-stable.99`n",('2.152.0-stable.'+[char]0x0664),'2.152.0-stable.99+1','2.152.0-stable.99(ABCD)','2.152.0.0-stable.99','2.152-stable.99')) {
+        $good = @{ id = 'fixture-canonical'; primaryBundleVersion = '2.152.0-stable.4' }; $other = @{ id = 'fixture-unsupported'; primaryBundleVersion = $bad }
+        foreach ($records in @(@($good,$other),@($other,$good))) {
+            $legacy = $records | Sort-Object -Property @{Expression = { Convert-VersionToSortable $_.primaryBundleVersion } } -Descending | Select-Object -First 1
+            if (-not [object]::ReferenceEquals((Select-LatestAppRecord $records), $legacy)) { throw ('Unsupported tie changed legacy identity: '+$bad) }
+        }
+    }
+    $duplicateA=@{id='fixture-a';primaryBundleVersion='2.152.0-stable.4'};$duplicateB=@{id='fixture-b';primaryBundleVersion='2.152.0-stable.4'}
+    foreach($records in @(@($duplicateA,$duplicateB),@($duplicateB,$duplicateA))){
+        $legacy=$records | Sort-Object -Property @{Expression={Convert-VersionToSortable $_.primaryBundleVersion}} -Descending | Select-Object -First 1
+        if(-not [object]::ReferenceEquals((Select-LatestAppRecord $records),$legacy)){throw 'Equal ordinal changed legacy identity.'}
     }
     if ($null -ne (Select-LatestAppRecord $null) -or $null -ne (Select-LatestAppRecord @())) { throw 'Empty input should return null.' }
     # Invalid, mixed-format and bare-only groups deliberately retain their old ordering.
