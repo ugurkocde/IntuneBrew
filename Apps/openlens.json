@@ -11,5 +11,7 @@
   "sha": "2c53fa3ccf383e10c8a711ba23a6277800415173ba45ef12597b656c9d818e29",
   "category": "Developer Tools",
   "publisher": "Muhammed Kalkan",
-  "previous_version": "6.5.2-366"
+  "previous_version": "6.5.2-366",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: discontinued"
 }
