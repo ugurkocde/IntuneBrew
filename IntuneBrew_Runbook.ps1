@@ -1177,7 +1177,7 @@ function Read-BoundedCveContent {
     try {
         $buffer = [byte[]]::new(8192)
         while (($count = $Stream.ReadAsync($buffer, 0, $buffer.Length, $CancellationToken).GetAwaiter().GetResult()) -gt 0) {
-            if ($body.Length + $count -gt 2MB) { throw 'CVE response exceeds size limit.' }
+            if ($body.Length + $count -gt 16MB) { throw 'CVE response exceeds size limit.' }
             $body.Write($buffer, 0, $count)
         }
         return [Text.UTF8Encoding]::new($false, $true).GetString($body.ToArray())
@@ -1185,7 +1185,7 @@ function Read-BoundedCveContent {
     finally { $body.Dispose() }
 }
 
-# Fixed public trust root, redirects disabled, and a bounded streaming read (2 MiB/20 seconds).
+# Fixed public trust root, redirects disabled, and a bounded streaming read (16 MiB/20 seconds).
 # Kept separate so offline tests never need a network or Graph connection.
 function Invoke-CveDataRequest {
     param([string]$Uri)
@@ -1201,7 +1201,7 @@ function Invoke-CveDataRequest {
         $response = $client.GetAsync($Uri, [Net.Http.HttpCompletionOption]::ResponseHeadersRead, $deadline.Token).GetAwaiter().GetResult()
         $status = [int]$response.StatusCode
         if ($status -ne 200) { return [pscustomobject]@{ StatusCode = $status; Content = $null } }
-        $limit = 2MB
+        $limit = 16MB
         if ($response.Content.Headers.ContentLength -gt $limit) { throw 'CVE response exceeds size limit.' }
         $stream = $response.Content.ReadAsStreamAsync().GetAwaiter().GetResult()
         return [pscustomobject]@{ StatusCode = 200; Content = (Read-BoundedCveContent $stream $deadline.Token) }
@@ -1228,7 +1228,7 @@ function Get-RunbookCveAssessment {
         $response = Invoke-CveDataRequest ('https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/CVE/' + $key + '.json')
         if ($response.StatusCode -eq 404) { $reason = 'unavailable'; $wouldHold = $false }
         elseif ($response.StatusCode -eq 200) {
-            if ($response.Content -isnot [string] -or [Text.Encoding]::UTF8.GetByteCount($response.Content) -gt 2MB) {
+            if ($response.Content -isnot [string] -or [Text.Encoding]::UTF8.GetByteCount($response.Content) -gt 16MB) {
                 throw 'Invalid CVE response body.'
             }
             $dataset = ConvertTo-CveDataset ($response.Content | ConvertFrom-Json -ErrorAction Stop)
