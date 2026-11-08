@@ -1,14 +1,14 @@
 {
   "name": "Reqable",
   "description": "Advanced API Debugging Proxy",
-  "version": "3.3.10",
-  "url": "https://github.com/reqable/reqable-app/releases/download/3.3.10/reqable-app-macos-arm64.dmg",
-  "vendor_url": "https://github.com/reqable/reqable-app/releases/download/3.3.10/reqable-app-macos-arm64.dmg",
+  "version": "3.3.11",
+  "url": "https://github.com/reqable/reqable-app/releases/download/3.3.11/reqable-app-macos-arm64.dmg",
+  "vendor_url": "https://github.com/reqable/reqable-app/releases/download/3.3.11/reqable-app-macos-arm64.dmg",
   "bundleId": "com.reqable.macosx",
   "homepage": "https://reqable.com/",
   "homebrew_cask": "reqable",
   "fileName": "reqable-app-macos-arm64.dmg",
-  "sha": "23ac2a4197d26bac71bc35e516a52623a2d06b774a10080b675449eb81800d91",
+  "sha": "7455596d2013e87613265dd977a6d8e756ca20915718d3f5a8d6a2448f21b8e1",
   "category": "Developer Tools",
   "publisher": "Reqable",
   "previous_version": "3.3.10"

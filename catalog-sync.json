@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-07T20:13:50.670948Z",
-  "lastFullSyncAt": "2026-11-07T00:54:13.485912Z",
+  "lastPublishedAt": "2026-11-08T00:56:07.259438Z",
+  "lastFullSyncAt": "2026-11-08T00:56:07.259438Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -19,10 +19,6 @@
     },
     {
       "app": "cmux",
-      "stage": "collection"
-    },
-    {
-      "app": "cursorsense",
       "stage": "collection"
     },
     {
@@ -46,6 +42,10 @@
       "stage": "collection"
     },
     {
+      "app": "kdenlive",
+      "stage": "collection"
+    },
+    {
       "app": "keeper_password_manager",
       "stage": "collection"
     },
@@ -62,15 +62,7 @@
       "stage": "collection"
     },
     {
-      "app": "pitch",
-      "stage": "collection"
-    },
-    {
       "app": "reaper",
-      "stage": "collection"
-    },
-    {
-      "app": "steermouse",
       "stage": "collection"
     },
     {
@@ -87,5 +79,5 @@
     }
   ],
   "appCount": 1154,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42408485080"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42429817100"
 }

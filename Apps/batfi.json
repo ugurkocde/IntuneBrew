@@ -1,14 +1,14 @@
 {
   "name": "BatFi",
   "description": "App for managing battery charging",
-  "version": "4.0.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/batfi_4.0.3.pkg",
+  "version": "4.1.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/batfi_4.1.0.pkg",
   "vendor_url": "https://files.micropixels.software/batfi/BatFi-latest.zip",
   "bundleId": "software.micropixels.BatFi",
   "homepage": "https://micropixels.software/batfi",
-  "fileName": "batfi_4.0.3.pkg",
+  "fileName": "batfi_4.1.0.pkg",
   "type": "app",
-  "sha": "d861875a79db8f4272e708a32ee336e2579781c5950112dddb8d65b305339150",
+  "sha": "fd0ded677a8b9431611dc5ed121991eedf43192541cc78501ea8d38cfcd2ab2e",
   "previous_version": "4.0.3",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:21:39Z",
