@@ -937,7 +937,9 @@ class CatalogConsistencyTests(unittest.TestCase):
         expected = {
             name
             for name, app_data in apps.items()
-            if not app_data.get("deprecated") and publisher.valid_package(app_data)
+            if not app_data.get("deprecated")
+            and publisher.valid_bundle_id(app_data)
+            and publisher.valid_package(app_data)
         }
 
         self.assertEqual(set(supported), expected)
