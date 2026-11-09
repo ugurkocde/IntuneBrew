@@ -870,7 +870,7 @@ class CatalogConsistencyTests(unittest.TestCase):
             for token, content in before.items():
                 (apps / f"{token}.json").write_bytes(content)
             (apps / "healthy.json").write_text(json.dumps({
-                "name": "Healthy", "version": "1.0", "homebrew_cask": "healthy",
+                "name": "Healthy", "version": "1.0", "homebrew_cask": "healthy", "bundleId": "com.example.healthy",
             }))
             with run_collector(directory, []):
                 collect_app_info.main()

@@ -28,6 +28,11 @@ def restore(path):
         path.write_bytes(previous)
 
 
+def valid_bundle_id(data):
+    value = data.get("bundleId")
+    return bool(data.get("deprecated") or isinstance(value, str) and value.strip())
+
+
 def valid_package(data):
     if data.get("type") not in REPACKAGED or data.get("deprecated"):
         return True
@@ -67,15 +72,17 @@ def publish(scope="all"):
     excluded = []
     for path in sorted(Path("Apps").glob("*.json")):
         data = load(path, {})
-        if not valid_package(data):
-            failures[path.name] = "package validation"
+        validation = ("bundle ID validation" if not valid_bundle_id(data) else
+                      "package validation" if not valid_package(data) else None)
+        if validation:
+            failures[path.name] = validation
             restore(path)
             if not path.exists():
                 continue
             data = load(path, {})
         if data.get("deprecated"):
             continue
-        if not valid_package(data):
+        if not valid_bundle_id(data) or not valid_package(data):
             excluded.append(path.stem)
             continue
         apps[path.stem] = f"https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Apps/{path.name}"
