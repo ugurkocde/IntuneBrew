@@ -1,117 +1,82 @@
 {
-  "lastChecked": "2026-11-08T00:56:07.259438Z",
+  "lastChecked": "2026-11-09T01:00:14.417635Z",
   "updates": [
     {
-      "appName": "batfi",
-      "previousVersion": "4.0.3",
-      "newVersion": "4.1.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/batfi.png"
-    },
-    {
-      "appName": "bettertouchtool",
-      "previousVersion": "6.1104",
-      "newVersion": "6.1112",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bettertouchtool.png"
-    },
-    {
-      "appName": "biscuit",
-      "previousVersion": "2.2.8",
-      "newVersion": "2.2.10",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/biscuit.png"
-    },
-    {
       "appName": "chatgpt",
-      "previousVersion": "26.1103.32239",
-      "newVersion": "26.1103.41825",
+      "previousVersion": "26.1103.41825",
+      "newVersion": "26.1103.60933",
       "changelog": "https://help.openai.com/en/articles/9703738-macos-app-release-notes",
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/chatgpt.png"
     },
     {
-      "appName": "figma",
-      "previousVersion": "126.11.7",
-      "newVersion": "126.11.8",
-      "changelog": "https://help.figma.com/hc/en-us/articles/360038511533-Release-Notes",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/figma.png"
+      "appName": "dockdoor",
+      "previousVersion": "1.42.2",
+      "newVersion": "1.42.3",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dockdoor.png"
     },
     {
-      "appName": "gather town",
-      "previousVersion": "1.39.2",
-      "newVersion": "1.41.3",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/gather_town.png"
+      "appName": "dropshare",
+      "previousVersion": "6.15",
+      "newVersion": "6.16",
+      "changelog": "https://dropshare.app/changelog/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dropshare.png"
     },
     {
-      "appName": "itsycal",
-      "previousVersion": "0.27.3",
-      "newVersion": "0.28.0",
+      "appName": "electrum",
+      "previousVersion": "4.8.3",
+      "newVersion": "4.8.4",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/itsycal.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/electrum.png"
+    },
+    {
+      "appName": "motrix",
+      "previousVersion": "2.3.0",
+      "newVersion": "2.4.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/motrix.png"
+    },
+    {
+      "appName": "multitouch",
+      "previousVersion": "2.0.4",
+      "newVersion": "2.0.5",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/multitouch.png"
     },
     {
       "appName": "multiviewer",
-      "previousVersion": "2.15.1",
-      "newVersion": "2.15.2",
+      "previousVersion": "2.15.2",
+      "newVersion": "2.16.1",
       "changelog": null,
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/multiviewer.png"
     },
     {
-      "appName": "onionshare",
-      "previousVersion": "2.7.1",
-      "newVersion": "2.7.2",
+      "appName": "remnote",
+      "previousVersion": "1.29.7",
+      "newVersion": "1.29.8",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/onionshare.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/remnote.png"
     },
     {
-      "appName": "opencode",
-      "previousVersion": "2.2.5",
-      "newVersion": "2.2.6",
+      "appName": "riverside studio",
+      "previousVersion": "1.34.0",
+      "newVersion": "1.34.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/opencode.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/riverside_studio.png"
     },
     {
-      "appName": "orca slicer",
-      "previousVersion": "2.4.2",
-      "newVersion": "2.5.0",
+      "appName": "simple comic",
+      "previousVersion": "1.9.9",
+      "newVersion": "1.11.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/orca_slicer.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/simple_comic.png"
     },
     {
-      "appName": "popclip",
-      "previousVersion": "2026.8.1",
-      "newVersion": "2026.11",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/popclip.png"
-    },
-    {
-      "appName": "recut",
-      "previousVersion": "4.5.6",
-      "newVersion": "4.5.7",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/recut.png"
-    },
-    {
-      "appName": "reqable",
-      "previousVersion": "3.3.10",
-      "newVersion": "3.3.11",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/reqable.png"
-    },
-    {
-      "appName": "tunnelblick",
-      "previousVersion": "10.0.2 (build 6590)",
-      "newVersion": "10.0.3 (build 6610)",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tunnelblick.png"
-    },
-    {
-      "appName": "waterfox",
-      "previousVersion": "6.7.7",
-      "newVersion": "6.7.8",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/waterfox.png"
+      "appName": "stats",
+      "previousVersion": "3.0.25",
+      "newVersion": "3.0.26",
+      "changelog": "https://github.com/exelban/stats/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/stats.png"
     }
   ]
 }

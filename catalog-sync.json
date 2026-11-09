@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-08T00:56:07.259438Z",
-  "lastFullSyncAt": "2026-11-08T00:56:07.259438Z",
+  "lastPublishedAt": "2026-11-09T01:00:14.417635Z",
+  "lastFullSyncAt": "2026-11-09T01:00:14.417635Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -54,11 +54,19 @@
       "stage": "collection"
     },
     {
+      "app": "meetingbar",
+      "stage": "collection"
+    },
+    {
       "app": "megasync",
       "stage": "collection"
     },
     {
       "app": "mozilla_firefox_developer_edition",
+      "stage": "collection"
+    },
+    {
+      "app": "onyx",
       "stage": "collection"
     },
     {
@@ -78,6 +86,6 @@
       "stage": "collection"
     }
   ],
-  "appCount": 1154,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42429817100"
+  "appCount": 1152,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42540245257"
 }

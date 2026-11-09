@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "aea9c23095fdcfde028c62de3a24756ca83a4780468c8b79ace0a1d112080a7a",
   "changelog": "https://help.figma.com/hc/en-us/articles/360038511533-Release-Notes",
-  "previous_version": "126.11.7",
+  "previous_version": "126.11.8",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:58:36Z",
     "qa_result": "Installation successful and verified",

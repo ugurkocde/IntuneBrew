@@ -9,7 +9,7 @@
   "fileName": "batfi_4.1.0.pkg",
   "type": "app",
   "sha": "fd0ded677a8b9431611dc5ed121991eedf43192541cc78501ea8d38cfcd2ab2e",
-  "previous_version": "4.0.3",
+  "previous_version": "4.1.0",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:21:39Z",
     "qa_result": "Installation successful and verified",

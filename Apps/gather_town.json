@@ -9,7 +9,7 @@
   "fileName": "gather_town_1.41.3.pkg",
   "type": "app",
   "sha": "00545ae8f2af8e4f13129e278cf4e8059687c82e048ffd838045d17ada7caf50",
-  "previous_version": "1.39.2",
+  "previous_version": "1.41.3",
   "qa_info": {
     "qa_timestamp": "2025-05-13T08:15:32Z",
     "qa_result": "Installation successful and verified",

@@ -13,5 +13,7 @@
   "previous_version": "3.4.1",
   "category": "Developer Tools",
   "publisher": "Vercel",
-  "homebrew_cask": "hyper"
+  "homebrew_cask": "hyper",
+  "deprecated": true,
+  "deprecation_reason": "deprecated in Homebrew: discontinued"
 }
