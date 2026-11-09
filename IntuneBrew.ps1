@@ -2832,6 +2832,7 @@ foreach ($app in $appsToUpload) {
     $contentVersion = $null
     $contentFile = $null
     $fileStatus = $null
+    $latestFileStatus = $null
     $fileEncryptionInfo = $null
     $appWasCreatedThisRun = $false
     $uploadStage = 'preparing'
@@ -3026,6 +3027,25 @@ foreach ($app in $appsToUpload) {
             }
         } while ($fileStatus.uploadState -ne "commitFileSuccess" -and $retryCount -lt $maxRetries)
 
+        # The last retry has not been observed yet. Read once more without
+        # submitting another commit; the API exposes no commit-generation ID.
+        if ($fileStatus.uploadState -ne "commitFileSuccess") {
+            Start-Sleep -Seconds 10
+            $latestFileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri -ErrorAction Stop
+            if ($latestFileStatus.uploadState -ceq 'commitFileSuccess' -and
+                ($latestFileStatus.isCommitted -isnot [bool] -or $latestFileStatus.isCommitted)) {
+                $fileStatus = $latestFileStatus
+            }
+            elseif ($latestFileStatus.uploadState -ceq 'commitFileFailed' -and
+                $latestFileStatus.isCommitted -is [bool] -and -not $latestFileStatus.isCommitted) {
+                $uploadStage = 'commit-failed'
+                throw "Latest observed status failed and the file is not committed."
+            }
+            else {
+                throw "Commit status could not be confirmed; the app was retained."
+            }
+        }
+
         if ($fileStatus.uploadState -eq "commitFileSuccess") {
             $uploadStage = 'committed'
             Write-Host "✅ File committed successfully" -ForegroundColor Green
@@ -3035,7 +3055,7 @@ foreach ($app in $appsToUpload) {
         }
     }
     catch {
-        if ($appWasCreatedThisRun -and $intuneAppId -and $uploadStage -eq 'created') {
+        if ($appWasCreatedThisRun -and $intuneAppId -and $uploadStage -in @('created', 'commit-failed')) {
             Write-Host "🧹 Removing incomplete app entry from Intune (ID: $intuneAppId)..." -ForegroundColor Yellow
             try {
                 Invoke-MgGraphRequest -Method DELETE -Uri "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$intuneAppId" -ErrorAction Stop | Out-Null
