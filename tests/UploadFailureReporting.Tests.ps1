@@ -34,16 +34,16 @@ if (-not $unsupportedFailed) { throw 'Unsupported installers must fail in intera
 
 $prefix = @'
 param([string]$Scenario, [string]$FixtureDirectory)
-$ErrorActionPreference = if ($Scenario -eq 'noninteractive') { 'Stop' } else { 'Continue' }
+$ErrorActionPreference = if ($Scenario -like 'noninteractive*') { 'Stop' } else { 'Continue' }
 $script:ExpectedPreference = [string]$ErrorActionPreference
-$NonInteractive = $Scenario -eq 'noninteractive'
+$NonInteractive = $Scenario -like 'noninteractive*'
 $heldApps = if ($Scenario -in @('held', 'failure-held')) { @('Fake held app') } else { @() }
 $copyAssignments = $false
 $updateExistingIntuneApp = $Scenario -eq 'existing-content-error'
 $ScopeTagIds = @()
 $script:Calls = @(); $script:Finalized = @(); $script:LocalCleanup = @()
 $script:FilesStarted = 0; $script:Committed = $false; $script:Sleeps = 0
-$appsToUpload = @(foreach ($index in 1..$(if ($Scenario -in @('mixed', 'missing-second-id', 'noninteractive')) { 2 } else { 1 })) {
+$appsToUpload = @(foreach ($index in 1..$(if ($Scenario -eq 'noninteractive-second-failure') { 3 } elseif ($Scenario -in @('mixed', 'missing-second-id', 'noninteractive')) { 2 } else { 1 })) {
     $name = "Fake app $index"
     [pscustomobject]@{ Name=$name; FormattedName=$name; IntuneVersion='Not in Intune';
         IntuneAppId=$(if ($updateExistingIntuneApp) { 'fake-existing-app' } else { $null });
@@ -66,7 +66,8 @@ function Invoke-MgGraphRequest {
     if ($Method -eq 'DELETE') { return }
     if ($Uri -eq 'https://graph.microsoft.com/beta/deviceAppManagement/mobileApps') {
         if ($Scenario -in @('create-rejection','failure-held','noninteractive') -or
-            ($Scenario -eq 'mixed' -and $script:FilesStarted -eq 1)) { Write-Error 'FAKE creation rejected'; return }
+            ($Scenario -eq 'mixed' -and $script:FilesStarted -eq 1) -or
+            ($Scenario -eq 'noninteractive-second-failure' -and $script:FilesStarted -eq 2)) { Write-Error 'FAKE creation rejected'; return }
         if ($Scenario -eq 'missing-app-id' -or ($Scenario -eq 'missing-second-id' -and $script:FilesStarted -eq 2)) { return @{} }
         $script:Committed = $false
         return @{id="fake-app-$script:FilesStarted"}
@@ -85,7 +86,7 @@ function Invoke-MgGraphRequest {
         $script:Committed = $true; return
     }
     if ($Method -eq 'GET') {
-        if ($Scenario -eq 'poll-error') { Write-Error 'FAKE poll rejected'; return }
+        if ($Scenario -eq 'poll-error' -or ($Scenario -eq 'post-commit-poll-error' -and $script:Committed)) { Write-Error 'FAKE poll rejected'; return }
         return @{uploadState=$(if ($script:Committed -and $Scenario -eq 'commit-state-failure') { 'commitFileFailed' }
             elseif ($script:Committed) { 'commitFileSuccess' } else { 'azureStorageUriRequestSuccess' });
             azureStorageUri='https://example.invalid/fake-storage'}
@@ -124,8 +125,8 @@ try {
     Set-Content -LiteralPath $child -Value ($prefix + "`n" + $production + "`n" + $suffix)
     $executable = (Get-Process -Id $PID).Path
     foreach ($scenario in @('create-rejection','missing-app-id','missing-version-id','missing-file-id',
-        'content-error','existing-content-error','commit-error','commit-state-failure','poll-error','patch-error','mixed',
-        'missing-second-id','success','held','failure-held','noninteractive','optional-error')) {
+        'content-error','existing-content-error','commit-error','commit-state-failure','poll-error','post-commit-poll-error','patch-error','mixed',
+        'missing-second-id','success','held','failure-held','noninteractive','noninteractive-second-failure','optional-error')) {
         $directory = Join-Path $root $scenario
         [IO.Directory]::CreateDirectory($directory) | Out-Null
         $output = & $executable -NoLogo -NoProfile -File $child -Scenario $scenario -FixtureDirectory $directory 2>&1 | Out-String
@@ -138,7 +139,7 @@ try {
         if (@($receipt.Calls | Where-Object Uri -Match 'mobileApps//|contentVersions//|files//').Count) { throw "$scenario made a dependent request with an empty ID." }
         if ($expected -ne 0 -and $output.Contains('All operations completed successfully!')) { throw "$scenario printed false overall success." }
         $deletes = @($receipt.Calls | Where-Object Method -eq 'DELETE')
-        if ($scenario -in @('missing-version-id','missing-file-id','content-error','commit-error','commit-state-failure','poll-error')) {
+        if ($scenario -in @('missing-version-id','missing-file-id','content-error','poll-error')) {
             if ($deletes.Count -ne 1 -or $deletes[0].Uri -notmatch '/fake-app-1$') { throw "$scenario did not clean only the new incomplete app." }
         }
         elseif ($deletes.Count) { throw "$scenario deleted an existing/committed/uncreated app." }
@@ -151,8 +152,10 @@ try {
         if ($scenario -eq 'missing-second-id' -and ($receipt.Finalized -join ',') -ne 'Fake app 1') { throw 'Second app reused a stale ID.' }
         if ($scenario -eq 'success' -and ($receipt.Finalized.Count -ne 1 -or -not $output.Contains('All operations completed successfully!'))) { throw 'Successful upload reporting regressed.' }
         if ($scenario -eq 'noninteractive' -and $receipt.FilesStarted -ne 1) { throw 'Noninteractive failure did not stop immediately.' }
+        if ($scenario -like 'noninteractive*' -and -not $receipt.Disconnected) { throw 'Noninteractive failure skipped disconnect.' }
+        if ($scenario -eq 'noninteractive-second-failure' -and ($receipt.FilesStarted -ne 2 -or ($receipt.Finalized -join ',') -ne 'Fake app 1' -or -not $output.Contains('Fake app 1 (version 1.0) was uploaded'))) { throw 'Noninteractive failure lost the earlier successful summary or processed another app.' }
         if ($scenario -eq 'failure-held' -and $output.Contains('other selected updates completed')) { throw 'Held message masked a failed upload.' }
     }
-    Write-Host 'Catalog upload failure-reporting regression tests passed (17 child scenarios plus unsupported guard).'
+    Write-Host 'Catalog upload failure-reporting regression tests passed (19 child scenarios plus unsupported guard).'
 }
 finally { Remove-Item -LiteralPath $root -Recurse -Force }

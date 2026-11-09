@@ -3010,6 +3010,7 @@ foreach ($app in $appsToUpload) {
             fileEncryptionInfo = $fileEncryptionInfo
         }
         $commitUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)/commit"
+        $uploadStage = 'commit-requested'
         Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json) -ErrorAction Stop
 
         $retryCount = 0
@@ -3034,7 +3035,7 @@ foreach ($app in $appsToUpload) {
         }
     }
     catch {
-        if ($appWasCreatedThisRun -and $intuneAppId -and $uploadStage -ne 'committed') {
+        if ($appWasCreatedThisRun -and $intuneAppId -and $uploadStage -eq 'created') {
             Write-Host "🧹 Removing incomplete app entry from Intune (ID: $intuneAppId)..." -ForegroundColor Yellow
             try {
                 Invoke-MgGraphRequest -Method DELETE -Uri "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$intuneAppId" -ErrorAction Stop | Out-Null
@@ -3193,10 +3194,10 @@ foreach ($app in $appsToUpload) {
         }
         $uploadFailures += $appDisplayName
         Write-Host "`n❌ Upload failed for $appDisplayName : $_" -ForegroundColor Red
-        if ($uploadStage -eq 'committed') {
-            Write-Warning "Content was committed for app ID $intuneAppId; the app was retained for inspection."
+        if ($uploadStage -in @('commit-requested', 'committed')) {
+            Write-Warning "Commit or finalization status is incomplete for app ID $intuneAppId; the app was retained for inspection."
         }
-        if ($NonInteractive) { throw "Application upload failed." }
+        if ($NonInteractive) { break }
     }
     finally {
         try { Remove-LocalAppFile -Path $localInstallerCopy }
