@@ -2824,8 +2824,18 @@ if (-not $UpdateAll -and -not $LocalFile -and -not $Upload) {
 # Main script for uploading only newer apps
 $existingAssignments = $null # Initialize variable to store assignments for updates
 $updateSummaries = @() # Initialize array to store update summary details
+$uploadFailures = @()
 
 foreach ($app in $appsToUpload) {
+    $newApp = $null
+    $intuneAppId = $null
+    $contentVersion = $null
+    $contentFile = $null
+    $fileStatus = $null
+    $fileEncryptionInfo = $null
+    $appWasCreatedThisRun = $false
+    $uploadStage = 'preparing'
+    $appDisplayName = $app.FormattedName
     # Upload exactly the metadata/version whose security impact was assessed.
     $appInfo = $app.Manifest
     if ($null -eq $appInfo) { throw "The selected app has no assessed manifest." }
@@ -2899,8 +2909,7 @@ foreach ($app in $appsToUpload) {
     }
     else {
         Write-Host "❌ Unsupported file type: $fileExtension. Only .dmg and .pkg files are supported." -ForegroundColor Red
-        if ($NonInteractive) { throw "Unsupported installer type." }
-        continue
+        throw "Unsupported installer type."
     }
 
     # Define the Intune app - will either be set to new or existing Intune app ID
@@ -2947,11 +2956,14 @@ foreach ($app in $appsToUpload) {
         Set-IntuneVersionDetection -Payload $newAppPayload -Options $PSBoundParameters
 
         $createAppUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps"
-        $newApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($newAppPayload | ConvertTo-Json -Depth 10)
+        $newApp = Invoke-MgGraphRequest -Method POST -Uri $createAppUri -Body ($newAppPayload | ConvertTo-Json -Depth 10) -ErrorAction Stop
+        if ([string]::IsNullOrWhiteSpace([string]$newApp.id)) { throw "App creation returned no app ID." }
         Write-Host "✅ App created successfully (ID: $($newApp.id))" -ForegroundColor Green
 
         # Set intune app ID to newly created app
         $intuneAppId = $newApp.id
+        $appWasCreatedThisRun = $true
+        $uploadStage = 'created'
     }
 
     # A failure between app creation and content commit must remove the freshly created
@@ -2959,7 +2971,8 @@ foreach ($app in $appsToUpload) {
     try {
         Write-Host "`n🔒 Processing content version..." -ForegroundColor Yellow
         $contentVersionUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions"
-        $contentVersion = Invoke-MgGraphRequest -Method POST -Uri $contentVersionUri -Body "{}"
+        $contentVersion = Invoke-MgGraphRequest -Method POST -Uri $contentVersionUri -Body "{}" -ErrorAction Stop
+        if ([string]::IsNullOrWhiteSpace([string]$contentVersion.id)) { throw "Content version creation returned no ID." }
         Write-Host "✅ Content version created (ID: $($contentVersion.id))" -ForegroundColor Green
 
         Write-Host "`n🔐 Encrypting application file..." -ForegroundColor Yellow
@@ -2980,12 +2993,13 @@ foreach ($app in $appsToUpload) {
         }
 
         $contentFileUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files"
-        $contentFile = Invoke-MgGraphRequest -Method POST -Uri $contentFileUri -Body ($fileContent | ConvertTo-Json)
+        $contentFile = Invoke-MgGraphRequest -Method POST -Uri $contentFileUri -Body ($fileContent | ConvertTo-Json) -ErrorAction Stop
+        if ([string]::IsNullOrWhiteSpace([string]$contentFile.id)) { throw "Content file creation returned no ID." }
 
         do {
             Start-Sleep -Seconds 5
             $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
-            $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
+            $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri -ErrorAction Stop
         } while ($fileStatus.uploadState -ne "azureStorageUriRequestSuccess")
 
         UploadFileToAzureStorage $fileStatus.azureStorageUri "$appFilePath.bin"
@@ -2996,22 +3010,23 @@ foreach ($app in $appsToUpload) {
             fileEncryptionInfo = $fileEncryptionInfo
         }
         $commitUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)/commit"
-        Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json)
+        Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json) -ErrorAction Stop
 
         $retryCount = 0
         $maxRetries = 10
         do {
             Start-Sleep -Seconds 10
             $fileStatusUri = "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$($intuneAppId)/microsoft.graph.$appType/contentVersions/$($contentVersion.id)/files/$($contentFile.id)"
-            $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri
+            $fileStatus = Invoke-MgGraphRequest -Method GET -Uri $fileStatusUri -ErrorAction Stop
             if ($fileStatus.uploadState -eq "commitFileFailed") {
                 # Execute the request without storing the unused response
-                Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json) | Out-Null
+                Invoke-MgGraphRequest -Method POST -Uri $commitUri -Body ($commitData | ConvertTo-Json) -ErrorAction Stop | Out-Null
                 $retryCount++
             }
         } while ($fileStatus.uploadState -ne "commitFileSuccess" -and $retryCount -lt $maxRetries)
 
         if ($fileStatus.uploadState -eq "commitFileSuccess") {
+            $uploadStage = 'committed'
             Write-Host "✅ File committed successfully" -ForegroundColor Green
         }
         else {
@@ -3019,20 +3034,17 @@ foreach ($app in $appsToUpload) {
         }
     }
     catch {
-        Write-Host "`n❌ Upload failed for $appDisplayName : $_" -ForegroundColor Red
-        $appWasCreatedThisRun = -not ($updateExistingIntuneApp -and $app.IntuneAppId)
-        if ($appWasCreatedThisRun -and $intuneAppId) {
+        if ($appWasCreatedThisRun -and $intuneAppId -and $uploadStage -ne 'committed') {
             Write-Host "🧹 Removing incomplete app entry from Intune (ID: $intuneAppId)..." -ForegroundColor Yellow
             try {
-                Invoke-MgGraphRequest -Method DELETE -Uri "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$intuneAppId" | Out-Null
+                Invoke-MgGraphRequest -Method DELETE -Uri "https://graph.microsoft.com/beta/deviceAppManagement/mobileApps/$intuneAppId" -ErrorAction Stop | Out-Null
                 Write-Host "✅ Incomplete app entry removed" -ForegroundColor Green
             }
             catch {
                 Write-Host "Warning: Could not remove incomplete app entry (ID: $intuneAppId). Please delete it manually in the Intune portal. Error: $_" -ForegroundColor Yellow
             }
         }
-        if ($NonInteractive) { throw "Application upload failed." }
-        continue
+        throw
     }
 
     # Update the app (new or existing) with new content version and supplied additional data
@@ -3103,7 +3115,8 @@ foreach ($app in $appsToUpload) {
     }
 
     Set-IntuneVersionDetection -Payload $updateData -Options $PSBoundParameters
-    Invoke-MgGraphRequest -Method PATCH -Uri $updateAppUri -Body ($updateData | ConvertTo-Json)
+    Invoke-MgGraphRequest -Method PATCH -Uri $updateAppUri -Body ($updateData | ConvertTo-Json) -ErrorAction Stop
+    $uploadStage = 'finalized'
 
     # Apply assignments if the flag is set and assignments were successfully fetched
     if ($copyAssignments -and $null -ne $existingAssignments) {
@@ -3173,6 +3186,18 @@ foreach ($app in $appsToUpload) {
 
     Write-Host "" -ForegroundColor Cyan
     }
+    catch {
+        if ($uploadStage -eq 'finalized') {
+            Write-Warning "Optional post-upload work failed for $appDisplayName : $_"
+            continue
+        }
+        $uploadFailures += $appDisplayName
+        Write-Host "`n❌ Upload failed for $appDisplayName : $_" -ForegroundColor Red
+        if ($uploadStage -eq 'committed') {
+            Write-Warning "Content was committed for app ID $intuneAppId; the app was retained for inspection."
+        }
+        if ($NonInteractive) { throw "Application upload failed." }
+    }
     finally {
         try { Remove-LocalAppFile -Path $localInstallerCopy }
         catch { Write-Warning "Could not remove the temporary local installer: $_" }
@@ -3195,6 +3220,12 @@ if ($updateSummaries.Count -gt 0) {
     Write-Host "---------------------------------------------------" -ForegroundColor Yellow
 }
 
+if ($uploadFailures.Count) {
+    Write-Host "`n❌ $($uploadFailures.Count) app uploads failed: $($uploadFailures -join ', '). Successful uploads are listed above." -ForegroundColor Red
+    Disconnect-MgGraph > $null 2>&1
+    Write-Host "Disconnected from Microsoft Graph." -ForegroundColor Green
+    exit 1
+}
 if ($heldApps.Count) {
     Disconnect-MgGraph > $null 2>&1
     Write-Host "$($heldApps.Count) app updates held by security policy; other selected updates completed." -ForegroundColor Yellow
