@@ -14,7 +14,7 @@ spec.loader.exec_module(publisher)
 
 class PublicationTests(unittest.TestCase):
     def test_formula_alias_uses_the_complete_published_app_package(self):
-        data = dict(name='Azure CLI', version='2.90.0', homebrew_formula='azure-cli',
+        data = dict(name='Azure CLI', version='2.90.0', bundleId='com.example.azurecli', homebrew_formula='azure-cli',
                     packaging_recipe='azure-cli-universal-v1', type='app',
                     fileName='azure_cli_2.90.0.pkg',
                     url='https://intunebrew.blob.core.windows.net/pkg/azure_cli_2.90.0.pkg', sha='a'*64)
@@ -27,7 +27,7 @@ class PublicationTests(unittest.TestCase):
     def test_formula_recipe_without_packaged_type_cannot_replace_legacy_alias(self):
         Path('Formulas').mkdir()
         Path('Formulas/azure-cli.json').write_text('{"previous":true}')
-        Path('Apps/azure_cli.json').write_text(json.dumps(dict(name='Azure CLI', version='2.90.0', homebrew_formula='azure-cli', packaging_recipe='azure-cli-universal-v1')))
+        Path('Apps/azure_cli.json').write_text(json.dumps(dict(name='Azure CLI', version='2.90.0', bundleId='com.example.azurecli', homebrew_formula='azure-cli', packaging_recipe='azure-cli-universal-v1')))
         publisher.publish()
         self.assertEqual(json.loads(Path('Formulas/azure-cli.json').read_text()), {'previous':True})
 
@@ -45,7 +45,36 @@ class PublicationTests(unittest.TestCase):
         os.chdir(self.previous)
         self.temp.cleanup()
     def write(self, name, version, **extra):
-        Path(f'Apps/{name}.json').write_text(json.dumps(dict(name=name, version=version, homebrew_cask=name, **extra)))
+        data = dict(name=name, version=version, homebrew_cask=name, bundleId='com.example.' + name)
+        data.update(extra)
+        Path(f'Apps/{name}.json').write_text(json.dumps(data))
+    def test_invalid_bundle_id_update_retains_valid_previous_entry(self):
+        for value in [None, '', '   ', 42, False]:
+            with self.subTest(value=value):
+                self.write('broken', '2', bundleId=value)
+                state, _ = publisher.publish()
+                self.assertEqual(json.loads(Path('Apps/broken.json').read_text())['version'], '1')
+                self.assertEqual(state['failedApps'], [{'app':'broken', 'stage':'bundle ID validation'}])
+                self.assertIn('broken', json.loads(Path('supported_apps.json').read_text()))
+    def test_new_app_missing_bundle_id_is_omitted(self):
+        Path('Apps/new.json').write_text(json.dumps(dict(name='New', version='1')))
+        state, _ = publisher.publish()
+        self.assertFalse(Path('Apps/new.json').exists())
+        self.assertNotIn('new', json.loads(Path('supported_apps.json').read_text()))
+        self.assertIn({'app':'new', 'stage':'bundle ID validation'}, state['failedApps'])
+    def test_invalid_previous_bundle_id_is_not_published(self):
+        self.write('broken', '1', bundleId=None)
+        subprocess.run(['git', 'add', 'Apps/broken.json'], check=True)
+        subprocess.run(['git', '-c', 'user.name=Test', '-c', 'user.email=test@example.com', 'commit', '-qm', 'invalid old entry'], check=True)
+        state, _ = publisher.publish()
+        self.assertTrue(Path('Apps/broken.json').exists())
+        self.assertNotIn('broken', json.loads(Path('supported_apps.json').read_text()))
+        self.assertEqual(state['appCount'], 2)
+    def test_deprecated_entry_without_bundle_id_stays_excluded(self):
+        self.write('broken', '1', deprecated=True, bundleId=None)
+        state, _ = publisher.publish()
+        self.assertNotIn('broken', json.loads(Path('supported_apps.json').read_text()))
+        self.assertEqual(state['status'], 'healthy')
     def test_failed_collection_retains_previous_version_and_healthy_update(self):
         self.write('healthy', '2')
         self.write('broken', '2')

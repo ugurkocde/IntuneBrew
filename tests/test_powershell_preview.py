@@ -82,7 +82,7 @@ class PreviewCatalogTests(unittest.TestCase):
         with tempfile.TemporaryDirectory() as directory, contextlib.chdir(directory):
             folder = Path('Apps'); folder.mkdir()
             stable = dict(name='PowerShell', version='7.5.4', homebrew_cask='powershell', deprecated=True)
-            preview = dict(name='PowerShell Preview', version='7.7.0-rc.1', homebrew_cask=TOKEN, type='pkg', url=PAYLOAD['url'], sha='a'*64)
+            preview = dict(name='PowerShell Preview', version='7.7.0-rc.1', bundleId='com.example.powershellpreview', homebrew_cask=TOKEN, type='pkg', url=PAYLOAD['url'], sha='a'*64)
             (folder/'powershell.json').write_text(json.dumps(stable))
             (folder/'powershell_preview.json').write_text(json.dumps(preview))
             Path('supported_apps.json').write_text(json.dumps({'powershell': 'stable'}))

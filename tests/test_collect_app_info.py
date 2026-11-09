@@ -870,7 +870,7 @@ class CatalogConsistencyTests(unittest.TestCase):
             for token, content in before.items():
                 (apps / f"{token}.json").write_bytes(content)
             (apps / "healthy.json").write_text(json.dumps({
-                "name": "Healthy", "version": "1.0", "homebrew_cask": "healthy",
+                "name": "Healthy", "version": "1.0", "homebrew_cask": "healthy", "bundleId": "com.example.healthy",
             }))
             with run_collector(directory, []):
                 collect_app_info.main()
@@ -937,7 +937,9 @@ class CatalogConsistencyTests(unittest.TestCase):
         expected = {
             name
             for name, app_data in apps.items()
-            if not app_data.get("deprecated") and publisher.valid_package(app_data)
+            if not app_data.get("deprecated")
+            and publisher.valid_bundle_id(app_data)
+            and publisher.valid_package(app_data)
         }
 
         self.assertEqual(set(supported), expected)

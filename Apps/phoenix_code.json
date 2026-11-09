@@ -4,7 +4,7 @@
   "version": "5.5.11",
   "url": "https://github.com/phcode-dev/phoenix-desktop/releases/download/prod-app-v5.5.11/Phoenix.Code_5.5.11_aarch64.dmg",
   "vendor_url": "https://github.com/phcode-dev/phoenix-desktop/releases/download/prod-app-v5.5.11/Phoenix.Code_5.5.11_aarch64.dmg",
-  "bundleId": null,
+  "bundleId": "io.phcode",
   "homepage": "https://phcode.io/",
   "homebrew_cask": "phoenix-code",
   "fileName": "Phoenix.Code_5.5.11_aarch64.dmg",
