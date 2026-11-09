@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.devuap.beautyshotapp.Xnapper-Ma
     rm -f "$HOME/Library/Application Scripts/com.devuap.beautyshotapp.Xnapper-Mac-Share-Extension" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.devuap.beautyshotapp.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.devuap.beautyshotapp.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.devuap.beautyshotapp.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.devuap.beautyshotapp.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.devuap.beautyshotapp.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.devuap.beautyshotapp.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Xnapper
 echo "Removing $HOME/Library/Application Support/Xnapper..."
 if [ -d "$HOME/Library/Application Support/Xnapper" ]; then
@@ -55,6 +63,14 @@ if [ -d "$HOME/Library/Containers/com.devuap.beautyshotapp.Xnapper-Mac-Share-Ext
     rm -rf "$HOME/Library/Containers/com.devuap.beautyshotapp.Xnapper-Mac-Share-Extension" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/com.devuap.beautyshotapp.Xnapper-Mac-Share-Extension" ]; then
     rm -f "$HOME/Library/Containers/com.devuap.beautyshotapp.Xnapper-Mac-Share-Extension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.devuap.beautyshotapp.plist
+echo "Removing $HOME/Library/Preferences/com.devuap.beautyshotapp.plist..."
+if [ -d "$HOME/Library/Preferences/com.devuap.beautyshotapp.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.devuap.beautyshotapp.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.devuap.beautyshotapp.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.devuap.beautyshotapp.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

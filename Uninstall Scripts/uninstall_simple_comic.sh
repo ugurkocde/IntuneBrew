@@ -25,12 +25,36 @@ elif [ -f "/Applications/Simple Comic.app" ]; then
     rm -f "/Applications/Simple Comic.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.ToWatchList.SimpleComic
+echo "Removing $HOME/Library/Application Scripts/com.ToWatchList.SimpleComic..."
+if [ -d "$HOME/Library/Application Scripts/com.ToWatchList.SimpleComic" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.ToWatchList.SimpleComic" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.ToWatchList.SimpleComic" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.ToWatchList.SimpleComic" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.towatchlist.simplecomic.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.towatchlist.simplecomic.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.towatchlist.simplecomic.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.towatchlist.simplecomic.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.towatchlist.simplecomic.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.towatchlist.simplecomic.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Simple Comic
 echo "Removing $HOME/Library/Application Support/Simple Comic..."
 if [ -d "$HOME/Library/Application Support/Simple Comic" ]; then
     rm -rf "$HOME/Library/Application Support/Simple Comic" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/Simple Comic" ]; then
     rm -f "$HOME/Library/Application Support/Simple Comic" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.ToWatchList.SimpleComic
+echo "Removing $HOME/Library/Containers/com.ToWatchList.SimpleComic..."
+if [ -d "$HOME/Library/Containers/com.ToWatchList.SimpleComic" ]; then
+    rm -rf "$HOME/Library/Containers/com.ToWatchList.SimpleComic" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.ToWatchList.SimpleComic" ]; then
+    rm -f "$HOME/Library/Containers/com.ToWatchList.SimpleComic" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
