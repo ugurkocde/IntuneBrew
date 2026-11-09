@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/OnionShare" ]; then
     rm -f "$HOME/Library/Application Support/OnionShare" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/OnionShare.plist
+echo "Removing $HOME/Library/Preferences/OnionShare.plist..."
+if [ -d "$HOME/Library/Preferences/OnionShare.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/OnionShare.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/OnionShare.plist" ]; then
+    rm -f "$HOME/Library/Preferences/OnionShare.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/org.onionshare.onionshare.plist
 echo "Removing $HOME/Library/Preferences/org.onionshare.onionshare.plist..."
 if [ -d "$HOME/Library/Preferences/org.onionshare.onionshare.plist" ]; then

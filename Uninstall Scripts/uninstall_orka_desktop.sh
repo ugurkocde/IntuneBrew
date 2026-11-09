@@ -17,6 +17,10 @@ fi
 echo "Stopping Orka Desktop if running..."
 pkill -f "Orka Desktop" 2>/dev/null || true
 
+# Kill application with bundle ID com.macstadium.OrkaDesktop if running
+echo "Stopping application with bundle ID com.macstadium.OrkaDesktop if running..."
+killall -9 "com.macstadium.OrkaDesktop" 2>/dev/null || true
+
 # Remove /Applications/Orka Desktop.app
 echo "Removing /Applications/Orka Desktop.app..."
 if [ -d "/Applications/Orka Desktop.app" ]; then

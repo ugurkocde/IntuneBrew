@@ -17,6 +17,16 @@ fi
 echo "Stopping Iconset if running..."
 pkill -f "Iconset" 2>/dev/null || true
 
+# Unload service io.iconset.app.ShipIt
+echo "Unloading service io.iconset.app.ShipIt..."
+launchctl unload -w /Library/LaunchAgents/io.iconset.app.ShipIt.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/io.iconset.app.ShipIt.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/io.iconset.app.ShipIt.plist 2>/dev/null || true
+
+# Kill application with bundle ID io.iconset.app if running
+echo "Stopping application with bundle ID io.iconset.app if running..."
+killall -9 "io.iconset.app" 2>/dev/null || true
+
 # Remove /Applications/Iconset.app
 echo "Removing /Applications/Iconset.app..."
 if [ -d "/Applications/Iconset.app" ]; then
