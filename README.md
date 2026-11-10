@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1152-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1153-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -679,7 +679,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | whatsapp | 26.44.21 | 26.45.13 |
 | xnapper | 1.17.1 | 1.18.1 |
 
-21 app updates could not be published. See [catalog sync status](catalog-sync.json).
+23 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 

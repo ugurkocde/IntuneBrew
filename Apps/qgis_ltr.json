@@ -1,0 +1,12 @@
+{
+  "name": "QGIS LTR",
+  "description": "Geographic Information System",
+  "version": "3.44.15",
+  "url": "https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-3_44_15.dmg",
+  "vendor_url": "https://download.qgis.org/downloads/macos/ltr/qgis_ltr_final-3_44_15.dmg",
+  "bundleId": "org.qgis.qgis3",
+  "homepage": "https://www.qgis.org/",
+  "homebrew_cask": "qgis@ltr",
+  "fileName": "qgis_ltr_final-3_44_15.dmg",
+  "sha": "302547ebee16d4d38ddfd509469cc86e337b23c545307cdbe13c2c2d233ab7cb"
+}
