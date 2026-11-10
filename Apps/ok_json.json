@@ -1,7 +1,7 @@
 {
   "name": "OK JSON",
   "description": "Scriptable JSON formatter and editor",
-  "version": "3.1.1",
+  "version": "3.1.2",
   "url": "https://okjson.app/download/okjson-latest.dmg",
   "vendor_url": "https://okjson.app/download/okjson-latest.dmg",
   "bundleId": "com.nicola.OK-JSON",
@@ -11,5 +11,5 @@
   "category": "Developer Tools",
   "publisher": "OK JSON",
   "previous_version": "3.1.1",
-  "sha": "ac9ff7321167f3cec2b7a1d31f9ba406dfd350efcaeab689f9bb53de718124f8"
+  "sha": "4e7f12d931ecc33e538d229edbe225106f8c4255c7d571233a9a72d42fbce5a7"
 }

@@ -1,15 +1,15 @@
 {
   "name": "Aircall Workspace",
   "description": "Aircall calling and messaging workspace",
-  "version": "1.18.30",
+  "version": "1.19.0",
   "previous_version": "1.18.30",
-  "url": "https://download-electron.aircall.io/aircall-workspace/Aircall-Workspace-1.18.30-arm64.pkg",
+  "url": "https://download-electron.aircall.io/aircall-workspace/Aircall-Workspace-1.19.0-arm64.pkg",
   "bundleId": "io.aircall.workspace",
   "homepage": "https://aircall.io/download/",
-  "fileName": "Aircall-Workspace-1.18.30-arm64.pkg",
+  "fileName": "Aircall-Workspace-1.19.0-arm64.pkg",
   "type": "pkg",
-  "sha": "40089fed64464ec3534a56d33f5a0a5377d13bcd2a5541460401d3bfc730db43",
+  "sha": "ea1784d782f0d4f256c164643c3bd547c6ad40637f2425cb2519db6104c137eb",
   "publisher": "Aircall",
   "category": "Communication",
-  "vendor_url": "https://download-electron.aircall.io/aircall-workspace/Aircall-Workspace-1.18.30-arm64.pkg"
+  "vendor_url": "https://download-electron.aircall.io/aircall-workspace/Aircall-Workspace-1.19.0-arm64.pkg"
 }

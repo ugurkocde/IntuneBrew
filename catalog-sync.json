@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-09T01:00:14.417635Z",
-  "lastFullSyncAt": "2026-11-09T01:00:14.417635Z",
+  "lastPublishedAt": "2026-11-10T01:07:57.454136Z",
+  "lastFullSyncAt": "2026-11-10T01:07:57.454136Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -74,6 +74,10 @@
       "stage": "collection"
     },
     {
+      "app": "trae",
+      "stage": "collection"
+    },
+    {
       "app": "wechat_for_mac",
       "stage": "collection"
     },
@@ -87,5 +91,5 @@
     }
   ],
   "appCount": 1152,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42540245257"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42727915692"
 }
