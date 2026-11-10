@@ -59,6 +59,22 @@ elif [ -f "$HOME/Library/Caches/com.sublimemerge" ]; then
     rm -f "$HOME/Library/Caches/com.sublimemerge" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/Sublime Merge
+echo "Removing $HOME/Library/Caches/Sublime Merge..."
+if [ -d "$HOME/Library/Caches/Sublime Merge" ]; then
+    rm -rf "$HOME/Library/Caches/Sublime Merge" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/Sublime Merge" ]; then
+    rm -f "$HOME/Library/Caches/Sublime Merge" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.sublimemerge
+echo "Removing $HOME/Library/HTTPStorages/com.sublimemerge..."
+if [ -d "$HOME/Library/HTTPStorages/com.sublimemerge" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.sublimemerge" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.sublimemerge" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.sublimemerge" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.sublimemerge.plist
 echo "Removing $HOME/Library/Preferences/com.sublimemerge.plist..."
 if [ -d "$HOME/Library/Preferences/com.sublimemerge.plist" ]; then

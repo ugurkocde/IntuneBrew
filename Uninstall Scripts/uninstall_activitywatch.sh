@@ -17,6 +17,10 @@ fi
 echo "Stopping ActivityWatch if running..."
 pkill -f "ActivityWatch" 2>/dev/null || true
 
+# Kill application with bundle ID net.activitywatch.ActivityWatch if running
+echo "Stopping application with bundle ID net.activitywatch.ActivityWatch if running..."
+killall -9 "net.activitywatch.ActivityWatch" 2>/dev/null || true
+
 # Remove /Applications/ActivityWatch.app
 echo "Removing /Applications/ActivityWatch.app..."
 if [ -d "/Applications/ActivityWatch.app" ]; then

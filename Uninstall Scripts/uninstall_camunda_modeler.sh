@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/camunda-modeler" ]; then
     rm -f "$HOME/Library/Application Support/camunda-modeler" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.camunda.camundamodeler.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.camunda.camundamodeler.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.camunda.camundamodeler.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.camunda.camundamodeler.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.camunda.camundamodeler.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.camunda.camundamodeler.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/Camunda Modeler
 echo "Removing $HOME/Library/Logs/Camunda Modeler..."
 if [ -d "$HOME/Library/Logs/Camunda Modeler" ]; then

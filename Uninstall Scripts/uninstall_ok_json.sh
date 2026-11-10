@@ -25,6 +25,22 @@ elif [ -f "/Applications/OK JSON.app" ]; then
     rm -f "/Applications/OK JSON.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/net.shinystone.OKJSON
+echo "Removing $HOME/Library/Application Scripts/net.shinystone.OKJSON..."
+if [ -d "$HOME/Library/Application Scripts/net.shinystone.OKJSON" ]; then
+    rm -rf "$HOME/Library/Application Scripts/net.shinystone.OKJSON" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/net.shinystone.OKJSON" ]; then
+    rm -f "$HOME/Library/Application Scripts/net.shinystone.OKJSON" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/S8MRM84X6F.group.net.shinystone.OKJSON
+echo "Removing $HOME/Library/Application Scripts/S8MRM84X6F.group.net.shinystone.OKJSON..."
+if [ -d "$HOME/Library/Application Scripts/S8MRM84X6F.group.net.shinystone.OKJSON" ]; then
+    rm -rf "$HOME/Library/Application Scripts/S8MRM84X6F.group.net.shinystone.OKJSON" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/S8MRM84X6F.group.net.shinystone.OKJSON" ]; then
+    rm -f "$HOME/Library/Application Scripts/S8MRM84X6F.group.net.shinystone.OKJSON" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/net.shinystone.OKJSON
 echo "Removing $HOME/Library/Containers/net.shinystone.OKJSON..."
 if [ -d "$HOME/Library/Containers/net.shinystone.OKJSON" ]; then

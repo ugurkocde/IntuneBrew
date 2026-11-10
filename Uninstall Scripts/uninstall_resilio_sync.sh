@@ -37,6 +37,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.resilio.Sync.FinderExtension" ]
     rm -f "$HOME/Library/Application Scripts/com.resilio.Sync.FinderExtension" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.com.resilio.Sync
+echo "Removing $HOME/Library/Application Scripts/group.com.resilio.Sync..."
+if [ -d "$HOME/Library/Application Scripts/group.com.resilio.Sync" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.com.resilio.Sync" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.com.resilio.Sync" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.com.resilio.Sync" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Resilio Sync
 echo "Removing $HOME/Library/Application Support/Resilio Sync..."
 if [ -d "$HOME/Library/Application Support/Resilio Sync" ]; then
@@ -69,12 +77,28 @@ elif [ -f "$HOME/Library/Group Containers/group.com.resilio.Sync" ]; then
     rm -f "$HOME/Library/Group Containers/group.com.resilio.Sync" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.resilio.Sync
+echo "Removing $HOME/Library/HTTPStorages/com.resilio.Sync..."
+if [ -d "$HOME/Library/HTTPStorages/com.resilio.Sync" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.resilio.Sync" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.resilio.Sync" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.resilio.Sync" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.resilio.Sync.plist
 echo "Removing $HOME/Library/Preferences/com.resilio.Sync.plist..."
 if [ -d "$HOME/Library/Preferences/com.resilio.Sync.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.resilio.Sync.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.resilio.Sync.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.resilio.Sync.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.resilio.Sync
+echo "Removing $HOME/Library/WebKit/com.resilio.Sync..."
+if [ -d "$HOME/Library/WebKit/com.resilio.Sync" ]; then
+    rm -rf "$HOME/Library/WebKit/com.resilio.Sync" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.resilio.Sync" ]; then
+    rm -f "$HOME/Library/WebKit/com.resilio.Sync" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

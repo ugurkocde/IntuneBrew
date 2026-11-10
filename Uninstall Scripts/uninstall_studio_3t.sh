@@ -37,6 +37,22 @@ elif [ -f "$HOME/.3T/studio-3t" ]; then
     rm -f "$HOME/.3T/studio-3t" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.install4j.0526-4458-1435-8154.837
+echo "Removing $HOME/Library/Caches/com.install4j.0526-4458-1435-8154.837..."
+if [ -d "$HOME/Library/Caches/com.install4j.0526-4458-1435-8154.837" ]; then
+    rm -rf "$HOME/Library/Caches/com.install4j.0526-4458-1435-8154.837" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.install4j.0526-4458-1435-8154.837" ]; then
+    rm -f "$HOME/Library/Caches/com.install4j.0526-4458-1435-8154.837" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.install4j.0526-4458-1435-8154.837
+echo "Removing $HOME/Library/HTTPStorages/com.install4j.0526-4458-1435-8154.837..."
+if [ -d "$HOME/Library/HTTPStorages/com.install4j.0526-4458-1435-8154.837" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.install4j.0526-4458-1435-8154.837" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.install4j.0526-4458-1435-8154.837" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.install4j.0526-4458-1435-8154.837" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/3t.enterprise.mongochef.plist
 echo "Removing $HOME/Library/Preferences/3t.enterprise.mongochef.plist..."
 if [ -d "$HOME/Library/Preferences/3t.enterprise.mongochef.plist" ]; then
@@ -67,6 +83,14 @@ if [ -d "$HOME/Library/Preferences/3t.mongochef.pro.plist" ]; then
     rm -rf "$HOME/Library/Preferences/3t.mongochef.pro.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/3t.mongochef.pro.plist" ]; then
     rm -f "$HOME/Library/Preferences/3t.mongochef.pro.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.install4j.0526-4458-1435-8154.837.plist
+echo "Removing $HOME/Library/Preferences/com.install4j.0526-4458-1435-8154.837.plist..."
+if [ -d "$HOME/Library/Preferences/com.install4j.0526-4458-1435-8154.837.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.install4j.0526-4458-1435-8154.837.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.install4j.0526-4458-1435-8154.837.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.install4j.0526-4458-1435-8154.837.plist" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

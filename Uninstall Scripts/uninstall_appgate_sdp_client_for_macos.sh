@@ -71,6 +71,14 @@ killall -9 "com.cyxtera.appgate.helper" 2>/dev/null || true
 echo "Stopping application with bundle ID com.cyxtera.appgate.sdp if running..."
 killall -9 "com.cyxtera.appgate.sdp" 2>/dev/null || true
 
+# Remove $HOME/Library/Application Support/Appgate SDP
+echo "Removing $HOME/Library/Application Support/Appgate SDP..."
+if [ -d "$HOME/Library/Application Support/Appgate SDP" ]; then
+    rm -rf "$HOME/Library/Application Support/Appgate SDP" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Appgate SDP" ]; then
+    rm -f "$HOME/Library/Application Support/Appgate SDP" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/appgate-ui
 echo "Removing $HOME/Library/Application Support/appgate-ui..."
 if [ -d "$HOME/Library/Application Support/appgate-ui" ]; then
@@ -79,12 +87,36 @@ elif [ -f "$HOME/Library/Application Support/appgate-ui" ]; then
     rm -f "$HOME/Library/Application Support/appgate-ui" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.appgate.sdp.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.appgate.sdp.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.appgate.sdp.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.appgate.sdp.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.appgate.sdp.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.appgate.sdp.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.cyxtera.appgate.sdp.uninstall
 echo "Removing $HOME/Library/Caches/com.cyxtera.appgate.sdp.uninstall..."
 if [ -d "$HOME/Library/Caches/com.cyxtera.appgate.sdp.uninstall" ]; then
     rm -rf "$HOME/Library/Caches/com.cyxtera.appgate.sdp.uninstall" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.cyxtera.appgate.sdp.uninstall" ]; then
     rm -f "$HOME/Library/Caches/com.cyxtera.appgate.sdp.uninstall" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.appgate.sdp.plist
+echo "Removing $HOME/Library/Preferences/com.appgate.sdp.plist..."
+if [ -d "$HOME/Library/Preferences/com.appgate.sdp.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.appgate.sdp.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.appgate.sdp.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.appgate.sdp.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.appgate.sdp.service.plist
+echo "Removing $HOME/Library/Preferences/com.appgate.sdp.service.plist..."
+if [ -d "$HOME/Library/Preferences/com.appgate.sdp.service.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.appgate.sdp.service.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.appgate.sdp.service.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.appgate.sdp.service.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.cyxtera.appgate.sdp*
