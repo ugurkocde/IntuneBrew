@@ -29,6 +29,14 @@ elif [ -f "/Applications/macUSB.app" ]; then
     rm -f "/Applications/macUSB.app" 2>/dev/null || true
 fi
 
+# Remove /Applications/{'target': '/Applications/macUSB.app'}
+echo "Removing /Applications/{'target': '/Applications/macUSB.app'}..."
+if [ -d "/Applications/{'target': '/Applications/macUSB.app'}" ]; then
+    rm -rf "/Applications/{'target': '/Applications/macUSB.app'}" 2>/dev/null || true
+elif [ -f "/Applications/{'target': '/Applications/macUSB.app'}" ]; then
+    rm -f "/Applications/{'target': '/Applications/macUSB.app'}" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.kruszoneq.macUSB
 echo "Removing $HOME/Library/Application Support/com.kruszoneq.macUSB..."
 if [ -d "$HOME/Library/Application Support/com.kruszoneq.macUSB" ]; then
