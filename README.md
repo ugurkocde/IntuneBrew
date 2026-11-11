@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1152-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -647,18 +647,15 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-11-11T03:22:34.585160Z*
+*Last checked: 2026-11-11T05:31:35.574303Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| bettertouchtool | 6.1121 | 6.1124 |
-| hepta | 1.117.0 | 1.117.1 |
-| lunar | 7.0.0b21 | 7.0.0b22 |
-| marginnote | 5.0.1 | 5.0.2 |
-| omnifocus | 4.9.3 | 4.10.1 |
-| onyx | 5.1.1 | 5.1.2 |
+| nextcloud talk desktop | 2.3.3 | 2.3.4 |
+| tailscale | 1.104.5 | 1.104.6 |
 
 24 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
@@ -1355,7 +1352,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/netron.png' width='32' height='32'> Netron | 9.3.5 |
 | <img src='Logos/netspot.png' width='32' height='32'> NetSpot | 6.0.6016 |
 | <img src='Logos/nextcloud.png' width='32' height='32'> Nextcloud | 35.0.3 |
-| <img src='Logos/nextcloud_talk_desktop.png' width='32' height='32'> Nextcloud Talk Desktop | 2.3.3 |
+| <img src='Logos/nextcloud_talk_desktop.png' width='32' height='32'> Nextcloud Talk Desktop | 2.3.4 |
 | <img src='Logos/nightfall.png' width='32' height='32'> Nightfall | 3.1.0 |
 | <img src='Logos/nitro_pdf_pro.png' width='32' height='32'> Nitro PDF Pro | 26.4 |
 | <img src='Logos/nomachine.png' width='32' height='32'> NoMachine | 9.8.2 |
@@ -1695,7 +1692,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/tabtab.png' width='32' height='32'> TabTab | 2.2.6 |
 | <img src='Logos/tabula.png' width='32' height='32'> Tabula | 1.2.1 |
 | <img src='Logos/taccy.png' width='32' height='32'> Taccy | 1.15 |
-| <img src='Logos/tailscale.png' width='32' height='32'> Tailscale | 1.104.5 |
+| <img src='Logos/tailscale.png' width='32' height='32'> Tailscale | 1.104.6 |
 | <img src='Logos/taskade.png' width='32' height='32'> Taskade | 4.7.0 |
 | <img src='Logos/taskbar.png' width='32' height='32'> Taskbar | 1.6.3 |
 | <img src='Logos/teacode.png' width='32' height='32'> TeaCode | 1.1.3 |

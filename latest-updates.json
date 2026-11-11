@@ -1,47 +1,19 @@
 {
-  "lastChecked": "2026-11-11T03:22:34.585160Z",
+  "lastChecked": "2026-11-11T05:31:35.574303Z",
   "updates": [
     {
-      "appName": "bettertouchtool",
-      "previousVersion": "6.1121",
-      "newVersion": "6.1124",
+      "appName": "nextcloud talk desktop",
+      "previousVersion": "2.3.3",
+      "newVersion": "2.3.4",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bettertouchtool.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/nextcloud_talk_desktop.png"
     },
     {
-      "appName": "hepta",
-      "previousVersion": "1.117.0",
-      "newVersion": "1.117.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/hepta.png"
-    },
-    {
-      "appName": "lunar",
-      "previousVersion": "7.0.0b21",
-      "newVersion": "7.0.0b22",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/lunar.png"
-    },
-    {
-      "appName": "marginnote",
-      "previousVersion": "5.0.1",
-      "newVersion": "5.0.2",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/marginnote.png"
-    },
-    {
-      "appName": "omnifocus",
-      "previousVersion": "4.9.3",
-      "newVersion": "4.10.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/omnifocus.png"
-    },
-    {
-      "appName": "onyx",
-      "previousVersion": "5.1.1",
-      "newVersion": "5.1.2",
-      "changelog": "https://www.titanium-software.fr/en/onyx/changelog.html",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/onyx.png"
+      "appName": "tailscale",
+      "previousVersion": "1.104.5",
+      "newVersion": "1.104.6",
+      "changelog": "https://tailscale.com/changelog",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tailscale.png"
     }
   ]
 }
