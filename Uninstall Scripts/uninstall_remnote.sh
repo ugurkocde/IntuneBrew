@@ -17,6 +17,10 @@ fi
 echo "Stopping RemNote if running..."
 pkill -f "RemNote" 2>/dev/null || true
 
+# Kill application with bundle ID io.remnote if running
+echo "Stopping application with bundle ID io.remnote if running..."
+killall -9 "io.remnote" 2>/dev/null || true
+
 # Remove /Applications/RemNote.app
 echo "Removing /Applications/RemNote.app..."
 if [ -d "/Applications/RemNote.app" ]; then

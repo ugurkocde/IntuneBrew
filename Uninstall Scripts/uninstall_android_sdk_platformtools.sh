@@ -17,60 +17,60 @@ fi
 echo "Stopping Android SDK Platform-Tools if running..."
 pkill -f "Android SDK Platform-Tools" 2>/dev/null || true
 
-# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/adb
-echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/adb..."
-if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/adb" ]; then
-    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/adb" 2>/dev/null || true
-elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/adb" ]; then
-    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/adb" 2>/dev/null || true
+# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/adb
+echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/adb..."
+if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/adb" ]; then
+    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/adb" 2>/dev/null || true
+elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/adb" ]; then
+    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/adb" 2>/dev/null || true
 fi
 
-# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/etc1tool
-echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/etc1tool..."
-if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/etc1tool" ]; then
-    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/etc1tool" 2>/dev/null || true
-elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/etc1tool" ]; then
-    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/etc1tool" 2>/dev/null || true
+# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/etc1tool
+echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/etc1tool..."
+if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/etc1tool" ]; then
+    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/etc1tool" 2>/dev/null || true
+elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/etc1tool" ]; then
+    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/etc1tool" 2>/dev/null || true
 fi
 
-# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/fastboot
-echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/fastboot..."
-if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/fastboot" ]; then
-    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/fastboot" 2>/dev/null || true
-elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/fastboot" ]; then
-    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/fastboot" 2>/dev/null || true
+# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/fastboot
+echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/fastboot..."
+if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/fastboot" ]; then
+    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/fastboot" 2>/dev/null || true
+elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/fastboot" ]; then
+    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/fastboot" 2>/dev/null || true
 fi
 
-# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/hprof-conv
-echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/hprof-conv..."
-if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/hprof-conv" ]; then
-    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/hprof-conv" 2>/dev/null || true
-elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/hprof-conv" ]; then
-    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/hprof-conv" 2>/dev/null || true
+# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/hprof-conv
+echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/hprof-conv..."
+if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/hprof-conv" ]; then
+    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/hprof-conv" 2>/dev/null || true
+elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/hprof-conv" ]; then
+    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/hprof-conv" 2>/dev/null || true
 fi
 
-# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs
-echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs..."
-if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs" ]; then
-    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs" 2>/dev/null || true
-elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs" ]; then
-    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs" 2>/dev/null || true
+# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs
+echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs..."
+if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs" ]; then
+    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs" 2>/dev/null || true
+elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs" ]; then
+    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs" 2>/dev/null || true
 fi
 
-# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs_casefold
-echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs_casefold..."
-if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs_casefold" ]; then
-    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs_casefold" 2>/dev/null || true
-elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs_casefold" ]; then
-    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/make_f2fs_casefold" 2>/dev/null || true
+# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs_casefold
+echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs_casefold..."
+if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs_casefold" ]; then
+    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs_casefold" 2>/dev/null || true
+elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs_casefold" ]; then
+    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/make_f2fs_casefold" 2>/dev/null || true
 fi
 
-# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/mke2fs
-echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/mke2fs..."
-if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/mke2fs" ]; then
-    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/mke2fs" 2>/dev/null || true
-elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/mke2fs" ]; then
-    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.2/platform-tools/mke2fs" 2>/dev/null || true
+# Remove /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/mke2fs
+echo "Removing /usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/mke2fs..."
+if [ -d "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/mke2fs" ]; then
+    rm -rf "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/mke2fs" 2>/dev/null || true
+elif [ -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/mke2fs" ]; then
+    rm -f "/usr/local/bin/$HOMEBREW_PREFIX/Caskroom/android-platform-tools/37.0.1/platform-tools/mke2fs" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

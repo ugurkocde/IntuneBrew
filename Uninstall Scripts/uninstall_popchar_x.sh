@@ -17,6 +17,10 @@ fi
 echo "Stopping PopChar X if running..."
 pkill -f "PopChar X" 2>/dev/null || true
 
+# Kill application with bundle ID com.macility.popchar3 if running
+echo "Stopping application with bundle ID com.macility.popchar3 if running..."
+killall -9 "com.macility.popchar3" 2>/dev/null || true
+
 # Remove /Applications/PopChar.app
 echo "Removing /Applications/PopChar.app..."
 if [ -d "/Applications/PopChar.app" ]; then

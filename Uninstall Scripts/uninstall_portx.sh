@@ -17,6 +17,10 @@ fi
 echo "Stopping portx if running..."
 pkill -f "portx" 2>/dev/null || true
 
+# Kill application with bundle ID com.netsarang.portx if running
+echo "Stopping application with bundle ID com.netsarang.portx if running..."
+killall -9 "com.netsarang.portx" 2>/dev/null || true
+
 # Remove /Applications/PortX.app
 echo "Removing /Applications/PortX.app..."
 if [ -d "/Applications/PortX.app" ]; then
