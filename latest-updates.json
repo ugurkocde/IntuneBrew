@@ -1,19 +1,54 @@
 {
-  "lastChecked": "2026-11-11T05:31:35.574303Z",
+  "lastChecked": "2026-11-11T07:29:31.834676Z",
   "updates": [
     {
-      "appName": "nextcloud talk desktop",
-      "previousVersion": "2.3.3",
-      "newVersion": "2.3.4",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/nextcloud_talk_desktop.png"
+      "appName": "camtasia",
+      "previousVersion": "2026.2.5",
+      "newVersion": "2027.0.0",
+      "changelog": "https://support.techsmith.com/hc/en-us/articles/115006443267",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/camtasia.png"
     },
     {
-      "appName": "tailscale",
-      "previousVersion": "1.104.5",
-      "newVersion": "1.104.6",
-      "changelog": "https://tailscale.com/changelog",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tailscale.png"
+      "appName": "chatgpt",
+      "previousVersion": "26.1103.60933",
+      "newVersion": "26.1106.51428",
+      "changelog": "https://help.openai.com/en/articles/9703738-macos-app-release-notes",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/chatgpt.png"
+    },
+    {
+      "appName": "claude",
+      "previousVersion": "5.1231.0",
+      "newVersion": "5.1231.2",
+      "changelog": "https://docs.anthropic.com/en/release-notes/claude-apps",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/claude.png"
+    },
+    {
+      "appName": "github desktop",
+      "previousVersion": "3.6.10-ffeefe5d",
+      "newVersion": "3.6.11-0102f49a",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/github_desktop.png"
+    },
+    {
+      "appName": "jami",
+      "previousVersion": "2.42",
+      "newVersion": "2.43",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/jami.png"
+    },
+    {
+      "appName": "librewolf",
+      "previousVersion": "159.0.1",
+      "newVersion": "160.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/librewolf.png"
+    },
+    {
+      "appName": "zotero",
+      "previousVersion": "10.0.8",
+      "newVersion": "10.0.9",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/zotero.png"
     }
   ]
 }

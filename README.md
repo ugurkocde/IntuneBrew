@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1152-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -648,14 +648,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-11-11T05:31:35.574303Z*
+*Last checked: 2026-11-11T07:29:31.834676Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| nextcloud talk desktop | 2.3.3 | 2.3.4 |
-| tailscale | 1.104.5 | 1.104.6 |
+| camtasia | 2026.2.5 | 2027.0.0 |
+| chatgpt | 26.1103.60933 | 26.1106.51428 |
+| claude | 5.1231.0 | 5.1231.2 |
+| github desktop | 3.6.10-ffeefe5d | 3.6.11-0102f49a |
+| jami | 2.42 | 2.43 |
+| librewolf | 159.0.1 | 160.0 |
+| zotero | 10.0.8 | 10.0.9 |
 
 24 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
@@ -840,7 +846,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/calibre.png' width='32' height='32'> calibre | 9.18.0 |
 | <img src='Logos/calibrite_profiler.png' width='32' height='32'> calibrite PROFILER | 3.1.3 |
 | <img src='Logos/calmly_writer.png' width='32' height='32'> Calmly Writer | 2.0.66 |
-| <img src='Logos/camtasia.png' width='32' height='32'> Camtasia | 2026.2.5 |
+| <img src='Logos/camtasia.png' width='32' height='32'> Camtasia | 2027.0.0 |
 | <img src='Logos/camunda_modeler.png' width='32' height='32'> Camunda Modeler | 5.53.0 |
 | <img src='Logos/canva.png' width='32' height='32'> Canva | 1.126.2 |
 | <img src='Logos/capacities.png' width='32' height='32'> Capacities | 1.73.1 |
@@ -856,7 +862,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/chalk.png' width='32' height='32'> Chalk | 1.7.5 |
 | <img src='Logos/charles.png' width='32' height='32'> Charles | 5.2.2 |
 | <img src='Logos/charmstone.png' width='32' height='32'> Charmstone | 1.45 |
-| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 26.1103.60933 |
+| <img src='Logos/chatgpt.png' width='32' height='32'> ChatGPT | 26.1106.51428 |
 | <img src='Logos/chatgpt_classic.png' width='32' height='32'> ChatGPT Classic | 1.2026.184 |
 | <img src='Logos/chatwise.png' width='32' height='32'> ChatWise | 26.9.1 |
 | <img src='Logos/chatwork.png' width='32' height='32'> ChatWork | 2.25.8 |
@@ -869,7 +875,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/cisco_jabber.png' width='32' height='32'> Cisco Jabber | 20260917083054 |
 | <img src='Logos/citrix_workspace.png' width='32' height='32'> Citrix Workspace | 26.09.0.17 |
 | <img src='Logos/clamxav.png' width='32' height='32'> ClamXAV | 3.11.1 |
-| <img src='Logos/claude.png' width='32' height='32'> Claude | 5.1231.0 |
+| <img src='Logos/claude.png' width='32' height='32'> Claude | 5.1231.2 |
 | ❌ Claude Code | 2.1.311 |
 | <img src='Logos/cleanclip.png' width='32' height='32'> CleanClip | 2.4.7 |
 | <img src='Logos/cleanmymac.png' width='32' height='32'> CleanMyMac | 5.7.4 |
@@ -1085,7 +1091,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/gitfox.png' width='32' height='32'> Gitfox | 5.4.2 |
 | ❌ GitHub Copilot CLI | 1.0.109 |
 | <img src='Logos/github_copilot_for_xcode.png' width='32' height='32'> GitHub Copilot for Xcode | 0.51.0 |
-| <img src='Logos/github_desktop.png' width='32' height='32'> GitHub Desktop | 3.6.10-ffeefe5d |
+| <img src='Logos/github_desktop.png' width='32' height='32'> GitHub Desktop | 3.6.11-0102f49a |
 | <img src='Logos/gitify.png' width='32' height='32'> Gitify | 8.1.0 |
 | <img src='Logos/gitkraken.png' width='32' height='32'> GitKraken | 12.6.2 |
 | <img src='Logos/glyphs.png' width='32' height='32'> Glyphs | 4.2 |
@@ -1159,7 +1165,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/iterm2.png' width='32' height='32'> iTerm2 | 3.7.7 |
 | <img src='Logos/itsycal.png' width='32' height='32'> Itsycal | 0.28.0 |
 | <img src='Logos/jabra_direct.png' width='32' height='32'> Jabra Direct | 8.4.30601 |
-| <img src='Logos/jami.png' width='32' height='32'> Jami | 2.42 |
+| <img src='Logos/jami.png' width='32' height='32'> Jami | 2.43 |
 | <img src='Logos/jamie.png' width='32' height='32'> Jamie | 5.7.26 |
 | <img src='Logos/jasp.png' width='32' height='32'> JASP | 0.99 |
 | <img src='Logos/jellyfin.png' width='32' height='32'> Jellyfin | 12.4 |
@@ -1208,7 +1214,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/launchos.png' width='32' height='32'> LaunchOS | 2.5.0 |
 | <img src='Logos/lens.png' width='32' height='32'> Lens | 2026.10.261408-latest |
 | <img src='Logos/libreoffice.png' width='32' height='32'> LibreOffice | 26.8.1 |
-| <img src='Logos/librewolf.png' width='32' height='32'> LibreWolf | 159.0.1 |
+| <img src='Logos/librewolf.png' width='32' height='32'> LibreWolf | 160.0 |
 | <img src='Logos/lifesize.png' width='32' height='32'> lifesize | 3.0.20 |
 | <img src='Logos/lightburn.png' width='32' height='32'> LightBurn | 2.2.01 |
 | <img src='Logos/linear.png' width='32' height='32'> Linear | 1.28.13 |
@@ -1832,7 +1838,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/zettlr.png' width='32' height='32'> Zettlr | 4.9.0 |
 | <img src='Logos/zight.png' width='32' height='32'> Zight | 8.7.3 |
 | <img src='Logos/zoom.png' width='32' height='32'> Zoom | 7.2.5.90525 |
-| <img src='Logos/zotero.png' width='32' height='32'> Zotero | 10.0.8 |
+| <img src='Logos/zotero.png' width='32' height='32'> Zotero | 10.0.9 |
 | <img src='Logos/zulip.png' width='32' height='32'> Zulip | 5.14.2 |
 | <img src='Logos/zwift.png' width='32' height='32'> Zwift | 1.2.0 |
 

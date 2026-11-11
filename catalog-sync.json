@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-11T05:31:35.574303Z",
-  "lastFullSyncAt": "2026-11-11T05:31:35.574303Z",
+  "lastPublishedAt": "2026-11-11T07:29:31.834676Z",
+  "lastFullSyncAt": "2026-11-11T07:29:31.834676Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -14,11 +14,11 @@
       "stage": "collection"
     },
     {
-      "app": "camtasia",
+      "app": "capcut",
       "stage": "collection"
     },
     {
-      "app": "capcut",
+      "app": "cheatsheet",
       "stage": "collection"
     },
     {
@@ -103,5 +103,5 @@
     }
   ],
   "appCount": 1152,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42963126590"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42976290072"
 }
