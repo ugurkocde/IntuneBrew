@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Caches/coing.ClockifyDesktop" ]; then
     rm -f "$HOME/Library/Caches/coing.ClockifyDesktop" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/coing.ClockifyDesktop
+echo "Removing $HOME/Library/HTTPStorages/coing.ClockifyDesktop..."
+if [ -d "$HOME/Library/HTTPStorages/coing.ClockifyDesktop" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/coing.ClockifyDesktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/coing.ClockifyDesktop" ]; then
+    rm -f "$HOME/Library/HTTPStorages/coing.ClockifyDesktop" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/coing.ClockifyDesktop.plist
 echo "Removing $HOME/Library/Preferences/coing.ClockifyDesktop.plist..."
 if [ -d "$HOME/Library/Preferences/coing.ClockifyDesktop.plist" ]; then

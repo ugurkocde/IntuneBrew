@@ -25,6 +25,38 @@ killall -9 "com.econtechnologies.backgrounder.chronosync" 2>/dev/null || true
 echo "Stopping application with bundle ID com.econtechnologies.chronosync if running..."
 killall -9 "com.econtechnologies.chronosync" 2>/dev/null || true
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.backgrounder.chronosync.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.backgrounder.chronosync.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.backgrounder.chronosync.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.backgrounder.chronosync.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.backgrounder.chronosync.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.backgrounder.chronosync.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.chronosync.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.chronosync.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.chronosync.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.chronosync.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.chronosync.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.econtechnologies.chronosync.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.econtechnologies.backgrounder.chronosync
+echo "Removing $HOME/Library/Caches/com.econtechnologies.backgrounder.chronosync..."
+if [ -d "$HOME/Library/Caches/com.econtechnologies.backgrounder.chronosync" ]; then
+    rm -rf "$HOME/Library/Caches/com.econtechnologies.backgrounder.chronosync" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.econtechnologies.backgrounder.chronosync" ]; then
+    rm -f "$HOME/Library/Caches/com.econtechnologies.backgrounder.chronosync" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.econtechnologies.backgrounder.chronosync
+echo "Removing $HOME/Library/HTTPStorages/com.econtechnologies.backgrounder.chronosync..."
+if [ -d "$HOME/Library/HTTPStorages/com.econtechnologies.backgrounder.chronosync" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.econtechnologies.backgrounder.chronosync" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.econtechnologies.backgrounder.chronosync" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.econtechnologies.backgrounder.chronosync" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/ChronoSync
 echo "Removing $HOME/Library/Logs/ChronoSync..."
 if [ -d "$HOME/Library/Logs/ChronoSync" ]; then
