@@ -95,6 +95,62 @@ class InspectorTests(unittest.TestCase):
         self.prepare = prepare
         self.assertEqual(self.inspect().code, 'AMBIGUOUS')
 
+    def test_unreadable_volume_trash_does_not_block_root_or_nested_app(self):
+        original_iterdir = Path.iterdir
+        for nested in [False, True]:
+            with self.subTest(nested=nested):
+                def prepare(root):
+                    (root / '.Trashes').mkdir()
+                    fake_app(root / 'Payload' if nested else root)
+
+                def guarded_iterdir(path):
+                    if path.name == '.Trashes':
+                        raise PermissionError('fixture volume trash is unreadable')
+                    return original_iterdir(path)
+
+                self.prepare = prepare
+                with patch.object(Path, 'iterdir', guarded_iterdir):
+                    observation = self.inspect()
+                self.assertIsInstance(observation, c.BundleObservation)
+                self.assertEqual(observation.short_version, '2.0')
+                self.assertFalse(self.mount_root.parent.exists())
+
+    def test_other_unreadable_directories_still_refuse_inspection(self):
+        original_iterdir = Path.iterdir
+        for name in ['Trashes', '.trashes', '.Trashes2', '.fseventsd', 'Documents']:
+            with self.subTest(name=name):
+                def prepare(root):
+                    (root / name).mkdir()
+                    fake_app(root)
+
+                def guarded_iterdir(path):
+                    if path.name == name:
+                        raise PermissionError('fixture sibling is unreadable')
+                    return original_iterdir(path)
+
+                self.prepare = prepare
+                with patch.object(Path, 'iterdir', guarded_iterdir):
+                    refusal = self.inspect()
+                self.assertEqual((refusal.code, refusal.integrity),
+                                 ('CANDIDATE_UNREADABLE', True))
+                self.assertFalse(self.mount_root.parent.exists())
+
+    def test_matching_app_in_volume_trash_is_not_an_install_source(self):
+        def prepare(root):
+            fake_app(root, 'Actual')
+            fake_app(root / '.Trashes', 'Discarded', '9.0')
+        self.prepare = prepare
+        observation = self.inspect()
+        self.assertIsInstance(observation, c.BundleObservation)
+        self.assertEqual(observation.short_version, '2.0')
+
+    def test_trash_named_app_is_still_checked_for_ambiguity(self):
+        def prepare(root):
+            fake_app(root, 'Actual')
+            fake_app(root, '.Trashes', '9.0')
+        self.prepare = prepare
+        self.assertEqual(self.inspect().code, 'AMBIGUOUS')
+
     def test_wrong_id_and_symlinked_top_level_are_not_matches(self):
         self.prepare = lambda root: fake_app(root, bundle='org.example.other')
         self.assertEqual(self.inspect().code, 'NOT_FOUND')

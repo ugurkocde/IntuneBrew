@@ -1503,6 +1503,9 @@ def _mounted_bundle_metadata(mount_point, bundle_id):
                 continue
             if entry.suffix == ".app":
                 candidates.append(entry)
+            elif entry.name == ".Trashes":
+                # Volume trash is never an app installation source.
+                continue
             elif entry.is_dir():
                 candidates.extend(child for child in sorted(entry.iterdir())
                                   if child.suffix == ".app" and not child.is_symlink())
