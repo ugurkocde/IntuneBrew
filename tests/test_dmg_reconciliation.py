@@ -22,6 +22,8 @@ spec.loader.exec_module(c)
 BUNDLE = 'org.example.fixture'
 ARTIFACT = b'fixture artifact, never a real disk image'
 SHA = hashlib.sha256(ARTIFACT).hexdigest()
+VOLUME_METADATA_NAMES = ('.Trashes', '.TemporaryItems', '.Spotlight-V100',
+                         '.fseventsd', '.DocumentRevisions-V100')
 
 
 def fake_app(root, name='Fixture', short='2.0', build=None, bundle=BUNDLE):
@@ -56,9 +58,7 @@ class ReaderDiagnosticTests(unittest.TestCase):
         self.assertEqual(result, c.InspectionRefusal('CANDIDATE_UNREADABLE', True))
 
     def test_container_categories_and_exception_details_are_bounded(self):
-        names = {'.fseventsd': 'fseventsd', '.background': 'background',
-                 '.DocumentRevisions-V100': 'document_revisions',
-                 '.Spotlight-V100': 'spotlight', '.TemporaryItems': 'temporary_items',
+        names = {'.background': 'background',
                  '.HFS+ Private Directory Data\r': 'hfs_private',
                  '.private-name-sentinel': 'other_hidden',
                  'private-name-sentinel': 'other_visible'}
@@ -89,7 +89,7 @@ class ReaderDiagnosticTests(unittest.TestCase):
         self.assert_unreadable(result)
         self.assertEqual(diagnostic['stage'], 'root_enumeration')
         self.assertIsNone(diagnostic['container'])
-        directory = self.root / '.fseventsd'
+        directory = self.root / '.background'
         directory.mkdir()
         original = Path.is_dir
 
@@ -102,7 +102,29 @@ class ReaderDiagnosticTests(unittest.TestCase):
             result, diagnostic, unused = self.read()
         self.assert_unreadable(result)
         self.assertEqual(diagnostic['stage'], 'entry_classification')
-        self.assertEqual(diagnostic['container'], 'fseventsd')
+        self.assertEqual(diagnostic['container'], 'background')
+
+    def test_volume_metadata_symlink_check_failure_still_refuses(self):
+        categories = {'.Trashes': 'other_hidden',
+                      '.TemporaryItems': 'temporary_items', '.Spotlight-V100': 'spotlight',
+                      '.fseventsd': 'fseventsd', '.DocumentRevisions-V100': 'document_revisions'}
+        original = Path.is_symlink
+        for name in VOLUME_METADATA_NAMES:
+            with self.subTest(name=name):
+                directory = self.root / name
+                directory.mkdir()
+
+                def unreadable(path):
+                    if path == directory:
+                        raise PermissionError(13, 'private')
+                    return original(path)
+
+                with patch.object(Path, 'is_symlink', unreadable):
+                    result, diagnostic, unused = self.read()
+                self.assert_unreadable(result)
+                self.assertEqual((diagnostic['stage'], diagnostic['container']),
+                                 ('entry_symlink', categories[name]))
+                directory.rmdir()
 
     def test_containment_and_lstat_are_separate_for_each_component(self):
         original_resolve, original_lstat = Path.resolve, Path.lstat
@@ -274,29 +296,35 @@ class InspectorTests(unittest.TestCase):
         self.prepare = prepare
         self.assertEqual(self.inspect().code, 'AMBIGUOUS')
 
-    def test_unreadable_volume_trash_does_not_block_root_or_nested_app(self):
+    def test_unreadable_volume_metadata_does_not_block_root_or_nested_app(self):
         original_iterdir = Path.iterdir
-        for nested in [False, True]:
-            with self.subTest(nested=nested):
+        for name, nested in [(name, nested) for name in VOLUME_METADATA_NAMES
+                             for nested in [False, True]]:
+            with self.subTest(name=name, nested=nested):
                 def prepare(root):
-                    (root / '.Trashes').mkdir()
+                    (root / name).mkdir()
                     fake_app(root / 'Payload' if nested else root)
 
                 def guarded_iterdir(path):
-                    if path.name == '.Trashes':
-                        raise PermissionError('fixture volume trash is unreadable')
+                    if path.name == name:
+                        raise PermissionError('fixture volume metadata is unreadable')
                     return original_iterdir(path)
 
                 self.prepare = prepare
-                with patch.object(Path, 'iterdir', guarded_iterdir):
+                output = io.StringIO()
+                with patch.object(Path, 'iterdir', guarded_iterdir), contextlib.redirect_stdout(output):
                     observation = self.inspect()
                 self.assertIsInstance(observation, c.BundleObservation)
                 self.assertEqual(observation.short_version, '2.0')
                 self.assertFalse(self.mount_root.parent.exists())
+                self.assertEqual(output.getvalue(), '')
 
     def test_other_unreadable_directories_still_refuse_inspection(self):
         original_iterdir = Path.iterdir
-        for name in ['Trashes', '.trashes', '.Trashes2', '.fseventsd', 'Documents']:
+        lookalikes = [variant for name in VOLUME_METADATA_NAMES
+                      for variant in (name.removeprefix('.'), name.swapcase(), name + '2')]
+        for name in lookalikes + ['Documents', '.background', '.vol',
+                                  '.HFS+ Private Directory Data\r']:
             with self.subTest(name=name):
                 def prepare(root):
                     (root / name).mkdir()
@@ -314,21 +342,26 @@ class InspectorTests(unittest.TestCase):
                                  ('CANDIDATE_UNREADABLE', True))
                 self.assertFalse(self.mount_root.parent.exists())
 
-    def test_matching_app_in_volume_trash_is_not_an_install_source(self):
-        def prepare(root):
-            fake_app(root, 'Actual')
-            fake_app(root / '.Trashes', 'Discarded', '9.0')
-        self.prepare = prepare
-        observation = self.inspect()
-        self.assertIsInstance(observation, c.BundleObservation)
-        self.assertEqual(observation.short_version, '2.0')
+    def test_matching_app_in_volume_metadata_is_not_an_install_source(self):
+        for name in VOLUME_METADATA_NAMES:
+            with self.subTest(name=name):
+                def prepare(root):
+                    fake_app(root, 'Actual')
+                    fake_app(root / name, 'Discarded', '9.0')
+                self.prepare = prepare
+                observation = self.inspect()
+                self.assertIsInstance(observation, c.BundleObservation)
+                self.assertEqual(observation.short_version, '2.0')
 
-    def test_trash_named_app_is_still_checked_for_ambiguity(self):
-        def prepare(root):
-            fake_app(root, 'Actual')
-            fake_app(root, '.Trashes', '9.0')
-        self.prepare = prepare
-        self.assertEqual(self.inspect().code, 'AMBIGUOUS')
+    def test_metadata_named_app_is_still_checked_for_ambiguity(self):
+        for name in VOLUME_METADATA_NAMES:
+            for nested in [False, True]:
+                with self.subTest(name=name, nested=nested):
+                    def prepare(root):
+                        fake_app(root, 'Actual')
+                        fake_app(root / 'Payload' if nested else root, name, '9.0')
+                    self.prepare = prepare
+                    self.assertEqual(self.inspect().code, 'AMBIGUOUS')
 
     def test_wrong_id_and_symlinked_top_level_are_not_matches(self):
         self.prepare = lambda root: fake_app(root, bundle='org.example.other')

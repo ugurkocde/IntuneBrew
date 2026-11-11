@@ -1532,8 +1532,9 @@ def _mounted_bundle_metadata(mount_point, bundle_id):
             stage = "entry_classification"
             if entry.suffix == ".app":
                 candidates.append(entry)
-            elif entry.name == ".Trashes":
-                # Volume trash is never an app installation source.
+            elif entry.name in {".Trashes", ".TemporaryItems", ".Spotlight-V100",
+                                ".fseventsd", ".DocumentRevisions-V100"}:
+                # These volume metadata folders are never app installation sources.
                 continue
             elif entry.is_dir():
                 stage = "container_enumeration"
