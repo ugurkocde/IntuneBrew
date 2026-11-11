@@ -35,6 +35,185 @@ def fake_app(root, name='Fixture', short='2.0', build=None, bundle=BUNDLE):
     return contents
 
 
+class ReaderDiagnosticTests(unittest.TestCase):
+    def setUp(self):
+        fixture = tempfile.TemporaryDirectory()
+        self.addCleanup(fixture.cleanup)
+        self.root = Path(fixture.name).resolve()
+        self.contents = fake_app(self.root)
+
+    def read(self, bundle=BUNDLE):
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            result = c._mounted_bundle_metadata(self.root, bundle)
+        lines = output.getvalue().splitlines()
+        self.assertEqual(len(lines), 1)
+        self.assertTrue(lines[0].startswith('DMG_READER_DIAG v1 '))
+        self.assertNotIn(str(self.root), lines[0])
+        return result, json.loads(lines[0].removeprefix('DMG_READER_DIAG v1 ')), lines[0]
+
+    def assert_unreadable(self, result):
+        self.assertEqual(result, c.InspectionRefusal('CANDIDATE_UNREADABLE', True))
+
+    def test_container_categories_and_exception_details_are_bounded(self):
+        names = {'.fseventsd': 'fseventsd', '.background': 'background',
+                 '.DocumentRevisions-V100': 'document_revisions',
+                 '.Spotlight-V100': 'spotlight', '.TemporaryItems': 'temporary_items',
+                 '.HFS+ Private Directory Data\r': 'hfs_private',
+                 '.private-name-sentinel': 'other_hidden',
+                 'private-name-sentinel': 'other_visible'}
+        original = Path.iterdir
+        for name, category in names.items():
+            with self.subTest(name=name):
+                directory = self.root / name
+                directory.mkdir()
+
+                def unreadable(path):
+                    if path == directory:
+                        raise PermissionError(13, 'private-error-sentinel', 'private-path-sentinel')
+                    return original(path)
+
+                with patch.object(Path, 'iterdir', unreadable):
+                    result, diagnostic, line = self.read()
+                self.assert_unreadable(result)
+                self.assertEqual(diagnostic, {'stage': 'container_enumeration',
+                    'component': None, 'container': category, 'bundleId': BUNDLE,
+                    'exception': 'PermissionError', 'errno': 13,
+                    'python': [sys.version_info.major, sys.version_info.minor]})
+                self.assertNotIn('sentinel', line)
+                directory.rmdir()
+
+    def test_root_enumeration_and_is_dir_failures_have_distinct_stages(self):
+        with patch.object(Path, 'iterdir', side_effect=PermissionError(13, 'private')):
+            result, diagnostic, unused = self.read()
+        self.assert_unreadable(result)
+        self.assertEqual(diagnostic['stage'], 'root_enumeration')
+        self.assertIsNone(diagnostic['container'])
+        directory = self.root / '.fseventsd'
+        directory.mkdir()
+        original = Path.is_dir
+
+        def unreadable(path):
+            if path == directory:
+                raise PermissionError(13, 'private')
+            return original(path)
+
+        with patch.object(Path, 'is_dir', unreadable):
+            result, diagnostic, unused = self.read()
+        self.assert_unreadable(result)
+        self.assertEqual(diagnostic['stage'], 'entry_classification')
+        self.assertEqual(diagnostic['container'], 'fseventsd')
+
+    def test_containment_and_lstat_are_separate_for_each_component(self):
+        original_resolve, original_lstat = Path.resolve, Path.lstat
+        components = {'app': self.contents.parent, 'contents': self.contents,
+                      'plist': self.contents / 'Info.plist'}
+        for kind, target in components.items():
+            with self.subTest(component=kind):
+                def escape(path, *args, **kwargs):
+                    return Path('/outside-sentinel') if path == target else original_resolve(path, *args, **kwargs)
+
+                with patch.object(Path, 'resolve', escape):
+                    result, diagnostic, line = self.read()
+                self.assert_unreadable(result)
+                self.assertEqual((diagnostic['stage'], diagnostic['component']),
+                                 ('component_containment', kind))
+                self.assertNotIn('outside-sentinel', line)
+
+                def unreadable(path, *args, **kwargs):
+                    if path == target:
+                        raise PermissionError(13, 'private')
+                    return original_lstat(path, *args, **kwargs)
+
+                with patch.object(Path, 'is_symlink', return_value=False), \
+                        patch.object(Path, 'resolve', lambda path, *args, **kwargs: path), \
+                        patch.object(Path, 'lstat', unreadable):
+                    result, diagnostic, unused = self.read()
+                self.assert_unreadable(result)
+                self.assertEqual((diagnostic['stage'], diagnostic['component']),
+                                 ('component_lstat', kind))
+
+    def test_plist_size_and_parse_failures_have_distinct_stages(self):
+        target = self.contents / 'Info.plist'
+        original = Path.stat
+
+        def unreadable(path, *args, **kwargs):
+            if path == target and kwargs.get('follow_symlinks', True):
+                raise PermissionError(13, 'private')
+            return original(path, *args, **kwargs)
+
+        with patch.object(Path, 'is_symlink', return_value=False), \
+                patch.object(Path, 'resolve', lambda path, *args, **kwargs: path), \
+                patch.object(Path, 'stat', unreadable):
+            result, diagnostic, unused = self.read()
+        self.assert_unreadable(result)
+        self.assertEqual(diagnostic['stage'], 'plist_size')
+        target.write_bytes(b'not a plist')
+        result, diagnostic, unused = self.read()
+        self.assert_unreadable(result)
+        self.assertEqual((diagnostic['stage'], diagnostic['component']),
+                         ('plist_read_or_parse', 'plist'))
+        self.assertEqual(diagnostic['exception'], 'InvalidFileException')
+
+    def test_unsafe_bundle_unknown_exception_and_errno_are_sanitized(self):
+        class PrivateErrorSentinel(Exception):
+            pass
+
+        for number in [True, -13, 0, 256, '13', None]:
+            with self.subTest(errno=number):
+                error = PrivateErrorSentinel('private-message-sentinel')
+                error.errno = number
+                with patch.object(Path, 'iterdir', side_effect=error):
+                    result, diagnostic, line = self.read('https://secret.invalid/?token=private-sentinel')
+                self.assert_unreadable(result)
+                self.assertEqual(diagnostic['exception'], 'Exception')
+                self.assertIsNone(diagnostic['bundleId'])
+                self.assertIsNone(diagnostic['errno'])
+                self.assertNotIn('sentinel', line)
+                self.assertNotIn('secret', line)
+
+    def test_logging_failure_does_not_replace_original_refusal(self):
+        with patch.object(Path, 'iterdir', side_effect=PermissionError(13, 'private')), \
+                patch('builtins.print', side_effect=BrokenPipeError('private')):
+            self.assert_unreadable(c._mounted_bundle_metadata(self.root, BUNDLE))
+
+    def test_public_bundle_filter_has_ascii_and_length_limits(self):
+        for bundle, expected in [('a' * 200, 'a' * 200), ('a' * 201, None),
+                                 ('org.example.\u0130', None), ('org.example\n', None), (42, None)]:
+            with self.subTest(bundle=bundle), \
+                    patch.object(Path, 'iterdir', side_effect=OSError(255, 'private')):
+                result, diagnostic, unused = self.read(bundle)
+            self.assert_unreadable(result)
+            self.assertEqual(diagnostic['bundleId'], expected)
+            self.assertEqual(diagnostic['errno'], 255)
+
+    def test_success_and_other_refusals_are_silent_and_compatibility_is_unchanged(self):
+        output = io.StringIO()
+        with contextlib.redirect_stdout(output):
+            self.assertEqual(c._mounted_bundle_metadata(self.root, BUNDLE), ('2.0', None))
+            self.assertEqual(c._bundle_version_in(self.root, BUNDLE), '2.0')
+            self.assertEqual(c._mounted_bundle_metadata(self.root, 'org.example.other').code, 'NOT_FOUND')
+            fake_app(self.root, 'Second')
+            self.assertEqual(c._mounted_bundle_metadata(self.root, BUNDLE).code, 'AMBIGUOUS')
+            shutil.rmtree(self.root / 'Second.app')
+            target = self.contents / 'Info.plist'
+            target.write_bytes(plistlib.dumps({'CFBundleIdentifier': BUNDLE,
+                                               'CFBundleShortVersionString': 42}))
+            self.assertEqual(c._mounted_bundle_metadata(self.root, BUNDLE).code, 'SHORT_MALFORMED')
+            target.write_bytes(plistlib.dumps({'CFBundleIdentifier': BUNDLE,
+                'CFBundleShortVersionString': '2.0', 'CFBundleVersion': 42}))
+            self.assertEqual(c._mounted_bundle_metadata(self.root, BUNDLE).code, 'BUILD_MALFORMED')
+            target.write_bytes(plistlib.dumps([]))
+            self.assertEqual(c._mounted_bundle_metadata(self.root, BUNDLE).code, 'PLIST_INVALID')
+            target.unlink()
+            target.symlink_to(self.root / 'unopened-sentinel')
+            self.assertEqual(c._mounted_bundle_metadata(self.root, BUNDLE).code, 'SYMLINK_COMPONENT')
+        self.assertEqual(output.getvalue(), '')
+        with patch.object(Path, 'iterdir', side_effect=PermissionError(13, 'private')), \
+                contextlib.redirect_stdout(io.StringIO()):
+            self.assertIsNone(c._bundle_version_in(self.root, BUNDLE))
+
+
 class InspectorTests(unittest.TestCase):
     def setUp(self):
         self.mounted = False

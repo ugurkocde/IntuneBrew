@@ -1497,38 +1497,76 @@ def _mounted_bundle_metadata(mount_point, bundle_id):
     """Read exactly one matching real app, never following a symlink out of a DMG."""
     mount = Path(mount_point).resolve()
     candidates = []
+    stage, component_kind, container = "root_enumeration", None, None
+
+    def unreadable(error):
+        """Report bounded public metadata without changing the refusal."""
+        try:
+            error_name = type(error).__name__
+            allowed_errors = {"PermissionError", "FileNotFoundError", "NotADirectoryError",
+                              "OSError", "ValueError", "InvalidFileException", "ExpatError",
+                              "OverflowError", "UnicodeDecodeError", "TypeError"}
+            number = getattr(error, "errno", None)
+            public_bundle = (bundle_id if type(bundle_id) is str and
+                             re.fullmatch(r"[A-Za-z0-9_.-]{1,200}", bundle_id) else None)
+            diagnostic = {"stage": stage, "component": component_kind,
+                          "container": container, "bundleId": public_bundle,
+                          "exception": error_name if error_name in allowed_errors else "Exception",
+                          "errno": number if type(number) is int and 1 <= number <= 255 else None,
+                          "python": [sys.version_info.major, sys.version_info.minor]}
+            print("DMG_READER_DIAG v1 " + json.dumps(diagnostic, sort_keys=True))
+        except Exception:
+            pass
+        return InspectionRefusal("CANDIDATE_UNREADABLE", True)
+
     try:
         for entry in sorted(mount.iterdir()):
+            container = {".fseventsd": "fseventsd", ".background": "background",
+                         ".DocumentRevisions-V100": "document_revisions",
+                         ".Spotlight-V100": "spotlight", ".TemporaryItems": "temporary_items",
+                         ".HFS+ Private Directory Data\r": "hfs_private"}.get(
+                             entry.name, "other_hidden" if entry.name.startswith(".") else "other_visible")
+            stage = "entry_symlink"
             if entry.is_symlink():
                 continue
+            stage = "entry_classification"
             if entry.suffix == ".app":
                 candidates.append(entry)
             elif entry.name == ".Trashes":
                 # Volume trash is never an app installation source.
                 continue
             elif entry.is_dir():
+                stage = "container_enumeration"
                 candidates.extend(child for child in sorted(entry.iterdir())
                                   if child.suffix == ".app" and not child.is_symlink())
         matches = []
+        container = None
         for app in candidates:
             contents, plist = app / "Contents", app / "Contents" / "Info.plist"
-            for component, directory in [(app, True), (contents, True), (plist, False)]:
+            for component_kind, component, directory in [("app", app, True),
+                    ("contents", contents, True), ("plist", plist, False)]:
+                stage = "component_symlink"
                 if component.is_symlink():
                     return InspectionRefusal("SYMLINK_COMPONENT", True)
                 try:
+                    stage = "component_containment"
                     component.resolve().relative_to(mount)
+                    stage = "component_lstat"
                     mode = component.lstat().st_mode
-                except (OSError, ValueError):
-                    return InspectionRefusal("CANDIDATE_UNREADABLE", True)
+                except (OSError, ValueError) as error:
+                    return unreadable(error)
                 if not (stat.S_ISDIR(mode) if directory else stat.S_ISREG(mode)):
                     return InspectionRefusal("PLIST_INVALID", True)
+            stage = "plist_size"
             if plist.stat().st_size > 1024 * 1024:
                 return InspectionRefusal("PLIST_INVALID", True)
             try:
+                stage = "plist_read_or_parse"
                 with plist.open("rb") as source:
                     info = plistlib.load(source)
-            except Exception:
-                return InspectionRefusal("CANDIDATE_UNREADABLE", True)
+            except Exception as error:
+                return unreadable(error)
+            stage = "metadata_validation"
             if not isinstance(info, dict):
                 return InspectionRefusal("PLIST_INVALID", True)
             if type(info.get("CFBundleIdentifier")) is str and info["CFBundleIdentifier"] == bundle_id:
@@ -1547,8 +1585,8 @@ def _mounted_bundle_metadata(mount_point, bundle_id):
         if "CFBundleVersion" in info and not valid(build):
             return InspectionRefusal("BUILD_MALFORMED", True)
         return short, build
-    except Exception:
-        return InspectionRefusal("CANDIDATE_UNREADABLE", True)
+    except Exception as error:
+        return unreadable(error)
 
 
 def inspect_dmg_artifact(url, bundle_id, declared_sha256=None):
