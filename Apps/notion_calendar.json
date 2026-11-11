@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "2bf5d6aac158a8853772d28e71ffbbb925207949f3932ac9f3c8d78dd07d8b70",
   "changelog": "https://www.notion.so/help/calendar-changelog",
-  "previous_version": "1.142.0",
+  "previous_version": "1.143.0",
   "category": "Productivity",
   "publisher": "Notion Labs, Inc.",
   "homebrew_cask": "notion-calendar"

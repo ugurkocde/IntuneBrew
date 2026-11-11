@@ -9,7 +9,7 @@
   "fileName": "vivaldi_8.3.4191.35.pkg",
   "type": "app",
   "sha": "50cd1760cee24905a2c4c469a561f0aab2c4bea3196359adcf2cedac3d22d53d",
-  "previous_version": "8.3.4191.30",
+  "previous_version": "8.3.4191.35",
   "category": "Browsers",
   "publisher": "Vivaldi Technologies",
   "homebrew_cask": "vivaldi"

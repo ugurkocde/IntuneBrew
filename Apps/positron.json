@@ -11,6 +11,6 @@
   "sha": "95ca726c580edb589b5f8c72006008b9fc37f3b523c7cbfa81ef33f4e23ac509",
   "category": "Developer Tools",
   "publisher": "Posit, PBC",
-  "previous_version": "2026.11.0-308",
+  "previous_version": "2026.11.1-4",
   "homebrew_cask": "positron"
 }

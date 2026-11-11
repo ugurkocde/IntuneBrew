@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1152-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -646,109 +646,21 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-11-11T01:12:31.222587Z*
+*Last checked: 2026-11-11T03:22:34.585160Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| activitywatch | 0.14.1 | 0.14.2 |
-| adobe dng converter | 18.7 | 19.0 |
-| altserver | 1.8.3 | 1.8.4 |
-| android sdk platformtools | 37.0.2 | 37.0.1 |
-| apidog | 2.8.52 | 2.8.54 |
-| apifox | 2.8.53 | 2.8.54 |
-| appgate sdp client for macos | 6.7.3 | 7.0.0 |
-| bettertouchtool | 6.1116 | 6.1121 |
-| beyond compare | 5.2.7.32913 | 5.2.8.33052 |
-| bitwig studio | 6.1.4 | 6.1.7 |
-| blender | 5.2.3 | 5.3.0 |
-| boltai 2 | 3.0.0 | 3.1.0 |
-| bria | 6.8.8 | 6.8.8.2 |
-| camunda modeler | 5.52.0 | 5.53.0 |
-| capacities | 1.72.7 | 1.73.1 |
-| chronosync | 12.0.3 | 12.0.4 |
-| claude | 4.23118.0 | 5.1231.0 |
-| clion | 2026.3 | 2026.3.0.1 |
-| clockify | 2.12.10 | 2.12.11 |
-| clop | 3.6.7 | 3.7.0 |
-| connect fonts | 28.1.10 | 29.0.0 |
-| dia | 1.56.0 | 1.56.2 |
-| discord | 0.0.421 | 0.0.422 |
-| dropbox | 276.4.5325 | 278.4.4020 |
-| franz | 6.11.0 | 6.11.1 |
-| gitbutler | 0.23.2 | 0.23.3 |
-| github copilot cli | 1.0.107 | 1.0.109 |
-| gitify | 8.0.0 | 8.1.0 |
-| google antigravity | 2.29.0 | 2.31.0 |
-| google chrome | 157.0.8103.39 | 157.0.8103.51 |
-| goose | 1.57.0 | 1.59.0 |
-| granola | 7.749.1 | 7.774.2 |
-| istats menus | 7.50.2 | 7.50.3 |
-| jetbrains rider | 2026.2.4.1 | 2026.3 |
-| kiro | 1.4.121 | 1.4.154 |
-| loom | 0.384.0 | 0.384.1 |
-| lunar | 6.11.3 | 7.0.0b21 |
-| malwarebytes for mac | 5.28.4.4244 | 5.29.2.4310 |
-| melodics | 5.0.1811 | 5.0.1849 |
-| meta | 2.6.3 | 2.6.4 |
-| microsoft edge | 157.0.4341.42 | 157.0.4341.46 |
-| microsoft excel | 16.114.26110224 | 16.115.26110837 |
-| microsoft office | 16.114.26110224 | 16.115.26110837 |
-| microsoft office businesspro | 16.114.26110224 | 16.115.26110837 |
-| microsoft onenote | 16.114.26110224 | 16.115.26110837 |
-| microsoft outlook | 16.114.26102720 | 16.115.26110837 |
-| microsoft powerpoint | 16.114.26110224 | 16.115.26110837 |
-| microsoft visual studio code | 1.145.2 | 1.145.3 |
-| microsoft word | 16.114.26110224 | 16.115.26110837 |
-| milanote | 3.18.142 | 3.18.143 |
-| missive | 11.37.1 | 11.39.0 |
-| motrix | 2.4.0 | 2.4.1 |
-| mozilla firefox | 159.0.1 | 160.0 |
-| mozilla firefox esr | 153.6.0 | 153.7.0 |
-| mozilla thunderbird | 159.0 | 160.0 |
-| mullvad browser | 16.0 | 16.0.1 |
-| multitouch | 2.0.5 | 2.0.6 |
-| net sdk | 10.0.403 | 10.0.404 |
-| nordvpn | 10.14.1 | 10.15.1 |
-| notesnook | 3.4.12 | 3.4.13 |
-| notion | 7.42.3 | 7.43.0 |
-| notion calendar | 1.142.0 | 1.143.0 |
-| ollama | 0.40.15 | 0.40.16 |
-| omnissa horizon client | 2606-8.19.0-32216012208 | 2609-8.20.0-42259346108 |
-| onlyswitch | 3.5.0 | 3.6.0 |
-| opencode | 2.2.6 | 2.2.7 |
-| openwork | 0.18.65 | 0.18.66 |
-| opera | 139.0 | 140.0 |
-| paseo | 0.15.3 | 0.15.4 |
-| picview | 5.2.0.1 | 5.2.2 |
-| pitch | 2.152.0-stable.5 | 2.153.0-stable.1 |
-| popchar x | 10.5 | 11.0 |
-| positron | 2026.11.0-308 | 2026.11.1-4 |
-| powerphotos | 3.4.9 | 3.5 |
-| rambox | 3.1.2 | 3.2.0 |
-| reflector | 4.1.3 | 4.1.4 |
-| remnote | 1.29.8 | 1.30.0 |
-| remote desktop manager | 2026.3.3.0 | 2026.3.3.1 |
-| rocketchat | 4.19.1 | 4.19.2 |
-| setapp | 3.59.0 | 4.0.0 |
-| slack | 4.53.280 | 4.53.287 |
-| studio 3t | 2026.14.0 | 2026.15.0 |
-| superhuman | 1044.0.4 | 1044.0.5 |
-| superwhisper | 3.2.1 | 3.2.2 |
-| syncovery | 12.9.7 | 12.10.1 |
-| tabtab | 2.2.5 | 2.2.6 |
-| tor browser | 16.0 | 16.0.1 |
-| tuple | 3.3.21 | 3.3.23 |
-| tuta mail | 366.261105.0 | 368.261109.0 |
-| vivaldi | 8.3.4191.30 | 8.3.4191.35 |
-| wacom tablet | 6.4.15-1 | 6.4.15-2 |
-| wavebox | 157.3.25.2 | 157.3.32.2 |
-| workflowy | 4.3.2611041652 | 4.3.2611101136 |
-| xnviewmp | 1.12.2 | 1.12.3 |
-| yacreader | 10.4.0.261009428 | 10.5.0 |
+| bettertouchtool | 6.1121 | 6.1124 |
+| hepta | 1.117.0 | 1.117.1 |
+| lunar | 7.0.0b21 | 7.0.0b22 |
+| marginnote | 5.0.1 | 5.0.2 |
+| omnifocus | 4.9.3 | 4.10.1 |
+| onyx | 5.1.1 | 5.1.2 |
 
-27 app updates could not be published. See [catalog sync status](catalog-sync.json).
+24 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
@@ -882,7 +794,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/berkeley_open_infrastructure_for_network_computing.png' width='32' height='32'> Berkeley Open Infrastructure for Network Computing | 8.2.11 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 5.2.1 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.7 |
-| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.1121 |
+| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.1124 |
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 6.1 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.2.8.33052 |
 | <img src='Logos/bezel.png' width='32' height='32'> Bezel | 5.4.1 |
@@ -1206,7 +1118,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/hazel.png' width='32' height='32'> Hazel | 6.1.2 |
 | <img src='Logos/hazeover.png' width='32' height='32'> HazeOver | 1.9.9 |
 | <img src='Logos/headlamp.png' width='32' height='32'> Headlamp | 0.46.0 |
-| <img src='Logos/hepta.png' width='32' height='32'> Hepta | 1.117.0 |
+| <img src='Logos/hepta.png' width='32' height='32'> Hepta | 1.117.1 |
 | <img src='Logos/hex_fiend.png' width='32' height='32'> Hex Fiend | 2.18.1 |
 | <img src='Logos/hey.png' width='32' height='32'> HEY | 1.3.9 |
 | <img src='Logos/heynote.png' width='32' height='32'> Heynote | 2.9.1 |
@@ -1323,7 +1235,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/ltspice.png' width='32' height='32'> LTspice | 26.0.2 |
 | <img src='Logos/lulu.png' width='32' height='32'> LuLu | 4.5.7 |
 | <img src='Logos/lunacy.png' width='32' height='32'> Lunacy | 14.1 |
-| <img src='Logos/lunar.png' width='32' height='32'> Lunar | 7.0.0b21 |
+| <img src='Logos/lunar.png' width='32' height='32'> Lunar | 7.0.0b22 |
 | <img src='Logos/lunatask.png' width='32' height='32'> Lunatask | 2.1.29 |
 | <img src='Logos/mac_mouse_fix.png' width='32' height='32'> Mac Mouse Fix | 3.1.0 |
 | <img src='Logos/maccy.png' width='32' height='32'> Maccy | 2.8.0 |
@@ -1344,7 +1256,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/mailspring.png' width='32' height='32'> Mailspring | 1.26.2 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.29.2.4310 |
 | <img src='Logos/mamp.png' width='32' height='32'> MAMP | 7.5 |
-| <img src='Logos/marginnote.png' width='32' height='32'> MarginNote | 5.0.1 |
+| <img src='Logos/marginnote.png' width='32' height='32'> MarginNote | 5.0.2 |
 | <img src='Logos/markedit.png' width='32' height='32'> MarkEdit | 1.37.1 |
 | <img src='Logos/marsedit.png' width='32' height='32'> MarsEdit | 5.4.7 |
 | <img src='Logos/marta_file_manager.png' width='32' height='32'> Marta File Manager | 0.8.2 |
@@ -1474,7 +1386,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/okta_verify.png' width='32' height='32'> Okta Verify | 9.73.0 |
 | <img src='Logos/ollama.png' width='32' height='32'> Ollama | 0.40.16 |
 | <img src='Logos/omnidisksweeper.png' width='32' height='32'> OmniDiskSweeper | 1.16 |
-| <img src='Logos/omnifocus.png' width='32' height='32'> OmniFocus | 4.9.3 |
+| <img src='Logos/omnifocus.png' width='32' height='32'> OmniFocus | 4.10.1 |
 | <img src='Logos/omnigraffle.png' width='32' height='32'> OmniGraffle | 7.26.1 |
 | <img src='Logos/omnioutliner.png' width='32' height='32'> OmniOutliner | 6.3.1 |
 | <img src='Logos/omniplan.png' width='32' height='32'> OmniPlan | 4.11 |
@@ -1484,7 +1396,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/onionshare.png' width='32' height='32'> OnionShare | 2.7.2 |
 | <img src='Logos/onlyoffice.png' width='32' height='32'> ONLYOFFICE | 10.0.0 |
 | <img src='Logos/onlyswitch.png' width='32' height='32'> OnlySwitch | 3.6.0 |
-| <img src='Logos/onyx.png' width='32' height='32'> OnyX | 5.1.1 |
+| <img src='Logos/onyx.png' width='32' height='32'> OnyX | 5.1.2 |
 | <img src='Logos/opal_composer.png' width='32' height='32'> Opal Composer | 2.0.0 |
 | <img src='Logos/openaudible.png' width='32' height='32'> OpenAudible | 5.2 |
 | <img src='Logos/openboard.png' width='32' height='32'> OpenBoard | 1.7.7 |

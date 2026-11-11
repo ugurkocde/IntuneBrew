@@ -10,7 +10,7 @@
   "type": "app",
   "category": "Developer Tools",
   "publisher": "Google LLC",
-  "previous_version": "37.0.2",
+  "previous_version": "37.0.1",
   "sha": "9ebc93ef2c11ddaedac93f7cad5496ef54d42861486df509da940d50f470fb96",
   "homebrew_cask": "android-platform-tools",
   "packageIdentifier": "com.google.android.platform-tools"
