@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-11-10",
+  "last_updated": "2026-11-11",
   "total_cves": 1068,
   "summary": {
     "critical": 18,
@@ -1001,8 +1001,8 @@
     {
       "cve_id": "CVE-2026-85893",
       "published_date": "2026-09-15",
-      "last_modified_date": "2026-10-30",
-      "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to execute code over a network.",
+      "last_modified_date": "2026-11-10",
+      "description": "Use after free in Microsoft Edge (Chromium-based) allows an unauthorized attacker to elevate privileges over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
       "cvss_version": "3.1",
@@ -1253,7 +1253,7 @@
     {
       "cve_id": "CVE-2026-57990",
       "published_date": "2026-07-26",
-      "last_modified_date": "2026-10-24",
+      "last_modified_date": "2026-11-10",
       "description": "Files or directories accessible to external parties in Microsoft Edge (Chromium-based) allows an unauthorized attacker to disclose information over a network.",
       "base_score": 7.4,
       "severity": "HIGH",
@@ -2660,7 +2660,7 @@
     {
       "cve_id": "CVE-2023-36741",
       "published_date": "2023-08-26",
-      "last_modified_date": "2026-08-10",
+      "last_modified_date": "2026-11-10",
       "description": "Microsoft Edge (Chromium-based) Elevation of Privilege Vulnerability",
       "base_score": 8.3,
       "severity": "HIGH",
@@ -14630,7 +14630,7 @@
     {
       "cve_id": "CVE-2026-62828",
       "published_date": "2026-07-28",
-      "last_modified_date": "2026-10-24",
+      "last_modified_date": "2026-11-10",
       "description": "Improper input validation in Microsoft Edge for Android allows an unauthorized attacker to perform tampering over a network.",
       "base_score": 5.4,
       "severity": "MEDIUM",
@@ -14714,8 +14714,8 @@
     {
       "cve_id": "CVE-2026-45489",
       "published_date": "2026-07-03",
-      "last_modified_date": "2026-10-25",
-      "description": "Microsoft Edge (Chromium-based) Spoofing Vulnerability",
+      "last_modified_date": "2026-11-10",
+      "description": "Exposed dangerous method or function in Microsoft Edge (Chromium-based) allows an unauthorized attacker to perform spoofing over a network.",
       "base_score": 6.5,
       "severity": "MEDIUM",
       "cvss_version": "3.1",
