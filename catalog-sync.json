@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-10T14:57:24.792547Z",
-  "lastFullSyncAt": "2026-11-10T01:07:57.454136Z",
+  "lastPublishedAt": "2026-11-11T01:12:31.222587Z",
+  "lastFullSyncAt": "2026-11-11T01:12:31.222587Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -14,11 +14,19 @@
       "stage": "collection"
     },
     {
+      "app": "camtasia",
+      "stage": "collection"
+    },
+    {
       "app": "capcut",
       "stage": "collection"
     },
     {
       "app": "cmux",
+      "stage": "collection"
+    },
+    {
+      "app": "defold",
       "stage": "collection"
     },
     {
@@ -50,7 +58,15 @@
       "stage": "collection"
     },
     {
+      "app": "lens",
+      "stage": "collection"
+    },
+    {
       "app": "libreoffice",
+      "stage": "collection"
+    },
+    {
+      "app": "marginnote",
       "stage": "collection"
     },
     {
@@ -66,11 +82,19 @@
       "stage": "collection"
     },
     {
+      "app": "omnifocus",
+      "stage": "collection"
+    },
+    {
       "app": "onyx",
       "stage": "collection"
     },
     {
       "app": "reaper",
+      "stage": "collection"
+    },
+    {
+      "app": "resilio_sync",
       "stage": "collection"
     },
     {
@@ -90,6 +114,6 @@
       "stage": "collection"
     }
   ],
-  "appCount": 1153,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42835099191"
+  "appCount": 1152,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42931149097"
 }
