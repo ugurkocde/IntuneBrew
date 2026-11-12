@@ -8,7 +8,6 @@ import shutil
 import sys
 import signal
 import threading
-import time
 import requests
 from urllib3.util.retry import Retry
 import re
@@ -1693,6 +1692,17 @@ class CatalogVersionHold(RuntimeError):
         super().__init__("DMG release held: " + code)
 
 
+VENDOR_CHECKSUM_DEADLINE = 15
+
+
+class _VendorChecksumDeadline(Exception):
+    """Interrupt transport parsing without being retried as an OSError."""
+
+
+def _vendor_checksum_alarm(signum, frame):
+    raise _VendorChecksumDeadline()
+
+
 def read_vendor_sha256(url):
     """Read one bounded, same-URL checksum sidecar, without retries or redirects."""
     if type(url) is not str:
@@ -1705,24 +1715,35 @@ def read_vendor_sha256(url):
             or parsed.username is not None or parsed.password is not None
             or parsed.query or parsed.fragment or not parsed.path.lower().endswith(".dmg")):
         return None
+    if (threading.current_thread() is not threading.main_thread() or
+            not all(hasattr(signal, name) for name in (
+                "SIGALRM", "ITIMER_REAL", "setitimer", "getitimer")) or
+            any(signal.getitimer(signal.ITIMER_REAL))):
+        return None
     filename = unquote(parsed.path.rsplit("/", 1)[-1])
-    deadline = time.monotonic() + 15
+    previous = signal.signal(signal.SIGALRM, _vendor_checksum_alarm)
     try:
+        signal.setitimer(signal.ITIMER_REAL, VENDOR_CHECKSUM_DEADLINE)
         response = requests.get(url + ".sha256", stream=True, timeout=(5, 5), allow_redirects=False)
         try:
             if response.status_code != 200:
                 return None
             body = bytearray()
             for chunk in response.iter_content(chunk_size=1):
-                if time.monotonic() >= deadline or len(body) + len(chunk) > 4096:
+                if len(body) + len(chunk) > 4096:
                     return None
                 body.extend(chunk)
             match = re.fullmatch(r"([0-9a-fA-F]{64}) [ *](.+)\n?", body.decode("ascii"))
             return match[1].lower() if match and match[2] == filename else None
         finally:
             response.close()
-    except (requests.RequestException, UnicodeError, ValueError):
+    except (_VendorChecksumDeadline, requests.RequestException, UnicodeError, ValueError):
         return None
+    finally:
+        try:
+            signal.setitimer(signal.ITIMER_REAL, 0)
+        finally:
+            signal.signal(signal.SIGALRM, previous if previous is not None else signal.SIG_DFL)
 
 
 def reconcile_vendor_dmg(app_info, prior, raw_cask, cask):

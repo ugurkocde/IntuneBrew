@@ -1,8 +1,14 @@
 """Numeric release/build fixtures use synthetic hashes and bundle identities."""
 from dataclasses import replace
+import http.client
+import io
 import json
+import signal
+import time
 import unittest
 from unittest.mock import Mock, patch
+
+import urllib3.response
 
 import test_dmg_reconciliation as integration
 import test_version_relation as original
@@ -109,15 +115,79 @@ class ChecksumSidecarTests(unittest.TestCase):
                 self.assertIsNone(c.read_vendor_sha256(url))
                 get.assert_not_called()
 
-    def test_timeout_and_elapsed_budget_fail_closed(self):
+    def test_request_timeout_fails_closed_and_restores_alarm(self):
+        previous = signal.getsignal(signal.SIGALRM)
         with patch.object(c.requests, 'get', side_effect=c.requests.Timeout):
             self.assertIsNone(c.read_vendor_sha256(self.URL))
-        response = Mock(status_code=200)
-        response.iter_content.return_value = [(SHA + '  fixture.dmg\n').encode()]
-        with patch.object(c.requests, 'get', return_value=response), \
-                patch.object(c.time, 'monotonic', side_effect=[0, 16]):
+        self.assertEqual(signal.getsignal(signal.SIGALRM), previous)
+        self.assertEqual(signal.getitimer(signal.ITIMER_REAL), (0, 0))
+
+    def test_wall_clock_deadline_interrupts_request_before_response_exists(self):
+        previous = signal.getsignal(signal.SIGALRM)
+
+        def stalled_request(*args, **kwargs):
+            time.sleep(1)
+            self.fail('request was not interrupted')
+
+        with patch.object(c.requests, 'get', side_effect=stalled_request), \
+                patch.object(c, 'VENDOR_CHECKSUM_DEADLINE', 0.03):
             self.assertIsNone(c.read_vendor_sha256(self.URL))
-        response.close.assert_called_once()
+        self.assertEqual(signal.getsignal(signal.SIGALRM), previous)
+        self.assertEqual(signal.getitimer(signal.ITIMER_REAL), (0, 0))
+
+    def test_wall_clock_deadline_interrupts_real_urllib3_chunked_trailers(self):
+        body = (SHA + '  fixture.dmg\n').encode()
+        wire = (b'HTTP/1.1 200 OK\r\nTransfer-Encoding: chunked\r\n\r\n' +
+                ('%x\r\n' % len(body)).encode() + body + b'\r\n0\r\n')
+
+        class TrailerStream(io.BytesIO):
+            trailers = 0
+
+            def readline(self, *args):
+                line = super().readline(*args)
+                if not line and self.trailers < 1000:
+                    self.trailers += 1
+                    time.sleep(0.002)
+                    return b'X-Fixture-Trailer: keep-reading\r\n'
+                return line or b'\r\n'
+
+        stream = TrailerStream(wire)
+        sock = Mock()
+        sock.makefile.return_value = stream
+        transport = http.client.HTTPResponse(sock, method='GET')
+        transport.begin()
+        response = c.requests.Response()
+        response.status_code = 200
+        response.raw = urllib3.response.HTTPResponse(
+            body=transport, original_response=transport, preload_content=False,
+            headers={'Transfer-Encoding': 'chunked'}, request_method='GET')
+        previous = signal.getsignal(signal.SIGALRM)
+        with patch.object(c.requests, 'get', return_value=response), \
+                patch.object(c, 'VENDOR_CHECKSUM_DEADLINE', 0.03), \
+                patch.object(response, 'close', wraps=response.close) as close:
+            self.assertIsNone(c.read_vendor_sha256(self.URL))
+            close.assert_called_once()
+        self.assertGreater(stream.trailers, 0)
+        self.assertLess(stream.trailers, 1000)
+        self.assertEqual(signal.getsignal(signal.SIGALRM), previous)
+        self.assertEqual(signal.getitimer(signal.ITIMER_REAL), (0, 0))
+
+    def test_occupied_or_unavailable_alarm_never_starts_a_request(self):
+        with patch.object(c.signal, 'getitimer', return_value=(1, 0)), \
+                patch.object(c.signal, 'signal') as handler, \
+                patch.object(c.signal, 'setitimer') as timer, \
+                patch.object(c.requests, 'get') as get:
+            self.assertIsNone(c.read_vendor_sha256(self.URL))
+            handler.assert_not_called()
+            timer.assert_not_called()
+            get.assert_not_called()
+        with patch.object(c.threading, 'current_thread', return_value=object()), \
+                patch.object(c.requests, 'get') as get:
+            self.assertIsNone(c.read_vendor_sha256(self.URL))
+            get.assert_not_called()
+        with patch.object(c, 'signal', object()), patch.object(c.requests, 'get') as get:
+            self.assertIsNone(c.read_vendor_sha256(self.URL))
+            get.assert_not_called()
 
 
 class NumericSuffixCollectorTests(unittest.TestCase):
