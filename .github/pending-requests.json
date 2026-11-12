@@ -32,14 +32,6 @@
     "needs_review": false
   },
   {
-    "issue": 406,
-    "casks": [
-      "homebrew-app"
-    ],
-    "recorded_at": "2026-11-12T13:38:34.004400+00:00",
-    "needs_review": false
-  },
-  {
     "issue": 407,
     "casks": [
       "plezy"
