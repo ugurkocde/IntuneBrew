@@ -11,5 +11,6 @@
   "type": "app",
   "sha": "dbe18511f1feba559e1683141b2454df2c0b16794f516c95aa46bddd2b80d8aa",
   "category": "Developer Tools",
-  "publisher": "Homebrew"
+  "publisher": "Homebrew",
+  "previous_version": "0.6.0"
 }

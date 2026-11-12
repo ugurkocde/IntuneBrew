@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-12T14:50:13.774282Z",
-  "lastFullSyncAt": "2026-11-12T12:51:02.752582Z",
+  "lastPublishedAt": "2026-11-12T16:16:02.075025Z",
+  "lastFullSyncAt": "2026-11-12T16:16:02.075025Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -32,6 +32,10 @@
     {
       "app": "fontagent",
       "stage": "scraper"
+    },
+    {
+      "app": "github_copilot",
+      "stage": "bundle ID validation"
     },
     {
       "app": "goodsync",
@@ -74,6 +78,10 @@
       "stage": "collection"
     },
     {
+      "app": "plezy",
+      "stage": "bundle ID validation"
+    },
+    {
       "app": "reaper",
       "stage": "collection"
     },
@@ -86,6 +94,10 @@
       "stage": "collection"
     },
     {
+      "app": "unraid_usb_creator",
+      "stage": "bundle ID validation"
+    },
+    {
       "app": "wechat_for_mac",
       "stage": "collection"
     },
@@ -94,6 +106,6 @@
       "stage": "collection"
     }
   ],
-  "appCount": 1153,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43229254729"
+  "appCount": 1155,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43249524253"
 }

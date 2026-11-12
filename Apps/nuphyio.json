@@ -1,0 +1,12 @@
+{
+  "name": "NuPhyIO",
+  "description": "Keyboard configurator for NuPhy devices",
+  "version": "2.2.9",
+  "url": "https://cdn.nuphy.io/upgrade/mac/NuPhyIO-2.2.9-1793684567946.dmg",
+  "vendor_url": "https://cdn.nuphy.io/upgrade/mac/NuPhyIO-2.2.9-1793684567946.dmg",
+  "bundleId": "NuPhyIO2.your-app",
+  "homepage": "https://www.nuphyio.com/",
+  "homebrew_cask": "nuphyio",
+  "fileName": "NuPhyIO-2.2.9-1793684567946.dmg",
+  "sha": "b56195b883688657aa845e954a43381140d9780c7cad2a594e142310e33a5cef"
+}

@@ -1,110 +1,89 @@
 {
-  "lastChecked": "2026-11-12T12:51:02.752582Z",
+  "lastChecked": "2026-11-12T16:16:02.075025Z",
   "updates": [
     {
-      "appName": "aircall workspace",
-      "previousVersion": "1.19.0",
-      "newVersion": "1.19.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/aircall_workspace.png"
-    },
-    {
       "appName": "bettertouchtool",
-      "previousVersion": "6.1132",
-      "newVersion": "6.1135",
+      "previousVersion": "6.1135",
+      "newVersion": "6.1139",
       "changelog": null,
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bettertouchtool.png"
     },
     {
-      "appName": "biscuit",
-      "previousVersion": "2.2.10",
-      "newVersion": "2.2.11",
+      "appName": "busycal",
+      "previousVersion": "2026.4.5",
+      "newVersion": "2026.4.6",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/biscuit.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/busycal.png"
     },
     {
-      "appName": "gitbutler",
-      "previousVersion": "0.23.3",
-      "newVersion": "0.23.4",
+      "appName": "cursor",
+      "previousVersion": "3.29.15",
+      "newVersion": "3.30.8",
+      "changelog": "https://www.cursor.com/changelog",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/cursor.png"
+    },
+    {
+      "appName": "dbgate",
+      "previousVersion": "7.3.4",
+      "newVersion": "7.3.6",
+      "changelog": "https://github.com/dbgate/dbgate/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dbgate.png"
+    },
+    {
+      "appName": "dockview",
+      "previousVersion": "1.7.5",
+      "newVersion": "2.6.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/gitbutler.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dockview.png"
     },
     {
-      "appName": "google antigravity",
-      "previousVersion": "2.31.1",
-      "newVersion": "2.31.2",
+      "appName": "lark",
+      "previousVersion": "8.4.19",
+      "newVersion": "8.5.12",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/google_antigravity.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/lark.png"
     },
     {
-      "appName": "melodics",
-      "previousVersion": "5.0.1849",
-      "newVersion": "5.0.1871",
+      "appName": "libreoffice",
+      "previousVersion": "26.8.2.2",
+      "newVersion": "26.8.3.1",
+      "changelog": "https://www.libreoffice.org/download/release-notes/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/libreoffice.png"
+    },
+    {
+      "appName": "lunar",
+      "previousVersion": "7.0.0b23",
+      "newVersion": "7.0.0b25",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/melodics.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/lunar.png"
     },
     {
-      "appName": "pitch",
-      "previousVersion": "2.153.1-stable.1",
-      "newVersion": "2.153.1-stable.2",
+      "appName": "musescore",
+      "previousVersion": "4.7.6",
+      "newVersion": "4.7.7",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/pitch.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/musescore.png"
     },
     {
-      "appName": "rotato",
-      "previousVersion": "162",
-      "newVersion": "161",
-      "changelog": "https://rotato.app/releases",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rotato.png"
-    },
-    {
-      "appName": "signal",
-      "previousVersion": "8.34.0",
-      "newVersion": "8.35.0",
+      "appName": "reqable",
+      "previousVersion": "3.3.11",
+      "newVersion": "3.3.12",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/signal.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/reqable.png"
     },
     {
-      "appName": "spotify",
-      "previousVersion": "1.3.8.620",
-      "newVersion": "1.3.9.2055",
-      "changelog": "https://support.spotify.com/us/article/desktop-app-changelog/",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/spotify.png"
-    },
-    {
-      "appName": "tableplus",
-      "previousVersion": "27.3.0",
-      "newVersion": "27.3.2",
+      "appName": "workflowy",
+      "previousVersion": "4.3.2611101136",
+      "newVersion": "4.3.2611120800",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tableplus.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/workflowy.png"
     },
     {
-      "appName": "tabtab",
-      "previousVersion": "2.2.6",
-      "newVersion": "2.2.7",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tabtab.png"
-    },
-    {
-      "appName": "wealthfolio",
-      "previousVersion": "3.12.0",
-      "newVersion": "3.13.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/wealthfolio.png"
-    },
-    {
-      "appName": "webcatalog",
-      "previousVersion": "82.0.0",
-      "newVersion": "82.1.0",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/webcatalog.png"
-    },
-    {
-      "appName": "winbox",
-      "previousVersion": "4.4",
-      "newVersion": "4.5.102000",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/winbox.png"
+      "appName": "zen browser",
+      "previousVersion": "1.24.1b",
+      "newVersion": "1.24.2b",
+      "changelog": "https://zen-browser.app/release-notes/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/zen_browser.png"
     }
   ]
 }
