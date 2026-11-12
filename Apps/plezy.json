@@ -11,5 +11,6 @@
   "type": "app",
   "sha": "62c1cf3a88f63127bd8411b62edd325619581c41b9721ef9029882943a8d199e",
   "category": "Media",
-  "publisher": "Plezy"
+  "publisher": "Plezy",
+  "previous_version": "2.26.0"
 }
