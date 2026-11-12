@@ -6,5 +6,13 @@
     ],
     "recorded_at": "2026-11-12T13:28:09.065838+00:00",
     "needs_review": false
+  },
+  {
+    "issue": 412,
+    "casks": [
+      "font-hack-nerd-font"
+    ],
+    "recorded_at": "2026-11-12T21:52:33.172317+00:00",
+    "needs_review": false
   }
 ]
