@@ -1237,6 +1237,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/github-copilot-app.json",
     "https://formulae.brew.sh/api/cask/nuphyio.json",
     "https://formulae.brew.sh/api/cask/unraid-usb-creator.json",
+    "https://formulae.brew.sh/api/cask/plezy.json",
 ]
 
 # PKG in DMG URLs

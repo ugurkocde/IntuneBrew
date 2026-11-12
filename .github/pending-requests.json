@@ -38,5 +38,13 @@
     ],
     "recorded_at": "2026-11-12T13:38:34.004400+00:00",
     "needs_review": false
+  },
+  {
+    "issue": 407,
+    "casks": [
+      "plezy"
+    ],
+    "recorded_at": "2026-11-12T13:51:27.447629+00:00",
+    "needs_review": false
   }
 ]
