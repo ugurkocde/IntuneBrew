@@ -50,6 +50,7 @@ class ReconcileInput:
     observation: object = None
     consumer_caps: frozenset = CATALOG_CONSUMER_CAPABILITIES
     source_cask: str = None
+    vendor_sha256: str = None
 
 
 @dataclass(frozen=True)
@@ -120,6 +121,18 @@ def build_relationship(raw, short, build):
             and re.fullmatch(numeric, fields[0]) and re.fullmatch(_CANON, build)
             and fields[0] == short + "." + build):
         return "SOURCE_SHORT_DOT_BUILD"
+    return None
+
+
+def numeric_suffix_relationship(raw, short, build):
+    """Recognize extra numeric bundle components; callers must bind a vendor hash."""
+    if (type(raw) is not str or type(short) is not str or type(build) is not str
+            or len(raw) > 64 or len(short) > 64 or short != build):
+        return None
+    numeric = _BOUNDED_COMPONENT + r"(?:\." + _BOUNDED_COMPONENT + r")*"
+    if (re.fullmatch(numeric, raw) and re.fullmatch(numeric, short)
+            and short.startswith(raw + ".")):
+        return "VENDOR_CHECKED_NUMERIC_SUFFIX"
     return None
 
 
@@ -207,7 +220,10 @@ def reconcile(i):
                     or build_relationship(i.source_release, obs.short_version, obs.bundle_version)
                     or hyphen_build_relationship(i.source_release, obs.short_version,
                                                  obs.bundle_version, i.source_cask)
-                    or paren_hex_build_relationship(i.source_release, obs.short_version, obs.bundle_version))
+                    or paren_hex_build_relationship(i.source_release, obs.short_version, obs.bundle_version)
+                    or (numeric_suffix_relationship(i.source_release, obs.short_version, obs.bundle_version)
+                        if _sha(i.vendor_sha256)
+                        and i.vendor_sha256 == i.declared_sha256 == obs.artifact_sha256 else None))
     if relation is None:
         return Decision("HOLD", reason="RELATION_UNPROVEN")
     required = {"RENDER_PLUS": "plus_build", "RENDER_PAREN_BUILD": "decorated_text",
