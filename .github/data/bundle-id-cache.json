@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-12T12:52:26.601Z",
+  "last_full_scan": "2026-11-12T14:51:16.161Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9487,6 +9487,13 @@
       "status": "verified",
       "source": "file",
       "name": "QGIS LTR"
+    },
+    "homebrew": {
+      "last_checked": "2026-11-12T14:51:16.147Z",
+      "bundle_id": "sh.brew.app",
+      "status": "verified",
+      "source": "file",
+      "name": "Homebrew"
     }
   }
 }
