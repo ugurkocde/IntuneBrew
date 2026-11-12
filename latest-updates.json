@@ -1,12 +1,110 @@
 {
-  "lastChecked": "2026-11-12T00:57:56.320999Z",
+  "lastChecked": "2026-11-12T12:51:02.752582Z",
   "updates": [
     {
-      "appName": "libreoffice",
-      "previousVersion": "26.8.1",
-      "newVersion": "26.8.2.2",
-      "changelog": "https://www.libreoffice.org/download/release-notes/",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/libreoffice.png"
+      "appName": "aircall workspace",
+      "previousVersion": "1.19.0",
+      "newVersion": "1.19.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/aircall_workspace.png"
+    },
+    {
+      "appName": "bettertouchtool",
+      "previousVersion": "6.1132",
+      "newVersion": "6.1135",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bettertouchtool.png"
+    },
+    {
+      "appName": "biscuit",
+      "previousVersion": "2.2.10",
+      "newVersion": "2.2.11",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/biscuit.png"
+    },
+    {
+      "appName": "gitbutler",
+      "previousVersion": "0.23.3",
+      "newVersion": "0.23.4",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/gitbutler.png"
+    },
+    {
+      "appName": "google antigravity",
+      "previousVersion": "2.31.1",
+      "newVersion": "2.31.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/google_antigravity.png"
+    },
+    {
+      "appName": "melodics",
+      "previousVersion": "5.0.1849",
+      "newVersion": "5.0.1871",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/melodics.png"
+    },
+    {
+      "appName": "pitch",
+      "previousVersion": "2.153.1-stable.1",
+      "newVersion": "2.153.1-stable.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/pitch.png"
+    },
+    {
+      "appName": "rotato",
+      "previousVersion": "162",
+      "newVersion": "161",
+      "changelog": "https://rotato.app/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rotato.png"
+    },
+    {
+      "appName": "signal",
+      "previousVersion": "8.34.0",
+      "newVersion": "8.35.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/signal.png"
+    },
+    {
+      "appName": "spotify",
+      "previousVersion": "1.3.8.620",
+      "newVersion": "1.3.9.2055",
+      "changelog": "https://support.spotify.com/us/article/desktop-app-changelog/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/spotify.png"
+    },
+    {
+      "appName": "tableplus",
+      "previousVersion": "27.3.0",
+      "newVersion": "27.3.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tableplus.png"
+    },
+    {
+      "appName": "tabtab",
+      "previousVersion": "2.2.6",
+      "newVersion": "2.2.7",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tabtab.png"
+    },
+    {
+      "appName": "wealthfolio",
+      "previousVersion": "3.12.0",
+      "newVersion": "3.13.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/wealthfolio.png"
+    },
+    {
+      "appName": "webcatalog",
+      "previousVersion": "82.0.0",
+      "newVersion": "82.1.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/webcatalog.png"
+    },
+    {
+      "appName": "winbox",
+      "previousVersion": "4.4",
+      "newVersion": "4.5.102000",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/winbox.png"
     }
   ]
 }

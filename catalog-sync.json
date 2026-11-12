@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-12T10:01:15.600902Z",
-  "lastFullSyncAt": "2026-11-12T00:57:56.320999Z",
+  "lastPublishedAt": "2026-11-12T12:51:02.752582Z",
+  "lastFullSyncAt": "2026-11-12T12:51:02.752582Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -62,10 +62,6 @@
       "stage": "collection"
     },
     {
-      "app": "libreoffice",
-      "stage": "collection"
-    },
-    {
       "app": "meetingbar",
       "stage": "collection"
     },
@@ -94,14 +90,10 @@
       "stage": "collection"
     },
     {
-      "app": "winbox",
-      "stage": "collection"
-    },
-    {
       "app": "xmind",
       "stage": "collection"
     }
   ],
   "appCount": 1152,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43194570196"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43208633255"
 }
