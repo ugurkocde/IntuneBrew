@@ -1232,6 +1232,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/langdock.json",
     "https://formulae.brew.sh/api/cask/phoenix-code.json",
     "https://formulae.brew.sh/api/cask/qgis@ltr.json",
+    "https://formulae.brew.sh/api/cask/github-copilot-app.json",
 ]
 
 # PKG in DMG URLs

@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "issue": 400,
+    "casks": [
+      "github-copilot-app"
+    ],
+    "recorded_at": "2026-11-12T13:13:14.384716+00:00",
+    "needs_review": false
+  }
+]
