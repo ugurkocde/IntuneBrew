@@ -1,7 +1,7 @@
 {
   "app_name": "Google Chrome",
   "app_key": "google_chrome",
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-12",
   "total_cves": 7643,
   "summary": {
     "critical": 599,

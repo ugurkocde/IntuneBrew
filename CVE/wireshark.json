@@ -1,7 +1,7 @@
 {
   "app_name": "Wireshark",
   "app_key": "wireshark",
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-12",
   "total_cves": 795,
   "summary": {
     "critical": 1,
@@ -182,7 +182,7 @@
     {
       "cve_id": "CVE-2026-5403",
       "published_date": "2026-05-01",
-      "last_modified_date": "2026-07-15",
+      "last_modified_date": "2026-11-11",
       "description": "SBC codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution",
       "base_score": 7.8,
       "severity": "HIGH",
@@ -224,7 +224,7 @@
     {
       "cve_id": "CVE-2026-5656",
       "published_date": "2026-05-01",
-      "last_modified_date": "2026-07-15",
+      "last_modified_date": "2026-11-11",
       "description": "Profile import path traversal in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service and possible code execution",
       "base_score": 7.0,
       "severity": "HIGH",
@@ -6167,7 +6167,7 @@
     {
       "cve_id": "CVE-2026-6525",
       "published_date": "2026-05-02",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "IEEE 802.11 protocol dissector crash in Wireshark 4.6.0 to 4.6.4",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6188,7 +6188,7 @@
     {
       "cve_id": "CVE-2026-5404",
       "published_date": "2026-05-01",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "K12 RF5 file parser crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 4.7,
       "severity": "MEDIUM",
@@ -6209,7 +6209,7 @@
     {
       "cve_id": "CVE-2026-6868",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "HTTP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6251,7 +6251,7 @@
     {
       "cve_id": "CVE-2026-7376",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "Crash in sharkd 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6272,7 +6272,7 @@
     {
       "cve_id": "CVE-2026-7378",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "Crash in sharkd 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6293,7 +6293,7 @@
     {
       "cve_id": "CVE-2026-7379",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "Memory leak in sharkd 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6335,7 +6335,7 @@
     {
       "cve_id": "CVE-2026-5401",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "AFP Spotlight protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6356,7 +6356,7 @@
     {
       "cve_id": "CVE-2026-5406",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "FC-SWILS protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6377,7 +6377,7 @@
     {
       "cve_id": "CVE-2026-5407",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "SMB2 protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6398,7 +6398,7 @@
     {
       "cve_id": "CVE-2026-5408",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "BT-DHT protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6419,7 +6419,7 @@
     {
       "cve_id": "CVE-2026-5409",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "Monero protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6440,7 +6440,7 @@
     {
       "cve_id": "CVE-2026-5653",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "DCP-ETSI protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6482,7 +6482,7 @@
     {
       "cve_id": "CVE-2026-5655",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "SDP protocol dissector crash in Wireshark 4.6.0 to 4.6.4 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6503,7 +6503,7 @@
     {
       "cve_id": "CVE-2026-5657",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "iLBC codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6566,7 +6566,7 @@
     {
       "cve_id": "CVE-2026-6521",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "OpenFlow v5 protocol dissector infinite loops in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6608,7 +6608,7 @@
     {
       "cve_id": "CVE-2026-6523",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "GNW protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6671,7 +6671,7 @@
     {
       "cve_id": "CVE-2026-6527",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "ASN.1 PER protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6713,7 +6713,7 @@
     {
       "cve_id": "CVE-2026-6529",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "iLBC audio codec crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6755,7 +6755,7 @@
     {
       "cve_id": "CVE-2026-6531",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "SANE protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6776,7 +6776,7 @@
     {
       "cve_id": "CVE-2026-6532",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "Kismet protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6818,7 +6818,7 @@
     {
       "cve_id": "CVE-2026-6534",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "USB HID protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6839,7 +6839,7 @@
     {
       "cve_id": "CVE-2026-6535",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "Dissection engine zlib decompression crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6860,7 +6860,7 @@
     {
       "cve_id": "CVE-2026-6536",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "DLMS/COSEM protocol dissector infinite loop in Wireshark 4.6.0 to 4.6.4",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6881,7 +6881,7 @@
     {
       "cve_id": "CVE-2026-6537",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "ZigBee protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6923,7 +6923,7 @@
     {
       "cve_id": "CVE-2026-6867",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "SMB2 protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",
@@ -6944,7 +6944,7 @@
     {
       "cve_id": "CVE-2026-6869",
       "published_date": "2026-04-30",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "WebSocket protocol dissector crash in Wireshark 4.6.0 to 4.6.4 and 4.4.0 to 4.4.14 allows denial of service",
       "base_score": 5.5,
       "severity": "MEDIUM",

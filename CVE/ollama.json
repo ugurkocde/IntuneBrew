@@ -1,7 +1,7 @@
 {
   "app_name": "Ollama",
   "app_key": "ollama",
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-12",
   "total_cves": 25,
   "summary": {
     "critical": 4,
@@ -14,7 +14,7 @@
     {
       "cve_id": "CVE-2026-7482",
       "published_date": "2026-05-04",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "Ollama before 0.17.1 contains a heap out-of-bounds read vulnerability in the GGUF model loader. The /api/create endpoint accepts an attacker-supplied GGUF file in which the declared tensor offset and size exceed the file's actual length; during quantization in fs/ggml/gguf.go and server/quantization.go (WriteTo()), the server reads past the allocated heap buffer. The leaked memory contents may include environment variables, API keys, system prompts, and concurrent users' conversation data, and can be exfiltrated by uploading the resulting model artifact through the /api/push endpoint to an attacker-controlled registry. The /api/create and /api/push endpoints have no authentication in the upstream distribution. Default deployments bind to 127.0.0.1, but the documented OLLAMA_HOST=0.0.0.0 configuration is widely used in practice (large public-internet exposure observed).",
       "base_score": 9.1,
       "severity": "CRITICAL",
@@ -35,7 +35,7 @@
     {
       "cve_id": "CVE-2026-42248",
       "published_date": "2026-04-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "Ollama for Windows does not perform integrity or authenticity verification of downloaded update executables. Unlike other platforms, the Windows implementation of the update verification routine unconditionally returns success so no digital signature or trust validation is performed before staging or executing update payloads, enabling attacker\u2011supplied executables to be accepted and later executed by the application.\n\nCritically, Ollama for Windows performs silent automatic updates, so the malicious payload may be installed automatically without user awareness.\n\nMaintainers of this project were notified early about this vulnerability, but didn't respond with the details of vulnerability or vulnerable version range. Versions from 0.12.10 to 0.17.5 were tested and confirmed as vulnerable, other versions were not tested but might also be vulnerable.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -56,7 +56,7 @@
     {
       "cve_id": "CVE-2026-42249",
       "published_date": "2026-04-29",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "Ollama for Windows\u00a0contains a Remote Code Execution vulnerability in its update mechanism due to improper handling of attacker\u2011controlled HTTP response headers. When downloading updates, the application constructs local file paths using values derived from HTTP headers without validation. These values are passed directly to filepath.Join, allowing path traversal sequences (../) to be resolved and enabling files to be written outside the intended update staging directory.\nAn attacker who can influence update responses can exploit this flaw to write arbitrary executables to attacker\u2011chosen locations accessible to the current user, including the Windows Startup directory. This allows execution of arbitrary executables.\n\nCritically, when chained with CVE\u20112026\u201142248 (Missing Signature Verification for Updates),\u00a0an attacker can deliver malicious payloads that are written to sensitive locations and executed automatically. Because Ollama for Windows performs silent automatic updates and executes staged binaries without user interaction, this results in automatic and persistent code execution without user awareness.\n\nMaintainers of this project were notified early about this vulnerability, but didn't respond with the details of vulnerability or vulnerable version range. Versions from 0.12.10 to 0.17.5 were tested and confirmed as vulnerable, other versions were not tested but might also be vulnerable.",
       "base_score": 9.8,
       "severity": "CRITICAL",
@@ -518,7 +518,7 @@
     {
       "cve_id": "CVE-2026-7020",
       "published_date": "2026-04-26",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "A security flaw has been discovered in Ollama up to 0.20.2. This affects the function digestToPath of the file x/imagegen/transfer/transfer.go of the component Tensor Model Transfer Handler. The manipulation of the argument digest results in path traversal. The attack may be performed from remote. This attack is characterized by high complexity. The exploitability is reported as difficult. The exploit has been released to the public and may be used for attacks. The vendor was contacted early about this disclosure but did not respond in any way.",
       "base_score": 3.7,
       "severity": "LOW",

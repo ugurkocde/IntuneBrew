@@ -1,7 +1,7 @@
 {
   "app_name": "Libreoffice",
   "app_key": "libreoffice",
-  "last_updated": "2026-11-11",
+  "last_updated": "2026-11-12",
   "total_cves": 71,
   "summary": {
     "critical": 12,
@@ -266,7 +266,7 @@
     {
       "cve_id": "CVE-2026-4430",
       "published_date": "2026-05-07",
-      "last_modified_date": "2026-06-17",
+      "last_modified_date": "2026-11-11",
       "description": "Out-of-bounds write vulnerability in The Document Foundation LibreOffice via crafted OOXML documents with mismatched encryption salt parameters.\n\nThis issue affects\u00a0LibreOffice: from 26.2 before 26.2.3, from 25.8 before 25.8.7.",
       "base_score": 7.8,
       "severity": "HIGH",
