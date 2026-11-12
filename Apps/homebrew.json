@@ -1,0 +1,13 @@
+{
+  "name": "Homebrew",
+  "description": "Homebrew's official GUI",
+  "version": "0.6.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/homebrew_0.6.0.pkg",
+  "vendor_url": "https://github.com/Homebrew/BrewUI/releases/download/v0.6.0/Homebrew-0.6.0.zip",
+  "bundleId": "sh.brew.app",
+  "homepage": "https://github.com/Homebrew/BrewUI",
+  "homebrew_cask": "homebrew-app",
+  "fileName": "homebrew_0.6.0.pkg",
+  "type": "app",
+  "sha": "dbe18511f1feba559e1683141b2454df2c0b16794f516c95aa46bddd2b80d8aa"
+}

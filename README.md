@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1152-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1153-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -673,7 +673,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | webcatalog | 82.0.0 | 82.1.0 |
 | winbox | 4.4 | 4.5.102000 |
 
-23 app updates could not be published. See [catalog sync status](catalog-sync.json).
+24 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
