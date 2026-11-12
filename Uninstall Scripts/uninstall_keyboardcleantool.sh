@@ -25,5 +25,29 @@ elif [ -f "/Applications/KeyboardCleanTool.app" ]; then
     rm -f "/Applications/KeyboardCleanTool.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.hegenberg.KeyboardCleanTool
+echo "Removing $HOME/Library/Caches/com.hegenberg.KeyboardCleanTool..."
+if [ -d "$HOME/Library/Caches/com.hegenberg.KeyboardCleanTool" ]; then
+    rm -rf "$HOME/Library/Caches/com.hegenberg.KeyboardCleanTool" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.hegenberg.KeyboardCleanTool" ]; then
+    rm -f "$HOME/Library/Caches/com.hegenberg.KeyboardCleanTool" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.hegenberg.KeyboardCleanTool
+echo "Removing $HOME/Library/HTTPStorages/com.hegenberg.KeyboardCleanTool..."
+if [ -d "$HOME/Library/HTTPStorages/com.hegenberg.KeyboardCleanTool" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.hegenberg.KeyboardCleanTool" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.hegenberg.KeyboardCleanTool" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.hegenberg.KeyboardCleanTool" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.hegenberg.KeyboardCleanTool.plist
+echo "Removing $HOME/Library/Preferences/com.hegenberg.KeyboardCleanTool.plist..."
+if [ -d "$HOME/Library/Preferences/com.hegenberg.KeyboardCleanTool.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.hegenberg.KeyboardCleanTool.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.hegenberg.KeyboardCleanTool.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.hegenberg.KeyboardCleanTool.plist" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0
