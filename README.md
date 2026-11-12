@@ -656,47 +656,9 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| 4k youtube to mp3 | 26.3.5 | 26.4 |
-| adlock | 2.2.0.8 | 2.2.0.9 |
-| bartender | 7.1.0 | 7.2.0 |
-| bettertouchtool | 6.1124 | 6.1132 |
-| brainfm | 0.0.334 | 0.0.339 |
-| chatwork | 2.25.8 | 2.25.9 |
-| clop | 3.7.0 | 3.7.1 |
-| dialpad | 2609.5.0 | 2610.1.0 |
-| element | 1.12.33 | 1.12.34 |
-| elgato wave link | 3.4.0 | 3.5.0 |
-| flexoptix app | 5.69.0-latest | 5.70.0-latest |
-| free download manager | 6.35.2 | 6.36.0 |
-| front | 3.80.1 | 3.81.2 |
-| git gui | 2.56.0 | 2.56.1 |
-| google antigravity | 2.31.0 | 2.31.1 |
-| google chrome | 157.0.8103.51 | 157.0.8103.79 |
-| google drive | 133.0.2 | 134.0.1 |
-| grammarly desktop | 1.207.0 | 1.209.0 |
-| granola | 7.774.2 | 7.786.3 |
-| keyboardcleantool | 8.3 | 9.0 |
-| lunar | 7.0.0b22 | 7.0.0b23 |
-| microsoft visual studio code | 1.145.3 | 1.146.0 |
-| morgen | 4.1.3 | 4.1.4 |
-| net sdk | 10.0.404 | 11.0.100 |
-| novabench | 6.2.1 | 6.2.2 |
-| pitch | 2.153.0-stable.1 | 2.153.1-stable.1 |
-| rive | 0.9.517 | 0.9.642 |
-| rustdesk | 1.5.1 | 1.5.3 |
-| sc menu | 2.1.1 | 2.2 |
-| shapr3d | 26.203.0 | 26.210.0 |
-| simple comic | 1.11.0 | 1.12.0 |
-| snagit | 2026.4.3 | 2027.0.0 |
-| soundsource | 6.1.6 | 6.2.0 |
-| starface | 10.0.0 | 11.0.0 |
-| surge | 6.10.0 | 6.11.0 |
-| tableplus | 27.2.0 | 27.3.0 |
-| tidal | 2.47.0 | 2.48.0 |
-| vorssaint | 3.4.3 | 3.4.4 |
-| zed | 1.27.0 | 1.28.1 |
+| libreoffice | 26.8.1 | 26.8.2.2 |
 
-24 app updates could not be published. See [catalog sync status](catalog-sync.json).
+22 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
