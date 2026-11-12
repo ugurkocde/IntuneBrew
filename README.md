@@ -678,7 +678,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | whatsapp | 26.45.13 | 26.45.21 |
 | whimsical | 2026.14.3 | 2026.14.4 |
 
-23 app updates could not be published. See [catalog sync status](catalog-sync.json).
+24 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
