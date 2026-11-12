@@ -673,7 +673,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | webcatalog | 82.0.0 | 82.1.0 |
 | winbox | 4.4 | 4.5.102000 |
 
-22 app updates could not be published. See [catalog sync status](catalog-sync.json).
+23 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
