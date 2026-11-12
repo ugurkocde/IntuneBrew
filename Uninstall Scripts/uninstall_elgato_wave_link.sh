@@ -43,6 +43,30 @@ elif [ -f "$HOME/Library/Application Scripts/com.elgato.WaveLink*" ]; then
     rm -f "$HOME/Library/Application Scripts/com.elgato.WaveLink*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.com.elgato.WaveLink3
+echo "Removing $HOME/Library/Application Scripts/group.com.elgato.WaveLink3..."
+if [ -d "$HOME/Library/Application Scripts/group.com.elgato.WaveLink3" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.com.elgato.WaveLink3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.com.elgato.WaveLink3" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.com.elgato.WaveLink3" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.elgato.WaveLink3*
+echo "Removing $HOME/Library/Application Support/com.elgato.WaveLink3*..."
+if [ -d "$HOME/Library/Application Support/com.elgato.WaveLink3*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.elgato.WaveLink3*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.elgato.WaveLink3*" ]; then
+    rm -f "$HOME/Library/Application Support/com.elgato.WaveLink3*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.elgato.WaveLink3*
+echo "Removing $HOME/Library/Caches/com.elgato.WaveLink3*..."
+if [ -d "$HOME/Library/Caches/com.elgato.WaveLink3*" ]; then
+    rm -rf "$HOME/Library/Caches/com.elgato.WaveLink3*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.elgato.WaveLink3*" ]; then
+    rm -f "$HOME/Library/Caches/com.elgato.WaveLink3*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/com.elgato.WaveLink*
 echo "Removing $HOME/Library/Containers/com.elgato.WaveLink*..."
 if [ -d "$HOME/Library/Containers/com.elgato.WaveLink*" ]; then
@@ -51,12 +75,28 @@ elif [ -f "$HOME/Library/Containers/com.elgato.WaveLink*" ]; then
     rm -f "$HOME/Library/Containers/com.elgato.WaveLink*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Group Containers/group.com.elgato.WaveLink3
+echo "Removing $HOME/Library/Group Containers/group.com.elgato.WaveLink3..."
+if [ -d "$HOME/Library/Group Containers/group.com.elgato.WaveLink3" ]; then
+    rm -rf "$HOME/Library/Group Containers/group.com.elgato.WaveLink3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/group.com.elgato.WaveLink3" ]; then
+    rm -f "$HOME/Library/Group Containers/group.com.elgato.WaveLink3" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato
 echo "Removing $HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato..."
 if [ -d "$HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato" ]; then
     rm -rf "$HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato" 2>/dev/null || true
 elif [ -f "$HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato" ]; then
     rm -f "$HOME/Library/Group Containers/Y93VXCB8Q5.group.com.corsair.elgato" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.elgato.WaveLink3*
+echo "Removing $HOME/Library/HTTPStorages/com.elgato.WaveLink3*..."
+if [ -d "$HOME/Library/HTTPStorages/com.elgato.WaveLink3*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.elgato.WaveLink3*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.elgato.WaveLink3*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.elgato.WaveLink3*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Logs/ElgatoWaveLink
@@ -73,6 +113,14 @@ if [ -d "$HOME/Library/Logs/WaveLink" ]; then
     rm -rf "$HOME/Library/Logs/WaveLink" 2>/dev/null || true
 elif [ -f "$HOME/Library/Logs/WaveLink" ]; then
     rm -f "$HOME/Library/Logs/WaveLink" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.elgato.WaveLink3.plist
+echo "Removing $HOME/Library/Preferences/com.elgato.WaveLink3.plist..."
+if [ -d "$HOME/Library/Preferences/com.elgato.WaveLink3.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.elgato.WaveLink3.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.elgato.WaveLink3.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.elgato.WaveLink3.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.elgato.WaveLink.plist

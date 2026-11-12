@@ -17,36 +17,84 @@ fi
 echo "Stopping DockView if running..."
 pkill -f "DockView" 2>/dev/null || true
 
-# Remove /Applications/DockView.app
-echo "Removing /Applications/DockView.app..."
-if [ -d "/Applications/DockView.app" ]; then
-    rm -rf "/Applications/DockView.app" 2>/dev/null || true
-elif [ -f "/Applications/DockView.app" ]; then
-    rm -f "/Applications/DockView.app" 2>/dev/null || true
+# Remove /Applications/DockView 2.app
+echo "Removing /Applications/DockView 2.app..."
+if [ -d "/Applications/DockView 2.app" ]; then
+    rm -rf "/Applications/DockView 2.app" 2>/dev/null || true
+elif [ -f "/Applications/DockView 2.app" ]; then
+    rm -f "/Applications/DockView 2.app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.sergey-gerasimenko.DockView
-echo "Removing $HOME/Library/Application Support/com.sergey-gerasimenko.DockView..."
-if [ -d "$HOME/Library/Application Support/com.sergey-gerasimenko.DockView" ]; then
-    rm -rf "$HOME/Library/Application Support/com.sergey-gerasimenko.DockView" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.sergey-gerasimenko.DockView" ]; then
-    rm -f "$HOME/Library/Application Support/com.sergey-gerasimenko.DockView" 2>/dev/null || true
+# Remove $HOME/Library/Application Scripts/com.macplus-software.com.DockView-2
+echo "Removing $HOME/Library/Application Scripts/com.macplus-software.com.DockView-2..."
+if [ -d "$HOME/Library/Application Scripts/com.macplus-software.com.DockView-2" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.macplus-software.com.DockView-2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.macplus-software.com.DockView-2" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.macplus-software.com.DockView-2" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/com.sergey-gerasimenko.DockView
-echo "Removing $HOME/Library/Caches/com.sergey-gerasimenko.DockView..."
-if [ -d "$HOME/Library/Caches/com.sergey-gerasimenko.DockView" ]; then
-    rm -rf "$HOME/Library/Caches/com.sergey-gerasimenko.DockView" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/com.sergey-gerasimenko.DockView" ]; then
-    rm -f "$HOME/Library/Caches/com.sergey-gerasimenko.DockView" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.macplus-software.com.DockView-2
+echo "Removing $HOME/Library/Application Support/com.macplus-software.com.DockView-2..."
+if [ -d "$HOME/Library/Application Support/com.macplus-software.com.DockView-2" ]; then
+    rm -rf "$HOME/Library/Application Support/com.macplus-software.com.DockView-2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.macplus-software.com.DockView-2" ]; then
+    rm -f "$HOME/Library/Application Support/com.macplus-software.com.DockView-2" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/com.sergey-gerasimenko.DockView.plist
-echo "Removing $HOME/Library/Preferences/com.sergey-gerasimenko.DockView.plist..."
-if [ -d "$HOME/Library/Preferences/com.sergey-gerasimenko.DockView.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/com.sergey-gerasimenko.DockView.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/com.sergey-gerasimenko.DockView.plist" ]; then
-    rm -f "$HOME/Library/Preferences/com.sergey-gerasimenko.DockView.plist" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/DockView 2
+echo "Removing $HOME/Library/Application Support/DockView 2..."
+if [ -d "$HOME/Library/Application Support/DockView 2" ]; then
+    rm -rf "$HOME/Library/Application Support/DockView 2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/DockView 2" ]; then
+    rm -f "$HOME/Library/Application Support/DockView 2" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.macplus-software.com.DockView-2
+echo "Removing $HOME/Library/Caches/com.macplus-software.com.DockView-2..."
+if [ -d "$HOME/Library/Caches/com.macplus-software.com.DockView-2" ]; then
+    rm -rf "$HOME/Library/Caches/com.macplus-software.com.DockView-2" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.macplus-software.com.DockView-2" ]; then
+    rm -f "$HOME/Library/Caches/com.macplus-software.com.DockView-2" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2
+echo "Removing $HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2..."
+if [ -d "$HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2.binarycookies
+echo "Removing $HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2.binarycookies..."
+if [ -d "$HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2.binarycookies" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2.binarycookies" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2.binarycookies" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.macplus-software.com.DockView-2.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.macplus-software.com.DockView-2.plist
+echo "Removing $HOME/Library/Preferences/com.macplus-software.com.DockView-2.plist..."
+if [ -d "$HOME/Library/Preferences/com.macplus-software.com.DockView-2.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.macplus-software.com.DockView-2.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.macplus-software.com.DockView-2.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.macplus-software.com.DockView-2.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Saved Application State/com.macplus-software.com.DockView-2.savedState
+echo "Removing $HOME/Library/Saved Application State/com.macplus-software.com.DockView-2.savedState..."
+if [ -d "$HOME/Library/Saved Application State/com.macplus-software.com.DockView-2.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/com.macplus-software.com.DockView-2.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/com.macplus-software.com.DockView-2.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/com.macplus-software.com.DockView-2.savedState" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.macplus-software.com.DockView-2
+echo "Removing $HOME/Library/WebKit/com.macplus-software.com.DockView-2..."
+if [ -d "$HOME/Library/WebKit/com.macplus-software.com.DockView-2" ]; then
+    rm -rf "$HOME/Library/WebKit/com.macplus-software.com.DockView-2" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.macplus-software.com.DockView-2" ]; then
+    rm -f "$HOME/Library/WebKit/com.macplus-software.com.DockView-2" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

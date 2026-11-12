@@ -25,6 +25,14 @@ elif [ -f "/Applications/Novabench.app" ]; then
     rm -f "/Applications/Novabench.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.novabench.client
+echo "Removing $HOME/Library/Application Support/com.novabench.client..."
+if [ -d "$HOME/Library/Application Support/com.novabench.client" ]; then
+    rm -rf "$HOME/Library/Application Support/com.novabench.client" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.novabench.client" ]; then
+    rm -f "$HOME/Library/Application Support/com.novabench.client" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Novabench
 echo "Removing $HOME/Library/Application Support/Novabench..."
 if [ -d "$HOME/Library/Application Support/Novabench" ]; then

@@ -33,6 +33,14 @@ launchctl unload -w ~/Library/LaunchAgents/com.hankuper.adlock.desktop.launcher.
 echo "Stopping application with bundle ID com.hankuper.adlock.desktop if running..."
 killall -9 "com.hankuper.adlock.desktop" 2>/dev/null || true
 
+# Remove /Library/Application Support/com.hankuper.adlock.desktop
+echo "Removing /Library/Application Support/com.hankuper.adlock.desktop..."
+if [ -d "/Library/Application Support/com.hankuper.adlock.desktop" ]; then
+    rm -rf "/Library/Application Support/com.hankuper.adlock.desktop" 2>/dev/null || true
+elif [ -f "/Library/Application Support/com.hankuper.adlock.desktop" ]; then
+    rm -f "/Library/Application Support/com.hankuper.adlock.desktop" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankuper.adlock.desktop.launcher.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankuper.adlock.desktop.launcher.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.hankuper.adlock.desktop.launcher.sfl*" ]; then
