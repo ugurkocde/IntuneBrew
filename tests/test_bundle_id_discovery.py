@@ -310,16 +310,18 @@ class DiscoveryRedirectTests(unittest.TestCase):
             with self.subTest(location=location):
                 response = DownloadResponse(initial, 302, location)
                 target = io.BytesIO(b'previous-attempt')
-                with patch.object(c.requests, 'get', return_value=response) as get:
+                with patch.object(c.requests.adapters.HTTPAdapter, 'send', autospec=True, return_value=response) as get:
                     self.assertIsNone(c._stream_to_temp_file(initial, 'fixture', target, https_only=True))
                 self.assertEqual(get.call_count, 1)
-                self.assertEqual(get.call_args.args, (initial,))
-                self.assertFalse(get.call_args.kwargs['allow_redirects'])
+                self.assertEqual(get.call_args.args[1].url, initial)
+                self.assertTrue(get.call_args.kwargs['stream'])
+                self.assertIsNot(get.call_args.kwargs['verify'], False)
                 self.assertEqual(target.getvalue(), b'')
                 self.assertTrue(response.closed)
                 self.assertFalse(response.body_read)
-        with patch.object(c.requests, 'get') as get:
-            self.assertIsNone(c._https_discovery_response('http://vendor.example.test/app.dmg', 'fixture'))
+        with patch.object(c.requests.adapters.HTTPAdapter, 'send') as get:
+            with c._https_discovery_response('http://vendor.example.test/app.dmg', 'fixture') as response:
+                self.assertIsNone(response)
             get.assert_not_called()
 
     def test_https_relative_and_cross_host_redirects_preserve_binary(self):
@@ -329,10 +331,10 @@ class DiscoveryRedirectTests(unittest.TestCase):
                      DownloadResponse(urls[1], 307, '//cdn.example.test/app.dmg'),
                      DownloadResponse(urls[2], body=b'validated-fixture-bytes')]
         target = io.BytesIO()
-        with patch.object(c.requests, 'get', side_effect=responses) as get:
+        with patch.object(c.requests.adapters.HTTPAdapter, 'send', autospec=True, side_effect=responses) as get:
             count = c._stream_to_temp_file(urls[0], 'fixture', target, https_only=True)
-        self.assertEqual([call.args[0] for call in get.call_args_list], urls)
-        self.assertTrue(all(call.kwargs['allow_redirects'] is False for call in get.call_args_list))
+        self.assertEqual([call.args[1].url for call in get.call_args_list], urls)
+        self.assertTrue(all(call.kwargs['stream'] is True for call in get.call_args_list))
         self.assertEqual(count, len(b'validated-fixture-bytes'))
         self.assertEqual(target.getvalue(), b'validated-fixture-bytes')
         self.assertTrue(all(response.closed for response in responses))
@@ -344,7 +346,7 @@ class DiscoveryRedirectTests(unittest.TestCase):
         for location, count in [(None, 1), ('', 1), (url, 11)]:
             with self.subTest(location=location):
                 responses = [DownloadResponse(url, 302, location) for _ in range(count)]
-                with patch.object(c.requests, 'get', side_effect=responses) as get:
+                with patch.object(c.requests.adapters.HTTPAdapter, 'send', autospec=True, side_effect=responses) as get:
                     self.assertIsNone(c._stream_to_temp_file(url, 'fixture', io.BytesIO(), https_only=True))
                 self.assertEqual(get.call_count, count)
                 self.assertTrue(all(response.closed and not response.body_read for response in responses))
@@ -361,14 +363,14 @@ class DiscoveryRedirectTests(unittest.TestCase):
         raw = fixture(checksum='no_check')
         info = {'url': raw['url'], 'fileName': 'future-one.dmg', 'version': '1.2.3', 'bundleId': None}
         responses = []
-        def get(url, **kwargs):
-            self.assertEqual(url, raw['url'])
-            self.assertFalse(kwargs['allow_redirects'])
-            response = DownloadResponse(url, 302, 'http://attacker.example.test/app.dmg')
+        def get(adapter, request, **kwargs):
+            self.assertEqual(request.url, raw['url'])
+            self.assertTrue(kwargs['stream'])
+            response = DownloadResponse(request.url, 302, 'http://attacker.example.test/app.dmg')
             responses.append(response)
             return response
         with patch.object(c.shutil, 'which', return_value='hdiutil'), \
-                patch.object(c.requests, 'get', side_effect=get), \
+                patch.object(c.requests.adapters.HTTPAdapter, 'send', autospec=True, side_effect=get), \
                 patch.object(c.subprocess, 'run') as run:
             with self.assertRaises(c.CatalogVersionHold) as held:
                 c.discover_missing_bundle_id(info, None, raw, raw['token'])
@@ -377,6 +379,44 @@ class DiscoveryRedirectTests(unittest.TestCase):
         self.assertTrue(all(response.closed and not response.body_read for response in responses))
         run.assert_not_called()
         self.assertIsNone(info['bundleId'])
+
+    def test_real_requests_redirect_body_is_never_preloaded(self):
+        class TrackedBody(io.BytesIO):
+            bytes_read = 0
+            def read(self, *args, **kwargs):
+                data = super().read(*args, **kwargs)
+                self.bytes_read += len(data)
+                return data
+        url = 'https://vendor.example.test/app.dmg'
+        body = TrackedBody(b'x' * 4096)
+        def send(adapter, request, **kwargs):
+            self.assertEqual(request.url, url)
+            self.assertTrue(kwargs['stream'])
+            self.assertIsNot(kwargs['verify'], False)
+            response = c.requests.Response()
+            response.url = url
+            response.request = request
+            response.status_code = 302
+            response.headers['Location'] = 'http://attacker.example.test/app.dmg'
+            response.raw = body
+            return response
+        target = io.BytesIO()
+        with patch.object(c.requests.adapters.HTTPAdapter, 'send', autospec=True, side_effect=send) as transport, \
+                patch.object(c, 'MAX_DOWNLOAD_BYTES', 8):
+            self.assertIsNone(c._stream_to_temp_file(url, 'fixture', target, https_only=True))
+        self.assertEqual(transport.call_count, 1)
+        self.assertEqual(body.bytes_read, 0)
+        self.assertTrue(body.closed)
+        self.assertEqual(target.getvalue(), b'')
+
+    def test_terminal_body_still_obeys_size_cap_and_closes_transport(self):
+        url = 'https://vendor.example.test/app.dmg'
+        response = DownloadResponse(url, body=b'x' * 9)
+        with patch.object(c.requests.adapters.HTTPAdapter, 'send', autospec=True, return_value=response), \
+                patch.object(c, 'MAX_DOWNLOAD_BYTES', 8):
+            with self.assertRaises(c._OversizedDownload):
+                c._stream_to_temp_file(url, 'fixture', io.BytesIO(), https_only=True)
+        self.assertTrue(response.closed)
 
 
 if __name__ == '__main__':

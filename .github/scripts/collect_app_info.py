@@ -1428,28 +1428,43 @@ class _OversizedDownload(Exception):
     """Raised when a body passes MAX_DOWNLOAD_BYTES, to stop the agent cascade."""
 
 
+@contextlib.contextmanager
 def _https_discovery_response(url, user_agent):
-    """Follow bounded HTTPS-only redirects without requesting a plaintext hop."""
-    current = url
-    for _ in range(11):
+    """Own streaming responses and follow HTTPS hops without preloading bodies."""
+    current, response = url, None
+    with requests.Session() as session:
         try:
-            parsed = urlparse(current)
-            if (parsed.scheme != 'https' or not parsed.hostname
-                    or parsed.username is not None or parsed.password is not None
-                    or parsed.fragment):
-                return None
-        except (TypeError, ValueError):
-            return None
-        response = requests.get(current, stream=True, timeout=DOWNLOAD_TIMEOUT,
-                                allow_redirects=False, headers={'User-Agent': user_agent})
-        if response.status_code not in {301, 302, 303, 307, 308}:
-            return response
-        location = response.headers.get('Location')
-        response.close()
-        if not isinstance(location, str) or not location:
-            return None
-        current = urljoin(current, location)
-    return None
+            for _ in range(11):
+                try:
+                    parsed = urlparse(current)
+                    if (parsed.scheme != 'https' or not parsed.hostname
+                            or parsed.username is not None or parsed.password is not None
+                            or parsed.fragment):
+                        break
+                except (TypeError, ValueError):
+                    break
+                request = session.prepare_request(requests.Request('GET', current,
+                    headers={'User-Agent': user_agent}))
+                settings = session.merge_environment_settings(request.url, {}, True, None, None)
+                # Session.send prepares the next redirect even with redirects
+                # disabled, reading resp.content without our byte cap. The
+                # adapter leaves raw redirect bodies unread and keeps TLS,
+                # proxy and CA settings from the normal Requests session.
+                response = session.get_adapter(request.url).send(request,
+                    timeout=DOWNLOAD_TIMEOUT, **settings)
+                if response.status_code not in {301, 302, 303, 307, 308}:
+                    yield response
+                    return
+                location = response.headers.get('Location')
+                response.close()
+                response = None
+                if not isinstance(location, str) or not location:
+                    break
+                current = urljoin(current, location)
+            yield None
+        finally:
+            if response is not None:
+                response.close()
 
 
 def _stream_to_temp_file(url, user_agent, temp_file, *, https_only=False):
@@ -1463,17 +1478,17 @@ def _stream_to_temp_file(url, user_agent, temp_file, *, https_only=False):
     temp_file.seek(0)
     temp_file.truncate()
 
-    response = _https_discovery_response(url, user_agent) if https_only else requests.get(
+    response_context = _https_discovery_response(url, user_agent) if https_only else contextlib.closing(requests.get(
         url,
         stream=True,
         timeout=DOWNLOAD_TIMEOUT,
         headers={"User-Agent": user_agent},
-    )
-    if response is None:
-        return None
+    ))
     # An abandoned attempt leaves a half-read stream behind, so release it the
     # way check_url does in check_download_urls.py before the next agent runs.
-    try:
+    with response_context as response:
+        if response is None:
+            return None
         response.raise_for_status()
 
         bytes_written = 0
@@ -1504,8 +1519,6 @@ def _stream_to_temp_file(url, user_agent, temp_file, *, https_only=False):
             return None
 
         return bytes_written
-    finally:
-        response.close()
 
 
 def calculate_file_hash(url):
