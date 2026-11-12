@@ -494,6 +494,8 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/whatcable.json",
     "https://formulae.brew.sh/api/cask/codex.json",
     "https://formulae.brew.sh/api/cask/homebrew-app.json",
+    "https://formulae.brew.sh/api/cask/github-copilot-app.json",
+    "https://formulae.brew.sh/api/cask/plezy.json",
 ]
 
 # DMG
@@ -1234,10 +1236,8 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/langdock.json",
     "https://formulae.brew.sh/api/cask/phoenix-code.json",
     "https://formulae.brew.sh/api/cask/qgis@ltr.json",
-    "https://formulae.brew.sh/api/cask/github-copilot-app.json",
     "https://formulae.brew.sh/api/cask/nuphyio.json",
     "https://formulae.brew.sh/api/cask/unraid-usb-creator.json",
-    "https://formulae.brew.sh/api/cask/plezy.json",
 ]
 
 # PKG in DMG URLs
