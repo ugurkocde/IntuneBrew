@@ -220,7 +220,8 @@ class DiscoveryReaderTests(unittest.TestCase):
 
     def test_attached_image_cleanup_failure_never_returns_an_observation(self):
         payload = b'fake image, never mounted'
-        def download(url, agent, target):
+        def download(url, agent, target, **kwargs):
+            self.assertEqual(kwargs, {'https_only': True})
             target.write(payload)
             return len(payload)
         with tempfile.TemporaryDirectory() as directory:
@@ -258,7 +259,8 @@ class DiscoveryDiskImageTests(unittest.TestCase):
                 if args[:2] == ['hdiutil', 'attach']:
                     mounts.append(args[args.index('-mountpoint') + 1])
                 return real_run(args, **kwargs)
-            def download(url, agent, target):
+            def download(url, agent, target, **kwargs):
+                self.assertEqual(kwargs, {'https_only': True})
                 target.write(data)
                 return len(data)
             with patch.object(c, '_stream_to_temp_file', side_effect=download), \
@@ -277,6 +279,104 @@ class DiscoveryDiskImageTests(unittest.TestCase):
             self.assertEqual(len(mounts), 1)
             self.assertFalse(any(os.path.ismount(path) for path in mounts))
             self.assertEqual(signal.getitimer(signal.ITIMER_REAL), (0, 0))
+
+
+class DownloadResponse:
+    def __init__(self, url, status=200, location=None, body=b'dmg-fixture'):
+        self.url = url
+        self.status_code = status
+        self.headers = {} if location is None else {'Location': location}
+        self.body = body
+        self.closed = False
+        self.body_read = False
+
+    def raise_for_status(self):
+        if self.status_code >= 400:
+            raise c.requests.HTTPError('Fixture HTTP failure')
+
+    def iter_content(self, chunk_size):
+        self.body_read = True
+        yield self.body
+
+    def close(self):
+        self.closed = True
+
+
+class DiscoveryRedirectTests(unittest.TestCase):
+    def test_plaintext_or_invalid_hop_is_never_requested_or_read(self):
+        initial = 'https://vendor.example.test/app.dmg'
+        for location in ['http://cdn.example.test/app.dmg', 'ftp://cdn.example.test/app.dmg',
+                         'https://user:password@cdn.example.test/app.dmg']:
+            with self.subTest(location=location):
+                response = DownloadResponse(initial, 302, location)
+                target = io.BytesIO(b'previous-attempt')
+                with patch.object(c.requests, 'get', return_value=response) as get:
+                    self.assertIsNone(c._stream_to_temp_file(initial, 'fixture', target, https_only=True))
+                self.assertEqual(get.call_count, 1)
+                self.assertEqual(get.call_args.args, (initial,))
+                self.assertFalse(get.call_args.kwargs['allow_redirects'])
+                self.assertEqual(target.getvalue(), b'')
+                self.assertTrue(response.closed)
+                self.assertFalse(response.body_read)
+        with patch.object(c.requests, 'get') as get:
+            self.assertIsNone(c._https_discovery_response('http://vendor.example.test/app.dmg', 'fixture'))
+            get.assert_not_called()
+
+    def test_https_relative_and_cross_host_redirects_preserve_binary(self):
+        urls = ['https://vendor.example.test/start', 'https://vendor.example.test/download',
+                'https://cdn.example.test/app.dmg']
+        responses = [DownloadResponse(urls[0], 302, '/download'),
+                     DownloadResponse(urls[1], 307, '//cdn.example.test/app.dmg'),
+                     DownloadResponse(urls[2], body=b'validated-fixture-bytes')]
+        target = io.BytesIO()
+        with patch.object(c.requests, 'get', side_effect=responses) as get:
+            count = c._stream_to_temp_file(urls[0], 'fixture', target, https_only=True)
+        self.assertEqual([call.args[0] for call in get.call_args_list], urls)
+        self.assertTrue(all(call.kwargs['allow_redirects'] is False for call in get.call_args_list))
+        self.assertEqual(count, len(b'validated-fixture-bytes'))
+        self.assertEqual(target.getvalue(), b'validated-fixture-bytes')
+        self.assertTrue(all(response.closed for response in responses))
+        self.assertFalse(any(response.body_read for response in responses[:-1]))
+        self.assertTrue(responses[-1].body_read)
+
+    def test_missing_location_and_redirect_cycles_are_bounded_and_closed(self):
+        url = 'https://vendor.example.test/app.dmg'
+        for location, count in [(None, 1), ('', 1), (url, 11)]:
+            with self.subTest(location=location):
+                responses = [DownloadResponse(url, 302, location) for _ in range(count)]
+                with patch.object(c.requests, 'get', side_effect=responses) as get:
+                    self.assertIsNone(c._stream_to_temp_file(url, 'fixture', io.BytesIO(), https_only=True))
+                self.assertEqual(get.call_count, count)
+                self.assertTrue(all(response.closed and not response.body_read for response in responses))
+
+    def test_normal_download_keeps_existing_redirect_behaviour(self):
+        url = 'https://vendor.example.test/app.dmg'
+        response = DownloadResponse(url)
+        with patch.object(c.requests, 'get', return_value=response) as get:
+            self.assertEqual(c._stream_to_temp_file(url, 'fixture', io.BytesIO()), len(response.body))
+        self.assertNotIn('allow_redirects', get.call_args.kwargs)
+        self.assertTrue(response.closed)
+
+    def test_no_check_discovery_downgrade_holds_before_any_mount(self):
+        raw = fixture(checksum='no_check')
+        info = {'url': raw['url'], 'fileName': 'future-one.dmg', 'version': '1.2.3', 'bundleId': None}
+        responses = []
+        def get(url, **kwargs):
+            self.assertEqual(url, raw['url'])
+            self.assertFalse(kwargs['allow_redirects'])
+            response = DownloadResponse(url, 302, 'http://attacker.example.test/app.dmg')
+            responses.append(response)
+            return response
+        with patch.object(c.shutil, 'which', return_value='hdiutil'), \
+                patch.object(c.requests, 'get', side_effect=get), \
+                patch.object(c.subprocess, 'run') as run:
+            with self.assertRaises(c.CatalogVersionHold) as held:
+                c.discover_missing_bundle_id(info, None, raw, raw['token'])
+        self.assertEqual(held.exception.code, 'BUNDLE_ID_DOWNLOAD_FAILED')
+        self.assertEqual(len(responses), len(c.DOWNLOAD_USER_AGENTS))
+        self.assertTrue(all(response.closed and not response.body_read for response in responses))
+        run.assert_not_called()
+        self.assertIsNone(info['bundleId'])
 
 
 if __name__ == '__main__':

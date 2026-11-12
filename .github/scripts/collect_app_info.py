@@ -1428,7 +1428,31 @@ class _OversizedDownload(Exception):
     """Raised when a body passes MAX_DOWNLOAD_BYTES, to stop the agent cascade."""
 
 
-def _stream_to_temp_file(url, user_agent, temp_file):
+def _https_discovery_response(url, user_agent):
+    """Follow bounded HTTPS-only redirects without requesting a plaintext hop."""
+    current = url
+    for _ in range(11):
+        try:
+            parsed = urlparse(current)
+            if (parsed.scheme != 'https' or not parsed.hostname
+                    or parsed.username is not None or parsed.password is not None
+                    or parsed.fragment):
+                return None
+        except (TypeError, ValueError):
+            return None
+        response = requests.get(current, stream=True, timeout=DOWNLOAD_TIMEOUT,
+                                allow_redirects=False, headers={'User-Agent': user_agent})
+        if response.status_code not in {301, 302, 303, 307, 308}:
+            return response
+        location = response.headers.get('Location')
+        response.close()
+        if not isinstance(location, str) or not location:
+            return None
+        current = urljoin(current, location)
+    return None
+
+
+def _stream_to_temp_file(url, user_agent, temp_file, *, https_only=False):
     """Download url into temp_file with one agent. Returns the byte count, or None.
 
     None means this attempt is unusable (HTTP error, HTML page, empty body) and
@@ -1439,12 +1463,14 @@ def _stream_to_temp_file(url, user_agent, temp_file):
     temp_file.seek(0)
     temp_file.truncate()
 
-    response = requests.get(
+    response = _https_discovery_response(url, user_agent) if https_only else requests.get(
         url,
         stream=True,
         timeout=DOWNLOAD_TIMEOUT,
         headers={"User-Agent": user_agent},
     )
+    if response is None:
+        return None
     # An abandoned attempt leaves a half-read stream behind, so release it the
     # way check_url does in check_download_urls.py before the next agent runs.
     try:
@@ -1662,7 +1688,8 @@ def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None,
                     try:
                         # The legacy stream helper can log signed URLs on refusals.
                         with contextlib.redirect_stdout(io.StringIO()):
-                            downloaded = _stream_to_temp_file(url, user_agent, dmg)
+                            downloaded = _stream_to_temp_file(url, user_agent, dmg,
+                                **({'https_only': True} if app_name is not None else {}))
                         if downloaded is not None:
                             break
                     except _OversizedDownload:
