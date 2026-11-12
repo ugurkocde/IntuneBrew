@@ -2,8 +2,8 @@
 FORMULA_RECIPES = {"azure-cli": "azure-cli-universal-v1", "git-gui": "git-gui-tcltk-v1"}
 FORMULA_NAMES = {"azure-cli": "Azure CLI", "git-gui": "Git GUI"}
 FORMULA_PUBLISHERS = {"azure-cli": "Microsoft", "git-gui": "Git project"}
-# Distinct deployment names keep preview packages separate from stable apps.
-CASK_NAMES = {"powershell@preview": "PowerShell Preview"}
+# Distinct deployment names separate preview packages and the Codex CLI/desktop apps.
+CASK_NAMES = {"powershell@preview": "PowerShell Preview", "codex": "Codex CLI"}
 CASK_RECIPES = {"logi-options+": "logi-options-silent-v1"}
 
 

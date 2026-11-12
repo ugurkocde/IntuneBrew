@@ -5,6 +5,12 @@ const read = file => readFileSync(new URL(`../.github/workflows/${file}`, import
 const auto = read('auto-approve-app-request.yml');
 const manual = read('approve-app-request.yml');
 const build = read('build-app-packages.yml');
+test('queued catalog builds check out current default while scope uses the triggering push', () => {
+  const checkout = build.split('      - name: Checkout repository\n')[1].split('      - name:')[0];
+  assert.match(checkout, /uses: actions\/checkout@v4/);
+  assert.match(checkout, /ref: \$\{\{ github.event.repository.default_branch \}\}/);
+  assert.match(build, /compare\/\$BEFORE_SHA\.\.\.\$GITHUB_SHA/);
+});
 test('both eligible approval jobs share a queue and fetch current main', () => {
   for (const workflow of [auto, manual]) {
     assert.match(workflow, /    concurrency:\n      group: app-request-approvals\n      queue: max\n      cancel-in-progress: false/);
