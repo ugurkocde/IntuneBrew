@@ -1169,6 +1169,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/gitbutler.png' width='32' height='32'> GitButler | 0.23.4 |
 | <img src='Logos/gitfinder.png' width='32' height='32'> GitFinder | 1.7.11 |
 | <img src='Logos/gitfox.png' width='32' height='32'> Gitfox | 5.4.2 |
+| <img src='Logos/github_copilot.png' width='32' height='32'> GitHub Copilot | 1.3.0 |
 | ❌ GitHub Copilot CLI | 1.0.109 |
 | <img src='Logos/github_copilot_for_xcode.png' width='32' height='32'> GitHub Copilot for Xcode | 0.51.0 |
 | <img src='Logos/github_desktop.png' width='32' height='32'> GitHub Desktop | 3.6.11-0102f49a |
@@ -1587,6 +1588,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/plex_htpc.png' width='32' height='32'> Plex HTPC | 1.71.1.346 |
 | <img src='Logos/plex_media_server.png' width='32' height='32'> Plex Media Server | 1.43.5.11079 |
 | <img src='Logos/plexamp.png' width='32' height='32'> Plexamp | 4.50.20 |
+| <img src='Logos/plezy.png' width='32' height='32'> Plezy | 2.26.0 |
 | <img src='Logos/plistedit_pro.png' width='32' height='32'> PlistEdit Pro | 1.10.0 |
 | <img src='Logos/podman_desktop.png' width='32' height='32'> Podman Desktop | 1.30.5 |
 | <img src='Logos/polymail.png' width='32' height='32'> Polymail | 2.4.3007 |
