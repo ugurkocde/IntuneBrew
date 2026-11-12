@@ -456,7 +456,7 @@ class InspectorTests(unittest.TestCase):
 
 
 class CollectorIntegrationTests(unittest.TestCase):
-    def run_case(self, observation, raw='2.0.0', prior='1.0'):
+    def run_case(self, observation, raw='2.0.0', prior='1.0', *, declared_sha='no_check', vendor_sha=None):
         url = 'https://formulae.brew.sh/api/cask/fixture.json'
         app = {'name': 'Fixture', 'version': raw.split(',')[0], 'bundleId': BUNDLE,
                'fileName': 'fixture.dmg', 'url': 'https://example.invalid/fixture.dmg',
@@ -471,11 +471,12 @@ class CollectorIntegrationTests(unittest.TestCase):
             for name in ['app_urls', 'pkg_in_pkg_urls', 'pkg_urls', 'pkg_in_dmg_urls', 'custom_scrapers']:
                 stack.enter_context(patch.object(c, name, []))
             stack.enter_context(patch.object(c, 'homebrew_cask_urls', [url]))
-            stack.enter_context(patch.dict(c.cask_cache, {url: {'version': raw, 'sha256': 'no_check'}}, clear=True))
+            stack.enter_context(patch.dict(c.cask_cache, {url: {'version': raw, 'sha256': declared_sha}}, clear=True))
             stack.enter_context(patch.object(c, 'prefetch_cask_data'))
             stack.enter_context(patch.object(c, 'get_homebrew_app_info', return_value=dict(app)))
             stack.enter_context(patch.object(c.shutil, 'which', return_value='/fake/hdiutil'))
             inspect = stack.enter_context(patch.object(c, 'inspect_dmg_artifact', return_value=observation))
+            stack.enter_context(patch.object(c, 'read_vendor_sha256', return_value=vendor_sha))
             hash_again = stack.enter_context(patch.object(c, 'calculate_file_hash', side_effect=AssertionError('second download')))
             stack.enter_context(patch.object(c, 'update_readme_apps'))
             stack.enter_context(patch.object(c, 'update_readme_with_latest_changes'))

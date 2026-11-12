@@ -21,7 +21,8 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse, unquote, parse_qs, urlencode
 from request_sources import source_token, FORMULA_RECIPES, FORMULA_NAMES, FORMULA_PUBLISHERS, CASK_NAMES
 from version_relation import (BundleObservation, InspectionRefusal, PriorEntry, ReconcileInput,
-                              CATALOG_CONSUMER_CAPABILITIES, plan, reconcile)
+                              CATALOG_CONSUMER_CAPABILITIES, plan, reconcile,
+                              numeric_suffix_relationship)
 
 
 def get_filename_from_url(url, app_name=None, version=None, default_ext=".dmg"):
@@ -1691,6 +1692,60 @@ class CatalogVersionHold(RuntimeError):
         super().__init__("DMG release held: " + code)
 
 
+VENDOR_CHECKSUM_DEADLINE = 15
+
+
+class _VendorChecksumDeadline(Exception):
+    """Interrupt transport parsing without being retried as an OSError."""
+
+
+def _vendor_checksum_alarm(signum, frame):
+    raise _VendorChecksumDeadline()
+
+
+def read_vendor_sha256(url):
+    """Read one bounded, same-URL checksum sidecar, without retries or redirects."""
+    if type(url) is not str:
+        return None
+    try:
+        parsed = urlparse(url)
+    except ValueError:
+        return None
+    if (parsed.scheme != "https" or not parsed.hostname
+            or parsed.username is not None or parsed.password is not None
+            or parsed.query or parsed.fragment or not parsed.path.lower().endswith(".dmg")):
+        return None
+    if (threading.current_thread() is not threading.main_thread() or
+            not all(hasattr(signal, name) for name in (
+                "SIGALRM", "ITIMER_REAL", "setitimer", "getitimer")) or
+            any(signal.getitimer(signal.ITIMER_REAL))):
+        return None
+    filename = unquote(parsed.path.rsplit("/", 1)[-1])
+    previous = signal.signal(signal.SIGALRM, _vendor_checksum_alarm)
+    try:
+        signal.setitimer(signal.ITIMER_REAL, VENDOR_CHECKSUM_DEADLINE)
+        response = requests.get(url + ".sha256", stream=True, timeout=(5, 5), allow_redirects=False)
+        try:
+            if response.status_code != 200:
+                return None
+            body = bytearray()
+            for chunk in response.iter_content(chunk_size=1):
+                if len(body) + len(chunk) > 4096:
+                    return None
+                body.extend(chunk)
+            match = re.fullmatch(r"([0-9a-fA-F]{64}) [ *](.+)\n?", body.decode("ascii"))
+            return match[1].lower() if match and match[2] == filename else None
+        finally:
+            response.close()
+    except (_VendorChecksumDeadline, requests.RequestException, UnicodeError, ValueError):
+        return None
+    finally:
+        try:
+            signal.setitimer(signal.ITIMER_REAL, 0)
+        finally:
+            signal.signal(signal.SIGALRM, previous if previous is not None else signal.SIG_DFL)
+
+
 def reconcile_vendor_dmg(app_info, prior, raw_cask, cask):
     """Apply the common rule at the vendor-DMG boundary, before any file write."""
     prior = prior or {}
@@ -1711,10 +1766,18 @@ def reconcile_vendor_dmg(app_info, prior, raw_cask, cask):
     if decision.action == "INSPECT":
         observation = inspect_dmg_artifact(app_info["url"], app_info["bundleId"], declared)
         decision = reconcile(ReconcileInput(**values, observation=observation))
+        if (decision.action == "HOLD" and decision.reason == "RELATION_UNPROVEN" and declared
+                and isinstance(observation, BundleObservation)
+                and numeric_suffix_relationship(raw_cask["version"], observation.short_version,
+                                                observation.bundle_version)):
+            values["vendor_sha256"] = read_vendor_sha256(app_info["url"])
+            decision = reconcile(ReconcileInput(**values, observation=observation))
     evidence = {"cask": cask, "action": decision.action, "reason": decision.reason,
                 "relation": decision.relation, "sourceRelease": raw_cask["version"][:256],
                 "declaredSha256": declared or "no_check",
                 "priorVersion": str(prior.get("version", ""))[:256], "verified": decision.verified}
+    if "vendor_sha256" in values:
+        evidence["vendorSha256"] = values["vendor_sha256"]
     if isinstance(observation, (BundleObservation, InspectionRefusal)):
         evidence["artifactSha256"] = observation.artifact_sha256
     if isinstance(observation, BundleObservation):
