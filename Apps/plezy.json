@@ -1,0 +1,13 @@
+{
+  "name": "Plezy",
+  "description": "Client for Plex, Jellyfin and Emby media servers",
+  "version": "2.26.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/plezy_2.26.0.pkg",
+  "vendor_url": "https://github.com/edde746/plezy/releases/download/2.26.0/plezy-macos.dmg",
+  "bundleId": "com.edde746.plezy",
+  "homepage": "https://plezy.app/",
+  "homebrew_cask": "plezy",
+  "fileName": "plezy_2.26.0.pkg",
+  "type": "app",
+  "sha": "62c1cf3a88f63127bd8411b62edd325619581c41b9721ef9029882943a8d199e"
+}

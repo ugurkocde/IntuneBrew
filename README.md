@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1155-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1157-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -671,7 +671,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | workflowy | 4.3.2611101136 | 4.3.2611120800 |
 | zen browser | 1.24.1b | 1.24.2b |
 
-25 app updates could not be published. See [catalog sync status](catalog-sync.json).
+22 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
