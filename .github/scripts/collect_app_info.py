@@ -493,6 +493,7 @@ app_urls = [
     "https://formulae.brew.sh/api/formula/git-gui.json",
     "https://formulae.brew.sh/api/cask/whatcable.json",
     "https://formulae.brew.sh/api/cask/codex.json",
+    "https://formulae.brew.sh/api/cask/homebrew-app.json",
 ]
 
 # DMG
