@@ -4,12 +4,12 @@ foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
     $ast = [System.Management.Automation.Language.Parser]::ParseFile((Join-Path $PSScriptRoot "../$file"), [ref]$tokens, [ref]$errors)
     if ($errors.Count) { throw ($errors | Out-String) }
     $comparator = if ($file -eq 'IntuneBrew_Runbook.ps1') { 'Is-NewerVersion' } else { 'Test-NewerVersion' }
-    $requiredFunctions = @('Compare-VersionSegments', 'Get-CveComparableVersion', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord', $comparator, 'Convert-VersionToSortable')
+    $requiredFunctions = @('Compare-VersionSegments', 'Get-CveComparableVersion', 'ConvertTo-UnraidRevisionVersion', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord', $comparator, 'Convert-VersionToSortable')
     foreach ($name in $requiredFunctions) {
         $function = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $name }, $true)
         foreach ($command in $function.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] }, $true)) {
             $dependency = $command.GetCommandName()
-            if ($dependency -in @('ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord') -and $dependency -notin $requiredFunctions) { throw "Unextracted dependency: $dependency" }
+            if ($dependency -in @('ConvertTo-UnraidRevisionVersion', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord') -and $dependency -notin $requiredFunctions) { throw "Unextracted dependency: $dependency" }
         }
         Invoke-Expression $function.Extent.Text
     }
@@ -78,6 +78,53 @@ foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
             if ((Select-LatestAppRecord -Apps $apps).id -ne 'new') { throw "Hyphen migration selection changed in $file" }
         }
     }
+    foreach ($case in @(
+        @('v10.0.0.0-unraid.1', 'v2.0.11.1-unraid.1', $true),
+        @('v2.0.11.1-unraid.1', 'v10.0.0.0-unraid.1', $false),
+        @('v2.0.11.1-unraid.10', 'v2.0.11.1-unraid.2', $true),
+        @('v2.0.11.1-unraid.2', 'v2.0.11.1-unraid.10', $false),
+        @('v2.0.12.0-unraid.1', 'v2.0.11.1-unraid.999999999', $true),
+        @('v2.0.11.1-unraid.1', 'v2.0.11.1-unraid.1', $false),
+        @('v2.0.11.1-unraid.1', '2.0.11.1,1', $true),
+        @('2.0.11.1,1', 'v2.0.11.1-unraid.1', $false)
+    )) {
+        if ((& $comparator $case[0] $case[1]) -ne $case[2]) { throw "Unraid update order changed in $file`: $case" }
+    }
+    foreach ($invalid in @('V2.0.11.1-unraid.1', 'v2.0.11.1-Unraid.1',
+        'v02.0.11.1-unraid.1', 'v2.0.11-unraid.1', 'v2.0.11.1.0-unraid.1',
+        'v2.0.11.1-unraid.01', 'v1000000000.0.0.0-unraid.1',
+        'v2.0.11.1-unraid.1.extra', "v2.0.11.1-unraid.1`n")) {
+        if ($null -ne (ConvertTo-UnraidRevisionVersion $invalid)) { throw "Noncanonical Unraid form parsed in $file" }
+    }
+    foreach ($reverse in @($false, $true)) {
+        $apps = @(@{ id='old'; primaryBundleVersion='v2.0.11.1-unraid.2' },
+                  @{ id='new'; primaryBundleVersion='v2.0.11.1-unraid.10' })
+        if ($reverse) { [array]::Reverse($apps) }
+        if ((Select-LatestAppRecord -Apps $apps).id -ne 'new') { throw "Unraid latest revision depends on order in $file" }
+        $apps = @(@{ id='old'; primaryBundleVersion='v2.0.11.1-unraid.999999999' },
+                  @{ id='new'; primaryBundleVersion='v10.0.0.0-unraid.0' })
+        if ($reverse) { [array]::Reverse($apps) }
+        if ((Select-LatestAppRecord -Apps $apps).id -ne 'new') { throw "Unraid latest core depends on order in $file" }
+    }
+    $ties = @(@{ id='first'; primaryBundleVersion='v2.0.11.1-unraid.1' },
+              @{ id='second'; primaryBundleVersion='v2.0.11.1-unraid.1' })
+    if ((Select-LatestAppRecord -Apps $ties).id -ne 'first') { throw "Unraid genuine tie changed in $file" }
+    # A mixed group retains legacy selection, including its existing tie order.
+    $mixed = @(@{ id='old'; primaryBundleVersion='v2.0.11.1-unraid.2' },
+               @{ id='new'; primaryBundleVersion='v2.0.11.1-unraid.10' },
+               @{ id='legacy'; primaryBundleVersion='2.0.11.1' })
+    if ((Select-LatestAppRecord -Apps $mixed).id -ne 'old') { throw "Mixed Unraid legacy selection changed in $file" }
+    if ($null -ne (Get-CveComparableVersion 'v2.0.11.1-unraid.1')) { throw "Unraid vulnerability policy changed in $file" }
+    if ((& $comparator 'v2.0.11.1-unraid.1' 'Managed via VPP') -ne $false -or
+        (& $comparator 'v2.0.11.1-unraid.1' 'Not in Intune') -ne $true) { throw "Unraid policy opt-out changed in $file" }
+    if ($file -eq 'IntuneBrew.ps1') {
+        $previousIgnore = $script:IgnoreAppVersion
+        try {
+            $script:IgnoreAppVersion = $true
+            if (& $comparator 'v10.0.0.0-unraid.1' 'v2.0.11.1-unraid.1') { throw 'Unraid bypassed IgnoreAppVersion' }
+        } finally { $script:IgnoreAppVersion = $previousIgnore }
+    }
+
     # Existing equal-core PS behaviour differs from Website: do not permit
     # equal-core hyphen migration in the producer on either consumer's behalf.
     if (-not (& $comparator '27.1.0' '27.1.0-58756')) { throw "Equal-core PS contract changed in $file" }

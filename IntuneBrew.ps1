@@ -2368,6 +2368,28 @@ function Compare-VersionSegments {
     return 0
 }
 
+# Parse only canonical Unraid release/revision detection text.
+function ConvertTo-UnraidRevisionVersion {
+    param([string]$Version)
+
+    $match = [regex]::Match($Version, '^v((?:0|[1-9][0-9]{0,8})(?:\.(?:0|[1-9][0-9]{0,8})){3})-unraid\.((?:0|[1-9][0-9]{0,8}))\z')
+    if (-not $match.Success) { return $null }
+    # Windows PowerShell may not have loaded the built-in numeric assembly yet.
+    if (-not ('System.Numerics.BigInteger' -as [type])) {
+        Add-Type -AssemblyName 'System.Numerics, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089' -ErrorAction Stop
+    }
+    $release = [System.Numerics.BigInteger[]]@(
+        foreach ($part in ($match.Groups[1].Value -split '\.')) {
+            [System.Numerics.BigInteger]::Parse($part, [Globalization.NumberStyles]::None, [Globalization.CultureInfo]::InvariantCulture)
+        }
+    )
+    $build = [System.Numerics.BigInteger]::Zero
+    if ($match.Groups[2].Success) {
+        $build = [System.Numerics.BigInteger]::Parse($match.Groups[2].Value, [Globalization.NumberStyles]::None, [Globalization.CultureInfo]::InvariantCulture)
+    }
+    return [pscustomobject]@{ Release = $release; Build = $build; HasBuild = $true }
+}
+
 # Parse only plain numeric releases and optional Apple bundle builds.
 function ConvertTo-NumericBundleVersion {
     param([string]$Version)
@@ -2390,7 +2412,7 @@ function ConvertTo-NumericBundleVersion {
     return [pscustomobject]@{ Release = $release; Build = $build; HasBuild = $match.Groups[2].Success }
 }
 
-# Both arguments are parsed by ConvertTo-NumericBundleVersion; policy opt-outs stay in the updater.
+# Arguments are parsed numeric release/build records; policy opt-outs stay in the updater.
 function Compare-NumericBundleVersion {
     param($Left, $Right)
 
@@ -2408,6 +2430,20 @@ function Select-LatestAppRecord {
     param([object[]]$Apps)
 
     if ($null -eq $Apps -or $Apps.Count -eq 0) { return $null }
+    # Only a wholly canonical Unraid group changes the legacy selection path.
+    $unraidVersions = [Collections.Generic.List[object]]::new()
+    foreach ($app in $Apps) {
+        $version = ConvertTo-UnraidRevisionVersion $app.primaryBundleVersion
+        if ($null -eq $version) { break }
+        $unraidVersions.Add($version)
+    }
+    if ($unraidVersions.Count -eq $Apps.Count) {
+        $best = 0
+        for ($i = 1; $i -lt $Apps.Count; $i++) {
+            if ((Compare-NumericBundleVersion $unraidVersions[$i] $unraidVersions[$best]) -gt 0) { $best = $i }
+        }
+        return $Apps[$best]
+    }
     $versions = [Collections.Generic.List[object]]::new()
     $hasBuild = $false
     foreach ($app in $Apps) {
@@ -2469,6 +2505,12 @@ function Test-NewerVersion($githubVersion, $intuneVersion) {
     }
 
     try {
+        $ghUnraid = ConvertTo-UnraidRevisionVersion $githubVersion
+        $itUnraid = ConvertTo-UnraidRevisionVersion $intuneVersion
+        if ($null -ne $ghUnraid -and $null -ne $itUnraid) {
+            return (Compare-NumericBundleVersion $ghUnraid $itUnraid) -gt 0
+        }
+
         # Use one strict parser for the gate and exact release-then-build comparison.
         $ghBundle = ConvertTo-NumericBundleVersion $githubVersion
         $itBundle = ConvertTo-NumericBundleVersion $intuneVersion

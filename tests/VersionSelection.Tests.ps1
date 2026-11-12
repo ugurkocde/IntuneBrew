@@ -8,13 +8,13 @@ foreach ($file in @('IntuneBrew.ps1', 'IntuneBrew_Runbook.ps1')) {
     $ast = [System.Management.Automation.Language.Parser]::ParseInput($source, [ref]$tokens, [ref]$errors)
     if ($errors.Count) { throw ($errors | Out-String) }
     $updater = if ($file -eq 'IntuneBrew.ps1') { 'Test-NewerVersion' } else { 'Is-NewerVersion' }
-    $required = @('ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Convert-VersionToSortable', 'Select-LatestAppRecord', 'Compare-VersionSegments', $updater)
+    $required = @('ConvertTo-UnraidRevisionVersion', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Convert-VersionToSortable', 'Select-LatestAppRecord', 'Compare-VersionSegments', $updater)
     foreach ($name in $required) {
         $definition = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $name }, $true)
         if (-not $definition) { throw "Required function missing: $name" }
         foreach ($command in $definition.FindAll({ param($n) $n -is [System.Management.Automation.Language.CommandAst] }, $true)) {
             $dependency = $command.GetCommandName()
-            if ($dependency -in @('ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord') -and $dependency -notin $required) { throw "Unextracted dependency: $dependency" }
+            if ($dependency -in @('ConvertTo-UnraidRevisionVersion', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Select-LatestAppRecord') -and $dependency -notin $required) { throw "Unextracted dependency: $dependency" }
         }
         Invoke-Expression $definition.Extent.Text
     }
@@ -126,7 +126,7 @@ if (-not $ExtractedFunctionDirectory -and $env:OS -eq 'Windows_NT' -and $PSVersi
             $ast = [System.Management.Automation.Language.Parser]::ParseInput($source, [ref]$tokens, [ref]$errors)
             if ($errors.Count) { throw ($errors | Out-String) }
             $updater = if ($file -eq 'IntuneBrew.ps1') { 'Test-NewerVersion' } else { 'Is-NewerVersion' }
-            $functions = foreach ($name in @('ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Convert-VersionToSortable', 'Select-LatestAppRecord', 'Compare-VersionSegments', $updater)) {
+            $functions = foreach ($name in @('ConvertTo-UnraidRevisionVersion', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Convert-VersionToSortable', 'Select-LatestAppRecord', 'Compare-VersionSegments', $updater)) {
                 $definition = $ast.Find({ param($n) $n -is [System.Management.Automation.Language.FunctionDefinitionAst] -and $n.Name -eq $name }, $true)
                 if (-not $definition) { throw "Required function missing: $name" }
                 $definition.Extent.Text
