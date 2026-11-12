@@ -457,7 +457,7 @@ class InspectorTests(unittest.TestCase):
 
 class CollectorIntegrationTests(unittest.TestCase):
     def run_case(self, observation, raw='2.0.0', prior='1.0', *, declared_sha='no_check', vendor_sha=None,
-                 current_url='https://example.invalid/fixture.dmg'):
+                 current_url='https://example.invalid/fixture.dmg', prior_url=None, expected_inspections=1):
         url = 'https://formulae.brew.sh/api/cask/fixture.json'
         app = {'name': 'Fixture', 'version': raw.split(',')[0], 'bundleId': BUNDLE,
                'fileName': 'fixture.dmg', 'url': current_url,
@@ -466,7 +466,8 @@ class CollectorIntegrationTests(unittest.TestCase):
             root = Path(directory)
             (root / 'Apps').mkdir()
             path = root / 'Apps/fixture.json'
-            original = json.dumps(dict(app, version=prior, sha='b' * 64)).encode()
+            original = json.dumps(dict(app, version=prior, sha='b' * 64,
+                                       url=current_url if prior_url is None else prior_url)).encode()
             path.write_bytes(original)
             stack.enter_context(contextlib.chdir(root))
             for name in ['app_urls', 'pkg_in_pkg_urls', 'pkg_urls', 'pkg_in_dmg_urls', 'custom_scrapers']:
@@ -488,7 +489,7 @@ class CollectorIntegrationTests(unittest.TestCase):
             result = path.read_bytes()
             report = json.loads((root / 'report.json').read_text())
             hash_again.assert_not_called()
-            inspect.assert_called_once()
+            self.assertEqual(inspect.call_count, expected_inspections)
             return original, result, report
 
     def test_no_check_write_reuses_inspected_digest_and_keeps_schema(self):

@@ -1901,6 +1901,15 @@ def _stream_signed_dmg(url, target):
         response.close()
 
 
+def _versioned_vendor_prior(prior, raw_cask, cask):
+    """Protect existing versioned vendor entries, including ordinary upgrades."""
+    source = VENDOR_STABLE_SOURCES.get(cask)
+    return (isinstance(source, StableSource) and isinstance(raw_cask, dict)
+            and prior.get('url') != raw_cask.get('url')
+            and _stable_url_allowed(prior.get('url'), source)
+            and versioned_dmg_url(prior.get('url'), prior.get('version')))
+
+
 def _recover_vendor_stable(app_info, prior, raw_cask, cask):
     source = VENDOR_STABLE_SOURCES.get(cask)
     if (source is None or not isinstance(raw_cask, dict) or app_info.get('homebrew_formula')
@@ -1909,6 +1918,8 @@ def _recover_vendor_stable(app_info, prior, raw_cask, cask):
             or not str(app_info.get('fileName', '')).endswith('.dmg')):
         return False
     status = _current_vendor_status(raw_cask['url'], source)
+    if _versioned_vendor_prior(prior, raw_cask, cask) and status not in {200, 404, 410}:
+        raise CatalogVersionHold('AVAILABILITY_UNCERTAIN')
     if status not in {404, 410}:
         return False
     declared = raw_cask.get('sha256')
@@ -1979,6 +1990,9 @@ def reconcile_vendor_dmg(app_info, prior, raw_cask, cask):
                                                 observation.bundle_version)):
             values["vendor_sha256"] = read_vendor_sha256(app_info["url"])
             decision = reconcile(ReconcileInput(**values, observation=observation))
+    if decision.action == 'LEGACY_PASS' and _versioned_vendor_prior(prior, raw_cask, cask):
+        # A positive probe is insufficient if the subsequent artifact cannot be inspected.
+        raise CatalogVersionHold('AVAILABILITY_UNCERTAIN')
     evidence = {"cask": cask, "action": decision.action, "reason": decision.reason,
                 "relation": decision.relation, "sourceRelease": raw_cask["version"][:256],
                 "declaredSha256": declared or "no_check",

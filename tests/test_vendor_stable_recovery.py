@@ -111,6 +111,80 @@ class RecoveryProducerTests(unittest.TestCase):
             self.assertFalse(c._recover_vendor_stable(self.app('unregistered'), {}, {}, 'unregistered'))
         probe.assert_not_called()
 
+    def test_recovered_entry_survives_uncertain_current_url_byte_for_byte(self):
+        helper = integration.CollectorIntegrationTests()
+        for status in [None, 301, 403, 429, 500, 503]:
+            with self.subTest(status=status), \
+                    patch.dict(c.VENDOR_STABLE_SOURCES, {'fixture': SOURCE}, clear=True), \
+                    patch.object(c, '_current_vendor_status', return_value=status), \
+                    patch.object(c, '_resolve_vendor_stable') as resolve:
+                old, new, report = helper.run_case(policy.InspectionRefusal('DOWNLOAD_FAILED', False),
+                    raw='162', prior='161', declared_sha='a' * 64, current_url=CURRENT,
+                    prior_url=RESOLVED, expected_inspections=0)
+            self.assertEqual(old, new)
+            self.assertEqual(report['failures'][0]['reason'], 'AVAILABILITY_UNCERTAIN')
+            resolve.assert_not_called()
+
+    def test_healthy_probe_cannot_replace_recovered_entry_after_inspection_failure(self):
+        helper = integration.CollectorIntegrationTests()
+        for reason in ['DOWNLOAD_FAILED', 'MOUNT_FAILED', 'INTERNAL_ERROR']:
+            with self.subTest(reason=reason), \
+                    patch.dict(c.VENDOR_STABLE_SOURCES, {'fixture': SOURCE}, clear=True), \
+                    patch.object(c, '_current_vendor_status', return_value=200):
+                old, new, report = helper.run_case(policy.InspectionRefusal(reason, False),
+                    raw='162', prior='161', declared_sha='a' * 64, current_url=CURRENT, prior_url=RESOLVED)
+            self.assertEqual(old, new)
+            self.assertEqual(report['failures'][0]['reason'], 'AVAILABILITY_UNCERTAIN')
+
+    def test_recovered_entry_is_reverified_when_current_url_remains_missing(self):
+        helper = integration.CollectorIntegrationTests()
+        for status in [404, 410]:
+            with self.subTest(status=status), \
+                    patch.dict(c.VENDOR_STABLE_SOURCES, {'fixture': SOURCE}, clear=True), \
+                    patch.object(c, '_current_vendor_status', return_value=status), \
+                    patch.object(c, '_resolve_vendor_stable', return_value=RESOLVED):
+                old, new, report = helper.run_case(signed(), raw='162', prior='161',
+                    declared_sha='a' * 64, current_url=CURRENT, prior_url=RESOLVED)
+            self.assertEqual(json.loads(new)['url'], RESOLVED)
+            self.assertEqual(json.loads(new)['version'], '161')
+            self.assertEqual(report['failures'], [])
+            self.assertTrue(report['versionEvidence'][0]['verified'])
+
+    def test_same_url_prior_keeps_normal_unreadable_artifact_behavior(self):
+        app = self.app(); prior = dict(app, version='161', sha=SHA)
+        with patch.dict(c.VENDOR_STABLE_SOURCES, {'fixture': SOURCE}, clear=True), \
+                patch.object(c, '_current_vendor_status', return_value=None), \
+                patch.object(c.shutil, 'which', return_value='/fake/hdiutil'), \
+                patch.object(c, 'inspect_dmg_artifact', return_value=policy.InspectionRefusal('DOWNLOAD_FAILED', False)):
+            c.reconcile_vendor_dmg(app, prior, {'version': '162', 'url': CURRENT, 'sha256': 'a' * 64}, 'fixture')
+        self.assertEqual((app['version'], app['url']), ('162', CURRENT))
+        self.assertEqual(c.version_evidence[-1]['action'], 'LEGACY_PASS')
+
+    def test_ordinary_versioned_vendor_upgrade_holds_until_current_url_is_available(self):
+        helper = integration.CollectorIntegrationTests()
+        current = 'https://example.invalid/Fixture-163.dmg'
+        with patch.dict(c.VENDOR_STABLE_SOURCES, {'fixture': SOURCE}, clear=True), \
+                patch.object(c, '_current_vendor_status', return_value=503), \
+                patch.object(c, '_resolve_vendor_stable') as resolve:
+            old, new, report = helper.run_case(policy.InspectionRefusal('DOWNLOAD_FAILED', False),
+                raw='163', prior='162', declared_sha='a' * 64, current_url=current,
+                prior_url=CURRENT, expected_inspections=0)
+        self.assertEqual(old, new)
+        self.assertEqual(report['failures'][0]['reason'], 'AVAILABILITY_UNCERTAIN')
+        resolve.assert_not_called()
+
+    def test_off_host_or_unversioned_prior_is_not_treated_as_recovered(self):
+        for prior_url in ['https://other.invalid/Fixture-161.dmg', STABLE,
+                          'https://example.invalid/latest.dmg']:
+            app = self.app(); prior = dict(app, version='161', sha=SHA, url=prior_url)
+            with self.subTest(prior_url=prior_url), \
+                    patch.dict(c.VENDOR_STABLE_SOURCES, {'fixture': SOURCE}, clear=True), \
+                    patch.object(c, '_current_vendor_status', return_value=None), \
+                    patch.object(c, '_resolve_vendor_stable') as resolve:
+                self.assertFalse(c._recover_vendor_stable(app, prior,
+                    {'version': '162', 'url': CURRENT, 'sha256': 'a' * 64}, 'fixture'))
+            resolve.assert_not_called()
+
     def test_original_cask_recovers_automatically_when_its_download_returns(self):
         app = self.app(); prior = dict(app, version='161', sha=SHA, url=RESOLVED)
         with patch.dict(c.VENDOR_STABLE_SOURCES, {'fixture': SOURCE}, clear=True), \
