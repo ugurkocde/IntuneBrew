@@ -1,7 +1,7 @@
 {
   "name": "ChatWork",
   "description": "Group chat software",
-  "version": "2.25.8",
+  "version": "2.25.9",
   "url": "https://desktop-app.chatwork.com/installer/ChatWork.dmg",
   "vendor_url": "https://desktop-app.chatwork.com/installer/ChatWork.dmg",
   "bundleId": "com.electron.chatwork",
@@ -11,5 +11,5 @@
   "category": "Communication",
   "publisher": "ChatWork, Inc.",
   "previous_version": "2.25.8",
-  "sha": "f9dc5a3546bfb74a3810eda6d1f8894e161f964c7f8413f2ca230cf75eaaf519"
+  "sha": "4185b29a9cbe493ab0e241a6d0ca7f15860d940745aee1f2b283c30fd9fafd1e"
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-11T07:29:31.834676Z",
-  "lastFullSyncAt": "2026-11-11T07:29:31.834676Z",
+  "lastPublishedAt": "2026-11-12T00:57:56.320999Z",
+  "lastFullSyncAt": "2026-11-12T00:57:56.320999Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -15,10 +15,6 @@
     },
     {
       "app": "capcut",
-      "stage": "collection"
-    },
-    {
-      "app": "cheatsheet",
       "stage": "collection"
     },
     {
@@ -39,6 +35,10 @@
     },
     {
       "app": "goodsync",
+      "stage": "collection"
+    },
+    {
+      "app": "google_ads_editor",
       "stage": "collection"
     },
     {
@@ -103,5 +103,5 @@
     }
   ],
   "appCount": 1152,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/42976290072"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43127192329"
 }

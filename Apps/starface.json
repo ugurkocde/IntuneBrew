@@ -1,12 +1,10 @@
 {
   "name": "Starface",
   "description": "STARFACE UCC Client for macOS - Unified Communications and Collaboration",
-  "version": "10.0.0",
-  "url": "https://www.starface-cdn.de/starface/clients/mac/STARFACE_10.0.0_1789_d191cf7.dmg",
+  "version": "11.0.0",
+  "url": "https://www.starface-cdn.de/starface/clients/mac/STARFACE_11.0.0_1913_0afd74f.dmg",
   "bundleId": "de.starface.STARFACE",
   "homepage": "https://www.starface.com/",
-  "fileName": "STARFACE_10.0.0_1789_d191cf7.dmg",
-  "sha": "e46a2055a2e126d34194777378716ef438542144fd48898447a762a2304108cd",
-  "category": "Communication",
-  "publisher": "STARFACE AG"
+  "fileName": "STARFACE_11.0.0_1913_0afd74f.dmg",
+  "sha": "873b04f5303d62a157c4109dcf61a936baf7ad9e236008468ffabee912fd261b"
 }

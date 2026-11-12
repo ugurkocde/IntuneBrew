@@ -1,13 +1,13 @@
 {
   "name": "Git GUI",
   "description": "Tcl/Tk UI for the git revision control system",
-  "version": "2.56.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/git_gui_2.56.0.pkg",
-  "vendor_url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.56.0.tar.xz",
+  "version": "2.56.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/git_gui_2.56.1.pkg",
+  "vendor_url": "https://mirrors.edge.kernel.org/pub/software/scm/git/git-2.56.1.tar.xz",
   "bundleId": "com.intunebrew.git_gui",
   "homepage": "https://git-scm.com",
   "homebrew_formula": "git-gui",
-  "fileName": "git_gui_2.56.0.pkg",
+  "fileName": "git_gui_2.56.1.pkg",
   "type": "app",
   "publisher": "Git project",
   "packageIdentifier": "com.intunebrew.git_gui",
@@ -17,7 +17,7 @@
     "arm64",
     "x86_64"
   ],
-  "sha": "29d30b3bede4c18deadb4c50a882f7344faaa9480d1edd03ddf8c80e0d1816a0",
+  "sha": "91d8e2c32e20a1cdf29a7ad7a649d003523f9b5556ae57abc05cc2ebf91455bc",
   "category": "Developer Tools",
   "previous_version": "2.56.0"
 }
