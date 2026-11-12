@@ -15,14 +15,16 @@ import fileinput
 from pathlib import Path
 import subprocess
 from datetime import datetime
+from dataclasses import dataclass
 import hashlib
 import tempfile
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from urllib.parse import urlparse, unquote, parse_qs, urlencode
+from urllib.parse import urlparse, unquote, parse_qs, urlencode, urljoin
 from request_sources import source_token, FORMULA_RECIPES, FORMULA_NAMES, FORMULA_PUBLISHERS, CASK_NAMES
 from version_relation import (BundleObservation, InspectionRefusal, PriorEntry, ReconcileInput,
                               CATALOG_CONSUMER_CAPABILITIES, plan, reconcile,
-                              numeric_suffix_relationship)
+                              numeric_suffix_relationship, SignedBundleObservation,
+                              RecoveryInput, availability_recovery, versioned_dmg_url)
 
 
 def get_filename_from_url(url, app_name=None, version=None, default_ext=".dmg"):
@@ -72,6 +74,20 @@ def get_filename_from_url(url, app_name=None, version=None, default_ext=".dmg"):
 preserve_filename_apps = [
     "tenable_nessus_agent"
 ]
+
+
+@dataclass(frozen=True)
+class StableSource:
+    url: str
+    team_id: str
+    hosts: frozenset
+
+
+# Publisher/source metadata only: no release, checksum or artifact-size pins.
+VENDOR_STABLE_SOURCES = {
+    'rotato': StableSource('https://rotato.app/download/latest', 'UDGLB23X37',
+                           frozenset({'rotato.app', 'download.rota.to'})),
+}
 
 # zip, tar etc
 app_urls = [
@@ -1494,7 +1510,7 @@ def calculate_file_hash(url):
             except Exception as e:
                 print(f"Warning: Could not delete temporary file: {str(e)}")
 
-def _mounted_bundle_metadata(mount_point, bundle_id):
+def _mounted_bundle_metadata(mount_point, bundle_id, team_id=None):
     """Read exactly one matching real app, never following a symlink out of a DMG."""
     mount = Path(mount_point).resolve()
     candidates = []
@@ -1572,12 +1588,12 @@ def _mounted_bundle_metadata(mount_point, bundle_id):
             if not isinstance(info, dict):
                 return InspectionRefusal("PLIST_INVALID", True)
             if type(info.get("CFBundleIdentifier")) is str and info["CFBundleIdentifier"] == bundle_id:
-                matches.append(info)
+                matches.append((info, app))
         if len(matches) > 1:
             return InspectionRefusal("AMBIGUOUS", True)
         if not matches:
             return InspectionRefusal("NOT_FOUND", False)
-        info = matches[0]
+        info, app = matches[0]
         def valid(value):
             return type(value) is str and 0 < len(value) <= 64 and value.isprintable()
         short = info.get("CFBundleShortVersionString")
@@ -1586,12 +1602,24 @@ def _mounted_bundle_metadata(mount_point, bundle_id):
         build = info.get("CFBundleVersion")
         if "CFBundleVersion" in info and not valid(build):
             return InspectionRefusal("BUILD_MALFORMED", True)
+        if team_id is not None:
+            if (type(team_id) is not str or not re.fullmatch(r'[A-Z0-9]{10}', team_id)
+                    or not re.fullmatch(r'[A-Za-z0-9_.-]{1,200}', bundle_id)):
+                return InspectionRefusal('SIGNATURE_IDENTITY_INVALID', True)
+            requirement = ('anchor apple generic and '
+                'certificate 1[field.1.2.840.113635.100.6.2.6] exists and '
+                'certificate leaf[field.1.2.840.113635.100.6.1.13] exists and '
+                'certificate leaf[subject.OU] = "'+team_id+'" and identifier "'+bundle_id+'"')
+            result = subprocess.run(['/usr/bin/codesign', '--verify', '--deep', '--strict',
+                                     '-R='+requirement, str(app)], capture_output=True, timeout=120)
+            if result.returncode != 0:
+                return InspectionRefusal('SIGNATURE_UNVERIFIED', True)
         return short, build
     except Exception as error:
         return unreadable(error)
 
 
-def inspect_dmg_artifact(url, bundle_id, declared_sha256=None):
+def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None, _cleanup_deadline=None):
     """Hash the one downloaded file before mounting; return bounded evidence only."""
     work = tempfile.mkdtemp(prefix="intunebrew_dmg_")
     mount_point = os.path.join(work, "mount")
@@ -1599,19 +1627,22 @@ def inspect_dmg_artifact(url, bundle_id, declared_sha256=None):
     try:
         dmg_path = os.path.join(work, "app.dmg")
         with open(dmg_path, "wb") as dmg:
-            for user_agent in DOWNLOAD_USER_AGENTS:
-                try:
-                    # The legacy stream helper can log signed URLs on refusals.
-                    with contextlib.redirect_stdout(io.StringIO()):
-                        downloaded = _stream_to_temp_file(url, user_agent, dmg)
-                    if downloaded is not None:
-                        break
-                except _OversizedDownload:
-                    return InspectionRefusal("DOWNLOAD_FAILED", False)
-                except Exception:
-                    continue
+            if team_id is not None:
+                _stream_signed_dmg(url, dmg)
             else:
-                return InspectionRefusal("DOWNLOAD_FAILED", False)
+                for user_agent in DOWNLOAD_USER_AGENTS:
+                    try:
+                        # The legacy stream helper can log signed URLs on refusals.
+                        with contextlib.redirect_stdout(io.StringIO()):
+                            downloaded = _stream_to_temp_file(url, user_agent, dmg)
+                        if downloaded is not None:
+                            break
+                    except _OversizedDownload:
+                        return InspectionRefusal("DOWNLOAD_FAILED", False)
+                    except Exception:
+                        continue
+                else:
+                    return InspectionRefusal("DOWNLOAD_FAILED", False)
         sha = hashlib.sha256()
         with open(dmg_path, "rb") as source:
             for chunk in iter(lambda: source.read(1024 * 1024), b""):
@@ -1627,13 +1658,24 @@ def inspect_dmg_artifact(url, bundle_id, declared_sha256=None):
         )
         if result.returncode != 0:
             return InspectionRefusal("MOUNT_FAILED", False, digest)
-        metadata = _mounted_bundle_metadata(mount_point, bundle_id)
+        metadata = (_mounted_bundle_metadata(mount_point, bundle_id, team_id)
+                    if team_id is not None else _mounted_bundle_metadata(mount_point, bundle_id))
         if isinstance(metadata, InspectionRefusal):
             return InspectionRefusal(metadata.code, metadata.integrity, digest)
+        if team_id is not None:
+            return SignedBundleObservation(digest, bundle_id, metadata[0], metadata[1], team_id=team_id)
         return BundleObservation(digest, bundle_id, metadata[0], metadata[1])
     except Exception:
         return InspectionRefusal("INTERNAL_ERROR", False, digest)
     finally:
+        deadline_during_cleanup = False
+        if _cleanup_deadline is not None:
+            # Never interrupt disk detachment. Each attempt has its own 120s bound.
+            try:
+                _cleanup_deadline()
+            except _StableReleaseDeadline:
+                deadline_during_cleanup = True
+                _cleanup_deadline()
         for _ in range(2):
             if not os.path.ismount(mount_point):
                 break
@@ -1644,8 +1686,12 @@ def inspect_dmg_artifact(url, bundle_id, declared_sha256=None):
                 pass
         if os.path.ismount(mount_point):
             print("DMG inspection cleanup_incomplete")
+            if team_id is not None:
+                return InspectionRefusal('CLEANUP_INCOMPLETE', True, digest)
         else:
             shutil.rmtree(work, ignore_errors=True)
+        if deadline_during_cleanup:
+            raise _StableReleaseDeadline()
 
 
 def _bundle_version_in(mount_point, bundle_id):
@@ -1746,9 +1792,170 @@ def read_vendor_sha256(url):
             signal.signal(signal.SIGALRM, previous if previous is not None else signal.SIG_DFL)
 
 
+class _StableReleaseDeadline(BaseException):
+    """Escape the legacy inspector's broad Exception handlers without retrying."""
+
+
+@contextlib.contextmanager
+def _stable_budget(seconds):
+    if (threading.current_thread() is not threading.main_thread()
+            or not all(hasattr(signal, name) for name in
+                       ('SIGALRM', 'ITIMER_REAL', 'setitimer', 'getitimer'))
+            or any(signal.getitimer(signal.ITIMER_REAL))):
+        raise CatalogVersionHold('STABLE_DEADLINE_UNAVAILABLE')
+    def expired(signum, frame):
+        raise _StableReleaseDeadline()
+    previous = signal.signal(signal.SIGALRM, expired)
+    try:
+        signal.setitimer(signal.ITIMER_REAL, seconds)
+        yield
+    except _StableReleaseDeadline:
+        raise CatalogVersionHold('STABLE_DEADLINE_EXCEEDED') from None
+    finally:
+        try:
+            signal.setitimer(signal.ITIMER_REAL, 0)
+        finally:
+            signal.signal(signal.SIGALRM, previous if previous is not None else signal.SIG_DFL)
+
+
+def _stable_url_allowed(url, source):
+    if type(url) is not str or not 0 < len(url) <= 2048 or any(not 33 <= ord(c) <= 126 for c in url):
+        return False
+    try:
+        parsed = urlparse(url)
+        return (parsed.scheme == 'https' and parsed.hostname in source.hosts
+                and parsed.port in (None, 443) and parsed.username is None and parsed.password is None
+                and not parsed.query and not parsed.fragment and bool(parsed.path))
+    except (ValueError, AttributeError):
+        return False
+
+
+def _current_vendor_status(url, source):
+    if not _stable_url_allowed(url, source):
+        return None
+    try:
+        with _stable_budget(15):
+            response = requests.get(url, stream=True, timeout=(5, 5), allow_redirects=False,
+                                    headers={'User-Agent': DOWNLOAD_USER_AGENTS[0]})
+            try:
+                return response.status_code
+            finally:
+                response.close()
+    except (requests.RequestException, CatalogVersionHold, ValueError, _StableReleaseDeadline):
+        # Availability uncertainty keeps the existing reconciliation path.
+        return None
+
+
+def _resolve_vendor_stable(source):
+    current, seen = source.url, set()
+    for hop in range(4):
+        if current in seen or not _stable_url_allowed(current, source):
+            raise CatalogVersionHold('STABLE_URL_REFUSED')
+        seen.add(current)
+        response = requests.get(current, stream=True, timeout=(5, 5), allow_redirects=False,
+                                headers={'User-Agent': DOWNLOAD_USER_AGENTS[0]})
+        try:
+            if response.status_code == 200:
+                if (current == source.url or response.url != current
+                        or not urlparse(current).path.endswith('.dmg')):
+                    raise CatalogVersionHold('STABLE_URL_MUTABLE')
+                return current
+            if response.status_code not in {301, 302, 303, 307, 308} or hop == 3:
+                raise CatalogVersionHold('STABLE_URL_UNAVAILABLE')
+            location = response.headers.get('Location')
+            if type(location) is not str or not location:
+                raise CatalogVersionHold('STABLE_URL_REFUSED')
+            current = urljoin(current, location)
+        finally:
+            response.close()
+    raise CatalogVersionHold('STABLE_URL_REFUSED')
+
+
+def _stream_signed_dmg(url, target):
+    """One exact immutable URL, no redirect or user-agent retry."""
+    response = requests.get(url, stream=True, timeout=DOWNLOAD_TIMEOUT, allow_redirects=False,
+                            headers={'User-Agent': DOWNLOAD_USER_AGENTS[0]})
+    try:
+        kind = response.headers.get('content-type', '').split(';')[0].strip().lower()
+        if (response.status_code != 200 or response.url != url
+                or kind not in {'application/octet-stream', 'application/x-apple-diskimage'}):
+            raise CatalogVersionHold('STABLE_DOWNLOAD_REFUSED')
+        length = response.headers.get('content-length')
+        length = int(length) if length is not None else None
+        if length is not None and not 0 < length <= WARP_MAX_DOWNLOAD_BYTES:
+            raise CatalogVersionHold('STABLE_DOWNLOAD_SIZE')
+        size = 0
+        for chunk in response.iter_content(chunk_size=1024 * 1024):
+            if not chunk:
+                continue
+            if size == 0 and chunk[:64].lstrip().lower().startswith(HTML_PREFIXES):
+                raise CatalogVersionHold('STABLE_DOWNLOAD_REFUSED')
+            size += len(chunk)
+            if size > WARP_MAX_DOWNLOAD_BYTES:
+                raise CatalogVersionHold('STABLE_DOWNLOAD_SIZE')
+            target.write(chunk)
+        if size == 0 or (length is not None and size != length):
+            raise CatalogVersionHold('STABLE_DOWNLOAD_SIZE')
+        target.flush()
+    finally:
+        response.close()
+
+
+def _recover_vendor_stable(app_info, prior, raw_cask, cask):
+    source = VENDOR_STABLE_SOURCES.get(cask)
+    if (source is None or not isinstance(raw_cask, dict) or app_info.get('homebrew_formula')
+            or app_info.get('url') != raw_cask.get('url')
+            or not versioned_dmg_url(raw_cask.get('url'), raw_cask.get('version'))
+            or not str(app_info.get('fileName', '')).endswith('.dmg')):
+        return False
+    status = _current_vendor_status(raw_cask['url'], source)
+    if status not in {404, 410}:
+        return False
+    declared = raw_cask.get('sha256')
+    bundle_id = prior.get('bundleId')
+    if (not isinstance(declared, str) or not re.fullmatch(r'[a-fA-F0-9]{64}', declared)
+            or type(bundle_id) is not str or not re.fullmatch(r'[A-Za-z0-9_.-]{1,200}', bundle_id)
+            or bundle_id != app_info.get('bundleId') or not isinstance(source, StableSource)
+            or not re.fullmatch(r'[A-Z0-9]{10}', source.team_id)):
+        raise CatalogVersionHold('RECOVERY_IDENTITY_UNPROVEN')
+    try:
+        with _stable_budget(WARP_DOWNLOAD_DEADLINE):
+            resolved = _resolve_vendor_stable(source)
+            observation = inspect_dmg_artifact(resolved, bundle_id, team_id=source.team_id,
+                _cleanup_deadline=lambda: signal.setitimer(signal.ITIMER_REAL, 0))
+        # This reader owns its own short timer, after disk cleanup has completed.
+        sidecar = read_vendor_sha256(resolved)
+    except _StableReleaseDeadline:
+        raise CatalogVersionHold('STABLE_DEADLINE_EXCEEDED') from None
+    except (requests.RequestException, ValueError):
+        raise CatalogVersionHold('STABLE_DOWNLOAD_REFUSED') from None
+    decision = availability_recovery(RecoveryInput(status, raw_cask.get('version'), declared.lower(),
+        source.url, resolved, bundle_id, source.team_id, observation, sidecar,
+        PriorEntry(prior.get('version'), prior.get('sha'), prior.get('url'))))
+    evidence = {'cask': cask, 'action': decision.action, 'reason': decision.reason,
+                'relation': decision.relation, 'sourceRelease': str(raw_cask.get('version'))[:256],
+                'currentStatus': status, 'stableUrl': source.url, 'resolvedUrl': resolved,
+                'declaredSha256': declared.lower(), 'vendorSha256': sidecar,
+                'sidecar': 'present' if sidecar is not None else 'absent',
+                'priorVersion': str(prior.get('version', ''))[:256], 'verified': decision.verified}
+    if isinstance(observation, SignedBundleObservation):
+        evidence.update(artifactSha256=observation.artifact_sha256,
+                        observedShort=observation.short_version, observedBuild=observation.bundle_version,
+                        teamId=observation.team_id, inspector=observation.inspector)
+    if len(version_evidence) < 5000:
+        version_evidence.append(evidence)
+    if decision.action == 'HOLD':
+        raise CatalogVersionHold(decision.reason)
+    app_info.update(version=decision.version, sha=decision.sha, url=resolved, vendor_url=resolved,
+                    fileName=get_filename_from_url(resolved))
+    return True
+
+
 def reconcile_vendor_dmg(app_info, prior, raw_cask, cask):
     """Apply the common rule at the vendor-DMG boundary, before any file write."""
     prior = prior or {}
+    if _recover_vendor_stable(app_info, prior, raw_cask, cask):
+        return
     if (not isinstance(raw_cask, dict) or not isinstance(raw_cask.get("version"), str)
             or app_info.get("homebrew_formula") or not app_info.get("bundleId")
             or not str(app_info.get("fileName", "")).lower().endswith(".dmg")

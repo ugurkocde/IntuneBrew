@@ -4,6 +4,7 @@ import re
 
 
 INSPECTOR_VERSION = "dmg-inspector/1"
+SIGNED_INSPECTOR_VERSION = "signed-dmg-inspector/1"
 # Numeric builds are distributed at 0d32caa; strict hex core ordering is
 # deployed and freshly verified in Website 5ef96c2, with Runbook CVE support.
 CATALOG_CONSUMER_CAPABILITIES = frozenset({"decorated_text", "plus_build", "paren_hex"})
@@ -23,6 +24,12 @@ class BundleObservation:
     short_version: str
     bundle_version: str = None
     inspector: str = INSPECTOR_VERSION
+
+
+@dataclass(frozen=True)
+class SignedBundleObservation(BundleObservation):
+    inspector: str = SIGNED_INSPECTOR_VERSION
+    team_id: str = None
 
 
 @dataclass(frozen=True)
@@ -54,6 +61,20 @@ class ReconcileInput:
 
 
 @dataclass(frozen=True)
+class RecoveryInput:
+    current_status: int
+    source_release: str
+    declared_sha256: str
+    stable_url: str
+    resolved_url: str
+    bundle_id: str
+    team_id: str
+    observation: object
+    vendor_sha256: str = None
+    prior: PriorEntry = None
+
+
+@dataclass(frozen=True)
 class Decision:
     action: str
     version: str = None
@@ -69,6 +90,49 @@ def generic_legacy_truncate(raw):
 
 def _sha(value):
     return isinstance(value, str) and re.fullmatch(r"[0-9a-f]{64}", value) is not None
+
+
+def versioned_dmg_url(url, version):
+    """Only explicit numeric release filenames, without encoded/ambiguous URL forms."""
+    numeric = _BOUNDED_COMPONENT + r"(?:\." + _BOUNDED_COMPONENT + r")*"
+    if (type(url) is not str or type(version) is not str or not 0 < len(version) <= 64
+            or not re.fullmatch(numeric, version)
+            or not re.fullmatch(r'https://[A-Za-z0-9.-]+(?::443)?/[A-Za-z0-9_./+~-]+\.dmg', url)):
+        return False
+    return re.search(r'(?<![0-9.])'+re.escape(version)+r'(?=\.dmg$|[^0-9.])',
+                     url.rsplit('/', 1)[-1]) is not None
+
+
+def availability_recovery(i):
+    """The explicit availability rollback lane; ordinary reconciliation is unchanged."""
+    obs = i.observation
+    numeric = _BOUNDED_COMPONENT + r"(?:\." + _BOUNDED_COMPONENT + r")*"
+    def number(value):
+        if type(value) is str and 0 < len(value) <= 64 and re.fullmatch(numeric, value):
+            return tuple(int(part) for part in value.split('.'))
+        return None
+    source = number(i.source_release)
+    short = number(obs.short_version) if isinstance(obs, SignedBundleObservation) else None
+    if (type(i.current_status) is not int or i.current_status not in {404, 410}
+            or not _sha(i.declared_sha256) or not source or not short
+            or obs.inspector != SIGNED_INSPECTOR_VERSION or not _sha(obs.artifact_sha256)
+            or not i.bundle_id or obs.bundle_id != i.bundle_id
+            or type(i.team_id) is not str or not re.fullmatch(r'[A-Z0-9]{10}', i.team_id)
+            or obs.team_id != i.team_id or type(i.stable_url) is not str
+            or type(i.resolved_url) is not str or i.stable_url == i.resolved_url
+            or not versioned_dmg_url(i.resolved_url, obs.short_version)):
+        return Decision('HOLD', reason='RECOVERY_UNPROVEN')
+    if i.vendor_sha256 is not None and i.vendor_sha256 != obs.artifact_sha256:
+        return Decision('HOLD', reason='VENDOR_CHECKSUM_MISMATCH')
+    width = max(len(source), len(short))
+    if short + (0,) * (width - len(short)) > source + (0,) * (width - len(source)):
+        return Decision('HOLD', reason='RECOVERY_VERSION_AHEAD')
+    action = 'WRITE'
+    if i.prior and i.prior.version == obs.short_version:
+        action = ('NOOP' if i.prior.sha == obs.artifact_sha256 and i.prior.url == i.resolved_url
+                  else 'REFRESH')
+    return Decision(action, obs.short_version, obs.artifact_sha256, 'AVAILABILITY_RECOVERY',
+                    'VERIFIED_VENDOR_STABLE_RECOVERY', True)
 
 
 def plan(i):
