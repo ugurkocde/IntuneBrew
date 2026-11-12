@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-12T14:51:16.161Z",
+  "last_full_scan": "2026-11-12T16:17:23.347Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -1213,8 +1213,8 @@
       "name": "Dockside"
     },
     "dockview": {
-      "last_checked": "2026-01-17T08:37:42.078Z",
-      "bundle_id": "com.sergey-gerasimenko.DockView",
+      "last_checked": "2026-11-12T16:17:23.331Z",
+      "bundle_id": "com.macplus-software.com.DockView-2",
       "status": "verified",
       "source": "file",
       "name": "DockView"
@@ -9494,6 +9494,20 @@
       "status": "verified",
       "source": "file",
       "name": "Homebrew"
+    },
+    "codex_cli": {
+      "last_checked": "2026-11-12T16:17:23.329Z",
+      "bundle_id": "com.intunebrew.codex_cli",
+      "status": "verified",
+      "source": "file",
+      "name": "Codex CLI"
+    },
+    "nuphyio": {
+      "last_checked": "2026-11-12T16:17:23.338Z",
+      "bundle_id": "NuPhyIO2.your-app",
+      "status": "verified",
+      "source": "file",
+      "name": "NuPhyIO"
     }
   }
 }
