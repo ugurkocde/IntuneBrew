@@ -6,5 +6,13 @@
     ],
     "recorded_at": "2026-11-12T13:13:14.384716+00:00",
     "needs_review": false
+  },
+  {
+    "issue": 401,
+    "casks": [
+      "codex"
+    ],
+    "recorded_at": "2026-11-12T13:14:26.210740+00:00",
+    "needs_review": false
   }
 ]

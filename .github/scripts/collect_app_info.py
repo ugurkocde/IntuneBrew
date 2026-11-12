@@ -492,6 +492,7 @@ app_urls = [
     "https://formulae.brew.sh/api/formula/azure-cli.json",
     "https://formulae.brew.sh/api/formula/git-gui.json",
     "https://formulae.brew.sh/api/cask/whatcable.json",
+    "https://formulae.brew.sh/api/cask/codex.json",
 ]
 
 # DMG
