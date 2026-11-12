@@ -14,6 +14,7 @@ case "$app_name" in
     exit 0 ;;
   1password_cli) source_dir=.; binaries=(op) ;;
   github_copilot_cli) source_dir=.; binaries=(copilot) ;;
+  codex_cli) source_dir=.; binaries=(bin/codex) ;;
   sentinel) source_dir=.; binaries=(sentinel) ;;
   android_sdk_platformtools) source_dir=platform-tools; binaries=(adb fastboot etc1tool hprof-conv make_f2fs make_f2fs_casefold mke2fs) ;;
   android_sdk_commandline_tools) source_dir=cmdline-tools; binaries=(bin/apkanalyzer bin/avdmanager bin/d8 bin/lint bin/profgen bin/r8 bin/resourceshrinker bin/retrace bin/screenshot2 bin/sdkmanager) ;;

@@ -882,12 +882,14 @@ class CatalogConsistencyTests(unittest.TestCase):
                     self.assertEqual((apps / f"{token}.json").read_bytes(), before[token])
                     self.assertNotIn(token, supported)
 
-    def test_codex_uses_desktop_cask_instead_of_cli_cask(self):
+    def test_codex_desktop_and_cli_have_distinct_catalog_identities(self):
         desktop_url = "https://formulae.brew.sh/api/cask/codex-app.json"
         cli_url = "https://formulae.brew.sh/api/cask/codex.json"
 
         self.assertIn(desktop_url, collect_app_info.app_urls)
-        self.assertNotIn(cli_url, collect_app_info.app_urls)
+        self.assertIn(cli_url, collect_app_info.app_urls)
+        self.assertEqual(collect_app_info.CASK_NAMES['codex'], 'Codex CLI')
+        self.assertNotEqual(collect_app_info.sanitize_filename(collect_app_info.CASK_NAMES['codex']), 'codex')
 
         codex = json.loads(
             (ROOT / "Apps" / "codex.json").read_text(encoding="utf-8")

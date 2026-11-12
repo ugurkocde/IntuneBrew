@@ -473,8 +473,8 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/yippy.json",
     "https://formulae.brew.sh/api/cask/zight.json",
     "https://formulae.brew.sh/api/cask/notion-mail.json",
-    # codex-app is the OpenAI Codex desktop app. The plain "codex" cask is the CLI
-    # tarball, which is not deployable via Intune (Issues #167, #174)
+    # codex-app is the desktop app. The plain codex CLI uses a distinct deployment
+    # name and an explicit archive packaging recipe so the two cannot overwrite.
     "https://formulae.brew.sh/api/cask/codex-app.json",
     "https://formulae.brew.sh/api/cask/clickshare.json",
     "https://formulae.brew.sh/api/cask/pppc-utility.json",
