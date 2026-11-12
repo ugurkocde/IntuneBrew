@@ -18,6 +18,7 @@ from datetime import datetime
 from dataclasses import dataclass
 import hashlib
 import tempfile
+import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from urllib.parse import urlparse, unquote, parse_qs, urlencode, urljoin
 from request_sources import source_token, FORMULA_RECIPES, FORMULA_NAMES, FORMULA_PUBLISHERS, CASK_NAMES
@@ -1516,7 +1517,7 @@ def calculate_file_hash(url):
             except Exception as e:
                 print(f"Warning: Could not delete temporary file: {str(e)}")
 
-def _mounted_bundle_metadata(mount_point, bundle_id, team_id=None):
+def _mounted_bundle_metadata(mount_point, bundle_id, team_id=None, *, app_name=None):
     """Read exactly one matching real app, never following a symlink out of a DMG."""
     mount = Path(mount_point).resolve()
     candidates = []
@@ -1543,7 +1544,20 @@ def _mounted_bundle_metadata(mount_point, bundle_id, team_id=None):
         return InspectionRefusal("CANDIDATE_UNREADABLE", True)
 
     try:
+        if app_name is not None:
+            if (type(app_name) is not str or not app_name.endswith('.app')
+                    or '/' in app_name or '\\' in app_name or not app_name.isprintable()
+                    or len(app_name) > 255 or team_id is not None):
+                return InspectionRefusal('APP_NAME_INVALID', True)
+            expected_name = unicodedata.normalize('NFD', app_name)
         for entry in sorted(mount.iterdir()):
+            if app_name is not None:
+                # Discovery uses only the exact cask-declared root app, never a
+                # helper, uninstaller or an app found inside another directory.
+                if (unicodedata.normalize('NFD', entry.name) == expected_name
+                        and not entry.is_symlink()):
+                    candidates.append(entry)
+                continue
             container = {".fseventsd": "fseventsd", ".background": "background",
                          ".DocumentRevisions-V100": "document_revisions",
                          ".Spotlight-V100": "spotlight", ".TemporaryItems": "temporary_items",
@@ -1593,7 +1607,12 @@ def _mounted_bundle_metadata(mount_point, bundle_id, team_id=None):
             stage = "metadata_validation"
             if not isinstance(info, dict):
                 return InspectionRefusal("PLIST_INVALID", True)
-            if type(info.get("CFBundleIdentifier")) is str and info["CFBundleIdentifier"] == bundle_id:
+            if app_name is not None:
+                identifier = info.get('CFBundleIdentifier')
+                if type(identifier) is not str or not re.fullmatch(r'[A-Za-z0-9_.-]{1,200}', identifier):
+                    return InspectionRefusal('BUNDLE_ID_INVALID', True)
+                matches.append((info, app))
+            elif type(info.get("CFBundleIdentifier")) is str and info["CFBundleIdentifier"] == bundle_id:
                 matches.append((info, app))
         if len(matches) > 1:
             return InspectionRefusal("AMBIGUOUS", True)
@@ -1620,13 +1639,16 @@ def _mounted_bundle_metadata(mount_point, bundle_id, team_id=None):
                                      '-R='+requirement, str(app)], capture_output=True, timeout=120)
             if result.returncode != 0:
                 return InspectionRefusal('SIGNATURE_UNVERIFIED', True)
-        return short, build
+        return (info['CFBundleIdentifier'], short, build) if app_name is not None else (short, build)
     except Exception as error:
         return unreadable(error)
 
 
-def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None, _cleanup_deadline=None):
+def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None,
+                         _cleanup_deadline=None, app_name=None):
     """Hash the one downloaded file before mounting; return bounded evidence only."""
+    if app_name is not None and team_id is not None:
+        return InspectionRefusal('SIGNATURE_IDENTITY_INVALID', True)
     work = tempfile.mkdtemp(prefix="intunebrew_dmg_")
     mount_point = os.path.join(work, "mount")
     digest = None
@@ -1664,10 +1686,16 @@ def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None, 
         )
         if result.returncode != 0:
             return InspectionRefusal("MOUNT_FAILED", False, digest)
-        metadata = (_mounted_bundle_metadata(mount_point, bundle_id, team_id)
-                    if team_id is not None else _mounted_bundle_metadata(mount_point, bundle_id))
+        if app_name is not None:
+            metadata = _mounted_bundle_metadata(mount_point, bundle_id, app_name=app_name)
+        elif team_id is not None:
+            metadata = _mounted_bundle_metadata(mount_point, bundle_id, team_id)
+        else:
+            metadata = _mounted_bundle_metadata(mount_point, bundle_id)
         if isinstance(metadata, InspectionRefusal):
             return InspectionRefusal(metadata.code, metadata.integrity, digest)
+        if app_name is not None:
+            return BundleObservation(digest, metadata[0], metadata[1], metadata[2])
         if team_id is not None:
             return SignedBundleObservation(digest, bundle_id, metadata[0], metadata[1], team_id=team_id)
         return BundleObservation(digest, bundle_id, metadata[0], metadata[1])
@@ -1692,7 +1720,7 @@ def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None, 
                 pass
         if os.path.ismount(mount_point):
             print("DMG inspection cleanup_incomplete")
-            if team_id is not None:
+            if team_id is not None or app_name is not None:
                 return InspectionRefusal('CLEANUP_INCOMPLETE', True, digest)
         else:
             shutil.rmtree(work, ignore_errors=True)
@@ -1968,15 +1996,67 @@ def _recover_vendor_stable(app_info, prior, raw_cask, cask):
     return True
 
 
-def reconcile_vendor_dmg(app_info, prior, raw_cask, cask):
+def discover_missing_bundle_id(app_info, prior, raw_cask, cask):
+    """Inspect a cask's exact root app only when no effective identity is known."""
+    if (app_info.get('bundleId') or (isinstance(prior, dict) and prior.get('bundleId'))
+            or app_info.get('homebrew_formula') or app_info.get('type')
+            or cask in VENDOR_STABLE_SOURCES or not isinstance(raw_cask, dict)
+            or raw_cask.get('deprecated') or raw_cask.get('disabled')
+            or app_info.get('url') != raw_cask.get('url')
+            or not str(app_info.get('fileName', '')).lower().endswith('.dmg')
+            or shutil.which('hdiutil') is None):
+        return None
+    source_url = raw_cask.get('url')
+    if type(source_url) is not str:
+        return None
+    parsed = urlparse(source_url)
+    if (parsed.scheme != 'https' or not parsed.hostname or parsed.username is not None
+            or parsed.password is not None or parsed.fragment):
+        return None
+    artifacts = raw_cask.get('artifacts')
+    if not isinstance(artifacts, list) or any(not isinstance(a, dict) for a in artifacts):
+        return None
+    if any(set(a) & {'pkg', 'installer', 'suite', 'preflight', 'postflight'} for a in artifacts):
+        return None
+    apps = [a for a in artifacts if 'app' in a]
+    if len(apps) != 1:
+        return None
+    names = apps[0]['app']
+    if (not isinstance(names, list) or len(names) != 1 or type(names[0]) is not str
+            or not names[0].endswith('.app') or '/' in names[0] or '\\' in names[0]
+            or not names[0].isprintable() or len(names[0]) > 255
+            or apps[0].get('target', '/Applications/' + names[0]) != '/Applications/' + names[0]):
+        return None
+    checksum = raw_cask.get('sha256')
+    declared = checksum.lower() if isinstance(checksum, str) and re.fullmatch(r'[A-Fa-f0-9]{64}', checksum) else None
+    try:
+        with _stable_budget(WARP_DOWNLOAD_DEADLINE):
+            observation = inspect_dmg_artifact(source_url, None, declared, app_name=names[0],
+                _cleanup_deadline=lambda: signal.setitimer(signal.ITIMER_REAL, 0))
+    except CatalogVersionHold as error:
+        raise CatalogVersionHold('BUNDLE_ID_' + error.code) from None
+    if isinstance(observation, InspectionRefusal):
+        raise CatalogVersionHold('BUNDLE_ID_' + observation.code)
+    if not isinstance(observation, BundleObservation):
+        raise CatalogVersionHold('BUNDLE_ID_OBSERVATION_INVALID')
+    app_info['bundleId'] = observation.bundle_id
+    return observation
+
+
+def reconcile_vendor_dmg(app_info, prior, raw_cask, cask, *, observation=None):
     """Apply the common rule at the vendor-DMG boundary, before any file write."""
     prior = prior or {}
-    if _recover_vendor_stable(app_info, prior, raw_cask, cask):
+    supplied = observation is not None
+    if supplied and (not isinstance(observation, BundleObservation) or cask in VENDOR_STABLE_SOURCES):
+        raise CatalogVersionHold('BUNDLE_ID_OBSERVATION_INVALID')
+    if not supplied and _recover_vendor_stable(app_info, prior, raw_cask, cask):
         return
     if (not isinstance(raw_cask, dict) or not isinstance(raw_cask.get("version"), str)
             or app_info.get("homebrew_formula") or not app_info.get("bundleId")
             or not str(app_info.get("fileName", "")).lower().endswith(".dmg")
             or shutil.which("hdiutil") is None):
+        if supplied:
+            raise CatalogVersionHold('BUNDLE_ID_OBSERVATION_INVALID')
         verify_dmg_bundle_version(app_info, prior.get("version"))
         return
     declared = raw_cask.get("sha256")
@@ -1985,17 +2065,19 @@ def reconcile_vendor_dmg(app_info, prior, raw_cask, cask):
                   declared_sha256=declared, url=app_info["url"], bundle_id=app_info["bundleId"],
                   prior=PriorEntry(prior.get("version"), prior.get("sha"), prior.get("url")) if prior else None,
                   consumer_caps=CATALOG_CONSUMER_CAPABILITIES, source_cask=cask)
-    decision = plan(ReconcileInput(**values))
-    observation = None
-    if decision.action == "INSPECT":
+    if supplied:
+        decision = reconcile(ReconcileInput(**values, observation=observation))
+    else:
+        decision = plan(ReconcileInput(**values))
+    if not supplied and decision.action == "INSPECT":
         observation = inspect_dmg_artifact(app_info["url"], app_info["bundleId"], declared)
         decision = reconcile(ReconcileInput(**values, observation=observation))
-        if (decision.action == "HOLD" and decision.reason == "RELATION_UNPROVEN" and declared
-                and isinstance(observation, BundleObservation)
-                and numeric_suffix_relationship(raw_cask["version"], observation.short_version,
-                                                observation.bundle_version)):
-            values["vendor_sha256"] = read_vendor_sha256(app_info["url"])
-            decision = reconcile(ReconcileInput(**values, observation=observation))
+    if (decision.action == "HOLD" and decision.reason == "RELATION_UNPROVEN" and declared
+            and isinstance(observation, BundleObservation)
+            and numeric_suffix_relationship(raw_cask["version"], observation.short_version,
+                                            observation.bundle_version)):
+        values["vendor_sha256"] = read_vendor_sha256(app_info["url"])
+        decision = reconcile(ReconcileInput(**values, observation=observation))
     if decision.action == 'LEGACY_PASS' and _versioned_vendor_prior(prior, raw_cask, cask):
         # A positive probe is insufficient if the subsequent artifact cannot be inspected.
         raise CatalogVersionHold('AVAILABILITY_UNCERTAIN')
@@ -2010,6 +2092,8 @@ def reconcile_vendor_dmg(app_info, prior, raw_cask, cask):
     if isinstance(observation, BundleObservation):
         evidence.update(observedShort=observation.short_version, observedBuild=observation.bundle_version,
                         artifactSha256=observation.artifact_sha256, inspector=observation.inspector)
+    if supplied:
+        evidence.update(bundleIdDiscovered=True, observedBundleId=observation.bundle_id)
     if len(version_evidence) < 5000:
         version_evidence.append(evidence)
     if decision.action == "HOLD":
@@ -2826,7 +2910,11 @@ def main():
                         app_info["sha"] = new_sha
                     app_info["previous_version"] = previous_version
 
-            reconcile_vendor_dmg(app_info, existing_data, cask_cache.get(url), get_cask_token(url))
+            discovery = discover_missing_bundle_id(app_info, existing_data, cask_cache.get(url), get_cask_token(url))
+            if discovery is None:
+                reconcile_vendor_dmg(app_info, existing_data, cask_cache.get(url), get_cask_token(url))
+            else:
+                reconcile_vendor_dmg(app_info, existing_data, cask_cache.get(url), get_cask_token(url), observation=discovery)
 
             # The inspector supplies the digest of the mounted bytes. Legacy
             # paths still hash mutable/no_check artifacts fresh, as before.
