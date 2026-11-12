@@ -10,5 +10,7 @@
   "fileName": "codex_cli_0.167.2.pkg",
   "type": "app",
   "packageIdentifier": "com.intunebrew.codex_cli",
-  "sha": "c859d064aeca314e10558a05c1e03205aabd894678ff1c8c0fb878232be86c55"
+  "sha": "c859d064aeca314e10558a05c1e03205aabd894678ff1c8c0fb878232be86c55",
+  "category": "Developer Tools",
+  "publisher": "OpenAI"
 }
