@@ -9,5 +9,7 @@
   "homebrew_cask": "plezy",
   "fileName": "plezy_2.26.0.pkg",
   "type": "app",
-  "sha": "62c1cf3a88f63127bd8411b62edd325619581c41b9721ef9029882943a8d199e"
+  "sha": "62c1cf3a88f63127bd8411b62edd325619581c41b9721ef9029882943a8d199e",
+  "category": "Media",
+  "publisher": "Plezy"
 }

@@ -9,5 +9,7 @@
   "homebrew_cask": "github-copilot-app",
   "fileName": "github_copilot_1.3.0.pkg",
   "type": "app",
-  "sha": "b0b13d9ef79009d1a22b06b15d7ddab47ae314bf3c8100ce5df80ddbe8c06bcf"
+  "sha": "b0b13d9ef79009d1a22b06b15d7ddab47ae314bf3c8100ce5df80ddbe8c06bcf",
+  "category": "Developer Tools",
+  "publisher": "GitHub, Inc."
 }
