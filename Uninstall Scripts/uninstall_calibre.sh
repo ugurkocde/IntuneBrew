@@ -29,12 +29,6 @@ elif [ -f "/Applications/calibre.app" ]; then
     rm -f "/Applications/calibre.app" 2>/dev/null || true
 fi
 
-# Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre-complete
-echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre-complete..."
-if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/calibre-complete" ]; then
-    rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/calibre-complete" 2>/dev/null || true
-fi
-
 # Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre-customize
 echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre-customize..."
 if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/calibre-customize" ]; then
@@ -89,18 +83,6 @@ if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-meta" ]; the
     rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-meta" 2>/dev/null || true
 fi
 
-# Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/ebook-polish
-echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/ebook-polish..."
-if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-polish" ]; then
-    rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-polish" 2>/dev/null || true
-fi
-
-# Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/ebook-viewer
-echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/ebook-viewer..."
-if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-viewer" ]; then
-    rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-viewer" 2>/dev/null || true
-fi
-
 # Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/fetch-ebook-metadata
 echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/fetch-ebook-metadata..."
 if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/fetch-ebook-metadata" ]; then
@@ -111,12 +93,6 @@ fi
 echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/lrf2lrs..."
 if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/lrf2lrs" ]; then
     rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/lrf2lrs" 2>/dev/null || true
-fi
-
-# Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/lrfviewer
-echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/lrfviewer..."
-if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/lrfviewer" ]; then
-    rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/lrfviewer" 2>/dev/null || true
 fi
 
 # Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/lrs2lrf
@@ -137,16 +113,16 @@ if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/web2disk" ]; then
     rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/web2disk" 2>/dev/null || true
 fi
 
-# Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/ebook-edit
-echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/ebook-edit..."
-if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-edit" ]; then
-    rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-edit" 2>/dev/null || true
+# Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/ebook-polish
+echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/ebook-polish..."
+if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-polish" ]; then
+    rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/ebook-polish" 2>/dev/null || true
 fi
 
-# Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre
-echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre..."
-if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/calibre" ]; then
-    rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/calibre" 2>/dev/null || true
+# Remove binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre-complete
+echo "Removing binary /Applications/calibre.app/calibre.app/Contents/MacOS/calibre-complete..."
+if [ -f "/Applications/calibre.app/calibre.app/Contents/MacOS/calibre-complete" ]; then
+    rm -f "/Applications/calibre.app/calibre.app/Contents/MacOS/calibre-complete" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/calibre-ebook.com

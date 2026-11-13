@@ -17,6 +17,18 @@ fi
 echo "Stopping OverSight if running..."
 pkill -f "OverSight" 2>/dev/null || true
 
+# Kill application with bundle ID com.objective-see.oversight if running
+echo "Stopping application with bundle ID com.objective-see.oversight if running..."
+killall -9 "com.objective-see.oversight" 2>/dev/null || true
+
+# Remove /Applications/OverSight Installer.app/Contents/Resources/OverSight.app
+echo "Removing /Applications/OverSight Installer.app/Contents/Resources/OverSight.app..."
+if [ -d "/Applications/OverSight Installer.app/Contents/Resources/OverSight.app" ]; then
+    rm -rf "/Applications/OverSight Installer.app/Contents/Resources/OverSight.app" 2>/dev/null || true
+elif [ -f "/Applications/OverSight Installer.app/Contents/Resources/OverSight.app" ]; then
+    rm -f "/Applications/OverSight Installer.app/Contents/Resources/OverSight.app" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.objective-see.oversight
 echo "Removing $HOME/Library/Caches/com.objective-see.oversight..."
 if [ -d "$HOME/Library/Caches/com.objective-see.oversight" ]; then
