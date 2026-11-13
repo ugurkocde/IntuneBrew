@@ -1,13 +1,5 @@
 [
   {
-    "issue": 404,
-    "casks": [
-      "unraid-usb-creator"
-    ],
-    "recorded_at": "2026-11-12T13:28:09.065838+00:00",
-    "needs_review": false
-  },
-  {
     "issue": 412,
     "casks": [
       "font-hack-nerd-font"
