@@ -3,10 +3,12 @@ from dataclasses import replace
 from pathlib import Path
 import sys
 import unittest
+from unittest import mock
 sys.path.insert(0, str(Path(__file__).resolve().parents[1] / '.github/scripts'))
 import version_relation as p
+import collect_app_info as collector
 SHA='a'*64
-CAPS=p.CATALOG_CONSUMER_CAPABILITIES | {'unraid_revision'}
+CAPS=p.CATALOG_CONSUMER_CAPABILITIES
 
 def request(core='2.0.11.1', revision='1', prior=None, caps=CAPS):
     version=f'v{core}-unraid.{revision}'
@@ -16,6 +18,32 @@ def request(core='2.0.11.1', revision='1', prior=None, caps=CAPS):
         p.BundleObservation(SHA,'org.example.unraid',version,version),caps,'unraid-usb-creator')
 
 class UnraidRevisionTests(unittest.TestCase):
+    def test_production_capabilities_are_exactly_the_reviewed_consumers(self):
+        self.assertEqual(CAPS, frozenset({'decorated_text','plus_build','paren_hex','unraid_revision'}))
+        self.assertIs(collector.CATALOG_CONSUMER_CAPABILITIES, CAPS)
+
+    def test_collector_uses_unpatched_production_capability_and_preserves_holds(self):
+        value=request()
+        def collect(raw_sha=SHA, prior=None, observation=value.observation):
+            app={'name':'Example Unraid','version':'2.0.11.1','url':value.url,
+                 'bundleId':'org.example.unraid','fileName':'example.dmg'}
+            with mock.patch.object(collector.shutil,'which',return_value='/usr/bin/hdiutil'), \
+                 mock.patch.object(collector,'inspect_dmg_artifact',return_value=observation) as inspect, \
+                 mock.patch.object(collector,'read_vendor_sha256',side_effect=AssertionError('No sidecar fallback')):
+                collector.reconcile_vendor_dmg(app, prior,
+                    {'version':'2.0.11.1,1','sha256':raw_sha}, 'unraid-usb-creator')
+            inspect.assert_called_once()
+            return app
+        app=collect()
+        self.assertEqual((app['version'],app['sha']),('v2.0.11.1-unraid.1',SHA))
+        for kwargs in [
+            {'raw_sha':'b'*64},
+            {'prior':{'version':'2.0.11.1','sha':SHA,'url':value.url}},
+            {'observation':p.InspectionRefusal('MOUNT_FAILED',False,SHA)},
+        ]:
+            with self.subTest(kwargs=kwargs), self.assertRaises(collector.CatalogVersionHold):
+                collect(**kwargs)
+
     def test_exact_vendor_contract_keeps_literal_detection_and_digest(self):
         i=request();d=p.reconcile(i)
         self.assertEqual((d.action,d.version,d.sha,d.relation),('WRITE','v2.0.11.1-unraid.1',SHA,'SOURCE_UNRAID_REVISION'))
