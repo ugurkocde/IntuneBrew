@@ -6,9 +6,12 @@ import os
 from pathlib import Path
 import re
 import shutil
+import socket
 import subprocess
 import tarfile
 import tempfile
+import time
+from urllib.error import HTTPError, URLError
 from urllib.request import urlopen
 
 RECIPE = "git-gui-tcltk-v1"
@@ -40,18 +43,39 @@ fi
 def download(url, destination, checksum=None):
     if not url.startswith("https://"):
         raise ValueError("Source download must use HTTPS")
-    with urlopen(url, timeout=60) as response, destination.open("wb") as output:
-        if not response.url.startswith("https://"):
-            raise ValueError("Source redirected outside HTTPS")
-        total = 0
-        while True:
-            chunk = response.read(1024 * 1024)
-            if not chunk:
-                break
-            total += len(chunk)
-            if total > 100 * 1024 * 1024:
-                raise ValueError("Source exceeds the recipe's download limit")
-            output.write(chunk)
+    retryable = (TimeoutError, ConnectionResetError, socket.timeout)
+    network_errors = (URLError,) + retryable
+    for attempt in range(2):
+        network_error = None
+        try:
+            response = urlopen(url, timeout=60)
+        except network_errors as error:
+            network_error = error
+        else:
+            # Each attempt truncates its private output. Local file operations
+            # deliberately stay outside the network exception handlers.
+            with response, destination.open("wb") as output:
+                if not response.url.startswith("https://"):
+                    raise ValueError("Source redirected outside HTTPS")
+                total = 0
+                while True:
+                    try:
+                        chunk = response.read(1024 * 1024)
+                    except network_errors as error:
+                        network_error = error
+                        break
+                    if not chunk:
+                        break
+                    total += len(chunk)
+                    if total > 100 * 1024 * 1024:
+                        raise ValueError("Source exceeds the recipe's download limit")
+                    output.write(chunk)
+        if network_error is None:
+            break
+        reason = network_error.reason if isinstance(network_error, URLError) else network_error
+        if (isinstance(network_error, HTTPError) or not isinstance(reason, retryable) or attempt == 1):
+            raise network_error
+        time.sleep(1)
     if checksum and hashlib.sha256(destination.read_bytes()).hexdigest() != checksum:
         raise ValueError("Source SHA-256 mismatch")
 
