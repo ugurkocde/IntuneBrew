@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Visual Studio Code",
   "app_key": "microsoft_visual_studio_code",
-  "last_updated": "2026-11-12",
+  "last_updated": "2026-11-13",
   "total_cves": 96,
   "summary": {
     "critical": 3,
