@@ -2,6 +2,7 @@
 import hashlib
 import io
 import json
+import os
 from pathlib import Path
 import shutil
 import subprocess
@@ -56,9 +57,20 @@ class FontPackageTests(unittest.TestCase):
 
     def save(self): (self.root / 'Apps/example_fonts.json').write_text(json.dumps(self.data))
 
-    def run_package(self, identifier='com.intunebrew.example_fonts'):
+    def run_package(self, identifier='com.intunebrew.example_fonts', env=None):
         return subprocess.run(['bash', str(self.scripts / 'package_cli.sh'), 'example_fonts', str(self.extracted),
-                               '3.5.1', identifier], capture_output=True, text=True, timeout=30)
+                               '3.5.1', identifier], capture_output=True, text=True, timeout=30,
+                              cwd=self.extracted, env=env)
+
+    def test_archive_directory_and_pythonpath_cannot_shadow_imports(self):
+        self.prepare()
+        marker = self.root / 'shadow-module-ran'
+        # Neither this cwd module nor PYTHONPATH may execute before validation.
+        (self.extracted / 'hashlib.py').write_text('from pathlib import Path\nPath(' + repr(str(marker)) + ').touch()\nraise RuntimeError("archive module executed")\n')
+        result = self.run_package(env={**os.environ, 'PYTHONPATH': str(self.extracted)})
+        self.assertEqual(result.returncode, 0, result.stderr)
+        self.assertFalse(marker.exists())
+        self.assertTrue((self.extracted / 'example_fonts_3.5.1.pkg').is_file())
 
     def test_exact_flat_payload_receipt_bom_and_no_scripts_for_tar_and_zip(self):
         for is_zip in (False, True):

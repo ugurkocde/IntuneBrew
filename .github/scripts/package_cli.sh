@@ -8,7 +8,7 @@ identifier=$4
 
 # Font recipes are data from the cask, not executable packaging instructions.
 package_fonts() {
-  python3 -B - "$app_name" "$extracted_dir" "$version" "$identifier" "$(dirname "$0")" <<'FONT_PACKAGE_PY'
+  python3 -I -B - "$app_name" "$extracted_dir" "$version" "$identifier" "$(dirname "$0")" <<'FONT_PACKAGE_PY'
 import hashlib
 import json
 import os

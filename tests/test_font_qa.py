@@ -1,6 +1,8 @@
 """Exercise the actual embedded receipt verifier without installing any file."""
 import ast
 import os
+import subprocess
+import shlex
 from pathlib import Path
 import plistlib
 import tempfile
@@ -22,6 +24,20 @@ verify = namespace['verify_fonts']
 
 
 class FontQaTests(unittest.TestCase):
+    def test_actual_shell_verifier_ignores_cwd_and_pythonpath_modules(self):
+        with tempfile.TemporaryDirectory() as folder:
+            root = Path(folder); marker = root / 'shadow-module-ran'
+            (root / 'json.py').write_text('from pathlib import Path\nPath(' + repr(str(marker)) + ').touch()\nraise RuntimeError("archive module executed")\n')
+            text = (ROOT / '.github/scripts/qa-app-test.sh').read_text()
+            function = 'verify_font_install() {' + text.split('verify_font_install() {', 1)[1].split('# Function to test an app', 1)[0]
+            runner = root / 'verify.sh'
+            runner.write_text(function + '\nAPP_JSON="{}"\nDOWNLOAD_PATH=absent.pkg\nFONT_LIBRARY_DIR=' + shlex.quote(str(ROOT / 'lib')) + '\nverify_font_install\n')
+            result = subprocess.run(['bash', str(runner)], cwd=root, env={**os.environ, 'PYTHONPATH': str(root)},
+                                    capture_output=True, text=True, timeout=10)
+            self.assertNotEqual(result.returncode, 0)  # Empty fixture has no receipt.
+            self.assertIn('Font receipt/files verification failed', result.stderr)
+            self.assertFalse(marker.exists())
+
     def setUp(self):
         self.temp = tempfile.TemporaryDirectory(); self.addCleanup(self.temp.cleanup)
         self.root = Path(self.temp.name); self.fonts = self.root / 'Fonts'; self.fonts.mkdir()

@@ -46,7 +46,7 @@ check_disk_space() {
 
 # This checks a throwaway runner's PKG receipt and files, not Intune detection.
 verify_font_install() {
-    python3 -B - "$APP_JSON" "$DOWNLOAD_PATH" "$FONT_LIBRARY_DIR" <<'FONT_QA_PY'
+    python3 -I -B - "$APP_JSON" "$DOWNLOAD_PATH" "$FONT_LIBRARY_DIR" <<'FONT_QA_PY'
 import filecmp
 import json
 from pathlib import Path
