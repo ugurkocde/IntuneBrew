@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-13T02:55:22.038Z",
+  "last_full_scan": "2026-11-13T06:17:19.533Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9529,6 +9529,13 @@
       "status": "verified",
       "source": "file",
       "name": "Unraid USB Creator"
+    },
+    "hack_nerd_font_hack": {
+      "last_checked": "2026-11-13T06:17:19.523Z",
+      "bundle_id": "com.intunebrew.hack_nerd_font_hack",
+      "status": "verified",
+      "source": "file",
+      "name": "Hack Nerd Font (Hack)"
     }
   }
 }
