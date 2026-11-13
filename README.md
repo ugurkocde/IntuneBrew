@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1157-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1158-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -654,21 +654,19 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-11-13T01:03:37.752840Z*
+*Last checked: 2026-11-13T02:54:09.025318Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| beeper | 4.3.284 | 4.3.308 |
-| bitfocus companion | 5.1.2 | 5.1.3 |
-| element | 1.12.34 | 1.12.35 |
-| mellel | 6.8.0 | 6.8.1 |
-| propresenter | 22 | 22.0.1 |
-| rstudio | 2026.10.1+239 | 2026.11.0+203 |
-| superhuman | 1044.0.5 | 1044.0.6 |
+| acorn | 8.7.2 | 8.7.3 |
+| bettertouchtool | 6.1139 | 6.1142 |
+| figma | 126.11.8 | 126.11.9 |
+| github copilot cli | 1.0.109 | 1.0.110 |
 
-24 app updates could not be published. See [catalog sync status](catalog-sync.json).
+23 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
@@ -708,7 +706,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/abbyy_finereader_pdf.png' width='32' height='32'> ABBYY FineReader PDF | 1402.19 |
 | <img src='Logos/ableton_live_lite.png' width='32' height='32'> Ableton Live Lite | 12.4.16 |
 | <img src='Logos/ableton_live_suite.png' width='32' height='32'> Ableton Live Suite | 12.4.16 |
-| <img src='Logos/acorn.png' width='32' height='32'> Acorn | 8.7.2 |
+| <img src='Logos/acorn.png' width='32' height='32'> Acorn | 8.7.3 |
 | <img src='Logos/acronis_true_image.png' width='32' height='32'> Acronis True Image | 29.2 |
 | <img src='Logos/activedock.png' width='32' height='32'> ActiveDock | 2.884 |
 | <img src='Logos/activitywatch.png' width='32' height='32'> ActivityWatch | 0.14.2 |
@@ -802,7 +800,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/berkeley_open_infrastructure_for_network_computing.png' width='32' height='32'> Berkeley Open Infrastructure for Network Computing | 8.2.11 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 5.2.1 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.7 |
-| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.1139 |
+| <img src='Logos/bettertouchtool.png' width='32' height='32'> BetterTouchTool | 6.1142 |
 | <img src='Logos/betterzip.png' width='32' height='32'> BetterZip | 6.1 |
 | <img src='Logos/beyond_compare.png' width='32' height='32'> Beyond Compare | 5.2.8.33052 |
 | <img src='Logos/bezel.png' width='32' height='32'> Bezel | 5.4.1 |
@@ -1042,7 +1040,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/fathom.png' width='32' height='32'> Fathom | 3.13.0 |
 | <img src='Logos/fellow.png' width='32' height='32'> Fellow | 5.7.22 |
 | <img src='Logos/ferdium.png' width='32' height='32'> Ferdium | 7.2.3 |
-| <img src='Logos/figma.png' width='32' height='32'> Figma | 126.11.8 |
+| <img src='Logos/figma.png' width='32' height='32'> Figma | 126.11.9 |
 | <img src='Logos/file_juicer.png' width='32' height='32'> File Juicer | 4.115 |
 | <img src='Logos/filebot.png' width='32' height='32'> FileBot | 5.3.0 |
 | <img src='Logos/filemaker_pro.png' width='32' height='32'> FileMaker Pro | 26.0.3.307 |
@@ -1096,7 +1094,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/gitfinder.png' width='32' height='32'> GitFinder | 1.7.11 |
 | <img src='Logos/gitfox.png' width='32' height='32'> Gitfox | 5.4.2 |
 | <img src='Logos/github_copilot.png' width='32' height='32'> GitHub Copilot | 1.3.0 |
-| ❌ GitHub Copilot CLI | 1.0.109 |
+| ❌ GitHub Copilot CLI | 1.0.110 |
 | <img src='Logos/github_copilot_for_xcode.png' width='32' height='32'> GitHub Copilot for Xcode | 0.51.0 |
 | <img src='Logos/github_desktop.png' width='32' height='32'> GitHub Desktop | 3.6.11-0102f49a |
 | <img src='Logos/gitify.png' width='32' height='32'> Gitify | 8.1.0 |
@@ -1769,6 +1767,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/unite.png' width='32' height='32'> Unite | 6.6 |
 | <img src='Logos/unity_hub.png' width='32' height='32'> Unity Hub | 3.22.6 |
 | <img src='Logos/unnaturalscrollwheels.png' width='32' height='32'> UnnaturalScrollWheels | 1.4.2 |
+| ❌ Unraid USB Creator | v2.0.11.1-unraid.1 |
 | <img src='Logos/updf.png' width='32' height='32'> UPDF | 3.0.0 |
 | <img src='Logos/upscayl.png' width='32' height='32'> Upscayl | 2.15.0 |
 | <img src='Logos/utm.png' width='32' height='32'> UTM | 5.0.8 |

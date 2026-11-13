@@ -1,0 +1,12 @@
+{
+  "name": "Unraid USB Creator",
+  "description": "Home of the Next-Gen Unraid USB Creator, a fork of the Raspberry Pi Imager",
+  "version": "v2.0.11.1-unraid.1",
+  "url": "https://github.com/unraid/usb-creator-next/releases/download/v2.0.11.1-unraid.1/Unraid.USB.Creator-v2.0.11.1-unraid.1.dmg",
+  "vendor_url": "https://github.com/unraid/usb-creator-next/releases/download/v2.0.11.1-unraid.1/Unraid.USB.Creator-v2.0.11.1-unraid.1.dmg",
+  "bundleId": "com.limetech.unraid-usb-creator",
+  "homepage": "https://unraid.net/download/",
+  "homebrew_cask": "unraid-usb-creator",
+  "fileName": "Unraid.USB.Creator-v2.0.11.1-unraid.1.dmg",
+  "sha": "bcb7efa32925d465159f2ae90091a5d5c67be255f8e33f0bafd2fac372e6e02a"
+}

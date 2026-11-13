@@ -9,7 +9,7 @@
   "fileName": "beeper_4.3.308.pkg",
   "type": "app",
   "sha": "8ee1be437d47abf834ab7b5a433e36a714271f1e72040a0f8ae65a9b7dc14021",
-  "previous_version": "4.3.284",
+  "previous_version": "4.3.308",
   "qa_info": {
     "qa_timestamp": "2025-05-16T13:21:44Z",
     "qa_result": "Installation successful and verified",
