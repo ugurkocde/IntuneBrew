@@ -31,5 +31,16 @@
   "packaging_recipe": "font-pkg-v1",
   "packageIdentifier": "com.intunebrew.hack_nerd_font_hack",
   "category": "Developer Tools",
-  "publisher": "ryanoasis"
+  "publisher": "ryanoasis",
+  "qa_info": {
+    "qa_timestamp": "2026-11-13T06:49:56Z",
+    "qa_result": "Installation successful and verified",
+    "download_status": "success",
+    "sha_status": "verified",
+    "install_status": "success",
+    "verify_status": "fonts_verified",
+    "bundle_id_status": "receipt_verified",
+    "installed_version": "3.5.1",
+    "verification_scope": "runner_pkg_receipt_and_files"
+  }
 }
