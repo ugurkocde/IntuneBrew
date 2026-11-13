@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-13T01:04:40.429Z",
+  "last_full_scan": "2026-11-13T02:55:22.038Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9522,6 +9522,13 @@
       "status": "verified",
       "source": "file",
       "name": "Plezy"
+    },
+    "unraid_usb_creator": {
+      "last_checked": "2026-11-13T02:55:22.035Z",
+      "bundle_id": "com.limetech.unraid-usb-creator",
+      "status": "verified",
+      "source": "file",
+      "name": "Unraid USB Creator"
     }
   }
 }
