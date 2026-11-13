@@ -1,1 +1,10 @@
-[]
+[
+  {
+    "issue": 421,
+    "casks": [
+      "glean"
+    ],
+    "recorded_at": "2026-11-13T16:48:31.119340+00:00",
+    "needs_review": false
+  }
+]

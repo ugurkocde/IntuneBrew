@@ -498,6 +498,7 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/github-copilot-app.json",
     "https://formulae.brew.sh/api/cask/plezy.json",
     "https://formulae.brew.sh/api/cask/font-hack-nerd-font.json",
+    "https://formulae.brew.sh/api/cask/glean.json",
 ]
 
 # DMG
