@@ -25,12 +25,28 @@ elif [ -f "/Applications/Jami.app" ]; then
     rm -f "/Applications/Jami.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/cx.ring
+echo "Removing $HOME/Library/Application Scripts/cx.ring..."
+if [ -d "$HOME/Library/Application Scripts/cx.ring" ]; then
+    rm -rf "$HOME/Library/Application Scripts/cx.ring" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/cx.ring" ]; then
+    rm -f "$HOME/Library/Application Scripts/cx.ring" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/jami
 echo "Removing $HOME/Library/Application Support/jami..."
 if [ -d "$HOME/Library/Application Support/jami" ]; then
     rm -rf "$HOME/Library/Application Support/jami" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/jami" ]; then
     rm -f "$HOME/Library/Application Support/jami" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/cx.ring
+echo "Removing $HOME/Library/Containers/cx.ring..."
+if [ -d "$HOME/Library/Containers/cx.ring" ]; then
+    rm -rf "$HOME/Library/Containers/cx.ring" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/cx.ring" ]; then
+    rm -f "$HOME/Library/Containers/cx.ring" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

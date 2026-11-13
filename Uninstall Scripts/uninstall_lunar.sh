@@ -61,6 +61,14 @@ elif [ -f "$HOME/Library/Caches/Lunar" ]; then
     rm -f "$HOME/Library/Caches/Lunar" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/LunarProductIcon.png
+echo "Removing $HOME/Library/Caches/LunarProductIcon.png..."
+if [ -d "$HOME/Library/Caches/LunarProductIcon.png" ]; then
+    rm -rf "$HOME/Library/Caches/LunarProductIcon.png" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/LunarProductIcon.png" ]; then
+    rm -f "$HOME/Library/Caches/LunarProductIcon.png" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HTTPStorages/fyi.lunar.Lunar*
 echo "Removing $HOME/Library/HTTPStorages/fyi.lunar.Lunar*..."
 if [ -d "$HOME/Library/HTTPStorages/fyi.lunar.Lunar*" ]; then

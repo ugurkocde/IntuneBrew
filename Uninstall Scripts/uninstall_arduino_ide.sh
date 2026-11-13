@@ -65,6 +65,14 @@ elif [ -f "$HOME/Library/Arduino15" ]; then
     rm -f "$HOME/Library/Arduino15" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/Arduino IDE
+echo "Removing $HOME/Library/Logs/Arduino IDE..."
+if [ -d "$HOME/Library/Logs/Arduino IDE" ]; then
+    rm -rf "$HOME/Library/Logs/Arduino IDE" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Arduino IDE" ]; then
+    rm -f "$HOME/Library/Logs/Arduino IDE" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/cc.arduino.IDE*.plist
 echo "Removing $HOME/Library/Preferences/cc.arduino.IDE*.plist..."
 if [ -d "$HOME/Library/Preferences/cc.arduino.IDE*.plist" ]; then
