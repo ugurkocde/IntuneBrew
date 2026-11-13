@@ -58,7 +58,7 @@ function Import-RunbookFunction([string]$Name) {
     . ([scriptblock]::Create($definition.Extent.Text.Replace("function $Name", "function script:$Name")))
 }
 foreach ($name in @('ConvertTo-RunbookSecurityConfig', 'Read-BoundedCveContent', 'Invoke-CveDataRequest', 'Get-RunbookCveAssessment', 'New-RunbookAppCandidate',
-        'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Is-NewerVersion', 'Get-IntuneApps', 'Get-AllMacOsApps',
+        'ConvertTo-UnraidRevisionVersion', 'ConvertTo-NumericBundleVersion', 'Compare-NumericBundleVersion', 'Is-NewerVersion', 'Get-IntuneApps', 'Get-AllMacOsApps',
         'Select-LatestAppRecord', 'Convert-VersionToSortable')) { Import-RunbookFunction $name }
 $rb = $sources['IntuneBrew_Runbook.ps1']
 if ($rb.IndexOf('$securityConfig = ConvertTo-RunbookSecurityConfig') -gt $rb.IndexOf('Connect-MgGraph')) { throw 'Security config validated after Graph authentication.' }

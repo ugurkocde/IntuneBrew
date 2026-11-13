@@ -137,6 +137,10 @@ def availability_recovery(i):
 
 def plan(i):
     """Called only for eligible vendor DMGs; never reuses positive metadata."""
+    if i.source_cask == "unraid-usb-creator":
+        # This source must prove its strict URL/build relation and capability,
+        # including when prior catalog text or a checksum happens to match.
+        return Decision("INSPECT", reason="UNRAID_REVISION_REQUIRES_OBSERVATION")
     if (i.prior and _sha(i.declared_sha256) and i.declared_sha256 == i.prior.sha
             and i.url == i.prior.url):
         return Decision("NOOP", i.prior.version, i.prior.sha, reason="SAME_PINNED_ARTIFACT")
@@ -243,6 +247,29 @@ def paren_hex_build_relationship(raw, short, build):
     return None
 
 
+def unraid_revision_relationship(raw, short, build, cask, url, declared, obs_sha):
+    """One checksum-bound vendor spelling; never normalize its detection text."""
+    if cask != "unraid-usb-creator" or not isinstance(raw, str):
+        return None
+    match = re.fullmatch(r"(" + _BOUNDED_COMPONENT + r"(?:\." + _BOUNDED_COMPONENT
+                         + r"){3}),(" + _BOUNDED_COMPONENT + r")", raw)
+    if not match or not _sha(declared) or declared != obs_sha:
+        return None
+    version = f"v{match[1]}-unraid.{match[2]}"
+    expected_url = ("https://github.com/unraid/usb-creator-next/releases/download/"
+                    + version + "/Unraid.USB.Creator-" + version + ".dmg")
+    return ("SOURCE_UNRAID_REVISION" if url == expected_url and short == build == version
+            else None)
+
+
+def _unraid_revision_detection(value):
+    if not isinstance(value, str):
+        return None
+    match = re.fullmatch(r"v(" + _BOUNDED_COMPONENT + r"(?:\." + _BOUNDED_COMPONENT
+                         + r"){3})-unraid\.(" + _BOUNDED_COMPONENT + r")", value)
+    return tuple(int(part) for part in match[1].split(".")) + (int(match[2]),) if match else None
+
+
 def parse_detection(value):
     if not isinstance(value, str) or len(value) > 256:
         return None
@@ -263,7 +290,7 @@ def _stable_ordinal(value):
 def reconcile(i):
     obs = i.observation
     if isinstance(obs, InspectionRefusal):
-        if obs.integrity:
+        if obs.integrity or i.source_cask == "unraid-usb-creator":
             return Decision("HOLD", reason=obs.code)
         # Existing unreadable-artifact behavior, never a newly inferred version.
         return Decision("LEGACY_PASS", i.legacy_version, obs.artifact_sha256,
@@ -275,7 +302,11 @@ def reconcile(i):
     if (not isinstance(i.source_release, str) or not isinstance(obs.short_version, str)
             or not 0 < len(obs.short_version) <= 64 or not obs.short_version.isprintable()):
         return Decision("HOLD", reason="RELATION_UNPROVEN")
-    if i.legacy_version != generic_legacy_truncate(i.source_release):
+    if i.source_cask == "unraid-usb-creator":
+        relation = unraid_revision_relationship(i.source_release, obs.short_version,
+                                               obs.bundle_version, i.source_cask, i.url,
+                                               i.declared_sha256, obs.artifact_sha256)
+    elif i.legacy_version != generic_legacy_truncate(i.source_release):
         relation = "BRANCH_EXACT" if obs.short_version == i.legacy_version else None
     elif obs.short_version == i.legacy_version:
         relation = "EXACT"
@@ -291,7 +322,8 @@ def reconcile(i):
     if relation is None:
         return Decision("HOLD", reason="RELATION_UNPROVEN")
     required = {"RENDER_PLUS": "plus_build", "RENDER_PAREN_BUILD": "decorated_text",
-                "RENDER_CHANNEL": "decorated_text", "SOURCE_PAREN_HEX_BUILD": "paren_hex"}.get(relation)
+                "RENDER_CHANNEL": "decorated_text", "SOURCE_PAREN_HEX_BUILD": "paren_hex",
+                "SOURCE_UNRAID_REVISION": "unraid_revision"}.get(relation)
     if required and required not in i.consumer_caps:
         return Decision("HOLD", relation=relation, reason="CONSUMER_CAPABILITY_PENDING")
     short, digest = obs.short_version, obs.artifact_sha256
@@ -300,6 +332,8 @@ def reconcile(i):
             action = "NOOP" if digest == i.prior.sha and i.url == i.prior.url else "REFRESH"
             return Decision(action, short, digest, relation, "EXACT_TEXT_UNCHANGED", True)
         new, old = parse_detection(short), parse_detection(i.prior.version)
+        if relation == "SOURCE_UNRAID_REVISION":
+            new, old = _unraid_revision_detection(short), _unraid_revision_detection(i.prior.version)
         if relation == "SOURCE_PAREN_HEX_BUILD":
             new = _paren_hex_core(short)
             if old is None:

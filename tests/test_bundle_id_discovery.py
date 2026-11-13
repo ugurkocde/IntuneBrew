@@ -156,6 +156,20 @@ class DiscoveryCollectorTests(unittest.TestCase):
         self.assertEqual(failures[0]['reason'], 'RELATION_UNPROVEN')
         self.assertEqual((len(calls), hashes), (1, 0))
 
+    def test_unraid_real_token_is_held_when_consumer_capability_absent(self):
+        data = fixture('unraid-usb-creator', 'Unraid USB Creator')
+        data['version'] = '2.0.11.1,1'
+        version = 'v2.0.11.1-unraid.1'
+        data['url'] = ('https://github.com/unraid/usb-creator-next/releases/download/'
+                       + version + '/Unraid.USB.Creator-' + version + '.dmg')
+        obs = c.BundleObservation(DIGEST, 'org.example.unraid', version, version)
+        with patch.object(c, 'CATALOG_CONSUMER_CAPABILITIES',
+                          c.CATALOG_CONSUMER_CAPABILITIES - {'unraid_revision'}):
+            raw, _, failures, calls, hashes = self.collect(data, obs)
+        self.assertIsNone(raw)
+        self.assertEqual(failures[0]['reason'], 'CONSUMER_CAPABILITY_PENDING')
+        self.assertEqual((len(calls), hashes), (1, 0))
+
     def test_supplied_observation_does_not_take_plan_noop_or_legacy_shortcut(self):
         info = {'url': 'https://example.test/app.dmg', 'fileName': 'app.dmg',
                 'version': '1.2.3', 'bundleId': 'org.example.fixture'}
