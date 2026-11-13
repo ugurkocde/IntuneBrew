@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-13T08:33:46.147Z",
+  "last_full_scan": "2026-11-13T17:07:15.970Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9536,6 +9536,13 @@
       "status": "verified",
       "source": "file",
       "name": "Hack Nerd Font (Hack)"
+    },
+    "glean_desktop": {
+      "last_checked": "2026-11-13T17:07:15.955Z",
+      "bundle_id": "com.glean.desktop",
+      "status": "verified",
+      "source": "file",
+      "name": "Glean Desktop"
     }
   }
 }
