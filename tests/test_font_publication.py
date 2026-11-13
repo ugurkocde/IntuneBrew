@@ -92,9 +92,9 @@ class FontWorkflowRouteTests(unittest.TestCase):
         branch = textwrap.dedent(workflow.split('            # Font manifests never enter', 1)[1].split('            # List existing versions', 1)[0])
         # Restore the first comment fragment, then execute the exact branch.
         branch = '# Font manifests never enter' + branch
-        for payload, cache_code, build_code, expected in [('valid', 0, 0, 'font-cache'),
-                ('valid', 10, 0, 'font-cache\nfont-build'), ('hostile', 10, 1, 'font-cache\nfont-build'),
-                (None, 1, 0, 'font-cache'), ('absent', 0, 0, 'generic')]:
+        for payload, cache_code, build_code, expected, counts in [('valid', 0, 0, 'font-cache', 'success 1 failed 0'),
+                ('valid', 10, 0, 'font-cache\nfont-build', 'success 1 failed 0'), ('hostile', 10, 1, 'font-cache\nfont-build', 'success 0 failed 1'),
+                (None, 1, 0, 'font-cache', 'success 0 failed 1'), ('absent', 0, 0, 'generic', 'success 0 failed 0')]:
             with self.subTest(payload=payload, cache=cache_code), tempfile.TemporaryDirectory() as folder:
                 root = Path(folder); (root / 'Apps').mkdir(); (root / 'bin').mkdir(); (root / '.github/scripts').mkdir(parents=True)
                 data = {} if payload == 'absent' else {'font_payload': payload}
@@ -104,12 +104,13 @@ class FontWorkflowRouteTests(unittest.TestCase):
                 (root / 'bin/python').chmod(0o755)
                 (root / '.github/scripts/package_cli.sh').write_text('#!/bin/bash\necho font-build >> "$TRACE"\nexit ' + str(build_code) + '\n')
                 script = root / 'route.sh'
-                script.write_text('set -euo pipefail\nSUCCESSFUL_APPS=()\nFAILED_APPS=()\nERROR_LOG=()\nfor app_name in example_fonts; do\n' + branch + '\necho generic >> "$TRACE"\ndone\n')
+                script.write_text('set -euo pipefail\nSUCCESSFUL_APPS=()\nFAILED_APPS=()\nERROR_LOG=()\nfor app_name in example_fonts; do\n' + branch + '\necho generic >> "$TRACE"\ndone\n' + 'echo "success ${#SUCCESSFUL_APPS[@]} failed ${#FAILED_APPS[@]}" > "$TRACE.state"\n')
                 import os
                 result = subprocess.run(['bash', str(script)], env={**os.environ, 'WORKSPACE_DIR': str(root),
                     'TRACE': str(trace), 'PATH': str(root / 'bin') + ':' + os.environ['PATH']}, capture_output=True, text=True)
                 self.assertEqual(result.returncode, 0, result.stderr)
                 self.assertEqual(trace.read_text().strip(), expected)
+                self.assertEqual(Path(str(trace) + '.state').read_text().strip(), counts)
 
 
 if __name__ == '__main__': unittest.main()

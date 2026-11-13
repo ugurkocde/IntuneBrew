@@ -2039,7 +2039,13 @@ def _recover_vendor_stable(app_info, prior, raw_cask, cask):
 
 def discover_missing_bundle_id(app_info, prior, raw_cask, cask):
     """Inspect a cask's exact root app only when no effective identity is known."""
-    if (app_info.get('bundleId') or (isinstance(prior, dict) and prior.get('bundleId'))
+    prior_bundle_id = prior.get('bundleId') if isinstance(prior, dict) else None
+    # The regular-cask merge retires generated font receipts. They are not a
+    # vendor app identity and must not suppress discovery after that transition.
+    if (isinstance(prior, dict) and 'font_payload' in prior and isinstance(app_info.get('name'), str)
+            and prior_bundle_id == 'com.intunebrew.' + sanitize_filename(app_info['name'])):
+        prior_bundle_id = None
+    if (app_info.get('bundleId') or prior_bundle_id
             or app_info.get('homebrew_formula') or app_info.get('type')
             or cask in VENDOR_STABLE_SOURCES or not isinstance(raw_cask, dict)
             or raw_cask.get('deprecated') or raw_cask.get('disabled')
