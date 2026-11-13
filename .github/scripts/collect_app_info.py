@@ -2039,7 +2039,13 @@ def _recover_vendor_stable(app_info, prior, raw_cask, cask):
 
 def discover_missing_bundle_id(app_info, prior, raw_cask, cask):
     """Inspect a cask's exact root app only when no effective identity is known."""
-    if (app_info.get('bundleId') or (isinstance(prior, dict) and prior.get('bundleId'))
+    prior_bundle_id = prior.get('bundleId') if isinstance(prior, dict) else None
+    # The regular-cask merge retires generated font receipts. They are not a
+    # vendor app identity and must not suppress discovery after that transition.
+    if (isinstance(prior, dict) and 'font_payload' in prior and isinstance(app_info.get('name'), str)
+            and prior_bundle_id == 'com.intunebrew.' + sanitize_filename(app_info['name'])):
+        prior_bundle_id = None
+    if (app_info.get('bundleId') or prior_bundle_id
             or app_info.get('homebrew_formula') or app_info.get('type')
             or cask in VENDOR_STABLE_SOURCES or not isinstance(raw_cask, dict)
             or raw_cask.get('deprecated') or raw_cask.get('disabled')
@@ -2518,6 +2524,57 @@ def get_published_download_url(data, cask_token):
     return data["url"]
 
 
+def font_only_payload(raw_cask):
+    """Accept declarative font-only casks; never interpret cask Ruby or zap IDs."""
+    artifacts = raw_cask.get('artifacts', [])
+    if not isinstance(artifacts, list) or not any(isinstance(a, dict) and 'font' in a for a in artifacts):
+        return None
+    if any(not isinstance(a, dict) or set(a) - {'font', 'zap', 'target'} for a in artifacts):
+        return None  # Mixed app/installer recipes retain their existing path.
+    checksum = raw_cask.get('sha256')
+    url = raw_cask.get('url')
+    parsed = urlparse(url) if isinstance(url, str) else None
+    if (not isinstance(checksum, str) or not re.fullmatch(r'[0-9a-f]{64}', checksum)
+            or parsed is None or parsed.scheme != 'https' or not parsed.hostname
+            or parsed.username is not None or parsed.password is not None or parsed.fragment
+            or any(c.isspace() or ord(c) < 32 for c in url)
+            or not parsed.path.lower().endswith(('.zip', '.tar.xz', '.tar.gz', '.tgz', '.tar.bz2', '.tbz'))
+            or raw_cask.get('variations') or raw_cask.get('container')
+            or not isinstance(raw_cask.get('url_specs', {}), dict)
+            or set(raw_cask.get('url_specs', {})) - {'verified'}):
+        raise ValueError('Font cask requires a fixed checksum and plain HTTPS archive')
+    version = raw_cask.get('version')
+    names = raw_cask.get('name')
+    if (not isinstance(version, str) or not re.fullmatch(r'[0-9A-Za-z][0-9A-Za-z.+-]{0,63}', version)
+            or not isinstance(names, list) or not names or not isinstance(names[0], str)
+            or not re.fullmatch(r'[a-z0-9_]{1,64}', sanitize_filename(names[0]))):
+        raise ValueError('Font cask name or version is unsupported')
+    files = []
+    for artifact in artifacts:
+        if 'font' not in artifact:
+            if 'target' in artifact:
+                raise ValueError('Font target requires a declared font')
+            continue
+        value = artifact['font']
+        if not isinstance(value, list) or len(value) != 1 or not isinstance(value[0], str):
+            raise ValueError('Font artifacts must declare one unmodified relative file')
+        path = value[0]
+        # The cask API includes its generated per-user default target. Never
+        # execute/interpolate it or accept a renamed/custom target. Our PKG
+        # deliberately uses the approved system-wide /Library/Fonts location.
+        if 'target' in artifact and artifact['target'] != '/$HOME/Library/Fonts/' + path.rsplit('/', 1)[-1]:
+            raise ValueError('Custom font targets are unsupported')
+        parts = path.split('/')
+        if (not 1 <= len(parts) <= 8
+                or not all(re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9 ._+-]{0,127}', part) for part in parts)
+                or not path.lower().endswith(('.ttf', '.otf'))):
+            raise ValueError('Unsupported font payload path')
+        files.append(path)
+    if not 1 <= len(files) <= 256 or len({p.rsplit('/', 1)[-1].casefold() for p in files}) != len(files):
+        raise ValueError('Font payload count or flattened names are ambiguous')
+    return {'source_url': url, 'archive_sha256': checksum, 'files': files}
+
+
 def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, is_pkg_in_pkg=False, is_pkg=False):
     cask_token = get_cask_token(json_url)
     if json_url in cask_cache:
@@ -2614,6 +2671,10 @@ def get_homebrew_app_info(json_url, needs_packaging=False, is_pkg_in_dmg=False, 
 
     if needs_packaging:
         app_info["type"] = "app"
+        fonts = font_only_payload(data) if not is_formula else None
+        if fonts is not None:
+            app_info['font_payload'] = fonts
+            app_info['bundleId'] = 'com.intunebrew.' + sanitize_filename(app_info['name'])
     elif is_pkg_in_dmg:
         app_info["type"] = "pkg_in_dmg"
     elif is_pkg_in_pkg:
@@ -2880,8 +2941,18 @@ def main():
                     # These assignments must stay below the fileName block, which
                     # branches on the previous type and would change fileName handling
                     # if it saw the refreshed value.
+                    previous_font_entry = "font_payload" in existing_data
                     existing_data["type"] = "app"
                     existing_data["vendor_url"] = app_info["vendor_url"]
+                    if 'font_payload' in app_info:
+                        existing_data['font_payload'] = app_info['font_payload']
+                        existing_data['bundleId'] = app_info['bundleId']
+                    else:
+                        existing_data.pop('font_payload', None)
+                        if previous_font_entry:
+                            for field in ('bundleId', 'packageIdentifier'):
+                                if existing_data.get(field) == 'com.intunebrew.' + sanitize_filename(display_name):
+                                    existing_data.pop(field, None)
 
                     # Packaging calculates the SHA of the final PKG. Hashing the
                     # vendor archive here downloads it twice and temporarily pairs
@@ -2932,8 +3003,11 @@ def main():
                     # processed: these casks are vendor-served DMGs, so the fresh app_info
                     # carries no type key at all and a stale repackaging type is dropped.
                     for key in existing_data:
+                        if (key in {'bundleId', 'packageIdentifier'} and 'font_payload' in existing_data
+                                and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
+                            continue  # A font receipt is not a vendor app bundle ID.
                         if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason",
-                                       "type", "homebrew_cask", "vendor_url"]:
+                                       "type", "homebrew_cask", "vendor_url", "font_payload"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url, sha and previous_version
@@ -3008,8 +3082,11 @@ def main():
                     # type, homebrew_cask and vendor_url are owned by the list being
                     # processed, so the fresh "pkg_in_pkg" values win over whatever is on disk.
                     for key in existing_data:
+                        if (key in {'bundleId', 'packageIdentifier'} and 'font_payload' in existing_data
+                                and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
+                            continue
                         if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason",
-                                       "type", "homebrew_cask", "vendor_url"]:
+                                       "type", "homebrew_cask", "vendor_url", "font_payload"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version
@@ -3077,8 +3154,11 @@ def main():
                     # type, homebrew_cask and vendor_url are owned by the list being
                     # processed, so the fresh "pkg" values win over whatever is on disk.
                     for key in existing_data:
+                        if (key in {'bundleId', 'packageIdentifier'} and 'font_payload' in existing_data
+                                and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
+                            continue
                         if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason",
-                                       "type", "homebrew_cask", "vendor_url"]:
+                                       "type", "homebrew_cask", "vendor_url", "font_payload"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url, sha and previous_version
@@ -3135,8 +3215,11 @@ def main():
                     # type, homebrew_cask and vendor_url are owned by the list being
                     # processed, so the fresh "pkg_in_dmg" values win over whatever is on disk.
                     for key in existing_data:
+                        if (key in {'bundleId', 'packageIdentifier'} and 'font_payload' in existing_data
+                                and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
+                            continue
                         if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason",
-                                       "type", "homebrew_cask", "vendor_url"]:
+                                       "type", "homebrew_cask", "vendor_url", "font_payload"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version

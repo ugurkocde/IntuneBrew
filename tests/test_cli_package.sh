@@ -43,3 +43,4 @@ if bash "$script" codex_cli "$fixture/missing" 1 com.intunebrew.codex_cli; then
   exit 1
 fi
 printf 'CLI package layout checks passed\n'
+python3 "$(dirname "$0")/test_font_package.py"

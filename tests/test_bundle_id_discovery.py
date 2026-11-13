@@ -77,6 +77,41 @@ class DiscoveryCollectorTests(unittest.TestCase):
                 self.assertEqual((failures, hashes), ([], 0))
                 self.assertTrue(c.version_evidence[-1]['bundleIdDiscovered'])
 
+    def test_retired_generated_font_receipt_allows_real_dmg_discovery(self):
+        data = fixture()
+        prior = {'name': 'Future One', 'homebrew_cask': 'future-one', 'version': '1.2.2',
+                 'url': 'https://example.test/old-font.pkg', 'fileName': 'old-font.pkg',
+                 'bundleId': 'com.intunebrew.future_one', 'packageIdentifier': 'com.intunebrew.future_one',
+                 'type': 'app', 'font_payload': {'files': ['Old.ttf']}, 'sha': 'b' * 64}
+        obs = c.BundleObservation(DIGEST, 'org.example.future', '1.2.3', '7')
+        raw, _, failures, calls, hashes = self.collect(data, obs, prior)
+        result = json.loads(raw)
+        self.assertEqual(result['bundleId'], obs.bundle_id)
+        self.assertEqual((result['url'], result['version'], result['sha']), (data['url'], '1.2.3', DIGEST))
+        for key in ['font_payload', 'packageIdentifier', 'type']:
+            self.assertNotIn(key, result)
+        self.assertEqual((failures, hashes), ([], 0))
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(calls[0].args, (data['url'], None, DIGEST))
+        self.assertEqual(calls[0].kwargs['app_name'], 'Future One.app')
+        self.assertTrue(c.version_evidence[-1]['bundleIdDiscovered'])
+
+    def test_non_generated_prior_identity_is_kept_when_font_metadata_retires(self):
+        data = fixture()
+        prior = {'name': 'Future One', 'homebrew_cask': 'future-one', 'version': '1.2.2',
+                 'url': 'https://example.test/old-font.pkg', 'fileName': 'old-font.pkg',
+                 'bundleId': 'org.example.known', 'font_payload': {'files': ['Old.ttf']}, 'sha': 'b' * 64}
+        obs = c.BundleObservation(DIGEST, 'org.example.known', '1.2.3', '7')
+        raw, _, failures, calls, hashes = self.collect(data, obs, prior)
+        result = json.loads(raw)
+        self.assertEqual(result['bundleId'], prior['bundleId'])
+        self.assertNotIn('font_payload', result)
+        self.assertEqual((failures, hashes), ([], 0))
+        self.assertEqual(len(calls), 1)
+        self.assertEqual(calls[0].args[1], 'org.example.known')
+        self.assertNotIn('app_name', calls[0].kwargs)
+        self.assertNotIn('bundleIdDiscovered', c.version_evidence[-1])
+
     def test_prior_or_cask_identity_keeps_normal_inspection_path(self):
         for prior_id in [True, False]:
             with self.subTest(prior=prior_id):

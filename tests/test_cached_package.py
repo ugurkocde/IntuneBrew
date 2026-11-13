@@ -32,6 +32,58 @@ def interrupted_payload():
 
 
 class CachedPackageTests(unittest.TestCase):
+    def font_fixture(self):
+        checksum = hashlib.sha256(PAYLOAD).hexdigest()
+        current = {'version': '2', 'type': 'app', 'bundleId': 'com.intunebrew.app',
+                   'font_payload': {'source_url': 'https://vendor.invalid/font.zip',
+                                    'archive_sha256': 'a' * 64, 'files': ['A.ttf']}}
+        previous = {**current, 'font_payload': dict(current['font_payload']), 'sha': checksum,
+                    'fileName': 'app_2.pkg', 'packaging_recipe': MODULE.FONT_RECIPE,
+                    'packageIdentifier': current['bundleId'],
+                    'url': 'https://intunebrew.blob.core.windows.net/pkg/fonts/app/' + checksum + '/app_2.pkg'}
+        return current, previous
+
+    def test_font_cache_reuse_hashes_whole_content_and_preserves_identity(self):
+        current, previous = self.font_fixture(); session = session_for()
+        result = MODULE.reuse_font_package(current, previous, 'app', session)
+        self.assertEqual(result['url'], previous['url'])
+        self.assertEqual(result['sha'], hashlib.sha256(PAYLOAD).hexdigest())
+        self.assertEqual(result['font_payload'], current['font_payload'])
+        session.get.assert_called_once_with(previous['url'], stream=True, timeout=(20, 120))
+        self.assertNotIn('url', current)
+
+    def test_font_cache_identity_changes_rebuild_without_network(self):
+        for changed in ['checksum', 'files', 'recipe', 'receipt', 'version', 'legacy-url', 'missing-sha']:
+            current, previous = self.font_fixture()
+            if changed == 'checksum': current['font_payload']['archive_sha256'] = 'b' * 64
+            elif changed == 'files': current['font_payload']['files'] = ['B.ttf']
+            elif changed == 'recipe': previous['packaging_recipe'] = 'old'
+            elif changed == 'receipt': previous['packageIdentifier'] = 'com.example.other'
+            elif changed == 'version': previous['version'] = '1'
+            elif changed == 'legacy-url': previous['url'] = URL
+            else: previous['sha'] = None
+            session = session_for()
+            with self.subTest(changed=changed):
+                self.assertIsNone(MODULE.reuse_font_package(current, previous, 'app', session))
+                session.get.assert_not_called()
+
+    def test_font_cache_corruption_and_malformed_manifest_hold(self):
+        current, previous = self.font_fixture()
+        for session in [session_for(b'xar!' + b'wrong' * 20), session_for(error=RuntimeError('read failed'))]:
+            with self.assertRaises((ValueError, RuntimeError)):
+                MODULE.reuse_font_package(current, previous, 'app', session)
+        for bad in [None, {}, {'source_url': 'http://bad', 'archive_sha256': 'a' * 64, 'files': ['../bad.ttf']}]:
+            broken = {**current, 'font_payload': bad}; session = session_for()
+            with self.assertRaises(ValueError): MODULE.reuse_font_package(broken, previous, 'app', session)
+            session.get.assert_not_called()
+
+    def test_generic_reuse_refuses_any_font_manifest_on_either_side(self):
+        current, previous = self.font_fixture()
+        for left, right in [(current, {}), ({}, previous), (current, previous)]:
+            session = session_for()
+            with self.assertRaises(ValueError): MODULE.update_cached_package(left, right, URL, session)
+            session.get.assert_not_called()
+
     def test_vendor_archive_hash_is_never_reused(self):
         original = {'version': '2', 'url': 'https://vendor.invalid/app.zip', 'fileName': 'app.zip', 'sha': 'a' * 64}
         current = {**original, 'type': 'app'}

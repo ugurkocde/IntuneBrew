@@ -3,6 +3,8 @@
 # This script performs quality assurance testing for macOS applications
 # It installs the app, verifies the installation, and updates the JSON file with QA information
 
+FONT_LIBRARY_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/../.." && pwd)/lib"
+
 # Parse command line arguments
 FORCE_ALL=false
 BATCH_SIZE=10
@@ -40,6 +42,87 @@ check_disk_space() {
         return 1
     fi
     return 0
+}
+
+# This checks a throwaway runner's PKG receipt and files, not Intune detection.
+verify_font_install() {
+    python3 -I -B - "$APP_JSON" "$DOWNLOAD_PATH" "$FONT_LIBRARY_DIR" <<'FONT_QA_PY'
+import filecmp
+import json
+from pathlib import Path
+import plistlib
+import re
+import stat
+import subprocess
+import sys
+import tempfile
+import xml.etree.ElementTree as ET
+
+
+def verify_fonts(data, package, installed_root=Path('/Library/Fonts')):
+    from font_payload import file_facts, inspect_component
+    identifier, version = data['bundleId'], data['version']
+    if (not re.fullmatch(r'com\.intunebrew\.[a-z0-9_]{1,64}', identifier)
+            or not re.fullmatch(r'[0-9A-Za-z][0-9A-Za-z.+-]{0,63}', version)):
+        raise ValueError('Invalid font receipt identity')
+    files = data['font_payload']['files']
+    if not isinstance(files, list) or not 1 <= len(files) <= 256:
+        raise ValueError('Invalid font payload')
+    for path in files:
+        if (not isinstance(path, str) or not 1 <= len(path.split('/')) <= 8
+                or not all(re.fullmatch(r'[A-Za-z0-9][A-Za-z0-9 ._+-]{0,127}', p) for p in path.split('/'))
+                or not path.lower().endswith(('.ttf', '.otf'))):
+            raise ValueError('Invalid font path')
+    names = [Path(path).name for path in files]
+    if len({n.casefold() for n in names}) != len(names):
+        raise ValueError('Duplicate font name')
+    receipt = plistlib.loads(subprocess.check_output(['pkgutil', '--pkg-info-plist', identifier]))
+    if (receipt.get('pkg-version') != version or receipt.get('volume') != '/'
+            or receipt.get('install-location', '').strip('/') != 'Library/Fonts'):
+        raise ValueError('Font receipt mismatch')
+    listed = subprocess.check_output(['pkgutil', '--files', identifier], text=True).splitlines()
+    listed = {p[2:] if p.startswith('./') else p for p in listed if p not in ('.', './')}
+    if listed != set(names):
+        raise ValueError('Receipt file list mismatch')
+    with tempfile.TemporaryDirectory(prefix='font-qa-') as temp:
+        expanded = Path(temp) / 'package'
+        subprocess.run(['pkgutil', '--expand-full', str(package), str(expanded)], check=True,
+                       stdout=subprocess.DEVNULL)
+        raw = Path(temp) / 'raw'
+        subprocess.run(['pkgutil', '--expand', str(package), str(raw)], check=True, stdout=subprocess.DEVNULL)
+        info = ET.parse(expanded / 'PackageInfo').getroot()
+        if (info.get('identifier') != identifier or info.get('version') != version
+                or info.get('install-location') != '/Library/Fonts' or list(expanded.rglob('Scripts'))):
+            raise ValueError('Font package identity or scripts mismatch')
+        payload = expanded / 'Payload'
+        if {p.name for p in payload.iterdir()} != set(names):
+            raise ValueError('Font package file set mismatch')
+        facts = {name: file_facts(payload / name) for name in names}
+        inspect_component(raw, facts, identifier, version)
+        if installed_root.is_symlink() or not installed_root.is_dir():
+            raise ValueError('Installed font directory is not regular')
+        for name in names:
+            installed, source = installed_root / name, payload / name
+            mode = installed.lstat()
+            if (not stat.S_ISREG(mode.st_mode) or stat.S_IMODE(mode.st_mode) != 0o644
+                    or mode.st_uid != 0 or mode.st_gid != 0 or source.is_symlink()
+                    or not source.is_file() or not filecmp.cmp(installed, source, shallow=False)):
+                raise ValueError('Installed font bytes, ownership or mode mismatch')
+            attributes = subprocess.check_output(['xattr', str(installed)], text=True).splitlines()
+            if {'com.apple.ResourceFork', 'com.apple.FinderInfo'} & set(attributes):
+                raise ValueError('Installed font has resource fork or FinderInfo metadata')
+    return {'verify_status': 'fonts_verified', 'bundle_id_status': 'receipt_verified',
+            'installed_version': receipt['pkg-version'], 'verification_scope': 'runner_pkg_receipt_and_files',
+            'qa_result': 'Installation successful and verified'}
+
+
+sys.path.insert(0, sys.argv[3])
+try:
+    print(json.dumps(verify_fonts(json.loads(sys.argv[1]), Path(sys.argv[2]))))
+except Exception:
+    print('Font receipt/files verification failed', file=sys.stderr)
+    sys.exit(1)
+FONT_QA_PY
 }
 
 # Function to test an app
@@ -209,6 +292,20 @@ test_app() {
         QA_INFO=$(echo "$QA_INFO" | jq '.sha_status = "not_provided"')
     fi
 
+    # Font QA always requires the catalog PKG checksum before installing it.
+    if echo "$APP_JSON" | jq -e 'has("font_payload")' >/dev/null; then
+        if [ "$FILE_TYPE" != "pkg" ] || ! [[ "$APP_SHA" =~ ^[a-f0-9]{64}$ ]]; then
+            QA_INFO=$(echo "$QA_INFO" | jq '.verify_status = "font_package_invalid" | .qa_result = "Font package or checksum missing"')
+            FAILED_INSTALLS+=("$APP_NAME - Font package or checksum missing")
+            cd "$GITHUB_WORKSPACE"
+            rm -rf "$TEMP_DIR"
+            jq --argjson qa_info "$QA_INFO" '.qa_info = $qa_info' "$APP_JSON_PATH" >"${APP_JSON_PATH}.tmp"
+            mv "${APP_JSON_PATH}.tmp" "$APP_JSON_PATH"
+            echo "CHANGES_MADE=true" >>$GITHUB_ENV
+            return 1
+        fi
+    fi
+
     # Install the app based on file type
     INSTALL_SUCCESS=false
 
@@ -333,7 +430,15 @@ test_app() {
     fi
 
     # Verify installation if installation was successful
-    if [ "$INSTALL_SUCCESS" = true ]; then
+    if [ "$INSTALL_SUCCESS" = true ] && echo "$APP_JSON" | jq -e 'has("font_payload")' >/dev/null; then
+        if FONT_QA=$(verify_font_install); then
+            QA_INFO=$(echo "$QA_INFO" | jq --argjson font "$FONT_QA" '. + $font')
+            SUCCESSFUL_INSTALLS+=("$APP_NAME")
+        else
+            QA_INFO=$(echo "$QA_INFO" | jq '.verify_status = "fonts_verification_failed" | .qa_result = "Font receipt or installed files mismatch"')
+            FAILED_INSTALLS+=("$APP_NAME - Font receipt or installed files mismatch")
+        fi
+    elif [ "$INSTALL_SUCCESS" = true ]; then
         echo "🔍 Verifying installation..."
 
         # Find the app in Applications folder
