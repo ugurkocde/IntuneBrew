@@ -29,5 +29,7 @@
   },
   "sha": "83688e0af9a27772a63eb558d98a3d0892dfd91e19529f693de63d86de49a12b",
   "packaging_recipe": "font-pkg-v1",
-  "packageIdentifier": "com.intunebrew.hack_nerd_font_hack"
+  "packageIdentifier": "com.intunebrew.hack_nerd_font_hack",
+  "category": "Developer Tools",
+  "publisher": "ryanoasis"
 }
