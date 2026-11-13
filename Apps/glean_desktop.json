@@ -1,0 +1,13 @@
+{
+  "name": "Glean Desktop",
+  "description": "Workplace search and AI assistant",
+  "version": "1.2026.29912",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/glean_desktop_1.2026.29912.pkg",
+  "vendor_url": "https://storage.googleapis.com/glean-downloads/glean-desktop-app/Glean-darwin-universal-1.2026.29912.zip",
+  "bundleId": "com.glean.desktop",
+  "homepage": "https://www.glean.com/glean-for-desktop",
+  "homebrew_cask": "glean",
+  "fileName": "glean_desktop_1.2026.29912.pkg",
+  "type": "app",
+  "sha": "55b3a01340ea7344b4c7878d1077f1e5575f2564abda9998f8a81a2f583949bd"
+}
