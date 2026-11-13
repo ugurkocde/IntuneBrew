@@ -1,33 +1,89 @@
 {
-  "lastChecked": "2026-11-13T02:54:09.025318Z",
+  "lastChecked": "2026-11-13T06:16:07.307683Z",
   "updates": [
     {
-      "appName": "acorn",
-      "previousVersion": "8.7.2",
-      "newVersion": "8.7.3",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/acorn.png"
+      "appName": "chatgpt",
+      "previousVersion": "26.1106.51428",
+      "newVersion": "26.1111.21308",
+      "changelog": "https://help.openai.com/en/articles/9703738-macos-app-release-notes",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/chatgpt.png"
     },
     {
-      "appName": "bettertouchtool",
-      "previousVersion": "6.1139",
-      "newVersion": "6.1142",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bettertouchtool.png"
+      "appName": "claude",
+      "previousVersion": "5.11492.0",
+      "newVersion": "5.11492.2",
+      "changelog": "https://docs.anthropic.com/en/release-notes/claude-apps",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/claude.png"
     },
     {
-      "appName": "figma",
-      "previousVersion": "126.11.8",
-      "newVersion": "126.11.9",
-      "changelog": "https://help.figma.com/hc/en-us/articles/360038511533-Release-Notes",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/figma.png"
+      "appName": "codex cli",
+      "previousVersion": "0.167.2",
+      "newVersion": "0.168.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/codex_cli.png"
     },
     {
-      "appName": "github copilot cli",
-      "previousVersion": "1.0.109",
-      "newVersion": "1.0.110",
+      "appName": "douyin",
+      "previousVersion": "8.7.0",
+      "newVersion": "8.8.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/github_copilot_cli.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/douyin.png"
+    },
+    {
+      "appName": "github copilot",
+      "previousVersion": "1.3.0",
+      "newVersion": "1.4.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/github_copilot.png"
+    },
+    {
+      "appName": "kiro",
+      "previousVersion": "1.4.154",
+      "newVersion": "1.4.178",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/kiro.png"
+    },
+    {
+      "appName": "microsoft edge",
+      "previousVersion": "157.0.4341.46",
+      "newVersion": "157.0.4341.57",
+      "changelog": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_edge.png"
+    },
+    {
+      "appName": "notion",
+      "previousVersion": "7.43.0",
+      "newVersion": "7.43.2",
+      "changelog": "https://www.notion.so/desktop-release-notes",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/notion.png"
+    },
+    {
+      "appName": "postman",
+      "previousVersion": "12.34.0",
+      "newVersion": "12.36.3",
+      "changelog": "https://www.postman.com/release-notes/postman-app/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/postman.png"
+    },
+    {
+      "appName": "sunsama",
+      "previousVersion": "3.4.15",
+      "newVersion": "3.5.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sunsama.png"
+    },
+    {
+      "appName": "tailscale",
+      "previousVersion": "1.104.6",
+      "newVersion": "1.104.7",
+      "changelog": "https://tailscale.com/changelog",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/tailscale.png"
+    },
+    {
+      "appName": "warp",
+      "previousVersion": "0.2026.11.04.08.17.01",
+      "newVersion": "0.2026.11.11.08.17.01",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/warp.png"
     }
   ]
 }

@@ -1,0 +1,33 @@
+{
+  "name": "Hack Nerd Font (Hack)",
+  "description": null,
+  "version": "3.5.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/fonts/hack_nerd_font_hack/83688e0af9a27772a63eb558d98a3d0892dfd91e19529f693de63d86de49a12b/hack_nerd_font_hack_3.5.1.pkg",
+  "vendor_url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/Hack.tar.xz",
+  "bundleId": "com.intunebrew.hack_nerd_font_hack",
+  "homepage": "https://github.com/ryanoasis/nerd-fonts",
+  "homebrew_cask": "font-hack-nerd-font",
+  "fileName": "hack_nerd_font_hack_3.5.1.pkg",
+  "type": "app",
+  "font_payload": {
+    "source_url": "https://github.com/ryanoasis/nerd-fonts/releases/download/v3.5.1/Hack.tar.xz",
+    "archive_sha256": "cdd389472e10e2261520140ff1b382b4f8a226af5fd0b2735b975d31151d9c3c",
+    "files": [
+      "HackNerdFont-Bold.ttf",
+      "HackNerdFont-BoldItalic.ttf",
+      "HackNerdFont-Italic.ttf",
+      "HackNerdFont-Regular.ttf",
+      "HackNerdFontMono-Bold.ttf",
+      "HackNerdFontMono-BoldItalic.ttf",
+      "HackNerdFontMono-Italic.ttf",
+      "HackNerdFontMono-Regular.ttf",
+      "HackNerdFontPropo-Bold.ttf",
+      "HackNerdFontPropo-BoldItalic.ttf",
+      "HackNerdFontPropo-Italic.ttf",
+      "HackNerdFontPropo-Regular.ttf"
+    ]
+  },
+  "sha": "83688e0af9a27772a63eb558d98a3d0892dfd91e19529f693de63d86de49a12b",
+  "packaging_recipe": "font-pkg-v1",
+  "packageIdentifier": "com.intunebrew.hack_nerd_font_hack"
+}

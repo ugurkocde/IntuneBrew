@@ -9,7 +9,7 @@
   "fileName": "acorn_8.7.3.pkg",
   "type": "app",
   "sha": "463a41322525e1d28238515398f5d31348aa3af65c4500033d342136c6569ce5",
-  "previous_version": "8.7.2",
+  "previous_version": "8.7.3",
   "qa_info": {
     "qa_timestamp": "2025-05-12T07:44:24Z",
     "qa_result": "Installation successful and verified",
