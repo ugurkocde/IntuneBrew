@@ -18,7 +18,7 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <p>
     <a href="#-supported-applications">
       <img src="https://img.shields.io/badge/Apps_Available-1157-2ea44f?style=flat" alt="TotalApps"/>
     </a>
@@ -653,30 +653,20 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-11-12T20:11:52.540999Z*
+*Last checked: 2026-11-13T01:03:37.752840Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| arduino ide | 2.3.10 | 2.3.11 |
-| asana | 2.10.6 | 2.11.0 |
-| claude | 5.1231.2 | 5.11492.0 |
-| dia | 1.56.2 | 1.57.1 |
-| dockview | 2.6.1 | 2.6.3 |
-| langdock | 1.1.3 | 1.1.4 |
-| multitouch | 2.0.6 | 2.0.7 |
-| obsidian | 1.15.0 | 1.15.1 |
-| onedrive | 26.189.0928.0009 | 26.198.1011.0006 |
-| proton drive | 3.1.0 | 3.1.1 |
-| raycast | 2.11.1.0 | 2.12.0.0 |
-| remnote | 1.30.0 | 1.30.2 |
-| rocketchat | 4.19.2 | 4.19.3 |
-| superduper | 4.0.10 | 4.0.11 |
-| superlist | 1.58.5 | 1.59.0 |
-| tuple | 3.3.23 | 3.4.0 |
-| whatsapp | 26.45.13 | 26.45.21 |
-| whimsical | 2026.14.3 | 2026.14.4 |
+| beeper | 4.3.284 | 4.3.308 |
+| bitfocus companion | 5.1.2 | 5.1.3 |
+| element | 1.12.34 | 1.12.35 |
+| mellel | 6.8.0 | 6.8.1 |
+| propresenter | 22 | 22.0.1 |
+| rstudio | 2026.10.1+239 | 2026.11.0+203 |
+| superhuman | 1044.0.5 | 1044.0.6 |
 
 24 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
@@ -808,7 +798,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/bdash.png' width='32' height='32'> Bdash | 1.35.4 |
 | <img src='Logos/beaver_notes.png' width='32' height='32'> Beaver Notes | 4.4.0 |
 | <img src='Logos/beekeeper_studio.png' width='32' height='32'> Beekeeper Studio | 6.2.2 |
-| <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.3.284 |
+| <img src='Logos/beeper.png' width='32' height='32'> Beeper | 4.3.308 |
 | <img src='Logos/berkeley_open_infrastructure_for_network_computing.png' width='32' height='32'> Berkeley Open Infrastructure for Network Computing | 8.2.11 |
 | <img src='Logos/betterdisplay.png' width='32' height='32'> BetterDisplay | 5.2.1 |
 | <img src='Logos/bettermouse.png' width='32' height='32'> BetterMouse | 1.7 |
@@ -823,7 +813,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/birdfont.png' width='32' height='32'> BirdFont | 6.15.1 |
 | <img src='Logos/biscuit.png' width='32' height='32'> Biscuit | 2.2.11 |
 | <img src='Logos/bitbox.png' width='32' height='32'> BitBox | 4.52.0 |
-| <img src='Logos/bitfocus_companion.png' width='32' height='32'> Bitfocus Companion | 5.1.2 |
+| <img src='Logos/bitfocus_companion.png' width='32' height='32'> Bitfocus Companion | 5.1.3 |
 | <img src='Logos/bitrix24.png' width='32' height='32'> Bitrix24 | 24.0.37.92 |
 | <img src='Logos/bitwarden.png' width='32' height='32'> Bitwarden | 2026.10.4 |
 | <img src='Logos/bitwig_studio.png' width='32' height='32'> Bitwig Studio | 6.1.7 |
@@ -1019,7 +1009,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/electron_cash.png' width='32' height='32'> Electron Cash | 4.4.6 |
 | <img src='Logos/electron_fiddle.png' width='32' height='32'> Electron Fiddle | 0.39.0 |
 | <img src='Logos/electrum.png' width='32' height='32'> Electrum | 4.8.4 |
-| <img src='Logos/element.png' width='32' height='32'> Element | 1.12.34 |
+| <img src='Logos/element.png' width='32' height='32'> Element | 1.12.35 |
 | <img src='Logos/elephas.png' width='32' height='32'> Elephas | 12.0001 |
 | <img src='Logos/elgato_camera_hub.png' width='32' height='32'> Elgato Camera Hub | 2.3.0.7295 |
 | <img src='Logos/elgato_capture_device_utility.png' width='32' height='32'> Elgato Capture Device Utility | 1.3.1 |
@@ -1133,6 +1123,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/graphpad_prism.png' width='32' height='32'> GraphPad Prism | 11.1.0 |
 | <img src='Logos/grids.png' width='32' height='32'> Grids | 8.5.8 |
 | <img src='Logos/guilded.png' width='32' height='32'> Guilded | 1.0.9329126 |
+| ❌ Hack Nerd Font (Hack) | 3.5.1 |
 | <img src='Logos/hammerspoon.png' width='32' height='32'> Hammerspoon | 1.1.1 |
 | <img src='Logos/handbrake.png' width='32' height='32'> HandBrake | 1.11.2 |
 | <img src='Logos/hazel.png' width='32' height='32'> Hazel | 6.1.2 |
@@ -1289,7 +1280,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/mega.png' width='32' height='32'> MEGA | 12.1.4 |
 | <img src='Logos/megasync.png' width='32' height='32'> MEGAsync | 6.6.2.0 |
 | <img src='Logos/meld_for_macos.png' width='32' height='32'> Meld for macOS | 3.22.3+105 |
-| <img src='Logos/mellel.png' width='32' height='32'> Mellel | 6.8.0 |
+| <img src='Logos/mellel.png' width='32' height='32'> Mellel | 6.8.1 |
 | <img src='Logos/melodics.png' width='32' height='32'> Melodics | 5.0.1871 |
 | <img src='Logos/mem.png' width='32' height='32'> Mem | 0.43.0 |
 | <img src='Logos/memory_cleaner.png' width='32' height='32'> Memory Cleaner | 5.5.4 |
@@ -1506,7 +1497,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/processing.png' width='32' height='32'> Processing | 4.5.7 |
 | <img src='Logos/processspy.png' width='32' height='32'> ProcessSpy | 1.15.2 |
 | <img src='Logos/pronotes.png' width='32' height='32'> ProNotes | 0.7.8.2 |
-| <img src='Logos/propresenter.png' width='32' height='32'> ProPresenter | 22 |
+| <img src='Logos/propresenter.png' width='32' height='32'> ProPresenter | 22.0.1 |
 | <img src='Logos/proton_drive.png' width='32' height='32'> Proton Drive | 3.1.1 |
 | <img src='Logos/proton_mail.png' width='32' height='32'> Proton Mail | 1.16.1 |
 | <img src='Logos/proton_mail_bridge.png' width='32' height='32'> Proton Mail Bridge | 3.27.1 |
@@ -1578,7 +1569,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/roon.png' width='32' height='32'> Roon | 2.74.2 |
 | <img src='Logos/rotato.png' width='32' height='32'> Rotato | 161 |
 | <img src='Logos/royal_tsx.png' width='32' height='32'> Royal TSX | 6.4.5.1000 |
-| <img src='Logos/rstudio.png' width='32' height='32'> RStudio | 2026.10.1+239 |
+| <img src='Logos/rstudio.png' width='32' height='32'> RStudio | 2026.11.0+203 |
 | <img src='Logos/rsyncui.png' width='32' height='32'> RsyncUI | 3.1.0 |
 | <img src='Logos/rubymine.png' width='32' height='32'> RubyMine | 2026.3 |
 | <img src='Logos/runjs.png' width='32' height='32'> RunJS | 4.1.0 |
@@ -1687,7 +1678,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/sunsama.png' width='32' height='32'> Sunsama | 3.4.15 |
 | <img src='Logos/supercollider.png' width='32' height='32'> SuperCollider | 3.14.1 |
 | <img src='Logos/superduper.png' width='32' height='32'> SuperDuper! | 4.0.11 |
-| <img src='Logos/superhuman.png' width='32' height='32'> Superhuman | 1044.0.5 |
+| <img src='Logos/superhuman.png' width='32' height='32'> Superhuman | 1044.0.6 |
 | <img src='Logos/superkey.png' width='32' height='32'> Superkey | 1.67 |
 | <img src='Logos/superlist.png' width='32' height='32'> Superlist | 1.59.0 |
 | <img src='Logos/superwhisper.png' width='32' height='32'> superwhisper | 3.2.2 |

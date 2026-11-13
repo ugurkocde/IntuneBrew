@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-12T22:04:55.513974Z",
-  "lastFullSyncAt": "2026-11-12T20:11:52.540999Z",
+  "lastPublishedAt": "2026-11-13T01:03:37.752840Z",
+  "lastFullSyncAt": "2026-11-13T01:03:37.752840Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -44,6 +44,10 @@
     {
       "app": "google_ads_editor",
       "stage": "collection"
+    },
+    {
+      "app": "hack_nerd_font_hack",
+      "stage": "packaging"
     },
     {
       "app": "hopper_disassembler",
@@ -99,5 +103,5 @@
     }
   ],
   "appCount": 1157,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43314535016"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43336878342"
 }

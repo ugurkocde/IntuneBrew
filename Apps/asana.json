@@ -9,7 +9,7 @@
   "fileName": "asana_2.11.0.pkg",
   "type": "app",
   "sha": "c36d224e1d9d0116d2b5e3850babd1f842eceb957f72906699a62e536b87fa41",
-  "previous_version": "2.10.6",
+  "previous_version": "2.11.0",
   "qa_info": {
     "qa_timestamp": "2025-05-12T10:33:56Z",
     "qa_result": "Installation successful and verified",
