@@ -7,7 +7,7 @@ INSPECTOR_VERSION = "dmg-inspector/1"
 SIGNED_INSPECTOR_VERSION = "signed-dmg-inspector/1"
 # Numeric builds are distributed at 0d32caa; strict hex core ordering is
 # deployed and freshly verified in Website 5ef96c2, with Runbook CVE support.
-CATALOG_CONSUMER_CAPABILITIES = frozenset({"decorated_text", "plus_build", "paren_hex"})
+CATALOG_CONSUMER_CAPABILITIES = frozenset({"decorated_text", "plus_build", "paren_hex", "unraid_revision"})
 _CORE = r"[0-9]+(?:\.[0-9]+)*"
 _CANON = r"(?:0|[1-9][0-9]*)"
 _BOUNDED_COMPONENT = r"(?:0|[1-9][0-9]{0,8})"
