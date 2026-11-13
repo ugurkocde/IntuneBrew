@@ -1,6 +1,85 @@
 #!/bin/bash
 # Package explicitly supported command-line archives without executing them.
 set -euo pipefail
+if [ "${1:-}" = "--publish-font" ]; then
+  python3 -I -B - "$2" "$3" "$0" <<'FONT_PUBLISH_PY'
+import hashlib
+import json
+from pathlib import Path
+import re
+import subprocess
+import sys
+import tempfile
+import urllib.request
+
+
+def publish_font(app_key, manifest, script):
+    if not re.fullmatch(r'[a-z0-9_]{1,64}', app_key):
+        raise ValueError('Invalid font app key')
+    repository = script.parent.parent.parent
+    if manifest.is_symlink() or manifest.resolve() != repository / 'Apps' / (app_key + '.json'):
+        raise ValueError('Font publication manifest is outside its repository')
+    sys.path.insert(0, str(repository / 'lib'))
+    from font_payload import FONT_RECIPE
+    original = manifest.read_bytes(); data = json.loads(original)
+    version = data.get('version')
+    identifier = 'com.intunebrew.' + app_key
+    if (data.get('type') != 'app' or 'font_payload' not in data or data.get('bundleId') != identifier
+            or not isinstance(version, str) or not re.fullmatch(r'[0-9A-Za-z][0-9A-Za-z.+-]{0,63}', version)):
+        raise ValueError('Font publication identity mismatch')
+    with tempfile.TemporaryDirectory(prefix='font-publication-') as folder:
+        # No generic extraction takes place, even for malformed font manifests.
+        output = Path(folder)
+        subprocess.run(['bash', str(script), app_key, str(output), version, identifier], check=True)
+        filename = app_key + '_' + version + '.pkg'; package = output / filename
+        if package.is_symlink() or not package.is_file():
+            raise ValueError('Font builder did not produce the expected package')
+        digest = hashlib.sha256()
+        with package.open('rb') as source:
+            for chunk in iter(lambda: source.read(1024 * 1024), b''): digest.update(chunk)
+        checksum = digest.hexdigest()
+        blob = 'fonts/' + app_key + '/' + checksum + '/' + filename
+        url = 'https://intunebrew.blob.core.windows.net/pkg/' + blob
+        result = subprocess.run(['az', 'storage', 'blob', 'upload', '--container-name', 'pkg', '--file', str(package),
+                                 '--name', blob, '--overwrite', 'false', '--only-show-errors', '--output', 'none'],
+                                capture_output=True)
+        if result.returncode != 0:
+            # A pre-existing address is usable only after a complete byte hash.
+            # Network/auth/upload errors never become an overwrite or deletion.
+            existing = hashlib.sha256(); size = 0
+            with urllib.request.urlopen(url, timeout=30) as response:
+                if response.status != 200: raise ValueError('Existing font blob is unavailable')
+                while True:
+                    chunk = response.read(1024 * 1024)
+                    if not chunk: break
+                    size += len(chunk)
+                    if size > package.stat().st_size: raise ValueError('Existing font blob size mismatch')
+                    existing.update(chunk)
+            if size != package.stat().st_size or existing.hexdigest() != checksum:
+                raise ValueError('Existing font blob hash mismatch')
+        if manifest.read_bytes() != original:
+            raise ValueError('Font manifest changed during publication')
+        data.update(url=url, fileName=filename, sha=checksum, packaging_recipe=FONT_RECIPE,
+                    bundleId=identifier, packageIdentifier=identifier, vendor_url=data['font_payload']['source_url'])
+        with tempfile.NamedTemporaryFile(mode='w', dir=manifest.parent, prefix=manifest.name + '.', delete=False) as target:
+            temporary = Path(target.name)
+            try:
+                json.dump(data, target, indent=2); target.write('\n'); target.flush()
+            except Exception:
+                temporary.unlink(missing_ok=True); raise
+        try: temporary.replace(manifest)
+        finally: temporary.unlink(missing_ok=True)
+    print('Verified font package published; previous font blobs retained.')
+
+
+try:
+    publish_font(sys.argv[1], Path(sys.argv[2]), Path(sys.argv[3]).resolve())
+except Exception:
+    print('Font publication failed; catalog entry held.', file=sys.stderr)
+    sys.exit(1)
+FONT_PUBLISH_PY
+  exit $?
+fi
 app_name=$1
 extracted_dir=$2
 version=$3

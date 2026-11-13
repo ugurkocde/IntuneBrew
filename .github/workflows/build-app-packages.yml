@@ -375,6 +375,29 @@ jobs:
               continue
             fi
             
+            # Font manifests never enter generic blob reuse or extraction.
+            # Presence, including a malformed value, must fail closed here.
+            if jq -e 'has("font_payload")' "$WORKSPACE_DIR/Apps/${app_name}.json" >/dev/null; then
+              font_ready=false
+              if python "$WORKSPACE_DIR/.github/scripts/reuse_cached_package.py" --font "$WORKSPACE_DIR/Apps/${app_name}.json"; then
+                font_ready=true
+              else
+                font_cache_status=$?
+                if [ "$font_cache_status" -eq 10 ]; then
+                  if bash "$WORKSPACE_DIR/.github/scripts/package_cli.sh" --publish-font "$app_name" "$WORKSPACE_DIR/Apps/${app_name}.json"; then
+                    font_ready=true
+                  fi
+                fi
+              fi
+              if [ "$font_ready" = true ]; then
+                SUCCESSFUL_APPS+=("$app_name")
+              else
+                FAILED_APPS+=("$app_name")
+                ERROR_LOG+=("$app_name: Font package verification or publication failed")
+              fi
+              continue
+            fi
+
             # List existing versions of this app in Azure storage
             existing_versions=$(az storage blob list --container-name pkg --prefix "${app_name}_" --query "[].name" -o tsv)
             

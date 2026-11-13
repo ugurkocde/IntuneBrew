@@ -133,5 +133,14 @@ class FontPackageTests(unittest.TestCase):
         result = self.run_package(); self.assertEqual(result.returncode, 0, result.stderr)
         self.assertEqual(list(self.extracted.iterdir()), [])
 
+    def test_font_key_colliding_with_cli_recipe_fails_closed(self):
+        self.prepare()
+        data = dict(self.data); data['bundleId'] = 'com.intunebrew.sentinel'
+        (self.root / 'Apps/sentinel.json').write_text(json.dumps(data))
+        result = subprocess.run(['bash', str(self.scripts / 'package_cli.sh'), 'sentinel', str(self.extracted),
+                                 '3.5.1', 'com.intunebrew.sentinel'], capture_output=True, text=True)
+        self.assertNotEqual(result.returncode, 0)
+        self.assertFalse(list(self.extracted.glob('*.pkg')))
+
 
 if __name__ == '__main__': unittest.main()

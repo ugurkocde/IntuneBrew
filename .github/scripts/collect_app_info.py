@@ -2935,6 +2935,7 @@ def main():
                     # These assignments must stay below the fileName block, which
                     # branches on the previous type and would change fileName handling
                     # if it saw the refreshed value.
+                    previous_font_entry = "font_payload" in existing_data
                     existing_data["type"] = "app"
                     existing_data["vendor_url"] = app_info["vendor_url"]
                     if 'font_payload' in app_info:
@@ -2942,8 +2943,10 @@ def main():
                         existing_data['bundleId'] = app_info['bundleId']
                     else:
                         existing_data.pop('font_payload', None)
-                        if existing_data.get('bundleId') == 'com.intunebrew.' + sanitize_filename(display_name):
-                            existing_data.pop('bundleId', None)
+                        if previous_font_entry:
+                            for field in ('bundleId', 'packageIdentifier'):
+                                if existing_data.get(field) == 'com.intunebrew.' + sanitize_filename(display_name):
+                                    existing_data.pop(field, None)
 
                     # Packaging calculates the SHA of the final PKG. Hashing the
                     # vendor archive here downloads it twice and temporarily pairs
@@ -2994,7 +2997,7 @@ def main():
                     # processed: these casks are vendor-served DMGs, so the fresh app_info
                     # carries no type key at all and a stale repackaging type is dropped.
                     for key in existing_data:
-                        if (key == 'bundleId' and 'font_payload' in existing_data
+                        if (key in {'bundleId', 'packageIdentifier'} and 'font_payload' in existing_data
                                 and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
                             continue  # A font receipt is not a vendor app bundle ID.
                         if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason",
@@ -3073,8 +3076,11 @@ def main():
                     # type, homebrew_cask and vendor_url are owned by the list being
                     # processed, so the fresh "pkg_in_pkg" values win over whatever is on disk.
                     for key in existing_data:
+                        if (key in {'bundleId', 'packageIdentifier'} and 'font_payload' in existing_data
+                                and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
+                            continue
                         if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason",
-                                       "type", "homebrew_cask", "vendor_url"]:
+                                       "type", "homebrew_cask", "vendor_url", "font_payload"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version
@@ -3142,8 +3148,11 @@ def main():
                     # type, homebrew_cask and vendor_url are owned by the list being
                     # processed, so the fresh "pkg" values win over whatever is on disk.
                     for key in existing_data:
+                        if (key in {'bundleId', 'packageIdentifier'} and 'font_payload' in existing_data
+                                and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
+                            continue
                         if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason",
-                                       "type", "homebrew_cask", "vendor_url"]:
+                                       "type", "homebrew_cask", "vendor_url", "font_payload"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url, sha and previous_version
@@ -3200,8 +3209,11 @@ def main():
                     # type, homebrew_cask and vendor_url are owned by the list being
                     # processed, so the fresh "pkg_in_dmg" values win over whatever is on disk.
                     for key in existing_data:
+                        if (key in {'bundleId', 'packageIdentifier'} and 'font_payload' in existing_data
+                                and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
+                            continue
                         if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason",
-                                       "type", "homebrew_cask", "vendor_url"]:
+                                       "type", "homebrew_cask", "vendor_url", "font_payload"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version

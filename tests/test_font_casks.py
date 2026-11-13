@@ -22,6 +22,39 @@ def cask():
 
 
 class FontCaskTests(unittest.TestCase):
+    def test_nonfont_cli_receipt_is_retained_and_all_vendor_lists_retire_font_fields(self):
+        url = 'https://formulae.brew.sh/api/cask/example-font.json'
+        lists = ['app_urls', 'homebrew_cask_urls', 'pkg_in_pkg_urls', 'pkg_urls', 'pkg_in_dmg_urls']
+        for active in lists:
+            with self.subTest(active=active), tempfile.TemporaryDirectory() as root, contextlib.ExitStack() as stack:
+                previous_cwd = os.getcwd(); os.chdir(root); stack.callback(os.chdir, previous_cwd)
+                for name in lists: stack.enter_context(mock.patch.object(c, name, [url] if name == active else []))
+                stack.enter_context(mock.patch.object(c, 'custom_scrapers', []))
+                for name in ['prefetch_cask_data', 'update_readme_apps', 'update_readme_with_latest_changes', 'reconcile_vendor_dmg']:
+                    stack.enter_context(mock.patch.object(c, name))
+                stack.enter_context(mock.patch.object(c, 'discover_missing_bundle_id', return_value=None))
+                stack.enter_context(mock.patch.object(c, 'find_bundle_id', return_value='org.example.actual'))
+                stack.enter_context(mock.patch.object(c, 'calculate_file_hash', return_value='a' * 64))
+                stack.enter_context(mock.patch.object(c.requests, 'get', side_effect=AssertionError('No network')))
+                stack.enter_context(contextlib.redirect_stdout(io.StringIO()))
+                raw = cask(); raw['artifacts'] = [{'pkg': ['Example.pkg']}]
+                Path('Apps').mkdir(); entry = Path('Apps/example_fonts_family.json')
+                previous = {'name': raw['name'][0], 'version': '3.0', 'url': 'https://example.invalid/old.pkg',
+                            'homebrew_cask': 'example-font', 'type': 'app', 'fileName': 'old.pkg',
+                            'bundleId': 'com.intunebrew.example_fonts_family',
+                            'packageIdentifier': 'com.intunebrew.example_fonts_family'}
+                if active != 'app_urls': previous['font_payload'] = {'files': ['old.ttf']}
+                entry.write_text(json.dumps(previous))
+                with mock.patch.dict(c.cask_cache, {url: raw}): c.main()
+                updated = json.loads(entry.read_text())
+                self.assertNotIn('font_payload', updated)
+                if active == 'app_urls':
+                    self.assertEqual(updated['bundleId'], previous['bundleId'])
+                    self.assertEqual(updated['packageIdentifier'], previous['packageIdentifier'])
+                else:
+                    self.assertEqual(updated['bundleId'], 'org.example.actual')
+                    self.assertNotIn('packageIdentifier', updated)
+
     def test_collection_refreshes_or_removes_owned_manifest_on_existing_entry(self):
         url = 'https://formulae.brew.sh/api/cask/example-font.json'
         previous_cwd = os.getcwd()

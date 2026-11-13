@@ -6,6 +6,8 @@ import stat
 import subprocess
 import xml.etree.ElementTree as ET
 
+FONT_RECIPE = 'font-pkg-v1'
+
 
 def require(condition, message):
     if not condition:
