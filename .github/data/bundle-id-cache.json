@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-14T05:21:17.235Z",
+  "last_full_scan": "2026-11-14T06:11:55.758Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -6371,8 +6371,8 @@
       "name": "RapidWeaver"
     },
     "raspberry_pi_imager": {
-      "last_checked": "2026-01-17T10:34:29.125Z",
-      "bundle_id": "org.raspberrypi.imagingutility",
+      "last_checked": "2026-11-14T06:11:55.748Z",
+      "bundle_id": "com.raspberrypi.rpi-imager",
       "status": "verified",
       "source": "file",
       "name": "Raspberry Pi Imager"
