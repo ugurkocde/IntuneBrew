@@ -42,5 +42,6 @@
     "bundle_id_status": "receipt_verified",
     "installed_version": "3.5.1",
     "verification_scope": "runner_pkg_receipt_and_files"
-  }
+  },
+  "previous_version": "3.5.1"
 }

@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "0bcdbdceff0ef59ff4597f7047d262692e9b5a4681c2400d4aa558052374ed5c",
   "changelog": "https://docs.anthropic.com/en/release-notes/claude-apps",
-  "previous_version": "5.11492.0",
+  "previous_version": "5.11492.2",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:47:38Z",
     "qa_result": "Installation successful and verified",

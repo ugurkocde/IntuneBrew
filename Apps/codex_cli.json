@@ -1,17 +1,17 @@
 {
   "name": "Codex CLI",
   "description": "OpenAI's coding agent that runs in your terminal",
-  "version": "0.168.0",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/codex_cli_0.168.0.pkg",
-  "vendor_url": "https://github.com/openai/codex/releases/download/rust-v0.168.0/codex-package-aarch64-apple-darwin.tar.gz",
+  "version": "0.169.0",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/codex_cli_0.169.0.pkg",
+  "vendor_url": "https://github.com/openai/codex/releases/download/rust-v0.169.0/codex-package-aarch64-apple-darwin.tar.gz",
   "bundleId": "com.intunebrew.codex_cli",
   "homepage": "https://github.com/openai/codex",
   "homebrew_cask": "codex",
-  "fileName": "codex_cli_0.168.0.pkg",
+  "fileName": "codex_cli_0.169.0.pkg",
   "type": "app",
   "packageIdentifier": "com.intunebrew.codex_cli",
-  "sha": "f57601226dd1b95eda1c6113f4bb010f0aba7ee3909f91ba620d839babdb3a9e",
+  "sha": "02ebd059e155210af5bd2f0206434d35ef73acd54632778c861f034b8e640400",
   "category": "Developer Tools",
   "publisher": "OpenAI",
-  "previous_version": "0.167.2"
+  "previous_version": "0.168.0"
 }
