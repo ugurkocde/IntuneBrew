@@ -4,12 +4,19 @@
   "version": "4.15.15",
   "url": "https://dl.devmate.com/com.macpaw.zh.CleanMyMac4/CleanMyMacXChinese.dmg",
   "vendor_url": "https://dl.devmate.com/com.macpaw.zh.CleanMyMac4/CleanMyMacXChinese.dmg",
-  "bundleId": "com.macpaw.CleanMyMac4",
+  "bundleId": "com.macpaw.zh.CleanMyMac4",
   "homepage": "https://www.mycleanmymac.com/",
   "homebrew_cask": "cleanmymac-zh",
   "fileName": "CleanMyMacXChinese.dmg",
   "sha": "482e1ddad036d062d4af164d5fc584bf0a820838631a43eba661fe0cf4d08415",
   "category": "Utilities",
   "publisher": "MacPaw Ltd.",
-  "previous_version": "4.15.14"
+  "previous_version": "4.15.15",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "482e1ddad036d062d4af164d5fc584bf0a820838631a43eba661fe0cf4d08415",
+    "url": "https://dl.devmate.com/com.macpaw.zh.CleanMyMac4/CleanMyMacXChinese.dmg",
+    "appName": "CleanMyMac-X.app",
+    "bundleId": "com.macpaw.zh.CleanMyMac4"
+  }
 }

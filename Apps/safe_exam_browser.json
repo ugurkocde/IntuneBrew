@@ -4,12 +4,19 @@
   "version": "3.7.2",
   "url": "https://github.com/SafeExamBrowser/seb-mac/releases/download/3.7.2/SafeExamBrowser-3.7.2.dmg",
   "vendor_url": "https://github.com/SafeExamBrowser/seb-mac/releases/download/3.7.2/SafeExamBrowser-3.7.2.dmg",
-  "bundleId": "ch.ethz.seb.SEB",
+  "bundleId": "org.safeexambrowser.SafeExamBrowser",
   "homepage": "https://safeexambrowser.org/",
   "homebrew_cask": "safe-exam-browser",
   "fileName": "SafeExamBrowser-3.7.2.dmg",
   "sha": "a3e1936174a3e75bbe013f5aaf8a9af9d66c3a6d6ddaced608d0223837f0a8ab",
   "category": "Security",
   "publisher": "Safe Exam Browser Project",
-  "previous_version": "3.7.2"
+  "previous_version": "3.7.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "a3e1936174a3e75bbe013f5aaf8a9af9d66c3a6d6ddaced608d0223837f0a8ab",
+    "url": "https://github.com/SafeExamBrowser/seb-mac/releases/download/3.7.2/SafeExamBrowser-3.7.2.dmg",
+    "appName": "Safe Exam Browser.app",
+    "bundleId": "org.safeexambrowser.SafeExamBrowser"
+  }
 }

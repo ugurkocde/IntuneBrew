@@ -4,12 +4,19 @@
   "version": "6.8.1",
   "url": "https://d1riogbqt3a9uw.cloudfront.net/mellel_68101.dmg",
   "vendor_url": "https://d1riogbqt3a9uw.cloudfront.net/mellel_68101.dmg",
-  "bundleId": "com.redlex.mellel6",
+  "bundleId": "com.redlex.mellel.mac",
   "homepage": "https://www.mellel.com/",
   "homebrew_cask": "mellel",
   "fileName": "mellel_68101.dmg",
   "sha": "a5e09f2f8ec2157a721584f59bbd74a388181d20070f6d1d8cd0963ca21a53da",
   "category": "Productivity",
   "publisher": "Mellel Ltd.",
-  "previous_version": "6.8.1"
+  "previous_version": "6.8.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "a5e09f2f8ec2157a721584f59bbd74a388181d20070f6d1d8cd0963ca21a53da",
+    "url": "https://d1riogbqt3a9uw.cloudfront.net/mellel_68101.dmg",
+    "appName": "Mellel 6.app",
+    "bundleId": "com.redlex.mellel.mac"
+  }
 }

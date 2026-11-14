@@ -4,12 +4,19 @@
   "version": "1.34.1",
   "url": "https://assets.riverside.fm/mac-desktop-app/current-release/RiversideStudio.dmg",
   "vendor_url": "https://assets.riverside.fm/mac-desktop-app/current-release/RiversideStudio.dmg",
-  "bundleId": "fm.riverside.studio",
+  "bundleId": "RVS-Riverside.fm-Mac",
   "homepage": "https://riverside.fm/",
   "homebrew_cask": "riverside-studio",
   "fileName": "RiversideStudio.dmg",
   "category": "Media",
   "publisher": "Riverside.fm",
   "previous_version": "1.34.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "0a5e4f2115ae2248f991e005c88a47eb9ad3839868c1f7b2799c5edb423b2705",
+    "url": "https://assets.riverside.fm/mac-desktop-app/current-release/RiversideStudio.dmg",
+    "appName": "Riverside Studio.app",
+    "bundleId": "RVS-Riverside.fm-Mac"
+  },
   "sha": "0a5e4f2115ae2248f991e005c88a47eb9ad3839868c1f7b2799c5edb423b2705"
 }

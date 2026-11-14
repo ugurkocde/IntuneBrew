@@ -4,12 +4,19 @@
   "version": "0.14.2",
   "url": "https://github.com/ActivityWatch/activitywatch/releases/download/v0.14.2/activitywatch-v0.14.2-macos-arm64.dmg",
   "vendor_url": "https://github.com/ActivityWatch/activitywatch/releases/download/v0.14.2/activitywatch-v0.14.2-macos-arm64.dmg",
-  "bundleId": "net.activitywatch",
+  "bundleId": "net.activitywatch.ActivityWatch",
   "homepage": "https://activitywatch.net/",
   "homebrew_cask": "activitywatch",
   "fileName": "activitywatch-v0.14.2-macos-arm64.dmg",
   "sha": "8341d56b5b43a60ca04ea2a3cc5ffbfb5e661cdb6430145d9ceb0f49dca63d65",
   "category": "Productivity",
   "publisher": "ActivityWatch",
-  "previous_version": "0.14.2"
+  "previous_version": "0.14.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "8341d56b5b43a60ca04ea2a3cc5ffbfb5e661cdb6430145d9ceb0f49dca63d65",
+    "url": "https://github.com/ActivityWatch/activitywatch/releases/download/v0.14.2/activitywatch-v0.14.2-macos-arm64.dmg",
+    "appName": "ActivityWatch.app",
+    "bundleId": "net.activitywatch.ActivityWatch"
+  }
 }

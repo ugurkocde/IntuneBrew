@@ -21,5 +21,12 @@
   },
   "category": "Productivity",
   "publisher": "Fathom, Inc.",
-  "previous_version": "3.13.0"
+  "previous_version": "3.13.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b26f664ffeee717d3c5f216fc2e8a3b4fc5bfc5e5e132e76744e5a3e49fcc9f0",
+    "url": "https://electron-update.fathom.video/download/file/Fathom-darwin-arm64-3.13.0.dmg",
+    "appName": "Fathom.app",
+    "bundleId": "video.fathom.electron"
+  }
 }

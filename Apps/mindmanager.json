@@ -4,12 +4,19 @@
   "version": "26.0.111",
   "url": "https://download.mindjet.com/MindManager_Mac_26.0.111.dmg",
   "vendor_url": "https://download.mindjet.com/MindManager_Mac_26.0.111.dmg",
-  "bundleId": "com.mindjet.mindmanager.24",
+  "bundleId": "com.mindjet.mindmanager.26",
   "homepage": "https://www.mindjet.com/mindmanager/",
   "homebrew_cask": "mindmanager",
   "fileName": "MindManager_Mac_26.0.111.dmg",
   "sha": "e87745a0890d69c67a4b34ea7e6900e3fa610431a83df7ce1f3b240ffe68e397",
   "category": "Productivity",
   "publisher": "Corel Corporation",
-  "previous_version": "26.0.111"
+  "previous_version": "26.0.111",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "e87745a0890d69c67a4b34ea7e6900e3fa610431a83df7ce1f3b240ffe68e397",
+    "url": "https://download.mindjet.com/MindManager_Mac_26.0.111.dmg",
+    "appName": "MindManager.app",
+    "bundleId": "com.mindjet.mindmanager.26"
+  }
 }

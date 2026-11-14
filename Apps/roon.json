@@ -4,12 +4,19 @@
   "version": "2.74.2",
   "url": "https://download.roonlabs.net/builds/Roon.dmg",
   "vendor_url": "https://download.roonlabs.net/builds/Roon.dmg",
-  "bundleId": "com.roonlabs.Roon",
+  "bundleId": "com.roon.Roon",
   "homepage": "https://roonlabs.com/",
   "homebrew_cask": "roon",
   "fileName": "Roon.dmg",
   "category": "Media",
   "publisher": "Roon Labs, LLC",
   "previous_version": "2.74.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "84f0fcd86d648f13f6767cb9742269763bd38699881c30141a248cb1ee2b3297",
+    "url": "https://download.roonlabs.net/builds/Roon.dmg",
+    "appName": "Roon.app",
+    "bundleId": "com.roon.Roon"
+  },
   "sha": "84f0fcd86d648f13f6767cb9742269763bd38699881c30141a248cb1ee2b3297"
 }

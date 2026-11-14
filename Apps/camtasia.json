@@ -4,7 +4,7 @@
   "version": "2027.0.0",
   "url": "https://download.techsmith.com/camtasiamac/releases/2027.0.0/Camtasia.dmg",
   "vendor_url": "https://download.techsmith.com/camtasiamac/releases/2027.0.0/Camtasia.dmg",
-  "bundleId": "com.techsmith.camtasia2023",
+  "bundleId": "com.techsmith.camtasia",
   "homepage": "https://www.techsmith.com/video-editor.html",
   "homebrew_cask": "camtasia",
   "fileName": "Camtasia.dmg",
@@ -22,5 +22,12 @@
   },
   "category": "Media",
   "publisher": "TechSmith Corporation",
-  "previous_version": "2027.0.0"
+  "previous_version": "2027.0.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "457d7f349ac2b675926f665f211b130c0a4bfa0cc568bf73cc63072ad2b68fa0",
+    "url": "https://download.techsmith.com/camtasiamac/releases/2027.0.0/Camtasia.dmg",
+    "appName": "Camtasia.app",
+    "bundleId": "com.techsmith.camtasia"
+  }
 }

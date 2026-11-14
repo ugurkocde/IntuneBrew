@@ -1,12 +1,16 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-14T00:56:13.446951Z",
-  "lastFullSyncAt": "2026-11-14T00:56:13.446951Z",
+  "lastPublishedAt": "2026-11-14T05:20:19.597204Z",
+  "lastFullSyncAt": "2026-11-14T05:20:19.597204Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
     {
       "app": "android_studio",
+      "stage": "collection"
+    },
+    {
+      "app": "axure_rp",
       "stage": "collection"
     },
     {
@@ -19,6 +23,10 @@
     },
     {
       "app": "cmux",
+      "stage": "collection"
+    },
+    {
+      "app": "cursorsense",
       "stage": "collection"
     },
     {
@@ -74,6 +82,10 @@
       "stage": "collection"
     },
     {
+      "app": "pale_moon",
+      "stage": "collection"
+    },
+    {
       "app": "reaper",
       "stage": "collection"
     },
@@ -95,5 +107,8 @@
     }
   ],
   "appCount": 1160,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43533959855"
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43558538929",
+  "identityBackfill": {
+    "lastAttempted": "4k-slideshow-maker"
+  }
 }

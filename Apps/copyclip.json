@@ -9,7 +9,7 @@
   "fileName": "copyclip_3.994.5.pkg",
   "type": "app",
   "sha": "d5beefbebc3646e9669f47b47d5d978c929a3012aac1707442d8d614f8469fd6",
-  "previous_version": "3.994.3",
+  "previous_version": "3.994.5",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:49:47Z",
     "qa_result": "Installation successful and verified",

@@ -11,5 +11,12 @@
   "sha": "d8e234fc08d6c39bc7482fe0717c7a611f7e57e013e00930ce80b810681a5005",
   "category": "Productivity",
   "publisher": "Proton AG",
-  "previous_version": "3.1.1"
+  "previous_version": "3.1.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "d8e234fc08d6c39bc7482fe0717c7a611f7e57e013e00930ce80b810681a5005",
+    "url": "https://proton.me/download/drive/macos/3.1.1/ProtonDrive-3.1.1.dmg",
+    "appName": "Proton Drive.app",
+    "bundleId": "ch.protonmail.drive"
+  }
 }

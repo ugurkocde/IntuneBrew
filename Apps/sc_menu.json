@@ -4,12 +4,19 @@
   "version": "2.2",
   "url": "https://github.com/boberito/sc_menu/releases/download/2.2/SC_Menu.dmg",
   "vendor_url": "https://github.com/boberito/sc_menu/releases/download/2.2/SC_Menu.dmg",
-  "bundleId": "de.sccm.SCMenu",
+  "bundleId": "com.ttinc.sc-menu",
   "homepage": "https://github.com/boberito/sc_menu",
   "homebrew_cask": "sc-menu",
   "fileName": "SC_Menu.dmg",
   "sha": "482341d649c72d13c8ee266456325e74e498bc848c7f6af03609549d022aaff3",
   "category": "Security",
   "publisher": "boberito",
-  "previous_version": "2.2"
+  "previous_version": "2.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "482341d649c72d13c8ee266456325e74e498bc848c7f6af03609549d022aaff3",
+    "url": "https://github.com/boberito/sc_menu/releases/download/2.2/SC_Menu.dmg",
+    "appName": "SC Menu.app",
+    "bundleId": "com.ttinc.sc-menu"
+  }
 }

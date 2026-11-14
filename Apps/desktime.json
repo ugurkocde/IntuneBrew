@@ -11,5 +11,12 @@
   "sha": "b0611f8513ee3c1eec6e700d77b9e21bd1ed1a74ea349b7314e1cac2f1a5396d",
   "category": "Productivity",
   "publisher": "DeskTime",
-  "previous_version": "6.3.0"
+  "previous_version": "6.3.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b0611f8513ee3c1eec6e700d77b9e21bd1ed1a74ea349b7314e1cac2f1a5396d",
+    "url": "https://desktime.com/storage/updates/electro-builder-auto-updater/stable/DeskTime-6.3.0-arm64.dmg",
+    "appName": "DeskTime.app",
+    "bundleId": "com.desktime.DeskTime"
+  }
 }

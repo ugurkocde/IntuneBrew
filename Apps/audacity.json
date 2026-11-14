@@ -4,7 +4,7 @@
   "version": "4.0.2",
   "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-macOS-4.0.2-arm64.dmg",
   "vendor_url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-macOS-4.0.2-arm64.dmg",
-  "bundleId": "org.audacityteam.audacity",
+  "bundleId": "org.audacityteam.audacity4",
   "homepage": "https://www.audacityteam.org/",
   "homebrew_cask": "audacity",
   "fileName": "audacity-macOS-4.0.2-arm64.dmg",
@@ -22,5 +22,12 @@
   },
   "category": "Media",
   "publisher": "Audacity Team",
-  "previous_version": "4.0.2"
+  "previous_version": "4.0.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "fd462da6204cbf9758b44c7ce1c29d5fe5cab4f31ba308d33c125f1b170401c3",
+    "url": "https://github.com/audacity/audacity/releases/download/Audacity-4.0.2/audacity-macOS-4.0.2-arm64.dmg",
+    "appName": "Audacity 4.app",
+    "bundleId": "org.audacityteam.audacity4"
+  }
 }

@@ -4,12 +4,19 @@
   "version": "3.2",
   "url": "https://tapbots.net/pastebot3/Pastebot.32001.dmg",
   "vendor_url": "https://tapbots.net/pastebot3/Pastebot.32001.dmg",
-  "bundleId": "com.tapbots.Pastebot2Mac",
+  "bundleId": "com.tapbots.Pastebot3Mac",
   "homepage": "https://tapbots.com/pastebot/",
   "homebrew_cask": "pastebot",
   "fileName": "Pastebot.32001.dmg",
   "sha": "6e440fb6d7afeacb56c05e1a20e13983e5dcad6343b479ca65c6dd5b0ada447a",
   "category": "Productivity",
   "publisher": "Tapbots",
-  "previous_version": "3.2"
+  "previous_version": "3.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "6e440fb6d7afeacb56c05e1a20e13983e5dcad6343b479ca65c6dd5b0ada447a",
+    "url": "https://tapbots.net/pastebot3/Pastebot.32001.dmg",
+    "appName": "Pastebot.app",
+    "bundleId": "com.tapbots.Pastebot3Mac"
+  }
 }

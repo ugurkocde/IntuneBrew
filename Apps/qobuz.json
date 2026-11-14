@@ -4,12 +4,19 @@
   "version": "8.3.0",
   "url": "https://desktop.qobuz.com/releases/darwin/arm64/bigsur/8.3.0-b028/Qobuz.dmg",
   "vendor_url": "https://desktop.qobuz.com/releases/darwin/arm64/bigsur/8.3.0-b028/Qobuz.dmg",
-  "bundleId": "com.qobuz.QobuzDesktop",
+  "bundleId": "com.qobuz.desktop",
   "homepage": "https://www.qobuz.com/applications",
   "homebrew_cask": "qobuz",
   "fileName": "Qobuz.dmg",
   "sha": "f4b42458017347442ea60da90060e0c27638741cb6c4d35d412430ea1bfa73ab",
   "category": "Media",
   "publisher": "Qobuz",
-  "previous_version": "8.3.0"
+  "previous_version": "8.3.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "f4b42458017347442ea60da90060e0c27638741cb6c4d35d412430ea1bfa73ab",
+    "url": "https://desktop.qobuz.com/releases/darwin/arm64/bigsur/8.3.0-b028/Qobuz.dmg",
+    "appName": "Qobuz.app",
+    "bundleId": "com.qobuz.desktop"
+  }
 }

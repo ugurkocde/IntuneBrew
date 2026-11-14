@@ -4,7 +4,7 @@
   "version": "26.09.4",
   "url": "https://github.com/ankitects/anki/releases/download/26.09.4/anki-26.09.4-mac-apple.dmg",
   "vendor_url": "https://github.com/ankitects/anki/releases/download/26.09.4/anki-26.09.4-mac-apple.dmg",
-  "bundleId": "net.ankiweb.dtop",
+  "bundleId": "net.ankiweb.anki",
   "homepage": "https://apps.ankiweb.net/",
   "homebrew_cask": "anki",
   "fileName": "anki-26.09.4-mac-apple.dmg",
@@ -22,5 +22,12 @@
   },
   "category": "Productivity",
   "publisher": "Ankitects Pty Ltd",
-  "previous_version": "26.09.4"
+  "previous_version": "26.09.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "527b968b88d54cb0308d1de7a1ee193109863546e1cb62dcd016bd93bd816684",
+    "url": "https://github.com/ankitects/anki/releases/download/26.09.4/anki-26.09.4-mac-apple.dmg",
+    "appName": "Anki.app",
+    "bundleId": "net.ankiweb.anki"
+  }
 }

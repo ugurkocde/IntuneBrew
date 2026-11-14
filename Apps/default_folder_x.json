@@ -4,12 +4,19 @@
   "version": "6.3.3",
   "url": "https://www.stclairsoft.com/download/DefaultFolderX-6.3.3.dmg",
   "vendor_url": "https://www.stclairsoft.com/download/DefaultFolderX-6.3.3.dmg",
-  "bundleId": "com.stclairsoft.DefaultFolderX",
+  "bundleId": "com.stclairsoft.DefaultFolderX5",
   "homepage": "https://www.stclairsoft.com/DefaultFolderX/",
   "homebrew_cask": "default-folder-x",
   "fileName": "DefaultFolderX-6.3.3.dmg",
   "category": "Utilities",
   "publisher": "St. Clair Software",
   "previous_version": "6.3.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "2108e5e4c4614a15e807260c834633c0d003ac47f5ab64ebf3ee8223bf179f0d",
+    "url": "https://www.stclairsoft.com/download/DefaultFolderX-6.3.3.dmg",
+    "appName": "Default Folder X.app",
+    "bundleId": "com.stclairsoft.DefaultFolderX5"
+  },
   "sha": "2108e5e4c4614a15e807260c834633c0d003ac47f5ab64ebf3ee8223bf179f0d"
 }
