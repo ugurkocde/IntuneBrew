@@ -108,11 +108,12 @@ class DiscoveryCollectorTests(unittest.TestCase):
         self.assertNotIn('font_payload', result)
         self.assertEqual((failures, hashes), ([], 0))
         self.assertEqual(len(calls), 1)
-        self.assertEqual(calls[0].args[1], 'org.example.known')
-        self.assertNotIn('app_name', calls[0].kwargs)
-        self.assertNotIn('bundleIdDiscovered', c.version_evidence[-1])
+        self.assertIsNone(calls[0].args[1])
+        self.assertEqual(calls[0].kwargs['app_name'], 'Future One.app')
+        self.assertEqual(calls[0].kwargs['app_name'], 'Future One.app')
+        self.assertTrue(c.version_evidence[-1]['versionVerified'])
 
-    def test_prior_or_cask_identity_keeps_normal_inspection_path(self):
+    def test_prior_or_cask_identity_is_verified_by_exact_declared_app(self):
         for prior_id in [True, False]:
             with self.subTest(prior=prior_id):
                 data = fixture()
@@ -126,9 +127,10 @@ class DiscoveryCollectorTests(unittest.TestCase):
                 self.assertEqual(json.loads(raw)['bundleId'], 'org.example.known')
                 self.assertEqual(failures, [])
                 self.assertEqual(len(calls), 1)
-                self.assertEqual(calls[0].args[1], 'org.example.known')
-                self.assertNotIn('app_name', calls[0].kwargs)
-                self.assertNotIn('bundleIdDiscovered', c.version_evidence[-1])
+                self.assertIsNone(calls[0].args[1])
+                self.assertEqual(calls[0].kwargs['app_name'], 'Future One.app')
+                self.assertEqual(c.version_evidence[-1]['observedBundleId'], 'org.example.known')
+                self.assertTrue(c.version_evidence[-1]['versionVerified'])
 
     def test_ineligible_casks_do_not_inspect(self):
         original = fixture()

@@ -118,6 +118,15 @@ def publish(scope="all"):
         "appCount": len(apps),
         "runUrl": f"https://github.com/ugurkocde/IntuneBrew/actions/runs/{os.environ['GITHUB_RUN_ID']}" if os.environ.get("GITHUB_RUN_ID") else None,
     }
+    # Carry only the bounded progress cursor, never treat it as identity proof.
+    # Scoped runs do not move the cursor of the full-catalog backfill.
+    progress = report.get("identityBackfill") if full else None
+    cursor = progress.get("lastAttempted") if isinstance(progress, dict) else None
+    if not isinstance(cursor, str) or not re.fullmatch(r"[a-z0-9][a-z0-9+_.@-]{0,199}", cursor):
+        progress = previous.get("identityBackfill")
+        cursor = progress.get("lastAttempted") if isinstance(progress, dict) else None
+    if isinstance(cursor, str) and re.fullmatch(r"[a-z0-9][a-z0-9+_.@-]{0,199}", cursor):
+        state["identityBackfill"] = {"lastAttempted": cursor}
     Path("supported_apps.json").write_text(json.dumps(apps, indent=4) + "\n")
     Path("catalog-sync.json").write_text(json.dumps(state, indent=2) + "\n")
     # Preserve the last change list on a quiet scan, but record a genuine check.
