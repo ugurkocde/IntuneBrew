@@ -4,6 +4,7 @@ import re
 
 
 INSPECTOR_VERSION = "dmg-inspector/1"
+IDENTITY_INSPECTOR_VERSION = "dmg-identity/1"
 SIGNED_INSPECTOR_VERSION = "signed-dmg-inspector/1"
 # Numeric builds are distributed at 0d32caa; strict hex core ordering is
 # deployed and freshly verified in Website 5ef96c2, with Runbook CVE support.
@@ -147,6 +148,56 @@ def plan(i):
     if i.prior and i.legacy_version == i.prior.version:
         return Decision("LEGACY", i.legacy_version, reason="UNCHANGED_LEGACY_VERSION")
     return Decision("INSPECT", reason="CHANGED_DETECTION_VERSION")
+
+
+def identity_plan(evidence, url, declared, entry_sha, app_name, bundle_id):
+    """Reuse only identity proof bound to the complete current artifact selection.
+
+    For no_check sources this proves the catalog-pinned bytes, not today's URL
+    contents. A changed catalog digest always invalidates that proof.
+    """
+    expected = {"inspector": IDENTITY_INSPECTOR_VERSION,
+                "artifactSha256": entry_sha, "url": url,
+                "appName": app_name, "bundleId": bundle_id}
+    if (_sha(entry_sha) and (declared is None or declared == entry_sha)
+            and type(bundle_id) is str and re.fullmatch(r'[A-Za-z0-9_.-]{1,200}', bundle_id)
+            and isinstance(evidence, dict) and evidence == expected):
+        return "REUSE"
+    return "INSPECT"
+
+
+def reconcile_identity(i, prior_bundle_id):
+    """Keep version proof separate from a correction of the same pinned bytes."""
+    decision = reconcile(i)
+    known = (bool(prior_bundle_id) and isinstance(i.observation, BundleObservation)
+             and i.observation.bundle_id == i.bundle_id)
+    changed = known and i.bundle_id != prior_bundle_id
+    same = (isinstance(i.observation, BundleObservation) and i.prior and _sha(i.prior.sha)
+            and (i.declared_sha256 is None or i.declared_sha256 == i.prior.sha)
+            and i.prior.sha == i.observation.artifact_sha256
+            and i.url == i.prior.url and i.legacy_version == i.prior.version)
+    version_policy_hold = decision.action == "HOLD" and decision.reason in {
+        "RELATION_UNPROVEN", "EQUAL_ORDER_TEXT_DIFFERS", "PRIOR_ORDER_UNKNOWN",
+        "DETECTION_REGRESSION", "CONSUMER_CAPABILITY_PENDING"}
+    if (known and same and i.observation.inspector == INSPECTOR_VERSION
+            and ((changed and decision.action in {"NOOP", "REFRESH"})
+                 or version_policy_hold)):
+        return Decision("IDENTITY_CORRECTION", i.prior.version, i.prior.sha,
+                        decision.relation,
+                        "IDENTITY_CHANGED_SAME_ARTIFACT" if decision.verified
+                        else "IDENTITY_ONLY_VERSION_UNPROVEN", decision.verified)
+    legacy = plan(i)
+    if (known and not changed and version_policy_hold
+            and legacy.action in {"NOOP", "LEGACY"}):
+        # Observing an unchanged identity must not add a version claim or a
+        # version hold to the pre-existing unchanged-version legacy lane.
+        # NOOP may deliberately retain the prior version even when the cask's
+        # text advanced. Preserve that exact decision, not the new cask text.
+        return Decision("LEGACY_PASS", legacy.version, legacy.sha or i.observation.artifact_sha256,
+                        reason="IDENTITY_MATCH_LEGACY_VERSION", verified=False)
+    if changed and decision.action == "HOLD":
+        return Decision("HOLD", reason="IDENTITY_MISMATCH_HELD")
+    return decision
 
 
 def relationship(raw, short):

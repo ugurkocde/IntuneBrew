@@ -114,3 +114,23 @@ class PublicationTests(unittest.TestCase):
     def test_package_version_must_match(self):
         data = dict(type='app', version='1.2', fileName='test_1.20.pkg', url='https://intunebrew.blob.core.windows.net/pkg/test_1.20.pkg', sha='a'*64)
         self.assertFalse(publisher.valid_package(data))
+
+    def test_identity_correction_evidence_is_published_without_inventing_a_version_update(self):
+        evidence = dict(inspector='dmg-identity/1', artifactSha256='a'*64, url='https://example.test/a.dmg', appName='Fixture.app', bundleId='org.example.corrected')
+        self.write('healthy', '1', bundleId=evidence['bundleId'], bundleIdEvidence=evidence, sha='a'*64, url=evidence['url'])
+        Path('collection-report.json').write_text(json.dumps({'failures': [], 'collisions': [], 'identityBackfill': {'lastAttempted': 'healthy'}}))
+        state, feed = publisher.publish()
+        app = json.loads(Path('Apps/healthy.json').read_text())
+        self.assertEqual(app['bundleIdEvidence'], evidence)
+        self.assertEqual(app['version'], '1')
+        self.assertEqual(state['identityBackfill'], {'lastAttempted': 'healthy'})
+        self.assertEqual(feed['updates'], [])
+        self.assertIn('healthy', json.loads(Path('supported_apps.json').read_text()))
+
+    def test_scoped_or_empty_backfill_keeps_full_run_cursor(self):
+        for scope, progress in [('partial', {'lastAttempted': 'new'}), ('all', None), ('all', {'lastAttempted': '../invalid'})]:
+            with self.subTest(scope=scope, progress=progress):
+                Path('catalog-sync.json').write_text(json.dumps({'identityBackfill': {'lastAttempted': 'old'}}))
+                Path('collection-report.json').write_text(json.dumps({'failures': [], 'collisions': [], 'identityBackfill': progress}))
+                state, _ = publisher.publish(scope)
+                self.assertEqual(state['identityBackfill'], {'lastAttempted': 'old'})

@@ -8,6 +8,7 @@ import shutil
 import sys
 import signal
 import threading
+import time
 import requests
 from urllib3.util.retry import Retry
 import re
@@ -25,6 +26,7 @@ from request_sources import source_token, FORMULA_RECIPES, FORMULA_NAMES, FORMUL
 from version_relation import (BundleObservation, InspectionRefusal, PriorEntry, ReconcileInput,
                               CATALOG_CONSUMER_CAPABILITIES, plan, reconcile,
                               numeric_suffix_relationship, SignedBundleObservation,
+                              identity_plan, reconcile_identity, IDENTITY_INSPECTOR_VERSION, INSPECTOR_VERSION,
                               RecoveryInput, availability_recovery, versioned_dmg_url)
 
 
@@ -1469,7 +1471,7 @@ def _https_discovery_response(url, user_agent):
                 response.close()
 
 
-def _stream_to_temp_file(url, user_agent, temp_file, *, https_only=False):
+def _stream_to_temp_file(url, user_agent, temp_file, *, https_only=False, charge=None):
     """Download url into temp_file with one agent. Returns the byte count, or None.
 
     None means this attempt is unusable (HTTP error, HTML page, empty body) and
@@ -1498,6 +1500,9 @@ def _stream_to_temp_file(url, user_agent, temp_file, *, https_only=False):
         for chunk in response.iter_content(chunk_size=8192):
             if not chunk:
                 continue
+
+            if charge is not None:
+                charge(len(chunk))
 
             if first_chunk:
                 first_chunk = False
@@ -1686,7 +1691,7 @@ def _mounted_bundle_metadata(mount_point, bundle_id, team_id=None, *, app_name=N
 
 
 def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None,
-                         _cleanup_deadline=None, app_name=None):
+                         _cleanup_deadline=None, app_name=None, _download_charge=None):
     """Hash the one downloaded file before mounting; return bounded evidence only."""
     if app_name is not None and team_id is not None:
         return InspectionRefusal('SIGNATURE_IDENTITY_INVALID', True)
@@ -1704,9 +1709,12 @@ def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None,
                         # The legacy stream helper can log signed URLs on refusals.
                         with contextlib.redirect_stdout(io.StringIO()):
                             downloaded = _stream_to_temp_file(url, user_agent, dmg,
-                                **({'https_only': True} if app_name is not None else {}))
+                                **({'https_only': True} if app_name is not None else {}),
+                                **({'charge': _download_charge} if _download_charge is not None else {}))
                         if downloaded is not None:
                             break
+                    except _IdentityBudgetExceeded:
+                        return InspectionRefusal("IDENTITY_BUDGET_EXHAUSTED", False)
                     except _OversizedDownload:
                         return InspectionRefusal("DOWNLOAD_FAILED", False)
                     except Exception:
@@ -2038,16 +2046,9 @@ def _recover_vendor_stable(app_info, prior, raw_cask, cask):
     return True
 
 
-def discover_missing_bundle_id(app_info, prior, raw_cask, cask):
-    """Inspect a cask's exact root app only when no effective identity is known."""
-    prior_bundle_id = prior.get('bundleId') if isinstance(prior, dict) else None
-    # The regular-cask merge retires generated font receipts. They are not a
-    # vendor app identity and must not suppress discovery after that transition.
-    if (isinstance(prior, dict) and 'font_payload' in prior and isinstance(app_info.get('name'), str)
-            and prior_bundle_id == 'com.intunebrew.' + sanitize_filename(app_info['name'])):
-        prior_bundle_id = None
-    if (app_info.get('bundleId') or prior_bundle_id
-            or app_info.get('homebrew_formula') or app_info.get('type')
+def _identity_selection(app_info, raw_cask, cask):
+    """Exact root app selection shared by missing and known identity lanes."""
+    if (app_info.get('homebrew_formula') or app_info.get('type')
             or cask in VENDOR_STABLE_SOURCES or not isinstance(raw_cask, dict)
             or raw_cask.get('deprecated') or raw_cask.get('disabled')
             or app_info.get('url') != raw_cask.get('url')
@@ -2077,9 +2078,27 @@ def discover_missing_bundle_id(app_info, prior, raw_cask, cask):
         return None
     checksum = raw_cask.get('sha256')
     declared = checksum.lower() if isinstance(checksum, str) and re.fullmatch(r'[A-Fa-f0-9]{64}', checksum) else None
+    return names[0], declared
+
+
+def discover_missing_bundle_id(app_info, prior, raw_cask, cask):
+    """Inspect a cask's exact root app only when no effective identity is known."""
+    prior_bundle_id = prior.get('bundleId') if isinstance(prior, dict) else None
+    # The regular-cask merge retires generated font receipts. They are not a
+    # vendor app identity and must not suppress discovery after that transition.
+    if (isinstance(prior, dict) and 'font_payload' in prior and isinstance(app_info.get('name'), str)
+            and prior_bundle_id == 'com.intunebrew.' + sanitize_filename(app_info['name'])):
+        prior_bundle_id = None
+    if app_info.get('bundleId') or prior_bundle_id:
+        return None
+    selection = _identity_selection(app_info, raw_cask, cask)
+    if selection is None:
+        return None
+    app_name, declared = selection
+    source_url = raw_cask['url']
     try:
         with _stable_budget(WARP_DOWNLOAD_DEADLINE):
-            observation = inspect_dmg_artifact(source_url, None, declared, app_name=names[0],
+            observation = inspect_dmg_artifact(source_url, None, declared, app_name=app_name,
                 _cleanup_deadline=lambda: signal.setitimer(signal.ITIMER_REAL, 0))
     except CatalogVersionHold as error:
         raise CatalogVersionHold('BUNDLE_ID_' + error.code) from None
@@ -2088,6 +2107,95 @@ def discover_missing_bundle_id(app_info, prior, raw_cask, cask):
     if not isinstance(observation, BundleObservation):
         raise CatalogVersionHold('BUNDLE_ID_OBSERVATION_INVALID')
     app_info['bundleId'] = observation.bundle_id
+    return observation
+
+
+
+class _IdentityBudgetExceeded(Exception):
+    pass
+
+
+class IdentityBudget:
+    """Bound added known-ID backfill work, including failed download attempts."""
+    def __init__(self, artifacts=40, byte_limit=4 * 1024 ** 3, seconds=45 * 60):
+        self.artifacts = artifacts
+        self.bytes_left = byte_limit
+        self.deadline = time.monotonic() + seconds
+
+    def reserve(self):
+        if self.artifacts <= 0 or self.bytes_left <= 0 or self.deadline <= time.monotonic():
+            return False
+        self.artifacts -= 1
+        return True
+
+    def charge(self, size):
+        if size > self.bytes_left or time.monotonic() >= self.deadline:
+            raise _IdentityBudgetExceeded()
+        self.bytes_left -= size
+
+
+identity_budget = IdentityBudget()
+identity_evidence = []
+identity_last_attempted = None
+
+
+def _identity_record(cask, status, reason=None, **details):
+    identity_evidence.append(dict(cask=cask, status=status, reason=reason, **details))
+
+
+def observe_bundle_identity(app_info, prior, raw_cask, cask):
+    """Prove known identities before any legacy version planner shortcut."""
+    global identity_last_attempted
+    prior = prior or {}
+    app_info.pop('bundleIdEvidence', None)
+    selection = _identity_selection(app_info, raw_cask, cask)
+    if selection is None:
+        _identity_record(cask, 'UNVERIFIED', 'INELIGIBLE')
+        return None
+    app_name, declared = selection
+    if not app_info.get('bundleId'):
+        observation = discover_missing_bundle_id(app_info, prior, raw_cask, cask)
+    else:
+        if identity_plan(prior.get('bundleIdEvidence'), app_info['url'], declared,
+                         app_info.get('sha') if declared else prior.get('sha'),
+                         app_name, app_info['bundleId']) == 'REUSE':
+            app_info['bundleIdEvidence'] = dict(prior['bundleIdEvidence'])
+            _identity_record(cask, 'VERIFIED_MATCH', 'BOUND_EVIDENCE_REUSED', liveBytesVerified=False)
+            return None
+        if not identity_budget.reserve():
+            _identity_record(cask, 'DEFERRED', 'IDENTITY_DEFERRED')
+            return None
+        identity_last_attempted = cask
+        try:
+            remaining = max(0.001, identity_budget.deadline - time.monotonic())
+            with _stable_budget(min(WARP_DOWNLOAD_DEADLINE, remaining)):
+                observation = inspect_dmg_artifact(app_info['url'], None, declared,
+                    app_name=app_name, _download_charge=identity_budget.charge,
+                    _cleanup_deadline=lambda: signal.setitimer(signal.ITIMER_REAL, 0))
+        except CatalogVersionHold as error:
+            if error.code not in {'STABLE_DEADLINE_EXCEEDED', 'STABLE_DEADLINE_UNAVAILABLE'}:
+                raise
+            observation = InspectionRefusal('IDENTITY_DEADLINE', False)
+        if isinstance(observation, InspectionRefusal):
+            if observation.integrity or observation.code not in {
+                    "DOWNLOAD_FAILED", "MOUNT_FAILED", "IDENTITY_BUDGET_EXHAUSTED", "IDENTITY_DEADLINE"}:
+                raise CatalogVersionHold('BUNDLE_ID_' + observation.code)
+            _identity_record(cask, 'DEFERRED', observation.code)
+            return None
+    if (not isinstance(observation, BundleObservation)
+            or observation.inspector != INSPECTOR_VERSION
+            or type(observation.artifact_sha256) is not str
+            or type(observation.bundle_id) is not str
+            or not re.fullmatch(r'[0-9a-f]{64}', observation.artifact_sha256)
+            or not re.fullmatch(r'[A-Za-z0-9_.-]{1,200}', observation.bundle_id)
+            or (declared is not None and declared != observation.artifact_sha256)):
+        raise CatalogVersionHold('BUNDLE_ID_OBSERVATION_INVALID')
+    app_info['bundleId'] = observation.bundle_id
+    app_info['bundleIdEvidence'] = dict(inspector=IDENTITY_INSPECTOR_VERSION,
+        artifactSha256=observation.artifact_sha256, url=app_info['url'],
+        appName=app_name, bundleId=observation.bundle_id)
+    _identity_record(cask, 'CORRECTED' if prior.get('bundleId') != observation.bundle_id
+                     else 'VERIFIED_MATCH', liveBytesVerified=True)
     return observation
 
 
@@ -2129,6 +2237,8 @@ def reconcile_vendor_dmg(app_info, prior, raw_cask, cask, *, observation=None):
     if decision.action == 'LEGACY_PASS' and _versioned_vendor_prior(prior, raw_cask, cask):
         # A positive probe is insufficient if the subsequent artifact cannot be inspected.
         raise CatalogVersionHold('AVAILABILITY_UNCERTAIN')
+    if supplied:
+        decision = reconcile_identity(ReconcileInput(**values, observation=observation), prior.get("bundleId"))
     evidence = {"cask": cask, "action": decision.action, "reason": decision.reason,
                 "relation": decision.relation, "sourceRelease": raw_cask["version"][:256],
                 "declaredSha256": declared or "no_check",
@@ -2141,7 +2251,8 @@ def reconcile_vendor_dmg(app_info, prior, raw_cask, cask, *, observation=None):
         evidence.update(observedShort=observation.short_version, observedBuild=observation.bundle_version,
                         artifactSha256=observation.artifact_sha256, inspector=observation.inspector)
     if supplied:
-        evidence.update(bundleIdDiscovered=True, observedBundleId=observation.bundle_id)
+        evidence.update(bundleIdDiscovered=True, observedBundleId=observation.bundle_id,
+                        versionVerified=decision.verified)
     if len(version_evidence) < 5000:
         version_evidence.append(evidence)
     if decision.action == "HOLD":
@@ -2869,7 +2980,91 @@ def update_readme_with_latest_changes(apps_info):
     
     print("Could not find the Features section in README.md")
 
+def requested_identity_tokens():
+    """Read the existing manual scope before spending the inspection budget.
+
+    GitHub supplies this event file to every step. Read only the casks input;
+    it changes ordering, never eligibility, integrity checks or publish scope.
+    """
+    if os.environ.get('GITHUB_EVENT_NAME') != 'workflow_dispatch':
+        return set()
+    try:
+        with open(os.environ['GITHUB_EVENT_PATH'], encoding='utf-8') as event_file:
+            raw = event_file.read(1024 * 1024 + 1)
+        if len(raw) > 1024 * 1024:
+            raise ValueError('Event input too large')
+        event = json.loads(raw)
+        inputs = event.get('inputs', {})
+        if inputs is None:
+            inputs = {}
+        value = inputs.get('casks', '')
+        if value is None:
+            value = ''
+        if not isinstance(value, str):
+            raise ValueError('Invalid casks input')
+        tokens = value.split()
+        if any(not re.fullmatch(r'[a-z0-9][a-z0-9+_.@-]*', token) for token in tokens):
+            raise ValueError('Invalid source token')
+        return set(tokens)
+    except (KeyError, OSError, ValueError, AttributeError):
+        # Never expose the event payload or silently lose a requested scope.
+        raise RuntimeError('Could not read manual collection scope') from None
+
+
+def identity_scan_order(urls, apps_folder):
+    """Prioritise metadata conflicts, then rotate past the last real attempt.
+
+    A failed vendor must not permanently consume the first backfill slots.
+    Signals choose order only; only an inspected exact app proves identity.
+    """
+    prior_ids = {}
+    for path in sorted(Path(apps_folder).glob('*.json')):
+        try:
+            entry = json.loads(path.read_text())
+            if isinstance(entry.get('homebrew_cask'), str):
+                prior_ids[entry['homebrew_cask']] = entry.get('bundleId')
+        except (OSError, ValueError, AttributeError):
+            continue
+
+    def rank(url):
+        token = get_cask_token(url)
+        raw = cask_cache.get(url, {})
+        primary = set()
+        def visit(value):
+            if isinstance(value, dict):
+                for key, child in value.items():
+                    if key in {'quit', 'launchctl'}:
+                        values = child if isinstance(child, list) else [child]
+                        primary.update(v for v in values if isinstance(v, str))
+                    else:
+                        visit(child)
+            elif isinstance(value, list):
+                for child in value:
+                    visit(child)
+        visit(raw.get('artifacts', []) if isinstance(raw, dict) else [])
+        return (0 if primary and prior_ids.get(token) not in primary else 1, token)
+
+    ordered = sorted(urls, key=rank)
+    try:
+        cursor = json.loads(Path('catalog-sync.json').read_text()).get('identityBackfill', {}).get('lastAttempted')
+    except (OSError, ValueError, AttributeError):
+        cursor = None
+    if isinstance(cursor, str):
+        index = next((i for i, url in enumerate(ordered) if get_cask_token(url) == cursor), None)
+        if index is not None:
+            ordered = ordered[index + 1:] + ordered[:index + 1]
+    requested = requested_identity_tokens()
+    # Partition after rotation so a retained full-run cursor cannot push a
+    # manually requested app behind forty unrelated backfill inspections.
+    return ([url for url in ordered if get_cask_token(url) in requested]
+            + [url for url in ordered if get_cask_token(url) not in requested])
+
+
 def main():
+    global identity_budget, identity_last_attempted
+    identity_budget = IdentityBudget()
+    identity_last_attempted = None
+    identity_evidence.clear()
     filename_collisions.clear()
     collection_failures.clear()
     version_evidence.clear()
@@ -2943,6 +3138,7 @@ def main():
                     # branches on the previous type and would change fileName handling
                     # if it saw the refreshed value.
                     previous_font_entry = "font_payload" in existing_data
+                    existing_data.pop("bundleIdEvidence", None)
                     existing_data["type"] = "app"
                     existing_data["vendor_url"] = app_info["vendor_url"]
                     if 'font_payload' in app_info:
@@ -2976,7 +3172,7 @@ def main():
             print(f"Full error details: ", e)
 
     # Process regular Homebrew cask URLs
-    for url in homebrew_cask_urls:
+    for url in identity_scan_order(homebrew_cask_urls, apps_folder):
         try:
             app_info = get_homebrew_app_info(url)
             display_name = app_info['name']
@@ -3008,7 +3204,7 @@ def main():
                                 and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
                             continue  # A font receipt is not a vendor app bundle ID.
                         if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason",
-                                       "type", "homebrew_cask", "vendor_url", "font_payload"]:
+                                       "type", "homebrew_cask", "vendor_url", "font_payload", "bundleIdEvidence"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url, sha and previous_version
@@ -3026,7 +3222,7 @@ def main():
                         app_info["sha"] = new_sha
                     app_info["previous_version"] = previous_version
 
-            discovery = discover_missing_bundle_id(app_info, existing_data, cask_cache.get(url), get_cask_token(url))
+            discovery = observe_bundle_identity(app_info, existing_data, cask_cache.get(url), get_cask_token(url))
             if discovery is None:
                 reconcile_vendor_dmg(app_info, existing_data, cask_cache.get(url), get_cask_token(url))
             else:
@@ -3043,6 +3239,16 @@ def main():
                 else:
                     raise RuntimeError(f"Could not verify download hash for {display_name}")
 
+            # A no_check legacy refresh still hashes today's bytes. Reused
+            # identity proof only covers the old catalog pin; never carry it
+            # onto a changed digest or describe those bytes as identity-verified.
+            proof = app_info.get('bundleIdEvidence')
+            if proof and proof['artifactSha256'] != app_info.get('sha'):
+                app_info.pop('bundleIdEvidence')
+                token = get_cask_token(url)
+                identity_evidence[:] = [row for row in identity_evidence if row['cask'] != token]
+                _identity_record(token, 'DEFERRED', 'CATALOG_HASH_CHANGED_AFTER_REUSE')
+
             with open(file_path, "w") as f:
                 json.dump(app_info, f, indent=2)
 
@@ -3054,6 +3260,9 @@ def main():
             failure = {"cask": get_cask_token(url), "stage": "collection"}
             if isinstance(e, CatalogVersionHold):
                 failure["reason"] = e.code
+                token = get_cask_token(url)
+                identity_evidence[:] = [row for row in identity_evidence if row["cask"] != token]
+                _identity_record(token, "REFUSED", e.code)
             collection_failures.append(failure)
             print(f"Error processing {url}: {str(e)}")
 
@@ -3087,7 +3296,7 @@ def main():
                                 and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
                             continue
                         if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason",
-                                       "type", "homebrew_cask", "vendor_url", "font_payload"]:
+                                       "type", "homebrew_cask", "vendor_url", "font_payload", "bundleIdEvidence"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version
@@ -3159,7 +3368,7 @@ def main():
                                 and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
                             continue
                         if key not in ["version", "url", "sha", "previous_version", "deprecated", "deprecation_reason",
-                                       "type", "homebrew_cask", "vendor_url", "font_payload"]:
+                                       "type", "homebrew_cask", "vendor_url", "font_payload", "bundleIdEvidence"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url, sha and previous_version
@@ -3220,7 +3429,7 @@ def main():
                                 and existing_data[key] == 'com.intunebrew.' + sanitize_filename(display_name)):
                             continue
                         if key not in ["version", "url", "previous_version", "deprecated", "deprecation_reason",
-                                       "type", "homebrew_cask", "vendor_url", "font_payload"]:
+                                       "type", "homebrew_cask", "vendor_url", "font_payload", "bundleIdEvidence"]:
                             app_info[key] = existing_data[key]
                     
                     # Update version, url and previous_version
@@ -3299,6 +3508,10 @@ def main():
             "failures": collection_failures,
             "collisions": filename_collisions,
             "versionEvidence": version_evidence,
+            "identityEvidence": identity_evidence,
+            "identityBackfill": {"lastAttempted": identity_last_attempted},
+            "identityCounts": {status: sum(row["status"] == status for row in identity_evidence)
+                               for status in ("VERIFIED_MATCH", "CORRECTED", "REFUSED", "DEFERRED", "UNVERIFIED")},
         }, indent=2) + "\n")
     if collisions and os.environ.get("CATALOG_ALLOW_PARTIAL") != "1":
         sys.exit(1)
