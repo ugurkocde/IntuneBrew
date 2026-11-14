@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-14T00:57:09.594Z",
+  "last_full_scan": "2026-11-14T05:21:17.235Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -243,10 +243,10 @@
       "name": "Angry IP Scanner"
     },
     "anki": {
-      "last_checked": "2026-01-15T10:01:10.212Z",
-      "bundle_id": "net.ankiweb.dtop",
+      "last_checked": "2026-11-14T05:21:17.216Z",
+      "bundle_id": "net.ankiweb.anki",
       "status": "verified",
-      "source": "api",
+      "source": "file",
       "name": "Anki"
     },
     "another_redis_desktop_manager": {
@@ -371,10 +371,10 @@
       "name": "Atlassian SourceTree"
     },
     "audacity": {
-      "last_checked": "2026-01-15T11:13:08.196Z",
-      "bundle_id": "org.audacityteam.audacity",
+      "last_checked": "2026-11-14T05:21:17.216Z",
+      "bundle_id": "org.audacityteam.audacity4",
       "status": "verified",
-      "source": "api",
+      "source": "file",
       "name": "Audacity"
     },
     "audio_hijack": {
@@ -748,10 +748,10 @@
       "name": "Calmly Writer"
     },
     "camtasia": {
-      "last_checked": "2026-01-15T13:10:01.967Z",
-      "bundle_id": "com.techsmith.camtasia2023",
+      "last_checked": "2026-11-14T05:21:17.218Z",
+      "bundle_id": "com.techsmith.camtasia",
       "status": "verified",
-      "source": "api",
+      "source": "file",
       "name": "Camtasia"
     },
     "canva": {
@@ -1768,11 +1768,10 @@
       "name": "ClamXAV"
     },
     "cleanmymac_x_chinese": {
-      "last_checked": "2026-01-15T16:17:28.274Z",
-      "bundle_id": "com.macpaw.CleanMyMac4",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-11-14T05:21:17.218Z",
+      "bundle_id": "com.macpaw.zh.CleanMyMac4",
+      "status": "verified",
+      "source": "file",
       "name": "CleanMyMac X Chinese"
     },
     "cleartext": {
@@ -2627,11 +2626,10 @@
       "name": "ActiveDock"
     },
     "activitywatch": {
-      "last_checked": "2026-01-15T21:34:30.895Z",
-      "bundle_id": "net.activitywatch",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-11-14T05:21:17.215Z",
+      "bundle_id": "net.activitywatch.ActivityWatch",
+      "status": "verified",
+      "source": "file",
       "name": "ActivityWatch"
     },
     "adlock": {
@@ -2898,11 +2896,10 @@
       "name": "Chalk"
     },
     "charmstone": {
-      "last_checked": "2026-01-15T22:07:20.035Z",
-      "bundle_id": "com.knollsoft.Charmstone",
-      "previous_bundle_id": "com.knollsoft.CharmstonePro",
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-11-14T05:21:17.218Z",
+      "bundle_id": "com.knollsoft.CharmstonePro",
+      "status": "verified",
+      "source": "file",
       "name": "Charmstone"
     },
     "chatwork": {
@@ -3045,11 +3042,10 @@
       "name": "Debookee"
     },
     "default_folder_x": {
-      "last_checked": "2026-01-16T01:01:38.033Z",
-      "bundle_id": "com.stclairsoft.DefaultFolderX",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-11-14T05:21:17.220Z",
+      "bundle_id": "com.stclairsoft.DefaultFolderX5",
+      "status": "verified",
+      "source": "file",
       "name": "Default Folder X"
     },
     "descript": {
@@ -4674,8 +4670,8 @@
       "name": "Meld for macOS"
     },
     "mellel": {
-      "last_checked": "2026-01-17T08:37:42.129Z",
-      "bundle_id": "com.redlex.mellel6",
+      "last_checked": "2026-11-14T05:21:17.225Z",
+      "bundle_id": "com.redlex.mellel.mac",
       "status": "verified",
       "source": "file",
       "name": "Mellel"
@@ -4877,8 +4873,8 @@
       "name": "MindMac"
     },
     "mindmanager": {
-      "last_checked": "2026-01-17T08:37:42.132Z",
-      "bundle_id": "com.mindjet.mindmanager.24",
+      "last_checked": "2026-11-14T05:21:17.225Z",
+      "bundle_id": "com.mindjet.mindmanager.26",
       "status": "verified",
       "source": "file",
       "name": "Mindmanager"
@@ -5570,8 +5566,8 @@
       "name": "ONLYOFFICE"
     },
     "onlyswitch": {
-      "last_checked": "2026-01-17T08:37:42.147Z",
-      "bundle_id": "com.jacklandrin.OnlySwitch",
+      "last_checked": "2026-11-14T05:21:17.227Z",
+      "bundle_id": "jacklandrin.OnlySwitch",
       "status": "verified",
       "source": "file",
       "name": "OnlySwitch"
@@ -5836,8 +5832,8 @@
       "name": "Paste"
     },
     "pastebot": {
-      "last_checked": "2026-01-17T08:37:42.150Z",
-      "bundle_id": "com.tapbots.Pastebot2Mac",
+      "last_checked": "2026-11-14T05:21:17.227Z",
+      "bundle_id": "com.tapbots.Pastebot3Mac",
       "status": "verified",
       "source": "file",
       "name": "Pastebot"
@@ -6284,8 +6280,8 @@
       "name": "QLab"
     },
     "qobuz": {
-      "last_checked": "2026-01-17T08:37:42.159Z",
-      "bundle_id": "com.qobuz.QobuzDesktop",
+      "last_checked": "2026-11-14T05:21:17.228Z",
+      "bundle_id": "com.qobuz.desktop",
       "status": "verified",
       "source": "file",
       "name": "Qobuz"
@@ -6606,8 +6602,8 @@
       "name": "Rive"
     },
     "riverside_studio": {
-      "last_checked": "2026-01-17T08:37:42.167Z",
-      "bundle_id": "fm.riverside.studio",
+      "last_checked": "2026-11-14T05:21:17.229Z",
+      "bundle_id": "RVS-Riverside.fm-Mac",
       "status": "verified",
       "source": "file",
       "name": "Riverside Studio"
@@ -6676,8 +6672,8 @@
       "name": "Rode Connect"
     },
     "roon": {
-      "last_checked": "2026-01-17T10:34:29.126Z",
-      "bundle_id": "com.roonlabs.Roon",
+      "last_checked": "2026-11-14T05:21:17.229Z",
+      "bundle_id": "com.roon.Roon",
       "status": "verified",
       "source": "file",
       "name": "Roon"
@@ -6746,8 +6742,8 @@
       "name": "SABnzbd"
     },
     "safe_exam_browser": {
-      "last_checked": "2026-01-17T08:37:42.168Z",
-      "bundle_id": "ch.ethz.seb.SEB",
+      "last_checked": "2026-11-14T05:21:17.229Z",
+      "bundle_id": "org.safeexambrowser.SafeExamBrowser",
       "status": "verified",
       "source": "file",
       "name": "Safe Exam Browser"
@@ -6781,8 +6777,8 @@
       "name": "sbarex QLMarkdown"
     },
     "sc_menu": {
-      "last_checked": "2026-01-17T08:37:42.169Z",
-      "bundle_id": "de.sccm.SCMenu",
+      "last_checked": "2026-11-14T05:21:17.229Z",
+      "bundle_id": "com.ttinc.sc-menu",
       "status": "verified",
       "source": "file",
       "name": "SC Menu"
@@ -8877,16 +8873,10 @@
       "name": "WiFiman Desktop"
     },
     "kiro": {
-      "last_checked": "2026-05-25T00:58:44.737Z",
-      "bundle_id": "com.kiro.kantoku",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "github_search",
-      "methods_tried": [
-        "mac_app_store",
-        "pkg_inspection",
-        "github_search"
-      ],
+      "last_checked": "2026-11-14T05:21:17.224Z",
+      "bundle_id": "dev.kiro.desktop",
+      "status": "verified",
+      "source": "file",
       "name": "kiro"
     },
     "cmux": {
