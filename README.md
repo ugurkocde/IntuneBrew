@@ -675,7 +675,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | rectangle pro | 3.99 | 3.101 |
 | windows app | 11.4.4 | 11.4.5 |
 
-25 app updates could not be published. See [catalog sync status](catalog-sync.json).
+22 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 

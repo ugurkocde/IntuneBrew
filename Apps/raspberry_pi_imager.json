@@ -4,12 +4,19 @@
   "version": "2.0.12",
   "url": "https://github.com/raspberrypi/rpi-imager/releases/download/v2.0.12/rpi-imager-v2.0.12.dmg",
   "vendor_url": "https://github.com/raspberrypi/rpi-imager/releases/download/v2.0.12/rpi-imager-v2.0.12.dmg",
-  "bundleId": "org.raspberrypi.imagingutility",
+  "bundleId": "com.raspberrypi.rpi-imager",
   "homepage": "https://www.raspberrypi.com/software/",
   "homebrew_cask": "raspberry-pi-imager",
   "fileName": "rpi-imager-v2.0.12.dmg",
   "sha": "15b1a94c712c0032750855653c2bf129dceb401329fbce0a83d7cf05dc58a421",
   "category": "Utilities",
   "publisher": "Raspberry Pi Foundation",
-  "previous_version": "2.0.12"
+  "previous_version": "2.0.12",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "15b1a94c712c0032750855653c2bf129dceb401329fbce0a83d7cf05dc58a421",
+    "url": "https://github.com/raspberrypi/rpi-imager/releases/download/v2.0.12/rpi-imager-v2.0.12.dmg",
+    "appName": "Raspberry Pi Imager.app",
+    "bundleId": "com.raspberrypi.rpi-imager"
+  }
 }

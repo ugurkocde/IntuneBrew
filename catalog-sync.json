@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-14T05:20:19.597204Z",
+  "lastPublishedAt": "2026-11-14T06:10:59.334867Z",
   "lastFullSyncAt": "2026-11-14T05:20:19.597204Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
@@ -107,7 +107,7 @@
     }
   ],
   "appCount": 1160,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43558538929",
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43563973795",
   "identityBackfill": {
     "lastAttempted": "4k-slideshow-maker"
   }
