@@ -282,3 +282,79 @@ class UnchangedArtifactVersionHoldTests(unittest.TestCase):
                     self.assertEqual(relation.reconcile_identity(advanced, 'org.example.old').action, 'HOLD')
             with patch.object(relation, 'reconcile', return_value=relation.Decision('HOLD', reason='OBSERVATION_INCONSISTENT')):
                 self.assertEqual(relation.reconcile_identity(request, 'org.example.old').action, 'HOLD')
+
+
+class ScopedIdentityPublicationTests(unittest.TestCase):
+    def test_manual_scope_validation_and_nonmanual_events(self):
+        import os
+        import tempfile
+        from pathlib import Path
+        with tempfile.TemporaryDirectory() as directory:
+            path = Path(directory)/'event.json'
+            with patch.dict(os.environ, {'GITHUB_EVENT_NAME': 'workflow_dispatch', 'GITHUB_EVENT_PATH': str(path)}):
+                for payload in [{'inputs': {'casks': 'raspberry-pi-imager other other'}}, {'inputs': {}}, {'inputs': None}, {'inputs': {'casks': None}}, {}]:
+                    path.write_text(json.dumps(payload))
+                    expected = {'raspberry-pi-imager', 'other'} if (payload.get('inputs') or {}).get('casks') else set()
+                    self.assertEqual(c.requested_identity_tokens(), expected)
+                for payload in [{'inputs': {'casks': ['bad']}}, {'inputs': {'casks': 'bad;command'}}, {'inputs': []}, []]:
+                    path.write_text(json.dumps(payload))
+                    with self.assertRaisesRegex(RuntimeError, 'Could not read manual collection scope'):
+                        c.requested_identity_tokens()
+                path.write_text('not json')
+                with self.assertRaisesRegex(RuntimeError, 'Could not read manual collection scope'):
+                    c.requested_identity_tokens()
+            with patch.dict(os.environ, {'GITHUB_EVENT_NAME': 'schedule', 'GITHUB_EVENT_PATH': str(path)}):
+                self.assertEqual(c.requested_identity_tokens(), set())
+
+    def test_requested_cask_is_inspected_before_budget_and_survives_scoped_publication_twice(self):
+        import contextlib
+        import importlib
+        import os
+        from pathlib import Path
+        import subprocess
+        import tempfile
+        from test_collect_app_info import CountingSession, cask_response, run_collector
+        publisher = importlib.import_module('publish_catalog')
+        reverter = importlib.import_module('revert_out_of_scope')
+        with tempfile.TemporaryDirectory() as directory, contextlib.chdir(directory):
+            subprocess.run(['git', 'init', '-q'], check=True)
+            Path('Apps').mkdir(); Path('README.md').write_text('Fixture catalog\n')
+            casks = [discovery.fixture('earlier-'+str(i).zfill(2), 'Earlier '+str(i).zfill(2)) for i in range(41)]
+            casks.append(discovery.fixture('raspberry-pi-imager', 'Raspberry Pi Imager'))
+            urls = ['https://formulae.brew.sh/api/cask/'+data['token']+'.json' for data in casks]
+            for data in casks:
+                prior = dict(name=data['name'][0], homebrew_cask=data['token'], version=data['version'],
+                             bundleId='org.example.old', url=data['url'], sha=SHA)
+                Path('Apps/'+c.sanitize_filename(data['name'][0])+'.json').write_text(json.dumps(prior))
+            cursor = {'identityBackfill': {'lastAttempted': 'raspberry-pi-imager'}}
+            Path('catalog-sync.json').write_text(json.dumps(cursor))
+            Path('event.json').write_text(json.dumps({'inputs': {'casks': 'raspberry-pi-imager'}}))
+            subprocess.run(['git', 'add', '.'], check=True)
+            subprocess.run(['git', '-c', 'user.name=Fixture', '-c', 'user.email=fixture@example.invalid', 'commit', '-qm', 'Fixture'], check=True)
+            session = CountingSession(dict(zip(urls, [cask_response(data) for data in casks])))
+            for cycle in range(2):
+                inspected = []
+                def observe(url, *args, **kwargs):
+                    inspected.append(url)
+                    bundle = 'com.raspberrypi.rpi-imager' if url.endswith('raspberry-pi-imager.dmg') else 'org.example.old'
+                    return c.BundleObservation(SHA, bundle, 'v1.2.3', 'v1.2.3')
+                with patch.dict(os.environ, {'GITHUB_EVENT_NAME': 'workflow_dispatch', 'GITHUB_EVENT_PATH': str(Path('event.json').resolve()), 'CATALOG_COLLECTION_REPORT': 'collection-report.json'}), \
+                        run_collector(directory, urls, session=session), \
+                        patch.object(c.shutil, 'which', return_value='/usr/bin/hdiutil'), \
+                        patch.object(c, '_stable_budget', side_effect=lambda seconds: contextlib.nullcontext()), \
+                        patch.object(c, 'inspect_dmg_artifact', side_effect=observe):
+                    c.main()
+                self.assertEqual(len(inspected), 40)
+                if cycle == 0:
+                    self.assertEqual(inspected[0], casks[-1]['url'])
+                else:
+                    self.assertNotIn(casks[-1]['url'], inspected)  # Reuse the persisted Pi proof.
+                reverter.revert({'raspberry-pi-imager'})
+                state, _ = publisher.publish('partial')
+                pi = json.loads(Path('Apps/raspberry_pi_imager.json').read_text())
+                self.assertEqual(pi['bundleId'], 'com.raspberrypi.rpi-imager')
+                self.assertEqual(pi['bundleIdEvidence']['artifactSha256'], SHA)
+                self.assertEqual(state['identityBackfill'], cursor['identityBackfill'])
+                self.assertTrue(json.loads(Path('supported_apps.json').read_text())['raspberry_pi_imager'].endswith('/Apps/raspberry_pi_imager.json'))
+                for path in Path('Apps').glob('earlier_*.json'):
+                    self.assertNotIn('bundleIdEvidence', json.loads(path.read_text()))

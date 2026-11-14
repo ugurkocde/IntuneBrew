@@ -2980,6 +2980,37 @@ def update_readme_with_latest_changes(apps_info):
     
     print("Could not find the Features section in README.md")
 
+def requested_identity_tokens():
+    """Read the existing manual scope before spending the inspection budget.
+
+    GitHub supplies this event file to every step. Read only the casks input;
+    it changes ordering, never eligibility, integrity checks or publish scope.
+    """
+    if os.environ.get('GITHUB_EVENT_NAME') != 'workflow_dispatch':
+        return set()
+    try:
+        with open(os.environ['GITHUB_EVENT_PATH'], encoding='utf-8') as event_file:
+            raw = event_file.read(1024 * 1024 + 1)
+        if len(raw) > 1024 * 1024:
+            raise ValueError('Event input too large')
+        event = json.loads(raw)
+        inputs = event.get('inputs', {})
+        if inputs is None:
+            inputs = {}
+        value = inputs.get('casks', '')
+        if value is None:
+            value = ''
+        if not isinstance(value, str):
+            raise ValueError('Invalid casks input')
+        tokens = value.split()
+        if any(not re.fullmatch(r'[a-z0-9][a-z0-9+_.@-]*', token) for token in tokens):
+            raise ValueError('Invalid source token')
+        return set(tokens)
+    except (KeyError, OSError, ValueError, AttributeError):
+        # Never expose the event payload or silently lose a requested scope.
+        raise RuntimeError('Could not read manual collection scope') from None
+
+
 def identity_scan_order(urls, apps_folder):
     """Prioritise metadata conflicts, then rotate past the last real attempt.
 
@@ -3022,7 +3053,11 @@ def identity_scan_order(urls, apps_folder):
         index = next((i for i, url in enumerate(ordered) if get_cask_token(url) == cursor), None)
         if index is not None:
             ordered = ordered[index + 1:] + ordered[:index + 1]
-    return ordered
+    requested = requested_identity_tokens()
+    # Partition after rotation so a retained full-run cursor cannot push a
+    # manually requested app behind forty unrelated backfill inspections.
+    return ([url for url in ordered if get_cask_token(url) in requested]
+            + [url for url in ordered if get_cask_token(url) not in requested])
 
 
 def main():
