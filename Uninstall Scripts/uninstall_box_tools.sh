@@ -17,6 +17,24 @@ fi
 echo "Stopping Box Tools if running..."
 pkill -f "Box Tools" 2>/dev/null || true
 
+# Unload service com.box.Box-Device-Trust.launch
+echo "Unloading service com.box.Box-Device-Trust.launch..."
+launchctl unload -w /Library/LaunchAgents/com.box.Box-Device-Trust.launch.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.box.Box-Device-Trust.launch.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.box.Box-Device-Trust.launch.plist 2>/dev/null || true
+
+# Unload service com.Box.Box-Edit.launch
+echo "Unloading service com.Box.Box-Edit.launch..."
+launchctl unload -w /Library/LaunchAgents/com.Box.Box-Edit.launch.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.Box.Box-Edit.launch.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.Box.Box-Edit.launch.plist 2>/dev/null || true
+
+# Unload service com.box.Box-Local-Com-Server.launch
+echo "Unloading service com.box.Box-Local-Com-Server.launch..."
+launchctl unload -w /Library/LaunchAgents/com.box.Box-Local-Com-Server.launch.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/com.box.Box-Local-Com-Server.launch.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/com.box.Box-Local-Com-Server.launch.plist 2>/dev/null || true
+
 # Kill application with bundle ID com.Box.Box-Edit if running
 echo "Stopping application with bundle ID com.Box.Box-Edit if running..."
 killall -9 "com.Box.Box-Edit" 2>/dev/null || true
