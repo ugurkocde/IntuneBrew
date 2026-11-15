@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Application Support/VisualParadigm" ]; then
     rm -f "$HOME/Library/Application Support/VisualParadigm" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.install4j.1106-5897-7327-6550.5.plist
+echo "Removing $HOME/Library/Preferences/com.install4j.1106-5897-7327-6550.5.plist..."
+if [ -d "$HOME/Library/Preferences/com.install4j.1106-5897-7327-6550.5.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.install4j.1106-5897-7327-6550.5.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.install4j.1106-5897-7327-6550.5.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.install4j.1106-5897-7327-6550.5.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/com.install4j.1106-5897-7327-6550.5.savedState
 echo "Removing $HOME/Library/Saved Application State/com.install4j.1106-5897-7327-6550.5.savedState..."
 if [ -d "$HOME/Library/Saved Application State/com.install4j.1106-5897-7327-6550.5.savedState" ]; then

@@ -17,12 +17,12 @@ fi
 echo "Stopping Rode Connect if running..."
 pkill -f "Rode Connect" 2>/dev/null || true
 
-# Remove $HOME/Library/Cache/com.rode.rodeconnect
-echo "Removing $HOME/Library/Cache/com.rode.rodeconnect..."
-if [ -d "$HOME/Library/Cache/com.rode.rodeconnect" ]; then
-    rm -rf "$HOME/Library/Cache/com.rode.rodeconnect" 2>/dev/null || true
-elif [ -f "$HOME/Library/Cache/com.rode.rodeconnect" ]; then
-    rm -f "$HOME/Library/Cache/com.rode.rodeconnect" 2>/dev/null || true
+# Remove $HOME/Library/Caches/com.rode.rodeconnect
+echo "Removing $HOME/Library/Caches/com.rode.rodeconnect..."
+if [ -d "$HOME/Library/Caches/com.rode.rodeconnect" ]; then
+    rm -rf "$HOME/Library/Caches/com.rode.rodeconnect" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.rode.rodeconnect" ]; then
+    rm -f "$HOME/Library/Caches/com.rode.rodeconnect" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.rode.rodeconnect

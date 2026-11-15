@@ -41,6 +41,22 @@ elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.
     rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.apidog.app.sfl*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/CrashReporter/Apidog Helper_*.plist
+echo "Removing $HOME/Library/Application Support/CrashReporter/Apidog Helper_*.plist..."
+if [ -d "$HOME/Library/Application Support/CrashReporter/Apidog Helper_*.plist" ]; then
+    rm -rf "$HOME/Library/Application Support/CrashReporter/Apidog Helper_*.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/CrashReporter/Apidog Helper_*.plist" ]; then
+    rm -f "$HOME/Library/Application Support/CrashReporter/Apidog Helper_*.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/DiagnosticReports/Apidog Helper-*.ips
+echo "Removing $HOME/Library/Logs/DiagnosticReports/Apidog Helper-*.ips..."
+if [ -d "$HOME/Library/Logs/DiagnosticReports/Apidog Helper-*.ips" ]; then
+    rm -rf "$HOME/Library/Logs/DiagnosticReports/Apidog Helper-*.ips" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/DiagnosticReports/Apidog Helper-*.ips" ]; then
+    rm -f "$HOME/Library/Logs/DiagnosticReports/Apidog Helper-*.ips" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.apidog.app.plist
 echo "Removing $HOME/Library/Preferences/com.apidog.app.plist..."
 if [ -d "$HOME/Library/Preferences/com.apidog.app.plist" ]; then

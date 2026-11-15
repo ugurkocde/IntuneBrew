@@ -83,6 +83,14 @@ elif [ -f "/Users/Shared/CleanMyMac-X" ]; then
     rm -f "/Users/Shared/CleanMyMac-X" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/*.com.macpaw.zh.CleanMyMac4
+echo "Removing $HOME/Library/Application Scripts/*.com.macpaw.zh.CleanMyMac4..."
+if [ -d "$HOME/Library/Application Scripts/*.com.macpaw.zh.CleanMyMac4" ]; then
+    rm -rf "$HOME/Library/Application Scripts/*.com.macpaw.zh.CleanMyMac4" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/*.com.macpaw.zh.CleanMyMac4" ]; then
+    rm -f "$HOME/Library/Application Scripts/*.com.macpaw.zh.CleanMyMac4" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/com.macpaw.zh.CleanMyMac4.CleanMyMacWidget
 echo "Removing $HOME/Library/Application Scripts/com.macpaw.zh.CleanMyMac4.CleanMyMacWidget..."
 if [ -d "$HOME/Library/Application Scripts/com.macpaw.zh.CleanMyMac4.CleanMyMacWidget" ]; then
@@ -193,6 +201,14 @@ if [ -d "$HOME/Library/Preferences/*.com.macpaw.zh.CleanMyMac4*.plist" ]; then
     rm -rf "$HOME/Library/Preferences/*.com.macpaw.zh.CleanMyMac4*.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/*.com.macpaw.zh.CleanMyMac4*.plist" ]; then
     rm -f "$HOME/Library/Preferences/*.com.macpaw.zh.CleanMyMac4*.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.macpaw.zh.CleanMyMac4.plist
+echo "Removing $HOME/Library/Preferences/com.macpaw.zh.CleanMyMac4.plist..."
+if [ -d "$HOME/Library/Preferences/com.macpaw.zh.CleanMyMac4.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.macpaw.zh.CleanMyMac4.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.macpaw.zh.CleanMyMac4.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.macpaw.zh.CleanMyMac4.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/com.macpaw.zh.CleanMyMac4.savedState

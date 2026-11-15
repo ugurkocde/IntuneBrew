@@ -17,6 +17,10 @@ fi
 echo "Stopping Remote Buddy if running..."
 pkill -f "Remote Buddy" 2>/dev/null || true
 
+# Kill application with bundle ID com.iospirit.RemoteBuddy if running
+echo "Stopping application with bundle ID com.iospirit.RemoteBuddy if running..."
+killall -9 "com.iospirit.RemoteBuddy" 2>/dev/null || true
+
 # Remove /Applications/Remote Buddy.app
 echo "Removing /Applications/Remote Buddy.app..."
 if [ -d "/Applications/Remote Buddy.app" ]; then

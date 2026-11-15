@@ -57,14 +57,6 @@ elif [ -f "$HOME/Library/Caches/com.milanote.app.ShipIt" ]; then
     rm -f "$HOME/Library/Caches/com.milanote.app.ShipIt" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Library/Logs/Milanote
-echo "Removing $HOME/Library/Library/Logs/Milanote..."
-if [ -d "$HOME/Library/Library/Logs/Milanote" ]; then
-    rm -rf "$HOME/Library/Library/Logs/Milanote" 2>/dev/null || true
-elif [ -f "$HOME/Library/Library/Logs/Milanote" ]; then
-    rm -f "$HOME/Library/Library/Logs/Milanote" 2>/dev/null || true
-fi
-
 # Remove $HOME/Library/Logs/Milanote
 echo "Removing $HOME/Library/Logs/Milanote..."
 if [ -d "$HOME/Library/Logs/Milanote" ]; then

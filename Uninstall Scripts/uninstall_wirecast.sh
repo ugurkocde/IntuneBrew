@@ -69,12 +69,12 @@ elif [ -f "$HOME/Library/Preferences/Wirecast" ]; then
     rm -f "$HOME/Library/Preferences/Wirecast" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Saved Applicate State/net.telestream.wirecast.savedState
-echo "Removing $HOME/Library/Saved Applicate State/net.telestream.wirecast.savedState..."
-if [ -d "$HOME/Library/Saved Applicate State/net.telestream.wirecast.savedState" ]; then
-    rm -rf "$HOME/Library/Saved Applicate State/net.telestream.wirecast.savedState" 2>/dev/null || true
-elif [ -f "$HOME/Library/Saved Applicate State/net.telestream.wirecast.savedState" ]; then
-    rm -f "$HOME/Library/Saved Applicate State/net.telestream.wirecast.savedState" 2>/dev/null || true
+# Remove $HOME/Library/Saved Application State/net.telestream.wirecast.savedState
+echo "Removing $HOME/Library/Saved Application State/net.telestream.wirecast.savedState..."
+if [ -d "$HOME/Library/Saved Application State/net.telestream.wirecast.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/net.telestream.wirecast.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/net.telestream.wirecast.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/net.telestream.wirecast.savedState" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
