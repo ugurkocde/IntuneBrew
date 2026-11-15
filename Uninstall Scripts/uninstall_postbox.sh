@@ -17,6 +17,10 @@ fi
 echo "Stopping Postbox if running..."
 pkill -f "Postbox" 2>/dev/null || true
 
+# Kill application with bundle ID com.postbox-inc.postbox if running
+echo "Stopping application with bundle ID com.postbox-inc.postbox if running..."
+killall -9 "com.postbox-inc.postbox" 2>/dev/null || true
+
 # Remove /Applications/Postbox.app
 echo "Removing /Applications/Postbox.app..."
 if [ -d "/Applications/Postbox.app" ]; then
