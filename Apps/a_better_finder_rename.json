@@ -21,5 +21,12 @@
   "category": "Utilities",
   "publisher": "publicspace.net",
   "previous_version": "12.36",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "5bcf670732acceecab4a5b1a03a7a35017a8b7f1de092edb5b455a5837e3bb72",
+    "url": "https://www.publicspace.net/download/ABFRX12.dmg",
+    "appName": "A Better Finder Rename 12.app",
+    "bundleId": "net.publicspace.abfr12"
+  },
   "sha": "5bcf670732acceecab4a5b1a03a7a35017a8b7f1de092edb5b455a5837e3bb72"
 }

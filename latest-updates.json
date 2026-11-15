@@ -1,75 +1,117 @@
 {
-  "lastChecked": "2026-11-14T05:20:19.597204Z",
+  "lastChecked": "2026-11-15T00:54:09.672926Z",
   "updates": [
     {
-      "appName": "bettertouchtool",
-      "previousVersion": "6.1144",
-      "newVersion": "6.1145",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bettertouchtool.png"
+      "appName": "apidog",
+      "previousVersion": "2.8.54",
+      "newVersion": "2.8.55",
+      "changelog": "https://apidog.com/blog/",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/apidog.png"
     },
     {
-      "appName": "claude",
-      "previousVersion": "5.11492.2",
-      "newVersion": "5.11492.5",
-      "changelog": "https://docs.anthropic.com/en/release-notes/claude-apps",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/claude.png"
+      "appName": "apifox",
+      "previousVersion": "2.8.54",
+      "newVersion": "2.8.55",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/apifox.png"
     },
     {
-      "appName": "github copilot cli",
-      "previousVersion": "1.0.111",
-      "newVersion": "1.0.112",
+      "appName": "calhash",
+      "previousVersion": "1.5.8",
+      "newVersion": "1.6.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/github_copilot_cli.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/calhash.png"
     },
     {
-      "appName": "google antigravity",
-      "previousVersion": "2.32.0",
-      "newVersion": "2.32.1",
+      "appName": "clop",
+      "previousVersion": "3.7.2",
+      "newVersion": "3.7.3",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/google_antigravity.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/clop.png"
+    },
+    {
+      "appName": "coconutbattery",
+      "previousVersion": "4.4.0",
+      "newVersion": "4.4.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/coconutbattery.png"
+    },
+    {
+      "appName": "github copilot",
+      "previousVersion": "1.4.0",
+      "newVersion": "1.4.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/github_copilot.png"
+    },
+    {
+      "appName": "houdahspot",
+      "previousVersion": "6.8.5",
+      "newVersion": "6.9",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/houdahspot.png"
     },
     {
       "appName": "lunar",
-      "previousVersion": "7.0.0b25",
-      "newVersion": "7.0.0b26",
+      "previousVersion": "7.0.0b26",
+      "newVersion": "7.0.0b28",
       "changelog": null,
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/lunar.png"
     },
     {
-      "appName": "microsoft edge",
-      "previousVersion": "157.0.4341.57",
-      "newVersion": "157.0.4341.60",
-      "changelog": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/microsoft_edge.png"
-    },
-    {
-      "appName": "multipass",
-      "previousVersion": "1.16.4",
-      "newVersion": "1.17.1",
+      "appName": "middleclick",
+      "previousVersion": "3.3.0",
+      "newVersion": "3.3.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/multipass.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/middleclick.png"
     },
     {
-      "appName": "netron",
-      "previousVersion": "9.3.5",
-      "newVersion": "9.3.6",
+      "appName": "orca slicer",
+      "previousVersion": "2.5.0",
+      "newVersion": "2.5.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/netron.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/orca_slicer.png"
     },
     {
-      "appName": "rectangle pro",
-      "previousVersion": "3.99",
-      "newVersion": "3.101",
+      "appName": "proxyman",
+      "previousVersion": "26.4.0",
+      "newVersion": "26.5.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/rectangle_pro.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/proxyman.png"
     },
     {
-      "appName": "windows app",
-      "previousVersion": "11.4.4",
-      "newVersion": "11.4.5",
-      "changelog": "https://learn.microsoft.com/en-us/windows-app/whats-new?tabs=macos",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/windows_app.png"
+      "appName": "recut",
+      "previousVersion": "4.5.7",
+      "newVersion": "4.5.8",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/recut.png"
+    },
+    {
+      "appName": "remnote",
+      "previousVersion": "1.30.2",
+      "newVersion": "1.30.3",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/remnote.png"
+    },
+    {
+      "appName": "remote buddy",
+      "previousVersion": "2.7.3",
+      "newVersion": "2.8",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/remote_buddy.png"
+    },
+    {
+      "appName": "sunsama",
+      "previousVersion": "3.5.1",
+      "newVersion": "3.5.2",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sunsama.png"
+    },
+    {
+      "appName": "timing",
+      "previousVersion": "2026.6",
+      "newVersion": "2026.6.1",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/timing.png"
     }
   ]
 }

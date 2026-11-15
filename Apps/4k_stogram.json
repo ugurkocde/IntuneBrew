@@ -11,5 +11,12 @@
   "sha": "4aa6ff10b55fd46b9eda84ea83cc5e026c9ee376b93bdf7ce832bdc561deb2e3",
   "category": "Media",
   "publisher": "4K Download",
-  "previous_version": "4.9.0"
+  "previous_version": "4.9.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "4aa6ff10b55fd46b9eda84ea83cc5e026c9ee376b93bdf7ce832bdc561deb2e3",
+    "url": "https://dl.4kdownload.com/app/4kstogram_4.9.0_arm64.dmg",
+    "appName": "4K Stogram.app",
+    "bundleId": "com.openmedia.4kstogram"
+  }
 }

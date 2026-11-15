@@ -11,5 +11,12 @@
   "sha": "d4e4f48b8e2435fae53791efd6470a60513fbf904238bd18c1cee93c45eb2b1a",
   "category": "Communication",
   "publisher": "8x8, Inc.",
-  "previous_version": "8.38.5"
+  "previous_version": "8.38.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "d4e4f48b8e2435fae53791efd6470a60513fbf904238bd18c1cee93c45eb2b1a",
+    "url": "https://work-desktop-assets.8x8.com/prod-publish/ga/work-arm64-dmg-v8.38.5-1.dmg",
+    "appName": "8x8 Work.app",
+    "bundleId": "com.electron.8x8---virtual-office"
+  }
 }

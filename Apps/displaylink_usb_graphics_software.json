@@ -8,7 +8,7 @@
   "homepage": "https://www.synaptics.com/products/displaylink-graphics",
   "homebrew_cask": "displaylink",
   "fileName": "DisplayLink Manager Graphics Connectivity17.1-EXE.pkg",
-  "sha": "6c69153701443053ecb45c672bdc40f9761e59e8cad4532f6ca7010c2841a399",
+  "sha": "e6e8c86f722d05fc4b5bca22d9627df00dfd11dadffb472278b075fb5b66067e",
   "type": "pkg",
   "qa_info": {
     "qa_timestamp": "2025-05-14T08:59:10Z",

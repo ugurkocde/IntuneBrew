@@ -4,12 +4,19 @@
   "version": "1402.19",
   "url": "https://downloads.abbyy.com/fr/fr_mac/current/ABBYY_FineReader_PDF.dmg?secure=5c11NlPrQmIZeGn6dK2PZA==",
   "vendor_url": "https://downloads.abbyy.com/fr/fr_mac/current/ABBYY_FineReader_PDF.dmg?secure=5c11NlPrQmIZeGn6dK2PZA==",
-  "bundleId": "com.abbyy.finereader.pdf",
+  "bundleId": "com.abbyy.FineReader",
   "homepage": "https://pdf.abbyy.com/finereader-pdf-for-mac/",
   "homebrew_cask": "abbyy-finereader-pdf",
   "fileName": "ABBYY_FineReader_PDF.dmg",
   "category": "Productivity",
   "publisher": "ABBYY",
   "previous_version": "1402.19",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "f837b1213f105f539c7d8d248351297dcba78eb77e65a1c3f2ac82b6ddac66d8",
+    "url": "https://downloads.abbyy.com/fr/fr_mac/current/ABBYY_FineReader_PDF.dmg?secure=5c11NlPrQmIZeGn6dK2PZA==",
+    "appName": "ABBYY FineReader PDF.app",
+    "bundleId": "com.abbyy.FineReader"
+  },
   "sha": "f837b1213f105f539c7d8d248351297dcba78eb77e65a1c3f2ac82b6ddac66d8"
 }
