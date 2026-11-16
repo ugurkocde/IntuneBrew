@@ -6,5 +6,13 @@
     ],
     "recorded_at": "2026-11-16T15:12:16.635518+00:00",
     "needs_review": false
+  },
+  {
+    "issue": 429,
+    "casks": [
+      "oracle-jdk-javadoc"
+    ],
+    "recorded_at": "2026-11-16T15:16:24.616821+00:00",
+    "needs_review": false
   }
 ]
