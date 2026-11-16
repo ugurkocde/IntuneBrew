@@ -4,12 +4,19 @@
   "version": "6.15.1",
   "url": "https://birdfont.org/download/birdfont-6.15.1-free.dmg",
   "vendor_url": "https://birdfont.org/download/birdfont-6.15.1-free.dmg",
-  "bundleId": "org.nicola.birdfont",
+  "bundleId": "org.birdfont.birdfont",
   "homepage": "https://birdfont.org/",
   "homebrew_cask": "birdfont",
   "fileName": "birdfont-6.15.1-free.dmg",
   "sha": "74756add690766520565133d2bdd5f1767f0414e20b25e5381f9d44fec39aa22",
   "category": "Design",
   "publisher": "BirdFont",
-  "previous_version": "6.15.1"
+  "previous_version": "6.15.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "74756add690766520565133d2bdd5f1767f0414e20b25e5381f9d44fec39aa22",
+    "url": "https://birdfont.org/download/birdfont-6.15.1-free.dmg",
+    "appName": "BirdFontNonCommercial.app",
+    "bundleId": "org.birdfont.birdfont"
+  }
 }

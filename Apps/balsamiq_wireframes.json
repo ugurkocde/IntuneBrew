@@ -11,5 +11,12 @@
   "sha": "3817553ac4801b3a245b55f1996870371cd3599a8c99f0054dd796bc09ceeca7",
   "category": "Design",
   "publisher": "Balsamiq",
-  "previous_version": "4.8.6"
+  "previous_version": "4.8.6",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "3817553ac4801b3a245b55f1996870371cd3599a8c99f0054dd796bc09ceeca7",
+    "url": "https://builds.balsamiq.com/bwd/Balsamiq%20Wireframes%204.8.6.dmg",
+    "appName": "Balsamiq Wireframes.app",
+    "bundleId": "com.balsamiq.wireframes"
+  }
 }

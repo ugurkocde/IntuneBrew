@@ -1,12 +1,16 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-15T00:54:09.672926Z",
-  "lastFullSyncAt": "2026-11-15T00:54:09.672926Z",
+  "lastPublishedAt": "2026-11-16T01:02:53.755570Z",
+  "lastFullSyncAt": "2026-11-16T01:02:53.755570Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
     {
       "app": "android_studio",
+      "stage": "collection"
+    },
+    {
+      "app": "bambu_studio",
       "stage": "collection"
     },
     {
@@ -22,7 +26,15 @@
       "stage": "collection"
     },
     {
+      "app": "customshortcuts",
+      "stage": "packaging"
+    },
+    {
       "app": "defold",
+      "stage": "collection"
+    },
+    {
+      "app": "dockfix",
       "stage": "collection"
     },
     {
@@ -95,8 +107,8 @@
     }
   ],
   "appCount": 1160,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43658213133",
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43780794170",
   "identityBackfill": {
-    "lastAttempted": "arduino-ide"
+    "lastAttempted": "capacities"
   }
 }

@@ -21,5 +21,12 @@
   },
   "category": "Utilities",
   "publisher": "Badgeify",
-  "previous_version": "1.15.0"
+  "previous_version": "1.15.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "06ddd3b03a31cad33a0f11fcea3aec9dd3c0c8abce51d64fa67ae6069edf99ad",
+    "url": "https://api.badgeify.app/release/download/darwin/universal/1.15.0",
+    "appName": "Badgeify.app",
+    "bundleId": "studio.techflow.badgeify"
+  }
 }

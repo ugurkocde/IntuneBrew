@@ -11,5 +11,12 @@
   "sha": "572a645a695dd6dc487fe654d86ff045d1ba68709f631c54e507685ad496d7a8",
   "category": "Developer Tools",
   "publisher": "Beekeeper Studio",
-  "previous_version": "6.2.2"
+  "previous_version": "6.2.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "572a645a695dd6dc487fe654d86ff045d1ba68709f631c54e507685ad496d7a8",
+    "url": "https://github.com/beekeeper-studio/beekeeper-studio/releases/download/v6.2.2/Beekeeper-Studio-6.2.2-arm64.dmg",
+    "appName": "Beekeeper Studio.app",
+    "bundleId": "io.beekeeperstudio.desktop"
+  }
 }

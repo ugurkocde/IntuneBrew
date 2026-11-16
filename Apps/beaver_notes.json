@@ -11,5 +11,12 @@
   "sha": "c2b83192c2b25542e8c8d5ffcaa4152e0175208de1d5caefa83095c6fd064f43",
   "category": "Productivity",
   "publisher": "Beaver Software, Inc.",
-  "previous_version": "4.4.0"
+  "previous_version": "4.4.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "c2b83192c2b25542e8c8d5ffcaa4152e0175208de1d5caefa83095c6fd064f43",
+    "url": "https://github.com/Beaver-Notes/Beaver-Notes/releases/download/4.4.0/Beaver-notes-4.4.0-universal.dmg",
+    "appName": "Beaver Notes.app",
+    "bundleId": "com.danielerolli.beaver-notes"
+  }
 }

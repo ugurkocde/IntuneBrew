@@ -1,117 +1,117 @@
 {
-  "lastChecked": "2026-11-15T00:54:09.672926Z",
+  "lastChecked": "2026-11-16T01:02:53.755570Z",
   "updates": [
     {
-      "appName": "apidog",
-      "previousVersion": "2.8.54",
-      "newVersion": "2.8.55",
-      "changelog": "https://apidog.com/blog/",
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/apidog.png"
+      "appName": "activitywatch",
+      "previousVersion": "0.14.2",
+      "newVersion": "0.14.3",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/activitywatch.png"
     },
     {
-      "appName": "apifox",
-      "previousVersion": "2.8.54",
-      "newVersion": "2.8.55",
+      "appName": "appflowy",
+      "previousVersion": "0.15.0",
+      "newVersion": "0.15.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/apifox.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/appflowy.png"
     },
     {
-      "appName": "calhash",
-      "previousVersion": "1.5.8",
-      "newVersion": "1.6.1",
+      "appName": "bettertouchtool",
+      "previousVersion": "6.1145",
+      "newVersion": "6.1150",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/calhash.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/bettertouchtool.png"
     },
     {
-      "appName": "clop",
-      "previousVersion": "3.7.2",
-      "newVersion": "3.7.3",
+      "appName": "dbeaver community edition",
+      "previousVersion": "26.2.4",
+      "newVersion": "26.2.5",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/clop.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/dbeaver_community_edition.png"
     },
     {
-      "appName": "coconutbattery",
-      "previousVersion": "4.4.0",
-      "newVersion": "4.4.1",
+      "appName": "fsnotes",
+      "previousVersion": "7.5.1",
+      "newVersion": "7.6.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/coconutbattery.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/fsnotes.png"
     },
     {
-      "appName": "github copilot",
-      "previousVersion": "1.4.0",
-      "newVersion": "1.4.2",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/github_copilot.png"
+      "appName": "hidden bar",
+      "previousVersion": "1.11.1",
+      "newVersion": "1.11.2",
+      "changelog": "https://github.com/dwarvesf/hidden/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/hidden_bar.png"
     },
     {
-      "appName": "houdahspot",
-      "previousVersion": "6.8.5",
-      "newVersion": "6.9",
+      "appName": "itsycal",
+      "previousVersion": "0.28.0",
+      "newVersion": "0.29.0",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/houdahspot.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/itsycal.png"
+    },
+    {
+      "appName": "linearmouse",
+      "previousVersion": "0.12.0",
+      "newVersion": "0.13.0",
+      "changelog": null,
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/linearmouse.png"
     },
     {
       "appName": "lunar",
-      "previousVersion": "7.0.0b26",
-      "newVersion": "7.0.0b28",
+      "previousVersion": "7.0.0b28",
+      "newVersion": "7.0.0b29",
       "changelog": null,
       "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/lunar.png"
     },
     {
-      "appName": "middleclick",
-      "previousVersion": "3.3.0",
-      "newVersion": "3.3.1",
+      "appName": "motrix",
+      "previousVersion": "2.4.1",
+      "newVersion": "2.4.2",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/middleclick.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/motrix.png"
     },
     {
-      "appName": "orca slicer",
-      "previousVersion": "2.5.0",
-      "newVersion": "2.5.1",
+      "appName": "openwebstart",
+      "previousVersion": "1.14.0",
+      "newVersion": "1.14.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/orca_slicer.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/openwebstart.png"
     },
     {
-      "appName": "proxyman",
-      "previousVersion": "26.4.0",
-      "newVersion": "26.5.0",
+      "appName": "pika",
+      "previousVersion": "2.0.2",
+      "newVersion": "2.0.3",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/proxyman.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/pika.png"
     },
     {
-      "appName": "recut",
-      "previousVersion": "4.5.7",
-      "newVersion": "4.5.8",
+      "appName": "spline",
+      "previousVersion": "0.20.51",
+      "newVersion": "0.20.52",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/recut.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/spline.png"
     },
     {
-      "appName": "remnote",
-      "previousVersion": "1.30.2",
-      "newVersion": "1.30.3",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/remnote.png"
+      "appName": "stats",
+      "previousVersion": "3.0.26",
+      "newVersion": "3.1.0",
+      "changelog": "https://github.com/exelban/stats/releases",
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/stats.png"
     },
     {
-      "appName": "remote buddy",
-      "previousVersion": "2.7.3",
-      "newVersion": "2.8",
+      "appName": "webcatalog",
+      "previousVersion": "82.1.0",
+      "newVersion": "82.2.1",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/remote_buddy.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/webcatalog.png"
     },
     {
-      "appName": "sunsama",
-      "previousVersion": "3.5.1",
-      "newVersion": "3.5.2",
+      "appName": "workflowy",
+      "previousVersion": "4.3.2611120800",
+      "newVersion": "4.3.2611151539",
       "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/sunsama.png"
-    },
-    {
-      "appName": "timing",
-      "previousVersion": "2026.6",
-      "newVersion": "2026.6.1",
-      "changelog": null,
-      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/timing.png"
+      "logoUrl": "https://raw.githubusercontent.com/ugurkocde/IntuneBrew/main/Logos/workflowy.png"
     }
   ]
 }

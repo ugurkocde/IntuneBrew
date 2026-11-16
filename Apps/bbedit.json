@@ -22,5 +22,12 @@
   },
   "category": "Developer Tools",
   "publisher": "Bare Bones Software, Inc.",
-  "previous_version": "16.1"
+  "previous_version": "16.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "8d1de3bb778c71449dc53b38c8e1aab658795175e773953f1adce49df4716dc4",
+    "url": "https://s3.amazonaws.com/BBSW-download/BBEdit_16.1.dmg",
+    "appName": "BBEdit.app",
+    "bundleId": "com.barebones.bbedit"
+  }
 }

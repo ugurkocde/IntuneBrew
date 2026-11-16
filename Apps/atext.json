@@ -11,5 +11,12 @@
   "category": "Productivity",
   "publisher": "Trankynam",
   "previous_version": "3.21",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b2bf1d2d40300b056825b2ca7023b447d4436d30088cd08293311faad59da77c",
+    "url": "https://www.trankynam.com/atext/downloads/aText.dmg",
+    "appName": "aText.app",
+    "bundleId": "com.trankynam.aText"
+  },
   "sha": "b2bf1d2d40300b056825b2ca7023b447d4436d30088cd08293311faad59da77c"
 }

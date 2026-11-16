@@ -1,22 +1,15 @@
 {
   "name": "ActivityWatch",
   "description": "Time tracker",
-  "version": "0.14.2",
-  "url": "https://github.com/ActivityWatch/activitywatch/releases/download/v0.14.2/activitywatch-v0.14.2-macos-arm64.dmg",
-  "vendor_url": "https://github.com/ActivityWatch/activitywatch/releases/download/v0.14.2/activitywatch-v0.14.2-macos-arm64.dmg",
+  "version": "0.14.3",
+  "url": "https://github.com/ActivityWatch/activitywatch/releases/download/v0.14.3/activitywatch-v0.14.3-macos-arm64.dmg",
+  "vendor_url": "https://github.com/ActivityWatch/activitywatch/releases/download/v0.14.3/activitywatch-v0.14.3-macos-arm64.dmg",
   "bundleId": "net.activitywatch.ActivityWatch",
   "homepage": "https://activitywatch.net/",
   "homebrew_cask": "activitywatch",
-  "fileName": "activitywatch-v0.14.2-macos-arm64.dmg",
-  "sha": "8341d56b5b43a60ca04ea2a3cc5ffbfb5e661cdb6430145d9ceb0f49dca63d65",
+  "fileName": "activitywatch-v0.14.3-macos-arm64.dmg",
+  "sha": "5462f3b90f9e1c0352061888d5f041029abb2ccfbe05e42c6dc63d91ff26bd4a",
   "category": "Productivity",
   "publisher": "ActivityWatch",
-  "previous_version": "0.14.2",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "8341d56b5b43a60ca04ea2a3cc5ffbfb5e661cdb6430145d9ceb0f49dca63d65",
-    "url": "https://github.com/ActivityWatch/activitywatch/releases/download/v0.14.2/activitywatch-v0.14.2-macos-arm64.dmg",
-    "appName": "ActivityWatch.app",
-    "bundleId": "net.activitywatch.ActivityWatch"
-  }
+  "previous_version": "0.14.2"
 }

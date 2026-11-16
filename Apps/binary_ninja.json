@@ -21,5 +21,12 @@
   "category": "Developer Tools",
   "publisher": "Vector 35, LLC",
   "previous_version": "6.0.10905",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "178fee323f9806b30eefc82e71d850a78b2acd462b790ab549c121c59ea25eea",
+    "url": "https://cdn.binary.ninja/installers/binaryninja_free_macosx.dmg",
+    "appName": "Binary Ninja.app",
+    "bundleId": "com.vector35.binaryninja"
+  },
   "sha": "178fee323f9806b30eefc82e71d850a78b2acd462b790ab549c121c59ea25eea"
 }

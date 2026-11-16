@@ -11,5 +11,12 @@
   "category": "Media",
   "publisher": "bilibili",
   "previous_version": "1.20.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "a9d654eccb552951419780df616d2466d224ca16918ba3ae2174516319d0b336",
+    "url": "https://dl.hdslb.com/mobile/fixed/pc_electron_mac/bili_mac.dmg",
+    "appName": "\u54d4\u54e9\u54d4\u54e9.app",
+    "bundleId": "com.bilibili.bilibiliPC"
+  },
   "sha": "a9d654eccb552951419780df616d2466d224ca16918ba3ae2174516319d0b336"
 }

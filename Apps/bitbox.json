@@ -11,5 +11,12 @@
   "sha": "fc3e13bf8aedf2df375a4d63a8b8af38651b70835be691928e6b796156c4809d",
   "category": "Security",
   "publisher": "SHIFT Cryptosecurity AG",
-  "previous_version": "4.52.0"
+  "previous_version": "4.52.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "fc3e13bf8aedf2df375a4d63a8b8af38651b70835be691928e6b796156c4809d",
+    "url": "https://github.com/BitBoxSwiss/bitbox-wallet-app/releases/download/v4.52.0/BitBox-4.52.0-macOS.dmg",
+    "appName": "BitBox.app",
+    "bundleId": "ch.shiftcrypto.wallet"
+  }
 }

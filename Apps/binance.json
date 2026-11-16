@@ -11,5 +11,12 @@
   "sha": "917d93de715225ee0189d223300e77f765401a9a9dc8bb507d99b0cdff243296",
   "category": "Utilities",
   "publisher": "Binance",
-  "previous_version": "2.6.1"
+  "previous_version": "2.6.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "917d93de715225ee0189d223300e77f765401a9a9dc8bb507d99b0cdff243296",
+    "url": "https://ftp.binance.com/electron-desktop/mac/production/binance-2.6.1-arm64.dmg",
+    "appName": "Binance.app",
+    "bundleId": "com.binance.BinanceDesktop"
+  }
 }

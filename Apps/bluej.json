@@ -11,5 +11,12 @@
   "sha": "fd2a70a981a9e801f98efc9423a3c48e014c80e180612f37e6223e7bda9c45d2",
   "category": "Developer Tools",
   "publisher": "BlueJ Team",
-  "previous_version": "6.0.1"
+  "previous_version": "6.0.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "fd2a70a981a9e801f98efc9423a3c48e014c80e180612f37e6223e7bda9c45d2",
+    "url": "https://github.com/k-pet-group/BlueJ-Greenfoot/releases/download/BLUEJ-RELEASE-6.0.1/BlueJ-mac-aarch64-6.0.1.dmg",
+    "appName": "BlueJ.app",
+    "bundleId": "org.bluej.BlueJ"
+  }
 }
