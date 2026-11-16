@@ -683,7 +683,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | webcatalog | 82.1.0 | 82.2.1 |
 | workflowy | 4.3.2611120800 | 4.3.2611151539 |
 
-24 app updates could not be published. See [catalog sync status](catalog-sync.json).
+26 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
