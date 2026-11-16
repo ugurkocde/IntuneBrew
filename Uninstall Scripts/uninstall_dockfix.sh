@@ -25,6 +25,14 @@ elif [ -f "/Applications/DockFix.app" ]; then
     rm -f "/Applications/DockFix.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/DockFix
+echo "Removing $HOME/Library/Application Support/DockFix..."
+if [ -d "$HOME/Library/Application Support/DockFix" ]; then
+    rm -rf "$HOME/Library/Application Support/DockFix" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/DockFix" ]; then
+    rm -f "$HOME/Library/Application Support/DockFix" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/dk.FIrstForm.DockFix
 echo "Removing $HOME/Library/Caches/dk.FIrstForm.DockFix..."
 if [ -d "$HOME/Library/Caches/dk.FIrstForm.DockFix" ]; then

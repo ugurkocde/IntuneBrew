@@ -67,5 +67,13 @@ elif [ -f "$HOME/Library/Containers/com.dwarvesv.minimalbar" ]; then
     rm -f "$HOME/Library/Containers/com.dwarvesv.minimalbar" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.dwarvesv.minimalbar.plist
+echo "Removing $HOME/Library/Preferences/com.dwarvesv.minimalbar.plist..."
+if [ -d "$HOME/Library/Preferences/com.dwarvesv.minimalbar.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.dwarvesv.minimalbar.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.dwarvesv.minimalbar.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.dwarvesv.minimalbar.plist" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

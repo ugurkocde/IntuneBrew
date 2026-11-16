@@ -73,6 +73,14 @@ elif [ -f "$HOME/Library/Application Support/com.proxyman.NSProxy" ]; then
     rm -f "$HOME/Library/Application Support/com.proxyman.NSProxy" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/Proxyman
+echo "Removing $HOME/Library/Application Support/Proxyman..."
+if [ -d "$HOME/Library/Application Support/Proxyman" ]; then
+    rm -rf "$HOME/Library/Application Support/Proxyman" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/Proxyman" ]; then
+    rm -f "$HOME/Library/Application Support/Proxyman" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.proxyman.NSProxy
 echo "Removing $HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.proxyman.NSProxy..."
 if [ -d "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.proxyman.NSProxy" ]; then

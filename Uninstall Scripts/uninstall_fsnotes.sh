@@ -25,6 +25,14 @@ elif [ -f "/Applications/FSNotes.app" ]; then
     rm -f "/Applications/FSNotes.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/866P6MTE92.co.fluder.FSNotes.Share
+echo "Removing $HOME/Library/Application Scripts/866P6MTE92.co.fluder.FSNotes.Share..."
+if [ -d "$HOME/Library/Application Scripts/866P6MTE92.co.fluder.FSNotes.Share" ]; then
+    rm -rf "$HOME/Library/Application Scripts/866P6MTE92.co.fluder.FSNotes.Share" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/866P6MTE92.co.fluder.FSNotes.Share" ]; then
+    rm -f "$HOME/Library/Application Scripts/866P6MTE92.co.fluder.FSNotes.Share" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/co.fluder.FSNotes
 echo "Removing $HOME/Library/Application Scripts/co.fluder.FSNotes..."
 if [ -d "$HOME/Library/Application Scripts/co.fluder.FSNotes" ]; then
@@ -39,6 +47,14 @@ if [ -d "$HOME/Library/Containers/co.fluder.FSNotes" ]; then
     rm -rf "$HOME/Library/Containers/co.fluder.FSNotes" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/co.fluder.FSNotes" ]; then
     rm -f "$HOME/Library/Containers/co.fluder.FSNotes" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/866P6MTE92.co.fluder.FSNotes.Share
+echo "Removing $HOME/Library/Group Containers/866P6MTE92.co.fluder.FSNotes.Share..."
+if [ -d "$HOME/Library/Group Containers/866P6MTE92.co.fluder.FSNotes.Share" ]; then
+    rm -rf "$HOME/Library/Group Containers/866P6MTE92.co.fluder.FSNotes.Share" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/866P6MTE92.co.fluder.FSNotes.Share" ]; then
+    rm -f "$HOME/Library/Group Containers/866P6MTE92.co.fluder.FSNotes.Share" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"
