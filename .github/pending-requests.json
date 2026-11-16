@@ -14,5 +14,13 @@
     ],
     "recorded_at": "2026-11-16T15:16:24.616821+00:00",
     "needs_review": false
+  },
+  {
+    "issue": 430,
+    "casks": [
+      "openwhispr"
+    ],
+    "recorded_at": "2026-11-16T18:27:55.623750+00:00",
+    "needs_review": false
   }
 ]
