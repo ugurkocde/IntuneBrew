@@ -15,5 +15,7 @@
     "url": "https://github.com/ZUGFeRD/quba-viewer/releases/download/2.0.0/Quba-2.0.0-macos-arm64.dmg",
     "appName": "Quba.app",
     "bundleId": "org.quba-viewer.quba.2"
-  }
+  },
+  "category": "Productivity",
+  "publisher": "Quba"
 }
