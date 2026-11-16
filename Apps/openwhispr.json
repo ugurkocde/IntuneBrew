@@ -15,5 +15,7 @@
     "url": "https://github.com/OpenWhispr/openwhispr/releases/download/v1.11.0/OpenWhispr-1.11.0-arm64.dmg",
     "appName": "OpenWhispr.app",
     "bundleId": "com.gizmolabs.openwhispr"
-  }
+  },
+  "category": "Productivity",
+  "publisher": "OpenWhispr"
 }
