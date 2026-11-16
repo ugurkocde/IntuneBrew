@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-16T00:29:30.774Z",
+  "last_full_scan": "2026-11-16T01:03:55.407Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -385,11 +385,10 @@
       "name": "Audio Hijack"
     },
     "audirvana": {
-      "last_checked": "2026-01-15T11:14:08.042Z",
-      "bundle_id": "com.audirvana.Audirvana-Studio",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-11-16T01:03:55.391Z",
+      "bundle_id": "com.audirvana.Audirvana",
+      "status": "verified",
+      "source": "file",
       "name": "Audirvana"
     },
     "autodesk_fusion_360": {
@@ -551,15 +550,15 @@
       "name": "Binary Ninja"
     },
     "birdfont": {
-      "last_checked": "2026-01-17T08:37:42.053Z",
-      "bundle_id": "org.nicola.birdfont",
+      "last_checked": "2026-11-16T01:03:55.391Z",
+      "bundle_id": "org.birdfont.birdfont",
       "status": "verified",
       "source": "file",
       "name": "BirdFont"
     },
     "biscuit": {
-      "last_checked": "2026-01-17T08:37:42.053Z",
-      "bundle_id": "com.eatbiscuit.biscuit",
+      "last_checked": "2026-11-16T01:03:55.391Z",
+      "bundle_id": "com.eatbiscult.biscult",
       "status": "verified",
       "source": "file",
       "name": "Biscuit"
@@ -2773,8 +2772,8 @@
       "name": "BitBox"
     },
     "bitrix24": {
-      "last_checked": "2026-01-17T08:37:42.054Z",
-      "bundle_id": "com.bitrix24.Bitrix24",
+      "last_checked": "2026-11-16T01:03:55.392Z",
+      "bundle_id": "com.bitrixsoft.bitrix24desktop",
       "status": "verified",
       "source": "file",
       "name": "Bitrix24"
