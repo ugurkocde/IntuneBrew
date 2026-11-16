@@ -1,0 +1,19 @@
+{
+  "name": "Quba-Viewer",
+  "description": "Viewer for electronic invoices",
+  "version": "2.0.0",
+  "url": "https://github.com/ZUGFeRD/quba-viewer/releases/download/2.0.0/Quba-2.0.0-macos-arm64.dmg",
+  "vendor_url": "https://github.com/ZUGFeRD/quba-viewer/releases/download/2.0.0/Quba-2.0.0-macos-arm64.dmg",
+  "bundleId": "org.quba-viewer.quba.2",
+  "homepage": "https://quba-viewer.org/",
+  "homebrew_cask": "quba",
+  "fileName": "Quba-2.0.0-macos-arm64.dmg",
+  "sha": "3f0ab1ad76c6ca94e686b0eb5cf0f1f9888c4756e90bb3ec5cd2f46d294c6d7e",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "3f0ab1ad76c6ca94e686b0eb5cf0f1f9888c4756e90bb3ec5cd2f46d294c6d7e",
+    "url": "https://github.com/ZUGFeRD/quba-viewer/releases/download/2.0.0/Quba-2.0.0-macos-arm64.dmg",
+    "appName": "Quba.app",
+    "bundleId": "org.quba-viewer.quba.2"
+  }
+}
