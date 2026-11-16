@@ -1243,6 +1243,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/qgis@ltr.json",
     "https://formulae.brew.sh/api/cask/nuphyio.json",
     "https://formulae.brew.sh/api/cask/unraid-usb-creator.json",
+    "https://formulae.brew.sh/api/cask/quba.json",
 ]
 
 # PKG in DMG URLs
