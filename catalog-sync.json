@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-16T15:25:21.197635Z",
+  "lastPublishedAt": "2026-11-16T15:41:47.547712Z",
   "lastFullSyncAt": "2026-11-16T01:02:53.755570Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
@@ -107,7 +107,7 @@
     }
   ],
   "appCount": 1161,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43893899847",
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43894613795",
   "identityBackfill": {
     "lastAttempted": "capacities"
   }
