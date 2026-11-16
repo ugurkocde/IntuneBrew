@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-16T01:03:55.407Z",
+  "last_full_scan": "2026-11-16T08:23:18.606Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9532,6 +9532,13 @@
       "status": "verified",
       "source": "file",
       "name": "Glean Desktop"
+    },
+    "qubaviewer": {
+      "last_checked": "2026-11-16T08:23:18.597Z",
+      "bundle_id": "org.quba-viewer.quba.2",
+      "status": "verified",
+      "source": "file",
+      "name": "Quba-Viewer"
     }
   }
 }
