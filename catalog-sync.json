@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-17T11:49:15.737037Z",
+  "lastPublishedAt": "2026-11-17T13:39:26.686612Z",
   "lastFullSyncAt": "2026-11-17T01:02:37.326552Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
@@ -114,8 +114,8 @@
       "stage": "collection"
     }
   ],
-  "appCount": 1163,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44075067646",
+  "appCount": 1164,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44091818125",
   "identityBackfill": {
     "lastAttempted": "db-browser-for-sqlite"
   }
