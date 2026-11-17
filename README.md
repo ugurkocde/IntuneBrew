@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1162-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1163-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -716,7 +716,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | utm | 5.0.8 | 5.0.9 |
 | whatsapp | 26.45.23 | 26.46.12 |
 
-27 app updates could not be published. See [catalog sync status](catalog-sync.json).
+24 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
