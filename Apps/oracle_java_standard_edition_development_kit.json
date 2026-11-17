@@ -9,5 +9,7 @@
   "homebrew_cask": "oracle-jdk",
   "fileName": "oracle_java_standard_edition_development_kit_27.0.1.0.3.pkg",
   "type": "pkg_in_dmg",
-  "sha": "cdab490c946ff601c36ad523174987c637b072251ecd25b92f9cf7355e4a3f17"
+  "sha": "cdab490c946ff601c36ad523174987c637b072251ecd25b92f9cf7355e4a3f17",
+  "category": "Developer Tools",
+  "publisher": "Oracle Corporation"
 }
