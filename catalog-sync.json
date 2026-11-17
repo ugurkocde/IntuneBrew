@@ -1,16 +1,12 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-16T18:47:15.095713Z",
-  "lastFullSyncAt": "2026-11-16T01:02:53.755570Z",
+  "lastPublishedAt": "2026-11-17T01:02:37.326552Z",
+  "lastFullSyncAt": "2026-11-17T01:02:37.326552Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
     {
       "app": "android_studio",
-      "stage": "collection"
-    },
-    {
-      "app": "bambu_studio",
       "stage": "collection"
     },
     {
@@ -82,7 +78,19 @@
       "stage": "collection"
     },
     {
+      "app": "miniconda",
+      "stage": "bundle ID validation"
+    },
+    {
       "app": "mozilla_firefox_developer_edition",
+      "stage": "collection"
+    },
+    {
+      "app": "oracle_java_standard_edition_development_kit_documentation",
+      "stage": "packaging"
+    },
+    {
+      "app": "pika",
       "stage": "collection"
     },
     {
@@ -107,8 +115,8 @@
     }
   ],
   "appCount": 1162,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43929091786",
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/43987463460",
   "identityBackfill": {
-    "lastAttempted": "capacities"
+    "lastAttempted": "db-browser-for-sqlite"
   }
 }

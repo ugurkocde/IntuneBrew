@@ -22,5 +22,12 @@
   },
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
-  "previous_version": "2026.3.0.1"
+  "previous_version": "2026.3.0.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "8ce475f2713ce7302dc5da583aa7a417492605a14928b06f9939b128a92d3415",
+    "url": "https://download.jetbrains.com/cpp/CLion-2026.3.0.1-aarch64.dmg",
+    "appName": "CLion.app",
+    "bundleId": "com.jetbrains.CLion"
+  }
 }

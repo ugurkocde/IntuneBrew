@@ -11,5 +11,12 @@
   "category": "Productivity",
   "publisher": "OpenAI",
   "previous_version": "1.2026.184",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "a94117fb34627229baafe3e8b7b45467c5aee7861b4cd795a5be8d547b1ff7b4",
+    "url": "https://persistent.oaistatic.com/classic/public/ChatGPT_Classic.dmg",
+    "appName": "ChatGPT Classic.app",
+    "bundleId": "com.openai.chat"
+  },
   "sha": "a94117fb34627229baafe3e8b7b45467c5aee7861b4cd795a5be8d547b1ff7b4"
 }

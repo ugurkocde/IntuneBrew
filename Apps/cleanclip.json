@@ -11,5 +11,12 @@
   "sha": "a5e4d694dbd97a1b5371e88bef148dc4e31311bf1f05fdda7693285bdafb088b",
   "category": "Utilities",
   "publisher": "CleanClip",
-  "previous_version": "2.4.7"
+  "previous_version": "2.4.7",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "a5e4d694dbd97a1b5371e88bef148dc4e31311bf1f05fdda7693285bdafb088b",
+    "url": "https://cleanclip.cc/releases/download/v2.4.7/CleanClip.dmg",
+    "appName": "CleanClip.app",
+    "bundleId": "com.antiless.cleanclip.mac"
+  }
 }

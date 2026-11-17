@@ -21,5 +21,12 @@
   },
   "category": "Utilities",
   "publisher": "Clean Software Ltd.",
-  "previous_version": "5.0.2"
+  "previous_version": "5.0.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "9f0a661dbaf4ed3044e5074250e6f0142b704e047a9bd4d23d35236e98fca5d6",
+    "url": "https://updates.getcleanshot.com/v3/CleanShot-X-5.0.2.dmg",
+    "appName": "CleanShot X.app",
+    "bundleId": "pl.maketheweb.cleanshotx"
+  }
 }

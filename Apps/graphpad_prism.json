@@ -1,14 +1,14 @@
 {
   "name": "GraphPad Prism",
   "description": "Statistical analysis and graphing software",
-  "version": "11.1.0",
-  "url": "https://cdn.graphpad.com/downloads/prism/11/11.1.0/InstallPrism11.dmg",
-  "vendor_url": "https://cdn.graphpad.com/downloads/prism/11/11.1.0/InstallPrism11.dmg",
+  "version": "11.2.0",
+  "url": "https://cdn.graphpad.com/downloads/prism/11/11.2.0/InstallPrism11.dmg",
+  "vendor_url": "https://cdn.graphpad.com/downloads/prism/11/11.2.0/InstallPrism11.dmg",
   "bundleId": "com.GraphPad.Prism",
   "homepage": "https://graphpad.com/",
   "homebrew_cask": "prism",
   "fileName": "InstallPrism11.dmg",
-  "sha": "3a3e6700325df42937fe560b473d02bc881f4878b3fad11785004374870012f5",
+  "sha": "951be55de9129ac2526f6bacd02ac15b1e336a50685ca314c5e9307a9ac4552c",
   "category": "Productivity",
   "publisher": "GraphPad Software, Inc.",
   "previous_version": "11.1.0"

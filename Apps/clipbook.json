@@ -1,15 +1,22 @@
 {
   "name": "ClipBook",
   "description": "Clipboard history app",
-  "version": "2.5.2",
-  "url": "https://f005.backblazeb2.com/file/clipbook/ClipBook-2.5.2.dmg",
-  "vendor_url": "https://f005.backblazeb2.com/file/clipbook/ClipBook-2.5.2.dmg",
-  "bundleId": "com.ikryanov.clipbook",
+  "version": "2.6.0",
+  "url": "https://f005.backblazeb2.com/file/clipbook/ClipBook-2.6.0.dmg",
+  "vendor_url": "https://f005.backblazeb2.com/file/clipbook/ClipBook-2.6.0.dmg",
+  "bundleId": "com.ikryanov.clipbook.v2",
   "homepage": "https://clipbook.app/",
   "homebrew_cask": "clipbook",
-  "fileName": "ClipBook-2.5.2.dmg",
-  "sha": "99f2b9faf6eacf3032bdebf139ae5d5fad9c07fd08087623e94195d6af218738",
+  "fileName": "ClipBook-2.6.0.dmg",
+  "sha": "297a3e868bae1e7d80726914b8ce164f6e33e81841b734342b915e667f1e0378",
   "category": "Productivity",
   "publisher": "ClipBook",
-  "previous_version": "2.5.2"
+  "previous_version": "2.5.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "297a3e868bae1e7d80726914b8ce164f6e33e81841b734342b915e667f1e0378",
+    "url": "https://f005.backblazeb2.com/file/clipbook/ClipBook-2.6.0.dmg",
+    "appName": "ClipBook.app",
+    "bundleId": "com.ikryanov.clipbook.v2"
+  }
 }

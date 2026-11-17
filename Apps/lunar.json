@@ -1,15 +1,15 @@
 {
   "name": "Lunar",
   "description": "Adaptive brightness for external displays",
-  "version": "7.0.0b29",
-  "url": "https://files.lunar.fyi/releases/Lunar-7.0.0b29.dmg",
-  "vendor_url": "https://files.lunar.fyi/releases/Lunar-7.0.0b29.dmg",
+  "version": "7.0.0b32",
+  "url": "https://files.lunar.fyi/releases/Lunar-7.0.0b32.dmg",
+  "vendor_url": "https://files.lunar.fyi/releases/Lunar-7.0.0b32.dmg",
   "bundleId": "fyi.lunar.Lunar",
   "homepage": "https://lunar.fyi/",
   "homebrew_cask": "lunar",
-  "fileName": "Lunar-7.0.0b29.dmg",
-  "sha": "3e9c1ba2ea7bb58191ece1dda594b25243be63eeef591c4a11b39a6f7d784b97",
+  "fileName": "Lunar-7.0.0b32.dmg",
+  "sha": "6be6a1751d21b68eb6fb4afee96e43fdf8197c37e7d5c57ad2d82a8f87ccf123",
   "category": "Utilities",
   "publisher": "Lunar",
-  "previous_version": "7.0.0b28"
+  "previous_version": "7.0.0b29"
 }

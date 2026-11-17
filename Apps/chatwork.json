@@ -11,5 +11,12 @@
   "category": "Communication",
   "publisher": "ChatWork, Inc.",
   "previous_version": "2.25.9",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "4185b29a9cbe493ab0e241a6d0ca7f15860d940745aee1f2b283c30fd9fafd1e",
+    "url": "https://desktop-app.chatwork.com/installer/ChatWork.dmg",
+    "appName": "Chatwork.app",
+    "bundleId": "com.electron.chatwork"
+  },
   "sha": "4185b29a9cbe493ab0e241a6d0ca7f15860d940745aee1f2b283c30fd9fafd1e"
 }

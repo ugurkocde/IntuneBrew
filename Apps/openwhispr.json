@@ -9,13 +9,14 @@
   "homebrew_cask": "openwhispr",
   "fileName": "OpenWhispr-1.11.0-arm64.dmg",
   "sha": "10a320cba0de83895ffab8dce8a9d118e6eb85a14289e861770e4edcc43488db",
+  "category": "Productivity",
+  "publisher": "OpenWhispr",
+  "previous_version": "1.11.0",
   "bundleIdEvidence": {
     "inspector": "dmg-identity/1",
     "artifactSha256": "10a320cba0de83895ffab8dce8a9d118e6eb85a14289e861770e4edcc43488db",
     "url": "https://github.com/OpenWhispr/openwhispr/releases/download/v1.11.0/OpenWhispr-1.11.0-arm64.dmg",
     "appName": "OpenWhispr.app",
     "bundleId": "com.gizmolabs.openwhispr"
-  },
-  "category": "Productivity",
-  "publisher": "OpenWhispr"
+  }
 }
