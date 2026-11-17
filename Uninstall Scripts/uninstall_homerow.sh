@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.superultra.HomerowLauncher" ]; 
     rm -f "$HOME/Library/Application Scripts/com.superultra.HomerowLauncher" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superultra.homerow.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superultra.homerow.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superultra.homerow.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superultra.homerow.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superultra.homerow.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.superultra.homerow.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.superultra.Homerow
 echo "Removing $HOME/Library/Application Support/com.superultra.Homerow..."
 if [ -d "$HOME/Library/Application Support/com.superultra.Homerow" ]; then

@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Caches/com.apple.helpd/Generated/BackupLoupe*" ]; then
     rm -f "$HOME/Library/Caches/com.apple.helpd/Generated/BackupLoupe*" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/BackupLoupe
+echo "Removing $HOME/Library/Logs/BackupLoupe..."
+if [ -d "$HOME/Library/Logs/BackupLoupe" ]; then
+    rm -rf "$HOME/Library/Logs/BackupLoupe" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/BackupLoupe" ]; then
+    rm -f "$HOME/Library/Logs/BackupLoupe" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/com.soma-zone.BackupLoupe.plist
 echo "Removing $HOME/Library/Preferences/com.soma-zone.BackupLoupe.plist..."
 if [ -d "$HOME/Library/Preferences/com.soma-zone.BackupLoupe.plist" ]; then

@@ -85,6 +85,30 @@ elif [ -f "$HOME/Library/Caches/com.raycast.macos" ]; then
     rm -f "$HOME/Library/Caches/com.raycast.macos" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.raycast.macos.accessibility
+echo "Removing $HOME/Library/Caches/com.raycast.macos.accessibility..."
+if [ -d "$HOME/Library/Caches/com.raycast.macos.accessibility" ]; then
+    rm -rf "$HOME/Library/Caches/com.raycast.macos.accessibility" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.raycast.macos.accessibility" ]; then
+    rm -f "$HOME/Library/Caches/com.raycast.macos.accessibility" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/com.raycast.macos.pasteboard
+echo "Removing $HOME/Library/Caches/com.raycast.macos.pasteboard..."
+if [ -d "$HOME/Library/Caches/com.raycast.macos.pasteboard" ]; then
+    rm -rf "$HOME/Library/Caches/com.raycast.macos.pasteboard" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.raycast.macos.pasteboard" ]; then
+    rm -f "$HOME/Library/Caches/com.raycast.macos.pasteboard" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/SentryCrash/Raycast Accessibility
+echo "Removing $HOME/Library/Caches/SentryCrash/Raycast Accessibility..."
+if [ -d "$HOME/Library/Caches/SentryCrash/Raycast Accessibility" ]; then
+    rm -rf "$HOME/Library/Caches/SentryCrash/Raycast Accessibility" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/SentryCrash/Raycast Accessibility" ]; then
+    rm -f "$HOME/Library/Caches/SentryCrash/Raycast Accessibility" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/SentryCrash/Raycast
 echo "Removing $HOME/Library/Caches/SentryCrash/Raycast..."
 if [ -d "$HOME/Library/Caches/SentryCrash/Raycast" ]; then

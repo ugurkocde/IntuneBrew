@@ -37,6 +37,14 @@ elif [ -f "$HOME/.local/share/containers/podman-desktop" ]; then
     rm -f "$HOME/.local/share/containers/podman-desktop" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.podmandesktop.podmandesktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.podmandesktop.podmandesktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.podmandesktop.podmandesktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.podmandesktop.podmandesktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.podmandesktop.podmandesktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.podmandesktop.podmandesktop.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Podman Desktop
 echo "Removing $HOME/Library/Application Support/Podman Desktop..."
 if [ -d "$HOME/Library/Application Support/Podman Desktop" ]; then

@@ -37,6 +37,14 @@ elif [ -f "$HOME/Library/Application Support/Airtable" ]; then
     rm -f "$HOME/Library/Application Support/Airtable" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.formagrid.airtable.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.formagrid.airtable.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.formagrid.airtable.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.formagrid.airtable.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.formagrid.airtable.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.formagrid.airtable.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.FormaGrid.Airtable*
 echo "Removing $HOME/Library/Caches/com.FormaGrid.Airtable*..."
 if [ -d "$HOME/Library/Caches/com.FormaGrid.Airtable*" ]; then
