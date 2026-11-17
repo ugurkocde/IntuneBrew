@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-17T11:50:07.506Z",
+  "last_full_scan": "2026-11-17T13:40:22.166Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9553,6 +9553,13 @@
       "status": "verified",
       "source": "file",
       "name": "Nextpad++"
+    },
+    "oracle_java_standard_edition_development_kit": {
+      "last_checked": "2026-11-17T13:40:22.161Z",
+      "bundle_id": "com.oracle.jdk-27.0.1.0.3",
+      "status": "verified",
+      "source": "file",
+      "name": "Oracle Java Standard Edition Development Kit"
     }
   }
 }
