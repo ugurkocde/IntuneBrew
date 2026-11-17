@@ -29,6 +29,12 @@ elif [ -f "/Applications/MacWhisper.app" ]; then
     rm -f "/Applications/MacWhisper.app" 2>/dev/null || true
 fi
 
+# Remove binary /Applications/MacWhisper.app/MacWhisper.app/Contents/MacOS/mw
+echo "Removing binary /Applications/MacWhisper.app/MacWhisper.app/Contents/MacOS/mw..."
+if [ -f "/Applications/MacWhisper.app/MacWhisper.app/Contents/MacOS/mw" ]; then
+    rm -f "/Applications/MacWhisper.app/MacWhisper.app/Contents/MacOS/mw" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share
 echo "Removing $HOME/Library/Application Scripts/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share..."
 if [ -d "$HOME/Library/Application Scripts/8Q7TMPA46J.group.com.goodsnooze.macwhisper.share" ]; then
