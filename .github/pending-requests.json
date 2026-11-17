@@ -14,5 +14,13 @@
     ],
     "recorded_at": "2026-11-16T15:16:24.616821+00:00",
     "needs_review": false
+  },
+  {
+    "issue": 432,
+    "casks": [
+      "oracle-jdk"
+    ],
+    "recorded_at": "2026-11-17T13:20:48.728477+00:00",
+    "needs_review": false
   }
 ]
