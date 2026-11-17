@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-17T00:24:10.242Z",
+  "last_full_scan": "2026-11-17T01:04:09.678Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -2851,8 +2851,8 @@
       "name": "Camunda Modeler"
     },
     "captain": {
-      "last_checked": "2026-01-17T08:37:42.060Z",
-      "bundle_id": "com.electron.captain.helper",
+      "last_checked": "2026-11-17T01:04:09.658Z",
+      "bundle_id": "com.electron.captain",
       "status": "verified",
       "source": "file",
       "name": "Captain"
@@ -2946,8 +2946,8 @@
       "name": "CleanClip"
     },
     "clipbook": {
-      "last_checked": "2026-01-17T08:37:42.065Z",
-      "bundle_id": "com.ikryanov.clipbook",
+      "last_checked": "2026-11-17T01:04:09.660Z",
+      "bundle_id": "com.ikryanov.clipbook.v2",
       "status": "verified",
       "source": "file",
       "name": "ClipBook"
