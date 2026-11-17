@@ -14,13 +14,5 @@
     ],
     "recorded_at": "2026-11-16T15:16:24.616821+00:00",
     "needs_review": false
-  },
-  {
-    "issue": 431,
-    "casks": [
-      "nextpad++"
-    ],
-    "recorded_at": "2026-11-17T11:33:18.607622+00:00",
-    "needs_review": false
   }
 ]
