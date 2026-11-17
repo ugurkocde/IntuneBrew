@@ -8,5 +8,7 @@
   "homepage": "https://nextpad.org/",
   "homebrew_cask": "nextpad++",
   "fileName": "Nextpad++v1.1.3.dmg",
-  "sha": "b291b289f1dc8f625c449151332bd0d088f6f966fbe5144904b14dd8c056e701"
+  "sha": "b291b289f1dc8f625c449151332bd0d088f6f966fbe5144904b14dd8c056e701",
+  "category": "Developer Tools",
+  "publisher": "Nextpad"
 }
