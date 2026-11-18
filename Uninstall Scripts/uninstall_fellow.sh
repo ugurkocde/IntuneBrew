@@ -17,6 +17,10 @@ fi
 echo "Stopping Fellow if running..."
 pkill -f "Fellow" 2>/dev/null || true
 
+# Kill application with bundle ID com.electron.fellow if running
+echo "Stopping application with bundle ID com.electron.fellow if running..."
+killall -9 "com.electron.fellow" 2>/dev/null || true
+
 # Remove /Applications/Fellow.app
 echo "Removing /Applications/Fellow.app..."
 if [ -d "/Applications/Fellow.app" ]; then
