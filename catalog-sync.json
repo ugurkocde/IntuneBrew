@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-18T01:04:11.915845Z",
+  "lastPublishedAt": "2026-11-18T11:10:23.245094Z",
   "lastFullSyncAt": "2026-11-18T01:04:11.915845Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
@@ -114,8 +114,8 @@
       "stage": "collection"
     }
   ],
-  "appCount": 1164,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44207661204",
+  "appCount": 1165,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44289127770",
   "identityBackfill": {
     "lastAttempted": "elmedia-player"
   }

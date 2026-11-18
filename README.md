@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1164-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1165-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -723,7 +723,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | whatsapp | 26.46.12 | 26.46.15 |
 | workflowy | 4.3.2611151539 | 4.3.2611161827 |
 
-27 app updates could not be published. See [catalog sync status](catalog-sync.json).
+25 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 

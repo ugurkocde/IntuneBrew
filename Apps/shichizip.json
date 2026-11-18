@@ -1,0 +1,13 @@
+{
+  "name": "ShichiZip",
+  "description": "7-Zip derivative GUI",
+  "version": "0.3.4",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/shichizip_0.3.4.pkg",
+  "vendor_url": "https://github.com/idawnlight/ShichiZip/releases/download/v0.3.4/ShichiZip-v0.3.4-arm64.zip",
+  "bundleId": "ee.dawn.ShichiZip",
+  "homepage": "https://github.com/idawnlight/ShichiZip",
+  "homebrew_cask": "shichizip",
+  "fileName": "shichizip_0.3.4.pkg",
+  "type": "app",
+  "sha": "0eed41629e35d067961f2c1f5a0e86f85879b3c928d2edc5397c7b3fcc69d6c5"
+}
