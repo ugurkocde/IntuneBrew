@@ -14,5 +14,13 @@
     ],
     "recorded_at": "2026-11-16T15:16:24.616821+00:00",
     "needs_review": false
+  },
+  {
+    "issue": 435,
+    "casks": [
+      "shichizip"
+    ],
+    "recorded_at": "2026-11-18T10:50:05.897119+00:00",
+    "needs_review": false
   }
 ]

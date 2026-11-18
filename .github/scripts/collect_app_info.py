@@ -502,6 +502,7 @@ app_urls = [
     "https://formulae.brew.sh/api/cask/font-hack-nerd-font.json",
     "https://formulae.brew.sh/api/cask/glean.json",
     "https://formulae.brew.sh/api/cask/oracle-jdk-javadoc.json",
+    "https://formulae.brew.sh/api/cask/shichizip.json",
 ]
 
 # DMG
