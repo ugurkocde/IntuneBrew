@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-18T00:23:55.341Z",
+  "last_full_scan": "2026-11-18T01:05:27.428Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -1190,11 +1190,10 @@
       "name": "Ditto"
     },
     "dockdoor": {
-      "last_checked": "2026-01-15T13:57:21.232Z",
-      "bundle_id": "com.ejbills.DockDoor",
-      "previous_bundle_id": "com.ethanbills.DockDoor",
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-11-18T01:05:27.408Z",
+      "bundle_id": "com.ethanbills.DockDoor",
+      "status": "verified",
+      "source": "file",
       "name": "DockDoor"
     },
     "docker_desktop": {
@@ -3108,8 +3107,8 @@
       "name": "Diffusion Bee"
     },
     "digiexam": {
-      "last_checked": "2026-01-17T08:37:42.076Z",
-      "bundle_id": "se.digiexam.DigiExam",
+      "last_checked": "2026-11-18T01:05:27.408Z",
+      "bundle_id": "com.digiexam.student",
       "status": "verified",
       "source": "file",
       "name": "digiexam"
