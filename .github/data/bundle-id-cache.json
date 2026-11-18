@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-18T01:05:27.428Z",
+  "last_full_scan": "2026-11-18T11:11:18.331Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9559,6 +9559,13 @@
       "status": "verified",
       "source": "file",
       "name": "Oracle Java Standard Edition Development Kit"
+    },
+    "shichizip": {
+      "last_checked": "2026-11-18T11:11:18.327Z",
+      "bundle_id": "ee.dawn.ShichiZip",
+      "status": "verified",
+      "source": "file",
+      "name": "ShichiZip"
     }
   }
 }
