@@ -17,12 +17,32 @@ fi
 echo "Stopping MySQL Workbench if running..."
 pkill -f "MySQL Workbench" 2>/dev/null || true
 
-# Remove /Applications/MySQLWorkbench.app
-echo "Removing /Applications/MySQLWorkbench.app..."
-if [ -d "/Applications/MySQLWorkbench.app" ]; then
-    rm -rf "/Applications/MySQLWorkbench.app" 2>/dev/null || true
-elif [ -f "/Applications/MySQLWorkbench.app" ]; then
-    rm -f "/Applications/MySQLWorkbench.app" 2>/dev/null || true
+# Kill application with bundle ID com.oracle.mysqlworkbench if running
+echo "Stopping application with bundle ID com.oracle.mysqlworkbench if running..."
+killall -9 "com.oracle.mysqlworkbench" 2>/dev/null || true
+
+# Remove /Applications/MySQL Workbench.app
+echo "Removing /Applications/MySQL Workbench.app..."
+if [ -d "/Applications/MySQL Workbench.app" ]; then
+    rm -rf "/Applications/MySQL Workbench.app" 2>/dev/null || true
+elif [ -f "/Applications/MySQL Workbench.app" ]; then
+    rm -f "/Applications/MySQL Workbench.app" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.oracle.mysqlworkbench.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.oracle.mysqlworkbench.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.oracle.mysqlworkbench.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.oracle.mysqlworkbench.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.oracle.mysqlworkbench.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.oracle.mysqlworkbench.sfl*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/MySQL Workbench
+echo "Removing $HOME/Library/Application Support/MySQL Workbench..."
+if [ -d "$HOME/Library/Application Support/MySQL Workbench" ]; then
+    rm -rf "$HOME/Library/Application Support/MySQL Workbench" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/MySQL Workbench" ]; then
+    rm -f "$HOME/Library/Application Support/MySQL Workbench" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/MySQL/Workbench
@@ -39,6 +59,14 @@ if [ -d "$HOME/Library/Caches/com.oracle.workbench.MySQLWorkbench" ]; then
     rm -rf "$HOME/Library/Caches/com.oracle.workbench.MySQLWorkbench" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.oracle.workbench.MySQLWorkbench" ]; then
     rm -f "$HOME/Library/Caches/com.oracle.workbench.MySQLWorkbench" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.oracle.mysqlworkbench.plist
+echo "Removing $HOME/Library/Preferences/com.oracle.mysqlworkbench.plist..."
+if [ -d "$HOME/Library/Preferences/com.oracle.mysqlworkbench.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.oracle.mysqlworkbench.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.oracle.mysqlworkbench.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.oracle.mysqlworkbench.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.oracle.workbench.MySQLWorkbench.plist
