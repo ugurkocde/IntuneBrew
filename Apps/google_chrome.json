@@ -1,15 +1,15 @@
 {
   "name": "Google Chrome",
   "description": "Web browser",
-  "version": "157.0.8103.79",
+  "version": "158.0.8127.37",
   "url": "https://dl.google.com/dl/chrome/mac/universal/stable/gcem/GoogleChrome.pkg",
   "vendor_url": "https://dl.google.com/dl/chrome/mac/universal/stable/gcem/GoogleChrome.pkg",
   "bundleId": "com.google.Chrome",
   "homepage": "https://www.google.com/chrome/",
-  "fileName": "GoogleChrome-157.0.8103.79.pkg",
+  "fileName": "GoogleChrome-158.0.8127.37.pkg",
   "type": "pkg",
   "changelog": "https://chromereleases.googleblog.com/",
   "category": "Browsers",
   "publisher": "Google LLC",
-  "sha": "ac0d2f98697f5b9ef42668104812bd14c22190b19af0f9ef2ffa88a4b78b8af5"
+  "sha": "c8e6eaa794526109bd2a965d3a160424f93809f872440f683403d4bd0cedc332"
 }

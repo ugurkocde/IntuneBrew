@@ -4,12 +4,19 @@
   "version": "26.4.7",
   "url": "https://www.digiexam.com/hubfs/client/Digiexam_Mac_universal.dmg",
   "vendor_url": "https://www.digiexam.com/hubfs/client/Digiexam_Mac_universal.dmg",
-  "bundleId": "se.digiexam.DigiExam",
+  "bundleId": "com.digiexam.student",
   "homepage": "https://www.digiexam.com/",
   "homebrew_cask": "digiexam",
   "fileName": "Digiexam_Mac_universal.dmg",
   "category": "Security",
   "publisher": "Digiexam",
   "previous_version": "26.4.7",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "ead17070295e7bd361f083ac54d364bd7fb216cd5f0f793b24931057a0e0c14e",
+    "url": "https://www.digiexam.com/hubfs/client/Digiexam_Mac_universal.dmg",
+    "appName": "Digiexam.app",
+    "bundleId": "com.digiexam.student"
+  },
   "sha": "ead17070295e7bd361f083ac54d364bd7fb216cd5f0f793b24931057a0e0c14e"
 }

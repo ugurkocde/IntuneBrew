@@ -11,5 +11,12 @@
   "sha": "e67e0187f1df1ef18704d66f0227b7bef1bff3619446f6c76d14b346324ce390",
   "category": "Developer Tools",
   "publisher": "The Eclipse Foundation",
-  "previous_version": "4.41"
+  "previous_version": "4.41",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "e67e0187f1df1ef18704d66f0227b7bef1bff3619446f6c76d14b346324ce390",
+    "url": "https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2026-09/R/eclipse-inst-jre-mac-aarch64.dmg&r=1",
+    "appName": "Eclipse Installer.app",
+    "bundleId": "org.eclipse.oomph.setup.installer.product.with-jre.restricted"
+  }
 }

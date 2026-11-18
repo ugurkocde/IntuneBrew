@@ -11,5 +11,12 @@
   "sha": "ab3537b015e60c19500c47cd1a2c59c0932c05240178bbc718d068e23393ca0c",
   "category": "Media",
   "publisher": "Descript, Inc.",
-  "previous_version": "114.0.4-release.20250509.32955"
+  "previous_version": "114.0.4-release.20250509.32955",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "ab3537b015e60c19500c47cd1a2c59c0932c05240178bbc718d068e23393ca0c",
+    "url": "https://electron.descript.com/Descript-114.0.4-release.20250509.32955-arm64.dmg",
+    "appName": "Descript.app",
+    "bundleId": "com.descript.beachcube"
+  }
 }

@@ -1,22 +1,15 @@
 {
   "name": "OpenWhispr",
   "description": "Privacy-first voice-to-text dictation with AI agents",
-  "version": "1.11.0",
-  "url": "https://github.com/OpenWhispr/openwhispr/releases/download/v1.11.0/OpenWhispr-1.11.0-arm64.dmg",
-  "vendor_url": "https://github.com/OpenWhispr/openwhispr/releases/download/v1.11.0/OpenWhispr-1.11.0-arm64.dmg",
+  "version": "1.12.0",
+  "url": "https://github.com/OpenWhispr/openwhispr/releases/download/v1.12.0/OpenWhispr-1.12.0-arm64.dmg",
+  "vendor_url": "https://github.com/OpenWhispr/openwhispr/releases/download/v1.12.0/OpenWhispr-1.12.0-arm64.dmg",
   "bundleId": "com.gizmolabs.openwhispr",
   "homepage": "https://github.com/OpenWhispr/openwhispr",
   "homebrew_cask": "openwhispr",
-  "fileName": "OpenWhispr-1.11.0-arm64.dmg",
-  "sha": "10a320cba0de83895ffab8dce8a9d118e6eb85a14289e861770e4edcc43488db",
+  "fileName": "OpenWhispr-1.12.0-arm64.dmg",
+  "sha": "4a3ec44a08d6195066ce271d319cd8e43df2d37b6e3afb64b51c8f933abb3350",
   "category": "Productivity",
   "publisher": "OpenWhispr",
-  "previous_version": "1.11.0",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "10a320cba0de83895ffab8dce8a9d118e6eb85a14289e861770e4edcc43488db",
-    "url": "https://github.com/OpenWhispr/openwhispr/releases/download/v1.11.0/OpenWhispr-1.11.0-arm64.dmg",
-    "appName": "OpenWhispr.app",
-    "bundleId": "com.gizmolabs.openwhispr"
-  }
+  "previous_version": "1.11.0"
 }

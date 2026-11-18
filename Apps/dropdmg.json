@@ -22,5 +22,12 @@
   },
   "category": "Utilities",
   "publisher": "C-Command Software",
-  "previous_version": "3.7.2"
+  "previous_version": "3.7.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "909dd48743423465505038ddfe631f0c1216afc4c5ba021e74d9ff9fc91ddddb",
+    "url": "https://c-command.com/downloads/DropDMG-3.7.2.dmg",
+    "appName": "DropDMG.app",
+    "bundleId": "com.c-command.DropDMG"
+  }
 }

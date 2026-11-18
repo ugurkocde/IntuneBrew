@@ -11,5 +11,12 @@
   "category": "Utilities",
   "publisher": "CleverFiles",
   "previous_version": "6.3.2326",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "7bf4249246460a448708dcdf84418ae26353b2e5acffb3a281c2618d9306ee40",
+    "url": "https://dl.cleverfiles.com/diskdrill.dmg",
+    "appName": "Disk Drill.app",
+    "bundleId": "com.cleverfiles.DiskDrill"
+  },
   "sha": "7bf4249246460a448708dcdf84418ae26353b2e5acffb3a281c2618d9306ee40"
 }

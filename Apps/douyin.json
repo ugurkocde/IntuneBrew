@@ -11,5 +11,12 @@
   "sha": "f73361a50066704a64f0839b330c208ce1e89dfd8719336cbaf1f47422d6d816",
   "category": "Media",
   "publisher": "ByteDance Ltd.",
-  "previous_version": "8.8.0"
+  "previous_version": "8.8.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "f73361a50066704a64f0839b330c208ce1e89dfd8719336cbaf1f47422d6d816",
+    "url": "https://www.douyin.com/download/pc/obj/douyin-pc-web//douyin-pc-client/7044145585217083655/releases/540056698/8.8.0/darwin-universal/douyin-v8.8.0-darwin-universal.dmg",
+    "appName": "\u6296\u97f3.app",
+    "bundleId": "com.bytedance.douyin.desktop"
+  }
 }

@@ -11,5 +11,12 @@
   "sha": "8e61cedaf9b3ad15c218f2142282f64785c9ba5932faf7fbeabadef25097e292",
   "category": "Design",
   "publisher": "Deckset",
-  "previous_version": "2.1.0"
+  "previous_version": "2.1.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "8e61cedaf9b3ad15c218f2142282f64785c9ba5932faf7fbeabadef25097e292",
+    "url": "https://dl.decksetapp.com/Deckset+2.1.0+(2823).dmg",
+    "appName": "Deckset.app",
+    "bundleId": "com.unsignedinteger.Deckset-Paddle"
+  }
 }

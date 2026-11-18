@@ -11,6 +11,6 @@
   "sha": "be30e3bec871900c4dcf2ec2145ada61a3859ed09dc11eceaf9df8811e8ffa3c",
   "category": "Developer Tools",
   "publisher": "Tuple",
-  "previous_version": "3.4.0",
+  "previous_version": "3.4.1",
   "homebrew_cask": "tuple"
 }

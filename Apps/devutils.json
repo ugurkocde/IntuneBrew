@@ -22,5 +22,12 @@
   },
   "category": "Developer Tools",
   "publisher": "DevUtils",
-  "previous_version": "1.17.0"
+  "previous_version": "1.17.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "2e14de0f2b5f6c3a4611b808d05a3ae1408d3c1c0caa9b1dd7d887c9f33d717e",
+    "url": "https://devutils.com/archives/DevUtils-1.17.0.dmg",
+    "appName": "DevUtils.app",
+    "bundleId": "tonyapp.devutils"
+  }
 }

@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-17T13:39:26.686612Z",
-  "lastFullSyncAt": "2026-11-17T01:02:37.326552Z",
+  "lastPublishedAt": "2026-11-18T01:04:11.915845Z",
+  "lastFullSyncAt": "2026-11-18T01:04:11.915845Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -34,7 +34,15 @@
       "stage": "collection"
     },
     {
+      "app": "eclipse_ide_for_java_ee_developers",
+      "stage": "collection"
+    },
+    {
       "app": "expandrive",
+      "stage": "collection"
+    },
+    {
+      "app": "filemaker_pro",
       "stage": "collection"
     },
     {
@@ -74,10 +82,6 @@
       "stage": "collection"
     },
     {
-      "app": "megasync",
-      "stage": "collection"
-    },
-    {
       "app": "miniconda",
       "stage": "bundle ID validation"
     },
@@ -88,10 +92,6 @@
     {
       "app": "oracle_java_standard_edition_development_kit_documentation",
       "stage": "packaging"
-    },
-    {
-      "app": "pika",
-      "stage": "collection"
     },
     {
       "app": "reaper",
@@ -115,8 +115,8 @@
     }
   ],
   "appCount": 1164,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44091818125",
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44207661204",
   "identityBackfill": {
-    "lastAttempted": "db-browser-for-sqlite"
+    "lastAttempted": "elmedia-player"
   }
 }

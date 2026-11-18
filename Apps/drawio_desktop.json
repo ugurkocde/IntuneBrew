@@ -22,5 +22,12 @@
   },
   "category": "Design",
   "publisher": "JGraph Ltd.",
-  "previous_version": "32.6.10"
+  "previous_version": "32.6.10",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "83e4027837f89bfba9dafbcc5c0e4befa76e2ac7f4e37f7a7b40c817141a6727",
+    "url": "https://github.com/jgraph/drawio-desktop/releases/download/v32.6.10/draw.io-arm64-32.6.10.dmg",
+    "appName": "draw.io.app",
+    "bundleId": "com.jgraph.drawio.desktop"
+  }
 }

@@ -21,5 +21,12 @@
   },
   "category": "Developer Tools",
   "publisher": "DBeaver Ltd.",
-  "previous_version": "26.2.5"
+  "previous_version": "26.2.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "2d739a95bbc3bb2f9fada4863a9f11904b94ebb34673999915809f788e849d73",
+    "url": "https://dbeaver.io/files/26.2.5/dbeaver-ce-26.2.5-macos-aarch64.dmg",
+    "appName": "DBeaver.app",
+    "bundleId": "org.jkiss.dbeaver.core.product"
+  }
 }

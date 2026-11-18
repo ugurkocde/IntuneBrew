@@ -1,15 +1,16 @@
 {
   "name": "Oracle Java Standard Edition Development Kit",
   "description": "JDK from Oracle",
-  "version": "27.0.1.0.3",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/oracle_java_standard_edition_development_kit_27.0.1.0.3.pkg",
-  "vendor_url": "https://download.oracle.com/java/27/archive/jdk-27.0.1.0.3_macos-aarch64_bin.dmg",
+  "version": "27.0.1.1",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/oracle_java_standard_edition_development_kit_27.0.1.1.pkg",
+  "vendor_url": "https://download.oracle.com/java/27/archive/jdk-27.0.1.1_macos-aarch64_bin.dmg",
   "bundleId": "com.oracle.jdk-27.0.1.0.3",
   "homepage": "https://www.oracle.com/java/technologies/downloads/",
   "homebrew_cask": "oracle-jdk",
-  "fileName": "oracle_java_standard_edition_development_kit_27.0.1.0.3.pkg",
+  "fileName": "oracle_java_standard_edition_development_kit_27.0.1.1.pkg",
   "type": "pkg_in_dmg",
-  "sha": "cdab490c946ff601c36ad523174987c637b072251ecd25b92f9cf7355e4a3f17",
+  "sha": "302029c8202061211bcc4e4fb5dc5d79aeb1cfd4c7841a1550471cb44a57326d",
   "category": "Developer Tools",
-  "publisher": "Oracle Corporation"
+  "publisher": "Oracle Corporation",
+  "previous_version": "27.0.1.0.3"
 }

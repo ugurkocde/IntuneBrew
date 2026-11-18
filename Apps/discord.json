@@ -22,5 +22,12 @@
   },
   "category": "Communication",
   "publisher": "Discord, Inc.",
-  "previous_version": "0.0.422"
+  "previous_version": "0.0.423",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "8edb6957c30e78250909f4f746546077f25e032f9532852c4b1c2f8bfd37beb2",
+    "url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.423/Discord.dmg",
+    "appName": "Discord.app",
+    "bundleId": "com.hnc.Discord"
+  }
 }

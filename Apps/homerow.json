@@ -9,7 +9,7 @@
   "fileName": "homerow_3.0.0.pkg",
   "type": "app",
   "sha": "46d9dfe20ca6dd33d302ea0da020a88429283f8ba52f9d6704520122997ff4e8",
-  "previous_version": "1.5.3",
+  "previous_version": "3.0.0",
   "category": "Productivity",
   "publisher": "Homerow",
   "homebrew_cask": "homerow"

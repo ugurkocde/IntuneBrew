@@ -11,5 +11,12 @@
   "sha": "aae036ad827760d949791989125fd1c7cbe1dbdc30e5726836aa63ccde78aadc",
   "category": "Utilities",
   "publisher": "Many Tricks",
-  "previous_version": "3.0"
+  "previous_version": "3.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "aae036ad827760d949791989125fd1c7cbe1dbdc30e5726836aa63ccde78aadc",
+    "url": "https://manytricks.com/download/_do_not_hotlink_/displaperture300.dmg",
+    "appName": "Displaperture.app",
+    "bundleId": "com.manytricks.Displaperture"
+  }
 }

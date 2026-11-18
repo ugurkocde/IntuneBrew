@@ -11,5 +11,12 @@
   "sha": "9882c093c86f12743b6fd1e8cf980f2a74d1ee5e887cd77c8ed7ca6d2e0ef9fb",
   "category": "Utilities",
   "publisher": "AirSquirrels",
-  "previous_version": "1.11.10"
+  "previous_version": "1.11.10",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "9882c093c86f12743b6fd1e8cf980f2a74d1ee5e887cd77c8ed7ca6d2e0ef9fb",
+    "url": "https://download.airsquirrels.com/Ditto/App/Mac/Ditto-1.11.10.dmg",
+    "appName": "Ditto.app",
+    "bundleId": "com.squirrels.Ditto"
+  }
 }

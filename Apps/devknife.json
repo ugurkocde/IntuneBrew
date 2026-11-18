@@ -11,5 +11,12 @@
   "sha": "df591cb1933c2573495d048696de779c99606daf465de8ae1ddd824d59cde075",
   "category": "Developer Tools",
   "publisher": "DevKnife",
-  "previous_version": "1.19.0"
+  "previous_version": "1.19.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "df591cb1933c2573495d048696de779c99606daf465de8ae1ddd824d59cde075",
+    "url": "https://files.solotuna.com/devknife/DevKnife-1.19.0.dmg",
+    "appName": "DevKnife.app",
+    "bundleId": "com.solotuna.devknife"
+  }
 }

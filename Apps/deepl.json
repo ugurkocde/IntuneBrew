@@ -22,5 +22,12 @@
   },
   "category": "Productivity",
   "publisher": "DeepL GmbH",
-  "previous_version": "26.11.13023090762"
+  "previous_version": "26.11.13023090762",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "85aacdd551fc4d876536f29322c1787c6089fec2bd132666bc3b76d5d043a88f",
+    "url": "https://www.deepl.com/macos/download/26.11/13023090762/DeepL.dmg",
+    "appName": "DeepL.app",
+    "bundleId": "com.linguee.DeepLCopyTranslator"
+  }
 }

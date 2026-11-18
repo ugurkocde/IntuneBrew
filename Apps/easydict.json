@@ -21,5 +21,12 @@
   },
   "category": "Productivity",
   "publisher": "tisfeng",
-  "previous_version": "2.26.0"
+  "previous_version": "2.26.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b88e29e8ffb62ecad2159964e2b2c06150c522c1de34f41c62faadd750d5715e",
+    "url": "https://github.com/tisfeng/Easydict/releases/download/2.26.0/Easydict.dmg",
+    "appName": "Easydict.app",
+    "bundleId": "com.izual.Easydict"
+  }
 }

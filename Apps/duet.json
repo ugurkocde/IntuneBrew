@@ -11,5 +11,12 @@
   "sha": "2edcc20b4238f1490579595956c1e18dfd441d0e6abbb69c9cba788640e80ab9",
   "category": "Utilities",
   "publisher": "Duet, Inc.",
-  "previous_version": "3.20.3.0"
+  "previous_version": "3.20.3.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "2edcc20b4238f1490579595956c1e18dfd441d0e6abbb69c9cba788640e80ab9",
+    "url": "https://duetdownload.com/Mac/3_x/duet-dd-3-20-3-0.dmg",
+    "appName": "duet.app",
+    "bundleId": "com.kairos.duetMac"
+  }
 }
