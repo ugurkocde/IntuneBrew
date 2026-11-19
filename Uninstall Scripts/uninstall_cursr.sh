@@ -25,6 +25,14 @@ elif [ -f "/Applications/Cursr.app" ]; then
     rm -f "/Applications/Cursr.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bitgapp.cursr.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bitgapp.cursr.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bitgapp.cursr.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bitgapp.cursr.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bitgapp.cursr.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bitgapp.cursr.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/cursr
 echo "Removing $HOME/Library/Application Support/cursr..."
 if [ -d "$HOME/Library/Application Support/cursr" ]; then

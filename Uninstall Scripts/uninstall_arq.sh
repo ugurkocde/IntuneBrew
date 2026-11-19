@@ -63,6 +63,14 @@ elif [ -f "$HOME/Library/Application Support/Arq *" ]; then
     rm -f "$HOME/Library/Application Support/Arq *" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.haystacksoftware.arqmonitor.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.haystacksoftware.arqmonitor.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.haystacksoftware.arqmonitor.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.haystacksoftware.arqmonitor.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.haystacksoftware.arqmonitor.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.haystacksoftware.arqmonitor.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Arq *
 echo "Removing $HOME/Library/Arq *..."
 if [ -d "$HOME/Library/Arq *" ]; then

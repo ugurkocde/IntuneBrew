@@ -33,12 +33,12 @@ elif [ -f "$HOME/.redisinsight-app" ]; then
     rm -f "$HOME/.redisinsight-app" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v3.sfl*
-echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v3.sfl*..."
-if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v3.sfl*" ]; then
-    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v3.sfl*" 2>/dev/null || true
-elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v3.sfl*" ]; then
-    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v3.sfl*" 2>/dev/null || true
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v*.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v*.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v*.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v*.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v*.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.redislabs.redisinsight-v*.sfl*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/RedisInsight
@@ -49,28 +49,28 @@ elif [ -f "$HOME/Library/Application Support/RedisInsight" ]; then
     rm -f "$HOME/Library/Application Support/RedisInsight" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/org.RedisLabs.RedisInsight-V3
-echo "Removing $HOME/Library/Caches/org.RedisLabs.RedisInsight-V3..."
-if [ -d "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V3" ]; then
-    rm -rf "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V3" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V3" ]; then
-    rm -f "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V3" 2>/dev/null || true
+# Remove $HOME/Library/Caches/org.RedisLabs.RedisInsight-V*
+echo "Removing $HOME/Library/Caches/org.RedisLabs.RedisInsight-V*..."
+if [ -d "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V*" ]; then
+    rm -rf "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V*" ]; then
+    rm -f "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V*" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Caches/org.RedisLabs.RedisInsight-V3.ShipIt
-echo "Removing $HOME/Library/Caches/org.RedisLabs.RedisInsight-V3.ShipIt..."
-if [ -d "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V3.ShipIt" ]; then
-    rm -rf "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V3.ShipIt" 2>/dev/null || true
-elif [ -f "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V3.ShipIt" ]; then
-    rm -f "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V3.ShipIt" 2>/dev/null || true
+# Remove $HOME/Library/Caches/org.RedisLabs.RedisInsight-V*.ShipIt
+echo "Removing $HOME/Library/Caches/org.RedisLabs.RedisInsight-V*.ShipIt..."
+if [ -d "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V*.ShipIt" ]; then
+    rm -rf "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V*.ShipIt" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V*.ShipIt" ]; then
+    rm -f "$HOME/Library/Caches/org.RedisLabs.RedisInsight-V*.ShipIt" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V3
-echo "Removing $HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V3..."
-if [ -d "$HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V3" ]; then
-    rm -rf "$HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V3" 2>/dev/null || true
-elif [ -f "$HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V3" ]; then
-    rm -f "$HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V3" 2>/dev/null || true
+# Remove $HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V*
+echo "Removing $HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V*..."
+if [ -d "$HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/org.RedisLabs.RedisInsight-V*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Logs/RedisInsight
@@ -81,20 +81,20 @@ elif [ -f "$HOME/Library/Logs/RedisInsight" ]; then
     rm -f "$HOME/Library/Logs/RedisInsight" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Preferences/org.RedisLabs.RedisInsight-V3.plist
-echo "Removing $HOME/Library/Preferences/org.RedisLabs.RedisInsight-V3.plist..."
-if [ -d "$HOME/Library/Preferences/org.RedisLabs.RedisInsight-V3.plist" ]; then
-    rm -rf "$HOME/Library/Preferences/org.RedisLabs.RedisInsight-V3.plist" 2>/dev/null || true
-elif [ -f "$HOME/Library/Preferences/org.RedisLabs.RedisInsight-V3.plist" ]; then
-    rm -f "$HOME/Library/Preferences/org.RedisLabs.RedisInsight-V3.plist" 2>/dev/null || true
+# Remove $HOME/Library/Preferences/org.RedisLabs.RedisInsight-V*.plist
+echo "Removing $HOME/Library/Preferences/org.RedisLabs.RedisInsight-V*.plist..."
+if [ -d "$HOME/Library/Preferences/org.RedisLabs.RedisInsight-V*.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/org.RedisLabs.RedisInsight-V*.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.RedisLabs.RedisInsight-V*.plist" ]; then
+    rm -f "$HOME/Library/Preferences/org.RedisLabs.RedisInsight-V*.plist" 2>/dev/null || true
 fi
 
-# Remove $HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V3.savedState
-echo "Removing $HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V3.savedState..."
-if [ -d "$HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V3.savedState" ]; then
-    rm -rf "$HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V3.savedState" 2>/dev/null || true
-elif [ -f "$HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V3.savedState" ]; then
-    rm -f "$HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V3.savedState" 2>/dev/null || true
+# Remove $HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V*.savedState
+echo "Removing $HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V*.savedState..."
+if [ -d "$HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V*.savedState" ]; then
+    rm -rf "$HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V*.savedState" 2>/dev/null || true
+elif [ -f "$HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V*.savedState" ]; then
+    rm -f "$HOME/Library/Saved Application State/org.RedisLabs.RedisInsight-V*.savedState" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

@@ -115,6 +115,14 @@ elif [ -f "$HOME/Library/Application Support/Box/Box Edit" ]; then
     rm -f "$HOME/Library/Application Support/Box/Box Edit" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/com.box.Box-Device-Trust.plist
+echo "Removing $HOME/Library/Preferences/com.box.Box-Device-Trust.plist..."
+if [ -d "$HOME/Library/Preferences/com.box.Box-Device-Trust.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.box.Box-Device-Trust.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.box.Box-Device-Trust.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.box.Box-Device-Trust.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Box
 echo "Removing $HOME/Library/Application Support/Box..."
 if [ -d "$HOME/Library/Application Support/Box" ]; then

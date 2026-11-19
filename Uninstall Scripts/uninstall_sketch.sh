@@ -25,6 +25,14 @@ elif [ -f "/Applications/Sketch.app" ]; then
     rm -f "/Applications/Sketch.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/bugsnag-shared-com.bohemiancoding.sketch3
+echo "Removing $HOME/Library/Application Support/bugsnag-shared-com.bohemiancoding.sketch3..."
+if [ -d "$HOME/Library/Application Support/bugsnag-shared-com.bohemiancoding.sketch3" ]; then
+    rm -rf "$HOME/Library/Application Support/bugsnag-shared-com.bohemiancoding.sketch3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/bugsnag-shared-com.bohemiancoding.sketch3" ]; then
+    rm -f "$HOME/Library/Application Support/bugsnag-shared-com.bohemiancoding.sketch3" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bohemiancoding.sketch3.sfl*
 echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bohemiancoding.sketch3.sfl*..."
 if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.bohemiancoding.sketch3.sfl*" ]; then
@@ -49,6 +57,14 @@ elif [ -f "$HOME/Library/Autosave Information/com.bohemiancoding.sketch3.plist" 
     rm -f "$HOME/Library/Autosave Information/com.bohemiancoding.sketch3.plist" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/bugsnag-shared-com.bohemiancoding.sketch3
+echo "Removing $HOME/Library/Caches/bugsnag-shared-com.bohemiancoding.sketch3..."
+if [ -d "$HOME/Library/Caches/bugsnag-shared-com.bohemiancoding.sketch3" ]; then
+    rm -rf "$HOME/Library/Caches/bugsnag-shared-com.bohemiancoding.sketch3" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/bugsnag-shared-com.bohemiancoding.sketch3" ]; then
+    rm -f "$HOME/Library/Caches/bugsnag-shared-com.bohemiancoding.sketch3" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.bohemiancoding.sketch3
 echo "Removing $HOME/Library/Caches/com.bohemiancoding.sketch3..."
 if [ -d "$HOME/Library/Caches/com.bohemiancoding.sketch3" ]; then
@@ -71,6 +87,14 @@ if [ -d "$HOME/Library/Cookies/com.bohemiancoding.sketch3.binarycookies" ]; then
     rm -rf "$HOME/Library/Cookies/com.bohemiancoding.sketch3.binarycookies" 2>/dev/null || true
 elif [ -f "$HOME/Library/Cookies/com.bohemiancoding.sketch3.binarycookies" ]; then
     rm -f "$HOME/Library/Cookies/com.bohemiancoding.sketch3.binarycookies" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.bohemiancoding.sketch3
+echo "Removing $HOME/Library/HTTPStorages/com.bohemiancoding.sketch3..."
+if [ -d "$HOME/Library/HTTPStorages/com.bohemiancoding.sketch3" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.bohemiancoding.sketch3" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.bohemiancoding.sketch3" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.bohemiancoding.sketch3" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/HTTPStorages/com.bohemiancoding.sketch3.binarycookies

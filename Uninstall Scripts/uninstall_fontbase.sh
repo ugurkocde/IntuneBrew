@@ -25,12 +25,28 @@ elif [ -f "/Applications/FontBase.app" ]; then
     rm -f "/Applications/FontBase.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dominiklevitsky.fontbase.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dominiklevitsky.fontbase.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dominiklevitsky.fontbase.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dominiklevitsky.fontbase.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dominiklevitsky.fontbase.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.dominiklevitsky.fontbase.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/FontBase
 echo "Removing $HOME/Library/Application Support/FontBase..."
 if [ -d "$HOME/Library/Application Support/FontBase" ]; then
     rm -rf "$HOME/Library/Application Support/FontBase" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/FontBase" ]; then
     rm -f "$HOME/Library/Application Support/FontBase" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/FontBase
+echo "Removing $HOME/Library/Logs/FontBase..."
+if [ -d "$HOME/Library/Logs/FontBase" ]; then
+    rm -rf "$HOME/Library/Logs/FontBase" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/FontBase" ]; then
+    rm -f "$HOME/Library/Logs/FontBase" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/com.dominiklevitsky.fontbase.helper.plist
