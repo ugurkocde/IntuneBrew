@@ -17,6 +17,10 @@ fi
 echo "Stopping Google Chrome if running..."
 pkill -f "Google Chrome" 2>/dev/null || true
 
+# Kill application with bundle ID com.google.Chrome if running
+echo "Stopping application with bundle ID com.google.Chrome if running..."
+killall -9 "com.google.Chrome" 2>/dev/null || true
+
 # Remove /Applications/Google Chrome.app
 echo "Removing /Applications/Google Chrome.app..."
 if [ -d "/Applications/Google Chrome.app" ]; then

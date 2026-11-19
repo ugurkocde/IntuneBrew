@@ -21,12 +21,12 @@ pkill -f "Alfred" 2>/dev/null || true
 echo "Stopping application with bundle ID com.runningwithcrayons.Alfred if running..."
 killall -9 "com.runningwithcrayons.Alfred" 2>/dev/null || true
 
-# Remove /Applications/Alfred 5.app
-echo "Removing /Applications/Alfred 5.app..."
-if [ -d "/Applications/Alfred 5.app" ]; then
-    rm -rf "/Applications/Alfred 5.app" 2>/dev/null || true
-elif [ -f "/Applications/Alfred 5.app" ]; then
-    rm -f "/Applications/Alfred 5.app" 2>/dev/null || true
+# Remove /Applications/Alfred 6.app
+echo "Removing /Applications/Alfred 6.app..."
+if [ -d "/Applications/Alfred 6.app" ]; then
+    rm -rf "/Applications/Alfred 6.app" 2>/dev/null || true
+elif [ -f "/Applications/Alfred 6.app" ]; then
+    rm -f "/Applications/Alfred 6.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/Alfred
