@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-19T00:23:48.051Z",
+  "last_full_scan": "2026-11-19T01:47:23.921Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -2215,8 +2215,8 @@
       "name": "Fathom"
     },
     "ferdium": {
-      "last_checked": "2026-01-17T08:37:42.086Z",
-      "bundle_id": "com.ferdium.ferdium-app",
+      "last_checked": "2026-11-19T01:47:23.905Z",
+      "bundle_id": "org.ferdium.ferdium-app",
       "status": "verified",
       "source": "file",
       "name": "Ferdium"
@@ -2280,8 +2280,8 @@
       "name": "Fleet"
     },
     "floorp_browser": {
-      "last_checked": "2026-01-17T08:37:42.088Z",
-      "bundle_id": "org.nicola.floorp",
+      "last_checked": "2026-11-19T01:47:23.905Z",
+      "bundle_id": "app.floorp.Floorp",
       "status": "verified",
       "source": "file",
       "name": "Floorp browser"
@@ -3246,8 +3246,8 @@
       "name": "Fing Desktop"
     },
     "flexoptix_app": {
-      "last_checked": "2026-01-17T08:37:42.088Z",
-      "bundle_id": "com.nicola.FLEXOPTIX",
+      "last_checked": "2026-11-19T01:47:23.905Z",
+      "bundle_id": "net.flexoptix.flexoptix.app",
       "status": "verified",
       "source": "file",
       "name": "FLEXOPTIX App"
@@ -8914,14 +8914,10 @@
       "name": "Battery"
     },
     "finetune": {
-      "last_checked": "2026-03-31T17:42:30.230Z",
-      "bundle_id": "org.tordini.flavio.finetune",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "mac_app_store",
-      "methods_tried": [
-        "mac_app_store"
-      ],
+      "last_checked": "2026-11-19T01:47:23.905Z",
+      "bundle_id": "com.finetuneapp.FineTune",
+      "status": "verified",
+      "source": "file",
       "name": "FineTune"
     },
     "heynote": {
