@@ -4,12 +4,19 @@
   "version": "7.2.3",
   "url": "https://github.com/ferdium/ferdium-app/releases/download/v7.2.3/Ferdium-mac-7.2.3-arm64.dmg",
   "vendor_url": "https://github.com/ferdium/ferdium-app/releases/download/v7.2.3/Ferdium-mac-7.2.3-arm64.dmg",
-  "bundleId": "com.ferdium.ferdium-app",
+  "bundleId": "org.ferdium.ferdium-app",
   "homepage": "https://ferdium.org/",
   "homebrew_cask": "ferdium",
   "fileName": "Ferdium-mac-7.2.3-arm64.dmg",
   "sha": "478842403c103837b3ba3bae4b9b86df1fb4f8f1da41dc642440ac1fdd51b5b0",
   "category": "Communication",
   "publisher": "Ferdium",
-  "previous_version": "7.2.3"
+  "previous_version": "7.2.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "478842403c103837b3ba3bae4b9b86df1fb4f8f1da41dc642440ac1fdd51b5b0",
+    "url": "https://github.com/ferdium/ferdium-app/releases/download/v7.2.3/Ferdium-mac-7.2.3-arm64.dmg",
+    "appName": "Ferdium.app",
+    "bundleId": "org.ferdium.ferdium-app"
+  }
 }

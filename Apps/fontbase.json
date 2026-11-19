@@ -1,15 +1,22 @@
 {
   "name": "FontBase",
   "description": "Font manager",
-  "version": "2026.7.0",
-  "url": "https://releases.fontba.se/mac/FontBase-2026.7.0.dmg",
-  "vendor_url": "https://releases.fontba.se/mac/FontBase-2026.7.0.dmg",
+  "version": "2026.7.4",
+  "url": "https://releases.fontba.se/mac/FontBase-2026.7.4.dmg",
+  "vendor_url": "https://releases.fontba.se/mac/FontBase-2026.7.4.dmg",
   "bundleId": "com.dominiklevitsky.fontbase",
   "homepage": "https://fontba.se/",
   "homebrew_cask": "fontbase",
-  "fileName": "FontBase-2026.7.0.dmg",
-  "sha": "6f3b4ac61a38568ec687452d5bb0364d5862537419a8df98a7d5043f1b56a989",
+  "fileName": "FontBase-2026.7.4.dmg",
+  "sha": "8d8d95086a5dd44c5263d2c87a942873b79a2ae334be530c0ab110d901b8e41f",
   "category": "Design",
   "publisher": "FontBase",
-  "previous_version": "2026.7.0"
+  "previous_version": "2026.7.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "8d8d95086a5dd44c5263d2c87a942873b79a2ae334be530c0ab110d901b8e41f",
+    "url": "https://releases.fontba.se/mac/FontBase-2026.7.4.dmg",
+    "appName": "FontBase.app",
+    "bundleId": "com.dominiklevitsky.fontbase"
+  }
 }

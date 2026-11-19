@@ -11,5 +11,12 @@
   "sha": "26b2fae0ad89cf2ffafa898e4ca5b7b7566272a6a36ccc26007e314a7f747127",
   "category": "Design",
   "publisher": "Equinox",
-  "previous_version": "7.0"
+  "previous_version": "7.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "26b2fae0ad89cf2ffafa898e4ca5b7b7566272a6a36ccc26007e314a7f747127",
+    "url": "https://github.com/rlxone/Equinox/releases/download/v7.0/Equinox-Installer.dmg",
+    "appName": "Equinox.app",
+    "bundleId": "com.rlxone.equinox"
+  }
 }

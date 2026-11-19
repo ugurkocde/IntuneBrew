@@ -11,5 +11,6 @@
   "type": "app",
   "sha": "0eed41629e35d067961f2c1f5a0e86f85879b3c928d2edc5397c7b3fcc69d6c5",
   "category": "Utilities",
-  "publisher": "idawnlight"
+  "publisher": "idawnlight",
+  "previous_version": "0.3.4"
 }

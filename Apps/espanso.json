@@ -21,5 +21,12 @@
   },
   "category": "Productivity",
   "publisher": "Espanso",
-  "previous_version": "2.4.1"
+  "previous_version": "2.4.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "e6aee2d9446d7625e57dafc6613add21fc7c9f709ba42f08b5ada844c6f7110a",
+    "url": "https://github.com/espanso/espanso/releases/download/v2.4.1/Espanso-Mac-Universal.dmg",
+    "appName": "Espanso.app",
+    "bundleId": "com.federicoterzi.espanso"
+  }
 }

@@ -1,10 +1,14 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-18T11:10:23.245094Z",
-  "lastFullSyncAt": "2026-11-18T01:04:11.915845Z",
+  "lastPublishedAt": "2026-11-19T01:46:10.916973Z",
+  "lastFullSyncAt": "2026-11-19T01:46:10.916973Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
+    {
+      "app": "alfred",
+      "stage": "packaging"
+    },
     {
       "app": "android_studio",
       "stage": "collection"
@@ -31,10 +35,6 @@
     },
     {
       "app": "dockfix",
-      "stage": "collection"
-    },
-    {
-      "app": "eclipse_ide_for_java_ee_developers",
       "stage": "collection"
     },
     {
@@ -90,6 +90,10 @@
       "stage": "collection"
     },
     {
+      "app": "nvidia_geforce_now",
+      "stage": "collection"
+    },
+    {
       "app": "oracle_java_standard_edition_development_kit_documentation",
       "stage": "packaging"
     },
@@ -102,7 +106,19 @@
       "stage": "collection"
     },
     {
+      "app": "roon",
+      "stage": "collection"
+    },
+    {
+      "app": "steermouse",
+      "stage": "collection"
+    },
+    {
       "app": "trae",
+      "stage": "collection"
+    },
+    {
+      "app": "utm",
       "stage": "collection"
     },
     {
@@ -115,8 +131,8 @@
     }
   ],
   "appCount": 1165,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44289127770",
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44428826825",
   "identityBackfill": {
-    "lastAttempted": "elmedia-player"
+    "lastAttempted": "goland"
   }
 }

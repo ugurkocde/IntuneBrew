@@ -11,5 +11,12 @@
   "sha": "3458d4a6c6991a24702a4b1ea47d2b44a888bf2a5800c5bae8957b322e2bb36a",
   "category": "Communication",
   "publisher": "Franz Technologies GmbH",
-  "previous_version": "6.11.3"
+  "previous_version": "6.11.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "3458d4a6c6991a24702a4b1ea47d2b44a888bf2a5800c5bae8957b322e2bb36a",
+    "url": "https://github.com/meetfranz/franz-6/releases/download/v6.11.3/Franz-arm64.dmg",
+    "appName": "Franz.app",
+    "bundleId": "com.meetfranz.franz"
+  }
 }

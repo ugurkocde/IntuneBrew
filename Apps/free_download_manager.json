@@ -11,5 +11,12 @@
   "category": "Utilities",
   "publisher": "Free Download Manager",
   "previous_version": "6.36.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "de1431ebfed7ab1a7e674e26d7f42289d2844074cb813deee5ed2a4f0875a190",
+    "url": "https://files2.freedownloadmanager.org/6/latest/fdm.dmg",
+    "appName": "Free Download Manager.app",
+    "bundleId": "org.freedownloadmanager.fdm6"
+  },
   "sha": "de1431ebfed7ab1a7e674e26d7f42289d2844074cb813deee5ed2a4f0875a190"
 }

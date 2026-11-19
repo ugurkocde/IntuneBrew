@@ -21,5 +21,12 @@
   },
   "category": "Security",
   "publisher": "Ente",
-  "previous_version": "4.4.26"
+  "previous_version": "4.4.26",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "f063d87dc247feed7dba0ecdae208ffc22f9b5b2de0c58506394a2cae0610ada",
+    "url": "https://github.com/ente-io/ente/releases/download/auth-v4.4.26/ente-auth-v4.4.26.dmg",
+    "appName": "Ente Auth.app",
+    "bundleId": "io.ente.auth.mac"
+  }
 }

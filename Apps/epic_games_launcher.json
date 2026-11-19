@@ -22,5 +22,12 @@
   },
   "category": "Utilities",
   "publisher": "Epic Games, Inc.",
-  "previous_version": "20.3.3"
+  "previous_version": "20.3.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "d25d7344f3759ef820c3b3f27eab10e86bfaba22788f88d5b917f4937a429076",
+    "url": "https://epicgames-download1.akamaized.net/Builds/UnrealEngineLauncher/Installers/Mac/EpicInstaller-20.3.3.dmg",
+    "appName": "Epic Games Launcher.app",
+    "bundleId": "com.epicgames.EpicGamesLauncher"
+  }
 }

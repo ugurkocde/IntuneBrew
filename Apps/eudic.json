@@ -11,5 +11,12 @@
   "category": "Productivity",
   "publisher": "Eudic",
   "previous_version": "latest",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "c7b4981233e368a699528765bc7daec6461433b7c225402777e5834cf0088da5",
+    "url": "https://static.frdic.com/pkg/eudicmac.dmg?version",
+    "appName": "Eudic.app",
+    "bundleId": "com.eusoft.eudic"
+  },
   "sha": "c7b4981233e368a699528765bc7daec6461433b7c225402777e5834cf0088da5"
 }

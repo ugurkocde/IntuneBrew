@@ -4,12 +4,19 @@
   "version": "12.21.2",
   "url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.21.2/floorp-macOS-universal.dmg",
   "vendor_url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.21.2/floorp-macOS-universal.dmg",
-  "bundleId": "org.nicola.floorp",
+  "bundleId": "app.floorp.Floorp",
   "homepage": "https://floorp.app/",
   "homebrew_cask": "floorp",
   "fileName": "floorp-macOS-universal.dmg",
   "sha": "3a6a7b4b38d300ed1f38a38a42127a4d26502e14e4308713af31ac4af4083c7f",
   "category": "Browsers",
   "publisher": "Floorp Team",
-  "previous_version": "12.21.2"
+  "previous_version": "12.21.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "3a6a7b4b38d300ed1f38a38a42127a4d26502e14e4308713af31ac4af4083c7f",
+    "url": "https://github.com/Floorp-Projects/Floorp/releases/download/v12.21.2/floorp-macOS-universal.dmg",
+    "appName": "Floorp.app",
+    "bundleId": "app.floorp.Floorp"
+  }
 }

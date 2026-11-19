@@ -21,5 +21,12 @@
   },
   "category": "Media",
   "publisher": "Ente",
-  "previous_version": "1.7.31"
+  "previous_version": "1.7.31",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "4313f315ebd324c8522d9485c180074b6cff2efbfafcf2eccea746ee36b8d351",
+    "url": "https://github.com/ente-io/photos-desktop/releases/download/v1.7.31/ente-1.7.31-universal.dmg",
+    "appName": "ente.app",
+    "bundleId": "io.ente.bhari-frame"
+  }
 }

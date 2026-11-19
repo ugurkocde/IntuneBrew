@@ -11,5 +11,12 @@
   "category": "Utilities",
   "publisher": "QDev",
   "previous_version": "2.4.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b49a84bb74c02065561d55a38002d4db62495dcbead41ac4b528e5ead12ece2c",
+    "url": "https://www.qdev.de/downloads/files/ExifRenamer.dmg",
+    "appName": "ExifRenamer.app",
+    "bundleId": "de.qdev.ExifRenamer"
+  },
   "sha": "b49a84bb74c02065561d55a38002d4db62495dcbead41ac4b528e5ead12ece2c"
 }

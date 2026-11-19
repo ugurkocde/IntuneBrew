@@ -11,5 +11,12 @@
   "sha": "7eb22a27a11f017d5b3ffac4650ac1eb47162bf851ff43e4425e913303222571",
   "category": "Developer Tools",
   "publisher": "Fork Ltd.",
-  "previous_version": "2.70.2"
+  "previous_version": "2.70.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "7eb22a27a11f017d5b3ffac4650ac1eb47162bf851ff43e4425e913303222571",
+    "url": "https://cdn.fork.dev/mac/Fork-2.70.2.dmg",
+    "appName": "Fork.app",
+    "bundleId": "com.DanPristupov.Fork"
+  }
 }
