@@ -173,6 +173,14 @@ elif [ -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.microso
     rm -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.OneDrive" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.OneDriveStandaloneUpdater
+echo "Removing $HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.OneDriveStandaloneUpdater..."
+if [ -d "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.OneDriveStandaloneUpdater" ]; then
+    rm -rf "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.OneDriveStandaloneUpdater" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.OneDriveStandaloneUpdater" ]; then
+    rm -f "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.OneDriveStandaloneUpdater" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.OneDriveUpdater
 echo "Removing $HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.OneDriveUpdater..."
 if [ -d "$HOME/Library/Caches/com.plausiblelabs.crashreporter.data/com.microsoft.OneDriveUpdater" ]; then

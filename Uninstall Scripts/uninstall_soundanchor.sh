@@ -37,5 +37,21 @@ elif [ -f "/Applications/{'target': 'SoundAnchor.app'}" ]; then
     rm -f "/Applications/{'target': 'SoundAnchor.app'}" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/me.kopiro.soundanchor
+echo "Removing $HOME/Library/Application Scripts/me.kopiro.soundanchor..."
+if [ -d "$HOME/Library/Application Scripts/me.kopiro.soundanchor" ]; then
+    rm -rf "$HOME/Library/Application Scripts/me.kopiro.soundanchor" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/me.kopiro.soundanchor" ]; then
+    rm -f "$HOME/Library/Application Scripts/me.kopiro.soundanchor" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/me.kopiro.soundanchor
+echo "Removing $HOME/Library/Containers/me.kopiro.soundanchor..."
+if [ -d "$HOME/Library/Containers/me.kopiro.soundanchor" ]; then
+    rm -rf "$HOME/Library/Containers/me.kopiro.soundanchor" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/me.kopiro.soundanchor" ]; then
+    rm -f "$HOME/Library/Containers/me.kopiro.soundanchor" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

@@ -25,12 +25,36 @@ elif [ -f "/Applications/SSH Config Editor.app" ]; then
     rm -f "/Applications/SSH Config Editor.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.hejki.osx.sshce.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.hejki.osx.sshce.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.hejki.osx.sshce.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.hejki.osx.sshce.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.hejki.osx.sshce.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/org.hejki.osx.sshce.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/SSH Config Editor
 echo "Removing $HOME/Library/Application Support/SSH Config Editor..."
 if [ -d "$HOME/Library/Application Support/SSH Config Editor" ]; then
     rm -rf "$HOME/Library/Application Support/SSH Config Editor" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Support/SSH Config Editor" ]; then
     rm -f "$HOME/Library/Application Support/SSH Config Editor" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Caches/org.hejki.osx.sshce
+echo "Removing $HOME/Library/Caches/org.hejki.osx.sshce..."
+if [ -d "$HOME/Library/Caches/org.hejki.osx.sshce" ]; then
+    rm -rf "$HOME/Library/Caches/org.hejki.osx.sshce" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/org.hejki.osx.sshce" ]; then
+    rm -f "$HOME/Library/Caches/org.hejki.osx.sshce" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/org.hejki.osx.sshce*
+echo "Removing $HOME/Library/HTTPStorages/org.hejki.osx.sshce*..."
+if [ -d "$HOME/Library/HTTPStorages/org.hejki.osx.sshce*" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/org.hejki.osx.sshce*" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/org.hejki.osx.sshce*" ]; then
+    rm -f "$HOME/Library/HTTPStorages/org.hejki.osx.sshce*" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/org.hejki.osx.sshce.plist
