@@ -11,5 +11,12 @@
   "sha": "9fcef750577c1ae369a3329981f8034643608343ce648a9d398fc3908ccd8950",
   "category": "Utilities",
   "publisher": "iMazing",
-  "previous_version": "2.0.15"
+  "previous_version": "2.0.15",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "9fcef750577c1ae369a3329981f8034643608343ce648a9d398fc3908ccd8950",
+    "url": "https://downloads.imazing.com/mac/iMazing-Converter/2.0.15.591/iMazing_Converter_2.0.15.591.dmg",
+    "appName": "iMazing Converter.app",
+    "bundleId": "com.DigiDNA.iMazingHEICConverterMac"
+  }
 }

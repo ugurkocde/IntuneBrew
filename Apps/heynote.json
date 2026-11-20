@@ -11,5 +11,12 @@
   "sha": "6db5ca77fb01004b6d041fc2a22660c1b25de8b16f6323598aaf163f7efe90d8",
   "category": "Developer Tools",
   "publisher": "Heynote",
-  "previous_version": "2.9.1"
+  "previous_version": "2.9.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "6db5ca77fb01004b6d041fc2a22660c1b25de8b16f6323598aaf163f7efe90d8",
+    "url": "https://github.com/heyman/heynote/releases/download/v2.9.1/Heynote_2.9.1_arm64.dmg",
+    "appName": "Heynote.app",
+    "bundleId": "com.heynote.app"
+  }
 }

@@ -11,5 +11,12 @@
   "sha": "1234ab31439a7f3a35ba2c77e7a65977b75d15fb15d823b322adcefb221eed0f",
   "category": "Utilities",
   "publisher": "Macroplant LLC",
-  "previous_version": "4.6.0"
+  "previous_version": "4.6.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "1234ab31439a7f3a35ba2c77e7a65977b75d15fb15d823b322adcefb221eed0f",
+    "url": "https://assets.macroplant.com/download/180/iExplorer-4.6.0.dmg",
+    "appName": "iExplorer.app",
+    "bundleId": "com.macroplant.iExplorer"
+  }
 }

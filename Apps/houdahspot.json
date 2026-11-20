@@ -4,12 +4,19 @@
   "version": "6.9.1",
   "url": "https://dl.houdah.com/houdahSpot/updates/cast_assets/0f626f90-6c3e-4562-a25e-bde7bd319aa3/HoudahSpot_6.9.1.dmg",
   "vendor_url": "https://dl.houdah.com/houdahSpot/updates/cast_assets/0f626f90-6c3e-4562-a25e-bde7bd319aa3/HoudahSpot_6.9.1.dmg",
-  "bundleId": "com.houdah.HoudahSpot",
+  "bundleId": "com.houdah.HoudahSpot4",
   "homepage": "https://www.houdah.com/houdahSpot/",
   "homebrew_cask": "houdahspot",
   "fileName": "HoudahSpot_6.9.1.dmg",
   "sha": "071eae5aa7baf24f617c6670b82c08d23d1ff8bbbe71d07bbc286b4a01e7b467",
   "category": "Utilities",
   "publisher": "Houdah Software",
-  "previous_version": "6.9.1"
+  "previous_version": "6.9.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "071eae5aa7baf24f617c6670b82c08d23d1ff8bbbe71d07bbc286b4a01e7b467",
+    "url": "https://dl.houdah.com/houdahSpot/updates/cast_assets/0f626f90-6c3e-4562-a25e-bde7bd319aa3/HoudahSpot_6.9.1.dmg",
+    "appName": "HoudahSpot.app",
+    "bundleId": "com.houdah.HoudahSpot4"
+  }
 }

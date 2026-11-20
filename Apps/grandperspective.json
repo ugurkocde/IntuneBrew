@@ -11,5 +11,12 @@
   "sha": "df20837acaed53eaad186d8acb77b654f080aab4dd5d403dbe8696f4cb2d60cd",
   "category": "Utilities",
   "publisher": "Erwin Bolwidt",
-  "previous_version": "3.8.1"
+  "previous_version": "3.8.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "df20837acaed53eaad186d8acb77b654f080aab4dd5d403dbe8696f4cb2d60cd",
+    "url": "https://downloads.sourceforge.net/grandperspectiv/grandperspective/3.8.1/GrandPerspective-3_8_1.dmg",
+    "appName": "GrandPerspective.app",
+    "bundleId": "net.sourceforge.grandperspectiv"
+  }
 }

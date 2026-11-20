@@ -1,16 +1,23 @@
 {
   "name": "iMazing Profile Editor",
   "description": "Apple Device Configuration Profile Editor",
-  "version": "2.3.2",
-  "url": "https://downloads.imazing.com/mac/iMazing-Profile-Editor/2.3.2.410103/iMazing_Profile_Editor_2.3.2.410103.dmg",
-  "vendor_url": "https://downloads.imazing.com/mac/iMazing-Profile-Editor/2.3.2.410103/iMazing_Profile_Editor_2.3.2.410103.dmg",
+  "version": "2.3.3",
+  "url": "https://downloads.imazing.com/mac/iMazing-Profile-Editor/2.3.3.414303/iMazing_Profile_Editor_2.3.3.414303.dmg",
+  "vendor_url": "https://downloads.imazing.com/mac/iMazing-Profile-Editor/2.3.3.414303/iMazing_Profile_Editor_2.3.3.414303.dmg",
   "bundleId": "com.DigiDNA.iMazingProfileEditorMac",
   "homepage": "https://imazing.com/profile-editor",
   "homebrew_cask": "imazing-profile-editor",
-  "fileName": "iMazing_Profile_Editor_2.3.2.410103.dmg",
-  "sha": "bfa086853d672dc08e8c514684680b93e6f86b1da1467482ec45afc563355a45",
+  "fileName": "iMazing_Profile_Editor_2.3.3.414303.dmg",
+  "sha": "ef655971523052c2781c8dc497c5c3aee04fd1e669e916e604d6d32c702bd415",
   "changelog": "https://imazing.com/profile-editor/release-notes",
   "category": "Utilities",
   "publisher": "DigiDNA s.r.o.",
-  "previous_version": "2.3.2"
+  "previous_version": "2.3.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "ef655971523052c2781c8dc497c5c3aee04fd1e669e916e604d6d32c702bd415",
+    "url": "https://downloads.imazing.com/mac/iMazing-Profile-Editor/2.3.3.414303/iMazing_Profile_Editor_2.3.3.414303.dmg",
+    "appName": "iMazing Profile Editor.app",
+    "bundleId": "com.DigiDNA.iMazingProfileEditorMac"
+  }
 }

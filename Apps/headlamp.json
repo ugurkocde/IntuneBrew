@@ -4,12 +4,19 @@
   "version": "0.46.0",
   "url": "https://github.com/headlamp-k8s/headlamp/releases/download/v0.46.0/Headlamp-0.46.0-mac-arm64.dmg",
   "vendor_url": "https://github.com/headlamp-k8s/headlamp/releases/download/v0.46.0/Headlamp-0.46.0-mac-arm64.dmg",
-  "bundleId": "com.kinvolk.headlamp",
+  "bundleId": "com.microsoft.Headlamp",
   "homepage": "https://headlamp.dev/",
   "homebrew_cask": "headlamp",
   "fileName": "Headlamp-0.46.0-mac-arm64.dmg",
   "sha": "20294a2f1e92aa98c2a90aa0717b6b8e730ed55a0300c03db18c2f779ed7b564",
   "category": "Developer Tools",
   "publisher": "Headlamp",
-  "previous_version": "0.46.0"
+  "previous_version": "0.46.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "20294a2f1e92aa98c2a90aa0717b6b8e730ed55a0300c03db18c2f779ed7b564",
+    "url": "https://github.com/headlamp-k8s/headlamp/releases/download/v0.46.0/Headlamp-0.46.0-mac-arm64.dmg",
+    "appName": "Headlamp.app",
+    "bundleId": "com.microsoft.Headlamp"
+  }
 }

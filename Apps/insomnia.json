@@ -12,5 +12,12 @@
   "changelog": "https://github.com/Kong/insomnia/releases",
   "category": "Developer Tools",
   "publisher": "Kong, Inc.",
-  "previous_version": "13.4.0"
+  "previous_version": "13.4.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "d07738de010d5d3aa4a850f3dd788ae403ec38b7f6676862d2b9c687893c99c1",
+    "url": "https://github.com/Kong/insomnia/releases/download/core%4013.4.0/Insomnia.Core-13.4.0.dmg",
+    "appName": "Insomnia.app",
+    "bundleId": "com.insomnia.app"
+  }
 }

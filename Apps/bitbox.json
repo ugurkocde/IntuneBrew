@@ -1,22 +1,15 @@
 {
   "name": "BitBox",
   "description": "Protect your coins with the latest Swiss made hardware wallet",
-  "version": "4.52.0",
-  "url": "https://github.com/BitBoxSwiss/bitbox-wallet-app/releases/download/v4.52.0/BitBox-4.52.0-macOS.dmg",
-  "vendor_url": "https://github.com/BitBoxSwiss/bitbox-wallet-app/releases/download/v4.52.0/BitBox-4.52.0-macOS.dmg",
+  "version": "4.53.0",
+  "url": "https://github.com/BitBoxSwiss/bitbox-wallet-app/releases/download/v4.53.0/BitBox-4.53.0-macOS.dmg",
+  "vendor_url": "https://github.com/BitBoxSwiss/bitbox-wallet-app/releases/download/v4.53.0/BitBox-4.53.0-macOS.dmg",
   "bundleId": "ch.shiftcrypto.wallet",
   "homepage": "https://bitbox.swiss/",
   "homebrew_cask": "bitbox",
-  "fileName": "BitBox-4.52.0-macOS.dmg",
-  "sha": "fc3e13bf8aedf2df375a4d63a8b8af38651b70835be691928e6b796156c4809d",
+  "fileName": "BitBox-4.53.0-macOS.dmg",
+  "sha": "add5933b807fde91b6d7a8c24f9cc7f176e5e64d8b4826b55715c9a26156443b",
   "category": "Security",
   "publisher": "SHIFT Cryptosecurity AG",
-  "previous_version": "4.52.0",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "fc3e13bf8aedf2df375a4d63a8b8af38651b70835be691928e6b796156c4809d",
-    "url": "https://github.com/BitBoxSwiss/bitbox-wallet-app/releases/download/v4.52.0/BitBox-4.52.0-macOS.dmg",
-    "appName": "BitBox.app",
-    "bundleId": "ch.shiftcrypto.wallet"
-  }
+  "previous_version": "4.52.0"
 }

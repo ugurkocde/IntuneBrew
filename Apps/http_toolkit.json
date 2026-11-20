@@ -11,5 +11,12 @@
   "sha": "06397ca729d7c77fbb43fc27029301b782f5fed4917b7b9f3c2394a56c3808be",
   "category": "Developer Tools",
   "publisher": "HTTP Toolkit",
-  "previous_version": "1.27.4"
+  "previous_version": "1.27.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "06397ca729d7c77fbb43fc27029301b782f5fed4917b7b9f3c2394a56c3808be",
+    "url": "https://github.com/httptoolkit/httptoolkit-desktop/releases/download/v1.27.4/HttpToolkit-1.27.4-arm64.dmg",
+    "appName": "HTTP Toolkit.app",
+    "bundleId": "tech.httptoolkit.desktop"
+  }
 }

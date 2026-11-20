@@ -12,5 +12,12 @@
   "changelog": "https://imazing.com/guides/imazing-release-notes",
   "category": "Utilities",
   "publisher": "DigiDNA SA",
-  "previous_version": "3.6.5"
+  "previous_version": "3.6.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "ea8a7c4833a1f31980495122e364d521f45536faa2b54b7510b70127d34fded4",
+    "url": "https://downloads.imazing.com/mac/iMazing/3.6.5.24380/iMazing_3.6.5.24380.dmg",
+    "appName": "iMazing.app",
+    "bundleId": "com.DigiDNA.iMazing3Mac"
+  }
 }

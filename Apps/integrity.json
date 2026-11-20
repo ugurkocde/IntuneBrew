@@ -11,5 +11,12 @@
   "category": "Developer Tools",
   "publisher": "Peacock Media",
   "previous_version": "12.13.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "ca77165898dd14a4ea7ebc9a44f0285dbce69df09c6769c05aabeaf358b2809f",
+    "url": "https://peacockmedia.software/mac/integrity/integrity.dmg",
+    "appName": "Integrity.app",
+    "bundleId": "com.peacockmedia.integrity"
+  },
   "sha": "ca77165898dd14a4ea7ebc9a44f0285dbce69df09c6769c05aabeaf358b2809f"
 }

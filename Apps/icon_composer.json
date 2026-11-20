@@ -11,5 +11,12 @@
   "sha": "dce4d78a615e543832fb2cdca3b28a31355cf21d57b6b4ab96f5b278ed7d5af6",
   "category": "Developer Tools",
   "publisher": "Apple Inc.",
-  "previous_version": "1.2"
+  "previous_version": "1.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "dce4d78a615e543832fb2cdca3b28a31355cf21d57b6b4ab96f5b278ed7d5af6",
+    "url": "https://devimages-cdn.apple.com/design/resources/download/Icon-Composer-1.2.dmg",
+    "appName": "Icon Composer.app",
+    "bundleId": "com.apple.IconComposer"
+  }
 }

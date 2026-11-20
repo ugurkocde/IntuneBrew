@@ -4,12 +4,19 @@
   "version": "1.0",
   "url": "https://mightymac.app/intellidock/download/IntelliDock-1.0.dmg",
   "vendor_url": "https://mightymac.app/intellidock/download/IntelliDock-1.0.dmg",
-  "bundleId": "com.nicola.IntelliDock",
+  "bundleId": "app.mightymac.IntelliDock",
   "homepage": "https://mightymac.app/intellidock/",
   "homebrew_cask": "intellidock",
   "fileName": "IntelliDock-1.0.dmg",
   "sha": "592ce456ddf29f3464c3dcdc530d86be92cadc72afd471d968f0f6fd07125e94",
   "category": "Utilities",
   "publisher": "MightyMac",
-  "previous_version": "1.0"
+  "previous_version": "1.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "592ce456ddf29f3464c3dcdc530d86be92cadc72afd471d968f0f6fd07125e94",
+    "url": "https://mightymac.app/intellidock/download/IntelliDock-1.0.dmg",
+    "appName": "IntelliDock.app",
+    "bundleId": "app.mightymac.IntelliDock"
+  }
 }
