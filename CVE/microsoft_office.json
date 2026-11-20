@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Office",
   "app_key": "microsoft_office",
-  "last_updated": "2026-11-19",
+  "last_updated": "2026-11-20",
   "total_cves": 1735,
   "summary": {
     "critical": 20,
@@ -7490,7 +7490,7 @@
     {
       "cve_id": "CVE-2026-78505",
       "published_date": "2026-09-08",
-      "last_modified_date": "2026-09-17",
+      "last_modified_date": "2026-11-19",
       "description": "Heap-based buffer overflow in Microsoft Office allows an unauthorized attacker to execute code over a network.",
       "base_score": 8.8,
       "severity": "HIGH",
