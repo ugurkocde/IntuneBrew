@@ -5,7 +5,8 @@
       "miniconda"
     ],
     "recorded_at": "2026-11-16T15:12:16.635518+00:00",
-    "needs_review": false
+    "needs_review": false,
+    "review_notified_at": "2026-11-20T01:12:39.375685+00:00"
   },
   {
     "issue": 429,
@@ -13,6 +14,7 @@
       "oracle-jdk-javadoc"
     ],
     "recorded_at": "2026-11-16T15:16:24.616821+00:00",
-    "needs_review": false
+    "needs_review": false,
+    "review_notified_at": "2026-11-20T01:12:39.375990+00:00"
   }
 ]
