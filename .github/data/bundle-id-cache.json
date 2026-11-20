@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-20T00:22:20.137Z",
+  "last_full_scan": "2026-11-20T01:13:29.778Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -3539,8 +3539,8 @@
       "name": "HazeOver"
     },
     "headlamp": {
-      "last_checked": "2026-01-17T08:37:42.097Z",
-      "bundle_id": "com.kinvolk.headlamp",
+      "last_checked": "2026-11-20T01:13:29.768Z",
+      "bundle_id": "com.microsoft.Headlamp",
       "status": "verified",
       "source": "file",
       "name": "Headlamp"
@@ -3639,11 +3639,10 @@
       "name": "Hot"
     },
     "houdahspot": {
-      "last_checked": "2026-01-16T14:03:12.560Z",
-      "bundle_id": "com.houdah.HoudahSpot",
-      "previous_bundle_id": "com.houdah.HoudahSpot6",
-      "status": "updated",
-      "source": "api",
+      "last_checked": "2026-11-20T01:13:29.768Z",
+      "bundle_id": "com.houdah.HoudahSpot4",
+      "status": "verified",
+      "source": "file",
       "name": "HoudahSpot"
     },
     "hp_easy_admin": {
@@ -3824,8 +3823,8 @@
       "name": "Integrity"
     },
     "intellidock": {
-      "last_checked": "2026-01-17T08:37:42.109Z",
-      "bundle_id": "com.nicola.IntelliDock",
+      "last_checked": "2026-11-20T01:13:29.769Z",
+      "bundle_id": "app.mightymac.IntelliDock",
       "status": "verified",
       "source": "file",
       "name": "IntelliDock"
@@ -7314,8 +7313,8 @@
       "name": "SQLPro Studio"
     },
     "squash": {
-      "last_checked": "2026-01-17T08:37:42.177Z",
-      "bundle_id": "com.realmacsoftware.squash",
+      "last_checked": "2026-11-20T01:13:29.775Z",
+      "bundle_id": "com.realmacsoftware.squash3",
       "status": "verified",
       "source": "file",
       "name": "squash"
