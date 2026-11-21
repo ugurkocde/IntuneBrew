@@ -11,5 +11,12 @@
   "sha": "d4ba42218148446c265c6a823107a969b3b0dca5e14df834563f2859927228f5",
   "category": "Developer Tools",
   "publisher": "Lapce Authors",
-  "previous_version": "0.4.6"
+  "previous_version": "0.4.6",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "d4ba42218148446c265c6a823107a969b3b0dca5e14df834563f2859927228f5",
+    "url": "https://github.com/lapce/lapce/releases/download/v0.4.6/Lapce-macos.dmg",
+    "appName": "Lapce.app",
+    "bundleId": "io.lapce"
+  }
 }

@@ -11,5 +11,12 @@
   "sha": "be75d268d9619215c65c756fb7c2c5f153e4c23b5165b44572b67ab49088d3cd",
   "category": "Productivity",
   "publisher": "Langdock",
-  "previous_version": "1.1.4"
+  "previous_version": "1.1.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "be75d268d9619215c65c756fb7c2c5f153e4c23b5165b44572b67ab49088d3cd",
+    "url": "https://desktop.langdock.com/global/stable/Langdock-1.1.5.dmg",
+    "appName": "Langdock.app",
+    "bundleId": "com.langdock.desktop"
+  }
 }

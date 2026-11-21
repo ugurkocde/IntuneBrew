@@ -4,12 +4,19 @@
   "version": "4.116.0",
   "url": "https://download.cloud.lastpass.com/mac/LastPass.dmg",
   "vendor_url": "https://download.cloud.lastpass.com/mac/LastPass.dmg",
-  "bundleId": "com.auxilium.lastpasslauncher",
+  "bundleId": "com.lastpass.lastpassmacdesktop",
   "homepage": "https://www.lastpass.com/",
   "homebrew_cask": "lastpass",
   "fileName": "LastPass.dmg",
   "category": "Security",
   "publisher": "GoTo",
   "previous_version": "4.116.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "e57596149e25c5edc4f4997e12b553f1e02b790824cc9cf6ef3f270b5488ef8e",
+    "url": "https://download.cloud.lastpass.com/mac/LastPass.dmg",
+    "appName": "LastPass.app",
+    "bundleId": "com.lastpass.lastpassmacdesktop"
+  },
   "sha": "e57596149e25c5edc4f4997e12b553f1e02b790824cc9cf6ef3f270b5488ef8e"
 }

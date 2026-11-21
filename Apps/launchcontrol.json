@@ -11,6 +11,6 @@
   "sha": "b8543608e7bb0aa0ba17ac87b260e60c914e6677b8ff324b49adc926a0c843f7",
   "category": "Developer Tools",
   "publisher": "Soma Zone",
-  "previous_version": "2.12",
+  "previous_version": "2.13.1",
   "homebrew_cask": "launchcontrol"
 }

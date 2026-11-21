@@ -4,12 +4,19 @@
   "version": "160.0.1",
   "url": "https://dl.librewolf.net/librewolf/160.0.1-1/librewolf-160.0.1-1-macos-arm64-package.dmg",
   "vendor_url": "https://dl.librewolf.net/librewolf/160.0.1-1/librewolf-160.0.1-1-macos-arm64-package.dmg",
-  "bundleId": "org.mozilla.librewolf",
+  "bundleId": "net.librewolf.librewolf",
   "homepage": "https://librewolf.net/",
   "homebrew_cask": "librewolf",
   "fileName": "librewolf-160.0.1-1-macos-arm64-package.dmg",
   "sha": "63fecdaff40925486c1c5023c651b61a0858e49847ea338a64d6e47d517f774c",
   "category": "Browsers",
   "publisher": "LibreWolf Project",
-  "previous_version": "160.0.1"
+  "previous_version": "160.0.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "63fecdaff40925486c1c5023c651b61a0858e49847ea338a64d6e47d517f774c",
+    "url": "https://dl.librewolf.net/librewolf/160.0.1-1/librewolf-160.0.1-1-macos-arm64-package.dmg",
+    "appName": "LibreWolf.app",
+    "bundleId": "net.librewolf.librewolf"
+  }
 }

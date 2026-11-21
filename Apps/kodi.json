@@ -11,5 +11,12 @@
   "sha": "4ae19c4d20f41e81c8889302874179c5b8bf1d86bbb3c61b6a7e0d0f2e6cbf22",
   "category": "Media",
   "publisher": "Kodi Foundation",
-  "previous_version": "21.3-Omega"
+  "previous_version": "21.3-Omega",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "4ae19c4d20f41e81c8889302874179c5b8bf1d86bbb3c61b6a7e0d0f2e6cbf22",
+    "url": "https://mirrors.kodi.tv/releases/osx/arm64/kodi-21.3-Omega-arm64.dmg",
+    "appName": "Kodi.app",
+    "bundleId": "org.xbmc.kodi"
+  }
 }

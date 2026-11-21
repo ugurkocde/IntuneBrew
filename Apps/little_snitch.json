@@ -12,5 +12,12 @@
   "changelog": "https://www.obdev.at/products/littlesnitch/releasenotes.html",
   "category": "Security",
   "publisher": "Objective Development Software GmbH",
-  "previous_version": "6.5"
+  "previous_version": "6.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "a83763bbf416676231bcd9c414b16a36c31cc85c14aa0de43cabaf1ef97fa8ba",
+    "url": "https://www.obdev.at/downloads/littlesnitch/LittleSnitch-6.5.dmg",
+    "appName": "Little Snitch.app",
+    "bundleId": "at.obdev.littlesnitch"
+  }
 }

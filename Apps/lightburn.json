@@ -11,5 +11,12 @@
   "sha": "62cea610010c0bc34b7a78269f3da7aacdd3c214da7f46b3ad0c94fb58436412",
   "category": "Design",
   "publisher": "LightBurn Software",
-  "previous_version": "2.2.01"
+  "previous_version": "2.2.01",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "62cea610010c0bc34b7a78269f3da7aacdd3c214da7f46b3ad0c94fb58436412",
+    "url": "https://release.lightburnsoftware.com/LightBurn/Release/LightBurn-v2.2.01/LightBurn.V2.2.01.dmg",
+    "appName": "LightBurn.app",
+    "bundleId": "com.LightBurnSoftware.LightBurn"
+  }
 }

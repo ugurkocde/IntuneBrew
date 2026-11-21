@@ -12,5 +12,12 @@
   "changelog": "https://github.com/kovidgoyal/kitty/releases",
   "category": "Developer Tools",
   "publisher": "Kovid Goyal",
-  "previous_version": "0.51.0"
+  "previous_version": "0.51.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "e7d51ec9f1978ff2fee61647b6f7eb59530e06d9bb1af876b00357ca7779638d",
+    "url": "https://github.com/kovidgoyal/kitty/releases/download/v0.51.0/kitty-0.51.0.dmg",
+    "appName": "kitty.app",
+    "bundleId": "net.kovidgoyal.kitty"
+  }
 }

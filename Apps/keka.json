@@ -12,5 +12,12 @@
   "changelog": "https://github.com/aonez/Keka/releases",
   "category": "Utilities",
   "publisher": "Keka Team",
-  "previous_version": "1.6.8"
+  "previous_version": "1.6.8",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "25a4daf0492b7e3bca043c8a7ba1ae97507dd8dbf872811daf74b01f16a12125",
+    "url": "https://github.com/aonez/Keka/releases/download/v1.6.8/Keka-1.6.8.dmg",
+    "appName": "Keka.app",
+    "bundleId": "com.aone.keka"
+  }
 }

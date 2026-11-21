@@ -11,5 +11,12 @@
   "sha": "0f4b69d5fd4ec59da7b6e153722314c93dc263db2b81c0d0191e256360473ce3",
   "category": "Media",
   "publisher": "Wulkano",
-  "previous_version": "3.6.0"
+  "previous_version": "3.6.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "0f4b69d5fd4ec59da7b6e153722314c93dc263db2b81c0d0191e256360473ce3",
+    "url": "https://github.com/wulkano/kap/releases/download/v3.6.0/Kap-3.6.0-arm64.dmg",
+    "appName": "Kap.app",
+    "bundleId": "com.wulkano.kap"
+  }
 }

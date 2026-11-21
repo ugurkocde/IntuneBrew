@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-20T01:12:24.521356Z",
-  "lastFullSyncAt": "2026-11-20T01:12:24.521356Z",
+  "lastPublishedAt": "2026-11-21T01:08:58.572750Z",
+  "lastFullSyncAt": "2026-11-21T01:08:58.572750Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -70,7 +70,15 @@
       "stage": "collection"
     },
     {
+      "app": "keepassxc",
+      "stage": "collection"
+    },
+    {
       "app": "keeper_password_manager",
+      "stage": "collection"
+    },
+    {
+      "app": "kobo",
       "stage": "collection"
     },
     {
@@ -135,8 +143,8 @@
     }
   ],
   "appCount": 1165,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44645440082",
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44843640317",
   "identityBackfill": {
-    "lastAttempted": "joplin"
+    "lastAttempted": "macshot"
   }
 }

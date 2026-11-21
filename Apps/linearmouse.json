@@ -11,5 +11,12 @@
   "sha": "609276d5db79874034c9469a4eb56ccde6ed6fd01c52404f41fd4b493042789b",
   "category": "Utilities",
   "publisher": "LinearMouse",
-  "previous_version": "0.13.0"
+  "previous_version": "0.13.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "609276d5db79874034c9469a4eb56ccde6ed6fd01c52404f41fd4b493042789b",
+    "url": "https://dl.linearmouse.org/v0.13.0/LinearMouse.dmg",
+    "appName": "LinearMouse.app",
+    "bundleId": "com.lujjjh.LinearMouse"
+  }
 }

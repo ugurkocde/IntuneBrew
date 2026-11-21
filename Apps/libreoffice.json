@@ -12,5 +12,12 @@
   "changelog": "https://www.libreoffice.org/download/release-notes/",
   "category": "Productivity",
   "publisher": "The Document Foundation",
-  "previous_version": "26.8.3.1"
+  "previous_version": "26.8.3.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "de943203795e5057785f65515063e2db5eb60b0bb6d8e2534fec59e5cc5fb988",
+    "url": "https://download.documentfoundation.org/libreoffice/stable/26.8.3/mac/aarch64/LibreOffice_26.8.3_MacOS_aarch64.dmg",
+    "appName": "LibreOffice.app",
+    "bundleId": "org.libreoffice.script"
+  }
 }
