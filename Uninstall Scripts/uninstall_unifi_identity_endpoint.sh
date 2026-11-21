@@ -47,5 +47,37 @@ elif [ -f "$HOME/Library/Application Support/com.ui.uid.standard-desktop" ]; the
     rm -f "$HOME/Library/Application Support/com.ui.uid.standard-desktop" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/com.ui.uid.standard-desktop
+echo "Removing $HOME/Library/Caches/com.ui.uid.standard-desktop..."
+if [ -d "$HOME/Library/Caches/com.ui.uid.standard-desktop" ]; then
+    rm -rf "$HOME/Library/Caches/com.ui.uid.standard-desktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/com.ui.uid.standard-desktop" ]; then
+    rm -f "$HOME/Library/Caches/com.ui.uid.standard-desktop" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/HTTPStorages/com.ui.uid.standard-desktop
+echo "Removing $HOME/Library/HTTPStorages/com.ui.uid.standard-desktop..."
+if [ -d "$HOME/Library/HTTPStorages/com.ui.uid.standard-desktop" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.ui.uid.standard-desktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.ui.uid.standard-desktop" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.ui.uid.standard-desktop" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Logs/com.ui.uid.standard-desktop
+echo "Removing $HOME/Library/Logs/com.ui.uid.standard-desktop..."
+if [ -d "$HOME/Library/Logs/com.ui.uid.standard-desktop" ]; then
+    rm -rf "$HOME/Library/Logs/com.ui.uid.standard-desktop" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/com.ui.uid.standard-desktop" ]; then
+    rm -f "$HOME/Library/Logs/com.ui.uid.standard-desktop" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/com.ui.uid.standard-desktop.plist
+echo "Removing $HOME/Library/Preferences/com.ui.uid.standard-desktop.plist..."
+if [ -d "$HOME/Library/Preferences/com.ui.uid.standard-desktop.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/com.ui.uid.standard-desktop.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/com.ui.uid.standard-desktop.plist" ]; then
+    rm -f "$HOME/Library/Preferences/com.ui.uid.standard-desktop.plist" 2>/dev/null || true
+fi
+
 echo "Uninstallation complete!"
 exit 0

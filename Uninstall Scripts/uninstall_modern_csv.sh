@@ -37,6 +37,22 @@ elif [ -f "$HOME/Library/Application Support/Modern CSV" ]; then
     rm -f "$HOME/Library/Application Support/Modern CSV" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/Modern CSV
+echo "Removing $HOME/Library/Caches/Modern CSV..."
+if [ -d "$HOME/Library/Caches/Modern CSV" ]; then
+    rm -rf "$HOME/Library/Caches/Modern CSV" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/Modern CSV" ]; then
+    rm -f "$HOME/Library/Caches/Modern CSV" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/Modern CSV
+echo "Removing $HOME/Library/Preferences/Modern CSV..."
+if [ -d "$HOME/Library/Preferences/Modern CSV" ]; then
+    rm -rf "$HOME/Library/Preferences/Modern CSV" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/Modern CSV" ]; then
+    rm -f "$HOME/Library/Preferences/Modern CSV" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/net.galliumdigital.Modern-CSV.savedState
 echo "Removing $HOME/Library/Saved Application State/net.galliumdigital.Modern-CSV.savedState..."
 if [ -d "$HOME/Library/Saved Application State/net.galliumdigital.Modern-CSV.savedState" ]; then

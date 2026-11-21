@@ -25,12 +25,28 @@ elif [ -f "/Applications/BitBox.app" ]; then
     rm -f "/Applications/BitBox.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/bitbox
+echo "Removing $HOME/Library/Application Support/bitbox..."
+if [ -d "$HOME/Library/Application Support/bitbox" ]; then
+    rm -rf "$HOME/Library/Application Support/bitbox" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/bitbox" ]; then
+    rm -f "$HOME/Library/Application Support/bitbox" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/ch.shiftcrypto.BitBoxApp.plist
 echo "Removing $HOME/Library/Preferences/ch.shiftcrypto.BitBoxApp.plist..."
 if [ -d "$HOME/Library/Preferences/ch.shiftcrypto.BitBoxApp.plist" ]; then
     rm -rf "$HOME/Library/Preferences/ch.shiftcrypto.BitBoxApp.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/ch.shiftcrypto.BitBoxApp.plist" ]; then
     rm -f "$HOME/Library/Preferences/ch.shiftcrypto.BitBoxApp.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/ch.shiftcrypto.wallet.plist
+echo "Removing $HOME/Library/Preferences/ch.shiftcrypto.wallet.plist..."
+if [ -d "$HOME/Library/Preferences/ch.shiftcrypto.wallet.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/ch.shiftcrypto.wallet.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/ch.shiftcrypto.wallet.plist" ]; then
+    rm -f "$HOME/Library/Preferences/ch.shiftcrypto.wallet.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Saved Application State/ch.shiftcrypto.wallet.savedState
