@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-21T00:23:42.823Z",
+  "last_full_scan": "2026-11-21T01:10:09.855Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -4065,8 +4065,8 @@
       "name": "Keka"
     },
     "keybase": {
-      "last_checked": "2026-01-17T08:37:42.117Z",
-      "bundle_id": "keybase.Helper",
+      "last_checked": "2026-11-21T01:10:09.847Z",
+      "bundle_id": "keybase.Electron",
       "status": "verified",
       "source": "file",
       "name": "Keybase"
@@ -4128,8 +4128,8 @@
       "name": "kitty"
     },
     "klokki": {
-      "last_checked": "2026-01-17T08:37:42.118Z",
-      "bundle_id": "com.klokki-launcher",
+      "last_checked": "2026-11-21T01:10:09.847Z",
+      "bundle_id": "com.klokki.macos",
       "status": "verified",
       "source": "file",
       "name": "Klokki"
@@ -4184,8 +4184,8 @@
       "name": "Lapce"
     },
     "lark": {
-      "last_checked": "2026-01-17T08:37:42.119Z",
-      "bundle_id": "com.electron.lark.helper",
+      "last_checked": "2026-11-21T01:10:09.847Z",
+      "bundle_id": "com.larksuite.larkApp",
       "status": "verified",
       "source": "file",
       "name": "Lark"
@@ -4247,8 +4247,8 @@
       "name": "LibreOffice"
     },
     "librewolf": {
-      "last_checked": "2026-01-17T08:37:42.120Z",
-      "bundle_id": "org.mozilla.librewolf",
+      "last_checked": "2026-11-21T01:10:09.847Z",
+      "bundle_id": "net.librewolf.librewolf",
       "status": "verified",
       "source": "file",
       "name": "LibreWolf"
@@ -8997,16 +8997,10 @@
       "name": "Affinity"
     },
     "lastpass": {
-      "last_checked": "2026-04-29T13:41:35.610Z",
-      "bundle_id": "com.auxilium.lastpasslauncher",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "github_search",
-      "methods_tried": [
-        "mac_app_store",
-        "pkg_inspection",
-        "github_search"
-      ],
+      "last_checked": "2026-11-21T01:10:09.847Z",
+      "bundle_id": "com.lastpass.lastpassmacdesktop",
+      "status": "verified",
+      "source": "file",
       "name": "LastPass"
     },
     "siliconmotion_instantview": {
@@ -9252,16 +9246,10 @@
       "name": "Supremo"
     },
     "linphone": {
-      "last_checked": "2026-07-18T18:23:33.265Z",
-      "bundle_id": "org.linphone.phone",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "github_search",
-      "methods_tried": [
-        "mac_app_store",
-        "pkg_inspection",
-        "github_search"
-      ],
+      "last_checked": "2026-11-21T01:10:09.847Z",
+      "bundle_id": "com.belledonnecommunications.linphone",
+      "status": "verified",
+      "source": "file",
       "name": "Linphone"
     },
     "winbox": {
