@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-22T00:25:12.150Z",
+  "last_full_scan": "2026-11-22T01:11:26.267Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -4590,8 +4590,8 @@
       "name": "Malwarebytes for Mac"
     },
     "marginnote": {
-      "last_checked": "2026-01-17T08:37:42.127Z",
-      "bundle_id": "com.marginnote.marginnote3.mac",
+      "last_checked": "2026-11-22T01:11:26.257Z",
+      "bundle_id": "QReader.MarginStudy.easy",
       "status": "verified",
       "source": "file",
       "name": "MarginNote"
@@ -4688,8 +4688,8 @@
       "name": "Mem"
     },
     "memory_cleaner": {
-      "last_checked": "2026-01-17T08:37:42.129Z",
-      "bundle_id": "com.nektony.Memory-Cleaner-SII",
+      "last_checked": "2026-11-22T01:11:26.257Z",
+      "bundle_id": "com.nektony.Memory-Cleaner-SIII",
       "status": "verified",
       "source": "file",
       "name": "Memory Cleaner"
@@ -4716,8 +4716,8 @@
       "name": "MenuBar Stats"
     },
     "menubarx": {
-      "last_checked": "2026-01-17T08:37:42.129Z",
-      "bundle_id": "com.nicola.MenubarX",
+      "last_checked": "2026-11-22T01:11:26.257Z",
+      "bundle_id": "com.app.menubarx",
       "status": "verified",
       "source": "file",
       "name": "MenubarX"
@@ -5094,8 +5094,8 @@
       "name": "Mullvad VPN"
     },
     "multi": {
-      "last_checked": "2026-01-17T08:37:42.136Z",
-      "bundle_id": "app.multi.multi",
+      "last_checked": "2026-11-22T01:11:26.258Z",
+      "bundle_id": "llc.gumbs.multi",
       "status": "verified",
       "source": "file",
       "name": "Multi"
@@ -9180,14 +9180,10 @@
       "name": "MAMP"
     },
     "mediainfo": {
-      "last_checked": "2026-07-01T22:35:58.981Z",
-      "bundle_id": "net.mediaarea.mediainfo.mac",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "mac_app_store",
-      "methods_tried": [
-        "mac_app_store"
-      ],
+      "last_checked": "2026-11-22T01:11:26.257Z",
+      "bundle_id": "net.mediaarea.mediainfo.mac-old",
+      "status": "verified",
+      "source": "file",
       "name": "MediaInfo"
     },
     "vagrant": {
@@ -9266,14 +9262,10 @@
       "name": "WinBox"
     },
     "multiviewer": {
-      "last_checked": "2026-07-25T19:22:22.095Z",
-      "bundle_id": "io.optimizedapps.srtmultiviewer",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "mac_app_store",
-      "methods_tried": [
-        "mac_app_store"
-      ],
+      "last_checked": "2026-11-22T01:11:26.258Z",
+      "bundle_id": "com.electron.multiviewer-for-f1",
+      "status": "verified",
+      "source": "file",
       "name": "MultiViewer"
     },
     "chatgpt_classic": {
