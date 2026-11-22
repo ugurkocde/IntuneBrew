@@ -11,5 +11,12 @@
   "sha": "1136ad4200a1bfae2f6e348e56d8aaefb5a1645cfabba78f30e830a6badecebf",
   "category": "Media",
   "publisher": "Movist Prime",
-  "previous_version": "2.21.1"
+  "previous_version": "2.21.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "1136ad4200a1bfae2f6e348e56d8aaefb5a1645cfabba78f30e830a6badecebf",
+    "url": "https://update.cocoable.com/MovistPro_2.21.1.dmg",
+    "appName": "Movist Pro.app",
+    "bundleId": "com.movist.MovistPro"
+  }
 }

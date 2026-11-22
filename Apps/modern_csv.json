@@ -11,5 +11,12 @@
   "sha": "b57c96abdacae389518858f0e20702ca735b95422f0cc8aa0278e976490a13ba",
   "category": "Productivity",
   "publisher": "Modern CSV",
-  "previous_version": "2.4.5"
+  "previous_version": "3.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b57c96abdacae389518858f0e20702ca735b95422f0cc8aa0278e976490a13ba",
+    "url": "https://www.moderncsv.com/release/ModernCSV-Mac-v3.0.dmg",
+    "appName": "Modern CSV.app",
+    "bundleId": "net.galliumdigital.Modern-CSV"
+  }
 }

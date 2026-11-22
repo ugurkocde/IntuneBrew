@@ -3,7 +3,7 @@
   "description": "Optimise and personalise your Jabra headset",
   "version": "8.4.30601",
   "url": "https://intunebrew.blob.core.windows.net/pkg/jabra_direct_8.4.30601.pkg",
-  "vendor_url": "https://jabraxpressonlineprdstor.blob.core.windows.net/jdo/JabraDirectSetup.dmg",
+  "vendor_url": "https://jabraxpressonlineprod.blob.core.windows.net/jdo/JabraDirectSetup.dmg",
   "bundleId": "com.jabra.JabraFirmwareUpdate",
   "homepage": "https://www.jabra.com/software-and-services/jabra-direct",
   "homebrew_cask": "jabra-direct",

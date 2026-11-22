@@ -11,5 +11,12 @@
   "sha": "f5fc8c1e6c24459c6678d6bd24d1f7b72d0f7960be6ed42cdb2f2f212663b696",
   "category": "Communication",
   "publisher": "Missive",
-  "previous_version": "11.39.0"
+  "previous_version": "11.40.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "f5fc8c1e6c24459c6678d6bd24d1f7b72d0f7960be6ed42cdb2f2f212663b696",
+    "url": "https://downloads.missiveapp.com/11.40.0/Missive-11.40.0.dmg",
+    "appName": "Missive.app",
+    "bundleId": "com.missiveapp.osx"
+  }
 }

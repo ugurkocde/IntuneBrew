@@ -4,12 +4,19 @@
   "version": "26.10",
   "url": "https://mediaarea.net/download/binary/mediainfo-gui/26.10/MediaInfo_GUI_26.10_Mac.dmg",
   "vendor_url": "https://mediaarea.net/download/binary/mediainfo-gui/26.10/MediaInfo_GUI_26.10_Mac.dmg",
-  "bundleId": "net.mediaarea.mediainfo.mac",
+  "bundleId": "net.mediaarea.mediainfo.mac-old",
   "homepage": "https://mediaarea.net/en/MediaInfo",
   "homebrew_cask": "mediainfo",
   "fileName": "MediaInfo_GUI_26.10_Mac.dmg",
   "sha": "91b4d2018587fb5dece499c6d337549e954941247d0fdb034b2b333692d743d4",
   "category": "Utilities",
   "publisher": "MediaArea.net",
-  "previous_version": "26.10"
+  "previous_version": "26.10",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "91b4d2018587fb5dece499c6d337549e954941247d0fdb034b2b333692d743d4",
+    "url": "https://mediaarea.net/download/binary/mediainfo-gui/26.10/MediaInfo_GUI_26.10_Mac.dmg",
+    "appName": "MediaInfo.app",
+    "bundleId": "net.mediaarea.mediainfo.mac-old"
+  }
 }

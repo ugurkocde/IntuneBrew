@@ -12,5 +12,12 @@
   "category": "Productivity",
   "publisher": "Miro",
   "previous_version": "0.11.196",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "18048aad5764be1ddd0662d85add7f68b592a902f2d445d206f3a277d9c2f9fc",
+    "url": "https://desktop.miro.com/platforms/darwin-arm64/Install-Miro.dmg",
+    "appName": "Miro.app",
+    "bundleId": "com.electron.realtimeboard"
+  },
   "sha": "18048aad5764be1ddd0662d85add7f68b592a902f2d445d206f3a277d9c2f9fc"
 }

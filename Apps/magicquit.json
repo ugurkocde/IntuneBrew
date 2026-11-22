@@ -11,5 +11,12 @@
   "sha": "2deebd8efc69f06ae51cbc17eecfa15310a8a6a46a800645b285d2be360fd922",
   "category": "Utilities",
   "publisher": "MagicQuit",
-  "previous_version": "1.4"
+  "previous_version": "1.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "2deebd8efc69f06ae51cbc17eecfa15310a8a6a46a800645b285d2be360fd922",
+    "url": "https://magicquit.com/apps/MagicQuit_1.4.dmg",
+    "appName": "MagicQuit.app",
+    "bundleId": "com.MagicQuit"
+  }
 }

@@ -11,5 +11,12 @@
   "sha": "f540732f65f94a74d4c98544fd0a15e6b6a13c5049ec314409876f05869e0fc6",
   "category": "Utilities",
   "publisher": "Motrix Team",
-  "previous_version": "2.4.3"
+  "previous_version": "2.4.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "f540732f65f94a74d4c98544fd0a15e6b6a13c5049ec314409876f05869e0fc6",
+    "url": "https://github.com/agalwood/Motrix/releases/download/v2.4.5/Motrix-2.4.5-arm64.dmg",
+    "appName": "Motrix.app",
+    "bundleId": "app.motrix.native"
+  }
 }

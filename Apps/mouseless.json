@@ -11,5 +11,12 @@
   "sha": "1e3fb57febaff24f3a62e81ac14b0351167d95fcd2e446bfc688100f4b77d8b0",
   "category": "Utilities",
   "publisher": "Mouseless",
-  "previous_version": "1.1.0"
+  "previous_version": "1.1.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "1e3fb57febaff24f3a62e81ac14b0351167d95fcd2e446bfc688100f4b77d8b0",
+    "url": "https://github.com/cymian/mouseless/releases/download/v1.1.0/mouseless-installer_v1.1.0.dmg",
+    "appName": "Mouseless.app",
+    "bundleId": "net.sonuscape.mouseless"
+  }
 }

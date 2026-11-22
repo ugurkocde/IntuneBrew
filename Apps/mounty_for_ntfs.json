@@ -12,5 +12,12 @@
   "changelog": "https://mounty.app/changelog/",
   "category": "Utilities",
   "publisher": "Mounty",
-  "previous_version": "2.4"
+  "previous_version": "2.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b5f0867af3ee034c61582bc40e6ebeae549cb4570381ba82d012aca8d5c72888",
+    "url": "https://mounty.app/releases/Mounty-2.4.dmg",
+    "appName": "Mounty.app",
+    "bundleId": "com.cu4uc.mounty"
+  }
 }

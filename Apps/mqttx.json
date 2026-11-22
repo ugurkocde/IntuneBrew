@@ -11,5 +11,12 @@
   "sha": "1113d6f099665ac51b867444032be40f6dd14d3b7c6e7340c675238d36116ecc",
   "category": "Developer Tools",
   "publisher": "EMQ Technologies",
-  "previous_version": "1.13.3"
+  "previous_version": "1.13.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "1113d6f099665ac51b867444032be40f6dd14d3b7c6e7340c675238d36116ecc",
+    "url": "https://github.com/emqx/MQTTX/releases/download/v1.13.3/MQTTX-1.13.3-arm64.dmg",
+    "appName": "MQTTX.app",
+    "bundleId": "com.electron.mqttx"
+  }
 }

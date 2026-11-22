@@ -11,5 +11,12 @@
   "sha": "8b6298f6dac699be5c160679d3759149a262cf1e41ea305084648dd591de41ae",
   "category": "Productivity",
   "publisher": "Mem Labs, Inc.",
-  "previous_version": "0.43.0"
+  "previous_version": "0.43.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "8b6298f6dac699be5c160679d3759149a262cf1e41ea305084648dd591de41ae",
+    "url": "https://storage.googleapis.com/mem-desktop-stable-releases/Mem-0.43.0.dmg",
+    "appName": "Mem.app",
+    "bundleId": "org.memlabs.Mem"
+  }
 }

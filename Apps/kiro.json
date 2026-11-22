@@ -11,7 +11,7 @@
   "sha": "5945b781099bd91b26d2731647a1c958eb7eee0292dc81c22ad93acaed1c1d81",
   "category": "Developer Tools",
   "publisher": "Kiro",
-  "previous_version": "1.4.236",
+  "previous_version": "1.5.11",
   "bundleIdEvidence": {
     "inspector": "dmg-identity/1",
     "artifactSha256": "5945b781099bd91b26d2731647a1c958eb7eee0292dc81c22ad93acaed1c1d81",

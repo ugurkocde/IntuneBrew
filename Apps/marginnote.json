@@ -4,12 +4,19 @@
   "version": "5.0.2",
   "url": "https://dist.marginnote.cn/MarginNote5.0.2.dmg",
   "vendor_url": "https://dist.marginnote.cn/MarginNote5.0.2.dmg",
-  "bundleId": "com.marginnote.marginnote3.mac",
+  "bundleId": "QReader.MarginStudy.easy",
   "homepage": "https://www.marginnote.com/",
   "homebrew_cask": "marginnote",
   "fileName": "MarginNote5.0.2.dmg",
   "sha": "1d199737786c6d131680605efecfbdd559524f9b4bc3f5f9300ab386566d8902",
   "category": "Productivity",
   "publisher": "MarginNote Team",
-  "previous_version": "5.0.2"
+  "previous_version": "5.0.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "1d199737786c6d131680605efecfbdd559524f9b4bc3f5f9300ab386566d8902",
+    "url": "https://dist.marginnote.cn/MarginNote5.0.2.dmg",
+    "appName": "MarginNote 5.app",
+    "bundleId": "QReader.MarginStudy.easy"
+  }
 }

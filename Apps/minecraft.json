@@ -11,5 +11,12 @@
   "category": "Other",
   "publisher": "Mojang Studios",
   "previous_version": "2.1.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "82c59d9b3285017e2d6d1b035f539415c1feb50d7875a4f034cc29af27327b48",
+    "url": "https://launcher.mojang.com/download/Minecraft.dmg",
+    "appName": "Minecraft.app",
+    "bundleId": "com.mojang.minecraftlauncher"
+  },
   "sha": "82c59d9b3285017e2d6d1b035f539415c1feb50d7875a4f034cc29af27327b48"
 }

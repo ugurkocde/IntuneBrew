@@ -11,5 +11,12 @@
   "sha": "94e1dbc8864191141fc5f8e61dd7af700102b803e1e9c7658ef04c701c58aba5",
   "category": "Productivity",
   "publisher": "Morgen",
-  "previous_version": "4.1.4"
+  "previous_version": "4.1.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "94e1dbc8864191141fc5f8e61dd7af700102b803e1e9c7658ef04c701c58aba5",
+    "url": "https://download.todesktop.com/210203cqcj00tw1/Morgen%204.1.4%20-%20Build%20261111uasppv5l0-arm64.dmg",
+    "appName": "Morgen.app",
+    "bundleId": "com.todesktop.210203cqcj00tw1"
+  }
 }

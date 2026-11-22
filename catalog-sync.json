@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-21T01:08:58.572750Z",
-  "lastFullSyncAt": "2026-11-21T01:08:58.572750Z",
+  "lastPublishedAt": "2026-11-22T01:10:21.272069Z",
+  "lastFullSyncAt": "2026-11-22T01:10:21.272069Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -31,10 +31,6 @@
     },
     {
       "app": "defold",
-      "stage": "collection"
-    },
-    {
-      "app": "dockfix",
       "stage": "collection"
     },
     {
@@ -70,15 +66,11 @@
       "stage": "collection"
     },
     {
-      "app": "keepassxc",
-      "stage": "collection"
-    },
-    {
       "app": "keeper_password_manager",
       "stage": "collection"
     },
     {
-      "app": "kobo",
+      "app": "lark",
       "stage": "collection"
     },
     {
@@ -114,6 +106,10 @@
       "stage": "collection"
     },
     {
+      "app": "roboform",
+      "stage": "collection"
+    },
+    {
       "app": "roon",
       "stage": "collection"
     },
@@ -143,8 +139,8 @@
     }
   ],
   "appCount": 1165,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44843640317",
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44966643233",
   "identityBackfill": {
-    "lastAttempted": "macshot"
+    "lastAttempted": "multiviewer"
   }
 }

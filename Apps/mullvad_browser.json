@@ -11,5 +11,12 @@
   "sha": "7076f0355c054c9cb3c5f22af298495abd23721b23fa03b7c698870ef53d7841",
   "category": "Browsers",
   "publisher": "Mullvad VPN AB",
-  "previous_version": "16.0.2"
+  "previous_version": "16.0.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "7076f0355c054c9cb3c5f22af298495abd23721b23fa03b7c698870ef53d7841",
+    "url": "https://cdn.mullvad.net/browser/16.0.2/mullvad-browser-macos-16.0.2.dmg",
+    "appName": "Mullvad Browser.app",
+    "bundleId": "net.mullvad.mullvadbrowser"
+  }
 }

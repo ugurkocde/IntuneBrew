@@ -11,5 +11,12 @@
   "sha": "e058da598b92f6ca674f4398c0b6fa49b3b5567ccfddccf6c6a5b23c5c625612",
   "category": "Utilities",
   "publisher": "MonitorControl",
-  "previous_version": "4.4.0"
+  "previous_version": "4.4.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "e058da598b92f6ca674f4398c0b6fa49b3b5567ccfddccf6c6a5b23c5c625612",
+    "url": "https://github.com/MonitorControl/MonitorControl/releases/download/v4.4.0/MonitorControl.4.4.0.dmg",
+    "appName": "MonitorControl.app",
+    "bundleId": "app.monitorcontrol.MonitorControl"
+  }
 }

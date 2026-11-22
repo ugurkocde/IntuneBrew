@@ -12,5 +12,12 @@
   "changelog": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
   "category": "Browsers",
   "publisher": "Microsoft Corporation",
-  "previous_version": "158.0.4370.33"
+  "previous_version": "158.0.4370.33",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "33d92b7098531232ca8c4707ac7e5b0d57246947dbec5b7e8541717f532456e8",
+    "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/775da8b5-3f9c-4856-a1c4-f4a02233035f/MicrosoftEdge-158.0.4370.33.dmg",
+    "appName": "Microsoft Edge.app",
+    "bundleId": "com.microsoft.edgemac"
+  }
 }

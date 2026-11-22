@@ -11,5 +11,12 @@
   "sha": "f724cd8b0048a60963f11694acbffb2438a89c1cf732117559ac3031f8486e27",
   "category": "Media",
   "publisher": "The Mixxx Team",
-  "previous_version": "2.5.6"
+  "previous_version": "2.5.6",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "f724cd8b0048a60963f11694acbffb2438a89c1cf732117559ac3031f8486e27",
+    "url": "https://downloads.mixxx.org/releases/2.5.6/mixxx-2.5.6-macosarm.dmg",
+    "appName": "Mixxx.app",
+    "bundleId": "org.mixxx.mixxx"
+  }
 }

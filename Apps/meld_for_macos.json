@@ -11,5 +11,12 @@
   "sha": "aea65bbe21842e9c2e72c547df996858abbe05b2610c583f5121215556009527",
   "category": "Developer Tools",
   "publisher": "dehesselle",
-  "previous_version": "3.22.3+105"
+  "previous_version": "3.22.3+105",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "aea65bbe21842e9c2e72c547df996858abbe05b2610c583f5121215556009527",
+    "url": "https://gitlab.com/api/v4/projects/51547804/packages/generic/meld_macos/3.22.3+105/Meld-3.22.3+105_arm64.dmg",
+    "appName": "Meld.app",
+    "bundleId": "org.gnome.Meld"
+  }
 }

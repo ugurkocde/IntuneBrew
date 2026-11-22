@@ -4,12 +4,19 @@
   "version": "5.5.4",
   "url": "https://download.nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg?build=276",
   "vendor_url": "https://download.nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg?build=276",
-  "bundleId": "com.nektony.Memory-Cleaner-SII",
+  "bundleId": "com.nektony.Memory-Cleaner-SIII",
   "homepage": "https://nektony.com/memory-cleaner",
   "homebrew_cask": "memory-cleaner",
   "fileName": "memory-cleaner.dmg",
   "sha": "7115196e0a529dca67b401247a69416666fa54ccc423dc107237c445b8124957",
   "category": "Utilities",
   "publisher": "Nektony Ltd.",
-  "previous_version": "5.5.4"
+  "previous_version": "5.5.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "7115196e0a529dca67b401247a69416666fa54ccc423dc107237c445b8124957",
+    "url": "https://download.nektony.com/download/memory-cleaner/dmg/memory-cleaner.dmg?build=276",
+    "appName": "Memory Cleaner 5.app",
+    "bundleId": "com.nektony.Memory-Cleaner-SIII"
+  }
 }

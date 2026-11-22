@@ -11,5 +11,12 @@
   "category": "Design",
   "publisher": "Mobirise",
   "previous_version": "6.3.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "9a7ee684d40a0a3ecd3be364590fd0b46fc2fd2a071210e40504fcbc1255a34e",
+    "url": "https://download.mobirise.com/MobiriseSetup-m.dmg",
+    "appName": "Mobirise.app",
+    "bundleId": "com.mobirise.Mobirise"
+  },
   "sha": "9a7ee684d40a0a3ecd3be364590fd0b46fc2fd2a071210e40504fcbc1255a34e"
 }

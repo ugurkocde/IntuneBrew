@@ -11,5 +11,12 @@
   "category": "Utilities",
   "publisher": "MEGA Limited",
   "previous_version": "6.7.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "684159291e508523db42ae7c63f03c071eb40a52180f8f2662daa5e2c8dce882",
+    "url": "https://mega.nz/MEGAsyncSetupArm64.dmg",
+    "appName": "MEGAsync.app",
+    "bundleId": "mega.mac"
+  },
   "sha": "684159291e508523db42ae7c63f03c071eb40a52180f8f2662daa5e2c8dce882"
 }

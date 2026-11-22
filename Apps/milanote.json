@@ -11,5 +11,12 @@
   "sha": "2bc2f7797139ee0ea53bd2e8bb2371f8ded72d91ec17a82e4323c382995cb8ba",
   "category": "Productivity",
   "publisher": "Milanote",
-  "previous_version": "3.18.148"
+  "previous_version": "3.18.148",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "2bc2f7797139ee0ea53bd2e8bb2371f8ded72d91ec17a82e4323c382995cb8ba",
+    "url": "https://milanote-app-releases.s3.amazonaws.com/Milanote-3.18.148.dmg",
+    "appName": "Milanote.app",
+    "bundleId": "com.milanote.app"
+  }
 }

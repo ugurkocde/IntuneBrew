@@ -4,12 +4,19 @@
   "version": "1.7.6",
   "url": "https://menubarx-1251679148.file.myqcloud.com/download/MenubarX-1.7.6.dmg",
   "vendor_url": "https://menubarx-1251679148.file.myqcloud.com/download/MenubarX-1.7.6.dmg",
-  "bundleId": "com.nicola.MenubarX",
+  "bundleId": "com.app.menubarx",
   "homepage": "https://menubarx.app/",
   "homebrew_cask": "menubarx",
   "fileName": "MenubarX-1.7.6.dmg",
   "sha": "63973867313ab0bfff6861b35d72fe91fc78c84085a2650b42b21d41cabba97e",
   "category": "Browsers",
   "publisher": "MenubarX",
-  "previous_version": "1.7.6"
+  "previous_version": "1.7.6",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "63973867313ab0bfff6861b35d72fe91fc78c84085a2650b42b21d41cabba97e",
+    "url": "https://menubarx-1251679148.file.myqcloud.com/download/MenubarX-1.7.6.dmg",
+    "appName": "MenubarX.app",
+    "bundleId": "com.app.menubarx"
+  }
 }
