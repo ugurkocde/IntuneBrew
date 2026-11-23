@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-23T00:25:41.023Z",
+  "last_full_scan": "2026-11-23T00:59:51.036Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -5136,8 +5136,8 @@
       "name": "Murus Firewall"
     },
     "museeks": {
-      "last_checked": "2026-01-17T08:37:42.137Z",
-      "bundle_id": "com.electron.museeks",
+      "last_checked": "2026-11-23T00:59:49.717Z",
+      "bundle_id": "io.museeks.app",
       "status": "verified",
       "source": "file",
       "name": "Museeks"
@@ -5276,8 +5276,8 @@
       "name": "Nextcloud Talk Desktop"
     },
     "nightfall": {
-      "last_checked": "2026-01-17T08:37:42.140Z",
-      "bundle_id": "com.Lowtide.Nightfall",
+      "last_checked": "2026-11-23T00:59:49.718Z",
+      "bundle_id": "net.ryanthomson.Nightfall",
       "status": "verified",
       "source": "file",
       "name": "Nightfall"
@@ -5353,8 +5353,8 @@
       "name": "NotchNook"
     },
     "notesnook": {
-      "last_checked": "2026-01-17T08:37:42.142Z",
-      "bundle_id": "com.streetwriters.notesnook",
+      "last_checked": "2026-11-23T00:59:49.718Z",
+      "bundle_id": "org.streetwriters.notesnook",
       "status": "verified",
       "source": "file",
       "name": "Notesnook"
@@ -5458,8 +5458,8 @@
       "name": "ocenaudio"
     },
     "ok_json": {
-      "last_checked": "2026-01-17T08:37:42.144Z",
-      "bundle_id": "com.nicola.OK-JSON",
+      "last_checked": "2026-11-23T00:59:49.718Z",
+      "bundle_id": "net.shinystone.OKJSON",
       "status": "verified",
       "source": "file",
       "name": "OK JSON"
@@ -5514,8 +5514,8 @@
       "name": "OmniGraffle"
     },
     "omnioutliner": {
-      "last_checked": "2026-01-17T08:37:42.145Z",
-      "bundle_id": "com.omnigroup.OmniOutliner5",
+      "last_checked": "2026-11-23T00:59:49.718Z",
+      "bundle_id": "com.omnigroup.OmniOutliner6",
       "status": "verified",
       "source": "file",
       "name": "OmniOutliner"
@@ -5549,10 +5549,16 @@
       "name": "OneDrive"
     },
     "onionshare": {
-      "last_checked": "2026-01-17T08:37:42.146Z",
-      "bundle_id": "org.onionshare.onionshare",
-      "status": "verified",
-      "source": "file",
+      "last_checked": "2026-11-23T00:59:50.923Z",
+      "bundle_id": "com.micahflee.onionshare",
+      "previous_bundle_id": "OnionShare",
+      "status": "updated",
+      "source": "github_search",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search"
+      ],
       "name": "OnionShare"
     },
     "onlyoffice": {
@@ -5577,15 +5583,15 @@
       "name": "OnyX"
     },
     "opal_composer": {
-      "last_checked": "2026-01-17T08:37:42.147Z",
-      "bundle_id": "97Z3HJWCRT.com.opalcamera.v2.Opal",
+      "last_checked": "2026-11-23T00:59:51.024Z",
+      "bundle_id": "com.opalcamera.Opal.v2",
       "status": "verified",
       "source": "file",
       "name": "Opal Composer"
     },
     "openaudible": {
-      "last_checked": "2026-01-17T08:37:42.147Z",
-      "bundle_id": "org.openaudible.OpenAudible",
+      "last_checked": "2026-11-23T00:59:51.024Z",
+      "bundle_id": "org.openaudible.openaudible",
       "status": "verified",
       "source": "file",
       "name": "OpenAudible"

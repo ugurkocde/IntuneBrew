@@ -4,7 +4,7 @@
   "version": "2.7.2",
   "url": "https://onionshare.org/dist/2.7.2/OnionShare-2.7.2.dmg",
   "vendor_url": "https://onionshare.org/dist/2.7.2/OnionShare-2.7.2.dmg",
-  "bundleId": "OnionShare",
+  "bundleId": "com.micahflee.onionshare",
   "homepage": "https://onionshare.org/",
   "homebrew_cask": "onionshare",
   "fileName": "OnionShare-2.7.2.dmg",
