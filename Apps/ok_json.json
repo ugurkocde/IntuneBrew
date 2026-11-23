@@ -4,12 +4,19 @@
   "version": "3.1.2",
   "url": "https://okjson.app/download/okjson-latest.dmg",
   "vendor_url": "https://okjson.app/download/okjson-latest.dmg",
-  "bundleId": "com.nicola.OK-JSON",
+  "bundleId": "net.shinystone.OKJSON",
   "homepage": "https://okjson.app/",
   "homebrew_cask": "ok-json",
   "fileName": "okjson-latest.dmg",
   "category": "Developer Tools",
   "publisher": "OK JSON",
   "previous_version": "3.1.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "4e7f12d931ecc33e538d229edbe225106f8c4255c7d571233a9a72d42fbce5a7",
+    "url": "https://okjson.app/download/okjson-latest.dmg",
+    "appName": "OK JSON.app",
+    "bundleId": "net.shinystone.OKJSON"
+  },
   "sha": "4e7f12d931ecc33e538d229edbe225106f8c4255c7d571233a9a72d42fbce5a7"
 }

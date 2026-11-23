@@ -11,7 +11,7 @@
   "sha": "0c9c55ead222f4a264044871dc29b3eeed998f10fa71a66f8ab7f2666e1f7fae",
   "category": "Media",
   "publisher": "MultiViewer",
-  "previous_version": "2.17.2",
+  "previous_version": "2.17.3",
   "bundleIdEvidence": {
     "inspector": "dmg-identity/1",
     "artifactSha256": "0c9c55ead222f4a264044871dc29b3eeed998f10fa71a66f8ab7f2666e1f7fae",

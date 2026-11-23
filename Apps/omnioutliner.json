@@ -4,12 +4,19 @@
   "version": "6.3.1",
   "url": "https://downloads.omnigroup.com/software/macOS/15/OmniOutliner-6.3.1.dmg",
   "vendor_url": "https://downloads.omnigroup.com/software/macOS/15/OmniOutliner-6.3.1.dmg",
-  "bundleId": "com.omnigroup.OmniOutliner5",
+  "bundleId": "com.omnigroup.OmniOutliner6",
   "homepage": "https://www.omnigroup.com/omnioutliner/",
   "homebrew_cask": "omnioutliner",
   "fileName": "OmniOutliner-6.3.1.dmg",
   "sha": "f4050904b5769401ce784f6c7866abe2db739d9894ed9d0b5ddd24e2e638e792",
   "category": "Productivity",
   "publisher": "The Omni Group",
-  "previous_version": "6.3.1"
+  "previous_version": "6.3.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "f4050904b5769401ce784f6c7866abe2db739d9894ed9d0b5ddd24e2e638e792",
+    "url": "https://downloads.omnigroup.com/software/macOS/15/OmniOutliner-6.3.1.dmg",
+    "appName": "OmniOutliner.app",
+    "bundleId": "com.omnigroup.OmniOutliner6"
+  }
 }

@@ -11,5 +11,12 @@
   "category": "Utilities",
   "publisher": "NovaBench",
   "previous_version": "6.2.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "4700d9ca7aadda9d36611be57f5d420c7771d9c461cfec58b768fb3f36eb80d9",
+    "url": "https://novabench.com/files/novabench.dmg",
+    "appName": "Novabench.app",
+    "bundleId": "com.novabench.client"
+  },
   "sha": "4700d9ca7aadda9d36611be57f5d420c7771d9c461cfec58b768fb3f36eb80d9"
 }

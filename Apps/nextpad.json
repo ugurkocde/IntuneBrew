@@ -11,5 +11,12 @@
   "sha": "b291b289f1dc8f625c449151332bd0d088f6f966fbe5144904b14dd8c056e701",
   "category": "Developer Tools",
   "publisher": "Nextpad",
-  "previous_version": "1.1.3"
+  "previous_version": "1.1.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b291b289f1dc8f625c449151332bd0d088f6f966fbe5144904b14dd8c056e701",
+    "url": "https://github.com/nextpad-plus-plus/nextpad-plus-plus-macos/releases/download/v1.1.3/Nextpad++v1.1.3.dmg",
+    "appName": "Nextpad++.app",
+    "bundleId": "org.nextpadplusplus.mac"
+  }
 }

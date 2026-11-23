@@ -12,5 +12,12 @@
   "category": "Utilities",
   "publisher": "Titanium Software",
   "previous_version": "5.1.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "17b68299f722766377bdeb5db473e64a16fbf39f657264d8e36780debe226a57",
+    "url": "https://www.titanium-software.fr/download/27/OnyX.dmg",
+    "appName": "OnyX.app",
+    "bundleId": "com.titanium.OnyX"
+  },
   "sha": "17b68299f722766377bdeb5db473e64a16fbf39f657264d8e36780debe226a57"
 }

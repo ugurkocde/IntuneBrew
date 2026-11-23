@@ -4,12 +4,19 @@
   "version": "5.2",
   "url": "https://github.com/openaudible/openaudible/releases/download/v5.2/OpenAudible_5.2.dmg",
   "vendor_url": "https://github.com/openaudible/openaudible/releases/download/v5.2/OpenAudible_5.2.dmg",
-  "bundleId": "org.openaudible.OpenAudible",
+  "bundleId": "org.openaudible.openaudible",
   "homepage": "https://openaudible.org/",
   "homebrew_cask": "openaudible",
   "fileName": "OpenAudible_5.2.dmg",
   "sha": "56b8323b60a8f1c3a665a3a2be87dabf91dcfda66d42de1229d58a07e2ad25de",
   "category": "Media",
   "publisher": "OpenAudible",
-  "previous_version": "5.2"
+  "previous_version": "5.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "56b8323b60a8f1c3a665a3a2be87dabf91dcfda66d42de1229d58a07e2ad25de",
+    "url": "https://github.com/openaudible/openaudible/releases/download/v5.2/OpenAudible_5.2.dmg",
+    "appName": "OpenAudible.app",
+    "bundleId": "org.openaudible.openaudible"
+  }
 }

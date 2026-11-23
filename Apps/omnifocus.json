@@ -11,5 +11,12 @@
   "sha": "2ef1601157c6d5027142d98e3027b15825d2dbb70130e20a3e45f64513ee21da",
   "category": "Productivity",
   "publisher": "The Omni Group",
-  "previous_version": "4.10.1"
+  "previous_version": "4.10.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "2ef1601157c6d5027142d98e3027b15825d2dbb70130e20a3e45f64513ee21da",
+    "url": "https://downloads.omnigroup.com/software/macOS/15/OmniFocus-4.10.1.dmg",
+    "appName": "OmniFocus.app",
+    "bundleId": "com.omnigroup.OmniFocus4"
+  }
 }

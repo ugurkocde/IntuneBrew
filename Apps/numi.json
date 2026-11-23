@@ -11,5 +11,12 @@
   "sha": "f6fb2d60ae58cfce066ec409c24d69a4fe13dca1faa61ed0e147e0631f74c264",
   "category": "Productivity",
   "publisher": "Numi",
-  "previous_version": "3.35"
+  "previous_version": "3.35",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "f6fb2d60ae58cfce066ec409c24d69a4fe13dca1faa61ed0e147e0631f74c264",
+    "url": "https://cdn.numi.app/updates/3.35.743/Numi.dmg",
+    "appName": "Numi.app",
+    "bundleId": "com.dmitrynikolaev.numi"
+  }
 }

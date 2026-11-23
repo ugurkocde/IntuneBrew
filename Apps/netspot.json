@@ -11,5 +11,12 @@
   "category": "Utilities",
   "publisher": "NetSpot",
   "previous_version": "6.1.6456",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "49d028c7f3a4a45eafa9dbc3d011cc5ec732acc329d5969d9ed20c1c7e99c9d5",
+    "url": "https://cdn.netspotapp.com/download/NetSpot.dmg",
+    "appName": "NetSpot.app",
+    "bundleId": "com.etwok.netspotwifi"
+  },
   "sha": "49d028c7f3a4a45eafa9dbc3d011cc5ec732acc329d5969d9ed20c1c7e99c9d5"
 }

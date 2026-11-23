@@ -11,7 +11,7 @@
   "sha": "2ee335f2d23ec162a015b65d99eb183d25612e9a68cc5a64cd8ff8f2011bcb28",
   "category": "Utilities",
   "publisher": "Unknown",
-  "previous_version": "2.1.1",
+  "previous_version": "2.1.2",
   "bundleIdEvidence": {
     "inspector": "dmg-identity/1",
     "artifactSha256": "2ee335f2d23ec162a015b65d99eb183d25612e9a68cc5a64cd8ff8f2011bcb28",

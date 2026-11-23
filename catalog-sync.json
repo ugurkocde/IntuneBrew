@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-22T01:10:21.272069Z",
-  "lastFullSyncAt": "2026-11-22T01:10:21.272069Z",
+  "lastPublishedAt": "2026-11-23T00:58:48.038904Z",
+  "lastFullSyncAt": "2026-11-23T00:58:48.038904Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -90,6 +90,10 @@
       "stage": "collection"
     },
     {
+      "app": "mural",
+      "stage": "collection"
+    },
+    {
       "app": "nvidia_geforce_now",
       "stage": "collection"
     },
@@ -139,8 +143,8 @@
     }
   ],
   "appCount": 1165,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/44966643233",
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/45088859817",
   "identityBackfill": {
-    "lastAttempted": "multiviewer"
+    "lastAttempted": "opera"
   }
 }

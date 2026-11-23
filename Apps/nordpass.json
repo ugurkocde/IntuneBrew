@@ -11,5 +11,12 @@
   "category": "Security",
   "publisher": "Nord Security",
   "previous_version": "7.13.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "bf2114a2af6b7e34c70b84ba0a3dfbc1c1b870889fe6db0aa7e36b952184bec7",
+    "url": "https://downloads.npass.app/mac/arm/NordPass.dmg",
+    "appName": "NordPass.app",
+    "bundleId": "com.nordsec.nordpass"
+  },
   "sha": "bf2114a2af6b7e34c70b84ba0a3dfbc1c1b870889fe6db0aa7e36b952184bec7"
 }

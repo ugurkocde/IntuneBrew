@@ -4,12 +4,19 @@
   "version": "3.1.0",
   "url": "https://github.com/r-thomson/Nightfall/releases/download/v3.1.0/Nightfall.dmg",
   "vendor_url": "https://github.com/r-thomson/Nightfall/releases/download/v3.1.0/Nightfall.dmg",
-  "bundleId": "com.Lowtide.Nightfall",
+  "bundleId": "net.ryanthomson.Nightfall",
   "homepage": "https://github.com/r-thomson/Nightfall/",
   "homebrew_cask": "nightfall",
   "fileName": "Nightfall.dmg",
   "sha": "b98e86466bb89b04b9f5d3f98e4b74c03950052e8821b515ec1ea0c7f71bef6a",
   "category": "Utilities",
   "publisher": "r-thomson",
-  "previous_version": "3.1.0"
+  "previous_version": "3.1.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b98e86466bb89b04b9f5d3f98e4b74c03950052e8821b515ec1ea0c7f71bef6a",
+    "url": "https://github.com/r-thomson/Nightfall/releases/download/v3.1.0/Nightfall.dmg",
+    "appName": "Nightfall.app",
+    "bundleId": "net.ryanthomson.Nightfall"
+  }
 }

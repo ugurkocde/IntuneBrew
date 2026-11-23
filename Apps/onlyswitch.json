@@ -11,5 +11,12 @@
   "sha": "0ee1f43eb297461a72dd1a1d839471f0ea3fb9ef6423a3befd908fc3fe8bdcda",
   "category": "Utilities",
   "publisher": "jacklandrin",
-  "previous_version": "3.7.0"
+  "previous_version": "3.7.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "0ee1f43eb297461a72dd1a1d839471f0ea3fb9ef6423a3befd908fc3fe8bdcda",
+    "url": "https://github.com/jacklandrin/OnlySwitch/releases/download/release_3.7.0/OnlySwitch.dmg",
+    "appName": "Only Switch.app",
+    "bundleId": "jacklandrin.OnlySwitch"
+  }
 }

@@ -11,5 +11,12 @@
   "sha": "97cb71af1145bb5b7bec59d7350f3542c554db2569508fb159785ee370578b5f",
   "category": "Utilities",
   "publisher": "Many Tricks",
-  "previous_version": "3.9.3"
+  "previous_version": "3.9.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "97cb71af1145bb5b7bec59d7350f3542c554db2569508fb159785ee370578b5f",
+    "url": "https://manytricks.com/download/_do_not_hotlink_/namemangler393.dmg",
+    "appName": "Name Mangler.app",
+    "bundleId": "com.manytricks.NameMangler"
+  }
 }

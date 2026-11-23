@@ -12,5 +12,12 @@
   "changelog": "https://github.com/obsidianmd/obsidian-releases/releases",
   "category": "Productivity",
   "publisher": "Obsidian",
-  "previous_version": "1.15.1"
+  "previous_version": "1.15.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "e05c7e3e2262b14c965bb246dcb74a30fc9098bd669e42957c4d9f788d04fdf4",
+    "url": "https://github.com/obsidianmd/obsidian-releases/releases/download/v1.15.1/Obsidian-1.15.1.dmg",
+    "appName": "Obsidian.app",
+    "bundleId": "md.obsidian"
+  }
 }
