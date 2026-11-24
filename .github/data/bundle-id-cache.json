@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-24T00:22:04.609Z",
+  "last_full_scan": "2026-11-24T00:57:59.343Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -5863,8 +5863,8 @@
       "name": "PDF Pals"
     },
     "pdfsam_basic": {
-      "last_checked": "2026-01-17T08:37:42.150Z",
-      "bundle_id": "org.pdfsam.modules",
+      "last_checked": "2026-11-24T00:57:59.338Z",
+      "bundle_id": "org.pdfsam.basic",
       "status": "verified",
       "source": "file",
       "name": "PDFsam Basic"
@@ -5884,8 +5884,8 @@
       "name": "Pencil"
     },
     "permute": {
-      "last_checked": "2026-01-17T08:37:42.151Z",
-      "bundle_id": "com.charliemonroe.Permute-3",
+      "last_checked": "2026-11-24T00:57:59.338Z",
+      "bundle_id": "com.charliemonroe.Permute-4",
       "status": "verified",
       "source": "file",
       "name": "Permute"
