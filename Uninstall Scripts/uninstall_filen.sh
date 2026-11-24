@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/@filen" ]; then
     rm -f "$HOME/Library/Application Support/@filen" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.filen.desktop.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.filen.desktop.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.filen.desktop.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.filen.desktop.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.filen.desktop.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/io.filen.desktop.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/filen-desktop
 echo "Removing $HOME/Library/Application Support/filen-desktop..."
 if [ -d "$HOME/Library/Application Support/filen-desktop" ]; then

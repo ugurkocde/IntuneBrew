@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Support/Quba" ]; then
     rm -f "$HOME/Library/Application Support/Quba" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/org.quba-viewer.quba.2.plist
+echo "Removing $HOME/Library/Preferences/org.quba-viewer.quba.2.plist..."
+if [ -d "$HOME/Library/Preferences/org.quba-viewer.quba.2.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/org.quba-viewer.quba.2.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.quba-viewer.quba.2.plist" ]; then
+    rm -f "$HOME/Library/Preferences/org.quba-viewer.quba.2.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/org.quba-viewer.viewer.plist
 echo "Removing $HOME/Library/Preferences/org.quba-viewer.viewer.plist..."
 if [ -d "$HOME/Library/Preferences/org.quba-viewer.viewer.plist" ]; then

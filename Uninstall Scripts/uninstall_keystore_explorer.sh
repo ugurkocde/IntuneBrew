@@ -25,6 +25,14 @@ elif [ -f "/Applications/KeyStore Explorer.app" ]; then
     rm -f "/Applications/KeyStore Explorer.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Preferences/org.kse.keystore-explorer.plist
+echo "Removing $HOME/Library/Preferences/org.kse.keystore-explorer.plist..."
+if [ -d "$HOME/Library/Preferences/org.kse.keystore-explorer.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/org.kse.keystore-explorer.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.kse.keystore-explorer.plist" ]; then
+    rm -f "$HOME/Library/Preferences/org.kse.keystore-explorer.plist" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Saved Application State/org.kse.keystore-explorer.savedState
 echo "Removing $HOME/Library/Saved Application State/org.kse.keystore-explorer.savedState..."
 if [ -d "$HOME/Library/Saved Application State/org.kse.keystore-explorer.savedState" ]; then

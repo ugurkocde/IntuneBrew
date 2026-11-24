@@ -41,6 +41,14 @@ killall -9 "com.jabra.softphoneService" 2>/dev/null || true
 echo "Stopping application with bundle ID nl.superalloy.oss.terminal-notifier if running..."
 killall -9 "nl.superalloy.oss.terminal-notifier" 2>/dev/null || true
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jabra.directonline.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jabra.directonline.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jabra.directonline.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jabra.directonline.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jabra.directonline.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.jabra.directonline.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/Jabra Direct
 echo "Removing $HOME/Library/Application Support/Jabra Direct..."
 if [ -d "$HOME/Library/Application Support/Jabra Direct" ]; then

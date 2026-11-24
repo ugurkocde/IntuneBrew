@@ -33,6 +33,14 @@ elif [ -f "$HOME/Library/Application Scripts/com.linebreak.CloudAppMacOSX.Share"
     rm -f "$HOME/Library/Application Scripts/com.linebreak.CloudAppMacOSX.Share" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.linebreak.cloudappmacosx.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.linebreak.cloudappmacosx.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.linebreak.cloudappmacosx.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.linebreak.cloudappmacosx.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.linebreak.cloudappmacosx.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.linebreak.cloudappmacosx.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.linebreak.CloudAppMacOSX
 echo "Removing $HOME/Library/Application Support/com.linebreak.CloudAppMacOSX..."
 if [ -d "$HOME/Library/Application Support/com.linebreak.CloudAppMacOSX" ]; then
@@ -65,6 +73,14 @@ elif [ -f "$HOME/Library/Containers/com.linebreak.CloudAppMacOSX.Share" ]; then
     rm -f "$HOME/Library/Containers/com.linebreak.CloudAppMacOSX.Share" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/com.linebreak.CloudAppMacOSX
+echo "Removing $HOME/Library/HTTPStorages/com.linebreak.CloudAppMacOSX..."
+if [ -d "$HOME/Library/HTTPStorages/com.linebreak.CloudAppMacOSX" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/com.linebreak.CloudAppMacOSX" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/com.linebreak.CloudAppMacOSX" ]; then
+    rm -f "$HOME/Library/HTTPStorages/com.linebreak.CloudAppMacOSX" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Logs/Zight
 echo "Removing $HOME/Library/Logs/Zight..."
 if [ -d "$HOME/Library/Logs/Zight" ]; then
@@ -79,6 +95,14 @@ if [ -d "$HOME/Library/Preferences/com.linebreak.CloudAppMacOSX.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.linebreak.CloudAppMacOSX.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.linebreak.CloudAppMacOSX.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.linebreak.CloudAppMacOSX.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.linebreak.CloudAppMacOSX
+echo "Removing $HOME/Library/WebKit/com.linebreak.CloudAppMacOSX..."
+if [ -d "$HOME/Library/WebKit/com.linebreak.CloudAppMacOSX" ]; then
+    rm -rf "$HOME/Library/WebKit/com.linebreak.CloudAppMacOSX" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.linebreak.CloudAppMacOSX" ]; then
+    rm -f "$HOME/Library/WebKit/com.linebreak.CloudAppMacOSX" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

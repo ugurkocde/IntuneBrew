@@ -65,6 +65,14 @@ elif [ -f "$HOME/Library/Cookies/edu.ucsd.cs.mmccrack.bibdesk.binarycookies" ]; 
     rm -f "$HOME/Library/Cookies/edu.ucsd.cs.mmccrack.bibdesk.binarycookies" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/HTTPStorages/edu.ucsd.cs.mmccrack.bibdesk
+echo "Removing $HOME/Library/HTTPStorages/edu.ucsd.cs.mmccrack.bibdesk..."
+if [ -d "$HOME/Library/HTTPStorages/edu.ucsd.cs.mmccrack.bibdesk" ]; then
+    rm -rf "$HOME/Library/HTTPStorages/edu.ucsd.cs.mmccrack.bibdesk" 2>/dev/null || true
+elif [ -f "$HOME/Library/HTTPStorages/edu.ucsd.cs.mmccrack.bibdesk" ]; then
+    rm -f "$HOME/Library/HTTPStorages/edu.ucsd.cs.mmccrack.bibdesk" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/edu.ucsd.cs.mmccrack.bibdesk.plist
 echo "Removing $HOME/Library/Preferences/edu.ucsd.cs.mmccrack.bibdesk.plist..."
 if [ -d "$HOME/Library/Preferences/edu.ucsd.cs.mmccrack.bibdesk.plist" ]; then

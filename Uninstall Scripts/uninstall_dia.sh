@@ -41,6 +41,14 @@ elif [ -f "$HOME/Library/Caches/company.thebrowser.dia" ]; then
     rm -f "$HOME/Library/Caches/company.thebrowser.dia" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Caches/Dia
+echo "Removing $HOME/Library/Caches/Dia..."
+if [ -d "$HOME/Library/Caches/Dia" ]; then
+    rm -rf "$HOME/Library/Caches/Dia" 2>/dev/null || true
+elif [ -f "$HOME/Library/Caches/Dia" ]; then
+    rm -f "$HOME/Library/Caches/Dia" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/HttpStorages/company.thebrowser.dia
 echo "Removing $HOME/Library/HttpStorages/company.thebrowser.dia..."
 if [ -d "$HOME/Library/HttpStorages/company.thebrowser.dia" ]; then
