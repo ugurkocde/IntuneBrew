@@ -11,5 +11,12 @@
   "sha": "0c089146dd1c89a47dbb66dcca023b8af2427bf38ccd4f40c907214c037f8b3f",
   "category": "Utilities",
   "publisher": "Super High Fives",
-  "previous_version": "2.0.3"
+  "previous_version": "2.0.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "0c089146dd1c89a47dbb66dcca023b8af2427bf38ccd4f40c907214c037f8b3f",
+    "url": "https://github.com/superhighfives/pika/releases/download/2.0.3/Pika-2.0.3.dmg",
+    "appName": "Pika.app",
+    "bundleId": "com.superhighfives.Pika"
+  }
 }

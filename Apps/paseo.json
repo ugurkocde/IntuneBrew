@@ -1,15 +1,22 @@
 {
   "name": "Paseo",
   "description": "Self-hosted daemon for AI coding agents",
-  "version": "0.17.3",
-  "url": "https://github.com/getpaseo/paseo/releases/download/v0.17.3/Paseo-0.17.3-arm64.dmg",
-  "vendor_url": "https://github.com/getpaseo/paseo/releases/download/v0.17.3/Paseo-0.17.3-arm64.dmg",
+  "version": "0.17.4",
+  "url": "https://github.com/getpaseo/paseo/releases/download/v0.17.4/Paseo-0.17.4-arm64.dmg",
+  "vendor_url": "https://github.com/getpaseo/paseo/releases/download/v0.17.4/Paseo-0.17.4-arm64.dmg",
   "bundleId": "sh.paseo.desktop",
   "homepage": "https://paseo.sh/",
   "homebrew_cask": "paseo",
-  "fileName": "Paseo-0.17.3-arm64.dmg",
-  "sha": "9bb07774e0d70aeee75a677ed28eabaec4be324985a1f8f9e43b064e8ee33530",
+  "fileName": "Paseo-0.17.4-arm64.dmg",
+  "sha": "4f907c77a2f3088d178db7228bc0950af3baa70758ed0162200e346bc1ed7c0a",
   "category": "Developer Tools",
   "publisher": "Paseo",
-  "previous_version": "0.16.2"
+  "previous_version": "0.17.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "4f907c77a2f3088d178db7228bc0950af3baa70758ed0162200e346bc1ed7c0a",
+    "url": "https://github.com/getpaseo/paseo/releases/download/v0.17.4/Paseo-0.17.4-arm64.dmg",
+    "appName": "Paseo.app",
+    "bundleId": "sh.paseo.desktop"
+  }
 }

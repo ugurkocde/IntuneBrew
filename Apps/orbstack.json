@@ -12,5 +12,12 @@
   "changelog": "https://docs.orbstack.dev/changelog",
   "category": "Developer Tools",
   "publisher": "OrbStack",
-  "previous_version": "2.2.5"
+  "previous_version": "2.2.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "f2b887d26a21e0a12147eb005297782794b26f461f77c6b9cdfb57f576ad5e6d",
+    "url": "https://cdn-updates.orbstack.dev/arm64/OrbStack_v2.2.5_21124_arm64.dmg",
+    "appName": "OrbStack.app",
+    "bundleId": "dev.kdrag0n.MacVirt"
+  }
 }

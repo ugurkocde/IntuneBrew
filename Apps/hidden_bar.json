@@ -1,16 +1,16 @@
 {
   "name": "Hidden Bar",
   "description": "Utility to hide menu bar items",
-  "version": "1.13.3",
-  "url": "https://github.com/consolelabs/hidden/releases/download/v1.13.3/Hidden-Bar-v1.13.3-macos.zip",
-  "vendor_url": "https://github.com/consolelabs/hidden/releases/download/v1.13.3/Hidden-Bar-v1.13.3-macos.zip",
+  "version": "1.13.4",
+  "url": "https://github.com/consolelabs/hidden/releases/download/v1.13.4/Hidden-Bar-v1.13.4-macos.zip",
+  "vendor_url": "https://github.com/consolelabs/hidden/releases/download/v1.13.4/Hidden-Bar-v1.13.4-macos.zip",
   "bundleId": "com.dwarvesv.minimalbar",
   "homepage": "https://github.com/dwarvesf/hidden/",
   "homebrew_cask": "hiddenbar",
-  "fileName": "Hidden-Bar-v1.13.3-macos.zip",
-  "sha": "e6168b27091fd002b4d7d47db02e40a02eb07431e4ed8037c260393434d0a73f",
+  "fileName": "Hidden-Bar-v1.13.4-macos.zip",
+  "sha": "3aeacbeacdcc52b6095da6084d1c7f7c4df2e0c6d09421ff3ebbc0b4717c7d09",
   "changelog": "https://github.com/dwarvesf/hidden/releases",
   "category": "Utilities",
   "publisher": "dwarvesf",
-  "previous_version": "1.13.2"
+  "previous_version": "1.13.3"
 }

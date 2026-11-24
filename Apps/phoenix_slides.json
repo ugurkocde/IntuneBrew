@@ -11,5 +11,12 @@
   "sha": "0abfb07aca4dbfce3c35dc4263d0ad52c803ced67f90449bdc0bd07a65334298",
   "category": "Media",
   "publisher": "BLYT",
-  "previous_version": "1.6.2"
+  "previous_version": "1.6.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "0abfb07aca4dbfce3c35dc4263d0ad52c803ced67f90449bdc0bd07a65334298",
+    "url": "https://github.com/gobbledegook/creevey/releases/download/v1.6.2/phoenix-slides-162.dmg",
+    "appName": "Phoenix Slides.app",
+    "bundleId": "net.blyt.phoenixslides"
+  }
 }

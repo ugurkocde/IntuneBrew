@@ -12,7 +12,7 @@
   "changelog": "https://github.com/obsproject/obs-studio/releases",
   "category": "Media",
   "publisher": "OBS Project",
-  "previous_version": "33.0.2",
+  "previous_version": "33.0.3",
   "bundleIdEvidence": {
     "inspector": "dmg-identity/1",
     "artifactSha256": "92212873b6f84c54285203cac3f846590ac00dfad76b312cf266100ff5edf0c8",

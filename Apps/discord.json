@@ -1,14 +1,14 @@
 {
   "name": "Discord",
   "description": "Voice and text chat software",
-  "version": "0.0.423",
-  "url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.423/Discord.dmg",
-  "vendor_url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.423/Discord.dmg",
+  "version": "0.0.424",
+  "url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.424/Discord.dmg",
+  "vendor_url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.424/Discord.dmg",
   "bundleId": "com.hnc.Discord",
   "homepage": "https://discord.com/",
   "homebrew_cask": "discord",
   "fileName": "Discord.dmg",
-  "sha": "8edb6957c30e78250909f4f746546077f25e032f9532852c4b1c2f8bfd37beb2",
+  "sha": "38617824808249eecce6377d6e467936bf695f62662dbcf372e95c930a7b7e4d",
   "changelog": "https://discord.com/tags/changelog",
   "qa_info": {
     "qa_timestamp": "2025-05-12T12:26:31Z",
@@ -22,12 +22,5 @@
   },
   "category": "Communication",
   "publisher": "Discord, Inc.",
-  "previous_version": "0.0.423",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "8edb6957c30e78250909f4f746546077f25e032f9532852c4b1c2f8bfd37beb2",
-    "url": "https://stable.dl2.discordapp.net/distro/app/stable/osx/universal/0.0.423/Discord.dmg",
-    "appName": "Discord.app",
-    "bundleId": "com.hnc.Discord"
-  }
+  "previous_version": "0.0.423"
 }

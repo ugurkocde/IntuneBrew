@@ -12,5 +12,12 @@
   "changelog": "https://kb.parallels.com/en/129060",
   "category": "Utilities",
   "publisher": "Parallels International GmbH",
-  "previous_version": "27.1.0"
+  "previous_version": "27.1.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "dec875f18bad3ea6e92e02cd5c87b9a6bf60306c76cfa46759eeffdd126aed57",
+    "url": "https://download.parallels.com/desktop/v27/27.1.0-58756/ParallelsDesktop-27.1.0-58756.dmg",
+    "appName": "Parallels Desktop.app",
+    "bundleId": "com.parallels.desktop.console"
+  }
 }

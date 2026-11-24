@@ -11,5 +11,12 @@
   "sha": "0a3b1f964891900a2f7f7e6bd319651a1ed379275e7532bc32109a649fb6312d",
   "category": "Design",
   "publisher": "PixelSnap",
-  "previous_version": "2.6.4"
+  "previous_version": "2.6.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "0a3b1f964891900a2f7f7e6bd319651a1ed379275e7532bc32109a649fb6312d",
+    "url": "https://updates.getpixelsnap.com/v2/PixelSnap-2-2.6.4.dmg",
+    "appName": "PixelSnap 2.app",
+    "bundleId": "pl.maketheweb.pixelsnap2"
+  }
 }

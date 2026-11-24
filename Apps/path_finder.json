@@ -11,5 +11,12 @@
   "category": "Utilities",
   "publisher": "Cocoatech",
   "previous_version": "26.1.10",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "26b1b6b46331df7b2127962a15e3fec95f9a3ee500e21dda0757fee6107e9959",
+    "url": "https://get.cocoatech.com/PathFinder.dmg",
+    "appName": "Path Finder.app",
+    "bundleId": "com.cocoatech.PathFinder"
+  },
   "sha": "26b1b6b46331df7b2127962a15e3fec95f9a3ee500e21dda0757fee6107e9959"
 }

@@ -1,22 +1,15 @@
 {
   "name": "OpenAudible",
   "description": "Audiobook manager for Audible users",
-  "version": "5.2",
-  "url": "https://github.com/openaudible/openaudible/releases/download/v5.2/OpenAudible_5.2.dmg",
-  "vendor_url": "https://github.com/openaudible/openaudible/releases/download/v5.2/OpenAudible_5.2.dmg",
+  "version": "5.3.0",
+  "url": "https://github.com/openaudible/openaudible/releases/download/v5.3/OpenAudible_5.3.dmg",
+  "vendor_url": "https://github.com/openaudible/openaudible/releases/download/v5.3/OpenAudible_5.3.dmg",
   "bundleId": "org.openaudible.openaudible",
   "homepage": "https://openaudible.org/",
   "homebrew_cask": "openaudible",
-  "fileName": "OpenAudible_5.2.dmg",
-  "sha": "56b8323b60a8f1c3a665a3a2be87dabf91dcfda66d42de1229d58a07e2ad25de",
+  "fileName": "OpenAudible_5.3.dmg",
+  "sha": "4d0e9950c59982c14e97009c585780c3629e4e5909f234970674fbbdf4d1295e",
   "category": "Media",
   "publisher": "OpenAudible",
-  "previous_version": "5.2",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "56b8323b60a8f1c3a665a3a2be87dabf91dcfda66d42de1229d58a07e2ad25de",
-    "url": "https://github.com/openaudible/openaudible/releases/download/v5.2/OpenAudible_5.2.dmg",
-    "appName": "OpenAudible.app",
-    "bundleId": "org.openaudible.openaudible"
-  }
+  "previous_version": "5.2"
 }

@@ -12,5 +12,12 @@
   "changelog": "https://github.com/containers/podman-desktop/releases",
   "category": "Developer Tools",
   "publisher": "Red Hat, Inc.",
-  "previous_version": "1.30.7"
+  "previous_version": "1.30.7",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "99689844fc594ffbc8722483b2c3be5f3d27d6fa5c3678837e961ce031feae95",
+    "url": "https://github.com/containers/podman-desktop/releases/download/v1.30.7/podman-desktop-1.30.7-arm64.dmg",
+    "appName": "Podman Desktop.app",
+    "bundleId": "io.podmandesktop.PodmanDesktop"
+  }
 }

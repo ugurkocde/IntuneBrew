@@ -4,12 +4,19 @@
   "version": "6.0.11",
   "url": "https://github.com/torakiki/pdfsam/releases/download/v6.0.11/pdfsam-basic-6.0.11-macos-arm64.dmg",
   "vendor_url": "https://github.com/torakiki/pdfsam/releases/download/v6.0.11/pdfsam-basic-6.0.11-macos-arm64.dmg",
-  "bundleId": "org.pdfsam.modules",
+  "bundleId": "org.pdfsam.basic",
   "homepage": "https://pdfsam.org/",
   "homebrew_cask": "pdfsam-basic",
   "fileName": "pdfsam-basic-6.0.11-macos-arm64.dmg",
   "sha": "2c8516290cf0d3fcbaa3f55db9e40667811178c7f5f83c2869e6d594ceb036f0",
   "category": "Utilities",
   "publisher": "PDFsam",
-  "previous_version": "6.0.11"
+  "previous_version": "6.0.11",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "2c8516290cf0d3fcbaa3f55db9e40667811178c7f5f83c2869e6d594ceb036f0",
+    "url": "https://github.com/torakiki/pdfsam/releases/download/v6.0.11/pdfsam-basic-6.0.11-macos-arm64.dmg",
+    "appName": "PDFsam Basic.app",
+    "bundleId": "org.pdfsam.basic"
+  }
 }

@@ -11,5 +11,12 @@
   "sha": "596814016d9f79a5fec096dcd863d699f134adba165340040505c835f8c7fed2",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
-  "previous_version": "2026.3"
+  "previous_version": "2026.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "596814016d9f79a5fec096dcd863d699f134adba165340040505c835f8c7fed2",
+    "url": "https://download.jetbrains.com/webide/PhpStorm-2026.3-aarch64.dmg",
+    "appName": "PhpStorm.app",
+    "bundleId": "com.jetbrains.PhpStorm"
+  }
 }

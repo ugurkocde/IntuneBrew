@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-23T00:58:48.038904Z",
-  "lastFullSyncAt": "2026-11-23T00:58:48.038904Z",
+  "lastPublishedAt": "2026-11-24T00:56:57.509764Z",
+  "lastFullSyncAt": "2026-11-24T00:56:57.509764Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -90,16 +90,16 @@
       "stage": "collection"
     },
     {
-      "app": "mural",
-      "stage": "collection"
-    },
-    {
       "app": "nvidia_geforce_now",
       "stage": "collection"
     },
     {
       "app": "oracle_java_standard_edition_development_kit_documentation",
       "stage": "packaging"
+    },
+    {
+      "app": "orca_slicer",
+      "stage": "collection"
     },
     {
       "app": "reaper",
@@ -143,8 +143,8 @@
     }
   ],
   "appCount": 1165,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/45088859817",
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/45296730196",
   "identityBackfill": {
-    "lastAttempted": "opera"
+    "lastAttempted": "qgis"
   }
 }

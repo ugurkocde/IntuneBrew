@@ -11,5 +11,12 @@
   "sha": "7f9e9ca3ec2a7dde8beeb5a34238449cc94aa9e1d7041260ef0b78526b60b112",
   "category": "Media",
   "publisher": "Optimus",
-  "previous_version": "1.5"
+  "previous_version": "1.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "7f9e9ca3ec2a7dde8beeb5a34238449cc94aa9e1d7041260ef0b78526b60b112",
+    "url": "https://download.optimusplayer.com/Optimus%20Player%201.5.dmg",
+    "appName": "Optimus Player.app",
+    "bundleId": "mo.darren.optimus.player.mac"
+  }
 }

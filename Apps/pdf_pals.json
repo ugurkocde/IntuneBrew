@@ -11,5 +11,12 @@
   "sha": "60ac37efd5754b98793b6dd44de1c491c5b80d0b0ac6b6715c4a73f15ee9634f",
   "category": "Productivity",
   "publisher": "PDF Pals",
-  "previous_version": "1.12.0"
+  "previous_version": "1.12.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "60ac37efd5754b98793b6dd44de1c491c5b80d0b0ac6b6715c4a73f15ee9634f",
+    "url": "https://download.pdfpals.com/releases/PDFPals-1.12.0.dmg",
+    "appName": "PDF Pals.app",
+    "bundleId": "co.podzim.PDFPals"
+  }
 }

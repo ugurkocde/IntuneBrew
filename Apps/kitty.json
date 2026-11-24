@@ -1,23 +1,16 @@
 {
   "name": "kitty",
   "description": "GPU-based terminal emulator",
-  "version": "0.51.0",
-  "url": "https://github.com/kovidgoyal/kitty/releases/download/v0.51.0/kitty-0.51.0.dmg",
-  "vendor_url": "https://github.com/kovidgoyal/kitty/releases/download/v0.51.0/kitty-0.51.0.dmg",
+  "version": "0.51.1",
+  "url": "https://github.com/kovidgoyal/kitty/releases/download/v0.51.1/kitty-0.51.1.dmg",
+  "vendor_url": "https://github.com/kovidgoyal/kitty/releases/download/v0.51.1/kitty-0.51.1.dmg",
   "bundleId": "net.kovidgoyal.kitty",
   "homepage": "https://github.com/kovidgoyal/kitty",
   "homebrew_cask": "kitty",
-  "fileName": "kitty-0.51.0.dmg",
-  "sha": "e7d51ec9f1978ff2fee61647b6f7eb59530e06d9bb1af876b00357ca7779638d",
+  "fileName": "kitty-0.51.1.dmg",
+  "sha": "7a1c492103d7e5ff825351bdda1833bdf6f95d33da9e1ae22e52f61cc5ec013e",
   "changelog": "https://github.com/kovidgoyal/kitty/releases",
   "category": "Developer Tools",
   "publisher": "Kovid Goyal",
-  "previous_version": "0.51.0",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "e7d51ec9f1978ff2fee61647b6f7eb59530e06d9bb1af876b00357ca7779638d",
-    "url": "https://github.com/kovidgoyal/kitty/releases/download/v0.51.0/kitty-0.51.0.dmg",
-    "appName": "kitty.app",
-    "bundleId": "net.kovidgoyal.kitty"
-  }
+  "previous_version": "0.51.0"
 }
