@@ -1,14 +1,14 @@
 {
   "name": "BBEdit",
   "description": "Text, code, and markup editor",
-  "version": "16.1",
-  "url": "https://s3.amazonaws.com/BBSW-download/BBEdit_16.1.dmg",
-  "vendor_url": "https://s3.amazonaws.com/BBSW-download/BBEdit_16.1.dmg",
+  "version": "16.1.1",
+  "url": "https://s3.amazonaws.com/BBSW-download/BBEdit_16.1.1.dmg",
+  "vendor_url": "https://s3.amazonaws.com/BBSW-download/BBEdit_16.1.1.dmg",
   "bundleId": "com.barebones.bbedit",
   "homepage": "https://www.barebones.com/products/bbedit/",
   "homebrew_cask": "bbedit",
-  "fileName": "BBEdit_16.1.dmg",
-  "sha": "8d1de3bb778c71449dc53b38c8e1aab658795175e773953f1adce49df4716dc4",
+  "fileName": "BBEdit_16.1.1.dmg",
+  "sha": "add892d8191da3ab134512a3e199c90d82f07f465ec9e982cd2f51f225a2a8a8",
   "changelog": "https://www.barebones.com/company/news.html",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:23:00Z",
@@ -22,12 +22,5 @@
   },
   "category": "Developer Tools",
   "publisher": "Bare Bones Software, Inc.",
-  "previous_version": "16.1",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "8d1de3bb778c71449dc53b38c8e1aab658795175e773953f1adce49df4716dc4",
-    "url": "https://s3.amazonaws.com/BBSW-download/BBEdit_16.1.dmg",
-    "appName": "BBEdit.app",
-    "bundleId": "com.barebones.bbedit"
-  }
+  "previous_version": "16.1"
 }

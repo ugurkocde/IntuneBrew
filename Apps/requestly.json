@@ -11,5 +11,12 @@
   "sha": "e8eebb6db725b079306973f74a453c2b707924d8a44c641b3a531eac83758bfc",
   "category": "Developer Tools",
   "publisher": "Requestly",
-  "previous_version": "26.6.29"
+  "previous_version": "26.6.29",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "e8eebb6db725b079306973f74a453c2b707924d8a44c641b3a531eac83758bfc",
+    "url": "https://github.com/requestly/requestly-desktop-app/releases/download/v26.6.29/Requestly-26.6.29-arm64.dmg",
+    "appName": "Requestly.app",
+    "bundleId": "io.requestly.beta"
+  }
 }

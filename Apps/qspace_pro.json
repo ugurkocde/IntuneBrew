@@ -11,5 +11,12 @@
   "sha": "4a4461872930bbe73c8ff8361ccc4034a0d723fceaaa618ad1b65fc6efbb9fd6",
   "category": "Utilities",
   "publisher": "AweHunt",
-  "previous_version": "7.0.4"
+  "previous_version": "7.0.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "4a4461872930bbe73c8ff8361ccc4034a0d723fceaaa618ad1b65fc6efbb9fd6",
+    "url": "https://cdn.awehunt.com/qs/rel/QSpace%20Pro_V7.0.4.dmg",
+    "appName": "QSpace Pro.app",
+    "bundleId": "com.jinghaoshe.qspace.pro"
+  }
 }

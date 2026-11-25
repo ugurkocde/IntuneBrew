@@ -1,15 +1,22 @@
 {
   "name": "Redis Insight",
   "description": "GUI for streamlined Redis application development",
-  "version": "3.10.0",
-  "url": "https://s3.amazonaws.com/redisinsight.download/public/releases/3.10.0/Redis-Insight-mac-arm64.dmg",
-  "vendor_url": "https://s3.amazonaws.com/redisinsight.download/public/releases/3.10.0/Redis-Insight-mac-arm64.dmg",
-  "bundleId": "com.cmushroom.redis-pro",
+  "version": "3.10.2",
+  "url": "https://s3.amazonaws.com/redisinsight.download/public/releases/3.10.2/Redis-Insight-mac-arm64.dmg",
+  "vendor_url": "https://s3.amazonaws.com/redisinsight.download/public/releases/3.10.2/Redis-Insight-mac-arm64.dmg",
+  "bundleId": "org.RedisLabs.RedisInsight-V2",
   "homepage": "https://redis.com/redis-enterprise/redis-insight/",
   "homebrew_cask": "redis-insight",
   "fileName": "Redis-Insight-mac-arm64.dmg",
-  "sha": "9d78d4cebca92578ce764afc573f2c4f2aa493a8817451883b9d9d2c96ce3596",
+  "sha": "0fd7a18c8c6ba4fe0985b0d30c21fd7b55facb41499dff1e7cf3d58a9cf5b743",
   "category": "Developer Tools",
   "publisher": "Redis Ltd.",
-  "previous_version": "3.10.0"
+  "previous_version": "3.10.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "0fd7a18c8c6ba4fe0985b0d30c21fd7b55facb41499dff1e7cf3d58a9cf5b743",
+    "url": "https://s3.amazonaws.com/redisinsight.download/public/releases/3.10.2/Redis-Insight-mac-arm64.dmg",
+    "appName": "Redis Insight.app",
+    "bundleId": "org.RedisLabs.RedisInsight-V2"
+  }
 }

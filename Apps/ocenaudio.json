@@ -1,7 +1,7 @@
 {
   "name": "ocenaudio",
   "description": "Audio editor",
-  "version": "3.22.2",
+  "version": "3.22.3",
   "url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg?",
   "vendor_url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg?",
   "bundleId": "com.ocenaudio",
@@ -11,12 +11,5 @@
   "category": "Media",
   "publisher": "Ocenaudio",
   "previous_version": "3.22.2",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "377f9c3e90b7c4bb27f6f07a42dbe84cacfa133d65ce9b17275386f86274af0b",
-    "url": "https://www.ocenaudio.com/downloads/index.php/ocenaudio_universal.dmg?",
-    "appName": "ocenaudio.app",
-    "bundleId": "com.ocenaudio"
-  },
-  "sha": "377f9c3e90b7c4bb27f6f07a42dbe84cacfa133d65ce9b17275386f86274af0b"
+  "sha": "177dd610c48e01e141953a93d56fc3b86a5b394147f181ae84781f5ccf4109f3"
 }

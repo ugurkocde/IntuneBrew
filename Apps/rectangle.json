@@ -12,5 +12,12 @@
   "changelog": "https://github.com/rxhanson/Rectangle/releases",
   "category": "Utilities",
   "publisher": "Rectangle",
-  "previous_version": "2.0.5"
+  "previous_version": "2.0.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "4dec773a2f550d64147d88e07d987ce8119bdff045f1c6993a9a5eeb9f68496c",
+    "url": "https://github.com/rxhanson/Rectangle/releases/download/v2.0.5/Rectangle2.0.5.dmg",
+    "appName": "Rectangle.app",
+    "bundleId": "com.knollsoft.Rectangle"
+  }
 }

@@ -1,14 +1,14 @@
 {
   "name": "CleanShot",
   "description": "Screen capturing tool",
-  "version": "5.0.3",
-  "url": "https://updates.getcleanshot.com/v3/CleanShot-X-5.0.3.dmg",
-  "vendor_url": "https://updates.getcleanshot.com/v3/CleanShot-X-5.0.3.dmg",
+  "version": "5.0.4",
+  "url": "https://updates.getcleanshot.com/v3/CleanShot-X-5.0.4.dmg",
+  "vendor_url": "https://updates.getcleanshot.com/v3/CleanShot-X-5.0.4.dmg",
   "bundleId": "pl.maketheweb.cleanshotx",
   "homepage": "https://getcleanshot.com/",
   "homebrew_cask": "cleanshot",
-  "fileName": "CleanShot-X-5.0.3.dmg",
-  "sha": "3e4a0f457ad07f95264e78f68fa0b8d4c06e179b23dfa801c6900262991225eb",
+  "fileName": "CleanShot-X-5.0.4.dmg",
+  "sha": "6c185fa72f1b3c9c0523667c5092d123b1580b94d6f29b24421eb7286eceef77",
   "qa_info": {
     "qa_timestamp": "2025-05-12T11:48:17Z",
     "qa_result": "Installation successful and verified",
@@ -21,5 +21,5 @@
   },
   "category": "Utilities",
   "publisher": "Clean Software Ltd.",
-  "previous_version": "5.0.2"
+  "previous_version": "5.0.3"
 }

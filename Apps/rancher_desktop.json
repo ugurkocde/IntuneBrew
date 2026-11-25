@@ -12,5 +12,12 @@
   "changelog": "https://github.com/rancher-sandbox/rancher-desktop/releases",
   "category": "Developer Tools",
   "publisher": "Rancher Labs, Inc.",
-  "previous_version": "1.25.0"
+  "previous_version": "1.25.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "17b93863838fc3860d4adb0fa58a76a283011c3ea8743205b306e23f5282c671",
+    "url": "https://github.com/rancher-sandbox/rancher-desktop/releases/download/v1.25.0/Rancher.Desktop-1.25.0.aarch64.dmg",
+    "appName": "Rancher Desktop.app",
+    "bundleId": "io.rancherdesktop.app"
+  }
 }

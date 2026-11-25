@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-24T00:56:57.509764Z",
-  "lastFullSyncAt": "2026-11-24T00:56:57.509764Z",
+  "lastPublishedAt": "2026-11-25T01:10:28.905499Z",
+  "lastFullSyncAt": "2026-11-25T01:10:28.905499Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -11,6 +11,10 @@
     },
     {
       "app": "android_studio",
+      "stage": "collection"
+    },
+    {
+      "app": "bambu_studio",
       "stage": "collection"
     },
     {
@@ -70,6 +74,10 @@
       "stage": "collection"
     },
     {
+      "app": "klokki",
+      "stage": "collection"
+    },
+    {
       "app": "lark",
       "stage": "collection"
     },
@@ -98,7 +106,7 @@
       "stage": "packaging"
     },
     {
-      "app": "orca_slicer",
+      "app": "qgis_ltr",
       "stage": "collection"
     },
     {
@@ -115,6 +123,10 @@
     },
     {
       "app": "roon",
+      "stage": "collection"
+    },
+    {
+      "app": "shottr",
       "stage": "collection"
     },
     {
@@ -142,9 +154,9 @@
       "stage": "collection"
     }
   ],
-  "appCount": 1165,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/45296730196",
+  "appCount": 1164,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/45517929270",
   "identityBackfill": {
-    "lastAttempted": "qgis"
+    "lastAttempted": "scratch"
   }
 }

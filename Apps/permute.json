@@ -1,22 +1,15 @@
 {
   "name": "Permute",
   "description": "Converts and edits video, audio or image files",
-  "version": "4.1.2",
-  "url": "https://software.charliemonroe.net/trial/permute/v4/Permute_4_4191.dmg",
-  "vendor_url": "https://software.charliemonroe.net/trial/permute/v4/Permute_4_4191.dmg",
+  "version": "4.1.3",
+  "url": "https://software.charliemonroe.net/trial/permute/v4/Permute_4_4195.dmg",
+  "vendor_url": "https://software.charliemonroe.net/trial/permute/v4/Permute_4_4195.dmg",
   "bundleId": "com.charliemonroe.Permute-4",
   "homepage": "https://software.charliemonroe.net/permute/",
   "homebrew_cask": "permute",
-  "fileName": "Permute_4_4191.dmg",
-  "sha": "406837b05a65b698a8f7fc584698792d0f84845aeba050b016a9ff8028ec45de",
+  "fileName": "Permute_4_4195.dmg",
+  "sha": "f4b9c4f742bd6e98dc97b26a284903c684f1a1fb52b18f08df0b16cc6240d34e",
   "category": "Media",
   "publisher": "Charlie Monroe",
-  "previous_version": "4.1.2",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "406837b05a65b698a8f7fc584698792d0f84845aeba050b016a9ff8028ec45de",
-    "url": "https://software.charliemonroe.net/trial/permute/v4/Permute_4_4191.dmg",
-    "appName": "Permute 4.app",
-    "bundleId": "com.charliemonroe.Permute-4"
-  }
+  "previous_version": "4.1.2"
 }

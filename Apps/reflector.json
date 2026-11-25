@@ -11,5 +11,12 @@
   "sha": "9f2857ea993d31a0b09a245244cd530c488e4edb30e7d7352be103ad7291ab1f",
   "category": "Utilities",
   "publisher": "AirSquirrels, LLC",
-  "previous_version": "4.1.4"
+  "previous_version": "4.1.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "9f2857ea993d31a0b09a245244cd530c488e4edb30e7d7352be103ad7291ab1f",
+    "url": "https://download.airsquirrels.com/Reflector4/Mac/Reflector-4.1.4.dmg",
+    "appName": "Reflector 4.app",
+    "bundleId": "com.squirrels.Reflector-4"
+  }
 }

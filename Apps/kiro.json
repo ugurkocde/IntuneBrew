@@ -1,22 +1,15 @@
 {
   "name": "kiro",
   "description": "Agent-centric IDE with spec-driven development",
-  "version": "1.5.11",
-  "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.5.11/kiro-ide-1.5.11-stable-darwin-arm64.dmg",
-  "vendor_url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.5.11/kiro-ide-1.5.11-stable-darwin-arm64.dmg",
+  "version": "1.5.37",
+  "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.5.37/kiro-ide-1.5.37-stable-darwin-arm64.dmg",
+  "vendor_url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.5.37/kiro-ide-1.5.37-stable-darwin-arm64.dmg",
   "bundleId": "dev.kiro.desktop",
   "homepage": "https://kiro.dev/",
   "homebrew_cask": "kiro",
-  "fileName": "kiro-ide-1.5.11-stable-darwin-arm64.dmg",
-  "sha": "5945b781099bd91b26d2731647a1c958eb7eee0292dc81c22ad93acaed1c1d81",
+  "fileName": "kiro-ide-1.5.37-stable-darwin-arm64.dmg",
+  "sha": "e6f9e9b00107734ff8de8a5bf1806b53919b726b66fc0b02aaf0a4ed3f3786c7",
   "category": "Developer Tools",
   "publisher": "Kiro",
-  "previous_version": "1.5.11",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "5945b781099bd91b26d2731647a1c958eb7eee0292dc81c22ad93acaed1c1d81",
-    "url": "https://prod.download.desktop.kiro.dev/releases/stable/darwin-arm64/signed/1.5.11/kiro-ide-1.5.11-stable-darwin-arm64.dmg",
-    "appName": "Kiro.app",
-    "bundleId": "dev.kiro.desktop"
-  }
+  "previous_version": "1.5.11"
 }

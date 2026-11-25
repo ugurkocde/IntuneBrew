@@ -11,5 +11,12 @@
   "sha": "47d4fdfb128109e213ee21c272a100fa0408d389932c47f66b0440b5a0d32c8c",
   "category": "Productivity",
   "publisher": "Blacktree Software",
-  "previous_version": "2.6.0"
+  "previous_version": "2.6.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "47d4fdfb128109e213ee21c272a100fa0408d389932c47f66b0440b5a0d32c8c",
+    "url": "https://github.com/quicksilver/Quicksilver/releases/download/v2.6.0/Quicksilver.2.6.0.dmg",
+    "appName": "Quicksilver.app",
+    "bundleId": "com.blacktree.Quicksilver"
+  }
 }

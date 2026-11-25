@@ -11,5 +11,12 @@
   "sha": "d18c9c9eadba7a03e0dda14c7a05fadb634b39379c61eecfc91bf36f0fb922df",
   "category": "Developer Tools",
   "publisher": "Retcon",
-  "previous_version": "1.6.4"
+  "previous_version": "1.6.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "d18c9c9eadba7a03e0dda14c7a05fadb634b39379c61eecfc91bf36f0fb922df",
+    "url": "https://downloads.lemon.garden/retcon/retcon-1.6.4.dmg",
+    "appName": "Retcon.app",
+    "bundleId": "garden.lemon.Retcon"
+  }
 }

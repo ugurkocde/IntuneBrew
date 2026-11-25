@@ -11,5 +11,12 @@
   "sha": "ff0bd3695129aa664fb7db546d2e1965ce28c4a805c80c2cc059effc5a323bec",
   "category": "Productivity",
   "publisher": "Unknown",
-  "previous_version": "2.5.0"
+  "previous_version": "2.5.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "ff0bd3695129aa664fb7db546d2e1965ce28c4a805c80c2cc059effc5a323bec",
+    "url": "https://recentsapp.com/releases/Recents_2.5.0.dmg",
+    "appName": "Recents.app",
+    "bundleId": "com.lapier.Recents"
+  }
 }

@@ -11,7 +11,7 @@
   "sha": "4f907c77a2f3088d178db7228bc0950af3baa70758ed0162200e346bc1ed7c0a",
   "category": "Developer Tools",
   "publisher": "Paseo",
-  "previous_version": "0.17.3",
+  "previous_version": "0.17.4",
   "bundleIdEvidence": {
     "inspector": "dmg-identity/1",
     "artifactSha256": "4f907c77a2f3088d178db7228bc0950af3baa70758ed0162200e346bc1ed7c0a",

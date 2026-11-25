@@ -1,22 +1,15 @@
 {
   "name": "DevKnife",
   "description": "Collection of handy developer tools",
-  "version": "1.19.0",
-  "url": "https://files.solotuna.com/devknife/DevKnife-1.19.0.dmg",
-  "vendor_url": "https://files.solotuna.com/devknife/DevKnife-1.19.0.dmg",
+  "version": "1.20.0",
+  "url": "https://files.solotuna.com/devknife/DevKnife-1.20.0.dmg",
+  "vendor_url": "https://files.solotuna.com/devknife/DevKnife-1.20.0.dmg",
   "bundleId": "com.solotuna.devknife",
   "homepage": "https://devknife.app/",
   "homebrew_cask": "devknife",
-  "fileName": "DevKnife-1.19.0.dmg",
-  "sha": "df591cb1933c2573495d048696de779c99606daf465de8ae1ddd824d59cde075",
+  "fileName": "DevKnife-1.20.0.dmg",
+  "sha": "a7ad36f962c3c91cb2e0f21a63e97150af54e3ec071c28a9afad7f9afb44eec7",
   "category": "Developer Tools",
   "publisher": "DevKnife",
-  "previous_version": "1.19.0",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "df591cb1933c2573495d048696de779c99606daf465de8ae1ddd824d59cde075",
-    "url": "https://files.solotuna.com/devknife/DevKnife-1.19.0.dmg",
-    "appName": "DevKnife.app",
-    "bundleId": "com.solotuna.devknife"
-  }
+  "previous_version": "1.19.0"
 }

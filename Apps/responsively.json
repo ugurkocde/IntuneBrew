@@ -11,5 +11,12 @@
   "sha": "870ef97ae7b23758411841f0c35058ddd36ba2dce51b1f8a48063664dc12d92b",
   "category": "Developer Tools",
   "publisher": "Responsively",
-  "previous_version": "1.18.0"
+  "previous_version": "1.18.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "870ef97ae7b23758411841f0c35058ddd36ba2dce51b1f8a48063664dc12d92b",
+    "url": "https://github.com/responsively-org/responsively-app-releases/releases/download/v1.18.0/ResponsivelyApp-1.18.0-arm64.dmg",
+    "appName": "ResponsivelyApp.app",
+    "bundleId": "app.responsively"
+  }
 }

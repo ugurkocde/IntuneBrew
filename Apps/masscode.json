@@ -1,22 +1,15 @@
 {
   "name": "massCode",
   "description": "Code snippets manager for developers",
-  "version": "6.3.1",
-  "url": "https://github.com/massCodeIO/massCode/releases/download/v6.3.1/massCode-6.3.1-arm64.dmg",
-  "vendor_url": "https://github.com/massCodeIO/massCode/releases/download/v6.3.1/massCode-6.3.1-arm64.dmg",
+  "version": "6.4.0",
+  "url": "https://github.com/massCodeIO/massCode/releases/download/v6.4.0/massCode-6.4.0-arm64.dmg",
+  "vendor_url": "https://github.com/massCodeIO/massCode/releases/download/v6.4.0/massCode-6.4.0-arm64.dmg",
   "bundleId": "io.masscode.app",
   "homepage": "https://masscode.io/",
   "homebrew_cask": "masscode",
-  "fileName": "massCode-6.3.1-arm64.dmg",
-  "sha": "450c4aa8de921827e47419937dc05136155bc92bfc23a42d629d2971ae1ddec7",
+  "fileName": "massCode-6.4.0-arm64.dmg",
+  "sha": "e2e4262153343d954a0887128bc0c6dbe7895fc1ef17984df4572bfd31e885f7",
   "category": "Developer Tools",
   "publisher": "MassCode",
-  "previous_version": "6.3.1",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "450c4aa8de921827e47419937dc05136155bc92bfc23a42d629d2971ae1ddec7",
-    "url": "https://github.com/massCodeIO/massCode/releases/download/v6.3.1/massCode-6.3.1-arm64.dmg",
-    "appName": "massCode.app",
-    "bundleId": "io.masscode.app"
-  }
+  "previous_version": "6.3.1"
 }

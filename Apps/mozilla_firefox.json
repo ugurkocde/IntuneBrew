@@ -1,23 +1,16 @@
 {
   "name": "Mozilla Firefox",
   "description": "Web browser",
-  "version": "160.0.1",
-  "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/160.0.1/mac/en-US/Firefox%20160.0.1.dmg",
-  "vendor_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/160.0.1/mac/en-US/Firefox%20160.0.1.dmg",
+  "version": "161.0",
+  "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/161.0/mac/en-US/Firefox%20161.0.dmg",
+  "vendor_url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/161.0/mac/en-US/Firefox%20161.0.dmg",
   "bundleId": "org.mozilla.firefox",
   "homepage": "https://www.mozilla.org/firefox/",
   "homebrew_cask": "firefox",
-  "fileName": "Firefox 160.0.1.dmg",
-  "sha": "db9a522291d82cbe9a2b2922822def4db0a79d4fa3e614979039d705b13b1c25",
+  "fileName": "Firefox 161.0.dmg",
+  "sha": "18f398ada9ba9faa5458dc01c2a68fc7df35517283be2e7a421a0867c5f47f83",
   "changelog": "https://www.mozilla.org/en-US/firefox/releases/",
   "category": "Browsers",
   "publisher": "Mozilla Corporation",
-  "previous_version": "160.0.1",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "db9a522291d82cbe9a2b2922822def4db0a79d4fa3e614979039d705b13b1c25",
-    "url": "https://download-installer.cdn.mozilla.net/pub/firefox/releases/160.0.1/mac/en-US/Firefox%20160.0.1.dmg",
-    "appName": "Firefox.app",
-    "bundleId": "org.mozilla.firefox"
-  }
+  "previous_version": "160.0.1"
 }

@@ -12,5 +12,7 @@
   "type": "pkg",
   "category": "Productivity",
   "publisher": "Microsoft Corporation",
-  "previous_version": "1.2610.2101"
+  "previous_version": "1.2610.2101",
+  "deprecated": true,
+  "deprecation_reason": "cask removed from Homebrew"
 }

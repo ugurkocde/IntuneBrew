@@ -12,5 +12,12 @@
   "changelog": "https://devolutions.net/remote-desktop-manager/release-notes/",
   "category": "Productivity",
   "publisher": "Devolutions inc.",
-  "previous_version": "2026.3.3.1"
+  "previous_version": "2026.3.3.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "2787c0783f5aedaf55997ff20826e9277b68f08bb7e216a9b14cd58114068d86",
+    "url": "https://cdn.devolutions.net/download/Mac/Devolutions.RemoteDesktopManager.Mac.2026.3.3.1.dmg",
+    "appName": "Remote Desktop Manager.app",
+    "bundleId": "com.devolutions.remotedesktopmanager"
+  }
 }

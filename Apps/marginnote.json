@@ -1,22 +1,15 @@
 {
   "name": "MarginNote",
   "description": "E-reader",
-  "version": "5.0.2",
-  "url": "https://dist.marginnote.cn/MarginNote5.0.2.dmg",
-  "vendor_url": "https://dist.marginnote.cn/MarginNote5.0.2.dmg",
+  "version": "5.0.3",
+  "url": "https://dist.marginnote.cn/MarginNote5.0.3.dmg",
+  "vendor_url": "https://dist.marginnote.cn/MarginNote5.0.3.dmg",
   "bundleId": "QReader.MarginStudy.easy",
   "homepage": "https://www.marginnote.com/",
   "homebrew_cask": "marginnote",
-  "fileName": "MarginNote5.0.2.dmg",
-  "sha": "1d199737786c6d131680605efecfbdd559524f9b4bc3f5f9300ab386566d8902",
+  "fileName": "MarginNote5.0.3.dmg",
+  "sha": "72bd7b7c96d095b43a16c23f5dd038e22bca2af79ed9077ddf11ae94de92b632",
   "category": "Productivity",
   "publisher": "MarginNote Team",
-  "previous_version": "5.0.2",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "1d199737786c6d131680605efecfbdd559524f9b4bc3f5f9300ab386566d8902",
-    "url": "https://dist.marginnote.cn/MarginNote5.0.2.dmg",
-    "appName": "MarginNote 5.app",
-    "bundleId": "QReader.MarginStudy.easy"
-  }
+  "previous_version": "5.0.2"
 }

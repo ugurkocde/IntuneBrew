@@ -11,5 +11,12 @@
   "sha": "be2f654e5e978de6925a8636ea11540d783caef3379eb820965b55d06b13c44d",
   "category": "Productivity",
   "publisher": "Raindrop.io",
-  "previous_version": "5.7.9"
+  "previous_version": "5.7.9",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "be2f654e5e978de6925a8636ea11540d783caef3379eb820965b55d06b13c44d",
+    "url": "https://github.com/raindropio/desktop/releases/download/v5.7.9/Raindrop-arm64.dmg",
+    "appName": "Raindrop.io.app",
+    "bundleId": "io.raindrop.macapp"
+  }
 }

@@ -1,22 +1,15 @@
 {
   "name": "JetBrains PhpStorm",
   "description": "PHP IDE by JetBrains",
-  "version": "2026.3",
-  "url": "https://download.jetbrains.com/webide/PhpStorm-2026.3-aarch64.dmg",
-  "vendor_url": "https://download.jetbrains.com/webide/PhpStorm-2026.3-aarch64.dmg",
+  "version": "2026.3.0.1",
+  "url": "https://download.jetbrains.com/webide/PhpStorm-2026.3.0.1-aarch64.dmg",
+  "vendor_url": "https://download.jetbrains.com/webide/PhpStorm-2026.3.0.1-aarch64.dmg",
   "bundleId": "com.jetbrains.PhpStorm",
   "homepage": "https://www.jetbrains.com/phpstorm/",
   "homebrew_cask": "phpstorm",
-  "fileName": "PhpStorm-2026.3-aarch64.dmg",
-  "sha": "596814016d9f79a5fec096dcd863d699f134adba165340040505c835f8c7fed2",
+  "fileName": "PhpStorm-2026.3.0.1-aarch64.dmg",
+  "sha": "abc8e790281748c08e5fd8919bdcedd0cc27771d862747051b81bc0a1e6db279",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
-  "previous_version": "2026.3",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "596814016d9f79a5fec096dcd863d699f134adba165340040505c835f8c7fed2",
-    "url": "https://download.jetbrains.com/webide/PhpStorm-2026.3-aarch64.dmg",
-    "appName": "PhpStorm.app",
-    "bundleId": "com.jetbrains.PhpStorm"
-  }
+  "previous_version": "2026.3"
 }
