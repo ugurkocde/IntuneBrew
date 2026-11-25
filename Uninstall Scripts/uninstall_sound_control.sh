@@ -87,6 +87,22 @@ elif [ -f "/Library/Preferences/Audio/Data/_SoundSiphon.driver" ]; then
     rm -f "/Library/Preferences/Audio/Data/_SoundSiphon.driver" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/com.staticz.SoundControl
+echo "Removing $HOME/Library/Application Scripts/com.staticz.SoundControl..."
+if [ -d "$HOME/Library/Application Scripts/com.staticz.SoundControl" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.staticz.SoundControl" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.staticz.SoundControl" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.staticz.SoundControl" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.staticz.soundcontrol.sfl*
+echo "Removing $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.staticz.soundcontrol.sfl*..."
+if [ -d "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.staticz.soundcontrol.sfl*" ]; then
+    rm -rf "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.staticz.soundcontrol.sfl*" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.staticz.soundcontrol.sfl*" ]; then
+    rm -f "$HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.staticz.soundcontrol.sfl*" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Support/com.staticz.SoundControl
 echo "Removing $HOME/Library/Application Support/com.staticz.SoundControl..."
 if [ -d "$HOME/Library/Application Support/com.staticz.SoundControl" ]; then
@@ -101,6 +117,14 @@ if [ -d "$HOME/Library/Caches/com.staticz.SoundControl" ]; then
     rm -rf "$HOME/Library/Caches/com.staticz.SoundControl" 2>/dev/null || true
 elif [ -f "$HOME/Library/Caches/com.staticz.SoundControl" ]; then
     rm -f "$HOME/Library/Caches/com.staticz.SoundControl" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/com.staticz.SoundControl
+echo "Removing $HOME/Library/Containers/com.staticz.SoundControl..."
+if [ -d "$HOME/Library/Containers/com.staticz.SoundControl" ]; then
+    rm -rf "$HOME/Library/Containers/com.staticz.SoundControl" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/com.staticz.SoundControl" ]; then
+    rm -f "$HOME/Library/Containers/com.staticz.SoundControl" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Cookies/com.staticz.SoundControl.binarycookies

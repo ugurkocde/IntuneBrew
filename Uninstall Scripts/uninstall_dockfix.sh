@@ -49,6 +49,14 @@ elif [ -f "$HOME/Library/HTTPStorages/dk.FIrstForm.DockFix" ]; then
     rm -f "$HOME/Library/HTTPStorages/dk.FIrstForm.DockFix" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Logs/DockFix
+echo "Removing $HOME/Library/Logs/DockFix..."
+if [ -d "$HOME/Library/Logs/DockFix" ]; then
+    rm -rf "$HOME/Library/Logs/DockFix" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/DockFix" ]; then
+    rm -f "$HOME/Library/Logs/DockFix" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Preferences/dk.FIrstForm.DockFix.plist
 echo "Removing $HOME/Library/Preferences/dk.FIrstForm.DockFix.plist..."
 if [ -d "$HOME/Library/Preferences/dk.FIrstForm.DockFix.plist" ]; then
