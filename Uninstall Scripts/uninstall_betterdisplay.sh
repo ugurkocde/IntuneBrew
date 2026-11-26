@@ -45,6 +45,14 @@ elif [ -f "$HOME/Library/Application Support/BetterDummy" ]; then
     rm -f "$HOME/Library/Application Support/BetterDummy" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Support/pro.betterdisplay.BetterDisplay
+echo "Removing $HOME/Library/Application Support/pro.betterdisplay.BetterDisplay..."
+if [ -d "$HOME/Library/Application Support/pro.betterdisplay.BetterDisplay" ]; then
+    rm -rf "$HOME/Library/Application Support/pro.betterdisplay.BetterDisplay" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Support/pro.betterdisplay.BetterDisplay" ]; then
+    rm -f "$HOME/Library/Application Support/pro.betterdisplay.BetterDisplay" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Caches/pro.betterdisplay.BetterDisplay
 echo "Removing $HOME/Library/Caches/pro.betterdisplay.BetterDisplay..."
 if [ -d "$HOME/Library/Caches/pro.betterdisplay.BetterDisplay" ]; then

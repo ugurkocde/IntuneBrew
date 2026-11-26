@@ -25,6 +25,14 @@ elif [ -f "/Applications/LocalSend.app" ]; then
     rm -f "/Applications/LocalSend.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/--AppIdentifierPrefix-localsend.shared_group
+echo "Removing $HOME/Library/Application Scripts/--AppIdentifierPrefix-localsend.shared_group..."
+if [ -d "$HOME/Library/Application Scripts/--AppIdentifierPrefix-localsend.shared_group" ]; then
+    rm -rf "$HOME/Library/Application Scripts/--AppIdentifierPrefix-localsend.shared_group" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/--AppIdentifierPrefix-localsend.shared_group" ]; then
+    rm -f "$HOME/Library/Application Scripts/--AppIdentifierPrefix-localsend.shared_group" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/org.localsend.localsendApp
 echo "Removing $HOME/Library/Application Scripts/org.localsend.localsendApp..."
 if [ -d "$HOME/Library/Application Scripts/org.localsend.localsendApp" ]; then
@@ -55,6 +63,14 @@ if [ -d "$HOME/Library/Containers/org.localsend.localsendApp.ShareExtension" ]; 
     rm -rf "$HOME/Library/Containers/org.localsend.localsendApp.ShareExtension" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/org.localsend.localsendApp.ShareExtension" ]; then
     rm -f "$HOME/Library/Containers/org.localsend.localsendApp.ShareExtension" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/--AppIdentifierPrefix-localsend.shared_group
+echo "Removing $HOME/Library/Group Containers/--AppIdentifierPrefix-localsend.shared_group..."
+if [ -d "$HOME/Library/Group Containers/--AppIdentifierPrefix-localsend.shared_group" ]; then
+    rm -rf "$HOME/Library/Group Containers/--AppIdentifierPrefix-localsend.shared_group" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/--AppIdentifierPrefix-localsend.shared_group" ]; then
+    rm -f "$HOME/Library/Group Containers/--AppIdentifierPrefix-localsend.shared_group" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/org.localsend.localsendApp.plist
