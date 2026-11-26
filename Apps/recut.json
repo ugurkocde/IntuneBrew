@@ -11,7 +11,7 @@
   "sha": "eab547bdf02a5130dca6fb6c60db060e9fd0b9a0b0666b50a3b8761837f58fa4",
   "category": "Media",
   "publisher": "Recut, Inc.",
-  "previous_version": "5.1.0",
+  "previous_version": "5.1.1",
   "bundleIdEvidence": {
     "inspector": "dmg-identity/1",
     "artifactSha256": "eab547bdf02a5130dca6fb6c60db060e9fd0b9a0b0666b50a3b8761837f58fa4",

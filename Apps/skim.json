@@ -11,5 +11,12 @@
   "sha": "559aadf86a60661517ed523289f0f81cb4e859ccdbb54191cc64d4be3d7781dc",
   "category": "Productivity",
   "publisher": "Skim Team",
-  "previous_version": "1.7.19"
+  "previous_version": "1.7.19",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "559aadf86a60661517ed523289f0f81cb4e859ccdbb54191cc64d4be3d7781dc",
+    "url": "https://downloads.sourceforge.net/skim-app/Skim/Skim-1.7.19/Skim-1.7.19.dmg",
+    "appName": "Skim.app",
+    "bundleId": "net.sourceforge.skim-app.skim"
+  }
 }

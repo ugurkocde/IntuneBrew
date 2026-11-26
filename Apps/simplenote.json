@@ -11,5 +11,12 @@
   "sha": "6ff36e3488ea2fb1e8c4bb20f6646a76c3caeb91b7d90c7d31ec421383e68903",
   "category": "Productivity",
   "publisher": "Automattic, Inc.",
-  "previous_version": "2.27.1"
+  "previous_version": "2.27.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "6ff36e3488ea2fb1e8c4bb20f6646a76c3caeb91b7d90c7d31ec421383e68903",
+    "url": "https://github.com/Automattic/simplenote-electron/releases/download/v2.27.1/Simplenote-macOS-2.27.1.dmg",
+    "appName": "Simplenote.app",
+    "bundleId": "com.automattic.simplenote"
+  }
 }

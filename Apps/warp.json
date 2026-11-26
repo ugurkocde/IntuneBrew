@@ -1,15 +1,15 @@
 {
   "name": "Warp",
   "description": "Rust-based terminal",
-  "version": "0.2026.11.18.08.17.05",
-  "url": "https://releases.warp.dev/stable/v0.2026.11.18.08.17.stable_05/Warp.dmg",
-  "vendor_url": "https://releases.warp.dev/stable/v0.2026.11.18.08.17.stable_05/Warp.dmg",
+  "version": "0.2026.11.18.08.17.06",
+  "url": "https://releases.warp.dev/stable/v0.2026.11.18.08.17.stable_06/Warp.dmg",
+  "vendor_url": "https://releases.warp.dev/stable/v0.2026.11.18.08.17.stable_06/Warp.dmg",
   "bundleId": "dev.warp.Warp-Stable",
   "homepage": "https://www.warp.dev/",
   "homebrew_cask": "warp",
   "fileName": "Warp.dmg",
-  "sha": "56c7caf4137c41adad30229601aaacd26a19b5a6cee59f82b5ef38381fa41883",
+  "sha": "2b21b90a3010a724baf9f5a3a1ff97e34c538c505d098b6f9439e755b7f54fb1",
   "category": "Developer Tools",
   "publisher": "Warp",
-  "previous_version": "0.2026.11.18.08.17.04"
+  "previous_version": "0.2026.11.18.08.17.05"
 }

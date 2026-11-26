@@ -4,12 +4,19 @@
   "version": "26.11.15",
   "url": "https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-macos-26.11.15.dmg",
   "vendor_url": "https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-macos-26.11.15.dmg",
-  "bundleId": "com.meltytech.Shotcut",
+  "bundleId": "com.Meltytech.Shotcut",
   "homepage": "https://www.shotcut.org/",
   "homebrew_cask": "shotcut",
   "fileName": "shotcut-macos-26.11.15.dmg",
   "sha": "664c6ea4195d58dbf3fd43f3d74ae46d59b6310f9ac628d5e70a8e2786a4f80b",
   "category": "Media",
   "publisher": "Meltytech, LLC",
-  "previous_version": "26.11.15"
+  "previous_version": "26.11.15",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "664c6ea4195d58dbf3fd43f3d74ae46d59b6310f9ac628d5e70a8e2786a4f80b",
+    "url": "https://github.com/mltframework/shotcut/releases/download/v26.11.15/shotcut-macos-26.11.15.dmg",
+    "appName": "Shotcut.app",
+    "bundleId": "com.Meltytech.Shotcut"
+  }
 }

@@ -4,12 +4,19 @@
   "version": "1.19.0.4",
   "url": "https://releases.sigmaos.com/SigmaOS-1.19.0.4.dmg",
   "vendor_url": "https://releases.sigmaos.com/SigmaOS-1.19.0.4.dmg",
-  "bundleId": "com.nicola.sigmaos",
+  "bundleId": "com.sigmaos.sigmaos.macos",
   "homepage": "https://sigmaos.com/",
   "homebrew_cask": "sigmaos",
   "fileName": "SigmaOS-1.19.0.4.dmg",
   "sha": "70d308c4ed1a9830fff186c0c6edced1d5bab1369a1fca2bd4b7b93f58879d18",
   "category": "Browsers",
   "publisher": "SigmaOS",
-  "previous_version": "1.19.0.4"
+  "previous_version": "1.19.0.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "70d308c4ed1a9830fff186c0c6edced1d5bab1369a1fca2bd4b7b93f58879d18",
+    "url": "https://releases.sigmaos.com/SigmaOS-1.19.0.4.dmg",
+    "appName": "SigmaOS.app",
+    "bundleId": "com.sigmaos.sigmaos.macos"
+  }
 }

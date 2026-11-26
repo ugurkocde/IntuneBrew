@@ -11,5 +11,12 @@
   "sha": "ca34a501b4b5eaa4cbf50065ce28b378d0a09e0695ff220642a5053bfc184ead",
   "category": "Productivity",
   "publisher": "Shift",
-  "previous_version": "9.6.9.1283"
+  "previous_version": "9.6.9.1283",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "ca34a501b4b5eaa4cbf50065ce28b378d0a09e0695ff220642a5053bfc184ead",
+    "url": "https://updates.tryshift.com/v9.6.9/stable/shift-v9.6.9.1283-stable-arm64.dmg",
+    "appName": "Shift.app",
+    "bundleId": "com.rdbrck.shift"
+  }
 }

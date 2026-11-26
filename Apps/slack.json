@@ -12,5 +12,12 @@
   "changelog": "https://slack.com/changelog",
   "category": "Communication",
   "publisher": "Slack Technologies",
-  "previous_version": "4.53.292"
+  "previous_version": "4.53.292",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b358a20e933a889e76faa46c581e3d9c59f036dd3be1692eb593db900646006a",
+    "url": "https://downloads.slack-edge.com/desktop-releases/mac/arm64/4.53.292/Slack-4.53.292-macOS.dmg",
+    "appName": "Slack.app",
+    "bundleId": "com.tinyspeck.slackmacgap"
+  }
 }

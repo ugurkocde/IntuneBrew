@@ -1,15 +1,15 @@
 {
   "name": "Milanote",
   "description": "Organise your ideas and projects into visual boards",
-  "version": "3.18.149",
-  "url": "https://milanote-app-releases.s3.amazonaws.com/Milanote-3.18.149.dmg",
-  "vendor_url": "https://milanote-app-releases.s3.amazonaws.com/Milanote-3.18.149.dmg",
+  "version": "3.18.150",
+  "url": "https://milanote-app-releases.s3.amazonaws.com/Milanote-3.18.150.dmg",
+  "vendor_url": "https://milanote-app-releases.s3.amazonaws.com/Milanote-3.18.150.dmg",
   "bundleId": "com.milanote.app",
   "homepage": "https://www.milanote.com/",
   "homebrew_cask": "milanote",
-  "fileName": "Milanote-3.18.149.dmg",
-  "sha": "90c83a88da6f969ccad643c548e8887d97d698905222f2e20b324f82e678ca97",
+  "fileName": "Milanote-3.18.150.dmg",
+  "sha": "f0bec8b542c5e9c4754e893c523b0f4340ff07dd55aae68eab48474ee3473f19",
   "category": "Productivity",
   "publisher": "Milanote",
-  "previous_version": "3.18.148"
+  "previous_version": "3.18.149"
 }

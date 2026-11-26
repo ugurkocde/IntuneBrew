@@ -1,22 +1,15 @@
 {
   "name": "Morgen",
   "description": "All-in-one calendars, tasks and scheduler",
-  "version": "4.1.4",
-  "url": "https://download.todesktop.com/210203cqcj00tw1/Morgen%204.1.4%20-%20Build%20261111uasppv5l0-arm64.dmg",
-  "vendor_url": "https://download.todesktop.com/210203cqcj00tw1/Morgen%204.1.4%20-%20Build%20261111uasppv5l0-arm64.dmg",
+  "version": "4.5.0",
+  "url": "https://download.todesktop.com/210203cqcj00tw1/Morgen%204.5.0%20-%20Build%20261125vlh0s0saz-arm64.dmg",
+  "vendor_url": "https://download.todesktop.com/210203cqcj00tw1/Morgen%204.5.0%20-%20Build%20261125vlh0s0saz-arm64.dmg",
   "bundleId": "com.todesktop.210203cqcj00tw1",
   "homepage": "https://morgen.so/",
   "homebrew_cask": "morgen",
-  "fileName": "Morgen 4.1.4 - Build 261111uasppv5l0-arm64.dmg",
-  "sha": "94e1dbc8864191141fc5f8e61dd7af700102b803e1e9c7658ef04c701c58aba5",
+  "fileName": "Morgen 4.5.0 - Build 261125vlh0s0saz-arm64.dmg",
+  "sha": "5d3354f1530e7652be2e5999e2d25a0d00ca3dbae6b8806b605535003c55c1a8",
   "category": "Productivity",
   "publisher": "Morgen",
-  "previous_version": "4.1.4",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "94e1dbc8864191141fc5f8e61dd7af700102b803e1e9c7658ef04c701c58aba5",
-    "url": "https://download.todesktop.com/210203cqcj00tw1/Morgen%204.1.4%20-%20Build%20261111uasppv5l0-arm64.dmg",
-    "appName": "Morgen.app",
-    "bundleId": "com.todesktop.210203cqcj00tw1"
-  }
+  "previous_version": "4.1.4"
 }

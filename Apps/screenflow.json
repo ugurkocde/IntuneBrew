@@ -4,12 +4,19 @@
   "version": "10.5.2",
   "url": "https://www.telestream.net/download-files/screenflow/10-5/ScreenFlow-10.5.2.dmg",
   "vendor_url": "https://www.telestream.net/download-files/screenflow/10-5/ScreenFlow-10.5.2.dmg",
-  "bundleId": "net.telestream.screenflow.globallibrary",
+  "bundleId": "net.telestream.screenflow10",
   "homepage": "https://www.telestream.net/screenflow/",
   "homebrew_cask": "screenflow",
   "fileName": "ScreenFlow-10.5.2.dmg",
   "sha": "00bb03b77cffcdee8d1ed12011c2e303bb9117021deee611a402090116d84263",
   "category": "Media",
   "publisher": "Telestream",
-  "previous_version": "10.5.2"
+  "previous_version": "10.5.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "00bb03b77cffcdee8d1ed12011c2e303bb9117021deee611a402090116d84263",
+    "url": "https://www.telestream.net/download-files/screenflow/10-5/ScreenFlow-10.5.2.dmg",
+    "appName": "ScreenFlow.app",
+    "bundleId": "net.telestream.screenflow10"
+  }
 }

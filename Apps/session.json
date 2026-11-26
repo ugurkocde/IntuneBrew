@@ -11,5 +11,12 @@
   "sha": "2b24557c2b63d61ff446da1061da8481c6816dd24496df0d45ef765374f7bb05",
   "category": "Communication",
   "publisher": "The Session Project",
-  "previous_version": "1.18.5"
+  "previous_version": "1.18.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "2b24557c2b63d61ff446da1061da8481c6816dd24496df0d45ef765374f7bb05",
+    "url": "https://github.com/session-foundation/session-desktop/releases/download/v1.18.5/session-desktop-mac-arm64-1.18.5.dmg",
+    "appName": "Session.app",
+    "bundleId": "com.loki-project.messenger-desktop"
+  }
 }

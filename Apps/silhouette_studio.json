@@ -4,12 +4,19 @@
   "version": "5.0.556.001",
   "url": "https://d62nvtdcnsm38.cloudfront.net/files/softwares/ss/SS_V5.0.556.001_M6R.dmg",
   "vendor_url": "https://d62nvtdcnsm38.cloudfront.net/files/softwares/ss/SS_V5.0.556.001_M6R.dmg",
-  "bundleId": "com.silhouette.studio",
+  "bundleId": "com.silhouettesoftware.Silhouette-Studio",
   "homepage": "https://www.silhouetteamerica.com/silhouette-studio",
   "homebrew_cask": "silhouette-studio",
   "fileName": "SS_V5.0.556.001_M6R.dmg",
   "sha": "9b405833851e3de961beb1b5859d3ef0c5840f48e521b87ce4ba1bbefdfc9cf6",
   "category": "Design",
   "publisher": "Silhouette America, Inc.",
-  "previous_version": "5.0.556.001"
+  "previous_version": "5.0.556.001",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "9b405833851e3de961beb1b5859d3ef0c5840f48e521b87ce4ba1bbefdfc9cf6",
+    "url": "https://d62nvtdcnsm38.cloudfront.net/files/softwares/ss/SS_V5.0.556.001_M6R.dmg",
+    "appName": "Silhouette Studio.app",
+    "bundleId": "com.silhouettesoftware.Silhouette-Studio"
+  }
 }

@@ -1,22 +1,15 @@
 {
   "name": "Langdock",
   "description": "Platform for AI Adoption",
-  "version": "1.1.5",
-  "url": "https://desktop.langdock.com/global/stable/Langdock-1.1.5.dmg",
-  "vendor_url": "https://desktop.langdock.com/global/stable/Langdock-1.1.5.dmg",
+  "version": "1.1.6",
+  "url": "https://desktop.langdock.com/global/stable/Langdock-1.1.6.dmg",
+  "vendor_url": "https://desktop.langdock.com/global/stable/Langdock-1.1.6.dmg",
   "bundleId": "com.langdock.desktop",
   "homepage": "https://langdock.com/products/desktop",
   "homebrew_cask": "langdock",
-  "fileName": "Langdock-1.1.5.dmg",
-  "sha": "be75d268d9619215c65c756fb7c2c5f153e4c23b5165b44572b67ab49088d3cd",
+  "fileName": "Langdock-1.1.6.dmg",
+  "sha": "c86f8408f20a6f6e9f2cd35ca3f0da733398f14624fb29e9fcabdcc0ad907212",
   "category": "Productivity",
   "publisher": "Langdock",
-  "previous_version": "1.1.5",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "be75d268d9619215c65c756fb7c2c5f153e4c23b5165b44572b67ab49088d3cd",
-    "url": "https://desktop.langdock.com/global/stable/Langdock-1.1.5.dmg",
-    "appName": "Langdock.app",
-    "bundleId": "com.langdock.desktop"
-  }
+  "previous_version": "1.1.5"
 }

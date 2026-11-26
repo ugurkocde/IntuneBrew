@@ -1,7 +1,7 @@
 {
   "name": "MacPilot",
   "description": "Graphical user interface for the command terminal",
-  "version": "18.0.1",
+  "version": "18.1.2",
   "url": "https://www.koingosw.com/products/macpilot/download/macpilot.dmg",
   "vendor_url": "https://www.koingosw.com/products/macpilot/download/macpilot.dmg",
   "bundleId": "com.koingosw.MacPilot",
@@ -11,5 +11,5 @@
   "category": "Utilities",
   "publisher": "Koingo Software",
   "previous_version": "18.0.1",
-  "sha": "5e974b9c04be0047ebd7f8e946535bab6cd9f77cdb0789007ddf5174201cfd19"
+  "sha": "10e45e134d6530a13e09bf0be5779fb32a742c88d7c06446f5d57d5ab7448de2"
 }

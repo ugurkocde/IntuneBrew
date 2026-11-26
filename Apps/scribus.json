@@ -11,5 +11,12 @@
   "sha": "46729a3bdc0e432bd3cfbae508da401aeb9f7a0159a7a03f3fef1de631557ac6",
   "category": "Design",
   "publisher": "The Scribus Team",
-  "previous_version": "1.6.7"
+  "previous_version": "1.6.7",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "46729a3bdc0e432bd3cfbae508da401aeb9f7a0159a7a03f3fef1de631557ac6",
+    "url": "https://downloads.sourceforge.net/scribus/scribus/1.6.7/scribus-1.6.7-arm64.dmg",
+    "appName": "Scribus.app",
+    "bundleId": "net.scribus"
+  }
 }

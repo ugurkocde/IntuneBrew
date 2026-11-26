@@ -11,7 +11,7 @@
   "sha": "0fd7a18c8c6ba4fe0985b0d30c21fd7b55facb41499dff1e7cf3d58a9cf5b743",
   "category": "Developer Tools",
   "publisher": "Redis Ltd.",
-  "previous_version": "3.10.0",
+  "previous_version": "3.10.2",
   "bundleIdEvidence": {
     "inspector": "dmg-identity/1",
     "artifactSha256": "0fd7a18c8c6ba4fe0985b0d30c21fd7b55facb41499dff1e7cf3d58a9cf5b743",

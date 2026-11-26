@@ -11,5 +11,12 @@
   "sha": "d11ed9ee57487132d098e8d424bba0ccca0c67c13cee4c1a6709174b5ea729a7",
   "category": "Productivity",
   "publisher": "Slab, Inc.",
-  "previous_version": "1.8.0"
+  "previous_version": "1.8.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "d11ed9ee57487132d098e8d424bba0ccca0c67c13cee4c1a6709174b5ea729a7",
+    "url": "https://github.com/slab/desktop-releases/releases/download/v1.8.0/Slab-1.8.0-darwin-arm64.dmg",
+    "appName": "Slab.app",
+    "bundleId": "com.slab.slab"
+  }
 }
