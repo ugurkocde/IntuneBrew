@@ -1395,7 +1395,95 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/powershell@preview.json",
 ]
 
-# Custom scraper scripts to run
+@dataclass(frozen=True)
+class DirectVendorDmgApp:
+    slug: str
+    name: str
+    description: str
+    url: str
+    bundle_id: str
+    team_id: str
+    file_name: str
+    homepage: str
+    publisher: str
+    category: str
+
+
+DIRECT_VENDOR_DMG_APPS = (
+    DirectVendorDmgApp(
+        slug="magnific_desktop",
+        name="Magnific Desktop",
+        description="Desktop application for Magnific AI image upscaling and editing",
+        url="https://cdn.magnific.com/ait/magnific-desktop/latest/macos-aarch64.dmg",
+        bundle_id="com.freepik.magnific.desktop",
+        team_id="CCAL5Z426N",
+        file_name="Magnific-Desktop-arm64.dmg",
+        homepage="https://www.magnific.com/desktop",
+        publisher="Freepik Company",
+        category="Design",
+    ),
+)
+
+
+def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None):
+    """Collect a signed vendor direct-DMG app not listed in Homebrew."""
+    inspector = inspect_dmg_artifact if inspect is None else inspect
+    observation = inspector(spec.url, spec.bundle_id, team_id=spec.team_id)
+    if not isinstance(observation, SignedBundleObservation):
+        code = getattr(observation, "code", "UNVERIFIED")
+        raise ValueError(f"Direct vendor DMG verification failed for {spec.slug}: {code}")
+    version = (observation.short_version or observation.bundle_version or "").strip()
+    if not version:
+        raise ValueError(f"Direct vendor DMG missing version for {spec.slug}")
+    file_path = os.path.join(apps_folder, f"{spec.slug}.json")
+    previous = {}
+    if os.path.exists(file_path):
+        with open(file_path, "r") as f:
+            previous = json.load(f)
+    previous_version = previous.get("version") or version
+    app_data = {
+        **previous,
+        "name": spec.name,
+        "description": spec.description,
+        "version": version,
+        "previous_version": previous_version,
+        "url": spec.url,
+        "vendor_url": spec.url,
+        "sha": observation.artifact_sha256,
+        "bundleId": observation.bundle_id,
+        "homepage": spec.homepage,
+        "fileName": spec.file_name,
+        "publisher": spec.publisher,
+        "category": previous.get("category") or spec.category,
+        "custom_source": spec.slug,
+        "bundleIdEvidence": {
+            "inspector": observation.inspector,
+            "artifactSha256": observation.artifact_sha256,
+            "url": spec.url,
+            "bundleId": observation.bundle_id,
+            "teamId": observation.team_id,
+        },
+    }
+    os.makedirs(apps_folder, exist_ok=True)
+    fd, tmp_path = tempfile.mkstemp(prefix=f".{spec.slug}.", suffix=".tmp", dir=apps_folder)
+    try:
+        with os.fdopen(fd, "w") as f:
+            os.fchmod(f.fileno(), 0o644)
+            json.dump(app_data, f, indent=2)
+            f.write("\n")
+            f.flush()
+            os.fsync(f.fileno())
+        os.replace(tmp_path, file_path)
+    except Exception:
+        try:
+            os.unlink(tmp_path)
+        except OSError:
+            pass
+        raise
+    return app_data
+
+
+# Custom scraper scripts and signed direct-vendor DMG collectors to run
 custom_scrapers = [
     ".github/scripts/scrapers/fontagent.sh",
     ".github/scripts/scrapers/aircall_workspace.sh",
@@ -1404,7 +1492,8 @@ custom_scrapers = [
     # Chrome uses the enterprise PKG so Keystone is registered and self-updates work (Issue #203)
     ".github/scripts/scrapers/google_chrome.sh",
     # Wazuh is not in Homebrew; version is tracked from GitHub releases (Issue #97)
-    ".github/scripts/scrapers/wazuh_agent.sh"
+    ".github/scripts/scrapers/wazuh_agent.sh",
+    *DIRECT_VENDOR_DMG_APPS,
 ]
 
 # 30s connect, 120s between reads: a hung vendor server must not stall the nightly run
@@ -3463,8 +3552,18 @@ def main():
             collection_failures.append({"cask": get_cask_token(url), "stage": "collection"})
             print(f"Error processing PKG in DMG app {url}: {str(e)}")
 
-    # Run custom scrapers and update apps_info accordingly
+    # Run custom scrapers and direct-vendor DMG collectors and update apps_info accordingly
     for scraper in custom_scrapers:
+        if isinstance(scraper, DirectVendorDmgApp):
+            try:
+                app_data = collect_direct_vendor_dmg(scraper, apps_folder=apps_folder)
+                supported_apps.append(app_data["name"])
+                apps_info.append(app_data)
+                print(f"Saved direct vendor DMG app {app_data['name']} ({app_data['version']})")
+            except Exception as e:
+                collection_failures.append({"file": f"{scraper.slug}.json", "stage": "direct_vendor_dmg"})
+                print(f"Error collecting direct vendor DMG {scraper.slug}: {str(e)}")
+            continue
         try:
             subprocess.run([scraper], check=True)
             # Get the app name from the JSON file created by the scraper
@@ -3480,6 +3579,8 @@ def main():
     # After custom scrapers run, calculate hashes for direct downloads
     print("\n📊 Checking custom scraper outputs for missing hashes...")
     for scraper in custom_scrapers:
+        if isinstance(scraper, DirectVendorDmgApp):
+            continue
         json_file = os.path.join(apps_folder, os.path.basename(scraper).replace('.sh', '.json'))
         if os.path.exists(json_file):
             with open(json_file, 'r') as f:
