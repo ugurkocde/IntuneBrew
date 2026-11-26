@@ -1428,13 +1428,26 @@ DIRECT_VENDOR_DMG_APPS = (
 def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None):
     """Collect a signed vendor direct-DMG app not listed in Homebrew."""
     inspector = inspect_dmg_artifact if inspect is None else inspect
-    observation = inspector(spec.url, spec.bundle_id, team_id=spec.team_id)
+    try:
+        if inspect is None:
+            with _stable_budget(WARP_DOWNLOAD_DEADLINE):
+                observation = inspector(
+                    spec.url,
+                    spec.bundle_id,
+                    team_id=spec.team_id,
+                    _cleanup_deadline=lambda: signal.setitimer(signal.ITIMER_REAL, 0),
+                )
+        else:
+            with _stable_budget(WARP_DOWNLOAD_DEADLINE):
+                observation = inspector(spec.url, spec.bundle_id, team_id=spec.team_id)
+    except (_StableReleaseDeadline, CatalogVersionHold) as exc:
+        raise ValueError(f"Direct vendor DMG inspection aborted for {spec.slug}: {exc}") from None
     if not isinstance(observation, SignedBundleObservation):
         code = getattr(observation, "code", "UNVERIFIED")
         raise ValueError(f"Direct vendor DMG verification failed for {spec.slug}: {code}")
-    version = (observation.short_version or observation.bundle_version or "").strip()
-    if not version:
-        raise ValueError(f"Direct vendor DMG missing version for {spec.slug}")
+    version = observation.short_version or observation.bundle_version
+    if not isinstance(version, str) or not version or version != version.strip():
+        raise ValueError(f"Direct vendor DMG invalid version for {spec.slug}")
     file_path = os.path.join(apps_folder, f"{spec.slug}.json")
     previous = {}
     if os.path.exists(file_path):

@@ -77,20 +77,32 @@ class MagnificDesktopCollectorTests(unittest.TestCase):
                 )
             self.assertEqual(json.loads(target.read_text()), original)
 
-    def test_missing_version_refused(self):
+    def test_missing_or_whitespace_padded_version_refused(self):
         with tempfile.TemporaryDirectory() as root:
-            def fake_empty_version(url, bundle_id, *, team_id=None):
-                return collect.SignedBundleObservation(
-                    artifact_sha256="a" * 64,
-                    bundle_id=bundle_id,
-                    short_version="",
-                    bundle_version="",
-                    team_id=team_id,
-                )
+            for bad_version in ("", " ", "1.5.7 ", " 1.5.7"):
+                def fake_bad_version(url, bundle_id, *, team_id=None, _v=bad_version):
+                    return collect.SignedBundleObservation(
+                        artifact_sha256="a" * 64,
+                        bundle_id=bundle_id,
+                        short_version=_v,
+                        bundle_version=_v,
+                        team_id=team_id,
+                    )
 
-            with self.assertRaisesRegex(ValueError, "missing version"):
+                with self.assertRaisesRegex(ValueError, "invalid version"):
+                    collect.collect_direct_vendor_dmg(
+                        self.spec, apps_folder=root, inspect=fake_bad_version
+                    )
+            self.assertFalse((Path(root) / "magnific_desktop.json").exists())
+
+    def test_deadline_exceeded_converted_to_value_error(self):
+        with tempfile.TemporaryDirectory() as root:
+            def fake_slow(url, bundle_id, *, team_id=None):
+                raise collect._StableReleaseDeadline()
+
+            with self.assertRaisesRegex(ValueError, "aborted"):
                 collect.collect_direct_vendor_dmg(
-                    self.spec, apps_folder=root, inspect=fake_empty_version
+                    self.spec, apps_folder=root, inspect=fake_slow
                 )
             self.assertFalse((Path(root) / "magnific_desktop.json").exists())
 
