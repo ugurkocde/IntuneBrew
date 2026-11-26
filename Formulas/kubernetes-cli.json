@@ -1,10 +1,11 @@
 {
   "name": "kubernetes-cli",
   "description": "Kubernetes command-line interface",
-  "version": "1.37.2",
+  "version": "1.37.3",
   "homepage": "https://kubernetes.io/docs/reference/kubectl/",
-  "url": "https://intunebrew.blob.core.windows.net/pkg/kubernetes-cli_1.37.2_arm64.pkg",
-  "fileName": "kubernetes-cli_1.37.2_arm64.pkg",
+  "url": "https://intunebrew.blob.core.windows.net/pkg/kubernetes-cli_1.37.3_arm64.pkg",
+  "fileName": "kubernetes-cli_1.37.3_arm64.pkg",
+  "sha": "5346593a22a579a07e9f05ea1d16bc41ea4e91d62d1bec0f655aee7a053ab32f",
   "bundledDependencies": [],
   "binaryPath": "/usr/local/bin/kubernetes-cli"
 }
