@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-26T00:23:02.827Z",
+  "last_full_scan": "2026-11-26T01:39:29.162Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -6815,8 +6815,8 @@
       "name": "Screenflick"
     },
     "screenflow": {
-      "last_checked": "2026-01-17T08:37:42.170Z",
-      "bundle_id": "net.telestream.screenflow.globallibrary",
+      "last_checked": "2026-11-26T01:39:29.159Z",
+      "bundle_id": "net.telestream.screenflow10",
       "status": "verified",
       "source": "file",
       "name": "ScreenFlow"
@@ -6892,8 +6892,8 @@
       "name": "Send to Kindle"
     },
     "sensei": {
-      "last_checked": "2026-01-17T08:37:42.171Z",
-      "bundle_id": "org.cindori.SenseiTool",
+      "last_checked": "2026-11-26T01:39:29.159Z",
+      "bundle_id": "org.cindori.Sensei",
       "status": "verified",
       "source": "file",
       "name": "Sensei"
@@ -6962,8 +6962,8 @@
       "name": "Shifty"
     },
     "shotcut": {
-      "last_checked": "2026-01-17T08:37:42.172Z",
-      "bundle_id": "com.meltytech.Shotcut",
+      "last_checked": "2026-11-26T01:39:29.159Z",
+      "bundle_id": "com.Meltytech.Shotcut",
       "status": "verified",
       "source": "file",
       "name": "Shotcut"
@@ -6997,8 +6997,8 @@
       "name": "SideNotes"
     },
     "sigmaos": {
-      "last_checked": "2026-01-17T08:37:42.173Z",
-      "bundle_id": "com.nicola.sigmaos",
+      "last_checked": "2026-11-26T01:39:29.159Z",
+      "bundle_id": "com.sigmaos.sigmaos.macos",
       "status": "verified",
       "source": "file",
       "name": "SigmaOS"
@@ -7018,8 +7018,8 @@
       "name": "SilentKnight"
     },
     "silhouette_studio": {
-      "last_checked": "2026-01-17T08:37:42.173Z",
-      "bundle_id": "com.silhouette.studio",
+      "last_checked": "2026-11-26T01:39:29.159Z",
+      "bundle_id": "com.silhouettesoftware.Silhouette-Studio",
       "status": "verified",
       "source": "file",
       "name": "Silhouette Studio"
