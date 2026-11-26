@@ -21,6 +21,8 @@ import hashlib
 import tempfile
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import urllib.error
+import urllib.request
 from urllib.parse import urlparse, unquote, parse_qs, urlencode, urljoin
 from request_sources import source_token, FORMULA_RECIPES, FORMULA_NAMES, FORMULA_PUBLISHERS, CASK_NAMES
 from version_relation import (BundleObservation, InspectionRefusal, PriorEntry, ReconcileInput,
@@ -1400,7 +1402,8 @@ class DirectVendorDmgApp:
     slug: str
     name: str
     description: str
-    url: str
+    manifest_url: str
+    url_template: str
     bundle_id: str
     team_id: str
     file_name: str
@@ -1414,7 +1417,8 @@ DIRECT_VENDOR_DMG_APPS = (
         slug="magnific_desktop",
         name="Magnific Desktop",
         description="Desktop application for Magnific AI image upscaling and editing",
-        url="https://cdn.magnific.com/ait/magnific-desktop/latest/macos-aarch64.dmg",
+        manifest_url="https://cdn.magnific.com/ait/magnific-desktop/latest.json",
+        url_template="https://cdn.magnific.com/ait/magnific-desktop/{version}/macos-aarch64.dmg",
         bundle_id="com.freepik.magnific.desktop",
         team_id="CCAL5Z426N",
         file_name="Magnific-Desktop-arm64.dmg",
@@ -1425,22 +1429,86 @@ DIRECT_VENDOR_DMG_APPS = (
 )
 
 
-def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None):
-    """Collect a signed vendor direct-DMG app not listed in Homebrew."""
+DIRECT_VENDOR_MANIFEST_MAX_BYTES = 256 * 1024
+
+
+class _NoRedirectHandler(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
+def _fetch_direct_vendor_manifest(url):
+    parsed = urlparse(url)
+    if parsed.scheme not in {"https", "http"}:
+        raise ValueError(f"Direct vendor manifest unsupported scheme: {parsed.scheme!r}")
+    opener = urllib.request.build_opener(_NoRedirectHandler())
+    request = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "Accept-Encoding": "identity",
+            "User-Agent": "IntuneBrew-Collector",
+        },
+    )
+    try:
+        with opener.open(request, timeout=20) as response:
+            status = getattr(response, "status", response.getcode())
+            if status != 200:
+                raise ValueError(f"Direct vendor manifest returned HTTP {status}")
+            raw = response.read(DIRECT_VENDOR_MANIFEST_MAX_BYTES + 1)
+    except urllib.error.HTTPError as exc:
+        code = exc.code
+        exc.close()
+        raise ValueError(f"Direct vendor manifest returned HTTP {code}") from None
+    except urllib.error.URLError as exc:
+        raise ValueError(f"Direct vendor manifest fetch failed: {exc.reason}") from None
+    if len(raw) > DIRECT_VENDOR_MANIFEST_MAX_BYTES:
+        raise ValueError(
+            f"Direct vendor manifest exceeded {DIRECT_VENDOR_MANIFEST_MAX_BYTES} bytes"
+        )
+    def _reject_constant(token):
+        raise ValueError(f"Nonstandard JSON constant {token!r}")
+
+    try:
+        payload = json.loads(raw.decode("utf-8"), parse_constant=_reject_constant)
+    except (UnicodeDecodeError, json.JSONDecodeError, RecursionError, ValueError) as exc:
+        raise ValueError(f"Direct vendor manifest invalid JSON: {exc}") from None
+    if not isinstance(payload, dict):
+        raise ValueError("Direct vendor manifest must be a JSON object")
+    return payload
+
+
+def _resolve_direct_vendor_versioned_url(spec, *, fetch_manifest=None):
+    loader = _fetch_direct_vendor_manifest if fetch_manifest is None else fetch_manifest
+    manifest = loader(spec.manifest_url)
+    declared_version = manifest.get("version") if isinstance(manifest, dict) else None
+    if (
+        not isinstance(declared_version, str)
+        or not re.fullmatch(r"[0-9A-Za-z][0-9A-Za-z._-]{0,63}", declared_version)
+        or ".." in declared_version
+    ):
+        raise ValueError(f"Direct vendor manifest invalid version for {spec.slug}")
+    return declared_version, spec.url_template.format(version=declared_version)
+
+
+def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None, fetch_manifest=None):
+    """Collect a signed vendor versioned direct-DMG app not listed in Homebrew."""
     inspector = inspect_dmg_artifact if inspect is None else inspect
     try:
-        if inspect is None:
-            with _stable_budget(WARP_DOWNLOAD_DEADLINE):
+        with _stable_budget(WARP_DOWNLOAD_DEADLINE):
+            declared_version, download_url = _resolve_direct_vendor_versioned_url(
+                spec, fetch_manifest=fetch_manifest
+            )
+            if inspect is None:
                 observation = inspector(
-                    spec.url,
+                    download_url,
                     spec.bundle_id,
                     team_id=spec.team_id,
                     _cleanup_deadline=lambda: signal.setitimer(signal.ITIMER_REAL, 0),
                 )
-        else:
-            with _stable_budget(WARP_DOWNLOAD_DEADLINE):
-                observation = inspector(spec.url, spec.bundle_id, team_id=spec.team_id)
-    except (_StableReleaseDeadline, CatalogVersionHold) as exc:
+            else:
+                observation = inspector(download_url, spec.bundle_id, team_id=spec.team_id)
+    except (_StableReleaseDeadline, TimeoutError, CatalogVersionHold) as exc:
         raise ValueError(f"Direct vendor DMG inspection aborted for {spec.slug}: {exc}") from None
     if not isinstance(observation, SignedBundleObservation):
         code = getattr(observation, "code", "UNVERIFIED")
@@ -1448,6 +1516,10 @@ def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None):
     version = observation.short_version or observation.bundle_version
     if not isinstance(version, str) or not version or version != version.strip():
         raise ValueError(f"Direct vendor DMG invalid version for {spec.slug}")
+    if version != declared_version:
+        raise ValueError(
+            f"Direct vendor DMG version mismatch for {spec.slug}: manifest={declared_version!r} signed={version!r}"
+        )
     file_path = os.path.join(apps_folder, f"{spec.slug}.json")
     previous = {}
     if os.path.exists(file_path):
@@ -1460,8 +1532,8 @@ def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None):
         "description": spec.description,
         "version": version,
         "previous_version": previous_version,
-        "url": spec.url,
-        "vendor_url": spec.url,
+        "url": download_url,
+        "vendor_url": download_url,
         "sha": observation.artifact_sha256,
         "bundleId": observation.bundle_id,
         "homepage": spec.homepage,
@@ -1472,7 +1544,7 @@ def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None):
         "bundleIdEvidence": {
             "inspector": observation.inspector,
             "artifactSha256": observation.artifact_sha256,
-            "url": spec.url,
+            "url": download_url,
             "bundleId": observation.bundle_id,
             "teamId": observation.team_id,
         },
