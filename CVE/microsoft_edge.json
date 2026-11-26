@@ -1,7 +1,7 @@
 {
   "app_name": "Microsoft Edge",
   "app_key": "microsoft_edge",
-  "last_updated": "2026-11-25",
+  "last_updated": "2026-11-26",
   "total_cves": 1069,
   "summary": {
     "critical": 18,
