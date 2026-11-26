@@ -126,6 +126,19 @@ class MagnificDesktopCollectorTests(unittest.TestCase):
                         inspect=fake_bad_version,
                         fetch_manifest=lambda _url: {"version": "1.5.7"},
                     )
+            with self.assertRaisesRegex(ValueError, "invalid version"):
+                collect.collect_direct_vendor_dmg(
+                    self.spec,
+                    apps_folder=root,
+                    inspect=lambda url, bundle_id, *, team_id=None: collect.SignedBundleObservation(
+                        artifact_sha256="a" * 64,
+                        bundle_id=bundle_id,
+                        short_version="",
+                        bundle_version="1.5.7",
+                        team_id=team_id,
+                    ),
+                    fetch_manifest=lambda _url: {"version": "1.5.7"},
+                )
             with self.assertRaisesRegex(ValueError, "version mismatch"):
                 collect.collect_direct_vendor_dmg(
                     self.spec,
@@ -267,6 +280,56 @@ class MagnificDesktopCollectorTests(unittest.TestCase):
                 collect._fetch_direct_vendor_manifest(f"http://127.0.0.1:{port}/nan")
             with self.assertRaisesRegex(ValueError, "invalid JSON"):
                 collect._fetch_direct_vendor_manifest(f"http://127.0.0.1:{port}/deep")
+            self.assertLess(redirect_body_sent["bytes"], 4 * 1024 * 1024)
+        finally:
+            server.shutdown()
+            server.server_close()
+
+    def test_stream_direct_vendor_dmg_rejects_redirect_without_draining(self):
+        from http.server import BaseHTTPRequestHandler, HTTPServer
+        import io
+        import threading
+
+        redirect_body_sent = {"bytes": 0}
+
+        class Handler(BaseHTTPRequestHandler):
+            def log_message(self, format, *args):
+                return
+
+            def do_GET(self):
+                if self.path == "/redirect.dmg":
+                    self.send_response(302)
+                    self.send_header("Location", "/ok.dmg")
+                    self.send_header("Content-Length", str(4 * 1024 * 1024))
+                    self.end_headers()
+                    chunk = b"r" * 65536
+                    try:
+                        for _ in range(64):
+                            self.wfile.write(chunk)
+                            self.wfile.flush()
+                            redirect_body_sent["bytes"] += len(chunk)
+                    except OSError:
+                        pass
+                else:
+                    body = b"fake-signed-dmg-bytes"
+                    self.send_response(200)
+                    self.send_header("Content-Type", "application/x-apple-diskimage")
+                    self.send_header("Content-Length", str(len(body)))
+                    self.end_headers()
+                    self.wfile.write(body)
+
+        server = HTTPServer(("127.0.0.1", 0), Handler)
+        port = server.server_address[1]
+        thread = threading.Thread(target=server.serve_forever, daemon=True)
+        thread.start()
+        try:
+            buf = io.BytesIO()
+            collect._stream_direct_vendor_dmg(f"http://127.0.0.1:{port}/ok.dmg", buf)
+            self.assertEqual(buf.getvalue(), b"fake-signed-dmg-bytes")
+            with self.assertRaises(collect.CatalogVersionHold):
+                collect._stream_direct_vendor_dmg(
+                    f"http://127.0.0.1:{port}/redirect.dmg", io.BytesIO()
+                )
             self.assertLess(redirect_body_sent["bytes"], 4 * 1024 * 1024)
         finally:
             server.shutdown()

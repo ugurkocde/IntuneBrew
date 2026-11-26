@@ -1491,6 +1491,45 @@ def _resolve_direct_vendor_versioned_url(spec, *, fetch_manifest=None):
     return declared_version, spec.url_template.format(version=declared_version)
 
 
+def _stream_direct_vendor_dmg(url, target):
+    """Stream one exact immutable DMG URL via the Requests adapter without draining redirect bodies."""
+    with requests.Session() as session:
+        request = session.prepare_request(
+            requests.Request("GET", url, headers={"User-Agent": DOWNLOAD_USER_AGENTS[0]})
+        )
+        settings = session.merge_environment_settings(request.url, {}, True, None, None)
+        response = session.get_adapter(request.url).send(
+            request, timeout=DOWNLOAD_TIMEOUT, **settings
+        )
+        try:
+            kind = response.headers.get("content-type", "").split(";")[0].strip().lower()
+            if (
+                response.status_code != 200
+                or response.url != url
+                or kind not in {"application/octet-stream", "application/x-apple-diskimage"}
+            ):
+                raise CatalogVersionHold("STABLE_DOWNLOAD_REFUSED")
+            length = response.headers.get("content-length")
+            length = int(length) if length is not None else None
+            if length is not None and not 0 < length <= WARP_MAX_DOWNLOAD_BYTES:
+                raise CatalogVersionHold("STABLE_DOWNLOAD_SIZE")
+            size = 0
+            for chunk in response.iter_content(chunk_size=1024 * 1024):
+                if not chunk:
+                    continue
+                if size == 0 and chunk[:64].lstrip().lower().startswith(HTML_PREFIXES):
+                    raise CatalogVersionHold("STABLE_DOWNLOAD_REFUSED")
+                size += len(chunk)
+                if size > WARP_MAX_DOWNLOAD_BYTES:
+                    raise CatalogVersionHold("STABLE_DOWNLOAD_SIZE")
+                target.write(chunk)
+            if size == 0 or (length is not None and size != length):
+                raise CatalogVersionHold("STABLE_DOWNLOAD_SIZE")
+            target.flush()
+        finally:
+            response.close()
+
+
 def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None, fetch_manifest=None):
     """Collect a signed vendor versioned direct-DMG app not listed in Homebrew."""
     inspector = inspect_dmg_artifact if inspect is None else inspect
@@ -1505,6 +1544,7 @@ def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None, fetch_m
                     spec.bundle_id,
                     team_id=spec.team_id,
                     _cleanup_deadline=lambda: signal.setitimer(signal.ITIMER_REAL, 0),
+                    _stream_dmg=_stream_direct_vendor_dmg,
                 )
             else:
                 observation = inspector(download_url, spec.bundle_id, team_id=spec.team_id)
@@ -1513,7 +1553,7 @@ def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None, fetch_m
     if not isinstance(observation, SignedBundleObservation):
         code = getattr(observation, "code", "UNVERIFIED")
         raise ValueError(f"Direct vendor DMG verification failed for {spec.slug}: {code}")
-    version = observation.short_version or observation.bundle_version
+    version = observation.short_version
     if not isinstance(version, str) or not version or version != version.strip():
         raise ValueError(f"Direct vendor DMG invalid version for {spec.slug}")
     if version != declared_version:
@@ -1872,7 +1912,8 @@ def _mounted_bundle_metadata(mount_point, bundle_id, team_id=None, *, app_name=N
 
 
 def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None,
-                         _cleanup_deadline=None, app_name=None, _download_charge=None):
+                         _cleanup_deadline=None, app_name=None, _download_charge=None,
+                         _stream_dmg=None):
     """Hash the one downloaded file before mounting; return bounded evidence only."""
     if app_name is not None and team_id is not None:
         return InspectionRefusal('SIGNATURE_IDENTITY_INVALID', True)
@@ -1883,7 +1924,7 @@ def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None,
         dmg_path = os.path.join(work, "app.dmg")
         with open(dmg_path, "wb") as dmg:
             if team_id is not None:
-                _stream_signed_dmg(url, dmg)
+                (_stream_signed_dmg if _stream_dmg is None else _stream_dmg)(url, dmg)
             else:
                 for user_agent in DOWNLOAD_USER_AGENTS:
                     try:
