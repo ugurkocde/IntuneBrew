@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-27T03:04:33.038Z",
+  "last_full_scan": "2026-11-27T05:25:32.454Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -8284,8 +8284,8 @@
       "name": "VNote"
     },
     "vox": {
-      "last_checked": "2026-01-17T08:38:03.492Z",
-      "bundle_id": "com.coppertino.VoxHelper",
+      "last_checked": "2026-11-27T05:25:32.453Z",
+      "bundle_id": "com.coppertino.Vox",
       "status": "verified",
       "source": "file",
       "name": "VOX"
@@ -8354,8 +8354,8 @@
       "name": "Wavebox"
     },
     "wealthfolio": {
-      "last_checked": "2026-01-17T08:38:03.493Z",
-      "bundle_id": "app.wealthfolio.desktop",
+      "last_checked": "2026-11-27T05:25:32.453Z",
+      "bundle_id": "com.teymz.wealthfolio",
       "status": "verified",
       "source": "file",
       "name": "Wealthfolio"
@@ -8903,14 +8903,10 @@
       "name": "cmux"
     },
     "winzip": {
-      "last_checked": "2026-03-20T22:55:33.946Z",
-      "bundle_id": "com.winzip.wzmmacsub1y",
-      "previous_bundle_id": null,
-      "status": "updated",
-      "source": "mac_app_store",
-      "methods_tried": [
-        "mac_app_store"
-      ],
+      "last_checked": "2026-11-27T05:25:32.453Z",
+      "bundle_id": "com.winzip.WinZip-Mac",
+      "status": "verified",
+      "source": "file",
       "name": "WinZip"
     },
     "battery": {
@@ -9560,6 +9556,13 @@
       "status": "verified",
       "source": "file",
       "name": "Unsloth Desktop"
+    },
+    "magnific_desktop": {
+      "last_checked": "2026-11-27T05:25:32.444Z",
+      "bundle_id": "com.freepik.magnific.desktop",
+      "status": "verified",
+      "source": "file",
+      "name": "Magnific Desktop"
     }
   }
 }
