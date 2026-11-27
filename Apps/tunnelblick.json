@@ -11,5 +11,12 @@
   "sha": "8bb0f38b44c69a6c0ab4a3959d6091e5d3682af4019e99c4b79233fdc4ea7cdc",
   "category": "Security",
   "publisher": "The Tunnelblick Project",
-  "previous_version": "10.0.3 (build 6610)"
+  "previous_version": "10.0.3 (build 6610)",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "8bb0f38b44c69a6c0ab4a3959d6091e5d3682af4019e99c4b79233fdc4ea7cdc",
+    "url": "https://tunnelblick.net/iprelease/Tunnelblick_10.0.3_build_6610.dmg",
+    "appName": "Tunnelblick.app",
+    "bundleId": "net.tunnelblick.tunnelblick"
+  }
 }

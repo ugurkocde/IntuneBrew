@@ -11,5 +11,12 @@
   "sha": "7251fcfa50a9922f6d36c159400d3608e724a31e9bbb37660ceff1f0da353b3d",
   "category": "Productivity",
   "publisher": "Ergonis Software",
-  "previous_version": "10.3"
+  "previous_version": "10.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "7251fcfa50a9922f6d36c159400d3608e724a31e9bbb37660ceff1f0da353b3d",
+    "url": "https://storage.ergonis.com/apps/production/typinator/archive/Typinator_103.dmg",
+    "appName": "Typinator.app",
+    "bundleId": "com.macility.typinator2"
+  }
 }

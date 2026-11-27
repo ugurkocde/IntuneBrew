@@ -11,5 +11,12 @@
   "sha": "fb0d38802ab42bc54c8ac4e7746f3cc8ebbe0208dba9d36bfcefed744f3ee102",
   "category": "Productivity",
   "publisher": "Taskade, Inc.",
-  "previous_version": "4.7.3"
+  "previous_version": "4.7.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "fb0d38802ab42bc54c8ac4e7746f3cc8ebbe0208dba9d36bfcefed744f3ee102",
+    "url": "https://apps.taskade.com/updates/Taskade-4.7.3-universal.dmg",
+    "appName": "Taskade.app",
+    "bundleId": "com.taskade"
+  }
 }

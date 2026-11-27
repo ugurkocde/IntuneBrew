@@ -11,5 +11,12 @@
   "sha": "c4bf220e40b48170d272e586514535ba56f77365ec0b59addb78ea4a020c1b1e",
   "category": "Productivity",
   "publisher": "Smile Software, Inc.",
-  "previous_version": "8.6"
+  "previous_version": "8.6",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "c4bf220e40b48170d272e586514535ba56f77365ec0b59addb78ea4a020c1b1e",
+    "url": "https://cdn.textexpander.com/electron-mac/908.6.999/TextExpander_8.6.dmg",
+    "appName": "TextExpander.app",
+    "bundleId": "com.smileonmymac.textexpander"
+  }
 }

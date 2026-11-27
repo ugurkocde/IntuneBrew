@@ -11,5 +11,12 @@
   "category": "Productivity",
   "publisher": "TabTab",
   "previous_version": "2.2.7",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "4f3d83e967dfae342678c349ed2f876a51899e86682043c1abdef5583332e22d",
+    "url": "https://github.com/riccqi/TabTabApp/releases/download/prod/tabtab.dmg",
+    "appName": "TabTab.app",
+    "bundleId": "riccqi.TabTab"
+  },
   "sha": "4f3d83e967dfae342678c349ed2f876a51899e86682043c1abdef5583332e22d"
 }

@@ -11,5 +11,12 @@
   "sha": "b9ff07e5216a1d3f4332039ed931c2aaf3d70b37088341af774b0707e1ac4d16",
   "category": "Design",
   "publisher": "Typeface",
-  "previous_version": "4.5.4"
+  "previous_version": "4.5.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b9ff07e5216a1d3f4332039ed931c2aaf3d70b37088341af774b0707e1ac4d16",
+    "url": "https://dcdn.typefaceapp.com/Typeface-4.5.4-5320/Typeface-4.5.4-5320.dmg",
+    "appName": "Typeface.app",
+    "bundleId": "com.criminalbird.typeface.standalone"
+  }
 }

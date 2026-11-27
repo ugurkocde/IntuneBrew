@@ -11,5 +11,12 @@
   "sha": "60d4379bf01e62e1c65886c4edc9d554254bd9a0b85c5523e937651b557ea622",
   "category": "Developer Tools",
   "publisher": "Unity Technologies",
-  "previous_version": "4.0.2"
+  "previous_version": "4.0.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "60d4379bf01e62e1c65886c4edc9d554254bd9a0b85c5523e937651b557ea622",
+    "url": "https://public-cdn.cloud.unity3d.com/hub/prod/4.0.2/UnityHubSetup-4.0.2-arm64.dmg",
+    "appName": "Unity Hub.app",
+    "bundleId": "com.unity3d.unityhub"
+  }
 }

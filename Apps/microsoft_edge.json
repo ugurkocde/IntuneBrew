@@ -1,23 +1,16 @@
 {
   "name": "Microsoft Edge",
   "description": "Multi-platform web browser",
-  "version": "158.0.4370.33",
-  "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/775da8b5-3f9c-4856-a1c4-f4a02233035f/MicrosoftEdge-158.0.4370.33.dmg",
-  "vendor_url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/775da8b5-3f9c-4856-a1c4-f4a02233035f/MicrosoftEdge-158.0.4370.33.dmg",
+  "version": "158.0.4370.45",
+  "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/bdd51869-d793-45e2-8a16-0b1d75630956/MicrosoftEdge-158.0.4370.45.dmg",
+  "vendor_url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/bdd51869-d793-45e2-8a16-0b1d75630956/MicrosoftEdge-158.0.4370.45.dmg",
   "bundleId": "com.microsoft.edgemac",
   "homepage": "https://www.microsoft.com/en-us/edge?form=",
   "homebrew_cask": "microsoft-edge",
-  "fileName": "MicrosoftEdge-158.0.4370.33.dmg",
-  "sha": "33d92b7098531232ca8c4707ac7e5b0d57246947dbec5b7e8541717f532456e8",
+  "fileName": "MicrosoftEdge-158.0.4370.45.dmg",
+  "sha": "beb075bfbbc0ad18c366255a536311283cca28ee9d016b75c4e0ed480021690a",
   "changelog": "https://learn.microsoft.com/en-us/deployedge/microsoft-edge-relnote-stable-channel",
   "category": "Browsers",
   "publisher": "Microsoft Corporation",
-  "previous_version": "158.0.4370.33",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "33d92b7098531232ca8c4707ac7e5b0d57246947dbec5b7e8541717f532456e8",
-    "url": "https://msedge.sf.dl.delivery.mp.microsoft.com/filestreamingservice/files/775da8b5-3f9c-4856-a1c4-f4a02233035f/MicrosoftEdge-158.0.4370.33.dmg",
-    "appName": "Microsoft Edge.app",
-    "bundleId": "com.microsoft.edgemac"
-  }
+  "previous_version": "158.0.4370.33"
 }

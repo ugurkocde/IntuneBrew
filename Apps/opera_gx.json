@@ -2,21 +2,14 @@
   "name": "Opera GX",
   "description": "Alternate version of the Opera web browser to complement gaming",
   "version": "140.0",
-  "url": "https://get.geo.opera.com/pub/opera_gx/140.0.6074.48/mac/Opera_GX_140.0.6074.48_Setup.dmg",
-  "vendor_url": "https://get.geo.opera.com/pub/opera_gx/140.0.6074.48/mac/Opera_GX_140.0.6074.48_Setup.dmg",
+  "url": "https://get.geo.opera.com/pub/opera_gx/140.0.6074.73/mac/Opera_GX_140.0.6074.73_Setup.dmg",
+  "vendor_url": "https://get.geo.opera.com/pub/opera_gx/140.0.6074.73/mac/Opera_GX_140.0.6074.73_Setup.dmg",
   "bundleId": "com.operasoftware.OperaGX",
   "homepage": "https://www.opera.com/gx",
   "homebrew_cask": "opera-gx",
-  "fileName": "Opera_GX_140.0.6074.48_Setup.dmg",
-  "sha": "c9f0884df22a9023388fe313195457ed4d13579ddb28862b21b2934f2485834f",
+  "fileName": "Opera_GX_140.0.6074.73_Setup.dmg",
+  "sha": "62c03d14803521677b430cf6356be8f9dbc2b6476d59e44984024f29504c1c1a",
   "category": "Browsers",
   "publisher": "Opera Software AS",
-  "previous_version": "140.0",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "c9f0884df22a9023388fe313195457ed4d13579ddb28862b21b2934f2485834f",
-    "url": "https://get.geo.opera.com/pub/opera_gx/140.0.6074.48/mac/Opera_GX_140.0.6074.48_Setup.dmg",
-    "appName": "Opera GX.app",
-    "bundleId": "com.operasoftware.OperaGX"
-  }
+  "previous_version": "140.0"
 }

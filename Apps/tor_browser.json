@@ -11,5 +11,12 @@
   "sha": "9655e0a29702e60653cbcf5c547858b0fbff95535471ef8d7aa94e6013619e05",
   "category": "Browsers",
   "publisher": "The Tor Project",
-  "previous_version": "16.0.3"
+  "previous_version": "16.0.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "9655e0a29702e60653cbcf5c547858b0fbff95535471ef8d7aa94e6013619e05",
+    "url": "https://www.torproject.org/dist/torbrowser/16.0.3/tor-browser-macos-16.0.3.dmg",
+    "appName": "Tor Browser.app",
+    "bundleId": "org.torproject.torbrowser"
+  }
 }

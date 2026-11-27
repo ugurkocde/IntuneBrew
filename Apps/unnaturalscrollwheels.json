@@ -11,5 +11,12 @@
   "sha": "b75c3e5ebb13f94053e593d33f4e1019327d7cb60342214beae65aab7843eb88",
   "category": "Utilities",
   "publisher": "ther0n",
-  "previous_version": "1.4.2"
+  "previous_version": "1.4.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b75c3e5ebb13f94053e593d33f4e1019327d7cb60342214beae65aab7843eb88",
+    "url": "https://github.com/ther0n/UnnaturalScrollWheels/releases/download/1.4.2/UnnaturalScrollWheels-1.4.2.dmg",
+    "appName": "UnnaturalScrollWheels.app",
+    "bundleId": "com.theron.UnnaturalScrollWheels"
+  }
 }

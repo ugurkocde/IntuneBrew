@@ -12,5 +12,12 @@
   "changelog": "https://github.com/transmission/transmission/releases/",
   "category": "Utilities",
   "publisher": "The Transmission Project",
-  "previous_version": "4.1.4"
+  "previous_version": "4.1.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "495c5d21d515c8deb859b0db6692fd5606644a1613c2cac87c1d3e7672755a59",
+    "url": "https://github.com/transmission/transmission/releases/download/4.1.4/Transmission-4.1.4.dmg",
+    "appName": "Transmission.app",
+    "bundleId": "org.m0k.transmission"
+  }
 }

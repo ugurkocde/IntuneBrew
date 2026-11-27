@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "48aa36ad5c435edf762cdcf2240b50134f98c1596d04287f85a52a26c7584d2a",
   "changelog": "https://www.devontechnologies.com/support/download",
-  "previous_version": "5.0.2",
+  "previous_version": "6.0",
   "qa_info": {
     "qa_timestamp": "2025-05-12T14:24:07Z",
     "qa_result": "Installation successful and verified",

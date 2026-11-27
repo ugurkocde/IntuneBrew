@@ -11,5 +11,12 @@
   "sha": "6f376ef9a61f06470650d24c2e6478947a9a5dc4e30fe641ae266b06bd892451",
   "category": "Productivity",
   "publisher": "Typora",
-  "previous_version": "1.14.15"
+  "previous_version": "1.14.15",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "6f376ef9a61f06470650d24c2e6478947a9a5dc4e30fe641ae266b06bd892451",
+    "url": "https://downloads.typora.io/mac/Typora-1.14.15.dmg",
+    "appName": "Typora.app",
+    "bundleId": "abnerworks.Typora"
+  }
 }
