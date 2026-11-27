@@ -1,6 +1,6 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-26T01:38:27.058468Z",
+  "lastPublishedAt": "2026-11-27T00:14:23.734287Z",
   "lastFullSyncAt": "2026-11-26T01:38:27.058468Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
@@ -150,8 +150,8 @@
       "stage": "collection"
     }
   ],
-  "appCount": 1164,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/45728496144",
+  "appCount": 1165,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/45913541628",
   "identityBackfill": {
     "lastAttempted": "tableplus"
   }

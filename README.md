@@ -20,7 +20,7 @@
     </a>
                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1164-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1165-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -732,7 +732,7 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 | zed | 1.29.3 | 1.30.2 |
 | zulip | 5.14.2 | 5.14.3 |
 
-36 app updates could not be published. See [catalog sync status](catalog-sync.json).
+31 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 

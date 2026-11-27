@@ -1,0 +1,19 @@
+{
+  "name": "Unsloth Desktop",
+  "description": "Desktop application for Unsloth Studio",
+  "version": "0.1.925-beta",
+  "url": "https://github.com/unslothai/unsloth/releases/download/v0.1.925-beta/Unsloth-Desktop-MacOS.dmg",
+  "vendor_url": "https://github.com/unslothai/unsloth/releases/download/v0.1.925-beta/Unsloth-Desktop-MacOS.dmg",
+  "bundleId": "ai.unsloth.studio",
+  "homepage": "https://unsloth.ai/",
+  "homebrew_cask": "unsloth",
+  "fileName": "Unsloth-Desktop-MacOS.dmg",
+  "sha": "b60386eef4b9d230cea86be5f3c4428111b9de6f6a71da26cd0d8114aedad692",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b60386eef4b9d230cea86be5f3c4428111b9de6f6a71da26cd0d8114aedad692",
+    "url": "https://github.com/unslothai/unsloth/releases/download/v0.1.925-beta/Unsloth-Desktop-MacOS.dmg",
+    "appName": "Unsloth.app",
+    "bundleId": "ai.unsloth.studio"
+  }
+}
