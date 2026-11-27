@@ -1,6 +1,8 @@
 import json
 import contextlib
+import fcntl
 import io
+import math
 import stat
 import os
 import plistlib
@@ -21,6 +23,8 @@ import hashlib
 import tempfile
 import unicodedata
 from concurrent.futures import ThreadPoolExecutor, as_completed
+import urllib.error
+import urllib.request
 from urllib.parse import urlparse, unquote, parse_qs, urlencode, urljoin
 from request_sources import source_token, FORMULA_RECIPES, FORMULA_NAMES, FORMULA_PUBLISHERS, CASK_NAMES
 from version_relation import (BundleObservation, InspectionRefusal, PriorEntry, ReconcileInput,
@@ -1396,7 +1400,345 @@ pkg_urls = [
     "https://formulae.brew.sh/api/cask/powershell@preview.json",
 ]
 
-# Custom scraper scripts to run
+@dataclass(frozen=True)
+class DirectVendorDmgApp:
+    slug: str
+    name: str
+    description: str
+    manifest_url: str
+    url_template: str
+    bundle_id: str
+    team_id: str
+    file_name: str
+    homepage: str
+    publisher: str
+    category: str
+
+
+DIRECT_VENDOR_DMG_APPS = (
+    DirectVendorDmgApp(
+        slug="magnific_desktop",
+        name="Magnific Desktop",
+        description="Desktop application for Magnific AI image upscaling and editing",
+        manifest_url="https://cdn.magnific.com/ait/magnific-desktop/latest.json",
+        url_template="https://cdn.magnific.com/ait/magnific-desktop/{version}/macos-aarch64.dmg",
+        bundle_id="com.freepik.magnific.desktop",
+        team_id="CCAL5Z426N",
+        file_name="Magnific-Desktop-arm64.dmg",
+        homepage="https://www.magnific.com/desktop",
+        publisher="Freepik Company",
+        category="Design",
+    ),
+)
+
+
+DIRECT_VENDOR_MANIFEST_MAX_BYTES = 256 * 1024
+
+
+class _NoRedirectHandler(urllib.request.HTTPRedirectHandler):
+    def redirect_request(self, req, fp, code, msg, headers, newurl):
+        return None
+
+
+def _fetch_direct_vendor_manifest(url):
+    parsed = urlparse(url)
+    if parsed.scheme not in {"https", "http"}:
+        raise ValueError(f"Direct vendor manifest unsupported scheme: {parsed.scheme!r}")
+    opener = urllib.request.build_opener(_NoRedirectHandler())
+    request = urllib.request.Request(
+        url,
+        headers={
+            "Accept": "application/json",
+            "Accept-Encoding": "identity",
+            "User-Agent": "IntuneBrew-Collector",
+        },
+    )
+    try:
+        with opener.open(request, timeout=20) as response:
+            status = getattr(response, "status", response.getcode())
+            if status != 200:
+                raise ValueError(f"Direct vendor manifest returned HTTP {status}")
+            raw = response.read(DIRECT_VENDOR_MANIFEST_MAX_BYTES + 1)
+    except urllib.error.HTTPError as exc:
+        code = exc.code
+        exc.close()
+        raise ValueError(f"Direct vendor manifest returned HTTP {code}") from None
+    except urllib.error.URLError as exc:
+        raise ValueError(f"Direct vendor manifest fetch failed: {exc.reason}") from None
+    if len(raw) > DIRECT_VENDOR_MANIFEST_MAX_BYTES:
+        raise ValueError(
+            f"Direct vendor manifest exceeded {DIRECT_VENDOR_MANIFEST_MAX_BYTES} bytes"
+        )
+    def _reject_constant(token):
+        raise ValueError(f"Nonstandard JSON constant {token!r}")
+
+    try:
+        payload = json.loads(raw.decode("utf-8"), parse_constant=_reject_constant)
+    except (UnicodeDecodeError, json.JSONDecodeError, RecursionError, ValueError) as exc:
+        raise ValueError(f"Direct vendor manifest invalid JSON: {exc}") from None
+    if not isinstance(payload, dict):
+        raise ValueError("Direct vendor manifest must be a JSON object")
+    return payload
+
+
+def _resolve_direct_vendor_versioned_url(spec, *, fetch_manifest=None):
+    loader = _fetch_direct_vendor_manifest if fetch_manifest is None else fetch_manifest
+    manifest = loader(spec.manifest_url)
+    declared_version = manifest.get("version") if isinstance(manifest, dict) else None
+    if (
+        not isinstance(declared_version, str)
+        or not re.fullmatch(r"[0-9A-Za-z][0-9A-Za-z._-]{0,63}", declared_version)
+        or ".." in declared_version
+    ):
+        raise ValueError(f"Direct vendor manifest invalid version for {spec.slug}")
+    return declared_version, spec.url_template.format(version=declared_version)
+
+
+def _stream_direct_vendor_dmg(url, target):
+    """Stream one exact immutable DMG URL via the Requests adapter without draining redirect bodies."""
+    with requests.Session() as session:
+        request = session.prepare_request(
+            requests.Request("GET", url, headers={"User-Agent": DOWNLOAD_USER_AGENTS[0]})
+        )
+        settings = session.merge_environment_settings(request.url, {}, True, None, None)
+        response = session.get_adapter(request.url).send(
+            request, timeout=DOWNLOAD_TIMEOUT, **settings
+        )
+        try:
+            kind = response.headers.get("content-type", "").split(";")[0].strip().lower()
+            if (
+                response.status_code != 200
+                or response.url != url
+                or kind not in {"application/octet-stream", "application/x-apple-diskimage"}
+            ):
+                raise CatalogVersionHold("STABLE_DOWNLOAD_REFUSED")
+            length = response.headers.get("content-length")
+            length = int(length) if length is not None else None
+            if length is not None and not 0 < length <= WARP_MAX_DOWNLOAD_BYTES:
+                raise CatalogVersionHold("STABLE_DOWNLOAD_SIZE")
+            size = 0
+            for chunk in response.iter_content(chunk_size=1024 * 1024):
+                if not chunk:
+                    continue
+                if size == 0 and chunk[:64].lstrip().lower().startswith(HTML_PREFIXES):
+                    raise CatalogVersionHold("STABLE_DOWNLOAD_REFUSED")
+                size += len(chunk)
+                if size > WARP_MAX_DOWNLOAD_BYTES:
+                    raise CatalogVersionHold("STABLE_DOWNLOAD_SIZE")
+                target.write(chunk)
+            if size == 0 or (length is not None and size != length):
+                raise CatalogVersionHold("STABLE_DOWNLOAD_SIZE")
+            target.flush()
+        finally:
+            response.close()
+
+
+def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None, fetch_manifest=None):
+    """Collect a signed vendor versioned direct-DMG app not listed in Homebrew."""
+    inspector = inspect_dmg_artifact if inspect is None else inspect
+    try:
+        with _stable_budget(WARP_DOWNLOAD_DEADLINE):
+            declared_version, download_url = _resolve_direct_vendor_versioned_url(
+                spec, fetch_manifest=fetch_manifest
+            )
+            if inspect is None:
+                observation = inspector(
+                    download_url,
+                    spec.bundle_id,
+                    team_id=spec.team_id,
+                    _cleanup_deadline=lambda: signal.setitimer(signal.ITIMER_REAL, 0),
+                    _stream_dmg=_stream_direct_vendor_dmg,
+                )
+            else:
+                observation = inspector(download_url, spec.bundle_id, team_id=spec.team_id)
+    except (_StableReleaseDeadline, TimeoutError, CatalogVersionHold) as exc:
+        raise ValueError(f"Direct vendor DMG inspection aborted for {spec.slug}: {exc}") from None
+    if not isinstance(observation, SignedBundleObservation):
+        code = getattr(observation, "code", "UNVERIFIED")
+        raise ValueError(f"Direct vendor DMG verification failed for {spec.slug}: {code}")
+    version = observation.short_version
+    if not isinstance(version, str) or not version or version != version.strip():
+        raise ValueError(f"Direct vendor DMG invalid version for {spec.slug}")
+    if version != declared_version:
+        raise ValueError(
+            f"Direct vendor DMG version mismatch for {spec.slug}: manifest={declared_version!r} signed={version!r}"
+        )
+    os.makedirs(apps_folder, exist_ok=True)
+    dir_fd = os.open(apps_folder, os.O_RDONLY | getattr(os, "O_DIRECTORY", 0))
+    file_path = os.path.join(apps_folder, f"{spec.slug}.json")
+    previous = {}
+    existing_fd = None
+    prior_stat = None
+    try:
+        fcntl.flock(dir_fd, fcntl.LOCK_EX)
+        has_existing = os.path.lexists(file_path)
+        if has_existing:
+            if os.path.islink(file_path):
+                raise ValueError(
+                    f"Direct vendor DMG existing catalog path is a symlink for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                )
+            flags = os.O_RDONLY | getattr(os, "O_NOFOLLOW", 0) | getattr(os, "O_NONBLOCK", 0)
+            try:
+                existing_fd = os.open(file_path, flags)
+            except OSError as exc:
+                raise ValueError(
+                    f"Direct vendor DMG existing catalog entry unreadable for {spec.slug}: {exc} (PRIOR_ORDER_UNKNOWN)"
+                ) from None
+            prior_stat = os.fstat(existing_fd)
+            if not stat.S_ISREG(prior_stat.st_mode):
+                raise ValueError(
+                    f"Direct vendor DMG existing catalog entry is not a regular file for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                )
+            dup_fd = os.dup(existing_fd)
+            try:
+                f = os.fdopen(dup_fd, "r", encoding="utf-8")
+            except Exception:
+                os.close(dup_fd)
+                raise
+
+            def _no_duplicate_keys(pairs):
+                obj = {}
+                for key, value in pairs:
+                    if key in obj:
+                        raise ValueError(
+                            f"Direct vendor DMG existing catalog entry has duplicate key {key!r} for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                        )
+                    obj[key] = value
+                return obj
+
+            def _reject_constant(token):
+                raise ValueError(
+                    f"Direct vendor DMG existing catalog entry has invalid JSON constant {token!r} for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                )
+
+            def _parse_finite_float(raw):
+                value = float(raw)
+                if not math.isfinite(value):
+                    raise ValueError(
+                        f"Direct vendor DMG existing catalog entry has non-finite float {raw!r} for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                    )
+                return value
+
+            with f:
+                loaded = json.load(
+                    f,
+                    object_pairs_hook=_no_duplicate_keys,
+                    parse_constant=_reject_constant,
+                    parse_float=_parse_finite_float,
+                )
+            if not isinstance(loaded, dict):
+                raise ValueError(
+                    f"Direct vendor DMG existing catalog entry invalid for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                )
+            previous = loaded
+        prior_version = previous.get("version")
+        if has_existing:
+            if not isinstance(prior_version, str) or not prior_version or prior_version != prior_version.strip():
+                raise ValueError(
+                    f"Direct vendor DMG version order unknown for {spec.slug}: "
+                    f"prior={prior_version!r} signed={version!r} (PRIOR_ORDER_UNKNOWN)"
+                )
+            if prior_version != version:
+                # Mirror version_relation.reconcile() regression guards so a stale vendor
+                # manifest can never downgrade or ambiguously rewrite a newer entry.
+                def _numeric_tuple(raw):
+                    if not re.fullmatch(r"(?:0|[1-9][0-9]{0,17})(?:\.(?:0|[1-9][0-9]{0,17}))*", raw):
+                        return None
+                    return tuple(int(part) for part in raw.split("."))
+
+                new_tuple, old_tuple = _numeric_tuple(version), _numeric_tuple(prior_version)
+                if new_tuple is None or old_tuple is None:
+                    raise ValueError(
+                        f"Direct vendor DMG version order unknown for {spec.slug}: "
+                        f"prior={prior_version!r} signed={version!r} (PRIOR_ORDER_UNKNOWN)"
+                    )
+                width = max(len(new_tuple), len(old_tuple))
+                new_pad = new_tuple + (0,) * (width - len(new_tuple))
+                old_pad = old_tuple + (0,) * (width - len(old_tuple))
+                if new_pad <= old_pad:
+                    reason = "DETECTION_REGRESSION" if new_pad < old_pad else "EQUAL_ORDER_TEXT_DIFFERS"
+                    raise ValueError(
+                        f"Direct vendor DMG version regression for {spec.slug}: "
+                        f"prior={prior_version!r} signed={version!r} ({reason})"
+                    )
+        previous_version = prior_version if has_existing else version
+        app_data = {
+            **previous,
+            "name": spec.name,
+            "description": spec.description,
+            "version": version,
+            "previous_version": previous_version,
+            "url": download_url,
+            "vendor_url": download_url,
+            "sha": observation.artifact_sha256,
+            "bundleId": observation.bundle_id,
+            "homepage": spec.homepage,
+            "fileName": spec.file_name,
+            "publisher": spec.publisher,
+            "category": previous.get("category") or spec.category,
+            "custom_source": spec.slug,
+            "bundleIdEvidence": {
+                "inspector": observation.inspector,
+                "artifactSha256": observation.artifact_sha256,
+                "url": download_url,
+                "bundleId": observation.bundle_id,
+                "teamId": observation.team_id,
+            },
+        }
+        fd, tmp_path = tempfile.mkstemp(prefix=f".{spec.slug}.", suffix=".tmp", dir=apps_folder)
+        tmp_unlinked = False
+        try:
+            with os.fdopen(fd, "w") as f:
+                os.fchmod(f.fileno(), 0o644)
+                json.dump(app_data, f, indent=2, allow_nan=False)
+                f.write("\n")
+                f.flush()
+                os.fsync(f.fileno())
+            if has_existing:
+                try:
+                    cur_stat = os.lstat(file_path)
+                except OSError as exc:
+                    raise ValueError(
+                        f"Direct vendor DMG destination missing after validation for {spec.slug}: {exc} (PRIOR_ORDER_UNKNOWN)"
+                    ) from None
+                if (
+                    not stat.S_ISREG(cur_stat.st_mode)
+                    or (cur_stat.st_dev, cur_stat.st_ino) != (prior_stat.st_dev, prior_stat.st_ino)
+                    or cur_stat.st_size != prior_stat.st_size
+                    or cur_stat.st_mtime_ns != prior_stat.st_mtime_ns
+                ):
+                    raise ValueError(
+                        f"Direct vendor DMG destination changed after validation for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                    )
+                os.replace(tmp_path, file_path)
+                tmp_unlinked = True
+            else:
+                try:
+                    os.link(tmp_path, file_path)
+                except FileExistsError:
+                    raise ValueError(
+                        f"Direct vendor DMG destination appeared after validation for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                    ) from None
+                os.unlink(tmp_path)
+                tmp_unlinked = True
+        except Exception:
+            if not tmp_unlinked:
+                try:
+                    os.unlink(tmp_path)
+                except OSError:
+                    pass
+            raise
+    finally:
+        if existing_fd is not None:
+            os.close(existing_fd)
+        try:
+            fcntl.flock(dir_fd, fcntl.LOCK_UN)
+        finally:
+            os.close(dir_fd)
+    return app_data
+
+
+# Custom scraper scripts and signed direct-vendor DMG collectors to run
 custom_scrapers = [
     ".github/scripts/scrapers/fontagent.sh",
     ".github/scripts/scrapers/aircall_workspace.sh",
@@ -1405,7 +1747,8 @@ custom_scrapers = [
     # Chrome uses the enterprise PKG so Keystone is registered and self-updates work (Issue #203)
     ".github/scripts/scrapers/google_chrome.sh",
     # Wazuh is not in Homebrew; version is tracked from GitHub releases (Issue #97)
-    ".github/scripts/scrapers/wazuh_agent.sh"
+    ".github/scripts/scrapers/wazuh_agent.sh",
+    *DIRECT_VENDOR_DMG_APPS,
 ]
 
 # 30s connect, 120s between reads: a hung vendor server must not stall the nightly run
@@ -1604,33 +1947,91 @@ def _mounted_bundle_metadata(mount_point, bundle_id, team_id=None, *, app_name=N
                     or len(app_name) > 255 or team_id is not None):
                 return InspectionRefusal('APP_NAME_INVALID', True)
             expected_name = unicodedata.normalize('NFD', app_name)
-        for entry in sorted(mount.iterdir()):
-            if app_name is not None:
-                # Discovery uses only the exact cask-declared root app, never a
-                # helper, uninstaller or an app found inside another directory.
-                if (unicodedata.normalize('NFD', entry.name) == expected_name
-                        and not entry.is_symlink()):
+        if team_id is not None:
+            # Signed direct-vendor DMGs are uploaded intact to Intune, which can
+            # deploy sibling apps from the mounted volume. Stream-walk the whole
+            # volume without following symlinks and fail closed on any unreadable
+            # directory, budget overflow, or unexpected bundle.
+            volume_meta = {".Trashes", ".TemporaryItems", ".Spotlight-V100",
+                           ".fseventsd", ".DocumentRevisions-V100"}
+            unexpected_suffixes = (".pkg", ".mpkg")
+            stack = [(mount, 0, False)]
+            seen_entries = 0
+            while stack:
+                current_dir, depth, in_vol_meta = stack.pop()
+                if depth > 16:
+                    return InspectionRefusal("CANDIDATE_UNREADABLE", True)
+                stage = "root_enumeration" if depth == 0 else "container_enumeration"
+                entries = []
+                with os.scandir(current_dir) as it:
+                    for dirent in it:
+                        seen_entries += 1
+                        if seen_entries > 2000:
+                            return InspectionRefusal("CANDIDATE_UNREADABLE", True)
+                        entries.append(dirent)
+                entries.sort(key=lambda item: item.name)
+                for dirent in entries:
+                    entry = Path(dirent.path)
+                    if depth == 0:
+                        container = {".fseventsd": "fseventsd", ".background": "background",
+                                     ".DocumentRevisions-V100": "document_revisions",
+                                     ".Spotlight-V100": "spotlight", ".TemporaryItems": "temporary_items",
+                                     ".HFS+ Private Directory Data\r": "hfs_private"}.get(
+                                         dirent.name, "other_hidden" if dirent.name.startswith(".") else "other_visible")
+                    folded = dirent.name.casefold()
+                    stage = "entry_symlink"
+                    if dirent.is_symlink():
+                        if folded.endswith(".app") or folded.endswith(unexpected_suffixes):
+                            return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+                        link_target = os.readlink(entry).rstrip("/").casefold()
+                        if link_target.endswith((".app", ".pkg", ".mpkg")):
+                            return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+                        continue
+                    stage = "entry_classification"
+                    if folded.endswith(unexpected_suffixes):
+                        return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+                    if folded.endswith(".app"):
+                        if in_vol_meta or depth > 1 or not dirent.is_dir(follow_symlinks=False):
+                            return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+                        candidates.append(entry)
+                        continue
+                    if dirent.is_dir(follow_symlinks=False):
+                        contents_dir = entry / "Contents"
+                        if (contents_dir.is_dir(follow_symlinks=False)
+                                and os.path.lexists(contents_dir / "Info.plist")):
+                            return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+                        child_vol_meta = in_vol_meta or (depth == 0 and dirent.name in volume_meta)
+                        stack.append((entry, depth + 1, child_vol_meta))
+            if len(candidates) > 1:
+                return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+        else:
+            for entry in sorted(mount.iterdir()):
+                if app_name is not None:
+                    # Discovery uses only the exact cask-declared root app, never a
+                    # helper, uninstaller or an app found inside another directory.
+                    if (unicodedata.normalize('NFD', entry.name) == expected_name
+                            and not entry.is_symlink()):
+                        candidates.append(entry)
+                    continue
+                container = {".fseventsd": "fseventsd", ".background": "background",
+                             ".DocumentRevisions-V100": "document_revisions",
+                             ".Spotlight-V100": "spotlight", ".TemporaryItems": "temporary_items",
+                             ".HFS+ Private Directory Data\r": "hfs_private"}.get(
+                                 entry.name, "other_hidden" if entry.name.startswith(".") else "other_visible")
+                stage = "entry_symlink"
+                if entry.is_symlink():
+                    continue
+                stage = "entry_classification"
+                if entry.suffix == ".app":
                     candidates.append(entry)
-                continue
-            container = {".fseventsd": "fseventsd", ".background": "background",
-                         ".DocumentRevisions-V100": "document_revisions",
-                         ".Spotlight-V100": "spotlight", ".TemporaryItems": "temporary_items",
-                         ".HFS+ Private Directory Data\r": "hfs_private"}.get(
-                             entry.name, "other_hidden" if entry.name.startswith(".") else "other_visible")
-            stage = "entry_symlink"
-            if entry.is_symlink():
-                continue
-            stage = "entry_classification"
-            if entry.suffix == ".app":
-                candidates.append(entry)
-            elif entry.name in {".Trashes", ".TemporaryItems", ".Spotlight-V100",
-                                ".fseventsd", ".DocumentRevisions-V100"}:
-                # These volume metadata folders are never app installation sources.
-                continue
-            elif entry.is_dir():
-                stage = "container_enumeration"
-                candidates.extend(child for child in sorted(entry.iterdir())
-                                  if child.suffix == ".app" and not child.is_symlink())
+                elif entry.name in {".Trashes", ".TemporaryItems", ".Spotlight-V100",
+                                    ".fseventsd", ".DocumentRevisions-V100"}:
+                    # These volume metadata folders are never app installation sources.
+                    continue
+                elif entry.is_dir():
+                    stage = "container_enumeration"
+                    candidates.extend(child for child in sorted(entry.iterdir())
+                                      if child.suffix == ".app" and not child.is_symlink())
         matches = []
         container = None
         for app in candidates:
@@ -1699,7 +2100,8 @@ def _mounted_bundle_metadata(mount_point, bundle_id, team_id=None, *, app_name=N
 
 
 def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None,
-                         _cleanup_deadline=None, app_name=None, _download_charge=None):
+                         _cleanup_deadline=None, app_name=None, _download_charge=None,
+                         _stream_dmg=None):
     """Hash the one downloaded file before mounting; return bounded evidence only."""
     if app_name is not None and team_id is not None:
         return InspectionRefusal('SIGNATURE_IDENTITY_INVALID', True)
@@ -1710,7 +2112,7 @@ def inspect_dmg_artifact(url, bundle_id, declared_sha256=None, *, team_id=None,
         dmg_path = os.path.join(work, "app.dmg")
         with open(dmg_path, "wb") as dmg:
             if team_id is not None:
-                _stream_signed_dmg(url, dmg)
+                (_stream_signed_dmg if _stream_dmg is None else _stream_dmg)(url, dmg)
             else:
                 for user_agent in DOWNLOAD_USER_AGENTS:
                     try:
@@ -3464,8 +3866,18 @@ def main():
             collection_failures.append({"cask": get_cask_token(url), "stage": "collection"})
             print(f"Error processing PKG in DMG app {url}: {str(e)}")
 
-    # Run custom scrapers and update apps_info accordingly
+    # Run custom scrapers and direct-vendor DMG collectors and update apps_info accordingly
     for scraper in custom_scrapers:
+        if isinstance(scraper, DirectVendorDmgApp):
+            try:
+                app_data = collect_direct_vendor_dmg(scraper, apps_folder=apps_folder)
+                supported_apps.append(app_data["name"])
+                apps_info.append(app_data)
+                print(f"Saved direct vendor DMG app {app_data['name']} ({app_data['version']})")
+            except Exception as e:
+                collection_failures.append({"file": f"{scraper.slug}.json", "stage": "direct_vendor_dmg"})
+                print(f"Error collecting direct vendor DMG {scraper.slug}: {str(e)}")
+            continue
         try:
             subprocess.run([scraper], check=True)
             # Get the app name from the JSON file created by the scraper
@@ -3481,6 +3893,8 @@ def main():
     # After custom scrapers run, calculate hashes for direct downloads
     print("\n📊 Checking custom scraper outputs for missing hashes...")
     for scraper in custom_scrapers:
+        if isinstance(scraper, DirectVendorDmgApp):
+            continue
         json_file = os.path.join(apps_folder, os.path.basename(scraper).replace('.sh', '.json'))
         if os.path.exists(json_file):
             with open(json_file, 'r') as f:
