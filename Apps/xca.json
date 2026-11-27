@@ -11,5 +11,12 @@
   "sha": "90df40a56bb57bbf46158b4db1c9fddd8a2d7cc48477b5522b457ec4e12cd45a",
   "category": "Security",
   "publisher": "The XCA Project",
-  "previous_version": "2.9.0"
+  "previous_version": "2.9.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "90df40a56bb57bbf46158b4db1c9fddd8a2d7cc48477b5522b457ec4e12cd45a",
+    "url": "https://github.com/chris2511/xca/releases/download/RELEASE.2.9.0/xca-2.9.0-Darwin.dmg",
+    "appName": "xca.app",
+    "bundleId": "de.hohnstaedt.xca"
+  }
 }

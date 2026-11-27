@@ -11,5 +11,12 @@
   "sha": "8d72ae31bd2c3a81356d55ec86e70ea284a65bde117b52834529da3e2e40ff39",
   "category": "Developer Tools",
   "publisher": "Wave Terminal",
-  "previous_version": "0.14.5"
+  "previous_version": "0.14.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "8d72ae31bd2c3a81356d55ec86e70ea284a65bde117b52834529da3e2e40ff39",
+    "url": "https://dl.waveterm.dev/releases-w2/Wave-darwin-arm64-0.14.5.dmg",
+    "appName": "Wave.app",
+    "bundleId": "dev.commandline.waveterm"
+  }
 }

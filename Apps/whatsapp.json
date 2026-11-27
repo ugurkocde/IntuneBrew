@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "acdb27c5f1b371e80cdbfceb7e784b81da1f6aa944a8e602520b39b08c8e5023",
   "changelog": "https://web.whatsapp.com/desktop/windows/release-notes",
-  "previous_version": "26.47.19",
+  "previous_version": "26.47.21",
   "category": "Communication",
   "publisher": "WhatsApp LLC",
   "homebrew_cask": "whatsapp"

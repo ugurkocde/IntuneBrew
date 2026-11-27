@@ -11,5 +11,12 @@
   "sha": "b1a26580347467ca399a096cf425f5899c6da44d4b71775f8f3de3a53622ec9c",
   "category": "Media",
   "publisher": "Telestream",
-  "previous_version": "16.5.5"
+  "previous_version": "16.5.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b1a26580347467ca399a096cf425f5899c6da44d4b71775f8f3de3a53622ec9c",
+    "url": "https://www.telestream.net/download-files/wirecast/16-5/Wirecast-16.5.5.dmg",
+    "appName": "Wirecast.app",
+    "bundleId": "net.telestream.wirecast"
+  }
 }

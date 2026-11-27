@@ -4,12 +4,19 @@
   "version": "3.13.1",
   "url": "https://github.com/afadil/wealthfolio/releases/download/v3.13.1/Wealthfolio_3.13.1_aarch64.dmg",
   "vendor_url": "https://github.com/afadil/wealthfolio/releases/download/v3.13.1/Wealthfolio_3.13.1_aarch64.dmg",
-  "bundleId": "app.wealthfolio.desktop",
+  "bundleId": "com.teymz.wealthfolio",
   "homepage": "https://wealthfolio.app/",
   "homebrew_cask": "wealthfolio",
   "fileName": "Wealthfolio_3.13.1_aarch64.dmg",
   "sha": "a39d5e508676c83115ce8d208409b0c60276384db976bfa60dfd2dc9ada3c8ab",
   "category": "Productivity",
   "publisher": "Wealthfolio",
-  "previous_version": "3.13.1"
+  "previous_version": "3.13.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "a39d5e508676c83115ce8d208409b0c60276384db976bfa60dfd2dc9ada3c8ab",
+    "url": "https://github.com/afadil/wealthfolio/releases/download/v3.13.1/Wealthfolio_3.13.1_aarch64.dmg",
+    "appName": "Wealthfolio.app",
+    "bundleId": "com.teymz.wealthfolio"
+  }
 }

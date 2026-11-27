@@ -1,0 +1,22 @@
+{
+  "name": "Magnific Desktop",
+  "description": "Desktop application for Magnific AI image upscaling and editing",
+  "version": "1.5.7",
+  "previous_version": "1.5.7",
+  "url": "https://cdn.magnific.com/ait/magnific-desktop/1.5.7/macos-aarch64.dmg",
+  "vendor_url": "https://cdn.magnific.com/ait/magnific-desktop/1.5.7/macos-aarch64.dmg",
+  "sha": "baefaa332785d0d7154cd6446530cf12b1b5958b743645ada7247008569ea7ff",
+  "bundleId": "com.freepik.magnific.desktop",
+  "homepage": "https://www.magnific.com/desktop",
+  "fileName": "Magnific-Desktop-arm64.dmg",
+  "publisher": "Freepik Company",
+  "category": "Design",
+  "custom_source": "magnific_desktop",
+  "bundleIdEvidence": {
+    "inspector": "signed-dmg-inspector/1",
+    "artifactSha256": "baefaa332785d0d7154cd6446530cf12b1b5958b743645ada7247008569ea7ff",
+    "url": "https://cdn.magnific.com/ait/magnific-desktop/1.5.7/macos-aarch64.dmg",
+    "bundleId": "com.freepik.magnific.desktop",
+    "teamId": "CCAL5Z426N"
+  }
+}

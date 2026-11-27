@@ -4,12 +4,19 @@
   "version": "3.7.7",
   "url": "https://cdn.vox.rocks/vox-player/releases/versions/VOX-3770.1.dmg",
   "vendor_url": "https://cdn.vox.rocks/vox-player/releases/versions/VOX-3770.1.dmg",
-  "bundleId": "com.coppertino.VoxHelper",
+  "bundleId": "com.coppertino.Vox",
   "homepage": "https://vox.rocks/mac-music-player",
   "homebrew_cask": "vox",
   "fileName": "VOX-3770.1.dmg",
   "sha": "287159bc31c99a46f71bcad02b73edd2f8fa3926d4bc1bbcfaea3beb7e03a96d",
   "category": "Media",
   "publisher": "Coppertino",
-  "previous_version": "3.7.7"
+  "previous_version": "3.7.7",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "287159bc31c99a46f71bcad02b73edd2f8fa3926d4bc1bbcfaea3beb7e03a96d",
+    "url": "https://cdn.vox.rocks/vox-player/releases/versions/VOX-3770.1.dmg",
+    "appName": "VOX.app",
+    "bundleId": "com.coppertino.Vox"
+  }
 }

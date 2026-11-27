@@ -9,7 +9,7 @@
   "fileName": "macwhisper_16.0.pkg",
   "type": "app",
   "sha": "732424d719f6e56630f917cd5872a7513409a089a0c90f3841d97b52283654d8",
-  "previous_version": "15.12",
+  "previous_version": "16.0",
   "category": "Productivity",
   "publisher": "Goodsnooze",
   "homebrew_cask": "macwhisper"

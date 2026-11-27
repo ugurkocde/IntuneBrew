@@ -11,5 +11,12 @@
   "sha": "9c9b4bfa209ec66ab3622b20c9a044595a03ee9cf0c1eea7839bec9b4b573c84",
   "category": "Productivity",
   "publisher": "WebCatalog",
-  "previous_version": "82.5.0"
+  "previous_version": "82.7.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "9c9b4bfa209ec66ab3622b20c9a044595a03ee9cf0c1eea7839bec9b4b573c84",
+    "url": "https://cdn-2.webcatalog.io/webcatalog/WebCatalog-82.7.0-universal.dmg",
+    "appName": "WebCatalog.app",
+    "bundleId": "com.webcatalog.jordan"
+  }
 }

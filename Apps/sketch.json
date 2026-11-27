@@ -10,7 +10,7 @@
   "type": "app",
   "sha": "f6ba4dab7d50100646b178415a4907f24bd4dbf44b5820de479666d513e84063",
   "changelog": "https://www.sketch.com/updates/",
-  "previous_version": "2026.4",
+  "previous_version": "2026.4.1",
   "category": "Design",
   "publisher": "Bohemian Coding",
   "homebrew_cask": "sketch"

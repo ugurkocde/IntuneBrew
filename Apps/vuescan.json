@@ -11,5 +11,12 @@
   "category": "Utilities",
   "publisher": "Hamrick Software",
   "previous_version": "9.8.60",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "cd2451b774c3c36dd2bb882e7c484e900f8e279c13e0ea5954f47818146b9d9f",
+    "url": "https://www.hamrick.com/files/vuea6498.dmg",
+    "appName": "VueScan.app",
+    "bundleId": "com.hamrick.vuescan"
+  },
   "sha": "cd2451b774c3c36dd2bb882e7c484e900f8e279c13e0ea5954f47818146b9d9f"
 }

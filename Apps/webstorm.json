@@ -12,5 +12,12 @@
   "changelog": "https://www.jetbrains.com/webstorm/whatsnew/",
   "category": "Developer Tools",
   "publisher": "JetBrains s.r.o.",
-  "previous_version": "2026.3.0.1"
+  "previous_version": "2026.3.0.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "eb2dd5712388dae74602d3c5725b4cb8d7f10187d010fc3e10f4b844255d316c",
+    "url": "https://download.jetbrains.com/webstorm/WebStorm-2026.3.0.1-aarch64.dmg",
+    "appName": "WebStorm.app",
+    "bundleId": "com.jetbrains.WebStorm"
+  }
 }

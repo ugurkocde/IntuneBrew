@@ -9,7 +9,7 @@
   "fileName": "nucleo_4.2.1.pkg",
   "type": "app",
   "sha": "899ad43687ea3f93bc8a02fd047d1534f7e4d544e4a518ca4ef933a67e9a3e86",
-  "previous_version": "4.2.0",
+  "previous_version": "4.2.1",
   "category": "Design",
   "publisher": "Nucleo",
   "homebrew_cask": "nucleo"

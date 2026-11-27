@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-27T01:13:59.835998Z",
-  "lastFullSyncAt": "2026-11-27T01:13:59.835998Z",
+  "lastPublishedAt": "2026-11-27T05:24:23.166697Z",
+  "lastFullSyncAt": "2026-11-27T05:24:23.166697Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -142,13 +142,17 @@
       "stage": "collection"
     },
     {
+      "app": "whispering",
+      "stage": "collection"
+    },
+    {
       "app": "xmind",
       "stage": "collection"
     }
   ],
-  "appCount": 1165,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/45916593373",
+  "appCount": 1166,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/45941645320",
   "identityBackfill": {
-    "lastAttempted": "vorssaint"
+    "lastAttempted": "superduper"
   }
 }

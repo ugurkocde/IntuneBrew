@@ -18,9 +18,9 @@
     <a href="https://www.powershellgallery.com/packages/IntuneBrew">
       <img src="https://img.shields.io/powershellgallery/dt/IntuneBrew?style=flat&label=PSGallery%20Downloads&color=brightgreen" alt="PowerShell Gallery Downloads"/>
     </a>
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          <p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p>
     <a href="#-supported-applications">
-      <img src="https://img.shields.io/badge/Apps_Available-1165-2ea44f?style=flat" alt="TotalApps"/>
+      <img src="https://img.shields.io/badge/Apps_Available-1166-2ea44f?style=flat" alt="TotalApps"/>
     </a>
   </p>
 </div>
@@ -671,51 +671,16 @@ This project uses publicly available metadata from Homebrew’s JSON API. Homebr
 
 
 
+
 ## 🔄 Latest Updates
 
-*Last checked: 2026-11-27T01:13:59.835998Z*
+*Last checked: 2026-11-27T05:24:23.166697Z*
 
 | Application | Previous Version | New Version |
 |---|---|---|
-| altserver | 1.8.4 | 1.8.5 |
-| batfi | 4.1.0 | 4.2.0 |
-| bilibili | 1.20.0 | 1.21.0 |
-| camunda modeler | 5.53.0 | 5.54.0 |
-| capacities | 1.74.1 | 1.74.3 |
-| clop | 3.7.7 | 3.7.8 |
-| craft | 3.7.1 | 3.7.3 |
-| cursor | 3.32.4 | 3.32.10 |
-| deepl | 26.11.13023090762 | 26.11.23117384962 |
-| dialpad | 2610.1.0 | 2611.1.1 |
-| eltima cloudmounter | 4.18 | 4.19 |
-| gather town | 1.41.3 | 1.43.3 |
-| github desktop | 3.7.0-f13859b6 | 3.7.1-534cde99 |
-| google antigravity | 2.35.1 | 2.35.2 |
-| goose | 1.61.0 | 1.61.1 |
-| granola | 7.821.0 | 7.853.5 |
-| kiro | 1.5.44 | 1.5.49 |
-| lens | 2026.10.261408-latest | 2026.11.261430-latest |
-| macpacker | 1.3.0 | 1.3.1 |
-| macwhisper | 15.12 | 16.0 |
-| microsoft edge | 158.0.4370.33 | 158.0.4370.45 |
-| motrix | 2.4.5 | 2.4.7 |
-| nucleo | 4.2.0 | 4.2.1 |
-| opencode | 2.4.1 | 2.4.2 |
-| opera | 140.0 | 141.0 |
-| paseo | 0.17.4 | 0.17.5 |
-| pitch | 2.155.0-stable.2 | 2.155.0-stable.3 |
-| postman | 12.38.3 | 12.38.5 |
-| pritunl | 1.4.4791.77 | 1.4.4823.50 |
-| qgis | 4.2.3 | 4.4.0 |
-| readest | 0.12.20 | 0.12.26 |
-| sketch | 2026.4 | 2026.4.1 |
-| skim | 1.7.19 | 1.7.20 |
-| superlist | 1.59.1 | 1.59.2 |
-| webcatalog | 82.5.0 | 82.7.0 |
-| whatsapp | 26.47.19 | 26.47.21 |
-| zettlr | 4.10.0 | 4.11.0 |
+| riverside studio | 1.34.1 | 1.35.2 |
 
-35 app updates could not be published. See [catalog sync status](catalog-sync.json).
+36 app updates could not be published. See [catalog sync status](catalog-sync.json).
 
 ## ✨ Features
 
@@ -1312,6 +1277,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/macusb.png' width='32' height='32'> macUSB | 2.6 |
 | <img src='Logos/macwhisper.png' width='32' height='32'> MacWhisper | 16.0 |
 | <img src='Logos/magicquit.png' width='32' height='32'> MagicQuit | 1.4 |
+| ❌ Magnific Desktop | 1.5.7 |
 | <img src='Logos/mailmate.png' width='32' height='32'> MailMate | 5673 |
 | <img src='Logos/mailspring.png' width='32' height='32'> Mailspring | 1.26.2 |
 | <img src='Logos/malwarebytes_for_mac.png' width='32' height='32'> Malwarebytes for Mac | 5.29.2.4310 |
@@ -1609,7 +1575,7 @@ See [excluded applications](EXCLUDED_APPS.md) for apps held out of collection an
 | <img src='Logos/rightfont.png' width='32' height='32'> RightFont | 2026.1.1 |
 | <img src='Logos/ringcentral.png' width='32' height='32'> RingCentral | 26.3.20 |
 | <img src='Logos/rive.png' width='32' height='32'> Rive | 0.9.851 |
-| <img src='Logos/riverside_studio.png' width='32' height='32'> Riverside Studio | 1.34.1 |
+| <img src='Logos/riverside_studio.png' width='32' height='32'> Riverside Studio | 1.35.2 |
 | <img src='Logos/rize.png' width='32' height='32'> Rize | 3.0.183 |
 | <img src='Logos/roam_research.png' width='32' height='32'> Roam Research | 0.0.43 |
 | <img src='Logos/roboform.png' width='32' height='32'> RoboForm | 9.9.5 |
