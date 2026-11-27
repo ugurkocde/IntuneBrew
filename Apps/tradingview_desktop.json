@@ -11,5 +11,12 @@
   "sha": "cdad82143590dcdf82efcd9e7f0cb4c994d331cb3bc76c7a96362910d02d3c23",
   "category": "Productivity",
   "publisher": "TradingView",
-  "previous_version": "3.5.1"
+  "previous_version": "3.5.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "cdad82143590dcdf82efcd9e7f0cb4c994d331cb3bc76c7a96362910d02d3c23",
+    "url": "https://tvd-packages.tradingview.com/stable/3.5.1/darwin/TradingView.dmg",
+    "appName": "TradingView.app",
+    "bundleId": "com.tradingview.tradingviewapp.desktop"
+  }
 }

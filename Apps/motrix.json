@@ -1,22 +1,15 @@
 {
   "name": "Motrix",
   "description": "Open-source download manager",
-  "version": "2.4.5",
-  "url": "https://github.com/agalwood/Motrix/releases/download/v2.4.5/Motrix-2.4.5-arm64.dmg",
-  "vendor_url": "https://github.com/agalwood/Motrix/releases/download/v2.4.5/Motrix-2.4.5-arm64.dmg",
+  "version": "2.4.7",
+  "url": "https://github.com/agalwood/Motrix/releases/download/v2.4.7/Motrix-2.4.7-arm64.dmg",
+  "vendor_url": "https://github.com/agalwood/Motrix/releases/download/v2.4.7/Motrix-2.4.7-arm64.dmg",
   "bundleId": "app.motrix.native",
   "homepage": "https://motrix.app/",
   "homebrew_cask": "motrix",
-  "fileName": "Motrix-2.4.5-arm64.dmg",
-  "sha": "f540732f65f94a74d4c98544fd0a15e6b6a13c5049ec314409876f05869e0fc6",
+  "fileName": "Motrix-2.4.7-arm64.dmg",
+  "sha": "b76af07d2fe077b6916b343e22c369a1e7fca84330fcb866aeaf5f48905f6238",
   "category": "Utilities",
   "publisher": "Motrix Team",
-  "previous_version": "2.4.5",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "f540732f65f94a74d4c98544fd0a15e6b6a13c5049ec314409876f05869e0fc6",
-    "url": "https://github.com/agalwood/Motrix/releases/download/v2.4.5/Motrix-2.4.5-arm64.dmg",
-    "appName": "Motrix.app",
-    "bundleId": "app.motrix.native"
-  }
+  "previous_version": "2.4.5"
 }

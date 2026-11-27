@@ -11,5 +11,12 @@
   "sha": "bbeb4b6682efcc8164c1f5d6795e9793839e106bdfd0a8d13ab4e8d8af9f98f4",
   "category": "Communication",
   "publisher": "Mozilla Foundation",
-  "previous_version": "161.0"
+  "previous_version": "161.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "bbeb4b6682efcc8164c1f5d6795e9793839e106bdfd0a8d13ab4e8d8af9f98f4",
+    "url": "https://download-installer.cdn.mozilla.net/pub/thunderbird/releases/161.0/mac/en-US/Thunderbird%20161.0.dmg",
+    "appName": "Thunderbird.app",
+    "bundleId": "org.mozilla.thunderbird"
+  }
 }

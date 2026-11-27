@@ -4,12 +4,19 @@
   "version": "5.14.0",
   "url": "https://github.com/Ultimaker/Cura/releases/download/5.14.0/UltiMaker-Cura-5.14.0-macos-ARM64.dmg",
   "vendor_url": "https://github.com/Ultimaker/Cura/releases/download/5.14.0/UltiMaker-Cura-5.14.0-macos-ARM64.dmg",
-  "bundleId": "nl.ultimaker.cura.dmg",
+  "bundleId": "nl.ultimaker.cura_UltiMaker_Cura",
   "homepage": "https://ultimaker.com/software/ultimaker-cura",
   "homebrew_cask": "ultimaker-cura",
   "fileName": "UltiMaker-Cura-5.14.0-macos-ARM64.dmg",
   "sha": "b517488218c134ef36a7845540dd0778205ffedb24f83f0ee41f67423ffcbf21",
   "category": "Design",
   "publisher": "Ultimaker B.V.",
-  "previous_version": "5.14.0"
+  "previous_version": "5.14.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "b517488218c134ef36a7845540dd0778205ffedb24f83f0ee41f67423ffcbf21",
+    "url": "https://github.com/Ultimaker/Cura/releases/download/5.14.0/UltiMaker-Cura-5.14.0-macos-ARM64.dmg",
+    "appName": "UltiMaker Cura.app",
+    "bundleId": "nl.ultimaker.cura_UltiMaker_Cura"
+  }
 }

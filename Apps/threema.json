@@ -4,12 +4,19 @@
   "version": "1.2.50",
   "url": "https://releases.threema.ch/web-electron/v1/release/Threema-Latest.dmg",
   "vendor_url": "https://releases.threema.ch/web-electron/v1/release/Threema-Latest.dmg",
-  "bundleId": "ch.threema.threema",
+  "bundleId": "threema-consumer-web",
   "homepage": "https://threema.ch/",
   "homebrew_cask": "threema",
   "fileName": "Threema-Latest.dmg",
   "category": "Communication",
   "publisher": "Threema GmbH",
   "previous_version": "1.2.50",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "1ef99f4043ed1b24d9e182bce4fbc142952e97ca37a2842f49e809035615bf48",
+    "url": "https://releases.threema.ch/web-electron/v1/release/Threema-Latest.dmg",
+    "appName": "Threema.app",
+    "bundleId": "threema-consumer-web"
+  },
   "sha": "1ef99f4043ed1b24d9e182bce4fbc142952e97ca37a2842f49e809035615bf48"
 }

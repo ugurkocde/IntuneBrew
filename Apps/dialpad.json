@@ -1,7 +1,7 @@
 {
   "name": "Dialpad",
   "description": "Cloud communication platform",
-  "version": "2610.1.0",
+  "version": "2611.1.1",
   "url": "https://download.dialpad.com/osx/arm64/dialpad.pkg",
   "vendor_url": "https://download.dialpad.com/osx/arm64/dialpad.pkg",
   "bundleId": "com.electron.dialpad",
@@ -12,5 +12,5 @@
   "sha": "75360972c3a1661ec1e9b108468de1a0bf99cdf28f3f6319af80660c56dcdc7a",
   "category": "Communication",
   "publisher": "Dialpad, Inc.",
-  "previous_version": "2610.1.0"
+  "previous_version": "2611.1.1"
 }

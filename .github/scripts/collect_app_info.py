@@ -1251,6 +1251,7 @@ homebrew_cask_urls = [
     "https://formulae.brew.sh/api/cask/miniconda.json",
     "https://formulae.brew.sh/api/cask/openwhispr.json",
     "https://formulae.brew.sh/api/cask/nextpad++.json",
+    "https://formulae.brew.sh/api/cask/unsloth.json",
 ]
 
 # PKG in DMG URLs

@@ -1,22 +1,15 @@
 {
   "name": "Readest",
   "description": "Ebook reader",
-  "version": "0.12.20",
-  "url": "https://github.com/readest/readest/releases/download/v0.12.20/Readest_0.12.20_universal.dmg",
-  "vendor_url": "https://github.com/readest/readest/releases/download/v0.12.20/Readest_0.12.20_universal.dmg",
+  "version": "0.12.26",
+  "url": "https://github.com/readest/readest/releases/download/v0.12.26/Readest_0.12.26_universal.dmg",
+  "vendor_url": "https://github.com/readest/readest/releases/download/v0.12.26/Readest_0.12.26_universal.dmg",
   "bundleId": "com.bilingify.readest",
   "homepage": "https://readest.com/",
   "homebrew_cask": "readest",
-  "fileName": "Readest_0.12.20_universal.dmg",
-  "sha": "9c70e84c963a16d6c90f2d5298d3c85ad293aa419c362f524d258c6249a63bda",
+  "fileName": "Readest_0.12.26_universal.dmg",
+  "sha": "18057053f5f4c243ad4dc1417536a4dce840e1ac71119f7f36f468b564c36437",
   "category": "Media",
   "publisher": "Readest",
-  "previous_version": "0.12.20",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "9c70e84c963a16d6c90f2d5298d3c85ad293aa419c362f524d258c6249a63bda",
-    "url": "https://github.com/readest/readest/releases/download/v0.12.20/Readest_0.12.20_universal.dmg",
-    "appName": "Readest.app",
-    "bundleId": "com.bilingify.readest"
-  }
+  "previous_version": "0.12.20"
 }

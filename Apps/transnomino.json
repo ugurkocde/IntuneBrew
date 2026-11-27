@@ -11,5 +11,12 @@
   "sha": "a18c27bfbb56b9eb949d4da45c047becd2b082f00e0d84cc3325a66a76e67ca1",
   "category": "Utilities",
   "publisher": "Transnomino",
-  "previous_version": "10.1.0"
+  "previous_version": "10.1.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "a18c27bfbb56b9eb949d4da45c047becd2b082f00e0d84cc3325a66a76e67ca1",
+    "url": "https://www.transnomino.com/download/Transnomino-10.1.0.dmg",
+    "appName": "Transnomino.app",
+    "bundleId": "com.bastiaanverreijt.Transnomino"
+  }
 }

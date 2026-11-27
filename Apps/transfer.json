@@ -11,5 +11,12 @@
   "sha": "d7f913d72bf7d0fe4f0e2855fc53ca9ccc4aa2bd6133d6cd42eafc5b9ebbbe0e",
   "category": "Utilities",
   "publisher": "IntuitiBits",
-  "previous_version": "2.4.4"
+  "previous_version": "2.5",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "d7f913d72bf7d0fe4f0e2855fc53ca9ccc4aa2bd6133d6cd42eafc5b9ebbbe0e",
+    "url": "https://www.intuitibits.com/downloads/Transfer_2.5.dmg",
+    "appName": "Transfer.app",
+    "bundleId": "com.adriangranados.Transfer"
+  }
 }

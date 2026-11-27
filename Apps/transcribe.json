@@ -11,5 +11,12 @@
   "sha": "f550fe136b919103ae040cb6b5096134c95a0e7ba06425b8455e13788ef974dc",
   "category": "Media",
   "publisher": "Seventh String Software",
-  "previous_version": "9.70.3"
+  "previous_version": "9.70.3",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "f550fe136b919103ae040cb6b5096134c95a0e7ba06425b8455e13788ef974dc",
+    "url": "https://www.seventhstring.com/xscribe/downmo/transcribe-arm-9.70.3.dmg",
+    "appName": "Transcribe!.app",
+    "bundleId": "com.seventhstring.transcribe"
+  }
 }

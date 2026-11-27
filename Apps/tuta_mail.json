@@ -10,6 +10,13 @@
   "fileName": "tutanota-desktop-mac.dmg",
   "category": "Communication",
   "publisher": "Tuta",
-  "previous_version": "369.261119.0",
+  "previous_version": "371.261123.0",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "8055ecd351ca30787b9e3593d85781d09b885192c43da9bd9982aa45258428ed",
+    "url": "https://app.tuta.com/desktop/tutanota-desktop-mac.dmg",
+    "appName": "Tuta Mail.app",
+    "bundleId": "de.tutao.tutanota"
+  },
   "sha": "8055ecd351ca30787b9e3593d85781d09b885192c43da9bd9982aa45258428ed"
 }

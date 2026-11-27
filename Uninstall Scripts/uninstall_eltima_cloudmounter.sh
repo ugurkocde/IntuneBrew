@@ -17,6 +17,10 @@ fi
 echo "Stopping Eltima CloudMounter if running..."
 pkill -f "Eltima CloudMounter" 2>/dev/null || true
 
+# Kill application with bundle ID com.eltima.cloudmounter if running
+echo "Stopping application with bundle ID com.eltima.cloudmounter if running..."
+killall -9 "com.eltima.cloudmounter" 2>/dev/null || true
+
 # Remove /Applications/CloudMounter.app
 echo "Removing /Applications/CloudMounter.app..."
 if [ -d "/Applications/CloudMounter.app" ]; then
@@ -31,6 +35,22 @@ if [ -d "$HOME/Library/Application Scripts/*.com.eltima.cloudmounter*" ]; then
     rm -rf "$HOME/Library/Application Scripts/*.com.eltima.cloudmounter*" 2>/dev/null || true
 elif [ -f "$HOME/Library/Application Scripts/*.com.eltima.cloudmounter*" ]; then
     rm -f "$HOME/Library/Application Scripts/*.com.eltima.cloudmounter*" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.eltima.cloudmounter.CMFinderSync
+echo "Removing $HOME/Library/Application Scripts/com.eltima.cloudmounter.CMFinderSync..."
+if [ -d "$HOME/Library/Application Scripts/com.eltima.cloudmounter.CMFinderSync" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.eltima.cloudmounter.CMFinderSync" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.eltima.cloudmounter.CMFinderSync" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.eltima.cloudmounter.CMFinderSync" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Application Scripts/com.eltima.cloudmounter.mountprovider
+echo "Removing $HOME/Library/Application Scripts/com.eltima.cloudmounter.mountprovider..."
+if [ -d "$HOME/Library/Application Scripts/com.eltima.cloudmounter.mountprovider" ]; then
+    rm -rf "$HOME/Library/Application Scripts/com.eltima.cloudmounter.mountprovider" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/com.eltima.cloudmounter.mountprovider" ]; then
+    rm -f "$HOME/Library/Application Scripts/com.eltima.cloudmounter.mountprovider" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Support/com.apple.sharedfilelist/com.apple.LSSharedFileList.ApplicationRecentDocuments/com.eltima.cloudmounter.sfl*
@@ -111,6 +131,14 @@ if [ -d "$HOME/Library/Preferences/com.eltima.cloudmounter.plist" ]; then
     rm -rf "$HOME/Library/Preferences/com.eltima.cloudmounter.plist" 2>/dev/null || true
 elif [ -f "$HOME/Library/Preferences/com.eltima.cloudmounter.plist" ]; then
     rm -f "$HOME/Library/Preferences/com.eltima.cloudmounter.plist" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/WebKit/com.eltima.cloudmounter
+echo "Removing $HOME/Library/WebKit/com.eltima.cloudmounter..."
+if [ -d "$HOME/Library/WebKit/com.eltima.cloudmounter" ]; then
+    rm -rf "$HOME/Library/WebKit/com.eltima.cloudmounter" 2>/dev/null || true
+elif [ -f "$HOME/Library/WebKit/com.eltima.cloudmounter" ]; then
+    rm -f "$HOME/Library/WebKit/com.eltima.cloudmounter" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

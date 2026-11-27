@@ -11,5 +11,12 @@
   "sha": "bcb7efa32925d465159f2ae90091a5d5c67be255f8e33f0bafd2fac372e6e02a",
   "category": "Utilities",
   "publisher": "Unraid",
-  "previous_version": "v2.0.11.1-unraid.1"
+  "previous_version": "v2.0.11.1-unraid.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "bcb7efa32925d465159f2ae90091a5d5c67be255f8e33f0bafd2fac372e6e02a",
+    "url": "https://github.com/unraid/usb-creator-next/releases/download/v2.0.11.1-unraid.1/Unraid.USB.Creator-v2.0.11.1-unraid.1.dmg",
+    "appName": "Unraid USB Creator.app",
+    "bundleId": "com.limetech.unraid-usb-creator"
+  }
 }

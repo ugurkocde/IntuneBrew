@@ -11,5 +11,12 @@
   "category": "Media",
   "publisher": "Amar Sagoo",
   "previous_version": "3.1",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "65f7d43e3bb2a4f1981c6dca4f3595982446a19caa2cc29b5ad2bcb2d050e68e",
+    "url": "https://amarsagoo.info/tofu/Tofu.dmg",
+    "appName": "Tofu.app",
+    "bundleId": "com.asagoo.tofu"
+  },
   "sha": "65f7d43e3bb2a4f1981c6dca4f3595982446a19caa2cc29b5ad2bcb2d050e68e"
 }

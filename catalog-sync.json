@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
-  "lastPublishedAt": "2026-11-26T01:38:27.058468Z",
-  "lastFullSyncAt": "2026-11-26T01:38:27.058468Z",
+  "lastPublishedAt": "2026-11-27T01:13:59.835998Z",
+  "lastFullSyncAt": "2026-11-27T01:13:59.835998Z",
   "lastSuccessfulSyncAt": "2026-10-21T01:19:24.034789Z",
   "status": "degraded",
   "failedApps": [
@@ -82,10 +82,6 @@
       "stage": "collection"
     },
     {
-      "app": "lens",
-      "stage": "collection"
-    },
-    {
       "app": "meetingbar",
       "stage": "collection"
     },
@@ -150,9 +146,9 @@
       "stage": "collection"
     }
   ],
-  "appCount": 1164,
-  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/45728496144",
+  "appCount": 1165,
+  "runUrl": "https://github.com/ugurkocde/IntuneBrew/actions/runs/45916593373",
   "identityBackfill": {
-    "lastAttempted": "tableplus"
+    "lastAttempted": "vorssaint"
   }
 }

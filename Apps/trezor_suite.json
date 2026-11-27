@@ -11,5 +11,12 @@
   "sha": "23533d9f06c7c0bc78793d57ee274571f681cbb3952efc567bc37474888031de",
   "category": "Security",
   "publisher": "SatoshiLabs",
-  "previous_version": "26.11.2"
+  "previous_version": "26.11.2",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "23533d9f06c7c0bc78793d57ee274571f681cbb3952efc567bc37474888031de",
+    "url": "https://data.trezor.io/suite/releases/desktop/latest/Trezor-Suite-26.11.2-mac-arm64.dmg",
+    "appName": "Trezor Suite.app",
+    "bundleId": "io.trezor.TrezorSuite"
+  }
 }

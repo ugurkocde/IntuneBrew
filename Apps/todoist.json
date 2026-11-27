@@ -12,5 +12,12 @@
   "changelog": "https://todoist.com/changelog",
   "category": "Productivity",
   "publisher": "Doist Ltd.",
-  "previous_version": "9.36.2"
+  "previous_version": "9.36.4",
+  "bundleIdEvidence": {
+    "inspector": "dmg-identity/1",
+    "artifactSha256": "bd0b57f45e7c7baca0ed839c917ee8cbbebbb965d1c02efd505e5ca30932631d",
+    "url": "https://electron-dl.todoist.com/mac/Todoist-darwin-9.36.4-arm64-latest.dmg",
+    "appName": "Todoist.app",
+    "bundleId": "com.todoist.mac.Todoist"
+  }
 }

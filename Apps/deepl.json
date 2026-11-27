@@ -1,14 +1,14 @@
 {
   "name": "DeepL",
   "description": "Trains AIs to understand and translate texts",
-  "version": "26.11.13023090762",
-  "url": "https://www.deepl.com/macos/download/26.11/13023090762/DeepL.dmg",
-  "vendor_url": "https://www.deepl.com/macos/download/26.11/13023090762/DeepL.dmg",
+  "version": "26.11.23117384962",
+  "url": "https://www.deepl.com/macos/download/26.11/23117384962/DeepL.dmg",
+  "vendor_url": "https://www.deepl.com/macos/download/26.11/23117384962/DeepL.dmg",
   "bundleId": "com.linguee.DeepLCopyTranslator",
   "homepage": "https://www.deepl.com/",
   "homebrew_cask": "deepl",
   "fileName": "DeepL.dmg",
-  "sha": "85aacdd551fc4d876536f29322c1787c6089fec2bd132666bc3b76d5d043a88f",
+  "sha": "dfa27ea2700e02ef8cc84fcc9c62386b7a6f70766dea6e7a85b72fc6f90245b0",
   "changelog": "https://www.deepl.com/changelog.html",
   "qa_info": {
     "qa_timestamp": "2025-05-14T06:45:18Z",
@@ -22,12 +22,5 @@
   },
   "category": "Productivity",
   "publisher": "DeepL GmbH",
-  "previous_version": "26.11.13023090762",
-  "bundleIdEvidence": {
-    "inspector": "dmg-identity/1",
-    "artifactSha256": "85aacdd551fc4d876536f29322c1787c6089fec2bd132666bc3b76d5d043a88f",
-    "url": "https://www.deepl.com/macos/download/26.11/13023090762/DeepL.dmg",
-    "appName": "DeepL.app",
-    "bundleId": "com.linguee.DeepLCopyTranslator"
-  }
+  "previous_version": "26.11.13023090762"
 }
