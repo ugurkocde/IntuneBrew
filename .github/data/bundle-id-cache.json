@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-26T01:39:29.162Z",
+  "last_full_scan": "2026-11-27T00:15:23.701Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -9547,6 +9547,13 @@
       "status": "verified",
       "source": "file",
       "name": "ShichiZip"
+    },
+    "unsloth_desktop": {
+      "last_checked": "2026-11-27T00:15:23.700Z",
+      "bundle_id": "ai.unsloth.studio",
+      "status": "verified",
+      "source": "file",
+      "name": "Unsloth Desktop"
     }
   }
 }
