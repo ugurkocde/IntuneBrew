@@ -49,12 +49,12 @@ elif [ -f "$HOME/.duoconnect" ]; then
     rm -f "$HOME/.duoconnect" 2>/dev/null || true
 fi
 
-# Remove $HOME/Liibrary/Logs/Duo/Duoconnect
-echo "Removing $HOME/Liibrary/Logs/Duo/Duoconnect..."
-if [ -d "$HOME/Liibrary/Logs/Duo/Duoconnect" ]; then
-    rm -rf "$HOME/Liibrary/Logs/Duo/Duoconnect" 2>/dev/null || true
-elif [ -f "$HOME/Liibrary/Logs/Duo/Duoconnect" ]; then
-    rm -f "$HOME/Liibrary/Logs/Duo/Duoconnect" 2>/dev/null || true
+# Remove $HOME/Library/Logs/Duo/Duoconnect
+echo "Removing $HOME/Library/Logs/Duo/Duoconnect..."
+if [ -d "$HOME/Library/Logs/Duo/Duoconnect" ]; then
+    rm -rf "$HOME/Library/Logs/Duo/Duoconnect" 2>/dev/null || true
+elif [ -f "$HOME/Library/Logs/Duo/Duoconnect" ]; then
+    rm -f "$HOME/Library/Logs/Duo/Duoconnect" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Logs/Duo

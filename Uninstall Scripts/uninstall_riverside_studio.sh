@@ -23,12 +23,12 @@ launchctl unload -w /Library/LaunchAgents/RVS-Riverside.fm.Riverside-Helper.plis
 launchctl unload -w /Library/LaunchDaemons/RVS-Riverside.fm.Riverside-Helper.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/RVS-Riverside.fm.Riverside-Helper.plist 2>/dev/null || true
 
-# Remove /Applications/Riverside Studio.app
-echo "Removing /Applications/Riverside Studio.app..."
-if [ -d "/Applications/Riverside Studio.app" ]; then
-    rm -rf "/Applications/Riverside Studio.app" 2>/dev/null || true
-elif [ -f "/Applications/Riverside Studio.app" ]; then
-    rm -f "/Applications/Riverside Studio.app" 2>/dev/null || true
+# Remove /Applications/Riverside.app
+echo "Removing /Applications/Riverside.app..."
+if [ -d "/Applications/Riverside.app" ]; then
+    rm -rf "/Applications/Riverside.app" 2>/dev/null || true
+elif [ -f "/Applications/Riverside.app" ]; then
+    rm -f "/Applications/Riverside.app" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Application Scripts/RVS-Riverside.fm-Mac
