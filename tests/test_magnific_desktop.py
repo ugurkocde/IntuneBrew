@@ -99,6 +99,322 @@ class MagnificDesktopCollectorTests(unittest.TestCase):
                 )
             self.assertEqual(json.loads(target.read_text()), original)
 
+    def test_downgrade_or_ambiguous_version_preserves_existing_catalog_entry(self):
+        with tempfile.TemporaryDirectory() as root:
+            target = Path(root) / "magnific_desktop.json"
+            original = {
+                "name": "Magnific Desktop",
+                "version": "1.6.0",
+                "url": "https://cdn.magnific.com/ait/magnific-desktop/1.6.0/macos-aarch64.dmg",
+                "sha": "b" * 64,
+            }
+            target.write_text(json.dumps(original))
+
+            for candidate, expected_reason in (
+                ("1.5.7", "DETECTION_REGRESSION"),
+                ("1.6", "EQUAL_ORDER_TEXT_DIFFERS"),
+                ("1.6.0-beta.1", "PRIOR_ORDER_UNKNOWN"),
+            ):
+                with self.subTest(candidate=candidate):
+                    def fake_signed(url, bundle_id, *, team_id=None, _v=candidate):
+                        return collect.SignedBundleObservation(
+                            artifact_sha256="a" * 64,
+                            bundle_id=bundle_id,
+                            short_version=_v,
+                            bundle_version=_v,
+                            team_id=team_id,
+                        )
+
+                    with self.assertRaisesRegex(ValueError, expected_reason):
+                        collect.collect_direct_vendor_dmg(
+                            self.spec,
+                            apps_folder=root,
+                            inspect=fake_signed,
+                            fetch_manifest=lambda _url, _v=candidate: {"version": _v},
+                        )
+                    self.assertEqual(json.loads(target.read_text()), original)
+
+            # Same-version re-collection remains allowed.
+            refreshed = collect.collect_direct_vendor_dmg(
+                self.spec,
+                apps_folder=root,
+                inspect=lambda url, bundle_id, *, team_id=None: collect.SignedBundleObservation(
+                    artifact_sha256="b" * 64,
+                    bundle_id=bundle_id,
+                    short_version="1.6.0",
+                    bundle_version="1.6.0",
+                    team_id=team_id,
+                ),
+                fetch_manifest=lambda _url: {"version": "1.6.0"},
+            )
+            self.assertEqual(refreshed["version"], "1.6.0")
+            self.assertEqual(refreshed["previous_version"], "1.6.0")
+
+    def test_malformed_existing_prior_version_fails_closed_preserving_bytes(self):
+        malformed_payloads = (
+            ("missing_key", {"name": "Magnific Desktop", "url": "https://cdn.magnific.com/ait/magnific-desktop/1.6.0/macos-aarch64.dmg"}),
+            ("null_version", {"name": "Magnific Desktop", "version": None}),
+            ("empty_string", {"name": "Magnific Desktop", "version": ""}),
+            ("whitespace_string", {"name": "Magnific Desktop", "version": " 1.6.0 "}),
+            ("numeric_float", {"name": "Magnific Desktop", "version": 1.6}),
+            ("numeric_int", {"name": "Magnific Desktop", "version": 2}),
+            ("bool_value", {"name": "Magnific Desktop", "version": True}),
+            ("list_value", {"name": "Magnific Desktop", "version": ["1.6.0"]}),
+            ("dict_value", {"name": "Magnific Desktop", "version": {"v": "1.6.0"}}),
+            ("non_object_json", ["1.6.0"]),
+        )
+        for label, payload in malformed_payloads:
+            with self.subTest(case=label), tempfile.TemporaryDirectory() as root:
+                target = Path(root) / "magnific_desktop.json"
+                raw_bytes = json.dumps(payload, indent=2).encode("utf-8")
+                target.write_bytes(raw_bytes)
+                with self.assertRaisesRegex(ValueError, "PRIOR_ORDER_UNKNOWN"):
+                    collect.collect_direct_vendor_dmg(
+                        self.spec,
+                        apps_folder=root,
+                        inspect=lambda url, bundle_id, *, team_id=None: collect.SignedBundleObservation(
+                            artifact_sha256="a" * 64,
+                            bundle_id=bundle_id,
+                            short_version="1.5.7",
+                            bundle_version="1.5.7",
+                            team_id=team_id,
+                        ),
+                        fetch_manifest=lambda _url: {"version": "1.5.7"},
+                    )
+                self.assertEqual(target.read_bytes(), raw_bytes)
+
+    def test_symlink_or_non_regular_existing_catalog_path_fails_closed(self):
+        with tempfile.TemporaryDirectory() as root:
+            target = Path(root) / "magnific_desktop.json"
+            missing_dst = Path(root) / "missing.json"
+            os.symlink(missing_dst, target)
+            with self.assertRaisesRegex(ValueError, "PRIOR_ORDER_UNKNOWN"):
+                collect.collect_direct_vendor_dmg(
+                    self.spec,
+                    apps_folder=root,
+                    inspect=lambda url, bundle_id, *, team_id=None: collect.SignedBundleObservation(
+                        artifact_sha256="a" * 64,
+                        bundle_id=bundle_id,
+                        short_version="1.5.7",
+                        bundle_version="1.5.7",
+                        team_id=team_id,
+                    ),
+                    fetch_manifest=lambda _url: {"version": "1.5.7"},
+                )
+            self.assertTrue(os.path.islink(target))
+            self.assertEqual(Path(os.readlink(target)), missing_dst)
+
+        with tempfile.TemporaryDirectory() as root:
+            target = Path(root) / "magnific_desktop.json"
+            real_file = Path(root) / "real.json"
+            raw_bytes = json.dumps({"name": "Magnific Desktop", "version": "1.5.7"}).encode("utf-8")
+            real_file.write_bytes(raw_bytes)
+            os.symlink(real_file, target)
+            with self.assertRaisesRegex(ValueError, "PRIOR_ORDER_UNKNOWN"):
+                collect.collect_direct_vendor_dmg(
+                    self.spec,
+                    apps_folder=root,
+                    inspect=lambda url, bundle_id, *, team_id=None: collect.SignedBundleObservation(
+                        artifact_sha256="a" * 64,
+                        bundle_id=bundle_id,
+                        short_version="1.5.7",
+                        bundle_version="1.5.7",
+                        team_id=team_id,
+                    ),
+                    fetch_manifest=lambda _url: {"version": "1.5.7"},
+                )
+            self.assertTrue(os.path.islink(target))
+            self.assertEqual(real_file.read_bytes(), raw_bytes)
+
+        with tempfile.TemporaryDirectory() as root:
+            target = Path(root) / "magnific_desktop.json"
+            target.mkdir()
+            with self.assertRaisesRegex(ValueError, "PRIOR_ORDER_UNKNOWN"):
+                collect.collect_direct_vendor_dmg(
+                    self.spec,
+                    apps_folder=root,
+                    inspect=lambda url, bundle_id, *, team_id=None: collect.SignedBundleObservation(
+                        artifact_sha256="a" * 64,
+                        bundle_id=bundle_id,
+                        short_version="1.5.7",
+                        bundle_version="1.5.7",
+                        team_id=team_id,
+                    ),
+                    fetch_manifest=lambda _url: {"version": "1.5.7"},
+                )
+            self.assertTrue(target.is_dir())
+
+    def test_duplicate_keys_and_post_validation_destination_swap_fail_closed(self):
+        for label, raw_json in (
+            ("duplicate_higher_first", '{"version":"1.6.0","version":"1.4.0"}'),
+            ("duplicate_null_first", '{"version":null,"version":"1.4.0"}'),
+        ):
+            with self.subTest(case=label), tempfile.TemporaryDirectory() as root:
+                target = Path(root) / "magnific_desktop.json"
+                raw_bytes = raw_json.encode("utf-8")
+                target.write_bytes(raw_bytes)
+                with self.assertRaisesRegex(ValueError, "PRIOR_ORDER_UNKNOWN"):
+                    collect.collect_direct_vendor_dmg(
+                        self.spec,
+                        apps_folder=root,
+                        inspect=lambda url, bundle_id, *, team_id=None: collect.SignedBundleObservation(
+                            artifact_sha256="a" * 64,
+                            bundle_id=bundle_id,
+                            short_version="1.5.7",
+                            bundle_version="1.5.7",
+                            team_id=team_id,
+                        ),
+                        fetch_manifest=lambda _url: {"version": "1.5.7"},
+                    )
+                self.assertEqual(target.read_bytes(), raw_bytes)
+
+        with tempfile.TemporaryDirectory() as root:
+            target = Path(root) / "magnific_desktop.json"
+            target.write_text(json.dumps({"name": "Magnific Desktop", "version": "1.5.7"}))
+            decoy = Path(root) / "decoy.json"
+            decoy_bytes = b'{"keep": true}\n'
+            decoy.write_bytes(decoy_bytes)
+            real_fsync = os.fsync
+
+            def swap_to_symlink(fd):
+                real_fsync(fd)
+                os.unlink(target)
+                os.symlink(decoy, target)
+
+            with mock.patch.object(os, "fsync", side_effect=swap_to_symlink):
+                with self.assertRaisesRegex(ValueError, "PRIOR_ORDER_UNKNOWN"):
+                    collect.collect_direct_vendor_dmg(
+                        self.spec,
+                        apps_folder=root,
+                        inspect=lambda url, bundle_id, *, team_id=None: collect.SignedBundleObservation(
+                            artifact_sha256="a" * 64,
+                            bundle_id=bundle_id,
+                            short_version="1.5.7",
+                            bundle_version="1.5.7",
+                            team_id=team_id,
+                        ),
+                        fetch_manifest=lambda _url: {"version": "1.5.7"},
+                    )
+            self.assertTrue(os.path.islink(target))
+            self.assertEqual(decoy.read_bytes(), decoy_bytes)
+            self.assertEqual(list(Path(root).glob(".magnific_desktop.*.tmp")), [])
+
+        with tempfile.TemporaryDirectory() as root:
+            target = Path(root) / "magnific_desktop.json"
+            decoy = Path(root) / "decoy.json"
+            decoy.write_text('{"keep": true}\n')
+            real_fsync = os.fsync
+
+            def plant_symlink(fd):
+                real_fsync(fd)
+                os.symlink(decoy, target)
+
+            with mock.patch.object(os, "fsync", side_effect=plant_symlink):
+                with self.assertRaisesRegex(ValueError, "PRIOR_ORDER_UNKNOWN"):
+                    collect.collect_direct_vendor_dmg(
+                        self.spec,
+                        apps_folder=root,
+                        inspect=lambda url, bundle_id, *, team_id=None: collect.SignedBundleObservation(
+                            artifact_sha256="a" * 64,
+                            bundle_id=bundle_id,
+                            short_version="1.5.7",
+                            bundle_version="1.5.7",
+                            team_id=team_id,
+                        ),
+                        fetch_manifest=lambda _url: {"version": "1.5.7"},
+                    )
+            self.assertTrue(os.path.islink(target))
+            self.assertEqual(list(Path(root).glob(".magnific_desktop.*.tmp")), [])
+
+    def test_overflowing_float_fails_closed_and_concurrent_collectors_serialize(self):
+        import subprocess
+
+        with tempfile.TemporaryDirectory() as root:
+            target = Path(root) / "magnific_desktop.json"
+            overflow_bytes = b'{"version": "1.5.7", "extra": 1e309}\n'
+            target.write_bytes(overflow_bytes)
+            with self.assertRaisesRegex(ValueError, "PRIOR_ORDER_UNKNOWN"):
+                collect.collect_direct_vendor_dmg(
+                    self.spec,
+                    apps_folder=root,
+                    inspect=lambda url, bundle_id, *, team_id=None: collect.SignedBundleObservation(
+                        artifact_sha256="a" * 64,
+                        bundle_id=bundle_id,
+                        short_version="1.5.7",
+                        bundle_version="1.5.7",
+                        team_id=team_id,
+                    ),
+                    fetch_manifest=lambda _url: {"version": "1.5.7"},
+                )
+            self.assertEqual(target.read_bytes(), overflow_bytes)
+
+        with tempfile.TemporaryDirectory() as root:
+            target = Path(root) / "magnific_desktop.json"
+            target.write_text(json.dumps({"name": "Magnific Desktop", "version": "1.4.0", "extra": 1e2}))
+            entered_marker = Path(root) / ".entered"
+            release_marker = Path(root) / ".release"
+            script_dir = str(Path(__file__).resolve().parents[1] / ".github" / "scripts")
+            child_code = (
+                "import sys\n"
+                f"sys.path.insert(0, {script_dir!r})\n"
+                "import collect_app_info as collect\n"
+                "spec = next(a for a in collect.DIRECT_VENDOR_DMG_APPS if a.slug == 'magnific_desktop')\n"
+                "try:\n"
+                "    collect.collect_direct_vendor_dmg(\n"
+                "        spec,\n"
+                f"        apps_folder={root!r},\n"
+                "        inspect=lambda url, bid, *, team_id=None: collect.SignedBundleObservation(\n"
+                "            artifact_sha256='a'*64, bundle_id=bid, short_version='1.5.7', bundle_version='1.5.7', team_id=team_id\n"
+                "        ),\n"
+                "        fetch_manifest=lambda _url: {'version': '1.5.7'},\n"
+                "    )\n"
+                "    sys.exit(0)\n"
+                "except ValueError as exc:\n"
+                "    print(str(exc))\n"
+                "    sys.exit(2)\n"
+            )
+            real_fsync = os.fsync
+            child_holder = {}
+            child_blocked = []
+
+            def hold_during_fsync(fd):
+                real_fsync(fd)
+                entered_marker.write_text("1")
+                child_holder["proc"] = subprocess.Popen(
+                    [sys.executable, "-c", child_code],
+                    stdout=subprocess.PIPE,
+                    stderr=subprocess.PIPE,
+                    text=True,
+                )
+                import time
+                time.sleep(0.25)
+                child_blocked.append(child_holder["proc"].poll() is None)
+
+            try:
+                with mock.patch.object(os, "fsync", side_effect=hold_during_fsync):
+                    collect.collect_direct_vendor_dmg(
+                        self.spec,
+                        apps_folder=root,
+                        inspect=lambda url, bundle_id, *, team_id=None: collect.SignedBundleObservation(
+                            artifact_sha256="b" * 64,
+                            bundle_id=bundle_id,
+                            short_version="1.6.0",
+                            bundle_version="1.6.0",
+                            team_id=team_id,
+                        ),
+                        fetch_manifest=lambda _url: {"version": "1.6.0"},
+                    )
+            finally:
+                proc = child_holder.get("proc")
+                stdout, stderr = proc.communicate(timeout=10) if proc is not None else ("", "")
+            self.assertEqual(child_blocked, [True], f"child exited early: {stderr}")
+            self.assertEqual(proc.returncode, 2, stderr)
+            self.assertIn("DETECTION_REGRESSION", stdout)
+            saved = json.loads(target.read_text())
+            self.assertEqual(saved["version"], "1.6.0")
+            self.assertEqual(saved["extra"], 100.0)
+            self.assertFalse(release_marker.exists())
+
     def test_missing_whitespace_or_mismatched_version_refused(self):
         with tempfile.TemporaryDirectory() as root:
             for bad_manifest in ("", " ", "1.5.7 ", "../1.5.7", "1.5.7/evil"):

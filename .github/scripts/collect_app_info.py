@@ -1,6 +1,8 @@
 import json
 import contextlib
+import fcntl
 import io
+import math
 import stat
 import os
 import plistlib
@@ -1561,51 +1563,178 @@ def collect_direct_vendor_dmg(spec, apps_folder="Apps", *, inspect=None, fetch_m
         raise ValueError(
             f"Direct vendor DMG version mismatch for {spec.slug}: manifest={declared_version!r} signed={version!r}"
         )
+    os.makedirs(apps_folder, exist_ok=True)
+    dir_fd = os.open(apps_folder, os.O_RDONLY | getattr(os, "O_DIRECTORY", 0))
     file_path = os.path.join(apps_folder, f"{spec.slug}.json")
     previous = {}
-    if os.path.exists(file_path):
-        with open(file_path, "r") as f:
-            previous = json.load(f)
-    previous_version = previous.get("version") or version
-    app_data = {
-        **previous,
-        "name": spec.name,
-        "description": spec.description,
-        "version": version,
-        "previous_version": previous_version,
-        "url": download_url,
-        "vendor_url": download_url,
-        "sha": observation.artifact_sha256,
-        "bundleId": observation.bundle_id,
-        "homepage": spec.homepage,
-        "fileName": spec.file_name,
-        "publisher": spec.publisher,
-        "category": previous.get("category") or spec.category,
-        "custom_source": spec.slug,
-        "bundleIdEvidence": {
-            "inspector": observation.inspector,
-            "artifactSha256": observation.artifact_sha256,
-            "url": download_url,
-            "bundleId": observation.bundle_id,
-            "teamId": observation.team_id,
-        },
-    }
-    os.makedirs(apps_folder, exist_ok=True)
-    fd, tmp_path = tempfile.mkstemp(prefix=f".{spec.slug}.", suffix=".tmp", dir=apps_folder)
+    existing_fd = None
+    prior_stat = None
     try:
-        with os.fdopen(fd, "w") as f:
-            os.fchmod(f.fileno(), 0o644)
-            json.dump(app_data, f, indent=2)
-            f.write("\n")
-            f.flush()
-            os.fsync(f.fileno())
-        os.replace(tmp_path, file_path)
-    except Exception:
+        fcntl.flock(dir_fd, fcntl.LOCK_EX)
+        has_existing = os.path.lexists(file_path)
+        if has_existing:
+            if os.path.islink(file_path):
+                raise ValueError(
+                    f"Direct vendor DMG existing catalog path is a symlink for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                )
+            flags = os.O_RDONLY | getattr(os, "O_NOFOLLOW", 0) | getattr(os, "O_NONBLOCK", 0)
+            try:
+                existing_fd = os.open(file_path, flags)
+            except OSError as exc:
+                raise ValueError(
+                    f"Direct vendor DMG existing catalog entry unreadable for {spec.slug}: {exc} (PRIOR_ORDER_UNKNOWN)"
+                ) from None
+            prior_stat = os.fstat(existing_fd)
+            if not stat.S_ISREG(prior_stat.st_mode):
+                raise ValueError(
+                    f"Direct vendor DMG existing catalog entry is not a regular file for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                )
+            dup_fd = os.dup(existing_fd)
+            try:
+                f = os.fdopen(dup_fd, "r", encoding="utf-8")
+            except Exception:
+                os.close(dup_fd)
+                raise
+
+            def _no_duplicate_keys(pairs):
+                obj = {}
+                for key, value in pairs:
+                    if key in obj:
+                        raise ValueError(
+                            f"Direct vendor DMG existing catalog entry has duplicate key {key!r} for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                        )
+                    obj[key] = value
+                return obj
+
+            def _reject_constant(token):
+                raise ValueError(
+                    f"Direct vendor DMG existing catalog entry has invalid JSON constant {token!r} for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                )
+
+            def _parse_finite_float(raw):
+                value = float(raw)
+                if not math.isfinite(value):
+                    raise ValueError(
+                        f"Direct vendor DMG existing catalog entry has non-finite float {raw!r} for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                    )
+                return value
+
+            with f:
+                loaded = json.load(
+                    f,
+                    object_pairs_hook=_no_duplicate_keys,
+                    parse_constant=_reject_constant,
+                    parse_float=_parse_finite_float,
+                )
+            if not isinstance(loaded, dict):
+                raise ValueError(
+                    f"Direct vendor DMG existing catalog entry invalid for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                )
+            previous = loaded
+        prior_version = previous.get("version")
+        if has_existing:
+            if not isinstance(prior_version, str) or not prior_version or prior_version != prior_version.strip():
+                raise ValueError(
+                    f"Direct vendor DMG version order unknown for {spec.slug}: "
+                    f"prior={prior_version!r} signed={version!r} (PRIOR_ORDER_UNKNOWN)"
+                )
+            if prior_version != version:
+                # Mirror version_relation.reconcile() regression guards so a stale vendor
+                # manifest can never downgrade or ambiguously rewrite a newer entry.
+                def _numeric_tuple(raw):
+                    if not re.fullmatch(r"(?:0|[1-9][0-9]{0,17})(?:\.(?:0|[1-9][0-9]{0,17}))*", raw):
+                        return None
+                    return tuple(int(part) for part in raw.split("."))
+
+                new_tuple, old_tuple = _numeric_tuple(version), _numeric_tuple(prior_version)
+                if new_tuple is None or old_tuple is None:
+                    raise ValueError(
+                        f"Direct vendor DMG version order unknown for {spec.slug}: "
+                        f"prior={prior_version!r} signed={version!r} (PRIOR_ORDER_UNKNOWN)"
+                    )
+                width = max(len(new_tuple), len(old_tuple))
+                new_pad = new_tuple + (0,) * (width - len(new_tuple))
+                old_pad = old_tuple + (0,) * (width - len(old_tuple))
+                if new_pad <= old_pad:
+                    reason = "DETECTION_REGRESSION" if new_pad < old_pad else "EQUAL_ORDER_TEXT_DIFFERS"
+                    raise ValueError(
+                        f"Direct vendor DMG version regression for {spec.slug}: "
+                        f"prior={prior_version!r} signed={version!r} ({reason})"
+                    )
+        previous_version = prior_version if has_existing else version
+        app_data = {
+            **previous,
+            "name": spec.name,
+            "description": spec.description,
+            "version": version,
+            "previous_version": previous_version,
+            "url": download_url,
+            "vendor_url": download_url,
+            "sha": observation.artifact_sha256,
+            "bundleId": observation.bundle_id,
+            "homepage": spec.homepage,
+            "fileName": spec.file_name,
+            "publisher": spec.publisher,
+            "category": previous.get("category") or spec.category,
+            "custom_source": spec.slug,
+            "bundleIdEvidence": {
+                "inspector": observation.inspector,
+                "artifactSha256": observation.artifact_sha256,
+                "url": download_url,
+                "bundleId": observation.bundle_id,
+                "teamId": observation.team_id,
+            },
+        }
+        fd, tmp_path = tempfile.mkstemp(prefix=f".{spec.slug}.", suffix=".tmp", dir=apps_folder)
+        tmp_unlinked = False
         try:
-            os.unlink(tmp_path)
-        except OSError:
-            pass
-        raise
+            with os.fdopen(fd, "w") as f:
+                os.fchmod(f.fileno(), 0o644)
+                json.dump(app_data, f, indent=2, allow_nan=False)
+                f.write("\n")
+                f.flush()
+                os.fsync(f.fileno())
+            if has_existing:
+                try:
+                    cur_stat = os.lstat(file_path)
+                except OSError as exc:
+                    raise ValueError(
+                        f"Direct vendor DMG destination missing after validation for {spec.slug}: {exc} (PRIOR_ORDER_UNKNOWN)"
+                    ) from None
+                if (
+                    not stat.S_ISREG(cur_stat.st_mode)
+                    or (cur_stat.st_dev, cur_stat.st_ino) != (prior_stat.st_dev, prior_stat.st_ino)
+                    or cur_stat.st_size != prior_stat.st_size
+                    or cur_stat.st_mtime_ns != prior_stat.st_mtime_ns
+                ):
+                    raise ValueError(
+                        f"Direct vendor DMG destination changed after validation for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                    )
+                os.replace(tmp_path, file_path)
+                tmp_unlinked = True
+            else:
+                try:
+                    os.link(tmp_path, file_path)
+                except FileExistsError:
+                    raise ValueError(
+                        f"Direct vendor DMG destination appeared after validation for {spec.slug} (PRIOR_ORDER_UNKNOWN)"
+                    ) from None
+                os.unlink(tmp_path)
+                tmp_unlinked = True
+        except Exception:
+            if not tmp_unlinked:
+                try:
+                    os.unlink(tmp_path)
+                except OSError:
+                    pass
+            raise
+    finally:
+        if existing_fd is not None:
+            os.close(existing_fd)
+        try:
+            fcntl.flock(dir_fd, fcntl.LOCK_UN)
+        finally:
+            os.close(dir_fd)
     return app_data
 
 
