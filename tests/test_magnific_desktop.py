@@ -335,6 +335,124 @@ class MagnificDesktopCollectorTests(unittest.TestCase):
             server.shutdown()
             server.server_close()
 
+    def _make_fake_app(self, app_dir, bundle_id="com.freepik.magnific.desktop", version="1.5.7"):
+        import plistlib
+
+        contents = Path(app_dir) / "Contents"
+        contents.mkdir(parents=True, exist_ok=True)
+        with (contents / "Info.plist").open("wb") as handle:
+            plistlib.dump(
+                {
+                    "CFBundleIdentifier": bundle_id,
+                    "CFBundleShortVersionString": version,
+                    "CFBundleVersion": version,
+                },
+                handle,
+            )
+
+    def test_signed_dmg_rejects_unexpected_sibling_or_nested_bundles(self):
+        cases = [
+            ("sibling_app", lambda root: self._make_fake_app(root / "Evil.app", bundle_id="com.evil.extra")),
+            ("uppercase_app", lambda root: self._make_fake_app(root / "Evil.APP", bundle_id="com.evil.extra")),
+            ("nested_app", lambda root: self._make_fake_app(root / "Extras" / "Evil.app", bundle_id="com.evil.extra")),
+            ("deep_nested_app", lambda root: self._make_fake_app(root / "A" / "B" / "Evil.app", bundle_id="com.evil.extra")),
+            ("hidden_dir_app", lambda root: self._make_fake_app(root / ".background" / "Evil.app", bundle_id="com.evil.extra")),
+            ("trashes_app", lambda root: self._make_fake_app(root / ".Trashes" / "Evil.app", bundle_id="com.evil.extra")),
+            ("symlink_app", lambda root: os.symlink("/Applications/Safari.app", root / "Alias.app")),
+            ("symlink_to_app_target", lambda root: os.symlink("/Applications/Safari.app/", root / "Sneaky")),
+            ("pkg_file", lambda root: (root / "Extra.pkg").write_bytes(b"pkg")),
+            ("mpkg_dir", lambda root: (root / "Extras" / "Extra.mpkg").mkdir(parents=True)),
+            ("disguised_bundle_dir", lambda root: self._make_fake_app(root / "NotNamedApp", bundle_id="com.evil.hidden")),
+            ("non_dir_app_file", lambda root: (root / "Fake.app").write_bytes(b"not-a-dir")),
+        ]
+        for name, mutate in cases:
+            with self.subTest(case=name), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                self._make_fake_app(root / "Magnific.app")
+                mutate(root)
+                with mock.patch.object(collect.subprocess, "run") as run_codesign:
+                    result = collect._mounted_bundle_metadata(
+                        root, "com.freepik.magnific.desktop", team_id="CCAL5Z426N"
+                    )
+                self.assertIsInstance(result, collect.InspectionRefusal)
+                self.assertEqual((result.code, result.integrity), ("UNEXPECTED_BUNDLE", True))
+                run_codesign.assert_not_called()
+
+    def test_signed_dmg_allows_standard_single_app_with_internal_helper_and_applications_link(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self._make_fake_app(root / "Magnific.app")
+            self._make_fake_app(
+                root / "Magnific.app" / "Contents" / "Helpers" / "MagnificHelper.app",
+                bundle_id="com.freepik.magnific.helper",
+            )
+            os.symlink("/Applications", root / "Applications")
+            (root / ".background").mkdir()
+            (root / ".background" / "bg.png").write_bytes(b"png")
+            (root / ".DS_Store").write_bytes(b"ds")
+            with mock.patch.object(
+                collect.subprocess, "run", return_value=mock.Mock(returncode=0)
+            ) as run_codesign:
+                result = collect._mounted_bundle_metadata(
+                    root, "com.freepik.magnific.desktop", team_id="CCAL5Z426N"
+                )
+            self.assertEqual(result, ("1.5.7", "1.5.7"))
+            run_codesign.assert_called_once()
+
+    def test_signed_dmg_fails_closed_on_unreadable_volume_metadata_or_descendant(self):
+        for rel_parts in ((".Trashes",), (".Trashes", "nested")):
+            with self.subTest(path="/".join(rel_parts)), tempfile.TemporaryDirectory() as tmp:
+                root = Path(tmp)
+                self._make_fake_app(root / "Magnific.app")
+                blocked_dir = root.joinpath(*rel_parts)
+                blocked_dir.mkdir(parents=True)
+                os.chmod(blocked_dir, 0o000)
+                try:
+                    with mock.patch.object(collect.subprocess, "run") as run_codesign:
+                        result = collect._mounted_bundle_metadata(
+                            root, "com.freepik.magnific.desktop", team_id="CCAL5Z426N"
+                        )
+                    self.assertIsInstance(result, collect.InspectionRefusal)
+                    self.assertEqual((result.code, result.integrity), ("CANDIDATE_UNREADABLE", True))
+                    run_codesign.assert_not_called()
+                finally:
+                    os.chmod(blocked_dir, 0o700)
+
+    def test_signed_dmg_enforces_entry_budget_while_streaming_scandir(self):
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            self._make_fake_app(root / "Magnific.app")
+            yielded = {"count": 0}
+
+            class FakeEntry:
+                def __init__(self, idx):
+                    self.name = f"file-{idx}.txt"
+                    self.path = str(root / self.name)
+                def is_symlink(self):
+                    return False
+                def is_dir(self, *, follow_symlinks=True):
+                    return False
+
+            class FakeScan:
+                def __enter__(self):
+                    return self
+                def __exit__(self, *args):
+                    return False
+                def __iter__(self):
+                    for idx in range(5000):
+                        yielded["count"] += 1
+                        yield FakeEntry(idx)
+
+            with mock.patch.object(collect.os, "scandir", return_value=FakeScan()), \
+                    mock.patch.object(collect.subprocess, "run") as run_codesign:
+                result = collect._mounted_bundle_metadata(
+                    root, "com.freepik.magnific.desktop", team_id="CCAL5Z426N"
+                )
+            self.assertIsInstance(result, collect.InspectionRefusal)
+            self.assertEqual((result.code, result.integrity), ("CANDIDATE_UNREADABLE", True))
+            self.assertEqual(yielded["count"], 2001)
+            run_codesign.assert_not_called()
+
 
 if __name__ == "__main__":
     unittest.main()

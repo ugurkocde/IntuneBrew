@@ -1818,33 +1818,91 @@ def _mounted_bundle_metadata(mount_point, bundle_id, team_id=None, *, app_name=N
                     or len(app_name) > 255 or team_id is not None):
                 return InspectionRefusal('APP_NAME_INVALID', True)
             expected_name = unicodedata.normalize('NFD', app_name)
-        for entry in sorted(mount.iterdir()):
-            if app_name is not None:
-                # Discovery uses only the exact cask-declared root app, never a
-                # helper, uninstaller or an app found inside another directory.
-                if (unicodedata.normalize('NFD', entry.name) == expected_name
-                        and not entry.is_symlink()):
+        if team_id is not None:
+            # Signed direct-vendor DMGs are uploaded intact to Intune, which can
+            # deploy sibling apps from the mounted volume. Stream-walk the whole
+            # volume without following symlinks and fail closed on any unreadable
+            # directory, budget overflow, or unexpected bundle.
+            volume_meta = {".Trashes", ".TemporaryItems", ".Spotlight-V100",
+                           ".fseventsd", ".DocumentRevisions-V100"}
+            unexpected_suffixes = (".pkg", ".mpkg")
+            stack = [(mount, 0, False)]
+            seen_entries = 0
+            while stack:
+                current_dir, depth, in_vol_meta = stack.pop()
+                if depth > 16:
+                    return InspectionRefusal("CANDIDATE_UNREADABLE", True)
+                stage = "root_enumeration" if depth == 0 else "container_enumeration"
+                entries = []
+                with os.scandir(current_dir) as it:
+                    for dirent in it:
+                        seen_entries += 1
+                        if seen_entries > 2000:
+                            return InspectionRefusal("CANDIDATE_UNREADABLE", True)
+                        entries.append(dirent)
+                entries.sort(key=lambda item: item.name)
+                for dirent in entries:
+                    entry = Path(dirent.path)
+                    if depth == 0:
+                        container = {".fseventsd": "fseventsd", ".background": "background",
+                                     ".DocumentRevisions-V100": "document_revisions",
+                                     ".Spotlight-V100": "spotlight", ".TemporaryItems": "temporary_items",
+                                     ".HFS+ Private Directory Data\r": "hfs_private"}.get(
+                                         dirent.name, "other_hidden" if dirent.name.startswith(".") else "other_visible")
+                    folded = dirent.name.casefold()
+                    stage = "entry_symlink"
+                    if dirent.is_symlink():
+                        if folded.endswith(".app") or folded.endswith(unexpected_suffixes):
+                            return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+                        link_target = os.readlink(entry).rstrip("/").casefold()
+                        if link_target.endswith((".app", ".pkg", ".mpkg")):
+                            return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+                        continue
+                    stage = "entry_classification"
+                    if folded.endswith(unexpected_suffixes):
+                        return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+                    if folded.endswith(".app"):
+                        if in_vol_meta or depth > 1 or not dirent.is_dir(follow_symlinks=False):
+                            return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+                        candidates.append(entry)
+                        continue
+                    if dirent.is_dir(follow_symlinks=False):
+                        contents_dir = entry / "Contents"
+                        if (contents_dir.is_dir(follow_symlinks=False)
+                                and os.path.lexists(contents_dir / "Info.plist")):
+                            return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+                        child_vol_meta = in_vol_meta or (depth == 0 and dirent.name in volume_meta)
+                        stack.append((entry, depth + 1, child_vol_meta))
+            if len(candidates) > 1:
+                return InspectionRefusal("UNEXPECTED_BUNDLE", True)
+        else:
+            for entry in sorted(mount.iterdir()):
+                if app_name is not None:
+                    # Discovery uses only the exact cask-declared root app, never a
+                    # helper, uninstaller or an app found inside another directory.
+                    if (unicodedata.normalize('NFD', entry.name) == expected_name
+                            and not entry.is_symlink()):
+                        candidates.append(entry)
+                    continue
+                container = {".fseventsd": "fseventsd", ".background": "background",
+                             ".DocumentRevisions-V100": "document_revisions",
+                             ".Spotlight-V100": "spotlight", ".TemporaryItems": "temporary_items",
+                             ".HFS+ Private Directory Data\r": "hfs_private"}.get(
+                                 entry.name, "other_hidden" if entry.name.startswith(".") else "other_visible")
+                stage = "entry_symlink"
+                if entry.is_symlink():
+                    continue
+                stage = "entry_classification"
+                if entry.suffix == ".app":
                     candidates.append(entry)
-                continue
-            container = {".fseventsd": "fseventsd", ".background": "background",
-                         ".DocumentRevisions-V100": "document_revisions",
-                         ".Spotlight-V100": "spotlight", ".TemporaryItems": "temporary_items",
-                         ".HFS+ Private Directory Data\r": "hfs_private"}.get(
-                             entry.name, "other_hidden" if entry.name.startswith(".") else "other_visible")
-            stage = "entry_symlink"
-            if entry.is_symlink():
-                continue
-            stage = "entry_classification"
-            if entry.suffix == ".app":
-                candidates.append(entry)
-            elif entry.name in {".Trashes", ".TemporaryItems", ".Spotlight-V100",
-                                ".fseventsd", ".DocumentRevisions-V100"}:
-                # These volume metadata folders are never app installation sources.
-                continue
-            elif entry.is_dir():
-                stage = "container_enumeration"
-                candidates.extend(child for child in sorted(entry.iterdir())
-                                  if child.suffix == ".app" and not child.is_symlink())
+                elif entry.name in {".Trashes", ".TemporaryItems", ".Spotlight-V100",
+                                    ".fseventsd", ".DocumentRevisions-V100"}:
+                    # These volume metadata folders are never app installation sources.
+                    continue
+                elif entry.is_dir():
+                    stage = "container_enumeration"
+                    candidates.extend(child for child in sorted(entry.iterdir())
+                                      if child.suffix == ".app" and not child.is_symlink())
         matches = []
         container = None
         for app in candidates:
