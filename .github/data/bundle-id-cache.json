@@ -1,7 +1,7 @@
 {
   "version": 1,
   "description": "Cache file tracking which apps have had their bundle IDs verified by OpenAI",
-  "last_full_scan": "2026-11-27T00:23:31.528Z",
+  "last_full_scan": "2026-11-27T01:17:22.308Z",
   "apps": {
     "1password": {
       "last_checked": "2026-01-15T09:38:57.586Z",
@@ -7809,10 +7809,16 @@
       "name": "Thonny"
     },
     "threema": {
-      "last_checked": "2026-01-17T10:34:29.128Z",
-      "bundle_id": "ch.threema.threema",
-      "status": "verified",
-      "source": "file",
+      "last_checked": "2026-11-27T01:17:22.304Z",
+      "bundle_id": "threema-consumer-web",
+      "status": "unknown",
+      "methods_tried": [
+        "mac_app_store",
+        "pkg_inspection",
+        "github_search",
+        "openai_improved",
+        "openai_alternative"
+      ],
       "name": "Threema"
     },
     "thumbsup": {
@@ -8096,8 +8102,8 @@
       "name": "Ukelele"
     },
     "ultimaker_cura": {
-      "last_checked": "2026-01-17T08:38:03.488Z",
-      "bundle_id": "nl.ultimaker.cura.dmg",
+      "last_checked": "2026-11-27T01:17:22.305Z",
+      "bundle_id": "nl.ultimaker.cura_UltiMaker_Cura",
       "status": "verified",
       "source": "file",
       "name": "UltiMaker Cura"
@@ -8222,8 +8228,8 @@
       "name": "VirtualBuddy"
     },
     "viscosity": {
-      "last_checked": "2026-01-17T08:38:03.491Z",
-      "bundle_id": "com.sparklabs.ViscosityHelper",
+      "last_checked": "2026-11-27T01:17:22.306Z",
+      "bundle_id": "com.viscosityvpn.Viscosity",
       "status": "verified",
       "source": "file",
       "name": "Viscosity"
