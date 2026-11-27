@@ -15,5 +15,7 @@
     "url": "https://github.com/unslothai/unsloth/releases/download/v0.1.925-beta/Unsloth-Desktop-MacOS.dmg",
     "appName": "Unsloth.app",
     "bundleId": "ai.unsloth.studio"
-  }
+  },
+  "category": "Productivity",
+  "publisher": "Unsloth Studio"
 }
