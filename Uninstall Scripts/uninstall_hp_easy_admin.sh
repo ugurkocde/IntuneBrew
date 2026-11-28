@@ -17,6 +17,10 @@ fi
 echo "Stopping HP Easy Admin if running..."
 pkill -f "HP Easy Admin" 2>/dev/null || true
 
+# Kill application with bundle ID com.hp.hp-easy-admin if running
+echo "Stopping application with bundle ID com.hp.hp-easy-admin if running..."
+killall -9 "com.hp.hp-easy-admin" 2>/dev/null || true
+
 # Remove /Applications/HP Easy Admin.app
 echo "Removing /Applications/HP Easy Admin.app..."
 if [ -d "/Applications/HP Easy Admin.app" ]; then

@@ -31,6 +31,14 @@ elif [ -f "/Applications/Riverside.app" ]; then
     rm -f "/Applications/Riverside.app" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/group.com.riverside.macapp.shared
+echo "Removing $HOME/Library/Application Scripts/group.com.riverside.macapp.shared..."
+if [ -d "$HOME/Library/Application Scripts/group.com.riverside.macapp.shared" ]; then
+    rm -rf "$HOME/Library/Application Scripts/group.com.riverside.macapp.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/group.com.riverside.macapp.shared" ]; then
+    rm -f "$HOME/Library/Application Scripts/group.com.riverside.macapp.shared" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Application Scripts/RVS-Riverside.fm-Mac
 echo "Removing $HOME/Library/Application Scripts/RVS-Riverside.fm-Mac..."
 if [ -d "$HOME/Library/Application Scripts/RVS-Riverside.fm-Mac" ]; then
@@ -39,12 +47,36 @@ elif [ -f "$HOME/Library/Application Scripts/RVS-Riverside.fm-Mac" ]; then
     rm -f "$HOME/Library/Application Scripts/RVS-Riverside.fm-Mac" 2>/dev/null || true
 fi
 
+# Remove $HOME/Library/Application Scripts/RVS-Riverside.fm.Riverside-Helper
+echo "Removing $HOME/Library/Application Scripts/RVS-Riverside.fm.Riverside-Helper..."
+if [ -d "$HOME/Library/Application Scripts/RVS-Riverside.fm.Riverside-Helper" ]; then
+    rm -rf "$HOME/Library/Application Scripts/RVS-Riverside.fm.Riverside-Helper" 2>/dev/null || true
+elif [ -f "$HOME/Library/Application Scripts/RVS-Riverside.fm.Riverside-Helper" ]; then
+    rm -f "$HOME/Library/Application Scripts/RVS-Riverside.fm.Riverside-Helper" 2>/dev/null || true
+fi
+
 # Remove $HOME/Library/Containers/RVS-Riverside.fm-Mac
 echo "Removing $HOME/Library/Containers/RVS-Riverside.fm-Mac..."
 if [ -d "$HOME/Library/Containers/RVS-Riverside.fm-Mac" ]; then
     rm -rf "$HOME/Library/Containers/RVS-Riverside.fm-Mac" 2>/dev/null || true
 elif [ -f "$HOME/Library/Containers/RVS-Riverside.fm-Mac" ]; then
     rm -f "$HOME/Library/Containers/RVS-Riverside.fm-Mac" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Containers/RVS-Riverside.fm.Riverside-Helper
+echo "Removing $HOME/Library/Containers/RVS-Riverside.fm.Riverside-Helper..."
+if [ -d "$HOME/Library/Containers/RVS-Riverside.fm.Riverside-Helper" ]; then
+    rm -rf "$HOME/Library/Containers/RVS-Riverside.fm.Riverside-Helper" 2>/dev/null || true
+elif [ -f "$HOME/Library/Containers/RVS-Riverside.fm.Riverside-Helper" ]; then
+    rm -f "$HOME/Library/Containers/RVS-Riverside.fm.Riverside-Helper" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Group Containers/group.com.riverside.macapp.shared
+echo "Removing $HOME/Library/Group Containers/group.com.riverside.macapp.shared..."
+if [ -d "$HOME/Library/Group Containers/group.com.riverside.macapp.shared" ]; then
+    rm -rf "$HOME/Library/Group Containers/group.com.riverside.macapp.shared" 2>/dev/null || true
+elif [ -f "$HOME/Library/Group Containers/group.com.riverside.macapp.shared" ]; then
+    rm -f "$HOME/Library/Group Containers/group.com.riverside.macapp.shared" 2>/dev/null || true
 fi
 
 echo "Uninstallation complete!"

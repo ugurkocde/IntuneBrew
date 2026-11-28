@@ -59,12 +59,28 @@ launchctl unload -w /Library/LaunchAgents/org.pqrs.karabiner.NotificationWindow.
 launchctl unload -w /Library/LaunchDaemons/org.pqrs.karabiner.NotificationWindow.plist 2>/dev/null || true
 launchctl unload -w ~/Library/LaunchAgents/org.pqrs.karabiner.NotificationWindow.plist 2>/dev/null || true
 
-# Remove /usr/local/bin//Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli
-echo "Removing /usr/local/bin//Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli..."
-if [ -d "/usr/local/bin//Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli" ]; then
-    rm -rf "/usr/local/bin//Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli" 2>/dev/null || true
-elif [ -f "/usr/local/bin//Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli" ]; then
-    rm -f "/usr/local/bin//Library/Application Support/org.pqrs/Karabiner-Elements/bin/karabiner_cli" 2>/dev/null || true
+# Unload service org.pqrs.service.agent.Karabiner-Console-User-Server-v3
+echo "Unloading service org.pqrs.service.agent.Karabiner-Console-User-Server-v3..."
+launchctl unload -w /Library/LaunchAgents/org.pqrs.service.agent.Karabiner-Console-User-Server-v3.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/org.pqrs.service.agent.Karabiner-Console-User-Server-v3.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/org.pqrs.service.agent.Karabiner-Console-User-Server-v3.plist 2>/dev/null || true
+
+# Unload service org.pqrs.service.agent.Karabiner-Core-Service-v3
+echo "Unloading service org.pqrs.service.agent.Karabiner-Core-Service-v3..."
+launchctl unload -w /Library/LaunchAgents/org.pqrs.service.agent.Karabiner-Core-Service-v3.plist 2>/dev/null || true
+launchctl unload -w /Library/LaunchDaemons/org.pqrs.service.agent.Karabiner-Core-Service-v3.plist 2>/dev/null || true
+launchctl unload -w ~/Library/LaunchAgents/org.pqrs.service.agent.Karabiner-Core-Service-v3.plist 2>/dev/null || true
+
+# Kill application with bundle ID org.pqrs.Karabiner-Elements.Settings if running
+echo "Stopping application with bundle ID org.pqrs.Karabiner-Elements.Settings if running..."
+killall -9 "org.pqrs.Karabiner-Elements.Settings" 2>/dev/null || true
+
+# Remove /usr/local/bin//Applications/Karabiner-Elements.app/Contents/Helpers/karabiner_cli
+echo "Removing /usr/local/bin//Applications/Karabiner-Elements.app/Contents/Helpers/karabiner_cli..."
+if [ -d "/usr/local/bin//Applications/Karabiner-Elements.app/Contents/Helpers/karabiner_cli" ]; then
+    rm -rf "/usr/local/bin//Applications/Karabiner-Elements.app/Contents/Helpers/karabiner_cli" 2>/dev/null || true
+elif [ -f "/usr/local/bin//Applications/Karabiner-Elements.app/Contents/Helpers/karabiner_cli" ]; then
+    rm -f "/usr/local/bin//Applications/Karabiner-Elements.app/Contents/Helpers/karabiner_cli" 2>/dev/null || true
 fi
 
 # Remove $HOME/.config/karabiner
@@ -121,6 +137,14 @@ if [ -d "$HOME/Library/HTTPStorages/org.pqrs.Karabiner-Elements.Settings" ]; the
     rm -rf "$HOME/Library/HTTPStorages/org.pqrs.Karabiner-Elements.Settings" 2>/dev/null || true
 elif [ -f "$HOME/Library/HTTPStorages/org.pqrs.Karabiner-Elements.Settings" ]; then
     rm -f "$HOME/Library/HTTPStorages/org.pqrs.Karabiner-Elements.Settings" 2>/dev/null || true
+fi
+
+# Remove $HOME/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist
+echo "Removing $HOME/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist..."
+if [ -d "$HOME/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist" ]; then
+    rm -rf "$HOME/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist" 2>/dev/null || true
+elif [ -f "$HOME/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist" ]; then
+    rm -f "$HOME/Library/Preferences/org.pqrs.Karabiner-Elements.Settings.plist" 2>/dev/null || true
 fi
 
 # Remove $HOME/Library/Preferences/org.pqrs.Karabiner-Elements.Updater.plist
